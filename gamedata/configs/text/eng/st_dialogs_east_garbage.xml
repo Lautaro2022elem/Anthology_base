@@ -1,93 +1,93 @@
 <?xml version="1.0" encoding="windows-1251" ?>
 <string_table>
     <string id="gar_a2_bagretcev_start_dialog_talking_0">
-        <text>Стоять, кто такой!? Что там делал? Врать не советую.</text>
+        <text>Halt, who is this!? What were you doing there? I wouldn't recommend lying.</text>
     </string>
     <string id="gar_a2_bagretcev_start_dialog_talking_1">
-        <text>Меня Саваном звать, вольный сталкер. А со мной был напарник -  Борланд, он раньше меня вылез. А ход этот в лабораторию Х5 нам Скидан показал, торговец с Кордона.</text>
+        <text>My name is Savannah, freelance stalker. I had a partner with me, Borland. He got out before I did. Skidan, the trader from Cordon showed us the way to the X5 lab.</text>
     </string>
     <string id="gar_a2_bagretcev_start_dialog_talking_2">
-        <text>Дебилы вы оба два. И Скидан ваш - тоже. У напарника твоего сильнейшее отравление. Видно, газом надышался. И не факт, что ты тоже не хватанул. Там же газ ядовитый, чего вы туда полезли, придурки?</text>
+        <text>You two are idiots. And so is Skidan. Your partner's got severe poisoning. Must have been gassed. And there's no guarantee you didn't ingest it, too. It's toxic gas, why are you dumbasses in there?</text>
     </string>
     <string id="gar_a2_bagretcev_start_dialog_talking_3">
-        <text>Не такой уж и ядовитый, раз мы живы до сих пор.</text>
+        <text>It's not so poisonous as long as we're still alive.</text>
     </string>
     <string id="gar_a2_bagretcev_start_dialog_talking_4">
-        <text>Если проживёте хотя бы до завтра - то вам охренительно повезло. Никто не знает, что там за газ, но каждый раз загибались диггеры от него. Выберутся вроде живыми наружу, а через часок, глядишь, помирают. В страшных муках.</text>
+        <text>If you live till tomorrow at least, you're lucky as hell. Nobody knows what the gas is, but every time it's killed a digger. They get out alive, then an hour later they die. In terrible agony.</text>
     </string>
 	<string id="gar_a2_bagretcev_start_dialog_talking_5">
-        <text>Неужто все померли?</text>
+        <text>Did they all die?</text>
     </string>
 	<string id="gar_a2_bagretcev_start_dialog_talking_6">
-        <text>Один, вроде, жив остался, но как ему это удалось никто не знает. Если успеешь его разыскать, то сможешь помочь и себе и дружку своему Борланду.</text>
+        <text>One of them seems to be alive, but nobody knows how he did it. If you can find him, you can help yourself and your friend Borland.</text>
     </string>
 	 <string id="gar_a2_bagretcev_start_dialog_talking_7">
-        <text>А где его отыскать этого выжившего диггера?</text>
+        <text>Where do we find this digger survivor?</text>
     </string>
 	 <string id="gar_a2_bagretcev_start_dialog_talking_8">
-        <text>А хрен его знает. Тут где-то. На Свалке.</text>
+        <text>Hell if I know. Somewhere. At the junkyard.</text>
     </string>
 	 <string id="gar_a2_bagretcev_start_dialog_talking_9">
-        <text>Бывай.</text>
+        <text>See ya.</text>
     </string>
 	
 	<string id="gar_a2_borland_start_dialog_talking_101">
-        <text>Что-то хреново мне, Саван. Видать, мы какой-то особой гадости в подземке надышались. Я уже две армейские аптечки целиком себе вкатил, толку - ноль. Мне всё хуже и хуже.</text>
+        <text>I don't feel so good, Sawan. I think we've been breathing some special shit in the underground. I've had two whole army first-aid kits pumped into me, but it's no use. I'm getting worse and worse.</text>
     </string>
     <string id="gar_a2_borland_start_dialog_talking_0">
-        <text>Знаю, Борланд, мне тоже хреновасто. Но долговец сказал, что есть диггер, который справлялся с этим отравлением. Ты, случаем, не в курсе про это? И где его на Свалке отыскать?</text>
+        <text>I know, Borland, I feel like shit too. But the longshoreman said there's a digger who's been dealing with this poisoning. You wouldn't happen to know about that, would you? Where can I find him on the Dump?</text>
     </string>
 	<string id="gar_a2_borland_start_dialog_talking_1">
-        <text>Слыхал, тут неподалеку мусорная куча есть, возле емкостей. Так вот, слышал, что где-то в том районе он и обитает. Многие пытались, но так никто и не нашел его берлогу.</text>
+        <text>I heard there's a rubbish heap near the tanks. Well, I heard it's in that area somewhere. A lot of people have tried, but no one's found his lair.</text>
     </string>
     <string id="gar_a2_borland_start_dialog_talking_2">
-        <text>Выбора у нас не густо. Если идти не можешь, то я сам его отыщу.</text>
+        <text>We don't have much choice. If you can't go, I'll find it myself.</text>
     </string>
     <string id="gar_a2_borland_start_dialog_talking_3">
-        <text>Давай, на тебя вся надежда. Только времени не осталось, чую, сожрет меня Зона. Прощай, может не увидимся больше.</text>
+        <text>Come on, you're our only hope. But there's no time left, I'm afraid the Zone is going to eat me. Goodbye, maybe I won't see you again.</text>
     </string>
     <string id="gar_a2_borland_start_dialog_talking_4">
-        <text>Держись, я мигом.</text>
+        <text>Hold on, I'll be right back.</text>
     </string>
 
     <string id="gar_a2_borland_second_dialog_talking_0">
-        <text>Саван, я знал, что ты сдержишь слово.</text>
+        <text>Shroud, I knew you'd keep your word.</text>
     </string>
     <string id="gar_a2_borland_second_dialog_talking_1">
-        <text>Порядок, Борланд, вот антидот.</text>
+        <text>All right, Borland, here's the antidote.</text>
     </string>
     <string id="gar_a2_borland_second_dialog_talking_2">
-        <text>Спасиб.</text>
+        <text>Thank you.</text>
     </string>
     <string id="gar_a2_borland_second_dialog_talking_3">
-        <text>Приходи в себя, а я пока потолкую с местным начальством.</text>
+        <text>You just get yourself up, and I'll have a word with the local authorities.</text>
     </string>	
 	
 	<string id="gar_a2_bagretcev_second_dialog_talking_00">
-        <text>Чуешь, Саван? Надвигается выброс небывалой силы. Супер-выброс. Ученые прислали предупреждение. Спрятаться от такого можно только в подземельях Бара. Если не хотите сдохнуть, то следуйте за нами на Бар в укрытие. Решай сейчас. Если нет, то мы закрываем переход Свалка-Бар, что бы мутанты за нами не ломанулись. Тут, на Свалке, не выживет никто.</text>
+        <text>You smell that, Savannah? A blowout of unprecedented power is coming. A super-blowout. The scientists have issued a warning. The only place to hide from it is in the dungeons of the Bar. If you don't want to die, follow us to the Bar for cover. Decide now. If not, we're closing off the Junkyard Bar, so the mutants don't come after us. There's no survivors here in the junkyard.</text>
     </string>
 	<string id="gar_a2_bagretcev_second_dialog_talking_0">
-        <text>Только в Баре можно выжить? Точно?</text>
+        <text>The Bar is the only place to survive? Are you sure?</text>
     </string>
 	<string id="gar_a2_bagretcev_second_dialog_talking_1">
-        <text>Такими вещами не шутят. Если ты заметил, Свалка уже опустела. Все, кому жизнь дорога, уже эвакуировались.</text>
+        <text>You don't joke about that sort of thing. If you've noticed, the dump is already deserted. Everyone who cares about life has already evacuated.</text>
     </string>
 	<string id="gar_a2_bagretcev_second_dialog_talking_2">
-        <text>А до Бара далеко отсюда? Успеем? Я дороги-то не знаю, первый раз тут. Борланд, напарник мой, наверное знает дорогу...</text>
+        <text>How far is Bara from here? Can we make it? I don't know the way. It's my first time here. Borland, my partner, probably knows the way...</text>
     </string>
 	<string id="gar_a2_bagretcev_second_dialog_talking_3">
-        <text>Некогда разговоры разговаривать. Датчики уже зашкаливает. Решай: ты с нами?</text>
+        <text>No time to talk. Sensors are going off the scale. Make up your mind. Are you coming with us?</text>
     </string>
 	<string id="gar_a2_bagretcev_second_dialog_talking_4">
-        <text>Да.</text>
+        <text>Yes.</text>
     </string>
 	
 	
 	<string id="gar_a2_dolg_guard_dialog_0">
-        <text>Проходите быстрее, выброс вот-вот начнется! Мы дождемся еще одного квада и следом за вами. Короче, по дороге всё время и бегом. Вперёд!</text>
+        <text>Hurry up, it's about to start! We'll wait for another Quad and follow you. In short, on the road all the way and on the run. Let's go!</text>
     </string>
 	<string id="gar_a2_dolg_guard_dialog_1">
-        <text>Удачи.</text>
+        <text>Good luck.</text>
     </string>
     
 </string_table>

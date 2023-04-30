@@ -4,7 +4,7 @@
 	<specific_character id="escape_trader" no_random = "1">
 		<name>escape_trader_skidan_name</name>
 		<icon>ui_inGame2_sidor</icon>
-		<bio>escape_trader_bio</bio>
+		<bio>Детальная информация отсутствует.</bio>
 		<class>trader</class>
 		<community>stalker</community>
 		<visual>actors\stalker_exclusive\trader_skidan</visual>
@@ -15,11 +15,11 @@
 			[spawn] \n
 		</supplies>
 #include "gameplay\character_criticals.xml"
-<start_dialog>esc_sidor_start_dialog</start_dialog>
 <actor_dialog>dm_init_trader</actor_dialog>
 		<actor_dialog>dm_ordered_task_dialog</actor_dialog>
 		<actor_dialog>dm_ordered_task_completed_dialog</actor_dialog>
 		<actor_dialog>dm_ordered_task_cancel_dialog</actor_dialog>	
+<start_dialog>esc_sidor_start_dialog</start_dialog>
 <actor_dialog>esc_sidor_about_price_dialog</actor_dialog>
 <actor_dialog>esc_sidor_quest_line_research_underground_part_2_dialog</actor_dialog>
 <actor_dialog>esc_quest_help_nebo_sidor_dialog</actor_dialog>
@@ -290,7 +290,7 @@
 	
 	
 	<specific_character id="esc_risovalshik" team_default = "1">
-		<name>Рисовальщик</name>
+		<name>Draftsman</name>
 		<icon>ui_inGame2_risovalshik</icon>
 		<map_icon x="1" y="0"></map_icon>
 		<bio>Опытный сталкер. Детальная информация отсутствует.</bio>

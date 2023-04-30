@@ -91,11 +91,12 @@ help_wounded_enabled = false
 ;***********************************************************
 
 [walker@wait_for_actor]
-path_walk = attackers_walk
-path_look = attackers_look
+path_walk = research_first_hall_walk
+path_look = research_first_hall_look
 def_state_standing = guard_na
 on_signal = vnz_first_point | remark@see
-on_info = {!npc_in_zone(zat_b38_quest_line) -zat_b38_cop_on_job} %=teleport_npc(zat_b38_attackers_walk:1) +zat_b38_cop_on_job% remark@see 
+on_info = {!npc_in_zone(zat_b38_quest_line) -zat_b38_cop_on_job} %=teleport_npc(zat_b38_research_first_hall_walk:1) +zat_b38_cop_on_job%
+on_info2 = {-zat_b38_disappearance_stalkers_clean_den_of_the_bloodsucker_give} remark@see 
 on_info66 = {+zat_b38_cop_hit_1 -zat_b38_cop_hit_1_done} %=inc_counter(zat_b38_cop_abuse) =actor_neutral +zat_b38_cop_hit_1_done%
 on_info77 = {+zat_b38_cop_hit_2 -zat_b38_cop_hit_2_done} %=inc_counter(zat_b38_cop_abuse) =actor_neutral +zat_b38_cop_hit_2_done%
 combat_ignore_cond = true
@@ -110,9 +111,9 @@ on_game_timer = 86400 | {=dist_to_actor_ge(20) !actor_enemy -zat_b38_stalker_cop
 [remark@see]
 target = story | actor
 anim = guard_na
-on_actor_dist_le_nvis = 7 |  {-zat_b38_stalker_cop_about_lair_bloodsucker_done} %=play_sound(zat_b38_stalker_cop_about_lair_bloodsucker) +zat_b38_stalker_cop_about_lair_bloodsucker_done%
+on_actor_dist_le_nvis = 7 |  {-zat_b38_stalker_cop_about_lair_bloodsucker_done} %=scenario_autosave(st_save_zat_b38_met_with_grouse) =play_sound(zat_b38_stalker_cop_about_lair_bloodsucker) +zat_b38_stalker_cop_about_lair_bloodsucker_done%
 on_signal = sound_end | {-zat_b38_disappearance_stalkers_clean_den_of_the_bloodsucker_give} %+zat_b38_disappearance_stalkers_clean_den_of_the_bloodsucker_give =play_sound(zat_b38_stalker_cop_notice)%
-on_info = {+zat_b38_disappearance_stalkers_clean_den_of_the_bloodsucker_give -zat_b38_met_with_grouse_saved} %+zat_b38_met_with_grouse_saved =scenario_autosave(st_save_zat_b38_met_with_grouse)%
+on_info = {+zat_b38_disappearance_stalkers_clean_den_of_the_bloodsucker_give -zat_b38_met_with_grouse_saved} %+zat_b38_met_with_grouse_saved%
 on_info2 = {+zat_b38_met_with_grouse_saved} walker@research_first_hall
 on_info3 = {+zat_b38_cop_hit_1 -zat_b38_cop_hit_1_done} %=inc_counter(zat_b38_cop_abuse) =actor_neutral +zat_b38_cop_hit_1_done%
 on_info4 = {+zat_b38_cop_hit_2 -zat_b38_cop_hit_2_done} %=inc_counter(zat_b38_cop_abuse) =actor_neutral +zat_b38_cop_hit_2_done%

@@ -3,131 +3,131 @@
 
 	
 	<string id="city_npc_army_kep_start_dialog_0">
-        <text>Стоять! Бросай оружие. Ты арестован. Сейчас пройдешь со мной для выяснения. Там разберутся.</text>
+        <text>Freeze! Drop your weapon. You're under arrest. You're coming with me for clarification. They'll figure it out.</text>
     </string> 
 	<string id="city_npc_army_kep_start_dialog_1">
-        <text>Уже иду, военный. Не нервничай, не убегу.</text>
+        <text>On my way, soldier. Don't get nervous, I won't run away.</text>
     </string> 
 	
 	
 	<string id="city_npc_kolyazin_meeting_dialog_0">
-        <text>Ба! Какие люди! Давно не виделись, дружище Саван. Сколько воды утекло! Ну что, рассказывай, как здесь оказался. И где дружок твой? Борланд, если я правильно помню?</text>
+        <text>What a bunch of people! Long time no see, my friend Sawan. It's been a long time! So, tell me how you got here. And where's your friend? Boorland, if I remember correctly?</text>
     </string> 
 	<string id="city_npc_kolyazin_meeting_dialog_1">
-        <text>А так удачно всё начиналось... Один я, гражданин начальник. Просто шел мимо, никого не трогал. Знать ничего не знаю.</text>
+        <text>It started off so well... It was just me, Citizen Warden. Just walking by, not touching anybody. I don't know anything.</text>
     </string>
 	<string id="city_npc_kolyazin_meeting_dialog_2">
-        <text>Ага, прокурору расскажешь. Всё серьезно, братишка: ты - преступник. И находишься здесь незаконно. На режимном военном объекте. Знаешь, сколько тебе дадут? Лет 15. Или могу пристрелить тебя прямо сейчас при попытке к бегству. Тоже вариант.</text>
+        <text>Yeah, you can tell the prosecutor. This is serious, brother: you're a criminal. And you're here illegally. You're in a secure military facility. You know what you're looking at? 15 years. Or I could shoot you right now if you try to escape. That's another option.</text>
     </string>
 	<string id="city_npc_kolyazin_meeting_dialog_3">
-        <text>Э-э-эй, не кипятись, начальник! Может договоримся?</text>
+        <text>Whoa, whoa, whoa, whoa, whoa, whoa, whoa, whoa, whoa, whoa, whoa, whoa, whoa, whoa, whoa, whoa, whoa, whoa. How about we make a deal?</text>
     </string>
 	<string id="city_npc_kolyazin_meeting_dialog_4">
-        <text>Взятку предлагаешь? Охренел совсем! Я при исполнении. Не ссы, будешь жить. Правда недолго. Шутка. Я знаю, зачем ты сюда поперся. Пока ты бегал по Кордону, собирая выкуп, твой дружок Борланд много чего интересного рассказал. В частности, про артефакт необычный и награду за него.  И где его искать. Думал, что я не поверю ему, что я свои мозги совсем пропил. Дурачок. Жаль, что он не с тобой.</text>
+        <text>You offering a bribe? You're out of your fucking mind! I'm on duty. Don't worry, you'll live. Not for long, though. It's a joke. I know why you came here. While you were running around the Cordon, collecting ransom, your friend Borland told me a lot of interesting things. Specifically, about an unusual artifact and its reward.  And where to find it. Thought I wouldn't believe him, that I'd lost my mind. Fool. Too bad he's not with you.</text>
     </string>
 	<string id="city_npc_kolyazin_meeting_dialog_5">
-        <text>О как! Он об этом мне не рассказывал.</text>
+        <text>Oh, man! He didn't tell me about it.</text>
     </string>
 	<string id="city_npc_kolyazin_meeting_dialog_6">
-        <text>Еще бы! Думаю, он тебя втёмную хотел использовать. Он и мне ложные наводки дал, несколько моих парней погибли. А ты думаешь, мне упёрлось 10 лет до дембеля гнить на Кордоне? А потом? Нищенская украинская пенсия до конца жизни? Да нах оно мне нужно! Здесь такая возможность сама в руки идёт. Я по своим каналам пробил, где этот артефакт прячут. И мы с ребятками решили рискнуть. Один раз живем! Если и ты здесь, значит мои источники не врут.</text>
+        <text>Of course he didn't! I think he was trying to use you for his own ends. He gave me a phony tip, too, and some of my guys got killed. You think I want to spend 10 years rotting away at Cordon before I'm discharged? And then? A poor Ukrainian pension for the rest of my life? I don't need it! Here, the opportunity comes to me. I got through my channels to find out where they're hiding this artifact. And me and the boys decided to take a chance. We only live once! If you're here too, then my sources are telling the truth.</text>
     </string>
 	<string id="city_npc_kolyazin_meeting_dialog_7">
-        <text>Я рассчитывал найти артефакт в подземелье, на выходе из которого меня поймали твои бойцы.</text>
+        <text>I was hoping to find the artifact in the dungeon where your men caught me.</text>
     </string>
 	<string id="city_npc_kolyazin_meeting_dialog_8">
-        <text>Это ложный след. Мы проверяли, нет там ничего. Только монстры. И бойцы СПЕКТРУМа, которые отлавливают добравшихся туда сталкеров и там же их мочат наглухо. Они постоянно патрулируют эту лабораторию. Мои бойцы как раз поджидали, когда те полезут обратно наверх. А тут ты. Неожиданный сюрприз. Скажи спасибо, что тебя сразу не шлёпнули. А могли. Ладно, к делу: по моим данным артефакт находится на базе Спектров в здании ДК. Это на другом конце этого района. Мы готовимся к штурму. И лишний ствол не помешает. Если поможешь мне, я тебя отпущу, когда всё закончится. Будешь свободным и живым человеком. Даю слово офицера.</text>
+        <text>It's a false trail. We checked, there's nothing there. Just monsters. And SPEKTRUM fighters who hunt down stalkers who get there and kill them. They patrol the lab constantly. My fighters were just waiting for them to come back upstairs. And here you are. An unexpected surprise. You're lucky you didn't get your ass kicked in the first place. They could have. All right, to the point: According to my intel, the artifact is at the Spectre base in the D.C. building. It's on the other side of the district. We're prepping for an assault. And I could use an extra gun. If you help me, I'll let you go when this is over. You'll be a free man alive. You have my word as an officer.</text>
     </string>
 	<string id="city_npc_kolyazin_meeting_dialog_9">
-        <text>Выбора у меня нет, да?</text>
+        <text>I don't have a choice, do I?</text>
     </string>
 	<string id="city_npc_kolyazin_meeting_dialog_10">
-        <text> Выбор есть всегда. Или со мной на штурм, или прямо сейчас поставлю тебя к стенке. Чего побледнел? Шучу. Слушай свою первую боевую задачу: мы знаем, на какой частоте ведутся переговоры СПЕКТРУМа, но наша радиостанция - древнее говно советского мамонта. Короче, мы по-быстрому организовали доставку необходимых радиодеталей с Большой земли на Кордон. Этот набор деталей позволит модифицировать нашу радиостанцию. Несколько часов назад была попытка доставить детали сюда вертушкой. Она попал под обстрел. Слава богу, все живы, и вертушка уже вернулась на базу. Пилоты сообщили, что скинули груз с борта, и теперь нужно его забрать. Посылать своих бойцов я не хочу, лишних нет. Тут ты очень кстати подоспел. Пойдешь на разведу, пошаришься по району, попробуешь найти ящик с деталями. Примерную зону падения я тебе скину на ПДА. Всё, можешь идти. Задумаешь шутить со мной - даже удивиться не успеешь. Мои снайперы присмотрят за тобой. Час тебе времени на всё.</text>
+        <text> There's always a choice. Either come with me on the assault, or I'll put you up against the wall right now. Why so pale? I'm just kidding. Listen to your first mission: we know what frequency SPEKTRUM talks on, but our radio station is an ancient shit Soviet mammoth. In short, we quickly arranged for the necessary radio parts to be delivered from Bolshaya Zemlya to Kordon. This set of parts will allow us to modify our radio station. There was an attempt a few hours ago to get the parts here by chopper. It came under fire. Thank God everyone is alive and the chopper has already returned to base. The pilots said they dropped the cargo and now they have to pick it up. I don't want to send my own fighters, I don't have any extra men. You've come along just in time. You're gonna scout the area, see if you can find a crate of parts. I'll text you the approximate drop zone on the PDA. That's it, you're good to go. You try to mess with me, you'll be surprised before you know it. My snipers will be watching you. An hour for everything.</text>
     </string>
 	<string id="city_npc_kolyazin_meeting_dialog_11">
-        <text>Разрешите бегом, гражданин начальник?</text>
+        <text>Permission to run, Citizen Warden?</text>
     </string>
 	
 	<string id="city_npc_kolyazin_mportant_cargo_dialog_0">
-        <text>Меня там чуть не порешили! Это была засада, как только я схватил ящик, тут же по мне открыли огонь на поражение.</text>
+        <text>I almost got killed in there! It was an ambush. As soon as I grabbed the box, they fired on me.</text>
     </string>
 	<string id="city_npc_kolyazin_mportant_cargo_dialog_1">
-        <text>А ты думал, что в сказку попал? Здесь тебе не там. Это тебе не на Кордоне кабанов стрелять! Жив остался, хвалю. Смотрю, тебя даже не задело. Так, значит, детали у нас. Начинаем слушать их канал.</text>
+        <text>And you thought you were in a fairy tale? This isn't a fairy tale. It's not like shooting wild boars on Cordon! You're still alive, I'll give you that. I see you didn't even get hit. Okay, so we've got the details. Let's start listening to their channel.</text>
     </string>
 	<string id="city_npc_kolyazin_mportant_cargo_dialog_2">
-        <text>Какие дальнейшие указания?</text>
+        <text>Any further instructions?</text>
     </string>
 	<string id="city_npc_kolyazin_mportant_cargo_dialog_3">
-        <text>Наш лазутчик, Сидоренко, приполз с задания еле живым. Я уж думал, что всё, хана хлопцу. А он еще шевелится, живучий значит. Ничего, до свадьбы заживет. Хотя бы до следующей. Или до похорон. Да шучу я, будет он жить. Наверно.</text>
+        <text>Our spy, Sidorenko, came crawling back from his mission alive. I thought he was dead. But he's still moving, it means he's alive. Never mind, he'll heal before the wedding. At least until the next one. Or a funeral. Just kidding, he'll live. Probably.</text>
     </string>
 	<string id="city_npc_kolyazin_mportant_cargo_dialog_4">
-        <text>Какое задание у него было, если не военная тайна?</text>
+        <text>What was his assignment, if not a military secret?</text>
     </string>
 	<string id="city_npc_kolyazin_mportant_cargo_dialog_5">
-        <text>Не спеши, сейчас всё узнаешь. Значит так. СПЕКТРУМы каким-то чудом обзавелись БТРом. Да каким, на хрен, чудом. Известно, каким. Вояки из Заполья продали, как пить дать. Они им его за ящик водки подогнали, суки! Так вот, БТР представляет для нас серьезную опасность. \nЗадача разведчика была следующая - заложить взрывчатку на БТР. Мы планировали в начале штурма его дистанционно взорвать, чтобы спутать планы врага.</text>
+        <text>Take your time, you'll find out. So here's the deal. By some miracle, the SPECTROMs got an APC. What fucking miracle? I know what kind. The soldiers from Zapolye sold it. They sold it to them for a case of vodka, the bitches! So, the APC poses a serious danger to us.\nThe scout's task was to plant explosives on the APC. We planned to remotely detonate it at the beginning of the assault to confuse the enemy's plans.</text>
     </string>
 	<string id="city_npc_kolyazin_mportant_cargo_dialog_6">
-        <text>Я догадываюсь, что взрывчатку он не заложил, ага?</text>
+        <text>I guess he didn't plant the explosives, huh?</text>
     </string>
 	<string id="city_npc_kolyazin_mportant_cargo_dialog_7">
-        <text>Так и было. Он попал в засаду и уходил дворами. Установить взрывчатку у него не получилось, и, чтобы быстрее уйти, он её скинул где-то на детской площадке. Как он сказал, под каким-то жирафом. Тут этих площадок - как собак нерезаных. Тебе нужно найти заряд и установить его на корму БТР. Ты боец опытный, у тебя всё получится. Выполняй.</text>
+        <text>He did. He was ambushed and went off in yards. He couldn't plant the explosives, so to get away, he dumped them somewhere in the playground. Like he said, under some giraffe. There's a lot of playgrounds around here. You need to find the charge and put it on the back of the APC. You're an experienced fighter. You can do this. Do it.</text>
     </string>
 	<string id="city_npc_kolyazin_mportant_cargo_dialog_8">
-        <text>Есть!.</text>
+        <text>Yes, sir.</text>
     </string>
 	
 	<string id="city_kolyazin_sabotage_end_dialog_0">
-        <text>Задание выполнил.</text>
+        <text>You did it.</text>
     </string>
 	<string id="city_kolyazin_sabotage_end_dialog_1">
-        <text>Я в тебе не сомневался. Пока тебя не было, мы перехватили важный разговор. Завтра рано утром СПЕКТРУМ собирается транспортировать из Зоны своё начальство, которое, как оказалось, находится сейчас здесь, в городе. Смекаешь? Думаю, что это для транспортировки артефакта по воздуху. На это дело заказаны два вертолета, что косвенно подтверждает мою мысль. Мы должны перехватить артефакт. По нашей информации отход вертолетов будет прикрыт снайперским огнем и БТРом, о котором мы уже позаботились. Твоя задача: оказывать прикрытие моей штурмовой группы.</text>
+        <text>I never doubted you. While you were gone, we intercepted an important conversation. Early tomorrow morning, SPECTRUM is going to transport their bosses from the Zone, who happen to be here in the city. You get the idea? I think it's for transporting the artefact by air. Two helicopters are booked for this case, which indirectly confirms my point. We need to intercept the artifact. According to our intel, the helicopter getaway will be covered by sniper fire and an APC, which we've already taken care of. Your job is to provide cover for my assault team.</text>
     </string>
 	<string id="city_kolyazin_sabotage_end_dialog_2">
-        <text>Планируете захватить артефакт, а потом его продать?</text>
+        <text>You plan to capture the artifact and then sell it?</text>
     </string>
 	<string id="city_kolyazin_sabotage_end_dialog_3">
-        <text>Ты понимаешь всё правильно. Если всё срастётся, по окончании операции ты получишь полную свободу. И мы уже никогда больше не увидимся.</text>
+        <text>You got that right. If everything works out, you'll be free at the end of the mission. And we'll never see each other again.</text>
     </string>
 	<string id="city_kolyazin_sabotage_end_dialog_4">
-        <text>Очень на это надеюсь.</text>
+        <text>I certainly hope so.</text>
     </string>
 	
 	<string id="city_npc_sp_leader_dialog_0">
-        <text>Саван, Саван, стой!!! .... Не убивай меня. Я знаю, что тебе нужно!</text>
+        <text>Savannah, Savannah, stop! .... Don't kill me. I know what you want!</text>
     </string>
 	<string id="city_npc_sp_leader_dialog_1">
-        <text>По-русски заговорил?! Откуда знаешь моё имя?!</text>
+        <text>You speak Russian now?! How do you know my name?!</text>
     </string>
 	<string id="city_npc_sp_leader_dialog_2">
-        <text>Я - русский немец. И знаю 5 языков. Если это так важно. Твое имя мне известно потому, что мы знаем всех опытных сталкеров Зоны. Мы - частная военная компания СПЕКТРУМ, мы планировали установить контроль над Зоной отчуждения и продолжить эксперименты, которые не закончили ученые ОСОЗНАНИЯ.</text>
+        <text>I'm a Russian German. And I know five languages. If it's so important. I know your name because we know all the experienced stalkers in the Zone. We're a private military company called SPEKTRUM, we planned to take control of the Exclusion Zone and continue the experiments that the scientists of DISSOLUTION didn't finish.</text>
     </string>
 	<string id="city_npc_sp_leader_dialog_3">
-        <text>Бред какой-то. Зубы мне не заговаривай. Где артефакт, сука?</text>
+        <text>This is nonsense. Don't talk back to me. Where's the artifact, bitch?</text>
     </string>
 	<string id="city_npc_sp_leader_dialog_4">
-        <text>Никакого артефакта не существует! Это мы пустили слух про этот артефакт. Это мы объявили огромную награду за то, чего не существует. Всё для того, чтобы все опытные сталкеры ринулись на его поиски. А мы бы их отлавливали здесь и вербовали для охраны наших лабораторий.</text>
+        <text>There is no artifact! We're the ones who started the rumor about the artifact. We put out a huge bounty for something that doesn't exist. All so that all the seasoned stalkers would rush out looking for it. And we would hunt them down here and recruit them to guard our labs.</text>
     </string>
 	<string id="city_npc_sp_leader_dialog_5">
-        <text>Видел я, как вы вербовали. Свинцом в голову. Я их видел. Мёртвых. Вы же просто убивали всех, кто представлял для вас угрозу. Последний раз спрашиваю, где артефакт, падла?</text>
+        <text>I've seen you recruit. Lead in the head. I've seen them. Dead. You just killed anyone who posed a threat to you. For the last time, where's the artifact, asshole?</text>
     </string>
 	<string id="city_npc_sp_leader_dialog_6">
-        <text>Его не существует! Возьми... Возьми этот кейс, здесь много, очень много денег. Это намного больше, чем объявленная нами награда за несуществующий артефакт. Только дай мне уйти живым. Скажешь, что никого здесь не нашел... умоляю! Я исчезну из Зоны навсегда, только отпусти.</text>
+        <text>It doesn't exist! Take... Take this case, there's a lot, a lot of money in here. It's a lot more than the bounty we put out on a non-existent artifact. Just let me get out of here alive. Tell me you didn't find anyone here... please! I'll disappear from the Zone forever, just let me go.</text>
     </string>
 	<string id="city_npc_sp_leader_dialog_7">
-        <text>Уговорил! Кейс давай. </text>
+        <text>You got it! Give me the case. </text>
     </string>
 	
 	
 	<string id="city_npc_kolyazin_final_dialog_0">
-        <text>Показывай, что там у тебя.</text>
+        <text>Show me what you've got.</text>
     </string>
 	<string id="city_npc_kolyazin_final_dialog_1">
-        <text>Вот, кейс с деньгами. Я прикинул, примерно 3 миллиона евро там. Или около того. Держи. Артефакта тут нет. Что теперь? Как будем выбираться отсюда?</text>
+        <text>Here, the case with the money in it. I figure it's about 3 million euros in there. Or thereabouts. There you go. The artifact's not in there. So what now? How do we get out of here?</text>
     </string>
 	<string id="city_npc_kolyazin_final_dialog_2">
-        <text>Ты глупее, чем я думал.</text>
+        <text>You're dumber than I thought.</text>
     </string>
 	<string id="city_npc_kolyazin_final_dialog_3">
-        <text>Шта?!</text>
+        <text>What?!</text>
     </string>
 
     

@@ -1454,3 +1454,229 @@ end
 function jup_b19_reward(first_speaker, second_speaker)
 
 end
+
+
+function give_german_fenix_1_quest()
+    task_manager.get_task_manager():give_task("geonezis_jup_bioradar_fenix_all_quest") 
+    task_manager.get_task_manager():give_task("geonezis_jup_bioradar_fenix_1_quest") 
+end
+
+function actor_has_10_snork_part(first_speaker, second_speaker)
+ 	local cnt = 0
+	local function zat_b30_count(npc, item)
+		--printf("item:section: %s", item:section())
+		if item:section() == "mutant_part_snork_leg" then
+			cnt = cnt + 1
+		end
+	end
+	db.actor:iterate_inventory(zat_b30_count, nil)
+	if cnt > 9 then
+		return true
+	end
+	return false
+end
+
+function actor_has_5_bloodsucker_part(first_speaker, second_speaker)
+ 	local cnt = 0
+	local function zat_b30_count(npc, item)
+		--printf("item:section: %s", item:section())
+		if item:section() == "mutant_part_krovosos_jaw" then
+			cnt = cnt + 1
+		end
+	end
+	db.actor:iterate_inventory(zat_b30_count, nil)
+	if cnt > 4 then
+		return true
+	end
+	return false
+end
+
+function actor_has_3_burer_part(first_speaker, second_speaker)
+ 	local cnt = 0
+	local function zat_b30_count(npc, item)
+		--printf("item:section: %s", item:section())
+		if item:section() == "mutant_part_burer_hand" then
+			cnt = cnt + 1
+		end
+	end
+	db.actor:iterate_inventory(zat_b30_count, nil)
+	if cnt > 2 then
+		return true
+	end
+	return false
+end
+
+function actor_has_1_chimera_part() 
+if db.actor:object("mutant_part_chimera_claw") then 
+return true 
+end 
+return false 
+end
+
+function actor_has_1_kontroller_part() 
+if db.actor:object("mutant_part_controller_hand") then 
+return true 
+end 
+return false 
+end
+
+function actor_has_1_gigant_part() 
+if db.actor:object("mutant_part_pseudogigant_eye") then 
+return true 
+end 
+return false 
+end
+
+function give_1_gigant_part_to_german(first_speaker, second_speaker)	
+	dialogs.relocate_item_section_from_actor(first_speaker, second_speaker, "mutant_part_pseudogigant_eye")	
+end
+
+function give_1_kontroller_part_to_german(first_speaker, second_speaker)	
+	dialogs.relocate_item_section_from_actor(first_speaker, second_speaker, "mutant_part_controller_hand")	
+end
+
+function give_1_chimera_part_to_german(first_speaker, second_speaker)	
+	dialogs.relocate_item_section_from_actor(first_speaker, second_speaker, "mutant_part_chimera_claw")	
+end
+
+function give_5_bloodsucker_part_to_german(first_speaker, second_speaker)	
+	dialogs.relocate_item_section_from_actor(first_speaker, second_speaker, "mutant_part_krovosos_jaw", 5)	
+end
+
+function give_3_burer_part_to_german(first_speaker, second_speaker)	
+	dialogs.relocate_item_section_from_actor(first_speaker, second_speaker, "mutant_part_burer_hand", 3)	
+end
+
+function give_10_snork_part_to_german(first_speaker, second_speaker)	
+	dialogs.relocate_item_section_from_actor(first_speaker, second_speaker, "mutant_part_snork_leg", 10)	
+end
+
+function give_ozersky_fenix_2_quest() 
+    task_manager.get_task_manager():give_task("geonezis_jup_bioradar_fenix_2_quest") 
+end
+
+function actor_has_3_af_lomot(first_speaker, second_speaker)
+ 	local cnt = 0
+	local function zat_b30_count(npc, item)
+		--printf("item:section: %s", item:section())
+		if item:section() == "af_mincer_meat" then
+			cnt = cnt + 1
+		end
+	end
+	db.actor:iterate_inventory(zat_b30_count, nil)
+	if cnt > 2 then
+		return true
+	end
+	return false
+end
+
+function actor_has_2_af_benglfire(first_speaker, second_speaker)
+ 	local cnt = 0
+	local function zat_b30_count(npc, item)
+		--printf("item:section: %s", item:section())
+		if item:section() == "af_electra_sparkler" then
+			cnt = cnt + 1
+		end
+	end
+	db.actor:iterate_inventory(zat_b30_count, nil)
+	if cnt > 1 then
+		return true
+	end
+	return false
+end
+
+function actor_has_2_af_vivert(first_speaker, second_speaker)
+ 	local cnt = 0
+	local function zat_b30_count(npc, item)
+		--printf("item:section: %s", item:section())
+		if item:section() == "af_vyvert" then
+			cnt = cnt + 1
+		end
+	end
+	db.actor:iterate_inventory(zat_b30_count, nil)
+	if cnt > 1 then
+		return true
+	end
+	return false
+end
+
+function actor_has_1_af_glas() 
+if db.actor:object("af_eye") then 
+return true 
+end 
+return false 
+end
+
+function give_1_af_glas_to_ozersky(first_speaker, second_speaker)	
+	dialogs.relocate_item_section_from_actor(first_speaker, second_speaker, "af_eye")	
+end
+
+function give_2_af_vivert_to_ozersky(first_speaker, second_speaker)	
+	dialogs.relocate_item_section_from_actor(first_speaker, second_speaker, "af_vyvert", 2)	
+end
+
+function give_2_af_benglfire_to_ozersky(first_speaker, second_speaker)	
+	dialogs.relocate_item_section_from_actor(first_speaker, second_speaker, "af_electra_sparkler", 2)	
+end
+
+function give_3_af_lomot_to_ozersky(first_speaker, second_speaker)	
+	dialogs.relocate_item_section_from_actor(first_speaker, second_speaker, "af_mincer_meat", 3)	
+end
+
+function give_actor_ecolog_outfit_for_quest(first_speaker, second_speaker)	
+	dialogs.relocate_item_section_to_actor(first_speaker, second_speaker, "ecolog_outfit_orange")	
+end
+
+function create_novikov_fenix_3_quest(first_speaker, second_speaker)	
+     alife():create("zat_anomalies_1_scanner",vector():set(400.160,-0.201,439.654),1628583,4464)
+     alife():create("zat_anomalies_2_scanner",vector():set(274.528,9.903,-284.270),1435146,4464)
+     alife():create("zat_anomalies_3_scanner",vector():set(-68.041,0.753,-167.917),810110,4464)
+     alife():create("zat_anomalies_4_scanner",vector():set(-429.377,-6.511,167.994),123797,4464)	
+end
+
+function give_novikov_fenix_3_quest() 
+    task_manager.get_task_manager():give_task("geonezis_jup_bioradar_fenix_3_1_quest")
+    task_manager.get_task_manager():give_task("geonezis_jup_bioradar_fenix_3_2_quest")
+    task_manager.get_task_manager():give_task("geonezis_jup_bioradar_fenix_3_3_quest")
+    task_manager.get_task_manager():give_task("geonezis_jup_bioradar_fenix_3_4_quest")	
+end
+
+function actor_has_anomal_scaner_1() 
+if db.actor:object("zat_anomalies_1_scanner") then 
+return true 
+end 
+return false 
+end
+
+function actor_has_anomal_scaner_2() 
+if db.actor:object("zat_anomalies_2_scanner") then 
+return true 
+end 
+return false 
+end
+
+function actor_has_anomal_scaner_3() 
+if db.actor:object("zat_anomalies_3_scanner") then 
+return true 
+end 
+return false 
+end
+
+function actor_has_anomal_scaner_4() 
+if db.actor:object("zat_anomalies_4_scanner") then 
+return true 
+end 
+return false 
+end
+
+function give_novikov_quest_anomal_scaner(first_speaker, second_speaker)	
+	dialogs.relocate_item_section_from_actor(first_speaker, second_speaker, "zat_anomalies_1_scanner")
+    dialogs.relocate_item_section_from_actor(first_speaker, second_speaker, "zat_anomalies_2_scanner")
+    dialogs.relocate_item_section_from_actor(first_speaker, second_speaker, "zat_anomalies_3_scanner")
+    dialogs.relocate_item_section_from_actor(first_speaker, second_speaker, "zat_anomalies_4_scanner")	
+end
+
+function give_actor_bioradar_fenix(first_speaker, second_speaker)	
+	dialogs.relocate_item_section_to_actor(first_speaker, second_speaker, "detector_fenix")
+    dialogs.relocate_money_to_actor(first_speaker, second_speaker, 5000)	
+end

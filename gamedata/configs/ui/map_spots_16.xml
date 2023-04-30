@@ -4,6 +4,7 @@
 #include "ui\map_spots_relations.xml"
 #include "ui\map_spots_complex.xml"
 #include "ui\map_spots_campfires.xml"
+#include "ui\map_spots_megadetector.xml"
 
         <quest_pointer x="0" y="0" width="11" height="24" heading="1" alignment="c">
                 <texture a="255" r="255" g="255" b="255">ui_hud_map_arrow</texture>

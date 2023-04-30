@@ -1007,6 +1007,159 @@
 
 </intro_game_sad>
 
+
+
+<!-- FINAL OUTRO -->
+	<outro_game_sad>
+    <persistent>1</persistent>
+		<global_wnd width="1024" height="768">
+      <pause_state>on</pause_state>
+   		<auto_static width="1024" height="768" stretch="1">
+      			<texture>intro\intro_back</texture>
+   		</auto_static>
+      <function_on_start>outro_cond.start_bk_sound</function_on_start>
+      <function_on_stop>outro_cond.stop_bk_sound</function_on_stop>
+    </global_wnd>
+    
+    <!------ 0_pause -->
+		<item>
+			<length_sec>8</length_sec>
+      <function_on_frame>outro_cond.update_bk_sound_fade_start</function_on_frame>
+
+      <main_wnd>
+			<auto_static start_time="0" length_sec="120" x="0" y="0" width="1024" height="768" stretch="1">
+				<widescreen_rect width="1024" height="768"/>
+				<texture>ui_sad_zastavka_5</texture>
+			</auto_static>
+			</main_wnd>
+		</item>
+<!------ Макс -->
+		<item>
+			<length_sec>8.0</length_sec>
+      		<!-- <sound>characters_voice\scenario\pripyat\pri_a28_outro_phrase_1</sound> -->
+      		<main_wnd>
+			<auto_static start_time="0" length_sec="120" x="0" y="0" width="1024" height="768" stretch="1">
+				<widescreen_rect width="1024" height="768"/>
+				<texture>ui_sad_zastavka_5</texture>
+			</auto_static>
+				<auto_static start_time="0" length_sec="15.6" x="500" y="870" width="870" height="500" alignment="c" stretch="1"
+					light_anim="pri_a28_phrase_1" la_cyclic="0" la_texture="1" la_alpha="1">
+					<text align="c" font="graffiti22" r="255" g="255" b="255" a="255">sad_outro_text_1</text>
+				</auto_static>
+ 	  		</main_wnd>
+		</item>
+
+<!------ Борода pda -->
+		<item>
+			<length_sec>10.0</length_sec>
+      		<!-- <sound>characters_voice\scenario\pripyat\pri_a28_outro_phrase_4_a</sound> -->
+      		<function_check_start>outro_cond.sad_boroda_complete</function_check_start>
+      		<main_wnd>
+			<auto_static start_time="0" length_sec="120" x="0" y="0" width="1024" height="768" stretch="1">
+				<widescreen_rect width="1024" height="768"/>
+				<texture>ui_sad_zastavka_6</texture>
+			</auto_static>
+				<auto_static start_time="0" length_sec="21.2" x="500" y="870" width="870" height="500" alignment="c" stretch="1"
+					light_anim="pri_a28_phrase_4a" la_cyclic="0" la_texture="1" la_alpha="1">
+					<text align="c" font="graffiti22" r="255" g="255" b="255" a="255">sad_outro_text_21</text>
+				</auto_static>
+			</main_wnd>
+		</item>
+<!------ Борода no pda -->
+		<item>
+			<length_sec>10.0</length_sec>
+      		<!-- <sound>characters_voice\scenario\pripyat\pri_a28_outro_phrase_4_b</sound> -->
+      		<function_check_start>outro_cond.sad_boroda_not_complete</function_check_start>
+     		<main_wnd>
+			<auto_static start_time="0" length_sec="120" x="0" y="0" width="1024" height="768" stretch="1">
+				<widescreen_rect width="1024" height="768"/>
+				<texture>ui_sad_zastavka_6</texture>
+			</auto_static>
+				<auto_static start_time="0" length_sec="24.1" x="500" y="870" width="870" height="500" alignment="c" stretch="1"
+					light_anim="pri_a28_phrase_4b" la_cyclic="0" la_texture="1" la_alpha="1">
+					<text align="c" font="graffiti22" r="255" g="255" b="255" a="255">sad_outro_text_22</text>
+				</auto_static>
+			</main_wnd>
+		</item>
+<!------ Maxim alive + friend + b3 -->
+		<item>
+			<length_sec>10.0</length_sec>
+      		<!-- <sound>characters_voice\scenario\pripyat\pri_a28_outro_phrase_4_b</sound> -->
+      		<function_check_start>outro_cond.sad_maxim_friend_alive_b3</function_check_start>
+     		<main_wnd>
+			<auto_static start_time="0" length_sec="120" x="0" y="0" width="1024" height="768" stretch="1">
+				<widescreen_rect width="1024" height="768"/>
+				<texture>ui_sad_zastavka_7</texture>
+			</auto_static>
+				<auto_static start_time="0" length_sec="24.1" x="500" y="870" width="870" height="500" alignment="c" stretch="1"
+					light_anim="pri_a28_phrase_4b" la_cyclic="0" la_texture="1" la_alpha="1">
+					<text align="c" font="graffiti22" r="255" g="255" b="255" a="255">sad_outro_text_31</text>
+				</auto_static>
+			</main_wnd>
+		</item>
+<!------ Radik alive + friend + b3 -->
+		<item>
+			<length_sec>10.0</length_sec>
+      		<!-- <sound>characters_voice\scenario\pripyat\pri_a28_outro_phrase_4_b</sound> -->
+      		<function_check_start>outro_cond.sad_radik_friend_alive_ran</function_check_start>
+     		<main_wnd>
+			<auto_static start_time="0" length_sec="120" x="0" y="0" width="1024" height="768" stretch="1">
+				<widescreen_rect width="1024" height="768"/>
+				<texture>ui_sad_zastavka_8</texture>
+			</auto_static>
+				<auto_static start_time="0" length_sec="24.1" x="500" y="870" width="870" height="500" alignment="c" stretch="1"
+					light_anim="pri_a28_phrase_4b" la_cyclic="0" la_texture="1" la_alpha="1">
+					<text align="c" font="graffiti22" r="255" g="255" b="255" a="255">sad_outro_text_41</text>
+				</auto_static>
+			</main_wnd>
+		</item>
+<!------ Ucheny alive + complete -->
+		<item>
+			<length_sec>10.0</length_sec>
+      		<!-- <sound>characters_voice\scenario\pripyat\pri_a28_outro_phrase_4_b</sound> -->
+      		<function_check_start>outro_cond.sad_ucheny_complete</function_check_start>
+     		<main_wnd>
+			<auto_static start_time="0" length_sec="120" x="0" y="0" width="1024" height="768" stretch="1">
+				<widescreen_rect width="1024" height="768"/>
+				<texture>ui_sad_zastavka_9</texture>
+			</auto_static>
+				<auto_static start_time="0" length_sec="24.1" x="500" y="870" width="870" height="500" alignment="c" stretch="1"
+					light_anim="pri_a28_phrase_4b" la_cyclic="0" la_texture="1" la_alpha="1">
+					<text align="c" font="graffiti22" r="255" g="255" b="255" a="255">sad_outro_text_51</text>
+				</auto_static>
+			</main_wnd>
+		</item>
+<!------ Mutny dead -->
+		<item>
+			<length_sec>10.0</length_sec>
+      		<!-- <sound>characters_voice\scenario\pripyat\pri_a28_outro_phrase_4_b</sound> -->
+      		<function_check_start>outro_cond.sad_mutny_dead</function_check_start>
+     		<main_wnd>
+			<auto_static start_time="0" length_sec="120" x="0" y="0" width="1024" height="768" stretch="1">
+				<widescreen_rect width="1024" height="768"/>
+				<texture>ui_sad_zastavka_10</texture>
+			</auto_static>
+				<auto_static start_time="0" length_sec="24.1" x="500" y="870" width="870" height="500" alignment="c" stretch="1"
+					light_anim="pri_a28_phrase_4b" la_cyclic="0" la_texture="1" la_alpha="1">
+					<text align="c" font="graffiti22" r="255" g="255" b="255" a="255">sad_outro_text_91</text>
+				</auto_static>
+			</main_wnd>
+		</item>
+<!------ 21_final_picture -->
+		<item>
+			<length_sec>4</length_sec>
+      		<function_on_frame>outro_cond.update_bk_sound_fade_stop</function_on_frame>
+      		<main_wnd>
+			<auto_static start_time="0" length_sec="120" x="0" y="0" width="1024" height="768" stretch="1">
+				<widescreen_rect width="1024" height="768"/>
+				<texture>ui_sad_zastavka_10</texture>
+			</auto_static>
+			</main_wnd>
+			<grab_input>0</grab_input>
+		</item>
+	</outro_game_sad>
+
+
 <hip_1>
 	<play_each_item>1</play_each_item>
 	<global_wnd x="0" y="0" width="1920" height="1080">
@@ -2672,5 +2825,24 @@
  	  		</main_wnd>
 		</item>
 	</outro_game_wiz>
+
+	<tutorial_sleep_atr>
+		<global_wnd/>
+
+		<item>
+			<disabled_key>quit</disabled_key>
+			<length_sec/>
+			<action id="use" finalize="1">xr_effects.sleep_atr</action>
+			<guard_key>use</guard_key>
+			<disabled_key>quit</disabled_key>
+			<grab_input>0</grab_input>
+			<main_wnd>
+				<auto_static start_time="0" length_sec="5000" x="512" y="660" width="300" height="60" alignment="c" stretch="1"
+							la_cyclic="1" la_texture="1" la_alpha="1">
+					<text font="graffiti22" r="225" g="225" b="250" a="255" align="c">sleep_zone_tip</text>
+				</auto_static>
+			</main_wnd>
+		</item>
+	</tutorial_sleep_atr>
 
 </window>

@@ -2,12 +2,12 @@
 active = walker@wait
 on_death = death
 on_hit = hit
+relationship = friend   
 
 [walker@wait]
 path_walk = esc_army_chernenco_walk_1
 path_look = esc_army_chernenco_look_1
 on_info = {+esc_quest_fee_to_give_money} remark@see_actor
-on_info2 = {+esc_mil_alarm} %=actor_enemy%
 invulnerable = true
 meet = no_meet
 
@@ -17,8 +17,7 @@ target = story | actor
 meet = no_meet
 danger = danger
 on_info = {=dist_to_actor_le(12)} remark@claim
-on_info2 = {+esc_mil_alarm} %=actor_enemy%
-on_info3 = {-esc_quest_fee_to_give_money} walker@wait
+on_info2 = {-esc_quest_fee_to_give_money} walker@wait
 invulnerable = true
 
 [remark@claim]
@@ -28,7 +27,6 @@ meet = meet@dialog
 danger = danger
 on_info1 = {-infa_esc_trepach_stop_sound =dist_to_actor_le(9)} %+infa_esc_trepach_stop_sound =play_sound(esc_army_chernenco_sound_1)%
 on_info2 = {=dist_to_actor_le(2)} remark@dialog_actor
-on_info3 = {+esc_mil_alarm} %=actor_enemy%
 invulnerable = true
 
 [remark@dialog_actor]
@@ -36,8 +34,7 @@ anim = threat
 target = story | actor
 meet = meet@dialog
 danger = danger
-on_info = {+esc_mil_alarm} %=actor_enemy%
-on_info2 = {+esc_dialog_army_chernenco_and} remark %=play_sound(esc_army_chernenco_sound_2)%
+on_info = {+esc_dialog_army_chernenco_and} remark %=play_sound(esc_army_chernenco_sound_2)%
 invulnerable = true
 
 [remark]
@@ -45,9 +42,8 @@ anim = guard_na
 target = story | actor
 meet = no_meet
 danger = danger
-on_info = {+esc_mil_alarm} %=actor_enemy%
-on_info2 = {+esc_colonel_kolyazin_quest_fee_and =dist_to_actor_le(100) =dist_to_actor_ge(50)} %=release_npc%
-on_info3 = {+esc_quest_fee_fail =dist_to_actor_le(100) =dist_to_actor_ge(50)} %=release_npc%
+on_info = {+esc_colonel_kolyazin_quest_fee_and =dist_to_actor_le(100) =dist_to_actor_ge(50)} %=release_npc%
+on_info2 = {+esc_quest_fee_fail =dist_to_actor_le(100) =dist_to_actor_ge(50)} %=release_npc%
 invulnerable = true
 
 [meet@dialog]

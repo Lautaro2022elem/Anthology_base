@@ -210,7 +210,7 @@ danger = danger_condition@go
 [remark@punch] ;”дар по морде и еще словесный плевок в морду
 target = story | actor
 anim = punch
-on_timer = 1000 | {-zat_b14_robbery_punch_play_sound} walker@fight %=actor_punch =hit_npc_from_actor(zat_b14_stalker_1) =play_sound(zat_b14_robbery_punch) +zat_b14_robbery_punch_play_sound%
+on_timer = 1000 | {-zat_b14_robbery_punch_play_sound} walker@fight %=hit_npc_from_actor(zat_b14_stalker_1) =play_sound(zat_b14_robbery_punch) +zat_b14_robbery_punch_play_sound%
 meet = no_meet
 wounded = wounded
 combat_ignore_cond = {!actor_enemy} true

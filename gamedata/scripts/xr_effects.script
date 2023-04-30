@@ -382,7 +382,7 @@ end
 --< LTTZ >
 function spawn_strelok_notes()
      local pos = vector():set( 43.601459503174, 1.3544018268585, 75.227851867676 )
-     local se_obj = alife_create( "strelok_notes", pos, 3762, 3651 )
+     local se_obj = alife_create( "strelok_notes", pos, 3762, 3346 )
      if ( not se_obj ) then
           printe("!ERROR: unable to spawn strelok_notes" )
      end
@@ -391,9 +391,9 @@ end
 function spawn_wpn_gauss_quest() -- not used
      -- Potential locations for quest item:
      local quest_item_locations_list = {
-          {-421.80874633789, 23.745666503906, -328.25729370117, 145096, 4394}, -- location data for location 1
-          {-411.07214355469, 32.196994781494, -334.24200439453, 161488, 4139}, -- location data for location 2
-          {-424.48648071289, 24.198583602905, -381.48046875, 142021, 4140},  -- location data for location 3
+          {-421.80874633789, 23.745666503906, -328.25729370117, 145096, 3855}, -- location data for location 1
+          {-411.07214355469, 32.196994781494, -334.24200439453, 161488, 3855}, -- location data for location 2
+          {-424.48648071289, 24.198583602905, -381.48046875, 142021, 3855},  -- location data for location 3
      }
      -- Choose random location from the list:
      local i = math.random( #quest_item_locations_list )
@@ -423,9 +423,9 @@ end
 function spawn_x8_documents()
      -- Potential locations for quest item:
      local quest_item_locations_list = {
-          {-82.4626, -23.1409, 90.0521, 2952, 5098}, -- location data for location 1
-          {-82.4626, -23.1409, 90.0521, 2952, 5098}, -- location data for location 2
-          {-82.4626, -23.1409, 90.0521, 2952, 5098},  -- location data for location 3
+          {-82.4626, -23.1409, 90.0521, 2952, 4811}, -- location data for location 1
+          {-82.4626, -23.1409, 90.0521, 2952, 4811}, -- location data for location 2
+          {-82.4626, -23.1409, 90.0521, 2952, 4811},  -- location data for location 3
      }
      -- Choose random location from the list:
      local i = math.random( #quest_item_locations_list )
@@ -444,7 +444,7 @@ end
 
 function spawn_monolith_shard()
      local pos = vector():set( 0.072339810431004, -34.356998443604, 17.800102233887 )
-     local se_obj = alife_create( "monolith_shard", pos, 1849, 4045 )
+     local se_obj = alife_create( "monolith_shard", pos, 1849, 3740 )
      if ( not se_obj ) then
           printe("!ERROR: unable to spawn monolith_shard" )
      end
@@ -482,9 +482,9 @@ end
 function spawn_stitch_decoder()
      -- Potential locations for quest item:
      local quest_item_locations_list = {
-          {50.247924804688, 3.9755771160126, 156.77543640137, 509188, 5266}, -- location data for location 1
-          {51.563461303711, 7.1993789672852, 224.42543029785, 514950, 5266}, -- location data for location 2
-          {19.012723922729, 1.1766533851624, 112.65353393555, 472104, 5266},  -- location data for location 3
+          {50.247924804688, 3.9755771160126, 156.77543640137, 509188, 4884}, -- location data for location 1
+          {51.563461303711, 7.1993789672852, 224.42543029785, 514950, 4884}, -- location data for location 2
+          {19.012723922729, 1.1766533851624, 112.65353393555, 472104, 4884},  -- location data for location 3
      }
      -- Choose random location from the list:
      local i = math.random( #quest_item_locations_list )
@@ -519,9 +519,9 @@ end
 function spawn_contact_lost_pda()
      -- Potential locations for quest item:
      local quest_item_locations_list = {
-          {-18.2137, -3.9074, 147.8096, 16690, 2507}, -- location data for location 1
-          {-18.2137, -3.9074, 147.8096, 16690, 2507}, -- location data for location 2
-          {-18.2137, -3.9074, 147.8096, 16690, 2507},  -- location data for location 3
+          {-18.2137, -3.9074, 147.8096, 16690, 2455}, -- location data for location 1
+          {-18.2137, -3.9074, 147.8096, 16690, 2455}, -- location data for location 2
+          {-18.2137, -3.9074, 147.8096, 16690, 2455},  -- location data for location 3
      }
      -- Choose random location from the list:
      local i = math.random( #quest_item_locations_list )
@@ -620,9 +620,9 @@ end
 function spawn_jupiter_documents( )
      -- Potential locations for quest item:
      local quest_item_locations_list = {
-          {304.7744140625, 28.783397674561, -299.32592773438, 1209997, 4794}, -- location data for location 1
-          {324.68350219727, 31.384368896484, -305.80865478516, 1235548, 4794}, -- location data for location 2
-          {351.95175170898, 27.543346405029, -343.99871826172, 1276714, 4794},  -- location data for location 3
+          {304.7744140625, 28.783397674561, -299.32592773438, 1209997, 4235}, -- location data for location 1
+          {324.68350219727, 31.384368896484, -305.80865478516, 1235548, 4235}, -- location data for location 2
+          {351.95175170898, 27.543346405029, -343.99871826172, 1276714, 4235},  -- location data for location 3
      }
      -- Choose random location from the list:
      local i = math.random( #quest_item_locations_list )
@@ -6329,6 +6329,19 @@ end
 
 ----------------------------------------------------------------------------- SAD
 
+function set_faction_community_to_actor(actor, npc, p)
+-- run_string xr_effects.change_actor_community(nil,nil,{"actor_dolg"})
+	if(p[1]~=nil) and (p[2]~=nil) then
+		local rel = 0
+		if(p[2]=="enemy") then
+			rel = -3000
+		elseif(p[2]=="friend") then
+			rel = 1000
+		end
+		db.actor:set_community_goodwill(p[1], rel)
+	end
+end
+
 function sad_fedor_health(actor, npc)
 	local h = npc.health
 	h = 0.05 - h
@@ -6770,7 +6783,7 @@ end
 
 function sad_spawn_bomba(actor, obj)
 	local se_obj = alife():create("sad_nauchny_explosive_charge", vector():set(-382.28, -11.23, 24.8), 0, db.actor:game_vertex_id())
-	se_obj:set_yaw(170 * math.pi / 180)
+	--se_obj:set_yaw(170 * math.pi / 180)
 end
 
 function sad_psi_cave_dospawn(actor,npc,p)
@@ -7021,8 +7034,8 @@ function test_test_test(actor, npc,p)
 end
 
 function sad_dospawn(actor, npc) 
-        alife():create("cs_heavy_outfit",vector():set(-322.530701,-8.432878,-197.586182),49921,144) 
-        alife():create("sad_military_corpsik_info",vector():set(63.049343,-5.557441,122.937157),322491,106) 
+        alife():create("cs_heavy_outfit",vector():set(-322.530701,-8.432878,-197.586182),49921,5204) 
+        alife():create("sad_military_corpsik_info",vector():set(63.049343,-5.557441,122.937157),322491,5204) 
 end
 
 
@@ -7684,7 +7697,7 @@ end
 
 function topi_trader_quest_2_effects(actor,npc)
    if not has_alife_info("topi_trader_2_quest_talking_2") then 
-     db.actor.health = - 0.2  
+     --db.actor.health = - 0.2  
      play_snd_at_actor([[actor\pain_2]]) 
      level.add_cam_effector("camera_effects\\fusker.anm", 29, false, "")
      level.add_cam_effector("camera_effects\\earthquake_00.anm",118712,false,"")
@@ -7902,7 +7915,7 @@ function topi_var_2_suget_quest_3_create_tainik(actor,npc)
 	 create("topi_stalker_base_var_2_member_10",172.259765625,0.0023795068264008,524.23400878906,761490,8762)	 
      create("topi_anubis_ukazanie_1_spot",-18.674091339111,-0.61111903190613,224.99807739258,498363,8762)
      local yad_cell=alife():create("quest_rukzak",vector():set(-18.674091339111,-0.61111903190613,224.99807739258),498363,8762)
-        parse_table=utils.parse_spawns("topi_anubis_ukazanie_1,topi_anubis_var_2_bomba,killer_outfit,ammo_7.62x51_ap,3,wpn_l96")
+        parse_table=utils.parse_spawns("topi_anubis_ukazanie_1,topi_anubis_var_2_bomba,military_merc_outfit,ammo_7.62x51_ap,3,wpn_l96a1")
             for k,v in pairs(parse_table) do
               for i=1,v.prob do
                 alife():create(v.section,vector(),0,0,yad_cell.id)
@@ -8197,7 +8210,7 @@ end
 
 function topi_a45_angel_start_effect_1(actor,npc)
    if not has_alife_info("topi_a45_radist_quest_angel_talking_2") then 
-     db.actor.health = - 0.2  
+     --db.actor.health = - 0.2  
      play_snd_at_actor([[actor\pain_2]]) 
      level.add_cam_effector("camera_effects\\fusker.anm", 29, false, "")
      level.add_cam_effector("camera_effects\\earthquake_00.anm",118712,false,"")
@@ -8339,9 +8352,9 @@ end
 ---------------функция обворовывания Главного Героя
 function remove_all( actor, npc )
 	
-	local money = actor:money()
-	actor:give_money( -money )
-	game_stats.money_quest_update( -money )
+	--local money = actor:money()
+	--actor:give_money( -money )
+	--game_stats.money_quest_update( -money )
 	
 	local ini = system_ini()
 	for i = 1,65534 do
@@ -8586,94 +8599,96 @@ end
 --// 				Send Tips Functions
 --]]---------------------------------------------------------------
 function esc_sidor_talk_sms()
-	SendTip("%c[255,0,255,0]Саван, зайди ко мне как будешь неподалёку — есть дело для тебя.", "Скидан:", nil, 10, "sidor")
+	SendTip("%c[255,0,255,0]Savan, come to me when you're nearby - I have something for you.", "Skidan:", nil, 10, "sidor")
 end
 
 function esc_quest_fee_sms_1()
-	SendTip("%c[255,255,128,128]Как поживаешь, радиоактивное мясо? Тебе еще сутки на сбор денег, иначе сам знаешь, что будет.", "Подполковник Колязин:", nil, 10, "kolyazin")
+	SendTip("%c[255,255,128,128]How are you doing, radioactive meat? You have one more day to collect the money, otherwise you know what will happen.", "Colonel Kolyazin:", nil, 10, "kolyazin")
 end
+
 function esc_quest_fee_sms_2()
-	SendTip("%c[255,255,128,128]И где обещанные деньги? Хорошо, даю тебе еще 12 часов, если не управишься, пеняй на себя!", "Подполковник Колязин:", nil, 10, "kolyazin")
+	SendTip("%c[255,255,128,128]And where is the promised money? Alright, I'll give you 12 more hours, if you don't make it, blame yourself!", "Colonel Kolyazin:", nil, 10, "kolyazin")
 end
+
 function esc_quest_fee_sms_3()
-	SendTip("%c[255,255,128,128]Время для собора денег вышло. Твоего дружка мы на корм собакам пустили, и тебе еще не долго бегать осталось.", "Подполковник Колязин:", nil, 10, "kolyazin")
+	SendTip("%c[255,255,128,128]Time for collecting money is up. We fed your friend to the dogs, and you won't have much time left to run.", "Colonel Kolyazin:", nil, 10, "kolyazin")
 end
 
 function esc_sms_wolf_quest_trimming()
-	SendTip("%c[255,0,255,0]Саван, привет, тебе деньги еще нужны? А то я тут для тебя работу нашел, подходящую, приходи, расскажу, что почем.", "Пёс:", nil, 10, "wolf")
+	SendTip("%c[255,0,255,0]Savan, hey, do you still need money? I found a job for you here, come over and I'll tell you the details.", "Wolf:", nil, 10, "wolf")
 end
 
 function esc_sms_wolf_quest_insurance()
-	SendTip("%c[255,0,255,0]Это снова я. Нужна твоя помощь, ты знаешь где меня найти.", "Пёс:", nil, 10, "wolf")
+	SendTip("%c[255,0,255,0]It's me again. I need your help, you know where to find me.", "Wolf:", nil, 10, "wolf")
 end
 
 function esc_sms_wolf_quest_talk_wolf_work()
-	SendTip("%c[255,0,255,0]Ты это, заходи, если что, работу для тебя всегда найду...", "Пёс:", nil, 10, "wolf")
+	SendTip("%c[255,0,255,0]Hey, drop by if you need anything, I'll always find a job for you...", "Wolf:", nil, 10, "wolf")
 end
 
 function esc_sidor_esc_quest_serious_business_sms()
-	SendTip("%c[255,0,255,0]Саван, есть серьёзная работа для тебя. Жду.", "Скидан:", nil, 10, "sidor")
+	SendTip("%c[255,0,255,0]Savan, I have a serious job for you. Waiting for you.", "Skidan:", nil, 10, "sidor")
 end
 
 function esc_sidor_esc_quest_dangerous_business_sms()
-	SendTip("%c[255,0,255,0]Ну что, готов? Давай пулей ко мне, время не ждёт.", "Скидан:", nil, 10, "sidor")
+	SendTip("%c[255,0,255,0]Well, are you ready? Come to me quickly, time is running out.", "Skidan:", nil, 10, "sidor")
 end
 
 function esc_nps_wood_goblin_quest_sms()
-	SendTip("%c[255,0,255,0]Саван, не отставай!", "Леший:", nil, 10, "goblin")
+	SendTip("%c[255,0,255,0]Savan, don't lag behind!", "Wood Goblin:", nil, 10, "goblin")
 end
 
 function esc_borland_quest_line_sms()
-	SendTip("%c[255,0,255,0]Саван, как свободен будешь найди меня, разговор есть.", "Борланд:", nil, 10, "borland")
+	SendTip("%c[255,0,255,0]Savan, find me when you're free, I have something to talk about.", "Borland:", nil, 10, "borland")
 end
 
 function esc_sms_borland_posle_napadenia()
-	SendTip("%c[255,0,255,0]Ты куда пропал?! Давай мигом ко мне, я в Дервене новичков, жду тебя.","Борланд:",nil,10,"borland")
+	SendTip("%c[255,0,255,0]Where did you disappear to?! Come to me quickly, I'm in the Rookie Village, waiting for you.", "Borland:", nil, 10, "borland")
 end
 
 function esc_sms_borland_assistance_conditional()
-	SendTip("%c[255,0,255,0]Не парься, Саван, сейчас высвободим тебя.","Борланд:",nil,10,"borland")
+	SendTip("%c[255,0,255,0]Don't worry, Savan, we'll free you soon.", "Borland:", nil, 10, "borland")
 end
 
 function esc_sms_logoped_predlog()
-	SendTip("%c[255,255,128,128]Оба-на!!! Смотрите, кто к нам колеса катит! Ты на территории моей бригады, бродяга. Подкатывай ко мне, перетрем. Может и дело для тебя найдется, во благо нашей братвы.","Логопед:",nil,10,"logoped")
+	SendTip("%c[255,255,128,128]Oba-na!!! Look who's coming our way! You're in my territory, stranger. Come to me, let's have a talk. Maybe I have a job for you, for the good of our brotherhood.", "Logoped:", nil, 10, "logoped")
 	db.actor:give_info_portion("esc_sms_logoped_predlog_info")
 end
 
 function esc_sms_logoped_gopstop_fail()
-	SendTip("%c[255,255,128,128]Ну ты лошара с простым делом справиться не смог!","Логопед:",nil,10,"logoped")
+	SendTip("%c[255,255,128,128]You're such a loser, couldn't handle a simple task!", "Logoped:", nil, 10, "logoped")
 end
 
 function esc_borland_underground_1_sms()
-	SendTip("%c[255,0,255,0]Не отставай, Саван!","Борланд:",nil,10,"borland")
+	SendTip("%c[255,0,255,0]Don't fall behind, Savan!", "Borland:", nil, 10, "borland")
 end
 
 function esc_borland_underground_2_sms()
-	SendTip("%c[255,0,255,0]Надо держаться вместе!","Борланд:",nil,10,"borland")
+	SendTip("%c[255,0,255,0]We need to stick together!", "Borland:", nil, 10, "borland")
 end
 
 function esc_sidor_underground_sms()
-	SendTip("%c[255,0,255,0]Саван, отличная новость, я через свои связи узнал мастер код доступа в лабораторию, вот он: 7200 ","Скидан:",nil,10,"sidor")
+	SendTip("%c[255,0,255,0]Savan, great news! I found out the master access code to the laboratory through my contacts, here it is: 7200", "Skidan:", nil, 10, "sidor")
 end
 
 function esc_shaman_group_sms()
-	SendTip("%c[255,0,255,0]Привет, Саван, я готов принять тебя к нам.","Шаман:",nil,10,"shaman")
+	SendTip("%c[255,0,255,0]Hello, Savan, I'm ready to accept you into our group.", "Shaman:", nil, 10, "shaman")
 end
 
 function esc_nps_student_quest_sms()
-	SendTip("%c[255,0,255,0]Ты куда, подожди!","Студент:",nil,10,"pda")
+	SendTip("%c[255,0,255,0]Where are you going? Wait!", "Student:", nil, 10, "pda")
 end
 
 function esc_nps_student_quest_sms_2()
-	SendTip("%c[255,0,255,0]Мда! Хороший из тебя проводник оказался.","Студент:",nil,10,"pda")
+	SendTip("%c[255,0,255,0]Well, well! Turns out you're a good guide.", "Student:", nil, 10, "pda")
 end
 
 function esc_shaman_worke()
-	SendTip("%c[255,0,255,0]Привет, Саван, слышал ты подзаработать не против, подходи, поболтаем, может, найду для тебя подходящую работенку.","Шаман:",nil,10,"shaman")
+	SendTip("%c[255,0,255,0]Hello, Savan, heard you wouldn't mind earning some extra cash, come over, let's talk, maybe I'll find a suitable job for you.", "Shaman:", nil, 10, "shaman")
 end
 
 function esc_sms_wolf_quest_conductor()
-	SendTip("%c[255,0,255,0]Нужны деньги? Приходи, я нашел для тебя подходящую работу.", "Пёс:", nil, 10, "wolf")
+	SendTip("%c[255,0,255,0]Need money? Come, I found a suitable job for you.", "Wolf:", nil, 10, "wolf")
 end
 --[[
 --	Выдача сообщения актору
@@ -9023,15 +9038,15 @@ end
 
 function pod_b38_main_quest_create_psionik(actor,npc)
 	if not has_alife_info("labx5_b1_borland_talking_2") then 	 
-		alife():create("labx5_a2_attacked_psionik_1",vector():set(2.3950772285461,0.61230111122131,30.745239257813),1357,9657)     
+		alife():create("labx5_a2_attacked_psionik_1",vector():set(2.3950772285461,0.61230111122131,30.745239257813),1357,9429)     
 	end
 end
 
 function pod_b38_create_monster_1(actor,npc)
 	if not has_alife_info("labx5_b1_first_door_open") then 	 
-	    alife():create("labx5_a2_attacked_polter_1",vector():set(-5.4059581756592,-4.2826805114746,34.098899841309),734,9657)
-		alife():create("labx5_a2_attacked_polter_2",vector():set(-9.2260599136353,-4.6911101341248,27.61842918396),556,9657)
-		alife():create("labx5_a2_attacked_polter_4",vector():set(4.6447696685791,-4.2850379943848,36.919479370117),1510,9657)	 
+	    alife():create("labx5_a2_attacked_polter_1",vector():set(-5.4059581756592,-4.2826805114746,34.098899841309),734,9429)
+		alife():create("labx5_a2_attacked_polter_2",vector():set(-9.2260599136353,-4.6911101341248,27.61842918396),556,9429)
+		alife():create("labx5_a2_attacked_polter_4",vector():set(4.6447696685791,-4.2850379943848,36.919479370117),1510,9429)	 
 	end
 end
 
@@ -9095,50 +9110,50 @@ end
 
 function pod_a2_main_quest_create_mutant(actor,npc)
 	if not has_alife_info("labx5_b1_come_point_1") then 	 
-		alife():create("labx5_a1_quest_mutant_9",vector():set(20.203407287598,-4.6346039772034,50.289279937744),3562,9657)     
-		alife():create("labx5_a1_quest_mutant_2",vector():set(45.327808380127,-14.588823318481,42.00121307373),5017,9657)
-		alife():create("labx5_a1_quest_mutant_4",vector():set(9.0867347717285,-35.543056488037,47.109683990479),2191,9657)
-		alife():create("labx5_a1_quest_mutant_6",vector():set(30.9700756073,-40.126529693604,-34.977828979492),4215,9657)
+		alife():create("labx5_a1_quest_mutant_9",vector():set(20.203407287598,-4.6346039772034,50.289279937744),3562,9429)     
+		alife():create("labx5_a1_quest_mutant_2",vector():set(45.327808380127,-14.588823318481,42.00121307373),5017,9429)
+		alife():create("labx5_a1_quest_mutant_4",vector():set(9.0867347717285,-35.543056488037,47.109683990479),2191,9429)
+		alife():create("labx5_a1_quest_mutant_6",vector():set(30.9700756073,-40.126529693604,-34.977828979492),4215,9429)
 	end
 end
 
 function pod_a2_create_borland_podmena(actor,npc)
 	if not has_alife_info("labx5_b1_come_point_1") then 	 
-		alife():create("labx5_a2_borland_podmena",vector():set(98.202896118164,-66.167961120605,-64.955352783203),8488,9657) 
+		alife():create("labx5_a2_borland_podmena",vector():set(98.202896118164,-66.167961120605,-64.955352783203),8488,9429) 
 	end
 end
 
 function labx5_b2_main_quest_1_lift_effect(actor, npc)
 	if not has_alife_info("sp_a2_hero_to_garbage_come") then	
-	    SendTip("labx5_borland_message_text_4", "Борланд:", nil, 14, "borland")	   
+	    SendTip("labx5_borland_message_text_4", "Borland:", nil, 14, "borland")	   
 	end
 end
 
 function labx5_b2_pitanie_quest_1(actor, npc)
 	if xr_conditions.actor_in_zone(actor, npc, {"pod_b1_main_quest_restr_3"}) then	
-	    SendTip("labx5_borland_message_text_1", "Борланд:", nil, 14, "borland")
+	    SendTip("labx5_borland_message_text_1", "Borland:", nil, 14, "borland")
 	    db.actor:give_info_portion("labx5_b1_lift_pitanie_give")
 	end
 end
 
 function labx5_b2_pitanie_dop_quest_1(actor, npc)
 	if xr_conditions.actor_in_zone(actor, npc, {"pod_b1_main_quest_restr_dop_3"}) then	
-	    SendTip("labx5_borland_message_text_1", "Борланд:", nil, 14, "borland")
+	    SendTip("labx5_borland_message_text_1", "Borland:", nil, 14, "borland")
 	    db.actor:give_info_portion("labx5_b1_lift_pitanie_give")
 	end
 end
 
 function pod_a2_create_zas_monolith(actor,npc)
 	if not has_alife_info("labx5_a2_monolith_default_all_death") then 	 
-		alife():create("labx5_a2_monolith_default_1",vector():set(91.417488098145,-66.134613037109,-104.18830108643),7489,9657)
-		alife():create("labx5_a2_monolith_default_2",vector():set(95.819290161133,-66.134117126465,-82.952217102051),8064,9657)
-		alife():create("labx5_a2_monolith_default_3",vector():set(96.020088195801,-66.133483886719,-85.961898803711),8060,9657)
-		alife():create("labx5_a2_monolith_default_4",vector():set(79.553497314453,-66.131660461426,-90.651382446289),6888,9657)
-		alife():create("labx5_a2_monolith_default_5",vector():set(67.61988067627,-66.134506225586,-100.53410339355),6258,9657)
-		alife():create("labx5_a2_monolith_default_6",vector():set(83.860626220703,-66.133369445801,-103.68682098389),7076,9657)
-		alife():create("labx5_a2_monolith_default_7",vector():set(122.23640441895,-66.131523132324,-106.33821105957),9865,9657)
-		alife():create("labx5_a2_monolith_default_8",vector():set(72.898933410645,-66.13207244873,-97.241157531738),6540,9657)
-		alife():create("labx5_a2_monolith_default_9",vector():set(102.61026000977,-66.132637023926,-91.552955627441),8844,9657)	 
+		alife():create("labx5_a2_monolith_default_1",vector():set(91.417488098145,-66.134613037109,-104.18830108643),7489,9429)
+		alife():create("labx5_a2_monolith_default_2",vector():set(95.819290161133,-66.134117126465,-82.952217102051),8064,9429)
+		alife():create("labx5_a2_monolith_default_3",vector():set(96.020088195801,-66.133483886719,-85.961898803711),8060,9429)
+		alife():create("labx5_a2_monolith_default_4",vector():set(79.553497314453,-66.131660461426,-90.651382446289),6888,9429)
+		alife():create("labx5_a2_monolith_default_5",vector():set(67.61988067627,-66.134506225586,-100.53410339355),6258,9429)
+		alife():create("labx5_a2_monolith_default_6",vector():set(83.860626220703,-66.133369445801,-103.68682098389),7076,9429)
+		alife():create("labx5_a2_monolith_default_7",vector():set(122.23640441895,-66.131523132324,-106.33821105957),9865,9429)
+		alife():create("labx5_a2_monolith_default_8",vector():set(72.898933410645,-66.13207244873,-97.241157531738),6540,9429)
+		alife():create("labx5_a2_monolith_default_9",vector():set(102.61026000977,-66.132637023926,-91.552955627441),8844,9429)	 
 	end
 end
 
@@ -9349,7 +9364,7 @@ end
 
 function gar_b2_main_quest_1_text_effect(actor, npc)
 	if not has_alife_info("gar_a2_sp_killer_zas_create") then	
-	    SendTip("gar_borland_message_text_3", "Борланд:", nil, 14, "borland")	    
+	    SendTip("gar_borland_message_text_3", "Borland:", nil, 14, "borland")	    
 	end
 end
 
@@ -9359,11 +9374,11 @@ SendTip("%c[255,0,255,0]Buying any weapons in any condition for spare parts. At 
 end
 
 function esc_borland_bar_surget_sms()
-SendTip("%c[255,0,255,0]Savannah! We need to stick together!","Borland:",nil,10,"borland")
+SendTip("%c[255,0,255,0]Savan! We need to stick together!","Borland:",nil,10,"borland")
 end
 
 function esc_borland_bar_surget_2_sms()
-SendTip("%c[255,0,255,0]Savannah! Hurry up! Or we will die!","Borland:",nil,10,"borland")
+SendTip("%c[255,0,255,0]Savan! Hurry up! Or we will die!","Borland:",nil,10,"borland")
 end
 
 function bar_start(actor,npc)
@@ -9463,7 +9478,7 @@ end
 ----------------
 
 function bar_send_12_time()
-    SendTip("Прошло 12ч. 08м.", nil, nil, 10, "pda")
+SendTip("12 hours and 8 minutes have passed.", nil, nil, 10, "pda")
 end
 
 
@@ -9580,11 +9595,11 @@ end
 
 
 function test_sms()
-	SendTip("%c[255,0,255,0]ТЕСТ","Разработчик:",nil,10,"barmen")
+SendTip("%c[255,0,255,0]TEST","Developer:",nil,10,"barmen")
 end
 
 function test_sms2()
-	SendTip("%c[255,0,255,0]ТЕСТ_2","Разработчик:",nil,10,"barmen")
+SendTip("%c[255,0,255,0]TEST_2","Developer:",nil,10,"barmen")
 end
 
 function city_btr_eff_1(actor,npc,p)
@@ -9711,94 +9726,94 @@ end
 function dl_tech_unlocked_pda_vorona()
 	local snd = sound_object([[characters_voice\scenario\deadlake\dl_tech_unlocked_pda_vorona]])
      snd:play_no_feedback(db.actor,sound_object.s2d, 0, vector(), 1.0, 1.0)
-	SendTip("%c[54,199,169,96]Змей, тот ПДА который ты мне давеча приносил, уже разблокирован. Приходи забирай.", "Пианист:", nil, 25, "ui_inGame2_Gonta")
+	SendTip("%c[54,199,169,96]Snake, the PDA you brought me the other day is already unlocked. Come and get it.", "Pianist:", nil, 25, "ui_inGame2_Gonta")
 end
 
 function foma_reward_give_treasure()
 	local snd = sound_object([[characters_voice\scenario\way_in_zone\foma\wiz_foma_good_job_reward]])
      snd:play_no_feedback(db.actor,sound_object.s2d, 0, vector(), 1.0, 1.0)
-	SendTip("%c[54,199,169,96]Отличная работа! Твоя награда находиться в схроне - координаты уже сбросил.", "Фома:", nil, 25, "ui_inGame2_Sich")
+	SendTip("%c[54,199,169,96]Great job! Your reward is in the stash - the coordinates have already dropped.", "Thomas:", nil, 25, "ui_inGame2_Sich")
 end
 
 function dl_message_00()
 	local snd = sound_object([[characters_voice\scenario\deadlake\actor\dl_message_00]])
      snd:play_no_feedback(db.actor,sound_object.s2d, 0, vector(), 1.0, 1.0)
-	SendTip("%c[54,199,169,96]Лейтенант, слышишь меня? Это Змей.", "Змей:", nil, 25, "ui_inGame2_Hero")
+	SendTip("%c[54,199,169,96]Lieutenant, can you hear me? This is Snake.", "Snake:", nil, 25, "ui_inGame2_Hero")
 end
 
 function dl_message_01()
 	local snd = sound_object([[characters_voice\scenario\deadlake\dl_message_01]])
      snd:play_no_feedback(db.actor,sound_object.s2d, 0, vector(), 1.0, 1.0)
-	SendTip("%c[54,199,169,96]Змей? Слышу тебя, что хотел?", "Краснопольский:", nil, 25, "ui_inGame2_Dolg_4")
+	SendTip("%c[54,199,169,96]Snake? I hear you, what do you want?", "Krasnopolsky:", nil, 25, "ui_inGame2_Dolg_4")
 end
 function dl_message_02()
 	local snd = sound_object([[characters_voice\scenario\deadlake\actor\dl_message_02]])
      snd:play_no_feedback(db.actor,sound_object.s2d, 0, vector(), 1.0, 1.0)
-	SendTip("%c[54,199,169,96]Есть дело к тебе и твоей группе. Нужна помощь в устранении группы наёмников.", "Змей:", nil, 25, "ui_inGame2_Hero")
+	SendTip("%c[54,199,169,96]There is a case for you and your group. I need help in eliminating a group of mercenaries.", "Snake:", nil, 25, "ui_inGame2_Hero")
 end
 
 function dl_message_03()
 	local snd = sound_object([[characters_voice\scenario\deadlake\dl_message_03]])
      snd:play_no_feedback(db.actor,sound_object.s2d, 0, vector(), 1.0, 1.0)
-	SendTip("%c[54,199,169,96]Наёмники говоришь? Думаю, что сможем помочь тебе. Скидывай координаты куда идти и ещё, кто-то будет участвовать?", "Краснопольский:", nil, 25, "ui_inGame2_Dolg_4")
+	SendTip("%c[54,199,169,96]Mercenaries, you say? I think we can help you. Send me the coordinates and also, will someone participate?", "Krasnopolsky:", nil, 25, "ui_inGame2_Dolg_4")
 end
 function dl_message_04()
 	local snd = sound_object([[characters_voice\scenario\deadlake\actor\dl_message_04]])
      snd:play_no_feedback(db.actor,sound_object.s2d, 0, vector(), 1.0, 1.0)
-	SendTip("%c[54,199,169,96]Координаты уже сбросил, будем ждать тебя с группой на Ферме, касательно участников, то будет ещё несколько нейтралов.", "Змей:", nil, 25, "ui_inGame2_Hero")
+	SendTip("%c[54,199,169,96]I have already dropped the coordinates, we will wait for you with a group on the farm, as for participants, there will be a few neutrals.", "Snake:", nil, 25, "ui_inGame2_Hero")
 end
 
 function dl_message_05()
 	local snd = sound_object([[characters_voice\scenario\deadlake\dl_message_05]])
      snd:play_no_feedback(db.actor,sound_object.s2d, 0, vector(), 1.0, 1.0)
-	SendTip("%c[54,199,169,96]Хорошо, завтра думаю к полуночи будем, там и обсудим что к чему.", "Краснопольский:", nil, 25, "ui_inGame2_Dolg_4")
+	SendTip("%c[54,199,169,96]All right, I think we'll be there by midnight tomorrow, and we'll discuss what does it mean.", "Krasnopolsky:", nil, 25, "ui_inGame2_Dolg_4")
 end
 function dl_message_06()
 	local snd = sound_object([[characters_voice\scenario\deadlake\actor\dl_message_06]])
      snd:play_no_feedback(db.actor,sound_object.s2d, 0, vector(), 1.0, 1.0)
-	SendTip("%c[54,199,169,96]Принял, будем ждать Вас.", "Змей:", nil, 25, "ui_inGame2_Hero")
+	SendTip("%c[54,199,169,96]Roger that, we'll be waiting for you.", "Snake:", nil, 25, "ui_inGame2_Hero")
 end
 
 function bolotnaya_tvar_die_actor()
 	local snd = sound_object([[characters_voice\scenario\way_in_zone\actor\wiz_actor_message_to_foma]])
      snd:play_no_feedback(db.actor,sound_object.s2d, 0, vector(), 1.0, 1.0)
-	SendTip("%c[54,199,169,96]Фома, это Змей. Тварь о которой ты говорил – мертва.", "Змей:", nil, 25, "ui_inGame2_Hero")
+	SendTip("%c[54,199,169,96]Thomas, this is Snake. The mutant you spoke of is dead.", "Snake:", nil, 25, "ui_inGame2_Hero")
 end
 
 function bolotnaya_tvar_die_foma()
 	local snd = sound_object([[characters_voice\scenario\way_in_zone\foma\wiz_foma_good_i_give_info]])
      snd:play_no_feedback(db.actor,sound_object.s2d, 0, vector(), 1.0, 1.0)
-	SendTip("%c[54,199,169,96]Отлично, с меня инфа, как и обещал.", "Фома:", nil, 25, "ui_inGame2_Sich")
+	SendTip("%c[54,199,169,96]Great, I owe you the info, as promised .", "Thomas:", nil, 25, "ui_inGame2_Sich")
 end
 
 function katacombs_foma_message()
 	local snd = sound_object([[characters_voice\scenario\way_in_zone\foma\wiz_foma_i_have_news]])
      snd:play_no_feedback(db.actor,sound_object.s2d, 0, vector(), 1.0, 1.0)
-	SendTip("%c[54,199,169,96]Змей, есть новости, связанные с твоим делом – зайди.", "Фома:", nil, 25, "ui_inGame2_Sich")
+	SendTip("%c[54,199,169,96]Snake, there's news related to your case - come on in.", "Thomas:", nil, 25, "ui_inGame2_Sich")
 end
 
 function uninvited_guests_message_01()
 	local snd = sound_object([[characters_voice\scenario\way_in_zone\merc\wiz_merc_fraze_talk_1]])
      snd:play_no_feedback(db.actor,sound_object.s2d, 0, vector(), 1.0, 1.0)
-	SendTip("%c[54,199,169,96]Задолбала эта Зона! Аномалии эти сраные… А зверья?! И ведь лезут сюда всякие...", "Наёмники:", nil, 25, "ui_inGame2_Hmuriy")
+	SendTip("%c[54,199,169,96]I'm sick of this Zone! These damn anomalies... and the mutants. And all sorts of people come in here...", "Mercenaries:", nil, 25, "ui_inGame2_Hmuriy")
 end
 
 function uninvited_guests_message_02()
 	local snd = sound_object([[characters_voice\scenario\way_in_zone\merc\wiz_merc_fraze_talk_3]])
      snd:play_no_feedback(db.actor,sound_object.s2d, 0, vector(), 1.0, 1.0)
-	SendTip("%c[54,199,169,96]Ладно, завязывай! Нам всего-то нужно было арт достать и сталкера устранить, мы заказ выполнили, так что скоро свалим отсюда!", "Наёмники:", nil, 25, "ui_inGame2_Grif")
+	SendTip("%c[54,199,169,96]All right, knock it off! All we had to do was get the art and eliminate the stalker, and we did our job, so we'll be out of here soon!", "Mercenaries:", nil, 25, "ui_inGame2_Grif")
 end
 
 function uninvited_guests_message_03()
 	local snd = sound_object([[characters_voice\scenario\way_in_zone\merc\wiz_merc_fraze_talk_2]])
      snd:play_no_feedback(db.actor,sound_object.s2d, 0, vector(), 1.0, 1.0)
-	SendTip("%c[54,199,169,96]Согласен, главное, что заказчик доволен, а Кривой не гундит почём зря...", "Наёмники:", nil, 25, "ui_inGame2_Hmuriy")
+	SendTip("%c[54,199,169,96]I agree, the most important thing is that the client is satisfied, and Twisted does not rant for nothing...", "Mercenaries:", nil, 25, "ui_inGame2_Hmuriy")
 end
 
 function ivanich_unlock_signal_message()
 	local snd = sound_object([[characters_voice\radio\way_in_zone\wiz_ivanich_pda_unlocked]])
      snd:play_no_feedback(db.actor,sound_object.s2d, 0, vector(), 1.0, 1.0)
-	SendTip("%c[54,199,169,96]ПДА разблокирован, подходи - забирай", "Иваныч:", nil, 25, "ui_inGame2_Istoriya_dolga")
+	SendTip("%c[54,199,169,96]PDA unlocked, come and get it", "Ivanych:", nil, 25, "ui_inGame2_Istoriya_dolga")
 end
 
 function zametki_pda_poslannika_1()
@@ -9817,17 +9832,17 @@ function zametki_pda_poslannika_3()
 end
 
 function codes_messages_kosta_to_mercs()
-	SendTip("%c[54,199,169,96]Сообщение зашифрованно...", "Нейтралы:", nil, 25, "ui_inGame2_PD_Drug_Stalkerov")
+	SendTip("%c[54,199,169,96]Message encrypted...", "Neutrals:", nil, 25, "ui_inGame2_PD_Drug_Stalkerov")
 end
 
 function codes_messages_mercs_to_kosta()
-	SendTip("%c[54,199,169,96]Сообщение зашифрованно...", "Наёмники:", nil, 25, "ui_inGame2_Killers")
+	SendTip("%c[54,199,169,96]Message encrypted...", "Mercenaries:", nil, 25, "ui_inGame2_Killers")
 end
 
 function rjaviu_first_message()
 	local snd = sound_object([[characters_voice\radio\way_in_zone\wiz_stalker_rjaviu_est_delo_podoidi]])
      snd:play_no_feedback(db.actor,sound_object.s2d, 0, vector(), 1.0, 1.0)
-	SendTip("%c[54,199,169,96]Змей, есть дело - подойди.", "Ржавый:", nil, 25, "ui_inGame2_Vano")
+	SendTip("%c[54,199,169,96]Snake, there's a case- comehere.", "Rusty:", nil, 25, "ui_inGame2_Vano")
 end
 
 function dl_voron_notes()
@@ -9863,17 +9878,17 @@ end
 function gonec_pravosudiya_rjaviu_message()
 	local snd = sound_object([[characters_voice\radio\way_in_zone\wiz_stalker_rjaviu_zmey_podoydi]])
      snd:play_no_feedback(db.actor,sound_object.s2d, 0, vector(), 1.0, 1.0)
-	SendTip("%c[54,199,169,96]Змей, подойди.", "Ржавый:", nil, 25, "ui_inGame2_Vano")
+	SendTip("%c[54,199,169,96]Snake, come to me.", "Rusty:", nil, 25, "ui_inGame2_Vano")
 end
 
 function new_writes_in_diary()
-	SendTip("%c[54,199,169,96]Новая запись в дневнике.", "Информация:", nil, 25, "ui_inGame2_PD_Drug_Stalkerov")
+	SendTip("%c[54,199,169,96]A new diary note.", "Information:", nil, 25, "ui_inGame2_PD_Drug_Stalkerov")
 end
 
 function dl_sos_message()
 	local snd = sound_object([[characters_voice\scenario\deadlake\dl_sos_message]])
      snd:play_no_feedback(db.actor,sound_object.s2d, 0, vector(), 1.0, 1.0)
-	SendTip("%c[54,199,169,96]Змей, мои люди поймали сигнал бедствия недалеко от нашего лагеря! Проверь пожалуйста, координаты уже сбросил.", "Тоха:", nil, 25, "ui_inGame2_Noy")
+	SendTip("%c[54,199,169,96]Snake, my men caught a SOS signal not far from our camp! Please check it, I sent you the coordinates.", "Tokha:", nil, 25, "ui_inGame2_Noy")
 end
 
 -------------- Тёмная Долина alife frazes .---------------
@@ -9881,55 +9896,55 @@ end
 function val_alife_counter_attack_check_1()
 	local snd = sound_object([[characters_voice\scenario\alife_words\check_1]])
      snd:play_no_feedback(db.actor,sound_object.s2d, 0, vector(), 1.0, 1.0)
-	SendTip("%c[54,199,169,96]...Мужики, приём...", "Вольные сталкеры:", nil, 25, "ui_inGame2_neutral_2")
+	SendTip("%c[54,199,169,96]...Guys, do you hear me, over....", "Free stalkers:", nil, 25, "ui_inGame2_neutral_2")
 end
 
 function val_alife_counter_attack_check_2()
 	local snd = sound_object([[characters_voice\scenario\alife_words\check_2]])
      snd:play_no_feedback(db.actor,sound_object.s2d, 0, vector(), 1.0, 1.0)
-	SendTip("%c[54,199,169,96]...Мужики, приё-ом... Оглохли, что ли?..", "Вольные сталкеры:", nil, 25, "ui_inGame2_neutral_2")
+	SendTip("%c[54,199,169,96]...Men, do you hear me... Are you deaf or something, over ?..", "Free stalkers:", nil, 25, "ui_inGame2_neutral_2")
 end
 
 function val_alife_counter_attack_check_3()
 	local snd = sound_object([[characters_voice\scenario\alife_words\check_3]])
      snd:play_no_feedback(db.actor,sound_object.s2d, 0, vector(), 1.0, 1.0)
-	SendTip("%c[54,199,169,96]...Там есть кто живой? Отвечайте!..", "Вольные сталкеры:", nil, 25, "ui_inGame2_neutral_2")
+	SendTip("%c[54,199,169,96]...Is anyone there alive? Answer me!..", "Free stalkers:", nil, 25, "ui_inGame2_neutral_2")
 end
 
 function val_alife_counter_attack_check_4()
 	local snd = sound_object([[characters_voice\scenario\alife_words\check_4]])
      snd:play_no_feedback(db.actor,sound_object.s2d, 0, vector(), 1.0, 1.0)
-	SendTip("%c[54,199,169,96]...Мужики, вы нас слышите? Эй!..", "Вольные сталкеры:", nil, 25, "ui_inGame2_neutral_2")
+	SendTip("%c[54,199,169,96]...Guys, can hear us? Hey!..", "Free stalkers:", nil, 25, "ui_inGame2_neutral_2")
 end
 
 function val_alife_counter_attack_counter_attack_begin_1()
 	local snd = sound_object([[characters_voice\scenario\alife_words\counter_attack_begin_1]])
      snd:play_no_feedback(db.actor,sound_object.s2d, 0, vector(), 1.0, 1.0)
-	SendTip("%c[54,199,169,96]Там наши мужики не отвечают. Вы гляньте - может, им помощь нужна?", "Вольные сталкеры:", nil, 25, "ui_inGame2_neutral_2")
+	SendTip("%c[54,199,169,96]Our guys there don't answer. Maybe they need help.", "Free stalkers:", nil, 25, "ui_inGame2_neutral_2")
 end
 
 function val_alife_counter_attack_counter_attack_begin_2()
 	local snd = sound_object([[characters_voice\scenario\alife_words\counter_attack_begin_2]])
      snd:play_no_feedback(db.actor,sound_object.s2d, 0, vector(), 1.0, 1.0)
-	SendTip("%c[54,199,169,96]Не можем установить связь... Надо глянуть, что с мужиками стряслось.", "Вольные сталкеры:", nil, 25, "ui_inGame2_neutral_2")
+	SendTip("%c[54,199,169,96]We can't contact them... We need to see what happened to them.", "Free stalkers:", nil, 25, "ui_inGame2_neutral_2")
 end
 
 function val_alife_counter_attack_counter_attack_begin_3()
 	local snd = sound_object([[characters_voice\scenario\alife_words\counter_attack_begin_3]])
      snd:play_no_feedback(db.actor,sound_object.s2d, 0, vector(), 1.0, 1.0)
-	SendTip("%c[54,199,169,96]Ребята наши где-то потерялись. Готовьте отряд на поиски.", "Вольные сталкеры:", nil, 25, "ui_inGame2_neutral_2")
+	SendTip("%c[54,199,169,96]Our guys are lost somewhere. Get a squad ready to look for them.", "Free stalkers:", nil, 25, "ui_inGame2_neutral_2")
 end
 
 function val_alife_counter_attack_reply_1()
 	local snd = sound_object([[characters_voice\scenario\alife_words\reply_1]])
      snd:play_no_feedback(db.actor,sound_object.s2d, 0, vector(), 1.0, 1.0)
-	SendTip("%c[54,199,169,96]Добро, сходим посмотрим.", "Вольные сталкеры:", nil, 25, "ui_inGame2_neutral_2")
+	SendTip("%c[54,199,169,96]All right, let's go and see.", "Free stalkers:", nil, 25, "ui_inGame2_neutral_2")
 end
 
 function val_alife_counter_attack_reply_2()
 	local snd = sound_object([[characters_voice\scenario\alife_words\reply_2]])
      snd:play_no_feedback(db.actor,sound_object.s2d, 0, vector(), 1.0, 1.0)
-	SendTip("%c[54,199,169,96]Принял. Сделаем.", "Вольные сталкеры:", nil, 25, "ui_inGame2_neutral_2")
+	SendTip("%c[54,199,169,96]Copy. Will do.", "Free stalkers:", nil, 25, "ui_inGame2_neutral_2")
 end
 
 
@@ -11769,11 +11784,12 @@ function aes_grenade_explode (actor, npc)
 end
 
 function spawn_wpn_saiga_rookie_pole(first_speaker, second_speaker)
-     local pos = vector():set( -164.93, 0.16, 77.97 )
-     local se_obj = alife_create( "wpn_saiga_rookie_pole", pos, 80940, 5381 )
-     if ( not se_obj ) then
-          printe("!ERROR: unable to spawn_wpn_saiga_rookie_pole" )
-     end
+	spawn_object(nil, nil, {"wpn_saiga_rookie_pole","pol_smart_terrain_1_2_collector_2_walk"})
+     --local pos = vector():set( -164.93, 0.16, 77.97 )
+     --local se_obj = alife_create( "wpn_saiga_rookie_pole", pos, 80940, 5381 )
+     --if ( not se_obj ) then
+          --printe("!ERROR: unable to spawn_wpn_saiga_rookie_pole" )
+     --end
 end
 
 function set_friends(actor, npc, p)
@@ -11816,4 +11832,18 @@ function set_squad_community_goodwill(actor, npc, p)
 	if(p[1]~=nil) and (p[2]~=nil) and (p[3]~=nil) then
 		game_relations.set_squad_community_goodwill(p[1], p[2], p[3])
 	end
+end
+
+
+function relocate_npc_inventory_to_box(actor, npc, p)
+	local function transfer_npc_object_item(item)
+		if item:section() ~= "wpn_binoc" and item:section() ~= "wpn_knife" and item:section() ~= "device_torch" then
+			npc:transfer_item(item, inv_box_1)
+		end
+	end
+	inv_box_1 = get_story_object (p[1])
+	npc:inventory_for_each(transfer_npc_object_item)
+	npc:transfer_item(npc:item_in_slot(2), inv_box_1)
+	npc:transfer_item(npc:item_in_slot(3), inv_box_1)
+	npc:transfer_item(npc:item_in_slot(4), inv_box_1)
 end

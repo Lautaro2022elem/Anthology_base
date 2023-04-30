@@ -5,16 +5,17 @@
 on_info = %+jup_b47_mercs_attack%
 
 [walker@jup_b47_merc_regret]
-on_info = {+jup_b47_merc_leader_regret -jup_b47_merc_leader_regret_sad} %+jup_b47_merc_leader_regret_sad =play_sound(jup_b47_merc_leader_regret)%
+on_info = {+jup_b47_merc_leader_regret -jup_b47_merc_leader_regret_sad} %+jup_b47_merc_leader_regret_sad =set_squad_goodwill(jup_b47_merc_guard_squad:enemy) =hit_npc_from_actor =play_sound(jup_b47_merc_leader_regret)%
 in_restr = zone_burning_fuzz_average_0004, zone_burning_fuzz_average_0003, zone_burning_fuzz_average_0005, jup_b47_zone_mine_acidic_strong_0000, jup_b47_zone_mine_acidic_strong_0002, zone_burning_fuzz_average
 
 [walker@jup_b47_attack_gen]:walker@jup_b47_merc_regret
 combat_ignore_cond = {-jup_b47_mercs_attack} true
 on_actor_dist_le_nvis = 10 | {-jup_b47_mercs_attack} %+jup_b47_mercs_attack%
-on_info2 = {=see_actor -jup_b47_mercs_attack} %+jup_b47_mercs_attack%
+on_info2 = {=see_actor -jup_b47_mercs_attack} %=hit_npc_from_actor +jup_b47_mercs_attack%
 
 [walker@jup_b47_attack_stair]:walker@jup_b47_merc_regret
 def_state_moving = sprint
+on_info99 = {-jup_b47_attack_stair} %=hit_npc_from_actor +jup_b47_attack_stair%
 
 [walker@jup_b47_attack_hale]:walker@jup_b47_attack_stair
 out_restr = jup_b47_merc_4567_out_rest

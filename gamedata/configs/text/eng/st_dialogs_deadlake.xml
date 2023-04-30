@@ -1,528 +1,528 @@
 <?xml version="1.0" encoding="windows-1251" standalone="yes" ?>
 <string_table>
     <string id="val_first_dialog_pianist_task_0">
-        <text>Ты ещё кто такой?!</text>
+        <text>Who the hell are you?!</text>
     </string>
     <string id="val_first_dialog_pianist_task_1">
-        <text>Сталкер, просто сталкер. Ты видимо и есть техник - Пианист?</text>
+        <text>A stalker, just a stalker. You must be the Piano Man?</text>
     </string>
     <string id="val_first_dialog_pianist_task_2">
-        <text>Может да, а может и нет. Всё зависит от того, что от меня тебе нужно? Как вообще нашёл меня?</text>
+        <text>Maybe I am, maybe I'm not. It depends. What do you want from me? How did you even find me?</text>
     </string>
     <string id="val_first_dialog_pianist_task_3">
-        <text>Значит точно ты. Найти тебя особых усилий не составило, сначала нашёл твой флэш-накопитель, а затем и тебя самого. Тебя сталкеры из лагеря, который на ферме ищут.</text>
+        <text>Then you must be you. It didn't take much effort to find you, first I found your flash drive and then you. The stalkers from the camp at the farm are looking for you.</text>
     </string>
     <string id="val_first_dialog_pianist_task_4">
-        <text>Ищут? На кой ляд я им нужен? Снова мне мозги парить? Снова новичкам рассказывать - как жить? А?</text>
+        <text>Looking for me? What the hell do they want with me? To mess with my head again? Telling the newbies how to live? Ah?</text>
     </string>
     <string id="val_first_dialog_pianist_task_5">
-        <text>Да мне-то почём знать? Меня попросили - я сделал.</text>
+        <text>How the hell should I know? They asked me to do it, I did it.</text>
     </string>
     <string id="val_first_dialog_pianist_task_6">
-        <text>Хорошо коли так, тогда давай с тобой договоримся, ты топаешь сейчас к Тохе, и поясняешь, что нашёл меня, но в лагерь я не вернусь, если захотят что-то от меня, то пусть жопу свою поднимают и идут. Всё ясно?</text>
+        <text>All right, then let's make a deal with you, you go to Tocha now, and explain that you found me, but I'm not going back to the camp, if they want something from me, then let them get their asses up and go. Is that clear?</text>
     </string>
     <string id="val_first_dialog_pianist_task_7">
-        <text>Более чем.</text>
+        <text>More than clear.</text>
     </string>
     <string id="val_garik_storyline_start_dialog_0">
-        <text>Сталкер, стой! Кто такой и что здесь ищешь?</text>
+        <text>Stalker, stop! Who are you and what are you looking for here?</text>
     </string>
     <string id="val_garik_storyline_start_dialog_1">
-        <text>Охотник, на Змея откликаюсь. Ищу здесь своего товарища - Бизона, может знаешь такого?</text>
+        <text>Hunter, I answer to Snake. I'm looking for my comrade, Bison, do you know him?</text>
     </string>
     <string id="val_garik_storyline_start_dialog_10">
-        <text>Во как! Хорошо, я поговорю с нашим лидером, он мужик толковый и в электронике неплохо шарит, так что думаю, с данным вопросом точно поможет, ну а ежели нет, то будем думать.</text>
+        <text>Oh, yeah! Well, I'll talk to our leader, he's a smart guy and not bad in electronics, so I think with this question for sure will help, but if not, then we will think.</text>
     </string>
     <string id="val_garik_storyline_start_dialog_11">
-        <text>Хорошо, тогда вот те два ПДА и мне нужна любая информация о Вашем технике, как зовут, чем вообще помимо ремонта увлекается или чем занимался до того как пропал.</text>
+        <text>Well, then here are two PDA and I need any information about your technique, as the name, what in general, in addition to repairs are fond of or what he did before he disappeared.</text>
     </string>
     <string id="val_garik_storyline_start_dialog_12">
-        <text>Техника Пианистом звать, вот чем увлекается этого сходу рассказать не могу, не наблюдал за ним, о последних его делах пока тоже ничего рассказать не могу, однако я с ребятами пообщаюсь и тебе сразу сообщу. Кстати, в последний раз Техника рядом с старым заводом видели, там ещё гравитационная архи-аномалия, координаты я тебе сейчас сброшу.</text>
+        <text>The technician's name is Piano Man, I can't say what he is into, I have not seen him and I can't say anything about his recent dealings but I will talk to the guys and I will let you know right away. By the way, last time the Technician was seen near the old factory, there is also gravitation archi-anomaly, I will throw you the coordinates.</text>
     </string>
     <string id="val_garik_storyline_start_dialog_13">
-        <text>Хорошо, тогда отправлюсь сначала туда, а по дороге глядишь и мутантов получиться зачистить.</text>
+        <text>Ok, then I'll go there first, and on the way I might be able to clean up the mutants.</text>
     </string>
     <string id="val_garik_storyline_start_dialog_2">
-        <text>Охотник, это хорошо, теперь будет кому дичь стрелять, а то у нас зелени восемьдесят процентов и с живностью Зоны, они не особо "ладят", ну если ты меня понимаешь. Что же Бизона твоего, то бывал он здесь, с ним ещё двое сталкеров было, одного кажется Плотником звали, а второй… Хм… Толи Феникс, или Феликс, как того кота из рекламы в общем.</text>
+        <text>Hunter, it's good, now we'll have someone to shoot game, and we have eighty percent of green and with wildlife of the Zone, they do not really get along, well, if you understand me. As for your Bison, then he was here, there were two stalkers with him, one I think his name was Carpenter, and the other ... Hm ... either Phoenix, or Felix, like that cat from the ads in general.</text>
     </string>
     <string id="val_garik_storyline_start_dialog_3">
-        <text>Ну это уже что-то, касательно местной фауны, то думаю, что смогу помочь Вам с этим, если хорошо заплатите и расскажите больше о Бизоне и парнях, которые были с ним. Кстати, а у Вас техник в лагере есть?</text>
+        <text>Well that's something about the local fauna, I think I can help you with that, if you pay me well and tell me more about Bison and the guys who were with him. By the way, do you have a technician at the camp?</text>
     </string>
     <string id="val_garik_storyline_start_dialog_4">
-        <text>Заплатим не прям много, но на жизнь хватит, а техник Наш пропал.</text>
+        <text>It's not much, but it's enough to live on, and our technician is missing.</text>
     </string>
     <string id="val_garik_storyline_start_dialog_5">
-        <text>Как пропал? И Вы не искали его?!</text>
+        <text>Missing how? And you did not look for him?!</text>
     </string>
     <string id="val_garik_storyline_start_dialog_6">
-        <text>Искали, да вот только где его тут искать и кому? Зелени?! Которая дальше лагеря нос боится сунуть, или Нам опытным сталкерам, которые дальше лагеря уйти не могут, потому что эту самую Зелень и стережём, короче беда брат, как в той поговорке: "И хочется, и колется…"</text>
+        <text>We did, but where to look for him and to whom? The greens?! Who are afraid to stick their noses in the camp, or us experienced stalkers, who can't go further than the camp, because we're guarding this very Green, in short, it's like in the proverb: I'm both eager and impatient...</text>
     </string>
     <string id="val_garik_storyline_start_dialog_7">
-        <text>Слушай, я бы мог помочь с поиском Вашего техника, если хочешь конечно, но взамен мне потребуется одна услуга.</text>
+        <text>Listen, I could help you find your technician, if you want, but I need a favor in return.</text>
     </string>
     <string id="val_garik_storyline_start_dialog_8">
-        <text>Было бы очень здорово! Что за услуга тебе потребуется?</text>
+        <text>That'd be great! What kind of favour would you need?</text>
     </string>
     <string id="val_garik_storyline_start_dialog_9">
-        <text>У меня есть два ПДА, оба заблокированы, но один из них вообще похоже клонирован либо информация хорошо затёрта, вот один мне нужно разблокировать, а вот со вторым понять, кому принадлежит или принадлежал и по возможности информацию достать.</text>
+        <text>I have two PDAs, both are locked, but one of them seems to be cloned or the information is well erased, so I need to unlock one, but with the other one I need to find out who owns or owned it and if possible to get the information.</text>
     </string>
     <string id="val_toha_going_to_unlock_flashcard_0">
-        <text>Так это ты тот самый охотник, который решился помочь с поисками нашего Техника?</text>
+        <text>So you're the hunter who decided to help with the search for our Technician?</text>
     </string>
     <string id="val_toha_going_to_unlock_flashcard_1">
-        <text>Именно, я кстати по этому поводу и пришёл. Был тут давеча около места, где Вашего техника видели, и нашёл там флэшку, вот только незадача… Флэшка-то заблокирована.</text>
+        <text>That's what I'm here about, by the way. I was in the neighbourhood where your tech was found, and I found a flash drive, but the problem is... the flash drive is blocked.</text>
     </string>
     <string id="val_toha_going_to_unlock_flashcard_2">
-        <text>Во как! Я так понимаю, ты хочешь чтобы я занялся разблокировкой? Коли так, давай флэшку, а сам двигай прогуляйся, как закончу - сообщу.</text>
+        <text>Oh, yeah? I take it you want me to unlock it? If so, give me the flash drive and go for a walk. I'll let you know when I'm done.</text>
     </string>
     <string id="val_toha_going_to_unlock_flashcard_3">
-        <text>Хорошо, буду ждать.</text>
+        <text>All right, I'll be waiting.</text>
     </string>
     <string id="val_toha_like_without_hands_task_complete_0">
-        <text>Вот и ты, ну что удалось найти Пианиста?</text>
+        <text>There you are, any luck finding the Piano Man?</text>
     </string>
     <string id="val_toha_like_without_hands_task_complete_1">
-        <text>Удалось, он просил передать тебе пару слов.</text>
+        <text>Yes, he asked me to tell you a few words.</text>
     </string>
     <string id="val_toha_like_without_hands_task_complete_10">
-        <text>Змей, не перебивай и дослушай. Так вот Феликс, словно чистый лист был, но довольно быстро вник во всё происходящее, сначала побродил по окрестностям, потом выполнял некоторые наши поручения, а по итогу выяснилось, что за ним "синие" охотятся, он вроде решил данный вопрос, просто перестрелял всех. Не знаю уж как это было, но Гарик ходил на место бойни и видел тела… Так на чём это я… А точно! После того как он с "синими" разобрался, он собрал свои пожитки и двинул в сторону старого завода, там ещё анархисты недалеко, ты кстати мимо проходил, когда искал Пианиста.</text>
+        <text>Snake, don't interrupt and listen. So Felix, like a blank sheet of paper, but pretty quickly got into everything that was going on, first he wandered around, then he did some of our errands, and in the end it turned out that the blues were after him, he sort of solved the issue, just shot everyone. I don't know how it happened, but Garik went to the site of the massacre and saw the bodies... So where was I... Oh right! After he went through with the blues, he gathered up his stuff and headed for the old factory, there's some anarchists there too, you were passing by, by the way, when you went looking for the Piano Man.</text>
     </string>
     <string id="val_toha_like_without_hands_task_complete_11">
-        <text>Да, помню этот завод, мутантов там куча…</text>
+        <text>Yeah, I remember that factory, lots of mutants...</text>
     </string>
     <string id="val_toha_like_without_hands_task_complete_12">
-        <text>Что есть, то есть. Так что там его и ищи, гладишь повезёт.</text>
+        <text>That's what it is. So that's where you look for him, if you're lucky.</text>
     </string>
     <string id="val_toha_like_without_hands_task_complete_13">
-        <text>Хорошо, спасибо за наводку.</text>
+        <text>All right, thanks for the tip.</text>
     </string>
     <string id="val_toha_like_without_hands_task_complete_2">
-        <text>Ну глаголь.</text>
+        <text>Go ahead.</text>
     </string>
     <string id="val_toha_like_without_hands_task_complete_3">
-        <text>Передаю дословно: В лагерь Я не вернусь, если захотят что-то от меня, то пусть свою жопу поднимают и идут. Вот так вот.</text>
+        <text>Verbatim: I'm not going back to camp. If they want something from me, they can get off their ass and go. There you go.</text>
     </string>
     <string id="val_toha_like_without_hands_task_complete_4">
-        <text>Я тебя услышал, кстати, касательно тех ПДА. У меня получилось один из них разблокировать. Со вторым ничем помочь не смогу, он вообще ничейный, просто поставили пароль и добавили координаты нашего лагеря и всё…</text>
+        <text>I heard you, by the way, about those PDAs. I was able to unlock one of them. Can't help you with the other one, it's nobody's, they just put a password on it and added our camp coordinates and that's it...</text>
     </string>
     <string id="val_toha_like_without_hands_task_complete_5">
-        <text>М-да… Не густо, но лучше - чем ничего. Кстати, касательно чистого ПДА, я так и предполагал, но поскольку нет знаний, пришлось к Вам тащить.</text>
+        <text>Yeah... Not much, but better than nothing. By the way, regarding the pure PDA, I assumed so, but since I have no knowledge, I had to drag you.</text>
     </string>
     <string id="val_toha_like_without_hands_task_complete_6">
-        <text>Ясно, ладно Змей, если помочь нам захочешь, то мы завсегда рады.</text>
+        <text>I see, well Snake, if you want to help us, you're always welcome.</text>
     </string>
     <string id="val_toha_like_without_hands_task_complete_7">
-        <text>Кстати, касательно помощи, думаю, мы сможем помочь друг-другу. Не знаю говорил ли тебе Гарик, зачем я здесь, но я лучше повторю. Здесь я ищу Бизона и его группу или то что от неё осталось. ПДА которые я тебе давал, принадлежали членам его группы.</text>
+        <text>Speaking of help, I think we can help each other. I don't know if Garik told you why I'm here, but I'd better tell you again. I'm here looking for Bison and his band or what's left of it. The PDAs I gave you belonged to members of his group.</text>
     </string>
     <string id="val_toha_like_without_hands_task_complete_8">
-        <text>Гарик рассказал о цели твоего визита, я особо много рассказать не смогу. Но расскажу всё что знаю. Бизон этот бывал здесь, с ним ещё двое было: Плотник и Феликс, они искали какой-то чудо артефакт или что-то подобное, у нас они пробыли около трёх суток, а потом просто свалили. Единственное, что может тебе помочь, так это то, что Феликса мы потом нашли, правда странный он был, словно мозг ему как флэшку отформатировали…</text>
+        <text>Garik told me the purpose of your visit, I can't tell you much. But I'll tell you what I know. The bison had been here before, and there were two others with him: Carpenter and Felix, they were looking for some kind of miracle artifact or something like that, and they stayed with us for about three days, and then they just took off. The only thing that might help you is that we found Felix afterwards, but he was weird, like his brain had been formatted into a flash drive...</text>
     </string>
     <string id="val_toha_like_without_hands_task_complete_9">
-        <text>Это уже интересно, а где Феликс сейчас?</text>
+        <text>That's interesting, where's Felix now?</text>
     </string>
 
     <string id="dl_done_first_quest_val_a3_stalker_garik_0">
-        <text>Ну что там с кейсом?</text>
+        <text>What about the case?</text>
     </string>
     <string id="dl_done_first_quest_val_a3_stalker_garik_1">
-        <text>Вот он, в целости и сохранности.</text>
+        <text>Here it is, safe and sound.</text>
     </string>
     <string id="dl_done_first_quest_val_a3_stalker_garik_11">
-        <text>В процессе.</text>
+        <text>In progress.</text>
     </string>
     <string id="dl_done_first_quest_val_a3_stalker_garik_2">
-        <text>Отлично, вот тебе как и договаривались ствол и немного маслят к нему. Кстати, тут наш лидер хотел с тобой потолковать, он справа от меня за столом сидит.</text>
+        <text>Great, here's the gun and some butterflies to go with it, like we talked about. By the way, our leader wants to talk to you, he's sitting at the table to my right.</text>
     </string>
     <string id="dl_done_first_quest_val_a3_stalker_garik_3">
-        <text>Благодарю! Потолковать, ну хорошо.</text>
+        <text>Thank you. A chat, all right.</text>
     </string>
     <string id="dl_done_first_quest_val_a3_stalker_garik_4">
-        <text>Кстати, если вдруг будет желание подзаработать и помочь нашему скромному клану, то ты знаешь где меня искать.</text>
+        <text>By the way, if you happen to want to earn some money and help our humble clan, you know where to find me.</text>
     </string>
     <string id="dl_done_first_quest_val_a3_stalker_garik_5">
-        <text>Приму к сведению.</text>
+        <text>I'll keep that in mind.</text>
     </string>
     <string id="dl_first_dialog_buriy_base_0">
-        <text>...Ещё раз спасибо тебе Змей! Если бы не ты, то жрали бы меня уже слепые псы...</text>
+        <text>...Thank you again, Snake! If it wasn't for you, I'd be eaten by blind dogs...</text>
     </string>
     <string id="dl_first_dialog_buriy_base_1">
-        <text>Да ладно, благо успел, остальное не имеет значения. Ты лучше расскажи что с тобой случилось?</text>
+        <text>Come on, you made it. The rest doesn't matter. Why don't you tell me what happened to you?</text>
     </string>
     <string id="dl_first_dialog_buriy_base_2">
-        <text>Ох... Ну суть нашего похода ты знаешь, поэтому рассказывать не стану вновь. В общем, вчера Я, Бизон и Грек двинули к деревне, там по слухам можно было хабара насобирать, так сказать, отвлечься от нашей основной задачи. Мы короче в деревню пришли, и опомниться не успели как по нам уже вёл огонь снайпер, потом подключились ещё ребята. Мы пытались сдерживать их, но было тщетно, поэтому мы приняли решение уходить. Я сказал ребятам, что прикрою отход и постараюсь догнать. Они двинули, а я начал палить во все стороны, да так чтобы весь огонь на себя перевести, чтоб ребята успели скрыться. По итогу, как только парни ушли из их поля зрения, бой начал стихать... Я уж подумал, всё... Наконец-то попал по кому-то, и они решили подождать пока у меня патроны кончатся. Сидел я за домиком не долго, меня один из нападавших обошёл и выстрелил, повезло что в сердце не попал, хотя было рядом. Истекая кровью, пролежал там ещё пару часов и потом начал ползком к лагерю, но сил уже не было, и я отправил сигнал помощи, а тут Ты.</text>
+        <text>Oh... Well, you know what we went on, so I won't tell you again. Well, yesterday me, Bison and Greek went to a village, and rumour has it that we may get some loot there, so to say, to take our minds off our main task. We arrived in the village before we knew it, as a sniper was already firing at us, and then some more guys joined in. We tried to hold them back, but it was in vain, so we decided to leave. I told the guys that I would cover the retreat and try to catch up. They set off, and I started shooting in all directions, so as to draw fire all over myself, so that the boys had time to hide. In the end, as soon as the guys were out of their sight, the fighting began to die down... I thought that was it... I finally hit somebody, and they decided to wait until I was out of ammo. I didn't sit behind the cabin for long, one of the attackers came around me and shot me, lucky he didn't hit me in the heart, but it was close by. I bled to death for a couple of hours and then started crawling towards the camp, but I was exhausted and I sent out a call for help, and there you were.</text>
     </string>
     <string id="dl_first_dialog_buriy_base_3">
-        <text>В рубашке родился, а кто на вас напал? Ты смог разглядеть?</text>
+        <text>Born with your shirt on, who attacked you? Were you able to see?</text>
     </string>
     <string id="dl_first_dialog_buriy_base_4">
-        <text>Смог не только разглядеть, но и услышать их разговор.</text>
+        <text>Not only could I see, I could hear them talking.</text>
     </string>
     <string id="dl_first_dialog_buriy_base_5">
-        <text>Это уже интереснее, рассказывай.</text>
+        <text>That's more interesting, tell me.</text>
     </string>
     <string id="dl_first_dialog_buriy_base_6">
-        <text>Напали на нас наёмники, из разговора стало ясно, что их наняли для устранения Бизона, а группу нашу просто попутно решили устранить. Кто или зачем решил Бизона убрать, Я не знаю, но факт остаётся фактом: наёмники объявили на Бизона охоту.</text>
+        <text>Mercenaries attacked us, and our conversation made it clear that they were hired to eliminate Bison, and our group was just eliminated along the way. I don't know who or why decided to take out Bison, but the fact remains that the mercenaries hunted Bison.</text>
     </string>
     <string id="dl_first_dialog_buriy_base_7">
-        <text>Чёрт... И где же его искать-то? Куда он мог уйти с Греком?</text>
+        <text>Oh, man... Where the hell are we supposed to find him? Where could he have gone with the Greek?</text>
     </string>
     <string id="dl_first_dialog_buriy_base_8">
-        <text>Постоянной стоянки у нас не было, поэтому конкретного места я назвать не могу. Прости.</text>
+        <text>We didn't have a permanent camp, so I can't give you a specific location. I'm sorry.</text>
     </string>
     <string id="dl_first_dialog_buriy_base_9">
-        <text>Ладно, ты отдыхай - сил набирайся. Я же пока на местных ребят работаю, глядишь может они и подсобят с поисками.</text>
+        <text>All right, you get some rest, get your strength back. I'm still working for the local guys, see if they can help me find him.</text>
     </string>
     <string id="dl_first_dialog_val_a3_stalker_garik_0">
-        <text>Эй сталкер! Ты откуда и где снаряга твоя?</text>
+        <text>Hey, stalker! Where are you from and where's your gear?</text>
     </string>
     <string id="dl_first_dialog_val_a3_stalker_garik_1">
-        <text>Я? Из плена братков, а снаряга видимо у них, на "хранение" осталась... Впрочем хрен с ней, главное что ноги смог унести.</text>
+        <text>Me? I'm a prisoner of war, but they're probably keeping it for safekeeping... Anyway, fuck it, the main thing is that I managed to get away.</text>
     </string>
     <string id="dl_first_dialog_val_a3_stalker_garik_2">
-        <text>Да уж... Везучий ты чертяка! Ничего не скажешь.</text>
+        <text>Yeah... You lucky bastard! I'll say.</text>
     </string>
     <string id="dl_first_dialog_val_a3_stalker_garik_3">
-        <text>Да-да, слушай может сможешь выручить меня? Мне бы хотя бы ствол, а то без него никуда...</text>
+        <text>Yeah, listen, maybe you can help me out. At least I need a gun, I'm not going anywhere without one...</text>
     </string>
     <string id="dl_first_dialog_val_a3_stalker_garik_4">
-        <text>Помочь? Думаю, что смогу. Смотри, давай я тебе ствол и маслин к нему, а ты для меня кое-что заберёшь. Согласен?</text>
+        <text>Can I help? I think I can. Look, I'll give you the gun and the olives, and you take something for me. Agreed?</text>
     </string>
     <string id="dl_first_dialog_val_a3_stalker_garik_5">
-        <text>Договорились! Что и где нужно забрать?</text>
+        <text>It's a deal! What's to be picked up and where?</text>
     </string>
     <string id="dl_first_dialog_val_a3_stalker_garik_6">
-        <text>В общем, если идти на северо-запад, то увидишь овраг, а в овраге небольшое скопление аномалий, так вот там лежит контейнер, он-то мне и нужен.</text>
+        <text>Well, if you go northwest, there's a ravine, and in the ravine there's a cluster of anomalies, and there's a container there, which is what I need.</text>
     </string>
     <string id="dl_first_dialog_val_a3_stalker_garik_7">
-        <text>Звучит вроде бы просто, что ж попробую.</text>
+        <text>Sounds easy, so I'll give it a shot.</text>
     </string>
     <string id="dl_first_dialog_wounded_buriy_0">
-        <text>Помоги...</text>
+        <text>Help me...</text>
     </string>
     <string id="dl_first_dialog_wounded_buriy_1">
-        <text>Бурый?! Чёрт, сейчас я тебя до лагеря донесу, потерпи браток!</text>
+        <text>Brown?! Shit, I'll carry you to the camp, hold on brother!</text>
     </string>
     <string id="dl_second_quest_garik_dialog_0">
-        <text>Мир тебе Гарик! Тоха сказал, что Вы словили сигнал бедствия?</text>
+        <text>Peace be with you, Garik! Touha said you got a distress signal?</text>
     </string>
     <string id="dl_second_quest_garik_dialog_02_0">
-        <text>Жаль парня...</text>
+        <text>Too bad about the guy...</text>
     </string>
     <string id="dl_second_quest_garik_dialog_02_1">
-        <text>Согласен, не самая лучшая участь... Однако есть и плюс, тварь убили, а значит уменьшили шанс на смерть ещё хоть кого-нибудь. Ладно, двигаем обратно?</text>
+        <text>I agree, it's not a good fate. But on the plus side, the creature's been killed, which means we've reduced the chance of anyone else dying. All right, shall we move back?</text>
     </string>
     <string id="dl_second_quest_garik_dialog_02_2">
-        <text>Согласен... Да, идём назад.</text>
+        <text>I agree... Yeah, let's go back.</text>
     </string>
     <string id="dl_second_quest_garik_dialog_1">
-        <text>Да есть такое дело, и ведь сигнал неподалёку отсюда. Слушай проверим а?</text>
+        <text>Yeah, there is that, and the signal's not far from here. Listen, let's check it out, shall we?</text>
     </string>
     <string id="dl_second_quest_garik_dialog_2">
-        <text>Давай, всё равно пока нет никаких дел.</text>
+        <text>Come on, there's nothing to do yet.</text>
     </string>
     <string id="dl_storyline_garik_quest_0">
-        <text>О, Змей! Мне тут давеча сообщили что видели пару сталкеров в отличной экипировке рядом с юго-западным хутором, они двигались по направлению к болоту, что не так далеко. Вероятно это и есть те кого ты ищешь. И ещё там же видели какого-то одинокого наёмника, не думаю, что он тебя конечно заинтересует, но всё же.</text>
+        <text>Oh, Snake! I got a report of a couple of stalkers in good outfits near the southwestern farm, heading for the swamp, which isn't too far away. That's probably who you're looking for. There's also a lone mercenary there, not that you'd be interested in him, but still.</text>
     </string>
     <string id="dl_storyline_garik_quest_1">
-        <text>Наёмник? Ты уверен?</text>
+        <text>A mercenary? Are you sure about that?</text>
     </string>
     <string id="dl_storyline_garik_quest_2">
-        <text>Думаю, да. Все наши группы у меня отмечены на ПДА, а данных ребят мы видели впервые.</text>
+        <text>I think so. All our groups are marked on my PDA, and this is the first time we've seen these guys.</text>
     </string>
     <string id="dl_storyline_garik_quest_3">
-        <text>Хорошо, пойду проверю, может и вправду это Бизон и Грек.</text>
+        <text>All right, I'll go check and see if it's really Bison and the Greek.</text>
     </string>
     <string id="dl_storyline_krasnopolsky_first_dialog_0">
-        <text>Здравия желаю, вот как и договаривались: Я и мои ребята прибыли и готовы к любой поставленной задаче.</text>
+        <text>Hello, just like we talked about. Me and my guys are here and ready for whatever we need.</text>
     </string>
     <string id="dl_storyline_krasnopolsky_first_dialog_1">
-        <text>Замечательно лейтенант! У тебя даже вопросов не будет касательно операции?</text>
+        <text>That's great, Lieutenant! Don't you have any questions about the operation?</text>
     </string>
     <string id="dl_storyline_krasnopolsky_first_dialog_2">
-        <text>Змей, я ведь уже говорил, что знаю тебя давно, поэтому знаю, что попросту ты бы меня и ребят не звал, поэтому мы здесь.</text>
+        <text>Snake, I already told you, I've known you for a long time, so I know that you wouldn't call me and the guys for nothing, that's why we're here.</text>
     </string>
     <string id="dl_storyline_krasnopolsky_first_dialog_4">
-        <text>Льстишь ты мне, ну да ладно, сейчас позову ещё ребят и двинем.</text>
+        <text>You're flattering me, but come on, I'll get some more guys and we'll move.</text>
     </string>
     <string id="dl_storyline_krasnopolsky_second_dialog_0">
-        <text>Мои люди и люди Тохи готовы, начинаем?</text>
+        <text>My men and Tochya's men are ready, shall we go?</text>
     </string>
     <string id="dl_storyline_krasnopolsky_second_dialog_1">
-        <text>Вперёд!</text>
+        <text>Let's go!</text>
     </string>
     <string id="dl_storyline_krasnopolsky_third_dialog_0">
-        <text>Противник уничтожен, бойцы заняли оборону.</text>
+        <text>The enemy has been destroyed, the fighters are on the defensive.</text>
     </string>
     <string id="dl_storyline_krasnopolsky_third_dialog_1">
-        <text>Понял тебя, Бизона видели?</text>
+        <text>Roger, have you seen Bison?</text>
     </string>
     <string id="dl_storyline_krasnopolsky_third_dialog_2">
-        <text>Видели... Он за тем зданием. Змей, он мёртв.</text>
+        <text>We have... He's behind that building. Snake, he's dead.</text>
     </string>
     <string id="dl_storyline_krasnopolsky_third_dialog_3">
-        <text>Что?! Нет!</text>
+        <text>What?! No!</text>
     </string>
     <string id="dl_storyline_toha_dialog_0">
-        <text>Ты или твои люди, встречали в последнее время в округе Наёмников?</text>
+        <text>Have you or your men seen any Mercenaries around here lately?</text>
     </string>
     <string id="dl_storyline_toha_dialog_02_0">
-        <text>Я с хорошими новостями.</text>
+        <text>I have good news.</text>
     </string>
     <string id="dl_storyline_toha_dialog_02_1">
-        <text>Не думал, что ребята из Долга так быстро согласятся. Хотя у них видимо свои счеты с мерками. Кстати, когда их ждать?</text>
+        <text>I didn't think the Duty boys would be so quick to agree. They've got their own score to settle with the mercs, though. By the way, when are we expecting them?</text>
     </string>
     <string id="dl_storyline_toha_dialog_02_2">
-        <text>Командир квада Долга сказал, что они будут ориентировочно завтра к полуночи, они придут сюда на ферму.</text>
+        <text>Duty's quad leader said they'll be here at the farm around midnight tomorrow.</text>
     </string>
     <string id="dl_storyline_toha_dialog_02_3">
-        <text>Отлично, тогда будем готовиться. Кстати, пока ты говорил с долговцами, Гарик поймал ещё один сигнал S.O.S. Сходите проверьте.</text>
+        <text>Great, let's get ready then. By the way, while you were talking to the Debtors, Garik picked up another S.O.S. Go check it out.</text>
     </string>
     <string id="dl_storyline_toha_dialog_02_4">
-        <text>Хорошо, пойду поговорю с Гариком.</text>
+        <text>All right, I'll go talk to Garik.</text>
     </string>
     <string id="dl_storyline_toha_dialog_1">
-        <text>Было дело, буквально вчера сюда пожаловали люди из Синдиката, расположились они на северном КПП. Зачем они здесь, сказать не могу - не знаю. Да и если быть честным, особо знать не хочу. Чревато знать о планах мерков, проверенно уже не однократно.</text>
+        <text>I did, just yesterday Syndicate men came here, they're stationed at the northern checkpoint. Why they're here, I can't say - I don't know. And to be honest, I don't really want to know. It's dangerous to know about mercs' plans, it's been tested more than once.</text>
     </string>
     <string id="dl_storyline_toha_dialog_2">
-        <text>Понял тебя, слушай а нет ли у тебя желания гостей незваных убрать?</text>
+        <text>I hear you, listen, do you have any desire to remove uninvited guests?</text>
     </string>
     <string id="dl_storyline_toha_dialog_3">
-        <text>Скажу так, я не против, но боюсь, что после устранения группы этих мразей, всё равно придут другие.</text>
+        <text>I say that I do not mind, but I'm afraid that after the elimination of a group of these scum, others will still come.</text>
     </string>
     <string id="dl_storyline_toha_dialog_4">
-        <text>Не думаю, не так давно группа Долговцев устранила квад мерков в окрестностях бывшего НИИ и после их там никто не видал, думаю, что с данной группой будет так же.</text>
+        <text>I do not think, not so long ago a group of Dutyovtsy eliminated quad mercs in the vicinity of the former research institute, and after there was no one saw them, I think, that with this group will be as well.</text>
     </string>
     <string id="dl_storyline_toha_dialog_5">
-        <text>Думаешь? Я особо рисковать не хочу, вот если бы товарищи из доблестной группировки Долг прибыли сюда и поучаствовали в устранении, то нашего присутствия Мерки бы и не заметили.</text>
+        <text>You think so? I don't really want to take any chances, but if the comrades from the valiant Duty group arrived here and took part in the elimination, the Mercs wouldn't notice our presence.</text>
     </string>
     <string id="dl_storyline_toha_dialog_6">
-        <text>Хм... Думаю, что у меня получиться пригласить их.</text>
+        <text>Hmm... I think I might be able to invite them.</text>
     </string>
     <string id="dl_storyline_toha_dialog_7">
-        <text>Вот это уже другой разговор! Как только Долговцы придут, тогда я и выделю тебе людей, думаю, это справедливо!</text>
+        <text>Now we're talking! As soon as the Dutyovs come, then I'll allocate people to you, I think that's fair!</text>
     </string>
     <string id="dl_storyline_toha_dialog_8">
-        <text>Замётано, пойду попробую наладить связь с парнями.</text>
+        <text>Right, I'll go and see if I can get in touch with the lads.</text>
     </string>
     <string id="dl_tech_pda_vorona_locked_out_0">
-        <text>Приветствую! Сможешь взломать ПДА?</text>
+        <text>Greetings! Can you hack into the PDA?</text>
     </string>
     <string id="dl_tech_pda_vorona_locked_out_1">
-        <text>После того как ты мне радио-материалы притащил, думаю, что Я на многое теперь способен! Так что давай свой ПДА и через пару часов подходи.</text>
+        <text>After the radio stuff you brought me, I think I'm capable of a lot of things now! So give me your PDA and come back in a couple of hours.</text>
     </string>
     <string id="dl_tech_pda_vorona_locked_out_2">
-        <text>Рад слышать! Вот ПДА, как будет готово сообщи если не сложно.</text>
+        <text>Glad to hear it! Here's the PDA, let me know when it's ready if you don't mind.</text>
     </string>
     <string id="dl_tech_pda_vorona_unlocked_in_0">
-        <text>Получил твоё сообщение.</text>
+        <text>Got your message.</text>
     </string>
     <string id="dl_tech_pda_vorona_unlocked_in_1">
-        <text>Какое? А? Точно! Я уж и забыл, дел много, но вот тот ПДА, разблокировал его информации там не много, какие-то отметки на карте, упоминание о группе какой-то, артефакте и пара заметок.</text>
+        <text>Which one? Ah? That's right! I'd forgotten, it's busy, but the PDA, I unlocked it, there's not much information, some markings on the map, some mention of a group, an artefact and a couple of notes.</text>
     </string>
     <string id="dl_tech_pda_vorona_unlocked_in_2">
-        <text>Хорошо, сейчас посмотрю.</text>
+        <text>All right, let me check it out.</text>
     </string>
     <string id="dl_val_a3_stalker_leader_art_1_dialog_0">
-        <text>Нашёл артефакт - вот он.</text>
+        <text>Found the artifact-- there it is.</text>
     </string>
     <string id="dl_val_a3_stalker_leader_art_1_dialog_1">
-        <text>Отлично, артефакт гравитационной природы! Вот тебе небольшой презент от меня и там наш торговец что-то от тебя хотел, поговорил бы с ним, а я пока подумаю, как тебе с твоей проблемой помочь.</text>
+        <text>Great, an artifact of a gravitational nature! Here's a little present for you from me, and there's something our salesman wanted from you, talk to him, while I think about how to help you with your problem.</text>
     </string>
     <string id="dl_val_a3_stalker_leader_art_1_dialog_2">
-        <text>Благодарю, этот ствол будет кстати, что касательно торговца, то сейчас пойду потолкую.</text>
+        <text>Thank you, this gun will come in handy, and as for the merchant, I'll go talk to him now.</text>
     </string>
     <string id="dl_val_a3_stalker_leader_art_2_dialog_0">
-        <text>Нашёл артефакт - вот он.</text>
+        <text>Found an artifact-- here it is.</text>
     </string>
     <string id="dl_val_a3_stalker_leader_art_2_dialog_1">
-        <text>Отлично, артефакт электрической природы! Вот тебе небольшой презент от меня и там наш торговец что-то от тебя хотел, поговорил бы с ним, а я пока подумаю, как тебе с твоей проблемой помочь.</text>
+        <text>Great, an artifact of electrical nature! Here's a little present for you from me and there's something our merchant wanted from you, talk to him, while I will think how to help you with your problem.</text>
     </string>
     <string id="dl_val_a3_stalker_leader_art_2_dialog_2">
-        <text>Благодарю, неплохой ствол - пригодится, что касательно торговца, то сейчас пойду потолкую.</text>
+        <text>Thank you, not a bad gun - it will come in handy, and as for the merchant, I'll go talk to him now.</text>
     </string>
     <string id="dl_val_a3_stalker_leader_art_3_dialog_0">
-        <text>Нашёл артефакт - вот он.</text>
+        <text>Found an artifact-- here it is.</text>
     </string>
     <string id="dl_val_a3_stalker_leader_art_3_dialog_1">
-        <text>Отлично, артефакт кислотной природы! Вот тебе небольшой презент от меня и там наш торговец что-то от тебя хотел, поговорил бы с ним, а я пока подумаю, как тебе с твоей проблемой помочь.</text>
+        <text>Great, an artifact of the acidic nature! Here is a small present for you from me, and there our merchant wanted something from you, you should talk to him, and in the meantime I will think how to help you with your problem.</text>
     </string>
     <string id="dl_val_a3_stalker_leader_art_3_dialog_2">
-        <text>Благодарю, сейчас любой ствол не помешает, что касательно торговца, то сейчас пойду потолкую.</text>
+        <text>Thank you, any gun will do no harm now, and as for the merchant, I'll go and talk to him now.</text>
     </string>
     <string id="dl_val_a3_stalker_leader_first_dialog_0">
-        <text>Здравствуй-здравствуй, и как тебя звать-величать?</text>
+        <text>Hello, hello, what's your name?</text>
     </string>
     <string id="dl_val_a3_stalker_leader_first_dialog_1">
-        <text>На Змея откликаюсь, по профессии охотник.</text>
+        <text>I answer to Snake, I'm a hunter by profession.</text>
     </string>
     <string id="dl_val_a3_stalker_leader_first_dialog_10">
-        <text>Любые, я тебе в ПДА отмечу несколько аномальных полей, там поброди, может и будет толк. Кстати, не советую тебе к браткам сейчас соваться, месть дело такое... Однако торопиться не стоит! Да и ещё в деревню, что к северу отсюда тоже не советую идти. Парни сообщили, что приметили там отряд неизвестных, да и тварь там какая-то бродит... В общем советую прислушаться.</text>
+        <text>Anybody, I'll mark a few anomalous fields for you in PDA, you'll have a chance to wander there. By the way, I don't advise you to go to bros now, revenge is a thing... But there's no hurry! I also don't advise going to the village north of here. The lads said they spotted a posse of unknowns there, and there's a creature wandering around... I'd advise you to keep your ear to the ground.</text>
     </string>
     <string id="dl_val_a3_stalker_leader_first_dialog_11">
-        <text>Хорошо, я тебя услышал. Пойду "пощупаю" аномалии...</text>
+        <text>All right, I hear you. I'm going to check out the anomalies...</text>
     </string>
     <string id="dl_val_a3_stalker_leader_first_dialog_2">
-        <text>Хорошо охотник Змей. Меня Тохой кличут, я тут главный.</text>
+        <text>All right, hunter Serpent. My name's Tokha, I'm in charge here.</text>
     </string>
     <string id="dl_val_a3_stalker_leader_first_dialog_3">
-        <text>Понял, Гарик сказал, что ты потолковать о чем-то хочешь.</text>
+        <text>I get it, Garik said you wanted to talk to me about something.</text>
     </string>
     <string id="dl_val_a3_stalker_leader_first_dialog_4">
-        <text>Есть такое, итак мне интересно как ты у братков оказался, как смог свалить оттуда и что вообще делаешь в этих Богом забытых краях?</text>
+        <text>Yes, so I'm wondering, how did you end up with those guys, how did you manage to get away from there, and what are you even doing in that godforsaken land?</text>
     </string>
     <string id="dl_val_a3_stalker_leader_first_dialog_5">
-        <text>О, это наверное самое смешное! Я пожалуй расскажу всё с начала, а там и к сути дойдём. Итак Я ищу сталкера по прозвищу Бизон и его группу, а точнее то что от неё осталось. Поиски привели меня к коллектору, в который был коротким путём сюда. Уже поднимаясь наповерхность мне по головушке засадили и шмотки отобрали, очнулся уже в логове бандитов, странно было конечно, что меня никто не охранял, однако этим я и воспользовался, ушёл через забор и вот набрёл на ваш лагерь. Вот так как-то.</text>
+        <text>Oh, that's probably the funniest part! I'll just start at the beginning and then we'll get to the bottom of it. So I'm looking for a stalker nicknamed Bison and his group, or rather what's left of it. My search led me to a sewer, which was a shortcut to here. Already going up to the top of my head they kicked me and took away my clothes, I woke up in the den of bandits, and of course it was strange that nobody guarded me, but I used it, went away through a fence, and now I have run into your camp. That's how it is.</text>
     </string>
     <string id="dl_val_a3_stalker_leader_first_dialog_6">
-        <text>Ну и история однако, не позавидуешь. Впрочем выбрался и слава Богу. Тебе я так понимаю сейчас снаряга нужна, так вот я могу тебе выдать кое-чего, однако не обольщайся, придётся поработать на благо нашего клана, думаю, что отказываться не станешь, ведь иного выхода у тебя нет. Да и ещё постараюсь помочь тебе с поисками, но это позже.</text>
+        <text>What a story, though, it's hard to envy. I got out, though, and thank God. I'll give you something for that, but don't expect that you'll have to work for the good of our clan, and I don't think you'll refuse, because you have no other choice. I'll also try to help you with the search, but that's for later.</text>
     </string>
     <string id="dl_val_a3_stalker_leader_first_dialog_7">
-        <text>Да уж... Отказаться, значит умереть, перспектива так себе. Что делать нужно и чем ты сможешь помочь с моими поисками?</text>
+        <text>Yeah, well... To refuse is to die, that's not much of a prospect. What do you need to do and how can you help me find it?</text>
     </string>
     <string id="dl_val_a3_stalker_leader_first_dialog_8">
-        <text>Вот тебе экипировка, немного медикаментов. Ствол как я погляжу у тебя уже имеется, однако одного пистолета маловато будет для здешних краёв, тут где-то схрон есть, владельцу он уже вряд ли пригодиться, а тебе будет в самый раз, он где-то на территории лагеря, найдёшь в общем. Что же касательно дел, то для начала придётся поработать сборщиком артефактов, работа опасная, но если есть должная сноровка и детектор хороший, то проблем не будет.</text>
+        <text>Here's your gear, some medical supplies. I see you already have a gun, but one gun will not be enough for this area, there's a cache somewhere, the owner can hardly use it, but it will be just fine for you, it's somewhere in the camp, you'll find it in general. As for business, you'll have to work as an artifact collector first, it's a dangerous job, but if you have the right skills and a good detector, it won't be a problem.</text>
     </string>
     <string id="dl_val_a3_stalker_leader_first_dialog_9">
-        <text>Угу, спасибо. Сборщиком говоришь? И какие артефакты тебе нужны?</text>
+        <text>Yeah, thanks. A collector, you say? What kind of artifacts are you looking for?</text>
     </string>
     <string id="zav_freedom_stalker_start_dialog_0">
-        <text>Кто таков? И какой группировки?!</text>
+        <text>Who's who? And what faction?!</text>
     </string>
     <string id="zav_freedom_stalker_start_dialog_1">
-        <text>Сталкер, просто сталкер. Змеем кличут.</text>
+        <text>Stalker, just a stalker. They call me Snake.</text>
     </string>
     <string id="zav_freedom_stalker_start_dialog_2">
-        <text>Что ищешь здесь?</text>
+        <text>What are you looking for here?</text>
     </string>
     <string id="zav_freedom_stalker_start_dialog_3">
-        <text>Информацию.</text>
+        <text>Information.</text>
     </string>
     <string id="zav_freedom_stalker_start_dialog_4">
-        <text>Вот не нравишься ты мне!</text>
+        <text>I don't like you!</text>
     </string>
     <string id="zav_freedom_stalker_start_dialog_5">
-        <text>А я не баба, чтобы тебе нравиться…</text>
+        <text>And I'm not a woman for you to like...</text>
     </string>
     <string id="zav_freedom_stalker_start_dialog_6">
-        <text>Да? Блин, а то я не заменил, ладно пошутили и хватит, в общем вход в лагерь для тебя сейчас закрыт, но если выполнишь поручение, то сможешь ходить сюда как к себе домой.</text>
+        <text>Yes? Shit, I didn't replace it, okay, joke's on you, but if you do your duty you can come here as if you were at home.</text>
     </string>
     <string id="zav_freedom_stalker_start_dialog_7">
-        <text>Говори, я слушаю.</text>
+        <text>Go ahead, I'm listening.</text>
     </string>
     <string id="zav_freedom_stalker_start_dialog_8">
-        <text>К востоку от нашего лагеря, обосновались бандиты. Как ты понимаешь, они нам мешают, вот если бы они пропали, мы были бы тебе благодарны. Понимаешь о чем я?</text>
+        <text>To the east of our camp, there are bandits. As you know, they're in our way, so if they disappeared, we'd appreciate it. You know what I mean?</text>
     </string>
     <string id="zav_freedom_stalker_start_dialog_9">
-        <text>Вполне, скоро вернусь.</text>
+        <text>Yeah, I'll be back soon.</text>
     </string>
 
     <string id="dl_bandits_attak_done_0">
-        <text>Что там с моей наградой?</text>
+        <text>What about my reward?</text>
     </string>
     <string id="dl_bandits_attak_done_1">
-        <text>Вот держи, четсно заработанные!</text>
+        <text>Here you go, it's well earned!</text>
     </string>
     <string id="dl_bandits_attak_sk_done_0">
-        <text>Отряд погиб, однако бандиты так же мертвы...</text>
+        <text>The unit is dead, but the bandits are also dead...</text>
     </string>
     <string id="dl_bandits_attak_sk_done_1">
-        <text>Печально это слышать... В любом случае вот то что ты заработал.</text>
+        <text>I'm sorry to hear that... Anyway, here's what you've earned.</text>
     </string>
     <string id="dl_bandits_attak_start_0">
-        <text>Вам может помощь какая требуется? Тоха сказал, что ты что-то хотел.</text>
+        <text>Do you need any help? Tokha said you wanted something.</text>
     </string>
     <string id="dl_bandits_attak_start_1">
-        <text>Требуется, помнишь я тебя нанимал на устранение шайки бандитов, что наших ребят обдирали на подступах к лагерю, так вот пришло время зачистить их логово.</text>
+        <text>Remember I hired you to take out a gang of bandits that were ripping off our guys on the outskirts of the camp, so it's time to clean up their lair.</text>
     </string>
     <string id="dl_bandits_attak_start_2">
-        <text>Зачистить говоришь... Я не против, но в одиночку я туда не сунусь.</text>
+        <text>You say clean up... I don't mind, but I ain't going in there alone.</text>
     </string>
     <string id="dl_bandits_attak_start_22">
-        <text>Что-то не особо горю желанием, так что в другой раз.</text>
+        <text>I don't feel like it, so some other time.</text>
     </string>
     <string id="dl_bandits_attak_start_3">
-        <text>В одиночку я бы тебя туда и не посылал, уж больно рискованно. Я уже договорился с ребятами, которые будут принимать участие в зачистке и они будут ждать тебя недалеко от лагеря бандитов. Главного Грозом кличут.</text>
+        <text>I wouldn't send you in there alone, it's too risky. I've already arranged for the guys who'll be taking part in the cleanup and they'll be waiting for you not far from the bandit camp. The man in charge is called Thunder.</text>
     </string>
     <string id="dl_bandits_attak_start_4">
-        <text>Вот это уже другой разговор! Тогда я пошёл.</text>
+        <text>Now we're talking! I'll be on my way, then.</text>
     </string>
     <string id="dl_bandits_attak_wait_0">
-        <text>Ты видимо и есть наш дополнительный стрелок? Что ж не переживай, ребята у меня толковые! Стволы держать им не впрервой, так что двинули?</text>
+        <text>You must be our extra shooter. Well, don't worry, my boys are smart! It's not the first time they've held a gun, so let's move, huh?</text>
     </string>
     <string id="dl_bandits_attak_wait_1">
-        <text>Двинули!</text>
+        <text>We did!</text>
     </string>
     <string id="dl_bandits_attak_wait_1_0">
-        <text>Кажется всех положили!</text>
+        <text>I think we got 'em all!</text>
     </string>
     <string id="dl_bandits_attak_wait_1_1">
-        <text>Видимо так, ладно, мы тут закрепимся, а ты двигай обратно в лагерь, там тебе награда полагается за помощь.</text>
+        <text>I guess so, OK, we'll hold down the fort here, you go back to the camp, you'll be rewarded for your help.</text>
     </string>
     <string id="dl_bandits_attak_wait_1_2">
-        <text>Хорошо, до встречи.</text>
+        <text>All right, see you later.</text>
     </string>
     <string id="dl_lost_squad_quest_done_0">
-        <text>Отряд мёртв...</text>
+        <text>The unit is dead...</text>
     </string>
     <string id="dl_lost_squad_quest_done_1">
-        <text>Что?! Как?!</text>
+        <text>What?! How?!</text>
     </string>
     <string id="dl_lost_squad_quest_done_2">
-        <text>Их убили монолитовцы, точных подробностей не знаю, однако это так. Когда я исследовал деревню, то заметил отряд монолитовцев, а в сарае трупы и решился осмотреть, но для начала пришлось пободаться с этими фанатиками. По итогу, я осмотрел тела, это были твои бойцы, у лидера отряда нашёл какие-то документы, вот держи [Отдаём документы] - может это важно.</text>
+        <text>They were killed by monoliths, I don't know the exact details, but it's true. When I explored the village, I spotted a squad of monoliths and dead bodies in the barn, so I decided to take a look, but I had to fight those fanatics first. In the end, I examined the bodies, it was your fighters, the leader of the detachment found some documents, here you go [Give documents] - maybe it's important.</text>
     </string>
     <string id="dl_lost_squad_quest_done_3">
-        <text>Мда... Ситуация мягко говоря не приятная... Чёрт таких парней потеряли... Эх земля Вам пухом Парни. Документы оставь, видимо это то за чем они и ходили... Чёрт...</text>
+        <text>Well... It's not a pleasant situation, to say the least. Damn, we lost guys like that... Oh, God bless you guys. Leave the paperwork, that's probably what they went for... Shit...</text>
     </string>
     <string id="dl_lost_squad_quest_done_4">
-        <text>Ладно, оставлю тебя...</text>
+        <text>All right, I'll leave you to it.</text>
     </string>
     <string id="dl_lost_squad_quest_start_0">
-        <text>Приветствую! Довелось слышать в эфире, что у Вас пропал отряд?</text>
+        <text>Greetings! Heard on the air that you have a missing unit?</text>
     </string>
     <string id="dl_lost_squad_quest_start_1">
-        <text>Да есть такое... Ребята пока что просто не выходят на связь, хотя уже давно должны были вернутся в лагерь, однако их нет. Я уже собрал отряд на поиски, но результатов пока ноль.</text>
+        <text>Yeah, there's that. The guys just haven't been in contact yet, although they should have been back in camp a long time ago, but they're not. I've called in a search party, but so far there are no results.</text>
     </string>
     <string id="dl_lost_squad_quest_start_2">
-        <text>Если хочешь могу помочь с поисками.</text>
+        <text>If you want, I can help with the search.</text>
     </string>
     <string id="dl_lost_squad_quest_start_3">
-        <text>Было бы не плохо! Смотри [Достал карту], вот здесь в последний раз ребята выходили на связь - это заброшенная деревня, там мутанты в основном обитают, однако есть пара домиков где можно остановиться на привал, а вот здесь они могли остановиться перед тем как вернуться на базу. Думаю, тебе стоит осмотреть деревню, ибо отряд я отправил на место предположительного привала.</text>
+        <text>That'd be nice! Look [Got the map], this is where the guys got in touch last time - it's an abandoned village, mutants live there mostly, but there are a couple of houses where you can stop for a rest, and here they could stop before returning to the base. I think you should take a look at the village, for I have sent a squad to the supposed resting place.</text>
     </string>
     <string id="dl_lost_squad_quest_start_4">
-        <text>Хорошо, я тебя понял. Как что узнаю, сразу сообщу.</text>
+        <text>All right, I hear you. I'll let you know as soon as I hear anything.</text>
     </string>
     <string id="dl_stalker_quest_0">
-        <text>Я могу тебе чем-то помочь?</text>
+        <text>Is there anything I can do for you?</text>
     </string>
     <string id="dl_stalker_quest_1">
-        <text>Помочь? Может быть, и можешь. Понимаешь, мы только-только свою базу обустроили, ещё не успели зачистить территорию вокруг. А бандиты тут как тут: грабят сталкеров, которые мне хабар несут. Такими темпами мне скоро и торговать не на что будет. Вот вчера опять появился отряд бандитов. Наглые - ты что: прямо напротив нашей базы устроились! Не мог бы ты их малость причесать?</text>
+        <text>Can I help you? Maybe you can. See, we just got our base set up, haven't had time to clear the area yet. And there's bandits here, robbing the stalkers who bring me the loot. At that rate, I'll soon have nothing to trade with. Yesterday there was another bandit squad. Insolent - what are you: right in front of our base! Couldn't you clean them up a bit?</text>
     </string>
     <string id="dl_stalker_quest_11">
-        <text>Нет, сейчас ничем не можешь.</text>
+        <text>No, you can't do anything now.</text>
     </string>
     <string id="dl_stalker_quest_2">
-        <text>Без проблем! Мой урок они надолго запомнят.</text>
+        <text>No problem! They'll remember my lesson for a long time.</text>
     </string>
     <string id="dl_stalker_quest_22">
-        <text>Знаешь, наверное, в другой раз.</text>
+        <text>You know, maybe some other time.</text>
     </string>
     <string id="dl_stalker_quest_complete_0">
-        <text>Я насчёт бандитов.</text>
+        <text>It's about the bandits.</text>
     </string>
     <string id="dl_stalker_quest_complete_1">
-        <text>Ну, как всё прошло?</text>
+        <text>How'd it go?</text>
     </string>
     <string id="dl_stalker_quest_complete_2">
-        <text>Я их положил.</text>
+        <text>I got them.</text>
     </string>
     <string id="dl_stalker_quest_complete_22">
-        <text>Пока никак.</text>
+        <text>Nothing so far.</text>
     </string>
     <string id="dl_stalker_quest_complete_222">
-        <text>Ты особо не тяни.</text>
+        <text>Don't take too long.</text>
     </string>
     <string id="dl_stalker_quest_complete_3">
-        <text>Вот это спасибо! Держи награду!</text>
+        <text>Thanks a lot! Here's your reward!</text>
     </string>
 
 </string_table>

@@ -2,7 +2,7 @@
 active = sr_idle@check_actor_position
 
 [sr_idle@check_actor_position]
-on_info = {=zat_b7_is_night =actor_has_item(wiz_pda_merc) =actor_in_zone(wiz_enemy_with_neutral_sr)} sr_idle@timer_dark %=NpcKickActor +wiz_enemy_with_neutral_actor_kick =relocate_really_all_actor_inventory_to_box(wiz_merc_inventory_box) =create_squad(wiz_baza_killers_squad:wiz_baza)%
+on_info = {=zat_b7_is_night =actor_in_zone(wiz_enemy_with_neutral_sr)} sr_idle@timer_dark %=NpcKickActor +wiz_enemy_with_neutral_actor_kick =relocate_really_all_actor_inventory_to_box(wiz_merc_inventory_box) =create_squad(wiz_baza_killers_squad:wiz_baza)%
 
 [sr_idle@timer_dark]
 on_timer = 1000 | sr_idle@teleport_actor %=run_postprocess(fade_in) =disable_ui%

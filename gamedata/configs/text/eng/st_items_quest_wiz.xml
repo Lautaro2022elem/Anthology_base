@@ -2,260 +2,257 @@
 <string_table>
 
 	<string id="wiz_mercs_base_key_name">
-		<text>Старый ключ</text>
+		<text>Old key</text>
 	</string>
 	<string id="wiz_mercs_base_key_descr">
-		<text>Старый ключ с инвертарным номером 08803.</text>
+		<text>Old key with inverted number 08803.</text>
 	</string>
 	<string id="wiz_merc_leader_base_key_name">
-		<text>Ключ</text>
+		<text>Key</text>
 	</string>
 	<string id="wiz_merc_leader_base_key_descr">
-		<text>Ключ от комнаты лидера группы наёмников.</text>
+		<text>The key to the mercenary group leader's room.</text>
 	</string>
 	<string id="radreazer_obrazec_name">
-		<text>Колба</text>
+		<text>Flask</text>
 	</string>
 	<string id="radreazer_obrazec_descr">
-		<text>Хорошо запаянная колба. На корпусе метка радиоактивности! Нужно быть осторожнее с этим.</text>
+		<text>A well sealed flask. There's a radioactivity mark on the casing! Got to be careful with this one.</text>
 	</string>
 	<string id="wiz_millitary_maps">
-		<text>Военные карты</text>
+		<text>Military maps.</text>
 	</string>
 	<string id="wiz_millitary_maps_desc">
-		<text>Военные карты из упавшего вертолёта МИ-24. На карте есть множество отметок: лагеря, заставы, базы и прочее.</text>
+		<text>Military maps from a fallen MI-24 helicopter. The map has lots of markings: camps, outposts, bases and more.</text>
 	</string>
 	<string id="dl_notes_bizon_name">
-		<text>Записка Бизона</text>
+		<text>Bison's note.</text>
 	</string>
 	<string id="dl_notes_bizon_descr">
-		<text>А ведь начиналось всё так хорошо, ребята были довольны, каждый планировал чем будет заниматься когда всё закончится... Сука... Знал бы я чем вся эта затея закончится, парней бы и не уговаривал, а что теперь? Теперь уже поздно. Резак, Ворон, Грек, Бурый: Покойтесь с миром... Простите парни, я хотел как лучше.</text>
+		<text>And everything started out so well, the guys were happy, everyone was planning what they were going to do when it was all over... Bitch... If I'd known how this whole thing was gonna end, I wouldn't have talked the guys into it, but now what? Now it's too late. Cutter, Raven, Greek, Brown: Rest in peace... Sorry guys, I meant well.</text>
 	</string>
 	<string id="pda_sokola_name">
-		<text>ПДА Сокола</text>
+		<text>Falcon's PDA.</text>
 	</string>
 	<string id="pda_sokola_descr">
-		<text>Среди различных файлов, фотографий и заметок, боле всего выделяется запись с пометкой ВАЖНО: \n%c[0,153,255,255] • %c[0,140,140,140] Не, думал, что так фартонёт! Но я и так уже много чего потерял, так что это карма... \n%c[0,153,255,255] • %c[0,140,140,140] Договорился с Егерем о встрече около брошеной церкви, теперь нужно лишь дождаться его и забрать припасы \n%c[0,153,255,255] • %c[0,140,140,140] Сволочь... Выстрелил мне в спину! Ну, ничего мы еще сочтё... Далее запись обрывается.</text>
+		<text>Among the various files, photos and notes, the entry marked IMPORTANT stands out the most:\n%c[0,153,255,255]-%c[0,140,140,140]No, I thought it would be farton! But I've already lost a lot, so it's karma...\n%c[0,153,255,255]-%c[0,140,140,140,140]Agreed to meet the Huntsman near the abandoned church, now I just have to wait for him and get the supplies\n%c[0,153,255,255]-%c[0,140,140,140,140]Bastard... Shot me in the back! Well, we'll see about that... The recording cuts out next.</text>
 	</string>
 	<string id="wiz_pda_rezaka_name">
-		<text>ПДА Резака</text>
+		<text>Cutter's PDA.</text>
 	</string>
 	<string id="wiz_pda_rezaka_descr">
-		<text>Основная часть данных заблокирована, однако доступ к дневнику открыт.
-Последняя запись: \n%c[0,153,255,255] • %c[0,140,140,140] Бизон с парнями, всё же смогли найти вход в катакомбы, а через них, мы будем на месте меньше чем за пять часов, лишь бы на тварь какую не напороться…</text>
+		<text>Most of the data is locked, but you can still access the diary.
+Last entry:\n%c[0,153,255,255]-%c[0,140,140,140]Bison and the boys, still managed to find the entrance to the catacombs, and through them, we will be in place in less than five hours, just do not run into any creature ...</text>
 	</string>
 	<string id="dl_pda_bandita_name">
-		<text>ПДА Лидера Бандитов</text>
+		<text>Bandit Leader's PDA</text>
 	</string>
 	<string id="dl_pda_bandita_descr">
-		<text>Основная часть данных не представляет ценности, однако есть небольшая заметка, которая была сделана не так давно. \n
-Заметка: \n%c[0,153,255,255] • %c[0,140,140,140] Приняли фраера, свезло шо тот не успел ничего сделать, пацаны быро его раздели, а хлам сложили в общак, надо будет на досуге глянуть шо там у него было ценного.</text>
+		<text>The bulk of the data is of no value, but there is a small note that was made not too long ago.\
+Note:\n%c[0,153,255,255]-%c[0,140,140,140]Punk got busted, and they were lucky that he did not have time to do anything, the guys quickly undressed him, and put the stuff in the pot, I need at leisure to look at what he had there was valuable.</text>
 	</string>
 	<string id="val_locked_flashcard_name">
-		<text>Флэш-накопитель</text>
+		<text>Flash drive</text>
 	</string>
 	<string id="val_locked_flashcard_descr">
-		<text>\n%c[0,153,255,255] • %c[0,140,140,140] Заблокирована.</text>
+		<text>\n%c[0,153,255,255]-%c[0,140,140,140]Blocked.</text>
 	</string>
 	<string id="el_sp_flashcard_name">
-		<text>Флеш-Карта</text>
+		<text>Flash Card</text>
 	</string>
 	<string id="el_sp_flashcard_descr">
-		<text>\n%c[0,153,255,255] • %c[0,140,140,140] На флеш-карте, имеются лишь координаты для выхода из аномалии.</text>
+		<text>\n%c[0,153,255,255]-%c[0,140,140,140]On the flash map, there are only coordinates to exit the anomaly.</text>
 	</string>
 	<string id="el_pda_sos_name">
-		<text>ПДА Некрасова</text>
+		<text>Nekrasov's PDA.</text>
 	</string>
 	<string id="el_pda_sos_descr">
-		<text>\n%c[0,193,66,66] • %c[0,193,66,66] Заметка №1: Похоже группа наёмников ищет вход в комплекс, интересно, что им понадобилось там? Нужно отправить туда Левшу, на разведку. \n%c[0,193,66,66] • %c[0,193,66,66] Заметка №2: Левша, сказал, что комплекс пуст, за исключением мутантов и пары зомбированых. \n%c[0,193,66,66] • %c[0,193,66,66] Заметка №3: Наёмники нашли вход в лабораторию, но за ними по всей видимости следит ещё один найм, нужно быть осторожнее...</text>
+		<text>\n%c[0,193,66,66]-%c[0,193,66,66]Note #1: Looks like a group of mercenaries looking for an entrance to the complex, wonder what they needed there? We should send Lefty there, for a reconnaissance.\n%c[0,193,66,66]-%c[0,193,66,66]Note № 2: Lefty, said that the complex is empty, except for mutants and a couple of zombified.\n%c[0,193,66,66]-%c[0,193,66,66]Note #3: Mercenaries have found the entrance to the lab, but they appear to be followed by another recruit, need to be careful...</text>
 	</string>
 	<string id="st_ba1_pda_felix_pda">
-		<text>ПДА Феликса</text>
+		<text>Felix's PDA</text>
 	</string>
 	<string id="st_ba1_pda_felix_descr">
-		<text>\n%c[0,153,255,255] • %c[0,140,140,140] В ПДА имеется несколько заметок и карта местности с пометкой «Пустые Земли». В заметках сталкер, упоминает, о проекте «Прометей», и что он отправился в лабораторию, специально за её упоминаниями\документами. Далее запили обрываются, однако есть ещё одна недописанная заметка: Чёрт меня только дёрнул сунутся сюда! Знал ведь, чем всё может кончится… Наёмники догнали меня, патронов не хват…. </text>
+		<text>\n%c[0,153,255,255]-%c[0,140,140,140]The PDA has several notes and a map of the area marked "Waste Land". In the notes, the stalker, mentions the Prometheus project, and that he went to the lab specifically for its mentions\documents. Further notes are cut off, but there is one more note not written: I should have dared to come here! I knew it would end... The mercenaries caught up with me, not enough ammunition.... </text>
 	</string>
 	<string id="wiz_case_starogo_name">
-		<text>Герметический контейнер</text>
+		<text>Sealed container.</text>
 	</string>
 	<string id="wiz_case_starogo_descr">
-		<text>Контейнер с маркировкой «Y-023» - Закрыт.</text>
+		<text>Container marked "Y-023" - Closed.</text>
 	</string>
 	<string id="wiz_old_writes_name">
-		<text>«Старая рукопись»</text>
+		<text>"Old manuscript."</text>
 	</string>
 	<string id="wiz_old_writes_descr">
-		<text>Множество записей уже невозможно прочесть, они попросту сгнили. Уже к середине рукописи есть уцелевшие записи Старика: \n \n
-\n%c[0,153,255,255] «Запись от 29.08.2017» \n
-%c[0,140,140,140] Ничего эта «зелень» не понимает! Лезут просто в лапы к смерти, а потом жалуются, мол Зона их наказывает… Дураки! Главное, что мне удалось запечатать вход в комплекс - нечего им там делать! Ключ от комплекса спрятал на территории спуска в комплекс.
-\n%c[0,153,255,255] «Запись от 06.09.2017» \n
-%c[0,140,140,140] Группа сталкеров обратилась ко мне с просьбой впустить их в заброшенные катакомбы. Вначале отказался, но потом понял, что всё равно не смогу их отговорить. Впустил сталкеров и запечатал вход, теперь больше никто через него не сможет попасть в катакомбы, но вот беда в том, что есть ещё один спуск на территории Старого АТП.
+		<text>Many of the entries are no longer readable, they have simply rotted away. Already in the middle of the manuscript there are surviving records of the Old Man:\n\
+\n%c[0,153,255,255]"Record dated 29.08.2017"\n%c[0,140,140,140,140]These "greens" don't understand anything! They just get their hands on death and then complain that the Zone is punishing them... Fools! The main thing is that I managed to seal the entrance to the complex - there is nothing for them to do there! Key of the complex hid in the territory of the descent into the complex.
+\n%c[0,153,255,255]"Record dated 06.09.2017"\n%c[0,140,140,140,140]A group of stalkers asked me to let them into the abandoned catacombs. At first I refused, but then I realized I couldn't talk them out of it anyway. I let the stalkers in and sealed the entrance, so now no one else can get into the catacombs through it, but the trouble is that there's another descent in the Old ATP.
 </text>
 	</string>
 	<string id="st_wiz_merc_lead_notebook_name">
-		<text>Ноутбук Наёмников</text>
+		<text>The Mercenaries' Notebook</text>
 	</string>
 	<string id="st_wiz_merc_lead_notebook_desc">
-		<text>Среди множества спама в почтовом ящике ноутбука содержится единственное сообщение, помеченное как важное: \n
-\n%c[0,153,255,255] Содержимое сообщения: %c[0,140,140,140] «Организуйте лагерь на бывшей военной базе - каждый, кто участвует в деле, будет прибывать к вам. Грифа не ждите: он с людьми будет в «Тёмной Долине», у него своя задача. 
-Как только найдёте артефакт, не спешите уходить, сначала заметите следы. Лидера нейтралов в расход, он свою задачу выполнил. »  \nШакал</text>
+		<text>Among the mass of spam in the notebook's mailbox is a single message marked as important:\
+\n%c[0,153,255,255]Message contents:%c[0,140,140,140]"Set up camp on a former military base - everyone involved will come to you. Don't wait for Griff: he'll be in the Dark Vale with his men, he has his own task. 
+As soon as you find the artifact, do not rush to leave, first notice the traces. The Neutral Leader is expendable, he has completed his task. "\nJackal</text>
 	</string>
 	<string id="val_grek_pda_name">
-		<text>ПДА Грека</text>
+		<text>Greek's PDA</text>
 	</string>
 	<string id="val_grek_pda_desc">
-		<text>%c[0,153,255,255] Последняя запись: %c[0,140,140,140] Столько трудов и всё в пустую... Парней только жаль, они верили что этот сраный артефакт станет золотым билетом к безбедному существованию, увы это не так. Я уже можно сказать труп, а Бизон, он пошёл к тому домику, что на болоте. Спустя время услышал пару выстрелов и всё... Эх а ведь так всё хорошо начиналось...</text>
+		<text>%c[0,153,255,255]Last entry:%c[0,140,140,140]So much effort and all for nothing... Too bad for the guys, they believed that this shitty artifact would be a golden ticket to a prosperous existence, alas it wasn't. I'm already a dead man, and Bison, he went to that cabin in the swamp. He heard a couple of shots later, and that was it... Oh, and it all started out so well...</text>
 	</string>
 	<string id="dl_dead_merc_pda_name">
-		<text>ПДА Назара</text>
+		<text>Beast's PDA</text>
 	</string>
 	<string id="dl_dead_merc_pda_desc">
-		<text>В ПДА имеется только одно сообщение: \n
-\n%c[0,153,255,255] • %c[0,140,140,140] Твоя цель сталкер ветеран, прозвище - Бизон. Его с группой нестралов видели в окрестностях Мёртвого Озера. Твоя задача: Устранить сталкера и группу, и забрать у них все носители информации. Место встречи обозначу позже.</text>
+		<text>There's only one message in the PDA:\
+\n%c[0,153,255,255]-%c[0,140,140,140]Your target is a veteran stalker, nicknamed Bison. He and a group of nonstrals were seen in the vicinity of Dead Lake. Your task: Eliminate the stalker and the group, and take from them all the media. I will mark the location of the meeting later.</text>
 	</string>
 	<string id="st_wiz_pda_nazar_name">
-		<text>ПДА Назара</text>
+		<text>Nazar's PDA.</text>
 	</string>
 	<string id="st_wiz_pda_nazar_descr">
-		<text>В ПДА Назара имеется несколько аудио-заметок: \n
-\n%c[0,153,255,255] Заметка №1: %c[0,140,140,140] Коста подвязал меня на поиск, довольно редкого артефакта на наёмников, сказал, что «синие» обещали хорошо заплатить.
-\n%c[0,153,255,255] Заметка №2: %c[0,140,140,140] Артефакт – нашёл, связался с Костой, тот сказал ждать недалеко от болота, должен прийти наёмник.
-\n%c[0,153,255,255] Заметка №3: %c[0,140,140,140] «Синий» забрал арт… И выстрелил… Почему не доби.. (кашляет) К-Кос… [Аудио обрывается].</text>
+		<text>Nazar's PDA has several audio notes:\
+\n%c[0,153,255,255]Note #1:%c[0,140,140,140]Costa hooked me up on a search, a pretty rare artifact on mercenaries, said the "blues" promised good pay.
+\n%c[0,153,255,255]Note #2:%c[0,140,140,140]Artifact - found, contacted Kosta, he said to wait near the swamp, should come mercenary.
+\n%c[0,153,255,255]Note #3:%c[0,140,140,140]"Blue" took the art... And shot... Why do not. (coughs) K-Kos... [Audio cuts off].</text>
 	</string>
 	<string id="st_kat_pda_stalker_unlock_name">
-		<text>ПДА Ворона</text>
+		<text>Raven's PDA</text>
 	</string>
 	<string id="st_kat_pda_stalker_unlock_descr">
-		<text>ПДА был отчищен, однако на в заметках осталась пара записей: \n
-\n%c[0,153,255,255] Заметка №2: %c[0,140,140,140] Нарвались на мутантов… Этого стоило ожидать, меня ранили… [кашляет] Парни хотели тащить меня на себе, но я отговорил… Лучше уж здесь тыл прикрою, чем буду обузой на плечах парней. Ну что! Готовьтесь ублюдки... 
+		<text>PDA has been scrubbed, but there are still a couple of entries in the notes:\
+\n%c[0,153,255,255]Note #2:%c[0,140,140,140]I got a few mutants... It was to be expected, I got hit... [coughs] The guys wanted to carry me, but I told them not to... I would rather watch my back here than burden my shoulders. All right! Get ready motherfuckers... 
 </text>
 	</string>
 	<string id="st_kat_pda_stalker_lock_name">
-		<text>ПДА Ворона</text>
+		<text>PDA Raven</text>
 	</string>
 	<string id="st_kat_pda_stalker_lock_descr">
-		<text>\n%c[0,153,255,255] • %c[0,140,140,140] Устройство: %c[0,193,66,66] Заблокировано</text>
+		<text>\n%c[0,153,255,255]-%c[0,140,140,140]Device:%c[0,193,66,66]Blocked</text>
 	</string>
 	<string id="st_wiz_pda_merc_lock_name">
-		<text>ПДА Наёмника</text>
+		<text>Mercenary PDA</text>
 	</string>
 	<string id="st_wiz_pda_merc_lock_descr">
-		<text>\n%c[0,153,255,255] • %c[0,140,140,140] Устройство: %c[0,193,66,66] Заблокировано</text>
+		<text>\n%c[0,153,255,255]-%c[0,140,140,140]Device:%c[0,193,66,66]Locked</text>
 	</string>
 	<string id="st_wiz_pda_merc_name">
-		<text>ПДА Наёмника</text>
+		<text>Mercenary PDA</text>
 	</string>
 	<string id="st_wiz_pda_merc_descr">
-		<text>\n%c[0,153,255,255] • %c[0,140,140,140] Заметки: \n%c[0,153,255,255] • А ведь Кривой отлично придумал с этим артом! По сути, в смерти сталкерка виноват только кровосос. Интересно, как ему удалось уговорить лидера нейтралов на отправку этого бродяги в пасть к кровососу?
-\n%c[0,153,255,255] • Кривой, послал разведать тропки, чтобы не возникло трудностей при отступлении.
-\n%c[0,153,255,255] • Ну вот и всё, теперь можно и к парням возвращаться.</text>
+		<text>\n%c[0,153,255,255]-%c[0,140,140,140,140]Notes:\n%c[0,153,255,255]- Krivoy had a great idea with this art! In fact, the only one to blame for the stalker's death was the bloodsucker. I wonder how he managed to talk the neutral leader into sending this vagabond into the jaws of the bloodsucker?
+\n%c[0,153,255,255]- Crooked, sent to scout the trails so there would be no difficulty in retreating.
+\n%c[0,153,255,255]- That's it, now you can go back to the guys.</text>
 	</string>
 	<string id="st_ba1_pda_yara_pda">
-		<text>ПДА Дядьки Яра</text>
+		<text>Uncle Yar's PDA</text>
 	</string>
 	<string id="st_ba1_pda_yara_descr">
-		<text>\n%c[0,153,255,255] • %c[0,140,140,140] Заметки: \n%c[0,153,255,255] • %c[0,193,66,66] Интересно, что меркам понадобилось в этой лаборатории? Думаю, стоит проследить за ними.
-\n%c[0,153,255,255] • %c[0,193,66,66] Чёрт, они пропали... Нужно быть осторожнее. 
-\n%c[0,153,255,255] • %c[0,193,66,66] Странно, никого не нашёл... 
-\n%c[0,153,255,255] • %c[0,193,66,66] Обошел лабораторию вдоль и поперёк, но ни одной живой души...
-\n%c[0,153,255,255] • %c[0,193,66,66] Нашёл армейскую радио-станцию. После её включения, она поймала чей-то сигнал S.O.S нужно будет узнать у местных по подробнее, об этих бедолагах.
-\n%c[0,153,255,255] • %c[0,193,66,66] ЧЁРТ! Знал ведь, что не всё так просто будет, похоже это конец... Контролёр оказался более вынослив, чем я предполагал. Это конец...</text>
+		<text>\n%c[0,153,255,255]-%c[0,140,140,140]Notes:\n%c[0,153,255,255]-%c[0,193,66,66]Wonder what the measures needed in this lab? I think it's worth following up with them.
+\n%c[0,153,255,255]-%c[0,193,66,66]Damn, they're gone... We need to be more careful. 
+\n%c[0,153,255,255]-%c[0,193,66,66]That's weird, I couldn't find anyone... 
+\n%c[0,153,255,255]-%c[0,193,66,66]I walked all over the lab, but not a living soul...
+\n%c[0,153,255,255]-%c[0,193,66,66]Found an army radio station. After turning it on, it picked up someone's S.O.S. signal. I'll have to ask the locals for more info on these poor bastards.
+\n%c[0,153,255,255]-%c[0,193,66,66]Damn! I knew it wasn't going to be that easy, it looks like it's over... The Controller was more resilient than I thought. This is the end...</text>
 	</string>
 	<!-- Проект "Прометей" -->
 	<string id="st_doc_ba1_info_name">
-		<text>Проект: Прометей ч.5</text>
+		<text>Project: Prometheus Part 5</text>
 	</string>
 	<string id="st_doc_ba1_info_descr">
-		<text>\n%c[0,153,255,255] • %c[0,140,140,140] Всё пошло не по плану! Проект «Прометей» вышел из под контроля! Сотрудниками лаборатории, был установлен факт нарушения карантинной зоны. Лаборант Чистяков А.В совершил героический поступок, он запечатал нижние уровни комплекса, дабы не пустить заразу далее, однако погиб. Увы, но финансирование было прекращено, проект закрыт, подопытные запечатаны в комплексе.  \n \n Профессор Звягинцев А.М \n \n \n Дата: 15.06.2016.</text>
+		<text>\n%c[0,153,255,255]-%c[0,140,140,140]It didn't go according to plan! Project Prometheus is out of control! The lab staff, were found to have violated the quarantine zone. Laboratory assistant Chistyakov Ah.V. performed a heroic deed, he sealed the lower levels of the complex, in order not to let the contamination continue, but he died. Alas, the funding has been terminated, the project is closed and the test subjects are sealed in the complex.\n\nProfessor Zvyagintsev Ah.M\n\n\nDate: 15.06.2016.</text>
 	</string>
 	<string id="st_doc_ba1_info_1_name">
-		<text>Проект: Прометей ч.2</text>
+		<text>Project: Prometheus Part 2</text>
 	</string>
 	<string id="st_doc_ba1_info_1_descr">
 		<text>\n%c[0,153,255,255] • %c[0,140,140,140] 10.03.2016: \n
-Проект зарекомендовал себя вполне не плохо, однако есть еще некоторые моменты, которые требуют дальнейшей разработки и экспериментов. Более всего рекомендуем вам, провести полевые испытания проекта, ибо огромная часть наших подопытных в лабораторных условиях показывали довольно поразительные результаты, но после проведения полевых испытаний, стало ясно, что испытуемые лишь на начальной стадии.  \n
-14.03.2016: \n
-После проведения полевых испытаний, нами был выявлен шпион, который не без помощи других оказывал пагубные действия на проект. Как нам стало известно, шпионом оказался Профессор Романов. Выяснить как долго он противостоял проекту, не удалось. Профессор совершил акт самоубийства. Будем надеяться, что другие сообщники пока уйдут в тень и проект «Прометей»  дойдёт до финальной стадии. \n \n Профессор Звягинцев А.М \n \n \n Дата: 14.03.2016.</text>
+The project proved itself quite well, but there are still some points that require further development and experimentation. Most of all, we recommend that you do a field test of the project, because a huge part of our test subjects in the laboratory conditions showed quite striking results, but after conducting field tests, it became clear that the test subjects are only at the initial stage.\n14.03.2016: \n
+After conducting the field tests, we discovered a spy who was having a detrimental effect on the project, not without the help of others. As we learned, the spy turned out to be Professor Romanov. It was impossible to find out how long he opposed the project. The professor committed an act of suicide. Let's hope that the other accomplices have so far gone into the shadows and the Prometheus project reaches its final stage.\n\nProfessor Zvyagintsev Ah.M\n\n\nDate: 14.03.2016.</text>
 	</string>
 	<string id="st_doc_ba1_info_2_name">
-		<text>Проект: Прометей ч.4</text>
+		<text>Project: Prometheus Part 4</text>
 	</string>
 	<string id="st_doc_ba1_info_2_descr">
-		<text>\n%c[0,153,255,255] • %c[0,140,140,140] Исходя из всего выше сказанного, делаем вывод, что субъект не производит неконтролируемой агрессии, как его предшественники.
-Самое примечательное, что субъект начал излучать незначительное кол-во Пси-Волн, однако причину их появления, нам не удалось выяснить. Более того, один из лаборантов, говорит, про постоянные головные боли когда находиться непосредственно рядом с субъектом. Считаю нужным сообщить, что проект «Прометей» нестабилен и требуется больше времени для наблюдения. \n \n Профессор Звягинцев А.М \n \n \n Дата: 09.04.2016.</text>
+		<text>\n%c[0,153,255,255]-%c[0,140,140,140]Based on all of the above, we conclude that the subject does not produce uncontrolled aggression like its predecessors.
+The most notable thing is that the subject began emitting a small amount of Psi Waves, but we were unable to figure out the cause of their appearance. Moreover, one of the lab assistants said that he was experiencing constant headaches when being in the immediate vicinity of the subject. I feel it necessary to inform you that Project Prometheus is unstable and more time is needed for observation.\n\nProfessor Zvyagintsev Ah.M\n\n\nDate: 09.04.2016.</text>
 	</string>
 	<string id="ex_sokol_documents_name">
-		<text>Папка с документами</text>
+		<text>Document folder</text>
 	</string>
 	<string id="ex_sokol_documents_descr">
-		<text>Папка с документами, основная часть документов датируется февралём 2016-го года. Так же в документах идёт речь, о каком-то проекте "Прометей".</text>
+		<text>Folder with documents, most of the documents are dated February 2016. Also the documents talk about, some kind of Prometheus project.</text>
 	</string>
 	<string id="ex_sokol_treasure_name">
-		<text>Огнеупорный Кейс</text>
+		<text>Fireproof case.</text>
 	</string>
 	<string id="ex_sokol_treasure_descr">
-		<text>Не большой огнеупорный кейс, судя по всему именно внутри лежат деньги.</text>
+		<text>Not a large fireproof case, it appears to contain the money inside.</text>
 	</string>
 	<string id="ex_scaner_radio_name">
-		<text>Сканер Радиочастот</text>
+		<text>Radio frequency scanner.</text>
 	</string>
 	<string id="ex_scaner_radio_descr">
-		<text>Сканер радиочастот предназначен для сканирования диапазона частот, или каналов. Если сканер находит сигнал на какой-то частоте, он останавливается на определённое время, и затем продолжает сканировать заданный диапазон частот.</text>
+		<text>The radio frequency scanner is designed to scan a range of frequencies, or channels. If the scanner finds a signal on a certain frequency, it stops for a preset time and then resumes scanning the given frequency range.</text>
 	</string>
 	<string id="pda_petruhi_lock_name">
-		<text>ПДА Петрухи</text>
+		<text>Petrukha PDA</text>
 	</string>
 	<string id="pda_petruhi_lock_descr">
-		<text>%c[0,153,255,255] •ЗАБЛОКИРОВАН. \n\n%c[0,153,255,255] •На корпусе ПДА виднеется надпись: "Группа Дикого".</text>
+		<text>%c[0,153,255,255]•ЗАБЛОКИРО\n\n%c[0,153,255,255]-The PDA shows the inscription: Wild Group.</text>
 	</string>
 	<string id="pda_petruhi_unlock_name">
-		<text>ПДА Петрухи</text>
+		<text>Petrukha's PDA.</text>
 	</string>
 	<string id="pda_petruhi_unlock_descr">
-		<text>%c[0,153,255,255] •Полученное сообщение №1: Петруха, твоя задача внедриться в группу Тихого. Основная задача, это кража медальйона. \n%c[0,153,255,255] •Полученное сообщение №2: Через пару часов, мы спровоцируем группу Тихого на рейд территорий. Это будет твой шанс, главное не оплашай. \n \n %c[0,153,255,255] •Личная заметка: Чёртов Дикий, сам бы с этими сталкерами тусовался... Ладно, думаю скоро всё закончится. \n \n %c[0,153,255,255] •Личная заметка: Всё же провокация сработала, сейчас собираемся в рейд. \n \n %c[0,153,255,255] •Личная заметка: Место встречи не далеко от северного тунеля с "Жарками".</text>
+		<text>%c[0,153,255,255]-Message #1 received: Petruha, your task is to infiltrate Tycho's group. The main task is to steal the medallion.\n%c[0,153,255,255]-Get Message #2: In a couple of hours, we'll provoke Tikhoy's group to raid the territories. This will be your chance, just don't pay for it.\n\n%c[0,153,255,255]-Personal note: Damned Wild, I'd rather hang out with those stalkers myself... Okay, I guess this will all be over soon.\n\n%c[0,153,255,255]-Personal Note: Still, the provocation worked.\n\n%c[0,153,255,255,255]-Personal note: The meeting place is not far from the north tunnel with the Zharks.</text>
 	</string>
 	<string id="ex_gar_medaliyon_name">
-		<text>Старый медальйон.</text>
+		<text>Old Medallion.</text>
 	</string>
 	<string id="ex_gar_medaliyon_descr">
-		<text>%c[0,153,255,255] •Старый медальйон, с цепочкой. На самом медальйоне виднеется инициалы И.А. Внутри есть фото.</text>
+		<text>%c[0,153,255,255]-Old Medallion, with a chain. On the medallion itself you can see the initials I.Ah. There is a photo inside.</text>
 	</string>
 	<string id="real_habar_name">
-		<text>Обычный походной рюкзак.</text>
+		<text>Normal hiking backpack.</text>
 	</string>
 	<string id="real_habar_descr">
-		<text>На вид обычный походной рюкзак, однако он довольно тяжёлый, внутри возможно находится ценные вещи.</text>
+		<text>Looks like an ordinary hiking backpack, but it is quite heavy and there may be valuables inside.</text>
 	</string>
 	<!-- Квестовые предметы для циклических квестов -->
 	<string id="medkit_case_name">
-		<text>Кейс с медикаментами.</text>
+		<text>Medical case.</text>
 	</string>
 	<string id="medkit_case_descr">
-		<text>Огнеупорный кейс с медикаментами.</text>
+		<text>A fireproof backpack case with medicine.</text>
 	</string>
 	<string id="alko_treasure_name">
-		<text>Рюкзак с алкоголем.</text>
+		<text>Alcohol backpack.</text>
 	</string>
 	<string id="alko_treasure_descr">
-		<text>Довольно увесистый рюкзак с "топливом" для Дизеля.</text>
+		<text>A pretty weighty backpack with fuel for Diesel.</text>
 	</string>
 	<string id="aiamop_treasure_name">
-		<text>Рюкзак с амуницией.</text>
+		<text>Backpack with ammunition.</text>
 	</string>
 	<string id="aiamop_treasure_descr">
-		<text>В рюкзаке довольно много амуниции.</text>
+		<text>Quite a lot of ammunition in the backpack.</text>
 	</string>
 	<string id="sqf_treasure_name">
-		<text>Заказ "Джокера".</text>
+		<text>Order of the Joker.</text>
 	</string>
 	<string id="sqf_treasure_descr">
-		<text>В рюкзаке довольно много амуниции и провианта.</text>
+		<text>Quite a lot of ammunition and provisions in the backpack.</text>
 	</string>
 	<string id="st_dl_lab_x6_info_name">
-		<text>Документы об исследованиях</text>
+		<text>Research Papers</text>
 	</string>
 	<string id="st_dl_lab_x6_info_descr">
-		<text>В докладе говорится об изучении биологических образцов и так называемых артефактов, присланных из лаборатории Х11. Образцы подвергались воздействию информационным полем разной степени интенсивности. Доклад подробно описывает мутации живых и не живых организмов, вызванные таким облучением.\nЭти документы не должны попасть в чужие руки.</text>
+		<text>The report describes a study of biological specimens and so-called artifacts sent from Laboratory X11. The specimens were exposed to information fields of varying degrees of intensity. The report details the mutations in living and non-living organisms caused by such exposures.\nThese documents must not fall into the wrong hands.</text>
 	</string>
 
 </string_table>

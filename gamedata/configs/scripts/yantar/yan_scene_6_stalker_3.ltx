@@ -41,6 +41,7 @@ invulnerable = true
 combat_ignore_cond = true
 on_signal = ready_to_jump | remark@zabor 
 danger = danger_ignore
+on_timer = 1000 | remark@zabor
 
 [remark@zabor]
 anim = wait_na
@@ -50,6 +51,7 @@ combat_ignore_cond = true
 combat_ignore_keep_when_attacked = true
 on_signal = anim_end | camper@fire1_cut5 %-yan_space_restrictor_actor_ready_cut5%
 danger = danger_ignore
+on_timer = 1000 | camper@fire1_cut5 %-yan_space_restrictor_actor_ready_cut5%
 
 [camper@fire1_cut5]
 invulnerable = true
@@ -113,6 +115,7 @@ radius = 0
 meet = no_meet
 on_signal = on_position | %+yan_zabor_stalker_3_on_position%
 on_info = {+typoi +yan_levsha_ready_cut6} remark@1
+on_timer = 1000 | %+yan_zabor_stalker_3_on_position%
 
 [remark@1]
 on_timer = 3000 | {-yan_zabor_2_already_jumping} camper@to_zabor_2 %+yan_zabor_2_already_jumping%
@@ -130,6 +133,7 @@ meet = no_meet
 combat_ignore_cond = true
 on_signal = ready_to_jump | remark@zabor_2 %-yan_zabor_2_already_jumping%
 invulnerable = true
+on_timer = 1000 | remark@zabor_2 %-yan_zabor_2_already_jumping%
 
 [remark@zabor_2]
 anim = wait_na
@@ -140,6 +144,7 @@ combat_ignore_cond = true
 combat_ignore_keep_when_attacked = true
 on_signal = anim_end | camper@wait_cut6
 ;-- сцена 6 "Ремонт Установки"
+on_timer = 1000 | camper@wait_cut6
 
 [camper@wait_cut6]
 invulnerable = true
@@ -150,6 +155,7 @@ combat_ignore_cond = true
 danger = danger_condition
 meet = no_meet
 on_signal = turn_end | remark@wait_cut6_temp 
+on_timer = 1000 | remark@wait_cut6_temp 
 
 [remark@wait_cut6_temp]
 anim = guard
@@ -172,6 +178,7 @@ danger = danger_condition
 combat_ignore_cond = true
 on_signal = yan_ready_position_stalker3 | camper@fire2
 meet = no_meet
+on_timer = 1000 | camper@fire2
 
 [camper@fire2]
 out_restr = yan_space_restrictor_cut6_for_group2

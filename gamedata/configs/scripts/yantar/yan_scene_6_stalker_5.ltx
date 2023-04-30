@@ -44,7 +44,7 @@ invulnerable = true
 meet = meet@1
 danger = danger_ignore
 combat_ignore_cond = true
-on_timer = 3000 | camper@wait_professor_phrase %+yan_low_psy_radiation_start =play_sound(yan_professor_start_operation:ecolog:yan_st_sakharov_name)%
+on_timer = 3000 | camper@wait_professor_phrase %+yan_low_psy_radiation_start =play_sound(yan_professor_start_operation)%
 
 [camper@wait_professor_phrase]
 path_walk = stalker5_cut5_1_walk
@@ -55,7 +55,7 @@ invulnerable = true
 meet = no_meet
 danger = danger_ignore
 combat_ignore_cond = true
-on_signal = sound_end | camper@fire1_cut5_temp %+yan_proriv_k_ystanovke =play_sound(yan_squad_assemble:stalker:yan_st_levsha_name)%
+on_signal = sound_end | camper@fire1_cut5_temp %+yan_proriv_k_ystanovke =play_sound(yan_squad_assemble)%
 
 [meet@1]
 meet_state = 30 | hello_wpn@yan_levsha_hello_actor | 10 | guard@yan_levsha_hello_actor 
@@ -77,6 +77,7 @@ invulnerable = true
 meet = no_meet
 def_state_moving = assault
 on_signal = ready_to_zabor | camper@to_zabor_wait %+yan_scene_6_ready_to_zabor%
+on_timer = 1000 | camper@to_zabor_wait %+yan_scene_6_ready_to_zabor%
 danger = danger_ignore
 
 [camper@to_zabor_wait]
@@ -96,6 +97,7 @@ meet = no_meet
 def_state_moving = assault
 combat_ignore_cond = true
 on_signal = ready_to_jump | remark@zabor %-yan_zabor_1_already_jumping%
+on_timer = 1000 | remark@zabor %-yan_zabor_1_already_jumping%
 invulnerable = true
 danger = danger_ignore
 
@@ -107,6 +109,7 @@ combat_ignore_cond = true
 combat_ignore_keep_when_attacked = true
 on_signal = anim_end | camper@fire1_cut5
 danger = danger_ignore
+on_timer = 1000 | camper@fire1_cut5
 
 [camper@fire1_cut5]
 invulnerable = true
@@ -136,7 +139,7 @@ path_look = stalker5_cut5_4_look
 def_state_moving = assault
 ;radius = 3
 meet = no_meet
-on_info = {+yan_destroy_zombi26_cut5} camper@fire4_cut5 %=play_sound(yan_levsha_clear:stalker:yan_st_levsha_name)%
+on_info = {+yan_destroy_zombi26_cut5} camper@fire4_cut5 %=play_sound(yan_levsha_clear)%
 
 [camper@fire4_cut5]
 invulnerable = true
@@ -156,7 +159,7 @@ path_look = stalker5_cut5_6_look
 def_state_moving = assault
 ;radius = 3
 meet = no_meet
-on_info = {+yan_destroy_zombi30_cut5} camper@fire6_cut5 %=play_sound(yan_levsha_clear:stalker:yan_st_levsha_name)%
+on_info = {+yan_destroy_zombi30_cut5} camper@fire6_cut5 %=play_sound(yan_levsha_clear)%
 
 [camper@fire6_cut5]
 invulnerable = true
@@ -184,6 +187,7 @@ def_state_moving = assault
 meet = no_meet
 combat_ignore_cond = true
 on_signal = ready_to_jump | remark@zabor_2 %-yan_zabor_2_already_jumping%
+on_timer = 1000 | remark@zabor_2 %-yan_zabor_2_already_jumping%
 invulnerable = true
 
 [remark@zabor_2]
@@ -194,6 +198,7 @@ invulnerable = true
 combat_ignore_cond = true
 combat_ignore_keep_when_attacked = true
 on_signal = anim_end | camper@wait_cut6
+on_timer = 1000 | camper@wait_cut6
 
 ;-- сцена 6 "Ремонт Установки"
 [camper@wait_cut6]
@@ -206,7 +211,7 @@ danger = danger_condition
 combat_ignore_cond = true
 meet =  no_meet
 combat_ignore_cond = {-hit_cut6_stalker_1 -hit_cut6_stalker_2 -hit_cut6_stalker_3 -hit_cut6_stalker_4 -hit_cut6_stalker_5}
-on_actor_dist_le_nvis = 6 | {+yan_actor_ready_cut6_ok} remark@yan_give_orders %=play_sound(yan_give_orders:stalker:yan_st_levsha_name)%
+on_actor_dist_le_nvis = 6 | {+yan_actor_ready_cut6_ok} remark@yan_give_orders %=play_sound(yan_give_orders)%
 
 [remark@yan_give_orders]
 invulnerable = true
@@ -224,8 +229,8 @@ danger = danger_condition
 combat_ignore_cond = true
 anim = guard
 target = story | actor
-on_info = %=play_sound(yan_give_orders:stalker:yan_st_levsha_name)%
-on_signal = theme_end | camper@fire %+yan_ready_actor_cut6%
+on_info = %=play_sound(yan_give_orders)%
+on_signal = sound_end | camper@fire %+yan_ready_actor_cut6%
 ;on_actor_dist_ge_nvis = 7 | camper@fire
 meet = no_meet
 
@@ -240,6 +245,7 @@ combat_ignore_cond = true
 danger = danger_condition
 on_info = {+yan_stalker_5_kaput} camper@fire_not_inv
 meet = no_meet
+on_timer = 1000 | %+yan_start_remove +yan_ready_perekl_cut6 -yan_ready_vikl_cut6% camper@fire1
 
 [camper@fire1]
 out_restr = yan_space_restrictor_cut6_for_group2

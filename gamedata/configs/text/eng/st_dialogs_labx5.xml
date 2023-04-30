@@ -1,84 +1,84 @@
 <?xml version="1.0" encoding="windows-1251" ?>
 <string_table>
     <string id="labx5_borland_start_dialog_talking_0">
-        <text>Ну вот мы и внутри.</text>
+        <text>Well, we're in.</text>
     </string> 
     <string id="labx5_borland_start_dialog_talking_1">
-        <text>Борланд, давай пошустрее.</text>
+        <text>Borland, hurry up.</text>
     </string> 
     <string id="labx5_borland_start_dialog_talking_2">
-        <text>Не спеши, Саван, не отряд ведешь. Мало ли что в этой лаборатории развелось. Если услышишь что-нибудь подозрительное, не вздумай шум поднимать. А вот если увидишь...Не забывай, чему тебя учили - запасной магазин всегда под рукой. И вот еще что: Скидан просил поискать здесь документы. Отчеты об экспериментах. Обещал хорошо заплатить за каждый. Поэтому поглядывай по сторонам.</text>
+        <text>Take your time, Savannah, you're not leading a squad. You never know what's going on in this lab. If you hear anything suspicious, don't make a fuss. But if you do... Don't forget what you were taught - a spare magazine is always at hand. One more thing: Skidan asked me to look for documents in here. Experimental reports. Promised to pay good money for each one. So keep your eyes open.</text>
     </string>
 	<string id="labx5_borland_start_dialog_talking_3">
-        <text>Ага.</text>
+        <text>Yeah.</text>
     </string>
     <string id="labx5_borland_second_dialog_talking_00">
-        <text>Вот черт, как же он меня так подцепил...</text>
+        <text>Damn, how'd he get me so hooked...</text>
     </string>	
     <string id="labx5_borland_second_dialog_talking_0">
-        <text>Что это было?</text>
+        <text>What was that?</text>
     </string>	
 	<string id="labx5_borland_second_dialog_talking_1">
-        <text>Контролёр это. Они ближе к центру Зоны встречаются. Откуда он тут? Он по мозгам бьет, типа телепат. Башка трещит по швам. Еще бы чуть-чуть, и взял бы он меня под полный контроль. Стал бы я зомбаком. Спасибо, что спас мою задницу.</text>
+        <text>It's the controller. They meet closer to the centre of the Zone. What's he doing here? He's a mind-reader, like a telepath. My head's cracking at the seams. If I was any closer, he'd have taken complete control of me. I'd be a zombie. Thanks for saving my ass.</text>
     </string>
 	<string id="labx5_borland_second_dialog_talking_2">
-        <text>Потом благодарить будешь, если выберемся.</text>
+        <text>You'll thank me later if we get out of here.</text>
     </string>
 	<string id="labx5_borland_second_dialog_talking_3">
-        <text>Если бы не ты...</text>
+        <text>If it wasn't for you...</text>
     </string>
     <string id="labx5_borland_second_dialog_talking_4">
-        <text>Не о чем говорить. Вперед!</text>
+        <text>Nothing to talk about. Let's go!</text>
     </string>
     <string id="labx5_borland_third_dialog_talking_00">
-        <text>Походу, у нас проблемы.</text>
+        <text>Looks like we got a problem.</text>
     </string>	
 	<string id="labx5_borland_third_dialog_talking_0">
-        <text>Какие?</text>
+        <text>What kind of problem?</text>
     </string>
 	<string id="labx5_borland_third_dialog_talking_1">
-        <text>Питания нет. Поэтому лифт не работает.</text>
+        <text>There's no power. That's why the lift's not working.</text>
     </string>
 	<string id="labx5_borland_third_dialog_talking_2">
-        <text>Наверняка где-то должен быть резервный генератор. Оставайся здесь, я попробую найти и запустить. Или просто рубильник отключен питания лифта. Осмотрюсь, поищу.  Будь на связи, когда лифт заработает - дай знать.</text>
+        <text>There's got to be a backup generator somewhere. You stay here, I'll see if I can find it and get it running. Or maybe it's just the breaker that cut the power to the lift. I'll look around, see what I can find.  Keep in touch, let me know when the lift's running.</text>
     </string>
 	<string id="labx5_borland_third_dialog_talking_3">
-        <text>Будь осторожен.</text>
+        <text>Be careful.</text>
     </string>
 	<string id="labx5_borland_third_dialog_talking_4">
-        <text>Угу.</text>
+        <text>Mm-hmm.</text>
     </string>
 	
 	
 	
 	<string id="labx5_borland_fouth_dialog_talking_0">
-        <text>Добрался-таки, чертяка. Живучий ты.</text>
+        <text>You made it, damn it. You're a lively one.</text>
     </string>
 	<string id="labx5_borland_fouth_dialog_talking_11">
-        <text>Что за херня? Меня чуть не сожрали по дороге. Ты нашел Дуболома?</text>
+        <text>What the fuck? I almost got eaten on the way. Did you find the Oakleys?</text>
     </string>	
     <string id="labx5_borland_fouth_dialog_talking_1">
-        <text>Дуболома тут нет. Зато есть "Монолит". Впереди засада, я вижу на мониторах. Тут видеокамеры кругом. Там - монолитовцы. Хорошо вооружены. А Скидан говорил, что нет их больше в Зоне. Как же, нету. Как собак нерезаных.</text>
+        <text>There's no Oakleysman. But the Monolith is. There's an ambush up ahead, I can see it on the monitors. There's video cameras all around. There's Monolith. They're heavily armed. Skidan said they're not in the Zone anymore. No, there aren't. Like dogs.</text>
     </string>	
 	<string id="labx5_borland_fouth_dialog_talking_2">
-        <text>Будем прорываться? Или обходной путь поищем?</text>
+        <text>Should we break through? Or are we looking for a way around?</text>
     </string>
 	<string id="labx5_borland_fouth_dialog_talking_3">
-        <text>Нет другого пути. Мы уже у цели, сейчас я открою тебе дверь. Забегай сразу, дверь закроется и заблокируется через пару секунд. Там внутри газ какой-то, осторожнее. Комбез у тебя с изолированным контуром дыхания, газ не страшен. Если дырок от пуль в комбезе не наделают. Вот тогда - караул! А у меня даже противогаза нет, вот жопа. </text>
+        <text>There is no other way. We're already there, I'm gonna open the door for you. Run straight in, the door will close and lock in two seconds. There's some kind of gas inside, be careful. Your suit's got an insulated breathing circuit, so the gas won't hurt you. Unless you get bullet holes in the suit. Then it's a scarecrow! I don't even have a gas mask, my ass. </text>
     </string>
 	<string id="labx5_borland_fouth_dialog_talking_4">
-        <text>Открывай дверь, прорвёмся.</text>
+        <text>Open the door, we'll get through.</text>
     </string>
 	<string id="labx5_borland_fouth_dialog_talking_5">
-        <text>Я останусь у этих компьютеров - нужно отыскать план внутренних помещений. Если есть глушитель для автомата, сейчас самое время навернуть его на ствол.</text>
+        <text>I'm gonna stay with these computers. I need to find a layout of the interior. If there's a silencer for the machine gun, now would be a good time to put it on the barrel.</text>
     </string>
 	<string id="labx5_borland_fouth_dialog_talking_6">
-        <text>Может прикроешь?</text>
+        <text>Why don't you cover it up?</text>
     </string>
 	<string id="labx5_borland_fouth_dialog_talking_7">
-        <text>Газ, говорю же. Подохну я от газа.</text>
+        <text>Gas, I'm telling you. I'll die of gas.</text>
     </string>
 	<string id="labx5_borland_fouth_dialog_talking_8">
-        <text>Лады, один справлюсь.</text>
+        <text>All right, I'll be fine on my own.</text>
     </string>
 </string_table>

@@ -5,9 +5,7 @@ active = sr_idle
 on_info = {+pri_helicopter_die} sr_idle@sound_act0
 
 [sr_idle@sound_act0]
-on_timer = 1000| %=play_snd(characters_voice\scenario\pri\heli_phrase4)%
-on_signal = sound_end | sr_idle@sound_act1
+on_info = sr_idle@sound_act1 %=play_snd(characters_voice\scenario\pri\heli_phrase4)%
 
 [sr_idle@sound_act1]
-on_timer = 1000| %=play_snd(characters_voice\scenario\pri\heli_phrase5)%
-on_signal = sound_end | nil
+on_timer = 10000| nil %=play_snd(characters_voice\scenario\pri\heli_phrase5)%

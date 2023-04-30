@@ -18,9 +18,9 @@ function topi_m2_give_quest_item(first_speaker, second_speaker)
 	create("topi_stalker_base_var_3_member_8",192.8897857666,-0.017697066068649,542.43139648438,789630,8762)
 	create("topi_stalker_base_var_3_member_9",189.45550537109,-0.0030226111412048,525.65924072266,784965,8762)
 	create("topi_stalker_base_var_3_member_10",172.259765625,0.0023795068264008,524.23400878906,761490,8762)
-    dialogs.relocate_item_section_to_actor(first_speaker, second_speaker, "wpn_l96")
-    dialogs.relocate_item_section_to_actor(first_speaker, second_speaker, "killer_outfit")
-    dialogs.relocate_item_section_to_actor(first_speaker, second_speaker, "ammo_7.62x51_ap", 3)	
+    dialogs.relocate_item_section_to_actor(first_speaker, second_speaker, "wpn_l96a1")
+    dialogs.relocate_item_section_to_actor(first_speaker, second_speaker, "military_merc_outfit")
+    dialogs.relocate_item_section_to_actor(first_speaker, second_speaker, "ammo_7.62x51_fmj", 3)	
 end
 -----------------------------------------------------------------------
 function topi_d5_give_quest_2() 
@@ -236,7 +236,7 @@ end
 
 function topi_c17_snab_create_stalker(first_speaker, second_speaker)
     dialogs.relocate_money_to_actor(first_speaker, second_speaker, 6000)
-    dialogs.relocate_item_section_to_actor(first_speaker, second_speaker, "wpn_toz194")
+    dialogs.relocate_item_section_to_actor(first_speaker, second_speaker, "wpn_wincheaster1300")
     create("topi_c17_sborshik_mahir",-39.031940460205,-0.0017864406108856,250.73347473145,470338,8762)
 end
 
@@ -260,7 +260,7 @@ end
 
 function topi_c17_mahir_give_item(first_speaker, second_speaker)
     dialogs.relocate_money_from_actor(first_speaker, second_speaker, 6000)
-    dialogs.relocate_item_section_from_actor(first_speaker, second_speaker, "wpn_toz194")    
+    dialogs.relocate_item_section_from_actor(first_speaker, second_speaker, "wpn_wincheaster1300")    
 end
 
 function topi_c17_mahir_give_item_2(first_speaker, second_speaker)

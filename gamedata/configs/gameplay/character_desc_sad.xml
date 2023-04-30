@@ -45,7 +45,7 @@
 		<snd_config>characters_voice\human\stalker_1\</snd_config>
 		<rank>90</rank>
 		<reputation>0</reputation>
-		<money min="1000"  max="5000"  infinitive="0"/>
+    <money min="1000000" max="1000000" infinitive="1" />
 		<visual>actors\stalker_ecologist\stalker_ecolog_white</visual>
 
 		<supplies>
@@ -526,7 +526,7 @@
 		<snd_config>characters_voice\human\stalker_2\</snd_config>
 
 		<rank>50</rank>
-		<money min="480000" max="480000" infinitive="1"/>
+    <money min="1000000" max="1000000" infinitive="1" />
 		<reputation>0</reputation>
 
 		<visual>actors\stalker_sad\stalker_mutny_trader</visual>
@@ -564,7 +564,7 @@
 
 		<rank>50</rank>
 		<reputation>0</reputation>
-		<money min="10000" max="10000" infinitive="0" />
+    <money min="1000000" max="1000000" infinitive="1" />
 		<visual>actors\stalker_sad\stalker_mutny_tech</visual>
 		<supplies>
 
@@ -1000,7 +1000,7 @@
 		<snd_config>characters_voice\human\stalker_1\</snd_config>
 
 		<rank>50</rank>
-		<money min="480000" max="480000" infinitive="1"/>
+    <money min="1000000" max="1000000" infinitive="1" />
 		<reputation>0</reputation>
 
 		<visual>actors\stalker_neutral\stalker_neutral_2_mask</visual>
@@ -1033,7 +1033,7 @@
 
 		<rank>50</rank>
 		<reputation>0</reputation>
-		<money min="10000" max="10000" infinitive="0" />
+    <money min="1000000" max="1000000" infinitive="1" />
 		<visual>actors\stalker_sad\sad_stalker_unknown_3</visual>
 		<supplies>
 
@@ -1438,7 +1438,7 @@
 		<snd_config>characters_voice\human\stalker_2\</snd_config>
 
 		<rank>50</rank>
-		<money min="480000" max="480000" infinitive="1"/>
+    <money min="1000000" max="1000000" infinitive="1" />
 		<reputation>0</reputation>
 
 		<visual>actors\stalker_sad\stalker_b2_trader</visual>
@@ -1491,7 +1491,7 @@
 
 		<rank>50</rank>
 		<reputation>0</reputation>
-		<money min="10000" max="10000" infinitive="0" />
+    <money min="1000000" max="1000000" infinitive="1" />
 		<visual>actors\stalker_sad\stalker_b2_tech</visual>
 		<supplies>
 
@@ -1507,7 +1507,8 @@
 #include "gameplay\supplies\character_drugs_3.xml"
     </supplies>
 
-    <actor_dialog>dm_init_trader</actor_dialog>
+		<actor_dialog>dm_init_trader</actor_dialog>
+		<actor_dialog>dm_init_mechanic</actor_dialog>
     <actor_dialog>dm_ordered_task_dialog</actor_dialog>
     <actor_dialog>dm_ordered_task_completed_dialog</actor_dialog>
     <actor_dialog>dm_ordered_task_cancel_dialog</actor_dialog>
@@ -1714,7 +1715,7 @@
 		
 	<specific_character id="sad_b2_stalker_maxim_member_2" team_default = "1">
 		<name>sad_b2_stalker_maxim_member_2</name>
-		<icon>ui_inGame2_neutral_3</icon>
+		<icon>ui_inGame2_stalker_exoseva</icon>
 		<map_icon x="1" y="0"> </map_icon>
 		<bio>Опытный сталкер. Детальная информация отсутствует.</bio>
 		<class>sad_b2_stalker_maxim_member_2</class>
@@ -1724,7 +1725,7 @@
 		<rank>950</rank>
 		<reputation>0</reputation>
 		<money min="10000"  max="15000"  infinitive="0"/>
-		<visual>actors\stalker_neutral\stalker_neutral_3</visual>
+		<visual>actors\stalker_neutral\stalker_neutral_exoseva</visual>
 
 		<supplies>
 
@@ -1749,7 +1750,7 @@
 		
 	<specific_character id="sad_b2_stalker_maxim_member_3" team_default = "1">
 		<name>sad_b2_stalker_maxim_member_3</name>
-		<icon>ui_inGame2_neutral_3</icon>
+		<icon>ui_inGame2_stalker_exoseva</icon>
 		<map_icon x="1" y="0"> </map_icon>
 		<bio>Опытный сталкер. Детальная информация отсутствует.</bio>
 		<class>sad_b2_stalker_maxim_member_3</class>
@@ -1759,7 +1760,7 @@
 		<rank>950</rank>
 		<reputation>0</reputation>
 		<money min="10000"  max="15000"  infinitive="0"/>
-		<visual>actors\stalker_neutral\stalker_neutral_3</visual>
+		<visual>actors\stalker_neutral\stalker_neutral_exoseva</visual>
 
 		<supplies>
 
@@ -1784,7 +1785,7 @@
 		
 	<specific_character id="sad_b2_stalker_maxim_member_4" team_default = "1">
 		<name>GENERATE_NAME_stalker</name>
-		<icon>ui_inGame2_neutral_2</icon>
+		<icon>ui_inGame2_neutral_4</icon>
 		<map_icon x="1" y="0"> </map_icon>
 		<bio>Опытный сталкер. Детальная информация отсутствует.</bio>
 		<class>sad_b2_stalker_maxim_member_4</class>
@@ -1794,7 +1795,7 @@
 		<rank>950</rank>
 		<reputation>0</reputation>
 		<money min="10000"  max="15000"  infinitive="0"/>
-		<visual>actors\stalker_neutral\stalker_neutral_2</visual>
+		<visual>actors\stalker_neutral\stalker_neutral_4</visual>
 
 		<supplies>
 
@@ -1819,7 +1820,7 @@
 		
 	<specific_character id="sad_b2_stalker_maxim_member_5" team_default = "1">
 		<name>GENERATE_NAME_stalker</name>
-		<icon>ui_inGame2_neutral_2</icon>
+		<icon>ui_inGame2_neutral_4</icon>
 		<map_icon x="1" y="0"> </map_icon>
 		<bio>Опытный сталкер. Детальная информация отсутствует.</bio>
 		<class>sad_b2_stalker_maxim_member_5</class>
@@ -1829,7 +1830,7 @@
 		<rank>950</rank>
 		<reputation>0</reputation>
 		<money min="10000"  max="15000"  infinitive="0"/>
-		<visual>actors\stalker_neutral\stalker_neutral_2</visual>
+		<visual>actors\stalker_neutral\stalker_neutral_4</visual>
 
 		<supplies>
 
@@ -1909,7 +1910,7 @@
 		<snd_config>characters_voice\human\freedom_1\</snd_config>
 		<rank>10</rank>
 		<reputation>0</reputation>
-		<money min="10000"  max="15000"  infinitive="0"/>
+    <money min="1000000" max="1000000" infinitive="1" />
 		<visual>actors\stalker_sad\stalker_freedom_tesla</visual>
 
 		<supplies>
@@ -1953,7 +1954,7 @@
 		<snd_config>characters_voice\human\stalker_2\</snd_config>
 
 		<rank>50</rank>
-		<money min="480000" max="480000" infinitive="1"/>
+    <money min="1000000" max="1000000" infinitive="1" />
 		<reputation>0</reputation>
 
 		<visual>actors\stalker_sad\sad_stalker_unknown_2</visual>
@@ -2026,7 +2027,7 @@
 		<terrain_sect>stalker_terrain</terrain_sect>
 		<snd_config>characters_voice\human\stalker_2\</snd_config>
 		<rank>50</rank>
-		<money min="480000" max="480000" infinitive="1"/>
+    <money min="1000000" max="1000000" infinitive="1" />
 		<reputation>0</reputation>
 		<visual>actors\stalker_sad\sad_stalker_unknown_1</visual>
 		<supplies>
@@ -2067,7 +2068,7 @@
 
 		<rank>50</rank>
 		<reputation>0</reputation>
-		<money min="10000" max="10000" infinitive="0" />
+    <money min="1000000" max="1000000" infinitive="1" />
 		<visual>actors\stalker_neutral\stalker_neutral_2_mask</visual>
 		<supplies>
 

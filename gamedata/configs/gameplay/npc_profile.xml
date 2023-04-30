@@ -1547,6 +1547,15 @@
    <character id="pri_a28_evac_com">
 		<class>pri_a28_evac_com</class>
    </character>
+   <character id="pri_a28_evac_1">
+		<class>pri_a28_evac_1</class>
+   </character>
+   <character id="pri_a28_evac_2">
+		<class>pri_a28_evac_2</class>
+   </character>
+   <character id="pri_a28_evac_3">
+		<class>pri_a28_evac_3</class>
+   </character>
 
   <!-- Zaton b106 -->
 - <character id="zat_b106_stalker_garmata">

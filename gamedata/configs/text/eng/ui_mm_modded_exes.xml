@@ -54,6 +54,10 @@
 		<text>Shader Scopes Fog Max Travel Distance (scope_fog_travel)</text>
 	</string>
 
+	<string id="ui_mm_modded_exes_particle_update_mod">
+		<text>Particle update rate (1 - 30hz, 0.5 - 60hz, etc) (particle_update_mod)</text>
+	</string>
+
 	<string id="ui_mm_modded_exes_crash_save">
 		<text>Crash Saves Enable (crash_save)</text>
 	</string>

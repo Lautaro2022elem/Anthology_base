@@ -2,255 +2,255 @@
 <string_table>
     
 	<string id="st_gar_main_quest_lekarstvo_all_name">
-		<text>Антидот</text>
+		<text>Antidote</text>
 	</string>
 	<string id="st_gar_main_quest_lekarstvo_all_descr">
-		<text>Мощный экспериментальный антидот, способный побороть отравление крайне агрессивными химическими соединениями.</text>
+		<text>A powerful experimental antidote capable of defeating poisoning by highly corrosive chemical compounds.</text>
 	</string>
 	
 	<string id="st_gar_b47_digger_pda_name">
-		<text>КПК Диггера</text>
+		<text>PDA Digger</text>
 	</string>
 	<string id="st_gar_b47_digger_pda_descr">
-		<text>КПК погибшего диггера. Хранимая в нем информация может быть довольно ценной.</text>
+		<text>The PDA of a dead Digger. The information stored on it can be quite valuable.</text>
 	</string>
 
 	<string id="st_labx5_b10_cfo_codekey">
-		<text>Дверной ключ</text>
+		<text>Doorkey</text>
 	</string>
 	<string id="st_labx5_b10_cfo_codekey_descr">
-		<text>Дверной ключ от кладовой комнаты со схронами группировки Монолит.</text>
+		<text>Door key from the hiding place of the Monolith.</text>
 	</string>
 	<string id="st_bar_b10_cfo_oszillograf_name">
-		<text>Осциллограф С1-65А</text>
+		<text>C1-65A Oscilloscope</text>
 	</string>
 	<string id="st_bar_b10_cfo_oszillograf_descr">
-		<text>Осциллограф универсальный С1 - 65А предназначен для исследования формы электрических сигналов путём визуального наблюдения и измерения их амплитудных  и временных параметров в цеховых, лабораторных и полевых условиях эксплуатации. Осциллограф удовлетворяет требованиям ГОСТ 22261-76 и 9810 - 69. По точности воспроизведения формы сигнала, точности измерения временных интервалов и амплитуд осциллограф С1 - 65А относится к II классу гост 9810 - 69.</text>
+		<text>Universal oscilloscope C1-65A is designed for examination of the form of electrical signals by visual observation and measurement of their amplitude and time parameters in the shop, laboratory and field conditions of operation. The oscilloscope meets the requirements of GOST 22261-76 and 9810 - 69. Accuracy of waveform reproduction, time interval and amplitude measurements, the oscilloscope C1 - 65A belongs to the II class of GOST 9810 - 69.</text>
 	</string>
     <string id="st_labx5_quest_document_1">
-		<text>Бумаги с записями</text>
+		<text>Recorded papers</text>
 	</string>
 	<string id="st_labx5_quest_document_1_descr">
-		<text>Первая часть документов военных по их закрытому проекту, разрабатываемом в лаборатории Х5. Много непонятных терминов, математических и химических формул. </text>
+		<text>The first part of the military records are from their closed design, developed in the X5 laboratory. Lots of obscure terms, mathematical and chemical formulas. </text>
 	</string>
 	<string id="st_labx5_quest_document_2">
-		<text>Бумаги с записями</text>
+		<text>Recorded papers.</text>
 	</string>
 	<string id="st_labx5_quest_document_2_descr">
-		<text>Вторая часть документов военных по их закрытому проекту, разрабатываемом в лаборатории Х5. Чертежи каких-то приборов непонятных, много формул и цифр.</text>
+		<text>Second part of military documents on their closed project being developed at lab X5. Blueprints of some obscure devices, lots of formulas and numbers.</text>
 	</string>
 	<string id="st_labx5_quest_document_3">
-		<text>Бумаги с записями</text>
+		<text>Papers with records.</text>
 	</string>
 	<string id="st_labx5_quest_document_3_descr">
-		<text>Третья часть документов военных по их закрытому проекту, разрабатываемом в лаборатории Х5. Частично обгорели. Но прочесть можно.</text>
+		<text>Third part of military documents of their closed project developed at X5 lab. Partially burned. But readable.</text>
 	</string>
     <string id="st_labx5_b10_cfo_codegrabber_name">
-		<text>Кодграббер</text>
+		<text>The codegrabber</text>
 	</string>
 	<string id="st_labx5_b10_cfo_codegrabber_descr">
-		<text>Специальной электронное устройство предназначенное для перехвата, распознования и дешифровки радиосигнала. Применяется для взлома различного типа электрозамков.</text>
+		<text>A special electronic device designed to intercept, recognize and decode radio signals. It's used to break into various types of electric locks.</text>
 	</string>
 
 	<string id="esc_gruz_safe_name">
-		<text>Контейнер</text>
+		<text>Container</text>
 	</string>
 	<string id="esc_gruz_safe_desc">
-		<text>Закрытый контейнер</text>
+		<text>Closed container</text>
 	</string>
 	<string id="st_esc_quest_serious_business_pda_name">
-		<text>КПК Колотуна</text>
+		<text>PDA Colotoon</text>
 	</string>
 	<string id="st_esc_quest_serious_business_pda_desc">
-		<text>Последнее сообщение на КПК:\n «Эти уроды удумали на нашей территории свои порядки наводить. Засели в доме прям напротив нашей базы. Ничего не боятся, твари! Значит так, сходи туда и поговори с ними по душам. Если с первого раза не дойдёт, то можешь свинцом проучить. И чтоб быстро, пока их главный на Свалку не слинял!».</text>
+		<text>Last message on the PDA:\n"Those bastards are out to get their kicks on our turf. They got a house right in front of our base. They ain't afraid of nothing, motherfuckers! All right, go over there and have a heart-to-heart talk with them. If they don't get it right the first time, you can lead them. And quick, before their leader goes to the junkyard!"</text>
 	</string>
 	<string id="esc_sidor_habar_name">
-		<text>Кейс с деньгами</text>
+		<text>Money case</text>
 	</string>
 	<string id="esc_sidor_habar_desc">
-		<text>Кейс с деньгами Скидана.</text>
+		<text>Skidan's money case.</text>
 	</string>
 	<string id="esc_money_merc_name">
-		<text>Сумка с деньгами</text>
+		<text>A bag of money.</text>
 	</string>
 	<string id="esc_money_merc_desc">
-		<text>Сумка с деньгами, для оплаты работы наемников</text>
+		<text>A bag of money to pay mercenaries.</text>
 	</string>
 	
 	<string id="esc_sidor_habar_key">
-		<text>Ключ</text>
+		<text>Key</text>
 	</string>
 	<string id="esc_sidor_habar_key_descr">
-		<text>Ключ от ящика в котором спрятан хабар Скидана.</text>
+		<text>The key to the box where Skidan's loot is hidden.</text>
 	</string>
 	
 	<string id="st_esc_quest_freedom_pda_name">
-		<text>КПК Яблонского</text>
+		<text>Yablonsky's PDA.</text>
 	</string>
 	<string id="st_esc_quest_freedom_pda_desc">
-		<text>«КПК ЗАБЛОКИРОВАН»</text>
+		<text>"PDA LOCKED."</text>
 	</string>	
 	<string id="st_esc_quest_freedom_pda_upd_name">
-		<text>КПК Яблонского</text>
+		<text>Yablonsky's PDA</text>
 	</string>
 	<string id="st_esc_quest_freedom_pda_upd_desc">
-		<text>Сообщение 64:\n «...омая группа в заданное время не появилась. Наш информатор сообщил об отсутствии каких-либо следов. Любой ценой необходимо пресечь попытку перемещения священной части Монолита за периметр».\n Сообщение 65:\n  «Кроме нас, за артефактом начала охоту группировка "Спектрум". Цели и задачи их не ясны, в любом случае - все, имеющие причастность к краже, должны быть уничтожены, а артефкт должен вернуться обратно в саркофаг».\n Сообщение 66:\n «Артефакт крайне опасен, пси-излучение зашкаливает. Слуги Монолита при контакте испытывают сильные психические нагрузки. Открытие контейнера обычным человеком приведёт к мгновенной смерти».\n Сообщение 67:\n «Недавно были получены координаты одного из сталкеров, укравшего часть нашего священного камня. Необходимо выдвинуться в район лаборатории Х5 в локации "Кордон" и предать врагов  Монолита смерти».</text>
+		<text>Message 64:\n"...the group did not appear at the specified time. Our informant reported no trace of it. The attempt to move the sacred part of the Monolith beyond the perimeter must be foiled at all costs."\nMessage 65:\n"In addition to us, the Spectrum faction has begun hunting for the artifact. Their aims and objectives are unclear, in any case - anyone involved in the theft must be destroyed and the artifact must be returned to the sarcophagus."\nMessage 66:\n"The artifact is extremely dangerous, the psi radiation is off the scale. Servants of the Monolith experience intense psychic strain upon contact. Opening the container by an ordinary human would result in instant death."\nMessage 67:\n"Coordinates have recently been received for a stalker who stole part of our sacred stone. You must move to the X5 lab area in the Cordon location and put the enemies of the Monolith to death."</text>
 	</string>
 	
 	
 	<string id="st_esc_quest_shvabroid_pda_name">
-		<text>КПК Шваброида</text>
+		<text>Schwabroid's PDA</text>
 	</string>
 	<string id="st_esc_quest_shvabroid_pda_desc">
-		<text>Входящее сообщение:\n «Кончайте на хрен этого свободовца и дело с концом. Только смотрите, что бы все чисто было, нам потом проблемы со Свободой не нужны».</text>
+		<text>Incoming message:\n"Get the hell out of this Libertarian and be done with it. Just make sure it's clean, we don't want any problems with Liberty later."</text>
 	</string>	
 	
 	
 	<string id="st_quest_help_nebo_radio_name">
-		<text>Радиостанция Т-169-7КДНЕ</text>
+		<text>Radio T-169-7KDNE</text>
 	</string>
 	<string id="st_quest_help_nebo_radio_desc">
-		<text>Радиостанция Т-169-7КДНЕ обеспечивает открытую и криптозащищенную радиосвязь в КВ/УКВ диапазонах радиосетей тактического звена управления в жестких условиях эксплуатации, в т.ч. и с применением ППРЧ. Производится на Ярославским радиозаводе.</text>
+		<text>The T-169-7KDNE radio ensures open and crypto-protected radio communication in the HF/UHF bands of the tactical radio network under severe operational conditions, including the use of frequency hopping. It is manufactured by Yaroslavl Radio Plant.</text>
 	</string>
 	
 	
 	<string id="st_esc_watchmaker_key_door">
-		<text>Ключ</text>
+		<text>Key</text>
 	</string>
 	<string id="st_esc_watchmaker_key_door_descr">
-		<text>Ключ от дома Часовщика</text>
+		<text>Sentry's house key</text>
 	</string>
 	
 	
 	<string id="st_esc_quest_army_doc_name">
-		<text>ПДА прапорщика</text>
+		<text>Warrant Officer PDA</text>
 	</string>
 	<string id="st_esc_quest_army_doc_desc">
-		<text>ПДА прапорщика, содержащий ценную для полковника Колязина информацию, ради которой он способен послать кого угодно на смерть. Данные зашифрованы.</text>
+		<text>Ensign's PDA containing information valuable to Colonel Kolyazin, for which he could send anyone to his death. The data is encrypted.</text>
 	</string>
 	<string id="st_esc_quest_chimera_repilent_name">
-		<text>Репиллент для химеры</text>
+		<text>Repellent for Chimera</text>
 	</string>
 	<string id="st_esc_quest_chimera_repilent_desc">
-		<text>Репиллент для химеры. Изготовлен из мочи самца химеры. Отпугивает самок, но вызывает ярость у самцов.</text>
+		<text>Repellent for the chimera. Made from the urine of a male chimera. Discourages females but infuriates males.</text>
 	</string>
 	<string id="st_esc_quest_army_brelok_name">
-		<text>Армейские жетоны дезертира</text>
+		<text>Deserter dog tags</text>
 	</string>
 	<string id="st_esc_quest_army_brelok_desc">
-		<text>Армейские жетоны дезертира - доказательство смерти. Стандартные данные: фамилия, имя, дата рождения, группа крови и резус-фактор.</text>
+		<text>Deserter dog tags are proof of death. Standard information: name, date of birth, blood type and Rh factor.</text>
 	</string>
 	
 	<string id="st_bar_a2_juk_component_1_name">
-		<text>Компонент №1</text>
+		<text>Component 1</text>
 	</string>
 	<string id="st_bar_a2_juk_component_1_desc">
-		<text>Специальная микросхема необходимая для создания прослушивающего устройства.</text>
+		<text>Special microcircuitry required to build the listening device.</text>
 	</string>
 	<string id="st_bar_a2_juk_component_2_name">
-		<text>Компонент №2</text>
+		<text>Component number 2</text>
 	</string>
 	<string id="st_bar_a2_juk_component_2_desc">
-		<text>Конденсаторы определенной маркировки необходимые для создания прослушивающего устройства.</text>
+		<text>Capacitors with specific markings, required for building the listening device.</text>
 	</string>
 	<string id="st_bar_a2_juk_component_3_name">
-		<text>Компонент №3</text>
+		<text>Component #3</text>
 	</string>
 	<string id="st_bar_a2_juk_component_3_desc">
-		<text>Катушки индуктивности определенной маркировки необходимые для создания прослушивающего устройства.</text>
+		<text>Inductance coils of certain marking, necessary for creating the Listening Device.</text>
 	</string>	
 	<string id="st_bar_a2_spec_juk_item_1_name">
-		<text>Прослушивающее устройcтво</text>
+		<text>Listening device</text>
 	</string>
 	<string id="st_bar_a2_spec_juk_item_1_desc">
-		<text>Самодельный жучек, необходимый для скрытой прослушки помещений. Имеет возможность записи и передачи собранной информации на специальный носитель. Рабочий диапазон под вопросом.</text>
+		<text>A home-made bugging device, useful for covert eavesdropping. The device has the ability to record and transmit collected information to a special medium. The operating range is questionable.</text>
 	</string>
 	<string id="st_bar_a2_spec_juk_item_2_name">
-		<text>Прослушивающее устройcтво</text>
+		<text>Spy Bugging device</text>
 	</string>
 	<string id="st_bar_a2_spec_juk_item_2_desc">
-		<text>Самодельный жучек, необходимый для скрытой прослушки помещений. Имеет возможность записи и передачи собранной информации на специальный носитель. Рабочий диапазон под вопросом.</text>
+		<text>Improvised bugging device, useful for covert eavesdropping. Capable of recording and transmitting the collected data to a dedicated medium. The working range is questionable.</text>
 	</string>
 	<string id="st_bar_a2_spec_juk_device_title">
-		<text>Паяльная станция Lukey-853D</text>
+		<text>Lukey-853D soldering station</text>
 	</string>
 	<string id="st_bar_a2_spec_juk_device_descr">
-		<text>Преимущества Lukey-853D : современный дизайн, компактные размеры, антистатическое исполнение для защиты печатной платы от статического электричества. Встроенный микропроцессор обеспечивает отображение и контроль температуры, быстрое повышение температуры и точность установки. Данные преимущества отличают бессвинцовый демонтаж и пайку, поэтому можно проводить демонтаж и пайку таких чувствительных к воздействию температуры компонентов, выполненных в корпусах SOIC, PLCC, QFP, BGA. Комплектация: Насадки, зажим для сборки и разборки насадок, держатель, инструкция по эксплуатации, паяльник, держатель для паяльника, шнур питания, ручка для тестирования.</text>
+		<text>Advantages of Lukey-853D : modern design, compact size, antistatic PCB protection against static electricity. The built-in microprocessor controls temperature display and control, rapid temperature rise and precise setting. These advantages are characterized by lead free soldering and disassembly, so it is possible to carry out disassembly and soldering of such temperature sensitive components as SOIC, PLCC, QFP, BGA packages. Accessories: soldering tips, clip for assembly and disassembly of tips, holder, user manual, soldering iron, holder for soldering iron, power cord, test pen.</text>
 	</string>
 	<string id="st_bar_b10_cfo_spec_razia_name">
-		<text>Радиоприемник Р-250М2 Кит-М2</text>
+		<text>R-250M2 Kit-M2 radio receiver</text>
 	</string>
 	<string id="st_bar_b10_cfo_spec_razia_descr">
-		<text>"Р-250/М/М2" ("Р-670/М") - легендарный, любимый многими радиолюбителями, коротковолновый, ламповый, магистральный, настольный армейский радиоприемник. Выпускался c 1948 по 1981 г. в нескольких модификациях: "Р-250/М/М2" ("Кит/М/М2") - для сухопутных войск; "Р-670/М" ("Русалка/М") - для войск военно-морского флота. У приемника точная зеркальная оптическая фотошкала настройки, термостатированный кварцевый стабилизатор частоты гетеродина. Число поддиапазонов: 12, шириной по 2 MHz каждый. Переключатель диапазонов - механический, барабанного типа.</text>
+		<text>R-250/M/M2 (R-670/M) is a legendary shortwave, tube-based, mainline army radio receiver, loved by many radio amateurs. The radio was produced from 1948 to 1981 in several modifications: R-250/M/M2 (Kit/M/M2) for the Army; R-670/M (Rusalka/M) for the Navy. The receiver has an accurate mirrored optical tuning photo scale, thermostatic quartz heterodyne frequency stabiliser. Number of sub-bands: 12, 2 MHz each. Band selector switch is mechanical, drum-type.</text>
 	</string>
 	
 	<string id="st_bar_key_door">
-		<text>Ключ</text>
+		<text>Key</text>
 	</string>
 	<string id="st_bar_key_door_descr">
-		<text>Ключ от двери ведущей к Лаборатории "х14"</text>
+		<text>Key to door leading to x14 Laboratory.</text>
 	</string>
 	
 	<string id="labx14_access_card">
-		<text>Старая магнитная ключ-карта</text>
+		<text>Old magnetic key card</text>
 	</string>
 	<string id="labx14_access_card_descr">
-		<text>Магнитная ключ-карта, для допуска к заппаной подземной жд станции, код «0519».</text>
+		<text>Magnetic key card, for access to locked underground railway station, code "0519".</text>
 	</string>
 	
 	
 	<string id="city_safe_container_name">
-		<text>Контейнер</text>
+		<text>Container</text>
 	</string>
 	<string id="city_safe_container_desc">
-		<text>Контейнер с радиодеталями</text>
+		<text>Container with radio parts.</text>
 	</string>
 	
 	<string id="city_bomb_c4_name">
-		<text>Взрывчатка "С-4"</text>
+		<text>C-4 explosive</text>
 	</string>
 	<string id="city_bomb_c4_desc">
-		<text>Пластичное взрывчатое вещество военного назначения. Используется для различных разрушительных задач, также широко используется в качестве оружия для поражения живой силы и техники.</text>
+		<text>Plastic explosive for military use. It is used for a variety of destructive tasks, also widely used as a weapon for the destruction of manpower and equipment.</text>
 	</string>
 	
 	<string id="city_money_sp_name">
-		<text>Кейс с деньгами.</text>
+		<text>Cash case.</text>
 	</string>
 	<string id="city_money_sp_desc">
-		<text>Кейс набит под завязку купюрами в 500 евро. Примерно 3 миллиона евро здесь, может, чуть больше. Весит всё это счастье вместе с кейсом 12 килограммов.</text>
+		<text>The case is filled to the brim with 500 euro notes. Approximately 3 million euros here, maybe a little more. All this happiness together with the case weighs 12 kilos.</text>
 	</string>
 	
 	<string id="st_labx14_csky_pda_name">
-		<text>ПДА "Сиплого"</text>
+		<text>Siploch's PDA</text>
 	</string>
 	<string id="st_labx14_csky_pda_descr">
-		<text>Последнее сообщение: ...такая здесь тишина, гробовая. Даже ни шороха не слышно, кажется уже, что я начал двигаться бесшумно, в другой момент кажется, что рядом кто-то идёт. Звук странно отражается от этих кафельных стен.
-Не знаю, когда я выйду наверх и выйду ли я отсюда. Еще есть надежда…
-Сегодня я опять прошел по кругу, по маршруту, которому ходил 3 дня: лестница, тоннель, лестница, тоннель, лестница … как отсюда выйти? Кого я спрашиваю? Нет ответа. Шустрый … я даже не сказал куда лезу. Как смешно сейчас думать о таких секретах, только Зону смешить. Они даже не знаю где меня искать.
-Сейчас съем консерву и немного водочки, чтобы заснуть. В такой темноте и тишине они мне кажутся совсем другими на вкус.
-Сегодня наткнулся на какие-то клети и кажется, что пол был в чем-то вымазан. Откуда-то везде в углах горки отполированных белых костей. Не хочется думать, что они человеческие. А если нет, то чьи? И кто их так аккуратно складывал шалашиком?
-Я их не вижу, но постоянно об них спотыкаюсь, и они гулко разлетаются в стороны по полу.
-Фонарик сел два дня назад. 
-Я уже хорошо вижу в темноте или мне так кажется. Иногда вижу цветные блики и слышу какие-то голоса. Иду к ним … но там ничего. Мгла … сплошная мгла. Я должен пройти свой путь во мгле и выйти на свет Божий. Прощаю и прошу прощения.
+		<text>Last message: ...it's so quiet here. Not even a rustle can be heard, it feels like I've already started moving silently, at other times it feels like someone is walking nearby. The sound strangely echoes off these tiled walls.
+I don't know when I'll get out upstairs or if I'll get out of here. There is still hope...
+Today I've walked in circles again, the route I've been taking for 3 days: stairs, tunnel, stairs, tunnel, stairs ... how do I get out of here? Who am I asking? No answer. Quick... I didn't even say where I was going. It's ridiculous to think of such secrets now, only to make the Zone laugh. They don't even know where to find me.
+Now I'll have a tin and some vodka to help me sleep. In this darkness and silence, they taste different to me.
+Stumbled across some cages today and the floor seems to have been drenched in something. There are slides of polished white bones everywhere in the corners. I hate to think they are human. And if they weren't, whose were they? And who had stacked them so neatly in a tent?
+I can't see them, but I keep tripping over them, and they rumble to and fro across the floor.
+The torch went out two days ago. 
+I can see well in the dark now, or so it seems to me. Sometimes I see coloured highlights and hear some voices. I go towards them ... but there's nothing there. The darkness ... it's all darkness. I must walk my way in the darkness and come out into the light of God. I forgive and ask forgiveness.
 </text>
 	</string>
 	
 	
 	<string id="st_labx14_doc_1_info_name">
-		<text>Отчет №1542</text>
+		<text>Report No. 1542</text>
 	</string>
 	<string id="st_labx14_doc_1_info_descr">
-		<text>СОВЕРШЕННО СЕКРЕТНО. \nПосле ежедневных введений внутриполостных инъекций антибиотиков широкого спектра подопытные не проявили положительной динамики. Разложение тканей продолжается равномерно по всему телу; у подопытных всё так же подавлен речевой центр, они произносят одну-две фразы; обучение и дрессировка не дали видимых успехов – подопытные всё так же не могут связать подачу еды и нажатие на педаль; моторные функции сохраняются неизменными; агрессивность возрастает если инфицированных подопытных долго не кормить, тогда они начинают атаковать друг друга, но каннибализм зафиксирован не был.
-Вывод: инфекция (если таковая имеет место быть) не реагирует на антибиотики, инфицированные ведут себя как прежде, сохраняя все известные основные функции, которые они сохранили после преодоления стадии «преображения». 
-\n 26 апреля.
+		<text>TOTALLY SECRET.\nAfter daily intracavitary injections of broad-spectrum antibiotics, the subjects showed no positive dynamics. Tissue decomposition continued evenly throughout the body; subjects still had suppressed speech centre, they uttered one or two phrases; training and education had no apparent success - subjects still could not associate feeding with pressing the pedal; motor functions remained unchanged; aggression increased if infected subjects did not feed for long periods, then they began to attack each other, but cannibalism was not recorded.
+Conclusion: the infection (if any) does not respond to antibiotics, the infected behave as before, retaining all known basic functions that they have retained after overcoming the "transformation" stage. 
+\n26 April.
 </text>
 	</string>
 	
 	<string id="labx14_doc_2_info_name">
-		<text>Отчет №1556</text>
+		<text>Report #1556</text>
 	</string>
 	<string id="labx14_doc_2_info_descr">
-		<text>СОВЕРШЕННО СЕКРЕТНО. \nВ течение двух недель кормление инфицированных проводилось согласно утвержденному урезанному расписанию с целью определить период наступления критического истощения пораженного организма и попытаться установить связь между комплекцией тела и временем, когда истощение достигнет критического и фатального уровня. Через несколько дней после начала эксперимента пораженные индивиды стали проявлять агрессивное поведение. Попытки выломать сдерживающие решетки участились. Примечательно, что даже без регулярного питания физическая сила у инфицированных не иссякала. Создалось впечатление, что она даже несколько возрастала, так как им удалось расшатать несколько прутьев решетки. После кормления индивиды заметно успокаивались.  Чем дольше индивиды голодали, тем отчаянней они пытались выбраться за её пределы. По вопросу укрепления изолятора направлен запрос в соответствующую службу. Промежуточный отчет и выводы смотрите в приложении к документу. Наблюдения продолжаются. \n 25 мая.</text>
+		<text>\n.\nFor two weeks the feeding of infected persons was carried out according to an approved truncated schedule, in order to determine the period of onset of critical exhaustion in the affected organism and to try to establish a relation between body composition and the time when exhaustion would reach a critical and fatal level. A few days into the experiment, the affected individuals began to exhibit aggressive behaviour. Attempts to break the restraining bars became more frequent. Remarkably, even without regular nourishment, the physical strength of the infected did not wane. It even seemed to increase, as they managed to loosen several bars of the bars. After feeding, the individuals calmed down considerably.  The longer the individuals starved, the more desperately they tried to get out. An enquiry has been sent to the relevant service regarding the reinforcement of the isolator. See attached for an interim report and conclusions. Observations are continuing.\n25 May.</text>
 	</string>
 	
 </string_table>

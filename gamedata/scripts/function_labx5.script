@@ -21,7 +21,7 @@ end
 function OnActorSpawned()
 	if level.name() == "x5" then
 		if not has_alife_info("labx5_mod_npcs_spawner") then
-			SItem("labx5_a2_borland", vector():set(-8.0917568206787,-0.0090614557266235,0.14233456552029), 576, 9657)	
+			SItem("labx5_a2_borland", vector():set(-8.0917568206787,-0.0090614557266235,0.14233456552029), 576, 9429)	
 			give_info("labx5_mod_npcs_spawner")
 		end     
 	end

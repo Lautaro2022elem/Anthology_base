@@ -1,5 +1,8 @@
 [logic]
-active = sr_idle@turn_lamps_off
+active = sr_idle@turn_lamps_off_cop_start
+
+[sr_idle@turn_lamps_off_cop_start]
+on_info = {+cop_start} sr_idle@turn_lamps_off
 
 [sr_idle@turn_lamps_off]
 on_info = sr_idle@prestart %=run_postprocess(black:3009:true) =disable_ui =turn_off_underpass_lamps%
