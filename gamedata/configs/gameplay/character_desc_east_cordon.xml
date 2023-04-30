@@ -129,7 +129,7 @@
 		<community>stalker</community> <terrain_sect>stalker_terrain</terrain_sect>
 		<snd_config>characters_voice\human\stalker_2\</snd_config>
 		<rank>30</rank>
-		<money min="1000000" max="1000000" infinitive="1"/>
+		<money min="1000" max="2000" infinitive="0"/>
 		<reputation>0</reputation>
 		<visual>actors\stalker_exclusive\esc_mechanic_furgon</visual>
 		<supplies>
@@ -165,7 +165,7 @@
 		<community>stalker</community> <terrain_sect>stalker_terrain</terrain_sect>
 		<snd_config>characters_voice\human\stalker_2\</snd_config>
 		<rank>30</rank>
-		<money min="1000000" max="1000000" infinitive="1"/>
+		<money min="1000" max="2000" infinitive="0"/>
 		<reputation>0</reputation>
 		<visual>actors\stalker_neutral\stalker_neutral_1</visual>
 		<supplies>
@@ -290,7 +290,7 @@
 	
 	
 	<specific_character id="esc_risovalshik" team_default = "1">
-		<name>Рисовальщик</name>
+		<name>Draftsman</name>
 		<icon>ui_inGame2_risovalshik</icon>
 		<map_icon x="1" y="0"></map_icon>
 		<bio>Опытный сталкер. Детальная информация отсутствует.</bio>

@@ -1,511 +1,517 @@
 <?xml version="1.0" encoding="windows-1251"?>
 <string_table>
 	<string id="topi_quest_medic_container_name">
-		<text>Чемодан для экстренной помощи ULM CASE 1</text>
+		<text>ULM CASE 1</text>
 	</string>
     <string id="topi_quest_medic_container_desc">
-		<text>Чемодан для экстренной помощи ULM CASE I Circulation III (WM 5302, в комплектации). Алюминиевый чемодан, c пластиковым покрытием внутри, размеры 52,6х40х17 см, вес 7 кг, отсеки для комплектующих, 48 ячеек для ампул. Комплектация: Тонометр, Стетоскоп, Фонарик для контроля зрачка, Неврологический молоток, Жгут, Пинцет 145х2 мм, Пинцет 145х3,2 мм, Ножницы, Многофункциональные ножницы, Шпатель, Изогнутый зажим, Одноразовые скальпели, Система для инфузий с манометром.</text>
+		<text>ULM CASE I Circulation III emergency case (WM 5302, included). Aluminum case with plastic interior, dimensions 52.6 x 40 x 17 cm, weight 7 kg, stowage compartments for accessories, 48 ampoule compartments. Contents: Tonometer, Stethoscope, Flashlight for pupil control, Neurological mallet, Tourniquet, Forceps 145x2 mm, Forceps 145x3.2 mm, Scissors, Multifunction scissors, Spatula, Curved clamp, Disposable scalpels, Infusion system with manometer.</text>
 	</string>
 	<string id="topi_spec_anomaly_scanner_1_name">
-		<text>Сканер аномалий</text>
+		<text>Anomaly scanner</text>
 	</string>
     <string id="topi_spec_anomaly_scanner_1_descr">
-		<text>Специальный сканер артефактов разработанный группой ученых с Янтаря. Незаменимая вещь для облегченного поиска артефактов, помогающая установить их наличие в аномалии того или иного вида. Существуют различные модификации данного сканера с индивидуальными параметрами работы. К примеру — сканер кислотных аномалий, гравитационных, электростатических и т.д.</text>
+		<text>A special artifact scanner developed by the Amber team. An indispensable thing to facilitate the search for artifacts, helping to determine their presence in the anomaly of one kind or another. There are different modifications of this scanner with individual parameters of work. For example - the scanner of acid anomalies, gravitational, electrostatic, etc.</text>
 	</string>
 	<string id="topi_example_taynik_item_name">
-		<text>Рюкзак Армейский</text>
+		<text>Army Backpack</text>
 	</string>
     <string id="topi_example_taynik_item_descr">
-		<text>Тактический рюкзак, пошитый из плотной кордуры с водоотталкивающей пропиткой и с полиуретановым покрытием. Эта модель рюкзака, разрабатывалась в своё время для спецслужб армии США. Он компактен, но обладает хорошей вместимостью.</text>
+		<text>Tactical backpack made of high-density cordura with water-repellent impregnation and polyurethane coating. This backpack was developed at one time for the US Army special forces. It is compact but has a good storage capacity.</text>
 	</string>
     <string id="st_topi_main_quest_document_1_name">
-		<text>Записи ученого</text>
+		<text>The notes of a scientist</text>
 	</string>
 	<string id="st_topi_main_quest_document_1_descr">
-		<text>Записи погибшего ученого. «...Ох и зря же мы за это дело взялись. Очень зря. Понадеялись на честность партнеров. Умные ученые олухи. Развели нас как детей за три конфетки. Считай, что сами себе приговор вынесли и могилку вырыли. Стрелок этот все-равно не жилец. Его убьют, рано или поздно, независимо от того, доберется ли он к барьеру или нет. Только мы об этом не узнаем...»</text>
+		<text>The deceased scientist's notes. "...What a waste of a job we've done. "A great waste. We relied on the honesty of the partners. Clever scientist fools. They tricked us like children for three lollipops. Consider yourself condemned and dug your own grave. The shooter's a dead man anyway. He'll be killed sooner or later, whether he makes it to the barrier or not. Only we won't know about it..."</text>
 	</string>    		
 	<string id="topi_b9_anubis_fugas_components_1_name">
-		<text>Компонент № 1</text>
+		<text>Component #1</text>
 	</string>
     <string id="topi_b9_anubis_fugas_components_1_desc">
-		<text>Первый компонент, который необходим для создания фугасного взрывного устройства.</text>
+		<text>The first component, which is needed to create a high-explosive device.</text>
 	</string>
 	<string id="topi_b9_anubis_fugas_components_2_name">
-		<text>Компонент № 2</text>
+		<text>Component two.</text>
 	</string>
     <string id="topi_b9_anubis_fugas_components_2_desc">
-		<text>Второй компонент, который необходим для создания фугасного взрывного устройства.</text>
+		<text>Second component, which is required to create a high-explosive device.</text>
 	</string>
 	<string id="topi_b9_anubis_fugas_components_3_name">
-		<text>Компонент № 3</text>
+		<text>Component No. 3</text>
 	</string>
     <string id="topi_b9_anubis_fugas_components_3_desc">
-		<text>Третий компонент, который необходим для создания фугасного взрывного устройства.</text>
+		<text>The third component, which is required for the manufacture of an incendiary explosive device.</text>
 	</string>
 	<string id="topi_b9_anubis_fugas_name">
-		<text>Фугасное взрывное устройство.</text>
+		<text>A high-explosive device.</text>
 	</string>
     <string id="topi_b9_anubis_fugas_desc">
-		<text>Собранное из противопехотных мин, фугасное взрывное устройство с заданными параметрами времени взведения и длины датчика цели.</text>
+		<text>Assembled from anti-personnel mines, a high-explosive device with pre-set detonation time and target sensor length.</text>
 	</string>
 	<string id="st_topi_anubis_fugascreate_device_name">
-		<text>Оборудование для крафта взрывного устройства.</text>
+		<text>Explosive crafting equipment.</text>
 	</string>
     <string id="st_topi_anubis_fugascreate_device_descr">
-		<text>Специальный набор, необходимый для безопасного разбора противопехотных мин и последующего создания фугасной бомбы на их основе.</text>
+		<text>A special kit for the safe dismantling of land mines and the subsequent construction of an high-explosive bomb based on them.</text>
 	</string>
 	<string id="topi_a6_trader_documents_name">
-		<text>Папка с документами.</text>
+		<text>Documents folder.</text>
 	</string>
     <string id="topi_a6_trader_documents_desc">
-		<text>Документы, переданные вам местным торговцем. Содержат в себе сведения, которые заинтересуют группы бандитов на Свалке и других подконтрольных им территориях. Конкретное содержание неизвестно.</text>
+		<text>Documents given to you by a local merchant. Contains items of interest to bandit groups in the Junkyard and other areas under their control. Specific content unknown.</text>
 	</string>
 	<string id="st_topi_mechanic_proto_device_1_name">
-		<text>Устройсто для сборки противогазов.</text>
+		<text>Gas mask assembly device.</text>
 	</string>
     <string id="st_topi_mechanic_proto_device_1_descr">
-		<text>Специальное портативное устройство для подготовки противогазов к полевым испытаниям с различными фильтрами.</text>
+		<text>A special handheld device to prepare gas masks for field tests with various filters.</text>
 	</string>
 	<string id="st_topi_mechanic_proto_device_2_name">
-		<text>Система проверки противогазов мод. 8020М.</text>
+		<text>Gas mask checking system mod. 8020М.</text>
 	</string>
     <string id="st_topi_mechanic_proto_device_2_descr">
-		<text>Тестовая система оценки защиты противогаза от ХБРЯ (химических, биологических, радиологических и ядерных) воздействий является портативным прибором, который тестирует подгонку противогаза, защищающего от ХБРЯ воздействий на отдельно взятом солдате. Результаты испытаний отображаются на экране в виде числового коэффициента подгонки. Тестер противогазов для их подгонки не требует применения аэрозольных тестовых камер или камер со слезоточивым газом для оценки годности маски. Он может применяться практически везде — в местах выдачи противогазов, на тренировочных объектах и даже в полевых условиях.</text>
+		<text>The CBRN (chemical, biological, radiological, and nuclear) gas mask test system is a portable unit which tests the suitability of a CBRN protective mask on a single soldier. The test results are displayed on the screen as a numerical fitting factor. The Gas Mask Tester does not require the use of aerosol or tear gas chambers to assess the suitability of the mask. It can be used almost anywhere - at gas mask distribution points, at training facilities and even in the field.</text>
 	</string>
 	
 	<string id="topi_b1_leader_radiotion_item_name">
-		<text>Дозиметр-радиометр «МКС-07Н (ДКГ-07БС)».</text>
+		<text>Dosimeter-radiometer "MKS-07H (DKG-07BS)".</text>
 	</string>
     <string id="topi_b1_leader_radiotion_item_desc">
-		<text>Дозиметр применяется для оперативного дозиметрического контроля радиационной обстановки при составлении радиационных карт местности и исследовании радиационных аномалий, для проверки степени загрязнения одежды, техники, зданий, сооружений и др. Может применяться в качестве носимого (МКС-07Н) или в качестве бортового и стационарного средства измерения (ДКГ-07БС).</text>
+		<text>The dosimeter is used for operational dosimetric control of radiation environment while preparing radiation maps of the area and study of radiation anomalies, to check the degree of contamination of clothing, equipment, buildings, structures, etc. It can be used as a portable (MKS-07H) or on-board and stationary measuring instrument (DKG-07BS).</text>
 	</string>
 	<string id="topi_b1_leader_radiotion_doc_name">
-		<text>Результаты замеров.</text>
+		<text>Measurement results.</text>
 	</string>
     <string id="topi_b1_leader_radiotion_doc_desc">
-		<text>Носитель с результатами замеров, произведенных дозиметром.</text>
+		<text>A carrier with the results of measurements taken by the dosimeter.</text>
 	</string>
 	<string id="topi_barsuk_taynik_item_name">
-		<text>РЛС "Кредо-1Е".</text>
+		<text>Radar Kredo-1E.</text>
 	</string>
     <string id="topi_barsuk_taynik_item_descr">
-		<text>Унифицированная радиолокационная станция разведки движущихся целей «Кредо-1Е» предназначена для разведки движущихся наземных целей (человек, группа людей, технические средства), а также для обслуживания стрельбы артиллерии в любое время суток и года, в том числе и при отсутствии оптической видимости (в тумане, при запылении или задымлении атмосферы).</text>
+		<text>Unified radar station for reconnaissance of moving targets Kredo-1E is designed for reconnaissance of ground targets (individuals, groups of individuals, equipment), as well as for maintenance of artillery fire at any time of day and night, including in the absence of optical visibility (fog, dust or smoke in the atmosphere).</text>
 	</string>
 	<string id="topi_barsuk_taynik_akum_1_name">
-		<text>Аккумуляторная батарея.</text>
+		<text>Battery.</text>
 	</string>
     <string id="topi_barsuk_taynik_akum_1_descr">
-		<text>Одна из составных частей радиолокационного комплекса.</text>
+		<text>One of the component parts of radar complex.</text>
 	</string>
 	<string id="topi_barsuk_taynik_1_kabel_name">
-		<text>Соединительные кабели.</text>
+		<text>Connection cables.</text>
 	</string>
     <string id="topi_barsuk_taynik_1_kabel_descr">
-		<text>Одни из составных частей радиолокационного комплекса.</text>
+		<text>One part of the radar complex.</text>
 	</string>
 	<string id="topi_barsuk_taynik_1_naved_name">
-		<text>Устройство наведения.</text>
+		<text>Pointing device.</text>
 	</string>
     <string id="topi_barsuk_taynik_1_naved_descr">
-		<text>Одно из составных частей радиолокационного комплекса.</text>
+		<text>One part of the radar complex.</text>
 	</string>
 	<string id="topi_barsuk_taynik_1_pered_name">
-		<text>Устройство приемопередатчика.</text>
+		<text>A transceiver unit.</text>
 	</string>
     <string id="topi_barsuk_taynik_1_pered_descr">
-		<text>Одно из составных частей радиолокационного комплекса.</text>
+		<text>One part of a radar complex.</text>
 	</string>
 	<string id="topi_barsuk_taynik_1_blok_name">
-		<text>Устройство блока первичной обработки.</text>
+		<text>One part of the radar complex.</text>
 	</string>
     <string id="topi_barsuk_taynik_1_blok_descr">
-		<text>Одно из составных частей радиолокационного комплекса.</text>
+		<text>One of the components of the radar complex.</text>
 	</string>
 	<string id="topi_barsuk_taynik_1_comp_name">
-		<text>Устройство пульта управления.</text>
+		<text>One part of radar complex.</text>
 	</string>
     <string id="topi_barsuk_taynik_1_comp_descr">
-		<text>Одно из составных частей радиолокационного комплекса.</text>
+		<text>One of the components of radar complex.</text>
 	</string>
 	<string id="topi_mechanic_proto_filtr_1_name">
-		<text>Фильтр ВК 320.</text>
+		<text>VK 320 filter.</text>
 	</string>
     <string id="topi_mechanic_proto_filtr_1_descr">
-		<text>Фильтр ВК 320 марки А1В1Е1К1Р3 предназначен для очистки вдыхаемого воздуха от органических паров с температурой кипения выше 65°C (циклогексан, бензол, ксилол, толуол, бензин, керосин, галоидорганические соединения (хлорпикрин, хлорацетофенон и т.п.), нитросоединения бензола и его гомологов, ацетонитрил, анилин, кетоны, тетраэтилсвинец и т.п.); неорганических газов и паров (циан водорода, гидрид серы, хлор, фтор, бром, арсины, фосфористый водород и т.п.), за исключением оксида углерода; кислых газов и паров (диоксид серы, хлористый водород, фтористый водород, бромистый водород, пары серной кислоты, пары уксусной кислоты, пары муравьиной кислоты, пары азотной кислоты, пары фосфорной кислоты и т.п.); аммиака и его органических производных; специфических опасных химических веществ (хлорциан, зарин, зоман, фосген и т.п.); аэрозолей в составе фильтрующего противогаза при непрерывной или периодической эксплуатации, а также для экстренного выхода из аварийной зоны.</text>
+		<text>Filter 320 А1is designed to purify inhaled air from organic vapours with a boiling point above 65°C (cyclohexane, benzene, xylene, toluene, petrol, paraffin, haloid organic compounds (chloropicrin, chloroacetophenone, etc.), nitro compounds of benzene and benzene. The following are some of the most important gases and vapours (hydrogen cyane, sulphur hydride, chlorine, fluorine, bromine, arsines, hydrogen phosphate, etc.), except for carbon monoxide, carbon dioxide and hydrogen sulphide. ), excluding carbon monoxide; acid gases and vapours (sulphur dioxide, hydrogen chloride, hydrogen fluoride, hydrogen bromide, sulphuric acid vapours, acetic acid, formic acid, nitric acid, phosphoric acid, etc. The filter is designed to filter out all hazardous chemical substances, such as ammonia and its organic derivatives, specific hazardous chemicals (chlorcian, sarin, soman, phosgene etc.), and aerosols in filter gas masks in continuous or periodic operation, as well as for emergency escape from the emergency zone.</text>
 	</string>
 	<string id="topi_mechanic_proto_filtr_2_name">
-		<text>Фильтр ВК 600.</text>
+		<text>Filter BK 600.</text>
 	</string>
     <string id="topi_mechanic_proto_filtr_2_descr">
-		<text>Фильтр ВК 600 А2В2Е2К2Р3 предназначен для очистки вдыхаемого воздуха от органических газов и паров с температурой кипения выше 65°С (циклогексан, бензол, ксилол, толуол, бензин, керосин, галоидорганические соединения (хлорпикрин, хлорацетофенон и т.п.) нитросоединения бензола и его гомологов, ацетонитрил, анилин, кетоны, тетраэтилсвинец и т.п.); неорганических газов и паров (циан водорода, гидрид серы, хлор, фтор, бром, арсины, фосфористый водород, и т.п., за исключением оксида углерода); кислых газов и паров (диоксид серы, хлористый водород, фтористый водород, бромистый водород, пары серной кислоты, пары уксусной кислоты, пары муравьиной кислоты, пары азотной кислоты, пары фосфорной кислоты и т.п.); аммиака и его органических производных; специфических опасных химических веществ (хлорциан, зарин, зоман, фосген и т.п.); аэрозолей в составе фильтрующего противогаза при непрерывной или периодической эксплуатации, а также для экстренного выхода из аварийной зоны.</text>
+		<text>Filter 600 А2is designed to purify inhaled air from organic gases and vapours with a boiling point above 65°С (cyclohexane, benzene, xylene, toluene, petrol, paraffin, haloid organic compounds (chloropicrin, chloroacetophenone, etc.), nitro compounds of benzene and other. etc.); inorganic gases and vapours (hydrogen cyane, sulphur hydride, chlorine, fluorine, bromine, arsine, hydrogen phosphate, etc, excluding carbon monoxide); acid gases and vapours (sulphur dioxide, hydrogen chloride, hydrogen fluoride, hydrogen bromide, sulphuric acid vapours, acetic acid vapours, formic acid, nitric acid, phosphoric acid, etc. The filter is equipped with a breathing apparatus which prevents the release of dangerous chemical substances such as ammonia and its organic derivatives, specific hazardous chemicals (chlorcian, sarin, soman, phosgene etc), and aerosols in filter gas masks in continuous or periodic operation, as well as for emergency escape from the emergency zone.</text>
 	</string>
 	<string id="topi_mechanic_proto_filtr_3_name">
-		<text>Фильтр ВК 450.</text>
+		<text>VK 450 filter.</text>
 	</string>
     <string id="topi_mechanic_proto_filtr_3_descr">
-		<text>Фильтр ВК 450 предназначен для очистки вдыхаемого воздуха от органических газов и паров с температурой кипения выше 65°С (циклогексан, бензол, ксилол, толуол, бензин, керосин, галоидорганические соединения (хлорпикрин, хлорацетофенон и т.п.) нитросоединения бензола и его гомологов, ацетонитрил, анилин, кетоны, тетраэтилсвинец и т.п.); неорганических газов и паров (циан водорода, гидрид серы, хлор, фтор, бром, арсины, фосфористый водород, и т.п., за исключением оксида углерода); кислых газов и паров (диоксид серы, хлористый водород, фтористый водород, бромистый водород, пары серной кислоты, пары уксусной кислоты, пары муравьиной кислоты, пары азотной кислоты, пары фосфорной кислоты и т.п.); аммиака и его органических производных; специфических опасных химических веществ (хлорциан, зарин, зоман, фосген и т.п.); аэрозолей в составе фильтрующего противогаза при непрерывной или периодической эксплуатации, а также для экстренного выхода из аварийной зоны.</text>
+		<text>Filter 450 is designed to purify inhaled air from organic gases and vapours with a boiling point above 65°С (cyclohexane, benzene, xylene, toluene, petrol, paraffin, haloid organic compounds (chloropicrin, chloroacetophenone etc.), benzene and nitro compounds. etc.); inorganic gases and vapours (hydrogen cyane, sulphur hydride, chlorine, fluorine, bromine, arsine, hydrogen phosphate, etc, excluding carbon monoxide); acid gases and vapours (sulphur dioxide, hydrogen chloride, hydrogen fluoride, hydrogen bromide, sulphuric acid vapours, acetic acid vapours, formic acid, nitric acid, phosphoric acid, etc. ); ammonia and its organic derivatives; specific hazardous chemicals (chlorcian, sarin, soman, phosgene etc); aerosols in filter gas masks in continuous or periodic operation, as well as for emergency escape from the emergency zone.</text>
 	</string>
 	<string id="topi_mechanic_proto_filtr_4_name">
-		<text>ДПГ-3.</text>
+		<text>DPG-3.</text>
 	</string>
     <string id="topi_mechanic_proto_filtr_4_descr">
-		<text>Дополнительный патрон ДПГ-3 предназначен для гражданских противогазов ГП-7, ГП-7В и детских противогазов ПДФ-2Д, ПДФ-2Ш для расширения области их применения. Дополнительный патрон ДПГ-3 предназначен для комплектации гражданских противогазов ГП-7, ГП-7В и детских противогазов ПДФ-2Д, ПДФ-2Ш с целью расширения области их применения. Противогаз в комплекте с ДПГ-3 обеспечивает защиту от отравляющих веществ (ОВ), радиоактивной пыли (РП), биологических аэрозолей (БА) и дополнительную защиту от аварийно химически опасных веществ (АХОВ): аммиака, хлора, диметиламина, нитробензола, сероуглерода, тетраэтилсвинца, фенола, фурфурола, этилмеркаптана и др.</text>
+		<text>Additional cartridge DPG-3 is designed for civilian gas masks GP-7, GP-7V and children's gas masks PDF-2D, PDF-2Sh to extend their area of application. Additional DPG-3 cartridge is designed for use with civilian gas masks GP-7, GP-7V and children's gas masks PDF-2D, PDF-2Sh to extend their area of application. A gas mask complete with DPG-3 provides protection from toxic substances (PS), radioactive dust (RP), biological aerosols (BA) and additional protection from accidentally hazardous substances (ACh): ammonia, chlorine, dimethylamine, nitrobenzene, carbon disulfide, tetraethyl lead, phenol, furfural, ethylmercaptan, etc.</text>
 	</string>
 	<string id="topi_mechanic_proto_filtr_5_name">
-		<text>Фильтр ДОТ 460.</text>
+		<text>DOT 460 filter.</text>
 	</string>
     <string id="topi_mechanic_proto_filtr_5_descr">
-		<text>Фильтр ДОТ 460 предназначен для защиты органов дыхания в составе фильтрующего противогаза ПФМГ-96 от химически опасных веществ. Противогазы с фильтрами ДОТ 460 марки А2В2Е2АХ применяются при содержании кислорода в воздухе не менее 17 % объемных и содержании вредных веществ (не более 0,5% объемных), при температуре окружающей среды от минус 40 до плюс 40°С.</text>
+		<text>The DOT 460 filter is designed to protect the respiratory system as part of a PFMG-96 filter gas mask against chemically hazardous substances. Gas masks with filters DOT 460 grade A2B2E2AX are used when the oxygen content in the air is at least 17% by volume and the content of hazardous substances (not more than 0.5% by volume), at ambient temperature from minus 40 to plus 40 ° C.</text>
 	</string>
 	<string id="topi_mechanic_proto_maska_1_name">
-		<text>Маска к противогазу.</text>
+		<text>Mask to gas mask.</text>
 	</string>
     <string id="topi_mechanic_proto_maska_1_descr">
-		<text>Маска противогаза первого типа.</text>
+		<text>First type full face mask.</text>
 	</string>
 	<string id="topi_mechanic_proto_maska_2_name">
-		<text>Маска к противогазу.</text>
+		<text>A mask for a full face mask.</text>
 	</string>
     <string id="topi_mechanic_proto_maska_2_descr">
-		<text>Маска противогаза первого типа.</text>
+		<text>First type full face mask.</text>
 	</string>
 	<string id="topi_mechanic_proto_maska_3_name">
-		<text>Маска к противогазу.</text>
+		<text>Mask for gas masks.</text>
 	</string>
     <string id="topi_mechanic_proto_maska_3_descr">
-		<text>Маска противогаза первого типа.</text>
+		<text>Gas mask of gas mask type 1.</text>
 	</string>
 	<string id="topi_mechanic_proto_maska_4_name">
-		<text>Маска к противогазу.</text>
+		<text>Mask to a gas mask.</text>
 	</string>
     <string id="topi_mechanic_proto_maska_4_descr">
-		<text>Маска противогаза первого типа.</text>
+		<text>Gas mask of gas mask type 1.</text>
 	</string>
 	<string id="topi_mechanic_proto_maska_5_name">
-		<text>Маска к противогазу.</text>
+		<text>Mask to a gas mask.</text>
 	</string>
     <string id="topi_mechanic_proto_maska_5_descr">
-		<text>Маска противогаза первого типа.</text>
+		<text>Mask for a first type gas mask.</text>
 	</string>
 	<string id="topi_mechanic_proto_dathik_name">
-		<text>Датчик для противогаза.</text>
+		<text>Sensor for a gas mask.</text>
 	</string>
     <string id="topi_mechanic_proto_dathik_descr">
-		<text>Специальный датчик от системы 8020М, снимающий параметры тестируемого противогаза.</text>
+		<text>Special sensor from the 8020M system, to record the parameters of a gas mask under test.</text>
 	</string>
 	<string id="topi_mechanic_protivogaz_1_name">
-		<text>Противогаз первого типа.</text>
+		<text>Gas mask of the first type.</text>
 	</string>
     <string id="topi_mechanic_protivogaz_1_descr">
-		<text>Тестируемый вариант противозага РШ4.</text>
+		<text>Test version of the RSH4 gas mask.</text>
 	</string>
 	<string id="topi_mechanic_protivogaz_2_name">
-		<text>Противогаз первого типа.</text>
+		<text>Gas mask of the first type.</text>
 	</string>
     <string id="topi_mechanic_protivogaz_2_descr">
-		<text>Тестируемый вариант противозага ПМК1.</text>
+		<text>Test version of the PMK1 gas mask.</text>
 	</string>
 	<string id="topi_mechanic_protivogaz_3_name">
-		<text>Противогаз первого типа.</text>
+		<text>First type full mask.</text>
 	</string>
     <string id="topi_mechanic_protivogaz_3_descr">
-		<text>Тестируемый вариант противозага ПМК3.</text>
+		<text>Test version of the PMK3 gas mask.</text>
 	</string>
 	<string id="topi_mechanic_protivogaz_4_name">
-		<text>Противогаз первого типа.</text>
+		<text>Protective mask of the first type.</text>
 	</string>
     <string id="topi_mechanic_protivogaz_4_descr">
-		<text>Тестируемый вариант противозага ПМГ2.</text>
+		<text>Test version of a PMG2 gas mask.</text>
 	</string>
 	<string id="topi_mechanic_protivogaz_5_name">
-		<text>Противогаз первого типа.</text>
+		<text>Protective mask of the first type.</text>
 	</string>
     <string id="topi_mechanic_protivogaz_5_descr">
-		<text>Тестируемый вариант противозага ИП4.</text>
+		<text>Test version of the IP4 gas mask.</text>
 	</string>	
 	<string id="topi_b11_radiostation_name">
-		<text>Радиостанция Р-168-5КДНЕ.</text>
+		<text>Radio R-168-5KDNE.</text>
 	</string>
     <string id="topi_b11_radiostation_descr">
-		<text>Радиостанция Р-168-5КДНЕ обеспечивает открытую и криптозащищенную радиосвязь в КВ/УКВ диапазонах радиосетей тактического звена управления в жестких условиях эксплуатации, в т. ч. и с применением ППРЧ. Производится на Ярославским радиозаводе.</text>
+		<text>The R-168-5KDNE radio ensures open and crypto-protected radio communication in the CW/UKV bands of the tactical radio network under severe operational conditions, including the use of frequency hopping. It is manufactured by Yaroslavl Radio Plant.</text>
 	</string>
 	
 	<string id="topi_b11_plata_1_name">
-		<text>Системная плата № 1.</text>
+		<text>No.1 system board.</text>
 	</string>
     <string id="topi_b11_plata_1_descr">
-		<text>Один из составных систменых модулей радиостанции.</text>
+		<text>One of the radio system modules.</text>
 	</string>
 	<string id="topi_b11_plata_2_name">
-		<text>Системная плата № 2.</text>
+		<text>The system board number 2.</text>
 	</string>
     <string id="topi_b11_plata_2_descr">
-		<text>Один из составных систменых модулей радиостанции.</text>
+		<text>One of the components of the radio system modules.</text>
 	</string>
 	<string id="topi_b11_plata_3_name">
-		<text>Системная плата № 3.</text>
+		<text>System board No. 3.</text>
 	</string>
     <string id="topi_b11_plata_3_descr">
-		<text>Один из составных систменых модулей радиостанции.</text>
+		<text>One of the components of system modules radio.</text>
 	</string>
 	<string id="topi_b11_plata_4_name">
-		<text>Системная плата № 4.</text>
+		<text>System board number 4.</text>
 	</string>
     <string id="topi_b11_plata_4_descr">
-		<text>Один из составных систменых модулей радиостанции.</text>
+		<text>One of the RF system modules.</text>
 	</string>
 	<string id="topi_b11_plata_3_paika_name">
-		<text>Системная плата № 3.</text>
+		<text>System board number 3.</text>
 	</string>
     <string id="topi_b11_plata_3_paika_descr">
-		<text>Один из составных систменых модулей радиостанции.</text>
+		<text>One of the RF system modules.</text>
 	</string>
 	<string id="topi_b11_multimetr_name">
-		<text>Мультиметр АМ-1083.</text>
+		<text>Multimeter AM-1083.</text>
 	</string>
     <string id="topi_b11_multimetr_descr">
-		<text>Мультиметры Актаком АМ-1083 предназначены для измерения постоянного и переменного (40-400 Гц) тока (до 20 А!) и напряжения, сопротивления, ёмкости, проверки диодов и прозвонки цепей..</text>
+		<text>Multimeters AKTAK AM-1083 are designed for measuring DC and AC (40-400 Hz) current (up to 20 Ah!) and voltage, resistance, capacitance, diode checks and continuity-check.</text>
 	</string>
 	<string id="topi_b11_payalnik_name">
-		<text>Паяльная станция Lukey-852D+.</text>
+		<text>Lukey-852D+ soldering station.</text>
 	</string>
     <string id="topi_b11_payalnik_descr">
-		<text>Цифровая термовоздушная паяльная станция-фен с паяльником. Цифровая индикация фактической температуры потока горячего воздуха позволят достичь наименьшей погрешности при работе. Широкий диапазон рабочих температур позволят применять данное устройство в самых разнообразных условиях.</text>
+		<text>Digital air-thermal soldering station with soldering iron. The digital indication of the actual hot air temperature will give the smallest error in operation. The wide temperature range will enable the unit to be used in a wide range of operating conditions.</text>
 	</string>
 	<string id="topi_b11_components_1_name">
-		<text>Конденсатор.</text>
+		<text>Capacitor.</text>
 	</string>
     <string id="topi_b11_components_1_descr">
-		<text>Конденсатор электролитический алюминиевый миниатюрный. ECAP (К50-35 мини), 0.1мкФ, 50 В, 4х7мм</text>
+		<text>Aluminum miniature electrolytic capacitor. ECAP (K50-35 mini), 0.1µF, 50V, 4x7mm</text>
 	</string>
 	<string id="topi_b11_components_2_name">
-		<text>Транзистор.</text>
+		<text>Transistor.</text>
 	</string>
     <string id="topi_b11_components_2_descr">
-		<text>КТ117Б, Транзистор однопереходной с N-базой малой мощности [металл].</text>
+		<text>KT117B, Low power N-base single junction transistor [metal]</text>
 	</string>
 	<string id="topi_b11_components_3_name">
-		<text>Диод.</text>
+		<text>Diode.</text>
 	</string>
     <string id="topi_b11_components_3_descr">
-		<text>1.5KE12(A), Защитный диод, 1500Вт, 12В, [DO-201].</text>
+		<text>1.5KE12(A), Protective diode, 1500W, 12V, [DO-201].</text>
 	</string>
 	<string id="topi_b11_zaglushka_name">
-		<text>Резистор.</text>
+		<text>Resistor.</text>
 	</string>
     <string id="topi_b11_zaglushka_descr">
-		<text>CF-100 (С1-4) 1 Вт, 1.6 Ом, 5%, Резистор углеродистый.</text>
+		<text>CF-100 (C1-4) 1W, 1.6 Ohm, 5%, Carbon Resistor.</text>
 	</string>
 	<string id="topi_b1_leader_vphr_item_name">
-		<text>Войсковой прибор химической разведки.</text>
+		<text>A chemical reconnaissance unit.</text>
 	</string>
     <string id="topi_b1_leader_vphr_item_desc">
-		<text>Прибор, предназначенный для определения в воздухе, на местности и на технике боевых отравляющих веществ — зарина, зомана, иприта, фосгена, дифосгена, синильной кислоты, хлорциана, а также паров V-газов в воздухе. Принцип работы ВПХР заключается в следующем: при прокачивании через индикаторные трубки анализируемого воздуха, в случае наличия отравляющих веществ (ОВ), происходит изменение окраски наполнителя трубок, по которому приблизительно определяют концентрацию ОВ.</text>
+		<text>The device is intended to detect in the air, on the ground and on the equipment warfare agents - sarin, soman, mustard gas, phosgene, diphosgene, hydrocyanic acid, chlorocyanine, as well as vapours of V-gases in the air. The principle of operation of the CAP is the following: when pumped through the indicator tubes analyzed air in the presence of toxic substances (PS), a change in the colour of the tubes' filler, by which approximately determine the concentration of PS.</text>
 	</string>
 	<string id="topi_b1_leader_vphr_doc_name">
-		<text>Результаты замеров.</text>
+		<text>Measurement results.</text>
 	</string>
     <string id="topi_b1_leader_vphr_doc_desc">
-		<text>Носитель с результатами замеров произведенных ВПХР.</text>
+		<text>A carrier with the results of measurements performed by the DPCR.</text>
 	</string>
 	
 	<string id="topi_a105_razia_type_1_name">
-		<text>Радиостанция "Бармица-РС"</text>
+		<text>Radio station Barmitsa-RS</text>
 	</string>
     <string id="topi_a105_razia_type_1_desc">
-		<text>Новая радиостанция «Бармица-РС» обеспечивает открытую и маскированную телефонную связь с однотипными радиостанциями, а также радиостанцией «Р-159» и радиостанциями комплексов «Р-163» и «Р-168». Содержит встроенный маскиратор речи. Предназначена для эксплуатации в сложных полевых условиях. Обладает малым весом, высокой механической прочностью (возможность десантирования), компактна. Имеет герметичный металлический пылевлагозащищенный корпус. Изготовитель: НПО «Риф», г. Воронеж, Россия.</text>
+		<text>The new radio "Barmitsa-RS" ensures open and masked telephone communication with radios of the same type as well as with the radio "R-159" and radio stations of the complexes "R-163" and "R-168". Contains a built-in speech masker. The radio is designed for operation in difficult field conditions. It has a low weight, high mechanical strength (the possibility of landing), compact. The unit has a sealed, metal, dust and watertight casing. Manufacturer: NPO "Rif", Voronezh, Russia.</text>
 	</string>
 	<string id="topi_a105_razia_type_2_name">
-		<text>Си-Би радиостанция «Беркут-801МК"</text>
+		<text>Berkut-801MK" CB radio.</text>
 	</string>
     <string id="topi_a105_razia_type_2_desc">
-		<text>Радиостанция сочетает в себе все достоинства раций семейства «Беркут": 1. эффективный пороговый шумоподавитель, срабатывающий от сигнала в 0,05-0,07 мкВ. 2. Высокая чувствительность и избирательности приёмника. 3. Исключительно высокая экономичность: уникально высокий КПД передатчика (80% при работе со штатной гибкой антенной) и режим сверхэкономичного приёма. 4. Уникально малые габариты и вес. 5. Высокая надёжность: радиостанция работает в любых погодных и температурных условиях .</text>
+		<text>The radio station combines all the advantages of the "Berkut" radio family: 1. The effective threshold noise suppression operates with a signal in 0.05-0.07 mcV. 2. High sensitivity and selectivity of the receiver. 3. Exceptionally high efficiency: uniquely high transmitter efficiency (80% when working with regular flexible antenna) and super economical reception mode. 4. Uniquely small size and weight. 5. High reliability: the radio works in any weather and temperature conditions.</text>
 	</string>
 	<string id="topi_a105_razia_type_3_name">
-		<text>Радиостанция «Тюльпан» (22РТП-2-ЧМ)</text>
+		<text>Radio "Tulpan" (22RTP-2-FM).</text>
 	</string>
     <string id="topi_a105_razia_type_3_desc">
-		<text>Портативная одноканальная, симплексная, транзисторная УКВ радиостанция «Тюльпан» (22РТП-2-ЧМ) предназначена для организации безпоисковой, безподстроечной телефонной радиосвязи с однотинными радиостанциями, а также с комплексом радиостанций диапазона 140 — 174 MHz. Радиостанция используется для организации связи в различных отраслях народного хозяйства — для строительных площадок, железнодорожного и автомобильного транспорта, сельского хозяйства, на небольшие расстояния до 1–2 км.</text>
+		<text>The portable single-channel simplex transistor VHF radio "Tulpan" (22RTP-2-FM) is designed for enquiry-free telephone radio communication with single-type radios and with radio systems in the 140-144 MHz range. The radio is used for communication organisation in different sectors of national economy - for construction sites, railway and motor transport, agriculture, for short distances up to 1-2 km.</text>
 	</string>
 	<string id="topi_a105_razia_type_4_name">
-		<text>Радиостанция «Эрика-302"</text>
+		<text>Erica-302" radio station</text>
 	</string>
     <string id="topi_a105_razia_type_4_desc">
-		<text>Эрика-302 — профессиональная радиостанция, предназначенная для работы в экстремальных условиях. Комбинированный корпус из металла и ударопрочной пластмассы выдерживает удары и падения, а высококачественные импортные комплектующие позволяют работать при экстремальных температурах. Радиостанция имеет 16 каналов, два приоритета сканирования, светодиодную индикацию режима работы. Изготовитель — АО «Уральские радиостанции» г.Ижевск.</text>
+		<text>Erika-302 is a professional radio, designed to work in extreme conditions. The combined body of metal and impact resistant plastic can withstand bumps and drops, while high quality imported components allow the radio to operate at extreme temperatures. The radio has 16 channels, two scanning priorities, LED indication of operating mode. The radio was manufactured by the JSC "Urals Radio Stations", Izhevsk.</text>
 	</string>
 	<string id="topi_a105_razia_type_5_name">
-		<text>Радиостанция «Гранит 2Р-44"</text>
+		<text>Radio station "Granit 2R-44</text>
 	</string>
     <string id="topi_a105_razia_type_5_desc">
-		<text>Это современная разработка в области профессионального отечественного радиооборудования. Возможность работы радиостанций: симплекс и полудуплекс (возможна работа через ретранслятор). Радиостанция производится в двух исполнениях: 1. базовая 10-канальная модель. 2. 100-канальная модель с возможностью сканирования в трех различных режимах.</text>
+		<text>It is a modern development in the field of professional radio equipment. Possibility of operation of radio stations: simplex and half-duplex (operation through the repeater is possible). The radio is produced in two versions: 1. basic 10-channel model. 2. 100-channel model with the ability to scan in three different modes.</text>
 	</string>
 	
 	<string id="topi_zam_protocrafter_name">
-		<text>Оборудование для крафта отравленного противогаза.</text>
+		<text>Equipment for crafting a poisoned gas mask.</text>
 	</string>
     <string id="topi_zam_protocrafter_descr">
-		<text>Специальный набор, необходимый для сбора противогаза с измененым наполнением фильтра.</text>
+		<text>A special kit required to assemble a gas mask with a modified filter filling.</text>
 	</string>
 	<string id="topi_zam_protivogaz_1_name">
-		<text>Противогаз ИП4.</text>
+		<text>Gas mask IP4.</text>
 	</string>
     <string id="topi_zam_protivogaz_1_descr">
-		<text>Вариант противозага ИП4 из партии для тестирования.</text>
+		<text>A variant of the IP4 gas mask from the batch for testing.</text>
 	</string>
 	<string id="topi_zam_maska_1_name">
-		<text>Маска к противогазу.</text>
+		<text>Mask for the gas mask.</text>
 	</string>
     <string id="topi_zam_maska_1_descr">
-		<text>Маска от противогаза ИП4.</text>
+		<text>Mask from IP4 gas mask.</text>
 	</string>
 	<string id="topi_zam_proto_filtr_1_name">
-		<text>Фильтр ВК 600.</text>
+		<text>Filter VK 600.</text>
 	</string>
     <string id="topi_zam_proto_filtr_1_descr">
-		<text>Фильтр ВК 600 А2В2Е2К2Р3 предназначен для очистки вдыхаемого воздуха от органических газов и паров с температурой кипения выше 65С (циклогексан, бензол, ксилол, толуол, бензин, керосин, галоидорганические соединения (хлорпикрин, хлорацетофенон и т.п.) нитросоединения бензола и его гомологов, ацетонитрил, анилин, кетоны, тетраэтилсвинец и т.п.); неорганических газов и паров (циан водорода, гидрид серы, хлор, фтор, бром, арсины, фосфористый водород, и т.п., за исключением оксида углерода); кислых газов и паров (диоксид серы, хлористый водород, фтористый водород, бромистый водород, пары серной кислоты, пары уксусной кислоты, пары муравьиной кислоты, пары азотной кислоты, пары фосфорной кислоты и т.п.); аммиака и его органических производных; специфических опасных химических веществ (хлорциан, зарин, зоман, фосген и т.п.); аэрозолей в составе фильтрующего противогаза при непрерывной или периодической эксплуатации, а также для экстренного выхода из аварийной зоны.</text>
+		<text>Filter 600 А2is designed for purification of inhaled air from organic gases and vapours with boiling point higher than 65С (cyclohexane, benzene, xylene, toluene, petrol, paraffin, haloid organic compounds (chloropicrin, chloroacetophenone, etc... etc.); inorganic gases and vapours (hydrogen cyane, sulphur hydride, chlorine, fluorine, bromine, arsine, hydrogen phosphate, etc, excluding carbon monoxide); acid gases and vapours (sulphur dioxide, hydrogen chloride, hydrogen fluoride, hydrogen bromide, sulphuric acid vapours, acetic acid vapours, formic acid, nitric acid, phosphoric acid, etc. The following are considered to be hazardous chemicals: ammonia and its organic derivatives, specific hazardous chemicals (chlorcian, sarin, soman, phosgene, etc.), aerosols in filter masks in continuous or intermittent operation, as well as in emergency exits from the emergency zone.</text>
 	</string>
 	<string id="topi_zam_yad_1_name">
-		<text>Капсула с ХОВ.</text>
+		<text>CWA capsule.</text>
 	</string>
     <string id="topi_zam_yad_1_descr">
-		<text>Капсула с химическим отравляющим веществом на основе зарина. Ддя активации требуется наличие специального катализатора.</text>
+		<text>A capsule containing a sarin-based chemical agent. A special catalyst is required for activation.</text>
 	</string>
 	<string id="topi_zam_katalizator_1_name">
-		<text>Химический катализатор.</text>
+		<text>Chemical catalyst.</text>
 	</string>
     <string id="topi_zam_katalizator_1_descr">
-		<text>Специальный катализатор необходимый для активации действия отравляющего вещества.</text>
+		<text>A special catalyst required to activate the chemical agent.</text>
 	</string>
 	
 	<string id="topi_b12_key_1_name">
-		<text>Первый ключ от контейнера.</text>
+		<text>The first key to the container.</text>
 	</string>
     <string id="topi_b12_key_1_descr">
-		<text>Один из двух ключей для схрона, организованного людьми Хасана.</text>
+		<text>One of the two keys to the cache set up by Hasan's men.</text>
 	</string>
 	<string id="topi_b12_key_2_name">
-		<text>Второй ключ от контейнера.</text>
+		<text>The second key to the container.</text>
 	</string>
     <string id="topi_b12_key_2_descr">
-		<text>Один из двух ключей для схрона, организованного людьми Хасана.</text>
+		<text>One of the two keys to the cache set up by Hassan's men.</text>
 	</string>
 	<string id="topi_lider_copromat_1_name">
-		<text>Папка с документами.</text>
+		<text>A file folder.</text>
 	</string>
     <string id="topi_lider_copromat_1_desc">
-		<text>Документы с приличным компроматом на Хасана. Описаны многие схемы сбыта артефактов в обход казны клана, его контакты с наемниками, список неугодных сталкеров клана, часть из которых уже была ликвидирована.</text>
+		<text>Documents with decent dirt on Hassan. Described many schemes to sell artifacts bypassing the clan's coffers, his contacts with mercenaries, and a list of undesirable clan stalkers, some of whom have already been eliminated.</text>
 	</string>
 	<string id="topi_lider_spectrometr_1_name">
-		<text>Портативный спектрометр «Responder RCI».</text>
+		<text>Responder RCI Portable Spectrometer.</text>
 	</string>
     <string id="topi_lider_spectrometr_1_descr">
-		<text>Responder RCI — легкий и портативный спектрометр, основанный на Raman — технологии, идеален для идентификации неизвестных жидкостей и порошков. Вы сами выбираете способ анализа из двух вариантов — отбор пробы в пробирку, помещаемую внутрь прибора, либо идентификация с помощью отдельно поставляемого модуля, позволяющего дистанционно определять химический состав вещества в прозрачной для ИК — излучения таре. В любом случае результат будет точным и время анализа не превысит 30 секунд.</text>
+		<text>Responder RCI is a lightweight and portable spectrometer based on Raman technology, ideal for identifying unknown liquids and powders. You can choose the method of analysis from two options - taking a sample in a tube placed inside the unit, or identification using an optional module that allows the remote determination of the chemical composition of the substance in a transparent to IR-radiation container. In either case the result will be accurate and the analysis time will not exceed 30 seconds.</text>
 	</string>
 	<string id="topi_anubis_ukazanie_1_name">
-		<text>Папка с документами.</text>
+		<text>Documentation folder.</text>
 	</string>
     <string id="topi_anubis_ukazanie_1_desc">
-		<text>Дополнительные указания от Анубиса: «Прояснилась ситуация с учеными. Вывести именно эту группу не получаетсятся — слишком поздно. Готовься их ликвидировать после того, как разберешься с местными сталкерами.»</text>
+		<text>Additional instructions from Anubis: "The situation with the scientists has cleared up. This particular group can't be eliminated - it's too late. Prepare to eliminate them after you deal with the local stalkers."</text>
 	</string>
 	<string id="topi_anubis_var_2_bomba_name">
-		<text>Взрывное устройство.</text>
+		<text>Explosive device.</text>
 	</string>
     <string id="topi_anubis_var_2_bomba_descr">
-		<text>Взрывное устройство с заданным параметром времени взведения и поражающими элементами в виде ХОВ.</text>
+		<text>An explosive device with a pre-set detonation time and chemical warheads.</text>
 	</string>	
 	<string id="st_detector_mine">
-		<text>ИМП-2.</text>
+		<text>IMP-2.</text>
 	</string>
     <string id="st_detector_mine_descr">
-		<text>Индукционный миноискатель, полупроводниковый, индивидуального пользования, ИМП предназначен для поиска противотанковых и противопехотных мин, установленных в грунт (снег), корпуса или взрыватели которых изготовлены из металла. Миноискатель позволяет обнаруживать мины, установленные в кустарнике, траве и на бродах. Разработан в 70-е годы Научно-исследовательским институтом «Проект» города Томск, производится Томским заводом измерительной аппаратуры. Является усовершенствованной версией миноискателя ИМП. Широко применялся по время войны в Афганистане, используется в армии по настоящее время.</text>
+		<text>Induction mine detector, semi-conductor, personal use, IMM is designed to detect antitank and antipersonnel mines planted in the ground (snow), hulls or fuses which are made of metal. The mine detector can detect mines planted in bushes, grass and fords. It is developed in 70th years by Research Institute "Project" of Tomsk, is made by Tomsk factory of the measuring equipment. It is the improved version of mine detector IMP. It was widely used during the war in Afghanistan, is used in the army up to the present time.</text>
 	</string>
 	<string id="topi_killer_ukazanie_1_name">
-		<text>Папка с документами.</text>
+		<text>File of documents.</text>
 	</string>
     <string id="topi_killer_ukazanie_1_desc">
-		<text>Документы одного из наемников из синдиката. В них сказано о наличии «места передачи данных». Находится оно где-то неподалеку — либо в пещерах, либо в деревне. Возможно это тайник или что-то в этом роде.</text>
+		<text>Documents from one of the mercenaries in the syndicate. It says there's a "data transfer location". It's somewhere nearby - either caves or a village. Maybe it's a hiding place or something.</text>
 	</string>
 	<string id="topi_killer_ukazanie_2_name">
-		<text>Папка с документами.</text>
+		<text>File of documents.</text>
 	</string>
     <string id="topi_killer_ukazanie_2_desc">
-		<text>Документы наемников из синдиката. Некоторые сведения содержат в себе смету по поставкам артефактов. В ней фигирирует имя зама лидера вольных сталкеров.</text>
+		<text>Files of the mercenaries from the syndicate. Some of the information contains an estimate for the supply of artefacts. It fiigures the name of the deputy leader of the freelance stalkers.</text>
 	</string>	
 	<string id="topi_f1_radioscaner_name">
-		<text>Ручной пеленгатор «АРК-РП3».</text>
+		<text>ARK-RP3 handheld direction finder.</text>
 	</string>
     <string id="topi_f1_radioscaner_descr">
-		<text>Назначение: радиомониторинг; оценка напряженности электромагнитного поля и параметров радиосигналов; пеленгование и определение местоположения источника радиоизлучения; запись радиосигналов и передач.</text>
+		<text>Purpose: radio monitoring; estimation of electromagnetic field strength and radio signal parameters; direction finding and locating of radio emission source; recording of radio signals and transmissions.</text>
 	</string>
 	
 	<string id="topi_b41_seleczia_device_name">
-		<text>Прибор для селекции артефактов.</text>
+		<text>Artefact selection device.</text>
 	</string>
     <string id="topi_b41_seleczia_device_descr">
-		<text>Специальный прототип устройства, разработанный учеными на территории ЧЗО, для проведения изменений свойств артефактов в аномальных образованиях.</text>
+		<text>A special prototype device developed by scientists in the CEZ to conduct changes in the properties of artefacts in anomalous formations.</text>
 	</string>
 	<string id="topi_b41_artefact_1_name">
-		<text>Модификат первого типа.</text>
+		<text>Type 1 modifier.</text>
 	</string>
     <string id="topi_b41_artefact_1_descr">
-		<text>Артефакт с измененными свойствами.</text>
+		<text>An artifact with altered properties.</text>
 	</string>
 	<string id="topi_b41_artefact_2_name">
-		<text>Модификат первого типа.</text>
+		<text>Modifier of the first type.</text>
 	</string>
     <string id="topi_b41_artefact_2_descr">
-		<text>Артефакт с измененными свойствами.</text>
+		<text>Artifact with modified properties.</text>
 	</string>
 	<string id="topi_b41_artefact_3_name">
-		<text>Модификат первого типа.</text>
+		<text>Type one modifier.</text>
 	</string>
     <string id="topi_b41_artefact_3_descr">
-		<text>Артефакт с измененными свойствами.</text>
+		<text>An artifact with altered properties.</text>
 	</string>
 	
 	<string id="topi_b19_quest_pnv_1_used_name">
-		<text>Портативный прибор ночного видения «ТНК-7».</text>
+		<text>TNK-7 portable night vision device.</text>
 	</string>
     <string id="topi_b19_quest_pnv_1_used_descr">
-		<text>ТНК-7 — многофункциональный прибор ночного видения, предназначенный для наблюдения, обнаружения и распознавания объектов, (в том числе замаскированных), при работе в ночных и прочих неблагоприятных условиях (туман, задымление, полная темнота). Комбинированный оптический прибор ночного видения  имеет 2 канала: тепловизионный канал на основе микроболометрической матрицы формата 384х288 и ночной канал на базе ЭОП 2++ поколения. Каналы совмещены в одном корпусе и имеют один общий окуляр. Вы можете оперативно переключаться между каналами, наблюдая по очереди в ночной или в тепловизионный канал, а можете включить «комбинированный» режим. В «комбинированном» режиме «тепловизионная картинка» оптически накладывается на изображение, получаемое через ночной канал.</text>
+		<text>TNK-7 is a multifunctional night vision device which is intended for surveillance, detection and recognition of objects (including veiled ones) when working at night and in other unfavourable conditions (fog, smoke, total darkness). Combined optical night vision device has 2 channels: thermal channel on the base of microbolometer matrix format 384х288 and night channel on the base of EOP 2 ++ generation. The channels are combined in one housing and share a common eyepiece. You can quickly switch between the channels, observing in turn in the night channel or in the thermal channel, or you can switch to the "combined" mode. In "combined" mode, the "thermal image" is optically superimposed on the image obtained through the night channel.</text>
 	</string>
 	<string id="topi_b19_quest_pnv_2_used_name">
-		<text>Прибор ночного видения «Контур СП-301/303».</text>
+		<text>Night vision device "Contour SP-301/303".</text>
 	</string>
     <string id="topi_b19_quest_pnv_2_used_descr">
-		<text>Малогабаритные приборы ночного видения (ПНВ) предназначены для ведения качественного наблюдения, разведки, охраны объектов. Эффективны при проведении поисково-спасательных работ, обеспечении навигационной безопасности. Аппаратура оснащена светосильной оптикой, встроенным и дополнительными автономными ИК — осветителями, что позволяет осуществлять видение и запись результатов наблюдения на расстоянии до 500 м.</text>
+		<text>Small-size night vision devices (NVD) are intended for qualitative observation, reconnaissance, protection of objects. They are effective for search-and-rescue operations and providing navigational safety. The devices are equipped with high-aperture optics, built-in and additional self-contained infra-red illuminators which allows seeing and recording of surveillance results at distances up to 500 metres.</text>
 	</string>
 	<string id="topi_b19_quest_pnv_3_used_name">
-		<text>Прибор ночного видения «Дедал-370-DK3».</text>
+		<text>Night vision device "Dedal-370-DK3".</text>
 	</string>
     <string id="topi_b19_quest_pnv_3_used_descr">
-		<text>Компактный и легкий прибор ночного видения «Дедал-370-DK3» является поистине универсальным инструментом. Какая бы задача не стояла, будь то ночное наблюдение, техническое обеспечение сил правопорядка, охрана, поиск, охота или ночная фото- и видеосъемка, «Дедал-370-DK3» будет стабильно эффективен. Конструкция прибора позволяет использовать его как самостоятельно, в роли монокуляра, так и в сочетании с другими приборами — оптическими и коллиматорными прицелами, фото- и видеокамерами, а также зафиксировать прибор на оголовье или шлеме наблюдателя. Также, существует возможность соединить два прибора «Дедал-370-DK3» воедино, тем самым «создав» бинокль ночного видения! К тому же, существует ряд сменных объективов, позволяющих повысить увеличение до 9,6х.</text>
+		<text>Compact and lightweight night vision device "Dedal-370-DK3" is a truly versatile tool. Whatever the task, be it night surveillance, technical support of law enforcement forces, security, search, hunting or night photo and video shooting, "Dedal-370-DK3" will be stably effective. The design of device allows to use it as monocular independently, as well as in combination with other devices - optical and collimator sights, photo- and video-cameras, also to fix device on a headband or helmet of observer. Also, it is possible to combine two devices "Dedal-370-DK3" together, thereby "creating" a night vision binoculars! In addition, a number of interchangeable lenses are available to increase the magnification to 9.6x.</text>
 	</string>
 	
 	<string id="topi_c7_quest_device_1_name">
-		<text>Генератор помех «Друид D-06».</text>
+		<text>Druid D-06 jamming generator.</text>
 	</string>
     <string id="topi_c7_quest_device_1_descr">
-		<text>Система защиты переговоров, позволяющая вести беседу до 6 человек одновременно(при синхронизации 2-х устройств до 12-ти человек). Защищает от всех известных методов прослушивания, включая все типы радиомикрофонов, стетоскопов, звуковых регистраторов, пассивных резонаторов, проводных микрофонов и т. д.</text>
+		<text>A system of protection for negotiations, which allows you to conduct a conversation with up to 6 people simultaneously (when synchronized with 2 devices up to 12 people). Protects against all known listening methods, including all types of radio microphones, stethoscopes, sound recorders, passive resonators, wireline microphones, etc.</text>
 	</string>
 	<string id="topi_c7_quest_device_2_name">
-		<text>Аппаратура радиоэлектронного комплекса «Пелена-7К».</text>
+		<text>Equipment of radioelectronic complex "Pelena-7K".</text>
 	</string>
     <string id="topi_c7_quest_device_2_descr">
-		<text>Аппаратура радиоэлектронного комплекса «Пелена-7К» предназначена для защиты от радиоуправляемых взрывных устройств, а также для защиты технической информации. При её применении предполагаются режимы работы в стационарном и переносном положении.</text>
+		<text>The equipment of radioelectronic complex "Pelena-7K" is intended for protection against radio-controlled explosive devices as well as for protection of technical information. At its application the modes of stationary and portable operation are supposed.</text>
 	</string>
 	
 	<string id="topi_b65_zam_bomba_name">
-		<text>Взрывное устройство.</text>
+		<text>Explosive device.</text>
 	</string>
     <string id="topi_b65_zam_bomba_descr">
-		<text>Взрывное устройство направленного действия с заданным параметром времени взведения, начиненное химическим отравляющим веществом.</text>
+		<text>An explosive device with a timed detonation feature, packed with chemical warfare agents.</text>
 	</string>
 	<string id="topi_a65_zam_bomba_name">
-		<text>Взрывное устройство.</text>
+		<text>Explosive device.</text>
 	</string>
     <string id="topi_a65_zam_bomba_descr">
-		<text>Взрывное устройство направленного действия с заданным параметром времени взведения, начиненное химическим отравляющим веществом.</text>
+		<text>A directional explosive device with a timed detonation timer packed with chemical warfare agents.</text>
+	</string>
+<string id="st_topi_a2_main_tainik_title">
+		<text>Stalker's Backpack.</text>
+	</string>
+	<string id="st_topi_a2_main_tainik_descr">
+		<text>A backpack used as a stash, where one of the free stalkers hid their modest loot.</text>
 	</string>
 	
 	

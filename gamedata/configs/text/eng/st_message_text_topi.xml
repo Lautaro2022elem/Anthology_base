@@ -1,140 +1,140 @@
 <?xml version="1.0" encoding="windows-1251"?>
 <string_table>
     <string id="topi_b41_seleczia_tips">
-		<text>Провести селекцию</text>
+		<text>Perform selection</text>
 	</string>	
 	<string id="st_code_tainic_descr">
-		<text>Отсутствует код замка</text>
+		<text>Missing lock code</text>
 	</string>
 	<string id="topi_b65_kill_quest_1_tips">
-		<text>Заложить фугас</text>
+		<text>Set up a booby trap</text>
 	</string>
 	<string id="topi_a65_kill_quest_1_tips">
-		<text>Заложить фугас</text>
+		<text>Set up a booby trap</text>
 	</string>
 	<string id="topi_f1_quest_radio_tips">
-		<text>Осуществить пеленгацию</text>
+		<text>Perform bearing</text>
 	</string>
 	<string id="topi_snab_quest_1_tips">
-		<text>Заложить схрон</text>
+		<text>Set up a cache</text>
 	</string>
     <string id="topi_fugas_quest_1_tips">
-		<text>Заложить фугас</text>
+		<text>Set up a booby trap</text>
 	</string>	
 	<string id="topi_mine_quest_tips_1">
-		<text>Обезвредить первую мину</text>
+		<text>Defuse first mine</text>
 	</string>
 	<string id="topi_mine_quest_tips_2">
-		<text>Обезвредить вторую мину</text>
+		<text>Defuse second mine</text>
 	</string>
 	<string id="topi_mine_quest_tips_3">
-		<text>Обезвредить третью мину</text>
+		<text>Defuse third mine</text>
 	</string>
 	<string id="topi_suget_quest_final_tips">
-		<text>Заложить заряд</text>
+		<text>Set up a charge</text>
 	</string>
 	<string id="topi_lider_variant_quest_tips">
-		<text>Провести спектрометрию</text>
+		<text>Conduct spectrometry</text>
 	</string>
 	<string id="topi_zam_variant_quest_tips">
-		<text>Установить катализатор</text>
+		<text>Set up the catalyst</text>
 	</string>
 	<string id="topi_a105_razia_quest_tips">
-		<text>Провести тестирование раций</text>
+		<text>Carry out walkie-talkie testing</text>
 	</string>
 	<string id="topi_b1_leader_third_quest_tips">
-		<text>Применить ВПХР</text>
+		<text>Apply CAP</text>
 	</string>
 	<string id="topi_multimetr_quest_2_tips">
-		<text>Установить радиостанцию</text>
+		<text>Set up the radio station</text>
 	</string>
 	<string id="topi_multimetr_quest_1_tips">
-		<text>Извлечь и разобрать радиостанцию</text>
+		<text>Remove and disassemble the radio</text>
 	</string>
 	<string id="topi_radist_quest_1_tips">
-		<text>Установить локатор</text>
+		<text>Install locator</text>
 	</string>
 	<string id="topi_radist_quest_comp_tips">
-		<text>Провести калибровку</text>
+		<text>Calibrate</text>
 	</string>
 	<string id="topi_b1_leader_second_quest_tips">
-		<text>Провести замеры радиации</text>
+		<text>Carry out radiation measurement</text>
 	</string>
     <string id="st_barsuk_check_descr">
-		<text>Установите рабочие модули радиолокатора</text>
+		<text>Install radar operating modules</text>
 	</string>	
 	<string id="st_barsuk_installed_descr">
-		<text>Рабочие модули установлены</text>
+		<text>Operating modules installed</text>
 	</string>	
 	<string id="st_radiostation_check_descr">
-		<text>Установите рабочие платы</text>
+		<text>Install circuit boards</text>
 	</string>
 	<string id="st_radiostation_installed_descr">
-		<text>Радиостанция готова к работе</text>
+		<text>Radios ready to go</text>
 	</string>	
 	<string id="topi_snad_come_back_text">
-		<text>Снабженец: «Варг, возвращайся назад на базу. Кое-что изменилось. Получишь дополнительные указания.»</text>
+		<text>Supply man: "Varg, get back to base. Something has changed. Get further instructions."</text>
 	</string>
 	<string id="topi_a3_create_csky_svayznoy_text">
-		<text>Связной Чистого Неба: "Подходи в указанную точку. Нам есть о чем пообщаться."</text>
+		<text>Clear Skies Liaison: Come to the designated point. We have a lot to talk about.</text>
 	</string>
 	<string id="topi_a2_freedom_anubis_text">
-		<text>Агент Свободы: «Сталкер, долго ты ходишь вокруг да около. Подходи, пообщаемся. Отвечу на многие интересующие тебя вопросы.»</text>
+		<text>Agent Freedom: "Stalker, you've been beating around the bush for a long time. Come and talk to me. I'll answer a lot of questions that interest you."</text>
 	</string>
 	<string id="topi_b9_freedom_anubis_text">
-		<text>Агент Свободы: «А я ведь предупреждал тебя, но ты не послушался. В следующий раз может и не повезти. Давай, возвращайся, ребёнок... Будем учить тебя, как жизнь в этом мире устроена.»</text>
+		<text>Agent Liberty: "And I warned you, but you didn't listen. Next time might not be so lucky. Come on, come back, kid... We'll teach you how life in this world works."</text>
 	</string>
 	<string id="csky_svayznoy_var_2_text">
-		<text>Связной Чистого Неба: «Выдвигайся в указанную точку. Только смотри без глупостей.»</text>
+		<text>Clear Sky Liaison: "Move out to the designated point. Just don't do anything stupid."</text>
 	</string>
 	<string id="csky_anubis_1_var_2_text">
-		<text>Агент Свободы: "Как можно быстрее двигай сюда свое тело. Это очень срочное дело, поэтому не стоит медлить.»</text>
+		<text>Agent Liberty: Get your body over here as fast as you can. This is a very urgent matter, so there is no need to delay."</text>
 	</string>
 	<string id="topi_trader_come_back_text">
-		<text>Торговец: «Варг, наши бойцы взяли одного из ублюдков. Давай решай побыстрее с этими и дуй в указанный район. Успей допросить выродка, пока наши его на ремни не прирезали.»</text>
+		<text>Merchant: "Varg, our fighters got one of the bastards. Let's make a quick decision with these and blow to the designated area. Get a chance to interrogate the bastard before ours strap him down."</text>
 	</string>	
 	<string id="st_shron_check_descr">
-		<text>Заложите схрон</text>
+		<text>Set up the stash</text>
 	</string>
 	<string id="st_shron_installed_descr">
-		<text>Тайник установлен</text>
+		<text>The stash is set.</text>
 	</string>
 	<string id="st_c7_installed_descr">
-		<text>Прибор установлен</text>
+		<text>The device is set</text>
 	</string>
     <string id="st_searcf_treasure">
-		<text>Открыть тайник</text>
+		<text>Open cache</text>
 	</string>
     <string id="topi_a15_freedom_text">
-		<text>Свободовский агент: «Ну че, ублюдок. Вот и пришел твой звездный час. Пристрелить тебя — слишком банально. Это не доставит удовольствия. Поэтому мы открываем голодные игры. Доберешься до базы живым — считай, что ты победил. Одного ножика тебе будет достаточно.»</text>
+		<text>Svoboda agent: "Well, motherfucker. This is your moment. Shooting you is too trivial. It's no fun. That's why we're opening up the hunger games. You make it back to base alive, you win. One knife will be enough for you."</text>
 	</string>
 	<string id="topi_a15_dolg_text">
-		<text>Долговский агент: «Значит так, мать твою... Просто так пристрелить тебя — слишком просто. Нужно сначала помучить. Сыграем в одну игру. Называеться она — «выживи в зоне с одним ножом". Правила очевидны — доберись до базы, если сможешь.»</text>
+		<text>Duty agent: "Well, fuck it... It's too easy to just shoot you. We need to torture you first. Let's play a game. It's called Survive the Zone with One Knife. The rules are obvious -- get to the base if you can."</text>
 	</string>
 	<string id="topi_c7_ceh_quest_1_tips">
-		<text>Установить оборудование</text>
+		<text>Install the equipment.</text>
 	</string>
 	<string id="topi_c7_ceh_quest_2_tips">
-		<text>Установить оборудование</text>
+		<text>Install equipment.</text>
 	</string>
 	<string id="topi_b65_harold_text">
-		<text>Харольд: «Варг, для тебя есть работа. Как раз по твоему профилю. Твои сведения о Хасане подтвердились. Необходимо решать эту проблему.»</text>
+		<text>Harold: "Varg, there's a job for you. One that fits your profile. Your information about Hassan checks out. This problem must be dealt with."</text>
 	</string>
 	<string id="topi_a45_angel_text">
-		<text>Карим: «Поздорову. Есть дело. Один из радиолокаторов, установленный тобой, засек нечто странное. Нужно срочно выяснить что это.»</text>
+		<text>Karim: "Greetings. I have a case. One of the radars you installed picked up something strange. We need to find out what it is immediately."</text>
 	</string>
 	<string id="topi_a65_hasan_text">
-		<text>Хасан: «Варг, для тебя есть одна работа. Подойдет для твоего профиля. Необходимо решать проблему с Харольдом. И как можно быстрее.»</text>
+		<text>Hassan: "Varg, I have a job for you. Fits your profile. The problem with Harold must be solved. And as quickly as possible."</text>
 	</string>
 	
 	<string id="topi_d5_killer_ceh_text">
-		<text>Чех: «Побыстрее приди к башне. На сообщение своего нового друга Анубиса не отвечай. Иначе пожалеешь.»</text>
+		<text>Czech: "Hurry to the tower. Don't respond to your new friend Anubis' message. Otherwise you will be sorry."</text>
 	</string>
 	<string id="topi_e7_killer_ceh_text">
-		<text>Чех: «Варг, мои опасения подтвердились. Чистонебовцы не будут вести с тобой переговоры, а просто тебя ликвидируют. Уничтожь их всех.»</text>
+		<text>Czech: "Varg, my fears have been confirmed. The Pleaners will not negotiate with you, they will simply eliminate you. Destroy them all."</text>
 	</string>
 	<string id="topi_k9_freedom_anubis_text">
-		<text>Анубис: «Ну привет. Вижу ты тут много дел наворотил. Давай подходи, переговорим. Разрешим все проблемы, какие накопились.»</text>
+		<text>Anubis: "Well hello there. I see you've made a mess of things here. Come on over, let's talk. Let's solve all the problems we've got."</text>
 	</string>
     	
 </string_table>
