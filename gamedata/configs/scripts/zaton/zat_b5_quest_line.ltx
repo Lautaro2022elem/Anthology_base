@@ -88,19 +88,19 @@ on_info = {=squad_exist(zat_b5_dolg_assist_squad)} sr_idle@nil %=set_squad_goodw
 
 ;-------------------------------
 [sr_idle@with_stalkers]
-on_game_timer = 10800 | {=dist_to_actor_ge(200)} sr_idle@destroy_stalkers %+zat_b5_time_is_out%
+on_game_timer = 10800 | {=dist_to_actor_ge(200)} sr_idle@destroy_stalkers ;%+zat_b5_time_is_out%
 on_info = {+zat_b5_actor_stalker_go_to_trader} sr_idle@stalker_wait
 
 
 [sr_idle@stalker_wait]
 on_info = {+zat_b5_destroy_enemy +zat_b7_actor_now_duty_illicit_dealer +zat_b5_dolg_enemy} sr_idle@reward %+zat_b5_actor_help_stalkers%
-on_info2 = {+zat_b5_destroy_enemy +zat_b7_actor_now_duty_illicit_dealer -zat_b5_dolg_enemy -zat_b5_bandit_hit} sr_idle@reward %+zat_b5_actor_help_stalkers +zat_b5_time_is_out%
+on_info2 = {+zat_b5_destroy_enemy +zat_b7_actor_now_duty_illicit_dealer -zat_b5_dolg_enemy -zat_b5_bandit_hit} sr_idle@reward %+zat_b5_actor_help_stalkers% ;+zat_b5_time_is_out%
 on_info3 = {+zat_b5_destroy_enemy +zat_b7_actor_now_duty_illicit_dealer +zat_b5_bandit_hit} sr_idle@reward %+zat_b5_actor_help_stalkers%
 on_info4 = {=dist_to_actor_ge(200) -zat_b5_start_quest_stalkers} sr_idle@check_stalker_distance
 on_info5 = {+zat_b5_task_end} sr_idle@nil
 
 [sr_idle@check_stalker_distance]
-on_game_timer = 900 | sr_idle@stalker_kill_bandits %+zat_b5_time_is_out +zat_b5_task_end%
+on_game_timer = 900 | sr_idle@stalker_kill_bandits %+zat_b5_task_end% ;%+zat_b5_time_is_out%
 on_info = {=dist_to_actor_le(200)} sr_idle@stalker_wait
 on_info2 = {+zat_b5_task_end} sr_idle@nil
 

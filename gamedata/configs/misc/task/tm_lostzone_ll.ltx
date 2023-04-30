@@ -156,7 +156,7 @@ status_functor = special_steps_for_lostzone_tasks
 descr = {+wpn_gauss_quest} lttz_ll_fetch_gauss_task_descr2, lttz_ll_fetch_gauss_task_descr
 stage_complete = 2
 
-on_init = %=spawn_item_at_pos(wpn_gauss_quest) =create_squad(special_poltergeist_task_squad:zat_a23_smart_terrain)%
+on_init = %=spawn_item_at_pos(wpn_gauss_quest) =create_squad(special_poltergeist_task_squad:zat_a23_smart_terrain) =give_actor(zat_a23_access_card)%
 on_complete = %=reward_random_money(4000:6000) =complete_task_inc_goodwill(50:stalker) =lttz_ll_take_wpn_gauss_quest%
 condlist_0 = {+stalker_rogue_living_legend_fetch_complete} complete
 condlist_1 = {+stalker_rogue_dead} fail

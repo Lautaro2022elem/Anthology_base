@@ -37,7 +37,7 @@ allow_break = false
 
 ;hangar medic
 [logic@gar_bandit_senya]
-suitable = {=check_npc_name(gar_bandit_senya)} true, {=check_npc_medic} true
+suitable = {=check_npc_name(gar_bandit_senya)} true
 prior = 200
 active = animpoint@medic
 level_spot = medic
@@ -59,7 +59,7 @@ corpse_detection_enabled = false
 
 ;hangar tech
 [logic@gar_bandit_fixer]
-suitable = {=check_npc_name(gar_bandit_fixer)} true, {=check_npc_mechanic} true
+suitable = {=check_npc_name(gar_bandit_fixer)} true
 prior = 200
 active = animpoint@stand
 level_spot = mechanic
@@ -91,7 +91,7 @@ use = {=actor_enemy} false, true
 
 ;hangar trader
 [logic@gar_bandit_trader]
-suitable = {=check_npc_name(gar_bandit_trader)} true, {=check_npc_trader} true
+suitable = {=check_npc_name(gar_bandit_trader)} true
 prior = 200
 active = animpoint@trader
 level_spot = trader

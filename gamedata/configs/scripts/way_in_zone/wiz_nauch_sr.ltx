@@ -11,7 +11,7 @@ on_info = {+wiz_storyline_dialog_rjaviu_done} sr_idle@check_info %=hero_thoughts
 on_info = {+wiz_storyline_dialog_foma_done} sr_idle@bolotnaya_tvar %=give_task(bolotnaya_tvar) =spawn_corpse(wiz_nazar:wiz_sp_nazar_corpse) =wiz_spawn_krovosos =hero_thoughts_10%
 
 [sr_idle@bolotnaya_tvar]
-on_info = {+bolotnaya_tvar_death} sr_idle@timer %=bolotnaya_tvar_die_actor =scenario_autosave(st_save_jup_b9_searched_heli_1)%
+on_info = {+bolotnaya_tvar_death} sr_idle@timer %=bolotnaya_tvar_die_actor =scenario_autosave(st_save_bolotnaya_tvar_die)%
 
 [sr_idle@timer]
 on_timer = 8000 | sr_idle@po_goryachim_sledam %=bolotnaya_tvar_die_foma%
@@ -20,7 +20,7 @@ on_timer = 8000 | sr_idle@po_goryachim_sledam %=bolotnaya_tvar_die_foma%
 on_info = {+wiz_storyline_going_tonnel_more} sr_idle@po_goryachim_sledam_reversed %=give_task(po_goryachim_sledam) =spawn_object(wiz_pda_rezaka:wiz_sp_pda_rezaka) =hero_thoughts_17_1%
 
 [sr_idle@po_goryachim_sledam_reversed]
-on_info = {=actor_has_item(wiz_pda_rezaka)} sr_idle@message_from_rjaviu %=give_task(katacombs) +wiz_storyline_dialog_foma_katacombs_open =scenario_autosave(st_save_zat_b100_searched_heli_2)%
+on_info = {=actor_has_item(wiz_pda_rezaka)} sr_idle@message_from_rjaviu %=give_task(katacombs) +wiz_storyline_dialog_foma_katacombs_open =scenario_autosave(st_save_katacombs)%
 
 [sr_idle@message_from_rjaviu]
 on_info = {+wiz_storyline_dialog_foma_katacombs_open} sr_idle@wiz_pda_rezaka_info

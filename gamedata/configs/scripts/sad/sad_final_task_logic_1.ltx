@@ -37,7 +37,7 @@ on_info2 = {=actor_in_zone(sad_b3_explosive_cutscene)} sr_idle@ataka_spawn, {=ac
 on_info3 = {+sad_nauchny_bomba_give} sr_idle@ataka_spawn
 
 [sr_idle@ataka_spawn]
-on_info = sr_idle@ataka %=create_squad(sad_b3_merc_a_squad:sad_b3a) =create_squad(sad_b3_merc_b_squad:sad_b3a) +sad_b3_merc_ataka_start =send_tip(sad_ivan_we_attacked:sad_b3_trader) +sad_nauchny_switch_ran =teleport_squad(sad_final_ucheny_squad:sad_ran_podval_spawn) =create_squad_member(sim_default_stalker_2:sad_final_ucheny_squad:sad_ran_surge_2_walk) =create_squad_member(sim_default_stalker_2:sad_final_ucheny_squad:sad_ran_surge_1_walk)%
+on_info = sr_idle@ataka %=create_squad(sad_b3_merc_a_squad:sad_b3) =create_squad(sad_b3_merc_b_squad:sad_b3) +sad_b3_merc_ataka_start =send_tip(sad_ivan_we_attacked:sad_b3_trader) +sad_nauchny_switch_ran =teleport_squad(sad_final_ucheny_squad:sad_ran_podval_spawn) =create_squad_member(sim_default_stalker_2:sad_final_ucheny_squad:sad_ran_surge_2_walk) =create_squad_member(sim_default_stalker_2:sad_final_ucheny_squad:sad_ran_surge_1_walk)%
 
 [sr_idle@ataka]:sr_idle@def
 on_info2 = {=actor_has_item(sad_nauchny_explosive)} sr_idle@300 %+sad_nauchny_bomba_has%
@@ -67,13 +67,13 @@ on_info2 = {=distance_to_obj_le(sad_ucheny_1:30)} sr_idle@400
 on_game_timer = 180 | sr_idle@cancel %+sad_nauchny_exit_cave +sad_nauchny_task_cancel =send_tip(sad_nauchny_faraway_3:sad_ucheny_1)%
 
 [sr_idle@410]
-on_info = {=story_object_exist(sad_nauchny_explosive_grenade)} sr_idle@411 %=barrel_explode(sad_nauchny_explosive_grenade)%
+on_info = sr_idle@411 %=barrel_explode(sad_nauchny_explosive_grenade)%
 
 [sr_idle@411]
-on_info = {=story_object_exist(sad_zaslon_kamen)} sr_idle@420 %=destroy_object(story:sad_zaslon_kamen)%, sr_idle@420
+on_info = sr_idle@420 %=destroy_object(story:sad_zaslon_kamen)%, sr_idle@420
 
 [sr_idle@420]
-on_info = {=story_object_exist(sad_nauchny_explosive_charge)} sr_idle@430 %=destroy_object(story:sad_nauchny_explosive_charge) =run_postprocess(effector_explode_hit)%, sr_idle@430 %=run_postprocess(effector_explode_hit)% ; =run_cam_effector(shell_shock)
+on_info = sr_idle@430 %=destroy_object(story:sad_nauchny_explosive_charge) =run_postprocess(effector_explode_hit)%, sr_idle@430 %=run_postprocess(effector_explode_hit)% ; =run_cam_effector(shell_shock)
 
 [sr_idle@430]
 on_game_timer = 30 | sr_idle@500 %+sad_nauchny_switch_cave =create_squad(sad_cave_zombied:sad_cave) =set_counter(sad_cave_mob_dead:0) =spawn_corpse(sad_cave_corpse_1:sad_cave_zombi_walk_1:0) =spawn_corpse(sad_cave_corpse_2:sad_cave_zombi_walk_1:3)%
@@ -98,7 +98,7 @@ on_info3 = {!actor_in_zone(sad_nauchny_cave_sr_light)} sr_idle@all_dead
 on_game_timer = 900 | sr_idle@540 %+sad_cave_dont_spawn_tushkanos%
 
 [sr_idle@540]:sr_idle@def
-on_info2 = {!squad_exist(sad_cave_tushkans)} sr_idle@600 %+sad_nauchny_go_cave_2% ;=play_sound(jup_b1_stalkers_monsters_beat_off)%
+on_info2 = {!squad_exist(sad_cave_tushkans)} sr_idle@600 %+sad_nauchny_go_cave_2 =play_sound(jup_b1_stalkers_monsters_beat_off)%
 on_info3 = {!actor_in_zone(sad_nauchny_cave_sr_light)} sr_idle@all_dead
 on_game_timer = 180 | sr_idle@600 %+sad_nauchny_go_cave_2%
 

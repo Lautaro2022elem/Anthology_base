@@ -17,6 +17,6 @@ on_info = {+wiz_mut_num_3_squad_die} sr_idle@all_mut_die %=create_squad(wiz_mut_
 on_info = {+wiz_mut_num_1_squad_die +wiz_mut_num_2_squad_die +wiz_mut_num_3_squad_die +wiz_mut_num_4_squad_die} sr_idle@check_reward %+wiz_mutants_hunting_take_reward =foma_reward_give_treasure =spawn_object_in(af_vyvert_breeding_1:wiz_treasure_0001)%
 
 [sr_idle@check_reward]
-on_info = {+wiz_mut_num_1_squad_die +wiz_mut_num_2_squad_die +wiz_mut_num_3_squad_die +wiz_mut_num_4_squad_die +wiz_mutants_hunting_take_reward =actor_has_item(af_vyvert)} sr_idle@nil %+wiz_second_quest_all_mut_die%
+on_info = {+wiz_mut_num_1_squad_die +wiz_mut_num_2_squad_die +wiz_mut_num_3_squad_die +wiz_mut_num_4_squad_die +wiz_mutants_hunting_take_reward =actor_has_item(af_vyvert_breeding_1)} sr_idle@nil %+wiz_second_quest_all_mut_die%
 
 [sr_idle@nil]

@@ -128,7 +128,7 @@ target = {+pri_a17_monolith_assault_squad_death} lost_stalker_strelok, {=actor_i
 descr = {+pri_a16_strelok_reached} lttz_oa_strelok_text4, {+pri_a17_strelok_dialogue} lttz_oa_strelok_text3, {+pri_a17_monolith_assault_squad_death} lttz_oa_strelok_text2, lttz_oa_strelok_text
 
 on_init = %=create_squad(pri_a17_monolith_assault_squad:pri_a17)%
-on_complete = %=reward_item(af_gravi_af_aac) =complete_task_inc_goodwill(50:stalker) =create_squad(stalker_rogue_oa_squad:pri_a25_smart_terrain) =create_squad(stalker_stitch_oa_squad:pri_a28_heli)%
+on_complete = %=reward_item(af_gravi_af_aac) =complete_task_inc_goodwill(50:stalker) =create_squad(stalker_rogue_oa_squad:pri_a25_smart_terrain) =create_squad(stalker_stitch_oa_squad:pri_a28_heli) =spawn_object(pri_a25_explosive_charge_item:pri_a25_smart_terrain_cutscene_actor_walk:0)%
 condlist_0 = {+pri_a16_strelok_dialogue} complete
 condlist_1 = {+lost_stalker_strelok_dead} fail
 

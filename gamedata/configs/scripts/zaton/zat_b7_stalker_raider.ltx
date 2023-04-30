@@ -12,7 +12,7 @@ meet = meet@leader_start
 def_state_standing = wait_na
 on_info = {-zat_b7_bandit_boss_sultan_intro =see_actor} walker@leader_start_hello
 on_info2 = {+zat_b7_task_fail} walker@leader_start
-on_info3 = {+zat_b7_stalker_teleported} %=teleport_npc(leader_attack_start_walk)%
+on_info3 = {-zat_b7_stalker_raider_leader_teleport +zat_b7_stalkers_raiders_attack} %=teleport_npc(zat_b7_stalkers_raiders_spawn_2) +zat_b7_stalker_raider_leader_teleport%
 combat_ignore_cond = {=actor_enemy =check_enemy_name(actor)} false, true
 combat_ignore_keep_when_attacked = true
 invulnerable = {!actor_enemy} true, false
@@ -29,7 +29,7 @@ meet = meet@leader_start
 def_state_standing = wait_na
 on_game_timer = 250 | {-zat_b7_task_fail -zat_b7_bandit_boss_sultan_intro =dist_to_actor_le(6) =dist_to_actor_ge(3) =see_actor} walker@leader_start_hello
 combat_ignore_cond = {=actor_enemy =check_enemy_name(actor)} false, true
-on_info = {+zat_b7_stalker_teleported} %=teleport_npc(leader_attack_start_walk)%
+on_info = {-zat_b7_stalker_raider_leader_teleport +zat_b7_stalkers_raiders_attack} %=teleport_npc(zat_b7_stalkers_raiders_spawn_2) +zat_b7_stalker_raider_leader_teleport%
 combat_ignore_keep_when_attacked = true
 invulnerable = {!actor_enemy} true, false
 out_restr = zat_a2_sr_noweap
@@ -46,7 +46,7 @@ meet = meet@leader_start_hello
 on_game_timer = 50 | walker@leader_start
 on_info = {+zat_b7_task_fail} walker@leader_start
 combat_ignore_cond = {=actor_enemy =check_enemy_name(actor)} false, true
-on_info = {+zat_b7_stalker_teleported} %=teleport_npc(leader_attack_start_walk)%
+on_info2 = {-zat_b7_stalker_raider_leader_teleport +zat_b7_stalkers_raiders_attack} %=teleport_npc(zat_b7_stalkers_raiders_spawn_2) +zat_b7_stalker_raider_leader_teleport%
 combat_ignore_keep_when_attacked = true
 invulnerable = {!actor_enemy} true, false
 out_restr = zat_a2_sr_noweap
@@ -99,7 +99,7 @@ meet = meet@leader_start_attack
 on_info = {=is_squad_enemy_to_actor(zat_b7_stalkers_victims_1) +zat_b7_stalkers_raiders_meet} camper@leader_attack %+zat_b7_stalkers_raiders_attack_started%, {+zat_b7_stalkers_raiders_attack_started +zat_b7_stalkers_raiders_meet} walker@leader_walk_to_position
 on_info2 = {!squad_exist(zat_b7_stalkers_victims_1) -zat_b7_victims_disappeared -zat_b7_actor_killed_victims_self -zat_b7_stalkers_raiders_meet} %+zat_b7_actor_killed_victims_self +zat_b7_attack_started%
 on_info3 = {-zat_b7_stalkers_raiders_meet =squad_in_zone(zat_b7_stalkers_raiders:zat_b7_sr_stalkers_raiders_attack)} %+zat_b7_stalkers_raiders_meet%
-on_info4 = {+zat_b7_stalker_teleported} %=teleport_npc(leader_attack_start_walk)%
+on_info4 = {-zat_b7_stalker_raider_leader_teleport +zat_b7_stalkers_raiders_attack} %=teleport_npc(leader_attack_start_walk) +zat_b7_stalker_raider_leader_teleport%
 def_state_moving = assault
 gather_items_enabled = false
 corpse_detection_enabled = false
@@ -124,7 +124,6 @@ on_info =  {+zat_b7_stalker_raider_leader_on_position} camper@leader_attack
 on_info2 = {+zat_b7_attack_started -zat_b7_victims_disappeared -zat_b7_actor_killed_victims_self} camper@leader_attack
 on_info3 = {=is_squad_enemy_to_actor(zat_b7_stalkers_victims_1)} camper@leader_attack
 on_info4 = {=squad_in_zone_all(zat_b7_stalkers_raiders:zat_b7_prepared_for_attack) !actor_enemy} %+zat_b7_stalker_raider_leader_on_position =play_sound(zat_b7_raiders_attack)%
-on_info5 = {+zat_b7_stalker_teleported} %=teleport_npc(leader_attack_start_walk)%
 team = zat_b7_stalkers_raiders
 meet = no_meet
 combat_ignore_cond = {=actor_enemy =check_enemy_name(actor)} false, true

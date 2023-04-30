@@ -77,7 +77,7 @@ on_signal = cameff_end | sr_idle@cs_end_1 %=run_postprocess(black:9747)%
 on_signal2 = cam_effector_stop | sr_idle@cs_end_1 %=run_postprocess(black:9747)%
 
 [sr_idle@cs_end_1]
-on_timer = 250 | sr_idle@cs_end_2 %=teleport_npc_by_story_id(sad_b1_stalker_mutny:sad_sim_1_mutny_rage_walk1)%
+on_timer = 250 | sr_idle@cs_end_2 ;%=teleport_npc_by_story_id(sad_b1_stalker_mutny:sad_sim_1_mutny_rage_walk1)%
 
 [sr_idle@cs_end_2]
 on_info = {=story_object_exist(sad_b1_cs_actor)} sr_idle@cs_end_3 %=destroy_object(story:sad_b1_cs_actor)%, sr_idle@cs_end_3

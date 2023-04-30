@@ -1,11 +1,21 @@
 [logic]
-active = sr_idle@spawner
+active = sr_idle@start
+
+[sr_idle@start]
+;on_info = {=actor_community(actor_bandit)} sr_idle@spawner
+on_info2 = {=actor_community(actor_dolg)} sr_idle@spawner
+on_info3 = {=actor_community(actor_ecolog)} sr_idle@spawner
+on_info4 = {=actor_community(actor_freedom)} sr_idle@spawner
+;on_info5 = {=actor_community(actor_killer)} sr_idle@spawner
+;on_info6 = {=actor_community(actor_army)} sr_idle@spawner
+on_info7 = {=actor_community(actor_stalker)} sr_idle@spawner
+on_info8 = {=actor_community(actor_csky)} sr_idle@spawner
+;on_info9 = {=actor_community(actor_renegade)} sr_idle@spawner
+;on_info10 = {=actor_community(actor_greh)} sr_idle@spawner
+;on_info11 = {=actor_community(actor_isg)} sr_idle@spawner
+;on_info12 = {=actor_community(actor_monolith)} sr_idle@spawner
 
 [sr_idle@spawner]
-on_info = {+bar_deactivate_radar_done} sr_idle@spawner2 %=create_squad(pri_smart_monolith_stalker3_squad:pri_smart_monolith_stalker3)=create_squad(pri_smart_tushkano_lair1_squad:pri_smart_tushkano_lair1) =create_squad(pri_smart_pseudodog_lair1_squad:pri_smart_pseudodog_lair1) =create_squad(pri_smart_controler_lair1_squad:pri_smart_controler_lair1) =create_squad(aes_smart_terrain_monolit_blockpost4_squad:aes_smart_terrain_monolit_blockpost4)%
-
-[sr_idle@spawner2]
-on_info = {+bar_deactivate_radar_done !is_faction_enemy_to_actor(stalker)} sr_idle@nil
-%=create_squad(pri_followers_stalker_squad:pri_smart_neutral_stalker1)%
+on_info = {+bar_deactivate_radar_done} sr_idle@nil %=create_squad(pri_followers_stalker_squad:pri_smart_neutral_stalker1) =create_squad(pri_smart_monolith_stalker3_squad:pri_smart_monolith_stalker3) =create_squad(pri_smart_tushkano_lair1_squad:pri_smart_tushkano_lair1) =create_squad(pri_smart_pseudodog_lair1_squad:pri_smart_pseudodog_lair1) =create_squad(pri_smart_controler_lair1_squad:pri_smart_controler_lair1) =create_squad(aes_smart_terrain_monolit_blockpost4_squad:aes_smart_terrain_monolit_blockpost4)%
 
 [sr_idle@nil]

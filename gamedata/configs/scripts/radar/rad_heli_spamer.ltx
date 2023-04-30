@@ -1,5 +1,22 @@
 [logic]
-active = sr_idle
+active = sr_idle@start
+
+[sr_idle@start]
+on_info = {=actor_community(actor_bandit)} sr_idle
+on_info2 = {=actor_community(actor_dolg)} sr_idle
+on_info3 = {=actor_community(actor_ecolog)} sr_idle
+on_info4 = {=actor_community(actor_freedom)} sr_idle
+on_info5 = {=actor_community(actor_killer)} sr_idle
+on_info6 = {=actor_community(actor_army)} sr_idle
+on_info7 = {=actor_community(actor_stalker)} sr_idle
+on_info8 = {=actor_community(actor_csky)} sr_idle
+on_info9 = {=actor_community(actor_renegade)} sr_idle
+on_info10 = {=actor_community(actor_greh)} sr_idle
+on_info11 = {=actor_community(actor_isg)} sr_idle
+;on_info12 = {=actor_community(actor_monolith)} sr_idle
 
 [sr_idle]
-on_actor_inside = {+bar_deactivate_radar_done =is_faction_enemy_to_actor(monolith)} nil % =create_squad(rad_antenna_specnaz_squad:rad_antenna_specnaz) =create_squad(rad_antenna_monolith_squad:rad_antenna_monolith) =create_squad(rad_antenna_patrol_squad:rad_antenna_patrol) =spawn_object(rad2_stalker_0001:rad_military_raid_w3:0) =spawn_object(rad2_stalker:rad_military_raid_w1:0) =spawn_object(rad2_stalker_0000:rad_military_raid_w2:0) =spawn_object(rad2_military:rad_military_sniper_w1:0) =play_snd(characters_voice\scenario\radar\rad_soldier_des_1)% 
+on_actor_inside = {+bar_deactivate_radar_done} sr_idle@rad_soldier_des_1 %=create_squad(rad_antenna_specnaz_squad:rad_antenna_specnaz) =create_squad(rad_antenna_monolith_squad:rad_antenna_monolith) =create_squad(rad_antenna_patrol_squad:rad_antenna_patrol) =spawn_object(rad2_stalker_0001:rad_military_raid_w3:0) =spawn_object(rad2_stalker:rad_military_raid_w1:0) =spawn_object(rad2_stalker_0000:rad_military_raid_w2:0) =spawn_object(rad2_military:rad_military_sniper_w1:0)% 
+
+[sr_idle@rad_soldier_des_1]
+on_timer = 6000| nil %=play_snd(characters_voice\scenario\radar\rad_soldier_des_1)%

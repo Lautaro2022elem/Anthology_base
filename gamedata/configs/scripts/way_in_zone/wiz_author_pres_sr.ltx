@@ -2,7 +2,7 @@
 active = sr_idle@presents
 
 [sr_idle@presents]
-on_info = {=actor_on_level(way_in_zone)} sr_idle@presents_start %=disable_ui =run_postprocess(black:1488:true)%
+on_info = {=actor_on_level(wiz)} sr_idle@presents_start %=disable_ui =run_postprocess(black:1488:true)%
 
 [sr_idle@presents_start];Приветствие автора и мода.
 on_info = {!black_screen} sr_idle@txt %=add_cs_text(st_wiz_start_game_text_lanser_0)%

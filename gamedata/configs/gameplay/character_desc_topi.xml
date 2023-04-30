@@ -111,13 +111,13 @@
              	</supplies>   
                  #include "gameplay\character_criticals.xml" 
         <actor_dialog>dm_init_trader</actor_dialog>
+    <actor_dialog>dm_medic_general</actor_dialog>
 	   <actor_dialog>dm_ordered_task_dialog</actor_dialog>
 	   <actor_dialog>dm_ordered_task_completed_dialog</actor_dialog>
 	   <actor_dialog>dm_ordered_task_cancel_dialog</actor_dialog>
         <actor_dialog>topi_a45_medic_quest_angel_first_dialog</actor_dialog>				 
         <actor_dialog>topi_i1_medic_yad_quest_dialog</actor_dialog>				 
         <actor_dialog>topi_a1_main_suget_second_quest_medic_dialog</actor_dialog>				 
-		<actor_dialog>topi_b22_stalker_medic_need_health_care</actor_dialog>
         <actor_dialog>topi_medic_quest_sborki_init_dialog</actor_dialog>
 		<actor_dialog>topi_b30_owl_medic_quests_end</actor_dialog>
         <actor_dialog>topi_medic_sborkiquest_find_dialog</actor_dialog>
@@ -305,8 +305,9 @@
 		<community>stalker</community>
 		<terrain_sect>stalker_terrain</terrain_sect>
 		<snd_config>characters_voice\human\dolg_3\</snd_config>
-		<rank>100</rank>
-		<reputation>0</reputation>
+		<rank>16743</rank>
+		<reputation>1874</reputation>
+		<money min="1000000" max="1000000" infinitive="1"/>
 		<visual>actors\stalker_neutral_base\neutral_base_tokar</visual>
 		<supplies>
                  [spawn] \n                 
@@ -2000,7 +2001,7 @@
 <!---------------------Группа связного из Чистого Неба. Первый квест второй концовки.---------------------------->
 <specific_character id="topi_var_2_suget_quest_1_csky_member_1" team_default="1">
 		<name>topi_a3_suget_quest_3_svayznoy_name</name>
-		<icon>ui_inGame2_topi_csky_2_gas</icon>
+		<icon>ui_inGame2_csky_2_gas</icon>
 		<map_icon x="1" y="0">
 		</map_icon>
 		<bio>Опытный сталкер. Детальная информация отсутствует.</bio>
@@ -2010,7 +2011,7 @@
 		<snd_config>characters_voice\human\csky_3\</snd_config>
 		<rank>100</rank>
 		<reputation>0</reputation>
-		<visual>actors\stalker_nebo\stalker_nebo_1_proto_2</visual>
+		<visual>actors\stalker_nebo\stalker_nebo_1_proto</visual>
 		<supplies>
                  [spawn] \n                 
                  wpn_ak104 \n			
@@ -2029,7 +2030,7 @@
 </specific_character>
 <specific_character id="topi_var_2_suget_quest_1_csky_member_2" team_default="1">
 		<name>GENERATE_NAME_stalker</name>
-		<icon>ui_inGame2_topi_csky_2_gas</icon>
+		<icon>ui_inGame2_csky_2_gas</icon>
 		<map_icon x="1" y="0">
 		</map_icon>
 		<bio>Опытный сталкер. Детальная информация отсутствует.</bio>
@@ -2039,7 +2040,7 @@
 		<snd_config>characters_voice\human\csky_2\</snd_config>
 		<rank>100</rank>
 		<reputation>0</reputation>
-		<visual>actors\stalker_nebo\stalker_nebo_cs3_proto_1</visual>
+		<visual>actors\stalker_nebo\stalker_nebo_1_proto</visual>
 		<supplies>
                  [spawn] \n                 
                 wpn_aek971 \n
@@ -2057,7 +2058,7 @@
 </specific_character>
 <specific_character id="topi_var_2_suget_quest_1_csky_member_3" team_default="1">
 		<name>GENERATE_NAME_stalker</name>
-		<icon>ui_inGame2_topi_csky_2_gas</icon>
+		<icon>ui_inGame2_csky_2_gas</icon>
 		<map_icon x="1" y="0">
 		</map_icon>
 		<bio>Опытный сталкер. Детальная информация отсутствует.</bio>
@@ -2067,7 +2068,7 @@
 		<snd_config>characters_voice\human\csky_3\</snd_config>
 		<rank>100</rank>
 		<reputation>0</reputation>
-		<visual>actors\stalker_nebo\stalker_nebo_cs3_proto_2</visual>
+		<visual>actors\stalker_nebo\stalker_nebo_1_proto</visual>
 		<supplies>
                  [spawn] \n                 
                  wpn_aek971 \n
@@ -2874,7 +2875,7 @@
   </specific_character>  
 <specific_character id="topi_svyaznoy_var_1_suget_quest_final" team_default="1">
 		<name>topi_a3_suget_quest_3_svayznoy_name</name>
-		<icon>ui_inGame2_topi_csky_2_gas</icon>
+		<icon>ui_inGame2_stalker_merc_skat</icon>
 		<map_icon x="1" y="0">
 		</map_icon>
 		<bio>Опытный сталкер. Детальная информация отсутствует.</bio>
@@ -2884,7 +2885,7 @@
 		<snd_config>characters_voice\human\csky_3\</snd_config>
 		<rank>100</rank>
 		<reputation>0</reputation>
-		<visual>actors\stalker_nebo\stalker_nebo_1_proto_2</visual>
+		<visual>actors\stalker_nebo\stalker_nebo_skat</visual>
 		<supplies>
                  [spawn] \n                 
                  wpn_vintorez \n
@@ -2986,7 +2987,7 @@
 </specific_character>
 <specific_character id="topi_var_1_suget_quest_final_csky_member_4" team_default="1">
 		<name>GENERATE_NAME_stalker</name>
-		<icon>ui_inGame2_topi_csky_sun_battle</icon>
+		<icon>ui_inGame2_stalker_nebo_skat</icon>
 		<map_icon x="1" y="0">
 		</map_icon>
 		<bio>Опытный сталкер. Детальная информация отсутствует.</bio>
@@ -2996,7 +2997,7 @@
 		<snd_config>characters_voice\human\csky_3\</snd_config>
 		<rank>100</rank>
 		<reputation>0</reputation>
-		<visual>actors\stalker_nebo\stalker_nebo_s_battle</visual>
+		<visual>actors\stalker_nebo\stalker_nebo_military</visual>
 		<supplies>
                  [spawn] \n                 
                  wpn_ak101 \n
@@ -3070,7 +3071,7 @@
 </specific_character>
 <specific_character id="topi_var_1_suget_quest_final_csky_member_7" team_default="1">
 		<name>GENERATE_NAME_stalker</name>
-		<icon>ui_inGame2_topi_csky_sun_nohood</icon>
+		<icon>ui_inGame2_csky_nauchniy</icon>
 		<map_icon x="1" y="0">
 		</map_icon>
 		<bio>Опытный сталкер. Детальная информация отсутствует.</bio>
@@ -3080,7 +3081,7 @@
 		<snd_config>characters_voice\human\csky_3\</snd_config>
 		<rank>100</rank>
 		<reputation>0</reputation>
-		<visual>actors\stalker_nebo\stalker_nebo_s_rukzak_2</visual>
+		<visual>actors\stalker_nebo\stalker_nebo_seva_2</visual>
 		<supplies>
                  [spawn] \n                 
                  wpn_l96 \n
@@ -3612,7 +3613,7 @@
 </specific_character>
 <specific_character id="topi_a15_dolg_vozmezdie_member_1" team_default = "1">
         <name>GENERATE_NAME_sergeant</name>
-        <icon>ui_inGame2_topi_Dolg_3</icon>
+        <icon>ui_inGame2_Dolg_2</icon>
         <map_icon x="1" y="0"></map_icon>
         <bio>Опытный сталкер. Детальная информация отсутствует.</bio>
         <class>topi_a15_dolg_vozmezdie_member_1</class>
@@ -3621,7 +3622,7 @@
         <rank>45</rank>
         <reputation>0</reputation>
 	    <money min="1500" max="3500" infinitive="0"/>
-        <visual>actors\stalker_dolg\stalker_dolg3a</visual>
+        <visual>actors\stalker_dolg\stalker_dolg_2</visual>
         <supplies>
                   [spawn] \n      
                  wpn_ak104 \n			
@@ -3665,7 +3666,7 @@
 <!---------------------Квест возмездие Свободы и Долга.---------------------------->
 <specific_character id="topi_a15_freedom_member_killer_1" team_default="1">
 		<name>GENERATE_NAME_stalker</name>
-		<icon>ui_inGame2_topi_Soldier_4</icon>
+		<icon>ui_inGame2_Freedom_1</icon>
 		<map_icon x="1" y="0">
 		</map_icon>
 		<bio>Опытный сталкер. Детальная информация отсутствует.</bio>
@@ -3675,7 +3676,7 @@
 		<snd_config>characters_voice\human\freedom_3\</snd_config>
 		<rank>100</rank>
 		<reputation>0</reputation>
-		<visual>actors\stalker_freedom\stalker_freedom_military</visual>
+		<visual>actors\stalker_freedom\stalker_freedom_1</visual>
 		<supplies>
                  [spawn] \n                 
                  wpn_ak102 \n   
@@ -3693,7 +3694,7 @@
 </specific_character>
 <specific_character id="topi_a15_freedom_member_killer_2" team_default="1">
 		<name>GENERATE_NAME_stalker</name>
-		<icon>ui_inGame2_topi_Soldier_4</icon>
+		<icon>ui_inGame2_freedom_proto</icon>
 		<map_icon x="1" y="0">
 		</map_icon>
 		<bio>Опытный сталкер. Детальная информация отсутствует.</bio>
@@ -3703,7 +3704,7 @@
 		<snd_config>characters_voice\human\freedom_3\</snd_config>
 		<rank>100</rank>
 		<reputation>0</reputation>
-		<visual>actors\stalker_freedom\stalker_svoboda_military</visual>
+		<visual>actors\stalker_freedom\stalker_freedom_4_proto</visual>
 		<supplies>
                  [spawn] \n                 
                  wpn_ak102 \n   
@@ -4073,7 +4074,7 @@
 </specific_character>
 <specific_character id="topi_b15_dolg_member_5_hasan" team_default = "1">
         <name>GENERATE_NAME_sergeant</name>
-        <icon>ui_inGame2_topi_Dolg_2_battle</icon>
+        <icon>ui_inGame2_dolg_3_skatus</icon>
         <map_icon x="1" y="0"></map_icon>
         <bio>Опытный сталкер. Детальная информация отсутствует.</bio>
         <class>topi_b15_dolg_member_5_hasan</class>
@@ -4082,7 +4083,7 @@
         <rank>45</rank>
         <reputation>0</reputation>
 	    <money min="1500" max="3500" infinitive="0"/>
-        <visual>actors\stalker_dolg\stalker_dolg2a_battle</visual>
+        <visual>actors\stalker_dolg\stalker_dolg_3_psz9d_skat</visual>
         <supplies>
                   [spawn] \n      
                  wpn_ak104 \n			
@@ -4128,7 +4129,7 @@
 </specific_character>
 <specific_character id="topi_b15_freedom_member_2_harold" team_default="1">
 		<name>GENERATE_NAME_stalker</name>
-		<icon>ui_inGame2_topi_Soldier_4</icon>
+		<icon>ui_inGame2_freedom_proto</icon>
 		<map_icon x="1" y="0">
 		</map_icon>
 		<bio>Опытный сталкер. Детальная информация отсутствует.</bio>
@@ -4138,7 +4139,7 @@
 		<snd_config>characters_voice\human\freedom_1\</snd_config>
 		<rank>100</rank>
 		<reputation>0</reputation>
-		<visual>actors\stalker_freedom\stalker_svoboda_military</visual>
+		<visual>actors\stalker_freedom\stalker_freedom_4_proto</visual>
 		<supplies>
                  [spawn] \n                 
                  wpn_lr300 \n   
@@ -4156,7 +4157,7 @@
 </specific_character>
 <specific_character id="topi_b15_freedom_member_3_harold" team_default="1">
 		<name>GENERATE_NAME_stalker</name>
-		<icon>ui_inGame2_topi_Soldier_4</icon>
+		<icon>ui_inGame2_Freedom_1</icon>
 		<map_icon x="1" y="0">
 		</map_icon>
 		<bio>Опытный сталкер. Детальная информация отсутствует.</bio>
@@ -4166,7 +4167,7 @@
 		<snd_config>characters_voice\human\freedom_3\</snd_config>
 		<rank>100</rank>
 		<reputation>0</reputation>
-		<visual>actors\stalker_freedom\stalker_freedom_military</visual>
+		<visual>actors\stalker_freedom\stalker_freedom_1</visual>
 		<supplies>
                  [spawn] \n                 
                  wpn_ak102 \n   
@@ -4184,7 +4185,7 @@
 </specific_character>
 <specific_character id="topi_b15_freedom_member_4_harold" team_default="1">
 		<name>GENERATE_NAME_stalker</name>
-		<icon>ui_inGame2_topi_freedom_3_nohood</icon>
+		<icon>ui_inGame2_Freedom_2</icon>
 		<map_icon x="1" y="0">
 		</map_icon>
 		<bio>Опытный сталкер. Детальная информация отсутствует.</bio>
@@ -4194,7 +4195,7 @@
 		<snd_config>characters_voice\human\freedom_1\</snd_config>
 		<rank>100</rank>
 		<reputation>0</reputation>
-		<visual>actors\stalker_freedom\stalker_freedom3a_nohood</visual>
+		<visual>actors\stalker_freedom\stalker_freedom_2</visual>
 		<supplies>
                  [spawn] \n                 
                  wpn_lr300 \n   
@@ -4212,7 +4213,7 @@
 </specific_character>
 <specific_character id="topi_b15_freedom_member_5_harold" team_default="1">
 		<name>GENERATE_NAME_stalker</name>
-		<icon>ui_inGame2_topi_freedom_3_gas</icon>
+		<icon>ui_inGame2_Freedom_2</icon>
 		<map_icon x="1" y="0">
 		</map_icon>
 		<bio>Опытный сталкер. Детальная информация отсутствует.</bio>
@@ -4222,7 +4223,7 @@
 		<snd_config>characters_voice\human\freedom_3\</snd_config>
 		<rank>100</rank>
 		<reputation>0</reputation>
-		<visual>actors\stalker_freedom\stalker_freedom3a_gas</visual>
+		<visual>actors\stalker_freedom\stalker_freedom_2</visual>
 		<supplies>
                  [spawn] \n                 
                  wpn_ak102 \n   
@@ -4275,7 +4276,7 @@
         <rank>45</rank>
         <reputation>0</reputation>
 	    <money min="1500" max="3500" infinitive="0"/>
-        <visual>actors\stalker_dolg\stalker_dolg3a</visual>
+        <visual>actors\stalker_dolg\stalker_dolg_2</visual>
         <supplies>
                   [spawn] \n      
                  wpn_akm \n			
@@ -4318,7 +4319,7 @@
 </specific_character>
 <specific_character id="topi_b15_dolg_member_4_harold" team_default = "1">
         <name>GENERATE_NAME_sergeant</name>
-        <icon>ui_inGame2_topi_Dolg_3</icon>
+        <icon>ui_inGame2_Dolg_2</icon>
         <map_icon x="1" y="0"></map_icon>
         <bio>Опытный сталкер. Детальная информация отсутствует.</bio>
         <class>topi_b15_dolg_member_4_harold</class>
@@ -4327,7 +4328,7 @@
         <rank>45</rank>
         <reputation>0</reputation>
 	    <money min="1500" max="3500" infinitive="0"/>
-        <visual>actors\stalker_dolg\stalker_dolg3a</visual>
+        <visual>actors\stalker_dolg\stalker_dolg_2</visual>
         <supplies>
                   [spawn] \n      
                  wpn_ak104 \n			
@@ -4344,7 +4345,7 @@
 </specific_character>
 <specific_character id="topi_b15_dolg_member_5_harold" team_default = "1">
         <name>GENERATE_NAME_sergeant</name>
-        <icon>ui_inGame2_topi_Dolg_4e</icon>
+        <icon>ui_inGame2_light_metro_all_suit</icon>
         <map_icon x="1" y="0"></map_icon>
         <bio>Опытный сталкер. Детальная информация отсутствует.</bio>
         <class>topi_b15_dolg_member_5_harold</class>
@@ -4353,7 +4354,7 @@
         <rank>45</rank>
         <reputation>0</reputation>
 	    <money min="1500" max="3500" infinitive="0"/>
-        <visual>actors\stalker_dolg\stalker_dolg_cs_3</visual>
+        <visual>actors\stalker_dolg\stalker_dolg_5</visual>
         <supplies>
                   [spawn] \n      
                  wpn_ak104 \n			
@@ -4790,7 +4791,7 @@
 <!---------------------Связной Чистого Неба. Второй квест третьей концовки.---------------------------->
 <specific_character id="topi_d5_csky_svayznoy_quest_2" team_default="1">
 		<name>topi_a3_suget_quest_3_svayznoy_name</name>
-		<icon>ui_inGame2_topi_csky_sun_tactic</icon>
+		<icon>ui_inGame2_csky_nauchniy</icon>
 		<map_icon x="1" y="0">
 		</map_icon>
 		<bio>Опытный сталкер. Детальная информация отсутствует.</bio>
@@ -4800,7 +4801,7 @@
 		<snd_config>characters_voice\human\csky_2\</snd_config>
 		<rank>100</rank>
 		<reputation>0</reputation>
-		<visual>actors\stalker_nebo\stalker_nebo_s_tactic</visual>
+		<visual>actors\stalker_nebo\stalker_nebo_seva_2</visual>
 		<supplies>
                  [spawn] \n                 
                  wpn_ak103 \n
@@ -4876,7 +4877,7 @@
 </specific_character>
 <specific_character id="topi_e7_csky_quest_4_member_3" team_default="1">
 		<name>GENERATE_NAME_stalker</name>
-		<icon>ui_inGame2_topi_csky_2_gas</icon>
+		<icon>ui_inGame2_csky_2_gas</icon>
 		<map_icon x="1" y="0">
 		</map_icon>
 		<bio>Опытный сталкер. Детальная информация отсутствует.</bio>
@@ -4886,7 +4887,7 @@
 		<snd_config>characters_voice\human\csky_2\</snd_config>
 		<rank>100</rank>
 		<reputation>0</reputation>
-		<visual>actors\stalker_nebo\stalker_nebo_cs3_proto_1</visual>
+		<visual>actors\stalker_nebo\stalker_nebo_1_proto</visual>
 		<supplies>
                  [spawn] \n                 
                  wpn_ak103 \n
@@ -4904,7 +4905,7 @@
 </specific_character>
 <specific_character id="topi_e7_csky_quest_4_member_4" team_default="1">
 		<name>GENERATE_NAME_stalker</name>
-		<icon>ui_inGame2_topi_csky_2_gas</icon>
+		<icon>ui_inGame2_csky_2_gas</icon>
 		<map_icon x="1" y="0">
 		</map_icon>
 		<bio>Опытный сталкер. Детальная информация отсутствует.</bio>
@@ -4914,7 +4915,7 @@
 		<snd_config>characters_voice\human\csky_3\</snd_config>
 		<rank>100</rank>
 		<reputation>0</reputation>
-		<visual>actors\stalker_nebo\stalker_nebo_cs3_proto_2</visual>
+		<visual>actors\stalker_nebo\stalker_nebo_1_proto</visual>
 		<supplies>
                  [spawn] \n                 
                  wpn_ak101 \n
@@ -4932,7 +4933,7 @@
 </specific_character>
 <specific_character id="topi_e7_csky_quest_4_member_5" team_default="1">
 		<name>GENERATE_NAME_stalker</name>
-		<icon>ui_inGame2_topi_csky_2_gas</icon>
+		<icon>ui_inGame2_csky_3</icon>
 		<map_icon x="1" y="0">
 		</map_icon>
 		<bio>Опытный сталкер. Детальная информация отсутствует.</bio>
@@ -4942,7 +4943,7 @@
 		<snd_config>characters_voice\human\csky_3\</snd_config>
 		<rank>100</rank>
 		<reputation>0</reputation>
-		<visual>actors\stalker_nebo\stalker_nebo_cs3_proto_2</visual>
+		<visual>actors\stalker_nebo\stalker_nebo_3</visual>
 		<supplies>
                  [spawn] \n                 
                  wpn_ak101 \n
@@ -4960,7 +4961,7 @@
 </specific_character>
 <specific_character id="topi_e7_csky_quest_4_member_6" team_default="1">
 		<name>GENERATE_NAME_stalker</name>
-		<icon>ui_inGame2_topi_csky_3_nohood</icon>
+		<icon>ui_inGame2_csky_3</icon>
 		<map_icon x="1" y="0">
 		</map_icon>
 		<bio>Опытный сталкер. Детальная информация отсутствует.</bio>
@@ -4970,7 +4971,7 @@
 		<snd_config>characters_voice\human\csky_2\</snd_config>
 		<rank>100</rank>
 		<reputation>0</reputation>
-		<visual>actors\stalker_nebo\stalker_nebo_3_nohood</visual>
+		<visual>actors\stalker_nebo\stalker_nebo3a</visual>
 		<supplies>
                  [spawn] \n                 
                  wpn_svd \n
@@ -4988,7 +4989,7 @@
 </specific_character>
 <specific_character id="topi_e7_csky_quest_4_member_7" team_default="1">
 		<name>GENERATE_NAME_stalker</name>
-		<icon>ui_inGame2_topi_csky_sun_soc2</icon>
+		<icon>ui_inGame2_csky_nauchniy</icon>
 		<map_icon x="1" y="0">
 		</map_icon>
 		<bio>Опытный сталкер. Детальная информация отсутствует.</bio>
@@ -4998,7 +4999,7 @@
 		<snd_config>characters_voice\human\csky_2\</snd_config>
 		<rank>100</rank>
 		<reputation>0</reputation>
-		<visual>actors\stalker_nebo\stalker_nebo_s_hood_uzor</visual>
+		<visual>actors\stalker_nebo\stalker_nebo_seva_2</visual>
 		<supplies>
                  [spawn] \n                 
                  wpn_9a91 \n
@@ -5016,7 +5017,7 @@
 </specific_character>
 <specific_character id="topi_e7_csky_quest_4_member_8" team_default="1">
 		<name>GENERATE_NAME_stalker</name>
-		<icon>ui_inGame2_topi_csky_sun_soc1</icon>
+		<icon>ui_npc_u_stalker_militari_2</icon>
 		<map_icon x="1" y="0">
 		</map_icon>
 		<bio>Опытный сталкер. Детальная информация отсутствует.</bio>
@@ -5026,7 +5027,7 @@
 		<snd_config>characters_voice\human\csky_1\</snd_config>
 		<rank>100</rank>
 		<reputation>0</reputation>
-		<visual>actors\stalker_nebo\stalker_nebo_s_balon_2</visual>
+		<visual>actors\stalker_nebo\stalker_nebo_skat</visual>
 		<supplies>
                  [spawn] \n                 
                  wpn_9a91 \n
@@ -5044,7 +5045,7 @@
 </specific_character>
 <specific_character id="topi_e7_csky_quest_4_member_9" team_default="1">
 		<name>GENERATE_NAME_stalker</name>
-		<icon>ui_inGame2_topi_csky_sun_nohood</icon>
+		<icon>ui_npc_u_stalker_militari_2</icon>
 		<map_icon x="1" y="0">
 		</map_icon>
 		<bio>Опытный сталкер. Детальная информация отсутствует.</bio>
@@ -5054,7 +5055,7 @@
 		<snd_config>characters_voice\human\csky_3\</snd_config>
 		<rank>100</rank>
 		<reputation>0</reputation>
-		<visual>actors\stalker_nebo\stalker_nebo_s_rukzak_2</visual>
+		<visual>actors\stalker_nebo\stalker_nebo_skat</visual>
 		<supplies>
                  [spawn] \n                 
                  wpn_m4a1 \n   
@@ -5072,7 +5073,7 @@
 </specific_character>
 <specific_character id="topi_e7_csky_quest_4_member_10" team_default="1">
 		<name>GENERATE_NAME_stalker</name>
-		<icon>ui_inGame2_topi_csky_nauchniy</icon>
+		<icon>ui_inGame2_csky_nauchniy</icon>
 		<map_icon x="1" y="0">
 		</map_icon>
 		<bio>Опытный сталкер. Детальная информация отсутствует.</bio>

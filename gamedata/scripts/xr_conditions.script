@@ -708,9 +708,9 @@ end
 function dist_to_actor_ge(actor, npc, p)
 	local d = p[1]
 	if d == nil then
-		printf("Wrong parameter in 'dist_to_actor_ge' function!!!")
+		abort("Wrong parameter in 'dist_to_actor_ge' function!!!")
 	end
-	return d and npc:position():distance_to_sqr(actor:position()) >= tonumber(d)^2
+	return d and npc:position():distance_to_sqr(actor:position()) >= d * d
 end
 
 
@@ -826,6 +826,7 @@ end
 function actor_out_zone(actor, npc, p)
 	return not utils_obj.npc_in_zone(db.actor, p[1])
 end
+
 function npc_in_zone(actor, npc, p)
 	if not (npc and type(npc.position) == "function") then
 		return false
@@ -3318,6 +3319,14 @@ end
 -------------------------------------------------------------------------------------------------------------------------------------------
 -------------------------------------------------------------------------------------------------------------------------------------------
 
+function is_monster_chimera(actor, npc)
+	return npc:clsid() == clsid.chimera_s
+end
+
+function is_monster_gigant(actor, npc)
+	return npc:clsid() == clsid.gigant_s
+end
+
 function sad_sher_actor_has_needed_food(actor, npc, p)
 	return dialogs_sad.sad_sher_actor_has_needed_food(actor, npc)
 end
@@ -3338,7 +3347,7 @@ function sad_warning_check(actor, npc, p) -- p[1]=dist^2
 	if wobj == nil then 
 		return false
 	end
-	if isWeapon (wobj) == false then 
+	if isWeapon_cop (wobj) == false then 
 		return false
 	end
 	local dist = p[1] or 25
@@ -3885,27 +3894,6 @@ end
 --mlr
 function is_night_special_pole(actor, npc)
 	return db.actor ~= nil and (level.get_time_hours() >= 24 or level.get_time_hours() < 01)
-end
-
--- Проверка выполняет ли кто указанную работу
-function is_obj_on_job(actor, npc, p)
-	local smart
-	if p and p[2] then
-		smart = sim_board.get_sim_board():get_smart_by_name(p[2])
-	else
-		smart = xr_gulag.get_npc_smart(npc)
-	end
-	if smart == nil then
-		return false
-	end
-	for k,v in pairs(smart.npc_info) do
-		local npc_job = smart.job_data[v.job_id]
-		printf("section [%s]", tostring(npc_job.section))
-		if npc_job.section == p[1] then
-			return true
-		end
-	end
-	return false
 end
 
 -----------Пространственная Аномалия 4.1-----------

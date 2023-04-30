@@ -1,8 +1,11 @@
 [logic] 
-active = sr_idle@jup_b217_welcome_cameff_begin
+active = sr_idle@jup_b217_welcome_cameff_begin_start
+
+[sr_idle@jup_b217_welcome_cameff_begin_start]
+on_info = {+cop_start} sr_idle@jup_b217_welcome_cameff_begin
 
 [sr_idle@jup_b217_welcome_cameff_begin]
-on_info = {+cop_start +jup_b217_welcome_faded} sr_cutscene@217
+on_info = {+jup_b217_welcome_faded} sr_cutscene@217
 
 [sr_cutscene@217]
 point = jup_a6_actor_walk

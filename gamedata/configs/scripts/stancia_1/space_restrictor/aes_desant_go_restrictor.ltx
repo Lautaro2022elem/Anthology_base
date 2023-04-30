@@ -1,5 +1,21 @@
 [logic]
-active = sr_idle
+active = sr_idle@start
+
+[sr_idle@start]
+on_info = {=actor_community(actor_bandit)} sr_idle
+on_info2 = {=actor_community(actor_dolg)} sr_idle
+on_info3 = {=actor_community(actor_ecolog)} sr_idle
+on_info4 = {=actor_community(actor_freedom)} sr_idle
+on_info5 = {=actor_community(actor_killer)} sr_idle
+on_info6 = {=actor_community(actor_army)} sr_idle
+on_info7 = {=actor_community(actor_stalker)} sr_idle
+on_info8 = {=actor_community(actor_csky)} sr_idle
+on_info9 = {=actor_community(actor_renegade)} sr_idle
+on_info10 = {=actor_community(actor_greh)} sr_idle
+on_info11 = {=actor_community(actor_isg)} sr_idle
+;on_info12 = {=actor_community(actor_monolith)} sr_idle
 
 [sr_idle]
-on_actor_inside = {=is_faction_enemy_to_actor(monolith)} %+aes_desant_go% nil
+on_actor_inside = {+bar_deactivate_radar_done} %+aes_desant_go% nil
+
+; 

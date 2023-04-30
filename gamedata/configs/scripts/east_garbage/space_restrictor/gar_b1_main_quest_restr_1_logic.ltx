@@ -9,7 +9,7 @@ on_info3 = {+gar_a2_spawn_dead_body_1 -gar_a2_first_timer_begin} sr_timer@first 
 [sr_timer@first]
 type = dec
 string = "Найти тайник"
-start_value = 300000
+start_value = 400000
 on_value = 0 | sr_idle@nil %=kill_actor +gar_a2_first_timer_end%
 on_info = {+gar_a2_gg_eat_lekarstvo_items -gar_a2_sp_killer_zas_create} sr_idle@wait_0 %=gar_a2_create_zas_killer +gar_a2_sp_killer_zas_create%
 on_game_timer = 10000 | {-gar_a6_main_quest_igra_effect_1_take} %=gar_a6_main_quest_igra_effect_1 +gar_a6_main_quest_igra_effect_1_take%
@@ -26,7 +26,7 @@ on_info = {+gar_a2_sp_borland_spasenie} sr_timer@second %+gar_a2_second_timer_be
 [sr_timer@second]
 type = dec
 string = "Спасти Борланда"
-start_value = 300000
+start_value = 400000
 on_value = 0 | sr_idle@nil %=kill_actor +gar_a2_second_timer_end%
 on_info = {+gar_a2_borland_quest_dialog_info} sr_idle@wait_2
 

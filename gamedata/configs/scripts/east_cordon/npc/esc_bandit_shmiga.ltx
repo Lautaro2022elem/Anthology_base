@@ -27,11 +27,11 @@ combat_ignore_cond = true
 use_camp = false
 on_info  = {+esc_remove_baza_bandits} %=release_npc%
 on_info2 = {+esc_dangerous_business_complite =dist_to_actor_ge(50)} %=release_npc%
-on_info3 = {+esc_quest_dangerous_business_teleport -esc_quest_dangerous_business_live_shmiga} walker@duel %=actor_enemy =relocate_npc_inventory_to_box(esc_inventory_box_base_bandits:esc_bandit_shmiga) =spawn_item_to_npc(wpn_knife) =teleport_npc(esc_quest_dangerous_business_shmiga_walk:esc_quest_dangerous_business_shmiga_look)%
+on_info3 = {+esc_quest_dangerous_business_teleport -esc_quest_dangerous_business_live_shmiga} walker@duel %=actor_enemy =relocate_npc_inventory_to_box(esc_inventory_box_base_bandits:esc_bandit_shmiga) =spawn_item_to_npc(wpn_knife) =teleport_npc(esc_smart_terrain_2_0_walker_1_walk:esc_smart_terrain_2_0_walker_1_look)%
 
 [walker@duel]
-path_walk = esc_quest_dangerous_business_shmiga_walk
-path_look = esc_quest_dangerous_business_shmiga_look
+path_walk = esc_smart_terrain_2_0_walker_1_walk
+path_look = esc_smart_terrain_2_0_walker_1_look
 wounded = wounded@no_wound
 gather_items_enabled = false
 corpse_detection_enabled = false

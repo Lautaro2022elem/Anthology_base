@@ -4,8 +4,12 @@ active = ph_idle@disable
 [ph_idle@disable]
 nonscript_usable = false
 tips = st_search_treasure_sidor_habar_closed
-on_info = {+esc_sidor_habar_open} ph_idle@enable 
+on_info = {+esc_sidor_habar_open =actor_has_item(esc_sidor_habar_key)} ph_idle@enable 
 
 [ph_idle@enable]
 nonscript_usable = true
 tips = st_search_treasure_sidor_habar_open
+on_info = {-esc_kkp_sidr_habar_box_open} %+esc_kkp_sidr_habar_box_open =esc_give_box_sidr_habar(esc_sidor_habar)%
+
+
+

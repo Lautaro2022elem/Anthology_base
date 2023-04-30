@@ -575,7 +575,11 @@ function try_switch_to_another_section(npc, st, actor)
 		elseif (c.name == "on_timer") then
 			if time_global() >= db.storage[npc_id].activation_time + c.v1 then
 				switched = switch_to_section(npc, st.ini, pick_section_from_condlist(actor, npc, c.condlist))
-			end
+			end			
+        elseif (c.name == "on_patrol_path") then
+			if st.patrol_signals and st.patrol_signals[c.v1] then
+				switched = switch_to_section(npc, st.ini, pick_section_from_condlist(actor, npc, c.condlist))
+			end			
 		elseif (c.name == "on_game_timer") then
 			if  game.get_game_time():diffSec(db.storage[npc_id].activation_game_time) >= c.v1 then
 				switched = switch_to_section(npc, st.ini, pick_section_from_condlist(actor, npc, c.condlist))
@@ -941,7 +945,9 @@ function cfg_get_switch_conditions(ini, section, npc)
 		elseif (cond_name == "on_timer") then
 			lst[#lst+1] = cfg_get_number_and_condlist(ini,section,id,npc,cond_name,value)
 		elseif (cond_name == "on_game_timer") then
-			lst[#lst+1] = cfg_get_number_and_condlist(ini,section,id,npc,cond_name,value)	
+			lst[#lst+1] = cfg_get_number_and_condlist(ini,section,id,npc,cond_name,value)				
+		elseif (cond_name == "on_patrol_path") then
+			lst[#lst+1] = cfg_get_string_and_condlist(ini,section,id,npc,cond_name,value)	
 		elseif (cond_name == "on_actor_in_zone") then
 			lst[#lst+1] = cfg_get_string_and_condlist(ini,section,id,npc,cond_name,value)
 		elseif (cond_name == "on_actor_not_in_zone") then

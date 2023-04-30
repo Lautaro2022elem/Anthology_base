@@ -81,8 +81,9 @@ prior = 15
 storyline = true
 title = bar_walker_lab_title
 descr = bar_walker_lab_descr
-target = bar_to_labx14
+target = e_b_space_restrictor_to_x14_1
 condlist_0 = {+bar_walker_lab_complete} complete
+on_init = %=open_route(e_b:x14)%
 
 
 
@@ -206,7 +207,7 @@ prior = 2
 storyline = false
 title =  {+bar_a2_dop_quest_4_talking_all_npc} bar_azot_dop_quest_4_title1, {-bar_a2_dop_quest_4_talking_all_npc} bar_azot_dop_quest_4_title0
 descr =  {+bar_a2_dop_quest_4_talking_all_npc} bar_azot_dop_quest_4_text1, {-bar_a2_dop_quest_4_talking_all_npc} bar_azot_dop_quest_4_text0
-target = {+bar_a2_dop_quest_4_talking_all_npc} bar_a2_azot_quest_4_restr_1_id, {-bar_a2_dop_quest_4_talking_all_npc} nil
+target = {+bar_a2_dop_quest_4_talking_all_npc} bar_a2_azot_quest_4_restr_1_id, {+bar_a2_dop_quest_4_talking_4_npc -bar_a2_dop_quest_4_talking_all_npc} gar_a2_neutral_stalker_8, {+bar_a2_dop_quest_4_talking_3_npc -bar_a2_dop_quest_4_talking_all_npc} gar_a2_neutral_stalker_7, {+bar_a2_dop_quest_4_talking_2_npc -bar_a2_dop_quest_4_talking_all_npc} gar_a2_neutral_stalker_6, {+bar_a2_dop_quest_4_talking_1_npc -bar_a2_dop_quest_4_talking_all_npc} gar_a2_neutral_stalker_5, {-bar_a2_dop_quest_4_talking_all_npc} gar_a2_neutral_stalker_4
 condlist_0 = {+bar_a2_dop_quest_spectr_used} complete
 condlist_1 = {+bar_quest_failed} fail
 

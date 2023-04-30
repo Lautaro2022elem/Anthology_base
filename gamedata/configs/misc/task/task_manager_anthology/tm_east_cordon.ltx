@@ -38,7 +38,7 @@ prior = 20
 storyline = false
 title = {+esc_quest_work_for_beginner_art} esc_quest_work_for_beginner_part_3_name, {+esc_quest_work_for_beginner_poisk} esc_quest_work_for_beginner_part_2_name, esc_quest_work_for_beginner_part_1_name
 descr = {+esc_quest_work_for_beginner_art} esc_quest_work_for_beginner_part_3_text, {+esc_quest_work_for_beginner_poisk} esc_quest_work_for_beginner_part_2_text, esc_quest_work_for_beginner_part_1_text
-target = {+esc_quest_work_for_beginner_art} esc_trader_id, {+esc_quest_work_for_beginner_poisk} esc_anomal_zone_quest, esc_trader_id
+target = {+esc_quest_work_for_beginner_art} escape_trader, {+esc_quest_work_for_beginner_poisk} esc_anomal_zone_quest, escape_trader
 on_init = %+esc_quest_work_for_beginner_sidor_dialog_open_2%
 condlist_0 = {+esc_quest_work_for_beginner_complite} complete
 condlist_1 = {+esc_quest_work_for_beginner_fail} reversed
@@ -110,8 +110,8 @@ condlist_1 = {+esc_npc_wood_goblin_dead} fail
 condlist_2 = {+esc_quest_hunting_reversed} reversed
 condlist_3 = {+esc_codelock_lab_lock} reversed
 reward_money = 4500
-reward_item = wpn_wincheaster1300:ammo_12x76_zhekan:bandage:medkit:bandage:medkit:ammo_12x76_zhekan:ammo_12x76_zhekan:helm_hardhat:antirad:antirad
-on_complete = %=complete_task_inc_goodwill(50:stalker)%
+on_complete = %=give_actor(wpn_wincheaster1300) =give_actor(ammo_12x76_zhekan) =give_actor(ammo_12x76_zhekan) =give_actor(ammo_12x76_zhekan) =give_actor(bandage) =give_actor(bandage) =give_actor(medkit) =give_actor(medkit) =give_actor(helm_hardhat) =give_actor(antirad) =give_actor(antirad) =complete_task_inc_goodwill(50:stalker)%
+;reward_item = wpn_wincheaster1300:ammo_12x76_zhekan:bandage:medkit:bandage:medkit:ammo_12x76_zhekan:ammo_12x76_zhekan:helm_hardhat:antirad:antirad
 
 
 [esc_quest_trifling_matter] ;Плевое дело
@@ -120,7 +120,7 @@ prior = 25
 storyline = false
 title = {+esc_quest_trifling_matter_fail} esc_quest_trifling_matter_part_5_name, {+esc_quest_trifling_matter_compl} esc_quest_trifling_matter_part_4_name, {+esc_quest_trifling_sydba} esc_quest_trifling_matter_part_3_name, {+esc_quest_trifling_matter_postal} esc_quest_trifling_matter_part_2_name, esc_quest_trifling_matter_part_1_name
 descr = {+esc_quest_trifling_matter_fail} esc_quest_trifling_matter_part_5_text, {+esc_quest_trifling_matter_compl} esc_quest_trifling_matter_part_4_text, {+esc_quest_trifling_sydba} esc_quest_trifling_matter_part_3_text, {+esc_quest_trifling_matter_postal} esc_quest_trifling_matter_part_2_text, esc_quest_trifling_matter_part_1_text
-target = {+esc_quest_trifling_matter_fail} esc_trader_id, {+esc_quest_trifling_matter_compl}esc_trader_id, {+esc_quest_trifling_matter_postal} esc_npc_garlic, esc_trader_id
+target = {+esc_quest_trifling_matter_fail} escape_trader, {+esc_quest_trifling_matter_compl}escape_trader, {+esc_quest_trifling_matter_postal} esc_npc_garlic, escape_trader
 condlist_0 = {+esc_quest_trifling_matter_complite} complete
 condlist_1 = {+esc_quest_trifling_matter_proval} fail
 reward_money = 3000
@@ -134,7 +134,7 @@ prior = 70
 storyline = false
 title = {+esc_quest_serious_business_npc_pate_enemy} esc_quest_serious_business_part_6_name, {+esc_quest_serious_business_kpp} esc_quest_serious_business_part_5_name, {+esc_quest_serious_business_obzor_tryp} esc_quest_serious_business_part_4_name, {+esc_quest_serious_business_obzor} esc_quest_serious_business_part_3_name, {+esc_quest_serious_business_search} esc_quest_serious_business_part_2_name, esc_quest_serious_business_part_1_name
 descr = {+esc_quest_serious_business_npc_pate_enemy} esc_quest_serious_business_part_6_text, {+esc_quest_serious_business_kpp} esc_quest_serious_business_part_5_text, {+esc_quest_serious_business_obzor_tryp} esc_quest_serious_business_part_4_text, {+esc_quest_serious_business_obzor} esc_quest_serious_business_part_3_text, {+esc_quest_serious_business_search} esc_quest_serious_business_part_2_text, esc_quest_serious_business_part_1_text
-target = {+esc_quest_serious_business_npc_pate_enemy} esc_trader_id, {+esc_quest_serious_business_kpp}esc_npc_pate, {+esc_quest_serious_business_obzor_2} esc_quest_metka_razryha, {+esc_quest_serious_business_obzor} esc_quest_metka_elevator, {+esc_quest_serious_business_risovalshik} esc_risovalshik, {+esc_quest_serious_business_dybolom} esc_npc_kishka, {+esc_quest_serious_business_search} esc_wolf, esc_trader_id
+target = {+esc_quest_serious_business_npc_pate_enemy} escape_trader, {+esc_quest_serious_business_kpp}esc_npc_pate, {+esc_quest_serious_business_obzor_2} esc_quest_metka_razryha, {+esc_quest_serious_business_obzor} esc_quest_metka_elevator, {+esc_quest_serious_business_risovalshik} esc_risovalshik, {+esc_quest_serious_business_dybolom} esc_npc_kishka, {+esc_quest_serious_business_search} esc_wolf, escape_trader
 condlist_0 = {+esc_serious_business_complite} complete
 condlist_1 = {+esc_serious_business_fail} fail
 condlist_2 = {-esc_quest_serious_business_npc_pate_enemy +esc_npc_pate_dead} fail
@@ -148,7 +148,7 @@ prior = 90
 storyline = false
 title = {+esc_quest_dangerous_business_otdat} esc_quest_dangerous_business_part_5_name, {+esc_sidor_habar_open} esc_quest_dangerous_business_part_4_name, {+esc_quest_dangerous_business_merc_proval} esc_quest_dangerous_business_part_6_name, {+esc_quest_dangerous_business_ataka} esc_quest_dangerous_business_part_3_name, {+esc_quest_dangerous_business_sidor_dialog_and} esc_quest_dangerous_business_part_2_name, esc_quest_dangerous_business_part_1_name
 descr = {+esc_quest_dangerous_business_otdat} esc_quest_dangerous_business_part_5_text, {+esc_sidor_habar_open} esc_quest_dangerous_business_part_4_text, {+esc_quest_dangerous_business_merc_proval} esc_quest_dangerous_business_part_6_text, {+esc_quest_dangerous_business_ataka} esc_quest_dangerous_business_part_3_text, {+esc_quest_dangerous_business_sidor_dialog_and} esc_quest_dangerous_business_part_2_text, esc_quest_dangerous_business_part_1_text
-target =  {+esc_quest_dangerous_business_otdat} esc_trader_id, {+esc_sidor_habar_open} esc_kkp_sidr_habar, {+esc_quest_dangerous_business_ataka} esc_bandit_shmiga, {+esc_quest_dangerous_business_sidor_dialog_and} esc_merc_bear, esc_trader_id
+target =  {+esc_quest_dangerous_business_otdat} escape_trader, {+esc_sidor_habar_open} esc_kkp_sidr_habar, {+esc_quest_dangerous_business_ataka} esc_bandit_shmiga, {+esc_quest_dangerous_business_sidor_dialog_and} esc_merc_bear, escape_trader
 condlist_0 = {+esc_dangerous_business_complite} complete
 condlist_1 = {+esc_dangerous_business_fall} fail
 condlist_2 = {+esc_codelock_lab_lock} reversed
@@ -345,8 +345,10 @@ title = esc_quest_free_habar_name
 descr = esc_quest_free_habar_text
 target = esc_inv_out_quest_fee
 condlist_0 = {+quest_fee_out_habar_box_used} complete
-condlist_1 = {+eac_quest_fee_complite} fail
-
+condlist_1 = {=actor_has_item(device_pda_1)} complete
+condlist_2 = {=actor_has_item(device_pda_2)} complete
+condlist_3 = {=actor_has_item(device_pda_3)} complete
+condlist_4 = {+eac_quest_fee_complite} fail
 
 [eac_reach_base] ;Безопасное место
 icon = ui_iconsTotal_storyline
@@ -418,7 +420,7 @@ prior = 85
 storyline = true
 title = {+esc_quest_help_nebo_apparatyra} esc_quest_line_help_nebo_part_3_name, {+esc_quest_help_nebo_sidor} esc_quest_line_help_nebo_part_2_name, esc_quest_line_help_nebo_part_1_name
 descr = {+esc_quest_help_nebo_apparatyra} esc_quest_line_help_nebo_part_3_text, {+esc_quest_help_nebo_sidor} esc_quest_line_help_nebo_part_2_text, esc_quest_line_help_nebo_part_1_text
-target = {+esc_quest_help_nebo_apparatyra} esc_shaman, {+esc_quest_help_nebo_sidor} esc_trader_id, esc_shaman
+target = {+esc_quest_help_nebo_apparatyra} esc_shaman, {+esc_quest_help_nebo_sidor} escape_trader, esc_shaman
 condlist_0 = {+esc_quest_line_help_nebo_complete} complete
 on_complete = %=complete_task_inc_goodwill(50:stalker)%
 
@@ -461,7 +463,7 @@ prior = 110
 storyline = true
 title = {+esc_codelock_lab_unlock} esc_quest_line_research_underground_part_10_name, {+esc_borland_und_laba} esc_quest_line_research_underground_part_9_name, {+esc_quest_line_research_underground_open_laba} esc_quest_line_research_underground_part_8_name, {+esc_quest_line_research_underground_laba_go} esc_quest_line_research_underground_part_7_name, {+esc_quest_line_research_underground_sidor_key} esc_quest_line_research_underground_part_6_name, {+esc_quest_line_research_underground_chasovhik_dialog} esc_quest_line_research_underground_part_5_name, {+esc_quest_line_research_underground_chasovhik} esc_quest_line_research_underground_part_4_name, {+esc_quest_line_research_underground_lab} esc_quest_line_research_underground_part_3_name, {+esc_quest_line_research_underground_sidor} esc_quest_line_research_underground_part_2_name, esc_quest_line_research_underground_part_1_name
 descr = {+esc_codelock_lab_unlock} esc_quest_line_research_underground_part_10_text, {+esc_borland_und_laba} esc_quest_line_research_underground_part_9_text, {+esc_quest_line_research_underground_open_laba} esc_quest_line_research_underground_part_8_text, {+esc_quest_line_research_underground_laba_go} esc_quest_line_research_underground_part_7_text, {+esc_quest_line_research_underground_sidor_key} esc_quest_line_research_underground_part_6_text, {+esc_quest_line_research_underground_chasovhik_dialog} esc_quest_line_research_underground_part_5_text, {+esc_quest_line_research_underground_chasovhik} esc_quest_line_research_underground_part_4_text, {+esc_quest_line_research_underground_chasovhik_dialog} esc_quest_line_research_underground_part_5_text, {+esc_quest_line_research_underground_lab} esc_quest_line_research_underground_part_3_text, {+esc_quest_line_research_underground_sidor} esc_quest_line_research_underground_part_2_text, esc_quest_line_research_underground_part_1_text
-target = {+esc_codelock_lab_unlock} esc_to_labx5_sr_1, {+esc_borland_und_laba} esc_codedoor_lab, {+esc_quest_line_research_underground_laba_go} esc_borland_lab, {+esc_quest_line_research_underground_sidor_key} esc_trader_id, {+esc_quest_line_research_underground_chasovhik_dialog} esc_npc_watchmaker, {+esc_underground_truba_exit_2} esc_underground_truba_exit_2, {+esc_quest_line_research_underground_chasovhik} esc_underground_truba_exit, {+esc_quest_line_research_underground_lab} esc_borland_underground, {+esc_quest_line_research_underground_sidor} esc_trader_walker, esc_borland_underground
+target = {+esc_codelock_lab_unlock} esc_to_labx5_sr_1, {+esc_borland_und_laba} esc_codedoor_lab, {+esc_quest_line_research_underground_laba_go} esc_borland_lab, {+esc_quest_line_research_underground_sidor_key} escape_trader, {+esc_quest_line_research_underground_chasovhik_dialog} esc_npc_watchmaker, {+esc_underground_truba_exit_2} esc_underground_truba_exit_2, {+esc_quest_line_research_underground_chasovhik} esc_underground_truba_exit, {+esc_quest_line_research_underground_lab} esc_borland_underground, {+esc_quest_line_research_underground_sidor} esc_trader_walker, esc_borland_underground
 on_init = %+esc_quest_line_research_underground_start%
 condlist_0 = {+esc_quest_line_research_underground_complete} complete
 on_complete = %=complete_task_inc_goodwill(50:stalker)%

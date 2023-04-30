@@ -1,0 +1,41 @@
+--' Вычитка свойств для спауна объектов.
+function parse_names(s)
+		local t = {}
+		for name in string.gfind( s, "([%w_%-.\\]+)%p*" ) do
+				table.insert( t, name )
+		end
+		return t
+end
+
+function parse_spawns(str)
+	--' если default-ов больше, чем значений в ini, то забить недостающие последним значением из ini
+	local t = utils.parse_names(str)
+	local n = #t
+
+	local ret_table = {}
+	local k = 1
+	while k <= n do
+		local spawn = {}
+		spawn.section = t[k]
+		--' Проверяем что это не последняя запись
+		if t[k+1] ~= nil then
+			local p = tonumber(t[k+1])
+			--' проверяем что вторым числом задана вероятность, а не другая секция спавну
+			if p then
+				--' забиваем число
+				spawn.prob = p
+				k = k + 2
+			else
+				--' забиваем дефолт 1
+				spawn.prob = 1
+				k = k + 1
+			end
+		else
+			spawn.prob = 1
+			k = k + 1
+		end
+		table.insert(ret_table, spawn)
+
+	end
+	return ret_table
+end

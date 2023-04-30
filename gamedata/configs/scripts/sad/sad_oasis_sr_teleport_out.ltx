@@ -15,7 +15,7 @@ on_info2 = {+sad_cowboy_enemy} sr_idle@100
 on_info = {+sad_actor_enemy_to_someone} sr_idle@nil, {+sad_teledoc_ready} sr_idle@200
 
 [sr_idle@200]
-on_info = {=actor_active_detector(detector_sad) =sad_dist_to_path_le(sad_sim_16_telep_out_effect_place:350)} sr_teleport@1 %+sad_activate_teleport_obratno%
+on_info = {=actor_active_detector(detector_sad) =sad_dist_to_path_le(sad_sim_16_telep_out_effect_place:350)} sr_teleport@1 %=spawn_object(device_pda_1:sad_sim_16_cowboy_6_walk:0) +sad_activate_teleport_obratno%
 
 [sr_teleport@1]
 point1 = sad_oasis_teleport_out_walk

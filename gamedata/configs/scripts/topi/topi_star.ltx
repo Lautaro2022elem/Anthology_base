@@ -5,6 +5,6 @@ active = sr_idle
 on_actor_inside = sr_idle@topi_start %=teleport_actor(topi_start_actor_walk:topi_start_actor_look)%
 
 [sr_idle@topi_start]
-on_game_timer = 90 | sr_idle@nil %+topi_start%
+on_game_timer = 90 | sr_idle@nil %+topi_start =give_actor(wpn_bizon) =give_actor(ammo_9x18_fmj) =give_actor(ammo_9x18_fmj) =give_actor(ammo_9x18_fmj) =give_actor(ammo_9x18_fmj) =give_actor(stalker_outfit)%
 
 [sr_idle@nil]

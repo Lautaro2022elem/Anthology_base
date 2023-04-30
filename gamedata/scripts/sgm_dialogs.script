@@ -1287,9 +1287,9 @@ end
 function jup_bring_detector_kit(actor,npc)
   local rnd_spawn=math.random(1,2)
   if rnd_spawn==1 then
-     create("detector_modify_toolkit",417.800,32.372,-361.604,1378094,4543)
+     create("detector_modify_toolkit",417.800,32.372,-361.604,1378094,4235)
   else
-     create("detector_modify_toolkit",417.800,32.372,-361.604,1378094,4543)
+     create("detector_modify_toolkit",417.800,32.372,-361.604,1378094,4235)
   end
   add_task("sgm_jup_bring_detector_kit")
 end

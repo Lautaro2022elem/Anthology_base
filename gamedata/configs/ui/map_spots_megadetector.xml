@@ -1,0 +1,105 @@
+		    <!-- Мегадетектор - Сталкеры -->
+  <alife_megadetector_stalker>
+    <mini_map spot="alife_megadetector_stalker_spot_mini"/>
+  </alife_megadetector_stalker>
+  <alife_megadetector_stalker_spot_mini width="8" height="8" alignment="c" stretch="1" location_level="10" scale_min="3.0" scale_max="5.1" scale="0">
+    <texture r="255" g="240" b="0">ui_minimap_point</texture>
+  </alife_megadetector_stalker_spot_mini>
+        <!-- Мегадетектор - Собака -->
+  <alife_megadetector_sobaka>
+    <mini_map spot="alife_megadetector_sobaka_spot_mini"/>
+  </alife_megadetector_sobaka>
+  <alife_megadetector_sobaka_spot_mini width="8" height="8" alignment="c" stretch="1" location_level="10" scale_min="3.0" scale_max="5.1" scale="0">
+    <texture r="255" g="160" b="0">ui_minimap_point</texture>
+  </alife_megadetector_sobaka_spot_mini>
+        <!-- Мегадетектор - Плоть -->
+  <alife_megadetector_flesh>
+    <mini_map spot="alife_megadetector_flesh_spot_mini"/>
+  </alife_megadetector_flesh>
+  <alife_megadetector_flesh_spot_mini width="8" height="8" alignment="c" stretch="1" location_level="10" scale_min="3.0" scale_max="5.1" scale="0">
+    <texture r="255" g="100" b="0">ui_minimap_point</texture>
+  </alife_megadetector_flesh_spot_mini>
+        <!-- Мегадетектор - Кабан -->
+  <alife_megadetector_boar>
+    <mini_map spot="alife_megadetector_boar_spot_mini"/>
+  </alife_megadetector_boar>
+  <alife_megadetector_boar_spot_mini width="8" height="8" alignment="c" stretch="1" location_level="10" scale_min="3.0" scale_max="5.1" scale="0">
+    <texture r="180" g="255" b="0">ui_minimap_point</texture>
+  </alife_megadetector_boar_spot_mini>
+        <!-- Мегадетектор - Тушкан -->
+  <alife_megadetector_tushkano>
+    <mini_map spot="alife_megadetector_tushkano_spot_mini"/>
+  </alife_megadetector_tushkano>
+  <alife_megadetector_tushkano_spot_mini width="8" height="8" alignment="c" stretch="1" location_level="10" scale_min="3.0" scale_max="5.1" scale="0">
+    <texture r="0" g="255" b="200">ui_minimap_point</texture>
+  </alife_megadetector_tushkano_spot_mini>
+        <!-- Мегадетектор - Кошка -->
+  <alife_megadetector_cat>
+    <mini_map spot="alife_megadetector_cat_spot_mini"/>
+  </alife_megadetector_cat>
+  <alife_megadetector_cat_spot_mini width="8" height="8" alignment="c" stretch="1" location_level="10" scale_min="3.0" scale_max="5.1" scale="0">
+    <texture r="150" g="200" b="255">ui_minimap_point</texture>
+  </alife_megadetector_cat_spot_mini>
+        <!-- Мегадетектор - Химера -->
+  <alife_megadetector_chimera>
+    <mini_map spot="alife_megadetector_chimera_spot_mini"/>
+  </alife_megadetector_chimera>
+  <alife_megadetector_chimera_spot_mini width="8" height="8" alignment="c" stretch="1" location_level="10" scale_min="3.0" scale_max="5.1" scale="0">
+    <texture r="255" g="180" b="255">ui_minimap_point</texture>
+  </alife_megadetector_chimera_spot_mini>
+        <!-- Мегадетектор - Излом -->
+  <alife_megadetector_fracture>
+    <mini_map spot="alife_megadetector_fracture_spot_mini"/>
+  </alife_megadetector_fracture>
+  <alife_megadetector_fracture_spot_mini width="8" height="8" alignment="c" stretch="1" location_level="10" scale_min="3.0" scale_max="5.1" scale="0">
+    <texture r="128" g="128" b="200">ui_minimap_point</texture>
+  </alife_megadetector_fracture_spot_mini>
+        <!-- Мегадетектор - Зомби -->
+  <alife_megadetector_zombie>
+    <mini_map spot="alife_megadetector_zombie_spot_mini"/>
+  </alife_megadetector_zombie>
+  <alife_megadetector_zombie_spot_mini width="8" height="8" alignment="c" stretch="1" location_level="10" scale_min="3.0" scale_max="5.1" scale="0">
+    <texture r="0" g="155" b="155">ui_minimap_point</texture>
+  </alife_megadetector_zombie_spot_mini>
+        <!-- Мегадетектор - Снорк -->
+  <alife_megadetector_snork>
+    <mini_map spot="alife_megadetector_snork_spot_mini"/>
+  </alife_megadetector_snork>
+  <alife_megadetector_snork_spot_mini width="8" height="8" alignment="c" stretch="1" location_level="10" scale_min="3.0" scale_max="5.1" scale="0">
+    <texture r="0" g="200" b="200">ui_minimap_point</texture>
+  </alife_megadetector_snork_spot_mini>
+        <!-- Мегадетектор - Кровосос -->
+  <alife_megadetector_bloodsucker>
+    <mini_map spot="alife_megadetector_bloodsucker_spot_mini"/>
+  </alife_megadetector_bloodsucker>
+  <alife_megadetector_bloodsucker_spot_mini width="8" height="8" alignment="c" stretch="1" location_level="10" scale_min="3.0" scale_max="5.1" scale="0">
+    <texture r="128" g="255" b="255">ui_minimap_point</texture>
+  </alife_megadetector_bloodsucker_spot_mini>
+        <!-- Мегадетектор - Бюрер -->
+  <alife_megadetector_burer>
+    <mini_map spot="alife_megadetector_burer_spot_mini"/>
+  </alife_megadetector_burer>
+  <alife_megadetector_burer_spot_mini width="8" height="8" alignment="c" stretch="1" location_level="10" scale_min="3.0" scale_max="5.1" scale="0">
+    <texture r="255" g="128" b="100">ui_minimap_point</texture>
+  </alife_megadetector_burer_spot_mini>
+        <!-- Мегадетектор - Poltergeist -->
+  <alife_megadetector_poltergeist>
+    <mini_map spot="alife_megadetector_poltergeist_spot_mini"/>
+  </alife_megadetector_poltergeist>
+  <alife_megadetector_poltergeist_spot_mini width="8" height="8" alignment="c" stretch="1" location_level="10" scale_min="3.0" scale_max="5.1" scale="0">
+    <texture r="255" g="255" b="255">ui_minimap_point</texture>
+  </alife_megadetector_poltergeist_spot_mini>
+        <!-- Мегадетектор - Контроллер -->
+  <alife_megadetector_controller>
+    <mini_map spot="alife_megadetector_controller_spot_mini"/>
+  </alife_megadetector_controller>
+  <alife_megadetector_controller_spot_mini width="8" height="8" alignment="c" stretch="1" location_level="10" scale_min="3.0" scale_max="5.1" scale="0">
+    <texture r="255" g="0" b="255">ui_minimap_point</texture>
+  </alife_megadetector_controller_spot_mini>
+        <!-- Мегадетектор - Гигант -->
+  <alife_megadetector_gigant>
+    <mini_map spot="alife_megadetector_gigant_spot_mini"/>
+  </alife_megadetector_gigant>
+  <alife_megadetector_gigant_spot_mini width="8" height="8" alignment="c" stretch="1" location_level="10" scale_min="3.0" scale_max="5.1" scale="0">
+    <texture r="150" g="0" b="255">ui_minimap_point</texture>
+  </alife_megadetector_gigant_spot_mini>

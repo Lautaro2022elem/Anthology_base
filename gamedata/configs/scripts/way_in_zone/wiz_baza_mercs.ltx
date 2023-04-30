@@ -2,7 +2,7 @@
 active = sr_idle@start_quest
 
 [sr_idle@start_quest]
-on_info = {+uninvited_guests_gived_task} sr_idle@gonec_pravosudiya %=give_task(uninvited_guests) =scenario_autosave(st_save_jup_b8_searched_heli_4)%
+on_info = {+uninvited_guests_gived_task} sr_idle@gonec_pravosudiya %=give_task(uninvited_guests) =scenario_autosave(st_save_uninvited_guests)%
 
 [sr_idle@gonec_pravosudiya]
 on_info = {+gonec_pravosudiya_started} sr_idle@timer_to_message

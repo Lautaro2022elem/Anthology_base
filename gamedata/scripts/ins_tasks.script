@@ -418,9 +418,9 @@ function attacked_polter()
 	end
 	--/Љвест:‚торой у охотников 
     if has_alife_info("topi_hunter_polter_quest_give") and has_several_info("topi_b6_attacked_polter_","_dead",1,5) then
-	   create("topi_a7_stalker_hunter_leader_1",-226.10585021973,-0.045470505952835,492.68127441406,207155,8944)
-       create("topi_a7_stalker_hunter_member_1_1",-233.71520996094,-0.37673848867416,487.31549072266,197812,8944)
-       create("topi_a7_stalker_hunter_member_2_1",-217.97665405273,-0.002668172121048,492.90777587891,219191,8944)
+	   create("topi_a7_stalker_hunter_leader_1",-226.10585021973,-0.045470505952835,492.68127441406,207155,8762)
+       create("topi_a7_stalker_hunter_member_1_1",-233.71520996094,-0.37673848867416,487.31549072266,197812,8762)
+       create("topi_a7_stalker_hunter_member_2_1",-217.97665405273,-0.002668172121048,492.90777587891,219191,8762)
 	   db.actor:give_info_portion("topi_b6_attacked_polter_all_dead")
     end
 end
@@ -475,8 +475,8 @@ function create_2()
 		return
 	end
     if has_alife_info("topi_novikov_quest_zaton_scanner_have_1") then 
-		alife():create("topi_spec_anomaly_scanner_2",vector():set(278.26446533203,0.47391685843468,307.57308959961),902936,8944)
-		alife():create("topi_spec_anomaly_scanner_2_spot",vector():set(278.26446533203,0.47391685843468,307.57308959961),902936,8944)  
+		alife():create("topi_spec_anomaly_scanner_2",vector():set(278.26446533203,0.47391685843468,307.57308959961),902936,8762)
+		alife():create("topi_spec_anomaly_scanner_2_spot",vector():set(278.26446533203,0.47391685843468,307.57308959961),902936,8762)  
 		db.actor:give_info_portion("topi_novikov_quest_zaton_scanner_create_2")
     end
 end
@@ -497,8 +497,8 @@ function create_3()
 		return
 	end
     if has_alife_info("topi_novikov_quest_zaton_scanner_have_2") then 
-		alife():create("topi_spec_anomaly_scanner_3",vector():set(1.8920793533325,-0.98495006561279,239.04772949219),526925,8944)
-		alife():create("topi_spec_anomaly_scanner_3_spot",vector():set(1.8920793533325,-0.98495006561279,239.04772949219),526925,8944)                  
+		alife():create("topi_spec_anomaly_scanner_3",vector():set(1.8920793533325,-0.98495006561279,239.04772949219),526925,8762)
+		alife():create("topi_spec_anomaly_scanner_3_spot",vector():set(1.8920793533325,-0.98495006561279,239.04772949219),526925,8762)                  
 		db.actor:give_info_portion("topi_novikov_quest_zaton_scanner_create_3")        	  
     end
 end
@@ -519,8 +519,8 @@ function create_4()
 		return
 	end
     if has_alife_info("topi_novikov_quest_zaton_scanner_have_3") then     
-       alife():create("topi_spec_anomaly_scanner_4",vector():set(240.37120056152,-0.0011299550533295,61.46354675293),852396,8944)
-       alife():create("topi_spec_anomaly_scanner_4_spot",vector():set(240.37120056152,-0.0011299550533295,61.46354675293),852396,8944)  
+       alife():create("topi_spec_anomaly_scanner_4",vector():set(240.37120056152,-0.0011299550533295,61.46354675293),852396,8762)
+       alife():create("topi_spec_anomaly_scanner_4_spot",vector():set(240.37120056152,-0.0011299550533295,61.46354675293),852396,8762)  
 	   db.actor:give_info_portion("topi_novikov_quest_zaton_scanner_create_4")
     end
 end
@@ -541,8 +541,8 @@ function create_5()
 		return
 	end
     if has_alife_info("topi_novikov_quest_zaton_scanner_have_4") then     
-       alife():create("topi_spec_anomaly_scanner_5",vector():set(-13.61777305603,-0.0005042552947998,-35.483108520508),505510,8944)
-       alife():create("topi_spec_anomaly_scanner_5_spot",vector():set(-13.61777305603,-0.0005042552947998,-35.483108520508),505510,8944)  
+       alife():create("topi_spec_anomaly_scanner_5",vector():set(-13.61777305603,-0.0005042552947998,-35.483108520508),505510,8762)
+       alife():create("topi_spec_anomaly_scanner_5_spot",vector():set(-13.61777305603,-0.0005042552947998,-35.483108520508),505510,8762)  
 	   db.actor:give_info_portion("topi_novikov_quest_zaton_scanner_create_5")
     end
 end
@@ -563,8 +563,8 @@ function create_6()
 		return
 	end
     if has_alife_info("topi_novikov_quest_zaton_scanner_have_5") then     
-       alife():create("topi_spec_anomaly_scanner_6",vector():set(-184.06336975098,0.00028851628303528,43.343891143799),267331,8944) 
-alife():create("topi_spec_anomaly_scanner_6_spot",vector():set(-184.06336975098,0.00028851628303528,43.343891143799),267331,8944) 
+       alife():create("topi_spec_anomaly_scanner_6",vector():set(-184.06336975098,0.00028851628303528,43.343891143799),267331,8762) 
+alife():create("topi_spec_anomaly_scanner_6_spot",vector():set(-184.06336975098,0.00028851628303528,43.343891143799),267331,8762) 
 	   db.actor:give_info_portion("topi_novikov_quest_zaton_scanner_create_6")
     end
 end
@@ -585,8 +585,8 @@ function create_7()
 		return
 	end
     if has_alife_info("topi_novikov_quest_zaton_scanner_have_6") then     
-       alife():create("topi_spec_anomaly_scanner_7",vector():set(-125.65202331543,-0.00052186846733093,538.57287597656),348601,8944) 
-       alife():create("topi_spec_anomaly_scanner_7_spot",vector():set(-125.65202331543,-0.00052186846733093,538.57287597656),348601,8944)                     
+       alife():create("topi_spec_anomaly_scanner_7",vector():set(-125.65202331543,-0.00052186846733093,538.57287597656),348601,8762) 
+       alife():create("topi_spec_anomaly_scanner_7_spot",vector():set(-125.65202331543,-0.00052186846733093,538.57287597656),348601,8762)                     
 	   db.actor:give_info_portion("topi_novikov_quest_zaton_scanner_create_7")        	  
     end
 end
@@ -605,31 +605,31 @@ end
 --/Квест:Сканеры аномалий
 function task_main()
    	if (not has_alife_info("topi_beat_from_monsters_start")) and has_alife_info("topi_b1_leader_1_quest_talking_2") then
-           create("topi_scaut_attacked_w1_boar_1",80.480712890625,1.1557058095932,-129.12561035156,633259,8944)
-           create("topi_scaut_attacked_w1_boar_2",114.98664855957,1.1901355981827,-111.80926513672,680283,8944)
-           create("topi_scaut_attacked_w1_boar_3",103.83178710938,1.2977032661438,-121.12550354004,664708,8944)
-           create("topi_scaut_attacked_w1_boar_4",31.691740036011,6.0707330703735,-10.434756278992,566213,8944)
-           create("topi_scaut_attacked_w1_boar_5",31.193254470825,-0.000264942646,-11.174102783203,566212,8944)
-           create("topi_scaut_attacked_w1_boar_6",17.686487197876,-0.000256597995,-16.146041870117,547257,8944)
-           create("topi_scaut_attacked_w1_boar_7",103.83178710938,1.2977032661438,-121.12550354004,664708,8944)
+           create("topi_scaut_attacked_w1_boar_1",80.480712890625,1.1557058095932,-129.12561035156,633259,8762)
+           create("topi_scaut_attacked_w1_boar_2",114.98664855957,1.1901355981827,-111.80926513672,680283,8762)
+           create("topi_scaut_attacked_w1_boar_3",103.83178710938,1.2977032661438,-121.12550354004,664708,8762)
+           create("topi_scaut_attacked_w1_boar_4",31.691740036011,6.0707330703735,-10.434756278992,566213,8762)
+           create("topi_scaut_attacked_w1_boar_5",31.193254470825,-0.000264942646,-11.174102783203,566212,8762)
+           create("topi_scaut_attacked_w1_boar_6",17.686487197876,-0.000256597995,-16.146041870117,547257,8762)
+           create("topi_scaut_attacked_w1_boar_7",103.83178710938,1.2977032661438,-121.12550354004,664708,8762)
            give_info("topi_beat_from_monsters_start")
            give_info("topi_beat_from_monsters_wave_1")
            give_info("topi_beat_from_monsters_wave_1_spawn")         
         elseif (not has_alife_info("topi_beat_from_monsters_wave_2_spawn")) and has_alife_info("topi_beat_from_monsters_wave_2") then
-           create("topi_scaut_attacked_w2_pseudodog_1",80.480712890625,1.1557058095932,-129.12561035156,633259,8944)
-           create("topi_scaut_attacked_w2_pseudodog_2",114.98664855957,1.1901355981827,-111.80926513672,680283,8944)
-           create("topi_scaut_attacked_w2_pseudodog_3",103.83178710938,1.2977032661438,-121.12550354004,664708,8944)
-           create("topi_scaut_attacked_w2_pseudodog_4",31.691740036011,6.0707330703735,-10.434756278992,566213,8944)
-           create("topi_scaut_attacked_w2_bloodsucker_1",31.193254470825,-0.000264942646,-11.174102783203,566212,8944)
-           create("topi_scaut_attacked_w2_bloodsucker_2",31.193254470825,-0.000264942646,-11.174102783203,566212,8944)
-           create("topi_scaut_attacked_w2_bloodsucker_3",17.686487197876,-0.000256597995,-16.146041870117,547257,8944)
-           create("topi_scaut_attacked_w2_bloodsucker_4",103.83178710938,1.2977032661438,-121.12550354004,664708,8944)
-           create("topi_scaut_attacked_w2_bloodsucker_5",103.83178710938,1.2977032661438,-121.12550354004,664708,8944)
+           create("topi_scaut_attacked_w2_pseudodog_1",80.480712890625,1.1557058095932,-129.12561035156,633259,8762)
+           create("topi_scaut_attacked_w2_pseudodog_2",114.98664855957,1.1901355981827,-111.80926513672,680283,8762)
+           create("topi_scaut_attacked_w2_pseudodog_3",103.83178710938,1.2977032661438,-121.12550354004,664708,8762)
+           create("topi_scaut_attacked_w2_pseudodog_4",31.691740036011,6.0707330703735,-10.434756278992,566213,8762)
+           create("topi_scaut_attacked_w2_bloodsucker_1",31.193254470825,-0.000264942646,-11.174102783203,566212,8762)
+           create("topi_scaut_attacked_w2_bloodsucker_2",31.193254470825,-0.000264942646,-11.174102783203,566212,8762)
+           create("topi_scaut_attacked_w2_bloodsucker_3",17.686487197876,-0.000256597995,-16.146041870117,547257,8762)
+           create("topi_scaut_attacked_w2_bloodsucker_4",103.83178710938,1.2977032661438,-121.12550354004,664708,8762)
+           create("topi_scaut_attacked_w2_bloodsucker_5",103.83178710938,1.2977032661438,-121.12550354004,664708,8762)
            give_info("topi_beat_from_monsters_wave_2_spawn")
         elseif (not has_alife_info("topi_beat_from_monsters_wave_3_spawn")) and has_alife_info("topi_beat_from_monsters_wave_3") then
-           create("topi_scaut_attacked_w3_snork_1",31.691740036011,6.0707330703735,-10.434756278992,566213,8944)
-           create("topi_scaut_attacked_w3_snork_2",103.83178710938,1.2977032661438,-121.12550354004,664708,8944)
-           create("topi_scaut_attacked_w3_snork_3",80.480712890625,1.1557058095932,-129.12561035156,633259,8944)
+           create("topi_scaut_attacked_w3_snork_1",31.691740036011,6.0707330703735,-10.434756278992,566213,8762)
+           create("topi_scaut_attacked_w3_snork_2",103.83178710938,1.2977032661438,-121.12550354004,664708,8762)
+           create("topi_scaut_attacked_w3_snork_3",80.480712890625,1.1557058095932,-129.12561035156,633259,8762)
            give_info("topi_beat_from_monsters_wave_3_spawn")
     end
 end	

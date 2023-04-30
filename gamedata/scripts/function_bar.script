@@ -57,13 +57,13 @@ function UpdateTasks()	local sLvlName = level.name()
 		end
 		--/ вест: ѕервый доп. у јзота
 		if has_alife_info("bar_a2_azot_quest_1_talking_1") and xr_effects.has_several_info("bar_a2_azot_quest_1_restr_","_used",1,3) and (not has_alife_info("bar_a2_killer_azot_all_create")) then           
-			alife():create("bar_a2_killer_azot_1",vector():set(266.86260986328,9.0534868240356,-39.063835144043),90031,10019)
-		    alife():create("bar_a2_killer_azot_2",vector():set(276.43273925781,9.0520677566528,-37.563465118408),92086,10019)
-		    alife():create("bar_a2_killer_azot_3",vector():set(260.93948364258,9.0534152984619,-46.552284240723),88669,10019)
-		    alife():create("bar_a2_killer_azot_4",vector():set(250.5970916748,9.0504789352417,-53.477764129639),85643,10019)
-		    alife():create("bar_a2_killer_azot_5",vector():set(255.53271484375,9.0517950057983,-59.775634765625),87018,10019)
-		    alife():create("bar_a2_killer_azot_6",vector():set(280.69467163086,9.051323890686,-59.682914733887),92936,10019)
-		    alife():create("bar_a2_killer_azot_7",vector():set(306.20196533203,9.0530090332031,-58.68155670166),96605,10019)	
+			alife():create("bar_a2_killer_azot_1",vector():set(266.86260986328,9.0534868240356,-39.063835144043),90031,9801)
+		    alife():create("bar_a2_killer_azot_2",vector():set(276.43273925781,9.0520677566528,-37.563465118408),92086,9801)
+		    alife():create("bar_a2_killer_azot_3",vector():set(260.93948364258,9.0534152984619,-46.552284240723),88669,9801)
+		    alife():create("bar_a2_killer_azot_4",vector():set(250.5970916748,9.0504789352417,-53.477764129639),85643,9801)
+		    alife():create("bar_a2_killer_azot_5",vector():set(255.53271484375,9.0517950057983,-59.775634765625),87018,9801)
+		    alife():create("bar_a2_killer_azot_6",vector():set(280.69467163086,9.051323890686,-59.682914733887),92936,9801)
+		    alife():create("bar_a2_killer_azot_7",vector():set(306.20196533203,9.0530090332031,-58.68155670166),96605,9801)	
 			give_info("bar_a2_killer_azot_all_create")
 		end
 		if has_alife_info("bar_a2_azot_quest_1_restr_3_used") and xr_effects.has_several_info("bar_a2_killer_azot_","_death",1,7) and (not has_alife_info("bar_a2_killer_azot_all_death")) then           
