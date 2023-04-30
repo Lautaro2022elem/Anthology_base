@@ -1,0 +1,98 @@
+-----------------------------------------------------------------------------------
+----------------- by Viít@rü --------------------------------------------------------------
+----------------------------------------------------------------------
+--------------
+--------------------------------------------------makdm_start
+function init()
+	xr_s.register_callback( "update", sMinimap, nil )
+end
+---------------------------------------------------makdm_end
+
+
+
+local sResol = {
+				{dAspect="169",	sId="_01"},
+				{dAspect="43",		sId="_1"},
+				{dAspect="54",		sId="_1"},
+				{dAspect="159",	sId="_2"},
+				{dAspect="1610",		sId="_3"},
+				{dAspect="1675",		sId="_5"}
+				}
+
+local lCStatic
+local lDAspect
+function sMinimap()
+local gHud = get_hud()
+	if IsAddHud() then
+		if lDAspect~=DefineAspect() or not lCStatic then
+			for k,v in pairs(sResol) do
+				if DefineAspect()==v.dAspect then
+					--_log(DefineAspect())
+					if lCStatic then
+						gHud:RemoveCustomStatic("minimap_fake"..lCStatic)
+					end
+					if not gHud:GetCustomStatic("minimap_fake"..v.sId) then
+						gHud:AddCustomStatic("minimap_fake"..v.sId)
+					end
+					lCStatic = v.sId
+					lDAspect = DefineAspect()
+				end
+			end
+		end
+	else
+		if lCStatic then
+			gHud:RemoveCustomStatic("minimap_fake"..lCStatic)
+			lCStatic = nil
+		end
+	end
+end
+
+
+function IsAddHud()
+	if has_alife_info("disabled_ui") or (db.actor:is_talking()) or (not db.actor:alive()) or (has_alife_info("sleep_active")) or (has_alife_info("disabled_ui")) or (db.actor:active_slot() == 2 and db.actor:item_in_slot(2) ~= nil and db.actor:item_in_slot(2):weapon_is_scope() and db.actor:accuracy() < 0.015 and device().fov < 55) or (db.actor:active_slot() == 3 and db.actor:item_in_slot(3) ~= nil and  db.actor:item_in_slot(3):weapon_is_scope() and db.actor:accuracy() < 0.015 and device().fov < 55) then 
+		return false
+	end
+	return true
+end
+
+function DefineAspect()
+	local iAspectRatio = device().aspect_ratio
+	if (iAspectRatio - 0.5) < 0.001 then 
+		return "1675"
+	elseif (iAspectRatio - 0.565) < 0.001 then 
+		return "169"
+	elseif (iAspectRatio - 0.61) < 0.001 then
+		return "159"
+	elseif (iAspectRatio - 0.63) < 0.001 then
+		return "1610"
+	elseif (iAspectRatio - 0.76) < 0.001 then 
+		return "43"
+	elseif (iAspectRatio - 0.81) < 0.001 then 
+		return "54"
+	end
+	return nil
+end
+
+local aBufferedMessages={}
+function _log(sMsg)
+	if sMsg == nil then
+		return 
+	end
+	if db and db.actor and get_console() then
+		if aBufferedMessages then
+			for k,v in ipairs(aBufferedMessages) do				
+				get_console():execute(string.gsub(tostring(v), "%s", "&&"))
+				get_console():execute("flush")
+			end
+			aBufferedMessages=nil
+		end
+		get_console():execute(string.gsub(tostring(sMsg), "%s", "&&"))
+		get_console():execute("flush")
+	else
+		if aBufferedMessages then
+			table.insert(aBufferedMessages,sMsg)
+		end
+	end
+end
+
+--\or (db.actor:active_slot() == 5 and db.actor:accuracy() < 0.011 and device().fov < 55)

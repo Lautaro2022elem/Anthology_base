@@ -1,0 +1,218 @@
+[walker@def]
+gather_items_enabled = false
+help_wounded_enabled = false
+corpse_detection_enabled = false
+combat_ignore_cond = {=is_enemy_actor} true, {=check_enemy_name(tushkano) -sad_cave_tushkanos_awake} true, {=check_enemy_name(zombied) -sad_cave_snorki_awake} true
+on_info9 = {=actor_enemy} remark@enemy %+sad_final_task_enemy%
+wounded = wounded
+meet = no_meet
+
+
+; -------------------------------------------------------------------------------------------------------------------------------  1
+[logic@nauchny_1]
+suitable = {=target_squad_name(sad_final_ucheny_squad) =is_squad_commander -sad_cave_start_zamer} true
+active = patrol@10
+post_combat_time = 0, 0
+prior = 300
+
+[patrol@10]:walker@def
+path_walk = nauchny_patrul_1
+commander = true
+silent = true
+formation = back
+def_state_moving = assault
+on_info = {=distance_from_npc_to_point_le(sad_cave_mobs_home_1:0:80)} walker@11 %+sad_nauchny_cave_1_reached%
+on_signal = on_position | walker@11 %+sad_nauchny_cave_1_reached%
+on_signal2 = sound_1 | {-sad_nauchny_phrase_0} %+sad_nauchny_phrase_0 =play_sound(sad_nauchny_phrase_0)%
+
+[walker@11]:walker@def
+path_walk = nauchny_11_walk
+path_look = nauchny_11_look
+def_state_moving = raid
+on_info = {+sad_nauchny_go_cave_2} patrol@12
+on_info2 = {-sad_cave_tushkanos_awake -sad_nauchny_phrase_1} %+sad_nauchny_phrase_1 =play_sound(sad_nauchny_phrase_1)%
+on_info3 = {+sad_cave_tushkanos_awake -sad_nauchny_phrase_3} %+sad_nauchny_phrase_3 =play_sound(sad_nauchny_phrase_3)%
+
+[patrol@12]:walker@def
+path_walk = nauchny_patrul_2
+commander = true
+silent = true
+formation = back
+def_state_moving = assault
+on_info = {+sad_cave_snorki_awake} walker@13, {=distance_from_npc_to_point_le(sad_cave_last_mob_home:0:1000)} walker@13 %+sad_cave_snorki_awake%
+;on_info = {-sad_cave_snorki_awake =distance_from_npc_to_point_le(sad_cave_last_mob_home:0:1000)} %+sad_cave_snorki_awake%
+;on_info3 = {-sad_nauchny_phrase_5} %+sad_nauchny_phrase_5 =play_sound(jup_b1_stalkers_monsters_beat_off)%
+
+[walker@13]:walker@def
+path_walk = cs_nauchny_11
+path_look = cs_nauchny_11_look1
+def_state_moving = raid
+
+; -------------------------------------------------------------------------------------------------------------------------------  2
+[logic@nauchny_2]
+suitable = {=target_squad_name(sad_final_ucheny_squad) !is_squad_commander -sad_cave_start_zamer} true
+active = patrol@20
+post_combat_time = 0, 0
+prior = 200
+
+[patrol@20]:walker@def
+path_walk = nauchny_patrul_1
+commander = false
+formation = back
+def_state_moving = raid
+on_info = {+sad_nauchny_cave_1_reached} walker@21
+
+[walker@21]:walker@def
+path_walk = nauchny_12_walk
+path_look = nauchny_12_look
+def_state_moving = raid
+on_info = {+sad_nauchny_go_cave_2} patrol@22
+
+[patrol@22]:walker@def
+path_walk = nauchny_patrul_2
+commander = false
+formation = back
+def_state_moving = assault
+on_info = {+sad_cave_snorki_awake} walker@23, {=distance_from_npc_to_point_le(sad_cave_last_mob_home:0:1000)} walker@23 %+sad_cave_snorki_awake%
+;on_info = {-sad_cave_snorki_awake =distance_from_npc_to_point_le(sad_cave_last_mob_home:0:1000)} %+sad_cave_snorki_awake%
+;on_info2 = {-sad_nauchny_phrase_5} %+sad_nauchny_phrase_5 =play_sound(jup_b1_stalkers_monsters_beat_off)%
+
+[walker@23]:walker@def
+path_walk = cs_nauchny_21
+path_look = cs_nauchny_21_look
+def_state_moving = raid
+
+; -------------------------------------------------------------------------------------------------------------------------------  3
+[logic@nauchny_3]
+suitable = {=target_squad_name(sad_final_ucheny_squad) !is_squad_commander -sad_cave_start_zamer} true
+active = patrol@30
+post_combat_time = 0, 0
+prior = 200
+
+[patrol@30]:walker@def
+path_walk = nauchny_patrul_1
+commander = false
+formation = back
+def_state_moving = raid
+on_info = {+sad_nauchny_cave_1_reached} walker@31
+
+[walker@31]:walker@def
+path_walk = nauchny_13_walk
+path_look = nauchny_13_look
+def_state_moving = raid
+on_info = {+sad_nauchny_go_cave_2} patrol@32
+on_info2 = {-sad_cave_tushkanos_awake +sad_nauchny_phrase_1 -sad_nauchny_phrase_2} %+sad_nauchny_phrase_2 =play_sound(sad_nauchny_phrase_2)%
+on_info3 = {+sad_nauchny_phrase_4} %-sad_nauchny_phrase_4 =play_sound(pas_b400_sokolov_about_snorks_3)%
+
+[patrol@32]:walker@def
+path_walk = nauchny_patrul_2
+commander = false
+formation = back
+def_state_moving = assault
+on_info = {+sad_cave_snorki_awake} walker@33, {=distance_from_npc_to_point_le(sad_cave_last_mob_home:0:1000)} walker@33 %+sad_cave_snorki_awake%
+;on_info = {-sad_cave_snorki_awake =distance_from_npc_to_point_le(sad_cave_last_mob_home:0:1000)} %+sad_cave_snorki_awake%
+;on_info2 = {-sad_nauchny_phrase_5} %+sad_nauchny_phrase_5 =play_sound(jup_b1_stalkers_monsters_beat_off)%
+
+[walker@33]:walker@def
+path_walk = cs_nauchny_31
+path_look = cs_nauchny_31_look
+def_state_moving = raid
+
+; -------------------------------------------------------------------------------------------------------------------------------  4
+[logic@nauchny_4]
+suitable = {=target_squad_name(sad_final_ucheny_squad) !is_squad_commander -sad_cave_start_zamer} true
+active = patrol@40
+post_combat_time = 0, 0
+prior = 200
+
+[patrol@40]:walker@def
+path_walk = nauchny_patrul_1
+commander = false
+formation = back
+def_state_moving = raid
+on_info = {+sad_nauchny_cave_1_reached} walker@41
+
+[walker@41]:walker@def
+path_walk = nauchny_14_walk
+path_look = nauchny_14_look
+def_state_moving = raid
+on_info = {+sad_nauchny_go_cave_2} patrol@42
+on_info2 = {-sad_cave_tushkanos_awake +sad_nauchny_phrase_1 -sad_nauchny_phrase_2} %+sad_nauchny_phrase_2 =play_sound(sad_nauchny_phrase_2)%
+on_info3 = {+sad_nauchny_phrase_4} %-sad_nauchny_phrase_4 =play_sound(pas_b400_sokolov_about_snorks_3)%
+
+[patrol@42]:walker@def
+path_walk = nauchny_patrul_2
+commander = false
+formation = back
+def_state_moving = assault
+on_info = {+sad_cave_snorki_awake} walker@43, {=distance_from_npc_to_point_le(sad_cave_last_mob_home:0:1000)} walker@43 %+sad_cave_snorki_awake%
+;on_info = {-sad_cave_snorki_awake =distance_from_npc_to_point_le(sad_cave_last_mob_home:0:1000)} %+sad_cave_snorki_awake%
+;on_info2 = {-sad_nauchny_phrase_5} %+sad_nauchny_phrase_5 =play_sound(pas_b400_zulus_about_monolith_2)%
+
+[walker@43]:walker@def
+path_walk = cs_nauchny_41
+path_look = cs_nauchny_41_look
+def_state_moving = raid
+
+; -------------------------------------------------------------------------------------------------------------------------------  5
+[logic@nauchny_5]
+suitable = {=target_squad_name(sad_final_ucheny_squad) !is_squad_commander -sad_cave_start_zamer} true
+active = patrol@50
+post_combat_time = 0, 0
+prior = 200
+
+[patrol@50]:walker@def
+path_walk = nauchny_patrul_1
+commander = false
+formation = back
+def_state_moving = raid
+on_info = {+sad_nauchny_cave_1_reached} walker@51
+
+[walker@51]:walker@def
+path_walk = nauchny_15_walk
+path_look = nauchny_15_look
+def_state_moving = assault
+on_info = {+sad_nauchny_go_cave_2} patrol@52
+;on_info2 = {-sad_cave_tushkanos_awake +sad_nauchny_phrase_1 -sad_nauchny_phrase_2} %+sad_nauchny_phrase_2 =play_sound(sad_nauchny_phrase_2)%
+on_info3 = {+sad_nauchny_phrase_4} %-sad_nauchny_phrase_4 =play_sound(pas_b400_sokolov_about_snorks_3)%
+
+[patrol@52]:walker@def
+path_walk = nauchny_patrul_2
+commander = false
+formation = back
+def_state_moving = raid
+on_info = {+sad_cave_snorki_awake} walker@53, {=distance_from_npc_to_point_le(sad_cave_last_mob_home:0:1000)} walker@53 %+sad_cave_snorki_awake%
+;on_info = {-sad_cave_snorki_awake =distance_from_npc_to_point_le(sad_cave_last_mob_home:0:1000)} %+sad_cave_snorki_awake%
+on_info2 = {-sad_nauchny_phrase_5} %+sad_nauchny_phrase_5 =play_sound(pas_b400_zulus_about_monolith_2)%
+
+[walker@53]:walker@def
+path_walk = cs_nauchny_51
+path_look = cs_nauchny_51_look
+def_state_moving = raid
+
+; -------------------------------------------------------------------------------------------------------------------------------
+[wounded]
+hp_state 		= 0|wounded_heavy@help_heavy
+hp_state_see 	= 0|wounded_heavy@help_heavy
+hp_victim 		= 0|nil
+hp_fight 		= 0|false
+hp_cover		= 0|false
+
+[remark@enemy]
+wounded = wounded
+
+[meet]
+close_snd_hello = nil
+close_snd_bye   = nil
+close_distance  = 0
+close_victim    = actor
+close_anim 		= nil
+far_anim 		= nil
+far_victim 		= nil
+far_distance 	= 0
+far_snd 		= nil
+abuse 			= false
+meet_on_talking = false
+use 			= {=actor_enemy} false, true
+allow_break 	= false
+trade_enable	= false

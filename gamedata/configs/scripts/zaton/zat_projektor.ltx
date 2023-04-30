@@ -1,0 +1,9 @@
+[logic]
+active = sr_idle@off
+
+[sr_idle@off]
+on_info = {=is_day}sr_idle@on %=turn_off(zat_projektor_1:zat_projektor_2:zat_projektor_3)%
+
+[sr_idle@on]
+on_info = {!is_day}sr_idle@off %=turn_on(zat_projektor_1:zat_projektor_2:zat_projektor_3)%
+

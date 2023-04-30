@@ -1,0 +1,19 @@
+[logic@default]
+suitable = { =check_npc_name(sim_default_zombied) } true
+active = walker@zombo
+prior = 200
+post_combat_time = 0,0
+
+[logic@zombo_1]:logic@default
+
+[logic@zombo_2]:logic@default
+
+[logic@zombo_3]:logic@default
+
+[logic@zombo_4]:logic@default
+
+[logic@zombo_5]:logic@default
+
+
+[walker@zombo]
+path_walk = zombo_walk

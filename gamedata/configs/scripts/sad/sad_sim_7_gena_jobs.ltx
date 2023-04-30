@@ -1,0 +1,175 @@
+[walker@def]
+gather_items_enabled = false
+help_wounded_enabled = false
+corpse_detection_enabled = false
+
+[walker@cut]:walker@def
+meet = no_meet
+use_camp = false
+combat_ignore_cond = true
+combat_ignore_keep_when_attacked = true
+invulnerable = true
+wounded = wounded@zero
+
+[remark@def]:walker@def
+anim = threat
+target  = story | actor
+meet = no_meet
+
+[wounded@zero]
+hp_state 		= 0|wounded_heavy@nil
+hp_state_see 	= 0|wounded_heavy@nil
+hp_victim 		= 0|actor
+hp_cover 		= 0|false
+hp_fight 		= 0|false
+not_for_help 	= true
+
+[death@gena]
+on_info = {=killed_by_actor} %+sad_gena_killed_by_actor +sad_sim_7_gena_dead%, %+sad_sim_7_gena_dead%
+
+; -------------------------------------------------------------------------------------------------------------------------------------------- Gena
+[logic@gena]
+active = walker@gena
+suitable = {=check_npc_name(sad_sim_7_stalker_gena) =target_squad_name(sad_sim_7_gena_squad)} true
+on_death = death@gena
+prior = 260
+dont_spawn_loot
+
+[walker@gena]:walker@def
+path_walk = gena_walk
+path_look = gena_look
+def_state_standing = ward_short
+meet = meet@gena
+on_info = {=is_wounded =dist_to_actor_ge(110)} %=kill_npc%
+on_info2 = {-sad_sim_7_gena_weapon_given} %+sad_sim_7_gena_weapon_given =give_items(wpn_mp5:ammo_9x19_fmj:ammo_9x19_fmj)%
+wounded = wounded@gena
+
+[walker@meeted]:walker@def
+path_walk = gena_walk
+path_look = gena_look
+meet = meet@22
+on_info = {=is_wounded =dist_to_actor_ge(110)} %=kill_npc%
+wounded = wounded@gena
+
+[meet@gena]
+close_snd_hello = {=actor_has_weapon} meet_hide_weapon, nil
+close_distance  = 4
+close_victim    = actor
+close_anim 		= {=actor_has_weapon} threat_na, wait_na
+use 			= {=actor_enemy} false, {=actor_has_weapon} false, {=is_wounded} true, true
+snd_on_use 		= nil
+trade_enable 	= false
+allow_break 	= false
+
+[meet@22]
+close_snd_hello = meet_use_no_default
+close_distance  = 8
+close_victim    = actor
+close_anim 		= threat_na
+use 			= {=is_wounded} true, false
+snd_on_use 		= meet_use_no_default
+abuse 			= true
+
+[wounded@gena]
+hp_state 			= 45|wounded_heavy@help_heavy
+hp_state_see 		= 45|wounded_heavy@help_heavy
+hp_victim 			= 45|nil
+hp_fight 			= 45|false
+hp_cover			= 45|false
+help_start_dialog	= sad_sim_7_gena_dialog_2
+enable_talk			= true
+autoheal			= false
+use_medkit			= false
+not_for_help		= true
+
+; -------------------------------------------------------------------------------------------------------------------------------------------- Gena after
+[logic@gena_after]
+active = walker@healed
+suitable = {=check_npc_name(sad_sim_7_stalker_gena) =target_squad_name(sad_sim_7_gena_after_squad)} true
+on_death = death@gena
+prior = 260
+dont_spawn_loot
+
+[walker@healed]:walker@cut
+path_walk = gena_zakop_start_walk
+path_look = gena_zakop_start_look
+def_state_moving = walk_noweap
+def_state_standing = wait_na
+can_select_weapon = false
+on_info = {+sad_gena_zakop_cutscene_start} walker@cs1 %=sad_attach_lopata%
+
+[walker@cs1]:walker@cut
+path_walk = gena_zakop_walk
+path_look = gena_zakop_look
+def_state_moving = walk_noweap
+def_state_standing = wait_na
+can_select_weapon = false
+on_signal = on_position | animpoint@cs2_reach %=sad_reset_animation%
+
+[animpoint@cs2_reach]:walker@cut
+cover_name = sad_gena_zakop_animp
+avail_animations = wait_na
+on_info = {=animpoint_reached} animpoint@cs2
+
+[animpoint@cs2]:walker@cut
+cover_name = sad_gena_zakop_animp
+avail_animations = sad_kopati_jama
+on_timer = 15000 | %+sad_gena_zakop_stop_camera_1%
+on_info = {+sad_gena_kopati_jama_end} remark@cs_end %=sad_reset_animation%
+
+[remark@cs_end]:walker@def
+anim = wait_na
+target = story | actor
+on_timer = 3000 | walker@go_ban
+meet = no_meet
+wounded = wounded@zero
+
+[walker@go_ban]
+gather_items_enabled = true
+help_wounded_enabled = false
+corpse_detection_enabled = true
+path_walk = gena_go_ban
+def_state_moving = run
+on_signal = go_ban | %+sad_gena_switch_ban%
+meet = no_meet
+wounded = wounded@zero
+
+; -------------------------------------------------------------------------------------------------------------------------------------------- 1
+[logic@gena_member_1]
+active = walker@1
+suitable = { =target_squad_name(sad_sim_7_gena_squad) !check_npc_name(sad_sim_7_stalker_gena) } true
+prior = 200
+
+[walker@1]:walker@def
+path_walk = guard_1_walk
+path_look = guard_1_look
+meet = meet@mem
+wounded = wounded@zero
+
+; -------------------------------------------------------------------------------------------------------------------------------------------- 2
+[logic@gena_member_2]
+active = walker@2
+suitable = { =target_squad_name(sad_sim_7_gena_squad) !check_npc_name(sad_sim_7_stalker_gena) } true
+prior = 190
+
+[walker@2]:walker@def
+path_walk = walker_1_walk
+path_look = walker_1_look
+meet = meet@mem
+on_info = {=is_rain} walker@1_rain
+wounded = wounded@zero
+
+[walker@1_rain]:walker@def
+path_walk = walker_2_walk
+path_look = walker_2_look
+meet = meet@mem
+on_info = {!is_rain} walker@1
+wounded = wounded@zero
+
+[meet@mem]
+close_snd_hello = nil
+close_distance  = 0
+close_victim    = nil
+close_anim = nil
+snd_on_use = {!actor_enemy} meet_use_no_talk_leader, nil
+use = false

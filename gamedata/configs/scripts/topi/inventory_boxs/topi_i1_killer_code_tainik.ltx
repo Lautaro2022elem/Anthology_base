@@ -1,0 +1,16 @@
+[logic]
+active = ph_idle@ustanovlen
+
+[ph_idle@ustanovlen]
+nonscript_usable = false
+tips = st_code_tainic_descr
+on_info = {+topi_trader_1_quest_talking_prisoner} ph_code@locked
+
+[ph_code@locked]
+code = 5683
+on_code = %=topi_i1_create_anubis +topi_i1_killer_code_tainik_open%
+on_info = {+topi_i1_killer_code_tainik_open} ph_idle@enable
+
+[ph_idle@enable]
+nonscript_usable = true
+tips = st_searcf_treasure

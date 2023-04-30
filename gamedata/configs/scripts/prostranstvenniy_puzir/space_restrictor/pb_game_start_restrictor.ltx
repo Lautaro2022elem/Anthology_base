@@ -1,0 +1,20 @@
+[logic]
+active = sr_idle@intro_1
+
+[sr_idle@intro_1]
+on_info = {+spatial_anomaly +pro_start_scene_stop_postprocess} sr_idle@show_intro_1
+
+[sr_idle@show_intro_1]
+on_timer = 3700 | sr_idle@spawn_start_game %=show_intro_one(intro_1)%
+
+[sr_idle@spawn_start_game]
+on_info = {+quest_line_started -pro_spawn_smart_complete =actor_on_level(p_p)} %=create_squad(pro_smart_3:pro_smart_3) +pro_spawn_smart_complete%
+on_info2 = {+pro_first_dialog_lutiy_not_complete} sr_idle@scene_rezak_send
+
+[sr_idle@scene_rezak_send]
+on_info = {+pro_first_dialog_lutiy_not_complete -pro_rezak_send_mes_lutiy_complete} sr_idle@scene_rezak_send_1 %=CutSceneOnTorch =pb_rezak_send_mes_lutiy +pro_rezak_send_mes_lutiy_complete%
+
+[sr_idle@scene_rezak_send_1]
+on_timer = 8500 | sr_idle@nil %=enable_ui +pro_first_dialog_lutiy_complete%
+
+[sr_idle@nil]

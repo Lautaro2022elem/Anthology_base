@@ -1,0 +1,87 @@
+;=========meet_stalker_korpys========
+[meet@korpys_stalker]
+close_anim 		= nil
+close_victim 	= nil
+far_anim 		= nil
+far_victim 		= nil
+close_distance 	= 0
+far_distance 	= 0
+use = {=actor_enemy} false, {=dist_to_actor_le(3)} true, false
+snd_on_use = {!dist_to_actor_le(3)} nil
+meet_on_talking = false
+;==================================
+
+[logic]
+active = walker@stay_on_base
+post_combat_time = 0, 0
+suitable = {=check_npc_name(esc_killer_raven)} true, false
+level_spot = quest_npc
+prior = 250
+
+[walker@stay_on_base]
+path_walk = esc_quest_killer_raven_walk
+path_look = esc_quest_killer_raven_look
+on_info = {+esc_zver_go_to_wolf} walker@insurance_1
+combat_ignore_cond = true
+combat_ignore_keep_when_attacked = true
+invulnerable = false
+gather_items_enabled = false
+help_wounded_enabled = false
+corpse_detection_enabled = false
+meet = meet@esc_raven_meet_to_dead
+
+;========================================================================
+;============== Квест: Нарушенные планы =================================
+;========================================================================
+[walker@insurance_1]
+path_walk = esc_raven_insurance_6_1_walk_1
+on_info = {=actor_enemy} %=actor_neutral%
+def_state_moving = run
+meet = no_meet
+gather_items_enabled = false
+help_wounded_enabled = false
+corpse_detection_enabled = false
+invulnerable = true
+on_signal = esc_raven_insurance_6_1 | {-esc_raven_insurance_1_1} walker@insurance_2 %+esc_raven_insurance_1_1%
+
+[walker@insurance_2]
+path_walk = esc_raven_insurance_6_walk_1
+on_info = {=actor_enemy} %=actor_neutral%
+def_state_moving = run
+meet = no_meet
+gather_items_enabled = false
+help_wounded_enabled = false
+corpse_detection_enabled = false
+invulnerable = true
+on_signal = esc_raven_insurance_6 | {-esc_raven_insurance_1} walker@raven_vilage %+esc_raven_insurance_1%
+
+[walker@raven_vilage]
+path_walk = esc_raven_vilage_walk
+path_look = esc_raven_vilage_look
+on_info = {=surge_started()} walker@raven_surge
+on_info2 = {+esc_bandit_kpp_kill} %=release_npc%
+combat_ignore_cond = false
+combat_ignore_keep_when_attacked = false
+invulnerable = false
+gather_items_enabled = false
+help_wounded_enabled = false
+corpse_detection_enabled = false
+meet = no_meet
+
+[walker@raven_surge]
+path_walk = esc_raven_vilage_surge_walk
+path_look = esc_raven_vilage_surge_look
+on_info = {=surge_complete()} walker@raven_vilage
+on_info2 = {=actor_enemy} %=actor_neutral%
+gather_items_enabled = false
+corpse_detection_enabled = false
+combat_ignore_keep_when_attacked = true 
+combat_ignore_cond = true
+invulnerable = false
+meet = no_meet
+use_camp = false
+
+[meet@esc_raven_meet_to_dead]:meet@korpys_stalker
+allow_break = false
+meet_dialog = esc_actor_killer_raven_meet_to_dead
+trade_enable = false

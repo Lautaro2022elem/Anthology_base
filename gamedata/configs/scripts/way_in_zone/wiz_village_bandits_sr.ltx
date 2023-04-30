@@ -1,0 +1,38 @@
+[logic]
+active = sr_idle@check_enter
+
+[sr_idle@check_enter]
+on_info = {-wiz_free_neutral_rjaviu_start =actor_in_zone(wiz_village_bandits_sr)} sr_idle@nil
+on_info2 = {+wiz_free_neutral_rjaviu_start} sr_idle@check_info_night %=give_task(free_neutral)%
+
+[sr_idle@check_info_night]
+on_info = {=zat_b7_is_night} sr_idle@now_night_to_raid %+free_neutral_now_night_dialog_start%
+
+[sr_idle@now_night_to_raid]
+on_info = {+free_neutral_now_night} sr_idle@teleport_actor_to_village %=run_postprocess(fade_in) =disable_ui%
+
+[sr_idle@teleport_actor_to_village]
+on_info = {-wiz_free_neutral_actor_teleported} sr_idle@info_out_dark %=teleport_actor(wiz_free_neutral_actor_walk:wiz_free_neutral_actor_look) =forward_game_time(2)%
+
+[sr_idle@info_out_dark]
+on_timer = 5000 | sr_idle@stop_dark_village %+wiz_free_neutral_actor_teleported%
+
+[sr_idle@stop_dark_village]
+on_info = {+wiz_free_neutral_actor_teleported} sr_idle@check_to_die_bandits %=enable_ui =create_squad(wiz_raiders_squad:wiz_derevnya_bandits) =create_squad(wiz_jekan_scene_squad:wiz_sim_6) =create_squad(wiz_sim_6_bandit:wiz_sim_6)%
+
+[sr_idle@check_to_die_bandits]
+on_info = {+wiz_sim_6_bandit_all_die} sr_idle@check_to_tp
+
+[sr_idle@check_to_tp]
+on_info = {+free_neutral_complete} sr_idle@teleport_to_lager_actor %=run_postprocess(fade_in:8122) =disable_ui%
+
+[sr_idle@teleport_to_lager_actor]
+on_info = {-gift_from_rjaviu_out_to_actor} sr_idle@lager_out_dark %=teleport_actor(gonec_pravosudiya_actor_base_walk:gonec_pravosudiya_actor_base_look) =forward_game_time(2)%
+
+[sr_idle@lager_out_dark]
+on_timer = 5000 | sr_idle@stop_postprocess_lager %+wiz_actor_teleported_to_base_free_neutral%
+
+[sr_idle@stop_postprocess_lager]
+on_info = {+wiz_actor_teleported_to_base_free_neutral} sr_idle@nil %=stop_postprocess(8122) =enable_ui =remove_squad(wiz_raiders_squad) =remove_npc(wiz_jekan_scene_id) =create_squad(wiz_jekan_squad:wiz_bivsh_nii)%
+
+[sr_idle@nil]

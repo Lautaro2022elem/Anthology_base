@@ -1,0 +1,194 @@
+; «десь содержатс€ дескрипшены сквадов, которые потом можно создавать использу€ спец функции.
+;-----------------------ESCAPE---------------------------------
+[esc_squad_vagon_enemy]:online_offline_group
+faction = stalker
+npc = sim_default_stalker_0, sim_default_stalker_1, sim_default_stalker_0, sim_default_stalker_1
+target_smart = esc_smart_terrain_5_0
+story_id = esc_squad_vagon_enemy
+on_death = %+esc_squad_vagon_enemy_dead%
+
+[esc_squad_village_night]:online_offline_group
+faction = stalker
+npc = sim_default_stalker_0, sim_default_stalker_0
+target_smart = esc_smart_terrain_1_1_night
+story_id = esc_squad_village_night
+
+[esc_squad_army_leader_quest]:online_offline_group
+faction = army
+npc = esc_army_leader, sim_default_military_2, sim_default_military_3
+target_smart = esc_smart_terrain_3_0_army_quest
+story_id = esc_squad_army_leader_quest
+
+[esc_squad_army_soldier]:online_offline_group
+faction = army
+npc = esc_army_yaroshuk
+target_smart = esc_smart_terrain_3_0_army_quest
+story_id = esc_squad_army_yaroshuk
+
+[esc_squad_furgon_pa]:online_offline_group
+faction = stalker
+npc = esc_mechanic_furgon_pa
+target_smart = esc_smart_terrain_1_1_bar_92
+;spawn_point = esc_smart_terrain_1_1_esc_mechanic_furgon_spawn
+story_id = esc_squad_furgon_pa
+
+[esc_squad_trader_security]:online_offline_group
+faction = stalker
+npc = esc_trader_security
+target_smart = esc_smart_terrain_1_1_bunker
+story_id = esc_squad_trader_security
+
+[esc_merc_bunker_security_squad]:online_offline_group
+faction      = killer
+npc          = sim_default_killer_3, sim_default_killer_2
+target_smart = esc_smart_terrain_1_1_bunker
+story_id     = esc_merc_bunker_security_squad
+
+[esc_squad_barman_bar_pa]:online_offline_group
+faction = stalker
+npc = esc_barman_patogen_pa
+target_smart = esc_smart_terrain_1_1_bar_92
+story_id = esc_squad_barman_bar_pa
+
+[esc_squad_bar_security]:online_offline_group
+faction = stalker
+npc = esc_bar_security
+target_smart = esc_smart_terrain_1_1_bar_92
+story_id = esc_squad_bar_security
+
+[esc_squad_bar_storyman]:online_offline_group
+faction = stalker
+npc = esc_bar_storyman
+target_smart = esc_smart_terrain_1_1_bar_92
+story_id = esc_squad_bar_storyman
+
+[esc_squad_stalker_drunk]:online_offline_group
+faction = stalker
+npc = esc_bar_stalker_drunk
+target_smart = esc_smart_terrain_1_1_bar_92
+story_id = esc_squad_stalker_drunk
+
+[esc_squad_bar_stalker_92]:online_offline_group
+faction = stalker
+npc = esc_bar_stalker_1, esc_bar_stalker_2, esc_bar_stalker_3
+target_smart = esc_smart_terrain_1_1_bar_92
+story_id = esc_squad_bar_stalker_92
+
+[esc_merc_bar_security_squad]:online_offline_group
+faction      = killer
+npc          = sim_default_killer_3, sim_default_killer_2, sim_default_killer_2, sim_default_killer_1
+target_smart = esc_smart_terrain_1_1_bar_92
+story_id     = esc_merc_bar_security_squad
+
+[esc_squad_wolf_brother]:online_offline_group
+faction = stalker
+npc = sim_default_stalker_0
+target_smart = esc_smart_terrain_1_1
+story_id = esc_squad_wolf_brother
+
+[esc_squad_leader_base]:online_offline_group
+relationship = enemy
+faction = stalker
+npc = esc_leader_stalkerbase_go_way, esc_leader_group_1_go_way, esc_leader_group_2_go_way, esc_leader_group_3_go_way, esc_leader_group_4_go_way
+target_smart = {+esc_leader_go_way_1} esc_smart_terrain_3_3_quest_td, esc_smart_terrain_3_2_quest_td
+story_id = esc_squad_leader_base
+on_death = %+esc_squad_leader_base_dead%
+
+[esc_squad_base_night]:online_offline_group
+faction = stalker
+npc = sim_default_stalker_2, sim_default_stalker_2, sim_default_stalker_1
+target_smart = esc_smart_terrain_2_0_night
+story_id = esc_squad_base_night
+
+[esc_squad_leader_orest]:online_offline_group
+faction = stalker
+npc = esc_leader_orest
+target_smart = esc_smart_terrain_2_0
+story_id = esc_squad_leader_orest
+
+[esc_squad_grif]:online_offline_group
+faction = stalker
+npc = esc_killer_grif
+target_smart = esc_smart_terrain_1_0
+story_id = esc_squad_grif
+
+[esc_squad_bizon]:online_offline_group
+faction = stalker
+npc = esc_killer_bizon
+target_smart = esc_smart_terrain_1_0
+story_id = esc_squad_bizon
+
+[esc_squad_duplet]:online_offline_group
+faction = stalker
+npc = esc_killer_duplet
+target_smart = esc_smart_terrain_1_0
+story_id = esc_squad_duplet
+
+[esc_squad_atp_killer]:online_offline_group
+faction = killer
+npc = esc_killer_atp_1, esc_killer_atp_2
+target_smart = esc_smart_terrain_1_0_quest
+story_id = esc_squad_atp_killer
+
+[esc_squad_stalker_to_atp]:online_offline_group
+faction = stalker
+npc = esc_stalker_to_atp_1, esc_stalker_to_atp_2
+target_smart = {+esc_raven_talk_end} esc_smart_terrain_1_0_quest, esc_smart_terrain_1_1_quest
+story_id = esc_squad_stalker_to_atp
+on_death = %+esc_squad_stalker_to_atp_dead%
+
+[esc_squad_stalkers_need_help]:online_offline_group
+faction = stalker
+npc = esc_b46_friend_to_kurer_dead, sim_default_stalker_0, sim_default_stalker_1, sim_default_stalker_0
+target_smart = esc_smart_terrain_2_2_quest_stalker
+story_id = esc_squad_stalkers_need_help
+
+[esc_squad_killer_operation_kpp]:online_offline_group
+faction = killer
+npc = esc_killer_atp_2, esc_killer_atp_1, esc_killer_atp_1, esc_killer_atp_1
+target_smart = {+esc_killer_raven_operation_start} esc_smart_terrain_2_2, esc_smart_terrain_2_2_operation_quest
+story_id = esc_squad_killer_operation_kpp
+
+[esc_squad_stalkers_prisoner]:online_offline_group
+faction = stalker
+npc = esc_stalker_muravei, esc_stalker_levsha
+target_smart = esc_smart_terrain_2_2
+story_id = esc_squad_stalkers_prisoner
+
+[esc_squad_stalker_zohan]:online_offline_group
+faction = stalker
+relationship = friend
+npc = esc_zohan_vilage_final
+target_smart = esc_smart_terrain_1_1
+story_id = esc_squad_stalker_zohan
+
+[esc_squad_stalkers_come_back]:online_offline_group
+faction = stalker
+npc = esc_stalker_muravei, esc_stalker_levsha
+target_smart = esc_smart_terrain_1_1
+story_id = esc_squad_stalkers_come_back
+
+[esc_squad_kpp_bandit]:online_offline_group
+faction = bandit
+npc = esc_bandit_kpp_glava, esc_bandit_kpp_1, sim_default_bandit_1, sim_default_bandit_1, sim_default_bandit_1, sim_default_bandit_2
+target_smart = esc_smart_terrain_2_2
+story_id = esc_squad_kpp
+on_death = %+esc_squad_kpp_bandits_dead%
+
+
+;---------------------------- вестовые сквады--------------------------------------------------------
+[esc_b46_squad_kurer_dead]:online_offline_group
+faction = stalker
+npc = esc_b46_kurer_dead
+target_smart = esc_b46
+spawn_point = esc_kurer_dead_walk
+story_id = esc_b46_friend_to_kurer_dead_walk
+on_death = %+esc_squad_squad_kurer_dead%
+
+
+[esc_b46_squad_friend_to_kurer_dead]:online_offline_group
+faction = stalker
+npc = esc_b46_friend_to_kurer_dead
+target_smart = esc_b46
+spawn_point = esc_b46_friend_to_kurer_dead_walk
+story_id = esc_squad_friend_to_kurer_dead

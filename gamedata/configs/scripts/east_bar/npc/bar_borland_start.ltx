@@ -1,0 +1,51 @@
+[logic]
+active = walker
+post_combat_time = 0, 0
+
+[walker]
+path_walk = bar_borland_start_walk
+on_signal = bar_borland_start_blokpost| {-bar_borland_start_blokpost} walker@2 %+bar_borland_start_blokpost%
+on_info = {-bar_cover_surget_wait =dist_to_actor_ge(20)} %=esc_borland_bar_surget_sms +bar_cover_surget_wait%
+on_info2 = {+bar_cover_surget_wait =dist_to_actor_le(6)} walker %-bar_cover_surget_wait%
+on_info3 = {-bar_actor_friend +sp_a2_hero_to_bar_come} %=actor_friend +bar_actor_friend%
+on_info4 = {+bar_cover_surget_fail} %=kill_npc%
+def_state_moving = assault
+gather_items_enabled = false
+corpse_detection_enabled = false
+invulnerable = true
+meet = no_meet
+
+[walker@2]
+path_walk = bar_borland_start_bar_walk
+on_info = {+bar_cover_surget_fail} %=kill_npc%
+on_info2 = {-esc_borland_bar_surget_2_sms +bar_borland_start_blokpost} %=esc_borland_bar_surget_2_sms =play_sound(bar_surget_quest) +esc_borland_bar_surget_2_sms -bar_cover_surget_wait%
+;on_game_timer = 200 | %=play_sound(bar_quest_sirena_sound)%
+on_signal = bar_borland_start_bar_stoika| {-bar_borland_start_bar_stoika} walker@3 %+bar_borland_start_bar_stoika%
+def_state_moving = sprint
+gather_items_enabled = false
+corpse_detection_enabled = false
+invulnerable = true
+meet = no_meet
+
+[walker@3]
+path_walk = bar_borland_start_bar_stoika_walk
+on_signal = bar_borland_start_nameste| {-bar_borland_start_nameste} animpoint@bar %+bar_borland_start_nameste%
+gather_items_enabled = false
+corpse_detection_enabled = false
+combat_ignore_keep_when_attacked = true 
+combat_ignore_cond = true
+invulnerable = true
+def_state_moving = walk
+meet = no_meet
+
+[animpoint@bar]
+cover_name = bar_borland_start_animpoint
+avail_animations = animpoint_stay_table
+gather_items_enabled = false
+corpse_detection_enabled = false
+combat_ignore_keep_when_attacked = true 
+combat_ignore_cond = true
+invulnerable = true
+meet = no_meet
+use_camp = false
+on_info = {+bar_borland_start_release} %=release_npc%

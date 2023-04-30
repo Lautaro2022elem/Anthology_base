@@ -1,0 +1,37 @@
+;=========meet_stalker_korpys========
+[meet@korpys_stalker]
+close_anim 		= nil
+close_victim 	= nil
+far_anim 		= nil
+far_victim 		= nil
+close_distance 	= 0
+far_distance 	= 0
+use = {=actor_enemy} false, {=dist_to_actor_le(3)} true, false
+snd_on_use = {!dist_to_actor_le(3)} nil
+meet_on_talking = false
+;==================================
+
+[logic]
+suitable = {=check_npc_name(pb_ghost_podval)} true
+prior = 200
+active = animpoint@home
+on_hit = hit@ghost
+
+[animpoint@home]
+cover_name = pro_ghost_podval_animpoint
+on_info = {+pb_ghost_podval_delete} %=release_npc%
+on_info2 = {=is_day} %=release_npc%
+on_info3 = {+pb_actor_hit_ghost_podval} %=release_npc%
+on_info4 = {=dist_to_actor_le(6) -pb_ghost_podval_vodka_spawn_end} %=pb_ghost_podval_vodka_spawn%
+on_info5 = {=dist_to_actor_le(4) -pb_ghost_podval_talk_sound_stop} %=play_sound(pb_ghost_podval_talk) +pb_ghost_podval_talk_sound_stop%
+combat_ignore_cond = true
+combat_ignore_keep_when_attacked = true
+invulnerable = true
+gather_items_enabled = false
+help_wounded_enabled = false
+corpse_detection_enabled = false
+use_camp = false
+meet = no_meet
+
+[hit@ghost]
+on_info = {=hit_by_actor -pb_actor_hit_ghost_podval} %+pb_actor_hit_ghost_podval%

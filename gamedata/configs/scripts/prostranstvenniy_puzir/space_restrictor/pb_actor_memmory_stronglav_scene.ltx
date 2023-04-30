@@ -1,0 +1,37 @@
+[logic]
+active = sr_idle@hit
+
+[sr_idle@hit]
+on_info = {+pro_actor_meet_leader_killer_2} sr_idle@hit_1 %=CutSceneOnTorch =set_game_time(04:17)%
+
+[sr_idle@hit_1]
+on_timer = 1500 | sr_idle@hit_2 %=NpcKickActor_2%
+
+[sr_idle@hit_2]
+on_timer = 1600 | sr_idle@hit_3 %=bed_getup_zver =run_postprocess(black:2525:true) =spawn_object(pb_mrakobes_final:pro_merc_mrakobes_final_walk) =spawn_object(pb_merc_killer_1:pro_merc_killer_1_walk) =spawn_object(pb_markus_alive:pro_markus_alive_spawn)%
+
+[sr_idle@hit_3]
+on_timer = 2000 | sr_idle@hit_4 %=teleport_actor(actor_prisoner_kill_walk:actor_prisoner_kill_look)%
+
+[sr_idle@hit_4]
+on_timer = 3000 | sr_idle@hit_5 %=stop_postprocess(2525) +pb_mrakobes_final_scene_start_sound%
+
+[sr_idle@hit_5]
+on_timer = 12000 | sr_idle@hit_6 %+pro_stronglav_base_spawn_dym%
+
+[sr_idle@hit_6]
+on_timer = 2000 | sr_idle@hit_7 %=spawn_object(pb_stronglav_base:pro_stronglav_base_spawn)%
+
+[sr_idle@hit_7]
+on_timer = 1000 | sr_idle@hit_8 %+pro_mrakobes_suiside_give%
+
+[sr_idle@hit_8]
+on_timer = 100 | sr_idle@hit_9 %+pro_mercenary_suiside_give%
+
+[sr_idle@hit_9]
+on_info = {+pro_markus_alive_come} sr_idle@hit_10 %=enable_ui +pro_dialog_from_markus_alive_give%
+
+[sr_idle@hit_10]
+on_timer = 500 | sr_idle@hit_nil %=give_task(pb_markus_alive_quest)%
+
+[sr_idle@hit_nil]

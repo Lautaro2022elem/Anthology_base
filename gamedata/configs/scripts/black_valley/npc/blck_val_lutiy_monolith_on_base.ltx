@@ -1,0 +1,39 @@
+;=========meet_quest_line========
+[meet@quest_line]
+close_anim 		= nil
+close_victim 	= nil
+far_anim 		= nil
+far_victim 		= nil
+close_distance 	= 0
+far_distance 	= 0
+use = {=actor_enemy} false, {=dist_to_actor_le(3)} true, false
+snd_on_use = {!dist_to_actor_le(3)} nil
+meet_on_talking = false
+;==================================
+
+[logic]
+active = walker@lutiy_monolith_start
+level_spot = quest_npc
+suitable = {=check_npc_name(blck_val_lutiy_monolith_on_base)} true, false
+prior = 200
+
+[walker@lutiy_monolith_start]
+path_walk = blck_val_lutiy_monolith_start_walk
+path_look = blck_val_lutiy_monolith_start_look
+on_info = {+blck_val_quest_lutiy_monolit_is_ready} %=release_npc%
+on_info2 = {=actor_enemy} %=actor_neutral%
+gather_items_enabled = false
+corpse_detection_enabled = false
+combat_ignore_keep_when_attacked = true 
+combat_ignore_cond = true
+invulnerable = true
+meet = meet@start_quest
+use_camp = false
+
+;------------------------------------------
+[meet@start_quest]:meet@quest_line
+close_victim = actor
+use = {+blck_val_tech_reload_community} true, false
+allow_break = false
+meet_dialog = blck_val_lutiy_monolit_dialog
+trade_enable = false

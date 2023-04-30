@@ -1,0 +1,16 @@
+[logic]
+active = sr_idle
+
+[sr_idle]
+on_actor_inside = {+blck_val_actor_go_to_roof_hutor} sr_idle@scenario_autosave %+blck_val_actor_in_roof_hutor_again%
+
+[sr_idle@scenario_autosave]
+on_info = {+blck_val_stavrid_night_shooter_dialog_done} sr_idle@scenario_autosave_1
+
+[sr_idle@scenario_autosave_1]
+on_timer = 500 | sr_idle@scenario_autosave_2
+
+[sr_idle@scenario_autosave_2]
+on_info = {+blck_val_stavrid_night_shooter_dialog_done -blck_val_stavrid_night_shooter_dialog_done_save} sr_idle@nil %+blck_val_stavrid_night_shooter_dialog_done_save =scenario_autosave(st_blck_val_stavrid_night_shooter_dialog_done_save)%
+
+[sr_idle@nil]

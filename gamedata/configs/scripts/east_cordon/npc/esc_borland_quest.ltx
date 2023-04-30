@@ -1,0 +1,108 @@
+[logic]
+active = remark
+post_combat_time = 0, 0
+
+[remark]
+anim = fold_arms
+target = story | actor
+use_camp = false
+combat_ignore_cond = true
+combat_ignore_keep_when_attacked = true
+invulnerable = true
+gather_items_enabled = false
+help_wounded_enabled = false
+corpse_detection_enabled = false
+meet = meet@dialog
+on_info = {-esc_borland_quest_away_from_the_bandits_dialog_village -esc_quest_away_from_the_bandits_borland_go +esc_quest_line_important_meet_borland_dialog_and} remark@2
+on_info2 = {-esc_borland_quest_away_from_the_bandits_dialog_village +esc_quest_away_from_the_bandits_borland_go} remark@remark
+on_info3 = {+esc_borland_quest_away_from_the_bandits_dialog_village} remark@3
+on_info4 = {+eac_quest_fee_complite} %=actor_friend +borland_actor_friend%
+
+[remark@2]
+anim = fold_arms
+target = story | actor
+use_camp = false
+combat_ignore_cond = true
+combat_ignore_keep_when_attacked = true
+invulnerable = true
+gather_items_enabled = false
+help_wounded_enabled = false
+corpse_detection_enabled = false
+meet = meet
+on_info = {+esc_quest_away_from_the_bandits_borland_go} remark@remark
+
+[remark@3]
+anim = wait_na
+target = story | actor
+combat_ignore_cond = true
+combat_ignore_keep_when_attacked = true
+invulnerable = true
+gather_items_enabled = false
+help_wounded_enabled = false
+corpse_detection_enabled = false
+meet = meet@dialog_3
+on_info = {+esc_borland_quest_away_from_the_bandits_dialog_complite} walker@2
+
+[remark@remark]
+anim = hello
+target = story | actor
+combat_ignore_cond = true
+combat_ignore_keep_when_attacked = true
+invulnerable = true
+gather_items_enabled = false
+help_wounded_enabled = false
+corpse_detection_enabled = false
+meet = no_meet
+on_info = {=dist_to_actor_le(2)} remark@dialog_actor %=play_sound(esc_borland_hello)%
+
+[remark@dialog_actor]
+anim = wait
+target = story | actor
+combat_ignore_cond = true
+combat_ignore_keep_when_attacked = true
+invulnerable = true
+gather_items_enabled = false
+help_wounded_enabled = false
+corpse_detection_enabled = false
+meet = meet@dialog_2
+
+[walker@2]
+path_walk = esc_dybolom_walk_1
+path_look = esc_dybolom_look_1
+def_state_moving = walk
+def_state_standing = ward
+combat_ignore_cond = true
+combat_ignore_keep_when_attacked = true
+invulnerable = true
+gather_items_enabled = false
+help_wounded_enabled = false
+corpse_detection_enabled = false
+meet = no_meet
+on_info = {=dist_to_actor_ge(80)} %=release_npc%
+
+[meet]
+use				= {=actor_enemy} false, true
+allow_break			= false
+
+[meet@def]
+abuse           = false
+close_anim 		= nil
+far_anim 		= nil
+far_victim 		= nil
+close_distance  = 0
+far_distance 	= 0
+close_victim = actor
+allow_break = false
+trade_enable = false
+
+[meet@dialog]:meet@def
+use = {=dist_to_actor_le(2)} self, true
+meet_dialog = esc_quest_line_important_meet_borland_dialog
+
+[meet@dialog_2]:meet@def
+use = {!actor_enemy =dist_to_actor_le(2)} self, true
+meet_dialog = esc_borland_quest_away_from_the_bandits_dialog
+
+[meet@dialog_3]:meet@def
+use = {!actor_enemy =dist_to_actor_le(2)} self, true
+meet_dialog = esc_borland_quest_away_from_the_bandits_dialog_complite

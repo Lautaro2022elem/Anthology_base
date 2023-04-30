@@ -1,0 +1,64 @@
+;=========meet_stalker_korpys========
+[meet@korpys_stalker]
+close_anim 		= nil
+close_victim 	= nil
+far_anim 		= nil
+far_victim 		= nil
+close_distance 	= 0
+far_distance 	= 0
+use = {=actor_enemy} false, {=dist_to_actor_le(3)} true, false
+snd_on_use = {!dist_to_actor_le(3)} nil
+meet_on_talking = false
+;==================================
+
+[logic]
+active = walker@security_go_to_actor
+suitable = {=check_npc_name(blck_val_stalker_security)} true, false
+prior = 250
+
+[walker@security_go_to_actor]
+path_walk = blck_val_security_scene_walk
+meet = no_meet
+def_state_moving = walk_noweap
+on_info = {+blck_val_security_to_prison_come +blck_val_security_from_roof_go} walker@security_go_to_leader
+combat_ignore_cond = true 
+combat_ignore_keep_when_attacked = true
+gather_items_enabled = false
+help_wounded_enabled = false
+corpse_detection_enabled = false
+invulnerable = false
+on_signal = blck_val_go_to_prison_scene | {-blck_val_security_to_prison_come} remark@security_meet_to_actor %+blck_val_security_to_prison_come%
+
+[remark@security_meet_to_actor]
+anim = guard_na
+target = story | actor
+on_info = {-blck_val_security_meet_stop_sound} %+blck_val_security_meet_stop_sound =play_sound(blck_val_security_meet_prison_actor)%
+on_info2 = {+blck_val_security_from_roof_go} walker@security_go_to_leader
+on_timer = 4000 | %+blck_val_quest_actor_in_prison_reload%
+combat_ignore_cond = true
+combat_ignore_keep_when_attacked = true
+invulnerable = false
+gather_items_enabled = false
+help_wounded_enabled = false
+corpse_detection_enabled = false
+meet = meet@start_quest
+
+[walker@security_go_to_leader]
+path_look = blck_val_security_go_to_leader_look
+path_walk = blck_val_security_go_to_leader_walk
+on_info = {+blck_val_levsha_first_meet_done} %=release_npc%
+on_info2 = {+blck_val_bandit_shmiga_quest_meet} %=release_npc%
+meet = no_meet
+combat_ignore_cond = true 
+combat_ignore_keep_when_attacked = true
+gather_items_enabled = false
+help_wounded_enabled = false
+corpse_detection_enabled = false
+invulnerable = false
+
+[meet@start_quest]:meet@korpys_stalker
+close_victim = actor
+use = {!actor_enemy =dist_to_actor_le(3) +blck_val_quest_actor_in_prison_reload -blck_val_actor_meet_from_security_done} self, false
+allow_break = false
+meet_dialog = blck_val_security_talk_from_actor
+trade_enable = false

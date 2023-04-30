@@ -1,0 +1,16 @@
+[logic]
+active = {+east_cordon_megafone_broken} nil, ph_idle@wait
+
+[ph_idle@wait]
+on_info = %=play_sound(east_cordon_megafon)%
+on_info2 = {=is_night} ph_idle@night
+hit_on_bone = 2 |ph_idle@broken
+
+[ph_idle@night]
+on_info = %=play_sound(no_sound_mlr)%
+on_info2 = {!is_night} ph_idle@wait
+hit_on_bone = 2 |ph_idle@broken
+
+
+[ph_idle@broken]
+on_info = nil %=stop_sound +east_cordon_megafone_broken%

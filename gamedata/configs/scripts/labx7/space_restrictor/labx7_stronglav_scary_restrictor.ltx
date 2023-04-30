@@ -1,0 +1,7 @@
+[logic]
+active = sr_idle@actor_go_to_stronglav
+
+[sr_idle@actor_go_to_stronglav]
+on_actor_inside = {-labx7_actor_go_to_stronglav} sr_idle@nil %+labx7_actor_go_to_stronglav =spawn_object(labx7_ghost_first:labx7_ghost_first_spawn)%
+
+[sr_idle@nil]

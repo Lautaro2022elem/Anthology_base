@@ -1,0 +1,46 @@
+[logic]
+active = sr_idle@cutscene_end_dialog
+
+[sr_idle@cutscene_end_dialog]
+on_info = {+pro_lutiy_scene_final_base_meet} sr_idle@cutscene_skip_time %=CutSceneOnTorch =run_postprocess(black:2525:true)%
+
+[sr_idle@cutscene_skip_time]
+on_timer = 1500 | sr_idle@set_game_time %=show_text_in_escape(puzir_skip_time) =remove_npc(pb_mrakobes_final) =remove_npc(pb_merc_killer_1) =remove_npc(pb_killer_fire) =remove_npc(pb_kuvalda_prison)%
+
+[sr_idle@set_game_time]
+on_timer = 4000 | sr_idle@cutscene_stop_postprocess %=teleport_actor(actor_scene_chapter_3_walk:actor_scene_chapter_3_look) =set_game_time(15:14)%
+
+[sr_idle@cutscene_stop_postprocess]
+on_timer = 2000 | sr_idle@cutscene_enable_ui %=stop_postprocess(2525) =pro_spawn_epidemy_medicaments%
+
+[sr_idle@cutscene_enable_ui]
+on_timer = 10 | sr_idle@cutscene_give_quest %=enable_ui =pro_actor_replic_about_death_kuvalda +pro_epidemy_in_base_start%
+
+[sr_idle@cutscene_give_quest]
+on_timer = 3500 | sr_idle@cut_scene_epidemy_two %=give_task(pb_epidemy_on_base)%
+
+[sr_idle@cut_scene_epidemy_two]
+on_info = {+pro_actor_give_medicament_dubolom +pro_actor_give_medicament_markus +pro_actor_give_medicament_rezak} sr_idle@cut_scene_epidemy_two_1 %=RavenMemmoryStart =run_postprocess(black:2525:true) =set_game_time(07:34)%
+
+[sr_idle@cut_scene_epidemy_two_1]
+on_timer = 500 | sr_idle@cut_scene_epidemy_two_2 %=show_text_in_escape(time_skip_escape)%
+
+[sr_idle@cut_scene_epidemy_two_2]
+on_timer = 2000 | sr_idle@cut_scene_epidemy_two_3 %=teleport_actor(actor_start_game_walk:actor_start_game_look)%
+
+[sr_idle@cut_scene_epidemy_two_3]
+on_timer = 2000 | sr_idle@cut_scene_epidemy_two_4 %=stop_postprocess(2525)%
+
+[sr_idle@cut_scene_epidemy_two_4]
+on_timer = 50 | sr_idle@cutscene_tachenko_sends_check %=enable_ui +pro_actor_go_to_medicament_search +pro_scene_epidemy_two_started%
+
+[sr_idle@cutscene_tachenko_sends_check]
+on_info = {+pro_final_dialog_lutiy_about_epidemy_done} sr_idle@cutscene_tachenko_sends_sms
+
+[sr_idle@cutscene_tachenko_sends_sms]
+on_timer = 4000 | sr_idle@cutscene_tachenko_give_quest %=pb_duty_tachenko_sends_sms_1%
+
+[sr_idle@cutscene_tachenko_give_quest]
+on_timer = 3000 | sr_idle@nil %=give_task(pb_duty_tachenko_meet)%
+
+[sr_idle@nil]

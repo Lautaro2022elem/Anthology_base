@@ -1,0 +1,980 @@
+<?xml version='1.0' encoding="windows-1251"?>
+
+<xml>
+	<!-- -->
+	<!-- СТАЛКЕР - РЖАВЫЙ -->
+	<!-- -->
+	<specific_character id="wiz_rjaviu" team_default="1">
+		<name>st_wiz_rjaviu_name</name>
+		<icon>ui_inGame2_Vano</icon>
+		<map_icon x="1" y="0">
+		</map_icon>
+		<bio>ќпытный сталкер. ?етальна¤ информаци¤ отсутствует.</bio>
+		<class>wiz_rjaviu</class>
+		<community>stalker</community>
+		<terrain_sect>stalker_terrain</terrain_sect>
+		<snd_config>characters_voice\human\stalker_1\</snd_config>
+
+		<rank>0</rank>
+		<reputation>0</reputation>
+
+		<visual>actors\stalker_neutral\stalker_neutral_levsha</visual>
+
+		<supplies>
+		[spawn] \n
+		wpn_binoc \n
+        wpn_lr300 \n
+        ammo_5.56x45_ss190 = 1 \n
+        wpn_pm \n
+        ammo_9x18_fmj = 1 \n
+        grenade_rgd5 = 1 \n
+                </supplies>
+                #include "gameplay\character_criticals.xml"
+                #include "gameplay\supplies\character_items.xml"
+                #include "gameplay\supplies\character_food.xml"
+                #include "gameplay\supplies\character_drugs.xml"
+
+		<start_dialog>wiz_storyline_dialog_rjaviu_start</start_dialog>
+		<actor_dialog>wiz_storyline_mercs_rjaviu_start</actor_dialog>
+		<actor_dialog>wiz_storyline_mercs_rjaviu_done</actor_dialog>
+		<actor_dialog>wiz_gonec_pravosudiya_rjaviu_start</actor_dialog>
+		<actor_dialog>wiz_gonec_pravosudiya_rjaviu_second</actor_dialog>
+		<actor_dialog>wiz_free_neutral_rjaviu_start</actor_dialog>
+		<actor_dialog>wiz_free_neutral_rjaviu_going_to_village</actor_dialog>
+		<actor_dialog>wiz_free_neutral_rjaviu_complete</actor_dialog>
+		<actor_dialog>wiz_gift_rjaviu_to_actor</actor_dialog>
+		<actor_dialog>wiz_rjaviu_about_yourself</actor_dialog>
+		<actor_dialog>actor_break_dialog</actor_dialog>
+
+	</specific_character>
+	<!-- -->
+	<!-- СТАЛКЕР - КРЮГЕР -->
+	<!-- -->
+	<specific_character id="wiz_kruger" team_default="1">
+		<name>st_wiz_kruger_name</name>
+		<icon>ui_inGame2_neutral_2_mask</icon>
+		<map_icon x="1" y="0">
+		</map_icon>
+		<bio>ќпытный сталкер. ?етальна¤ информаци¤ отсутствует.</bio>
+		<class>wiz_kruger</class>
+		<community>stalker</community>
+		<terrain_sect>stalker_terrain</terrain_sect>
+		<snd_config>characters_voice\human\stalker_1\</snd_config>
+
+		<rank>0</rank>
+		<reputation>0</reputation>
+
+		<visual>actors\stalker_neutral\stalker_neutral_1</visual>
+
+		<supplies>
+		[spawn] \n
+        wpn_pm \n
+        ammo_9x18_fmj = 1 \n
+                </supplies>
+                #include "gameplay\character_criticals.xml"
+                #include "gameplay\supplies\character_items.xml"
+                #include "gameplay\supplies\character_food.xml"
+                #include "gameplay\supplies\character_drugs.xml"
+
+
+		<actor_dialog>actor_break_dialog</actor_dialog>
+
+	</specific_character>
+	<!-- -->
+	<!-- СТАЛКЕР - ЧИП -->
+	<!-- -->
+	<specific_character id="wiz_chip" team_default="1">
+		<name>st_wiz_chip_name</name>
+		<icon>ui_inGame2_Kostoprav</icon>
+		<map_icon x="1" y="0">
+		</map_icon>
+		<bio>ќпытный сталкер. ?етальна¤ информаци¤ отсутствует.</bio>
+		<class>wiz_chip</class>
+		<community>stalker</community>
+		<terrain_sect>stalker_terrain</terrain_sect>
+		<snd_config>characters_voice\human\stalker_1\</snd_config>
+		
+		<rank>60</rank>
+		<reputation>0</reputation>
+		<money min="480000" max="480000" infinitive="1"/>
+		<visual>actors\stalker_neutral\stalker_neutral_vasilisk</visual>
+
+		<supplies>
+      [spawn] \n
+        wpn_beretta \n
+        ammo_9x19_fmj = 1 \n
+                </supplies>
+                #include "gameplay\character_criticals.xml"
+                #include "gameplay\supplies\character_items.xml"
+                #include "gameplay\supplies\character_food.xml"
+                #include "gameplay\supplies\character_drugs.xml"
+
+		<start_dialog>jup_a6_stalker_medik_start_dialog</start_dialog>
+	<actor_dialog>dm_init_medic</actor_dialog>
+    <actor_dialog>dm_medic_general</actor_dialog>
+	   <actor_dialog>dm_ordered_task_dialog</actor_dialog>
+	   <actor_dialog>dm_ordered_task_completed_dialog</actor_dialog>
+	   <actor_dialog>dm_ordered_task_cancel_dialog</actor_dialog>
+		<actor_dialog>actor_break_dialog</actor_dialog>
+
+	</specific_character>
+	<!-- -->
+	<!-- СТАЛКЕР - РЖАВЫЙ -->
+	<!-- -->
+	<specific_character id="wiz_rjaviu_raider" team_default="1">
+		<name>st_wiz_rjaviu_name</name>
+		<icon>ui_inGame2_Vano</icon>
+		<map_icon x="1" y="0">
+		</map_icon>
+		<bio>ќпытный сталкер. ?етальна¤ информаци¤ отсутствует.</bio>
+		<class>wiz_rjaviu_raider</class>
+		<community>stalker</community>
+		<terrain_sect>stalker_terrain</terrain_sect>
+		<snd_config>characters_voice\human\stalker_1\</snd_config>
+
+		<rank>0</rank>
+		<reputation>0</reputation>
+
+		<visual>actors\stalker_neutral\stalker_neutral_levsha</visual>
+
+		<supplies>
+		[spawn] \n
+		wpn_binoc \n
+        wpn_lr300 \n
+        ammo_5.56x45_ss190 = 1 \n
+        wpn_pm \n
+        ammo_9x18_fmj = 1 \n
+        grenade_rgd5 = 1 \n
+                </supplies>
+                #include "gameplay\character_criticals.xml"
+                #include "gameplay\supplies\character_items.xml"
+                #include "gameplay\supplies\character_food.xml"
+                #include "gameplay\supplies\character_drugs.xml"
+
+		<actor_dialog>wiz_free_neutral_rjaviu_complete</actor_dialog>
+		<actor_dialog>actor_break_dialog</actor_dialog>
+
+	</specific_character>
+	<!-- -->
+	<!-- СТАЛКЕР - ЖЕКАН -->
+	<!-- -->
+	<specific_character id="wiz_jekan" team_default="1">
+		<name>st_wiz_jekan_name</name>
+		<icon>ui_inGame2_Gluhar</icon>
+		<map_icon x="1" y="0">
+		</map_icon>
+		<bio>ќпытный сталкер. ?етальна¤ информаци¤ отсутствует.</bio>
+		<class>wiz_jekan</class>
+		<community>stalker</community>
+		<terrain_sect>stalker_terrain</terrain_sect>
+		<snd_config>characters_voice\human\stalker_2\</snd_config>
+		<rank>60</rank>
+		<reputation>0</reputation>
+		<money min="5000" max="5000" infinitive="0" />
+		<visual>actors\stalker_neutral\stalker_neutral_eger</visual>
+
+		<supplies>
+      [spawn] \n
+                </supplies>
+                #include "gameplay\character_criticals.xml"
+                #include "gameplay\supplies\character_items.xml"
+                #include "gameplay\supplies\character_food.xml"
+                #include "gameplay\supplies\character_drugs.xml"
+
+		<actor_dialog>wiz_free_neutral_jekan_free</actor_dialog>
+		<actor_dialog>wiz_jekan_second_quest_start</actor_dialog>
+		<actor_dialog>wiz_jekan_second_quest_done</actor_dialog>
+		<actor_dialog>actor_break_dialog</actor_dialog>
+
+	</specific_character>
+	<!-- -->
+	<!-- СТАЛКЕР - КОСТА -->
+	<!-- -->
+	<specific_character id="wiz_kosta" team_default="1">
+		<name>st_wiz_kosta_name</name>
+		<icon>ui_inGame2_Tremor</icon>
+		<map_icon x="1" y="0">
+		</map_icon>
+		<bio>ќпытный сталкер. ?етальна¤ информаци¤ отсутствует.</bio>
+		<class>wiz_kosta</class>
+		<community>stalker</community>
+		<terrain_sect>stalker_terrain</terrain_sect>
+		<snd_config>characters_voice\human\stalker_2\</snd_config>
+		<rank>60</rank>
+		<reputation>0</reputation>
+		<money min="5000" max="5000" infinitive="0" />
+		<visual>actors\stalker_neutral\stalker_neutral_hunter</visual>
+
+		<supplies>
+      [spawn] \n
+        medkit = 1 \n
+                </supplies>
+                #include "gameplay\character_criticals.xml"
+                #include "gameplay\supplies\character_items.xml"
+                #include "gameplay\supplies\character_food.xml"
+                #include "gameplay\supplies\character_drugs.xml"
+
+		<start_dialog>wiz_storyline_dialog_kosta_start</start_dialog>
+		<actor_dialog>wiz_gonec_pravosudiya_kosta_start</actor_dialog>
+		<actor_dialog>wiz_gonec_pravosudiya_kosta</actor_dialog>
+		<actor_dialog>wiz_kosta_about_yourself</actor_dialog>
+		<actor_dialog>wiz_kosta_about_terr</actor_dialog>
+		<actor_dialog>actor_break_dialog</actor_dialog>
+
+	</specific_character>
+	<!-- -->
+	<!-- СТАЛКЕР - ФОМА -->
+	<!-- -->
+	<specific_character id="wiz_foma" team_default="1">
+		<name>st_wiz_foma_name</name>
+		<icon>ui_inGame2_Sich</icon>
+		<map_icon x="1" y="0">
+		</map_icon>
+		<bio>ќпытный сталкер. ?етальна¤ информаци¤ отсутствует.</bio>
+		<class>wiz_foma</class>
+		<community>stalker</community>
+		<terrain_sect>stalker_terrain</terrain_sect>
+		<snd_config>characters_voice\human\stalker_2\</snd_config>
+		<rank>60</rank>
+		<reputation>0</reputation>
+		<money min="480000" max="480000" infinitive="1"/>
+		<visual>actors_ex\stalker_neutral_eger_old</visual>
+
+		<supplies>
+      [spawn] \n
+        wpn_beretta \n
+        ammo_9x19_fmj = 1 \n
+        grenade_rgd5 = 1 \n
+                </supplies>
+                #include "gameplay\character_criticals.xml"
+                #include "gameplay\supplies\character_items.xml"
+                #include "gameplay\supplies\character_food.xml"
+                #include "gameplay\supplies\character_drugs.xml"
+
+           <actor_dialog>dm_init_trader</actor_dialog>
+	   <actor_dialog>dm_ordered_task_dialog</actor_dialog>
+	   <actor_dialog>dm_ordered_task_completed_dialog</actor_dialog>
+	   <actor_dialog>dm_ordered_task_cancel_dialog</actor_dialog>
+		<start_dialog>wiz_storyline_dialog_foma_start</start_dialog>
+		<actor_dialog>wiz_storyline_dialog_foma_bsd_done</actor_dialog>
+		<actor_dialog>wiz_storyline_dialog_foma_katacombs</actor_dialog>
+		<actor_dialog>wiz_katacombs_foma_starik_die_dialog</actor_dialog>
+		<actor_dialog>wiz_germo_case_quest_dialog</actor_dialog>
+		<actor_dialog>wiz_foma_second_quest</actor_dialog>
+		<actor_dialog>zat_a2_linker_b29_actor_info</actor_dialog>
+		<actor_dialog>zat_a2_linker_b29_actor_get_adv_task</actor_dialog>
+		<actor_dialog>zat_a2_linker_b29_actor_give_adv_task</actor_dialog>
+		<actor_dialog>wiz_owl_stalker_trader_sell_items</actor_dialog>
+		<actor_dialog>wiz_foma_about_yourself</actor_dialog>
+		<actor_dialog>actor_break_dialog</actor_dialog>
+
+	</specific_character>
+	<!-- -->
+	<!-- СТАЛКЕР - ИВАНЫЧ -->
+	<!-- -->
+	<specific_character id="wiz_ivanich" team_default="1">
+		<name>st_wiz_ivanich_name</name>
+		<icon>ui_inGame2_Kardan</icon>
+		<map_icon x="1" y="0"></map_icon>
+		<bio>ќпытный сталкер. ?етальна¤ информаци¤ отсутствует.</bio>
+		<class>wiz_ivanich</class>
+		<community>stalker</community>
+		<terrain_sect>stalker_terrain</terrain_sect>
+		<snd_config>characters_voice\human\stalker_2\</snd_config>
+		<rank>60</rank>
+		<reputation>0</reputation>
+		<mechanic_mode>1</mechanic_mode>
+		<money min="480000" max="480000" infinitive="1"/>
+		<visual>actors_ex\saharich</visual>
+
+		<supplies>
+      [spawn] \n
+        wpn_beretta \n
+        ammo_9x19_fmj = 1 \n
+        grenade_rgd5 = 1 \n
+                </supplies>
+                #include "gameplay\character_criticals.xml"
+                #include "gameplay\supplies\character_items.xml"
+                #include "gameplay\supplies\character_food.xml"
+                #include "gameplay\supplies\character_drugs.xml"
+
+           <actor_dialog>dm_init_trader</actor_dialog>
+           <actor_dialog>dm_init_mechanic</actor_dialog> 
+           <actor_dialog>dm_encrypted_pda</actor_dialog>
+           <actor_dialog>dm_tech_repair</actor_dialog>
+	   <actor_dialog>dm_ordered_task_dialog</actor_dialog>
+	   <actor_dialog>dm_ordered_task_completed_dialog</actor_dialog>
+	   <actor_dialog>dm_ordered_task_cancel_dialog</actor_dialog>
+		<actor_dialog>wiz_tech_secondary_quest_1_go</actor_dialog>
+		<actor_dialog>wiz_tech_secondary_quest_1_done</actor_dialog>
+		<actor_dialog>wiz_ivanich_merc_pda_unlocking_start</actor_dialog>
+		<actor_dialog>wiz_ivanich_merc_pda_unlocking_done</actor_dialog>
+		<actor_dialog>wiz_ivanich_about_yourself</actor_dialog>
+		<actor_dialog>actor_break_dialog</actor_dialog>
+
+	</specific_character>
+	<!-- -->
+	<!-- СТАЛКЕР - НАЗАР -->
+	<!-- -->
+	<specific_character id="wiz_nazar" team_default="1">
+		<name>st_wiz_nazar_name</name>
+		<icon>ui_inGame2_neutral_2_mask</icon>
+		<map_icon x="1" y="0">
+		</map_icon>
+		<bio>ќпытный сталкер. ?етальна¤ информаци¤ отсутствует.</bio>
+		<class>wiz_nazar</class>
+		<community>stalker</community>
+		<terrain_sect>stalker_terrain</terrain_sect>
+		<snd_config>characters_voice\human\stalker_2\</snd_config>
+		<rank>60</rank>
+		<reputation>0</reputation>
+		<money min="5000" max="5000" infinitive="0" />
+		<visual>actors\stalker_neutral\stalker_neutral_2</visual>
+
+		<supplies>
+      [spawn] \n
+		wiz_pda_nazar \n
+                </supplies>
+
+	</specific_character>
+  <specific_character id="wiz_krivou" team_default = "1">
+    <name>st_wiz_krivou_name</name>
+    <icon>ui_inGame2_Sultan</icon>
+    <map_icon x="1" y="0"></map_icon>
+    <bio>ќпытный сталкер. ?етальна¤ информаци¤ отсутствует.</bio>
+
+    <class>wiz_krivou</class>
+    <community>killer</community> <terrain_sect>stalker_terrain</terrain_sect>
+    <snd_config>characters_voice\human\killer_3\</snd_config>
+
+    <rank>55</rank>
+	<money min="2500" max="5000" infinitive="0"/>
+    <reputation>0</reputation>
+
+    <visual>actors\stalker_merc\stalker_merc_4</visual>
+    <supplies>
+      [spawn] \n
+      
+      wpn_sig550 = 1, silencer \n
+      ammo_5.56x45_ap = 1 \n
+      wpn_usp = 1 \n
+      ammo_11.43x23_hydro = 1 \n
+      grenade_rgd5 = 3 \n
+
+#include "gameplay\supplies\character_items_nd.xml"
+#include "gameplay\supplies\character_food.xml"
+#include "gameplay\supplies\character_drugs_3.xml"
+#include "gameplay\supplies\character_drugs_sci.xml"
+#include "gameplay\supplies\character_drugs_mil.xml"
+    </supplies>
+	<start_dialog>wiz_krivoy_enemy_with_neutral</start_dialog>
+	<actor_dialog>actor_break_dialog</actor_dialog>
+  </specific_character>
+
+  <specific_character id="wiz_poslannik_krivogo" team_default = "1">
+    <name>GENERATE_NAME_stalker</name>
+    <icon>ui_inGame2_merc_2</icon>
+    <map_icon x="1" y="0"></map_icon>
+    <bio>ќпытный сталкер. ?етальна¤ информаци¤ отсутствует.</bio>
+
+    <class>wiz_poslannik_krivogo</class>
+    <community>killer</community> <terrain_sect>stalker_terrain</terrain_sect>
+    <snd_config>characters_voice\human\killer_3\</snd_config>
+
+    <rank>35</rank>
+	<money min="250" max="1750" infinitive="0"/>
+    <reputation>0</reputation>
+
+    <visual>actors\stalker_merc\stalker_merc_2</visual>
+    <supplies>
+      [spawn] \n
+      
+      wpn_ak74 = 1, scope, silencer \n
+      ammo_5.45x39_fmj  = 1 \n
+      wpn_hpsa \n
+      ammo_9x19_fmj = 1 \n
+	  grenade_rgd5 = 1 \n
+	  wiz_pda_merc_lock \n
+
+#include "gameplay\supplies\character_items_nd.xml"
+#include "gameplay\supplies\character_food.xml"
+#include "gameplay\supplies\character_drugs.xml"
+    </supplies>
+#include "gameplay\character_criticals.xml"
+#include "gameplay\character_dialogs.xml"
+  </specific_character>
+
+  <specific_character id="wiz_lt_krasnopolsky" team_default = "1">
+    <name>st_wiz_lt_krasnopolsky_name</name>
+    <icon>ui_inGame2_Dolg_4</icon>
+    <map_icon x="1" y="0"></map_icon>
+    <bio>Опытный сталкер. Детальная информация отсутствует.</bio>
+
+    <class>wiz_lt_krasnopolsky</class>
+    <community>dolg</community> <terrain_sect>stalker_terrain</terrain_sect>
+    <snd_config>characters_voice\human\dolg_3\</snd_config>
+
+    <rank>50</rank>
+    <reputation>0</reputation>
+	<money min="1500" max="3500" infinitive="0"/>
+    <visual>actors\stalker_dolg\stalker_dolgexo_4</visual>
+    <supplies>
+
+      [spawn] \n
+      wpn_groza = 1 \n
+      ammo_9x39_pab9 = 1 \n
+      wpn_usp \n
+      ammo_11.43x23_hydro = 1 \n
+      grenade_f1 = 2 \n
+
+#include "gameplay\supplies\character_items_nd.xml"
+#include "gameplay\supplies\character_food.xml"
+#include "gameplay\supplies\character_drugs_3.xml"
+#include "gameplay\supplies\character_drugs_mil.xml"
+    </supplies>
+	<start_dialog>wiz_lt_krasnopolsky_enemy_with_neutral</start_dialog>
+	<actor_dialog>wiz_lt_krasnopolsky_enemy_with_neutral_second</actor_dialog>
+	<actor_dialog>wiz_lt_krasnopolsky_enemy_with_neutral_third</actor_dialog>
+	<actor_dialog>dl_storyline_krasnopolsky_first_dialog</actor_dialog>
+	<actor_dialog>dl_storyline_krasnopolsky_second_dialog</actor_dialog>
+	<actor_dialog>dl_storyline_krasnopolsky_third_dialog</actor_dialog>
+	<actor_dialog>actor_break_dialog</actor_dialog>
+  </specific_character>
+	<!-- -->
+	<!-- СТАЛКЕР - ЖЕКАН СЦЕНА -->
+	<!-- -->
+	<specific_character id="wiz_jekan_scene" team_default="1">
+		<name>st_wiz_jekan_name</name>
+		<icon>ui_inGame2_Gluhar</icon>
+		<map_icon x="1" y="0">
+		</map_icon>
+		<bio>ќпытный сталкер. ?етальна¤ информаци¤ отсутствует.</bio>
+		<class>wiz_jekan_scene</class>
+		<community>stalker</community>
+		<terrain_sect>stalker_terrain</terrain_sect>
+		<snd_config>characters_voice\human\stalker_2\</snd_config>
+		<rank>60</rank>
+		<reputation>0</reputation>
+		<money min="5000" max="5000" infinitive="0" />
+		<visual>actors\stalker_neutral\stalker_neutral_eger</visual>
+
+		<supplies>
+      [spawn] \n
+                </supplies>
+                #include "gameplay\character_criticals.xml"
+                #include "gameplay\supplies\character_items.xml"
+                #include "gameplay\supplies\character_food.xml"
+                #include "gameplay\supplies\character_drugs.xml"
+
+		<actor_dialog>actor_break_dialog</actor_dialog>
+
+	</specific_character>
+
+<!-- 													   -->
+<!-- 						Bandit						   -->
+<!-- 													   -->
+
+					<!--  bandit novice  -->
+
+  <specific_character id="wiz_guard_bandit_1" team_default = "1">
+    <name>GENERATE_NAME_bandit</name>
+    <icon>ui_inGame2_bandit_1</icon>
+    <map_icon x="1" y="0"></map_icon>
+    <bio>ќпытный сталкер. ?етальна¤ информаци¤ отсутствует.</bio>
+
+    <class>wiz_guard_bandit_1</class>
+    <community>bandit</community> <terrain_sect>stalker_terrain</terrain_sect>
+    <snd_config>characters_voice\human\bandit_1\</snd_config>
+
+    <rank>20</rank>
+    <reputation>0</reputation>
+	<money min="250" max="1750" infinitive="0"/>
+    <visual>actors\stalker_bandit\stalker_bandit_1</visual>
+    <supplies>
+      [spawn] \n
+      wpn_bm16 \n
+      ammo_12x70_buck = 1 \n
+	  wpn_pm  \n
+      ammo_9x18_fmj = 1 \n
+
+#include "gameplay\supplies\character_items_nd.xml"
+#include "gameplay\supplies\character_food.xml"
+#include "gameplay\supplies\character_drugs.xml"
+    </supplies>
+#include "gameplay\character_criticals.xml"
+#include "gameplay\character_dialogs.xml"
+  </specific_character>
+
+
+  <specific_character id="wiz_guard_bandit_2" team_default = "1">
+    <name>GENERATE_NAME_bandit</name>
+    <icon>ui_inGame2_bandit_1</icon>
+    <map_icon x="1" y="0"></map_icon>
+    <bio>ќпытный сталкер. ?етальна¤ информаци¤ отсутствует.</bio>
+
+    <class>wiz_guard_bandit_2</class>
+    <community>bandit</community> <terrain_sect>stalker_terrain</terrain_sect>
+    <snd_config>characters_voice\human\bandit_1\</snd_config>
+
+    <rank>20</rank>
+    <reputation>0</reputation>
+	<money min="250" max="1750" infinitive="0"/>
+    <visual>actors\stalker_bandit\stalker_bandit_1</visual>
+    <supplies>
+      [spawn] \n
+      wpn_bm16 \n
+      ammo_12x70_buck = 1 \n
+      wpn_fort \n
+      ammo_9x18_fmj = 1 \n
+
+#include "gameplay\supplies\character_items_nd.xml"
+#include "gameplay\supplies\character_food.xml"
+#include "gameplay\supplies\character_drugs.xml"
+    </supplies>
+#include "gameplay\character_criticals.xml"
+#include "gameplay\character_dialogs.xml"
+  </specific_character>
+
+  <specific_character id="wiz_guard_bandit_3" team_default = "1">
+    <name>GENERATE_NAME_bandit</name>
+    <icon>ui_inGame2_bandit_1</icon>
+    <map_icon x="1" y="0"></map_icon>
+    <bio>ќпытный сталкер. ?етальна¤ информаци¤ отсутствует.</bio>
+
+    <class>wiz_guard_bandit_3</class>
+    <community>bandit</community> <terrain_sect>stalker_terrain</terrain_sect>
+    <snd_config>characters_voice\human\bandit_1\</snd_config>
+
+    <rank>20</rank>
+    <reputation>0</reputation>
+	<money min="250" max="1750" infinitive="0"/>
+    <visual>actors\stalker_bandit\stalker_bandit_1</visual>
+    <supplies>
+      [spawn] \n
+	  wpn_ak74u \n
+	  ammo_5.45x39_fmj  = 1 \n
+	  wpn_pm  \n
+      ammo_9x18_fmj = 1 \n
+
+#include "gameplay\supplies\character_items_nd.xml"
+#include "gameplay\supplies\character_food.xml"
+#include "gameplay\supplies\character_drugs.xml"
+    </supplies>
+#include "gameplay\character_criticals.xml"
+#include "gameplay\character_dialogs.xml"
+  </specific_character>  
+  
+  <specific_character id="wiz_guard_bandit_4" team_default = "1">
+    <name>GENERATE_NAME_bandit</name>
+    <icon>ui_inGame2_bandit_3_mask</icon>
+    <map_icon x="1" y="0"></map_icon>
+    <bio>ќпытный сталкер. ?етальна¤ информаци¤ отсутствует.</bio>
+
+    <class>wiz_guard_bandit_4</class>
+    <community>bandit</community> <terrain_sect>stalker_terrain</terrain_sect>
+    <snd_config>characters_voice\human\bandit_2\</snd_config>
+
+    <rank>30</rank>
+    <reputation>0</reputation>
+	<money min="250" max="1750" infinitive="0"/>
+    <visual>actors\stalker_bandit\stalker_bandit_3_mask</visual>
+    <supplies>
+      [spawn] \n
+      
+      wpn_ak74 \n
+      ammo_5.45x39_fmj = 1 \n
+      wpn_pm \n
+      ammo_9x18_fmj = 1 \n
+      grenade_rgd5 = 1 \n
+
+#include "gameplay\supplies\character_items_nd.xml"
+#include "gameplay\supplies\character_food.xml"
+#include "gameplay\supplies\character_drugs.xml"
+    </supplies>
+#include "gameplay\character_criticals.xml"
+#include "gameplay\character_dialogs.xml"
+  </specific_character>
+
+  <specific_character id="wiz_guard_bandit_5" team_default = "1">
+    <name>GENERATE_NAME_bandit</name>
+    <icon>ui_inGame2_bandit_3_mask</icon>
+    <map_icon x="1" y="0"></map_icon>
+    <bio>ќпытный сталкер. ?етальна¤ информаци¤ отсутствует.</bio>
+
+    <class>wiz_guard_bandit_5</class>
+    <community>bandit</community> <terrain_sect>stalker_terrain</terrain_sect>
+    <snd_config>characters_voice\human\bandit_2\</snd_config>
+
+    <rank>30</rank>
+    <reputation>0</reputation>
+	<money min="250" max="1750" infinitive="0"/>
+    <visual>actors\stalker_bandit\stalker_bandit_3_mask</visual>
+    <supplies>
+      [spawn] \n
+      
+	  wpn_ak74u \n
+	  ammo_5.45x39_fmj  = 1 \n
+	  wpn_pm \n
+      ammo_9x18_fmj = 1 \n
+      grenade_rgd5 = 1 \n
+
+#include "gameplay\supplies\character_items_nd.xml"
+#include "gameplay\supplies\character_food.xml"
+#include "gameplay\supplies\character_drugs.xml"
+    </supplies>
+#include "gameplay\character_criticals.xml"
+#include "gameplay\character_dialogs.xml"
+  </specific_character>
+
+  <specific_character id="wiz_guard_bandit_6" team_default = "1">
+    <name>GENERATE_NAME_bandit</name>
+    <icon>ui_inGame2_bandit_4</icon>
+    <map_icon x="1" y="0"></map_icon>
+    <bio>ќпытный сталкер. ?етальна¤ информаци¤ отсутствует.</bio>
+
+    <class>wiz_guard_bandit_6</class>
+    <community>bandit</community> <terrain_sect>stalker_terrain</terrain_sect>
+    <snd_config>characters_voice\human\bandit_2\</snd_config>
+
+    <rank>30</rank>
+    <reputation>0</reputation>
+	<money min="250" max="1750" infinitive="0"/>
+    <visual>actors\stalker_bandit\stalker_bandit_4</visual>
+    <supplies>
+      [spawn] \n
+      
+	  wpn_ak74u \n
+	  ammo_5.45x39_fmj  = 1 \n
+	  wpn_hpsa \n
+      ammo_9x19_fmj = 1 \n
+      grenade_rgd5 = 1 \n
+
+#include "gameplay\supplies\character_items_nd.xml"
+#include "gameplay\supplies\character_food.xml"
+#include "gameplay\supplies\character_drugs.xml"
+    </supplies>
+#include "gameplay\character_criticals.xml"
+#include "gameplay\character_dialogs.xml"
+  </specific_character>
+
+  <specific_character id="wiz_guard_bandit_7" team_default = "1">
+    <name>GENERATE_NAME_bandit</name>
+    <icon>ui_inGame2_bandit_1</icon>
+    <map_icon x="1" y="0"></map_icon>
+    <bio>ќпытный сталкер. ?етальна¤ информаци¤ отсутствует.</bio>
+
+    <class>wiz_guard_bandit_7</class>
+    <community>bandit</community> <terrain_sect>stalker_terrain</terrain_sect>
+    <snd_config>characters_voice\human\bandit_1\</snd_config>
+
+    <rank>30</rank>
+    <reputation>0</reputation>
+	<money min="250" max="1750" infinitive="0"/>
+    <visual>actors\stalker_bandit\stalker_bandit_1</visual>
+    <supplies>
+      [spawn] \n
+      
+	  wpn_ak74u \n
+	  ammo_5.45x39_fmj  = 1 \n
+      wpn_fort \n
+      ammo_9x18_fmj = 1 \n
+      grenade_rgd5 = 1 \n
+
+#include "gameplay\supplies\character_items_nd.xml"
+#include "gameplay\supplies\character_food.xml"
+#include "gameplay\supplies\character_drugs.xml"
+    </supplies>
+#include "gameplay\character_criticals.xml"
+#include "gameplay\character_dialogs.xml"
+  </specific_character>
+
+		<!--  bandit master  -->
+
+  <specific_character id="wiz_guard_bandit_8" team_default = "1">
+    <name>GENERATE_NAME_bandit</name>
+    <icon>ui_inGame2_bandit_4</icon>
+    <map_icon x="1" y="0"></map_icon>
+    <bio>ќпытный сталкер. ?етальна¤ информаци¤ отсутствует.</bio>
+
+    <class>wiz_guard_bandit_8</class>
+    <community>bandit</community> <terrain_sect>stalker_terrain</terrain_sect>
+    <snd_config>characters_voice\human\bandit_2\</snd_config>
+
+    <rank>55</rank>
+    <reputation>0</reputation>
+	<money min="4000" max="8000" infinitive="0"/>
+    <visual>actors\stalker_bandit\stalker_bandit_4</visual>
+    <supplies>
+      [spawn] \n
+      
+      wpn_sig550 \n
+      ammo_5.56x45_ap = 1 \n
+      wpn_desert_eagle \n
+      ammo_11.43x23_fmj = 1 \n
+      grenade_f1 = 4 \n
+
+#include "gameplay\supplies\character_items_nd.xml"
+#include "gameplay\supplies\character_food.xml"
+#include "gameplay\supplies\character_drugs_2.xml"
+
+#include "gameplay\supplies\character_sell_weapons.xml"
+    </supplies>
+#include "gameplay\character_criticals.xml"
+#include "gameplay\character_dialogs.xml"
+  </specific_character>
+
+  <specific_character id="wiz_guard_bandit_9" team_default = "1">
+    <name>GENERATE_NAME_bandit</name>
+    <icon>ui_inGame2_bandit_3</icon>
+    <map_icon x="1" y="0"></map_icon>
+    <bio>ќпытный сталкер. ?етальна¤ информаци¤ отсутствует.</bio>
+
+    <class>wiz_guard_bandit_9</class>
+    <community>bandit</community> <terrain_sect>stalker_terrain</terrain_sect>
+    <snd_config>characters_voice\human\bandit_2\</snd_config>
+
+    <rank>55</rank>
+    <reputation>0</reputation>
+	<money min="4000" max="8000" infinitive="0"/>
+    <visual>actors\stalker_bandit\stalker_bandit_3</visual>
+    <supplies>
+      [spawn] \n
+      
+      wpn_sig550 \n
+      ammo_5.56x45_ap = 1 \n
+      wpn_colt1911 \n
+      ammo_11.43x23_hydro = 1 \n
+      grenade_f1 = 4 \n
+
+#include "gameplay\supplies\character_items_nd.xml"
+#include "gameplay\supplies\character_food.xml"
+#include "gameplay\supplies\character_drugs_2.xml"
+
+#include "gameplay\supplies\character_sell_weapons.xml"
+    </supplies>
+#include "gameplay\character_criticals.xml"
+#include "gameplay\character_dialogs.xml"
+ </specific_character>
+
+  <specific_character id="wiz_guard_bandit_10" team_default = "1">
+    <name>GENERATE_NAME_bandit</name>
+    <icon>ui_inGame2_bandit_2</icon>
+    <map_icon x="1" y="0"></map_icon>
+    <bio>ќпытный сталкер. ?етальна¤ информаци¤ отсутствует.</bio>
+
+    <class>wiz_guard_bandit_10</class>
+    <community>bandit</community> <terrain_sect>stalker_terrain</terrain_sect>
+    <snd_config>characters_voice\human\bandit_1\</snd_config>
+
+    <rank>55</rank>
+    <reputation>0</reputation>
+	<money min="4000" max="8000" infinitive="0"/>
+    <visual>actors\stalker_bandit\stalker_bandit_3</visual>
+    <supplies>
+      [spawn] \n
+      
+      wpn_sig550 \n
+      ammo_5.56x45_ap = 1 \n
+      wpn_desert_eagle \n
+      ammo_11.43x23_fmj = 1 \n
+      grenade_f1 = 4 \n
+
+#include "gameplay\supplies\character_items_nd.xml"
+#include "gameplay\supplies\character_food.xml"
+#include "gameplay\supplies\character_drugs_2.xml"
+
+#include "gameplay\supplies\character_sell_weapons.xml"
+    </supplies>
+#include "gameplay\character_criticals.xml"
+#include "gameplay\character_dialogs.xml"
+</specific_character>
+
+		<!--  stalker expirienced 2  -->
+
+  <specific_character id="wiz_raider_stalker_1" team_default = "1">
+    <name>GENERATE_NAME_stalker</name>
+    <icon>ui_inGame2_neutral_2_mask</icon>
+    <map_icon x="1" y="0"></map_icon>
+    <bio>ќпытный сталкер. ?етальна¤ информаци¤ отсутствует.</bio>
+
+    <class>wiz_raider_stalker_1</class>
+    <community>stalker</community> <terrain_sect>stalker_terrain</terrain_sect>
+    <snd_config>characters_voice\human\stalker_2\</snd_config>
+
+    <rank>40</rank>
+	<money min="1500" max="3500" infinitive="0"/>
+    <reputation>0</reputation>
+
+    <visual>actors\stalker_neutral\stalker_neutral_2_mask</visual>
+    <supplies>
+      [spawn] \n
+
+      wpn_wincheaster1300 \n
+      ammo_12x70_buck = 1 \n      
+      wpn_beretta \n
+      ammo_9x19_fmj = 1 \n
+      grenade_rgd5 = 2 \n
+
+#include "gameplay\supplies\character_items_2.xml"
+#include "gameplay\supplies\character_food.xml"
+#include "gameplay\supplies\character_drugs_2.xml"
+
+    </supplies>
+#include "gameplay\character_criticals.xml"
+#include "gameplay\character_dialogs.xml"
+  </specific_character>
+
+  <specific_character id="wiz_raider_stalker_2" team_default = "1">
+    <name>GENERATE_NAME_stalker</name>
+    <icon>ui_inGame2_neutral_2_mask</icon>
+    <map_icon x="1" y="0"></map_icon>
+    <bio>ќпытный сталкер. ?етальна¤ информаци¤ отсутствует.</bio>
+
+    <class>wiz_raider_stalker_2</class>
+    <community>stalker</community> <terrain_sect>stalker_terrain</terrain_sect>
+    <snd_config>characters_voice\human\stalker_2\</snd_config>
+
+    <rank>40</rank>
+	<money min="1500" max="3500" infinitive="0"/>
+    <reputation>0</reputation>
+
+    <visual>actors\stalker_neutral\stalker_neutral_2_mask</visual>
+    <supplies>
+      [spawn] \n
+
+      wpn_l85 \n
+      ammo_5.56x45_ap = 1 \n      
+	  wpn_colt1911 \n
+      ammo_11.43x23_fmj = 1 \n
+      grenade_rgd5 = 2 \n
+
+#include "gameplay\supplies\character_items_2.xml"
+#include "gameplay\supplies\character_food.xml"
+#include "gameplay\supplies\character_drugs_2.xml"
+
+    </supplies>
+#include "gameplay\character_criticals.xml"
+#include "gameplay\character_dialogs.xml"
+  </specific_character>
+
+  <specific_character id="wiz_raider_stalker_3" team_default = "1">
+    <name>GENERATE_NAME_stalker</name>
+    <icon>ui_inGame2_neutral_2_mask</icon>
+    <map_icon x="1" y="0"></map_icon>
+    <bio>ќпытный сталкер. ?етальна¤ информаци¤ отсутствует.</bio>
+
+    <class>wiz_raider_stalker_3</class>
+    <community>stalker</community> <terrain_sect>stalker_terrain</terrain_sect>
+    <snd_config>characters_voice\human\stalker_2\</snd_config>
+
+    <rank>40</rank>
+	<money min="1500" max="3500" infinitive="0"/>
+    <reputation>0</reputation>
+
+    <visual>actors\stalker_neutral\stalker_neutral_2</visual>
+    <supplies>
+      [spawn] \n
+
+      wpn_ak74 \n
+      ammo_5.45x39_ap = 1 \n
+      wpn_beretta \n
+      ammo_9x19_fmj = 1 \n
+      grenade_rgd5 = 2 \n
+
+#include "gameplay\supplies\character_items_2.xml"
+#include "gameplay\supplies\character_food.xml"
+#include "gameplay\supplies\character_drugs_2.xml"
+
+    </supplies>
+#include "gameplay\character_criticals.xml"
+#include "gameplay\character_dialogs.xml"
+  </specific_character>
+
+			    	<!--  stalker отмычка  -->
+
+  <specific_character id="wiz_otmichka_scaner" team_default = "1">
+    <name>GENERATE_NAME_stalker</name>
+    <icon>ui_inGame2_neutral_1</icon>
+    <map_icon x="1" y="0"></map_icon>
+    <bio>ќпытный сталкер. ?етальна¤ информаци¤ отсутствует.</bio>
+
+    <class>wiz_otmichka_scaner</class>
+    <community>stalker</community> <terrain_sect>stalker_terrain</terrain_sect>
+    <snd_config>characters_voice\human\stalker_1\</snd_config>
+
+    <rank>25</rank>
+	<money min="250" max="1750" infinitive="0"/>
+    <reputation>0</reputation>
+
+    <visual>actors\stalker_neutral\stalker_neutral_1</visual>
+    <supplies>
+      [spawn] \n
+      wiz_scanner_device \n
+      wpn_pm = 1 \n
+      ammo_9x18_fmj = 1 \n
+
+#include "gameplay\supplies\character_items.xml"
+#include "gameplay\supplies\character_food.xml"
+#include "gameplay\supplies\character_drugs.xml"
+    </supplies>
+#include "gameplay\character_criticals.xml"
+#include "gameplay\character_dialogs.xml"
+  </specific_character>
+
+	<specific_character id="zav_freedom_stalker" team_default = "1">
+		<name>st_zav_freedom_stalker_name</name>
+		<icon>ui_inGame2_neutral_nauchniy</icon>
+		<map_icon x="1" y="0"></map_icon>
+		<bio>Опытный сталкер. Детальная информация отсутствует.</bio>
+
+		<class>zav_freedom_stalker</class>
+    <community>stalker</community> <terrain_sect>stalker_terrain</terrain_sect>
+    <snd_config>characters_voice\human\stalker_2\</snd_config>
+
+		<rank>0</rank>
+		<reputation>0</reputation>
+
+    <visual>actors\stalker_neutral\stalker_neutral_nauchniy</visual>
+		<supplies>
+      [spawn] \n
+      wpn_beretta = 1 \n
+      
+      wpn_sig550 \n
+      ammo_5.56x45_ss190 = 1 \n
+      ammo_9x19_fmj = 1 \n
+      grenade_rgd5 = 1 \n
+#include "gameplay\supplies\character_items.xml"
+#include "gameplay\supplies\character_food.xml"
+#include "gameplay\supplies\character_drugs.xml"
+    </supplies>
+#include "gameplay\character_criticals.xml"
+#include "gameplay\character_dialogs.xml"
+	</specific_character>
+
+<specific_character id="wiz_stalker_breeder" team_default="1">
+		<name>wiz_stalker_breeder_name</name>
+		<icon>ui_inGame2_ecolog_yellow</icon>
+		<map_icon x="1" y="0">
+		</map_icon>
+		<bio>Опытный сталкер. Детальная информация отсутствует.</bio>
+		<class>wiz_stalker_breeder</class>
+		<community>ecolog</community>
+		<terrain_sect>stalker_terrain</terrain_sect>
+		<snd_config>characters_voice\human\ecolog_3\</snd_config>
+		<rank>700</rank>
+		<reputation>0</reputation>
+		<money min="13400" max="23900" infinitive="0" />
+		<visual>actors\stalker_ecologist\stalker_ecolog_yellow</visual>
+		<supplies>
+                 [spawn] \n
+	         device_torch \n
+                 wpn_beretta \n
+                 ammo_9x19_pbp = 1 \n
+             	</supplies>
+		<start_dialog>jup_stalker_breeder_af_work_dialog</start_dialog>		
+		<actor_dialog>actor_break_dialog</actor_dialog>
+                 #include "gameplay\character_criticals.xml"
+                 #include "gameplay\character_dialogs.xml"
+</specific_character>
+
+</xml>

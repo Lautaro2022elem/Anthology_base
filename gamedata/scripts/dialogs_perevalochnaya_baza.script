@@ -1,0 +1,405 @@
+--[[ ----------------------------------------------------------------------------------------------- 
+ File       : dialogs_perevalochnaya_baza.script
+ Description: Диалоговые функции для Пространственного пузыря
+ Copyright  : 2017 © GSC Game World
+ Author	    : PROFFESIONAL
+ Last edit  : 18.06.2017 (by PROFFESIONAL)
+--]] -----------------------------------------------------------------------------------------------
+--/											Функции для actor
+--]] -----------------------------------------------------------------------------------------------
+
+function pb_give_bolt_to_zver(first_speaker, second_speaker)
+	dialogs.relocate_item_section_no_news(second_speaker, "bolt", "in",10)
+end
+
+function dialogs_perevalochnaya_baza.pb_check_epidemy_medicaments_true(first_speaker, second_speaker)
+      return (db.actor:object("pb_epidemy_medicaments") ~= nil) -- true
+end
+
+function pb_check_epidemy_medicaments_false(first_speaker, second_speaker)
+      return (db.actor:object("pb_epidemy_medicaments") == nil) -- false
+end
+
+function pb_epidemy_medicaments_give(first_speaker, second_speaker)
+	dialogs.relocate_item_section_from_actor(first_speaker, second_speaker, "pb_epidemy_medicaments") 
+end
+
+function pb_give_quest_dubolom_mail(first_speaker, second_speaker)
+	dialogs.relocate_item_section_to_actor(first_speaker, second_speaker, "pb_quest_dubolom_mail") 
+end
+
+function pb_actor_flask_empty_check(first_speaker, second_speaker) 
+      return (db.actor:object("empty_canteen") ~= nil)
+end 
+
+function pb_actor_flask_not_empty_check(first_speaker, second_speaker) 
+      return (db.actor:object("empty_canteen") == nil)
+end 
+
+function pb_give_flask_empty(first_speaker, second_speaker)
+	dialogs.relocate_item_section_from_actor(first_speaker, second_speaker, "empty_canteen") 
+end
+
+function pb_give_flask_to_actor(first_speaker, second_speaker)
+	dialogs.relocate_item_section_to_actor(first_speaker, second_speaker, "flask") 
+end
+
+function pb_actor_give_pda_padalshika(first_speaker, second_speaker)
+	dialogs.relocate_item_section_from_actor(first_speaker, second_speaker, "pb_padalshik_pda") 
+end
+
+function pb_robbery_quest_ammo_5_45(first_speaker, second_speaker)
+    dialogs.relocate_item_section_from_actor(first_speaker, second_speaker, "ammo_5.45x39_fmj",2)
+end
+
+function pb_check_quest_toolkit_1(first_speaker, second_speaker)
+	return db.actor:object("toolkit_1") ~= nil -- true
+end
+
+function pb_out_quest_toolkit_1(first_speaker, second_speaker)
+    dialogs.relocate_item_section_from_actor(first_speaker, second_speaker, "toolkit_1",1)
+end
+
+-- проверяет наличие заданого количества предметов в инвентаре игрока.
+function pb_quest_materials_wire_proverka(first_speaker, second_speaker)
+	local item_section 	= "jup_b200_tech_materials_wire"
+	local need_count 	= 2
+	local has_count 	= 0
+	local function calc(temp, item)
+		if item:section() == item_section then
+			has_count = has_count + 1
+		end
+	end
+	first_speaker:iterate_inventory(calc, first_speaker)
+	return has_count >= need_count
+end
+
+function pb_check_quest_materials_wire(first_speaker, second_speaker)
+	return db.actor:object("jup_b200_tech_materials_wire") ~= nil -- true
+end
+
+function pb_out_quest_materials_wire(first_speaker, second_speaker)
+    dialogs.relocate_item_section_from_actor(first_speaker, second_speaker, "jup_b200_tech_materials_wire",2)
+end
+
+function pb_check_quest_kanistra_gas(first_speaker, second_speaker)
+	return db.actor:object("pb_kanistra_gas") ~= nil -- true
+end
+
+function pb_out_quest_kanistra_gas(first_speaker, second_speaker)
+    dialogs.relocate_item_section_from_actor(first_speaker, second_speaker, "pb_kanistra_gas",1)
+end
+
+function pb_robbery_quest_moskit_ammo_7_62(first_speaker, second_speaker)
+    dialogs.relocate_item_section_from_actor(first_speaker, second_speaker, "ammo_7.62x54_7h1",1)
+end
+
+function pb_robbery_quest_moskit_take_reward(first_speaker, second_speaker) 
+    dialogs.relocate_item_section(second_speaker, "ammo_5.45x39_fmj", "in",2)
+    dialogs.relocate_money_to_actor(first_speaker, second_speaker, 3000)
+end
+
+function pb_shurup_give_from_open_habar_scope(first_speaker, second_speaker) 
+    dialogs.relocate_item_section(second_speaker, "wpn_addon_scope_night", "in",1)
+end
+
+function pb_shurup_give_from_open_habar_fnp45(first_speaker, second_speaker) 
+    dialogs.relocate_item_section(second_speaker, "wpn_fnp45", "in",1)
+    dialogs.relocate_item_section(second_speaker, "ammo_11.43x23_fmj", "in",1)
+end
+
+function pb_shurup_give_from_open_habar_ammo_5_45(first_speaker, second_speaker) 
+    dialogs.relocate_item_section(second_speaker, "ammo_5.45x39_ap", "in",2)
+end
+
+function pb_shurup_give_from_open_habar_black_angel(first_speaker, second_speaker) 
+    dialogs.relocate_item_section(second_speaker, "af_black_angel", "in",1)
+end
+
+function check_items_ammo_7_62(first_speaker, second_speaker)
+	return db.actor:object("ammo_7.62x54_7h1") ~= nil -- true
+end
+
+function find_ammo_7_62_quest() 
+    task_manager.get_task_manager():give_task("pb_find_ammo_7_62") 
+end
+
+function pb_find_kanistra_for_kuvalda_quest() 
+    task_manager.get_task_manager():give_task("pb_find_kanistra_for_kuvalda") 
+end
+
+function find_exit_to_anomaly_quest() 
+    task_manager.get_task_manager():give_task("pb_find_exit_to_anomaly") 
+end
+
+function pb_find_habar_padalshik_quest() 
+    task_manager.get_task_manager():give_task("pb_find_habar_padalshik") 
+end
+
+function pb_actor_go_to_sleep_quest() 
+    task_manager.get_task_manager():give_task("pb_actor_go_to_sleep") 
+end
+
+function pb_night_hunting_quest() 
+    task_manager.get_task_manager():give_task("pb_night_hunting") 
+end
+
+function pb_first_talk_to_markus_quest() 
+    task_manager.get_task_manager():give_task("pb_first_talk_to_markus") 
+end
+
+function pb_turn_on_transformator_quest() 
+    task_manager.get_task_manager():give_task("pb_turn_on_transformator") 
+end
+
+function pb_found_duty_weapon_quest() 
+    task_manager.get_task_manager():give_task("pb_found_duty_weapon") 
+end
+
+function pb_finality_signal_founded_quest() 
+    task_manager.get_task_manager():give_task("pb_finality_signal_founded") 
+end
+
+function pb_found_lisiy_and_give_art_quest() 
+    task_manager.get_task_manager():give_task("pb_found_lisiy_and_give_art") 
+end
+
+function pb_found_to_shell_quest() 
+    task_manager.get_task_manager():give_task("pb_found_to_shell") 
+end
+
+function pb_find_meat_boar_food_quest() 
+    task_manager.get_task_manager():give_task("pb_find_meat_boar_food") 
+end
+
+function pb_find_af_vyvert_quest() 
+    task_manager.get_task_manager():give_task("pb_find_af_vyvert") 
+end
+
+function pb_snake_anomy_plant_quest() 
+    task_manager.get_task_manager():give_task("pb_snake_anomy_plant") 
+end
+
+function pb_talk_to_lutiy_come_quest() 
+    task_manager.get_task_manager():give_task("pb_talk_to_lutiy_come") 
+end
+
+function pb_delete_all_actor_money(actor, npc) 
+	db.actor:give_money(-db.actor:money())
+end
+
+function pb_quest_add_actor_money(first_speaker, second_speaker)
+dialogs.relocate_money_to_actor_no_news(first_speaker, second_speaker, 1543)
+end
+
+function pb_check_items_af_vyvert(first_speaker, second_speaker)
+	return db.actor:object("af_vyvert") ~= nil -- true
+end
+
+function pb_af_vyvert_quest_out(first_speaker, second_speaker)
+    dialogs.relocate_item_section_from_actor(first_speaker, second_speaker, "af_vyvert",1)
+end
+
+function pb_check_items_wpn_abakan(first_speaker, second_speaker)
+	return db.actor:object("pb_wpn_abakan") ~= nil -- true
+end
+
+function pb_wpn_abakan_quest_out(first_speaker, second_speaker)
+    dialogs.relocate_item_section_from_actor(first_speaker, second_speaker, "pb_wpn_abakan",1)
+end
+
+function pb_duty_bunchuk_take_reward(first_speaker, second_speaker)
+    dialogs.relocate_money_to_actor(first_speaker, second_speaker, 4000)
+end
+
+function pb_check_items_meat_boar_food(first_speaker, second_speaker)
+	return db.actor:object("meat_boar") ~= nil -- true
+end
+
+function pb_meat_boar_food_out(first_speaker, second_speaker)
+    dialogs.relocate_item_section_from_actor(first_speaker, second_speaker, "meat_boar",1)
+end
+
+function pb_quest_shell_brelok_out(first_speaker, second_speaker)
+    dialogs.relocate_item_section_from_actor(first_speaker, second_speaker, "pb_quest_shell_brelok",1)
+end
+
+function pb_quest_af_fire_loop_in(first_speaker, second_speaker)
+	dialogs.relocate_item_section(second_speaker, "af_fonar", "in",1)
+end
+
+function pb_paskhalka_stalker_give_art(first_speaker, second_speaker)
+	dialogs.relocate_item_section(second_speaker, "af_serofim", "in",1)
+end
+
+function is_puzir_rob_time(first_speaker, second_speaker)
+	local h = level.get_time_hours()
+	if h >= 1 and h < 5 then
+		if h > 1 then
+			return true
+		elseif level.get_time_minutes() >= 45 then
+			return true
+		end
+	end
+
+	return false
+end
+
+function is_not_puzir_rob_time(first_speaker, second_speaker)
+	return not is_puzir_rob_time(first_speaker, second_speaker)
+--[[
+	if level.get_time_hours() >= 1 and level.get_time_hours() < 5 then
+		if level.get_time_hours() > 1 then
+			return false
+		elseif level.get_time_minutes() >= 45 then
+			return false
+		end
+	end
+
+	return true
+	]]
+end
+
+function pb_find_food_for_duty_quest() 
+    task_manager.get_task_manager():give_task("pb_find_food_for_duty") 
+end
+
+-- проверяет наличие заданого количества предметов в инвентаре игрока.
+function pb_find_food_for_duty_proverka(first_speaker, second_speaker)
+local item_sections	= {
+[1] = "bread",
+[2] = "kolbasa",
+[3] = "conserva"
+}
+local needed = 8
+local count	= 0
+local item_section
+local function calc(temp, item)
+if item:section() == item_section then
+count = count + 1
+end
+end
+for k,v in pairs(item_sections) do
+item_section = v
+get_story_object("actor"):iterate_inventory(calc, actor)
+end
+return count >= needed
+end
+
+function pb_give_food_for_duty(first_speaker, second_speaker)
+local npc = dialogs.who_is_npc(first_speaker, second_speaker)
+local actor = dialogs.who_is_actor(first_speaker, second_speaker)
+local i = 8
+local j = 0
+local section
+local item_sections	= {
+[1] = "bread",
+[2] = "kolbasa",
+[3] = "conserva"
+}
+local function transfer_object_item(temp, item)
+if (item:section() == section and i ~= 0) then
+actor:transfer_item(item, npc)
+i = i - 1
+end
+end
+for k,v in pairs(item_sections) do
+section = v
+j = i
+actor:iterate_inventory(transfer_object_item, nil)
+if ((j - i) ~= 0) then
+news_manager.relocate_item(actor, "out", section, j - i)
+end
+end
+end
+
+function pb_found_duty_weapon_quest() 
+    task_manager.get_task_manager():give_task("pb_found_duty_weapon") 
+end
+
+function spawn_murad_npc()
+	alife():create("pb_murad_npc",vector():set(17.433483,1.449432,54.179077),23833,11417)
+end
+
+function find_razya_to_rezak_quest() 
+    task_manager.get_task_manager():give_task("pb_find_razya_to_rezak") 
+end
+
+function pb_robbery_murad_take_spez_razia(first_speaker, second_speaker)
+    dialogs.relocate_item_section(second_speaker, "spez_razia", "in",1)
+end
+
+function pb_robbery_quest_rezak_spez_razia(first_speaker, second_speaker)
+    dialogs.relocate_item_section_from_actor(first_speaker, second_speaker, "spez_razia",1)
+end
+
+function check_items_spez_razia(first_speaker, second_speaker)
+	return db.actor:object("spez_razia") ~= nil -- true
+end
+
+function pb_actor_give_lutiy_vodka(first_speaker, second_speaker)
+	dialogs.relocate_item_section_from_actor(first_speaker, second_speaker,"vodka")
+end
+
+function pb_quest_bloknot_1_out(first_speaker, second_speaker)
+	dialogs.relocate_item_section_from_actor(first_speaker, second_speaker,"pb_quest_bloknot_4")
+end
+
+function pb_quest_bloknot_2_in(first_speaker, second_speaker)
+	dialogs.relocate_item_section(second_speaker, "pb_quest_bloknot_5", "in",1)
+end
+
+function pb_device_warning_module_out(first_speaker, second_speaker)
+	dialogs.relocate_item_section_from_actor(first_speaker, second_speaker,"device_warning_module")
+end
+
+function pb_rezerv_key_door_in(first_speaker, second_speaker)
+	dialogs.relocate_item_section(second_speaker, "pb_rezerv_key_door", "in",1)
+end
+
+function pb_rezerv_key_door_out(first_speaker, second_speaker)
+	dialogs.relocate_item_section_from_actor(first_speaker, second_speaker,"pb_rezerv_key_door")
+end
+
+function pb_robbery_quest_tainik_padalshika(first_speaker, second_speaker)
+    dialogs.relocate_item_section_from_actor(first_speaker, second_speaker, "tainik_padalshika",1)
+end
+
+function check_items_tainik_padalshika(first_speaker, second_speaker)
+	return db.actor:object("tainik_padalshika") ~= nil -- true
+end
+
+function check_items_tainik_padalshika_false(first_speaker, second_speaker)
+	return db.actor:object("tainik_padalshika") == nil -- false
+end
+
+function pb_hunt_to_flash() 
+    task_manager.get_task_manager():give_task("pb_kill_to_squad_flash") 
+end
+
+function pb_go_to_signal() 
+    task_manager.get_task_manager():give_task("pb_go_to_signal") 
+end
+
+function pb_quest_bloknot_2_out(first_speaker, second_speaker)
+	dialogs.relocate_item_section_from_actor(first_speaker, second_speaker,"pb_quest_bloknot_5")
+end
+
+function pb_quest_bloknot_3_in(first_speaker, second_speaker)
+	dialogs.relocate_item_section_no_news(second_speaker, "pb_quest_bloknot_3", "in",1)
+end
+
+function actor_hit_face_mrakobes(first_speaker, second_speaker)
+	local npc = dialogs.who_is_npc(first_speaker, second_speaker)
+	xr_abuse.enable_abuse(npc)
+	xr_abuse.add_abuse(npc, 5)
+	give_info("pb_actor_hit_face_mrakobes_info")
+	event("ActorPunch"):register(KickAct)
+ 	xr_effects.disable_ui(db.actor, nil)
+end
+
+function pb_spawn_actor_inventory(first_speaker, second_speaker)
+    create("pb_actor_inventory",-42.214260101318,2.7693655490875,-70.571189880371,8633,11425)
+    task_manager.get_task_manager():give_task("pb_actor_inventory")
+
+end

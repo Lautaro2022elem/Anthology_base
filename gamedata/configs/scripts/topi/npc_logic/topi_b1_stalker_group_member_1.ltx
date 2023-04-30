@@ -1,0 +1,43 @@
+[logic]
+active = move@trader
+
+[move@standart]
+move_dest_number       = 598897
+move_look_vertex       = 590389
+move_state_when_center = guard
+move_state_when_move   = walk
+meet                   = meet@standart
+invulnerable           = false
+on_info                = {+topi_b1_leader_1_quest_mine_all_find} nil %=release_npc%
+
+[meet@standart]
+close_anim 		= nil
+close_victim 	= nil
+close_snd_hello = nil
+close_snd_bye 	= nil
+far_anim 		= nil
+far_victim 		= nil
+close_distance  = 0
+far_distance 	= 0
+use = {=actor_enemy} false, true
+allow_break = false
+trade_enable = true
+meet_on_talking = false
+
+
+
+[move@trader]:move@standart
+on_game_timer          = 550| move@recovery_garnizone1
+
+[move@recovery_garnizone1]:move@standart
+move_state_when_center = hide
+on_game_timer          = 350| move@recovery_garnizone2
+
+[move@recovery_garnizone2]:move@standart
+move_state_when_center = guard
+on_game_timer          = 550| move@recovery_garnizone3
+
+[move@recovery_garnizone3]:move@standart
+move_state_when_center = sit_ass
+on_game_timer          = 800| move@trader
+

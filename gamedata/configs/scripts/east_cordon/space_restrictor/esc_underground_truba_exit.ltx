@@ -1,0 +1,17 @@
+[logic]
+active = sr_idle
+
+[sr_idle]
+on_actor_inside = {+spectrum_project_start +esc_quest_line_research_underground_chasovhik} sr_idle@dopolnenie %+esc_underground_truba_exit_2%
+
+[sr_idle@dopolnenie]
+on_info = {+eac_quest_fee_complite} sr_idle@scenario_autosave %=create_squad(esc_squad_underground_4:esc_smart_terrain_underground_4) =set_squad_enemy_to_actor(esc_squad_underground_4)%
+
+[sr_idle@scenario_autosave]
+on_timer = 100 | {-save_esc_quest_line_research_underground_2} %+save_esc_quest_line_research_underground_2 =scenario_autosave(st_esc_quest_line_research_underground_2)%
+on_info = {+save_esc_quest_line_research_underground_2} sr_idle@2
+
+[sr_idle@2]
+on_info = {-esc_squad_underground_4_dead +esc_quest_line_research_underground_sidor_key} sr_idle@nil %=remove_squad(esc_squad_underground_4)%
+
+[sr_idle@nil]

@@ -1,0 +1,213 @@
+;------------------------------------------------------------------------------------------ gribb
+
+[af_sad_grib]:af_base
+$spawn 				= "artefacts\af_sad_grib"
+class   			= ARTEFACT
+
+visual				= sad\sad_gribok.ogf
+description			= sad_gribok_desc
+inv_name			= st_sad_gribok_name
+inv_name_short		= st_sad_gribok_name
+inv_weight			= 0.6
+
+inv_grid_x			= 105
+inv_grid_y			= 0
+cost				= 1000
+jump_height			= .0
+
+particles					= artefact\af_electra_idle
+det_show_particles		= artefact\af_electra_show
+det_hide_particles		= artefact\af_electra_hide
+
+af_rank				= 1
+
+lights_enabled = true
+
+trail_light_color 		= 0.6,0.7,0.9
+trail_light_range 		= 2.0
+
+
+;скорости увеличения (уменьшения)
+health_restore_speed		= 0
+radiation_restore_speed		= 0.005
+satiety_restore_speed		= 0
+power_restore_speed			= 0
+bleeding_restore_speed		= 0
+
+additional_inventory_weight		= 0
+additional_inventory_weight2	= 0
+
+hit_absorbation_sect = af_sad_grib_absorbation
+icons_texture        = ui\ui_icon_equipment_2
+
+[af_sad_grib_absorbation]
+burn_immunity 			= 0				;коэффициенты иммунитета
+strike_immunity 		= 0
+shock_immunity 			= 0
+wound_immunity 			= 0
+radiation_immunity 		= 0
+telepatic_immunity 		= 0
+chemical_burn_immunity 	= 0
+explosion_immunity 		= 0
+fire_wound_immunity  	= 0
+
+
+;------------------------------------------------------------------------------------------ kubik
+[af_kubik]:af_base
+$spawn 				= "artefacts\af_kubik"
+class   			= ARTEFACT
+
+visual				= sad\af_kubik.ogf
+description			= st_af_kubik_descr
+inv_name			= st_af_kubik_name
+inv_name_short		= st_af_kubik_name
+inv_weight			= 0.5
+
+inv_grid_x			= 106
+inv_grid_y			= 0
+cost				= 15000
+jump_height			= .01
+
+particles					= artefact\af_acidic_idle
+det_show_particles		= artefact\af_acidic_show
+det_hide_particles		= artefact\af_acidic_hide
+
+af_rank				= 3
+
+lights_enabled = true
+
+trail_light_color 		= 0.5,0.7,0.2
+trail_light_range 		= 2.0
+
+
+;скорости увеличения (уменьшения)
+health_restore_speed		= 0
+radiation_restore_speed		= 0
+satiety_restore_speed		= 0
+power_restore_speed			= 0
+bleeding_restore_speed		= 0
+
+additional_inventory_weight		= 0
+additional_inventory_weight2	= 0
+
+hit_absorbation_sect = af_kubik_absorbation
+icons_texture        = ui\ui_icon_equipment_2
+
+[af_kubik_absorbation]
+burn_immunity 			= 0				;коэффициенты иммунитета
+strike_immunity 		= 0
+shock_immunity 			= 0
+wound_immunity 			= 0
+radiation_immunity 		= 0
+telepatic_immunity 		= 0.1
+chemical_burn_immunity 	= 0
+explosion_immunity 		= 0
+fire_wound_immunity  	= 0
+
+;------------------------------------------------------------------------------------------
+
+[af_knot]:af_base
+$spawn 				= "artefacts\af_knot"
+class   			= ARTEFACT
+
+visual				= sad\af_uzel.ogf
+description			= st_af_knot_descr
+inv_name			= st_af_knot_name
+inv_name_short		= st_af_knot_name
+inv_weight			= 0.5
+
+inv_grid_x			= 105
+inv_grid_y			= 1
+cost				= 12000
+jump_height			= .01
+
+particles				= artefact\af_thermal_idle
+det_show_particles		= artefact\af_thermal_show
+det_hide_particles		= artefact\af_thermal_hide
+
+af_rank				= 2
+
+lights_enabled = true
+
+trail_light_color 		= 0.9,0.4,0.2 ;0.9,0.5,0.5
+trail_light_range 		= 2.0
+
+artefact_activation_seq		= af_activation_mincer
+
+;скорости увеличения (уменьшения)
+health_restore_speed		= 0
+radiation_restore_speed		= -0.006
+satiety_restore_speed		= 0
+power_restore_speed			= 0
+bleeding_restore_speed		= 0
+
+additional_inventory_weight		= 0
+additional_inventory_weight2	= 0
+
+hit_absorbation_sect = af_knot_absorbation
+icons_texture        = ui\ui_icon_equipment_2
+
+[af_knot_absorbation]
+burn_immunity 			= 0				;коэффициенты иммунитета
+strike_immunity 		= 0
+shock_immunity 			= 0
+wound_immunity 			= 0
+radiation_immunity 		= 0
+telepatic_immunity 		= 0
+chemical_burn_immunity 	= 0
+explosion_immunity 		= 0
+fire_wound_immunity  	= 0
+
+;------------------------------------------------------------------------------------------
+
+[af_zakrut]:af_base
+$spawn 				= "artefacts\af_zakrut"
+class   			= ARTEFACT
+
+visual				= sad\af_zakrut.ogf
+description			= st_af_zakrut_descr
+inv_name			= st_af_zakrut_name
+inv_name_short		= st_af_zakrut_name
+inv_weight			= 0.5
+
+inv_grid_x			= 106
+inv_grid_y			= 1
+cost				= 11000
+jump_height			= .01
+
+particles				= artefact\af_thermal_idle
+det_show_particles		= artefact\af_thermal_show
+det_hide_particles		= artefact\af_thermal_hide
+
+af_rank				= 3
+
+lights_enabled = true
+
+trail_light_color 		= 0.9,0.4,0.2 ;0.9,0.5,0.5
+trail_light_range 		= 2.0
+
+artefact_activation_seq		= af_activation_mincer
+
+;скорости увеличения (уменьшения)
+health_restore_speed		= 0.002
+radiation_restore_speed		= 0.003
+satiety_restore_speed		= 0
+power_restore_speed			= 0.003
+bleeding_restore_speed		= 0.003
+
+additional_inventory_weight		= 0
+additional_inventory_weight2	= 0
+
+hit_absorbation_sect = af_zakrut_absorbation
+icons_texture        = ui\ui_icon_equipment_2
+
+[af_zakrut_absorbation]
+burn_immunity 			= 0				;коэффициенты иммунитета
+strike_immunity 		= 0
+shock_immunity 			= 0
+wound_immunity 			= 0
+radiation_immunity 		= 0
+telepatic_immunity 		= 0
+chemical_burn_immunity 	= 0
+explosion_immunity 		= 0
+fire_wound_immunity  	= 0

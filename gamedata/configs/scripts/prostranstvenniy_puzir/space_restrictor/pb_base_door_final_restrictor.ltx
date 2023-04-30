@@ -1,0 +1,10 @@
+[logic]
+active = sr_idle@nil
+
+[sr_idle@wait]
+on_info = {=npc_in_zone(pb_base_door_final_restrictor)} sr_idle@ready %+pro_base_final_door_is_opened%
+
+[sr_idle@ready]
+on_info = {!npc_in_zone(pb_base_door_final_restrictor) +pro_base_final_door_is_opened} sr_idle@wait %-pro_base_final_door_is_opened%
+
+[sr_idle@nil]

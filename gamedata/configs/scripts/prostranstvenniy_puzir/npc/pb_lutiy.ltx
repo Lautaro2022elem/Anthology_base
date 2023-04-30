@@ -1,0 +1,50 @@
+[logic@pro_base_final_lutiy]
+suitable = {=check_npc_name(pb_lutiy)} true
+prior = 200
+active = walker@lutiy_stay_on_base_final
+post_combat_time = 0, 0
+
+[walker@lutiy_stay_on_base_final]
+path_walk = lutiy_on_base_final_walk
+path_look = lutiy_on_base_final_look
+on_info = {+pro_transformator_podzemka_turn_on} animpoint@lutiy_stay_on_base_stay
+gather_items_enabled = false
+corpse_detection_enabled = false
+invulnerable = true
+meet = meet@meet_start
+use_camp = false
+
+[animpoint@lutiy_stay_on_base_stay]
+cover_name = pro_lutiy_stay_end_line
+avail_animations = ward
+on_info = {+pro_dialog_duty_tachenko_end_line_done} %=release_npc%
+gather_items_enabled = false
+corpse_detection_enabled = false
+invulnerable = true
+meet = meet@meet_quest
+use_camp = false
+
+[meet@quest]
+abuse           = false
+close_anim 		= nil
+far_anim 		= nil
+far_victim 		= nil
+close_distance  = 0
+far_distance 	= 0
+close_victim = actor
+allow_break = false
+trade_enable = false
+
+[meet@meet_start]:meet@quest
+close_snd_hello = pb_lutiy_leader_meet
+close_snd_bye = pb_lutiy_leader_meet_bye
+close_snd_distance = 3
+use = {+pro_lutiy_scene_final_quest_give} false, true
+meet_dialog = pb_lutiy_scene_final_base_meet
+
+[meet@meet_quest]:meet@quest
+close_snd_hello = pb_lutiy_leader_meet
+close_snd_bye = pb_lutiy_leader_meet_bye
+close_snd_distance = 3
+use = {+pro_lesnik_end_line_in_base} true, {+pro_final_dialog_lutiy_about_epidemy_done} false, true
+meet_dialog = pb_lutiy_scene_final_base_after_quest

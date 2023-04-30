@@ -1,0 +1,159 @@
+[walker@default]
+gather_items_enabled = false
+help_wounded_enabled = true
+corpse_detection_enabled = false
+
+[wounded]
+hp_state 		= 0|wounded_heavy@help_heavy
+hp_state_see 	= 0|wounded_heavy@help_heavy
+hp_victim 		= 0|nil
+hp_fight 		= 0|false
+hp_cover		= 0|false
+
+; ------------------------------------------------------------------------------------------------------ job 1 (guard)
+[logic@jop_1]
+active = walker@1_1
+suitable = {+sad_b3_killers_gone} true
+prior = 183
+
+[walker@1_1]:walker@default
+path_walk = killer_d1_walk
+path_look = killer_d1_look
+def_state_moving = patrol
+
+; ------------------------------------------------------------------------------------------------------ job 2 (guard)
+[logic@jop_2]
+active = walker@2_1
+suitable = {+sad_b3_killers_gone} true
+prior = 181
+
+[walker@2_1]:walker@default
+path_walk = killer_c4_walk 
+path_look = killer_c4_look 
+def_state_moving = patrol
+
+; ------------------------------------------------------------------------------------------------------ job 3 (guard)
+[logic@jop_3]
+active = walker@3_1
+suitable = {+sad_b3_killers_gone} true
+prior = 182
+
+[walker@3_1]:walker@default
+path_walk = killer_d4_walk 
+path_look = killer_d4_look
+def_state_moving = patrol
+
+; ------------------------------------------------------------------------------------------------------ job 4 (guard)
+[logic@jop_4]
+active = walker@4_1
+suitable = {+sad_b3_killers_gone} true
+prior = 180
+
+[walker@4_1]:walker@default
+path_walk = killer_c2_walk
+;path_look = killer_c2_look
+def_state_moving = patrol
+
+; ------------------------------------------------------------------------------------------------------ job 5 (fireplace sit 1)
+[logic@jop_5]
+active = walker@5_1
+suitable = {+sad_b3_killers_gone} true
+prior = 165
+
+[walker@5_1]
+path_walk = firesit_place_1
+path_look = firesit_look_1
+on_info = {=is_rain} animpoint@5_2
+
+[animpoint@5_2]
+cover_name = sad_b3_animp_1
+on_info = {!is_rain} walker@5_1
+
+; ------------------------------------------------------------------------------------------------------ job 6 (fireplace sit 2)
+[logic@jop_6]
+active = walker@6_1
+suitable = {+sad_b3_killers_gone} true
+prior = 164
+
+[walker@6_1]
+path_walk = firesit_place_2
+path_look = firesit_look_2
+on_info = {=is_rain} walker@6_2
+
+[walker@6_2]
+path_walk = firesit_place_2r
+path_look = firesit_look_2r
+on_info = {!is_rain} walker@6_1
+
+
+; ------------------------------------------------------------------------------------------------------ job 7 (fireplace sit 3)
+[logic@jop_7]
+active = walker@7_1
+suitable = {+sad_b3_killers_gone} true
+prior = 164
+
+[walker@7_1]
+path_walk = firesit_place_3
+path_look = firesit_look_3
+on_info = {=is_rain} walker@7_2
+
+[walker@7_2]
+path_walk = firesit_place_3r
+path_look = firesit_look_3r
+on_info = {!is_rain} walker@7_1
+
+; ------------------------------------------------------------------------------------------------------ job 8 (fireplace sit 4)
+[logic@jop_8]
+active = walker@8_1
+suitable = {+sad_b3_killers_gone} true
+prior = 164
+
+[walker@8_1]
+path_walk = firesit_place_4
+path_look = firesit_look_4
+on_info = {=is_rain} walker@8_2
+
+[walker@8_2]
+path_walk = firesit_place_4r
+path_look = firesit_look_4r
+meet = no_meet
+on_info = {!is_rain} walker@8_1
+
+; ------------------------------------------------------------------------------------------------------ job 9 (walker around)
+[logic@jop_9]
+active = walker@9_3
+suitable = {+sad_b3_killers_gone} true
+prior = 166
+
+[walker@9_1]
+path_walk = gulyaka_walk1
+path_look = gulyaka_look1
+on_game_timer = 500 | walker@9_2
+meet = no_meet
+
+[walker@9_2]
+path_walk = gulyaka_walk2
+path_look = gulyaka_look2
+on_game_timer = 750 | walker@9_3
+on_info = {=is_rain} walker@9_3
+meet = no_meet
+
+[walker@9_3]
+path_walk = gulyaka_walk3
+path_look = gulyaka_look3
+on_game_timer = 750 | animpoint@9_4
+meet = no_meet
+
+[animpoint@9_4]
+cover_name = sad_b3_skok_do_kont_animp
+avail_animations = wait_na
+use_camp = false
+on_info = {=animpoint_reached} animpoint@9_5
+meet = no_meet
+
+[animpoint@9_5]
+cover_name = sad_b3_skok_do_kont_animp
+avail_animations = sad_skok_do_kontejneru
+use_camp = false
+on_timer = 1500 | walker@9_1
+meet = no_meet

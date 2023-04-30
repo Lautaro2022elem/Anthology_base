@@ -1,0 +1,20 @@
+[logic]
+active = walker
+post_combat_time = 0, 0
+can_select_weapon = false
+prior = 200
+
+[walker]
+path_walk = wiz_actor_silent_walk
+path_look = wiz_actor_silent_look
+def_state_standing = hide
+def_state_moving = sneak_run
+reach_distance = 10
+meet = no_meet
+use_camp = false
+combat_ignore_cond = true
+combat_ignore_keep_when_attacked = true
+invulnerable = true
+gather_items_enabled = false
+help_wounded_enabled = false
+corpse_detection_enabled = false

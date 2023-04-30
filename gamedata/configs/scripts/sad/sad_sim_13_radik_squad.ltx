@@ -1,0 +1,157 @@
+[walker@def]
+gather_items_enabled = false
+help_wounded_enabled = false
+corpse_detection_enabled = false
+combat_ignore_cond = {=is_enemy_actor} true, {-sad_sim_12_snorki_wake =check_enemy_name(snork_radik_one)} true, {-sad_sim_13_snorki_wake =check_enemy_name(snork_radik_two)} true, {-sad_sim_17_tushkan_wake =check_enemy_name(tushkano_radik)} true
+on_info = {=actor_enemy} remark@wait %+sad_radik_actor_enemy%
+wounded = wounded
+meet = no_meet
+
+[remark@wait]
+gather_items_enabled = false
+help_wounded_enabled = true
+corpse_detection_enabled = false
+wounded = wounded
+meet = no_meet
+
+; -------------------------------------------------------------------------------------------------------------------------------------------- commander
+[logic@radik]
+active = patrol@commander
+suitable = { =target_squad_name(sad_stalker_radik_squad) =is_squad_commander -sad_sim_13_cave_reached -sad_radik_task_inside_done } true
+prior = 250
+on_death = death
+on_hit = hit
+post_combat_time = 0, 0
+
+[patrol@commander]:walker@def
+path_walk = way_from_sher
+def_state_moving = assault
+formation = back
+commander = true
+on_info3 = {+sad_sim_12_snorki_wake -sad_radik_snork_told} %+sad_radik_snork_told =play_sound(pas_b400_sokolov_about_snorks_2)%
+on_info2 = {+sad_radik_near_konteyner} walker@com_1, {=distance_from_npc_to_point_le(sad_sim_13_radik_kont_walk_3:0:121)} %+sad_radik_near_konteyner%
+
+[walker@com_1]:walker@def
+path_walk = radik_kont_walk_1
+path_look = radik_kont_look_1
+def_state_moving = assault
+def_state_standing = hide
+on_info2 = {+sad_sher_explosion_done} patrol@commander2
+
+[patrol@commander2]:walker@def
+path_walk = way_from_sher_2
+def_state_moving = assault
+commander = true
+on_info2 = {+sad_sim_13_cave_reached} remark@wait, {=npc_in_zone(sad_sim_13_sr_arrived)} remark@wait %+sad_sim_13_cave_reached%
+
+; -------------------------------------------------------------------------------------------------------------------------------------------- 1
+[logic@radik_member_1]
+active = patrol@1
+suitable = { =target_squad_name(sad_stalker_radik_squad) !is_squad_commander -sad_sim_13_cave_reached -sad_radik_task_inside_done} true
+prior = 200
+on_hit = hit
+post_combat_time = 0, 0
+
+[patrol@1]:walker@def
+path_walk = way_from_sher
+def_state_moving = assault
+commander = false
+on_info2 = {+sad_radik_near_konteyner} walker@1, {=distance_from_npc_to_point_le(sad_sim_13_radik_kont_walk_3:0:121)} %+sad_radik_near_konteyner%
+
+[walker@1]:walker@def
+path_walk = radik_kont_walk_2
+path_look = radik_kont_look_2
+def_state_moving = assault
+def_state_standing = hide
+on_info2 = {+sad_sher_explosion_done} patrol@member
+
+[patrol@member]:walker@def
+path_walk = way_from_sher_2
+def_state_moving = assault
+commander = true
+on_info2 = {+sad_sim_13_cave_reached} remark@wait, {=npc_in_zone(sad_sim_13_sr_arrived)} %+sad_sim_13_cave_reached%
+
+; -------------------------------------------------------------------------------------------------------------------------------------------- 2
+[logic@radik_member_2]
+active = patrol@2
+suitable = { =target_squad_name(sad_stalker_radik_squad) !is_squad_commander -sad_sim_13_cave_reached -sad_radik_task_inside_done} true
+prior = 200
+on_hit = hit
+post_combat_time = 0, 0
+
+[patrol@2]:walker@def
+path_walk = way_from_sher
+def_state_moving = assault
+commander = false
+on_info2 = {+sad_radik_near_konteyner} walker@2, {=distance_from_npc_to_point_le(sad_sim_13_radik_kont_walk_3:0:121)} %+sad_radik_near_konteyner%
+
+[walker@2]:walker@def
+path_walk = radik_kont_walk_3
+path_look = radik_kont_look_1
+def_state_moving = assault
+def_state_standing = hide
+on_info2 = {+sad_sher_explosion_done} patrol@member
+
+; -------------------------------------------------------------------------------------------------------------------------------------------- 3
+[logic@radik_member_3]
+active = patrol@3
+suitable = { =target_squad_name(sad_stalker_radik_squad) !is_squad_commander -sad_sim_13_cave_reached -sad_radik_task_inside_done} true
+prior = 200
+on_hit = hit
+post_combat_time = 0, 0
+
+[patrol@3]:walker@def
+path_walk = way_from_sher
+def_state_moving = assault
+commander = false
+on_info2 = {+sad_radik_near_konteyner} walker@3, {=distance_from_npc_to_point_le(sad_sim_13_radik_kont_walk_3:0:121)} %+sad_radik_near_konteyner%
+
+[walker@3]:walker@def
+path_walk = radik_kont_walk_4
+path_look = radik_kont_look_1
+def_state_moving = assault
+def_state_standing = hide
+on_info2 = {+sad_sher_explosion_done} patrol@member
+
+; -------------------------------------------------------------------------------------------------------------------------------------------- 4
+[logic@radik_member_4]
+active = patrol@4
+suitable = { =target_squad_name(sad_stalker_radik_squad) !is_squad_commander -sad_sim_13_cave_reached -sad_radik_task_inside_done} true
+prior = 200
+on_hit = hit
+post_combat_time = 0, 0
+
+[patrol@4]:walker@def
+path_walk = way_from_sher
+def_state_moving = assault
+commander = false
+on_info2 = {+sad_radik_near_konteyner} walker@4, {=distance_from_npc_to_point_le(sad_sim_13_radik_kont_walk_3:0:121)} %+sad_radik_near_konteyner%
+
+[walker@4]:walker@def
+path_walk = radik_kont_walk_5
+path_look = radik_kont_look_2
+def_state_moving = assault
+def_state_standing = hide
+on_info2 = {+sad_sher_explosion_done} patrol@member
+
+; ------------------------------------
+[meet]
+close_snd_hello = nil
+close_distance  = 0
+close_victim    = nil
+close_anim 		= nil
+snd_on_use 		= {!actor_enemy} meet_use_no_talk_leader, nil
+use 			= false
+
+[wounded]
+hp_state 		= 0|wounded_heavy@help_heavy
+hp_state_see 	= 0|wounded_heavy@help_heavy
+hp_victim 		= 0|nil
+hp_fight 		= 0|false
+hp_cover		= 0|false
+
+[death]
+on_info = {=killed_by_actor} %+sad_radik_dead +sad_radik_actor_enemy%, %+sad_radik_dead%
+
+[hit]
+on_info = {=actor_enemy} %+sad_radik_actor_enemy%

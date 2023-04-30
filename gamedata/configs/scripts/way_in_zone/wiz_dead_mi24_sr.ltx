@@ -1,0 +1,12 @@
+[logic]
+active = sr_idle@wiz_die_m24_run_tutor
+
+[sr_idle@wiz_die_m24_run_tutor]
+on_info = {=actor_in_zone(wiz_dead_mi24_sr) +wiz_military_secret_started -wiz_die_m24_searching !has_active_tutorial} sr_idle@wiz_die_m24_stop_tutor %=run_tutorial(wiz_die_m24)%
+on_info2 = {+wiz_die_m24_searching} sr_idle@nil %=give_actor(wiz_millitary_maps)%
+
+[sr_idle@wiz_die_m24_stop_tutor]
+on_info = {!actor_in_zone(wiz_dead_mi24_sr)} sr_idle@wiz_die_m24_run_tutor %=stop_tutorial%
+on_info2 = {!has_active_tutorial} sr_idle@wiz_die_m24_run_tutor
+
+[sr_idle@nil]

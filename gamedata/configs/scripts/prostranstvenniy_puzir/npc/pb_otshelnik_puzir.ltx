@@ -1,0 +1,75 @@
+;=========meet_stalker_korpys========
+[meet@korpys_stalker]
+close_anim 		= nil
+close_victim 	= nil
+far_anim 		= nil
+far_victim 		= nil
+close_distance 	= 0
+far_distance 	= 0
+use = {=actor_enemy} false, {=dist_to_actor_le(3)} true, false
+snd_on_use = {!dist_to_actor_le(3)} nil
+meet_on_talking = false
+;==================================
+
+[logic]
+suitable = {=check_npc_name(pb_otshelnik_puzir)} true
+prior = 200
+active = remark@pb_otshelnik_puzir
+level_spot = quest_npc
+
+[remark@pb_otshelnik_puzir]
+anim = guard_na
+target = story | actor
+on_info = {+pro_otshelnik_puzir_first_dialog_done} remark@pb_otshelnik_in_podval_look
+combat_ignore_cond = true
+combat_ignore_keep_when_attacked = true
+invulnerable = false
+gather_items_enabled = false
+help_wounded_enabled = false
+corpse_detection_enabled = false
+meet = meet@start_talk
+
+[remark@pb_otshelnik_in_podval_look]
+anim = guard_na
+target = path | pro_otshelnik_in_podval_look, 0
+use_camp = false
+on_timer = 2000 | walker@pb_otshelnik_in_podval_move
+combat_ignore_cond = true
+combat_ignore_keep_when_attacked = true
+invulnerable = true
+gather_items_enabled = false
+help_wounded_enabled = false
+corpse_detection_enabled = false
+meet = no_meet
+
+[walker@pb_otshelnik_in_podval_move]
+path_walk = pro_otshelnik_in_podval_walk_1
+meet = no_meet
+def_state_moving = walk
+on_timer = 4000 | %=release_npc +pro_otshelnik_puzir_realese%
+combat_ignore_cond = true
+combat_ignore_keep_when_attacked = true
+gather_items_enabled = false
+help_wounded_enabled = false
+corpse_detection_enabled = false
+invulnerable = true
+on_signal = pro_otshelnik_in_podval_come | {-pro_otshelnik_in_podval_come} remark@pro_otshelnik_in_podval_come %+pro_otshelnik_in_podval_come%
+
+[remark@pro_otshelnik_in_podval_come]
+anim = wait_na
+target = story | actor
+on_info = {+pro_otshelnik_in_podval_come -pro_otshelnik_puzir_realese} %=release_npc +pro_otshelnik_puzir_realese%
+combat_ignore_cond = true
+combat_ignore_keep_when_attacked = true
+invulnerable = false
+gather_items_enabled = false
+help_wounded_enabled = false
+corpse_detection_enabled = false
+meet = no_meet
+
+[meet@start_talk]:meet@korpys_stalker
+close_victim = actor
+use = {!actor_enemy =dist_to_actor_le(12) +pro_actor_kill_shell_and_wake_up -pro_otshelnik_puzir_first_dialog_done} self, true
+allow_break = false
+meet_dialog = pb_otshelnik_puzir_talk
+trade_enable = false

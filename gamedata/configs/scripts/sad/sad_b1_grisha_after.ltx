@@ -1,0 +1,155 @@
+[walker@default_1]
+gather_items_enabled = false
+help_wounded_enabled = false
+corpse_detection_enabled = false
+wounded = wounded
+combat_ignore_cond = {=is_enemy_actor} true
+on_info99 = {=actor_enemy} remark@eminem %+sad_grisha_enemy%
+
+[remark@eminem]
+gather_items_enabled = false
+help_wounded_enabled = false
+corpse_detection_enabled = false
+wounded = wounded
+
+[wounded]
+hp_state = 		0|wounded_heavy@help_heavy
+hp_state_see = 	0|wounded_heavy@help_heavy
+hp_victim = 	0|nil
+hp_fight = 		0|false
+hp_cover = 		0|false
+
+[hit]
+
+[death]
+on_info = {=killed_by_actor} %+sad_grisha_enemy%
+
+; ************************************************************************************************************* Commander
+[logic@grisha_after]
+active = walker@grisha
+suitable = {=target_squad_name(sad_stalker_grisha_squad) =is_squad_commander} true
+on_hit = hit
+on_death = death
+prior = 300
+
+[walker@grisha]:walker@default_1
+path_walk = grisha_go_podval
+def_state_moving = run
+on_info = {=npc_in_zone(sad_b1_surge_hide)} animpoint@grisha_reach
+use_camp = false
+meet = no_meet
+
+[animpoint@grisha_reach]:walker@default_1
+cover_name = sad_b1_animpoint_mutny
+avail_animations = ward_noweap
+on_info = {=animpoint_reached} animpoint@grisha_at_pos ;%=send_tip%
+use_camp = false
+meet = no_meet
+
+[animpoint@grisha_at_pos]:walker@default_1
+cover_name = sad_b1_animpoint_mutny
+avail_animations = ward_noweap
+use_camp = false
+meet = meet@com
+
+; ************************************************************************************************************* member 1
+[logic@grisha_after_1]
+active = animpoint@10
+suitable = { =target_squad_name(sad_stalker_grisha_squad) !is_squad_commander } true
+on_hit = hit
+on_death = death
+prior = 350
+
+[animpoint@10]:walker@default_1
+cover_name = sad_b1_animpoint_drunk
+reach_movement = run
+on_info = {=npc_in_zone(sad_b1_surge_hide)} animpoint@12
+use_camp = false
+meet = no_meet
+
+[animpoint@12]:walker@default_1
+cover_name = sad_b1_animpoint_drunk
+use_camp = false
+meet = meet@mem
+
+; ************************************************************************************************************* member 2
+[logic@grisha_after_2]
+active = animpoint@20
+suitable = { =target_squad_name(sad_stalker_grisha_squad) !is_squad_commander } true
+on_hit = hit
+on_death = death
+prior = 340
+
+[animpoint@20]:walker@default_1
+cover_name = sad_b1_animp_9
+reach_movement = run
+on_info = {=npc_in_zone(sad_b1_surge_hide)} animpoint@22
+use_camp = false
+meet = no_meet
+
+[animpoint@22]:walker@default_1
+cover_name = sad_b1_animp_9
+use_camp = false
+meet = meet@mem
+
+; ************************************************************************************************************* member 3
+[logic@grisha_after_3]
+active = animpoint@30
+suitable = { =target_squad_name(sad_stalker_grisha_squad) !is_squad_commander } true
+on_hit = hit
+on_death = death
+prior = 330
+
+[animpoint@30]:walker@default_1
+cover_name = sad_b1_animp_8
+reach_movement = run
+on_info = {=npc_in_zone(sad_b1_surge_hide)} animpoint@32
+use_camp = false
+meet = no_meet
+
+[animpoint@32]:walker@default_1
+cover_name = sad_b1_animp_8
+use_camp = false
+meet = meet@mem
+
+; ************************************************************************************************************* member 4
+[logic@grisha_after_4]
+active = animpoint@40
+suitable = { =target_squad_name(sad_stalker_grisha_squad) !is_squad_commander } true
+on_hit = hit
+on_death = death
+prior = 320
+
+[animpoint@40]:walker@default_1
+cover_name = sad_b1_animp_7
+reach_movement = run
+on_info = {=npc_in_zone(sad_b1_surge_hide)} animpoint@42
+use_camp = false
+meet = no_meet
+
+[animpoint@42]:walker@default_1
+cover_name = sad_b1_animp_7
+use_camp = false
+meet = meet@mem
+
+; --------------------------------------------------------------------------------------------------------
+[meet@mem]
+close_snd_hello = nil
+close_distance  = 0
+close_victim    = nil
+close_anim 		= nil
+snd_on_use 		= {!actor_enemy} meet_use_no_talk_leader, nil
+use 			= false
+
+[meet@com]
+close_snd_hello = nil
+close_distance  = 2
+close_victim    = actor
+close_anim 		= wait_na
+meet_on_talking = false
+use 			= {=actor_enemy} false, {+sad_b1_commander_no_talk} false, true
+snd_on_use 		= {+sad_b1_commander_no_talk} meet_use_no_default, nil
+meet_dialog 	= sad_grisha_after_fight
+allow_break 	= false
+trade_enable	= false
+

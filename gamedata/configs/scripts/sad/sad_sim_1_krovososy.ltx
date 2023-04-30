@@ -1,0 +1,22 @@
+[logic@krovosos_1]
+active = mob_walker@1
+suitable = {=target_squad_name(sad_sim_1_bloodsuckers)} true
+monster_job = true
+prior = 200
+
+[mob_walker@1]
+path_walk = krovosos_raz
+on_timer = 500 | mob_home@1
+
+[mob_home@1]
+path_home = krovosos_home_1
+aggressive = true
+home_min_radius = 20
+home_max_radius = 50
+;on_info = {=sad_dist_to_path_ge(sad_sim_1_krovosos_home_1:2700)} mob_home@3
+
+[mob_home@3]
+path_home = krovosos_home_3
+aggressive = true
+home_min_radius = 8
+home_max_radius = 15

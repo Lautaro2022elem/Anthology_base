@@ -1,0 +1,14 @@
+[logic] 
+active = sr_idle@start
+
+[sr_idle@start]
+on_info = {+topi_start +topi_a3_suget_quest_3_svayznoy_talking -topi_anubis_suget_quest_4_create} %=topi_b9_anubis_first_create +topi_anubis_suget_quest_4_create%
+on_timer = 8000 | {+topi_start +topi_anubis_suget_quest_4_create -topi_anubis_suget_quest_4_give} sr_idle@first %=give_task(geonezis_topi_b9_main_suget_quest_4) +topi_anubis_suget_quest_4_give%
+
+[sr_idle@first]
+on_info = {+topi_suget_quest_4_fugas_create -topi_anubis_suget_quest_4_podquest_1_give} %=give_task(geonezis_topi_b9_main_suget_quest_4_set_1) +topi_anubis_suget_quest_4_podquest_1_give%
+on_info2 = {+topi_suget_quest_4_fugas_create -topi_anubis_suget_quest_4_podquest_2_give} %=give_task(geonezis_topi_b9_main_suget_quest_4_set_2) +topi_anubis_suget_quest_4_podquest_2_give%
+on_info3 = {+topi_suget_quest_4_fugas_create -topi_anubis_suget_quest_4_podquest_3_give} %=give_task(geonezis_topi_b9_main_suget_quest_4_set_3) +topi_anubis_suget_quest_4_podquest_3_give%
+on_info4 = {+topi_suget_quest_4_fugas_time_out -topi_suget_quest_4_fugas_restr_1_end} sr_idle@nil %+topi_suget_quest_4_fugas_restr_1_end%
+
+[sr_idle@nil]

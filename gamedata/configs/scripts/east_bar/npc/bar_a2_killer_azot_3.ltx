@@ -1,0 +1,13 @@
+[logic]
+active = move@killer_walk
+on_death = death
+
+[death]
+on_info = %+bar_a2_killer_azot_3_death%
+
+[move@killer_walk]
+move_dest_number = 88669
+move_look_vertex = 94074
+move_state_when_center = hide
+move_state_when_move = assault
+on_info                = {!actor_enemy +bar_a2_azot_quest_1_restr_3_used} %=actor_enemy%

@@ -1,0 +1,27 @@
+; -------------------------------------------------------------------------------------------------------- 1
+[logic@default_snork]
+suitable = {=is_monster_snork} true
+monster_job = true
+active = mob_home@66
+prior = 160
+
+[logic@snokr_1]:logic@default_snork
+[logic@snokr_2]:logic@default_snork
+[logic@snokr_3]:logic@default_snork
+[logic@snokr_4]:logic@default_snork
+[logic@snokr_5]:logic@default_snork
+[logic@snokr_6]:logic@default_snork
+
+[mob_home@6]
+path_home = mob_xaos_1
+home_min_radius = 12
+home_max_radius = 35
+on_game_timer = 240 | {!mob_has_enemy} mob_home@66
+aggressive = true
+
+[mob_home@66]
+path_home = snork_squad_spawn
+home_min_radius = 15
+home_max_radius = 35
+;on_game_timer = 240 | {!mob_has_enemy} mob_home@6
+aggressive = true

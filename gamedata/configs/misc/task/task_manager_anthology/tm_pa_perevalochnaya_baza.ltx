@@ -1,0 +1,378 @@
+;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
+;;;;;;;;;;;;;;; СЮЖЕТНАЯ ЛИНИЯ ;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
+;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
+
+[pb_who_is_happening] ;Узнать что произошло
+icon = ui_inGame2_Kill_zombied
+prior = 200
+storyline = true
+title = {+perevalochnaya_baza_zver_see_to_document}pb_who_is_happening_part_5_name, {-perevalochnaya_baza_zver_see_to_pda +perevalochnaya_baza_start_quest_zombied_kill_done +pb_quest_document_1_in_bag}pb_who_is_happening_part_4_name, {+perevalochnaya_baza_start_quest_zombied_kill_done}pb_who_is_happening_part_3_name, {+perevalochnaya_lutiy_meet_to_zombied_done}pb_who_is_happening_part_2_name, pb_who_is_happening_part_1_name
+descr = {+perevalochnaya_baza_zver_see_to_document}pb_who_is_happening_part_5_text, {-perevalochnaya_baza_zver_see_to_pda +perevalochnaya_baza_start_quest_zombied_kill_done +pb_quest_document_1_in_bag}pb_who_is_happening_part_4_text, {+perevalochnaya_baza_start_quest_zombied_kill_done}pb_who_is_happening_part_3_text, {+perevalochnaya_lutiy_meet_to_zombied_done}pb_who_is_happening_part_2_text, pb_who_is_happening_part_1_text
+target = {+perevalochnaya_baza_zver_see_to_document}pb_lutiy, {+perevalochnaya_baza_start_quest_zombied_kill_done}nil, {+perevalochnaya_lutiy_meet_to_zombied_done}pb_zombied_quest, pb_lutiy
+
+on_init = %=create_squad(pro_smart_2:pro_smart_2)%
+condlist_0 = {+perevalochnaya_baza_quest_line_zombied_kill_end} complete
+
+
+[pb_find_exit_to_anomaly] ;Найти способ выбраться из аномалии
+icon = ui_inGame2_Prostranstvennaya_anomaly
+prior = 250
+storyline = true
+title = {+pb_find_exit_to_anomaly_find}pb_find_exit_to_anomaly_part_4_name, {+found_to_deshifrator_give}pb_find_exit_to_anomaly_part_2_name, pb_find_exit_to_anomaly_part_1_name
+descr = {+pb_find_exit_to_anomaly_find}pb_find_exit_to_anomaly_part_4_text, {+found_to_deshifrator_give}pb_find_exit_to_anomaly_part_2_text, pb_find_exit_to_anomaly_part_1_text
+target = {+pb_find_exit_to_anomaly_find}pb_lutiy, nil
+condlist_0 = {+pb_find_exit_to_anomaly_complite} complete
+condlist_1 = {+pb_clean_quest_item_done} reversed
+
+
+[pb_actor_go_to_sleep] ;Лечь поспать
+icon = ui_inGame2_Actor_go_to_sleep
+prior = 200
+storyline = true
+title = pb_actor_go_to_sleep_part_1_name
+descr = pb_actor_go_to_sleep_part_1_text
+target = pb_sr_sleep_quest_id
+condlist_0 = {+pb_zver_signal_helicopter} complete
+
+
+[pb_helicopter_crash_search] ;Обследовать место крушения вертолёта (Внезапное пробуждение)
+icon = ui_inGame2_Helicopter_crash
+prior = 150
+storyline = true
+title = {+pro_actor_meet_soldier_done}pb_helicopter_crash_search_part_6_name, {+pro_soldier_move_9}pb_helicopter_crash_search_part_5_name, {+pro_soldier_in_base_way}pb_helicopter_crash_search_part_4_name, {+pro_soldier_oleynik_meet_dialog}pb_helicopter_crash_search_part_3_name, {+pro_heli_spawn_soldier_wounded}pb_helicopter_crash_search_part_2_name, pb_helicopter_crash_search_part_1_name
+descr = {+pro_actor_meet_soldier_done}pb_helicopter_crash_search_part_6_text, {+pro_soldier_move_9}pb_helicopter_crash_search_part_5_text, {+pro_soldier_in_base_way}pb_helicopter_crash_search_part_4_text, {+pro_soldier_oleynik_meet_dialog}pb_helicopter_crash_search_part_3_text, {+pro_heli_spawn_soldier_wounded}pb_helicopter_crash_search_part_2_text, pb_helicopter_crash_search_part_1_text
+target = {+pro_actor_meet_soldier_done}pb_lutiy, {+pro_heli_spawn_soldier_wounded}pb_soldier_oleynik_wounded, nil
+condlist_0 = {+pro_lutiy_say_to_dubolom_talk} complete
+
+
+[pb_snake_anomy_plant] ;Аномальное растение
+icon = ui_inGame2_Anomalnoe_rastenie
+prior = 200
+storyline = true
+title = {+pro_actor_go_to_plant_complete}pb_snake_anomy_plant_part_3_name, {+pro_actor_ready_go_to_plant}pb_snake_anomy_plant_part_2_name, pb_snake_anomy_plant_part_1_name
+descr = {+pro_actor_go_to_plant_complete}pb_snake_anomy_plant_part_3_text, {+pro_actor_ready_go_to_plant}pb_snake_anomy_plant_part_2_text, pb_snake_anomy_plant_part_1_text
+target = pb_snake
+condlist_0 = {+pro_quest_from_anomaly_plant_complete} complete
+
+
+[pb_talk_to_lutiy_come] ;Поговорить с Лютым
+icon = ui_inGame2_Kill_zombied
+prior = 200
+storyline = true
+title = pb_talk_to_lutiy_come_part_1_name
+descr = pb_talk_to_lutiy_come_part_1_text
+target = pb_lutiy
+condlist_0 = {+padalshik_found_quest_give} complete
+
+
+[pb_found_to_padalshik] ;Найти Падальщика
+icon = ui_inGame2_Who_is_happening
+prior = 200
+storyline = true
+title = {+zver_open_to_pda_padalshik}pb_found_to_padalshik_part_4_name, {=actor_has_item(pb_padalshik_pda)}pb_found_to_padalshik_part_3_name, {+zver_found_padalshik}pb_found_to_padalshik_part_2_name, pb_found_to_padalshik_part_1_name
+descr = {+zver_open_to_pda_padalshik}pb_found_to_padalshik_part_4_text, {=actor_has_item(pb_padalshik_pda)}pb_found_to_padalshik_part_3_text, {+zver_found_padalshik}pb_found_to_padalshik_part_2_text, pb_found_to_padalshik_part_1_text
+target = {+zver_open_to_pda_padalshik}pb_lutiy, nil,{+zver_found_padalshik}pb_padalshik, nil
+condlist_0 = {+quest_found_padalshik_done} complete
+
+
+[pb_talk_to_dubolom] ;Поговорить с Дуболомом
+icon = ui_inGame2_Grey_stalker
+prior = 200
+storyline = true
+title = pb_talk_to_dubolom_part_1_name
+descr = pb_talk_to_dubolom_part_1_text
+target = pb_dubolom_spot
+condlist_0 = {+pro_quest_night_hunting_give} complete
+
+
+[pb_night_hunting] ;Найти и убить химеру
+icon = ui_inGame2_Ohota_na_Himeru
+prior = 200
+storyline = true
+title = {+pro_dubolom_come_to_base_again}pb_night_hunting_part_6_name, {+pro_himera_quest_dead}pb_night_hunting_part_5_name, {+pro_dubolom_hunter_start_quest_killing}pb_night_hunting_part_4_name, {+pro_quest_night_hunting_ready}pb_night_hunting_part_3_name, {=is_night -pro_quest_night_hunting_ready}pb_night_hunting_part_2_name, {-pro_quest_night_hunting_ready}pb_night_hunting_part_1_name
+descr = {+pro_dubolom_come_to_base_again}pb_night_hunting_part_6_text, {+pro_himera_quest_dead}pb_night_hunting_part_5_text, {+pro_dubolom_hunter_start_quest_killing}pb_night_hunting_part_4_text, {+pro_quest_night_hunting_ready}pb_night_hunting_part_3_text, {=is_night -pro_quest_night_hunting_ready}pb_night_hunting_part_2_text, {-pro_quest_night_hunting_ready}pb_night_hunting_part_1_text
+target = {+pro_himera_quest_dead}pb_dubolom_spot, {+pro_dubolom_hunter_start_quest_killing}pb_quest_chimera, pb_dubolom_spot
+condlist_0 = {+pro_dubolom_quest_night_hunting_complete} complete
+
+
+[pb_first_talk_to_markus] ;Поговорить с Маркусом (по поводу Гильзы)
+icon = ui_inGame2_Who_is_happening
+prior = 200
+storyline = true
+title = pb_first_talk_to_markus_part_1_name
+descr = pb_first_talk_to_markus_part_1_text
+target = pb_markus_novice
+condlist_0 = {+pro_markus_meet_from_shell_done} complete
+
+
+[pb_found_to_shell] ;Разыскать Гильзу
+icon = ui_inGame2_Shell_found 
+prior = 200
+storyline = true
+title = {+pro_otshelnik_puzir_realese}pb_found_to_shell_part_4_name, {+boss_dead}pb_found_to_shell_part_3_name, {+pb_quest_podzemka_search_done}pb_found_to_shell_part_2_name, pb_found_to_shell_part_1_name
+descr = {+pro_otshelnik_puzir_realese}pb_found_to_shell_part_4_text, {+boss_dead}pb_found_to_shell_part_3_text, {+pb_quest_podzemka_search_done}pb_found_to_shell_part_2_text, pb_found_to_shell_part_1_text
+target = {+pro_otshelnik_puzir_realese}pb_markus_novice, {+pb_quest_podzemka_search_done}pb_zombied_shell, nil
+condlist_0 = {+pro_zver_founded_shell_in_podzemka} complete
+
+
+[pb_kill_to_squad_flash] ;Охота на плотей
+icon = ui_inGame2_Flash_hunt
+prior = 150
+storyline = true
+title = {+pb_markus_sms_quest_sends}pb_kill_to_squad_flash_part_3_name, {+perevalochnaya_baza_snake_meet_end}pb_kill_to_squad_flash_part_2_name, pb_kill_to_squad_flash_part_1_name
+descr = {+pb_markus_sms_quest_sends}pb_kill_to_squad_flash_part_3_text, {+perevalochnaya_baza_snake_meet_end}pb_kill_to_squad_flash_part_2_text, pb_kill_to_squad_flash_part_1_text
+target = {+pb_markus_sms_quest_sends}pb_markus_id, {+perevalochnaya_baza_snake_meet_end}perevalochnaya_baza_quest_flash, pb_snake
+condlist_0 = {+pb_markus_gone} complete
+
+
+[pb_talk_to_markus] ;Поговорить с Маркусом
+icon = ui_inGame2_Markus_meet
+prior = 200
+storyline = true
+title = pb_talk_to_markus_part_1_name
+descr = pb_talk_to_markus_part_1_text
+target = pb_markus_novice
+condlist_0 = {+perevalochnaya_baza_markus_quest_meet_done} complete
+
+
+[pb_found_to_markus] ;Найти Маркуса
+icon = ui_inGame2_Posledniy_voin
+prior = 200
+storyline = true
+title = {+digger_stash_quest_line_started}pb_found_to_markus_part_5_name, {+pb_markus_founded_none}pb_found_to_markus_part_4_name, {+pb_lutiy_signal_search_end}pb_found_to_markus_part_3_name, {+pb_lutiy_found_signal}pb_found_to_markus_part_2_name, pb_found_to_markus_part_1_name
+descr = {+digger_stash_quest_line_started}pb_found_to_markus_part_5_text, {+pb_markus_founded_none}pb_found_to_markus_part_4_text, {+pb_lutiy_signal_search_end}pb_found_to_markus_part_3_text, {+pb_lutiy_found_signal}pb_found_to_markus_part_2_text, pb_found_to_markus_part_1_text
+target = {+digger_stash_quest_line_started}digst_markus_survive, {+pb_markus_founded_none}nil, pb_lutiy
+condlist_0 = {+pb_found_to_markus_done} complete
+
+
+[pb_go_to_signal] ;Проверить источник сигнала
+icon = ui_inGame2_Istochnik_signala
+prior = 200
+storyline = true
+title = pb_go_to_signal_part_1_name
+descr = pb_go_to_signal_part_1_text
+target = pro_hit_face_restrictor
+condlist_0 = {+pb_markus_founded_to_stronglav} complete
+condlist_1 = {+pb_actor_in_zone_markus_signal} reversed
+
+
+[pb_merc_leader_talk] ;Поговорить с Тесаком ("Разговор по душам")
+icon = ui_inGame2_Zastava_dolg_man
+prior = 200
+storyline = true
+title = pb_merc_leader_talk_part_1_name
+descr = pb_merc_leader_talk_part_1_text
+target = pb_killer_leader_group
+condlist_0 = {+pro_actor_meet_leader_killer_2} complete
+
+
+[pb_markus_alive_quest] ;Старые обиды (освободить пленников)
+icon = ui_inGame2_Learder_stalkers_kill
+prior = 200
+storyline = true
+title = {+pro_markus_base_sends_sms_quest}pb_markus_alive_quest_part_9_name, {+pro_murad_prisoner_dialog_done}pb_markus_alive_quest_part_8_name, {+pro_merc_enemy_base_squad_dead}pb_markus_alive_quest_part_7_name, {+pro_turn_off_light_on_base_done}pb_markus_alive_quest_part_6_name, {+pro_actor_and_markus_kill_merc}pb_markus_alive_quest_part_5_name, {+pro_actor_go_to_rezerv_weapons}pb_markus_alive_quest_part_4_name, {+pro_markus_alive_come_1}pb_markus_alive_quest_part_3_name, {+pro_markus_alive_first_dialog_end}pb_markus_alive_quest_part_2_name, pb_markus_alive_quest_part_1_name
+descr = {+pro_markus_base_sends_sms_quest}pb_markus_alive_quest_part_9_text, {+pro_murad_prisoner_dialog_done}pb_markus_alive_quest_part_8_text, {+pro_merc_enemy_base_squad_dead}pb_markus_alive_quest_part_7_text, {+pro_turn_off_light_on_base_done}pb_markus_alive_quest_part_6_text, {+pro_actor_and_markus_kill_merc}pb_markus_alive_quest_part_5_text, {+pro_actor_go_to_rezerv_weapons}pb_markus_alive_quest_part_4_text, {+pro_markus_alive_come_1}pb_markus_alive_quest_part_3_text, {+pro_markus_alive_first_dialog_end}pb_markus_alive_quest_part_2_text, pb_markus_alive_quest_part_1_text
+target = {+pro_markus_base_sends_sms_quest}pb_lutiy_spot, {+pro_murad_prisoner_dialog_done}nil, {+pro_merc_enemy_base_squad_dead}pb_murad_prison, {+pro_turn_off_light_on_base_done}pro_merc_enemy_base_squad, {+pro_actor_and_markus_kill_merc}pb_turn_off_light_on_base_restr, {+pro_actor_go_to_rezerv_weapons}nil, {+pro_markus_alive_first_dialog_end}pb_markus_alive, pb_markus_alive
+condlist_0 = {+pro_lutiy_scene_final_quest_give} complete
+
+
+[pb_epidemy_on_base] ;Сложности выживания
+icon = ui_inGame2_PD_Otmecheniy_zonoy
+prior = 200
+storyline = true
+title = {+pro_actor_go_to_medicament_search}pb_epidemy_on_base_part_3_name, {+pro_dialog_lutiy_about_epidemy_done}pb_epidemy_on_base_part_2_name, pb_epidemy_on_base_part_1_name
+descr = {+pro_actor_go_to_medicament_search}pb_epidemy_on_base_part_3_text, {+pro_dialog_lutiy_about_epidemy_done}pb_epidemy_on_base_part_2_text, pb_epidemy_on_base_part_1_text
+target = {+pro_actor_go_to_medicament_search}pb_lutiy_spot, {+pro_dialog_lutiy_about_epidemy_done}nil, pb_lutiy_spot
+condlist_0 = {+pro_final_dialog_lutiy_about_epidemy_done} complete
+
+
+[pb_turn_on_transformator] ;Включить свет на базе
+icon = ui_inGame2_Turn_on_transformator
+prior = 200
+storyline = true
+title = {+pro_transformator_podzemka_turn_on}pb_turn_on_transformator_part_7_name, {+pro_duty_tachenko_start_dialog_meet}pb_turn_on_transformator_part_6_name, {+pro_duty_bunchuk_start_dialog_meet}pb_turn_on_transformator_part_5_name, {+pro_quest_murad_go_to_base}pb_turn_on_transformator_part_4_name, {+pro_murad_quest_door_come}pb_turn_on_transformator_part_3_name, {+pro_murad_go_to_quest_door}pb_turn_on_transformator_part_2_name, pb_turn_on_transformator_part_1_name
+descr = {+pro_transformator_podzemka_turn_on}pb_turn_on_transformator_part_7_text, {+pro_duty_tachenko_start_dialog_meet}pb_turn_on_transformator_part_6_text, {+pro_duty_bunchuk_start_dialog_meet}pb_turn_on_transformator_part_5_text, {+pro_quest_murad_go_to_base}pb_turn_on_transformator_part_4_text, {+pro_murad_quest_door_come}pb_turn_on_transformator_part_3_text, {+pro_murad_go_to_quest_door}pb_turn_on_transformator_part_2_text, pb_turn_on_transformator_part_1_text
+target = {+pro_transformator_podzemka_turn_on}pb_lutiy_spot, {+pro_duty_tachenko_start_dialog_meet}pb_transformator_podzemka_logic, {+pro_duty_bunchuk_start_dialog_meet}pb_duty_tachenko, {+pro_quest_murad_go_to_base}pb_quest_zone_duty_first_meet, pb_murad_quest_door
+condlist_0 = {+pro_lutiy_scene_final_base_meet} complete
+
+
+[pb_enemy_signal_found] ;Неизвестный сигнал
+icon = ui_inGame2_Neizvestniy
+prior = 200
+storyline = true
+title = {+pro_lesnik_end_line_in_base}pb_enemy_signal_found_part_4_name, {+pro_lesnik_first_dialog_meet_done}pb_enemy_signal_found_part_3_name, {+pro_dog_quest_squad_dead}pb_enemy_signal_found_part_2_name, pb_enemy_signal_found_part_1_name
+descr = {+pro_lesnik_end_line_in_base}pb_enemy_signal_found_part_4_text, {+pro_lesnik_first_dialog_meet_done}pb_enemy_signal_found_part_3_text, {+pro_dog_quest_squad_dead}pb_enemy_signal_found_part_2_text, pb_enemy_signal_found_part_1_text
+target = {+pro_lesnik_end_line_in_base}pb_lutiy_spot, {+pro_lesnik_first_dialog_meet_done}pb_base_podval_lesnik_restr, {+pro_dog_quest_squad_dead}pb_lesnik, pb_lesnik
+condlist_0 = {+pro_lutiy_final_end_line_meet_done} complete
+
+
+[pb_finality_signal_founded] ;Слабый сигнал
+icon = ui_inGame2_Radiopomehi
+prior = 200
+storyline = true
+title = {+pro_dialog_paskhalka_stalker_start}pb_finality_signal_founded_part_2_name, pb_finality_signal_founded_part_1_name
+descr = {+pro_dialog_paskhalka_stalker_start}pb_finality_signal_founded_part_2_text, pb_finality_signal_founded_part_1_text
+target = {+pro_dialog_paskhalka_stalker_start}pb_paskhalka_stalker, pb_paskhalka_stalker
+condlist_0 = {+pro_paskhalka_stalker_meet_done} complete
+
+
+[pb_duty_tachenko_final_quest_meet] ;Последнее послание
+icon = ui_inGame2_Posledniy_voin
+prior = 200
+storyline = true
+title = {+pro_dialog_duty_tachenko_end_line_done}pb_duty_tachenko_final_quest_meet_part_3_name, {+pro_actor_teleport_podzemka_first}pb_duty_tachenko_final_quest_meet_part_2_name, pb_duty_tachenko_final_quest_meet_part_1_name
+descr = {+pro_dialog_duty_tachenko_end_line_done}pb_duty_tachenko_final_quest_meet_part_3_text, {+pro_actor_teleport_podzemka_first}pb_duty_tachenko_final_quest_meet_part_2_name, pb_duty_tachenko_final_quest_meet_part_1_text
+target = {+pro_dialog_duty_tachenko_end_line_done}nil, pb_duty_tachenko
+condlist_0 = {+pro_actor_is_not_podzemka} complete
+
+
+[pb_go_to_lesnik_scene] ;Подойти к Леснику (финальная сцена)
+icon = ui_inGame2_kompas
+prior = 200
+storyline = true
+title = {+pro_lesnik_final_dialog_meet_complete}pb_go_to_lesnik_scene_part_2_name, pb_go_to_lesnik_scene_part_1_name
+descr = {+pro_lesnik_final_dialog_meet_complete}pb_go_to_lesnik_scene_part_2_name, pb_go_to_lesnik_scene_part_1_text
+target = pb_lesnik_final_scene
+condlist_0 = {+pro_actor_teleport_to_black_valley} complete
+
+;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
+;;;;;;;;;;;;;;; САЙД-КВЕСТЫ ;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
+;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
+
+[pb_find_ammo_7_62] ;найти патроны для Москита
+icon = ui_inGame2_Bring_ammo_Moskit
+prior = 10
+storyline = false
+title = {-moskit_quest_line_ammo_give =actor_has_item(ammo_7.62x54_7h1)}pb_find_ammo_7_62_part_5_name, pb_find_ammo_7_62_part_1_name
+descr = {-moskit_quest_line_ammo_give =actor_has_item(ammo_7.62x54_7h1)}pb_find_ammo_7_62_part_5_text, pb_find_ammo_7_62_part_1_text
+target = {-moskit_quest_line_ammo_give =actor_has_item(ammo_7.62x54_7h1)}pb_moskit, nil
+condlist_0 = {+moskit_quest_line_ammo_give} complete
+condlist_1 = {+pb_clean_quest_item_done} reversed
+
+[pb_kill_to_controller] ;Убить контроллера
+icon = ui_inGame2_Kill_to_controller
+prior = 15
+storyline = false
+title = {+controller_quest_dead}pb_kill_to_controller_part_2_name, pb_kill_to_controller_part_1_name
+descr = {+controller_quest_dead}pb_kill_to_controller_part_2_text, pb_kill_to_controller_part_1_text
+target = {+controller_quest_dead}pb_lutiy, pb_controller_quest
+condlist_0 = {+pb_kill_to_controller_complite} complete
+
+[pb_find_af_vyvert] ;найти Выверт для Маркуса
+icon = ui_inGame2_Markus_af_vyver_found
+prior = 10
+storyline = false
+title = {=actor_has_item(af_vyvert)}pb_find_af_vyvert_part_2_name, pb_find_af_vyvert_part_1_name
+descr = {=actor_has_item(af_vyvert)}pb_find_af_vyvert_part_2_text, pb_find_af_vyvert_part_1_text
+target = {=actor_has_item(af_vyvert)}pb_markus_novice, nil
+on_init = %=spawn_object(af_vyvert:pro_electro_af_way_1)%
+condlist_0 = {+pro_markus_quest_line_af_vyvert_give} complete
+condlist_1 = {+pro_markus_meet_from_shell} fail
+on_complete = %=give_actor(af_tapeworm)%
+;reward_item = af_tapeworm
+reward_money = 2500
+
+[pb_murad_go_to_base] ;Провести Мурада к базе
+icon = ui_inGame2_Put_v_pripyat
+prior = 100
+storyline = false
+title = {+perevalochnaya_baza_meet_to_lutiy_end}pb_murad_go_to_base_part_4_name, {+pro_murad_in_puzir_dead +pro_murad_enemy_to_actor}pb_murad_go_to_base_part_3_name, {+pro_murad_in_puzir_dead}pb_murad_go_to_base_part_3_name, {+perevalochnaya_baza_murad_coming_to_base}pb_murad_go_to_base_part_3_name, {+perevalochnaya_baza_murad_go_to_base}pb_murad_go_to_base_part_2_name, pb_murad_go_to_base_part_1_name
+descr = {+perevalochnaya_baza_meet_to_lutiy_end}pb_murad_go_to_base_part_4_text, {+pro_murad_in_puzir_dead +pro_murad_enemy_to_actor}pb_murad_go_to_base_part_3_text, {+pro_murad_in_puzir_dead}pb_murad_go_to_base_part_3_text, {+perevalochnaya_baza_murad_coming_to_base}pb_murad_go_to_base_part_3_text, {+perevalochnaya_baza_murad_go_to_base}pb_murad_go_to_base_part_2_text, pb_murad_go_to_base_part_1_text
+target = {+perevalochnaya_baza_meet_to_lutiy_end}pb_murad_spot, {+perevalochnaya_baza_murad_coming_to_base}pb_lutiy, {+pro_murad_in_puzir_dead}pb_lutiy, {+perevalochnaya_baza_murad_go_to_base}pb_baza_1_sr_noweap, pb_murad_spot
+condlist_0 = {+perevalochnaya_baza_meet_to_murad_end} complete
+
+[pb_find_kanistra_for_kuvalda] ;Найти канистру с топливом для Кувалды
+icon = ui_inGame2_Toplivo_for_generator
+prior = 100
+storyline = false
+title = {+pro_find_kanistra_find_dialog}pb_find_kanistra_for_kuvalda_part_3_name, {=actor_has_item(pb_kanistra_gas)}pb_find_kanistra_for_kuvalda_part_2_name, {-pro_find_kanistra_find_dialog}pb_find_kanistra_for_kuvalda_part_1_name
+descr = {+pro_find_kanistra_find_dialog}pb_find_kanistra_for_kuvalda_part_3_text, {=actor_has_item(pb_kanistra_gas)}pb_find_kanistra_for_kuvalda_part_2_text, {-pro_find_kanistra_find_dialog}pb_find_kanistra_for_kuvalda_part_1_text
+target = {+pro_find_kanistra_find_dialog}pb_kuvalda, {=actor_has_item(pb_kanistra_gas)}pb_kuvalda, {-pro_find_kanistra_find_dialog}nil
+condlist_0 = {+pro_find_kanistra_for_kuvalda_done} complete
+condlist_1 = {+perevalochnaya_baza_snake_meet_end} reversed
+reward_item = bandage:bandage:medkit
+
+[pb_find_razya_to_rezak] ;Найти аккумулятор и медную проволоку для военного
+icon = ui_inGame2_Ekstrennaya_svyaz
+prior = 200
+storyline = false
+title = {+pro_actor_wait_twenty_minut}pb_find_razya_to_rezak_part_7_name, {+pro_actor_spez_razia_and_wire_give}pb_find_razya_to_rezak_part_6_name, {-pro_actor_give_materials_wire =actor_has_item(spez_razia) -pro_actor_give_spez_razia =actor_has_item_count(jup_b200_tech_materials_wire:2)}pb_find_razya_to_rezak_part_5_name, {=actor_has_item(spez_razia) -pro_actor_give_spez_razia}pb_find_razya_to_rezak_part_4_name, {+pro_actor_give_materials_wire -pro_actor_give_spez_razia}pb_find_razya_to_rezak_part_3_name, {-pro_actor_give_materials_wire =actor_has_item_count(jup_b200_tech_materials_wire:2)}pb_find_razya_to_rezak_part_2_name, pb_find_razya_to_rezak_part_1_name
+descr = {+pro_actor_wait_twenty_minut}pb_find_razya_to_rezak_part_7_text, {+pro_actor_spez_razia_and_wire_give}pb_find_razya_to_rezak_part_6_name, {-pro_actor_give_materials_wire =actor_has_item(spez_razia) -pro_actor_give_spez_razia =actor_has_item_count(jup_b200_tech_materials_wire:2)}pb_find_razya_to_rezak_part_5_text, {=actor_has_item(spez_razia) -pro_actor_give_spez_razia}pb_find_razya_to_rezak_part_4_text, {+pro_actor_give_materials_wire -pro_actor_give_spez_razia}pb_find_razya_to_rezak_part_3_text, {-pro_actor_give_materials_wire =actor_has_item_count(jup_b200_tech_materials_wire:2)}pb_find_razya_to_rezak_part_2_text, pb_find_razya_to_rezak_part_1_text
+target = {+pro_actor_wait_twenty_minut}pb_soldier_oleynik_podval, {+pro_actor_spez_razia_and_wire_give}nil, {-pro_actor_give_materials_wire =actor_has_item(spez_razia) -pro_actor_give_spez_razia =actor_has_item_count(jup_b200_tech_materials_wire:2)}pb_soldier_oleynik_podval, {=actor_has_item(spez_razia)}pb_soldier_oleynik_podval, {+pro_actor_give_materials_wire}nil, {-pro_actor_give_materials_wire =actor_has_item_count(jup_b200_tech_materials_wire:2)}pb_soldier_oleynik_podval, nil
+condlist_0 = {+rezak_to_razia_quest_done} complete
+condlist_1 = {+pb_clean_quest_item_done} reversed
+
+[pb_find_habar_padalshik] ;Найти Тайник Падальщика
+icon = ui_inGame2_Krazha
+prior = 10
+storyline = false
+title = {+pro_quest_open_padalshik_habar}pb_find_habar_padalshik_part_4_name, {+pb_find_habar_padalshik_done}pb_find_habar_padalshik_part_3_name, {=actor_has_item(tainik_padalshika)}pb_find_habar_padalshik_part_2_name, pb_find_habar_padalshik_part_1_name
+descr = {+pro_quest_open_padalshik_habar}pb_find_habar_padalshik_part_4_text, {+pb_find_habar_padalshik_done}pb_find_habar_padalshik_part_3_name, {=actor_has_item(tainik_padalshika)}pb_find_habar_padalshik_part_2_text, pb_find_habar_padalshik_part_1_text
+target = {+pro_quest_open_padalshik_habar}pb_shurup, {+pb_find_habar_padalshik_done}nil, {=actor_has_item(tainik_padalshika)}pb_lutiy, nil
+condlist_0 = {+pro_quest_habar_padalshik_complete} complete
+condlist_1 = {+pb_clean_quest_item_done} reversed
+
+
+[pb_find_meat_boar_food] ;Принести Дуболому кусок мяса
+icon = ui_inGame2_Dog_hunt
+prior = 10
+storyline = false
+title = {=actor_has_item(meat_boar)}pb_find_meat_boar_food_part_2_name, {+pro_dubolom_quest_boar_meat_give}pb_find_meat_boar_food_part_1_name, pb_find_meat_boar_food_part_3_name
+descr = {=actor_has_item(meat_boar)}pb_find_meat_boar_food_part_2_text, {+pro_dubolom_quest_boar_meat_give}pb_find_meat_boar_food_part_1_text, pb_find_meat_boar_food_part_3_text
+target = {=actor_has_item(meat_boar)}pb_dubolom, {+pro_dubolom_quest_boar_meat_give}nil, pb_dubolom
+condlist_0 = {+pro_dubolom_quest_boar_meat_done} complete
+
+[pb_podzemka_search] ;Исследовать подземелье
+icon = ui_inGame2_Come_to_base
+prior = 15
+storyline = false
+title = pb_podzemka_search_part_1_name
+descr = pb_podzemka_search_part_1_text
+target = pb_sr_crying
+condlist_0 = {+pb_quest_podzemka_search_done} complete
+
+[pb_duty_tachenko_meet] ;Поговорить с генералом Таченко
+icon = ui_inGame2_Igra_v_pryatki
+prior = 15
+storyline = false
+title = pb_duty_tachenko_meet_part_1_name
+descr = pb_duty_tachenko_meet_part_1_text
+target = pb_duty_tachenko
+condlist_0 = {+pro_first_quest_duty_tachenko_give} complete
+
+[pb_find_food_for_duty] ;Найти еду для долговцев
+icon = ui_inGame2_Pripasi
+prior = 10
+storyline = false
+title = {=pb_find_food_for_duty_check}pb_find_food_for_duty_part_2_name, pb_find_food_for_duty_part_1_name
+descr = {=pb_find_food_for_duty_check}pb_find_food_for_duty_part_2_text, pb_find_food_for_duty_part_1_text
+target = {=pb_find_food_for_duty_check}pb_duty_tachenko, nil
+condlist_0 = {+pro_first_quest_duty_tachenko_done} complete
+reward_item = af_signet:af_tapeworm:af_grapes
+
+[pb_found_duty_weapon] ;Найти автомат Бунчука
+icon = ui_inGame2_Found_duty_weapon
+prior = 15
+storyline = false
+title = {+pro_weapon_bunchuk_dialog_start !actor_has_item(pb_wpn_abakan)}pb_found_duty_weapon_part_3_name, {=actor_has_item(pb_wpn_abakan)}pb_found_duty_weapon_part_3_name, {-pro_weapon_bunchuk_dialog_start +pro_quest_duty_weapon_found_meet} pb_found_duty_weapon_part_2_name, {-pro_weapon_bunchuk_dialog_start} pb_found_duty_weapon_part_1_name
+descr = {+pro_weapon_bunchuk_dialog_start !actor_has_item(pb_wpn_abakan)}pb_found_duty_weapon_part_3_text, {=actor_has_item(pb_wpn_abakan)}pb_found_duty_weapon_part_3_text, {-pro_weapon_bunchuk_dialog_start +pro_quest_duty_weapon_found_meet} pb_found_duty_weapon_part_2_text, {-pro_weapon_bunchuk_dialog_start} pb_found_duty_weapon_part_1_text
+target = {+pro_weapon_bunchuk_dialog_start !actor_has_item(pb_wpn_abakan)}pb_duty_bunchuck, {=actor_has_item(pb_wpn_abakan)}pb_duty_bunchuck, {+pro_quest_duty_weapon_found_meet}pb_wpn_abakan, pb_duty_bunchuck
+condlist_0 = {+pro_weapon_bunchuk_dialog_done} complete
+
+[pb_found_lisiy_and_give_art] ;Найти сталкера Лысого и отдать ему артефакт
+icon = ui_inGame2_PD_Iskatel
+prior = 15
+storyline = false
+title = {+blck_val_security_from_roof_go}pb_found_lisiy_and_give_art_part_2_name, pb_found_lisiy_and_give_art_part_1_name
+descr = {+blck_val_security_from_roof_go}pb_found_lisiy_and_give_art_part_2_text, pb_found_lisiy_and_give_art_part_1_text
+target = {+blck_val_security_from_roof_go}blck_val_a31_bandit_5, nil
+condlist_0 = {+blck_val_stalker_in_bar_paskhalka_meet} complete
+
+[pb_actor_inventory] ;Исследовать место где меня нашли
+icon = ui_inGame2_Put_v_pripyat
+prior = 15
+storyline = false
+title = pb_actor_inventory_1_name
+descr = pb_actor_inventory_1_text
+target = pb_actor_inventory_zone
+condlist_0 = {+pb_actor_inventory_done} complete

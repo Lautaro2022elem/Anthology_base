@@ -1,0 +1,10 @@
+[logic]
+active = sr_idle
+
+[sr_idle]
+on_actor_inside = {+spectrum_project_start +esc_quest_serious_business_obzor_2} sr_idle@2 %+esc_quest_serious_business_obzor_tryp =spawn_object_in(esc_quest_serious_business_pda:esc_quest_sb_tryp)%
+
+[sr_idle@2]
+on_info = {=actor_has_item(esc_quest_serious_business_pda)} sr_idle@nil %+esc_quest_serious_business_kpp%
+
+[sr_idle@nil]

@@ -1,0 +1,77 @@
+---------------Монолит на заводе-----------------
+[logic@blck_val_monolith_veteran_1]
+suitable = {=check_npc_name(sim_default_monolith_1)} true
+prior = 200
+active = remark@blck_val_monolith_veteran_1
+
+[remark@blck_val_monolith_veteran_1]
+anim = wait
+target = story | blck_val_zavod_freedom_3
+on_info = {+blck_val_zasada_stavrid_not_help} %=kill_npc%
+danger = danger
+invulnerable = {+blck_val_zavod_zasada_monolit_time} false, true
+
+
+[logic@blck_val_monolith_veteran_2]
+suitable = {=check_npc_name(sim_default_monolith_0)} true
+prior = 200
+active = remark@blck_val_monolith_veteran_2
+
+[remark@blck_val_monolith_veteran_2]
+anim = wait
+target = story | blck_val_zavod_freedom_3
+on_info = {+blck_val_zasada_stavrid_not_help} %=kill_npc%
+danger = danger
+invulnerable = {+blck_val_zavod_zasada_monolit_time} false, true
+
+
+[logic@blck_val_monolith_veteran_3]
+suitable = {=check_npc_name(sim_default_monolith_2)} true
+prior = 200
+active = remark@blck_val_monolith_veteran_3
+
+[remark@blck_val_monolith_veteran_3]
+anim = wait
+target = story | blck_val_zavod_freedom_3
+on_info = {+blck_val_zasada_stavrid_not_help} %=kill_npc%
+danger = danger
+invulnerable = {+blck_val_zavod_zasada_monolit_time} false, true
+
+
+[logic@blck_val_monolith_veteran_4]
+suitable = {=check_npc_name(sim_default_monolith_1)} true
+prior = 200
+active = remark@blck_val_monolith_veteran_4
+
+[remark@blck_val_monolith_veteran_4]
+anim = wait
+target = story | blck_val_zavod_freedom_3
+on_info = {+blck_val_zasada_stavrid_not_help} %=release_npc%
+danger = danger
+invulnerable = {+blck_val_zavod_zasada_monolit_time} false, true
+
+
+[logic@blck_val_monolith_veteran_5]
+suitable = {=check_npc_name(sim_default_monolith_0)} true
+prior = 200
+active = remark@blck_val_monolith_veteran_5
+
+[remark@blck_val_monolith_veteran_5]
+anim = wait
+target = story | blck_val_zavod_freedom_3
+on_info = {+blck_val_zasada_stavrid_not_help} %=release_npc%
+danger = danger
+invulnerable = {+blck_val_zavod_zasada_monolit_time} false, true
+
+
+[logic@blck_val_monolith_veteran_6]
+suitable = {=check_npc_name(sim_default_monolith_2)} true
+prior = 200
+active = remark@blck_val_monolith_veteran_6
+
+[remark@blck_val_monolith_veteran_6]
+anim = wait
+target = story | blck_val_zavod_freedom_3
+on_info = {+blck_val_zasada_stavrid_not_help} %=release_npc%
+danger = danger
+invulnerable = {+blck_val_zavod_zasada_monolit_time} false, true

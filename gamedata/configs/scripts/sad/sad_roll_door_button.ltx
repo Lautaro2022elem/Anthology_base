@@ -1,0 +1,10 @@
+[logic]
+active = ph_button@open
+
+[ph_button@open] 
+anim = idle
+on_press = ph_idle@wait %+sad_atr_door_call =play_sound(power_switch)%
+tooltip = tip_door_open
+
+[ph_idle@wait]
+on_info = {-sad_atr_door_call} ph_button@open

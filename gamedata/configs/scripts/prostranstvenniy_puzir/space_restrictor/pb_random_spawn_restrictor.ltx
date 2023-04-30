@@ -1,0 +1,6 @@
+[logic]
+active = sr_idle@spawn
+
+[sr_idle@spawn]
+on_info = {+pb_zver_on_base_dogs +random_dogs_dead} %=create_squad(pro_smart_1:pro_smart_1) -random_dogs_dead -pb_zver_on_base_dogs%
+on_info2 = {+pb_zver_on_base_boar +random_boar_dead} %=create_squad(pro_smart_3:pro_smart_3) -random_boar_dead -pb_zver_on_base_boar%

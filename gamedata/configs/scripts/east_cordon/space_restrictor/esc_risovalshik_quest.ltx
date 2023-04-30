@@ -1,0 +1,26 @@
+[logic]
+active = sr_idle@waiting_order
+
+[sr_idle@waiting_order]
+on_info = {+spectrum_project_start +esc_order_in_process} sr_idle@safe_distance %=give_task(esc_risovalshik_items)%
+
+[sr_idle@safe_distance]
+on_info = {+esc_risovalshik_can_go =dist_to_actor_ge(10)} sr_idle@random, {+esc_risovalshik_can_go =actor_in_zone(esc_sr_sleep_2)} sr_idle@random
+
+[sr_idle@random]
+on_info = {~20} sr_idle@12hours, {~50} sr_idle@18hours, sr_idle@24hours
+
+[sr_idle@12hours]
+on_game_timer = 43200 | sr_idle@order_ready
+
+[sr_idle@18hours]
+on_game_timer = 64800 | sr_idle@order_ready
+
+[sr_idle@24hours]
+on_game_timer = 86400 | sr_idle@order_ready
+
+[sr_idle@order_ready]
+on_info = {=dist_to_actor_ge(10)} sr_idle@final %+esc_order_ready_task +esc_order_ready =play_sound(esc_order_ready) %, {=actor_in_zone(esc_sr_sleep_2)} sr_idle@final %+esc_order_ready =play_sound(esc_order_ready)  +esc_order_ready_task%
+
+[sr_idle@final]
+on_info =| {-esc_order_in_process} sr_idle@waiting_order %-esc_order_ready_task%

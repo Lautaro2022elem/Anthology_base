@@ -1,0 +1,25 @@
+[logic]
+active = sr_idle@zver_have_pda_leader
+
+[sr_idle@zver_have_pda_leader]
+on_info = {+esc_squad_leader_base_dead =actor_has_item(esc_pda_leader_base)} sr_idle@zver_have_pda_leader_4
+
+[sr_idle@zver_have_pda_leader_4]
+on_timer = 5000 | sr_idle@zver_have_pda_leader_1 %=esc_zver_sends_sms_raven%
+
+[sr_idle@zver_have_pda_leader_1]
+on_timer = 7000 | sr_idle@zver_have_pda_leader_2 %=esc_zver_sends_sms_yaroshuk%
+
+[sr_idle@zver_have_pda_leader_2]
+on_timer = 6000 | sr_idle@zver_have_pda_leader_3 %=esc_yaroshuk_sends_sms_zver%
+
+[sr_idle@zver_have_pda_leader_3]
+on_timer = 4000 | sr_idle@army_squad_spawn %+esc_give_meet_from_yaroshuk%
+
+[sr_idle@army_squad_spawn]
+on_info = {+esc_give_meet_from_yaroshuk =is_day} sr_idle@army_squad_spawn_start
+
+[sr_idle@army_squad_spawn_start]
+on_timer = 100 | sr_idle@nil %=create_squad(esc_squad_army_leader_quest:esc_smart_terrain_3_0_army_quest) =create_squad(esc_merc_bunker_security_squad:esc_smart_terrain_1_1_bunker) =remove_squad(esc_squad_leader_base) +esc_final_scene_in_escape_comp%
+
+[sr_idle@nil]

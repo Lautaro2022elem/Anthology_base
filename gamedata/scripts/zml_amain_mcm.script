@@ -1,0 +1,33 @@
+local defaults = {
+    ["zml_enabled"] = true,
+    ["zml_debug_enabled"] = false,
+}
+
+function get_config(key)
+    if ui_mcm then return ui_mcm.get("ZML/zml_amain/"..key) else return defaults[key] end
+end
+
+function level_present(r)
+    return (level.present() == r)
+end
+
+function on_mcm_load()
+    return { id="zml_amain", sh=true, gr={
+        { id="title_header", type="slide", link="ui_options_slider_mask", text="ui_mcm_menu_zml_amain", size= {512,50}, spacing=20 },
+        { id="mod_info", type="desc", text="ui_mcm_ZML_zml_amain_mod_info", },
+        { id="tooltip_info", type="desc", clr={255, 255, 255, 255}, text="ui_mcm_ZML_zml_amain_tooltip_info" },
+        { id="modlink_info", type="desc", clr={200, 125, 125, 125}, text="ui_mcm_ZML_zml_amain_modlink_info" },
+        { id="persist_info_mm", type="desc", clr={200, 200, 200, 255}, text="ui_mcm_ZML_zml_amain_persist_info_mm", precondition={level_present, false} },
+        { id="persist_info_level", type="desc", clr={200, 200, 255, 200}, text="ui_mcm_ZML_zml_amain_persist_info_level", precondition={level_present, true} },
+        -- GENERAL
+        { id="persist_divider", type="line" },
+        { id="zml_enabled", type="check", val=1, def=true},
+        { id="zml_debug_enabled", type="check", val=1, def=false},
+        { id="zml_persist_override", type="check", val=1, def=false},
+        { id="zml_enabled_divider", type="line" },
+        -- INFOS
+        { id="toggle_info", type="desc", text="ui_mcm_ZML_zml_amain_toggle_info_work", },
+        { id="toggle_in_game_work", type="desc", clr={200, 200, 255, 200}, text="ui_mcm_ZML_zml_amain_toggle_in_game_work", },
+        { id="toggle_in_game_nowork", type="desc", clr={225, 255, 200, 200}, text="ui_mcm_ZML_zml_amain_toggle_in_game_nowork", },
+    }}, "ZML"
+end

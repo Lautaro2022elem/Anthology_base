@@ -1,0 +1,15 @@
+[collide]
+ignore_static
+
+[logic]
+active = ph_idle
+
+[ph_idle]
+nonscript_usable = true 
+on_info = {+sad_sim_16_scanner_time_to_remove} ph_idle@remove
+on_info2 = {+sad_sim_16_scanner_force_destroy} %-sad_sim_16_scanner_force_destroy =destroy_object%
+
+[ph_idle@remove]
+tips = jup_b209_scanner_remove_tips
+on_info = {+sad_sim_16_scanner_force_destroy} %-sad_sim_16_scanner_force_destroy =destroy_object%
+on_use = %+sad_sim_16_scanner_remove =destroy_object%

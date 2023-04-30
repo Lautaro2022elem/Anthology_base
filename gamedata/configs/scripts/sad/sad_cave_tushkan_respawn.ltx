@@ -1,0 +1,17 @@
+[logic]
+active = sr_idle@wait
+
+[sr_idle@wait]
+on_info = {+sad_cave_tushkanos_awake} sr_idle@start
+
+[sr_idle@start]
+on_game_timer = 10 | sr_idle@check
+
+[sr_idle@check]
+on_info = {+sad_cave_dont_spawn_tushkanos} sr_idle@start, {!squad_exist(sad_cave_tushkans)} sr_idle@squad, {!squad_npc_count_ge(sad_cave_tushkans:8)} sr_idle@member, sr_idle@start
+
+[sr_idle@member]
+on_info = sr_idle@start %=sad_cave_create_mob_member(tushkano_big)%
+
+[sr_idle@squad]
+on_info = sr_idle@start %=create_squad(sad_cave_tushkans:sad_cave)% ; {=sad_dist_to_path_ge(sad_cave_mobs_home_1:6500)}

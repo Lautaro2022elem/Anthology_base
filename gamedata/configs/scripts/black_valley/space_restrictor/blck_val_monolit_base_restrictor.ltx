@@ -1,0 +1,9 @@
+[logic]
+active = sr_idle@respawn
+
+;------------------Респавн патрульных сквадов-------------------------------------------
+[sr_idle@respawn]
+on_info  = {+blck_val_random_monolith_base_dead !squad_exist(blck_val_monolith_squad_base) =dist_to_actor_ge(100)} %=create_squad(blck_val_monolith_squad_base:blck_val_b45) -blck_val_random_monolith_base_dead%
+
+[sr_idle@surge]
+on_info = {!surge_started} sr_idle@respawn %=squad_walk_from_cover(blck_val_stalker_goto_smart_1) =squad_walk_from_cover(blck_val_a31_bandit_vil_squad)%

@@ -1,0 +1,15 @@
+[logic@esc_squad_village_dog]
+active = animpoint@dog_home
+level_spot = quest_npc
+suitable = {=check_npc_name(esc_wolf_brother)} true, false
+prior = 200
+
+[animpoint@dog_home]
+cover_name = esc_dog_sit_animpoint
+on_info = {=actor_enemy} %=actor_neutral%
+gather_items_enabled = false
+corpse_detection_enabled = false
+combat_ignore_keep_when_attacked = true 
+combat_ignore_cond = true
+invulnerable = true
+meet = no_meet

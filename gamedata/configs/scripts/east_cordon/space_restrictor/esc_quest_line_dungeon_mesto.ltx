@@ -1,0 +1,21 @@
+[logic]
+active = sr_idle
+
+[sr_idle]
+on_info = {+spectrum_project_start -esc_quest_line_dungeon_complete +esc_borland_quest_line_dungeon_dialog_open_door} sr_idle@1
+
+[sr_idle@1]
+on_actor_inside = sr_idle@2 
+
+[sr_idle@2]
+on_timer = 100| sr_cutscene@cam
+ 
+[sr_cutscene@cam]
+point = esc_camera_podzem_lesnica_actor_walk
+look = esc_camera_podzem_lesnica_actor_look
+cam_effector = scenario_cam\level_escape\camera_podzem_lesnica
+enable_ui_on_end = true
+global_cameffect = true
+on_signal = cameff_end | sr_idle@nil %+esc_quest_line_dungeon_complete +esc_quest_line_dungeon_teleport_borland%
+
+[sr_idle@nil]

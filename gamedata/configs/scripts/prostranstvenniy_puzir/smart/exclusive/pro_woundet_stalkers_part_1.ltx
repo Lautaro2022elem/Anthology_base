@@ -1,0 +1,138 @@
+;=========meet_stalker_korpys========
+[meet@korpys_stalker]
+close_anim 		= nil
+close_victim 	= nil
+far_anim 		= nil
+far_victim 		= nil
+close_distance 	= 0
+far_distance 	= 0
+use = {=actor_enemy} false, {=dist_to_actor_le(3)} true, false
+snd_on_use = {!dist_to_actor_le(3)} nil
+meet_on_talking = false
+;==================================
+
+
+[logic@perevalochnaya_baza_woundet_stalkers_animpoint_1]
+active = animpoint@animpoint_1
+level_spot = mechanic
+prior = 50
+suitable = {=check_npc_name(pb_shurup)} true, false
+can_select_weapon = false
+
+[animpoint@animpoint_1]
+cover_name = pro_sklad_animpoint_2
+on_info = {+random_snork_dead +random_bloodsucker_dead +random_monolith_advanced_dead +random_monolith_veteran_dead =dist_to_actor_le(30)} %+pb_zver_on_base%
+on_info2 = {+random_dogs_dead =dist_to_actor_le(30)} %+pb_zver_on_base_dogs%
+on_info3 = {+random_boar_dead =dist_to_actor_le(30)} %+pb_zver_on_base_boar%
+on_info4 = {+pb_zver_signal_helicopter_done =dist_to_actor_ge(9) -pro_heli_fly_to_base_complete} %+pro_heli_fly_to_base_complete%
+on_info5 = {+pro_come_back_prostranstvenniy_puzir} %=release_npc%
+on_info6 = {+controller_spawn_end -controller_quest_dead} remark@psy_back
+on_info7 = {+perevalochnaya_lutiy_meet_to_zombied_done =dist_to_actor_ge(11) -pro_actor_replic_start_game} %+pro_actor_replic_start_game%
+gather_items_enabled = false
+corpse_detection_enabled = false
+combat_ignore_keep_when_attacked = true 
+combat_ignore_cond = true
+use_camp = true
+meet = meet@pb_shurup
+
+[remark@psy_back]
+anim = psy_pain
+target = path | pro_smart_terrain_1_1_lutiy_meet_to_actor_look, 0
+on_info = {+controller_quest_dead} animpoint@animpoint_1
+meet = no_meet
+combat_ignore_cond = true 
+combat_ignore_keep_when_attacked = true 
+gather_items_enabled = false
+corpse_detection_enabled = false
+invulnerable = true
+
+[meet@pb_shurup]:meet@korpys_stalker
+close_snd_hello = pb_shurup_meet
+close_snd_bye 	= pb_shurup_meet_bye
+close_snd_distance = 3
+meet_dialog = pb_shurup_start_dialog
+close_victim = actor
+allow_break = false
+
+;================================================
+
+[logic@perevalochnaya_baza_woundet_stalkers_animpoint_2]
+active = animpoint@animpoint_2
+level_spot = quest_npc
+prior = 80
+suitable = {=check_npc_name(pb_rezak)} true, false
+
+[animpoint@animpoint_2]
+cover_name = pro_sklad_animpoint_1
+avail_animations = animpoint_stay_wall
+on_info = {+pro_come_back_prostranstvenniy_puzir} %=release_npc%
+on_info2 = {+controller_spawn_end -controller_quest_dead} remark@psy_back_1
+gather_items_enabled = false
+corpse_detection_enabled = false
+combat_ignore_keep_when_attacked = true 
+combat_ignore_cond = true
+use_camp = true
+meet = meet@pb_rezak
+
+[remark@psy_back_1]
+anim = psy_pain
+target = path | pro_smart_terrain_1_1_lutiy_meet_to_actor_look, 0
+on_info = {+controller_quest_dead} animpoint@animpoint_2
+meet = no_meet
+combat_ignore_cond = true 
+combat_ignore_keep_when_attacked = true 
+gather_items_enabled = false
+corpse_detection_enabled = false
+invulnerable = true
+
+[meet@pb_rezak]:meet@korpys_stalker
+close_snd_hello = pb_rezak_meet
+close_snd_bye 	= pb_rezak_meet_bye
+close_snd_distance = 3
+close_victim = actor
+allow_break = false
+meet_dialog = pb_rezak_first_meet
+trade_enable = false
+
+;================================================
+
+[logic@perevalochnaya_baza_woundet_stalkers_walker_1]
+active = animpoint@markus_start_game
+level_spot = quest_npc
+prior = 80
+suitable = {=check_npc_name(pb_markus_novice)} true, false
+
+[animpoint@markus_start_game]
+cover_name = pro_markus_sit_normal_animpoint
+on_info = {+perevalochnaya_baza_quest_flash_dead} %=release_npc%
+on_info2 = {+pro_come_back_prostranstvenniy_puzir} %=release_npc%
+on_info3 = {+controller_spawn_end -controller_quest_dead} remark@psy_back_2
+gather_items_enabled = false
+corpse_detection_enabled = false
+combat_ignore_keep_when_attacked = true 
+combat_ignore_cond = true
+use_camp = false
+invulnerable = true
+meet = meet@pb_markus
+
+[remark@psy_back_2]
+anim = psy_pain
+target = path | pro_smart_terrain_1_1_lutiy_meet_to_actor_look, 0
+on_info = {+controller_quest_dead} animpoint@markus_start_game
+meet = no_meet
+combat_ignore_cond = true 
+combat_ignore_keep_when_attacked = true 
+gather_items_enabled = false
+corpse_detection_enabled = false
+invulnerable = true
+
+[meet@pb_markus]:meet@korpys_stalker
+close_snd_hello = pb_markus_meet
+close_snd_bye 	= pb_markus_meet_bye
+close_snd_distance = 3
+close_victim = actor
+allow_break = false
+meet_dialog = pb_markus_start_dialog
+trade_enable = false
+
+;================================================

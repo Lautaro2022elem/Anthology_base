@@ -1,0 +1,87 @@
+[_group]
+        effects_count                    = 9
+        flags                            = 0
+        timelimit                        = 15.000000
+        version                          = 3
+ 
+[effect_0000]
+        effect_name                      = hit_fx\effects\hit_impact_dust_ground_small
+        flags                            = 4
+        on_birth_child                   =
+        on_death_child                   =
+        on_play_child                    =
+        time0                            = 0.000000
+        time1                            = 0.000000
+ 
+[effect_0001]
+        effect_name                      = hit_fx\effects\hit_impact_dust_wood
+        flags                            = 4
+        on_birth_child                   =
+        on_death_child                   =
+        on_play_child                    =
+        time0                            = 0.000000
+        time1                            = 15.000000
+ 
+[effect_0002]
+        effect_name                      = hit_fx\effects\hit_impact_asphalt_base_linger
+        flags                            = 0
+        on_birth_child                   =
+        on_death_child                   =
+        on_play_child                    =
+        time0                            = 0.000000
+        time1                            = 0.000000
+ 
+[effect_0003]
+        effect_name                      = hit_fx\effects\hit_wood_inner
+        flags                            = 4
+        on_birth_child                   =
+        on_death_child                   =
+        on_play_child                    =
+        time0                            = 0.000000
+        time1                            = 0.000000
+ 
+[effect_0004]
+        effect_name                      = hit_fx\effects\hit_wood_outer
+        flags                            = 4
+        on_birth_child                   =
+        on_death_child                   =
+        on_play_child                    =
+        time0                            = 0.000000
+        time1                            = 0.000000
+ 
+[effect_0005]
+        effect_name                      = hit_fx\effects\hit_impact_wood_debris_small
+        flags                            = 4
+        on_birth_child                   =
+        on_death_child                   =
+        on_play_child                    =
+        time0                            = 0.000000
+        time1                            = 0.000000
+ 
+[effect_0006]
+        effect_name                      = hit_fx\effects\hit_impact_wood_debris_large
+        flags                            = 4
+        on_birth_child                   =
+        on_death_child                   =
+        on_play_child                    =
+        time0                            = 0.000000
+        time1                            = 0.000000
+ 
+[effect_0007]
+        effect_name                      = hit_fx\effects\hit_ground_center_column
+        flags                            = 4
+        on_birth_child                   =
+        on_death_child                   =
+        on_play_child                    =
+        time0                            = 0.000000
+        time1                            = 0.000000
+ 
+[effect_0008]
+        effect_name                      = hit_fx\effects\hit_ground_center_dirt
+        flags                            = 4
+        on_birth_child                   =
+        on_death_child                   =
+        on_play_child                    =
+        time0                            = 0.000000
+        time1                            = 0.000000
+ 

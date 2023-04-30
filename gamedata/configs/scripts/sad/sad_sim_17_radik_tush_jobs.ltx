@@ -1,0 +1,29 @@
+[logic@radik_tush_1]
+suitable = {=check_npc_name(tushkano_radik)} true
+monster_job = true
+prior = 250
+active = mob_home@1
+
+[logic@radik_tush_2]:logic@radik_tush_1
+[logic@radik_tush_3]:logic@radik_tush_1
+[logic@radik_tush_4]:logic@radik_tush_1
+[logic@radik_tush_5]:logic@radik_tush_1
+[logic@radik_tush_6]:logic@radik_tush_1
+[logic@radik_tush_7]:logic@radik_tush_1
+[logic@radik_tush_8]:logic@radik_tush_1
+
+[mob_home@1]
+path_home = radik_tushkan_spawn_1
+aggressive = false
+home_min_radius = 2
+home_max_radius = 3
+combat_ignore_cond = true
+friendly = true
+on_info = {=mob_was_hit} mob_home@2 %+sad_sim_17_tushkan_wake%
+on_info2 = {+sad_sim_17_tushkan_wake} mob_home@2
+
+[mob_home@2]
+path_home = radik_tushkan_home
+aggressive = true
+home_min_radius = 10
+home_max_radius = 30

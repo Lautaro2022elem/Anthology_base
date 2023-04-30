@@ -1,0 +1,17 @@
+[logic] 
+active = sr_idle@start 
+
+[sr_idle@start]
+on_info = {+spectrum_project_start +labx5_b1_borland_talking_1 -labx5_b1_main_quest_1_give} %=give_task(geonezis_labx5_main_quest_1) =pod_b38_main_quest_create_psionik +labx5_b1_main_quest_1_give% 
+on_info2 = {+spectrum_project_start =actor_in_zone(pod_b1_sound_zone_restr_1) +labx5_b1_borland_talking_1 -labx5_b1_sound_zone_restr_1_effects} %=pod_b38_main_quest_effect_1 +labx5_b1_sound_zone_restr_1_effects%
+on_info3 = {+spectrum_project_start +labx5_mod_npcs_spawner -labx5_b1_spawn_dead_body_1} %=spawn_corpse(labx5_a2_csky_dead_body_1 : labx5_b1_clear_sky_body_walk) +labx5_b1_spawn_dead_body_1%
+on_info4 = {+spectrum_project_start +labx5_b1_borland_talking_3 -labx5_b1_spawn_monster_1} sr_idle@spawn_mutant %=pod_b38_create_monster_1 +labx5_b1_spawn_monster_1%
+
+[sr_idle@spawn_mutant]
+on_info = {+labx5_b1_first_door_open -labx5_b1_give_dop_quest_pitanie_1} %=give_task(geonezis_labx5_quest_pitanie_1) +labx5_b1_give_dop_quest_pitanie_1%
+on_info2 = {+labx5_b1_first_door_open +labx5_a1_sound_zone_restr_1_effects -labx5_b1_lift_pitanie_give -labx5_b1_give_dop_quest_pitanie_2} %=give_task(geonezis_labx5_quest_pitanie_2) +labx5_b1_give_dop_quest_pitanie_2%
+on_info3 = {+labx5_b1_lift_pitanie_give -labx5_b1_spawn_monster_2} %=pod_a2_main_quest_create_mutant +labx5_b1_spawn_monster_2%
+on_info4 = {+labx5_b1_spawn_monster_2 -labx5_b1_borland_podmena_create} %=pod_a2_create_borland_podmena +labx5_b1_borland_podmena_create%
+on_info5 = {+labx5_b1_borland_create_monolith -labx5_b1_borland_monolith_zas_create} sr_idle@nil %=pod_a2_create_zas_monolith +labx5_b1_borland_monolith_zas_create%
+
+[sr_idle@nil] 

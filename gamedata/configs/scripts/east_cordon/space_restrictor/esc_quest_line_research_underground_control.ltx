@@ -1,0 +1,23 @@
+[logic]
+active = sr_idle
+
+[sr_idle]
+on_info = {+esc_quest_line_research_underground_start} sr_idle@scenario_autosave %=spawn_object(esc_trader_walker:esc_trader_walker_walk)%
+
+[sr_idle@scenario_autosave]
+on_timer = 100 | {-save_esc_quest_line_research_underground} %+save_esc_quest_line_research_underground =scenario_autosave(st_esc_quest_line_research_underground)%
+on_info = {+save_esc_quest_line_research_underground} sr_idle@1
+
+[sr_idle@1]
+on_info = sr_idle@2 %=create_squad(esc_squad_quest_zombied:esc_smart_terrain_underground_1)%
+
+[sr_idle@2]
+on_info = {+esc_quest_line_research_underground_chasovhik} sr_idle@3 %=spawn_object(esc_npc_watchmaker:esc_npc_watchmaker_spawn_home)%
+
+[sr_idle@3]
+on_info = {+esc_quest_line_research_underground_laba_go} sr_idle@timer %=run_postprocess(fade_in) =disable_ui =remove_item(esc_watchmaker_key_door) =spawn_object(esc_borland_lab:esc_borland_lab_spawn)%
+
+[sr_idle@timer]
+on_game_timer = 20 | sr_idle@nil %=teleport_actor(esc_quest_line_rhud_actor_walk:esc_quest_line_rhud_actor_look) =enable_ui%
+
+[sr_idle@nil]

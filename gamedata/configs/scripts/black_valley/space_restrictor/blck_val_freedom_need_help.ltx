@@ -1,0 +1,17 @@
+[logic]
+active = sr_idle@freedom_need_help
+
+[sr_idle@freedom_need_help]
+on_info = {+blck_val_freedom_need_help} sr_idle@start_timer
+
+[sr_idle@start_timer]
+on_game_timer = 15 | sr_timer
+
+[sr_timer]
+type = dec
+string = "Позвать на помощь"
+start_value = 120000
+on_value = 0 | sr_idle@nil %+blck_val_fredom_need_help_fail%
+on_info = {+blck_val_zasada_actor_in_hutor} sr_idle@nil
+
+[sr_idle@nil]

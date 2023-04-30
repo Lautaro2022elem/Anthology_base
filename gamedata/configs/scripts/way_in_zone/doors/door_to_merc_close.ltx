@@ -1,0 +1,40 @@
+[logic]
+active = ph_door@no_key
+
+[ph_door@no_key]
+locked = false
+closed = true
+snd_open_start = trader_door_locked
+on_use = {+uninvited_guests_gived_task} ph_door@closed %+wiz_mercs_base_cover_start =hero_thoughts_03%
+on_info = {+wiz_poslannik_krivogo_go_kill} ph_door@closed
+tip_open = tip_door_closed_key_required
+not_for_npc = true 
+
+[ph_door@closed]
+locked = false
+closed = true
+snd_open_start = metal_small_open
+snd_close_start = metal_small_close_start
+snd_close_stop = metal_small_close_stop
+on_use = {+uninvited_guests_complete} ph_door@open
+on_info = {-wiz_poslannik_krivogo_go_kill} ph_door@no_key
+tip_open = car_character_use
+not_for_npc = true 
+
+[ph_door@open]
+locked = false
+closed = false
+snd_open_start = metal_small_open
+snd_close_start = metal_small_close_start
+snd_close_stop = metal_small_close_stop
+on_use = ph_door@closed_regular
+not_for_npc = true 
+
+[ph_door@closed_regular]
+locked = false
+closed = true
+snd_open_start = metal_small_open
+snd_close_start = metal_small_close_start
+snd_close_stop = metal_small_close_stop
+on_use = ph_door@open
+not_for_npc = true 

@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="windows-1251" ?>
+
+
+<string_table>
+	<string id="ui_mcm_menu_dynmut">
+		<text>Динамичные мутанты</text>
+	</string>
+	<string id="ui_mcm_dynmut_title">
+		<text>Динамичные мутанты - Конфигурация</text>
+	</string>
+
+	<string id="ui_mcm_dynmut_max_pop">
+		<text>Популяция мутантов</text>
+	</string>
+	<string id="ui_mcm_dynmut_max_pop_desc">
+		<text>
+			Максимальное количество добавляемых мутантов (популяция мутантов) %c[pda_yellow][ночь] \n
+			%c[pda_yellow]•%c[0,160,220,220] Теоретическое максимальное число \n
+			%c[pda_yellow]•%c[0,160,220,220] Число умножается на множитель уровня, чтобы не перегружать маленькие уровни
+		</text>
+	</string>
+
+	<string id="ui_mcm_dynmut_day_mult">
+		<text>Дневной множитель</text>
+	</string>
+	<string id="ui_mcm_dynmut_day_mult_desc">
+		<text>
+			Множитель популяции мутантов в течение дня %c[pda_yellow][день] \n
+			%c[pda_yellow]•%c[0,160,220,220] Применяется только в дневное время \n
+			%c[pda_yellow]•%c[0,160,220,220] Уменьшается вдвое утром/вечером
+		</text>
+	</string>
+
+	<string id="ui_mcm_dynmut_enable_new">
+		<text>Новые мутанты</text>
+	</string>
+	<string id="ui_mcm_dynmut_enable_new_desc">
+		<text>Включить спавн новых типов мутантов</text>
+	</string>
+
+	<string id="ui_mcm_dynmut_enable_neutral">
+		<text>Нейтральные мутанты</text>
+	</string>
+	<string id="ui_mcm_dynmut_enable_neutral_desc">
+		<text>Включить спавн нейтральных мутантов</text>
+	</string>
+
+	<string id="ui_mcm_dynmut_no_random">
+		<text>Выключить случайный лут</text>
+	</string>
+	<string id="ui_mcm_dynmut_no_random_desc">
+		<text>Выключить случайный лут при разделке мутантов</text>
+	</string>
+</string_table>

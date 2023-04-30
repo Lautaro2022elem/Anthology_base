@@ -1,0 +1,241 @@
+<?xml version="1.0" encoding="windows-1251" standalone="yes" ?>
+<game_dialogs>
+    <dialog id="labx7_lutiy_prisoner_dialog">
+        <phrase_list>
+            <phrase id="0">
+                <text>labx7_lutiy_prisoner_dialog_0</text>
+                <next>1</next>
+            </phrase>
+            <phrase id="1">
+                <text>labx7_lutiy_prisoner_dialog_1</text>
+                <next>2</next>
+            </phrase>
+            <phrase id="2">
+                <text>labx7_lutiy_prisoner_dialog_2</text>
+                <action>dialogs_black_valley.change_actor_community_killer</action>
+                <next>3</next>
+            </phrase>
+            <phrase id="3">
+                <text>labx7_lutiy_prisoner_dialog_3</text>
+                <action>dialogs.break_dialog</action>
+                <action>dialogs_digger_stash.labx7_find_exit_to_labx7</action>
+                <give_info>labx7_actor_meet_from_lutiy_prisoner</give_info>
+            </phrase>
+        </phrase_list>
+    </dialog>
+    <dialog id="labx7_killer_tesak_dialog">
+        <phrase_list>
+            <phrase id="1">
+                <text>labx7_killer_tesak_dialog_1</text>
+                <next>2</next>
+            </phrase>
+            <phrase id="2">
+                <text>labx7_killer_tesak_dialog_2</text>
+                <next>3</next>
+            </phrase>
+            <phrase id="4">
+                <text>labx7_killer_tesak_dialog_4</text>
+                <next>5</next>
+            </phrase>
+            <phrase id="0">
+                <text>labx7_killer_tesak_dialog_0</text>
+                <next>1</next>
+            </phrase>
+            <phrase id="3">
+                <text>labx7_killer_tesak_dialog_3</text>
+                <next>4</next>
+            </phrase>
+            <phrase id="5">
+                <text>labx7_killer_tesak_dialog_5</text>
+                <action>dialogs.break_dialog</action>
+                <give_info>labx7_killer_tesak_dialog_done</give_info>
+            </phrase>
+        </phrase_list>
+    </dialog>
+    <dialog id="bar_zmeelov_digger_meet_start">
+        <phrase_list>
+            <phrase id="1">
+                <text>bar_zmeelov_digger_meet_start_1</text>
+                <next>2</next>
+            </phrase>
+            <phrase id="2">
+                <text>bar_zmeelov_digger_meet_start_2</text>
+                <next>3</next>
+            </phrase>
+            <phrase id="4">
+                <text>bar_zmeelov_digger_meet_start_4</text>
+                <next>5</next>
+            </phrase>
+            <phrase id="5">
+                <text>bar_zmeelov_digger_meet_start_5</text>
+                <next>6</next>
+            </phrase>
+            <phrase id="6">
+                <text>bar_zmeelov_digger_meet_start_6</text>
+                <next>7</next>
+            </phrase>
+            <phrase id="7">
+                <text>bar_zmeelov_digger_meet_start_7</text>
+                <next>8</next>
+            </phrase>
+            <phrase id="8">
+                <text>bar_zmeelov_digger_meet_start_8</text>
+                <next>9</next>
+            </phrase>
+            <phrase id="9">
+                <text>bar_zmeelov_digger_meet_start_9</text>
+                <next>10</next>
+            </phrase>
+            <phrase id="10">
+                <text>bar_zmeelov_digger_meet_start_10</text>
+                <next>11</next>
+            </phrase>
+            <phrase id="3">
+                <text>bar_zmeelov_digger_meet_start_3</text>
+                <next>4</next>
+            </phrase>
+            <phrase id="11">
+                <text>bar_zmeelov_digger_meet_start_11</text>
+                <action>dialogs.break_dialog</action>
+                <give_info>bar_zmeelov_come_to_lab</give_info>
+            </phrase>
+            <phrase id="0">
+                <text>bar_zmeelov_digger_meet_start_0</text>
+                <give_info>bar_give_info_meet_from_zmeelov</give_info>
+                <next>1</next>
+            </phrase>
+        </phrase_list>
+    </dialog>
+    <dialog id="bar_markus_meet_good_end">
+        <phrase_list>
+            <phrase id="1">
+                <text>bar_markus_meet_good_end_1</text>
+                <next>2</next>
+            </phrase>
+            <phrase id="2">
+                <text>bar_markus_meet_good_end_2</text>
+                <next>3</next>
+            </phrase>
+            <phrase id="3">
+                <text>bar_markus_meet_good_end_3</text>
+                <next>4</next>
+            </phrase>
+            <phrase id="4">
+                <text>bar_markus_meet_good_end_4</text>
+                <next>5</next>
+            </phrase>
+            <phrase id="5">
+                <text>bar_markus_meet_good_end_5</text>
+                <next>6</next>
+            </phrase>
+            <phrase id="6">
+                <text>bar_markus_meet_good_end_6</text>
+                <next>7</next>
+            </phrase>
+            <phrase id="7">
+                <text>bar_markus_meet_good_end_7</text>
+                <next>8</next>
+            </phrase>
+            <phrase id="8">
+                <text>bar_markus_meet_good_end_8</text>
+                <next>9</next>
+            </phrase>
+            <phrase id="9">
+                <text>bar_markus_meet_good_end_9</text>
+                <next>10</next>
+            </phrase>
+            <phrase id="10">
+                <text>bar_markus_meet_good_end_10</text>
+                <next>11</next>
+            </phrase>
+            <phrase id="11">
+                <text>bar_markus_meet_good_end_11</text>
+                <next>12</next>
+            </phrase>
+            <phrase id="12">
+                <text>bar_markus_meet_good_end_12</text>
+                <next>13</next>
+            </phrase>
+            <phrase id="13">
+                <text>bar_markus_meet_good_end_13</text>
+                <action>dialogs.break_dialog</action>
+                <give_info>bar_markus_dialog_good_end_done</give_info>
+                <give_info>bar_zver_hide_weapon</give_info>
+            </phrase>
+            <phrase id="0">
+                <text>bar_markus_meet_good_end_0</text>
+                <next>1</next>
+            </phrase>
+        </phrase_list>
+    </dialog>
+    <dialog id="bar_otshelnik_meet_to_bad_end_game">
+        <phrase_list>
+            <phrase id="15">
+                <text>bar_otshelnik_meet_to_bad_end_game_15</text>
+                <action>dialogs.break_dialog</action>
+                <give_info>bar_actor_meet_from_otshelnik_done</give_info>
+            </phrase>
+            <phrase id="6">
+                <text>bar_otshelnik_meet_to_bad_end_game_6</text>
+                <next>7</next>
+            </phrase>
+            <phrase id="7">
+                <text>bar_otshelnik_meet_to_bad_end_game_7</text>
+                <next>8</next>
+            </phrase>
+            <phrase id="8">
+                <text>bar_otshelnik_meet_to_bad_end_game_8</text>
+                <next>9</next>
+            </phrase>
+            <phrase id="9">
+                <text>bar_otshelnik_meet_to_bad_end_game_9</text>
+                <next>10</next>
+            </phrase>
+            <phrase id="11">
+                <text>bar_otshelnik_meet_to_bad_end_game_11</text>
+                <next>12</next>
+            </phrase>
+            <phrase id="14">
+                <text>bar_otshelnik_meet_to_bad_end_game_14</text>
+                <next>15</next>
+            </phrase>
+            <phrase id="13">
+                <text>bar_otshelnik_meet_to_bad_end_game_13</text>
+                <next>14</next>
+            </phrase>
+            <phrase id="5">
+                <text>bar_otshelnik_meet_to_bad_end_game_5</text>
+                <next>6</next>
+            </phrase>
+            <phrase id="10">
+                <text>bar_otshelnik_meet_to_bad_end_game_10</text>
+                <next>11</next>
+            </phrase>
+            <phrase id="12">
+                <text>bar_otshelnik_meet_to_bad_end_game_12</text>
+                <action>dialogs_digger_stash.bar_otshelnik_give_wpn_pmm</action>
+                <next>13</next>
+            </phrase>
+            <phrase id="0">
+                <text>bar_otshelnik_meet_to_bad_end_game_0</text>
+                <next>1</next>
+            </phrase>
+            <phrase id="1">
+                <text>bar_otshelnik_meet_to_bad_end_game_1</text>
+                <next>2</next>
+            </phrase>
+            <phrase id="2">
+                <text>bar_otshelnik_meet_to_bad_end_game_2</text>
+                <next>3</next>
+            </phrase>
+            <phrase id="3">
+                <text>bar_otshelnik_meet_to_bad_end_game_3</text>
+                <next>4</next>
+            </phrase>
+            <phrase id="4">
+                <text>bar_otshelnik_meet_to_bad_end_game_4</text>
+                <next>5</next>
+            </phrase>
+        </phrase_list>
+    </dialog>
+</game_dialogs>

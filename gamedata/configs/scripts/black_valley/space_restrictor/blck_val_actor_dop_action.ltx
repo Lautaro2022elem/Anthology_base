@@ -1,0 +1,32 @@
+[logic]
+active = sr_idle@dop_action_vihr_start
+
+[sr_idle@dop_action_vihr_start]
+on_info = {+blck_val_quest_wpn_vihr_search_give} sr_idle@dop_action_vihr_give
+
+[sr_idle@dop_action_vihr_give]
+on_timer = 500 | sr_idle@dop_action_vihr_complete_info %=blck_val_vihr_dop_action_quest%
+
+[sr_idle@dop_action_vihr_complete_info]
+on_info = {+blck_val_vihr_meet_1 +blck_val_vihr_meet_2 +blck_val_vihr_meet_3 +blck_val_vihr_meet_4 +blck_val_vihr_meet_5} sr_idle@dop_action_vihr_complete %+blck_val_vihr_meet_all_done%
+
+[sr_idle@dop_action_vihr_complete]
+on_timer = 500 | sr_idle@dop_action_start %=blck_val_vihr_dop_action_complete%
+
+[sr_idle@dop_action_start]
+on_info = {+blck_val_stavrid_dop_action_give_info} sr_idle@dop_action_give
+
+[sr_idle@dop_action_give]
+on_timer = 500 | sr_idle@dop_action_complete_or_fail %=blck_val_stavrid_dop_action_quest%
+
+[sr_idle@dop_action_complete_or_fail]
+on_info = {+blck_val_dialog_stavrid_dop_action_done -blck_val_info_give_key_bandit_shmiga} sr_idle@dop_action_complete
+on_info2 = {+blck_val_info_give_key_bandit_shmiga} sr_idle@dop_action_fail
+
+[sr_idle@dop_action_complete]
+on_timer = 500 | sr_idle@nil %=blck_val_stavrid_dop_action_complete%
+
+[sr_idle@dop_action_fail]
+on_timer = 500 | sr_idle@nil %=blck_val_stavrid_dop_action_fail%
+
+[sr_idle@nil]

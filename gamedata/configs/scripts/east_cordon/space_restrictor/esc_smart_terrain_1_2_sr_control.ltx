@@ -1,0 +1,10 @@
+[logic]
+active = sr_idle
+ 
+[sr_idle]
+on_info  = {+spectrum_project_start +esc_wolf_quest_trimming_dialog_and -esc_squad_quest_trimming_spawn} sr_idle@2 %=create_squad(esc_squad_quest_trimming:esc_smart_terrain_1_2) +esc_squad_quest_trimming_spawn%
+
+[sr_idle@2]
+on_info = {+esc_klin_quest_trimming_dialog_and} sr_idle@nil %=create_squad(esc_squad_quest_monster_1:esc_smart_terrain_3_8) =create_squad(esc_squad_quest_monster_2:esc_smart_terrain_3_9)%
+
+[sr_idle@nil]

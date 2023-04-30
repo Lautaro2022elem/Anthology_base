@@ -1,0 +1,13 @@
+[logic]
+active = sr_idle
+
+[sr_idle]
+on_info = {+spectrum_project_start +esc_quest_work_for_beginner_poisk} sr_idle@12hours
+
+[sr_idle@12hours]
+on_game_timer = 22000 | sr_idle@1
+
+[sr_idle@1]
+on_info = {-esc_quest_work_for_beginner_complite} sr_idle@nil %+esc_quest_work_for_beginner_fail%
+
+[sr_idle@nil]

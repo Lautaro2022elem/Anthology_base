@@ -1,0 +1,93 @@
+<?xml version="1.0" encoding="windows-1251" ?>
+<string_table>
+    <string id="gar_a2_bagretcev_start_dialog_talking_0">
+        <text>Стоять, кто такой!? Что там делал? Врать не советую.</text>
+    </string>
+    <string id="gar_a2_bagretcev_start_dialog_talking_1">
+        <text>Меня Саваном звать, вольный сталкер. А со мной был напарник -  Борланд, он раньше меня вылез. А ход этот в лабораторию Х5 нам Скидан показал, торговец с Кордона.</text>
+    </string>
+    <string id="gar_a2_bagretcev_start_dialog_talking_2">
+        <text>Дебилы вы оба два. И Скидан ваш - тоже. У напарника твоего сильнейшее отравление. Видно, газом надышался. И не факт, что ты тоже не хватанул. Там же газ ядовитый, чего вы туда полезли, придурки?</text>
+    </string>
+    <string id="gar_a2_bagretcev_start_dialog_talking_3">
+        <text>Не такой уж и ядовитый, раз мы живы до сих пор.</text>
+    </string>
+    <string id="gar_a2_bagretcev_start_dialog_talking_4">
+        <text>Если проживёте хотя бы до завтра - то вам охренительно повезло. Никто не знает, что там за газ, но каждый раз загибались диггеры от него. Выберутся вроде живыми наружу, а через часок, глядишь, помирают. В страшных муках.</text>
+    </string>
+	<string id="gar_a2_bagretcev_start_dialog_talking_5">
+        <text>Неужто все померли?</text>
+    </string>
+	<string id="gar_a2_bagretcev_start_dialog_talking_6">
+        <text>Один, вроде, жив остался, но как ему это удалось никто не знает. Если успеешь его разыскать, то сможешь помочь и себе и дружку своему Борланду.</text>
+    </string>
+	 <string id="gar_a2_bagretcev_start_dialog_talking_7">
+        <text>А где его отыскать этого выжившего диггера?</text>
+    </string>
+	 <string id="gar_a2_bagretcev_start_dialog_talking_8">
+        <text>А хрен его знает. Тут где-то. На Свалке.</text>
+    </string>
+	 <string id="gar_a2_bagretcev_start_dialog_talking_9">
+        <text>Бывай.</text>
+    </string>
+	
+	<string id="gar_a2_borland_start_dialog_talking_101">
+        <text>Что-то хреново мне, Саван. Видать, мы какой-то особой гадости в подземке надышались. Я уже две армейские аптечки целиком себе вкатил, толку - ноль. Мне всё хуже и хуже.</text>
+    </string>
+    <string id="gar_a2_borland_start_dialog_talking_0">
+        <text>Знаю, Борланд, мне тоже хреновасто. Но долговец сказал, что есть диггер, который справлялся с этим отравлением. Ты, случаем, не в курсе про это? И где его на Свалке отыскать?</text>
+    </string>
+	<string id="gar_a2_borland_start_dialog_talking_1">
+        <text>Слыхал, тут неподалеку мусорная куча есть, возле емкостей. Так вот, слышал, что где-то в том районе он и обитает. Многие пытались, но так никто и не нашел его берлогу.</text>
+    </string>
+    <string id="gar_a2_borland_start_dialog_talking_2">
+        <text>Выбора у нас не густо. Если идти не можешь, то я сам его отыщу.</text>
+    </string>
+    <string id="gar_a2_borland_start_dialog_talking_3">
+        <text>Давай, на тебя вся надежда. Только времени не осталось, чую, сожрет меня Зона. Прощай, может не увидимся больше.</text>
+    </string>
+    <string id="gar_a2_borland_start_dialog_talking_4">
+        <text>Держись, я мигом.</text>
+    </string>
+
+    <string id="gar_a2_borland_second_dialog_talking_0">
+        <text>Саван, я знал, что ты сдержишь слово.</text>
+    </string>
+    <string id="gar_a2_borland_second_dialog_talking_1">
+        <text>Порядок, Борланд, вот антидот.</text>
+    </string>
+    <string id="gar_a2_borland_second_dialog_talking_2">
+        <text>Спасиб.</text>
+    </string>
+    <string id="gar_a2_borland_second_dialog_talking_3">
+        <text>Приходи в себя, а я пока потолкую с местным начальством.</text>
+    </string>	
+	
+	<string id="gar_a2_bagretcev_second_dialog_talking_00">
+        <text>Чуешь, Саван? Надвигается выброс небывалой силы. Супер-выброс. Ученые прислали предупреждение. Спрятаться от такого можно только в подземельях Бара. Если не хотите сдохнуть, то следуйте за нами на Бар в укрытие. Решай сейчас. Если нет, то мы закрываем переход Свалка-Бар, что бы мутанты за нами не ломанулись. Тут, на Свалке, не выживет никто.</text>
+    </string>
+	<string id="gar_a2_bagretcev_second_dialog_talking_0">
+        <text>Только в Баре можно выжить? Точно?</text>
+    </string>
+	<string id="gar_a2_bagretcev_second_dialog_talking_1">
+        <text>Такими вещами не шутят. Если ты заметил, Свалка уже опустела. Все, кому жизнь дорога, уже эвакуировались.</text>
+    </string>
+	<string id="gar_a2_bagretcev_second_dialog_talking_2">
+        <text>А до Бара далеко отсюда? Успеем? Я дороги-то не знаю, первый раз тут. Борланд, напарник мой, наверное знает дорогу...</text>
+    </string>
+	<string id="gar_a2_bagretcev_second_dialog_talking_3">
+        <text>Некогда разговоры разговаривать. Датчики уже зашкаливает. Решай: ты с нами?</text>
+    </string>
+	<string id="gar_a2_bagretcev_second_dialog_talking_4">
+        <text>Да.</text>
+    </string>
+	
+	
+	<string id="gar_a2_dolg_guard_dialog_0">
+        <text>Проходите быстрее, выброс вот-вот начнется! Мы дождемся еще одного квада и следом за вами. Короче, по дороге всё время и бегом. Вперёд!</text>
+    </string>
+	<string id="gar_a2_dolg_guard_dialog_1">
+        <text>Удачи.</text>
+    </string>
+    
+</string_table>

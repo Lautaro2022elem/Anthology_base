@@ -1,0 +1,19 @@
+[logic]
+active = sr_idle@cut_scene_teleport
+
+[sr_idle@cut_scene_teleport]
+on_info = {+pro_soldier_oleynik_eat_medkit} sr_idle@teleport_actor %=RavenMemmoryStart =run_postprocess(black:2525:true) +pro_soldier_teleport_to_base%
+
+[sr_idle@teleport_actor]
+on_timer = 2000 | sr_idle@stop_postprocess %=teleport_actor(actor_skiptime_to_base_walk:actor_skiptime_to_base_look)%
+
+[sr_idle@stop_postprocess]
+on_timer = 2000 | sr_idle@enable_ui %=stop_postprocess(2525)%
+
+[sr_idle@enable_ui]
+on_timer = 100 | sr_idle@give_info %=enable_ui%
+
+[sr_idle@give_info]
+on_timer = 100 | sr_idle@nil %+pro_soldier_in_base_way%
+
+[sr_idle@nil]

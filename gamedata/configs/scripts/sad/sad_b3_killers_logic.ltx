@@ -1,0 +1,29 @@
+[logic]
+active = sr_idle@10
+
+[sr_idle@10]
+on_info = {=actor_in_zone(sad_b3_sr_assault)} %+sad_b3_killers_awake%
+on_info2 = {+sad_b3_killers_awake} sr_idle@20 %=set_counter(sad_b3_actor_enemies_kill:0)%
+
+[sr_idle@20]
+on_info = {!squad_exist(sad_b3_killer_a_squad)} sr_idle@30
+
+[sr_idle@30]
+on_info = {!squad_exist(sad_b3_killer_b_squad)} sr_idle@40
+
+[sr_idle@40]
+on_info = {!squad_exist(sad_b3_killer_c_squad)} sr_idle@50
+
+[sr_idle@50]
+on_info = {!squad_exist(sad_b3_killer_d_squad)} sr_idle@60 %+sad_b3_killers_gone%
+
+[sr_idle@60]
+on_info = {=counter_greater(sad_b3_actor_enemies_kill:10)} sr_idle@70 %+sad_b3_actor_kill_more_6%
+on_info2 = {=counter_greater(sad_b3_actor_enemies_kill:2)} sr_idle@70 %+sad_b3_actor_kill_more_2%
+on_info3 = {=counter_greater(sad_b3_actor_enemies_kill:0)} sr_idle@70 %+sad_b3_actor_kill_more_0%
+on_info4 = {=counter_equal(sad_b3_actor_enemies_kill:0)} sr_idle@70 %+sad_b3_actor_kill_zero%
+
+[sr_idle@70]
+on_info = sr_idle@nil
+
+[sr_idle@nil]

@@ -1,0 +1,10 @@
+[logic]
+active = sr_idle
+
+[sr_idle]
+;on_info = sr_idle@2 %+city_TEST +city_army_start_remove ++city_npc_army_friend +city_npc_army_base_release%
+
+[sr_idle@2]
+on_game_timer = 20 | sr_idle@nil %=game_credits%
+
+[sr_idle@nil]

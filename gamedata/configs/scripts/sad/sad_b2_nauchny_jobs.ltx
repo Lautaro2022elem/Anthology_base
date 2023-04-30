@@ -1,0 +1,104 @@
+[walker@def]
+gather_items_enabled = false
+help_wounded_enabled = false
+corpse_detection_enabled = false
+on_info = {=actor_enemy} remark@enemy %+sad_actor_enemy_b2 +sad_final_task_enemy%, {=health_le(0.8)} %=restore_health%
+combat_ignore_cond = {=is_enemy_actor} true, {=enemy_in_zone(sad_b2_surge_hide)} false, true
+wounded = wounded
+
+[wounded]
+hp_state 		= 0|wounded_heavy@help_heavy
+hp_state_see 	= 0|wounded_heavy@help_heavy
+hp_victim 		= 0|nil
+hp_fight 		= 0|false
+hp_cover		= 0|false
+
+[remark@enemy]
+wounded = wounded
+
+[meet]
+close_snd_hello = nil
+close_snd_bye   = nil
+close_distance  = 0
+close_victim    = actor
+close_anim 		= nil
+far_anim 		= nil
+far_victim 		= nil
+far_distance 	= 0
+far_snd 		= nil
+abuse 			= false
+meet_on_talking = false
+use 			= {=actor_enemy} false, true
+allow_break 	= false
+trade_enable	= false
+
+; ------------------------------------------------------------------------------------------------------------------------------- 
+[logic@nauchny_1]
+suitable = {=check_npc_name(sad_ucheny_1)} true
+active = animpoint@1
+prior = 300
+
+[animpoint@1]:walker@def
+cover_name = sad_b2_nauchny_place_3
+reach_movement = run
+meet = meet
+
+; ------------------------------------------------------------------------------------------------------------------------------- 
+[logic@nauchny_2]
+suitable = {=check_npc_name(sad_ucheny_2)} true
+active = animpoint@2
+prior = 290
+
+[animpoint@2]:walker@def
+cover_name = sad_b2_nauchny_place_2
+reach_movement = run
+meet = no_meet
+
+; ------------------------------------------------------------------------------------------------------------------------------- 
+[logic@nauchny_3]
+suitable = {=check_npc_name(sad_ucheny_3)} true
+active = animpoint@3
+prior = 280
+
+[animpoint@3]:walker@def
+cover_name = sad_b2_nauchny_place_1
+meet = no_meet
+on_game_timer = 900 | walker@3
+
+[walker@3]:walker@def
+path_walk = tushkano_walk
+path_look = tushkano_look
+on_game_timer = 300 | animpoint@3
+
+
+; ------------------------------------------------------------------------------------------------------------------------------- 
+[logic@helper_1]
+suitable = {=target_squad_name(sad_final_ucheny_squad) =check_npc_name(sim_default_stalker)} true
+active = animpoint@4
+prior = 270
+
+[animpoint@4]:walker@def
+cover_name = sad_b2_nauchny_helper_3
+meet = no_meet
+
+; ------------------------------------------------------------------------------------------------------------------------------- 
+[logic@helper_2]
+suitable = {=target_squad_name(sad_final_ucheny_squad) =check_npc_name(sim_default_stalker)} true
+active = walker@5
+prior = 270
+
+[walker@5]:walker@def
+path_walk = nauchny_helper_1_walk
+path_look = nauchny_helper_1_look
+meet = no_meet
+
+; ------------------------------------------------------------------------------------------------------------------------------- 
+[logic@helper_3]
+suitable = {=target_squad_name(sad_final_ucheny_squad) =check_npc_name(sim_default_stalker)} true
+active = walker@6
+prior = 270
+
+[walker@6]:walker@def
+path_walk = nauchny_helper_2_walk
+path_look = nauchny_helper_2_look
+meet = no_meet

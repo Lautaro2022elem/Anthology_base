@@ -1,0 +1,16 @@
+[logic]
+active = sr_no_weapon
+
+[sr_idle@wait]
+on_actor_inside = sr_idle@check %=sad_set_new_weather(indoor_ambient)%
+
+[sr_idle@check]
+on_actor_outside = sr_idle@wait %=sad_restore_weather%
+on_info = {!actor_has_weapon} sr_no_weapon, {=actor_in_zone(sad_atr_sr_light)} sr_no_weapon
+on_game_timer = 600 | sr_idle@check %=sad_refresh_weather(indoor_ambient)%
+
+[sr_no_weapon]
+on_actor_outside = sr_idle@wait %=sad_restore_weather%
+on_game_timer = 600 | sr_no_weapon %=sad_refresh_weather(indoor_ambient)%
+
+[sr_idle@nil]

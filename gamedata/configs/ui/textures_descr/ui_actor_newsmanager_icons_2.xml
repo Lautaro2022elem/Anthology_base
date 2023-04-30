@@ -1,0 +1,44 @@
+<w>
+    <file name="ui\ui_actor_newsmanager_icons_2">
+
+        <!-- sad_newsmanager_icons -->
+	<texture id="ui_inGame2_serdce_oazisa" x="415" y="0" width="83" height="47" />
+	<texture id="ui_inGame2_nayti_mutnogo" x="415" y="47" width="83" height="47" />
+	<texture id="ui_inGame2_fleshka" x="415" y="94" width="83" height="47" />
+	<texture id="ui_inGame2_posilka" x="415" y="141" width="83" height="47" />
+	<texture id="ui_inGame2_ataka_lagerya_naemnikov" x="415" y="188" width="83" height="47" />
+	<texture id="ui_inGame2_kombez_naemnika" x="415" y="235" width="83" height="47" />
+	<texture id="ui_inGame2_kompas_i_mickroshema" x="415" y="282" width="83" height="47" />
+	<texture id="ui_inGame2_ubit_mutantov" x="415" y="329" width="83" height="47" />
+	<texture id="ui_inGame2_ubit_mutnogo" x="415" y="376" width="83" height="47" />
+	<texture id="ui_inGame2_vernut_yashik" x="415" y="423" width="83" height="47" />
+	<texture id="ui_inGame2_vernut_orujie" x="415" y="470" width="83" height="47" />
+	<texture id="ui_inGame2_pogovorit_s_radikom" x="415" y="517" width="83" height="47" />	
+	<texture id="ui_inGame2_ataka_lagerya_kovboya" x="415" y="564" width="83" height="47" />	
+
+        <!-- sv_newsmanager_icons -->
+		<texture id="ui_inGame2_general_channel" x="415" y="846" width="83" height="47" />
+		<texture id="ui_inGame2_bandit_channel" x="415" y="893" width="83" height="47" />
+		<texture id="ui_inGame2_killer_channel" x="415" y="940" width="83" height="47" />
+		<texture id="ui_iconsTotal_quest_the_first_penny" x="498" y="94" width="83" height="47" />
+		<texture id="ui_iconsTotal_quest_gopstop" x="498" y="141" width="83" height="47" />
+		<texture id="ui_iconsTotal_quest_work_for_beginner" x="498" y="188" width="83" height="47" />
+		<texture id="ui_iconsTotal_quest_trimming" x="498" y="235" width="83" height="47" />
+		<texture id="ui_iconsTotal_quest_trifling_matter" x="498" y="282" width="83" height="47" />
+		<texture id="ui_iconsTotal_quest_insurance" x="498" y="329" width="83" height="47" />
+		<texture id="ui_iconsTotal_quest_hunting" x="498" y="376" width="83" height="47" />
+		<texture id="ui_iconsTotal_quest_serious_business" x="498" y="423" width="83" height="47" />
+		<texture id="ui_iconsTotal_quest_dangerous_business" x="498" y="470" width="83" height="47" />
+		<texture id="ui_iconsTotal_quest_criminal_business" x="498" y="517" width="83" height="47" />
+		<texture id="ui_iconsTotal_quest_night_hunting" x="498" y="564" width="83" height="47" />
+		<texture id="ui_inGame2_quest_insurance" x="498" y="611" width="83" height="47" />
+		<texture id="ui_iconsTotal_quest_conductor" x="166" y="423" width="83" height="47" />
+		<texture id="ui_iconsTotal_quest_shadowing" x="83" y="94" width="83" height="47" />
+		
+		<texture id="ui_inGame2_bar_expectation" x="498" y="47" width="83" height="47" />
+		<texture id="ui_inGame2_bar_house_in_the_swamp" x="498" y="0" width="83" height="47" />
+		<texture id="ui_iconsTotal_quest_army_contract_1" x="166" y="0" width="83" height="47" />
+		<texture id="ui_iconsTotal_quest_army_contract_2" x="166" y="376" width="83" height="47" />
+		<texture id="ui_iconsTotal_quest_fighting_for_territory" x="249" y="141" width="83" height="47" />
+   </file>
+</w>

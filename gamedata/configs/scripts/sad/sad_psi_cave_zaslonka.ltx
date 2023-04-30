@@ -1,0 +1,10 @@
+[logic]
+active = ph_idle@wait
+
+[ph_idle@wait]
+on_info = {+sad_b3_trader_give_task} ph_idle@hit
+
+[ph_idle@hit]
+on_info = {=story_object_exist(sad_psi_cave_zaslonka)} ph_idle@nil %=force_obj(sad_psi_cave_zaslonka) =destroy_object%
+
+[ph_idle@nil]

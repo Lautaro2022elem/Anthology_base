@@ -1,0 +1,6 @@
+[logic]
+active = sr_idle@spawn_ghost
+
+[sr_idle@spawn_ghost]
+on_info = {=zat_b7_is_night +pro_markus_meet_from_shell_done -pb_ghost_podval_spawn_end -pro_zver_drink_vodka_quest} %=spawn_object(pb_ghost_podval:pb_ghost_podval_spawn) +pb_ghost_podval_spawn_end%
+on_info2 = {=is_day +pb_ghost_podval_spawn_end} %-pb_ghost_podval_spawn_end -pb_actor_hit_ghost_podval%

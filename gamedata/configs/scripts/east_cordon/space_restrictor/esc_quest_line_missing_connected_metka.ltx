@@ -1,0 +1,7 @@
+[logic]
+active = sr_idle
+
+[sr_idle]
+on_actor_inside = {+spectrum_project_start +esc_quest_line_patogen_meet_dialog_and} sr_idle@nil %=remove_squad(esc_squad_monster_5) +esc_quest_line_missing_connected_watch =spawn_object(esc_freedom_plen:esc_freedom_plen_walk_1) =spawn_object(esc_npc_shvabroid:esc_npc_shvabroid_spawn) =spawn_object(esc_npc_freend_shvabroid_1:esc_npc_freend_shvabroid_spawn) =spawn_object(esc_npc_freend_shvabroid_2:esc_npc_freend_shvabroid_spawn) =spawn_corpse(esc_trup_alpinist:esc_trup_alpinist_spawn)%
+
+[sr_idle@nil]

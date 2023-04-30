@@ -1,0 +1,13 @@
+[logic]
+active = move@killer_walk
+on_death = death
+
+[death]
+on_info = %+labx5_a2_monolith_default_8_death%
+
+[move@killer_walk]
+move_dest_number = 6540
+move_look_vertex = 8060
+move_state_when_center = hide
+move_state_when_move = assault
+on_info          = {+labx5_a1_dop_zone_restr_effects_2} nil %=release_npc%

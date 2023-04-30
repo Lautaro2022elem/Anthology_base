@@ -1,0 +1,65 @@
+; general section
+
+[walker@gen]
+meet = no_meet
+use_camp = false
+combat_ignore_cond = true
+combat_ignore_keep_when_attacked = true
+invulnerable = true
+gather_items_enabled = false
+help_wounded_enabled = false
+corpse_detection_enabled = false
+
+; work section
+
+[logic]
+active = walker@1
+
+[walker@1]:walker@gen
+path_walk = sad_b4_cs_actor_place_1
+path_look = sad_b4_radik_inside_jail_look
+def_state_moving = walk_noweap
+def_state_standing = wait_na
+on_info = {+sad_b4_radik_squad_dead} walker@3 %=teleport_npc(sad_b4_radik_inside_jail_walk_start)%
+on_info2 = {+sad_fedor_killed_by_radik} walker@2 %=teleport_npc(sad_b4_cs_actor_place_2)%
+
+[walker@2]:walker@gen
+path_walk = sad_b4_cs_actor_place_2
+path_look = sad_b4_radik_inside_jail_look
+def_state_moving = walk_noweap
+def_state_standing = wait_na
+
+; ---------------------------
+[walker@3]:walker@gen
+path_walk = sad_b4_radik_inside_jail_walk_start
+path_look = sad_b4_radik_inside_jail_look
+def_state_moving = walk_noweap
+def_state_standing = wait_na
+on_info = {+sad_b4_cutscene_start} walker@4
+
+[walker@4]:walker@gen
+path_walk = sad_b4_radik_inside_jail_walk
+path_look = sad_b4_radik_inside_jail_look
+def_state_moving = walk_noweap
+def_state_standing = sit
+on_signal = radik_inside_reached | remark@5
+
+[remark@5]:walker@gen
+anim = sit
+target = path | sad_b4_radik_inside_jail_look, 0
+on_timer = 500 | remark@6 %=play_sound(sad_b4_radik_phrase_1)%
+
+[remark@6]:walker@gen
+anim = sit
+target = path | sad_b4_radik_inside_jail_look, 0
+on_signal = sound_end | remark@7 %+sad_b4_cs_radik_sound_end%
+
+[remark@7]:walker@gen
+anim = sit
+target = path | sad_b4_radik_inside_jail_look, 0
+on_info = {+sad_b4_cs_fedor_sound_end} animpoint@8 %=sad_reset_animation%
+
+[animpoint@8]:walker@gen
+cover_name = sad_b4_cs_radik_kill_fedor_place
+avail_animations = sad_radik_kill_fedor
+use_camp = false

@@ -1,0 +1,42 @@
+;=========meet_stalker_korpys========
+[meet@korpys_stalker]
+close_anim 		= nil
+close_victim 	= nil
+far_anim 		= nil
+far_victim 		= nil
+close_distance 	= 0
+far_distance 	= 0
+use = {=actor_enemy} false, {=dist_to_actor_le(3)} true, false
+snd_on_use = {!dist_to_actor_le(3)} nil
+meet_on_talking = false
+;==================================
+
+[logic]
+active = remark@wait_actor
+suitable = {=check_npc_name(esc_merc_sniper_enemy)} true, false
+prior = 250
+
+[remark@wait_actor]
+anim = threat_na
+target = story | actor
+on_info = {+esc_trader_first_quest_dialog_done} %=actor_enemy%
+on_info2 = {=dist_to_actor_le(6)} remark@shoot_to_actor
+on_info3 = {+esc_merc_sniper_enemy_shoot_to_actor} remark@shoot_to_actor
+combat_ignore_cond = true
+combat_ignore_keep_when_attacked = true
+invulnerable = false
+gather_items_enabled = false
+help_wounded_enabled = false
+corpse_detection_enabled = false
+meet = no_meet
+
+[remark@shoot_to_actor]
+anim = threat_sniper_fire
+target = story | actor
+combat_ignore_cond = true
+combat_ignore_keep_when_attacked = true
+invulnerable = false
+gather_items_enabled = false
+help_wounded_enabled = false
+corpse_detection_enabled = false
+meet = no_meet

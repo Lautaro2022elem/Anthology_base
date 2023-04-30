@@ -1,0 +1,61 @@
+[logic]
+active = walker
+on_death = death
+on_hit = hit
+
+[walker]
+path_walk = esc_nps_soer_1_walk
+def_state_moving = run
+on_info = {-esc_quest_shadowing_shaman =dist_to_actor_le(15)} walker@run %+esc_quest_shadowing_fail%
+on_info2 = {-esc_quest_shadowing_shaman =dist_to_actor_ge(100)} %=release_npc +esc_quest_shadowing_fail%
+on_signal = esc_soer_shron| {-esc_soer_shron} walker@shron %+esc_soer_shron%
+meet = no_meet
+
+[walker@shron]
+path_walk = esc_nps_soer_shron_walk
+path_look = esc_nps_soer_shron_look
+def_state_standing = dynamite
+on_info = {=dist_to_actor_le(3)} remark@dialog 
+on_info2 = {-esc_quest_shadowing_shaman =dist_to_actor_ge(100)} %=release_npc +esc_quest_shadowing_fail%
+meet = no_meet
+
+[walker@run]
+path_walk = esc_nps_soer_2_walk
+path_look = esc_nps_soer_2_look
+;;;on_info = {+esc_quest_shadowing_complite} %=release_npc%
+;;;on_info2 = {=dist_to_actor_ge(100)} %=release_npc%
+on_info = {=dist_to_actor_ge(100)} %=release_npc%
+def_state_moving = sprint
+def_state_standing = sit
+gather_items_enabled = false
+corpse_detection_enabled = false
+
+[remark@dialog]
+anim = guard_na
+target = story | actor
+meet = meet@dialog
+on_info = {+esc_quest_shadowing_soer_dialog_and} walker@run 
+on_info2 = {-esc_quest_shadowing_soer_enemy_set +esc_quest_shadowing_soer_enemy} %=actor_enemy +esc_quest_shadowing_soer_enemy_set% 
+
+[meet]
+use				= {=actor_enemy} false, true
+allow_break		= false
+
+[meet@dialog]
+abuse           = false
+close_anim 		= nil
+far_anim 		= nil
+far_victim 		= nil
+close_distance  = 0
+far_distance 	= 0
+close_victim = actor
+use = {!actor_enemy =dist_to_actor_le(1)} self, true
+allow_break = false
+meet_dialog = esc_quest_shadowing_soer_dialog
+trade_enable = false
+
+[death]
+on_info = {-esc_quest_shadowing_shaman} %+esc_nps_soer_dead +esc_quest_shadowing_fail%
+
+[hit]
+on_info = {-esc_quest_shadowing_shaman} %+esc_nps_soer_hit +esc_quest_shadowing_fail%

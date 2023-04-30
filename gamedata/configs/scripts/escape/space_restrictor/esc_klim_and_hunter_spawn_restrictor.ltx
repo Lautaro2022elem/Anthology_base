@@ -1,0 +1,19 @@
+[logic]
+active = sr_idle@radio_on
+
+[sr_idle@radio_on]
+on_info = {+esc_quest_trader_radio_restr_1} sr_idle@trader_meet_klim
+
+[sr_idle@trader_meet_klim]
+on_timer = 3500 | sr_idle@trader_meet_klim_1 %=esc_trader_send_new_quest_sms_1%
+
+[sr_idle@trader_meet_klim_1]
+on_timer = 15000 | sr_idle@trader_meet_klim_2 %=esc_trader_send_new_quest_sms_2%
+
+[sr_idle@trader_meet_klim_2]
+on_timer = 9500 | sr_idle@spawn_klim_and_hunter %+esc_quest_spawn_klim_and_hunter +esc_quest_trader_talk_to_flash%
+
+[sr_idle@spawn_klim_and_hunter]
+on_info = {+esc_quest_spawn_klim_and_hunter} sr_idle@nil %=spawn_object(esc_klim:esc_klim_dead_spawn) =spawn_object(esc_npc_wood_goblin:esc_hunter_see_trup_walk)%
+
+[sr_idle@nil]

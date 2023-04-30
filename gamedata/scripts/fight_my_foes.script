@@ -1,0 +1,62 @@
+--[[
+fight_my_foes.script:
+- Companions hate every enemy that is your enemy, and viceversa. //
+  They will fight your foes with you, regardless of their faction, and will keep resentment towards them even after stopping being your companions. //
+22/04/2022
+This work is licensed under a Creative Commons Attribution-NonCommercial-ShareAlike 3.0 Unported License
+Author: Nastor
+
+Based on
+he_is_with_me.script:
+-Companion aggro fix Script
+-28/11/2020
+-This work is licensed under a Creative Commons Attribution-NonCommercial-ShareAlike 3.0 Unported License
+-Author: RavenAscendant
+--]]
+
+
+local enable_fight_my_foes = true
+
+
+function fightfoes(obj,enemy,flags)
+    if not enable_fight_my_foes then
+        return --MCM enable check
+    end
+    badConditions = enemy:id() ~= db.actor:id() or not(IsStalker(obj) and IsStalker(enemy)) or obj:has_info("npcx_is_companion") -- Various checks to make sure this is called when an enemy of player is evaluating player itself (us), when obj isn't a companion and when both entities are stalkers
+    if badConditions then
+        return
+    end
+    if obj:relation(enemy) >= game_object.enemy then
+        for id,squad in pairs(axr_companions.companion_squads) do
+            if (squad and squad.commander_id) then
+                for k in squad:squad_members() do
+                    if k then
+                        j = level.object_by_id(k.id)
+                        if(j ~= nil) then
+                            j:force_set_goodwill(-4000, obj)
+                            obj:force_set_goodwill(-4000, j)
+                        end
+                    end
+                end
+            end
+        end
+    end
+end
+    
+
+
+local function load_settings()
+    if ui_mcm then
+        enable_fight_my_foes = ui_mcm.get("fight_my_foes/enable_fight_my_foes")
+    end
+end
+
+function on_game_start()
+    if dph_mcm_save_storage then
+            dph_mcm_save_storage.register_module("fight_my_foes")
+        end
+    RegisterScriptCallback("actor_on_first_update", load_settings)
+    RegisterScriptCallback("on_option_change", load_settings)
+    RegisterScriptCallback("on_enemy_eval",fightfoes)
+end
+

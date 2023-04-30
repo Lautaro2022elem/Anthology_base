@@ -1,0 +1,58 @@
+[logic@esc_squad_esc_klin]
+active = walker@wait
+
+[walker@wait]
+path_walk = klin_walk_1
+on_info = {-eac_quest_trimming_complite =dist_to_actor_le(45)} remark@hello
+on_info2 = {+esc_squad_quest_monster_1_dead +esc_squad_quest_monster_2_dead} walker
+meet = no_meet
+gather_items_enabled = false
+corpse_detection_enabled = false
+
+
+
+[remark@hello]
+anim = hello_wpn
+target = story | actor
+meet = meet@dialog
+danger = danger
+on_info = {-eac_quest_trimming_complite =dist_to_actor_le(2)} remark@dialog_actor
+gather_items_enabled = false
+corpse_detection_enabled = false
+
+[remark@dialog_actor]
+anim = wait_na
+target = story | actor
+meet = meet@dialog
+danger = danger
+on_info = {-eac_quest_trimming_complite +esc_klin_quest_trimming_dialog_and} remark
+gather_items_enabled = false
+corpse_detection_enabled = false
+
+[remark]
+anim = guard_na
+target = story | actor
+meet = no_meet
+danger = danger
+on_info = {+esc_squad_quest_monster_1_dead +esc_squad_quest_monster_2_dead} walker
+gather_items_enabled = false
+corpse_detection_enabled = false
+
+[walker]
+path_walk = klin_walk_1
+path_look = klin_look_1
+gather_items_enabled = false
+corpse_detection_enabled = false
+
+[meet@dialog]
+abuse           = false
+close_anim 		= nil
+far_anim 		= nil
+far_victim 		= nil
+close_distance  = 0
+far_distance 	= 0
+close_victim = actor
+use = {!actor_enemy =dist_to_actor_le(2) -esc_klin_quest_trimming_dialog_and} self, true
+allow_break = false
+meet_dialog = esc_klin_quest_trimming_dialog
+trade_enable = false

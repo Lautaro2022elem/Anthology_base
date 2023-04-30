@@ -1,0 +1,34 @@
+[logic@topi_stalker_base_zam]
+suitable = {=check_npc_name(topi_stalker_base_zam)} true
+active = animpoint@zam
+prior = 200
+level_spot = quest_npc
+
+
+[animpoint@zam]
+cover_name = topi_stalker_base_zam_smart_cover
+meet                   = meet@standart
+combat_ignore_cond = {=actor_enemy =check_enemy_name(actor)} false, true
+combat_ignore_keep_when_attacked = true
+invulnerable = {!actor_enemy} true, false
+gather_items_enabled = false
+help_wounded_enabled = false
+corpse_detection_enabled = false
+on_info                = {+topi_var_2_suget_quest_3_give} nil %=release_npc%
+on_info2                = {+topi_b65_stalker_radist_talking_1} nil %=release_npc%
+on_info3                = {+topi_b65_fugas_time_out} nil %=kill_npc%
+on_info4                = {+topi_m2_killer_ceh_quest_5_talking_1} nil %=release_npc%
+
+[meet@standart]
+close_anim 		= nil
+close_victim 	= nil
+close_snd_hello = nil
+close_snd_bye 	= nil
+far_anim 		= nil
+far_victim 		= nil
+close_distance  = 0
+far_distance 	= 0
+use = {=actor_enemy} false, true
+allow_break = false
+trade_enable = true
+meet_on_talking = false

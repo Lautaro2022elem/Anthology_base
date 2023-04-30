@@ -1,0 +1,25 @@
+[logic]
+active = sr_idle@snake_clean_water
+
+[sr_idle@snake_clean_water]
+on_info = {+pro_actor_give_flask_empty -pro_dialog_duty_tachenko_end_line_done -pro_actor_go_to_water_flask} sr_idle@snake_clean_water_start
+on_info2 = {+pro_actor_give_flask_empty +pro_dialog_duty_tachenko_end_line_done -pro_actor_go_to_water_flask} sr_idle@snake_clean_fail
+
+[sr_idle@snake_clean_water_start]
+on_game_timer = 1500 | sr_idle@snake_clean_water_start_1
+
+[sr_idle@snake_clean_water_start_1]
+on_info = {+pro_actor_give_flask_empty -pro_dialog_duty_tachenko_end_line_done -sleep_active} sr_idle@snake_clean_water_start_2 %=pb_snake_clean_water_send_mes%
+on_info2 = {+pro_actor_give_flask_empty +pro_dialog_duty_tachenko_end_line_done -pro_actor_go_to_water_flask} sr_idle@snake_clean_fail
+
+[sr_idle@snake_clean_water_start_2]
+on_timer = 500 | sr_idle@snake_clean_water_reset %+pro_actor_go_to_water_flask%
+
+[sr_idle@snake_clean_water_reset]
+on_info = {+pro_actor_take_flask_water_done} sr_idle@snake_clean_water %-pro_actor_give_flask_empty -pro_actor_go_to_water_flask -pro_actor_take_flask_water_done%
+on_info2 = {+pro_actor_give_flask_empty +pro_dialog_duty_tachenko_end_line_done} sr_idle@snake_clean_fail
+
+[sr_idle@snake_clean_fail]
+on_info = {+pro_actor_give_flask_empty +pro_dialog_duty_tachenko_end_line_done -pro_actor_give_flask_snake_fail} sr_idle@nil %+pro_actor_give_flask_snake_fail%
+
+[sr_idle@nil]

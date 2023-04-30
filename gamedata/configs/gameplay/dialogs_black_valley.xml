@@ -1,0 +1,4570 @@
+<?xml version="1.0" encoding="windows-1251" standalone="yes" ?>
+<game_dialogs>
+    <!-- minigame crowkiller + -->
+    <dialog id="blck_val_bandit_bookmaker_record">
+        <phrase_list>
+            <phrase id="121">
+                <text>blck_val_bandit_bookmaker_record_121</text>
+                <next>11</next>
+            </phrase>
+            <phrase id="13">
+                <text>blck_val_bandit_bookmaker_record_13</text>
+                <next>11121</next>
+            </phrase>
+            <phrase id="12">
+                <text>blck_val_bandit_bookmaker_record_12</text>
+                <next>121</next>
+            </phrase>
+            <phrase id="11111">
+                <text>blck_val_bandit_bookmaker_record_11111</text>
+                <action>dialogs.break_dialog</action>
+                <action>minigame_dialogs.start_crowkiller</action>
+            </phrase>
+            <phrase id="1112">
+                <text>blck_val_bandit_bookmaker_record_1112</text>
+                <precondition>minigame_dialogs.no_crowkiller_money_champ</precondition>
+                <next>11121</next>
+            </phrase>
+            <phrase id="1113">
+                <text>blck_val_bandit_bookmaker_record_1113</text>
+                <next>11121</next>
+            </phrase>
+            <phrase id="11121">
+                <text>blck_val_bandit_bookmaker_record_11121</text>
+            </phrase>
+            <phrase id="1111">
+                <text>blck_val_bandit_bookmaker_record_1111</text>
+                <precondition>minigame_dialogs.have_crowkiller_money_champ</precondition>
+                <action>minigame_dialogs.transfer_stake</action>
+                <next>11111</next>
+            </phrase>
+            <phrase id="0">
+                <text>blck_val_bandit_bookmaker_record_0</text>
+                <action>minigame_dialogs.set_crowkiller_game_type</action>
+                <next>1</next>
+            </phrase>
+            <phrase id="1">
+                <text />
+                <script_text>minigame_dialogs.get_crows_to_kill_count</script_text>
+                <action>minigame_dialogs.set_crowkiller_selected_count</action>
+                <next>11</next>
+                <next>12</next>
+                <next>13</next>
+            </phrase>
+            <phrase id="11">
+                <text>blck_val_bandit_bookmaker_record_11</text>
+                <next>111</next>
+            </phrase>
+            <phrase id="111">
+                <text />
+                <script_text>minigame_dialogs.how_much_crowkiller_champ_money</script_text>
+                <next>1111</next>
+                <next>1112</next>
+                <next>1113</next>
+            </phrase>
+        </phrase_list>
+    </dialog>
+    <!-- minigame crowkiller - -->
+    <dialog id="blck_val_bandit_bookmaker_quit">
+        <phrase_list>
+            <phrase id="1">
+                <text>blck_val_bandit_bookmaker_quit_1</text>
+                <action>dialogs.break_dialog</action>
+            </phrase>
+            <phrase id="0">
+                <text>blck_val_bandit_bookmaker_quit_0</text>
+                <next>1</next>
+            </phrase>
+        </phrase_list>
+    </dialog>
+    <dialog id="blck_val_shaman_water_full">
+        <precondition>dialogs_black_valley.actor_flask_empty_check</precondition>
+        <phrase_list>
+            <phrase id="1">
+                <text>blck_val_shaman_water_full_1</text>
+                <next>2</next>
+                <next>3</next>
+            </phrase>
+            <phrase id="2">
+                <text>blck_val_shaman_water_full_2</text>
+                <precondition>dialogs_black_valley.analiz_money_water_full</precondition>
+                <action>dialogs_black_valley.give_money_water_full</action>
+                <next>4</next>
+            </phrase>
+            <phrase id="5">
+                <text>blck_val_shaman_water_full_5</text>
+            </phrase>
+            <phrase id="3">
+                <text>blck_val_shaman_water_full_3</text>
+                <action>dialogs.break_dialog</action>
+            </phrase>
+            <phrase id="4">
+                <text>blck_val_shaman_water_full_4</text>
+                <action>dialogs_black_valley.give_flask_to_actor</action>
+                <next>5</next>
+            </phrase>
+            <phrase id="0">
+                <text>blck_val_shaman_water_full_0</text>
+                <next>1</next>
+            </phrase>
+        </phrase_list>
+    </dialog>
+    <dialog id="blck_val_barman_radio_off">
+        <dont_has_info>blck_val_barman_radio_off</dont_has_info>
+        <phrase_list>
+            <phrase id="2">
+                <text>blck_val_barman_radio_off_2</text>
+            </phrase>
+            <phrase id="3">
+                <text>blck_val_barman_radio_off_3</text>
+            </phrase>
+            <phrase id="1">
+                <text>blck_val_barman_radio_off_1</text>
+            </phrase>
+            <phrase id="0">
+                <text>blck_val_barman_radio_off_0</text>
+                <give_info>blck_val_barman_radio_off</give_info>
+                <next>1</next>
+                <next>2</next>
+                <next>3</next>
+            </phrase>
+        </phrase_list>
+    </dialog>
+    <dialog id="blck_val_barman_radio_on">
+        <has_info>blck_val_barman_radio_off</has_info>
+        <phrase_list>
+            <phrase id="2">
+                <text>blck_val_barman_radio_on_2</text>
+            </phrase>
+            <phrase id="3">
+                <text>blck_val_barman_radio_on_3</text>
+            </phrase>
+            <phrase id="1">
+                <text>blck_val_barman_radio_on_1</text>
+            </phrase>
+            <phrase id="0">
+                <text>blck_val_barman_radio_on_0</text>
+                <give_info>blck_val_barman_radio_on</give_info>
+                <next>1</next>
+                <next>2</next>
+                <next>3</next>
+            </phrase>
+        </phrase_list>
+    </dialog>
+    <dialog id="blck_val_monolith_story_group">
+        <phrase_list>
+            <phrase id="2">
+                <text>blck_val_monolith_story_group_2</text>
+                <dont_has_info>blck_val_monolith_story_2</dont_has_info>
+                <give_info>blck_val_monolith_story_2</give_info>
+                <has_info>blck_val_monolith_story_1</has_info>
+            </phrase>
+            <phrase id="4">
+                <text>blck_val_monolith_story_group_4</text>
+                <dont_has_info>blck_val_monolith_story_4</dont_has_info>
+                <give_info>blck_val_monolith_story_4</give_info>
+                <has_info>blck_val_monolith_story_3</has_info>
+            </phrase>
+            <phrase id="5">
+                <text>blck_val_monolith_story_group_5</text>
+                <dont_has_info>blck_val_monolith_story_5</dont_has_info>
+                <give_info>blck_val_monolith_story_5</give_info>
+                <has_info>blck_val_monolith_story_4</has_info>
+            </phrase>
+            <phrase id="0">
+                <text>blck_val_monolith_story_group_0</text>
+                <next>1</next>
+                <next>2</next>
+                <next>3</next>
+                <next>4</next>
+                <next>5</next>
+                <next>6</next>
+            </phrase>
+            <phrase id="1">
+                <text>blck_val_monolith_story_group_1</text>
+                <dont_has_info>blck_val_monolith_story_1</dont_has_info>
+                <give_info>blck_val_monolith_story_1</give_info>
+            </phrase>
+            <phrase id="3">
+                <text>blck_val_monolith_story_group_3</text>
+                <dont_has_info>blck_val_monolith_story_3</dont_has_info>
+                <give_info>blck_val_monolith_story_3</give_info>
+                <has_info>blck_val_monolith_story_2</has_info>
+            </phrase>
+            <phrase id="6">
+                <text>blck_val_monolith_story_group_6</text>
+                <has_info>blck_val_monolith_story_5</has_info>
+            </phrase>
+        </phrase_list>
+    </dialog>
+    <dialog id="blck_val_lutiy_monolit_dialog">
+        <phrase_list>
+            <phrase id="1">
+                <text>blck_val_lutiy_monolit_dialog_1</text>
+                <next>2</next>
+            </phrase>
+            <phrase id="2">
+                <text>blck_val_lutiy_monolit_dialog_2</text>
+                <next>3</next>
+            </phrase>
+            <phrase id="3">
+                <text>blck_val_lutiy_monolit_dialog_3</text>
+                <next>4</next>
+            </phrase>
+            <phrase id="4">
+                <text>blck_val_lutiy_monolit_dialog_4</text>
+                <next>5</next>
+            </phrase>
+            <phrase id="5">
+                <text>blck_val_lutiy_monolit_dialog_5</text>
+                <action>dialogs.break_dialog</action>
+                <give_info>blck_val_lutiy_monolit_dialog_done</give_info>
+            </phrase>
+            <phrase id="0">
+                <text>blck_val_lutiy_monolit_dialog_0</text>
+                <next>1</next>
+            </phrase>
+        </phrase_list>
+    </dialog>
+    <dialog id="blck_val_actor_meet_from_monolit_leader">
+        <phrase_list>
+            <phrase id="1">
+                <text>blck_val_actor_meet_from_monolit_leader_1</text>
+                <next>2</next>
+            </phrase>
+            <phrase id="2">
+                <text>blck_val_actor_meet_from_monolit_leader_2</text>
+                <next>3</next>
+            </phrase>
+            <phrase id="3">
+                <text>blck_val_actor_meet_from_monolit_leader_3</text>
+                <next>4</next>
+            </phrase>
+            <phrase id="4">
+                <text>blck_val_actor_meet_from_monolit_leader_4</text>
+                <next>5</next>
+            </phrase>
+            <phrase id="5">
+                <text>blck_val_actor_meet_from_monolit_leader_5</text>
+                <action>dialogs.break_dialog</action>
+                <give_info>blck_val_monolit_leader_dialog_done</give_info>
+            </phrase>
+            <phrase id="0">
+                <text>blck_val_actor_meet_from_monolit_leader_0</text>
+                <next>1</next>
+            </phrase>
+        </phrase_list>
+    </dialog>
+    <dialog id="blck_val_bandit_bookmaker_money">
+        <phrase_list>
+            <phrase id="13">
+                <text>blck_val_bandit_bookmaker_money_13</text>
+                <next>111112121</next>
+            </phrase>
+            <phrase id="111112121">
+                <text>blck_val_bandit_bookmaker_money_111112121</text>
+            </phrase>
+            <phrase id="12">
+                <text>blck_val_bandit_bookmaker_money_12</text>
+                <next>121</next>
+            </phrase>
+            <phrase id="121">
+                <text>blck_val_bandit_bookmaker_money_121</text>
+                <next>11</next>
+            </phrase>
+            <phrase id="11111212">
+                <text>blck_val_bandit_bookmaker_money_11111212</text>
+                <next>111112121</next>
+            </phrase>
+            <phrase id="1111121">
+                <text>blck_val_bandit_bookmaker_money_1111121</text>
+                <next>11111211</next>
+                <next>11111212</next>
+            </phrase>
+            <phrase id="1113">
+                <text />
+                <script_text>minigame_dialogs.get_crows_to_kill_count</script_text>
+                <action>minigame_dialogs.set_crowkiller_selected_count</action>
+                <next>11111</next>
+            </phrase>
+            <phrase id="1114">
+                <text />
+                <script_text>minigame_dialogs.get_crows_to_kill_count</script_text>
+                <action>minigame_dialogs.set_crowkiller_selected_count</action>
+                <next>11111</next>
+            </phrase>
+            <phrase id="11">
+                <text>blck_val_bandit_bookmaker_money_11</text>
+                <next>111</next>
+            </phrase>
+            <phrase id="111">
+                <text>blck_val_bandit_bookmaker_money_111</text>
+                <next>1111</next>
+                <next>1112</next>
+                <next>1113</next>
+                <next>1114</next>
+            </phrase>
+            <phrase id="1111">
+                <text />
+                <script_text>minigame_dialogs.get_crows_to_kill_count</script_text>
+                <action>minigame_dialogs.set_crowkiller_selected_count</action>
+                <next>11111</next>
+            </phrase>
+            <phrase id="1112">
+                <text />
+                <script_text>minigame_dialogs.get_crows_to_kill_count</script_text>
+                <action>minigame_dialogs.set_crowkiller_selected_count</action>
+                <next>11111</next>
+            </phrase>
+            <phrase id="11111">
+                <text />
+                <script_text>minigame_dialogs.how_much_crowkiller_money</script_text>
+                <next>111111</next>
+                <next>111112</next>
+                <next>13</next>
+            </phrase>
+            <phrase id="111111">
+                <text>blck_val_bandit_bookmaker_money_111111</text>
+                <precondition>minigame_dialogs.have_crowkiller_money</precondition>
+                <action>minigame_dialogs.transfer_stake</action>
+                <next>1111111</next>
+            </phrase>
+            <phrase id="1111111">
+                <text>blck_val_bandit_bookmaker_money_1111111</text>
+                <next>11111111</next>
+            </phrase>
+            <phrase id="11111111">
+                <text>blck_val_bandit_bookmaker_money_11111111</text>
+                <action>dialogs.break_dialog</action>
+                <action>minigame_dialogs.start_crowkiller</action>
+            </phrase>
+            <phrase id="1">
+                <text>blck_val_bandit_bookmaker_money_1</text>
+                <next>11</next>
+                <next>12</next>
+                <next>13</next>
+            </phrase>
+            <phrase id="11111211">
+                <text>blck_val_bandit_bookmaker_money_11111211</text>
+                <next>111</next>
+            </phrase>
+            <phrase id="111112">
+                <text>blck_val_bandit_bookmaker_money_111112</text>
+                <precondition>minigame_dialogs.no_crowkiller_money</precondition>
+                <next>1111121</next>
+            </phrase>
+            <phrase id="0">
+                <text>blck_val_bandit_bookmaker_money_0</text>
+                <action>minigame_dialogs.set_crowkiller_game_type</action>
+                <next>1</next>
+            </phrase>
+        </phrase_list>
+    </dialog>
+    <dialog id="blck_val_bandit_bookmaker_questions">
+        <phrase_list>
+            <phrase id="1">
+                <text>blck_val_bandit_bookmaker_questions_1</text>
+            </phrase>
+            <phrase id="0">
+                <text>blck_val_bandit_bookmaker_questions_0</text>
+                <next>1</next>
+            </phrase>
+        </phrase_list>
+    </dialog>
+    <dialog id="blck_val_levsha_first_meet">
+        <phrase_list>
+            <phrase id="16">
+                <text />
+                <has_info>blck_val_levsha_first_meet_done</has_info>
+                <next>17</next>
+            </phrase>
+            <phrase id="11">
+                <text>blck_val_levsha_first_meet_11</text>
+                <next>12</next>
+            </phrase>
+            <phrase id="12">
+                <text>blck_val_levsha_first_meet_12</text>
+                <next>13</next>
+            </phrase>
+            <phrase id="13">
+                <text>blck_val_levsha_first_meet_13</text>
+                <next>14</next>
+            </phrase>
+            <phrase id="14">
+                <text>blck_val_levsha_first_meet_14</text>
+                <next>15</next>
+            </phrase>
+            <phrase id="17">
+                <text>blck_val_levsha_first_meet_17</text>
+                <next>18</next>
+            </phrase>
+            <phrase id="8">
+                <text>blck_val_levsha_first_meet_8</text>
+                <next>9</next>
+            </phrase>
+            <phrase id="10">
+                <text>blck_val_levsha_first_meet_10</text>
+                <next>11</next>
+            </phrase>
+            <phrase id="9">
+                <text>blck_val_levsha_first_meet_9</text>
+                <next>10</next>
+            </phrase>
+            <phrase id="2">
+                <text>blck_val_levsha_first_meet_2</text>
+                <give_info>blck_val_actor_found_levsha_zasada</give_info>
+                <next>3</next>
+            </phrase>
+            <phrase id="3">
+                <text>blck_val_levsha_first_meet_3</text>
+                <next>4</next>
+            </phrase>
+            <phrase id="6">
+                <text>blck_val_levsha_first_meet_6</text>
+                <next>7</next>
+            </phrase>
+            <phrase id="7">
+                <text>blck_val_levsha_first_meet_7</text>
+                <next>8</next>
+            </phrase>
+            <phrase id="5">
+                <text>blck_val_levsha_first_meet_5</text>
+                <next>6</next>
+            </phrase>
+            <phrase id="18">
+                <text>blck_val_levsha_first_meet_18</text>
+                <action>dialogs.break_dialog</action>
+            </phrase>
+            <phrase id="15">
+                <text>blck_val_levsha_first_meet_15</text>
+                <action>dialogs.break_dialog</action>
+                <give_info>blck_val_levsha_first_meet_done</give_info>
+            </phrase>
+            <phrase id="4">
+                <text>blck_val_levsha_first_meet_4</text>
+                <next>5</next>
+            </phrase>
+            <phrase id="0">
+                <text />
+                <next>1</next>
+                <next>16</next>
+            </phrase>
+            <phrase id="1">
+                <text />
+                <dont_has_info>blck_val_levsha_first_meet_done</dont_has_info>
+                <next>2</next>
+            </phrase>
+        </phrase_list>
+    </dialog>
+    <dialog id="blck_val_chimik_killer_meet">
+        <phrase_list>
+            <phrase id="3">
+                <text>blck_val_chimik_killer_meet_3</text>
+                <action>dialogs.break_dialog</action>
+                <give_info>blck_val_stalker_chimik_is_enemy</give_info>
+            </phrase>
+            <phrase id="2">
+                <text>blck_val_chimik_killer_meet_2</text>
+                <next>3</next>
+            </phrase>
+            <phrase id="1">
+                <text>blck_val_chimik_killer_meet_1</text>
+                <action>dialogs_black_valley.blck_val_robbery_knife_killer</action>
+                <next>2</next>
+            </phrase>
+            <phrase id="0">
+                <text>blck_val_chimik_killer_meet_0</text>
+                <next>1</next>
+            </phrase>
+        </phrase_list>
+    </dialog>
+    <dialog id="blck_val_shaman_sell_stuff">
+        <has_info>blck_val_stavrid_first_dialog_done</has_info>
+        <phrase_list>
+            <phrase id="12">
+                <text>blck_val_shaman_sell_stuff_12</text>
+                <next>1</next>
+            </phrase>
+            <phrase id="7">
+                <text>blck_val_shaman_sell_stuff_7</text>
+                <action>dlg_shaman.knife_killer_z</action>
+                <action>dlg_shaman.knife_killer_money</action>
+                <next>12</next>
+            </phrase>
+            <phrase id="9">
+                <text>blck_val_shaman_sell_stuff_9</text>
+                <action>dlg_shaman.shved_pda_z</action>
+                <action>dlg_shaman.shved_pda_money</action>
+                <next>12</next>
+            </phrase>
+            <phrase id="10">
+                <text>blck_val_shaman_sell_stuff_10</text>
+                <action>dlg_shaman.padalshik_pda_z</action>
+                <action>dlg_shaman.padalshik_pda_money</action>
+                <next>12</next>
+            </phrase>
+            <phrase id="11">
+                <text>blck_val_shaman_sell_stuff_11</text>
+                <action>dlg_shaman.quest_document_1_z</action>
+                <action>dlg_shaman.quest_document_1_money</action>
+                <next>12</next>
+            </phrase>
+            <phrase id="1">
+                <text>blck_val_shaman_sell_stuff_1</text>
+                <next>2</next>
+                <next>3</next>
+                <next>4</next>
+                <next>5</next>
+                <next>6</next>
+                <next>13</next>
+            </phrase>
+            <phrase id="13">
+                <text>blck_val_shaman_sell_stuff_13</text>
+                <action>dialogs.break_dialog</action>
+            </phrase>
+            <phrase id="8">
+                <text>blck_val_shaman_sell_stuff_8</text>
+                <action>dlg_shaman.chimik_pda_z</action>
+                <action>dlg_shaman.chimik_pda_money</action>
+                <next>12</next>
+            </phrase>
+            <phrase id="2">
+                <text>blck_val_shaman_sell_stuff_2</text>
+                <precondition>dlg_shaman.knife_killer</precondition>
+                <has_info>blck_val_quest_find_art_from_barmen</has_info>
+                <next>7</next>
+            </phrase>
+            <phrase id="3">
+                <text>blck_val_shaman_sell_stuff_3</text>
+                <precondition>dlg_shaman.chimik_pda</precondition>
+                <has_info>blck_val_zver_open_pda_chimik</has_info>
+                <next>8</next>
+            </phrase>
+            <phrase id="5">
+                <text>blck_val_shaman_sell_stuff_5</text>
+                <precondition>dlg_shaman.padalshik_pda</precondition>
+                <next>10</next>
+            </phrase>
+            <phrase id="6">
+                <text>blck_val_shaman_sell_stuff_6</text>
+                <precondition>dlg_shaman.quest_document_1</precondition>
+                <next>11</next>
+            </phrase>
+            <phrase id="4">
+                <text>blck_val_shaman_sell_stuff_4</text>
+                <precondition>dlg_shaman.shved_pda</precondition>
+                <next>9</next>
+            </phrase>
+            <phrase id="0">
+                <text>blck_val_shaman_sell_stuff_0</text>
+                <next>1</next>
+            </phrase>
+        </phrase_list>
+    </dialog>
+    <dialog id="blck_val_bandit_bookmaker_hello">
+        <phrase_list>
+            <phrase id="41">
+                <text>blck_val_bandit_bookmaker_hello_41</text>
+                <next>111</next>
+                <next>112</next>
+            </phrase>
+            <phrase id="511">
+                <text>blck_val_bandit_bookmaker_hello_511</text>
+                <action>dialogs.break_dialog</action>
+            </phrase>
+            <phrase id="51">
+                <text>blck_val_bandit_bookmaker_hello_51</text>
+                <next>511</next>
+            </phrase>
+            <phrase id="4">
+                <text />
+                <precondition>minigame_dialogs.crowkiller_is_breaked</precondition>
+                <next>41</next>
+            </phrase>
+            <phrase id="5">
+                <text />
+                <precondition>minigame_dialogs.crowkiller_is_running</precondition>
+                <next>51</next>
+            </phrase>
+            <phrase id="2">
+                <text />
+                <precondition>minigame_dialogs.crowkiller_is_winned</precondition>
+                <precondition>minigame_dialogs.crowkiller_is_finished</precondition>
+                <precondition>minigame_dialogs.crowkiller_game_type_not_training</precondition>
+                <next>21</next>
+            </phrase>
+            <phrase id="21">
+                <text>blck_val_bandit_bookmaker_hello_21</text>
+                <action>minigame_dialogs.transfer_winned_money</action>
+                <action>minigame_dialogs.set_crowkiller_valiable</action>
+                <next>111</next>
+                <next>112</next>
+            </phrase>
+            <phrase id="31">
+                <text>blck_val_bandit_bookmaker_hello_31</text>
+                <action>minigame_dialogs.set_crowkiller_valiable</action>
+                <next>111</next>
+                <next>112</next>
+            </phrase>
+            <phrase id="112">
+                <text>blck_val_bandit_bookmaker_hello_112</text>
+                <next>1121</next>
+            </phrase>
+            <phrase id="111">
+                <text>blck_val_bandit_bookmaker_hello_111</text>
+                <next>1111</next>
+            </phrase>
+            <phrase id="61">
+                <text>blck_val_bandit_bookmaker_hello_61</text>
+                <action>minigame_dialogs.set_crowkiller_valiable</action>
+                <next>111</next>
+                <next>112</next>
+            </phrase>
+            <phrase id="1">
+                <text />
+                <precondition>minigame_dialogs.crowkiller_is_valiable</precondition>
+                <next>11</next>
+            </phrase>
+            <phrase id="11">
+                <text>blck_val_bandit_bookmaker_hello_11</text>
+                <next>111</next>
+                <next>112</next>
+            </phrase>
+            <phrase id="1111">
+                <text>blck_val_bandit_bookmaker_hello_1111</text>
+            </phrase>
+            <phrase id="6">
+                <text />
+                <precondition>minigame_dialogs.crowkiller_is_winned</precondition>
+                <precondition>minigame_dialogs.crowkiller_is_finished</precondition>
+                <precondition>minigame_dialogs.crowkiller_game_type_training</precondition>
+                <next>61</next>
+            </phrase>
+            <phrase id="1121">
+                <text>blck_val_bandit_bookmaker_hello_1121</text>
+                <action>dialogs.break_dialog</action>
+            </phrase>
+            <phrase id="3">
+                <text />
+                <precondition>minigame_dialogs.crowkiller_is_not_winned</precondition>
+                <precondition>minigame_dialogs.crowkiller_is_finished</precondition>
+                <next>31</next>
+            </phrase>
+            <phrase id="0">
+                <text />
+                <next>1</next>
+                <next>2</next>
+                <next>3</next>
+                <next>4</next>
+                <next>5</next>
+                <next>6</next>
+            </phrase>
+        </phrase_list>
+    </dialog>
+    <dialog id="blck_val_actor_meet_petrovich_quest">
+        <dont_has_info>blck_val_petrovich_dop_quest_start</dont_has_info>
+        <phrase_list>
+            <phrase id="8">
+                <text>blck_val_actor_meet_petrovich_quest_8</text>
+                <action>dialogs.break_dialog</action>
+            </phrase>
+            <phrase id="5">
+                <text>blck_val_actor_meet_petrovich_quest_5</text>
+                <action>dialogs.break_dialog</action>
+                <give_info>blck_val_petrovich_dop_quest_pause</give_info>
+            </phrase>
+            <phrase id="1">
+                <text>blck_val_actor_meet_petrovich_quest_1</text>
+                <dont_has_info>blck_val_petrovich_dop_quest_pause</dont_has_info>
+                <next>2</next>
+            </phrase>
+            <phrase id="2">
+                <text>blck_val_actor_meet_petrovich_quest_2</text>
+                <next>3</next>
+            </phrase>
+            <phrase id="6">
+                <text>blck_val_actor_meet_petrovich_quest_6</text>
+                <has_info>blck_val_petrovich_dop_quest_pause</has_info>
+                <next>7</next>
+                <next>8</next>
+            </phrase>
+            <phrase id="7">
+                <text>blck_val_actor_meet_petrovich_quest_7</text>
+                <action>dialogs.break_dialog</action>
+                <action>dialogs_black_valley.blck_val_petrovich_dop_quest_give</action>
+                <give_info>blck_val_petrovich_dop_quest_start</give_info>
+            </phrase>
+            <phrase id="4">
+                <text>blck_val_actor_meet_petrovich_quest_4</text>
+                <action>dialogs.break_dialog</action>
+                <action>dialogs_black_valley.blck_val_petrovich_dop_quest_give</action>
+                <give_info>blck_val_petrovich_dop_quest_start</give_info>
+            </phrase>
+            <phrase id="3">
+                <text>blck_val_actor_meet_petrovich_quest_3</text>
+                <next>4</next>
+                <next>5</next>
+            </phrase>
+            <phrase id="0">
+                <text>blck_val_actor_meet_petrovich_quest_0</text>
+                <next>1</next>
+                <next>6</next>
+            </phrase>
+        </phrase_list>
+    </dialog>
+    <dialog id="blck_val_actor_meet_petrovich_quest_start">
+        <has_info>blck_val_petrovich_dop_quest_start</has_info>
+        <dont_has_info>blck_val_petrovich_dop_quest_complete</dont_has_info>
+        <phrase_list>
+            <phrase id="14">
+                <text>blck_val_actor_meet_petrovich_quest_start_14</text>
+                <next>15</next>
+            </phrase>
+            <phrase id="6">
+                <text>blck_val_actor_meet_petrovich_quest_start_6</text>
+                <precondition>dialogs_black_valley.blck_val_flesh_toy_check</precondition>
+                <action>dialogs_black_valley.blck_val_flesh_toy_give</action>
+                <dont_has_info>blck_val_flesh_toy_give</dont_has_info>
+                <give_info>blck_val_flesh_toy_give</give_info>
+                <next>12</next>
+            </phrase>
+            <phrase id="8">
+                <text>blck_val_actor_meet_petrovich_quest_start_8</text>
+                <precondition>dialogs_black_valley.blck_val_control_toy_check</precondition>
+                <action>dialogs_black_valley.blck_val_control_toy_give</action>
+                <dont_has_info>blck_val_control_toy_give</dont_has_info>
+                <give_info>blck_val_control_toy_give</give_info>
+                <next>12</next>
+            </phrase>
+            <phrase id="9">
+                <text>blck_val_actor_meet_petrovich_quest_start_9</text>
+                <precondition>dialogs_black_valley.blck_val_chimera_toy_check</precondition>
+                <action>dialogs_black_valley.blck_val_chimera_toy_give</action>
+                <dont_has_info>blck_val_chimera_toy_give</dont_has_info>
+                <give_info>blck_val_chimera_toy_give</give_info>
+                <next>12</next>
+            </phrase>
+            <phrase id="11">
+                <text>blck_val_actor_meet_petrovich_quest_start_11</text>
+                <precondition>dialogs_black_valley.blck_val_snork_toy_check</precondition>
+                <action>dialogs_black_valley.blck_val_snork_toy_give</action>
+                <dont_has_info>blck_val_snork_toy_give</dont_has_info>
+                <give_info>blck_val_snork_toy_give</give_info>
+                <next>12</next>
+            </phrase>
+            <phrase id="3">
+                <text>blck_val_actor_meet_petrovich_quest_start_3</text>
+                <precondition>dialogs_black_valley.blck_val_sleepdog_toy_check</precondition>
+                <action>dialogs_black_valley.blck_val_sleepdog_toy_give</action>
+                <dont_has_info>blck_val_sleepdog_toy_give</dont_has_info>
+                <give_info>blck_val_sleepdog_toy_give</give_info>
+                <next>12</next>
+            </phrase>
+            <phrase id="5">
+                <text>blck_val_actor_meet_petrovich_quest_start_5</text>
+                <precondition>dialogs_black_valley.blck_val_boar_toy_check</precondition>
+                <action>dialogs_black_valley.blck_val_boar_toy_give</action>
+                <dont_has_info>blck_val_boar_toy_give</dont_has_info>
+                <give_info>blck_val_boar_toy_give</give_info>
+                <next>12</next>
+            </phrase>
+            <phrase id="2">
+                <text>blck_val_actor_meet_petrovich_quest_start_2</text>
+                <action>dialogs.break_dialog</action>
+                <dont_has_info>blck_val_all_collection_found</dont_has_info>
+            </phrase>
+            <phrase id="1">
+                <text>blck_val_actor_meet_petrovich_quest_start_1</text>
+                <next>3</next>
+                <next>4</next>
+                <next>5</next>
+                <next>6</next>
+                <next>7</next>
+                <next>8</next>
+                <next>9</next>
+                <next>11</next>
+                <next>10</next>
+                <next>13</next>
+                <next>2</next>
+            </phrase>
+            <phrase id="12">
+                <text>blck_val_actor_meet_petrovich_quest_start_12</text>
+                <action>dialogs_black_valley.blck_val_petrovich_give_money</action>
+                <next>3</next>
+                <next>4</next>
+                <next>5</next>
+                <next>6</next>
+                <next>7</next>
+                <next>8</next>
+                <next>9</next>
+                <next>11</next>
+                <next>10</next>
+                <next>13</next>
+                <next>2</next>
+            </phrase>
+            <phrase id="13">
+                <text>blck_val_actor_meet_petrovich_quest_start_13</text>
+                <has_info>blck_val_sleepdog_toy_give</has_info>
+                <has_info>blck_val_psevdo_toy_give</has_info>
+                <has_info>blck_val_boar_toy_give</has_info>
+                <has_info>blck_val_flesh_toy_give</has_info>
+                <has_info>blck_val_burer_toy_give</has_info>
+                <has_info>blck_val_control_toy_give</has_info>
+                <has_info>blck_val_chimera_toy_give</has_info>
+                <has_info>blck_val_snork_toy_give</has_info>
+                <has_info>blck_val_gigant_toy_give</has_info>
+                <next>14</next>
+            </phrase>
+            <phrase id="10">
+                <text>blck_val_actor_meet_petrovich_quest_start_10</text>
+                <precondition>dialogs_black_valley.blck_val_gigant_toy_check</precondition>
+                <action>dialogs_black_valley.blck_val_gigant_toy_give</action>
+                <dont_has_info>blck_val_gigant_toy_give</dont_has_info>
+                <give_info>blck_val_gigant_toy_give</give_info>
+                <next>12</next>
+            </phrase>
+            <phrase id="7">
+                <text>blck_val_actor_meet_petrovich_quest_start_7</text>
+                <precondition>dialogs_black_valley.blck_val_burer_toy_check</precondition>
+                <action>dialogs_black_valley.blck_val_burer_toy_give</action>
+                <dont_has_info>blck_val_burer_toy_give</dont_has_info>
+                <give_info>blck_val_burer_toy_give</give_info>
+                <next>12</next>
+            </phrase>
+            <phrase id="15">
+                <text>blck_val_actor_meet_petrovich_quest_start_15</text>
+                <action>dialogs.break_dialog</action>
+                <give_info>blck_val_petrovich_dop_quest_complete</give_info>
+            </phrase>
+            <phrase id="4">
+                <text>blck_val_actor_meet_petrovich_quest_start_4</text>
+                <precondition>dialogs_black_valley.blck_val_psevdo_toy_check</precondition>
+                <action>dialogs_black_valley.blck_val_psevdo_toy_give</action>
+                <dont_has_info>blck_val_psevdo_toy_give</dont_has_info>
+                <give_info>blck_val_psevdo_toy_give</give_info>
+                <next>12</next>
+            </phrase>
+            <phrase id="0">
+                <text>blck_val_actor_meet_petrovich_quest_start_0</text>
+                <next>1</next>
+            </phrase>
+        </phrase_list>
+    </dialog>
+    <dialog id="blck_val_actor_meet_shaman_about_toy">
+        <has_info>blck_val_petrovich_dop_quest_start</has_info>
+        <dont_has_info>blck_val_gigant_toys_remove</dont_has_info>
+        <phrase_list>
+            <phrase id="1">
+                <text>blck_val_actor_meet_shaman_about_toy_1</text>
+                <next>2</next>
+                <next>3</next>
+            </phrase>
+            <phrase id="5">
+                <text>blck_val_actor_meet_shaman_about_toy_5</text>
+                <action>dialogs_black_valley.blck_val_gigant_toy_to_actor</action>
+                <give_info>blck_val_gigant_toys_remove</give_info>
+                <next>7</next>
+            </phrase>
+            <phrase id="7">
+                <text>blck_val_actor_meet_shaman_about_toy_7</text>
+                <action>dialogs.break_dialog</action>
+            </phrase>
+            <phrase id="6">
+                <text>blck_val_actor_meet_shaman_about_toy_6</text>
+                <action>dialogs.break_dialog</action>
+            </phrase>
+            <phrase id="4">
+                <text>blck_val_actor_meet_shaman_about_toy_4</text>
+                <action>dialogs_black_valley.blck_val_gigant_toy_to_actor</action>
+                <give_info>blck_val_gigant_toys_remove</give_info>
+                <next>6</next>
+            </phrase>
+            <phrase id="2">
+                <text>blck_val_actor_meet_shaman_about_toy_2</text>
+                <next>4</next>
+            </phrase>
+            <phrase id="3">
+                <text>blck_val_actor_meet_shaman_about_toy_3</text>
+                <precondition>dialogs_black_valley.blck_val_analiz_money_check</precondition>
+                <action>dialogs_black_valley.blck_val_give_money_gigant_toy</action>
+                <next>5</next>
+            </phrase>
+            <phrase id="0">
+                <text>blck_val_actor_meet_shaman_about_toy_0</text>
+                <next>1</next>
+            </phrase>
+        </phrase_list>
+    </dialog>
+    <dialog id="blck_val_actor_meet_from_marchuk_end">
+        <phrase_list>
+            <phrase id="0">
+                <text>blck_val_actor_meet_from_marchuk_end_0</text>
+                <next>1</next>
+            </phrase>
+            <phrase id="1">
+                <text>blck_val_actor_meet_from_marchuk_end_1</text>
+                <action>dialogs.break_dialog</action>
+                <give_info>blck_val_actor_go_to_roof_hutor</give_info>
+            </phrase>
+        </phrase_list>
+    </dialog>
+    <dialog id="blck_val_actor_meet_from_marchuk">
+        <phrase_list>
+            <phrase id="2">
+                <text>blck_val_actor_meet_from_marchuk_2</text>
+                <next>3</next>
+            </phrase>
+            <phrase id="0">
+                <text>blck_val_actor_meet_from_marchuk_0</text>
+                <next>1</next>
+            </phrase>
+            <phrase id="1">
+                <text>blck_val_actor_meet_from_marchuk_1</text>
+                <next>2</next>
+            </phrase>
+            <phrase id="3">
+                <text>blck_val_actor_meet_from_marchuk_3</text>
+                <action>dialogs.break_dialog</action>
+                <give_info>blck_val_marchuk_rac_wait_start</give_info>
+            </phrase>
+        </phrase_list>
+    </dialog>
+    <dialog id="blck_val_actor_meet_from_monolit_scene">
+        <phrase_list>
+            <phrase id="2">
+                <text>blck_val_actor_meet_from_monolit_scene_2</text>
+                <next>3</next>
+            </phrase>
+            <phrase id="3">
+                <text>blck_val_actor_meet_from_monolit_scene_3</text>
+                <action>dialogs.break_dialog</action>
+                <action>dialogs_black_valley.blck_val_final_zastava_quest_give</action>
+                <give_info>blck_val_monolith_informator_dialog_done</give_info>
+            </phrase>
+            <phrase id="1">
+                <text>blck_val_actor_meet_from_monolit_scene_1</text>
+                <next>2</next>
+            </phrase>
+            <phrase id="0">
+                <text>blck_val_actor_meet_from_monolit_scene_0</text>
+                <next>1</next>
+            </phrase>
+        </phrase_list>
+    </dialog>
+    <dialog id="blck_val_actor_meet_from_tech">
+        <phrase_list>
+            <phrase id="14">
+                <text>blck_val_actor_meet_from_tech_14</text>
+                <next>15</next>
+            </phrase>
+            <phrase id="10">
+                <text>blck_val_actor_meet_from_tech_10</text>
+                <next>11</next>
+            </phrase>
+            <phrase id="30">
+                <text />
+                <dont_has_info>blck_val_stavrid_dialog_give_explosive</dont_has_info>
+                <has_info>blck_val_actor_meet_tech_spatial_done</has_info>
+                <next>31</next>
+            </phrase>
+            <phrase id="31">
+                <text>blck_val_actor_meet_from_tech_31</text>
+            </phrase>
+            <phrase id="9">
+                <text>blck_val_actor_meet_from_tech_9</text>
+                <next>10</next>
+            </phrase>
+            <phrase id="19">
+                <text />
+                <dont_has_info>blck_val_actor_meet_tech_spatial_done</dont_has_info>
+                <has_info>blck_val_actor_dialog_from_sologub_end</has_info>
+                <next>20</next>
+            </phrase>
+            <phrase id="32">
+                <text />
+                <dont_has_info>blck_val_tech_reload_community</dont_has_info>
+                <has_info>blck_val_stavrid_dialog_give_explosive</has_info>
+                <next>33</next>
+            </phrase>
+            <phrase id="33">
+                <text>blck_val_actor_meet_from_tech_33</text>
+                <next>34</next>
+            </phrase>
+            <phrase id="34">
+                <text>blck_val_actor_meet_from_tech_34</text>
+                <next>35</next>
+            </phrase>
+            <phrase id="27">
+                <text>blck_val_actor_meet_from_tech_27</text>
+                <next>28</next>
+            </phrase>
+            <phrase id="28">
+                <text>blck_val_actor_meet_from_tech_28</text>
+                <next>29</next>
+            </phrase>
+            <phrase id="29">
+                <text>blck_val_actor_meet_from_tech_29</text>
+                <action>dialogs.break_dialog</action>
+                <give_info>blck_val_actor_meet_tech_spatial_done</give_info>
+            </phrase>
+            <phrase id="21">
+                <text>blck_val_actor_meet_from_tech_21</text>
+                <next>22</next>
+            </phrase>
+            <phrase id="22">
+                <text>blck_val_actor_meet_from_tech_22</text>
+                <next>23</next>
+            </phrase>
+            <phrase id="23">
+                <text>blck_val_actor_meet_from_tech_23</text>
+                <next>24</next>
+            </phrase>
+            <phrase id="24">
+                <text>blck_val_actor_meet_from_tech_24</text>
+                <next>25</next>
+            </phrase>
+            <phrase id="25">
+                <text>blck_val_actor_meet_from_tech_25</text>
+                <action>dialogs_black_valley.blck_val_robbery_transiver_1</action>
+                <next>26</next>
+            </phrase>
+            <phrase id="26">
+                <text>blck_val_actor_meet_from_tech_26</text>
+                <next>27</next>
+            </phrase>
+            <phrase id="11">
+                <text>blck_val_actor_meet_from_tech_11</text>
+                <next>12</next>
+            </phrase>
+            <phrase id="12">
+                <text>blck_val_actor_meet_from_tech_12</text>
+                <next>13</next>
+            </phrase>
+            <phrase id="5">
+                <text>blck_val_actor_meet_from_tech_5</text>
+                <next>6</next>
+            </phrase>
+            <phrase id="6">
+                <text>blck_val_actor_meet_from_tech_6</text>
+                <next>7</next>
+            </phrase>
+            <phrase id="7">
+                <text>blck_val_actor_meet_from_tech_7</text>
+                <action>dialogs_black_valley.blck_val_out_pda_mikluchi</action>
+                <next>8</next>
+            </phrase>
+            <phrase id="4">
+                <text>blck_val_actor_meet_from_tech_4</text>
+                <next>5</next>
+            </phrase>
+            <phrase id="1">
+                <text />
+                <dont_has_info>blck_val_miklucha_pda_in_bag_actor</dont_has_info>
+                <next>2</next>
+            </phrase>
+            <phrase id="37">
+                <text />
+                <dont_has_info>blck_val_final_zastava_quest_to_petrovich</dont_has_info>
+                <has_info>blck_val_tech_reload_community</has_info>
+                <next>38</next>
+            </phrase>
+            <phrase id="38">
+                <text>blck_val_actor_meet_from_tech_38</text>
+            </phrase>
+            <phrase id="41">
+                <text>blck_val_actor_meet_from_tech_41</text>
+                <next>42</next>
+            </phrase>
+            <phrase id="42">
+                <text>blck_val_actor_meet_from_tech_42</text>
+                <next>43</next>
+            </phrase>
+            <phrase id="45">
+                <text>blck_val_actor_meet_from_tech_45</text>
+                <next>46</next>
+            </phrase>
+            <phrase id="48">
+                <text />
+                <has_info>blck_val_tech_reload_community_again</has_info>
+                <next>49</next>
+            </phrase>
+            <phrase id="35">
+                <text>blck_val_actor_meet_from_tech_35</text>
+                <action>dialogs_black_valley.change_actor_community_monolith</action>
+                <give_info>blck_val_tech_change_community_monolith</give_info>
+                <next>36</next>
+            </phrase>
+            <phrase id="43">
+                <text>blck_val_actor_meet_from_tech_43</text>
+                <next>44</next>
+            </phrase>
+            <phrase id="44">
+                <text>blck_val_actor_meet_from_tech_44</text>
+                <action>dialogs_black_valley.change_actor_community_killer</action>
+                <next>45</next>
+            </phrase>
+            <phrase id="46">
+                <text>blck_val_actor_meet_from_tech_46</text>
+                <next>47</next>
+            </phrase>
+            <phrase id="15">
+                <text>blck_val_actor_meet_from_tech_15</text>
+                <action>dialogs.break_dialog</action>
+                <action>dialogs_black_valley.blck_val_spatial_bubble_wound_give</action>
+                <action>dialogs_black_valley.blck_val_give_transiver_1</action>
+                <give_info>blck_val_spatial_bubble_quest_give</give_info>
+            </phrase>
+            <phrase id="47">
+                <text>blck_val_actor_meet_from_tech_47</text>
+                <action>dialogs.break_dialog</action>
+                <give_info>blck_val_tech_reload_community_again</give_info>
+            </phrase>
+            <phrase id="2">
+                <text>blck_val_actor_meet_from_tech_2</text>
+            </phrase>
+            <phrase id="3">
+                <text />
+                <dont_has_info>blck_val_spatial_bubble_quest_give</dont_has_info>
+                <has_info>blck_val_miklucha_pda_in_bag_actor</has_info>
+                <next>4</next>
+            </phrase>
+            <phrase id="8">
+                <text>blck_val_actor_meet_from_tech_8</text>
+                <next>9</next>
+            </phrase>
+            <phrase id="16">
+                <text />
+                <dont_has_info>blck_val_actor_dialog_from_sologub_end</dont_has_info>
+                <has_info>blck_val_spatial_bubble_quest_give</has_info>
+                <next>17</next>
+            </phrase>
+            <phrase id="17">
+                <text>blck_val_actor_meet_from_tech_17</text>
+                <next>18</next>
+            </phrase>
+            <phrase id="18">
+                <text>blck_val_actor_meet_from_tech_18</text>
+                <action>dialogs.break_dialog</action>
+            </phrase>
+            <phrase id="20">
+                <text>blck_val_actor_meet_from_tech_20</text>
+                <next>21</next>
+            </phrase>
+            <phrase id="13">
+                <text>blck_val_actor_meet_from_tech_13</text>
+                <next>14</next>
+            </phrase>
+            <phrase id="39">
+                <text />
+                <dont_has_info>blck_val_tech_reload_community_again</dont_has_info>
+                <has_info>blck_val_final_zastava_quest_to_petrovich</has_info>
+                <next>40</next>
+            </phrase>
+            <phrase id="40">
+                <text>blck_val_actor_meet_from_tech_40</text>
+                <next>41</next>
+            </phrase>
+            <phrase id="49">
+                <text>blck_val_actor_meet_from_tech_49</text>
+            </phrase>
+            <phrase id="36">
+                <text>blck_val_actor_meet_from_tech_36</text>
+                <action>dialogs.break_dialog</action>
+                <give_info>blck_val_tech_reload_community</give_info>
+            </phrase>
+            <phrase id="0">
+                <text />
+                <next>1</next>
+                <next>3</next>
+                <next>16</next>
+                <next>19</next>
+                <next>30</next>
+                <next>32</next>
+                <next>37</next>
+                <next>39</next>
+                <next>48</next>
+            </phrase>
+        </phrase_list>
+    </dialog>
+    <dialog id="blck_val_prisoner_quest_line_meet">
+        <phrase_list>
+            <phrase id="5">
+                <text>blck_val_prisoner_quest_line_meet_5</text>
+                <next>6</next>
+            </phrase>
+            <phrase id="7">
+                <text>blck_val_prisoner_quest_line_meet_7</text>
+                <next>8</next>
+            </phrase>
+            <phrase id="8">
+                <text>blck_val_prisoner_quest_line_meet_8</text>
+                <next>9</next>
+            </phrase>
+            <phrase id="9">
+                <text>blck_val_prisoner_quest_line_meet_9</text>
+                <next>10</next>
+            </phrase>
+            <phrase id="10">
+                <text>blck_val_prisoner_quest_line_meet_10</text>
+                <next>11</next>
+            </phrase>
+            <phrase id="1">
+                <text>blck_val_prisoner_quest_line_meet_1</text>
+                <next>2</next>
+            </phrase>
+            <phrase id="3">
+                <text>blck_val_prisoner_quest_line_meet_3</text>
+                <next>4</next>
+            </phrase>
+            <phrase id="4">
+                <text>blck_val_prisoner_quest_line_meet_4</text>
+                <next>5</next>
+            </phrase>
+            <phrase id="6">
+                <text>blck_val_prisoner_quest_line_meet_6</text>
+                <next>7</next>
+            </phrase>
+            <phrase id="0">
+                <text>blck_val_prisoner_quest_line_meet_0</text>
+                <next>1</next>
+            </phrase>
+            <phrase id="2">
+                <text>blck_val_prisoner_quest_line_meet_2</text>
+                <next>3</next>
+            </phrase>
+            <phrase id="11">
+                <text>blck_val_prisoner_quest_line_meet_11</text>
+                <action>dialogs.break_dialog</action>
+                <give_info>blck_val_prisoner_quest_line_meet_done</give_info>
+            </phrase>
+        </phrase_list>
+    </dialog>
+    <dialog id="blck_val_stalker_drunk_quest">
+        <phrase_list>
+            <phrase id="12">
+                <text>blck_val_stalker_drunk_quest_12</text>
+                <next>13</next>
+            </phrase>
+            <phrase id="13">
+                <text>blck_val_stalker_drunk_quest_13</text>
+                <next>14</next>
+            </phrase>
+            <phrase id="14">
+                <text>blck_val_stalker_drunk_quest_14</text>
+                <next>15</next>
+            </phrase>
+            <phrase id="15">
+                <text>blck_val_stalker_drunk_quest_15</text>
+                <next>16</next>
+            </phrase>
+            <phrase id="16">
+                <text>blck_val_stalker_drunk_quest_16</text>
+                <next>17</next>
+            </phrase>
+            <phrase id="17">
+                <text>blck_val_stalker_drunk_quest_17</text>
+                <next>18</next>
+            </phrase>
+            <phrase id="18">
+                <text>blck_val_stalker_drunk_quest_18</text>
+                <next>19</next>
+            </phrase>
+            <phrase id="19">
+                <text>blck_val_stalker_drunk_quest_19</text>
+                <next>20</next>
+            </phrase>
+            <phrase id="20">
+                <text>blck_val_stalker_drunk_quest_20</text>
+                <next>21</next>
+            </phrase>
+            <phrase id="10">
+                <text>blck_val_stalker_drunk_quest_10</text>
+                <next>11</next>
+            </phrase>
+            <phrase id="4">
+                <text>blck_val_stalker_drunk_quest_4</text>
+                <next>5</next>
+            </phrase>
+            <phrase id="5">
+                <text>blck_val_stalker_drunk_quest_5</text>
+                <next>6</next>
+            </phrase>
+            <phrase id="7">
+                <text>blck_val_stalker_drunk_quest_7</text>
+                <next>8</next>
+            </phrase>
+            <phrase id="8">
+                <text>blck_val_stalker_drunk_quest_8</text>
+                <next>9</next>
+            </phrase>
+            <phrase id="9">
+                <text>blck_val_stalker_drunk_quest_9</text>
+                <next>10</next>
+            </phrase>
+            <phrase id="6">
+                <text>blck_val_stalker_drunk_quest_6</text>
+                <next>7</next>
+            </phrase>
+            <phrase id="1">
+                <text />
+                <dont_has_info>blck_val_stalker_drunk_give_quest</dont_has_info>
+                <next>2</next>
+            </phrase>
+            <phrase id="3">
+                <text>blck_val_stalker_drunk_quest_3</text>
+                <next>4</next>
+            </phrase>
+            <phrase id="27">
+                <text />
+                <has_info>blck_val_stalker_drunk_quest_done</has_info>
+                <next>28</next>
+            </phrase>
+            <phrase id="21">
+                <text>blck_val_stalker_drunk_quest_21</text>
+                <action>dialogs.break_dialog</action>
+                <action>dialogs_black_valley.blck_val_kill_to_zombied_give</action>
+                <give_info>blck_val_stalker_drunk_give_quest</give_info>
+            </phrase>
+            <phrase id="22">
+                <text />
+                <dont_has_info>blck_val_stalker_drunk_quest_done</dont_has_info>
+                <has_info>blck_val_stalker_drunk_give_quest</has_info>
+                <next>23</next>
+            </phrase>
+            <phrase id="28">
+                <text>blck_val_stalker_drunk_quest_28</text>
+            </phrase>
+            <phrase id="23">
+                <text>blck_val_stalker_drunk_quest_23</text>
+                <next>24</next>
+                <next>29</next>
+            </phrase>
+            <phrase id="24">
+                <text>blck_val_stalker_drunk_quest_24</text>
+                <has_info>blck_val_stalker_zombied_squad_dead</has_info>
+                <next>25</next>
+            </phrase>
+            <phrase id="29">
+                <text>blck_val_stalker_drunk_quest_29</text>
+                <action>dialogs.break_dialog</action>
+                <dont_has_info>blck_val_stalker_zombied_squad_dead</dont_has_info>
+            </phrase>
+            <phrase id="11">
+                <text>blck_val_stalker_drunk_quest_11</text>
+                <next>12</next>
+            </phrase>
+            <phrase id="25">
+                <text>blck_val_stalker_drunk_quest_25</text>
+                <give_info>blck_val_stalker_drunk_quest_done</give_info>
+                <next>26</next>
+            </phrase>
+            <phrase id="26">
+                <text>blck_val_stalker_drunk_quest_26</text>
+                <action>dialogs.break_dialog</action>
+            </phrase>
+            <phrase id="2">
+                <text>blck_val_stalker_drunk_quest_2</text>
+                <next>3</next>
+            </phrase>
+            <phrase id="0">
+                <text />
+                <next>1</next>
+                <next>22</next>
+                <next>27</next>
+            </phrase>
+        </phrase_list>
+    </dialog>
+    <dialog id="blck_val_stalker_in_bar_meet">
+        <has_info>spatial_anomaly</has_info>
+        <dont_has_info>blck_val_stalker_in_bar_paskhalka_meet</dont_has_info>
+        <phrase_list>
+            <phrase id="4">
+                <text>blck_val_stalker_in_bar_meet_4</text>
+                <next>5</next>
+            </phrase>
+            <phrase id="5">
+                <text>blck_val_stalker_in_bar_meet_5</text>
+                <next>6</next>
+            </phrase>
+            <phrase id="6">
+                <text>blck_val_stalker_in_bar_meet_6</text>
+                <next>7</next>
+            </phrase>
+            <phrase id="8">
+                <text>blck_val_stalker_in_bar_meet_8</text>
+                <next>9</next>
+            </phrase>
+            <phrase id="7">
+                <text>blck_val_stalker_in_bar_meet_7</text>
+                <next>8</next>
+            </phrase>
+            <phrase id="9">
+                <text>blck_val_stalker_in_bar_meet_9</text>
+                <next>10</next>
+            </phrase>
+            <phrase id="12">
+                <text>blck_val_stalker_in_bar_meet_12</text>
+                <next>13</next>
+            </phrase>
+            <phrase id="13">
+                <text>blck_val_stalker_in_bar_meet_13</text>
+                <next>14</next>
+            </phrase>
+            <phrase id="14">
+                <text>blck_val_stalker_in_bar_meet_14</text>
+                <next>15</next>
+            </phrase>
+            <phrase id="15">
+                <text>blck_val_stalker_in_bar_meet_15</text>
+                <next>16</next>
+            </phrase>
+            <phrase id="16">
+                <text>blck_val_stalker_in_bar_meet_16</text>
+                <next>17</next>
+            </phrase>
+            <phrase id="17">
+                <text>blck_val_stalker_in_bar_meet_17</text>
+                <next>18</next>
+            </phrase>
+            <phrase id="18">
+                <text>blck_val_stalker_in_bar_meet_18</text>
+                <next>19</next>
+            </phrase>
+            <phrase id="19">
+                <text>blck_val_stalker_in_bar_meet_19</text>
+                <action>dialogs.break_dialog</action>
+                <give_info>blck_val_stalker_in_bar_paskhalka_meet</give_info>
+            </phrase>
+            <phrase id="10">
+                <text>blck_val_stalker_in_bar_meet_10</text>
+                <action>dialogs.break_dialog</action>
+                <give_info>blck_val_stalker_in_bar_paskhalka_meet</give_info>
+            </phrase>
+            <phrase id="1">
+                <text>blck_val_stalker_in_bar_meet_1</text>
+                <next>2</next>
+                <next>11</next>
+            </phrase>
+            <phrase id="0">
+                <text>blck_val_stalker_in_bar_meet_0</text>
+                <next>1</next>
+            </phrase>
+            <phrase id="11">
+                <text>blck_val_stalker_in_bar_meet_11</text>
+                <next>12</next>
+            </phrase>
+            <phrase id="3">
+                <text>blck_val_stalker_in_bar_meet_3</text>
+                <next>4</next>
+            </phrase>
+            <phrase id="2">
+                <text>blck_val_stalker_in_bar_meet_2</text>
+                <precondition>dialogs_black_valley.blck_val_actor_serofim_check</precondition>
+                <action>dialogs_black_valley.blck_val_out_quest_af_serofim</action>
+                <give_info>blck_val_actor_give_serafim_done</give_info>
+                <next>3</next>
+            </phrase>
+        </phrase_list>
+    </dialog>
+    <dialog id="blck_val_spatial_fish_meet">
+        <phrase_list>
+            <phrase id="7">
+                <text>blck_val_spatial_fish_meet_7</text>
+                <action>dialogs.break_dialog</action>
+                <action>dialogs_black_valley.actor_hit_face_fish</action>
+            </phrase>
+            <phrase id="6">
+                <text>blck_val_spatial_fish_meet_6</text>
+                <next>7</next>
+            </phrase>
+            <phrase id="5">
+                <text>blck_val_spatial_fish_meet_5</text>
+                <next>6</next>
+            </phrase>
+            <phrase id="4">
+                <text>blck_val_spatial_fish_meet_4</text>
+                <next>5</next>
+            </phrase>
+            <phrase id="3">
+                <text>blck_val_spatial_fish_meet_3</text>
+                <next>4</next>
+            </phrase>
+            <phrase id="1">
+                <text>blck_val_spatial_fish_meet_1</text>
+                <give_info>blck_val_actor_meet_dialog_fish</give_info>
+                <next>2</next>
+            </phrase>
+            <phrase id="0">
+                <text>blck_val_spatial_fish_meet_0</text>
+                <next>1</next>
+            </phrase>
+            <phrase id="2">
+                <text>blck_val_spatial_fish_meet_2</text>
+                <next>3</next>
+            </phrase>
+        </phrase_list>
+    </dialog>
+    <dialog id="blck_val_hunter_quester_start">
+        <phrase_list>
+            <phrase id="1">
+                <text />
+                <dont_has_info>blck_val_hunter_dog_tail_quest_give</dont_has_info>
+                <next>2</next>
+            </phrase>
+            <phrase id="7">
+                <text>blck_val_hunter_quester_start_7</text>
+                <give_info>blck_val_quest_mutant_dog_tail_done</give_info>
+                <next>8</next>
+            </phrase>
+            <phrase id="8">
+                <text>blck_val_hunter_quester_start_8</text>
+                <action>dialogs.break_dialog</action>
+                <give_info>blck_val_quest_mutant_dog_tail_dialog_done</give_info>
+            </phrase>
+            <phrase id="2">
+                <text>blck_val_hunter_quester_start_2</text>
+            </phrase>
+            <phrase id="10">
+                <text>blck_val_hunter_quester_start_10</text>
+            </phrase>
+            <phrase id="9">
+                <text />
+                <has_info>blck_val_quest_mutant_dog_tail_dialog_done</has_info>
+                <next>10</next>
+            </phrase>
+            <phrase id="6">
+                <text>blck_val_hunter_quester_start_6</text>
+                <action>dialogs.break_dialog</action>
+            </phrase>
+            <phrase id="3">
+                <text />
+                <dont_has_info>blck_val_quest_mutant_dog_tail_dialog_done</dont_has_info>
+                <has_info>blck_val_hunter_dog_tail_quest_give</has_info>
+                <next>4</next>
+            </phrase>
+            <phrase id="4">
+                <text>blck_val_hunter_quester_start_4</text>
+                <next>5</next>
+                <next>6</next>
+            </phrase>
+            <phrase id="0">
+                <text />
+                <next>1</next>
+                <next>3</next>
+                <next>9</next>
+            </phrase>
+            <phrase id="5">
+                <text>blck_val_hunter_quester_start_5</text>
+                <precondition>dialogs_black_valley.blck_val_quest_mutant_dog_tail_proverka</precondition>
+                <action>dialogs_black_valley.blck_val_out_quest_mutant_dog_tail</action>
+                <give_info>blck_val_out_quest_mutant_dog_tail</give_info>
+                <next>7</next>
+            </phrase>
+        </phrase_list>
+    </dialog>
+    <dialog id="blck_val_hunter_dop_quest_dialog">
+        <phrase_list>
+            <phrase id="2">
+                <text>blck_val_hunter_dop_quest_dialog_2</text>
+                <next>3</next>
+            </phrase>
+            <phrase id="3">
+                <text>blck_val_hunter_dop_quest_dialog_3</text>
+                <next>4</next>
+            </phrase>
+            <phrase id="4">
+                <text>blck_val_hunter_dop_quest_dialog_4</text>
+                <action>dialogs.break_dialog</action>
+                <action>dialogs_black_valley.blck_val_hunt_dog_tail_give</action>
+                <give_info>blck_val_hunter_dog_tail_quest_give</give_info>
+            </phrase>
+            <phrase id="1">
+                <text>blck_val_hunter_dop_quest_dialog_1</text>
+                <dont_has_info>blck_val_hunter_dog_tail_quest_give</dont_has_info>
+                <next>2</next>
+            </phrase>
+            <phrase id="0">
+                <text>blck_val_hunter_dop_quest_dialog_0</text>
+                <next>1</next>
+                <next>5</next>
+            </phrase>
+            <phrase id="5">
+                <text>blck_val_hunter_dop_quest_dialog_5</text>
+                <has_info>blck_val_hunter_dog_tail_quest_give</has_info>
+            </phrase>
+        </phrase_list>
+    </dialog>
+    <dialog id="blck_val_actor_meet_from_shaman">
+        <phrase_list>
+            <phrase id="21">
+                <text />
+                <dont_has_info>blck_val_stavrid_first_dialog_done</dont_has_info>
+                <next>22</next>
+            </phrase>
+            <phrase id="23">
+                <text />
+                <dont_has_info>blck_val_quest_two_friends_done</dont_has_info>
+                <has_info>blck_val_actor_give_knife_shaman</has_info>
+                <next>24</next>
+            </phrase>
+            <phrase id="43">
+                <text>blck_val_actor_meet_from_shaman_43</text>
+                <next>44</next>
+            </phrase>
+            <phrase id="33">
+                <text>blck_val_actor_meet_from_shaman_33</text>
+                <next>34</next>
+                <next>35</next>
+            </phrase>
+            <phrase id="36">
+                <text>blck_val_actor_meet_from_shaman_36</text>
+                <action>dialogs_black_valley.blck_val_robbery_shaman_take_reward_1</action>
+                <next>39</next>
+            </phrase>
+            <phrase id="10">
+                <text />
+                <dont_has_info>blck_val_actor_search_killer</dont_has_info>
+                <has_info>blck_val_actor_meet_from_shaman_done</has_info>
+                <next>11</next>
+            </phrase>
+            <phrase id="55">
+                <text>blck_val_actor_meet_from_shaman_55</text>
+                <next>56</next>
+            </phrase>
+            <phrase id="58">
+                <text>blck_val_actor_meet_from_shaman_58</text>
+                <action>dialogs_black_valley.blck_val_af_kolobok_shaman_take_reward</action>
+                <next>59</next>
+            </phrase>
+            <phrase id="44">
+                <text>blck_val_actor_meet_from_shaman_44</text>
+                <action>dialogs_black_valley.blck_val_robbery_quest_detector_elite</action>
+                <next>45</next>
+            </phrase>
+            <phrase id="56">
+                <text>blck_val_actor_meet_from_shaman_56</text>
+                <action>dialogs_black_valley.blck_val_robbery_af_kolobok</action>
+                <next>58</next>
+            </phrase>
+            <phrase id="25">
+                <text />
+                <dont_has_info>blck_val_quest_find_art_from_barmen</dont_has_info>
+                <has_info>blck_val_quest_two_friends_done</has_info>
+                <next>26</next>
+            </phrase>
+            <phrase id="41">
+                <text>blck_val_actor_meet_from_shaman_41</text>
+                <next>42</next>
+            </phrase>
+            <phrase id="51">
+                <text>blck_val_actor_meet_from_shaman_51</text>
+                <next>55</next>
+            </phrase>
+            <phrase id="49">
+                <text>blck_val_actor_meet_from_shaman_49</text>
+                <next>50</next>
+            </phrase>
+            <phrase id="31">
+                <text>blck_val_actor_meet_from_shaman_31</text>
+                <next>33</next>
+            </phrase>
+            <phrase id="35">
+                <text>blck_val_actor_meet_from_shaman_35</text>
+                <next>37</next>
+            </phrase>
+            <phrase id="42">
+                <text>blck_val_actor_meet_from_shaman_42</text>
+                <next>43</next>
+            </phrase>
+            <phrase id="64">
+                <text>blck_val_actor_meet_from_shaman_64</text>
+                <next>65</next>
+            </phrase>
+            <phrase id="50">
+                <text>blck_val_actor_meet_from_shaman_50</text>
+                <next>53</next>
+            </phrase>
+            <phrase id="71">
+                <text>blck_val_actor_meet_from_shaman_71</text>
+                <next>72</next>
+            </phrase>
+            <phrase id="72">
+                <text>blck_val_actor_meet_from_shaman_72</text>
+                <next>73</next>
+            </phrase>
+            <phrase id="74">
+                <text />
+                <has_info>blck_val_shaman_dialog_from_hunter_done</has_info>
+                <next>75</next>
+            </phrase>
+            <phrase id="67">
+                <text />
+                <dont_has_info>blck_val_shaman_dialog_from_hunter_done</dont_has_info>
+                <has_info>blck_val_stavrid_dialog_vihr_complete</has_info>
+                <next>68</next>
+            </phrase>
+            <phrase id="68">
+                <text>blck_val_actor_meet_from_shaman_68</text>
+                <next>69</next>
+            </phrase>
+            <phrase id="69">
+                <text>blck_val_actor_meet_from_shaman_69</text>
+                <next>70</next>
+            </phrase>
+            <phrase id="70">
+                <text>blck_val_actor_meet_from_shaman_70</text>
+                <next>71</next>
+            </phrase>
+            <phrase id="75">
+                <text>blck_val_actor_meet_from_shaman_75</text>
+            </phrase>
+            <phrase id="63">
+                <text>blck_val_actor_meet_from_shaman_63</text>
+                <next>64</next>
+            </phrase>
+            <phrase id="38">
+                <text>blck_val_actor_meet_from_shaman_38</text>
+                <next>39</next>
+            </phrase>
+            <phrase id="28">
+                <text>blck_val_actor_meet_from_shaman_28</text>
+                <precondition>dialogs_black_valley.check_items_knife_killer_false</precondition>
+                <next>38</next>
+            </phrase>
+            <phrase id="47">
+                <text>blck_val_actor_meet_from_shaman_47</text>
+                <next>48</next>
+                <next>52</next>
+                <next>62</next>
+            </phrase>
+            <phrase id="48">
+                <text>blck_val_actor_meet_from_shaman_48</text>
+                <precondition>dialogs_black_valley.blck_val_check_items_af_fuzz_kolobok</precondition>
+                <dont_has_info>blck_val_bandit_gop_stop_art_out</dont_has_info>
+                <next>49</next>
+            </phrase>
+            <phrase id="73">
+                <text>blck_val_actor_meet_from_shaman_73</text>
+                <action>dialogs.break_dialog</action>
+                <give_info>blck_val_shaman_dialog_from_hunter_done</give_info>
+            </phrase>
+            <phrase id="4">
+                <text>blck_val_actor_meet_from_shaman_4</text>
+                <next>5</next>
+            </phrase>
+            <phrase id="5">
+                <text>blck_val_actor_meet_from_shaman_5</text>
+                <next>6</next>
+            </phrase>
+            <phrase id="6">
+                <text>blck_val_actor_meet_from_shaman_6</text>
+                <next>7</next>
+            </phrase>
+            <phrase id="7">
+                <text>blck_val_actor_meet_from_shaman_7</text>
+                <next>8</next>
+            </phrase>
+            <phrase id="8">
+                <text>blck_val_actor_meet_from_shaman_8</text>
+                <next>9</next>
+            </phrase>
+            <phrase id="9">
+                <text>blck_val_actor_meet_from_shaman_9</text>
+                <next>76</next>
+            </phrase>
+            <phrase id="76">
+                <text>blck_val_actor_meet_from_shaman_76</text>
+                <next>77</next>
+            </phrase>
+            <phrase id="12">
+                <text />
+                <dont_has_info>blck_val_actor_give_knife_shaman</dont_has_info>
+                <has_info>blck_val_actor_search_killer</has_info>
+                <next>13</next>
+            </phrase>
+            <phrase id="13">
+                <text>blck_val_actor_meet_from_shaman_13</text>
+                <next>14</next>
+            </phrase>
+            <phrase id="14">
+                <text>blck_val_actor_meet_from_shaman_14</text>
+                <next>15</next>
+            </phrase>
+            <phrase id="16">
+                <text>blck_val_actor_meet_from_shaman_16</text>
+                <action>dialogs_black_valley.blck_val_knife_killer_out</action>
+                <next>17</next>
+            </phrase>
+            <phrase id="15">
+                <text>blck_val_actor_meet_from_shaman_15</text>
+                <next>16</next>
+            </phrase>
+            <phrase id="17">
+                <text>blck_val_actor_meet_from_shaman_17</text>
+                <next>18</next>
+            </phrase>
+            <phrase id="18">
+                <text>blck_val_actor_meet_from_shaman_18</text>
+                <next>19</next>
+            </phrase>
+            <phrase id="22">
+                <text>blck_val_actor_meet_from_shaman_22</text>
+            </phrase>
+            <phrase id="24">
+                <text>blck_val_actor_meet_from_shaman_24</text>
+            </phrase>
+            <phrase id="26">
+                <text>blck_val_actor_meet_from_shaman_26</text>
+                <next>27</next>
+                <next>28</next>
+            </phrase>
+            <phrase id="27">
+                <text>blck_val_actor_meet_from_shaman_27</text>
+                <precondition>dialogs_black_valley.check_items_knife_killer</precondition>
+                <next>29</next>
+            </phrase>
+            <phrase id="30">
+                <text>blck_val_actor_meet_from_shaman_30</text>
+                <action>dialogs_black_valley.blck_val_robbery_knife_killer</action>
+                <next>32</next>
+            </phrase>
+            <phrase id="29">
+                <text>blck_val_actor_meet_from_shaman_29</text>
+                <next>30</next>
+                <next>31</next>
+            </phrase>
+            <phrase id="32">
+                <text>blck_val_actor_meet_from_shaman_32</text>
+                <action>dialogs_black_valley.blck_val_robbery_shaman_take_reward</action>
+                <next>39</next>
+            </phrase>
+            <phrase id="39">
+                <text>blck_val_actor_meet_from_shaman_39</text>
+                <next>40</next>
+            </phrase>
+            <phrase id="40">
+                <text>blck_val_actor_meet_from_shaman_40</text>
+                <next>41</next>
+            </phrase>
+            <phrase id="37">
+                <text>blck_val_actor_meet_from_shaman_37</text>
+                <next>39</next>
+            </phrase>
+            <phrase id="2">
+                <text>blck_val_actor_meet_from_shaman_2</text>
+                <next>3</next>
+            </phrase>
+            <phrase id="11">
+                <text>blck_val_actor_meet_from_shaman_11</text>
+            </phrase>
+            <phrase id="1">
+                <text />
+                <dont_has_info>blck_val_actor_meet_from_shaman_done</dont_has_info>
+                <has_info>blck_val_stavrid_first_dialog_done</has_info>
+                <next>2</next>
+            </phrase>
+            <phrase id="46">
+                <text />
+                <dont_has_info>blck_val_quest_find_art_from_barmen_done</dont_has_info>
+                <has_info>blck_val_quest_find_art_from_barmen</has_info>
+                <next>47</next>
+            </phrase>
+            <phrase id="3">
+                <text>blck_val_actor_meet_from_shaman_3</text>
+                <next>4</next>
+            </phrase>
+            <phrase id="77">
+                <text>blck_val_actor_meet_from_shaman_77</text>
+                <action>dialogs.break_dialog</action>
+                <give_info>blck_val_actor_meet_from_shaman_done</give_info>
+            </phrase>
+            <phrase id="20">
+                <text>blck_val_actor_meet_from_shaman_20</text>
+                <action>dialogs.break_dialog</action>
+                <give_info>blck_val_actor_give_knife_shaman</give_info>
+            </phrase>
+            <phrase id="19">
+                <text>blck_val_actor_meet_from_shaman_19</text>
+                <action>dialogs_black_valley.blck_val_knife_killer_give</action>
+                <next>20</next>
+            </phrase>
+            <phrase id="45">
+                <text>blck_val_actor_meet_from_shaman_45</text>
+                <action>dialogs.break_dialog</action>
+                <action>dialogs_black_valley.blck_val_find_art_barman_give</action>
+                <give_info>blck_val_quest_find_art_from_barmen</give_info>
+            </phrase>
+            <phrase id="54">
+                <text>blck_val_actor_meet_from_shaman_54</text>
+                <action>dialogs_black_valley.blck_val_robbery_af_kolobok</action>
+                <next>57</next>
+            </phrase>
+            <phrase id="53">
+                <text>blck_val_actor_meet_from_shaman_53</text>
+                <next>54</next>
+            </phrase>
+            <phrase id="52">
+                <text>blck_val_actor_meet_from_shaman_52</text>
+                <action>dialogs.break_dialog</action>
+                <dont_has_info>blck_val_bandit_gop_stop_art_out</dont_has_info>
+            </phrase>
+            <phrase id="62">
+                <text>blck_val_actor_meet_from_shaman_62</text>
+                <dont_has_info>blck_val_quest_find_art_from_barmen_done</dont_has_info>
+                <has_info>blck_val_bandit_gop_stop_art_out</has_info>
+                <next>63</next>
+            </phrase>
+            <phrase id="60">
+                <text />
+                <dont_has_info>blck_val_stavrid_dialog_vihr_complete</dont_has_info>
+                <has_info>blck_val_quest_find_art_from_barmen_done</has_info>
+                <next>61</next>
+            </phrase>
+            <phrase id="61">
+                <text>blck_val_actor_meet_from_shaman_61</text>
+            </phrase>
+            <phrase id="65">
+                <text>blck_val_actor_meet_from_shaman_65</text>
+                <next>66</next>
+            </phrase>
+            <phrase id="66">
+                <text>blck_val_actor_meet_from_shaman_66</text>
+                <action>dialogs.break_dialog</action>
+                <action>dialogs_black_valley.blck_val_night_shooter_quest_give</action>
+                <give_info>blck_val_quest_find_art_from_barmen_done</give_info>
+            </phrase>
+            <phrase id="57">
+                <text>blck_val_actor_meet_from_shaman_57</text>
+                <action>dialogs_black_valley.blck_val_af_kolobok_shaman_take_reward_1</action>
+                <next>59</next>
+            </phrase>
+            <phrase id="59">
+                <text>blck_val_actor_meet_from_shaman_59</text>
+                <action>dialogs.break_dialog</action>
+                <action>dialogs_black_valley.blck_val_night_shooter_quest_give</action>
+                <give_info>blck_val_quest_find_art_from_barmen_done</give_info>
+            </phrase>
+            <phrase id="0">
+                <text />
+                <next>1</next>
+                <next>10</next>
+                <next>12</next>
+                <next>21</next>
+                <next>23</next>
+                <next>25</next>
+                <next>46</next>
+                <next>60</next>
+                <next>67</next>
+                <next>74</next>
+            </phrase>
+            <phrase id="34">
+                <text>blck_val_actor_meet_from_shaman_34</text>
+                <action>dialogs_black_valley.blck_val_robbery_knife_killer</action>
+                <next>36</next>
+            </phrase>
+        </phrase_list>
+    </dialog>
+    <dialog id="blck_val_actor_meet_from_lutiy">
+        <phrase_list>
+            <phrase id="11">
+                <text>blck_val_actor_meet_from_lutiy_11</text>
+            </phrase>
+            <phrase id="10">
+                <text />
+                <has_info>blck_val_lutiy_meet_zastava_done</has_info>
+                <next>11</next>
+            </phrase>
+            <phrase id="1">
+                <text />
+                <dont_has_info>blck_val_lutiy_meet_zastava_done</dont_has_info>
+                <next>2</next>
+            </phrase>
+            <phrase id="0">
+                <text />
+                <next>1</next>
+                <next>10</next>
+            </phrase>
+            <phrase id="13">
+                <text>blck_val_actor_meet_from_lutiy_13</text>
+                <action>dialogs.break_dialog</action>
+                <give_info>blck_val_lutiy_meet_zastava_done</give_info>
+            </phrase>
+            <phrase id="9">
+                <text>blck_val_actor_meet_from_lutiy_9</text>
+                <next>12</next>
+            </phrase>
+            <phrase id="12">
+                <text>blck_val_actor_meet_from_lutiy_12</text>
+                <next>13</next>
+            </phrase>
+            <phrase id="2">
+                <text>blck_val_actor_meet_from_lutiy_2</text>
+                <next>3</next>
+            </phrase>
+            <phrase id="3">
+                <text>blck_val_actor_meet_from_lutiy_3</text>
+                <next>4</next>
+            </phrase>
+            <phrase id="4">
+                <text>blck_val_actor_meet_from_lutiy_4</text>
+                <next>5</next>
+            </phrase>
+            <phrase id="5">
+                <text>blck_val_actor_meet_from_lutiy_5</text>
+                <next>6</next>
+            </phrase>
+            <phrase id="6">
+                <text>blck_val_actor_meet_from_lutiy_6</text>
+                <next>7</next>
+            </phrase>
+            <phrase id="7">
+                <text>blck_val_actor_meet_from_lutiy_7</text>
+                <next>8</next>
+            </phrase>
+            <phrase id="8">
+                <text>blck_val_actor_meet_from_lutiy_8</text>
+                <next>9</next>
+            </phrase>
+        </phrase_list>
+    </dialog>
+    <dialog id="blck_val_actor_meet_medic_about_toy">
+        <has_info>blck_val_petrovich_dop_quest_start</has_info>
+        <dont_has_info>blck_val_chimera_toys_remove</dont_has_info>
+        <phrase_list>
+            <phrase id="3">
+                <text>blck_val_actor_meet_medic_about_toy_3</text>
+                <next>4</next>
+                <next>5</next>
+                <next>6</next>
+                <next>7</next>
+                <next>8</next>
+            </phrase>
+            <phrase id="2">
+                <text>blck_val_actor_meet_medic_about_toy_2</text>
+                <next>3</next>
+            </phrase>
+            <phrase id="1">
+                <text>blck_val_actor_meet_medic_about_toy_1</text>
+                <next>2</next>
+            </phrase>
+            <phrase id="4">
+                <text>blck_val_actor_meet_medic_about_toy_4</text>
+                <precondition>dialogs_black_valley.blck_val_analiz_money_500_check</precondition>
+                <next>9</next>
+            </phrase>
+            <phrase id="5">
+                <text>blck_val_actor_meet_medic_about_toy_5</text>
+                <precondition>dialogs_black_valley.blck_val_analiz_money_check</precondition>
+                <next>10</next>
+            </phrase>
+            <phrase id="9">
+                <text>blck_val_actor_meet_medic_about_toy_9</text>
+                <next>5</next>
+                <next>6</next>
+                <next>7</next>
+                <next>8</next>
+            </phrase>
+            <phrase id="10">
+                <text>blck_val_actor_meet_medic_about_toy_10</text>
+                <next>6</next>
+                <next>7</next>
+                <next>8</next>
+            </phrase>
+            <phrase id="6">
+                <text>blck_val_actor_meet_medic_about_toy_6</text>
+                <precondition>dialogs_black_valley.blck_val_analiz_money_1500_check</precondition>
+                <next>11</next>
+            </phrase>
+            <phrase id="7">
+                <text>blck_val_actor_meet_medic_about_toy_7</text>
+                <precondition>dialogs_black_valley.blck_val_analiz_money_2000_check</precondition>
+                <next>15</next>
+            </phrase>
+            <phrase id="11">
+                <text>blck_val_actor_meet_medic_about_toy_11</text>
+                <next>12</next>
+            </phrase>
+            <phrase id="15">
+                <text>blck_val_actor_meet_medic_about_toy_15</text>
+                <next>16</next>
+            </phrase>
+            <phrase id="14">
+                <text>blck_val_actor_meet_medic_about_toy_14</text>
+                <action>dialogs.break_dialog</action>
+            </phrase>
+            <phrase id="12">
+                <text>blck_val_actor_meet_medic_about_toy_12</text>
+                <action>dialogs_black_valley.blck_val_give_money_chimera_toy</action>
+                <next>13</next>
+            </phrase>
+            <phrase id="16">
+                <text>blck_val_actor_meet_medic_about_toy_16</text>
+                <action>dialogs_black_valley.blck_val_give_money_more_chimera_toy</action>
+                <next>13</next>
+            </phrase>
+            <phrase id="13">
+                <text>blck_val_actor_meet_medic_about_toy_13</text>
+                <action>dialogs_black_valley.blck_val_chimera_toy_to_actor</action>
+                <give_info>blck_val_chimera_toys_remove</give_info>
+                <next>14</next>
+            </phrase>
+            <phrase id="0">
+                <text>blck_val_actor_meet_medic_about_toy_0</text>
+                <next>1</next>
+            </phrase>
+            <phrase id="8">
+                <text>blck_val_actor_meet_medic_about_toy_8</text>
+                <action>dialogs.break_dialog</action>
+            </phrase>
+        </phrase_list>
+    </dialog>
+    <dialog id="blck_val_vihr_meet_1">
+        <has_info>blck_val_quest_wpn_vihr_search_give</has_info>
+        <dont_has_info>blck_val_vihr_meet_1</dont_has_info>
+        <phrase_list>
+            <phrase id="2">
+                <text>blck_val_vihr_meet_1_2</text>
+                <next>3</next>
+            </phrase>
+            <phrase id="3">
+                <text>blck_val_vihr_meet_1_3</text>
+                <give_info>blck_val_vihr_meet_1</give_info>
+            </phrase>
+            <phrase id="1">
+                <text>blck_val_vihr_meet_1_1</text>
+                <next>2</next>
+            </phrase>
+            <phrase id="0">
+                <text>blck_val_vihr_meet_1_0</text>
+                <next>1</next>
+            </phrase>
+        </phrase_list>
+    </dialog>
+    <dialog id="blck_val_stalker_in_bar_start">
+        <phrase_list>
+            <phrase id="1">
+                <text />
+                <next>2</next>
+            </phrase>
+            <phrase id="2">
+                <text>blck_val_stalker_in_bar_start_2</text>
+            </phrase>
+            <phrase id="0">
+                <text />
+                <next>1</next>
+            </phrase>
+        </phrase_list>
+    </dialog>
+    <dialog id="blck_val_bandit_bookmaker_training">
+        <phrase_list>
+            <phrase id="21">
+                <text>blck_val_bandit_bookmaker_training_21</text>
+                <next>211</next>
+            </phrase>
+            <phrase id="211">
+                <text>blck_val_bandit_bookmaker_training_211</text>
+                <next>11</next>
+            </phrase>
+            <phrase id="31">
+                <text>blck_val_bandit_bookmaker_training_31</text>
+                <next>311</next>
+            </phrase>
+            <phrase id="311">
+                <text>blck_val_bandit_bookmaker_training_311</text>
+            </phrase>
+            <phrase id="11">
+                <text>blck_val_bandit_bookmaker_training_11</text>
+                <next>111</next>
+            </phrase>
+            <phrase id="11111">
+                <text>blck_val_bandit_bookmaker_training_11111</text>
+                <next>111111</next>
+            </phrase>
+            <phrase id="111111">
+                <text>blck_val_bandit_bookmaker_training_111111</text>
+                <action>dialogs.break_dialog</action>
+                <action>minigame_dialogs.start_crowkiller</action>
+            </phrase>
+            <phrase id="1">
+                <text>blck_val_bandit_bookmaker_training_1</text>
+                <next>11</next>
+                <next>21</next>
+                <next>31</next>
+            </phrase>
+            <phrase id="111">
+                <text>blck_val_bandit_bookmaker_training_111</text>
+                <next>1111</next>
+                <next>1112</next>
+                <next>1113</next>
+                <next>1114</next>
+            </phrase>
+            <phrase id="1111">
+                <text />
+                <script_text>minigame_dialogs.get_crows_to_kill_count</script_text>
+                <action>minigame_dialogs.set_crowkiller_selected_count</action>
+                <next>11111</next>
+            </phrase>
+            <phrase id="1112">
+                <text />
+                <script_text>minigame_dialogs.get_crows_to_kill_count</script_text>
+                <action>minigame_dialogs.set_crowkiller_selected_count</action>
+                <next>11111</next>
+            </phrase>
+            <phrase id="1113">
+                <text />
+                <script_text>minigame_dialogs.get_crows_to_kill_count</script_text>
+                <action>minigame_dialogs.set_crowkiller_selected_count</action>
+                <next>11111</next>
+            </phrase>
+            <phrase id="1114">
+                <text />
+                <script_text>minigame_dialogs.get_crows_to_kill_count</script_text>
+                <action>minigame_dialogs.set_crowkiller_selected_count</action>
+                <next>11111</next>
+            </phrase>
+            <phrase id="0">
+                <text>blck_val_bandit_bookmaker_training_0</text>
+                <action>minigame_dialogs.set_crowkiller_game_type</action>
+                <next>1</next>
+            </phrase>
+        </phrase_list>
+    </dialog>
+    <dialog id="blck_val_bandit_shmiga_escape">
+        <phrase_list>
+            <phrase id="2">
+                <text>blck_val_bandit_shmiga_escape_2</text>
+                <action>dialogs_black_valley.blck_val_key_to_prison_give</action>
+                <next>3</next>
+            </phrase>
+            <phrase id="1">
+                <text>blck_val_bandit_shmiga_escape_1</text>
+                <next>2</next>
+            </phrase>
+            <phrase id="3">
+                <text>blck_val_bandit_shmiga_escape_3</text>
+                <action>dialogs.break_dialog</action>
+                <give_info>blck_val_bandit_shmiga_escape_from_prison</give_info>
+                <give_info>blck_val_shmiga_escape_from_prison</give_info>
+            </phrase>
+            <phrase id="0">
+                <text>blck_val_bandit_shmiga_escape_0</text>
+                <next>1</next>
+            </phrase>
+        </phrase_list>
+    </dialog>
+    <dialog id="blck_val_bandit_gop_stop">
+        <phrase_list>
+            <phrase id="4">
+                <text>blck_val_bandit_gop_stop_4</text>
+                <action>dialogs.break_dialog</action>
+                <give_info>blck_val_bandit_gop_stop_meet_done</give_info>
+            </phrase>
+            <phrase id="1">
+                <text>blck_val_bandit_gop_stop_1</text>
+                <next>2</next>
+            </phrase>
+            <phrase id="2">
+                <text>blck_val_bandit_gop_stop_2</text>
+                <next>3</next>
+                <next>5</next>
+            </phrase>
+            <phrase id="7">
+                <text>blck_val_bandit_gop_stop_7</text>
+                <action>dialogs.break_dialog</action>
+                <give_info>blck_val_bandit_gop_stop_meet_done</give_info>
+                <give_info>blck_val_bandit_gop_stop_art_out</give_info>
+            </phrase>
+            <phrase id="5">
+                <text>blck_val_bandit_gop_stop_5</text>
+                <action>dialogs_black_valley.blck_val_robbery_af_kolobok</action>
+                <next>6</next>
+            </phrase>
+            <phrase id="6">
+                <text>blck_val_bandit_gop_stop_6</text>
+                <next>7</next>
+            </phrase>
+            <phrase id="0">
+                <text>blck_val_bandit_gop_stop_0</text>
+                <next>1</next>
+            </phrase>
+            <phrase id="3">
+                <text>blck_val_bandit_gop_stop_3</text>
+                <action>dialogs.break_dialog</action>
+                <give_info>blck_val_bandit_gop_stop_meet_done</give_info>
+                <give_info>blck_val_bandit_gop_stop_meet_enemy</give_info>
+            </phrase>
+        </phrase_list>
+    </dialog>
+    <dialog id="blck_val_sologub_help_meet">
+        <phrase_list>
+            <phrase id="4">
+                <text>blck_val_sologub_help_meet_4</text>
+                <next>5</next>
+            </phrase>
+            <phrase id="5">
+                <text>blck_val_sologub_help_meet_5</text>
+                <next>6</next>
+            </phrase>
+            <phrase id="6">
+                <text>blck_val_sologub_help_meet_6</text>
+                <next>7</next>
+            </phrase>
+            <phrase id="8">
+                <text>blck_val_sologub_help_meet_8</text>
+                <next>9</next>
+            </phrase>
+            <phrase id="9">
+                <text>blck_val_sologub_help_meet_9</text>
+                <next>10</next>
+            </phrase>
+            <phrase id="10">
+                <text>blck_val_sologub_help_meet_10</text>
+                <next>11</next>
+            </phrase>
+            <phrase id="11">
+                <text>blck_val_sologub_help_meet_11</text>
+                <next>12</next>
+            </phrase>
+            <phrase id="12">
+                <text>blck_val_sologub_help_meet_12</text>
+                <next>13</next>
+            </phrase>
+            <phrase id="14">
+                <text>blck_val_sologub_help_meet_14</text>
+                <next>15</next>
+            </phrase>
+            <phrase id="15">
+                <text>blck_val_sologub_help_meet_15</text>
+                <next>16</next>
+            </phrase>
+            <phrase id="16">
+                <text>blck_val_sologub_help_meet_16</text>
+                <next>17</next>
+            </phrase>
+            <phrase id="17">
+                <text>blck_val_sologub_help_meet_17</text>
+                <next>18</next>
+            </phrase>
+            <phrase id="19">
+                <text>blck_val_sologub_help_meet_19</text>
+                <next>20</next>
+            </phrase>
+            <phrase id="21">
+                <text>blck_val_sologub_help_meet_21</text>
+                <next>22</next>
+            </phrase>
+            <phrase id="22">
+                <text>blck_val_sologub_help_meet_22</text>
+                <next>23</next>
+            </phrase>
+            <phrase id="7">
+                <text>blck_val_sologub_help_meet_7</text>
+                <next>8</next>
+            </phrase>
+            <phrase id="20">
+                <text>blck_val_sologub_help_meet_20</text>
+                <next>21</next>
+            </phrase>
+            <phrase id="1">
+                <text />
+                <dont_has_info>blck_val_actor_dialog_from_sologub_end</dont_has_info>
+                <next>2</next>
+            </phrase>
+            <phrase id="24">
+                <text />
+                <has_info>blck_val_actor_dialog_from_sologub_end</has_info>
+                <next>25</next>
+            </phrase>
+            <phrase id="18">
+                <text>blck_val_sologub_help_meet_18</text>
+                <next>19</next>
+            </phrase>
+            <phrase id="13">
+                <text>blck_val_sologub_help_meet_13</text>
+                <next>14</next>
+            </phrase>
+            <phrase id="23">
+                <text>blck_val_sologub_help_meet_23</text>
+                <action>dialogs.break_dialog</action>
+                <give_info>blck_val_actor_dialog_from_sologub_end</give_info>
+            </phrase>
+            <phrase id="2">
+                <text>blck_val_sologub_help_meet_2</text>
+                <next>3</next>
+            </phrase>
+            <phrase id="0">
+                <text />
+                <next>1</next>
+                <next>24</next>
+            </phrase>
+            <phrase id="3">
+                <text>blck_val_sologub_help_meet_3</text>
+                <next>4</next>
+            </phrase>
+            <phrase id="25">
+                <text>blck_val_sologub_help_meet_25</text>
+            </phrase>
+        </phrase_list>
+    </dialog>
+    <dialog id="blck_val_actor_meet_from_provodnik">
+        <phrase_list>
+            <phrase id="12">
+                <text>blck_val_actor_meet_from_provodnik_12</text>
+                <action>dialogs.break_dialog</action>
+                <give_info>blck_val_two_dialog_provodnik_complete</give_info>
+            </phrase>
+            <phrase id="19">
+                <text>blck_val_actor_meet_from_provodnik_19</text>
+                <action>dialogs.break_dialog</action>
+                <give_info>blck_val_dialog_from_zavod_teleport_start</give_info>
+            </phrase>
+            <phrase id="27">
+                <text>blck_val_actor_meet_from_provodnik_27</text>
+                <next>28</next>
+            </phrase>
+            <phrase id="26">
+                <text>blck_val_actor_meet_from_provodnik_26</text>
+                <next>27</next>
+            </phrase>
+            <phrase id="28">
+                <text>blck_val_actor_meet_from_provodnik_28</text>
+                <action>dialogs.break_dialog</action>
+                <give_info>blck_val_dialog_actor_go_to_hutor</give_info>
+                <give_info>blck_val_dialog_actor_go_to_zavod_finale</give_info>
+            </phrase>
+            <phrase id="21">
+                <text>blck_val_actor_meet_from_provodnik_21</text>
+                <action>dialogs.break_dialog</action>
+                <give_info>blck_val_dialog_from_zavod_teleport_final</give_info>
+                <give_info>blck_val_dialog_from_zavod_teleport_complete</give_info>
+            </phrase>
+            <phrase id="5">
+                <text>blck_val_actor_meet_from_provodnik_5</text>
+                <next>6</next>
+            </phrase>
+            <phrase id="6">
+                <text>blck_val_actor_meet_from_provodnik_6</text>
+                <next>7</next>
+            </phrase>
+            <phrase id="7">
+                <text>blck_val_actor_meet_from_provodnik_7</text>
+                <next>8</next>
+            </phrase>
+            <phrase id="9">
+                <text>blck_val_actor_meet_from_provodnik_9</text>
+                <action>dialogs.break_dialog</action>
+                <give_info>blck_val_first_dialog_provodnik_complete</give_info>
+            </phrase>
+            <phrase id="11">
+                <text>blck_val_actor_meet_from_provodnik_11</text>
+                <next>12</next>
+            </phrase>
+            <phrase id="16">
+                <text>blck_val_actor_meet_from_provodnik_16</text>
+                <next>18</next>
+            </phrase>
+            <phrase id="32">
+                <text>blck_val_actor_meet_from_provodnik_32</text>
+                <next>33</next>
+                <next>17</next>
+            </phrase>
+            <phrase id="42">
+                <text>blck_val_actor_meet_from_provodnik_42</text>
+                <action>dialogs.break_dialog</action>
+                <give_info>blck_val_dialog_actor_go_to_zavod</give_info>
+            </phrase>
+            <phrase id="43">
+                <text>blck_val_actor_meet_from_provodnik_43</text>
+                <action>dialogs.break_dialog</action>
+            </phrase>
+            <phrase id="38">
+                <text>blck_val_actor_meet_from_provodnik_38</text>
+                <give_info>blck_val_actor_meet_provodnik_to_anomaly</give_info>
+                <next>41</next>
+                <next>42</next>
+                <next>43</next>
+            </phrase>
+            <phrase id="41">
+                <text>blck_val_actor_meet_from_provodnik_41</text>
+                <action>dialogs.break_dialog</action>
+                <give_info>blck_val_dialog_actor_go_to_center</give_info>
+            </phrase>
+            <phrase id="52">
+                <text>blck_val_actor_meet_from_provodnik_52</text>
+                <action>dialogs.break_dialog</action>
+                <give_info>blck_val_dialog_actor_go_to_center</give_info>
+            </phrase>
+            <phrase id="51">
+                <text>blck_val_actor_meet_from_provodnik_51</text>
+                <next>52</next>
+                <next>17</next>
+            </phrase>
+            <phrase id="35">
+                <text>blck_val_actor_meet_from_provodnik_35</text>
+                <next>36</next>
+                <next>17</next>
+            </phrase>
+            <phrase id="46">
+                <text>blck_val_actor_meet_from_provodnik_46</text>
+                <give_info>blck_val_actor_meet_provodnik_to_shcool_done</give_info>
+                <next>47</next>
+            </phrase>
+            <phrase id="2">
+                <text>blck_val_actor_meet_from_provodnik_2</text>
+                <give_info>blck_val_first_dialog_provodnik_start</give_info>
+                <next>3</next>
+            </phrase>
+            <phrase id="3">
+                <text>blck_val_actor_meet_from_provodnik_3</text>
+                <next>4</next>
+            </phrase>
+            <phrase id="4">
+                <text>blck_val_actor_meet_from_provodnik_4</text>
+                <next>5</next>
+            </phrase>
+            <phrase id="1">
+                <text />
+                <dont_has_info>blck_val_first_dialog_provodnik_complete</dont_has_info>
+                <next>2</next>
+            </phrase>
+            <phrase id="34">
+                <text />
+                <has_info>blck_val_dialog_actor_go_to_zavod</has_info>
+                <next>35</next>
+            </phrase>
+            <phrase id="44">
+                <text />
+                <has_info>blck_val_dialog_actor_go_to_center</has_info>
+                <next>35</next>
+            </phrase>
+            <phrase id="45">
+                <text />
+                <has_info>blck_val_dialog_actor_go_to_shcool</has_info>
+                <next>35</next>
+            </phrase>
+            <phrase id="10">
+                <text />
+                <dont_has_info>blck_val_two_dialog_provodnik_complete</dont_has_info>
+                <has_info>blck_val_first_dialog_provodnik_complete</has_info>
+                <next>11</next>
+            </phrase>
+            <phrase id="22">
+                <text />
+                <dont_has_info>blck_val_dialog_actor_go_to_zavod_finale</dont_has_info>
+                <has_info>blck_val_dialog_from_zavod_teleport_final</has_info>
+                <next>23</next>
+            </phrase>
+            <phrase id="15">
+                <text />
+                <dont_has_info>blck_val_dialog_from_zavod_teleport_final</dont_has_info>
+                <has_info>blck_val_dialog_from_zavod_teleport_start</has_info>
+                <next>20</next>
+            </phrase>
+            <phrase id="14">
+                <text>blck_val_actor_meet_from_provodnik_14</text>
+                <next>16</next>
+                <next>17</next>
+            </phrase>
+            <phrase id="13">
+                <text />
+                <dont_has_info>blck_val_dialog_from_zavod_teleport_start</dont_has_info>
+                <has_info>blck_val_two_dialog_provodnik_complete</has_info>
+                <next>14</next>
+            </phrase>
+            <phrase id="33">
+                <text>blck_val_actor_meet_from_provodnik_33</text>
+                <action>dialogs.break_dialog</action>
+                <give_info>blck_val_dialog_actor_go_to_zavod</give_info>
+            </phrase>
+            <phrase id="36">
+                <text>blck_val_actor_meet_from_provodnik_36</text>
+                <action>dialogs.break_dialog</action>
+                <give_info>blck_val_dialog_actor_go_to_hutor</give_info>
+            </phrase>
+            <phrase id="8">
+                <text>blck_val_actor_meet_from_provodnik_8</text>
+                <next>9</next>
+            </phrase>
+            <phrase id="0">
+                <text />
+                <next>1</next>
+                <next>10</next>
+                <next>13</next>
+                <next>15</next>
+                <next>22</next>
+                <next>29</next>
+                <next>34</next>
+                <next>44</next>
+                <next>45</next>
+            </phrase>
+            <phrase id="23">
+                <text>blck_val_actor_meet_from_provodnik_23</text>
+                <next>24</next>
+                <next>17</next>
+            </phrase>
+            <phrase id="29">
+                <text />
+                <dont_has_info>blck_val_dialog_actor_go_to_zavod</dont_has_info>
+                <dont_has_info>blck_val_dialog_actor_go_to_center</dont_has_info>
+                <dont_has_info>blck_val_dialog_actor_go_to_shcool</dont_has_info>
+                <has_info>blck_val_provodnik_teleport_to_hutor_again</has_info>
+                <next>30</next>
+            </phrase>
+            <phrase id="17">
+                <text>blck_val_actor_meet_from_provodnik_17</text>
+                <action>dialogs.break_dialog</action>
+            </phrase>
+            <phrase id="18">
+                <text>blck_val_actor_meet_from_provodnik_18</text>
+                <next>19</next>
+                <next>17</next>
+            </phrase>
+            <phrase id="20">
+                <text>blck_val_actor_meet_from_provodnik_20</text>
+                <next>21</next>
+            </phrase>
+            <phrase id="24">
+                <text>blck_val_actor_meet_from_provodnik_24</text>
+                <has_info>blck_val_zver_has_item_knife_killer</has_info>
+                <next>25</next>
+            </phrase>
+            <phrase id="25">
+                <text>blck_val_actor_meet_from_provodnik_25</text>
+                <next>26</next>
+            </phrase>
+            <phrase id="30">
+                <text>blck_val_actor_meet_from_provodnik_30</text>
+                <next>31</next>
+                <next>37</next>
+                <next>50</next>
+                <next>39</next>
+                <next>40</next>
+                <next>17</next>
+            </phrase>
+            <phrase id="31">
+                <text>blck_val_actor_meet_from_provodnik_31</text>
+                <next>32</next>
+            </phrase>
+            <phrase id="50">
+                <text>blck_val_actor_meet_from_provodnik_50</text>
+                <has_info>blck_val_actor_meet_provodnik_to_anomaly</has_info>
+                <next>51</next>
+            </phrase>
+            <phrase id="37">
+                <text>blck_val_actor_meet_from_provodnik_37</text>
+                <dont_has_info>blck_val_actor_meet_provodnik_to_anomaly</dont_has_info>
+                <has_info>blck_val_quest_find_art_from_barmen</has_info>
+                <next>38</next>
+            </phrase>
+            <phrase id="49">
+                <text>blck_val_actor_meet_from_provodnik_49</text>
+                <action>dialogs.break_dialog</action>
+                <give_info>blck_val_actor_meet_provodnik_to_shcool_done</give_info>
+            </phrase>
+            <phrase id="47">
+                <text>blck_val_actor_meet_from_provodnik_47</text>
+                <action>dialogs.break_dialog</action>
+                <give_info>blck_val_dialog_actor_go_to_shcool</give_info>
+            </phrase>
+            <phrase id="39">
+                <text>blck_val_actor_meet_from_provodnik_39</text>
+                <dont_has_info>blck_val_miklucha_first_quest_give</dont_has_info>
+                <dont_has_info>blck_val_dialog_actor_go_to_shcool</dont_has_info>
+                <has_info>blck_val_quest_find_art_from_barmen_done</has_info>
+                <next>46</next>
+            </phrase>
+            <phrase id="40">
+                <text>blck_val_actor_meet_from_provodnik_40</text>
+                <dont_has_info>blck_val_actor_meet_provodnik_to_shcool_done</dont_has_info>
+                <has_info>blck_val_dialog_actor_go_to_shcool</has_info>
+                <next>48</next>
+                <next>53</next>
+            </phrase>
+            <phrase id="53">
+                <text>blck_val_actor_meet_from_provodnik_53</text>
+                <dont_has_info>blck_val_actor_meet_provodnik_to_shcool</dont_has_info>
+                <next>54</next>
+                <next>17</next>
+            </phrase>
+            <phrase id="48">
+                <text>blck_val_actor_meet_from_provodnik_48</text>
+                <has_info>blck_val_actor_meet_provodnik_to_shcool</has_info>
+                <next>49</next>
+            </phrase>
+            <phrase id="54">
+                <text>blck_val_actor_meet_from_provodnik_54</text>
+                <action>dialogs.break_dialog</action>
+                <give_info>blck_val_dialog_actor_go_to_shcool</give_info>
+            </phrase>
+        </phrase_list>
+    </dialog>
+    <dialog id="blck_val_vihr_meet_5">
+        <has_info>blck_val_vihr_meet_4</has_info>
+        <dont_has_info>blck_val_vihr_meet_5</dont_has_info>
+        <phrase_list>
+            <phrase id="1">
+                <text>blck_val_vihr_meet_5_1</text>
+                <give_info>blck_val_vihr_meet_5</give_info>
+            </phrase>
+            <phrase id="0">
+                <text>blck_val_vihr_meet_5_0</text>
+                <next>1</next>
+            </phrase>
+        </phrase_list>
+    </dialog>
+    <dialog id="blck_val_vihr_meet_4">
+        <has_info>blck_val_quest_wpn_vihr_search_give</has_info>
+        <dont_has_info>blck_val_vihr_meet_4</dont_has_info>
+        <phrase_list>
+            <phrase id="0">
+                <text>blck_val_vihr_meet_4_0</text>
+                <next>1</next>
+            </phrase>
+            <phrase id="1">
+                <text>blck_val_vihr_meet_4_1</text>
+                <give_info>blck_val_vihr_meet_4</give_info>
+            </phrase>
+        </phrase_list>
+    </dialog>
+    <dialog id="blck_val_vihr_meet_3">
+        <has_info>blck_val_quest_wpn_vihr_search_give</has_info>
+        <dont_has_info>blck_val_vihr_meet_3</dont_has_info>
+        <phrase_list>
+            <phrase id="0">
+                <text>blck_val_vihr_meet_3_0</text>
+                <next>1</next>
+            </phrase>
+            <phrase id="1">
+                <text>blck_val_vihr_meet_3_1</text>
+                <give_info>blck_val_vihr_meet_3</give_info>
+            </phrase>
+        </phrase_list>
+    </dialog>
+    <dialog id="blck_val_vihr_meet_2">
+        <has_info>blck_val_quest_wpn_vihr_search_give</has_info>
+        <dont_has_info>blck_val_vihr_meet_2</dont_has_info>
+        <phrase_list>
+            <phrase id="0">
+                <text>blck_val_vihr_meet_2_0</text>
+                <next>1</next>
+            </phrase>
+            <phrase id="1">
+                <text>blck_val_vihr_meet_2_1</text>
+                <give_info>blck_val_vihr_meet_2</give_info>
+            </phrase>
+        </phrase_list>
+    </dialog>
+    <dialog id="blck_val_miklucha_zavod_quest">
+        <phrase_list>
+            <phrase id="10">
+                <text>blck_val_miklucha_zavod_quest_10</text>
+                <next>11</next>
+            </phrase>
+            <phrase id="15">
+                <text>blck_val_miklucha_zavod_quest_15</text>
+                <next>16</next>
+            </phrase>
+            <phrase id="3">
+                <text>blck_val_miklucha_zavod_quest_3</text>
+                <next>4</next>
+            </phrase>
+            <phrase id="13">
+                <text />
+                <dont_has_info>blck_val_zavod_zasada_monolit_time</dont_has_info>
+                <has_info>blck_val_zavod_zasada_monolit_start</has_info>
+                <next>14</next>
+            </phrase>
+            <phrase id="16">
+                <text>blck_val_miklucha_zavod_quest_16</text>
+                <next>17</next>
+            </phrase>
+            <phrase id="8">
+                <text />
+                <dont_has_info>blck_val_zavod_zasada_monolit_start</dont_has_info>
+                <has_info>blck_val_quest_zavod_start</has_info>
+                <next>9</next>
+            </phrase>
+            <phrase id="14">
+                <text>blck_val_miklucha_zavod_quest_14</text>
+                <next>15</next>
+            </phrase>
+            <phrase id="9">
+                <text>blck_val_miklucha_zavod_quest_9</text>
+                <next>10</next>
+            </phrase>
+            <phrase id="4">
+                <text>blck_val_miklucha_zavod_quest_4</text>
+                <next>5</next>
+            </phrase>
+            <phrase id="12">
+                <text>blck_val_miklucha_zavod_quest_12</text>
+                <action>dialogs.break_dialog</action>
+                <give_info>blck_val_zavod_zasada_monolit_start</give_info>
+            </phrase>
+            <phrase id="17">
+                <text>blck_val_miklucha_zavod_quest_17</text>
+                <action>dialogs.break_dialog</action>
+                <give_info>blck_val_zavod_zasada_monolit_time</give_info>
+                <give_info>blck_val_freedom_need_help</give_info>
+            </phrase>
+            <phrase id="7">
+                <text>blck_val_miklucha_zavod_quest_7</text>
+                <action>dialogs.break_dialog</action>
+                <give_info>blck_val_quest_zavod_start</give_info>
+            </phrase>
+            <phrase id="6">
+                <text>blck_val_miklucha_zavod_quest_6</text>
+                <next>7</next>
+            </phrase>
+            <phrase id="5">
+                <text>blck_val_miklucha_zavod_quest_5</text>
+                <next>6</next>
+            </phrase>
+            <phrase id="1">
+                <text />
+                <dont_has_info>blck_val_quest_zavod_start</dont_has_info>
+                <next>2</next>
+            </phrase>
+            <phrase id="2">
+                <text>blck_val_miklucha_zavod_quest_2</text>
+                <next>3</next>
+            </phrase>
+            <phrase id="0">
+                <text />
+                <next>1</next>
+                <next>8</next>
+                <next>13</next>
+            </phrase>
+            <phrase id="11">
+                <text>blck_val_miklucha_zavod_quest_11</text>
+                <next>12</next>
+            </phrase>
+        </phrase_list>
+    </dialog>
+    <dialog id="blck_val_actor_meet_from_stavrid_about">
+        <phrase_list>
+            <phrase id="224">
+                <text>blck_val_actor_meet_from_stavrid_about_224</text>
+                <dont_has_info>esc_shaman_about_info_dialog_225</dont_has_info>
+                <next>225</next>
+            </phrase>
+            <phrase id="226">
+                <text>blck_val_actor_meet_from_stavrid_about_226</text>
+                <dont_has_info>esc_shaman_about_info_dialog_227</dont_has_info>
+                <next>227</next>
+            </phrase>
+            <phrase id="336">
+                <text>blck_val_actor_meet_from_stavrid_about_336</text>
+                <dont_has_info>esc_shaman_about_info_dialog_337</dont_has_info>
+                <next>337</next>
+            </phrase>
+            <phrase id="334">
+                <text>blck_val_actor_meet_from_stavrid_about_334</text>
+                <dont_has_info>esc_shaman_about_info_dialog_335</dont_has_info>
+                <next>335</next>
+            </phrase>
+            <phrase id="9990">
+                <text>blck_val_actor_meet_from_stavrid_about_9990</text>
+            </phrase>
+            <phrase id="338">
+                <text>blck_val_actor_meet_from_stavrid_about_338</text>
+                <dont_has_info>esc_shaman_about_info_dialog_339</dont_has_info>
+                <next>339</next>
+            </phrase>
+            <phrase id="6">
+                <text>blck_val_actor_meet_from_stavrid_about_6</text>
+                <dont_has_info>esc_shaman_about_info_dialog_66</dont_has_info>
+                <next>66</next>
+            </phrase>
+            <phrase id="7">
+                <text>blck_val_actor_meet_from_stavrid_about_7</text>
+                <dont_has_info>esc_shaman_about_info_dialog_77</dont_has_info>
+                <next>77</next>
+            </phrase>
+            <phrase id="8">
+                <text>blck_val_actor_meet_from_stavrid_about_8</text>
+                <dont_has_info>esc_shaman_about_info_dialog_88</dont_has_info>
+                <next>88</next>
+            </phrase>
+            <phrase id="340">
+                <text>blck_val_actor_meet_from_stavrid_about_340</text>
+                <dont_has_info>esc_shaman_about_info_dialog_341</dont_has_info>
+                <next>341</next>
+            </phrase>
+            <phrase id="66">
+                <text>blck_val_actor_meet_from_stavrid_about_66</text>
+                <give_info>esc_shaman_about_info_dialog_66</give_info>
+                <next>4</next>
+                <next>5</next>
+                <next>6</next>
+                <next>7</next>
+                <next>8</next>
+                <next>661</next>
+            </phrase>
+            <phrase id="77">
+                <text>blck_val_actor_meet_from_stavrid_about_77</text>
+                <give_info>esc_shaman_about_info_dialog_77</give_info>
+                <next>4</next>
+                <next>5</next>
+                <next>6</next>
+                <next>7</next>
+                <next>8</next>
+                <next>771</next>
+            </phrase>
+            <phrase id="88">
+                <text>blck_val_actor_meet_from_stavrid_about_88</text>
+                <give_info>esc_shaman_about_info_dialog_88</give_info>
+                <next>4</next>
+                <next>5</next>
+                <next>6</next>
+                <next>7</next>
+                <next>8</next>
+                <next>881</next>
+            </phrase>
+            <phrase id="225">
+                <text>blck_val_actor_meet_from_stavrid_about_225</text>
+                <give_info>esc_shaman_about_info_dialog_225</give_info>
+                <next>222</next>
+                <next>224</next>
+                <next>226</next>
+                <next>228</next>
+                <next>230</next>
+                <next>2251</next>
+            </phrase>
+            <phrase id="227">
+                <text>blck_val_actor_meet_from_stavrid_about_227</text>
+                <give_info>esc_shaman_about_info_dialog_227</give_info>
+                <next>222</next>
+                <next>224</next>
+                <next>226</next>
+                <next>228</next>
+                <next>230</next>
+                <next>2271</next>
+            </phrase>
+            <phrase id="231">
+                <text>blck_val_actor_meet_from_stavrid_about_231</text>
+                <give_info>esc_shaman_about_info_dialog_231</give_info>
+                <next>222</next>
+                <next>224</next>
+                <next>226</next>
+                <next>228</next>
+                <next>230</next>
+                <next>2311</next>
+            </phrase>
+            <phrase id="3330007">
+                <text>blck_val_actor_meet_from_stavrid_about_3330007</text>
+                <next>3330008</next>
+            </phrase>
+            <phrase id="3330008">
+                <text>blck_val_actor_meet_from_stavrid_about_3330008</text>
+                <next>3330009</next>
+            </phrase>
+            <phrase id="3330009">
+                <text>blck_val_actor_meet_from_stavrid_about_3330009</text>
+            </phrase>
+            <phrase id="335">
+                <text>blck_val_actor_meet_from_stavrid_about_335</text>
+                <give_info>esc_shaman_about_info_dialog_335</give_info>
+                <next>332</next>
+                <next>334</next>
+                <next>336</next>
+                <next>338</next>
+                <next>340</next>
+                <next>3351</next>
+            </phrase>
+            <phrase id="337">
+                <text>blck_val_actor_meet_from_stavrid_about_337</text>
+                <give_info>esc_shaman_about_info_dialog_337</give_info>
+                <next>332</next>
+                <next>334</next>
+                <next>336</next>
+                <next>338</next>
+                <next>340</next>
+                <next>3371</next>
+            </phrase>
+            <phrase id="339">
+                <text>blck_val_actor_meet_from_stavrid_about_339</text>
+                <give_info>esc_shaman_about_info_dialog_339</give_info>
+                <next>332</next>
+                <next>334</next>
+                <next>336</next>
+                <next>338</next>
+                <next>340</next>
+                <next>3391</next>
+            </phrase>
+            <phrase id="341">
+                <text>blck_val_actor_meet_from_stavrid_about_341</text>
+                <give_info>esc_shaman_about_info_dialog_341</give_info>
+                <next>332</next>
+                <next>334</next>
+                <next>336</next>
+                <next>338</next>
+                <next>340</next>
+                <next>3411</next>
+            </phrase>
+            <phrase id="661">
+                <text>blck_val_actor_meet_from_stavrid_about_661</text>
+            </phrase>
+            <phrase id="881">
+                <text>blck_val_actor_meet_from_stavrid_about_881</text>
+            </phrase>
+            <phrase id="771">
+                <text>blck_val_actor_meet_from_stavrid_about_771</text>
+            </phrase>
+            <phrase id="2251">
+                <text>blck_val_actor_meet_from_stavrid_about_2251</text>
+            </phrase>
+            <phrase id="2271">
+                <text>blck_val_actor_meet_from_stavrid_about_2271</text>
+            </phrase>
+            <phrase id="229">
+                <text>blck_val_actor_meet_from_stavrid_about_229</text>
+                <give_info>esc_shaman_about_info_dialog_229</give_info>
+                <next>222</next>
+                <next>224</next>
+                <next>226</next>
+                <next>228</next>
+                <next>230</next>
+                <next>2291</next>
+            </phrase>
+            <phrase id="2291">
+                <text>blck_val_actor_meet_from_stavrid_about_2291</text>
+            </phrase>
+            <phrase id="2311">
+                <text>blck_val_actor_meet_from_stavrid_about_2311</text>
+            </phrase>
+            <phrase id="3331">
+                <text>blck_val_actor_meet_from_stavrid_about_3331</text>
+            </phrase>
+            <phrase id="3351">
+                <text>blck_val_actor_meet_from_stavrid_about_3351</text>
+            </phrase>
+            <phrase id="3371">
+                <text>blck_val_actor_meet_from_stavrid_about_3371</text>
+            </phrase>
+            <phrase id="3391">
+                <text>blck_val_actor_meet_from_stavrid_about_3391</text>
+            </phrase>
+            <phrase id="3411">
+                <text>blck_val_actor_meet_from_stavrid_about_3411</text>
+            </phrase>
+            <phrase id="230">
+                <text>blck_val_actor_meet_from_stavrid_about_230</text>
+                <dont_has_info>esc_shaman_about_info_dialog_231</dont_has_info>
+                <next>231</next>
+            </phrase>
+            <phrase id="228">
+                <text>blck_val_actor_meet_from_stavrid_about_228</text>
+                <dont_has_info>esc_shaman_about_info_dialog_229</dont_has_info>
+                <next>229</next>
+            </phrase>
+            <phrase id="441">
+                <text>blck_val_actor_meet_from_stavrid_about_441</text>
+            </phrase>
+            <phrase id="52001">
+                <text>blck_val_actor_meet_from_stavrid_about_52001</text>
+                <next>52002</next>
+            </phrase>
+            <phrase id="52002">
+                <text>blck_val_actor_meet_from_stavrid_about_52002</text>
+                <give_info>esc_shaman_about_info_dialog_55</give_info>
+                <next>52003</next>
+            </phrase>
+            <phrase id="52003">
+                <text>blck_val_actor_meet_from_stavrid_about_52003</text>
+                <next>52004</next>
+            </phrase>
+            <phrase id="52004">
+                <text>blck_val_actor_meet_from_stavrid_about_52004</text>
+                <next>52005</next>
+            </phrase>
+            <phrase id="2231">
+                <text>blck_val_actor_meet_from_stavrid_about_2231</text>
+            </phrase>
+            <phrase id="223009">
+                <text>blck_val_actor_meet_from_stavrid_about_223009</text>
+                <next>2231</next>
+            </phrase>
+            <phrase id="223008">
+                <text>blck_val_actor_meet_from_stavrid_about_223008</text>
+                <next>223009</next>
+            </phrase>
+            <phrase id="223007">
+                <text>blck_val_actor_meet_from_stavrid_about_223007</text>
+                <next>223008</next>
+            </phrase>
+            <phrase id="223006">
+                <text>blck_val_actor_meet_from_stavrid_about_223006</text>
+                <next>223007</next>
+            </phrase>
+            <phrase id="223005">
+                <text>blck_val_actor_meet_from_stavrid_about_223005</text>
+                <next>223006</next>
+            </phrase>
+            <phrase id="223004">
+                <text>blck_val_actor_meet_from_stavrid_about_223004</text>
+                <next>223005</next>
+            </phrase>
+            <phrase id="331">
+                <text>blck_val_actor_meet_from_stavrid_about_331</text>
+                <next>332</next>
+            </phrase>
+            <phrase id="332">
+                <text>blck_val_actor_meet_from_stavrid_about_332</text>
+                <dont_has_info>esc_shaman_about_info_dialog_333</dont_has_info>
+                <next>333</next>
+            </phrase>
+            <phrase id="3330001">
+                <text>blck_val_actor_meet_from_stavrid_about_3330001</text>
+                <next>3330002</next>
+            </phrase>
+            <phrase id="333">
+                <text>blck_val_actor_meet_from_stavrid_about_333</text>
+                <give_info>esc_shaman_about_info_dialog_333</give_info>
+                <next>3330001</next>
+            </phrase>
+            <phrase id="3330002">
+                <text>blck_val_actor_meet_from_stavrid_about_3330002</text>
+                <next>3330003</next>
+            </phrase>
+            <phrase id="3330003">
+                <text>blck_val_actor_meet_from_stavrid_about_3330003</text>
+                <next>3330004</next>
+            </phrase>
+            <phrase id="3330004">
+                <text>blck_val_actor_meet_from_stavrid_about_3330004</text>
+                <next>3330005</next>
+            </phrase>
+            <phrase id="3330005">
+                <text>blck_val_actor_meet_from_stavrid_about_3330005</text>
+                <next>3330006</next>
+            </phrase>
+            <phrase id="3330006">
+                <text>blck_val_actor_meet_from_stavrid_about_3330006</text>
+                <next>3330007</next>
+            </phrase>
+            <phrase id="33">
+                <text>blck_val_actor_meet_from_stavrid_about_33</text>
+                <dont_has_info>esc_shaman_about_info_dialog_part_3</dont_has_info>
+                <next>331</next>
+            </phrase>
+            <phrase id="1">
+                <text>blck_val_actor_meet_from_stavrid_about_1</text>
+                <dont_has_info>esc_shaman_about_info_dialog_end</dont_has_info>
+                <next>2</next>
+                <next>22</next>
+                <next>999</next>
+            </phrase>
+            <phrase id="44">
+                <text>blck_val_actor_meet_from_stavrid_about_44</text>
+                <next>44001</next>
+            </phrase>
+            <phrase id="44001">
+                <text>blck_val_actor_meet_from_stavrid_about_44001</text>
+                <next>44002</next>
+            </phrase>
+            <phrase id="44002">
+                <text>blck_val_actor_meet_from_stavrid_about_44002</text>
+                <give_info>blck_val_stavrid_about_info_dialog_44</give_info>
+                <next>4</next>
+                <next>5</next>
+                <next>441</next>
+            </phrase>
+            <phrase id="223002">
+                <text>blck_val_actor_meet_from_stavrid_about_223002</text>
+                <next>223003</next>
+            </phrase>
+            <phrase id="3">
+                <text>blck_val_actor_meet_from_stavrid_about_3</text>
+                <next>4</next>
+                <next>5</next>
+            </phrase>
+            <phrase id="222">
+                <text>blck_val_actor_meet_from_stavrid_about_222</text>
+                <next>223001</next>
+            </phrase>
+            <phrase id="223001">
+                <text>blck_val_actor_meet_from_stavrid_about_223001</text>
+                <next>223002</next>
+            </phrase>
+            <phrase id="221">
+                <text>blck_val_actor_meet_from_stavrid_about_221</text>
+                <next>222</next>
+            </phrase>
+            <phrase id="223003">
+                <text>blck_val_actor_meet_from_stavrid_about_223003</text>
+                <give_info>blck_val_stavrid_about_info_dialog_46</give_info>
+                <next>551</next>
+            </phrase>
+            <phrase id="22">
+                <text>blck_val_actor_meet_from_stavrid_about_22</text>
+                <dont_has_info>blck_val_stavrid_about_info_dialog_46</dont_has_info>
+                <next>221</next>
+            </phrase>
+            <phrase id="999">
+                <text>blck_val_actor_meet_from_stavrid_about_999</text>
+            </phrase>
+            <phrase id="777">
+                <text>blck_val_actor_meet_from_stavrid_about_777</text>
+                <has_info>blck_val_stavrid_about_info_dialog_44</has_info>
+                <has_info>blck_val_stavrid_about_info_dialog_45</has_info>
+                <has_info>blck_val_stavrid_about_info_dialog_46</has_info>
+            </phrase>
+            <phrase id="2">
+                <text>blck_val_actor_meet_from_stavrid_about_2</text>
+                <dont_has_info>blck_val_stavrid_about_info_dialog_45</dont_has_info>
+                <next>3</next>
+            </phrase>
+            <phrase id="4">
+                <text>blck_val_actor_meet_from_stavrid_about_4</text>
+                <dont_has_info>blck_val_stavrid_about_info_dialog_44</dont_has_info>
+                <next>44</next>
+            </phrase>
+            <phrase id="551">
+                <text>blck_val_actor_meet_from_stavrid_about_551</text>
+            </phrase>
+            <phrase id="5">
+                <text>blck_val_actor_meet_from_stavrid_about_5</text>
+                <dont_has_info>blck_val_stavrid_about_info_dialog_45</dont_has_info>
+                <give_info>blck_val_stavrid_about_info_dialog_45</give_info>
+                <has_info>blck_val_stavrid_about_info_dialog_44</has_info>
+                <next>52001</next>
+            </phrase>
+            <phrase id="52005">
+                <text>blck_val_actor_meet_from_stavrid_about_52005</text>
+                <next>4</next>
+                <next>5</next>
+                <next>551</next>
+            </phrase>
+            <phrase id="0">
+                <text>blck_val_actor_meet_from_stavrid_about_0</text>
+                <next>1</next>
+                <next>777</next>
+            </phrase>
+        </phrase_list>
+    </dialog>
+    <dialog id="blck_val_bandit_shmiga_school_meet">
+        <phrase_list>
+            <phrase id="4">
+                <text>blck_val_bandit_shmiga_school_meet_4</text>
+                <next>5</next>
+            </phrase>
+            <phrase id="9">
+                <text>blck_val_bandit_shmiga_school_meet_9</text>
+            </phrase>
+            <phrase id="8">
+                <text />
+                <has_info>blck_val_bandit_shmiga_give_vihr</has_info>
+                <next>9</next>
+            </phrase>
+            <phrase id="5">
+                <text>blck_val_bandit_shmiga_school_meet_5</text>
+                <next>6</next>
+            </phrase>
+            <phrase id="6">
+                <text>blck_val_bandit_shmiga_school_meet_6</text>
+                <action>dialogs_black_valley.blck_val_shmiga_give_vihr</action>
+                <next>7</next>
+            </phrase>
+            <phrase id="1">
+                <text />
+                <dont_has_info>blck_val_bandit_shmiga_give_vihr</dont_has_info>
+                <next>2</next>
+            </phrase>
+            <phrase id="2">
+                <text>blck_val_bandit_shmiga_school_meet_2</text>
+                <next>3</next>
+            </phrase>
+            <phrase id="3">
+                <text>blck_val_bandit_shmiga_school_meet_3</text>
+                <next>4</next>
+            </phrase>
+            <phrase id="7">
+                <text>blck_val_bandit_shmiga_school_meet_7</text>
+                <action>dialogs.break_dialog</action>
+                <give_info>blck_val_bandit_shmiga_give_vihr</give_info>
+            </phrase>
+            <phrase id="0">
+                <text />
+                <next>1</next>
+                <next>8</next>
+            </phrase>
+        </phrase_list>
+    </dialog>
+    <dialog id="blck_val_bandit_shmiga_talk_quest">
+        <phrase_list>
+            <phrase id="20">
+                <text>blck_val_bandit_shmiga_talk_quest_20</text>
+                <next>21</next>
+            </phrase>
+            <phrase id="17">
+                <text>blck_val_bandit_shmiga_talk_quest_17</text>
+                <next>18</next>
+            </phrase>
+            <phrase id="18">
+                <text>blck_val_bandit_shmiga_talk_quest_18</text>
+                <next>19</next>
+            </phrase>
+            <phrase id="15">
+                <text>blck_val_bandit_shmiga_talk_quest_15</text>
+                <action>dialogs.break_dialog</action>
+            </phrase>
+            <phrase id="24">
+                <text />
+                <has_info>blck_val_actor_givekey_to_prison</has_info>
+                <next>25</next>
+            </phrase>
+            <phrase id="3">
+                <text>blck_val_bandit_shmiga_talk_quest_3</text>
+                <next>4</next>
+            </phrase>
+            <phrase id="4">
+                <text>blck_val_bandit_shmiga_talk_quest_4</text>
+                <next>5</next>
+            </phrase>
+            <phrase id="5">
+                <text>blck_val_bandit_shmiga_talk_quest_5</text>
+                <next>6</next>
+            </phrase>
+            <phrase id="6">
+                <text>blck_val_bandit_shmiga_talk_quest_6</text>
+                <next>7</next>
+            </phrase>
+            <phrase id="7">
+                <text>blck_val_bandit_shmiga_talk_quest_7</text>
+                <next>8</next>
+            </phrase>
+            <phrase id="8">
+                <text>blck_val_bandit_shmiga_talk_quest_8</text>
+                <next>9</next>
+                <next>26</next>
+            </phrase>
+            <phrase id="25">
+                <text>blck_val_bandit_shmiga_talk_quest_25</text>
+            </phrase>
+            <phrase id="19">
+                <text>blck_val_bandit_shmiga_talk_quest_19</text>
+                <next>20</next>
+            </phrase>
+            <phrase id="26">
+                <text>blck_val_bandit_shmiga_talk_quest_26</text>
+                <action>dialogs.break_dialog</action>
+                <give_info>blck_val_bandit_shmiga_quest_reserved</give_info>
+                <give_info>blck_val_stavrid_dop_action_give_info</give_info>
+            </phrase>
+            <phrase id="22">
+                <text>blck_val_bandit_shmiga_talk_quest_22</text>
+                <next>23</next>
+            </phrase>
+            <phrase id="21">
+                <text>blck_val_bandit_shmiga_talk_quest_21</text>
+                <action>dialogs_black_valley.blck_val_robbery_key_to_prison</action>
+                <next>22</next>
+            </phrase>
+            <phrase id="29">
+                <text>blck_val_bandit_shmiga_talk_quest_29</text>
+                <action>dialogs.break_dialog</action>
+            </phrase>
+            <phrase id="23">
+                <text>blck_val_bandit_shmiga_talk_quest_23</text>
+                <action>dialogs.break_dialog</action>
+                <give_info>blck_val_actor_givekey_to_prison</give_info>
+            </phrase>
+            <phrase id="32">
+                <text>blck_val_bandit_shmiga_talk_quest_32</text>
+                <action>dialogs.break_dialog</action>
+            </phrase>
+            <phrase id="1">
+                <text />
+                <dont_has_info>blck_val_bandit_shmiga_quest_meet</dont_has_info>
+                <dont_has_info>blck_val_bandit_shmiga_quest_reserved</dont_has_info>
+                <next>2</next>
+            </phrase>
+            <phrase id="2">
+                <text>blck_val_bandit_shmiga_talk_quest_2</text>
+                <next>3</next>
+            </phrase>
+            <phrase id="27">
+                <text />
+                <dont_has_info>blck_val_bandit_shmiga_quest_meet</dont_has_info>
+                <has_info>blck_val_bandit_shmiga_quest_reserved</has_info>
+                <next>28</next>
+            </phrase>
+            <phrase id="28">
+                <text>blck_val_bandit_shmiga_talk_quest_28</text>
+                <next>9</next>
+                <next>29</next>
+            </phrase>
+            <phrase id="9">
+                <text>blck_val_bandit_shmiga_talk_quest_9</text>
+                <next>10</next>
+            </phrase>
+            <phrase id="10">
+                <text>blck_val_bandit_shmiga_talk_quest_10</text>
+                <next>11</next>
+            </phrase>
+            <phrase id="12">
+                <text />
+                <dont_has_info>blck_val_actor_givekey_to_prison</dont_has_info>
+                <has_info>blck_val_bandit_shmiga_quest_meet</has_info>
+                <next>13</next>
+            </phrase>
+            <phrase id="13">
+                <text>blck_val_bandit_shmiga_talk_quest_13</text>
+                <next>14</next>
+                <next>30</next>
+                <next>15</next>
+            </phrase>
+            <phrase id="16">
+                <text>blck_val_bandit_shmiga_talk_quest_16</text>
+                <next>17</next>
+            </phrase>
+            <phrase id="11">
+                <text>blck_val_bandit_shmiga_talk_quest_11</text>
+                <action>dialogs.break_dialog</action>
+                <action>dialogs_black_valley.blck_val_prison_breack_give</action>
+                <give_info>blck_val_bandit_shmiga_quest_meet</give_info>
+                <give_info>blck_val_stavrid_dop_action_give_info</give_info>
+            </phrase>
+            <phrase id="30">
+                <text>blck_val_bandit_shmiga_talk_quest_30</text>
+                <precondition>dialogs_black_valley.blck_val_is_not_rob_time</precondition>
+                <precondition>dialogs_black_valley.check_items_key_to_prison</precondition>
+                <next>31</next>
+            </phrase>
+            <phrase id="14">
+                <text>blck_val_bandit_shmiga_talk_quest_14</text>
+                <precondition>dialogs_black_valley.blck_val_is_rob_time</precondition>
+                <precondition>dialogs_black_valley.check_items_key_to_prison</precondition>
+                <give_info>blck_val_info_give_key_bandit_shmiga</give_info>
+                <next>16</next>
+            </phrase>
+            <phrase id="31">
+                <text>blck_val_bandit_shmiga_talk_quest_31</text>
+                <next>32</next>
+            </phrase>
+            <phrase id="0">
+                <text />
+                <next>1</next>
+                <next>27</next>
+                <next>12</next>
+                <next>24</next>
+            </phrase>
+        </phrase_list>
+    </dialog>
+    <dialog id="blck_val_stavrid_zavod_zasada">
+        <phrase_list>
+            <phrase id="6">
+                <text>blck_val_stavrid_zavod_zasada_6</text>
+                <next>7</next>
+            </phrase>
+            <phrase id="13">
+                <text>blck_val_stavrid_zavod_zasada_13</text>
+                <next>14</next>
+            </phrase>
+            <phrase id="9">
+                <text>blck_val_stavrid_zavod_zasada_9</text>
+            </phrase>
+            <phrase id="7">
+                <text>blck_val_stavrid_zavod_zasada_7</text>
+                <action>dialogs.break_dialog</action>
+                <give_info>blck_val_zasada_stavrid_not_help</give_info>
+            </phrase>
+            <phrase id="15">
+                <text>blck_val_stavrid_zavod_zasada_15</text>
+                <next>16</next>
+            </phrase>
+            <phrase id="35">
+                <text>blck_val_stavrid_zavod_zasada_35</text>
+                <next>36</next>
+            </phrase>
+            <phrase id="36">
+                <text>blck_val_stavrid_zavod_zasada_36</text>
+                <next>37</next>
+            </phrase>
+            <phrase id="33">
+                <text>blck_val_stavrid_zavod_zasada_33</text>
+            </phrase>
+            <phrase id="44">
+                <text>blck_val_stavrid_zavod_zasada_44</text>
+            </phrase>
+            <phrase id="32">
+                <text />
+                <dont_has_info>blck_val_hunter_flash_dead_dialog_done</dont_has_info>
+                <has_info>blck_val_stavrid_dialog_vihr_complete</has_info>
+                <next>33</next>
+            </phrase>
+            <phrase id="34">
+                <text />
+                <dont_has_info>blck_val_stavrid_dialog_give_explosive</dont_has_info>
+                <has_info>blck_val_hunter_flash_dead_dialog_done</has_info>
+                <next>35</next>
+            </phrase>
+            <phrase id="41">
+                <text>blck_val_stavrid_zavod_zasada_41</text>
+                <action>dialogs_black_valley.blck_val_stavrid_give_explosive</action>
+                <next>42</next>
+            </phrase>
+            <phrase id="37">
+                <text>blck_val_stavrid_zavod_zasada_37</text>
+                <next>38</next>
+            </phrase>
+            <phrase id="38">
+                <text>blck_val_stavrid_zavod_zasada_38</text>
+                <next>39</next>
+            </phrase>
+            <phrase id="39">
+                <text>blck_val_stavrid_zavod_zasada_39</text>
+                <next>40</next>
+            </phrase>
+            <phrase id="40">
+                <text>blck_val_stavrid_zavod_zasada_40</text>
+                <next>41</next>
+            </phrase>
+            <phrase id="5">
+                <text>blck_val_stavrid_zavod_zasada_5</text>
+                <next>6</next>
+            </phrase>
+            <phrase id="17">
+                <text>blck_val_stavrid_zavod_zasada_17</text>
+                <next>18</next>
+            </phrase>
+            <phrase id="43">
+                <text />
+                <dont_has_info>blck_val_monolith_informator_dialog_done</dont_has_info>
+                <has_info>blck_val_stavrid_dialog_give_explosive</has_info>
+                <next>44</next>
+            </phrase>
+            <phrase id="46">
+                <text>blck_val_stavrid_zavod_zasada_46</text>
+                <next>47</next>
+            </phrase>
+            <phrase id="47">
+                <text>blck_val_stavrid_zavod_zasada_47</text>
+                <next>48</next>
+            </phrase>
+            <phrase id="48">
+                <text>blck_val_stavrid_zavod_zasada_48</text>
+                <next>49</next>
+            </phrase>
+            <phrase id="49">
+                <text>blck_val_stavrid_zavod_zasada_49</text>
+                <next>50</next>
+            </phrase>
+            <phrase id="50">
+                <text>blck_val_stavrid_zavod_zasada_50</text>
+                <next>51</next>
+            </phrase>
+            <phrase id="53">
+                <text>blck_val_stavrid_zavod_zasada_53</text>
+                <action>dialogs.break_dialog</action>
+                <give_info>blck_val_final_zastava_quest_stavrid</give_info>
+            </phrase>
+            <phrase id="45">
+                <text />
+                <dont_has_info>blck_val_final_zastava_quest_stavrid</dont_has_info>
+                <dont_has_info>blck_val_final_zastava_quest_to_petrovich</dont_has_info>
+                <has_info>blck_val_monolith_informator_dialog_done</has_info>
+                <next>46</next>
+            </phrase>
+            <phrase id="51">
+                <text>blck_val_stavrid_zavod_zasada_51</text>
+                <next>52</next>
+            </phrase>
+            <phrase id="52">
+                <text>blck_val_stavrid_zavod_zasada_52</text>
+                <next>53</next>
+                <next>57</next>
+            </phrase>
+            <phrase id="57">
+                <text>blck_val_stavrid_zavod_zasada_57</text>
+                <give_info>blck_val_final_zastava_quest_hunter_spawn</give_info>
+                <next>58</next>
+            </phrase>
+            <phrase id="58">
+                <text>blck_val_stavrid_zavod_zasada_58</text>
+                <next>59</next>
+            </phrase>
+            <phrase id="16">
+                <text>blck_val_stavrid_zavod_zasada_16</text>
+                <next>17</next>
+            </phrase>
+            <phrase id="60">
+                <text />
+                <has_info>blck_val_final_zastava_quest_to_petrovich</has_info>
+                <next>61</next>
+            </phrase>
+            <phrase id="64">
+                <text>blck_val_stavrid_zavod_zasada_64</text>
+                <next>65</next>
+            </phrase>
+            <phrase id="66">
+                <text>blck_val_stavrid_zavod_zasada_66</text>
+                <next>67</next>
+            </phrase>
+            <phrase id="73">
+                <text>blck_val_stavrid_zavod_zasada_73</text>
+                <next>66</next>
+            </phrase>
+            <phrase id="65">
+                <text>blck_val_stavrid_zavod_zasada_65</text>
+                <next>72</next>
+            </phrase>
+            <phrase id="72">
+                <text>blck_val_stavrid_zavod_zasada_72</text>
+                <next>73</next>
+            </phrase>
+            <phrase id="70">
+                <text>blck_val_stavrid_zavod_zasada_70</text>
+                <next>71</next>
+            </phrase>
+            <phrase id="71">
+                <text>blck_val_stavrid_zavod_zasada_71</text>
+                <next>74</next>
+            </phrase>
+            <phrase id="63">
+                <text>blck_val_stavrid_zavod_zasada_63</text>
+                <next>64</next>
+            </phrase>
+            <phrase id="23">
+                <text>blck_val_stavrid_zavod_zasada_23</text>
+                <next>24</next>
+            </phrase>
+            <phrase id="22">
+                <text>blck_val_stavrid_zavod_zasada_22</text>
+                <next>23</next>
+            </phrase>
+            <phrase id="24">
+                <text>blck_val_stavrid_zavod_zasada_24</text>
+                <next>25</next>
+            </phrase>
+            <phrase id="27">
+                <text>blck_val_stavrid_zavod_zasada_27</text>
+                <next>28</next>
+            </phrase>
+            <phrase id="29">
+                <text>blck_val_stavrid_zavod_zasada_29</text>
+                <action>dialogs_black_valley.blck_val_wpn_vihr_out</action>
+                <next>30</next>
+            </phrase>
+            <phrase id="14">
+                <text>blck_val_stavrid_zavod_zasada_14</text>
+                <next>15</next>
+            </phrase>
+            <phrase id="62">
+                <text />
+                <dont_has_info>blck_val_dialog_stavrid_dop_action_done</dont_has_info>
+                <dont_has_info>blck_val_info_give_key_bandit_shmiga</dont_has_info>
+                <has_info>blck_val_stavrid_dop_action_give_info</has_info>
+                <next>63</next>
+            </phrase>
+            <phrase id="25">
+                <text>blck_val_stavrid_zavod_zasada_25</text>
+                <next>26</next>
+            </phrase>
+            <phrase id="26">
+                <text>blck_val_stavrid_zavod_zasada_26</text>
+                <next>27</next>
+            </phrase>
+            <phrase id="55">
+                <text>blck_val_stavrid_zavod_zasada_55</text>
+                <next>56</next>
+            </phrase>
+            <phrase id="20">
+                <text>blck_val_stavrid_zavod_zasada_20</text>
+            </phrase>
+            <phrase id="19">
+                <text />
+                <dont_has_info>blck_val_bandit_shmiga_give_vihr</dont_has_info>
+                <dont_has_info>blck_val_stavrid_dop_action_give_info</dont_has_info>
+                <has_info>blck_val_quest_wpn_vihr_search_give</has_info>
+                <next>20</next>
+            </phrase>
+            <phrase id="12">
+                <text>blck_val_stavrid_zavod_zasada_12</text>
+                <next>13</next>
+            </phrase>
+            <phrase id="87">
+                <text>blck_val_stavrid_zavod_zasada_87</text>
+                <next>28</next>
+            </phrase>
+            <phrase id="28">
+                <text>blck_val_stavrid_zavod_zasada_28</text>
+                <next>29</next>
+            </phrase>
+            <phrase id="21">
+                <text />
+                <dont_has_info>blck_val_stavrid_dialog_vihr_complete</dont_has_info>
+                <dont_has_info>blck_val_dialog_stavrid_dop_action_done</dont_has_info>
+                <has_info>blck_val_bandit_shmiga_give_vihr</has_info>
+                <next>22</next>
+            </phrase>
+            <phrase id="81">
+                <text>blck_val_stavrid_zavod_zasada_81</text>
+                <next>82</next>
+            </phrase>
+            <phrase id="3">
+                <text>blck_val_stavrid_zavod_zasada_3</text>
+                <next>4</next>
+            </phrase>
+            <phrase id="4">
+                <text>blck_val_stavrid_zavod_zasada_4</text>
+                <next>5</next>
+            </phrase>
+            <phrase id="2">
+                <text>blck_val_stavrid_zavod_zasada_2</text>
+                <give_info>blck_val_zasada_actor_in_hutor</give_info>
+                <next>3</next>
+            </phrase>
+            <phrase id="67">
+                <text>blck_val_stavrid_zavod_zasada_67</text>
+                <next>68</next>
+                <next>69</next>
+            </phrase>
+            <phrase id="68">
+                <text>blck_val_stavrid_zavod_zasada_68</text>
+                <next>70</next>
+            </phrase>
+            <phrase id="69">
+                <text>blck_val_stavrid_zavod_zasada_69</text>
+                <next>70</next>
+            </phrase>
+            <phrase id="54">
+                <text />
+                <has_info>blck_val_final_zastava_quest_stavrid</has_info>
+                <next>55</next>
+            </phrase>
+            <phrase id="74">
+                <text>blck_val_stavrid_zavod_zasada_74</text>
+                <action>dialogs_black_valley.blck_val_key_to_prison_give</action>
+                <next>75</next>
+            </phrase>
+            <phrase id="56">
+                <text>blck_val_stavrid_zavod_zasada_56</text>
+                <action>dialogs.break_dialog</action>
+            </phrase>
+            <phrase id="59">
+                <text>blck_val_stavrid_zavod_zasada_59</text>
+                <action>dialogs.break_dialog</action>
+                <give_info>blck_val_final_zastava_quest_to_petrovich</give_info>
+            </phrase>
+            <phrase id="61">
+                <text>blck_val_stavrid_zavod_zasada_61</text>
+            </phrase>
+            <phrase id="42">
+                <text>blck_val_stavrid_zavod_zasada_42</text>
+                <action>dialogs.break_dialog</action>
+                <give_info>blck_val_stavrid_dialog_give_explosive</give_info>
+            </phrase>
+            <phrase id="31">
+                <text>blck_val_stavrid_zavod_zasada_31</text>
+                <action>dialogs.break_dialog</action>
+                <action>dialogs_black_valley.blck_val_monolit_base_give</action>
+                <give_info>blck_val_stavrid_dialog_vihr_complete</give_info>
+                <give_info>blck_val_stavrid_dialog_vihr_complete_dop_action</give_info>
+            </phrase>
+            <phrase id="30">
+                <text>blck_val_stavrid_zavod_zasada_30</text>
+                <next>31</next>
+            </phrase>
+            <phrase id="1">
+                <text />
+                <dont_has_info>blck_val_zasada_stavrid_not_help</dont_has_info>
+                <next>2</next>
+            </phrase>
+            <phrase id="11">
+                <text>blck_val_stavrid_zavod_zasada_11</text>
+                <next>12</next>
+            </phrase>
+            <phrase id="8">
+                <text />
+                <dont_has_info>blck_val_actor_meet_tech_spatial_done</dont_has_info>
+                <has_info>blck_val_zasada_stavrid_not_help</has_info>
+                <next>9</next>
+            </phrase>
+            <phrase id="10">
+                <text />
+                <dont_has_info>blck_val_quest_wpn_vihr_search_give</dont_has_info>
+                <has_info>blck_val_actor_meet_tech_spatial_done</has_info>
+                <next>11</next>
+            </phrase>
+            <phrase id="18">
+                <text>blck_val_stavrid_zavod_zasada_18</text>
+                <action>dialogs.break_dialog</action>
+                <action>dialogs_black_valley.blck_val_wpn_vihr_search_give</action>
+                <give_info>blck_val_quest_wpn_vihr_search_give</give_info>
+            </phrase>
+            <phrase id="91">
+                <text>blck_val_stavrid_zavod_zasada_91</text>
+            </phrase>
+            <phrase id="75">
+                <text>blck_val_stavrid_zavod_zasada_75</text>
+                <action>dialogs.break_dialog</action>
+                <give_info>blck_val_dialog_stavrid_dop_action_done</give_info>
+            </phrase>
+            <phrase id="89">
+                <text />
+                <dont_has_info>blck_val_bandit_shmiga_escape_from_prison</dont_has_info>
+                <has_info>blck_val_dialog_stavrid_dop_action_done</has_info>
+                <next>92</next>
+            </phrase>
+            <phrase id="92">
+                <text>blck_val_stavrid_zavod_zasada_92</text>
+                <next>93</next>
+            </phrase>
+            <phrase id="93">
+                <text>blck_val_stavrid_zavod_zasada_93</text>
+                <action>dialogs.break_dialog</action>
+            </phrase>
+            <phrase id="82">
+                <text>blck_val_stavrid_zavod_zasada_82</text>
+                <action>dialogs.break_dialog</action>
+                <give_info>blck_val_dialog_stavrid_dop_action_complete</give_info>
+                <give_info>blck_val_key_to_prison_spawn_end</give_info>
+            </phrase>
+            <phrase id="88">
+                <text>blck_val_stavrid_zavod_zasada_88</text>
+                <precondition>dialogs_black_valley.blck_val_quest_key_to_prison</precondition>
+                <action>dialogs_black_valley.blck_val_out_quest_key_to_prison</action>
+                <next>81</next>
+            </phrase>
+            <phrase id="0">
+                <text />
+                <next>1</next>
+                <next>8</next>
+                <next>10</next>
+                <next>19</next>
+                <next>21</next>
+                <next>32</next>
+                <next>34</next>
+                <next>43</next>
+                <next>45</next>
+                <next>54</next>
+                <next>60</next>
+                <next>62</next>
+                <next>89</next>
+                <next>76</next>
+                <next>90</next>
+                <next>78</next>
+            </phrase>
+            <phrase id="76">
+                <text />
+                <dont_has_info>blck_val_dialog_stavrid_dop_action_complete</dont_has_info>
+                <has_info>blck_val_dialog_stavrid_dop_action_done</has_info>
+                <has_info>blck_val_bandit_shmiga_escape_from_prison</has_info>
+                <next>79</next>
+            </phrase>
+            <phrase id="79">
+                <text>blck_val_stavrid_zavod_zasada_79</text>
+                <next>80</next>
+                <next>88</next>
+            </phrase>
+            <phrase id="80">
+                <text>blck_val_stavrid_zavod_zasada_80</text>
+                <precondition>dialogs_black_valley.blck_val_quest_key_to_prison_one</precondition>
+                <action>dialogs_black_valley.blck_val_robbery_key_to_prison</action>
+                <next>81</next>
+            </phrase>
+            <phrase id="90">
+                <text />
+                <dont_has_info>blck_val_bandit_shmiga_give_vihr</dont_has_info>
+                <has_info>blck_val_dialog_stavrid_dop_action_complete</has_info>
+                <next>91</next>
+            </phrase>
+            <phrase id="78">
+                <text />
+                <dont_has_info>blck_val_stavrid_dialog_vihr_complete</dont_has_info>
+                <has_info>blck_val_dialog_stavrid_dop_action_done</has_info>
+                <has_info>blck_val_bandit_shmiga_give_vihr</has_info>
+                <next>84</next>
+            </phrase>
+            <phrase id="84">
+                <text>blck_val_stavrid_zavod_zasada_84</text>
+                <next>85</next>
+            </phrase>
+            <phrase id="85">
+                <text>blck_val_stavrid_zavod_zasada_85</text>
+                <next>86</next>
+            </phrase>
+            <phrase id="86">
+                <text>blck_val_stavrid_zavod_zasada_86</text>
+                <next>87</next>
+            </phrase>
+        </phrase_list>
+    </dialog>
+    <dialog id="blck_val_actor_meet_from_stavrid">
+        <phrase_list>
+            <phrase id="17">
+                <text>blck_val_actor_meet_from_stavrid_17</text>
+                <next>18</next>
+            </phrase>
+            <phrase id="19">
+                <text>blck_val_actor_meet_from_stavrid_19</text>
+                <next>20</next>
+            </phrase>
+            <phrase id="12">
+                <text />
+                <dont_has_info>blck_val_levsha_first_meet_done</dont_has_info>
+                <has_info>blck_val_stavrid_first_dialog_done</has_info>
+                <next>13</next>
+            </phrase>
+            <phrase id="30">
+                <text />
+                <dont_has_info>blck_val_zver_has_item_knife_killer</dont_has_info>
+                <has_info>blck_val_stavrid_meet_levsha_done</has_info>
+                <next>31</next>
+            </phrase>
+            <phrase id="32">
+                <text />
+                <dont_has_info>blck_val_zver_open_pda_chimik</dont_has_info>
+                <has_info>blck_val_actor_search_killer</has_info>
+                <next>33</next>
+            </phrase>
+            <phrase id="41">
+                <text>blck_val_actor_meet_from_stavrid_41</text>
+                <next>42</next>
+            </phrase>
+            <phrase id="34">
+                <text>blck_val_actor_meet_from_stavrid_34</text>
+                <action>dialogs.break_dialog</action>
+            </phrase>
+            <phrase id="13">
+                <text>blck_val_actor_meet_from_stavrid_13</text>
+            </phrase>
+            <phrase id="10">
+                <text>blck_val_actor_meet_from_stavrid_10</text>
+                <next>11</next>
+            </phrase>
+            <phrase id="31">
+                <text>blck_val_actor_meet_from_stavrid_31</text>
+            </phrase>
+            <phrase id="40">
+                <text>blck_val_actor_meet_from_stavrid_40</text>
+                <action>dialogs_black_valley.blck_val_stavrid_give_reward</action>
+                <next>41</next>
+            </phrase>
+            <phrase id="14">
+                <text />
+                <dont_has_info>blck_val_stavrid_meet_levsha_done</dont_has_info>
+                <has_info>blck_val_levsha_first_meet_done</has_info>
+                <next>15</next>
+            </phrase>
+            <phrase id="16">
+                <text>blck_val_actor_meet_from_stavrid_16</text>
+                <next>17</next>
+            </phrase>
+            <phrase id="24">
+                <text>blck_val_actor_meet_from_stavrid_24</text>
+                <next>25</next>
+            </phrase>
+            <phrase id="25">
+                <text>blck_val_actor_meet_from_stavrid_25</text>
+                <next>26</next>
+            </phrase>
+            <phrase id="26">
+                <text>blck_val_actor_meet_from_stavrid_26</text>
+                <next>27</next>
+            </phrase>
+            <phrase id="27">
+                <text>blck_val_actor_meet_from_stavrid_27</text>
+                <next>28</next>
+            </phrase>
+            <phrase id="28">
+                <text>blck_val_actor_meet_from_stavrid_28</text>
+                <next>29</next>
+            </phrase>
+            <phrase id="42">
+                <text>blck_val_actor_meet_from_stavrid_42</text>
+                <next>43</next>
+            </phrase>
+            <phrase id="15">
+                <text>blck_val_actor_meet_from_stavrid_15</text>
+                <next>16</next>
+            </phrase>
+            <phrase id="38">
+                <text>blck_val_actor_meet_from_stavrid_38</text>
+                <next>39</next>
+            </phrase>
+            <phrase id="37">
+                <text>blck_val_actor_meet_from_stavrid_37</text>
+                <next>38</next>
+            </phrase>
+            <phrase id="20">
+                <text>blck_val_actor_meet_from_stavrid_20</text>
+                <action>dialogs.break_dialog</action>
+                <give_info>blck_val_stavrid_meet_levsha_done</give_info>
+            </phrase>
+            <phrase id="29">
+                <text>blck_val_actor_meet_from_stavrid_29</text>
+                <action>dialogs.break_dialog</action>
+                <give_info>blck_val_actor_search_killer</give_info>
+            </phrase>
+            <phrase id="39">
+                <text>blck_val_actor_meet_from_stavrid_39</text>
+                <next>40</next>
+            </phrase>
+            <phrase id="9">
+                <text>blck_val_actor_meet_from_stavrid_9</text>
+                <next>10</next>
+            </phrase>
+            <phrase id="43">
+                <text>blck_val_actor_meet_from_stavrid_43</text>
+                <next>44</next>
+            </phrase>
+            <phrase id="44">
+                <text>blck_val_actor_meet_from_stavrid_44</text>
+                <next>45</next>
+            </phrase>
+            <phrase id="45">
+                <text>blck_val_actor_meet_from_stavrid_45</text>
+                <next>46</next>
+            </phrase>
+            <phrase id="47">
+                <text>blck_val_actor_meet_from_stavrid_47</text>
+                <next>48</next>
+            </phrase>
+            <phrase id="46">
+                <text>blck_val_actor_meet_from_stavrid_46</text>
+                <next>47</next>
+            </phrase>
+            <phrase id="3">
+                <text>blck_val_actor_meet_from_stavrid_3</text>
+                <next>4</next>
+            </phrase>
+            <phrase id="4">
+                <text>blck_val_actor_meet_from_stavrid_4</text>
+                <next>5</next>
+            </phrase>
+            <phrase id="5">
+                <text>blck_val_actor_meet_from_stavrid_5</text>
+                <next>6</next>
+            </phrase>
+            <phrase id="6">
+                <text>blck_val_actor_meet_from_stavrid_6</text>
+                <next>7</next>
+            </phrase>
+            <phrase id="7">
+                <text>blck_val_actor_meet_from_stavrid_7</text>
+                <next>8</next>
+            </phrase>
+            <phrase id="8">
+                <text>blck_val_actor_meet_from_stavrid_8</text>
+                <next>9</next>
+            </phrase>
+            <phrase id="21">
+                <text />
+                <dont_has_info>blck_val_actor_search_killer</dont_has_info>
+                <has_info>blck_val_zver_has_item_knife_killer</has_info>
+                <next>22</next>
+            </phrase>
+            <phrase id="23">
+                <text>blck_val_actor_meet_from_stavrid_23</text>
+                <next>24</next>
+            </phrase>
+            <phrase id="22">
+                <text>blck_val_actor_meet_from_stavrid_22</text>
+                <next>23</next>
+            </phrase>
+            <phrase id="49">
+                <text>blck_val_actor_meet_from_stavrid_49</text>
+                <action>dialogs.break_dialog</action>
+                <action>dialogs_black_valley.blck_val_shaman_quest_talk_give</action>
+                <give_info>blck_val_quest_two_friends_done</give_info>
+            </phrase>
+            <phrase id="48">
+                <text>blck_val_actor_meet_from_stavrid_48</text>
+                <next>49</next>
+            </phrase>
+            <phrase id="2">
+                <text>blck_val_actor_meet_from_stavrid_2</text>
+                <next>3</next>
+            </phrase>
+            <phrase id="35">
+                <text />
+                <dont_has_info>blck_val_quest_two_friends_done</dont_has_info>
+                <has_info>blck_val_zver_open_pda_chimik</has_info>
+                <next>36</next>
+            </phrase>
+            <phrase id="36">
+                <text>blck_val_actor_meet_from_stavrid_36</text>
+                <next>37</next>
+            </phrase>
+            <phrase id="33">
+                <text>blck_val_actor_meet_from_stavrid_33</text>
+                <next>34</next>
+            </phrase>
+            <phrase id="53">
+                <text>blck_val_actor_meet_from_stavrid_53</text>
+                <next>54</next>
+            </phrase>
+            <phrase id="54">
+                <text>blck_val_actor_meet_from_stavrid_54</text>
+                <next>55</next>
+            </phrase>
+            <phrase id="56">
+                <text>blck_val_actor_meet_from_stavrid_56</text>
+                <next>57</next>
+            </phrase>
+            <phrase id="57">
+                <text>blck_val_actor_meet_from_stavrid_57</text>
+                <next>58</next>
+            </phrase>
+            <phrase id="58">
+                <text>blck_val_actor_meet_from_stavrid_58</text>
+                <next>59</next>
+            </phrase>
+            <phrase id="55">
+                <text>blck_val_actor_meet_from_stavrid_55</text>
+                <next>56</next>
+            </phrase>
+            <phrase id="59">
+                <text>blck_val_actor_meet_from_stavrid_59</text>
+                <next>60</next>
+            </phrase>
+            <phrase id="60">
+                <text>blck_val_actor_meet_from_stavrid_60</text>
+                <next>61</next>
+            </phrase>
+            <phrase id="51">
+                <text>blck_val_actor_meet_from_stavrid_51</text>
+            </phrase>
+            <phrase id="50">
+                <text />
+                <dont_has_info>blck_val_quest_find_art_from_barmen_done</dont_has_info>
+                <has_info>blck_val_quest_two_friends_done</has_info>
+                <next>51</next>
+            </phrase>
+            <phrase id="52">
+                <text />
+                <dont_has_info>blck_val_stavrid_send_actor_to_hutor</dont_has_info>
+                <has_info>blck_val_quest_find_art_from_barmen_done</has_info>
+                <next>53</next>
+            </phrase>
+            <phrase id="66">
+                <text>blck_val_actor_meet_from_stavrid_66</text>
+                <dont_has_info>blck_val_stalker_hutor_2_dead</dont_has_info>
+                <next>68</next>
+            </phrase>
+            <phrase id="67">
+                <text>blck_val_actor_meet_from_stavrid_67</text>
+                <has_info>blck_val_stalker_hutor_2_dead</has_info>
+                <next>72</next>
+            </phrase>
+            <phrase id="68">
+                <text>blck_val_actor_meet_from_stavrid_68</text>
+                <next>69</next>
+            </phrase>
+            <phrase id="69">
+                <text>blck_val_actor_meet_from_stavrid_69</text>
+                <next>70</next>
+            </phrase>
+            <phrase id="72">
+                <text>blck_val_actor_meet_from_stavrid_72</text>
+                <next>69</next>
+            </phrase>
+            <phrase id="65">
+                <text>blck_val_actor_meet_from_stavrid_65</text>
+                <next>66</next>
+                <next>67</next>
+            </phrase>
+            <phrase id="62">
+                <text />
+                <dont_has_info>blck_val_actor_go_to_stavrid_from_base</dont_has_info>
+                <has_info>blck_val_stavrid_send_actor_to_hutor</has_info>
+                <next>63</next>
+            </phrase>
+            <phrase id="63">
+                <text>blck_val_actor_meet_from_stavrid_63</text>
+            </phrase>
+            <phrase id="64">
+                <text />
+                <dont_has_info>blck_val_stavrid_night_shooter_dialog_done</dont_has_info>
+                <has_info>blck_val_actor_go_to_stavrid_from_base</has_info>
+                <next>65</next>
+            </phrase>
+            <phrase id="73">
+                <text />
+                <has_info>blck_val_stavrid_night_shooter_dialog_done</has_info>
+                <next>74</next>
+            </phrase>
+            <phrase id="74">
+                <text>blck_val_actor_meet_from_stavrid_74</text>
+            </phrase>
+            <phrase id="61">
+                <text>blck_val_actor_meet_from_stavrid_61</text>
+                <action>dialogs_black_valley.blck_val_stavrid_give_actor_svd</action>
+                <action>dialogs.break_dialog</action>
+                <give_info>blck_val_stavrid_send_actor_to_hutor</give_info>
+            </phrase>
+            <phrase id="71">
+                <text>blck_val_actor_meet_from_stavrid_71</text>
+                <action>dialogs.break_dialog</action>
+                <give_info>blck_val_stavrid_night_shooter_dialog_done</give_info>
+            </phrase>
+            <phrase id="70">
+                <text>blck_val_actor_meet_from_stavrid_70</text>
+                <action>dialogs_black_valley.blck_val_af_kolobok_shaman_take_reward_1</action>
+                <next>71</next>
+            </phrase>
+            <phrase id="18">
+                <text>blck_val_actor_meet_from_stavrid_18</text>
+                <next>19</next>
+            </phrase>
+            <phrase id="1">
+                <text />
+                <dont_has_info>blck_val_stavrid_first_dialog_done</dont_has_info>
+                <next>2</next>
+            </phrase>
+            <phrase id="0">
+                <text />
+                <next>1</next>
+                <next>12</next>
+                <next>14</next>
+                <next>21</next>
+                <next>30</next>
+                <next>32</next>
+                <next>35</next>
+                <next>50</next>
+                <next>52</next>
+                <next>62</next>
+                <next>64</next>
+                <next>73</next>
+            </phrase>
+            <phrase id="11">
+                <text>blck_val_actor_meet_from_stavrid_11</text>
+                <action>dialogs.break_dialog</action>
+                <give_info>blck_val_stavrid_first_dialog_done</give_info>
+            </phrase>
+        </phrase_list>
+    </dialog>
+    <dialog id="blck_val_actor_meet_from_miklucha">
+        <phrase_list>
+            <phrase id="2">
+                <text>blck_val_actor_meet_from_miklucha_2</text>
+                <next>3</next>
+            </phrase>
+            <phrase id="4">
+                <text>blck_val_actor_meet_from_miklucha_4</text>
+                <next>5</next>
+            </phrase>
+            <phrase id="11">
+                <text>blck_val_actor_meet_from_miklucha_11</text>
+                <next>12</next>
+            </phrase>
+            <phrase id="13">
+                <text>blck_val_actor_meet_from_miklucha_13</text>
+                <next>14</next>
+            </phrase>
+            <phrase id="17">
+                <text>blck_val_actor_meet_from_miklucha_17</text>
+                <next>18</next>
+            </phrase>
+            <phrase id="24">
+                <text />
+                <has_info>blck_val_miklucha_first_quest_give</has_info>
+                <next>25</next>
+            </phrase>
+            <phrase id="16">
+                <text>blck_val_actor_meet_from_miklucha_16</text>
+                <next>17</next>
+            </phrase>
+            <phrase id="9">
+                <text>blck_val_actor_meet_from_miklucha_9</text>
+                <next>10</next>
+            </phrase>
+            <phrase id="5">
+                <text>blck_val_actor_meet_from_miklucha_5</text>
+                <next>6</next>
+            </phrase>
+            <phrase id="25">
+                <text>blck_val_actor_meet_from_miklucha_25</text>
+            </phrase>
+            <phrase id="15">
+                <text>blck_val_actor_meet_from_miklucha_15</text>
+                <next>16</next>
+            </phrase>
+            <phrase id="7">
+                <text>blck_val_actor_meet_from_miklucha_7</text>
+                <next>8</next>
+            </phrase>
+            <phrase id="6">
+                <text>blck_val_actor_meet_from_miklucha_6</text>
+                <next>7</next>
+            </phrase>
+            <phrase id="18">
+                <text>blck_val_actor_meet_from_miklucha_18</text>
+                <next>19</next>
+                <next>20</next>
+            </phrase>
+            <phrase id="19">
+                <text>blck_val_actor_meet_from_miklucha_19</text>
+                <next>21</next>
+            </phrase>
+            <phrase id="21">
+                <text>blck_val_actor_meet_from_miklucha_21</text>
+                <next>20</next>
+            </phrase>
+            <phrase id="20">
+                <text>blck_val_actor_meet_from_miklucha_20</text>
+                <next>22</next>
+            </phrase>
+            <phrase id="1">
+                <text />
+                <dont_has_info>blck_val_miklucha_first_quest_give</dont_has_info>
+                <next>2</next>
+            </phrase>
+            <phrase id="8">
+                <text>blck_val_actor_meet_from_miklucha_8</text>
+                <next>9</next>
+            </phrase>
+            <phrase id="10">
+                <text>blck_val_actor_meet_from_miklucha_10</text>
+                <next>11</next>
+            </phrase>
+            <phrase id="14">
+                <text>blck_val_actor_meet_from_miklucha_14</text>
+                <next>15</next>
+            </phrase>
+            <phrase id="3">
+                <text>blck_val_actor_meet_from_miklucha_3</text>
+                <next>4</next>
+            </phrase>
+            <phrase id="22">
+                <text>blck_val_actor_meet_from_miklucha_22</text>
+                <next>23</next>
+            </phrase>
+            <phrase id="23">
+                <text>blck_val_actor_meet_from_miklucha_23</text>
+                <action>dialogs.break_dialog</action>
+                <action>dialogs_black_valley.blck_val_monolit_call_give</action>
+                <give_info>blck_val_miklucha_first_quest_give</give_info>
+            </phrase>
+            <phrase id="0">
+                <text />
+                <next>1</next>
+                <next>24</next>
+            </phrase>
+            <phrase id="12">
+                <text>blck_val_actor_meet_from_miklucha_12</text>
+                <next>13</next>
+            </phrase>
+        </phrase_list>
+    </dialog>
+    <dialog id="blck_val_actor_meet_from_hunter">
+        <phrase_list>
+            <phrase id="8">
+                <text>blck_val_actor_meet_from_hunter_8</text>
+                <next>9</next>
+            </phrase>
+            <phrase id="9">
+                <text>blck_val_actor_meet_from_hunter_9</text>
+                <next>10</next>
+            </phrase>
+            <phrase id="11">
+                <text>blck_val_actor_meet_from_hunter_11</text>
+                <next>12</next>
+            </phrase>
+            <phrase id="10">
+                <text>blck_val_actor_meet_from_hunter_10</text>
+                <next>11</next>
+            </phrase>
+            <phrase id="13">
+                <text>blck_val_actor_meet_from_hunter_13</text>
+                <next>14</next>
+            </phrase>
+            <phrase id="14">
+                <text>blck_val_actor_meet_from_hunter_14</text>
+                <next>15</next>
+            </phrase>
+            <phrase id="7">
+                <text>blck_val_actor_meet_from_hunter_7</text>
+                <next>8</next>
+            </phrase>
+            <phrase id="24">
+                <text>blck_val_actor_meet_from_hunter_24</text>
+                <next>25</next>
+            </phrase>
+            <phrase id="26">
+                <text>blck_val_actor_meet_from_hunter_26</text>
+                <next>27</next>
+            </phrase>
+            <phrase id="25">
+                <text>blck_val_actor_meet_from_hunter_25</text>
+                <next>26</next>
+            </phrase>
+            <phrase id="23">
+                <text>blck_val_actor_meet_from_hunter_23</text>
+                <next>24</next>
+            </phrase>
+            <phrase id="17">
+                <text>blck_val_actor_meet_from_hunter_17</text>
+                <action>dialogs_black_valley.blck_val_af_kolobok_shaman_take_reward</action>
+                <next>18</next>
+            </phrase>
+            <phrase id="6">
+                <text>blck_val_actor_meet_from_hunter_6</text>
+                <next>7</next>
+            </phrase>
+            <phrase id="19">
+                <text>blck_val_actor_meet_from_hunter_19</text>
+                <next>20</next>
+            </phrase>
+            <phrase id="18">
+                <text>blck_val_actor_meet_from_hunter_18</text>
+                <next>19</next>
+            </phrase>
+            <phrase id="2">
+                <text>blck_val_actor_meet_from_hunter_2</text>
+                <next>3</next>
+            </phrase>
+            <phrase id="22">
+                <text>blck_val_actor_meet_from_hunter_22</text>
+                <next>23</next>
+            </phrase>
+            <phrase id="29">
+                <text>blck_val_actor_meet_from_hunter_29</text>
+            </phrase>
+            <phrase id="28">
+                <text></text>
+                <dont_has_info>blck_val_tech_reload_community_again</dont_has_info>
+                <has_info>blck_val_hunter_flash_dead_dialog_done</has_info>
+                <next>29</next>
+            </phrase>
+            <phrase id="31">
+                <text>blck_val_actor_meet_from_hunter_31</text>
+                <next>32</next>
+            </phrase>
+            <phrase id="30">
+                <text></text>
+                <has_info>blck_val_tech_reload_community_again</has_info>
+                <next>31</next>
+            </phrase>
+            <phrase id="20">
+                <text>blck_val_actor_meet_from_hunter_20</text>
+                <action>dialogs.break_dialog</action>
+                <give_info>blck_val_hunter_flash_dead_dialog_done</give_info>
+            </phrase>
+            <phrase id="32">
+                <text>blck_val_actor_meet_from_hunter_32</text>
+                <next>33</next>
+            </phrase>
+            <phrase id="21">
+                <text></text>
+                <dont_has_info>blck_val_hunter_hunting_go_to_flash</dont_has_info>
+                <has_info>blck_val_hunter_in_hutor_first_meet_done</has_info>
+                <next>22</next>
+            </phrase>
+            <phrase id="16">
+                <text></text>
+                <dont_has_info>blck_val_hunter_flash_dead_dialog_done</dont_has_info>
+                <has_info>blck_val_psevdoflesh_quest_dead</has_info>
+                <next>17</next>
+            </phrase>
+            <phrase id="15">
+                <text>blck_val_actor_meet_from_hunter_15</text>
+                <action>dialogs.break_dialog</action>
+                <give_info>blck_val_hunter_in_hutor_first_meet_done</give_info>
+            </phrase>
+            <phrase id="4">
+                <text>blck_val_actor_meet_from_hunter_4</text>
+                <next>5</next>
+            </phrase>
+            <phrase id="3">
+                <text>blck_val_actor_meet_from_hunter_3</text>
+                <next>4</next>
+            </phrase>
+            <phrase id="1">
+                <text></text>
+                <dont_has_info>blck_val_hunter_in_hutor_first_meet_done</dont_has_info>
+                <next>2</next>
+            </phrase>
+            <phrase id="27">
+                <text>blck_val_actor_meet_from_hunter_27</text>
+                <action>dialogs.break_dialog</action>
+                <give_info>blck_val_hunter_hunting_go_to_flash</give_info>
+            </phrase>
+            <phrase id="5">
+                <text>blck_val_actor_meet_from_hunter_5</text>
+                <next>6</next>
+            </phrase>
+            <phrase id="33">
+                <text>blck_val_actor_meet_from_hunter_33</text>
+                <next>34</next>
+            </phrase>
+            <phrase id="34">
+                <text>blck_val_actor_meet_from_hunter_34</text>
+                <action>dialogs.break_dialog</action>
+                <give_info>blck_val_final_zastava_quest_neutral_end</give_info>
+            </phrase>
+            <phrase id="12">
+                <text>blck_val_actor_meet_from_hunter_12</text>
+                <next>13</next>
+            </phrase>
+            <phrase id="0">
+                <text></text>
+                <next>1</next>
+                <next>21</next>
+                <next>16</next>
+                <next>28</next>
+                <next>30</next>
+            </phrase>
+        </phrase_list>
+    </dialog>
+    <dialog id="blck_val_security_talk_from_actor">
+        <phrase_list>
+            <phrase id="2">
+                <text>blck_val_security_talk_from_actor_2</text>
+                <action>dialogs_black_valley.blck_val_inv_plen_home</action>
+                <next>3</next>
+            </phrase>
+            <phrase id="1">
+                <text>blck_val_security_talk_from_actor_1</text>
+                <next>2</next>
+            </phrase>
+            <phrase id="3">
+                <text>blck_val_security_talk_from_actor_3</text>
+                <next>4</next>
+                <next>6</next>
+            </phrase>
+            <phrase id="5">
+                <text>blck_val_security_talk_from_actor_5</text>
+                <action>dialogs.break_dialog</action>
+                <give_info>blck_val_actor_meet_from_security_done</give_info>
+                <give_info>blck_val_tech_instrument_1_brought</give_info>
+                <give_info>blck_val_tech_instrument_2_brought</give_info>
+                <give_info>blck_val_tech_instrument_3_brought</give_info>
+            </phrase>
+            <phrase id="0">
+                <text>blck_val_security_talk_from_actor_0</text>
+                <next>1</next>
+            </phrase>
+            <phrase id="9">
+                <text>blck_val_security_talk_from_actor_9</text>
+                <action>dialogs.break_dialog</action>
+                <give_info>blck_val_actor_meet_from_security_done</give_info>
+                <give_info>blck_val_tech_instrument_1_brought</give_info>
+                <give_info>blck_val_tech_instrument_2_brought</give_info>
+                <give_info>blck_val_tech_instrument_3_brought</give_info>
+            </phrase>
+            <phrase id="4">
+                <text>blck_val_security_talk_from_actor_4</text>
+                <dont_has_info>pro_actor_give_flask_snake_fail</dont_has_info>
+                <next>5</next>
+            </phrase>
+            <phrase id="6">
+                <text>blck_val_security_talk_from_actor_6</text>
+                <has_info>pro_actor_give_flask_snake_fail</has_info>
+                <next>7</next>
+            </phrase>
+            <phrase id="7">
+                <text>blck_val_security_talk_from_actor_7</text>
+                <next>8</next>
+            </phrase>
+            <phrase id="8">
+                <text>blck_val_security_talk_from_actor_8</text>
+                <action>dialogs_perevalochnaya_baza.pb_give_flask_to_actor</action>
+                <next>9</next>
+            </phrase>
+        </phrase_list>
+    </dialog>
+</game_dialogs>

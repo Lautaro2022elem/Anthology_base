@@ -1,0 +1,12 @@
+[logic]
+active = sr_idle
+
+[sr_idle]
+on_info = {=is_squad_enemy_to_actor(esc_squad_atp)} sr_idle@1
+
+[sr_idle@1]
+on_game_timer = 43200 | sr_idle@2 %=set_squad_neutral_to_actor(esc_squad_atp)% 
+
+
+[sr_idle@2]
+on_info = {!is_squad_enemy_to_actor(esc_squad_atp) =dist_to_actor_ge(50)} sr_idle %=remove_squad(esc_squad_atp) =create_squad(esc_squad_atp:esc_smart_terrain_1_0)%, sr_idle

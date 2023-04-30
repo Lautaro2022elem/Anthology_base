@@ -1,0 +1,9 @@
+[logic@esc_bobik_npc]
+suitable = {=check_npc_name(esc_bobik_npc)} true
+active = remark@esc_bobik_npc
+prior = 200
+
+[remark@esc_bobik_npc]
+anim = wait
+path_walk = bobik_dead_walk
+on_info = {+esc_dialog_bobik_vagon} %=kill_npc%

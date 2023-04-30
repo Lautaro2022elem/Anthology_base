@@ -1,0 +1,26 @@
+[logic@keeper_wounded]
+active = walker@wounded
+suitable = {=check_npc_name(agr_stalker_keeper)}
+
+[walker@wounded]
+path_walk = wounded_walk
+path_look = wounded_look
+wounded = wounded
+combat_ignore_cond = true
+combat_ignore_keep_when_attacked = true
+invulnerable = true
+gather_items_enabled = false
+help_wounded_enabled = false
+corpse_detection_enabled = false
+meet = no_meet
+
+[wounded]
+hp_state = 101|wounded_heavy@help_heavy
+hp_state_see = 101|wounded_heavy@help_heavy
+hp_victim = 101|nil ;actor
+hp_cover = 101|false
+hp_fight = 101|false
+autoheal = false
+not_for_help = true
+enable_talk = true
+invulnerable = true

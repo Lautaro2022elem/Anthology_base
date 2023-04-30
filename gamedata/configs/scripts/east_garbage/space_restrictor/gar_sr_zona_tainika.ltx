@@ -1,0 +1,10 @@
+[logic] 
+active = sr_idle
+
+[sr_idle]
+on_info = {+spectrum_project_start +sp_a2_hero_to_garbage_come +gar_a2_borland_talking_1} sr_idle@1
+
+[sr_idle@1]
+on_actor_inside = sr_idle@2 %+gar_main_suget_quest_search =gar_b2_main_quest_1_text_effect%
+
+[sr_idle@2]

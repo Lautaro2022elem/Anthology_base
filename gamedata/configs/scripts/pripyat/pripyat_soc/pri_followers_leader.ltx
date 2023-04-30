@@ -1,0 +1,51 @@
+;----------------------------------------------------------------------------------------------------------
+[animpoint@ignore]
+wounded = wounded@no_wound
+meet = no_meet
+use_camp = false
+combat_ignore_cond = true
+combat_ignore_keep_when_attacked = true
+gather_items_enabled = false
+help_wounded_enabled = false
+corpse_detection_enabled = false
+
+;Wounded - no wounds
+[wounded@no_wound]
+hp_state = 0 | wounded_heavy@help_heavy
+hp_state_see = 0 | wounded_heavy@help_heavy
+hp_victim = 0 | nil
+hp_cover = 0 | false
+hp_fight = 0 | false
+
+[logic@pri_followers_leader]:animpoint@ignore
+suitable = {=check_npc_name(pri_followers_leader)} true
+prior = 200
+active = animpoint@pri_followers_leader
+level_spot = quest_npc
+
+[animpoint@pri_followers_leader]:animpoint@ignore
+cover_name = pri_followers_leader_smart_cover
+avail_animations = ward 
+meet = no_meet
+on_actor_dist_le_nvis = 20 | remark@pri_followers_leader_wait_phrase1 %=play_sound(followers_leader_phrase1_1)%
+
+[remark@pri_followers_leader_wait_phrase1]:animpoint@ignore
+cover_name = pri_followers_leader_smart_cover
+avail_animations = ward 
+meet = no_meet
+on_signal = sound_end| remark@pri_followers_leader_wait_actor
+
+[remark@pri_followers_leader_wait_actor]:animpoint@ignore
+cover_name = pri_followers_leader_smart_cover
+avail_animations = ward 
+target = story | actor
+meet = no_meet
+on_actor_dist_le_nvis = 15 | %=play_sound(followers_leader_phrase1_2)%
+on_timer = 15000| remark@pri_followers_leader_wait_phrase3 %=play_sound(followers_leader_phrase1_3)%
+
+[remark@pri_followers_leader_wait_phrase3]:animpoint@ignore
+cover_name = pri_followers_leader_smart_cover
+avail_animations = ward
+target = story | actor
+meet = no_meet
+on_signal = sound_end| %+pri_followers_start%

@@ -1,0 +1,9 @@
+[logic]
+suitable = {=check_npc_name(esc_klim)} true
+prior = 200
+active = remark@esc_klim_dead
+
+[remark@esc_klim_dead]
+anim = wait
+path_walk = esc_klim_dead_spawn
+on_info = %=kill_npc%

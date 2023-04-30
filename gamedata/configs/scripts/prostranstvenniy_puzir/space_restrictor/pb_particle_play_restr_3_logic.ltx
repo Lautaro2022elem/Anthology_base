@@ -1,0 +1,14 @@
+[logic]
+active = sr_idle@wait
+
+[sr_idle@wait]
+on_info = {+pro_stronglav_base_spawn_dym -pro_base_quest_igra_effect_1_take} sr_particle@idle_1 %+pro_base_quest_igra_effect_1_take%
+
+[sr_particle@idle_1]
+name = explosions\explosion_dym
+path = pb_particle_play_point_3
+mode = 2
+looped = true
+on_info = {+pro_actor_hit_stronglav} sr_idle@nil
+
+[sr_idle@nil]

@@ -1,0 +1,13 @@
+[logic]
+active = sr_idle@start_quest_line_markus
+
+[sr_idle@start_quest_line_markus]
+on_info = {+perevalochnaya_baza_meet_to_murad_end} sr_idle@start_quest_line_markus_1
+
+[sr_idle@start_quest_line_markus_1]
+on_timer = 3000 | sr_idle@start_quest_line_markus_2 %=pb_markus_send_quest_sms +perevalochnaya_baza_markus_sends_sms_done%
+
+[sr_idle@start_quest_line_markus_2]
+on_timer = 5500 | sr_idle@start_quest_line_markus_nil %=give_task(pb_talk_to_markus) +perevalochnaya_baza_markus_quest_give%
+
+[sr_idle@start_quest_line_markus_nil]

@@ -1,0 +1,19 @@
+[logic]
+active = sr_idle@atp_zone_come_back
+
+[sr_idle@atp_zone_come_back]
+on_info = {+esc_enot_go_to_furgon_drink} sr_idle@atp_zone_come_back_1 %=RavenMemmoryStart =run_postprocess(black:2525:true) +esc_enot_go_to_furgon_drink_done%
+
+[sr_idle@atp_zone_come_back_1]
+on_timer = 500 | sr_idle@atp_zone_come_back_2 %=show_text_in_escape(time_skip_escape)%
+
+[sr_idle@atp_zone_come_back_2]
+on_timer = 2000 | sr_idle@atp_zone_come_back_3 %=teleport_actor(esc_actor_come_back_vilage_walk:esc_actor_come_back_vilage_look) =set_game_time(00:45)%
+
+[sr_idle@atp_zone_come_back_3]
+on_timer = 2000 | sr_idle@atp_zone_come_back_4 %=stop_postprocess(2525)%
+
+[sr_idle@atp_zone_come_back_4]
+on_timer = 500 | sr_idle@nil %=enable_ui +esc_wait_action_of_enot_drink%
+
+[sr_idle@nil]

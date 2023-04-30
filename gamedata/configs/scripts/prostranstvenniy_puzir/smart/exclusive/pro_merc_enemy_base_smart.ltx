@@ -1,0 +1,104 @@
+;=========meet_stalker_korpys========
+[meet@korpys_stalker]
+close_anim 		= nil
+close_victim 	= nil
+far_anim 		= nil
+far_victim 		= nil
+close_distance 	= 0
+far_distance 	= 0
+use = {=actor_enemy} false, {=dist_to_actor_le(3)} true, false
+snd_on_use = {!dist_to_actor_le(3)} nil
+meet_on_talking = false
+;==================================
+
+
+[logic@pro_merc_enemy_base_smart_1]
+active = walker@zombie_merc_1
+prior = 50
+suitable = {=check_npc_name(sim_default_killer_3)} true, false
+
+[walker@zombie_merc_1]
+path_walk = merc_1_walk
+path_look = merc_1_look
+danger = danger
+meet = no_meet
+
+;================================================
+
+[logic@pro_merc_enemy_base_smart_2]
+active = walker@zombie_merc_2
+prior = 50
+suitable = {=check_npc_name(sim_default_killer_2)} true, false
+
+[walker@zombie_merc_2]
+path_walk = merc_2_walk
+path_look = merc_2_look
+danger = danger
+meet = no_meet
+
+;================================================
+
+[logic@pro_merc_enemy_base_smart_3]
+active = walker@zombie_merc_3
+prior = 50
+suitable = {=check_npc_name(sim_default_killer_2)} true, false
+
+[walker@zombie_merc_3]
+path_walk = merc_3_walk
+path_look = merc_3_look
+danger = danger
+meet = no_meet
+
+;================================================
+
+[logic@pro_merc_enemy_base_smart_4]
+active = walker@zombie_merc_4
+prior = 50
+suitable = {=check_npc_name(sim_default_killer_1)} true, false
+
+[walker@zombie_merc_4]
+path_walk = merc_4_walk
+path_look = merc_4_look
+danger = danger
+meet = no_meet
+
+;================================================
+
+[logic@pro_merc_enemy_base_smart_5]
+active = walker@zombie_merc_5
+prior = 50
+suitable = {=check_npc_name(sim_default_killer_2)} true, false
+
+[walker@zombie_merc_5]
+path_walk = merc_5_walk
+path_look = merc_5_look
+danger = danger
+meet = no_meet
+
+;================================================
+
+[logic@pro_merc_enemy_base_smart_6]
+active = walker@zombie_merc_6
+prior = 50
+suitable = {=check_npc_name(sim_default_killer_1)} true, false
+
+[walker@zombie_merc_6]
+path_walk = merc_6_walk
+path_look = merc_6_look
+danger = danger
+meet = no_meet
+
+;================================================
+
+[logic@pro_merc_enemy_base_smart_7]
+active = walker@zombie_merc_7
+prior = 50
+suitable = {=check_npc_name(sim_default_killer_2)} true, false
+
+[walker@zombie_merc_7]
+path_walk = merc_7_walk
+path_look = merc_7_look
+danger = danger
+meet = no_meet
+
+;================================================

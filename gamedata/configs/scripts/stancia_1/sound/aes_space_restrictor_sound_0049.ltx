@@ -1,0 +1,9 @@
+[logic]
+active = sr_idle
+
+[sr_idle]
+on_info = {+aes_sniper_out_sound} nil %=play_snd(characters_voice\scenario\aes\aes2\aes_snipers_out)%
+
+[sr_sound_act]
+snd = characters_voice\scenario\aes\aes2\aes_snipers_out
+on_signal = sound_end | nil

@@ -1,0 +1,34 @@
+[logic]
+active = sr_idle@actor_go_sleep
+
+[sr_idle@actor_go_sleep]
+on_info = {+blck_val_actor_sleep_to_prison} sr_idle@actor_go_sleep_1 %=RavenMemmoryStart =run_postprocess(black:2525:true)%
+
+[sr_idle@actor_go_sleep_1]
+on_timer = 4500 | sr_idle@actor_go_sleep_2 %=set_game_time(07:04) +blck_val_actor_sleep_to_prison_done%
+
+[sr_idle@actor_go_sleep_2]
+on_timer = 2000 | sr_idle@wake_up_1 %=stop_postprocess(2525) =spawn_object(blck_val_stalker_security:blck_val_lutiy_scene_spawn)%
+
+[sr_idle@wake_up_1]
+on_timer = 100 | sr_idle@actor_not_prisoner_more %=enable_ui +blck_val_actor_zasava_wake_up%
+
+[sr_idle@actor_not_prisoner_more]
+on_info = {+blck_val_actor_meet_from_security_done} sr_idle@teleport_actor %=RavenMemmoryStart =run_postprocess(black:2525:true)%
+
+[sr_idle@teleport_actor]
+on_timer = 2000 | sr_idle@stop_postprocess %=teleport_actor(actor_not_prisoner_more_walk:actor_not_prisoner_more_look)%
+
+[sr_idle@stop_postprocess]
+on_timer = 2000 | sr_idle@enable_ui %=stop_postprocess(2525) +blck_val_security_from_roof_go =blck_val_inv_plen_home%
+
+[sr_idle@enable_ui]
+on_timer = 100 | sr_idle@actor_talk_levsha %=enable_ui +blck_val_cut_scene_first_complete%
+
+[sr_idle@actor_talk_levsha]
+on_info = {+blck_val_actor_from_levsha_replic} sr_idle@actor_talk_anomaly %=blck_val_actor_replic_about_levsha%
+
+[sr_idle@actor_talk_anomaly]
+on_timer = 20000 | sr_idle@nil %=blck_val_actor_replic_about_anomal_zone%
+
+[sr_idle@nil]

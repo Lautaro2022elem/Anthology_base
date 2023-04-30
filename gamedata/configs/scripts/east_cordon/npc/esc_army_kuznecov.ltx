@@ -1,0 +1,52 @@
+[logic]
+active = walker
+
+[walker]
+path_walk = esc_army_kuznecov_walk_1
+path_look = esc_army_kuznecov_look_1
+on_info = {=dist_to_actor_le(20)} walker@2
+on_info2 = {+infa_esc_sr_barrer_zona_alarm_restiktor} %=actor_enemy%
+invulnerable = true
+meet = meet
+
+[walker@2]
+path_walk = esc_army_kuznecov_walk_1
+path_look = esc_army_kuznecov_look_1
+on_info2 = {+infa_esc_sr_barrer_zona_alarm_restiktor} %=actor_enemy%
+on_info3 = {+esc_barrer_npc_remove_pat_1} walker@3 %=teleport_npc(esc_army_kuznecov_walk_2:esc_army_kuznecov_look_2)%
+on_info4 = {+esc_sr_barrer_zona_stop_restiktor} %=actor_enemy%
+def_state_standing = threat
+invulnerable = true
+meet = no_meet
+
+[walker@3]
+path_walk = esc_army_kuznecov_walk_2
+path_look = esc_army_kuznecov_look_2
+on_info2 = {+esc_colonel_kolyazin_prisoner_actor_dialog_complite} walker@4
+def_state_standing = threat
+invulnerable = true
+meet = no_meet
+
+[walker@4]
+path_walk = esc_army_kuznecov_walk_3
+path_look = esc_army_kuznecov_look_3
+def_state_standing = guard
+invulnerable = true
+meet = no_meet
+on_info = {+esc_colonel_kolyazin_quest_fee_and =dist_to_actor_le(100) =dist_to_actor_ge(50)} %=release_npc%
+on_info2 = {+esc_quest_fee_fail =dist_to_actor_le(100) =dist_to_actor_ge(50)} %=release_npc%
+
+[smart_terrains]
+none = true
+
+[meet]
+abuse           = false
+close_anim 		= nil
+far_anim 		= nil
+far_victim 		= nil
+close_distance  = 0
+far_distance 	= 0
+close_victim = actor
+use = {=actor_enemy} false, true
+allow_break = false
+trade_enable = false

@@ -1,0 +1,151 @@
+[walker@def]
+gather_items_enabled = false
+help_wounded_enabled = true
+corpse_detection_enabled = false
+on_info55 = {+sad_oleg_fight} remark@kill %=set_squad_goodwill(sad_sim_14_oleg_squad:enemy)%
+meet = no_meet
+
+[remark@def_warn]:walker@def
+target = story | actor
+anim = threat_na
+on_sound = actor|WPN_shoot|50|0.1| remark@kill %+sad_oleg_fight =set_squad_goodwill(sad_sim_14_oleg_squad:enemy)%
+on_info22 = {-sad_sim_14_guard_sound !is_playing_sound} %+sad_sim_14_guard_sound =play_sound(zat_b40_merc_go_away)%
+on_actor_in_zone  = sad_sim_14_sr_force_ataka | remark@kill %+sad_oleg_fight =set_squad_goodwill(sad_sim_14_oleg_squad:enemy)%
+on_game_timer = 75 | remark@kill %+sad_oleg_fight =set_squad_goodwill(sad_sim_14_oleg_squad:enemy)%
+
+[remark@kill]
+gather_items_enabled = false
+help_wounded_enabled = true
+corpse_detection_enabled = false
+out_restr = sad_sim_14_sr_zone
+on_info = {-sad_sim_14_guard_sound_kill !is_playing_sound} %+sad_sim_14_guard_sound_kill =play_sound(zat_b40_merc_combat)%
+
+[wounded]
+hp_state 		= 40|wounded_heavy@help_heavy
+hp_state_see 	= 40|wounded_heavy@help_heavy
+hp_victim 		= 40|nil
+hp_fight 		= 40|false
+hp_cover		= 40|false
+
+; -------------------------------------------------------------------------------------------------------------------------------------------- Oleg
+[logic@oleg]
+active = walker@oleg
+suitable = {=check_npc_name(sad_sim_14_oleg)} true
+on_hit = hit
+on_death = death@oleg
+prior = 200
+
+[walker@oleg_def]
+gather_items_enabled = false
+help_wounded_enabled = false
+corpse_detection_enabled = false
+out_restr = sad_sim_14_surge_hide
+combat_ignore_cond = true
+combat_ignore_keep_when_attacked = true
+meet = no_meet
+
+[walker@oleg]:walker@oleg_def
+path_walk = oleg_walk
+path_look = oleg_look
+on_info = {+sad_oleg_fight} animpoint@oleg
+
+[animpoint@oleg]:walker@oleg_def
+cover_name = sad_sim_14_oleg_pkm_animp
+avail_animations = sad_pulemet
+on_info9 = {=actor_in_zone(sad_sim_14_surge_hide) =dist_to_actor_le(5)} walker@oleg_kill %+sad_minigun_stop =sad_reset_animation%
+on_info = {=health_le(0.4)} walker@oleg_kill %+sad_minigun_stop =sad_fedor_health =sad_reset_animation%
+on_info2 = {-sad_oleg_told_actor_suka  =actor_in_zone(sad_oleg_sr_granade_zone) =sad_actor_activate_granata} %+sad_oleg_told_actor_suka =play_sound(sad_oleg_ya_ne_ponyal)%
+on_info3 = {=actor_in_zone(sad_sim_14_surge_hide)} animpoint@oleg2 %=play_sound(sad_oleg_warning)%
+use_camp = false
+
+[animpoint@oleg2]:walker@oleg_def
+cover_name = sad_sim_14_oleg_pkm_animp
+avail_animations = sad_pulemet
+on_info9 = {=actor_in_zone(sad_sim_14_surge_hide) =dist_to_actor_le(5)} walker@oleg_kill %+sad_minigun_stop =sad_reset_animation%
+on_info = {=health_le(0.4)} walker@oleg_kill %+sad_minigun_stop =sad_fedor_health =sad_reset_animation%
+on_info2 = {-sad_oleg_told_actor_suka =actor_in_zone(sad_oleg_sr_granade_zone) =sad_actor_activate_granata} %+sad_oleg_told_actor_suka =play_sound(sad_oleg_ya_ne_ponyal)%
+on_game_timer = 90 | animpoint@oleg
+use_camp = false
+
+[walker@oleg_kill]
+path_walk = oleg_walk
+on_info = remark@oleg_fin
+
+[remark@oleg_fin]
+wounded = wounded
+
+
+; -------------------------------------------------------------------------------------------------------------------------------------------- 1
+[logic@oleg_member_1]
+active = walker@1_1
+suitable = { =target_squad_name(sad_sim_14_oleg_squad) !check_npc_name(sad_sim_14_oleg) } true
+on_hit = hit
+on_death = death
+prior = 190
+
+[walker@1_1]:walker@def
+path_walk = oleg_gvard_1_walk
+path_look = oleg_gvard_1_look
+out_restr = sad_sim_14_sr_zone
+on_actor_in_zone = sad_sim_14_sr_zone | remark@1_warn
+
+[remark@1_warn]:remark@def_warn
+on_actor_not_in_zone = sad_sim_14_sr_zone | walker@1_1
+
+; -------------------------------------------------------------------------------------------------------------------------------------------- 2
+[logic@oleg_member_2]
+active = walker@2_1
+suitable = { =target_squad_name(sad_sim_14_oleg_squad) !check_npc_name(sad_sim_14_oleg) } true
+on_hit = hit
+on_death = death
+prior = 190
+
+[walker@2_1]:walker@def
+path_walk = oleg_gvard_2_walk
+path_look = oleg_gvard_2_look
+out_restr = sad_sim_14_sr_zone
+on_actor_in_zone = sad_sim_14_sr_zone | remark@2_warn
+
+[remark@2_warn]:remark@def_warn
+on_actor_not_in_zone = sad_sim_14_sr_zone | walker@2_1
+
+; -------------------------------------------------------------------------------------------------------------------------------------------- 3
+[logic@oleg_member_3]
+active = walker@3_1
+suitable = { =target_squad_name(sad_sim_14_oleg_squad) !check_npc_name(sad_sim_14_oleg) } true
+on_hit = hit
+on_death = death
+prior = 190
+
+[walker@3_1]:walker@def
+path_walk = walken_1_walk
+path_look = walken_1_look
+out_restr = sad_sim_14_sr_zone
+on_actor_in_zone = sad_sim_14_sr_zone | remark@3_warn
+
+[remark@3_warn]:remark@def_warn
+on_actor_not_in_zone = sad_sim_14_sr_zone | walker@3_1
+
+; -------------------------------------------------------------------------------------------------------------------------------------------- 4
+[logic@oleg_member_4]
+active = walker@4_1
+suitable = { =target_squad_name(sad_sim_14_oleg_squad) !check_npc_name(sad_sim_14_oleg) } true
+on_hit = hit
+on_death = death
+prior = 190
+
+[walker@4_1]:walker@def
+path_walk = oleg_gvard_3_walk
+path_look = oleg_gvard_3_look
+out_restr = sad_sim_14_surge_hide
+
+
+; --------------------------------------------------------------------------------------------------------------------------------------------
+[hit]
+on_info = {-sad_oleg_fight =actor_enemy} %+sad_oleg_fight%
+
+[death]
+on_info = {=killed_by_actor} %=stop_sound +sad_oleg_fight =set_squad_goodwill(sad_sim_14_oleg_squad:enemy)%, %=stop_sound%
+
+[death@oleg]
+on_info = {=killed_by_actor} %+sad_minigun_stop =stop_sound +sad_oleg_fight +sad_actor_kill_oleg =set_squad_goodwill(sad_sim_14_oleg_squad:enemy)%, %=stop_sound +sad_minigun_stop%

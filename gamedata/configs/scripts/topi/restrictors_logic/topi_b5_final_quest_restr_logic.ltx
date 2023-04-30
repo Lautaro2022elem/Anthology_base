@@ -1,0 +1,10 @@
+[logic] 
+active = sr_idle@start 
+
+[sr_idle@start] 
+on_info = {+topi_start +topi_a6_suget_quest_final_title} sr_idle@leave_zone %=disable_ui =run_postprocess(fade_in)% 
+
+[sr_idle@leave_zone]
+on_game_timer = 20 | sr_idle@nil %=stop_game_show_credits%
+
+[sr_idle@nil] 

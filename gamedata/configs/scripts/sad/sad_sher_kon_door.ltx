@@ -1,0 +1,21 @@
+[logic]
+active = ph_idle@wait
+
+[ph_idle@wait]
+on_info = {=actor_has_item(sad_sher_explosive)} ph_idle@has_explosion
+
+[ph_idle@has_explosion]
+tips = pri_a25_blow_up_enter_door
+on_use = ph_idle@spawn_explosive_grenade %=spawn_object(sad_sher_explosive_charge:sad_sher_explosive_charge_place) =play_sound(pri_a25_blow_up_door_peep) =remove_item(sad_sher_explosive)%
+on_info = {!actor_has_item(sad_sher_explosive)} ph_idle@wait
+
+[ph_idle@spawn_explosive_grenade]
+on_game_timer = 50 | ph_idle@remove_cherge %=spawn_object(pri_a25_enter_door_explosive_grenade:sad_sher_explosive_grenade_place)%
+
+[ph_idle@remove_cherge]
+on_info = {=object_exist(sad_sher_explosive_charge)} ph_idle@explosion %=destroy_object(story:sad_sher_explosive_charge) =destroy_object(story:sad_sher_kon_door) +sad_sher_explosion_done%, ph_idle@explosion
+
+[ph_idle@explosion]
+on_info = {=object_exist(pri_a25_enter_door_explosive_grenade)} ph_idle@nil  %+sad_sher_explosion_done =barrel_explode(pri_a25_enter_door_explosive_grenade)%
+
+[ph_idle@nil]

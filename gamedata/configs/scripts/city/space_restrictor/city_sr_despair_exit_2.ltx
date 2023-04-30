@@ -1,0 +1,12 @@
+[logic]
+active = sr_idle
+
+[sr_idle]
+on_actor_inside = {+spectrum_project_start +labx14_search_exit_complete +city_despair_runrun} sr_idle@2 %+city_despair_complete%
+
+[sr_idle@2]
+on_game_timer = 10 | {-pri_a28_show_freeplay_dialog} %+pri_a28_show_freeplay_dialog =enable_ui =show_freeplay_dialog(st_freeplay_text_yes_no:true)%
+on_info = {+pri_a28_actor_in_zone_stay} sr_idle@nil %=enable_ui%
+on_info2 = {+pri_a28_actor_in_zone_leave} sr_idle@nil %=game_credits =enable_ui%
+
+[sr_idle@nil]

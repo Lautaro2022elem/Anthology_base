@@ -1,0 +1,19 @@
+[logic]
+active = sr_idle@dubolom_spawn_start
+
+[sr_idle@dubolom_spawn_start]
+on_info = {+pro_paskhalka_stalker_is_dead} sr_idle@dubolom_spawn_start_1
+
+[sr_idle@dubolom_spawn_start_1]
+on_timer = 4000 | sr_idle@dubolom_spawn_start_2 %=pb_duty_tachenko_sends_sms_2%
+
+[sr_idle@dubolom_spawn_start_2]
+on_timer = 2000 | sr_idle@chimera_spawn_start %=give_task(pb_duty_tachenko_final_quest_meet)%
+
+[sr_idle@chimera_spawn_start]
+on_info = {+pro_dialog_duty_tachenko_end_line_done} sr_idle@chimera_spawn_start_1
+
+[sr_idle@chimera_spawn_start_1]
+on_timer = 1000 | sr_idle@nil %=remove_squad(pro_smart_3) =spawn_object(pb_lesnik_final_scene:pro_lesnik_final_scene_spawn) =pro_actor_replic_about_tachenko_death%
+
+[sr_idle@nil]

@@ -1,0 +1,25 @@
+[logic]
+active = sr_idle@wait
+
+[sr_idle@wait]
+on_info = {+sad_oasis_teleport_out_open} sr_teleport
+on_info2 = {+sad_cowboy_enemy} sr_idle@100
+
+[sr_teleport]
+point1 = sad_oasis_teleport_out_walk
+look1 = sad_oasis_teleport_out_look
+on_info = {+sad_oasis_jumped_out} sr_idle@100
+on_info2 = {+sad_cowboy_enemy} sr_idle@100
+
+[sr_idle@100]
+on_info = {+sad_actor_enemy_to_someone} sr_idle@nil, {+sad_teledoc_ready} sr_idle@200
+
+[sr_idle@200]
+on_info = {=actor_active_detector(detector_sad) =sad_dist_to_path_le(sad_sim_16_telep_out_effect_place:350)} sr_teleport@1 %+sad_activate_teleport_obratno%
+
+[sr_teleport@1]
+point1 = sad_oasis_teleport_out_walk
+look1 = sad_oasis_teleport_out_look
+on_info = {!actor_active_detector(detector_sad)} sr_idle@200 %-sad_activate_teleport_obratno%, {=sad_dist_to_path_ge(sad_sim_16_telep_out_effect_place:400)} sr_idle@200 %-sad_activate_teleport_obratno%
+
+[sr_idle@nil]

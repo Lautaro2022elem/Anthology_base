@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="windows-1251" ?>
+<string_table>
+
+	<!-- bar_npc_dolg_mechanic -->
+	<string id="bar_npc_dolg_mechanic_task_1_name">
+    <text>Find %s for the Turner</text>
+</string>
+<string id="bar_npc_dolg_mechanic_task_1_text">
+    <text>You need to bring tools to the Turner so that he can upgrade the equipment.</text>
+</string>
+<string id="bar_npc_dolg_mechanic_task_1_about">
+    <text>You know, buddy, I'm actually a pretty good technician. I can fix both weapons and armor, and even make some upgrades! Well, I would, if the tools were normal. But where can you get them here? Maybe you can help me get some simple set, huh?</text>
+</string>
+<string id="bar_npc_dolg_mechanic_task_1_fetch_about">
+    <text>I need a set of tools for rough work. It should have tools and oils for working with weapons. If you can get it, I'll be grateful, I might even pay you!.. Probably.</text>
+</string>
+<string id="bar_npc_dolg_mechanic_task_1_fetch_finish">
+    <text>Great, man! Oh, sorry, I have nothing to pay with. But I can give you a good discount!</text>
+</string>
+<string id="bar_npc_dolg_mechanic_task_2_name">
+    <text>Find %s for the Turner</text>
+</string>
+<string id="bar_npc_dolg_mechanic_task_2_text">
+    <text>You need to bring tools for delicate work to the Turner. He needs a more complete set to perform more complex upgrades of the equipment.</text>
+</string>
+<string id="bar_npc_dolg_mechanic_task_2_about">
+    <text>Hey, man, if you agree to get me a more complete set, you'll get an even bigger discount. Will you help me, buddy?</text>
+</string>
+<string id="bar_npc_dolg_mechanic_task_2_fetch_about">
+    <text>I need tools for delicate work. It should have everything I need. You'll be like a brother to me if you get it!</text>
+</string>
+<string id="bar_npc_dolg_mechanic_task_2_fetch_finish">
+    <text>Wow, thanks, dude! Now I'll definitely get rich. Damn, I'll be successful!.. If, of course, I don't miss this chance. But for now, I can't offer you anything better than a discount. Sorry, buddy.</text>
+</string>
+<string id="bar_npc_dolg_mechanic_task_3_name">
+    <text>Find %s for the Turner</text>
+</string>
+<string id="bar_npc_dolg_mechanic_task_3_text">
+    <text>You need to bring %s to the Turner. He needs a unique set to perform even more complex upgrades of the equipment.</text>
+</string>
+<string id="bar_npc_dolg_mechanic_task_3_about">
+    <text>Hey, guy, if you find something worthwhile, I'll give you a discount!</text>
+</string>
+<string id="bar_npc_dolg_mechanic_task_3_fetch_about">
+    <text>I need tools for calibration. It should have everything I need. You'll be like a brother to me if you get them!</text>
+</string>
+<string id="bar_npc_dolg_mechanic_task_3_fetch_finish">
+		<text>No way...! Oh man, thank you! Now I'll definitely get rich. Damn, I'll finally become successful!... If, of course, I don't miss this chance as well. But for now, I can't offer you anything better than a discount. Sorry, buddy.</text>
+	</string>
+
+	<!-- bar_medic -->
+<string id="bar_medic_task_1_name">
+	<text>%s for Shot</text>
+</string>
+<string id="bar_medic_task_1_text">
+	<text>You need to find a set and bring it to medic Shot.</text>
+</string>
+<string id="bar_medic_task_1_about">
+	<text>I need a good set of medical tools. I can quickly patch up minor injuries, but I don't have what it takes for anything more serious than a simple scalpel.</text>
+</string>
+<string id="bar_medic_task_1_fetch_about">
+	<text>I need a good set of medical tools. I can quickly patch up minor injuries, but I don't have what it takes for anything more serious than a simple scalpel.</text>
+</string>
+<string id="bar_medic_task_1_fetch_finish">
+	<text>Thank you, friend! These tools will save the lives of many people. Thanks again for the tools.</text>
+</string>
+
+</string_table>

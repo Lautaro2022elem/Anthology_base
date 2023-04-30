@@ -1,0 +1,12 @@
+[logic]
+active = ph_idle@close
+
+[ph_idle@close]
+nonscript_usable = false
+tips = jup_b202_treasures_closed
+on_info  = {+esc_quest_criminal_business_box} ph_idle@open
+
+[ph_idle@open]
+nonscript_usable = true
+tips = actor_inventory_box_use
+on_use = {-esc_quest_criminal_business_talk_logoped} %+esc_quest_criminal_business_talk_logoped%

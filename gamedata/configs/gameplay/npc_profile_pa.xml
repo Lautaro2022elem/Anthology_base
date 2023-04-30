@@ -1,0 +1,394 @@
+<?xml version='1.0' encoding="UTF-8"?>
+
+<xml>
+	<!-- ÍÎÂÛÅ ÏÐÎÔÈËß -->
+
+	<character id="pb_lutiy">
+		<class>pb_lutiy</class>
+	</character>
+
+	<character id="pb_moskit">
+		<class>pb_moskit</class>
+	</character>
+
+	<character id="pb_rezak">
+		<class>pb_rezak</class>
+	</character>
+
+	<character id="pb_shurup">
+		<class>pb_shurup</class>
+	</character>
+
+	<character id="pb_markus_novice">
+		<class>pb_markus_novice</class>
+	</character>
+
+	<character id="pb_murad">
+		<class>pb_murad</class>
+	</character>
+
+	<character id="pb_padalshik">
+		<class>pb_padalshik</class>
+	</character>
+
+	<character id="pb_zombied_dolg_man">
+		<class>pb_zombied_dolg_man</class>
+	</character>
+
+	<character id="pb_zombied_dolg_man_1">
+		<class>pb_zombied_dolg_man_1</class>
+	</character>
+
+	<character id="pb_zombied_dolg_man_2">
+		<class>pb_zombied_dolg_man_2</class>
+	</character>
+
+	<character id="pb_zombied_dolg_man_3">
+		<class>pb_zombied_dolg_man_3</class>
+	</character>
+
+	<character id="pb_stronglav">
+		<class>pb_stronglav</class>
+	</character>
+
+	<character id="digst_markus_survive">
+		<class>digst_markus_survive</class>
+	</character>
+
+	<character id="pb_kuvalda">
+		<class>pb_kuvalda</class>
+	</character>
+
+	<character id="pb_snake">
+		<class>pb_snake</class>
+	</character>
+
+	<character id="pb_mrakobes">
+		<class>pb_mrakobes</class>
+	</character>
+
+	<character id="pb_mrakobes_scene">
+		<class>pb_mrakobes_scene</class>
+	</character>
+
+	<character id="pb_soldier_oleynik">
+		<class>pb_soldier_oleynik</class>
+	</character>
+
+	<character id="pb_soldier_oleynik_podval">
+		<class>pb_soldier_oleynik_podval</class>
+	</character>
+
+	<character id="pb_dubolom">
+		<class>pb_dubolom</class>
+	</character>
+
+	<character id="pb_ghost_podval">
+		<class>pb_ghost_podval</class>
+	</character>
+
+	<character id="pb_zombied_shell">
+		<class>pb_zombied_shell</class>
+	</character>
+
+	<character id="pb_killer_leader_group">
+		<class>pb_killer_leader_group</class>
+	</character>
+
+	<character id="pb_killer_fire">
+		<class>pb_killer_fire</class>
+	</character>
+
+	<character id="pb_duty_tachenko">
+		<class>pb_duty_tachenko</class>
+	</character>
+
+	<character id="pb_duty_chepurnoy">
+		<class>pb_duty_chepurnoy</class>
+	</character>
+
+	<character id="pb_duty_bunchuck">
+		<class>pb_duty_bunchuck</class>
+	</character>
+
+	<character id="pb_duty_kosmach">
+		<class>pb_duty_kosmach</class>
+	</character>
+
+	<character id="pb_duty_zaharchuk">
+		<class>pb_duty_zaharchuk</class>
+	</character>
+
+	<character id="pb_lesnik">
+		<class>pb_lesnik</class>
+	</character>
+
+	<character id="pb_paskhalka_stalker">
+		<class>pb_paskhalka_stalker</class>
+	</character>
+
+	<character id="pb_otshelnik">
+		<class>pb_otshelnik</class>
+	</character>
+
+
+
+	<character id="bar_zmeelov_digger">
+		<class>bar_zmeelov_digger</class>
+	</character>
+
+	<character id="bar_digger_helper_1">
+		<class>bar_digger_helper_1</class>
+	</character>
+
+	<character id="bar_digger_helper_2">
+		<class>bar_digger_helper_2</class>
+	</character>
+
+	<character id="bar_digger_semen">
+		<class>bar_digger_semen</class>
+	</character>
+
+	<character id="bar_markus_end_game">
+		<class>bar_markus_end_game</class>
+	</character>
+
+	<character id="bar_otshelnik">
+		<class>bar_otshelnik</class>
+	</character>
+
+	<character id="bar_ecolog_guard">
+		<class>bar_ecolog_guard</class>
+	</character>
+
+
+
+	<character id="esc_b101_bandit_1">
+		<class>esc_b101_bandit_1</class>
+	</character>
+
+	<character id="esc_b101_bandit_2">
+		<class>esc_b101_bandit_2</class>
+	</character>
+
+	<character id="esc_b101_bandit_3">
+		<class>esc_b101_bandit_3</class>
+	</character>
+
+	<character id="esc_b101_bandit_4">
+		<class>esc_b101_bandit_4</class>
+	</character>
+
+	<character id="esc_b104_bandit_1">
+		<class>esc_b104_bandit_1</class>
+	</character>
+
+	<character id="esc_b104_bandit_2">
+		<class>esc_b104_bandit_2</class>
+	</character>
+
+	<character id="esc_b107_stalker_1">
+		<class>esc_b107_stalker_1</class>
+	</character>
+
+	<character id="esc_b107_stalker_2">
+		<class>esc_b107_stalker_2</class>
+	</character>
+
+	<character id="esc_b107_stalker_3">
+		<class>esc_b107_stalker_3</class>
+	</character>
+
+	<character id="esc_a12_stalker_1">
+		<class>esc_a12_stalker_1</class>
+	</character>
+
+
+
+	<character id="blck_val_a31_bandit_kom">
+		<class>blck_val_a31_bandit_kom</class>
+	</character>
+
+	<character id="blck_val_a31_bandit_medic">
+		<class>blck_val_a31_bandit_medic</class>
+	</character>
+
+	<character id="blck_val_a31_bandit_mechanic">
+		<class>blck_val_a31_bandit_mechanic</class>
+	</character>
+
+	<character id="blck_val_a31_bandit_barmen">
+		<class>blck_val_a31_bandit_barmen</class>
+	</character>
+
+	<character id="blck_val_a31_sologub_trader">
+		<class>blck_val_a31_sologub_trader</class>
+	</character>
+
+	<character id="blck_val_a31_bandit_1">
+		<class>blck_val_a31_bandit_1</class>
+	</character>
+
+	<character id="blck_val_a31_bandit_2">
+		<class>blck_val_a31_bandit_2</class>
+	</character>
+
+	<character id="blck_val_a31_bandit_3">
+		<class>blck_val_a31_bandit_3</class>
+	</character>
+
+	<character id="blck_val_a31_bandit_4">
+		<class>blck_val_a31_bandit_4</class>
+	</character>
+
+	<character id="blck_val_a31_bandit_5">
+		<class>blck_val_a31_bandit_5</class>
+	</character>
+
+	<character id="blck_val_a31_bandit_6">
+		<class>blck_val_a31_bandit_6</class>
+	</character>
+
+	<character id="blck_val_a31_bandit_7">
+		<class>blck_val_a31_bandit_7</class>
+	</character>
+
+	<character id="blck_val_a31_bandit_8">
+		<class>blck_val_a31_bandit_8</class>
+	</character>
+
+	<character id="blck_val_a31_bandit_9">
+		<class>blck_val_a31_bandit_9</class>
+	</character>
+
+	<character id="blck_val_a31_stalker_1">
+		<class>blck_val_a31_stalker_1</class>
+	</character>
+
+	<character id="blck_val_a31_stalker_2">
+		<class>blck_val_a31_stalker_2</class>
+	</character>
+
+	<character id="blck_val_a35_freedom_1">
+		<class>blck_val_a35_freedom_1</class>
+	</character>
+
+	<character id="blck_val_a35_freedom_2">
+		<class>blck_val_a35_freedom_2</class>
+	</character>
+
+	<character id="blck_val_a35_freedom_3">
+		<class>blck_val_a35_freedom_3</class>
+	</character>
+
+	<character id="blck_val_a37_bandit_1">
+		<class>blck_val_a37_bandit_1</class>
+	</character>
+
+	<character id="blck_val_a37_bandit_2">
+		<class>blck_val_a37_bandit_2</class>
+	</character>
+
+	<character id="blck_val_a37_bandit_3">
+		<class>blck_val_a37_bandit_3</class>
+	</character>
+
+	<character id="blck_val_bandit_minigame">
+		<class>blck_val_bandit_minigame</class>
+	</character>
+
+	<character id="blck_val_b203_bandit_1">
+		<class>blck_val_b203_bandit_1</class>
+	</character>
+
+	<character id="blck_val_b203_bandit_2">
+		<class>blck_val_b203_bandit_2</class>
+	</character>
+
+	<character id="blck_val_b203_stalker">
+		<class>blck_val_b203_stalker</class>
+	</character>
+
+	<character id="blck_val_chimik">
+		<class>blck_val_chimik</class>
+	</character>
+
+	<character id="blck_val_miklucha_freedom">
+		<class>blck_val_miklucha_freedom</class>
+	</character>
+
+	<character id="blck_val_default_zombied_1">
+		<class>blck_val_default_zombied_1</class>
+	</character>
+
+	<character id="blck_val_spatial_fish">
+		<class>blck_val_spatial_fish</class>
+	</character>
+
+	<character id="blck_val_spatial_burguy">
+		<class>blck_val_spatial_burguy</class>
+	</character>
+
+	<character id="blck_val_spatial_igla">
+		<class>blck_val_spatial_igla</class>
+	</character>
+
+	<character id="blck_val_hunter_leader">
+		<class>blck_val_hunter_leader</class>
+	</character>
+
+	<character id="blck_val_lutiy_monolith">
+		<class>blck_val_lutiy_monolith</class>
+	</character>
+
+	<character id="blck_val_monolith_leader">
+		<class>blck_val_monolith_leader</class>
+	</character>
+
+	<character id="blck_val_monolith_group">
+		<class>blck_val_monolith_group</class>
+	</character>
+
+	<character id="blck_val_zastava_provodnik">
+		<class>blck_val_zastava_provodnik</class>
+	</character>
+
+	<character id="blck_val_stalker_hutor_1">
+		<class>blck_val_stalker_hutor_1</class>
+	</character>
+
+	<character id="blck_val_stalker_hutor_2">
+		<class>blck_val_stalker_hutor_2</class>
+	</character>
+
+	<character id="blck_val_final_scene_actor">
+		<class>blck_val_final_scene_actor</class>
+	</character>
+
+
+	<character id="labx7_killer_enemy_1">
+		<class>labx7_killer_enemy_1</class>
+	</character>
+
+	<character id="labx7_killer_enemy_2">
+		<class>labx7_killer_enemy_2</class>
+	</character>
+
+	<character id="labx7_lutiy_monolith">
+		<class>labx7_lutiy_monolith</class>
+	</character>
+
+	<!-- ÏÐÎÔÈËß BY STALKER66 -->
+
+	<character id="esc_lisiy_npc">
+		<class>esc_lisiy_npc</class>
+	</character>
+	<character id="esc_bobik_npc">
+		<class>esc_bobik_npc</class>
+	</character>
+	
+	<character id="esc_bobik_npc_dead">
+		<class>esc_bobik_npc_dead</class>
+	</character>
+
+</xml>

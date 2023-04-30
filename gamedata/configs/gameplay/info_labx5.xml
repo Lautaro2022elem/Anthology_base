@@ -1,0 +1,52 @@
+<?xml version='1.0' encoding="windows-1251"?>
+
+<game_information_portions>
+  
+  <!-- Квестовые инфопоршни лабы x5 -->	
+	<info_portion id="labx5_mod_npcs_spawner"></info_portion>
+	<info_portion id="labx5_b1_first_door_open_ready"></info_portion>
+	<info_portion id="labx5_b1_give_dop_quest_pitanie_1"></info_portion>
+	<info_portion id="labx5_b1_give_dop_quest_pitanie_2"></info_portion>
+	<info_portion id="labx5_b1_spawn_monster_1"></info_portion>
+	<info_portion id="labx5_b1_spawn_monster_2"></info_portion>
+	<info_portion id="labx5_b1_borland_talking_1"></info_portion>
+	<info_portion id="labx5_b1_borland_talking_2"></info_portion>
+	<info_portion id="labx5_b1_borland_talking_3"></info_portion>
+	<info_portion id="labx5_b1_borland_talking_4"></info_portion>
+	<info_portion id="labx5_b1_borland_lift_watch"></info_portion>
+	<info_portion id="labx5_b1_main_quest_1_give"></info_portion>
+	<info_portion id="labx5_b1_sound_zone_restr_1_effects"></info_portion>
+	<info_portion id="labx5_a1_sound_zone_restr_1_effects"></info_portion>
+	<info_portion id="labx5_a1_sound_zone_restr_2_effects"></info_portion>
+	<info_portion id="labx5_a1_sound_zone_restr_3_effects"></info_portion>
+	<info_portion id="labx5_a1_sound_zone_restr_4_effects"></info_portion>
+	<info_portion id="labx5_a1_sound_zone_restr_5_effects"></info_portion>
+	<info_portion id="labx5_a1_sound_zone_restr_6_effects"></info_portion>
+	<info_portion id="labx5_b1_psionik_create"></info_portion>
+	<info_portion id="labx5_b1_quest_mutant_create"></info_portion>
+	<info_portion id="labx5_b1_psionik_killed"></info_portion>
+	<info_portion id="labx5_b1_spawn_dead_body_1"></info_portion>
+	<info_portion id="labx5_b1_first_door_open"></info_portion>
+	<info_portion id="labx5_b1_lift_pitanie_give"></info_portion>
+	<info_portion id="labx5_b1_come_point_1"></info_portion>
+	<info_portion id="labx5_a1_dop_zone_restr_effects_2"></info_portion>
+	<info_portion id="labx5_b1_borland_podmena_create"></info_portion>
+	<info_portion id="labx5_main_quest_restr_2_close"></info_portion>
+	<info_portion id="labx5_b1_borland_create_monolith"></info_portion>
+	<info_portion id="labx5_b1_borland_monolith_zas_create"></info_portion>
+	<info_portion id="labx5_a2_monolith_default_1_death"></info_portion>
+	<info_portion id="labx5_a2_monolith_default_2_death"></info_portion>
+	<info_portion id="labx5_a2_monolith_default_3_death"></info_portion>
+	<info_portion id="labx5_a2_monolith_default_4_death"></info_portion>
+	<info_portion id="labx5_a2_monolith_default_5_death"></info_portion>
+	<info_portion id="labx5_a2_monolith_default_6_death"></info_portion>
+	<info_portion id="labx5_a2_monolith_default_7_death"></info_portion>
+	<info_portion id="labx5_a2_monolith_default_8_death"></info_portion>
+	<info_portion id="labx5_a2_monolith_default_9_death"></info_portion>
+	<info_portion id="labx5_a2_monolith_default_all_death"></info_portion>
+	<info_portion id="sp_a2_hero_to_garbage_come"></info_portion>
+	<info_portion id="labx5_a2_quest_documents_all_have"></info_portion>
+	<info_portion id="labx5_a2_quest_documents_not_have"></info_portion>
+	<info_portion id="labx5_a1_dop_zone_restr_effects_1"></info_portion>
+	<info_portion id="labx5_a1_dop_zone_restr_effects_spez_1"></info_portion>
+</game_information_portions>

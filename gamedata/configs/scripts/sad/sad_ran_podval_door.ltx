@@ -1,0 +1,48 @@
+[logic]
+active = ph_door@locked
+
+[ph_door@locked]
+closed = true
+locked = true
+on_info = {+sad_cowboy_enemy} ph_door@closed, {+sad_ran_cowboy_gone} ph_door@closed
+snd_open_start = trader_door_locked
+
+[ph_door@closed]
+closed = true
+locked = false
+on_use = ph_door@open
+on_info = {+sad_ran_new_trader_come} ph_door@locked2
+snd_open_start = trader_door_open_start
+snd_close_start = trader_door_close_start
+snd_close_stop = trader_door_close_stop
+
+[ph_door@open]
+closed = false
+locked = false
+on_use = ph_door@closed
+on_info = {+sad_ran_new_trader_come} ph_door@locked2
+snd_open_start = trader_door_open_start
+snd_close_start = trader_door_close_start
+snd_close_stop = trader_door_close_stop
+
+[ph_door@locked2]
+closed = true
+locked = true
+on_info = {+sad_ran_door_unlock} ph_door@closed3
+snd_open_start = trader_door_locked
+
+[ph_door@closed3]
+closed = true
+locked = false
+on_use = ph_door@open3
+snd_open_start = trader_door_open_start
+snd_close_start = trader_door_close_start
+snd_close_stop = trader_door_close_stop
+
+[ph_door@open3]
+closed = false
+locked = false
+on_use = ph_door@closed3
+snd_open_start = trader_door_open_start
+snd_close_start = trader_door_close_start
+snd_close_stop = trader_door_close_stop

@@ -1,0 +1,22 @@
+[logic]
+active = sr_idle
+
+[sr_idle]
+on_info = {+spectrum_project_start +esc_quest_gopstop_complite +esc_the_first_penny_complite} sr_idle@1
+
+[sr_idle@1]
+on_game_timer = 150 | sr_idle@scenario_autosave_1 %+esc_quest_mechanic_search_logoped_1_talk =give_task(esc_quest_mechanic_search)%
+
+[sr_idle@scenario_autosave_1]
+on_timer = 100 | {-save_esc_quest_mechanic_search} %+save_esc_quest_mechanic_search =scenario_autosave(st_esc_quest_mechanic_search)%
+on_info = {+save_esc_quest_mechanic_search} sr_idle@2
+
+[sr_idle@2]
+on_info = {+esc_quest_mechanic_search_complite} sr_idle@3 %=spawn_object(esc_dybolom_bandit:esc_spawn_dybolom_bandit)%
+on_info2 = {+esc_quest_line_secret_freedom_complete} sr_idle@3 %+esc_quest_mechanic_search_fail -esc_quest_mechanic_search_logoped_1_talk -esc_quest_mechanic_search_logoped_2_talk -esc_quest_mechanic_search_mechanic_talk%
+on_game_timer = 186400 | sr_idle@3 %+esc_quest_mechanic_search_fail -esc_quest_mechanic_search_logoped_1_talk -esc_quest_mechanic_search_logoped_2_talk -esc_quest_mechanic_search_mechanic_talk%
+
+[sr_idle@3]
+
+
+[sr_idle@nil]

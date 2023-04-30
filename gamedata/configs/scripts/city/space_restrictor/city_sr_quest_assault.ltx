@@ -1,0 +1,31 @@
+[logic]
+active = sr_idle
+
+[sr_idle]
+on_info = {-city_TEST +spectrum_project_start +labx14_search_exit_complete +city_assault_start} sr_idle@2 %=spawn_object(city_npc_army_attak_1:city_npc_army_attak_1_spawn) =spawn_object(city_npc_army_attak_2:city_npc_army_attak_2_spawn) =spawn_object(city_npc_army_attak_3:city_npc_army_attak_3_spawn) =spawn_object(city_npc_army_attak_4:city_npc_army_attak_4_spawn)%
+on_info2 = {+city_TEST} sr_idle@test_1 %=spawn_object(city_npc_army_attak_1:city_npc_army_attak_1_spawn) =spawn_object(city_npc_army_attak_2:city_npc_army_attak_2_spawn) =spawn_object(city_npc_army_attak_3:city_npc_army_attak_3_spawn) =spawn_object(city_npc_army_attak_4:city_npc_army_attak_4_spawn)%
+
+[sr_idle@2]
+on_game_timer = 25 | sr_idle@3 %=disable_ui%
+
+[sr_idle@3]
+on_game_timer = 10 | sr_idle@4 %+city_npc_army_base_release =run_postprocess(black:5001:true) =set_game_time(6:00) +city_army_ALL_remove +city_heli_1_time%
+
+[sr_idle@4]
+on_game_timer = 30 | sr_idle@scenario_autosave %=teleport_actor(city_actor_teleport_assault_walk:city_actor_teleport_assault_look) =remove_npc(city_mutant_0) =remove_npc(city_mutant_1) =spawn_object(city_npc_sp_1:city_npc_sp_1_spawn) =spawn_object(city_npc_sp_2:city_npc_sp_2_spawn) =spawn_object(city_npc_sp_3:city_npc_sp_3_spawn) =spawn_object(city_npc_sp_4:city_npc_sp_4_spawn)%
+
+[sr_idle@scenario_autosave]
+on_timer = 100 | {-save_city_assault} %+save_city_assault =scenario_autosave(st_city_assault)%
+on_info = {+save_city_assault} sr_idle@5
+
+[sr_idle@5]
+on_game_timer = 20 | sr_idle@6 %=enable_ui =stop_postprocess(5001) =give_task(city_assault) =city_sms_genarmy_1%
+
+[sr_idle@6]
+on_game_timer = 75 | sr_idle@nil %=city_sms_genarmy_2%
+
+
+[sr_idle@test_1]
+on_info = sr_idle@nil %=city_sms_genarmy_1 +city_sabotage_has_item =give_task(city_assault) +city_heli_1_time =teleport_actor(city_actor_teleport_assault_walk:city_actor_teleport_assault_look) =spawn_object(city_npc_sp_1:city_npc_sp_1_spawn) =spawn_object(city_npc_sp_2:city_npc_sp_2_spawn) =spawn_object(city_npc_sp_3:city_npc_sp_3_spawn) =spawn_object(city_npc_sp_4:city_npc_sp_4_spawn)%
+
+[sr_idle@nil]

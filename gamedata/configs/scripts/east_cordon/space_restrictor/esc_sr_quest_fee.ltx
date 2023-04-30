@@ -1,0 +1,15 @@
+[logic]
+active = sr_idle
+
+[sr_idle]
+on_actor_outside = {+spectrum_project_start -eac_quest_fee_complite +esc_borland_fee_dialog_and} sr_idle@quest %+eac_quest_fee_complite%
+
+[sr_idle@quest]
+on_timer = 2000 | {-save_esc_freedom_life} %+save_esc_freedom_life =scenario_autosave(st_save_esc_freedom_life)%
+on_info = {+save_esc_freedom_life} sr_idle@danger
+
+[sr_idle@danger]
+on_actor_inside = {=is_squad_enemy_to_actor(esc_squad_barrer)} sr_idle@actorkill %=play_sound(alarm) +esc_mil_alarm%
+
+[sr_idle@actorkill] 
+on_game_timer = 100 | %=hit_actor =kill_actor% 

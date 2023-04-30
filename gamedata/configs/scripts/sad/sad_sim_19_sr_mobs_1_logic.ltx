@@ -1,0 +1,18 @@
+[logic]
+active = sr_idle@wait
+
+[sr_idle@wait]
+on_info = {+sad_b4_actor_recognized} sr_idle@start %=create_squad(sad_sim_19_snorki:sad_sim_19)%
+on_info2 = {+sad_maxim_actor_enemy} sr_idle@start %=create_squad(sad_sim_19_snorki:sad_sim_19)%
+
+[sr_idle@start]
+on_game_timer = 60 | sr_idle@check
+
+[sr_idle@check]
+on_info = {+sad_b3_ucheny_mission_on} sr_idle@start, {!squad_exist(sad_sim_19_snorki)} sr_idle@squad, {!squad_npc_count_ge(sad_sim_19_snorki:4)} sr_idle@member, sr_idle@start
+
+[sr_idle@member]
+on_info = {~70} sr_idle@start %=sad_sim_19_create_snork_member(snork_normal)%, sr_idle@start %=sad_sim_19_create_snork_member(snork_strong)%
+
+[sr_idle@squad]
+on_info = {=sad_dist_to_path_ge(sad_sim_19_snork_squad_spawn:6500)} sr_idle@start %=create_squad(sad_sim_19_snorki:sad_sim_19)%, sr_idle@start

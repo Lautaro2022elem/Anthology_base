@@ -1,0 +1,10 @@
+[logic]
+active = sr_idle
+
+[sr_idle]
+on_actor_inside = {+spectrum_project_start +labx14_search_exit_complete +city_assault_heli_death} sr_idle@2
+
+[sr_idle@2]
+on_game_timer = 50 | sr_idle@nil %+city_sr_quest_assault_dk_point_0 =city_sms_genarmy_5_1%
+
+[sr_idle@nil]

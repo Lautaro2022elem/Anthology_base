@@ -1,0 +1,175 @@
+
+function on_xml_read()
+	RegisterScriptCallback("on_xml_read", function(xml_file_name, xml_obj)
+		if xml_file_name == [[text\rus\ui_st_companion_anti_awol.xml]]
+		then
+			local res = xml_obj:query("string[id=ui_mcm_menu_companion_anti_awol] > text")
+			if res[1] then
+				el = res[1]
+				local el_text = xml_obj:getText(el)
+				if el_text then
+					xml_obj:setText(el, "Compn. Anti Awol")
+				end
+			end
+		end
+
+		if xml_file_name == [[text\rus\haru_tp_companions.xml]]
+		then
+			local res = xml_obj:query("string[id=ui_mcm_menu_haru_companion_tp] > text")
+			if res[1] then
+				el = res[1]
+				local el_text = xml_obj:getText(el)
+				if el_text then
+					xml_obj:setText(el, "Compn. Teleport")
+				end
+			end
+		end
+
+		if xml_file_name == [[text\rus\companion_ui.xml]]
+		then
+			local res = xml_obj:query("string[id=ui_mcm_menu_ui_blyat] > text")
+			if res[1] then
+				el = res[1]
+				local el_text = xml_obj:getText(el)
+				if el_text then
+					xml_obj:setText(el, "Compn. Hud")
+				end
+			end
+		end
+
+		if xml_file_name == [[text\rus\ui_mcm_chatter.xml]]
+		then
+			local res = xml_obj:query("string[id=ui_mcm_menu_chatter] > text")
+			if res[1] then
+				el = res[1]
+				local el_text = xml_obj:getText(el)
+				if el_text then
+					xml_obj:setText(el, "Compn. Chatter")
+				end
+			end
+		end
+
+		if xml_file_name == [[text\rus\ui_st_reworked_rf_receiver.xml]]
+		then
+			local res = xml_obj:query("string[id=ui_mcm_menu_reworked_rf_receiver] > text")
+			if res[1] then
+				el = res[1]
+				local el_text = xml_obj:getText(el)
+				if el_text then
+					xml_obj:setText(el, "RF-R. Reworked")
+				end
+			end
+		end
+
+		if xml_file_name == [[text\rus\ui_st_companions_wont_jam.xml]]
+		then
+			local res = xml_obj:query("string[id=ui_mcm_menu_companions_wont_jam] > text")
+			if res[1] then
+				el = res[1]
+				local el_text = xml_obj:getText(el)
+				if el_text then
+					xml_obj:setText(el, "Compn. Won't Jam")
+				end
+			end
+		end
+
+		if xml_file_name == [[text\rus\ui_st_companion_inventory_fix.xml]]
+		then
+			local res = xml_obj:query("string[id=ui_mcm_menu_companion_inv] > text")
+			if res[1] then
+				el = res[1]
+				local el_text = xml_obj:getText(el)
+				if el_text then
+					xml_obj:setText(el, "Compn. I. Unlock")
+				end
+			end
+		end
+
+		if xml_file_name == [[text\rus\ui_st_rax_cir.xml]]
+		then
+			local res = xml_obj:query("string[id=ui_mcm_menu_rax_cir] > text")
+			if res[1] then
+				el = res[1]
+				local el_text = xml_obj:getText(el)
+				if el_text then
+					xml_obj:setText(el, "Compn. I. Remote")
+				end
+			end
+		end
+		
+		if xml_file_name == [[text\rus\ui_mcm_dynamic_tonemap_extended.xml]]
+		then
+			local res = xml_obj:query("string[id=ui_mcm_menu_dynamic_tonemap_extended] > text")
+			if res[1] then
+				el = res[1]
+				local el_text = xml_obj:getText(el)
+				if el_text then
+					xml_obj:setText(el, "Dynamic Tonemap")
+				end
+			end
+		end
+		
+		if xml_file_name == [[text\rus\ui_st_dynamic_bloom_and_sunshaft.xml]]
+		then
+			local res = xml_obj:query("string[id=ui_mcm_menu_dynamic_bloom_and_sunshaft] > text")
+			if res[1] then
+				el = res[1]
+				local el_text = xml_obj:getText(el)
+				if el_text then
+					xml_obj:setText(el, "Dynamic Bloom")
+				end
+			end
+		end
+
+		if xml_file_name == [[text\rus\ui_st_health_and_weather_saturation.xml]]
+		then
+			local res = xml_obj:query("string[id=ui_mcm_menu_saturation] > text")
+			if res[1] then
+				el = res[1]
+				local el_text = xml_obj:getText(el)
+				if el_text then
+					xml_obj:setText(el, "Dynamic H/W Saturation")
+				end
+			end
+		end
+
+		if xml_file_name == [[text\rus\catsy_fftt_mcm.xml]]
+		then
+			local res = xml_obj:query("string[id=ui_mcm_menu_fftd] > text")
+			if res[1] then
+				el = res[1]
+				local el_text = xml_obj:getText(el)
+				if el_text then
+					xml_obj:setText(el, "Fair Fast Travel")
+				end
+			end
+		end
+
+		if xml_file_name == [[text\rus\ui_st_ranklvlmod.xml]]
+		then
+			local res = xml_obj:query("string[id=ui_mcm_menu_ranklvlmod] > text")
+			if res[1] then
+				el = res[1]
+				local el_text = xml_obj:getText(el)
+				if el_text then
+					xml_obj:setText(el, "Rank lvl Modifier")
+				end
+			end
+		end
+		
+
+		if xml_file_name == [[text\rus\st_dynamic_cover.xml]]
+		then
+			local res = xml_obj:query("string[id=ui_mcm_menu_dynamic_cover] > text")
+			if res[1] then
+				el = res[1]
+				local el_text = xml_obj:getText(el)
+				if el_text then
+					xml_obj:setText(el, "Dynamic E. Cover")
+				end
+			end
+		end
+	end)
+end
+
+

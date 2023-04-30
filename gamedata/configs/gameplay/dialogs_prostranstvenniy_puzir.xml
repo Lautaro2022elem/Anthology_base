@@ -1,0 +1,4258 @@
+<?xml version="1.0" encoding="windows-1251" standalone="yes" ?>
+<game_dialogs>
+    <dialog id="pb_murad_prison_meet">
+        <phrase_list>
+            <phrase id="1">
+                <text>pb_murad_prison_meet_1</text>
+                <next>2</next>
+            </phrase>
+            <phrase id="2">
+                <text>pb_murad_prison_meet_2</text>
+                <next>3</next>
+            </phrase>
+            <phrase id="3">
+                <text>pb_murad_prison_meet_3</text>
+                <next>4</next>
+            </phrase>
+            <phrase id="4">
+                <text>pb_murad_prison_meet_4</text>
+                <next>5</next>
+            </phrase>
+            <phrase id="5">
+                <text>pb_murad_prison_meet_5</text>
+                <action>dialogs.break_dialog</action>
+                <give_info>pro_murad_prisoner_dialog_done</give_info>
+            </phrase>
+            <phrase id="0">
+                <text>pb_murad_prison_meet_0</text>
+                <next>1</next>
+            </phrase>
+        </phrase_list>
+    </dialog>
+    <dialog id="pb_murad_quest_door_talk">
+        <phrase_list>
+            <phrase id="1">
+                <text>pb_murad_quest_door_talk_1</text>
+                <next>2</next>
+            </phrase>
+            <phrase id="2">
+                <text>pb_murad_quest_door_talk_2</text>
+                <next>3</next>
+            </phrase>
+            <phrase id="3">
+                <text>pb_murad_quest_door_talk_3</text>
+                <action>dialogs.break_dialog</action>
+                <give_info>pro_murad_go_to_quest_door</give_info>
+            </phrase>
+            <phrase id="0">
+                <text>pb_murad_quest_door_talk_0</text>
+                <next>1</next>
+            </phrase>
+        </phrase_list>
+    </dialog>
+    <dialog id="pb_murad_quest_end_dialog">
+        <phrase_list>
+            <phrase id="11">
+                <text />
+                <has_info>murad_task_end</has_info>
+                <next>12</next>
+            </phrase>
+            <phrase id="1">
+                <text />
+                <dont_has_info>murad_task_end</dont_has_info>
+                <next>2</next>
+            </phrase>
+            <phrase id="2">
+                <text>pb_murad_quest_end_dialog_2</text>
+                <next>3</next>
+            </phrase>
+            <phrase id="3">
+                <text>pb_murad_quest_end_dialog_3</text>
+                <next>4</next>
+            </phrase>
+            <phrase id="4">
+                <text>pb_murad_quest_end_dialog_4</text>
+                <next>5</next>
+            </phrase>
+            <phrase id="5">
+                <text>pb_murad_quest_end_dialog_5</text>
+                <next>6</next>
+            </phrase>
+            <phrase id="14">
+                <text>pb_murad_quest_end_dialog_14</text>
+                <action>dialogs.break_dialog</action>
+                <give_info>murad_task_end</give_info>
+                <give_info>perevalochnaya_baza_meet_to_murad_end</give_info>
+            </phrase>
+            <phrase id="0">
+                <text />
+                <next>1</next>
+                <next>11</next>
+            </phrase>
+            <phrase id="9">
+                <text>pb_murad_quest_end_dialog_9</text>
+                <next>10</next>
+                <next>8</next>
+            </phrase>
+            <phrase id="7">
+                <text>pb_murad_quest_end_dialog_7</text>
+                <next>9</next>
+            </phrase>
+            <phrase id="6">
+                <text>pb_murad_quest_end_dialog_6</text>
+                <next>7</next>
+            </phrase>
+            <phrase id="10">
+                <text>pb_murad_quest_end_dialog_10</text>
+                <has_info>rezak_quest_give</has_info>
+                <next>13</next>
+            </phrase>
+            <phrase id="13">
+                <text>pb_murad_quest_end_dialog_13</text>
+                <action>dialogs_perevalochnaya_baza.pb_robbery_murad_take_spez_razia</action>
+                <next>14</next>
+            </phrase>
+            <phrase id="8">
+                <text>pb_murad_quest_end_dialog_8</text>
+                <action>dialogs.break_dialog</action>
+                <action>dialogs_perevalochnaya_baza.pb_robbery_murad_take_spez_razia</action>
+                <dont_has_info>rezak_quest_give</dont_has_info>
+                <give_info>murad_task_end</give_info>
+                <give_info>perevalochnaya_baza_meet_to_murad_end</give_info>
+            </phrase>
+            <phrase id="12">
+                <text>pb_murad_quest_end_dialog_12</text>
+            </phrase>
+        </phrase_list>
+    </dialog>
+    <dialog id="pb_kuvalda_dialog_from_work">
+        <phrase_list>
+            <phrase id="4">
+                <text>pb_kuvalda_dialog_from_work_4</text>
+                <dont_has_info>pb_actor_first_quest_kuvalda_start</dont_has_info>
+                <has_info>pb_actor_first_quest_kuvalda_reserved</has_info>
+                <next>5</next>
+                <next>6</next>
+            </phrase>
+            <phrase id="3">
+                <text>pb_kuvalda_dialog_from_work_3</text>
+                <action>dialogs.break_dialog</action>
+                <give_info>pb_actor_first_quest_kuvalda_reserved</give_info>
+            </phrase>
+            <phrase id="7">
+                <text>pb_kuvalda_dialog_from_work_7</text>
+                <has_info>pb_actor_first_quest_kuvalda_start</has_info>
+            </phrase>
+            <phrase id="5">
+                <text>pb_kuvalda_dialog_from_work_5</text>
+                <action>dialogs.break_dialog</action>
+                <action>dialogs_perevalochnaya_baza.pb_find_kanistra_for_kuvalda_quest</action>
+                <give_info>pb_actor_first_quest_kuvalda_start</give_info>
+            </phrase>
+            <phrase id="2">
+                <text>pb_kuvalda_dialog_from_work_2</text>
+                <action>dialogs.break_dialog</action>
+                <action>dialogs_perevalochnaya_baza.pb_find_kanistra_for_kuvalda_quest</action>
+                <give_info>pb_actor_first_quest_kuvalda_start</give_info>
+            </phrase>
+            <phrase id="6">
+                <text>pb_kuvalda_dialog_from_work_6</text>
+                <action>dialogs.break_dialog</action>
+            </phrase>
+            <phrase id="1">
+                <text>pb_kuvalda_dialog_from_work_1</text>
+                <dont_has_info>pb_actor_first_quest_kuvalda_reserved</dont_has_info>
+                <dont_has_info>pb_actor_first_quest_kuvalda_start</dont_has_info>
+                <next>2</next>
+                <next>3</next>
+            </phrase>
+            <phrase id="0">
+                <text>pb_kuvalda_dialog_from_work_0</text>
+                <next>1</next>
+                <next>4</next>
+                <next>7</next>
+            </phrase>
+        </phrase_list>
+    </dialog>
+    <dialog id="pb_paskhalka_stalker_meet">
+        <phrase_list>
+            <phrase id="1">
+                <text>pb_paskhalka_stalker_meet_1</text>
+                <next>2</next>
+            </phrase>
+            <phrase id="2">
+                <text>pb_paskhalka_stalker_meet_2</text>
+                <next>3</next>
+            </phrase>
+            <phrase id="3">
+                <text>pb_paskhalka_stalker_meet_3</text>
+                <next>4</next>
+            </phrase>
+            <phrase id="4">
+                <text>pb_paskhalka_stalker_meet_4</text>
+                <next>5</next>
+            </phrase>
+            <phrase id="5">
+                <text>pb_paskhalka_stalker_meet_5</text>
+                <next>6</next>
+            </phrase>
+            <phrase id="6">
+                <text>pb_paskhalka_stalker_meet_6</text>
+                <next>7</next>
+            </phrase>
+            <phrase id="7">
+                <text>pb_paskhalka_stalker_meet_7</text>
+                <next>8</next>
+            </phrase>
+            <phrase id="8">
+                <text>pb_paskhalka_stalker_meet_8</text>
+                <next>9</next>
+            </phrase>
+            <phrase id="10">
+                <text>pb_paskhalka_stalker_meet_10</text>
+                <next>11</next>
+            </phrase>
+            <phrase id="11">
+                <text>pb_paskhalka_stalker_meet_11</text>
+                <next>12</next>
+            </phrase>
+            <phrase id="12">
+                <text>pb_paskhalka_stalker_meet_12</text>
+                <next>13</next>
+            </phrase>
+            <phrase id="13">
+                <text>pb_paskhalka_stalker_meet_13</text>
+                <next>14</next>
+            </phrase>
+            <phrase id="14">
+                <text>pb_paskhalka_stalker_meet_14</text>
+                <action>dialogs_perevalochnaya_baza.pb_paskhalka_stalker_give_art</action>
+                <next>15</next>
+            </phrase>
+            <phrase id="9">
+                <text>pb_paskhalka_stalker_meet_9</text>
+                <next>10</next>
+            </phrase>
+            <phrase id="15">
+                <text>pb_paskhalka_stalker_meet_15</text>
+                <action>dialogs.break_dialog</action>
+                <action>dialogs_perevalochnaya_baza.pb_found_lisiy_and_give_art_quest</action>
+                <give_info>pro_paskhalka_stalker_meet_done</give_info>
+            </phrase>
+            <phrase id="0">
+                <text>pb_paskhalka_stalker_meet_0</text>
+                <give_info>pro_dialog_paskhalka_stalker_start</give_info>
+                <next>1</next>
+            </phrase>
+        </phrase_list>
+    </dialog>
+    <dialog id="pb_duty_tachenko_final_dialog">
+        <phrase_list>
+            <phrase id="1">
+                <text>pb_duty_tachenko_final_dialog_1</text>
+                <next>2</next>
+            </phrase>
+            <phrase id="2">
+                <text>pb_duty_tachenko_final_dialog_2</text>
+                <next>3</next>
+            </phrase>
+            <phrase id="3">
+                <text>pb_duty_tachenko_final_dialog_3</text>
+                <next>4</next>
+            </phrase>
+            <phrase id="6">
+                <text>pb_duty_tachenko_final_dialog_6</text>
+                <next>7</next>
+            </phrase>
+            <phrase id="5">
+                <text>pb_duty_tachenko_final_dialog_5</text>
+                <next>6</next>
+            </phrase>
+            <phrase id="7">
+                <text>pb_duty_tachenko_final_dialog_7</text>
+                <action>dialogs.break_dialog</action>
+                <give_info>pro_dialog_duty_tachenko_end_line_done</give_info>
+            </phrase>
+            <phrase id="0">
+                <text>pb_duty_tachenko_final_dialog_0</text>
+                <next>1</next>
+            </phrase>
+            <phrase id="4">
+                <text>pb_duty_tachenko_final_dialog_4</text>
+                <next>5</next>
+            </phrase>
+        </phrase_list>
+    </dialog>
+    <dialog id="pb_duty_bunchuk_give_weapon">
+        <has_info>pro_quest_duty_weapon_found_meet</has_info>
+        <dont_has_info>pro_weapon_bunchuk_dialog_done</dont_has_info>
+        <phrase_list>
+            <phrase id="1">
+                <text>pb_duty_bunchuk_give_weapon_1</text>
+                <next>2</next>
+                <next>3</next>
+            </phrase>
+            <phrase id="3">
+                <text>pb_duty_bunchuk_give_weapon_3</text>
+                <action>dialogs.break_dialog</action>
+            </phrase>
+            <phrase id="5">
+                <text>pb_duty_bunchuk_give_weapon_5</text>
+                <action>dialogs_perevalochnaya_baza.pb_wpn_abakan_quest_out</action>
+                <next>6</next>
+            </phrase>
+            <phrase id="2">
+                <text>pb_duty_bunchuk_give_weapon_2</text>
+                <precondition>dialogs_perevalochnaya_baza.pb_check_items_wpn_abakan</precondition>
+                <give_info>pro_weapon_bunchuk_dialog_start</give_info>
+                <next>4</next>
+            </phrase>
+            <phrase id="6">
+                <text>pb_duty_bunchuk_give_weapon_6</text>
+                <action>dialogs_perevalochnaya_baza.pb_duty_bunchuk_take_reward</action>
+                <next>7</next>
+            </phrase>
+            <phrase id="7">
+                <text>pb_duty_bunchuk_give_weapon_7</text>
+                <action>dialogs.break_dialog</action>
+                <give_info>pro_weapon_bunchuk_dialog_done</give_info>
+            </phrase>
+            <phrase id="0">
+                <text>pb_duty_bunchuk_give_weapon_0</text>
+                <next>1</next>
+            </phrase>
+            <phrase id="4">
+                <text>pb_duty_bunchuk_give_weapon_4</text>
+                <next>5</next>
+            </phrase>
+        </phrase_list>
+    </dialog>
+    <dialog id="pb_duty_bunchuk_start_dialog">
+        <phrase_list>
+            <phrase id="2">
+                <text>pb_duty_bunchuk_start_dialog_2</text>
+                <next>3</next>
+            </phrase>
+            <phrase id="4">
+                <text>pb_duty_bunchuk_start_dialog_4</text>
+                <next>5</next>
+            </phrase>
+            <phrase id="1">
+                <text>pb_duty_bunchuk_start_dialog_1</text>
+                <next>2</next>
+            </phrase>
+            <phrase id="3">
+                <text>pb_duty_bunchuk_start_dialog_3</text>
+                <next>4</next>
+            </phrase>
+            <phrase id="5">
+                <text>pb_duty_bunchuk_start_dialog_5</text>
+                <action>dialogs.break_dialog</action>
+                <give_info>pro_duty_bunchuk_start_dialog_meet</give_info>
+            </phrase>
+            <phrase id="0">
+                <text>pb_duty_bunchuk_start_dialog_0</text>
+                <next>1</next>
+            </phrase>
+        </phrase_list>
+    </dialog>
+    <dialog id="pb_moskit_start_dialog">
+        <phrase_list>
+            <phrase id="14">
+                <text>pb_moskit_start_dialog_14</text>
+                <next>15</next>
+            </phrase>
+            <phrase id="16">
+                <text>pb_moskit_start_dialog_16</text>
+                <action>dialogs_perevalochnaya_baza.pb_robbery_quest_moskit_take_reward</action>
+                <give_info>moskit_quest_line_reward_give</give_info>
+                <next>17</next>
+            </phrase>
+            <phrase id="17">
+                <text>pb_moskit_start_dialog_17</text>
+                <action>dialogs.break_dialog</action>
+            </phrase>
+            <phrase id="15">
+                <text>pb_moskit_start_dialog_15</text>
+                <next>16</next>
+            </phrase>
+            <phrase id="6">
+                <text>pb_moskit_start_dialog_6</text>
+                <next>7</next>
+            </phrase>
+            <phrase id="9">
+                <text>pb_moskit_start_dialog_9</text>
+                <action>dialogs.break_dialog</action>
+                <give_info>moskit_quest_line_broken</give_info>
+            </phrase>
+            <phrase id="4">
+                <text>pb_moskit_start_dialog_4</text>
+                <next>7</next>
+            </phrase>
+            <phrase id="10">
+                <text>pb_moskit_start_dialog_10</text>
+                <action>dialogs.break_dialog</action>
+                <action>dialogs_perevalochnaya_baza.find_ammo_7_62_quest</action>
+                <give_info>moskit_quest_line_started</give_info>
+            </phrase>
+            <phrase id="2">
+                <text />
+                <dont_has_info>moskit_quest_line_ammo_give</dont_has_info>
+                <has_info>moskit_quest_line_started</has_info>
+                <next>11</next>
+            </phrase>
+            <phrase id="8">
+                <text>pb_moskit_start_dialog_8</text>
+                <action>dialogs.break_dialog</action>
+            </phrase>
+            <phrase id="18">
+                <text />
+                <has_info>moskit_quest_line_ammo_give</has_info>
+                <next>19</next>
+            </phrase>
+            <phrase id="12">
+                <text>pb_moskit_start_dialog_12</text>
+                <precondition>dialogs_perevalochnaya_baza.check_items_ammo_7_62</precondition>
+                <action>dialogs_perevalochnaya_baza.pb_robbery_quest_moskit_ammo_7_62</action>
+                <give_info>moskit_quest_line_ammo_give</give_info>
+                <next>14</next>
+            </phrase>
+            <phrase id="13">
+                <text>pb_moskit_start_dialog_13</text>
+                <action>dialogs.break_dialog</action>
+            </phrase>
+            <phrase id="5">
+                <text>pb_moskit_start_dialog_5</text>
+                <dont_has_info>moskit_quest_line_started</dont_has_info>
+                <has_info>moskit_quest_line_broken</has_info>
+                <next>6</next>
+                <next>8</next>
+            </phrase>
+            <phrase id="1">
+                <text />
+                <dont_has_info>moskit_quest_line_started</dont_has_info>
+                <has_info>perevalochnaya_baza_quest_line_zombied_kill_end</has_info>
+                <next>3</next>
+                <next>5</next>
+            </phrase>
+            <phrase id="3">
+                <text>pb_moskit_start_dialog_3</text>
+                <dont_has_info>moskit_quest_line_started</dont_has_info>
+                <dont_has_info>moskit_quest_line_broken</dont_has_info>
+                <next>4</next>
+                <next>9</next>
+            </phrase>
+            <phrase id="11">
+                <text>pb_moskit_start_dialog_11</text>
+                <next>12</next>
+                <next>13</next>
+            </phrase>
+            <phrase id="19">
+                <text>pb_moskit_start_dialog_19</text>
+            </phrase>
+            <phrase id="0">
+                <text />
+                <next>1</next>
+                <next>2</next>
+                <next>18</next>
+            </phrase>
+            <phrase id="7">
+                <text>pb_moskit_start_dialog_7</text>
+                <next>10</next>
+            </phrase>
+        </phrase_list>
+    </dialog>
+    <dialog id="pb_dubolom_night_hunting_is_time">
+        <has_info>pro_quest_night_hunting_give</has_info>
+        <dont_has_info>pro_quest_night_hunting_ready</dont_has_info>
+        <phrase_list>
+            <phrase id="1">
+                <text>pb_dubolom_night_hunting_is_time_1</text>
+                <precondition>dialogs_perevalochnaya_baza.is_puzir_rob_time</precondition>
+                <next>3</next>
+            </phrase>
+            <phrase id="3">
+                <text>pb_dubolom_night_hunting_is_time_3</text>
+                <action>dialogs.break_dialog</action>
+                <give_info>pro_quest_night_hunting_ready</give_info>
+            </phrase>
+            <phrase id="2">
+                <text>pb_dubolom_night_hunting_is_time_2</text>
+                <precondition>dialogs_perevalochnaya_baza.is_not_puzir_rob_time</precondition>
+                <next>4</next>
+            </phrase>
+            <phrase id="4">
+                <text>pb_dubolom_night_hunting_is_time_4</text>
+            </phrase>
+            <phrase id="0">
+                <text>pb_dubolom_night_hunting_is_time_0</text>
+                <next>1</next>
+                <next>2</next>
+            </phrase>
+        </phrase_list>
+    </dialog>
+    <dialog id="pb_dubolom_night_hunting_start">
+        <phrase_list>
+            <phrase id="6">
+                <text>pb_dubolom_night_hunting_start_6</text>
+                <next>7</next>
+            </phrase>
+            <phrase id="10">
+                <text>pb_dubolom_night_hunting_start_10</text>
+                <next>11</next>
+                <next>12</next>
+            </phrase>
+            <phrase id="12">
+                <text>pb_dubolom_night_hunting_start_12</text>
+                <precondition>dialogs_perevalochnaya_baza.is_not_puzir_rob_time</precondition>
+                <next>15</next>
+            </phrase>
+            <phrase id="11">
+                <text>pb_dubolom_night_hunting_start_11</text>
+                <precondition>dialogs_perevalochnaya_baza.is_puzir_rob_time</precondition>
+                <next>14</next>
+            </phrase>
+            <phrase id="5">
+                <text>pb_dubolom_night_hunting_start_5</text>
+                <next>6</next>
+            </phrase>
+            <phrase id="7">
+                <text>pb_dubolom_night_hunting_start_7</text>
+                <next>8</next>
+            </phrase>
+            <phrase id="3">
+                <text>pb_dubolom_night_hunting_start_3</text>
+                <next>4</next>
+            </phrase>
+            <phrase id="9">
+                <text />
+                <dont_has_info>pro_dubolom_come_to_chimera</dont_has_info>
+                <has_info>pro_quest_night_hunting_give</has_info>
+                <next>13</next>
+            </phrase>
+            <phrase id="13">
+                <text>pb_dubolom_night_hunting_start_13</text>
+            </phrase>
+            <phrase id="1">
+                <text />
+                <dont_has_info>pro_quest_night_hunting_give</dont_has_info>
+                <next>2</next>
+            </phrase>
+            <phrase id="2">
+                <text>pb_dubolom_night_hunting_start_2</text>
+                <next>3</next>
+            </phrase>
+            <phrase id="15">
+                <text>pb_dubolom_night_hunting_start_15</text>
+                <action>dialogs.break_dialog</action>
+                <action>dialogs_perevalochnaya_baza.pb_night_hunting_quest</action>
+                <give_info>pro_quest_night_hunting_give</give_info>
+            </phrase>
+            <phrase id="21">
+                <text>pb_dubolom_night_hunting_start_21</text>
+                <next>22</next>
+            </phrase>
+            <phrase id="22">
+                <text>pb_dubolom_night_hunting_start_22</text>
+                <next>23</next>
+            </phrase>
+            <phrase id="23">
+                <text>pb_dubolom_night_hunting_start_23</text>
+                <next>24</next>
+            </phrase>
+            <phrase id="24">
+                <text>pb_dubolom_night_hunting_start_24</text>
+                <next>25</next>
+            </phrase>
+            <phrase id="25">
+                <text>pb_dubolom_night_hunting_start_25</text>
+                <next>26</next>
+            </phrase>
+            <phrase id="26">
+                <text>pb_dubolom_night_hunting_start_26</text>
+                <action>dialogs.break_dialog</action>
+                <action>dialogs_perevalochnaya_baza.pb_find_meat_boar_food_quest</action>
+                <give_info>pro_dubolom_quest_boar_meat_give</give_info>
+            </phrase>
+            <phrase id="20">
+                <text>pb_dubolom_night_hunting_start_20</text>
+                <next>21</next>
+            </phrase>
+            <phrase id="19">
+                <text>pb_dubolom_night_hunting_start_19</text>
+                <next>20</next>
+            </phrase>
+            <phrase id="28">
+                <text>pb_dubolom_night_hunting_start_28</text>
+                <next>29</next>
+                <next>30</next>
+            </phrase>
+            <phrase id="30">
+                <text>pb_dubolom_night_hunting_start_30</text>
+                <action>dialogs.break_dialog</action>
+            </phrase>
+            <phrase id="27">
+                <text />
+                <dont_has_info>pro_dubolom_quest_boar_meat_done</dont_has_info>
+                <has_info>pro_dubolom_quest_boar_meat_give</has_info>
+                <next>28</next>
+            </phrase>
+            <phrase id="16">
+                <text />
+                <dont_has_info>pro_dubolom_quest_night_hunting_complete</dont_has_info>
+                <has_info>pro_dubolom_come_to_chimera</has_info>
+                <next>17</next>
+            </phrase>
+            <phrase id="35">
+                <text />
+                <has_info>pro_dubolom_quest_night_hunting_complete</has_info>
+                <next>36</next>
+            </phrase>
+            <phrase id="36">
+                <text>pb_dubolom_night_hunting_start_36</text>
+            </phrase>
+            <phrase id="29">
+                <text>pb_dubolom_night_hunting_start_29</text>
+                <precondition>dialogs_perevalochnaya_baza.pb_check_items_meat_boar_food</precondition>
+                <action>dialogs_perevalochnaya_baza.pb_meat_boar_food_out</action>
+                <next>31</next>
+            </phrase>
+            <phrase id="31">
+                <text>pb_dubolom_night_hunting_start_31</text>
+                <give_info>pro_dubolom_quest_boar_meat_done</give_info>
+                <next>32</next>
+            </phrase>
+            <phrase id="32">
+                <text>pb_dubolom_night_hunting_start_32</text>
+                <next>33</next>
+            </phrase>
+            <phrase id="4">
+                <text>pb_dubolom_night_hunting_start_4</text>
+                <next>5</next>
+            </phrase>
+            <phrase id="8">
+                <text>pb_dubolom_night_hunting_start_8</text>
+                <next>10</next>
+            </phrase>
+            <phrase id="17">
+                <text>pb_dubolom_night_hunting_start_17</text>
+                <next>18</next>
+            </phrase>
+            <phrase id="18">
+                <text>pb_dubolom_night_hunting_start_18</text>
+                <next>37</next>
+            </phrase>
+            <phrase id="37">
+                <text>pb_dubolom_night_hunting_start_37</text>
+                <next>38</next>
+            </phrase>
+            <phrase id="14">
+                <text>pb_dubolom_night_hunting_start_14</text>
+                <action>dialogs.break_dialog</action>
+                <action>dialogs_perevalochnaya_baza.pb_night_hunting_quest</action>
+                <give_info>pro_quest_night_hunting_give</give_info>
+                <give_info>pro_quest_night_hunting_ready</give_info>
+            </phrase>
+            <phrase id="34">
+                <text>pb_dubolom_night_hunting_start_34</text>
+                <action>dialogs.break_dialog</action>
+                <action>dialogs_perevalochnaya_baza.pb_first_talk_to_markus_quest</action>
+                <give_info>pro_markus_meet_from_shell</give_info>
+            </phrase>
+            <phrase id="33">
+                <text>pb_dubolom_night_hunting_start_33</text>
+                <next>34</next>
+            </phrase>
+            <phrase id="38">
+                <text>pb_dubolom_night_hunting_start_38</text>
+                <action>dialogs.break_dialog</action>
+                <action>dialogs_perevalochnaya_baza.pb_first_talk_to_markus_quest</action>
+                <give_info>pro_dubolom_quest_night_hunting_complete</give_info>
+                <give_info>pro_markus_meet_from_shell</give_info>
+            </phrase>
+            <phrase id="0">
+                <text />
+                <next>1</next>
+                <next>9</next>
+                <next>16</next>
+                <next>27</next>
+                <next>35</next>
+            </phrase>
+        </phrase_list>
+    </dialog>
+    <dialog id="pb_markus_alive_talk_to_actor">
+        <phrase_list>
+            <phrase id="1">
+                <text>pb_markus_alive_talk_to_actor_1</text>
+                <next>2</next>
+            </phrase>
+            <phrase id="5">
+                <text>pb_markus_alive_talk_to_actor_5</text>
+                <next>6</next>
+            </phrase>
+            <phrase id="6">
+                <text>pb_markus_alive_talk_to_actor_6</text>
+                <next>7</next>
+            </phrase>
+            <phrase id="4">
+                <text>pb_markus_alive_talk_to_actor_4</text>
+                <next>5</next>
+            </phrase>
+            <phrase id="3">
+                <text>pb_markus_alive_talk_to_actor_3</text>
+                <next>4</next>
+            </phrase>
+            <phrase id="7">
+                <text>pb_markus_alive_talk_to_actor_7</text>
+                <action>dialogs.break_dialog</action>
+                <give_info>pro_markus_alive_first_dialog_end</give_info>
+            </phrase>
+            <phrase id="0">
+                <text>pb_markus_alive_talk_to_actor_0</text>
+                <next>1</next>
+            </phrase>
+            <phrase id="2">
+                <text>pb_markus_alive_talk_to_actor_2</text>
+                <next>3</next>
+            </phrase>
+        </phrase_list>
+    </dialog>
+    <dialog id="pb_markus_alive_talk_to_actor_end">
+        <phrase_list>
+            <phrase id="3">
+                <text>pb_markus_alive_talk_to_actor_end_3</text>
+                <next>4</next>
+            </phrase>
+            <phrase id="5">
+                <text>pb_markus_alive_talk_to_actor_end_5</text>
+                <action>dialogs.break_dialog</action>
+                <give_info>pro_actor_go_to_rezerv_weapons</give_info>
+            </phrase>
+            <phrase id="8">
+                <text>pb_markus_alive_talk_to_actor_end_8</text>
+                <action>dialogs.break_dialog</action>
+            </phrase>
+            <phrase id="4">
+                <text>pb_markus_alive_talk_to_actor_end_4</text>
+                <action>dialogs_perevalochnaya_baza.pb_rezerv_key_door_in</action>
+                <give_info>pro_markus_rezerv_key_door_open</give_info>
+                <next>5</next>
+            </phrase>
+            <phrase id="1">
+                <text />
+                <dont_has_info>pro_actor_go_to_rezerv_weapons</dont_has_info>
+                <next>2</next>
+            </phrase>
+            <phrase id="0">
+                <text />
+                <next>1</next>
+                <next>6</next>
+            </phrase>
+            <phrase id="2">
+                <text>pb_markus_alive_talk_to_actor_end_2</text>
+                <next>3</next>
+            </phrase>
+            <phrase id="6">
+                <text />
+                <has_info>pro_actor_go_to_rezerv_weapons</has_info>
+                <next>7</next>
+            </phrase>
+            <phrase id="7">
+                <text>pb_markus_alive_talk_to_actor_end_7</text>
+                <next>8</next>
+            </phrase>
+        </phrase_list>
+    </dialog>
+    <dialog id="pb_markus_alive_talk_to_actor_final">
+        <phrase_list>
+            <phrase id="4">
+                <text>pb_markus_alive_talk_to_actor_final_4</text>
+                <next>5</next>
+                <next>6</next>
+            </phrase>
+            <phrase id="9">
+                <text>pb_markus_alive_talk_to_actor_final_9</text>
+                <action>dialogs.break_dialog</action>
+                <give_info>pro_actor_and_markus_kill_merc</give_info>
+            </phrase>
+            <phrase id="8">
+                <text>pb_markus_alive_talk_to_actor_final_8</text>
+                <next>9</next>
+            </phrase>
+            <phrase id="1">
+                <text>pb_markus_alive_talk_to_actor_final_1</text>
+                <action>dialogs_perevalochnaya_baza.pb_rezerv_key_door_out</action>
+                <next>2</next>
+            </phrase>
+            <phrase id="3">
+                <text>pb_markus_alive_talk_to_actor_final_3</text>
+                <next>4</next>
+            </phrase>
+            <phrase id="2">
+                <text>pb_markus_alive_talk_to_actor_final_2</text>
+                <next>3</next>
+            </phrase>
+            <phrase id="0">
+                <text>pb_markus_alive_talk_to_actor_final_0</text>
+                <next>1</next>
+            </phrase>
+            <phrase id="7">
+                <text>pb_markus_alive_talk_to_actor_final_7</text>
+                <next>9</next>
+            </phrase>
+            <phrase id="5">
+                <text>pb_markus_alive_talk_to_actor_final_5</text>
+                <give_info>pro_actor_very_agressive_dialog</give_info>
+                <next>7</next>
+            </phrase>
+            <phrase id="6">
+                <text>pb_markus_alive_talk_to_actor_final_6</text>
+                <give_info>pro_actor_not_agressive_dialog</give_info>
+                <next>8</next>
+            </phrase>
+        </phrase_list>
+    </dialog>
+    <dialog id="pb_lutiy_scene_final_base_meet">
+        <phrase_list>
+            <phrase id="1">
+                <text>pb_lutiy_scene_final_base_meet_1</text>
+                <next>2</next>
+            </phrase>
+            <phrase id="2">
+                <text>pb_lutiy_scene_final_base_meet_2</text>
+                <next>3</next>
+            </phrase>
+            <phrase id="3">
+                <text>pb_lutiy_scene_final_base_meet_3</text>
+                <next>4</next>
+            </phrase>
+            <phrase id="4">
+                <text>pb_lutiy_scene_final_base_meet_4</text>
+                <next>5</next>
+            </phrase>
+            <phrase id="5">
+                <text>pb_lutiy_scene_final_base_meet_5</text>
+                <next>6</next>
+            </phrase>
+            <phrase id="6">
+                <text>pb_lutiy_scene_final_base_meet_6</text>
+                <next>7</next>
+            </phrase>
+            <phrase id="7">
+                <text>pb_lutiy_scene_final_base_meet_7</text>
+                <next>8</next>
+            </phrase>
+            <phrase id="9">
+                <text>pb_lutiy_scene_final_base_meet_9</text>
+                <action>dialogs.break_dialog</action>
+                <action>dialogs_perevalochnaya_baza.pb_turn_on_transformator_quest</action>
+                <give_info>pro_lutiy_scene_final_quest_give</give_info>
+            </phrase>
+            <phrase id="8">
+                <text>pb_lutiy_scene_final_base_meet_8</text>
+                <next>9</next>
+            </phrase>
+            <phrase id="0">
+                <text>pb_lutiy_scene_final_base_meet_0</text>
+                <next>1</next>
+            </phrase>
+        </phrase_list>
+    </dialog>
+    <dialog id="pb_kuvalda_dialog_start">
+        <phrase_list>
+            <phrase id="1">
+                <text />
+                <dont_has_info>perevalochnaya_baza_start_quest_zombied_kill_done</dont_has_info>
+                <has_info>perevalochnaya_lutiy_meet_to_zombied_done</has_info>
+                <next>2</next>
+            </phrase>
+            <phrase id="4">
+                <text />
+                <dont_has_info>pb_zver_signal_helicopter_done</dont_has_info>
+                <has_info>perevalochnaya_baza_start_quest_zombied_kill_done</has_info>
+                <next>5</next>
+            </phrase>
+            <phrase id="9">
+                <text>pb_kuvalda_dialog_start_9</text>
+                <next>10</next>
+            </phrase>
+            <phrase id="10">
+                <text>pb_kuvalda_dialog_start_10</text>
+                <next>11</next>
+            </phrase>
+            <phrase id="12">
+                <text />
+                <dont_has_info>pb_actor_first_quest_kuvalda_start</dont_has_info>
+                <has_info>pro_first_dialog_to_kuvalda_fin</has_info>
+                <next>13</next>
+            </phrase>
+            <phrase id="2">
+                <text>pb_kuvalda_dialog_start_2</text>
+                <next>3</next>
+            </phrase>
+            <phrase id="15">
+                <text>pb_kuvalda_dialog_start_15</text>
+                <next>16</next>
+                <next>17</next>
+            </phrase>
+            <phrase id="16">
+                <text>pb_kuvalda_dialog_start_16</text>
+                <precondition>dialogs_perevalochnaya_baza.pb_check_quest_kanistra_gas</precondition>
+                <give_info>pro_find_kanistra_find_dialog</give_info>
+                <next>18</next>
+            </phrase>
+            <phrase id="18">
+                <text>pb_kuvalda_dialog_start_18</text>
+                <next>19</next>
+            </phrase>
+            <phrase id="19">
+                <text>pb_kuvalda_dialog_start_19</text>
+                <action>dialogs_perevalochnaya_baza.pb_out_quest_kanistra_gas</action>
+                <next>20</next>
+            </phrase>
+            <phrase id="17">
+                <text>pb_kuvalda_dialog_start_17</text>
+                <action>dialogs.break_dialog</action>
+            </phrase>
+            <phrase id="14">
+                <text />
+                <dont_has_info>pro_find_kanistra_for_kuvalda_done</dont_has_info>
+                <has_info>pb_actor_first_quest_kuvalda_start</has_info>
+                <next>15</next>
+            </phrase>
+            <phrase id="22">
+                <text />
+                <has_info>pro_find_kanistra_for_kuvalda_done</has_info>
+                <next>23</next>
+            </phrase>
+            <phrase id="13">
+                <text>pb_kuvalda_dialog_start_13</text>
+            </phrase>
+            <phrase id="23">
+                <text>pb_kuvalda_dialog_start_23</text>
+            </phrase>
+            <phrase id="11">
+                <text>pb_kuvalda_dialog_start_11</text>
+                <give_info>pro_first_dialog_to_kuvalda_fin</give_info>
+            </phrase>
+            <phrase id="20">
+                <text>pb_kuvalda_dialog_start_20</text>
+                <give_info>pro_find_kanistra_for_kuvalda_done</give_info>
+                <next>21</next>
+            </phrase>
+            <phrase id="21">
+                <text>pb_kuvalda_dialog_start_21</text>
+                <action>dialogs.break_dialog</action>
+            </phrase>
+            <phrase id="3">
+                <text>pb_kuvalda_dialog_start_3</text>
+                <action>dialogs.break_dialog</action>
+            </phrase>
+            <phrase id="24">
+                <text>pb_kuvalda_dialog_start_24</text>
+                <action>dialogs.break_dialog</action>
+            </phrase>
+            <phrase id="6">
+                <text />
+                <dont_has_info>pro_first_dialog_to_kuvalda_fin</dont_has_info>
+                <has_info>pb_zver_signal_helicopter_done</has_info>
+                <next>7</next>
+            </phrase>
+            <phrase id="7">
+                <text>pb_kuvalda_dialog_start_7</text>
+                <next>8</next>
+            </phrase>
+            <phrase id="8">
+                <text>pb_kuvalda_dialog_start_8</text>
+                <next>9</next>
+            </phrase>
+            <phrase id="0">
+                <text />
+                <next>1</next>
+                <next>4</next>
+                <next>6</next>
+                <next>12</next>
+                <next>14</next>
+                <next>22</next>
+            </phrase>
+            <phrase id="5">
+                <text>pb_kuvalda_dialog_start_5</text>
+                <next>24</next>
+            </phrase>
+        </phrase_list>
+    </dialog>
+    <dialog id="pb_dubolom_meet_after_dialog">
+        <phrase_list>
+            <phrase id="3">
+                <text>pb_dubolom_meet_after_dialog_3</text>
+                <next>4</next>
+            </phrase>
+            <phrase id="11">
+                <text>pb_dubolom_meet_after_dialog_11</text>
+            </phrase>
+            <phrase id="10">
+                <text>pb_dubolom_meet_after_dialog_10</text>
+                <next>16</next>
+            </phrase>
+            <phrase id="16">
+                <text>pb_dubolom_meet_after_dialog_16</text>
+                <next>17</next>
+            </phrase>
+            <phrase id="17">
+                <text>pb_dubolom_meet_after_dialog_17</text>
+                <next>18</next>
+            </phrase>
+            <phrase id="20">
+                <text>pb_dubolom_meet_after_dialog_20</text>
+                <next>21</next>
+                <next>22</next>
+            </phrase>
+            <phrase id="22">
+                <text>pb_dubolom_meet_after_dialog_22</text>
+                <action>dialogs.break_dialog</action>
+            </phrase>
+            <phrase id="15">
+                <text>pb_dubolom_meet_after_dialog_15</text>
+                <next>10</next>
+            </phrase>
+            <phrase id="28">
+                <text>pb_dubolom_meet_after_dialog_28</text>
+            </phrase>
+            <phrase id="27">
+                <text />
+                <has_info>pro_dubolom_quest_boar_meat_done</has_info>
+                <next>28</next>
+            </phrase>
+            <phrase id="7">
+                <text>pb_dubolom_meet_after_dialog_7</text>
+                <action>dialogs.break_dialog</action>
+                <give_info>pro_first_dialog_from_dubolom_complete</give_info>
+            </phrase>
+            <phrase id="14">
+                <text>pb_dubolom_meet_after_dialog_14</text>
+                <next>15</next>
+            </phrase>
+            <phrase id="13">
+                <text>pb_dubolom_meet_after_dialog_13</text>
+                <next>14</next>
+            </phrase>
+            <phrase id="9">
+                <text>pb_dubolom_meet_after_dialog_9</text>
+            </phrase>
+            <phrase id="30">
+                <text>pb_dubolom_meet_after_dialog_30</text>
+                <next>13</next>
+            </phrase>
+            <phrase id="1">
+                <text />
+                <dont_has_info>pro_first_dialog_from_dubolom_complete</dont_has_info>
+                <dont_has_info>pro_dubolom_quest_boar_meat_give</dont_has_info>
+                <next>2</next>
+            </phrase>
+            <phrase id="8">
+                <text />
+                <dont_has_info>pro_lutiy_say_to_dubolom_talk</dont_has_info>
+                <has_info>pro_first_dialog_from_dubolom_complete</has_info>
+                <next>9</next>
+            </phrase>
+            <phrase id="29">
+                <text />
+                <dont_has_info>pro_dubolom_quest_boar_meat_give</dont_has_info>
+                <has_info>pro_lutiy_say_to_dubolom_talk</has_info>
+                <has_info>pro_first_dialog_from_dubolom_complete</has_info>
+                <next>30</next>
+            </phrase>
+            <phrase id="6">
+                <text>pb_dubolom_meet_after_dialog_6</text>
+                <dont_has_info>pro_lutiy_say_to_dubolom_talk</dont_has_info>
+                <next>7</next>
+            </phrase>
+            <phrase id="12">
+                <text>pb_dubolom_meet_after_dialog_12</text>
+                <has_info>pro_lutiy_say_to_dubolom_talk</has_info>
+                <next>13</next>
+            </phrase>
+            <phrase id="2">
+                <text>pb_dubolom_meet_after_dialog_2</text>
+                <next>3</next>
+            </phrase>
+            <phrase id="5">
+                <text>pb_dubolom_meet_after_dialog_5</text>
+                <next>6</next>
+                <next>12</next>
+            </phrase>
+            <phrase id="18">
+                <text>pb_dubolom_meet_after_dialog_18</text>
+                <action>dialogs.break_dialog</action>
+                <give_info>pro_dubolom_quest_boar_meat_give</give_info>
+            </phrase>
+            <phrase id="19">
+                <text />
+                <dont_has_info>pro_dubolom_quest_boar_meat_done</dont_has_info>
+                <has_info>pro_dubolom_quest_boar_meat_give</has_info>
+                <next>20</next>
+            </phrase>
+            <phrase id="21">
+                <text>pb_dubolom_meet_after_dialog_21</text>
+                <precondition>dialogs_perevalochnaya_baza.pb_check_items_meat_boar_food</precondition>
+                <action>dialogs_perevalochnaya_baza.pb_meat_boar_food_out</action>
+                <next>23</next>
+            </phrase>
+            <phrase id="24">
+                <text>pb_dubolom_meet_after_dialog_24</text>
+                <next>25</next>
+            </phrase>
+            <phrase id="25">
+                <text>pb_dubolom_meet_after_dialog_25</text>
+                <next>26</next>
+            </phrase>
+            <phrase id="26">
+                <text>pb_dubolom_meet_after_dialog_26</text>
+                <action>dialogs.break_dialog</action>
+                <give_info>pro_go_to_talk_from_snake</give_info>
+            </phrase>
+            <phrase id="23">
+                <text>pb_dubolom_meet_after_dialog_23</text>
+                <give_info>pro_dubolom_quest_boar_meat_done</give_info>
+                <next>24</next>
+            </phrase>
+            <phrase id="0">
+                <text />
+                <next>1</next>
+                <next>8</next>
+                <next>29</next>
+                <next>19</next>
+                <next>27</next>
+            </phrase>
+            <phrase id="4">
+                <text>pb_dubolom_meet_after_dialog_4</text>
+                <next>5</next>
+            </phrase>
+        </phrase_list>
+    </dialog>
+    <dialog id="pb_duty_bunchuk_quest_weapon">
+        <has_info>pro_quest_duty_weapon_found_give</has_info>
+        <dont_has_info>pro_quest_duty_weapon_found_meet</dont_has_info>
+        <phrase_list>
+            <phrase id="3">
+                <text>pb_duty_bunchuk_quest_weapon_3</text>
+                <next>4</next>
+            </phrase>
+            <phrase id="2">
+                <text>pb_duty_bunchuk_quest_weapon_2</text>
+                <next>3</next>
+            </phrase>
+            <phrase id="1">
+                <text>pb_duty_bunchuk_quest_weapon_1</text>
+                <next>2</next>
+            </phrase>
+            <phrase id="0">
+                <text>pb_duty_bunchuk_quest_weapon_0</text>
+                <next>1</next>
+            </phrase>
+            <phrase id="4">
+                <text>pb_duty_bunchuk_quest_weapon_4</text>
+                <action>dialogs.break_dialog</action>
+                <give_info>pro_quest_duty_weapon_found_meet</give_info>
+            </phrase>
+        </phrase_list>
+    </dialog>
+    <dialog id="pb_actor_give_dubolom_medicament">
+        <has_info>pro_actor_ready_to_give_medicament</has_info>
+        <dont_has_info>pro_actor_give_medicament_dubolom</dont_has_info>
+        <phrase_list>
+            <phrase id="1">
+                <text>pb_actor_give_dubolom_medicament_1</text>
+                <next>2</next>
+                <next>3</next>
+                <next>4</next>
+            </phrase>
+            <phrase id="3">
+                <text>pb_actor_give_dubolom_medicament_3</text>
+                <precondition>dialogs_perevalochnaya_baza.pb_check_epidemy_medicaments_false</precondition>
+                <next>5</next>
+            </phrase>
+            <phrase id="9">
+                <text>pb_actor_give_dubolom_medicament_9</text>
+                <next>10</next>
+            </phrase>
+            <phrase id="10">
+                <text>pb_actor_give_dubolom_medicament_10</text>
+                <next>11</next>
+            </phrase>
+            <phrase id="11">
+                <text>pb_actor_give_dubolom_medicament_11</text>
+                <next>12</next>
+            </phrase>
+            <phrase id="5">
+                <text>pb_actor_give_dubolom_medicament_5</text>
+                <next>6</next>
+            </phrase>
+            <phrase id="6">
+                <text>pb_actor_give_dubolom_medicament_6</text>
+                <next>7</next>
+            </phrase>
+            <phrase id="12">
+                <text>pb_actor_give_dubolom_medicament_12</text>
+                <next>13</next>
+            </phrase>
+            <phrase id="13">
+                <text>pb_actor_give_dubolom_medicament_13</text>
+                <next>14</next>
+            </phrase>
+            <phrase id="7">
+                <text>pb_actor_give_dubolom_medicament_7</text>
+                <next>8</next>
+            </phrase>
+            <phrase id="4">
+                <text>pb_actor_give_dubolom_medicament_4</text>
+                <action>dialogs.break_dialog</action>
+            </phrase>
+            <phrase id="14">
+                <text>pb_actor_give_dubolom_medicament_14</text>
+                <action>dialogs.break_dialog</action>
+                <give_info>pro_actor_give_medicament_dubolom</give_info>
+            </phrase>
+            <phrase id="8">
+                <text>pb_actor_give_dubolom_medicament_8</text>
+                <action>dialogs.break_dialog</action>
+                <give_info>pro_actor_give_medicament_dubolom</give_info>
+            </phrase>
+            <phrase id="0">
+                <text>pb_actor_give_dubolom_medicament_0</text>
+                <next>1</next>
+            </phrase>
+            <phrase id="2">
+                <text>pb_actor_give_dubolom_medicament_2</text>
+                <precondition>dialogs_perevalochnaya_baza.pb_check_epidemy_medicaments_true</precondition>
+                <next>9</next>
+            </phrase>
+        </phrase_list>
+    </dialog>
+    <dialog id="pb_actor_give_rezak_medicament">
+        <has_info>pro_actor_ready_to_give_medicament</has_info>
+        <dont_has_info>pro_actor_give_medicament_rezak</dont_has_info>
+        <phrase_list>
+            <phrase id="1">
+                <text>pb_actor_give_rezak_medicament_1</text>
+                <next>2</next>
+                <next>3</next>
+            </phrase>
+            <phrase id="4">
+                <text>pb_actor_give_rezak_medicament_4</text>
+                <next>5</next>
+            </phrase>
+            <phrase id="6">
+                <text>pb_actor_give_rezak_medicament_6</text>
+                <next>7</next>
+            </phrase>
+            <phrase id="3">
+                <text>pb_actor_give_rezak_medicament_3</text>
+                <action>dialogs.break_dialog</action>
+            </phrase>
+            <phrase id="7">
+                <text>pb_actor_give_rezak_medicament_7</text>
+                <action>dialogs.break_dialog</action>
+                <give_info>pro_actor_give_medicament_rezak</give_info>
+            </phrase>
+            <phrase id="2">
+                <text>pb_actor_give_rezak_medicament_2</text>
+                <next>4</next>
+            </phrase>
+            <phrase id="0">
+                <text>pb_actor_give_rezak_medicament_0</text>
+                <next>1</next>
+            </phrase>
+            <phrase id="5">
+                <text>pb_actor_give_rezak_medicament_5</text>
+                <action>dialogs_perevalochnaya_baza.pb_epidemy_medicaments_give</action>
+                <next>6</next>
+            </phrase>
+        </phrase_list>
+    </dialog>
+    <dialog id="pb_actor_give_markus_medicament">
+        <has_info>pro_actor_ready_to_give_medicament</has_info>
+        <dont_has_info>pro_actor_give_medicament_markus</dont_has_info>
+        <phrase_list>
+            <phrase id="1">
+                <text>pb_actor_give_markus_medicament_1</text>
+                <next>2</next>
+                <next>3</next>
+            </phrase>
+            <phrase id="3">
+                <text>pb_actor_give_markus_medicament_3</text>
+                <action>dialogs.break_dialog</action>
+            </phrase>
+            <phrase id="4">
+                <text>pb_actor_give_markus_medicament_4</text>
+                <next>5</next>
+            </phrase>
+            <phrase id="6">
+                <text>pb_actor_give_markus_medicament_6</text>
+                <next>7</next>
+            </phrase>
+            <phrase id="7">
+                <text>pb_actor_give_markus_medicament_7</text>
+                <action>dialogs.break_dialog</action>
+                <give_info>pro_actor_give_medicament_markus</give_info>
+            </phrase>
+            <phrase id="2">
+                <text>pb_actor_give_markus_medicament_2</text>
+                <next>4</next>
+            </phrase>
+            <phrase id="5">
+                <text>pb_actor_give_markus_medicament_5</text>
+                <action>dialogs_perevalochnaya_baza.pb_epidemy_medicaments_give</action>
+                <next>6</next>
+            </phrase>
+            <phrase id="0">
+                <text>pb_actor_give_markus_medicament_0</text>
+                <next>1</next>
+            </phrase>
+        </phrase_list>
+    </dialog>
+    <dialog id="pb_markus_start_dialog">
+        <phrase_list>
+            <phrase id="18">
+                <text>pb_markus_start_dialog_18</text>
+                <next>19</next>
+            </phrase>
+            <phrase id="9">
+                <text>pb_markus_start_dialog_9</text>
+                <next>10</next>
+            </phrase>
+            <phrase id="8">
+                <text>pb_markus_start_dialog_8</text>
+                <next>9</next>
+            </phrase>
+            <phrase id="34">
+                <text>pb_markus_start_dialog_34</text>
+                <action>dialogs.break_dialog</action>
+            </phrase>
+            <phrase id="6">
+                <text>pb_markus_start_dialog_6</text>
+                <next>7</next>
+            </phrase>
+            <phrase id="33">
+                <text>pb_markus_start_dialog_33</text>
+                <next>29</next>
+            </phrase>
+            <phrase id="1">
+                <text />
+                <dont_has_info>perevalochnaya_baza_start_quest_zombied_kill_done</dont_has_info>
+                <next>2</next>
+            </phrase>
+            <phrase id="17">
+                <text>pb_markus_start_dialog_17</text>
+                <next>18</next>
+            </phrase>
+            <phrase id="27">
+                <text>pb_markus_start_dialog_27</text>
+                <next>29</next>
+            </phrase>
+            <phrase id="28">
+                <text>pb_markus_start_dialog_28</text>
+                <action>dialogs.break_dialog</action>
+                <give_info>pro_markus_broken_quest_af_vyver_found</give_info>
+            </phrase>
+            <phrase id="32">
+                <text>pb_markus_start_dialog_32</text>
+                <next>33</next>
+                <next>34</next>
+            </phrase>
+            <phrase id="5">
+                <text>pb_markus_start_dialog_5</text>
+                <next>6</next>
+            </phrase>
+            <phrase id="31">
+                <text />
+                <dont_has_info>pro_markus_give_quest_af_vyver_found</dont_has_info>
+                <dont_has_info>pro_markus_meet_from_shell</dont_has_info>
+                <has_info>pro_markus_broken_quest_af_vyver_found</has_info>
+                <next>32</next>
+            </phrase>
+            <phrase id="13">
+                <text>pb_markus_start_dialog_13</text>
+            </phrase>
+            <phrase id="56">
+                <text>pb_markus_start_dialog_56</text>
+            </phrase>
+            <phrase id="12">
+                <text />
+                <dont_has_info>perevalochnaya_baza_quest_flash_dead</dont_has_info>
+                <has_info>perevalochnaya_baza_markus_quest_meet_done</has_info>
+                <next>13</next>
+            </phrase>
+            <phrase id="4">
+                <text>pb_markus_start_dialog_4</text>
+                <next>5</next>
+            </phrase>
+            <phrase id="48">
+                <text>pb_markus_start_dialog_48</text>
+                <action>dialogs.break_dialog</action>
+                <dont_has_info>pro_otshelnik_puzir_realese</dont_has_info>
+            </phrase>
+            <phrase id="49">
+                <text>pb_markus_start_dialog_49</text>
+                <next>50</next>
+            </phrase>
+            <phrase id="50">
+                <text>pb_markus_start_dialog_50</text>
+                <next>51</next>
+            </phrase>
+            <phrase id="51">
+                <text>pb_markus_start_dialog_51</text>
+                <next>52</next>
+            </phrase>
+            <phrase id="16">
+                <text>pb_markus_start_dialog_16</text>
+                <next>17</next>
+            </phrase>
+            <phrase id="15">
+                <text>pb_markus_start_dialog_15</text>
+                <next>16</next>
+            </phrase>
+            <phrase id="44">
+                <text>pb_markus_start_dialog_44</text>
+            </phrase>
+            <phrase id="36">
+                <text>pb_markus_start_dialog_36</text>
+                <next>37</next>
+                <next>38</next>
+            </phrase>
+            <phrase id="38">
+                <text>pb_markus_start_dialog_38</text>
+                <action>dialogs.break_dialog</action>
+            </phrase>
+            <phrase id="37">
+                <text>pb_markus_start_dialog_37</text>
+                <precondition>dialogs_perevalochnaya_baza.pb_check_items_af_vyvert</precondition>
+                <next>39</next>
+            </phrase>
+            <phrase id="39">
+                <text>pb_markus_start_dialog_39</text>
+                <next>40</next>
+            </phrase>
+            <phrase id="40">
+                <text>pb_markus_start_dialog_40</text>
+                <action>dialogs_perevalochnaya_baza.pb_af_vyvert_quest_out</action>
+                <next>41</next>
+            </phrase>
+            <phrase id="42">
+                <text>pb_markus_start_dialog_42</text>
+                <action>dialogs.break_dialog</action>
+                <give_info>pro_markus_dop_quest_complete</give_info>
+            </phrase>
+            <phrase id="41">
+                <text>pb_markus_start_dialog_41</text>
+                <give_info>pro_markus_quest_line_af_vyvert_give</give_info>
+                <next>42</next>
+            </phrase>
+            <phrase id="52">
+                <text>pb_markus_start_dialog_52</text>
+                <action>dialogs_perevalochnaya_baza.pb_quest_shell_brelok_out</action>
+                <next>53</next>
+            </phrase>
+            <phrase id="53">
+                <text>pb_markus_start_dialog_53</text>
+                <action>dialogs_perevalochnaya_baza.pb_quest_af_fire_loop_in</action>
+                <next>54</next>
+            </phrase>
+            <phrase id="3">
+                <text />
+                <dont_has_info>perevalochnaya_baza_markus_quest_meet_done</dont_has_info>
+                <has_info>perevalochnaya_baza_markus_sends_sms_done</has_info>
+                <next>4</next>
+            </phrase>
+            <phrase id="46">
+                <text>pb_markus_start_dialog_46</text>
+                <next>47</next>
+                <next>48</next>
+            </phrase>
+            <phrase id="47">
+                <text>pb_markus_start_dialog_47</text>
+                <has_info>pro_otshelnik_puzir_realese</has_info>
+                <next>49</next>
+            </phrase>
+            <phrase id="55">
+                <text />
+                <dont_has_info>perevalochnaya_baza_markus_sends_sms_done</dont_has_info>
+                <has_info>pro_zver_founded_shell_in_podzemka</has_info>
+                <next>56</next>
+            </phrase>
+            <phrase id="45">
+                <text />
+                <dont_has_info>pro_zver_founded_shell_in_podzemka</dont_has_info>
+                <has_info>pro_markus_meet_from_shell_done</has_info>
+                <next>46</next>
+            </phrase>
+            <phrase id="14">
+                <text />
+                <dont_has_info>pro_markus_meet_from_shell_done</dont_has_info>
+                <has_info>pro_markus_meet_from_shell</has_info>
+                <next>15</next>
+            </phrase>
+            <phrase id="43">
+                <text />
+                <dont_has_info>pro_markus_meet_from_shell</dont_has_info>
+                <has_info>pro_markus_dop_quest_complete</has_info>
+                <next>44</next>
+            </phrase>
+            <phrase id="35">
+                <text />
+                <dont_has_info>pro_markus_dop_quest_complete</dont_has_info>
+                <dont_has_info>pro_markus_meet_from_shell</dont_has_info>
+                <has_info>pro_markus_give_quest_af_vyver_found</has_info>
+                <next>36</next>
+            </phrase>
+            <phrase id="7">
+                <text>pb_markus_start_dialog_7</text>
+                <next>8</next>
+            </phrase>
+            <phrase id="54">
+                <text>pb_markus_start_dialog_54</text>
+                <action>dialogs.break_dialog</action>
+                <give_info>pro_zver_founded_shell_in_podzemka</give_info>
+            </phrase>
+            <phrase id="11">
+                <text>pb_markus_start_dialog_11</text>
+                <action>dialogs.break_dialog</action>
+                <action>dialogs_perevalochnaya_baza.pb_hunt_to_flash</action>
+                <give_info>perevalochnaya_baza_markus_quest_meet_done</give_info>
+                <give_info>pb_hunt_to_flash_start</give_info>
+            </phrase>
+            <phrase id="10">
+                <text>pb_markus_start_dialog_10</text>
+                <next>11</next>
+            </phrase>
+            <phrase id="21">
+                <text>pb_markus_start_dialog_21</text>
+                <next>22</next>
+            </phrase>
+            <phrase id="20">
+                <text>pb_markus_start_dialog_20</text>
+                <next>21</next>
+            </phrase>
+            <phrase id="19">
+                <text>pb_markus_start_dialog_19</text>
+                <next>20</next>
+            </phrase>
+            <phrase id="22">
+                <text>pb_markus_start_dialog_22</text>
+                <action>dialogs.break_dialog</action>
+                <action>dialogs_perevalochnaya_baza.pb_found_to_shell_quest</action>
+                <give_info>pro_markus_meet_from_shell_done</give_info>
+            </phrase>
+            <phrase id="29">
+                <text>pb_markus_start_dialog_29</text>
+                <next>30</next>
+            </phrase>
+            <phrase id="0">
+                <text />
+                <next>1</next>
+                <next>23</next>
+                <next>31</next>
+                <next>35</next>
+                <next>43</next>
+                <next>14</next>
+                <next>45</next>
+                <next>55</next>
+                <next>3</next>
+                <next>12</next>
+            </phrase>
+            <phrase id="2">
+                <text>pb_markus_start_dialog_2</text>
+                <next>60</next>
+            </phrase>
+            <phrase id="30">
+                <text>pb_markus_start_dialog_30</text>
+                <action>dialogs.break_dialog</action>
+                <action>dialogs_perevalochnaya_baza.pb_find_af_vyvert_quest</action>
+                <give_info>pro_markus_give_quest_af_vyver_found</give_info>
+            </phrase>
+            <phrase id="60">
+                <text>pb_markus_start_dialog_60</text>
+                <action>dialogs.break_dialog</action>
+            </phrase>
+            <phrase id="23">
+                <text />
+                <dont_has_info>pro_markus_give_quest_af_vyver_found</dont_has_info>
+                <dont_has_info>pro_markus_broken_quest_af_vyver_found</dont_has_info>
+                <dont_has_info>pro_markus_meet_from_shell</dont_has_info>
+                <has_info>perevalochnaya_baza_start_quest_zombied_kill_done</has_info>
+                <next>24</next>
+            </phrase>
+            <phrase id="24">
+                <text>pb_markus_start_dialog_24</text>
+                <next>25</next>
+            </phrase>
+            <phrase id="26">
+                <text>pb_markus_start_dialog_26</text>
+                <next>27</next>
+                <next>28</next>
+            </phrase>
+            <phrase id="25">
+                <text>pb_markus_start_dialog_25</text>
+                <next>26</next>
+            </phrase>
+        </phrase_list>
+    </dialog>
+    <dialog id="pb_lesnik_end_line_meet">
+        <phrase_list>
+            <phrase id="4">
+                <text>pb_lesnik_end_line_meet_4</text>
+                <next>5</next>
+            </phrase>
+            <phrase id="6">
+                <text>pb_lesnik_end_line_meet_6</text>
+                <next>7</next>
+            </phrase>
+            <phrase id="3">
+                <text>pb_lesnik_end_line_meet_3</text>
+                <next>4</next>
+            </phrase>
+            <phrase id="1">
+                <text>pb_lesnik_end_line_meet_1</text>
+                <next>2</next>
+            </phrase>
+            <phrase id="2">
+                <text>pb_lesnik_end_line_meet_2</text>
+                <next>3</next>
+            </phrase>
+            <phrase id="0">
+                <text>pb_lesnik_end_line_meet_0</text>
+                <next>1</next>
+            </phrase>
+            <phrase id="7">
+                <text>pb_lesnik_end_line_meet_7</text>
+                <action>dialogs.break_dialog</action>
+                <give_info>pro_lesnik_final_dialog_meet_complete</give_info>
+            </phrase>
+            <phrase id="5">
+                <text>pb_lesnik_end_line_meet_5</text>
+                <action>dialogs.medic_magic_potion</action>
+                <next>6</next>
+            </phrase>
+        </phrase_list>
+    </dialog>
+    <dialog id="digst_markus_talk_to_actor_good">
+        <phrase_list>
+            <phrase id="1">
+                <text>digst_markus_talk_to_actor_good_1</text>
+                <next>2</next>
+            </phrase>
+            <phrase id="2">
+                <text>digst_markus_talk_to_actor_good_2</text>
+                <next>3</next>
+            </phrase>
+            <phrase id="4">
+                <text>digst_markus_talk_to_actor_good_4</text>
+                <next>5</next>
+            </phrase>
+            <phrase id="6">
+                <text>digst_markus_talk_to_actor_good_6</text>
+                <next>7</next>
+            </phrase>
+            <phrase id="3">
+                <text>digst_markus_talk_to_actor_good_3</text>
+                <next>4</next>
+            </phrase>
+            <phrase id="7">
+                <text>digst_markus_talk_to_actor_good_7</text>
+                <action>dialogs.break_dialog</action>
+                <action>dialogs_digger_stash.digst_find_exit</action>
+                <action>dialogs_perevalochnaya_baza.pb_quest_bloknot_2_out</action>
+                <action>dialogs_perevalochnaya_baza.pb_quest_bloknot_3_in</action>
+                <give_info>digst_stay_dont_move_complite</give_info>
+                <give_info>digst_bloknot_reload_to_digst</give_info>
+            </phrase>
+            <phrase id="0">
+                <text>digst_markus_talk_to_actor_good_0</text>
+                <next>1</next>
+            </phrase>
+            <phrase id="5">
+                <text>digst_markus_talk_to_actor_good_5</text>
+                <action>dialogs.medic_magic_potion</action>
+                <next>6</next>
+            </phrase>
+        </phrase_list>
+    </dialog>
+    <dialog id="digst_markus_talk_to_actor_bad">
+        <phrase_list>
+            <phrase id="4">
+                <text>digst_markus_talk_to_actor_bad_4</text>
+                <next>5</next>
+            </phrase>
+            <phrase id="2">
+                <text>digst_markus_talk_to_actor_bad_2</text>
+                <next>3</next>
+            </phrase>
+            <phrase id="1">
+                <text>digst_markus_talk_to_actor_bad_1</text>
+                <next>2</next>
+            </phrase>
+            <phrase id="6">
+                <text>digst_markus_talk_to_actor_bad_6</text>
+                <next>7</next>
+            </phrase>
+            <phrase id="3">
+                <text>digst_markus_talk_to_actor_bad_3</text>
+                <next>4</next>
+            </phrase>
+            <phrase id="7">
+                <text>digst_markus_talk_to_actor_bad_7</text>
+                <action>dialogs.break_dialog</action>
+                <action>dialogs_digger_stash.digst_find_exit</action>
+                <action>dialogs_perevalochnaya_baza.pb_quest_bloknot_2_out</action>
+                <action>dialogs_perevalochnaya_baza.pb_quest_bloknot_3_in</action>
+                <give_info>digst_kill_to_spider_complite</give_info>
+                <give_info>digst_bloknot_reload_to_digst</give_info>
+            </phrase>
+            <phrase id="0">
+                <text>digst_markus_talk_to_actor_bad_0</text>
+                <next>1</next>
+            </phrase>
+            <phrase id="5">
+                <text>digst_markus_talk_to_actor_bad_5</text>
+                <action>dialogs.medic_magic_potion</action>
+                <next>6</next>
+            </phrase>
+        </phrase_list>
+    </dialog>
+    <dialog id="pb_mrakobes_talk">
+        <phrase_list>
+            <phrase id="2">
+                <text>pb_mrakobes_talk_2</text>
+                <next>3</next>
+            </phrase>
+            <phrase id="0">
+                <text>pb_mrakobes_talk_0</text>
+                <next>1</next>
+            </phrase>
+            <phrase id="3">
+                <text>pb_mrakobes_talk_3</text>
+                <action>dialogs.break_dialog</action>
+                <action>dialogs_perevalochnaya_baza.actor_hit_face_mrakobes</action>
+            </phrase>
+            <phrase id="1">
+                <text>pb_mrakobes_talk_1</text>
+                <action>dialogs.medic_magic_potion</action>
+                <give_info>pb_actor_meet_dialog_mrakobes</give_info>
+                <next>2</next>
+            </phrase>
+        </phrase_list>
+    </dialog>
+    <dialog id="pb_killer_leader_group_agres">
+        <phrase_list>
+            <phrase id="1">
+                <text>pb_killer_leader_group_agres_1</text>
+                <next>2</next>
+            </phrase>
+            <phrase id="2">
+                <text>pb_killer_leader_group_agres_2</text>
+                <next>3</next>
+            </phrase>
+            <phrase id="3">
+                <text>pb_killer_leader_group_agres_3</text>
+                <action>dialogs.break_dialog</action>
+                <give_info>pro_actor_meet_leader_killer_2</give_info>
+            </phrase>
+            <phrase id="0">
+                <text>pb_killer_leader_group_agres_0</text>
+                <next>1</next>
+            </phrase>
+        </phrase_list>
+    </dialog>
+    <dialog id="pb_killer_leader_group_meet">
+        <phrase_list>
+            <phrase id="1">
+                <text>pb_killer_leader_group_meet_1</text>
+                <next>2</next>
+            </phrase>
+            <phrase id="6">
+                <text>pb_killer_leader_group_meet_6</text>
+                <next>7</next>
+            </phrase>
+            <phrase id="8">
+                <text>pb_killer_leader_group_meet_8</text>
+                <next>9</next>
+            </phrase>
+            <phrase id="10">
+                <text>pb_killer_leader_group_meet_10</text>
+                <next>11</next>
+            </phrase>
+            <phrase id="7">
+                <text>pb_killer_leader_group_meet_7</text>
+                <next>8</next>
+            </phrase>
+            <phrase id="9">
+                <text>pb_killer_leader_group_meet_9</text>
+                <next>10</next>
+            </phrase>
+            <phrase id="5">
+                <text>pb_killer_leader_group_meet_5</text>
+                <action>dialogs_perevalochnaya_baza.pb_quest_add_actor_money</action>
+                <next>6</next>
+            </phrase>
+            <phrase id="3">
+                <text>pb_killer_leader_group_meet_3</text>
+                <next>4</next>
+            </phrase>
+            <phrase id="4">
+                <text>pb_killer_leader_group_meet_4</text>
+                <action>dialogs_perevalochnaya_baza.pb_device_warning_module_out</action>
+                <action>dialogs_perevalochnaya_baza.pb_delete_all_actor_money</action>
+                <next>5</next>
+            </phrase>
+            <phrase id="0">
+                <text>pb_killer_leader_group_meet_0</text>
+                <next>1</next>
+            </phrase>
+            <phrase id="2">
+                <text>pb_killer_leader_group_meet_2</text>
+                <action>dialogs_perevalochnaya_baza.pb_give_bolt_to_zver</action>
+                <next>3</next>
+            </phrase>
+            <phrase id="11">
+                <text>pb_killer_leader_group_meet_11</text>
+                <action>dialogs.break_dialog</action>
+                <give_info>pro_actor_meet_leader_killer_1</give_info>
+            </phrase>
+        </phrase_list>
+    </dialog>
+    <dialog id="pb_otshelnik_puzir_talk">
+        <phrase_list>
+            <phrase id="1">
+                <text>pb_otshelnik_puzir_talk_1</text>
+                <next>2</next>
+            </phrase>
+            <phrase id="2">
+                <text>pb_otshelnik_puzir_talk_2</text>
+                <next>3</next>
+            </phrase>
+            <phrase id="3">
+                <text>pb_otshelnik_puzir_talk_3</text>
+                <next>4</next>
+            </phrase>
+            <phrase id="4">
+                <text>pb_otshelnik_puzir_talk_4</text>
+                <next>5</next>
+            </phrase>
+            <phrase id="5">
+                <text>pb_otshelnik_puzir_talk_5</text>
+                <next>6</next>
+            </phrase>
+            <phrase id="6">
+                <text>pb_otshelnik_puzir_talk_6</text>
+                <next>7</next>
+            </phrase>
+            <phrase id="7">
+                <text>pb_otshelnik_puzir_talk_7</text>
+                <next>8</next>
+            </phrase>
+            <phrase id="8">
+                <text>pb_otshelnik_puzir_talk_8</text>
+                <next>9</next>
+            </phrase>
+            <phrase id="9">
+                <text>pb_otshelnik_puzir_talk_9</text>
+                <action>dialogs.break_dialog</action>
+                <give_info>pro_otshelnik_puzir_first_dialog_done</give_info>
+            </phrase>
+            <phrase id="0">
+                <text>pb_otshelnik_puzir_talk_0</text>
+                <next>1</next>
+            </phrase>
+        </phrase_list>
+    </dialog>
+    <dialog id="pb_quest_lutiy_meet_to_all">
+        <phrase_list>
+            <phrase id="11">
+                <text>pb_quest_lutiy_meet_to_all_11</text>
+                <next>12</next>
+            </phrase>
+            <phrase id="13">
+                <text>pb_quest_lutiy_meet_to_all_13</text>
+                <next>14</next>
+            </phrase>
+            <phrase id="15">
+                <text>pb_quest_lutiy_meet_to_all_15</text>
+                <next>17</next>
+            </phrase>
+            <phrase id="10">
+                <text>pb_quest_lutiy_meet_to_all_10</text>
+                <action>dialogs.break_dialog</action>
+            </phrase>
+            <phrase id="1">
+                <text>pb_quest_lutiy_meet_to_all_1</text>
+                <next>2</next>
+                <next>3</next>
+                <next>4</next>
+                <next>5</next>
+                <next>6</next>
+                <next>7</next>
+                <next>8</next>
+                <next>9</next>
+                <next>10</next>
+            </phrase>
+            <phrase id="26">
+                <text>pb_quest_lutiy_meet_to_all_26</text>
+                <next>27</next>
+            </phrase>
+            <phrase id="3">
+                <text>pb_quest_lutiy_meet_to_all_3</text>
+                <dont_has_info>pb_quest_lutiy_meet_to_kuvalda</dont_has_info>
+                <next>13</next>
+            </phrase>
+            <phrase id="4">
+                <text>pb_quest_lutiy_meet_to_all_4</text>
+                <dont_has_info>pb_quest_lutiy_meet_to_snake</dont_has_info>
+                <next>15</next>
+            </phrase>
+            <phrase id="5">
+                <text>pb_quest_lutiy_meet_to_all_5</text>
+                <dont_has_info>pb_quest_lutiy_meet_to_markus</dont_has_info>
+                <next>16</next>
+            </phrase>
+            <phrase id="6">
+                <text>pb_quest_lutiy_meet_to_all_6</text>
+                <dont_has_info>pb_quest_lutiy_meet_to_moskit</dont_has_info>
+                <next>19</next>
+                <next>20</next>
+            </phrase>
+            <phrase id="7">
+                <text>pb_quest_lutiy_meet_to_all_7</text>
+                <dont_has_info>pb_quest_lutiy_meet_to_dubolom</dont_has_info>
+                <next>22</next>
+            </phrase>
+            <phrase id="8">
+                <text>pb_quest_lutiy_meet_to_all_8</text>
+                <dont_has_info>pb_quest_lutiy_meet_to_shurup</dont_has_info>
+                <next>24</next>
+            </phrase>
+            <phrase id="9">
+                <text>pb_quest_lutiy_meet_to_all_9</text>
+                <dont_has_info>pb_quest_lutiy_meet_to_lutiy</dont_has_info>
+                <next>26</next>
+            </phrase>
+            <phrase id="24">
+                <text>pb_quest_lutiy_meet_to_all_24</text>
+                <next>25</next>
+            </phrase>
+            <phrase id="22">
+                <text>pb_quest_lutiy_meet_to_all_22</text>
+                <next>23</next>
+            </phrase>
+            <phrase id="20">
+                <text>pb_quest_lutiy_meet_to_all_20</text>
+                <has_info>perevalochnaya_baza_moskit_dead</has_info>
+                <next>21</next>
+            </phrase>
+            <phrase id="19">
+                <text>pb_quest_lutiy_meet_to_all_19</text>
+                <dont_has_info>perevalochnaya_baza_moskit_dead</dont_has_info>
+                <next>21</next>
+            </phrase>
+            <phrase id="16">
+                <text>pb_quest_lutiy_meet_to_all_16</text>
+                <next>18</next>
+            </phrase>
+            <phrase id="2">
+                <text>pb_quest_lutiy_meet_to_all_2</text>
+                <dont_has_info>pb_quest_lutiy_meet_to_rezak</dont_has_info>
+                <next>11</next>
+            </phrase>
+            <phrase id="12">
+                <text>pb_quest_lutiy_meet_to_all_12</text>
+                <give_info>pb_quest_lutiy_meet_to_rezak</give_info>
+                <next>28</next>
+            </phrase>
+            <phrase id="14">
+                <text>pb_quest_lutiy_meet_to_all_14</text>
+                <give_info>pb_quest_lutiy_meet_to_kuvalda</give_info>
+                <next>28</next>
+            </phrase>
+            <phrase id="17">
+                <text>pb_quest_lutiy_meet_to_all_17</text>
+                <give_info>pb_quest_lutiy_meet_to_snake</give_info>
+                <next>28</next>
+            </phrase>
+            <phrase id="18">
+                <text>pb_quest_lutiy_meet_to_all_18</text>
+                <give_info>pb_quest_lutiy_meet_to_markus</give_info>
+                <next>28</next>
+            </phrase>
+            <phrase id="21">
+                <text>pb_quest_lutiy_meet_to_all_21</text>
+                <give_info>pb_quest_lutiy_meet_to_moskit</give_info>
+                <next>28</next>
+            </phrase>
+            <phrase id="23">
+                <text>pb_quest_lutiy_meet_to_all_23</text>
+                <give_info>pb_quest_lutiy_meet_to_dubolom</give_info>
+                <next>28</next>
+            </phrase>
+            <phrase id="25">
+                <text>pb_quest_lutiy_meet_to_all_25</text>
+                <give_info>pb_quest_lutiy_meet_to_shurup</give_info>
+                <next>28</next>
+            </phrase>
+            <phrase id="27">
+                <text>pb_quest_lutiy_meet_to_all_27</text>
+                <give_info>pb_quest_lutiy_meet_to_lutiy</give_info>
+                <next>28</next>
+            </phrase>
+            <phrase id="28">
+                <text>pb_quest_lutiy_meet_to_all_28</text>
+            </phrase>
+            <phrase id="0">
+                <text>pb_quest_lutiy_meet_to_all_0</text>
+                <next>1</next>
+            </phrase>
+        </phrase_list>
+    </dialog>
+    <dialog id="pb_quest_lutiy_talk_after_foundet_padalshik">
+        <has_info>zver_open_to_pda_padalshik</has_info>
+        <dont_has_info>zver_no_meet_to_all</dont_has_info>
+        <phrase_list>
+            <phrase id="7">
+                <text>pb_quest_lutiy_talk_after_foundet_padalshik_7</text>
+                <next>8</next>
+                <next>9</next>
+                <next>10</next>
+            </phrase>
+            <phrase id="17">
+                <text>pb_quest_lutiy_talk_after_foundet_padalshik_17</text>
+                <next>18</next>
+            </phrase>
+            <phrase id="11">
+                <text>pb_quest_lutiy_talk_after_foundet_padalshik_11</text>
+                <dont_has_info>zver_meet_to_dead_stalkers</dont_has_info>
+                <next>12</next>
+            </phrase>
+            <phrase id="15">
+                <text>pb_quest_lutiy_talk_after_foundet_padalshik_15</text>
+                <precondition>dialogs_perevalochnaya_baza.check_items_tainik_padalshika_false</precondition>
+                <action>dialogs_perevalochnaya_baza.pb_find_habar_padalshik_quest</action>
+                <has_info>zver_meet_to_dead_stalkers</has_info>
+                <next>8</next>
+                <next>9</next>
+                <next>10</next>
+                <next>19</next>
+            </phrase>
+            <phrase id="5">
+                <text>pb_quest_lutiy_talk_after_foundet_padalshik_5</text>
+                <next>6</next>
+            </phrase>
+            <phrase id="21">
+                <text>pb_quest_lutiy_talk_after_foundet_padalshik_21</text>
+                <next>22</next>
+            </phrase>
+            <phrase id="1">
+                <text>pb_quest_lutiy_talk_after_foundet_padalshik_1</text>
+                <next>2</next>
+            </phrase>
+            <phrase id="22">
+                <text>pb_quest_lutiy_talk_after_foundet_padalshik_22</text>
+                <give_info>found_to_deshifrator_give</give_info>
+                <next>8</next>
+                <next>9</next>
+                <next>10</next>
+                <next>19</next>
+            </phrase>
+            <phrase id="3">
+                <text>pb_quest_lutiy_talk_after_foundet_padalshik_3</text>
+                <next>4</next>
+            </phrase>
+            <phrase id="26">
+                <text>pb_quest_lutiy_talk_after_foundet_padalshik_26</text>
+                <next>27</next>
+            </phrase>
+            <phrase id="25">
+                <text>pb_quest_lutiy_talk_after_foundet_padalshik_25</text>
+                <next>26</next>
+            </phrase>
+            <phrase id="27">
+                <text>pb_quest_lutiy_talk_after_foundet_padalshik_27</text>
+                <next>28</next>
+            </phrase>
+            <phrase id="14">
+                <text>pb_quest_lutiy_talk_after_foundet_padalshik_14</text>
+                <precondition>dialogs_perevalochnaya_baza.check_items_tainik_padalshika_false</precondition>
+                <action>dialogs_perevalochnaya_baza.pb_find_habar_padalshik_quest</action>
+                <dont_has_info>zver_meet_to_dead_stalkers</dont_has_info>
+                <next>8</next>
+                <next>9</next>
+                <next>10</next>
+                <next>19</next>
+            </phrase>
+            <phrase id="20">
+                <text>pb_quest_lutiy_talk_after_foundet_padalshik_20</text>
+                <has_info>zver_meet_to_dead_stalkers</has_info>
+                <next>21</next>
+            </phrase>
+            <phrase id="24">
+                <text>pb_quest_lutiy_talk_after_foundet_padalshik_24</text>
+                <give_info>pb_find_habar_padalshik_done</give_info>
+                <next>25</next>
+            </phrase>
+            <phrase id="18">
+                <text>pb_quest_lutiy_talk_after_foundet_padalshik_18</text>
+                <next>8</next>
+                <next>9</next>
+                <next>10</next>
+                <next>19</next>
+            </phrase>
+            <phrase id="6">
+                <text>pb_quest_lutiy_talk_after_foundet_padalshik_6</text>
+                <next>7</next>
+            </phrase>
+            <phrase id="28">
+                <text>pb_quest_lutiy_talk_after_foundet_padalshik_28</text>
+                <action>dialogs_perevalochnaya_baza.pb_robbery_quest_tainik_padalshika</action>
+                <next>29</next>
+            </phrase>
+            <phrase id="16">
+                <text>pb_quest_lutiy_talk_after_foundet_padalshik_16</text>
+                <next>17</next>
+            </phrase>
+            <phrase id="29">
+                <text>pb_quest_lutiy_talk_after_foundet_padalshik_29</text>
+                <give_info>pb_tainik_give</give_info>
+                <give_info>pb_find_habar_padalshik_done</give_info>
+                <next>8</next>
+                <next>9</next>
+                <next>10</next>
+                <next>19</next>
+            </phrase>
+            <phrase id="13">
+                <text>pb_quest_lutiy_talk_after_foundet_padalshik_13</text>
+                <give_info>found_to_deshifrator_give</give_info>
+                <next>8</next>
+                <next>9</next>
+                <next>10</next>
+                <next>19</next>
+            </phrase>
+            <phrase id="23">
+                <text>pb_quest_lutiy_talk_after_foundet_padalshik_23</text>
+                <precondition>dialogs_perevalochnaya_baza.check_items_tainik_padalshika</precondition>
+                <action>dialogs_perevalochnaya_baza.pb_find_habar_padalshik_quest</action>
+                <next>24</next>
+            </phrase>
+            <phrase id="9">
+                <text>pb_quest_lutiy_talk_after_foundet_padalshik_9</text>
+                <dont_has_info>zver_meet_to_habar</dont_has_info>
+                <give_info>zver_meet_to_habar</give_info>
+                <next>14</next>
+                <next>15</next>
+                <next>23</next>
+            </phrase>
+            <phrase id="10">
+                <text>pb_quest_lutiy_talk_after_foundet_padalshik_10</text>
+                <dont_has_info>zver_meet_to_dead_stalkers</dont_has_info>
+                <give_info>zver_meet_to_dead_stalkers</give_info>
+                <next>16</next>
+            </phrase>
+            <phrase id="8">
+                <text>pb_quest_lutiy_talk_after_foundet_padalshik_8</text>
+                <dont_has_info>zver_meet_to_deshifrator</dont_has_info>
+                <give_info>zver_meet_to_deshifrator</give_info>
+                <next>11</next>
+                <next>20</next>
+            </phrase>
+            <phrase id="4">
+                <text>pb_quest_lutiy_talk_after_foundet_padalshik_4</text>
+                <next>5</next>
+            </phrase>
+            <phrase id="12">
+                <text>pb_quest_lutiy_talk_after_foundet_padalshik_12</text>
+                <next>13</next>
+            </phrase>
+            <phrase id="19">
+                <text>pb_quest_lutiy_talk_after_foundet_padalshik_19</text>
+                <action>dialogs_perevalochnaya_baza.pb_actor_give_pda_padalshika</action>
+                <has_info>zver_meet_to_deshifrator</has_info>
+                <has_info>zver_meet_to_habar</has_info>
+                <has_info>zver_meet_to_dead_stalkers</has_info>
+                <next>30</next>
+            </phrase>
+            <phrase id="30">
+                <text>pb_quest_lutiy_talk_after_foundet_padalshik_30</text>
+                <next>31</next>
+            </phrase>
+            <phrase id="31">
+                <text>pb_quest_lutiy_talk_after_foundet_padalshik_31</text>
+                <action>dialogs.break_dialog</action>
+                <action>dialogs_perevalochnaya_baza.pb_actor_give_lutiy_vodka</action>
+                <give_info>quest_found_padalshik_done</give_info>
+                <give_info>zver_no_meet_to_all</give_info>
+            </phrase>
+            <phrase id="2">
+                <text>pb_quest_lutiy_talk_after_foundet_padalshik_2</text>
+                <next>3</next>
+            </phrase>
+            <phrase id="0">
+                <text>pb_quest_lutiy_talk_after_foundet_padalshik_0</text>
+                <next>1</next>
+            </phrase>
+        </phrase_list>
+    </dialog>
+    <dialog id="pb_quest_lutiy_meet_to_markus">
+        <phrase_list>
+            <phrase id="2">
+                <text>pb_quest_lutiy_meet_to_markus_2</text>
+                <next>3</next>
+            </phrase>
+            <phrase id="1">
+                <text>pb_quest_lutiy_meet_to_markus_1</text>
+                <next>2</next>
+            </phrase>
+            <phrase id="3">
+                <text>pb_quest_lutiy_meet_to_markus_3</text>
+                <action>dialogs.break_dialog</action>
+                <give_info>pb_lutiy_found_signal</give_info>
+            </phrase>
+            <phrase id="0">
+                <text>pb_quest_lutiy_meet_to_markus_0</text>
+                <next>1</next>
+            </phrase>
+        </phrase_list>
+    </dialog>
+    <dialog id="pb_quest_line_lutiy_talk_to_controller_kill">
+        <phrase_list>
+            <phrase id="9">
+                <text>pb_quest_line_lutiy_talk_to_controller_kill_9</text>
+                <next>10</next>
+            </phrase>
+            <phrase id="6">
+                <text>pb_quest_line_lutiy_talk_to_controller_kill_6</text>
+                <dont_has_info>perevalochnaya_baza_zver_talk_to_padalshik</dont_has_info>
+                <next>8</next>
+            </phrase>
+            <phrase id="2">
+                <text>pb_quest_line_lutiy_talk_to_controller_kill_2</text>
+                <next>3</next>
+            </phrase>
+            <phrase id="8">
+                <text>pb_quest_line_lutiy_talk_to_controller_kill_8</text>
+                <next>9</next>
+            </phrase>
+            <phrase id="1">
+                <text>pb_quest_line_lutiy_talk_to_controller_kill_1</text>
+                <next>2</next>
+            </phrase>
+            <phrase id="3">
+                <text>pb_quest_line_lutiy_talk_to_controller_kill_3</text>
+                <action>dialogs_perevalochnaya_baza.find_exit_to_anomaly_quest</action>
+                <next>4</next>
+            </phrase>
+            <phrase id="4">
+                <text>pb_quest_line_lutiy_talk_to_controller_kill_4</text>
+                <next>5</next>
+                <next>6</next>
+            </phrase>
+            <phrase id="7">
+                <text>pb_quest_line_lutiy_talk_to_controller_kill_7</text>
+                <next>9</next>
+            </phrase>
+            <phrase id="5">
+                <text>pb_quest_line_lutiy_talk_to_controller_kill_5</text>
+                <has_info>perevalochnaya_baza_zver_talk_to_padalshik</has_info>
+                <next>7</next>
+            </phrase>
+            <phrase id="0">
+                <text>pb_quest_line_lutiy_talk_to_controller_kill_0</text>
+                <give_info>pb_kill_to_controller_complite</give_info>
+                <next>1</next>
+            </phrase>
+            <phrase id="11">
+                <text>pb_quest_line_lutiy_talk_to_controller_kill_11</text>
+                <action>dialogs.break_dialog</action>
+                <action>dialogs_perevalochnaya_baza.pb_quest_bloknot_1_out</action>
+                <action>dialogs_perevalochnaya_baza.pb_quest_bloknot_2_in</action>
+                <give_info>padalshik_found_quest_give</give_info>
+            </phrase>
+            <phrase id="10">
+                <text>pb_quest_line_lutiy_talk_to_controller_kill_10</text>
+                <next>11</next>
+            </phrase>
+        </phrase_list>
+    </dialog>
+    <dialog id="pb_quest_line_lutiy_talk_to_dead_zombied">
+        <dont_has_info>perevalochnaya_baza_quest_line_zombied_kill_end</dont_has_info>
+        <phrase_list>
+            <phrase id="3">
+                <text>pb_quest_line_lutiy_talk_to_dead_zombied_3</text>
+                <next>5</next>
+            </phrase>
+            <phrase id="5">
+                <text>pb_quest_line_lutiy_talk_to_dead_zombied_5</text>
+                <next>7</next>
+            </phrase>
+            <phrase id="7">
+                <text>pb_quest_line_lutiy_talk_to_dead_zombied_7</text>
+                <next>9</next>
+            </phrase>
+            <phrase id="9">
+                <text>pb_quest_line_lutiy_talk_to_dead_zombied_9</text>
+                <next>10</next>
+            </phrase>
+            <phrase id="8">
+                <text>pb_quest_line_lutiy_talk_to_dead_zombied_8</text>
+                <next>9</next>
+            </phrase>
+            <phrase id="6">
+                <text>pb_quest_line_lutiy_talk_to_dead_zombied_6</text>
+                <next>8</next>
+            </phrase>
+            <phrase id="4">
+                <text>pb_quest_line_lutiy_talk_to_dead_zombied_4</text>
+                <next>6</next>
+            </phrase>
+            <phrase id="2">
+                <text>pb_quest_line_lutiy_talk_to_dead_zombied_2</text>
+                <has_info>perevalochnaya_baza_moskit_dead</has_info>
+                <next>4</next>
+            </phrase>
+            <phrase id="1">
+                <text>pb_quest_line_lutiy_talk_to_dead_zombied_1</text>
+                <dont_has_info>perevalochnaya_baza_moskit_dead</dont_has_info>
+                <next>3</next>
+            </phrase>
+            <phrase id="0">
+                <text>pb_quest_line_lutiy_talk_to_dead_zombied_0</text>
+                <next>1</next>
+                <next>2</next>
+            </phrase>
+            <phrase id="10">
+                <text>pb_quest_line_lutiy_talk_to_dead_zombied_10</text>
+                <next>11</next>
+            </phrase>
+            <phrase id="11">
+                <text>pb_quest_line_lutiy_talk_to_dead_zombied_11</text>
+                <action>dialogs.break_dialog</action>
+                <give_info>perevalochnaya_baza_quest_line_zombied_kill_end</give_info>
+            </phrase>
+        </phrase_list>
+    </dialog>
+    <dialog id="pb_quest_line_lutiy_talk_to_go_sleep">
+        <phrase_list>
+            <phrase id="1">
+                <text>pb_quest_line_lutiy_talk_to_go_sleep_1</text>
+                <next>2</next>
+            </phrase>
+            <phrase id="2">
+                <text>pb_quest_line_lutiy_talk_to_go_sleep_2</text>
+                <next>3</next>
+            </phrase>
+            <phrase id="3">
+                <text>pb_quest_line_lutiy_talk_to_go_sleep_3</text>
+                <next>4</next>
+            </phrase>
+            <phrase id="6">
+                <text>pb_quest_line_lutiy_talk_to_go_sleep_6</text>
+                <next>7</next>
+            </phrase>
+            <phrase id="4">
+                <text>pb_quest_line_lutiy_talk_to_go_sleep_4</text>
+                <next>5</next>
+            </phrase>
+            <phrase id="5">
+                <text>pb_quest_line_lutiy_talk_to_go_sleep_5</text>
+                <action>dialogs_perevalochnaya_baza.find_exit_to_anomaly_quest</action>
+                <next>6</next>
+            </phrase>
+            <phrase id="7">
+                <text>pb_quest_line_lutiy_talk_to_go_sleep_7</text>
+                <next>8</next>
+            </phrase>
+            <phrase id="8">
+                <text>pb_quest_line_lutiy_talk_to_go_sleep_8</text>
+                <next>9</next>
+            </phrase>
+            <phrase id="0">
+                <text>pb_quest_line_lutiy_talk_to_go_sleep_0</text>
+                <give_info>pb_kill_to_controller_complite</give_info>
+                <next>1</next>
+            </phrase>
+            <phrase id="9">
+                <text>pb_quest_line_lutiy_talk_to_go_sleep_9</text>
+                <action>dialogs.break_dialog</action>
+                <action>dialogs_perevalochnaya_baza.pb_actor_go_to_sleep_quest</action>
+                <give_info>pb_zver_go_to_sleep_give</give_info>
+            </phrase>
+        </phrase_list>
+    </dialog>
+    <dialog id="pb_quest_line_lutiy_start">
+        <dont_has_info>perevalochnaya_lutiy_meet_to_zombied_done</dont_has_info>
+        <phrase_list>
+            <phrase id="8">
+                <text>pb_quest_line_lutiy_start_8</text>
+                <give_info>perevalochnaya_baza_zver_talk_to_padalshik</give_info>
+                <next>9</next>
+            </phrase>
+            <phrase id="9">
+                <text>pb_quest_line_lutiy_start_9</text>
+                <next>14</next>
+            </phrase>
+            <phrase id="15">
+                <text>pb_quest_line_lutiy_start_15</text>
+                <next>7</next>
+            </phrase>
+            <phrase id="11">
+                <text>pb_quest_line_lutiy_start_11</text>
+                <next>12</next>
+            </phrase>
+            <phrase id="10">
+                <text>pb_quest_line_lutiy_start_10</text>
+                <next>11</next>
+            </phrase>
+            <phrase id="7">
+                <text>pb_quest_line_lutiy_start_7</text>
+                <next>10</next>
+            </phrase>
+            <phrase id="14">
+                <text>pb_quest_line_lutiy_start_14</text>
+                <next>15</next>
+            </phrase>
+            <phrase id="12">
+                <text>pb_quest_line_lutiy_start_12</text>
+                <next>13</next>
+            </phrase>
+            <phrase id="6">
+                <text>pb_quest_line_lutiy_start_6</text>
+                <next>7</next>
+                <next>8</next>
+            </phrase>
+            <phrase id="5">
+                <text>pb_quest_line_lutiy_start_5</text>
+                <next>6</next>
+            </phrase>
+            <phrase id="1">
+                <text />
+                <has_info>pro_first_dialog_lutiy_not_complete</has_info>
+                <next>2</next>
+            </phrase>
+            <phrase id="16">
+                <text />
+                <dont_has_info>pro_first_dialog_lutiy_not_complete</dont_has_info>
+                <next>17</next>
+            </phrase>
+            <phrase id="17">
+                <text>pb_quest_line_lutiy_start_17</text>
+                <next>18</next>
+            </phrase>
+            <phrase id="18">
+                <text>pb_quest_line_lutiy_start_18</text>
+                <next>19</next>
+            </phrase>
+            <phrase id="19">
+                <text>pb_quest_line_lutiy_start_19</text>
+                <next>20</next>
+            </phrase>
+            <phrase id="20">
+                <text>pb_quest_line_lutiy_start_20</text>
+                <next>21</next>
+            </phrase>
+            <phrase id="22">
+                <text>pb_quest_line_lutiy_start_22</text>
+                <next>23</next>
+            </phrase>
+            <phrase id="21">
+                <text>pb_quest_line_lutiy_start_21</text>
+                <next>22</next>
+            </phrase>
+            <phrase id="23">
+                <text>pb_quest_line_lutiy_start_23</text>
+                <next>24</next>
+            </phrase>
+            <phrase id="24">
+                <text>pb_quest_line_lutiy_start_24</text>
+                <action>dialogs.break_dialog</action>
+                <give_info>pro_first_dialog_lutiy_not_complete</give_info>
+            </phrase>
+            <phrase id="2">
+                <text>pb_quest_line_lutiy_start_2</text>
+                <next>3</next>
+            </phrase>
+            <phrase id="3">
+                <text>pb_quest_line_lutiy_start_3</text>
+                <next>4</next>
+            </phrase>
+            <phrase id="4">
+                <text>pb_quest_line_lutiy_start_4</text>
+                <next>13</next>
+            </phrase>
+            <phrase id="13">
+                <text>pb_quest_line_lutiy_start_13</text>
+                <action>dialogs.break_dialog</action>
+                <action>dialogs_perevalochnaya_baza.pb_robbery_quest_ammo_5_45</action>
+                <give_info>perevalochnaya_lutiy_meet_to_zombied_done</give_info>
+            </phrase>
+            <phrase id="0">
+                <text />
+                <next>16</next>
+                <next>1</next>
+            </phrase>
+        </phrase_list>
+    </dialog>
+    <dialog id="pb_quest_line_lutiy_talk_after_heli_crash">
+        <phrase_list>
+            <phrase id="13">
+                <text>pb_quest_line_lutiy_talk_after_heli_crash_13</text>
+                <next>14</next>
+            </phrase>
+            <phrase id="11">
+                <text>pb_quest_line_lutiy_talk_after_heli_crash_11</text>
+                <next>13</next>
+            </phrase>
+            <phrase id="9">
+                <text>pb_quest_line_lutiy_talk_after_heli_crash_9</text>
+                <next>11</next>
+            </phrase>
+            <phrase id="2">
+                <text>pb_quest_line_lutiy_talk_after_heli_crash_2</text>
+                <next>3</next>
+            </phrase>
+            <phrase id="14">
+                <text>pb_quest_line_lutiy_talk_after_heli_crash_14</text>
+                <action>dialogs.break_dialog</action>
+                <action>dialogs_perevalochnaya_baza.pb_quest_bloknot_1_out</action>
+                <action>dialogs_perevalochnaya_baza.pb_quest_bloknot_2_in</action>
+                <give_info>padalshik_found_quest_give</give_info>
+            </phrase>
+            <phrase id="7">
+                <text>pb_quest_line_lutiy_talk_after_heli_crash_7</text>
+                <has_info>perevalochnaya_baza_zver_talk_to_padalshik</has_info>
+                <next>9</next>
+            </phrase>
+            <phrase id="6">
+                <text>pb_quest_line_lutiy_talk_after_heli_crash_6</text>
+                <next>7</next>
+                <next>8</next>
+            </phrase>
+            <phrase id="3">
+                <text>pb_quest_line_lutiy_talk_after_heli_crash_3</text>
+                <next>4</next>
+            </phrase>
+            <phrase id="4">
+                <text>pb_quest_line_lutiy_talk_after_heli_crash_4</text>
+                <next>5</next>
+            </phrase>
+            <phrase id="25">
+                <text />
+                <has_info>padalshik_found_quest_give</has_info>
+                <next>26</next>
+            </phrase>
+            <phrase id="5">
+                <text>pb_quest_line_lutiy_talk_after_heli_crash_5</text>
+                <next>17</next>
+            </phrase>
+            <phrase id="12">
+                <text>pb_quest_line_lutiy_talk_after_heli_crash_12</text>
+                <next>15</next>
+            </phrase>
+            <phrase id="17">
+                <text>pb_quest_line_lutiy_talk_after_heli_crash_17</text>
+                <next>20</next>
+            </phrase>
+            <phrase id="26">
+                <text>pb_quest_line_lutiy_talk_after_heli_crash_26</text>
+            </phrase>
+            <phrase id="23">
+                <text />
+                <dont_has_info>padalshik_found_quest_give</dont_has_info>
+                <has_info>pro_quest_from_anomaly_plant_complete</has_info>
+                <has_info>pro_dubolom_quest_boar_meat_done</has_info>
+                <next>24</next>
+            </phrase>
+            <phrase id="27">
+                <text />
+                <dont_has_info>pro_dubolom_quest_boar_meat_done</dont_has_info>
+                <has_info>pro_lutiy_say_to_dubolom_talk</has_info>
+                <next>28</next>
+            </phrase>
+            <phrase id="21">
+                <text />
+                <dont_has_info>pro_quest_from_anomaly_plant_complete</dont_has_info>
+                <has_info>pro_lutiy_say_to_dubolom_talk</has_info>
+                <next>22</next>
+            </phrase>
+            <phrase id="16">
+                <text>pb_quest_line_lutiy_talk_after_heli_crash_16</text>
+                <action>dialogs.break_dialog</action>
+                <action>dialogs_perevalochnaya_baza.pb_quest_bloknot_1_out</action>
+                <action>dialogs_perevalochnaya_baza.pb_quest_bloknot_2_in</action>
+                <give_info>padalshik_found_quest_give</give_info>
+            </phrase>
+            <phrase id="15">
+                <text>pb_quest_line_lutiy_talk_after_heli_crash_15</text>
+                <next>16</next>
+            </phrase>
+            <phrase id="0">
+                <text />
+                <next>18</next>
+                <next>21</next>
+                <next>27</next>
+                <next>23</next>
+                <next>25</next>
+            </phrase>
+            <phrase id="20">
+                <text>pb_quest_line_lutiy_talk_after_heli_crash_20</text>
+                <action>dialogs.break_dialog</action>
+                <action>dialogs_perevalochnaya_baza.pb_find_meat_boar_food_quest</action>
+                <give_info>pro_lutiy_say_to_dubolom_talk</give_info>
+                <give_info>pro_go_to_talk_from_snake</give_info>
+            </phrase>
+            <phrase id="18">
+                <text />
+                <dont_has_info>pro_lutiy_say_to_dubolom_talk</dont_has_info>
+                <next>19</next>
+            </phrase>
+            <phrase id="19">
+                <text>pb_quest_line_lutiy_talk_after_heli_crash_19</text>
+                <next>1</next>
+            </phrase>
+            <phrase id="1">
+                <text>pb_quest_line_lutiy_talk_after_heli_crash_1</text>
+                <next>2</next>
+            </phrase>
+            <phrase id="22">
+                <text>pb_quest_line_lutiy_talk_after_heli_crash_22</text>
+            </phrase>
+            <phrase id="28">
+                <text>pb_quest_line_lutiy_talk_after_heli_crash_28</text>
+            </phrase>
+            <phrase id="24">
+                <text>pb_quest_line_lutiy_talk_after_heli_crash_24</text>
+                <next>8</next>
+            </phrase>
+            <phrase id="8">
+                <text>pb_quest_line_lutiy_talk_after_heli_crash_8</text>
+                <dont_has_info>perevalochnaya_baza_zver_talk_to_padalshik</dont_has_info>
+                <next>10</next>
+            </phrase>
+            <phrase id="10">
+                <text>pb_quest_line_lutiy_talk_after_heli_crash_10</text>
+                <next>12</next>
+            </phrase>
+        </phrase_list>
+    </dialog>
+    <dialog id="pb_quest_lutiy_talk_to_padalshik">
+        <dont_has_info>padalshik_found_quest_give</dont_has_info>
+        <phrase_list>
+            <phrase id="3">
+                <text>pb_quest_lutiy_talk_to_padalshik_3</text>
+                <next>4</next>
+            </phrase>
+            <phrase id="1">
+                <text>pb_quest_lutiy_talk_to_padalshik_1</text>
+                <next>2</next>
+            </phrase>
+            <phrase id="2">
+                <text>pb_quest_lutiy_talk_to_padalshik_2</text>
+                <next>3</next>
+            </phrase>
+            <phrase id="4">
+                <text>pb_quest_lutiy_talk_to_padalshik_4</text>
+                <action>dialogs.break_dialog</action>
+                <give_info>padalshik_found_quest_give</give_info>
+            </phrase>
+            <phrase id="0">
+                <text>pb_quest_lutiy_talk_to_padalshik_0</text>
+                <next>1</next>
+            </phrase>
+        </phrase_list>
+    </dialog>
+    <dialog id="pb_quest_padalshik_habar_done">
+        <has_info>zver_found_habar_padalshik</has_info>
+        <dont_has_info>pb_find_habar_padalshik_done</dont_has_info>
+        <dont_has_info>pb_tainik_give</dont_has_info>
+        <phrase_list>
+            <phrase id="3">
+                <text>pb_quest_padalshik_habar_done_3</text>
+                <next>4</next>
+            </phrase>
+            <phrase id="4">
+                <text>pb_quest_padalshik_habar_done_4</text>
+                <action>dialogs_perevalochnaya_baza.pb_robbery_quest_tainik_padalshika</action>
+                <next>5</next>
+            </phrase>
+            <phrase id="5">
+                <text>pb_quest_padalshik_habar_done_5</text>
+                <next>6</next>
+            </phrase>
+            <phrase id="6">
+                <text>pb_quest_padalshik_habar_done_6</text>
+                <action>dialogs.break_dialog</action>
+                <give_info>pb_find_habar_padalshik_done</give_info>
+            </phrase>
+            <phrase id="1">
+                <text>pb_quest_padalshik_habar_done_1</text>
+                <next>2</next>
+            </phrase>
+            <phrase id="2">
+                <text>pb_quest_padalshik_habar_done_2</text>
+                <next>3</next>
+            </phrase>
+            <phrase id="0">
+                <text>pb_quest_padalshik_habar_done_0</text>
+                <next>1</next>
+            </phrase>
+        </phrase_list>
+    </dialog>
+    <dialog id="pb_murad_quest_start_dialog">
+        <phrase_list>
+            <phrase id="7">
+                <text>pb_murad_quest_start_dialog_7</text>
+                <next>8</next>
+            </phrase>
+            <phrase id="5">
+                <text>pb_murad_quest_start_dialog_5</text>
+                <next>6</next>
+            </phrase>
+            <phrase id="8">
+                <text>pb_murad_quest_start_dialog_8</text>
+                <next>9</next>
+            </phrase>
+            <phrase id="1">
+                <text>pb_murad_quest_start_dialog_1</text>
+                <next>2</next>
+            </phrase>
+            <phrase id="4">
+                <text>pb_murad_quest_start_dialog_4</text>
+                <next>5</next>
+            </phrase>
+            <phrase id="3">
+                <text>pb_murad_quest_start_dialog_3</text>
+                <next>4</next>
+            </phrase>
+            <phrase id="2">
+                <text>pb_murad_quest_start_dialog_2</text>
+                <next>3</next>
+                <next>10</next>
+            </phrase>
+            <phrase id="10">
+                <text>pb_murad_quest_start_dialog_10</text>
+                <next>11</next>
+            </phrase>
+            <phrase id="11">
+                <text>pb_murad_quest_start_dialog_11</text>
+                <next>12</next>
+            </phrase>
+            <phrase id="0">
+                <text>pb_murad_quest_start_dialog_0</text>
+                <next>1</next>
+            </phrase>
+            <phrase id="6">
+                <text>pb_murad_quest_start_dialog_6</text>
+                <next>7</next>
+            </phrase>
+            <phrase id="9">
+                <text>pb_murad_quest_start_dialog_9</text>
+                <action>dialogs.break_dialog</action>
+                <give_info>perevalochnaya_baza_murad_go_to_base</give_info>
+                <give_info>pro_start_dialog_murad_end</give_info>
+            </phrase>
+            <phrase id="12">
+                <text>pb_murad_quest_start_dialog_12</text>
+                <action>dialogs.break_dialog</action>
+                <give_info>pro_murad_enemy_to_actor</give_info>
+                <give_info>pro_start_dialog_murad_end</give_info>
+            </phrase>
+        </phrase_list>
+    </dialog>
+    <dialog id="pb_quest_lutiy_meet_to_markus_end">
+        <phrase_list>
+            <phrase id="4">
+                <text />
+                <has_info>pb_markus_founded_none</has_info>
+                <next>5</next>
+            </phrase>
+            <phrase id="5">
+                <text>pb_quest_lutiy_meet_to_markus_end_5</text>
+            </phrase>
+            <phrase id="3">
+                <text>pb_quest_lutiy_meet_to_markus_end_3</text>
+                <action>dialogs.break_dialog</action>
+                <action>dialogs_perevalochnaya_baza.pb_go_to_signal</action>
+                <give_info>actor_in_zone_markus_signal</give_info>
+                <give_info>pb_markus_founded_none</give_info>
+            </phrase>
+            <phrase id="2">
+                <text>pb_quest_lutiy_meet_to_markus_end_2</text>
+                <next>3</next>
+            </phrase>
+            <phrase id="0">
+                <text />
+                <next>1</next>
+                <next>4</next>
+            </phrase>
+            <phrase id="1">
+                <text />
+                <dont_has_info>pb_markus_founded_none</dont_has_info>
+                <next>2</next>
+            </phrase>
+        </phrase_list>
+    </dialog>
+    <dialog id="pb_quest_lutiy_meet_to_murad">
+        <has_info>pro_start_dialog_murad_end</has_info>
+        <dont_has_info>perevalochnaya_baza_meet_to_lutiy_end</dont_has_info>
+        <phrase_list>
+            <phrase id="5">
+                <text>pb_quest_lutiy_meet_to_murad_5</text>
+                <next>6</next>
+            </phrase>
+            <phrase id="3">
+                <text>pb_quest_lutiy_meet_to_murad_3</text>
+                <next>4</next>
+            </phrase>
+            <phrase id="4">
+                <text>pb_quest_lutiy_meet_to_murad_4</text>
+                <next>5</next>
+            </phrase>
+            <phrase id="2">
+                <text>pb_quest_lutiy_meet_to_murad_2</text>
+                <next>3</next>
+            </phrase>
+            <phrase id="1">
+                <text>pb_quest_lutiy_meet_to_murad_1</text>
+                <dont_has_info>pro_murad_in_puzir_dead</dont_has_info>
+                <next>2</next>
+            </phrase>
+            <phrase id="0">
+                <text>pb_quest_lutiy_meet_to_murad_0</text>
+                <next>1</next>
+                <next>7</next>
+            </phrase>
+            <phrase id="6">
+                <text>pb_quest_lutiy_meet_to_murad_6</text>
+                <action>dialogs.break_dialog</action>
+                <give_info>perevalochnaya_baza_meet_to_lutiy_end</give_info>
+            </phrase>
+            <phrase id="7">
+                <text>pb_quest_lutiy_meet_to_murad_7</text>
+                <has_info>pro_murad_in_puzir_dead</has_info>
+                <next>8</next>
+            </phrase>
+            <phrase id="8">
+                <text>pb_quest_lutiy_meet_to_murad_8</text>
+                <dont_has_info>perevalochnaya_baza_murad_coming_to_base</dont_has_info>
+                <next>9</next>
+            </phrase>
+            <phrase id="9">
+                <text>pb_quest_lutiy_meet_to_murad_9</text>
+                <next>10</next>
+            </phrase>
+            <phrase id="10">
+                <text>pb_quest_lutiy_meet_to_murad_10</text>
+                <action>dialogs.break_dialog</action>
+                <give_info>perevalochnaya_baza_meet_to_murad_end</give_info>
+            </phrase>
+        </phrase_list>
+    </dialog>
+    <dialog id="pb_shurup_talk_to_open_habar">
+        <has_info>pro_shurup_crash_habar_sms_sends</has_info>
+        <dont_has_info>pro_quest_habar_padalshik_complete</dont_has_info>
+        <phrase_list>
+            <phrase id="3">
+                <text>pb_shurup_talk_to_open_habar_3</text>
+                <next>4</next>
+                <next>5</next>
+            </phrase>
+            <phrase id="20">
+                <text>pb_shurup_talk_to_open_habar_20</text>
+                <next>14</next>
+                <next>15</next>
+            </phrase>
+            <phrase id="8">
+                <text>pb_shurup_talk_to_open_habar_8</text>
+                <next>20</next>
+            </phrase>
+            <phrase id="11">
+                <text>pb_shurup_talk_to_open_habar_11</text>
+                <next>20</next>
+            </phrase>
+            <phrase id="14">
+                <text>pb_shurup_talk_to_open_habar_14</text>
+                <next>16</next>
+            </phrase>
+            <phrase id="15">
+                <text>pb_shurup_talk_to_open_habar_15</text>
+                <next>21</next>
+            </phrase>
+            <phrase id="21">
+                <text>pb_shurup_talk_to_open_habar_21</text>
+                <next>17</next>
+                <next>18</next>
+            </phrase>
+            <phrase id="17">
+                <text>pb_shurup_talk_to_open_habar_17</text>
+                <next>19</next>
+            </phrase>
+            <phrase id="5">
+                <text>pb_shurup_talk_to_open_habar_5</text>
+                <next>9</next>
+            </phrase>
+            <phrase id="9">
+                <text>pb_shurup_talk_to_open_habar_9</text>
+                <next>10</next>
+                <next>11</next>
+            </phrase>
+            <phrase id="10">
+                <text>pb_shurup_talk_to_open_habar_10</text>
+                <next>13</next>
+            </phrase>
+            <phrase id="13">
+                <text>pb_shurup_talk_to_open_habar_13</text>
+                <action>dialogs_perevalochnaya_baza.pb_shurup_give_from_open_habar_fnp45</action>
+                <next>14</next>
+                <next>15</next>
+            </phrase>
+            <phrase id="19">
+                <text>pb_shurup_talk_to_open_habar_19</text>
+                <action>dialogs_perevalochnaya_baza.pb_shurup_give_from_open_habar_black_angel</action>
+                <give_info>pro_quest_habar_padalshik_complete</give_info>
+                <next>22</next>
+            </phrase>
+            <phrase id="6">
+                <text>pb_shurup_talk_to_open_habar_6</text>
+                <action>dialogs_perevalochnaya_baza.pb_shurup_give_from_open_habar_scope</action>
+                <next>7</next>
+                <next>8</next>
+            </phrase>
+            <phrase id="18">
+                <text>pb_shurup_talk_to_open_habar_18</text>
+                <next>12</next>
+            </phrase>
+            <phrase id="12">
+                <text>pb_shurup_talk_to_open_habar_12</text>
+                <give_info>pro_quest_habar_padalshik_complete</give_info>
+                <next>22</next>
+            </phrase>
+            <phrase id="16">
+                <text>pb_shurup_talk_to_open_habar_16</text>
+                <action>dialogs_perevalochnaya_baza.pb_shurup_give_from_open_habar_ammo_5_45</action>
+                <next>17</next>
+                <next>18</next>
+            </phrase>
+            <phrase id="4">
+                <text>pb_shurup_talk_to_open_habar_4</text>
+                <next>6</next>
+            </phrase>
+            <phrase id="2">
+                <text>pb_shurup_talk_to_open_habar_2</text>
+                <next>3</next>
+            </phrase>
+            <phrase id="7">
+                <text>pb_shurup_talk_to_open_habar_7</text>
+                <next>13</next>
+            </phrase>
+            <phrase id="22">
+                <text>pb_shurup_talk_to_open_habar_22</text>
+                <action>dialogs.break_dialog</action>
+            </phrase>
+            <phrase id="0">
+                <text>pb_shurup_talk_to_open_habar_0</text>
+                <next>1</next>
+            </phrase>
+            <phrase id="1">
+                <text>pb_shurup_talk_to_open_habar_1</text>
+                <give_info>pro_tech_instrument_2_brought</give_info>
+                <next>2</next>
+            </phrase>
+        </phrase_list>
+    </dialog>
+    <dialog id="pb_shurup_talk_to_toolkit_1">
+        <precondition>dialogs_perevalochnaya_baza.pb_check_quest_toolkit_1</precondition>
+        <dont_has_info>pro_tech_instrument_1_brought</dont_has_info>
+        <phrase_list>
+            <phrase id="2">
+                <text>pb_shurup_talk_to_toolkit_1_2</text>
+                <action>dialogs.break_dialog</action>
+            </phrase>
+            <phrase id="0">
+                <text>pb_shurup_talk_to_toolkit_1_0</text>
+                <action>dialogs_perevalochnaya_baza.pb_out_quest_toolkit_1</action>
+                <next>1</next>
+            </phrase>
+            <phrase id="1">
+                <text>pb_shurup_talk_to_toolkit_1_1</text>
+                <give_info>pro_tech_instrument_1_brought</give_info>
+                <next>2</next>
+            </phrase>
+        </phrase_list>
+    </dialog>
+    <dialog id="pb_soldier_oleynik_meet">
+        <phrase_list>
+            <phrase id="9">
+                <text>pb_soldier_oleynik_meet_9</text>
+            </phrase>
+            <phrase id="10">
+                <text>pb_soldier_oleynik_meet_10</text>
+            </phrase>
+            <phrase id="16">
+                <text>pb_soldier_oleynik_meet_16</text>
+                <action>dialogs.break_dialog</action>
+            </phrase>
+            <phrase id="4">
+                <text>pb_soldier_oleynik_meet_4</text>
+                <next>5</next>
+                <next>6</next>
+            </phrase>
+            <phrase id="7">
+                <text>pb_soldier_oleynik_meet_7</text>
+                <next>8</next>
+            </phrase>
+            <phrase id="6">
+                <text>pb_soldier_oleynik_meet_6</text>
+                <action>dialogs.break_dialog</action>
+                <give_info>rezak_quest_abort</give_info>
+            </phrase>
+            <phrase id="12">
+                <text>pb_soldier_oleynik_meet_12</text>
+                <next>13</next>
+                <next>16</next>
+            </phrase>
+            <phrase id="13">
+                <text>pb_soldier_oleynik_meet_13</text>
+                <next>14</next>
+            </phrase>
+            <phrase id="15">
+                <text>pb_soldier_oleynik_meet_15</text>
+                <action>dialogs.break_dialog</action>
+                <action>dialogs_perevalochnaya_baza.find_razya_to_rezak_quest</action>
+                <give_info>rezak_quest_give</give_info>
+            </phrase>
+            <phrase id="42">
+                <text>pb_soldier_oleynik_meet_42</text>
+                <action>dialogs.break_dialog</action>
+            </phrase>
+            <phrase id="11">
+                <text />
+                <dont_has_info>rezak_quest_give</dont_has_info>
+                <has_info>rezak_quest_abort</has_info>
+                <next>12</next>
+            </phrase>
+            <phrase id="22">
+                <text>pb_soldier_oleynik_meet_22</text>
+                <next>23</next>
+                <next>24</next>
+            </phrase>
+            <phrase id="24">
+                <text>pb_soldier_oleynik_meet_24</text>
+                <give_info>pro_actor_give_spez_razia</give_info>
+                <has_info>pro_actor_give_materials_wire</has_info>
+                <next>26</next>
+            </phrase>
+            <phrase id="26">
+                <text>pb_soldier_oleynik_meet_26</text>
+                <action>dialogs_perevalochnaya_baza.pb_robbery_quest_rezak_spez_razia</action>
+                <next>27</next>
+            </phrase>
+            <phrase id="27">
+                <text>pb_soldier_oleynik_meet_27</text>
+                <action>dialogs.break_dialog</action>
+                <give_info>pro_actor_spez_razia_and_wire_give</give_info>
+            </phrase>
+            <phrase id="18">
+                <text>pb_soldier_oleynik_meet_18</text>
+                <next>20</next>
+                <next>21</next>
+                <next>35</next>
+            </phrase>
+            <phrase id="20">
+                <text>pb_soldier_oleynik_meet_20</text>
+                <precondition>dialogs_perevalochnaya_baza.check_items_spez_razia</precondition>
+                <next>22</next>
+            </phrase>
+            <phrase id="36">
+                <text>pb_soldier_oleynik_meet_36</text>
+                <dont_has_info>pro_actor_give_spez_razia</dont_has_info>
+                <next>37</next>
+            </phrase>
+            <phrase id="38">
+                <text>pb_soldier_oleynik_meet_38</text>
+                <next>39</next>
+            </phrase>
+            <phrase id="37">
+                <text>pb_soldier_oleynik_meet_37</text>
+                <action>dialogs_perevalochnaya_baza.pb_out_quest_materials_wire</action>
+                <give_info>pro_actor_give_materials_wire</give_info>
+                <next>38</next>
+            </phrase>
+            <phrase id="21">
+                <text>pb_soldier_oleynik_meet_21</text>
+                <precondition>dialogs_perevalochnaya_baza.pb_quest_materials_wire_proverka</precondition>
+                <next>36</next>
+                <next>40</next>
+            </phrase>
+            <phrase id="25">
+                <text>pb_soldier_oleynik_meet_25</text>
+                <action>dialogs_perevalochnaya_baza.pb_robbery_quest_rezak_spez_razia</action>
+                <next>21</next>
+                <next>42</next>
+            </phrase>
+            <phrase id="29">
+                <text>pb_soldier_oleynik_meet_29</text>
+                <next>30</next>
+            </phrase>
+            <phrase id="35">
+                <text>pb_soldier_oleynik_meet_35</text>
+                <action>dialogs.break_dialog</action>
+            </phrase>
+            <phrase id="17">
+                <text />
+                <dont_has_info>pro_actor_spez_razia_and_wire_give</dont_has_info>
+                <has_info>rezak_quest_give</has_info>
+                <next>18</next>
+            </phrase>
+            <phrase id="39">
+                <text>pb_soldier_oleynik_meet_39</text>
+                <action>dialogs.break_dialog</action>
+            </phrase>
+            <phrase id="40">
+                <text>pb_soldier_oleynik_meet_40</text>
+                <has_info>pro_actor_give_spez_razia</has_info>
+                <next>41</next>
+            </phrase>
+            <phrase id="41">
+                <text>pb_soldier_oleynik_meet_41</text>
+                <action>dialogs_perevalochnaya_baza.pb_out_quest_materials_wire</action>
+                <action>dialogs.break_dialog</action>
+                <give_info>pro_actor_give_materials_wire</give_info>
+                <give_info>pro_actor_spez_razia_and_wire_give</give_info>
+            </phrase>
+            <phrase id="14">
+                <text>pb_soldier_oleynik_meet_14</text>
+                <next>15</next>
+            </phrase>
+            <phrase id="23">
+                <text>pb_soldier_oleynik_meet_23</text>
+                <dont_has_info>pro_actor_give_materials_wire</dont_has_info>
+                <give_info>pro_actor_give_spez_razia</give_info>
+                <next>25</next>
+            </phrase>
+            <phrase id="5">
+                <text>pb_soldier_oleynik_meet_5</text>
+                <next>7</next>
+            </phrase>
+            <phrase id="30">
+                <text>pb_soldier_oleynik_meet_30</text>
+                <action>dialogs.break_dialog</action>
+            </phrase>
+            <phrase id="8">
+                <text>pb_soldier_oleynik_meet_8</text>
+                <action>dialogs.break_dialog</action>
+                <action>dialogs_perevalochnaya_baza.find_razya_to_rezak_quest</action>
+                <give_info>rezak_quest_give</give_info>
+            </phrase>
+            <phrase id="44">
+                <text>pb_soldier_oleynik_meet_44</text>
+            </phrase>
+            <phrase id="46">
+                <text>pb_soldier_oleynik_meet_46</text>
+                <next>47</next>
+            </phrase>
+            <phrase id="47">
+                <text>pb_soldier_oleynik_meet_47</text>
+                <next>48</next>
+            </phrase>
+            <phrase id="48">
+                <text>pb_soldier_oleynik_meet_48</text>
+                <next>49</next>
+            </phrase>
+            <phrase id="49">
+                <text>pb_soldier_oleynik_meet_49</text>
+                <action>dialogs.break_dialog</action>
+                <give_info>rezak_to_razia_quest_done</give_info>
+            </phrase>
+            <phrase id="45">
+                <text />
+                <dont_has_info>rezak_to_razia_quest_done</dont_has_info>
+                <has_info>pro_actor_wait_twenty_minut</has_info>
+                <next>46</next>
+            </phrase>
+            <phrase id="28">
+                <text />
+                <dont_has_info>quest_found_padalshik_done</dont_has_info>
+                <has_info>perevalochnaya_lutiy_meet_to_zombied_done</has_info>
+                <next>29</next>
+            </phrase>
+            <phrase id="31">
+                <text />
+                <has_info>rezak_to_razia_quest_done</has_info>
+                <next>32</next>
+                <next>33</next>
+                <next>34</next>
+            </phrase>
+            <phrase id="43">
+                <text />
+                <dont_has_info>pro_actor_wait_twenty_minut</dont_has_info>
+                <has_info>pro_actor_spez_razia_and_wire_give</has_info>
+                <next>44</next>
+            </phrase>
+            <phrase id="32">
+                <text>pb_soldier_oleynik_meet_32</text>
+            </phrase>
+            <phrase id="2">
+                <text>pb_soldier_oleynik_meet_2</text>
+                <next>3</next>
+            </phrase>
+            <phrase id="33">
+                <text>pb_soldier_oleynik_meet_33</text>
+            </phrase>
+            <phrase id="3">
+                <text>pb_soldier_oleynik_meet_3</text>
+                <next>4</next>
+            </phrase>
+            <phrase id="34">
+                <text>pb_soldier_oleynik_meet_34</text>
+            </phrase>
+            <phrase id="0">
+                <text />
+                <next>1</next>
+                <next>11</next>
+                <next>17</next>
+                <next>28</next>
+                <next>31</next>
+                <next>43</next>
+                <next>45</next>
+            </phrase>
+            <phrase id="1">
+                <text />
+                <dont_has_info>rezak_quest_abort</dont_has_info>
+                <dont_has_info>rezak_quest_give</dont_has_info>
+                <has_info>quest_found_padalshik_done</has_info>
+                <next>2</next>
+            </phrase>
+        </phrase_list>
+    </dialog>
+    <dialog id="pb_soldier_oleynik_meet_final">
+        <phrase_list>
+            <phrase id="2">
+                <text>pb_soldier_oleynik_meet_final_2</text>
+            </phrase>
+            <phrase id="3">
+                <text>pb_soldier_oleynik_meet_final_3</text>
+            </phrase>
+            <phrase id="4">
+                <text>pb_soldier_oleynik_meet_final_4</text>
+            </phrase>
+            <phrase id="0">
+                <text />
+                <next>1</next>
+            </phrase>
+            <phrase id="1">
+                <text />
+                <next>2</next>
+                <next>3</next>
+                <next>4</next>
+            </phrase>
+        </phrase_list>
+    </dialog>
+    <dialog id="pb_soldier_oleynik_wounded">
+        <phrase_list>
+            <phrase id="10">
+                <text>pb_soldier_oleynik_wounded_10</text>
+                <next>8</next>
+                <next>9</next>
+            </phrase>
+            <phrase id="11">
+                <text>pb_soldier_oleynik_wounded_11</text>
+                <next>12</next>
+            </phrase>
+            <phrase id="12">
+                <text>pb_soldier_oleynik_wounded_12</text>
+                <next>13</next>
+            </phrase>
+            <phrase id="14">
+                <text>pb_soldier_oleynik_wounded_14</text>
+                <next>15</next>
+            </phrase>
+            <phrase id="15">
+                <text>pb_soldier_oleynik_wounded_15</text>
+                <next>16</next>
+            </phrase>
+            <phrase id="16">
+                <text>pb_soldier_oleynik_wounded_16</text>
+                <next>17</next>
+            </phrase>
+            <phrase id="21">
+                <text />
+                <dont_has_info>pro_actor_meet_soldier_done</dont_has_info>
+                <has_info>pro_soldier_oleynik_eat_medkit</has_info>
+                <next>11</next>
+            </phrase>
+            <phrase id="9">
+                <text>pb_soldier_oleynik_wounded_9</text>
+                <action>dialogs.break_dialog</action>
+                <give_info>pro_soldier_oleynik_not_give_medkit</give_info>
+            </phrase>
+            <phrase id="7">
+                <text>pb_soldier_oleynik_wounded_7</text>
+                <give_info>pro_soldier_oleynik_not_give_medkit</give_info>
+                <next>8</next>
+                <next>9</next>
+            </phrase>
+            <phrase id="3">
+                <text>pb_soldier_oleynik_wounded_3</text>
+                <next>4</next>
+            </phrase>
+            <phrase id="4">
+                <text>pb_soldier_oleynik_wounded_4</text>
+                <next>5</next>
+            </phrase>
+            <phrase id="5">
+                <text>pb_soldier_oleynik_wounded_5</text>
+                <next>6</next>
+            </phrase>
+            <phrase id="13">
+                <text>pb_soldier_oleynik_wounded_13</text>
+                <next>14</next>
+            </phrase>
+            <phrase id="20">
+                <text>pb_soldier_oleynik_wounded_20</text>
+                <action>dialogs.break_dialog</action>
+                <give_info>pro_actor_meet_soldier_done</give_info>
+            </phrase>
+            <phrase id="23">
+                <text>pb_soldier_oleynik_wounded_23</text>
+            </phrase>
+            <phrase id="22">
+                <text />
+                <has_info>pro_actor_meet_soldier_done</has_info>
+                <next>23</next>
+            </phrase>
+            <phrase id="6">
+                <text>pb_soldier_oleynik_wounded_6</text>
+                <next>7</next>
+            </phrase>
+            <phrase id="18">
+                <text>pb_soldier_oleynik_wounded_18</text>
+                <action>dialogs.break_dialog</action>
+                <give_info>pro_actor_meet_soldier_done</give_info>
+            </phrase>
+            <phrase id="17">
+                <text>pb_soldier_oleynik_wounded_17</text>
+                <next>18</next>
+            </phrase>
+            <phrase id="8">
+                <text>pb_soldier_oleynik_wounded_8</text>
+                <precondition>dialogs.actor_have_medkit</precondition>
+                <action>dialogs_zaton.zat_b53_transfer_medkit_to_npc</action>
+                <action>dialogs.break_dialog</action>
+                <give_info>pro_soldier_oleynik_eat_medkit</give_info>
+            </phrase>
+            <phrase id="2">
+                <text />
+                <dont_has_info>pro_soldier_oleynik_eat_medkit</dont_has_info>
+                <give_info>pro_soldier_oleynik_dialog_survive_start</give_info>
+                <has_info>pro_soldier_oleynik_not_give_medkit</has_info>
+                <next>10</next>
+            </phrase>
+            <phrase id="0">
+                <text />
+                <next>1</next>
+                <next>2</next>
+                <next>21</next>
+                <next>22</next>
+            </phrase>
+            <phrase id="1">
+                <text />
+                <dont_has_info>pro_soldier_oleynik_eat_medkit</dont_has_info>
+                <dont_has_info>pro_soldier_oleynik_not_give_medkit</dont_has_info>
+                <give_info>pro_soldier_oleynik_meet_dialog</give_info>
+                <give_info>pro_soldier_oleynik_dialog_survive_start</give_info>
+                <next>3</next>
+            </phrase>
+        </phrase_list>
+    </dialog>
+    <dialog id="pb_duty_tachenko_start_dialog">
+        <phrase_list>
+            <phrase id="6">
+                <text>pb_duty_tachenko_start_dialog_6</text>
+                <next>7</next>
+            </phrase>
+            <phrase id="4">
+                <text>pb_duty_tachenko_start_dialog_4</text>
+                <next>5</next>
+            </phrase>
+            <phrase id="2">
+                <text>pb_duty_tachenko_start_dialog_2</text>
+                <next>3</next>
+            </phrase>
+            <phrase id="28">
+                <text />
+                <has_info>pro_quest_duty_weapon_found_give</has_info>
+                <next>29</next>
+            </phrase>
+            <phrase id="29">
+                <text>pb_duty_tachenko_start_dialog_29</text>
+            </phrase>
+            <phrase id="1">
+                <text />
+                <dont_has_info>pro_duty_tachenko_start_dialog_meet</dont_has_info>
+                <next>2</next>
+            </phrase>
+            <phrase id="27">
+                <text>pb_duty_tachenko_start_dialog_27</text>
+                <action>dialogs.break_dialog</action>
+                <action>dialogs_perevalochnaya_baza.pb_found_duty_weapon_quest</action>
+                <give_info>pro_quest_duty_weapon_found_give</give_info>
+            </phrase>
+            <phrase id="5">
+                <text>pb_duty_tachenko_start_dialog_5</text>
+                <next>6</next>
+            </phrase>
+            <phrase id="3">
+                <text>pb_duty_tachenko_start_dialog_3</text>
+                <next>4</next>
+            </phrase>
+            <phrase id="18">
+                <text />
+                <dont_has_info>pro_quest_duty_weapon_found_give</dont_has_info>
+                <has_info>pro_first_quest_duty_tachenko_give</has_info>
+                <next>19</next>
+            </phrase>
+            <phrase id="10">
+                <text />
+                <dont_has_info>pro_first_quest_duty_tachenko_give</dont_has_info>
+                <has_info>pro_lutiy_scene_final_base_meet</has_info>
+                <next>11</next>
+            </phrase>
+            <phrase id="8">
+                <text />
+                <dont_has_info>pro_lutiy_scene_final_base_meet</dont_has_info>
+                <has_info>pro_duty_tachenko_start_dialog_meet</has_info>
+                <next>9</next>
+            </phrase>
+            <phrase id="11">
+                <text>pb_duty_tachenko_start_dialog_11</text>
+                <next>12</next>
+            </phrase>
+            <phrase id="12">
+                <text>pb_duty_tachenko_start_dialog_12</text>
+                <next>13</next>
+            </phrase>
+            <phrase id="13">
+                <text>pb_duty_tachenko_start_dialog_13</text>
+                <next>14</next>
+                <next>15</next>
+            </phrase>
+            <phrase id="14">
+                <text>pb_duty_tachenko_start_dialog_14</text>
+                <action>dialogs.break_dialog</action>
+                <action>dialogs_perevalochnaya_baza.pb_find_food_for_duty_quest</action>
+                <give_info>pro_first_quest_duty_tachenko_give</give_info>
+            </phrase>
+            <phrase id="15">
+                <text>pb_duty_tachenko_start_dialog_15</text>
+                <action>dialogs.break_dialog</action>
+                <give_info>pro_first_quest_duty_tachenko_gone</give_info>
+            </phrase>
+            <phrase id="16">
+                <text />
+                <dont_has_info>pro_first_quest_duty_tachenko_give</dont_has_info>
+                <dont_has_info>pro_first_quest_duty_tachenko_gone</dont_has_info>
+                <has_info>pro_first_quest_duty_tachenko_gone</has_info>
+                <next>17</next>
+            </phrase>
+            <phrase id="17">
+                <text>pb_duty_tachenko_start_dialog_17</text>
+                <next>14</next>
+                <next>15</next>
+            </phrase>
+            <phrase id="20">
+                <text>pb_duty_tachenko_start_dialog_20</text>
+                <precondition>dialogs_perevalochnaya_baza.pb_find_food_for_duty_proverka</precondition>
+                <action>dialogs_perevalochnaya_baza.pb_give_food_for_duty</action>
+                <give_info>pro_first_quest_duty_tachenko_done</give_info>
+                <next>21</next>
+            </phrase>
+            <phrase id="19">
+                <text>pb_duty_tachenko_start_dialog_19</text>
+                <next>20</next>
+                <next>22</next>
+            </phrase>
+            <phrase id="21">
+                <text>pb_duty_tachenko_start_dialog_21</text>
+                <next>23</next>
+            </phrase>
+            <phrase id="23">
+                <text>pb_duty_tachenko_start_dialog_23</text>
+                <next>24</next>
+            </phrase>
+            <phrase id="24">
+                <text>pb_duty_tachenko_start_dialog_24</text>
+                <next>25</next>
+            </phrase>
+            <phrase id="25">
+                <text>pb_duty_tachenko_start_dialog_25</text>
+                <next>26</next>
+            </phrase>
+            <phrase id="26">
+                <text>pb_duty_tachenko_start_dialog_26</text>
+                <next>27</next>
+            </phrase>
+            <phrase id="22">
+                <text>pb_duty_tachenko_start_dialog_22</text>
+                <action>dialogs.break_dialog</action>
+            </phrase>
+            <phrase id="7">
+                <text>pb_duty_tachenko_start_dialog_7</text>
+                <action>dialogs.break_dialog</action>
+                <give_info>pro_duty_tachenko_start_dialog_meet</give_info>
+            </phrase>
+            <phrase id="0">
+                <text />
+                <next>1</next>
+                <next>8</next>
+                <next>10</next>
+                <next>16</next>
+                <next>18</next>
+                <next>28</next>
+            </phrase>
+            <phrase id="9">
+                <text>pb_duty_tachenko_start_dialog_9</text>
+            </phrase>
+        </phrase_list>
+    </dialog>
+    <dialog id="pb_rezak_first_meet">
+        <phrase_list>
+            <phrase id="5">
+                <text>pb_rezak_first_meet_5</text>
+                <next>6</next>
+            </phrase>
+            <phrase id="6">
+                <text>pb_rezak_first_meet_6</text>
+                <next>7</next>
+            </phrase>
+            <phrase id="19">
+                <text>pb_rezak_first_meet_19</text>
+                <next>12</next>
+                <next>13</next>
+                <next>15</next>
+            </phrase>
+            <phrase id="7">
+                <text>pb_rezak_first_meet_7</text>
+                <action>dialogs.break_dialog</action>
+                <give_info>pro_rezak_give_koordinat_inventory</give_info>
+                <action>dialogs_perevalochnaya_baza.pb_spawn_actor_inventory</action>
+            </phrase>
+            <phrase id="13">
+                <text>pb_rezak_first_meet_13</text>
+                <dont_has_info>pro_rezak_meet_about_anomaly</dont_has_info>
+                <give_info>pro_rezak_meet_about_anomaly</give_info>
+                <next>18</next>
+            </phrase>
+            <phrase id="17">
+                <text>pb_rezak_first_meet_17</text>
+                <next>13</next>
+                <next>14</next>
+                <next>15</next>
+            </phrase>
+            <phrase id="2">
+                <text>pb_rezak_first_meet_2</text>
+                <next>3</next>
+            </phrase>
+            <phrase id="3">
+                <text>pb_rezak_first_meet_3</text>
+                <next>4</next>
+            </phrase>
+            <phrase id="15">
+                <text>pb_rezak_first_meet_15</text>
+                <action>dialogs.break_dialog</action>
+            </phrase>
+            <phrase id="14">
+                <text>pb_rezak_first_meet_14</text>
+                <dont_has_info>pro_rezak_meet_about_fast</dont_has_info>
+                <give_info>pro_rezak_meet_about_fast</give_info>
+                <next>19</next>
+            </phrase>
+            <phrase id="18">
+                <text>pb_rezak_first_meet_18</text>
+                <next>12</next>
+                <next>14</next>
+                <next>15</next>
+            </phrase>
+            <phrase id="4">
+                <text>pb_rezak_first_meet_4</text>
+                <next>5</next>
+            </phrase>
+            <phrase id="1">
+                <text />
+                <dont_has_info>pro_rezak_give_koordinat_inventory</dont_has_info>
+                <next>2</next>
+            </phrase>
+            <phrase id="0">
+                <text />
+                <next>1</next>
+                <next>8</next>
+            </phrase>
+            <phrase id="16">
+                <text>pb_rezak_first_meet_16</text>
+                <action>dialogs.break_dialog</action>
+            </phrase>
+            <phrase id="8">
+                <text />
+                <has_info>pro_rezak_give_koordinat_inventory</has_info>
+                <next>9</next>
+            </phrase>
+            <phrase id="9">
+                <text>pb_rezak_first_meet_9</text>
+                <next>10</next>
+                <next>16</next>
+            </phrase>
+            <phrase id="10">
+                <text>pb_rezak_first_meet_10</text>
+                <next>11</next>
+            </phrase>
+            <phrase id="12">
+                <text>pb_rezak_first_meet_12</text>
+                <dont_has_info>pro_rezak_meet_about_all</dont_has_info>
+                <give_info>pro_rezak_meet_about_all</give_info>
+                <next>17</next>
+            </phrase>
+            <phrase id="11">
+                <text>pb_rezak_first_meet_11</text>
+                <next>12</next>
+                <next>13</next>
+                <next>14</next>
+                <next>15</next>
+            </phrase>
+        </phrase_list>
+    </dialog>
+    <dialog id="pb_quest_line_snake_water_clean">
+        <precondition>dialogs_perevalochnaya_baza.pb_actor_flask_empty_check</precondition>
+        <has_info>pro_quest_from_anomaly_plant_complete</has_info>
+        <phrase_list>
+            <phrase id="0">
+                <text>pb_quest_line_snake_water_clean_0</text>
+                <next>1</next>
+            </phrase>
+            <phrase id="1">
+                <text>pb_quest_line_snake_water_clean_1</text>
+                <next>2</next>
+            </phrase>
+            <phrase id="2">
+                <text>pb_quest_line_snake_water_clean_2</text>
+                <action>dialogs_perevalochnaya_baza.pb_give_flask_empty</action>
+                <next>3</next>
+            </phrase>
+            <phrase id="3">
+                <text>pb_quest_line_snake_water_clean_3</text>
+                <next>4</next>
+            </phrase>
+            <phrase id="4">
+                <text>pb_quest_line_snake_water_clean_4</text>
+                <action>dialogs.break_dialog</action>
+                <give_info>pro_actor_give_flask_empty</give_info>
+            </phrase>
+        </phrase_list>
+    </dialog>
+    <dialog id="pb_quest_line_snake_start">
+        <phrase_list>
+            <phrase id="30">
+                <text>pb_quest_line_snake_start_30</text>
+                <action>dialogs.break_dialog</action>
+            </phrase>
+            <phrase id="17">
+                <text>pb_quest_line_snake_start_17</text>
+                <next>18</next>
+            </phrase>
+            <phrase id="19">
+                <text>pb_quest_line_snake_start_19</text>
+                <next>20</next>
+            </phrase>
+            <phrase id="18">
+                <text>pb_quest_line_snake_start_18</text>
+                <next>19</next>
+            </phrase>
+            <phrase id="22">
+                <text>pb_quest_line_snake_start_22</text>
+                <action>dialogs.break_dialog</action>
+                <give_info>pro_actor_not_ready_go_to_plant</give_info>
+            </phrase>
+            <phrase id="24">
+                <text>pb_quest_line_snake_start_24</text>
+                <next>15</next>
+            </phrase>
+            <phrase id="15">
+                <text>pb_quest_line_snake_start_15</text>
+                <next>16</next>
+            </phrase>
+            <phrase id="14">
+                <text>pb_quest_line_snake_start_14</text>
+            </phrase>
+            <phrase id="1">
+                <text />
+                <dont_has_info>perevalochnaya_baza_start_quest_zombied_kill_done</dont_has_info>
+                <has_info>perevalochnaya_lutiy_meet_to_zombied_done</has_info>
+                <next>2</next>
+            </phrase>
+            <phrase id="3">
+                <text>pb_quest_line_snake_start_3</text>
+                <action>dialogs.break_dialog</action>
+            </phrase>
+            <phrase id="16">
+                <text>pb_quest_line_snake_start_16</text>
+                <next>17</next>
+            </phrase>
+            <phrase id="20">
+                <text>pb_quest_line_snake_start_20</text>
+                <next>21</next>
+                <next>22</next>
+            </phrase>
+            <phrase id="21">
+                <text>pb_quest_line_snake_start_21</text>
+                <action>dialogs.break_dialog</action>
+                <action>dialogs_perevalochnaya_baza.pb_snake_anomy_plant_quest</action>
+                <give_info>pro_actor_ready_go_to_plant</give_info>
+            </phrase>
+            <phrase id="25">
+                <text />
+                <dont_has_info>pro_quest_from_anomaly_plant_complete</dont_has_info>
+                <has_info>pro_actor_go_to_plant_complete</has_info>
+                <next>26</next>
+            </phrase>
+            <phrase id="23">
+                <text />
+                <dont_has_info>pro_actor_ready_go_to_plant</dont_has_info>
+                <dont_has_info>pro_actor_not_ready_go_to_plant</dont_has_info>
+                <has_info>pro_go_to_talk_from_snake</has_info>
+                <next>24</next>
+            </phrase>
+            <phrase id="2">
+                <text>pb_quest_line_snake_start_2</text>
+                <next>3</next>
+            </phrase>
+            <phrase id="7">
+                <text>pb_quest_line_snake_start_7</text>
+                <next>8</next>
+                <next>42</next>
+            </phrase>
+            <phrase id="5">
+                <text />
+                <dont_has_info>perevalochnaya_baza_snake_meet_end</dont_has_info>
+                <has_info>pb_hunt_to_flash_start</has_info>
+                <next>6</next>
+            </phrase>
+            <phrase id="6">
+                <text>pb_quest_line_snake_start_6</text>
+                <next>7</next>
+            </phrase>
+            <phrase id="10">
+                <text>pb_quest_line_snake_start_10</text>
+                <next>13</next>
+            </phrase>
+            <phrase id="13">
+                <text>pb_quest_line_snake_start_13</text>
+                <action>dialogs.break_dialog</action>
+                <give_info>perevalochnaya_baza_snake_meet_end</give_info>
+            </phrase>
+            <phrase id="4">
+                <text />
+                <dont_has_info>pb_hunt_to_flash_start</dont_has_info>
+                <dont_has_info>pro_go_to_talk_from_snake</dont_has_info>
+                <has_info>perevalochnaya_baza_start_quest_zombied_kill_done</has_info>
+                <next>14</next>
+            </phrase>
+            <phrase id="33">
+                <text>pb_quest_line_snake_start_33</text>
+            </phrase>
+            <phrase id="42">
+                <text>pb_quest_line_snake_start_42</text>
+                <has_info>pro_actor_give_flask_empty</has_info>
+                <next>50</next>
+            </phrase>
+            <phrase id="9">
+                <text>pb_quest_line_snake_start_9</text>
+                <next>10</next>
+            </phrase>
+            <phrase id="8">
+                <text>pb_quest_line_snake_start_8</text>
+                <dont_has_info>pro_actor_give_flask_empty</dont_has_info>
+                <next>9</next>
+            </phrase>
+            <phrase id="27">
+                <text />
+                <dont_has_info>pro_actor_ready_go_to_plant</dont_has_info>
+                <has_info>pro_actor_not_ready_go_to_plant</has_info>
+                <next>28</next>
+            </phrase>
+            <phrase id="28">
+                <text>pb_quest_line_snake_start_28</text>
+                <next>29</next>
+                <next>30</next>
+            </phrase>
+            <phrase id="29">
+                <text>pb_quest_line_snake_start_29</text>
+                <action>dialogs.break_dialog</action>
+                <action>dialogs_perevalochnaya_baza.pb_snake_anomy_plant_quest</action>
+                <give_info>pro_actor_ready_go_to_plant</give_info>
+            </phrase>
+            <phrase id="26">
+                <text>pb_quest_line_snake_start_26</text>
+                <next>31</next>
+                <next>34</next>
+            </phrase>
+            <phrase id="31">
+                <text>pb_quest_line_snake_start_31</text>
+                <precondition>dialogs_perevalochnaya_baza.pb_actor_flask_not_empty_check</precondition>
+                <action>dialogs.break_dialog</action>
+                <give_info>pro_quest_from_anomaly_plant_complete</give_info>
+            </phrase>
+            <phrase id="34">
+                <text>pb_quest_line_snake_start_34</text>
+                <precondition>dialogs_perevalochnaya_baza.pb_actor_flask_empty_check</precondition>
+                <next>35</next>
+            </phrase>
+            <phrase id="35">
+                <text>pb_quest_line_snake_start_35</text>
+                <next>36</next>
+            </phrase>
+            <phrase id="36">
+                <text>pb_quest_line_snake_start_36</text>
+                <action>dialogs_perevalochnaya_baza.pb_give_flask_empty</action>
+                <next>37</next>
+            </phrase>
+            <phrase id="37">
+                <text>pb_quest_line_snake_start_37</text>
+                <next>38</next>
+            </phrase>
+            <phrase id="38">
+                <text>pb_quest_line_snake_start_38</text>
+                <action>dialogs.break_dialog</action>
+                <give_info>pro_quest_from_anomaly_plant_complete</give_info>
+                <give_info>pro_actor_give_flask_empty</give_info>
+            </phrase>
+            <phrase id="49">
+                <text>pb_quest_line_snake_start_49</text>
+                <action>dialogs.break_dialog</action>
+                <disable_info>pro_snake_not_go_to_flesh</disable_info>
+                <give_info>perevalochnaya_baza_snake_meet_end</give_info>
+            </phrase>
+            <phrase id="48">
+                <text>pb_quest_line_snake_start_48</text>
+                <next>49</next>
+            </phrase>
+            <phrase id="47">
+                <text>pb_quest_line_snake_start_47</text>
+                <give_info>pro_actor_take_flask_water_done</give_info>
+                <give_info>pro_snake_clean_water_dialog_done</give_info>
+                <next>48</next>
+            </phrase>
+            <phrase id="46">
+                <text>pb_quest_line_snake_start_46</text>
+                <action>dialogs_perevalochnaya_baza.pb_give_flask_to_actor</action>
+                <next>47</next>
+            </phrase>
+            <phrase id="32">
+                <text />
+                <dont_has_info>pb_hunt_to_flash_start</dont_has_info>
+                <dont_has_info>pro_actor_go_to_water_flask</dont_has_info>
+                <has_info>pro_quest_from_anomaly_plant_complete</has_info>
+                <next>33</next>
+            </phrase>
+            <phrase id="45">
+                <text />
+                <dont_has_info>perevalochnaya_baza_snake_meet_end</dont_has_info>
+                <has_info>pro_actor_go_to_water_flask</has_info>
+                <has_info>pro_snake_not_go_to_flesh</has_info>
+                <next>46</next>
+            </phrase>
+            <phrase id="50">
+                <text>pb_quest_line_snake_start_50</text>
+                <action>dialogs.break_dialog</action>
+                <give_info>pro_snake_not_go_to_flesh</give_info>
+            </phrase>
+            <phrase id="43">
+                <text />
+                <dont_has_info>pro_actor_go_to_water_flask</dont_has_info>
+                <dont_has_info>perevalochnaya_baza_snake_meet_end</dont_has_info>
+                <has_info>pro_snake_not_go_to_flesh</has_info>
+                <next>44</next>
+            </phrase>
+            <phrase id="39">
+                <text />
+                <dont_has_info>pro_actor_take_flask_water_done</dont_has_info>
+                <dont_has_info>pro_snake_not_go_to_flesh</dont_has_info>
+                <has_info>pro_actor_go_to_water_flask</has_info>
+                <next>40</next>
+            </phrase>
+            <phrase id="51">
+                <text>pb_quest_line_snake_start_51</text>
+                <action>dialogs.break_dialog</action>
+            </phrase>
+            <phrase id="0">
+                <text />
+                <next>1</next>
+                <next>4</next>
+                <next>23</next>
+                <next>25</next>
+                <next>27</next>
+                <next>5</next>
+                <next>32</next>
+                <next>39</next>
+                <next>43</next>
+                <next>45</next>
+                <next>11</next>
+                <next>52</next>
+            </phrase>
+            <phrase id="44">
+                <text>pb_quest_line_snake_start_44</text>
+                <next>51</next>
+            </phrase>
+            <phrase id="40">
+                <text>pb_quest_line_snake_start_40</text>
+                <action>dialogs_perevalochnaya_baza.pb_give_flask_to_actor</action>
+                <next>41</next>
+            </phrase>
+            <phrase id="53">
+                <text>pb_quest_line_snake_start_53</text>
+                <action>dialogs_perevalochnaya_baza.pb_give_flask_to_actor</action>
+                <next>54</next>
+            </phrase>
+            <phrase id="41">
+                <text>pb_quest_line_snake_start_41</text>
+                <action>dialogs.break_dialog</action>
+                <give_info>pro_actor_take_flask_water_done</give_info>
+                <give_info>pro_snake_clean_water_dialog_done</give_info>
+            </phrase>
+            <phrase id="52">
+                <text />
+                <dont_has_info>pro_actor_take_flask_water_done</dont_has_info>
+                <has_info>pro_actor_go_to_water_flask</has_info>
+                <has_info>perevalochnaya_baza_snake_meet_end</has_info>
+                <next>53</next>
+            </phrase>
+            <phrase id="54">
+                <text>pb_quest_line_snake_start_54</text>
+                <action>dialogs.break_dialog</action>
+                <give_info>pro_actor_take_flask_water_done</give_info>
+                <give_info>pro_snake_clean_water_dialog_done</give_info>
+            </phrase>
+            <phrase id="11">
+                <text />
+                <dont_has_info>pro_actor_go_to_water_flask</dont_has_info>
+                <has_info>perevalochnaya_baza_snake_meet_end</has_info>
+                <next>12</next>
+            </phrase>
+            <phrase id="12">
+                <text>pb_quest_line_snake_start_12</text>
+            </phrase>
+        </phrase_list>
+    </dialog>
+    <dialog id="pb_lesnik_first_meet_start">
+        <phrase_list>
+            <phrase id="1">
+                <text>pb_lesnik_first_meet_start_1</text>
+                <next>2</next>
+            </phrase>
+            <phrase id="2">
+                <text>pb_lesnik_first_meet_start_2</text>
+                <next>3</next>
+            </phrase>
+            <phrase id="4">
+                <text>pb_lesnik_first_meet_start_4</text>
+                <next>5</next>
+            </phrase>
+            <phrase id="5">
+                <text>pb_lesnik_first_meet_start_5</text>
+                <next>6</next>
+            </phrase>
+            <phrase id="3">
+                <text>pb_lesnik_first_meet_start_3</text>
+                <next>4</next>
+            </phrase>
+            <phrase id="6">
+                <text>pb_lesnik_first_meet_start_6</text>
+                <next>7</next>
+            </phrase>
+            <phrase id="7">
+                <text>pb_lesnik_first_meet_start_7</text>
+                <action>dialogs.break_dialog</action>
+                <give_info>pro_lesnik_first_dialog_meet_done</give_info>
+            </phrase>
+            <phrase id="0">
+                <text>pb_lesnik_first_meet_start_0</text>
+                <next>1</next>
+            </phrase>
+        </phrase_list>
+    </dialog>
+    <dialog id="pb_lutiy_scene_final_base_after_quest">
+        <phrase_list>
+            <phrase id="16">
+                <text>pb_lutiy_scene_final_base_after_quest_16</text>
+                <next>17</next>
+            </phrase>
+            <phrase id="17">
+                <text>pb_lutiy_scene_final_base_after_quest_17</text>
+                <next>18</next>
+            </phrase>
+            <phrase id="15">
+                <text>pb_lutiy_scene_final_base_after_quest_15</text>
+                <next>16</next>
+            </phrase>
+            <phrase id="18">
+                <text>pb_lutiy_scene_final_base_after_quest_18</text>
+                <next>19</next>
+            </phrase>
+            <phrase id="1">
+                <text />
+                <dont_has_info>pro_lutiy_scene_final_base_meet</dont_has_info>
+                <next>2</next>
+            </phrase>
+            <phrase id="14">
+                <text>pb_lutiy_scene_final_base_after_quest_14</text>
+                <next>15</next>
+            </phrase>
+            <phrase id="2">
+                <text>pb_lutiy_scene_final_base_after_quest_2</text>
+                <next>3</next>
+            </phrase>
+            <phrase id="3">
+                <text>pb_lutiy_scene_final_base_after_quest_3</text>
+                <next>4</next>
+            </phrase>
+            <phrase id="6">
+                <text>pb_lutiy_scene_final_base_after_quest_6</text>
+                <next>7</next>
+            </phrase>
+            <phrase id="7">
+                <text>pb_lutiy_scene_final_base_after_quest_7</text>
+                <next>8</next>
+            </phrase>
+            <phrase id="8">
+                <text>pb_lutiy_scene_final_base_after_quest_8</text>
+                <next>9</next>
+            </phrase>
+            <phrase id="9">
+                <text>pb_lutiy_scene_final_base_after_quest_9</text>
+                <next>10</next>
+            </phrase>
+            <phrase id="26">
+                <text>pb_lutiy_scene_final_base_after_quest_26</text>
+                <next>27</next>
+            </phrase>
+            <phrase id="27">
+                <text>pb_lutiy_scene_final_base_after_quest_27</text>
+                <next>28</next>
+            </phrase>
+            <phrase id="10">
+                <text>pb_lutiy_scene_final_base_after_quest_10</text>
+                <next>11</next>
+            </phrase>
+            <phrase id="24">
+                <text>pb_lutiy_scene_final_base_after_quest_24</text>
+                <next>25</next>
+            </phrase>
+            <phrase id="25">
+                <text>pb_lutiy_scene_final_base_after_quest_25</text>
+                <next>26</next>
+            </phrase>
+            <phrase id="32">
+                <text>pb_lutiy_scene_final_base_after_quest_32</text>
+                <action>dialogs.break_dialog</action>
+            </phrase>
+            <phrase id="31">
+                <text>pb_lutiy_scene_final_base_after_quest_31</text>
+                <next>32</next>
+            </phrase>
+            <phrase id="11">
+                <text>pb_lutiy_scene_final_base_after_quest_11</text>
+                <action>dialogs.break_dialog</action>
+                <give_info>pro_lutiy_scene_final_base_meet</give_info>
+            </phrase>
+            <phrase id="21">
+                <text />
+                <has_info>pro_lutiy_final_end_line_meet_done</has_info>
+                <next>22</next>
+            </phrase>
+            <phrase id="22">
+                <text>pb_lutiy_scene_final_base_after_quest_22</text>
+            </phrase>
+            <phrase id="36">
+                <text>pb_lutiy_scene_final_base_after_quest_36</text>
+                <next>37</next>
+            </phrase>
+            <phrase id="37">
+                <text>pb_lutiy_scene_final_base_after_quest_37</text>
+                <next>38</next>
+            </phrase>
+            <phrase id="4">
+                <text>pb_lutiy_scene_final_base_after_quest_4</text>
+                <next>5</next>
+            </phrase>
+            <phrase id="23">
+                <text />
+                <dont_has_info>pro_actor_ready_to_give_medicament</dont_has_info>
+                <has_info>pro_lutiy_scene_final_base_meet</has_info>
+                <next>24</next>
+            </phrase>
+            <phrase id="13">
+                <text>pb_lutiy_scene_final_base_after_quest_13</text>
+                <next>14</next>
+            </phrase>
+            <phrase id="12">
+                <text />
+                <dont_has_info>pro_lutiy_final_end_line_meet_done</dont_has_info>
+                <has_info>pro_final_dialog_lutiy_about_epidemy_done</has_info>
+                <next>13</next>
+            </phrase>
+            <phrase id="35">
+                <text>pb_lutiy_scene_final_base_after_quest_35</text>
+                <next>36</next>
+            </phrase>
+            <phrase id="34">
+                <text>pb_lutiy_scene_final_base_after_quest_34</text>
+                <next>35</next>
+            </phrase>
+            <phrase id="33">
+                <text />
+                <dont_has_info>pro_final_dialog_lutiy_about_epidemy_done</dont_has_info>
+                <has_info>pro_scene_epidemy_two_started</has_info>
+                <next>34</next>
+            </phrase>
+            <phrase id="5">
+                <text>pb_lutiy_scene_final_base_after_quest_5</text>
+                <next>6</next>
+            </phrase>
+            <phrase id="20">
+                <text>pb_lutiy_scene_final_base_after_quest_20</text>
+                <action>dialogs.break_dialog</action>
+                <action>dialogs_perevalochnaya_baza.pb_finality_signal_founded_quest</action>
+                <give_info>pro_lutiy_final_end_line_meet_done</give_info>
+            </phrase>
+            <phrase id="41">
+                <text>pb_lutiy_scene_final_base_after_quest_41</text>
+                <action>dialogs.break_dialog</action>
+                <give_info>pro_final_dialog_lutiy_about_epidemy_done</give_info>
+            </phrase>
+            <phrase id="28">
+                <text>pb_lutiy_scene_final_base_after_quest_28</text>
+                <next>29</next>
+            </phrase>
+            <phrase id="29">
+                <text>pb_lutiy_scene_final_base_after_quest_29</text>
+                <action>dialogs.break_dialog</action>
+                <give_info>pro_actor_ready_to_give_medicament</give_info>
+                <give_info>pro_dialog_lutiy_about_epidemy_done</give_info>
+            </phrase>
+            <phrase id="30">
+                <text />
+                <dont_has_info>pro_scene_epidemy_two_started</dont_has_info>
+                <has_info>pro_actor_ready_to_give_medicament</has_info>
+                <next>31</next>
+            </phrase>
+            <phrase id="0">
+                <text />
+                <next>1</next>
+                <next>23</next>
+                <next>30</next>
+                <next>33</next>
+                <next>12</next>
+                <next>21</next>
+            </phrase>
+            <phrase id="19">
+                <text>pb_lutiy_scene_final_base_after_quest_19</text>
+                <next>20</next>
+            </phrase>
+            <phrase id="39">
+                <text>pb_lutiy_scene_final_base_after_quest_39</text>
+                <next>40</next>
+            </phrase>
+            <phrase id="40">
+                <text>pb_lutiy_scene_final_base_after_quest_40</text>
+                <next>41</next>
+            </phrase>
+            <phrase id="38">
+                <text>pb_lutiy_scene_final_base_after_quest_38</text>
+                <action>dialogs_perevalochnaya_baza.pb_give_quest_dubolom_mail</action>
+                <next>39</next>
+            </phrase>
+        </phrase_list>
+    </dialog>
+    <dialog id="digst_markus_talk_to_actor">
+        <phrase_list>
+            <phrase id="1">
+                <text>digst_markus_talk_to_actor_1</text>
+                <next>2</next>
+            </phrase>
+            <phrase id="6">
+                <text>digst_markus_talk_to_actor_6</text>
+                <next>7</next>
+            </phrase>
+            <phrase id="8">
+                <text>digst_markus_talk_to_actor_8</text>
+                <next>9</next>
+            </phrase>
+            <phrase id="9">
+                <text>digst_markus_talk_to_actor_9</text>
+                <action>dialogs.break_dialog</action>
+                <action>dialogs_digger_stash.digst_stay_dont_move</action>
+                <give_info>digst_markus_go_home</give_info>
+                <give_info>pb_found_to_markus_done</give_info>
+            </phrase>
+            <phrase id="3">
+                <text>digst_markus_talk_to_actor_3</text>
+                <next>4</next>
+            </phrase>
+            <phrase id="2">
+                <text>digst_markus_talk_to_actor_2</text>
+                <next>3</next>
+            </phrase>
+            <phrase id="5">
+                <text>digst_markus_talk_to_actor_5</text>
+                <next>6</next>
+            </phrase>
+            <phrase id="4">
+                <text>digst_markus_talk_to_actor_4</text>
+                <next>5</next>
+            </phrase>
+            <phrase id="0">
+                <text>digst_markus_talk_to_actor_0</text>
+                <next>1</next>
+            </phrase>
+            <phrase id="7">
+                <text>digst_markus_talk_to_actor_7</text>
+                <next>8</next>
+            </phrase>
+        </phrase_list>
+    </dialog>
+    <dialog id="pb_shurup_start_dialog">
+        <phrase_list>
+            <phrase id="4">
+                <text>pb_shurup_start_dialog_4</text>
+            </phrase>
+            <phrase id="2">
+                <text></text>
+                <has_info>pro_first_replic_shurup_is_done</has_info>
+                <next>4</next>
+            </phrase>
+            <phrase id="6">
+                <text>pb_shurup_start_dialog_6</text>
+                <give_info>pro_first_replic_shurup_is_done</give_info>
+            </phrase>
+            <phrase id="5">
+                <text>pb_shurup_start_dialog_5</text>
+                <next>6</next>
+            </phrase>
+            <phrase id="0">
+                <text></text>
+                <next>1</next>
+                <next>2</next>
+            </phrase>
+            <phrase id="1">
+                <text></text>
+                <dont_has_info>pro_first_replic_shurup_is_done</dont_has_info>
+                <next>3</next>
+            </phrase>
+            <phrase id="3">
+                <text>pb_shurup_start_dialog_3</text>
+                <next>5</next>
+            </phrase>
+        </phrase_list>
+    </dialog>
+</game_dialogs>

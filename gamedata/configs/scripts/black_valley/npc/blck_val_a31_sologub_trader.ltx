@@ -1,0 +1,85 @@
+[logic@blck_val_a31_sologub_trader]
+suitable = {=check_npc_name(blck_val_a31_sologub_trader)} true
+prior = 200
+active = remark@blck_val_sologub
+
+[remark@blck_val_sologub]
+anim = guard_na
+target = story | actor
+on_info = {+blck_val_actor_wake_up_hutor_in} walker@sologub_go_to_actor
+combat_ignore_cond = true
+combat_ignore_keep_when_attacked = true
+invulnerable = true
+gather_items_enabled = false
+help_wounded_enabled = false
+corpse_detection_enabled = false
+meet = no_meet
+
+[walker@sologub_go_to_actor]
+path_walk = sologub_hutor_walk_1
+meet = no_meet
+combat_ignore_cond = true
+combat_ignore_keep_when_attacked = true
+gather_items_enabled = false
+help_wounded_enabled = false
+corpse_detection_enabled = false
+invulnerable = true
+on_signal = blck_val_sologub_hutor_come | {-blck_val_sologub_hutor_come} walker@go_to_zver %+blck_val_sologub_hutor_come%
+
+[walker@go_to_zver]
+path_walk = sologub_hutor_walk
+path_look = sologub_hutor_look
+on_info = {+blck_val_actor_dialog_from_sologub_end} walker@stay_in_hutor
+use_camp = false
+meet = meet@blck_val_a31_sologub
+combat_ignore_cond = true
+combat_ignore_keep_when_attacked = true
+invulnerable = true
+gather_items_enabled = false
+help_wounded_enabled = false
+corpse_detection_enabled = false
+
+[walker@stay_in_hutor]
+path_walk = sologub_hutor_1_walk
+path_look = sologub_hutor_1_look
+on_info = {=zat_b7_is_night} walker@sleep_home
+use_camp = false
+meet = meet@blck_val_a31_sologub_1
+combat_ignore_cond = true
+combat_ignore_keep_when_attacked = true
+invulnerable = false
+gather_items_enabled = false
+help_wounded_enabled = false
+corpse_detection_enabled = false
+
+[walker@sleep_home]
+path_walk = sologub_sleep_walk
+path_look = sologub_sleep_look
+on_info = {=is_day} walker@stay_in_hutor
+on_info2 = {+blck_val_bandit_shmiga_quest_meet -blck_val_dialog_stavrid_dop_action_done -blck_val_key_to_prison_first_spawn_end} %=blck_val_key_to_prison_first_spawn%
+use_camp = false
+meet = no_meet
+combat_ignore_cond = true
+combat_ignore_keep_when_attacked = true
+invulnerable = false
+gather_items_enabled = false
+help_wounded_enabled = false
+corpse_detection_enabled = false
+
+[meet@quest]
+abuse           = false
+close_anim 		= nil
+far_anim 		= nil
+far_victim 		= nil
+close_distance  = 0
+far_distance 	= 0
+close_victim = actor
+allow_break = false
+trade_enable = false
+
+[meet@blck_val_a31_sologub]:meet@quest
+use = {!actor_enemy =dist_to_actor_le(3) -blck_val_actor_dialog_from_sologub_end} self, true
+meet_dialog = blck_val_sologub_help_meet
+
+[meet@blck_val_a31_sologub_1]:meet@quest
+use = {=actor_enemy} false, true

@@ -1,0 +1,655 @@
+<w>
+
+	<!-- Background (obviously) -->
+	<pda_background x="0" y="0" width="1024" height="768" stretch="1">
+		<texture>ui_inter_pda_bg</texture>
+	</pda_background>
+
+
+	<!-- ============================================= -->
+	<!-- --------------------------- Main menu --------------------------- -->
+	<!-- ============================================= -->
+	<left_container x="32" y="55" width="162" height="332" stretch="1">
+
+		<!-- Buttons -->
+		<menu_btn_1 x="0" y="20" width="130" height="35" check_mode="0">
+			<text complex_mode="1" align="c" vert_align="c" font="letterica18">pda_main_menu_raid</text>
+			<texture>ui_inter_pda_btn</texture>
+		</menu_btn_1>
+
+		<menu_btn_2 x="0" y="60" width="130" height="35" check_mode="0">
+			<text complex_mode="1" align="c" vert_align="c" font="letterica18">pda_main_menu_find</text>
+			<texture>ui_inter_pda_btn</texture>
+		</menu_btn_2>
+
+		<menu_btn_3 x="0" y="100" width="130" height="35" check_mode="0">
+			<text complex_mode="1" align="c" vert_align="c" font="letterica18">pda_main_menu_games</text>
+			<texture>ui_inter_pda_btn</texture>
+		</menu_btn_3>
+
+		<menu_btn_4 x="0" y="140" width="130" height="35" check_mode="0">
+			<text complex_mode="1" align="c" vert_align="c" font="letterica18">pda_main_menu_trade</text>
+			<texture>ui_inter_pda_btn</texture>
+		</menu_btn_4>
+
+		<menu_btn_5 x="0" y="180" width="130" height="35" check_mode="0">
+			<text complex_mode="1" align="c" vert_align="c" font="letterica18">pda_main_menu_notes</text>
+			<texture>ui_inter_pda_btn</texture>
+		</menu_btn_5>
+
+		<menu_btn_6 x="0" y="220" width="130" height="35" check_mode="0">
+			<text complex_mode="1" align="c" vert_align="c" font="letterica18">pda_banter_main_menu</text>
+			<texture>ui_inter_pda_btn</texture>
+		</menu_btn_6>
+
+		<menu_btn_7 x="0" y="260" width="130" height="35" check_mode="0">
+			<text complex_mode="1" align="c" vert_align="c" font="letterica18">pda_task_main_menu</text>
+			<texture>ui_inter_pda_btn</texture>
+		</menu_btn_7>
+
+		<!-- Arrows -->
+		<arrow_r x="130" y="0" width="35" height="35" stretch="1">
+			<texture>ui_inter_pda_arrow_right_d</texture>
+		</arrow_r>
+
+	</left_container>
+
+
+	<!-- ============================================= -->
+	<!-- -------------------------- Menu 1 Raid --------------------------- -->
+	<!-- ============================================= -->
+	<mid_container_1 x="222" y="75" width="575" height="300" stretch="1">
+
+		<!-- Map Header -->
+		<map_header x="222" y="0" width="131" height="18">
+			<text complex_mode="1" r="190" g="190" b="190" align="c"  vert_align="c" font="letterica18" />
+		</map_header>
+
+		<!-- Level List 1 -->
+		<list_map x="186" y="40" width="203" height="21" stretch="1" list_length="15">
+			<list_font r="190" g="190" b="190" font="letterica18"/>
+			<text_color>
+				<e r="170" g="170" b="170"/>
+				<d r="70" g="70" b="70"/>
+			</text_color>
+		</list_map>
+
+		<!-- Map Image -->
+		<map_img x="128" y="90" width="320" height="160" stretch="1">
+			<texture></texture>
+		</map_img>
+
+		<!-- Difficulty -->
+		<raid_diff x="128" y="270" width="131" height="18">
+			<text complex_mode="1" r="190" g="190" b="190" align="l"  vert_align="c" font="letterica18" />
+		</raid_diff>
+
+	</mid_container_1>
+
+
+	<!-- ============================================= -->
+	<!-- ------------------------- Menu 2 Buy Info ------------------------ -->
+	<!-- ============================================= -->
+	<mid_container_2 x="222" y="75" width="575" height="300" stretch="1">
+
+		<!-- ----------------------- Small main menu ---------------------------- -->
+		<left_btn_list x="10" y="0" width="200" height="300" stretch="1">
+
+			<!-- Find Buttons -->
+			<left_btn_1 x="0" y="0" width="150" height="45" check_mode="0">
+				<text complex_mode="1" vert_align="c" font="letterica18">pda_find_menu_artefact</text>
+				<texture>ui_inter_pda_btn</texture>
+			</left_btn_1>
+
+			<left_btn_2 x="0" y="50" width="150" height="45" check_mode="0">
+				<text complex_mode="1" vert_align="c" font="letterica18">pda_find_menu_mutant</text>
+				<texture>ui_inter_pda_btn</texture>
+			</left_btn_2>
+
+			<left_btn_3 x="0" y="100" width="150" height="45" check_mode="0">
+				<text complex_mode="1" vert_align="c" font="letterica18">pda_find_menu_stalker</text>
+				<texture>ui_inter_pda_btn</texture>
+			</left_btn_3>
+
+			<!-- Arrow -->
+			<arrow_r x="150" y="0" width="45" height="45" stretch="1">
+				<texture>ui_inter_pda_arrow_right_d</texture>
+			</arrow_r>
+
+		</left_btn_list>
+
+		<!-- ------------------------- Small menu 1 ---------------------------- -->
+		<right_panel_1 x="230" y="0" width="335" height="300" stretch="1">
+			<!-- List -->
+			<artefact_list x="0" y="30" width="203" height="21" stretch="1" list_length="15">
+				<list_font r="190" g="190" b="190" font="letterica18"/>
+				<text_color>
+					<e r="170" g="170" b="170"/>
+					<d r="70" g="70" b="70"/>
+				</text_color>
+			</artefact_list>
+
+			<!-- Image -->
+			<artefact_img x="128" y="90" width="200" height="200" stretch="1">
+			</artefact_img>
+
+		</right_panel_1>
+
+		<!-- ------------------------- Small menu 2 ---------------------------- -->
+		<right_panel_2 x="230" y="0" width="335" height="300" stretch="1">
+			<!-- List -->
+			<mutant_list x="0" y="30" width="203" height="21" stretch="1" list_length="15">
+				<list_font r="190" g="190" b="190" font="letterica18"/>
+				<text_color>
+					<e r="170" g="170" b="170"/>
+					<d r="70" g="70" b="70"/>
+				</text_color>
+			</mutant_list>
+
+			<!-- Image -->
+			<mutant_img x="128" y="90" width="200" height="200" stretch="1">
+			</mutant_img>
+
+		</right_panel_2>
+
+		<!-- ------------------------- Small menu 3 ---------------------------- -->
+		<right_panel_3 x="230" y="0" width="335" height="300" stretch="1">
+			<!-- Input box -->
+			<stalker_input x="0" y="30" width="250" height="25">
+				<text complex_mode="1" r="190" g="190" b="190" align="c"  vert_align="c" font="letterica18" />
+				<texture>ui_inGame2_edit_box_2</texture>
+			</stalker_input>
+
+			<!-- Accept Button -->
+			<stalker_btn x="0" y="80" width="75" height="35" check_mode="0">
+				<text complex_mode="1" align="c" vert_align="c" font="letterica18">pda_find_menu_stalker_confirm</text>
+				<texture>ui_inter_pda_btn</texture>
+			</stalker_btn>
+
+		</right_panel_3>
+
+	</mid_container_2>
+
+
+	<!-- ============================================= -->
+	<!-- -------------------------- Menu 3 Games ------------------------- -->
+	<!-- ============================================= -->
+	<mid_container_3 x="222" y="75" width="575" height="300" stretch="1">
+
+		<!-- ----------------------------- Games main menu ----------------------------- -->
+		<games_btn_list x="10" y="0" width="200" height="300" stretch="1">
+
+			<!-- Game Buttons -->
+			<left_btn_1 x="0" y="0" width="150" height="45" check_mode="0">
+				<text complex_mode="1" vert_align="c" font="letterica18">pda_games_menu_puzzle</text>
+				<texture>ui_inter_pda_btn</texture>
+			</left_btn_1>
+
+			<left_btn_2 x="0" y="50" width="150" height="45" check_mode="0">
+				<text complex_mode="1" vert_align="c" font="letterica18">pda_games_menu_slots</text>
+				<texture>ui_inter_pda_btn</texture>
+			</left_btn_2>
+
+			<left_btn_3 x="0" y="100" width="150" height="45" check_mode="0">
+				<text complex_mode="1" vert_align="c" font="letterica18">pda_games_menu_snake</text>
+				<texture>ui_inter_pda_btn</texture>
+			</left_btn_3>
+
+			<!-- Arrow -->
+			<arrow_r x="150" y="0" width="45" height="45" stretch="1">
+				<texture>ui_inter_pda_arrow_right_d</texture>
+			</arrow_r>
+
+		</games_btn_list>
+
+		<!-- ----------------------------- Game menu 1 ----------------------------- -->
+		<game_pda_1 complex_mode="1" x="300" y="40" width="335" height="300" align="c" vert_align="c" stretch="1">
+			<texture r="190" g="190" b="190" a="0">none.dds</texture>
+			<puzzle_btn_1 x="0" y="0" width="50" height="50" check_mode="0"><texture>ui_puzzle_a1</texture></puzzle_btn_1>
+			<puzzle_btn_2 x="55" y="0" width="50" height="50" check_mode="0"><texture>ui_puzzle_a2</texture></puzzle_btn_2>
+			<puzzle_btn_3 x="110" y="0" width="50" height="50" check_mode="0"><texture>ui_puzzle_a3</texture></puzzle_btn_3>
+			<puzzle_btn_4 x="165" y="0" width="50" height="50" check_mode="0"><texture>ui_puzzle_a4</texture></puzzle_btn_4>
+
+			<puzzle_btn_5 x="0" y="55" width="50" height="50" check_mode="0"><texture>ui_puzzle_b1</texture></puzzle_btn_5>
+			<puzzle_btn_6 x="55" y="55" width="50" height="50" check_mode="0"><texture>ui_puzzle_b2</texture></puzzle_btn_6>
+			<puzzle_btn_7 x="110" y="55" width="50" height="50" check_mode="0"><texture>ui_puzzle_b3</texture></puzzle_btn_7>
+			<puzzle_btn_8 x="165" y="55" width="50" height="50" check_mode="0"><texture>ui_puzzle_b4</texture></puzzle_btn_8>
+
+			<puzzle_btn_9 x="0" y="110" width="50" height="50" check_mode="0"><texture>ui_puzzle_c1</texture></puzzle_btn_9>
+			<puzzle_btn_10 x="55" y="110" width="50" height="50" check_mode="0"><texture>ui_puzzle_c2</texture></puzzle_btn_10>
+			<puzzle_btn_11 x="110" y="110" width="50" height="50" check_mode="0"><texture>ui_puzzle_c3</texture></puzzle_btn_11>
+			<puzzle_btn_12 x="165" y="110" width="50" height="50" check_mode="0"><texture>ui_puzzle_c4</texture></puzzle_btn_12>
+
+			<puzzle_btn_13 x="0" y="165" width="50" height="50" check_mode="0"><texture>ui_puzzle_d1</texture></puzzle_btn_13>
+			<puzzle_btn_14 x="55" y="165" width="50" height="50" check_mode="0"><texture>ui_puzzle_d2</texture></puzzle_btn_14>
+			<puzzle_btn_15 x="110" y="165" width="50" height="50" check_mode="0"><texture>ui_puzzle_d3</texture></puzzle_btn_15>
+			<puzzle_btn_16 x="165" y="165" width="50" height="50" check_mode="0"><texture>ui_puzzle_d4</texture></puzzle_btn_16>
+		</game_pda_1>
+
+		<!-- ----------------------------- Game menu 2 ----------------------------- -->
+		<game_pda_2 complex_mode="1" x="250" y="90" width="304" height="200" align="c" vert_align="c" stretch="1">
+			<texture r="0" g="0" b="190" a="0">none.dds</texture>
+
+			<!-- Slots -->
+			<slot_1 x="30" y="40" width="80" height="100" check_mode="0" stretch="1"><texture>ui_slot_machine_main1</texture></slot_1>
+			<slot_2 x="112" y="40" width="80" height="100" check_mode="0" stretch="1"><texture>ui_slot_machine_main1</texture></slot_2>
+			<slot_3 x="194" y="40" width="80" height="100" check_mode="0" stretch="1"><texture>ui_slot_machine_main1</texture></slot_3>
+
+			<!-- Descr -->
+			<slot_descr_coin1 x="0" y="-100" width="60" height="30" check_mode="0">
+				<text x="55" y="5" complex_mode="1" align="r" vert_align="c" font="graffiti22">x5</text>
+				<texture>ui_slot_machine_coin</texture>
+			</slot_descr_coin1>
+
+			<slot_descr_coin2 x="0" y="-60" width="92" height="30" check_mode="0">
+				<text x="55" y="5" complex_mode="1" align="r" vert_align="c" font="graffiti22">x20</text>
+				<texture>ui_slot_machine_coin2</texture>
+			</slot_descr_coin2>
+
+			<slot_descr_seven x="0" y="-20" width="85" height="27" check_mode="0">
+				<text x="55" y="5" complex_mode="1" align="r" vert_align="c" font="graffiti22">x100</text>
+				<texture>ui_slot_machine_seven</texture>
+			</slot_descr_seven>
+
+			<!-- Button -->
+			<slot_launch x="102" y="160" width="100" height="50" check_mode="0">
+				<text complex_mode="1" vert_align="c" font="letterica18">pda_games_menu_play</text>
+				<texture>ui_inter_pda_btn</texture>
+			</slot_launch>
+
+		</game_pda_2>
+		<!-- ----------------------------- Game menu 3 ----------------------------- -->
+		<game_pda_3 complex_mode="1" x="300" y="-15" width="220" height="320" align="c" vert_align="c" stretch="1">
+
+			<snake_grid x="10" y="10" width="200" height="300" check_mode="0"><texture>ui_snake_grid</texture></snake_grid>
+			<snake_border x="0" y="0" width="220" height="320" check_mode="0"><texture>ui_snake_border</texture></snake_border>
+			<snake_block x="50" y="50" width="10" height="10" check_mode="0"><texture>ui_snake_block</texture></snake_block>
+			<snake_food x="50" y="50" width="10" height="10" check_mode="0"><texture>ui_snake_food</texture></snake_food>
+			<snake_head x="50" y="50" width="10" height="10" check_mode="0"><texture>ui_snake_head</texture></snake_head>
+
+			<snake_score x="-50" y="300" width="30" height="30" check_mode="0">
+				<text complex_mode="1" r="190" g="190" b="190" align="c" vert_align="c" font="graffiti22" />
+			</snake_score>
+
+			<snake_launch_btn x="102" y="160" width="100" height="50">
+				<text complex_mode="1" vert_align="c" align="c" font="letterica18">pda_games_menu_play</text>
+				<texture>ui_inter_pda_btn</texture>
+			</snake_launch_btn>
+
+		</game_pda_3>
+
+	</mid_container_3>
+
+
+	<!-- ============================================= -->
+	<!-- -------------------------- Menu 4 Trade -------------------------- -->
+	<!-- ============================================= -->
+	<mid_container_4 x="222" y="75" width="575" height="300" stretch="1">
+
+		<!-- Search Input header -->
+		<search_item_header x="42" y="0" width="150" height="30">
+			<text complex_mode="1" r="190" g="190" b="190" align="c" vert_align="c" font="letterica18">pda_trade_menu_search_box</text>
+		</search_item_header>
+
+		<!-- Search Input box -->
+		<search_item_input x="196" y="0" width="235" height="30">
+			<text complex_mode="1" r="190" g="190" b="190" align="c" vert_align="c" font="letterica18" />
+			<texture>ui_inGame2_edit_box_2</texture>
+		</search_item_input>
+
+		<!-- Search Confirm Button -->
+		<search_item_confirm x="437" y="0" width="85" height="30" check_mode="0">
+			<text complex_mode="1" align="c" vert_align="c" font="letterica18">pda_trade_menu_search</text>
+			<texture>ui_inter_pda_btn</texture>
+		</search_item_confirm>
+
+		<!-- Result header -->
+		<result_item_header x="42" y="49" width="152" height="25">
+			<text complex_mode="1" r="190" g="190" b="190" align="c" vert_align="c" font="letterica18">pda_trade_menu_item_list</text>
+		</result_item_header>
+
+		<!-- Result list -->
+		<result_item_list x="197" y="49" width="234" height="25" stretch="1" list_length="15">
+			<list_font r="190" g="190" b="190" font="letterica18"/>
+			<text_color>
+				<e r="170" g="170" b="170"/>
+				<d r="70" g="70" b="70"/>
+			</text_color>
+		</result_item_list>
+
+		<!-- Result image -->
+		<result_item_img x="437" y="43" width="140" height="70" stretch="1">
+			<texture></texture>
+		</result_item_img>
+
+		<!-- Quantity header -->
+		<quantity_item_header x="42" y="81" width="152" height="25">
+			<text complex_mode="1" r="190" g="190" b="190" align="c" vert_align="c" font="letterica18">pda_trade_menu_quantity</text>
+		</quantity_item_header>
+
+		<!-- Quantity input box -->
+		<quantity_item_input x="262" y="81" width="107" height="25">
+			<text complex_mode="1" r="190" g="190" b="190" align="c" vert_align="c" font="letterica18" />
+			<texture>ui_inGame2_edit_box_2</texture>
+		</quantity_item_input>
+
+		<!-- Level header -->
+		<level_item_header x="42" y="153" width="152" height="25">
+			<text complex_mode="1" r="190" g="190" b="190" align="c" vert_align="c" font="letterica18">pda_trade_menu_delivery</text>
+		</level_item_header>
+
+		<!-- Level list -->
+		<level_item_list x="197" y="153" width="234" height="25" stretch="1" list_length="15">
+			<list_font r="190" g="190" b="190" font="letterica18"/>
+			<text_color>
+				<e r="170" g="170" b="170"/>
+				<d r="70" g="70" b="70"/>
+			</text_color>
+		</level_item_list>
+
+		<!-- Level image -->
+		<level_item_img x="437" y="131" width="112" height="70" stretch="1">
+			<texture></texture>
+		</level_item_img>
+
+		<!-- Final Confirm Button -->
+		<trade_confirm_btn x="197" y="240" width="234" height="43" check_mode="0">
+			<text complex_mode="1" align="c" vert_align="c" font="letterica18">pda_trade_menu_confirm_btn</text>
+			<texture>ui_inter_pda_btn</texture>
+		</trade_confirm_btn>
+
+		<!-- Logo -->
+		<trade_logo x="5" y="262" width="122" height="31" stretch="1">
+			<texture>ui_inter_pda_omazone</texture>
+		</trade_logo>
+
+	</mid_container_4>
+
+
+	<!-- ============================================= -->
+	<!-- -------------------------- Menu 5 Notes -------------------------- -->
+	<!-- ============================================= -->
+	<mid_container_5 x="222" y="75" width="575" height="300" stretch="1">
+
+		<!-- Notes scrollbar -->
+		<notes_scrollbar x="0" y="0" width="575" height="250" right_ident="0" left_ident="0" top_indent="0" bottom_indent="0" vert_interval="0" always_show_scroll="0" stretch="1"/>
+
+		<!-- Notes text window -->
+		<notes_text_wnd x="0" y="0" width="553" height="600">
+			<text complex_mode="1" r="190" g="190" b="190" vert_align="t" align="l" font="letterica18"></text>
+		</notes_text_wnd>
+
+		<!-- Notes picker Hint -->
+		<notes_picker_hint x="375" y="255" width="100" height="20">
+			<text complex_mode="1" r="190" g="190" b="190" vert_align="c" align="r" font="letterica18">pda_notes_picker_hint</text>
+		</notes_picker_hint>
+
+		<!-- Notes picker input -->
+		<notes_picker_input x="480" y="255" width="40" height="20">
+			<text complex_mode="1" r="190" g="190" b="190" vert_align="c" align="c" font="letterica18" />
+			<texture>ui_inGame2_edit_box_2</texture>
+		</notes_picker_input>
+
+		<notes_edit_btn x="523" y="255" width="29" height="20" check_mode="0">
+			<text complex_mode="1" align="c" vert_align="c" font="letterica16">pda_notes_edit_btn</text>
+			<texture>ui_inter_pda_btn</texture>
+		</notes_edit_btn>
+
+		<notes_delete_btn x="555" y="255" width="19" height="20" check_mode="0">
+			<text complex_mode="1" align="c" vert_align="c" r="190" g="0" b="0" font="letterica16">pda_notes_delete_btn</text>
+			<texture>ui_inter_pda_btn</texture>
+		</notes_delete_btn>
+
+		<!-- Notes input box -->
+		<notes_input_box x="0" y="280" width="525" height="20">
+			<text complex_mode="1" r="190" g="190" b="190" vert_align="t" align="l" font="letterica18" />
+			<texture>ui_inGame2_edit_box_2</texture>
+		</notes_input_box>
+
+		<notes_confirm_btn x="530" y="280" width="44" height="20" check_mode="0">
+			<text complex_mode="1" align="c" vert_align="c" font="letterica16">pda_notes_add_btn</text>
+			<texture>ui_inter_pda_btn</texture>
+		</notes_confirm_btn>
+
+	</mid_container_5>
+
+
+	<!-- ============================================= -->
+	<!-- -------------------------- Menu 6 Banter ------------------------- -->
+	<!-- ============================================= -->
+	<mid_container_6 x="222" y="75" width="575" height="300" stretch="1">
+
+		<!-- Banter SOS -->
+		<banter_header_sos x="0" y="-20" width="200" height="20">
+			<text complex_mode="1" r="190" g="190" b="190" align="c" vert_align="c" font="letterica18">pda_banter_sos_header</text>
+		</banter_header_sos>
+
+		<banter_btn_sos x="0" y="5" width="200" height="30" check_mode="0">
+			<text complex_mode="1" align="c" vert_align="c" font="letterica18">pda_banter_sos_confirm</text>
+			<texture>ui_inter_pda_btn</texture>
+		</banter_btn_sos>
+
+		<!-- Banter Surge -->
+		<banter_header_surge x="0" y="45" width="200" height="20">
+			<text complex_mode="1" r="190" g="190" b="190" align="c" vert_align="c" font="letterica18">pda_banter_surge_header</text>
+		</banter_header_surge>
+
+		<banter_btn_surge x="0" y="70" width="200" height="30" check_mode="0">
+			<text complex_mode="1" align="c" vert_align="c" font="letterica18">pda_banter_surge_confirm</text>
+			<texture>ui_inter_pda_btn</texture>
+		</banter_btn_surge>
+
+		<!-- Banter Psi Storm -->
+		<banter_header_psi x="0" y="110" width="200" height="20">
+			<text complex_mode="1" r="190" g="190" b="190" align="c" vert_align="c" font="letterica18">pda_banter_psi_header</text>
+		</banter_header_psi>
+
+		<banter_btn_psi x="0" y="135" width="200" height="30" check_mode="0">
+			<text complex_mode="1" align="c" vert_align="c" font="letterica18">pda_banter_psi_confirm</text>
+			<texture>ui_inter_pda_btn</texture>
+		</banter_btn_psi>
+
+	</mid_container_6>
+
+
+	<!-- ============================================= -->
+	<!-- ------------------------- Menu 7 Tasks --------------------------- -->
+	<!-- ============================================= -->
+	<mid_container_7 x="222" y="75" width="575" height="300" stretch="1">
+
+		<!-- Mutant Hunt -->
+		<task_btn_1 x="0" y="0" width="500" height="45" check_mode="0">
+			<text complex_mode="1" align="c" vert_align="c" font="letterica18">pda_task_mutant_hunt_btn</text>
+			<texture>ui_inter_pda_btn</texture>
+		</task_btn_1>
+
+		<!-- Bounty -->
+		<task_btn_2 x="0" y="50" width="500" height="45" check_mode="0">
+			<text complex_mode="1" align="c" vert_align="c" font="letterica18">pda_task_bounty_btn</text>
+			<texture>ui_inter_pda_btn</texture>
+		</task_btn_2>
+
+		<!-- Guide -->
+		<task_btn_3 x="0" y="100" width="500" height="45" check_mode="0">
+			<text complex_mode="1" align="c" vert_align="c" font="letterica18">pda_task_guide_btn</text>
+			<texture>ui_inter_pda_btn</texture>
+		</task_btn_3>
+
+		<!-- Fetch items -->
+		<task_btn_4 x="0" y="150" width="500" height="45" check_mode="0">
+			<text complex_mode="1" align="c" vert_align="c" font="letterica18">pda_task_fetch_items_btn</text>
+			<texture>ui_inter_pda_btn</texture>
+		</task_btn_4>
+
+		<!-- Dangerous Squad -->
+		<task_btn_5 x="0" y="200" width="500" height="45" check_mode="0">
+			<text complex_mode="1" align="c" vert_align="c" font="letterica18">pda_task_dangerous_squad_btn</text>
+			<texture>ui_inter_pda_btn</texture>
+		</task_btn_5>
+
+		<!-- Stealth Task -->
+		<task_btn_6 x="0" y="250" width="500" height="45" check_mode="0">
+			<text complex_mode="1" align="c" vert_align="c" font="letterica18">pda_task_stealth_btn</text>
+			<texture>ui_inter_pda_btn</texture>
+		</task_btn_6>
+
+		<!-- Arrow -->
+		<arrow_r x="502" y="0" width="45" height="45" stretch="1">
+			<texture>ui_inter_pda_arrow_right_d</texture>
+		</arrow_r>
+
+	</mid_container_7>
+
+
+	<!-- ============================================= -->
+	<!-- -------------------------- Send button ---------------------------- -->
+	<!-- ============================================= -->
+	<send_btn x="860" y="180" width="100" height="35" check_mode="0">
+		<text font="letterica18">pda_main_menu_send</text>
+		<texture>ui_inter_pda_btn</texture>
+	</send_btn>
+
+	<!-- ============================================= -->
+	<!-- --------------------------- Money text ---------------------------- -->
+	<!-- ============================================= -->
+	<money_text x="810" y="70" width="200" height="25">
+		<text complex_mode="1" r="190" g="190" b="190" align="c" vert_align="c" font="graffiti22" />
+	</money_text>
+
+	<!-- ============================================= -->
+	<!-- ------------------------ Active message -------------------------- -->
+	<!-- ============================================= -->
+	<active_cont x="30" y="395" width="965" height="65" stretch="1">
+		<!-- Text -->
+		<active_cont_text x="0" y="25" width="600" height="18">
+			<text complex_mode="1" r="190" g="190" b="190" align="c" vert_align="c" font="letterica18" />
+		</active_cont_text>
+
+		<!-- Cancel button -->
+		<cancel_btn x="830" y="15" width="100" height="35" check_mode="0">
+			<text complex_mode="1" align="c" vert_align="c" font="letterica18">pda_main_menu_cancel</text>
+			<texture>ui_inter_pda_btn</texture>
+		</cancel_btn>
+
+	</active_cont>
+
+
+	<!-- ============================================= -->
+	<!-- ------------------------- Bottom menu --------------------------- -->
+	<!-- ============================================= -->
+	<bot_cont_main x="30" y="465" width="970" height="260" stretch="1">
+
+		<!-- ------------------------- container 1 --------------------------- -->
+		<bot_cont_1 x="5" y="0" width="150" height="260" stretch="1">
+
+			<!-- Icon -->
+			<bot_icon x="0" y="12" width="110" height="110" stretch="1"></bot_icon>
+
+			<!-- Descr -->
+			<bot_descr x="0" y="134" width="130" height="70">
+				<text x="10" y="0" complex_mode="1" r="190" g="190" b="190" font="letterica16" />
+			</bot_descr>
+
+			<!-- Button -->
+			<bot_btn x="0" y="207" width="120" height="40" align="c"  vert_align="c" check_mode="0">
+				<text complex_mode="1" align="c"  vert_align="c" font="letterica18"></text>
+				<texture>ui_inter_pda_btn</texture>
+			</bot_btn>
+		</bot_cont_1>
+
+
+		<!-- ------------------------- container 2 --------------------------- -->
+		<bot_cont_2 x="165" y="0" width="150" height="260" stretch="1">
+
+			<!-- Icon -->
+			<bot_icon x="0" y="12" width="110" height="110" stretch="1"></bot_icon>
+
+			<!-- Descr -->
+			<bot_descr x="0" y="134" width="130" height="70">
+				<text x="10" y="0" complex_mode="1" r="190" g="190" b="190" font="letterica16" />
+			</bot_descr>
+
+			<!-- Button -->
+			<bot_btn x="0" y="207" width="120" height="40" align="c"  vert_align="c" check_mode="0">
+				<text complex_mode="1" align="c"  vert_align="c" font="letterica18"></text>
+				<texture>ui_inter_pda_btn</texture>
+			</bot_btn>
+		</bot_cont_2>
+
+		<!-- ------------------------- container 3 --------------------------- -->
+		<bot_cont_3 x="325" y="0" width="150" height="260" stretch="1">
+
+			<!-- Icon -->
+			<bot_icon x="0" y="12" width="110" height="110" stretch="1"></bot_icon>
+
+			<!-- Descr -->
+			<bot_descr x="0" y="134" width="130" height="70">
+				<text x="10" y="0" complex_mode="1" r="190" g="190" b="190" font="letterica16" />
+			</bot_descr>
+
+			<!-- Button -->
+			<bot_btn x="0" y="207" width="120" height="40" align="c"  vert_align="c" check_mode="0">
+				<text complex_mode="1" align="c"  vert_align="c" font="letterica18"></text>
+				<texture>ui_inter_pda_btn</texture>
+			</bot_btn>
+		</bot_cont_3>
+
+		<!-- ------------------------- container 4 --------------------------- -->
+		<bot_cont_4 x="485" y="0" width="150" height="260" stretch="1">
+
+			<!-- Icon -->
+			<bot_icon x="0" y="12" width="110" height="110" stretch="1"></bot_icon>
+
+			<!-- Descr -->
+			<bot_descr x="0" y="134" width="130" height="70">
+				<text x="10" y="0" complex_mode="1" r="190" g="190" b="190" font="letterica16" />
+			</bot_descr>
+
+			<!-- Button -->
+			<bot_btn x="0" y="207" width="120" height="40" align="c"  vert_align="c" check_mode="0">
+				<text complex_mode="1" align="c"  vert_align="c" font="letterica18"></text>
+				<texture>ui_inter_pda_btn</texture>
+			</bot_btn>
+		</bot_cont_4>
+
+
+		<!-- ------------------------- container 5 --------------------------- -->
+		<bot_cont_5 x="645" y="0" width="150" height="260" stretch="1">
+
+			<!-- Icon -->
+			<bot_icon x="0" y="12" width="110" height="110" stretch="1"></bot_icon>
+
+			<!-- Descr -->
+			<bot_descr x="0" y="134" width="130" height="70">
+				<text x="10" y="0" complex_mode="1" r="190" g="190" b="190" font="letterica16" />
+			</bot_descr>
+
+			<!-- Button -->
+			<bot_btn x="0" y="207" width="120" height="40" align="c"  vert_align="c" check_mode="0">
+				<text complex_mode="1" align="c"  vert_align="c" font="letterica18"></text>
+				<texture>ui_inter_pda_btn</texture>
+			</bot_btn>
+		</bot_cont_5>
+
+
+		<!-- ------------------------- container 6 --------------------------- -->
+		<bot_cont_6 x="805" y="0" width="150" height="260" stretch="1">
+
+			<!-- Icon -->
+			<bot_icon x="0" y="12" width="110" height="110" stretch="1"></bot_icon>
+
+			<!-- Descr -->
+			<bot_descr x="0" y="134" width="130" height="70">
+				<text x="10" y="0" complex_mode="1" r="190" g="190" b="190" font="letterica16" />
+			</bot_descr>
+
+			<!-- Button -->
+			<bot_btn x="0" y="207" width="120" height="40" align="c"  vert_align="c" check_mode="0">
+				<text complex_mode="1" align="c"  vert_align="c" font="letterica18"></text>
+				<texture>ui_inter_pda_btn</texture>
+			</bot_btn>
+		</bot_cont_6>
+
+	</bot_cont_main>
+
+</w>

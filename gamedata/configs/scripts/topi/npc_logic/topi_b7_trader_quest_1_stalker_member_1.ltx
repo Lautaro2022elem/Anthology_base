@@ -1,0 +1,74 @@
+[logic]
+active = move@waitsignal
+
+[move@waitsignal]
+move_dest_number       = 224780
+move_look_vertex       = 230818
+combat_ignore_cond = {=check_enemy_name(topi_b7_trader_quest_1_bandit_prisoner)} true, {=check_enemy_name(sim_default) =fighting_dist_ge(30)} true
+on_info = {+topi_trader_1_quest_talking_prisoner} remark@sledop_kill 
+def_state_standing = fold_arms
+def_state_moving = run
+meet                   = meet
+
+[remark@sledop_kill] 
+meet                   = meet
+anim = assault
+target = story | topi_b7_trader_quest_1_bandit_prisoner
+combat_ignore_cond = true
+combat_ignore_keep_when_attacked = true
+invulnerable = true
+gather_items_enabled = false
+help_wounded_enabled = false
+corpse_detection_enabled = false
+on_game_timer = 90 | remark@sledop_kill2
+
+[remark@sledop_kill2] 
+meet                   = meet
+anim = assault_fire
+on_signal = anim_end | %+topi_trader_1_quest_predatel_kill_shot%
+target = story | topi_b7_trader_quest_1_bandit_prisoner
+combat_ignore_cond = true
+combat_ignore_keep_when_attacked = true
+invulnerable = true
+gather_items_enabled = false
+help_wounded_enabled = false
+corpse_detection_enabled = false
+on_info = {+topi_b7_trader_quest_1_bandit_prisoner_death} move@guard_no_talking
+on_info2 = {+topi_trader_1_quest_talking_2} %=release_npc%
+
+[move@guard_no_talking]
+move_dest_number       = 224780
+move_look_vertex       = 230818
+move_state_when_center = guard
+move_state_when_move   = walk
+move_stop_on_talk      = true
+meet                   = no_meet
+on_info = {+topi_trader_1_quest_talking_2} %=release_npc%
+
+
+[meet]
+close_anim 		= nil
+close_victim 	= nil
+close_snd_hello = nil
+close_snd_bye 	= nil
+far_anim 		= nil
+far_victim 		= nil
+close_distance  = 0
+far_distance 	= 0
+use = {=actor_enemy} false, true
+allow_break = false
+trade_enable = true
+meet_on_talking = false
+
+[no_meet]
+close_anim 		= nil
+close_victim 	= nil
+far_anim 		= nil
+far_victim 		= nil
+close_distance  = 0
+far_distance 	= 0
+close_snd_distance = 3
+abuse           = true
+use             = false
+allow_break     = true
+meet_on_talking = false

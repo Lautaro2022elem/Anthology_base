@@ -1,0 +1,80 @@
+[logic@mil_svoboda_cook]
+suitable = {=check_npc_name(mil_svoboda_cook)} true, {=check_npc_barman} true
+prior = 200
+active = animpoint@stay_table
+can_select_weapon = true
+dont_keep_items = true
+level_spot = trader
+trade = items\trade\trade_generic_barman.ltx
+
+[animpoint@stay_table]
+cover_name = mil_freedom_barman_mlr_place
+use_camp = false
+gather_items_enabled = false
+help_wounded_enabled = false
+reach_movement = walk_noweap
+reach_distance = 10
+corpse_detection_enabled = false
+invulnerable = {!actor_enemy} true, false
+combat_ignore_cond = {=actor_enemy =check_enemy_name(actor)} false, true
+combat_ignore_keep_when_attacked = true
+meet = meet@barman
+on_info = {=obj_on_job(mil_smart_terrain_7_12:mil_smart_terrain_7_12_beh_trade_job_1) =job_on_point(mil_smart_terrain_7_12:mil_smart_terrain_7_12_beh_trade_job_1:2:3:false)} %=trade_job_give_id(mil_smart_terrain_7_12:mil_smart_terrain_7_12_beh_trade_job_1)%
+
+[meet@barman]
+close_snd_hello = mil_svoboda_cook_meet
+close_snd_bye = mil_svoboda_cook_bye
+close_anim 		= nil
+close_victim 	= nil
+far_anim 		= nil
+far_victim 		= nil
+close_distance  = 0
+far_distance 	= 0
+close_snd_distance = 3
+abuse           = false
+use = {=actor_enemy} false, true
+allow_break = false
+meet_on_talking = false
+trade_enable = true
+
+;------------------------------
+;--------- NPC trade ----------
+;------------------------------
+[logic@mil_smart_terrain_7_12_beh_trade_job_1]
+active = beh@mil_smart_terrain_7_12_beh_trade_job_1
+suitable = {=npc_has_items_to_sell(mil_smart_terrain_7_12) !surge_started} true
+prior = 65
+
+[beh@general]
+meet = meet@mil_smart_terrain_7_12_animpoint_trade_meet
+gather_items_enabled = false
+help_wounded_enabled = false
+corpse_detection_enabled = false
+sound_idle = state
+behavior_state = beh_move
+target = waypoint
+walk_dist = 100
+jog_dist = 220
+wait_anim = guard
+walk_anim = patrol
+jog_anim = patrol
+run_anim = rush
+delay_anim = guard
+
+[beh@mil_smart_terrain_7_12_beh_trade_job_1]:beh@general ;--pt1 choose - pt2 zat_b14_give_artefact_act - pt3 guard
+pt1 = 10000,choose | pos:67.51823425293,-8.0324306488037,19.417707443237 look:71.188095092773,-8.020320892334,19.247287750244
+pt2 = 5000,zat_b14_give_artefact_act | pos:67.51823425293,-8.0324306488037,19.417707443237 look:71.188095092773,-8.020320892334,19.247287750244 sig:trade
+pt3 = 10000,guard | pos:67.51823425293,-8.0324306488037,19.417707443237 look:71.188095092773,-8.020320892334,19.247287750244
+on_signal = trade | %=trade_job_sell_items%
+path_end = loop
+
+[meet@mil_smart_terrain_7_12_animpoint_trade_meet]
+close_anim 		= nil
+close_victim 	= nil
+far_anim 		= nil
+far_victim 		= nil
+close_distance 	= 0
+far_distance 	= 0
+use = {=actor_enemy} false, {=dist_to_actor_le(3)} true, false
+snd_on_use = {!dist_to_actor_le(3)} nil
+meet_on_talking = false

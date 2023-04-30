@@ -1,0 +1,35 @@
+[logic]
+active = sr_idle@wait
+
+[sr_idle@wait]
+on_info = {+sad_b3_start_cutscene} sr_idle@cutscene_timer %=disable_ui =run_postprocess(fade_in:4310)%
+on_info2 = {+sad_b3_killers_awake} sr_idle@nil2
+
+[sr_idle@cutscene_timer]
+on_game_timer = 20 | sr_idle@wait_for_fade %=run_postprocess(black:4311:true)%; =create_cutscene_actor_with_weapon(sad_b3_actor_visual_stalker:sad_b3_cutscene_actor_walk:0:0:3)%
+
+[sr_idle@wait_for_fade]
+on_game_timer = 10 | sr_cutscene@start %=stop_postprocess(4310) =stop_postprocess(4311)%
+
+[sr_cutscene@start]
+enable_ui_on_end = false
+global_cameffect = true
+outdoor = true
+point = sad_b3a_actor_after_explosion_walk
+look = sad_b3a_actor_after_explosion_look
+cam_effector = scenario_cam\sad\sad_kon_explo_cam
+on_signal = cameff_end | sr_idle@cutscene_end_postprocess %=run_postprocess(black:9055:true)%
+on_signal2 = cam_effector_stop | sr_idle@cutscene_end_postprocess %=run_postprocess(black:9056:true)%
+on_timer = 16000 | {-sad_b3_explode_this_shit} %+sad_b3_explode_this_shit% ;=play_sound(sad_b3_ataka_begin)%
+
+[sr_idle@cutscene_end_postprocess]
+on_info = {-sad_b3_explode_this_shit} %+sad_b3_explode_this_shit%
+on_timer = 1000 | sr_idle@end
+
+[sr_idle@end]
+on_timer = 1000 | sr_idle@nil %=stop_postprocess(9055) =stop_postprocess(9056) =enable_ui%
+
+[sr_idle@nil]
+on_timer = 10000 | sr_idle@nil2 %+sad_b3_killers_awake%
+
+[sr_idle@nil2]

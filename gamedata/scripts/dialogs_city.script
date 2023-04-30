@@ -1,0 +1,24 @@
+--[[ ----------------------------------------------------------------------------------------------- 
+ File       : dialogs_city.script
+ Description: Диалоговые функции для Курчатова
+ Copyright  : 2011 © Spectrum Project
+ Author		: БолотныйДоктор
+ Last edit  : 29.04.2014 (by БолотныйДоктор)
+--]] -----------------------------------------------------------------------------------------------
+--/											
+--]] -----------------------------------------------------------------------------------------------
+
+
+function city_important_cargo_out(first_speaker, second_speaker)
+    dialogs.relocate_item_section_from_actor(first_speaker, second_speaker, "city_safe_container")
+end
+
+function city_money_sp_in(first_speaker, second_speaker)
+    dialogs.relocate_item_section(second_speaker, "city_money_sp", "in")
+end
+
+function city_money_sp_out(first_speaker, second_speaker)
+    dialogs.relocate_item_section_from_actor(first_speaker, second_speaker, "city_money_sp")
+end
+
+

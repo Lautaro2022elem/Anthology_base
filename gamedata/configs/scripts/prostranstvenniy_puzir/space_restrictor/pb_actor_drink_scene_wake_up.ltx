@@ -1,0 +1,26 @@
+[logic]
+active = sr_idle@wake_up_start
+
+[sr_idle@wake_up_start]
+on_info = {+pro_kill_shell_and_wake_up} sr_idle@wake_up_start_1
+
+[sr_idle@wake_up_start_1]
+on_timer = 4500 | sr_idle@wake_up_start_2 %=set_game_time(07:53)%
+
+[sr_idle@wake_up_start_2]
+on_timer = 1500 | sr_cutscene@wake_up_podval_start
+
+[sr_cutscene@wake_up_podval_start]
+point = actor_podval_wake_up_walk
+look = actor_podval_wake_up_look
+cam_effector = scenario_cam\prostranstvenniy_puzir\camera_podval_wake_up
+enable_ui_on_end = true
+global_cameffect = true
+on_info = {+pro_kill_shell_and_wake_up} %=play_sound(pb_intro_getting_up) =stop_postprocess(2525)%
+on_signal = cameff_end | sr_idle@scene_otshelnik_go %=stop_sound(pb_intro_getting_up) +pro_actor_kill_shell_and_wake_up%
+
+[sr_idle@scene_otshelnik_go]
+on_info = {+pro_otshelnik_puzir_first_dialog_done} %=CutSceneOnTorch%
+on_info2 = {+pro_otshelnik_puzir_realese} sr_idle@nil %=enable_ui =pb_actor_replic_about_otshelnik%
+
+[sr_idle@nil]

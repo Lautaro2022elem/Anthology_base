@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="windows-1251" ?>
+<string_table>
+
+	<string id="esc_2_12_medic_mlr_save_task_mlr_name_1">
+		<text>Первая помощь: проверить сигнал или проигнорировать</text>
+	</string>
+	<string id="esc_2_12_medic_mlr_save_task_mlr_name_2">
+		<text>Первая помощь: найти медицинскую сумку</text>
+	</string>
+	<string id="esc_2_12_medic_mlr_save_task_mlr_name_3">
+		<text>Первая помощь: вернуть её сталкеру</text>
+	</string>
+	<string id="esc_2_12_medic_mlr_save_task_mlr_name_4">
+		<text>Первая помощь: сопроводить раненого</text>
+	</string>
+	<string id="esc_2_12_medic_mlr_save_task_mlr_name_5">
+		<text>Первая помощь: поговорить со спасённым</text>
+	</string>
+	<string id="esc_2_12_medic_mlr_save_task_mlr_text_descr">
+		<text>Очередной сигнал о помощи. Стоит ли идти проверять или просто пройти мимо?</text>
+	</string>	
+	<string id="esc_2_12_medic_mlr_save_task_mlr_message">
+		<text>Кашпировский: \nЗдесь есть кто-нибудь поблизости? SOS, истекаю кровью, у тоннеля.</text>
+	</string>
+	<string id="esc_2_12_medic_mlr_medbag">
+		<text>Медицинская сумка</text>
+	</string>
+	<string id="esc_2_12_medic_mlr_medbag_desc">
+		<text>Обычная медицинская сумка, надеюсь препараты внутри не пострадали.</text>
+	</string>	
+
+
+
+</string_table>

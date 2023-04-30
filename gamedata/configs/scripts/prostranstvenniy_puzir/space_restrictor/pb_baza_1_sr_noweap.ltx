@@ -1,0 +1,17 @@
+[logic]
+active = sr_no_weapon@start
+
+[sr_no_weapon@start]
+on_info = {+controller_spawn_end} sr_idle@fight
+on_info2 = {+pro_actor_meet_leader_killer_2} sr_idle@fight_final
+
+[sr_idle@fight]
+on_info = {+pb_kill_to_controller_complite} sr_no_weapon@after_start
+
+[sr_no_weapon@after_start]
+on_info = {+pro_actor_meet_leader_killer_2} sr_idle@fight_final
+
+[sr_idle@fight_final]
+on_info = {+pro_fight_final_end} sr_no_weapon@after_fight_final
+
+[sr_no_weapon@after_fight_final]

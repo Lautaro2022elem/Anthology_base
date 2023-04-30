@@ -1,0 +1,715 @@
+<?xml version="1.0" encoding="windows-1251" standalone="yes" ?>
+<game_dialogs>
+
+    <dialog id="dl_bandits_attak_wait">
+        <dont_has_info>dl_spawn_squad_attak</dont_has_info>
+        <phrase_list>
+            <phrase id="1">
+                <text>dl_bandits_attak_wait_1</text>
+                <action>dialogs.break_dialog</action>
+                <give_info>dl_spawn_squad_attak</give_info>
+            </phrase>
+            <phrase id="0">
+                <text>dl_bandits_attak_wait_0</text>
+                <next>1</next>
+            </phrase>
+        </phrase_list>
+    </dialog>
+    <dialog id="dl_bandits_attak_done">
+        <has_info>dl_attak_good_reward</has_info>
+        <dont_has_info>dl_bandits_quest_attak_done</dont_has_info>
+        <dont_has_info>dl_groz_squad_killed</dont_has_info>
+        <phrase_list>
+            <phrase id="1">
+                <text>dl_bandits_attak_done_1</text>
+                <action>dialogs.break_dialog</action>
+                <give_info>dl_bandits_quest_attak_done</give_info>
+            </phrase>
+            <phrase id="0">
+                <text>dl_bandits_attak_done_0</text>
+                <next>1</next>
+            </phrase>
+        </phrase_list>
+    </dialog>
+    <dialog id="dl_lost_squad_quest_done">
+        <has_info>dl_quest_lost_squad_update</has_info>
+        <dont_has_info>dl_task_lost_squad_complete</dont_has_info>
+        <phrase_list>
+            <phrase id="4">
+                <text>dl_lost_squad_quest_done_4</text>
+                <action>dialogs.break_dialog</action>
+                <give_info>dl_task_lost_squad_complete</give_info>
+            </phrase>
+            <phrase id="2">
+                <text>dl_lost_squad_quest_done_2</text>
+                <action>dialogs_deadlake.dl_out_doc_x9</action>
+                <next>3</next>
+            </phrase>
+            <phrase id="3">
+                <text>dl_lost_squad_quest_done_3</text>
+                <action>dialogs_deadlake.reward_of_lost_squad</action>
+                <next>4</next>
+            </phrase>
+            <phrase id="1">
+                <text>dl_lost_squad_quest_done_1</text>
+                <next>2</next>
+            </phrase>
+            <phrase id="0">
+                <text>dl_lost_squad_quest_done_0</text>
+                <next>1</next>
+            </phrase>
+        </phrase_list>
+    </dialog>
+    <dialog id="dl_lost_squad_quest_start">
+        <has_info>dl_start_task_lost</has_info>
+        <dont_has_info>dl_lost_stalkers_squad_task</dont_has_info>
+        <phrase_list>
+            <phrase id="2">
+                <text>dl_lost_squad_quest_start_2</text>
+                <next>3</next>
+            </phrase>
+            <phrase id="3">
+                <text>dl_lost_squad_quest_start_3</text>
+                <next>4</next>
+            </phrase>
+            <phrase id="4">
+                <text>dl_lost_squad_quest_start_4</text>
+                <action>dialogs.break_dialog</action>
+                <give_info>dl_lost_stalkers_squad_task</give_info>
+            </phrase>
+            <phrase id="1">
+                <text>dl_lost_squad_quest_start_1</text>
+                <next>2</next>
+            </phrase>
+            <phrase id="0">
+                <text>dl_lost_squad_quest_start_0</text>
+                <next>1</next>
+            </phrase>
+        </phrase_list>
+    </dialog>
+    <dialog id="dl_bandits_attak_wait_1">
+        <has_info>dl_attak_good</has_info>
+        <dont_has_info>dl_attak_good_reward</dont_has_info>
+        <phrase_list>
+            <phrase id="2">
+                <text>dl_bandits_attak_wait_1_2</text>
+                <action>dialogs.break_dialog</action>
+                <give_info>dl_attak_good_reward</give_info>
+            </phrase>
+            <phrase id="1">
+                <text>dl_bandits_attak_wait_1_1</text>
+                <next>2</next>
+            </phrase>
+            <phrase id="0">
+                <text>dl_bandits_attak_wait_1_0</text>
+                <next>1</next>
+            </phrase>
+        </phrase_list>
+    </dialog>
+    <dialog id="dl_bandits_attak_start">
+        <has_info>dl_new_time_search_art_complete</has_info>
+        <dont_has_info>dl_spawn_squad_wait</dont_has_info>
+        <phrase_list>
+            <phrase id="22">
+                <text>dl_bandits_attak_start_22</text>
+                <action>dialogs.break_dialog</action>
+            </phrase>
+            <phrase id="3">
+                <text>dl_bandits_attak_start_3</text>
+                <next>4</next>
+            </phrase>
+            <phrase id="4">
+                <text>dl_bandits_attak_start_4</text>
+                <action>dialogs.break_dialog</action>
+                <give_info>dl_spawn_squad_wait</give_info>
+            </phrase>
+            <phrase id="2">
+                <text>dl_bandits_attak_start_2</text>
+                <next>3</next>
+            </phrase>
+            <phrase id="1">
+                <text>dl_bandits_attak_start_1</text>
+                <next>2</next>
+                <next>22</next>
+            </phrase>
+            <phrase id="0">
+                <text>dl_bandits_attak_start_0</text>
+                <next>1</next>
+            </phrase>
+        </phrase_list>
+    </dialog>
+    <dialog id="dl_bandits_attak_sk_done">
+        <has_info>dl_groz_squad_killed</has_info>
+        <has_info>dl_attak_good</has_info>
+        <dont_has_info>dl_bandits_quest_attak_done</dont_has_info>
+        <phrase_list>
+            <phrase id="1">
+                <text>dl_bandits_attak_sk_done_1</text>
+                <action>dialogs.break_dialog</action>
+                <give_info>dl_bandits_quest_attak_done</give_info>
+            </phrase>
+            <phrase id="0">
+                <text>dl_bandits_attak_sk_done_0</text>
+                <next>1</next>
+            </phrase>
+        </phrase_list>
+    </dialog>
+    <dialog id="dl_stalker_quest_complete">
+        <has_info>dl_stalker_quest_taked</has_info>
+        <dont_has_info>dl_stalker_quest_done</dont_has_info>
+        <phrase_list>
+            <phrase id="222">
+                <text>dl_stalker_quest_complete_222</text>
+            </phrase>
+            <phrase id="2">
+                <text>dl_stalker_quest_complete_2</text>
+                <has_info>dl_stalker_quest_bandits_kill</has_info>
+                <next>3</next>
+            </phrase>
+            <phrase id="3">
+                <text>dl_stalker_quest_complete_3</text>
+                <give_info>dl_stalker_quest_done</give_info>
+            </phrase>
+            <phrase id="22">
+                <text>dl_stalker_quest_complete_22</text>
+                <dont_has_info>dl_stalker_quest_bandits_kill</dont_has_info>
+                <next>222</next>
+            </phrase>
+            <phrase id="1">
+                <text>dl_stalker_quest_complete_1</text>
+                <next>2</next>
+                <next>22</next>
+            </phrase>
+            <phrase id="0">
+                <text>dl_stalker_quest_complete_0</text>
+                <next>1</next>
+            </phrase>
+        </phrase_list>
+    </dialog>
+    <dialog id="dl_stalker_quest">
+        <dont_has_info>dl_stalker_quest_taked</dont_has_info>
+        <phrase_list>
+            <phrase id="11">
+                <text>dl_stalker_quest_11</text>
+            </phrase>
+            <phrase id="22">
+                <text>dl_stalker_quest_22</text>
+            </phrase>
+            <phrase id="2">
+                <text>dl_stalker_quest_2</text>
+                <action>dialogs_deadlake.dl_stalker_quest_script</action>
+                <give_info>dl_stalker_quest_taked</give_info>
+            </phrase>
+            <phrase id="1">
+                <text>dl_stalker_quest_1</text>
+                <next>2</next>
+                <next>22</next>
+            </phrase>
+            <phrase id="0">
+                <text>dl_stalker_quest_0</text>
+                <next>1</next>
+                <next>11</next>
+            </phrase>
+        </phrase_list>
+    </dialog>
+
+    <dialog id="dl_val_a3_stalker_leader_art_3_dialog">
+	   <precondition>dialogs_deadlake.dl_check_3_art</precondition>
+        <has_info>dl_actor_has_first_art_soul</has_info>
+        <dont_has_info>dl_new_time_search_art_complete</dont_has_info>
+        <phrase_list>
+            <phrase id="2">
+                <text>dl_val_a3_stalker_leader_art_3_dialog_2</text>
+                <action>dialogs.break_dialog</action>
+            </phrase>
+            <phrase id="0">
+                <text>dl_val_a3_stalker_leader_art_3_dialog_0</text>
+                <action>dialogs_deadlake.dl_out_3_art</action>
+                <next>1</next>
+            </phrase>
+            <phrase id="1">
+                <text>dl_val_a3_stalker_leader_art_3_dialog_1</text>
+                <action>dialogs_deadlake.dl_out_3_art_1</action>
+                <give_info>dl_new_time_search_art_complete</give_info>
+                <next>2</next>
+            </phrase>
+        </phrase_list>
+    </dialog>
+    <dialog id="dl_val_a3_stalker_leader_art_2_dialog">
+	   <precondition>dialogs_deadlake.dl_check_2_art</precondition>
+        <has_info>dl_actor_has_first_art_flash</has_info>
+        <dont_has_info>dl_new_time_search_art_complete</dont_has_info>
+        <phrase_list>
+            <phrase id="1">
+                <text>dl_val_a3_stalker_leader_art_2_dialog_1</text>
+                <action>dialogs_deadlake.dl_out_2_art_1</action>
+                <give_info>dl_new_time_search_art_complete</give_info>
+                <next>2</next>
+            </phrase>
+            <phrase id="2">
+                <text>dl_val_a3_stalker_leader_art_2_dialog_2</text>
+                <action>dialogs.break_dialog</action>
+            </phrase>
+            <phrase id="0">
+                <text>dl_val_a3_stalker_leader_art_2_dialog_0</text>
+                <action>dialogs_deadlake.dl_out_2_art</action>
+                <next>1</next>
+            </phrase>
+        </phrase_list>
+    </dialog>
+    <dialog id="dl_storyline_krasnopolsky_first_dialog">
+        <has_info>dl_task_wait_dolg_go</has_info>
+        <dont_has_info>dl_go_wait_to_attak_mercenaries</dont_has_info>
+        <phrase_list>
+            <phrase id="2">
+                <text>dl_storyline_krasnopolsky_first_dialog_2</text>
+                <next>4</next>
+            </phrase>
+            <phrase id="4">
+                <text>dl_storyline_krasnopolsky_first_dialog_4</text>
+                <action>dialogs.break_dialog</action>
+                <give_info>dl_go_wait_to_attak_mercenaries</give_info>
+            </phrase>
+            <phrase id="1">
+                <text>dl_storyline_krasnopolsky_first_dialog_1</text>
+                <next>2</next>
+            </phrase>
+            <phrase id="0">
+                <text>dl_storyline_krasnopolsky_first_dialog_0</text>
+                <next>1</next>
+            </phrase>
+        </phrase_list>
+    </dialog>
+    <dialog id="dl_storyline_garik_quest">
+        <has_info>dl_new_time_search_art_complete</has_info>
+        <has_info>dl_bandits_quest_attak_done</has_info>
+        <dont_has_info>dl_storyline_garik_quest_go</dont_has_info>
+        <phrase_list>
+            <phrase id="2">
+                <text>dl_storyline_garik_quest_2</text>
+                <give_info>dl_storyline_garik_quest_go</give_info>
+                <next>3</next>
+            </phrase>
+            <phrase id="3">
+                <text>dl_storyline_garik_quest_3</text>
+                <action>dialogs.break_dialog</action>
+            </phrase>
+            <phrase id="1">
+                <text>dl_storyline_garik_quest_1</text>
+                <next>2</next>
+            </phrase>
+            <phrase id="0">
+                <text>dl_storyline_garik_quest_0</text>
+                <next>1</next>
+            </phrase>
+        </phrase_list>
+    </dialog>
+    <dialog id="dl_second_quest_garik_dialog_02">
+        <has_info>zat_b42_controller_dead</has_info>
+        <dont_has_info>dl_sos_signal_complete</dont_has_info>
+        <phrase_list>
+            <phrase id="2">
+                <text>dl_second_quest_garik_dialog_02_2</text>
+                <action>dialogs.break_dialog</action>
+                <give_info>dl_sos_signal_complete</give_info>
+            </phrase>
+            <phrase id="1">
+                <text>dl_second_quest_garik_dialog_02_1</text>
+                <next>2</next>
+            </phrase>
+            <phrase id="0">
+                <text>dl_second_quest_garik_dialog_02_0</text>
+                <next>1</next>
+            </phrase>
+        </phrase_list>
+    </dialog>
+    <dialog id="dl_second_quest_garik_dialog">
+        <has_info>dl_task_wait_dolg_go</has_info>
+        <dont_has_info>zat_b42_mayron_spawn</dont_has_info>
+        <phrase_list>
+            <phrase id="2">
+                <text>dl_second_quest_garik_dialog_2</text>
+                <action>dialogs.break_dialog</action>
+                <give_info>zat_b42_mayron_spawn</give_info>
+            </phrase>
+            <phrase id="1">
+                <text>dl_second_quest_garik_dialog_1</text>
+                <next>2</next>
+            </phrase>
+            <phrase id="0">
+                <text>dl_second_quest_garik_dialog_0</text>
+                <next>1</next>
+            </phrase>
+        </phrase_list>
+    </dialog>
+    <dialog id="dl_first_dialog_wounded_buriy">
+        <dont_has_info>dl_stalker_buriy_ranen_off</dont_has_info>
+        <phrase_list>
+            <phrase id="1">
+                <text>dl_first_dialog_wounded_buriy_1</text>
+                <action>dialogs.break_dialog</action>
+                <give_info>dl_stalker_buriy_ranen_off</give_info>
+            </phrase>
+            <phrase id="0">
+                <text>dl_first_dialog_wounded_buriy_0</text>
+                <next>1</next>
+            </phrase>
+        </phrase_list>
+    </dialog>
+    <dialog id="dl_first_dialog_buriy_base">
+        <has_info>dl_stalker_buriy_ranen_off</has_info>
+        <dont_has_info>dl_stalker_buriy_talk_of_bizon</dont_has_info>
+        <phrase_list>
+            <phrase id="3">
+                <text>dl_first_dialog_buriy_base_3</text>
+                <next>4</next>
+            </phrase>
+            <phrase id="4">
+                <text>dl_first_dialog_buriy_base_4</text>
+                <next>5</next>
+            </phrase>
+            <phrase id="5">
+                <text>dl_first_dialog_buriy_base_5</text>
+                <next>6</next>
+            </phrase>
+            <phrase id="6">
+                <text>dl_first_dialog_buriy_base_6</text>
+                <next>7</next>
+            </phrase>
+            <phrase id="7">
+                <text>dl_first_dialog_buriy_base_7</text>
+                <next>8</next>
+            </phrase>
+            <phrase id="8">
+                <text>dl_first_dialog_buriy_base_8</text>
+                <next>9</next>
+            </phrase>
+            <phrase id="9">
+                <text>dl_first_dialog_buriy_base_9</text>
+                <action>dialogs.break_dialog</action>
+                <give_info>dl_stalker_buriy_talk_of_bizon</give_info>
+            </phrase>
+            <phrase id="1">
+                <text>dl_first_dialog_buriy_base_1</text>
+                <next>2</next>
+            </phrase>
+            <phrase id="2">
+                <text>dl_first_dialog_buriy_base_2</text>
+                <next>3</next>
+            </phrase>
+            <phrase id="0">
+                <text>dl_first_dialog_buriy_base_0</text>
+                <next>1</next>
+            </phrase>
+        </phrase_list>
+    </dialog>
+    <dialog id="dl_first_dialog_val_a3_stalker_garik">
+        <has_info>lake_out_bandits_complete</has_info>
+        <dont_has_info>dl_first_dialog_val_a3_stalker_garik_done</dont_has_info>
+        <phrase_list>
+            <phrase id="7">
+                <text>dl_first_dialog_val_a3_stalker_garik_7</text>
+                <action>dialogs.break_dialog</action>
+                <give_info>dl_first_dialog_val_a3_stalker_garik_done</give_info>
+            </phrase>
+            <phrase id="3">
+                <text>dl_first_dialog_val_a3_stalker_garik_3</text>
+                <next>4</next>
+            </phrase>
+            <phrase id="4">
+                <text>dl_first_dialog_val_a3_stalker_garik_4</text>
+                <next>5</next>
+            </phrase>
+            <phrase id="5">
+                <text>dl_first_dialog_val_a3_stalker_garik_5</text>
+                <next>6</next>
+            </phrase>
+            <phrase id="6">
+                <text>dl_first_dialog_val_a3_stalker_garik_6</text>
+                <next>7</next>
+            </phrase>
+            <phrase id="1">
+                <text>dl_first_dialog_val_a3_stalker_garik_1</text>
+                <next>2</next>
+            </phrase>
+            <phrase id="2">
+                <text>dl_first_dialog_val_a3_stalker_garik_2</text>
+                <next>3</next>
+            </phrase>
+            <phrase id="0">
+                <text>dl_first_dialog_val_a3_stalker_garik_0</text>
+                <next>1</next>
+            </phrase>
+        </phrase_list>
+    </dialog>
+    <dialog id="dl_val_a3_stalker_leader_first_dialog">
+        <has_info>lake_na_virychky_complete</has_info>
+        <dont_has_info>dl_val_a3_stalker_leader_first_dialog_done</dont_has_info>
+        <phrase_list>
+            <phrase id="6">
+                <text>dl_val_a3_stalker_leader_first_dialog_6</text>
+                <next>7</next>
+            </phrase>
+            <phrase id="9">
+                <text>dl_val_a3_stalker_leader_first_dialog_9</text>
+                <next>10</next>
+            </phrase>
+            <phrase id="7">
+                <text>dl_val_a3_stalker_leader_first_dialog_7</text>
+                <next>8</next>
+            </phrase>
+            <phrase id="8">
+                <text>dl_val_a3_stalker_leader_first_dialog_8</text>
+                <action>dialogs_deadlake.stp_deadlake_toha</action>
+                <next>9</next>
+            </phrase>
+            <phrase id="10">
+                <text>dl_val_a3_stalker_leader_first_dialog_10</text>
+                <next>11</next>
+            </phrase>
+            <phrase id="2">
+                <text>dl_val_a3_stalker_leader_first_dialog_2</text>
+                <next>3</next>
+            </phrase>
+            <phrase id="3">
+                <text>dl_val_a3_stalker_leader_first_dialog_3</text>
+                <next>4</next>
+            </phrase>
+            <phrase id="4">
+                <text>dl_val_a3_stalker_leader_first_dialog_4</text>
+                <next>5</next>
+            </phrase>
+            <phrase id="5">
+                <text>dl_val_a3_stalker_leader_first_dialog_5</text>
+                <next>6</next>
+            </phrase>
+            <phrase id="11">
+                <text>dl_val_a3_stalker_leader_first_dialog_11</text>
+                <action>dialogs.break_dialog</action>
+                <action>dialogs_deadlake.dl_random_spawn_art_quest</action>
+                <give_info>dl_val_a3_stalker_leader_first_dialog_done</give_info>
+            </phrase>
+            <phrase id="1">
+                <text>dl_val_a3_stalker_leader_first_dialog_1</text>
+                <next>2</next>
+            </phrase>
+            <phrase id="0">
+                <text>dl_val_a3_stalker_leader_first_dialog_0</text>
+                <next>1</next>
+            </phrase>
+        </phrase_list>
+    </dialog>
+    <dialog id="dl_storyline_toha_dialog">
+        <has_info>dl_actor_has_pda_killer</has_info>
+        <dont_has_info>dl_actor_going_village_dolg_mess</dont_has_info>
+        <phrase_list>
+            <phrase id="3">
+                <text>dl_storyline_toha_dialog_3</text>
+                <next>4</next>
+            </phrase>
+            <phrase id="4">
+                <text>dl_storyline_toha_dialog_4</text>
+                <next>5</next>
+            </phrase>
+            <phrase id="5">
+                <text>dl_storyline_toha_dialog_5</text>
+                <next>6</next>
+            </phrase>
+            <phrase id="6">
+                <text>dl_storyline_toha_dialog_6</text>
+                <next>7</next>
+            </phrase>
+            <phrase id="7">
+                <text>dl_storyline_toha_dialog_7</text>
+                <next>8</next>
+            </phrase>
+            <phrase id="8">
+                <text>dl_storyline_toha_dialog_8</text>
+                <action>dialogs.break_dialog</action>
+                <give_info>dl_actor_going_village_dolg_mess</give_info>
+            </phrase>
+            <phrase id="2">
+                <text>dl_storyline_toha_dialog_2</text>
+                <next>3</next>
+            </phrase>
+            <phrase id="0">
+                <text>dl_storyline_toha_dialog_0</text>
+                <next>1</next>
+            </phrase>
+            <phrase id="1">
+                <text>dl_storyline_toha_dialog_1</text>
+                <next>2</next>
+            </phrase>
+        </phrase_list>
+    </dialog>
+    <dialog id="dl_done_first_quest_val_a3_stalker_garik">
+        <has_info>dl_first_dialog_val_a3_stalker_garik_done</has_info>
+        <dont_has_info>dl_qgnc_done</dont_has_info>
+        <phrase_list>
+            <phrase id="5">
+                <text>dl_done_first_quest_val_a3_stalker_garik_5</text>
+                <action>dialogs.break_dialog</action>
+                <give_info>dl_qgnc_done</give_info>
+                <give_info>lake_na_virychky_complete</give_info>
+            </phrase>
+            <phrase id="11">
+                <text>dl_done_first_quest_val_a3_stalker_garik_11</text>
+                <action>dialogs.break_dialog</action>
+            </phrase>
+            <phrase id="4">
+                <text>dl_done_first_quest_val_a3_stalker_garik_4</text>
+                <next>5</next>
+            </phrase>
+            <phrase id="3">
+                <text>dl_done_first_quest_val_a3_stalker_garik_3</text>
+                <next>4</next>
+            </phrase>
+            <phrase id="2">
+                <text>dl_done_first_quest_val_a3_stalker_garik_2</text>
+                <action>dialogs_deadlake.stp_deadlake_garik</action>
+                <next>3</next>
+            </phrase>
+            <phrase id="1">
+                <text>dl_done_first_quest_val_a3_stalker_garik_1</text>
+                <action>dialogs_deadlake.dl_ont_lake_garik_case</action>
+                <has_info>dl_first_dialog_val_a3_stalker_garik_case</has_info>
+                <next>2</next>
+            </phrase>
+            <phrase id="0">
+                <text>dl_done_first_quest_val_a3_stalker_garik_0</text>
+                <next>1</next>
+                <next>11</next>
+            </phrase>
+        </phrase_list>
+    </dialog>
+    <dialog id="dl_storyline_toha_dialog_02">
+        <has_info>dl_actor_complete_dolg_wait</has_info>
+        <dont_has_info>dl_task_wait_dolg_go</dont_has_info>
+        <phrase_list>
+            <phrase id="4">
+                <text>dl_storyline_toha_dialog_02_4</text>
+                <action>dialogs.break_dialog</action>
+                <give_info>dl_task_wait_dolg_go</give_info>
+            </phrase>
+            <phrase id="3">
+                <text>dl_storyline_toha_dialog_02_3</text>
+                <next>4</next>
+            </phrase>
+            <phrase id="2">
+                <text>dl_storyline_toha_dialog_02_2</text>
+                <next>3</next>
+            </phrase>
+            <phrase id="1">
+                <text>dl_storyline_toha_dialog_02_1</text>
+                <next>2</next>
+            </phrase>
+            <phrase id="0">
+                <text>dl_storyline_toha_dialog_02_0</text>
+                <next>1</next>
+            </phrase>
+        </phrase_list>
+    </dialog>
+    <dialog id="dl_storyline_krasnopolsky_third_dialog">
+        <has_info>dl_all_mercs_death</has_info>
+        <dont_has_info>dl_storyline_pre_done</dont_has_info>
+        <phrase_list>
+            <phrase id="1">
+                <text>dl_storyline_krasnopolsky_third_dialog_1</text>
+                <next>2</next>
+            </phrase>
+            <phrase id="2">
+                <text>dl_storyline_krasnopolsky_third_dialog_2</text>
+                <next>3</next>
+            </phrase>
+            <phrase id="3">
+                <text>dl_storyline_krasnopolsky_third_dialog_3</text>
+                <action>dialogs.break_dialog</action>
+                <give_info>dl_storyline_pre_done</give_info>
+            </phrase>
+            <phrase id="0">
+                <text>dl_storyline_krasnopolsky_third_dialog_0</text>
+                <next>1</next>
+            </phrase>
+        </phrase_list>
+    </dialog>
+    <dialog id="dl_storyline_krasnopolsky_second_dialog">
+        <has_info>dl_go_wait_to_attak_mercenaries</has_info>
+        <dont_has_info>dl_dolg_and_stalkers_attak_go</dont_has_info>
+        <phrase_list>
+            <phrase id="1">
+                <text>dl_storyline_krasnopolsky_second_dialog_1</text>
+                <action>dialogs.break_dialog</action>
+                <give_info>dl_dolg_and_stalkers_attak_go</give_info>
+            </phrase>
+            <phrase id="0">
+                <text>dl_storyline_krasnopolsky_second_dialog_0</text>
+                <next>1</next>
+            </phrase>
+        </phrase_list>
+    </dialog>
+    <dialog id="dl_val_a3_stalker_leader_art_1_dialog">
+        <has_info>dl_actor_has_first_art_vyvert</has_info>
+        <dont_has_info>dl_new_time_search_art_complete</dont_has_info>
+	   <precondition>dialogs_deadlake.dl_check_1_art</precondition>
+        <phrase_list>
+            <phrase id="2">
+                <text>dl_val_a3_stalker_leader_art_1_dialog_2</text>
+                <action>dialogs.break_dialog</action>
+            </phrase>
+            <phrase id="1">
+                <text>dl_val_a3_stalker_leader_art_1_dialog_1</text>
+                <action>dialogs_deadlake.dl_out_1_art</action>
+                <action>dialogs_deadlake.dl_out_1_art_1</action>
+                <give_info>dl_new_time_search_art_complete</give_info>
+                <next>2</next>
+            </phrase>
+            <phrase id="0">
+                <text>dl_val_a3_stalker_leader_art_1_dialog_0</text>
+                <next>1</next>
+            </phrase>
+        </phrase_list>
+    </dialog>
+    <dialog id="dl_tech_pda_vorona_locked_out">
+	   <precondition>dialogs_deadlake.check_pda_stalker_to_tech</precondition>
+        <has_info>kat_actor_has_pda_vorona</has_info>
+        <dont_has_info>dl_actor_out_pda_vorona_wait</dont_has_info>
+        <phrase_list>
+            <phrase id="2">
+                <text>dl_tech_pda_vorona_locked_out_2</text>
+                <action>dialogs.break_dialog</action>
+                <action>dialogs_deadlake.val_out_pda_stalker</action>
+                <give_info>dl_actor_out_pda_vorona_wait</give_info>
+            </phrase>
+            <phrase id="0">
+                <text>dl_tech_pda_vorona_locked_out_0</text>
+                <next>1</next>
+            </phrase>
+            <phrase id="1">
+                <text>dl_tech_pda_vorona_locked_out_1</text>
+                <next>2</next>
+            </phrase>
+        </phrase_list>
+    </dialog>
+    <dialog id="dl_tech_pda_vorona_unlocked_in">
+        <has_info>dl_pda_vorona_unlocked_go_to_tech</has_info>
+        <has_info>dl_actor_out_pda_vorona_wait</has_info>
+        <dont_has_info>dl_pda_vorona_unlocked</dont_has_info>
+        <phrase_list>
+            <phrase id="2">
+                <text>dl_tech_pda_vorona_unlocked_in_2</text>
+                <action>dialogs.break_dialog</action>
+                <give_info>dl_pda_vorona_unlocked</give_info>
+            </phrase>
+            <phrase id="0">
+                <text>dl_tech_pda_vorona_unlocked_in_0</text>
+                <next>1</next>
+            </phrase>
+            <phrase id="1">
+                <text>dl_tech_pda_vorona_unlocked_in_1</text>
+                <action>dialogs_deadlake.reward_slm_complete</action>
+                <next>2</next>
+            </phrase>
+        </phrase_list>
+    </dialog>
+
+</game_dialogs>

@@ -1,0 +1,76 @@
+[mob_death]
+on_info = %+sad_sim_16_bloodsuckers_awake%
+
+[mob_hit]
+on_info = %+sad_sim_16_bloodsuckers_awake%
+
+[mob_walker@def]
+combat_ignore_cond = true
+on_info3 = {+sad_sim_16_bloodsuckers_awake} mob_home@2 %=set_visual_memory_enabled(1) =set_bloodsucker_state(default)%
+
+; ---------------------------------------------------------------------------------------------------------------------------------- 1 (cave)
+[logic@krovosos_1]
+active = mob_walker@1_init
+suitable = {=target_squad_name(sad_sim_16_bloodsuckers)} true
+monster_job = true
+prior = 200
+on_death = mob_death
+on_hit = mob_hit
+
+[mob_walker@1_init]:mob_walker@def
+path_walk = bloodsucker_1_place
+path_look = bloodsucker_1_look
+on_info = {-sad_sim_16_bloodsucker_state_1} %=set_bloodsucker_state(0) =set_visual_memory_enabled(0) +sad_sim_16_bloodsucker_state_1 =teleport_npc(sad_sim_16_bloodsucker_1_place)%
+on_info2 = {=actor_in_zone(sad_sim_16_bloodsucker_wake_zone_1)} %+sad_sim_16_bloodsuckers_awake%
+
+; ---------------------------------------------------------------------------------------------------------------------------------- 2 (cave)
+[logic@krovosos_2]
+active = mob_walker@2_init
+suitable = {=target_squad_name(sad_sim_16_bloodsuckers)} true
+monster_job = true
+prior = 190
+on_death = mob_death
+on_hit = mob_hit
+
+[mob_walker@2_init]:mob_walker@def
+path_walk = bloodsucker_2_place
+path_look = bloodsucker_1_look
+on_info = {-sad_sim_16_bloodsucker_state_2} %=set_bloodsucker_state(0) =set_visual_memory_enabled(0) +sad_sim_16_bloodsucker_state_2 =teleport_npc(sad_sim_16_bloodsucker_2_place)%
+on_info2 = {=actor_in_zone(sad_sim_16_bloodsucker_wake_zone_1)} %+sad_sim_16_bloodsuckers_awake%
+
+; ---------------------------------------------------------------------------------------------------------------------------------- 3 (bush)
+[logic@krovosos_3]
+active = mob_walker@3_init
+suitable = {=target_squad_name(sad_sim_16_bloodsuckers)} true
+monster_job = true
+prior = 180
+on_death = mob_death
+on_hit = mob_hit
+
+[mob_walker@3_init]:mob_walker@def
+path_walk = bloodsucker_3_place
+path_look = bloodsucker_1_look
+on_info = {-sad_sim_16_bloodsucker_state_3} %=set_bloodsucker_state(0) =set_visual_memory_enabled(0) +sad_sim_16_bloodsucker_state_3 =teleport_npc(sad_sim_16_bloodsucker_3_place)%
+on_info2 = {=dist_to_actor_le(12)} %+sad_sim_16_bloodsuckers_awake%
+
+; ---------------------------------------------------------------------------------------------------------- mob home
+[mob_home@1]
+path_home = dogs_home_1
+aggressive = true
+on_game_timer = 300 | {!has_enemy} mob_home@3
+home_min_radius = 10
+home_max_radius = 30
+
+[mob_home@2]
+path_home = dogs_home_2
+aggressive = true
+on_game_timer = 300 | {!has_enemy} mob_home@1
+home_min_radius = 10
+home_max_radius = 30
+
+[mob_home@3]
+path_home = dogs_home_2
+aggressive = true
+on_game_timer = 300 | {!has_enemy} mob_home@1
+home_min_radius = 10
+home_max_radius = 30

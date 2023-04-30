@@ -1,0 +1,13 @@
+[logic]
+active = sr_idle@markus_gone
+
+[sr_idle@markus_gone]
+on_actor_inside = {+perevalochnaya_baza_quest_flash_dead} sr_idle@markus_gone_1 %+pb_markus_gone%
+
+[sr_idle@markus_gone_1]
+on_timer = 3000 | sr_idle@actor_go_to_markus %=give_task(pb_found_to_markus) +pb_markus_founded_start_quest%
+
+[sr_idle@actor_go_to_markus]
+on_info = {+actor_in_zone_markus_signal} sr_idle@markus_gone_nil %=pb_actor_replic_search_markus%
+
+[sr_idle@markus_gone_nil]

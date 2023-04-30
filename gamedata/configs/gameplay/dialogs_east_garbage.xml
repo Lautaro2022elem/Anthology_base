@@ -1,0 +1,184 @@
+<?xml version="1.0" encoding="windows-1251" ?>
+<game_dialogs>
+
+			
+			
+			
+	<dialog id="gar_a2_bagretcev_start_dialog">
+        <dont_has_info>gar_a2_bagretcev_talking_1</dont_has_info>
+        <phrase_list>
+            <phrase id="0">
+                <text>gar_a2_bagretcev_start_dialog_talking_0</text>
+                <next>1</next>
+            </phrase>
+            <phrase id="1">
+                <text>gar_a2_bagretcev_start_dialog_talking_1</text>
+				<next>2</next>
+            </phrase>
+            <phrase id="2">
+                <text>gar_a2_bagretcev_start_dialog_talking_2</text>
+                <next>3</next>
+            </phrase>
+            <phrase id="3">
+                <text>gar_a2_bagretcev_start_dialog_talking_3</text>
+                <next>4</next>
+            </phrase>
+            <phrase id="4">
+                <text>gar_a2_bagretcev_start_dialog_talking_4</text>
+                <next>5</next>
+            </phrase>
+            <phrase id="5">
+                <text>gar_a2_bagretcev_start_dialog_talking_5</text>
+                <next>6</next>
+            </phrase>
+            <phrase id="6">
+                <text>gar_a2_bagretcev_start_dialog_talking_6</text>
+                <next>7</next>
+            </phrase>
+            <phrase id="7">
+                <text>gar_a2_bagretcev_start_dialog_talking_7</text>
+                <next>8</next>
+            </phrase>
+            <phrase id="8">
+                <text>gar_a2_bagretcev_start_dialog_talking_8</text>
+                <next>9</next>
+            </phrase>
+            <phrase id="9">
+                <text>gar_a2_bagretcev_start_dialog_talking_9</text>
+                <give_info>gar_a2_bagretcev_talking_1</give_info>
+				<action>dialogs.break_dialog</action>
+            </phrase>
+        </phrase_list>
+    </dialog>	
+			
+			
+			
+			
+			
+			
+			
+			
+		
+	<dialog id="gar_a2_bagretcev_quest_dialog">
+	<has_info>gar_a2_borland_quest_dialog_info</has_info>
+        <dont_has_info>gar_a2_bagretcev_quest_dialog_info</dont_has_info>
+        <phrase_list>
+            <phrase id="0">
+                <text>gar_a2_bagretcev_second_dialog_talking_00</text>
+                <next>1</next>
+            </phrase>
+            <phrase id="1">
+                <text>gar_a2_bagretcev_second_dialog_talking_0</text>
+				<next>2</next>
+            </phrase>
+            <phrase id="2">
+                <text>gar_a2_bagretcev_second_dialog_talking_1</text>
+                <next>3</next>
+            </phrase>
+            <phrase id="3">
+                <text>gar_a2_bagretcev_second_dialog_talking_2</text>
+                <next>4</next>
+            </phrase>
+            <phrase id="4">
+                <text>gar_a2_bagretcev_second_dialog_talking_3</text>
+                <next>5</next>
+            </phrase>
+            <phrase id="5">
+                <text>gar_a2_bagretcev_second_dialog_talking_4</text>
+                <give_info>gar_a2_bagretcev_quest_dialog_info</give_info>
+				<action>dialogs.break_dialog</action>
+            </phrase>
+        </phrase_list>
+    </dialog>		
+			
+			
+			
+			
+			
+			
+			
+			
+			
+	
+	
+	
+	 <dialog id="gar_a2_borland_start_dialog">
+	  <has_info>gar_a2_bagretcev_talking_1</has_info>
+        <dont_has_info>gar_a2_borland_talking_1</dont_has_info>
+        <phrase_list>
+            <phrase id="0">
+                <text>gar_a2_borland_start_dialog_talking_101</text>
+                <next>1</next>
+            </phrase>
+            <phrase id="1">
+                <text>gar_a2_borland_start_dialog_talking_0</text>
+				<next>2</next>
+            </phrase>
+            <phrase id="2">
+                <text>gar_a2_borland_start_dialog_talking_1</text>
+                <next>3</next>
+            </phrase>
+            <phrase id="3">
+                <text>gar_a2_borland_start_dialog_talking_2</text>
+                <next>4</next>
+            </phrase>
+            <phrase id="4">
+                <text>gar_a2_borland_start_dialog_talking_3</text>
+                <next>5</next>
+            </phrase>
+            <phrase id="5">
+                <text>gar_a2_borland_start_dialog_talking_4</text>
+                <give_info>gar_a2_borland_talking_1</give_info>
+				<action>dialogs.break_dialog</action>
+            </phrase>
+        </phrase_list>
+    </dialog>
+	
+	
+    <dialog id="gar_a2_borland_quest_dialog">
+	  <has_info>gar_a2_sp_borland_spasenie</has_info>
+        <dont_has_info>gar_a2_borland_quest_dialog_info</dont_has_info>
+        <phrase_list>
+            <phrase id="0">
+                <text>gar_a2_borland_second_dialog_talking_0</text>
+                <next>1</next>
+            </phrase>
+            <phrase id="1">
+                <text>gar_a2_borland_second_dialog_talking_1</text>
+				<action>dialogs_east_garbage.gar_main_quest_give_items</action>
+				<next>2</next>
+            </phrase>
+            <phrase id="2">
+                <text>gar_a2_borland_second_dialog_talking_2</text>
+                <next>3</next>
+            </phrase>
+            <phrase id="3">
+                <text>gar_a2_borland_second_dialog_talking_3</text>
+                <give_info>gar_a2_borland_quest_dialog_info</give_info>
+				<action>dialogs.break_dialog</action>
+            </phrase>
+        </phrase_list>
+    </dialog>
+	
+	
+	
+	<dialog id="gar_a2_dolg_guard_dialog">
+	<dont_has_info>gar_a2_dolg_guard_dialog_info</dont_has_info>
+        <phrase_list>
+            <phrase id="0">
+                <text>gar_a2_dolg_guard_dialog_0</text>
+                <next>1</next>
+				</phrase>
+            <phrase id="1">
+                <text>gar_a2_dolg_guard_dialog_1</text>
+                <give_info>gar_a2_dolg_guard_dialog_info</give_info>
+				<give_info>gar_to_bar_sr_1_infa_open</give_info>
+				<action>dialogs.break_dialog</action>
+            </phrase>
+        </phrase_list>
+    </dialog>
+	
+	
+
+	
+</game_dialogs>

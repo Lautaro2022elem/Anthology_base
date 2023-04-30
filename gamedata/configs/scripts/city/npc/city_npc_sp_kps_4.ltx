@@ -1,0 +1,15 @@
+[logic]
+active = move
+on_death = death
+
+[death]
+on_info = %+city_npc_sp_kps_4_death%
+
+[move]
+move_dest_number = 98155
+move_look_vertex = 95976
+move_state_when_center = hide
+move_state_when_move = assault
+on_info = {+city_assault_heli_death} %=kill_npc%
+gather_items_enabled = false
+corpse_detection_enabled = false

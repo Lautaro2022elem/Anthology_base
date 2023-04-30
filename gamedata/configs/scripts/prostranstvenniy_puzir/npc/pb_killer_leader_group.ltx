@@ -1,0 +1,58 @@
+;=========meet_quest_line========
+[meet@quest_line]
+close_anim 		= nil
+close_victim 	= nil
+far_anim 		= nil
+far_victim 		= nil
+close_distance 	= 0
+far_distance 	= 0
+use = {=actor_enemy} false, {=dist_to_actor_le(3)} true, false
+snd_on_use = {!dist_to_actor_le(3)} nil
+meet_on_talking = false
+;==================================
+
+[logic]
+active = remark@pb_leader_killer_group
+post_combat_time = 0, 0
+suitable = {=check_npc_name(pb_leader_killer_group)} true, false
+level_spot = quest_npc
+prior = 250
+
+[remark@pb_leader_killer_group]
+anim = ward
+target = path | pro_leader_killer_group_look, 0
+on_info = {+pro_actor_meet_leader_killer_1 -pro_tesak_say_kill_kuvalda_done} %=play_sound(pb_tesak_say_kill_kuvalda) +pro_tesak_say_kill_kuvalda_done%
+on_info2 = {+pro_kuvalda_scene_dead_enable_ui} remark@pb_leader_killer_group_after
+combat_ignore_cond = true
+combat_ignore_keep_when_attacked = true
+invulnerable = true
+gather_items_enabled = false
+help_wounded_enabled = false
+corpse_detection_enabled = false
+meet = meet@start_quest
+
+[remark@pb_leader_killer_group_after]
+anim = ward
+target = path | pro_leader_killer_group_look, 0
+on_info = {+pro_murad_prisoner_dialog_done} %=release_npc%
+combat_ignore_cond = true
+combat_ignore_keep_when_attacked = true
+invulnerable = true
+gather_items_enabled = false
+help_wounded_enabled = false
+corpse_detection_enabled = false
+meet = meet@load_quest
+
+[meet@start_quest]:meet@quest_line
+close_victim = actor
+use = {!actor_enemy =dist_to_actor_le(5) +pro_tesak_to_actor_meet_start -pro_actor_meet_leader_killer_1} self, true
+allow_break = false
+meet_dialog = pb_killer_leader_group_meet
+trade_enable = false
+
+[meet@load_quest]:meet@quest_line
+close_victim = actor
+use = {!actor_enemy =dist_to_actor_le(5) +pro_kuvalda_scene_dead_enable_ui -pro_actor_meet_leader_killer_2} self, true
+allow_break = false
+meet_dialog = pb_killer_leader_group_agres
+trade_enable = false

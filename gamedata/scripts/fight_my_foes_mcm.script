@@ -1,0 +1,9 @@
+function on_mcm_load()
+    op = { id= "fight_my_foes",sh=true,gr=
+		    {
+		    	{id= "title",type= "slide",link= "ui_options_slider_player",text="ui_mcm_fight_my_foes_title",size= {512,50},spacing= 20},
+		        {id = "enable_fight_my_foes", type = "check", val = 1, def = true},
+		    }
+	     }
+	return op
+end

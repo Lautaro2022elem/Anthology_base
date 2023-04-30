@@ -1,0 +1,8 @@
+[logic]
+active = sr_idle@in
+
+[sr_idle@in]
+on_actor_in_zone = wiz_to_emp_sr | sr_idle@out %=wiz_to_emp_sr_lv%
+
+[sr_idle@out]
+on_actor_not_in_zone = wiz_to_emp_sr | sr_idle@in

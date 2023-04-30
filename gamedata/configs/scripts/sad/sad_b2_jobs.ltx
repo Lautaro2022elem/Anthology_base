@@ -1,0 +1,211 @@
+[hit]
+on_info = {-sad_actor_enemy_b2 =actor_enemy} %+sad_actor_enemy_b2%
+
+[death]
+on_info = {-sad_actor_enemy_b2 =killed_by_actor} %+sad_actor_enemy_b2%
+
+; ----------------------------------------------------------------------------- 1
+[logic@sad_b2_animp_1]
+;suitable = {=check_npc_name(sim_default_stalker) !surge_started} true
+active = animpoint@animp_1
+on_death = death
+on_hit = hit
+prior = 120
+
+[animpoint@animp_1]
+cover_name = sad_b2_animp_1
+on_info = {=is_rain} animpoint@animp_rain_1
+
+[animpoint@animp_rain_1]
+cover_name = sad_b2_animp_1_rain
+on_info = {!is_rain} animpoint@animp_1
+
+; ----------------------------------------------------------------------------- 2
+[logic@sad_b2_animp_2]
+;suitable = {=check_npc_name(sim_default_stalker) !surge_started} true
+active = animpoint@animp_2
+on_death = death
+on_hit = hit
+prior = 120
+
+[animpoint@animp_2]
+cover_name = sad_b2_animp_2
+on_info = {=is_rain} animpoint@animp_rain_2
+
+[animpoint@animp_rain_2]
+cover_name = sad_b2_animp_2_rain
+on_info = {!is_rain} animpoint@animp_2
+
+; ----------------------------------------------------------------------------- 3 -turnik
+[logic@sad_b2_animp_3]
+;suitable = {=check_npc_name(sim_default_stalker) !surge_started} true
+active = walker@animp_3
+on_death = death
+on_hit = hit
+prior = 130
+
+[walker@animp_3]
+path_walk = animp_3_walk
+path_look = animp_3_look
+on_info = {=is_rain} walker@animp_rain_3
+on_game_timer = 750 | animpoint@3_turnik
+
+[animpoint@3_turnik]
+avail_animations = turnik
+cover_name = sad_b2_animp_turnik
+reach_movement = walk_noweap
+use_camp = false
+meet = no_meet
+on_info = {=is_rain} walker@animp_rain_3
+on_info2 = {=animpoint_reached} animpoint@3_turnik_anim
+
+[animpoint@3_turnik_anim]
+avail_animations = turnik
+cover_name = sad_b2_animp_turnik
+reach_movement = walk_noweap
+meet = no_meet
+use_camp = false
+on_game_timer = 200 | walker@animp_3
+gather_items_enabled = false
+help_wounded_enabled = false
+corpse_detection_enabled = false
+
+[walker@animp_rain_3]
+path_walk = animp_3_rain_walk
+path_look = animp_3_rain_look
+on_info = {!is_rain} walker@animp_3
+
+; ----------------------------------------------------------------------------- 4+
+[logic@sad_b2_animp_4]
+;suitable = {=check_npc_name(sim_default_stalker) !surge_started} true
+active = animpoint@animp_4
+on_death = death
+on_hit = hit
+prior = 110
+
+[animpoint@animp_4]
+cover_name = sad_b2_animp_4
+on_info = {=is_rain} walker@animp_rain_4
+
+[walker@animp_rain_4]
+path_walk = animp_4_rain_walk
+path_look = animp_4_rain_look
+on_info = {!is_rain} animpoint@animp_4
+
+; ----------------------------------------------------------------------------- 5+
+[logic@sad_b2_animp_5]
+;suitable = {=check_npc_name(sim_default_stalker) !surge_started} true
+active = walker@animp_5
+on_death = death
+on_hit = hit
+prior = 110
+
+[walker@animp_5]
+path_walk = animp_5_walk
+path_look = animp_5_look
+on_info = {=is_rain} walker@animp_rain_5
+
+[walker@animp_rain_5]
+path_walk = animp_5_rain_walk
+path_look = animp_5_rain_look
+on_info = {!is_rain} walker@animp_5
+
+; ----------------------------------------------------------------------------- 6
+[logic@sad_b2_animp_6]
+;suitable = {=check_npc_name(sim_default_stalker) !surge_started} true
+active = animpoint@animp_6
+on_death = death
+on_hit = hit
+prior = 120
+
+[animpoint@animp_6]
+cover_name = sad_b2_animp_6
+on_info = {=is_rain} animpoint@animp_rain_6
+
+[animpoint@animp_rain_6]
+cover_name = sad_b2_animp_6_rain
+on_info = {!is_rain} animpoint@animp_6
+
+; ----------------------------------------------------------------------------- 7
+[logic@sad_b2_animp_7]
+;suitable = {=check_npc_name(sim_default_stalker) !surge_started} true
+active = animpoint@animp_7
+on_death = death
+on_hit = hit
+prior = 120
+
+[animpoint@animp_7]
+cover_name = sad_b2_animp_7
+on_info = {=is_rain} animpoint@animp_rain_7
+
+[animpoint@animp_rain_7]
+cover_name = sad_b2_animp_7_rain
+on_info = {!is_rain} animpoint@animp_7
+
+; ----------------------------------------------------------------------------- 8
+[logic@sad_b2_animp_8]
+;suitable = {=check_npc_name(sim_default_stalker) !surge_started} true
+active = animpoint@animp_8
+on_death = death
+on_hit = hit
+prior = 120
+
+[animpoint@animp_8]
+cover_name = sad_b2_animp_8
+on_game_timer = 900 | {!npc_talking} walker@animp_8
+
+[walker@animp_8]
+path_walk = animp_8_walk
+path_look = animp_8_look
+on_game_timer = 450 | {!npc_talking} animpoint@animp_8
+
+; ----------------------------------------------------------------------------- 9
+[logic@job_09]
+;suitable = {=check_npc_name(sim_default_stalker) !surge_started} true
+active = walker@9_0
+on_death = death
+on_hit = hit
+prior = 115
+
+[walker@9_0]
+path_walk = firesit_1_walk
+path_look = firesit_1_look
+on_info = {=is_rain} walker@9_1
+
+[walker@9_1]
+path_walk = firesit_1r_walk
+path_look = firesit_1r_look
+on_info = {!is_rain} walker@9_0
+
+; ----------------------------------------------------------------------------- 10
+[logic@job_10]
+;suitable = {=check_npc_name(sim_default_stalker) !surge_started} true
+active = walker@10_0
+on_death = death
+on_hit = hit
+prior = 115
+
+[walker@10_0]
+path_walk = firesit_2_walk
+path_look = firesit_2_look
+on_info = {=is_rain} walker@10_1
+
+[walker@10_1]
+path_walk = firesit_2r_walk
+path_look = firesit_2r_look
+on_info = {!is_rain} walker@10_0
+
+; ----------------------------------------------------------------------------- x
+[logic@sad_b2_volker_x]
+suitable = {=check_npc_name(sim_default_stalker) !surge_started} true
+active = walker@volk_x
+on_death = death
+on_hit = hit
+prior = 140
+
+[walker@volk_x]
+path_walk = jober_x_walk
+path_look = jober_x_look
+
+
+

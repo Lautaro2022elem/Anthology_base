@@ -1,0 +1,7 @@
+[logic]
+active = sr_idle@start_bad_end_game
+
+[sr_idle@start_bad_end_game]
+on_actor_inside = {+labx7_actor_stay_in_level -labx7_bloodscukers_sleepers_stand_up -labx7_actor_replic_about_bloodsucker_say} sr_idle@nil %=labx7_actor_replic_about_bloodsucker +labx7_actor_replic_about_bloodsucker_say%
+
+[sr_idle@nil]

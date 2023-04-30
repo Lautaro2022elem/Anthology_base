@@ -1,0 +1,42 @@
+---------------Охрана: Админ. здание-----------------
+[logic]
+suitable = {=check_npc_name(esc_killer_atp_2)} true
+prior = 200
+active = walker@esc_killer_td_2_stop
+
+[walker@esc_killer_td_2_stop]
+path_walk = esc_killer_td_2_walk
+path_look = esc_killer_td_2_look
+on_info = {+esc_killers_wait_signal -esc_killers_wait_signal_stop_sound} %=play_sound(esc_killer_wait_signal_actor) +esc_killers_wait_signal_stop_sound%
+on_info2 = {+esc_actor_hit_leader_group} walker@esc_killer_td_2
+on_timer = 18000 | walker@esc_killer_td_2_fight
+combat_ignore_cond = true
+combat_ignore_keep_when_attacked = true
+invulnerable = false
+gather_items_enabled = false
+help_wounded_enabled = false
+corpse_detection_enabled = false
+meet = no_meet
+
+[walker@esc_killer_td_2_fight]
+path_walk = esc_killer_td_2_walk
+path_look = esc_killer_td_2_look
+on_info = {+esc_killers_wait_signal -esc_killers_we_spotted_stop_sound} %=play_sound(esc_killer_we_spotted) +esc_killers_we_spotted_stop_sound%
+on_timer = 2000 | walker@esc_killer_td_2
+combat_ignore_cond = true
+combat_ignore_keep_when_attacked = true
+invulnerable = false
+gather_items_enabled = false
+help_wounded_enabled = false
+corpse_detection_enabled = false
+meet = no_meet
+
+[walker@esc_killer_td_2]
+path_walk = esc_killer_td_2_walk
+path_look = esc_killer_td_2_look
+on_info = {+esc_final_scene_in_escape_comp} %=release_npc%
+invulnerable = false
+gather_items_enabled = false
+help_wounded_enabled = false
+corpse_detection_enabled = false
+meet = no_meet

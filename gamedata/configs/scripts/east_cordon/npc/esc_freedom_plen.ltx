@@ -1,0 +1,43 @@
+[logic]
+active = walker
+on_death = death
+
+[walker]
+path_walk = esc_freedom_plen_walk_1
+path_look = esc_freedom_plen_look_1
+on_info = {=dist_to_actor_le(5)} remark@suiside %+esc_quest_line_salvation_freedom_reversed% 
+def_state_standing = prisoner
+gather_items_enabled = false
+corpse_detection_enabled = false
+combat_ignore_keep_when_attacked = true 
+combat_ignore_cond = true
+invulnerable = true
+meet = no_meet
+
+[remark]
+combat_ignore_cond = true
+combat_ignore_keep_when_attacked = true
+gather_items_enabled = false
+help_wounded_enabled = false
+corpse_detection_enabled = false
+use_camp = false
+invulnerable = true
+
+[remark@suiside]:remark
+anim = zat_b22_medic_suicide
+on_signal = anim_end | remark@suiside_shot
+meet = no_meet
+invulnerable = true
+help_wounded_enabled = false
+corpse_detection_enabled = false
+
+[remark@suiside_shot]:remark
+anim = zat_b22_medic_suicide
+on_game_timer = 7 | nil %=kill_npc%
+meet = no_meet
+invulnerable = true
+help_wounded_enabled = false
+corpse_detection_enabled = false
+
+[death]
+on_info = %+esc_freedom_plen_death =give_task(esc_quest_line_secret_freedom)%

@@ -1,0 +1,618 @@
+--[[ ----------------------------------------------------------------------------------------------- 
+ File       : dialogs_bar.script
+ Description: Диалоговые функции для Бара
+ Copyright  : 2011 © Spectrum Project Game Worold
+ Author		: denis2000
+ Last edit  : 14.08.2012 (by denis2000)
+--]] -----------------------------------------------------------------------------------------------
+--/											Функции для арены
+--]] -----------------------------------------------------------------------------------------------
+
+---------------------------Переложить инвентарь ГГ в сейф-------------------------------------------------
+function relocate_actor_inventory_to_arena_box(first_speaker, second_speaker)
+	xr_effects.relocate_actor_inventory_to_box(db.actor,nil,{"east_bar_arena_inventory_box"})
+end
+
+-------------------------Выдача инвентаря для боя дуэль-----------------------------------------------
+function give_actor_inventory_to_duel_1(first_speaker, second_speaker)
+	inventory_items = {"wpn_fort","ammo_9x18_fmj","novice_outfit"}
+	xr_effects.give_actor(db.actor,nil,inventory_items)
+end
+
+function give_actor_inventory_to_duel_2(first_speaker, second_speaker)
+	inventory_items = {"wpn_toz34","ammo_12x76_zhekan","ammo_12x76_zhekan","stalker_outfit"}
+	xr_effects.give_actor(db.actor,nil,inventory_items)
+end
+
+function give_actor_inventory_to_duel_3(first_speaker, second_speaker)
+	inventory_items = {"wpn_fn2000","ammo_5.56x45_ap","svoboda_light_outfit"}
+	xr_effects.give_actor(db.actor,nil,inventory_items)
+end
+
+function give_actor_inventory_to_duel_4(first_speaker, second_speaker)
+	inventory_items = {"wpn_svd","ammo_7.62x54_7h1","ammo_7.62x54_7h1","dolg_outfit"}
+	xr_effects.give_actor(db.actor,nil,inventory_items)
+end
+
+function give_actor_inventory_to_duel_5(first_speaker, second_speaker)
+	inventory_items = {"wpn_l85","ammo_5.56x45_ss190","cs_heavy_outfit"}
+	xr_effects.give_actor(db.actor,nil,inventory_items)
+end
+
+--------------------------Выдача инвентаря для боя охота----------------------------------------------
+function give_actor_inventory_to_hunt_1(first_speaker, second_speaker)
+	inventory_items = {"wpn_fort","ammo_9x18_fmj","novice_outfit"}
+	xr_effects.give_actor(db.actor,nil,inventory_items)
+end
+
+function give_actor_inventory_to_hunt_2(first_speaker, second_speaker)
+	inventory_items = {"wpn_bm16","ammo_12x70_buck","stalker_outfit"}
+	xr_effects.give_actor(db.actor,nil,inventory_items)
+end
+
+function give_actor_inventory_to_hunt_3(first_speaker, second_speaker)
+	inventory_items = {"wpn_toz34","ammo_12x76_zhekan","svoboda_light_outfit"}
+	xr_effects.give_actor(db.actor,nil,inventory_items)
+end
+
+function give_actor_inventory_to_hunt_4(first_speaker, second_speaker)
+	inventory_items = {"wpn_svd","ammo_7.62x54_7h1","dolg_outfit"}
+	xr_effects.give_actor(db.actor,nil,inventory_items)
+end
+
+function give_actor_inventory_to_hunt_5(first_speaker, second_speaker)
+	inventory_items = {"wpn_desert_eagle","ammo_11.43x23_fmj","ammo_11.43x23_fmj","cs_heavy_outfit"}
+	xr_effects.give_actor(db.actor,nil,inventory_items)
+end
+
+----------------------Выдача инвентаря для боя телохранитель---------------------------------------------------
+function give_actor_inventory_to_bodyguard_1(first_speaker, second_speaker)
+	inventory_items = {"wpn_fort","ammo_9x18_fmj","novice_outfit"}
+	xr_effects.give_actor(db.actor,nil,inventory_items)
+end
+
+function give_actor_inventory_to_bodyguard_2(first_speaker, second_speaker)
+	inventory_items = {"wpn_spas12","ammo_12x76_zhekan","stalker_outfit"}
+	xr_effects.give_actor(db.actor,nil,inventory_items)
+end
+
+function give_actor_inventory_to_bodyguard_3(first_speaker, second_speaker)
+	inventory_items = {"wpn_ak74","ammo_5.45x39_fmj","svoboda_light_outfit"}
+	xr_effects.give_actor(db.actor,nil,inventory_items)
+end
+
+function give_actor_inventory_to_bodyguard_4(first_speaker, second_speaker)
+	inventory_items = {"wpn_sig550","ammo_5.56x45_ss190","dolg_outfit"}
+	xr_effects.give_actor(db.actor,nil,inventory_items)
+end
+
+function give_actor_inventory_to_bodyguard_5(first_speaker, second_speaker)
+	inventory_items = {"wpn_l85","ammo_5.56x45_ss190","cs_heavy_outfit"}
+	xr_effects.give_actor(db.actor,nil,inventory_items)
+end
+
+----------------------Выдача инвентаря для боя напарник--------------------------------------------------
+function give_actor_inventory_to_friend_1(first_speaker, second_speaker)
+	inventory_items = {"wpn_fort","ammo_9x18_fmj","novice_outfit"}
+	xr_effects.give_actor(db.actor,nil,inventory_items)
+end
+
+function give_actor_inventory_to_friend_2(first_speaker, second_speaker)
+	inventory_items = {"wpn_spas12","ammo_12x76_zhekan","stalker_outfit"}
+	xr_effects.give_actor(db.actor,nil,inventory_items)
+end
+
+function give_actor_inventory_to_friend_3(first_speaker, second_speaker)
+	inventory_items = {"wpn_ak74u","ammo_5.45x39_fmj","svoboda_light_outfit"}
+	xr_effects.give_actor(db.actor,nil,inventory_items)
+end
+
+function give_actor_inventory_to_friend_4(first_speaker, second_speaker)
+	inventory_items = {"wpn_sig550","ammo_5.56x45_ss190","dolg_outfit"}
+	xr_effects.give_actor(db.actor,nil,inventory_items)
+end
+
+function give_actor_inventory_to_friend_5(first_speaker, second_speaker)
+	inventory_items = {"wpn_l85","ammo_5.56x45_ss190","cs_heavy_outfit"}
+	xr_effects.give_actor(db.actor,nil,inventory_items)
+end
+
+--------------------Выдача инвентаря для боя выживание-------------------------------------------------------
+function give_actor_inventory_to_wantlive_1(first_speaker, second_speaker)
+	inventory_items = {"wpn_fort","ammo_9x18_fmj","ammo_9x18_fmj","ammo_9x18_fmj","novice_outfit"}
+	xr_effects.give_actor(db.actor,nil,inventory_items)
+end
+
+function give_actor_inventory_to_wantlive_2(first_speaker, second_speaker)
+	inventory_items = {"wpn_ak74u","ammo_5.45x39_ap","ammo_5.45x39_fmj","stalker_outfit"}
+	xr_effects.give_actor(db.actor,nil,inventory_items)
+end
+
+function give_actor_inventory_to_wantlive_3(first_speaker, second_speaker)
+	inventory_items = {"wpn_fn2000","ammo_5.56x45_ap","ammo_5.56x45_ap","svoboda_light_outfit"}
+	xr_effects.give_actor(db.actor,nil,inventory_items)
+end
+
+function give_actor_inventory_to_wantlive_4(first_speaker, second_speaker)
+	inventory_items = {"wpn_svd","ammo_7.62x54_7h1","ammo_7.62x54_7h1","dolg_outfit"}
+	xr_effects.give_actor(db.actor,nil,inventory_items)
+end
+
+function give_actor_inventory_to_wantlive_5(first_speaker, second_speaker)
+	inventory_items = {"wpn_protecta","ammo_12x76_zhekan","ammo_12x76_zhekan","cs_heavy_outfit"}
+	xr_effects.give_actor(db.actor,nil,inventory_items)
+end
+
+-----------------------Выдача инвентаря для боя мститель--------------------------------------------------
+function give_actor_inventory_to_assalut_1(first_speaker, second_speaker)
+	inventory_items = {"wpn_fort","ammo_9x18_fmj","novice_outfit"}
+	xr_effects.give_actor(db.actor,nil,inventory_items)
+end
+
+function give_actor_inventory_to_assalut_2(first_speaker, second_speaker)
+	inventory_items = {"wpn_toz34","ammo_12x76_zhekan","ammo_12x76_zhekan","stalker_outfit"}
+	xr_effects.give_actor(db.actor,nil,inventory_items)
+end
+
+function give_actor_inventory_to_assalut_3(first_speaker, second_speaker)
+	inventory_items = {"wpn_g36","ammo_5.56x45_ap","svoboda_light_outfit"}
+	xr_effects.give_actor(db.actor,nil,inventory_items)
+end
+
+function give_actor_inventory_to_assalut_4(first_speaker, second_speaker)
+	inventory_items = {"wpn_svd","ammo_7.62x54_7h1","ammo_7.62x54_7h1","dolg_outfit"}
+	xr_effects.give_actor(db.actor,nil,inventory_items)
+end
+
+function give_actor_inventory_to_assalut_5(first_speaker, second_speaker)
+	inventory_items = {"wpn_l85","ammo_5.56x45_ss190","cs_heavy_outfit"}
+	xr_effects.give_actor(db.actor,nil,inventory_items)
+end
+
+----------------------Очистка арены и инвентаря ГГ-------------------------------------------------
+function clear_arena_after_fight(first_speaker, second_speaker)
+	if xr_conditions.squad_exist(db.actor,nil,{"bodyguard_1_squad"}) then
+		xr_effects.remove_squad(db.actor,nil,{"bodyguard_1_squad"})
+		xr_effects.create_squad(db.actor,nil,{"bodyguard_1_squad_base","bar_smart_friend_base"})
+	end
+	if xr_conditions.squad_exist(db.actor,nil,{"bodyguard_2_squad"}) then
+		xr_effects.remove_squad(db.actor,nil,{"bodyguard_2_squad"})
+		xr_effects.create_squad(db.actor,nil,{"bodyguard_2_squad_base","bar_smart_friend_base"})
+	end
+	if xr_conditions.squad_exist(db.actor,nil,{"bodyguard_3_squad"}) then
+		xr_effects.remove_squad(db.actor,nil,{"bodyguard_3_squad"})
+		xr_effects.create_squad(db.actor,nil,{"bodyguard_3_squad_base","bar_smart_friend_base"})
+	end
+	if xr_conditions.squad_exist(db.actor,nil,{"friend_1_squad"}) then
+		xr_effects.remove_squad(db.actor,nil,{"friend_1_squad"})
+		xr_effects.create_squad(db.actor,nil,{"friend_1_squad_base","bar_smart_friend_base"})
+	end
+	if xr_conditions.squad_exist(db.actor,nil,{"friend_2_squad"}) then
+		xr_effects.remove_squad(db.actor,nil,{"friend_2_squad"})
+		xr_effects.create_squad(db.actor,nil,{"friend_2_squad_base","bar_smart_friend_base"})
+	end
+	if xr_conditions.squad_exist(db.actor,nil,{"friend_3_squad"}) then
+		xr_effects.remove_squad(db.actor,nil,{"friend_3_squad"})
+		xr_effects.create_squad(db.actor,nil,{"friend_3_squad_base","bar_smart_friend_base"})
+	end
+	xr_effects.release_actor_inventory(db.actor,nil)
+	xr_effects.clear_arena(db.actor,nil,{"level_bar_space_restrictor"})
+	xr_effects.clear_arena(db.actor,nil,{"bar_arena_lestn_sr"})
+end
+
+------------------------------------Выдача промежуточных заданий----------------------
+function give_task_kostolom_first_talk(first_speaker, second_speaker)
+	task_manager.get_task_manager():give_task("bar_arena_kostolom_first_talk")
+end
+
+function give_task_inventory_from_box(first_speaker, second_speaker)
+	task_manager.get_task_manager():give_task("bar_arena_inventory_take")
+end
+
+function give_task_reward_from_logoped(first_speaker, second_speaker)
+	task_manager.get_task_manager():give_task("bar_arena_reward_take")
+end
+
+function give_task_naim_arena_friend(first_speaker, second_speaker)
+	task_manager.get_task_manager():give_task("bar_arena_friend_naim")
+end
+
+function give_task_naim_arena_bodyguard(first_speaker, second_speaker)
+	task_manager.get_task_manager():give_task("bar_arena_bodyguard_naim")
+end
+
+------------------------------------Выдача наград за бои----------------------
+function take_reward_assalut_1(first_speaker, second_speaker)
+	dialogs.relocate_money_to_actor(first_speaker, second_speaker, 2000)
+end
+
+function take_reward_assalut_2(first_speaker, second_speaker)
+	dialogs.relocate_money_to_actor(first_speaker, second_speaker, 3000)
+end
+
+function take_reward_assalut_3(first_speaker, second_speaker)
+	dialogs.relocate_money_to_actor(first_speaker, second_speaker, 4000)
+end
+
+function take_reward_assalut_4(first_speaker, second_speaker)
+	dialogs.relocate_money_to_actor(first_speaker, second_speaker, 5000)
+end
+
+function take_reward_assalut_5(first_speaker, second_speaker)
+	dialogs.relocate_money_to_actor(first_speaker, second_speaker, 10000)
+end
+
+
+function take_reward_bodyguard_1(first_speaker, second_speaker)
+	dialogs.relocate_money_to_actor(first_speaker, second_speaker, 2000)
+end
+
+function take_reward_bodyguard_2(first_speaker, second_speaker)
+	dialogs.relocate_money_to_actor(first_speaker, second_speaker, 3000)
+end
+
+function take_reward_bodyguard_3(first_speaker, second_speaker)
+	dialogs.relocate_money_to_actor(first_speaker, second_speaker, 4000)
+end
+
+function take_reward_bodyguard_4(first_speaker, second_speaker)
+	dialogs.relocate_money_to_actor(first_speaker, second_speaker, 5000)
+end
+
+function take_reward_bodyguard_5(first_speaker, second_speaker)
+	dialogs.relocate_money_to_actor(first_speaker, second_speaker, 10000)
+end
+
+	
+function take_reward_duel_1(first_speaker, second_speaker)
+	dialogs.relocate_money_to_actor(first_speaker, second_speaker, 2000)
+end
+
+function take_reward_duel_2(first_speaker, second_speaker)
+	dialogs.relocate_money_to_actor(first_speaker, second_speaker, 3000)
+end
+
+function take_reward_duel_3(first_speaker, second_speaker)
+	dialogs.relocate_money_to_actor(first_speaker, second_speaker, 4000)
+end
+
+function take_reward_duel_4(first_speaker, second_speaker)
+	dialogs.relocate_money_to_actor(first_speaker, second_speaker, 5000)
+end
+
+function take_reward_duel_5(first_speaker, second_speaker)
+	dialogs.relocate_money_to_actor(first_speaker, second_speaker, 10000)
+end
+
+	
+function take_reward_friend_1(first_speaker, second_speaker)
+	dialogs.relocate_money_to_actor(first_speaker, second_speaker, 2000)
+end
+
+function take_reward_friend_2(first_speaker, second_speaker)
+	dialogs.relocate_money_to_actor(first_speaker, second_speaker, 3000)
+end
+
+function take_reward_friend_3(first_speaker, second_speaker)
+	dialogs.relocate_money_to_actor(first_speaker, second_speaker, 4000)
+end
+
+function take_reward_friend_4(first_speaker, second_speaker)
+	dialogs.relocate_money_to_actor(first_speaker, second_speaker, 5000)
+end
+
+function take_reward_friend_5(first_speaker, second_speaker)
+	dialogs.relocate_money_to_actor(first_speaker, second_speaker, 10000)
+end
+
+	
+function take_reward_hunt_1(first_speaker, second_speaker)
+	dialogs.relocate_money_to_actor(first_speaker, second_speaker, 2000)
+end
+
+function take_reward_hunt_2(first_speaker, second_speaker)
+	dialogs.relocate_money_to_actor(first_speaker, second_speaker, 3000)
+end
+
+function take_reward_hunt_3(first_speaker, second_speaker)
+	dialogs.relocate_money_to_actor(first_speaker, second_speaker, 4000)
+end
+
+function take_reward_hunt_4(first_speaker, second_speaker)
+	dialogs.relocate_money_to_actor(first_speaker, second_speaker, 5000)
+end
+
+function take_reward_hunt_5(first_speaker, second_speaker)
+	dialogs.relocate_money_to_actor(first_speaker, second_speaker, 10000)
+end
+
+	
+function take_reward_wantlive_1(first_speaker, second_speaker)
+	dialogs.relocate_money_to_actor(first_speaker, second_speaker, 2000)
+end
+
+function take_reward_wantlive_2(first_speaker, second_speaker)
+	dialogs.relocate_money_to_actor(first_speaker, second_speaker, 3000)
+end
+
+function take_reward_wantlive_3(first_speaker, second_speaker)
+	dialogs.relocate_money_to_actor(first_speaker, second_speaker, 4000)
+end
+
+function take_reward_wantlive_4(first_speaker, second_speaker)
+	dialogs.relocate_money_to_actor(first_speaker, second_speaker, 5000)
+end
+
+function take_reward_wantlive_5(first_speaker, second_speaker)
+	dialogs.relocate_money_to_actor(first_speaker, second_speaker, 10000)
+end
+
+function no_more_reward(first_speaker, second_speaker)
+	local fight_type = {"assalut","duel","hunt","wantlive"}
+	resault = true
+	for i = 1, 5 do
+		for j, k in ipairs(fight_type) do
+			if has_alife_info("bar_arena_enemy_"..k.."_"..tostring(i).."_death") 
+					and not has_alife_info("take_reward_"..k.."_"..tostring(i)) 
+				then resault = false 
+			end
+		end
+ 	end
+	for i = 1, 5 do
+		k = "bodyguard"
+		if has_alife_info("bar_arena_enemy_"..k.."_"..tostring(i).."_death") 
+				and not has_alife_info("take_reward_"..k.."_"..tostring(i))
+				and not has_alife_info("arena_"..k.."_"..tostring(i).."_fall")
+			then resault = false 
+		end
+	end
+	for i = 1, 5 do
+		k = "friend"
+		if has_alife_info("bar_arena_enemy_"..k.."_"..tostring(i).."_death") 
+				and not has_alife_info("take_reward_"..k.."_"..tostring(i))
+				and not has_alife_info("arena_"..k.."_"..tostring(i).."_fall")
+			then resault = false 
+		end
+	end
+return resault
+end
+
+
+function bar_alf_quest_create_items(first_speaker, second_speaker)	
+  local rnd_spawn=math.random(1,3)
+   if rnd_spawn==1 then
+      alife():create("labx5_quest_document_1",vector():set(14.138696670532,-10.391756057739,34.100963592529),2950,203)
+      alife():create("labx5_quest_document_2",vector():set(23.443315505981,-17.87314414978,19.989423751831),3884,205)
+	  alife():create("labx5_quest_document_3",vector():set(23.471063613892,-24.084579467773,27.831638336182),3843,206)
+    elseif rnd_spawn==2 then
+      alife():create("labx5_quest_document_1",vector():set(0.867267370224,-37.634559631348,-39.01439666748),1083,208)
+      alife():create("labx5_quest_document_2",vector():set(68.567192077637,-44.815311431885,-56.750137329102),6218,211)
+	  alife():create("labx5_quest_document_3",vector():set(80.371612548828,-44.706146240234,-36.039649963379),6927,212)
+    elseif rnd_spawn==3 then
+      alife():create("labx5_quest_document_1",vector():set(85.089302062988,-66.134437561035,-98.473731994629),7154,214)
+      alife():create("labx5_quest_document_2",vector():set(5.4909176826477,-73.098045349121,-158.22079467773),1523,219)
+	  alife():create("labx5_quest_document_3",vector():set(107.14721679688,-66.131507873535,-103.70079803467),9241,214) 
+   end
+   task_manager.get_task_manager():give_task("geonezis_labx5_main_quest_2")  
+end
+
+function bar_alf_actor_dont_has_info(first_speaker, second_speaker)
+   return db.actor:object("labx5_quest_document_1") == nil or db.actor:object("labx5_quest_document_2") == nil or db.actor:object("labx5_quest_document_3") == nil
+end
+
+function bar_alf_actor_has_info_1(first_speaker, second_speaker)
+   return db.actor:object("labx5_quest_document_1") ~= nil and db.actor:object("labx5_quest_document_2") == nil and db.actor:object("labx5_quest_document_3") == nil
+end
+
+function bar_alf_actor_has_info_2(first_speaker, second_speaker)
+   return db.actor:object("labx5_quest_document_2") ~= nil and db.actor:object("labx5_quest_document_1") == nil and db.actor:object("labx5_quest_document_3") == nil
+end
+
+function bar_alf_actor_has_info_3(first_speaker, second_speaker)
+   return db.actor:object("labx5_quest_document_3") ~= nil and db.actor:object("labx5_quest_document_1") == nil and db.actor:object("labx5_quest_document_2") == nil
+end
+
+function bar_alf_actor_has_info_12(first_speaker, second_speaker)
+   return db.actor:object("labx5_quest_document_1") ~= nil and db.actor:object("labx5_quest_document_2") ~= nil and db.actor:object("labx5_quest_document_3") == nil
+end
+
+function bar_alf_actor_has_info_13(first_speaker, second_speaker)
+   return db.actor:object("labx5_quest_document_1") ~= nil and db.actor:object("labx5_quest_document_3") ~= nil and db.actor:object("labx5_quest_document_2") == nil
+end
+
+function bar_alf_actor_has_info_23(first_speaker, second_speaker)
+   return db.actor:object("labx5_quest_document_2") ~= nil and db.actor:object("labx5_quest_document_3") ~= nil and db.actor:object("labx5_quest_document_1") == nil
+end
+
+function bar_alf_actor_has_info_all(first_speaker, second_speaker)
+   return db.actor:object("labx5_quest_document_1") ~= nil and db.actor:object("labx5_quest_document_2") ~= nil and db.actor:object("labx5_quest_document_3") ~= nil
+end
+
+function bar_alf_actor_relocate_info_all(first_speaker, second_speaker)
+   local items_table = {"labx5_quest_document_1","labx5_quest_document_2","labx5_quest_document_3"}
+   for k,v in pairs(items_table) do
+      if db.actor:object(v) ~= nil then
+         dialogs.relocate_item_section_from_actor(first_speaker, second_speaker, v)			
+      end
+   end	
+end
+
+function bar_alf_actor_relocate_reward_info_all(first_speaker, second_speaker)
+   local amount = 10000
+   dialogs.relocate_money_to_actor(first_speaker, second_speaker, amount)
+end
+
+function bar_alf_actor_relocate_reward_info_1(first_speaker, second_speaker)
+   local amount = 3000
+   dialogs.relocate_money_to_actor(first_speaker, second_speaker, amount)
+end
+
+function bar_alf_actor_relocate_reward_info_2(first_speaker, second_speaker)
+   local amount = 3000
+   dialogs.relocate_money_to_actor(first_speaker, second_speaker, amount)
+end
+
+function bar_alf_actor_relocate_reward_info_3(first_speaker, second_speaker)
+   local amount = 3000
+   dialogs.relocate_money_to_actor(first_speaker, second_speaker, amount)
+end
+
+function bar_alf_actor_relocate_reward_info_12(first_speaker, second_speaker)
+   local amount = 7000
+   dialogs.relocate_money_to_actor(first_speaker, second_speaker, amount)
+end
+
+function bar_alf_actor_relocate_reward_info_13(first_speaker, second_speaker)
+   local amount = 7000
+   dialogs.relocate_money_to_actor(first_speaker, second_speaker, amount)
+end
+
+function bar_alf_actor_relocate_reward_info_23(first_speaker, second_speaker)
+   local amount = 7000
+   dialogs.relocate_money_to_actor(first_speaker, second_speaker, amount)
+end
+
+function bar_b53_give_quest_oszil(first_speaker, second_speaker)
+	task_manager.get_task_manager():give_task("geonezis_bar_azot_dop_quest_1") 
+    dialogs.relocate_item_section_to_actor(first_speaker, second_speaker, "bar_b10_cfo_oszillograf")	
+end
+
+
+function bar_b53_give_quest_oszil(first_speaker, second_speaker)
+	task_manager.get_task_manager():give_task("geonezis_bar_azot_dop_quest_1") 
+    dialogs.relocate_item_section_to_actor(first_speaker, second_speaker, "bar_b10_cfo_oszillograf")	
+end
+
+function bar_b53_azot_first_quest_give_reward(first_speaker, second_speaker) 
+	local reward = math.random(1,3)
+	if reward == 1 then		
+		dialogs.relocate_money_to_actor(first_speaker, second_speaker, 5000)
+		dialogs.relocate_item_section_from_actor(first_speaker, second_speaker, "bar_b10_cfo_oszillograf")
+	end
+ 	if reward == 2 then		
+		dialogs.relocate_money_to_actor(first_speaker, second_speaker, 4500)
+		dialogs.relocate_item_section_from_actor(first_speaker, second_speaker, "bar_b10_cfo_oszillograf")
+	end
+ 	if reward == 3 then		
+		dialogs.relocate_money_to_actor(first_speaker, second_speaker, 5500)
+		dialogs.relocate_item_section_from_actor(first_speaker, second_speaker, "bar_b10_cfo_oszillograf")
+	end	             
+end
+
+function bar_b53_give_quest_perk(first_speaker, second_speaker)
+	task_manager.get_task_manager():give_task("geonezis_bar_azot_dop_quest_0")
+    --dialogs.relocate_money_to_actor(first_speaker, second_speaker, 50000)	
+end
+
+function bar_b53_give_quest_spectr_reward(first_speaker, second_speaker)	
+    dialogs.relocate_money_to_actor(first_speaker, second_speaker, 10000)	
+end
+
+function bar_b53_azot_zero_quest_give_reward(first_speaker, second_speaker) 
+	local reward = math.random(1,3)
+	if reward == 1 then		
+		dialogs.relocate_money_to_actor(first_speaker, second_speaker, 2100)		
+	end
+ 	if reward == 2 then		
+		dialogs.relocate_money_to_actor(first_speaker, second_speaker, 2250)		
+	end
+ 	if reward == 3 then		
+		dialogs.relocate_money_to_actor(first_speaker, second_speaker, 2150)		
+	end	             
+end
+
+function run_gui_ach_radiobattle_main(first_speaker, second_speaker)
+        run_gui(ins_gui_radiobattle_achivment.ui_achiva_radiobattle_prokachka())   
+end
+
+function actor_has_5000_money(first_speaker, second_speaker)
+	return db.actor:money() > 5000
+end
+
+function actor_hasnt_5000_money(first_speaker, second_speaker)
+	return db.actor:money() < 5000
+end
+
+function bar_b53_give_quest_razia(first_speaker, second_speaker)
+	task_manager.get_task_manager():give_task("geonezis_bar_azot_dop_quest_2")    
+end
+
+function bar_b53_give_item_razia(first_speaker, second_speaker)
+	dialogs.relocate_item_section_to_actor(first_speaker, second_speaker, "bar_b10_cfo_spec_razia")    
+end
+
+function bar_b53_give_item_razia_back(first_speaker, second_speaker)
+	dialogs.relocate_item_section_from_actor(first_speaker, second_speaker, "bar_b10_cfo_spec_razia")    
+end
+
+function bar_b53_give_quest_payalnik(first_speaker, second_speaker)
+	task_manager.get_task_manager():give_task("geonezis_bar_azot_dop_quest_3")    
+end
+
+function bar_b53_give_component_payalnik(first_speaker, second_speaker)
+	dialogs.relocate_item_section_to_actor(first_speaker, second_speaker, "bar_a2_juk_component_1", 5)
+    dialogs.relocate_item_section_to_actor(first_speaker, second_speaker, "bar_a2_juk_component_2", 10)
+    dialogs.relocate_item_section_to_actor(first_speaker, second_speaker, "bar_a2_juk_component_3", 15)    
+end
+
+function bar_b53_give_item_payalnik(first_speaker, second_speaker)
+	dialogs.relocate_item_section_to_actor(first_speaker, second_speaker, "bar_a2_spec_juk_device")   
+end
+
+function bar_b53_give_item_payalnik_back(first_speaker, second_speaker)
+	dialogs.relocate_item_section_from_actor(first_speaker, second_speaker, "bar_a2_spec_juk_device")   
+end
+
+function bar_b53_give_quest_spectr(first_speaker, second_speaker)
+	task_manager.get_task_manager():give_task("geonezis_bar_azot_dop_quest_4")    
+end
+
+function actor_has_item_zhuchok(first_speaker, second_speaker)
+   return db.actor:object("bar_a2_spec_juk_item_1") ~= nil 
+end
+
+function bar_b53_give_item_zhuchok(first_speaker, second_speaker)
+	dialogs.relocate_item_section_from_actor(first_speaker, second_speaker, "bar_a2_spec_juk_item_1")   
+end
+
+function actor_has_info_4_quest_end(first_speaker, second_speaker)
+	local a = has_alife_info("bar_a2_dop_quest_npc1_all_killed")
+	local b = has_alife_info("bar_a2_dop_quest_npc2_all_killed")
+	return a or b
+end
+
+function bar_barmen_lab_inventory(first_speaker, second_speaker)
+    dialogs.relocate_item_section(second_speaker, "wpn_val", "in")
+    dialogs.relocate_item_section(second_speaker, "ammo_9x39_pab9", "in",5)
+    dialogs.relocate_item_section(second_speaker, "exo_outfit", "in")
+    dialogs.relocate_item_section(second_speaker, "medkit", "in",3)
+	dialogs.relocate_item_section(second_speaker, "antirad", "in",3)
+end
+
+function bar_doc_1_precondition(first_speaker, second_speaker)
+	return first_speaker:object("labx5_quest_document_1") ~= nil
+end
+
+function bar_doc_2_precondition(first_speaker, second_speaker)
+	return first_speaker:object("labx5_quest_document_2") ~= nil
+end
+
+function bar_doc_3_precondition(first_speaker, second_speaker)
+	return first_speaker:object("labx5_quest_document_3") ~= nil
+end
+
+function transfer_bar_doc_1(first_speaker, second_speaker)
+    dialogs.relocate_item_section_from_actor(first_speaker, second_speaker, "labx5_quest_document_1")
+end
+
+function transfer_bar_doc_2(first_speaker, second_speaker)
+    dialogs.relocate_item_section_from_actor(first_speaker, second_speaker, "labx5_quest_document_2")
+end
+
+function transfer_bar_doc_3(first_speaker, second_speaker)
+    dialogs.relocate_item_section_from_actor(first_speaker, second_speaker, "labx5_quest_document_3")
+end
+
+function bar_doc_money(first_speaker, second_speaker)
+    dialogs.relocate_money_to_actor(first_speaker, second_speaker, 7500)
+end

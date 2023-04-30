@@ -1,0 +1,72 @@
+[logic]
+active = heli_move@vkl
+
+
+[heli_move@vkl]
+path_move = pro_heli_1_vkl_anomaly_move
+combat_ignore_cond = true
+combat_ignore_keep_when_attacked = true
+engine_sound = false
+max_velocity = 40
+mute = false
+on_info = {+pb_army_helicopter_spawn_end} heli_move@time
+
+
+[heli_move@time]
+path_move = pro_heli_1_anomaly_move
+combat_ignore_cond = true
+combat_ignore_keep_when_attacked = true
+engine_sound = true
+max_velocity = 40
+mute = false
+on_signal = pb_heli_destroy | {-pro_heli_destroy_complete} heli_move@patrol_2 %=heli_die +pro_heli_destroy_complete%
+
+[heli_move@patrol_2]
+path_move = city_heli_1_start_way
+path_look = city_heli_1_start_look
+engine_sound = true
+max_velocity = 40
+mute = false
+on_game_timer = 80 | heli_move@start_2
+
+[heli_move@start_2]
+path_move = city_heli_2_start_way
+path_look = city_heli_2_start_look
+engine_sound = true
+max_velocity = 40
+mute = false
+on_game_timer = 80 | heli_move@start_3 %=heli_start_flame%
+
+
+[heli_move@start_3]
+path_move = city_heli_3_start_way
+path_look = city_heli_3_start_look
+engine_sound = true
+max_velocity = 40
+mute = false
+on_game_timer = 60 | %=heli_die%
+
+
+[heli_move@start_a]
+path_move = city_heli_1_start_way
+path_look = city_heli_1_start_look
+engine_sound = true
+max_velocity = 40
+mute = false
+on_game_timer = 80 | heli_move@start_2a
+
+[heli_move@start_2a]
+path_move = city_heli_2_start_way
+path_look = city_heli_2_start_look
+engine_sound = true
+max_velocity = 40
+mute = false
+on_game_timer = 80 | heli_move@start_3a
+
+
+[heli_move@start_3a]
+path_move = city_heli_3_start_way
+path_look = city_heli_3_start_look
+engine_sound = true
+max_velocity = 40
+mute = false

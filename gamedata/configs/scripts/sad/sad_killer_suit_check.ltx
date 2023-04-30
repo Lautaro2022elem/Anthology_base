@@ -1,0 +1,163 @@
+[logic]
+active = sr_idle@1
+
+[sr_idle@1]
+on_info = {=actor_in_zone(sad_b4_recognize_zone) -sad_actor_looks_like_killer} %+sad_b4_actor_recognized%
+on_info2 = {+sad_b4_actor_recognized} sr_idle@3
+on_info3 = {=actor_has_item(sad_killer_pda) =sad_actor_has_killer_outfit} %+sad_actor_looks_like_killer%, %-sad_actor_looks_like_killer%
+;on_info4 = {+sad_radik_otkaz} sr_idle@10
+on_info5 = {+sad_radik_actor_enemy -sad_fedor_dead} %=kill_squad(sad_b4_fedor_squad) +sad_fedor_dead%
+
+[sr_idle@3]
+on_info = {=actor_in_zone(sad_b4_surge_hide)} sr_idle@kill_check_1 %+sad_b4_radik_teleport_1%
+on_info2 = {=actor_in_zone(sad_b4_sr_house_zone)} sr_idle@kill_check_1 %+sad_b4_radik_teleport_1%
+on_info3 = {=actor_in_zone(sad_b4_sr_inside)} sr_idle@kill_check_1 %+sad_b4_radik_teleport_2%
+on_info4 = sr_idle@kill_check_1
+
+[sr_idle@10]
+on_game_timer = 30 | sr_idle@kill_check_1 %+sad_b4_actor_recognized%
+
+[sr_idle@kill_check_1]
+on_info = {!squad_exist(sad_b4_killer_house_squad)} sr_idle@kill_check_2
+
+[sr_idle@kill_check_2]
+on_info = {!squad_exist(sad_b4_killer_def_squad)} sr_idle@kill_check_3
+
+[sr_idle@kill_check_3]
+on_info = {!squad_exist(sad_b4_killer_two_squad)} sr_idle@kill_check_4
+
+[sr_idle@kill_check_4]
+on_info = {!squad_exist(sad_b4_killer_one_squad)} sr_idle@killers_gone %+sad_b4_killers_gone +sad_radik_task_inside_done%
+
+[sr_idle@killers_gone]
+on_info = {+sad_fedor_dead} sr_idle@nil, sr_idle@100
+
+[sr_idle@100]
+on_info = {=squad_exist(sad_stalker_radik_squad)} sr_idle@200, sr_idle@300 %+sad_b4_radik_squad_dead%
+
+[sr_idle@200]	; -------------------------------------------------------------------------------------------------------------------------------------------------- with Radik
+on_info = sr_idle@210
+;on_game_timer = 1800 | sr_idle@nil %=kill_squad(sad_b4_fedor_squad)%
+;on_info = {+sad_b4_radik_in_basement} sr_idle@210
+;on_info7 = {+sad_fedor_dead} sr_idle@nil
+;on_info8 = {!squad_exist(sad_stalker_radik_squad)} sr_idle@300
+;on_info9 = {+sad_radik_actor_enemy} sr_idle@enemy
+
+[sr_idle@210]
+on_info = {+sad_b4_jail_door_released} sr_idle@230
+on_info7 = {+sad_fedor_dead} sr_idle@nil
+on_info8 = {!squad_exist(sad_stalker_radik_squad)} sr_idle@300 %+sad_b4_radik_squad_dead%
+on_info9 = {+sad_radik_actor_enemy} sr_idle@enemy
+on_game_timer = 12000 | sr_idle@nil %=kill_squad(sad_b4_fedor_squad) +sad_b4_actor_dont_care_fedor =send_tip(sad_b4_fedor_dead_message)%
+
+[sr_idle@230]
+on_info = {=actor_in_zone(sad_b4_sr_jail_zone_2)} sr_idle@240 %=run_postprocess(fade_in:3723) =disable_ui%
+on_info7 = {+sad_fedor_dead} sr_idle@nil
+on_info8 = {!squad_exist(sad_stalker_radik_squad)} sr_idle@300 %+sad_b4_radik_squad_dead%
+on_info9 = {+sad_radik_actor_enemy} sr_idle@enemy
+on_game_timer = 3600 | sr_idle@nil %=kill_squad(sad_b4_fedor_squad) +sad_b4_actor_dont_care_fedor =send_tip(sad_b4_fedor_dead_message)%
+
+[sr_idle@240]	; cutscene
+on_timer = 500 | sr_idle@241 %=run_postprocess(black:3724)%
+
+[sr_idle@241]
+on_info = sr_idle@242 %=create_cutscene_actor_with_weapon(sad_b4_cs_actor:sad_b4_cs_actor_place_1:0:90:2) +sad_b4_teleport_cs_radik_to_jail%
+
+[sr_idle@242]
+on_timer = 1500 | sr_cutscene@cam_1 %=stop_postprocess(3723) =stop_postprocess(3724) +sad_b4_cutscene_start%
+
+[sr_cutscene@cam_1] ; ------------------------------------------------- camera 1 "ща пойдём к айболиту"
+point = sad_b4_cs_actor_place_3
+look = sad_b4_radik_after_look
+cam_effector = scenario_cam\sad\sad_b4_cs_camera_1
+global_cameffect = true
+enable_ui_on_end = false
+outdoor = true
+fov = 65
+on_info = {+sad_b4_cs_radik_sound_end} %=stop_sr_cutscene%
+on_signal = cameff_end | sr_cutscene@cam_2
+on_signal2 = cam_effector_stop | sr_cutscene@cam_2
+
+[sr_cutscene@cam_2] ; ------------------------------------------------- camera 2 "история о Мутном"
+point = sad_b4_cs_actor_place_3
+look = sad_b4_radik_after_look
+cam_effector = scenario_cam\sad\sad_b4_cs_camera_2
+global_cameffect = true
+enable_ui_on_end = false
+outdoor = true
+fov = 70
+on_info = {+sad_b4_cs_fedor_sound_end} %=stop_sr_cutscene%
+on_signal = cameff_end | sr_cutscene@cam_3
+on_signal2 = cam_effector_stop | sr_cutscene@cam_3
+
+[sr_cutscene@cam_3] ; ------------------------------------------------- camera 3 "убить Ф1дора"
+point = sad_b4_cs_actor_place_3
+look = sad_b4_radik_after_look
+cam_effector = scenario_cam\sad\sad_b4_cs_camera_3
+global_cameffect = true
+enable_ui_on_end = false
+outdoor = true
+fov = 80
+on_info = {+sad_fedor_killed_by_radik} %=stop_sr_cutscene%
+on_signal = cameff_end | sr_idle@245
+on_signal2 = cam_effector_stop | sr_idle@245
+
+[sr_idle@245]
+on_info = {-sad_b4_radik_squad_dead} sr_idle@246, sr_idle@310
+
+[sr_idle@246]
+on_timer = 1500 | sr_cutscene@cam_4 %=stop_postprocess(1986) +sad_b4_cs_camera_4_on%
+
+[sr_cutscene@cam_4] ; ------------------------------------------------- camera 4 ""
+point = sad_b4_cs_actor_place_3
+look = sad_b4_radik_after_look
+cam_effector = scenario_cam\sad\sad_b4_cs_camera_4
+global_cameffect = true
+enable_ui_on_end = false
+outdoor = true
+fov = 75
+on_info = {+sad_b4_cs_radik_sound_end} %=stop_sr_cutscene%
+on_signal = cameff_end | sr_idle@250 %=run_postprocess(black:3725)%
+on_signal2 = cam_effector_stop | sr_idle@250 %=run_postprocess(black:3725)%
+
+[sr_idle@250]
+on_timer = 250 | sr_idle@251
+
+[sr_idle@251]
+on_info = {=story_object_exist(sad_b4_cs_actor)} sr_idle@252 %=destroy_object(story:sad_b4_cs_actor)%, sr_idle@252
+
+[sr_idle@252]
+on_info = sr_idle@253 %=teleport_actor(sad_b4_cs_actor_place_2:sad_b4_radik_after_look)%
+
+[sr_idle@253]
+on_timer = 500 | sr_idle@nil %=stop_postprocess(3725) =enable_ui +sad_b4_cutscene_end +sad_actor_know_about_mutny +sad_actor_mutny_enemy%
+
+[sr_idle@300]	; -------------------------------------------------------------------------------------------------------------------------------------------------- without Radik
+on_game_timer = 3600 | sr_idle@nil %=kill_squad(sad_b4_fedor_squad)%
+on_info = {+sad_fedor_dead} sr_idle@nil
+on_info2 = {+sad_b4_jail_door_released =actor_in_zone(sad_b4_sr_jail_zone_2)} sr_idle@240 %=run_postprocess(fade_in:3723) =disable_ui%
+
+[sr_idle@310]
+on_info = {=story_object_exist(sad_b4_cs_actor)} sr_idle@320 %=destroy_object(story:sad_b4_cs_actor)%, sr_idle@320
+
+[sr_idle@320]
+on_info = sr_idle@330 %=teleport_actor(sad_b4_cs_actor_place_2:sad_b4_radik_after_look)%
+
+[sr_idle@330]
+on_timer = 1500 | sr_idle@nil %=stop_postprocess(1986) =enable_ui +sad_b4_cutscene_end +sad_actor_know_about_mutny +sad_actor_mutny_enemy%
+
+; ---------------------------------------------------------------
+[sr_idle@enemy]
+on_game_timer = 60 | sr_idle@nil %=kill_squad(sad_b4_fedor_squad)%
+
+[sr_idle@nil]
+
+
+
+
+
+
+
+
+
+

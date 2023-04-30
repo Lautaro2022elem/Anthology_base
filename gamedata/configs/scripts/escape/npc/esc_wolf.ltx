@@ -1,0 +1,108 @@
+[logic@esc_squad_village_wolf]
+active = walker@wolf_home
+on_death = death
+level_spot = quest_npc
+suitable = {=check_npc_name(esc_wolf)} true, false
+prior = 200
+
+[walker@wolf_home]
+path_walk = esc_wolf_home_way
+path_look = esc_wolf_home_look
+on_info = {=surge_started()} animpoint@wolf_surge
+on_info2 = {=zat_b7_is_night} animpoint@wolf_sleep
+on_info3 = {-esc_quest_insurance_complite +esc_wolf_quest_insurance_dialog_and} walker@insurance_1
+on_info4 = {=actor_enemy} %=actor_neutral%
+gather_items_enabled = true
+corpse_detection_enabled = true
+combat_ignore_keep_when_attacked = true 
+combat_ignore_cond = true
+invulnerable = true
+meet = meet@meet_start
+use_camp = false
+
+[animpoint@wolf_surge]
+cover_name = esc_wolf_night
+on_info = {=surge_complete()} walker@wolf_home
+on_info2 = {=actor_enemy} %=actor_neutral%
+gather_items_enabled = false
+corpse_detection_enabled = false
+combat_ignore_keep_when_attacked = true 
+combat_ignore_cond = true
+invulnerable = true
+meet = meet@meet_start
+use_camp = false
+
+[animpoint@wolf_sleep]
+cover_name = esc_wolf_night
+on_info = {=is_day} walker@wolf_home
+on_info2 = {=actor_enemy} %=actor_neutral%
+gather_items_enabled = false
+corpse_detection_enabled = false
+combat_ignore_keep_when_attacked = true 
+combat_ignore_cond = true
+invulnerable = true
+meet = meet@meet_start
+use_camp = false
+out_restr = zat_a2_sr_noweap
+
+;------------------------------------------
+[meet@quest]
+abuse           = false
+close_anim 		= nil
+far_anim 		= nil
+far_victim 		= nil
+close_distance  = 0
+far_distance 	= 0
+close_victim = actor
+allow_break = false
+trade_enable = false
+
+[meet]
+close_snd_hello = esc_wolf_meet
+close_snd_bye 	= esc_wolf_meet_bye
+close_anim 	= nil
+close_victim 	= nil
+far_anim 	= nil
+far_victim 	= nil
+close_distance  = 0
+far_distance 	= 0
+close_snd_distance = 3
+use = {=actor_enemy} false, true
+allow_break 	= false
+
+[meet@meet_start]:meet@quest
+close_snd_hello = esc_wolf_meet
+close_snd_bye 	= esc_wolf_meet_bye
+close_snd_distance = 3
+use = {=actor_enemy} false, true
+meet_dialog = esc_actor_meet_from_wolf
+
+[smart_terrains]
+none = true
+
+[death]
+on_info = %+esc_wolf_dead%
+
+;------------------------------------------
+[meet@def]
+abuse           = false
+close_anim 		= nil
+far_anim 		= nil
+far_victim 		= nil
+close_distance  = 0
+far_distance 	= 0
+close_victim = actor
+allow_break = false
+trade_enable = false
+
+[meet@dialog]:meet@def
+use = {=dist_to_actor_le(3) -esc_wolf_quest_insurance_dialog_strahovka} self, true
+meet_dialog = esc_wolf_quest_insurance_dialog_strahovka
+
+[meet@dialog_gg]:meet@def
+use = {=dist_to_actor_le(3) -esc_wolf_quest_insurance_dialog_gg} self, true
+meet_dialog = esc_wolf_quest_insurance_dialog_gg
+
+[meet@dialog_complite]:meet@def
+use = {=dist_to_actor_le(2) -esc_wolf_quest_insurance_dialog_complite_and} self, true
+meet_dialog = esc_wolf_quest_insurance_dialog_complite

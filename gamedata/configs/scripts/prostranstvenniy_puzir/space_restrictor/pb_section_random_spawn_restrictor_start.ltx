@@ -1,0 +1,8 @@
+[logic]
+active = sr_idle@spawn_random_stalkers
+
+[sr_idle@spawn_random_stalkers]
+on_info = {+pb_markus_gone !squad_exist(pro_smart_terrain_2_0)} %=create_squad(pb_simulation_snork:pro_smart_terrain_2_0) =create_squad(pb_simulation_bloodsucker:pro_smart_terrain_2_0) =create_squad(pb_monolith_sim_squad_advanced:pro_smart_terrain_2_0) =create_squad(pb_monolith_sim_squad_veteran:pro_smart_terrain_2_0) +pb_random_spawn_end%
+on_info2 = {+pb_random_spawn_end} sr_idle@spawn_random_stalkers_nil
+
+[sr_idle@spawn_random_stalkers_nil]

@@ -1,0 +1,258 @@
+[logic]
+active = sr_idle@1
+;active = sr_idle@35
+
+[sr_idle@1]
+on_info = {+sad_b3_radik_task_give -sad_b3_radik_task_given} sr_idle@1b %+sad_b3_radik_task_given =give_task(sad_b3_radik_bring_task)%
+on_info9 = {+sad_radik_actor_enemy} sr_idle@actor_enemy, {+sad_b4_actor_recognized} sr_idle@death_snorki, {+sad_stalker_radik_squad_dead} sr_idle@nil
+;on_info99 = {+sad_run_debug_mode} sr_idle@nil ; ###################### DEBUG (delete after test)
+
+[sr_idle@1b]
+on_info = {=sad_sher_actor_has_needed_food} %+sad_b3_radik_task_have%, %-sad_b3_radik_task_have%
+on_info2 = {+sad_b3_radik_task_complete} sr_idle@2
+on_info9 = {+sad_radik_actor_enemy} sr_idle@actor_enemy, {+sad_b4_actor_recognized} sr_idle@death_snorki, {+sad_stalker_radik_squad_dead} sr_idle@nil
+
+[sr_idle@2]
+on_info = {+sad_radik_otkaz} sr_idle@otkaz
+on_info3 = {+sad_radik_task_get_outfit} sr_idle@get_outfit %=give_task(sad_radik_get_outfit_task) =create_squad(sad_b2_outfit_gonets_squad:sad_b2)%
+on_info9 = {+sad_radik_actor_enemy} sr_idle@actor_enemy, {+sad_b4_actor_recognized} sr_idle@death_snorki, {+sad_stalker_radik_squad_dead} sr_idle@nil
+
+; ------------------- get outfit
+[sr_idle@get_outfit]
+on_info = {=actor_has_item(killer_outfit)} %+sad_radik_task_get_outfit_have%, %-sad_radik_task_get_outfit_have%
+on_info2 = {+sad_radik_task_get_outfit_done} sr_idle@get_pda
+on_info3 = {+sad_b2_gonets_teleport} sr_idle@get_outfit_teleport %=disable_ui =run_postprocess(fade_in:4310)%
+on_info5 = {+sad_b4_actor_recognized} sr_idle@death_snorki
+on_info9 = {+sad_radik_actor_enemy} sr_idle@actor_enemy
+
+[sr_idle@get_outfit_teleport]
+on_timer = 1000 | sr_idle@get_outfit_teleport_2 %=run_postprocess(black:4311) =forward_game_time(4)%
+
+[sr_idle@get_outfit_teleport_2]
+on_timer = 100 | sr_idle@get_outfit_teleport_3 %=remove_squad(sad_b2_outfit_gonets_squad) =teleport_actor(sad_sher_teleport_actor_walk:sad_sher_teleport_actor_look) =create_squad_member(sad_sher_outfit_gonets:sad_stalker_radik_squad:sad_sher_teleport_gonets)%
+
+[sr_idle@get_outfit_teleport_3]
+on_timer = 1500 | sr_idle@get_outfit_after_teleport %=stop_postprocess(4310) =stop_postprocess(4311) =enable_ui%
+
+[sr_idle@get_outfit_after_teleport]
+on_info = {=actor_has_item(killer_outfit)} %+sad_radik_task_get_outfit_have%, %-sad_radik_task_get_outfit_have%
+on_info2 = {+sad_radik_task_get_outfit_done} sr_idle@get_pda
+on_info5 = {+sad_b4_actor_recognized} sr_idle@death_snorki
+on_info9 = {+sad_radik_actor_enemy} sr_idle@actor_enemy
+
+; ------------------- get PDA
+[sr_idle@get_pda]
+on_info = {+sad_radik_pdast_founded} sr_idle@sc_pda_10 %=run_postprocess(fade_in:2212) =disable_ui%
+on_info5 = {+sad_b4_actor_recognized} sr_idle@death_snorki
+on_info8 = {+sad_radik_dead} sr_idle@radik_dead
+on_info9 = {+sad_radik_actor_enemy} sr_idle@actor_enemy
+
+[sr_idle@sc_pda_10]
+on_timer = 500 | sr_idle@sc_pda_20 %=run_postprocess(black:2213) =teleport_actor(sad_sher_actor_after_cut_walk)%
+
+[sr_idle@sc_pda_20]
+on_timer = 250 | sr_idle@sc_pda_30 %=create_cutscene_actor_with_weapon(sad_sher_cs_actor:sad_sher_cs_actor_walk:0:100:2)%
+
+[sr_idle@sc_pda_30]
+on_timer = 1500 | sr_cutscene@found_pdast %=stop_postprocess(2212) =stop_postprocess(2213) +sad_sher_cutscene_start%
+
+[sr_cutscene@found_pdast]
+point = sad_sher_actor_after_cut_walk
+look = sad_sher_actor_after_cut_look
+cam_effector = scenario_cam\sad\sad_sher_cs_camera
+global_cameffect = true
+enable_ui_on_end = false
+outdoor = true
+on_info = {+sad_sher_cutscene_stop} %=stop_sr_cutscene -sad_sher_cutscene_stop%
+on_signal = cameff_end | sr_idle@sc_pda_50 %=run_postprocess(black:2214)%
+on_signal2 = cam_effector_stop | sr_idle@sc_pda_50 %=run_postprocess(black:2214)%
+
+[sr_idle@sc_pda_50]
+on_timer = 100 | sr_idle@sc_pda_60
+
+[sr_idle@sc_pda_60]
+on_info = {=story_object_exist(sad_sher_cs_actor)} sr_idle@sc_pda_70 %=destroy_object(story:sad_sher_cs_actor)%, sr_idle@sc_pda_70
+
+[sr_idle@sc_pda_70]
+on_timer = 500 | sr_idle@sc_pda_80 %=stop_postprocess(2214) =enable_ui =give_task(sad_radik_get_pda_task) =create_squad(sad_sher_killer_pdast_squad:sad_sher) =set_squad_friend_to_actor(sad_stalker_radik_squad)%
+
+[sr_idle@sc_pda_80]
+on_info = {=squad_exist(sad_sher_killer_pdast_squad)} sr_idle@get_pda_1 %=set_squads_enemies(sad_sher_killer_pdast_squad:sad_stalker_radik_squad)%
+on_timer = 20000 | sr_idle@get_pda_1
+
+; ------------------------- after cut
+[sr_idle@get_pda_1]
+on_info = {=actor_has_item(sad_killer_pda)} %+sad_radik_task_get_pda_have%, %-sad_radik_task_get_pda_have%
+on_info2 = {+sad_radik_task_get_pda_done} sr_idle@30
+on_info3 = {!squad_exist(sad_sher_killer_pdast_squad)} %+sad_sher_pdasts_are_killed%
+on_info5 = {+sad_b4_actor_recognized} sr_idle@death_snorki
+on_info8 = {+sad_radik_dead} sr_idle@radik_dead
+on_info9 = {+sad_radik_actor_enemy} sr_idle@actor_enemy
+
+; ---------------------------------------------------------------------------------------------------------------------------------------------- Arrive
+[sr_idle@30]
+on_info = {=actor_has_item(killer_outfit)} %+sad_radik_task_get_outfit_have%, %-sad_radik_task_get_outfit_have%
+on_info2 = {+sad_radik_start_arrive} sr_idle@remove_mobs %=give_task(sad_radik_arrive_task) +sad_radik_on_mission%
+on_info3 = {+sad_b4_actor_recognized} sr_idle@death_snorki
+on_info4 = {+sad_radik_actor_enemy} sr_idle@actor_enemy
+on_info5 = {+sad_radik_dead} sr_idle@nil
+
+[sr_idle@remove_mobs]
+on_info = sr_idle@create_mobs %=remove_squad(sad_sim_12_snorki) -sad_sim_12_snorki_wake =clear_smart_terrain(sad_sim_13) =clear_smart_terrain(sad_sim_17) =clear_smart_terrain(sad_sim_21)%
+
+[sr_idle@create_mobs]
+on_game_timer = 30 | sr_idle@31 %=create_squad(sad_sim_12_snorki:sad_sim_12) =create_squad(sad_sim_13_snorki:sad_sim_13) =create_squad(sad_radik_tushkans:sad_sim_17)%
+
+[sr_idle@31]
+on_info = {+sad_stalker_radik_squad_dead} sr_idle@nil
+on_info2 = {=squad_in_zone_all(sad_stalker_radik_squad:sad_sher_sr_radik_ready)} sr_idle@arriva_10 %+sad_radik_switch_sim_13%
+on_game_timer = 600 | sr_idle@arriva_10 %+sad_radik_switch_sim_13%
+on_info9 = {+sad_radik_actor_enemy} sr_idle@actor_enemy
+
+[sr_idle@arriva_10]
+on_info = {=squad_in_zone(sad_stalker_radik_squad:sad_sim_12_sr_mob_awake)} %+sad_sim_12_snorki_wake%
+;on_info2 = {=actor_in_zone(sad_sim_12_sr_mob_awake)} %+sad_sim_12_snorki_wake%
+on_info3 = {+sad_sim_12_snorki_wake} sr_idle@arriva_20
+on_info4 = {+sad_sim_13_cave_reached} sr_idle@35 %+sad_radik_arrive_task_done +sad_sim_12_start_dogs%
+on_info9 = {+sad_radik_actor_enemy} sr_idle@actor_enemy, {+sad_stalker_radik_squad_dead} sr_idle@nil
+
+[sr_idle@arriva_20]
+on_info = {=squad_in_zone(sad_stalker_radik_squad:sad_sim_17_sr_radik_tushkan)} %+sad_sim_17_tushkan_wake%
+on_info2 = {+sad_sim_17_tushkan_wake} sr_idle@arriva_30 %=heal_squad(sad_stalker_radik_squad:20)%
+on_info3 = {+sad_sim_13_cave_reached} sr_idle@35 %+sad_radik_arrive_task_done +sad_sim_12_start_dogs%
+on_info9 = {+sad_radik_actor_enemy} sr_idle@actor_enemy, {+sad_stalker_radik_squad_dead} sr_idle@nil
+
+[sr_idle@arriva_30]
+on_info = {=squad_in_zone(sad_stalker_radik_squad:sad_sim_13_snorki_logic)} %+sad_sim_13_snorki_wake%
+on_info2 = {+sad_sim_13_snorki_wake} sr_idle@arriva_40 %=heal_squad(sad_stalker_radik_squad:20)%
+on_info3 = {+sad_sim_13_cave_reached} sr_idle@35 %+sad_radik_arrive_task_done +sad_sim_12_start_dogs%
+on_info9 = {+sad_radik_actor_enemy} sr_idle@actor_enemy, {+sad_stalker_radik_squad_dead} sr_idle@nil
+
+[sr_idle@arriva_40]
+on_info = {+sad_sim_13_cave_reached} sr_idle@35 %+sad_radik_arrive_task_done +sad_sim_12_start_dogs%
+on_info9 = {+sad_radik_actor_enemy} sr_idle@actor_enemy, {+sad_stalker_radik_squad_dead} sr_idle@nil
+
+; ----------------------------------------------------------------------------------------------------------------------------------------------- arrived sim 13
+[sr_idle@35]
+on_game_timer = 60 | sr_idle@40 %=give_task(sad_radik_task_inside) =heal_squad(sad_stalker_radik_squad) =set_squad_friend_to_actor(sad_stalker_radik_squad)%
+on_info = {+sad_stalker_radik_squad_dead} sr_idle@nil, {+sad_radik_actor_enemy} sr_idle@actor_enemy
+
+[sr_idle@40]
+on_info = {+sad_b4_actor_recognized} sr_idle@ataka_10
+on_info2 = {+sad_stalker_radik_squad_dead} sr_idle@nil
+on_info9 = {+sad_radik_actor_enemy} sr_idle@actor_enemy
+
+; ----------------------------------------------------------------------------------------------------------------------------------------------- Ataka
+[sr_idle@ataka_10]
+on_info = {=squad_exist(sad_stalker_radik_squad)} sr_idle@ataka_20 %+sad_radik_switch_b4 -sad_radik_switch_sim_13%, sr_idle@nil
+
+[sr_idle@ataka_20]
+on_info = {+sad_b4_radik_teleport_1} sr_idle@ataka_25 %=teleport_squad(sad_stalker_radik_squad:sad_b4_radik_1_walk) +sad_b4_radik_ready_to_ataka%, {+sad_b4_radik_teleport_2} sr_idle@ataka_25 %=teleport_squad(sad_stalker_radik_squad:sad_b4_radik_dohod_1) +sad_b4_radik_ready_to_ataka%, sr_idle@ataka_21
+
+[sr_idle@ataka_21]
+on_info = {+sad_b4_radik_ready_to_ataka} sr_idle@ataka_25
+on_info2 = {=actor_in_zone(sad_b4_sr_inside)} sr_idle@ataka_25 %=teleport_squad(sad_stalker_radik_squad:sad_b4_radik_dohod_1) +sad_b4_radik_ready_to_ataka%, {!sad_dist_to_path_ge(sad_b4_first_meet_gvard_look:900)} sr_idle@ataka_25 %=teleport_squad(sad_stalker_radik_squad:sad_b4_radik_dohod_1) +sad_b4_radik_ready_to_ataka%
+on_info3 = {+sad_stalker_radik_squad_dead} sr_idle@nil
+on_info9 = {+sad_radik_actor_enemy} sr_idle@actor_enemy
+
+[sr_idle@ataka_25]
+on_info = {+sad_stalker_radik_squad_dead} sr_idle@nil
+on_timer = 1000 | sr_idle@ataka_30 %=set_squads_enemies(sad_stalker_radik_squad:sad_b4_killer_two_squad) =set_squads_enemies(sad_stalker_radik_squad:sad_b4_killer_one_squad) =set_squads_enemies(sad_stalker_radik_squad:sad_b4_killer_house_squad) =set_squads_enemies(sad_stalker_radik_squad:sad_b4_killer_def_squad)%
+
+[sr_idle@ataka_30]
+on_info = {+sad_stalker_radik_squad_dead} sr_idle@nil
+on_info2 = {+sad_radik_actor_enemy} sr_idle@actor_enemy
+on_info3 = {+sad_b4_killers_gone} sr_idle@ataka_40 %-sad_radik_on_mission%
+on_timer = 10000 | sr_idle@ataka_31 %=set_squads_enemies(sad_stalker_radik_squad:sad_b4_killer_two_squad) =set_squads_enemies(sad_stalker_radik_squad:sad_b4_killer_one_squad) =set_squads_enemies(sad_stalker_radik_squad:sad_b4_killer_house_squad) =set_squads_enemies(sad_stalker_radik_squad:sad_b4_killer_def_squad)%
+
+[sr_idle@ataka_31]
+on_info = sr_idle@ataka_30
+
+[sr_idle@ataka_40]
+on_info = {+sad_stalker_radik_squad_dead} sr_idle@nil
+on_game_timer = 60 | sr_idle@ataka_50 %=heal_squad(sad_stalker_radik_squad) -sad_radik_on_mission%
+on_info9 = {+sad_radik_actor_enemy} sr_idle@actor_enemy
+
+[sr_idle@ataka_50]
+on_info = {+sad_stalker_radik_squad_dead} sr_idle@nil
+on_info2 = {+sad_b4_arrive_to_b3} sr_idle@teleport_b3_10
+on_info3 = {=actor_in_zone(sad_b3_ataker_inside)} sr_idle@nil %-sad_radik_switch_b4 -sad_radik_switch_sim_13 +sad_radik_switch_b3 +sad_b4_radik_gone -sad_radik_mech_free =teleport_squad(sad_stalker_radik_squad:sad_b3_radik_squad_teleport_from_b4)%
+on_info4 = {=actor_in_zone(sad_sim_14_sr_zone)} sr_idle@nil %-sad_radik_switch_b4 -sad_radik_switch_sim_13 +sad_radik_switch_b3 +sad_b4_radik_gone -sad_radik_mech_free =teleport_squad(sad_stalker_radik_squad:sad_b3_radik_squad_teleport_from_b4)%
+on_info9 = {+sad_radik_actor_enemy} sr_idle@actor_enemy
+
+
+; ----------------------------------------------------------------------------------------------------------------------------------------------- Teleport to b3
+[sr_idle@teleport_b3_10]
+on_timer = 500 | sr_idle@teleport_b3_20 %=disable_ui =run_postprocess(fade_in:4380) -sad_radik_mech_free%
+
+[sr_idle@teleport_b3_20]
+on_timer = 1000 | sr_idle@teleport_b3_30 %=run_postprocess(black:4381) -sad_radik_switch_b4 +sad_radik_switch_b3 =forward_game_time(4)%
+
+[sr_idle@teleport_b3_30]
+on_info = sr_idle@teleport_b3_40 %=teleport_actor(sad_b4_actor_teleport_from_b4_walk:sad_b4_actor_teleport_from_b4_look)%
+
+[sr_idle@teleport_b3_40]
+on_timer = 1500 | sr_idle@nil %=stop_postprocess(4380) =stop_postprocess(4381) =enable_ui =teleport_squad(sad_stalker_radik_squad:sad_b4_actor_teleport_from_b4_look)%
+
+[sr_idle@teleport_b3_done]
+on_info = {!squad_exist(sad_stalker_radik_squad)} sr_idle@nil
+on_info9 = {+sad_radik_actor_enemy} sr_idle@actor_enemy
+
+; ---------------------------------------------------------------------------------------------------------------------------------------------- Otkaz
+[sr_idle@otkaz]
+on_info = sr_idle@otkaz_1 %+sad_sim_12_snorki_wake =create_squad(sad_sher_killer_masters_squad:sad_sher)%
+
+[sr_idle@otkaz_1]
+on_info = {=squad_exist(sad_sher_killer_masters_squad)} sr_idle@otkaz_2 %=set_squads_enemies(sad_sher_killer_masters_squad:sad_stalker_radik_squad)%
+on_timer = 10000 | sr_idle@otkaz_2
+
+[sr_idle@otkaz_2]
+on_info = {+sad_stalker_radik_squad_dead} sr_idle@nil
+on_info2 = {!squad_exist(sad_sher_killer_masters_squad)} sr_idle@otkaz_3 %+sad_radik_switch_sim_13%
+on_info3 = {+sad_radik_actor_enemy} sr_idle@actor_enemy
+on_game_timer = 3600 | sr_idle@otkaz_3 %+sad_radik_switch_sim_13%
+
+[sr_idle@otkaz_3]
+on_info = {+sad_stalker_radik_squad_dead} sr_idle@nil
+on_info2 = {+sad_sim_13_cave_reached} sr_idle@otkaz_4 %+sad_radik_switch_b4 -sad_radik_switch_sim_13 +sad_sim_12_start_dogs%
+on_info9 = {+sad_radik_actor_enemy} sr_idle@actor_enemy
+
+[sr_idle@otkaz_4]
+on_info = {+sad_stalker_radik_squad_dead} sr_idle@nil
+on_info2 = {+sad_b4_radik_ready_to_ataka} sr_idle@otkaz_5
+on_info9 = {+sad_radik_actor_enemy} sr_idle@actor_enemy
+
+[sr_idle@otkaz_5]
+on_info = {=sad_dist_to_squad_ge(sad_stalker_radik_squad:22500)} sr_idle@otkaz_5b %=teleport_squad(sad_stalker_radik_squad:sad_b4_first_meet_gvard_look)%, sr_idle@otkaz_6 %=set_squads_enemies(sad_stalker_radik_squad:sad_b4_killer_two_squad) =set_squads_enemies(sad_stalker_radik_squad:sad_b4_killer_one_squad) =set_squads_enemies(sad_stalker_radik_squad:sad_b4_killer_house_squad) =set_squads_enemies(sad_stalker_radik_squad:sad_b4_killer_def_squad)%
+
+[sr_idle@otkaz_5b]
+on_info = sr_idle@nil %=kill_squad(sad_stalker_radik_squad)%
+
+[sr_idle@otkaz_6]
+on_info = {+sad_stalker_radik_squad_dead} sr_idle@nil
+on_info2 = {+sad_b4_killers_gone} sr_idle@ataka_40
+on_timer = 15000 | sr_idle@otkaz_6b %=set_squads_enemies(sad_stalker_radik_squad:sad_b4_killer_two_squad) =set_squads_enemies(sad_stalker_radik_squad:sad_b4_killer_one_squad) =set_squads_enemies(sad_stalker_radik_squad:sad_b4_killer_house_squad) =set_squads_enemies(sad_stalker_radik_squad:sad_b4_killer_def_squad)%
+on_info9 = {+sad_radik_actor_enemy} sr_idle@actor_enemy
+
+[sr_idle@otkaz_6b]
+on_info = sr_idle@otkaz_6
+
+; ---------------------------------------------------------------------------------------------------------------------------------------------- death from snorks (if actor recognezed before arriva)
+[sr_idle@death_snorki]
+on_info = sr_idle@death_snorki_10 %=teleport_squad(sad_stalker_radik_squad:sad_sim_12_snork_home)%
+
+[sr_idle@death_snorki_10]
+on_info = sr_idle@nil %=kill_squad(sad_stalker_radik_squad)%
+
+; ---------------------------------------------------------------------------------------------------------------------------------------------- if Radik die before arriva
+[sr_idle@radik_dead]
+on_timer = 25000 | sr_idle@nil %-sad_radik_switch_b4 -sad_radik_switch_sim_13 +sad_radik_switch_b3 +sad_radik_squad_go_home%
+
+; ---------------------------------------------------------------------------------------------------------------------------------------------- 
+[sr_idle@actor_enemy]
+on_info = {=squad_exist(sad_stalker_radik_squad)} sr_idle@nil %=set_squad_enemy_to_actor(sad_stalker_radik_squad)%, sr_idle@nil
+
+[sr_idle@nil]
+on_info = sr_idle@real_nil %+sad_sim_12_start_dogs +sad_sim_12_snorki_wake -sad_radik_on_mission%
+
+[sr_idle@real_nil]

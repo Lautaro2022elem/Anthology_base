@@ -1,0 +1,81 @@
+[logic@def]
+active = mob_home@1
+suitable = {=target_squad_name(sad_oasis_tushkans) !target_squad_name(sad_oasis_tushkans2)} true
+monster_job = true
+prior = 150
+
+[logic@def2]
+active = mob_home@2
+suitable = {=target_squad_name(sad_oasis_tushkans2)} true
+monster_job = true
+prior = 150
+
+[logic@tushkan_1]:logic@def
+
+[logic@tushkan_2]:logic@def
+
+[logic@tushkan_3]:logic@def
+
+[logic@tushkan_4]:logic@def
+
+[logic@tushkan_5]:logic@def
+
+[logic@tushkan_6]:logic@def
+
+[logic@tushkan_7]:logic@def2
+
+[logic@tushkan_8]:logic@def2
+
+[logic@tushkan_9]:logic@def2
+
+[logic@tushkan_10]:logic@def2
+
+[logic@tushkan_11]:logic@def2
+
+[logic@tushkan_12]:logic@def2
+
+; --------------------------------------------------------------------------
+[mob_walker@1]
+path_walk = tushkan_run_1
+out_restr = sad_oasis_cave_in_restrictor
+on_info = {+sad_af_oasis_heart_have} mob_walker@1b
+
+[mob_walker@1b]
+path_walk = tushkan_run_3
+out_restr = sad_oasis_cave_in_restrictor
+
+[mob_walker@2]
+path_walk = tushkan_run_2
+out_restr = sad_oasis_cave_in_restrictor
+on_info = {+sad_af_oasis_heart_have} mob_walker@1b
+
+; --------------------------------------------------------------------------
+[mob_home@1]
+path_home = tushkan_home_1
+aggressive = true
+home_min_radius = 5
+home_max_radius = 15
+out_restr = sad_oasis_cave_in_restrictor
+on_info = {+sad_af_oasis_heart_have} mob_home@1b
+
+[mob_home@1b]
+path_home = tushkan_home_2
+aggressive = true
+home_min_radius = 5
+home_max_radius = 15
+out_restr = sad_oasis_cave_in_restrictor
+
+[mob_home@2]
+path_home = tushkan_spawn_1
+aggressive = true
+home_min_radius = 5
+home_max_radius = 15
+on_info = {+sad_af_oasis_heart_have} mob_home@2b
+out_restr = sad_oasis_cave_in_restrictor
+
+[mob_home@2b]
+path_home = tushkan_home_2
+aggressive = true
+home_min_radius = 5
+home_max_radius = 15
+out_restr = sad_oasis_cave_in_restrictor

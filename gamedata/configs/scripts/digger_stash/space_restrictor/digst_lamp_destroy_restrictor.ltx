@@ -1,0 +1,13 @@
+[logic]
+active = sr_light
+
+[sr_light]
+light_on = false
+on_info = {+digst_lamp_hit} sr_light@off
+
+[sr_light@off]
+light_on = false
+on_info = {-digst_lamp_destroyed} sr_light@off_torch %+digst_lamp_destroyed =turn_off_digst_lamps%
+
+[sr_light@off_torch]
+light_on = false

@@ -1,0 +1,82 @@
+--[[ ------------------------------------------------------------------------------------------------
+ File       : function_escape.script
+ Description: Скрипт-обработчик функций для Кордона
+ Copyright  : 2011 © Spectrum project
+ Author		: Болотный Доктор
+ Last edit  : 30.08.2013 (Denis)
+--]] ------------------------------------------------------------------------------------------------
+--/											Variables
+--]] ------------------------------------------------------------------------------------------------
+local iTime = 0
+--]] ------------------------------------------------------------------------------------------------
+--/											Initialize
+--]] ------------------------------------------------------------------------------------------------
+function Init()
+	event("ActorUpdate"):register(OnActorUpdate)
+	event("ActorInfo"):register(OnActorInfo)
+	event("ItemTakeFromBox"):register(OnItemTakeFromBox)
+end
+--]] ------------------------------------------------------------------------------------------------
+--/											Callback`s
+--]] ------------------------------------------------------------------------------------------------
+function OnActorUpdate()
+	if iTime <= time_global() then
+    	iTime = time_global()+5000
+    	
+    	esc_actor_has_money_30000()
+	end
+end
+
+function OnActorInfo()
+	esc_shaman_about_info_dialog_1()
+	esc_shaman_about_info_dialog_2()
+	esc_shaman_about_info_dialog_3()
+	esc_shaman_about_info_dialog_and()
+	esc_tech_instrument_brought()
+end
+
+--]] ------------------------------------------------------------------------------------------------
+--/											Functions
+--]] ------------------------------------------------------------------------------------------------
+function esc_actor_has_money_30000()
+	if has_alife_info("esc_quest_fee_info") and not has_alife_info("eac_quest_fee_complite") then
+		if has_alife_info("esc_quest_fee_to_give_money") and db.actor:money() < 30000 then
+			disable_info("esc_quest_fee_to_give_money")
+		end
+		if not has_alife_info("esc_quest_fee_to_give_money") and db.actor:money() >= 30000 then
+			give_info("esc_quest_fee_to_give_money")
+		end
+	end
+end
+
+function esc_shaman_about_info_dialog_1()
+    if not has_alife_info("esc_shaman_about_info_dialog_part_1") and has_alife_info("esc_shaman_about_info_dialog_44") and has_alife_info("esc_shaman_about_info_dialog_55") then
+    	give_info("esc_shaman_about_info_dialog_part_1")
+    end
+end
+
+function esc_shaman_about_info_dialog_2()
+    if not has_alife_info("esc_shaman_about_info_dialog_part_2") and has_alife_info("esc_shaman_about_info_dialog_222") then
+    	give_info("esc_shaman_about_info_dialog_part_2")
+    end
+end
+
+function esc_shaman_about_info_dialog_3()
+    if not has_alife_info("esc_shaman_about_info_dialog_part_3") and has_alife_info("esc_shaman_about_info_dialog_333") then
+    	give_info("esc_shaman_about_info_dialog_part_3")
+    end
+end
+
+function esc_shaman_about_info_dialog_and()
+    if not has_alife_info("esc_shaman_about_info_dialog_and") and has_alife_info("esc_shaman_about_info_dialog_part_1") 
+       and has_alife_info("esc_shaman_about_info_dialog_part_2") and has_alife_info("esc_shaman_about_info_dialog_part_3") then
+    	give_info("esc_shaman_about_info_dialog_and")
+    end
+end
+
+function esc_tech_instrument_brought()
+    if not has_alife_info("esc_tech_instrument_brought_and") and has_alife_info("esc_tech_instrument_1_brought")
+       and has_alife_info("esc_tech_instrument_2_brought") and has_alife_info("esc_tech_instrument_3_brought") then
+    	give_info("esc_tech_instrument_brought_and")
+    end
+end

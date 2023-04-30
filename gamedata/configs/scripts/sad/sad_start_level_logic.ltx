@@ -1,0 +1,102 @@
+[logic]
+active = sr_idle@0
+
+[sr_idle@0]
+on_info = {=actor_on_level(sad) +zat_a2_stalker_barmen_sad_start} sr_idle@cut_0 %=run_postprocess(black:7853) =disable_ui%
+
+[sr_idle@cut_0]
+on_info = sr_idle@cut_1 %=create_squad(sad_stalker_guide_squad:sad_start) =create_squad(sad_start_first_squad:sad_start)%
+
+[sr_idle@cut_1]
+on_timer = 2000 | sr_idle@cut_2 %=create_cutscene_actor_with_weapon(sad_start_cs_actor:sad_start_cs_actor_start:0:0:3) +sad_start_start_cutscene%
+
+[sr_idle@cut_2]
+on_timer = 1000 | sr_cutscene %=stop_postprocess(7853)%
+
+[sr_cutscene]
+point = sad_start_actor_walk
+look = sad_start_actor_look
+cam_effector = scenario_cam\sad\sad_start_cs_camera_1
+global_cameffect = true
+enable_ui_on_end = false
+outdoor = true
+fov = 50
+on_signal = cameff_end | sr_idle@cut_3 ;%=run_postprocess(black:7854)%
+on_signal2 = cam_effector_stop | sr_idle@cut_3 ;%=run_postprocess(black:7854)%
+on_info = {+sad_start_cs_actor_on_position +sad_start_cs_guide_on_position} %=stop_sr_cutscene =run_postprocess(black:7854)%
+
+[sr_idle@cut_3]
+on_info = sr_idle@cut_3b %=forward_game_time(1)%
+
+[sr_idle@cut_3b]
+on_timer = 500 | sr_cutscene@2 %=stop_postprocess(7854) +sad_start_start_camera_2%
+
+[sr_cutscene@2]
+point = sad_start_actor_walk
+look = sad_start_actor_look
+cam_effector = scenario_cam\sad\sad_start_cs_camera_2
+global_cameffect = true
+enable_ui_on_end = false
+outdoor = true
+fov = 50
+on_signal = cameff_end | sr_idle@cut_4 ;%=run_postprocess(black:7855)%
+;on_signal2 = cam_effector_stop | sr_idle@cut_4 ;%=run_postprocess(black:7855)%
+on_info = {+sad_start_cutscene_end} %=stop_sr_cutscene =run_postprocess(black:7855)%
+
+[sr_idle@cut_4]
+on_timer = 1000 | sr_idle@cut_5 %=remove_squad(sad_stalker_guide_squad)%
+
+[sr_idle@cut_5]
+on_info = {=story_object_exist(sad_start_cs_actor)} sr_idle@cut_6 %=destroy_object(story:sad_start_cs_actor)%, sr_idle@cut_6
+
+[sr_idle@cut_6]
+on_timer = 2000 | sr_idle@cut_7 %=set_game_time(7:0)%
+
+[sr_idle@cut_7]
+on_info = sr_idle@1 %=stop_postprocess(7855) =enable_ui =sad_eat +sad_give_main_quest%
+
+; ============================================================================================================================================================= SPAWN
+[sr_idle@1]
+on_info = sr_idle@2 %+sad_start_game%
+
+[sr_idle@2]
+on_info = sr_idle@3 %=create_squad(sad_sim_12_snorki:sad_sim_12) =create_squad(sad_b1_stalker_mutny_squad:sad_b1) =create_squad(sad_b2_stalker_maxim_squad:sad_b2)%
+
+[sr_idle@3]
+on_info = sr_idle@4
+
+[sr_idle@4]
+on_info = sr_idle@5 %=spawn_corpse(sad_trus_corpse:sad_trus_corpse_place) =spawn_corpse(sad_sim_7_cave_corpse:sad_sim_7_corpse_place) =spawn_corpse(sad_sim_5_corpse:sad_sim_5_corpse_place)%
+
+[sr_idle@5]
+on_info = sr_idle@100 %+sad_turist_available =sad_dospawn%
+
+; ============================================================================================================================================================= B3 ATAKA
+[sr_idle@100]
+on_info = {+sad_actor_enemy_to_someone} sr_idle@nil
+on_info2 = {+sad_b3_merc_ataka_start} sr_idle@110
+
+[sr_idle@110]
+on_info = {+sad_actor_enemy_to_someone} sr_idle@nil, {+sad_b3_merc_a_squad_dead +sad_b3_merc_b_squad_dead} sr_idle@120
+
+[sr_idle@120]
+on_info = {+sad_actor_enemy_to_someone} sr_idle@nil
+on_game_timer = 99999 | sr_idle@130	; ~28 hours
+
+[sr_idle@130]
+on_info = {+sad_actor_enemy_to_someone} sr_idle@nil, {=sad_actor_b3_far_enough} sr_idle@140 %-sad_b3_merc_a_squad_dead%
+
+[sr_idle@140]
+on_info = {+sad_actor_enemy_to_someone} sr_idle@nil, {=actor_in_zone(sad_b3_explosive_cutscene)} sr_idle@110 %=create_squad(sad_b3_merc_a_squad:sad_b3)%
+
+[sr_idle@nil]
+
+
+
+
+
+
+
+
+
+

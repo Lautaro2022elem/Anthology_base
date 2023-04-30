@@ -1,0 +1,34 @@
+;=========meet_stalker_korpys========
+[meet@korpys_stalker]
+close_anim 		= nil
+close_victim 	= nil
+far_anim 		= nil
+far_victim 		= nil
+close_distance 	= 0
+far_distance 	= 0
+use = {=actor_enemy} false, {=dist_to_actor_le(3)} true, false
+snd_on_use = {!dist_to_actor_le(3)} nil
+meet_on_talking = false
+;==================================
+
+[logic@esc_bar_stalker_drunk]
+suitable = {=check_npc_name(esc_bar_stalker_drunk)} true, false
+active = animpoint@ravings
+prior = 200
+
+[animpoint@ravings]
+cover_name = esc_bar_drunk_stalker_anim
+avail_animations = zat_b3_tech_drunk
+reach_distance = 2
+use_camp = false
+meet = no_meet
+on_info = {=dist_to_actor_le(3) -esc_bar_drunk_stalker_end_sound} %=play_sound(esc_bar_stalker_drunk_no_meet) +esc_bar_drunk_stalker_end_sound%
+on_info2 = {=dist_to_actor_ge(5) +esc_bar_drunk_stalker_end_sound} %+esc_bar_drunk_stalker_meet_drunk%
+on_info3 = {=dist_to_actor_le(3) +esc_bar_drunk_stalker_meet_drunk} %=play_sound(jup_b10_stalker_drunk_no_meet)%
+combat_ignore_cond = true
+combat_ignore_keep_when_attacked = true
+invulnerable = true
+out_restr = jup_a6_sr_noweap
+gather_items_enabled = false
+help_wounded_enabled = false
+corpse_detection_enabled = false

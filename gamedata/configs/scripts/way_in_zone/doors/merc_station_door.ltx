@@ -1,0 +1,36 @@
+[logic]
+active = ph_door@no_key
+
+[ph_door@no_key]
+locked = false
+closed = true
+snd_open_start = trader_door_locked
+on_use = ph_door@closed %+wiz_merc_leader_base_door_close%
+on_info = {=actor_has_item(wiz_merc_leader_base_key)} ph_door@closed
+tip_open = tip_door_closed_key_required
+
+[ph_door@closed]
+locked = false
+closed = true
+snd_open_start = metal_small_open
+snd_close_start = metal_small_close_start
+snd_close_stop = metal_small_close_stop
+on_use = ph_door@open %=remove_item(wiz_merc_leader_base_key)%
+on_info = {!actor_has_item(wiz_merc_leader_base_key)} ph_door@no_key
+tip_open = zat_b12_conteiner_has_one_key
+
+[ph_door@open]
+locked = false
+closed = false
+snd_open_start = metal_small_open
+snd_close_start = metal_small_close_start
+snd_close_stop = metal_small_close_stop
+on_use = ph_door@closed_regular
+
+[ph_door@closed_regular]
+locked = false
+closed = true
+snd_open_start = metal_small_open
+snd_close_start = metal_small_close_start
+snd_close_stop = metal_small_close_stop
+on_use = ph_door@open

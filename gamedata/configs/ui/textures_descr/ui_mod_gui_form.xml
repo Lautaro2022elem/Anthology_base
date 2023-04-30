@@ -1,0 +1,93 @@
+<w>
+   <file name="ui\ui_mod_gui_objects_1">        
+		<texture id="ui_mod_a_dozimetr_radiometr_wnd" x="51" y="51" width="725" height="750"/>
+		<texture id="ui_mod_a_rukzak_wnd" x="1252" y="1412" width="553" height="253"/>	
+        <texture id="ui_mod_a_radiolocator_wnd" x="52" y="852" width="553" height="253"/>
+        <texture id="ui_mod_a_protivogaz_converter_wnd" x="2" y="1150" width="752" height="551"/> 		
+		<texture id="ui_mod_a_rls_wnd" x="800" y="100" width="975" height="565"/>
+		<texture id="ui_mod_a_oczill_1_wnd" x="1252" y="1705" width="553" height="265"/>
+        <texture id="ui_mod_a1_protivogaz_testing_wnd" x="800" y="700" width="900" height="575"/>
+        <texture id="ui_mod_a_bombafinal_wnd" x="52" y="1751" width="553" height="253"/>		
+    </file>
+	<file name="ui\ui_mod_gui_objects_2">  
+        <texture id="ui_mod_a_fugasconverter_wnd" x="50" y="50" width="553" height="425"/>
+		<texture id="ui_mod_a_fugas_wnd" x="50" y="500" width="553" height="265"/>
+		<texture id="ui_mod_a_radiostation_wnd" x="600" y="0" width="553" height="265"/>
+		<texture id="ui_mod_a_multimetr_wnd" x="600" y="300" width="375" height="725"/>
+		<texture id="ui_mod_a_payalnik_wnd" x="550" y="1050" width="550" height="425"/>
+		<texture id="ui_mod_a1_razia_testing_wnd" x="1050" y="302" width="900" height="575"/>		
+		<texture id="ui_mod_a_notepad_wnd" x="1" y="902" width="553" height="453"/>
+		<texture id="ui_mod_a_notepad_wnd_2" x="1" y="1357" width="553" height="453"/>		
+    </file>
+	<file name="ui\ui_mod_gui_objects_3">
+	    <texture id="ui_mod_a1_medical_helper" x="0" y="0" width="953" height="353"/>
+	    <texture id="ui_mod_a_dozimetr_vphr_wnd" x="51" y="401" width="725" height="750"/>
+		<texture id="ui_mod_a_protoyad_wnd" x="52" y="1501" width="550" height="425"/>
+		<texture id="ui_mod_a_katalizator_wnd" x="52" y="1201" width="553" height="253"/>  
+        <texture id="ui_mod_a_spectrometr_wnd" x="1000" y="50" width="850" height="450"/>
+        <texture id="ui_mod_a_mineiskatel_wnd" x="602" y="1201" width="553" height="253"/>	
+        <texture id="ui_mod_a_radiometr_wnd" x="1000" y="551" width="850" height="450"/>
+        <texture id="ui_mod_a_seleczia_wnd" x="602" y="1501" width="553" height="253"/>
+        <texture id="ui_mod_a_cehdevice_1_wnd" x="1151" y="1201" width="553" height="253"/>
+        <texture id="ui_mod_a_cehdevice_2_wnd" x="1151" y="1501" width="553" height="253"/> 		
+    </file>
+    <file name="ui\ui_mod_wnds_1">
+        <texture id="ui_mod_big_player_wnd" x="0" y="0" width="563" height="478"/>
+        <texture id="ui_mod_mini_player_wnd" x="571" y="9" width="371" height="207"/>
+        <texture id="ui_mod_repair_w_main_wnd" x="573" y="233" width="370" height="207"/>
+        <texture id="ui_mod_repair_o_main_wnd" x="573" y="577" width="370" height="207"/>
+        <texture id="ui_mod_timer_main_wnd" x="725" y="790" width="281" height="229"/>
+        <texture id="ui_mod_marker_main_wnd" x="572" y="8" width="243" height="207"/>
+        <texture id="ui_mod_g_conventer_wnd" x="0" y="482" width="553" height="413"/>
+        <texture id="ui_mod_button_minus_a" x="618" y="961" width="31" height="28"/>
+        <texture id="ui_mod_button_plus_a" x="665" y="961" width="31" height="28"/>
+        <texture id="ui_mod_button_minus_b" x="618" y="993" width="31" height="28"/>
+        <texture id="ui_mod_button_plus_b" x="665" y="993" width="31" height="28"/>
+        <texture id="ui_mod_button_e" x="896" y="460" width="122" height="23"/>
+        <texture id="ui_mod_button_t" x="896" y="497" width="122" height="23"/>
+        <texture id="ui_mod_button_h" x="896" y="535" width="122" height="23"/>
+        <texture id="ui_mod_button2_e" x="570" y="802" width="135" height="35"/>
+        <texture id="ui_mod_button2_t" x="570" y="851" width="135" height="35"/>
+        <texture id="ui_mod_button2_h" x="570" y="901" width="135" height="35"/>
+        <texture id="ui_mod_button3_e" x="757" y="462" width="126" height="27"/>
+        <texture id="ui_mod_button3_t" x="757" y="494" width="126" height="27"/>
+        <texture id="ui_mod_button3_h" x="757" y="526" width="126" height="27"/>
+        <texture id="ui_mod_button4_e" x="79" y="963" width="149" height="36"/>
+        <texture id="ui_mod_button4_t" x="79" y="924" width="149" height="36"/>
+        <texture id="ui_mod_button4_h" x="79" y="924" width="149" height="36"/>
+        <texture id="ui_mod_button5_e" x="840" y="14" width="116" height="22"/>
+        <texture id="ui_mod_button5_t" x="840" y="68" width="116" height="22"/>
+        <texture id="ui_mod_button5_h" x="840" y="41" width="116" height="22"/>
+        <texture id="ui_mod_red_diode" x="597" y="962" width="8" height="8"/>
+        <texture id="ui_mod_green_diode" x="597" y="978" width="8" height="8"/>
+        <texture id="ui_mod_yellow_lightning" x="974" y="628" width="23" height="10"/>
+        <texture id="ui_mod_blue_lightning" x="974" y="644" width="23" height="10"/>
+        <texture id="ui_mod_red_lightning" x="974" y="662" width="23" height="10"/>
+        <texture id="ui_mod_grey_lightning" x="974" y="677" width="23" height="11"/>
+    </file>    
+    <file name="ui\ui_mod_wnds_2">
+        <texture id="ui_mod_rukzak_wnd" x="0" y="0" width="369" height="206"/>
+        <texture id="ui_mod_waypoint_editor_wnd" x="0" y="216" width="366" height="203"/>		
+		<texture id="ui_mod_button7_e" x="400" y="100" width="150" height="55"/>
+        <texture id="ui_mod_button7_t" x="550" y="100" width="150" height="55"/>
+        <texture id="ui_mod_button7_h" x="550" y="100" width="150" height="55"/>
+		<texture id="ui_mod_button8_e" x="400" y="200" width="150" height="55"/>
+        <texture id="ui_mod_button8_t" x="550" y="200" width="150" height="55"/>
+        <texture id="ui_mod_button8_h" x="550" y="200" width="150" height="55"/>
+		<texture id="ui_mod_button9_e" x="400" y="300" width="150" height="55"/>
+        <texture id="ui_mod_button9_t" x="550" y="300" width="150" height="55"/>
+        <texture id="ui_mod_button9_h" x="550" y="300" width="150" height="55"/>
+    </file>
+	<file name="ui\backgrounder">
+	     <texture id="backgrounder" x="0" y="0" width="1024" height="1024" />
+    </file>
+<file name="ui\ui_disk_io">
+	<texture id="ui_disk_io" 							x="0" 	y="0" 	width="32" height="32" />
+</file>
+<file name="ui\ui_noise">
+	<texture id="ui_noise" 								x="0" 	y="0" 	width="256" height="128" />
+</file>
+<file name="ui\ui_rls_01">
+	<texture id="ui_rls_01" 								x="0" 	y="0" 	width="469" height="300" />
+</file>
+</w>

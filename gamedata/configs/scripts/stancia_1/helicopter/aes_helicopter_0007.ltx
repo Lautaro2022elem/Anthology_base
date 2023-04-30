@@ -1,0 +1,44 @@
+[logic]
+active = heli_move@idle
+on_hit = hit
+
+[hit]
+on_info = {+aes_actor_road2} %+aes_choper_down_3%
+
+[heli_move@idle]
+engine_sound = false
+on_info = {+aes_desant_go} heli_move@move
+
+[heli_move@move]
+path_move = aes_heli_attack_desant_walk_begin7
+on_info = {+aes_actor_road2} heli_move@move2
+max_velocity = 500
+engine_sound = true
+
+[heli_move@move2]
+path_move = aes_heli_attack_desant_walk7
+path_look = aes_heli_attack_desant_look7
+on_signal = desant | %+aes_desant_snipers%
+on_signal2 = final | heli_move@move3
+on_signal3 = sound | %+aes_sniper_desant_sound%
+on_info = {=heli_health_le(0.3)} heli_move@death
+max_velocity = 500
+engine_sound = true
+
+[heli_move@move3]
+path_move = aes_heli_attack_desant_walk7_2
+path_look = aes_heli_attack_desant_look7_2
+on_info = {=heli_health_le(0.3)} heli_move@death
+max_velocity = 500
+engine_sound = true
+
+[heli_move@death]
+path_move = heli_death_way
+on_signal = arrived | heli_move@silent
+combat_ignore = true
+engine_sound = true
+
+[heli_move@silent]
+path_move = heli_death_way
+engine_sound = false 
+combat_ignore = true

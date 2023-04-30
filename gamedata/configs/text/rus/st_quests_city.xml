@@ -1,0 +1,107 @@
+<?xml version="1.0" encoding="windows-1251" ?>
+<string_table>
+
+<!-- Квест:  Важный груз -->	
+	<string id="city_important_cargo_part_1_title">
+		<text>Важный груз: Найти контейнер</text>
+	</string>
+	<string id="city_important_cargo_part_1_descr">
+		<text>Найти контейнер сброшенный с вертолета</text>
+	</string>
+	<string id="city_important_cargo_part_2_title">
+		<text>Важный груз: Доставить контейнер Колязину</text>
+	</string>
+	<string id="city_important_cargo_part_2_descr">
+		<text>Доставить контейнер в целости и сохранности</text>
+	</string>
+	
+	<!-- Квест:  Диверсия -->	
+	<string id="city_sabotage_part_1_title">
+		<text>Диверсия: Обыскать первый двор</text>
+	</string>
+	<string id="city_sabotage_part_1_descr">
+		<text>Обыскать первый двор по пути следования раненого солдата. Найти брошенную им взрывчатку.</text>
+	</string>
+	<string id="city_sabotage_part_2_title">
+		<text>Диверсия: Обыскать следующий двор</text>
+	</string>
+	<string id="city_sabotage_part_2_descr">
+		<text>Обыскать следующий двор по пути следования раненого солдата. Найти брошенную им взрывчатку.</text>
+	</string>
+	<string id="city_sabotage_part_3_title">
+		<text>Диверсия: Заложить взрывчатку в БТР</text>
+	</string>
+	<string id="city_sabotage_part_3_descr">
+		<text>Незаметно заложить взрывчатку в БТР</text>
+	</string>
+	<string id="city_sabotage_part_4_title">
+		<text>Диверсия: Вернуться в лагерь военных</text>
+	</string>
+	<string id="city_sabotage_part_4_descr">
+		<text>Вернуться в лагерь военных, доложить Колязину о выполненном задании</text>
+	</string>
+	
+	<!-- Квест:  Штурм -->	
+	<string id="city_assault_part_1_title">
+		<text>Штурм: Напасть на группировку Спектрум</text>
+	</string>
+	<string id="city_assault_part_1_descr">
+		<text>Напасть на группировку Спеетрум</text>
+	</string>
+	<string id="city_assault_part_2_title">
+		<text>Штурм: Сбить вертолет эвакуации</text>
+	</string>
+	<string id="city_assault_part_2_descr">
+		<text>Сбить вертолет эвакуации Спектрума</text>
+	</string>
+	<string id="city_assault_part_3_title">
+		<text>Штурм: Сбить вбоевой вертолет</text>
+	</string>
+	<string id="city_assault_part_3_descr">
+		<text>Сбить боевой вертолет Спектрума</text>
+	</string>
+	<string id="city_assault_part_4_title">
+		<text>Штурм: Штурмовать Дом Культуры</text>
+	</string>
+	<string id="city_assault_part_4_descr">
+		<text>Штурмовать здание Дома Культуры</text>
+	</string>
+	<string id="city_assault_part_5_title">
+		<text>Штурм: Зачистить второй этаж</text>
+	</string>
+	<string id="city_assault_part_5_descr">
+		<text>Зачистить второй этаж</text>
+	</string>
+	<string id="city_assault_part_6_title">
+		<text>Штурм: Проверить подвал</text>
+	</string>
+	<string id="city_assault_part_6_descr">
+		<text>Проверить подвал</text>
+	</string>
+
+
+	<!-- Квест:  Безысходность -->	
+	<string id="city_despair_part_1_title">
+		<text>Безысходность: Поговорить с неизвестным</text>
+	</string>
+	<string id="city_despair_part_1_descr">
+		<text>Поговорить с неизвестным</text>
+	</string>
+	<string id="city_despair_part_2_title">
+		<text>Безысходность: Поговорить с Колязиным</text>
+	</string>
+	<string id="city_despair_part_2_descr">
+		<text>Поговорить с Колязиным</text>
+	</string>
+	<string id="city_despair_part_3_title">
+		<text>Безысходность: Сбежать от военных</text>
+	</string>
+	<string id="city_despair_part_3_descr">
+		<text>Сбежать от военных</text>
+	</string>
+
+
+
+
+
+</string_table>

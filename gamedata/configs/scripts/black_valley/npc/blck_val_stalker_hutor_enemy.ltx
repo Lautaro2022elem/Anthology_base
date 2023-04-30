@@ -1,0 +1,191 @@
+---------------Бандит_1-----------------
+[logic@blck_val_bandit_hutor_1]
+suitable = {=check_npc_name(blck_val_bandit_hutor_1)} true
+prior = 200
+active = camper@blck_val_bandit_hutor_1
+on_hit = hit@bandit_1
+
+[camper@blck_val_bandit_hutor_1]
+path_look = bandit_hutor_look
+path_walk = bandit_hutor_1_walk
+on_info = {+blck_val_bandit_go_to_hutor_quest} walker@blck_val_bandit_hutor_1_walk
+combat_ignore_cond = true
+combat_ignore_keep_when_attacked = false
+invulnerable = false
+gather_items_enabled = false
+help_wounded_enabled = false
+corpse_detection_enabled = false
+meet = no_meet
+
+[walker@blck_val_bandit_hutor_1_walk]
+path_walk = bandit_spot_walk
+combat_ignore_cond = {+blck_val_bandit_hutor_see_actor} false, true
+combat_ignore_keep_when_attacked = false
+invulnerable = false
+gather_items_enabled = false
+help_wounded_enabled = false
+corpse_detection_enabled = false
+meet = no_meet
+
+[hit@bandit_1]
+on_info = {=hit_by_actor -blck_val_bandit_hutor_see_actor} %+blck_val_bandit_hutor_see_actor%
+
+---------------Бандит_2-----------------
+[logic@blck_val_bandit_hutor_2]
+suitable = {=check_npc_name(blck_val_bandit_hutor_2)} true
+prior = 200
+active = camper@blck_val_bandit_hutor_2
+on_hit = hit@bandit_2
+
+[camper@blck_val_bandit_hutor_2]
+path_look = bandit_hutor_look
+path_walk = bandit_hutor_2_walk
+on_info = {+blck_val_bandit_go_to_hutor_quest} walker@blck_val_bandit_hutor_2_walk
+combat_ignore_cond = true
+combat_ignore_keep_when_attacked = false
+invulnerable = false
+gather_items_enabled = false
+help_wounded_enabled = false
+corpse_detection_enabled = false
+meet = no_meet
+
+[walker@blck_val_bandit_hutor_2_walk]
+path_walk = bandit_spot_walk
+combat_ignore_cond = {+blck_val_bandit_hutor_see_actor} false, true
+combat_ignore_keep_when_attacked = false
+invulnerable = false
+gather_items_enabled = false
+help_wounded_enabled = false
+corpse_detection_enabled = false
+meet = no_meet
+
+[hit@bandit_2]
+on_info = {=hit_by_actor -blck_val_bandit_hutor_see_actor} %+blck_val_bandit_hutor_see_actor%
+
+---------------Бандит_3-----------------
+[logic@blck_val_bandit_hutor_3]
+suitable = {=check_npc_name(blck_val_bandit_hutor_3)} true
+prior = 200
+active = camper@blck_val_bandit_hutor_3
+on_hit = hit@bandit_3
+
+[camper@blck_val_bandit_hutor_3]
+path_look = bandit_hutor_look
+path_walk = bandit_hutor_3_walk
+on_info = {+blck_val_bandit_go_to_hutor_quest} walker@blck_val_bandit_hutor_3_walk
+combat_ignore_cond = true
+combat_ignore_keep_when_attacked = false
+invulnerable = false
+gather_items_enabled = false
+help_wounded_enabled = false
+corpse_detection_enabled = false
+meet = no_meet
+
+[walker@blck_val_bandit_hutor_3_walk]
+path_walk = bandit_spot_walk
+combat_ignore_cond = {+blck_val_bandit_hutor_see_actor} false, true
+combat_ignore_keep_when_attacked = false
+invulnerable = false
+gather_items_enabled = false
+help_wounded_enabled = false
+corpse_detection_enabled = false
+meet = no_meet
+
+[hit@bandit_3]
+on_info = {=hit_by_actor -blck_val_bandit_hutor_see_actor} %+blck_val_bandit_hutor_see_actor%
+
+---------------Бандит_4-----------------
+[logic@blck_val_bandit_hutor_4]
+suitable = {=check_npc_name(blck_val_bandit_hutor_4)} true
+prior = 200
+active = camper@blck_val_bandit_hutor_4
+on_hit = hit@bandit_4
+
+[camper@blck_val_bandit_hutor_4]
+path_look = bandit_hutor_look
+path_walk = bandit_hutor_4_walk
+on_info = {+blck_val_bandit_go_to_hutor_quest} walker@blck_val_bandit_hutor_4_walk
+combat_ignore_cond = true
+combat_ignore_keep_when_attacked = false
+invulnerable = false
+gather_items_enabled = false
+help_wounded_enabled = false
+corpse_detection_enabled = false
+meet = no_meet
+
+[walker@blck_val_bandit_hutor_4_walk]
+path_walk = bandit_spot_walk
+combat_ignore_cond = {+blck_val_bandit_hutor_see_actor} false, true
+combat_ignore_keep_when_attacked = false
+invulnerable = false
+gather_items_enabled = false
+help_wounded_enabled = false
+corpse_detection_enabled = false
+meet = no_meet
+
+[hit@bandit_4]
+on_info = {=hit_by_actor -blck_val_bandit_hutor_see_actor} %+blck_val_bandit_hutor_see_actor%
+
+---------------Бандит_5-----------------
+[logic@blck_val_bandit_hutor_5]
+suitable = {=check_npc_name(blck_val_bandit_hutor_5)} true
+prior = 200
+active = camper@blck_val_bandit_hutor_5
+on_hit = hit@bandit_5
+
+[camper@blck_val_bandit_hutor_5]
+path_look = bandit_hutor_look
+path_walk = bandit_hutor_5_walk
+on_info = {+blck_val_bandit_go_to_hutor_quest} walker@blck_val_bandit_hutor_5_walk
+combat_ignore_cond = true
+combat_ignore_keep_when_attacked = false
+invulnerable = false
+gather_items_enabled = false
+help_wounded_enabled = false
+corpse_detection_enabled = false
+meet = no_meet
+
+[walker@blck_val_bandit_hutor_5_walk]
+path_walk = bandit_spot_walk
+combat_ignore_cond = {+blck_val_bandit_hutor_see_actor} false, true
+combat_ignore_keep_when_attacked = false
+invulnerable = false
+gather_items_enabled = false
+help_wounded_enabled = false
+corpse_detection_enabled = false
+meet = no_meet
+
+[hit@bandit_5]
+on_info = {=hit_by_actor -blck_val_bandit_hutor_see_actor} %+blck_val_bandit_hutor_see_actor%
+
+---------------Бандит_6-----------------
+[logic@blck_val_bandit_hutor_6]
+suitable = {=check_npc_name(blck_val_bandit_hutor_6)} true
+prior = 200
+active = camper@blck_val_bandit_hutor_6
+on_hit = hit@bandit_6
+
+[camper@blck_val_bandit_hutor_6]
+path_look = bandit_hutor_look
+path_walk = bandit_hutor_6_walk
+on_info = {+blck_val_bandit_go_to_hutor_quest} walker@blck_val_bandit_hutor_6_walk
+combat_ignore_cond = true
+combat_ignore_keep_when_attacked = false
+invulnerable = false
+gather_items_enabled = false
+help_wounded_enabled = false
+corpse_detection_enabled = false
+meet = no_meet
+
+[walker@blck_val_bandit_hutor_6_walk]
+path_walk = bandit_spot_walk
+combat_ignore_cond = {+blck_val_bandit_hutor_see_actor} false, true
+combat_ignore_keep_when_attacked = false
+invulnerable = false
+gather_items_enabled = false
+help_wounded_enabled = false
+corpse_detection_enabled = false
+meet = no_meet
+
+[hit@bandit_6]
+on_info = {=hit_by_actor -blck_val_bandit_hutor_see_actor} %+blck_val_bandit_hutor_see_actor%

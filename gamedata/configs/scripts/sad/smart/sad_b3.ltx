@@ -1,0 +1,84 @@
+[smart_terrain]
+squad_id = 12
+max_population = 3
+arrive_dist = 100
+respawn_params = respawn@sad_b3
+respawn_idle = 172800
+
+[respawn@sad_b3]
+spawn_stalker@master
+merc_sim_squad
+
+[spawn_stalker@master]
+spawn_squads = stalker_sim_squad_veteran, stalker_sim_squad_advanced
+spawn_num = {+sad_b3_killers_gone} 1, 0
+
+
+[merc_sim_squad]
+spawn_squads = merc_sim_squad_advanced, merc_sim_squad_veteran
+spawn_num = {+sad_b3_killers_gone} 0, 1
+
+[exclusive]
+stalker_maximilian = sad\sad_b3_maximilian.ltx
+maximilian_member_1 = sad\sad_b3_maxim_squad.ltx
+maximilian_member_2 = sad\sad_b3_maxim_squad.ltx
+maximilian_member_3 = sad\sad_b3_maxim_squad.ltx
+maximilian_member_4 = sad\sad_b3_maxim_squad.ltx
+maximilian_member_5 = sad\sad_b3_maxim_squad.ltx
+maximilian_job_1 = sad\sad_b3_maxim_squad.ltx
+
+killer_a_1 = sad\sad_b3_killer_a_logic.ltx
+killer_a_2 = sad\sad_b3_killer_a_logic.ltx
+killer_a_3 = sad\sad_b3_killer_a_logic.ltx
+killer_a_4 = sad\sad_b3_killer_a_logic.ltx
+killer_b_1 = sad\sad_b3_killer_a_logic.ltx
+killer_b_2 = sad\sad_b3_killer_a_logic.ltx
+killer_b_3 = sad\sad_b3_killer_a_logic.ltx
+killer_b_4 = sad\sad_b3_killer_a_logic.ltx
+killer_c_1 = sad\sad_b3_killer_c_logic.ltx
+killer_c_2 = sad\sad_b3_killer_c_logic.ltx
+killer_c_3 = sad\sad_b3_killer_c_logic.ltx
+killer_c_4 = sad\sad_b3_killer_c_logic.ltx
+killer_d_1 = sad\sad_b3_killer_c_logic.ltx
+killer_d_2 = sad\sad_b3_killer_c_logic.ltx
+killer_d_3 = sad\sad_b3_killer_c_logic.ltx
+killer_d_4 = sad\sad_b3_killer_c_logic.ltx
+
+radik_job = sad\sad_b3_radik_squad.ltx
+radik_1 = sad\sad_b3_radik_squad.ltx
+radik_2 = sad\sad_b3_radik_squad.ltx
+radik_3 = sad\sad_b3_radik_squad.ltx
+radik_4 = sad\sad_b3_radik_squad.ltx
+
+trader = sad\sad_b3_trader_job.ltx
+technic = sad\sad_b3_technic_job.ltx
+
+ucheny_1 = sad\sad_b3_ucheny_job.ltx
+ucheny_2 = sad\sad_b3_ucheny_job.ltx
+ucheny_3 = sad\sad_b3_ucheny_job.ltx
+ucheny_4 = sad\sad_b3_ucheny_job.ltx
+ucheny_5 = sad\sad_b3_ucheny_job.ltx
+
+merc_1 = sad\sad_b3_merc_jobs.ltx
+merc_2 = sad\sad_b3_merc_jobs.ltx
+merc_3 = sad\sad_b3_merc_jobs.ltx
+merc_4 = sad\sad_b3_merc_jobs.ltx
+merc_5 = sad\sad_b3_merc_jobs.ltx
+merc_6 = sad\sad_b3_merc_jobs.ltx
+merc_7 = sad\sad_b3_merc_jobs.ltx
+merc_8 = sad\sad_b3_merc_jobs.ltx
+merc_9 = sad\sad_b3_merc_jobs.ltx
+
+; -- sim jobs
+
+jop_1 = sad\sad_b3_sim_jobs.ltx
+jop_2 = sad\sad_b3_sim_jobs.ltx
+jop_3 = sad\sad_b3_sim_jobs.ltx
+jop_4 = sad\sad_b3_sim_jobs.ltx
+jop_5 = sad\sad_b3_sim_jobs.ltx
+jop_6 = sad\sad_b3_sim_jobs.ltx
+jop_7 = sad\sad_b3_sim_jobs.ltx
+jop_8 = sad\sad_b3_sim_jobs.ltx
+jop_9 = sad\sad_b3_sim_jobs.ltx
+
+sad_b3_beh_trade_job_1 = sad\sad_b3_trader_job.ltx

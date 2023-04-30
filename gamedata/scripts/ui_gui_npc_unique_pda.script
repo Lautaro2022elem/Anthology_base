@@ -1,0 +1,3175 @@
+-------------------- GUI КПК у одиночных сталкеров в Смерти вопреки ----------------------
+------------------------- Copyright 2012-2013 Geonezis & XOBAH ---------------------------
+------------------------------------------------------------------------------
+--                           Скриптовые КПК одиночек в Пузыре                  --
+------------------------------------------------------------------------------
+local pda1_info1_array={
+	{name="zat_b12_documents_1", info="zat_b12_documents_1"},
+	{name="zat_b12_documents_2", info="zat_b12_documents_2"},
+	{name="jup_a9_power_info", info="jup_a9_power_info"}	
+}
+
+local pda1_info2_array={
+	"tushkano",
+	"boar",
+	"chimera"
+}
+
+local pda1_info3_array={
+	"zaton",
+	"jupiter",
+	"labx8"
+}
+
+local pda1_info4_array={
+	"bandit",
+	"dolg",
+	"zombied"
+}
+
+local pda1_info5_array={
+	"jarka",
+	"gazirovka",
+	"electra"
+}
+local pda2_info1_array={
+	{name="mar_b1_documents_1", info="mar_b1_documents_1"},
+	{name="mar_b1_documents_2", info="mar_b1_documents_2"},
+	{name="mar_b1_documents_3", info="mar_b1_documents_3"}	
+}
+
+local pda2_info2_array={
+	"mar_b1_doc_1",
+	"mar_b1_doc_2",
+	"mar_b1_doc_3"
+}
+
+local pda2_info3_array={
+	"mar_b1_doc_4",
+	"mar_b1_doc_5",
+	"mar_b1_doc_6"
+}
+
+local pda2_info4_array={
+	"mar_b1_doc_7",
+	"mar_b1_doc_8",
+	"mar_b1_doc_9"
+}
+
+local pda2_info5_array={
+	"mar_b1_doc_10",
+	"mar_b1_doc_11",
+	"mar_b1_doc_12"
+}
+local pda3_info1_array={
+	{name="mar_b2_documents_1", info="mar_b2_documents_1"},
+	{name="mar_b2_documents_2", info="mar_b2_documents_2"},
+	{name="mar_b2_documents_3", info="mar_b2_documents_3"}	
+}
+
+local pda3_info2_array={
+	"mar_b2_doc_1",
+	"mar_b2_doc_2",
+	"mar_b2_doc_3"
+}
+
+local pda3_info3_array={
+	"mar_b2_doc_4",
+	"mar_b2_doc_5",
+	"mar_b2_doc_6"
+}
+
+local pda3_info4_array={
+	"mar_b2_doc_7",
+	"mar_b2_doc_8",
+	"mar_b2_doc_9",
+	"mar_b2_doc_9_1"
+}
+
+local pda3_info5_array={
+	"mar_b2_doc_10",
+	"mar_b2_doc_11",
+	"mar_b2_doc_12"
+}
+local pda4_info1_array={
+	{name="mar_b3_documents_1", info="mar_b3_documents_1"},
+	{name="mar_b3_documents_2", info="mar_b3_documents_2"},
+	{name="mar_b3_documents_3", info="mar_b3_documents_3"},
+	{name="mar_b3_documents_3_1", info="mar_b3_documents_3_1"}	
+}
+
+local pda4_info2_array={
+	"mar_b3_doc_1",
+	"mar_b3_doc_2",
+	"mar_b3_doc_3",
+	"mar_b3_doc_3_1",
+	"mar_b3_doc_3_2"
+}
+
+local pda4_info3_array={
+	"mar_b3_doc_4",
+	"mar_b3_doc_5",
+	"mar_b3_doc_6",
+	"mar_b3_doc_6_1"
+}
+
+local pda4_info4_array={
+	"mar_b3_doc_7",
+	"mar_b3_doc_8",
+	"mar_b3_doc_9",
+	"mar_b3_doc_9_1",
+	"mar_b3_doc_9_2",
+	"mar_b3_doc_9_3",
+	"mar_b3_doc_9_4",
+	"mar_b3_doc_9_5",
+	"mar_b3_doc_9_6"
+}
+
+local pda4_info5_array={
+	"mar_b3_doc_10",
+	"mar_b3_doc_11",
+	"mar_b3_doc_12"
+}
+local pda5_info1_array={
+	{name="mar_b4_documents_1", info="mar_b4_documents_1"},
+	{name="mar_b4_documents_2", info="mar_b4_documents_2"},
+	{name="mar_b4_documents_3", info="mar_b4_documents_3"}	
+}
+
+local pda5_info2_array={
+	"mar_b4_doc_1",
+	"mar_b4_doc_2",
+	"mar_b4_doc_3"
+}
+
+local pda5_info3_array={
+	"mar_b4_doc_4",
+	"mar_b4_doc_5",
+	"mar_b4_doc_6"
+}
+
+local pda5_info4_array={
+	"mar_b4_doc_7",
+	"mar_b4_doc_8",
+	"mar_b4_doc_9"
+}
+
+local pda5_info5_array={
+	"mar_b4_doc_10",
+	"mar_b4_doc_11",
+	"mar_b4_doc_12"
+}
+local pda6_info1_array={
+	{name="mar_b5_documents_1", info="mar_b5_documents_1"},
+	{name="mar_b5_documents_2", info="mar_b5_documents_2"},
+	{name="mar_b5_documents_3", info="mar_b5_documents_3"}	
+}
+
+local pda6_info2_array={
+	"mar_b5_doc_1",
+	"mar_b5_doc_2",
+	"mar_b5_doc_3"
+}
+
+local pda6_info3_array={
+	"mar_b5_doc_4",
+	"mar_b5_doc_5",
+	"mar_b5_doc_6"
+}
+
+local pda6_info4_array={
+	"mar_b5_doc_7",
+	"mar_b5_doc_8",
+	"mar_b5_doc_9"
+}
+
+local pda6_info5_array={
+	"mar_b5_doc_10",
+	"mar_b5_doc_11",
+	"mar_b5_doc_12"
+}
+local pda7_info1_array={
+	{name="mar_b6_documents_1", info="mar_b6_documents_1"},
+	{name="mar_b6_documents_2", info="mar_b6_documents_2"},
+	{name="mar_b6_documents_3", info="mar_b6_documents_3"}	
+}
+
+local pda7_info2_array={
+	"mar_b6_doc_1",
+	"mar_b6_doc_2",
+	"mar_b6_doc_3"
+}
+
+local pda7_info3_array={
+	"mar_b6_doc_4",
+	"mar_b6_doc_5",
+	"mar_b6_doc_6"
+}
+
+local pda7_info4_array={
+	"mar_b6_doc_7",
+	"mar_b6_doc_8",
+	"mar_b6_doc_9"
+}
+
+local pda7_info5_array={
+	"mar_b6_doc_10",
+	"mar_b6_doc_11",
+	"mar_b6_doc_12"
+}
+local pda8_info1_array={
+	{name="mar_b7_documents_1", info="mar_b7_documents_1"},
+	{name="mar_b7_documents_2", info="mar_b7_documents_2"},
+	{name="mar_b7_documents_3", info="mar_b7_documents_3"}	
+}
+
+local pda8_info2_array={
+	"mar_b7_doc_1",
+	"mar_b7_doc_2",
+	"mar_b7_doc_3"
+}
+
+local pda8_info3_array={
+	"mar_b7_doc_4",
+	"mar_b7_doc_5",
+	"mar_b7_doc_6"
+}
+
+local pda8_info4_array={
+	"mar_b7_doc_7",
+	"mar_b7_doc_8",
+	"mar_b7_doc_9"
+}
+
+local pda8_info5_array={
+	"mar_b7_doc_10",
+	"mar_b7_doc_11",
+	"mar_b7_doc_12"
+}
+local pda9_info1_array={
+	{name="mar_b8_documents_1", info="mar_b8_documents_1"},
+	{name="mar_b8_documents_2", info="mar_b8_documents_2"},
+	{name="mar_b8_documents_3", info="mar_b8_documents_3"}	
+}
+
+local pda9_info2_array={
+	"mar_b8_doc_1",
+	"mar_b8_doc_2",
+	"mar_b8_doc_3"
+}
+
+local pda9_info3_array={
+	"mar_b8_doc_4",
+	"mar_b8_doc_5",
+	"mar_b8_doc_6"
+}
+
+local pda9_info4_array={
+	"mar_b8_doc_7",
+	"mar_b8_doc_8",
+	"mar_b8_doc_9"
+}
+
+local pda9_info5_array={
+	"mar_b8_doc_10",
+	"mar_b8_doc_11",
+	"mar_b8_doc_12"
+}
+local pda10_info1_array={
+	{name="mar_b9_documents_1", info="mar_b9_documents_1"},
+	{name="mar_b9_documents_2", info="mar_b9_documents_2"},
+	{name="mar_b9_documents_3", info="mar_b9_documents_3"}	
+}
+
+local pda10_info2_array={
+	"mar_b9_doc_1",
+	"mar_b9_doc_2",
+	"mar_b9_doc_3"
+}
+
+local pda10_info3_array={
+	"mar_b9_doc_4",
+	"mar_b9_doc_5",
+	"mar_b9_doc_6"
+}
+
+local pda10_info4_array={
+	"mar_b9_doc_7",
+	"mar_b9_doc_8",
+	"mar_b9_doc_9"
+}
+
+local pda10_info5_array={
+	"mar_b9_doc_10",
+	"mar_b9_doc_11",
+	"mar_b9_doc_12"
+}
+local pda11_info1_array={
+	{name="actor_come_to_marsh", info="actor_come_to_marsh"},
+	{name="mar_mod_npcs_spawner", info="mar_mod_npcs_spawner"},
+	{name="mar_b2_main_quest_1_done", info="mar_b2_main_quest_1_done"},
+    {name="mar_b130_all_dop_quest_begin", info="mar_b130_all_dop_quest_begin"},
+    {name="mar_a2_main_quest_2_talking_4", info="mar_a2_main_quest_2_talking_4"},
+    {name="mar_b2_main_quest_2_done", info="mar_b2_main_quest_2_done"},
+    {name="mar_a2_main_quest_3_talking_0", info="mar_a2_main_quest_3_talking_0"},
+    {name="mar_a2_second_suget_main_quest_1_point_1", info="mar_a2_second_suget_main_quest_1_point_1"},
+    {name="mar_b2_main_quest_3_3_give", info="mar_b2_main_quest_3_3_give"},
+    {name="mar_b3_main_quest_4_give", info="mar_b3_main_quest_4_give"},
+    {name="mar_b2_main_quest_4_point_come", info="mar_b2_main_quest_4_point_come"},
+	{name="mar_b1_main_quest_7_wounded_killer_talk", info="mar_b1_main_quest_7_wounded_killer_talk"},
+	{name="mar_b1_main_quest_8_east_all_used_finish", info="mar_b1_main_quest_8_east_all_used_finish"},
+	{name="mar_b2_main_quest_9_killer_pda_have", info="mar_b2_main_quest_9_killer_pda_have"},
+	{name="mar_b1_main_quest_10_complete_2", info="mar_b1_main_quest_10_complete_2"},
+	{name="mar_b1_main_quest_10_complete_1", info="mar_b1_main_quest_10_complete_1"},
+	{name="pod_a1_suget_cs_2_finish", info="pod_a1_suget_cs_2_finish"},
+	{name="mar_a1_paral_line_quest_2_all_have", info="mar_a1_paral_line_quest_2_all_have"}
+}
+
+local pda11_info2_array={
+	{name="actor_come_to_marsh", info="actor_come_to_marsh"},
+	{name="mar_b2_main_quest_1_talk_0", info="mar_b2_main_quest_1_talk_0"},
+	{name="mar_b2_main_quest_1_1_done", info="mar_b2_main_quest_1_1_done"},
+	{name="mar_b2_main_quest_1_2_done", info="mar_b2_main_quest_1_2_done"},
+	{name="mar_b2_main_quest_1_3_done", info="mar_b2_main_quest_1_3_done"},
+	{name="mar_b130_all_dop_quest_begin", info="mar_b130_all_dop_quest_begin"},
+	{name="mar_a2_main_quest_2_talking_1", info="mar_a2_main_quest_2_talking_1"},
+	{name="mar_a2_second_suget_main_quest_1_talking_1", info="mar_a2_second_suget_main_quest_1_talking_1"},
+	{name="mar_a2_second_suget_main_quest_1_talking_2", info="mar_a2_second_suget_main_quest_1_talking_2"}
+}
+
+local pda11_info3_array={
+	"mar_b11_doc1_1",
+	"mar_b11_doc1_2",
+	"mar_b11_doc1_3",
+	"mar_b11_doc1_4",
+	"mar_b11_doc1_5",
+	"mar_b11_doc1_6",
+	"mar_b11_doc1_7",
+	"mar_b11_doc1_8",
+	"mar_b11_doc1_9",
+	"mar_b11_doc1_10",
+	"mar_b11_doc1_11",
+	"mar_b11_doc1_12",
+	"mar_b11_doc1_13",
+	"mar_b11_doc1_14"
+}
+
+local pda11_info4_array={
+	"mar_b11_doc2_1",
+	"mar_b11_doc2_2",
+	"mar_b11_doc2_3",
+	"mar_b11_doc2_4",
+	"mar_b11_doc2_5",
+	"mar_b11_doc2_6",
+	"mar_b11_doc2_7",
+	"mar_b11_doc2_8",
+	"mar_b11_doc2_9",
+	"mar_b11_doc2_10",
+	"mar_b11_doc2_11",
+	"mar_b11_doc2_12",
+	"mar_b11_doc2_13",
+	"mar_b11_doc2_14",
+	"mar_b11_doc2_15",
+	"mar_b11_doc2_16",
+	"mar_b11_doc2_17",
+	"mar_b11_doc2_18",
+	"mar_b11_doc2_19"
+}
+
+local pda11_info5_array={
+	"mar_b11_doc3_1",
+	"mar_b11_doc3_2",
+	"mar_b11_doc3_3",
+	"mar_b11_doc3_4",
+	"mar_b11_doc3_5",
+	"mar_b11_doc3_6",
+	"mar_b11_doc3_7",
+	"mar_b11_doc3_8",
+	"mar_b11_doc3_9",
+	"mar_b11_doc3_10",
+	"mar_b11_doc3_11",
+	"mar_b11_doc3_12",
+	"mar_b11_doc3_13",
+	"mar_b11_doc3_14",
+	"mar_b11_doc3_15"
+}
+local current_mode=1
+
+class "load_item" (CUIListBoxItem)
+function load_item:__init() super()
+	self:SetTextColor(GetARGB(255, 216, 186, 140))
+	self.fn=self:GetTextItem()
+	self.fn:SetFont(GetFontLetterica18Russian())
+	self.fn:SetEllipsis(true)
+end
+function load_item:__finalize() end
+
+class "load_item2" (CUIListBoxItem)
+function load_item2:__init() super()
+	self:SetTextColor(GetARGB(255, 216, 186, 140))
+	self.fn=self:GetTextItem()
+	self.fn:SetFont(GetFontLetterica16Russian())
+	self.fn:SetEllipsis(true)
+end
+function load_item2:__finalize() end
+------------------------КПК 1-ого одиночного сталкера-----------------------------------------
+
+class "mar_type_1_stalker_pda_1" (CUIScriptWnd)
+function mar_type_1_stalker_pda_1:__init() super()
+	self:InitControls()
+	self:InitCallBacks()
+	self:FillList(pda1_info1_array)
+	current_mode=1
+end
+function mar_type_1_stalker_pda_1:__finalize() end
+
+function mar_type_1_stalker_pda_1:InitControls()
+	self:SetWndRect(Frect():set(0,0,1024,768))
+	local xml=CScriptXmlInit()
+	local ctrl
+	xml:ParseFile("ui_notes_wnd.xml")
+	xml:InitStatic("background", self)
+	xml:InitStatic("caption_static", self)
+	xml:InitStatic("noice_static", self)
+    self.clock_wnd=xml:InitStatic("clock_wnd",self)
+	ctrl=CUIWindow()
+	xml:InitWindow("list_item:main", 0, ctrl)
+	self.list_item_main_sz=vector2():set(ctrl:GetWidth(), ctrl:GetHeight())
+	xml:InitWindow("list_item:fn", 0, ctrl)
+	self.list_item_fn_sz=vector2():set(ctrl:GetWidth(), ctrl:GetHeight())
+	xml:InitWindow("list_item:fa", 0, ctrl)
+	self.list_item_fa_sz=vector2():set(ctrl:GetWidth(), ctrl:GetHeight())
+	xml:InitWindow("description_item:main", 0, ctrl)
+	self.desc_item_main_sz=vector2():set(ctrl:GetWidth(), ctrl:GetHeight())
+	xml:InitWindow("description_item:fn", 0, ctrl)
+	self.desc_item_fn_sz=vector2():set(ctrl:GetWidth(), ctrl:GetHeight())
+	self.btn1=xml:Init3tButton("btn_kris_use_1", self)
+	self.btn1:Enable(false)
+	self:Register(self.btn1, "btn_kris_use_1")
+	self.btn2=xml:Init3tButton("btn_kris_use_2", self)
+	self:Register(self.btn2, "btn_kris_use_2")
+	self.btn3=xml:Init3tButton("btn_kris_use_3", self)
+	self:Register(self.btn3, "btn_kris_use_3")
+	self.btn4=xml:Init3tButton("btn_kris_use_4", self)
+	self:Register(self.btn4, "btn_kris_use_4")
+	self.btn5=xml:Init3tButton("btn_kris_use_5", self)
+	self:Register(self.btn5, "btn_kris_use_5")
+	self.btn6=xml:Init3tButton("btn_quit", self)
+	self:Register(self.btn6, "btn_quit")
+	if (not has_alife_info("zat_a2_suget_quest_5_kris_fail")) then
+      self.btn7=xml:Init3tButton("btn_copy", self)
+	  self:Register(self.btn7, "btn_copy") 
+    end	
+	xml:InitFrame("list_frame", self)
+	xml:InitFrame("descr_frame", self)
+	self.list = xml:InitListBox("list",self)
+	self.list:ShowSelectedItem(true)
+	self:Register(self.list, "list_window")
+	self.picture=xml:InitStatic("picture", self)
+	self.description_list = xml:InitListBox("description_list",self)
+	self:Register(self.description_list, "description_list")
+end
+
+function mar_type_1_stalker_pda_1:InitCallBacks()
+	self:AddCallback("btn_kris_use_1", ui_events.BUTTON_CLICKED, self.click_private, self)
+	self:AddCallback("btn_kris_use_2", ui_events.BUTTON_CLICKED, self.click_monsters, self)
+	self:AddCallback("btn_kris_use_3", ui_events.BUTTON_CLICKED, self.click_locations, self)
+	self:AddCallback("btn_kris_use_4", ui_events.BUTTON_CLICKED, self.click_factions, self)
+	self:AddCallback("btn_kris_use_5", ui_events.BUTTON_CLICKED, self.click_stories, self)
+	self:AddCallback("btn_quit", ui_events.BUTTON_CLICKED, self.click_quit, self)
+	--/self:AddCallback("btn_copy", ui_events.BUTTON_CLICKED, self.click_copy, self)
+	self:AddCallback("list_window", ui_events.LIST_ITEM_CLICKED, self.OnListItemClicked, self)
+end
+
+function mar_type_1_stalker_pda_1:Update()
+	CUIScriptWnd.Update(self)
+	--/self.clock_wnd:TextControl():SetText(getTime())
+end
+
+function mar_type_1_stalker_pda_1:OnKeyboard(dik, keyboard_action)
+	CUIScriptWnd.OnKeyboard(self, dik, keyboard_action)
+	if keyboard_action==ui_events.WINDOW_KEY_PRESSED then
+		if dik==DIK_keys.DIK_ESCAPE then self:click_quit() end
+		if dik==DIK_keys.DIK_1 then self:click_private() end
+		if dik==DIK_keys.DIK_2 then self:click_monsters() end
+		if dik==DIK_keys.DIK_3 then self:click_locations() end
+		if dik==DIK_keys.DIK_4 then self:click_factions() end
+		if dik==DIK_keys.DIK_5 then self:click_stories() end
+	end
+	return true
+end
+
+function mar_type_1_stalker_pda_1:click_copy()
+    run_gui(ui_gui_elements.ui_a2_quest_5_pda_copy())    
+	self.btn7:Enable(false)
+end
+function mar_type_1_stalker_pda_1:click_quit()
+    give_object_to_actor("mar_type_1_stalker_pda_1_item")
+	self:HideDialog()
+end
+function mar_type_1_stalker_pda_1:click_private()
+	current_mode=1
+	self.btn1:Enable(false)
+	self.btn2:Enable(true)
+	self.btn3:Enable(true)
+	self.btn4:Enable(true)
+	self.btn5:Enable(true)
+	if (not has_alife_info("zat_a2_suget_quest_5_kris_fail")) then
+	self.btn7:Enable(false)
+	end
+	self:FillList(pda1_info1_array)
+end
+function mar_type_1_stalker_pda_1:click_monsters()
+	current_mode=2
+	self.btn1:Enable(true)
+	self.btn2:Enable(false)
+	self.btn3:Enable(true)
+	self.btn4:Enable(true)
+	self.btn5:Enable(true)
+    if (not has_alife_info("zat_a2_suget_quest_5_kris_fail")) then	
+	self.btn7:Enable(true)
+	end
+	self:FillList(pda1_info2_array)
+end
+function mar_type_1_stalker_pda_1:click_locations()
+	current_mode=3
+	self.btn1:Enable(true)
+	self.btn2:Enable(true)
+	self.btn3:Enable(false)
+	self.btn4:Enable(true)
+	self.btn5:Enable(true)
+	if (not has_alife_info("zat_a2_suget_quest_5_kris_fail")) then
+	self.btn7:Enable(false)
+	end
+	self:FillList(pda1_info3_array)
+end
+function mar_type_1_stalker_pda_1:click_factions()
+	current_mode=4
+	self.btn1:Enable(true)
+	self.btn2:Enable(true)
+	self.btn3:Enable(true)
+	self.btn4:Enable(false)
+	self.btn5:Enable(true)
+	if (not has_alife_info("zat_a2_suget_quest_5_kris_fail")) then
+	self.btn7:Enable(false)
+	end
+	self:FillList(pda1_info4_array)
+end
+function mar_type_1_stalker_pda_1:click_stories()
+	current_mode=5
+	self.btn1:Enable(true)
+	self.btn2:Enable(true)
+	self.btn3:Enable(true)
+	self.btn4:Enable(true)
+	self.btn5:Enable(false)
+	if (not has_alife_info("zat_a2_suget_quest_5_kris_fail")) then
+	self.btn7:Enable(false)
+	end
+	self:FillList(pda1_info5_array)
+end
+
+function mar_type_1_stalker_pda_1:OnListItemClicked()
+	if self.list:GetSize()==0 then return end
+	item=self.list:GetSelectedItem()
+	if item==nil then return end
+	local item_text=item.fn:GetText()
+	local item_alias=item.fa:GetText()
+	if item_alias=="null" then return end
+	self.description_list:Clear()
+	self.description_list:ScrollToBegin()
+	self.picture:TextControl():SetText("")
+	if current_mode==1 then
+		self:FillDescription(GetString("ars_"..item_alias))
+		self.picture:InitTexture("ui_noise")
+	elseif current_mode==2 then
+		self:FillDescription(GetString("enc_mutant_"..item_alias))
+		self.picture:InitTexture("ui_noise")
+	elseif current_mode==3 then
+		self:FillDescription(GetString("enc_location_"..item_alias))
+		self.picture:InitTexture("ui_noise")
+	elseif current_mode==4 then
+		self:FillDescription(GetString("enc_faction_"..item_alias))
+		self.picture:InitTexture("ui_noise")
+	elseif current_mode==5 then
+		self:FillDescription(GetString("enc_anomaly_"..item_alias))
+		self.picture:InitTexture("ui_noise")
+	else
+		self.picture:InitTexture("ui_disk_io")
+		self.picture:TextControl():SetText(GetString("notepad_list_none"))
+	end
+	local r=self.picture:GetTextureRect()
+	self.picture:SetTextureRect(Frect():set(r.x1,r.y1,r.x2,r.y2))
+	self.list:ShowSelectedItem(true)
+end
+
+function mar_type_1_stalker_pda_1:FillList(array)
+	self.list:Clear()
+	self.list:ScrollToBegin()
+	self.description_list:Clear()
+	self.description_list:ScrollToBegin()
+	local r=self.picture:GetTextureRect()
+	self.picture:InitTexture("ui\\ui_disk_io")
+	self.picture:SetTextureRect(Frect():set(r.x1,r.y1,r.x2,r.y2))
+	self.picture:TextControl():SetText(GetString("notepad_list_none"))
+	for k,v in pairs(array) do
+		if array==pda1_info1_array then
+			self:AddItemToList(GetString(v.name),v.name)
+		elseif array==pda1_info2_array then
+			self:AddItemToList(GetString(v),v)
+		elseif array==pda1_info3_array then
+			self:AddItemToList(GetString(v),v)
+		elseif array==pda1_info4_array then
+			self:AddItemToList(GetString(v),v)
+		elseif array==pda1_info5_array then
+			self:AddItemToList(GetString(v),v)
+		end
+	end
+	if self.list:GetSize()==0 then
+		self:AddItemToList(GetString("notepad_list_empty"),"null") 
+	end
+end
+
+function mar_type_1_stalker_pda_1:AddItemToList(item_name,item_alias)
+	local itm=load_item()
+	itm:SetWndSize(self.list_item_main_sz)
+	itm.fn:SetWndPos(vector2():set(0,0))
+	itm.fn:SetWndSize(self.list_item_fn_sz)
+	itm.fn:SetText(item_name)
+	itm.fa = itm:AddTextField(item_alias, self.list_item_fa_sz.x)
+	itm.fa:SetFont(GetFontLetterica16Russian())
+	itm.fa:SetWndPos(vector2():set(self.list_item_fn_sz.x-40, 1200))
+	itm.fa:SetWndSize(self.list_item_fa_sz)
+	self.list:AddExistingItem(itm)
+end
+
+function mar_type_1_stalker_pda_1:FillDescription(item_name)
+	local arr=str_explode(" ",item_name,60,65)
+	for k,v in pairs(arr) do
+		local itm=load_item2()
+		itm:SetWndSize(self.desc_item_main_sz)
+		itm.fn:SetWndPos(vector2():set(0,0))
+		itm.fn:SetWndSize(self.desc_item_fn_sz)
+		itm.fn:SetText(v)
+		self.description_list:AddExistingItem(itm)
+	end
+end
+------------------------КПК 2-ого одиночного сталкера-----------------------------------------
+
+class "mar_type_1_stalker_pda_2" (CUIScriptWnd)
+function mar_type_1_stalker_pda_2:__init() super()
+	self:InitControls()
+	self:InitCallBacks()
+	self:FillList(pda2_info1_array)
+	current_mode=1
+end
+function mar_type_1_stalker_pda_2:__finalize() end
+
+function mar_type_1_stalker_pda_2:InitControls()
+	self:SetWndRect(Frect():set(0,0,1024,768))
+	local xml=CScriptXmlInit()
+	local ctrl
+	xml:ParseFile("ui_notes_wnd.xml")
+	xml:InitStatic("background", self)
+	xml:InitStatic("caption_static", self)
+	xml:InitStatic("noice_static", self)
+    self.clock_wnd=xml:InitStatic("clock_wnd",self)
+	ctrl=CUIWindow()
+	xml:InitWindow("list_item:main", 0, ctrl)
+	self.list_item_main_sz=vector2():set(ctrl:GetWidth(), ctrl:GetHeight())
+	xml:InitWindow("list_item:fn", 0, ctrl)
+	self.list_item_fn_sz=vector2():set(ctrl:GetWidth(), ctrl:GetHeight())
+	xml:InitWindow("list_item:fa", 0, ctrl)
+	self.list_item_fa_sz=vector2():set(ctrl:GetWidth(), ctrl:GetHeight())
+	xml:InitWindow("description_item:main", 0, ctrl)
+	self.desc_item_main_sz=vector2():set(ctrl:GetWidth(), ctrl:GetHeight())
+	xml:InitWindow("description_item:fn", 0, ctrl)
+	self.desc_item_fn_sz=vector2():set(ctrl:GetWidth(), ctrl:GetHeight())
+	self.btn1=xml:Init3tButton("btn_kris_use_1", self)
+	self.btn1:Enable(false)
+	self:Register(self.btn1, "btn_kris_use_1")
+	self.btn2=xml:Init3tButton("btn_kris_use_2", self)
+	self:Register(self.btn2, "btn_kris_use_2")
+	self.btn3=xml:Init3tButton("btn_kris_use_3", self)
+	self:Register(self.btn3, "btn_kris_use_3")
+	self.btn4=xml:Init3tButton("btn_kris_use_4", self)
+	self:Register(self.btn4, "btn_kris_use_4")
+	self.btn5=xml:Init3tButton("btn_kris_use_5", self)
+	self:Register(self.btn5, "btn_kris_use_5")
+	self.btn6=xml:Init3tButton("btn_quit", self)
+	self:Register(self.btn6, "btn_quit")
+	if (not has_alife_info("perevalochnaya_lutiy_meet_to_zombied_done")) then
+      self.btn7=xml:Init3tButton("btn_copy", self)
+	  self:Register(self.btn7, "btn_copy") 
+    end	
+	xml:InitFrame("list_frame", self)
+	xml:InitFrame("descr_frame", self)
+	self.list = xml:InitListBox("list",self)
+	self.list:ShowSelectedItem(true)
+	self:Register(self.list, "list_window")
+	self.picture=xml:InitStatic("picture", self)
+	self.description_list = xml:InitListBox("description_list",self)
+	self:Register(self.description_list, "description_list")
+end
+
+function mar_type_1_stalker_pda_2:InitCallBacks()
+	self:AddCallback("btn_kris_use_1", ui_events.BUTTON_CLICKED, self.click_private, self)
+	self:AddCallback("btn_kris_use_2", ui_events.BUTTON_CLICKED, self.click_monsters, self)
+	self:AddCallback("btn_kris_use_3", ui_events.BUTTON_CLICKED, self.click_locations, self)
+	self:AddCallback("btn_kris_use_4", ui_events.BUTTON_CLICKED, self.click_factions, self)
+	self:AddCallback("btn_kris_use_5", ui_events.BUTTON_CLICKED, self.click_stories, self)
+	self:AddCallback("btn_quit", ui_events.BUTTON_CLICKED, self.click_quit, self)
+	--/self:AddCallback("btn_copy", ui_events.BUTTON_CLICKED, self.click_copy, self)
+	self:AddCallback("list_window", ui_events.LIST_ITEM_CLICKED, self.OnListItemClicked, self)
+end
+
+function mar_type_1_stalker_pda_2:Update()
+	CUIScriptWnd.Update(self)
+	--/self.clock_wnd:TextControl():SetText(getTime())
+end
+
+function mar_type_1_stalker_pda_2:OnKeyboard(dik, keyboard_action)
+	CUIScriptWnd.OnKeyboard(self, dik, keyboard_action)
+	if keyboard_action==ui_events.WINDOW_KEY_PRESSED then
+		if dik==DIK_keys.DIK_ESCAPE then self:click_quit() end
+		if dik==DIK_keys.DIK_1 then self:click_private() end
+		if dik==DIK_keys.DIK_2 then self:click_monsters() end
+		if dik==DIK_keys.DIK_3 then self:click_locations() end
+		if dik==DIK_keys.DIK_4 then self:click_factions() end
+		if dik==DIK_keys.DIK_5 then self:click_stories() end
+	end
+	return true
+end
+
+function mar_type_1_stalker_pda_2:click_copy()
+    run_gui(ui_gui_elements.ui_a2_quest_5_pda_copy())    
+	self.btn7:Enable(false)
+end
+function mar_type_1_stalker_pda_2:click_quit()
+    give_object_to_actor("pb_padalshik_pda")
+	self:HideDialog()
+end
+function mar_type_1_stalker_pda_2:click_private()
+	current_mode=1
+	self.btn1:Enable(false)
+	self.btn2:Enable(true)
+	self.btn3:Enable(true)
+	self.btn4:Enable(true)
+	self.btn5:Enable(true)
+	if (not has_alife_info("perevalochnaya_lutiy_meet_to_zombied_done")) then
+	self.btn7:Enable(false)
+	end
+	self:FillList(pda2_info1_array)
+end
+function mar_type_1_stalker_pda_2:click_monsters()
+	current_mode=2
+	self.btn1:Enable(true)
+	self.btn2:Enable(false)
+	self.btn3:Enable(true)
+	self.btn4:Enable(true)
+	self.btn5:Enable(true)
+    if (not has_alife_info("perevalochnaya_lutiy_meet_to_zombied_done")) then	
+	self.btn7:Enable(true)
+	end
+	self:FillList(pda2_info2_array)
+end
+function mar_type_1_stalker_pda_2:click_locations()
+	current_mode=3
+	self.btn1:Enable(true)
+	self.btn2:Enable(true)
+	self.btn3:Enable(false)
+	self.btn4:Enable(true)
+	self.btn5:Enable(true)
+	if (not has_alife_info("perevalochnaya_lutiy_meet_to_zombied_done")) then
+	self.btn7:Enable(false)
+	end
+	self:FillList(pda2_info3_array)
+end
+function mar_type_1_stalker_pda_2:click_factions()
+	current_mode=4
+	self.btn1:Enable(true)
+	self.btn2:Enable(true)
+	self.btn3:Enable(true)
+	self.btn4:Enable(false)
+	self.btn5:Enable(true)
+	if (not has_alife_info("perevalochnaya_lutiy_meet_to_zombied_done")) then
+	self.btn7:Enable(false)
+	end
+	self:FillList(pda2_info4_array)
+	give_info("zver_open_to_pda_padalshik")
+end
+function mar_type_1_stalker_pda_2:click_stories()
+	current_mode=5
+	self.btn1:Enable(true)
+	self.btn2:Enable(true)
+	self.btn3:Enable(true)
+	self.btn4:Enable(true)
+	self.btn5:Enable(false)
+	if (not has_alife_info("perevalochnaya_lutiy_meet_to_zombied_done")) then
+	self.btn7:Enable(false)
+	end
+	self:FillList(pda2_info5_array)
+end
+
+function mar_type_1_stalker_pda_2:OnListItemClicked()
+	if self.list:GetSize()==0 then return end
+	item=self.list:GetSelectedItem()
+	if item==nil then return end
+	local item_text=item.fn:GetText()
+	local item_alias=item.fa:GetText()
+	if item_alias=="null" then return end
+	self.description_list:Clear()
+	self.description_list:ScrollToBegin()
+	self.picture:TextControl():SetText("")
+	if current_mode==1 then
+		self:FillDescription(GetString("ars_"..item_alias))
+		self.picture:InitTexture("ui_noise")
+	elseif current_mode==2 then
+		self:FillDescription(GetString("enc_mutant_"..item_alias))
+		self.picture:InitTexture("ui_noise")
+	elseif current_mode==3 then
+		self:FillDescription(GetString("enc_location_"..item_alias))
+		self.picture:InitTexture("ui_noise")
+	elseif current_mode==4 then
+		self:FillDescription(GetString("enc_faction_"..item_alias))
+		self.picture:InitTexture("ui_noise")
+	elseif current_mode==5 then
+		self:FillDescription(GetString("enc_anomaly_"..item_alias))
+		self.picture:InitTexture("ui_noise")
+	else
+		self.picture:InitTexture("ui_disk_io")
+		self.picture:TextControl():SetText(GetString("notepad_list_none"))
+	end
+	local r=self.picture:GetTextureRect()
+	self.picture:SetTextureRect(Frect():set(r.x1,r.y1,r.x2,r.y2))
+	self.list:ShowSelectedItem(true)
+end
+
+function mar_type_1_stalker_pda_2:FillList(array)
+	self.list:Clear()
+	self.list:ScrollToBegin()
+	self.description_list:Clear()
+	self.description_list:ScrollToBegin()
+	local r=self.picture:GetTextureRect()
+	self.picture:InitTexture("ui\\ui_disk_io")
+	self.picture:SetTextureRect(Frect():set(r.x1,r.y1,r.x2,r.y2))
+	self.picture:TextControl():SetText(GetString("notepad_list_none"))
+	for k,v in pairs(array) do
+		if array==pda2_info1_array then
+			self:AddItemToList(GetString(v.name),v.name)
+		elseif array==pda2_info2_array then
+			self:AddItemToList(GetString(v),v)
+		elseif array==pda2_info3_array then
+			self:AddItemToList(GetString(v),v)
+		elseif array==pda2_info4_array then
+			self:AddItemToList(GetString(v),v)
+		elseif array==pda2_info5_array then
+			self:AddItemToList(GetString(v),v)
+		end
+	end
+	if self.list:GetSize()==0 then
+		self:AddItemToList(GetString("notepad_list_empty"),"null") 
+	end
+end
+
+function mar_type_1_stalker_pda_2:AddItemToList(item_name,item_alias)
+	local itm=load_item()
+	itm:SetWndSize(self.list_item_main_sz)
+	itm.fn:SetWndPos(vector2():set(0,0))
+	itm.fn:SetWndSize(self.list_item_fn_sz)
+	itm.fn:SetText(item_name)
+	itm.fa = itm:AddTextField(item_alias, self.list_item_fa_sz.x)
+	itm.fa:SetFont(GetFontLetterica16Russian())
+	itm.fa:SetWndPos(vector2():set(self.list_item_fn_sz.x-40, 1200))
+	itm.fa:SetWndSize(self.list_item_fa_sz)
+	self.list:AddExistingItem(itm)
+end
+
+function mar_type_1_stalker_pda_2:FillDescription(item_name)
+	local arr=str_explode(" ",item_name,60,65)
+	for k,v in pairs(arr) do
+		local itm=load_item2()
+		itm:SetWndSize(self.desc_item_main_sz)
+		itm.fn:SetWndPos(vector2():set(0,0))
+		itm.fn:SetWndSize(self.desc_item_fn_sz)
+		itm.fn:SetText(v)
+		self.description_list:AddExistingItem(itm)
+	end
+end
+------------------------КПК 3-ого одиночного сталкера-----------------------------------------
+
+class "mar_type_1_stalker_pda_3" (CUIScriptWnd)
+function mar_type_1_stalker_pda_3:__init() super()
+	self:InitControls()
+	self:InitCallBacks()
+	self:FillList(pda3_info1_array)
+	current_mode=1
+end
+function mar_type_1_stalker_pda_3:__finalize() end
+
+function mar_type_1_stalker_pda_3:InitControls()
+	self:SetWndRect(Frect():set(0,0,1024,768))
+	local xml=CScriptXmlInit()
+	local ctrl
+	xml:ParseFile("ui_notes_wnd.xml")
+	xml:InitStatic("background", self)
+	xml:InitStatic("caption_static", self)
+	xml:InitStatic("noice_static", self)
+    self.clock_wnd=xml:InitStatic("clock_wnd",self)
+	ctrl=CUIWindow()
+	xml:InitWindow("list_item:main", 0, ctrl)
+	self.list_item_main_sz=vector2():set(ctrl:GetWidth(), ctrl:GetHeight())
+	xml:InitWindow("list_item:fn", 0, ctrl)
+	self.list_item_fn_sz=vector2():set(ctrl:GetWidth(), ctrl:GetHeight())
+	xml:InitWindow("list_item:fa", 0, ctrl)
+	self.list_item_fa_sz=vector2():set(ctrl:GetWidth(), ctrl:GetHeight())
+	xml:InitWindow("description_item:main", 0, ctrl)
+	self.desc_item_main_sz=vector2():set(ctrl:GetWidth(), ctrl:GetHeight())
+	xml:InitWindow("description_item:fn", 0, ctrl)
+	self.desc_item_fn_sz=vector2():set(ctrl:GetWidth(), ctrl:GetHeight())
+	self.btn1=xml:Init3tButton("btn_kris_use_1", self)
+	self.btn1:Enable(false)
+	self:Register(self.btn1, "btn_kris_use_1")
+	self.btn2=xml:Init3tButton("btn_kris_use_2", self)
+	self:Register(self.btn2, "btn_kris_use_2")
+	self.btn3=xml:Init3tButton("btn_kris_use_3", self)
+	self:Register(self.btn3, "btn_kris_use_3")
+	self.btn4=xml:Init3tButton("btn_kris_use_4", self)
+	self:Register(self.btn4, "btn_kris_use_4")
+	self.btn5=xml:Init3tButton("btn_kris_use_5", self)
+	self:Register(self.btn5, "btn_kris_use_5")
+	self.btn6=xml:Init3tButton("btn_quit", self)
+	self:Register(self.btn6, "btn_quit")
+	if (not has_alife_info("perevalochnaya_lutiy_meet_to_zombied_done")) then
+      self.btn7=xml:Init3tButton("btn_copy", self)
+	  self:Register(self.btn7, "btn_copy") 
+    end	
+	xml:InitFrame("list_frame", self)
+	xml:InitFrame("descr_frame", self)
+	self.list = xml:InitListBox("list",self)
+	self.list:ShowSelectedItem(true)
+	self:Register(self.list, "list_window")
+	self.picture=xml:InitStatic("picture", self)
+	self.description_list = xml:InitListBox("description_list",self)
+	self:Register(self.description_list, "description_list")
+end
+
+function mar_type_1_stalker_pda_3:InitCallBacks()
+	self:AddCallback("btn_kris_use_1", ui_events.BUTTON_CLICKED, self.click_private, self)
+	self:AddCallback("btn_kris_use_2", ui_events.BUTTON_CLICKED, self.click_monsters, self)
+	self:AddCallback("btn_kris_use_3", ui_events.BUTTON_CLICKED, self.click_locations, self)
+	self:AddCallback("btn_kris_use_4", ui_events.BUTTON_CLICKED, self.click_factions, self)
+	self:AddCallback("btn_kris_use_5", ui_events.BUTTON_CLICKED, self.click_stories, self)
+	self:AddCallback("btn_quit", ui_events.BUTTON_CLICKED, self.click_quit, self)
+	--/self:AddCallback("btn_copy", ui_events.BUTTON_CLICKED, self.click_copy, self)
+	self:AddCallback("list_window", ui_events.LIST_ITEM_CLICKED, self.OnListItemClicked, self)
+end
+
+function mar_type_1_stalker_pda_3:Update()
+	CUIScriptWnd.Update(self)
+	--/self.clock_wnd:TextControl():SetText(getTime())
+end
+
+function mar_type_1_stalker_pda_3:OnKeyboard(dik, keyboard_action)
+	CUIScriptWnd.OnKeyboard(self, dik, keyboard_action)
+	if keyboard_action==ui_events.WINDOW_KEY_PRESSED then
+		if dik==DIK_keys.DIK_ESCAPE then self:click_quit() end
+		if dik==DIK_keys.DIK_1 then self:click_private() end
+		if dik==DIK_keys.DIK_2 then self:click_monsters() end
+		if dik==DIK_keys.DIK_3 then self:click_locations() end
+		if dik==DIK_keys.DIK_4 then self:click_factions() end
+		if dik==DIK_keys.DIK_5 then self:click_stories() end
+	end
+	return true
+end
+
+function mar_type_1_stalker_pda_3:click_copy()
+    run_gui(ui_gui_elements.ui_a2_quest_5_pda_copy())    
+	self.btn7:Enable(false)
+end
+function mar_type_1_stalker_pda_3:click_quit()
+    give_object_to_actor("blck_val_chimik_pda")
+	self:HideDialog()
+end
+function mar_type_1_stalker_pda_3:click_private()
+	current_mode=1
+	self.btn1:Enable(false)
+	self.btn2:Enable(true)
+	self.btn3:Enable(true)
+	self.btn4:Enable(true)
+	self.btn5:Enable(true)
+	if (not has_alife_info("perevalochnaya_lutiy_meet_to_zombied_done")) then
+	self.btn7:Enable(false)
+	end
+	self:FillList(pda3_info1_array)
+end
+function mar_type_1_stalker_pda_3:click_monsters()
+	current_mode=2
+	self.btn1:Enable(true)
+	self.btn2:Enable(false)
+	self.btn3:Enable(true)
+	self.btn4:Enable(true)
+	self.btn5:Enable(true)
+    if (not has_alife_info("perevalochnaya_lutiy_meet_to_zombied_done")) then	
+	self.btn7:Enable(true)
+	end
+	self:FillList(pda3_info2_array)
+end
+function mar_type_1_stalker_pda_3:click_locations()
+	current_mode=3
+	self.btn1:Enable(true)
+	self.btn2:Enable(true)
+	self.btn3:Enable(false)
+	self.btn4:Enable(true)
+	self.btn5:Enable(true)
+	if (not has_alife_info("perevalochnaya_lutiy_meet_to_zombied_done")) then
+	self.btn7:Enable(false)
+	end
+	self:FillList(pda3_info3_array)
+end
+function mar_type_1_stalker_pda_3:click_factions()
+	current_mode=4
+	self.btn1:Enable(true)
+	self.btn2:Enable(true)
+	self.btn3:Enable(true)
+	self.btn4:Enable(false)
+	self.btn5:Enable(true)
+	if (not has_alife_info("perevalochnaya_lutiy_meet_to_zombied_done")) then
+	self.btn7:Enable(false)
+	end
+	self:FillList(pda3_info4_array)
+	give_info("blck_val_zver_open_pda_chimik")
+end
+function mar_type_1_stalker_pda_3:click_stories()
+	current_mode=5
+	self.btn1:Enable(true)
+	self.btn2:Enable(true)
+	self.btn3:Enable(true)
+	self.btn4:Enable(true)
+	self.btn5:Enable(false)
+	if (not has_alife_info("perevalochnaya_lutiy_meet_to_zombied_done")) then
+	self.btn7:Enable(false)
+	end
+	self:FillList(pda3_info5_array)
+end
+
+function mar_type_1_stalker_pda_3:OnListItemClicked()
+	if self.list:GetSize()==0 then return end
+	item=self.list:GetSelectedItem()
+	if item==nil then return end
+	local item_text=item.fn:GetText()
+	local item_alias=item.fa:GetText()
+	if item_alias=="null" then return end
+	self.description_list:Clear()
+	self.description_list:ScrollToBegin()
+	self.picture:TextControl():SetText("")
+	if current_mode==1 then
+		self:FillDescription(GetString("ars_"..item_alias))
+		self.picture:InitTexture("ui_noise")
+	elseif current_mode==2 then
+		self:FillDescription(GetString("enc_mutant_"..item_alias))
+		self.picture:InitTexture("ui_noise")
+	elseif current_mode==3 then
+		self:FillDescription(GetString("enc_location_"..item_alias))
+		self.picture:InitTexture("ui_noise")
+	elseif current_mode==4 then
+		self:FillDescription(GetString("enc_faction_"..item_alias))
+		self.picture:InitTexture("ui_noise")
+	elseif current_mode==5 then
+		self:FillDescription(GetString("enc_anomaly_"..item_alias))
+		self.picture:InitTexture("ui_noise")
+	else
+		self.picture:InitTexture("ui_disk_io")
+		self.picture:TextControl():SetText(GetString("notepad_list_none"))
+	end
+	local r=self.picture:GetTextureRect()
+	self.picture:SetTextureRect(Frect():set(r.x1,r.y1,r.x2,r.y2))
+	self.list:ShowSelectedItem(true)
+end
+
+function mar_type_1_stalker_pda_3:FillList(array)
+	self.list:Clear()
+	self.list:ScrollToBegin()
+	self.description_list:Clear()
+	self.description_list:ScrollToBegin()
+	local r=self.picture:GetTextureRect()
+	self.picture:InitTexture("ui\\ui_disk_io")
+	self.picture:SetTextureRect(Frect():set(r.x1,r.y1,r.x2,r.y2))
+	self.picture:TextControl():SetText(GetString("notepad_list_none"))
+	for k,v in pairs(array) do
+		if array==pda3_info1_array then
+			self:AddItemToList(GetString(v.name),v.name)
+		elseif array==pda3_info2_array then
+			self:AddItemToList(GetString(v),v)
+		elseif array==pda3_info3_array then
+			self:AddItemToList(GetString(v),v)
+		elseif array==pda3_info4_array then
+			self:AddItemToList(GetString(v),v)
+		elseif array==pda3_info5_array then
+			self:AddItemToList(GetString(v),v)
+		end
+	end
+	if self.list:GetSize()==0 then
+		self:AddItemToList(GetString("notepad_list_empty"),"null") 
+	end
+end
+
+function mar_type_1_stalker_pda_3:AddItemToList(item_name,item_alias)
+	local itm=load_item()
+	itm:SetWndSize(self.list_item_main_sz)
+	itm.fn:SetWndPos(vector2():set(0,0))
+	itm.fn:SetWndSize(self.list_item_fn_sz)
+	itm.fn:SetText(item_name)
+	itm.fa = itm:AddTextField(item_alias, self.list_item_fa_sz.x)
+	itm.fa:SetFont(GetFontLetterica16Russian())
+	itm.fa:SetWndPos(vector2():set(self.list_item_fn_sz.x-40, 1200))
+	itm.fa:SetWndSize(self.list_item_fa_sz)
+	self.list:AddExistingItem(itm)
+end
+
+function mar_type_1_stalker_pda_3:FillDescription(item_name)
+	local arr=str_explode(" ",item_name,60,65)
+	for k,v in pairs(arr) do
+		local itm=load_item2()
+		itm:SetWndSize(self.desc_item_main_sz)
+		itm.fn:SetWndPos(vector2():set(0,0))
+		itm.fn:SetWndSize(self.desc_item_fn_sz)
+		itm.fn:SetText(v)
+		self.description_list:AddExistingItem(itm)
+	end
+end
+------------------------КПК 4-ого одиночного сталкера-----------------------------------------
+
+class "mar_type_1_stalker_pda_4" (CUIScriptWnd)
+function mar_type_1_stalker_pda_4:__init() super()
+	self:InitControls()
+	self:InitCallBacks()
+	self:FillList(pda4_info1_array)
+	current_mode=1
+end
+function mar_type_1_stalker_pda_4:__finalize() end
+
+function mar_type_1_stalker_pda_4:InitControls()
+	self:SetWndRect(Frect():set(0,0,1024,768))
+	local xml=CScriptXmlInit()
+	local ctrl
+	xml:ParseFile("ui_notes_wnd.xml")
+	xml:InitStatic("background", self)
+	xml:InitStatic("caption_static", self)
+	xml:InitStatic("noice_static", self)
+    self.clock_wnd=xml:InitStatic("clock_wnd",self)
+	ctrl=CUIWindow()
+	xml:InitWindow("list_item:main", 0, ctrl)
+	self.list_item_main_sz=vector2():set(ctrl:GetWidth(), ctrl:GetHeight())
+	xml:InitWindow("list_item:fn", 0, ctrl)
+	self.list_item_fn_sz=vector2():set(ctrl:GetWidth(), ctrl:GetHeight())
+	xml:InitWindow("list_item:fa", 0, ctrl)
+	self.list_item_fa_sz=vector2():set(ctrl:GetWidth(), ctrl:GetHeight())
+	xml:InitWindow("description_item:main", 0, ctrl)
+	self.desc_item_main_sz=vector2():set(ctrl:GetWidth(), ctrl:GetHeight())
+	xml:InitWindow("description_item:fn", 0, ctrl)
+	self.desc_item_fn_sz=vector2():set(ctrl:GetWidth(), ctrl:GetHeight())
+	self.btn1=xml:Init3tButton("btn_kris_use_1", self)
+	self.btn1:Enable(false)
+	self:Register(self.btn1, "btn_kris_use_1")
+	self.btn2=xml:Init3tButton("btn_kris_use_2", self)
+	self:Register(self.btn2, "btn_kris_use_2")
+	self.btn3=xml:Init3tButton("btn_kris_use_3", self)
+	self:Register(self.btn3, "btn_kris_use_3")
+	self.btn4=xml:Init3tButton("btn_kris_use_4", self)
+	self:Register(self.btn4, "btn_kris_use_4")
+	self.btn5=xml:Init3tButton("btn_kris_use_5", self)
+	self:Register(self.btn5, "btn_kris_use_5")
+	self.btn6=xml:Init3tButton("btn_quit", self)
+	self:Register(self.btn6, "btn_quit")
+	if (not has_alife_info("perevalochnaya_lutiy_meet_to_zombied_done")) then
+      self.btn7=xml:Init3tButton("btn_copy", self)
+	  self:Register(self.btn7, "btn_copy") 
+    end	
+	xml:InitFrame("list_frame", self)
+	xml:InitFrame("descr_frame", self)
+	self.list = xml:InitListBox("list",self)
+	self.list:ShowSelectedItem(true)
+	self:Register(self.list, "list_window")
+	self.picture=xml:InitStatic("picture", self)
+	self.description_list = xml:InitListBox("description_list",self)
+	self:Register(self.description_list, "description_list")
+end
+
+function mar_type_1_stalker_pda_4:InitCallBacks()
+	self:AddCallback("btn_kris_use_1", ui_events.BUTTON_CLICKED, self.click_private, self)
+	self:AddCallback("btn_kris_use_2", ui_events.BUTTON_CLICKED, self.click_monsters, self)
+	self:AddCallback("btn_kris_use_3", ui_events.BUTTON_CLICKED, self.click_locations, self)
+	self:AddCallback("btn_kris_use_4", ui_events.BUTTON_CLICKED, self.click_factions, self)
+	self:AddCallback("btn_kris_use_5", ui_events.BUTTON_CLICKED, self.click_stories, self)
+	self:AddCallback("btn_quit", ui_events.BUTTON_CLICKED, self.click_quit, self)
+	--/self:AddCallback("btn_copy", ui_events.BUTTON_CLICKED, self.click_copy, self)
+	self:AddCallback("list_window", ui_events.LIST_ITEM_CLICKED, self.OnListItemClicked, self)
+end
+
+function mar_type_1_stalker_pda_4:Update()
+	CUIScriptWnd.Update(self)
+	--/self.clock_wnd:TextControl():SetText(getTime())
+end
+
+function mar_type_1_stalker_pda_4:OnKeyboard(dik, keyboard_action)
+	CUIScriptWnd.OnKeyboard(self, dik, keyboard_action)
+	if keyboard_action==ui_events.WINDOW_KEY_PRESSED then
+		if dik==DIK_keys.DIK_ESCAPE then self:click_quit() end
+		if dik==DIK_keys.DIK_1 then self:click_private() end
+		if dik==DIK_keys.DIK_2 then self:click_monsters() end
+		if dik==DIK_keys.DIK_3 then self:click_locations() end
+		if dik==DIK_keys.DIK_4 then self:click_factions() end
+		if dik==DIK_keys.DIK_5 then self:click_stories() end
+	end
+	return true
+end
+
+function mar_type_1_stalker_pda_4:click_copy()
+    run_gui(ui_gui_elements.ui_a2_quest_5_pda_copy())    
+	self.btn7:Enable(false)
+end
+function mar_type_1_stalker_pda_4:click_quit()
+    give_object_to_actor("esc_pashalka_shved_pda")
+	self:HideDialog()
+end
+function mar_type_1_stalker_pda_4:click_private()
+	current_mode=1
+	self.btn1:Enable(false)
+	self.btn2:Enable(true)
+	self.btn3:Enable(true)
+	self.btn4:Enable(true)
+	self.btn5:Enable(true)
+	if (not has_alife_info("perevalochnaya_lutiy_meet_to_zombied_done")) then
+	self.btn7:Enable(false)
+	end
+	self:FillList(pda4_info1_array)
+end
+function mar_type_1_stalker_pda_4:click_monsters()
+	current_mode=2
+	self.btn1:Enable(true)
+	self.btn2:Enable(false)
+	self.btn3:Enable(true)
+	self.btn4:Enable(true)
+	self.btn5:Enable(true)
+    if (not has_alife_info("perevalochnaya_lutiy_meet_to_zombied_done")) then	
+	self.btn7:Enable(true)
+	end
+	self:FillList(pda4_info2_array)
+end
+function mar_type_1_stalker_pda_4:click_locations()
+	current_mode=3
+	self.btn1:Enable(true)
+	self.btn2:Enable(true)
+	self.btn3:Enable(false)
+	self.btn4:Enable(true)
+	self.btn5:Enable(true)
+	if (not has_alife_info("perevalochnaya_lutiy_meet_to_zombied_done")) then
+	self.btn7:Enable(false)
+	end
+	self:FillList(pda4_info3_array)
+end
+function mar_type_1_stalker_pda_4:click_factions()
+	current_mode=4
+	self.btn1:Enable(true)
+	self.btn2:Enable(true)
+	self.btn3:Enable(true)
+	self.btn4:Enable(false)
+	self.btn5:Enable(true)
+	if (not has_alife_info("perevalochnaya_lutiy_meet_to_zombied_done")) then
+	self.btn7:Enable(false)
+	end
+	self:FillList(pda4_info4_array)
+end
+function mar_type_1_stalker_pda_4:click_stories()
+	current_mode=5
+	self.btn1:Enable(true)
+	self.btn2:Enable(true)
+	self.btn3:Enable(true)
+	self.btn4:Enable(true)
+	self.btn5:Enable(false)
+	if (not has_alife_info("perevalochnaya_lutiy_meet_to_zombied_done")) then
+	self.btn7:Enable(false)
+	end
+	self:FillList(pda4_info5_array)
+end
+
+function mar_type_1_stalker_pda_4:OnListItemClicked()
+	if self.list:GetSize()==0 then return end
+	item=self.list:GetSelectedItem()
+	if item==nil then return end
+	local item_text=item.fn:GetText()
+	local item_alias=item.fa:GetText()
+	if item_alias=="null" then return end
+	self.description_list:Clear()
+	self.description_list:ScrollToBegin()
+	self.picture:TextControl():SetText("")
+	if current_mode==1 then
+		self:FillDescription(GetString("ars_"..item_alias))
+		self.picture:InitTexture("ui_noise")
+	elseif current_mode==2 then
+		self:FillDescription(GetString("enc_mutant_"..item_alias))
+		self.picture:InitTexture("ui_noise")
+	elseif current_mode==3 then
+		self:FillDescription(GetString("enc_location_"..item_alias))
+		self.picture:InitTexture("ui_noise")
+	elseif current_mode==4 then
+		self:FillDescription(GetString("enc_faction_"..item_alias))
+		self.picture:InitTexture("ui_noise")
+	elseif current_mode==5 then
+		self:FillDescription(GetString("enc_anomaly_"..item_alias))
+		self.picture:InitTexture("ui_noise")
+	else
+		self.picture:InitTexture("ui_disk_io")
+		self.picture:TextControl():SetText(GetString("notepad_list_none"))
+	end
+	local r=self.picture:GetTextureRect()
+	self.picture:SetTextureRect(Frect():set(r.x1,r.y1,r.x2,r.y2))
+	self.list:ShowSelectedItem(true)
+end
+
+function mar_type_1_stalker_pda_4:FillList(array)
+	self.list:Clear()
+	self.list:ScrollToBegin()
+	self.description_list:Clear()
+	self.description_list:ScrollToBegin()
+	local r=self.picture:GetTextureRect()
+	self.picture:InitTexture("ui\\ui_disk_io")
+	self.picture:SetTextureRect(Frect():set(r.x1,r.y1,r.x2,r.y2))
+	self.picture:TextControl():SetText(GetString("notepad_list_none"))
+	for k,v in pairs(array) do
+		if array==pda4_info1_array then
+			self:AddItemToList(GetString(v.name),v.name)
+		elseif array==pda4_info2_array then
+			self:AddItemToList(GetString(v),v)
+		elseif array==pda4_info3_array then
+			self:AddItemToList(GetString(v),v)
+		elseif array==pda4_info4_array then
+			self:AddItemToList(GetString(v),v)
+		elseif array==pda4_info5_array then
+			self:AddItemToList(GetString(v),v)
+		end
+	end
+	if self.list:GetSize()==0 then
+		self:AddItemToList(GetString("notepad_list_empty"),"null") 
+	end
+end
+
+function mar_type_1_stalker_pda_4:AddItemToList(item_name,item_alias)
+	local itm=load_item()
+	itm:SetWndSize(self.list_item_main_sz)
+	itm.fn:SetWndPos(vector2():set(0,0))
+	itm.fn:SetWndSize(self.list_item_fn_sz)
+	itm.fn:SetText(item_name)
+	itm.fa = itm:AddTextField(item_alias, self.list_item_fa_sz.x)
+	itm.fa:SetFont(GetFontLetterica16Russian())
+	itm.fa:SetWndPos(vector2():set(self.list_item_fn_sz.x-40, 1200))
+	itm.fa:SetWndSize(self.list_item_fa_sz)
+	self.list:AddExistingItem(itm)
+end
+
+function mar_type_1_stalker_pda_4:FillDescription(item_name)
+	local arr=str_explode(" ",item_name,60,65)
+	for k,v in pairs(arr) do
+		local itm=load_item2()
+		itm:SetWndSize(self.desc_item_main_sz)
+		itm.fn:SetWndPos(vector2():set(0,0))
+		itm.fn:SetWndSize(self.desc_item_fn_sz)
+		itm.fn:SetText(v)
+		self.description_list:AddExistingItem(itm)
+	end
+end
+------------------------КПК 5-ого одиночного сталкера-----------------------------------------
+
+class "mar_type_1_stalker_pda_5" (CUIScriptWnd)
+function mar_type_1_stalker_pda_5:__init() super()
+	self:InitControls()
+	self:InitCallBacks()
+	self:FillList(pda5_info1_array)
+	current_mode=1
+end
+function mar_type_1_stalker_pda_5:__finalize() end
+
+function mar_type_1_stalker_pda_5:InitControls()
+	self:SetWndRect(Frect():set(0,0,1024,768))
+	local xml=CScriptXmlInit()
+	local ctrl
+	xml:ParseFile("ui_notes_wnd.xml")
+	xml:InitStatic("background", self)
+	xml:InitStatic("caption_static", self)
+	xml:InitStatic("noice_static", self)
+    self.clock_wnd=xml:InitStatic("clock_wnd",self)
+	ctrl=CUIWindow()
+	xml:InitWindow("list_item:main", 0, ctrl)
+	self.list_item_main_sz=vector2():set(ctrl:GetWidth(), ctrl:GetHeight())
+	xml:InitWindow("list_item:fn", 0, ctrl)
+	self.list_item_fn_sz=vector2():set(ctrl:GetWidth(), ctrl:GetHeight())
+	xml:InitWindow("list_item:fa", 0, ctrl)
+	self.list_item_fa_sz=vector2():set(ctrl:GetWidth(), ctrl:GetHeight())
+	xml:InitWindow("description_item:main", 0, ctrl)
+	self.desc_item_main_sz=vector2():set(ctrl:GetWidth(), ctrl:GetHeight())
+	xml:InitWindow("description_item:fn", 0, ctrl)
+	self.desc_item_fn_sz=vector2():set(ctrl:GetWidth(), ctrl:GetHeight())
+	self.btn1=xml:Init3tButton("btn_kris_use_1", self)
+	self.btn1:Enable(false)
+	self:Register(self.btn1, "btn_kris_use_1")
+	self.btn2=xml:Init3tButton("btn_kris_use_2", self)
+	self:Register(self.btn2, "btn_kris_use_2")
+	self.btn3=xml:Init3tButton("btn_kris_use_3", self)
+	self:Register(self.btn3, "btn_kris_use_3")
+	self.btn4=xml:Init3tButton("btn_kris_use_4", self)
+	self:Register(self.btn4, "btn_kris_use_4")
+	self.btn5=xml:Init3tButton("btn_kris_use_5", self)
+	self:Register(self.btn5, "btn_kris_use_5")
+	self.btn6=xml:Init3tButton("btn_quit", self)
+	self:Register(self.btn6, "btn_quit")
+	if (not has_alife_info("perevalochnaya_lutiy_meet_to_zombied_done")) then
+      self.btn7=xml:Init3tButton("btn_copy", self)
+	  self:Register(self.btn7, "btn_copy") 
+    end	
+	xml:InitFrame("list_frame", self)
+	xml:InitFrame("descr_frame", self)
+	self.list = xml:InitListBox("list",self)
+	self.list:ShowSelectedItem(true)
+	self:Register(self.list, "list_window")
+	self.picture=xml:InitStatic("picture", self)
+	self.description_list = xml:InitListBox("description_list",self)
+	self:Register(self.description_list, "description_list")
+end
+
+function mar_type_1_stalker_pda_5:InitCallBacks()
+	self:AddCallback("btn_kris_use_1", ui_events.BUTTON_CLICKED, self.click_private, self)
+	self:AddCallback("btn_kris_use_2", ui_events.BUTTON_CLICKED, self.click_monsters, self)
+	self:AddCallback("btn_kris_use_3", ui_events.BUTTON_CLICKED, self.click_locations, self)
+	self:AddCallback("btn_kris_use_4", ui_events.BUTTON_CLICKED, self.click_factions, self)
+	self:AddCallback("btn_kris_use_5", ui_events.BUTTON_CLICKED, self.click_stories, self)
+	self:AddCallback("btn_quit", ui_events.BUTTON_CLICKED, self.click_quit, self)
+	--/self:AddCallback("btn_copy", ui_events.BUTTON_CLICKED, self.click_copy, self)
+	self:AddCallback("list_window", ui_events.LIST_ITEM_CLICKED, self.OnListItemClicked, self)
+end
+
+function mar_type_1_stalker_pda_5:Update()
+	CUIScriptWnd.Update(self)
+	--/self.clock_wnd:TextControl():SetText(getTime())
+end
+
+function mar_type_1_stalker_pda_5:OnKeyboard(dik, keyboard_action)
+	CUIScriptWnd.OnKeyboard(self, dik, keyboard_action)
+	if keyboard_action==ui_events.WINDOW_KEY_PRESSED then
+		if dik==DIK_keys.DIK_ESCAPE then self:click_quit() end
+		if dik==DIK_keys.DIK_1 then self:click_private() end
+		if dik==DIK_keys.DIK_2 then self:click_monsters() end
+		if dik==DIK_keys.DIK_3 then self:click_locations() end
+		if dik==DIK_keys.DIK_4 then self:click_factions() end
+		if dik==DIK_keys.DIK_5 then self:click_stories() end
+	end
+	return true
+end
+
+function mar_type_1_stalker_pda_5:click_copy()
+    run_gui(ui_gui_elements.ui_a2_quest_5_pda_copy())    
+	self.btn7:Enable(false)
+end
+function mar_type_1_stalker_pda_5:click_quit()
+    give_object_to_actor("mar_type_1_stalker_pda_5_item")
+	self:HideDialog()
+end
+function mar_type_1_stalker_pda_5:click_private()
+	current_mode=1
+	self.btn1:Enable(false)
+	self.btn2:Enable(true)
+	self.btn3:Enable(true)
+	self.btn4:Enable(true)
+	self.btn5:Enable(true)
+	if (not has_alife_info("perevalochnaya_lutiy_meet_to_zombied_done")) then
+	self.btn7:Enable(false)
+	end
+	self:FillList(pda5_info1_array)
+end
+function mar_type_1_stalker_pda_5:click_monsters()
+	current_mode=2
+	self.btn1:Enable(true)
+	self.btn2:Enable(false)
+	self.btn3:Enable(true)
+	self.btn4:Enable(true)
+	self.btn5:Enable(true)
+    if (not has_alife_info("perevalochnaya_lutiy_meet_to_zombied_done")) then	
+	self.btn7:Enable(true)
+	end
+	self:FillList(pda5_info2_array)
+end
+function mar_type_1_stalker_pda_5:click_locations()
+	current_mode=3
+	self.btn1:Enable(true)
+	self.btn2:Enable(true)
+	self.btn3:Enable(false)
+	self.btn4:Enable(true)
+	self.btn5:Enable(true)
+	if (not has_alife_info("perevalochnaya_lutiy_meet_to_zombied_done")) then
+	self.btn7:Enable(false)
+	end
+	self:FillList(pda5_info3_array)
+end
+function mar_type_1_stalker_pda_5:click_factions()
+	current_mode=4
+	self.btn1:Enable(true)
+	self.btn2:Enable(true)
+	self.btn3:Enable(true)
+	self.btn4:Enable(false)
+	self.btn5:Enable(true)
+	if (not has_alife_info("perevalochnaya_lutiy_meet_to_zombied_done")) then
+	self.btn7:Enable(false)
+	end
+	self:FillList(pda5_info4_array)
+end
+function mar_type_1_stalker_pda_5:click_stories()
+	current_mode=5
+	self.btn1:Enable(true)
+	self.btn2:Enable(true)
+	self.btn3:Enable(true)
+	self.btn4:Enable(true)
+	self.btn5:Enable(false)
+	if (not has_alife_info("perevalochnaya_lutiy_meet_to_zombied_done")) then
+	self.btn7:Enable(false)
+	end
+	self:FillList(pda5_info5_array)
+end
+
+function mar_type_1_stalker_pda_5:OnListItemClicked()
+	if self.list:GetSize()==0 then return end
+	item=self.list:GetSelectedItem()
+	if item==nil then return end
+	local item_text=item.fn:GetText()
+	local item_alias=item.fa:GetText()
+	if item_alias=="null" then return end
+	self.description_list:Clear()
+	self.description_list:ScrollToBegin()
+	self.picture:TextControl():SetText("")
+	if current_mode==1 then
+		self:FillDescription(GetString("ars_"..item_alias))
+		self.picture:InitTexture("ui_noise")
+	elseif current_mode==2 then
+		self:FillDescription(GetString("enc_mutant_"..item_alias))
+		self.picture:InitTexture("ui_noise")
+	elseif current_mode==3 then
+		self:FillDescription(GetString("enc_location_"..item_alias))
+		self.picture:InitTexture("ui_noise")
+	elseif current_mode==4 then
+		self:FillDescription(GetString("enc_faction_"..item_alias))
+		self.picture:InitTexture("ui_noise")
+	elseif current_mode==5 then
+		self:FillDescription(GetString("enc_anomaly_"..item_alias))
+		self.picture:InitTexture("ui_noise")
+	else
+		self.picture:InitTexture("ui_disk_io")
+		self.picture:TextControl():SetText(GetString("notepad_list_none"))
+	end
+	local r=self.picture:GetTextureRect()
+	self.picture:SetTextureRect(Frect():set(r.x1,r.y1,r.x2,r.y2))
+	self.list:ShowSelectedItem(true)
+end
+
+function mar_type_1_stalker_pda_5:FillList(array)
+	self.list:Clear()
+	self.list:ScrollToBegin()
+	self.description_list:Clear()
+	self.description_list:ScrollToBegin()
+	local r=self.picture:GetTextureRect()
+	self.picture:InitTexture("ui\\ui_disk_io")
+	self.picture:SetTextureRect(Frect():set(r.x1,r.y1,r.x2,r.y2))
+	self.picture:TextControl():SetText(GetString("notepad_list_none"))
+	for k,v in pairs(array) do
+		if array==pda5_info1_array then
+			self:AddItemToList(GetString(v.name),v.name)
+		elseif array==pda5_info2_array then
+			self:AddItemToList(GetString(v),v)
+		elseif array==pda5_info3_array then
+			self:AddItemToList(GetString(v),v)
+		elseif array==pda5_info4_array then
+			self:AddItemToList(GetString(v),v)
+		elseif array==pda5_info5_array then
+			self:AddItemToList(GetString(v),v)
+		end
+	end
+	if self.list:GetSize()==0 then
+		self:AddItemToList(GetString("notepad_list_empty"),"null") 
+	end
+end
+
+function mar_type_1_stalker_pda_5:AddItemToList(item_name,item_alias)
+	local itm=load_item()
+	itm:SetWndSize(self.list_item_main_sz)
+	itm.fn:SetWndPos(vector2():set(0,0))
+	itm.fn:SetWndSize(self.list_item_fn_sz)
+	itm.fn:SetText(item_name)
+	itm.fa = itm:AddTextField(item_alias, self.list_item_fa_sz.x)
+	itm.fa:SetFont(GetFontLetterica16Russian())
+	itm.fa:SetWndPos(vector2():set(self.list_item_fn_sz.x-40, 1200))
+	itm.fa:SetWndSize(self.list_item_fa_sz)
+	self.list:AddExistingItem(itm)
+end
+
+function mar_type_1_stalker_pda_5:FillDescription(item_name)
+	local arr=str_explode(" ",item_name,60,65)
+	for k,v in pairs(arr) do
+		local itm=load_item2()
+		itm:SetWndSize(self.desc_item_main_sz)
+		itm.fn:SetWndPos(vector2():set(0,0))
+		itm.fn:SetWndSize(self.desc_item_fn_sz)
+		itm.fn:SetText(v)
+		self.description_list:AddExistingItem(itm)
+	end
+end
+------------------------КПК 6-ого одиночного сталкера-----------------------------------------
+
+class "mar_type_1_stalker_pda_6" (CUIScriptWnd)
+function mar_type_1_stalker_pda_6:__init() super()
+	self:InitControls()
+	self:InitCallBacks()
+	self:FillList(pda6_info1_array)
+	current_mode=1
+end
+function mar_type_1_stalker_pda_6:__finalize() end
+
+function mar_type_1_stalker_pda_6:InitControls()
+	self:SetWndRect(Frect():set(0,0,1024,768))
+	local xml=CScriptXmlInit()
+	local ctrl
+	xml:ParseFile("ui_notes_wnd.xml")
+	xml:InitStatic("background", self)
+	xml:InitStatic("caption_static", self)
+	xml:InitStatic("noice_static", self)
+    self.clock_wnd=xml:InitStatic("clock_wnd",self)
+	ctrl=CUIWindow()
+	xml:InitWindow("list_item:main", 0, ctrl)
+	self.list_item_main_sz=vector2():set(ctrl:GetWidth(), ctrl:GetHeight())
+	xml:InitWindow("list_item:fn", 0, ctrl)
+	self.list_item_fn_sz=vector2():set(ctrl:GetWidth(), ctrl:GetHeight())
+	xml:InitWindow("list_item:fa", 0, ctrl)
+	self.list_item_fa_sz=vector2():set(ctrl:GetWidth(), ctrl:GetHeight())
+	xml:InitWindow("description_item:main", 0, ctrl)
+	self.desc_item_main_sz=vector2():set(ctrl:GetWidth(), ctrl:GetHeight())
+	xml:InitWindow("description_item:fn", 0, ctrl)
+	self.desc_item_fn_sz=vector2():set(ctrl:GetWidth(), ctrl:GetHeight())
+	self.btn1=xml:Init3tButton("btn_kris_use_1", self)
+	self.btn1:Enable(false)
+	self:Register(self.btn1, "btn_kris_use_1")
+	self.btn2=xml:Init3tButton("btn_kris_use_2", self)
+	self:Register(self.btn2, "btn_kris_use_2")
+	self.btn3=xml:Init3tButton("btn_kris_use_3", self)
+	self:Register(self.btn3, "btn_kris_use_3")
+	self.btn4=xml:Init3tButton("btn_kris_use_4", self)
+	self:Register(self.btn4, "btn_kris_use_4")
+	self.btn5=xml:Init3tButton("btn_kris_use_5", self)
+	self:Register(self.btn5, "btn_kris_use_5")
+	self.btn6=xml:Init3tButton("btn_quit", self)
+	self:Register(self.btn6, "btn_quit")
+	if (not has_alife_info("perevalochnaya_lutiy_meet_to_zombied_done")) then
+      self.btn7=xml:Init3tButton("btn_copy", self)
+	  self:Register(self.btn7, "btn_copy") 
+    end	
+	xml:InitFrame("list_frame", self)
+	xml:InitFrame("descr_frame", self)
+	self.list = xml:InitListBox("list",self)
+	self.list:ShowSelectedItem(true)
+	self:Register(self.list, "list_window")
+	self.picture=xml:InitStatic("picture", self)
+	self.description_list = xml:InitListBox("description_list",self)
+	self:Register(self.description_list, "description_list")
+end
+
+function mar_type_1_stalker_pda_6:InitCallBacks()
+	self:AddCallback("btn_kris_use_1", ui_events.BUTTON_CLICKED, self.click_private, self)
+	self:AddCallback("btn_kris_use_2", ui_events.BUTTON_CLICKED, self.click_monsters, self)
+	self:AddCallback("btn_kris_use_3", ui_events.BUTTON_CLICKED, self.click_locations, self)
+	self:AddCallback("btn_kris_use_4", ui_events.BUTTON_CLICKED, self.click_factions, self)
+	self:AddCallback("btn_kris_use_5", ui_events.BUTTON_CLICKED, self.click_stories, self)
+	self:AddCallback("btn_quit", ui_events.BUTTON_CLICKED, self.click_quit, self)
+	--/self:AddCallback("btn_copy", ui_events.BUTTON_CLICKED, self.click_copy, self)
+	self:AddCallback("list_window", ui_events.LIST_ITEM_CLICKED, self.OnListItemClicked, self)
+end
+
+function mar_type_1_stalker_pda_6:Update()
+	CUIScriptWnd.Update(self)
+	--/self.clock_wnd:TextControl():SetText(getTime())
+end
+
+function mar_type_1_stalker_pda_6:OnKeyboard(dik, keyboard_action)
+	CUIScriptWnd.OnKeyboard(self, dik, keyboard_action)
+	if keyboard_action==ui_events.WINDOW_KEY_PRESSED then
+		if dik==DIK_keys.DIK_ESCAPE then self:click_quit() end
+		if dik==DIK_keys.DIK_1 then self:click_private() end
+		if dik==DIK_keys.DIK_2 then self:click_monsters() end
+		if dik==DIK_keys.DIK_3 then self:click_locations() end
+		if dik==DIK_keys.DIK_4 then self:click_factions() end
+		if dik==DIK_keys.DIK_5 then self:click_stories() end
+	end
+	return true
+end
+
+function mar_type_1_stalker_pda_6:click_copy()
+    run_gui(ui_gui_elements.ui_a2_quest_5_pda_copy())    
+	self.btn7:Enable(false)
+end
+function mar_type_1_stalker_pda_6:click_quit()
+    give_object_to_actor("mar_type_1_stalker_pda_6_item")
+	self:HideDialog()
+end
+function mar_type_1_stalker_pda_6:click_private()
+	current_mode=1
+	self.btn1:Enable(false)
+	self.btn2:Enable(true)
+	self.btn3:Enable(true)
+	self.btn4:Enable(true)
+	self.btn5:Enable(true)
+	if (not has_alife_info("perevalochnaya_lutiy_meet_to_zombied_done")) then
+	self.btn7:Enable(false)
+	end
+	self:FillList(pda6_info1_array)
+end
+function mar_type_1_stalker_pda_6:click_monsters()
+	current_mode=2
+	self.btn1:Enable(true)
+	self.btn2:Enable(false)
+	self.btn3:Enable(true)
+	self.btn4:Enable(true)
+	self.btn5:Enable(true)
+    if (not has_alife_info("perevalochnaya_lutiy_meet_to_zombied_done")) then	
+	self.btn7:Enable(true)
+	end
+	self:FillList(pda6_info2_array)
+end
+function mar_type_1_stalker_pda_6:click_locations()
+	current_mode=3
+	self.btn1:Enable(true)
+	self.btn2:Enable(true)
+	self.btn3:Enable(false)
+	self.btn4:Enable(true)
+	self.btn5:Enable(true)
+	if (not has_alife_info("perevalochnaya_lutiy_meet_to_zombied_done")) then
+	self.btn7:Enable(false)
+	end
+	self:FillList(pda6_info3_array)
+end
+function mar_type_1_stalker_pda_6:click_factions()
+	current_mode=4
+	self.btn1:Enable(true)
+	self.btn2:Enable(true)
+	self.btn3:Enable(true)
+	self.btn4:Enable(false)
+	self.btn5:Enable(true)
+	if (not has_alife_info("perevalochnaya_lutiy_meet_to_zombied_done")) then
+	self.btn7:Enable(false)
+	end
+	self:FillList(pda6_info4_array)
+end
+function mar_type_1_stalker_pda_6:click_stories()
+	current_mode=5
+	self.btn1:Enable(true)
+	self.btn2:Enable(true)
+	self.btn3:Enable(true)
+	self.btn4:Enable(true)
+	self.btn5:Enable(false)
+	if (not has_alife_info("perevalochnaya_lutiy_meet_to_zombied_done")) then
+	self.btn7:Enable(false)
+	end
+	self:FillList(pda6_info5_array)
+end
+
+function mar_type_1_stalker_pda_6:OnListItemClicked()
+	if self.list:GetSize()==0 then return end
+	item=self.list:GetSelectedItem()
+	if item==nil then return end
+	local item_text=item.fn:GetText()
+	local item_alias=item.fa:GetText()
+	if item_alias=="null" then return end
+	self.description_list:Clear()
+	self.description_list:ScrollToBegin()
+	self.picture:TextControl():SetText("")
+	if current_mode==1 then
+		self:FillDescription(GetString("ars_"..item_alias))
+		self.picture:InitTexture("ui_noise")
+	elseif current_mode==2 then
+		self:FillDescription(GetString("enc_mutant_"..item_alias))
+		self.picture:InitTexture("ui_noise")
+	elseif current_mode==3 then
+		self:FillDescription(GetString("enc_location_"..item_alias))
+		self.picture:InitTexture("ui_noise")
+	elseif current_mode==4 then
+		self:FillDescription(GetString("enc_faction_"..item_alias))
+		self.picture:InitTexture("ui_noise")
+	elseif current_mode==5 then
+		self:FillDescription(GetString("enc_anomaly_"..item_alias))
+		self.picture:InitTexture("ui_noise")
+	else
+		self.picture:InitTexture("ui_disk_io")
+		self.picture:TextControl():SetText(GetString("notepad_list_none"))
+	end
+	local r=self.picture:GetTextureRect()
+	self.picture:SetTextureRect(Frect():set(r.x1,r.y1,r.x2,r.y2))
+	self.list:ShowSelectedItem(true)
+end
+
+function mar_type_1_stalker_pda_6:FillList(array)
+	self.list:Clear()
+	self.list:ScrollToBegin()
+	self.description_list:Clear()
+	self.description_list:ScrollToBegin()
+	local r=self.picture:GetTextureRect()
+	self.picture:InitTexture("ui\\ui_disk_io")
+	self.picture:SetTextureRect(Frect():set(r.x1,r.y1,r.x2,r.y2))
+	self.picture:TextControl():SetText(GetString("notepad_list_none"))
+	for k,v in pairs(array) do
+		if array==pda6_info1_array then
+			self:AddItemToList(GetString(v.name),v.name)
+		elseif array==pda6_info2_array then
+			self:AddItemToList(GetString(v),v)
+		elseif array==pda6_info3_array then
+			self:AddItemToList(GetString(v),v)
+		elseif array==pda6_info4_array then
+			self:AddItemToList(GetString(v),v)
+		elseif array==pda6_info5_array then
+			self:AddItemToList(GetString(v),v)
+		end
+	end
+	if self.list:GetSize()==0 then
+		self:AddItemToList(GetString("notepad_list_empty"),"null") 
+	end
+end
+
+function mar_type_1_stalker_pda_6:AddItemToList(item_name,item_alias)
+	local itm=load_item()
+	itm:SetWndSize(self.list_item_main_sz)
+	itm.fn:SetWndPos(vector2():set(0,0))
+	itm.fn:SetWndSize(self.list_item_fn_sz)
+	itm.fn:SetText(item_name)
+	itm.fa = itm:AddTextField(item_alias, self.list_item_fa_sz.x)
+	itm.fa:SetFont(GetFontLetterica16Russian())
+	itm.fa:SetWndPos(vector2():set(self.list_item_fn_sz.x-40, 1200))
+	itm.fa:SetWndSize(self.list_item_fa_sz)
+	self.list:AddExistingItem(itm)
+end
+
+function mar_type_1_stalker_pda_6:FillDescription(item_name)
+	local arr=str_explode(" ",item_name,60,65)
+	for k,v in pairs(arr) do
+		local itm=load_item2()
+		itm:SetWndSize(self.desc_item_main_sz)
+		itm.fn:SetWndPos(vector2():set(0,0))
+		itm.fn:SetWndSize(self.desc_item_fn_sz)
+		itm.fn:SetText(v)
+		self.description_list:AddExistingItem(itm)
+	end
+end
+------------------------КПК 7-ого одиночного сталкера-----------------------------------------
+
+class "mar_type_1_stalker_pda_7" (CUIScriptWnd)
+function mar_type_1_stalker_pda_7:__init() super()
+	self:InitControls()
+	self:InitCallBacks()
+	self:FillList(pda7_info1_array)
+	current_mode=1
+end
+function mar_type_1_stalker_pda_7:__finalize() end
+
+function mar_type_1_stalker_pda_7:InitControls()
+	self:SetWndRect(Frect():set(0,0,1024,768))
+	local xml=CScriptXmlInit()
+	local ctrl
+	xml:ParseFile("ui_notes_wnd.xml")
+	xml:InitStatic("background", self)
+	xml:InitStatic("caption_static", self)
+	xml:InitStatic("noice_static", self)
+    self.clock_wnd=xml:InitStatic("clock_wnd",self)
+	ctrl=CUIWindow()
+	xml:InitWindow("list_item:main", 0, ctrl)
+	self.list_item_main_sz=vector2():set(ctrl:GetWidth(), ctrl:GetHeight())
+	xml:InitWindow("list_item:fn", 0, ctrl)
+	self.list_item_fn_sz=vector2():set(ctrl:GetWidth(), ctrl:GetHeight())
+	xml:InitWindow("list_item:fa", 0, ctrl)
+	self.list_item_fa_sz=vector2():set(ctrl:GetWidth(), ctrl:GetHeight())
+	xml:InitWindow("description_item:main", 0, ctrl)
+	self.desc_item_main_sz=vector2():set(ctrl:GetWidth(), ctrl:GetHeight())
+	xml:InitWindow("description_item:fn", 0, ctrl)
+	self.desc_item_fn_sz=vector2():set(ctrl:GetWidth(), ctrl:GetHeight())
+	self.btn1=xml:Init3tButton("btn_kris_use_1", self)
+	self.btn1:Enable(false)
+	self:Register(self.btn1, "btn_kris_use_1")
+	self.btn2=xml:Init3tButton("btn_kris_use_2", self)
+	self:Register(self.btn2, "btn_kris_use_2")
+	self.btn3=xml:Init3tButton("btn_kris_use_3", self)
+	self:Register(self.btn3, "btn_kris_use_3")
+	self.btn4=xml:Init3tButton("btn_kris_use_4", self)
+	self:Register(self.btn4, "btn_kris_use_4")
+	self.btn5=xml:Init3tButton("btn_kris_use_5", self)
+	self:Register(self.btn5, "btn_kris_use_5")
+	self.btn6=xml:Init3tButton("btn_quit", self)
+	self:Register(self.btn6, "btn_quit")
+	if (not has_alife_info("perevalochnaya_lutiy_meet_to_zombied_done")) then
+      self.btn7=xml:Init3tButton("btn_copy", self)
+	  self:Register(self.btn7, "btn_copy") 
+    end	
+	xml:InitFrame("list_frame", self)
+	xml:InitFrame("descr_frame", self)
+	self.list = xml:InitListBox("list",self)
+	self.list:ShowSelectedItem(true)
+	self:Register(self.list, "list_window")
+	self.picture=xml:InitStatic("picture", self)
+	self.description_list = xml:InitListBox("description_list",self)
+	self:Register(self.description_list, "description_list")
+end
+
+function mar_type_1_stalker_pda_7:InitCallBacks()
+	self:AddCallback("btn_kris_use_1", ui_events.BUTTON_CLICKED, self.click_private, self)
+	self:AddCallback("btn_kris_use_2", ui_events.BUTTON_CLICKED, self.click_monsters, self)
+	self:AddCallback("btn_kris_use_3", ui_events.BUTTON_CLICKED, self.click_locations, self)
+	self:AddCallback("btn_kris_use_4", ui_events.BUTTON_CLICKED, self.click_factions, self)
+	self:AddCallback("btn_kris_use_5", ui_events.BUTTON_CLICKED, self.click_stories, self)
+	self:AddCallback("btn_quit", ui_events.BUTTON_CLICKED, self.click_quit, self)
+	--/self:AddCallback("btn_copy", ui_events.BUTTON_CLICKED, self.click_copy, self)
+	self:AddCallback("list_window", ui_events.LIST_ITEM_CLICKED, self.OnListItemClicked, self)
+end
+
+function mar_type_1_stalker_pda_7:Update()
+	CUIScriptWnd.Update(self)
+	--/self.clock_wnd:TextControl():SetText(getTime())
+end
+
+function mar_type_1_stalker_pda_7:OnKeyboard(dik, keyboard_action)
+	CUIScriptWnd.OnKeyboard(self, dik, keyboard_action)
+	if keyboard_action==ui_events.WINDOW_KEY_PRESSED then
+		if dik==DIK_keys.DIK_ESCAPE then self:click_quit() end
+		if dik==DIK_keys.DIK_1 then self:click_private() end
+		if dik==DIK_keys.DIK_2 then self:click_monsters() end
+		if dik==DIK_keys.DIK_3 then self:click_locations() end
+		if dik==DIK_keys.DIK_4 then self:click_factions() end
+		if dik==DIK_keys.DIK_5 then self:click_stories() end
+	end
+	return true
+end
+
+function mar_type_1_stalker_pda_7:click_copy()
+    run_gui(ui_gui_elements.ui_a2_quest_5_pda_copy())    
+	self.btn7:Enable(false)
+end
+function mar_type_1_stalker_pda_7:click_quit()
+    give_object_to_actor("mar_type_1_stalker_pda_7_item")
+	self:HideDialog()
+end
+function mar_type_1_stalker_pda_7:click_private()
+	current_mode=1
+	self.btn1:Enable(false)
+	self.btn2:Enable(true)
+	self.btn3:Enable(true)
+	self.btn4:Enable(true)
+	self.btn5:Enable(true)
+	if (not has_alife_info("perevalochnaya_lutiy_meet_to_zombied_done")) then
+	self.btn7:Enable(false)
+	end
+	self:FillList(pda7_info1_array)
+end
+function mar_type_1_stalker_pda_7:click_monsters()
+	current_mode=2
+	self.btn1:Enable(true)
+	self.btn2:Enable(false)
+	self.btn3:Enable(true)
+	self.btn4:Enable(true)
+	self.btn5:Enable(true)
+    if (not has_alife_info("perevalochnaya_lutiy_meet_to_zombied_done")) then	
+	self.btn7:Enable(true)
+	end
+	self:FillList(pda7_info2_array)
+end
+function mar_type_1_stalker_pda_7:click_locations()
+	current_mode=3
+	self.btn1:Enable(true)
+	self.btn2:Enable(true)
+	self.btn3:Enable(false)
+	self.btn4:Enable(true)
+	self.btn5:Enable(true)
+	if (not has_alife_info("perevalochnaya_lutiy_meet_to_zombied_done")) then
+	self.btn7:Enable(false)
+	end
+	self:FillList(pda7_info3_array)
+end
+function mar_type_1_stalker_pda_7:click_factions()
+	current_mode=4
+	self.btn1:Enable(true)
+	self.btn2:Enable(true)
+	self.btn3:Enable(true)
+	self.btn4:Enable(false)
+	self.btn5:Enable(true)
+	if (not has_alife_info("perevalochnaya_lutiy_meet_to_zombied_done")) then
+	self.btn7:Enable(false)
+	end
+	self:FillList(pda7_info4_array)
+end
+function mar_type_1_stalker_pda_7:click_stories()
+	current_mode=5
+	self.btn1:Enable(true)
+	self.btn2:Enable(true)
+	self.btn3:Enable(true)
+	self.btn4:Enable(true)
+	self.btn5:Enable(false)
+	if (not has_alife_info("perevalochnaya_lutiy_meet_to_zombied_done")) then
+	self.btn7:Enable(false)
+	end
+	self:FillList(pda7_info5_array)
+end
+
+function mar_type_1_stalker_pda_7:OnListItemClicked()
+	if self.list:GetSize()==0 then return end
+	item=self.list:GetSelectedItem()
+	if item==nil then return end
+	local item_text=item.fn:GetText()
+	local item_alias=item.fa:GetText()
+	if item_alias=="null" then return end
+	self.description_list:Clear()
+	self.description_list:ScrollToBegin()
+	self.picture:TextControl():SetText("")
+	if current_mode==1 then
+		self:FillDescription(GetString("ars_"..item_alias))
+		self.picture:InitTexture("ui_noise")
+	elseif current_mode==2 then
+		self:FillDescription(GetString("enc_mutant_"..item_alias))
+		self.picture:InitTexture("ui_noise")
+	elseif current_mode==3 then
+		self:FillDescription(GetString("enc_location_"..item_alias))
+		self.picture:InitTexture("ui_noise")
+	elseif current_mode==4 then
+		self:FillDescription(GetString("enc_faction_"..item_alias))
+		self.picture:InitTexture("ui_noise")
+	elseif current_mode==5 then
+		self:FillDescription(GetString("enc_anomaly_"..item_alias))
+		self.picture:InitTexture("ui_noise")
+	else
+		self.picture:InitTexture("ui_disk_io")
+		self.picture:TextControl():SetText(GetString("notepad_list_none"))
+	end
+	local r=self.picture:GetTextureRect()
+	self.picture:SetTextureRect(Frect():set(r.x1,r.y1,r.x2,r.y2))
+	self.list:ShowSelectedItem(true)
+end
+
+function mar_type_1_stalker_pda_7:FillList(array)
+	self.list:Clear()
+	self.list:ScrollToBegin()
+	self.description_list:Clear()
+	self.description_list:ScrollToBegin()
+	local r=self.picture:GetTextureRect()
+	self.picture:InitTexture("ui\\ui_disk_io")
+	self.picture:SetTextureRect(Frect():set(r.x1,r.y1,r.x2,r.y2))
+	self.picture:TextControl():SetText(GetString("notepad_list_none"))
+	for k,v in pairs(array) do
+		if array==pda7_info1_array then
+			self:AddItemToList(GetString(v.name),v.name)
+		elseif array==pda7_info2_array then
+			self:AddItemToList(GetString(v),v)
+		elseif array==pda7_info3_array then
+			self:AddItemToList(GetString(v),v)
+		elseif array==pda7_info4_array then
+			self:AddItemToList(GetString(v),v)
+		elseif array==pda7_info5_array then
+			self:AddItemToList(GetString(v),v)
+		end
+	end
+	if self.list:GetSize()==0 then
+		self:AddItemToList(GetString("notepad_list_empty"),"null") 
+	end
+end
+
+function mar_type_1_stalker_pda_7:AddItemToList(item_name,item_alias)
+	local itm=load_item()
+	itm:SetWndSize(self.list_item_main_sz)
+	itm.fn:SetWndPos(vector2():set(0,0))
+	itm.fn:SetWndSize(self.list_item_fn_sz)
+	itm.fn:SetText(item_name)
+	itm.fa = itm:AddTextField(item_alias, self.list_item_fa_sz.x)
+	itm.fa:SetFont(GetFontLetterica16Russian())
+	itm.fa:SetWndPos(vector2():set(self.list_item_fn_sz.x-40, 1200))
+	itm.fa:SetWndSize(self.list_item_fa_sz)
+	self.list:AddExistingItem(itm)
+end
+
+function mar_type_1_stalker_pda_7:FillDescription(item_name)
+	local arr=str_explode(" ",item_name,60,65)
+	for k,v in pairs(arr) do
+		local itm=load_item2()
+		itm:SetWndSize(self.desc_item_main_sz)
+		itm.fn:SetWndPos(vector2():set(0,0))
+		itm.fn:SetWndSize(self.desc_item_fn_sz)
+		itm.fn:SetText(v)
+		self.description_list:AddExistingItem(itm)
+	end
+end
+------------------------КПК 8-ого одиночного сталкера-----------------------------------------
+
+class "mar_type_1_stalker_pda_8" (CUIScriptWnd)
+function mar_type_1_stalker_pda_8:__init() super()
+	self:InitControls()
+	self:InitCallBacks()
+	self:FillList(pda8_info1_array)
+	current_mode=1
+end
+function mar_type_1_stalker_pda_8:__finalize() end
+
+function mar_type_1_stalker_pda_8:InitControls()
+	self:SetWndRect(Frect():set(0,0,1024,768))
+	local xml=CScriptXmlInit()
+	local ctrl
+	xml:ParseFile("ui_notes_wnd.xml")
+	xml:InitStatic("background", self)
+	xml:InitStatic("caption_static", self)
+	xml:InitStatic("noice_static", self)
+    self.clock_wnd=xml:InitStatic("clock_wnd",self)
+	ctrl=CUIWindow()
+	xml:InitWindow("list_item:main", 0, ctrl)
+	self.list_item_main_sz=vector2():set(ctrl:GetWidth(), ctrl:GetHeight())
+	xml:InitWindow("list_item:fn", 0, ctrl)
+	self.list_item_fn_sz=vector2():set(ctrl:GetWidth(), ctrl:GetHeight())
+	xml:InitWindow("list_item:fa", 0, ctrl)
+	self.list_item_fa_sz=vector2():set(ctrl:GetWidth(), ctrl:GetHeight())
+	xml:InitWindow("description_item:main", 0, ctrl)
+	self.desc_item_main_sz=vector2():set(ctrl:GetWidth(), ctrl:GetHeight())
+	xml:InitWindow("description_item:fn", 0, ctrl)
+	self.desc_item_fn_sz=vector2():set(ctrl:GetWidth(), ctrl:GetHeight())
+	self.btn1=xml:Init3tButton("btn_kris_use_1", self)
+	self.btn1:Enable(false)
+	self:Register(self.btn1, "btn_kris_use_1")
+	self.btn2=xml:Init3tButton("btn_kris_use_2", self)
+	self:Register(self.btn2, "btn_kris_use_2")
+	self.btn3=xml:Init3tButton("btn_kris_use_3", self)
+	self:Register(self.btn3, "btn_kris_use_3")
+	self.btn4=xml:Init3tButton("btn_kris_use_4", self)
+	self:Register(self.btn4, "btn_kris_use_4")
+	self.btn5=xml:Init3tButton("btn_kris_use_5", self)
+	self:Register(self.btn5, "btn_kris_use_5")
+	self.btn6=xml:Init3tButton("btn_quit", self)
+	self:Register(self.btn6, "btn_quit")
+	if (not has_alife_info("perevalochnaya_lutiy_meet_to_zombied_done")) then
+      self.btn7=xml:Init3tButton("btn_copy", self)
+	  self:Register(self.btn7, "btn_copy") 
+    end	
+	xml:InitFrame("list_frame", self)
+	xml:InitFrame("descr_frame", self)
+	self.list = xml:InitListBox("list",self)
+	self.list:ShowSelectedItem(true)
+	self:Register(self.list, "list_window")
+	self.picture=xml:InitStatic("picture", self)
+	self.description_list = xml:InitListBox("description_list",self)
+	self:Register(self.description_list, "description_list")
+end
+
+function mar_type_1_stalker_pda_8:InitCallBacks()
+	self:AddCallback("btn_kris_use_1", ui_events.BUTTON_CLICKED, self.click_private, self)
+	self:AddCallback("btn_kris_use_2", ui_events.BUTTON_CLICKED, self.click_monsters, self)
+	self:AddCallback("btn_kris_use_3", ui_events.BUTTON_CLICKED, self.click_locations, self)
+	self:AddCallback("btn_kris_use_4", ui_events.BUTTON_CLICKED, self.click_factions, self)
+	self:AddCallback("btn_kris_use_5", ui_events.BUTTON_CLICKED, self.click_stories, self)
+	self:AddCallback("btn_quit", ui_events.BUTTON_CLICKED, self.click_quit, self)
+	--/self:AddCallback("btn_copy", ui_events.BUTTON_CLICKED, self.click_copy, self)
+	self:AddCallback("list_window", ui_events.LIST_ITEM_CLICKED, self.OnListItemClicked, self)
+end
+
+function mar_type_1_stalker_pda_8:Update()
+	CUIScriptWnd.Update(self)
+	--/self.clock_wnd:TextControl():SetText(getTime())
+end
+
+function mar_type_1_stalker_pda_8:OnKeyboard(dik, keyboard_action)
+	CUIScriptWnd.OnKeyboard(self, dik, keyboard_action)
+	if keyboard_action==ui_events.WINDOW_KEY_PRESSED then
+		if dik==DIK_keys.DIK_ESCAPE then self:click_quit() end
+		if dik==DIK_keys.DIK_1 then self:click_private() end
+		if dik==DIK_keys.DIK_2 then self:click_monsters() end
+		if dik==DIK_keys.DIK_3 then self:click_locations() end
+		if dik==DIK_keys.DIK_4 then self:click_factions() end
+		if dik==DIK_keys.DIK_5 then self:click_stories() end
+	end
+	return true
+end
+
+function mar_type_1_stalker_pda_8:click_copy()
+    run_gui(ui_gui_elements.ui_a2_quest_5_pda_copy())    
+	self.btn7:Enable(false)
+end
+function mar_type_1_stalker_pda_8:click_quit()
+    give_object_to_actor("mar_type_1_stalker_pda_8_item")
+	self:HideDialog()
+end
+function mar_type_1_stalker_pda_8:click_private()
+	current_mode=1
+	self.btn1:Enable(false)
+	self.btn2:Enable(true)
+	self.btn3:Enable(true)
+	self.btn4:Enable(true)
+	self.btn5:Enable(true)
+	if (not has_alife_info("perevalochnaya_lutiy_meet_to_zombied_done")) then
+	self.btn7:Enable(false)
+	end
+	self:FillList(pda8_info1_array)
+end
+function mar_type_1_stalker_pda_1:click_monsters()
+	current_mode=2
+	self.btn1:Enable(true)
+	self.btn2:Enable(false)
+	self.btn3:Enable(true)
+	self.btn4:Enable(true)
+	self.btn5:Enable(true)
+    if (not has_alife_info("perevalochnaya_lutiy_meet_to_zombied_done")) then	
+	self.btn7:Enable(true)
+	end
+	self:FillList(pda8_info2_array)
+end
+function mar_type_1_stalker_pda_8:click_locations()
+	current_mode=3
+	self.btn1:Enable(true)
+	self.btn2:Enable(true)
+	self.btn3:Enable(false)
+	self.btn4:Enable(true)
+	self.btn5:Enable(true)
+	if (not has_alife_info("perevalochnaya_lutiy_meet_to_zombied_done")) then
+	self.btn7:Enable(false)
+	end
+	self:FillList(pda8_info3_array)
+end
+function mar_type_1_stalker_pda_8:click_factions()
+	current_mode=4
+	self.btn1:Enable(true)
+	self.btn2:Enable(true)
+	self.btn3:Enable(true)
+	self.btn4:Enable(false)
+	self.btn5:Enable(true)
+	if (not has_alife_info("perevalochnaya_lutiy_meet_to_zombied_done")) then
+	self.btn7:Enable(false)
+	end
+	self:FillList(pda8_info4_array)
+end
+function mar_type_1_stalker_pda_8:click_stories()
+	current_mode=5
+	self.btn1:Enable(true)
+	self.btn2:Enable(true)
+	self.btn3:Enable(true)
+	self.btn4:Enable(true)
+	self.btn5:Enable(false)
+	if (not has_alife_info("perevalochnaya_lutiy_meet_to_zombied_done")) then
+	self.btn7:Enable(false)
+	end
+	self:FillList(pda8_info5_array)
+end
+
+function mar_type_1_stalker_pda_8:OnListItemClicked()
+	if self.list:GetSize()==0 then return end
+	item=self.list:GetSelectedItem()
+	if item==nil then return end
+	local item_text=item.fn:GetText()
+	local item_alias=item.fa:GetText()
+	if item_alias=="null" then return end
+	self.description_list:Clear()
+	self.description_list:ScrollToBegin()
+	self.picture:TextControl():SetText("")
+	if current_mode==1 then
+		self:FillDescription(GetString("ars_"..item_alias))
+		self.picture:InitTexture("ui_noise")
+	elseif current_mode==2 then
+		self:FillDescription(GetString("enc_mutant_"..item_alias))
+		self.picture:InitTexture("ui_noise")
+	elseif current_mode==3 then
+		self:FillDescription(GetString("enc_location_"..item_alias))
+		self.picture:InitTexture("ui_noise")
+	elseif current_mode==4 then
+		self:FillDescription(GetString("enc_faction_"..item_alias))
+		self.picture:InitTexture("ui_noise")
+	elseif current_mode==5 then
+		self:FillDescription(GetString("enc_anomaly_"..item_alias))
+		self.picture:InitTexture("ui_noise")
+	else
+		self.picture:InitTexture("ui_disk_io")
+		self.picture:TextControl():SetText(GetString("notepad_list_none"))
+	end
+	local r=self.picture:GetTextureRect()
+	self.picture:SetTextureRect(Frect():set(r.x1,r.y1,r.x2,r.y2))
+	self.list:ShowSelectedItem(true)
+end
+
+function mar_type_1_stalker_pda_8:FillList(array)
+	self.list:Clear()
+	self.list:ScrollToBegin()
+	self.description_list:Clear()
+	self.description_list:ScrollToBegin()
+	local r=self.picture:GetTextureRect()
+	self.picture:InitTexture("ui\\ui_disk_io")
+	self.picture:SetTextureRect(Frect():set(r.x1,r.y1,r.x2,r.y2))
+	self.picture:TextControl():SetText(GetString("notepad_list_none"))
+	for k,v in pairs(array) do
+		if array==pda8_info1_array then
+			self:AddItemToList(GetString(v.name),v.name)
+		elseif array==pda8_info2_array then
+			self:AddItemToList(GetString(v),v)
+		elseif array==pda8_info3_array then
+			self:AddItemToList(GetString(v),v)
+		elseif array==pda8_info4_array then
+			self:AddItemToList(GetString(v),v)
+		elseif array==pda8_info5_array then
+			self:AddItemToList(GetString(v),v)
+		end
+	end
+	if self.list:GetSize()==0 then
+		self:AddItemToList(GetString("notepad_list_empty"),"null") 
+	end
+end
+
+function mar_type_1_stalker_pda_8:AddItemToList(item_name,item_alias)
+	local itm=load_item()
+	itm:SetWndSize(self.list_item_main_sz)
+	itm.fn:SetWndPos(vector2():set(0,0))
+	itm.fn:SetWndSize(self.list_item_fn_sz)
+	itm.fn:SetText(item_name)
+	itm.fa = itm:AddTextField(item_alias, self.list_item_fa_sz.x)
+	itm.fa:SetFont(GetFontLetterica16Russian())
+	itm.fa:SetWndPos(vector2():set(self.list_item_fn_sz.x-40, 1200))
+	itm.fa:SetWndSize(self.list_item_fa_sz)
+	self.list:AddExistingItem(itm)
+end
+
+function mar_type_1_stalker_pda_8:FillDescription(item_name)
+	local arr=str_explode(" ",item_name,60,65)
+	for k,v in pairs(arr) do
+		local itm=load_item2()
+		itm:SetWndSize(self.desc_item_main_sz)
+		itm.fn:SetWndPos(vector2():set(0,0))
+		itm.fn:SetWndSize(self.desc_item_fn_sz)
+		itm.fn:SetText(v)
+		self.description_list:AddExistingItem(itm)
+	end
+end
+------------------------КПК 9-ого одиночного сталкера-----------------------------------------
+
+class "mar_type_1_stalker_pda_9" (CUIScriptWnd)
+function mar_type_1_stalker_pda_9:__init() super()
+	self:InitControls()
+	self:InitCallBacks()
+	self:FillList(pda9_info1_array)
+	current_mode=1
+end
+function mar_type_1_stalker_pda_9:__finalize() end
+
+function mar_type_1_stalker_pda_9:InitControls()
+	self:SetWndRect(Frect():set(0,0,1024,768))
+	local xml=CScriptXmlInit()
+	local ctrl
+	xml:ParseFile("ui_notes_wnd.xml")
+	xml:InitStatic("background", self)
+	xml:InitStatic("caption_static", self)
+	xml:InitStatic("noice_static", self)
+    self.clock_wnd=xml:InitStatic("clock_wnd",self)
+	ctrl=CUIWindow()
+	xml:InitWindow("list_item:main", 0, ctrl)
+	self.list_item_main_sz=vector2():set(ctrl:GetWidth(), ctrl:GetHeight())
+	xml:InitWindow("list_item:fn", 0, ctrl)
+	self.list_item_fn_sz=vector2():set(ctrl:GetWidth(), ctrl:GetHeight())
+	xml:InitWindow("list_item:fa", 0, ctrl)
+	self.list_item_fa_sz=vector2():set(ctrl:GetWidth(), ctrl:GetHeight())
+	xml:InitWindow("description_item:main", 0, ctrl)
+	self.desc_item_main_sz=vector2():set(ctrl:GetWidth(), ctrl:GetHeight())
+	xml:InitWindow("description_item:fn", 0, ctrl)
+	self.desc_item_fn_sz=vector2():set(ctrl:GetWidth(), ctrl:GetHeight())
+	self.btn1=xml:Init3tButton("btn_kris_use_1", self)
+	self.btn1:Enable(false)
+	self:Register(self.btn1, "btn_kris_use_1")
+	self.btn2=xml:Init3tButton("btn_kris_use_2", self)
+	self:Register(self.btn2, "btn_kris_use_2")
+	self.btn3=xml:Init3tButton("btn_kris_use_3", self)
+	self:Register(self.btn3, "btn_kris_use_3")
+	self.btn4=xml:Init3tButton("btn_kris_use_4", self)
+	self:Register(self.btn4, "btn_kris_use_4")
+	self.btn5=xml:Init3tButton("btn_kris_use_5", self)
+	self:Register(self.btn5, "btn_kris_use_5")
+	self.btn6=xml:Init3tButton("btn_quit", self)
+	self:Register(self.btn6, "btn_quit")
+	if (not has_alife_info("perevalochnaya_lutiy_meet_to_zombied_done")) then
+      self.btn7=xml:Init3tButton("btn_copy", self)
+	  self:Register(self.btn7, "btn_copy") 
+    end	
+	xml:InitFrame("list_frame", self)
+	xml:InitFrame("descr_frame", self)
+	self.list = xml:InitListBox("list",self)
+	self.list:ShowSelectedItem(true)
+	self:Register(self.list, "list_window")
+	self.picture=xml:InitStatic("picture", self)
+	self.description_list = xml:InitListBox("description_list",self)
+	self:Register(self.description_list, "description_list")
+end
+
+function mar_type_1_stalker_pda_9:InitCallBacks()
+	self:AddCallback("btn_kris_use_1", ui_events.BUTTON_CLICKED, self.click_private, self)
+	self:AddCallback("btn_kris_use_2", ui_events.BUTTON_CLICKED, self.click_monsters, self)
+	self:AddCallback("btn_kris_use_3", ui_events.BUTTON_CLICKED, self.click_locations, self)
+	self:AddCallback("btn_kris_use_4", ui_events.BUTTON_CLICKED, self.click_factions, self)
+	self:AddCallback("btn_kris_use_5", ui_events.BUTTON_CLICKED, self.click_stories, self)
+	self:AddCallback("btn_quit", ui_events.BUTTON_CLICKED, self.click_quit, self)
+	--/self:AddCallback("btn_copy", ui_events.BUTTON_CLICKED, self.click_copy, self)
+	self:AddCallback("list_window", ui_events.LIST_ITEM_CLICKED, self.OnListItemClicked, self)
+end
+
+function mar_type_1_stalker_pda_9:Update()
+	CUIScriptWnd.Update(self)
+	--/self.clock_wnd:TextControl():SetText(getTime())
+end
+
+function mar_type_1_stalker_pda_9:OnKeyboard(dik, keyboard_action)
+	CUIScriptWnd.OnKeyboard(self, dik, keyboard_action)
+	if keyboard_action==ui_events.WINDOW_KEY_PRESSED then
+		if dik==DIK_keys.DIK_ESCAPE then self:click_quit() end
+		if dik==DIK_keys.DIK_1 then self:click_private() end
+		if dik==DIK_keys.DIK_2 then self:click_monsters() end
+		if dik==DIK_keys.DIK_3 then self:click_locations() end
+		if dik==DIK_keys.DIK_4 then self:click_factions() end
+		if dik==DIK_keys.DIK_5 then self:click_stories() end
+	end
+	return true
+end
+
+function mar_type_1_stalker_pda_9:click_copy()
+    run_gui(ui_gui_elements.ui_a2_quest_5_pda_copy())    
+	self.btn7:Enable(false)
+end
+function mar_type_1_stalker_pda_9:click_quit()
+    give_object_to_actor("mar_type_1_stalker_pda_9_item")
+	self:HideDialog()
+end
+function mar_type_1_stalker_pda_9:click_private()
+	current_mode=1
+	self.btn1:Enable(false)
+	self.btn2:Enable(true)
+	self.btn3:Enable(true)
+	self.btn4:Enable(true)
+	self.btn5:Enable(true)
+	if (not has_alife_info("perevalochnaya_lutiy_meet_to_zombied_done")) then
+	self.btn7:Enable(false)
+	end
+	self:FillList(pda9_info1_array)
+end
+function mar_type_1_stalker_pda_9:click_monsters()
+	current_mode=2
+	self.btn1:Enable(true)
+	self.btn2:Enable(false)
+	self.btn3:Enable(true)
+	self.btn4:Enable(true)
+	self.btn5:Enable(true)
+    if (not has_alife_info("perevalochnaya_lutiy_meet_to_zombied_done")) then	
+	self.btn7:Enable(true)
+	end
+	self:FillList(pda9_info2_array)
+end
+function mar_type_1_stalker_pda_9:click_locations()
+	current_mode=3
+	self.btn1:Enable(true)
+	self.btn2:Enable(true)
+	self.btn3:Enable(false)
+	self.btn4:Enable(true)
+	self.btn5:Enable(true)
+	if (not has_alife_info("perevalochnaya_lutiy_meet_to_zombied_done")) then
+	self.btn7:Enable(false)
+	end
+	self:FillList(pda9_info3_array)
+end
+function mar_type_1_stalker_pda_9:click_factions()
+	current_mode=4
+	self.btn1:Enable(true)
+	self.btn2:Enable(true)
+	self.btn3:Enable(true)
+	self.btn4:Enable(false)
+	self.btn5:Enable(true)
+	if (not has_alife_info("perevalochnaya_lutiy_meet_to_zombied_done")) then
+	self.btn7:Enable(false)
+	end
+	self:FillList(pda9_info4_array)
+end
+function mar_type_1_stalker_pda_9:click_stories()
+	current_mode=5
+	self.btn1:Enable(true)
+	self.btn2:Enable(true)
+	self.btn3:Enable(true)
+	self.btn4:Enable(true)
+	self.btn5:Enable(false)
+	if (not has_alife_info("perevalochnaya_lutiy_meet_to_zombied_done")) then
+	self.btn7:Enable(false)
+	end
+	self:FillList(pda9_info5_array)
+end
+
+function mar_type_1_stalker_pda_9:OnListItemClicked()
+	if self.list:GetSize()==0 then return end
+	item=self.list:GetSelectedItem()
+	if item==nil then return end
+	local item_text=item.fn:GetText()
+	local item_alias=item.fa:GetText()
+	if item_alias=="null" then return end
+	self.description_list:Clear()
+	self.description_list:ScrollToBegin()
+	self.picture:TextControl():SetText("")
+	if current_mode==1 then
+		self:FillDescription(GetString("ars_"..item_alias))
+		self.picture:InitTexture("ui_noise")
+	elseif current_mode==2 then
+		self:FillDescription(GetString("enc_mutant_"..item_alias))
+		self.picture:InitTexture("ui_noise")
+	elseif current_mode==3 then
+		self:FillDescription(GetString("enc_location_"..item_alias))
+		self.picture:InitTexture("ui_noise")
+	elseif current_mode==4 then
+		self:FillDescription(GetString("enc_faction_"..item_alias))
+		self.picture:InitTexture("ui_noise")
+	elseif current_mode==5 then
+		self:FillDescription(GetString("enc_anomaly_"..item_alias))
+		self.picture:InitTexture("ui_noise")
+	else
+		self.picture:InitTexture("ui_disk_io")
+		self.picture:TextControl():SetText(GetString("notepad_list_none"))
+	end
+	local r=self.picture:GetTextureRect()
+	self.picture:SetTextureRect(Frect():set(r.x1,r.y1,r.x2,r.y2))
+	self.list:ShowSelectedItem(true)
+end
+
+function mar_type_1_stalker_pda_9:FillList(array)
+	self.list:Clear()
+	self.list:ScrollToBegin()
+	self.description_list:Clear()
+	self.description_list:ScrollToBegin()
+	local r=self.picture:GetTextureRect()
+	self.picture:InitTexture("ui\\ui_disk_io")
+	self.picture:SetTextureRect(Frect():set(r.x1,r.y1,r.x2,r.y2))
+	self.picture:TextControl():SetText(GetString("notepad_list_none"))
+	for k,v in pairs(array) do
+		if array==pda9_info1_array then
+			self:AddItemToList(GetString(v.name),v.name)
+		elseif array==pda9_info2_array then
+			self:AddItemToList(GetString(v),v)
+		elseif array==pda9_info3_array then
+			self:AddItemToList(GetString(v),v)
+		elseif array==pda9_info4_array then
+			self:AddItemToList(GetString(v),v)
+		elseif array==pda9_info5_array then
+			self:AddItemToList(GetString(v),v)
+		end
+	end
+	if self.list:GetSize()==0 then
+		self:AddItemToList(GetString("notepad_list_empty"),"null") 
+	end
+end
+
+function mar_type_1_stalker_pda_9:AddItemToList(item_name,item_alias)
+	local itm=load_item()
+	itm:SetWndSize(self.list_item_main_sz)
+	itm.fn:SetWndPos(vector2():set(0,0))
+	itm.fn:SetWndSize(self.list_item_fn_sz)
+	itm.fn:SetText(item_name)
+	itm.fa = itm:AddTextField(item_alias, self.list_item_fa_sz.x)
+	itm.fa:SetFont(GetFontLetterica16Russian())
+	itm.fa:SetWndPos(vector2():set(self.list_item_fn_sz.x-40, 1200))
+	itm.fa:SetWndSize(self.list_item_fa_sz)
+	self.list:AddExistingItem(itm)
+end
+
+function mar_type_1_stalker_pda_9:FillDescription(item_name)
+	local arr=str_explode(" ",item_name,60,65)
+	for k,v in pairs(arr) do
+		local itm=load_item2()
+		itm:SetWndSize(self.desc_item_main_sz)
+		itm.fn:SetWndPos(vector2():set(0,0))
+		itm.fn:SetWndSize(self.desc_item_fn_sz)
+		itm.fn:SetText(v)
+		self.description_list:AddExistingItem(itm)
+	end
+end
+------------------------КПК 10-ого одиночного сталкера-----------------------------------------
+
+class "mar_type_1_stalker_pda_10" (CUIScriptWnd)
+function mar_type_1_stalker_pda_10:__init() super()
+	self:InitControls()
+	self:InitCallBacks()
+	self:FillList(pda10_info1_array)
+	current_mode=1
+end
+function mar_type_1_stalker_pda_10:__finalize() end
+
+function mar_type_1_stalker_pda_10:InitControls()
+	self:SetWndRect(Frect():set(0,0,1024,768))
+	local xml=CScriptXmlInit()
+	local ctrl
+	xml:ParseFile("ui_notes_wnd.xml")
+	xml:InitStatic("background", self)
+	xml:InitStatic("caption_static", self)
+	xml:InitStatic("noice_static", self)
+    self.clock_wnd=xml:InitStatic("clock_wnd",self)
+	ctrl=CUIWindow()
+	xml:InitWindow("list_item:main", 0, ctrl)
+	self.list_item_main_sz=vector2():set(ctrl:GetWidth(), ctrl:GetHeight())
+	xml:InitWindow("list_item:fn", 0, ctrl)
+	self.list_item_fn_sz=vector2():set(ctrl:GetWidth(), ctrl:GetHeight())
+	xml:InitWindow("list_item:fa", 0, ctrl)
+	self.list_item_fa_sz=vector2():set(ctrl:GetWidth(), ctrl:GetHeight())
+	xml:InitWindow("description_item:main", 0, ctrl)
+	self.desc_item_main_sz=vector2():set(ctrl:GetWidth(), ctrl:GetHeight())
+	xml:InitWindow("description_item:fn", 0, ctrl)
+	self.desc_item_fn_sz=vector2():set(ctrl:GetWidth(), ctrl:GetHeight())
+	self.btn1=xml:Init3tButton("btn_kris_use_1", self)
+	self.btn1:Enable(false)
+	self:Register(self.btn1, "btn_kris_use_1")
+	self.btn2=xml:Init3tButton("btn_kris_use_2", self)
+	self:Register(self.btn2, "btn_kris_use_2")
+	self.btn3=xml:Init3tButton("btn_kris_use_3", self)
+	self:Register(self.btn3, "btn_kris_use_3")
+	self.btn4=xml:Init3tButton("btn_kris_use_4", self)
+	self:Register(self.btn4, "btn_kris_use_4")
+	self.btn5=xml:Init3tButton("btn_kris_use_5", self)
+	self:Register(self.btn5, "btn_kris_use_5")
+	self.btn6=xml:Init3tButton("btn_quit", self)
+	self:Register(self.btn6, "btn_quit")
+	if (not has_alife_info("perevalochnaya_lutiy_meet_to_zombied_done")) then
+      self.btn7=xml:Init3tButton("btn_copy", self)
+	  self:Register(self.btn7, "btn_copy") 
+    end	
+	xml:InitFrame("list_frame", self)
+	xml:InitFrame("descr_frame", self)
+	self.list = xml:InitListBox("list",self)
+	self.list:ShowSelectedItem(true)
+	self:Register(self.list, "list_window")
+	self.picture=xml:InitStatic("picture", self)
+	self.description_list = xml:InitListBox("description_list",self)
+	self:Register(self.description_list, "description_list")
+end
+
+function mar_type_1_stalker_pda_10:InitCallBacks()
+	self:AddCallback("btn_kris_use_1", ui_events.BUTTON_CLICKED, self.click_private, self)
+	self:AddCallback("btn_kris_use_2", ui_events.BUTTON_CLICKED, self.click_monsters, self)
+	self:AddCallback("btn_kris_use_3", ui_events.BUTTON_CLICKED, self.click_locations, self)
+	self:AddCallback("btn_kris_use_4", ui_events.BUTTON_CLICKED, self.click_factions, self)
+	self:AddCallback("btn_kris_use_5", ui_events.BUTTON_CLICKED, self.click_stories, self)
+	self:AddCallback("btn_quit", ui_events.BUTTON_CLICKED, self.click_quit, self)
+	--/self:AddCallback("btn_copy", ui_events.BUTTON_CLICKED, self.click_copy, self)
+	self:AddCallback("list_window", ui_events.LIST_ITEM_CLICKED, self.OnListItemClicked, self)
+end
+
+function mar_type_1_stalker_pda_10:Update()
+	CUIScriptWnd.Update(self)
+	--/self.clock_wnd:TextControl():SetText(getTime())
+end
+
+function mar_type_1_stalker_pda_10:OnKeyboard(dik, keyboard_action)
+	CUIScriptWnd.OnKeyboard(self, dik, keyboard_action)
+	if keyboard_action==ui_events.WINDOW_KEY_PRESSED then
+		if dik==DIK_keys.DIK_ESCAPE then self:click_quit() end
+		if dik==DIK_keys.DIK_1 then self:click_private() end
+		if dik==DIK_keys.DIK_2 then self:click_monsters() end
+		if dik==DIK_keys.DIK_3 then self:click_locations() end
+		if dik==DIK_keys.DIK_4 then self:click_factions() end
+		if dik==DIK_keys.DIK_5 then self:click_stories() end
+	end
+	return true
+end
+
+function mar_type_1_stalker_pda_10:click_copy()
+    run_gui(ui_gui_elements.ui_a2_quest_5_pda_copy())    
+	self.btn7:Enable(false)
+end
+function mar_type_1_stalker_pda_10:click_quit()
+    give_object_to_actor("mar_type_1_stalker_pda_10_item")
+	self:HideDialog()
+end
+function mar_type_1_stalker_pda_10:click_private()
+	current_mode=1
+	self.btn1:Enable(false)
+	self.btn2:Enable(true)
+	self.btn3:Enable(true)
+	self.btn4:Enable(true)
+	self.btn5:Enable(true)
+	if (not has_alife_info("perevalochnaya_lutiy_meet_to_zombied_done")) then
+	self.btn7:Enable(false)
+	end
+	self:FillList(pda10_info1_array)
+end
+function mar_type_1_stalker_pda_10:click_monsters()
+	current_mode=2
+	self.btn1:Enable(true)
+	self.btn2:Enable(false)
+	self.btn3:Enable(true)
+	self.btn4:Enable(true)
+	self.btn5:Enable(true)
+    if (not has_alife_info("perevalochnaya_lutiy_meet_to_zombied_done")) then	
+	self.btn7:Enable(true)
+	end
+	self:FillList(pda10_info2_array)
+end
+function mar_type_1_stalker_pda_10:click_locations()
+	current_mode=3
+	self.btn1:Enable(true)
+	self.btn2:Enable(true)
+	self.btn3:Enable(false)
+	self.btn4:Enable(true)
+	self.btn5:Enable(true)
+	if (not has_alife_info("perevalochnaya_lutiy_meet_to_zombied_done")) then
+	self.btn7:Enable(false)
+	end
+	self:FillList(pda10_info3_array)
+end
+function mar_type_1_stalker_pda_10:click_factions()
+	current_mode=4
+	self.btn1:Enable(true)
+	self.btn2:Enable(true)
+	self.btn3:Enable(true)
+	self.btn4:Enable(false)
+	self.btn5:Enable(true)
+	if (not has_alife_info("perevalochnaya_lutiy_meet_to_zombied_done")) then
+	self.btn7:Enable(false)
+	end
+	self:FillList(pda10_info4_array)
+end
+function mar_type_1_stalker_pda_10:click_stories()
+	current_mode=5
+	self.btn1:Enable(true)
+	self.btn2:Enable(true)
+	self.btn3:Enable(true)
+	self.btn4:Enable(true)
+	self.btn5:Enable(false)
+	if (not has_alife_info("perevalochnaya_lutiy_meet_to_zombied_done")) then
+	self.btn7:Enable(false)
+	end
+	self:FillList(pda10_info5_array)
+end
+
+function mar_type_1_stalker_pda_10:OnListItemClicked()
+	if self.list:GetSize()==0 then return end
+	item=self.list:GetSelectedItem()
+	if item==nil then return end
+	local item_text=item.fn:GetText()
+	local item_alias=item.fa:GetText()
+	if item_alias=="null" then return end
+	self.description_list:Clear()
+	self.description_list:ScrollToBegin()
+	self.picture:TextControl():SetText("")
+	if current_mode==1 then
+		self:FillDescription(GetString("ars_"..item_alias))
+		self.picture:InitTexture("ui_noise")
+	elseif current_mode==2 then
+		self:FillDescription(GetString("enc_mutant_"..item_alias))
+		self.picture:InitTexture("ui_noise")
+	elseif current_mode==3 then
+		self:FillDescription(GetString("enc_location_"..item_alias))
+		self.picture:InitTexture("ui_noise")
+	elseif current_mode==4 then
+		self:FillDescription(GetString("enc_faction_"..item_alias))
+		self.picture:InitTexture("ui_noise")
+	elseif current_mode==5 then
+		self:FillDescription(GetString("enc_anomaly_"..item_alias))
+		self.picture:InitTexture("ui_noise")
+	else
+		self.picture:InitTexture("ui_disk_io")
+		self.picture:TextControl():SetText(GetString("notepad_list_none"))
+	end
+	local r=self.picture:GetTextureRect()
+	self.picture:SetTextureRect(Frect():set(r.x1,r.y1,r.x2,r.y2))
+	self.list:ShowSelectedItem(true)
+end
+
+function mar_type_1_stalker_pda_10:FillList(array)
+	self.list:Clear()
+	self.list:ScrollToBegin()
+	self.description_list:Clear()
+	self.description_list:ScrollToBegin()
+	local r=self.picture:GetTextureRect()
+	self.picture:InitTexture("ui\\ui_disk_io")
+	self.picture:SetTextureRect(Frect():set(r.x1,r.y1,r.x2,r.y2))
+	self.picture:TextControl():SetText(GetString("notepad_list_none"))
+	for k,v in pairs(array) do
+		if array==pda10_info1_array then
+			self:AddItemToList(GetString(v.name),v.name)
+		elseif array==pda10_info2_array then
+			self:AddItemToList(GetString(v),v)
+		elseif array==pda10_info3_array then
+			self:AddItemToList(GetString(v),v)
+		elseif array==pda10_info4_array then
+			self:AddItemToList(GetString(v),v)
+		elseif array==pda10_info5_array then
+			self:AddItemToList(GetString(v),v)
+		end
+	end
+	if self.list:GetSize()==0 then
+		self:AddItemToList(GetString("notepad_list_empty"),"null") 
+	end
+end
+
+function mar_type_1_stalker_pda_10:AddItemToList(item_name,item_alias)
+	local itm=load_item()
+	itm:SetWndSize(self.list_item_main_sz)
+	itm.fn:SetWndPos(vector2():set(0,0))
+	itm.fn:SetWndSize(self.list_item_fn_sz)
+	itm.fn:SetText(item_name)
+	itm.fa = itm:AddTextField(item_alias, self.list_item_fa_sz.x)
+	itm.fa:SetFont(GetFontLetterica16Russian())
+	itm.fa:SetWndPos(vector2():set(self.list_item_fn_sz.x-40, 1200))
+	itm.fa:SetWndSize(self.list_item_fa_sz)
+	self.list:AddExistingItem(itm)
+end
+
+function mar_type_1_stalker_pda_10:FillDescription(item_name)
+	local arr=str_explode(" ",item_name,60,65)
+	for k,v in pairs(arr) do
+		local itm=load_item2()
+		itm:SetWndSize(self.desc_item_main_sz)
+		itm.fn:SetWndPos(vector2():set(0,0))
+		itm.fn:SetWndSize(self.desc_item_fn_sz)
+		itm.fn:SetText(v)
+		self.description_list:AddExistingItem(itm)
+	end
+end
+-----------------------------------------------
+class "ui_main_gg_dop_pda_r1" (CUIScriptWnd)
+
+function ui_main_gg_dop_pda_r1:__init(owner) super()
+	self.owner = owner
+	self:InitControls()
+	self:InitCallBacks()
+end
+
+function ui_main_gg_dop_pda_r1:__finalize()
+end
+
+function ui_main_gg_dop_pda_r1:InitControls()
+	self:SetWndRect			(Frect():set(0,0,1024,768))
+	local xml, ctrl			= CScriptXmlInit(), CUIWindow()
+	xml:ParseFile			("ui_gui_elements.xml")
+	self.form_main_ggpda_r1				= xml:InitStatic("form_main_ggpda_r1",self)
+    self.button_use = xml:Init3tButton ("form_main_ggpda_r1:btn_use", self.form_main_ggpda_r1) 
+    self:Register (self.button_use, "button_use")  
+    self.button_wespon = xml:Init3tButton ("form_main_ggpda_r1:btn_wespon", self.form_main_ggpda_r1) 
+    self:Register (self.button_wespon, "button_wespon")  	
+    self.button_close = xml:Init3tButton ("form_main_ggpda_r1:btn_close", self.form_main_ggpda_r1) 
+    self:Register (self.button_close, "button_close")
+	self.button_exit = xml:Init3tButton ("form_main_ggpda_r1:btn_exit", self.form_main_ggpda_r1) 
+    self:Register (self.button_exit, "button_exit")
+end
+
+function ui_main_gg_dop_pda_r1:InitCallBacks() 
+    self:AddCallback("button_use", ui_events.BUTTON_CLICKED, self.OnButton_use_clicked, self)
+    self:AddCallback("button_wespon", ui_events.BUTTON_CLICKED, self.OnButton_wespon_clicked, self)	
+	self:AddCallback("button_close", ui_events.BUTTON_CLICKED, self.OnButton_close_clicked, self)
+	self:AddCallback("button_exit", ui_events.BUTTON_CLICKED, self.OnButton_close_exited, self)
+end
+
+function ui_main_gg_dop_pda_r1:OnButton_use_clicked()
+    run_dynamic_element(ui_gui_npc_unique_pda.mar_type_1_stalker_pda_11(),false) 	
+end
+
+function ui_main_gg_dop_pda_r1:OnButton_wespon_clicked()
+    run_dynamic_element(ogsm_notepad.notepad_weapons(),false) 	
+end
+
+function ui_main_gg_dop_pda_r1:OnButton_close_clicked()
+    run_dynamic_element(ui_gui_ggpda_main_wnd.ui_pdagg_main_wnd_used_1(),false) 	
+end
+
+function ui_main_gg_dop_pda_r1:OnButton_close_exited()
+    give_object_to_actor("ui_weapons_enciklopedia")    
+	self:HideDialog()
+end
+------------------------КПК ГГ основной раздел-----------------------------------------
+
+class "mar_type_1_stalker_pda_11" (CUIScriptWnd)
+function mar_type_1_stalker_pda_11:__init() super()
+	self:InitControls()
+	self:InitCallBacks()
+	self:FillList(pda11_info1_array)
+	current_mode=1
+end
+function mar_type_1_stalker_pda_11:__finalize() end
+
+function mar_type_1_stalker_pda_11:InitControls()
+	self:SetWndRect(Frect():set(0,0,1024,768))
+	local xml=CScriptXmlInit()
+	local ctrl
+	xml:ParseFile("ui_notes_wnd.xml")
+	xml:InitStatic("background", self)
+	xml:InitStatic("caption_static", self)
+	xml:InitStatic("noice_static", self)
+    self.clock_wnd=xml:InitStatic("clock_wnd",self)
+	ctrl=CUIWindow()
+	xml:InitWindow("list_item:main", 0, ctrl)
+	self.list_item_main_sz=vector2():set(ctrl:GetWidth(), ctrl:GetHeight())
+	xml:InitWindow("list_item:fn", 0, ctrl)
+	self.list_item_fn_sz=vector2():set(ctrl:GetWidth(), ctrl:GetHeight())
+	xml:InitWindow("list_item:fa", 0, ctrl)
+	self.list_item_fa_sz=vector2():set(ctrl:GetWidth(), ctrl:GetHeight())
+	xml:InitWindow("description_item:main", 0, ctrl)
+	self.desc_item_main_sz=vector2():set(ctrl:GetWidth(), ctrl:GetHeight())
+	xml:InitWindow("description_item:fn", 0, ctrl)
+	self.desc_item_fn_sz=vector2():set(ctrl:GetWidth(), ctrl:GetHeight())
+	self.btn1=xml:Init3tButton("btn_kris_use1_1", self)
+	self.btn1:Enable(false)
+	self:Register(self.btn1, "btn_kris_use1_1")
+	self.btn2=xml:Init3tButton("btn_kris_use1_2", self)
+	self:Register(self.btn2, "btn_kris_use1_2")
+	self.btn3=xml:Init3tButton("btn_kris_use1_3", self)
+	self:Register(self.btn3, "btn_kris_use1_3")
+	self.btn4=xml:Init3tButton("btn_kris_use1_4", self)
+	self:Register(self.btn4, "btn_kris_use1_4")
+	self.btn5=xml:Init3tButton("btn_kris_use1_5", self)
+	self:Register(self.btn5, "btn_kris_use1_5")
+	self.btn6=xml:Init3tButton("btn_quit", self)
+	self:Register(self.btn6, "btn_quit")
+	--if (not has_alife_info("perevalochnaya_lutiy_meet_to_zombied_done")) then
+      --self.btn7=xml:Init3tButton("btn_copy", self)
+	  --self:Register(self.btn7, "btn_copy") 
+    --end	
+	xml:InitFrame("list_frame", self)
+	xml:InitFrame("descr_frame", self)
+	self.list = xml:InitListBox("list",self)
+	self.list:ShowSelectedItem(true)
+	self:Register(self.list, "list_window")
+	self.picture=xml:InitStatic("picture", self)
+	self.description_list = xml:InitListBox("description_list",self)
+	self:Register(self.description_list, "description_list")
+end
+
+function mar_type_1_stalker_pda_11:InitCallBacks()
+	self:AddCallback("btn_kris_use1_1", ui_events.BUTTON_CLICKED, self.click_private, self)
+	self:AddCallback("btn_kris_use1_2", ui_events.BUTTON_CLICKED, self.click_monsters, self)
+	self:AddCallback("btn_kris_use1_3", ui_events.BUTTON_CLICKED, self.click_locations, self)
+	self:AddCallback("btn_kris_use1_4", ui_events.BUTTON_CLICKED, self.click_factions, self)
+	self:AddCallback("btn_kris_use1_5", ui_events.BUTTON_CLICKED, self.click_stories, self)
+	self:AddCallback("btn_quit", ui_events.BUTTON_CLICKED, self.click_quit, self)
+	--/self:AddCallback("btn_copy", ui_events.BUTTON_CLICKED, self.click_copy, self)
+	self:AddCallback("list_window", ui_events.LIST_ITEM_CLICKED, self.OnListItemClicked, self)
+end
+
+function mar_type_1_stalker_pda_11:Update()
+	CUIScriptWnd.Update(self)
+	--/self.clock_wnd:TextControl():SetText(getTime())
+end
+
+function mar_type_1_stalker_pda_11:OnKeyboard(dik, keyboard_action)
+	CUIScriptWnd.OnKeyboard(self, dik, keyboard_action)
+	if keyboard_action==ui_events.WINDOW_KEY_PRESSED then
+		if dik==DIK_keys.DIK_ESCAPE then self:click_quit() end
+		if dik==DIK_keys.DIK_1 then self:click_private() end
+		if dik==DIK_keys.DIK_2 then self:click_monsters() end
+		if dik==DIK_keys.DIK_3 then self:click_locations() end
+		if dik==DIK_keys.DIK_4 then self:click_factions() end
+		if dik==DIK_keys.DIK_5 then self:click_stories() end
+	end
+	return true
+end
+
+function mar_type_1_stalker_pda_11:click_copy()
+    run_gui(ui_gui_elements.ui_a2_quest_5_pda_copy())    
+	self.btn7:Enable(false)
+end
+function mar_type_1_stalker_pda_11:click_quit()
+    --give_object_to_actor("mar_type_1_stalker_pda_10_item")
+	self:HideDialog()
+end
+function mar_type_1_stalker_pda_11:click_private()
+	current_mode=1
+	self.btn1:Enable(false)
+	self.btn2:Enable(true)
+	self.btn3:Enable(true)
+	self.btn4:Enable(true)
+	self.btn5:Enable(true)
+	--if (not has_alife_info("perevalochnaya_lutiy_meet_to_zombied_done")) then
+	--self.btn7:Enable(false)
+	--end
+	self:FillList(pda11_info1_array)
+end
+function mar_type_1_stalker_pda_11:click_monsters()
+	current_mode=2
+	self.btn1:Enable(true)
+	self.btn2:Enable(false)
+	self.btn3:Enable(true)
+	self.btn4:Enable(true)
+	self.btn5:Enable(true)
+    --if (not has_alife_info("perevalochnaya_lutiy_meet_to_zombied_done")) then	
+	--self.btn7:Enable(true)
+	--end
+	self:FillList(pda11_info2_array)
+end
+function mar_type_1_stalker_pda_11:click_locations()
+	current_mode=3
+	self.btn1:Enable(true)
+	self.btn2:Enable(true)
+	self.btn3:Enable(false)
+	self.btn4:Enable(true)
+	self.btn5:Enable(true)
+	--if (not has_alife_info("perevalochnaya_lutiy_meet_to_zombied_done")) then
+	--self.btn7:Enable(false)
+	--end
+	self:FillList(pda11_info3_array)
+end
+function mar_type_1_stalker_pda_11:click_factions()
+	current_mode=4
+	self.btn1:Enable(true)
+	self.btn2:Enable(true)
+	self.btn3:Enable(true)
+	self.btn4:Enable(false)
+	self.btn5:Enable(true)
+	--if (not has_alife_info("perevalochnaya_lutiy_meet_to_zombied_done")) then
+	--self.btn7:Enable(false)
+	--end
+	self:FillList(pda11_info4_array)
+end
+function mar_type_1_stalker_pda_11:click_stories()
+	current_mode=5
+	self.btn1:Enable(true)
+	self.btn2:Enable(true)
+	self.btn3:Enable(true)
+	self.btn4:Enable(true)
+	self.btn5:Enable(false)
+	--if (not has_alife_info("perevalochnaya_lutiy_meet_to_zombied_done")) then
+	--self.btn7:Enable(false)
+	--end
+	self:FillList(pda11_info5_array)
+end
+
+function mar_type_1_stalker_pda_11:OnListItemClicked()
+	if self.list:GetSize()==0 then return end
+	item=self.list:GetSelectedItem()
+	if item==nil then return end
+	local item_text=item.fn:GetText()
+	local item_alias=item.fa:GetText()
+	if item_alias=="null" then return end
+	self.description_list:Clear()
+	self.description_list:ScrollToBegin()
+	self.picture:TextControl():SetText("")
+	if current_mode==1 then
+		self:FillDescription(GetString("ars_"..item_alias))
+		self.picture:InitTexture("ui_noise")
+	elseif current_mode==2 then
+		self:FillDescription(GetString("enc_mutant_"..item_alias))
+		self.picture:InitTexture("ui_noise")
+	elseif current_mode==3 then
+		self:FillDescription(GetString("enc_location_"..item_alias))
+		self.picture:InitTexture("ui_noise")
+	elseif current_mode==4 then
+		self:FillDescription(GetString("enc_faction_"..item_alias))
+		self.picture:InitTexture("ui_noise")
+	elseif current_mode==5 then
+		self:FillDescription(GetString("enc_anomaly_"..item_alias))
+		self.picture:InitTexture("ui_noise")
+	else
+		self.picture:InitTexture("ui_disk_io")
+		self.picture:TextControl():SetText(GetString("notepad_list_none"))
+	end
+	local r=self.picture:GetTextureRect()
+	self.picture:SetTextureRect(Frect():set(r.x1,r.y1,r.x2,r.y2))
+	self.list:ShowSelectedItem(true)
+end
+
+function mar_type_1_stalker_pda_11:FillList(array)
+	self.list:Clear()
+	self.list:ScrollToBegin()
+	self.description_list:Clear()
+	self.description_list:ScrollToBegin()
+	local r=self.picture:GetTextureRect()
+	self.picture:InitTexture("ui\\ui_disk_io")
+	self.picture:SetTextureRect(Frect():set(r.x1,r.y1,r.x2,r.y2))
+	self.picture:TextControl():SetText(GetString("notepad_list_none"))
+	for k,v in pairs(array) do
+		if array==pda11_info1_array and db.actor:has_info(v.info) then
+			self:AddItemToList(GetString(v.name),v.name)
+		elseif array==pda11_info2_array and db.actor:has_info(v.info) then
+			self:AddItemToList(GetString(v.name),v.name)
+		elseif array==pda11_info3_array then
+			self:AddItemToList(GetString(v),v)
+		elseif array==pda11_info4_array then
+			self:AddItemToList(GetString(v),v)
+		elseif array==pda11_info5_array then
+			self:AddItemToList(GetString(v),v)
+		end
+	end
+	if self.list:GetSize()==0 then
+		self:AddItemToList(GetString("notepad_list_empty"),"null") 
+	end
+end
+
+function mar_type_1_stalker_pda_11:AddItemToList(item_name,item_alias)
+	local itm=load_item()
+	itm:SetWndSize(self.list_item_main_sz)
+	itm.fn:SetWndPos(vector2():set(0,0))
+	itm.fn:SetWndSize(self.list_item_fn_sz)
+	itm.fn:SetText(item_name)
+	itm.fa = itm:AddTextField(item_alias, self.list_item_fa_sz.x)
+	itm.fa:SetFont(GetFontLetterica16Russian())
+	itm.fa:SetWndPos(vector2():set(self.list_item_fn_sz.x-40, 1200))
+	itm.fa:SetWndSize(self.list_item_fa_sz)
+	self.list:AddExistingItem(itm)
+end
+
+function mar_type_1_stalker_pda_11:FillDescription(item_name)
+	local arr=str_explode(" ",item_name,60,65)
+	for k,v in pairs(arr) do
+		local itm=load_item2()
+		itm:SetWndSize(self.desc_item_main_sz)
+		itm.fn:SetWndPos(vector2():set(0,0))
+		itm.fn:SetWndSize(self.desc_item_fn_sz)
+		itm.fn:SetText(v)
+		self.description_list:AddExistingItem(itm)
+	end
+end
+-------------------------общие функции (Dexx)----------------------------------------
+function trim(s)
+	return(string.gsub(s, "^%s*(.-)%s*$", "%1"))
+end
+
+function str_explode(div,str,pos1,pos2,clear)
+	local t={}
+	local cpt,pos
+	if pos1==nil then pos1=1 end
+	if pos2==nil then pos2=pos1 end
+	local cpt1=string.find(str,div,pos1,true)
+	local cpt2=string.find(str,div,pos2,true)
+	if cpt1 and cpt2 then
+		if cpt2-cpt1>5 then
+			cpt=cpt1
+			pos=pos1
+		else
+			cpt=cpt2
+			pos=pos2
+		end
+		repeat
+			if clear then
+				table.insert(t,trim(string.sub(str,1,cpt-1)))
+			else
+				table.insert(t,string.sub(str,1,cpt-1))
+			end
+			str=string.sub(str,cpt+string.len(div))
+			cpt=string.find(str,div,pos,true)
+		until cpt==nil
+	end
+	if clear then
+		table.insert(t,trim(str))
+	else
+		table.insert(t,str)
+	end
+	return t
+end
+
+function getTime()
+	local time
+	local time_m=level.get_time_minutes()
+	local time_h=level.get_time_hours()
+	if level.get_time_minutes()>=0 and level.get_time_minutes()<=9 then
+		time=time_h..":".."0"..time_m
+	end
+	if level.get_time_minutes()>=10 and level.get_time_minutes()<=59 then
+		time=time_h..":"..time_m
+	end
+	if level.get_time_minutes()>=0 and level.get_time_minutes()<=9 and level.get_time_hours()>=0 and level.get_time_hours()<10 then
+		time="0"..time_h..":".."0"..time_m
+	end
+	if level.get_time_minutes()>=10 and level.get_time_minutes()<=59 and level.get_time_hours()>=0 and level.get_time_hours()<10 then
+		time="0"..time_h..":"..time_m
+	end
+	return time
+end
+-------------------- GUI КПК у одиночных сталкеров в Смерти вопреки ----------------------
+------------------------- Copyright 2012-2014 Geonezis & XOBAH ---------------------------

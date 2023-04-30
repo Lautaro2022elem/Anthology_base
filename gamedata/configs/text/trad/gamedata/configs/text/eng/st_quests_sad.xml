@@ -1,0 +1,789 @@
+<?xml version="1.0" encoding="windows-1251" ?>
+<string_table>
+
+    <string id="zat_a2_meet_barmen_task_text">
+<text>Talk to Beard</text>
+    </string>
+    <string id="zat_a2_meet_barmen_task_desc">
+<text>Max come in and have some business.</text>
+    </string>
+
+    <string id="zat_a2_meet_lotsman_task_text">
+<text>Talk to the Pilot</text>
+    </string>
+    <string id="zat_a2_meet_lotsman_task_desc">
+<text>The Beard said that the Pilot would take me to the Shorokhov Valley and give me further information.</text>
+    </string>
+
+    <string id="sad_task_done_text">
+<text>Three comrades: tell Boroda about the fate of stalkers</text>
+    </string>
+    <string id="sad_task_done_text_desc">
+<text>We have learned all about the fate of Coward, Dunce and Experienced. Now it is necessary to tell Beard.</text>
+    </string>
+    <string id="sad_task_text_0">
+<text>Three comrades: learn about the fate of the Coward, the Dunce and the Experienced</text>
+    </string>
+    <string id="sad_task_text_0_desc">
+<text>It is necessary to find out about the fate of the three stalkers who were sent to the Valley of Shorokhov: Coward, Dunce and Experienced.</text>
+    </string>
+    <string id="sad_task_text_1">
+<text>Three comrades: find out about the fate of Coward and Dunce</text>
+    </string>
+    <string id="sad_task_text_1_desc">
+<text>We learned about the fate of Experienced. It remains to find out about the fate of Coward and Dunce.</text>
+    </string>
+    <string id="sad_task_text_2">
+<text>Three comrades: learn about the fate of Coward and Experienced</text>
+    </string>
+    <string id="sad_task_text_2_desc">
+<text>We have learned of the fate of the Stooge. It remains to find out about the fate of Coward and Experienced.</text>
+    </string>
+    <string id="sad_task_text_3">
+<text>Three comrades: find out about the fate of the Coward</text>
+    </string>
+    <string id="sad_task_text_3_desc">
+<text>It is necessary to learn about the fate of the Coward.</text>
+    </string>
+    <string id="sad_task_text_4">
+<text>Three comrades: learn about the fate of the Dunce and Experienced</text>
+    </string>
+    <string id="sad_task_text_4_desc">
+<text>We have learned of the fate of the Coward. It remains to find out about the fate of the Dunce and Experienced.</text>
+    </string>
+    <string id="sad_task_text_5">
+<text>Three comrades: find out about the fate of the Stooge</text>
+    </string>
+    <string id="sad_task_text_5_desc">
+<text>It is necessary to learn about the fate of the Stooge.</text>
+    </string>
+    <string id="sad_task_text_6">
+<text>Three comrades: learn about the fate of Experienced</text>
+    </string>
+    <string id="sad_task_text_6_desc">
+<text>It is necessary to learn about the fate of Experienced.</text>
+    </string>
+
+    <string id="sad_main_task_art_text_1">
+<text>Rare art: find the artifact "Heart of the Oasis"</text>
+    </string>
+    <string id="sad_main_task_art_text_1_desc">
+<text>It is necessary to find a very rare artifact "Heart of the Oasis".</text>
+    </string>
+    <string id="sad_main_task_art_text_2">
+<text>Rare art: give the artifact "Heart of the Oasis" to Beard</text>
+    </string>
+    <string id="sad_main_task_art_text_2_desc">
+<text>The Heart of the Oasis artifact has been found. Now it must be given to Beard.</text>
+    </string>
+
+    <string id="sad_b1_meet_mutny_task_text">
+<text>Former base: meet Mutny</text>
+    </string>
+    <string id="sad_b1_meet_mutny_task_desc">
+<text>Perhaps Mutny knows about the fate of the three missing stalkers.</text>
+    </string>
+	
+    <string id="sad_b1_plant_text_desc">
+<text>Find an anomalous plant commissioned by scientists and hand it over to the intermediary.</text>
+    </string>
+    <string id="sad_b1_plant_text_1">
+<text>Anomalous Plant: Explore the area</text>
+    </string>
+    <string id="sad_b1_plant_text_2">
+<text>Anomalous plant: take the order to the intermediary</text>
+    </string>
+	
+    <string id="sad_sim_3_rob_task_1_text">
+<text>Unknown Creature: Go hunting with Ilya Barbos</text>
+    </string>
+    <string id="sad_sim_3_rob_task_1_desc">
+<text>Help the stalkers kill an unknown creature in an abandoned camp.</text>
+    </string>
+	
+    <string id="sad_b1_mutny_task_1_00_desc">
+<text>Take Fyodor's flash drive from the courier and take it to Mutny.</text>
+    </string>
+    <string id="sad_b1_mutny_task_1_01">
+<text>Muddy job: pick up the flash drive from the courier</text>
+    </string>
+    <string id="sad_b1_mutny_task_1_02">
+<text>Muddy work: take the flash drive to Mutny</text>
+    </string>
+    <string id="sad_b1_mutny_task_fail">
+<text>Mutny: That's it, stalker - I don't need your help anymore.</text>
+    </string>
+	
+    <string id="sad_ban_lager_bandit_desc">
+<text>Take Maximilian's package from the bandits.</text>
+    </string>
+    <string id="sad_ban_posilka_text_1">
+<text>Important package: give the package to Maximilian</text>
+    </string>
+    <string id="sad_ban_posilka_text_2">
+<text>Important package: pick up the package from Kostyan</text>
+    </string>
+    <string id="sad_ban_posilka_text_2b">
+<text>Important package: take the package from the bandits</text>
+    </string>
+    <string id="sad_ban_posilka_text_3">
+<text>Important package: get to the bandit camp</text>
+    </string>
+    <string id="sad_ban_posilka_text_4">
+<text>Important premise: find the leader of the bandits</text>
+    </string>
+    <string id="sad_ban_posilka_text_5">
+<text>Important package: take the package</text>
+    </string>
+	
+    <string id="sad_b2_lager_maxim_in">
+<text>Let's follow the trail: meet Maximilian</text>
+    </string>
+    <string id="sad_b2_lager_maxim_in_desc">
+<text>Maximilian may have information about the missing stalkers.</text>
+    </string>
+	
+    <string id="sad_b3_maxim_ataka_desc">
+<text>Help Maximilian capture the mercenary camp.</text>
+    </string>
+    <string id="sad_b3_maxim_ataka_t1">
+<text>Attack the mercenary camp: wait for the appointed time</text>
+    </string>
+    <string id="sad_b3_maxim_ataka_t2">
+<text>Attack the Mercenary Camp: Destroy the Mercenaries</text>
+    </string>
+    <string id="sad_b3_maxim_ataka_t3">
+<text>Attack the Mercenary Camp: Tell Maximilian Ready</text>
+    </string>
+    <string id="sad_b3_maxim_ataka_t4">
+<text>Attack the Mercenary Camp: Follow Maximilian</text>
+    </string>
+    <string id="sad_b3_maxim_ataka_t5">
+<text>Attack the Mercenary Camp: Talk to Maximilian</text>
+    </string>
+
+<string id="st_sad_maximum_im_ready">
+<text>Maximilian: Come, let's talk.</text>
+	</string>
+	<string id="st_sad_maxim_sleeped">
+<text>Maximilian left without you.</text>
+	</string>
+	<string id="sad_maxim_wtf_faraway">
+<text>Maximilian: Are you going for a walk? We start without you.</text>
+	</string>
+	<string id="sad_b3_maxim_talk_task_text">
+<text>Talk to Maximilian.</text>
+        </string>
+	<string id="sad_b3_radik_talk_task_text">
+<text>Important Conversation: Talk to Radik</text>
+        </string>
+	<string id="sad_b3_radik_talk_task_desc">
+<text>We need to find Radik and talk to him.</text>
+        </string>
+	<string id="sad_b3_radik_bring_task_text">
+<text>Hunger is not aunt: bring food</text>
+        </string>
+	<string id="sad_b3_radik_bring_task_desc">
+<text>Bring food to Radik's party. Five rations are enough.</text>
+        </string>
+	
+	<string id="sad_radik_get_pda_task_text_1">
+<text>Masked: Retrieve Mercenary PDA</text>
+        </string>
+	<string id="sad_radik_get_pda_task_text_2">
+<text>Maker: Talk to Radik</text>
+        </string>
+	<string id="sad_radik_get_pda_task_desc">
+<text>The Mercenary's PDA is needed to infiltrate their base.</text>
+        </string>
+	
+	<string id="sad_radik_get_outfit_task_text_1">
+<text>Masked: Get the mercenary equipment from the merchant</text>
+        </string>
+	<string id="sad_radik_get_outfit_task_text_2">
+<text>Masked: Take the mercenary equipment from the messenger</text>
+        </string>
+	<string id="sad_radik_get_outfit_task_text_3">
+<text>Masked: Find Mercenary Equipment</text>
+        </string>
+	<string id="sad_radik_get_outfit_task_desc">
+<text>Mercenary gear is needed to infiltrate their base.</text>
+        </string>
+	<string id="sad_radik_arrive_task_text_1">
+<text>Breakthrough: Escort Radik's squad</text>
+        </string>
+	<string id="sad_radik_arrive_task_text_1b">
+<text>Breakthrough: plant explosives</text>
+        </string>	
+	<string id="sad_radik_arrive_task_text_2">
+<text>Breakthrough: Talk to Radik</text>
+        </string>
+	<string id="sad_radik_arrive_task_desc">
+<text>Take position near the mercenary base.</text>
+        </string>
+	<string id="sad_radik_faraway">
+<text>Radik: Hey, where did you run away to? Come back to the group!</text>
+        </string>
+	
+	<string id="sad_radik_task_inside_desc">
+                <text>Release stalkers who have been captured by mercenaries.</text>
+        </string>
+	<string id="sad_radik_task_inside_text_1">
+                <text>Release: sneaking into base under the guise of a mercenary</text>
+        </string>
+	<string id="sad_radik_task_inside_text_2">
+                <text>Release: Find the prisoners</text>
+        </string>
+	<string id="sad_radik_task_inside_text_3">
+                <text>Release: Destroy the mercenaries</text>
+        </string>
+	<string id="sad_b4_fedor_dead_message">
+                <text>Fedor has died.</text>
+        </string>
+	
+	<string id="sad_cowboy_meet_tesla_task_1">
+            <text>Technical question: Talk to Mishka Tesla about the scanner</text>
+    </string>
+<string id="sad_cowboy_meet_tesla_task_desc">
+            <text>Mishka Tesla can help to get to the place where Trus is presumably located.</text>
+    </string>
+
+<string id="sad_cowboy_stuff_task_desc">
+            <text>Get the missing parts for the scanner.</text>
+    </string>
+<string id="sad_cowboy_stuff_1">
+            <text>Missing parts: Bring the "Compass" and microchip to Mishka Tesla</text>
+    </string>
+<string id="sad_cowboy_stuff_2">
+            <text>Missing parts: Talk to Semyon</text>
+    </string>
+<string id="sad_cowboy_stuff_3">
+            <text>Missing parts: Find the "Compass" and microchip</text>
+    </string>
+<string id="sad_cowboy_stuff_4">
+            <text>Missing parts: Get the "Compass" artifact</text>
+    </string>
+<string id="sad_cowboy_stuff_5">
+            <text>Missing parts: Find Oleg Motalyga and retrieve the microchip for the scanner from him</text>
+    </string>
+
+	
+	<string id="sad_tesla_monster_task_desc">
+    <text>Destroy mutants near the teleportation location.</text>
+</string>
+<string id="sad_tesla_monster_task_1">
+    <text>Invisible death: clear the area of mutants.</text>
+</string>
+<string id="sad_oasis_teleport_desc">
+    <text>Make your way to the plateau where Trus is believed to be located.</text>
+</string>
+<string id="sad_oasis_teleport_0">
+    <text>Path to the plateau: inform Mishka Tesla of your readiness.</text>
+</string>
+<string id="sad_oasis_teleport_1">
+    <text>Path to the plateau: install the scanner.</text>
+</string>
+<string id="sad_oasis_teleport_2">
+    <text>Path to the plateau: wait for Mishka Tesla to set up the scanner.</text>
+</string>
+<string id="sad_oasis_teleport_3">
+    <text>Path to the plateau: jump into the anomaly.</text>
+</string>
+<string id="sad_oasis_teleport_4">
+    <text>Return from the plateau: jump into the anomaly.</text>
+</string>
+<string id="sad_oasis_teleport_5">
+    <text>Search the area and wait for Mishka Tesla to set up the scanner for the return trip.</text>
+</string>
+<string id="sad_oasis_teleport_1b">
+    <text>Path to the plateau: take the scanner.</text>
+</string>
+<string id="sad_oasis_stupid_thing">
+    <text>Mishka Tesla: What a fool... How are you going to get back now?</text>
+</string>
+<string id="sad_oasis_get_back_here_scan">
+    <text>Mishka Tesla: Where did you run off with my scanner?</text>
+</string>
+<string id="sad_oasis_get_back_here">
+    <text>Mishka Tesla: Hey, where are you going? I'm not going to wait for you here!</text>
+</string>
+<string id="sad_oasis_last_warning">
+    <text>Mishka Tesla: Hey, my patience is wearing thin! Come back here now!</text>
+</string>
+<string id="sad_oasis_tesla_go_base">
+    <text>Mishka Tesla: That's it, I'm done with you. I'm going back to base.</text>
+</string>
+<string id="sad_oasis_tesla_fight">
+    <text>Mishka Tesla: That's it, I've had enough of you!</text>
+</string>
+	
+	<string id="sad_volodya_task_desc">
+                <text>Together with Volodya Bolshoi, capture Semyon Cowboy's base.</text>
+        </string>
+	<string id="sad_volodya_task_1">
+                <text>Ranch attack: talk to Volodya Bolshoi</text>
+        </string>
+	<string id="sad_volodya_task_2">
+                <text>Ranch attack: inform Volodya Bolshoi of readiness</text>
+        </string>
+	
+<string id="sad_kill_mutny_task_1">
+            <text>Camp attack: meet with stalkers</text>
+    </string>
+<string id="sad_kill_mutny_task_1_desc">
+            <text>It is necessary to meet with the stalkers to attack Mutny's base.</text>
+    </string>
+<string id="sad_kill_mutny_task_2">
+            <text>Camp attack: inform Grisha of readiness</text>
+    </string>
+<string id="sad_kill_mutny_task_2_desc">
+            <text>Inform Grisha of readiness to attack Mutny's base.</text>
+    </string>
+<string id="sad_kill_mutny_task_3">
+            <text>Camp attack: destroy Mutny's squad</text>
+    </string>
+<string id="sad_kill_mutny_task_3_desc">
+            <text>It is necessary to destroy Mutny's squad at the novice base.</text>
+    </string>
+
+<string id="sad_b2_tech_gena_task_desc">
+            <text>Return the tools to the technician.</text>
+    </string>
+<string id="sad_b2_tech_gena_task_1">
+            <text>Tools: find Gena Nepomnyashchy</text>
+    </string>
+<string id="sad_b2_tech_gena_task_2">
+            <text>Tools: find a way to take the tools from Gena Nepomnyashchy</text>
+    </string>
+<string id="sad_b2_tech_gena_task_3">
+            <text>Tools: inform the technician that Gena Nepomnyashchy is dead</text>
+    </string>
+<string id="sad_b2_tech_gena_task_4">
+            <text>Tools: accompany Gena Nepomnyashchy to the burial place</text>
+    </string>
+<string id="sad_b2_tech_gena_task_5">
+            <text>Tools: bring the tools to the technician</text>
+    </string>
+<string id="sad_b2_tech_gena_task_6">
+            <text>Tools: take the tools</text>
+    </string>
+<string id="sad_b2_tech_gena_task_7">
+            <text>Tools: dig up the box</text>
+    </string>
+<string id="sad_b2_tech_gena_task_8">
+            <text>Tools: find a note from Gena Nepomnyashchy</text>
+    </string>
+<string id="sad_b2_tech_gena_task_9">
+            <text>Tools: inform the technician about what happened</text>
+    </string>
+<string id="sad_gena_zakop_tips">
+            <text>Set the charge</text>
+    </string>
+<string id="sad_gena_zapiska_tips">
+            <text>Search the bush</text>
+    </string>
+	<string id="sad_gena_zakop_info_message">
+                <text>Here you are, fool! You fell for such a trap. But thanks for the money, I can now leave the Zone peacefully. Goodbye. Always yours, Gena Nepomnyashchy.</text>
+        </string>
+	
+<string id="sad_b2_trader_nb_task_1">
+            <text>Trader's laptop: find Rockefeller's laptop</text>
+    </string>
+<string id="sad_b2_trader_nb_task_1_desc">
+            <text>Rockefeller asks to find his laptop, which he left in the military helicopter.</text>
+    </string>
+<string id="sad_b2_trader_nb_task_2">
+            <text>Trader's laptop: return Rockefeller's laptop</text>
+    </string>
+<string id="sad_b2_trader_nb_task_2_desc">
+            <text>You need to bring Rockefeller's laptop to him.</text>
+    </string>
+
+<string id="sad_sim_9_noy_task_1">
+            <text>Mysterious stranger: help destroy Snorks</text>
+    </string>
+<string id="sad_sim_9_noy_task_1_desc">
+            <text>Help destroy the Snorks that surround the unknown stalker.</text>
+    </string>
+<string id="sad_sim_9_noy_task_2_desc">
+            <text>Help destroy the mutants that surround the unknown stalker.</text>
+    </string>
+<string id="sad_sim_9_noy_task_2">
+            <text>Mysterious stranger: help destroy mutants</text>
+    </string>
+
+<string id="sad_dont_sleep">
+            <text>Don't you dare sleep - enemies are everywhere!</text>
+    </string>
+
+<string id="sad_artur_task_desc">
+            <text>Help Arthur retrieve his friends' flash drives from the anomaly.</text>
+    </string>
+<string id="sad_artur_task_1">
+            <text>Friendly debt: give the flash drives to Arthur</text>
+    </string>
+<string id="sad_artur_task_2">
+            <text>Friendly debt: find Vadik and Romka's flash drives</text>
+    </string>
+<string id="sad_artur_task_3">
+            <text>Friendly debt: find Vadik's flash drive</text>
+    </string>
+<string id="sad_artur_task_4">
+            <text>Friendly debt: find Romka's flash drive</text>
+    </string>
+
+	
+<string id="sad_b1_new_trader_arrived">
+                <text>Newbie base: We now have a new trader and technician.</text>
+</string>
+<string id="sad_b3_ucheny_message_1">
+                <text>Andrei Golova: Stalker, if you're interested in making good money, come to Ivan Kolbasa's basement - we'll talk.</text>
+</string>
+<string id="sad_b3_ucheny_task_desc">
+                <text>Help stalkers take measurements in anomalies for scientists.</text>
+</string>
+<string id="sad_b3_ucheny_task_1">
+                <text>Anomaly research: report readiness</text>
+</string>
+<string id="sad_b3_ucheny_task_2">
+                <text>Anomaly research: accompany stalkers to measurement site</text>
+</string>
+<string id="sad_b3_ucheny_task_3">
+                <text>Anomaly research: talk to Andrei</text>
+</string>
+<string id="sad_b3_ucheny_warn_1">
+                <text>Andrei Golova: Hey, where are you going? Come back to the group!</text>
+</string>
+<string id="sad_b3_ucheny_warn_2">
+                <text>Andrei Golova: Are you going for a walk? Get back to the group!</text>
+</string>
+<string id="sad_b3_ucheny_utufar">
+                <text>Andrei Golova: That's it, you've pushed it. You can go about your business now. You're no longer part of the team.</text>
+</string>
+<string id="sad_b3_ucheny_get_money">
+                <text>Andrei Golova: Well done! Come get your reward.</text>
+</string>
+<string id="sad_b3_ucheny_go_home">
+                <text>Andrei Golova: Stalker, you didn't collect your payment. But I don't have time to wait for you. I'll leave the money with Ivan Kolbasa.</text>
+</string>    
+<string id="sad_b3_mission_failed">
+                <text>Damn! Andrei died. Let's return to the base.</text>
+</string>
+<string id="sad_zombocave_tips">
+        <text>Pick up artifact ($$ACTION_USE$$)</text>
+</string>
+<string id="sad_b3_trader_task_0">
+        <text>Trader's merchandise: reach the cave</text>
+</string>
+<string id="sad_b3_trader_task_0_desc">
+        <text>You need to reach the cave where the trader's supplier disappeared.</text>
+</string>
+<string id="sad_b3_trader_task_1">
+        <text>Trader's merchandise: find the box with the goods</text>
+</string>
+<string id="sad_b3_trader_task_1_desc">
+        <text>You need to find the box with the trader's goods.</text>
+</string>
+<string id="sad_b3_trader_task_2">
+        <text>Trader's merchandise: return the box with the goods</text>
+</string>
+<string id="sad_b3_trader_task_2_desc">
+        <text>You need to return the trader's lost box with the goods.</text>
+</string>
+	
+	<string id="sad_radio_on">
+	<text>Turn on the radio ($$ACTION_USE$$)</text>
+</string>
+<string id="sad_radio_off">
+	<text>Turn off the radio ($$ACTION_USE$$)</text>
+</string>
+
+<string id="sad_zastavka_text_1">
+	<text>After wandering through the Zone for a long time, the stalker Max decided to leave its perimeter. But before returning to the Big Land, he wanted to make a big score.</text>
+</string>
+<string id="sad_zastavka_text_2">
+	<text>As luck would have it, Beard, a well-known artifact trader in Zaton, had a serious order for the extraction of a valuable anomalous formation that stalkers called the "Heart of Oasis."</text>
+</string>
+<string id="sad_zastavka_text_3">
+	<text>When Beard gathered information about the possible location of the artifact, he sent three of his friends, whom he trusted with the most lucrative orders, to search for it. After some time, it became clear that the guys had disappeared.</text>
+</string>
+<string id="sad_zastavka_text_4">
+	<text>Beard decided to organize a search and asked Max to find out about the fate of his comrades. Max set off with a guide to the Valley of Whispers...</text>
+</string>
+
+<string id="sad_outro_text_1">
+	<text>Stalker Max left the Zone. How his life turned out on the Big Land is unknown.</text>
+</string>
+<string id="sad_outro_text_21">
+	<text>Having learned about the fate of his comrades, Beard no longer made close friends among those who worked for him.</text>
+</string>
+<string id="sad_outro_text_22">
+	<text>Beard never found out what happened to his comrades. But he no longer made close friends among those who worked for him.</text>
+</string>
+<string id="sad_outro_text_31">
+	<text>Under the pressure of attacks by mercenaries, Maximilian retreated to his main base, blowing up the only bridge connecting the two parts of the valley. After that, the attacks by mercenaries stopped.</text>
+</string>
+<string id="sad_outro_text_41">
+	<text>Having settled in a new place, Radik conducted "excursions" for newly arrived stalkers to local attractions.</text>
+</string>
+<string id="sad_outro_text_51">
+	<text>Groups of scientists researching anomalous fields began to appear more and more frequently in the Valley of Whispers. They were particularly interested in local underground anomalies.</text>
+</string>
+<string id="sad_outro_text_91">
+	<text>At the newcomers' base, everything is still calm. Among the newly arrived stalkers, the story about Mutny is passed from mouth to mouth and is embellished with legends.</text>
+</string>
+
+<string id="sad_maximilian_far_warn">
+	<text>Maximilian: Hey! We agreed to go together. Where did you run off to?</text>
+</string>
+<string id="sad_maximilian_travel_snork">
+	<text>Maximilian: Where are you? Shit... Snorks!!! A-a-a-a!!!</text>
+</string>
+<string id="sad_maximilian_travel_snork_near">
+	<text>Maximilian...</text>
+</string>
+	
+	<string id="sad_rokfeler_about_ucheny">
+    <text>Rockefeller: Stalker, if you want to earn some money, come to me - I have a job for you.</text>
+</string>
+<string id="sad_ivan_we_attacked">
+    <text>Ivan Kolbasa: Help! We are under attack by mercenaries!</text>
+</string>
+<string id="sad_nauchny_task_1">
+    <text>The Mysteries of the Underground: Talk to Rockefeller.</text>
+</string>
+<string id="sad_nauchny_task_1_desc">
+    <text>Talk to Rockefeller about explosives.</text>
+</string>
+<string id="sad_nauchny_task_2">
+    <text>The Mysteries of the Underground: Retrieve explosives.</text>
+</string>
+<string id="sad_nauchny_task_2_desc">
+    <text>Retrieve explosives from Ivan Kolbasa.</text>
+</string>
+<string id="sad_nauchny_task_3">
+    <text>The Mysteries of the Underground: Talk to Yasha.</text>
+</string>
+<string id="sad_nauchny_task_3_desc">
+    <text>Talk to Yasha.</text>
+</string>
+<string id="sad_nauchny_task_4">
+    <text>The Mysteries of the Underground: Follow Yasha.</text>
+</string>
+<string id="sad_nauchny_task_4_desc">
+    <text>Follow Yasha to the cave.</text>
+</string>
+<string id="sad_nauchny_task_5">
+    <text>The Mysteries of the Underground: Set the charge.</text>
+</string>
+<string id="sad_nauchny_task_5_desc">
+    <text>Set the charge to clear the passage in the underground.</text>
+</string>
+<string id="sad_nauchny_task_6">
+    <text>The Mysteries of the Underground: Follow Yasha.</text>
+</string>
+<string id="sad_nauchny_task_6_desc">
+    <text>Follow Yasha in the underground.</text>
+</string>
+<string id="sad_nauchny_task_7">
+    <text>The Mysteries of the Underground: Retrieve the reward from Rockefeller.</text>
+</string>
+<string id="sad_nauchny_task_7_desc">
+    <text>Retrieve the reward from Rockefeller for escorting the scientists.</text>
+</string>
+<string id="sad_nauchny_faraway_1">
+    <text>Yasha: Hey, where are you running off to? Come back!</text>
+</string>
+<string id="sad_nauchny_faraway_1b">
+    <text>Yasha: Alright, we are heading to the base.</text>
+</string>	
+<string id="sad_nauchny_faraway_2">
+    <text>Yasha: Hey, going for a walk? Come back to the squad!</text>
+</string>
+<string id="sad_nauchny_faraway_3">
+    <text>Yasha: That's it, you're out of the squad. We'll find someone else.</text>
+</string>
+<string id="sad_b2_tech_wpn_task_1">
+    <text>Valuable Weapon: Find Valery Palych's shotgun.</text>
+</string>
+<string id="sad_b2_tech_wpn_task_1_desc">
+    <text>Valery Palych is asking to find his modified shotgun.</text>
+</string>
+<string id="sad_b2_tech_wpn_task_2">
+    <text>Valuable Weapon: Return the shotgun to Valery Palych.</text>
+</string>
+	<string id="sad_b2_tech_wpn_task_2_desc">
+                <text>Bring a shotgun to Valeri Palyich from the stalker base.</text>
+        </string>
+
+	<string id="sad_teleport_scan_ready">
+            <text>Valeri Palyich: The detector is ready, you can pick it up.</text>
+    </string>
+
+<string id="sad_artefact_upgr_ready">
+            <text>Professor Stakhovsky: The artifact is ready, you can pick it up.</text>
+    </string>
+
+<!-- Tourists -->
+<string id="sad_turist_turist">
+            <text>Tourist</text>
+    </string>
+<string id="sad_turist_task_text">
+            <text>Give tourists a tour of the valley.</text>
+    </string>
+<string id="sad_turist_task_desc">
+            <text>Your earnings depend on the number of mutants and enemies killed by the tourists.</text>
+    </string>
+
+<string id="sad_turist_kill_mob_1">
+            <text>Killed a mutant.</text>
+    </string>
+<string id="sad_turist_kill_mob_2">
+            <text>The creature hopped away.</text>
+    </string>
+<string id="sad_turist_kill_mob_3">
+            <text>Shot a mutant.</text>
+    </string>
+<string id="sad_turist_kill_mob_4">
+            <text>One less creature.</text>
+    </string>
+<string id="sad_turist_kill_mob_5">
+            <text>I killed that creature.</text>
+    </string>
+
+<string id="sad_turist_kill_human_1">
+            <text>Killed the bastard.</text>
+    </string>
+<string id="sad_turist_kill_human_2">
+            <text>The bastard hopped away.</text>
+    </string>
+<string id="sad_turist_kill_human_3">
+            <text>Shot him, shot him dead.</text>
+    </string>
+<string id="sad_turist_kill_human_4">
+            <text>Got a bullet.</text>
+    </string>
+<string id="sad_turist_kill_human_5">
+            <text>I killed the scum.</text>
+    </string>
+
+<string id="sad_turist_kill_mob_reward_0">
+            <text>From me</text>
+    </string>
+<string id="sad_turist_kill_mob_reward_1">
+            <text>into the piggy bank</text>
+    </string>
+
+<string id="sad_turist_far">
+            <text>Tourists: Hey, where are you? Don't go too far!</text>
+    </string>
+
+<string id="sad_turist_exit_start">
+            <text>Alright, let's see.</text>
+    </string>
+<string id="sad_turist_dead">
+            <text>dead.</text>
+    </string>
+<string id="sad_turist_zarabotok">
+            <text>earnings</text>
+    </string>
+<string id="sad_turist_kill_0">
+            <text>said he won't go on a trip with you again.</text>
+    </string>
+<string id="sad_turist_kill_1">
+            <text>mutants killed:</text>
+    </string>
+<string id="sad_turist_kill_2">
+            <text>enemies killed:</text>
+    </string>
+	<string id="sad_tourist_visits">
+    <text>Number of anomalies visited:</text>
+</string>
+<string id="sad_tourist_reaction_good">
+    <text>Satisfied.</text>
+</string>
+<string id="sad_tourist_reaction_normal">
+    <text>Content.</text>
+</string>
+<string id="sad_tourist_reaction_bad">
+    <text>Had a crappy time.</text>
+</string>
+<string id="sad_tourist_reaction_huynya">
+    <text>Disappointed.</text>
+</string>
+<string id="sad_tourist_total_earnings">
+    <text>Total:</text>
+</string>
+<string id="sad_tourist_visit_0">
+    <text>Tourists: Wait a minute, let's take a look at the anomaly.</text>
+</string>
+<string id="sad_tourist_visit_1">
+    <text>Wow, what a place!</text>
+</string>
+<string id="sad_tourist_visit_2">
+    <text>What a location!</text>
+</string>
+<string id="sad_tourist_visit_3">
+    <text>Amazing! I've never seen anything like it.</text>
+</string>
+<string id="sad_tourist_visit_4">
+    <text>It's beautiful.</text>
+</string>
+<string id="sad_tourist_visit_end">
+    <text>Tourists: Let's move on.</text>
+</string>
+<string id="sad_tourist_never_again">
+    <text>You can write off my career as a guide.</text>
+</string>
+<string id="maxim_after_rob_msg">
+    <text>Maximilian: Stalker, I see you're nearby - come over and let's chat.</text>
+</string>
+
+
+	<string id="sad_b2_stalker_tech_1_name">
+	<text>Find Palyich %s</text>
+</string>
+<string id="sad_b2_stalker_tech_1_text">
+	<text>You need to bring Palyich %s so that he can provide more serious upgrades to your weapons or armor.</text>
+</string>
+<string id="sad_b2_stalker_tech_1_about">
+	<text>I need your help, stalker. Many stalkers come to me asking me to fix their weapons, but I can't. I don't have the right tools for it. I would gladly upgrade practically any gear if I had the necessary set. Can you help me with this?</text>
+</string>
+<string id="sad_b2_stalker_tech_1_fetch_about">
+	<text>Great, bro! I need a set of tools for rough work. It should have everything I need. If you can bring it, I won't forget your reward.</text>
+</string>
+<string id="sad_b2_stalker_tech_1_fetch_finish">
+	<text>Thank you, this is exactly what I needed. Here, I promised you a reward, take it:</text>
+</string>
+<string id="sad_b2_stalker_tech_2_name">
+	<text>Find Palyich %s</text>
+</string>
+<string id="sad_b2_stalker_tech_2_text">
+	<text>You need to bring Palyich %s so that he can provide more serious upgrades to your weapons or armor.</text>
+</string>
+<string id="sad_b2_stalker_tech_2_about">
+	<text>Things have noticeably improved, more and more stalkers come to me for upgrades, but I could do more if I had more tools. The set you brought is great, but it doesn't have everything I need. If you brought a more complete set, I would be grateful to you.</text>
+</string>
+<string id="sad_b2_stalker_tech_2_fetch_about">
+	<text>I need %s. If you bring it, you'll get a reward.</text>
+</string>
+<string id="sad_b2_stalker_tech_2_fetch_finish">
+	<text>Great! Here's your reward, you earned it!</text>
+</string>
+<string id="sad_b2_stalker_tech_3_name">
+	<text>Find Palyich %s</text>
+</string>
+<string id="sad_b2_stalker_tech_3_text">
+	<text>You need to bring Palyich %s so that he can provide more serious upgrades to your weapons or armor.</text>
+</string>
+<string id="sad_b2_stalker_tech_3_about">
+	<text>The set you brought is great, but it doesn't have everything I need. If you brought calibration tools, I would be grateful to you.</text>
+</string>
+<string id="sad_b2_stalker_tech_3_fetch_about">
+	<text>I need %s. If you bring it, you'll get a reward.</text>
+</string>
+<string id="sad_b2_stalker_tech_3_fetch_finish">
+	<text>Yes! Yes! Here's your reward, you earned it!</text>
+</string>
+
+</string_table>

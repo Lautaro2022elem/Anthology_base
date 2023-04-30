@@ -1,0 +1,9 @@
+[logic]
+active = nil ; ph_idle@init
+
+[ph_idle@init]
+on_info = {=actor_has_item(x27_docs5)} nil, ph_idle@wait
+
+[ph_idle@wait]
+on_use = %=give_actor(x27_docs5)% nil
+tips = st_use_pickup

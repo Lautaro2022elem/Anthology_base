@@ -1,0 +1,7 @@
+[logic]
+active = sr_idle@start_bad_end_game
+
+[sr_idle@start_bad_end_game]
+on_actor_inside = {+blck_val_actor_givekey_to_prison -blck_val_bandit_escape_spawn} sr_idle@nil %=spawn_object(blck_val_bandit_shmiga_scene:blck_val_bandit_shmiga_scene_spawn) =spawn_object(blck_val_bandit_prison_scene:blck_val_bandit_prison_scene_spawn) +blck_val_bandit_escape_spawn%
+
+[sr_idle@nil]

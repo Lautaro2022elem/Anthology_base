@@ -1,0 +1,78 @@
+[logic@zombi_1]
+suitable = {=target_squad_name(sad_oasis_zombo_squad)} true
+active = walker@1
+prior = 200
+on_hit = hit
+on_death = death
+
+[logic@zombi_2]
+suitable = {=target_squad_name(sad_oasis_zombo_squad)} true
+active = walker@2
+prior = 200
+on_hit = hit
+on_death = death
+
+[logic@zombi_3]
+suitable = {=target_squad_name(sad_oasis_zombo_squad)} true
+active = walker@3
+prior = 200
+on_hit = hit
+on_death = death
+
+[hit]
+on_info = %+sad_oasis_activate_zombi%
+
+[death]
+on_info = %+sad_oasis_activate_zombi%
+
+
+; -----------------------------------------------------------------
+
+[walker@1]
+path_walk = zombi_1_place
+combat_ignore_cond = true
+on_info = {+sad_oasis_activate_zombi} walker@zombi
+out_restr = sad_oasis_cave_in_restrictor
+show_spot = false
+
+[walker@2]
+path_walk = zombi_2_place
+combat_ignore_cond = true
+on_info = {+sad_oasis_activate_zombi} walker@zombi
+out_restr = sad_oasis_cave_in_restrictor
+show_spot = false
+
+[walker@3]
+path_walk = zombi_3_place
+combat_ignore_cond = true
+on_info = {+sad_oasis_activate_zombi} walker@zombi
+out_restr = sad_oasis_cave_in_restrictor
+show_spot = false
+
+[walker@zombi]
+path_walk = zombi_path
+out_restr = sad_oasis_cave_in_restrictor
+show_spot = false
+
+; --------------------------------------------------------------- Controller
+[logic@controller]
+active = mob_walker@controller
+suitable = {=check_npc_name(sad_oasis_controller)} true
+prior = 200
+on_hit = hit@controller
+monster_job = true
+
+[mob_walker@controller]
+path_walk = controller_point_1
+combat_ignore_cond = true
+on_info = {+sad_oasis_activate_controller} mob_home@controller
+out_restr = sad_oasis_cave_in_restrictor
+
+[mob_home@controller]
+path_home = controller_point_2
+home_min_radius = 10
+home_max_radius = 30
+out_restr = sad_oasis_cave_in_restrictor
+
+[hit@controller]
+on_info = %+sad_oasis_activate_controller%

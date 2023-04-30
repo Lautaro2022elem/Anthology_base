@@ -1,0 +1,77 @@
+;bar_zmeelov_digger_scene (дополнительная логика)
+
+;=========meet_stalker_korpys========
+[meet@korpys_stalker]
+close_anim 		= nil
+close_victim 	= nil
+far_anim 		= nil
+far_victim 		= nil
+close_distance 	= 0
+far_distance 	= 0
+use = {=actor_enemy} false, {=dist_to_actor_le(3)} true, false
+snd_on_use = {!dist_to_actor_le(3)} nil
+meet_on_talking = false
+;==================================
+
+[remark@talk_from_security]
+anim = wait_na
+target = path | bar_digger_semen_walk, 0
+on_info = {+bar_zmeelov_come_to_lab_done -bar_zmeelov_talk_semen_sound_stop} %=play_sound(bar_zmeelov_talk_semen) +bar_zmeelov_talk_semen_sound_stop%
+on_info2 = {+bar_semen_meet_over} remark@talk_from_actor
+on_timer = 10000 | %+bar_semen_meet_over%
+use_camp = false
+combat_ignore_cond = true
+combat_ignore_keep_when_attacked = true
+invulnerable = true
+gather_items_enabled = false
+help_wounded_enabled = false
+corpse_detection_enabled = false
+meet = no_meet
+
+[remark@talk_from_actor]
+anim = wait_na
+target = story | actor
+on_info = {+bar_semen_meet_over -bar_zmeelov_talk_actor_sound_stop} %=play_sound(bar_zmeelov_talk_actor) +bar_zmeelov_talk_actor_sound_stop%
+on_info2 = {+bar_zmeelov_meet_from_semen} remark@talk_from_security_1
+on_timer = 8500 | %+bar_zmeelov_meet_from_semen%
+use_camp = false
+combat_ignore_cond = true
+combat_ignore_keep_when_attacked = true
+invulnerable = true
+gather_items_enabled = false
+help_wounded_enabled = false
+corpse_detection_enabled = false
+meet = no_meet
+
+[remark@talk_from_security_1]
+anim = wait_na
+target = path | bar_digger_semen_walk, 0
+on_info = {+bar_zmeelov_meet_from_semen -bar_zmeelov_talk_semen_after_stop} %=play_sound(bar_zmeelov_talk_semen_after) +bar_zmeelov_talk_semen_after_stop%
+on_timer = 4000 | walker@zmeelov_safe_walk
+use_camp = false
+combat_ignore_cond = true
+combat_ignore_keep_when_attacked = true
+invulnerable = true
+gather_items_enabled = false
+help_wounded_enabled = false
+corpse_detection_enabled = false
+meet = no_meet
+
+[walker@zmeelov_safe_walk]
+path_look = bar_zmeelov_safe_look
+path_walk = bar_zmeelov_safe_walk
+use_camp = false
+combat_ignore_cond = true
+combat_ignore_keep_when_attacked = true
+invulnerable = true
+gather_items_enabled = false
+help_wounded_enabled = false
+corpse_detection_enabled = false
+meet = no_meet
+
+[meet@end_game]:meet@korpys_stalker
+close_victim = actor
+use = {!actor_enemy =dist_to_actor_le(7) -perevalochnaya_lutiy_meet_to_zombied_done} self, true
+allow_break = false
+meet_dialog = bar_zmeelov_digger_meet_start
+trade_enable = false

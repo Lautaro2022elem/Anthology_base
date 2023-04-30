@@ -1,0 +1,15 @@
+[logic]
+active = walker
+suitable = {=check_npc_name(wiz_poslannik_krivogo)} true
+prior = 200
+on_death = death
+
+[walker]
+path_walk = wiz_uninvited_guests_merc_walk
+def_state_standing = hide
+def_state_moving = assault
+meet = no_meet
+use_camp = false
+
+[death]
+on_info = %+wiz_poslannik_krivogo_die =hero_thoughts_05%

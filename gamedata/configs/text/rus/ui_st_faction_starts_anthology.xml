@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="windows-1251"?>
+<string_table>
+
+	<string id="ui_st_predbanik">
+		<text>Предбанник</text>
+	</string>
+
+	<string id="ui_st_predbanik_army">
+		<text>Предбанник</text>
+	</string>
+
+	<string id="ui_st_east_cordon_savan">
+		<text>Путь во Мгле - Саван</text>
+	</string>
+
+	<string id="ui_st_topi_varg">
+		<text>С.В. В Паутине лжи - Варг</text>
+	</string>
+
+	<string id="ui_st_zaton_degtyrev">
+		<text>Зов Припяти - Дегтярёв</text>
+	</string>
+
+	<string id="ui_st_zaton_sad_maks">
+		<text>Долина Шорохов - Макс</text>
+	</string>
+
+	<string id="ui_st_wiz_zmey">
+		<text>Забытый Отряд - Змей</text>
+	</string>
+
+	<string id="ui_st_spatial_anomaly_zver">
+		<text>Пространственная Аномалия - Зверь</text>
+	</string>
+
+</string_table>

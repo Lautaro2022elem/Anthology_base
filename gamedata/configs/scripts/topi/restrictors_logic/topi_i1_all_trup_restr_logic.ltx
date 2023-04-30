@@ -1,0 +1,22 @@
+[logic] 
+active = sr_idle@spawn
+
+[sr_idle@spawn]
+on_info = {+topi_start -topi_i1_pashalka_1_trup_spawn} sr_idle@spawn_1 %=spawn_corpse(topi_stalker_trup_pashalka_1 : topi_stalker_trup_pashalka_1_walk) +topi_i1_pashalka_1_trup_spawn%
+
+[sr_idle@spawn_1]
+on_info = {+topi_i1_pashalka_1_trup_spawn -topi_i1_pashalka_2_trup_spawn} sr_idle@spawn_2 %=spawn_corpse(topi_stalker_trup_pashalka_2 : topi_stalker_trup_pashalka_2_walk) +topi_i1_pashalka_2_trup_spawn%
+
+[sr_idle@spawn_2]
+on_info = {+topi_i1_pashalka_2_trup_spawn -topi_i1_pashalka_3_trup_spawn} sr_idle@spawn_3 %=spawn_corpse(topi_stalker_trup_pashalka_3 : topi_stalker_trup_pashalka_3_walk) +topi_i1_pashalka_3_trup_spawn%
+
+[sr_idle@spawn_3]
+on_info = {+topi_i1_pashalka_3_trup_spawn -topi_i1_pashalka_4_trup_spawn} sr_idle@spawn_4 %=spawn_corpse(topi_stalker_trup_pashalka_4 : topi_stalker_trup_pashalka_4_walk) +topi_i1_pashalka_4_trup_spawn%
+
+[sr_idle@spawn_4]
+on_info = {+topi_i1_pashalka_4_trup_spawn -topi_i1_pashalka_5_trup_spawn} sr_idle@spawn_5 %=spawn_corpse(topi_stalker_trup_pashalka_5 : topi_stalker_trup_pashalka_5_walk) +topi_i1_pashalka_5_trup_spawn%
+
+[sr_idle@spawn_5]
+on_info = {+topi_i1_pashalka_5_trup_spawn +topi_novikov_quest_zaton_scanner_start -topi_i1_pashalka_6_trup_spawn} sr_idle@nil %=spawn_corpse(topi_b306_ecolog_death_body : topi_stalker_trup_pashalka_6_walk) +topi_i1_pashalka_6_trup_spawn%
+
+[sr_idle@nil]

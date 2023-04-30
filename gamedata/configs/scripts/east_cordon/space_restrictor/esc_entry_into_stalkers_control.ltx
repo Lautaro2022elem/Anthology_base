@@ -1,0 +1,17 @@
+[logic]
+active = sr_idle
+
+[sr_idle]
+on_info = {+spectrum_project_start +esc_quest_line_away_from_the_bandits_complete +esc_quest_fighting_for_territory_complite} sr_idle@timer
+
+[sr_idle@timer]
+on_game_timer = 360 | sr_idle@1
+
+[sr_idle@1]
+on_info = sr_idle@scenario_autosave %+esc_change_actor_community_stalker_info_dostup =give_task(esc_entry_into_stalkers) =esc_shaman_group_sms%
+
+[sr_idle@scenario_autosave]
+on_timer = 100 | {-save_esc_entry_into_stalkers} %+save_esc_entry_into_stalkers =scenario_autosave(st_esc_entry_into_stalkers)%
+on_info = {+save_esc_entry_into_stalkers} sr_idle@nil
+
+[sr_idle@nil]

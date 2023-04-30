@@ -1,0 +1,10 @@
+[logic]
+active = sr_idle
+
+[sr_idle]
+on_actor_inside = {+spectrum_project_start +labx14_search_exit_complete +city_sabotage_c4_start} sr_idle@1 %=spawn_object(city_main_quest_him_bomba_item:city_main_quest_him_bomba_item_spawn)%
+
+[sr_idle@1]
+on_game_timer = 50| sr_idle@nil %+city_sabotage_c4 =spawn_object(city_quest_mutant_2:city_quest_mutant_2_spawn) =spawn_object(city_quest_mutant_3:city_quest_mutant_3_spawn) =spawn_object(city_quest_mutant_4:city_quest_mutant_4_spawn) =spawn_object(city_quest_mutant_5:city_quest_mutant_5_spawn)%
+
+[sr_idle@nil] 

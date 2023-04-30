@@ -1,0 +1,54 @@
+; -------------------------------------------------------------------------------------------------------- 1
+[logic@snork_max_1]
+active = mob_walker@1_start
+suitable = {=target_squad_name(maxim_snorki)} true
+monster_job = true
+prior = 200
+
+[mob_walker@1_start]
+path_walk = max_snork_1_hide 
+path_look = max_snork_1_jump
+combat_ignore_cond = true
+friendly = true
+on_info = {-sad_sim_23_max_snork_1_vis} %+sad_sim_23_max_snork_1_vis =set_visual_memory_enabled(0)%
+on_info2 = {=dist_to_actor_le(10)} mob_jump@1 %=set_visual_memory_enabled(1) +sad_sim_23_max_snorki_awake%
+on_info3 = {=distance_from_npc_to_obj_le(sad_b2_stalker_maxim:400)} mob_jump@1 %=set_visual_memory_enabled(1) +sad_sim_23_max_snorki_awake%
+on_info4 = {+sad_sim_23_max_snorki_awake} mob_jump@1 %=set_visual_memory_enabled(1)%
+on_info5 = {=mob_was_hit} mob_jump@1 %=set_visual_memory_enabled(1) +sad_sim_23_max_snorki_awake%
+on_info6 = {+sad_maxim_actor_enemy} mob_jump@1 %=set_visual_memory_enabled(1) +sad_sim_23_max_snorki_awake%
+
+[mob_jump@1]
+path_jump = max_snork_1_jump
+ph_jump_factor = 0.9
+offset = 0,0,0
+on_signal = jumped | mob_home@1
+
+[mob_home@1]
+path_home = max_snork_1_jump
+home_min_radius = 20
+home_max_radius = 50
+aggressive = true
+
+; -------------------------------------------------------------------------------------------------------- 1
+[logic@snork_max_2]
+active = mob_walker@2_start
+suitable = {=target_squad_name(maxim_snorki)} true
+monster_job = true
+prior = 200
+
+[mob_walker@2_start]
+path_walk = max_snork_2_hide 
+path_look = max_snork_2_jump
+combat_ignore_cond = true
+friendly = true
+on_info = {-sad_sim_23_max_snork_2_vis} %+sad_sim_23_max_snork_2_vis =set_visual_memory_enabled(0)%
+on_info2 = {=dist_to_actor_le(20)} mob_jump@2 %=set_visual_memory_enabled(1) +sad_sim_23_max_snorki_awake%
+on_info4 = {+sad_sim_23_max_snorki_awake} mob_jump@2 %=set_visual_memory_enabled(1)%
+on_info5 = {=mob_was_hit} mob_jump@2 %=set_visual_memory_enabled(1) +sad_sim_23_max_snorki_awake%
+on_info6 = {+sad_maxim_actor_enemy} mob_jump@2 %=set_visual_memory_enabled(1) +sad_sim_23_max_snorki_awake%
+
+[mob_jump@2]
+path_jump = max_snork_2_jump
+ph_jump_factor = 0.8
+offset = 0,0,0
+on_signal = jumped | mob_home@1

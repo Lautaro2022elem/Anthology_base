@@ -1,0 +1,256 @@
+---=============================================================================================---
+---------------------------------------------------------------------------------------------------
+-----------------------------------(Схема движения монстра)----------------------------------------
+---------------------------------------------------------------------------------------------------
+---=============================================================================================---
+table_move_data={}
+class "mob_move"
+function mob_move:__init(obj, storage)
+   self.object = obj
+   self.st = storage
+   self:activate_scheme()
+end
+function mob_move:activate_scheme()
+   self.st.signals = {}
+   table_move_data[self.object:id()]={}
+   table_move_data[self.object:id()].in_center_signalled=false
+   table_move_data[self.object:id().."precond_start"]=0
+   table_move_data[self.object:id().."precond_end"]=0
+   xr_logic.mob_capture(self.object,true)
+end
+function mob_move:update(delta)
+   if not self.object:alive() then
+      xr_logic.mob_release(self.object)
+      return
+   end
+   if table_move_data[self.object:id()].update==nil then
+      self:check_logic_condlists(self.object,self.st.saved_ini,self.st.saved_section)
+      table_move_data[self.object:id()].update=time_global()+2000
+   end
+   if table_move_data[self.object:id()].update~=nil then
+      if time_global()>=table_move_data[self.object:id()].update then
+         table_move_data[self.object:id()].update=nil
+      end
+   end
+   local monster=self.object
+   local monster_id=monster:id()
+   local monster_lv=monster:level_vertex_id()
+   local actor_lv=db.actor:level_vertex_id()
+   local scheme_param=table_move_data[monster_id]
+   if scheme_param.approach_info~=nil and scheme_param.approach_info[1]~=nil and scheme_param.approach_info[2]~=nil and dont_has_alife_info(scheme_param.approach_info[1]) then
+      local dist_type="<="
+      if scheme_param.approach_info[3]~=nil then dist_type=scheme_param.approach_info[3] end
+      if dist_type=="<=" and distance_between(db.actor,monster)<=tonumber(scheme_param.approach_info[2]) then give_info(scheme_param.approach_info[1])
+      elseif dist_type==">=" and distance_between(db.actor,monster)>=tonumber(scheme_param.approach_info[2]) then give_info(scheme_param.approach_info[1])
+      elseif dist_type=="<" and distance_between(db.actor,monster)<tonumber(scheme_param.approach_info[2]) then give_info(scheme_param.approach_info[1])
+      elseif dist_type==">" and distance_between(db.actor,monster)>tonumber(scheme_param.approach_info[2]) then give_info(scheme_param.approach_info[1])
+      elseif dist_type=="=" and distance_between(db.actor,monster)==tonumber(scheme_param.approach_info[2]) then give_info(scheme_param.approach_info[1])
+      end
+   end
+   if scheme_param.monster_dead=="true" then
+      set_hit_damage_to(monster,hit.wound,1000,1)
+   end
+   if scheme_param.target_point~=nil and scheme_param.target_point=="actor" then
+      mob_send_to(monster,actor_lv)
+      mob_recapture(self.object)
+   elseif scheme_param.target_point~=nil and scheme_param.target_point~="actor" then
+      mob_send_to(monster,scheme_param.target_point)
+      mob_recapture(self.object)
+      if monster_lv==scheme_param.target_point then
+         if scheme_param.in_center_signalled==false then
+            scheme_param.in_center_signalled=true
+            self.st.signals["in_center"]=true
+         end
+      else
+         mob_teleport_to_home_position(monster,scheme_param.target_point,scheme_param.home_teleport)
+      end
+   end
+   if scheme_param.captured_actor=="true" then
+      if sgm_flags.table_m_capture_hits[monster_id]==nil or sgm_flags.table_m_capture_hits[monster_id]==false then
+         add_spot_on_map(monster_id,sgm_flags.spot_captured_monster,"st_captured_monster_name")
+         mob_recapture(monster)
+         mob_teleport_to_actor(monster)
+         if distance_to_object(monster,">",6) then
+	    mob_send_to(monster,actor_lv)
+         elseif distance_to_object(monster,"<=",6) then
+	    mob_look_to(monster,actor_lv)
+         end
+      else
+         remove_spot_on_map(monster_id,sgm_flags.spot_captured_monster)
+         xr_logic.mob_release(monster)
+      end
+   end
+end
+function mob_move:check_logic_condlists(monster,ini,section)
+   local scheme_param=table_move_data[monster:id()]
+   scheme_param.approach_info  = check_section_stick(ini,section,"approach_info",nil)                                                   --'Выдача инфопортации на определённой дистанции (инфа|дистанция|знак).
+   scheme_param.target_point   = to_string(check_section_condlist(ini,section,"target_point",nil))                                      --'Назначенный вертекс движения.
+   scheme_param.monster_dead   = to_string(check_section_condlist(ini,section,"monster_dead","false"))                                  --'Будет ли монстр изначально мёртвым.
+   scheme_param.captured_actor = to_string(check_section_condlist(ini,section,"captured_actor","false"))                                --'Находится ли монстр под контролем ГГ.
+   scheme_param.home_teleport  = to_string(check_section_condlist(ini,section,"home_teleport","false"))                                 --'Телепортация в пункт назначения, при отходе от него.
+end
+function mob_move:hit_callback(victim,amount,local_direction,killer,bone_index)
+   local is_scheme_victim,is_scheme_killer=self.object:id()==victim:id(),self.object:id()==killer:id()
+end
+function mob_move:death_callback(victim,killer)
+   local is_scheme_victim,is_scheme_killer=self.object:id()==victim:id(),self.object:id()==killer:id()
+end
+function mob_move:deactivate()
+   xr_logic.mob_capture(self.object,true)
+end
+------------------------------------
+--           Планировка           --
+------------------------------------
+function add_to_binder(npc, ini, scheme, section, storage)
+   printf("DEBUG: add_to_binder: npc:name()='%s', scheme='%s', section='%s'", npc:name(), scheme, section)
+   local new_action = mob_move(npc, storage)
+   xr_logic.subscribe_action_for_events(npc, storage, new_action)
+end
+function set_scheme(npc, ini, scheme, section, gulag_name)
+   local st = xr_logic.assign_storage_and_bind(npc, ini, scheme, section)
+   st.logic   = xr_logic.cfg_get_switch_conditions(ini, section, npc)
+   st.state     = mob_state_mgr.get_state(ini, section, npc)
+   st.no_reset     = utils_data.cfg_get_bool(ini,section,"no_reset",npc,false)
+   st.saved_ini   = ini
+   st.saved_section = section
+end
+------------------------------------
+--          Вспоможение           --
+------------------------------------
+-- 'Произвольная гибель мутанта.
+function set_hit_damage_to(victim,h_type,h_power,h_impulse,is_actor_hit)
+   if victim then
+      local damage_hit = hit()
+      if is_actor_hit==true or is_actor_hit=="true" then
+         damage_hit.draftsman = db.actor
+      else
+         damage_hit.draftsman = victim
+      end
+      if exists(h_type) then
+         damage_hit.type = h_type
+      else
+         damage_hit.type = hit.wound
+      end
+      if is_actor_hit then
+         if is_actor_hit==true or is_actor_hit=="true" then
+            damage_hit.direction = db.actor:position():sub(victim:position())
+         else
+            damage_hit.direction = level.vertex_position(is_actor_hit):sub(victim:position())
+         end
+         if IsStalker(victim) then
+            damage_hit:bone("bip01_spine")
+         end
+      end
+      if exists(h_power) then
+         damage_hit.power = h_power
+      else
+         damage_hit.power = 10
+      end
+      if exists(h_impulse) then
+         damage_hit.impulse = h_impulse
+      else
+         damage_hit.impulse = 15
+      end
+      victim:hit(damage_hit)
+   end
+end
+-- 'Перевод мутанта под схему поведения.
+function mob_recapture(mob_obj)
+   if not xr_logic.mob_captured(mob_obj) then
+      xr_logic.mob_capture(mob_obj,true)
+   end
+end
+-- 'Отправить мутанта на левел вертекс.
+function mob_send_to(mob_obj,target)
+   action(mob_obj,move(move.run_fwd,level.vertex_position(target)))
+end
+-- 'Заставить мутанта, смотреть на левел вертекс.
+function mob_look_to(mob_obj,target)
+   action(mob_obj,anim(anim.look_around),look(look.point,level.vertex_position(target)))
+end
+-- 'Телепортация мутанта к ГГ, если мутант слишком отдалился.
+function mob_teleport_to_actor(mob_obj)
+  if db.actor~=nil then
+     if distance_between_safe(db.actor,mob_obj)>60 then
+        mob_obj:set_npc_position(vector():set(db.actor:position().x,db.actor:position().y,db.actor:position().z))
+     end
+  end
+end
+-- 'Телепортация мутанта на левел вертекс.
+function mob_teleport_to_home_position(mob_obj,home_pos,bool)
+  if home_pos~=0 and (bool==nil or bool=="true") then
+     local param1=level.vertex_position(home_pos).x
+     local param2=level.vertex_position(home_pos).y
+     local param3=level.vertex_position(home_pos).z
+     mob_obj:set_npc_position(vector():set(param1,param2,param3))
+  end
+end
+-- 'Установка метки на обьект.
+function add_spot_on_map(obj_id,location_name,descr)
+   if obj_id and level.map_has_object_spot(obj_id,location_name)==0 then
+      if descr==nil then descr="" end
+      level.map_add_object_spot_ser(obj_id,location_name,descr)
+   end
+end
+-- 'Удаление метки с обьекта.
+function remove_spot_on_map(obj_id,location_name)
+   if obj_id and level.map_has_object_spot(obj_id,location_name)~=0 then
+      level.map_remove_object_spot(obj_id,location_name)
+   end
+end
+-- 'Возвращение строки
+function to_string(val)
+   if val==nil then
+      return val
+   end
+   return tostring(val)
+end
+-- 'Возвращение цифры
+function to_number(val)
+   if val==nil then
+      return val
+   end
+   return tonumber(val)
+end
+-- 'Проверка и выполнение действий {=-!}%+-=%
+function check_section_condlist(ini,section,line,def_val,value_type,npc)
+   local d_value=""
+   if npc==nil then npc=db.actor end
+   if def_val==nil then d_value="" else d_value=def_val end
+   if value_type==nil or value_type=="string" then
+      return xr_logic.pick_section_from_condlist(db.actor,npc,xr_logic.parse_condlist(nil,section,"condlist",cfg_get_string(ini,section,line,d_value)))
+   elseif value_type=="number" then
+      return xr_logic.pick_section_from_condlist(db.actor,npc,xr_logic.parse_condlist(nil,section,"condlist",cfg_get_number(ini,section,line,d_value)))
+   end
+end
+function cfg_get_string(ini,section,line,def_val)
+   return utils_data.cfg_get_string(ini,section,line,nil,false,"",def_val)
+end
+function cfg_get_number(ini,section,line,def_val)
+   return utils_data.cfg_get_number(ini,section,line,nil,false,def_val)
+end
+-- 'Возвращение значений выставленных справа и слева от чёрточки. Cлужебная функция.
+function get_side_stick_value(string,value_num)
+   local s_string
+   if string~=nil then
+      s_string=utils_data.parse_params(string)
+   else
+      s_string=nil
+   end
+   if value_num==nil or s_string==nil then
+      return s_string
+   else
+      return s_string[to_number(value_num)]
+   end
+end
+-- 'Возвращение значений разделённых между собой чёрточкой. Например "значение 1|значение 2".
+function check_section_stick(ini,section,line,def_val)
+   local d_value=""
+   if def_val==nil then d_value=nil else d_value=def_val end
+   if ini==nil then
+      return get_side_stick_value(section)
+   end
+   return get_side_stick_value(cfg_get_string(ini,section,line,d_value))
+end
+
+-------------------------------------//Copyright GeJorge//-------------------------------------------------

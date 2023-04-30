@@ -1,0 +1,34 @@
+;esc_npc_wood_goblin (дополнительная логика)
+
+[death]
+on_info = {-esc_quest_hunting_shaman} %+esc_npc_wood_goblin_dead%
+
+[hit]
+on_info = {-esc_quest_hunting_shaman +esc_quest_hunting_npc_wood_goblin_hanter_dialog_and} %+esc_npc_wood_goblin_hit%
+
+[meet];def
+abuse           = false
+close_anim 		= nil
+far_anim 		= nil
+far_victim 		= nil
+close_distance  = 0
+far_distance 	= 0
+close_victim = actor
+trade_enable = false
+allow_break = false
+
+[meet@dialog]:meet
+use = {!actor_enemy =dist_to_actor_le(2)} self, true
+meet_dialog = esc_quest_hunting_npc_wood_goblin_dialog
+
+[meet@dialog_2]:meet
+use = {!actor_enemy =dist_to_actor_le(2)} self, true
+meet_dialog = esc_quest_hunting_npc_wood_goblin_hanter_dialog
+
+[meet@dialog_3]:meet
+use = {!actor_enemy =dist_to_actor_le(1) } self, true
+meet_dialog = esc_quest_hunting_npc_wood_goblin_wounded_dialog
+
+[meet@dialog_4]:meet
+use = {!actor_enemy =dist_to_actor_le(2) } self, true
+meet_dialog = esc_quest_hunting_npc_wood_goblin_atp_dialog

@@ -1,0 +1,91 @@
+[logic@def]
+suitable = {=target_squad_name(sad_start_zombie)} true
+monster_job = true
+
+[logic@zmb_1]:logic@def
+active = mob_walker@1
+prior = 159
+
+[logic@zmb_2]:logic@def
+active = mob_walker@2
+prior = 158
+
+[logic@zmb_3]:logic@def
+active = mob_walker@3
+prior = 157
+
+[logic@zmb_4]:logic@def
+active = mob_walker@4
+prior = 156
+
+[logic@zmb_5]:logic@def
+active = mob_walker@5
+prior = 155
+
+[logic@zmb_6]:logic@def
+active = mob_walker@6
+prior = 154
+
+[logic@zmb_7]:logic@def
+active = mob_walker@7
+prior = 153
+
+[logic@zmb_8]:logic@def
+active = mob_walker@8
+prior = 152
+
+[logic@zmb_9]:logic@def
+active = mob_walker@9
+prior = 151
+
+[mob_walker@1]
+path_walk = zombi_spawn_1
+on_info = mob_home@1 %=teleport_npc(sad_start_zombi_spawn_1)%
+out_restr = sad_zombocave_in_resrtrictor
+
+[mob_walker@2]
+path_walk = zombi_spawn_2
+on_info = mob_home@1 %=teleport_npc(sad_start_zombi_spawn_2)%
+out_restr = sad_zombocave_in_resrtrictor
+
+[mob_walker@3]
+path_walk = zombi_spawn_3
+on_info = mob_home@1 %=teleport_npc(sad_start_zombi_spawn_3)%
+out_restr = sad_zombocave_in_resrtrictor
+
+[mob_walker@4]
+path_walk = zombi_spawn_4
+on_info = mob_home@1 %=teleport_npc(sad_start_zombi_spawn_4)%
+out_restr = sad_zombocave_in_resrtrictor
+
+[mob_walker@5]
+path_walk = zombi_spawn_5
+on_info = mob_home@1 %=teleport_npc(sad_start_zombi_spawn_5)%
+out_restr = sad_zombocave_in_resrtrictor
+
+[mob_walker@6]
+path_walk = zombi_spawn_6
+on_info = mob_home@1 %=teleport_npc(sad_start_zombi_spawn_6)%
+out_restr = sad_zombocave_in_resrtrictor
+
+[mob_walker@7]
+path_walk = zombi_spawn_7
+on_info = mob_home@1 %=teleport_npc(sad_start_zombi_spawn_7)%
+out_restr = sad_zombocave_in_resrtrictor
+
+[mob_walker@8]
+path_walk = zombi_spawn_8
+on_info = mob_home@1 %=teleport_npc(sad_start_zombi_spawn_8)%
+out_restr = sad_zombocave_in_resrtrictor
+
+[mob_walker@9]
+path_walk = zombi_spawn_9
+on_info = mob_home@1 %=teleport_npc(sad_start_zombi_spawn_9)%
+out_restr = sad_zombocave_in_resrtrictor
+
+[mob_home@1]
+path_home = zombi_home_1
+home_min_radius = 20
+home_max_radius = 40
+aggressive = true
+out_restr = sad_zombocave_in_resrtrictor

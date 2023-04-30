@@ -1,0 +1,186 @@
+[walker@def]
+meet = no_meet
+use_camp = false
+combat_ignore_cond = {=is_enemy_actor} true
+gather_items_enabled = false
+help_wounded_enabled = false
+corpse_detection_enabled = false
+on_info9 = {=actor_enemy} remark %+sad_turist_enemy%
+def_state_moving = assault
+wounded = wounded
+
+[remark]
+wounded = wounded
+
+[remark@temp]:walker@def
+
+[wounded]
+hp_state 		= 0|wounded_heavy@help_heavy
+hp_state_see 	= 0|wounded_heavy@help_heavy
+hp_victim 		= 0|nil
+hp_fight 		= 0|false
+hp_cover		= 0|false
+
+; ------------------------------------------------------------------------------------------------ 1
+[logic@turist_visit_1]
+suitable = {=target_squad_name(sad_turist_squad) +sad_turist_task_active +sad_turist_visit_some_place} true
+active = remark@1
+post_combat_time = 0, 0
+level_spot = turist
+prior = 330
+
+[remark@1]:walker@def
+on_info = {+sad_turist_visit_sim_5 -sad_turist_sim_5_visited} walker@11, {+sad_turist_visit_sim_9 -sad_turist_sim_9_visited} walker@12, {+sad_turist_visit_sim_17 -sad_turist_sim_17_visited} walker@13, {+sad_turist_visit_sim_18 -sad_turist_sim_18_visited} walker@14, {+sad_turist_visit_sim_15 -sad_turist_sim_15_visited} walker@15, {+sad_turist_visit_cave -sad_turist_cave_visited} walker@16, remark@temp
+
+[walker@11]:walker@def
+path_walk = turist_sim_5_1_walk
+path_look = turist_sim_5_look
+on_info = {-sad_turist_visit_11 !has_enemy =distance_from_npc_to_point_le(sad_start_turist_sim_5_1_walk:0:5)} %+sad_turist_visit_11 =sad_turist_visit_place_msg(sim_5)%
+
+[walker@12]:walker@def
+path_walk = turist_sim_9_1_walk
+path_look = turist_sim_9_look
+on_info = {-sad_turist_visit_12 !has_enemy =distance_from_npc_to_point_le(sad_start_turist_sim_9_1_walk:0:5)} %+sad_turist_visit_12 =sad_turist_visit_place_msg(sim_9)%
+
+[walker@13]:walker@def
+path_walk = turist_sim_17_1_walk
+path_look = turist_sim_17_look
+on_info = {-sad_turist_visit_13 !has_enemy =distance_from_npc_to_point_le(sad_start_turist_sim_17_1_walk:0:5)} %+sad_turist_visit_13 =sad_turist_visit_place_msg(sim_17)%
+
+[walker@14]:walker@def
+path_walk = turist_sim_18_1_walk
+path_look = turist_sim_18_look
+on_info = {-sad_turist_visit_14 !has_enemy =distance_from_npc_to_point_le(sad_start_turist_sim_18_1_walk:0:5)} %+sad_turist_visit_14 =sad_turist_visit_place_msg(sim_18)%
+
+[walker@15]:walker@def
+path_walk = turist_sim_15_1_walk
+path_look = turist_sim_15_look
+on_info = {-sad_turist_visit_15 !has_enemy =distance_from_npc_to_point_le(sad_start_turist_sim_15_1_walk:0:5)} %+sad_turist_visit_15 =sad_turist_visit_place_msg(sim_15)%
+
+[walker@16]:walker@def
+path_walk = turist_cave_1_walk
+path_look = turist_cave_look
+on_info = {-sad_turist_visit_16 !has_enemy =distance_from_npc_to_point_le(sad_start_turist_cave_1_walk:0:5)} %+sad_turist_visit_16 =sad_turist_visit_place_msg(cave)%
+
+; ------------------------------------------------------------------------------------------------ 2
+[logic@turist_visit_2]
+suitable = {=target_squad_name(sad_turist_squad) +sad_turist_task_active +sad_turist_visit_some_place} true
+active = remark@2
+post_combat_time = 0, 0
+level_spot = turist
+prior = 320
+
+[remark@2]:walker@def
+on_info = {+sad_turist_visit_sim_5 -sad_turist_sim_5_visited} walker@21, {+sad_turist_visit_sim_9 -sad_turist_sim_9_visited} walker@22, {+sad_turist_visit_sim_17 -sad_turist_sim_17_visited} walker@23, {+sad_turist_visit_sim_18 -sad_turist_sim_18_visited} walker@24, {+sad_turist_visit_sim_15 -sad_turist_sim_15_visited} walker@25, {+sad_turist_visit_cave -sad_turist_cave_visited} walker@26, remark@temp
+
+[walker@21]:walker@def
+path_walk = turist_sim_5_2_walk
+path_look = turist_sim_5_look
+on_info = {-sad_turist_visit_21 !has_enemy =distance_from_npc_to_point_le(sad_start_turist_sim_5_2_walk:0:5)} %+sad_turist_visit_21 =sad_turist_visit_place_msg(sim_5)%
+
+[walker@22]:walker@def
+path_walk = turist_sim_9_2_walk
+path_look = turist_sim_9_look
+on_info = {-sad_turist_visit_22 !has_enemy =distance_from_npc_to_point_le(sad_start_turist_sim_9_2_walk:0:5)} %+sad_turist_visit_22 =sad_turist_visit_place_msg(sim_9)%
+
+[walker@23]:walker@def
+path_walk = turist_sim_17_2_walk
+path_look = turist_sim_17_look
+on_info = {-sad_turist_visit_23 !has_enemy =distance_from_npc_to_point_le(sad_start_turist_sim_17_2_walk:0:5)} %+sad_turist_visit_23 =sad_turist_visit_place_msg(sim_17)%
+
+[walker@24]:walker@def
+path_walk = turist_sim_18_2_walk
+path_look = turist_sim_18_look
+on_info = {-sad_turist_visit_24 !has_enemy =distance_from_npc_to_point_le(sad_start_turist_sim_18_2_walk:0:5)} %+sad_turist_visit_24 =sad_turist_visit_place_msg(sim_18)%
+
+[walker@25]:walker@def
+path_walk = turist_sim_15_2_walk
+path_look = turist_sim_15_look
+on_info = {-sad_turist_visit_25 !has_enemy =distance_from_npc_to_point_le(sad_start_turist_sim_15_2_walk:0:5)} %+sad_turist_visit_25 =sad_turist_visit_place_msg(sim_15)%
+
+[walker@26]:walker@def
+path_walk = turist_cave_2_walk
+path_look = turist_cave_look
+on_info = {-sad_turist_visit_26 !has_enemy =distance_from_npc_to_point_le(sad_start_turist_cave_2_walk:0:5)} %+sad_turist_visit_26 =sad_turist_visit_place_msg(cave)%
+
+; ------------------------------------------------------------------------------------------------ 3
+[logic@turist_visit_3]
+suitable = {=target_squad_name(sad_turist_squad) +sad_turist_task_active +sad_turist_visit_some_place} true
+active = remark@3
+post_combat_time = 0, 0
+level_spot = turist
+prior = 310
+
+[remark@3]:walker@def
+on_info = {+sad_turist_visit_sim_5 -sad_turist_sim_5_visited} walker@31, {+sad_turist_visit_sim_9 -sad_turist_sim_9_visited} walker@32, {+sad_turist_visit_sim_17 -sad_turist_sim_17_visited} walker@33, {+sad_turist_visit_sim_18 -sad_turist_sim_18_visited} walker@34, {+sad_turist_visit_sim_15 -sad_turist_sim_15_visited} walker@35, {+sad_turist_visit_cave -sad_turist_cave_visited} walker@36, remark@temp
+
+[walker@31]:walker@def
+path_walk = turist_sim_5_3_walk
+path_look = turist_sim_5_look
+on_info = {-sad_turist_visit_31 !has_enemy =distance_from_npc_to_point_le(sad_start_turist_sim_5_3_walk:0:5)} %+sad_turist_visit_31 =sad_turist_visit_place_msg(sim_5)%
+
+[walker@32]:walker@def
+path_walk = turist_sim_9_3_walk
+path_look = turist_sim_9_look
+on_info = {-sad_turist_visit_32 !has_enemy =distance_from_npc_to_point_le(sad_start_turist_sim_9_3_walk:0:5)} %+sad_turist_visit_32 =sad_turist_visit_place_msg(sim_9)%
+
+[walker@33]:walker@def
+path_walk = turist_sim_17_3_walk
+path_look = turist_sim_17_look
+on_info = {-sad_turist_visit_33 !has_enemy =distance_from_npc_to_point_le(sad_start_turist_sim_17_3_walk:0:5)} %+sad_turist_visit_33 =sad_turist_visit_place_msg(sim_17)%
+
+[walker@34]:walker@def
+path_walk = turist_sim_18_3_walk
+path_look = turist_sim_18_look
+on_info = {-sad_turist_visit_34 !has_enemy =distance_from_npc_to_point_le(sad_start_turist_sim_18_3_walk:0:5)} %+sad_turist_visit_34 =sad_turist_visit_place_msg(sim_18)%
+
+[walker@35]:walker@def
+path_walk = turist_sim_15_3_walk
+path_look = turist_sim_15_look
+on_info = {-sad_turist_visit_35 !has_enemy =distance_from_npc_to_point_le(sad_start_turist_sim_15_3_walk:0:5)} %+sad_turist_visit_35 =sad_turist_visit_place_msg(sim_15)%
+
+[walker@36]:walker@def
+path_walk = turist_cave_3_walk
+path_look = turist_cave_look
+on_info = {-sad_turist_visit_36 !has_enemy =distance_from_npc_to_point_le(sad_start_turist_cave_3_walk:0:5)} %+sad_turist_visit_36 =sad_turist_visit_place_msg(cave)%
+
+; ------------------------------------------------------------------------------------------------ 4
+[logic@turist_visit_4]
+suitable = {=target_squad_name(sad_turist_squad) +sad_turist_task_active +sad_turist_visit_some_place} true
+active = remark@4
+post_combat_time = 0, 0
+level_spot = turist
+prior = 301
+
+[remark@4]:walker@def
+on_info = {+sad_turist_visit_sim_5 -sad_turist_sim_5_visited} walker@41, {+sad_turist_visit_sim_9 -sad_turist_sim_9_visited} walker@42, {+sad_turist_visit_sim_17 -sad_turist_sim_17_visited} walker@43, {+sad_turist_visit_sim_18 -sad_turist_sim_18_visited} walker@44, {+sad_turist_visit_sim_15 -sad_turist_sim_15_visited} walker@45, {+sad_turist_visit_cave -sad_turist_cave_visited} walker@46, remark@temp
+
+[walker@41]:walker@def
+path_walk = turist_sim_5_4_walk
+path_look = turist_sim_5_look
+on_info = {-sad_turist_visit_41 !has_enemy =distance_from_npc_to_point_le(sad_start_turist_sim_5_4_walk:0:5)} %+sad_turist_visit_41 =sad_turist_visit_place_msg(sim_5)%
+
+[walker@42]:walker@def
+path_walk = turist_sim_9_4_walk
+path_look = turist_sim_9_look
+on_info = {-sad_turist_visit_42 !has_enemy =distance_from_npc_to_point_le(sad_start_turist_sim_9_4_walk:0:5)} %+sad_turist_visit_42 =sad_turist_visit_place_msg(sim_9)%
+
+[walker@43]:walker@def
+path_walk = turist_sim_17_4_walk
+path_look = turist_sim_17_look
+on_info = {-sad_turist_visit_43 !has_enemy =distance_from_npc_to_point_le(sad_start_turist_sim_17_4_walk:0:5)} %+sad_turist_visit_43 =sad_turist_visit_place_msg(sim_17)%
+
+[walker@44]:walker@def
+path_walk = turist_sim_18_4_walk
+path_look = turist_sim_18_look
+on_info = {-sad_turist_visit_44 !has_enemy =distance_from_npc_to_point_le(sad_start_turist_sim_18_4_walk:0:5)} %+sad_turist_visit_44 =sad_turist_visit_place_msg(sim_18)%
+
+[walker@45]:walker@def
+path_walk = turist_sim_15_4_walk
+path_look = turist_sim_15_look
+on_info = {-sad_turist_visit_45 !has_enemy =distance_from_npc_to_point_le(sad_start_turist_sim_15_4_walk:0:5)} %+sad_turist_visit_45 =sad_turist_visit_place_msg(sim_15)%
+
+[walker@46]:walker@def
+path_walk = turist_cave_4_walk
+path_look = turist_cave_look
+on_info = {-sad_turist_visit_46 !has_enemy =distance_from_npc_to_point_le(sad_start_turist_cave_4_walk:0:5)} %+sad_turist_visit_46 =sad_turist_visit_place_msg(cave)%

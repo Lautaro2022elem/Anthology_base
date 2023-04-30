@@ -1,0 +1,48 @@
+[logic@wiz_rjaviu_raider]
+active = walker@wiz_rjaviu_raider
+suitable = {=check_npc_name(wiz_rjaviu_raider)} true
+prior = 75
+post_combat_time = 0, 0
+
+[walker@wiz_rjaviu_raider]
+path_walk = rjaviu_raiders_walk
+path_look = rjaviu_raiders_look
+def_state_moving = assault
+invulnerable = true
+use_camp = false
+on_info = {+free_neutral_jekan_free} walker@wiz_rjaviu_raider_01
+meet = meet@wiz_rjaviu_raider
+
+[walker@wiz_rjaviu_raider_01]
+path_walk = rjaviu_raiders_walk
+path_look = rjaviu_raiders_look
+def_state_moving = assault
+invulnerable = true
+use_camp = false
+meet = meet@wiz_rjaviu_raider_01
+
+[meet@wiz_rjaviu_raider]  
+abuse           = false
+close_anim 		= nil
+far_anim 		= nil
+far_victim 		= nil
+close_distance  = 0
+far_distance 	= 0
+close_victim = actor
+use = nil
+meet_dialog = wiz_free_neutral_rjaviu_complete
+allow_break = false
+trade_enable = false
+
+[meet@wiz_rjaviu_raider_01]  
+abuse           = false
+close_anim 		= nil
+far_anim 		= nil
+far_victim 		= nil
+close_distance  = 0
+far_distance 	= 0
+close_victim = actor
+use = {!actor_enemy =dist_to_actor_le(3)} self, true
+meet_dialog = wiz_free_neutral_rjaviu_complete
+allow_break = false
+trade_enable = false

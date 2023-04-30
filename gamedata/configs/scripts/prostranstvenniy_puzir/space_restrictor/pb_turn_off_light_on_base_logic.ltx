@@ -1,0 +1,16 @@
+[logic]
+active = sr_light
+
+[sr_light]
+on_info = {+pro_turn_off_light_on_base_done} sr_light@off
+
+[sr_light@off]
+on_info = {-pro_all_lamp_on_base_destroyed} sr_light@wait %+pro_all_lamp_on_base_destroyed =turn_off_puzir_lamps%
+
+[sr_light@wait]
+on_info = {+pro_transformator_podzemka_turn_on} sr_light@on
+
+[sr_light@on]
+on_info = {-pro_all_lamp_on_base_on} sr_idle@nil %+pro_all_lamp_on_base_on =turn_on_puzir_lamps%
+
+[sr_idle@nil]

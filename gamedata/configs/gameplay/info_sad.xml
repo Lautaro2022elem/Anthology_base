@@ -1,0 +1,301 @@
+<?xml version='1.0' encoding="windows-1251"?>
+
+<!-- dialogs.break_dialog -->
+
+<game_information_portions>
+
+<info_portion id="sad_start_game"></info_portion>
+<info_portion id="sad_actor_in_bottom_info"></info_portion>
+<info_portion id="sad_actor_enemy_to_someone"></info_portion>
+
+<info_portion id="sad_pda_trus_have"></info_portion>
+<info_portion id="sad_pda_balbes_have"></info_portion>
+<info_portion id="sad_pda_byvaly_have"></info_portion>
+<info_portion id="sad_af_oasis_heart_have"></info_portion>
+
+<info_portion id="sad_ask_about_stalkers_done"></info_portion>
+<info_portion id="sad_meet_mutny_task_give"></info_portion>
+<info_portion id="sad_meet_mutny_task_done"></info_portion>
+
+<info_portion id="sad_vasya_meeted"></info_portion>
+<info_portion id="sad_vasya_used"></info_portion>
+<info_portion id="sad_vasya_told_about_stalkers"></info_portion>
+<info_portion id="sad_vasya_flesh_give"></info_portion>
+<info_portion id="sad_vasya_dead"></info_portion>
+
+<info_portion id="sad_b1_mutny_told_about_place"></info_portion>
+<info_portion id="sad_b1_mutny_told_about_dolg"></info_portion>
+<info_portion id="sad_b1_mutny_meeted"></info_portion>
+<info_portion id="sad_b2_maxim_go_to_baza_done"></info_portion>
+<info_portion id="sad_b1_mutny_flesh_task_given"></info_portion>
+<info_portion id="sad_b1_mutny_flesh_qA_done"></info_portion>
+<info_portion id="sad_b1_mutny_flesh_qB_done"></info_portion>
+<info_portion id="sad_b1_mutny_flesh_task_complete"></info_portion>
+<info_portion id="sad_b1_mutny_flesh_task_fail"></info_portion>
+<info_portion id="sad_b1_mutny_flesh_have"></info_portion>
+<info_portion id="sad_b1_mutny_told_about"></info_portion>
+<info_portion id="sad_b1_mutny_told_about_flesh"></info_portion>
+
+<info_portion id="sad_b1_trader_meeted"></info_portion>
+<info_portion id="sad_b1_trader_task_give"></info_portion>
+<info_portion id="sad_b1_trader_task_done"></info_portion>
+<info_portion id="sad_b1_trader_plant_have"></info_portion>
+<info_portion id="sad_b2_trader_plant_show"></info_portion>
+<info_portion id="sad_b2_trader_plant_give"></info_portion>
+<info_portion id="sad_actor_sell_killer_pda"></info_portion>
+
+<info_portion id="sad_b1_mudak_meeted"></info_portion>
+<info_portion id="sad_b1_mudak_switch_sim_3"></info_portion>
+<info_portion id="sad_sim_3_rob_agree"></info_portion>
+<info_portion id="sad_sim_3_rob_arrive"></info_portion>
+<info_portion id="sad_b1_mudak_go_saray"></info_portion>
+<info_portion id="sad_b1_mudak_told_about_stalkers"></info_portion>
+<info_portion id="sad_mudak_pda_have"></info_portion>
+<info_portion id="sad_actor_told_mutny_about_mudak"></info_portion>
+
+<info_portion id="sad_b2_artur_meeted"></info_portion>
+<info_portion id="sad_artur_task_give"></info_portion>
+<info_portion id="sad_artur_task_have_both"></info_portion>
+<info_portion id="sad_artur_task_done"></info_portion>
+
+<info_portion id="sad_ban_bandit_guard_1_bak"></info_portion>
+<info_portion id="sad_ban_bandit_leader_meeted"></info_portion>
+<info_portion id="sad_ban_bandit_leader_payd"></info_portion>
+<info_portion id="sad_ban_bandits_fight"></info_portion>
+
+<info_portion id="sad_b2_maxim_weapon_have"></info_portion>
+<info_portion id="sad_b2_maxim_weapon_complete"></info_portion>
+<info_portion id="sad_b2_maxim_meeted"></info_portion>
+<info_portion id="sad_b2_maxim_weapon_task_give"></info_portion>
+<info_portion id="sad_b2_maxim_told_about_place"></info_portion>
+
+<info_portion id="sad_b2_maxim_told_about_radik"></info_portion>
+<info_portion id="sad_b3_actor_otkaz_ataka"></info_portion>
+<info_portion id="sad_maxim_leave_b2"></info_portion>
+<info_portion id="sad_maxim_switch_b3"></info_portion>
+<info_portion id="sad_maxim_switch_b3a"></info_portion>
+<info_portion id="sad_maxim_arrive_to_b3a"></info_portion>
+<info_portion id="sad_maxim_ready_to_go"></info_portion>
+<info_portion id="sad_maxim_actor_help_agree"></info_portion>
+<info_portion id="sad_b2_barman_weapon_gived"></info_portion>
+<info_portion id="sad_b3a_start_ataka"></info_portion>
+<info_portion id="sad_b3_maxim_ready_to_rush"></info_portion>
+<info_portion id="sad_maximilian_dead"></info_portion>
+<info_portion id="sad_maxim_actor_enemy"></info_portion>
+<info_portion id="sad_b3_maxim_ataka_complete"></info_portion>
+<info_portion id="sad_b3_maxim_ataka_cenceled"></info_portion>
+<info_portion id="sad_b3_maxim_ataka_payd"></info_portion>
+
+<info_portion id="sad_b3_actor_kill_more_6"></info_portion>
+<info_portion id="sad_b3_actor_kill_more_2"></info_portion>
+<info_portion id="sad_b3_actor_kill_more_0"></info_portion>
+<info_portion id="sad_b3_actor_kill_zero"></info_portion>
+
+<info_portion id="sad_b3_radik_task_give"></info_portion>
+<info_portion id="sad_b3_radik_task_have"></info_portion>
+<info_portion id="sad_b3_radik_task_otkaz"></info_portion>
+<info_portion id="sad_b3_radik_task_complete"></info_portion>
+<info_portion id="sad_radik_guard_talk"></info_portion>
+<info_portion id="sad_radik_meeted"></info_portion>
+<info_portion id="sad_tech_radika_meeted"></info_portion>
+<info_portion id="sad_radik_actor_enemy"></info_portion>
+<info_portion id="sad_b3_radik_talk_task_done"></info_portion>
+
+<info_portion id="sad_radik_mech_free"></info_portion>
+<info_portion id="sad_radik_told_about"></info_portion>
+<info_portion id="sad_radik_otkaz"></info_portion>
+<info_portion id="sad_radik_help_agree"></info_portion>
+<info_portion id="sad_radik_pdast_founded"></info_portion>
+<info_portion id="sad_radik_task_get_pda"></info_portion>
+<info_portion id="sad_radik_task_get_pda_have"></info_portion>
+<info_portion id="sad_radik_task_get_pda_done"></info_portion>
+<info_portion id="sad_radik_task_get_outfit"></info_portion>
+<info_portion id="sad_radik_task_get_outfit_have"></info_portion>
+<info_portion id="sad_radik_task_get_outfit_give"></info_portion>
+<info_portion id="sad_radik_task_get_outfit_done"></info_portion>
+<info_portion id="sad_b2_gonets_teleport"></info_portion>
+<info_portion id="sad_radik_ready_to_go"></info_portion>
+<info_portion id="sad_radik_start_arrive"></info_portion>
+<info_portion id="sad_radik_arrive_task_done"></info_portion>
+<info_portion id="sad_radik_dead"></info_portion>
+<info_portion id="sad_radik_give_vodka"></info_portion>
+<info_portion id="sad_radik_sim_12_arrived"></info_portion>
+<info_portion id="sad_radik_task_inside_give"></info_portion>
+<info_portion id="sad_radik_task_inside_done"></info_portion>
+<info_portion id="sad_fedor_killed_by_radik"></info_portion>
+
+<info_portion id="sad_radik_not_enough_people"></info_portion>
+<info_portion id="sad_radik_talk_after_arrive"></info_portion>
+<info_portion id="sad_actor_looks_like_killer"></info_portion>
+<info_portion id="sad_b4_actor_recognized"></info_portion>
+<info_portion id="sad_b4_entrance_talk"></info_portion>
+<info_portion id="sad_b4_glavar_meeted"></info_portion>
+<info_portion id="sad_b4_jail_guard_parol"></info_portion>
+<info_portion id="sad_fedor_talk_end"></info_portion>
+<info_portion id="sad_fedor_pistol_have"></info_portion>
+<!--info_portion id="sad_actor_has_fedor_pda"></info_portion-->
+<!--info_portion id="sad_b4_comandor_meeted"></info_portion-->
+<!-- <info_portion id="sad_b4_actor_tald_about_fedor"></info_portion> -->
+<info_portion id="sad_b4_arrive_to_b3"></info_portion>
+<info_portion id="sad_b4_arrive_to_b3_told"></info_portion>
+<info_portion id="sad_b4_killers_gone"></info_portion>
+
+<info_portion id="sad_dont_tell_about_mutny"></info_portion>
+<info_portion id="sad_actor_know_about_mutny"></info_portion>
+<info_portion id="sad_actor_told_about_mutny"></info_portion>
+<info_portion id="sad_actor_told_cowboy_about_mutny"></info_portion>
+<info_portion id="sad_actor_ask_cowboy_about_merc"></info_portion>
+<info_portion id="sad_actor_told_maxim_about_mutny"></info_portion>
+<info_portion id="sad_actor_ask_maxim_about_merc"></info_portion>
+<info_portion id="sad_actor_ask_radik_about_merc"></info_portion>
+<info_portion id="sad_actor_ask_noah_about_merc"></info_portion>
+<info_portion id="sad_actor_told_tech_about_mutny"></info_portion>
+<info_portion id="sad_actor_told_trader_about_mutny"></info_portion>
+
+<info_portion id="sad_actor_told_maxim_about_cowboy"></info_portion>
+<info_portion id="sad_volodya_ready_to_go"></info_portion>
+<info_portion id="sad_volodya_arrive_ran"></info_portion>
+<info_portion id="sad_volodya_switch_ran"></info_portion>
+<info_portion id="sad_actor_cancel_volodyas_help"></info_portion>
+<info_portion id="sad_volodya_dead"></info_portion>
+<info_portion id="sad_volodya_after_atak_meeted"></info_portion>
+
+<info_portion id="sad_cowboy_meeted"></info_portion>
+<info_portion id="sad_cowboy_enemy"></info_portion>
+<info_portion id="sad_cowboy_meet_tesla_task_done"></info_portion>
+<info_portion id="sad_cowboy_stuff_task_give"></info_portion>
+<info_portion id="sad_cowboy_stuff_task_done"></info_portion>
+<info_portion id="sad_cowboy_stuff_have_both"></info_portion>
+<info_portion id="sad_actor_kill_oleg"></info_portion>
+<info_portion id="sad_actor_kill_oleg_reward"></info_portion>
+<info_portion id="sad_sim_16_scanner_time_to_remove"></info_portion>
+<info_portion id="sad_sim_16_scanner_remove"></info_portion>
+<info_portion id="sad_tesla_meeted"></info_portion>
+<info_portion id="sad_tesla_monster_task_give"></info_portion>
+<info_portion id="sad_tesla_ready_to_go"></info_portion>
+<info_portion id="sad_tesla_arrive"></info_portion>
+<info_portion id="sad_teleport_scaner_placed"></info_portion>
+<info_portion id="sad_tesla_monster_task_done"></info_portion>
+<info_portion id="sad_cowboy_rob_actor"></info_portion>
+<info_portion id="sad_ran_cowboy_gone"></info_portion>
+
+<info_portion id="sad_mutny_b1_accuped"></info_portion>
+<info_portion id="sad_mutny_squad_awake"></info_portion>
+<info_portion id="sad_mutny_gone"></info_portion>
+<info_portion id="sad_actor_kill_mutny_agree"></info_portion>
+<info_portion id="sad_actor_kill_mutny_otkaz"></info_portion>
+<info_portion id="sad_grisha_meeted"></info_portion>
+<info_portion id="sad_grisha_enemy"></info_portion>
+<info_portion id="sad_grisha_dead"></info_portion>
+<info_portion id="sad_b1_ataka_start"></info_portion>
+<info_portion id="sad_b1_commander_meeted"></info_portion>
+<info_portion id="sad_b1_commander_no_talk"></info_portion>
+<info_portion id="sad_b1_actor_kill_8"></info_portion>
+<info_portion id="sad_b1_actor_kill_4"></info_portion>
+<info_portion id="sad_b1_actor_kill_2"></info_portion>
+<info_portion id="sad_b1_actor_kill_1"></info_portion>
+<info_portion id="sad_b1_actor_suka_pacifist"></info_portion>
+<info_portion id="sad_mutny_killed_by_actor"></info_portion>
+
+<info_portion id="sad_b2_tech_gena_task_give"></info_portion>
+<info_portion id="sad_b2_tech_gena_task_fail"></info_portion>
+<info_portion id="sad_b2_tech_gena_task_complete"></info_portion>
+<info_portion id="sad_sim_7_gena_dead"></info_portion>
+<info_portion id="sad_gena_killed_by_actor"></info_portion>
+<info_portion id="sad_sim_7_gena_founded"></info_portion>
+<info_portion id="sad_sim_7_gena_actor_worned"></info_portion>
+<info_portion id="sad_sim_7_gena_actor_has_info"></info_portion>
+<info_portion id="sad_sim_7_gena_actor_has_first_info"></info_portion>
+<info_portion id="sad_sim_7_gena_actor_pay_for"></info_portion>
+<info_portion id="sad_sim_7_gena_has_stuff"></info_portion>
+<info_portion id="sad_sim_7_gena_has_zapiska"></info_portion>
+<info_portion id="sad_sim_7_gena_tell_tech"></info_portion>
+<info_portion id="sad_sim_7_gena_healed"></info_portion>
+
+<info_portion id="sad_b2_tech_util_start"></info_portion>
+<info_portion id="sad_b2_util_has_money"></info_portion>
+
+<info_portion id="sad_b2_trader_nb_task_give"></info_portion>
+<info_portion id="sad_b2_trader_nb_task_done"></info_portion>
+<info_portion id="sad_b2_trader_nb_have"></info_portion>
+<info_portion id="sad_b2_trader_nb_discount"></info_portion>
+
+<info_portion id="sad_b2_tech_give_weapon_task"></info_portion>
+<info_portion id="sad_b2_tech_wpn_task_done"></info_portion>
+<info_portion id="sad_b2_tech_wpn_task_cancel"></info_portion>
+
+<info_portion id="sad_sim_9_noy_task_done"></info_portion>
+<info_portion id="sad_sim_9_noy_task_reversed"></info_portion>
+<info_portion id="sad_sim_9_noy_meeted"></info_portion>
+<info_portion id="sad_sim_9_noy_meeted_now"></info_portion>
+<info_portion id="sad_sim_9_noy_ready_to_talk"></info_portion>
+<info_portion id="sad_sim_9_noy_about_bro"></info_portion>
+<info_portion id="sad_sim_9_actor_kill_enough"></info_portion>
+<info_portion id="sad_sim_9_noy_go_sleep"></info_portion>
+<info_portion id="sad_sim_9_noy_compass_give"></info_portion>
+
+<info_portion id="sad_b3_ucheny_meeted"></info_portion>
+<info_portion id="sad_b3_ucheny_told_about"></info_portion>
+<info_portion id="sad_b3_ucheny_actor_agree"></info_portion>
+<info_portion id="sad_b3_start_arrive"></info_portion>
+<info_portion id="sad_ucheny_arrived_home"></info_portion>
+<info_portion id="sad_ucheny_actor_paid"></info_portion>
+<info_portion id="sad_ucheny_actor_paid_b2"></info_portion>
+<info_portion id="sad_ucheny_actor_faraway"></info_portion>
+<info_portion id="sad_ucheny_teleport_b3"></info_portion>
+<info_portion id="sad_ucheny_gone"></info_portion>
+
+<info_portion id="sad_b3_trader_meeted"></info_portion>
+<info_portion id="sad_b3_trader_give_task"></info_portion>
+<info_portion id="sad_b3_trader_task_done"></info_portion>
+<info_portion id="sad_b3_trader_task_have"></info_portion>
+<info_portion id="sad_b3_trader_task_cancel"></info_portion>
+
+<info_portion id="sad_nauchny_task_active"></info_portion>
+<info_portion id="sad_trader_told_about_nauchny"></info_portion>
+<info_portion id="sad_nauchny_task_agree"></info_portion>
+<info_portion id="sad_nauchny_take_bomba"></info_portion>
+<info_portion id="sad_nauchny_bomba_give"></info_portion>
+<info_portion id="sad_ran_ucheny_go_position"></info_portion>
+<info_portion id="sad_nauchny_bomba_ready"></info_portion>
+<info_portion id="sad_nauchny_bomba_done"></info_portion>
+<info_portion id="sad_nauchny_task_complete"></info_portion>
+<info_portion id="sad_nauchny_get_reward"></info_portion>
+<info_portion id="sad_nauchny_paid"></info_portion>
+<info_portion id="sad_nauchny_told_about_lab"></info_portion>
+
+<info_portion id="sad_teledoc_has"></info_portion>
+<info_portion id="sad_teledoc_stuff_has"></info_portion>
+<info_portion id="sad_teledoc_give"></info_portion>
+<info_portion id="sad_teledoc_give_stuff"></info_portion>
+<info_portion id="sad_teledoc_ready"></info_portion>
+<info_portion id="sad_teledoc_stuff_done"></info_portion>
+<info_portion id="sad_told_trader_about_docs"></info_portion>
+
+<info_portion id="sad_start_men_meeted"></info_portion>
+
+<info_portion id="sad_b1_ladder_anim_finish"></info_portion>
+
+<info_portion id="sad_turist_task_start"></info_portion>
+<info_portion id="sad_turist_task_done"></info_portion>
+<info_portion id="sad_turist_task_active"></info_portion>
+<info_portion id="sad_turist_step_back"></info_portion>
+<info_portion id="sad_turist_stay_here"></info_portion>
+<info_portion id="sad_turist_visit_sim_5"></info_portion>
+<info_portion id="sad_turist_visit_sim_9"></info_portion>
+<info_portion id="sad_turist_visit_sim_17"></info_portion>
+<info_portion id="sad_turist_visit_sim_18"></info_portion>
+<info_portion id="sad_turist_visit_sim_15"></info_portion>
+<info_portion id="sad_turist_visit_cave"></info_portion>
+
+<info_portion id="sad_atr_open_ze_dver"></info_portion>
+<info_portion id="sad_atr_trader_meeted"></info_portion>
+<info_portion id="sad_artefuck_can_upgrade"></info_portion>
+<info_portion id="sad_artefuck_upgrade_process"></info_portion>
+<info_portion id="sad_artefuck_ready"></info_portion>
+<info_portion id="sad_told_about_self"></info_portion>
+<info_portion id="sad_told_about_upgr"></info_portion>
+
+<info_portion id="sad_sim_8_zombo_dead"></info_portion>
+<info_portion id="sad_sim_12_start_dogs"></info_portion>
+</game_information_portions>

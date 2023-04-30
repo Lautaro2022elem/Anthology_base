@@ -1,0 +1,117 @@
+;=========meet_quest_line========
+[meet@quest_line]
+close_anim 		= nil
+close_victim 	= nil
+far_anim 		= nil
+far_victim 		= nil
+close_distance 	= 0
+far_distance 	= 0
+use = {=actor_enemy} false, {=dist_to_actor_le(3)} true, false
+snd_on_use = {!dist_to_actor_le(3)} nil
+meet_on_talking = false
+;==================================
+
+[logic]
+active = walker@hunter_hunting_start
+level_spot = quest_npc
+post_combat_time = 0, 0
+suitable = {=check_npc_name(blck_val_hunter_hunting)} true, false
+prior = 200
+
+[walker@hunter_hunting_start]
+path_walk = blck_val_hunter_hunting_walk_1
+meet = no_meet
+def_state_moving = run
+gather_items_enabled = false
+help_wounded_enabled = false
+corpse_detection_enabled = false
+invulnerable = true
+on_signal = blck_val_hunter_hunting_come | {-blck_val_hunter_hunting_come} remark@hunter_see_binocular %+blck_val_hunter_hunting_come%
+
+[remark@hunter_see_binocular]
+anim = binocular
+target = path | blck_val_hunter_see_bino_look, 0
+on_info = {+blck_val_hunter_see_binocular_end} remark@hunter_meet_to_actor
+on_timer = 10000 | %+blck_val_hunter_see_binocular_end%
+meet = no_meet
+combat_ignore_cond = true
+combat_ignore_keep_when_attacked = true
+gather_items_enabled = false
+help_wounded_enabled = false
+corpse_detection_enabled = false
+invulnerable = true
+
+[remark@hunter_meet_to_actor]
+anim = guard_na
+target = story | actor
+on_info = {+blck_val_hunter_see_binocular_end -blck_val_hunter_hunting_dialog_reload} %+blck_val_hunter_hunting_dialog_reload%
+on_info2 = {+blck_val_hunter_hunting_go_to_flash} walker@hunter_hunting_go_to_flash
+combat_ignore_cond = true
+combat_ignore_keep_when_attacked = true
+invulnerable = true
+gather_items_enabled = false
+help_wounded_enabled = false
+corpse_detection_enabled = false
+meet = meet@start_quest
+
+[walker@hunter_hunting_go_to_flash]
+path_walk = blck_val_hunter_hunting_walk_2
+meet = no_meet
+def_state_moving = run
+gather_items_enabled = false
+help_wounded_enabled = false
+corpse_detection_enabled = false
+invulnerable = true
+on_signal = blck_val_hunter_hunting_spot | {-blck_val_hunter_hunting_spot} walker@hunter_hunting_go_to_flash_1 %+blck_val_hunter_hunting_spot%
+
+[walker@hunter_hunting_go_to_flash_1]
+path_walk = blck_val_hunter_hunting_walk_3
+meet = no_meet
+def_state_moving = run
+gather_items_enabled = false
+help_wounded_enabled = false
+corpse_detection_enabled = false
+invulnerable = true
+on_signal = blck_val_hunter_hunting_spot_1 | {-blck_val_hunter_hunting_spot_1} walker@hunter_hunting_go_to_flash_2 %+blck_val_hunter_hunting_spot_1%
+
+[walker@hunter_hunting_go_to_flash_2]
+path_walk = blck_val_hunter_hunting_walk_4
+meet = no_meet
+def_state_moving = run
+gather_items_enabled = false
+help_wounded_enabled = false
+corpse_detection_enabled = false
+invulnerable = true
+on_signal = blck_val_hunter_hunting_spot_2 | {-blck_val_hunter_hunting_spot_2} remark@hunter_hide_in_flash %+blck_val_hunter_hunting_spot_2%
+
+[remark@hunter_hide_in_flash]
+anim = hide
+target = path | blck_val_hunter_see_bino_look, 0
+on_info = {+blck_val_psevdoflesh_quest_dead} remark@hunter_flash_dead
+meet = no_meet
+combat_ignore_cond = true
+combat_ignore_keep_when_attacked = true
+gather_items_enabled = false
+help_wounded_enabled = false
+corpse_detection_enabled = false
+invulnerable = true
+
+[remark@hunter_flash_dead]
+anim = sit
+target = path | blck_val_hunter_see_bino_look, 0
+on_info = {+blck_val_hunter_flash_dead_dialog_done =dist_to_actor_ge(100)} %=release_npc%
+meet = meet@start_quest
+combat_ignore_cond = true
+combat_ignore_keep_when_attacked = true
+gather_items_enabled = false
+help_wounded_enabled = false
+corpse_detection_enabled = false
+invulnerable = true
+
+;------------------------------------------
+[meet@start_quest]:meet@quest_line
+close_victim = actor
+use = {+blck_val_shaman_dialog_from_hunter_done} true, false
+allow_break = false
+meet_dialog = blck_val_actor_meet_from_hunter
+trade_enable = false

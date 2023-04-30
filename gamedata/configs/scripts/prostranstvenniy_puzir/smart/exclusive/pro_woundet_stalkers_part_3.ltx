@@ -1,0 +1,171 @@
+;=========meet_stalker_korpys========
+[meet@korpys_stalker]
+close_anim 		= nil
+close_victim 	= nil
+far_anim 		= nil
+far_victim 		= nil
+close_distance 	= 0
+far_distance 	= 0
+use = {=actor_enemy} false, {=dist_to_actor_le(3)} true, false
+snd_on_use = {!dist_to_actor_le(3)} nil
+meet_on_talking = false
+;==================================
+
+
+[logic@perevalochnaya_baza_woundet_stalkers_walker_3]
+active = walker@pb_snake
+level_spot = quest_npc
+prior = 80
+suitable = {=check_npc_name(pb_snake)} true, false
+
+[walker@pb_snake]
+path_walk = snake_start_walk
+path_look = snake_start_look
+on_info = {+perevalochnaya_baza_snake_meet_end} move@snake_to_actor
+on_info2 = {+pro_actor_go_to_water_flask} walker@pb_snake_water
+on_info3 = {+pro_come_back_prostranstvenniy_puzir} %=release_npc%
+on_info4 = {+controller_spawn_end -controller_quest_dead} remark@psy_back_4
+on_info5 = {+pro_actor_ready_go_to_plant -pro_actor_go_to_plant_complete} walker@snake_go_to_plant_1
+gather_items_enabled = false
+corpse_detection_enabled = false
+combat_ignore_keep_when_attacked = true 
+combat_ignore_cond = true
+use_camp = true
+meet = meet@pb_snake
+
+[walker@snake_go_to_plant_1]
+path_walk = snake_go_to_plant_walk_1
+meet = no_meet
+def_state_moving = run
+on_info = {+pro_actor_go_to_plant_complete} walker@pb_snake
+combat_ignore_cond = true 
+combat_ignore_keep_when_attacked = true
+gather_items_enabled = false
+help_wounded_enabled = false
+corpse_detection_enabled = false
+invulnerable = true
+on_signal = pb_snake_go_to_plant_1 | {-pro_snake_go_to_plant_1_done} remark@plant_1_search %+pro_snake_go_to_plant_1_done%
+
+[remark@plant_1_search]
+anim = dynamite
+target = path | pro_anomaly_plant_1_spawn, 0
+on_timer = 5000 | walker@snake_go_to_plant_2 %+pro_snake_take_plant_1%
+danger = danger
+use_camp = false
+invulnerable = true
+combat_ignore_cond = true 
+combat_ignore_keep_when_attacked = true
+gather_items_enabled = false
+help_wounded_enabled = false
+corpse_detection_enabled = false
+meet = no_meet
+
+[walker@snake_go_to_plant_2]
+path_walk = snake_go_to_plant_walk_2
+meet = no_meet
+def_state_moving = run
+on_info = {+pro_actor_go_to_plant_complete} walker@pb_snake
+gather_items_enabled = false
+help_wounded_enabled = false
+corpse_detection_enabled = false
+invulnerable = true
+on_signal = pb_snake_go_to_plant_2 | {-pro_snake_go_to_plant_2_done} remark@plant_2_search %+pro_snake_go_to_plant_2_done%
+
+[remark@plant_2_search]
+anim = dynamite
+target = path | pro_anomaly_plant_2_spawn, 0
+on_timer = 5000 | walker@snake_go_to_base %+pro_snake_take_plant_2%
+danger = danger
+use_camp = false
+invulnerable = true
+combat_ignore_cond = true 
+combat_ignore_keep_when_attacked = true
+gather_items_enabled = false
+help_wounded_enabled = false
+corpse_detection_enabled = false
+meet = no_meet
+
+[walker@snake_go_to_base]
+path_walk = snake_go_to_base_walk_1
+meet = no_meet
+def_state_moving = run
+on_info = {+pro_actor_go_to_plant_complete} walker@pb_snake
+combat_ignore_cond = true 
+combat_ignore_keep_when_attacked = true
+gather_items_enabled = false
+help_wounded_enabled = false
+corpse_detection_enabled = false
+invulnerable = true
+on_signal = pb_snake_to_base | {-pro_actor_go_to_plant_complete} walker@pb_snake %+pro_actor_go_to_plant_complete%
+
+[walker@pb_snake_water]
+path_walk = snake_start_walk
+path_look = snake_start_look
+on_info = {+perevalochnaya_baza_snake_meet_end} move@snake_to_actor
+on_info2 = {+pro_snake_clean_water_dialog_done} walker@pb_snake %-pro_actor_go_to_water_flask -pro_snake_clean_water_dialog_done%
+on_info3 = {+pro_come_back_prostranstvenniy_puzir} %=release_npc%
+gather_items_enabled = false
+corpse_detection_enabled = false
+combat_ignore_keep_when_attacked = true 
+combat_ignore_cond = true
+use_camp = true
+meet = meet@pb_snake_water
+
+[remark@psy_back_4]
+anim = psy_pain
+target = path | pro_smart_terrain_1_1_lutiy_meet_to_actor_look, 0
+on_info = {+controller_quest_dead} walker@pb_snake
+meet = no_meet
+combat_ignore_cond = true 
+combat_ignore_keep_when_attacked = true 
+gather_items_enabled = false
+corpse_detection_enabled = false
+invulnerable = true
+
+[move@snake_to_actor]
+invulnerable                 = false
+move_pursue_actor            = true
+move_pursue_look_subject     = actor 
+move_pursue_range            = 5|10
+move_pursue_state_stand      = wait_na
+move_pursue_state_move       = walk_noweap                     
+move_pursue_state_overtake   = run
+on_info = {+perevalochnaya_baza_quest_flash_dead} remark@snake_wait
+meet = no_meet
+gather_items_enabled = false
+corpse_detection_enabled = false
+combat_ignore_keep_when_attacked = false 
+combat_ignore_cond = false
+
+[remark@snake_wait]
+anim = wait_na
+target = story | actor
+on_info = {+pb_markus_founded_start_quest} %=release_npc%
+combat_ignore_cond = true
+combat_ignore_keep_when_attacked = true
+invulnerable = true
+gather_items_enabled = false
+help_wounded_enabled = false
+corpse_detection_enabled = false
+use_camp = false
+meet = meet@pb_snake
+
+[meet@pb_snake]:meet@korpys_stalker
+close_snd_hello = pb_snake_meet
+close_snd_bye 	= pb_snake_meet_bye
+close_snd_distance = 3
+close_victim = actor
+allow_break = false
+meet_dialog = pb_quest_line_snake_start
+trade_enable = false
+
+[meet@pb_snake_water]:meet@korpys_stalker
+close_snd_hello = pb_snake_water_clean_meet
+close_snd_bye 	= pb_snake_meet_bye
+close_snd_distance = 3
+close_victim = actor
+allow_break = false
+meet_dialog = pb_quest_line_snake_start
+trade_enable = false
+
+;================================================

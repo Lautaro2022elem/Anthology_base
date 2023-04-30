@@ -1,0 +1,24 @@
+[logic]
+active = remark
+
+[remark]
+anim = threat
+target = story | actor
+meet = no_meet
+invulnerable = true
+gather_items_enabled = false
+corpse_detection_enabled = false
+combat_ignore_keep_when_attacked = true 
+combat_ignore_cond = true
+on_info2 = {+city_army_start_gg_kill} remark@enemy %=actor_enemy%
+on_info3 = {+city_army_start_remove} %=release_npc%
+show_spot = {=dist_to_actor_le(3)} true, false
+
+
+[remark@enemy]
+anim = threat_fire
+target = story | actor
+combat_ignore_cond = true 
+combat_ignore_keep_when_attacked = true 
+invulnerable = true
+meet = no_meet

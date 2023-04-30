@@ -1,0 +1,29 @@
+; general section
+
+[animpoint@gen]
+meet = no_meet
+use_camp = false
+combat_ignore_cond = true
+combat_ignore_keep_when_attacked = true
+invulnerable = true
+gather_items_enabled = false
+help_wounded_enabled = false
+corpse_detection_enabled = false
+
+; work section
+
+[logic]
+active = walker@1
+on_hit = hit
+
+[walker@1]:animpoint@gen
+path_walk = sad_ran_cs_actor_start_point
+on_info = {+sad_ran_cutscene_start} walker@2
+
+[walker@2]:animpoint@gen
+path_walk = sad_ran_volodya_raid_walk
+def_state_moving = assault
+on_info = {+sad_ran_cutscene_start} walker@2
+
+[hit]
+;on_info = %+sad_oasis_cutscene_actor_hit% ; =destroy_object%

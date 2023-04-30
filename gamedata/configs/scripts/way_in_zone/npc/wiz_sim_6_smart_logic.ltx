@@ -1,0 +1,104 @@
+[logic@wiz_guard_bandit_1]
+active = camper@wiz_guard_bandit_1
+suitable = {=npc_community(bandit)} true
+prior = 75
+
+[logic@wiz_guard_bandit_2]
+active = camper@wiz_guard_bandit_2
+suitable = {=npc_community(bandit)} true
+prior = 75
+
+[logic@wiz_guard_bandit_3]
+active = camper@wiz_guard_bandit_3
+suitable = {=npc_community(bandit)} true
+prior = 75
+
+[logic@wiz_guard_bandit_4]
+active = camper@wiz_guard_bandit_4
+suitable = {=npc_community(bandit)} true
+prior = 75
+
+[logic@wiz_guard_bandit_5]
+active = animpoint@wiz_guard_bandit_5
+suitable = {=npc_community(bandit)} true
+prior = 90
+
+[logic@wiz_guard_bandit_6]
+active = animpoint@wiz_guard_bandit_6
+suitable = {=npc_community(bandit)} true
+prior = 90
+
+[logic@wiz_guard_bandit_7]
+active = camper@wiz_guard_bandit_7
+suitable = {=npc_community(bandit)} true
+prior = 75
+
+[logic@wiz_guard_bandit_8]
+active = animpoint@wiz_guard_bandit_8
+suitable = {=npc_community(bandit)} true
+prior = 75
+
+[logic@wiz_guard_bandit_9]
+active = animpoint@wiz_guard_bandit_9
+suitable = {=npc_community(bandit)} true
+prior = 90
+
+[logic@wiz_guard_bandit_10]
+active = animpoint@wiz_guard_bandit_10
+suitable = {=npc_community(bandit)} true
+prior = 90
+
+[camper@wiz_guard_bandit_1]
+path_walk = guard_1_walk
+path_look = guard_1_look
+combat_ignore_cond = {=check_enemy_name(wiz_jekan_scene)  -jup_a12_actor_enemy_to_bandits} true
+meet = no_meet
+
+[camper@wiz_guard_bandit_2]
+path_walk = guard_2_walk
+path_look = guard_2_look
+combat_ignore_cond = {=check_enemy_name(wiz_jekan_scene)  -jup_a12_actor_enemy_to_bandits} true
+meet = no_meet
+
+[camper@wiz_guard_bandit_3]
+path_walk = guard_3_walk
+path_look = guard_3_look
+combat_ignore_cond = {=check_enemy_name(wiz_jekan_scene)  -jup_a12_actor_enemy_to_bandits} true
+meet = no_meet
+
+[camper@wiz_guard_bandit_4]
+path_walk = guard_4_walk
+path_look = guard_4_look
+combat_ignore_cond = {=check_enemy_name(wiz_jekan_scene)  -jup_a12_actor_enemy_to_bandits} true
+meet = no_meet
+
+[animpoint@wiz_guard_bandit_5]
+cover_name = wiz_sim_6_animpoint_4
+combat_ignore_cond = {=check_enemy_name(wiz_jekan_scene)  -jup_a12_actor_enemy_to_bandits} true
+meet = no_meet
+
+[animpoint@wiz_guard_bandit_6]
+cover_name = wiz_sim_6_animpoint_5
+combat_ignore_cond = {=check_enemy_name(wiz_jekan_scene)  -jup_a12_actor_enemy_to_bandits} true
+meet = no_meet
+
+[camper@wiz_guard_bandit_7]
+path_walk = walker_3_walk
+path_look = walker_3_look
+combat_ignore_cond = {=check_enemy_name(wiz_jekan_scene)  -jup_a12_actor_enemy_to_bandits} true
+meet = no_meet
+
+[animpoint@wiz_guard_bandit_8]
+cover_name = wiz_sim_6_animpoint_1
+combat_ignore_cond = {=check_enemy_name(wiz_jekan_scene)  -jup_a12_actor_enemy_to_bandits} true
+meet = no_meet
+
+[animpoint@wiz_guard_bandit_9]
+cover_name = wiz_sim_6_animpoint_2
+combat_ignore_cond = {=check_enemy_name(wiz_jekan_scene)  -jup_a12_actor_enemy_to_bandits} true
+meet = no_meet
+
+[animpoint@wiz_guard_bandit_10]
+cover_name = wiz_sim_6_animpoint_3
+combat_ignore_cond = {=check_enemy_name(wiz_jekan_scene)  -jup_a12_actor_enemy_to_bandits} true
+meet = no_meet

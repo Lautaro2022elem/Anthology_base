@@ -1,0 +1,670 @@
+local HUD = nil
+local SETTINGS = nil
+
+function on_game_start()
+	RegisterScriptCallback("actor_on_first_update",actor_on_first_update)
+	RegisterScriptCallback("actor_on_update",actor_on_update)
+	
+end
+
+function actor_on_first_update()
+	activate_hud()
+	if SETTINGS == nil then
+		SETTINGS = zl_ui_run_settings()
+	end	
+end
+
+function actor_on_update()
+	update_hud()
+end
+
+function activate_hud()
+	RegisterScriptCallback("actor_on_net_destroy",actor_on_net_destroy)
+	RegisterScriptCallback("on_console_execute",on_console_execute)
+	RegisterScriptCallback("GUI_on_show",update_hud)
+	RegisterScriptCallback("GUI_on_hide",update_hud)
+	RegisterScriptCallback("on_key_press",on_key_press)
+
+	if HUD == nil then
+		HUD = zl_ui_run_timer()
+		get_hud():AddDialogToRender(HUD)
+	end
+	HUD:Update(true)
+end
+
+function deactivate_hud()
+	if HUD ~= nil then
+		get_hud():RemoveDialogToRender(HUD)
+		HUD = nil
+	end
+
+	UnregisterScriptCallback("actor_on_net_destroy",actor_on_net_destroy)
+	UnregisterScriptCallback("on_console_execute",on_console_execute)
+	UnregisterScriptCallback("GUI_on_show",update_hud)
+	UnregisterScriptCallback("GUI_on_hide",update_hud)
+end
+
+function update_hud()
+	if HUD ~= nil then
+		HUD:update(time_global())
+	end
+end
+
+function actor_on_net_destroy()
+	if HUD ~= nil then
+		get_hud():RemoveDialogToRender(HUD)
+		HUD = nil
+	end
+
+	if SETTINGS ~= nil then
+		SETTINGS:HideDialog()
+		SETTINGS = nil
+	end
+end
+
+function on_console_execute(name)
+	if name == "hud_draw" and HUD then
+		update_hud()
+	end
+end
+
+function on_key_press(key)
+	if key == DIK_keys["DIK_F11"] then
+		if SETTINGS then
+			if not SETTINGS:IsShown() then
+				SETTINGS:show()
+			end
+		end
+	end
+end
+
+class "zl_ui_run_timer" (CUIScriptWnd)
+
+function zl_ui_run_timer:__init() super()
+	local existing_run_time = load_var(db.actor,"zl_run_timer.run_time")
+	if existing_run_time == nil then
+		self.run_time = utils_obj.time_spent_in_zone(1) / level.get_time_factor()
+		save_var(db.actor,"zl_run_timer.run_time",self.run_time)
+	else
+		self.run_time = existing_run_time
+	end
+	
+	self.max_width = device().width
+	self.max_height = device().height
+	self.ratio = (self.max_height / self.max_width)
+	self.last_update = time_global()
+	self.milliseconds = 0
+	self.faction = get_actor_true_community()
+
+	self.faction_flipped = axr_main.config:r_value("zl_run_timer", "faction_flipped", 2, 0)
+	self.faction_enabled = axr_main.config:r_value("zl_run_timer", "faction_enabled", 2, 1)
+	self.shadow_enabled = axr_main.config:r_value("zl_run_timer", "shadow_enabled", 2, 1)
+	self.pos_x = axr_main.config:r_value("zl_run_timer", "pos_x", 2, 0)
+	self.pos_y = axr_main.config:r_value("zl_run_timer", "pos_y", 2 , 0)
+	self.color_red = axr_main.config:r_value("zl_run_timer", "color_red", 2, 255)
+	self.color_green = axr_main.config:r_value("zl_run_timer", "color_green", 2, 255)
+	self.color_blue = axr_main.config:r_value("zl_run_timer", "color_blue", 2, 255)
+	self:save()
+	
+	self:init_controls()	
+end
+
+function zl_ui_run_timer:init_controls()
+	local xml = CScriptXmlInit()
+	xml:ParseFile("zl_ui_run_timer.xml")
+
+	self.panel = xml:InitStatic("panel", self)
+	self.panel:Show(true)
+	self.text_time_shadow = xml:InitTextWnd("panel:text_time_shadow", self.panel)
+	self.text_time = xml:InitTextWnd("panel:text_time", self.panel)
+
+	self.box_faction_shadow = xml:InitStatic("panel:box_faction_shadow",self.panel)
+	self.box_faction_shadow:InitTexture("ui_mm_faction_" .. self.faction .. "_inactive")
+	self.box_faction_shadow:SetStretchTexture(true)
+	self.box_faction_shadow:SetWndSize(vector2():set(self.box_faction_shadow:GetWidth() * self.ratio * 0.75, self.box_faction_shadow:GetHeight() * self.ratio))
+	
+	self.box_faction = xml:InitStatic("panel:box_faction",self.panel)
+	self.box_faction:InitTexture("ui_mm_faction_" .. self.faction)
+	self.box_faction:SetStretchTexture(true)
+	self.box_faction:SetWndSize(vector2():set(self.box_faction:GetWidth() * self.ratio * 0.75, self.box_faction:GetHeight() * self.ratio))
+
+	self:update_ui()	
+end
+
+function zl_ui_run_timer:update_ui()
+	self.text_time:SetTextColor(GetARGB(255, self.color_red, self.color_green, self.color_blue))
+	
+	self:correct_position()
+	local offset_text = self.faction_flipped == 1 and 0 or (self.faction_enabled == 1 and 35 or 0)
+	local offset_faction = self.faction_flipped == 1 and 114 or 0
+	self.box_faction:SetWndPos(vector2():set(self.pos_x + offset_faction,self.pos_y))
+	self.box_faction_shadow:SetWndPos(vector2():set(self.pos_x + offset_faction + 2,self.pos_y + 2))
+	self.text_time:SetWndPos(vector2():set(self.pos_x + offset_text,self.pos_y))
+	self.text_time_shadow:SetWndPos(vector2():set(self.pos_x + offset_text + 2,self.pos_y + 2))
+
+	if self.shadow_enabled == 1 then
+		self.text_time_shadow:Show(true)
+		if self.faction_enabled == 1 then
+			self.box_faction_shadow:Show(true)
+		else
+			self.box_faction_shadow:Show(false)
+		end
+	else
+		self.box_faction_shadow:Show(false)
+		self.text_time_shadow:Show(false)
+	end
+
+	if self.faction_enabled == 1 then
+		self.box_faction:Show(true)
+		if self.shadow_enabled == 1 then
+			self.box_faction_shadow:Show(true)
+		else
+			self.box_faction_shadow:Show(false)
+		end
+	else
+		self.box_faction:Show(false)
+		self.box_faction_shadow:Show(false)
+	end
+end
+
+function zl_ui_run_timer:correct_position()
+	if self.pos_x < 0 then
+		self.pos_x = 0
+	end
+	if self.pos_y < 0 then
+		self.pos_y = 0
+	end
+	if self.pos_x + 145 > 1024 then
+		self.pos_x = 1024 - (self.faction_enabled and 145 or 110)
+	end
+	if self.pos_y + 40 > 768 then
+		self.pos_y = 768 - 40
+	end
+end
+
+function zl_ui_run_timer:flip_faction()
+	if self.faction_flipped == 1 then
+		self.faction_flipped = 0
+	else
+		self.faction_flipped = 1
+	end
+end
+
+function zl_ui_run_timer:toggle_faction()
+	if self.faction_enabled == 1 then
+		self.faction_enabled = 0
+	else
+		self.faction_enabled = 1
+	end
+end
+
+function zl_ui_run_timer:toggle_shadow()
+	if self.shadow_enabled == 1 then
+		self.shadow_enabled = 0
+	else
+		self.shadow_enabled = 1
+	end	
+end
+
+function zl_ui_run_timer:update(time)
+	if db.actor == nil then
+		return
+	end
+
+	if time > self.last_update + 100 then
+		self.milliseconds = self.milliseconds + (time - self.last_update)
+		self.last_update = time
+	else
+		return
+	end
+
+	self.text_time:SetTextColor(GetARGB(255, self.color_red, self.color_green, self.color_blue))
+	local current_seconds = self.run_time + math.floor((self.milliseconds / 1000) + 0.5)
+	save_var(db.actor,"zl_run_timer.run_time",current_seconds)
+	
+	local timer = current_seconds
+	self.days = math.floor(timer / (3600*24))
+	timer = timer - self.days*3600*24
+	self.hours = math.floor(timer / 3600)
+	timer = timer - self.hours*3600
+	self.minutes = math.floor(timer / 60)
+	timer = timer - self.minutes * 60
+	self.seconds = math.floor(timer)
+	
+	local formatted_time = string.format("%02d:%02d:%02d",self.hours,self.minutes,self.seconds)
+	
+	self.text_time:SetText(formatted_time)
+	self.text_time_shadow:SetText(formatted_time)
+end
+
+function zl_ui_run_timer:save()
+	axr_main.config:w_value("zl_run_timer", "pos_x", self.pos_x)
+	axr_main.config:w_value("zl_run_timer", "pos_y", self.pos_y)
+	axr_main.config:w_value("zl_run_timer", "shadow_enabled", self.shadow_enabled)
+	axr_main.config:w_value("zl_run_timer", "faction_enabled", self.faction_enabled)
+	axr_main.config:w_value("zl_run_timer", "faction_flipped", self.faction_flipped)
+	axr_main.config:w_value("zl_run_timer", "color_red", self.color_red)
+	axr_main.config:w_value("zl_run_timer", "color_green", self.color_green)
+	axr_main.config:w_value("zl_run_timer", "color_blue", self.color_blue)
+	axr_main.config:save()
+end
+
+class "zl_ui_run_settings" (CUIScriptWnd)
+
+function zl_ui_run_settings:__init() super()
+	self:SetWndRect(Frect():set(0,0,1024,768))
+	self.max_width = device().width
+	self.max_height = device().height
+	self.ratio = (self.max_height / self.max_width) / (768 / 1024)
+
+	self:init_controls()
+
+	self:HideDialog()
+end
+
+function zl_ui_run_settings:init_controls()
+	local xml = CScriptXmlInit()
+	xml:ParseFile("zl_ui_run_settings.xml")
+
+	self.panel = xml:InitStatic("panel", self)
+
+	self.button_left_1 = xml:Init3tButton("panel:button_left_1", self.panel)
+	self:Register(self.button_left_1, "on_button_left_1_clicked")
+	self:AddCallback("on_button_left_1_clicked",ui_events.BUTTON_CLICKED,self.on_button_left_1_clicked,self)
+	self.button_left_1:SetWndSize(vector2():set(self.button_left_1:GetWidth() * self.ratio, self.button_left_1:GetHeight()))
+
+	self.button_right_1 = xml:Init3tButton("panel:button_right_1", self.panel)
+	self:Register(self.button_right_1, "on_button_right_1_clicked")
+	self:AddCallback("on_button_right_1_clicked",ui_events.BUTTON_CLICKED,self.on_button_right_1_clicked,self)
+	self.button_right_1:SetWndSize(vector2():set(self.button_right_1:GetWidth() * self.ratio, self.button_right_1:GetHeight()))
+
+	self.button_up_1 = xml:Init3tButton("panel:button_up_1", self.panel)
+	self:Register(self.button_up_1, "on_button_up_1_clicked")
+	self:AddCallback("on_button_up_1_clicked",ui_events.BUTTON_CLICKED,self.on_button_up_1_clicked,self)
+	self.button_up_1:SetWndSize(vector2():set(self.button_up_1:GetWidth() * self.ratio, self.button_up_1:GetHeight()))
+
+	self.button_down_1 = xml:Init3tButton("panel:button_down_1", self.panel)
+	self:Register(self.button_down_1, "on_button_down_1_clicked")
+	self:AddCallback("on_button_down_1_clicked",ui_events.BUTTON_CLICKED,self.on_button_down_1_clicked,self)
+	self.button_down_1:SetWndSize(vector2():set(self.button_down_1:GetWidth() * self.ratio, self.button_down_1:GetHeight()))
+
+	self.button_left_10 = xml:Init3tButton("panel:button_left_10", self.panel)
+	self:Register(self.button_left_10, "on_button_left_10_clicked")
+	self:AddCallback("on_button_left_10_clicked",ui_events.BUTTON_CLICKED,self.on_button_left_10_clicked,self)
+	self.button_left_10:SetWndSize(vector2():set(self.button_left_10:GetWidth() * self.ratio, self.button_left_10:GetHeight()))
+
+	self.button_right_10 = xml:Init3tButton("panel:button_right_10", self.panel)
+	self:Register(self.button_right_10, "on_button_right_10_clicked")
+	self:AddCallback("on_button_right_10_clicked",ui_events.BUTTON_CLICKED,self.on_button_right_10_clicked,self)
+	self.button_right_10:SetWndSize(vector2():set(self.button_right_10:GetWidth() * self.ratio, self.button_right_10:GetHeight()))
+
+	self.button_up_10 = xml:Init3tButton("panel:button_up_10", self.panel)
+	self:Register(self.button_up_10, "on_button_up_10_clicked")
+	self:AddCallback("on_button_up_10_clicked",ui_events.BUTTON_CLICKED,self.on_button_up_10_clicked,self)
+	self.button_up_10:SetWndSize(vector2():set(self.button_up_10:GetWidth() * self.ratio, self.button_up_10:GetHeight()))
+
+	self.button_down_10 = xml:Init3tButton("panel:button_down_10", self.panel)
+	self:Register(self.button_down_10, "on_button_down_10_clicked")
+	self:AddCallback("on_button_down_10_clicked",ui_events.BUTTON_CLICKED,self.on_button_down_10_clicked,self)
+	self.button_down_10:SetWndSize(vector2():set(self.button_down_10:GetWidth() * self.ratio, self.button_down_10:GetHeight()))
+
+	self.button_left_100 = xml:Init3tButton("panel:button_left_100", self.panel)
+	self:Register(self.button_left_100, "on_button_left_100_clicked")
+	self:AddCallback("on_button_left_100_clicked",ui_events.BUTTON_CLICKED,self.on_button_left_100_clicked,self)
+	self.button_left_100:SetWndSize(vector2():set(self.button_left_100:GetWidth() * self.ratio, self.button_left_100:GetHeight()))
+
+	self.button_right_100 = xml:Init3tButton("panel:button_right_100", self.panel)
+	self:Register(self.button_right_100, "on_button_right_100_clicked")
+	self:AddCallback("on_button_right_100_clicked",ui_events.BUTTON_CLICKED,self.on_button_right_100_clicked,self)
+	self.button_right_100:SetWndSize(vector2():set(self.button_right_100:GetWidth() * self.ratio, self.button_right_100:GetHeight()))
+
+	self.button_up_100 = xml:Init3tButton("panel:button_up_100", self.panel)
+	self:Register(self.button_up_100, "on_button_up_100_clicked")
+	self:AddCallback("on_button_up_100_clicked",ui_events.BUTTON_CLICKED,self.on_button_up_100_clicked,self)
+	self.button_up_100:SetWndSize(vector2():set(self.button_up_100:GetWidth() * self.ratio, self.button_up_100:GetHeight()))
+
+	self.button_down_100 = xml:Init3tButton("panel:button_down_100", self.panel)
+	self:Register(self.button_down_100, "on_button_down_100_clicked")
+	self:AddCallback("on_button_down_100_clicked",ui_events.BUTTON_CLICKED,self.on_button_down_100_clicked,self)
+	self.button_down_100:SetWndSize(vector2():set(self.button_down_100:GetWidth() * self.ratio, self.button_down_100:GetHeight()))
+
+	self.button_shadow = xml:Init3tButton("panel:button_shadow", self.panel)
+	self:Register(self.button_shadow, "on_button_shadow_clicked")
+	self:AddCallback("on_button_shadow_clicked",ui_events.BUTTON_CLICKED,self.on_button_shadow_clicked,self)
+	self.button_shadow:SetWndSize(vector2():set(self.button_shadow:GetWidth() * self.ratio, self.button_shadow:GetHeight()))
+
+	self.button_faction = xml:Init3tButton("panel:button_faction", self.panel)
+	self:Register(self.button_faction, "on_button_faction_clicked")
+	self:AddCallback("on_button_faction_clicked",ui_events.BUTTON_CLICKED,self.on_button_faction_clicked,self)
+	self.button_faction:SetWndSize(vector2():set(self.button_faction:GetWidth() * self.ratio, self.button_faction:GetHeight()))
+
+	self.button_faction_flip = xml:Init3tButton("panel:button_faction_flip", self.panel)
+	self:Register(self.button_faction_flip, "on_button_faction_flip_clicked")
+	self:AddCallback("on_button_faction_flip_clicked",ui_events.BUTTON_CLICKED,self.on_button_faction_flip_clicked,self)
+	self.button_faction_flip:SetWndSize(vector2():set(self.button_faction_flip:GetWidth() * self.ratio, self.button_faction_flip:GetHeight()))
+
+	self.button_save = xml:Init3tButton("panel:button_save", self.panel)
+	self:Register(self.button_save, "on_button_save_clicked")
+	self:AddCallback("on_button_save_clicked",ui_events.BUTTON_CLICKED,self.on_button_save_clicked,self)
+	self.button_save:SetWndSize(vector2():set(self.button_save:GetWidth() * self.ratio, self.button_save:GetHeight()))
+
+	self.text_red = xml:InitTextWnd("panel:text_red", self.panel)
+	self.text_red:SetTextColor(GetARGB(255, 255, 50, 50))
+	self.text_red:SetText("RED")
+
+	self.text_green = xml:InitTextWnd("panel:text_green", self.panel)
+	self.text_green:SetTextColor(GetARGB(255, 50, 255, 50))
+	self.text_green:SetText("GREEN")
+
+	self.text_blue = xml:InitTextWnd("panel:text_blue", self.panel)
+	self.text_blue:SetTextColor(GetARGB(255, 50, 50, 255))
+	self.text_blue:SetText("BLUE")
+
+	self.textbox_red = xml:InitEditBox("panel:textbox_red",self.panel)
+	self:Register(self.textbox_red,"on_textbox_red_changed")
+	self:AddCallback("on_textbox_red_changed",ui_events.EDIT_TEXT_COMMIT,self.on_textbox_red_changed,self)
+	self.textbox_red:SetText(HUD.color_red)
+
+	self.textbox_green = xml:InitEditBox("panel:textbox_green",self.panel)
+	self:Register(self.textbox_green,"on_textbox_green_changed")
+	self:AddCallback("on_textbox_green_changed",ui_events.EDIT_TEXT_COMMIT,self.on_textbox_green_changed,self)
+	self.textbox_green:SetText(HUD.color_green)
+
+	self.textbox_blue = xml:InitEditBox("panel:textbox_blue",self.panel)
+	self:Register(self.textbox_blue,"on_textbox_blue_changed")
+	self:AddCallback("on_textbox_blue_changed",ui_events.EDIT_TEXT_COMMIT,self.on_textbox_blue_changed,self)
+	self.textbox_blue:SetText(HUD.color_blue)
+
+	self.text_hour = xml:InitTextWnd("panel:text_hour", self.panel)
+	self.text_hour:SetTextColor(GetARGB(255, 255, 255, 255))
+	self.text_hour:SetText("Hours")
+
+	self.text_minute = xml:InitTextWnd("panel:text_minute", self.panel)
+	self.text_minute:SetTextColor(GetARGB(255, 255, 255, 255))
+	self.text_minute:SetText("Minutes")
+
+	self.text_second = xml:InitTextWnd("panel:text_second", self.panel)
+	self.text_second:SetTextColor(GetARGB(255, 255, 255, 255))
+	self.text_second:SetText("Seconds")
+
+	self.textbox_hour = xml:InitEditBox("panel:textbox_hour",self.panel)
+	self:Register(self.textbox_hour,"on_textbox_hour_changed")
+	self:AddCallback("on_textbox_hour_changed",ui_events.EDIT_TEXT_COMMIT,self.on_textbox_hour_changed,self)
+	self.textbox_hour:SetText(HUD.hours)
+
+	self.textbox_minute = xml:InitEditBox("panel:textbox_minute",self.panel)
+	self:Register(self.textbox_minute,"on_textbox_minute_changed")
+	self:AddCallback("on_textbox_minute_changed",ui_events.EDIT_TEXT_COMMIT,self.on_textbox_minute_changed,self)
+	self.textbox_minute:SetText(HUD.minutes)
+
+	self.textbox_second = xml:InitEditBox("panel:textbox_second",self.panel)
+	self:Register(self.textbox_second,"on_textbox_second_changed")
+	self:AddCallback("on_textbox_second_changed",ui_events.EDIT_TEXT_COMMIT,self.on_textbox_second_changed,self)
+	self.textbox_second:SetText(HUD.seconds)
+
+	self.button_change_time = xml:Init3tButton("panel:button_change_time", self.panel)
+	self:Register(self.button_change_time, "on_button_change_time_clicked")
+	self:AddCallback("on_button_change_time_clicked",ui_events.BUTTON_CLICKED,self.on_button_change_time_clicked,self)
+	self.button_change_time:SetWndSize(vector2():set(self.button_change_time:GetWidth() * self.ratio, self.button_change_time:GetHeight()))
+end
+
+function zl_ui_run_settings:show()
+	self.textbox_hour:SetText(HUD.hours)
+	self.textbox_minute:SetText(HUD.minutes)
+	self.textbox_second:SetText(HUD.seconds)
+	self:ShowDialog(true)
+	_G.KEYS_UNLOCK = false
+end
+
+function zl_ui_run_settings:OnKeyboard(dik, keyboard_action)  --virtual function
+	local res = CUIScriptWnd.OnKeyboard(self,dik,keyboard_action)
+	if keyboard_action == ui_events.WINDOW_KEY_PRESSED then
+		if self:IsShown() then
+			self:on_textbox_red_changed()
+			self:on_textbox_green_changed()
+			self:on_textbox_blue_changed()
+			self:on_textbox_hour_changed()
+			self:on_textbox_minute_changed()
+			self:on_textbox_second_changed()
+		end		
+	end
+	return res
+end
+
+function zl_ui_run_settings:on_button_left_1_clicked()	
+	HUD.pos_x = HUD.pos_x - 1
+	HUD:update_ui()
+end
+
+function zl_ui_run_settings:on_button_right_1_clicked()
+	HUD.pos_x = HUD.pos_x + 1
+	HUD:update_ui()
+end
+
+function zl_ui_run_settings:on_button_up_1_clicked()
+	HUD.pos_y = HUD.pos_y - 1
+	HUD:update_ui()
+end
+
+function zl_ui_run_settings:on_button_down_1_clicked()
+	HUD.pos_y = HUD.pos_y + 1
+	HUD:update_ui()
+end
+
+function zl_ui_run_settings:on_button_left_10_clicked()
+	HUD.pos_x = HUD.pos_x - 10
+	HUD:update_ui()
+end
+
+function zl_ui_run_settings:on_button_right_10_clicked()
+	HUD.pos_x = HUD.pos_x + 10
+	HUD:update_ui()
+end
+
+function zl_ui_run_settings:on_button_up_10_clicked()
+	HUD.pos_y = HUD.pos_y - 10
+	HUD:update_ui()
+end
+
+function zl_ui_run_settings:on_button_down_10_clicked()
+	HUD.pos_y = HUD.pos_y + 10
+	HUD:update_ui()
+end
+
+function zl_ui_run_settings:on_button_left_100_clicked()
+	HUD.pos_x = HUD.pos_x - 100
+	HUD:update_ui()
+end
+
+function zl_ui_run_settings:on_button_right_100_clicked()
+	HUD.pos_x = HUD.pos_x + 100
+	HUD:update_ui()
+end
+
+function zl_ui_run_settings:on_button_up_100_clicked()
+	HUD.pos_y = HUD.pos_y - 100
+	HUD:update_ui()
+end
+
+function zl_ui_run_settings:on_button_down_100_clicked()
+	HUD.pos_y = HUD.pos_y + 100
+	HUD:update_ui()
+end
+
+function zl_ui_run_settings:on_button_shadow_clicked()
+	HUD:toggle_shadow()
+	HUD:update_ui()
+end
+
+function zl_ui_run_settings:on_button_faction_clicked()
+	HUD:toggle_faction()
+	HUD:update_ui()
+end
+
+function zl_ui_run_settings:on_button_faction_flip_clicked()
+	HUD:flip_faction()
+	HUD:update_ui()
+end
+
+function zl_ui_run_settings:on_button_save_clicked()
+	self:HideDialog()
+	HUD:update_ui()
+	HUD:save()
+	_G.KEYS_UNLOCK = true
+end
+
+function zl_ui_run_settings:on_textbox_red_changed()
+	local value = self.textbox_red:GetText()
+	
+	if #value == 0 then
+		return
+	end
+
+	local red = tonumber(value)
+	if red ~= nil then
+		HUD.color_red = self:clamp_color(red)
+		self.textbox_red:SetText(HUD.color_red)
+	else
+		self.textbox_red:SetText(value)
+	end
+
+	HUD:update_ui()
+end
+
+function zl_ui_run_settings:on_textbox_green_changed()
+	local value = self.textbox_green:GetText()
+
+	if #value == 0 then
+		return
+	end
+
+	local green = tonumber(value)
+	if green ~= nil then
+		HUD.color_green = self:clamp_color(green)
+		self.textbox_green:SetText(HUD.color_green)
+	else
+		self.textbox_green:SetText(value)
+	end
+
+	HUD:update_ui()
+end
+
+function zl_ui_run_settings:on_textbox_blue_changed()
+	local value = self.textbox_blue:GetText()
+
+	if #value == 0 then
+		return
+	end
+
+	local blue = tonumber(value)
+	if blue ~= nil then
+		HUD.color_blue = self:clamp_color(blue)
+		self.textbox_blue:SetText(HUD.color_blue)
+	else
+		self.textbox_blue:SetText(value)
+	end
+
+	HUD:update_ui()
+end
+
+function zl_ui_run_settings:clamp_color(value)
+	if value < 0 then
+		return 0
+	elseif value > 255 then
+		return 255
+	end
+	return value
+end
+
+function zl_ui_run_settings:on_textbox_hour_changed()
+	local value = self.textbox_hour:GetText()
+
+	if #value == 0 then
+		return
+	end
+
+	local hours = tonumber(value)
+	if hours ~= nil then
+		if hours < 0 then
+			hours = 0
+		elseif hours > 9999 then
+			hours = 9999
+		end
+		HUD.hours = hours
+		self.textbox_hour:SetText(HUD.hours)
+	else
+		self.textbox_hour:SetText(value)
+	end
+end
+
+function zl_ui_run_settings:on_textbox_minute_changed()
+	local value = self.textbox_minute:GetText()
+
+	if #value == 0 then
+		return
+	end
+
+	local minutes = tonumber(value)
+	if minutes ~= nil then
+		if minutes < 0 then
+			minutes = 0
+		elseif minutes > 59 then
+			minutes = 59
+		end
+		HUD.minutes = minutes
+		self.textbox_minute:SetText(HUD.minutes)
+	else
+		self.textbox_minute:SetText(value)
+	end
+end
+
+function zl_ui_run_settings:on_textbox_second_changed()
+	local value = self.textbox_second:GetText()
+
+	if #value == 0 then
+		return
+	end
+
+	local seconds = tonumber(value)
+	if seconds ~= nil then
+		if seconds < 0 then
+			seconds = 0
+		elseif seconds > 59 then
+			seconds = 59
+		end
+		HUD.seconds = seconds
+		self.textbox_second:SetText(HUD.seconds)
+	else
+		self.textbox_second:SetText(value)
+	end
+end
+
+function zl_ui_run_settings:on_button_change_time_clicked()
+	local hours_raw = self.textbox_hour:GetText()
+	local minutes_raw = self.textbox_minute:GetText()
+	local seconds_raw = self.textbox_second:GetText()
+	
+	local hours = tonumber(hours_raw)
+	if hours == nil then
+		hours = 0
+	end
+	local minutes = tonumber(minutes_raw)
+	if minutes == nil then
+		minutes = 0
+	end
+	local seconds = tonumber(seconds_raw)
+	if seconds == nil then
+		seconds = 0
+	end
+	
+	local hours_seconds = hours * 60 * 60
+	local minutes_seconds = minutes * 60
+
+	HUD.hours = hours
+	HUD.minutes = minutes
+	HUD.seconds = seconds
+	HUD.milliseconds = 0
+	HUD.run_time = seconds + minutes_seconds + hours_seconds
+end
+
+

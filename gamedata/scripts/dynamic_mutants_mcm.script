@@ -1,0 +1,39 @@
+function on_mcm_load()
+    op = {
+    	id = "dynamic_mutants", sh = true, gr = {
+	    	{id = "banner", type = "slide", text = "ui_mcm_dynamic_mutants_title", size = {512, 50}, spacing = 20},
+	        {id = "dyn_mutants_update_period", type = "track", val = 2, def = 15, min = 0, max = 15, step = 1},
+	    	{id = "line", type = "line"},
+	        {id = "dyn_mutants_target_numbers", type = "track", val = 2, def = 1500, min = 0, max = 2000, step = 50},
+	        {id = "line", type = "line"},
+	        {id = "dyn_mutants_enable_all_additional_mutants", type = "check", val = 1, def = false},
+	        {id = "dyn_mutants_enable_volk", type = "check", val = 1, def = false},
+	        {id = "dyn_mutants_enable_medved", type = "check", val = 1, def = false},
+	        {id = "dyn_mutants_enable_tark", type = "check", val = 1, def = false},
+	        {id = "dyn_mutants_enable_piranha", type = "check", val = 1, def = true},
+	        {id = "dyn_mutants_enable_shepherd_fox_birds", type = "check", val = 1, def = true},
+	        {id = "dyn_mutants_enable_monster_boar", type = "check", val = 1, def = false},
+	        {id = "dyn_mutants_enable_vendigo", type = "check", val = 1, def = false},
+	        {id = "line", type = "line"},
+	        {id = "enabled_noct_mutants_pda_messages", type = "check", val = 1, def = true},
+	        {id = "dyn_noct_mutants_attacks_strength", type = "track", val = 2, def = 35, min = 0, max = 100, step = 5},
+	        {id = "line", type = "line"},
+	        {id = "amb_anomalies_enabled", type = "check", val = 1, def = true},
+	        {id = "amb_anomalies_density_factor", type = "track", val = 2, def = 50, min = 0, max = 100, step = 5},
+	        {id = "line", type = "line"},
+	        {id = "line", type = "line"},
+	        {id = "mutants_enable_removal_of_vanilla_mutants", type = "check", val = 1, def = false},
+	        {id = "mutants_remove_snork", type = "check", val = 1, def = false},
+	        {id = "mutants_remove_lurker", type = "check", val = 1, def = false},
+	        {id = "mutants_remove_psysucker", type = "check", val = 1, def = false},
+	        {id = "mutants_remove_boar", type = "check", val = 1, def = false},
+	        {id = "mutants_remove_cat", type = "check", val = 1, def = false},
+	        {id = "mutants_remove_misc", type = "check", val = 1, def = false},
+	        {id = "line", type = "line"},
+	        {id = "dyn_mutants_kill_new_dyn_mutants", type = "check", val = 1, def = false},
+	        {id = "dyn_mutants_kill_dyn_mutants", type = "check", val = 1, def = false},
+	        {id = "dyn_mutants_kill_em_all", type = "check", val = 1, def = false},
+	    }
+    }
+    return op
+end

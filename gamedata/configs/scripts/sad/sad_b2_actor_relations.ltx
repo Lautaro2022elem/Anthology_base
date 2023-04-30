@@ -1,0 +1,14 @@
+[logic] 
+active = sr_idle@10
+
+[sr_idle@10]
+on_info = {+sad_maxim_actor_enemy} sr_idle@enemies, {+sad_actor_enemy_b2} sr_idle@enemies, {+sad_radik_actor_enemy} sr_idle@enemies, {+sad_grisha_enemy} sr_idle@enemies, {+sad_final_task_enemy} sr_idle@enemies, {+sad_volodya_actor_enemy} sr_idle@enemies
+
+[sr_idle@enemies]
+on_info = sr_idle@20 %+sad_actor_enemy_to_someone +sad_maxim_actor_enemy +sad_actor_enemy_b2 +sad_radik_actor_enemy +sad_grisha_enemy +sad_final_task_enemy +sad_volodya_actor_enemy =set_squad_enemy_to_actor(sad_b3a_stalker_ataka_squad) =set_squad_enemy_to_actor(sad_b2_stalker_maxim_squad) =set_squad_enemy_to_actor(sad_stalker_radik_squad)%
+
+[sr_idle@20]
+on_info = sr_idle@30 %=set_faction_community_to_actor(stalker:enemy) +sad_start_merc_simulation% ;%=sad_gulag_stalkers_enemy(sad_b2:stalker)%
+
+[sr_idle@30]
+;on_timer = 15000 | sr_idle@20

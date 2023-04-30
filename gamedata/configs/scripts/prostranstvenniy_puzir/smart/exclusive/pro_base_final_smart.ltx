@@ -1,0 +1,206 @@
+;=========meet_stalker_korpys========
+[meet@korpys_stalker]
+close_anim 		= nil
+close_victim 	= nil
+far_anim 		= nil
+far_victim 		= nil
+close_distance 	= 0
+far_distance 	= 0
+use = {=actor_enemy} false, {=dist_to_actor_le(3)} true, false
+snd_on_use = {!dist_to_actor_le(3)} nil
+meet_on_talking = false
+close_victim = actor
+allow_break = false
+trade_enable = false
+;==================================
+
+
+[logic@pro_base_final_animpoint_1]
+active = animpoint@animpoint_1
+level_spot = quest_npc
+prior = 80
+suitable = {=check_npc_name(pb_rezak)} true, false
+
+[animpoint@animpoint_1]
+cover_name = pro_base_rezak_animpoint
+avail_animations = animpoint_stay_wall
+on_info = {+pro_epidemy_in_base_start -pro_scene_epidemy_two_started} remark@epidemy_1
+on_info2 = {+pro_dialog_duty_tachenko_end_line_done} %=release_npc%
+gather_items_enabled = false
+corpse_detection_enabled = false
+combat_ignore_keep_when_attacked = true 
+combat_ignore_cond = true
+use_camp = true
+meet = meet@pb_rezak
+
+[remark@epidemy_1]
+anim = wait_wounded
+target = path | pro_smart_terrain_3_0_murad_on_base_walk, 0
+on_info = {+pro_scene_epidemy_two_started} animpoint@animpoint_1
+combat_ignore_cond = true 
+combat_ignore_keep_when_attacked = true 
+gather_items_enabled = false
+corpse_detection_enabled = false
+meet = meet@pb_rezak
+
+[meet@pb_rezak]:meet@korpys_stalker
+close_snd_hello = pb_rezak_meet_after
+close_snd_bye 	= pb_rezak_meet_bye
+close_snd_distance = 3
+
+;================================================
+
+[logic@pro_base_final_animpoint_2]
+active = animpoint@animpoint_2
+level_spot = quest_npc
+prior = 80
+suitable = {=check_npc_name(pb_snake)} true, false
+
+[animpoint@animpoint_2]
+cover_name = pro_base_snake_cover
+on_info = {+pro_dialog_duty_tachenko_end_line_done} %=release_npc%
+gather_items_enabled = false
+corpse_detection_enabled = false
+combat_ignore_keep_when_attacked = true 
+combat_ignore_cond = true
+use_camp = true
+meet = meet@pb_snake
+
+[meet@pb_snake]:meet@korpys_stalker
+close_snd_hello = pb_snake_meet
+close_snd_bye 	= pb_snake_meet_bye
+close_snd_distance = 3
+meet_dialog = pb_quest_line_snake_start
+
+;================================================
+
+[logic@pro_base_final_walker_1]
+active = walker@walker_1
+prior = 50
+suitable = {=check_npc_name(pb_dubolom)} true, false
+
+[walker@walker_1]
+path_walk = murad_on_base_walk
+path_look = murad_on_base_look
+on_info = {+pro_epidemy_in_base_start -pro_scene_epidemy_two_started} remark@epidemy_2
+on_info2 = {+pro_dialog_duty_tachenko_end_line_done} %=release_npc%
+gather_items_enabled = false
+corpse_detection_enabled = false
+combat_ignore_keep_when_attacked = true 
+combat_ignore_cond = true
+use_camp = true
+meet = meet@pb_dubolom
+
+[remark@epidemy_2]
+anim = wait_wounded
+target = path | pro_smart_terrain_3_0_murad_on_base_look, 0
+on_info = {+pro_scene_epidemy_two_started} %=release_npc%
+combat_ignore_cond = true 
+combat_ignore_keep_when_attacked = true 
+gather_items_enabled = false
+corpse_detection_enabled = false
+meet = meet@pb_dubolom
+
+[meet@pb_dubolom]:meet@korpys_stalker
+
+;================================================
+
+[logic@pro_final_soldier_oleynik_animpoint]
+active = animpoint@animpoint_fin
+prior = 50
+suitable = {=check_npc_name(pb_soldier_oleynik)} true, false
+
+[animpoint@animpoint_fin]
+cover_name = pro_oleynik_end_sit_animpoint_1
+on_info = {+pro_dialog_duty_tachenko_end_line_done} %=release_npc%
+gather_items_enabled = false
+corpse_detection_enabled = false
+combat_ignore_keep_when_attacked = true 
+combat_ignore_cond = true
+use_camp = true
+meet = meet@pb_soldier_oleynik
+
+[meet@pb_soldier_oleynik]:meet@korpys_stalker
+meet_dialog = pb_soldier_oleynik_meet_final
+
+;================================================
+
+[logic@pro_base_final_walker_2]
+active = walker@walker_2
+prior = 50
+suitable = {=check_npc_name(pb_markus_novice)} true, false
+
+[walker@walker_2]
+path_walk = markus_on_base_walk
+path_look = markus_on_base_look
+on_info = {+pro_epidemy_in_base_start -pro_scene_epidemy_two_started} remark@epidemy_3
+on_info2 = {+pro_dialog_duty_tachenko_end_line_done} %=release_npc%
+gather_items_enabled = false
+corpse_detection_enabled = false
+combat_ignore_keep_when_attacked = true 
+combat_ignore_cond = true
+use_camp = true
+meet = meet@pb_markus_novice
+
+[remark@epidemy_3]
+anim = wait_wounded
+target = path | pro_smart_terrain_3_0_markus_on_base_look, 0
+on_info = {+pro_scene_epidemy_two_started} walker@walker_2
+combat_ignore_cond = true 
+combat_ignore_keep_when_attacked = true 
+gather_items_enabled = false
+corpse_detection_enabled = false
+meet = meet@pb_markus_novice
+
+[meet@pb_markus_novice]:meet@korpys_stalker
+close_snd_hello = pb_markus_meet
+close_snd_bye 	= pb_markus_meet_bye
+close_snd_distance = 3
+
+;================================================
+
+[logic@pro_base_final_walker_3]
+active = walker@walker_3
+prior = 50
+suitable = {=check_npc_name(pb_moskit)} true, false
+
+[walker@walker_3]
+path_walk = moskit_on_base_walk
+path_look = moskit_on_base_look
+on_info = {+pro_dialog_duty_tachenko_end_line_done} %=release_npc%
+gather_items_enabled = false
+corpse_detection_enabled = false
+combat_ignore_keep_when_attacked = true 
+combat_ignore_cond = true
+use_camp = true
+meet = meet@pb_moskit
+
+[meet@pb_moskit]:meet@korpys_stalker
+close_snd_hello = pb_moskit_meet
+close_snd_bye 	= pb_moskit_meet_bye
+close_snd_distance = 3
+
+;================================================
+
+[logic@pro_base_final_walker_4]
+active = animpoint@animpoint_3
+prior = 50
+suitable = {=check_npc_name(pb_murad_on_base)} true, false
+
+[animpoint@animpoint_3]
+cover_name = pro_murad_on_base
+avail_animations = guard_na
+on_info = {+pro_dialog_duty_tachenko_end_line_done} %=release_npc%
+gather_items_enabled = false
+corpse_detection_enabled = false
+combat_ignore_keep_when_attacked = true 
+combat_ignore_cond = true
+use_camp = true
+meet = meet@pb_murad
+
+[meet@pb_murad]:meet@korpys_stalker
+close_snd_hello = pb_murad_npc_meet
+close_snd_bye 	= pb_murad_npc_meet_bye
+close_snd_distance = 3
+
+;================================================

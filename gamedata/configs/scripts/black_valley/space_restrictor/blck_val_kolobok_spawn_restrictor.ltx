@@ -1,0 +1,10 @@
+[logic]
+active = sr_idle@turn_off
+
+[sr_idle@turn_off]
+on_info = sr_idle@wait %=turn_off(blck_val_kolobok_lamp)%
+
+[sr_idle@wait]
+on_info = {+blck_val_actor_meet_from_security_done =dist_to_actor_ge(30)} sr_idle@nil %=spawn_object(blck_val_af_fuzz_kolobok:blck_val_kolobok_spawn_point) =turn_on(blck_val_kolobok_lamp)%
+
+[sr_idle@nil]

@@ -1,0 +1,29 @@
+<window>
+	<minimap>
+		<level_frame x="0.0825" y="0.1125" width="0.16275" height="0.16275" stretch="1" alignment="c"/>
+
+		<background width="0.225" height="0.225" stretch="1" alignment="c">
+			<texture>ui_inGame2_Radar_main_window</texture>
+		</background>
+
+		
+	    <clock_wnd x="0.14" y="0.84" width="2.25" height="0.75" alignment="c">
+	        <text x="1" y="-1" font="letterica16" r="229" g="156" b="29" align="c" vert_align="c"/>
+	    </clock_wnd>
+
+		<compass x="0.49" y="0.49" width="143" height="143" stretch="1" heading="1" alignment="c">
+			<texture>ui_inGame2_Radar_compass</texture>
+		</compass>
+
+		<center width="4" height="4" alignment="c" stretch="1">
+			<texture >ui_minimap_point</texture>
+		</center>
+
+		<static_counter x="-0.150" y="-0.050" width="120" height="140" alignment="c">
+			<text_static width="-100" height="-140">
+				<text  align="c" font="letterica16" r="229" g="156" b="29" a="200" />
+			</text_static>
+		</static_counter>
+
+	</minimap>
+</window>

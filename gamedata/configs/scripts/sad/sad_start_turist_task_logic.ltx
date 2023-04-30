@@ -1,0 +1,103 @@
+[logic]
+active = nil; sr_idle@10
+
+[sr_idle@10]
+on_info = {+sad_actor_enemy_to_someone} sr_idle@nil, {+sad_mutny_gone} sr_idle@11
+
+[sr_idle@11]
+on_info = {+sad_actor_enemy_to_someone} sr_idle@nil, {+sad_ran_cowboy_gone} sr_idle@init
+
+[sr_idle@init]
+on_info = sr_idle@init_1 %-sad_turist_stay_here -sad_turist_step_back -sad_turist_task_start -sad_turist_task_done -sad_turist_squad_dead -sad_turist_task_active -sad_turist_visit_some_place%
+
+[sr_idle@init_1]
+on_info = sr_idle@init_2 %-turist_ignore_follow_actor_20 -turist_ignore_by_dist_30 -turist_ignore_by_dist_50 -turist_ignore_until_actor +turist_ignore_default%
+;%-sad_turist_visit_sim_5 -sad_turist_visit_sim_9 -sad_turist_visit_sim_17 -sad_turist_visit_sim_18 -sad_turist_sim_5_visited -sad_turist_sim_9_visited -sad_turist_sim_17_visited -sad_turist_sim_18_visited -sad_turist_sim_15_visited -sad_turist_sim_15_visited -sad_turist_visit_cave -sad_turist_cave_visited%
+
+[sr_idle@init_2]
+on_info = sr_idle@100 %=create_squad(sad_stalker_guide_squad:sad_start) =create_squad(sad_turist_squad:sad_start)%
+
+[sr_idle@100]
+on_info = {+sad_turist_enemy} sr_idle@enemy
+on_info2 = {+sad_turist_task_start} sr_idle@action %=give_task(sad_turpohod_task) =sad_register_turist_squad(sad_turist_squad) -sad_turist_visit_some_place%
+
+; ------------------------------------------------------------------------------------------------------------------ main
+[sr_idle@action]
+on_info = {+sad_turist_enemy} sr_idle@enemy, {!squad_exist(sad_turist_squad)} sr_idle@dead, {+sad_turist_task_done} sr_idle@done
+on_info2 = {+sad_turist_visit_some_place} sr_idle@teleport, {=sad_dist_to_squad_ge(sad_turist_squad:4900)} sr_idle@far %=send_tip(sad_turist_far) -sad_turist_stay_here%
+on_info3 = {=sad_turist_visit_check(sad_turist_squad)} sr_idle@visit %+sad_turist_visit_some_place =send_tip(sad_turist_visit_0)%
+
+[sr_idle@visit]
+on_info = {+sad_turist_enemy} sr_idle@enemy, {!squad_exist(sad_turist_squad)} sr_idle@dead, {+sad_turist_task_done} sr_idle@done
+on_game_timer = 300 | sr_idle@visit_1
+
+[sr_idle@visit_1]
+on_info = {-sad_turist_sim_5_visited +sad_turist_visit_sim_5} sr_idle@visit_2 %=sad_turist_visit_action(sim_5)%, sr_idle@visit_2
+
+[sr_idle@visit_2]
+on_info = {-sad_turist_sim_9_visited +sad_turist_visit_sim_9} sr_idle@visit_3 %=sad_turist_visit_action(sim_9)%, sr_idle@visit_3
+
+[sr_idle@visit_3]
+on_info = {-sad_turist_sim_17_visited +sad_turist_visit_sim_17} sr_idle@visit_4 %=sad_turist_visit_action(sim_17)%, sr_idle@visit_4
+
+[sr_idle@visit_4]
+on_info = {-sad_turist_sim_18_visited +sad_turist_visit_sim_18} sr_idle@visit_5 %=sad_turist_visit_action(sim_18)%, sr_idle@visit_5
+
+[sr_idle@visit_5]
+on_info = {-sad_turist_sim_15_visited +sad_turist_visit_sim_15} sr_idle@visit_6 %=sad_turist_visit_action(sim_15)%, sr_idle@visit_6
+
+[sr_idle@visit_6]
+on_info = {-sad_turist_cave_visited +sad_turist_visit_cave} sr_idle@visit_end %=sad_turist_visit_action(cave)%, sr_idle@visit_end
+
+[sr_idle@visit_end]
+on_info = sr_idle@action %-sad_turist_visit_some_place =send_tip(sad_turist_visit_end)%
+
+[sr_idle@teleport]
+on_info = {+sad_turist_enemy} sr_idle@enemy, {!squad_exist(sad_turist_squad)} sr_idle@dead, {+sad_turist_task_done} sr_idle@done
+on_info2 = {-sad_turist_visit_some_place} sr_idle@action
+on_info3 = {=sad_dist_to_squad_ge(sad_turist_squad:1000)} %=teleport_squad_near_actor(sad_turist_squad)%
+
+[sr_idle@far]
+on_info = {+sad_turist_enemy} sr_idle@enemy, {!squad_exist(sad_turist_squad)} sr_idle@dead, {+sad_turist_task_done} sr_idle@done
+on_info2 = {!sad_dist_to_squad_ge(sad_turist_squad:4500)} sr_idle@action
+
+; ------------------------------------------------------------------------------------------------------------------ na baze
+;[sr_idle@b2_wait]
+;on_info3 = {!actor_in_zone(sad_b2_sr_no_assault)} sr_idle@action
+
+; ------------------------------------------------------------------------------------------------------------------ final
+[sr_idle@done]
+on_info = sr_idle@done_1 %-sad_turist_task_active =sad_remove_turist_hud =run_postprocess(fade_in:9555) =disable_ui%
+
+[sr_idle@done_1]
+on_timer = 1000 | sr_idle@done_2 %=remove_squad(sad_stalker_guide_squad) =remove_squad(sad_turist_squad)%
+
+[sr_idle@done_2]
+on_timer = 3000 | sr_idle@wait_for_time %=stop_postprocess(9555) =enable_ui%
+
+
+[sr_idle@dead]
+on_info = sr_idle@locman_out_1 %+sad_turist_squad_dead -sad_turist_task_active =sad_remove_turist_hud -sad_turist_locman_go_zaton%
+
+[sr_idle@locman_out_1]
+on_info = {+sad_turist_enemy} sr_idle@nil
+on_info2 = {+sad_turist_locman_go_zaton} sr_idle@wait_for_time %=remove_squad(sad_stalker_guide_squad)%
+
+[sr_idle@enemy]
+on_info = sr_idle@nil %-sad_turist_task_active =sad_remove_turist_hud =send_tip(sad_turist_never_again)%
+
+; ------------------------------------------------------------------------------------------------------------------ wait for new
+[sr_idle@wait_for_time]
+on_info = {+sad_actor_enemy_to_someone} sr_idle@nil
+on_game_timer = 50000 | sr_idle@wait_for_dist
+
+[sr_idle@wait_for_dist]
+on_game_timer = 60 | sr_idle@wait_for_dist_check
+
+[sr_idle@wait_for_dist_check]
+on_info = {+sad_actor_enemy_to_someone} sr_idle@nil, {=sad_dist_to_path_ge(sad_start_locman_1_walk:6400)} sr_idle@init
+
+[sr_idle@remove_hud]
+on_info = sr_idle@nil %=sad_remove_turist_hud%
+
+[sr_idle@nil]

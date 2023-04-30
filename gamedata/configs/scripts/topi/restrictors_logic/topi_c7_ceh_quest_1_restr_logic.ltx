@@ -1,0 +1,14 @@
+[logic] 
+active = sr_idle@start 
+
+[sr_idle@start] 
+on_info  = {+topi_start +topi_p1_patrol_ceh_talking =actor_in_zone(topi_c7_ceh_quest_1_restr) =actor_has_item(topi_c7_quest_device_1)} sr_idle@tutorial %=run_tutorial(topi_c7_ceh_quest_1_restr_tutor)% 
+on_info2 = {+topi_start +topi_c7_ceh_quest_device_1_set} sr_idle@nil 
+
+[sr_idle@tutorial] 
+on_info   = {+topi_p1_patrol_ceh_talking !actor_in_zone(topi_c7_ceh_quest_1_restr)} sr_idle@start %=stop_tutorial% 
+on_info2 = {+topi_c7_ceh_quest_device_1_set} sr_idle@nil %=stop_tutorial%
+on_info3 = {-topi_c7_ceh_quest_device_1_set +topi_c7_ceh_quest_device_1_set_close} sr_idle@start %=stop_tutorial%
+on_info4 = {!has_active_tutorial} sr_idle@start 
+
+[sr_idle@nil] 

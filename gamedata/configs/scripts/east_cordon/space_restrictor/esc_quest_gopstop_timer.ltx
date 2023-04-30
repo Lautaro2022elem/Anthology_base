@@ -1,0 +1,25 @@
+[logic]
+active = sr_idle
+
+[sr_idle]
+on_info = {+spectrum_project_start +esc_sms_logoped_predlog_info} sr_idle@timer_1
+
+[sr_idle@timer_1]
+on_game_timer = 10800 | sr_idle@0
+
+[sr_idle@0]
+on_info = {-esc_logoped_quest_gopstop_dialog} %+esc_quest_gopstop_reversed%
+on_info2 = {+esc_logoped_quest_gopstop_dialog} sr_idle@1
+
+[sr_idle@1]
+on_info = {+esc_logoped_predlog_soglasen} sr_idle@timer_2 
+on_info2 = {+esc_logoped_predlog_not} sr_idle@timer_2 
+
+[sr_idle@timer_2]
+on_game_timer = 21600 | sr_idle@2
+
+[sr_idle@2]
+on_info = {-esc_npc_moskit_dead} sr_idle@nil %+esc_quest_gopstop_fail%
+on_info2 = {+esc_npc_moskit_dead} sr_idle@nil
+
+[sr_idle@nil]

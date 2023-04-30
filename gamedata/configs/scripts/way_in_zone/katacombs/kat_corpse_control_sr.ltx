@@ -1,0 +1,10 @@
+[logic]
+active = sr_idle@spawn_corpse
+
+[sr_idle@spawn_corpse]
+on_info = {+katambs_door_opened_2} sr_idle@check_item %=spawn_corpse(zav_freedom_stalker:kat_corpse_stalker_sp) =spawn_object(kat_pda_stalker_lock:kat_corpse_stalker_pda_sp)%
+
+[sr_idle@check_item]
+on_info = {=actor_has_item(kat_pda_stalker_lock)} sr_idle@nil %=give_task(kat_voron_locked_pda_quest) =hero_thoughts_19 +kat_actor_has_pda_vorona%
+
+[sr_idle@nil]

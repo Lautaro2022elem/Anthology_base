@@ -1,0 +1,738 @@
+;------------------------------------------------------------------------------------------
+;------------------ Артефакты для гравитационной аномалии ---------------------------------
+;------------------------------------------------------------------------------------------
+[af_raibloko]:af_base
+$spawn				= "artefacts\af_raibloko"
+class				= ARTEFACT
+kind			                             = i_arty
+visual				= dynamics\artefacts\af_raibloko.ogf
+description			= st_af_raibloko_descr
+inv_name			= st_af_raibloko_name
+inv_name_short		        = st_af_raibloko_name
+inv_weight			= 0.4
+inv_grid_x			= 14
+inv_grid_y			= 44
+cost				= 25000
+jump_height			= .9
+particles			= artefact\af_gravi_idle
+det_show_particles		= artefact\af_gravi_show
+det_hide_particles		= artefact\af_gravi_hide
+af_rank				= 3
+breeding_type                   = 3
+lights_enabled                  = true
+trail_light_color 		= 0.4,0.4,0
+trail_light_range 		= 2.0
+artefact_activation_seq		= af_activation_gravi
+health_restore_speed		= 0
+radiation_restore_speed		= 0.002
+satiety_restore_speed		= 0
+power_restore_speed		= 0
+bleeding_restore_speed		= 0
+additional_inventory_weight	= 3
+additional_inventory_weight2	= 3
+hit_absorbation_sect            = af_raibloko_absorbation
+icons_texture        = ui\ui_icon_equipment_2
+
+[af_raibloko_absorbation]
+burn_immunity 			= 0				
+strike_immunity 		= 0
+shock_immunity 			= 0
+wound_immunity 			= 0
+radiation_immunity 		= 0
+telepatic_immunity 		= 0.03
+chemical_burn_immunity 	        = 0
+explosion_immunity 		= 0
+fire_wound_immunity  	        = 0
+
+;------------------------------------------------------------------------------------------
+[af_poipruz]:af_base
+$spawn				= "artefacts\af_poipruz"
+class				= ARTEFACT 
+kind			                             = i_arty 	
+visual				= dynamics\artefacts\af_psi_field.ogf
+description			= st_af_poipruz_descr
+inv_name			= st_af_poipruz_name
+inv_name_short		        = st_af_poipruz_name
+inv_weight			= 0.5
+inv_grid_x			= 18
+inv_grid_y			= 44
+cost				= 8000
+jump_height			= .5
+particles			= artefact\af_gravi_idle
+det_show_particles		= artefact\af_gravi_show
+det_hide_particles		= artefact\af_gravi_hide
+af_rank				= 1
+breeding_type                   = 1
+lights_enabled                  = true
+trail_light_color 		= 0.4,0.4,0
+trail_light_range 		= 2.0
+health_restore_speed		= 0
+radiation_restore_speed		= -0.003
+satiety_restore_speed		= 0
+power_restore_speed		= 0
+bleeding_restore_speed		= 0
+hit_absorbation_sect		= af_poipruz_absorbation
+additional_inventory_weight	= 5
+additional_inventory_weight2	= 5
+artefact_activation_seq		= af_activation_bold
+icons_texture        = ui\ui_icon_equipment_2
+
+[af_poipruz_absorbation]
+burn_immunity 			= 0				
+strike_immunity 		= 0
+shock_immunity 			= 0
+wound_immunity 			= 0
+radiation_immunity 		= 0
+telepatic_immunity 		= 0
+chemical_burn_immunity 	        = 0
+explosion_immunity 		= 0
+fire_wound_immunity  	        = 0
+
+;------------------------------------------------------------------------------------------
+
+
+[af_seaej]:af_base
+$spawn 				= "artefacts\af_seaej"
+class   			= SCRPTART
+kind			                             = i_arty
+visual				= dynamics\artefacts\af_seaej.ogf
+description			= st_af_seaej_descr
+inv_name			= st_af_seaej_name
+inv_name_short			= st_af_seaej_name
+inv_weight			= 0.01
+inv_grid_x			= 22
+inv_grid_y			= 44
+jump_height			= 0.01
+cost				= 50000
+;particles			= artefact\af_gravi_idle
+det_show_particles		= artefact\af_gravi_show
+det_hide_particles		= artefact\af_gravi_hide
+af_rank				= 1
+breeding_type                   = 1
+lights_enabled 			= false
+trail_light_color 		= 1.0,1.0,0.75 ;1.0,0.9,0.5
+trail_light_range 		= 2.0
+can_trade			= true
+quest_item 			= false
+health_restore_speed		= 0
+radiation_restore_speed		= -0.009
+satiety_restore_speed		= 0
+power_restore_speed		= 0
+bleeding_restore_speed		= -0.005
+additional_inventory_weight	= 0
+additional_inventory_weight2	= 0
+hit_absorbation_sect 		= af_seaej_absorbation
+icons_texture        = ui\ui_icon_equipment_2
+
+[af_seaej_absorbation]
+burn_immunity 			= 0
+strike_immunity			= 0
+shock_immunity 			= 0
+wound_immunity 			= 0
+radiation_immunity 		= 0
+telepatic_immunity 		= 0
+chemical_burn_immunity 		= 0
+explosion_immunity 		= 0
+fire_wound_immunity  		= 0
+
+;------------------------------------------------------------------------------------------
+;------------------ Артефакты для термальной аномалии -------------------------------------
+;------------------------------------------------------------------------------------------
+
+[af_mayatnik]:af_base
+$spawn 				= "artefacts\af_mayatnik"
+class   			= ARTEFACT
+kind			                             = i_arty
+visual				= dynamics\artefacts\af_mayatnik.ogf
+description			= st_af_mayatnik_descr
+inv_name			= st_af_mayatnik_name
+inv_name_short		        = st_af_mayatnik_name
+inv_weight			= 0.5
+inv_grid_x			= 29
+inv_grid_y			= 44
+cost				= 90000
+impulse_threshold		= 10
+radius				= 10
+strike_impulse			= 20
+particles			= artefact\af_thermal_idle
+det_show_particles		= artefact\af_thermal_show
+det_hide_particles		= artefact\af_thermal_hide
+af_rank				= 1
+breeding_type                   = 1
+lights_enabled                  = true
+trail_light_color 		= 0.9,0.4,0.2
+trail_light_range 		= 2.0
+health_restore_speed		= 0
+radiation_restore_speed		= 0.006
+satiety_restore_speed		= 0
+power_restore_speed		= 0
+bleeding_restore_speed		= 0
+additional_inventory_weight	= 0
+additional_inventory_weight2	= 0
+hit_absorbation_sect            = af_mayatnik_absorbation
+icons_texture        = ui\ui_icon_equipment_2
+
+[af_mayatnik_absorbation]
+burn_immunity 			= 0.04				
+strike_immunity 		= 0
+shock_immunity 			= 0
+wound_immunity 			= 0
+radiation_immunity 		= 0
+telepatic_immunity 		= 0
+chemical_burn_immunity 	        = 0
+explosion_immunity 		= 0
+fire_wound_immunity  	        = 0
+
+
+;------------------------------------------------------------------------------------------
+
+
+[af_lifekam]:af_base
+$spawn 				= "artefacts\af_lifekam"
+class   			= ARTEFACT
+kind			                             = i_arty
+visual				= dynamics\artefacts\af_lifekam.ogf
+description			= st_af_lifekam_descr
+inv_name			= st_af_lifekam_name
+inv_name_short		        = st_af_lifekam_name
+inv_weight			= 0.5
+inv_grid_x			= 20
+inv_grid_y			= 44
+cost				= 80000
+impulse_threshold		= 10
+radius				= 10
+strike_impulse			= 20
+particles			= artefact\af_thermal_idle
+det_show_particles		= artefact\af_thermal_show
+det_hide_particles		= artefact\af_thermal_hide
+af_rank				= 1
+breeding_type                   = 1
+lights_enabled                  = true
+trail_light_color 		= 0.9,0.4,0.2
+trail_light_range 		= 2.0
+health_restore_speed		= 0.0035
+radiation_restore_speed		= 0
+satiety_restore_speed		= 0.4
+power_restore_speed		= 0.005
+bleeding_restore_speed		= 0
+additional_inventory_weight	= -20
+additional_inventory_weight2	= -20
+hit_absorbation_sect            = af_lifekam_absorbation
+icons_texture        = ui\ui_icon_equipment_2
+
+[af_lifekam_absorbation]
+burn_immunity 			= 0				
+strike_immunity 		= 0
+shock_immunity   		= -0.02
+wound_immunity 			= 0.1
+radiation_immunity 		= 0
+telepatic_immunity 		= -0.03
+chemical_burn_immunity 	        = 0
+explosion_immunity 		= 0
+fire_wound_immunity  	        = 0.25
+
+;------------------------------------------------------------------------------------------
+;------------------ Артефакты для химической аномалии -------------------------------------
+;------------------------------------------------------------------------------------------
+
+[af_vedsleza]:af_base
+$spawn				= "artefacts\af_vedsleza"
+class				= ARTEFACT
+kind			                             = i_arty
+visual				= dynamics\artefacts\af_vedsleza.ogf
+description			= st_af_vedsleza_descr
+inv_name			= st_af_vedsleza_name
+inv_name_short		        = st_af_vedsleza_name
+inv_weight			= 0.5
+inv_grid_x			= 16
+inv_grid_y			= 44
+cost				= 25000
+jump_height			= .01
+particles			= artefact\af_acidic_idle
+det_show_particles		= artefact\af_acidic_show
+det_hide_particles		= artefact\af_acidic_hide
+af_rank				= 1
+breeding_type                   = 1
+lights_enabled                  = true
+trail_light_color 		= 0.5,0.7,0.2
+trail_light_range 		= 2.0
+artefact_activation_seq		= af_activation_mincer
+health_restore_speed		= 0
+radiation_restore_speed		= 0.002
+satiety_restore_speed		= 0
+power_restore_speed		= 0
+bleeding_restore_speed		= 0
+additional_inventory_weight	= 0
+additional_inventory_weight2	= 0
+hit_absorbation_sect            = af_vedsleza_absorbation
+icons_texture        = ui\ui_icon_equipment_2
+
+[af_vedsleza_absorbation]
+burn_immunity 			= 0.07				
+strike_immunity 		= 0
+shock_immunity 			= 0
+wound_immunity 			= 0
+radiation_immunity 		= 0
+telepatic_immunity 		= 0
+chemical_burn_immunity 	        = 0.07
+explosion_immunity 		= 0
+fire_wound_immunity  	        = 0
+
+
+;------------------------------------------------------------------------------------------
+
+
+[af_gubka]:af_base
+$spawn 				= "artefacts\af_gubka"
+class   			= ARTEFACT
+kind			                             = i_arty
+visual				= dynamics\artefacts\af_gubka.ogf
+description			= st_af_gubka_descr
+inv_name			= st_af_gubka_name
+inv_name_short		        = st_af_gubka_name
+inv_weight			= 0.5
+inv_grid_x			= 25
+inv_grid_y			= 44
+cost				= 28000
+jump_height			= .3
+particles			= artefact\af_acidic_idle
+det_show_particles		= artefact\af_acidic_show
+det_hide_particles		= artefact\af_acidic_hide
+af_rank				= 3
+breeding_type                   = 3
+lights_enabled                  = true
+trail_light_color 		= 0.5,0.7,0.2
+trail_light_range 		= 2.0
+health_restore_speed		= 0
+radiation_restore_speed		= 0.005
+satiety_restore_speed		= 0
+power_restore_speed		= 0
+bleeding_restore_speed		= 0
+additional_inventory_weight	= 0
+additional_inventory_weight2	= 0
+hit_absorbation_sect            = af_gubka_absorbation
+icons_texture        = ui\ui_icon_equipment_2
+
+[af_gubka_absorbation]
+burn_immunity 			= 0				
+strike_immunity 		= 0
+shock_immunity 			= 0
+wound_immunity 			= 0
+radiation_immunity 		= 0
+telepatic_immunity 		= 0
+chemical_burn_immunity 	        = 0.06
+explosion_immunity 		= 0
+fire_wound_immunity  	        = 0
+
+
+;------------------------------------------------------------------------------------------
+
+
+[af_sluda]:af_base
+$spawn				= "artefacts\af_sluda"
+class				= ARTEFACT
+kind			                             = i_arty
+visual				= dynamics\artefacts\af_sluda.ogf
+description			= st_af_sluda_descr
+inv_name			= st_af_sluda_name
+inv_name_short		        = st_af_sluda_name
+inv_weight			= 0.5
+inv_grid_x			= 15
+inv_grid_y			= 44
+cost				= 50000
+jump_height			= .01
+particles			= artefact\af_acidic_idle
+det_show_particles		= artefact\af_acidic_show
+det_hide_particles		= artefact\af_acidic_hide
+af_rank				= 1
+breeding_type                   = 2
+lights_enabled                  = true
+trail_light_color 		= 0.5,0.7,0.2
+trail_light_range 		= 2.0
+artefact_activation_seq		= af_activation_mincer
+health_restore_speed		= 0.002
+radiation_restore_speed		= 0
+satiety_restore_speed		= 0.1
+power_restore_speed		= 0
+bleeding_restore_speed		= 0.004
+additional_inventory_weight	= 0
+additional_inventory_weight2	= 0
+hit_absorbation_sect            = af_sluda_absorbation
+icons_texture        = ui\ui_icon_equipment_2
+
+[af_sluda_absorbation]
+burn_immunity 			= 0				
+strike_immunity 		= 0
+shock_immunity 			= 0
+wound_immunity 			= 0
+radiation_immunity 		= 0
+telepatic_immunity 		= 0
+chemical_burn_immunity 	        = 0.08
+explosion_immunity 		= 0
+fire_wound_immunity  	        = 0
+
+;------------------------------------------------------------------------------------------
+;------------------ Артефакты для электрической аномалии ----------------------------------
+;------------------------------------------------------------------------------------------
+
+[af_oblivion]:af_base
+$spawn				= "artefacts\af_oblivion"
+class				= SCRPTART
+kind			                             = i_arty
+visual				= dynamics\artefacts\af_oblivion.ogf
+description			= st_af_oblivion_descr
+inv_name			= st_af_oblivion_name
+inv_name_short		        = st_af_oblivion_name
+inv_weight			= 0.5
+inv_grid_x			= 19
+inv_grid_y			= 44
+cost				= 13500
+jump_height			= .1
+particles			= artefact\af_electra_idle
+det_show_particles		= artefact\af_electra_show
+det_hide_particles		= artefact\af_electra_hide
+af_rank				= 2
+breeding_type                   = 2
+lights_enabled                  = true
+trail_light_color 		= 0.6,0.7,0.9
+trail_light_range 		= 2.0
+artefact_activation_seq		= af_activation_electra
+health_restore_speed		= 0
+radiation_restore_speed		= -0.002
+satiety_restore_speed		= 0
+power_restore_speed		= 0.003
+bleeding_restore_speed		= 0
+additional_inventory_weight	= 1
+additional_inventory_weight2	= 1
+hit_absorbation_sect            = af_oblivion_absorbation
+icons_texture        = ui\ui_icon_equipment_2
+
+[af_oblivion_absorbation]
+burn_immunity 			= 0				
+strike_immunity 		= 0
+shock_immunity 			= 0.01
+wound_immunity 			= 0
+radiation_immunity 		= 0
+telepatic_immunity 		= 0.02
+chemical_burn_immunity 	        = 0
+explosion_immunity 		= 0
+fire_wound_immunity  	        = 0
+
+
+;-----------------------------------------------------------------------------------------
+
+
+[af_indeikam]:af_base
+$spawn				= "artefacts\af_indeikam"
+class				= SCRPTART
+kind			                             = i_arty
+visual				= dynamics\artefacts\af_indeikam.ogf
+description			= st_af_indeikam_descr
+inv_name			= st_af_indeikam_name
+inv_name_short		        = st_af_indeikam_name
+inv_weight			= 0.5
+inv_grid_x			= 31
+inv_grid_y			= 44
+cost				= 6800
+jump_height			= .1
+particles			= artefact\af_electra_idle
+det_show_particles		= artefact\af_electra_show
+det_hide_particles		= artefact\af_electra_hide
+af_rank				= 2
+breeding_type                   = 2
+lights_enabled                  = true
+trail_light_color 		= 0.6,0.7,0.9
+trail_light_range 		= 2.0
+artefact_activation_seq		= af_activation_electra
+health_restore_speed		= 0
+radiation_restore_speed		= -0.004
+satiety_restore_speed		= 0
+power_restore_speed		= 0.003
+bleeding_restore_speed		= 0
+additional_inventory_weight	= -10
+additional_inventory_weight2	= -10
+hit_absorbation_sect            = af_indeikam_absorbation
+icons_texture        = ui\ui_icon_equipment_2
+
+[af_indeikam_absorbation]
+burn_immunity 			= 0				
+strike_immunity 		= 0
+shock_immunity 			= 0.01
+wound_immunity 			= 0
+radiation_immunity 		= 0
+telepatic_immunity 		= 0.01
+chemical_burn_immunity 	        = 0
+explosion_immunity 		= 0
+fire_wound_immunity  	        = 0
+
+;------------------------------------------------------------------------------------------
+;------------------------------------------------------------------------------------------
+;------------------------------------------------------------------------------------------
+;------------------------------------------------------------------------------------------
+;------------------------------------------------------------------------------------------
+;------------------------------------------------------------------------------------------;
+
+[af_sverlo]:af_base
+$spawn 				= "artefacts\af_sverlo"
+class   			= SCRPTART
+kind			                             = i_arty
+visual				= dynamics\artefacts\af_sverlo.ogf
+description			= st_af_sverlo_descr
+inv_name			= st_af_sverlo_name
+inv_name_short			= st_af_sverlo_name
+inv_weight			= 1.0
+inv_grid_x			= 5
+inv_grid_y			= 44
+jump_height			= .01
+cost				= 250000
+;particles			= artefact\af_gravi_idle
+det_show_particles		= artefact\af_gravi_show
+det_hide_particles		= artefact\af_gravi_hide
+af_rank				= 1
+breeding_type                   = 1
+lights_enabled 			= false
+trail_light_color 		= 1.0,1.0,0.75 ;1.0,0.9,0.5
+trail_light_range 		= 2.0
+can_trade			= true
+quest_item 			= false
+health_restore_speed		= 0
+radiation_restore_speed		= 0
+satiety_restore_speed		= 0
+power_restore_speed		= 0
+bleeding_restore_speed		= 0
+additional_inventory_weight	= 1
+additional_inventory_weight2	= 1
+hit_absorbation_sect 		= af_sverlo_absorbation
+icons_texture        = ui\ui_icon_equipment_2
+
+[af_sverlo_absorbation]
+burn_immunity 			= 0
+strike_immunity			= 0
+shock_immunity 			= 0
+wound_immunity 			= 0
+radiation_immunity 		= 0
+telepatic_immunity 		= 0
+chemical_burn_immunity 		= 0
+explosion_immunity 		= 0
+fire_wound_immunity  		= 0
+;------------------------------------------------------------------------------------------
+[af_oreh]:af_base
+$spawn				= "artefacts\af_oreh"
+class				= ARTEFACT 
+kind			                             = i_arty 	
+visual				= dynamics\artefacts\af_oreh.ogf
+description			= st_af_oreh_descr
+inv_name			= st_af_oreh_name
+inv_name_short		        = st_af_oreh_name
+inv_weight			= 0.5
+inv_grid_x			= 2
+inv_grid_y			= 44
+cost				= 325000
+jump_height			= .1
+particles			= artefact\af_gravi_idle
+det_show_particles		= artefact\af_gravi_show
+det_hide_particles		= artefact\af_gravi_hide
+af_rank				= 1
+breeding_type                   = 1
+lights_enabled                  = true
+trail_light_color 		= 0.4,0.4,0
+trail_light_range 		= 2.0
+health_restore_speed		= 0.004
+radiation_restore_speed		= -0.002
+satiety_restore_speed		= 0.2
+power_restore_speed		= 0.01
+bleeding_restore_speed		= 0.03
+hit_absorbation_sect		= af_oreh_absorbation
+additional_inventory_weight	= 0
+additional_inventory_weight2	= 0
+artefact_activation_seq		= af_activation_bold
+icons_texture        = ui\ui_icon_equipment_2
+
+[af_oreh_absorbation]
+burn_immunity 			= 0				
+strike_immunity 		= 0
+shock_immunity 			= 0
+wound_immunity 			= 0
+radiation_immunity 		= 0
+telepatic_immunity 		= 0
+chemical_burn_immunity 	        = 0
+explosion_immunity 		= 0
+fire_wound_immunity  	        = 0
+;------------------------------------------------------------------------------------------
+[af_chertyaico]:af_base
+$spawn 				= "artefacts\af_chertyaico"
+class   			= SCRPTART
+kind			                             = i_arty
+visual				= dynamics\artefacts\af_chertyaico.ogf
+description			= st_af_chertyaico_descr
+inv_name			= st_af_chertyaico_name
+inv_name_short			= st_af_chertyaico_name
+inv_weight			= 0.01
+inv_grid_x			= 0
+inv_grid_y			= 44
+jump_height			= 0.01
+cost				= 450000
+;particles			= artefact\af_gravi_idle
+det_show_particles		= artefact\af_gravi_show
+det_hide_particles		= artefact\af_gravi_hide
+af_rank				= 1
+breeding_type                   = 1
+lights_enabled 			= false
+trail_light_color 		= 1.0,1.0,0.75 ;1.0,0.9,0.5
+trail_light_range 		= 2.0
+can_trade			= true
+quest_item 			= false
+health_restore_speed		= 0.005
+radiation_restore_speed		= 0
+satiety_restore_speed		= 0
+power_restore_speed		= 0
+bleeding_restore_speed		= 0.005
+additional_inventory_weight	= 30
+additional_inventory_weight2	= 30
+hit_absorbation_sect 		= af_chertyaico_absorbation
+icons_texture        = ui\ui_icon_equipment_2
+
+[af_chertyaico_absorbation]
+burn_immunity 			= 0
+strike_immunity			= 0
+shock_immunity 			= 0
+wound_immunity 			= 0
+radiation_immunity 		= 0
+telepatic_immunity 		= 0
+chemical_burn_immunity 		= 0
+explosion_immunity 		= 0
+fire_wound_immunity  		= 0
+;------------------------------------------------------------------------------------------
+[af_oko]:af_base
+$spawn				= "artefacts\af_oko"
+class				= SCRPTART
+kind			                             = i_arty
+visual				= dynamics\artefacts\af_oko.ogf
+description			= st_af_oko_descr
+inv_name			= st_af_oko_name
+inv_name_short		        = st_af_oko_name
+inv_weight			= 0.5
+inv_grid_x			= 19
+inv_grid_y			= 25
+cost				= 435000
+jump_height			= .9
+particles			= artefact\af_acidic_idle
+det_show_particles		= artefact\af_acidic_show
+det_hide_particles		= artefact\af_acidic_hide
+af_rank				= 2
+breeding_type                   = 2
+lights_enabled                  = true
+trail_light_color 		= 0.6,0.7,0.9
+trail_light_range 		= 2.0
+artefact_activation_seq		= af_activation_mincer
+health_restore_speed		= 0
+radiation_restore_speed		= -0.002
+satiety_restore_speed		= 0
+power_restore_speed		= 0.003
+bleeding_restore_speed		= 0
+additional_inventory_weight	= 10
+additional_inventory_weight2	= 10
+hit_absorbation_sect            = af_oko_absorbation
+icons_texture        = ui\ui_icon_equipment_2
+
+[af_oko_absorbation]
+burn_immunity 			= 0				
+strike_immunity 		= 0
+shock_immunity 			= 0.09
+wound_immunity 			= 0
+radiation_immunity 		= 0
+telepatic_immunity 		= 0
+chemical_burn_immunity 	        = 0.09
+explosion_immunity 		= 0
+fire_wound_immunity  	        = 0
+;------------------------------------------------------------------------------------------
+[af_skripka]:af_base
+$spawn				= "artefacts\af_skripka"
+class				= ARTEFACT
+kind			                             = i_arty
+visual				= dynamics\artefacts\af_pearl.ogf
+description			= st_af_skripka_descr
+inv_name			= st_af_skripka_name
+inv_name_short			= st_af_skripka_name
+inv_weight			= 0.1
+inv_grid_width    		= 1
+inv_grid_height  		= 1
+inv_grid_x       		= 29
+inv_grid_y      		= 26
+cost				= 455000
+jump_height			= .3
+particles			= artefact\af_acidic_idle
+det_show_particles		= artefact\af_acidic_show
+det_hide_particles		= artefact\af_acidic_hide
+af_rank				= 1
+breeding_type                   = 1
+lights_enabled = true
+trail_light_color 		= 0.5,0.7,0.2
+trail_light_range 		= 2.0
+health_restore_speed		= 0
+radiation_restore_speed		= 0
+satiety_restore_speed		= 0
+power_restore_speed		= 0
+bleeding_restore_speed		= 0
+additional_inventory_weight	= 10
+additional_inventory_weight2	= 10
+hit_absorbation_sect = af_skripka_absorbation
+icons_texture        = ui\ui_icon_equipment_2
+
+[af_skripka_absorbation]
+burn_immunity 			= 0	
+strike_immunity 		= 0
+shock_immunity 			= 0
+wound_immunity 			= 0
+radiation_immunity 		= 0
+telepatic_immunity 		= 0
+chemical_burn_immunity 		= 0
+explosion_immunity 		= 0
+fire_wound_immunity  		= 0
+
+
+;------------------------------------------------------------------------------------------
+
+
+[af_acid_star]:af_base
+$spawn 				= "artefacts\acid_star"
+class   			= ARTEFACT
+kind			                             = i_arty
+visual				= dynamics\artefacts\af_blood.ogf
+description			= st_af_blacksoul_descr
+inv_name			= st_af_blacksoul_name
+inv_name_short		        = st_af_blacksoul_name
+inv_weight			= 0.5
+inv_grid_x			= 1
+inv_grid_y			= 44
+cost				= 0
+jump_height			= 0
+particles			= artefact\af_thermal_idle
+det_show_particles		= artefact\af_thermal_show
+det_hide_particles		= artefact\af_thermal_hide
+af_rank				= 0
+lights_enabled                  = true
+trail_light_color 		= 0.4,0.6,1.0 ;0.85,1.0,0.5
+trail_light_range 		= 7.5
+health_restore_speed		= -0.002
+radiation_restore_speed	        = 0.004
+satiety_restore_speed		= 0
+power_restore_speed		= 0
+bleeding_restore_speed		= 0
+additional_inventory_weight	= 0
+additional_inventory_weight2	= 0
+hit_absorbation_sect            = af_acid_star_absorbation
+can_trade			= false
+quest_item      	        = false
+icons_texture        = ui\ui_icon_equipment_2
+
+[af_acid_star_absorbation]
+burn_immunity 			= -0.02
+strike_immunity 		= 0
+shock_immunity 			= 0
+wound_immunity 			= 0
+radiation_immunity 		= 0
+telepatic_immunity 		= 0
+chemical_burn_immunity 	        = -0.03
+explosion_immunity 		= 0
+fire_wound_immunity  	        = 0

@@ -1,0 +1,210 @@
+<?xml version="1.0" encoding="windows-1251"?>
+
+<!-- 
+	MCM
+-->
+<string_table>
+
+
+	<string id="ui_mcm_pda_inter_title">
+		<text>ПДА интерактив</text>
+	</string>
+	<string id="ui_mcm_menu_pda_inter">
+		<text>ПДА интерактив</text>
+	</string>
+
+	<string id="ui_mcm_pda_inter_int_pda_key">
+		<text>Клавиша</text>
+	</string>
+
+		<!-- RAID -->
+	<string id="ui_mcm_pda_inter_header_raid">
+		<text>Рейд</text>
+	</string>
+
+	<string id="ui_mcm_pda_inter_raid_offer_mult">
+		<text>Множитель шанса ответа</text>
+	</string>
+
+	<string id="ui_mcm_pda_inter_raid_base_price">
+		<text>Базовая цена</text>
+	</string>
+
+	<string id="ui_mcm_pda_inter_raid_price_power">
+		<text>Степень цены</text>
+	</string>
+	<string id="ui_mcm_pda_inter_raid_price_power_desc">
+		<text>Чем меньше это значение, тем меньше цена дорогих сквадов.</text>
+	</string>
+
+
+		<!-- FIND -->
+	<string id="ui_mcm_pda_inter_header_find">
+		<text>Информация</text>
+	</string>
+
+	<string id="ui_mcm_pda_inter_find_respond_mult">
+		<text>Множитель шанса ответа</text>
+	</string>
+
+	<string id="ui_mcm_pda_inter_find_see_distance">
+		<text>Дистанция до цели</text>
+	</string>
+	<string id="ui_mcm_pda_inter_find_see_distance_desc">
+		<text>Радиус, в котором отправители должны видеть цель для того чтобы отправить сообщение.</text>
+	</string>
+
+	<string id="ui_mcm_pda_inter_find_can_lie">
+		<text>НПС могут врать</text>
+	</string>
+	<string id="ui_mcm_pda_inter_find_can_lie_desc">
+		<text>Зависит от группировки, репутации и отношений. НПС будут иметь шанс соврать насчет местонахождения цели.</text>
+	</string>
+
+	<string id="ui_mcm_pda_inter_find_base_price">
+		<text>Базовая цена</text>
+	</string>
+
+
+		<!-- GAMES -->
+	<string id="ui_mcm_pda_inter_header_games">
+		<text>Игры</text>
+	</string>
+
+	<string id="ui_mcm_pda_inter_puzzle_reward">
+		<text>Пятнашки награда</text>
+	</string>
+
+	<string id="ui_mcm_pda_inter_slots_bet">
+		<text>Слоты ставка</text>
+	</string>
+
+
+		<!-- TRADE -->
+	<string id="ui_mcm_pda_inter_header_trade">
+		<text>Торговля</text>
+	</string>
+
+	<string id="ui_mcm_pda_inter_trade_respond_mult">
+		<text>Множитель шанса ответа</text>
+	</string>
+
+	<string id="ui_mcm_pda_inter_trade_delivery_price_mult">
+		<text>Множитель стоимости доставки</text>
+	</string>
+	<string id="ui_mcm_pda_inter_trade_delivery_price_mult_desc">
+		<text>Большее значение - дороже доставка. Стоимость доставки так же зависит от типа торговца.</text>
+	</string>
+
+	<string id="ui_mcm_pda_inter_trade_delivery_time_mult">
+		<text>Множитель времени доставки</text>
+	</string>
+	<string id="ui_mcm_pda_inter_trade_delivery_time_mult_desc">
+		<text>Меньшее значение - меньше время доставки. Время доставки зависит от расстояния.</text>
+	</string>
+
+	<string id="ui_mcm_pda_inter_trade_stalker_pool">
+		<text>Пул сталкеров (в %)</text>
+	</string>
+	<string id="ui_mcm_pda_inter_trade_stalker_pool_desc">
+		<text>Процент ото всех сталкеров, которые будут в пуле торговцев. Меньше сталкеров означает что торговцы будут отвечать чаще, значение 0 означает что отвечать будут только торговцы.</text>
+	</string>
+
+
+		<!-- Comms -->
+	<string id="ui_mcm_pda_inter_header_banter">
+		<text>Общение</text>
+	</string>
+
+	<string id="ui_mcm_pda_inter_banter_sos_distance">
+		<text>SOS Радиус</text>
+	</string>
+
+	<string id="ui_mcm_pda_inter_banter_sos_duration">
+		<text>SOS Длительность (секунды)</text>
+	</string>
+	<string id="ui_mcm_pda_inter_banter_sos_duration_desc">
+		<text>Когда выходит время - НПС которые отозвались идут обратно (если еще не вступили в бой).</text>
+	</string>
+
+	<string id="ui_mcm_pda_inter_banter_sos_cooldown">
+		<text>SOS Кулдаун (секунды)</text>
+	</string>
+
+	<string id="ui_mcm_pda_inter_banter_sos_limit">
+		<text>SOS Макс кол-во отрядов</text>
+	</string>
+	<string id="ui_mcm_pda_inter_banter_sos_limit_desc">
+		<text>Максимальное количество отрядов которые могут отозваться.</text>
+	</string>
+
+
+		<!-- Tasks -->
+	<string id="ui_mcm_pda_inter_header_task">
+		<text>Задания</text>
+	</string>
+
+	<string id="ui_mcm_pda_inter_task_respond_mult">
+		<text>Множитель шанса ответа</text>
+	</string>
+
+	<string id="ui_mcm_pda_inter_task_base_reward">
+		<text>Базовая награда</text>
+	</string>
+	<string id="ui_mcm_pda_inter_task_base_reward_desc">
+		<text>Это значение затем умножается на сложность цели (например ранг для сталкеров).</text>
+	</string>
+
+	<string id="ui_mcm_pda_inter_task_cooldown">
+		<text>Время восстановления</text>
+	</string>
+	<string id="ui_mcm_pda_inter_task_cooldown_desc">
+		<text>Время для каждого типа задания, через которое задания вновь становится доступным.</text>
+	</string>
+
+	<string id="ui_mcm_pda_inter_task_goodwill_mult">
+		<text>Множитель отношений/репутации</text>
+	</string>
+	<string id="ui_mcm_pda_inter_task_goodwill_mult_desc">
+		<text>"1" равно +25 к отношениям группировки и репутации игрока когда задание выполнено. "0" выключает это.</text>
+	</string>
+
+	<string id="ui_mcm_pda_inter_task_notes">
+		<text>Добавлять задания в заметки</text>
+	</string>
+	<string id="ui_mcm_pda_inter_task_notes_desc">
+		<text>Автоматически добавляет все принятые задания в меню Заметки и удаляет когда задание выполнено.</text>
+	</string>
+
+	<string id="ui_mcm_pda_inter_task_guide_time_mult">
+		<text>Множитель времени задания Проводник</text>
+	</string>
+
+	<string id="ui_mcm_pda_inter_task_mutant_distance">
+		<text>Радиус для цели "Охота на мутантов"</text>
+	</string>
+
+	<string id="ui_mcm_pda_inter_task_bounty_distance">
+		<text>Радиус для цели "Награда за голову"</text>
+	</string>
+
+	<string id="ui_mcm_pda_inter_task_squad_distance">
+		<text>Радиус для цели "Опасный отряд"</text>
+	</string>
+
+
+		<!-- Debug -->
+	<string id="ui_mcm_pda_inter_header_debug">
+		<text>Дебаг</text>
+	</string>
+
+	<string id="ui_mcm_pda_inter_debugx">
+		<text>Дебаг</text>
+	</string>
+	<string id="ui_mcm_pda_inter_debugx_desc">
+		<text>Для отображения информации в консоли.</text>
+	</string>
+
+
+
+</string_table>

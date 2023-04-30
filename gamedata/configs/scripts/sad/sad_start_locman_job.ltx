@@ -1,0 +1,56 @@
+[logic@locman]
+suitable = {=check_npc_name(sad_stalker_guide) +sad_turist_available} true
+active = walker@1
+prior = 200
+
+[walker@1]
+path_walk = locman_1_walk
+path_look = locman_1_look
+def_state_moving = run
+combat_ignore_cond = {=is_enemy_actor} true
+gather_items_enabled = false
+help_wounded_enabled = false
+corpse_detection_enabled = false
+on_info = {+sad_turist_enemy} remark , {=actor_enemy} remark %+sad_turist_enemy =set_squad_enemy_to_actor(sad_turist_squad)%
+on_info2 = {+sad_turist_task_done} walker@out, {+sad_turist_squad_dead} walker@out
+out_restr = sad_start_turist_task_logic
+wounded = wounded
+meet = meet
+
+[remark]
+wounded = wounded
+
+[walker@out]
+path_walk = locman_exit_point
+def_state_moving = run
+gather_items_enabled = false
+help_wounded_enabled = false
+corpse_detection_enabled = false
+on_info = {+sad_turist_enemy} remark , {=actor_enemy} remark %+sad_turist_enemy%
+on_info2 = {=npc_in_zone(sad_start_level_logic)} %+sad_turist_locman_go_zaton%
+wounded = wounded
+meet = no_meet
+
+[wounded]
+hp_state 		= 0|wounded_heavy@help_heavy
+hp_state_see 	= 0|wounded_heavy@help_heavy
+hp_victim 		= 0|nil
+hp_fight 		= 0|false
+hp_cover		= 0|false
+
+[meet]
+snd_on_use 		= nil
+close_snd_hello = nil
+close_snd_bye   = nil
+close_distance  = 3
+close_victim    = actor
+close_anim 		= wait_na
+far_anim 		= {+sad_turist_task_start} nil, hello
+far_victim 		= actor
+far_distance 	= 6
+far_snd 		= nil
+abuse 			= false
+meet_on_talking = false
+use 			= {=actor_enemy} false, true
+;allow_break 	= false
+trade_enable	= false

@@ -1,0 +1,223 @@
+[walker@def]
+gather_items_enabled = false
+help_wounded_enabled = false
+corpse_detection_enabled = false
+wounded = wounded
+
+[wounded]
+hp_state 		= 0|wounded_heavy@help_heavy
+hp_state_see 	= 0|wounded_heavy@help_heavy
+hp_victim 		= 0|nil
+hp_fight 		= 0|false
+hp_cover		= 0|false
+
+[remark@enemy]
+
+[combat@trader]
+out_restr = sad_b1_sr_trader_zone
+
+[combat@mech]
+out_restr = sad_b2_surge_hide
+
+; ------------------------------------------------------------------------------------------------------------------------------- TRADER
+[logic@sad_b2_barman]
+suitable = {=check_npc_name(sad_b2_stalker_barman)} true
+active = animpoint@barman
+trade = misc\trade\trade_stalker.ltx
+level_spot = trader
+on_combat = combat@trader
+prior = 350
+can_select_weapon = false
+trade = items\trade\trade_stalker_basic.ltx
+
+[animpoint@barman]:walker@def
+cover_name = sad_b2_animp_trader
+avail_animations = animpoint_stay_table 
+use_camp = false
+meet = meet@barman
+out_restr = sad_b1_sr_trader_zone
+combat_ignore_cond = {=is_enemy_actor} true, {=enemy_in_zone(sad_b2_sr_noweap)} false, true
+;on_info = {=actor_enemy} remark@enemy %+sad_actor_enemy_b2%, {=health_le(0.7)} %=restore_health%
+on_info = {=obj_on_job(sad_b2:sad_b2_beh_trade_job_1) =job_on_point(sad_b2:sad_b2_beh_trade_job_1:2:3:false)} %=trade_job_give_id(sad_b2:sad_b2_beh_trade_job_1)%
+
+[meet@barman]
+close_snd_hello = nil
+close_snd_bye 	= nil
+close_anim 		= nil
+close_victim 	= nil
+far_anim 		= nil
+far_victim 		= nil
+close_distance  = 0
+far_distance 	= 0
+snd_on_use 		= {+sad_b2_otkaz_abuse} meet_use_no_default, nil
+close_snd_distance = 3
+use = {=actor_enemy} false, {+sad_b2_otkaz_abuse} false, true
+allow_break = false
+meet_on_talking = false
+
+
+;------------------------------
+;--------- NPC trade ----------
+;------------------------------
+[logic@sad_b2_beh_trade_job_1]
+active = beh@sad_b2_beh_trade_job_1
+suitable = {=npc_has_items_to_sell(sad_b2) !surge_started} true
+prior = 65
+
+[beh@general]
+meet = meet@sad_b2_animpoint_trade_meet
+gather_items_enabled = false
+help_wounded_enabled = false
+corpse_detection_enabled = false
+sound_idle = state
+behavior_state = beh_move
+target = waypoint
+walk_dist = 100
+jog_dist = 220
+wait_anim = guard
+walk_anim = patrol
+jog_anim = patrol
+run_anim = rush
+delay_anim = guard
+
+[beh@sad_b2_beh_trade_job_1]:beh@general ;--pt1 choose - pt2 zat_b14_give_artefact_act - pt3 guard
+pt1 = 10000,choose | pos:-301.1845703125,-15.394487380981,362.67578125 look:-298.42602539063,-15.39514541626,362.80111694336
+pt2 = 5000,zat_b14_give_artefact_act | pos:-301.1845703125,-15.394487380981,362.67578125 look:-298.42602539063,-15.39514541626,362.80111694336 sig:trade
+pt3 = 10000,guard | pos:-301.1845703125,-15.394487380981,362.67578125 look:-298.42602539063,-15.39514541626,362.80111694336
+on_signal = trade | %=trade_job_sell_items%
+path_end = loop
+
+[meet@sad_b2_animpoint_trade_meet]
+close_anim 		= nil
+close_victim 	= nil
+far_anim 		= nil
+far_victim 		= nil
+close_distance 	= 0
+far_distance 	= 0
+use = {=actor_enemy} false, {=dist_to_actor_le(3)} true, false
+snd_on_use = {!dist_to_actor_le(3)} nil
+meet_on_talking = false
+
+; ------------------------------------------------------------------------------------------------------------------------------- TECH
+[logic@sad_b2_tech]
+suitable = {=check_npc_name(sad_b2_stalker_tech)} true
+prior = 200
+active = animpoint@tech
+level_spot = mechanic
+can_select_weapon = true
+dont_keep_items = true
+trade = items\trade\trade_generic_mechanic.ltx
+
+[animpoint@tech]
+cover_name = sad_b2_animp_mech
+invulnerable = {!actor_enemy} true, false
+combat_ignore_cond = {=actor_enemy =check_enemy_name(actor)} false, true
+combat_ignore_keep_when_attacked = true
+gather_items_enabled = false
+help_wounded_enabled = false
+corpse_detection_enabled = false
+use_camp = false
+meet = meet@tech
+on_info1 = {+awr_sad_b2_stalker_tech_access} animpoint@resting
+
+[animpoint@resting]:animpoint@tech
+avail_animations = animpoint_sit_normal_drink_vodka
+meet = meet@mechanic	;no_meet
+on_game_timer = 2000 | animpoint@tech %=awr_timer_msg_off%
+
+[meet@tech]
+close_snd_hello = jup_b217_stalker_tech_greeting
+close_snd_bye 	= jup_b217_stalker_tech_farewell
+close_anim 		= nil
+close_victim 	= nil
+far_anim 		= nil
+far_victim 		= nil
+close_distance  = 0
+far_distance 	= 0
+close_snd_distance = 3
+snd_on_use 		= {+sad_b2_otkaz_abuse} meet_use_no_default, nil
+use = {=actor_enemy} false, {+sad_b2_otkaz_abuse} false, true
+allow_break = false
+meet_on_talking = false
+
+
+; ------------------------------------------------------------------------------------------------------------------------------- JAIL GUARD
+[logic@sad_b2_guard]
+suitable = {=check_npc_name(sad_b2_bunker_guard)} true
+active = walker@guard
+prior = 320
+
+[walker@guard]:walker@def
+path_walk = bunker_gvard_1_walk
+path_look = bunker_gvard_1_look
+on_info = {=actor_enemy} remark@enemy %+sad_actor_enemy_b2%, {+sad_b3_actor_otkaz_ataka} animpoint@guard, {+sad_maxim_actor_help_agree} animpoint@guard2
+combat_ignore_cond = {=is_enemy_actor} true, {=enemy_in_zone(sad_b2_surge_hide)} false, true
+meet = no_meet
+
+[animpoint@guard]:walker@def
+cover_name = sad_b2_bunker_gvard_animp
+meet = no_meet
+on_info = {=actor_enemy} remark@enemy %+sad_actor_enemy_b2%, {+sad_b2_actor_jail_exit} walker@open
+combat_ignore_cond = {=is_enemy_actor} true, {=enemy_in_zone(sad_b2_surge_hide)} false, true
+
+[walker@open]
+path_walk = tech_open_door_walk
+path_look = tech_open_door_look
+on_signal = open_jail | animpoint@guard2 %+sad_b2_jail_door_force_open%
+on_game_timer = 300 | animpoint@guard2 %+sad_b2_jail_door_force_open%
+on_info = {=actor_enemy} remark@enemy %+sad_actor_enemy_b2%
+combat_ignore_cond = {=is_enemy_actor} true, {=enemy_in_zone(sad_b2_surge_hide)} false, true
+
+[animpoint@guard2]:walker@def
+cover_name = sad_b2_bunker_gvard_animp
+meet = no_meet
+on_info = {=actor_enemy} remark@enemy %+sad_actor_enemy_b2%
+
+; ------------------------------------------------------------------------------------------------------------------------------- VOLODYA
+[logic@sad_volodya]
+suitable = {=check_npc_name(sad_stalker_volodya)} true
+active = animpoint@volodya
+prior = 340
+
+[animpoint@volodya]:walker@def
+cover_name = sad_b2_volodya_animp
+meet = meet@volodya1
+on_info = {=actor_enemy} remark@enemy %+sad_actor_enemy_b2%, {=health_le(0.7)} %=restore_health%
+on_info2 = {+sad_cowboy_rob_actor} walker@volodya
+
+[walker@volodya]:walker@def
+path_walk = maxim_walk
+path_look = maxim_look
+on_info = {=actor_enemy} remark@enemy %+sad_actor_enemy_b2%, {=health_le(0.7)} %=restore_health%
+combat_ignore_cond = {=is_enemy_actor} true, {=enemy_in_zone(sad_b2_surge_hide)} false, true
+meet = meet@volodya2
+
+[meet@volodya1]
+close_snd_hello = nil
+close_snd_bye 	= nil
+close_anim 		= nil
+close_victim 	= nil
+far_anim 		= nil
+far_victim 		= nil
+close_distance  = 0
+far_distance 	= 0
+close_snd_distance = 0
+snd_on_use 		= {+sad_b2_otkaz_abuse} meet_use_no_default, meet_use_no_talk_leader
+use 			= false
+allow_break 	= false
+trade_enable	= false
+
+[meet@volodya2]:meet@volodya1
+snd_on_use 		= nil
+use = {=actor_enemy} false, true
+
+; ------------------------------------------------------------------------------------------------------------------------------- ARTUR
+[logic@artur]
+suitable = {=check_npc_name(sad_b2_stalker_artur)} true
+active = animpoint@artur
+prior = 280
+
+[animpoint@artur]:walker@def
+cover_name = sad_b2_animp_artur
+meet = meet@volodya2
+on_info = {=actor_enemy} remark@enemy %+sad_actor_enemy_b2%

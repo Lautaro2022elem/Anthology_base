@@ -1,0 +1,481 @@
+-----------------
+function sad_vasya_flesh_transfer(first_speaker, second_speaker)
+	dialogs.relocate_item_section_to_actor(first_speaker, second_speaker, "sad_fedor_flesh")
+end
+function sad_b1_mutny_actor_flesh_transfer(first_speaker, second_speaker)
+	dialogs.relocate_item_section_from_actor(first_speaker, second_speaker, "sad_fedor_flesh")
+end
+function sad_b1_mutny_give_money(first_speaker, second_speaker)
+	dialogs.relocate_money_to_actor(first_speaker, second_speaker, 2000)
+end
+
+function sad_b1_trader_change(first_speaker, second_speaker)
+	dialogs.relocate_money_to_actor(first_speaker, second_speaker, 3000)
+	dialogs.relocate_item_section_from_actor(first_speaker, second_speaker, "sad_radio_plant")
+end
+
+-- B2 trader stuff
+
+function sad_b2_trader_sell_stuff_check(first_speaker, second_speaker)
+	return 	sad_has_saigak_pda(first_speaker, second_speaker) or sad_has_merc_pda(first_speaker, second_speaker) or 
+		sad_has_radio_plant(first_speaker, second_speaker) or sad_actor_has_docs(first_speaker, second_speaker) or 
+		sad_actor_has_mudak_pda(first_speaker, second_speaker) or sad_actor_has_vofka_pda(first_speaker, second_speaker) or 
+                sad_actor_has_fedor_flesh(first_speaker, second_speaker)
+end
+function sad_has_saigak_pda(first_speaker, second_speaker)
+	return db.actor:object("sad_sim_7_cave_corpse_pda") ~= nil
+end
+function sad_has_merc_pda(first_speaker, second_speaker)
+	return db.actor:object("sad_killer_pda") ~= nil
+end
+function sad_has_radio_plant(first_speaker, second_speaker)
+	return db.actor:object("sad_radio_plant") ~= nil
+end
+function sad_actor_has_docs(first_speaker, second_speaker)
+	return db.actor:object("sad_teleport_docs") ~= nil
+end
+function sad_actor_has_mudak_pda(first_speaker, second_speaker)
+	return db.actor:object("sad_mudak_pda") ~= nil
+end
+function sad_actor_has_fedor_flesh(first_speaker, second_speaker)
+	return db.actor:object("sad_fedor_flesh") ~= nil
+end
+function sad_actor_has_vofka_pda(first_speaker, second_speaker)
+	return db.actor:object("sad_vofkas_pda") ~= nil
+end
+
+function sad_radio_plant_transfer(first_speaker, second_speaker)
+	dialogs.relocate_item_section_from_actor(first_speaker, second_speaker, "sad_radio_plant")
+	dialogs.relocate_money_to_actor(first_speaker, second_speaker, 5000)
+end
+function sad_b2_trader_killer_pda(first_speaker, second_speaker)
+	dialogs.relocate_item_section_from_actor(first_speaker, second_speaker, "sad_killer_pda")
+	dialogs.relocate_money_to_actor(first_speaker, second_speaker, 3000)
+end
+function sad_b2_trader_saigak_reward(first_speaker, second_speaker)
+	dialogs.relocate_item_section_from_actor(first_speaker, second_speaker, "sad_sim_7_cave_corpse_pda")
+	dialogs.relocate_money_to_actor(first_speaker, second_speaker, 3000)
+end
+function sad_b2_trader_mudak_pda_transfer(first_speaker, second_speaker)
+	dialogs.relocate_item_section_from_actor(first_speaker, second_speaker, "sad_mudak_pda")
+	dialogs.relocate_money_to_actor(first_speaker, second_speaker, 1000)
+end
+function sad_b2_trader_fedor_flesh_transfer(first_speaker, second_speaker)
+	dialogs.relocate_item_section_from_actor(first_speaker, second_speaker, "sad_fedor_flesh")
+	dialogs.relocate_money_to_actor(first_speaker, second_speaker, 1000)
+end
+function sad_vofka_pda_transfer_1(first_speaker, second_speaker)
+	dialogs.relocate_item_section_from_actor(first_speaker, second_speaker, "sad_vofkas_pda")
+	dialogs.relocate_money_to_actor(first_speaker, second_speaker, 1500)
+end
+function sad_vofka_pda_transfer_2(first_speaker, second_speaker)
+	dialogs.relocate_item_section_from_actor(first_speaker, second_speaker, "sad_vofkas_pda")
+	dialogs.relocate_money_to_actor(first_speaker, second_speaker, 7500)
+end
+
+-----------------------------------------------------------------------
+
+function sad_b2_artur_reward(first_speaker, second_speaker)
+	dialogs.relocate_money_to_actor(first_speaker, second_speaker, 2000)
+	dialogs.relocate_item_section_to_actor(first_speaker, second_speaker, "af_ice")
+	dialogs.relocate_item_section_from_actor(first_speaker, second_speaker, "sad_vadik_flesh")
+	dialogs.relocate_item_section_from_actor(first_speaker, second_speaker, "sad_romka_flesh")
+end
+
+function is_sad_sim_3_rob_time(first_speaker, second_speaker)
+	if level.get_time_hours() >= 1 and level.get_time_hours() < 5 then
+		if level.get_time_hours() > 1 then
+			return true
+		elseif level.get_time_minutes() >= 45 then
+			return true
+		end
+	end
+
+	return false
+end
+
+function is_not_sad_sim_3_rob_time(first_speaker, second_speaker)
+	if level.get_time_hours() >= 1 and level.get_time_hours() < 5 then
+		if level.get_time_hours() > 1 then
+			return false
+		elseif level.get_time_minutes() >= 45 then
+			return false
+		end
+	end
+
+	return true
+end
+
+function sad_mudak_pda_transfer(first_speaker, second_speaker)
+	dialogs.relocate_item_section_from_actor(first_speaker, second_speaker, "sad_mudak_pda")
+end
+
+function sad_mudak_pda_reward(first_speaker, second_speaker)
+	dialogs.relocate_money_to_actor(first_speaker, second_speaker, 3000)
+end
+
+function sad_b2_posilka_transfer(first_speaker, second_speaker)
+	dialogs.relocate_item_section_from_actor(first_speaker, second_speaker, "sad_ban_posilka")
+end
+
+function sad_ban_has_money(first_speaker, second_speaker)
+	return db.actor:money() >= 10000
+end
+
+function sad_ban_has_not_money(first_speaker, second_speaker)
+	return db.actor:money() < 10000
+end
+
+function sad_ban_actor_give_money(first_speaker, second_speaker)
+	dialogs.relocate_money_from_actor(first_speaker, second_speaker, 10000)
+	dialogs.relocate_item_section_to_actor(first_speaker, second_speaker, "sad_ban_posilka")
+end
+
+------------------
+function sad_maxim_posilka_reward(first_speaker, second_speaker)
+	dialogs.relocate_money_to_actor(first_speaker, second_speaker, 3000)
+end
+
+function sad_maxim_give_reward_best(first_speaker, second_speaker)
+	dialogs.relocate_item_section_to_actor(first_speaker, second_speaker, "wpn_vintorez")
+	dialogs.relocate_item_section_to_actor(first_speaker, second_speaker, "ammo_9x39_ap", 3)
+	dialogs.relocate_item_section_to_actor(first_speaker, second_speaker, "medkit", 2)
+	dialogs.relocate_item_section_to_actor(first_speaker, second_speaker, "bandage", 3)
+	dialogs.relocate_item_section_to_actor(first_speaker, second_speaker, "af_gold_fish")
+end
+
+function sad_maxim_give_reward_good(first_speaker, second_speaker)
+	dialogs.relocate_item_section_to_actor(first_speaker, second_speaker, "medkit", 2)
+	dialogs.relocate_item_section_to_actor(first_speaker, second_speaker, "bandage", 3)
+	dialogs.relocate_item_section_to_actor(first_speaker, second_speaker, "af_gold_fish")
+end
+
+function sad_b2_barman_give_sniper(first_speaker, second_speaker)
+	dialogs.relocate_item_section_to_actor(first_speaker, second_speaker, "wpn_svd")
+	dialogs.relocate_item_section_to_actor(first_speaker, second_speaker, "ammo_7.62x54_7h1", 3)
+	dialogs.relocate_item_section_to_actor(first_speaker, second_speaker, "medkit", 2)
+	dialogs.relocate_item_section_to_actor(first_speaker, second_speaker, "bandage", 3)
+	dialogs.relocate_item_section_to_actor(first_speaker, second_speaker, "stalker_outfit")
+end
+
+function sad_b2_barman_give_shturm(first_speaker, second_speaker)
+	dialogs.relocate_item_section_to_actor(first_speaker, second_speaker, "wpn_groza")
+	dialogs.relocate_item_section_to_actor(first_speaker, second_speaker, "ammo_9x39_ap", 3)
+	dialogs.relocate_item_section_to_actor(first_speaker, second_speaker, "medkit", 2)
+	dialogs.relocate_item_section_to_actor(first_speaker, second_speaker, "bandage", 3)
+	dialogs.relocate_item_section_to_actor(first_speaker, second_speaker, "stalker_outfit")
+end
+
+function sad_sher_actor_has_needed_food(first_speaker, second_speaker)
+	local item_sections	= {
+		[1] = "bread",
+		[2] = "kolbasa",
+		[3] = "conserva"
+	}
+	local needed = 5
+	local count	= 0
+	local item_section
+
+	local function calc(temp, item)
+		if item:section() == item_section then
+			count = count + 1
+		end
+	end
+
+	for k,v in pairs(item_sections) do
+		item_section = v
+		get_story_object("actor"):iterate_inventory(calc, actor)
+	end
+
+	return count >= needed
+end
+
+function sad_sher_transfer_food(first_speaker, second_speaker)
+	local npc = dialogs.who_is_npc(first_speaker, second_speaker)
+	local actor = dialogs.who_is_actor(first_speaker, second_speaker)
+	local i = 5
+	local j = 0
+	local section
+	local item_sections	= {
+		[1] = "bread",
+		[2] = "kolbasa",
+		[3] = "conserva"
+	}
+
+	local function transfer_object_item(temp, item)
+		if (item:section() == section and i ~= 0) then
+			actor:transfer_item(item, npc)
+			i = i - 1
+		end
+	end
+
+	for k,v in pairs(item_sections) do
+		section = v
+		j = i
+		actor:iterate_inventory(transfer_object_item, nil)
+		if ((j - i) ~= 0) then
+			news_manager.relocate_item(actor, "out", section, j - i)
+		end
+--		printf("?zat_b103_transfer_merc_supplies? : section [%s] lasts [%s] from 6", tostring(v), tostring(i))
+	end
+end
+
+function sad_radik_give_bomba(first_speaker, second_speaker)
+	dialogs.relocate_item_section_to_actor(first_speaker, second_speaker, "sad_sher_explosive")
+end
+
+function sad_sher_radik_pda_transfer(first_speaker, second_speaker)
+	dialogs.relocate_item_section_to_actor(first_speaker, second_speaker, "sad_killer_pda")
+end
+
+function sad_sher_radik_outfit_transfer(first_speaker, second_speaker)
+	dialogs.relocate_item_section_to_actor(first_speaker, second_speaker, "killer_outfit")
+        dialogs.relocate_item_section_to_actor(first_speaker, second_speaker, "helm_m40")
+end
+
+function sad_pda_balbes_transfer(first_speaker, second_speaker)
+	dialogs.relocate_item_section_to_actor(first_speaker, second_speaker, "sad_balbes_pda")
+end
+
+function sad_radik_transfer_vodka(first_speaker, second_speaker)
+	dialogs.relocate_item_section_to_actor(first_speaker, second_speaker, "sad_fedor_pda")
+end
+
+function sad_b4_fedor_pda_transfer(first_speaker, second_speaker)
+	dialogs.relocate_item_section_from_actor(first_speaker, second_speaker, "sad_fedor_pda")
+end
+
+function sad_maxim_key_transfer(first_speaker, second_speaker)
+	dialogs.relocate_item_section_to_actor(first_speaker, second_speaker, "sad_b2_maxim_key")
+end
+
+function sad_ran_stuff_transfer(first_speaker, second_speaker)
+	dialogs.relocate_item_section_from_actor(first_speaker, second_speaker, "sad_microshema")
+	dialogs.relocate_item_section_from_actor(first_speaker, second_speaker, "af_compass")
+end
+
+function sad_tesla_weapon_give(first_speaker, second_speaker)
+	dialogs.relocate_item_section_to_actor(first_speaker, second_speaker, "ammo_5.56x45_ss190", 3)
+	dialogs.relocate_item_section_to_actor(first_speaker, second_speaker, "wpn_lr300")
+end
+
+function sad_ran_oleg_reward(first_speaker, second_speaker)
+	dialogs.relocate_money_to_actor(first_speaker, second_speaker, 5000)
+end
+
+function sad_ran_scanner_transfer(first_speaker, second_speaker)
+	dialogs.relocate_item_section_to_actor(first_speaker, second_speaker, "sad_scanner")
+end
+
+------------------------------------------------------------------------------------------------------------------------------------------ B2 Tech task (Gena-suka)
+function sad_actor_dont_has_any_medkit(first_speaker, second_speaker)
+	return ((db.actor:object("medkit") == nil) and (db.actor:object("medkit_army") == nil) and (db.actor:object("medkit_scientic")))
+end
+function sad_actor_has_any_medkit(first_speaker, second_speaker)
+	return ((db.actor:object("medkit") ~= nil) or (db.actor:object("medkit_army") ~= nil) or (db.actor:object("medkit_scientic")))
+end
+
+function sad_gena_squad_not_dead(first_speaker, second_speaker)
+	return xr_conditions.squad_npc_count_ge(db.actor,nil,{"sad_sim_7_gena_squad","1"})
+end
+function sad_gena_squad_dead(first_speaker, second_speaker)
+	return not sad_gena_squad_not_dead(first_speaker, second_speaker)
+end
+
+function sad_sim_7_gena_transfer_medkit(first_speaker, second_speaker)
+	if db.actor:object("medkit") ~= nil then
+		dialogs.relocate_item_section_from_actor(first_speaker, second_speaker, "medkit")
+	elseif db.actor:object("medkit_army") ~= nil then
+		dialogs.relocate_item_section_from_actor(first_speaker, second_speaker, "medkit_army")
+	elseif db.actor:object("medkit_scientic") ~= nil then
+		dialogs.relocate_item_section_from_actor(first_speaker, second_speaker, "medkit_scientic")
+	end
+	local npc = dialogs.who_is_npc(first_speaker, second_speaker)
+	local actor = dialogs.who_is_actor(first_speaker, second_speaker)
+	npc:force_set_goodwill( 0, actor)
+	npc.health = 1
+end
+
+function sad_b2_tech_reward_transfer(first_speaker, second_speaker)
+	dialogs.relocate_item_section_to_actor(first_speaker, second_speaker, "helm_battle")
+	dialogs.relocate_item_section_to_actor(first_speaker, second_speaker, "wpn_desert_eagle")
+	dialogs.relocate_item_section_to_actor(first_speaker, second_speaker, "ammo_11.43x23_hydro", 2)
+end
+
+function sad_b2_tech_stuff_transfer(first_speaker, second_speaker)
+	dialogs.relocate_item_section_from_actor(first_speaker, second_speaker, "sad_b2_tech_stuff")
+end
+
+function sad_b2_tech_give_gena_task(first_speaker, second_speaker)
+	task_manager.get_task_manager():give_task("sad_b2_tech_gena_task")
+end
+------------------------------------------------------------------------------------------------------------------------------------------ B2 trader notebook
+function sad_b2_trader_give_money_7500(first_speaker, second_speaker)
+	dialogs.relocate_item_section_from_actor(first_speaker, second_speaker, "sad_b2_trader_notebook")
+	dialogs.relocate_money_to_actor(first_speaker, second_speaker, 7500)
+end
+
+function sad_b2_trader_give_money_15000(first_speaker, second_speaker)
+	dialogs.relocate_item_section_from_actor(first_speaker, second_speaker, "sad_b2_trader_notebook")
+	dialogs.relocate_money_to_actor(first_speaker, second_speaker, 15000)
+end
+
+------------------------------------------------------------------------------------------------------------------------------------------ Bomz
+function sad_noy_give_compass(first_speaker, second_speaker)
+	dialogs.relocate_item_section_to_actor(first_speaker, second_speaker, "af_compass")
+end
+
+function sad_b2_tech_reward_mutny(first_speaker, second_speaker)
+	dialogs.relocate_item_section_to_actor(first_speaker, second_speaker, "ammo_9x39_ap", 3)
+end
+
+function sad_b2_trader_reward_mutny(first_speaker, second_speaker)
+	dialogs.relocate_money_to_actor(first_speaker, second_speaker, 5000)
+	dialogs.relocate_item_section_to_actor(first_speaker, second_speaker, "specops_outfit")
+	dialogs.relocate_item_section_to_actor(first_speaker, second_speaker, "helm_tactic")
+end
+
+function sad_b3_trader_reward(first_speaker, second_speaker)
+	dialogs.relocate_item_section_from_actor(first_speaker, second_speaker, "sad_psi_case")
+	dialogs.relocate_money_to_actor(first_speaker, second_speaker, 5000)
+end
+
+function sad_ucheny_give_money(first_speaker, second_speaker)
+	dialogs.relocate_money_to_actor(first_speaker, second_speaker, 10000)
+	dialogs.relocate_item_section_to_actor(first_speaker, second_speaker, "scientific_outfit")
+end
+
+function sad_actor_has_b3_ucheny_flesh(first_speaker, second_speaker)
+	return db.actor:object("sad_ucheny_flesh") ~= nil
+end
+
+function sad_ucheny_give_money_b2(first_speaker, second_speaker)
+	dialogs.relocate_money_to_actor(first_speaker, second_speaker, 3000)
+	dialogs.relocate_item_section_from_actor(first_speaker, second_speaker, "sad_ucheny_flesh")
+end
+
+function sad_b2_tech_util_give_money(first_speaker, second_speaker)
+	local mani = xr_logic.pstor_retrieve(db.actor, "sad_b2_util_money", 1)
+	dialogs.relocate_money_to_actor(first_speaker, second_speaker, mani)
+	xr_logic.pstor_store(db.actor, "sad_b2_util_money", 0)
+end
+
+function sad_b3_trader_give_bomba(first_speaker, second_speaker)
+	dialogs.relocate_item_section_to_actor(first_speaker, second_speaker, "sad_nauchny_explosive")
+end
+
+function sad_actor_has_bomba(first_speaker, second_speaker)
+	return db.actor:object("sad_nauchny_explosive") ~= nil
+end
+
+function sad_nauchny_reward(first_speaker, second_speaker)
+	dialogs.relocate_money_to_actor(first_speaker, second_speaker, 20000)
+	--dialogs.relocate_item_section_to_actor(first_speaker, second_speaker, "scientific_outfit")
+end
+
+function sad_actor_has_luty_pda(first_speaker, second_speaker)
+	return db.actor:object("sad_sim_5_cave_corpse_pda") ~= nil
+end
+function sad_actor_transfer_luty_pda(first_speaker, second_speaker)
+	dialogs.relocate_item_section_from_actor(first_speaker, second_speaker, "sad_sim_5_cave_corpse_pda")
+end
+function sad_b2_tech_give_wpn_task(first_speaker, second_speaker)
+	task_manager.get_task_manager():give_task("sad_b2_tech_wpn_task")
+end
+function sad_actor_has_luty_stvol(first_speaker, second_speaker)
+	return db.actor:object("wpn_spas12_nimble") ~= nil
+end
+function sad_actor_transfer_luty_stvol(first_speaker, second_speaker)
+	dialogs.relocate_item_section_from_actor(first_speaker, second_speaker, "wpn_spas12_nimble")
+	dialogs.relocate_money_to_actor(first_speaker, second_speaker, 2000)
+end
+
+
+function sad_actor_transfer_docs(first_speaker, second_speaker)
+	dialogs.relocate_item_section_from_actor(first_speaker, second_speaker, "sad_teleport_docs")
+end
+function sad_actor_has_docs_stuff(first_speaker, second_speaker)
+	return db.actor:object("detector_scientific") ~= nil and db.actor:object("af_compass") ~= nil
+end
+function sad_actor_hasnt_docs_stuff(first_speaker, second_speaker)
+	return db.actor:object("detector_scientific") == nil or db.actor:object("af_compass") == nil
+end
+function sad_actor_transfer_docs_stuff(first_speaker, second_speaker)
+	dialogs.relocate_item_section_from_actor(first_speaker, second_speaker, "detector_scientific")
+	dialogs.relocate_item_section_from_actor(first_speaker, second_speaker, "af_compass")
+end
+function sad_actor_give_detector_sad(first_speaker, second_speaker)
+	dialogs.relocate_item_section_to_actor(first_speaker, second_speaker, "detector_sad")
+end
+
+-------------------------------------------------------------------------------------------------------------------- Turizmus
+function sad_turist_health_perfect(first_speaker, second_speaker)
+	local npc = dialogs.who_is_npc(first_speaker, second_speaker)
+	return npc.health > 0.95
+end
+function sad_turist_health_not_perfect(first_speaker, second_speaker)
+	return not sad_turist_health_perfect(first_speaker, second_speaker)
+end
+function sad_turist_transfer_medkit(first_speaker, second_speaker)
+	if db.actor:object("medkit") ~= nil then
+		xr_effects.remove_item(db.actor, nil, {"medkit"})
+	elseif db.actor:object("medkit_army") ~= nil then
+		xr_effects.remove_item(db.actor, nil, {"medkit_army"})
+	elseif db.actor:object("medkit_scientic") ~= nil then
+		xr_effects.remove_item(db.actor, nil, {"medkit_scientic"})
+	end
+	local npc = dialogs.who_is_npc(first_speaker, second_speaker)
+	local actor = dialogs.who_is_actor(first_speaker, second_speaker)
+	npc.health = 1000
+	sad_turist.refresh_turist_hud(npc:id(),100)
+end
+function sad_turist_reward(first_speaker, second_speaker)
+	local tenge = sad_turist.get_turist_total_money()
+	dialogs.relocate_money_to_actor(first_speaker, second_speaker, tenge)
+end
+
+function zat_a2_stalker_barmen_sad_give_task( first_speaker, second_speaker )
+   task_manager.get_task_manager( ):give_task( "sad_main_task_stalkers" )
+   task_manager.get_task_manager( ):give_task( "sad_main_task_atrefuck" )
+end
+
+function zat_a2_stalker_barmen_sad_2_give_task( first_speaker, second_speaker )
+   task_manager.get_task_manager( ):give_task( "zat_a2_meet_lotsman_task" )
+end
+
+function if_actor_has_sad_trus_pda(first_speaker, second_speaker)
+	return first_speaker:object("sad_trus_pda") ~= nil
+end
+
+function if_actor_has_sad_balbes_pda(first_speaker, second_speaker)
+	return first_speaker:object("sad_balbes_pda") ~= nil
+end
+
+function if_actor_has_sad_byvaly_pda(first_speaker, second_speaker)
+	return first_speaker:object("sad_byvaly_pda") ~= nil
+end
+
+function sad_transfer_pda(first_speaker, second_speaker)
+	dialogs.relocate_item_section_from_actor(first_speaker, second_speaker, "sad_trus_pda")
+	dialogs.relocate_item_section_from_actor(first_speaker, second_speaker, "sad_balbes_pda")
+	dialogs.relocate_item_section_from_actor(first_speaker, second_speaker, "sad_byvaly_pda")
+end
+
+function zat_a2_stalker_barmen_sad_give_reward(first_speaker, second_speaker)
+	dialogs.relocate_item_section_to_actor(first_speaker, second_speaker, "wpn_vintorez")
+	dialogs.relocate_item_section_to_actor(first_speaker, second_speaker, "ammo_9x39_ap", 3)
+	dialogs.relocate_item_section_to_actor(first_speaker, second_speaker, "medkit", 2)
+	dialogs.relocate_item_section_to_actor(first_speaker, second_speaker, "bandage", 3)
+	dialogs.relocate_item_section_to_actor(first_speaker, second_speaker, "af_seaej")
+	dialogs.relocate_money_to_actor(first_speaker, second_speaker, 10000)
+end
+
+function if_actor_has_sad_oasis(first_speaker, second_speaker)
+	return first_speaker:object("af_oasis_heart") ~= nil
+end
+
+function zat_a2_stalker_barmen_sad_oasis_give_reward(first_speaker, second_speaker)
+	dialogs.relocate_item_section_from_actor(first_speaker, second_speaker, "af_oasis_heart")
+	dialogs.relocate_item_section_to_actor(first_speaker, second_speaker, "af_mayatnik")
+	dialogs.relocate_money_to_actor(first_speaker, second_speaker, 15000)
+end

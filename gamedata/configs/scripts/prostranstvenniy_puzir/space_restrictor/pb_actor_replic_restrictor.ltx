@@ -1,0 +1,38 @@
+[logic]
+active = sr_idle@actor_replic_start_game
+
+[sr_idle@actor_replic_start_game]
+on_info = {+pro_actor_replic_start_game -pro_rezak_from_tower_spawn} sr_idle@actor_replic_start_game_1 %=spawn_object(pb_rezak_in_tower:pro_rezak_in_tower_spawn) +pro_rezak_from_tower_spawn%
+
+[sr_idle@actor_replic_start_game_1]
+on_timer = 1000 | sr_idle@pb_quest_document_1_in_bag %=pb_actor_replic_start_game%
+
+[sr_idle@pb_quest_document_1_in_bag]
+on_info = {=actor_has_item(pb_quest_document_1) -pb_quest_document_1_in_bag} sr_idle@actor_replic_kill_controler %+pb_quest_document_1_in_bag%
+
+[sr_idle@actor_replic_kill_controler]
+on_info = {+controller_quest_dead} sr_idle@actor_replic_kill_controler_1
+
+[sr_idle@actor_replic_kill_controler_1]
+on_timer = 1500 | sr_idle@actor_replic_about_teleport %=pb_actor_replic_kill_controler%
+
+[sr_idle@actor_replic_about_teleport]
+on_info = {+padalshik_found_quest_give} sr_idle@actor_replic_about_teleport_1
+
+[sr_idle@actor_replic_about_teleport_1]
+on_game_timer = 1500 | sr_idle@actor_replic_about_teleport_2
+
+[sr_idle@actor_replic_about_teleport_2]
+on_info = {+controller_quest_dead -zver_found_padalshik} sr_idle@actor_replic_about_teleport_3
+on_info2 = {+controller_quest_dead +zver_found_padalshik} sr_idle@actor_replic_about_death_kuvalda
+
+[sr_idle@actor_replic_about_teleport_3]
+on_timer = 2500 | sr_idle@actor_replic_about_death_kuvalda %=pb_actor_replic_about_teleport%
+
+[sr_idle@actor_replic_about_death_kuvalda]
+on_info = {+pro_markus_alive_first_dialog_end} sr_idle@actor_replic_about_death_kuvalda_1
+
+[sr_idle@actor_replic_about_death_kuvalda_1]
+on_timer = 2500 | sr_idle@nil %=pro_actor_replic_about_death_kuvalda%
+
+[sr_idle@nil]

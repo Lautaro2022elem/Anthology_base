@@ -1,0 +1,294 @@
+obj_to_spawn_classes = {
+    -- kind
+    ["AI_STL_S"]    = "NPC (Stalker)",
+    ["AI_TRD_S"]    = "NPC (Stalker)",
+
+    ["SM_KAR"]	    = "NPC (Mutant)",
+    ["SM_BLOOD"]    = "NPC (Mutant)",
+    ["SM_BOARW"]    = "NPC (Mutant)",
+    ["SM_BURER"]    = "NPC (Mutant)",
+    ["SM_CAT_S"]    = "NPC (Mutant)",
+    ["SM_CHIMS"]    = "NPC (Mutant)",
+    ["SM_CONTR"]    = "NPC (Mutant)",
+    ["SM_DOG_S"]    = "NPC (Mutant)",
+    ["SM_FLESH"]    = "NPC (Mutant)",
+    ["SM_IZLOM"]    = "NPC (Mutant)",
+    ["SM_GIANT"]    = "NPC (Mutant)",
+    ["SM_POLTR"]    = "NPC (Mutant)",
+    ["SM_P_DOG"]    = "NPC (Mutant)",
+    ["SM_DOG_P"]    = "NPC (Mutant)",
+    ["SM_DOG_F"]    = "NPC (Mutant)",
+    ["SM_SNORK"]    = "NPC (Mutant)",
+    ["SM_TUSHK"]    = "NPC (Mutant)",
+    ["SM_ZOMBI"]    = "NPC (Mutant)",
+    ["SM_RAT"]	    = "NPC (Mutant)",
+    ["SM_KARLIK"]	= "NPC (Mutant)",
+    ["SM_LURKER"]	= "NPC (Mutant)",
+    ["SM_PSYSUCKER"]	= "NPC (Mutant)",
+
+-- ==== ==== ==== DYNAMIC MUTANTS ==== ==== ====
+    ["SM_GERMAN_SHEPHERD"] = "NPC (Mutant)",
+    ["SM_FOX"]             = "NPC (Mutant)",
+    ["SM_PIRANHA"]         = "NPC (Mutant)",
+    ["SM_VOLK"]            = "NPC (Mutant)",
+    ["SM_TARK"]            = "NPC (Mutant)",
+    ["SM_MEDVED"]          = "NPC (Mutant)",
+    ["SM_MONSTER_BOAR"]    = "NPC (Mutant)",
+    ["SM_VENDIGO"]         = "NPC (Mutant)",
+    ["SM_CHICKEN"]         = "NPC (Mutant)",
+    ["SM_POLTER_CORP"]     = "NPC (Mutant)",
+-- ==== ==== ==== DYNAMIC MUTANTS ==== ==== ====
+
+    ["C_HLCP_S"] 	= "Vehicles",
+    ["C_NIVA"] 		= "Vehicles",
+    ["SCRPTCAR"] 	= "Vehicles",
+
+    ["ON_OFF_S"]    = "Squads",
+
+    ["O_PHYSIC"]    = "Physic (Misc.)",
+    ["O_DSTRBL"]    = "Physic (Misc.)",
+    ["P_DSTRBL"]    = "Physic (Misc.)",
+    ["O_PHYS_S"]    = "Physic (Misc.)",
+    ["O_DSTR_S"]    = "Physic (Misc.)",
+    ["S_INVBOX"]    = "Physic (Misc.)",
+    ["O_INVBOX"]    = "Physic (Misc.)",
+    ["S_EXPLO"]     = "Physic (Misc.)",
+    ["II_EXPLO"]    = "Physic (Misc.)",
+
+    ["ZS_MBALD"]    = "Anomaly",
+    ["ZS_GALAN"]    = "Anomaly",
+    ["ZS_MINCE"]    = "Anomaly",
+    ["ZS_RADIO"]    = "Anomaly",
+    ["ZS_TORRD"]    = "Anomaly",
+    ["ZS_NGRAV"]    = "Anomaly",
+    ["Z_MBALD"]     = "Anomaly",
+    ["Z_RADIO"]     = "Anomaly",
+    ["Z_CFIRE"]     = "Anomaly",
+    ["Z_NOGRAV"]    = "Anomaly",
+    ["Z_TORRID"]    = "Anomaly",
+    ["Z_RUSTYH"]    = "Anomaly",
+    ["ZS_BFUZZ"]    = "Anomaly",
+    ["ZS_AMEBA"]    = "Anomaly",
+
+    ["AI_PHANT"]    = "Phantom",
+}
+
+spawn_obj_table_list = nil
+function ui_debug_launcher.get_obj_spawn_table(name)
+	if (spawn_obj_table_list and spawn_obj_table_list[name]) then
+		return spawn_obj_table_list[name]
+	end
+
+	spawn_obj_table_list = {
+		["NPC (Mutant)"]                  = {},
+		["NPC (Stalker)"]                 = {},
+		["Squads (Mutant)"]               = {},
+		["Squads (Stalker)"]              = {},
+		["Squads (Story ID)"]             = {},
+		["Vehicles"]                      = {},
+		["Anomaly"]                       = {},
+		["Physic (Misc.)"]                = {},
+		["Phantom"]                       = {}
+	}
+
+	local ltx = ini_file("plugins\\spawner_blacklist.ltx")
+	ini_sys:section_for_each(function(section)
+		if (not ltx:line_exist("ignore_sections",section))
+		and (not string.find(section,"tch_"))
+		and (not string.find(section,"mp_"))
+		and (not string.find(section,"_base"))
+		then
+			local class = ini_sys:r_string_ex(section,"class")
+			local kind = ini_sys:r_string_ex(section,"kind") -- special class name for the sake of correct listing
+			if kind then
+				class = kind
+			end
+
+			if (class) then
+				local typ = obj_to_spawn_classes[class]
+				if (typ) then
+					if (typ == "Squads") then
+						local is_monster = ini_sys:r_string_ex(section,"faction") or ""
+						local story_id = ini_sys:r_string_ex(section,"story_id") or ""
+						if story_id ~= "" then
+							--typ = typ .. " (Story ID)"
+						elseif (string.find(is_monster,"monster")) then
+							typ = typ .. " (Mutant)"
+						elseif (string.find(section,"sim_squad_")) then
+							typ = typ .. " (Stalker)"
+						end
+
+					elseif (typ == "NPC (Stalker)") or (typ == "NPC (Mutant)")  then
+						local character_profile = ini_sys:r_string_ex(section,"character_profile") or ""
+						local story_id = ini_sys:r_string_ex(section,"story_id") or ""
+						local species = ini_sys:r_string_ex(section,"species") or ""
+						if (story_id ~= "") then
+							typ = "na"
+						elseif (species == "human") and (not string.find(character_profile,"sim_default_")) then
+							typ = "na"
+						end
+					end
+					if (spawn_obj_table_list[typ]) then
+						spawn_obj_table_list[typ][#spawn_obj_table_list[typ]+1] = section
+					end
+				end
+			end
+		end
+		return false
+	end
+	)
+
+	return spawn_obj_table_list[name]
+end
+
+function ui_debug_launcher.UIDebug_ObjSpawn:Spawn(section)
+	-- Get group name
+	local class = ini_sys:r_string_ex(section,"class")
+	local kind = ini_sys:r_string_ex(section,"kind") -- special class name for the sake of correct listing
+	if kind then class = kind end
+	local group = obj_to_spawn_classes[class]
+	local ext = ""
+
+	-- Properties
+	local prop = {}
+	local is_squad = string.find(group,"Squad")
+	local cant_spawn_actor = string.find(group,"NPC") or string.find(group,"Physic")
+	local is_veh = string.find(group,"Vehicles")
+	local is_anom = string.find(group,"Anomaly")
+	local is_phantom = string.find(group,"Phantom")
+	if (is_squad) then
+		prop.no_id           = true
+		prop.squad           = true
+		prop.spawn_at_look   = true
+	elseif (cant_spawn_actor) then
+		prop.no_id           = true
+		prop.spawn_at_look   = true
+	elseif (is_veh) then
+		prop.no_id           = true
+		prop.spawn_at_look   = true
+	elseif (is_anom) then
+		prop.no_id           = true
+		prop.spawn_at_look   = true
+		prop.is_anom         = true
+	elseif (is_phantom) then
+		prop.no_id           = true
+		prop.spawn_at_look   = true
+		prop.use_level_spawn = true
+	end
+
+	-- checks
+	local chk_smart  = self.d14_chk_s:GetCheck()
+	local chk_point  = self.d15_chk_p:GetCheck()
+	local chk_nearby = self.d15_chk_n:GetCheck()
+
+	local smart_name = string.sub(self.d14_list_smrt:GetText(), 1, -2)
+	if smart_name and (smart_name ~= "") and SIMBOARD.smarts_by_names[smart_name] then
+		chk_smart = chk_smart and true or false
+	else
+		chk_smart = false
+	end
+
+	-- Spawn
+	local pos, lvid, gvid
+	if chk_smart then
+		local smrt = SIMBOARD.smarts_by_names[smart_name]
+		local se_smart = alife_object(smrt.id)
+		if se_smart then
+			pos = se_smart.position
+			lvid = se_smart.m_level_vertex_id
+			gvid = se_smart.m_game_vertex_id
+			ext = strformat("at smart [%s]",smart_name)
+		end
+
+	elseif (prop.spawn_at_look) and chk_point then
+		gvid = db.actor:game_vertex_id()
+		local r = level.get_target_dist and level.get_target_dist() or 3
+		pos = vector():set(db.actor:position())
+		pos:add(device().cam_dir:mul(r))
+		pos = vector():set(pos.x,db.actor:position().y,pos.z)
+		lvid = level.vertex_id(pos)
+		ext = "at cursor"
+	else
+		pos = db.actor:position()
+		lvid = db.actor:level_vertex_id()
+		gvid = db.actor:game_vertex_id()
+		ext = "near actor"
+	end
+
+	if (prop.use_level_spawn) then
+		if (level.spawn_item) then
+			level.spawn_item(section,pos,lvid,65535,false)
+			self:SetMsg( strformat("Spawned object [%s] using level spawn", section) , "-" )
+		end
+		return
+	end
+
+	local se_obj = section and alife_create(section, pos, lvid, gvid)
+	if se_obj then
+		if (prop.squad) then
+			local smrt
+			if (chk_smart) then
+				smrt = SIMBOARD.smarts_by_names[smart_name]
+				if smrt then
+					se_obj:create_npc(smrt)
+				end
+			else
+				se_obj:create_npc(nil, pos, lvid, gvid)
+			end
+
+			local sim = alife()
+			for k in se_obj:squad_members() do
+				local se_npc = k.object or k.id and sim:object(k.id)
+				if (se_npc) then
+					SIMBOARD:setup_squad_and_group(se_npc)
+					SendScriptCallback("squad_on_npc_creation",se_obj,se_npc,smrt)
+				end
+			end
+			self:SetMsg( strformat("Spawned squad [%s] (%s) %s", section, se_obj.id, ext) , "-" )
+
+		elseif (prop.is_anom) then
+			local data = utils_stpk.get_object_data(se_obj)
+			if (data) then
+				data.object_flags = 31
+				--data.artefact_spawn_count = 1
+				data.restrictor_type = 0
+				data.shapes = {}
+				data.shapes[1] = {}
+				data.shapes[1].shtype = 0
+				data.shapes[1].offset = VEC_ZERO
+				data.shapes[1].radius = 10
+				utils_stpk.set_object_data(data,se_obj)
+			end
+
+			self:SetMsg( strformat("Spawned anomaly [%s] (%s) %s", section, se_obj.id, ext) , "-" )
+
+		else
+			self:SetMsg( strformat("Spawned object [%s] (%s) %s", section, se_obj.id, ext) , "-" )
+		end
+
+	else
+		self:SetMsg( strformat("No server object made for [%s]", section) , "!" )
+	end
+end
+
+function ui_debug_launcher.UIDebug_ObjSpawn:OnButton_Name()
+	local section = self.d13_input:GetText()
+	if not (section and section ~= "" and ini_sys:section_exist(section)) then
+		self:SetMsg( strformat("Section [%s] doesn't exist", section), "!" )
+		return
+	end
+
+	local class = ini_sys:r_string_ex(section,"class")
+	local kind = ini_sys:r_string_ex(section,"kind") -- special class name for the sake of correct listing
+	if kind then
+		class = kind
+	end
+
+	local group = obj_to_spawn_classes[class]
+	if (not group) then
+		self:SetMsg( strformat("Section [%s] is not a valid to spawn an object", section), "!" )
+		return
+	end
+
+	self:Spawn(section)
+end

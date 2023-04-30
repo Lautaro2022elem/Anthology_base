@@ -1,0 +1,15 @@
+[logic]
+active = sr_idle@wait
+
+[sr_idle@wait]
+on_info = {+sad_b3_ucheny_mission_on} sr_idle@100 %=create_squad(sad_sim_12_ucheny_snorki:sad_sim_12)%
+
+[sr_idle@100]
+on_info = {-sad_b3_ucheny_mission_on} sr_idle@nil %+sad_sim_12_ucheny_snorki_awake%
+on_info2 = {=squad_in_zone(sad_b3_ucheny_squad:sad_sim_12_sr_ucheny_snork_zone)} sr_idle@200
+on_info3 = {=actor_in_zone(sad_sim_12_sr_ucheny_snork_zone)} sr_idle@200
+
+[sr_idle@200]
+on_game_timer = 10 | sr_idle@nil %+sad_sim_12_ucheny_snorki_awake%
+
+[sr_idle@nil]

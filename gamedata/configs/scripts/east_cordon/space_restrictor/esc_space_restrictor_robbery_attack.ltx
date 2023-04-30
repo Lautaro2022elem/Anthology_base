@@ -1,0 +1,7 @@
+[logic]
+active = sr_idle@1
+
+[sr_idle@1]
+on_actor_inside = {+spectrum_project_start -esc_trepach_hit -esc_trepach_dead -esc_trepach_dialog_robbery_complit +esc_dialog_wolf_the_first_penny} sr_idle@nil %=set_squad_enemy_to_actor(esc_squad_tunnel) =play_sound(esc_robbery_kill) +esc_trepach_dialog_robbery_attack%
+
+[sr_idle@nil]

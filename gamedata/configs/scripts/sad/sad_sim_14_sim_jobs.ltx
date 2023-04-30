@@ -1,0 +1,52 @@
+; -------------------------------------------------------------------------------------------------------- 1
+[logic@job_1]
+active = animpoint@1 
+prior = 60
+
+[animpoint@1]
+cover_name = sad_sim_14_anipoint_1
+on_info = {=is_rain} walker@11
+
+[walker@11]
+path_walk = podsit_3_walk
+path_look = podsit_3_look
+on_info = {!is_rain} animpoint@1
+
+; -------------------------------------------------------------------------------------------------------- 2
+[logic@job_2]
+active = walker@2 
+prior = 60
+
+[walker@2]
+path_walk = oleg_gvard_2_walk
+path_look = oleg_gvard_2_look
+on_info = {=is_rain} walker@21
+
+[walker@21]
+path_walk = konsit_walk
+path_look = konsit_look
+on_info = {!is_rain} walker@2
+
+; -------------------------------------------------------------------------------------------------------- 3
+[logic@job_3]
+active = walker@3 
+prior = 60
+
+[walker@3]
+path_walk = walken_2_walk
+path_look = walken_2_look
+on_info = {=is_rain} walker@31
+
+[walker@31]
+path_walk = podsit_2_walk
+path_look = podsit_2_look
+on_info = {!is_rain} walker@3
+
+; -------------------------------------------------------------------------------------------------------- 4
+[logic@job_4]
+active = walker@4 
+prior = 70
+
+[walker@4]
+path_walk = podsit_1_walk
+path_look = podsit_1_look

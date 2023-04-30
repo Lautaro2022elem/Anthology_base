@@ -1,0 +1,528 @@
+<?xml version="1.0" encoding="windows-1251" standalone="yes" ?>
+<string_table>
+    <string id="val_first_dialog_pianist_task_0">
+        <text>Ты ещё кто такой?!</text>
+    </string>
+    <string id="val_first_dialog_pianist_task_1">
+        <text>Сталкер, просто сталкер. Ты видимо и есть техник - Пианист?</text>
+    </string>
+    <string id="val_first_dialog_pianist_task_2">
+        <text>Может да, а может и нет. Всё зависит от того, что от меня тебе нужно? Как вообще нашёл меня?</text>
+    </string>
+    <string id="val_first_dialog_pianist_task_3">
+        <text>Значит точно ты. Найти тебя особых усилий не составило, сначала нашёл твой флэш-накопитель, а затем и тебя самого. Тебя сталкеры из лагеря, который на ферме ищут.</text>
+    </string>
+    <string id="val_first_dialog_pianist_task_4">
+        <text>Ищут? На кой ляд я им нужен? Снова мне мозги парить? Снова новичкам рассказывать - как жить? А?</text>
+    </string>
+    <string id="val_first_dialog_pianist_task_5">
+        <text>Да мне-то почём знать? Меня попросили - я сделал.</text>
+    </string>
+    <string id="val_first_dialog_pianist_task_6">
+        <text>Хорошо коли так, тогда давай с тобой договоримся, ты топаешь сейчас к Тохе, и поясняешь, что нашёл меня, но в лагерь я не вернусь, если захотят что-то от меня, то пусть жопу свою поднимают и идут. Всё ясно?</text>
+    </string>
+    <string id="val_first_dialog_pianist_task_7">
+        <text>Более чем.</text>
+    </string>
+    <string id="val_garik_storyline_start_dialog_0">
+        <text>Сталкер, стой! Кто такой и что здесь ищешь?</text>
+    </string>
+    <string id="val_garik_storyline_start_dialog_1">
+        <text>Охотник, на Змея откликаюсь. Ищу здесь своего товарища - Бизона, может знаешь такого?</text>
+    </string>
+    <string id="val_garik_storyline_start_dialog_10">
+        <text>Во как! Хорошо, я поговорю с нашим лидером, он мужик толковый и в электронике неплохо шарит, так что думаю, с данным вопросом точно поможет, ну а ежели нет, то будем думать.</text>
+    </string>
+    <string id="val_garik_storyline_start_dialog_11">
+        <text>Хорошо, тогда вот те два ПДА и мне нужна любая информация о Вашем технике, как зовут, чем вообще помимо ремонта увлекается или чем занимался до того как пропал.</text>
+    </string>
+    <string id="val_garik_storyline_start_dialog_12">
+        <text>Техника Пианистом звать, вот чем увлекается этого сходу рассказать не могу, не наблюдал за ним, о последних его делах пока тоже ничего рассказать не могу, однако я с ребятами пообщаюсь и тебе сразу сообщу. Кстати, в последний раз Техника рядом с старым заводом видели, там ещё гравитационная архи-аномалия, координаты я тебе сейчас сброшу.</text>
+    </string>
+    <string id="val_garik_storyline_start_dialog_13">
+        <text>Хорошо, тогда отправлюсь сначала туда, а по дороге глядишь и мутантов получиться зачистить.</text>
+    </string>
+    <string id="val_garik_storyline_start_dialog_2">
+        <text>Охотник, это хорошо, теперь будет кому дичь стрелять, а то у нас зелени восемьдесят процентов и с живностью Зоны, они не особо "ладят", ну если ты меня понимаешь. Что же Бизона твоего, то бывал он здесь, с ним ещё двое сталкеров было, одного кажется Плотником звали, а второй… Хм… Толи Феникс, или Феликс, как того кота из рекламы в общем.</text>
+    </string>
+    <string id="val_garik_storyline_start_dialog_3">
+        <text>Ну это уже что-то, касательно местной фауны, то думаю, что смогу помочь Вам с этим, если хорошо заплатите и расскажите больше о Бизоне и парнях, которые были с ним. Кстати, а у Вас техник в лагере есть?</text>
+    </string>
+    <string id="val_garik_storyline_start_dialog_4">
+        <text>Заплатим не прям много, но на жизнь хватит, а техник Наш пропал.</text>
+    </string>
+    <string id="val_garik_storyline_start_dialog_5">
+        <text>Как пропал? И Вы не искали его?!</text>
+    </string>
+    <string id="val_garik_storyline_start_dialog_6">
+        <text>Искали, да вот только где его тут искать и кому? Зелени?! Которая дальше лагеря нос боится сунуть, или Нам опытным сталкерам, которые дальше лагеря уйти не могут, потому что эту самую Зелень и стережём, короче беда брат, как в той поговорке: "И хочется, и колется…"</text>
+    </string>
+    <string id="val_garik_storyline_start_dialog_7">
+        <text>Слушай, я бы мог помочь с поиском Вашего техника, если хочешь конечно, но взамен мне потребуется одна услуга.</text>
+    </string>
+    <string id="val_garik_storyline_start_dialog_8">
+        <text>Было бы очень здорово! Что за услуга тебе потребуется?</text>
+    </string>
+    <string id="val_garik_storyline_start_dialog_9">
+        <text>У меня есть два ПДА, оба заблокированы, но один из них вообще похоже клонирован либо информация хорошо затёрта, вот один мне нужно разблокировать, а вот со вторым понять, кому принадлежит или принадлежал и по возможности информацию достать.</text>
+    </string>
+    <string id="val_toha_going_to_unlock_flashcard_0">
+        <text>Так это ты тот самый охотник, который решился помочь с поисками нашего Техника?</text>
+    </string>
+    <string id="val_toha_going_to_unlock_flashcard_1">
+        <text>Именно, я кстати по этому поводу и пришёл. Был тут давеча около места, где Вашего техника видели, и нашёл там флэшку, вот только незадача… Флэшка-то заблокирована.</text>
+    </string>
+    <string id="val_toha_going_to_unlock_flashcard_2">
+        <text>Во как! Я так понимаю, ты хочешь чтобы я занялся разблокировкой? Коли так, давай флэшку, а сам двигай прогуляйся, как закончу - сообщу.</text>
+    </string>
+    <string id="val_toha_going_to_unlock_flashcard_3">
+        <text>Хорошо, буду ждать.</text>
+    </string>
+    <string id="val_toha_like_without_hands_task_complete_0">
+        <text>Вот и ты, ну что удалось найти Пианиста?</text>
+    </string>
+    <string id="val_toha_like_without_hands_task_complete_1">
+        <text>Удалось, он просил передать тебе пару слов.</text>
+    </string>
+    <string id="val_toha_like_without_hands_task_complete_10">
+        <text>Змей, не перебивай и дослушай. Так вот Феликс, словно чистый лист был, но довольно быстро вник во всё происходящее, сначала побродил по окрестностям, потом выполнял некоторые наши поручения, а по итогу выяснилось, что за ним "синие" охотятся, он вроде решил данный вопрос, просто перестрелял всех. Не знаю уж как это было, но Гарик ходил на место бойни и видел тела… Так на чём это я… А точно! После того как он с "синими" разобрался, он собрал свои пожитки и двинул в сторону старого завода, там ещё анархисты недалеко, ты кстати мимо проходил, когда искал Пианиста.</text>
+    </string>
+    <string id="val_toha_like_without_hands_task_complete_11">
+        <text>Да, помню этот завод, мутантов там куча…</text>
+    </string>
+    <string id="val_toha_like_without_hands_task_complete_12">
+        <text>Что есть, то есть. Так что там его и ищи, гладишь повезёт.</text>
+    </string>
+    <string id="val_toha_like_without_hands_task_complete_13">
+        <text>Хорошо, спасибо за наводку.</text>
+    </string>
+    <string id="val_toha_like_without_hands_task_complete_2">
+        <text>Ну глаголь.</text>
+    </string>
+    <string id="val_toha_like_without_hands_task_complete_3">
+        <text>Передаю дословно: В лагерь Я не вернусь, если захотят что-то от меня, то пусть свою жопу поднимают и идут. Вот так вот.</text>
+    </string>
+    <string id="val_toha_like_without_hands_task_complete_4">
+        <text>Я тебя услышал, кстати, касательно тех ПДА. У меня получилось один из них разблокировать. Со вторым ничем помочь не смогу, он вообще ничейный, просто поставили пароль и добавили координаты нашего лагеря и всё…</text>
+    </string>
+    <string id="val_toha_like_without_hands_task_complete_5">
+        <text>М-да… Не густо, но лучше - чем ничего. Кстати, касательно чистого ПДА, я так и предполагал, но поскольку нет знаний, пришлось к Вам тащить.</text>
+    </string>
+    <string id="val_toha_like_without_hands_task_complete_6">
+        <text>Ясно, ладно Змей, если помочь нам захочешь, то мы завсегда рады.</text>
+    </string>
+    <string id="val_toha_like_without_hands_task_complete_7">
+        <text>Кстати, касательно помощи, думаю, мы сможем помочь друг-другу. Не знаю говорил ли тебе Гарик, зачем я здесь, но я лучше повторю. Здесь я ищу Бизона и его группу или то что от неё осталось. ПДА которые я тебе давал, принадлежали членам его группы.</text>
+    </string>
+    <string id="val_toha_like_without_hands_task_complete_8">
+        <text>Гарик рассказал о цели твоего визита, я особо много рассказать не смогу. Но расскажу всё что знаю. Бизон этот бывал здесь, с ним ещё двое было: Плотник и Феликс, они искали какой-то чудо артефакт или что-то подобное, у нас они пробыли около трёх суток, а потом просто свалили. Единственное, что может тебе помочь, так это то, что Феликса мы потом нашли, правда странный он был, словно мозг ему как флэшку отформатировали…</text>
+    </string>
+    <string id="val_toha_like_without_hands_task_complete_9">
+        <text>Это уже интересно, а где Феликс сейчас?</text>
+    </string>
+
+    <string id="dl_done_first_quest_val_a3_stalker_garik_0">
+        <text>Ну что там с кейсом?</text>
+    </string>
+    <string id="dl_done_first_quest_val_a3_stalker_garik_1">
+        <text>Вот он, в целости и сохранности.</text>
+    </string>
+    <string id="dl_done_first_quest_val_a3_stalker_garik_11">
+        <text>В процессе.</text>
+    </string>
+    <string id="dl_done_first_quest_val_a3_stalker_garik_2">
+        <text>Отлично, вот тебе как и договаривались ствол и немного маслят к нему. Кстати, тут наш лидер хотел с тобой потолковать, он справа от меня за столом сидит.</text>
+    </string>
+    <string id="dl_done_first_quest_val_a3_stalker_garik_3">
+        <text>Благодарю! Потолковать, ну хорошо.</text>
+    </string>
+    <string id="dl_done_first_quest_val_a3_stalker_garik_4">
+        <text>Кстати, если вдруг будет желание подзаработать и помочь нашему скромному клану, то ты знаешь где меня искать.</text>
+    </string>
+    <string id="dl_done_first_quest_val_a3_stalker_garik_5">
+        <text>Приму к сведению.</text>
+    </string>
+    <string id="dl_first_dialog_buriy_base_0">
+        <text>...Ещё раз спасибо тебе Змей! Если бы не ты, то жрали бы меня уже слепые псы...</text>
+    </string>
+    <string id="dl_first_dialog_buriy_base_1">
+        <text>Да ладно, благо успел, остальное не имеет значения. Ты лучше расскажи что с тобой случилось?</text>
+    </string>
+    <string id="dl_first_dialog_buriy_base_2">
+        <text>Ох... Ну суть нашего похода ты знаешь, поэтому рассказывать не стану вновь. В общем, вчера Я, Бизон и Грек двинули к деревне, там по слухам можно было хабара насобирать, так сказать, отвлечься от нашей основной задачи. Мы короче в деревню пришли, и опомниться не успели как по нам уже вёл огонь снайпер, потом подключились ещё ребята. Мы пытались сдерживать их, но было тщетно, поэтому мы приняли решение уходить. Я сказал ребятам, что прикрою отход и постараюсь догнать. Они двинули, а я начал палить во все стороны, да так чтобы весь огонь на себя перевести, чтоб ребята успели скрыться. По итогу, как только парни ушли из их поля зрения, бой начал стихать... Я уж подумал, всё... Наконец-то попал по кому-то, и они решили подождать пока у меня патроны кончатся. Сидел я за домиком не долго, меня один из нападавших обошёл и выстрелил, повезло что в сердце не попал, хотя было рядом. Истекая кровью, пролежал там ещё пару часов и потом начал ползком к лагерю, но сил уже не было, и я отправил сигнал помощи, а тут Ты.</text>
+    </string>
+    <string id="dl_first_dialog_buriy_base_3">
+        <text>В рубашке родился, а кто на вас напал? Ты смог разглядеть?</text>
+    </string>
+    <string id="dl_first_dialog_buriy_base_4">
+        <text>Смог не только разглядеть, но и услышать их разговор.</text>
+    </string>
+    <string id="dl_first_dialog_buriy_base_5">
+        <text>Это уже интереснее, рассказывай.</text>
+    </string>
+    <string id="dl_first_dialog_buriy_base_6">
+        <text>Напали на нас наёмники, из разговора стало ясно, что их наняли для устранения Бизона, а группу нашу просто попутно решили устранить. Кто или зачем решил Бизона убрать, Я не знаю, но факт остаётся фактом: наёмники объявили на Бизона охоту.</text>
+    </string>
+    <string id="dl_first_dialog_buriy_base_7">
+        <text>Чёрт... И где же его искать-то? Куда он мог уйти с Греком?</text>
+    </string>
+    <string id="dl_first_dialog_buriy_base_8">
+        <text>Постоянной стоянки у нас не было, поэтому конкретного места я назвать не могу. Прости.</text>
+    </string>
+    <string id="dl_first_dialog_buriy_base_9">
+        <text>Ладно, ты отдыхай - сил набирайся. Я же пока на местных ребят работаю, глядишь может они и подсобят с поисками.</text>
+    </string>
+    <string id="dl_first_dialog_val_a3_stalker_garik_0">
+        <text>Эй сталкер! Ты откуда и где снаряга твоя?</text>
+    </string>
+    <string id="dl_first_dialog_val_a3_stalker_garik_1">
+        <text>Я? Из плена братков, а снаряга видимо у них, на "хранение" осталась... Впрочем хрен с ней, главное что ноги смог унести.</text>
+    </string>
+    <string id="dl_first_dialog_val_a3_stalker_garik_2">
+        <text>Да уж... Везучий ты чертяка! Ничего не скажешь.</text>
+    </string>
+    <string id="dl_first_dialog_val_a3_stalker_garik_3">
+        <text>Да-да, слушай может сможешь выручить меня? Мне бы хотя бы ствол, а то без него никуда...</text>
+    </string>
+    <string id="dl_first_dialog_val_a3_stalker_garik_4">
+        <text>Помочь? Думаю, что смогу. Смотри, давай я тебе ствол и маслин к нему, а ты для меня кое-что заберёшь. Согласен?</text>
+    </string>
+    <string id="dl_first_dialog_val_a3_stalker_garik_5">
+        <text>Договорились! Что и где нужно забрать?</text>
+    </string>
+    <string id="dl_first_dialog_val_a3_stalker_garik_6">
+        <text>В общем, если идти на северо-запад, то увидишь овраг, а в овраге небольшое скопление аномалий, так вот там лежит контейнер, он-то мне и нужен.</text>
+    </string>
+    <string id="dl_first_dialog_val_a3_stalker_garik_7">
+        <text>Звучит вроде бы просто, что ж попробую.</text>
+    </string>
+    <string id="dl_first_dialog_wounded_buriy_0">
+        <text>Помоги...</text>
+    </string>
+    <string id="dl_first_dialog_wounded_buriy_1">
+        <text>Бурый?! Чёрт, сейчас я тебя до лагеря донесу, потерпи браток!</text>
+    </string>
+    <string id="dl_second_quest_garik_dialog_0">
+        <text>Мир тебе Гарик! Тоха сказал, что Вы словили сигнал бедствия?</text>
+    </string>
+    <string id="dl_second_quest_garik_dialog_02_0">
+        <text>Жаль парня...</text>
+    </string>
+    <string id="dl_second_quest_garik_dialog_02_1">
+        <text>Согласен, не самая лучшая участь... Однако есть и плюс, тварь убили, а значит уменьшили шанс на смерть ещё хоть кого-нибудь. Ладно, двигаем обратно?</text>
+    </string>
+    <string id="dl_second_quest_garik_dialog_02_2">
+        <text>Согласен... Да, идём назад.</text>
+    </string>
+    <string id="dl_second_quest_garik_dialog_1">
+        <text>Да есть такое дело, и ведь сигнал неподалёку отсюда. Слушай проверим а?</text>
+    </string>
+    <string id="dl_second_quest_garik_dialog_2">
+        <text>Давай, всё равно пока нет никаких дел.</text>
+    </string>
+    <string id="dl_storyline_garik_quest_0">
+        <text>О, Змей! Мне тут давеча сообщили что видели пару сталкеров в отличной экипировке рядом с юго-западным хутором, они двигались по направлению к болоту, что не так далеко. Вероятно это и есть те кого ты ищешь. И ещё там же видели какого-то одинокого наёмника, не думаю, что он тебя конечно заинтересует, но всё же.</text>
+    </string>
+    <string id="dl_storyline_garik_quest_1">
+        <text>Наёмник? Ты уверен?</text>
+    </string>
+    <string id="dl_storyline_garik_quest_2">
+        <text>Думаю, да. Все наши группы у меня отмечены на ПДА, а данных ребят мы видели впервые.</text>
+    </string>
+    <string id="dl_storyline_garik_quest_3">
+        <text>Хорошо, пойду проверю, может и вправду это Бизон и Грек.</text>
+    </string>
+    <string id="dl_storyline_krasnopolsky_first_dialog_0">
+        <text>Здравия желаю, вот как и договаривались: Я и мои ребята прибыли и готовы к любой поставленной задаче.</text>
+    </string>
+    <string id="dl_storyline_krasnopolsky_first_dialog_1">
+        <text>Замечательно лейтенант! У тебя даже вопросов не будет касательно операции?</text>
+    </string>
+    <string id="dl_storyline_krasnopolsky_first_dialog_2">
+        <text>Змей, я ведь уже говорил, что знаю тебя давно, поэтому знаю, что попросту ты бы меня и ребят не звал, поэтому мы здесь.</text>
+    </string>
+    <string id="dl_storyline_krasnopolsky_first_dialog_4">
+        <text>Льстишь ты мне, ну да ладно, сейчас позову ещё ребят и двинем.</text>
+    </string>
+    <string id="dl_storyline_krasnopolsky_second_dialog_0">
+        <text>Мои люди и люди Тохи готовы, начинаем?</text>
+    </string>
+    <string id="dl_storyline_krasnopolsky_second_dialog_1">
+        <text>Вперёд!</text>
+    </string>
+    <string id="dl_storyline_krasnopolsky_third_dialog_0">
+        <text>Противник уничтожен, бойцы заняли оборону.</text>
+    </string>
+    <string id="dl_storyline_krasnopolsky_third_dialog_1">
+        <text>Понял тебя, Бизона видели?</text>
+    </string>
+    <string id="dl_storyline_krasnopolsky_third_dialog_2">
+        <text>Видели... Он за тем зданием. Змей, он мёртв.</text>
+    </string>
+    <string id="dl_storyline_krasnopolsky_third_dialog_3">
+        <text>Что?! Нет!</text>
+    </string>
+    <string id="dl_storyline_toha_dialog_0">
+        <text>Ты или твои люди, встречали в последнее время в округе Наёмников?</text>
+    </string>
+    <string id="dl_storyline_toha_dialog_02_0">
+        <text>Я с хорошими новостями.</text>
+    </string>
+    <string id="dl_storyline_toha_dialog_02_1">
+        <text>Не думал, что ребята из Долга так быстро согласятся. Хотя у них видимо свои счеты с мерками. Кстати, когда их ждать?</text>
+    </string>
+    <string id="dl_storyline_toha_dialog_02_2">
+        <text>Командир квада Долга сказал, что они будут ориентировочно завтра к полуночи, они придут сюда на ферму.</text>
+    </string>
+    <string id="dl_storyline_toha_dialog_02_3">
+        <text>Отлично, тогда будем готовиться. Кстати, пока ты говорил с долговцами, Гарик поймал ещё один сигнал S.O.S. Сходите проверьте.</text>
+    </string>
+    <string id="dl_storyline_toha_dialog_02_4">
+        <text>Хорошо, пойду поговорю с Гариком.</text>
+    </string>
+    <string id="dl_storyline_toha_dialog_1">
+        <text>Было дело, буквально вчера сюда пожаловали люди из Синдиката, расположились они на северном КПП. Зачем они здесь, сказать не могу - не знаю. Да и если быть честным, особо знать не хочу. Чревато знать о планах мерков, проверенно уже не однократно.</text>
+    </string>
+    <string id="dl_storyline_toha_dialog_2">
+        <text>Понял тебя, слушай а нет ли у тебя желания гостей незваных убрать?</text>
+    </string>
+    <string id="dl_storyline_toha_dialog_3">
+        <text>Скажу так, я не против, но боюсь, что после устранения группы этих мразей, всё равно придут другие.</text>
+    </string>
+    <string id="dl_storyline_toha_dialog_4">
+        <text>Не думаю, не так давно группа Долговцев устранила квад мерков в окрестностях бывшего НИИ и после их там никто не видал, думаю, что с данной группой будет так же.</text>
+    </string>
+    <string id="dl_storyline_toha_dialog_5">
+        <text>Думаешь? Я особо рисковать не хочу, вот если бы товарищи из доблестной группировки Долг прибыли сюда и поучаствовали в устранении, то нашего присутствия Мерки бы и не заметили.</text>
+    </string>
+    <string id="dl_storyline_toha_dialog_6">
+        <text>Хм... Думаю, что у меня получиться пригласить их.</text>
+    </string>
+    <string id="dl_storyline_toha_dialog_7">
+        <text>Вот это уже другой разговор! Как только Долговцы придут, тогда я и выделю тебе людей, думаю, это справедливо!</text>
+    </string>
+    <string id="dl_storyline_toha_dialog_8">
+        <text>Замётано, пойду попробую наладить связь с парнями.</text>
+    </string>
+    <string id="dl_tech_pda_vorona_locked_out_0">
+        <text>Приветствую! Сможешь взломать ПДА?</text>
+    </string>
+    <string id="dl_tech_pda_vorona_locked_out_1">
+        <text>После того как ты мне радио-материалы притащил, думаю, что Я на многое теперь способен! Так что давай свой ПДА и через пару часов подходи.</text>
+    </string>
+    <string id="dl_tech_pda_vorona_locked_out_2">
+        <text>Рад слышать! Вот ПДА, как будет готово сообщи если не сложно.</text>
+    </string>
+    <string id="dl_tech_pda_vorona_unlocked_in_0">
+        <text>Получил твоё сообщение.</text>
+    </string>
+    <string id="dl_tech_pda_vorona_unlocked_in_1">
+        <text>Какое? А? Точно! Я уж и забыл, дел много, но вот тот ПДА, разблокировал его информации там не много, какие-то отметки на карте, упоминание о группе какой-то, артефакте и пара заметок.</text>
+    </string>
+    <string id="dl_tech_pda_vorona_unlocked_in_2">
+        <text>Хорошо, сейчас посмотрю.</text>
+    </string>
+    <string id="dl_val_a3_stalker_leader_art_1_dialog_0">
+        <text>Нашёл артефакт - вот он.</text>
+    </string>
+    <string id="dl_val_a3_stalker_leader_art_1_dialog_1">
+        <text>Отлично, артефакт гравитационной природы! Вот тебе небольшой презент от меня и там наш торговец что-то от тебя хотел, поговорил бы с ним, а я пока подумаю, как тебе с твоей проблемой помочь.</text>
+    </string>
+    <string id="dl_val_a3_stalker_leader_art_1_dialog_2">
+        <text>Благодарю, этот ствол будет кстати, что касательно торговца, то сейчас пойду потолкую.</text>
+    </string>
+    <string id="dl_val_a3_stalker_leader_art_2_dialog_0">
+        <text>Нашёл артефакт - вот он.</text>
+    </string>
+    <string id="dl_val_a3_stalker_leader_art_2_dialog_1">
+        <text>Отлично, артефакт электрической природы! Вот тебе небольшой презент от меня и там наш торговец что-то от тебя хотел, поговорил бы с ним, а я пока подумаю, как тебе с твоей проблемой помочь.</text>
+    </string>
+    <string id="dl_val_a3_stalker_leader_art_2_dialog_2">
+        <text>Благодарю, неплохой ствол - пригодится, что касательно торговца, то сейчас пойду потолкую.</text>
+    </string>
+    <string id="dl_val_a3_stalker_leader_art_3_dialog_0">
+        <text>Нашёл артефакт - вот он.</text>
+    </string>
+    <string id="dl_val_a3_stalker_leader_art_3_dialog_1">
+        <text>Отлично, артефакт кислотной природы! Вот тебе небольшой презент от меня и там наш торговец что-то от тебя хотел, поговорил бы с ним, а я пока подумаю, как тебе с твоей проблемой помочь.</text>
+    </string>
+    <string id="dl_val_a3_stalker_leader_art_3_dialog_2">
+        <text>Благодарю, сейчас любой ствол не помешает, что касательно торговца, то сейчас пойду потолкую.</text>
+    </string>
+    <string id="dl_val_a3_stalker_leader_first_dialog_0">
+        <text>Здравствуй-здравствуй, и как тебя звать-величать?</text>
+    </string>
+    <string id="dl_val_a3_stalker_leader_first_dialog_1">
+        <text>На Змея откликаюсь, по профессии охотник.</text>
+    </string>
+    <string id="dl_val_a3_stalker_leader_first_dialog_10">
+        <text>Любые, я тебе в ПДА отмечу несколько аномальных полей, там поброди, может и будет толк. Кстати, не советую тебе к браткам сейчас соваться, месть дело такое... Однако торопиться не стоит! Да и ещё в деревню, что к северу отсюда тоже не советую идти. Парни сообщили, что приметили там отряд неизвестных, да и тварь там какая-то бродит... В общем советую прислушаться.</text>
+    </string>
+    <string id="dl_val_a3_stalker_leader_first_dialog_11">
+        <text>Хорошо, я тебя услышал. Пойду "пощупаю" аномалии...</text>
+    </string>
+    <string id="dl_val_a3_stalker_leader_first_dialog_2">
+        <text>Хорошо охотник Змей. Меня Тохой кличут, я тут главный.</text>
+    </string>
+    <string id="dl_val_a3_stalker_leader_first_dialog_3">
+        <text>Понял, Гарик сказал, что ты потолковать о чем-то хочешь.</text>
+    </string>
+    <string id="dl_val_a3_stalker_leader_first_dialog_4">
+        <text>Есть такое, итак мне интересно как ты у братков оказался, как смог свалить оттуда и что вообще делаешь в этих Богом забытых краях?</text>
+    </string>
+    <string id="dl_val_a3_stalker_leader_first_dialog_5">
+        <text>О, это наверное самое смешное! Я пожалуй расскажу всё с начала, а там и к сути дойдём. Итак Я ищу сталкера по прозвищу Бизон и его группу, а точнее то что от неё осталось. Поиски привели меня к коллектору, в который был коротким путём сюда. Уже поднимаясь наповерхность мне по головушке засадили и шмотки отобрали, очнулся уже в логове бандитов, странно было конечно, что меня никто не охранял, однако этим я и воспользовался, ушёл через забор и вот набрёл на ваш лагерь. Вот так как-то.</text>
+    </string>
+    <string id="dl_val_a3_stalker_leader_first_dialog_6">
+        <text>Ну и история однако, не позавидуешь. Впрочем выбрался и слава Богу. Тебе я так понимаю сейчас снаряга нужна, так вот я могу тебе выдать кое-чего, однако не обольщайся, придётся поработать на благо нашего клана, думаю, что отказываться не станешь, ведь иного выхода у тебя нет. Да и ещё постараюсь помочь тебе с поисками, но это позже.</text>
+    </string>
+    <string id="dl_val_a3_stalker_leader_first_dialog_7">
+        <text>Да уж... Отказаться, значит умереть, перспектива так себе. Что делать нужно и чем ты сможешь помочь с моими поисками?</text>
+    </string>
+    <string id="dl_val_a3_stalker_leader_first_dialog_8">
+        <text>Вот тебе экипировка, немного медикаментов. Ствол как я погляжу у тебя уже имеется, однако одного пистолета маловато будет для здешних краёв, тут где-то схрон есть, владельцу он уже вряд ли пригодиться, а тебе будет в самый раз, он где-то на территории лагеря, найдёшь в общем. Что же касательно дел, то для начала придётся поработать сборщиком артефактов, работа опасная, но если есть должная сноровка и детектор хороший, то проблем не будет.</text>
+    </string>
+    <string id="dl_val_a3_stalker_leader_first_dialog_9">
+        <text>Угу, спасибо. Сборщиком говоришь? И какие артефакты тебе нужны?</text>
+    </string>
+    <string id="zav_freedom_stalker_start_dialog_0">
+        <text>Кто таков? И какой группировки?!</text>
+    </string>
+    <string id="zav_freedom_stalker_start_dialog_1">
+        <text>Сталкер, просто сталкер. Змеем кличут.</text>
+    </string>
+    <string id="zav_freedom_stalker_start_dialog_2">
+        <text>Что ищешь здесь?</text>
+    </string>
+    <string id="zav_freedom_stalker_start_dialog_3">
+        <text>Информацию.</text>
+    </string>
+    <string id="zav_freedom_stalker_start_dialog_4">
+        <text>Вот не нравишься ты мне!</text>
+    </string>
+    <string id="zav_freedom_stalker_start_dialog_5">
+        <text>А я не баба, чтобы тебе нравиться…</text>
+    </string>
+    <string id="zav_freedom_stalker_start_dialog_6">
+        <text>Да? Блин, а то я не заменил, ладно пошутили и хватит, в общем вход в лагерь для тебя сейчас закрыт, но если выполнишь поручение, то сможешь ходить сюда как к себе домой.</text>
+    </string>
+    <string id="zav_freedom_stalker_start_dialog_7">
+        <text>Говори, я слушаю.</text>
+    </string>
+    <string id="zav_freedom_stalker_start_dialog_8">
+        <text>К востоку от нашего лагеря, обосновались бандиты. Как ты понимаешь, они нам мешают, вот если бы они пропали, мы были бы тебе благодарны. Понимаешь о чем я?</text>
+    </string>
+    <string id="zav_freedom_stalker_start_dialog_9">
+        <text>Вполне, скоро вернусь.</text>
+    </string>
+
+    <string id="dl_bandits_attak_done_0">
+        <text>Что там с моей наградой?</text>
+    </string>
+    <string id="dl_bandits_attak_done_1">
+        <text>Вот держи, четсно заработанные!</text>
+    </string>
+    <string id="dl_bandits_attak_sk_done_0">
+        <text>Отряд погиб, однако бандиты так же мертвы...</text>
+    </string>
+    <string id="dl_bandits_attak_sk_done_1">
+        <text>Печально это слышать... В любом случае вот то что ты заработал.</text>
+    </string>
+    <string id="dl_bandits_attak_start_0">
+        <text>Вам может помощь какая требуется? Тоха сказал, что ты что-то хотел.</text>
+    </string>
+    <string id="dl_bandits_attak_start_1">
+        <text>Требуется, помнишь я тебя нанимал на устранение шайки бандитов, что наших ребят обдирали на подступах к лагерю, так вот пришло время зачистить их логово.</text>
+    </string>
+    <string id="dl_bandits_attak_start_2">
+        <text>Зачистить говоришь... Я не против, но в одиночку я туда не сунусь.</text>
+    </string>
+    <string id="dl_bandits_attak_start_22">
+        <text>Что-то не особо горю желанием, так что в другой раз.</text>
+    </string>
+    <string id="dl_bandits_attak_start_3">
+        <text>В одиночку я бы тебя туда и не посылал, уж больно рискованно. Я уже договорился с ребятами, которые будут принимать участие в зачистке и они будут ждать тебя недалеко от лагеря бандитов. Главного Грозом кличут.</text>
+    </string>
+    <string id="dl_bandits_attak_start_4">
+        <text>Вот это уже другой разговор! Тогда я пошёл.</text>
+    </string>
+    <string id="dl_bandits_attak_wait_0">
+        <text>Ты видимо и есть наш дополнительный стрелок? Что ж не переживай, ребята у меня толковые! Стволы держать им не впрервой, так что двинули?</text>
+    </string>
+    <string id="dl_bandits_attak_wait_1">
+        <text>Двинули!</text>
+    </string>
+    <string id="dl_bandits_attak_wait_1_0">
+        <text>Кажется всех положили!</text>
+    </string>
+    <string id="dl_bandits_attak_wait_1_1">
+        <text>Видимо так, ладно, мы тут закрепимся, а ты двигай обратно в лагерь, там тебе награда полагается за помощь.</text>
+    </string>
+    <string id="dl_bandits_attak_wait_1_2">
+        <text>Хорошо, до встречи.</text>
+    </string>
+    <string id="dl_lost_squad_quest_done_0">
+        <text>Отряд мёртв...</text>
+    </string>
+    <string id="dl_lost_squad_quest_done_1">
+        <text>Что?! Как?!</text>
+    </string>
+    <string id="dl_lost_squad_quest_done_2">
+        <text>Их убили монолитовцы, точных подробностей не знаю, однако это так. Когда я исследовал деревню, то заметил отряд монолитовцев, а в сарае трупы и решился осмотреть, но для начала пришлось пободаться с этими фанатиками. По итогу, я осмотрел тела, это были твои бойцы, у лидера отряда нашёл какие-то документы, вот держи [Отдаём документы] - может это важно.</text>
+    </string>
+    <string id="dl_lost_squad_quest_done_3">
+        <text>Мда... Ситуация мягко говоря не приятная... Чёрт таких парней потеряли... Эх земля Вам пухом Парни. Документы оставь, видимо это то за чем они и ходили... Чёрт...</text>
+    </string>
+    <string id="dl_lost_squad_quest_done_4">
+        <text>Ладно, оставлю тебя...</text>
+    </string>
+    <string id="dl_lost_squad_quest_start_0">
+        <text>Приветствую! Довелось слышать в эфире, что у Вас пропал отряд?</text>
+    </string>
+    <string id="dl_lost_squad_quest_start_1">
+        <text>Да есть такое... Ребята пока что просто не выходят на связь, хотя уже давно должны были вернутся в лагерь, однако их нет. Я уже собрал отряд на поиски, но результатов пока ноль.</text>
+    </string>
+    <string id="dl_lost_squad_quest_start_2">
+        <text>Если хочешь могу помочь с поисками.</text>
+    </string>
+    <string id="dl_lost_squad_quest_start_3">
+        <text>Было бы не плохо! Смотри [Достал карту], вот здесь в последний раз ребята выходили на связь - это заброшенная деревня, там мутанты в основном обитают, однако есть пара домиков где можно остановиться на привал, а вот здесь они могли остановиться перед тем как вернуться на базу. Думаю, тебе стоит осмотреть деревню, ибо отряд я отправил на место предположительного привала.</text>
+    </string>
+    <string id="dl_lost_squad_quest_start_4">
+        <text>Хорошо, я тебя понял. Как что узнаю, сразу сообщу.</text>
+    </string>
+    <string id="dl_stalker_quest_0">
+        <text>Я могу тебе чем-то помочь?</text>
+    </string>
+    <string id="dl_stalker_quest_1">
+        <text>Помочь? Может быть, и можешь. Понимаешь, мы только-только свою базу обустроили, ещё не успели зачистить территорию вокруг. А бандиты тут как тут: грабят сталкеров, которые мне хабар несут. Такими темпами мне скоро и торговать не на что будет. Вот вчера опять появился отряд бандитов. Наглые - ты что: прямо напротив нашей базы устроились! Не мог бы ты их малость причесать?</text>
+    </string>
+    <string id="dl_stalker_quest_11">
+        <text>Нет, сейчас ничем не можешь.</text>
+    </string>
+    <string id="dl_stalker_quest_2">
+        <text>Без проблем! Мой урок они надолго запомнят.</text>
+    </string>
+    <string id="dl_stalker_quest_22">
+        <text>Знаешь, наверное, в другой раз.</text>
+    </string>
+    <string id="dl_stalker_quest_complete_0">
+        <text>Я насчёт бандитов.</text>
+    </string>
+    <string id="dl_stalker_quest_complete_1">
+        <text>Ну, как всё прошло?</text>
+    </string>
+    <string id="dl_stalker_quest_complete_2">
+        <text>Я их положил.</text>
+    </string>
+    <string id="dl_stalker_quest_complete_22">
+        <text>Пока никак.</text>
+    </string>
+    <string id="dl_stalker_quest_complete_222">
+        <text>Ты особо не тяни.</text>
+    </string>
+    <string id="dl_stalker_quest_complete_3">
+        <text>Вот это спасибо! Держи награду!</text>
+    </string>
+
+</string_table>

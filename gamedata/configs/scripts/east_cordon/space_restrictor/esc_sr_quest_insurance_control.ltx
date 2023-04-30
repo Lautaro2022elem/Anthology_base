@@ -1,0 +1,16 @@
+[logic]
+active = sr_idle
+
+[sr_idle]
+on_info = {+spectrum_project_start +esc_wolf_quest_insurance_dialog_strahovka} sr_idle@2
+
+[sr_idle@2]
+on_timer = 30000 | sr_idle@3 %=spawn_object(boar_strong:esc_quest_insurance_monster_spawn_1)%
+
+[sr_idle@3]
+on_timer = 20000 | sr_idle@4 %=spawn_object(boar_strong:esc_quest_insurance_monster_spawn_2) =spawn_object(af_medusa:esc_quest_insurance_af_medusa)%
+
+[sr_idle@4]
+on_info = {+esc_wolf_quest_insurance_dialog_gg =actor_has_item(af_medusa)}sr_idle@nil %+esc_wolf_quest_insurance_af_medusa%
+
+[sr_idle@nil]

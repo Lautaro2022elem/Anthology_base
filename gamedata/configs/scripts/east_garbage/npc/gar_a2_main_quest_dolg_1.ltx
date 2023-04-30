@@ -1,0 +1,103 @@
+[logic]
+active = remark@claim
+
+[remark@claim]
+anim = claim
+target = story | actor
+meet = meet@dialog
+invulnerable = true
+gather_items_enabled = false
+corpse_detection_enabled = false
+combat_ignore_keep_when_attacked = true 
+combat_ignore_cond = true
+on_info = {=dist_to_actor_le(2)} remark@dialog_actor
+on_info2 = {+gar_dolg_general_kill} remark@enemy %=actor_enemy%
+
+
+[remark@dialog_actor]
+anim = threat
+target = story | actor
+meet = meet@dialog
+invulnerable = true
+gather_items_enabled = false
+corpse_detection_enabled = false
+combat_ignore_keep_when_attacked = true 
+combat_ignore_cond = true
+on_info = {+gar_a2_bagretcev_talking_1} walker@baza
+on_info2 = {+gar_dolg_general_kill} remark@enemy %=actor_enemy%
+
+[walker@goo]
+path_walk = gar_a2_main_quest_dolg_1_go_walk
+on_signal = gar_a2_main_quest_dolg_nameste| {-gar_a2_main_quest_dolg_nameste} walker@baza %+gar_a2_main_quest_dolg_nameste%
+invulnerable = true
+meet = no_meet
+
+[walker@baza]
+path_walk = gar_a2_main_quest_dolg_1_walk_1
+path_look = gar_a2_main_quest_dolg_1_look_1
+invulnerable = true
+gather_items_enabled = false
+corpse_detection_enabled = false
+combat_ignore_keep_when_attacked = true 
+combat_ignore_cond = true
+on_info = {+gar_a2_borland_quest_dialog_info} walker@baza_dialog
+meet = no_meet
+
+[walker@baza_dialog]
+path_walk = gar_a2_main_quest_dolg_1_walk_1
+path_look = gar_a2_main_quest_dolg_1_look_1
+invulnerable = true
+gather_items_enabled = false
+corpse_detection_enabled = false
+combat_ignore_keep_when_attacked = true 
+combat_ignore_cond = true
+on_info = {=dist_to_actor_le(2)} remark@dialog_actor_2
+meet = meet@dialog_2
+
+
+[remark@dialog_actor_2]
+anim = wait
+target = story | actor
+meet = meet@dialog_2
+invulnerable = true
+gather_items_enabled = false
+corpse_detection_enabled = false
+combat_ignore_keep_when_attacked = true 
+combat_ignore_cond = true
+on_info = {+gar_a2_main_quest_borland_release} %=release_npc%
+
+
+[remark@enemy]
+anim = threat_fire
+target = story | actor
+combat_ignore_cond = true 
+combat_ignore_keep_when_attacked = true 
+invulnerable = true
+meet = no_meet
+
+[meet@dialog]
+abuse           = false
+close_anim 		= nil
+far_anim 		= nil
+far_victim 		= nil
+close_distance  = 0
+far_distance 	= 0
+close_victim = actor
+use = {=dist_to_actor_le(2) -gar_a2_bagretcev_talking_1} self, true
+allow_break = false
+meet_dialog = gar_a2_bagretcev_start_dialog
+trade_enable = false
+
+
+[meet@dialog_2]
+abuse           = false
+close_anim 		= nil
+far_anim 		= nil
+far_victim 		= nil
+close_distance  = 0
+far_distance 	= 0
+close_victim = actor
+use = {=dist_to_actor_le(2) -gar_a2_bagretcev_quest_dialog_info} self, true
+allow_break = false
+meet_dialog = gar_a2_bagretcev_quest_dialog
+trade_enable = false

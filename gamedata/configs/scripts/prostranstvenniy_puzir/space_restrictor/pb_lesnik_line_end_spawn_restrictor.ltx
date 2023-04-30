@@ -1,0 +1,13 @@
+[logic]
+active = sr_idle@spawn_lesnik_and_dogs
+
+[sr_idle@spawn_lesnik_and_dogs]
+on_info = {+pro_weapon_bunchuk_dialog_done} sr_idle@markus_send_sms %=spawn_object(pb_lesnik:pro_lesnik_end_line_spawn) =create_squad(pro_dog_quest_squad:pro_smart_terrain_4_0_quest)%
+
+[sr_idle@markus_send_sms]
+on_timer = 5000 | sr_idle@markus_give_quest %=pb_markus_enemy_signal_quest_sms +pro_lesnik_is_atack_dogs%
+
+[sr_idle@markus_give_quest]
+on_timer = 4000 | sr_idle@nil %=give_task(pb_enemy_signal_found)%
+
+[sr_idle@nil]

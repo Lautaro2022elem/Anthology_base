@@ -1,0 +1,13 @@
+[logic] 
+active = sr_idle@start
+
+[sr_idle@start]
+on_info = {+topi_start +topi_zam_variant_quest_talking_3 -topi_zam_variant_quest_come_to_point =actor_in_zone(topi_zam_variant_quest_restr_2)} sr_timer@first %+topi_zam_variant_quest_come_to_point%
+
+[sr_timer@first]
+type = dec
+string = "Wait the signal"
+start_value = 15000
+on_value = 0 | sr_idle@nil %+topi_zam_variant_quest_time_is_out%
+
+[sr_idle@nil]

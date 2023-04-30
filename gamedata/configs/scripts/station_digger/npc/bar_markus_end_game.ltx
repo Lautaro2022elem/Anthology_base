@@ -1,0 +1,75 @@
+;=========meet_stalker_korpys========
+[meet@korpys_stalker]
+close_anim 		= nil
+close_victim 	= nil
+far_anim 		= nil
+far_victim 		= nil
+close_distance 	= 0
+far_distance 	= 0
+use = {=actor_enemy} false, {=dist_to_actor_le(3)} true, false
+snd_on_use = {!dist_to_actor_le(3)} nil
+meet_on_talking = false
+;==================================
+
+[logic]
+suitable = {=check_npc_name(bar_markus_end_game)} true
+prior = 200
+active = remark@stay_start
+
+[remark@stay_start]
+anim = guard_na
+target = path | bar_stalker_markus_look, 0
+on_info = {=dist_to_actor_le(7)} remark@markus_danger
+use_camp = false
+combat_ignore_cond = true
+combat_ignore_keep_when_attacked = true
+invulnerable = true
+gather_items_enabled = false
+help_wounded_enabled = false
+corpse_detection_enabled = false
+meet = no_meet
+
+[remark@markus_danger]
+anim = threat_na
+target = story | actor
+on_info = {+bar_markus_dialog_good_end_done} walker@go_to_zmeelov
+use_camp = false
+combat_ignore_cond = true
+combat_ignore_keep_when_attacked = true
+invulnerable = true
+gather_items_enabled = false
+help_wounded_enabled = false
+corpse_detection_enabled = false
+meet = meet@good_end_game
+
+[walker@go_to_zmeelov]
+path_walk = bar_stalker_markus_go_to_zmeelov
+on_info = {=actor_enemy} %=actor_neutral%
+def_state_moving = run
+meet = no_meet
+combat_ignore_cond = true
+combat_ignore_keep_when_attacked = true
+gather_items_enabled = false
+help_wounded_enabled = false
+corpse_detection_enabled = false
+invulnerable = true
+on_signal = bar_markus_comming | {-bar_markus_comming_1} remark@markus_end_game %+bar_markus_comming_1%
+
+[remark@markus_end_game]
+anim = guard_na
+target = story | actor
+use_camp = false
+combat_ignore_cond = true
+combat_ignore_keep_when_attacked = true
+invulnerable = true
+gather_items_enabled = false
+help_wounded_enabled = false
+corpse_detection_enabled = false
+meet = no_meet
+
+[meet@good_end_game]:meet@korpys_stalker
+close_victim = actor
+use = {!actor_enemy =dist_to_actor_le(9) -bar_markus_dialog_good_end_done} self, true
+allow_break = false
+meet_dialog = bar_markus_meet_good_end
+trade_enable = false

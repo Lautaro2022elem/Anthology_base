@@ -1,0 +1,131 @@
+[logic]
+active = sr_idle@wait
+;active = sr_idle@nil
+
+[sr_idle@def_check]
+on_info = {+sad_b3_andrey_dead} sr_idle@andrey_done, {+sad_b3_ucheny_enemy} sr_idle@andrey_dead
+
+[sr_idle@wait]
+on_info = {+sad_actor_enemy_to_someone} sr_idle@nil
+on_info2 = {+sad_b4_killers_gone +sad_b3_killers_gone} sr_idle@check_dist
+
+[sr_idle@check_dist]
+on_info = {+sad_actor_enemy_to_someone} sr_idle@nil, {=sad_dist_to_path_ge(sad_b3_trader_spawn:40000)} sr_idle@10 %=create_squad(sad_b3_ucheny_squad:sad_b3)%
+
+[sr_idle@10]:sr_idle@def_check
+on_info2 = {=actor_in_zone(sad_b3_sr_assault)} sr_idle@20 %=send_tip(sad_b3_ucheny_message_1:sad_b3_ucheny_raz)%
+
+[sr_idle@20]:sr_idle@def_check
+on_info2 = {+sad_b3_ucheny_actor_agree} sr_idle@30 %=give_task(sad_b3_ucheny_task)%
+
+[sr_idle@30]:sr_idle@def_check
+on_info2 = {+sad_b3_start_arrive} sr_idle@31 %+sad_b3_ucheny_mission_on%
+
+[sr_idle@31]
+on_info = sr_idle@32 %=create_squad_member(sad_b3_helper_ucheny_1:sad_b3_ucheny_squad:sad_b3_ucheny_3_start) =create_squad_member(sad_b3_helper_ucheny_2:sad_b3_ucheny_squad:sad_b3_ucheny_4_start) =create_squad_member(sad_b3_helper_ucheny_2:sad_b3_ucheny_squad:sad_b3_ucheny_5_start)%
+
+[sr_idle@32]
+on_info = sr_idle@33 %=clear_smart_terrain(sad_sim_10:false) =clear_smart_terrain(sad_sim_11:false)%
+
+[sr_idle@33]
+on_info = sr_idle@40 %=create_squad(sad_sim_10_boars:sad_sim_10)%
+
+[sr_idle@40]:sr_idle@def_check
+on_info2 = {+sad_b3_ucheny_raz_ready} sr_idle@41
+
+[sr_idle@41]:sr_idle@def_check
+on_info2 = {+sad_b3_ucheny_dva_ready} sr_idle@50 %+sad_ucheny_switch_18 -sad_ucheny_switch_b3 =create_squad(sad_sim_11_bloodsuckers:sad_sim_11)%
+on_game_timer = 300 | sr_idle@50 %+sad_ucheny_switch_18 -sad_ucheny_switch_b3 =create_squad(sad_sim_11_bloodsuckers:sad_sim_11)%
+
+; ------------------------------------------------------------------------------------------------------------------------------------------- go sim_18
+[sr_idle@50]:sr_idle@def_check
+on_info2 = {+sad_ucheny_actor_faraway =distance_to_obj_ge(sad_b3_ucheny_raz:130)} sr_idle@kill_andrey
+on_info3 = {=squad_in_zone(sad_b3_ucheny_squad:sad_sim_18_sr_ucheny_arrived)} sr_idle@55
+
+[sr_idle@55]:sr_idle@def_check
+on_game_timer = 20 | sr_idle@60 %+sad_ucheny_arrived_sim_18 +sad_ucheny_start_zamer =set_counter(sad_ucheny_zamer_cnt_1:0)%
+
+[sr_idle@60]
+on_info = {=counter_greater(sad_ucheny_zamer_cnt_1:16)} sr_idle@80 %+sad_ucheny_zamer_sim_18_done%
+on_info2 = {-sad_ucheny_fighting} sr_idle@70 %=inc_counter(sad_ucheny_zamer_cnt_1:1)%, sr_idle@70
+
+[sr_idle@70]:sr_idle@def_check
+on_info2 = {+sad_ucheny_actor_faraway =distance_to_obj_ge(sad_b3_ucheny_raz:130)} sr_idle@kill_andrey
+on_game_timer = 20 | sr_idle@60
+
+[sr_idle@80]:sr_idle@def_check
+on_info2 = {+sad_ucheny_actor_faraway =distance_to_obj_ge(sad_b3_ucheny_raz:130)} sr_idle@kill_andrey
+on_game_timer = 75 | sr_idle@100 %-sad_ucheny_start_zamer%
+
+; ------------------------------------------------------------------------------------------------------------------------------------------- go sim_17
+[sr_idle@100]:sr_idle@def_check
+on_info2 = {+sad_ucheny_actor_faraway =distance_to_obj_ge(sad_b3_ucheny_raz:130)} sr_idle@kill_andrey
+on_info3 = {=squad_in_zone(sad_b3_ucheny_squad:sad_sim_17_sr_ucheny_arrived)} sr_idle@105
+
+[sr_idle@105]:sr_idle@def_check
+on_game_timer = 20 | sr_idle@110 %+sad_ucheny_arrived_sim_17 +sad_ucheny_start_zamer =set_counter(sad_ucheny_zamer_cnt_1:0)%
+
+[sr_idle@110]
+on_info = {=counter_greater(sad_ucheny_zamer_cnt_1:16)} sr_idle@130 %+sad_ucheny_zamer_sim_17_done%, {-sad_ucheny_fighting} sr_idle@120 %=inc_counter(sad_ucheny_zamer_cnt_1:1)%, sr_idle@120
+
+[sr_idle@120]:sr_idle@def_check
+on_info2 = {+sad_ucheny_actor_faraway =distance_to_obj_ge(sad_b3_ucheny_raz:130)} sr_idle@kill_andrey
+on_game_timer = 20 | sr_idle@110
+
+[sr_idle@130]:sr_idle@def_check
+on_info2 = {+sad_ucheny_actor_faraway} sr_idle@200
+on_info3 = {+sad_ucheny_teleport_b3} sr_idle@teleport_10 %=run_postprocess(fade_in:9555) =disable_ui +sad_turist_visit_some_place%
+
+[sr_idle@teleport_10] ; ------------------------------------------------------------ teleport
+on_timer = 1000 | sr_idle@teleport_20 %=run_postprocess(black:9556) -sad_b3_ucheny_mission_on +sad_ucheny_switch_b3 -sad_ucheny_switch_18%
+
+[sr_idle@teleport_20]
+on_info = sr_idle@teleport_30 %=teleport_squad(sad_b3_ucheny_squad:sad_b4_actor_teleport_from_b4_look)%
+
+;[sr_idle@teleport_21]
+;on_info =  {+sad_turist_task_active =squad_exist(sad_turist_squad)} sr_idle@teleport_30 %=teleport_squad(sad_turist_squad:sad_b4_actor_teleport_from_b4_look)%, sr_idle@teleport_30
+
+[sr_idle@teleport_30]
+on_game_timer = 50 | sr_idle@teleport_36 %=teleport_squad(sad_b3_ucheny_squad:sad_b4_actor_teleport_from_b4_look) +sad_ucheny_arrived_home%
+
+;[sr_idle@teleport_35]
+;on_info =  {+sad_turist_task_active} sr_idle@teleport_36 %=teleport_squad(sad_turist_squad:sad_b4_actor_teleport_from_b4_look)%, sr_idle@teleport_36
+
+[sr_idle@teleport_36]
+on_info =  sr_idle@400 %=stop_postprocess(9556) =stop_postprocess(9555) =enable_ui =teleport_actor(sad_b4_actor_teleport_from_b4_walk:sad_b4_actor_teleport_from_b4_look) -sad_turist_visit_some_place%
+
+; ------------------------------------------------------------------------------------------------------------------------------------------- go home
+[sr_idle@200]:sr_idle@def_check
+on_info2 = {+sad_ucheny_actor_faraway} sr_idle@andrey_dead
+on_info3 = {=squad_in_zone(sad_b3_ucheny_squad:sad_b3_sr_assault)} sr_idle@300 %-sad_b3_ucheny_mission_on +sad_ucheny_arrived_home +sad_ucheny_switch_b3 -sad_ucheny_switch_18%
+
+[sr_idle@300]
+on_info = {+sad_ucheny_actor_faraway} sr_idle@500, sr_idle@500 %=send_tip(sad_b3_ucheny_get_money:sad_b3_ucheny_raz)%
+
+
+[sr_idle@400]:sr_idle@def_check
+on_info = {+sad_b3_ucheny_enemy} sr_idle@nil
+on_info2 = {=sad_dist_to_path_ge(sad_b3_trader_spawn:40000)} sr_idle@500
+
+[sr_idle@500]
+on_info = {-sad_ucheny_actor_paid} sr_idle@600 %=send_tip(sad_b3_ucheny_go_home:sad_b3_ucheny_raz) +sad_ucheny_gone%, sr_idle@600
+
+[sr_idle@600]
+on_info = sr_idle@nil %=remove_squad(sad_b3_ucheny_squad)%
+; -------------------------------------------------------------------------------------------------------------------------------------------
+[sr_idle@kill_andrey]
+on_info = sr_idle@kill_andrey2 %=create_mob_near_squad(chimera_normal:sad_b3_ucheny_squad)%
+
+[sr_idle@kill_andrey2]
+on_info = sr_idle@andrey_dead %=kill_squad(sad_b3_ucheny_squad)%
+
+[sr_idle@andrey_done]
+on_info = {-sad_b3_ucheny_enemy =squad_exist(sad_b3_ucheny_squad)} sr_idle@andrey_dead %=send_tip(sad_b3_mission_failed)%, sr_idle@andrey_dead
+
+[sr_idle@andrey_dead]
+on_info = sr_idle@nil %+sad_sim_11_bloodsuckers_awake +sad_sim_12_ucheny_snorki_awake +sad_ucheny_switch_b3 -sad_ucheny_switch_18 -sad_b3_ucheny_mission_on%
+
+[sr_idle@nil]
+on_info = sr_idle@final_nil %+sad_start_merc_simulation%
+
+[sr_idle@final_nil]

@@ -1,0 +1,22 @@
+[logic]
+active = sr_idle
+
+[sr_idle]
+on_info = {+spectrum_project_start +esc_wolf_quest_line_dungeon_dialog_and -save_esc_quest_line_dungeon_search} %+save_esc_quest_line_dungeon_search =scenario_autosave(st_esc_quest_line_dungeon_search)%
+on_info2 = {+spectrum_project_start +save_esc_quest_line_dungeon_search} sr_idle@1
+
+[sr_idle@1]
+on_actor_inside = {-esc_quest_line_dungeon_help} sr_idle@2 %=spawn_object(esc_npc_watchmaker:esc_npc_watchmaker_spawn)%
+
+[sr_idle@2] 
+on_timer = 100 | sr_idle@3 %+esc_quest_line_dungeon_help =create_squad(esc_squad_quest_tushkan:esc_smart_terrain_q) =spawn_object(esc_borland_underground:esc_borland_underground_spawn)%
+
+[sr_idle@3] 
+on_info = {+esc_quest_line_dungeon_borland} sr_idle@pause 
+
+[sr_idle@pause] 
+on_info = {+esc_borland_quest_line_dungeon_dialog_open_door} sr_idle@4
+
+[sr_idle@4] 
+on_info = {-esc_watchmaker_key_door_open =actor_has_item(esc_watchmaker_key_door)} sr_idle@4 %+esc_watchmaker_key_door_open%
+on_info2 = {+esc_watchmaker_key_door_open !actor_has_item(esc_watchmaker_key_door)} sr_idle@4 %-esc_watchmaker_key_door_open% 

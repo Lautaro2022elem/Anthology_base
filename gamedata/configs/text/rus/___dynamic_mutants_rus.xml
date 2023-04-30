@@ -1,0 +1,290 @@
+<?xml version="1.0" encoding="windows-1251" ?>
+
+
+<string_table>
+
+	<string id="ui_mcm_dynamic_mutants_title">
+		<text>Динамические мутанты</text>
+	</string>
+	
+	<string id="ui_mcm_menu_dynamic_mutants">
+		<text>Новые мутанты</text>
+	</string>
+
+	<string id="ui_mcm_dynamic_mutants_dyn_mutants_target_numbers">
+		<text>Динамические мутанты - Ограничение числа мутантов</text>
+	</string>
+	<string id="ui_mcm_dynamic_mutants_dyn_mutants_target_numbers_desc">
+		<text>Будет сохранять число мутантов, добавленных исключительно спавном этого аддона, в указанном пределе. Проверяется ежедневно. Постепенно добавляет новых мутантов, пока не достигнет указанного значения. После этого будет ждать, пока количество мутантов снизится до 75% от этого значения, а затем добавит новых мутантов.
+		\n \nУстановка коэффициента популяции мутантов на 0.25 и этого ползунка на 1500 или выше является оптимальным вариантом.
+		\n \n%c[pda_yellow]Примечание:%c[ui_gray_2]
+		\n(По-умолчанию: 1000)		
+		\n \nЭтот параметр также влияет на количество мутантов в следующей «волне».
+		\n \n - И количество мутантов, встречающееся в подземных лабораториях. (Пример: установка 500 приведет к тому, что там будет только около 50% предполагаемых количеств мутантов).		
+		\n \nПри значении 0 этот аддон отключен.		
+		</text>
+	</string>
+
+
+
+	<string id="ui_mcm_dynamic_mutants_dyn_noct_mutants_attacks_strength">
+		<text>Динамические ночные мутанты - Количество (%)</text>
+	</string>
+	<string id="ui_mcm_dynamic_mutants_dyn_noct_mutants_attacks_strength_desc">
+		<text>Определяет количество мутантов, которые будут появляться по ночам.
+		\n \n%c[pda_yellow]Примечание:%c[ui_gray_2]
+		\nУстановка на 100% приведет к очень опасным ночам. При значении 0 этот аддон отключен. (По умолчанию: 50)
+		</text>
+	</string>
+
+
+
+	<string id="ui_mcm_dynamic_mutants_enabled_noct_mutants_pda_messages">
+		<text>Динамические ночные мутанты - Включить сообщения КПК</text>
+	</string>
+	<string id="ui_mcm_dynamic_mutants_enabled_noct_mutants_pda_messages_desc">
+		<text>Включает/отключает отображение соответствующих сообщений на КПК.
+		\n \n%c[pda_yellow]Примечание:%c[ui_gray_2]
+		\n(По умолчанию: Вкл.)
+		</text>
+	</string>
+
+
+
+
+
+
+	<string id="ui_mcm_dynamic_mutants_dyn_mutants_enable_all_additional_mutants">
+		<text>Включение дополнительных мутантов</text>
+	</string>
+	<string id="ui_mcm_dynamic_mutants_dyn_mutants_enable_all_additional_mutants_desc">
+		<text>Включает/отключает спавн новых мутантов: ВОЛК, МЕДВЕДЬ, ТАРК, ПИРАНЬЯ...
+		\n \nЕсли этот параметр отключен, то в игре будут пояляться только оригинальные мутанты из Anomaly.
+		\n \n%c[pda_yellow]Примечание:%c[ui_gray_2]
+		\n(По умолчанию: Вкл.)
+		</text>
+	</string>
+
+
+
+	<string id="ui_mcm_dynamic_mutants_amb_anomalies_density_factor">
+		<text>Окружающие аномалии - Интенсивность</text>
+	</string>
+	<string id="ui_mcm_dynamic_mutants_amb_anomalies_density_factor_desc">
+		<text>Устанавливает интенсивность различных внешних аномалий. Их можно увидеть в небе, над некоторыми строениями и в других местах.
+		\n \n%c[pda_yellow]Примечание:%c[ui_gray_2]
+		\nТребуется переход на другую локацию, чтобы этот параметр вступил в силу. (По умолчанию: 50)
+		</text>
+	</string>
+
+
+
+	<string id="ui_mcm_dynamic_mutants_amb_anomalies_enabled">
+		<text>Включение внешних аномалий</text>
+	</string>
+	<string id="ui_mcm_dynamic_mutants_amb_anomalies_enabled_desc">
+		<text>Включает/отключает отображение внешних аномалий. Если включено, их можно будет увидеть в небе, над определенными строениями и в других местах.
+		\n \n%c[pda_yellow]Примечание:%c[ui_gray_2]
+		\nТребуется переход на другую локацию, чтобы этот параметр вступил в силу. (По умолчанию: Вкл.)
+		</text>
+	</string>
+
+
+
+
+
+
+
+
+
+
+	<string id="ui_mcm_dynamic_mutants_dyn_mutants_enable_volk">
+		<text> - Включение мутанта ВОЛК</text>
+	</string>
+	<string id="ui_mcm_dynamic_mutants_dyn_mutants_enable_volk_desc">
+		<text>Включает/отключает спавн новых мутант ВОЛК.
+		\n \n%c[pda_yellow]Примечание:%c[ui_gray_2]
+		\n(По умолчанию: Вкл.)
+		</text>
+	</string>
+
+
+
+	<string id="ui_mcm_dynamic_mutants_dyn_mutants_enable_medved">
+		<text> - Включение мутанта МЕДВЕД</text>
+	</string>
+	<string id="ui_mcm_dynamic_mutants_dyn_mutants_enable_medved_desc">
+		<text>Включает/отключает спавн новых мутант МЕДВЕДЬ.
+		\n \n%c[pda_yellow]Примечание:%c[ui_gray_2]
+		\n(По умолчанию: Вкл.)
+		</text>
+	</string>
+
+
+
+	<string id="ui_mcm_dynamic_mutants_dyn_mutants_enable_tark">
+		<text> - Включение мутанта ТАРК</text>
+	</string>
+	<string id="ui_mcm_dynamic_mutants_dyn_mutants_enable_tark_desc">
+		<text>Включает/отключает спавн новых мутант ТАРК.
+		\n \n%c[pda_yellow]Примечание:%c[ui_gray_2]
+		\n(По умолчанию: Вкл.)
+		</text>
+	</string>
+
+
+
+	<string id="ui_mcm_dynamic_mutants_dyn_mutants_enable_piranha">
+		<text> - Включение мутанта ПИРАНЬЯ</text>
+	</string>
+	<string id="ui_mcm_dynamic_mutants_dyn_mutants_enable_piranha_desc">
+		<text>Включает/отключает спавн новых мутант ПИРАНЬЯ.
+		\n \n%c[pda_yellow]Примечание:%c[ui_gray_2]
+		\n(По умолчанию: Вкл.)
+		</text>
+	</string>
+
+
+
+	<string id="ui_mcm_dynamic_mutants_dyn_mutants_enable_shepherd_fox_birds">
+		<text> - Включение НЕМЕЦКУЮ ОВЧАРКУ, ЛИСУ, ПТИЦ</text>
+	</string>
+	<string id="ui_mcm_dynamic_mutants_dyn_mutants_enable_shepherd_fox_birds_desc">
+		<text>Включает/отключает спавн новых НЕМЕЦКУЮ ОВЧАРКУ, ЛИСУ, ПТИЦ.
+		\n \n%c[pda_yellow]Примечание:%c[ui_gray_2]
+		\n(По умолчанию: Вкл.)
+		</text>
+	</string>
+
+
+
+	<string id="ui_mcm_dynamic_mutants_dyn_mutants_enable_monster_boar">
+		<text> - Включение мутанта МОНСТР КАБАН</text>
+	</string>
+	<string id="ui_mcm_dynamic_mutants_dyn_mutants_enable_monster_boar_desc">
+		<text>Включает/отключает спавн новых мутант МОНСТР КАБАН.
+		\n \n%c[pda_yellow]Примечание:%c[ui_gray_2]
+		\n(По умолчанию: Вкл.)
+		</text>
+	</string>
+
+
+
+	<string id="ui_mcm_dynamic_mutants_dyn_mutants_enable_vendigo">
+		<text> - Включение мутанта ВЕНДИГО</text>
+	</string>
+	<string id="ui_mcm_dynamic_mutants_dyn_mutants_enable_vendigo_desc">
+		<text>Включает/отключает спавн новых мутант ВЕНДИГО.
+		\n \n%c[pda_yellow]Примечание:%c[ui_gray_2]
+		\n(По умолчанию: Вкл.)
+		</text>
+	</string>
+
+
+
+
+
+
+
+
+
+
+	<string id="ui_mcm_dynamic_mutants_mutants_enable_removal_of_vanilla_mutants">
+		<text>РАЗРЕШИТЬ удаление 'ванильных' мутантов</text>
+	</string>
+	<string id="ui_mcm_dynamic_mutants_mutants_enable_removal_of_vanilla_mutants_desc">
+		<text>Если это ВКЛЮЧЕНО, это позволит удалить любые выбранные ниже мутанты ванили.
+		\n \nОн служит основным предварительным условием.
+		\n \n%c[pda_yellow]Примечание:%c[ui_gray_2]
+		\n(По умолчанию: Откл.)
+		</text>
+	</string>
+
+
+	<string id="ui_mcm_dynamic_mutants_mutants_remove_snork">
+		<text> - Удалить СНОРК</text>
+	</string>
+	<string id="ui_mcm_dynamic_mutants_mutants_remove_snork_desc">
+		<text>Если этот параметр включен, все существующие СНОРКИ будут удаляться при каждой загрузке/входе на уровень.
+		\n \n%c[pda_yellow]Примечание:%c[ui_gray_2]
+		\n(По умолчанию: Откл.)
+		</text>
+	</string>
+
+
+	<string id="ui_mcm_dynamic_mutants_mutants_remove_lurker">
+		<text> - Удалить КИКИМОРА</text>
+	</string>
+	<string id="ui_mcm_dynamic_mutants_mutants_remove_lurker_desc">
+		<text>Если этот параметр включен, все существующие КИКИМОРА будут удаляться при каждой загрузке/входе на уровень.
+		\n \n%c[pda_yellow]Примечание:%c[ui_gray_2]
+		\n(По умолчанию: Откл.)
+		</text>
+	</string>
+
+
+	<string id="ui_mcm_dynamic_mutants_mutants_remove_psysucker">
+		<text> - Удалить ПСИ-КРОВОСОС</text>
+	</string>
+	<string id="ui_mcm_dynamic_mutants_mutants_remove_psysucker_desc">
+		<text>Если этот параметр включен, все существующие ПСИ-КРОВОСОС будут удаляться при каждой загрузке/входе на уровень.
+		\n \n%c[pda_yellow]Примечание:%c[ui_gray_2]
+		\n(По умолчанию: Откл.)
+		</text>
+	</string>
+
+
+	<string id="ui_mcm_dynamic_mutants_mutants_remove_boar">
+		<text> - Удалить КАБАНЫ</text>
+	</string>
+	<string id="ui_mcm_dynamic_mutants_mutants_remove_boar_desc">
+		<text>Если включено, все существующие КАБАНЫ будут удаляться при каждой загрузке/входе на уровень.
+		\n \n%c[pda_yellow]Примечание:%c[ui_gray_2]
+		\n(По умолчанию: Откл.)
+		</text>
+	</string>
+
+
+	<string id="ui_mcm_dynamic_mutants_mutants_remove_cat">
+		<text> - Удалить КОT</text>
+	</string>
+	<string id="ui_mcm_dynamic_mutants_mutants_remove_cat_desc">
+		<text>Если этот параметр включен, все существующие КОШКИ будут удаляться при каждой загрузке/входе на уровень.
+		\n \n%c[pda_yellow]Примечание:%c[ui_gray_2]
+		\n(По умолчанию: Откл.)
+		</text>
+	</string>
+
+
+	<string id="ui_mcm_dynamic_mutants_mutants_remove_misc">
+		<text> - Удалить СЛЕПОЙ ПЁС</text>
+	</string>
+	<string id="ui_mcm_dynamic_mutants_mutants_remove_misc_desc">
+		<text>Если этот параметр включен, все существующие СЛЕПОЙ СОБАКИ будут удаляться при каждой загрузке/входе на уровень.
+		\n \n%c[pda_yellow]Примечание:%c[ui_gray_2]
+		\n(По умолчанию: Откл.)
+		</text>
+	</string>
+
+	<string id="ui_mcm_dynamic_mutants_dyn_mutants_kill_new_dyn_mutants">
+		<text>Убить всех добавленных новых мутантов</text>
+	</string>
+	<string id="ui_mcm_dynamic_mutants_dyn_mutants_kill_new_dyn_mutants_desc">
+		<text>Чекните и примите изменения чтобы мгновенно убить все новые виды мутантов в Зоне. После использования опция сбрасывается. Она убивает только новые виды мутантов, ванильные виды, добавленные модом, остаются в Зоне. Опция создана для безопасного удаления мода из игры после ее использования</text>
+	</string>
+
+	<string id="ui_mcm_dynamic_mutants_dyn_mutants_kill_dyn_mutants">
+		<text>Убить всех добавленных мутантов</text>
+	</string>
+	<string id="ui_mcm_dynamic_mutants_dyn_mutants_kill_dyn_mutants_desc">
+		<text>Чекните и примите изменения чтобы мгновенно убить виды мутантов, добавленных модом. После использования опция сбрасывается. Опция создана для безопасного удаления мода из игры после ее использования</text>
+	</string>
+
+	<string id="ui_mcm_dynamic_mutants_dyn_mutants_kill_em_all">
+		<text>Очистить зону от абсолютно всех мутантов</text>
+	</string>
+	<string id="ui_mcm_dynamic_mutants_dyn_mutants_kill_em_all_desc">
+		<text>Чекните и примите изменения чтобы мгновенно убить абсолютно всех мутантов, ванильных и модовых. После использования опция сбрасывается. Также поможет избавиться от мутантов, добавленных другими модами. Опция создана как последнее средство для безопасного удаления мода из игры после ее использования</text>
+	</string>
+
+</string_table>

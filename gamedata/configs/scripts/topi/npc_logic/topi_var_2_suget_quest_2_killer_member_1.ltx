@@ -1,0 +1,28 @@
+[logic]
+active = move@waiting
+on_death = death
+
+[death]
+on_info = %+topi_var_2_suget_quest_2_killer_member_1_death%
+
+[move@waiting]
+move_dest_number       = 581491
+move_look_vertex       = 591347
+move_state_when_center = guard
+move_state_when_move   = walk
+meet                   = no_meet
+invulnerable           = false
+
+
+[no_meet]
+close_anim 		= nil
+close_victim 	= nil
+far_anim 		= nil
+far_victim 		= nil
+close_distance  = 0
+far_distance 	= 0
+close_snd_distance = 3
+abuse           = true
+use             = false
+allow_break     = true
+meet_on_talking = false

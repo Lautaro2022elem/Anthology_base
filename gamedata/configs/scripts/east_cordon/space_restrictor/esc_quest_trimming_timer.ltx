@@ -1,0 +1,13 @@
+[logic]
+active = sr_idle
+
+[sr_idle]
+on_info = {+spectrum_project_start +esc_quest_talk_wolf_complite} sr_idle@12hours
+
+[sr_idle@12hours]
+on_game_timer = 43200 | sr_idle@1
+
+[sr_idle@1]
+on_info = {-esc_klin_quest_trimming_dialog_and} sr_idle@nil %+esc_squad_quest_trimming_reversed%
+
+[sr_idle@nil]

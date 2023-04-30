@@ -1,0 +1,179 @@
+[walker@def]
+gather_items_enabled = false
+help_wounded_enabled = false
+corpse_detection_enabled = false
+
+[remark@cs_def]:walker@def
+target = story | sad_oasis_actor
+anim = threat_na
+invulnerable = true
+combat_ignore_cond = true
+combat_ignore_keep_when_attacked = true
+
+[meet@cowboy]
+close_snd_hello = nil
+close_distance  = 2
+close_victim    = actor
+close_anim = wait_na
+use = {=actor_enemy} false, true
+trade_enable = false
+allow_break = false
+
+[meet@dont_talk]
+close_snd_hello = nil
+close_distance  = 0
+close_victim    = nil
+close_anim 		= nil
+use 			= false
+snd_on_use 		= meet_use_no_default
+trade_enable 	= false
+allow_break 	= false
+
+; ------------------------------------------------------------------------------------------------------------------------ tesla
+[logic@tesla]
+suitable = { =check_npc_name(sad_ran_ucheny) } true
+active = remark@tesla_start
+on_hit = hit
+on_death = death
+prior = 200
+
+[remark@tesla_start]
+on_info = {+sad_tesla_sim_16_arrived} walker@tesla_1
+
+[walker@tesla_1]:walker@def
+path_walk = tesla_1_walk
+path_look = tesla_1_look1
+on_info = {+sad_teleport_scaner_placed} animpoint@scanner
+meet = no_meet
+
+[animpoint@scanner]:walker@def
+cover_name = sad_tesla_turn_scanner
+avail_animations = wait_na
+meet = no_meet ;meet@dont_talk
+on_info = {=animpoint_reached} animpoint@scanner_turn
+use_camp = false
+
+[animpoint@scanner_turn]:walker@def
+cover_name = sad_tesla_turn_scanner
+avail_animations = sad_scanner_setup
+meet = no_meet ;meet@dont_talk
+on_game_timer = 240 | animpoint@tesla_wait %+sad_oasis_jump_in_ready +sad_oasis_teleport_in_open =play_sound(sad_tesla_found_in_portal)%
+use_camp = false
+
+[animpoint@tesla_wait]:walker@def
+cover_name = sad_tesla_turn_scanner
+avail_animations = sit
+meet = no_meet
+on_info = {+sad_cutscene_robbery_start} remark@tesla_sc
+use_camp = false
+
+[walker@tesla_3]:walker@def
+path_walk = tesla_1_walk
+path_look = tesla_1_look1
+on_info = {+sad_cutscene_robbery_start} remark@tesla_sc
+meet = no_meet
+
+[remark@tesla_sc]:remark@cs_def
+on_info = {+sad_oasis_squad_relax} remark@tesla_sc_relax
+
+[remark@tesla_sc_relax]:remark@cs_def
+anim = wait_na
+
+; ------------------------------------------------------------------------------------------------------------------------ cowboy
+[logic@cowboy]
+suitable = { =check_npc_name(sad_ran_cowboy) } true
+active = remark@cowboy_start
+prior = 200
+
+[remark@cowboy_start]
+on_info = remark@cowboy_1 %=teleport_npc(sad_sim_16_cowboy_1_walk)%
+
+[remark@cowboy_1]:remark@cs_def
+on_info = {+sad_cutscene_robbery_start} remark@cowboy_talk_1 %=play_sound(sad_robbery_cowboy_1)%
+
+[remark@cowboy_talk_1]:remark@cs_def
+on_signal = sound_end | remark@cowboy_2 %+sad_cowboy_talk_end%
+
+[remark@cowboy_2]:remark@cs_def
+on_timer = 1000 | remark@cowboy_3 %+sad_cutscene_robbery_end%
+
+[remark@cowboy_3]:remark@cs_def
+on_info = {+sad_cutscene_robbery_start_2} remark@cowboy_talk_2 %=play_sound(sad_robbery_cowboy_2)%
+
+[remark@cowboy_talk_2]:remark@cs_def
+on_signal = sound_end | remark@cowboy_talk_2_wait %+sad_oasis_actor_jumper%
+
+[remark@cowboy_talk_2_wait]:remark@cs_def
+on_timer = 1800 | remark@cowboy_4 %=play_sound(sad_robbery_cowboy_3)%
+
+[remark@cowboy_4]:remark@cs_def 
+on_signal = sound_end | remark@cowboy_5 %=play_sound(sad_robbery_cowboy_4) +sad_oasis_squad_relax%
+
+[remark@cowboy_5]:remark@cs_def
+anim = guard_chasovoy
+on_signal = sound_end | remark@cowboy_6 %+sad_cowboy_talk_end%
+
+[remark@cowboy_6]:remark@cs_def
+anim = guard
+on_timer = 1000 | remark@cowboy_7 %+sad_cutscene_robbery_end%
+
+[remark@cowboy_7]:remark@cs_def
+anim = guard
+
+; ------------------------------------------------------------------------------------------------------------------------ enemy #1
+[logic@sc_enemy_1]
+suitable = { =target_squad_name(sad_ran_cowboy_squad) !is_squad_commander } true
+active = remark@enemy_11
+prior = 200
+
+[remark@enemy_11]
+on_info = remark@enemy_12 %=teleport_npc(sad_sim_16_cowboy_2_walk)%
+
+[remark@enemy_12]:remark@cs_def
+anim = hide_na
+on_info = {+sad_oasis_squad_relax} remark@enemy_13
+
+[remark@enemy_13]:remark@cs_def
+anim = guard
+
+; ------------------------------------------------------------------------------------------------------------------------ enemy #2
+[logic@sc_enemy_2]
+suitable = { =target_squad_name(sad_ran_cowboy_squad) !is_squad_commander } true
+active = remark@enemy_21
+prior = 200
+
+[remark@enemy_21]
+on_info = remark@enemy_22 %=teleport_npc(sad_sim_16_cowboy_7_walk)%
+
+[remark@enemy_22]:remark@cs_def
+on_info = {+sad_oasis_squad_relax} remark@enemy_23
+
+[remark@enemy_23]:remark@cs_def
+anim = guard
+
+; ------------------------------------------------------------------------------------------------------------------------ enemy #3
+[logic@sc_enemy_3]
+suitable = { =target_squad_name(sad_ran_cowboy_squad) !is_squad_commander } true
+active = remark@enemy_31
+prior = 200
+
+[remark@enemy_31]
+on_info = remark@enemy_32 %=teleport_npc(sad_sim_16_cowboy_5_walk)%
+
+[remark@enemy_32]:remark@cs_def
+on_info = {+sad_oasis_squad_relax} remark@enemy_33
+
+[remark@enemy_33]:remark@cs_def
+anim = guard
+
+
+; -----------------------------------------------------------------------------------------------------------------------------------
+[death]
+on_info = {=killed_by_actor} %+sad_cowboy_enemy%
+
+[hit]
+on_info = {=hit_by_actor} %+sad_cowboy_enemy%
+
+
+
+

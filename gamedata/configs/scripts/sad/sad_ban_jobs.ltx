@@ -1,0 +1,75 @@
+; ----------------------------------------------------------------------------- 1
+[logic@sad_ban_animp_1]
+;suitable = { !surge_started } true
+active = animpoint@animp_1
+prior = 100
+
+[animpoint@animp_1]
+cover_name = sad_ban_animp_1
+on_info = {=is_rain} walker@animp_rain_1
+
+[walker@animp_rain_1]
+path_walk = animp_rain_1_walk
+path_look = animp_rain_1_look
+on_info = {!is_rain} animpoint@animp_1
+
+; ----------------------------------------------------------------------------- 2
+[logic@sad_ban_animp_2]
+;suitable = { !surge_started } true
+active = walker@animp_2
+prior = 100
+
+[walker@animp_2]
+path_walk = animp_2_walk
+path_look = animp_2_look
+on_info = {=is_rain} walker@animp_rain_2
+
+[walker@animp_rain_2]
+path_walk = palatka_walk
+path_look = palatka_look
+on_info = {!is_rain} walker@animp_2
+
+; ----------------------------------------------------------------------------- 3
+[logic@sad_ban_animp_3]
+;suitable = { !surge_started } true
+active = animpoint@animp_3
+prior = 100
+
+[animpoint@animp_3]
+cover_name = sad_ban_animp_3
+on_info = {=is_rain} walker@animp_rain_3
+
+[walker@animp_rain_3]
+path_walk = animp_rain_4_walk
+path_look = animp_rain_4_look
+on_info = {!is_rain} animpoint@animp_3
+
+; ----------------------------------------------------------------------------- 4
+[logic@sad_ban_animp_4]
+;suitable = { !surge_started } true
+active = animpoint@animp_4
+prior = 100
+
+[animpoint@animp_4]
+cover_name = sad_ban_animp_4
+on_info = {=is_rain} walker@animp_rain_4
+
+[walker@animp_rain_4]
+path_walk = animp_rain_5_walk
+path_look = animp_rain_5_look
+on_info = {!is_rain} animpoint@animp_4
+
+; ----------------------------------------------------------------------------- 5
+[logic@sad_ban_animp_5]
+;suitable = { !surge_started } true
+active = walker@animp_5
+prior = 100
+
+[walker@animp_5]
+path_walk = outsitter_walk
+path_look = outsitter_look
+on_info = {=is_rain} animpoint@animp_rain_5
+
+[animpoint@animp_rain_5]
+cover_name = sad_ban_animp_rain_2
+on_info = {!is_rain} walker@animp_5

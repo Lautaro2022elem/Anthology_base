@@ -1,0 +1,103 @@
+#include "pb_markus_alive_*.ltx"
+
+;#include "scripts\prostranstvenniy_puzir\npc\pb_markus_alive_general.ltx"
+
+;=========meet_quest_line========
+[meet@quest_line]
+close_anim 		= nil
+close_victim 	= nil
+far_anim 		= nil
+far_victim 		= nil
+close_distance 	= 0
+far_distance 	= 0
+use = {=actor_enemy} false, {=dist_to_actor_le(3)} true, false
+snd_on_use = {!dist_to_actor_le(3)} nil
+meet_on_talking = false
+;==================================
+
+[logic]
+active = remark@pb_markus_alive
+post_combat_time = 0, 0
+suitable = {=check_npc_name(pb_markus_alive)} true, false
+level_spot = quest_npc
+prior = 250
+
+[remark@pb_markus_alive]
+anim = guard_na
+target = story | actor
+on_info = {+pro_mercenary_suiside_give} walker@pb_markus_move_to_actor
+on_info2 = {=actor_enemy} %=actor_neutral%
+combat_ignore_cond = true
+combat_ignore_keep_when_attacked = true
+invulnerable = true
+gather_items_enabled = false
+help_wounded_enabled = false
+corpse_detection_enabled = false
+meet = no_meet
+
+[walker@pb_markus_alive_move]
+path_walk = pro_markus_alive_walk_1
+meet = no_meet
+def_state_moving = sneak
+on_info2 = {+pro_markus_alive_fight_come} remark@pb_markus_remark
+on_info2 = {=actor_enemy} %=actor_neutral%
+gather_items_enabled = false
+help_wounded_enabled = false
+corpse_detection_enabled = false
+invulnerable = true
+on_signal = pro_markus_alive_come | {-pro_markus_alive_come} walker@pb_markus_alive_stay %+pro_markus_alive_come%
+
+[walker@pb_markus_alive_stay]
+path_walk = pro_markus_alive_stay_walk
+path_look = pro_markus_alive_stay_look
+on_info = {+pro_markus_alive_first_dialog_end} walker@pb_markus_alive_move_2
+on_info2 = {=actor_enemy} %=actor_neutral%
+meet = meet@start_quest
+gather_items_enabled = false
+help_wounded_enabled = false
+corpse_detection_enabled = false
+invulnerable = true
+
+[walker@pb_markus_alive_move_2]
+path_walk = pro_markus_alive_walk_2
+meet = no_meet
+def_state_moving = run
+on_info2 = {+pro_markus_alive_fight_come} remark@pb_markus_remark
+on_info = {=actor_enemy} %=actor_neutral%
+gather_items_enabled = false
+help_wounded_enabled = false
+corpse_detection_enabled = false
+invulnerable = true
+on_signal = pro_markus_alive_come_1 | {-pro_markus_alive_come_1} walker@pb_markus_alive_final %+pro_markus_alive_come_1%
+
+[walker@pb_markus_alive_final]
+path_walk = pro_markus_alive_walk
+path_look = pro_markus_alive_look
+on_info = {+pro_actor_inside_rezerv_waepons} remark@stay_no_meet
+on_info2 = {=actor_enemy} %=actor_neutral%
+meet = meet@start_quest_1
+gather_items_enabled = false
+help_wounded_enabled = false
+corpse_detection_enabled = false
+invulnerable = true
+
+[meet@start_quest]:meet@quest_line
+close_victim = actor
+use = {!actor_enemy =dist_to_actor_le(6) +pro_dialog_from_markus_alive_give -pro_markus_alive_first_dialog_end} self, true
+allow_break = false
+meet_dialog = pb_markus_alive_talk_to_actor
+trade_enable = false
+
+[meet@start_quest_1]:meet@quest_line
+close_victim = actor
+;use = {!actor_enemy =dist_to_actor_le(6) -pro_markus_alive_first_dialog_end} self, true
+allow_break = false
+meet_dialog = pb_markus_alive_talk_to_actor_end
+trade_enable = false
+
+[meet@start_quest_2]:meet@quest_line
+close_victim = actor
+use = {!actor_enemy =dist_to_actor_le(6) -pro_actor_and_markus_kill_merc} self, true
+allow_break = false
+meet_dialog = pb_markus_alive_talk_to_actor_final
+trade_enable = false

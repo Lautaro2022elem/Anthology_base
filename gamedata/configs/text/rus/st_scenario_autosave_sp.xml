@@ -1,0 +1,97 @@
+<?xml version="1.0" encoding="windows-1251" ?>
+<string_table>
+	<string id="st_save_escape_start_game">
+		<text>Прибытие на Кордон</text>
+	</string>
+	<string id="st_save_esc_zona_complite">
+		<text>За периметром</text>
+	</string>
+	<string id="st_save_esc_freedom_life">
+		<text>Свободная жизнь</text>
+	</string>
+	<string id="st_save_esc_trifling_matter">
+		<text>Плевое дело</text>
+	</string>
+	<string id="st_save_esc_quest_hunting">
+		<text>Охота</text>
+	</string>
+	<string id="st_save_esc_quest_insurance">
+		<text>Страховка</text>
+	</string>
+	<string id="st_save_esc_quest_trimming">
+		<text>Зачистка</text>
+	</string>
+	<string id="st_save_esc_serious_business">
+		<text>Серьёзное дело</text>
+	</string>
+	<string id="st_save_esc_dangerous_business">
+		<text>Опасное дело</text>
+	</string>
+	<string id="st_save_quest_line_salvation_freedom">
+		<text>Спасение свободовца</text>
+	</string>	
+	<string id="st_save_esc_quest_line_secret_freedom">
+		<text>Тайна свободовца</text>
+	</string>
+	<string id="st_save_esc_quest_gopstop">
+		<text>Гоп-стоп</text>
+	</string>
+	<string id="st_save_esc_quest_shadowing">
+		<text>Слежка</text>
+	</string>	
+	<string id="st_save_esc_quest_fighting_for_territory">
+		<text>Борьба за территорию</text>
+	</string>	
+	<string id="st_esc_the_first_penny">
+		<text>Первые копейки</text>
+	</string>
+	<string id="st_esc_entry_into_stalkers">
+		<text>Вступление в сталкеры</text>
+	</string>
+	<string id="st_save_esc_quest_line_away_from_the_bandits">
+		<text>В гостях у бандитов</text>
+	</string>
+	<string id="st_save_esc_quest_line_help_nebo">
+		<text>Странное дело</text>
+	</string>
+	<string id="st_esc_quest_line_dungeon_search">
+		<text>В поисках Часовщика</text>
+	</string>
+	<string id="st_esc_quest_line_research_underground">
+		<text>Исследование подземелья</text>
+	</string>
+	<string id="st_esc_quest_line_research_underground_2">
+		<text>Исследование подземелья</text>
+	</string>
+	<string id="st_esc_quest_work_for_beginner">
+		<text>Работа для Новичка</text>
+	</string>
+	<string id="st_save_esc_quest_wolf_work_conductor">
+		<text>Проводник</text>
+	</string>
+	<string id="st_esc_quest_mechanic_search">
+		<text>Механник для бандитов</text>
+	</string>
+	<string id="st_save_bar">
+		<text>БАР 100 РЕНТГЕН</text>
+	</string>
+	
+	<string id="st_save_bar_dangerous_duty">
+		<text>Опасное дежурство</text>
+	</string>
+	
+	<string id="st_city_important_cargo">
+		<text>Важный груз</text>
+	</string>
+	<string id="st_city_sabotage">
+		<text>Диверсия</text>
+	</string>
+	<string id="st_city_assault">
+		<text>Штурм</text>
+	</string>	
+	
+	
+	
+	
+	
+</string_table>

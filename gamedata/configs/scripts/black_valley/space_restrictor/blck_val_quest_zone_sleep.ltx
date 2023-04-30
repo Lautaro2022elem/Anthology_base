@@ -1,0 +1,13 @@
+[logic]
+active = sr_idle@start
+
+[sr_idle@start]
+on_actor_inside = {+blck_val_prisoner_quest_line_meet_done =actor_in_zone(blck_val_quest_zone_sleep)} sr_idle@tutorial %=run_tutorial(blck_val_tutorial_sleep_quest)%
+on_info2 = {+blck_val_actor_sleep_to_prison} sr_idle@nil
+
+[sr_idle@tutorial]
+on_info = {+blck_val_prisoner_quest_line_meet_done !actor_in_zone(blck_val_quest_zone_sleep)} sr_idle@start %=stop_tutorial%
+on_info2 = {+blck_val_actor_sleep_to_prison} sr_idle@nil
+on_info3 = {!has_active_tutorial} sr_idle@start
+
+[sr_idle@nil]

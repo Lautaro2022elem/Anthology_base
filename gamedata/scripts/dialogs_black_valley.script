@@ -1,0 +1,420 @@
+--[[ ----------------------------------------------------------------------------------------------- 
+ File       : dialogs_black_valley.script
+ Description: Диалоговые функции для Пространственного пузыря
+ Copyright  : 2014 © GSC Game World
+ Author	    : PROFFESIONAL
+ Last edit  : 22.03.2015 (by PROFFESIONAL)
+--]] -----------------------------------------------------------------------------------------------
+--/											Функции для actor
+--]] -----------------------------------------------------------------------------------------------
+
+function actor_flask_empty_check(first_speaker, second_speaker) 
+      return (db.actor:object("flask_empty") ~= nil)
+end 
+
+function analiz_money_water_full(first_speaker, second_speaker)
+    return db.actor:money() >= 2000
+end
+
+function give_money_water_full(first_speaker, second_speaker)
+	dialogs.relocate_money_from_actor(first_speaker, second_speaker, 2000)
+	dialogs.relocate_item_section_from_actor(first_speaker, second_speaker, "flask_empty") 
+end
+
+function give_flask_to_actor(first_speaker, second_speaker)
+		dialogs.relocate_item_section_to_actor(first_speaker, second_speaker, "flask_good_full") 
+end
+
+function blck_val_stavrid_give_actor_svd(first_speaker, second_speaker)
+	dialogs.relocate_item_section_to_actor(first_speaker, second_speaker, "wpn_svd_nimble") 
+	dialogs.relocate_item_section_to_actor(first_speaker, second_speaker, "ammo_7.62x54_7h1",2)
+end
+
+function blck_val_analiz_money_500_check(first_speaker, second_speaker)
+    return db.actor:money() >= 500
+end
+
+function blck_val_analiz_money_check(first_speaker, second_speaker)
+    return db.actor:money() >= 1000
+end
+
+function blck_val_analiz_money_1500_check(first_speaker, second_speaker)
+    return db.actor:money() >= 1500
+end
+
+function blck_val_analiz_money_2000_check(first_speaker, second_speaker)
+    return db.actor:money() >= 2000
+end
+
+function blck_val_give_money_gigant_toy(first_speaker, second_speaker)
+	dialogs.relocate_money_from_actor(first_speaker, second_speaker, 1000) 
+end
+
+function blck_val_give_money_chimera_toy(first_speaker, second_speaker)
+	dialogs.relocate_money_from_actor(first_speaker, second_speaker, 1500) 
+end
+
+function blck_val_give_money_more_chimera_toy(first_speaker, second_speaker)
+	dialogs.relocate_money_from_actor(first_speaker, second_speaker, 2000) 
+end
+
+function blck_val_gigant_toy_to_actor(first_speaker, second_speaker)
+	dialogs.relocate_item_section_to_actor(first_speaker, second_speaker, "blck_val_gigant_toy") 
+end
+
+function blck_val_chimera_toy_to_actor(first_speaker, second_speaker)
+	dialogs.relocate_item_section_to_actor(first_speaker, second_speaker, "blck_val_chimera_toy") 
+end
+
+function blck_val_sleepdog_toy_check(first_speaker, second_speaker) 
+      return (db.actor:object("blck_val_sleepdog_toy") ~= nil)
+end
+
+function blck_val_sleepdog_toy_give(first_speaker, second_speaker)
+	dialogs.relocate_item_section_from_actor(first_speaker, second_speaker, "blck_val_sleepdog_toy") 
+end
+
+function blck_val_psevdo_toy_check(first_speaker, second_speaker) 
+      return (db.actor:object("blck_val_psevdo_toy") ~= nil)
+end
+
+function blck_val_psevdo_toy_give(first_speaker, second_speaker)
+	dialogs.relocate_item_section_from_actor(first_speaker, second_speaker, "blck_val_psevdo_toy") 
+end
+
+function blck_val_boar_toy_check(first_speaker, second_speaker) 
+      return (db.actor:object("blck_val_boar_toy") ~= nil)
+end
+
+function blck_val_boar_toy_give(first_speaker, second_speaker)
+	dialogs.relocate_item_section_from_actor(first_speaker, second_speaker, "blck_val_boar_toy") 
+end
+
+function blck_val_flesh_toy_check(first_speaker, second_speaker) 
+      return (db.actor:object("blck_val_flesh_toy") ~= nil)
+end
+
+function blck_val_flesh_toy_give(first_speaker, second_speaker)
+	dialogs.relocate_item_section_from_actor(first_speaker, second_speaker, "blck_val_flesh_toy") 
+end
+
+function blck_val_burer_toy_check(first_speaker, second_speaker) 
+      return (db.actor:object("blck_val_burer_toy") ~= nil)
+end
+
+function blck_val_burer_toy_give(first_speaker, second_speaker)
+	dialogs.relocate_item_section_from_actor(first_speaker, second_speaker, "blck_val_burer_toy") 
+end
+
+function blck_val_control_toy_check(first_speaker, second_speaker) 
+      return (db.actor:object("blck_val_control_toy") ~= nil)
+end
+
+function blck_val_control_toy_give(first_speaker, second_speaker)
+	dialogs.relocate_item_section_from_actor(first_speaker, second_speaker, "blck_val_control_toy") 
+end
+
+function blck_val_chimera_toy_check(first_speaker, second_speaker) 
+      return (db.actor:object("blck_val_chimera_toy") ~= nil)
+end
+
+function blck_val_chimera_toy_give(first_speaker, second_speaker)
+	dialogs.relocate_item_section_from_actor(first_speaker, second_speaker, "blck_val_chimera_toy") 
+end
+
+function blck_val_snork_toy_check(first_speaker, second_speaker) 
+      return (db.actor:object("blck_val_snork_toy") ~= nil)
+end
+
+function blck_val_snork_toy_give(first_speaker, second_speaker)
+	dialogs.relocate_item_section_from_actor(first_speaker, second_speaker, "blck_val_snork_toy") 
+end
+
+function blck_val_gigant_toy_check(first_speaker, second_speaker) 
+      return (db.actor:object("blck_val_gigant_toy") ~= nil)
+end
+
+function blck_val_gigant_toy_give(first_speaker, second_speaker)
+	dialogs.relocate_item_section_from_actor(first_speaker, second_speaker, "blck_val_gigant_toy") 
+end
+
+function blck_val_petrovich_give_money(first_speaker, second_speaker)
+        dialogs.relocate_money_to_actor(first_speaker, second_speaker, 1000)
+end
+
+function blck_val_actor_serofim_check(first_speaker, second_speaker) 
+      return (db.actor:object("af_serofim") ~= nil)
+end
+
+function blck_val_is_rob_time(first_speaker, second_speaker)
+	local h = level.get_time_hours()
+	if h >= 0 and h < 6 then
+		if h > 0 then
+			return true
+		elseif level.get_time_minutes() >= 0 then
+			return true
+		end
+	end
+
+	return false
+end
+
+function blck_val_is_not_rob_time(first_speaker, second_speaker)
+	return not blck_val_is_rob_time(first_speaker, second_speaker)
+--[[
+	if level.get_time_hours() >= 0 and level.get_time_hours() < 6 then
+		if level.get_time_hours() > 0 then
+			return false
+		elseif level.get_time_minutes() >= 0 then
+			return false
+		end
+	end
+
+	return true
+	]]
+end
+
+-- проверяет наличие заданого количества предметов в инвентаре игрока.
+function blck_val_quest_key_to_prison(first_speaker, second_speaker)
+	local item_section 	= "blck_val_key_to_prison"
+	local need_count 	= 2
+	local has_count 	= 0
+	local function calc(temp, item)
+		if item:section() == item_section then
+			has_count = has_count + 1
+		end
+	end
+	first_speaker:iterate_inventory(calc, first_speaker)
+	return has_count >= need_count
+end
+
+-- проверяет наличие заданого количества предметов в инвентаре игрока.
+function blck_val_quest_key_to_prison_one(first_speaker, second_speaker)
+	local item_section 	= "blck_val_key_to_prison"
+	local need_count 	= 1
+	local has_count 	= 0
+	local function calc(temp, item)
+		if item:section() == item_section then
+			has_count = has_count + 1
+		end
+	end
+	first_speaker:iterate_inventory(calc, first_speaker)
+	return has_count == need_count
+end
+
+function blck_val_out_quest_key_to_prison(first_speaker, second_speaker)
+    dialogs.relocate_item_section_from_actor(first_speaker, second_speaker, "blck_val_key_to_prison",2)
+end
+
+function blck_val_petrovich_dop_quest_give() 
+    task_manager.get_task_manager():give_task("blck_val_petrovich_dop_quest") 
+end
+
+function blck_val_night_shooter_quest_give() 
+    task_manager.get_task_manager():give_task("blck_val_night_shooter") 
+end
+
+function blck_val_kill_to_zombied_give() 
+    task_manager.get_task_manager():give_task("blck_val_kill_to_zombied") 
+end
+
+function blck_val_monolit_call_give() 
+    task_manager.get_task_manager():give_task("blck_val_monolit_call") 
+end
+
+function blck_val_spatial_bubble_wound_give() 
+    task_manager.get_task_manager():give_task("blck_val_spatial_bubble_wound") 
+end
+
+function blck_val_wpn_vihr_search_give() 
+    task_manager.get_task_manager():give_task("blck_val_wpn_vihr_search") 
+end
+
+function blck_val_prison_breack_give() 
+    task_manager.get_task_manager():give_task("blck_val_prison_breack") 
+end
+
+function blck_val_find_art_barman_give() 
+    task_manager.get_task_manager():give_task("blck_val_find_art_barman") 
+end
+
+function blck_val_hunt_dog_tail_give() 
+    task_manager.get_task_manager():give_task("blck_val_hunt_dog_tail") 
+end
+
+function blck_val_shaman_quest_talk_give() 
+    task_manager.get_task_manager():give_task("blck_val_shaman_quest_talk") 
+end
+
+function blck_val_monolit_base_give() 
+    task_manager.get_task_manager():give_task("blck_val_monolit_base") 
+end
+
+function blck_val_final_zastava_quest_give() 
+    task_manager.get_task_manager():give_task("blck_val_final_zastava_quest") 
+end
+
+function blck_val_out_quest_af_serofim(first_speaker, second_speaker)
+    dialogs.relocate_item_section_from_actor(first_speaker, second_speaker, "af_serofim",1)
+end
+
+-- проверяет наличие заданого количества предметов в инвентаре игрока.
+function blck_val_quest_mutant_dog_tail_proverka(first_speaker, second_speaker)
+	local item_section 	= "mutant_part_dog_tail"
+	local need_count 	= 6
+	local has_count 	= 0
+	local function calc(temp, item)
+		if item:section() == item_section then
+			has_count = has_count + 1
+		end
+	end
+	first_speaker:iterate_inventory(calc, first_speaker)
+	return has_count >= need_count
+end
+
+function blck_val_out_quest_mutant_dog_tail(first_speaker, second_speaker)
+    dialogs.relocate_item_section_from_actor(first_speaker, second_speaker, "mutant_part_dog_tail",6)
+end
+
+function RelocActInvFromBoxScene(oBoxSId)
+	local aItems = {}
+	local oBox = get_story_object(oBoxSId)
+	local function TransferItems(oDummy, oItem) 
+			oBox:transfer_item(oItem, db.actor)
+			local sItem = oItem:section()
+			if not aItems[sItem] then
+				aItems[sItem] = 0
+			end
+			if aItems[sItem] then
+				aItems[sItem] = aItems[sItem] + 1
+			end
+		end
+	oBox:iterate_inventory_box(TransferItems)
+	for k,v in pairs(aItems) do
+		news_manager.relocate_item(db.actor, "in", k, v)
+	end
+end
+
+function blck_val_inv_plen_home(first_speaker, second_speaker)
+	RelocActInvFromBoxScene("blck_val_inventory_box_quest_line")
+end
+
+function blck_val_give_transiver_1(first_speaker, second_speaker)
+	dialogs.relocate_item_section(second_speaker, "blck_val_transiver_1", "in",1)
+end
+
+function blck_val_robbery_transiver_1(first_speaker, second_speaker)
+    dialogs.relocate_item_section_from_actor(first_speaker, second_speaker, "blck_val_transiver_3",1)
+end
+
+function actor_hit_face_fish(first_speaker, second_speaker)
+	local npc = dialogs.who_is_npc(first_speaker, second_speaker)
+	xr_abuse.enable_abuse(npc)
+	xr_abuse.add_abuse(npc, 5)
+	give_info("blck_val_actor_hit_face_fish_info")
+	event("ActorPunch"):register(KickAct)
+ 	xr_effects.disable_ui(db.actor, nil)
+end
+
+function check_items_knife_killer(first_speaker, second_speaker)
+	return db.actor:object("blck_val_knife_killer") ~= nil -- true
+end
+
+function check_items_knife_killer_false(first_speaker, second_speaker)
+	return db.actor:object("blck_val_knife_killer") == nil -- false
+end
+
+function blck_val_robbery_knife_killer(first_speaker, second_speaker)
+    dialogs.relocate_item_section_from_actor(first_speaker, second_speaker, "blck_val_knife_killer",1)
+end
+
+function blck_val_knife_killer_out(first_speaker, second_speaker)
+    dialogs.relocate_item_section_from_actor(first_speaker, second_speaker, "blck_val_knife_killer_quest",1)
+end
+
+function blck_val_knife_killer_give(first_speaker, second_speaker)
+	dialogs.relocate_item_section(second_speaker, "blck_val_knife_killer", "in",1)
+end
+
+function blck_val_check_items_af_fuzz_kolobok(first_speaker, second_speaker)
+	return db.actor:object("af_fuzz_kolobok") ~= nil -- true
+end
+
+function blck_val_chimik_pda_out(first_speaker, second_speaker)
+    dialogs.relocate_item_section_from_actor(first_speaker, second_speaker, "blck_val_chimik_pda",1)
+end
+
+function check_items_key_to_prison(first_speaker, second_speaker)
+	return db.actor:object("blck_val_key_to_prison") ~= nil -- true
+end
+
+function blck_val_robbery_key_to_prison(first_speaker, second_speaker)
+    dialogs.relocate_item_section_from_actor(first_speaker, second_speaker, "blck_val_key_to_prison",1)
+end
+
+function blck_val_key_to_prison_give(first_speaker, second_speaker)
+	dialogs.relocate_item_section(second_speaker, "blck_val_key_to_prison", "in",1)
+end
+
+function blck_val_out_pda_mikluchi(first_speaker, second_speaker)
+    dialogs.relocate_item_section_from_actor(first_speaker, second_speaker, "blck_val_miklucha_pda",1)
+end
+
+function blck_val_stavrid_give_reward(first_speaker, second_speaker)
+	dialogs.relocate_item_section(second_speaker, "wpn_p90", "in",1)
+	dialogs.relocate_item_section(second_speaker, "ammo_5.7x28_fmj", "in",3)
+        dialogs.relocate_money_to_actor(first_speaker, second_speaker, 5000)
+end
+
+function blck_val_robbery_shaman_take_reward(first_speaker, second_speaker)
+    dialogs.relocate_money_to_actor(first_speaker, second_speaker, 3000)
+end
+
+function blck_val_robbery_shaman_take_reward_1(first_speaker, second_speaker)
+    dialogs.relocate_money_to_actor(first_speaker, second_speaker, 4500)
+end
+
+function blck_val_robbery_af_kolobok(first_speaker, second_speaker)
+    dialogs.relocate_item_section_from_actor(first_speaker, second_speaker, "af_fuzz_kolobok",1)
+end
+
+function blck_val_af_kolobok_shaman_take_reward_1(first_speaker, second_speaker)
+    dialogs.relocate_money_to_actor(first_speaker, second_speaker, 8000)
+end
+
+function blck_val_af_kolobok_shaman_take_reward(first_speaker, second_speaker)
+    dialogs.relocate_money_to_actor(first_speaker, second_speaker, 6000)
+end
+
+function blck_val_robbery_quest_detector_elite(first_speaker, second_speaker) 
+    dialogs.relocate_item_section(second_speaker, "detector_elite", "in",1)
+end
+
+function blck_val_shmiga_give_vihr(first_speaker, second_speaker)
+	dialogs.relocate_item_section(second_speaker, "wpn_vihr", "in",2)
+end
+
+function blck_val_wpn_vihr_out(first_speaker, second_speaker)
+    dialogs.relocate_item_section_from_actor(first_speaker, second_speaker, "wpn_vihr",1)
+end
+
+function blck_val_stavrid_give_explosive(first_speaker, second_speaker)
+	dialogs.relocate_item_section(second_speaker, "stalker_monolith_outfit", "in",1)
+	dialogs.relocate_item_section(second_speaker, "pri_a25_explosive_charge_item", "in",1)
+end
+
+function change_actor_community_monolith(actor, npc) 
+printf("actor now in [fake_monolit] community") 
+if db.actor then 
+db.actor:set_character_community("fake_monolit", 0, 0) 
+end 
+return true 
+end
+
+function change_actor_community_killer(actor, npc) 
+printf("actor now in [actor] community") 
+if db.actor then 
+db.actor:set_character_community("actor", 0, 0) 
+end 
+return true 
+end

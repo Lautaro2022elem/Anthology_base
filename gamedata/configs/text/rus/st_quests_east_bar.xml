@@ -1,0 +1,388 @@
+<?xml version="1.0" encoding="windows-1251" ?>
+<string_table>
+
+<!-- Квест:  Укрытие -->	
+	<string id="bar_cover_surget_title">
+		<text>Укрытие: Спастись от мощного выброса</text>
+	</string>
+	<string id="bar_cover_surget_descr">
+		<text>Спастись от мощного выброса в подземельях "Бара 100 Рентген"</text>
+	</string>
+	<string id="bar_cover_surget_part_2_title">
+		<text>Укрытие: Не покаидайте Борланда</text>
+	</string>
+	<string id="bar_cover_surget_part_2_descr">
+		<text>Не покаидайте Борланда, держитесь вместе</text>
+	</string>
+
+	
+<!-- Квест:  Поговорить с Маландринусом -->	
+	<string id="bar_first_talk_barmen_title">
+		<text>Поговорить с Маландринусом</text>
+	</string>
+	<string id="bar_first_talk_barmen_descr">
+		<text>Поговорить с Маландринусом бара "100 Рентген"</text>
+	</string>
+	
+	
+	<!-- Квест:  Новые подробности -->	
+	<string id="bar_new_details_title">
+		<text>Новые подробности: Поговорить с Маландринусом</text>
+	</string>
+	<string id="bar_new_details_descr">
+		<text>Поговорить с Маландринусом, узнать у него полезную информацию</text>
+	</string>
+	<string id="bar_new_details_part_2_title">
+		<text>Новые подробности: Поговорить с Борландом</text>
+	</string>
+	<string id="bar_new_details_part_2_descr">
+		<text>Поговорить с Барландом, рассказать ему новые подробности касающиеся артефакта, уговорить сотрудничать с Маландринусом</text>
+	</string>
+
+	<!-- Квест:  Ожидание -->	
+	<string id="bar_expectation_title">
+		<text>Ожидание: ждать сигнала от Маландринуса</text>
+	</string>
+	<string id="bar_expectation_descr">
+		<text>Через два дня нужно дать ответ Маландринусу, о согласии сотрудничества.</text>
+    </string>
+	<string id="bar_expectation_part_2_title">
+		<text>Ожидание: поговорить с Маландринусом</text>
+	</string>
+	<string id="bar_expectation_part_2_descr">
+		<text>Дать согласие на сотрудничество</text>
+    </string>
+	
+		<!-- Квест:  Сотрудничество -->	
+	<string id="bar_cooperation_title">
+		<text>Сотрудничество: поговорить с Капитаном Иванцовым</text>
+	</string>
+	<string id="bar_cooperation_descr">
+		<text>Поговорить с лидером "Долга" Капитаном Иванцовым узнать у него информацию.</text>
+    </string>
+	<string id="bar_cooperation_part_2_title">
+		<text>Сотрудничество: помочь Капитану Иванцову</text>
+	</string>
+	<string id="bar_cooperation_part_2_descr">
+		<text>Помочь лидеру долга Капитану Иванцову, отдежурить на блокпосте.</text>
+    </string>
+	<string id="bar_cooperation_part_3_title">
+		<text>Сотрудничество: поговорить с Маландринусом</text>
+	</string>
+	<string id="bar_cooperation_part_3_descr">
+		<text>Поговорить с Маландринусом</text>
+    </string>
+	
+	
+		<!-- Квест:  Опасное дежурство -->	
+	<string id="bar_dangerous_duty_part_1_title">
+		<text>Опасное дежурство: ждать своей смены</text>
+	</string>
+	<string id="bar_dangerous_duty_part_1_descr">
+		<text>Ждать своей смены которая наступит в 18:00 часов.</text>
+    </string>
+	<string id="bar_dangerous_duty_part_2_title">
+		<text>Опасное дежурство: поговорить с начальником караула</text>
+	</string>
+	<string id="bar_dangerous_duty_part_2_descr">
+		<text>Поговорить с начальником караула, получить указания.</text>
+    </string>
+	<string id="bar_dangerous_duty_part_3_title">
+		<text>Опасное дежурство: Охранять территорию</text>
+	</string>
+	<string id="bar_dangerous_duty_part_3_descr">
+		<text>Отбить атаку мутантов любой ценой.</text>
+    </string>
+	
+		<!-- Квест:  Дом на болоте -->	
+	<string id="bar_house_in_the_swamp_1_title">
+		<text>Дом на болоте: Найти дом в лесу</text>
+	</string>
+	<string id="bar_house_in_the_swamp_1_descr">
+		<text>Отыскать дом на болоте в туманном в лесу</text>
+    </string>
+	<string id="bar_house_in_the_swamp_2_title">
+		<text>Дом на болоте: Поговорить с отшельником</text>
+	</string>
+	<string id="bar_house_in_the_swamp_2_descr">
+		<text>Поговорить с отшельником, узнать у него про спуск в лабораторию</text>
+    </string>
+	<string id="bar_house_in_the_swamp_3_title">
+		<text>Дом на болоте: Найти артефакт</text>
+	</string>
+	<string id="bar_house_in_the_swamp_3_descr">
+		<text>Попробовать найти артефакт</text>
+    </string>
+	<string id="bar_house_in_the_swamp_4_title">
+		<text>Дом на болоте: убить сумашедшего</text>
+	</string>
+	<string id="bar_house_in_the_swamp_4_descr">
+		<text>Отшельник окончательно сошел с ума, нужно его убрать.</text>
+    </string>
+	<string id="bar_house_in_the_swamp_5_title">
+		<text>Дом на болоте: Обыскать труп Отшельника</text>
+	</string>
+	<string id="bar_house_in_the_swamp_5_descr">
+		<text>Обыскать труп отшельника, найти ключ.</text>
+    </string>
+	
+	
+	<string id="bar_walker_lab_title">
+		<text>Спуск в Лабораторию: Найти вход в Лабораторию</text>
+	</string>
+	<string id="bar_walker_lab_descr">
+		<text>Найти вход в Лабораторию "х14"</text>
+    </string>
+
+
+
+
+		
+		
+		
+		
+<!--===============================================================================================-->
+<!--===============================================================================================-->
+
+	<string id="bar_arena_kostolom_first_talk_title">
+		<text>Арена: Поговорить с Костоломом</text>
+	</string>
+	<string id="bar_arena_kostolom_first_talk_descr">
+		<text>Поговорить с распорядителем Арены - Костоломом о боях на арене</text>
+	</string>
+
+	<string id="bar_arena_kostolom_after_fight_title">
+		<text>Арена: Сдать снаряжение</text>
+	</string>
+	<string id="bar_arena_kostolom_after_fight_descr">
+		<text>Сдать Костолому снаряжение и трофеи с Арены</text>
+	</string>
+
+	<string id="bar_arena_goto_arena_title">
+		<text>Арена: Выйти на Арену</text>
+	</string>
+	<string id="bar_arena_goto_arena_descr">
+		<text>Выйти на очередной бой</text>
+	</string>
+
+	<string id="bar_arena_friend_naim_title">
+		<text>Арена: Договориться о совместном бое</text>
+	</string>
+	<string id="bar_arena_friend_naim_descr">
+		<text>Договориться о совместном бое Напарник с одним из участников боев</text>
+	</string>
+
+	<string id="bar_arena_bodyguard_naim_title">
+		<text>Арена: Договориться о совместном бое</text>
+	</string>
+	<string id="bar_arena_bodyguard_naim_descr">
+		<text>Договориться о совместном бое Телохранитель с одним из участников боев</text>
+	</string>
+
+	<string id="bar_arena_inventory_take_title">
+		<text>Арена: Забрать свое снаряжение</text>
+	</string>
+	<string id="bar_arena_inventory_take_descr">
+		<text>Забрать свое снаряжение из сейфа</text>
+	</string>
+
+	<string id="bar_arena_reward_take_title">
+		<text>Арена: Получить награду за бой</text>
+	</string>
+	<string id="bar_arena_reward_take_descr">
+		<text>Получить награду за бой у Калгана</text>
+	</string>
+	
+<!-- Дополнительные квесты --> 	
+	<string id="bar_azot_dop_quest_0_title0">
+		<text>Специальное обучение: Пройдите курс обучения РЭБ</text>
+	</string>
+	<string id="bar_azot_dop_quest_0_text0">
+		<text>Марков рассказал вам о сложившейся обстановке из-за загадочных исчезновений сталкеров. Согласно разработанному плану по противодействию неизвестной группе экстремистов пройдите курс специального обучения у радистов.</text>
+	</string>
+	<string id="bar_azot_dop_quest_0_title1">
+		<text>Специальное обучение: Вернитесь к долговскому механику</text>
+	</string>
+	<string id="bar_azot_dop_quest_0_text1">
+		<text>Курс обучения общим навыком в специальности РЭБ пройден. Теперь вы сможете помочь долговцам в проведении специальной операции по вычислению и уничтожению нарушителей спокойствия.</text>
+	</string>
+	
+	<string id="bar_azot_dop_quest_1_title0">
+		<text>Приманка: Замерьте радиосигнал с первой станции</text>
+	</string>
+	<string id="bar_azot_dop_quest_1_text0">
+		<text>Отправляйтесь к заброшенному ангару и проведите необходимые замеры в указанной точке.</text>
+	</string>
+	<string id="bar_azot_dop_quest_1_title1">
+		<text>Приманка: Снимите показания со второй радиостанции</text>
+	</string>
+	<string id="bar_azot_dop_quest_1_text1">
+		<text>Следуйте ко второй точке.</text>
+	</string>
+	<string id="bar_azot_dop_quest_1_title2">
+		<text>Приманка: Получите данные с третьей станции</text>
+	</string>
+	<string id="bar_azot_dop_quest_1_text2">
+		<text>Зафиксируйте данные с прибора в крайней точке.</text>
+	</string>
+	<string id="bar_azot_dop_quest_1_title3">
+		<text>Приманка: Разберитесь с засадой</text>
+	</string>
+	<string id="bar_azot_dop_quest_1_text3">
+		<text>Неожиданно вас окружила группа наемников. Уничтожьте ее.</text>
+	</string>
+	<string id="bar_azot_dop_quest_1_title4">
+		<text>Приманка: Следуйте к заказчику</text>
+	</string>
+	<string id="bar_azot_dop_quest_1_text4">
+		<text>Возвращайтесь к Маркову и сообщите ему о случившемся.</text>
+	</string>
+	
+	<string id="bar_azot_dop_quest_2_title0">
+		<text>Сужение поиска: Обсудите с лидером группы чистонебовцев сложившуюся ситуацию.</text>
+	</string>
+	<string id="bar_azot_dop_quest_2_text0">
+		<text>Удалось установить что наемников, атаковаших вас, видели в компании с чистонебовцем. Найдите Виталика и расскажите об участии в диверсии одного из его людей.</text>
+	</string>
+	<string id="bar_azot_dop_quest_2_title1">
+		<text>Сужение поиска: Займите первую точку для передачи ложного сообщения</text>
+	</string>
+	<string id="bar_azot_dop_quest_2_text1">
+		<text>Отправляйтесь в Туманный Лес, чтобы передать сигнал южным группам чистонебовцев.</text>
+	</string>
+	<string id="bar_azot_dop_quest_2_title2">
+		<text>Сужение поиска: Отправьте ложное сообщение чистонебовцам</text>
+	</string>
+	<string id="bar_azot_dop_quest_2_text2">
+		<text>Необходимо сузить круг поиска возможного предателя отправив несколько ложных сообщений в эфир.</text>
+	</string>
+	<string id="bar_azot_dop_quest_2_title3">
+		<text>Сужение поиска: Займите вторую точку для передачи ложного сообщения</text>
+	</string>
+	<string id="bar_azot_dop_quest_2_text3">
+		<text>Отправляйтесь в Бар, чтобы передать сигнал северным группам чистонебовцев.</text>
+	</string>
+	<string id="bar_azot_dop_quest_2_title4">
+		<text>Сужение поиска: Отправьте ложное сообщение чистонебовцам</text>
+	</string>
+	<string id="bar_azot_dop_quest_2_text4">
+		<text>Необходимо сузить круг поиска возможного предателя отправив несколько ложных сообщений в эфир.</text>
+	</string>
+	<string id="bar_azot_dop_quest_2_title5">
+		<text>Сужение поиска: Следуйте к Виталику</text>
+	</string>
+	<string id="bar_azot_dop_quest_2_text5">
+		<text>Доложите Виталику о том, что вы передали ложные сообщения в эфир и вам удалось сузить область поиска агентов экстремистских групп среди отрядов чистонебовцев.</text>
+	</string>
+	
+	<string id="bar_azot_dop_quest_3_title0">
+		<text>Сборка: Следуйте к снабженцу</text>
+	</string>
+	<string id="bar_azot_dop_quest_3_text0">
+		<text>Отправляйтесь к основному долговскому снабженцу за необходимыми радиодеталями и прочими компонентами для создания жучков прослушки.</text>
+	</string>
+	<string id="bar_azot_dop_quest_3_title1">
+		<text>Сборка: Вернитесь к Маркову</text>
+	</string>
+	<string id="bar_azot_dop_quest_3_text1">
+		<text>Заберите у Маркова специальную паяльную станцию для создания прослушек.</text>
+	</string>
+	<string id="bar_azot_dop_quest_3_title2">
+		<text>Сборка: Осуществите сборку жучков</text>
+	</string>
+	<string id="bar_azot_dop_quest_3_text2">
+		<text>Примените персональную паяльную станцию и создайте специальные жучки прослушки.</text>
+	</string>
+	<string id="bar_azot_dop_quest_3_title3">
+		<text>Сборка: Следуйте к Виталику</text>
+	</string>
+	<string id="bar_azot_dop_quest_3_text3">
+		<text>Обговорите с Виталиком дальнейший план действий.</text>
+	</string>
+	
+	<string id="bar_azot_dop_quest_4_title0">
+		<text>Развязка: Отправляйтесь на Свалку</text>
+	</string>
+	<string id="bar_azot_dop_quest_4_text0">
+		<text>Необходимо выяснить кто именно агент среди чистонебовцев. Следуйте к их блокпосту на свалке и передайте вместе с приказом от Виталика замаскированные передатчики.</text>
+	</string>
+	<string id="bar_azot_dop_quest_4_title1">
+		<text>Развязка: Проверьте радиосигналы</text>
+	</string>
+	<string id="bar_azot_dop_quest_4_text1">
+		<text>Осуществите проверку сигналов, полученных с жучков.</text>
+	</string>
+	<string id="bar_azot_dop_quest_4_1_title0">
+		<text>Развязка: Уничтожьте группу неизвестных от которых исходит сигнал маяка</text>
+	</string>
+	<string id="bar_azot_dop_quest_4_1_text0">
+		<text>Ликвидируйте тех, кого удалось засечь с помощью прослушек.</text>
+	</string>
+	<string id="bar_azot_dop_quest_4_1_title1">
+		<text>Развязка: Возвращайтесь в Бар</text>
+	</string>
+	<string id="bar_azot_dop_quest_4_1_text1">
+		<text>Следуйте к Маркову и доложите ему об успешном выполнении задания.</text>
+	</string>	
+	<string id="bar_azot_dop_quest_4_2_title0">
+		<text>Развязка: Уничтожьте группу неизвестных от которых исходит сигнал маяка</text>
+	</string>
+	<string id="bar_azot_dop_quest_4_2_text0">
+		<text>Ликвидируйте тех, кого удалось засечь с помощью прослушек.</text>
+	</string>
+	<string id="bar_azot_dop_quest_4_2_title1">
+		<text>Развязка: Возвращайтесь в Бар</text>
+	</string>
+	<string id="bar_azot_dop_quest_4_2_text1">
+		<text>Следуйте к Маркову и доложите ему об успешном выполнении задания.</text>
+	</string>
+
+
+	<!-- bar_npc_dolg_mechanic -->
+	<string id="bar_npc_dolg_mechanic_task_1_name">
+		<text>Найти для Токаря %s</text>
+	</string>
+	<string id="bar_npc_dolg_mechanic_task_1_text">
+		<text>Нужно принести инструменты Токарю, чтобы он смог проводить модернизацию снаряжения.</text>
+	</string>
+	<string id="bar_npc_dolg_mechanic_task_1_about">
+		<text>Знаешь, браток, а я ведь на самом деле неплохой техник. И оружие и броню чинить умею, даже апгрейды какие-никакие делаю! Вернее, делал бы, если бы инструменты были нормальные. Да только где их здесь возьмешь? Может, поможешь раздобыть какой-нибудь простенький набор, а?</text>
+	</string>
+	<string id="bar_npc_dolg_mechanic_task_1_fetch_about">
+		<text>Мне нужен набор инструментов для грубой работы. В нём должны быть инструменты и масла для работы с оружием. Если сможешь его достать, я буду благодарен, даже заплачу тебе!.. Наверное.</text>
+	</string>
+	<string id="bar_npc_dolg_mechanic_task_1_fetch_finish">
+		<text>Отлично, чувак! Ох, прости, мне нечем заплатить. Но я могу дать тебе хорошую скидку!</text>
+	</string>
+	<string id="bar_npc_dolg_mechanic_task_2_name">
+		<text>Найти для Токаря %s</text>
+	</string>
+	<string id="bar_npc_dolg_mechanic_task_2_text">
+		<text>Необходимо принести Токарю инструменты для тонкой работы. Ему нужен более полный набор, чтобы проводить более сложную модернизацию снаряжения.</text>
+	</string>
+	<string id="bar_npc_dolg_mechanic_task_2_about">
+		<text>Эй, чувак, если ты согласишься достать мне более полный набор, получишь ещё большую скидку. Поможешь, приятель?</text>
+	</string>
+	<string id="bar_npc_dolg_mechanic_task_2_fetch_about">
+		<text>Мне нужны инструменты для тонкой работы. Там должно быть всё, что мне нужно. Ты будешь мне как брат, если достанешь его!</text>
+	</string>
+	<string id="bar_npc_dolg_mechanic_task_2_fetch_finish">
+		<text>Ух ты блин, спасибо, братан! Теперь-то я точно разбогатею. Чёрт возьми, я таки стану успешным!.. Если, конечно, и этот шанс не упущу. Но пока не могу предложить тебе ничего лучше, чем скидка. Извини, приятель.</text>
+	</string>
+	<string id="bar_npc_dolg_mechanic_task_3_name">
+		<text>Найти для Токаря %s</text>
+	</string>
+	<string id="bar_npc_dolg_mechanic_task_3_text">
+		<text>Необходимо принести Токарю %s. Ему нужен уникальный набор, чтобы проводить ещё более сложную модернизацию снаряжения.</text>
+	</string>
+	<string id="bar_npc_dolg_mechanic_task_3_about">
+		<text>Эй, парень, если найдёшь что-то стоящее - с меня скидка!</text>
+	</string>
+	<string id="bar_npc_dolg_mechanic_task_3_fetch_about">
+		<text>Мне нужны инструменты для калибровки. В них должно быть всё, что мне нужно. Ты будешь мне как брат, если достанешь их!</text>
+	</string>
+	<string id="bar_npc_dolg_mechanic_task_3_fetch_finish">
+		<text>Ни ху...! Блин, спасибо, братан! Теперь-то я точно разбогатею. Чёрт возьми, я таки стану успешным!.. Если, конечно, ещё и этот шанс не упущу. Но пока не могу предложить тебе ничего лучше, чем скидка. Извини, дружище.</text>
+	</string>
+
+</string_table>

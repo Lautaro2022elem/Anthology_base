@@ -1,0 +1,56 @@
+;=========meet_stalker_korpys========
+[meet@korpys_stalker]
+close_anim 		= nil
+close_victim 	= nil
+far_anim 		= nil
+far_victim 		= nil
+close_distance 	= 0
+far_distance 	= 0
+use = {=actor_enemy} false, {=dist_to_actor_le(3)} true, false
+snd_on_use = {!dist_to_actor_le(3)} nil
+meet_on_talking = false
+;==================================
+
+[logic]
+suitable = {=check_npc_name(pb_kuvalda_prison)} true
+prior = 200
+active = remark@stay_start
+on_death = death
+on_hit = hit@kuvalda_prison
+
+[remark@stay_start]
+anim = prisoner
+target = path | pro_kuvalda_prison_look, 0
+path_walk = pro_kuvalda_prison_walk
+on_info = {+pro_kuvalda_hit_killer_fire} %=kill_npc%
+on_info2 = {+pro_tesak_say_kill_kuvalda_done} remark@stay_talking
+use_camp = false
+combat_ignore_cond = true
+combat_ignore_keep_when_attacked = true
+invulnerable = false
+gather_items_enabled = false
+help_wounded_enabled = false
+corpse_detection_enabled = false
+meet = no_meet
+
+[remark@stay_talking]
+anim = prisoner
+target = path | pro_kuvalda_prison_look, 0
+path_walk = pro_kuvalda_prison_walk
+on_info = {+pro_kuvalda_ready_to_talking -pro_kuvalda_quest_meet_killer_done} %=play_sound(pb_kuvalda_quest_meet_killer) +pro_kuvalda_quest_meet_killer_done% 
+on_info2 = {+pro_kuvalda_hit_killer_fire} %=kill_npc%
+on_timer = 4000 | %+pro_kuvalda_ready_to_talking%
+use_camp = false
+combat_ignore_cond = true
+combat_ignore_keep_when_attacked = true
+invulnerable = false
+gather_items_enabled = false
+help_wounded_enabled = false
+corpse_detection_enabled = false
+meet = no_meet
+
+[hit@kuvalda_prison]
+on_info = {-pro_kuvalda_hit_killer_fire} %+pro_kuvalda_hit_killer_fire%
+
+[death]
+on_info = %+pro_kuvalda_scene_dead%

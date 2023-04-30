@@ -1,0 +1,5 @@
+[logic]
+active = sr_idle
+
+[sr_idle]
+on_actor_inside = {+bar_deactivate_radar_done =is_faction_enemy_to_actor(monolith)} nil % =create_squad(rad_antenna_specnaz_squad:rad_antenna_specnaz) =create_squad(rad_antenna_monolith_squad:rad_antenna_monolith) =create_squad(rad_antenna_patrol_squad:rad_antenna_patrol) =spawn_object(rad2_stalker_0001:rad_military_raid_w3:0) =spawn_object(rad2_stalker:rad_military_raid_w1:0) =spawn_object(rad2_stalker_0000:rad_military_raid_w2:0) =spawn_object(rad2_military:rad_military_sniper_w1:0) =play_snd(characters_voice\scenario\radar\rad_soldier_des_1)% 

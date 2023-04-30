@@ -1,0 +1,50 @@
+[walker@def]
+gather_items_enabled = false
+help_wounded_enabled = false
+corpse_detection_enabled = false
+wounded = wounded
+
+[combat]
+out_restr = sad_rancho_sr_barman
+
+[logic@trader]
+active = animpoint@1
+suitable = {=check_npc_name(sad_ran_trader)} true
+on_death = death
+on_hit = hit
+on_combat = combat
+post_combat_time = 0, 0
+prior = 300
+trade = items\trade\trade_stalker_basic.ltx
+level_spot = trader
+
+[animpoint@1]:walker@def
+cover_name = sad_ran_animp_tesla
+avail_animations = animpoint_stay_table_no_rnd
+out_restr = sad_rancho_sr_barman
+on_info = {=actor_enemy} remark@enemy %+sad_ran_door_unlock%
+meet = meet
+
+[remark@enemy]
+wounded = wounded
+
+; ------------------------------------
+[meet]
+close_snd_hello = nil
+close_distance  = 0
+close_victim    = actor
+close_anim 		= nil
+use 			= {=actor_enemy} false, true
+allow_break 	= false
+
+; ------------------------------------
+[wounded] ;Не должен быть раненым
+hp_state = 0|wounded_heavy@help_heavy
+hp_state_see = 0|wounded_heavy@help_heavy
+hp_victim = 0|nil
+hp_fight = 0|false
+hp_cover = 0|false
+
+[death]
+
+[hit]

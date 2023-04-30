@@ -1,0 +1,10 @@
+[logic]
+active = sr_idle@start
+
+[sr_idle@start]
+on_actor_in_zone = pb_actor_podzemka_restrictor | sr_idle@stop %=play_sound_looped(pb_baby_crying)%
+
+[sr_idle@stop]
+on_info = {=dist_to_actor_le(5)} sr_idle@nil %=stop_sound_looped +pb_quest_podzemka_search_done%
+
+[sr_idle@nil]

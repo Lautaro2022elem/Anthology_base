@@ -1,0 +1,21 @@
+[logic] 
+active = sr_idle@start
+
+[sr_idle@start]
+on_info = {+topi_start +topi_zam_variant_quest_talking_4 +topi_a1_main_suget_second_all_talking -topi_var_2_suget_quest_1_anubis_create} %=topi_var_2_suget_quest_1_create_npc +topi_var_2_suget_quest_1_anubis_create%
+on_timer = 16000 | {+topi_start +topi_var_2_suget_quest_1_anubis_create -topi_var_2_suget_quest_1_give} sr_idle@second %=give_task(geonezis_topi_var_2_suget_quest_1) +topi_var_2_suget_quest_1_give%
+
+[sr_idle@second]
+on_info = {+topi_var_2_suget_quest_1_csky_member_all_death -topi_var_2_suget_quest_2_anubis_create} %=topi_var_2_suget_quest_2_create_npc +topi_var_2_suget_quest_2_anubis_create%
+on_info2 = {+topi_d5_killer_ceh_quest_1_talking} sr_idle@nil
+on_timer = 8000 | {+topi_var_2_suget_quest_2_anubis_create -topi_var_2_suget_quest_2_give} sr_idle@third %=give_task(geonezis_topi_var_2_suget_quest_2) +topi_var_2_suget_quest_2_give%
+
+[sr_idle@third]
+on_info = {+topi_var_2_suget_quest_2_killer_member_all_death -topi_var_2_suget_quest_3_tainik_create} %=topi_var_2_suget_quest_3_create_tainik +topi_var_2_suget_quest_3_tainik_create%
+on_timer = 8000 | {+topi_var_2_suget_quest_3_tainik_create -topi_var_2_suget_quest_3_give} sr_idle@fouth %+topi_var_2_suget_quest_3_give =give_task(geonezis_topi_var_2_suget_quest_3) =set_squad_enemy_to_actor(topi_sim_nps_8_squad) =set_squad_enemy_to_actor(topi_sim_nps_9_squad) =dec_faction_goodwill_to_actor(stalker:5000)%
+
+[sr_idle@fouth]
+on_info = {+topi_stalker_base_var_2_member_all_death -topi_var_2_suget_quest_final_ecolog_create} %=topi_var_2_suget_quest_final_create_npc +topi_var_2_suget_quest_final_ecolog_create%
+on_timer = 6000 | {+topi_var_2_suget_quest_final_ecolog_create -topi_var_2_suget_quest_final_give} sr_idle@nil %=give_task(geonezis_topi_var_2_suget_quest_final) +topi_var_2_suget_quest_final_give%
+
+[sr_idle@nil]

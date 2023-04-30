@@ -1,0 +1,63 @@
+#include "scripts\escape\npc\esc_npc_wood_goblin_general.ltx"
+
+[logic]
+active = walker@see_trup
+level_spot = quest_npc
+on_death = death
+on_hit = hit
+post_combat_time = 0, 0
+
+[walker@see_trup]
+path_look = esc_hunter_see_trup_look
+path_walk = esc_hunter_see_trup_walk
+on_info = {=dist_to_actor_le(6)} remark@dialog_actor
+meet = no_meet
+gather_items_enabled = false
+corpse_detection_enabled = false
+combat_ignore_keep_when_attacked = true 
+combat_ignore_cond = true
+
+[remark@hello]
+anim = animpoint_stay_wait
+target = story | actor
+meet = no_meet
+on_info = {=dist_to_actor_le(6)} remark@dialog_actor
+on_info2 = {+esc_talk_from_hunter_end} walker@hunter
+gather_items_enabled = false
+corpse_detection_enabled = false
+
+[remark@dialog_actor]
+anim = wait_na
+target = story | actor
+meet = meet@dialog
+on_info = {+esc_talk_from_hunter_end} walker@hunter
+gather_items_enabled = false
+corpse_detection_enabled = false
+
+[walker@hunter]
+path_walk = esc_hunter_hunting_1_walk_1
+on_info = {=dist_to_actor_ge(40)} remark@wait %=esc_dubolom_quest_sends_sms_1%
+gather_items_enabled = false
+corpse_detection_enabled = false
+meet = no_meet
+on_signal = esc_hunter_hunting_1| {-esc_hunter_hunting_start} remark@hunter_2 %+esc_hunter_hunting_start%
+def_state_moving = run
+
+[remark@wait]
+anim = threat_danger
+target = story | actor
+meet = no_meet
+on_info = {=dist_to_actor_le(30)} walker@hunter %=esc_dubolom_quest_sends_sms_2%
+invulnerable = true
+gather_items_enabled = false
+corpse_detection_enabled = false
+
+[remark@hunter_2]
+anim = threat_danger
+target = story | actor
+meet = no_meet
+on_info = {+esc_hunter_hunting_start -esc_dubolom_stop_play_sounds} %=play_sound(esc_hunter_dubolom) +esc_dubolom_stop_play_sounds%
+on_timer = 9000 | remark@hunter_3 %+esc_hunter_hunting_psy_dog_found%
+invulnerable = true
+gather_items_enabled = false
+corpse_detection_enabled = false

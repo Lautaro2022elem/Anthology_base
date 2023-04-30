@@ -1,0 +1,558 @@
+;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
+;;;;;;;;;;;;;;;;;; ÒÂÍˆËË NPS Ì‡  Ó‰ÓÌÂ ;;;;;;;;;;;;;;;;;;;;;;;;;
+;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
+[esc_trader_radio_pharos]:physic_object
+$spawn					= "respawn\esc_trader_radio_pharos"
+visual                        = dynamics\equipments\quest\scanner_artefact.ogf
+startup_animation  	    			= idle
+fixed_bones							= link
+custom_data 		      = models\objects\ignore_static.ltx
+story_id				= esc_trader_radio_pharos
+
+[esc_trader_radio_pharos_item]:physic_object
+$spawn					= "respawn\esc_trader_radio_pharos_item"
+visual                        = dynamics\equipments\quest\scanner_artefact.ogf
+startup_animation  	    			= idle
+fixed_bones							= link
+custom_data 		      = scripts\escape\space_restrictor\esc_radio_pharos_logic.ltx
+story_id				= esc_trader_radio_pharos_item
+
+[esc_psy_dog_quest]:pseudodog_normal
+$spawn                     = "respawn\esc_psy_dog_quest"
+rank        	= 17
+story_id = esc_psy_dog_quest
+custom_data				= scripts\escape\monster\esc_psy_dog_quest.ltx
+
+[esc_atp_visual]:stalker
+$spawn					= "respawn\esc_atp_visual"
+character_profile		= esc_atp_visual
+story_id                                = esc_atp_visual
+
+[esc_merc_sniper_enemy]:stalker
+$spawn					= "respawn\esc_merc_sniper_enemy"
+character_profile		= esc_merc_sniper_enemy
+custom_data				= scripts\escape\npc\esc_merc_sniper_enemy.ltx
+story_id                                = esc_merc_sniper_enemy
+
+[esc_trader_security]:stalker
+$spawn					= "respawn\esc_trader_security"
+character_profile		= esc_atp_visual
+;custom_data				= scripts\escape\npc\esc_trader_security.ltx
+story_id                                = esc_trader_security
+
+[esc_stalker_village_night]:stalker
+$spawn					= "respawn\esc_stalker_village_night"
+character_profile		= esc_stalker_to_atp_1
+custom_data				= scripts\escape\npc\esc_stalker_village_night.ltx
+story_id                                = esc_stalker_village_night
+
+[esc_stalker_village_guide]:stalker
+$spawn					= "respawn\esc_stalker_village_guide"
+character_profile		= esc_stalker_to_atp_2
+custom_data				= scripts\escape\npc\esc_stalker_village_guide.ltx
+story_id                                = esc_stalker_village_guide
+
+[esc_bar_security]:stalker
+$spawn					= "respawn\esc_bar_security"
+character_profile		= esc_bar_security
+story_id                                = esc_bar_security
+
+[esc_bar_stalker_1]:stalker
+$spawn					= "respawn\esc_bar_stalker_1"
+character_profile		= esc_bar_stalker_1
+custom_data				= scripts\escape\npc\esc_bar_stalker_1.ltx
+story_id                                = esc_bar_stalker_1
+
+[esc_bar_stalker_2]:stalker
+$spawn					= "respawn\esc_bar_stalker_2"
+character_profile		= esc_bar_stalker_2
+custom_data				= scripts\escape\npc\esc_bar_stalker_2.ltx
+story_id                                = esc_bar_stalker_2
+
+[esc_bar_stalker_3]:stalker
+$spawn					= "respawn\esc_bar_stalker_3"
+character_profile		= esc_bar_stalker_3
+custom_data				= scripts\escape\npc\esc_bar_stalker_3.ltx
+story_id                                = esc_bar_stalker_3
+
+[esc_bar_stalker_drunk]:stalker
+$spawn					= "respawn\esc_bar_stalker_drunk"
+character_profile		= esc_bar_stalker_drunk
+;custom_data				= scripts\escape\npc\esc_bar_stalker_drunk.ltx
+story_id                                = esc_bar_stalker_drunk
+
+[esc_bar_storyman]:stalker
+$spawn					= "respawn\esc_bar_storyman"
+character_profile		= esc_bar_storyman
+;custom_data				= scripts\escape\npc\esc_bar_storyman.ltx
+story_id                                = esc_bar_storyman
+
+[esc_stalker_to_atp]:stalker
+$spawn					= "respawn\esc_stalker_to_atp"
+character_profile		= esc_stalker_to_atp
+story_id				= esc_stalker_to_atp
+custom_data				= scripts\escape\npc\esc_stalker_to_atp.ltx
+
+[esc_stalker_to_atp_1]:stalker
+$spawn					= "respawn\esc_stalker_to_atp_1"
+character_profile		= esc_stalker_to_atp_1
+story_id				= esc_stalker_to_atp_1
+
+[esc_stalker_to_atp_2]:stalker
+$spawn					= "respawn\esc_stalker_to_atp_2"
+character_profile		= esc_stalker_to_atp_2
+story_id				= esc_stalker_to_atp_2
+
+
+[esc_leader_stalkerbase_go_way]:stalker
+$spawn					= "respawn\esc_leader_stalkerbase_go_way"
+character_profile		= esc_leader_stalkerbase
+story_id                                = esc_leader_stalkerbase_go_way
+custom_data				= scripts\escape\npc\esc_leader_stalkerbase_go_way.ltx
+
+
+[esc_leader_group_1_go_way]:stalker
+$spawn					= "respawn\esc_leader_group_1_go_way"
+character_profile		= sim_default_stalker_0
+story_id                                = esc_leader_group_1_go_way
+custom_data				= scripts\escape\npc\esc_leader_group_1_go_way.ltx
+
+
+[esc_leader_group_2_go_way]:stalker
+$spawn					= "respawn\esc_leader_group_2_go_way"
+character_profile		= sim_default_stalker_2
+story_id                                = esc_leader_group_2_go_way
+custom_data				= scripts\escape\npc\esc_leader_group_2_go_way.ltx
+
+
+[esc_leader_group_3_go_way]:stalker
+$spawn					= "respawn\esc_leader_group_3_go_way"
+character_profile		= sim_default_stalker_2
+story_id                                = esc_leader_group_3_go_way
+custom_data				= scripts\escape\npc\esc_leader_group_3_go_way.ltx
+
+[esc_leader_group_4_go_way]:stalker
+$spawn					= "respawn\esc_leader_group_4_go_way"
+character_profile		= sim_default_stalker_1
+story_id                                = esc_leader_group_4_go_way
+custom_data				= scripts\escape\npc\esc_leader_group_4_go_way.ltx
+
+[esc_klim]:stalker
+$spawn					= "respawn\esc_klim"
+character_profile		= esc_klim
+story_id				= esc_klim
+custom_data = scripts\escape\npc\esc_klim.ltx
+
+[esc_b46_friend_to_kurer_dead]:stalker
+$spawn					= "respawn\esc_b46_friend_to_kurer_dead"
+character_profile		= esc_b46_friend_to_kurer_dead
+story_id                                = esc_friend_to_kurer_dead
+
+[esc_zohan_vilage_final]:stalker
+$spawn					= "respawn\esc_zohan_vilage_final"
+character_profile		= esc_b46_friend_to_kurer_dead
+story_id                                = esc_zohan_vilage_final
+
+[esc_leader_orest]:stalker
+$spawn					= "respawn\esc_leader_orest"
+character_profile		= esc_leader_orest
+story_id                                = esc_leader_orest
+
+[esc_koordinator]:stalker
+$spawn					= "respawn\esc_koordinator"
+character_profile		= esc_koordinator
+story_id                                = esc_koordinator
+custom_data = scripts\escape\npc\esc_koordinator.ltx
+
+[esc_killer_bizon]:stalker
+$spawn					= "respawn\esc_killer_bizon"
+character_profile		= esc_killer_bizon
+story_id                                = esc_killer_bizon
+
+[esc_killer_duplet]:stalker
+$spawn					= "respawn\esc_killer_duplet"
+character_profile		= esc_killer_duplet
+story_id                                = esc_killer_duplet
+
+[esc_killer_grif]:stalker
+$spawn					= "respawn\esc_killer_grif"
+character_profile		= esc_killer_grif
+story_id                                = esc_killer_grif
+
+[esc_killer_mrakobes]:stalker
+$spawn                     = "respawn\esc_killer_mrakobes"
+character_profile     = pb_mrakobes
+spec_rank = experienced
+community = killer
+custom_data = scripts\escape\npc\esc_killer_mrakobes.ltx
+story_id = esc_killer_mrakobes
+
+[esc_killer_raven]:stalker
+$spawn					= "respawn\esc_killer_raven"
+character_profile		= esc_killer_raven
+spec_rank = experienced
+community = killer
+custom_data = scripts\escape\npc\esc_killer_raven.ltx
+story_id                                = esc_killer_raven
+
+[esc_killer_raven_scene]:stalker
+$spawn					= "respawn\esc_killer_raven_scene"
+character_profile		= esc_killer_raven
+spec_rank = experienced
+community = killer
+custom_data = scripts\escape\npc\esc_killer_raven_scene.ltx
+story_id                                = esc_killer_raven_scene
+
+[esc_killer_raven_sniper]:stalker
+$spawn					= "respawn\esc_killer_raven_sniper"
+character_profile		= esc_killer_raven_sniper
+spec_rank = experienced
+community = killer
+custom_data = scripts\escape\npc\esc_killer_raven_sniper.ltx
+story_id                                = esc_killer_raven_sniper
+
+[esc_killer_raven_final]:stalker
+$spawn					= "respawn\esc_killer_raven_final"
+character_profile		= esc_killer_raven_final
+spec_rank = experienced
+community = killer
+custom_data = scripts\escape\npc\esc_killer_raven_final.ltx
+story_id                                = esc_killer_raven_final
+
+[esc_killer_raven_atp_quest]:stalker
+$spawn					= "respawn\esc_killer_raven_atp_quest"
+character_profile		= esc_killer_raven_sniper
+spec_rank = experienced
+community = killer
+custom_data = scripts\escape\npc\esc_killer_raven_atp_quest.ltx
+story_id                                = esc_killer_raven_atp_quest
+
+[esc_killer_raven_td]:stalker
+$spawn					= "respawn\esc_killer_raven_td"
+character_profile		= esc_killer_raven_sniper
+spec_rank = experienced
+community = killer
+custom_data = scripts\escape\npc\esc_killer_raven_td.ltx
+story_id                                = esc_killer_raven_td
+
+[esc_killer_td_1]:stalker
+$spawn					= "respawn\esc_killer_td_1"
+character_profile		= esc_killer_atp_1
+custom_data = scripts\escape\npc\esc_killer_td_1.ltx
+story_id				= esc_killer_td_1
+
+[esc_killer_td_2]:stalker
+$spawn					= "respawn\esc_killer_td_2"
+character_profile		= esc_killer_atp_2
+custom_data = scripts\escape\npc\esc_killer_td_2.ltx
+story_id				= esc_killer_td_2
+
+[esc_millitary_shooter]:stalker
+$spawn					= "respawn\esc_millitary_shooter"
+character_profile		= esc_army_chernenco
+spec_rank = experienced
+community = army
+custom_data = scripts\escape\npc\esc_army_minigun_shooter.ltx
+story_id                                = esc_army_shooter
+
+[esc_stalker_muravei]:stalker
+$spawn					= "respawn\esc_stalker_muravei"
+character_profile		= esc_stalker_muravei
+story_id                                = esc_stalker_muravei
+
+[esc_barmen_base]:stalker
+$spawn					= "respawn\esc_barmen_base"
+character_profile		= esc_barmen_base
+story_id                                = esc_barmen_base
+
+[esc_stalker_levsha]:stalker
+$spawn					= "respawn\esc_stalker_levsha"
+character_profile		= esc_stalker_levsha
+story_id                                = esc_stalker_levsha
+
+[esc_stalker_enot]:stalker
+$spawn					= "respawn\esc_stalker_enot"
+character_profile		= esc_stalker_levsha
+story_id                                = esc_stalker_enot
+custom_data = scripts\escape\npc\esc_stalker_enot.ltx
+
+[esc_stalker_enot_sleep]:stalker
+$spawn					= "respawn\esc_stalker_enot_sleep"
+character_profile		= esc_stalker_levsha
+story_id                                = esc_stalker_enot_sleep
+custom_data = scripts\escape\npc\esc_stalker_enot_sleep.ltx
+
+[esc_lom]:stalker
+$spawn					= "respawn\esc_lom"
+character_profile		= esc_lom
+story_id				= esc_lom
+
+[esc_mechanic_furgon_pa]:stalker
+$spawn					= "respawn\esc_mechanic_furgon_pa"
+character_profile		= esc_mechanic_furgon_pa
+story_id				= esc_mechanic_furgon_pa
+
+[esc_killer_atp_1]:stalker
+$spawn					= "respawn\esc_killer_atp_1"
+character_profile		= esc_killer_atp_1
+
+[esc_killer_atp_2]:stalker
+$spawn					= "respawn\esc_killer_atp_2"
+character_profile		= esc_killer_atp_2
+
+[esc_killer_atp_adm]:stalker
+$spawn					= "respawn\esc_killer_atp_adm"
+character_profile		= esc_killer_atp_1
+custom_data = scripts\escape\npc\esc_killer_atp_security_1.ltx
+story_id				= esc_killer_atp_adm
+
+[esc_killer_atp_dvor_td]:stalker
+$spawn					= "respawn\esc_killer_atp_dvor_td"
+character_profile		= esc_killer_atp_2
+custom_data = scripts\escape\npc\esc_killer_atp_security_2.ltx
+story_id				= esc_killer_atp_dvor_td
+
+[esc_killer_atp_dvor_left]:stalker
+$spawn					= "respawn\esc_killer_atp_dvor_left"
+character_profile		= esc_killer_atp_1
+custom_data = scripts\escape\npc\esc_killer_atp_security_3.ltx
+story_id				= esc_killer_atp_dvor_left
+
+[esc_killer_atp_dvor_right]:stalker
+$spawn					= "respawn\esc_killer_atp_dvor_right"
+character_profile		= esc_killer_atp_2
+custom_data = scripts\escape\npc\esc_killer_atp_security_4.ltx
+story_id				= esc_killer_atp_dvor_right
+
+[esc_bandit_kpp_glava]:stalker
+$spawn					= "respawn\esc_bandit_kpp_glava"
+character_profile		= sim_default_bandit_2
+story_id				= esc_bandit_kpp_glava_spot
+
+[esc_bandit_kpp_1]:stalker
+$spawn					= "respawn\esc_bandit_kpp_1"
+character_profile		= sim_default_bandit_2
+story_id				= esc_bandit_kpp_1
+
+[esc_barman_patogen_pa]:stalker
+$spawn					= "respawn\esc_barman_patogen_pa"
+character_profile		= esc_barman_patogen_pa
+story_id				= esc_barman_patogen_pa
+
+
+
+;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
+;;;;;;;;;;;;;;;;;; ¬Œ≈ÕÕ€≈ ;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
+;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
+
+[esc_army_leader]:stalker
+$spawn					= "respawn\esc_army_leader"
+character_profile		= esc_army_leader
+story_id				= esc_army_leader
+
+[esc_army_yaroshuk]:stalker
+$spawn					= "respawn\esc_army_yaroshuk"
+character_profile		= esc_army_yaroshuk
+story_id				= esc_army_yaroshuk
+
+[esc_army_yaroshuk_scene]:stalker
+$spawn					= "respawn\esc_army_yaroshuk_scene"
+character_profile		= esc_army_yaroshuk
+story_id				= esc_army_yaroshuk_scene
+
+
+;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
+;;;;;;;;;;;;;;;;;;  ¬≈—“Œ¬€≈ ;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
+;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
+
+
+
+
+;-------------------------ESCAPE------------------
+;-------------------------a10------------------
+
+[esc_a10_stalker_trader]:stalker
+$spawn                     = "respawn\esc_a10_stalker_trader"
+character_profile     = esc_a10_stalker_trader
+spec_rank = novice
+community = stalker
+story_id = esc_a10_stalker_trader_id
+
+[esc_a10_stalker_1]:stalker
+$spawn                     = "respawn\esc_a10_stalker_1"
+character_profile     = esc_a10_stalker_1
+spec_rank = novice
+community = stalker
+
+;-------------------------b28------------------
+
+[esc_b28_stalker_1]:stalker
+$spawn                     = "respawn\esc_b28_stalker_1"
+character_profile     = esc_b28_stalker_1
+spec_rank = novice
+community = stalker
+
+[esc_b28_stalker_2]:stalker
+$spawn                     = "respawn\esc_b28_stalker_2"
+character_profile     = esc_b28_stalker_2
+spec_rank = novice
+community = stalker
+
+[esc_b28_stalker_3]:stalker
+$spawn                     = "respawn\esc_b28_stalker_3"
+character_profile     = esc_b28_stalker_3
+spec_rank = novice
+community = stalker
+
+[esc_b28_stalker_4]:stalker
+$spawn                     = "respawn\esc_b28_stalker_4"
+character_profile     = esc_b28_stalker_4
+spec_rank = novice
+community = stalker
+
+[esc_b28_stalker_5]:stalker
+$spawn                     = "respawn\esc_b28_stalker_5"
+character_profile     = esc_b28_stalker_5
+spec_rank = novice
+community = stalker
+
+[esc_b28_stalker_6]:stalker
+$spawn                     = "respawn\esc_b28_stalker_6"
+character_profile     = esc_b28_stalker_6
+spec_rank = novice
+community = stalker
+
+;-------------------------b14------------------
+
+[esc_b14_stalker_1]:stalker
+$spawn                     = "respawn\esc_b14_stalker_1"
+character_profile     = esc_b14_stalker_1
+spec_rank = novice
+community = stalker
+story_id = esc_b14_st_provodnik_id
+
+[esc_b14_stalker_2]:stalker
+$spawn                     = "respawn\esc_b14_stalker_2"
+character_profile     = esc_b14_stalker_2
+spec_rank = novice
+community = stalker
+
+[esc_b14_stalker_3]:stalker
+$spawn                     = "respawn\esc_b14_stalker_3"
+character_profile     = esc_b14_stalker_3
+spec_rank = novice
+community = stalker
+
+;-------------------------b5------------------
+
+[esc_b5_stalker_1]:stalker
+$spawn                     = "respawn\esc_b5_stalker_1"
+character_profile     = esc_b5_stalker_1
+spec_rank = novice
+community = stalker
+
+[esc_b5_stalker_2]:stalker
+$spawn                     = "respawn\esc_b5_stalker_2"
+character_profile     = esc_b5_stalker_2
+spec_rank = novice
+community = stalker
+
+;-------------------------b100------------------
+
+[esc_b100_bandit_1]:stalker
+$spawn                     = "respawn\esc_b100_bandit_1"
+character_profile     = esc_b100_bandit_1
+spec_rank = novice
+community = bandit
+
+[esc_b100_bandit_2]:stalker
+$spawn                     = "respawn\esc_b100_bandit_2"
+character_profile     = esc_b100_bandit_2
+spec_rank = novice
+community = bandit
+
+[esc_b100_bandit_3]:stalker
+$spawn                     = "respawn\esc_b100_bandit_3"
+character_profile     = esc_b100_bandit_3
+spec_rank = novice
+community = bandit
+
+[esc_b100_bandit_4]:stalker
+$spawn                     = "respawn\esc_b100_bandit_4"
+character_profile     = esc_b100_bandit_4
+spec_rank = novice
+community = bandit
+
+[esc_b100_bandit_5]:stalker
+$spawn                     = "respawn\esc_b100_bandit_5"
+character_profile     = esc_b100_bandit_5
+spec_rank = novice
+community = bandit
+
+;-------------------------b101------------------
+
+[esc_b101_bandit_1]:stalker
+$spawn                     = "respawn\esc_b101_bandit_1"
+character_profile     = esc_b101_bandit_1
+spec_rank = novice
+community = bandit
+
+[esc_b101_bandit_2]:stalker
+$spawn                     = "respawn\esc_b101_bandit_2"
+character_profile     = esc_b101_bandit_2
+spec_rank = novice
+community = bandit
+
+[esc_b101_bandit_3]:stalker
+$spawn                     = "respawn\esc_b101_bandit_3"
+character_profile     = esc_b101_bandit_3
+spec_rank = novice
+community = bandit
+
+[esc_b101_bandit_4]:stalker
+$spawn                     = "respawn\esc_b101_bandit_4"
+character_profile     = esc_b101_bandit_4
+spec_rank = novice
+community = bandit
+
+;-------------------------b104------------------
+
+[esc_b104_bandit_1]:stalker
+$spawn                     = "respawn\esc_b104_bandit_1"
+character_profile     = esc_b104_bandit_1
+spec_rank = novice
+community = bandit
+
+[esc_b104_bandit_2]:stalker
+$spawn                     = "respawn\esc_b104_bandit_2"
+character_profile     = esc_b104_bandit_2
+spec_rank = novice
+community = bandit
+
+;-------------------------b107------------------
+
+[esc_b107_stalker_1]:stalker
+$spawn                     = "respawn\esc_b107_stalker_1"
+character_profile     = esc_b107_stalker_1
+spec_rank = novice
+community = stalker
+
+[esc_b107_stalker_2]:stalker
+$spawn                     = "respawn\esc_b107_stalker_2"
+character_profile     = esc_b107_stalker_2
+spec_rank = novice
+community = stalker
+
+[esc_b107_stalker_3]:stalker
+$spawn                     = "respawn\esc_b107_stalker_3"
+character_profile     = esc_b107_stalker_3
+spec_rank = novice
+community = stalker
+
+;-------------------------a12------------------
+
+[esc_a12_stalker_1]:stalker
+$spawn                     = "respawn\esc_a12_stalker_1"
+character_profile     = esc_a12_stalker_1
+spec_rank = novice
+community = stalker

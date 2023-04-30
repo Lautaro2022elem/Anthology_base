@@ -1,0 +1,303 @@
+[storyline_quest]; "«Группа Бизона»: Найти пропавшую группу."
+icon = ui_inGame2_Ohrana_uchenih
+prior = 1
+storyline = true
+title = {+dl_storyline_pre_done} storyline_quest_1_name, storyline_quest_name
+descr = {+dl_storyline_pre_done} storyline_quest_1_descr, storyline_quest_descr
+target = {+dl_storyline_pre_done} dl_bizon_stalker_id, nil
+condlist_0 = {+modification_complete} complete
+
+[first_quest]; "«Обитатели»: Добраться до лагеря сталкеров"
+icon = ui_inGame2_Quest
+prior = 2
+storyline = true
+title = {+wiz_storyline_dialog_rjaviu_done} first_quest_1_name, first_quest_name
+descr = {+wiz_storyline_dialog_rjaviu_done} first_quest_1_descr, first_quest_descr
+target = {+wiz_storyline_dialog_kosta_done} wiz_foma_id, {+wiz_storyline_dialog_rjaviu_done} wiz_kosta_id, st_wiz_nauch_name
+condlist_0 = {+wiz_storyline_dialog_foma_done} complete
+
+[bolotnaya_tvar]; "«Болотная Тварь»: Убить монстра"
+icon = ui_inGame2_Ohota_na_Krovososov
+prior = 3
+storyline = false
+title = {+bolotnaya_tvar_death} bolotnaya_tvar_1_name, bolotnaya_tvar_name
+descr = {+bolotnaya_tvar_death} bolotnaya_tvar_1_descr, bolotnaya_tvar_descr
+target = {+bolotnaya_tvar_death} wiz_foma_id, wiz_boloto_bloodsuker_spot
+condlist_0 = {+bolotnaya_tvar_complete} complete
+
+[vozmezdie]; "«Возмездие»: Найти Кривого."
+icon = ui_inGame2_PD_storonnik_ravnovesiya
+prior = 4
+storyline = false
+title = {+wiz_krivou_die} vozmezdie_1_name, vozmezdie_name
+descr = {+wiz_krivou_die} vozmezdie_1_descr, vozmezdie_descr
+;target = 
+condlist_0 = {+wiz_kosta_die} complete
+
+[po_goryachim_sledam]; «По горячим следам»: исследовать туннель.
+icon = ui_inGame2_Issledovatelskaya_gruppa
+prior = 5
+storyline = true
+title = po_goryachim_sledam_name
+descr = po_goryachim_sledam_descr
+target = wiz_tonnel_spot
+condlist_0 = {=actor_has_item(wiz_pda_rezaka)} complete
+
+[katacombs]; "«Катакомбы»: Разузнать больше"
+icon = ui_inGame2_Quest
+prior = 6
+storyline = true
+title = {+katambs_door_opened} tonnels_more_6_name, {=actor_has_item(zat_a23_labx8_key)} tonnels_more_5_name, {+katacombs_gsk_komplex} tonnels_more_4_name, {+katacombs_stariy_die_gst} tonnels_more_4_name, {+katacombs_foma_message_send} tonnels_more_2_name, {+wiz_storyline_dialog_foma_katacombs_wait} tonnels_more_1_name, tonnels_more_name
+descr = {+katambs_door_opened} tonnels_more_6_descr, {=actor_has_item(zat_a23_labx8_key)} tonnels_more_5_descr, {+katacombs_gsk_komplex} tonnels_more_4_descr, {+katacombs_stariy_die_gst} tonnels_more_3_descr, {+katacombs_foma_message_send} tonnels_more_2_descr, {+wiz_storyline_dialog_foma_katacombs_wait} tonnels_more_1_descr, tonnels_more_descr
+target = {+katambs_door_opened} door_to_katacombs, {=actor_has_item(zat_a23_labx8_key)} katakomb_big_2_lock_spot, {+katacombs_gsk_komplex} st_wiz_sim_3_name, {+katacombs_stariy_die_gst} wiz_stariy_treasure, {+katacombs_foma_message_send} wiz_foma_id, {+wiz_storyline_dialog_foma_katacombs_wait} nil, wiz_foma_id
+condlist_0 = {+katacombs_complete} complete
+
+[uninvited_guests]; "«Незваные Гости»"
+icon = ui_inGame2_Killers
+prior = 7
+storyline = true
+title = {+uninvited_guests_5_done} uninvited_guests_3_name, {+wiz_poslannik_krivogo_go_kill} uninvited_guests_2_name, {+wiz_mercs_base_cover_start} uninvited_guests_1_name, uninvited_guests_name
+descr = {+uninvited_guests_5_done} uninvited_guests_3_descr, {+wiz_poslannik_krivogo_go_kill} uninvited_guests_2_descr, {+wiz_mercs_base_cover_start} uninvited_guests_1_descr, uninvited_guests_descr
+target = {+uninvited_guests_5_done} wiz_rjaviu_id, {+wiz_poslannik_krivogo_go_kill} st_wiz_baza_name, {+wiz_mercs_base_cover_start} wiz_uninvited_guests_cover_sr, st_wiz_baza_name
+condlist_0 = {+uninvited_guests_complete} complete
+condlist_1 = {+uninvited_guests_fail} fail
+on_complete = %+st_recrd_first_story1 =new_writes_in_diary%
+
+[enemy_with_neutral]; "«Чужой среди своих»: Дождаться ночи"
+icon = ui_inGame2_Times
+prior = 8
+storyline = true
+title = {+wiz_enemy_with_neutral_actor_talk_with_krivoy} wiz_enemy_with_neutral_2_name, {=zat_b7_is_night =actor_has_item(wiz_pda_merc)} wiz_enemy_with_neutral_1_name, wiz_enemy_with_neutral_name
+descr = {+wiz_enemy_with_neutral_actor_talk_with_krivoy} wiz_enemy_with_neutral_2_descr, {=zat_b7_is_night =actor_has_item(wiz_pda_merc)} wiz_enemy_with_neutral_1_descr, wiz_enemy_with_neutral_descr
+target = {+wiz_enemy_with_neutral_actor_talk_with_krivoy} nil, {=zat_b7_is_night =actor_has_item(wiz_pda_merc)} st_wiz_baza_name, wiz_sr_sleep_1
+condlist_0 = {+wiz_lt_krasnopolsky_enemy_with_neutral_done} complete
+
+[kak_na_kurorte]; "«Как на курорте»: Вернуть свои вещи"
+icon = ui_inGame2_Quest
+prior = 9
+storyline = true
+title = {+wiz_lt_krasnopolsky_enemy_with_neutral_second +wiz_lt_krasnopolsky_enemy_with_neutral_third} wiz_kak_na_kurorte_2_name, {+wiz_merc_leader_base_door_close} wiz_kak_na_kurorte_1_name, wiz_kak_na_kurorte_name
+descr = {+wiz_lt_krasnopolsky_enemy_with_neutral_second +wiz_lt_krasnopolsky_enemy_with_neutral_third} wiz_kak_na_kurorte_2_descr, {+wiz_merc_leader_base_door_close} wiz_kak_na_kurorte_1_descr, wiz_kak_na_kurorte_descr
+target = {+wiz_lt_krasnopolsky_enemy_with_neutral_second +wiz_lt_krasnopolsky_enemy_with_neutral_third} merc_station_door, {+wiz_merc_leader_base_door_close} wiz_lt_krasnopolsky_id, nil
+condlist_0 = {+wiz_actor_has_all_yorself_items} complete
+on_complete = %=give_task(gonec_pravosudiya)%
+
+[gonec_pravosudiya]; "«Гонец Правосудия»"
+icon = ui_inGame2_PD_Gonets_pravosudiya
+prior = 10
+storyline = true
+title = {+gonec_pravosudiya_kill_kosta} gonec_pravosudiya_4_name, {+gonec_pravosudiya_going_to_kill} gonec_pravosudiya_3_name, {+gonec_pravosudiya_timer_out} gonec_pravosudiya_2_name, {+gonec_pravosudiya_started} gonec_pravosudiya_1_name, gonec_pravosudiya_name
+descr = {+gonec_pravosudiya_kill_kosta} gonec_pravosudiya_4_descr, {+gonec_pravosudiya_going_to_kill} gonec_pravosudiya_3_descr, {+gonec_pravosudiya_timer_out} gonec_pravosudiya_2_descr, {+gonec_pravosudiya_started} gonec_pravosudiya_1_descr, gonec_pravosudiya_descr
+target = {+gonec_pravosudiya_kill_kosta} wiz_kosta_id, {+gonec_pravosudiya_going_to_kill} wiz_kosta_id, {+gonec_pravosudiya_timer_out} wiz_rjaviu_id, {+gonec_pravosudiya_started} nil, wiz_rjaviu_id
+condlist_0 = {+wiz_kosta_die} complete
+on_complete = %=inc_faction_goodwill_to_actor(stalker:1000)%
+reward_money = 10000
+
+[free_neutral]; "«Пленник обстоятельств»"
+icon = ui_inGame2_Otmorozky
+prior = 11
+storyline = true
+title = {+free_neutral_jekan_free} free_neutral_4_name, {+wiz_sim_6_bandit_all_die} free_neutral_3_name, {+free_neutral_now_night} free_neutral_2_name, {+free_neutral_now_night_dialog_start} free_neutral_1_name, free_neutral_name
+descr = {+free_neutral_jekan_free} free_neutral_4_descr, {+wiz_sim_6_bandit_all_die} free_neutral_3_descr, {+free_neutral_now_night} free_neutral_2_descr, {+free_neutral_now_night_dialog_start} free_neutral_1_descr, free_neutral_descr
+target = {+free_neutral_jekan_free} wiz_rjaviu_raider_id, {+wiz_sim_6_bandit_all_die} wiz_jekan_scene_id, {+free_neutral_now_night} wiz_sim_6_bandit, {+free_neutral_now_night_dialog_start} wiz_rjaviu_id, wiz_sr_sleep_1
+condlist_0 = {+free_neutral_complete} complete
+reward_money = 23000
+
+;;;;;;;;;;;;;;;;КВЕСТ В ПОДЗЕМКЕ;;;;;;;;;;;;
+
+[children_of_the_dungeons]; "«Дети подземелий»"
+icon = ui_inGame2_Laboratoriya_X8
+prior = 12
+storyline = true
+title = {+children_of_the_dungeons_update =actor_has_item(kat_pda_stalker_lock)} wiz_children_of_the_dungeons_1_name, wiz_children_of_the_dungeons_name
+descr = {+children_of_the_dungeons_update =actor_has_item(kat_pda_stalker_lock)} wiz_children_of_the_dungeons_1_descr, wiz_children_of_the_dungeons_descr
+target = {+children_of_the_dungeons_update =actor_has_item(kat_pda_stalker_lock)} katacombs_to_deadlake, kat_corpse_control_sr
+condlist_0 = {=actor_on_level(dl)} complete
+;on_complete = %=give_task()%
+
+[kat_voron_locked_pda_quest]; "«По горячим следам»"
+icon = ui_inGame2_Quest
+prior = 13
+storyline = true
+title = {+dl_pda_vorona_unlocked_go_to_tech} kat_voron_locked_pda_quest_2_name, {+dl_actor_out_pda_vorona_wait} kat_voron_locked_pda_quest_1_name, kat_voron_locked_pda_quest_name
+descr = {+dl_pda_vorona_unlocked_go_to_tech} kat_voron_locked_pda_quest_2_descr, {+dl_actor_out_pda_vorona_wait} kat_voron_locked_pda_quest_1_name, kat_voron_locked_pda_quest_descr
+target = {+dl_pda_vorona_unlocked_go_to_tech} val_a4_stalker_pianist_id, {+dl_actor_out_pda_vorona_wait} val_a4_stalker_pianist_id, nil
+condlist_0 = {+dl_pda_vorona_unlocked} complete
+
+;;;;;;;;;;;;;;;;КВЕСТЫ МЁРТВОЕ ОЗЕРО;;;;;;;;;;;;
+
+[in_hot_pursuit]; "«По горячим следам»"
+icon = ui_inGame2_PD_Lider
+prior = 14
+storyline = true
+title = {+dl_actor_has_pda_killer} zav_in_the_footsteps_4_name, {+dl_dead_grek_pda} zav_in_the_footsteps_3_name, {+dl_storyline_garik_quest_go} zav_in_the_footsteps_2_name,{+dl_new_time_search_art_complete} zav_in_the_footsteps_1_name, zav_in_the_footsteps_name
+descr = {+dl_actor_has_pda_killer} zav_in_the_footsteps_4_descr, {+dl_dead_grek_pda} zav_in_the_footsteps_3_descr, {+dl_storyline_garik_quest_go} zav_in_the_footsteps_2_descr,{+dl_new_time_search_art_complete} zav_in_the_footsteps_1_descr, zav_in_the_footsteps_descr
+target = {+dl_actor_has_pda_killer} val_a3_stalker_leader_id, {+dl_dead_grek_pda} dl_dead_mercenaries_id, {+dl_storyline_garik_quest_go} deadlake_storyline_sec_sr_id, {+dl_new_time_search_art_complete} val_a3_stalker_garik_id, nil
+condlist_0 = {+dl_actor_going_village_dolg_mess} complete
+on_complete = %=scenario_autosave(st_save_zat_b18_noah_showed_teleport)%
+
+[dl_storyline_task_dolg]; "«Долг: Связь»"
+icon = ui_inGame2_Quest
+prior = 15
+storyline = true
+title = {+dl_actor_complete_dolg_wait} dl_storyline_task_dolg_1_name, dl_storyline_task_dolg_name
+descr = {+dl_actor_complete_dolg_wait} dl_storyline_task_dolg_1_descr, dl_storyline_task_dolg_descr
+target =  {+dl_actor_complete_dolg_wait} val_a3_stalker_leader_id, deadlake_storyline_dolg_messages_sr_id
+condlist_0 = {+dl_task_wait_dolg_go} complete
+on_complete = %=scenario_autosave(st_save_jup_b217_arrived_to_jup)%
+
+[dl_sos_signal]; "«Сигнал Бедствия»"
+icon = ui_inGame2_Quest
+prior = 16
+storyline = false
+title = {+zat_b42_controller_dead} dl_sos_signal_2_name, {+zat_b42_controller_warning_1_sound} dl_sos_signal_1_name, dl_sos_signal_name
+descr = {+zat_b42_controller_dead} dl_sos_signal_2_descr, {+zat_b42_controller_warning_1_sound} dl_sos_signal_1_descr, dl_sos_signal_descr
+target =  {+zat_b42_controller_dead} val_a3_stalker_garik_id, {+zat_b42_controller_warning_1_sound} lake_controller_squad, zat_b42_sos_signal_zone
+condlist_0 = {+dl_sos_signal_complete} complete
+on_complete = %=scenario_autosave(st_save_jup_a9_got_underpass_docs)%
+
+[lake_out_bandits]; "«Неизвестный сигнал»"
+icon = ui_inGame2_Quest
+prior = 17
+storyline = true
+title = lake_out_bandits_1_name
+descr = lake_out_bandits_1_descr
+target =  lake_lager_stalkers_id
+condlist_0 = {=actor_in_zone(val_a3_sr_noweap)} complete
+on_complete = %+lake_out_bandits_complete =scenario_autosave(st_save_jup_b15_drunk_with_zulu) +jup_b217_stalker_tech_met%
+
+[lake_na_virychky]; "«На выручку»"
+icon = ui_inGame2_PD_Drug_Stalkerov
+prior = 18
+storyline = true
+title = {=actor_has_item(lake_garik_case)} lake_na_virychky_1_name, lake_na_virychky_name
+descr = {=actor_has_item(lake_garik_case)} lake_na_virychky_1_descr, lake_na_virychky_descr
+target = {=actor_has_item(lake_garik_case)} val_a3_stalker_garik_id
+condlist_0 = {+lake_na_virychky_complete} complete
+on_complete = %=scenario_autosave(st_save_jup_a10_gonna_return_debt)%
+
+[lost]; "«Потеранные»"
+icon = ui_inGame2_Techicals
+prior = 19
+storyline = false
+title = {+dl_quest_lost_squad_update} lost_4_name, {+dl_monolith_sim_squad_advanced_death +dl_monolith_sim_squad_advanced_2_death} lost_3_name, {+dl_monolit_stalkers_kill_scene} lost_2_name, {+dl_lost_stalkers_squad_task} lost_1_name, lost_name
+descr = {+dl_quest_lost_squad_update} lost_4_descr, {+dl_monolith_sim_squad_advanced_death +dl_monolith_sim_squad_advanced_2_death} lost_3_descr, {+dl_monolit_stalkers_kill_scene} lost_2_descr, {+dl_lost_stalkers_squad_task} lost_1_descr, lost_descr
+target = {+dl_quest_lost_squad_update} val_a3_st_leader_squad, {+dl_monolith_sim_squad_advanced_death +dl_monolith_sim_squad_advanced_2_death} dl_lost_stalker, {+dl_monolith_sim_squad_advanced_death} dl_monolith_sim_squad_advanced_2, {+dl_monolit_stalkers_kill_scene} dl_monolith_sim_squad_advanced, {+dl_lost_stalkers_squad_task} dl_helpers_stalker_sr, val_a3_st_leader_squad
+condlist_0 = {+dl_task_lost_squad_complete} complete
+on_complete = %=scenario_autosave(st_save_jup_b218_vano_in_squad)%
+
+;;;;;;;;;;;;;;;;ПОБОЧНЫЕ КВЕСТЫ;;;;;;;;;;;;;
+[wiz_scaner_quest]; "«Сканирование»"
+icon = ui_inGame2_Gipoteza
+prior = 20
+storyline = false
+title = {+wiz_scaner_destroy_info} wiz_scaner_3_name, {=actor_has_item(wiz_scanner_device)} wiz_scaner_2_name, wiz_scaner_1_name
+descr = {+wiz_scaner_destroy_info} wiz_scaner_3_descr, {=actor_has_item(wiz_scanner_device)} wiz_scaner_2_descr, wiz_scaner_1_descr
+target = {+wiz_scaner_destroy_info} wiz_ivanich_id, {=actor_has_item(wiz_scanner_device)} wiz_anom_scaner_logic, wiz_otmichka_scaner_id
+condlist_0 = {+wiz_tech_secondary_quest_scaner_done} complete
+reward_money = 3000
+
+[wiz_germo_case_quest]; "«Герметичный Контейнер»"
+icon = ui_inGame2_PD_Diplomat
+prior = 21
+storyline = false
+title = wiz_germo_case_quest_name
+descr = wiz_germo_case_quest_descr
+target = wiz_foma_id
+condlist_0 = {+wiz_germo_case_quest_done} complete
+
+[wiz_mutants_hunting]; "«Зачистка мутантов»"
+icon = ui_inGame2_Hunting
+prior = 22
+storyline = false
+title = {+wiz_mutants_hunting_take_reward} wiz_mutants_hunting_1_name, wiz_mutants_hunting_name
+descr = {+wiz_mutants_hunting_take_reward} wiz_mutants_hunting_1_descr, wiz_mutants_hunting_descr
+target = {+wiz_mutants_hunting_take_reward} wiz_treasure_0001, {+wiz_mut_num_3_squad_die} wiz_mut_num_4_squad_id, {+wiz_mut_num_2_squad_die} wiz_mut_num_3_squad_id, {+wiz_mut_num_1_squad_die} wiz_mut_num_2_squad_id, wiz_mut_num_1_squad_id
+condlist_0 = {+wiz_second_quest_all_mut_die} complete
+
+[wiz_military_secret]; "«Военная тайна»"
+icon = ui_inGame2_Poslednie_razrabotki
+prior = 23
+storyline = false
+title = {=actor_has_item(wiz_millitary_maps)} wiz_military_secret_1_name, wiz_military_secret_name
+descr = {=actor_has_item(wiz_millitary_maps)} wiz_military_secret_1_descr, wiz_military_secret_descr
+target = {=actor_has_item(wiz_millitary_maps)} wiz_jekan_id, wiz_dead_mi24_spot
+condlist_0 = {+wiz_jekan_second_quest_complete} complete
+
+[dl_stalker_quest]; "«Грабители»"
+icon = ui_inGame2_Bandit
+prior = 24
+storyline = false
+title = {+dl_stalker_quest_bandits_kill} dl_stalker_quest_1_name, dl_stalker_quest_name
+descr = {+dl_stalker_quest_bandits_kill} dl_stalker_quest_1_descr, dl_stalker_quest_descr
+target = {+dl_stalker_quest_bandits_kill} val_a3_stalker_barmen_id, dl_devil_stage_id 
+condlist_0 = {+dl_stalker_quest_done} complete
+reward_money = 3000
+
+[dl_zachistka]; "«Зачистка»"
+icon = ui_inGame2_Team
+prior = 25
+storyline = false
+title = {+dl_groz_squad_killed +dl_attak_good} dl_zachistka_4_name, {+dl_attak_good_reward} dl_zachistka_3_name, {+dl_attak_good} dl_zachistka_2_name, {+dl_spawn_squad_attak} dl_zachistka_1_name, dl_zachistka_name
+descr = {+dl_groz_squad_killed +dl_attak_good} dl_zachistka_4_descr, {+dl_attak_good_reward} dl_zachistka_3_descr, {+dl_attak_good} dl_zachistka_2_descr, {+dl_spawn_squad_attak} dl_zachistka_1_descr, dl_zachistka_descr
+target = {+dl_groz_squad_killed +dl_attak_good} val_a3_st_barmen_squad, {+dl_attak_good_reward} val_a3_st_barmen_squad, {+dl_attak_good} dl_groz_id, {+dl_spawn_squad_attak} val_b1_bandits_squad, dl_attakers_squad
+condlist_0 = {+dl_bandits_quest_attak_done} complete
+reward_money = 5600
+on_complete = %=inc_faction_goodwill_to_actor(stalker:1000)%
+
+[dl_new_time_search_art_1]; "«Новое Начало: Поиск артефактов»"
+icon = ui_inGame2_D_gonets_pravosudiya
+prior = 26
+storyline = false
+title = {+dl_actor_has_first_art_vyvert} dl_new_time_search_art_1_1_name, dl_new_time_search_art_1_name
+descr = {+dl_actor_has_first_art_vyvert} dl_new_time_search_art_1_1_descr, dl_new_time_search_art_1_descr
+target = {+dl_actor_has_first_art_vyvert} val_a3_stalker_leader_id, deadlake_anomal_zone_gravi_1_spot
+condlist_0 = {+dl_new_time_search_art_complete} complete
+on_complete = %+st_recrd_first_4 =new_writes_in_diary =scenario_autosave(st_save_jup_b206_got_anomalous_plant)%
+
+[dl_new_time_search_art_2]; "«Новое Начало: Поиск артефактов»"
+icon = ui_inGame2_D_gonets_pravosudiya
+prior = 27
+storyline = false
+title = {+dl_actor_has_first_art_flash} dl_new_time_search_art_2_1_name, dl_new_time_search_art_2_name
+descr = {+dl_actor_has_first_art_flash} dl_new_time_search_art_2_1_descr, dl_new_time_search_art_2_descr
+target = {+dl_actor_has_first_art_flash} val_a3_stalker_leader_id, deadlake_anomal_zone_vertolet_spot
+condlist_0 = {+dl_new_time_search_art_complete} complete
+on_complete = %+st_recrd_first_4 =new_writes_in_diary =scenario_autosave(st_save_jup_b206_got_anomalous_plant)%
+
+[dl_new_time_search_art_3]; "«Новое Начало: Поиск артефактов»"
+icon = ui_inGame2_D_gonets_pravosudiya
+prior = 28
+storyline = false
+title = {+dl_actor_has_first_art_soul} dl_new_time_search_art_3_1_name, dl_new_time_search_art_3_name
+descr = {+dl_actor_has_first_art_soul} dl_new_time_search_art_3_1_descr, dl_new_time_search_art_3_descr
+target = {+dl_actor_has_first_art_soul} val_a3_stalker_leader_id, deadlake_anomal_zone_boloto_spot
+condlist_0 = {+dl_new_time_search_art_complete} complete
+on_complete = %+st_recrd_first_4 =new_writes_in_diary =scenario_autosave(st_save_jup_b206_got_anomalous_plant)%
+
+[dl_sos_message]; "«Сталкер Бурый»"
+icon = ui_inGame2_PD_Drug_Stalkerov
+prior = 29
+storyline = true
+title = dl_sos_message_name
+descr = dl_sos_message_descr
+target = dl_stalker_buriy_ranen_id
+condlist_0 = {+dl_stalker_buriy_ranen_off} complete
+
+[dl_return_treasure]; "«Кража»"
+icon = ui_inGame2_Quest
+prior = 30
+storyline = false
+title = dl_return_treasure_name
+descr = dl_return_treasure_descr
+target = {+dl_actor_has_pda_bandita} dl_bandits_treasure_id, nil
+condlist_0 = {+dl_actor_return_treasure} complete
+
+[storyline_quest_last]; "«Штурм»"
+icon = ui_inGame2_Odin_vistrel
+prior = 31
+storyline = true
+title = {+dl_all_mercs_death} dl_shturm_3_name, {+dl_dolg_and_stalkers_attak_go} dl_shturm_2_name, {+dl_dolg_squad_pribil} dl_shturm_1_name, dl_shturm_name
+descr = {+dl_all_mercs_death} dl_shturm_3_descr, {+dl_dolg_and_stalkers_attak_go} dl_shturm_2_descr, {+dl_dolg_squad_pribil} dl_shturm_1_descr, dl_shturm_descr
+target = {+dl_all_mercs_death} wiz_lt_krasnopolsky_id, {+dl_dolg_and_stalkers_attak_go} dl_merc_sim_squad_advanced_id, {+dl_dolg_squad_pribil} wiz_lt_krasnopolsky_id, nil
+condlist_0 = {+dl_storyline_pre_done} complete

@@ -1,0 +1,800 @@
+; community : stalker, bandit, dolg, freedom, military, monolith, ecolog
+; spec_rank : novice, regular, experienced, veteran , master
+
+;-------------------------------------------------------------------------------------------------------------------- CS ACTORS
+[sad_start_cs_actor]:actor_visual_stalker
+$spawn				= "respawn\sad_start_cs_actor"
+set_visual 			= actor_visual
+story_id 			= sad_start_cs_actor
+custom_data			= scripts\sad\sad_start_cs_actor.ltx
+
+[sad_oasis_actor]:actor_visual_stalker
+$spawn				= "respawn\sad_oasis_actor"
+set_visual 				= actor_visual
+story_id = sad_oasis_actor
+custom_data = scripts\sad\sad_oasis_actor.ltx
+
+[sad_ran_cs_actor]:actor_visual_stalker
+$spawn				= "respawn\sad_ran_cs_actor"
+set_visual 				= actor_visual
+story_id = sad_ran_cs_actor
+custom_data = scripts\sad\sad_ran_cs_actor.ltx
+
+[sad_b1_cs_actor]:actor_visual_stalker
+$spawn				= "respawn\sad_b1_cs_actor"
+set_visual 			= actor_visual
+story_id 			= sad_b1_cs_actor
+custom_data 		= scripts\sad\sad_b1_cs_actor.ltx
+
+[sad_sim_3_cs_actor]:actor_visual_stalker
+$spawn				= "respawn\sad_sim_3_cs_actor"
+set_visual 			= actor_visual
+story_id 			= sad_sim_3_cs_actor
+custom_data 		= scripts\sad\sad_sim_3_cs_actor.ltx
+
+[sad_b3_actor_visual_stalker]:actor_visual_stalker
+$spawn				= "respawn\sad_b3_actor_visual_stalker"
+set_visual 			= actor_visual
+custom_data			= scripts\sad\sad_b3_actor_visual_stalker.ltx
+
+[sad_sher_cs_actor]:actor_visual_stalker
+$spawn				= "respawn\sad_sher_cs_actor"
+set_visual 			= actor_visual
+story_id 			= sad_sher_cs_actor
+custom_data			= scripts\sad\sad_sher_cs_actor.ltx
+
+[sad_b4_cs_actor]:actor_visual_stalker
+$spawn				= "respawn\sad_b4_cs_actor"
+set_visual 			= actor_visual
+story_id 			= sad_b4_cs_actor
+custom_data			= scripts\sad\sad_b4_cs_actor.ltx
+
+[sad_sim_7_cs_actor]:actor_visual_stalker
+$spawn				= "respawn\sad_sim_7_cs_actor"
+set_visual 			= actor_visual
+story_id 			= sad_sim_7_cs_actor
+custom_data			= scripts\sad\sad_sim_7_cs_actor.ltx
+
+[sad_cave_cs_actor]:actor_visual_stalker
+$spawn				= "respawn\sad_cave_cs_actor"
+set_visual 			= actor_visual
+story_id 			= sad_cave_cs_actor
+custom_data			= scripts\sad\sad_cave_cs_actor.ltx
+
+[sad_skadovsk_cs_actor]:stalker
+$spawn				= "respawn\sad_skadovsk_cs_actor"
+character_profile     = sad_cs_temp_char
+spec_rank = master
+community = stalker
+story_id 			= sad_skadovsk_cs_actor
+custom_data			= scripts\sad\sad_skadovsk_cs_actor.ltx
+
+;-------------------------------------------------------------------------------------------------------------------- START
+[sad_stalker_guide]:stalker
+$spawn                     = "respawn\sad_stalker_guide"
+character_profile     = sad_stalker_guide
+spec_rank = master
+community = stalker
+story_id = sad_stalker_guide
+
+[sad_turist_master]:stalker
+$spawn                	= "respawn\sad_turist_master"
+character_profile     	= sad_turist_master
+spec_rank 				= master
+community 				= stalker
+;immunities_sect			= sad_stalker_immunities_strong
+
+[sad_stalker_immunities_strong]
+burn_immunity 				= 100.0				;коэффициенты иммунитета
+strike_immunity 			= 100.0
+shock_immunity 				= 100.0
+wound_immunity				= 100.0
+radiation_immunity 			= 100.0
+telepatic_immunity 			= 100.0
+chemical_burn_immunity 		= 100.0
+explosion_immunity 			= 100.0
+fire_wound_immunity  		= 100.0
+wound_2_immunity  			= 100.0
+
+;-------------------------------------------------------------------------------------------------------------------- B1
+
+[sad_b1_stalker_mutny]:stalker
+$spawn                     = "respawn\sad_b1_stalker_mutny"
+character_profile     = sad_b1_stalker_mutny
+spec_rank = master
+community = stalker
+story_id = sad_b1_stalker_mutny
+
+[sad_b1_stalker_barman]:stalker_silent
+$spawn                     = "respawn\sad_b1_stalker_barman"
+character_profile     = sad_b1_stalker_barman
+spec_rank = experienced
+community = stalker
+story_id = sad_b1_stalker_barman
+
+[sad_b1_stalker_tech]:stalker_silent
+$spawn                     = "respawn\sad_b1_stalker_tech"
+character_profile     = sad_b1_stalker_tech
+spec_rank = experienced
+community = stalker
+story_id = sad_b1_stalker_tech 
+
+[sad_b1_mutny_member_1]:stalker
+$spawn                     = "respawn\sad_b1_mutny_member_1"
+character_profile     = sad_b1_mutny_member_1
+spec_rank = experienced
+community = stalker
+story_id = sad_b1_mutny_member_1
+
+[sad_b1_mutny_member_2]:stalker
+$spawn                     = "respawn\sad_b1_mutny_member_2"
+character_profile     = sad_b1_mutny_member_2
+spec_rank = experienced
+community = stalker
+story_id = sad_b1_mutny_member_2
+
+;Mutny Renegade
+[sad_b1_stalker_mutny_renegade]:stalker
+$spawn                     = "respawn\sad_b1_stalker_mutny_renegade"
+character_profile     = sad_b1_stalker_mutny_renegade
+spec_rank = master
+community = renegade
+story_id = sad_b1_stalker_mutny_renegade
+
+[sad_b1_mutny_member_1_renegade]:stalker
+$spawn                     = "respawn\sad_b1_mutny_member_1_renegade"
+character_profile     = sad_b1_mutny_member_1_renegade
+spec_rank = experienced
+community = renegade
+story_id = sad_b1_mutny_member_1
+
+[sad_b1_mutny_member_2_renegade]:stalker
+$spawn                     = "respawn\sad_b1_mutny_member_2_renegade"
+character_profile     = sad_b1_mutny_member_2_renegade
+spec_rank = experienced
+community = renegade
+story_id = sad_b1_mutny_member_2_renegade
+
+[sad_b1_mutny_member_3]:stalker
+$spawn                     = "respawn\sad_b1_mutny_member_3"
+character_profile     = sad_b1_mutny_member_3
+spec_rank = regular
+community = renegade
+
+[sad_b1_mutny_member_4]:stalker
+$spawn                     = "respawn\sad_b1_mutny_member_4"
+character_profile     = sad_b1_mutny_member_4
+spec_rank = regular
+community = renegade
+
+[sad_b1_mutny_member_5]:stalker
+$spawn                     = "respawn\sad_b1_mutny_member_5"
+character_profile     = sad_b1_mutny_member_5
+spec_rank = regular
+community = renegade
+
+[sad_b1_stalker_barman_renegade]:stalker_silent
+$spawn                     = "respawn\sad_b1_stalker_barman_renegade"
+character_profile     = sad_b1_stalker_barman_renegade
+spec_rank = experienced
+community = renegade
+story_id = sad_b1_stalker_barman_renegade
+
+[sad_b1_stalker_tech_renegade]:stalker_silent
+$spawn                     = "respawn\sad_b1_stalker_tech_renegade"
+character_profile     = sad_b1_stalker_tech_renegade
+spec_rank = experienced
+community = renegade
+story_id = sad_b1_stalker_tech_renegade
+
+[sad_b1_stalker_mudak]:stalker
+$spawn                     = "respawn\sad_b1_stalker_mudak"
+character_profile     = sad_b1_stalker_mudak
+spec_rank = experienced
+community = stalker
+story_id = sad_b1_stalker_mudak 
+
+[sad_b1_new_trader]:stalker_silent
+$spawn                     = "respawn\sad_b1_new_trader"
+character_profile     = sad_b1_new_trader
+spec_rank = experienced
+community = stalker
+story_id = sad_b1_new_trader
+
+[sad_b1_new_tech]:stalker_silent
+$spawn                     = "respawn\sad_b1_new_tech"
+character_profile     = sad_b1_new_tech
+spec_rank = experienced
+community = stalker
+story_id = sad_b1_new_tech 
+
+
+;-------------------------------------------------------------------------------------------------------------------- SIM 2
+[sad_sim_2_stalker_vasya]:stalker
+$spawn                     = "respawn\sad_sim_2_stalker_vasya"
+character_profile     = sad_sim_2_stalker_vasya
+spec_rank = experienced
+community = stalker
+story_id = sad_sim_2_stalker_vasya 
+
+[sad_sim_2_bandos]:stalker
+$spawn                     = "respawn\sad_sim_2_bandos"
+character_profile     = sad_sim_2_bandos
+spec_rank = experienced
+community = bandit
+story_id = sad_sim_2_bandos 
+
+;-------------------------------------------------------------------------------------------------------------------- BAN
+
+[sad_ban_bandit_leader]:stalker
+$spawn                     = "respawn\sad_ban_bandit_leader"
+character_profile     = sad_ban_bandit_leader
+spec_rank = master
+community = bandit
+story_id = sad_ban_bandit_leader
+
+[sad_ban_bandit_gvard]:stalker
+$spawn                     = "respawn\sad_ban_bandit_gvard"
+character_profile     = sad_ban_bandit_gvard
+spec_rank = experienced
+community = bandit
+story_id = sad_ban_bandit_gvard
+
+;-------------------------------------------------------------------------------------------------------------------- B2
+
+[sad_b2_stalker_maxim]:stalker
+$spawn                     = "respawn\sad_b2_stalker_maxim"
+character_profile     = sad_b2_stalker_maxim
+immunities_sect	= stalker_immunities_living_legend
+spec_rank = master
+community = stalker
+story_id = sad_b2_stalker_maxim
+custom_data = scripts\sad\sad_dont_spawn_loot.ltx
+
+[sad_b2_stalker_barman]:stalker
+$spawn                     = "respawn\sad_b2_stalker_barman"
+character_profile     = sad_b2_stalker_barman
+spec_rank = regular
+community = stalker
+story_id = sad_b2_stalker_barman
+
+[sad_b2_stalker_tech]:stalker
+$spawn                     = "respawn\sad_b2_stalker_tech"
+character_profile     = sad_b2_stalker_tech
+spec_rank = regular
+community = stalker
+story_id = sad_b2_stalker_tech
+
+[sad_b2_bunker_guard]:stalker
+$spawn                     = "respawn\sad_b2_bunker_guard"
+character_profile     = sad_b2_bunker_guard
+spec_rank = regular
+community = stalker
+story_id = sad_b2_bunker_guard
+
+[sad_stalker_volodya]:stalker
+$spawn                     = "respawn\sad_stalker_volodya"
+character_profile     = sad_stalker_volodya
+spec_rank = master
+community = stalker
+story_id = sad_stalker_volodya
+
+[sad_b2_stalker_artur]:stalker
+$spawn                     = "respawn\sad_b2_stalker_artur"
+character_profile     = sad_b2_stalker_artur
+spec_rank = regular
+community = stalker
+story_id = sad_b2_stalker_artur
+
+[sad_b2_stalker_maxim_member_1]:stalker
+$spawn                     = "respawn\sad_b2_stalker_maxim_member_1"
+character_profile     = sad_b2_stalker_maxim_member_1
+immunities_sect	= stalker_immunities_living_legend
+spec_rank = master
+community = stalker
+story_id = sad_b2_stalker_maxim_member_1
+
+[sad_b2_stalker_maxim_member_2]:stalker
+$spawn                     = "respawn\sad_b2_stalker_maxim_member_2"
+character_profile     = sad_b2_stalker_maxim_member_2
+immunities_sect	= stalker_immunities_living_legend
+spec_rank = master
+community = stalker
+story_id = sad_b2_stalker_maxim_member_2
+
+[sad_b2_stalker_maxim_member_3]:stalker
+$spawn                     = "respawn\sad_b2_stalker_maxim_member_3"
+character_profile     = sad_b2_stalker_maxim_member_3
+immunities_sect	= stalker_immunities_living_legend
+spec_rank = master
+community = stalker
+story_id = sad_b2_stalker_maxim_member_3
+
+[sad_b2_stalker_maxim_member_4]:stalker
+$spawn                     = "respawn\sad_b2_stalker_maxim_member_4"
+character_profile     = sad_b2_stalker_maxim_member_4
+immunities_sect	= stalker_immunities_living_legend
+spec_rank = master
+community = stalker
+story_id = sad_b2_stalker_maxim_member_4
+
+[sad_b2_stalker_maxim_member_5]:stalker
+$spawn                     = "respawn\sad_b2_stalker_maxim_member_5"
+character_profile     = sad_b2_stalker_maxim_member_5
+immunities_sect	= stalker_immunities_living_legend
+spec_rank = master
+community = stalker
+story_id = sad_b2_stalker_maxim_member_5
+
+;-------------------------------------------------------------------------------------------------------------------- SIM 7
+
+[sad_sim_7_stalker_gena]:stalker
+$spawn                     = "respawn\sad_sim_7_stalker_gena"
+character_profile     = sad_sim_7_stalker_gena
+spec_rank = experienced
+community = stalker
+story_id = sad_sim_7_stalker_gena
+
+;-------------------------------------------------------------------------------------------------------------------- RAN
+
+[sad_ran_cowboy]:stalker
+$spawn                     = "respawn\sad_ran_cowboy"
+character_profile     = sad_ran_cowboy
+spec_rank = master
+community = freedom
+story_id = sad_ran_cowboy
+
+[sad_ran_ucheny]:stalker
+$spawn                     = "respawn\sad_ran_ucheny"
+character_profile     = sad_ran_ucheny
+spec_rank = master
+community = freedom
+story_id = sad_ran_ucheny
+
+[sad_ran_trader]:stalker
+$spawn                     = "respawn\sad_ran_trader"
+character_profile     = sad_ran_trader
+spec_rank = regular
+community = stalker
+story_id = sad_ran_trader
+
+[sad_sim_14_oleg]:stalker
+$spawn                     = "respawn\sad_sim_14_oleg"
+character_profile     = sad_sim_14_oleg
+spec_rank = master
+community = freedom
+story_id = sad_sim_14_oleg
+
+;-------------------------------------------------------------------------------------------------------------------- B3
+
+[sad_b3_trader]:stalker
+$spawn                     = "respawn\sad_b3_trader"
+character_profile     = sad_b3_trader
+spec_rank = experienced
+community = stalker
+story_id = sad_b3_trader
+
+[sad_b3_technic]:stalker
+$spawn                     = "respawn\sad_b3_technic"
+character_profile     = sad_b3_technic
+spec_rank = experienced
+community = stalker
+story_id = sad_b3_technic
+
+[sad_b3_ucheny_raz]:stalker
+$spawn                     = "respawn\sad_b3_ucheny_raz"
+character_profile     = sad_b3_ucheny_raz
+spec_rank = veteran
+community = stalker
+story_id = sad_b3_ucheny_raz
+
+[sad_b3_ucheny_dva]:stalker
+$spawn                     = "respawn\sad_b3_ucheny_dva"
+character_profile     = sad_b3_ucheny_dva
+spec_rank = master
+community = stalker
+story_id = sad_b3_ucheny_dva
+
+[sad_b3_helper_ucheny_1]:stalker
+$spawn                     = "respawn\sad_b3_helper_ucheny_1"
+character_profile     = sad_b3_helper_ucheny_1
+spec_rank = veteran
+community = stalker
+
+[sad_b3_helper_ucheny_2]:stalker
+$spawn                     = "respawn\sad_b3_helper_ucheny_2"
+character_profile     = sad_b3_helper_ucheny_2
+spec_rank = veteran
+community = stalker
+
+;-------------------------------------------------------------------------------------------------------------------- SHER
+[sad_stalker_radik]:stalker
+$spawn                     = "respawn\sad_stalker_radik"
+character_profile     = sad_stalker_radik
+spec_rank = master
+immunities_sect	= stalker_immunities_living_legend
+community = stalker
+story_id = sad_stalker_radik
+
+[sad_radik_member_1]:stalker
+$spawn                     = "respawn\sad_radik_member_1"
+character_profile     = sad_radik_member_1
+spec_rank = master
+immunities_sect	= stalker_immunities_living_legend
+community = stalker
+story_id = sad_radik_member_1
+
+[sad_radik_member_2]:stalker
+$spawn                     = "respawn\sad_radik_member_2"
+character_profile     = sad_radik_member_2
+spec_rank = master
+immunities_sect	= stalker_immunities_living_legend
+community = stalker
+story_id = sad_radik_member_2
+
+[sad_radik_member_3]:stalker
+$spawn                     = "respawn\sad_radik_member_3"
+character_profile     = sad_radik_member_3
+spec_rank = master
+immunities_sect	= stalker_immunities_living_legend
+community = stalker
+story_id = sad_radik_member_3
+
+[sad_sher_outfit_gonets]:stalker
+$spawn                     = "respawn\sad_sher_outfit_gonets"
+character_profile     = sad_sher_outfit_gonets
+spec_rank = master
+immunities_sect	= stalker_immunities_living_legend
+community = stalker
+story_id = sad_sher_outfit_gonets
+
+[sad_sher_killer_pdast]:stalker
+$spawn                     = "respawn\sad_sher_killer_pdast"
+character_profile     = sad_sher_killer_pdast
+spec_rank = experienced
+community = killer
+story_id = sad_sher_killer_pdast
+
+;-------------------------------------------------------------------------------------------------------------------- B4
+
+[sad_b4_killer_podgvard]:stalker
+$spawn                     = "respawn\sad_b4_killer_podgvard"
+character_profile     = sad_b4_killer_podgvard
+spec_rank = master
+community = killer
+story_id = sad_b4_killer_podgvard
+
+[sad_b4_killer_glavar]:stalker
+$spawn                     = "respawn\sad_b4_killer_glavar"
+character_profile     = sad_b4_killer_glavar
+spec_rank = master
+community = killer
+story_id = sad_b4_killer_glavar
+
+[sad_b4_stalker_fedor]:stalker
+$spawn                     = "respawn\sad_b4_stalker_fedor"
+character_profile     = sad_b4_stalker_fedor
+spec_rank = regular
+community = stalker
+story_id = sad_b4_stalker_fedor
+
+;--------------------------------------------------------------------------------------------------------------------
+
+[sad_stalker_grisha]:stalker
+$spawn                     = "respawn\sad_stalker_grisha"
+character_profile     = sad_stalker_grisha
+immunities_sect	= stalker_immunities_living_legend
+spec_rank = master
+community = stalker
+story_id = sad_stalker_grisha
+
+[sad_grisha_member_1]:stalker
+$spawn                     = "respawn\sad_grisha_member_1"
+character_profile     = sad_grisha_member_1
+immunities_sect	= stalker_immunities_living_legend
+spec_rank = master
+community = stalker
+story_id = sad_grisha_member_1
+
+[sad_grisha_member_2]:stalker
+$spawn                     = "respawn\sad_grisha_member_2"
+character_profile     = sad_grisha_member_2
+immunities_sect	= stalker_immunities_living_legend
+spec_rank = veteran
+community = stalker
+story_id = sad_grisha_member_2
+
+[sad_grisha_member_3]:stalker
+$spawn                     = "respawn\sad_grisha_member_3"
+character_profile     = sad_grisha_member_3
+immunities_sect	= stalker_immunities_living_legend
+spec_rank = veteran
+community = stalker
+story_id = sad_grisha_member_3
+
+[sad_grisha_member_4]:stalker
+$spawn                     = "respawn\sad_grisha_member_4"
+character_profile     = sad_grisha_member_4
+immunities_sect	= stalker_immunities_living_legend
+spec_rank = veteran
+community = stalker
+story_id = sad_grisha_member_4
+
+;--------------------------------------------------------------------------------------------------------------------
+[sad_sim_9_noy]:stalker
+$spawn                     = "respawn\sad_sim_9_noy"
+character_profile     = sad_sim_9_noy
+spec_rank = veteran
+community = stalker
+story_id = sad_sim_9_noy
+
+;--------------------------------------------------------------------------------------------------------------------
+[sad_ucheny_1]:stalker
+$spawn                     = "respawn\sad_ucheny_1"
+character_profile     = sad_ucheny_1
+spec_rank = master
+community = stalker
+story_id = sad_ucheny_1
+
+[sad_ucheny_2]:stalker
+$spawn                     = "respawn\sad_ucheny_2"
+character_profile     = sad_ucheny_2
+spec_rank = experienced
+community = stalker
+story_id = sad_ucheny_2
+
+[sad_ucheny_3]:stalker
+$spawn                     = "respawn\sad_ucheny_3"
+character_profile     = sad_ucheny_3
+spec_rank = veteran
+community = stalker
+story_id = sad_ucheny_3
+
+;--------------------------------------------------------------------------------------------------------------------
+[sad_atr_trader]:stalker
+$spawn                     = "respawn\sad_atr_trader"
+character_profile     = sad_atr_trader
+story_id = sad_atr_trader
+
+[sad_atr_guard]:stalker
+$spawn                     = "respawn\sad_atr_guard"
+character_profile     = sad_atr_guard
+story_id = sad_atr_guard
+
+;-------------------------------------------------------------------------------------------------------------------- MOBS
+[sad_oasis_controller]:m_controller_normal
+$spawn                     = "respawn\sad_oasis_controller"
+story_id = sad_oasis_controller
+
+[snork_weak_sad_ucheny]:snork_weak
+$spawn			= "monsters\snorks\snork_weak_sad_ucheny"
+panic_threshold		= 0.01
+
+[snork_radik_one]:snork_normal
+$spawn			= "monsters\snorks\snork_radik_one"
+panic_threshold		= 0.01
+
+[snork_radik_two]:snork_weak
+$spawn			= "monsters\snorks\snork_radik_one"
+panic_threshold		= 0.01
+
+[tushkano_radik]:dog_normal
+$spawn			= "monsters\tushkano_radik"
+panic_threshold		= 0.0
+
+[snork_maxim]:borya_normal ;snork_normal
+$spawn			= "monsters\snorks\snork_maxim"
+panic_threshold		= 0.0
+
+[snork_cave]:snork_normal
+$spawn			= "monsters\snorks\snork_cave"
+monster_type	= outdoor ; indoor
+community		= snork
+panic_threshold		= 0.0
+
+[zasada_sucker]:bloodsucker_normal
+$spawn			= "monsters\zasada_sucker"
+panic_threshold		= 0.0
+
+[snork_bomz]:snork_weak
+$spawn			= "monsters\snorks\snork_bomz"
+panic_threshold		= 0.0
+immunities_sect		= snork_immunities_bomz
+community		= snork
+
+[snork_immunities_bomz]
+burn_immunity			= 0.4								;коэффициенты иммунитета
+strike_immunity			= 0.4
+shock_immunity			= 0.4
+wound_immunity			= 0.8
+radiation_immunity		= 0.0
+telepatic_immunity		= 0.0
+chemical_burn_immunity	= 0.4
+explosion_immunity		= 0.4
+fire_wound_immunity		= 1.5
+
+;-------------------------------------------------------------------------------------------------------------------- CORPSES
+
+[sad_trus_corpse]:stalker
+$spawn                     = "respawn\sad_trus_corpse"
+character_profile     = sad_trus_corpse
+spec_rank = novice
+community = stalker
+story_id = sad_trus_corpse
+custom_data = scripts\sad\sad_dont_spawn_loot.ltx
+
+[sad_military_corpsik]:stalker
+$spawn                     = "respawn\sad_military_corpsik"
+character_profile     = sad_military_corpsik
+spec_rank = novice
+community = military
+story_id = sad_military_corpsik
+custom_data = scripts\sad\sad_dont_spawn_loot.ltx
+
+[sad_sim_3_novice_corpse]:stalker
+$spawn                     = "respawn\sad_sim_3_novice_corpse"
+character_profile     = sad_sim_3_novice_corpse
+spec_rank = novice
+community = stalker
+custom_data = scripts\sad\sad_dont_spawn_loot.ltx
+
+[sad_sim_6_vadik_corpse]:stalker
+$spawn                     = "respawn\sad_sim_6_vadik_corpse"
+character_profile     = sad_sim_6_vadik_corpse
+spec_rank = novice
+community = stalker
+story_id = sad_sim_6_vadik_corpse
+
+[sad_sim_6_romka_corpse]:stalker
+$spawn                     = "respawn\sad_sim_6_romka_corpse"
+character_profile     = sad_sim_6_romka_corpse
+spec_rank = novice
+community = stalker
+story_id = sad_sim_6_romka_corpse
+
+[sad_sim_5_corpse]:stalker
+$spawn                     = "respawn\sad_sim_5_corpse"
+character_profile     = sad_sim_5_corpse
+spec_rank = novice
+community = stalker
+story_id = sad_sim_5_corpse
+
+[sad_vofka_corpse]:stalker
+$spawn                     = "respawn\sad_vofka_corpse"
+character_profile     = sad_vofka_corpse
+spec_rank = novice
+community = stalker
+story_id = sad_vofka_corpse
+
+[sad_psi_cave_corpse]:stalker
+$spawn                     = "respawn\sad_psi_cave_corpse"
+character_profile     = sad_psi_cave_corpse
+spec_rank = novice
+community = stalker
+story_id = sad_psi_cave_corpse
+
+[sad_sim_7_cave_corpse]:stalker
+$spawn                     = "respawn\sad_sim_7_cave_corpse"
+character_profile     = sad_sim_7_cave_corpse
+spec_rank = novice
+community = stalker
+story_id = sad_sim_7_cave_corpse
+
+[sad_cave_corpse_1]:stalker
+$spawn                     = "respawn\sad_cave_corpse_1"
+character_profile     = sad_cave_corpse_1
+spec_rank = novice
+community = stalker
+story_id = sad_cave_corpse_1
+
+[sad_cave_corpse_2]:stalker
+$spawn                     = "respawn\sad_cave_corpse_2"
+character_profile     = sad_cave_corpse_2
+spec_rank = novice
+community = stalker
+;story_id = sad_cave_corpse_2
+
+;-------------------------------------------------------------------------------------------------------------------- test
+[sad_test_stalker_0]:actor_visual_stalker
+$spawn				= "respawn\sad_start_cs_actor"
+set_visual 			= actor_visual
+story_id 			= sad_start_cs_actor
+custom_data			= scripts\sad\sad_test_stalker_logic.ltx
+
+[sad_test_stalker_1]:stalker
+$spawn				= "respawn\sad_test_stalker_1"
+character_profile	= sad_b1_stalker_mutny
+spec_rank 			= novice
+community 			= stalker
+custom_data			= scripts\sad\sad_test_stalker_logic.ltx
+
+[sad_test_stalker_2]:stalker
+$spawn				= "respawn\sad_test_stalker_2"
+character_profile	= sad_b1_stalker_barman
+spec_rank 			= novice
+community 			= stalker
+custom_data			= scripts\sad\sad_test_stalker_logic.ltx
+
+[sad_test_stalker_3]:stalker
+$spawn				= "respawn\sad_test_stalker_3"
+character_profile	= sad_b1_stalker_tech
+spec_rank 			= novice
+community 			= stalker
+custom_data			= scripts\sad\sad_test_stalker_logic.ltx
+
+[sad_test_stalker_4]:stalker
+$spawn				= "respawn\sad_test_stalker_4"
+character_profile	= sad_b1_new_tech
+spec_rank 			= novice
+community 			= stalker
+custom_data			= scripts\sad\sad_test_stalker_logic.ltx
+
+[sad_test_stalker_5]:stalker
+$spawn				= "respawn\sad_test_stalker_5"
+character_profile	= sad_b2_stalker_maxim
+spec_rank 			= novice
+community 			= stalker
+custom_data			= scripts\sad\sad_test_stalker_logic.ltx
+
+[sad_test_stalker_6]:stalker
+$spawn				= "respawn\sad_test_stalker_6"
+character_profile	= sad_b2_stalker_barman
+spec_rank 			= novice
+community 			= stalker
+custom_data			= scripts\sad\sad_test_stalker_logic.ltx
+
+[sad_test_stalker_7]:stalker
+$spawn				= "respawn\sad_test_stalker_7"
+character_profile	= sad_b2_stalker_tech
+spec_rank 			= novice
+community 			= stalker
+custom_data			= scripts\sad\sad_test_stalker_logic.ltx
+
+[sad_test_stalker_8]:stalker
+$spawn				= "respawn\sad_test_stalker_8"
+character_profile	= sad_sim_7_stalker_gena
+spec_rank 			= novice
+community 			= stalker
+custom_data			= scripts\sad\sad_test_stalker_logic.ltx
+
+[sad_test_stalker_9]:stalker
+$spawn				= "respawn\sad_test_stalker_9"
+character_profile	= sad_ran_cowboy
+spec_rank 			= novice
+community 			= stalker
+custom_data			= scripts\sad\sad_test_stalker_logic.ltx
+
+[sad_test_stalker_10]:stalker
+$spawn				= "respawn\sad_test_stalker_10"
+character_profile	= sad_ran_ucheny
+spec_rank 			= novice
+community 			= stalker
+custom_data			= scripts\sad\sad_test_stalker_logic.ltx
+
+[sad_test_stalker_11]:stalker
+$spawn				= "respawn\sad_test_stalker_11"
+character_profile	= sad_ran_trader
+spec_rank 			= novice
+community 			= stalker
+custom_data			= scripts\sad\sad_test_stalker_logic.ltx
+
+[sad_test_stalker_12]:stalker
+$spawn				= "respawn\sad_test_stalker_11"
+character_profile	= sad_b3_trader
+spec_rank 			= novice
+community 			= stalker
+custom_data			= scripts\sad\sad_test_stalker_logic.ltx
+
+[sad_test_stalker_13]:stalker
+$spawn				= "respawn\sad_test_stalker_13"
+character_profile	= sad_sim_9_noy
+spec_rank 			= novice
+community 			= stalker
+custom_data			= scripts\sad\sad_test_stalker_logic.ltx
+
+[sad_test_stalker_14]:stalker
+$spawn				= "respawn\sad_test_stalker_14"
+character_profile	= sad_ucheny_1
+spec_rank 			= novice
+community 			= stalker
+custom_data			= scripts\sad\sad_test_stalker_logic.ltx

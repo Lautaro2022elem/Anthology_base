@@ -1,0 +1,44 @@
+[logic]
+active = move
+on_death = death
+post_combat_time = 0, 0
+on_hit = hit
+
+[hit]
+on_info = {=actor_enemy -city_hit_army_bay_gg_stop -city_hit_army_bay_gg} %+city_hit_army_bay_gg%
+
+[death]
+on_info = %+city_npc_army_final_2_death%
+
+[move]
+move_dest_number = 137200
+move_look_vertex = 136774
+move_state_when_center = hide
+move_state_when_move = assault
+gather_items_enabled = false
+corpse_detection_enabled = false
+combat_ignore_keep_when_attacked = true 
+combat_ignore_cond = true
+move_combat_disable    = true 
+invulnerable = true
+on_game_timer = 25 | move@2
+
+[move@2]
+move_dest_number = 137200
+move_look_vertex = 136774
+move_state_when_center = hide
+move_state_when_move = assault
+gather_items_enabled = false
+corpse_detection_enabled = false
+invulnerable = true
+on_info2 = {-city_npc_army_final_2_death +city_assault_final_dialog_sp -city_npc_army_final_tp2} move@3 %+city_npc_army_final_tp2 =teleport_npc(city_npc_army_final_tp:city_npc_army_final_tp0)%
+on_info3 = {+city_npc_army_enemy} %=actor_enemy%
+
+[move@3]
+move_dest_number = 137200
+move_look_vertex = 136774
+move_state_when_center = hide
+move_state_when_move = assault
+gather_items_enabled = false
+corpse_detection_enabled = false
+on_info = {+city_npc_army_enemy} %=actor_enemy%

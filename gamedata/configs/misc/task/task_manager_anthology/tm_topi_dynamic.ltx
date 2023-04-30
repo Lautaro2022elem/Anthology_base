@@ -1,0 +1,83 @@
+;------------------------------------------------------------------------------------------
+;--(Loner Medic)
+
+[topi_stalker_base_medic_task_1]
+icon = ui_inGame2_D_Sisshik
+prior = 50
+repeat_timeout = 43200
+storyline = false
+precondition = {-topi_stalker_base_medic_drugkit_done} true, false
+
+title = topi_stalker_base_medic_task_1_name
+title_functor = general_fetch_task
+descr = topi_stalker_base_medic_task_1_text
+descr_functor = general_fetch_task
+job_descr = topi_stalker_base_medic_task_1_about
+fetch_descr = topi_stalker_base_medic_task_1_fetch_about
+task_complete_descr = topi_stalker_base_medic_task_1_fetch_finish
+
+stage_complete = 1
+status_functor = actor_has_fetch_item
+target_functor = general_fetch_task
+
+fetch_func = %=setup_generic_fetch_task(topi_stalker_base_medic_task_1_fetch:1:itm_drugkit)%
+on_complete = %=reward_stash(true) +topi_stalker_base_medic_drugkit_done =fetch_reward_and_remove(topi_stalker_base_medic_task_1_fetch:1.5) =complete_task_inc_goodwill(50:stalker) =inc_task_stage(topi_stalker_base_medic_task_1) =pstor_reset(topi_stalker_base_medic_task_1_fetch) =drx_sl_unregister_task_giver(topi_stalker_base_medic_task_1) =drx_sl_reset_stored_task(topi_stalker_base_medic_task_1)%
+on_fail = %=pstor_reset(topi_stalker_base_medic_task_1_fetch) =drx_sl_unregister_task_giver(topi_stalker_base_medic_task_1) =drx_sl_reset_stored_task(topi_stalker_base_medic_task_1)%
+condlist_0 = {!task_giver_alive(topi_stalker_base_medic_task_1)} fail
+
+;------------------------------------------------
+; Find Level 1 Toolkit Task-
+
+[topi_stalker_base_mechanic_task_1]
+icon = ui_inGame2_Instrumenti
+prior = 10
+storyline = false
+title = topi_stalker_base_mechanic_task_1_name
+title_functor = general_fetch_task
+descr = topi_stalker_base_mechanic_task_1_text
+descr_functor = general_fetch_task
+job_descr = topi_stalker_base_mechanic_task_1_about
+fetch_descr = topi_stalker_base_mechanic_task_1_fetch_about
+fetch_func = %=setup_generic_fetch_task(topi_stalker_base_mechanic_task_1_fetch:1:itm_basickit)%
+stage_complete = 1
+status_functor = actor_has_fetch_item
+target_functor = general_fetch_task
+task_complete_descr = topi_stalker_base_mechanic_task_1_fetch_finish
+on_complete = %+topi_stalker_base_mechanic_upgrade_tier_1 =complete_task_inc_goodwill(50:stalker) =fetch_reward_and_remove(topi_stalker_base_mechanic_task_1_fetch) =inc_task_stage(topi_stalker_base_mechanic_task_1)%
+precondition = {-topi_stalker_base_mechanic_upgrade_tier_1} true, false
+
+[topi_stalker_base_mechanic_task_2]
+icon = ui_inGame2_Instrumenti
+prior = 10
+storyline = false
+title = topi_stalker_base_mechanic_task_2_name
+title_functor = general_fetch_task
+descr = topi_stalker_base_mechanic_task_2_text
+descr_functor = general_fetch_task
+job_descr = topi_stalker_base_mechanic_task_2_about
+fetch_descr = topi_stalker_base_mechanic_task_2_fetch_about
+fetch_func = %=setup_generic_fetch_task(topi_stalker_base_mechanic_task_2_fetch:1:itm_advancedkit)%
+stage_complete = 1
+status_functor = actor_has_fetch_item
+target_functor = general_fetch_task
+task_complete_descr = topi_stalker_base_mechanic_task_2_fetch_finish
+on_complete = %+topi_stalker_base_mechanic_upgrade_tier_2 =complete_task_inc_goodwill(50:stalker) =fetch_reward_and_remove(topi_stalker_base_mechanic_task_2_fetch) =inc_task_stage(topi_stalker_base_mechanic_task_2)%
+precondition = {+topi_stalker_base_mechanic_upgrade_tier_1 -topi_stalker_base_mechanic_upgrade_tier_2} true, false
+
+[topi_stalker_base_mechanic_task_3]
+icon = ui_inGame2_Instrumenti
+prior = 10
+storyline = false
+title = topi_stalker_base_mechanic_task_3_name
+title_functor = general_fetch_task
+descr = topi_stalker_base_mechanic_task_3_text
+descr_functor = general_fetch_task
+job_descr = topi_stalker_base_mechanic_task_3_about
+fetch_descr = topi_stalker_base_mechanic_task_3_fetch_about
+fetch_func = %=setup_generic_fetch_task(topi_stalker_base_mechanic_task_3_fetch:1:itm_expertkit)%
+stage_complete = 1
+status_functor = actor_has_fetch_item
+target_functor = general_fetch_task
+task_complete_descr = topi_stalker_base_mechanic_task_3_fetch_finish
+on_complete = %+topi_stalker_base_mechanic_upgrade_tier_3 =complete_task_inc_goodwill(50:stalker) =fetch_reward_and_remove(topi_stalker_base_mechanic_task_3_fetch) =inc_task_stage(topi_stalker_base_mechanic_task_3)%
+precondition = {+topi_stalker_base_mechanic_upgrade_tier_2 -topi_stalker_base_mechanic_upgrade_tier_3} true, false

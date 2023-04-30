@@ -1,0 +1,18 @@
+	<style_path x="15" y="550" width="600" height="50" ttl="3" light_anim="pri_a28_phrase_2">
+        <text font="letterica18"  r="240" g="217" b="182" a="255" align="c">path_one_name</text>
+        <text font="letterica18"  r="240" g="217" b="182" a="255" align="c">path_two_name</text>
+        <text font="letterica18"  r="240" g="217" b="182" a="255" align="c">path_third_name</text>
+        <text font="letterica18"  r="240" g="217" b="182" a="255" align="c">path_four_name</text>
+    </style_path>
+	<style_path_name x="15" y="570" width="600" height="50" ttl="3" light_anim="pri_a28_phrase_2">
+        <text font="letterica18"  r="240" g="217" b="182" a="255" align="c">path_one_location</text>
+        <text font="letterica18"  r="240" g="217" b="182" a="255" align="c">path_two_location</text>
+        <text font="letterica18"  r="240" g="217" b="182" a="255" align="c">path_third_location</text>
+        <text font="letterica18"  r="240" g="217" b="182" a="255" align="c">path_four_location</text>
+    </style_path_name>
+	<style_path_descr x="20" y="590" width="600" height="50" ttl="3" light_anim="pri_a28_phrase_2">
+        <text font="letterica18"  r="240" g="217" b="182" a="255" align="c">path_one_descr</text>
+        <text font="letterica18"  r="240" g="217" b="182" a="255" align="c">path_two_descr</text>
+        <text font="letterica18"  r="240" g="217" b="182" a="255" align="c">path_third_descr</text>
+        <text font="letterica18"  r="240" g="217" b="182" a="255" align="c">path_four_descr</text>
+    </style_path_descr>

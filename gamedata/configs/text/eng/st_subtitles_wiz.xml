@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="windows-1251" ?>
+<string_table>
+	<string id="intro_phase_1">
+		<text>It's been a week since the group, led by Bison, set out to find some kind of miraculous artifact...</text>
+	</string>	
+	<string id="intro_phase_2">
+		<text>I don't understand! Why do they need it? They know it won't end well...</text>
+	</string>	
+	<string id="intro_phase_3">
+		<text>Well, I'm almost there. Just a little bit more and I'll be at the location...</text>
+	</string>	
+	<string id="st_01_end">
+		<text>My search is over. I found the group, but Bison... damn he's dead.</text>
+	</string>	
+	<string id="st_02_end">
+		<text>I don't know why the mercenaries wanted to eliminate them, but I won't let this go.</text>
+	</string>	
+	<string id="st_03_end">
+		<text>I'll find whoever hired these thugs and avenge Bison and the guys.</text>
+	</string>
+</string_table>

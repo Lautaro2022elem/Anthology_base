@@ -1,0 +1,653 @@
+<?xml version="1.0" encoding="windows-1251" ?>
+<game_dialogs>
+    <!-- BY STALKER66 -->
+    <dialog id="esc_dialog_bobik_vagon">
+        <dont_has_info>esc_dialog_bobik_vagon</dont_has_info>
+        <phrase_list>
+            <phrase id="1">
+                <text>esc_dialog_bobik_vagon_1</text>
+                <next>2</next>
+            </phrase>
+            <phrase id="2">
+                <text>esc_dialog_bobik_vagon_2</text>
+                <next>3</next>
+            </phrase>
+            <phrase id="4">
+                <text>esc_dialog_bobik_vagon_4</text>
+                <next>5</next>
+            </phrase>
+            <phrase id="3">
+                <text>esc_dialog_bobik_vagon_3</text>
+                <next>4</next>
+            </phrase>
+            <phrase id="5">
+                <text>esc_dialog_bobik_vagon_5</text>
+                <action>dialogs.break_dialog</action>
+                <give_info>esc_dialog_bobik_vagon</give_info>
+            </phrase>
+            <phrase id="0">
+                <text>esc_dialog_bobik_vagon_0</text>
+                <next>1</next>
+            </phrase>
+        </phrase_list>
+    </dialog>
+    <dialog id="esc_dialog_shtik_kill_controller">
+        <has_info>esc_controller_jd_dead</has_info>
+        <dont_has_info>esc_dialog_shtik_kill_controller</dont_has_info>
+        <phrase_list>
+            <phrase id="1">
+                <text>esc_dialog_shtik_kill_controller_1</text>
+                <next>2</next>
+            </phrase>
+            <phrase id="2">
+                <text>esc_dialog_shtik_kill_controller_2</text>
+                <next>3</next>
+            </phrase>
+            <phrase id="3">
+                <text>esc_dialog_shtik_kill_controller_3</text>
+                <next>4</next>
+            </phrase>
+            <phrase id="4">
+                <text>esc_dialog_shtik_kill_controller_4</text>
+                <next>5</next>
+            </phrase>
+            <phrase id="5">
+                <text>esc_dialog_shtik_kill_controller_5</text>
+                <action>stalker66.esc_witch_bounce_quest_award2</action>
+                <next>6</next>
+            </phrase>
+            <phrase id="0">
+                <text>esc_dialog_shtik_kill_controller_0</text>
+                <next>1</next>
+            </phrase>
+            <phrase id="6">
+                <text>esc_dialog_shtik_kill_controller_6</text>
+                <action>dialogs.break_dialog</action>
+                <give_info>esc_chain_of_events_quest_complete</give_info>
+                <give_info>esc_dialog_shtik_kill_controller</give_info>
+            </phrase>
+        </phrase_list>
+    </dialog>
+    <dialog id="esc_dialog_shtik_quest1">
+        <has_info>esc_firsat_dialog_from_orest_done</has_info>
+        <dont_has_info>esc_dialog_shtik_quest1</dont_has_info>
+        <dont_has_info>esc_shilov_quest_cancel</dont_has_info>
+        <phrase_list>
+            <phrase id="1">
+                <text>esc_dialog_shtik_quest1_1</text>
+                <next>2</next>
+            </phrase>
+            <phrase id="2">
+                <text>esc_dialog_shtik_quest1_2</text>
+                <next>3</next>
+            </phrase>
+            <phrase id="4">
+                <text>esc_dialog_shtik_quest1_4</text>
+                <next>5</next>
+            </phrase>
+            <phrase id="5">
+                <text>esc_dialog_shtik_quest1_5</text>
+                <next>6</next>
+            </phrase>
+            <phrase id="3">
+                <text>esc_dialog_shtik_quest1_3</text>
+                <next>4</next>
+            </phrase>
+            <phrase id="7">
+                <text>esc_dialog_shtik_quest1_7</text>
+                <next>8</next>
+                <next>9</next>
+            </phrase>
+            <phrase id="0">
+                <text>esc_dialog_shtik_quest1_0</text>
+                <next>1</next>
+            </phrase>
+            <phrase id="6">
+                <text>esc_dialog_shtik_quest1_6</text>
+                <next>7</next>
+            </phrase>
+            <phrase id="8">
+                <text>esc_dialog_shtik_quest1_8</text>
+                <action>dialogs.break_dialog</action>
+                <action>stalker66.esc_witch_bounce_quest_start</action>
+                <give_info>esc_dialog_shtik_quest1</give_info>
+            </phrase>
+            <phrase id="9">
+                <text>esc_dialog_shtik_quest1_9</text>
+                <next>10</next>
+            </phrase>
+            <phrase id="10">
+                <text>esc_dialog_shtik_quest1_10</text>
+                <next>11</next>
+            </phrase>
+            <phrase id="11">
+                <text>esc_dialog_shtik_quest1_11</text>
+                <action>dialogs.break_dialog</action>
+                <give_info>esc_shilov_quest_cancel</give_info>
+                <give_info>esc_chain_of_events_quest_complete</give_info>
+                <give_info>esc_dialog_shtik_kill_controller</give_info>
+            </phrase>
+        </phrase_list>
+    </dialog>
+    <dialog id="esc_dialog_shtik_quest_was_anomaly">
+        <has_info>new_has_dialog_poyavilsa</has_info>
+        <dont_has_info>esc_dialog_shtik_quest_was_anomaly</dont_has_info>
+        <phrase_list>
+            <phrase id="2">
+                <text>esc_dialog_shtik_quest_was_anomaly_2</text>
+                <next>3</next>
+            </phrase>
+            <phrase id="3">
+                <text>esc_dialog_shtik_quest_was_anomaly_3</text>
+                <next>4</next>
+            </phrase>
+            <phrase id="4">
+                <text>esc_dialog_shtik_quest_was_anomaly_4</text>
+                <next>5</next>
+            </phrase>
+            <phrase id="5">
+                <text>esc_dialog_shtik_quest_was_anomaly_5</text>
+                <next>6</next>
+            </phrase>
+            <phrase id="6">
+                <text>esc_dialog_shtik_quest_was_anomaly_6</text>
+                <next>7</next>
+            </phrase>
+            <phrase id="7">
+                <text>esc_dialog_shtik_quest_was_anomaly_7</text>
+                <next>8</next>
+            </phrase>
+            <phrase id="8">
+                <text>esc_dialog_shtik_quest_was_anomaly_8</text>
+                <action>dialogs.break_dialog</action>
+                <action>stalker66.esc_witch_bounce_quest_award</action>
+                <give_info>esc_witch_bounce_quest_complete</give_info>
+                <give_info>esc_dialog_shtik_quest_was_anomaly</give_info>
+            </phrase>
+            <phrase id="1">
+                <text>esc_dialog_shtik_quest_was_anomaly_1</text>
+                <next>2</next>
+            </phrase>
+            <phrase id="0">
+                <text>esc_dialog_shtik_quest_was_anomaly_0</text>
+                <next>1</next>
+            </phrase>
+        </phrase_list>
+    </dialog>
+    <dialog id="esc_dialog_zohan_po_povode_dola2">
+        <precondition>stalker66.esc_lisiy_flash_and_docs_to_act</precondition>
+        <has_info>esc_start_dialog_zohan_dolg2</has_info>
+        <dont_has_info>esc_dialog_zohan_po_povode_dola2</dont_has_info>
+        <phrase_list>
+            <phrase id="1">
+                <text>esc_dialog_zohan_po_povode_dola2_1</text>
+                <next>2</next>
+            </phrase>
+            <phrase id="3">
+                <text>esc_dialog_zohan_po_povode_dola2_3</text>
+                <action>stalker66.esc_zohan_otdal_dolg_good</action>
+                <action>stalker66.give_actor_items_for_quest_zohan</action>
+                <give_info>zohan_flair_quest_complete</give_info>
+                <give_info>esc_dialog_zohan_po_povode_dola2</give_info>
+            </phrase>
+            <phrase id="2">
+                <text>esc_dialog_zohan_po_povode_dola2_2</text>
+                <next>3</next>
+            </phrase>
+            <phrase id="0">
+                <text>esc_dialog_zohan_po_povode_dola2_0</text>
+                <next>1</next>
+            </phrase>
+        </phrase_list>
+    </dialog>
+    <dialog id="kro_pomojet_vzlomat_keys">
+        <precondition>stalker66.esc_lisiy_keys_picked_up</precondition>
+        <has_info>esc_dialog_zohan_keys_fin</has_info>
+        <dont_has_info>kro_pomojet_vzlomat_keys</dont_has_info>
+        <phrase_list>
+            <phrase id="2">
+                <text>kro_pomojet_vzlomat_keys_2</text>
+                <next>3</next>
+            </phrase>
+            <phrase id="3">
+                <text>kro_pomojet_vzlomat_keys_3</text>
+                <give_info>kro_pomojet_vzlomat_keys</give_info>
+            </phrase>
+            <phrase id="1">
+                <text>kro_pomojet_vzlomat_keys_1</text>
+                <next>2</next>
+            </phrase>
+            <phrase id="0">
+                <text>kro_pomojet_vzlomat_keys_0</text>
+                <next>1</next>
+            </phrase>
+        </phrase_list>
+    </dialog>
+    <dialog id="kro_pomojet_vzlomat_keys2">
+        <precondition>stalker66.esc_lisiy_keys_picked_up</precondition>
+        <has_info>esc_dialog_zohan_keys_fin</has_info>
+        <dont_has_info>kro_pomojet_vzlomat_keys2</dont_has_info>
+        <phrase_list>
+            <phrase id="0">
+                <text>kro_pomojet_vzlomat_keys2_0</text>
+                <next>1</next>
+            </phrase>
+            <phrase id="1">
+                <text>kro_pomojet_vzlomat_keys2_1</text>
+                <next>2</next>
+            </phrase>
+            <phrase id="2">
+                <text>kro_pomojet_vzlomat_keys2_2</text>
+                <next>3</next>
+            </phrase>
+            <phrase id="3">
+                <text>kro_pomojet_vzlomat_keys2_3</text>
+                <give_info>kro_pomojet_vzlomat_keys2</give_info>
+            </phrase>
+        </phrase_list>
+    </dialog>
+    <dialog id="lisiy_dialog_tonnel_start">
+        <has_info>esc_esc_lisiy_notes_picked_up</has_info>
+        <dont_has_info>lisiy_dialog_tonnel_start</dont_has_info>
+        <phrase_list>
+            <phrase id="2">
+                <text>lisiy_dialog_tonnel_start_2</text>
+                <next>3</next>
+            </phrase>
+            <phrase id="1">
+                <text>lisiy_dialog_tonnel_start_1</text>
+                <next>2</next>
+            </phrase>
+            <phrase id="8">
+                <text>lisiy_dialog_tonnel_start_8</text>
+                <action>dialogs.break_dialog</action>
+                <give_info>lisiy_dialog_tonnel_no_many</give_info>
+                <give_info>esc_cherep_dialog_over</give_info>
+            </phrase>
+            <phrase id="0">
+                <text>lisiy_dialog_tonnel_start_0</text>
+                <next>1</next>
+            </phrase>
+            <phrase id="3">
+                <text>lisiy_dialog_tonnel_start_3</text>
+                <next>4</next>
+            </phrase>
+            <phrase id="7">
+                <text>lisiy_dialog_tonnel_start_7</text>
+                <action>dialogs.break_dialog</action>
+                <give_info>lisiy_dialog_tonnel_start</give_info>
+                <give_info>esc_cherep_dialog_over</give_info>
+            </phrase>
+            <phrase id="4">
+                <text>lisiy_dialog_tonnel_start_4</text>
+                <next>5</next>
+                <next>8</next>
+            </phrase>
+            <phrase id="5">
+                <text>lisiy_dialog_tonnel_start_5</text>
+                <precondition>stalker66.analiz_money_lisiy</precondition>
+                <action>stalker66.give_money_lisiy</action>
+                <next>6</next>
+            </phrase>
+            <phrase id="6">
+                <text>lisiy_dialog_tonnel_start_6</text>
+                <action>stalker66.esc_lisiy_give_keys</action>
+                <next>7</next>
+            </phrase>
+        </phrase_list>
+    </dialog>
+    <dialog id="dialog_furgon_crash_keys">
+        <precondition>stalker66.esc_lisiy_keys_picked_up</precondition>
+        <has_info>esc_dialog_zohan_keys_fin</has_info>
+        <dont_has_info>dialog_furgon_crash_keys</dont_has_info>
+        <phrase_list>
+            <phrase id="1">
+                <text>dialog_furgon_crash_keys_1</text>
+                <next>2</next>
+            </phrase>
+            <phrase id="0">
+                <text>dialog_furgon_crash_keys_0</text>
+                <next>1</next>
+            </phrase>
+            <phrase id="3">
+                <text>dialog_furgon_crash_keys_3</text>
+            </phrase>
+            <phrase id="2">
+                <text>dialog_furgon_crash_keys_2</text>
+                <action>stalker66.give_keys_to_furgon</action>
+                <give_info>kro_pomojet_vzlomat_keys</give_info>
+                <give_info>kro_pomojet_vzlomat_keys2</give_info>
+                <give_info>dialog_furgon_crash_keys</give_info>
+                <next>3</next>
+            </phrase>
+        </phrase_list>
+    </dialog>
+    <dialog id="esc_dialog_zohan_po_povode_dola">
+        <has_info>esc_start_dialog_zohan_dolg</has_info>
+        <dont_has_info>esc_dialog_zohan_po_povode_dola</dont_has_info>
+        <phrase_list>
+            <phrase id="1">
+                <text>esc_dialog_zohan_po_povode_dola_1</text>
+                <next>2</next>
+            </phrase>
+            <phrase id="2">
+                <text>esc_dialog_zohan_po_povode_dola_2</text>
+                <action>dialogs.break_dialog</action>
+                <action>stalker66.esc_zohan_otdal_dolg</action>
+                <give_info>zohan_flair_quest_complete</give_info>
+                <give_info>esc_dialog_zohan_po_povode_dola</give_info>
+            </phrase>
+            <phrase id="0">
+                <text>esc_dialog_zohan_po_povode_dola_0</text>
+                <next>1</next>
+            </phrase>
+        </phrase_list>
+    </dialog>
+    <dialog id="zohan_flair_quest_start">
+        <has_info>esc_trader_first_quest_complete</has_info>
+        <dont_has_info>zohan_flair_quest_start</dont_has_info>
+        <phrase_list>
+            <phrase id="1">
+                <text>zohan_flair_quest_start_1</text>
+                <next>2</next>
+            </phrase>
+            <phrase id="2">
+                <text>zohan_flair_quest_start_2</text>
+                <next>3</next>
+            </phrase>
+            <phrase id="3">
+                <text>zohan_flair_quest_start_3</text>
+                <next>4</next>
+            </phrase>
+            <phrase id="4">
+                <text>zohan_flair_quest_start_4</text>
+                <next>5</next>
+            </phrase>
+            <phrase id="5">
+                <text>zohan_flair_quest_start_5</text>
+                <next>6</next>
+                <next>7</next>
+            </phrase>
+            <phrase id="6">
+                <text>zohan_flair_quest_start_6</text>
+                <action>dialogs.break_dialog</action>
+                <action>stalker66.esc_zohan_flair_quest_start</action>
+                <give_info>zohan_flair_quest_start</give_info>
+            </phrase>
+            <phrase id="7">
+                <text>zohan_flair_quest_start_7</text>
+                <action>dialogs.break_dialog</action>
+                <give_info>zohan_flair_quest_ne_soglasen</give_info>
+            </phrase>
+            <phrase id="0">
+                <text>zohan_flair_quest_start_0</text>
+                <next>1</next>
+            </phrase>
+        </phrase_list>
+    </dialog>
+    <dialog id="dialog_actor_give_keys">
+        <precondition>stalker66.esc_lisiy_keys_picked_up</precondition>
+        <has_info>esc_cherep_dialog_over</has_info>
+        <dont_has_info>esc_dialog_zohan_keys_complete</dont_has_info>
+        <phrase_list>
+            <phrase id="9">
+                <text>dialog_actor_give_keys_9</text>
+                <has_info>esc_cherep_bandit_dead</has_info>
+                <next>10</next>
+            </phrase>
+            <phrase id="1">
+                <text>dialog_actor_give_keys_1</text>
+                <dont_has_info>esc_cherep_bandit_dead</dont_has_info>
+                <next>2</next>
+            </phrase>
+            <phrase id="4">
+                <text>dialog_actor_give_keys_4</text>
+                <next>5</next>
+            </phrase>
+            <phrase id="5">
+                <text>dialog_actor_give_keys_5</text>
+                <next>6</next>
+            </phrase>
+            <phrase id="7">
+                <text>dialog_actor_give_keys_7</text>
+                <next>8</next>
+            </phrase>
+            <phrase id="8">
+                <text>dialog_actor_give_keys_8</text>
+                <next>11</next>
+            </phrase>
+            <phrase id="10">
+                <text>dialog_actor_give_keys_10</text>
+                <next>13</next>
+            </phrase>
+            <phrase id="13">
+                <text>dialog_actor_give_keys_13</text>
+                <next>14</next>
+            </phrase>
+            <phrase id="14">
+                <text>dialog_actor_give_keys_14</text>
+                <next>15</next>
+            </phrase>
+            <phrase id="15">
+                <text>dialog_actor_give_keys_15</text>
+                <next>16</next>
+            </phrase>
+            <phrase id="16">
+                <text>dialog_actor_give_keys_16</text>
+                <next>17</next>
+            </phrase>
+            <phrase id="17">
+                <text>dialog_actor_give_keys_17</text>
+                <next>18</next>
+            </phrase>
+            <phrase id="11">
+                <text>dialog_actor_give_keys_11</text>
+                <next>12</next>
+            </phrase>
+            <phrase id="6">
+                <text>dialog_actor_give_keys_6</text>
+                <next>7</next>
+            </phrase>
+            <phrase id="3">
+                <text>dialog_actor_give_keys_3</text>
+                <next>4</next>
+            </phrase>
+            <phrase id="2">
+                <text>dialog_actor_give_keys_2</text>
+                <has_info>lisiy_gone</has_info>
+                <next>3</next>
+            </phrase>
+            <phrase id="0">
+                <text>dialog_actor_give_keys_0</text>
+                <next>1</next>
+                <next>9</next>
+            </phrase>
+            <phrase id="12">
+                <text>dialog_actor_give_keys_12</text>
+                <action>dialogs.break_dialog</action>
+                <give_info>esc_dialog_zohan_keys_fin</give_info>
+                <give_info>esc_dialog_zohan_keys_complete</give_info>
+            </phrase>
+            <phrase id="18">
+                <text>dialog_actor_give_keys_18</text>
+                <action>dialogs.break_dialog</action>
+                <give_info>esc_dialog_zohan_keys_fin</give_info>
+                <give_info>esc_dialog_zohan_keys_complete</give_info>
+            </phrase>
+        </phrase_list>
+    </dialog>
+    <dialog id="dialog_furgon_crash_keys2">
+        <has_info>esc_lisiy_keys_crash_time_out</has_info>
+        <dont_has_info>dialog_furgon_crash_keys2</dont_has_info>
+        <dont_has_info>esc_furgon_not_money</dont_has_info>
+        <phrase_list>
+            <phrase id="1">
+                <text>dialog_furgon_crash_keys2_1</text>
+                <next>2</next>
+            </phrase>
+            <phrase id="6">
+                <text>dialog_furgon_crash_keys2_6</text>
+            </phrase>
+            <phrase id="0">
+                <text>dialog_furgon_crash_keys2_0</text>
+                <next>1</next>
+            </phrase>
+            <phrase id="5">
+                <text>dialog_furgon_crash_keys2_5</text>
+                <give_info>esc_furgon_not_money</give_info>
+                <next>6</next>
+            </phrase>
+            <phrase id="4">
+                <text>dialog_furgon_crash_keys2_4</text>
+                <precondition>stalker66.analiz_money_furgon_keys</precondition>
+                <action>stalker66.podgon_ot_furgona_actory</action>
+                <give_info>dialog_furgon_crash_keys2</give_info>
+                <give_info>esc_lisiy_keys_quest_complete</give_info>
+                <next>7</next>
+            </phrase>
+            <phrase id="7">
+                <text>dialog_furgon_crash_keys2_7</text>
+            </phrase>
+            <phrase id="2">
+                <text>dialog_furgon_crash_keys2_2</text>
+                <next>3</next>
+            </phrase>
+            <phrase id="3">
+                <text>dialog_furgon_crash_keys2_3</text>
+                <next>4</next>
+                <next>5</next>
+            </phrase>
+        </phrase_list>
+    </dialog>
+    <dialog id="dialog_furgon_crash_keys3">
+        <has_info>esc_furgon_not_money</has_info>
+        <dont_has_info>dialog_furgon_crash_keys2</dont_has_info>
+        <phrase_list>
+            <phrase id="4">
+                <text>dialog_furgon_crash_keys3_4</text>
+            </phrase>
+            <phrase id="5">
+                <text>dialog_furgon_crash_keys3_5</text>
+            </phrase>
+            <phrase id="0">
+                <text>dialog_furgon_crash_keys3_0</text>
+                <next>1</next>
+            </phrase>
+            <phrase id="3">
+                <text>dialog_furgon_crash_keys3_3</text>
+                <next>5</next>
+            </phrase>
+            <phrase id="1">
+                <text>dialog_furgon_crash_keys3_1</text>
+                <next>2</next>
+                <next>3</next>
+            </phrase>
+            <phrase id="2">
+                <text>dialog_furgon_crash_keys3_2</text>
+                <precondition>stalker66.analiz_money_furgon_keys</precondition>
+                <action>stalker66.podgon_ot_furgona_actory</action>
+                <give_info>dialog_furgon_crash_keys2</give_info>
+                <give_info>esc_lisiy_keys_quest_complete</give_info>
+                <next>4</next>
+            </phrase>
+        </phrase_list>
+    </dialog>
+    <dialog id="dialog_sidorovich_zabral_flashAndDoc">
+        <precondition>stalker66.esc_lisiy_flash_and_docs_to_act</precondition>
+        <has_info>sidor_good_and_zohanBad_dialog_start</has_info>
+        <dont_has_info>dialog_sidorovich_zabral_flashAndDoc</dont_has_info>
+        <phrase_list>
+            <phrase id="1">
+                <text>dialog_sidorovich_zabral_flashAndDoc_1</text>
+                <next>2</next>
+            </phrase>
+            <phrase id="3">
+                <text>dialog_sidorovich_zabral_flashAndDoc_3</text>
+                <next>4</next>
+            </phrase>
+            <phrase id="4">
+                <text>dialog_sidorovich_zabral_flashAndDoc_4</text>
+                <next>5</next>
+            </phrase>
+            <phrase id="5">
+                <text>dialog_sidorovich_zabral_flashAndDoc_5</text>
+                <action>stalker66.give_actor_items_for_quest_zohan</action>
+                <action>stalker66.nagrada_esc_zohan_flair_quest_to_sidor</action>
+                <give_info>dialog_sidorovich_zabral_flashAndDoc</give_info>
+            </phrase>
+            <phrase id="0">
+                <text>dialog_sidorovich_zabral_flashAndDoc_0</text>
+                <next>1</next>
+            </phrase>
+            <phrase id="2">
+                <text>dialog_sidorovich_zabral_flashAndDoc_2</text>
+                <next>3</next>
+            </phrase>
+        </phrase_list>
+    </dialog>
+    <dialog id="dialog_zohan_pda_fleshka_u_menja">
+        <precondition>stalker66.esc_lisiy_flash_and_docs_to_act</precondition>
+        <has_info>esc_lisiy_keys_quest_complete</has_info>
+        <dont_has_info>dialog_zohan_pda_fleshka_u_menja</dont_has_info>
+        <phrase_list>
+            <phrase id="8">
+                <text>dialog_zohan_pda_fleshka_u_menja_8</text>
+                <action>stalker66.esc_zohan_give_docs_actor</action>
+                <has_info>esc_cherep_bandit_dead</has_info>
+                <next>9</next>
+            </phrase>
+            <phrase id="9">
+                <text>dialog_zohan_pda_fleshka_u_menja_9</text>
+                <next>10</next>
+            </phrase>
+            <phrase id="10">
+                <text>dialog_zohan_pda_fleshka_u_menja_10</text>
+                <action>dialogs.break_dialog</action>
+                <give_info>dialog_zohan_quest_no_money</give_info>
+                <give_info>dialog_zohan_pda_fleshka_u_menja</give_info>
+            </phrase>
+            <phrase id="7">
+                <text>dialog_zohan_pda_fleshka_u_menja_7</text>
+                <action>dialogs.break_dialog</action>
+                <give_info>dialog_zohan_quest_no_money</give_info>
+                <give_info>dialog_zohan_pda_fleshka_u_menja</give_info>
+            </phrase>
+            <phrase id="6">
+                <text>dialog_zohan_pda_fleshka_u_menja_6</text>
+                <next>7</next>
+            </phrase>
+            <phrase id="0">
+                <text>dialog_zohan_pda_fleshka_u_menja_0</text>
+                <action>stalker66.esc_actor_give_docs_zohan</action>
+                <next>1</next>
+            </phrase>
+            <phrase id="1">
+                <text>dialog_zohan_pda_fleshka_u_menja_1</text>
+                <next>2</next>
+            </phrase>
+            <phrase id="2">
+                <text>dialog_zohan_pda_fleshka_u_menja_2</text>
+                <next>3</next>
+            </phrase>
+            <phrase id="3">
+                <text>dialog_zohan_pda_fleshka_u_menja_3</text>
+                <next>4</next>
+                <next>5</next>
+                <next>8</next>
+            </phrase>
+            <phrase id="5">
+                <text>dialog_zohan_pda_fleshka_u_menja_5</text>
+                <action>stalker66.esc_zohan_give_docs_actor</action>
+                <dont_has_info>esc_cherep_bandit_dead</dont_has_info>
+                <next>6</next>
+            </phrase>
+            <phrase id="4">
+                <text>dialog_zohan_pda_fleshka_u_menja_4</text>
+                <action>dialogs.break_dialog</action>
+                <action>stalker66.esc_zohan_give_docs_actor</action>
+                <give_info>dialog_zohan_quest_ya_podojdu</give_info>
+                <give_info>dialog_zohan_pda_fleshka_u_menja</give_info>
+            </phrase>
+        </phrase_list>
+    </dialog>
+</game_dialogs>

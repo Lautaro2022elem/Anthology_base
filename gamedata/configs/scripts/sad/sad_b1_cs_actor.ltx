@@ -1,0 +1,25 @@
+[walker@gen]
+meet = no_meet
+use_camp = false
+combat_ignore_cond = true
+combat_ignore_keep_when_attacked = true
+invulnerable = true
+gather_items_enabled = false
+help_wounded_enabled = false
+corpse_detection_enabled = false
+
+; --------------------------------------
+
+[logic]
+active = walker@1
+
+[walker@1]:walker@gen
+path_walk = sad_oasis_teleport_out_walk
+on_info = {+sad_b1_cutscene_grisha_patrol} remark@wait
+
+[remark@wait]:walker@gen
+on_timer = 200 | walker@2
+
+[walker@2]:walker@gen
+path_walk = sad_sim_1_grisha_patrul
+def_state_moving = assault

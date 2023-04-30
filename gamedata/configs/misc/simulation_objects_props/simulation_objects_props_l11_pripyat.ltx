@@ -1,0 +1,98 @@
+;----------- << PRIPYAT >> ------------
+;---------	SIMULATION	--------
+[pri_depot]:default_base
+sim_avail 	            = true
+surge 			        = 1
+monolith		        = 1
+monolith_heli	        = 1
+
+;palace of culture, near pri_monolith, unsure if used of unported mlr stuff
+;there's a special job for a special npc but dunno if it's ever used
+; just in case, do not use until tested properly
+[mlr_terrain]:default
+sim_avail				= false
+
+[pri_monolith]:default_base
+sim_avail 	            = true
+surge                   = 1
+
+[pri_smart_bloodsucker_lair1]:default_lair
+sim_avail 	            = true
+territory	            = 1 
+surge                   = 1
+
+[pri_smart_controler_lair1]:default_lair
+sim_avail 	            = true
+surge 		            = 1
+
+[pri_smart_controler_lair2]:default_lair
+sim_avail 	            = true
+territory	            = 0
+
+[pri_smart_giant_lair1]:default_lair
+sim_avail 	            = true
+surge 		            = 1
+
+[pri_smart_monolith_stalker2]:default_lair
+sim_avail 	            = true
+
+[pri_smart_monolith_stalker3]:default_lair
+sim_avail 	            = true
+
+[pri_smart_monolith_stalker4]:default_lair
+sim_avail 	            = true
+
+[pri_smart_monolith_stalker6]:default_base
+sim_avail 	            = true
+monolith		        = 1
+monolith_heli 	        = 1
+
+[pri_smart_monster_lair1]:default_lair
+sim_avail 	            = true
+territory	            = 0
+
+[pri_smart_neutral_stalker1]:default_base
+sim_avail 	            = true
+stalker		            = 1
+dolg		            = 1 
+freedom		            = 1 
+ecolog		            = 1 
+csky		            = 1
+
+[pri_smart_pseudodog_lair1]:default_lair
+sim_avail 	            = true
+territory	            = 0
+
+[pri_smart_snork_lair1]:default_lair
+sim_avail 	            = true
+surge 		            = 1
+
+[pri_smart_snork_lair2]:default_lair
+sim_avail 	            = true
+territory	            = 0
+
+[pri_smart_tushkano_lair1]:default_lair
+sim_avail 	            = true
+surge                   = 1
+
+[pri_smart_dolg_stalker1]:default_lair
+sim_avail 	            = true
+surge                   = 1
+
+[pri_smart_freedom_stalker1]:default_lair
+sim_avail 	            = true
+surge                   = 1
+
+[pri_wave7]:default_lair
+sim_avail 	            = true
+surge                   = 1
+
+; do not use, TODO some jobs to fix
+[hotel_poless_smart_alife]:default_lair
+sim_avail 	            = false
+
+; do not use, snipers in inacessible buldings/roofs
+; maybe useful for tasks or static squad but not for general use
+; TODO also a couple of jobs to disable just in case (sitting on ground)
+[monolith_snipers_smart_1_mlr]:default_lair
+sim_avail 	            = false

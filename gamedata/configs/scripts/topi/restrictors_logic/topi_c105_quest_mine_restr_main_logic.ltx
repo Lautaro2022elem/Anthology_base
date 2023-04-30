@@ -1,0 +1,16 @@
+[logic]
+active = sr_idle@start_game
+
+[sr_idle@start_game]
+on_info = {+topi_start !black_screen -topi_b1_leader_1_quest_mine_all_disable} sr_idle@wait_quest %=disable_mine(topi_quest_mine_1:topi_quest_mine_2:topi_quest_mine_3) +topi_b1_leader_1_quest_mine_all_disable%
+
+[sr_idle@wait_quest]
+on_info = {+topi_b1_leader_1_quest_talking_1 -topi_b1_leader_1_quest_mine_all_enable} sr_idle@come_quest %=clear_smart_terrain(topi_sim_mut_29) =clear_smart_terrain(topi_sim_mut_28) =give_task(geonezis_topi_b1_leader_first_quest) =enable_mine(topi_quest_mine_1:topi_quest_mine_2:topi_quest_mine_3) +topi_b1_leader_1_quest_mine_all_enable%
+
+[sr_idle@come_quest]
+on_info = {+topi_b1_leader_1_quest_mine_1_find -topi_b1_leader_1_quest_mine_1_disable} %=disable_mine(topi_quest_mine_1) +topi_b1_leader_1_quest_mine_1_disable%
+on_info2 = {+topi_b1_leader_1_quest_mine_2_find -topi_b1_leader_1_quest_mine_2_disable} %=disable_mine(topi_quest_mine_2) +topi_b1_leader_1_quest_mine_2_disable%
+on_info3 = {+topi_b1_leader_1_quest_mine_3_find -topi_b1_leader_1_quest_mine_3_disable} %=disable_mine(topi_quest_mine_3) +topi_b1_leader_1_quest_mine_3_disable%
+on_info4 = {+topi_b1_leader_1_quest_mine_all_find -topi_b1_leader_1_quest_mine_all_find_end} sr_idle@nil %+topi_b1_leader_1_quest_mine_all_find_end%
+
+[sr_idle@nil] 

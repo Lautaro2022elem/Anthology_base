@@ -1,0 +1,644 @@
+--[[ ----------------------------------------------------------------------------------------------- 
+ File       : dialogs_escape.script
+ Description: Диалоговые функции для Пространственного пузыря
+ Copyright  : 2014 © GSC Game World
+ Author	    : PROFFESIONAL
+ Last edit  : 16.09.2017 (by PROFFESIONAL)
+--]] -----------------------------------------------------------------------------------------------
+--/											Общие функции
+--]] -----------------------------------------------------------------------------------------------
+
+--]] -----------------------------------------------------------------------------------------------
+--/											Квестовые функции
+--]] -----------------------------------------------------------------------------------------------
+
+function actor_flask_empty_check(first_speaker, second_speaker) 
+      return (db.actor:object("flask_empty") ~= nil)
+end 
+
+function analiz_money_water_full(first_speaker, second_speaker)
+    return db.actor:money() >= 1000
+end
+
+function give_money_water_full(first_speaker, second_speaker)
+	dialogs.relocate_money_from_actor(first_speaker, second_speaker, 1000)
+	dialogs.relocate_item_section_from_actor(first_speaker, second_speaker, "flask_empty") 
+end
+
+function give_flask_to_actor(first_speaker, second_speaker)
+		dialogs.relocate_item_section_to_actor(first_speaker, second_speaker, "flask_good_full") 
+end
+
+function give_esc_bar_security_quest()
+	task_manager.get_task_manager():give_task("esc_bar_security_quest")
+end
+
+function esc_pashalka_shved_pda_out(first_speaker, second_speaker)
+	dialogs.relocate_item_section_from_actor(first_speaker, second_speaker, "esc_pashalka_shved_pda") 
+end
+
+function esc_robbery_quest_shaman_take_6000(first_speaker, second_speaker) 
+    dialogs.relocate_money_to_actor(first_speaker, second_speaker, 6000)
+end
+
+function esc_robbery_quest_shaman_take_10000(first_speaker, second_speaker) 
+    dialogs.relocate_money_to_actor(first_speaker, second_speaker, 10000)
+end
+
+function esc_robbery_quest_shaman_take_14000(first_speaker, second_speaker) 
+    dialogs.relocate_money_to_actor(first_speaker, second_speaker, 14000)
+end
+
+function give_esc_koordinator_syndikate_quest()
+	task_manager.get_task_manager():give_task("esc_koordinator_syndikate_quest")
+end
+
+function esc_actor_blackbox_check(first_speaker, second_speaker) 
+      return (db.actor:object("jup_b9_blackbox") ~= nil)
+end
+
+function esc_give_blackbox_to_merc(first_speaker, second_speaker)
+	dialogs.relocate_item_section_from_actor(first_speaker, second_speaker, "jup_b9_blackbox") 
+end
+
+function esc_give_sidor_reward_to_actor(first_speaker, second_speaker)
+	treasure_manager.get_treasure_manager():give_treasure("esc_hiding_place_1")
+end
+
+function esc_actor_vodka_check(first_speaker, second_speaker) 
+      return (db.actor:object("vodka") ~= nil)
+end
+
+function esc_actor_give_vodka_storyman(first_speaker, second_speaker)
+	dialogs.relocate_item_section_from_actor(first_speaker, second_speaker, "vodka") 
+end
+
+function esc_killer_security(first_speaker, second_speaker)
+    return first_speaker:money() >= 2500
+end
+
+function esc_killer_security_money_out(first_speaker, second_speaker)
+	dialogs.relocate_money_from_actor(first_speaker, second_speaker, 2500)
+end
+
+function esc_barman_analiz_money_radio(first_speaker, second_speaker)
+    return db.actor:money() >= 500
+end
+
+function esc_barman_give_money_radio(first_speaker, second_speaker)
+	dialogs.relocate_money_from_actor(first_speaker, second_speaker, 500)
+end
+
+function esc_barman_analiz_money_bed(first_speaker, second_speaker)
+    return db.actor:money() >= 2500
+end
+
+function esc_barman_give_money_bed(first_speaker, second_speaker)
+	dialogs.relocate_money_from_actor(first_speaker, second_speaker, 2500)
+end
+
+function give_esc_memmory_weapon_zver(first_speaker, second_speaker)
+	dialogs.relocate_item_section_no_news(second_speaker, "wpn_glock", "in",1)
+	dialogs.relocate_item_section_no_news(second_speaker, "ammo_9x19_fmj", "in",4)
+	dialogs.relocate_item_section_no_news(second_speaker, "bolt", "in",15)
+	dialogs.relocate_item_section_no_news(second_speaker, "medkit", "in",6)
+	dialogs.relocate_item_section_no_news(second_speaker, "bandage", "in",7)
+	dialogs.relocate_item_section_no_news(second_speaker, "antirad", "in",4)
+	dialogs.relocate_item_section_no_news(second_speaker, "conserva", "in",5)
+	dialogs.relocate_item_section_no_news(second_speaker, "stalker_naim_outfit", "in",1)
+	dialogs.relocate_item_section_no_news(second_speaker, "kolbasa", "in",2)
+	dialogs.relocate_item_section_no_news(second_speaker, "ammo_5.45x39_fmj", "in",3)
+end
+
+function give_esc_memmory_ak_zver(first_speaker, second_speaker)
+	dialogs.relocate_item_section_no_news(second_speaker, "wpn_ak74m_camo", "in",1)
+end
+
+function dialogs_escape.esc_quest_bolt_escape_out(first_speaker, second_speaker)
+	dialogs.relocate_item_section_from_actor_no_news(first_speaker, second_speaker,"bolt",600)
+	dialogs.relocate_item_section_from_actor_no_news(first_speaker, second_speaker,"esc_pashalka_shved_pda",1)
+	dialogs.relocate_item_section_from_actor_no_news(first_speaker, second_speaker,"esc_quest_mrakobes_mail",1)
+end
+
+function give_esc_radio_plant(first_speaker, second_speaker)
+	dialogs.relocate_item_section(second_speaker, "trader_radio_pharos", "in",1)
+end
+
+function give_esc_come_to_base_quest_line()
+	task_manager.get_task_manager():give_task("esc_come_to_base")
+end
+
+function give_esc_operations_escape_quest_line()
+	task_manager.get_task_manager():give_task("esc_operations_escape")
+end
+
+function give_esc_talk_to_sidorovich_quest_line()
+	task_manager.get_task_manager():give_task("esc_talk_to_sidorovich")
+end
+
+function give_quest_esc_klim_flash_found()
+	task_manager.get_task_manager():give_task("esc_klim_flash_found")
+end
+
+function give_esc_koordinator_quest_line()
+	task_manager.get_task_manager():give_task("esc_koordinator_quest_line")
+end
+
+function give_esc_kill_leader_stalkers()
+	task_manager.get_task_manager():give_task("esc_kill_leader_stalkers")
+end
+
+function give_esc_final_sidor_quest()
+	task_manager.get_task_manager():give_task("esc_final_sidor_quest")
+end
+
+function give_esc_talk_shilov_quest()
+	task_manager.get_task_manager():give_task("esc_talk_shilov_quest")
+end
+
+function give_esc_sidor_container(first_speaker, second_speaker)
+	dialogs.relocate_item_section(second_speaker, "esc_sidor_container", "in",1)
+end
+
+function esc_robbery_sidor_container(first_speaker, second_speaker)
+    dialogs.relocate_item_section_from_actor(first_speaker, second_speaker, "esc_sidor_container",1)
+end
+
+function esc_robbery_orest_take_reward(first_speaker, second_speaker) 
+    dialogs.relocate_money_to_actor(first_speaker, second_speaker, 5000)
+end
+
+function give_esc_weapon_quest_rifle(first_speaker, second_speaker)
+	dialogs.relocate_item_section_no_news(second_speaker, "wpn_m98b", "in",1)
+	dialogs.relocate_item_section_no_news(second_speaker, "ammo_338_lapua", "in",2)
+end
+
+function esc_robbery_quest_rifle(first_speaker, second_speaker)
+    dialogs.relocate_item_section_from_actor(first_speaker, second_speaker, "wpn_m98b",1)
+end
+
+function esc_robbery_pda_leader_base(first_speaker, second_speaker)
+    dialogs.relocate_item_section_from_actor(first_speaker, second_speaker, "esc_pda_leader_base",1)
+end
+
+function esc_robbery_quest_army_take_reward(first_speaker, second_speaker) 
+    dialogs.relocate_money_to_actor(first_speaker, second_speaker, 14000)
+end
+
+function esc_robbery_quest_wolf_take_reward(first_speaker, second_speaker) 
+    dialogs.relocate_item_section(second_speaker, "af_night_star", "in",1)
+    dialogs.relocate_money_to_actor(first_speaker, second_speaker, 7500)
+end
+
+function esc_robbery_quest_zohan_take_reward(first_speaker, second_speaker) 
+    dialogs.relocate_item_section(second_speaker, "af_electra_sparkler", "in",1)
+end
+
+function check_items_flash_klim(first_speaker, second_speaker)
+	return db.actor:object("esc_flash_klim") ~= nil -- true
+end
+
+function esc_robbery_quest_flash_klim(first_speaker, second_speaker)
+    dialogs.relocate_item_section_from_actor(first_speaker, second_speaker, "esc_flash_klim",1)
+end
+
+function esc_robbery_quest_sidor_take_reward(first_speaker, second_speaker) 
+    dialogs.relocate_money_to_actor(first_speaker, second_speaker, 10000)
+end
+
+function give_esc_tech_instruments_quest()
+	task_manager.get_task_manager():give_task("esc_tech_instruments")
+end
+
+function quest_dialog_toolkits_precond(first_speaker, second_speaker)
+	if has_alife_info("0000_mechanic_toolkit_search") and not has_alife_info("00000_task_end") then
+		return true
+	elseif has_alife_info("esc_tech_instruments_start") and not has_alife_info("esc_tech_instruments_task_end") then
+		return true
+	end
+	return false
+end
+
+function esc_tech_actor_got_toolkit(first_speaker, second_speaker)
+	local function is_toolkit(npc, item)
+		local section = item:section()
+		if(section=="toolkit_1" and not has_alife_info("esc_tech_instrument_1_brought"))
+		or(section=="toolkit_2" and not has_alife_info("esc_tech_instrument_2_brought"))
+		or(section=="toolkit_3" and not has_alife_info("esc_tech_instrument_3_brought")) then
+			db.actor.toolkit = section
+			return
+		end
+	end
+	db.actor:iterate_inventory(is_toolkit, nil)
+	if (db.actor.toolkit ~= nil) then
+		return true
+	end
+	return false
+end
+
+function give_toolkit_1(first_speaker, second_speaker)
+	dialogs.relocate_item_section_from_actor(first_speaker, second_speaker, "toolkit_1")
+	db.actor.toolkit = nil
+	dialogs.relocate_money_to_actor(first_speaker, second_speaker, 1000)
+end
+
+function if_actor_has_toolkit_1(first_speaker, second_speaker)
+	return db.actor:object("toolkit_1") ~= nil
+end
+
+
+function give_toolkit_2(first_speaker, second_speaker)
+	dialogs.relocate_item_section_from_actor(first_speaker, second_speaker, "toolkit_2")
+	db.actor.toolkit = nil
+	dialogs.relocate_money_to_actor(first_speaker, second_speaker, 1200)
+end
+
+function if_actor_has_toolkit_2(first_speaker, second_speaker)
+	return db.actor:object("toolkit_2") ~= nil
+end
+
+
+function give_toolkit_3(first_speaker, second_speaker)
+	dialogs.relocate_item_section_from_actor(first_speaker, second_speaker, "toolkit_3")
+	db.actor.toolkit = nil
+	dialogs.relocate_money_to_actor(first_speaker, second_speaker, 1500)
+end
+
+function if_actor_has_toolkit_3(first_speaker, second_speaker)
+	return db.actor:object("toolkit_3") ~= nil
+end
+
+function actor_hit_face(first_speaker, second_speaker)
+	local npc = dialogs.who_is_npc(first_speaker, second_speaker)
+	xr_abuse.enable_abuse(npc)
+	xr_abuse.add_abuse(npc, 5)
+end
+
+function change_actor_community_stalker()
+    xr_effects.change_actor_community(db.actor, nil, {"actor_stalker"})
+end
+
+function func_actor_health_out(first_speaker, second_speaker)
+	db.actor.health = - 0.5
+end
+
+function give_esc_quest_fee()
+	task_manager.get_task_manager():give_task("esc_quest_fee")
+end
+
+function esc_quest_fee_pn_1(first_speaker, second_speaker)
+    return first_speaker:money() >= 30000
+end
+
+function esc_quest_fee_pn_2(first_speaker, second_speaker)
+    return first_speaker:money() >= 10000
+end
+
+function esc_quest_fee_money_1(actor, npc)
+	dialogs.relocate_money(npc,30000,"out")   
+end
+
+function esc_quest_fee_money_2(actor, npc)
+	dialogs.relocate_money(npc,10000,"out")   
+end
+
+function esc_out_inv_fee()
+	relocate_actor_inventory_in_box("esc_inv_out_quest_fee")
+end
+
+function esc_hiding_place_10(first_speaker, second_speaker) 
+    treasure_manager.get_treasure_manager():give_treasure("esc_hiding_place_10") 
+end
+
+
+function esc_wolf_quest_vodka(first_speaker, second_speaker)
+    dialogs.relocate_item_section(second_speaker, "vodka", "in",2)
+end
+
+function esc_wolf_start_inventory(first_speaker, second_speaker)
+    dialogs.relocate_item_section(second_speaker, "wpn_pm", "in")
+    dialogs.relocate_item_section(second_speaker, "ammo_9x18_fmj", "in")
+    dialogs.relocate_item_section(second_speaker, "bandage", "in",2)
+    dialogs.relocate_item_section(second_speaker, "medkit", "in",2)
+end
+
+function esc_robbery_quest_vodka(first_speaker, second_speaker)
+    dialogs.relocate_item_section_from_actor(first_speaker, second_speaker, "vodka",2)
+end
+
+-- проверяет наличие заданого количества предметов в инвентаре игрока.
+function esc_robbery_quest_vodka_proverka(first_speaker, second_speaker)
+	local item_section 	= "vodka"
+	local need_count 	= 2
+	local has_count 	= 0
+	local function calc(temp, item)
+		if item:section() == item_section then
+			has_count = has_count + 1
+		end
+	end
+	first_speaker:iterate_inventory(calc, first_speaker)
+	return has_count >= need_count
+end
+
+function esc_the_first_penny_reward_1(first_speaker, second_speaker)
+	dialogs.relocate_money_to_actor(first_speaker, second_speaker, 5000)
+end
+
+function esc_the_first_penny_reward_2(first_speaker, second_speaker)
+	dialogs.relocate_money_to_actor(first_speaker, second_speaker, 2500)
+end
+
+function give_eac_quest_trimming()
+	task_manager.get_task_manager():give_task("eac_quest_trimming")
+end
+
+function esc_quest_insurance_detector_advanced(first_speaker, second_speaker)
+	dialogs.relocate_item_section(second_speaker, "detector_advanced", "in")
+end
+
+function give_esc_quest_hunting()
+	task_manager.get_task_manager():give_task("esc_quest_hunting")
+end
+
+function esc_af_cristall_precondition(first_speaker, second_speaker)
+	return first_speaker:object("af_cristall") ~= nil
+end
+
+function esc_af_fireball_precondition(first_speaker, second_speaker)
+	return first_speaker:object("af_fireball") ~= nil
+end
+
+function esc_af_eye_precondition(first_speaker, second_speaker)
+	return first_speaker:object("af_eye") ~= nil
+end
+
+function esc_quest_sidor_af_cristall(first_speaker, second_speaker)
+	dialogs.relocate_item_section_from_actor(first_speaker, second_speaker, "af_cristall")
+end
+
+function esc_quest_sidor_af_fireball(first_speaker, second_speaker)
+	dialogs.relocate_item_section_from_actor(first_speaker, second_speaker, "af_fireball")
+end
+
+function esc_quest_sidor_af_eye(first_speaker, second_speaker)
+	dialogs.relocate_item_section_from_actor(first_speaker, second_speaker, "af_eye")
+end
+
+function esc_quest_trifling_matter_gruz_safe(first_speaker, second_speaker)
+	dialogs.relocate_item_section(second_speaker, "esc_gruz_safe", "in")
+end
+
+function esc_gruz_safe_precondition(first_speaker, second_speaker)
+	return first_speaker:object("esc_gruz_safe") ~= nil
+end
+
+function esc_quest_sidor_esc_gruz_safe_relocate(first_speaker, second_speaker)
+	dialogs.relocate_item_section_from_actor(first_speaker, second_speaker, "esc_gruz_safe")
+end
+
+function esc_quest_trifling_matter_helm_hardhat(first_speaker, second_speaker)
+	dialogs.relocate_item_section(second_speaker, "helm_hardhat", "in")
+end
+
+function esc_quest_trifling_matter_wpn_ak74u_snag(first_speaker, second_speaker)
+	dialogs.relocate_item_section(second_speaker, "wpn_ak74u_snag", "in")
+end
+
+function esc_quest_trifling_matter_wpn_addon_scope_susat(first_speaker, second_speaker)
+	dialogs.relocate_item_section(second_speaker, "wpn_addon_scope_susat", "in")
+end
+
+function esc_quest_trifling_matter_wpn_addon_grenade_launcher(first_speaker, second_speaker)
+	dialogs.relocate_item_section(second_speaker, "wpn_addon_grenade_launcher", "in")
+end
+
+function esc_quest_trifling_matter_wpn_l85(first_speaker, second_speaker)
+	dialogs.relocate_item_section(second_speaker, "wpn_l85", "in")
+end
+
+function esc_quest_trifling_matter_wpn_spas12_nimble(first_speaker, second_speaker)
+	dialogs.relocate_item_section(second_speaker, "wpn_spas12_nimble", "in")
+end
+
+function esc_quest_trifling_matter_svoboda_light_outfit(first_speaker, second_speaker)
+	dialogs.relocate_item_section(second_speaker, "stalker_outfit", "in")
+end
+
+function esc_quest_trifling_matter_reward(first_speaker, second_speaker)
+	dialogs.relocate_money_to_actor(first_speaker, second_speaker, 1000)
+end
+
+function esc_quest_serious_business_500(actor, npc)
+	dialogs.relocate_money(npc,500,"out")   
+end
+
+function esc_quest_money_merc_relocate_item_section(first_speaker, second_speaker)
+	dialogs.relocate_item_section(second_speaker, "esc_money_merc", "in")
+end
+
+function esc_quest_money_merc_relocate_item_section_from_actor(first_speaker, second_speaker)
+	dialogs.relocate_item_section_from_actor(first_speaker, second_speaker, "esc_money_merc")
+end
+
+function esc_quest_sidor_habar_relocate_item_section_from_actor(first_speaker, second_speaker)
+	dialogs.relocate_item_section_from_actor(first_speaker, second_speaker, "esc_sidor_habar")
+end
+
+function esc_precondition_sidor_habar(first_speaker, second_speaker)
+	return first_speaker:object("esc_sidor_habar") ~= nil
+end
+
+function esc_precondition_money_merc(first_speaker, second_speaker)
+	return first_speaker:object("esc_money_merc") ~= nil
+end
+
+function esc_infsidor_proverkadeneg500(first_speaker, second_speaker)
+	return first_speaker:money() >= 500
+end
+function dengi_1(actor, npc)
+	dialogs.relocate_money(npc,500,"out")   
+end
+
+function esc_give_quest_meet_patogen()
+	task_manager.get_task_manager():give_task("esc_quest_line_meet_patogen")
+end
+
+function esc_give_quest_missing_connected()
+	task_manager.get_task_manager():give_task("esc_quest_line_missing_connected")
+end
+
+function esc_give_quest_line_salvation_freedom()
+	task_manager.get_task_manager():give_task("esc_quest_line_salvation_freedom")
+end
+
+function esc_relocate_item_quest_freedom_pda(first_speaker, second_speaker)
+	dialogs.relocate_item_section_from_actor(first_speaker, second_speaker, "esc_quest_freedom_pda")
+end
+
+function esc_precondition_quest_freedom_pda(first_speaker, second_speaker)
+	return first_speaker:object("esc_quest_freedom_pda") ~= nil
+end
+
+function esc_quest_line_missing_connected_money(first_speaker, second_speaker)
+	dialogs.relocate_money_to_actor(first_speaker, second_speaker, 500)
+end
+
+function esc_hiding_place_1(first_speaker, second_speaker) 
+	treasure_manager.get_treasure_manager():give_treasure("esc_hiding_place_1") 
+end
+
+function esc_wolf_art_af_medusa_out(first_speaker, second_speaker)
+	dialogs.relocate_item_section_from_actor(first_speaker, second_speaker, "af_medusa")
+end
+
+function esc_wolf_art_af_medusa_precondition(first_speaker, second_speaker)
+	return first_speaker:object("af_medusa") ~= nil
+end
+
+function esc_wolf_art_af_medusa_money(first_speaker, second_speaker)
+	dialogs.relocate_money_to_actor(first_speaker, second_speaker, 4000)
+end
+
+function esc_give_quest_line_away_from_the_bandits()
+	task_manager.get_task_manager():give_task("esc_quest_line_away_from_the_bandits")
+end
+
+function esc_quest_gopstop_money(first_speaker, second_speaker)
+	dialogs.relocate_money_to_actor(first_speaker, second_speaker, 3200)
+end
+
+function esc_quest_gopstop_money_stalker(first_speaker, second_speaker)
+	dialogs.relocate_money_to_actor(first_speaker, second_speaker, 1300)
+end
+
+function esc_quest_gopstop_habar(first_speaker, second_speaker)
+	dialogs.relocate_item_section(second_speaker, "af_cristall_flower", "in")
+end
+
+function save_esc_quest_gopstop()
+	xr_effects.scenario_autosave(db.actor, nil, {"st_save_esc_quest_gopstop"})
+end
+
+function esc_give_quest_shadowing()
+	task_manager.get_task_manager():give_task("esc_quest_shadowing")
+end
+
+function esc_quest_shadowing_money(first_speaker, second_speaker)
+	dialogs.relocate_money_to_actor(first_speaker, second_speaker, 10000)
+end
+
+function save_esc_quest_shadowing()
+	xr_effects.scenario_autosave(db.actor, nil, {"st_save_esc_quest_shadowing"})
+end
+
+function esc_give_quest_fighting_for_territory()
+	task_manager.get_task_manager():give_task("esc_quest_fighting_for_territory")
+end
+
+function save_esc_quest_fighting_for_territory()
+	xr_effects.scenario_autosave(db.actor, nil, {"st_save_esc_quest_fighting_for_territory"})
+end
+
+function esc_give_quest_line_help_nebo()
+	task_manager.get_task_manager():give_task("esc_quest_line_help_nebo")
+end
+
+function esc_quest_help_nebo_radio_pol(first_speaker, second_speaker)
+	dialogs.relocate_item_section(second_speaker, "esc_quest_help_nebo_radio", "in")
+end
+
+function esc_quest_help_nebo_radio_otd(first_speaker, second_speaker)
+	dialogs.relocate_item_section_from_actor(first_speaker, second_speaker, "esc_quest_help_nebo_radio")
+end
+
+function esc_quest_help_nebo_radio_precondition(first_speaker, second_speaker)
+	return first_speaker:object("esc_quest_help_nebo_radio") ~= nil
+end
+
+function esc_teleport_actor_village()
+	teleport_actor(-223.461975,-20.023888,-143.510559,esc_village_quest_look)
+end
+
+function esc_toolkit_1(first_speaker, second_speaker)
+	return first_speaker:object("toolkit_1") ~= nil
+end
+
+function esc_toolkit_2(first_speaker, second_speaker)
+	return first_speaker:object("toolkit_2") ~= nil
+end
+
+function esc_toolkit_3(first_speaker, second_speaker)
+	return first_speaker:object("toolkit_3") ~= nil
+end
+
+function esc_toolkit_1_out(first_speaker, second_speaker)
+	dialogs.relocate_item_section_from_actor(first_speaker, second_speaker, "toolkit_1")
+end
+
+function esc_toolkit_2_out(first_speaker, second_speaker)
+	dialogs.relocate_item_section_from_actor(first_speaker, second_speaker, "toolkit_2")
+end
+
+function esc_toolkit_3_out(first_speaker, second_speaker)
+	dialogs.relocate_item_section_from_actor(first_speaker, second_speaker, "toolkit_3")
+end
+
+function m_toolkit_1_reward(first_speaker, second_speaker)
+	dialogs.relocate_money_to_actor(first_speaker, second_speaker, 2000)
+end
+
+function m_toolkit_2_reward(first_speaker, second_speaker)
+	dialogs.relocate_money_to_actor(first_speaker, second_speaker, 5000)
+end
+
+function m_toolkit_3_reward(first_speaker, second_speaker)
+	dialogs.relocate_money_to_actor(first_speaker, second_speaker, 10000)
+end
+
+function give_esc_quest_line_dungeon()
+	task_manager.get_task_manager():give_task("esc_quest_line_dungeon")
+end
+
+function esc_watchmaker_key_door(first_speaker, second_speaker)
+	dialogs.relocate_item_section(second_speaker, "esc_watchmaker_key_door", "in")
+end
+
+function esc_inv_plen_home(first_speaker, second_speaker)
+	RActInvFromBox("esc_quest_line_away_from_the_bandits_box")
+end
+
+function give_esc_quest_line_research_underground()
+	task_manager.get_task_manager():give_task("esc_quest_line_research_underground")
+end
+
+function save_esc_quest_line_away_from_the_bandits()
+	xr_effects.scenario_autosave(db.actor, nil, {"st_save_esc_quest_line_away_from_the_bandits"})
+end
+
+function save_esc_quest_line_help_nebo()
+	xr_effects.scenario_autosave(db.actor, nil, {"st_save_esc_quest_line_help_nebo"})
+end
+
+function esc_hanter_medkit(first_speaker, second_speaker)
+	dialogs.relocate_item_section_from_actor(first_speaker, second_speaker, "medkit")
+end
+
+function esc_hanter_medkit_precondition(first_speaker, second_speaker)
+	return first_speaker:object("medkit") ~= nil
+end
+
+function give_esc_quest_conductor()
+	task_manager.get_task_manager():give_task("esc_quest_conductor")
+end
+
+function esc_quest_conductor_reward(first_speaker, second_speaker)
+	dialogs.relocate_money_to_actor(first_speaker, second_speaker, 5000)
+end
+
+function give_esc_quest_night_hunting()
+	task_manager.get_task_manager():give_task("esc_quest_night_hunting")
+end
+
+function esc_helm_hardhat_nightvision (first_speaker, second_speaker)
+	dialogs.relocate_item_section(second_speaker, "helm_hardhat_pnv", "in")
+end

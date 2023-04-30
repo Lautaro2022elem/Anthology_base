@@ -1,0 +1,40 @@
+[logic@sucker_1]
+active = mob_walker@1
+suitable = {=target_squad_name(sad_sim_11_bloodsuckers)} true
+monster_job = true
+prior = 230
+
+[logic@sucker_2]:logic@sucker_1
+active = mob_walker@2
+prior = 220
+
+[logic@sucker_3]:logic@sucker_1
+active = mob_walker@3
+prior = 210
+
+[logic@sucker_4]:logic@sucker_1
+active = mob_walker@4
+prior = 200
+
+[mob_walker@hide]
+on_info2 = {=mob_was_hit} %+sad_sim_11_bloodsuckers_awake%, {=dist_to_actor_le(3)} %+sad_sim_11_bloodsuckers_awake%
+on_info3 = {+sad_sim_11_bloodsuckers_awake} mob_walker@all %=set_visual_memory_enabled(1) =set_bloodsucker_state(2)%
+
+[mob_walker@1]:mob_walker@hide
+path_walk = bloodsucker_hide_1
+on_info = {-sad_sim_11_sucker_vis_1} %+sad_sim_11_sucker_vis_1 =set_visual_memory_enabled(0) =set_bloodsucker_state(0)%
+
+[mob_walker@2]:mob_walker@hide
+path_walk = bloodsucker_hide_2
+on_info = {-sad_sim_11_sucker_vis_2} %+sad_sim_11_sucker_vis_2 =set_visual_memory_enabled(0) =set_bloodsucker_state(0)%
+
+[mob_walker@3]:mob_walker@hide
+path_walk = bloodsucker_hide_3
+on_info = {-sad_sim_11_sucker_vis_3} %+sad_sim_11_sucker_vis_3 =set_visual_memory_enabled(0) =set_bloodsucker_state(0)%
+
+[mob_walker@4]:mob_walker@hide
+path_walk = bloodsucker_hide_4
+on_info = {-sad_sim_11_sucker_vis_4} %+sad_sim_11_sucker_vis_4 =set_visual_memory_enabled(0) =set_bloodsucker_state(0)%
+
+[mob_walker@all]
+path_walk = zombi_walk1

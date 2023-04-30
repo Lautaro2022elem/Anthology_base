@@ -1,0 +1,10 @@
+[logic]
+active = sr_idle@wait
+
+[sr_idle@wait]
+on_actor_inside = {-flag_run_lift_1b} sr_idle@run %=run_tutorial(tutorial_lift_button_1)%
+
+
+[sr_idle@run]
+on_actor_outside = {-flag_run_lift_1b -flag_run_lift_1c} sr_idle@wait %=stop_tutorial%
+

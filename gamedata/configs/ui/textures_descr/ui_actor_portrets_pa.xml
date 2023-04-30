@@ -1,0 +1,45 @@
+<w>
+    <file name="ui\ui_actor_portrets_pa">
+
+	<texture id="ui_inGame2_Gas_raspirator_2" x="0" y="435" width="123" height="87" />
+	<texture id="ui_inGame2_Krivoy" x="0" y="522" width="123" height="87" />
+	<texture id="ui_inGame2_Fish" x="0" y="609" width="123" height="87" />
+	<texture id="ui_inGame2_Enot" x="0" y="696" width="123" height="87" />
+	<texture id="ui_inGame2_Rasputin" x="0" y="783" width="123" height="87" />
+	<texture id="ui_inGame2_Bar_security" x="0" y="870" width="123" height="87" />
+
+	<texture id="ui_inGame2_Lisiy" x="123" y="435" width="123" height="87" />
+	<texture id="ui_inGame2_Lom" x="123" y="522" width="123" height="87" />
+	<texture id="ui_inGame2_Storyman" x="123" y="609" width="123" height="87" />
+	<texture id="ui_inGame2_Muravei" x="123" y="696" width="123" height="87" />
+	<texture id="ui_inGame2_Lutiy2" x="123" y="870" width="123" height="87" />
+
+	<texture id="ui_inGame2_Lesnik" x="246" y="435" width="123" height="87" />
+	<texture id="ui_inGame2_Valerian" x="246" y="522" width="123" height="87" />
+	<texture id="ui_inGame2_Grif" x="246" y="609" width="123" height="87" />
+	<texture id="ui_inGame2_Cherep" x="246" y="696" width="123" height="87" />
+	<texture id="ui_inGame2_Petrovich" x="246" y="783" width="123" height="87" />
+	<texture id="ui_inGame2_Hero_Zver" x="246" y="870" width="123" height="87" />
+
+	<texture id="ui_inGame2_Rezak" x="738" y="261" width="123" height="87" />
+	<texture id="ui_inGame2_Moskit" x="738" y="347" width="123" height="87" />
+	<texture id="ui_inGame2_Shurup" x="738" y="435" width="123" height="87" />
+	<texture id="ui_inGame2_Murad" x="738" y="522" width="123" height="87" />
+	<texture id="ui_inGame2_Mrakobes" x="738" y="609" width="123" height="87" />
+	<texture id="ui_inGame2_Markus" x="738" y="783" width="123" height="87" /> 
+	<texture id="ui_inGame2_Shaman" x="738" y="870" width="123" height="87" />
+	<texture id="ui_inGame2_Kuvalda" x="861" y="0" width="123" height="87" />
+	<texture id="ui_inGame2_Snake" x="861" y="609" width="123" height="87" />
+	<texture id="ui_inGame2_Dubolom" x="861" y="261" width="123" height="87" />
+	<texture id="ui_inGame2_Orest" x="861" y="348" width="123" height="87" />
+	<texture id="ui_inGame2_Sidor" x="861" y="696" width="123" height="87" />
+	<texture id="ui_inGame2_Wolf" x="861" y="783" width="123" height="87" />
+	<texture id="ui_inGame2_Shtik" x="861" y="436" width="123" height="87" />
+	<texture id="ui_inGame2_Furgon" x="861" y="522" width="123" height="87" />
+	<texture id="ui_inGame2_Zoxan" x="861" y="174" width="123" height="87" /> 
+	<texture id="ui_inGame2_Stavrid" x="738" y="696" width="123" height="87" />
+	<texture id="ui_inGame2_Miklucha" x="861" y="87" width="123" height="87" />
+	<texture id="ui_inGame2_Lutiy" x="861" y="870" width="123" height="87" />  
+
+   </file>
+</w>

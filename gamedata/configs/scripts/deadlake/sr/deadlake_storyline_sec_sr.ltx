@@ -1,0 +1,16 @@
+[logic]
+active = sr_idle@check_storyline_task
+
+[sr_idle@check_storyline_task]
+on_info = {+dl_storyline_garik_quest_go} sr_idle@check_item %=spawn_corpse(dl_dead_stalker_last:dl_sp_dead_stalker_last)% 
+
+[sr_idle@check_item]
+on_info = {=actor_has_item(val_grek_pda)} sr_idle@timer %=spawn_corpse(dl_dead_mercenaries:dl_sp_dead_merc) +dl_dead_grek_pda =hero_thoughts_33%
+
+[sr_idle@timer]
+on_timer = 5000 | sr_idle@check_merc_pda %=dl_grek_notes%
+
+[sr_idle@check_merc_pda]
+on_info = {=actor_has_item(dl_dead_merc_pda)} sr_idle@nil %+dl_actor_has_pda_killer%
+
+[sr_idle@nil]

@@ -1,0 +1,468 @@
+[esc_tech_instruments] ;Инструменты для Фургона
+icon = ui_inGame2_Instrumenti
+prior = 1
+storyline = false
+title = {+esc_tech_instrument_1_brought +esc_tech_instrument_2_brought} esc_get_tools_3_name, {+esc_tech_instrument_1_brought +esc_tech_instrument_3_brought} esc_get_tools_2_name, {+esc_tech_instrument_2_brought +esc_tech_instrument_3_brought} esc_get_tools_1_name, {+esc_tech_instrument_3_brought} esc_get_tools_1_2_name, {+esc_tech_instrument_2_brought} esc_get_tools_1_3_name, {+esc_tech_instrument_1_brought} esc_get_tools_2_3_name, esc_mechanic_toolkit_search_name
+descr = {+esc_tech_instrument_1_brought +esc_tech_instrument_2_brought} esc_get_tools_3_text, {+esc_tech_instrument_1_brought +esc_tech_instrument_3_brought} esc_get_tools_2_text, {+esc_tech_instrument_2_brought +esc_tech_instrument_3_brought} esc_get_tools_1_text, {+esc_tech_instrument_3_brought} esc_get_tools_1_2_text, {+esc_tech_instrument_2_brought} esc_get_tools_1_3_text, {+esc_tech_instrument_1_brought} esc_get_tools_2_3_text, esc_mechanic_toolkit_search_text
+condlist_0 = {+esc_tech_instrument_1_brought +esc_tech_instrument_2_brought +esc_tech_instrument_3_brought} complete
+condlist_1 = {+esc_quest_line_secret_freedom_complete} fail
+
+
+
+[esc_risovalshik_items] ;Предметы на заказ
+icon = ui_inGame2_Osobiy_zakaz
+prior = 2
+storyline = false
+title = {-esc_order_ready_task} esc_risovalshik_items_wait_order_name, esc_risovalshik_items_get_order_name 
+descr = {-esc_order_ready_task} esc_risovalshik_items_wait_order_text, esc_risovalshik_items_get_order_text
+target = {-esc_order_ready_task} nil, esc_risovalshik
+condlist_0 = {-esc_order_in_process -esc_order_refused} complete
+condlist_1 = {-esc_order_in_process +esc_order_refused} reversed
+
+
+
+[esc_the_first_penny] ;Первые копейки
+icon = ui_iconsTotal_quest_the_first_penny
+prior = 15
+storyline = true
+title = {+esc_the_first_penny_inventory} esc_the_first_penny_part_4_name, {+esc_the_first_penny_nashel} esc_the_first_penny_part_3_name, {+esc_dialog_wolf_the_first_penny_okey} esc_the_first_penny_part_2_name, esc_the_first_penny_part_1_name
+descr = {+esc_the_first_penny_inventory} esc_the_first_penny_part_4_text, {+esc_the_first_penny_nashel} esc_the_first_penny_part_3_text, {+esc_dialog_wolf_the_first_penny_okey} esc_the_first_penny_part_2_text, esc_the_first_penny_part_1_text
+target = {+esc_the_first_penny_inventory} esc_wolf, {+esc_the_first_penny_nashel}esc_quest_rukzak_id, {+esc_sr_escape_two_part} esc_sr_escape_two_part_id, {+esc_dialog_wolf_the_first_penny_okey} esc_sr_robbery_id, esc_wolf
+condlist_0 = {+esc_the_first_penny_complite} complete
+on_complete = %=complete_task_inc_goodwill(50:stalker)%
+
+
+[esc_quest_work_for_beginner] ;Работа для Новичка
+icon = ui_iconsTotal_quest_work_for_beginner
+prior = 20
+storyline = false
+title = {+esc_quest_work_for_beginner_art} esc_quest_work_for_beginner_part_3_name, {+esc_quest_work_for_beginner_poisk} esc_quest_work_for_beginner_part_2_name, esc_quest_work_for_beginner_part_1_name
+descr = {+esc_quest_work_for_beginner_art} esc_quest_work_for_beginner_part_3_text, {+esc_quest_work_for_beginner_poisk} esc_quest_work_for_beginner_part_2_text, esc_quest_work_for_beginner_part_1_text
+target = {+esc_quest_work_for_beginner_art} esc_trader_id, {+esc_quest_work_for_beginner_poisk} esc_anomal_zone_quest, esc_trader_id
+on_init = %+esc_quest_work_for_beginner_sidor_dialog_open_2%
+condlist_0 = {+esc_quest_work_for_beginner_complite} complete
+condlist_1 = {+esc_quest_work_for_beginner_fail} reversed
+reward_money = 1000
+on_complete = %=complete_task_inc_goodwill(50:stalker)%
+
+
+[esc_quest_talk_wolf] ;Поговорить с Волком
+icon = ui_iconsTotal_storyline
+prior = 20
+storyline = false
+title = esc_quest_talk_wolf_name
+descr = esc_quest_talk_wolf_text
+target = esc_wolf
+condlist_0 = {+esc_quest_talk_wolf_complite} complete
+condlist_1 = {+esc_codelock_lab_lock} reversed
+
+
+
+[eac_quest_trimming] ;Зачистка
+icon = ui_iconsTotal_quest_trimming
+prior = 20
+storyline = false
+title = {+esc_squad_quest_monster_2_dead +esc_squad_quest_monster_1_dead} eac_quest_trimming_part_3_name, {+esc_klin_quest_trimming_dialog_and} eac_quest_trimming_part_2_name, eac_quest_trimming_part_1_name
+descr = {+esc_squad_quest_monster_2_dead +esc_squad_quest_monster_1_dead} eac_quest_trimming_part_3_text, {+esc_klin_quest_trimming_dialog_and} eac_quest_trimming_part_2_text, eac_quest_trimming_part_1_text
+target = {+esc_squad_quest_monster_2_dead +esc_squad_quest_monster_1_dead} esc_wolf, {-esc_squad_quest_monster_2_dead +esc_squad_quest_monster_1_dead} esc_squad_quest_monster_2, {+esc_klin_quest_trimming_dialog_and -esc_squad_quest_monster_1_dead} esc_squad_quest_monster_1, esc_klin
+condlist_0 = {+eac_quest_trimming_complite} complete
+condlist_1 = {+esc_squad_quest_trimming_dead} fail
+condlist_2 = {+esc_squad_quest_trimming_reversed} reversed
+condlist_3 = {+esc_codelock_lab_lock} reversed
+reward_money = 6000
+on_complete = %=complete_task_inc_goodwill(50:stalker)%
+
+
+[esc_quest_insurance] ;Страховка
+icon = ui_iconsTotal_quest_insurance
+prior = 40
+storyline = false
+title = {+esc_wolf_quest_insurance_dialog_complite_and} esc_quest_insurance_part_6_name, {+esc_wolf_quest_insurance_af_medusa} esc_quest_insurance_part_5_name, {+esc_wolf_quest_insurance_dialog_gg} esc_quest_insurance_part_4_name, {+esc_wolf_quest_insurance_dialog_strahovka} esc_quest_insurance_part_3_name, {+esc_wolf_quest_insurance_dialog_and} esc_quest_insurance_part_2_name, esc_quest_insurance_part_1_name
+descr = {+esc_wolf_quest_insurance_dialog_complite_and} esc_quest_insurance_part_6_text, {+esc_wolf_quest_insurance_af_medusa} esc_quest_insurance_part_5_text, {+esc_wolf_quest_insurance_dialog_gg} esc_quest_insurance_part_4_text, {+esc_wolf_quest_insurance_dialog_strahovka} esc_quest_insurance_part_3_text, {+esc_wolf_quest_insurance_dialog_and} esc_quest_insurance_part_2_text, esc_quest_insurance_part_1_text
+target = {+esc_wolf_quest_insurance_dialog_complite_and} esc_wolf, {esc_wolf_quest_insurance_af_medusa} esc_wolf, {+esc_wolf_quest_insurance_dialog_gg} esc_anomal_zone_2, esc_wolf
+condlist_0 = {+esc_quest_insurance_complite} complete
+condlist_1 = {+esc_quest_insurance_reversed} reversed
+condlist_2 = {+esc_codelock_lab_lock} reversed
+reward_money = 3000
+on_complete = %=complete_task_inc_goodwill(50:stalker)%
+
+
+[esc_quest_talk_wolf_work] ;Поговорить с Волком (насчет работы)
+icon = ui_iconsTotal_storyline
+prior = 25
+storyline = false
+title = esc_quest_talk_wolf_work_name
+descr = esc_quest_talk_wolf_work_text
+target = esc_wolf
+condlist_0 = {+esc_quest_talk_wolf_work_complite} complete
+condlist_1 = {+esc_codelock_lab_lock} reversed
+
+
+[esc_quest_hunting] ;Охота
+icon = ui_iconsTotal_quest_hunting
+prior = 50
+storyline = false
+title = {+esc_quest_hunting_shaman} esc_quest_hunting_part_4_name, {+esc_quest_hunting_npc_wood_goblin_wounded_dialog_and} esc_quest_hunting_part_3_name, {+esc_npc_wood_goblin_wounded +esc_squad_monster_quest_dead} esc_quest_hunting_part_5_name, {+esc_quest_hunting_npc_wood_goblin_dialog_and} esc_quest_hunting_part_2_name, esc_quest_hunting_part_1_name
+descr = {+esc_quest_hunting_shaman} esc_quest_hunting_part_4_text, {+esc_quest_hunting_npc_wood_goblin_wounded_dialog_and} esc_quest_hunting_part_3_text, {+esc_npc_wood_goblin_wounded +esc_squad_monster_quest_dead} esc_quest_hunting_part_5_text, {+esc_quest_hunting_npc_wood_goblin_dialog_and} esc_quest_hunting_part_2_text, esc_quest_hunting_part_1_text
+target = {+esc_quest_hunting_shaman} esc_shaman, esc_npc_wood_goblin
+condlist_0 = {+esc_quest_hunting_complite} complete
+condlist_1 = {+esc_npc_wood_goblin_dead} fail
+condlist_2 = {+esc_quest_hunting_reversed} reversed
+condlist_3 = {+esc_codelock_lab_lock} reversed
+reward_money = 4500
+reward_item = wpn_wincheaster1300:ammo_12x76_zhekan:bandage:medkit:bandage:medkit:ammo_12x76_zhekan:ammo_12x76_zhekan:helm_hardhat:antirad:antirad
+on_complete = %=complete_task_inc_goodwill(50:stalker)%
+
+
+[esc_quest_trifling_matter] ;Плевое дело
+icon = ui_iconsTotal_quest_trifling_matter
+prior = 25
+storyline = false
+title = {+esc_quest_trifling_matter_fail} esc_quest_trifling_matter_part_5_name, {+esc_quest_trifling_matter_compl} esc_quest_trifling_matter_part_4_name, {+esc_quest_trifling_sydba} esc_quest_trifling_matter_part_3_name, {+esc_quest_trifling_matter_postal} esc_quest_trifling_matter_part_2_name, esc_quest_trifling_matter_part_1_name
+descr = {+esc_quest_trifling_matter_fail} esc_quest_trifling_matter_part_5_text, {+esc_quest_trifling_matter_compl} esc_quest_trifling_matter_part_4_text, {+esc_quest_trifling_sydba} esc_quest_trifling_matter_part_3_text, {+esc_quest_trifling_matter_postal} esc_quest_trifling_matter_part_2_text, esc_quest_trifling_matter_part_1_text
+target = {+esc_quest_trifling_matter_fail} esc_trader_id, {+esc_quest_trifling_matter_compl}esc_trader_id, {+esc_quest_trifling_matter_postal} esc_npc_garlic, esc_trader_id
+condlist_0 = {+esc_quest_trifling_matter_complite} complete
+condlist_1 = {+esc_quest_trifling_matter_proval} fail
+reward_money = 3000
+on_complete = %=complete_task_inc_goodwill(50:stalker)%
+
+
+
+[esc_quest_serious_business] ;Серьёзное дело
+icon = ui_iconsTotal_quest_serious_business
+prior = 70
+storyline = false
+title = {+esc_quest_serious_business_npc_pate_enemy} esc_quest_serious_business_part_6_name, {+esc_quest_serious_business_kpp} esc_quest_serious_business_part_5_name, {+esc_quest_serious_business_obzor_tryp} esc_quest_serious_business_part_4_name, {+esc_quest_serious_business_obzor} esc_quest_serious_business_part_3_name, {+esc_quest_serious_business_search} esc_quest_serious_business_part_2_name, esc_quest_serious_business_part_1_name
+descr = {+esc_quest_serious_business_npc_pate_enemy} esc_quest_serious_business_part_6_text, {+esc_quest_serious_business_kpp} esc_quest_serious_business_part_5_text, {+esc_quest_serious_business_obzor_tryp} esc_quest_serious_business_part_4_text, {+esc_quest_serious_business_obzor} esc_quest_serious_business_part_3_text, {+esc_quest_serious_business_search} esc_quest_serious_business_part_2_text, esc_quest_serious_business_part_1_text
+target = {+esc_quest_serious_business_npc_pate_enemy} esc_trader_id, {+esc_quest_serious_business_kpp}esc_npc_pate, {+esc_quest_serious_business_obzor_2} esc_quest_metka_razryha, {+esc_quest_serious_business_obzor} esc_quest_metka_elevator, {+esc_quest_serious_business_risovalshik} esc_risovalshik, {+esc_quest_serious_business_dybolom} esc_npc_kishka, {+esc_quest_serious_business_search} esc_wolf, esc_trader_id
+condlist_0 = {+esc_serious_business_complite} complete
+condlist_1 = {+esc_serious_business_fail} fail
+condlist_2 = {-esc_quest_serious_business_npc_pate_enemy +esc_npc_pate_dead} fail
+reward_money = 6000
+on_complete = %=complete_task_inc_goodwill(50:stalker)%
+
+
+[esc_quest_dangerous_business] ;Опасное дело
+icon = ui_iconsTotal_quest_dangerous_business
+prior = 90
+storyline = false
+title = {+esc_quest_dangerous_business_otdat} esc_quest_dangerous_business_part_5_name, {+esc_sidor_habar_open} esc_quest_dangerous_business_part_4_name, {+esc_quest_dangerous_business_merc_proval} esc_quest_dangerous_business_part_6_name, {+esc_quest_dangerous_business_ataka} esc_quest_dangerous_business_part_3_name, {+esc_quest_dangerous_business_sidor_dialog_and} esc_quest_dangerous_business_part_2_name, esc_quest_dangerous_business_part_1_name
+descr = {+esc_quest_dangerous_business_otdat} esc_quest_dangerous_business_part_5_text, {+esc_sidor_habar_open} esc_quest_dangerous_business_part_4_text, {+esc_quest_dangerous_business_merc_proval} esc_quest_dangerous_business_part_6_text, {+esc_quest_dangerous_business_ataka} esc_quest_dangerous_business_part_3_text, {+esc_quest_dangerous_business_sidor_dialog_and} esc_quest_dangerous_business_part_2_text, esc_quest_dangerous_business_part_1_text
+target =  {+esc_quest_dangerous_business_otdat} esc_trader_id, {+esc_sidor_habar_open} esc_kkp_sidr_habar, {+esc_quest_dangerous_business_ataka} esc_bandit_shmiga, {+esc_quest_dangerous_business_sidor_dialog_and} esc_merc_bear, esc_trader_id
+condlist_0 = {+esc_dangerous_business_complite} complete
+condlist_1 = {+esc_dangerous_business_fall} fail
+condlist_2 = {+esc_codelock_lab_lock} reversed
+reward_money = 10000
+on_complete = %=complete_task_inc_goodwill(50:stalker)%
+
+[esc_quest_criminal_business] ;Преступный бизнес
+icon = ui_iconsTotal_quest_criminal_business
+prior = 90
+storyline = false
+title = {+esc_quest_criminal_business_talk_logoped} esc_quest_criminal_business_part_4_name, {+esc_quest_criminal_business_box} esc_quest_criminal_business_part_3_name, {+esc_quest_dangerous_business_hit_shmiga} esc_quest_criminal_business_part_2a_name, {+esc_quest_dangerous_business_talk_shmiga} esc_quest_criminal_business_part_2_name, esc_quest_criminal_business_part_1_name
+descr = {+esc_quest_criminal_business_talk_logoped} esc_quest_criminal_business_part_4_text, {+esc_quest_criminal_business_box} esc_quest_criminal_business_part_3_text, {+esc_quest_dangerous_business_hit_shmiga} esc_quest_criminal_business_part_2a_text, {+esc_quest_dangerous_business_talk_shmiga} esc_quest_criminal_business_part_2_text, esc_quest_criminal_business_part_1_text
+target = {+esc_quest_criminal_business_talk_logoped} esc_bandit_logoped, {+esc_quest_criminal_business_box} esc_inventory_box_base_bandits, {+esc_quest_dangerous_business_hit_shmiga} esc_bandit_shmiga, {+esc_quest_dangerous_business_talk_shmiga} esc_bandit_shmiga, esc_bandit_logoped
+condlist_0 = {+esc_quest_criminal_business_complite} complete
+condlist_1 = {+esc_quest_criminal_business_fall} fail
+condlist_2 = {+esc_remove_baza_bandits} fail
+condlist_3 = {+esc_codelock_lab_lock} reversed
+reward_money = 5000
+
+[esc_quest_gopstop] ;Гоп-стоп
+icon = ui_iconsTotal_quest_gopstop
+prior = 12
+storyline = false
+title = {+esc_npc_moskit_dead} esc_quest_gopstop_part_4_name, {+esc_npc_moskit_kill} esc_quest_gopstop_part_3_name, {+esc_quest_gopstop_kill_stalker} esc_quest_gopstop_part_2_name, esc_quest_gopstop_part_1_name
+descr = {+esc_npc_moskit_dead} esc_quest_gopstop_part_4_text, {+esc_npc_moskit_kill} esc_quest_gopstop_part_3_text, {+esc_quest_gopstop_kill_stalker} esc_quest_gopstop_part_2_text, esc_quest_gopstop_part_1_text
+target = {+esc_npc_moskit_dead} esc_bandit_logoped, {+esc_npc_moskit_kill} esc_npc_moskit, {+esc_quest_gopstop_kill_stalker} esc_quest_gopstop_control, esc_bandit_logoped
+condlist_0 = {+esc_quest_gopstop_complite} complete
+condlist_1 = {+esc_quest_gopstop_fail} fail
+condlist_2 = {+esc_quest_gopstop_reversed} reversed
+condlist_3 = {+esc_remove_baza_bandits} fail
+condlist_4 = {+esc_codelock_lab_lock} reversed
+
+
+[esc_quest_mechanic_search] ;Механник для бандитов
+icon = ui_inGame2_quest_mechanic_search
+prior = 12
+storyline = false
+title = {+esc_quest_mechanic_search_logoped_2_talk} esc_quest_mechanic_search_part_3_name, {+esc_quest_mechanic_search_logoped_1_talk} esc_quest_mechanic_search_part_2_name, esc_quest_mechanic_search_part_1_name
+descr = {+esc_quest_mechanic_search_logoped_2_talk} esc_quest_mechanic_search_part_3_text, {+esc_quest_mechanic_search_logoped_1_talk} esc_quest_mechanic_search_part_2_text, esc_quest_mechanic_search_part_1_text
+target = {+esc_quest_mechanic_search_logoped_1_talk} esc_bandit_logoped, {+esc_quest_mechanic_search_logoped_2_talk} esc_bandit_logoped, nil
+condlist_0 = {+esc_quest_mechanic_search_complite} complete
+condlist_1 = {+esc_quest_mechanic_search_fail} fail
+condlist_2 = {+esc_remove_baza_bandits} fail
+reward_money = 1000
+
+
+
+[esc_quest_shaman_worke] ;Работа
+icon = ui_iconsTotal_storyline
+prior = 52
+storyline = false
+title = esc_quest_shaman_worke_name
+descr = esc_quest_shaman_worke_text
+target = esc_shaman
+condlist_0 = {+esc_quest_shaman_worke_complite} complete
+condlist_1 = {+esc_quest_shaman_worke_fail} fail
+condlist_2 = {+esc_codelock_lab_lock} reversed
+
+
+[esc_quest_shadowing] ;Слежка
+icon = ui_iconsTotal_quest_shadowing
+prior = 55
+storyline = false
+title = {+esc_quest_shadowing_shaman} esc_quest_shadowing_part_3_name, {+esc_soer_shron} esc_quest_shadowing_part_2_name, esc_quest_shadowing_part_1_name
+descr = {+esc_quest_shadowing_shaman} esc_quest_shadowing_part_3_text, {+esc_soer_shron} esc_quest_shadowing_part_2_text, esc_quest_shadowing_part_1_text
+target = {+esc_quest_shadowing_shaman} esc_shaman, esc_nps_soer
+condlist_0 = {+esc_quest_shadowing_complite} complete
+condlist_1 = {+esc_quest_shadowing_fail} fail
+condlist_2 = {+esc_codelock_lab_lock} reversed
+reward_money = 5000
+on_complete = %=complete_task_inc_goodwill(50:stalker)%
+
+
+
+[esc_quest_fighting_for_territory] ;Борьба за территорию
+icon = ui_iconsTotal_quest_fighting_for_territory
+prior = 65
+storyline = false
+title = {+esc_squad_atp_quest_bandits_dead} esc_quest_fighting_for_territory_part_3_name, {+esc_quest_fighting_for_territory_kill_band} esc_quest_fighting_for_territory_part_2_name, esc_quest_fighting_for_territory_part_1_name
+descr = {+esc_squad_atp_quest_bandits_dead} esc_quest_fighting_for_territory_part_3_text, {+esc_quest_fighting_for_territory_kill_band} esc_quest_fighting_for_territory_part_2_text, esc_quest_fighting_for_territory_part_1_text
+target = {+esc_squad_atp_quest_bandits_dead} esc_trader_kusto, {+esc_quest_fighting_for_territory_kill_band} esc_squad_atp_quest_bandits, esc_trader_kusto
+condlist_0 = {+esc_quest_fighting_for_territory_complite} complete
+condlist_1 = {+esc_quest_fighting_for_territory_fail} fail
+condlist_2 = {+esc_quest_fighting_for_territory_reversed} reversed
+condlist_3 = {+esc_codelock_lab_lock} reversed
+reward_money = 6500
+on_complete = %=complete_task_inc_goodwill(50:stalker)%
+
+
+[esc_entry_into_stalkers] ; Вступление в сталкеры
+icon = ui_iconsTotal_storyline
+prior = 70
+storyline = false
+title = esc_entry_into_stalkers_name
+descr = esc_entry_into_stalkers_text
+target = esc_shaman
+condlist_0 = {+change_actor_community_stalker_info} complete
+condlist_1 = {+esc_codelock_lab_lock} reversed
+
+
+[esc_quest_wolf_work_conductor] ;Поговорить с Волком (насчет работы Проводником)
+icon = ui_iconsTotal_storyline
+prior = 25
+storyline = false
+title = esc_quest_wolf_work_conductor_name
+descr = esc_quest_wolf_work_conductor_text
+target = esc_wolf
+condlist_0 = {+esc_quest_wolf_work_conductor_complite} complete
+condlist_1 = {+esc_codelock_lab_lock} reversed
+
+
+[esc_quest_conductor] ;Проводник
+icon = ui_iconsTotal_quest_conductor
+prior = 55
+storyline = false
+title = {+esc_student_quest_conductor_wolf} esc_quest_conductor_part_4_name, {+esc_quest_conductor_atp} esc_quest_conductor_part_3_name, {+esc_student_quest_conductor_dialog_go} esc_quest_conductor_part_2_name, esc_quest_conductor_part_1_name
+descr = {+esc_student_quest_conductor_wolf} esc_quest_conductor_part_4_text, {+esc_quest_conductor_atp} esc_quest_conductor_part_3_text, {+esc_student_quest_conductor_dialog_go} esc_quest_conductor_part_2_text, esc_quest_conductor_part_1_text
+target = {+esc_student_quest_conductor_wolf} esc_wolf, {+esc_quest_conductor_atp} esc_npc_student, {+esc_student_quest_conductor_dialog_go} esc_base_atp_quest_zona, esc_npc_student
+condlist_0 = {+esc_quest_conductor_complite} complete
+condlist_1 = {+esc_quest_conductor_fail} fail
+condlist_2 = {+esc_codelock_lab_lock} reversed
+on_complete = %=complete_task_inc_goodwill(50:stalker)%
+
+
+[esc_quest_night_hunting] ;Ночная охота
+icon = ui_iconsTotal_quest_night_hunting
+prior = 57
+storyline = false
+title = {+esc_quest_line_missing_connected_monstr_dead} esc_quest_night_hunting_part_3_name, {+esc_quest_night_hunting_time} esc_quest_night_hunting_part_2_name, esc_quest_night_hunting_part_1_name
+descr = {+esc_quest_line_missing_connected_monstr_dead} esc_quest_night_hunting_part_3_text, {+esc_quest_night_hunting_time} esc_quest_night_hunting_part_2_text, esc_quest_night_hunting_part_1_text
+target = {+esc_quest_line_missing_connected_monstr_dead} esc_barman_patogen, {+esc_quest_night_hunting_time}esc_squad_monster_quest_2, {+esc_quest_night_hunting_start} nil, esc_barman_patogen
+condlist_0 = {+esc_quest_night_hunting_complite} complete
+condlist_1 = {+esc_quest_night_hunting_fail} fail
+condlist_2 = {+esc_codelock_lab_lock} reversed
+reward_money = 3000
+on_complete = %=complete_task_inc_goodwill(50:stalker)%
+
+
+[esc_quest_army_contract_1] ;Теперь ты в армии 1
+icon = ui_iconsTotal_quest_army_contract_1
+prior = 57
+storyline = false
+title = {+esc_quest_army_contract_1_talk_kolyazin} esc_quest_army_contract_1_part_4_name, {+esc_chimera_quest_dead} esc_quest_army_contract_1_part_3_name, {+esc_quest_army_contract_1_in_zone} esc_quest_army_contract_1_part_2_name, esc_quest_army_contract_1_part_1_name
+descr = {+esc_quest_army_contract_1_talk_kolyazin} esc_quest_army_contract_1_part_4_text, {+esc_chimera_quest_dead} esc_quest_army_contract_1_part_3_text, {+esc_quest_army_contract_1_in_zone} esc_quest_army_contract_1_part_2_text, esc_quest_army_contract_1_part_1_text
+target =  {+esc_quest_army_contract_1_talk_kolyazin} esc_colonel_kolyazin, {+esc_chimera_quest_dead} esc_army_prapor_corpse, {+esc_quest_army_contract_1_in_zone} esc_chimera_quest, esc_quest_line_dungeon_control
+condlist_0 = {+esc_quest_army_contract_1_complite} complete
+condlist_1 = {+esc_codelock_lab_lock} reversed
+
+
+[esc_quest_army_contract_2] ;Теперь ты в армии 2
+icon = ui_iconsTotal_quest_army_contract_2
+prior = 57
+storyline = false
+title = {+esc_quest_army_contract_2_talk_kolyazin} esc_quest_army_contract_2_part_2_name, esc_quest_army_contract_2_part_1_name
+descr = {+esc_quest_army_contract_2_talk_kolyazin} esc_quest_army_contract_2_part_2_text, esc_quest_army_contract_2_part_1_text
+target = {+esc_quest_army_contract_2_talk_kolyazin} esc_colonel_kolyazin, {+esc_quest_dezertir_talk_dezertir} esc_dezertir_bandit, nil
+condlist_0 = {+esc_quest_army_contract_2_complite} complete
+condlist_1 = {+esc_codelock_lab_lock} reversed
+
+
+;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
+;;;;;;;;;;;;;;; СЮЖЕТНЫЕ КВЕСТЫ ;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
+;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
+
+[esc_the_entrance_to_the_zone] ;Проход в Зону
+icon = ui_inGame2_Put_v_pripyat
+prior = 35
+storyline = true
+title = {+esc_colonel_kolyazin_prisoner_actor_dialog_complite} esc_the_entrance_to_the_zone_part_3_name, {+esc_borland_start_dialog_go_info} esc_the_entrance_to_the_zone_part_2_name, esc_the_entrance_to_the_zone_part_1_name
+descr = {+esc_colonel_kolyazin_prisoner_actor_dialog_complite} esc_the_entrance_to_the_zone_part_3_text, {+esc_borland_start_dialog_go_info} esc_the_entrance_to_the_zone_part_2_text, esc_the_entrance_to_the_zone_part_1_text
+target = {+esc_colonel_kolyazin_prisoner_actor_dialog_complite} esc_sr_barrer_out, {+esc_borland_start_dialog_go_info} esc_army_shmatco, esc_risovalshik
+condlist_0 = {+esc_actor_barrier_outside +esc_quest_fee_info} complete
+condlist_1 = {+infa_esc_sr_barrer_zona_alarm_restiktor} fail
+condlist_2 = {+esc_sr_barrer_zona_stop_restiktor} fail
+
+
+[esc_quest_fee] ;Плата
+icon = ui_inGame2_Sdelka
+prior = 25
+storyline = true
+title = {+esc_borland_fee_dialog_and} esc_quest_fee_part_4_name, {+esc_colonel_kolyazin_quest_fee_and} esc_quest_fee_part_3_name, {+esc_quest_army_contract_start} esc_quest_fee_part_3a_name, {+esc_quest_fee_to_give_money} esc_quest_fee_part_2_name, esc_quest_fee_part_1_name
+descr = {+esc_borland_fee_dialog_and} esc_quest_fee_part_4_text, {+esc_colonel_kolyazin_quest_fee_and} esc_quest_fee_part_3_text, {+esc_quest_army_contract_start} esc_quest_fee_part_3a_text, {+esc_quest_fee_to_give_money} esc_quest_fee_part_2_text, esc_quest_fee_part_1_text
+target = {+esc_borland_fee_dialog_and} esc_sr_barrer_out, {+esc_colonel_kolyazin_quest_fee_and} esc_borland, {+esc_dialog_army_chernenco_and} esc_colonel_kolyazin, {+esc_quest_fee_to_give_money} esc_army_chernenco, nil
+condlist_0 = {+eac_quest_fee_complite} complete
+on_complete = %+esc_quest_work_for_beginner_fail +esc_risovalshik_open_zakaz =complete_task_inc_goodwill(50:stalker)%
+
+
+
+[esc_quest_free_habar] ;Забрать хабар
+icon = ui_inGame2_Sdelka
+prior = 25
+storyline = true
+title = esc_quest_free_habar_name
+descr = esc_quest_free_habar_text
+target = esc_inv_out_quest_fee
+condlist_0 = {+quest_fee_out_habar_box_used} complete
+condlist_1 = {+eac_quest_fee_complite} fail
+
+
+[eac_reach_base] ;Безопасное место
+icon = ui_iconsTotal_storyline
+prior = 10
+storyline = true
+title = eac_reach_base_name
+descr = eac_reach_base_text
+target = esc_village_zona_quest
+condlist_0 = {+esc_reach_base_complite} complete
+
+
+[esc_quest_line_meet_borland] ;Поговорить с Борландом
+icon = ui_iconsTotal_storyline
+prior = 50
+storyline = true
+title = esc_quest_line_meet_borland_name
+descr = esc_quest_line_meet_borland_text
+target = esc_borland
+condlist_0 = {+esc_quest_line_meet_borland_complete} complete
+
+
+[esc_quest_line_meet_patogen] ;Поговорить с Патогенычем
+icon = ui_iconsTotal_storyline
+prior = 50
+storyline = true
+title = esc_quest_line_meet_patogen_name
+descr = esc_quest_line_meet_patogen_text
+target = esc_barman_patogen
+condlist_0 = {+esc_quest_line_meet_patogen_complete} complete
+
+
+[esc_quest_line_missing_connected] ;Пропавший связной
+icon = ui_iconsTotal_storyline
+prior = 55
+storyline = true
+title = {+esc_quest_line_missing_connected_doclad} esc_quest_line_missing_connected_part_5_name, {-esc_quest_line_missing_connected_doclad +esc_quest_shvabroid_pda_info} esc_quest_line_missing_connected_part_4_name, {-esc_quest_line_missing_connected_doclad +esc_npc_shvabroid_dead} esc_quest_line_missing_connected_part_3_name, {+esc_quest_line_missing_connected_watch} esc_quest_line_missing_connected_part_2_name, esc_quest_line_missing_connected_part_1_name
+descr = {+esc_quest_line_missing_connected_doclad} esc_quest_line_missing_connected_part_5_text, {-esc_quest_line_missing_connected_doclad +esc_quest_shvabroid_pda_info} esc_quest_line_missing_connected_part_4_text, {-esc_quest_line_missing_connected_doclad +esc_npc_shvabroid_dead} esc_quest_line_missing_connected_part_3_text, {+esc_quest_line_missing_connected_watch} esc_quest_line_missing_connected_part_2_text, esc_quest_line_missing_connected_part_1_text
+target = {+esc_quest_line_missing_connected_doclad} esc_barman_patogen, {-esc_quest_line_missing_connected_doclad +esc_quest_shvabroid_pda_info} esc_freedom_plen, {+esc_quest_line_missing_connected_watch}esc_npc_shvabroid, esc_quest_line_missing_connected_metka
+condlist_0 = {+esc_quest_line_missing_connected_complete} complete
+reward_money = 5000
+on_complete = %=complete_task_inc_goodwill(50:stalker)%
+
+
+[esc_quest_line_salvation_freedom] ;Спасение свободовца
+icon = ui_iconsTotal_storyline
+prior = 60
+storyline = true
+title = {+esc_freedom_plen_death} esc_quest_line_salvation_freedom_name_2, esc_quest_line_salvation_freedom_name
+descr = {+esc_freedom_plen_death} esc_quest_line_salvation_freedom_text_2, esc_quest_line_salvation_freedom_text
+target = {+esc_freedom_plen_death} esc_barman_patogen, esc_freedom_plen
+condlist_0 = {+esc_quest_line_salvation_freedom_complete} reversed
+reward_money = 3000
+
+
+[esc_quest_line_secret_freedom] ;Тайна свободовца
+icon = ui_iconsTotal_storyline
+prior = 80
+storyline = true
+title = {+esc_quest_line_secret_freedom_tryp} esc_quest_line_secret_freedom_part_7_name, {+esc_quest_line_secret_freedom_elevator} esc_quest_line_secret_freedom_part_6_name, {+esc_quest_line_secret_freedom_search} esc_quest_line_secret_freedom_part_5_name, {+esc_quest_line_secret_freedom_zabrat} esc_quest_line_secret_freedom_part_4_name, {+esc_quest_line_secret_freedom_wait} esc_quest_line_secret_freedom_part_3_name, {+esc_quest_line_secret_freedom_pda} esc_quest_line_secret_freedom_part_2_name, esc_quest_line_secret_freedom_part_1_name
+descr = {+esc_quest_line_secret_freedom_tryp} esc_quest_line_secret_freedom_part_7_text, {+esc_quest_line_secret_freedom_elevator} esc_quest_line_secret_freedom_part_6_text, {+esc_quest_line_secret_freedom_search} esc_quest_line_secret_freedom_part_5_text, {+esc_quest_line_secret_freedom_zabrat} esc_quest_line_secret_freedom_part_4_text, {+esc_quest_line_secret_freedom_wait} esc_quest_line_secret_freedom_part_3_text, {+esc_quest_line_secret_freedom_pda} esc_quest_line_secret_freedom_part_2_text, esc_quest_line_secret_freedom_part_1_text
+target = {+esc_quest_line_secret_freedom_elevator} esc_quest_metka_elevator_trup, {+esc_quest_line_secret_freedom_search} esc_barman_patogen, {+esc_quest_line_secret_freedom_zabrat} esc_quest_metka_mehanic_nety, {+esc_quest_line_secret_freedom_wait} nil, {+esc_quest_line_secret_freedom_pda} esc_mechanic_furgon, esc_freedom_plen
+condlist_0 = {+esc_quest_line_secret_freedom_complete} complete
+on_complete = %=complete_task_inc_goodwill(50:stalker)%
+
+
+[esc_quest_line_help_nebo] ; Странное дело
+icon = ui_iconsTotal_storyline
+prior = 85
+storyline = true
+title = {+esc_quest_help_nebo_apparatyra} esc_quest_line_help_nebo_part_3_name, {+esc_quest_help_nebo_sidor} esc_quest_line_help_nebo_part_2_name, esc_quest_line_help_nebo_part_1_name
+descr = {+esc_quest_help_nebo_apparatyra} esc_quest_line_help_nebo_part_3_text, {+esc_quest_help_nebo_sidor} esc_quest_line_help_nebo_part_2_text, esc_quest_line_help_nebo_part_1_text
+target = {+esc_quest_help_nebo_apparatyra} esc_shaman, {+esc_quest_help_nebo_sidor} esc_trader_id, esc_shaman
+condlist_0 = {+esc_quest_line_help_nebo_complete} complete
+on_complete = %=complete_task_inc_goodwill(50:stalker)%
+
+
+[esc_quest_line_important_meet_borland] ;Поговорить с Борландом
+icon = ui_iconsTotal_storyline
+prior = 85
+storyline = true
+title = esc_quest_line_important_meet_borland_name
+descr = esc_quest_line_important_meet_borland_text
+target = esc_borland_quest
+condlist_0 = {+esc_quest_line_important_meet_borland_complete} complete
+
+
+[esc_quest_line_away_from_the_bandits] ;В гостях у бандитов
+icon = ui_iconsTotal_storyline
+prior = 100
+storyline = true
+title = {+esc_holod_quest_away_from_the_bandits_dialog_and} esc_quest_line_away_from_the_bandits_part_4_name, {+esc_quest_away_from_the_bandits_wait} esc_quest_line_away_from_the_bandits_part_3_name, {+esc_quest_away_from_the_bandits_out} esc_quest_line_away_from_the_bandits_part_2_name, esc_quest_line_away_from_the_bandits_part_1_name
+descr = {+esc_holod_quest_away_from_the_bandits_dialog_and} esc_quest_line_away_from_the_bandits_part_4_text, {+esc_quest_away_from_the_bandits_wait} esc_quest_line_away_from_the_bandits_part_3_text, {+esc_quest_away_from_the_bandits_out} esc_quest_line_away_from_the_bandits_part_2_text, esc_quest_line_away_from_the_bandits_part_1_text
+target = {+esc_holod_quest_away_from_the_bandits_dialog_and} esc_borland_quest, {+esc_quest_away_from_the_bandits_wait} nil, {+esc_quest_away_from_the_bandits_out} esc_borland_quest, esc_bandit_logoped
+condlist_0 = {+esc_quest_line_away_from_the_bandits_complete} complete
+on_complete = %=complete_task_inc_goodwill(50:stalker)%
+
+
+[esc_quest_line_dungeon] ;Подземелье
+icon = ui_iconsTotal_storyline
+prior = 100
+storyline = true
+title = {+esc_borland_quest_line_dungeon_dialog_open_door} esc_quest_line_dungeon_part_7_name, {+esc_quest_line_dungeon_borland} esc_quest_line_dungeon_part_6_name, {+esc_squad_quest_tushkan_dead} esc_quest_line_dungeon_part_5_name, {+esc_quest_line_dungeon_help} esc_quest_line_dungeon_part_4_name, {+esc_quest_line_dungeon_search} esc_quest_line_dungeon_part_3_name, {+esc_quest_line_dungeon_wolf} esc_quest_line_dungeon_part_2_name, esc_quest_line_dungeon_part_1_name
+descr = {+esc_borland_quest_line_dungeon_dialog_open_door} esc_quest_line_dungeon_part_7_text, {+esc_quest_line_dungeon_borland} esc_quest_line_dungeon_part_6_text, {+esc_squad_quest_tushkan_dead} esc_quest_line_dungeon_part_5_text, {+esc_quest_line_dungeon_help} esc_quest_line_dungeon_part_4_text, {+esc_quest_line_dungeon_search} esc_quest_line_dungeon_part_3_text, {+esc_quest_line_dungeon_wolf} esc_quest_line_dungeon_part_2_text, esc_quest_line_dungeon_part_1_text
+target = {+esc_borland_quest_line_dungeon_dialog_open_door} esc_quest_line_dungeon_mesto, {+esc_quest_line_dungeon_borland} esc_borland_underground, {+esc_squad_quest_tushkan_dead}esc_npc_watchmaker, {+esc_quest_line_dungeon_help} esc_npc_watchmaker, {+esc_quest_line_dungeon_search} esc_quest_line_dungeon_control, {+esc_quest_line_dungeon_wolf} esc_wolf, escape_quest_door_tunnel
+condlist_0 = {+esc_quest_line_dungeon_complete} complete
+on_complete = %=complete_task_inc_goodwill(50:stalker)%
+
+
+[esc_quest_line_research_underground] ;Исследование подземелья
+icon = ui_iconsTotal_storyline
+prior = 110
+storyline = true
+title = {+esc_codelock_lab_unlock} esc_quest_line_research_underground_part_10_name, {+esc_borland_und_laba} esc_quest_line_research_underground_part_9_name, {+esc_quest_line_research_underground_open_laba} esc_quest_line_research_underground_part_8_name, {+esc_quest_line_research_underground_laba_go} esc_quest_line_research_underground_part_7_name, {+esc_quest_line_research_underground_sidor_key} esc_quest_line_research_underground_part_6_name, {+esc_quest_line_research_underground_chasovhik_dialog} esc_quest_line_research_underground_part_5_name, {+esc_quest_line_research_underground_chasovhik} esc_quest_line_research_underground_part_4_name, {+esc_quest_line_research_underground_lab} esc_quest_line_research_underground_part_3_name, {+esc_quest_line_research_underground_sidor} esc_quest_line_research_underground_part_2_name, esc_quest_line_research_underground_part_1_name
+descr = {+esc_codelock_lab_unlock} esc_quest_line_research_underground_part_10_text, {+esc_borland_und_laba} esc_quest_line_research_underground_part_9_text, {+esc_quest_line_research_underground_open_laba} esc_quest_line_research_underground_part_8_text, {+esc_quest_line_research_underground_laba_go} esc_quest_line_research_underground_part_7_text, {+esc_quest_line_research_underground_sidor_key} esc_quest_line_research_underground_part_6_text, {+esc_quest_line_research_underground_chasovhik_dialog} esc_quest_line_research_underground_part_5_text, {+esc_quest_line_research_underground_chasovhik} esc_quest_line_research_underground_part_4_text, {+esc_quest_line_research_underground_chasovhik_dialog} esc_quest_line_research_underground_part_5_text, {+esc_quest_line_research_underground_lab} esc_quest_line_research_underground_part_3_text, {+esc_quest_line_research_underground_sidor} esc_quest_line_research_underground_part_2_text, esc_quest_line_research_underground_part_1_text
+target = {+esc_codelock_lab_unlock} esc_to_labx5_sr_1, {+esc_borland_und_laba} esc_codedoor_lab, {+esc_quest_line_research_underground_laba_go} esc_borland_lab, {+esc_quest_line_research_underground_sidor_key} esc_trader_id, {+esc_quest_line_research_underground_chasovhik_dialog} esc_npc_watchmaker, {+esc_underground_truba_exit_2} esc_underground_truba_exit_2, {+esc_quest_line_research_underground_chasovhik} esc_underground_truba_exit, {+esc_quest_line_research_underground_lab} esc_borland_underground, {+esc_quest_line_research_underground_sidor} esc_trader_walker, esc_borland_underground
+on_init = %+esc_quest_line_research_underground_start%
+condlist_0 = {+esc_quest_line_research_underground_complete} complete
+on_complete = %=complete_task_inc_goodwill(50:stalker)%
+

@@ -1,0 +1,145 @@
+--------------------------------------------------------------------------------
+-- SINS OF THE PAST PROLOGUE functions -----------------------------------------
+-- Made by ANOTHER TEAM --------------------------------------------------------
+-- for SoTP PROLOGUE -----------------------------------------------------------
+-- 08.11.2018 ------------------------------------------------------------------
+--------------------------------------------------------------------------------
+
+function wiz_owl_stalker_trader_actor_has_item_to_sell(first_speaker, second_speaker)
+	local items_table = {
+						"wiz_merc_lead_notebook",
+						"wiz_pda_nazar",
+						"wiz_pda_merc",
+						"wiz_pda_rezaka",
+						-- no sell
+						"jup_b1_half_artifact",
+						"af_quest_b14_twisted",
+						"af_oasis_heart",
+						"detector_scientific",
+						}
+
+	local info_table = {
+						["jup_b1_half_artifact"] = "zat_b30_owl_stalker_about_halfart_jup_b6_asked",
+						["af_quest_b14_twisted"] = "zat_b30_owl_stalker_about_halfart_zat_b14_asked",
+						["af_oasis_heart"] = "zat_b30_owl_stalker_trader_about_osis_art",
+						["detector_scientific"] = "zat_b30_owl_detectors_approached",
+						}
+
+	for k,v in pairs(items_table) do
+		if db.actor:object(v) ~= nil then
+			if v == "detector_scientific" and not has_alife_info("zat_b30_second_detector") then
+			else
+				if info_table[v] then
+					if not has_alife_info(info_table[v]) then
+						return true
+					end
+				else
+					return true
+				end
+			end
+		end
+	end
+
+	return false
+end
+
+function check_merc_pda_to_tech()
+    if db.actor:object("wiz_pda_merc_lock") then
+        return true
+    end
+    return false
+end
+
+function wiz_actor_has_nazar_pda(first_speaker, second_speaker)
+	return db.actor:object("wiz_pda_nazar") ~= nil
+end
+
+function wiz_actor_has_merc_pda(first_speaker, second_speaker)
+	return db.actor:object("wiz_pda_merc") ~= nil
+end
+
+function wiz_actor_has_rezak_pda(first_speaker, second_speaker)
+	return db.actor:object("wiz_pda_rezaka") ~= nil
+end
+
+function wiz_actor_has_merc_lead_notebook(first_speaker, second_speaker)
+	return db.actor:object("wiz_merc_lead_notebook") ~= nil
+end
+
+function wiz_sell_nazar_pda(first_speaker, second_speaker)
+	local amount = 1500
+	dialogs.relocate_item_section_from_actor(first_speaker, second_speaker, "wiz_pda_nazar")
+	dialogs.relocate_money_to_actor(first_speaker, second_speaker, amount)
+end
+
+function wiz_sell_merc_pda(first_speaker, second_speaker)
+	local amount = 1000
+	dialogs.relocate_item_section_from_actor(first_speaker, second_speaker, "wiz_pda_merc")
+	dialogs.relocate_money_to_actor(first_speaker, second_speaker, amount)
+end
+
+function wiz_sell_rezak_pda(first_speaker, second_speaker)
+	local amount = 500
+	dialogs.relocate_item_section_from_actor(first_speaker, second_speaker, "wiz_pda_rezaka")
+	dialogs.relocate_money_to_actor(first_speaker, second_speaker, amount)
+end
+
+function wiz_sell_merc_lead_notebook(first_speaker, second_speaker)
+	local amount = 2000
+	dialogs.relocate_item_section_from_actor(first_speaker, second_speaker, "wiz_merc_lead_notebook")
+	dialogs.relocate_money_to_actor(first_speaker, second_speaker, amount)
+end
+
+function out_money_for_unlocking(first_speaker, second_speaker) 
+	dialogs.relocate_money_from_actor(first_speaker, second_speaker, 1500)	
+end
+
+function out_wiz_pda_merc_lock(first_speaker, second_speaker) 
+	dialogs.relocate_item_section_from_actor(first_speaker, second_speaker, "wiz_pda_merc_lock") 
+end
+
+function out_wiz_pda_merc_lock_money()
+return db.actor:money()>=1500
+end
+
+function give_wiz_pda_merc(first_speaker, second_speaker) 
+	dialogs.relocate_item_section_to_actor(first_speaker, second_speaker, "wiz_pda_merc")
+end 
+
+function wiz_tech_secondary_quest_1_go()
+	task_manager.get_task_manager():give_task("wiz_scaner_quest")
+end
+
+function wiz_reward_uninvited_guests(first_speaker, second_speaker) 
+	dialogs.relocate_money_to_actor(first_speaker, second_speaker, 5000) 
+	dialogs.relocate_item_section_to_actor(first_speaker, second_speaker, "helm_tactic")
+	dialogs.relocate_item_section_to_actor(first_speaker, second_speaker, "wpn_mp5")
+	dialogs.relocate_item_section_to_actor(first_speaker, second_speaker, "ammo_9x19_fmj",2)
+end
+
+function give_wiz_merc_leader_key(first_speaker, second_speaker) 
+	dialogs.relocate_item_section_to_actor(first_speaker, second_speaker, "wiz_merc_leader_base_key")
+end 
+
+function gift_to_actor_from_rjaviu(first_speaker, second_speaker) 
+	dialogs.relocate_item_section_to_actor(first_speaker, second_speaker, "cs_heavy_outfit")
+end 
+
+function out_wiz_case_starogo(first_speaker, second_speaker) 
+	dialogs.relocate_item_section_from_actor(first_speaker, second_speaker, "wiz_case_starogo") 
+end
+
+function out_wiz_millitary_maps(first_speaker, second_speaker) 
+	dialogs.relocate_item_section_from_actor(first_speaker, second_speaker, "wiz_millitary_maps") 
+end
+
+function wiz_jekan_milmaps_quest_go()
+	task_manager.get_task_manager():give_task("wiz_military_secret")
+end
+
+function wiz_reward_milmaps(first_speaker, second_speaker) 
+	dialogs.relocate_money_to_actor(first_speaker, second_speaker, 4500) 
+	dialogs.relocate_item_section_to_actor(first_speaker, second_speaker, "ammo_12x70_buck",2)
+	dialogs.relocate_item_section_to_actor(first_speaker, second_speaker, "medkit_army",3)
+end
+

@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="windows-1251" ?>
+<string_table>
+
+	<!-- blck_val_a31_bandit_mechanic -->
+	<string id="blck_val_a31_bandit_mechanic_task_1_name">
+		<text>Find %s for Petrovich</text>
+	</string>
+	<string id="blck_val_a31_bandit_mechanic_task_1_text">
+		<text>You need to bring tools to Petrovich so that he can upgrade the equipment.</text>
+	</string>
+	<string id="blck_val_a31_bandit_mechanic_task_1_about">
+		<text>You know, buddy, I'm actually a pretty good technician. I can fix both weapons and armor, and even do some upgrades! Well, I would if the tools were decent. But where can you get them around here? Maybe you could help me get a basic set, huh?</text>
+	</string>
+	<string id="blck_val_a31_bandit_mechanic_task_1_fetch_about">
+		<text>I need a set of tools for rough work. It should have tools and oils for working with weapons. If you can get it, I'll be grateful and even pay you!.. Probably.</text>
+	</string>
+	<string id="blck_val_a31_bandit_mechanic_task_1_fetch_finish">
+		<text>Great, man! Oh, sorry, I don't have anything to pay you with. But I can give you a good discount!</text>
+	</string>
+	<string id="blck_val_a31_bandit_mechanic_task_2_name">
+		<text>Find %s for Petrovich</text>
+	</string>
+	<string id="blck_val_a31_bandit_mechanic_task_2_text">
+		<text>You need to bring Petrovich tools for delicate work. He needs a more complete set to perform more complex upgrades on equipment.</text>
+	</string>
+	<string id="blck_val_a31_bandit_mechanic_task_2_about">
+		<text>Hey man, if you agree to get me a more complete set, I'll give you an even bigger discount. Will you help me out, friend?</text>
+	</string>
+	<string id="blck_val_a31_bandit_mechanic_task_2_fetch_about">
+		<text>I need tools for delicate work. It should have everything I need. You'll be like a brother to me if you get it for me!</text>
+	</string>
+	<string id="blck_val_a31_bandit_mechanic_task_2_fetch_finish">
+		<text>Wow, thanks a lot, buddy! Now I'm definitely going to get rich. Damn, I'm going to be successful!.. If, of course, I don't miss this chance. But for now, I can't offer you anything better than a discount. Sorry, pal.</text>
+	</string>
+	<string id="blck_val_a31_bandit_mechanic_task_3_name">
+		<text>Find %s for Petrovich</text>
+	</string>
+	<string id="blck_val_a31_bandit_mechanic_task_3_text">
+		<text>You need to bring %s to Petrovich. He needs a unique set to perform even more complex upgrades on equipment.</text>
+	</string>
+	<string id="blck_val_a31_bandit_mechanic_task_3_about">
+		<text>Hey, kid, if you find something worthwhile, I'll give you a discount!</text>
+	</string>
+	<string id="blck_val_a31_bandit_mechanic_task_3_fetch_about">
+		<text>I need tools for calibration. They should have everything I need. You'll be like a brother to me if you fetch them for me!</text>
+	</string>
+	<string id="blck_val_a31_bandit_mechanic_task_3_fetch_finish">
+		<text>No way...! Oh man, thank you so much, bro! Now I'll definitely get rich. Damn, I'm gonna be successful!.. If, of course, I don't miss this chance. But for now, I can't offer you anything better than a discount. Sorry, pal.</text>
+	</string>
+
+	<!-- blck_val_a31_bandit_medic -->
+<string id="blck_val_a31_bandit_medic_task_1_name">
+	<text>%s for Antibiotic</text>
+</string>
+<string id="blck_val_a31_bandit_medic_task_1_text">
+	<text>You need to find a set and bring it to Medic Antibiotic.</text>
+</string>
+<string id="blck_val_a31_bandit_medic_task_1_about">
+	<text>I need a good set of medical tools. I can quickly patch up minor wounds, but for anything more serious than a simple scalpel, I don't have the necessary equipment.</text>
+</string>
+<string id="blck_val_a31_bandit_medic_task_1_fetch_about">
+	<text>I need a good set of medical tools. I can quickly patch up minor wounds, but for anything more serious than a simple scalpel, I don't have the necessary equipment.</text>
+</string>
+<string id="blck_val_a31_bandit_medic_task_1_fetch_finish">
+	<text>Thanks, friend! These tools will save the lives of many people. Thanks again for the tools.</text>
+</string>
+
+</string_table>

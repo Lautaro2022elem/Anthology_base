@@ -1,0 +1,193 @@
+<?xml version="1.0" encoding="windows-1251" ?>
+<string_table>
+	<string id="yan_st_levsha_name">
+		<text>Левша</text>
+	</string>
+
+	<string id="yan_st_digger_name">
+		<text>Кеша</text>
+	</string>
+
+	<string id="jup_a6_stalker_trader_name">
+		<text>Борис Бритва</text>
+	</string>
+
+	<string id="jup_ecolog_breeder_name">
+		<text>Професор Божевский</text>
+	</string>
+
+	<string id="jup_stalker_breeder_name">
+		<text>Доктор Брунько</text>
+	</string>
+
+	<string id="zat_stalker_breeder_name">
+		<text>Доктор Маковецкий</text>
+	</string>
+
+	<string id="pri_army_breeder_name">
+		<text>Доктор Кравченко</text>
+	</string>
+
+	<string id="mar_smart_terrain_10_5_renegade_leader_name">
+		<text>Гестель</text>
+	</string>
+
+	<string id="mar_smart_terrain_10_5_renegade_tech_name">
+		<text>Быча</text>
+	</string>
+
+	<string id="mar_smart_terrain_10_5_renegade_trader_name">
+		<text>Падла</text>
+	</string>
+
+	<string id="freedom_bodyguard_name">
+		<text>Капец</text>
+ 	</string>
+
+	<string id="freedom_bodyguard2_name">
+		<text>Угол</text>
+ 	</string>
+
+	<string id="mil_smart_terrain_7_12_breeder_name">
+		<text>Угрюмый</text>
+	</string>
+
+	<string id="mil_Svoboda_cook_name">
+		<text>Повар</text>
+	</string>
+
+	<string id="mil_Svoboda_master_Max_name">
+		<text>Макс</text>
+	</string>
+
+	<string id="mil_Svoboda_blockpost_leader_name">
+		<text>Кеп</text>
+	</string>
+
+	<string id="yan_sci_bunker_scientists_name">
+		<text>Профессор Луценко</text>
+	</string>
+
+	<string id="yan_sci_bunker_breeder_name">
+		<text>Доктор Кравченко</text>
+	</string>
+
+	<string id="zat_b22_stalker_medic_2_name">
+		<text>Айдар</text>
+	</string>
+
+	<string id="jup_ecolog_breeder_name">
+		<text>Професор Божевский</text>
+	</string>
+
+	<string id="jup_stalker_breeder_name">
+		<text>Доктор Брунько</text>
+	</string>
+
+	<string id="esc_leader_stalkerbase_name">
+		<text>Отец Валерьян</text>
+	</string>
+
+	<string id="gar_bandit_fixer_name">
+		<text>Прозрачный</text>
+	</string>
+
+	<string id="gar_bandit_leader_name">
+		<text>Йога</text>
+	</string>
+
+	<string id="gar_bandit_minigame_name">
+		<text>Живодёр</text>
+	</string>
+
+	<string id="gar_bandit_trader_name">
+		<text>Зуб</text>
+	</string>
+
+	<string id="gar_bandit_senya">
+		<text>Сенька</text>
+	</string>
+
+	<string id="gar_dolg_blokpost_leader_name">
+		<text>Прапор</text>
+	</string>
+
+	<string id="yan_st_levsha_name">
+		<text>Левша</text>
+	</string>
+
+	<string id="yan_st_digger_name">
+		<text>Кеша</text>
+	</string>
+
+	<string id="yan_breeder_name">
+		<text>Ассистент Анохин</text>
+	</string>
+
+	<string id="bar_breeder_name">
+		<text>Доцент Лоскутов</text>
+	</string>
+
+	<string id="st_fat_rookie_in_the_house_pole_name">
+		<text>Жирный</text>
+	</string>
+
+	<string id="st_fat_rookie_in_the_house_pole_purpose_name">
+		<text>Альфа</text>
+	</string>
+
+	<string id="mar_base_stalker_breeder_name">
+		<text>Профессор Плюснин</text>
+	</string>
+
+	<string id="red_greh_medic_name">
+		<text>Семаргл</text>
+	</string>
+
+	<string id="garbage_depo_stalker_barmenup_name">
+		<text>Филя</text>
+	</string>
+
+	<string id="garbage_depo_stalker_barmenin_name">
+		<text>Боря</text>
+	</string>
+
+	<string id="esc_smart_terrain_1_0_breeder_name">
+		<text>Профессор Панин</text>
+	</string>
+
+	<string id="svalk_depo_smart_terrain_breeder_name">
+		<text>Профессор Астанин</text>
+	</string>
+
+	<string id="bar_smart_terrain_0_0_breeder_name">
+		<text>Профессор Бутов</text>
+	</string>
+
+	<string id="wiz_stalker_breeder_name">
+		<text>Профессор Зеленков</text>
+	</string>
+
+	<string id="jup_b47_merc_01">
+		<text>Чёрный</text>
+	</string>
+	<string id="jup_b47_merc_02">
+		<text>Дуплет</text>
+	</string>
+	<string id="jup_b47_merc_03">
+		<text>Хирург</text>
+	</string>
+	<string id="jup_b47_merc_04">
+		<text>Череп</text>
+	</string>
+	<string id="jup_b47_merc_05">
+		<text>Кол</text>
+	</string>
+	<string id="jup_b47_merc_06">
+		<text>Кощей</text>
+	</string>
+	<string id="jup_b47_merc_07">
+		<text>Труп</text>
+	</string>
+
+</string_table>

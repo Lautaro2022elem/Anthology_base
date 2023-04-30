@@ -1,0 +1,30 @@
+; general section
+
+[walker@gen]
+meet = no_meet
+use_camp = false
+combat_ignore_cond = true
+combat_ignore_keep_when_attacked = true
+invulnerable = true
+gather_items_enabled = false
+help_wounded_enabled = false
+corpse_detection_enabled = false
+
+[logic]
+active = walker@1
+
+[walker@1]:walker@gen
+path_walk = sad_start_cs_actor_start
+path_look = sad_start_cs_actor_walk_1
+on_info = {+sad_start_guide_run} walker@2 %=sad_reset_animation%
+
+[walker@2]:walker@gen
+path_walk = sad_start_cs_actor_walk_1
+path_look = sad_start_cs_actor_look_1
+def_state_moving = run
+on_signal = on_position | %+sad_start_cs_actor_on_position%
+on_info = {+sad_start_guide_end_talk} walker@3 %=sad_reset_animation%
+
+[walker@3]:walker@gen
+path_walk = sad_start_actor_walk
+path_look = sad_start_actor_look

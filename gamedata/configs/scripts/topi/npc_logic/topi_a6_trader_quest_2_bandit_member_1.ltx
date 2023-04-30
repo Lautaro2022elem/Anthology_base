@@ -1,0 +1,23 @@
+[logic]
+active = move@waiting
+on_death = death
+
+[death]
+on_info = %+topi_a6_trader_quest_2_bandit_1_death%
+
+[move@waiting]
+move_dest_number       = 74787
+move_look_subject      = actor
+move_state_when_center = claim
+move_state_when_move   = walk
+meet                   = meet
+invulnerable           = false
+on_info               = {!actor_enemy +topi_trader_2_quest_talking_bandit} %=actor_enemy%
+
+
+[meet]
+abuse           = false
+use             = {=dist_to_actor_le(7) -topi_trader_2_quest_talking_bandit} self,true
+allow_break     = false
+meet_on_talking = false
+trade_enable    = false

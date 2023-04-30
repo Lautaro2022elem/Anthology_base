@@ -1,0 +1,11 @@
+[logic]
+active = sr_teleport@actor_to_base
+
+[sr_teleport@actor_to_base]
+point1 = actor_teleport_to_baze_walk
+look1 = actor_teleport_to_baze_look
+on_info = {+padalshik_found_quest_give} sr_teleport@from_base
+
+[sr_teleport@from_base]
+point1 = actor_teleport_from_baze_walk
+look1 = actor_teleport_from_baze_look

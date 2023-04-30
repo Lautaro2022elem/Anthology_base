@@ -1,0 +1,65 @@
+;=========meet_quest_line========
+[meet@quest_line]
+close_anim 		= nil
+close_victim 	= nil
+far_anim 		= nil
+far_victim 		= nil
+close_distance 	= 0
+far_distance 	= 0
+use = {=actor_enemy} false, {=dist_to_actor_le(3)} true, false
+snd_on_use = {!dist_to_actor_le(3)} nil
+meet_on_talking = false
+;==================================
+
+[logic]
+active = remark@stalker_freedom_1_quest
+post_combat_time = 0, 0
+suitable = {=check_npc_name(blck_val_zavod_freedom_1)} true, false
+prior = 250
+
+[remark@stalker_freedom_1_quest]
+anim = guard_na
+target = story | blck_val_zavod_miklucha
+on_info = {+blck_val_quest_zavod_start} walker@freedom_1_go_to_zavod
+combat_ignore_cond = true
+combat_ignore_keep_when_attacked = true
+invulnerable = true
+gather_items_enabled = false
+help_wounded_enabled = false
+corpse_detection_enabled = false
+meet = no_meet
+
+[walker@freedom_1_go_to_zavod]
+path_walk = blck_val_stalker_freedom_1_walk_1
+meet = no_meet
+def_state_moving = assault
+gather_items_enabled = false
+help_wounded_enabled = false
+corpse_detection_enabled = false
+invulnerable = true
+on_signal = blck_val_stalker_freedom_1 | {-blck_val_freedom_1_to_zavod_come} walker@freedom_1_in_zavod %+blck_val_freedom_1_to_zavod_come%
+
+[walker@freedom_1_in_zavod]
+path_look = blck_val_stalker_freedom_1_look
+path_walk = blck_val_stalker_freedom_1_walk
+on_info = {+blck_val_zavod_zasada_monolit_start} remark@freedom_1_in_zavod_fight
+meet = no_meet
+combat_ignore_cond = true 
+combat_ignore_keep_when_attacked = true
+gather_items_enabled = false
+help_wounded_enabled = false
+corpse_detection_enabled = false
+invulnerable = true
+
+[remark@freedom_1_in_zavod_fight]
+anim = guard_na
+target = story | blck_val_monolith_squad_veteran
+on_info = {+blck_val_fredom_need_help_fail} %=kill_npc%
+on_info2 = {+blck_val_zasada_stavrid_not_help} %=kill_npc%
+meet = no_meet
+combat_ignore_cond = {+blck_val_zavod_zasada_monolit_time} false, true
+gather_items_enabled = false
+help_wounded_enabled = false
+corpse_detection_enabled = false
+danger = danger
+invulnerable = true

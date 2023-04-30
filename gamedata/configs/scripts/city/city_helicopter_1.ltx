@@ -1,0 +1,83 @@
+[logic]
+active = heli_move@vkl
+on_death = death
+on_hit = hit
+
+
+[heli_move@vkl]
+path_move = city_heli_1_vkl_roof_move
+engine_sound = false
+max_velocity = 360
+mute = false
+on_info = {+city_heli_1_time} heli_move@time
+
+
+[heli_move@time]
+path_move = city_heli_1_roof_move
+path_look = city_heli_1_roof_look
+engine_sound = true
+max_velocity = 360
+mute = false
+on_info = {+city_heli_1_start} heli_move@start
+on_info2 = {+city_heli_1_start_fail} heli_move@start_a
+
+[heli_move@start]
+path_move = city_heli_1_start_way
+path_look = city_heli_1_start_look
+engine_sound = true
+max_velocity = 40
+mute = false
+on_game_timer = 80 | heli_move@start_2
+
+[heli_move@start_2]
+path_move = city_heli_2_start_way
+path_look = city_heli_2_start_look
+engine_sound = true
+max_velocity = 40
+mute = false
+on_game_timer = 80 | heli_move@start_3 %=heli_start_flame%
+
+
+[heli_move@start_3]
+path_move = city_heli_3_start_way
+path_look = city_heli_3_start_look
+engine_sound = true
+max_velocity = 40
+mute = false
+on_game_timer = 60 | %=heli_die%
+
+
+[heli_move@start_a]
+path_move = city_heli_1_start_way
+path_look = city_heli_1_start_look
+engine_sound = true
+max_velocity = 40
+mute = false
+on_game_timer = 80 | heli_move@start_2a
+
+[heli_move@start_2a]
+path_move = city_heli_2_start_way
+path_look = city_heli_2_start_look
+engine_sound = true
+max_velocity = 40
+mute = false
+on_game_timer = 80 | heli_move@start_3a
+
+
+[heli_move@start_3a]
+path_move = city_heli_3_start_way
+path_look = city_heli_3_start_look
+engine_sound = true
+max_velocity = 40
+mute = false
+
+
+
+[death]
+on_info = %+city_helicopter_1_dead%
+
+
+[hit]
+on_info = {-city_helicopter_1_hit} %+city_helicopter_1_hit%
+
+

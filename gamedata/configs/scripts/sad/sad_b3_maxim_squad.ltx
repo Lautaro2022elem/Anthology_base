@@ -1,0 +1,226 @@
+[walker@def]
+meet = no_meet
+gather_items_enabled = false
+help_wounded_enabled = false
+corpse_detection_enabled = false
+out_restr = sad_b3_sr_assault
+danger = danger
+wounded = wounded
+on_info9 = {=actor_enemy} remark@actor_enemy %+sad_maxim_squad_actor_enemy +sad_b3_killers_awake%
+
+[walker@def_after]
+gather_items_enabled = false
+help_wounded_enabled = false
+corpse_detection_enabled = false
+out_restr = sad_b3_sr_assault
+wounded = wounded
+
+[remark@actor_enemy]
+
+; ------------------------------------------------------------------------------ 1
+[logic@maximilian_member_1]
+active = remark@1_init
+suitable = {=check_npc_name(sad_b2_stalker_maxim_member_1) -sad_b3_maxim_ataka_complete} true, false
+on_death = death
+on_hit = hit
+post_combat_time = 0, 0
+prior = 350
+
+[remark@1_init]:walker@def
+on_info = walker@1_go_in
+
+[walker@1_go_in]:walker@def
+path_walk = ataka_1_walk
+def_state_moving = assault
+combat_ignore_cond = true
+on_info = {=npc_in_zone(sad_b3_sr_assault)} walker@ataker_1 %+sad_b3_killers_awake%
+on_info2 = {+sad_b3_teleport_squad_to_positon} remark@1 %=teleport_npc(sad_b3_ataker_place_1)%
+
+[remark@1]:walker@def
+on_info = walker@ataker_1
+
+[walker@ataker_1]:walker@def
+path_walk = kamper_1_walk
+def_state_moving = raid
+on_info = {+sad_b3_maxim_ataka_complete} remark@11
+
+[remark@11]
+
+; ------------------------------------------------------------------------------ 2
+[logic@maximilian_member_2]
+active = remark@2_init
+suitable = { =check_npc_name(sad_b2_stalker_maxim_member_2) -sad_b3_maxim_ataka_complete } true, false
+on_death = death
+on_hit = hit
+post_combat_time = 0, 0
+prior = 350
+
+[remark@2_init]:walker@def
+on_info = walker@2_go_in
+
+[walker@2_go_in]:walker@def
+path_walk = ataka_1_walk
+def_state_moving = rush
+combat_ignore_cond = true
+on_info = {=npc_in_zone(sad_b3_sr_assault)} walker@ataker_2 %+sad_b3_killers_awake%
+on_info2 = {+sad_b3_teleport_squad_to_positon} remark@2 %=teleport_npc(sad_b3_ataker_place_2)%
+
+[remark@2]:walker@def
+on_info = walker@ataker_2
+
+[walker@ataker_2]:walker@def
+path_walk = kamper_1_walk
+def_state_moving = raid
+on_info = {+sad_b3_maxim_ataka_complete} remark@12
+
+[remark@12]
+
+; ------------------------------------------------------------------------------ 3
+[logic@maximilian_member_3]
+active = remark@3_init
+suitable = { =check_npc_name(sad_b2_stalker_maxim_member_3) -sad_b3_maxim_ataka_complete } true, false
+on_death = death
+on_hit = hit
+post_combat_time = 0, 0
+prior = 350
+
+[remark@3_init]:walker@def
+on_info = walker@3_go_in
+
+[walker@3_go_in]:walker@def
+path_walk = ataka_1_walk
+def_state_moving = rush
+combat_ignore_cond = true
+on_info = {=npc_in_zone(sad_b3_sr_assault)} walker@ataker_3 %+sad_b3_killers_awake%
+on_info2 = {+sad_b3_teleport_squad_to_positon} remark@3 %=teleport_npc(sad_b3_ataker_place_3)%
+
+[remark@3]:walker@def
+on_info = walker@ataker_3
+
+[walker@ataker_3]:walker@def
+path_walk = kamper_3_walk
+def_state_moving = raid
+on_info = {+sad_b3_maxim_ataka_complete} remark@13
+
+[remark@13]
+
+; ------------------------------------------------------------------------------ 4
+[logic@maximilian_member_4]
+active = remark@4_init
+suitable = { =check_npc_name(sad_b2_stalker_maxim_member_4) -sad_b3_maxim_ataka_complete } true, false
+on_death = death
+on_hit = hit
+post_combat_time = 0, 0
+prior = 350
+
+[remark@4_init]:walker@def
+on_info = walker@4_go_in
+
+[walker@4_go_in]:walker@def
+path_walk = ataka_1_walk
+def_state_moving = assault
+combat_ignore_cond = true
+on_info = {=npc_in_zone(sad_b3_sr_assault)} walker@ataker_4 %+sad_b3_killers_awake%
+
+[walker@ataker_4]:walker@def
+path_walk = kamper_3_walk
+def_state_moving = raid
+on_info = {+sad_b3_maxim_ataka_complete} remark@14
+
+[remark@14]
+
+; ------------------------------------------------------------------------------ 5
+[logic@maximilian_member_5]
+active = remark@5_init
+suitable = { =check_npc_name(sad_b2_stalker_maxim_member_5) -sad_b3_maxim_ataka_complete } true, false
+on_death = death
+on_hit = hit
+post_combat_time = 0, 0
+prior = 350
+
+[remark@5_init]:walker@def
+on_info = walker@5_go_in
+
+[walker@5_go_in]:walker@def
+path_walk = ataka_1_walk
+def_state_moving = rush
+combat_ignore_cond = true
+combat_ignore_keep_when_attacked = true
+on_info = {=npc_in_zone(sad_b3_sr_assault)} walker@ataker_5 %+sad_b3_killers_awake%
+;on_info2 = {+sad_b3_teleport_squad_to_positon} walker@ataker_5 %=teleport_npc(sad_b3_ataker_place_5)%
+
+[walker@ataker_5]:walker@def
+path_walk = kamper_1_walk
+def_state_moving = raid
+on_info = {+sad_b3_maxim_ataka_complete} remark@15
+
+[remark@15]
+
+
+
+
+
+
+; ------------------------------------------------------------------------------------------------------ После атаки жоп 1
+[logic@maximilian_job_1]
+active = walker@1_job
+suitable = { =target_squad_name(sad_b3a_stalker_ataka_squad) +sad_b3_maxim_ataka_complete =is_squad_commander} true, false
+on_death = death
+on_hit = hit
+prior = 300
+
+[walker@1_job]:walker@def_after
+path_walk = maxim_guard_1_walk
+path_look = maxim_guard_1_look
+on_info = {+sad_maximilian_dead} animpoint@1a_animp
+
+[animpoint@1a_animp]:walker@def_after
+cover_name = sad_b3_animp_maxim
+meet = no_meet
+
+; ------------------------------------------------------------------------------
+[danger]
+ignore_distance = 0
+ignore_distance_grenade = 0
+ignore_distance_corpse = 0
+ignore_distance_hit = 0
+ignore_distance_sound = 0
+
+; ------------------------------------
+[wounded] ;Не должен быть раненым
+hp_state = 0|wounded_heavy@help_heavy
+hp_state_see = 0|wounded_heavy@help_heavy
+hp_victim = 0|nil
+hp_fight = 0|false
+hp_cover = 0|false
+
+[meet@111]
+snd_on_use 		= meet_use_no_talk_leader
+close_snd_hello = nil
+close_snd_bye   = nil
+close_distance  = 0
+close_victim    = actor
+close_anim 		= nil
+far_anim 		= nil
+far_victim 		= nil
+far_distance 	= 0
+far_snd 		= nil
+abuse 			= false
+use 			= false
+
+[meet@222]:meet@111
+snd_on_use 		= meet_use_no_default
+
+
+; ------------------------------------------------------------------------------
+[death]
+on_info = {=killed_by_actor} %+sad_maxim_squad_actor_enemy%
+
+[hit]
+on_info = {=actor_enemy} %+sad_maxim_squad_actor_enemy%
+
+
+
+
+
+

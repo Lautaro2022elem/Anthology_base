@@ -1,0 +1,553 @@
+<?xml version="1.0" encoding="windows-1251" standalone="yes" ?>
+<game_dialogs>
+    <dialog id="pb_dialog_shurup_skupka">
+        <phrase_list>
+            <phrase id="99991">
+                <text>pb_dialog_shurup_skupka_99991</text>
+                <next>881</next>
+                <next>882</next>
+                <next>883</next>
+                <next>884</next>
+                <next>885</next>
+                <next>911</next>
+            </phrase>
+            <phrase id="2">
+                <text>pb_dialog_shurup_skupka_2</text>
+                <precondition>dlg_junkman.pm</precondition>
+                <next>22</next>
+            </phrase>
+            <phrase id="22">
+                <text>pb_dialog_shurup_skupka_22</text>
+                <action>dlg_junkman.pm_z</action>
+                <action>dlg_junkman.pm_money</action>
+                <next>222</next>
+            </phrase>
+            <phrase id="33">
+                <text>pb_dialog_shurup_skupka_33</text>
+                <action>dlg_junkman.pb_z</action>
+                <action>dlg_junkman.pb_money</action>
+                <next>222</next>
+            </phrase>
+            <phrase id="44">
+                <text>pb_dialog_shurup_skupka_44</text>
+                <action>dlg_junkman.fort_z</action>
+                <action>dlg_junkman.fort_money</action>
+                <next>222</next>
+            </phrase>
+            <phrase id="66">
+                <text>pb_dialog_shurup_skupka_66</text>
+                <action>dlg_junkman.beretta_z</action>
+                <action>dlg_junkman.beretta_money</action>
+                <next>222</next>
+            </phrase>
+            <phrase id="77">
+                <text>pb_dialog_shurup_skupka_77</text>
+                <action>dlg_junkman.walther_z</action>
+                <action>dlg_junkman.walther_money</action>
+                <next>222</next>
+            </phrase>
+            <phrase id="88">
+                <text>pb_dialog_shurup_skupka_88</text>
+                <action>dlg_junkman.colt1911_z</action>
+                <action>dlg_junkman.colt1911_money</action>
+                <next>222</next>
+            </phrase>
+            <phrase id="99">
+                <text>pb_dialog_shurup_skupka_99</text>
+                <action>dlg_junkman.usp_z</action>
+                <action>dlg_junkman.usp_money</action>
+                <next>222</next>
+            </phrase>
+            <phrase id="55">
+                <text>pb_dialog_shurup_skupka_55</text>
+                <action>dlg_junkman.hpsa_z</action>
+                <action>dlg_junkman.hpsa_money</action>
+                <next>222</next>
+            </phrase>
+            <phrase id="3">
+                <text>pb_dialog_shurup_skupka_3</text>
+                <precondition>dlg_junkman.pb</precondition>
+                <next>33</next>
+            </phrase>
+            <phrase id="4">
+                <text>pb_dialog_shurup_skupka_4</text>
+                <precondition>dlg_junkman.fort</precondition>
+                <next>44</next>
+            </phrase>
+            <phrase id="5">
+                <text>pb_dialog_shurup_skupka_5</text>
+                <precondition>dlg_junkman.hpsa</precondition>
+                <next>55</next>
+            </phrase>
+            <phrase id="6">
+                <text>pb_dialog_shurup_skupka_6</text>
+                <precondition>dlg_junkman.beretta</precondition>
+                <next>66</next>
+            </phrase>
+            <phrase id="199">
+                <text>pb_dialog_shurup_skupka_199</text>
+                <action>dlg_junkman.sig220_z</action>
+                <action>dlg_junkman.sig220_money</action>
+                <next>222</next>
+            </phrase>
+            <phrase id="300">
+                <text>pb_dialog_shurup_skupka_300</text>
+                <action>dlg_junkman.ak74u_z</action>
+                <action>dlg_junkman.ak74u_money</action>
+                <next>222</next>
+            </phrase>
+            <phrase id="400">
+                <text>pb_dialog_shurup_skupka_400</text>
+                <action>dlg_junkman.ak74_z</action>
+                <action>dlg_junkman.ak74_money</action>
+                <next>222</next>
+            </phrase>
+            <phrase id="500">
+                <text>pb_dialog_shurup_skupka_500</text>
+                <action>dlg_junkman.abakan_z</action>
+                <action>dlg_junkman.abakan_money</action>
+                <next>222</next>
+            </phrase>
+            <phrase id="600">
+                <text>pb_dialog_shurup_skupka_600</text>
+                <action>dlg_junkman.l85_z</action>
+                <action>dlg_junkman.l85_money</action>
+                <next>222</next>
+            </phrase>
+            <phrase id="700">
+                <text>pb_dialog_shurup_skupka_700</text>
+                <action>dlg_junkman.lr300_z</action>
+                <action>dlg_junkman.lr300_money</action>
+                <next>222</next>
+            </phrase>
+            <phrase id="800">
+                <text>pb_dialog_shurup_skupka_800</text>
+                <action>dlg_junkman.sig550_z</action>
+                <action>dlg_junkman.sig550_money</action>
+                <next>222</next>
+            </phrase>
+            <phrase id="900">
+                <text>pb_dialog_shurup_skupka_900</text>
+                <action>dlg_junkman.g36_z</action>
+                <action>dlg_junkman.g36_money</action>
+                <next>222</next>
+            </phrase>
+            <phrase id="9100">
+                <text>pb_dialog_shurup_skupka_9100</text>
+                <action>dlg_junkman.fn2000_z</action>
+                <action>dlg_junkman.fn2000_money</action>
+                <next>222</next>
+            </phrase>
+            <phrase id="9200">
+                <text>pb_dialog_shurup_skupka_9200</text>
+                <action>dlg_junkman.groza_z</action>
+                <action>dlg_junkman.groza_money</action>
+                <next>222</next>
+            </phrase>
+            <phrase id="30">
+                <text>pb_dialog_shurup_skupka_30</text>
+                <precondition>dlg_junkman.ak74u</precondition>
+                <next>300</next>
+            </phrase>
+            <phrase id="40">
+                <text>pb_dialog_shurup_skupka_40</text>
+                <precondition>dlg_junkman.ak74</precondition>
+                <next>400</next>
+            </phrase>
+            <phrase id="60">
+                <text>pb_dialog_shurup_skupka_60</text>
+                <precondition>dlg_junkman.l85</precondition>
+                <next>600</next>
+            </phrase>
+            <phrase id="70">
+                <text>pb_dialog_shurup_skupka_70</text>
+                <precondition>dlg_junkman.lr300</precondition>
+                <next>700</next>
+            </phrase>
+            <phrase id="80">
+                <text>pb_dialog_shurup_skupka_80</text>
+                <precondition>dlg_junkman.sig550</precondition>
+                <next>800</next>
+            </phrase>
+            <phrase id="90">
+                <text>pb_dialog_shurup_skupka_90</text>
+                <precondition>dlg_junkman.g36</precondition>
+                <next>900</next>
+            </phrase>
+            <phrase id="910">
+                <text>pb_dialog_shurup_skupka_910</text>
+                <precondition>dlg_junkman.fn2000</precondition>
+                <next>9100</next>
+            </phrase>
+            <phrase id="9922">
+                <text>pb_dialog_shurup_skupka_9922</text>
+                <action>dlg_junkman.vintorez_z</action>
+                <action>dlg_junkman.vintorez_money</action>
+                <next>222</next>
+            </phrase>
+            <phrase id="9933">
+                <text>pb_dialog_shurup_skupka_9933</text>
+                <action>dlg_junkman.svu_z</action>
+                <action>dlg_junkman.svu_money</action>
+                <next>222</next>
+            </phrase>
+            <phrase id="9944">
+                <text>pb_dialog_shurup_skupka_9944</text>
+                <action>dlg_junkman.svd_z</action>
+                <action>dlg_junkman.svd_money</action>
+                <next>222</next>
+            </phrase>
+            <phrase id="88881">
+                <text>pb_dialog_shurup_skupka_88881</text>
+                <next>991</next>
+                <next>992</next>
+                <next>993</next>
+                <next>994</next>
+                <next>995</next>
+                <next>911</next>
+            </phrase>
+            <phrase id="9911">
+                <text>pb_dialog_shurup_skupka_9911</text>
+                <action>dlg_junkman.val_z</action>
+                <action>dlg_junkman.val_money</action>
+                <next>222</next>
+            </phrase>
+            <phrase id="992">
+                <text>pb_dialog_shurup_skupka_992</text>
+                <precondition>dlg_junkman.vintorez</precondition>
+                <next>9922</next>
+            </phrase>
+            <phrase id="993">
+                <text>pb_dialog_shurup_skupka_993</text>
+                <precondition>dlg_junkman.svu</precondition>
+                <next>9933</next>
+            </phrase>
+            <phrase id="994">
+                <text>pb_dialog_shurup_skupka_994</text>
+                <precondition>dlg_junkman.svd</precondition>
+                <next>9944</next>
+            </phrase>
+            <phrase id="995">
+                <text>pb_dialog_shurup_skupka_995</text>
+                <precondition>dlg_junkman.gauss</precondition>
+                <next>9955</next>
+            </phrase>
+            <phrase id="9999">
+                <text>pb_dialog_shurup_skupka_9999</text>
+                <next>99991</next>
+            </phrase>
+            <phrase id="9955">
+                <text>pb_dialog_shurup_skupka_9955</text>
+                <action>dlg_junkman.gauss_z</action>
+                <action>dlg_junkman.gauss_money</action>
+                <next>222</next>
+            </phrase>
+            <phrase id="8822">
+                <text>pb_dialog_shurup_skupka_8822</text>
+                <action>dlg_junkman.toz34_z</action>
+                <action>dlg_junkman.toz34_money</action>
+                <next>222</next>
+            </phrase>
+            <phrase id="8833">
+                <text>pb_dialog_shurup_skupka_8833</text>
+                <action>dlg_junkman.wincheaster1300_z</action>
+                <action>dlg_junkman.wincheaster1300_money</action>
+                <next>222</next>
+            </phrase>
+            <phrase id="8844">
+                <text>pb_dialog_shurup_skupka_8844</text>
+                <action>dlg_junkman.spas12_z</action>
+                <action>dlg_junkman.spas12_money</action>
+                <next>222</next>
+            </phrase>
+            <phrase id="8855">
+                <text>pb_dialog_shurup_skupka_8855</text>
+                <action>dlg_junkman.protecta_z</action>
+                <action>dlg_junkman.protecta_money</action>
+                <next>222</next>
+            </phrase>
+            <phrase id="8811">
+                <text>pb_dialog_shurup_skupka_8811</text>
+                <action>dlg_junkman.bm16_z</action>
+                <action>dlg_junkman.bm16_money</action>
+                <next>222</next>
+            </phrase>
+            <phrase id="4455">
+                <text>pb_dialog_shurup_skupka_4455</text>
+                <action>dlg_junkman.rpg7_z</action>
+                <action>dlg_junkman.rpg7_money</action>
+                <next>222</next>
+            </phrase>
+            <phrase id="881">
+                <text>pb_dialog_shurup_skupka_881</text>
+                <precondition>dlg_junkman.bm16</precondition>
+                <next>8811</next>
+            </phrase>
+            <phrase id="882">
+                <text>pb_dialog_shurup_skupka_882</text>
+                <precondition>dlg_junkman.toz34</precondition>
+                <next>8822</next>
+            </phrase>
+            <phrase id="883">
+                <text>pb_dialog_shurup_skupka_883</text>
+                <precondition>dlg_junkman.wincheaster1300</precondition>
+                <next>8833</next>
+            </phrase>
+            <phrase id="884">
+                <text>pb_dialog_shurup_skupka_884</text>
+                <precondition>dlg_junkman.spas12</precondition>
+                <next>8844</next>
+            </phrase>
+            <phrase id="885">
+                <text>pb_dialog_shurup_skupka_885</text>
+                <precondition>dlg_junkman.protecta</precondition>
+                <next>8855</next>
+            </phrase>
+            <phrase id="445">
+                <text>pb_dialog_shurup_skupka_445</text>
+                <precondition>dlg_junkman.rpg7</precondition>
+                <next>4455</next>
+            </phrase>
+            <phrase id="90901">
+                <text>pb_dialog_shurup_skupka_90901</text>
+                <next>0</next>
+            </phrase>
+            <phrase id="9090">
+                <text>pb_dialog_shurup_skupka_9090</text>
+                <has_info>dialog_star</has_info>
+                <next>90901</next>
+            </phrase>
+            <phrase id="200">
+                <text>pb_dialog_shurup_skupka_200</text>
+                <action>dlg_junkman.mp5_z</action>
+                <action>dlg_junkman.mp5_money</action>
+                <next>222</next>
+            </phrase>
+            <phrase id="23">
+                <text>pb_dialog_shurup_skupka_23</text>
+                <action>dlg_junkman.rpk74_z</action>
+                <action>dlg_junkman.rpk74_money</action>
+                <next>222</next>
+            </phrase>
+            <phrase id="50">
+                <text>pb_dialog_shurup_skupka_50</text>
+                <precondition>dlg_junkman.abakan</precondition>
+                <next>500</next>
+            </phrase>
+            <phrase id="991">
+                <text>pb_dialog_shurup_skupka_991</text>
+                <precondition>dlg_junkman.val</precondition>
+                <next>9911</next>
+            </phrase>
+            <phrase id="4444">
+                <text>pb_dialog_shurup_skupka_4444</text>
+                <next>44441</next>
+            </phrase>
+            <phrase id="44441">
+                <text>pb_dialog_shurup_skupka_44441</text>
+                <next>445</next>
+                <next>446</next>
+                <next>911</next>
+            </phrase>
+            <phrase id="25">
+                <text>pb_dialog_shurup_skupka_25</text>
+                <next>27</next>
+            </phrase>
+            <phrase id="4466">
+                <text>pb_dialog_shurup_skupka_4466</text>
+                <action>dlg_junkman.rg6_z</action>
+                <action>dlg_junkman.rg6_money</action>
+                <next>222</next>
+            </phrase>
+            <phrase id="31">
+                <text>pb_dialog_shurup_skupka_31</text>
+                <action>dlg_junkman.ak74u_snag_z</action>
+                <action>dlg_junkman.ak74u_snag_money</action>
+                <next>222</next>
+            </phrase>
+            <phrase id="27">
+                <text>pb_dialog_shurup_skupka_27</text>
+                <next>29</next>
+                <next>911</next>
+            </phrase>
+            <phrase id="29">
+                <text>pb_dialog_shurup_skupka_29</text>
+                <precondition>dlg_junkman.ak74u_snag</precondition>
+                <next>31</next>
+            </phrase>
+            <phrase id="188">
+                <text>pb_dialog_shurup_skupka_188</text>
+                <action>dlg_junkman.desert_eagle_z</action>
+                <action>dlg_junkman.desert_eagle_money</action>
+                <next>222</next>
+            </phrase>
+            <phrase id="1">
+                <text>pb_dialog_shurup_skupka_1</text>
+                <next>5555</next>
+                <next>7777</next>
+                <next>8888</next>
+                <next>9999</next>
+                <next>4444</next>
+                <next>25</next>
+                <next>9090</next>
+                <next>911</next>
+            </phrase>
+            <phrase id="9300">
+                <text>pb_dialog_shurup_skupka_9300</text>
+                <action>dlg_junkman.pkm_z</action>
+                <action>dlg_junkman.pkm_money</action>
+                <next>222</next>
+            </phrase>
+            <phrase id="21">
+                <text>pb_dialog_shurup_skupka_21</text>
+                <precondition>dlg_junkman.rpk74</precondition>
+                <next>23</next>
+            </phrase>
+            <phrase id="930">
+                <text>pb_dialog_shurup_skupka_930</text>
+                <precondition>dlg_junkman.pkm</precondition>
+                <next>9300</next>
+            </phrase>
+            <phrase id="920">
+                <text>pb_dialog_shurup_skupka_920</text>
+                <precondition>dlg_junkman.groza</precondition>
+                <next>9200</next>
+            </phrase>
+            <phrase id="5555">
+                <text>pb_dialog_shurup_skupka_5555</text>
+                <next>55551</next>
+            </phrase>
+            <phrase id="47">
+                <text>pb_dialog_shurup_skupka_47</text>
+                <action>dlg_junkman.walther_z</action>
+                <action>dlg_junkman.walther_money</action>
+                <next>222</next>
+            </phrase>
+            <phrase id="55551">
+                <text>pb_dialog_shurup_skupka_55551</text>
+                <next>2</next>
+                <next>3</next>
+                <next>4</next>
+                <next>5</next>
+                <next>6</next>
+                <next>7</next>
+                <next>8</next>
+                <next>9</next>
+                <next>19</next>
+                <next>18</next>
+                <next>41</next>
+                <next>911</next>
+            </phrase>
+            <phrase id="42">
+                <text>pb_dialog_shurup_skupka_42</text>
+                <action>dlg_junkman.mp443_z</action>
+                <action>dlg_junkman.mp443_money</action>
+                <next>222</next>
+            </phrase>
+            <phrase id="9">
+                <text>pb_dialog_shurup_skupka_9</text>
+                <precondition>dlg_junkman.usp</precondition>
+                <next>99</next>
+            </phrase>
+            <phrase id="19">
+                <text>pb_dialog_shurup_skupka_19</text>
+                <precondition>dlg_junkman.sig220</precondition>
+                <next>199</next>
+            </phrase>
+            <phrase id="7">
+                <text>pb_dialog_shurup_skupka_7</text>
+                <precondition>dlg_junkman.walther</precondition>
+                <next>77</next>
+            </phrase>
+            <phrase id="446">
+                <text>pb_dialog_shurup_skupka_446</text>
+                <precondition>dlg_junkman.rg6</precondition>
+                <next>4466</next>
+            </phrase>
+            <phrase id="41">
+                <text>pb_dialog_shurup_skupka_41</text>
+                <precondition>dlg_junkman.mp443</precondition>
+                <next>42</next>
+            </phrase>
+            <phrase id="18">
+                <text>pb_dialog_shurup_skupka_18</text>
+                <precondition>dlg_junkman.desert_eagle</precondition>
+                <next>188</next>
+            </phrase>
+            <phrase id="8">
+                <text>pb_dialog_shurup_skupka_8</text>
+                <precondition>dlg_junkman.colt1911</precondition>
+                <next>88</next>
+            </phrase>
+            <phrase id="20">
+                <text>pb_dialog_shurup_skupka_20</text>
+                <precondition>dlg_junkman.mp5</precondition>
+                <next>200</next>
+            </phrase>
+            <phrase id="8888">
+                <text>pb_dialog_shurup_skupka_8888</text>
+                <next>88881</next>
+            </phrase>
+            <phrase id="7777">
+                <text>pb_dialog_shurup_skupka_7777</text>
+                <next>77771</next>
+            </phrase>
+            <phrase id="77771">
+                <text>pb_dialog_shurup_skupka_77771</text>
+                <next>20</next>
+                <next>30</next>
+                <next>40</next>
+                <next>50</next>
+                <next>60</next>
+                <next>70</next>
+                <next>80</next>
+                <next>90</next>
+                <next>910</next>
+                <next>920</next>
+                <next>930</next>
+                <next>21</next>
+                <next>43</next>
+                <next>950</next>
+                <next>911</next>
+            </phrase>
+            <phrase id="911">
+                <text>pb_dialog_shurup_skupka_911</text>
+                <action>dialogs.break_dialog</action>
+            </phrase>
+            <phrase id="952">
+                <text>pb_dialog_shurup_skupka_952</text>
+                <next>1</next>
+            </phrase>
+            <phrase id="222">
+                <text>pb_dialog_shurup_skupka_222</text>
+                <next>1</next>
+            </phrase>
+            <phrase id="45">
+                <text>pb_dialog_shurup_skupka_45</text>
+                <action>dlg_junkman.bizon_z</action>
+                <action>dlg_junkman.bizon_money</action>
+                <next>222</next>
+            </phrase>
+            <phrase id="951">
+                <text>pb_dialog_shurup_skupka_951</text>
+                <action>dlg_junkman.ak74m_z</action>
+                <action>dlg_junkman.ak74m_money</action>
+                <next>952</next>
+            </phrase>
+            <phrase id="43">
+                <text>pb_dialog_shurup_skupka_43</text>
+                <precondition>dlg_junkman.bizon</precondition>
+                <next>45</next>
+            </phrase>
+            <phrase id="0">
+                <text>pb_dialog_shurup_skupka_0</text>
+                <next>1</next>
+            </phrase>
+            <phrase id="950">
+                <text>pb_dialog_shurup_skupka_950</text>
+                <precondition>dlg_junkman.ak74m</precondition>
+                <next>951</next>
+            </phrase>
+        </phrase_list>
+    </dialog>
+</game_dialogs>

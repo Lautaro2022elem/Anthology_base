@@ -1,0 +1,17 @@
+[logic]
+active = sr_idle@murad_spawn_start
+
+[sr_idle@murad_spawn_start]
+on_info = {-murad_spawn_end +pro_zver_founded_shell_in_podzemka} %+murad_spawn_end =spawn_object(pb_murad_npc:murad_start_game_walk)%
+on_info2 = {+murad_spawn_end} sr_idle@murad_spawn_start_1
+
+[sr_idle@murad_spawn_start_1]
+on_timer = 4000 | sr_idle@murad_spawn_start_2 %=pb_murad_found_stalkers +perevalochnaya_baza_murad_sends_sms_done%
+
+[sr_idle@murad_spawn_start_2]
+on_timer = 11000 | sr_idle@murad_spawn_start_3 %=pb_actor_replic_about_signal_sos%
+
+[sr_idle@murad_spawn_start_3]
+on_timer = 7600 | sr_idle@murad_spawn_start_nil %=give_task(pb_murad_go_to_base) +perevalochnaya_baza_murad_quest_give%
+
+[sr_idle@murad_spawn_start_nil]

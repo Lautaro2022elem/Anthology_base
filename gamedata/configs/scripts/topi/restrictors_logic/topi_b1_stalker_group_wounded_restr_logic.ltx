@@ -1,0 +1,14 @@
+[logic] 
+active = sr_idle@start 
+
+[sr_idle@start]
+on_info3 = {+topi_start +topi_medic_quest_peredacha_give -topi_b1_stalker_group_wounded_timer_begin} sr_timer@first %+topi_b1_stalker_group_wounded_timer_begin%
+
+[sr_timer@first]
+type = dec
+string = "Спасти раненного"
+start_value = 125000
+on_value = 0 | sr_idle@nil %+topi_b1_stalker_group_wounded_time_false%
+on_info = {+topi_b1_stalker_group_wounded_time_true} sr_idle@nil
+
+[sr_idle@nil] 

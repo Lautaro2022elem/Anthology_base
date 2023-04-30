@@ -1,0 +1,15 @@
+[logic] 
+active = sr_idle@start
+
+[sr_idle@start]
+on_info = {+topi_start -topi_a1_main_suget_third_quest_give} %=give_task(geonezis_topi_a1_main_suget_quest_3) +topi_a1_main_suget_third_quest_give%
+on_timer = 8000 | {+topi_start +topi_a1_main_suget_third_quest_give +topi_f1_dolg_squad_member_all_death -topi_a1_main_suget_second_quest_give} sr_idle@first %=give_task(geonezis_topi_a1_main_suget_quest_2) +topi_a1_main_suget_second_quest_give%
+
+[sr_idle@first]
+on_info = {+topi_a1_main_suget_second_quest_give -topi_a1_main_suget_second_quest_come_to_base =actor_in_zone(topi_a1_main_suget_quest_2_restr)} %+topi_a1_main_suget_second_quest_come_to_base%
+on_info2 = {+topi_a1_main_suget_second_all_talking +topi_lider_variant_quest_talking_4 -topi_a3_suget_quest_3_svayznoy_create} sr_idle@second %=topi_a3_create_csky_svayznoy +topi_a3_suget_quest_3_svayznoy_create%
+
+[sr_idle@second]
+on_timer = 6000 | {+topi_a3_suget_quest_3_svayznoy_create -topi_a3_suget_quest_3_svayznoy_come_to_loka} sr_idle@nil %=topi_a3_create_csky_svayznoy_message +topi_a3_suget_quest_3_svayznoy_come_to_loka%
+
+[sr_idle@nil]

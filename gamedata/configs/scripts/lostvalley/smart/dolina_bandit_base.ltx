@@ -1,0 +1,17 @@
+[smart_terrain] 
+squad_id = 1
+max_population = 5
+respawn_params = respawn@dolina_bandit_base
+respawn_idle = 172800
+
+[respawn@dolina_bandit_base]
+spawn_bandit@advanced
+spawn_bandit@veteran
+
+[spawn_bandit@advanced]
+spawn_squads =  bandit_sim_squad_advanced, bandit_sim_squad_novice
+spawn_num = 2
+
+[spawn_bandit@veteran]
+spawn_squads = bandit_sim_squad_veteran
+spawn_num = 1

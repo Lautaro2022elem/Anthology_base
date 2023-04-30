@@ -1,0 +1,19 @@
+[logic@bar_psevdogigant_lab]
+suitable = {=check_npc_name(bar_gigant_lab)}
+active = mob_walker@sleep
+monster_job = true
+prior = 70
+on_death = mob_death
+
+[mob_walker@sleep]
+path_walk = bar_giant_walk
+path_look = bar_giant_look
+actor_friendly = true
+npc_friendly = true
+combat_ignore_cond = true
+home_min_radius = 2
+home_max_radius = 3
+aggressive = false
+
+[mob_death]
+on_info = %+bar_gigant_lab_dead%

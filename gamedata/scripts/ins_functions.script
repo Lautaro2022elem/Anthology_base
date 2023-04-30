@@ -1,0 +1,48 @@
+---==================================================================================================---
+--------------------------------------------------------------------------------------------------------
+------------------------------------(Дополнительные функции)--------------------------------------------
+--------------------------------------------------------------------------------------------------------
+---==================================================================================================---
+-- 'Запись pstor переменной.
+function write_variable(params_name,value)
+   if value==nil then
+       clear_variable(params_name)
+   else
+       local opt=reload_params(params_name)
+       pstor_store(db.actor,opt,value)
+   end
+end
+-- 'Чтение pstor переменной.
+function read_variable(params_name)
+   local opt=reload_params(params_name)
+   return pstor_retrieve(db.actor,opt)
+end
+-- 'Удаление pstor переменной.
+function clear_variable(params_name)
+   local opt=reload_params(params_name)
+   if db.storage[db.actor:id()].pstor[opt] then
+       db.storage[db.actor:id()].pstor[opt]=nil
+   end
+end
+function pstor_store(obj,varname,val)
+   if obj==nil then return nil end
+   local sub_id=obj:id()
+   if db.storage[sub_id].pstor==nil then
+      db.storage[sub_id].pstor={}
+   end
+   db.storage[sub_id].pstor[varname]=val
+end
+function pstor_retrieve(obj,varname)
+   if obj==nil then return nil end
+   local sub_id=obj:id()
+   if db.storage[sub_id].pstor~=nil then
+      local val=db.storage[sub_id].pstor[varname]
+      if val~=nil then
+         return val
+      end
+   end
+   return nil
+end
+function reload_params(params)
+   return params
+end

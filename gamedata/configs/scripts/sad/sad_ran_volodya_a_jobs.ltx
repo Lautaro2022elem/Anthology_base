@@ -1,0 +1,126 @@
+[walker@def]
+gather_items_enabled = false
+help_wounded_enabled = true
+corpse_detection_enabled = false
+wounded = wounded
+meet = no_meet
+on_info99 = {=actor_enemy} remark@actor_enemy %+sad_volodya_actor_enemy%
+
+[remark@actor_enemy]
+wounded = wounded
+
+; -------------------------------------------------------------------------------------------------------------------------------------------- Volodya
+[logic@volodya_a_1]
+active = remark@volodya_start
+suitable = {=check_npc_name(sad_stalker_volodya) -sad_ran_cowboy_gone} true
+prior = 200
+on_death = death
+on_hit = hit
+post_combat_time = 0, 0
+
+[remark@volodya_start]
+on_info = {+sad_ran_cutscene_patrul} patrol@volodya_ataka, {+sad_volodya_go_alone} walker@volodya_after
+
+[patrol@volodya_ataka]:walker@def
+path_walk = volodya_raid_walk
+formation = line
+commander = true
+def_state_moving = assault
+on_info = {+sad_ran_cutscene_end} walker@volodya_after
+
+[walker@volodya_after]:walker@def
+path_walk = cowboy_gvard_walk
+def_state_moving = assault
+
+; -------------------------------------------------------------------------------------------------------------------------------------------- 2
+[logic@volodya_a_2]
+active = remark@2
+suitable = { =target_squad_name(sad_volodya_the_big_squad) !check_npc_name(sad_stalker_volodya) -sad_ran_cowboy_gone } true
+prior = 180
+on_death = death@member
+on_hit = hit
+post_combat_time = 0, 0
+
+[remark@2]
+on_info = {+sad_ran_cutscene_patrul} patrol@2, {+sad_volodya_go_alone} walker@2_after
+
+[patrol@2]:walker@def
+path_walk = volodya_raid_walk
+formation = line
+commander = false
+def_state_moving = assault
+on_info = {+sad_ran_cutscene_end} walker@2_after
+wounded = wounded
+
+[walker@2_after]:walker@def
+path_walk = podval_spawn
+def_state_moving = assault
+
+; -------------------------------------------------------------------------------------------------------------------------------------------- 3
+[logic@volodya_a_3]
+active = remark@3
+suitable = { =target_squad_name(sad_volodya_the_big_squad) !check_npc_name(sad_stalker_volodya) -sad_ran_cowboy_gone } true
+prior = 180
+on_death = death@member
+on_hit = hit
+post_combat_time = 0, 0
+
+[remark@3]
+on_info = {+sad_ran_cutscene_patrul} patrol@3, {+sad_volodya_go_alone} walker@3_after
+
+[patrol@3]:walker@def
+path_walk = volodya_raid_walk
+formation = line
+commander = false
+def_state_moving = assault
+on_info = {+sad_ran_cutscene_end} walker@3_after
+wounded = wounded
+
+[walker@3_after]:walker@def
+path_walk = squad_a_spawn_point
+def_state_moving = assault
+
+; -------------------------------------------------------------------------------------------------------------------------------------------- 4
+[logic@volodya_a_4]
+active = remark@4
+suitable = { =target_squad_name(sad_volodya_the_big_squad) !check_npc_name(sad_stalker_volodya) -sad_ran_cowboy_gone } true
+prior = 180
+on_death = death@member
+on_hit = hit
+post_combat_time = 0, 0
+
+[remark@4]
+on_info = {+sad_ran_cutscene_patrul} patrol@4, {+sad_volodya_go_alone} walker@4_after
+
+[patrol@4]:walker@def
+path_walk = volodya_raid_walk
+formation = line
+commander = false
+def_state_moving = assault
+on_info2 = {+sad_ran_cutscene_end} walker@4_after
+wounded = wounded
+
+[walker@4_after]:walker@def
+path_walk = squad_b_spawn_point
+def_state_moving = assault
+
+; --------------------------------------------------------------------------------------------------------------------------------------------
+[wounded] ;Не должен быть раненым
+hp_state = 0|wounded_heavy@help_heavy
+hp_state_see = 0|wounded_heavy@help_heavy
+hp_victim = 0|nil
+hp_fight = 0|false
+hp_cover = 0|false
+
+[death]
+on_info = {=killed_by_actor} %+sad_volodya_dead +sad_volodya_actor_enemy%, %+sad_volodya_dead%
+
+[death@member]
+on_info = {=killed_by_actor} %+sad_volodya_actor_enemy%
+
+[hit]
+on_info = {=actor_enemy} %+sad_volodya_actor_enemy%
+
+
+
+

@@ -1,0 +1,34 @@
+[logic] 
+active = sr_idle@start
+
+[sr_idle@start]
+on_info = {+topi_start +topi_b19_helper_quest_pnv_talking_1 +topi_b19_pnv_use_item_1 -topi_b19_pnv_effect_1} sr_timer@first %=run_postprocess(effector_nightvision_1:2221) =topi_b19_pnv_effect_1_start +topi_b19_pnv_effect_1%
+
+[sr_timer@first]
+type = dec
+string = "first test"
+start_value = 25000
+on_value = 0 | %+topi_b19_pnv_key_1%
+on_info = {+topi_b19_pnv_key_1 -topi_b19_pnv_use_end_1} sr_idle@first %=stop_postprocess(2221) =topi_b19_pnv_effect_1_end +topi_b19_pnv_use_end_1%
+
+[sr_idle@first]
+on_info = {+topi_b19_helper_quest_pnv_talking_2 +topi_b19_pnv_use_item_2 -topi_b19_pnv_effect_2} sr_timer@second %=run_postprocess(effector_nightvision_2:2222) =topi_b19_pnv_effect_1_start +topi_b19_pnv_effect_2%
+
+[sr_timer@second]
+type = dec
+string = "second test"
+start_value = 25000
+on_value = 0 | %+topi_b19_pnv_key_2%
+on_info = {+topi_b19_pnv_key_2 -topi_b19_pnv_use_end_2} sr_idle@second %=stop_postprocess(2222) =topi_b19_pnv_effect_1_end +topi_b19_pnv_use_end_2%
+
+[sr_idle@second]
+on_info = {+topi_b19_helper_quest_pnv_talking_3 +topi_b19_pnv_use_item_3 -topi_b19_pnv_effect_3} sr_timer@third %=run_postprocess(effector_nightvision_3:2223) =topi_b19_pnv_effect_1_start +topi_b19_pnv_effect_3%
+
+[sr_timer@third]
+type = dec
+string = "third test"
+start_value = 25000
+on_value = 0 | %+topi_b19_pnv_key_3%
+on_info = {+topi_b19_pnv_key_3 -topi_b19_pnv_use_end_3} sr_idle@nil %=stop_postprocess(2223) =topi_b19_pnv_effect_1_end +topi_b19_pnv_use_end_3%
+
+[sr_idle@nil]

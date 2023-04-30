@@ -1,0 +1,39 @@
+[city_important_cargo] ; Важный груз
+icon = ui_inGame2_Osobiy_zakaz
+prior = 85
+storyline = true
+title = {+city_important_cargo_otnesti} city_important_cargo_part_2_title, city_important_cargo_part_1_title
+descr = {+city_important_cargo_otnesti} city_important_cargo_part_2_descr, city_important_cargo_part_1_descr
+target = {+city_important_cargo_otnesti} city_npc_kolyazin, city_quest_city_important_cargo_id
+condlist_0 = {+city_important_cargo_complete} complete
+
+
+[city_sabotage] ; Диверсия
+icon = ui_inGame2_Sklad_dolga
+prior = 90
+storyline = true
+title = {+city_sabotage_nazad}city_sabotage_part_4_title, {+city_sabotage_has_item}city_sabotage_part_3_title, {+city_sabotage_c4}city_sabotage_part_2_title, city_sabotage_part_1_title
+descr = {+city_sabotage_nazad}city_sabotage_part_4_descr, {+city_sabotage_has_item}city_sabotage_part_3_descr, {+city_sabotage_c4}city_sabotage_part_2_descr, city_sabotage_part_1_descr
+target = {+city_sabotage_nazad}city_npc_kolyazin, {+city_sabotage_has_item}city_btr_id, {+city_sabotage_c4}city_sr_sabotage_c4_id, city_sabotage_false_id
+condlist_0 = {+city_sabotage_complete} complete
+
+[city_assault] ; Штурм
+icon = ui_inGame2_Put_v_pripyat
+prior = 100
+storyline = true
+title = {+city_sr_quest_assault_dk_point_1} city_assault_part_6_title, {+city_sr_quest_assault_dk_point_0} city_assault_part_5_title, {+city_assault_heli_death} city_assault_part_4_title, {+city_assault_heli_2} city_assault_part_3_title,  {+city_assault_heli_1} city_assault_part_2_title, city_assault_part_1_title
+descr = {+city_sr_quest_assault_dk_point_1} city_assault_part_6_descr, {+city_sr_quest_assault_dk_point_0} city_assault_part_5_descr, {+city_assault_heli_death} city_assault_part_4_descr, {+city_assault_heli_2} city_assault_part_3_descr,  {+city_assault_heli_1} city_assault_part_2_descr, city_assault_part_1_descr
+target = {+city_sr_quest_assault_dk_point_1} city_sr_quest_assault_dk_point_2, {+city_sr_quest_assault_dk_point_0} city_sr_quest_assault_dk_point_1, {+city_assault_heli_death} city_sr_quest_assault_dk_point_0, {+city_assault_heli_2} city_heli_2, {+city_assault_heli_1} city_heli_1, city_btr_id
+condlist_0 = {+city_assault_complete} complete
+condlist_1 = {+city_assault_fail} fail
+
+[city_despair] ; Безысходность
+icon = ui_iconsTotal_storyline
+prior = 100
+storyline = true
+title = {+city_despair_runrun} city_despair_part_3_title, {+city_npc_sp_leader_dialog_info} city_despair_part_2_title, city_despair_part_1_title
+descr = {+city_despair_runrun} city_despair_part_3_descr, {+city_npc_sp_leader_dialog_info} city_despair_part_2_descr, city_despair_part_1_descr
+target = {+city_despair_runrun} city_sr_despair_exit_2, {+city_npc_sp_leader_dialog_info} city_npc_kolyazin_final, city_npc_sp_leader
+condlist_0 = {+city_despair_complete} complete
+
+

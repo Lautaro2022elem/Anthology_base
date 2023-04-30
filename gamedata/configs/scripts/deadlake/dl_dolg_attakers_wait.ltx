@@ -1,0 +1,94 @@
+[logic@dl_krasopolsky_wait]
+suitable = {=check_npc_name(wiz_lt_krasnopolsky)} true
+active = animpoint@base
+prior = 200
+post_combat_time = 0, 0
+
+[animpoint@base]
+cover_name = val_a3_stalker_dolg_cover
+avail_animations = animpoint_stay_wall
+meet = meet@wait
+use_camp = false
+reach_distance = 1
+combat_ignore_cond = true
+combat_ignore_keep_when_attacked = true
+invulnerable = true
+gather_items_enabled = false
+help_wounded_enabled = false
+corpse_detection_enabled = false
+on_info = {+dl_go_wait_to_attak_mercenaries} %=remove_squad(dl_dolg_attakers_val_a3_id)%
+
+[meet@wait]
+close_snd_hello = lt_krasnopolsky_greeting
+close_snd_bye = lt_krasnopolsky_farewell
+close_anim 		= nil
+close_victim 	= nil
+far_anim 		= nil
+far_victim 		= nil
+close_distance  = 0
+far_distance 	= 0
+close_snd_distance = 3
+use = nil
+trade_enable    = false
+allow_break 	= false
+meet_dialog = dl_storyline_krasnopolsky_first_dialog
+meet_on_talking = true
+
+;------------------------------------------------------
+
+[logic@dl_attaker_dolg_1_wait]
+suitable = {=check_npc_name(sim_default_duty_2)} true
+active = walker@wait_1
+prior = 200
+
+[walker@wait_1]
+path_walk = s_walker_1_walk
+path_look = s_walker_1_look
+meet = no_meet
+corpse_detection_enabled = false
+gather_items_enabled = false
+combat_ignore_cond = true
+;------------------------------------------------------
+
+[logic@dl_attaker_dolg_2_wait]
+suitable = {=check_npc_name(sim_default_duty_2)} true
+active = walker@wait_2
+prior = 200
+
+[walker@wait_2]
+path_walk = s_walker_2_walk
+path_look = s_walker_2_look
+meet = no_meet
+corpse_detection_enabled = false
+gather_items_enabled = false
+combat_ignore_cond = true
+
+;------------------------------------------------------
+
+[logic@dl_attaker_dolg_3_wait]
+suitable = {=check_npc_name(sim_default_duty_2)} true
+active = walker@wait_3
+prior = 200
+
+[walker@wait_3]
+path_walk = s_walker_3_walk
+path_look = s_walker_3_look
+meet = no_meet
+corpse_detection_enabled = false
+gather_items_enabled = false
+combat_ignore_cond = true
+
+;------------------------------------------------------
+
+[logic@dl_attaker_dolg_4_wait]
+suitable = {=check_npc_name(sim_default_duty_3)} true
+active = walker@wait_4
+prior = 400
+
+[walker@wait_4]
+path_walk = s_walker_4_walk
+path_look = s_walker_4_look
+meet = no_meet
+corpse_detection_enabled = false
+gather_items_enabled = false
+combat_ignore_cond = true

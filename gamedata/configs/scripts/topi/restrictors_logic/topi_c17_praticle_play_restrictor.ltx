@@ -1,0 +1,14 @@
+[logic]
+active = sr_idle@wait
+
+[sr_idle@wait]
+on_info = {+topi_c17_mahir_quest_effect_time_out} sr_particle@idle_1
+
+[sr_particle@idle_1]
+name = explosions\explosion_04
+path = topi_c17_particle_play_point_1
+mode = 2
+looped = true
+on_info = {+topi_c17_mahir_quest_effect_end} sr_idle@nil
+
+[sr_idle@nil]

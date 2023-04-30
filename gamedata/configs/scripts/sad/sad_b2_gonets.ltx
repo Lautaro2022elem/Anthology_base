@@ -1,0 +1,39 @@
+; ----------------------------------------------------------------------------- 1
+[logic@sad_b2_gonets]
+suitable = { =check_npc_name(sad_sher_outfit_gonets)} true
+active = walker@1
+prior = 150
+
+[walker@1]
+path_walk = gonets_walk
+path_look = gonets_look
+gather_items_enabled = false
+help_wounded_enabled = false
+corpse_detection_enabled = false
+meet = meet
+out_restr = sad_b2_surge_hide
+on_info = {+sad_radik_actor_enemy} walker@out, {+sad_radik_task_get_outfit_done} walker@out
+
+[walker@out]
+path_walk = maxim_out_base_walk
+def_state_moving = run
+gather_items_enabled = false
+help_wounded_enabled = false
+corpse_detection_enabled = false
+on_signal = arrive_start | remark@arrive %+sad_b2_gonets_switch_b3%
+on_game_timer = 600 | remark@arrive %+sad_b2_gonets_switch_b3%
+meet = no_meet
+
+[remark@arrive]
+
+[meet]
+close_snd_hello = meet_hello
+close_snd_bye   = nil
+close_distance  = 2
+close_victim    = actor
+close_anim 		= nil
+meet_dialog 	= sad_b2_gonets_talk
+use 			= {=actor_enemy} false, true
+allow_break 	= false
+trade_enable	= false
+

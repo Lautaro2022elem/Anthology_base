@@ -1,0 +1,18 @@
+[logic] 
+active = sr_idle@radio_start
+
+[sr_idle@radio_start]
+on_info = {+pro_actor_wait_twenty_minut} ph_sound@radio_on
+
+[ph_sound@radio_on] 
+snd = transiver_play
+looped = false 
+min_idle = 300
+max_idle = 500 
+random = true
+on_info = {+pro_oleynik_transiver_off} sr_idle@radio_off %-pro_oleynik_transiver_on%
+
+[sr_idle@radio_off]
+on_info = {+pro_oleynik_transiver_on} ph_sound@radio_on %-pro_oleynik_transiver_off%
+
+

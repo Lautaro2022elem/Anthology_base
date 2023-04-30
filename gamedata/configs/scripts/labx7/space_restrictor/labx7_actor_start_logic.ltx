@@ -1,0 +1,34 @@
+[logic]
+active = sr_idle@proloque_start
+
+[sr_idle@proloque_start]
+on_info = {-labx7_actor_stay_in_level =actor_on_level(labx7)} %=spawn_object(labx7_stronglav_scary:labx7_stronglav_scary_spawn) =spawn_object(labx7_lutiy_prisoner:labx7_lutiy_prisoner_walk) =spawn_object(labx7_killer_tesak:labx7_killer_tesak_spawn) =spawn_object(labx7_killer_enemy_1:labx7_killer_enemy_1_spawn) =spawn_object(labx7_killer_enemy_2:labx7_killer_enemy_2_spawn) =spawn_object(zat_a23_labx8_key:labx7_key_door_spawn) +labx7_actor_stay_in_level%
+on_info2 = {+labx7_actor_stay_in_level} sr_idle@proloque_start_1 %=set_squad_enemy_to_actor(labx7_monolith_squad_base) =set_squad_enemy_to_actor(labx7_monolith_squad_patrol) =set_squad_enemy_to_actor(labx7_monolith_squad_corpus)%
+
+[sr_idle@proloque_start_1]
+on_timer = 2000 | sr_idle@proloque_start_2 %=give_task(labx7_find_lutiy_in_underground)%
+
+[sr_idle@proloque_start_2]
+on_timer = 2000 | sr_idle@replic_phantom_1 %=show_chapter(chapter_5)%
+
+[sr_idle@replic_phantom_1]
+on_info = {+labx7_ghost_first_talk_sound_stop -labx7_actor_hit_ghost_first} sr_idle@replic_phantom_1_1
+on_info2 = {-labx7_ghost_first_talk_sound_stop +labx7_actor_hit_ghost_first} sr_idle@replic_phantom_2
+
+[sr_idle@replic_phantom_1_1]
+on_timer = 6000 | sr_idle@replic_phantom_1_2 %=labx7_actor_replic_talk_to_phantom_1%
+
+[sr_idle@replic_phantom_1_2]
+on_timer = 4000 | sr_idle@replic_phantom_2 %+labx7_actor_hit_ghost_first%
+
+[sr_idle@replic_phantom_2]
+on_info = {+labx7_ghost_two_talk_sound_stop -labx7_actor_hit_ghost_two} sr_idle@replic_phantom_2_1
+on_info2 = {-labx7_ghost_two_talk_sound_stop +labx7_actor_hit_ghost_two} sr_idle@nil
+
+[sr_idle@replic_phantom_2_1]
+on_timer = 4000 | sr_idle@replic_phantom_2_2 %=labx7_actor_replic_talk_to_phantom_2%
+
+[sr_idle@replic_phantom_2_2]
+on_timer = 4000 | sr_idle@nil %+labx7_actor_hit_ghost_two%
+
+[sr_idle@nil]

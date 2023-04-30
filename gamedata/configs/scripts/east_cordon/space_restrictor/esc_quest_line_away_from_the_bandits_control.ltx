@@ -1,0 +1,26 @@
+[logic]
+active = sr_idle
+
+[sr_idle]
+on_info = {+spectrum_project_start +esc_quest_away_from_the_bandits_out} sr_idle@2 %=spawn_object(esc_bandit_shoroh_npc:esc_bandit_shoroh_npc_spawn)%
+
+[sr_idle@2]
+on_info = {+after_shoroh_kick_actor_info} sr_idle@3 %=esc_out_inv_away_from_the_bandits =teleport_actor(esc_quest_away_from_the_bandits_actor_walk:esc_quest_away_from_the_bandits_actor_look) =SExpBarrel(esc_bandit_plen_1) =StealActAllMoney%
+on_info2 = {+esc_shoroh_kick_gg +esc_bandit_base_door_open_quest -esc_bandit_base_door_open_quest_disable_ui} %=disable_ui +esc_bandit_base_door_open_quest_disable_ui%
+
+[sr_idle@3]
+on_info = {+esc_shoroh_quest_away_from_the_bandits_dialog_and} sr_idle@4 %=enable_ui +esc_remove_baza_bandits%
+
+[sr_idle@4]
+on_game_timer = 400 | sr_idle@5
+
+[sr_idle@5]
+on_info = sr_idle@6 %=esc_sms_borland_assistance_conditional =remove_npc(esc_borland_quest) =remove_npc(esc_bandit_shoroh_npc)%
+
+[sr_idle@6]
+on_game_timer = 100 | sr_idle@nil %=spawn_esc_csky_npc +esc_squad_nebo_attack_go%
+
+[sr_idle@nil]
+
+
+

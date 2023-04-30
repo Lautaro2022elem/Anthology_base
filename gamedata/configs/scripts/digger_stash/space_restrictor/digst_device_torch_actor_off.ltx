@@ -1,0 +1,5 @@
+[logic]
+active = sr_idle@torch_off
+
+[sr_idle@torch_off]
+on_info = {-digst_device_torch_actor_on +digst_lamp_destroyed} %=disable_actor_torch%

@@ -1,0 +1,2385 @@
+<?xml version="1.0" encoding="windows-1251" standalone="yes" ?>
+<string_table>
+    <string id="blck_val_actor_meet_from_hunter_10">
+        <text>Тварюга эта, её псевдо-плотью называют, она не совсем простая... Много всяких баек о ней травят, но я никогда легендам не верил. Но позже мне и самому удалось убедиться, что большинство рассказов о ней - правда. Помниться пошел я как-то к свалке радиоактивного металла, и вдруг слышу, как на помощь зовет кто-то. Я присел и потихонечку в сторону этих воплей пошел, но сразу меня насторожило кое-что... Не разборчиво как-то речь шла, но смысл слов понять можно было. Так вот, подошел я значит к этому месту, за кабиной от камаза спрятался и посмотрел в сторону криков, ты не представляешь, как я удивился, вместо какого-нибудь раненого сталкера там сидел эта самая псевдо-плоть и на человеческом что-то бормотала. Хотел я прикончить эту тварюгу, правда даже винтовку с плеча не успел снять, тварь без следа пропала.</text>
+    </string>
+    <string id="blck_val_actor_meet_from_hunter_11">
+        <text>Интересная история, и ты думаешь, что тварь все еще где-то там бродит?</text>
+    </string>
+    <string id="blck_val_actor_meet_from_hunter_12">
+        <text>Так и есть, точно тебе говорю, логово у нее где-то там, спокойно она себя вела слишком. Есть там ложбинка одна - даже в солнечный день там постоянно сыро. Скорее всего, псевдо-плоть там. Как подберёмся ближе, ты заходи справа по холму, а я пойду слева. Как увидишь эту гадину, гони её на меня - я её добью. Но за спину тоже поглядывай, там могут быть другие мутанты.</text>
+    </string>
+    <string id="blck_val_actor_meet_from_hunter_13">
+        <text>Понял, отправляемся прямо сейчас?</text>
+    </string>
+    <string id="blck_val_actor_meet_from_hunter_14">
+        <text>Да, нужно уже идти, если все те слухи, что о ней говорят правда... Нужно срочно избавить нас от этой проблемы.</text>
+    </string>
+    <string id="blck_val_actor_meet_from_hunter_15">
+        <text>Показывай дорогу.</text>
+    </string>
+    <string id="blck_val_actor_meet_from_hunter_17">
+        <text>Все, подохла тварь, это точно она, её я видел тогда. Ну, как и договаривались, ты мне помог, и я тебе помогу. Как буду уходить с Заставы, обязательно возьму тебя с собой. И ещё, на вот, возьми за помощь.</text>
+    </string>
+    <string id="blck_val_actor_meet_from_hunter_18">
+        <text>Ерунда, если еще что нужно будет, ты знаешь, где меня найти. Что сейчас делать будем?</text>
+    </string>
+    <string id="blck_val_actor_meet_from_hunter_19">
+        <text>Учту. Ты можешь возвращаться на базу, а я здесь пока посижу. Нужно глянуть, что с этой гадины на продажу взять можно. Я как с Заставы уходить буду, то сообщу тебе.</text>
+    </string>
+    <string id="blck_val_actor_meet_from_hunter_2">
+        <text>Здравствуй, наёмник! Я так понимаю, что ты уже говорил с Распутиным?</text>
+    </string>
+    <string id="blck_val_actor_meet_from_hunter_20">
+        <text>Договорились. До встречи!</text>
+    </string>
+    <string id="blck_val_actor_meet_from_hunter_22">
+        <text>Слушай, не видно её что-то... Прячется где-то, наверное, падла такая, а ты ищи её потом...</text>
+    </string>
+    <string id="blck_val_actor_meet_from_hunter_23">
+        <text>Может ее, убил кто-то уже?</text>
+    </string>
+    <string id="blck_val_actor_meet_from_hunter_24">
+        <text>Очень сомневаюсь, что её уже убили, мы бы точно услышали об этом. Знаешь, как охотники любят похвастаться своей добычей? Если бы кто-то действительно выследил псевдо-плоть, а потом убил её, то поднялась бы такая шумиха, что об этом в тот же день вся Застава гудела.</text>
+    </string>
+    <string id="blck_val_actor_meet_from_hunter_25">
+        <text>Ладно, тогда что ты собираешься делать дальше?</text>
+    </string>
+    <string id="blck_val_actor_meet_from_hunter_26">
+        <text>Так, думаю, что нужно другую часть свалки осмотреть. Пойдем к тому месту, где я увидел её в первый раз, может быть она там сидит.</text>
+    </string>
+    <string id="blck_val_actor_meet_from_hunter_27">
+        <text>Ладно, показывай дорогу к этому месту..</text>
+    </string>
+    <string id="blck_val_actor_meet_from_hunter_29">
+        <text>Можешь возвращаться на базу, я как с Заставы уходить буду, то сообщу тебе.</text>
+    </string>
+    <string id="blck_val_actor_meet_from_hunter_3">
+        <text>Да, я говорил с ним. Слушай, Распутин сказал, что ты сможешь вывести меня с Заставы, это так?</text>
+    </string>
+    <string id="blck_val_actor_meet_from_hunter_31">
+        <text>Что там у вас стряслось? Распутин говорил, что ты, вместе с каким-то сталкером, Лютым кажется, Стройплощадку с монолитовцами взорвать пытался, у вас получилось?..</text>
+    </string>
+    <string id="blck_val_actor_meet_from_hunter_32">
+        <text>Нет, я не хочу говорить об этом, ты уже можешь меня вывести из Заставы?</text>
+    </string>
+    <string id="blck_val_actor_meet_from_hunter_33">
+        <text>Ну, я за этим и пришел, я в Бар собираюсь, там у меня есть кое-какие дела, а затем отправлюсь на Янтарь, можешь со мной и до Янтаря идти, если захочешь. Отправляемся прямо сейчас, ты готов?</text>
+    </string>
+    <string id="blck_val_actor_meet_from_hunter_34">
+        <text>Да, я готов, идём.</text>
+    </string>
+    <string id="blck_val_actor_meet_from_hunter_4">
+        <text>Да, я могу это сделать. Но не за просто так, и деньги мне не нужны. Вот если поможешь мне кое-что сделать, то когда я буду уходить с Заставы, возьму тебя с собой. Договорились?</text>
+    </string>
+    <string id="blck_val_actor_meet_from_hunter_5">
+        <text>Понятно, ну и что за помощь тебе требуется?</text>
+    </string>
+    <string id="blck_val_actor_meet_from_hunter_6">
+        <text>Нужно, чтобы ты мне тварь одну выследить помог и прикрыл в случае чего, мало ли, что может произойти.</text>
+    </string>
+    <string id="blck_val_actor_meet_from_hunter_7">
+        <text>А чего охотников не возьмешь? У них опыта в этом деле побольше моего будет.</text>
+    </string>
+    <string id="blck_val_actor_meet_from_hunter_8">
+        <text>Понимаешь, был я у учёных на Янтаре, о тваре одной, которую здесь видел, им рассказал, а они попросили образец её ткани добыть. Заплатить они хорошо обещали, но если делить награду со всей группой, получается не так уж много денег. А взять кого-то одного тоже не могу, другие не так поймут. Поэтому, лучше им вообще ничего об этом заказе не знать. Ну, так что, согласен?</text>
+    </string>
+    <string id="blck_val_actor_meet_from_hunter_9">
+        <text>Ладно, помогу тебе. Расскажи, что это за тварь-то такая хотя бы.</text>
+    </string>
+    <string id="blck_val_actor_meet_from_lutiy_11">
+        <text>Здарова, Зверь! С чем пожаловал ко мне?</text>
+    </string>
+    <string id="blck_val_actor_meet_from_lutiy_12">
+        <text>Пока нет... Да и сомневаюсь, что мне удастся все это забыть. В любом случае, мы выбрались и это сейчас самое главное, теперь жизнь наладится и возможно, в скором времени, я увижу свою семью. А сейчас прости, но я хочу немного побыть один.</text>
+    </string>
+    <string id="blck_val_actor_meet_from_lutiy_13">
+        <text>Ладно, надеюсь все так и будет.</text>
+    </string>
+    <string id="blck_val_actor_meet_from_lutiy_2">
+        <text>Наконец-то тебя выпустили, Зверь! Ну и упертым этот Ставрид оказался, но все же мне удалось ему объяснить суть сложившейся ситуации. Как себя чувствуешь?</text>
+    </string>
+    <string id="blck_val_actor_meet_from_lutiy_3">
+        <text>В целом неплохо... Мне тут охранник сказал, что Маркус так и не выбрался из аномалии, как так получилось?</text>
+    </string>
+    <string id="blck_val_actor_meet_from_lutiy_4">
+        <text>Да, это так, просто мы с тобой никак связаться не могли, а Лесник торопил всех, вот он и решил сходить поискать тебя, видимо не нашел... Хоть бы всё хорошо с ним было, оставаться одному в том месте - так и свихнуться недолго, будем надеятся, что Лесник, по прибытию в Рыжий лес, координаты выхода в ту зону отправит, а Маркус поймает их.</text>
+    </string>
+    <string id="blck_val_actor_meet_from_lutiy_5">
+        <text>Вот так ситуация... Будем надеется, что он сможет выбраться, эх, ладно, кто-то, кроме тебя, с группы остался на Заставе?</text>
+    </string>
+    <string id="blck_val_actor_meet_from_lutiy_6">
+        <text>Нет, все еще вчера ушли с проводником из Заставы, но их не стоит винить за это. Не удивлюсь, если после пережитого, они решат покинуть Зону.</text>
+    </string>
+    <string id="blck_val_actor_meet_from_lutiy_7">
+        <text>Понял. Ну, а у тебя какие планы на будущее?</text>
+    </string>
+    <string id="blck_val_actor_meet_from_lutiy_8">
+        <text>В ближайшее время я не собираюсь никуда уходить, решил остаться пока на Заставе, забыть обо всем, что пришлось пережить внутри этой чертовой аномалии.</text>
+    </string>
+    <string id="blck_val_actor_meet_from_lutiy_9">
+        <text>И как успехи, смог забыть произошедшее там?</text>
+    </string>
+    <string id="blck_val_actor_meet_from_marchuk_0">
+        <text>Вроде бы справились... Огромное спасибо за помощь, наёмник, вдвоем мы бы эту атаку не отбили.</text>
+    </string>
+    <string id="blck_val_actor_meet_from_marchuk_1">
+        <text>Не стоит благодарить преждевременно, не факт, что бандиты остановятся так и не достигнув цели. Ставрид мне говорил, что вы узнали об этом нападении из закрытой частоты бандитов, так? У тебя с собой рация настроенная на эту частоту есть?</text>
+    </string>
+    <string id="blck_val_actor_meet_from_marchuk_2">
+        <text>Точно, нужно узнать не успел ли кто о засаде доложить, сейчас проверю их канал.</text>
+    </string>
+    <string id="blck_val_actor_meet_from_marchuk_3">
+        <text>Давай, нам нужно знать, чего еще стоит ждать от бандитов.</text>
+    </string>
+    <string id="blck_val_actor_meet_from_marchuk_end_0">
+        <text>Черт, они сюда еще один свой отряд отправили, что будем делать, наёмник?</text>
+    </string>
+    <string id="blck_val_actor_meet_from_marchuk_end_1">
+        <text>Не паникуй, займите свои позиции и ожидайте гостей, а я на свою снайперскую позицию на чердаке вернусь.</text>
+    </string>
+    <string id="blck_val_actor_meet_from_miklucha_10">
+        <text>Да-да, я и это знаю. Ты просто дослушай меня, а потом уже давай окончательный ответ, идёт?</text>
+    </string>
+    <string id="blck_val_actor_meet_from_miklucha_11">
+        <text>Валяй.</text>
+    </string>
+    <string id="blck_val_actor_meet_from_miklucha_12">
+        <text>Думаю, наверняка ты знаешь о большом отряде Монолита, который разместился неподалёку? Эти фанатики как кость в горле не только для сталкеров с хутора, но и для нас. Пятерых моих бойцов завалили, твари. Да и не мне тебе рассказывать, сколько проблем от них обычным сталкерам, и тебе в том числе.</text>
+    </string>
+    <string id="blck_val_actor_meet_from_miklucha_13">
+        <text>Ну и? Что дальше?</text>
+    </string>
+    <string id="blck_val_actor_meet_from_miklucha_14">
+        <text>А дальше то, что им постоянно откуда-то поставляют припасы и новых людей. И их становиться всё больше. Скоро им будет слишком тесно с нами, и они попросту нас сотрут в порошок. Казалось бы, выход только один - сваливать отсюда. Однако на днях нам посчастливилось узнать, кто за всем этим стоит. Их главный. Погоняло Вервольф. Но это еще не всё, мы знаем, как можно убить его, без потерь. И его приближенных тоже.</text>
+    </string>
+    <string id="blck_val_actor_meet_from_miklucha_15">
+        <text>Интересно, и как же ты собираешься убить его?</text>
+    </string>
+    <string id="blck_val_actor_meet_from_miklucha_16">
+        <text>Прихлопнуть как муху. Позавчера, один из моих бойцов вытащил человека из Жарки, этим человеком оказался один из монолитовцев, причем не шушера какая-то, а один из приближенных этого урода Вервольфа. Нам удалось потолковать с ним по душам, и он любезно решил поделиться с нами очень ценной информацией. Оказывается, завтра будет происходить некая встреча Вервольфа и еще какого-то монолитовского фрукта. Встреча эта будет происходить на территории фабрики, с минимальной охраной.</text>
+    </string>
+    <string id="blck_val_actor_meet_from_miklucha_17">
+        <text>Думаешь, что важные шишки стали бы встречаться без толковой охраны?</text>
+    </string>
+    <string id="blck_val_actor_meet_from_miklucha_18">
+        <text>Я и не говорил, что охрана будет не толковая. Все бойцы будут опытные, а все потому, что перец этот с которым встретиться Вервольф настолько крутой, что рядовые бойцы о встрече этой даже не знают. Тут-то нам и нужна помощь. По правде говоря, я не очень хотел в это дело впутывать кого-либо еще, но из-за этих уродов, я потерял пять своих толковых ребят. А с тем количеством людей, что я имею сейчас, шансы малы. Поэтому нам бы очень пригодилась помощь такого опытного человека как ты. Ну, что скажешь?</text>
+    </string>
+    <string id="blck_val_actor_meet_from_miklucha_19">
+        <text>Нужно подумать, так сразу я тебе ничего сказать не могу.</text>
+    </string>
+    <string id="blck_val_actor_meet_from_miklucha_2">
+        <text>Но пасара'н. Рад видеть тебя, Зверь!</text>
+    </string>
+    <string id="blck_val_actor_meet_from_miklucha_20">
+        <text>Ладно, Миклуха, я согласен, я пойду с вами.</text>
+    </string>
+    <string id="blck_val_actor_meet_from_miklucha_21">
+        <text>Нет времени думать. Встреча будет проходить совсем скоро, а оставшееся время лучше бы потратить на проработку плана и подготовку. К тому же, сам посуди, второго такого шанса больше не будет. А сектантов меньше не становиться, и скоро их будет столько, что всем нам тут жопы порвут.</text>
+    </string>
+    <string id="blck_val_actor_meet_from_miklucha_22">
+        <text>Я знал, что ты ровный мэн. Так, тогда прямо сейчас и отправляемся к заводу, нужно подготовится к этой встрече.</text>
+    </string>
+    <string id="blck_val_actor_meet_from_miklucha_23">
+        <text>Ладно, показывай короткую дорогу.</text>
+    </string>
+    <string id="blck_val_actor_meet_from_miklucha_25">
+        <text>Слушай, Зверь, поговорим позже, сейчас у меня дел по горло...</text>
+    </string>
+    <string id="blck_val_actor_meet_from_miklucha_3">
+        <text>Мы разве знакомы?</text>
+    </string>
+    <string id="blck_val_actor_meet_from_miklucha_4">
+        <text>Ах да, прости, забыл представиться. Меня зовут Миклуха, я командир отряда Свободы. Ну, а ты можешь не представляться, о тебе и о твоем возвращении из пространственной аномалии, я уже наслышан.</text>
+    </string>
+    <string id="blck_val_actor_meet_from_miklucha_5">
+        <text>И что слышал обо мне?</text>
+    </string>
+    <string id="blck_val_actor_meet_from_miklucha_6">
+        <text>Если честно, то мало хорошего. Однако, я знаю точно, что ты профессионал своего дело. Именно такой человек как ты нам и нужен.</text>
+    </string>
+    <string id="blck_val_actor_meet_from_miklucha_7">
+        <text>И для чего же?</text>
+    </string>
+    <string id="blck_val_actor_meet_from_miklucha_8">
+        <text>Нужно убить одного очень опасного человека...</text>
+    </string>
+    <string id="blck_val_actor_meet_from_miklucha_9">
+        <text>Ничем помочь не могу, я отошел от дел.</text>
+    </string>
+    <string id="blck_val_actor_meet_from_monolit_leader_0">
+        <text>Приветствую тебя, слуга Монолита! Зачем вы прибыли сюда?</text>
+    </string>
+    <string id="blck_val_actor_meet_from_monolit_leader_1">
+        <text>Мы прибыли сюда, чтобы увеличить мощь Монолита на этой земле.</text>
+    </string>
+    <string id="blck_val_actor_meet_from_monolit_leader_2">
+        <text>Мы не ждали сегодня подкрепления. Откуда прибыли, и почему вас только двое?</text>
+    </string>
+    <string id="blck_val_actor_meet_from_monolit_leader_3">
+        <text>Эм... Меня и ещё пятерых братьев отправил к вам Молитвенник. Мы проделали большой путь из Лиманска, он был полон испытаний, и не все братья прошли проверку Монолита. Мы должны были прибыть на несколько дней позже, но Монолит смилостивился и показал нам быстрый путь к вам.</text>
+    </string>
+    <string id="blck_val_actor_meet_from_monolit_leader_4">
+        <text>Слава Монолиту, что вы смогли добраться сюда. Если вы не погибли по дороге сюда, значит так, было угодно Монолиту, и вы нужны здесь.</text>
+    </string>
+    <string id="blck_val_actor_meet_from_monolit_leader_5">
+        <text>Я пойду.</text>
+    </string>
+    <string id="blck_val_actor_meet_from_monolit_scene_0">
+        <text>Благодари Монолит, неверный, за то, что он сохранил тебе жизнь... Я бы здесь же прикончил тебя, но мне запрещено это делать, Монолит выбрал тебя, ты выбран, чтобы пройти его испытание. Твой друг у нас, если ты хочешь спасти его.</text>
+    </string>
+    <string id="blck_val_actor_meet_from_monolit_scene_1">
+        <text>Лютый у вас? Что за игру вы ведете?</text>
+    </string>
+    <string id="blck_val_actor_meet_from_monolit_scene_2">
+        <text>Молчать, неверный! Здесь только я могу говорить... В твоем КПК отмечено место, именно туда Пророк увел твоего друга и если ты хочешь спасти его, ты должен отправиться туда.</text>
+    </string>
+    <string id="blck_val_actor_meet_from_monolit_scene_3">
+        <text>Я сам разберусь, что мне делать.</text>
+    </string>
+    <string id="blck_val_actor_meet_from_provodnik_11">
+        <text>Всё, пришли. Я пока останусь на хуторе, если тебе будет нужно безопасно пройти к заводу или еще куда, то я тут недалеко буду, в соседнем домике. Удачи, наёмник!</text>
+    </string>
+    <string id="blck_val_actor_meet_from_provodnik_12">
+        <text>И тебе не хворать.</text>
+    </string>
+    <string id="blck_val_actor_meet_from_provodnik_14">
+        <text>Здравствуй, наёмник. Тебя нужно провести куда-то?</text>
+    </string>
+    <string id="blck_val_actor_meet_from_provodnik_16">
+        <text>Мне нужно к Металлургическому заводу, отведешь?</text>
+    </string>
+    <string id="blck_val_actor_meet_from_provodnik_17">
+        <text>Пока нет.</text>
+    </string>
+    <string id="blck_val_actor_meet_from_provodnik_18">
+        <text>Не вопрос, с радостью тебя отведу к заводу и поскольку ты выполняешь поручение от Ставрида, то денег с тебя брать не буду. Ну, что готов отправляться?</text>
+    </string>
+    <string id="blck_val_actor_meet_from_provodnik_19">
+        <text>Да, пошли.</text>
+    </string>
+    <string id="blck_val_actor_meet_from_provodnik_2">
+        <text>Здравствуй, наёмник. Это ты бандитов утихомирил? Я тут был неподалёку, стрельбу услышал, так сразу и подумал, что бандиты кого-то прижали, решил помочь, а тут и помогать не пришлось. Ты здесь что-то ищешь или просто территорию осматриваешь?</text>
+    </string>
+    <string id="blck_val_actor_meet_from_provodnik_20">
+        <text>Ну, вот мы и на месте. Я подожду тебя здесь какое-то время, как надумаешь возвращаться на Северный хутор, то подходи, но только учти, что если тебя долго не будет, то я отправлюсь обратно один.</text>
+    </string>
+    <string id="blck_val_actor_meet_from_provodnik_21">
+        <text>Хорошо, думаю, что надолго не задержусь, жди.</text>
+    </string>
+    <string id="blck_val_actor_meet_from_provodnik_23">
+        <text>Ну, что, наёмник, готов возвращаться обратно на Северный хутор?</text>
+    </string>
+    <string id="blck_val_actor_meet_from_provodnik_24">
+        <text>Да, нужно рассказать Ставриду, что кто-то убил Левшу.</text>
+    </string>
+    <string id="blck_val_actor_meet_from_provodnik_25">
+        <text>Да, ситуёвина однако... Левша вроде как неплохим парнем был, хоть и кашу заварил нехилую, друга прирезав.</text>
+    </string>
+    <string id="blck_val_actor_meet_from_provodnik_26">
+        <text>Скорее всего он в смерте Хромого не виновен, раз самого Левшу убрали, кто-то явно заметает следы.</text>
+    </string>
+    <string id="blck_val_actor_meet_from_provodnik_27">
+        <text>Ладно, разбирайся сам, я в эти хитросплетения лезть не буду. Отправляемся на Северный хутор?</text>
+    </string>
+    <string id="blck_val_actor_meet_from_provodnik_28">
+        <text>Да, идём.</text>
+    </string>
+    <string id="blck_val_actor_meet_from_provodnik_3">
+        <text>Я тут по поручению Ставрида, это всё, что тебе надо знать.</text>
+    </string>
+    <string id="blck_val_actor_meet_from_provodnik_30">
+        <text>Здравствуй, наёмник. Тебя нужно провести куда-то?</text>
+    </string>
+    <string id="blck_val_actor_meet_from_provodnik_31">
+        <text>Мне снова надо к Металлургическому заводу, отведешь?</text>
+    </string>
+    <string id="blck_val_actor_meet_from_provodnik_32">
+        <text>Конечно, отведу тебя к заводу, ты помогаешь нам, а я помогу тебе. Ну, готов выдвигаться?</text>
+    </string>
+    <string id="blck_val_actor_meet_from_provodnik_33">
+        <text>Да, пошли.</text>
+    </string>
+    <string id="blck_val_actor_meet_from_provodnik_35">
+        <text>Ну, что готов уже возвращаться обратно на Северный хутор?</text>
+    </string>
+    <string id="blck_val_actor_meet_from_provodnik_36">
+        <text>Да, пойдем.</text>
+    </string>
+    <string id="blck_val_actor_meet_from_provodnik_37">
+        <text>Мне нужно к Аномальной роще, сходишь со мной?</text>
+    </string>
+    <string id="blck_val_actor_meet_from_provodnik_38">
+        <text>Я бы с радостью провёл тебя к Аномальной роще, наёмник, но там очень много кабанов водится, да и бандиты временами шастают, давай я тебя к Панскому хутору безопасным путём отведу, а дальше уже сам доберешься, идёт? Или же, по-старинке, могу отвести к заводу, а дальше сам к Аномальной роще пойдешь.</text>
+    </string>
+    <string id="blck_val_actor_meet_from_provodnik_39">
+        <text>Меня тут свободовец один, Миклуха который, попросил зайти к нему, координаты свои скинул, путь не близкий, может покажешь безопасную дорогу?</text>
+    </string>
+    <string id="blck_val_actor_meet_from_provodnik_4">
+        <text>Ага, значит ты тот самый наёмник, что с группой сталкеров из Пространственной аномалии вывалился? Ну, тогда ладно, я с расспросами лезть не буду, последнее, что хотел спросить, ты это, куда сейчас путь держишь, не на Северный хутор случайно?</text>
+    </string>
+    <string id="blck_val_actor_meet_from_provodnik_40">
+        <text>Мне нужно к старой школе сходить, покажешь безопасную дорогу?</text>
+    </string>
+    <string id="blck_val_actor_meet_from_provodnik_41">
+        <text>Ладно, показывай безопасный путь к Панскому хутору.</text>
+    </string>
+    <string id="blck_val_actor_meet_from_provodnik_42">
+        <text>Веди к Металлургическому заводу, оттуда к Аномальной роще пойду.</text>
+    </string>
+    <string id="blck_val_actor_meet_from_provodnik_43">
+        <text>Я передумал.</text>
+    </string>
+    <string id="blck_val_actor_meet_from_provodnik_46">
+        <text>Миклуха? Знаю такого, он со своими ребятами в старой школе обосновался, можем выдвигаться туда хоть сейчас, с радостью покажу тебе безопасный путь к этой школе. Выдвигаемся?</text>
+    </string>
+    <string id="blck_val_actor_meet_from_provodnik_47">
+        <text>Да, идём. Узнаю, чего ему надо.</text>
+    </string>
+    <string id="blck_val_actor_meet_from_provodnik_48">
+        <text>Прости, наёмник, но я не могу отвести тебя к школе, свободовцев в ней больше нет, да и поговаривают, что там засели бандиты...</text>
+    </string>
+    <string id="blck_val_actor_meet_from_provodnik_49">
+        <text>Ладно, забудь об этом.</text>
+    </string>
+    <string id="blck_val_actor_meet_from_provodnik_5">
+        <text>Да, на Северный хутор иду, надо со Ставридом поговорить.</text>
+    </string>
+    <string id="blck_val_actor_meet_from_provodnik_50">
+        <text>Проведешь к Панскому хутору?</text>
+    </string>
+    <string id="blck_val_actor_meet_from_provodnik_51">
+        <text>Да, без проблем, готов выдвигаться?</text>
+    </string>
+    <string id="blck_val_actor_meet_from_provodnik_52">
+        <text>Готов, пойдём.</text>
+    </string>
+    <string id="blck_val_actor_meet_from_provodnik_53">
+        <text>Не вопрос, проведу. Готов отправляться?</text>
+    </string>
+    <string id="blck_val_actor_meet_from_provodnik_54">
+        <text>Готов, идём.</text>
+    </string>
+    <string id="blck_val_actor_meet_from_provodnik_6">
+        <text>Может вместе пойдём тогда? Я одну безопасную тропу знаю, да и веселей будет вдвоем...</text>
+    </string>
+    <string id="blck_val_actor_meet_from_provodnik_7">
+        <text>А ты кто, проводник чтоли? Вывести из Заставы сможешь?</text>
+    </string>
+    <string id="blck_val_actor_meet_from_provodnik_8">
+        <text>Нет, я на проводника не тяну, я только на Заставе все тропинки изучил, а вот что там за пределами территории - не в курсе, у нас на хуторе другой человек услуги проводника предоставляет, потому как места здесь дикие, аномалий пруд-пруди, первый встречный тебя отсюда не выведет. Так, что-то заболтался я, пошли на Северный хутор?</text>
+    </string>
+    <string id="blck_val_actor_meet_from_provodnik_9">
+        <text>Да, вперед.</text>
+    </string>
+    <string id="blck_val_actor_meet_from_shaman_11">
+        <text>Ты по какому делу ко мне, Зверь?</text>
+    </string>
+    <string id="blck_val_actor_meet_from_shaman_13">
+        <text>Ставрид сообщил мне, что Левша тоже мёртв, это правда?</text>
+    </string>
+    <string id="blck_val_actor_meet_from_shaman_14">
+        <text>Да, это так. Распутин, можешь помочь мне? Ты ведь со всем сталкерами на базе хорошо знаком?</text>
+    </string>
+    <string id="blck_val_actor_meet_from_shaman_15">
+        <text>Жаль парней... На счет сталкеров, то знаю всех, я же все-таки бармен здесь. А что?</text>
+    </string>
+    <string id="blck_val_actor_meet_from_shaman_16">
+        <text>Не можешь мне подсказать, кому этот нож принадлежит?</text>
+    </string>
+    <string id="blck_val_actor_meet_from_shaman_17">
+        <text>О, так это ж нож Химика, он его сегодня по всей базе искал. Матерился жутко, даже вроде как встревожен чем-то был.</text>
+    </string>
+    <string id="blck_val_actor_meet_from_shaman_18">
+        <text>Где он сейчас?</text>
+    </string>
+    <string id="blck_val_actor_meet_from_shaman_19">
+        <text>Да он всё нож свой искал, а потом вроде как вспомнил, где его потерял и пошел на то место. Держи нож, отдашь ему при встрече.</text>
+    </string>
+    <string id="blck_val_actor_meet_from_shaman_2">
+        <text>Привет, наёмник!</text>
+    </string>
+    <string id="blck_val_actor_meet_from_shaman_20">
+        <text>Спасибо, пойду я тогда.</text>
+    </string>
+    <string id="blck_val_actor_meet_from_shaman_22">
+        <text>Здоров, наёмник. Купить что-то хочешь или как?</text>
+    </string>
+    <string id="blck_val_actor_meet_from_shaman_24">
+        <text>Ты по какому делу ко мне, Зверь?</text>
+    </string>
+    <string id="blck_val_actor_meet_from_shaman_26">
+        <text>Значит это Химик убил Хромого и Левшу? Вот же, пригрели змею на груди... Одно радует, его больше нет среди живых.</text>
+    </string>
+    <string id="blck_val_actor_meet_from_shaman_27">
+        <text>Он поплатился за свою подлость. Слушай я забрал его нож себе, не хочешь купить?</text>
+    </string>
+    <string id="blck_val_actor_meet_from_shaman_28">
+        <text>Он поплатился за свою подлость...</text>
+    </string>
+    <string id="blck_val_actor_meet_from_shaman_29">
+        <text>Хм, а что, довольно таки хорошая вещь, дам тебе за него 3000 рублей, идет?</text>
+    </string>
+    <string id="blck_val_actor_meet_from_shaman_3">
+        <text>Я давно уже не наёмник. Чего тебе надо?</text>
+    </string>
+    <string id="blck_val_actor_meet_from_shaman_30">
+        <text>Договорились, держи.</text>
+    </string>
+    <string id="blck_val_actor_meet_from_shaman_31">
+        <text>Нет, придержу его пока у себя.</text>
+    </string>
+    <string id="blck_val_actor_meet_from_shaman_32">
+        <text>Ага, вот твои деньги, ты ко мне просто так зашел или по делу?</text>
+    </string>
+    <string id="blck_val_actor_meet_from_shaman_33">
+        <text>Ну, чего ты так сразу, ладно даю за него 4500 рублей, больше дать за этот нож не могу, продаешь?</text>
+    </string>
+    <string id="blck_val_actor_meet_from_shaman_34">
+        <text>Ну, ладно, продаю.</text>
+    </string>
+    <string id="blck_val_actor_meet_from_shaman_35">
+        <text>Не в деньгах дело, может он мне еще пригодится.</text>
+    </string>
+    <string id="blck_val_actor_meet_from_shaman_36">
+        <text>Вот и отлично! Вот, держи твои деньги. Кстати, забыл спросить, ты ко мне просто так зашел или по делу?</text>
+    </string>
+    <string id="blck_val_actor_meet_from_shaman_37">
+        <text>Ладно, не хочешь продавать - не продавай. Я это, спросить хотел, ты ко мне по делу или просто так зашел, а то у меня работы много?</text>
+    </string>
+    <string id="blck_val_actor_meet_from_shaman_38">
+        <text>Ну и спасибо тебе, что от крысы нас избавил. Я это, спросить хотел, ты ко мне по делу или просто так зашел, а то у меня работы много?</text>
+    </string>
+    <string id="blck_val_actor_meet_from_shaman_39">
+        <text>Слушай, мне Ставрид сказал, что ты работенку подкинуть можешь, а то проводник еще не скоро вернется, да и деньги лишними никогда не бывают.</text>
+    </string>
+    <string id="blck_val_actor_meet_from_shaman_4">
+        <text>Да ладно тебе, бывшими не бывают. Меня тут все Распутиным кличут, а ты Зверь, верно?</text>
+    </string>
+    <string id="blck_val_actor_meet_from_shaman_40">
+        <text>Да, есть у меня одно дело, ничего сложного в нем нет... Расскажу в общих чертах, один из завсегдатых моего бара недавно обнаружили в аномальной роще, что возле завода, один крутой артефакт, Колобок его название, мне бы он очень пригодился. Но он достать его не смог, артефакт этот на самом верху этого чудо-дерева и при попытке достать арт, сталкер свалился с этой чертовщины и чуть шею себе не свернул. В общем, поручаю это дело тебе, нужно просто сходить и забрать арт.</text>
+    </string>
+    <string id="blck_val_actor_meet_from_shaman_41">
+        <text>А ты уверен, что артефакт все еще там?</text>
+    </string>
+    <string id="blck_val_actor_meet_from_shaman_42">
+        <text>Думаю, что достать его никто не смог, у нас здесь альпинистов нет. В добавок даю тебе очень крутой детектор Велес, чтобы артефакт было найти проще, все остальные артефакты, что найдешь там можешь забрать себе, ну или продать мне. Ну как, по рукам?</text>
+    </string>
+    <string id="blck_val_actor_meet_from_shaman_43">
+        <text>Ладно, я принесу тебе артефакт.</text>
+    </string>
+    <string id="blck_val_actor_meet_from_shaman_44">
+        <text>Вот и отлично! Держи детектор и наводку на это место, ну так, на всякий случай, если вдруг забыл куда топать нужно.</text>
+    </string>
+    <string id="blck_val_actor_meet_from_shaman_45">
+        <text>Понял, пойду достану этот артефакт.</text>
+    </string>
+    <string id="blck_val_actor_meet_from_shaman_47">
+        <text>Ну, что там, уже достал тот арт из аномальной рощи?</text>
+    </string>
+    <string id="blck_val_actor_meet_from_shaman_48">
+        <text>Да, артефакт уже у меня, пришлось попотеть, чтобы его достать. Еще и бандиты приперлись, права свои качать пытались.</text>
+    </string>
+    <string id="blck_val_actor_meet_from_shaman_49">
+        <text>Вот как?.. Что же ты сделал с ними?</text>
+    </string>
+    <string id="blck_val_actor_meet_from_shaman_5">
+        <text>Допустим так...</text>
+    </string>
+    <string id="blck_val_actor_meet_from_shaman_50">
+        <text>Не важно, главное, что артефакт у меня.</text>
+    </string>
+    <string id="blck_val_actor_meet_from_shaman_51">
+        <text>Ничего, просто сбежал вместе с артефактом, догнать меня у них не получилось.</text>
+    </string>
+    <string id="blck_val_actor_meet_from_shaman_52">
+        <text>Пока нет.</text>
+    </string>
+    <string id="blck_val_actor_meet_from_shaman_53">
+        <text>Ну и правильно, думаю, что они получили по заслугам, а то они совсем борзеть начали, это не первый подобный случай. Давай сюда артефакт.</text>
+    </string>
+    <string id="blck_val_actor_meet_from_shaman_54">
+        <text>Вот, держи.</text>
+    </string>
+    <string id="blck_val_actor_meet_from_shaman_55">
+        <text>Вот распоясались бандиты, это ведь не первый такой случай, надо будет со Ставридом поговорить на счет этого. Давай сюда артефакт.</text>
+    </string>
+    <string id="blck_val_actor_meet_from_shaman_56">
+        <text>Вот, держи.</text>
+    </string>
+    <string id="blck_val_actor_meet_from_shaman_57">
+        <text>А вот твоя награда, как и обещал, если найдешь еще какие-то интересные артефакты, тащи мне, куплю у тебя их дороже чем кто-либо сможет тебе за них здесь предложить. Договорились? Да, кстати, тебя Ставрид просил зайти к нему, говорил, что у него к тебе разговор есть.</text>
+    </string>
+    <string id="blck_val_actor_meet_from_shaman_58">
+        <text>А вот твоя награда, как и обещал, с тобой приятно иметь дело, наёмник.</text>
+    </string>
+    <string id="blck_val_actor_meet_from_shaman_59">
+        <text>Договорились. Ладно, пойду схожу к нему.</text>
+    </string>
+    <string id="blck_val_actor_meet_from_shaman_6">
+        <text>Послушай, Зверь, я знаю, что Ставрид тебе поручил разобраться с Левшой. Однако не мог он убить Хромого, они ж друг за друга глотки могли порвать любому, всегда вместе в рейды ходили, да и вообще друзьями они лучшими были, я такой крепкой дружбы еще не видывал.</text>
+    </string>
+    <string id="blck_val_actor_meet_from_shaman_61">
+        <text>Приветствую в моем баре, Зверь! Ты по делу ко мне или рюмку выпить пришел?</text>
+    </string>
+    <string id="blck_val_actor_meet_from_shaman_62">
+        <text>Артефакт был у меня, но его отобрали бандиты.</text>
+    </string>
+    <string id="blck_val_actor_meet_from_shaman_63">
+        <text>Что?! И ты позволил им уйти? Мда, я понимаю, что ты сейчас пытаешь завязать с своим прошлым наёмника, но чтобы так просто было отобрать хабар у наёмника, даже бывшего, это уже слишком. Не ожидал я от тебя такого.</text>
+    </string>
+    <string id="blck_val_actor_meet_from_shaman_64">
+        <text>Мне без разницы, что ты об этом думаешь, мне не хотелось рисковать жизнью из-за артефакта.</text>
+    </string>
+    <string id="blck_val_actor_meet_from_shaman_65">
+        <text>Ладно, нет смысла спорить, артефакт спорами не вернуть. Если бы знал, что все так повернется, то не поручил бы тебе это задание. Да, кстати, тебя Ставрид просил зайти к нему, говорил, что у него к тебе разговор есть. Бывай!</text>
+    </string>
+    <string id="blck_val_actor_meet_from_shaman_66">
+        <text>Ладно, пойду поговорю с ним, бывай.</text>
+    </string>
+    <string id="blck_val_actor_meet_from_shaman_68">
+        <text>Здарова, Зверь! Слушай, тут охотник один на Заставу прибыл, он сейчас у нас на хуторе, мне как сказали, что ему нужна помощь хорошого стрелка, так я сразу о тебе подумал. Охотник этот, глава группы тех охотников, что у вагончика лагерь разбили, кличка у него Хантер, не слыхал о таком?</text>
+    </string>
+    <string id="blck_val_actor_meet_from_shaman_69">
+        <text>Нет, не слышал раньше о нем, да и кличка у него странная какая-то... Что ты о Хантере этом рассказать можешь?</text>
+    </string>
+    <string id="blck_val_actor_meet_from_shaman_7">
+        <text>И что с этого? На пьяную голову мог он и друга прирезать, не впервые я с таким сталкиваюсь.</text>
+    </string>
+    <string id="blck_val_actor_meet_from_shaman_70">
+        <text>О, брат. О Хантере много чего рассказать могу, я его давно уже знаю. Его все знают, и уважают, некоторые даже побаиваются. Настоящий мужик, скала. Очень надёжный друг и напарник. Он в Зону давно пришел, ещё в 2006 кажется, как он сам сказал - не нашлось ему места в том мире. А тут он быстро освоился, он ведь ещё до Зоны охотником знатным был, а тут дичи хоть отбавляй. После ему стали заказы с Большой земли поступать, на разных мутантов. Ну, на чучела всякие и т.п. Позже когда Зона была уже чуть изучена, стали сюда всякие туристы приезжать, в основном богачи, которым острых ощущений хотелось. Ну, Хантер им охоты и проводил, так что жилось ему неплохо. А однажды, на него какой-то америкашка вышел. Он вроде как фильм документальный о фауне Зоны хотел снять, ну и попросил Хантера поводить его по Зоне, да зверьё показать. Это был первый и последний случай, когда турист, который нанял Хантера погиб. С тех он больше не водит по Зоне никого. А Хантером его как раз тот американец покойный прозвал, так и приклеилось.</text>
+    </string>
+    <string id="blck_val_actor_meet_from_shaman_71">
+        <text>И какая же помощь ему нужна?</text>
+    </string>
+    <string id="blck_val_actor_meet_from_shaman_72">
+        <text>Этого он не уточнял... Ты сходи к нему сам, расспроси, что к чему, он в подробностях тебе все расскажет.</text>
+    </string>
+    <string id="blck_val_actor_meet_from_shaman_73">
+        <text>Ладно, я поговорю с ним.</text>
+    </string>
+    <string id="blck_val_actor_meet_from_shaman_75">
+        <text>Приветствую в моем баре, Зверь! Ты по делу ко мне или рюмку выпить пришел?</text>
+    </string>
+    <string id="blck_val_actor_meet_from_shaman_76">
+        <text>Думаю, что ты сделаешь правильный выбор... Кстати, если захочешь подзаработать немного денег, то приноси мне на продажу части тел мутантов, на Заставе это один из самых простых способов хорошо заработать, думаю, что ты знаешь какие именно части тел особенно ценны.</text>
+    </string>
+    <string id="blck_val_actor_meet_from_shaman_77">
+        <text>Понял, буду иметь ввиду.</text>
+    </string>
+    <string id="blck_val_actor_meet_from_shaman_8">
+        <text>Да не мог он его убить, понимаешь? Не мог! Даже по пьяне. Зверь, я тебя прошу не убивай Левшу сразу, дай ему сначала объясниться, возможно он и сможет доказать свою невиновность.</text>
+    </string>
+    <string id="blck_val_actor_meet_from_shaman_9">
+        <text>Посмотрим по ситуации.</text>
+    </string>
+    <string id="blck_val_actor_meet_from_stavrid_10">
+        <text>Ну, далеко он уйти не мог. Даже более того, он все ещё здесь, на Заставе. В этом я уверен. А вот где именно, я тебе сказать не могу, сам не знаю.</text>
+    </string>
+    <string id="blck_val_actor_meet_from_stavrid_11">
+        <text>Понятно, постараюсь найти его.</text>
+    </string>
+    <string id="blck_val_actor_meet_from_stavrid_13">
+        <text>Чего тебе, наёмник?</text>
+    </string>
+    <string id="blck_val_actor_meet_from_stavrid_15">
+        <text>Как успехи Зверь, разобрался с крысой?</text>
+    </string>
+    <string id="blck_val_actor_meet_from_stavrid_16">
+        <text>Пока не узнаю кто именно крыса, разбираться ни с кем не буду.</text>
+    </string>
+    <string id="blck_val_actor_meet_from_stavrid_17">
+        <text>Это ещё, что значит?</text>
+    </string>
+    <string id="blck_val_actor_meet_from_stavrid_18">
+        <text>Не верю я в то, что Левша убил Хромого. Я с ним говорил, и поверь мне, я распознал бы ложь. Левша рассказал, как они с Хромым добыли неплохой хабар, поэтому и довольные такие были и бухать начали. Об этом знали так-же и те, кто с ними пил. Так, что мотив не только у Левши, но и у всех остальных. К тому же, Левша после ссоры ушел с базы и его зажали бандиты, а с этого выходит, что на базе он больше и не появлялся. Очень маловероятно, что именно он убил своего друга.</text>
+    </string>
+    <string id="blck_val_actor_meet_from_stavrid_19">
+        <text>Понятно. Ты пока приведи Левшу сюда, а там я всех кто бухал тогда, к стенке поставлю, они у меня быстро расколятся. Убийств и крысятничевства я не потерплю.</text>
+    </string>
+    <string id="blck_val_actor_meet_from_stavrid_2">
+        <text>Значит так, слушай меня внимательно, наёмник, я наслышан о твоих "подвигах" и поэтому не вздумай глупость какую-то совершить, больше поблажек не будет. Ты меня понял?</text>
+    </string>
+    <string id="blck_val_actor_meet_from_stavrid_20">
+        <text>Ладно, пойду к Левше.</text>
+    </string>
+    <string id="blck_val_actor_meet_from_stavrid_22">
+        <text>Ну, Зверь, где Левша, ты довел его до лагеря?</text>
+    </string>
+    <string id="blck_val_actor_meet_from_stavrid_23">
+        <text>Левша мёртв, видимо кто-то заметает следы.</text>
+    </string>
+    <string id="blck_val_actor_meet_from_stavrid_24">
+        <text>Вот же мразь. Так, вижу нужно брать всё в свои руки.</text>
+    </string>
+    <string id="blck_val_actor_meet_from_stavrid_25">
+        <text>Давай не торопиться, всё равно уже мертвых не оживить, а если действовать жестко, могут пострадать невиновные. Я узнаю, кто убийца и накажу его, согласен?</text>
+    </string>
+    <string id="blck_val_actor_meet_from_stavrid_26">
+        <text>Хорошо, пусть будет так. Главное результат.</text>
+    </string>
+    <string id="blck_val_actor_meet_from_stavrid_27">
+        <text>Ты ведь уже разузнал, с кем выпивали убитые?</text>
+    </string>
+    <string id="blck_val_actor_meet_from_stavrid_28">
+        <text>Да, с ними было еще два человека, Горелый и Химик.</text>
+    </string>
+    <string id="blck_val_actor_meet_from_stavrid_29">
+        <text>Я разберусь.</text>
+    </string>
+    <string id="blck_val_actor_meet_from_stavrid_3">
+        <text>Не беспокойся, после пережитого в пузыре, я решил покончить со своим прошлым, устал я от всего этого.</text>
+    </string>
+    <string id="blck_val_actor_meet_from_stavrid_31">
+        <text>Зверь, дуй к Левше, поговорим позже.</text>
+    </string>
+    <string id="blck_val_actor_meet_from_stavrid_33">
+        <text>Ну, какие успехи в поисках убийцы, Зверь?</text>
+    </string>
+    <string id="blck_val_actor_meet_from_stavrid_34">
+        <text>Пока ничего не узнал.</text>
+    </string>
+    <string id="blck_val_actor_meet_from_stavrid_36">
+        <text>Ну, как успехи? Разобрался, кто Хромого с Левшой порешил?</text>
+    </string>
+    <string id="blck_val_actor_meet_from_stavrid_37">
+        <text>Разобрался, это был Химик. Это он из-за жажды наживы убил Левшу и Хромого.</text>
+    </string>
+    <string id="blck_val_actor_meet_from_stavrid_38">
+        <text>Что? Хм, никогда бы на него не подумал... Он ведь одним из лучших моих бойцов был, я ему во всём доверял, а он вон какой гнидой оказался. И парней жалко, тоже хорошими сталкерами были.</text>
+    </string>
+    <string id="blck_val_actor_meet_from_stavrid_39">
+        <text>Что сделано - то сделано. Главное, что за смерть их Химик получил сполна.</text>
+    </string>
+    <string id="blck_val_actor_meet_from_stavrid_4">
+        <text>Ладно, как себя чувствуешь?</text>
+    </string>
+    <string id="blck_val_actor_meet_from_stavrid_40">
+        <text>Мда, куда катится мир?.. Я до сих пор не могу поверить, что Химик мог такое сделать, подумал бы на всех кроме него. Даже Горелого хотел в клетке запереть, но после допроса образумился. Вот возьми, это тебе за помощь, ты избавил нас от этой мерзкой крысы, это многого стоит.</text>
+    </string>
+    <string id="blck_val_actor_meet_from_stavrid_41">
+        <text>Спасибо и прощай, видимся мы в последний раз, скорее всего.</text>
+    </string>
+    <string id="blck_val_actor_meet_from_stavrid_42">
+        <text>Постой, а ты куда собрался-то?</text>
+    </string>
+    <string id="blck_val_actor_meet_from_stavrid_43">
+        <text>Ухожу я с Заставы, не уютно у вас здесь.</text>
+    </string>
+    <string id="blck_val_actor_meet_from_stavrid_44">
+        <text>А, тебе никто так и не рассказал?</text>
+    </string>
+    <string id="blck_val_actor_meet_from_stavrid_45">
+        <text>О чем ты?</text>
+    </string>
+    <string id="blck_val_actor_meet_from_stavrid_46">
+        <text>Уйти сейчас ты не сможешь, одну тропу усиленно держат монолитовцы, поэтому через нее Заставу не покинуть, а вторая - рясно усеяна аномалиями и провести тебе сквозь эти аномалии сможет только проводник, но его сейчас нет, он группу, с которой ты прибыл, к Рыжему лесу повёл, придется тебе его подождать.</text>
+    </string>
+    <string id="blck_val_actor_meet_from_stavrid_47">
+        <text>Вот чёрт, ладно, придется у вас еще погостить. У тебя ко мне есть что-то еще?</text>
+    </string>
+    <string id="blck_val_actor_meet_from_stavrid_48">
+        <text>Пока нет, но если тебя нужна работа, то сходи к Распутину, у него для тебя точно что-то найдется.</text>
+    </string>
+    <string id="blck_val_actor_meet_from_stavrid_49">
+        <text>Понял. До встречи!</text>
+    </string>
+    <string id="blck_val_actor_meet_from_stavrid_5">
+        <text>Загорелым и отдохнувшим, у вас в обезьяннике прям как на курорте...</text>
+    </string>
+    <string id="blck_val_actor_meet_from_stavrid_51">
+        <text>С чем пожаловал, Зверь?</text>
+    </string>
+    <string id="blck_val_actor_meet_from_stavrid_53">
+        <text>Хорошо, что ты зашел, Зверь, появились кое-какие проблемы на горизонте, мне понадобится твоя помощь.</text>
+    </string>
+    <string id="blck_val_actor_meet_from_stavrid_54">
+        <text>И что же у вас стряслось опять?</text>
+    </string>
+    <string id="blck_val_actor_meet_from_stavrid_55">
+        <text>Мы тут о закрытой частоте бандитов местных просекли, настроили на нее несколько наших раций, как ты наверное успел догадаться, бандиты на этой частоте не фруктовое варенье обсуждали... В общем, готовят они нападение на наш хутор этой ночью, хотят тех двоих бандюков, что у нас в плену, освободить. Надо их планы немного нарушить, подсобишь?</text>
+    </string>
+    <string id="blck_val_actor_meet_from_stavrid_56">
+        <text>Ладно, постараюсь помочь, какой у тебя план?</text>
+    </string>
+    <string id="blck_val_actor_meet_from_stavrid_57">
+        <text>План таков, трое ребят встречаются с групой бандитов на территории Панского хутора, один занимает снайперскую позицию на чердаке сарая, другие прячутся в развалинах хутора, по прибытию бандитов - мои ребята встречают их с хлебом и солью, бандиты не будут готовы к нападению, поэтому неожиданность - наш главный козырь.</text>
+    </string>
+    <string id="blck_val_actor_meet_from_stavrid_58">
+        <text>Я неплохо справляюсь со снайперкой, поэтому роль снайпера оставь мне.</text>
+    </string>
+    <string id="blck_val_actor_meet_from_stavrid_59">
+        <text>Хорошо, нужную снарягу я тебе выделю, на этом всё, не буду тебя отвлекать, готовься к ночи, она обещает быть жаркой.</text>
+    </string>
+    <string id="blck_val_actor_meet_from_stavrid_6">
+        <text>Ты прости, за то, что в клетке тебя заперли, сам понимаешь, было за что. Лютый поручился за тебя и рассказал, как ты помогал сталкерам в этой аномалии чертовой. У нас конечно дела идут не так плохо, но помощь такого человека как ты – нам бы не помешала, тем более, что ты мне и моим ребятам жизнью обязан, из лап бандитов вас вытащили.</text>
+    </string>
+    <string id="blck_val_actor_meet_from_stavrid_60">
+        <text>Понял тебя, Ставрид. Пойду готовиться.</text>
+    </string>
+    <string id="blck_val_actor_meet_from_stavrid_61">
+        <text>Давай.</text>
+    </string>
+    <string id="blck_val_actor_meet_from_stavrid_63">
+        <text>С чем пожаловал, Зверь?</text>
+    </string>
+    <string id="blck_val_actor_meet_from_stavrid_65">
+        <text>Ну, Зверь, с какими новостями вернулся? Нападение бандитов отбили? Мои парни живы остались?</text>
+    </string>
+    <string id="blck_val_actor_meet_from_stavrid_66">
+        <text>Твои парни оба живи, с бандитами мы справились и с подкреплением, что разведать ситуацию пришло, тоже.</text>
+    </string>
+    <string id="blck_val_actor_meet_from_stavrid_67">
+        <text>С бандитами мы справились, с подкреплением, что следом пришло тоже, но парни твои не все в живых остались, Портной погиб.</text>
+    </string>
+    <string id="blck_val_actor_meet_from_stavrid_68">
+        <text>Отличные новости, Зверь! А то я не связывался с ними еще, не хотел эфир засорять... Говоришь, что бандиты следом за первой группой, еще людей отправили?</text>
+    </string>
+    <string id="blck_val_actor_meet_from_stavrid_69">
+        <text>Да, мы это из их закрытой частоты узнали, вторую группу они отправили после того, как первая на связь с ними не вышла.</text>
+    </string>
+    <string id="blck_val_actor_meet_from_stavrid_7">
+        <text>Понятно. Ладно, рассказывай, что там у тебя?</text>
+    </string>
+    <string id="blck_val_actor_meet_from_stavrid_70">
+        <text>Вот оно как... Ну, ничего, теперь они сюда точно не сунутся, спасибо, что помог устаранить угрозу. Вот тебе награда за помощь от меня и от ребят, да и снайперскую винтовку можешь оставить себе.</text>
+    </string>
+    <string id="blck_val_actor_meet_from_stavrid_71">
+        <text>И тебе спасибо, увидимся позже.</text>
+    </string>
+    <string id="blck_val_actor_meet_from_stavrid_72">
+        <text>Жаль парня, толковый был сталкер, любого был готов в сложной ситуации своей грудью прикрыть, помянуть бы его... Ладно, разберусь с этим позже, так ты говоришь, что бандиты следом за первой группой, еще людей отправили?</text>
+    </string>
+    <string id="blck_val_actor_meet_from_stavrid_74">
+        <text>С чем пожаловал, Зверь?</text>
+    </string>
+    <string id="blck_val_actor_meet_from_stavrid_8">
+        <text>Очень не приятная вещь произошла. Как раз за день до того как вы объявились. Короче, один сталкер убил другого, перерезал ему горло. Они повздорили, морды друг другу бить начали, а после Хромого мы нашли мертвым, а его друг Левша куда-то пропал. Нужно найти и наказать его.</text>
+    </string>
+    <string id="blck_val_actor_meet_from_stavrid_9">
+        <text>Где его искать?</text>
+    </string>
+    <string id="blck_val_actor_meet_from_stavrid_about_0">
+        <text>Можешь ответить на пару вопросов?</text>
+    </string>
+    <string id="blck_val_actor_meet_from_stavrid_about_1">
+        <text>Спрашивай что хотел.</text>
+    </string>
+    <string id="blck_val_actor_meet_from_stavrid_about_2">
+        <text>Расскажи о себе.</text>
+    </string>
+    <string id="blck_val_actor_meet_from_stavrid_about_22">
+        <text>Расскажи о Зоне.</text>
+    </string>
+    <string id="blck_val_actor_meet_from_stavrid_about_221">
+        <text>Спрашивай, поделюсь что знаю.</text>
+    </string>
+    <string id="blck_val_actor_meet_from_stavrid_about_222">
+        <text>Да вот, с первого дня здесь меня один вопрос интересует, правду говорят, что Зона постоянно расширяется?</text>
+    </string>
+    <string id="blck_val_actor_meet_from_stavrid_about_223001">
+        <text>А ты сам как думаешь? Конечно, правда. Раньше Зона была гораздо меньше. Когда она только появилась, её граница находилась севернее нынешнего Бара. Где точно я тебе не скажу, да никто не скажет, но, судя по наличию аномалий, Зона начиналась у брошенных армейских складов.</text>
+    </string>
+    <string id="blck_val_actor_meet_from_stavrid_about_223002">
+        <text>И как быстро она увеличивается? Сейчас аномалий здесь довольно много, неужели раньше меньше было?</text>
+    </string>
+    <string id="blck_val_actor_meet_from_stavrid_about_223003">
+        <text>Хочешь, верь, хочешь не верь, но ещё год назад здесь в разы меньше аномалий было. А пять лет назад в этом районе вообще не было ни одной аномалии. Военные тогда держали защитный периметр в районе нынешнего северного блокпоста на Свалке. Но потом Зона начала увеличиваться. Не знаю почему, это ты у каких-нибудь учёных спрашивай, может они, что и знают по этому поводу. Увеличивалась Зона рывками, притом безо всякой на то причины. Это увеличение обычно сопровождалось выбросами. Раньше они крайне редко происходили, раз в несколько месяцев. Но с каждым годом расширение замедлялось, а выбросы слабели, но учащались. Теперь вообще каждую неделю гремит, зато аномалий пока дальше Кордона не видели.</text>
+    </string>
+    <string id="blck_val_actor_meet_from_stavrid_about_223004">
+        <text>А с нынешним барьером что будет? Я так понимаю, это уже не первый периметр?</text>
+    </string>
+    <string id="blck_val_actor_meet_from_stavrid_about_223005">
+        <text>Правильно понимаешь, Саван, не первый это барьер. Так, дай прикинуть... Этот блокпост, что со стеной на юге Кордона, уже третий по счёту. Его начали строить, когда Зона впервые увеличилась. Тогда на периметре много народу полегло, кого выбросом накрыло, но большинство мутанты загрызли. Никто никогда не видел этих тварей в таком количестве, их там тысячи были! По тревоге все ближайшие части подняли. Ох, и бойня же здесь была! Артиллерия, авиация, танки - били со всего и сразу. По рации даже запросы на бомбардировку передавали, но к тому моменту всё уже успокоилось. После того инцидента за Зону принялись всерьёз. Старый барьер решили не восстанавливать, а на юге Свалки соорудили на скорую руку минные заграждения и укреплённые доты. Но и на этом не остановились. Решили строить вторую линию защиты, на тот случай если первая не справится. Нынешний блокпост на юге и есть бывшая вторая линия. Теперь он на передовой.</text>
+    </string>
+    <string id="blck_val_actor_meet_from_stavrid_about_223006">
+        <text>Почему блокпост так странно выглядит? Я в том смысле, что он не похож на укреплённую оборонительную позицию. Да и стена эта странная, почему она так построена, что часть строений внутри периметра оказалось?</text>
+    </string>
+    <string id="blck_val_actor_meet_from_stavrid_about_223007">
+        <text>Блокпост тебя смущает? Так это и не блокпост. Не было тут никаких военных построек раньше. До аварии в восемьдесят шестом здесь станция техобслуживания была. Да и потом её ещё использовали, заправляли и ремонтировали технику, что на ЧАЭС работала. А после появления Зоны военные обосновались. Никакой стены здесь тогда и не подразумевалось. Её строить начали после первого прорыва, когда этот блокпост объявили второй заградительной линией Чернобыльской Аномальной Зоны. Да только инженеры в спешке что-то напутали, или ещё по какой причине, но строить стену начали южнее блокпоста. После постройки все строения оказались бы внутри Зоны. Кому-то тогда по шапке за оплошность здорово надавали, а стену решили развернуть, чтобы она хотя бы часть строений прикрывала. Вот и получилась такая волна.</text>
+    </string>
+    <string id="blck_val_actor_meet_from_stavrid_about_223008">
+        <text>А ворота где? что-то я их там не увидел.</text>
+    </string>
+    <string id="blck_val_actor_meet_from_stavrid_about_223009">
+        <text>А нет их больше, снесли. Мутанты пару месяцев назад на незапланированный прорыв ринулись. Что примечательно, выброса в тот день не было и даже не предвиделось. Просто вмиг откуда-то из центра появились полчища собак, кабанов и плотей, снесли ворота, потоптали несколько солдат и двинулись дальше на Большую Землю. А как подоспели вертолёты и начали утюжить мутантов, случилось вообще нечто странное - все твари в едином порыве развернулись и рванули обратно к центру Зоны. Что это было, никто так и не понял, ничего подобного раньше не видали. Ворота на посту решили не восстанавливать, всё равно скоро вторую линию закончат, тогда отсюда бойцов и вывезут. Ты, кстати, с юга ведь пришёл? Видал вторую линию? Красота, правда? Всё по правилам фортификации: огнемёты, миномёты, укреплённые окопы и доты с редутами. Минное поле чего стоит, ни один тушкан не проскочит. Денег туда вбухали миллиарды. Европе на безопасность ничего не жалко, спонсирование на высшем уровне.</text>
+    </string>
+    <string id="blck_val_actor_meet_from_stavrid_about_2231">
+        <text>Спасибо за информацию!</text>
+    </string>
+    <string id="blck_val_actor_meet_from_stavrid_about_224">
+        <text>Вопрос 2</text>
+    </string>
+    <string id="blck_val_actor_meet_from_stavrid_about_225">
+        <text>Ответ 2</text>
+    </string>
+    <string id="blck_val_actor_meet_from_stavrid_about_2251">
+        <text>Спасибо за информацию!</text>
+    </string>
+    <string id="blck_val_actor_meet_from_stavrid_about_226">
+        <text>Вопрос 3</text>
+    </string>
+    <string id="blck_val_actor_meet_from_stavrid_about_227">
+        <text>Ответ 3</text>
+    </string>
+    <string id="blck_val_actor_meet_from_stavrid_about_2271">
+        <text>Спасибо за информацию!</text>
+    </string>
+    <string id="blck_val_actor_meet_from_stavrid_about_228">
+        <text>Вопрос 4</text>
+    </string>
+    <string id="blck_val_actor_meet_from_stavrid_about_229">
+        <text>Ответ 4</text>
+    </string>
+    <string id="blck_val_actor_meet_from_stavrid_about_2291">
+        <text>Спасибо за информацию!</text>
+    </string>
+    <string id="blck_val_actor_meet_from_stavrid_about_230">
+        <text>Вопрос 5</text>
+    </string>
+    <string id="blck_val_actor_meet_from_stavrid_about_231">
+        <text>Ответ 5</text>
+    </string>
+    <string id="blck_val_actor_meet_from_stavrid_about_2311">
+        <text>Спасибо за информацию!</text>
+    </string>
+    <string id="blck_val_actor_meet_from_stavrid_about_3">
+        <text>Что-то конкретное интересует?</text>
+    </string>
+    <string id="blck_val_actor_meet_from_stavrid_about_33">
+        <text>Расскажи что-нибудь интересное.</text>
+    </string>
+    <string id="blck_val_actor_meet_from_stavrid_about_331">
+        <text>Про американских шпионов историю слыхал?</text>
+    </string>
+    <string id="blck_val_actor_meet_from_stavrid_about_332">
+        <text>Нет, а что за история?</text>
+    </string>
+    <string id="blck_val_actor_meet_from_stavrid_about_333">
+        <text>Ну, значит, слушай. В прошлом году Распутину поступило предложение организовать туристический поход по Зоне для трёх иностранцев. Деньги предлагали хорошие, поэтому торговец и согласился. Но он мужик хитрый, всё проверяет. В общем, пробил он по своим каналам информацию об этих иностранцах, и выяснил что никакие они не туристы, а агенты ЦРУ. Деньги терять Распутин не хотел, но и сталкеров подставлять тоже не дело.</text>
+    </string>
+    <string id="blck_val_actor_meet_from_stavrid_about_3330001">
+        <text>И что он сделал?</text>
+    </string>
+    <string id="blck_val_actor_meet_from_stavrid_about_3330002">
+        <text>Он обратился ко мне, объяснил всё как есть. Потолковали мы с ним по душам, и нашли решение - отправить со шпионами в качестве проводника Илюху Муромского. Сам понимаешь, прозвище соответствующее. Детина выше двух метров ростом, косая сажень в плечах, силы в нём немерено. Он как-то раз взрослому кабану шею свернул голыми руками, просто попробовать решил получится или нет. Так что за себя в случае чего постоять сможет.</text>
+    </string>
+    <string id="blck_val_actor_meet_from_stavrid_about_3330003">
+        <text>А дальше что?</text>
+    </string>
+    <string id="blck_val_actor_meet_from_stavrid_about_3330004">
+        <text>В назначенное время Илья встретился с «туристами» и повёл их по злачным местам приграничных локаций. «Туристы» хотели издалека посмотреть на некоторых мутантов, сфотографировать их и, если повезёт, кого-нибудь даже подстрелить. Но Илья плохо знал английский язык и не понял даже десятой части того что говорили ему подопечные. Накопленного багажа знаний ему хватило только чтобы понять, что гости хотят бить мутантов, этим самым Илюха и решил заняться.</text>
+    </string>
+    <string id="blck_val_actor_meet_from_stavrid_about_3330005">
+        <text>Кажется, я начинаю догадываться, что дальше было.</text>
+    </string>
+    <string id="blck_val_actor_meet_from_stavrid_about_3330006">
+        <text>Да ты слушай, это только начало. В общем, три дня Илья таскал за собой несчастных американцев. Где они только не побывали за это время и чего только не насмотрелись. В подземельях Агропрома на них напал кровосос и чуть не зашиб одного «туриста». На Янтаре Илья «случайно» забыл предупредить иностранцев о зомби, и когда один полусгнивший труп начал подниматься на ноги в метре от справляющего малую нужду шпиона, тот чуть и большую нужду здесь не справил. Я уж не говорю о нескольких стаях кабанов, слепых псов и плотей, на которых Илюша опять-таки «случайно» выводил группу. А на третий день, уже на обратном пути, Илья предложил заночевать в недостроенном комплексе на севере Тёмной долины. О бюрерах он, естественно, снова умолчал. Даже не знаю, кому в ту ночь страшнее было, американским шпионам, увидавшим так близко вонючих и грязных карликов в рваных балахонах, или бюрерам, повстречавшим визжащих на ультразвуке от ужаса «туристов». Когда Илья это всё рассказывал, у нас от смеха животы чуть не надорвались. Но это ещё не всё. Следующим утром «туристы», с полными воспоминаний штанами, вернулись на Кордон к Сидоровичу, чтобы он переправил их через блокпост. На посту в тот день было оживлённо - приехали какие-то шишки из-за границы. Колязин попросил Сидоровича организовать для вновь прибывших особые условия. Иностранцами оказались три агента ЦРУ, официально направленные в Зону для прохождения специальной подготовительной программы. Сидорович был в недоумении, зачем ЦРУ присылать сначала одних своих агентов под видом «туристов», а потом официально присылать ещё троих агентов. Этими мыслями он поделился с «туристами», на что те с ужасом в глазах на ломаном русском, который они успели выучить за эти три дня с Илюхой, объяснили, что они никакие не шпионы, а обычные туристы, просто приехали посмотреть на Зону, и заплатили за путёвки немалые деньги. Никакого отношения к ЦРУ они не имели.</text>
+    </string>
+    <string id="blck_val_actor_meet_from_stavrid_about_3330007">
+        <text>Вот даёте! Это что же получается, этот ваш Илья Муромский самых настоящих туристов по Зоне таскал и всячески запугивал, думая, что они шпионы? Ну, вы отмочили! Ха-ха-ха!</text>
+    </string>
+    <string id="blck_val_actor_meet_from_stavrid_about_3330008">
+        <text>Да, вот такая история. Чуть людей не загубили. Кстати, официальных шпионов мы тоже с Илюхой отправили, по тому же маршруту. Вот бюреры в Тёмной долине обрадовались. Хе!</text>
+    </string>
+    <string id="blck_val_actor_meet_from_stavrid_about_3330009">
+        <text>Спасибо, настроение поднял.</text>
+    </string>
+    <string id="blck_val_actor_meet_from_stavrid_about_3331">
+        <text>Спасибо за информацию!</text>
+    </string>
+    <string id="blck_val_actor_meet_from_stavrid_about_334">
+        <text>Вопрос 2</text>
+    </string>
+    <string id="blck_val_actor_meet_from_stavrid_about_335">
+        <text>Ответ 2</text>
+    </string>
+    <string id="blck_val_actor_meet_from_stavrid_about_3351">
+        <text>Спасибо за информацию!</text>
+    </string>
+    <string id="blck_val_actor_meet_from_stavrid_about_336">
+        <text>Вопрос 3</text>
+    </string>
+    <string id="blck_val_actor_meet_from_stavrid_about_337">
+        <text>Ответ 3</text>
+    </string>
+    <string id="blck_val_actor_meet_from_stavrid_about_3371">
+        <text>Спасибо за информацию!</text>
+    </string>
+    <string id="blck_val_actor_meet_from_stavrid_about_338">
+        <text>Вопрос 4</text>
+    </string>
+    <string id="blck_val_actor_meet_from_stavrid_about_339">
+        <text>Ответ 4</text>
+    </string>
+    <string id="blck_val_actor_meet_from_stavrid_about_3391">
+        <text>Спасибо за информацию!</text>
+    </string>
+    <string id="blck_val_actor_meet_from_stavrid_about_340">
+        <text>Вопрос 5</text>
+    </string>
+    <string id="blck_val_actor_meet_from_stavrid_about_341">
+        <text>Ответ 5</text>
+    </string>
+    <string id="blck_val_actor_meet_from_stavrid_about_3411">
+        <text>Спасибо за информацию!</text>
+    </string>
+    <string id="blck_val_actor_meet_from_stavrid_about_4">
+        <text>Откуда ты родом?</text>
+    </string>
+    <string id="blck_val_actor_meet_from_stavrid_about_44">
+        <text>Родился я в славном городе Оха, что на Сахалине. Надеюсь, знаешь где это?</text>
+    </string>
+    <string id="blck_val_actor_meet_from_stavrid_about_44001">
+        <text>Про Сахалин то? Конечно знаю, это остров на Дальнем Востоке, недалеко от Японии. Надо же, откуда тебя занесло. А чем ты там занимался?</text>
+    </string>
+    <string id="blck_val_actor_meet_from_stavrid_about_44002">
+        <text>Городок рабочий, живёт в основном за счёт нефти и газа. Да и древним профессиям место нашлось, лесозаготовки да рыбный промысел. Так что работы всегда хватало. Но меня с самого детства на приключения тянуло, не мог я на одном месте усидеть. В округе все горы да леса исходи вдоль и поперёк. Но мне было мало. Поэтому как только мне восемнадцать лет стукнуло, я с радостью в военкомат отправился. В моём случае это был единственный способ выбраться с острова и посмотреть на мир.</text>
+    </string>
+    <string id="blck_val_actor_meet_from_stavrid_about_441">
+        <text>Спасибо за информацию!</text>
+    </string>
+    <string id="blck_val_actor_meet_from_stavrid_about_5">
+        <text>А в Зону ты как попал?</text>
+    </string>
+    <string id="blck_val_actor_meet_from_stavrid_about_52001">
+        <text>Да я сам до сих пор не пойму, то ли это была цепь случайностей, то ли Зона сама меня сюда привела. В общем, в армии я себя хорошо зарекомендовал. Со спортом я с пелёнок дружу, так что даже два года в спецназе для меня не были чем-то непосильным. Хотя, к концу Афганской войны я всё же успел, да только в боях почти не участвовал, повезло. Потом, по рекомендациям из штаба, меня направили на профильное военное обучение. Пока учился обзавёлся семьёй. Детишек, правда, не было, но оно и к лучшему, как оказалось. После учёбы меня по гарнизонам затаскали, не до детей было. А потом отправили в Чечню. Там я свою Маришку и потерял... И зачем, дурак, с собой её тогда взял, ведь говорили что на базе опасно, возможны нападения дудаевских боевиков. А я... Идиот... Не уберёг.</text>
+    </string>
+    <string id="blck_val_actor_meet_from_stavrid_about_52002">
+        <text>Извини, я не хотел напоминать... Прости, не знал.</text>
+    </string>
+    <string id="blck_val_actor_meet_from_stavrid_about_52003">
+        <text>Забудь, это моя вина, моё прошлое, мой крест. Мне с этим до самой смерти жить. Может, Зона за это и привела меня к себе, как думаешь?.. После первой Чеченской много чего ещё было, всего и не рассказать. Но появление Зоны я помню как сейчас. Такой переполох забыть невозможно. Никто в первые часы даже не понял что случилось: реактор рванул или метеорит упал, а может и вовсе война началась. В Москве ничуть не меньше Киева всполошились. Тогда наши войска по договорённости и отправили в Зону. Этот день я никогда не забуду, Зона постаралась. Я почти весь свой отряд из-за штабных крыс потерял. Им, видите ли, надо было выяснить как аномалии на людей влияют. Ублюдки. А нас даже никто не спрашивал. Как мы с Серёгой и Димкой выбрались оттуда я не представляю. Будто сама Зона нас вела между аномалий. Я как только в штаб вошёл тому генералу сразу промеж глаз зарядил. Хотел уже ствол из кобуры достать, да меня повязали. Сидеть бы мне сейчас далеко и долго, если бы не друзья, помогли мне из камеры выбраться. А как ушёл из лагеря, то выбора у меня особого и не было: либо в Зоне попытаться выжить, либо вне Зоны попытаться существовать. Вот я и выбрал свой путь - лучше пожить хоть немного в Зоне, чем существовать всю оставшуюся жизнь в тюрьмах.</text>
+    </string>
+    <string id="blck_val_actor_meet_from_stavrid_about_52004">
+        <text>Да-а, вот так история. А домой не тянет, на малую Родину?</text>
+    </string>
+    <string id="blck_val_actor_meet_from_stavrid_about_52005">
+        <text>Знаешь, в первое время вообще не тянуло, не до этого было. Это сейчас Зона уже более менее обжитая, куда не пойди на кого-нибудь обязательно наткнёшься. А тогда тут вообще никого не было. Я хоть и боевой офицер, ужасов за время службы насмотрелся, но когда на твоих глазах нарушаются все известные законы физики и ты видишь как верный товарищ в нечеловеческих муках исчезает прямо в воздухе, тут уж не до самообладания, страх заменяет все чувства. Но сноровку не пропьёшь, как-то всё же удалось мне выжить. Потом, со временем, когда опыта в Зоне поднабрался, тогда и начали приходить мысли о будущем. Сейчас очень домой вернуться хочется. Повидать родителей, если живы ещё. Да на родные места посмотреть. Веришь, даже готов пойти под трибунал, если бы дали хоть денёк на Родине провести. Эх...</text>
+    </string>
+    <string id="blck_val_actor_meet_from_stavrid_about_551">
+        <text>Спасибо за информацию!</text>
+    </string>
+    <string id="blck_val_actor_meet_from_stavrid_about_6">
+        <text>Вопрос 3</text>
+    </string>
+    <string id="blck_val_actor_meet_from_stavrid_about_66">
+        <text>Ответ 3</text>
+    </string>
+    <string id="blck_val_actor_meet_from_stavrid_about_661">
+        <text>Спасибо за информацию!</text>
+    </string>
+    <string id="blck_val_actor_meet_from_stavrid_about_7">
+        <text>Вопрос 4</text>
+    </string>
+    <string id="blck_val_actor_meet_from_stavrid_about_77">
+        <text>Ответ 4</text>
+    </string>
+    <string id="blck_val_actor_meet_from_stavrid_about_771">
+        <text>Спасибо за информацию!</text>
+    </string>
+    <string id="blck_val_actor_meet_from_stavrid_about_777">
+        <text>Да я тебе всё, что знаю, уже рассказал.</text>
+    </string>
+    <string id="blck_val_actor_meet_from_stavrid_about_8">
+        <text>Вопрос 5</text>
+    </string>
+    <string id="blck_val_actor_meet_from_stavrid_about_88">
+        <text>Ответ 5</text>
+    </string>
+    <string id="blck_val_actor_meet_from_stavrid_about_881">
+        <text>Спасибо за информацию!</text>
+    </string>
+    <string id="blck_val_actor_meet_from_stavrid_about_999">
+        <text>Да нет передумал.</text>
+    </string>
+    <string id="blck_val_actor_meet_from_stavrid_about_9990">
+        <text>text in default</text>
+    </string>
+    <string id="blck_val_actor_meet_from_tech_10">
+        <text>Словил он этот сигнал на заводе, в том же районе, где находится один из входов в пространственный пузырь, мы вас там и нашли. я думаю, что эти запросы исходят от людей, что так же как и вы, застряли внутри пространственной аномалии. Нужно им помочь.</text>
+    </string>
+    <string id="blck_val_actor_meet_from_tech_11">
+        <text>Я не против, возможно среди них и Маркус есть, он ведь с аномалии так и не выбрался. Я только понять не могу, как ты собираешься их вытащить оттуда?</text>
+    </string>
+    <string id="blck_val_actor_meet_from_tech_12">
+        <text>Все довольно просто, Лесник перед уходом оставил мне точные координаты выхода из аномалии, нужно передать им сталкерам внутри пузыря.</text>
+    </string>
+    <string id="blck_val_actor_meet_from_tech_13">
+        <text>Хм, если у тебя есть подобный передатчик, то почему бы не попробовать помочь им.</text>
+    </string>
+    <string id="blck_val_actor_meet_from_tech_14">
+        <text>Отлично, я знал, что на тебя можно рассчитывать. Я дам тебе передатчик, вся информация на нем уже записана, когда доберешься к пространственной аномалии, включишь передатчик и загрузишь с базы данных координаты, думаю, что проблем с этим у тебя возникнуть не должно. После этого остается только ждать, если они поймают наш сигнал, то смогут найти выход из ловушки.</text>
+    </string>
+    <string id="blck_val_actor_meet_from_tech_15">
+        <text>Понял, давай передатчик, я передам им координаты.</text>
+    </string>
+    <string id="blck_val_actor_meet_from_tech_17">
+        <text>Ну, что там, выполнил уже мою просьбу?</text>
+    </string>
+    <string id="blck_val_actor_meet_from_tech_18">
+        <text>Пока еще нет.</text>
+    </string>
+    <string id="blck_val_actor_meet_from_tech_2">
+        <text>Приветствую, наёмник! Что-то отремонтировать нужно?</text>
+    </string>
+    <string id="blck_val_actor_meet_from_tech_20">
+        <text>О, уже очнулся, это хорошо. Ты не на шутку перепугал всех здесь, что случилось с тобой на заводе?</text>
+    </string>
+    <string id="blck_val_actor_meet_from_tech_21">
+        <text>Я отправил координаты, но получили их не те люди, отправка координат была плохой идеей, но уже ничего не изменить.</text>
+    </string>
+    <string id="blck_val_actor_meet_from_tech_22">
+        <text>О чем ты говоришь, Зверь?</text>
+    </string>
+    <string id="blck_val_actor_meet_from_tech_23">
+        <text>Всех подробностей пока рассказать не могу, но возможно нам угрожает опасность.</text>
+    </string>
+    <string id="blck_val_actor_meet_from_tech_24">
+        <text>Думаю, что мы сможем отразить любую атаку, база хорошо защищается.</text>
+    </string>
+    <string id="blck_val_actor_meet_from_tech_25">
+        <text>Надеюсь, что так и будет. Ладно, вот возвращаю твой передатчик, держи.</text>
+    </string>
+    <string id="blck_val_actor_meet_from_tech_26">
+        <text>Хм, ладно... Кстати, я разблокировал тот КПК, что ты просил и после того, что там прочитал, отдал его Ставриду. Надеюсь ты не против?</text>
+    </string>
+    <string id="blck_val_actor_meet_from_tech_27">
+        <text>Не против. Что там за информация такая была?</text>
+    </string>
+    <string id="blck_val_actor_meet_from_tech_28">
+        <text>Сходи к Ставриду, он в подробностях тебе все растолкует, а я своими делами займусь.</text>
+    </string>
+    <string id="blck_val_actor_meet_from_tech_29">
+        <text>Ладно, пойду поговорю с ним.</text>
+    </string>
+    <string id="blck_val_actor_meet_from_tech_31">
+        <text>Приветствую, наёмник! Что-то отремонтировать нужно?</text>
+    </string>
+    <string id="blck_val_actor_meet_from_tech_33">
+        <text>Здравствуй, Зверь. Я так понимаю, что ты ко мне КПК перенастроить пришел?</text>
+    </string>
+    <string id="blck_val_actor_meet_from_tech_34">
+        <text>Да, именно так.</text>
+    </string>
+    <string id="blck_val_actor_meet_from_tech_35">
+        <text>На опасное задание Ставрид вас отправляет однако, но что поделать, всю жизнь здесь нам приходится рисковать. Так, я сделал, что хотел, теперь монолитовцы должны принять вас с Лютым за своих. Кстати, можешь не переживать, все на базе предупреждены о том, что вы под прикрытием, из наших вас никто атаковать не станет, охотников у вагончика мы тоже предупредили. Удачи!</text>
+    </string>
+    <string id="blck_val_actor_meet_from_tech_36">
+        <text>Спасибо. Пойду я.</text>
+    </string>
+    <string id="blck_val_actor_meet_from_tech_38">
+        <text>Приветствую, наёмник! Что-то отремонтировать нужно?</text>
+    </string>
+    <string id="blck_val_actor_meet_from_tech_4">
+        <text>Здоров, наёмник. Ты по какому делу ко мне?</text>
+    </string>
+    <string id="blck_val_actor_meet_from_tech_40">
+        <text>Хреново выглядишь, Зверь... С монолитовцами всё прошло так как планировали и Лютый где?</text>
+    </string>
+    <string id="blck_val_actor_meet_from_tech_41">
+        <text>Монолитовцы схватили Лютого и отвели в лабораторию, думая, что я пойду его выручать, видать какую-то ловушку приготовили, но я решил не идти ему на выручку, всё-равно шанса нет, что мне удастся его спасти.</text>
+    </string>
+    <string id="blck_val_actor_meet_from_tech_42">
+        <text>Вот так ситуация... Жаль Лютого конечно, но ты вроде правильный выбор сделал, может он уже мёртвый.</text>
+    </string>
+    <string id="blck_val_actor_meet_from_tech_43">
+        <text>Перенастрой обратно мой КПК, Петрович.</text>
+    </string>
+    <string id="blck_val_actor_meet_from_tech_44">
+        <text>Ладно, сейчас, Зверь. Так, врорде бы всё... Ты после этого куда отправляешься?</text>
+    </string>
+    <string id="blck_val_actor_meet_from_tech_45">
+        <text>Пойду с Хантером поговорю, Ставрид говорил, что он вроде как готов меня из Заставы вывести...</text>
+    </string>
+    <string id="blck_val_actor_meet_from_tech_46">
+        <text>Ну, тогда прощай, Зверь. Может и не свидимся больше с тобой.</text>
+    </string>
+    <string id="blck_val_actor_meet_from_tech_47">
+        <text>До встречи, Петрович.</text>
+    </string>
+    <string id="blck_val_actor_meet_from_tech_49">
+        <text>Прощай, Зверь. Может и не свидимся больше с тобой.</text>
+    </string>
+    <string id="blck_val_actor_meet_from_tech_5">
+        <text>Слушай, Петрович, а ты можешь КПК один разблокировать?</text>
+    </string>
+    <string id="blck_val_actor_meet_from_tech_6">
+        <text>Могу попробовать, у меня уже ранее был опыт работы в этой сфере, но ничего обещать не могу.</text>
+    </string>
+    <string id="blck_val_actor_meet_from_tech_7">
+        <text>Хорошо. Вот тот КПК, что нужно разблокировать.</text>
+    </string>
+    <string id="blck_val_actor_meet_from_tech_8">
+        <text>Ага, посмотрю, что с ним можно сделать... Слушай, у меня к тебе дело одно имеется, я никому пока не говорил об этом, даже Ставриду. В общем, совсем недавно я начал получать запросы о помощи, вещались они на закрытой частоте, в скором времени они перестали приходить, но сегодня ко мне пришел сталкер и рассказал, что он словил подобный сигнал на территории завода, он включил запись и я убедился, что это тот самый сигнал.</text>
+    </string>
+    <string id="blck_val_actor_meet_from_tech_9">
+        <text>И? Не могу понять к чему ты клонишь...</text>
+    </string>
+    <string id="blck_val_actor_meet_medic_about_toy_0">
+        <text>Слушай, Антибиотик, можешь фигурку Химеры, что у тебя на столе стоит, мне отдать?</text>
+    </string>
+    <string id="blck_val_actor_meet_medic_about_toy_1">
+        <text>Извиняй, но просто так не отдам, другой разговор будет, если ты за нее мне денюжку предложишь, вещь-то эксклюзивная.</text>
+    </string>
+    <string id="blck_val_actor_meet_medic_about_toy_10">
+        <text>Всего штуку? Нет, наёмник, всё равно маловато, может быть предложишь больше денег?</text>
+    </string>
+    <string id="blck_val_actor_meet_medic_about_toy_11">
+        <text>Так и быть, за полторы штуки продам тебе её, давай сюда деньги.</text>
+    </string>
+    <string id="blck_val_actor_meet_medic_about_toy_12">
+        <text>Вот, держи.</text>
+    </string>
+    <string id="blck_val_actor_meet_medic_about_toy_13">
+        <text>А вот твоя фигурка, смотри не потеряй её, эксклюзивная вещь всё таки, другой такой во всей Зоне не сыщешь.</text>
+    </string>
+    <string id="blck_val_actor_meet_medic_about_toy_14">
+        <text>И на том спасибо, бывай.</text>
+    </string>
+    <string id="blck_val_actor_meet_medic_about_toy_15">
+        <text>Без вопросов, за две тысячи можешь забирать её, давай деньги.</text>
+    </string>
+    <string id="blck_val_actor_meet_medic_about_toy_16">
+        <text>Вот, держи свои деньги.</text>
+    </string>
+    <string id="blck_val_actor_meet_medic_about_toy_2">
+        <text>И сколько ты за нее хочешь?</text>
+    </string>
+    <string id="blck_val_actor_meet_medic_about_toy_3">
+        <text>А сколько ты бы сам за нее отдал?</text>
+    </string>
+    <string id="blck_val_actor_meet_medic_about_toy_4">
+        <text>Даю за нее 500 рублей.</text>
+    </string>
+    <string id="blck_val_actor_meet_medic_about_toy_5">
+        <text>Даю за нее 1000 рублей.</text>
+    </string>
+    <string id="blck_val_actor_meet_medic_about_toy_6">
+        <text>Даю за нее 1500 рублей.</text>
+    </string>
+    <string id="blck_val_actor_meet_medic_about_toy_7">
+        <text>Даю за нее 2000 рублей.</text>
+    </string>
+    <string id="blck_val_actor_meet_medic_about_toy_8">
+        <text>У меня сейчас мало денег.</text>
+    </string>
+    <string id="blck_val_actor_meet_medic_about_toy_9">
+        <text>Это слишком малая сумма, может быть предложишь больше?</text>
+    </string>
+    <string id="blck_val_actor_meet_petrovich_quest_0">
+        <text>Нужна какая-то помощь местному технику?</text>
+    </string>
+    <string id="blck_val_actor_meet_petrovich_quest_1">
+        <text>Слушай, хорошо, что ты спросил, есть у меня достаточно деликатная просьба, ранее кое-кто пытался мне помочь с этим, но найти хоть что-то из коллекции ему так и не удалось.</text>
+    </string>
+    <string id="blck_val_actor_meet_petrovich_quest_2">
+        <text>Из какой еще коллекции?</text>
+    </string>
+    <string id="blck_val_actor_meet_petrovich_quest_3">
+        <text>Понимаешь, был у нас на Заставе тип один ранее, была у него страсть одна, фигурки и статуэтки разные он создавать любил. Как-то пришла ему идея о создании фигурок фауны местной, вот он по памяти, фотографиям и рассказам местных, создал фигурки всех известных мутантов, что в Зоне обитают. Создатель этих фигурок потом пропал куда-то, а вот фигурки его остались, продал он их сталкерам местным. Тогда я этими фигурками не заинтересовался, но позже ко мне в руки фигурка кровососа попала, а затем я у одного пьянчуги грузовик, что у меня на столе стоит, выменял, это тоже работа этого скульптора, в общем, захотелось мне после этого всю коллекцию фигурок мутантов собрать у себя. Думаю, что если поискать по тайникам на Заставе или у сталкеров поспрашивать, то что-то из его работ ты точно отыскать сможешь, поможешь мне собрать коллекцию? За каждую фигурку мутанта заплачу по тысяче рублей.</text>
+    </string>
+    <string id="blck_val_actor_meet_petrovich_quest_4">
+        <text>Ладно, попробую поискать эти фигурки.</text>
+    </string>
+    <string id="blck_val_actor_meet_petrovich_quest_5">
+        <text>Прости, но у меня нет на это времени.</text>
+    </string>
+    <string id="blck_val_actor_meet_petrovich_quest_6">
+        <text>Если хочешь помочь, то помоги отыскать коллекцию фигурок о которой я говорил тебе ранее, ты очень выручишь меня, если найдешь хоть несколько.</text>
+    </string>
+    <string id="blck_val_actor_meet_petrovich_quest_7">
+        <text>Ладно, попробую поискать эти фигурки.</text>
+    </string>
+    <string id="blck_val_actor_meet_petrovich_quest_8">
+        <text>Времени у меня больше не стало, я не стану этим заниматься.</text>
+    </string>
+    <string id="blck_val_actor_meet_petrovich_quest_start_0">
+        <text>По поводу коллекции фигурок.</text>
+    </string>
+    <string id="blck_val_actor_meet_petrovich_quest_start_1">
+        <text>Ну, что расскажешь, удалось найти какую-то фигурку?</text>
+    </string>
+    <string id="blck_val_actor_meet_petrovich_quest_start_10">
+        <text>Я нашел фигурку Псевдогиганта.</text>
+    </string>
+    <string id="blck_val_actor_meet_petrovich_quest_start_11">
+        <text>Я нашел фигурку Снорка.</text>
+    </string>
+    <string id="blck_val_actor_meet_petrovich_quest_start_12">
+        <text>Отлично, вот твоя награда, наёмник, как договаривались, это всё или может тебе удалось отыскать еще какую-то фигурку?</text>
+    </string>
+    <string id="blck_val_actor_meet_petrovich_quest_start_13">
+        <text>Все фигурки мутантов уже у тебя.</text>
+    </string>
+    <string id="blck_val_actor_meet_petrovich_quest_start_14">
+        <text>Да? Я и не заметил, что ты уже все фигурки нашел, отличная работа, наёмник, спасибо тебе огромное за помощь. В знак своей благодарности, помимо тех денег, что тебе заплатил, снижаю для тебя цену ремонта и модификации снаряги на сорок процентов.</text>
+    </string>
+    <string id="blck_val_actor_meet_petrovich_quest_start_15">
+        <text>Ну, тогда и тебе спасибо за скидку. Бывай.</text>
+    </string>
+    <string id="blck_val_actor_meet_petrovich_quest_start_2">
+        <text>Пока не удалось.</text>
+    </string>
+    <string id="blck_val_actor_meet_petrovich_quest_start_3">
+        <text>Я нашел фигурку Слепого пса.</text>
+    </string>
+    <string id="blck_val_actor_meet_petrovich_quest_start_4">
+        <text>Я нашел фигурку Псевдо-собаки.</text>
+    </string>
+    <string id="blck_val_actor_meet_petrovich_quest_start_5">
+        <text>Я нашел фигурку Кабана.</text>
+    </string>
+    <string id="blck_val_actor_meet_petrovich_quest_start_6">
+        <text>Я нашел фигурку Плоти.</text>
+    </string>
+    <string id="blck_val_actor_meet_petrovich_quest_start_7">
+        <text>Я нашел фигурку Бюрера.</text>
+    </string>
+    <string id="blck_val_actor_meet_petrovich_quest_start_8">
+        <text>Я нашел фигурку Контролёра.</text>
+    </string>
+    <string id="blck_val_actor_meet_petrovich_quest_start_9">
+        <text>Я нашел фигурку Химеры.</text>
+    </string>
+    <string id="blck_val_actor_meet_shaman_about_toy_0">
+        <text>Распутин, можешь мне отдать фигурку Псевдогиганта, что у тебя за спиной на полке стоит?</text>
+    </string>
+    <string id="blck_val_actor_meet_shaman_about_toy_1">
+        <text>Зачем тебе эта фигурка нужна? Она ведь у меня не просто так стоит, а антураж моего бара дополняет, да и привык я до нее сильно.</text>
+    </string>
+    <string id="blck_val_actor_meet_shaman_about_toy_2">
+        <text>Меня Петрович попросил найти фигурки всех мутантов, что можно в Зоне встретить, у тебя одна из них.</text>
+    </string>
+    <string id="blck_val_actor_meet_shaman_about_toy_3">
+        <text>Даю за нее тысячу, без лишних вопросов.</text>
+    </string>
+    <string id="blck_val_actor_meet_shaman_about_toy_4">
+        <text>Он давненько выпрашивал её у меня, я уже и отдать собирался, а тут он уже тебя на поиски всех фигурок отправил. В общем, раз такое дело, то забирай, что-то другое на её место поставлю.</text>
+    </string>
+    <string id="blck_val_actor_meet_shaman_about_toy_5">
+        <text>Ну, ладно, если она тебе так нужна, то бери. Просто стало интересно, зачем тебе она понадобилась...</text>
+    </string>
+    <string id="blck_val_actor_meet_shaman_about_toy_6">
+        <text>Спасибо, очень выручил. Бывай.</text>
+    </string>
+    <string id="blck_val_actor_meet_shaman_about_toy_7">
+        <text>Это не столь важно, бывай.</text>
+    </string>
+    <string id="blck_val_bandit_bookmaker_hello_11">
+        <text>Даров, мужик! Не хошь по воронам пострелять?</text>
+    </string>
+    <string id="blck_val_bandit_bookmaker_hello_111">
+        <text>Хочу.</text>
+    </string>
+    <string id="blck_val_bandit_bookmaker_hello_1111">
+        <text>Отлично. Из вариантов у меня тут игра на интерес, на деньги или на рекорд. Чё из этого по душе?</text>
+    </string>
+    <string id="blck_val_bandit_bookmaker_hello_112">
+        <text>Нет, не тянет.</text>
+    </string>
+    <string id="blck_val_bandit_bookmaker_hello_1121">
+        <text>Ну, как хошь. Если чё, я всегда тут.</text>
+    </string>
+    <string id="blck_val_bandit_bookmaker_hello_21">
+        <text>Вот твои бабосы, как обещал. Всё честно. Ну чё, хошь ещё пострелять?</text>
+    </string>
+    <string id="blck_val_bandit_bookmaker_hello_31">
+        <text>Та всем невезуха бывает. Может, ещё попробовать хошь?</text>
+    </string>
+    <string id="blck_val_bandit_bookmaker_hello_41">
+        <text>Куда ж ты свалил, мужик? Стрельба за оградой - это уж твоё частное дело. Может, всё-таки тут по всем правилам пострелять хошь?</text>
+    </string>
+    <string id="blck_val_bandit_bookmaker_hello_51">
+        <text>Трындеть потом будем - у тя ж время тикает, рубишь?</text>
+    </string>
+    <string id="blck_val_bandit_bookmaker_hello_511">
+        <text>Понял.</text>
+    </string>
+    <string id="blck_val_bandit_bookmaker_hello_61">
+        <text>Ваще нормально пострелял! Тебе бы на бабос играть - самое оно. Ну, ещё пострелять хошь?</text>
+    </string>
+    <string id="blck_val_bandit_bookmaker_money_0">
+        <text>На деньги.</text>
+    </string>
+    <string id="blck_val_bandit_bookmaker_money_1">
+        <text>От эти слова я люблю! Ну, по правилам тебе уже затирать не надо, так?</text>
+    </string>
+    <string id="blck_val_bandit_bookmaker_money_11">
+        <text>Так. Давай уже стрелять.</text>
+    </string>
+    <string id="blck_val_bandit_bookmaker_money_111">
+        <text>Не базар, мужик! Ну, как думаешь, сколько ворон за минуту успеешь снести?</text>
+    </string>
+    <string id="blck_val_bandit_bookmaker_money_111111">
+        <text>Идёт.</text>
+    </string>
+    <string id="blck_val_bandit_bookmaker_money_1111111">
+        <text>Зашибись. Ну, мужик, готовь ствол.</text>
+    </string>
+    <string id="blck_val_bandit_bookmaker_money_11111111">
+        <text>Угу.</text>
+    </string>
+    <string id="blck_val_bandit_bookmaker_money_111112">
+        <text>Нет у меня столько денег.</text>
+    </string>
+    <string id="blck_val_bandit_bookmaker_money_1111121">
+        <text>Ну, может выберешь чего себе по карману?</text>
+    </string>
+    <string id="blck_val_bandit_bookmaker_money_11111211">
+        <text>Да, выберу другое количество ворон.</text>
+    </string>
+    <string id="blck_val_bandit_bookmaker_money_11111212">
+        <text>Нет, не интересно.</text>
+    </string>
+    <string id="blck_val_bandit_bookmaker_money_111112121">
+        <text>Ну так можно на интерес сыграть. Или на рекорд, тока это реально бьёт по карману. Чё скажешь?</text>
+    </string>
+    <string id="blck_val_bandit_bookmaker_money_12">
+        <text>Нет, всё-таки расскажи.</text>
+    </string>
+    <string id="blck_val_bandit_bookmaker_money_121">
+        <text>На деньги - это самое развлечение. Говоришь мне, скока ворон кончишь за минуту, ставишь бабосы и вперёд. Если всё как надо, пацан сказал - пацан сделал, то получаешь назад свои и ещё столько же сверху. Если нет - деньги мои. И учти, чем больше птичек, тем больше ставки.</text>
+    </string>
+    <string id="blck_val_bandit_bookmaker_money_13">
+        <text>Что-то мне расхотелось играть.</text>
+    </string>
+    <string id="blck_val_bandit_bookmaker_questions_0">
+        <text>Есть какие-то общие правила?</text>
+    </string>
+    <string id="blck_val_bandit_bookmaker_questions_1">
+        <text>Да, считай, никаких. Я засекаю время, ты готовишься и по сигналу начинаешь гасить. Успеешь за минуту снять столько, сколько надо - молодца и герой. А уж как ты их будешь гасить, это твоё дело. Тока учти, выйдешь за эту ограду - игра окончена. Ну так как - на интерес, на деньги, на рекорд?</text>
+    </string>
+    <string id="blck_val_bandit_bookmaker_quit_0">
+        <text>Как-то ничего не улыбается.</text>
+    </string>
+    <string id="blck_val_bandit_bookmaker_quit_1">
+        <text>Как хошь. Если чё, я всегда тут.</text>
+    </string>
+    <string id="blck_val_bandit_bookmaker_record_0">
+        <text>На рекорд.</text>
+    </string>
+    <string id="blck_val_bandit_bookmaker_record_11">
+        <text>Приступим.</text>
+    </string>
+    <string id="blck_val_bandit_bookmaker_record_1111">
+        <text>Согласен.</text>
+    </string>
+    <string id="blck_val_bandit_bookmaker_record_11111">
+        <text>Ну чё, щас глянем, какой из тебя чемпион!</text>
+    </string>
+    <string id="blck_val_bandit_bookmaker_record_1112">
+        <text>Согласен, да денег нет.</text>
+    </string>
+    <string id="blck_val_bandit_bookmaker_record_11121">
+        <text>Ну так есть варианты попроще: на деньги или вообще на интерес. Что скажешь?</text>
+    </string>
+    <string id="blck_val_bandit_bookmaker_record_1113">
+        <text>Я... передумал.</text>
+    </string>
+    <string id="blck_val_bandit_bookmaker_record_12">
+        <text>Напомни правила.</text>
+    </string>
+    <string id="blck_val_bandit_bookmaker_record_121">
+        <text>Это для настоящих отцов. Если чуешь, что силён побить нынешний рекорд - делаешь ставку, ну, адекватно рекорду. Если ты в натуре рекорд перешибаешь, я тебе эти бабки в двойном размере отдаю. Ну и титул чемпиона тебе - не хрен собачий. Ну а если нет, так тут уж бабосы мне останутся.</text>
+    </string>
+    <string id="blck_val_bandit_bookmaker_record_13">
+        <text>Я... передумал.</text>
+    </string>
+    <string id="blck_val_bandit_bookmaker_training_0">
+        <text>На интерес.</text>
+    </string>
+    <string id="blck_val_bandit_bookmaker_training_1">
+        <text>Тренировочка, да? Правила рубишь?</text>
+    </string>
+    <string id="blck_val_bandit_bookmaker_training_11">
+        <text>Угу. Давай стрелять.</text>
+    </string>
+    <string id="blck_val_bandit_bookmaker_training_111">
+        <text>Лады. Ну, сколько ворон осилишь?</text>
+    </string>
+    <string id="blck_val_bandit_bookmaker_training_11111">
+        <text>Добро. Ну, давай, расчехляйся.</text>
+    </string>
+    <string id="blck_val_bandit_bookmaker_training_111111">
+        <text>Угу.</text>
+    </string>
+    <string id="blck_val_bandit_bookmaker_training_21">
+        <text>Нет. Расскажи.</text>
+    </string>
+    <string id="blck_val_bandit_bookmaker_training_211">
+        <text>Ну, на интерес - это если ты бабла получить не хошь. Так, потренироваться, или если настроение плохое. Решаешь, сколько ворон сшибёшь за минуту, и пробуешь это сделать.</text>
+    </string>
+    <string id="blck_val_bandit_bookmaker_training_31">
+        <text>Я передумал.</text>
+    </string>
+    <string id="blck_val_bandit_bookmaker_training_311">
+        <text>Не вопрос. Ну, выбор всё тот же: на деньги или на рекорд. Чё скажешь?</text>
+    </string>
+    <string id="blck_val_bandit_gop_stop_0">
+        <text>Приветствую, уважаемый, позвольте узнать, а что вы там делали на дереве?</text>
+    </string>
+    <string id="blck_val_bandit_gop_stop_1">
+        <text>А что, какие-то проблемы?</text>
+    </string>
+    <string id="blck_val_bandit_gop_stop_2">
+        <text>Нет, упаси Бог, все хорошо, но если отдашь нам артефакт, что ты в роще нашел, будет еще лучше.</text>
+    </string>
+    <string id="blck_val_bandit_gop_stop_3">
+        <text>Да пошел ты... Лучше уйди с дороги или получишь пулю в лоб.</text>
+    </string>
+    <string id="blck_val_bandit_gop_stop_4">
+        <text>Ничего я вам не отдам, идите куда шли.</text>
+    </string>
+    <string id="blck_val_bandit_gop_stop_5">
+        <text>Ладно, забирайте артефакт и давайте разойдемся с миром.</text>
+    </string>
+    <string id="blck_val_bandit_gop_stop_6">
+        <text>Вот и молодец! Мы сегодня добрые, так что скажи спасибо, что голым по Зоне гулять не пустили.</text>
+    </string>
+    <string id="blck_val_bandit_gop_stop_7">
+        <text>Ага...</text>
+    </string>
+    <string id="blck_val_bandit_shmiga_escape_0">
+        <text>Так, слушай сюда. Значит поутру, приходи к старой школе, я с братвой там буду. Придешь – получишь свои волыны. Ну и никому хоть не трепись про наш уговор.</text>
+    </string>
+    <string id="blck_val_bandit_shmiga_escape_1">
+        <text>И без тебя знаю, что делать.</text>
+    </string>
+    <string id="blck_val_bandit_shmiga_escape_2">
+        <text>Ну и ладушки. На, держи ключ. Всё, мы погнали, времени трепаться нету. Буду ждать тебя в условленном месте.</text>
+    </string>
+    <string id="blck_val_bandit_shmiga_escape_3">
+        <text>Давай, позже встретимся.</text>
+    </string>
+    <string id="blck_val_bandit_shmiga_school_meet_2">
+        <text>Здарова, наёмник! Еще раз благодарочка тебе за то, что свалить из той дыры помог.</text>
+    </string>
+    <string id="blck_val_bandit_shmiga_school_meet_3">
+        <text>Давай откинем любезности в сторону. Мои стволы уже у тебя?</text>
+    </string>
+    <string id="blck_val_bandit_shmiga_school_meet_4">
+        <text>А как же, я ведь просто так слов на ветер не бросаю... Стволы новенькие, даже еще не пристрелянные как следует, кароче все как надо. Кстати, тебя там вчера не спалили за нашими делами?</text>
+    </string>
+    <string id="blck_val_bandit_shmiga_school_meet_5">
+        <text>Нет, все прошло как надо. Давай сюда стволы.</text>
+    </string>
+    <string id="blck_val_bandit_shmiga_school_meet_6">
+        <text>Держи, теперь они твои. И да, вот тебе еще немного инфы, там во дворе с Букмекером побазарь, он тебе нехилую развлекуху может организовать, еще и бабосов сможешь поднять.</text>
+    </string>
+    <string id="blck_val_bandit_shmiga_school_meet_7">
+        <text>Отлично. Я пойду.</text>
+    </string>
+    <string id="blck_val_bandit_shmiga_school_meet_9">
+        <text>О, нарисовался.</text>
+    </string>
+    <string id="blck_val_bandit_shmiga_talk_quest_10">
+        <text>Валилка ещё не выросла, хех. Значит договорились? Ночью жду ключ.</text>
+    </string>
+    <string id="blck_val_bandit_shmiga_talk_quest_11">
+        <text>Договорились.</text>
+    </string>
+    <string id="blck_val_bandit_shmiga_talk_quest_13">
+        <text>Ну, что там с ключом?</text>
+    </string>
+    <string id="blck_val_bandit_shmiga_talk_quest_14">
+        <text>Ключ уже у меня.</text>
+    </string>
+    <string id="blck_val_bandit_shmiga_talk_quest_15">
+        <text>Пока нет.</text>
+    </string>
+    <string id="blck_val_bandit_shmiga_talk_quest_16">
+        <text>Ай, красава наёмник. Давай быстрее его сюда, а то ночь короткая, а нам ещё нужно свалить по-тихому.</text>
+    </string>
+    <string id="blck_val_bandit_shmiga_talk_quest_17">
+        <text>Не гони лошадей. Ключ то, как на место возвращать будем?</text>
+    </string>
+    <string id="blck_val_bandit_shmiga_talk_quest_18">
+        <text>В общем слушай, встретимся с тобой за домом, ты сейчас выходишь и ждешь меня там, а я с братком открываю клетку и тихонько двигаюсь в твою сторону. Точное место нашей встречи я тебе отмечу, там я и отдам тебе ключ.</text>
+    </string>
+    <string id="blck_val_bandit_shmiga_talk_quest_19">
+        <text>А ствол я когда получу?</text>
+    </string>
+    <string id="blck_val_bandit_shmiga_talk_quest_2">
+        <text>Эй, наёмник, я тут краем уха слышал, что ты ствол "Вихрь" ищешь, могу тебе с этим помочь, но сначала тебе нужно помочь мне.</text>
+    </string>
+    <string id="blck_val_bandit_shmiga_talk_quest_20">
+        <text>Всё обсудим уже на улице, нужно быстрее выбираться пока сталкерня ничего не поняла. Жди меня в указанном месте.</text>
+    </string>
+    <string id="blck_val_bandit_shmiga_talk_quest_21">
+        <text>Ладно, вот держи ключ.</text>
+    </string>
+    <string id="blck_val_bandit_shmiga_talk_quest_22">
+        <text>Ага, а ты давай иди на место встречи и жди меня.</text>
+    </string>
+    <string id="blck_val_bandit_shmiga_talk_quest_23">
+        <text>Понял, я пошел.</text>
+    </string>
+    <string id="blck_val_bandit_shmiga_talk_quest_25">
+        <text>Наёмник, иди на место встречи, не теряй времени.</text>
+    </string>
+    <string id="blck_val_bandit_shmiga_talk_quest_26">
+        <text>Я подумаю над твоим предложением.</text>
+    </string>
+    <string id="blck_val_bandit_shmiga_talk_quest_28">
+        <text>Что надумал, наёмник? Поможешь нам убежать из этой дыры?</text>
+    </string>
+    <string id="blck_val_bandit_shmiga_talk_quest_29">
+        <text>Я еще не решил.</text>
+    </string>
+    <string id="blck_val_bandit_shmiga_talk_quest_3">
+        <text>И какая же помощь тебе нужна?</text>
+    </string>
+    <string id="blck_val_bandit_shmiga_talk_quest_30">
+        <text>Ключ уже у меня.</text>
+    </string>
+    <string id="blck_val_bandit_shmiga_talk_quest_31">
+        <text>Я конечно рад, что ты уже добыл ключ, но сейчас день на дворе, а сваливать надо ночью, подходи ночью, желательно после полуночи.</text>
+    </string>
+    <string id="blck_val_bandit_shmiga_talk_quest_32">
+        <text>Ладно, ночью зайду.</text>
+    </string>
+    <string id="blck_val_bandit_shmiga_talk_quest_4">
+        <text>А сам как думаешь? Свалить с этой дыры хочу, поможешь - я тебе ствол и подгоню. Ты не ссы, мочить никого не придётся, нужно просто ключ от клетки добыть.</text>
+    </string>
+    <string id="blck_val_bandit_shmiga_talk_quest_5">
+        <text>И как ты предлагаешь его добыть?</text>
+    </string>
+    <string id="blck_val_bandit_shmiga_talk_quest_6">
+        <text>Да добыть его не сложно. От этой клетки есть два ключа, один у этого козла Ставрида, а второй был у Химика. Но сейчас ключ Химика, у Сологуба. Мне тут один сталкерюга напел, что на ночь Сологуб ключ вроде как у себя на тумбочке оставляет, а сам дрыхнет без задних ног. Тебе нужно просто взять ключ, а после того как мы отсюда свинтим - вернуть ключ на место. Если всё будет на мази, никто даже не просечет как мы свалили.</text>
+    </string>
+    <string id="blck_val_bandit_shmiga_talk_quest_7">
+        <text>План и вправду не сложный, но где гарантии, что я получу ствол?</text>
+    </string>
+    <string id="blck_val_bandit_shmiga_talk_quest_8">
+        <text>Гарантии? Хех, зуб дать могу. Да ты не боись, я своё слово держу. Тем более выхода у тебя нету, один хрен ты в этой дыре такой ствол не найдешь. А у меня их есть два. И не думаю глупость какую-то учудить, стволы без меня тебе не получить, они хранятся у достаточно серьезного человека и отдаст он их только мне. Если выберемся отсюда, оба ствола тебе отдам. Гадом буду.</text>
+    </string>
+    <string id="blck_val_bandit_shmiga_talk_quest_9">
+        <text>Ладно, придётся помочь тебе. Но смотри, если попытаешься меня кинуть - завалю.</text>
+    </string>
+    <string id="blck_val_barman_radio_off_0">
+        <text>Распутин, выключи радио.</text>
+    </string>
+    <string id="blck_val_barman_radio_off_1">
+        <text>Ладно, самому этот грохот уже надоел.</text>
+    </string>
+    <string id="blck_val_barman_radio_off_2">
+        <text>Готово. Что голова от моих песен разболелась?</text>
+    </string>
+    <string id="blck_val_barman_radio_off_3">
+        <text>Не нравится мой репертуар, ну и ладно.</text>
+    </string>
+    <string id="blck_val_barman_radio_on_0">
+        <text>Распутин, включи радио.</text>
+    </string>
+    <string id="blck_val_barman_radio_on_1">
+        <text>Что музыку послушать хочешь? Ладно, мне не жалко.</text>
+    </string>
+    <string id="blck_val_barman_radio_on_2">
+        <text>Эх, я и сам не прочь послушать что-то душевное.</text>
+    </string>
+    <string id="blck_val_barman_radio_on_3">
+        <text>Готово, слушай сколько влезет, это единственное, что здесь бесплатно.</text>
+    </string>
+    <string id="blck_val_chimik_killer_meet_0">
+        <text>Что за?! А, это ты наёмник... Иди куда шел.</text>
+    </string>
+    <string id="blck_val_chimik_killer_meet_1">
+        <text>А я как раз сюда шел. Помочь тебе хотел. Не это ищешь?</text>
+    </string>
+    <string id="blck_val_chimik_killer_meet_2">
+        <text>Достал ты меня уже, что ты суешь свой поганый нос в чужие дела? Надо было тебя прикончить, еще, когда ты в клетке сидел. Ну, теперь держись.</text>
+    </string>
+    <string id="blck_val_chimik_killer_meet_3">
+        <text>Ну, что же, ты сказал своё последнее слово...</text>
+    </string>
+    <string id="blck_val_hunter_dop_quest_dialog_0">
+        <text>Есть какая-нибудь работа?</text>
+    </string>
+    <string id="blck_val_hunter_dop_quest_dialog_1">
+        <text>А как ты думаешь? Конечно есть, при чем работа не пыльная. Нам, для сдачи учёным заказа, не хватает шесть хвостов слепых псов. Буду очень признателен если поможешь с хвостами. Возьмешься?</text>
+    </string>
+    <string id="blck_val_hunter_dop_quest_dialog_2">
+        <text>Ладно, помогу вам с хвостами.</text>
+    </string>
+    <string id="blck_val_hunter_dop_quest_dialog_3">
+        <text>Ну и отлично, за награду не беспокойся, заплачу приличную сумму за выполненную работу.</text>
+    </string>
+    <string id="blck_val_hunter_dop_quest_dialog_4">
+        <text>Понял. Пойду я.</text>
+    </string>
+    <string id="blck_val_hunter_dop_quest_dialog_5">
+        <text>Пока нет.</text>
+    </string>
+    <string id="blck_val_hunter_quester_start_10">
+        <text>Приветствую, наёмник. Ты по какому делу к нам зашел?</text>
+    </string>
+    <string id="blck_val_hunter_quester_start_2">
+        <text>Приветствую, наёмник. Ты по какому делу к нам зашел?</text>
+    </string>
+    <string id="blck_val_hunter_quester_start_4">
+        <text>Ну, что там, добыл уже шесть хвостов слепых псов?</text>
+    </string>
+    <string id="blck_val_hunter_quester_start_5">
+        <text>Да, хвосты уже у меня, держи.</text>
+    </string>
+    <string id="blck_val_hunter_quester_start_6">
+        <text>Пока нет.</text>
+    </string>
+    <string id="blck_val_hunter_quester_start_7">
+        <text>Отлично, реально выручил. А вот и твоя награда за проделанную работу, держи.</text>
+    </string>
+    <string id="blck_val_hunter_quester_start_8">
+        <text>Спасибо, пойду я.</text>
+    </string>
+    <string id="blck_val_levsha_first_meet_10">
+        <text>Да любому. Послушай, мы недавно с Хромым неплохо так в рейд сходили, Зона нам такой подарок преподнесла. Короче надыбали мы целую кучу артефактов, ну мы в контейнер всё это добро запихали, и договорились пока контейнер припрятать, а дальше видно будет. Решили разделиться, Хромой раньше меня на базу пришел. В общем, были мы веселые и щедрые, решили выпить с ещё парочкой сталкеров. А потом мне болван этот говорит, что он контейнер на базу с собой припёр. Ну, такой тупости я не выдержал, и давай наезжать на него. Так и поссорились. А потом уже мне Распутин сообщил, что и контейнер пропал. Видимо тот, кто его украл, специально так всё подстроил, что бы сталкеры на меня подумали.</text>
+    </string>
+    <string id="blck_val_levsha_first_meet_11">
+        <text>И на кого думаешь?</text>
+    </string>
+    <string id="blck_val_levsha_first_meet_12">
+        <text>Не знаю я на кого думать. Могу точно сказать, что это не Распутин, не Косой, ну и не Ставрид конечно. Зверь, прошу, объясни всё Ставриду, не хочется, что бы вышло всё вот так. Умереть не страшно, страшно умереть крысой.</text>
+    </string>
+    <string id="blck_val_levsha_first_meet_13">
+        <text>Я поговорю с ним. А после свяжусь с тобой.</text>
+    </string>
+    <string id="blck_val_levsha_first_meet_14">
+        <text>Связаться не выйдет, я когда от бандитов убегал КПК свой где-то посеял.</text>
+    </string>
+    <string id="blck_val_levsha_first_meet_15">
+        <text>Тогда, сиди здесь и никуда не уходи. Я приду к тебе.</text>
+    </string>
+    <string id="blck_val_levsha_first_meet_17">
+        <text>Зверь, я тебя очень прошу, поговори с Ставридом на счет моего возвращения, ладно?</text>
+    </string>
+    <string id="blck_val_levsha_first_meet_18">
+        <text>Ладно, я с ним поговорю.</text>
+    </string>
+    <string id="blck_val_levsha_first_meet_2">
+        <text>Эй, ты кто такой?</text>
+    </string>
+    <string id="blck_val_levsha_first_meet_3">
+        <text>Я Зверь, за тобой пришел. Даю тебе шанс сказать последнее слово.</text>
+    </string>
+    <string id="blck_val_levsha_first_meet_4">
+        <text>Ах ты чёрт, тебя значит Ставрид послал? Что-то я тебя раньше на базе не видел.</text>
+    </string>
+    <string id="blck_val_levsha_first_meet_5">
+        <text>Я вчера пришел как раз когда ты смылся.</text>
+    </string>
+    <string id="blck_val_levsha_first_meet_6">
+        <text>Да никуда я не смывался. Я просто пошел прогуляться, дабы успокоиться. А потом мне Распутин сообщение прислал, что Хромого убили, и что все думают на меня, а после меня бандиты здесь зажали и я не смог вернутся назад. А Хромого я не убивал, он же мне как брат был.</text>
+    </string>
+    <string id="blck_val_levsha_first_meet_7">
+        <text>Только у тебя был мотив.</text>
+    </string>
+    <string id="blck_val_levsha_first_meet_8">
+        <text>Ну да, повздорили мы немного, но не стал бы я убивать человека из-за такого пустяка.</text>
+    </string>
+    <string id="blck_val_levsha_first_meet_9">
+        <text>Кому тогда это было нужно?</text>
+    </string>
+    <string id="blck_val_lutiy_monolit_dialog_0">
+        <text>Ну, Зверь, ты готов подорвать этих фанатиков?</text>
+    </string>
+    <string id="blck_val_lutiy_monolit_dialog_1">
+        <text>Я то готов, но вот зачем ты ввязался во все это?</text>
+    </string>
+    <string id="blck_val_lutiy_monolit_dialog_2">
+        <text>Захотел тебе помочь, поблагодарить за все то, что ты для меня сделал. Это многого стоит, да и у Сологуба опыта мало, чтобы на такие задания ходить.</text>
+    </string>
+    <string id="blck_val_lutiy_monolit_dialog_3">
+        <text>Хм, ну тогда ладно, можем идти?</text>
+    </string>
+    <string id="blck_val_lutiy_monolit_dialog_4">
+        <text>Да, Петрович уже перенастроил мой КПК, так что можем отправляться прямо сейчас. Предлагаю идти не той дорогой, что возле школы идет, там аномалий много, лучше идти по дороге, что от завода тянется, так хоть путь и длиннее, но безопасней.</text>
+    </string>
+    <string id="blck_val_lutiy_monolit_dialog_5">
+        <text>Поддерживаю, пойдем.</text>
+    </string>
+    <string id="blck_val_miklucha_zavod_quest_10">
+        <text>Странно всё это...</text>
+    </string>
+    <string id="blck_val_miklucha_zavod_quest_11">
+        <text>Вот же, неужели этот козёл наврал и никакой встречи не будет?</text>
+    </string>
+    <string id="blck_val_miklucha_zavod_quest_12">
+        <text>Выходит, что так…</text>
+    </string>
+    <string id="blck_val_miklucha_zavod_quest_14">
+        <text>Твою мать! Это засада! Зверь, срочно отправляйся за подкреплением, мы тебя прикроем.</text>
+    </string>
+    <string id="blck_val_miklucha_zavod_quest_15">
+        <text>О чем ты говоришь, я остаюсь с вами.</text>
+    </string>
+    <string id="blck_val_miklucha_zavod_quest_16">
+        <text>Нет! Зверь, нас мало, в таком количестве мы и пяти минут не продержимся, сейчас же отправляйся к сталкерам за помощью, только ты сможешь убедить их помочь нам. Давай же, живее, беги! У тебя мало времени. За отход не беспокойся, мы тебя прикроем.</text>
+    </string>
+    <string id="blck_val_miklucha_zavod_quest_17">
+        <text>Я мигом, Миклуха! Вы только держитесь тут, я приведу людей.</text>
+    </string>
+    <string id="blck_val_miklucha_zavod_quest_2">
+        <text>Так, к встрече монолитовцев осталось совсем немного времени, теперь осталось дело за малым, дождаться начала сделки и прихлопнуть этого козла. Самое главное завалить всех, и не дать никому смыться. Если кто-то выживет и сможет уйти то… В общем задница нам будет, полная.</text>
+    </string>
+    <string id="blck_val_miklucha_zavod_quest_3">
+        <text>Всё будет нормально, главное не суетиться раньше времени.</text>
+    </string>
+    <string id="blck_val_miklucha_zavod_quest_4">
+        <text>Согласен. Ну как, нервничаешь?</text>
+    </string>
+    <string id="blck_val_miklucha_zavod_quest_5">
+        <text>Нет, ни капли не нервничаю. Ну, когда начинаем то?</text>
+    </string>
+    <string id="blck_val_miklucha_zavod_quest_6">
+        <text>Прямо сейчас, Кислый в одном из терминалов засядет, а мы в цехе спрячемся, только на завод зайдем через северный проход, так безопасней будет. По пути нужно очистить эту окрестность от мутантов, чтобы на звуки выстрелов не сбежались потом, пойдешь со мной, поможешь мне с этим и советую взять ствол с глушителем, шуметь нам сейчас крайне не желательно.</text>
+    </string>
+    <string id="blck_val_miklucha_zavod_quest_7">
+        <text>Понял тебя, тогда выдвигаемся.</text>
+    </string>
+    <string id="blck_val_miklucha_zavod_quest_9">
+        <text>Что-то здесь не так, слишком тихо... Фанатики уже должны были расставить свою охрану по периметру, но тут совсем никого нет.</text>
+    </string>
+    <string id="blck_val_monolith_story_group_0">
+        <text>Расскажи какую-нибудь историю.</text>
+    </string>
+    <string id="blck_val_monolith_story_group_1">
+        <text>Брат, Монолит призвал меня ночью. Я говорил с ним. Он был прекрасен в своём величии. Я едва не ослеп, но его свет наполнил меня великой силой! Я знаю, я чувствую, что его сила пребывает со всеми нами! Он сказал мне, что победить зло способна лишь твёрдая вера. Он сказал, что его сила наполнит только верных. Ещё он открыл мне, что наша победа уже близка!</text>
+    </string>
+    <string id="blck_val_monolith_story_group_2">
+        <text>Брат, ты слышал, что недавно несколько неверных подобрались к антеннам? Монолит направил нас, и братья вовремя их заметили. Один из них упал и испарился. Второго мы уничтожили, третий бросился бежать. Трусы. Все они трусы. Лишь истинная вера не оставляет места для страха! Двое смогли убежать, но Монолит мудр и всеведущ. Значит, они нужны ему живыми.</text>
+    </string>
+    <string id="blck_val_monolith_story_group_3">
+        <text>Помню, как мы патрулировали окраины Рыжего Леса и наткнулись там на неверного-одиночку. Он начал обращаться, поэтому мы не убили его, но он ещё наполовину пребывал, в своём животном состоянии… Я знаю, мудрый Монолит сделал это для всех нас: он снова показал нам истинное лицо своих врагов. Теперь наша вера ещё более укрепилась! Близится, брат!.. Близится победа над неверными, и тогда Монолит выполнит наше сокровенное желание! Истинно преданных он приблизит к себе, к славе своей, величию своему! Мы вечно пребудем в сиянии его!..</text>
+    </string>
+    <string id="blck_val_monolith_story_group_4">
+        <text>Недавно Монолит испытывал мою веру, и я чуть было не сошел с истинного пути. Но я выстоял! Хвала Монолиту! Его испытания закаляют нас! Мы возвращались из Темной Долины, и я чуть отстал от братьев. Зло воспользовалось этим и внезапно стало играть со мной. И… я усомнился. Истинные образы исказились: враг нашептывал мне, что Монолит использует нас как рабов. Но потом я понял: это испытание. Я вспомнил о могуществе и сиянии Монолита и тогда моя воля, и уверенность вернулись ко мне. С тех пор я уже не боюсь никаких испытаний и не знаю сомнений. Хвала Монолиту!</text>
+    </string>
+    <string id="blck_val_monolith_story_group_5">
+        <text>Я был в Темной Долине. Там очень много неверных, ведь сила Монолита еще не достигла этих мест. Мы охраняли. Ночью на нас напали. Мы яростно сражались с этими животными. Заслуги братьев были велики: скоро Монолит призвал их к себе. Для меня он приготовил еще одно испытание. Мое оружие не стреляло. Но тут Монолит сказал мне: « Ты со мной, а моя сила — с тобой. Если ты будешь тверд в своей вере, то сокрушишь моих врагов и приблизишься ко мне!». Тогда я стал тенью. Я пригнулся и обошел их справа. Глупые шпионы ничего не заметили. Они подумали, что покончили с нами и смеялись над пустыми телами наших братьев. Но я уже видел их спины. А потом из моих рук ударила мощь Монолита. Так он убил их всех. Я счастлив служить тебе, Совершенный!</text>
+    </string>
+    <string id="blck_val_monolith_story_group_6">
+        <text>У меня больше нет рассказов для тебя, брат.</text>
+    </string>
+    <string id="blck_val_prisoner_quest_line_meet_0">
+        <text>Че надо, синий? Я кемарнуть собирался, а тут ты нарисовался...</text>
+    </string>
+    <string id="blck_val_prisoner_quest_line_meet_1">
+        <text>Выспишься еще... Лучше скажи как долго я здесь, и что это за место вообще?</text>
+    </string>
+    <string id="blck_val_prisoner_quest_line_meet_10">
+        <text>Ага, удачи тебе с этим.</text>
+    </string>
+    <string id="blck_val_prisoner_quest_line_meet_11">
+        <text>Ладно, бывай.</text>
+    </string>
+    <string id="blck_val_prisoner_quest_line_meet_2">
+        <text>Ты че буровишь? Или тебе сталкерня башку нахрен отбила?</text>
+    </string>
+    <string id="blck_val_prisoner_quest_line_meet_3">
+        <text>Дело в том, что не помню я как здесь оказался...</text>
+    </string>
+    <string id="blck_val_prisoner_quest_line_meet_4">
+        <text>Малой мне шепнул, что ты вместе с этой сталкернёй из пузыря выбрался... Хе, ну поздравляю, сменил одну клетку на другую. Короче, объясняю для тугих - сейчас ты на Заставе. На сталкерячей базе ты не больше часа, не ссы, ничего интересного не пропустил. Гы-гы.</text>
+    </string>
+    <string id="blck_val_prisoner_quest_line_meet_5">
+        <text>А какого хрена я в клетке?</text>
+    </string>
+    <string id="blck_val_prisoner_quest_line_meet_6">
+        <text>Не подфартило тебе, как и нам с братком впрочем, Ставрид много о тебе слышал, вот он и поселил тебя в лучший номер, что здесь имеется.</text>
+    </string>
+    <string id="blck_val_prisoner_quest_line_meet_7">
+        <text>Что еще за Ставрид?</text>
+    </string>
+    <string id="blck_val_prisoner_quest_line_meet_8">
+        <text>Он типа главный в этом лагере, сука редкая. Еще успеешь с ним побазарить, пока вали лучше спать, а то ты меня своими расспросами заколебал уже.</text>
+    </string>
+    <string id="blck_val_prisoner_quest_line_meet_9">
+        <text>Ладно, все-равно придется ждать к утру, может Лютому удастся договорится с этим Ставридом.</text>
+    </string>
+    <string id="blck_val_security_talk_from_actor_0">
+        <text>Слушай внимательно, наёмник, не буду повторять два раза, Ставрид отпускает тебя, но сделаешь малейшую глупость и ответишь за нее по всей строгости. Сечешь?</text>
+    </string>
+    <string id="blck_val_security_talk_from_actor_1">
+        <text>Вас понял, гражданин начальник. Могу я получить обратно свое снаряжение?</text>
+    </string>
+    <string id="blck_val_security_talk_from_actor_2">
+        <text>Да, конечно. Вот все, что было при тебе, держи.</text>
+    </string>
+    <string id="blck_val_security_talk_from_actor_3">
+        <text>Понял. Где группа с которой я прибыл?</text>
+    </string>
+    <string id="blck_val_security_talk_from_actor_4">
+        <text>Да кто где, часть на базе, часть еще вчера с проводником Заставу покинула. И еще один, Маркус который, вообще пропал куда-то, этот Лютый ваш сказал, что он вроде как с аномалии и не вышел, но ты об этом с ним лично поговори, может я и напутал что-то. Да, еще кое-что, ты это, сходи со Ставридом поговори, у него к тебе серьезный разговор имеется.</text>
+    </string>
+    <string id="blck_val_security_talk_from_actor_5">
+        <text>Ладно, выпускай меня.</text>
+    </string>
+    <string id="blck_val_security_talk_from_actor_6">
+        <text>Да кто где, часть на базе, часть еще вчера с проводником Заставу покинула. И еще один, Маркус который, вообще пропал куда-то, этот Лютый ваш сказал, что он вроде как с аномалии и не вышел, но ты об этом с ним лично поговори, может я и напутал что-то. Да, еще кое-что, ты это, сходи со Ставридом поговори, у него к тебе серьезный разговор имеется.</text>
+    </string>
+    <string id="blck_val_security_talk_from_actor_7">
+        <text>Ладно, выпускай меня.</text>
+    </string>
+    <string id="blck_val_security_talk_from_actor_8">
+        <text>Чуть не забыл, тебе тут долговец, что с вами был, флягу с водой передал, держи.</text>
+    </string>
+    <string id="blck_val_security_talk_from_actor_9">
+        <text>Спасибо, открывай решетку.</text>
+    </string>
+    <string id="blck_val_shaman_sell_stuff_0">
+        <text>У меня есть кое-какие вещи, купишь?</text>
+    </string>
+    <string id="blck_val_shaman_sell_stuff_1">
+        <text>Ну, показывай, что там у тебя?</text>
+    </string>
+    <string id="blck_val_shaman_sell_stuff_10">
+        <text>Это тот, что с вами в Пространственном пузыре был, да? Лютый мне о нем рассказывал, даю тебе 1500 рублей за этот КПК.</text>
+    </string>
+    <string id="blck_val_shaman_sell_stuff_11">
+        <text>Ну, может и это пригодится, держи 1000 рублей за эту писанину, больше не дам.</text>
+    </string>
+    <string id="blck_val_shaman_sell_stuff_12">
+        <text>Вот и отлично.</text>
+    </string>
+    <string id="blck_val_shaman_sell_stuff_13">
+        <text>Пока ничего.</text>
+    </string>
+    <string id="blck_val_shaman_sell_stuff_2">
+        <text>Трофейный нож Химика.</text>
+    </string>
+    <string id="blck_val_shaman_sell_stuff_3">
+        <text>КПК Химика.</text>
+    </string>
+    <string id="blck_val_shaman_sell_stuff_4">
+        <text>КПК бойца группировки «Последний день».</text>
+    </string>
+    <string id="blck_val_shaman_sell_stuff_5">
+        <text>КПК Падальщика.</text>
+    </string>
+    <string id="blck_val_shaman_sell_stuff_6">
+        <text>Записка Серого.</text>
+    </string>
+    <string id="blck_val_shaman_sell_stuff_7">
+        <text>Решил продать наконец-то? Держи за него 4500 рублей, красивый нож.</text>
+    </string>
+    <string id="blck_val_shaman_sell_stuff_8">
+        <text>Хм... Интересно... Держи 2000 рублей за него - информация лишней не бывает.</text>
+    </string>
+    <string id="blck_val_shaman_sell_stuff_9">
+        <text>Ух ты!.. Ты где его достал-то, а ладно, не отвечай, крепче спать буду, держи за него 7000 рублей.</text>
+    </string>
+    <string id="blck_val_shaman_water_full_0">
+        <text>У меня вода закончилась, можешь наполнить мою флягу?</text>
+    </string>
+    <string id="blck_val_shaman_water_full_1">
+        <text>Не вопрос, но это будет тебе стоить 2000 рублей, воду очистить не так просто, сам понимаешь. Ну, что по рукам?</text>
+    </string>
+    <string id="blck_val_shaman_water_full_2">
+        <text>Ладно, держи 2000 рублей и флягу, я согласен.</text>
+    </string>
+    <string id="blck_val_shaman_water_full_3">
+        <text>Нет, я передумал.</text>
+    </string>
+    <string id="blck_val_shaman_water_full_4">
+        <text>Отлично, принимай заказ, я как знал, что ты за водой придешь, заранее наполнил несколько фляг водой. Сейчас и в ту, что ты принёс, тоже воды наберу. Приходи еще, как фляга опустеет.</text>
+    </string>
+    <string id="blck_val_shaman_water_full_5">
+        <text>Хорошо, приду.</text>
+    </string>
+    <string id="blck_val_sologub_help_meet_10">
+        <text>Нет. Я был недалеко и наблюдал за тобой. Ты возился сначала с какой-то штукой, а потом встал как вкопанный и стал сам с собой разговаривать. Я уж было подумал, что может контролер тебе мозги выпалил, а потом ты просто рухнул на землю.</text>
+    </string>
+    <string id="blck_val_sologub_help_meet_11">
+        <text>Что ты такое говоришь? Ты точно ничего не перепутал?</text>
+    </string>
+    <string id="blck_val_sologub_help_meet_12">
+        <text>Нет, я пока ещё при своём уме. Ты слушай, что дальше было. Ты значит упал, и тут раздался смех, жуткий такой… И появился какой-то тип в чёрном плаще и наклонился над тобой… Ну я еще немного выждал, а потом выбежал и пальнул в этого типка, а он сразу же исчез, после этого я на базу тебя отнес. За две ходки правда, сначала тебя, а потом всё твоё барахло.</text>
+    </string>
+    <string id="blck_val_sologub_help_meet_13">
+        <text>Спасибо тебе большое, мужик. Если я для тебя что-то сделать могу - скажи мне.</text>
+    </string>
+    <string id="blck_val_sologub_help_meet_14">
+        <text>Я учту. Ты мне лучше расскажи, а что ты видел? Ты думал, что с кем-то разговариваешь?</text>
+    </string>
+    <string id="blck_val_sologub_help_meet_15">
+        <text>Да… Петрович дал мне передатчик, чтобы я координаты точки выхода плененным в пузыре отправил, после отправки мной координат с пузыря вышли сталкеры, это был Рыба и его группа.</text>
+    </string>
+    <string id="blck_val_sologub_help_meet_16">
+        <text>Что за Рыба, ты знал его?</text>
+    </string>
+    <string id="blck_val_sologub_help_meet_17">
+        <text>Да, когда я только пришел в Зону, он спас меня, а потом и к наёмникам пристроил. Но после Рыбу выгнали из Синдиката, и он решил, что я обязан уйти вместе с ним, но я так не считал. Рыба винил меня непонятно за что, и обещал, что мы ещё встретимся. Долгое время я про Рыбу ничего не слышал, а потом кто-то сообщил, что его самого и его отряд видели мертвыми на Янтаре. И я всё это время думал, что он погиб.</text>
+    </string>
+    <string id="blck_val_sologub_help_meet_18">
+        <text>Скорее всего он и погиб.</text>
+    </string>
+    <string id="blck_val_sologub_help_meet_19">
+        <text>Но я видел его перед собой.</text>
+    </string>
+    <string id="blck_val_sologub_help_meet_2">
+        <text>Очнулся? Это хорошо. Как самочувствие?</text>
+    </string>
+    <string id="blck_val_sologub_help_meet_20">
+        <text>Перед тобой никого не было, это точно.</text>
+    </string>
+    <string id="blck_val_sologub_help_meet_21">
+        <text>Ладно, могу тебе еще кое-что рассказать, тот тип, которого ты видел возле меня, я встречал его до этого в пространственном пузыре, он очень опасен, хорошо, что ты оказался неподалеку и спас меня. Спасибо еще раз, а сейчас извини, мне нужно поговорить с Петровичем.</text>
+    </string>
+    <string id="blck_val_sologub_help_meet_22">
+        <text>Вот оно что... Слушай, советую тебе пока никому не говорить об этом существе, могут не правильно понять, я тоже буду молчать.</text>
+    </string>
+    <string id="blck_val_sologub_help_meet_23">
+        <text>Ладно, пожалуй, последую твоему совету. Увидимся позже!</text>
+    </string>
+    <string id="blck_val_sologub_help_meet_25">
+        <text>Чего тебе, наёмник?</text>
+    </string>
+    <string id="blck_val_sologub_help_meet_3">
+        <text>Ч-ч-чёрт… Не очень хорошо.</text>
+    </string>
+    <string id="blck_val_sologub_help_meet_4">
+        <text>Могло быть хуже, я тебя спас, можно сказать. Если бы я вовремя не подоспел - ты был бы уже мёртв.</text>
+    </string>
+    <string id="blck_val_sologub_help_meet_5">
+        <text>Так это тебе я жизнью обязан?</text>
+    </string>
+    <string id="blck_val_sologub_help_meet_6">
+        <text>Можно и так сказать, хорошо, что у меня духу это сделать хватило, а не то не знаю как бы все сложилось.</text>
+    </string>
+    <string id="blck_val_sologub_help_meet_7">
+        <text>Можешь рассказать, что произошло? И куда делись те трое, что меня убить пытались?</text>
+    </string>
+    <string id="blck_val_sologub_help_meet_8">
+        <text>Вот как раз об этом я и хотел с тобой поговорить, не было с тобой никого.</text>
+    </string>
+    <string id="blck_val_sologub_help_meet_9">
+        <text>Ты нашел меня уже в отключке?</text>
+    </string>
+    <string id="blck_val_spatial_fish_meet_0">
+        <text>Так-так… Кто тут у нас? Да никак сам Зверь? Сколько лет, сколько зим…</text>
+    </string>
+    <string id="blck_val_spatial_fish_meet_1">
+        <text>Привет, Рыба…</text>
+    </string>
+    <string id="blck_val_spatial_fish_meet_2">
+        <text>Что не ожидал увидеть? Хе-хе, я же обещал тебе, что мы увидимся.</text>
+    </string>
+    <string id="blck_val_spatial_fish_meet_3">
+        <text>Не ожидал, что ты угодишь в «Пузырь».</text>
+    </string>
+    <string id="blck_val_spatial_fish_meet_4">
+        <text>А с чего ты взял, что мы в него угодили? Поверь мне, мы вернулись из места, похуже преисподней. И как думаешь для чего?</text>
+    </string>
+    <string id="blck_val_spatial_fish_meet_5">
+        <text>Понятия не имею.</text>
+    </string>
+    <string id="blck_val_spatial_fish_meet_6">
+        <text>За долги нужно платить. И ты за них заплатишь - кровью!</text>
+    </string>
+    <string id="blck_val_spatial_fish_meet_7">
+        <text>Даже не начинай...</text>
+    </string>
+    <string id="blck_val_stalker_drunk_quest_10">
+        <text>Эт правильно... А я выпью, пожалуй...</text>
+    </string>
+    <string id="blck_val_stalker_drunk_quest_11">
+        <text>Ты с чего пить-то так начал?</text>
+    </string>
+    <string id="blck_val_stalker_drunk_quest_12">
+        <text>А что... Разве обязательно повод нужен?..</text>
+    </string>
+    <string id="blck_val_stalker_drunk_quest_13">
+        <text>Нет, но в твоем случае, точно есть причина твоего пьянства. Давай рассказывай, что у тебя случилось.</text>
+    </string>
+    <string id="blck_val_stalker_drunk_quest_14">
+        <text>Да глупо всё, эт… как-то вышло. Пришли мы сюда с Сашкой давно, давно еще. Одни из первых. Сашка вообще, всю округу как свои пять пальцев знал. Эх…</text>
+    </string>
+    <string id="blck_val_stalker_drunk_quest_15">
+        <text>И что дальше было?</text>
+    </string>
+    <string id="blck_val_stalker_drunk_quest_16">
+        <text>Как-то поссорились мы с ним, из-за пустяка поссорились то. Ну он и это… Решил, короче сам в рейд пойти, а я на базе остался… Так и не вернулся Сашка. Я его потом долго-о-о искал, но нигде найти не мог. А недавно, я его увидел. Точнее, то, что от него осталось…</text>
+    </string>
+    <string id="blck_val_stalker_drunk_quest_17">
+        <text>Уже ничего не вернуть, а тебе лучше бросить пить.</text>
+    </string>
+    <string id="blck_val_stalker_drunk_quest_18">
+        <text>Да я понимаю… Можешь мне помочь дружище? Сашку-то я среди зомби видел. Он тоже таким стал. Наверное, где-то в поле этого… как его? В излучение это гадское попал, вот оно ему мозги и расплавило. Упокой его душу, а? Не могу я видеть, как друг мой и другие хорошие парни страдают. И сам им помочь не могу, рука не поднимается…</text>
+    </string>
+    <string id="blck_val_stalker_drunk_quest_19">
+        <text>Не переживай, я выполню твою просьбу.</text>
+    </string>
+    <string id="blck_val_stalker_drunk_quest_2">
+        <text>Ага-а! Ч-чего? Тебе чего надо?</text>
+    </string>
+    <string id="blck_val_stalker_drunk_quest_20">
+        <text>Во-о-от спасибо. Я тебе этого не забуду. Зомбированные на кладбище, эт не далеко от базы... Я тебе метку скину...</text>
+    </string>
+    <string id="blck_val_stalker_drunk_quest_21">
+        <text>Скидывай метку и я пошел.</text>
+    </string>
+    <string id="blck_val_stalker_drunk_quest_23">
+        <text>Ч-что там? Какие новости?</text>
+    </string>
+    <string id="blck_val_stalker_drunk_quest_24">
+        <text>Я избавил от страданий твоего друга и других зомбированных на кладбище.</text>
+    </string>
+    <string id="blck_val_stalker_drunk_quest_25">
+        <text>Эт х-хорошо... Спасибо тебе, мужик... В-в-выручил... Держи вот от меня...</text>
+    </string>
+    <string id="blck_val_stalker_drunk_quest_26">
+        <text>За ствол спасибо. Дам тебе совет, бросай пить, Косой, друга ты своим пьянством все-равно уже не вернешь.</text>
+    </string>
+    <string id="blck_val_stalker_drunk_quest_28">
+        <text>Ч-ч-чего тебе?</text>
+    </string>
+    <string id="blck_val_stalker_drunk_quest_29">
+        <text>Пока нет новостей.</text>
+    </string>
+    <string id="blck_val_stalker_drunk_quest_3">
+        <text>Ты чего пьяный то такой?</text>
+    </string>
+    <string id="blck_val_stalker_drunk_quest_4">
+        <text>Э-э-э… Так н-надо... Хе-хе.</text>
+    </string>
+    <string id="blck_val_stalker_drunk_quest_5">
+        <text>Чего смеешься?</text>
+    </string>
+    <string id="blck_val_stalker_drunk_quest_6">
+        <text>Да-а-а так, шутку вспомнил. Эх, надоело всё…</text>
+    </string>
+    <string id="blck_val_stalker_drunk_quest_7">
+        <text>Может тебе помочь чем?</text>
+    </string>
+    <string id="blck_val_stalker_drunk_quest_8">
+        <text>Ну-у помоги тогда. Эт… Давай выпьем...</text>
+    </string>
+    <string id="blck_val_stalker_drunk_quest_9">
+        <text>Не пью, бросил.</text>
+    </string>
+    <string id="blck_val_stalker_in_bar_meet_0">
+        <text>Ты Лысый? Мне нужно с тобой поговорить.</text>
+    </string>
+    <string id="blck_val_stalker_in_bar_meet_1">
+        <text>Ну я, что с того?</text>
+    </string>
+    <string id="blck_val_stalker_in_bar_meet_10">
+        <text>Назад уже ничего не вернуть, лучше исполни последнюю волю своего друга.</text>
+    </string>
+    <string id="blck_val_stalker_in_bar_meet_11">
+        <text>Меня Рябой просил тебя найти. Знаешь такого сталкера?</text>
+    </string>
+    <string id="blck_val_stalker_in_bar_meet_12">
+        <text>Рябой? Чёрт, что с ним? Так он все-таки жив?</text>
+    </string>
+    <string id="blck_val_stalker_in_bar_meet_13">
+        <text>Нет, он был не в себе, и покончил с собой. Он был в очень плохом состоянии, ничего не соображал.</text>
+    </string>
+    <string id="blck_val_stalker_in_bar_meet_14">
+        <text>Нет, нет, нет! С ним был ещё кто-то?</text>
+    </string>
+    <string id="blck_val_stalker_in_bar_meet_15">
+        <text>Нет, он был один. Он все бредил про «Выжигатель» и какого-то Горбуна...</text>
+    </string>
+    <string id="blck_val_stalker_in_bar_meet_16">
+        <text>Это моя вина… Это из-за меня погиб Горбун, а Рябому досталось. В самый тяжёлый момент я их предал и сбежал.</text>
+    </string>
+    <string id="blck_val_stalker_in_bar_meet_17">
+        <text>Расскажи подробней, что произошло.</text>
+    </string>
+    <string id="blck_val_stalker_in_bar_meet_18">
+        <text>Я, Горбун и Рябой давно готовились прорываться на север. У нас не хватало только времени спада излучения «Выжигателя», и Рябой достал эту информацию, у одного сталкера из «Последнего дня». У Шведа кажется. Мы прошли пол Радара, как «Выжигатель» неожиданно включился. Рябому снесло крышу, он потерял сознание и свалился со склона. А после куда-то исчез. Его не было на том месте где он должен был упасть. И ПДА его не отвечал. Я запаниковал, решил всё бросить и возвращаться. Горбун настаивал на том, чтобы мы отправились искать Рябого, но это было бы чистейшим самоубийством. Я согласился с Горбуном, и он полез вниз по склону туда, где должен был быть Рябой. И тут очередной всплеск «Выжигателя» накрыл нас. Я опомнился уже возле военной базы, до этого времени я считал, что они погибли…</text>
+    </string>
+    <string id="blck_val_stalker_in_bar_meet_19">
+        <text>Назад уже ничего не вернуть, Лысый. Не кори себя за содеянное.</text>
+    </string>
+    <string id="blck_val_stalker_in_bar_meet_2">
+        <text>Рябой попросил меня найти тебя. И передать этот артефакт.</text>
+    </string>
+    <string id="blck_val_stalker_in_bar_meet_3">
+        <text>Рябой? Чёрт, что с ним? Так он все-таки жив?</text>
+    </string>
+    <string id="blck_val_stalker_in_bar_meet_4">
+        <text>Нет, он был не в себе, и покончил с собой. Он был в очень плохом состоянии, ничего не соображал.</text>
+    </string>
+    <string id="blck_val_stalker_in_bar_meet_5">
+        <text>Нет, нет, нет! С ним был ещё кто-то?</text>
+    </string>
+    <string id="blck_val_stalker_in_bar_meet_6">
+        <text>Нет, он был один. Он все бредил про «Выжигатель» и какого-то Горбуна. Потом попросил отдать тебе артефакт, он сказал, чтобы ты передал этот артефакт его жене.</text>
+    </string>
+    <string id="blck_val_stalker_in_bar_meet_7">
+        <text>Это моя вина… Это из-за меня погиб Горбун, а Рябому досталось. В самый тяжёлый момент я их предал и сбежал.</text>
+    </string>
+    <string id="blck_val_stalker_in_bar_meet_8">
+        <text>Расскажи подробней, что произошло.</text>
+    </string>
+    <string id="blck_val_stalker_in_bar_meet_9">
+        <text>Я, Горбун и Рябой давно готовились прорываться на север. У нас не хватало только времени спада излучения «Выжигателя», и Рябой достал эту информацию, у одного сталкера из «Последнего дня». У Шведа кажется. Мы прошли пол Радара, как «Выжигатель» неожиданно включился. Рябому снесло крышу, он потерял сознание и свалился со склона. А после куда-то исчез. Его не было на том месте где он должен был упасть. И ПДА его не отвечал. Я запаниковал, решил всё бросить и возвращаться. Горбун настаивал на том, чтобы мы отправились искать Рябого, но это было бы чистейшим самоубийством. Я согласился с Горбуном, и он полез вниз по склону туда, где должен был быть Рябой. И тут очередной всплеск «Выжигателя» накрыл нас. Я опомнился уже возле военной базы, до этого времени я считал, что они погибли…</text>
+    </string>
+    <string id="blck_val_stalker_in_bar_start_2">
+        <text>Чего хочешь, наёмник? Я не в настроении говорить...</text>
+    </string>
+    <string id="blck_val_stavrid_zavod_zasada_11">
+        <text>Я рад, что ты в порядке, наёмник. На счет случившегося с тобой на заводе, с расспросами лезть к тебе не буду, если есть чем поделится, то поделись.</text>
+    </string>
+    <string id="blck_val_stavrid_zavod_zasada_12">
+        <text>Всё хорошо, не забивай голову. Что там за информация в КПК Миклухи?</text>
+    </string>
+    <string id="blck_val_stavrid_zavod_zasada_13">
+        <text>Ладно, тогда перейдем пожалуй к записям в КПК, Петровичу не удалось расшифровать все записи, но все же мы смогли найти полезную информацию, у Миклухи был запасной план как выбить монолитовцев с Заставы. План довольно таки прост, нужно замаскироваться под монолитовцев, проникнуть на их базу и с помощью взрывчатки подорвать здание. Я думаю, что данный план нужно опробовать, но в перву очередь, нужно достать костюм монолитовцев и КПК одного из них. Затем ты и Сологуб, переодевшись, проберетесь к ним на базу, установите заряд взрывчатки, запустите его и тут же вернетесь обратно. Такой вот план.</text>
+    </string>
+    <string id="blck_val_stavrid_zavod_zasada_14">
+        <text>Неплохой план, но где достать два костюма монолитовцев?</text>
+    </string>
+    <string id="blck_val_stavrid_zavod_zasada_15">
+        <text>Я пробил по своим каналам, один торговец готов предоставить нам два монолитовских костюма, но в обмен на костюмы он просит ствол СР-3 "Вихрь", где достать такой ствол я не знаю, поставщики Распутина тоже не смогут его достать. Может ты по своим каналам пробъешь?</text>
+    </string>
+    <string id="blck_val_stavrid_zavod_zasada_16">
+        <text>Мои каналы не станут мне помогать, лучше вообще не связываться сейчас с Синдикатом, после случившегося в пространственном пузыре.</text>
+    </string>
+    <string id="blck_val_stavrid_zavod_zasada_17">
+        <text>Плохо, но все же, поспрашивай людей по этому поводу, может и найдем такой ствол.</text>
+    </string>
+    <string id="blck_val_stavrid_zavod_zasada_18">
+        <text>Ладно, я попытаюсь раздобыть этот ствол. Поговорим позже.</text>
+    </string>
+    <string id="blck_val_stavrid_zavod_zasada_2">
+        <text>С чем пожаловал, наёмник?</text>
+    </string>
+    <string id="blck_val_stavrid_zavod_zasada_20">
+        <text>С чем пожаловал, наёмник?</text>
+    </string>
+    <string id="blck_val_stavrid_zavod_zasada_22">
+        <text>Зверь, ты где был? У нас тут такое произошло, те двое бандитов, что в клетке сидели, они сбежали этой ночью. Главное, что непонятно, как вообще они освободится смогли, думаю, что им помог кто-то из моих. Ты ничего подозрительного не замечал в последнее время?</text>
+    </string>
+    <string id="blck_val_stavrid_zavod_zasada_23">
+        <text>Нет, вроде бы ничего подозрительного не заметил... Кстати, я раздобыл нужный ствол для того торговца.</text>
+    </string>
+    <string id="blck_val_stavrid_zavod_zasada_24">
+        <text>Ладно, с побегом я позже разберусь, где ты добыл этот ствол?</text>
+    </string>
+    <string id="blck_val_stavrid_zavod_zasada_25">
+        <text>Ну... Старые связи всё же пригодились...</text>
+    </string>
+    <string id="blck_val_stavrid_zavod_zasada_26">
+        <text>Это очень хорошо, теперь мы сможем воплотить в жизнь план Миклухи и наконец-то уничтожить этих монолитовцев. Ах да, мы расшифровали еще один из файлов в КПК Миклухи, оказывается, что под Заставой есть лаборатория и монолитовцам поставляют оружие и новых бойцов именно через нее.</text>
+    </string>
+    <string id="blck_val_stavrid_zavod_zasada_27">
+        <text>Мда, чем дальше в лес... Так, для начала нужно их базу на стройке уничтожить, а там посмотрим.</text>
+    </string>
+    <string id="blck_val_stavrid_zavod_zasada_28">
+        <text>Всё ничего, но нужно будет дождаться доставки костюмов, не знаю сколько времени это может занять. Давай сюда ствол, я отправлю его торговцу и будем ожидать от него посылку.</text>
+    </string>
+    <string id="blck_val_stavrid_zavod_zasada_29">
+        <text>Ладно, держи ствол.</text>
+    </string>
+    <string id="blck_val_stavrid_zavod_zasada_3">
+        <text>Свободовцев на заводе зажали монолитовцы, нужна твоя помощь, Ставрид, дай мне нескольких бойцов, нужно освободить группу Миклухи.</text>
+    </string>
+    <string id="blck_val_stavrid_zavod_zasada_30">
+        <text>Ага, можешь идти, я позову тебя сразу же, как посылка с костюмами будет у меня.</text>
+    </string>
+    <string id="blck_val_stavrid_zavod_zasada_31">
+        <text>Понял, до встречи.</text>
+    </string>
+    <string id="blck_val_stavrid_zavod_zasada_33">
+        <text>Зверь, костюмы пока не прибыли, зайди позже, ладно?</text>
+    </string>
+    <string id="blck_val_stavrid_zavod_zasada_35">
+        <text>Хорошие новости, Зверь! Прибыла наша посылка с комбинезонами, теперь можно и за выполнение плана по уничтожению монолитовцев взяться. Ты как готов?</text>
+    </string>
+    <string id="blck_val_stavrid_zavod_zasada_36">
+        <text>Ну, можно сказать, что готов.</text>
+    </string>
+    <string id="blck_val_stavrid_zavod_zasada_37">
+        <text>Да, я понимаю, что план не идеален и остается шанс, что вас расколят, но этот шанс чертовски мал. Монолитовцы без мозгов совсем, они не смогут понять, что это подстава.</text>
+    </string>
+    <string id="blck_val_stavrid_zavod_zasada_38">
+        <text>Ладно, где Сологуб сейчас, он готов идти?</text>
+    </string>
+    <string id="blck_val_stavrid_zavod_zasada_39">
+        <text>Ах да, на счет Сологуба, с тобой пойдет не он... Лютый очень рвался идти с тобой, я сначала не хотел соглашаться, но все же решил, что тебе с ним будет спокойнее. Он уже одел свой комбинезон и ждет тебя внизу, но сначала сходи к Петровичу, он перенастроит твой КПК, так же как и КПК Лютого.</text>
+    </string>
+    <string id="blck_val_stavrid_zavod_zasada_4">
+        <text>Прости, но я не могу рисковать своими парнями, ты выбрался и это главное, остальное неважно. Мы со свободовцами не так сильно дружим, чтобы за их спасение умирать.</text>
+    </string>
+    <string id="blck_val_stavrid_zavod_zasada_40">
+        <text>Понял, схожу к Петровичу. Но сначала, давай еще раз по плану пробежимся.</text>
+    </string>
+    <string id="blck_val_stavrid_zavod_zasada_41">
+        <text>Значит так, вы с Лютым пробираетесь на базу монолитовцев, твоей задачей будет - заложить взрывчатку, прикрепив её к колоне на втором этаже здания, Лютый в свою очередь попытается отвлечь внимание монолитовцев. После того, как ты заложишь взрывчатку, бегом возвращаетесь на базу, чтобы вас вместе с монолитовцами не завалило, вот такой план. Так, держи свой монолитовский комбинезон и взрывчатку. Ни пуха, ни пера вам.</text>
+    </string>
+    <string id="blck_val_stavrid_zavod_zasada_42">
+        <text>К черту.</text>
+    </string>
+    <string id="blck_val_stavrid_zavod_zasada_44">
+        <text>Зверь, костюмы пока не прибыли, зайди позже, ладно?</text>
+    </string>
+    <string id="blck_val_stavrid_zavod_zasada_46">
+        <text>Что там у вас случилось, Зверь? Где Лютый?</text>
+    </string>
+    <string id="blck_val_stavrid_zavod_zasada_47">
+        <text>Нас раскрыли... Скорее всего, монолитовцы увели Лютого в лабораторию, они ждут, что я пойду ему на выручку. Не знаю, что они задумали, но им нужно для чего-то заманить меня в лабораторию.</text>
+    </string>
+    <string id="blck_val_stavrid_zavod_zasada_48">
+        <text>Вот же, такой хороший план провалился... Так, я одного не могу понять, как ты узнал, что они увели Лютого в лабораторию?</text>
+    </string>
+    <string id="blck_val_stavrid_zavod_zasada_49">
+        <text>Меня вырубили, а когда я очнулся, то в лагере монолитовцев уже почти никого не было, был только один монолитовец, он и рассказал мне обо всем этом.</text>
+    </string>
+    <string id="blck_val_stavrid_zavod_zasada_5">
+        <text>Да как ты можешь так говорить? Если не помочь им сейчас - они погибнут.</text>
+    </string>
+    <string id="blck_val_stavrid_zavod_zasada_50">
+        <text>Значит выходит, что монолитовцев на базе больше нет, они все ушли?</text>
+    </string>
+    <string id="blck_val_stavrid_zavod_zasada_51">
+        <text>Да, но сомневаюсь, что они ушли насовсем...</text>
+    </string>
+    <string id="blck_val_stavrid_zavod_zasada_52">
+        <text>Насколько я понял, ты собираешься пойти на подмогу Лютому, не так ли? Думаю, что тебе не стоит этого делать, это чистой воды самоубийство. Просто забудь об этой затее, тем более Хантер вон часа пол назад пришел на хутор, тебя искал, говорил, что он готов вывести тебя из Заставы. Просто уходи, Лютого ты уже не спасешь.</text>
+    </string>
+    <string id="blck_val_stavrid_zavod_zasada_53">
+        <text>Я должен спасти Лютого, нельзя просто так всё оставить.</text>
+    </string>
+    <string id="blck_val_stavrid_zavod_zasada_55">
+        <text>Может все же ты откажешься от этой глупой мысли? Если спустишься в лабораторию сейчас, ты труп...</text>
+    </string>
+    <string id="blck_val_stavrid_zavod_zasada_56">
+        <text>Я должен спасти Лютого.</text>
+    </string>
+    <string id="blck_val_stavrid_zavod_zasada_57">
+        <text>Может быть ты и прав, нет гарантий, что Лютый всё еще жив...</text>
+    </string>
+    <string id="blck_val_stavrid_zavod_zasada_58">
+        <text>Вот именно! Мой тебе совет, сходи к Петровичу, он обратно перенастроит твой КПК, избався от этого гребанного монолитовского комбинезона и с Хантером поговори, главное не лезь в эту лабораторию.</text>
+    </string>
+    <string id="blck_val_stavrid_zavod_zasada_59">
+        <text>Ладно, так и быть, пойду к Петровичу, а затем к Хантеру схожу.</text>
+    </string>
+    <string id="blck_val_stavrid_zavod_zasada_6">
+        <text>Скорее всего они уже погибли, я не могу рисковать своими людьми.</text>
+    </string>
+    <string id="blck_val_stavrid_zavod_zasada_61">
+        <text>Удачи, Зверь! Надеюсь, что еще свидемся...</text>
+    </string>
+    <string id="blck_val_stavrid_zavod_zasada_63">
+        <text>Здравствуй, Зверь. Удалось раздобыть хоть какие-то сведенья о том, где нам достать этот СР-3 "Вихрь"?</text>
+    </string>
+    <string id="blck_val_stavrid_zavod_zasada_64">
+        <text>Вроде бы да, один из тех бандитов, что в клетке на хуторе сидят, сказал, что если я освобожу их, то взамен он подгонит этот самый "Вихрь".</text>
+    </string>
+    <string id="blck_val_stavrid_zavod_zasada_65">
+        <text>Вот скоты... Может им просто иголки под ногти загнать и силой заставить рассказать о схроне со стволом?..</text>
+    </string>
+    <string id="blck_val_stavrid_zavod_zasada_66">
+        <text>Попросил стащить ключ у Сологуба ночью и передать его им, за это и обещал ствол. Также обещали не стрелять, бандит сказал, что они просто свалят по-тихому.</text>
+    </string>
+    <string id="blck_val_stavrid_zavod_zasada_67">
+        <text>Мда, ситуация... Как думаешь, можно верить, что они выполнят свои обещания?</text>
+    </string>
+    <string id="blck_val_stavrid_zavod_zasada_68">
+        <text>Думаю, что им можно верить.</text>
+    </string>
+    <string id="blck_val_stavrid_zavod_zasada_69">
+        <text>Не уверен, что стоит верить бандитам, но другого выхода пока у нас нет.</text>
+    </string>
+    <string id="blck_val_stavrid_zavod_zasada_7">
+        <text>Эх ты... Ладно, я сам попытаюсь их спасти.</text>
+    </string>
+    <string id="blck_val_stavrid_zavod_zasada_70">
+        <text>Дожили... На поводу у бандитов приходится идти, хотя... Есть одна идея, можно подыграть бандитам, я дам тебе ключ от клетки, ты передашь его им, ребят на хуторе предупрежу, чтобы те были готовы к любым действиям со стороны бандюков. Если всё пройдет гладко и бандиты сдержат своё слово, то пусть живут, но мне и моим ребятам им на глаза лучше больше не попадаться. Как тебе такой план, Зверь?</text>
+    </string>
+    <string id="blck_val_stavrid_zavod_zasada_71">
+        <text>Думаю, что план может прокатить, в любом случае, это лучше, чем просто украсть ключ для бандитов.</text>
+    </string>
+    <string id="blck_val_stavrid_zavod_zasada_72">
+        <text>Сомневаюсь, что это прокатит, бандит сказал, что стволы у какого-то третьего лица и отдаст он их только за свободу бандитов.</text>
+    </string>
+    <string id="blck_val_stavrid_zavod_zasada_73">
+        <text>Черт и какой же план по освобождению этот бандит тебе предложил?</text>
+    </string>
+    <string id="blck_val_stavrid_zavod_zasada_74">
+        <text>Так, ладно, наверное так и поступим, держи ключ, скажешь, что стащил ключ у Сологуба, после этого "побега" поднимешься ко мне, расскажешь как всё прошло, лады?</text>
+    </string>
+    <string id="blck_val_stavrid_zavod_zasada_75">
+        <text>Договорились, я пошел.</text>
+    </string>
+    <string id="blck_val_stavrid_zavod_zasada_79">
+        <text>Как всё прошло, Зверь?</text>
+    </string>
+    <string id="blck_val_stavrid_zavod_zasada_80">
+        <text>Бандиты свалили без шуму и пыли, сказали утром зайти за "Вихрем" в старую школу. Вот, возвращаю ключ обратно.</text>
+    </string>
+    <string id="blck_val_stavrid_zavod_zasada_81">
+        <text>Ну, что же, посмотрим сдержат ли они своё слово...</text>
+    </string>
+    <string id="blck_val_stavrid_zavod_zasada_82">
+        <text>Утром и проверим, сейчас гадать без пользы.</text>
+    </string>
+    <string id="blck_val_stavrid_zavod_zasada_84">
+        <text>Ну, Зверь. Бандиты сдержали своё слово, удалось добыть ствол?</text>
+    </string>
+    <string id="blck_val_stavrid_zavod_zasada_85">
+        <text>Да, удивительно, но своё слово они сдержали, СР-3 "Вихрь" уже у меня.</text>
+    </string>
+    <string id="blck_val_stavrid_zavod_zasada_86">
+        <text>Это очень хорошо, теперь мы сможем воплотить в жизнь план Миклухи и наконец-то уничтожить этих монолитовцев. Ах да, кстати, мы расшифровали еще один файл в КПК Миклухи, оказывается, что под Заставой есть лаборатория и монолитовцам поставляют оружие и новых бойцов именно через нее.</text>
+    </string>
+    <string id="blck_val_stavrid_zavod_zasada_87">
+        <text>Мда, чем дальше в лес... Так, для начала нужно их базу на стройке уничтожить, а там посмотрим.</text>
+    </string>
+    <string id="blck_val_stavrid_zavod_zasada_88">
+        <text>Бандиты свалили без шуму и пыли, сказали утром зайти за "Вихрем" в старую школу. Вот, возвращаю твой ключ и ключ Сологуба обратно заодно.</text>
+    </string>
+    <string id="blck_val_stavrid_zavod_zasada_9">
+        <text>С чем пожаловал, наёмник?</text>
+    </string>
+    <string id="blck_val_stavrid_zavod_zasada_91">
+        <text>С чем пожаловал, Зверь?</text>
+    </string>
+    <string id="blck_val_stavrid_zavod_zasada_92">
+        <text>Давай поговорим после передачи ключа бандитам, ладно?</text>
+    </string>
+    <string id="blck_val_stavrid_zavod_zasada_93">
+        <text>Хорошо, я пошел.</text>
+    </string>
+    <string id="blck_val_vihr_meet_1_0">
+        <text>Слушай, Распутин, я ищу ствол один, Ср-3 "Вихрь" называется, ты не можешь такой подогнать?</text>
+    </string>
+    <string id="blck_val_vihr_meet_1_1">
+        <text>Я уже говорил со Ставридом по этому поводу, скажу и тебе тоже самое, мои поставщики не в силах подогнать этот ствол, он очень редкий.</text>
+    </string>
+    <string id="blck_val_vihr_meet_1_2">
+        <text>Ладно, спасибо за ответ.</text>
+    </string>
+    <string id="blck_val_vihr_meet_1_3">
+        <text>Да не за что, как будет нужна помощь - обращайся.</text>
+    </string>
+    <string id="blck_val_vihr_meet_2_0">
+        <text>Я ищу ствол Ср-3 "Вихрь", не знаешь где такой можно раздобыть?</text>
+    </string>
+    <string id="blck_val_vihr_meet_2_1">
+        <text>Это ты для того торговца, что монолитовские костюмы на этот ствол согласился поменять? Нет, не знаю, но кое-что могу точно сказать, если этот ствол не может достать Распутин, то никто его наверное не сможет достать. Вот так.</text>
+    </string>
+    <string id="blck_val_vihr_meet_3_0">
+        <text>Привет, Косой, мне нужен ствол Ср-3 "Вихрь", не подскажешь где такой найти?</text>
+    </string>
+    <string id="blck_val_vihr_meet_3_1">
+        <text>Н-нет, с этим не ко мне... Мне твои п-проблемы не н-нужны, у меня и с-своих хватает...</text>
+    </string>
+    <string id="blck_val_vihr_meet_4_0">
+        <text>Я ищу автомат Ср-3 "Вихрь", не знаешь где такой найти можно?</text>
+    </string>
+    <string id="blck_val_vihr_meet_4_1">
+        <text>А без понятия, если Распутин не знает, то сходи к Петровичу, может он сможет его достать.</text>
+    </string>
+    <string id="blck_val_vihr_meet_5_0">
+        <text>Привет, Петрович, я ищу один уникальный ствол СР-3 "Вихрь", может хоть ты сможешь его достать?</text>
+    </string>
+    <string id="blck_val_vihr_meet_5_1">
+        <text>Хм, нет, достать я его не смогу, да и сомневаюсь, что на Заставе найдется человек, который сможет.</text>
+    </string>
+</string_table>

@@ -1,0 +1,10 @@
+[logic]
+active = sr_idle@esc_koordinator_meet_done
+
+[sr_idle@esc_koordinator_meet_done]
+on_info = {=actor_in_zone(esc_bar_sr_noweap) +esc_koordinator_stop_sound} sr_idle@esc_koordinator_meet_not
+
+[sr_idle@esc_koordinator_meet_not]
+on_info = {!actor_in_zone(esc_bar_sr_noweap)} sr_idle@esc_koordinator_meet_done %-esc_koordinator_stop_sound%
+
+[sr_idle@nil]

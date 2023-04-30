@@ -1,0 +1,31 @@
+[logic]
+active = sr_idle@wait
+
+[sr_idle@wait]
+on_info = {+sad_radik_start_arrive} sr_idle@10 %=set_counter(sad_radik_faraway_mobs:0)%
+on_info9 = {+sad_radik_actor_enemy} sr_idle@nil, {+sad_radik_dead} sr_idle@nil, {+sad_radik_otkaz} sr_idle@nil
+
+[sr_idle@10]
+on_info = {+sad_sim_13_cave_reached} sr_idle@nil, {+sad_radik_actor_enemy} sr_idle@nil, {+sad_stalker_radik_squad_dead} sr_idle@nil
+on_info2 = {=sad_dist_to_squad_ge(sad_stalker_radik_squad:1600)} sr_idle@20 %=send_tip(sad_radik_faraway:sad_stalker_radik)% ;1600
+
+[sr_idle@20]
+on_game_timer = 100 | sr_idle@30
+on_info = {+sad_sim_13_cave_reached} sr_idle@nil, {+sad_radik_actor_enemy} sr_idle@nil, {+sad_stalker_radik_squad_dead} sr_idle@nil
+on_info2 = {=sad_dist_to_squad_le(sad_stalker_radik_squad:1000)} sr_idle@10 ;1000
+on_info3 = {=sad_dist_to_squad_ge(sad_stalker_radik_squad:12000)} sr_idle@nil %=kill_squad(sad_stalker_radik_squad)%
+
+[sr_idle@30]
+on_info = {+sad_sim_13_cave_reached} sr_idle@nil, {+sad_radik_actor_enemy} sr_idle@nil, {+sad_stalker_radik_squad_dead} sr_idle@nil
+on_info2 = {=sad_dist_to_squad_le(sad_stalker_radik_squad:1900)} sr_idle@10
+on_info3 = {=sad_dist_to_squad_ge(sad_stalker_radik_squad:12000)} sr_idle@nil %=kill_squad(sad_stalker_radik_squad)%
+on_info4 = {=actor_dont_look_at_squad(sad_stalker_radik_squad)} sr_idle@40
+
+[sr_idle@40]
+on_info = {=counter_greater(sad_radik_faraway_mobs:7)} sr_idle@20, sr_idle@50 %=inc_counter(sad_radik_faraway_mobs:2) =create_mob_near_squad(snork_strong:sad_stalker_radik_squad) =create_mob_near_squad(snork_strong:sad_stalker_radik_squad)%
+
+[sr_idle@50]
+on_game_timer = 20 | sr_idle@20
+on_info = {+sad_sim_13_cave_reached} sr_idle@nil, {+sad_radik_actor_enemy} sr_idle@nil, {+sad_stalker_radik_squad_dead} sr_idle@nil
+
+[sr_idle@nil]

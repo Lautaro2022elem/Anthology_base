@@ -1,0 +1,68 @@
+#include "scripts\station_digger\npc\bar_zmeelov_digger_general.ltx"
+
+[logic]
+suitable = {=check_npc_name(bar_zmeelov_digger)} true
+prior = 200
+active = remark@stay_start
+level_spot = quest_npc
+
+[remark@stay_start]
+anim = threat_na
+target = story | actor
+use_camp = false
+on_info = {=dist_to_actor_le(8)} remark@zmeelov_talk
+combat_ignore_cond = true
+combat_ignore_keep_when_attacked = true
+invulnerable = true
+gather_items_enabled = false
+help_wounded_enabled = false
+corpse_detection_enabled = false
+meet = no_meet
+
+[remark@zmeelov_talk]
+anim = threat_na
+target = story | actor
+use_camp = false
+on_info = {+bar_zmeelov_come_to_lab} remark@zmeelov_look_from_lab
+combat_ignore_cond = true
+combat_ignore_keep_when_attacked = true
+invulnerable = true
+gather_items_enabled = false
+help_wounded_enabled = false
+corpse_detection_enabled = false
+meet = meet@end_game
+
+[remark@zmeelov_look_from_lab]
+anim = wait_na
+target = path | bar_zmeelov_digger_go_to_lab_look, 0
+use_camp = false
+on_timer = 2500 | walker@go_to_lab
+combat_ignore_cond = true
+combat_ignore_keep_when_attacked = true
+invulnerable = true
+gather_items_enabled = false
+help_wounded_enabled = false
+corpse_detection_enabled = false
+meet = no_meet
+
+[walker@go_to_lab]
+path_walk = bar_zmeelov_digger_go_to_lab_walk_1
+on_info = {=actor_enemy} %=actor_neutral%
+def_state_moving = walk_noweap
+meet = no_meet
+gather_items_enabled = false
+help_wounded_enabled = false
+corpse_detection_enabled = false
+invulnerable = true
+on_signal = bar_zmeelov_come | {-bar_zmeelov_go_to_lab} walker@go_to_lab_1 %+bar_zmeelov_go_to_lab%
+
+[walker@go_to_lab_1]
+path_walk = bar_zmeelov_digger_go_to_lab_walk_2
+on_info = {=actor_enemy} %=actor_neutral%
+def_state_moving = walk_noweap
+meet = no_meet
+gather_items_enabled = false
+help_wounded_enabled = false
+corpse_detection_enabled = false
+invulnerable = true
+on_signal = bar_zmeelov_come_1 | {-bar_zmeelov_come_to_lab_done} remark@talk_from_security %+bar_zmeelov_come_to_lab_done%

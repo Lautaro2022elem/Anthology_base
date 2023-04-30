@@ -1,0 +1,92 @@
+; -------------------------------------------------------------------------------------------------------------------------------------
+[logic]
+active = sr_idle@10
+
+[sr_idle@10]
+on_info = {+sad_actor_enemy_to_someone} sr_idle@nil
+on_info2 = {+sad_cowboy_rob_actor} sr_idle@20
+on_info9 = {+sad_ran_cowboy_gone} sr_idle@1000
+
+[sr_idle@20]
+on_info = {+sad_actor_enemy_to_someone} sr_idle@nil
+on_info2 = {+sad_actor_told_maxim_about_cowboy} sr_idle@30 %=give_task(sad_volodya_task)%
+on_info3 = {+sad_volodya_ready_to_go} sr_idle@30 %=give_task(sad_volodya_task)%
+on_info9 = {+sad_ran_cowboy_gone} sr_idle@1000
+
+[sr_idle@30]
+on_info = {+sad_actor_enemy_to_someone} sr_idle@nil
+on_info2 = {+sad_volodya_ready_to_go} sr_idle@40
+on_info9 = {+sad_ran_cowboy_gone} sr_idle@1000
+
+[sr_idle@40]
+on_info = {+sad_actor_enemy_to_someone} sr_idle@nil
+on_info2 = {+sad_volodya_arrive_ran} sr_idle@teleport %=run_postprocess(fade_in:9285)=disable_ui +sad_ran_cutscene_start%
+on_info3 = {=actor_in_zone(sad_ran_sr_zone)} sr_idle@volodya_go_alone %=remove_squad(sad_b2_volodya_squad)%
+on_info9 = {+sad_ran_cowboy_gone} sr_idle@1000
+
+; ------------------------------------------------------------------------------------------------------------------------------------- volodya_go_alone
+[sr_idle@volodya_go_alone]
+on_info = sr_idle@vga_1 %=create_squad(sad_volodya_the_big_squad:sad_sim_16) +sad_volodya_go_alone%
+
+[sr_idle@vga_1]
+on_info = {=squad_exist(sad_volodya_the_big_squad)} sr_idle@ataka
+on_timer = 30000 | sr_idle@ataka
+
+; ------------------------------------------------------------------------------------------------------------------------------------- Cutscene "ataka"
+[sr_idle@teleport]
+on_timer = 500 | sr_idle@teleport_0 %=run_postprocess(black:9286) =teleport_actor(sad_ran_volodya_raid_walk) =remove_squad(sad_b2_volodya_squad)%
+
+[sr_idle@teleport_0]
+on_info = {=story_object_exist(sad_ran_ucheny)} sr_idle@teleport_1 %=teleport_npc_by_story_id(sad_ran_ucheny:sad_ran_tesla_enemy_walk)%, sr_idle@teleport_1
+
+[sr_idle@teleport_1]
+on_timer = 500 | sr_idle@teleport_2 %=create_squad(sad_volodya_the_big_squad:sad_sim_16) =create_cutscene_actor_with_weapon(sad_ran_cs_actor:sad_ran_cs_actor_start_point:0:90:3)%
+
+[sr_idle@teleport_2]
+on_timer = 500 | sr_cutscene@ataka % +sad_ran_cutscene_patrul%
+
+[sr_cutscene@ataka]
+point = sad_ran_actor_place_walk
+look = sad_ran_actor_place_look
+cam_effector = scenario_cam\sad\sad_ran_cutscene_camera
+global_cameffect = true
+enable_ui_on_end = false
+outdoor = true
+on_timer = 250 | {-sad_ran_cs_fade_out} %+sad_ran_cs_fade_out =stop_postprocess(9285) =stop_postprocess(9286)%
+on_signal = cameff_end | sr_idle@cs_end_1 %=run_postprocess(black:9287)%
+on_signal2 = cam_effector_stop | sr_idle@cs_end_1 %=run_postprocess(black:9287)%
+
+[sr_idle@cs_end_1]
+on_timer = 250 | sr_idle@cs_end_2
+
+[sr_idle@cs_end_2]
+on_info = {=story_object_exist(sad_ran_cs_actor)} sr_idle@cs_end_3 %=destroy_object(story:sad_ran_cs_actor)%, sr_idle@cs_end_3
+
+[sr_idle@cs_end_3]
+on_timer = 250 | sr_idle@ataka %=stop_postprocess(9287) =enable_ui -sad_ran_cutscene_start +sad_ran_cutscene_end%
+
+; ------------------------------------------------------------------------------------------------------------------------------------- Ataka
+[sr_idle@ataka]
+on_info = sr_idle@ataka_1 %=set_squads_enemies(sad_volodya_the_big_squad:sad_ran_cowboy_squad) =set_squads_enemies(sad_volodya_the_big_squad:sad_ran_ucheny_squad)%
+
+[sr_idle@ataka_1]
+on_info = sr_idle@ataka_2 %=set_squads_enemies(sad_volodya_the_big_squad:sad_ran_squad_a) =set_squads_enemies(sad_volodya_the_big_squad:sad_ran_squad_b)%
+
+[sr_idle@ataka_2]
+on_info = {+sad_actor_enemy_to_someone} sr_idle@nil
+on_info2 = {+sad_ran_cowboy_gone} sr_idle@ataka_end %=heal_squad(sad_volodya_the_big_squad)%
+
+[sr_idle@ataka_end]
+
+; -------------------------------------------------------------------------------------------------------------------------------------
+[sr_idle@1000]
+on_info = sr_idle@1010 %=remove_squad(sad_b2_volodya_squad) =create_squad(sad_volodya_the_big_squad:sad_sim_16) +sad_volodya_dont_help_actor%
+
+[sr_idle@1010]
+on_timer = 10000 | {=actor_in_zone(sad_ran_sr_zone)} sr_idle@1020, sr_idle@nil
+
+[sr_idle@1020]
+on_info = {=squad_exist(sad_volodya_the_big_squad)} sr_idle@nil %=teleport_squad(sad_volodya_the_big_squad:sad_ran_volodya_spawn)%, sr_idle@nil
+
+; -------------------------------------------------------------------------------------------------------------------------------------
+[sr_idle@nil]

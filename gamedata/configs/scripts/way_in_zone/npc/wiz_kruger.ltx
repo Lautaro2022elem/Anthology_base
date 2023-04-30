@@ -1,0 +1,29 @@
+[logic@wiz_kruger]
+suitable = {=check_npc_name(wiz_kruger)} true
+prior = 200
+active = animpoint@wounded
+can_select_weapon = false
+
+[animpoint@wounded]
+cover_name = wiz_bivsh_nii_krab_cover
+avail_animations = zat_b106_wounded_idle
+meet = no_meet
+combat_ignore_cond = true
+combat_ignore_keep_when_attacked = true
+wounded = wounded
+danger = danger
+reach_distance = 50
+invulnerable = true
+gather_items_enabled = false
+help_wounded_enabled = false
+corpse_detection_enabled = false
+
+[danger]
+ignore_distance = 0
+
+[wounded]
+hp_state = 0|wounded_heavy@help_heavy
+hp_state_see = 0|wounded_heavy@help_heavy
+hp_victim = 0|nil
+hp_fight = 0|false
+hp_cover = 0|false

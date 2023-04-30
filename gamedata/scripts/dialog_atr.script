@@ -1,0 +1,89 @@
+art_upgr_table = {
+	["100"] = {["art"] = "af_electra_sparkler", ["price"] = 2500} ,
+	["101"] = {["art"] = "af_electra_flash", ["price"] = 3000} ,
+	["102"] = {["art"] = "af_electra_moonlight", ["price"] = 3500} ,
+	["103"] = {["art"] = "af_dummy_battery", ["price"] = 4000} ,
+	["104"] = {["art"] = "af_dummy_dummy", ["price"] = 3000} ,
+	["105"] = {["art"] = "af_ice", ["price"] = 3000} ,
+	["106"] = {["art"] = "af_gold_fish", ["price"] = 4500} ,
+	["107"] = {["art"] = "af_dummy_glassbeads", ["price"] = 3500} ,
+	["108"] = {["art"] = "af_glass", ["price"] = 5000} ,
+	["109"] = {["art"] = "af_soul", ["price"] = 3500} ,
+	["110"] = {["art"] = "af_fireball", ["price"] = 3000} ,
+	["111"] = {["art"] = "af_mincer_meat", ["price"] = 3000} ,
+	["112"] = {["art"] = "af_fuzz_kolobok", ["price"] = 4000} ,
+	["113"] = {["art"] = "af_gravi", ["price"] = 4000} ,
+	["114"] = {["art"] = "af_eye", ["price"] = 4200} ,
+	["115"] = {["art"] = "af_medusa", ["price"] = 3900} ,
+	["116"] = {["art"] = "af_baloon", ["price"] = 4000} ,
+	["117"] = {["art"] = "af_cristall_flower", ["price"] = 4800} ,
+	["118"] = {["art"] = "af_fire", ["price"] = 4200},
+	["119"] = {["art"] = "af_night_star", ["price"] = 5000},
+	["120"] = {["art"] = "af_cristall", ["price"] = 2500},
+	["121"] = {["art"] = "af_blood", ["price"] = 2500},
+	["122"] = {["art"] = "af_zakrut", ["price"] = 5000}
+}
+
+---------------------------------------------------------------------------------------------------------------------- Trader script text
+function script_text_trader(actor, npc, dialog_id, phrase_id)
+	if xr_conditions.actor_has_item(db.actor,nil,{"af_sad_grib"}) then
+		local phrase_str = game.translate_string("atr_radiation_trader_2")
+		local temp = ""
+		for kk, vv in pairs(art_upgr_table) do
+			if xr_conditions.actor_has_item(db.actor,nil,{vv.art}) then
+				temp = temp .. "\\n - " .. game.translate_string("st_"..vv.art.."_name") .. " - " .. tostring(vv.price) .. " " .. game.translate_string("st_rubles")
+			end
+		end
+		if temp == "" then
+			phrase_str = phrase_str .. game.translate_string("atr_radiation_trader_4")
+		else
+			phrase_str = phrase_str .. game.translate_string("atr_radiation_trader_3") .. temp
+		end
+		return phrase_str
+	else
+		return game.translate_string("atr_radiation_trader_1")
+	end
+end
+
+---------------------------------------------------------------------------------------------------------------------- Dialog precondition
+function atr_dialog_precond(first_speaker, second_speaker)
+	return not has_alife_info("sad_artefuck_upgrade_process") and has_alife_info("sad_artefuck_can_upgrade")
+end
+function precondition_busy(actor,npc,dialog_id, prev_phrase_id, phrase_id)
+	return has_alife_info("sad_artefuck_upgrade_process")
+end
+function precondition_not_busy(actor,npc,dialog_id, prev_phrase_id, phrase_id)
+	return not has_alife_info("sad_artefuck_upgrade_process")
+end
+
+---------------------------------------------------------------------------------------------------------------------- Actor phrase precondition
+function precondition_has_items(actor,npc,dialog_id, prev_phrase_id, phrase_id)
+	local tbl = art_upgr_table[phrase_id]
+	if tbl then
+--		return xr_conditions.actor_has_item(db.actor,nil,{tbl.art}) and db.actor:money() >= tbl.price
+                return xr_conditions.actor_has_item(db.actor,nil,{"af_sad_grib"}) and xr_conditions.actor_has_item(db.actor,nil,{tbl.art}) and db.actor:money() >= tbl.price  ------ Поправил -Shoker-
+	end
+	return false
+end
+
+---------------------------------------------------------------------------------------------------------------------- Actor phrase action
+function action_zakaz(first_speaker, second_speaker, dialog_id, phrase_id)
+	local tbl = art_upgr_table[phrase_id]
+	if tbl then
+		dialogs.relocate_item_section_from_actor(first_speaker, second_speaker, tbl.art)
+		dialogs.relocate_item_section_from_actor(first_speaker, second_speaker, "af_sad_grib")
+		dialogs.relocate_money_from_actor(first_speaker, second_speaker, tbl.price)
+		give_info("sad_artefuck_upgrade_process")
+		local current_artefuck_upgr = tbl.art.."_norad"
+		xr_logic.pstor_store(db.actor, "art_upgr", current_artefuck_upgr)
+	end
+end
+------------------------------------------------------------------------------------------------------------------------ Trader give artefuck
+function give_new_artefuck(first_speaker, second_speaker)
+	local current_artefuck_upgr = xr_logic.pstor_retrieve(db.actor, "art_upgr", "")
+	if current_artefuck_upgr ~= "" then
+		dialogs.relocate_item_section_to_actor(first_speaker, second_speaker, current_artefuck_upgr)
+	end
+	disable_info("sad_artefuck_upgrade_process")
+	disable_info("sad_artefuck_ready")
+end

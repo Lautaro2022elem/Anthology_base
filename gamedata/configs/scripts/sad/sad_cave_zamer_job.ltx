@@ -1,0 +1,222 @@
+[walker@def]
+gather_items_enabled = false
+help_wounded_enabled = false
+corpse_detection_enabled = false
+combat_ignore_cond = {=is_enemy_actor} true
+on_info9 = {=actor_enemy} remark@enemy %+sad_final_task_enemy%
+wounded = wounded
+meet = no_meet
+
+[walker@cutscene]
+gather_items_enabled = false
+help_wounded_enabled = false
+corpse_detection_enabled = false
+combat_ignore_cond = true
+wounded = wounded
+invulnerable = true
+meet = no_meet
+
+[death@1]
+on_info = %+sad_ucheny_1_dead%
+
+; -------------------------------------------------------------------------------------------------------------------------------  1
+[logic@zamer_1]
+suitable = {=check_npc_name(sad_ucheny_1) +sad_cave_start_zamer} true
+active = walker@100 ; walker@13
+on_death = death@1
+post_combat_time = 0, 0
+prior = 350
+
+[walker@100]:walker@def
+path_walk = cs_nauchny_11
+path_look = cs_nauchny_11_look1
+def_state_moving = raid
+on_info = {+sad_nauchny_go_to_zamer} walker@13, {+sad_cave_cs_prepare} walker@101 %=teleport_npc(sad_cave_cs_nauchny_10)%
+
+[walker@101]:walker@cutscene
+path_walk = cs_nauchny_10
+on_info = {+sad_cave_cutscene_start} walker@102 %=sad_reset_animation%
+
+[walker@102]:walker@cutscene
+path_walk = cs_nauchny_11
+path_look = cs_nauchny_11_look1
+on_info = {+sad_cave_ucheny_talking} walker@103 %=play_sound(sad_cave_ucheny)%
+
+[walker@103]:walker@cutscene
+path_walk = cs_nauchny_11
+path_look = cs_nauchny_11_look1
+def_state_standing = probe_stand
+on_info = {!is_playing_sound} walker@13 %+sad_nauchny_go_to_zamer%, {+sad_cave_stop_cutscene} walker@13 %+sad_nauchny_go_to_zamer%
+
+[walker@13]:walker@def
+path_walk = nauchny_21_walk
+path_look = nauchny_21_look
+on_info = {=distance_from_npc_to_point_le(sad_cave_nauchny_21_walk:0:16)} walker@14 %=play_sound(jup_b6_stalker_1_first_measurement_begin)%
+def_state_moving = run
+
+[walker@14]:walker@def
+path_walk = nauchny_21_walk
+path_look = nauchny_21_zamer_look
+on_game_timer = 360 | remark@zamer_end ;%=play_sound(jup_b6_stalker_1_measurements_done)%
+
+[remark@zamer_end]:walker@def
+anim = guard_na
+target = story | actor
+on_game_timer = 40 | patrol@com %+sad_cave_nauchny_go_out%
+
+[patrol@com]:walker@def
+path_walk = patrul_home
+commander = true
+silent = true
+formation = back
+def_state_moving = assault
+on_info = {=npc_in_zone(sad_nauchny_cave_logic)} %+sad_nauchny_exit_cave -sad_nauchny_switch_cave%
+
+; -------------------------------------------------------------------------------------------------------------------------------  2
+[logic@zamer_2]
+suitable = {=target_squad_name(sad_final_ucheny_squad) !check_npc_name(sad_ucheny_1) +sad_cave_start_zamer} true
+active = walker@200 ; walker@23
+post_combat_time = 0, 0
+prior = 200
+
+[walker@200]:walker@def
+path_walk = cs_nauchny_21
+path_look = cs_nauchny_21_look
+def_state_moving = raid
+on_info = {+sad_nauchny_go_to_zamer} walker@23, {+sad_cave_cs_prepare} walker@201 %=teleport_npc(sad_cave_cs_nauchny_20)%
+
+[walker@201]:walker@cutscene
+path_walk = cs_nauchny_20
+on_info = {+sad_cave_cutscene_start} walker@202 %=sad_reset_animation%
+
+[walker@202]:walker@cutscene
+path_walk = cs_nauchny_21
+path_look = cs_nauchny_21_look
+def_state_standing = guard
+on_info = {+sad_nauchny_go_to_zamer} walker@23
+
+[walker@23]:walker@def
+path_walk = nauchny_22_walk
+path_look = nauchny_21_look
+def_state_moving = raid
+on_info = {+sad_cave_nauchny_go_out} patrol@mem
+
+[patrol@mem]:walker@def
+path_walk = patrul_home
+commander = false
+silent = true
+formation = back
+def_state_moving = assault
+on_info = {=npc_in_zone(sad_nauchny_cave_logic)} %+sad_nauchny_exit_cave -sad_nauchny_switch_cave%
+
+; -------------------------------------------------------------------------------------------------------------------------------  3
+[logic@zamer_3]
+suitable = {=target_squad_name(sad_final_ucheny_squad) !check_npc_name(sad_ucheny_1) +sad_cave_start_zamer} true
+active = walker@300 ; walker@33
+post_combat_time = 0, 0
+prior = 340
+
+[walker@300]:walker@def
+path_walk = cs_nauchny_31
+path_look = cs_nauchny_31_look
+def_state_moving = raid
+on_info = {+sad_nauchny_go_to_zamer} walker@33, {+sad_cave_cs_prepare} walker@301 %=teleport_npc(sad_cave_cs_nauchny_30)%
+
+[walker@301]:walker@cutscene
+path_walk = cs_nauchny_30
+on_info = {+sad_cave_cutscene_start} walker@302 %=sad_reset_animation%
+
+[walker@302]:walker@cutscene
+path_walk = cs_nauchny_31
+path_look = cs_nauchny_31_look
+on_info = {+sad_nauchny_go_to_zamer} walker@33
+
+[walker@33]:walker@def
+path_walk = nauchny_23_walk
+path_look = nauchny_21_look
+def_state_moving = raid
+on_info = {+sad_cave_nauchny_go_out} patrol@mem
+
+; -------------------------------------------------------------------------------------------------------------------------------  4
+[logic@zamer_4]
+suitable = {=target_squad_name(sad_final_ucheny_squad) !check_npc_name(sad_ucheny_1) +sad_cave_start_zamer} true
+active = walker@400 ; walker@43
+post_combat_time = 0, 0
+prior = 330
+
+[walker@400]:walker@def
+path_walk = cs_nauchny_41
+path_look = cs_nauchny_41_look
+def_state_moving = patrol
+on_info = {+sad_nauchny_go_to_zamer} walker@43, {+sad_cave_cs_prepare} walker@401 %=teleport_npc(sad_cave_cs_nauchny_40)%
+
+[walker@401]:walker@cutscene
+path_walk = cs_nauchny_40
+on_info = {+sad_cave_cutscene_start} walker@402 %=sad_reset_animation%
+
+[walker@402]:walker@cutscene
+path_walk = cs_nauchny_41
+path_look = cs_nauchny_41_look
+on_info = {+sad_nauchny_go_to_zamer} walker@43
+
+[walker@43]:walker@def
+path_walk = nauchny_24_walk
+path_look = nauchny_21_look
+def_state_moving = raid
+on_info = {+sad_cave_nauchny_go_out} patrol@mem
+
+; -------------------------------------------------------------------------------------------------------------------------------  5
+[logic@zamer_5]
+suitable = {=target_squad_name(sad_final_ucheny_squad) !check_npc_name(sad_ucheny_1) +sad_cave_start_zamer} true
+active = walker@500 ; walker@53
+post_combat_time = 0, 0
+prior = 320
+
+[walker@500]:walker@def
+path_walk = cs_nauchny_51
+path_look = cs_nauchny_51_look
+def_state_moving = patrol
+on_info = {+sad_nauchny_go_to_zamer} walker@53, {+sad_cave_cs_prepare} walker@501 %=teleport_npc(sad_cave_cs_nauchny_50)%
+
+[walker@501]:walker@cutscene
+path_walk = cs_nauchny_50
+on_info = {+sad_cave_cutscene_start} walker@502 %=sad_reset_animation%
+
+[walker@502]:walker@cutscene
+path_walk = cs_nauchny_51
+path_look = cs_nauchny_51_look
+def_state_standing = hide
+on_info = {+sad_nauchny_go_to_zamer} walker@53
+
+[walker@53]:walker@def
+path_walk = nauchny_25_walk
+path_look = nauchny_21_look
+def_state_moving = raid
+on_info = {+sad_cave_nauchny_go_out} patrol@mem
+
+; -------------------------------------------------------------------------------------------------------------------------------
+[wounded]
+hp_state 		= 0|wounded_heavy@help_heavy
+hp_state_see 	= 0|wounded_heavy@help_heavy
+hp_victim 		= 0|nil
+hp_fight 		= 0|false
+hp_cover		= 0|false
+
+[remark@enemy]
+wounded = wounded
+
+[meet]
+close_snd_hello = nil
+close_snd_bye   = nil
+close_distance  = 0
+close_victim    = actor
+close_anim 		= nil
+far_anim 		= nil
+far_victim 		= nil
+far_distance 	= 0
+far_snd 		= nil
+abuse 			= false
+meet_on_talking = false
+use 			= {=actor_enemy} false, true
+allow_break 	= false
+trade_enable	= false

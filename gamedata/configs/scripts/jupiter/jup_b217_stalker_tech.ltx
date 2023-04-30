@@ -1,0 +1,144 @@
+[animpoint@presets]
+combat_ignore_cond = true
+combat_ignore_keep_when_attacked = true
+invulnerable = true
+out_restr = jup_a6_sr_noweap
+gather_items_enabled = false
+help_wounded_enabled = false
+corpse_detection_enabled = false
+use_camp = false
+
+;*************************************
+
+[logic@jup_b217_stalker_tech]
+suitable = {=check_npc_name(jup_b217_stalker_tech)} true, {=check_npc_mechanic} true
+active = animpoint@start
+prior = 200
+level_spot = mechanic
+trade = items\trade\trade_generic_mechanic.ltx
+dont_keep_items = true
+
+[animpoint@start]
+on_info = {+cop_start} animpoint, animpoint@sit
+
+[animpoint]:animpoint@presets
+cover_name = jup_a6_animpoint_tech_start
+avail_animations = wait_na
+reach_distance = 50
+meet = no_meet
+on_info = {+jup_b217_pp_end_in_scene} animpoint@first_visit_timer
+combat_ignore_cond = {=is_warfare} false, {=actor_true_enemy =check_enemy_name(actor)} false, true
+combat_ignore_keep_when_attacked = {=is_warfare} false, true
+meet = meet
+gather_items_enabled = false
+help_wounded_enabled = false
+corpse_detection_enabled = false
+invulnerable = {=is_warfare} false, {!actor_true_enemy} true, false
+
+[animpoint@first_visit_timer]:animpoint@presets
+cover_name = jup_a6_animpoint_tech_start
+avail_animations = wait_na
+reach_distance = 50
+meet = no_meet
+on_game_timer = 45 | animpoint@first_visit
+
+[animpoint@first_visit]:animpoint@presets
+cover_name = jup_a6_animpoint_tech_start
+avail_animations = jup_b217_nitro_stand
+reach_distance = 5
+reach_movement = walk_noweap
+on_signal = sound_end | {-jup_b217_welcome_tech_talked} %+jup_b217_welcome_tech_talked%
+on_info = {+jup_b217_tech_begin_to_talk -jup_b217_tech_welcome_end} %=play_sound(jup_b217_stalker_tech_welcome) +jup_b217_tech_welcome_end%
+on_info2 = {+jup_b217_welcome_tech_talked} animpoint@sit_tp
+on_info3 = {-jup_b217_stalker_tech_met} %+jup_b217_stalker_tech_met%
+meet = no_meet
+
+[animpoint@sit_tp]:animpoint@presets
+cover_name = jup_a6_animpoint_tech
+avail_animations = animpoint_sit_normal
+meet = no_meet
+on_game_timer = 15 | remark@straight_anim %=teleport_npc(jup_b217_tech_tp_from_cutscene) =stop_postprocess(1245) =jup_b217_hard_animation_reset%
+
+; break start animation
+[remark@straight_anim]
+anim = wait_na
+meet = no_meet
+on_game_timer = 3 | animpoint@sit
+combat_ignore_cond = true
+combat_ignore_keep_when_attacked = true
+invulnerable = true
+out_restr = jup_a6_sr_noweap
+gather_items_enabled = false
+help_wounded_enabled = false
+corpse_detection_enabled = false
+ 
+[animpoint@sit]:animpoint@presets
+cover_name = jup_a6_animpoint_tech
+reach_distance = 10
+avail_animations = animpoint_sit_normal
+on_info = {-jup_a6_stalker_tech_info -jup_b9_blackbox_decrypted +jup_b9_blackbox_decrypting !talking} %+jup_a6_stalker_tech_info%
+meet = meet@default
+on_info1 = {+awr_jup_b217_stalker_tech_access} animpoint@smoke
+on_info2 = {=obj_on_job(jup_a6:jup_a6_beh_tech_job_1) =job_on_point(jup_a6:jup_a6_beh_tech_job_1:2:3:false)} %=tech_job_give_id(jup_a6:jup_a6_beh_tech_job_1)%
+
+[meet@default]
+close_anim 		= nil
+close_victim 	= nil
+far_anim 		= nil
+far_victim 		= nil
+close_distance  = 0
+far_distance 	= 0
+close_snd_distance = 3
+use 			= {+jup_b9_blackbox_records_end -jup_b9_blackbox_decrypted} self, {!actor_enemy} true
+meet_dialog		= {-jup_b9_blackbox_decrypted +jup_a6_stalker_tech_info +jup_b9_blackbox_decrypting} jup_b217_stalker_tech_blackbox_start
+allow_break 	= false
+close_snd_hello = jup_b217_stalker_tech_greeting
+close_snd_bye 	= jup_b217_stalker_tech_farewell
+meet_on_talking = false
+
+;-- smoking outside
+[animpoint@smoke]
+cover_name = jup_a6_animpoint_tech
+on_game_timer = 2000 | animpoint@sit %=awr_timer_msg_off%
+combat_ignore_cond = {=actor_enemy =check_enemy_name(actor)} false, true
+combat_ignore_keep_when_attacked = true
+reach_distance = 10
+gather_items_enabled = false
+help_wounded_enabled = false
+corpse_detection_enabled = false
+invulnerable = {!actor_enemy} true, false
+meet = meet
+
+;------------------------------
+;--------- NPC tech ----------
+;------------------------------
+[logic@jup_a6_beh_tech_job_1]
+active = beh@jup_a6_beh_tech_job_1
+suitable = {=npc_has_tech_items(jup_a6) !surge_started} true
+prior = 65
+
+[beh@general]
+meet = meet@jup_a6_animpoint_tech_meet
+combat_ignore_cond = {=is_warfare} false, {=actor_true_enemy =check_enemy_name(actor)} false, true
+combat_ignore_keep_when_attacked = {=is_warfare} false, true
+invulnerable = {=is_warfare} false, {!actor_true_enemy} true, false
+gather_items_enabled = false
+help_wounded_enabled = false
+corpse_detection_enabled = false
+sound_idle = state
+behavior_state = beh_move
+target = waypoint
+walk_dist = 100
+jog_dist = 220
+wait_anim = guard
+walk_anim = patrol
+jog_anim = patrol
+run_anim = rush
+delay_anim = guard
+
+[beh@jup_a6_beh_tech_job_1]:beh@general
+pt1 = 10000,guard | pos:-44.65234375,3.4874875545502,178.02108764648 look:-44.233848184347,3.4874875545502,177.1481654644
+pt2 = 10000,choose | pos:-46.828716278076,3.4867613315582,178.4935760498 look:-47.673337638378,3.4867613315582,178.40254378318 sig:tech
+pt3 = 10000,search | pos:-46.828716278076,3.4867613315582,178.4935760498 look:-47.673337638378,3.4867613315582,178.40254378318
+on_signal = tech | %=tech_job_upgrade_items%
+path_end = loop

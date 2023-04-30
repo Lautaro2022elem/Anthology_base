@@ -1,0 +1,78 @@
+[walker@def]
+gather_items_enabled = false
+help_wounded_enabled = false
+corpse_detection_enabled = false
+wounded = wounded
+on_info9 = {=actor_enemy} remark@actor_enemy %+sad_maxim_actor_enemy +sad_b3_killers_awake%
+
+[remark@actor_enemy]
+wounded = wounded
+
+[combat]
+out_restr = sad_b3_sr_assault
+
+[logic@stalker_maximilian]
+active = remark@init
+suitable = { =check_npc_name(sad_b2_stalker_maxim) !check_npc_name(sad_b2_stalker_maxim_member)} true
+on_death = death
+on_hit = hit
+on_combat = combat
+post_combat_time = 1, 1
+prior = 300
+
+[remark@init]
+on_info = walker@ataka
+
+[walker@ataka]:walker@def
+path_walk = ataka_1_walk
+on_info = {=npc_in_zone(sad_b3_ataker_inside)} walker@ataka_inside %+sad_b3_killers_awake%
+combat_ignore_cond = true
+combat_ignore_keep_when_attacked = true
+def_state_moving = assault
+meet = no_meet
+
+[walker@ataka_inside]:walker@def
+path_walk = camper_maxim_walk
+def_state_moving = raid
+on_info = {+sad_b3_maxim_ataka_complete} animpoint@after_fight
+meet = no_meet
+out_restr = sad_b3_sr_assault
+
+[animpoint@after_fight]:walker@def
+cover_name = sad_b3_animp_maxim
+reach_movement = run
+out_restr = sad_b3_sr_assault
+on_info = {=animpoint_reached} animpoint@after_fight_meet %=send_tip(st_sad_maxim_im_ready:sad_b2_stalker_maxim)%
+meet = no_meet
+
+[animpoint@after_fight_meet]:walker@def
+cover_name = sad_b3_animp_maxim
+out_restr = sad_b3_sr_assault
+on_info = {+sad_b3_merc_a_squad_dead +sad_b3_merc_b_squad_dead =health_le(0.9)} %=restore_health%
+meet = meet
+
+; ------------------------------------
+[meet]
+close_snd_hello = nil
+close_distance  = 0
+close_victim    = actor
+close_anim 		= nil
+use 			= {=actor_enemy} false, true
+trade_enable	= false
+allow_break 	= false
+
+; ------------------------------------
+[wounded] ;Не должен быть раненым
+hp_state 		= 0|wounded_heavy@help_heavy
+hp_state_see 	= 0|wounded_heavy@help_heavy
+hp_victim 		= 0|nil
+hp_fight 		= 0|false
+hp_cover 		= 0|false
+
+[death]
+on_info = {=killed_by_actor} %+sad_maximilian_dead +sad_actor_kill_maximilian +sad_maxim_actor_enemy%, %+sad_maximilian_dead%
+
+[hit]
+on_info = {=actor_enemy} %+sad_maxim_actor_enemy%
+
+

@@ -1,0 +1,28 @@
+[logic]
+active = sr_idle
+
+[sr_idle]
+on_info = {=actor_on_level(escape_memmory)} sr_idle@game_start %=run_postprocess(black:2525:true) +esc_borland_start_dialog_go_info =spawn_object(esc_killer_raven:esc_raven_spawn) =spawn_object(esc_millitary_shooter:esc_army_shooter_spawn) =spawn_object(esc_stalker_to_atp:esc_smart_terrain_1_1_quest_walker_3_walk) =RavenMemmoryStart%
+
+[sr_idle@game_start]
+on_timer = 2500 | sr_idle@game_start_2 %=show_text_in_escape(three_monate_come_back) =set_game_time(12:45)%
+
+[sr_idle@game_start_2]
+on_timer = 5000 | sr_idle@game_start_3 %=stop_postprocess(2525) =spawn_object(esc_bar_storyman:esc_bar_storyman_spawn) =spawn_object(esc_bar_stalker_drunk:esc_bar_stalker_drunk_spawn) =create_squad(esc_stalker_goto_smart_1_1_3:esc_smart_terrain_1_1_3)%
+
+[sr_idle@game_start_3]
+on_timer = 4000 | sr_idle@game_start_4 %=enable_ui +esc_raven_dialog_quest_line_start =spawn_object(esc_bar_stalker_1:esc_smart_terrain_1_1_bar_92_spawn) =spawn_object(esc_bar_stalker_2:esc_smart_terrain_1_1_bar_92_spawn) =spawn_object(esc_bar_stalker_3:esc_smart_terrain_1_1_bar_92_spawn)%
+
+[sr_idle@game_start_4]
+on_timer = 1000 | sr_idle@game_start_5 %=give_task(esc_actor_memmory_start) =spawn_object(esc_stalker_village_night:esc_smart_terrain_1_1_night_spawn) =spawn_object(esc_stalker_village_guide:esc_stalker_village_guide_spawn) =spawn_object(esc_trader_security:esc_trader_security_walk)%
+
+[sr_idle@game_start_5]
+on_info = {+esc_dialog_quest_line_atp_meet -esc_st_save_escape_start_game_done} sr_idle@game_start_6 %+esc_st_save_escape_start_game_done =scenario_autosave(st_save_escape_start_game)%
+
+[sr_idle@game_start_6]
+on_info = {+esc_zver_go_to_wolf} sr_idle@game_start_7
+
+[sr_idle@game_start_7]
+on_timer = 14000 | sr_idle@nil %=esc_actor_replic_about_anomaly%
+
+[sr_idle@nil]

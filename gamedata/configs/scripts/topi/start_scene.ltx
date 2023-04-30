@@ -1,0 +1,13 @@
+[logic] 
+active = nil; sr_idle 
+
+[sr_idle] 
+on_info = {=actor_on_level(topi1)} sr_cutscene@topi 
+
+[sr_cutscene@topi] 
+point = topi_start_scene_actor_start_point
+look = topi_start_scene_actor_start_point_look 
+cam_effector = topi_start
+global_cameffect = true 
+enable_ui_on_end = true 
+on_signal = cameff_end | %=stop_sr_cutscene% 

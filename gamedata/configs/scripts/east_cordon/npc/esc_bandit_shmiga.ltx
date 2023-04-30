@@ -1,0 +1,91 @@
+[logic]
+active = walker
+on_death = death
+on_hit = hit@duel
+
+[walker]
+path_walk = esc_bandit_shmiga_walk_1
+on_info = {+esc_quest_dangerous_business_ataka} %=actor_enemy% walker@sprint
+
+[walker@sprint]
+path_walk = esc_bandit_shmiga_sprint
+def_state_moving = sprint
+gather_items_enabled = false
+corpse_detection_enabled = false
+combat_ignore_keep_when_attacked = true 
+combat_ignore_cond = true
+on_signal = esc_bandit_shmiga_quest | {-esc_quest_dangerous_business_merc_proval} walker@home %=actor_neutral +esc_quest_dangerous_business_merc_proval%
+
+[walker@home]
+path_walk = esc_bandit_shmiga_walk_home_1
+path_look = esc_bandit_shmiga_look_home_1
+meet = meet@home
+gather_items_enabled = false
+corpse_detection_enabled = false
+combat_ignore_keep_when_attacked = true 
+combat_ignore_cond = true
+use_camp = false
+on_info  = {+esc_remove_baza_bandits} %=release_npc%
+on_info2 = {+esc_dangerous_business_complite =dist_to_actor_ge(50)} %=release_npc%
+on_info3 = {+esc_quest_dangerous_business_teleport -esc_quest_dangerous_business_live_shmiga} walker@duel %=actor_enemy =relocate_npc_inventory_to_box(esc_inventory_box_base_bandits:esc_bandit_shmiga) =spawn_item_to_npc(wpn_knife) =teleport_npc(esc_quest_dangerous_business_shmiga_walk:esc_quest_dangerous_business_shmiga_look)%
+
+[walker@duel]
+path_walk = esc_quest_dangerous_business_shmiga_walk
+path_look = esc_quest_dangerous_business_shmiga_look
+wounded = wounded@no_wound
+gather_items_enabled = false
+corpse_detection_enabled = false
+on_info  = {=health_le(0.5)} remark@wound %=actor_neutral +esc_quest_dangerous_business_shmiga_wounded%
+;on_info2 = {+esc_quest_dangerous_business_shmiga_wounded} remark@wound %=actor_neutral%
+
+[remark@wound]
+wounded = wounded@duel
+meet = meet@wounded
+on_info  = {+esc_quest_dangerous_business_live_shmiga} walker@home %=actor_neutral +esc_dangerous_business_fall -esc_quest_dangerous_business_shmiga_wounded +esc_quest_criminal_business_box%
+on_info2 = {+esc_quest_dangerous_business_dead_shmiga =dist_to_actor_ge(3)} %=kill_npc%
+
+[wounded@no_wound]
+hp_state = 0 | wounded_heavy@help_heavy
+hp_state_see = 0 | wounded_heavy@help_heavy
+hp_victim = 0 | nil
+hp_cover = 0 | false
+hp_fight = 0 | false
+
+[wounded@duel]
+hp_state = 101|wounded_heavy@help_heavy
+hp_state_see = 101|wounded_heavy@help_heavy
+hp_victim = 101|nil 
+hp_cover = 101|false
+hp_fight = 101|false
+autoheal = false
+not_for_help = true
+enable_talk = true
+
+[meet@home]
+abuse           = false
+close_anim 		= nil
+far_anim 		= nil
+far_victim 		= nil
+close_distance  = 3
+far_distance 	= 6
+close_victim = actor
+use = {=actor_enemy} false, true
+allow_break = false
+trade_enable = false
+
+[meet@wounded]
+use = true
+meet_dialog = esc_quest_dangerous_business_shmiga_last_dialog
+abuse = false
+allow_break = false
+trade_enable = false
+close_anim = nil
+close_victim = nil
+close_distance = 0
+far_distance = 0
+
+[hit@duel]
+on_info = {+esc_quest_dangerous_business_teleport -esc_quest_dangerous_business_shmiga_wounded} %+esc_quest_dangerous_business_shmiga_wounded%
+
+[death]
+on_info = %+esc_bandit_shmiga_dead +esc_quest_dangerous_business_dead_shmiga +esc_quest_criminal_business_box%

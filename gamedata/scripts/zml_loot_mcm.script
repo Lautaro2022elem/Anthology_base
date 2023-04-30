@@ -1,0 +1,123 @@
+local defaults = {
+    ["send_message"] = false,
+    -- npc
+    ["npc_spawn"] = false,
+    ["npc_chance"] = 10,
+    -- stash
+    ["stash_spawn"] = true,
+    ["stash_chance"] = 10,
+    -- repair
+    ["repair_spawn"] = false,
+    ["repair_chance"] = 15,
+    -- ammo
+    ["ammo_spawn"] = false,
+    ["ammo_chance"] = 20,
+    ["ammo_bad_spawn"] = false,
+    ["ammo_bad_chance"] = 50,
+    ["ammo_amount"] = 1,
+    -- meds
+    ["meds_spawn"] = false,
+    ["meds_chance"] = 10,
+    -- drug
+    ["drug_spawn"] = false,
+    ["drug_chance"] = 10,
+    -- food
+    ["food_spawn"] = false,
+    ["food_chance"] = 10,
+    -- drink
+    ["drink_spawn"] = false,
+    ["drink_chance"] = 10,
+    -- container
+    ["container_spawn"] = false,
+    ["container_chance"] = 10,
+    -- faction
+    ["faction_spawn"] = false,
+    ["faction_chance"] = 10,
+    -- device
+    ["device_spawn"] = false,
+    ["device_chance"] = 10,
+    -- tool
+    ["tool_spawn"] = false,
+    ["tool_chance"] = 10,
+    --[[TODO
+    -- test potion
+    ["potion_spawn"] = false,
+    ["potion_chance"] = 10,
+    ["potion_amount"] = 1,
+    -- money
+    ["money_spawn"] = false,
+    ["money_chance"] = 10,
+    -- upgradekit
+    ["upgradekit_spawn"] = false,
+    ["upgradekit_chance"] = 10,
+    END TODO]]--
+}
+
+function get_config(key)
+    if ui_mcm then return ui_mcm.get("ZML/zml_loot/"..key) else return defaults[key] end
+end
+
+function on_mcm_load()
+    return { id="zml_loot", sh=true, gr={   
+        { id="header", type="slide", link="ui_options_slider_economy_diff", text="ui_mcm_menu_zml_loot", size= {512,50}, spacing=20 },
+        { id="loot_divider", type="line" },
+        { id="general_info", type="desc", text="ui_mcm_ZML_zml_loot_general_info", },
+        { id="send_message", type="check", val=1, def=true},
+        -- npc
+        { id="npc_spawn", type="check", val=1, def=true},
+        { id="npc_chance", type="track", val=2, min=1, max=100, step=1, def=10 },
+        -- stash
+        { id="stash_spawn", type="check", val=1, def=true},
+        { id="stash_chance", type="track", val=2, min=1, max=100, step=1, def=10 },
+        -- repair
+        { id="repair_divider", type="line" },
+        { id="repair_spawn", type="check", val=1, def=false},
+        { id="repair_chance", type="track", val=2, min=1, max=100, step=1, def=5 },
+        -- meds
+        { id="meds_divider", type="line" },
+        { id="meds_spawn", type="check", val=1, def=false},
+        { id="meds_chance", type="track", val=2, min=1, max=100, step=1, def=1 },
+        -- drug
+        { id="drug_divider", type="line" },
+        { id="drug_spawn", type="check", val=1, def=false},
+        { id="drug_chance", type="track", val=2, min=1, max=100, step=1, def=1 },
+        -- food
+        { id="food_divider", type="line" },
+        { id="food_spawn", type="check", val=1, def=false},
+        { id="food_chance", type="track", val=2, min=1, max=100, step=1, def=1 },
+        -- drink
+        { id="drink_divider", type="line" },
+        { id="drink_spawn", type="check", val=1, def=false},
+        { id="drink_chance", type="track", val=2, min=1, max=100, step=1, def=1 },
+        -- container
+        { id="container_divider", type="line" },
+        { id="container_spawn", type="check", val=1, def=false},
+        { id="container_chance", type="track", val=2, min=1, max=100, step=1, def=1 },
+        -- device
+        { id="device_divider", type="line" },
+        { id="device_spawn", type="check", val=1, def=false},
+        { id="device_chance", type="track", val=2, min=1, max=100, step=1, def=1 },
+        -- tool
+        { id="tool_divider", type="line" },
+        { id="tool_spawn", type="check", val=1, def=false},
+        { id="tool_chance", type="track", val=2, min=1, max=100, step=1, def=1 },
+        -- ammo
+        { id="ammo_divider", type="line" },
+        { id="ammo_spawn", type="check", val=1, def=false},
+        { id="ammo_chance", type="track", val=2, min=1, max=100, step=1, def=20 },
+        { id="ammo_amount", type="track", val=2, min=0.1, max=3, step=0.1, def=1 },
+        { id="ammo_bad_spawn", type="check", val=1, def=true},
+        { id="ammo_bad_chance", type="track", val=2, min=1, max=100, step=1, def=50 },
+        -- test potion
+        --[[
+        { id="potion_divider", type="line" },
+        { id="potion_spawn", type="check", val=1, def=false},
+        { id="potion_chance", type="track", val=2, min=1, max=100, step=1, def=5 },
+        { id="potion_amount", type="track", val=2, min=1, max=10, step=1, def=1 },
+        ]]--
+        -- test faction
+        { id="faction_divider", type="line" },
+        { id="faction_spawn", type="check", val=1, def=false},
+        { id="faction_chance", type="track", val=2, min=1, max=100, step=1, def=5 },
+    }}, "ZML"
+end

@@ -1,0 +1,11 @@
+[logic]
+active = nil ;sr_level_changer
+
+[sr_level_changer]
+type				= {+esc_codelock_lab_unlock} open, close
+level_changer_sid	= esc_to_gar_lchanger_2
+spot 				= level_changer_up|to_gar
+travel_time         = 0|30
+save_text			= to_gar
+message_impossible  = {+esc_codelock_lab_unlock} ui_st_sr_level_changer_open, ui_st_sr_level_changer_closed 
+way_impossible		= esc_to_gar_impossible_2

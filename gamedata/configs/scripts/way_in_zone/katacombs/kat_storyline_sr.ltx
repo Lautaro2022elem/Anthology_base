@@ -1,0 +1,10 @@
+[logic]
+active = sr_idle@give_new_task
+
+[sr_idle@give_new_task]
+on_info = {+katambs_door_opened_2} sr_idle@update_task %=give_task(children_of_the_dungeons) +st_recrd_first_2 =new_writes_in_diary +katacombs_complete =hero_thoughts_18%
+
+[sr_idle@update_task]
+on_info = {=actor_in_zone(kat_corpse_control_sr)} sr_idle@nil %+children_of_the_dungeons_update%
+
+[sr_idle@nil]

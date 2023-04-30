@@ -1,0 +1,10 @@
+[logic]
+active = sr_idle
+
+[sr_idle]
+on_info = {+spectrum_project_start +labx14_search_exit_complete +city_hit_army_bay_gg -city_hit_army_bay_gg_stop} sr_idle@kill %=city_sms_genarmy_1_1 +city_assault_fail%
+
+[sr_idle@kill]
+on_game_timer = 15 | sr_idle@nil %=hit_actor =kill_actor%
+
+[sr_idle@nil]

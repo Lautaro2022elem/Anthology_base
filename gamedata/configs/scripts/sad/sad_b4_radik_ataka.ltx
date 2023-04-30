@@ -1,0 +1,155 @@
+[walker@def]
+gather_items_enabled = false
+help_wounded_enabled = false
+corpse_detection_enabled = false
+wounded = wounded
+combat_ignore_cond = {=is_enemy_actor} true
+on_info9 = {=actor_enemy} remark@fight_end %+sad_radik_actor_enemy%
+meet = no_meet
+
+[wounded]
+hp_state = 		0|wounded_heavy@help_heavy
+hp_state_see = 	0|wounded_heavy@help_heavy
+hp_victim = 	0|nil
+hp_fight = 		0|false
+hp_cover = 		0|false
+
+[remark@fight_end]
+gather_items_enabled = false
+help_wounded_enabled = false
+corpse_detection_enabled = false
+wounded = wounded
+meet = no_meet
+
+[remark@kill]
+
+; -------------------------------------------------------------------------------------------------------------------------------------------- Radik
+[logic@radik]
+active = remark@radik_1
+suitable = {=target_squad_name(sad_stalker_radik_squad) =is_squad_commander -sad_radik_task_inside_done} true
+prior = 200
+on_death = death
+on_hit = hit
+post_combat_time = 0, 0
+
+[remark@radik_1]
+on_info = {+sad_b4_radik_ready_to_ataka} walker@radik_near_base, patrol@commander
+
+[patrol@commander]:walker@def
+path_walk = radik_go_from_sim_13
+commander = true
+def_state_moving = assault
+on_info = {+sad_b4_radik_ready_to_ataka} walker@radik_near_base, {=npc_in_zone(sad_b4_recognize_zone)} walker@radik_near_base %+sad_b4_radik_ready_to_ataka%
+
+[walker@radik_near_base]:walker@def
+path_walk = jail_guard_walk
+def_state_moving = assault
+on_info = {+sad_radik_task_inside_done} remark@fight_end
+
+; -------------------------------------------------------------------------------------------------------------------------------------------- 1
+[logic@radik_member_1]
+active = remark@1
+suitable = {=target_squad_name(sad_stalker_radik_squad) !is_squad_commander -sad_radik_task_inside_done} true
+prior = 180
+on_death = death@member
+on_hit = hit
+post_combat_time = 0, 0
+
+[remark@1]
+on_info = {+sad_b4_radik_ready_to_ataka} walker@1_1, patrol@x1
+
+[patrol@x1]:walker@def
+path_walk = radik_go_from_sim_13
+commander = false
+def_state_moving = assault
+on_info = {+sad_b4_radik_ready_to_ataka} walker@1_1, {=npc_in_zone(sad_b4_recognize_zone)} walker@1_1 %+sad_b4_radik_ready_to_ataka%
+
+[walker@1_1]:walker@def
+path_walk = podval_guard_walk
+path_look = podval_guard_look
+def_state_moving = assault
+on_info = {+sad_radik_task_inside_done} remark@fight_end
+
+; -------------------------------------------------------------------------------------------------------------------------------------------- 2
+[logic@radik_member_2]
+active = remark@2
+suitable = {=target_squad_name(sad_stalker_radik_squad) !is_squad_commander -sad_radik_task_inside_done} true
+prior = 170
+on_death = death@member
+on_hit = hit
+post_combat_time = 0, 0
+
+[remark@2]
+on_info = {+sad_b4_radik_ready_to_ataka} walker@2_1, patrol@x2
+
+[patrol@x2]:walker@def
+path_walk = radik_go_from_sim_13
+commander = false
+def_state_moving = assault
+on_info = {+sad_b4_radik_ready_to_ataka} walker@2_1, {=npc_in_zone(sad_b4_recognize_zone)} walker@2_1 %+sad_b4_radik_ready_to_ataka%
+
+[walker@2_1]:walker@def
+path_walk = podval_spawn
+def_state_moving = assault
+on_info = {+sad_radik_task_inside_done} remark@fight_end
+
+; -------------------------------------------------------------------------------------------------------------------------------------------- 3
+[logic@radik_member_3]
+active = remark@3
+suitable = { =target_squad_name(sad_stalker_radik_squad) !is_squad_commander -sad_radik_task_inside_done } true
+prior = 160
+on_death = death@member
+on_hit = hit
+post_combat_time = 0, 0
+
+[remark@3]
+on_info = {+sad_b4_radik_ready_to_ataka} walker@3_1, patrol@x3
+
+[patrol@x3]:walker@def
+path_walk = radik_go_from_sim_13
+commander = false
+def_state_moving = assault
+on_info = {+sad_b4_radik_ready_to_ataka} walker@3_1, {=npc_in_zone(sad_b4_recognize_zone)} walker@3_1 %+sad_b4_radik_ready_to_ataka%
+
+[walker@3_1]:walker@def
+path_walk = house_gvard_1_walk
+def_state_moving = assault
+on_info = {+sad_radik_task_inside_done} remark@fight_end
+
+; -------------------------------------------------------------------------------------------------------------------------------------------- 4
+[logic@radik_member_4]
+active = remark@4
+suitable = { =target_squad_name(sad_stalker_radik_squad) !is_squad_commander -sad_radik_task_inside_done } true
+prior = 150
+on_death = death@member
+on_hit = hit
+post_combat_time = 0, 0
+
+[remark@4]
+on_info = {+sad_b4_radik_ready_to_ataka} walker@4_1, patrol@x4
+
+[patrol@x4]:walker@def
+path_walk = radik_go_from_sim_13
+commander = false
+def_state_moving = assault
+on_info = {+sad_b4_radik_ready_to_ataka} walker@4_1, {=npc_in_zone(sad_b4_recognize_zone)} walker@4_1 %+sad_b4_radik_ready_to_ataka%
+
+[walker@4_1]:walker@def
+path_walk = house_gvard_2_walk
+def_state_moving = assault
+on_info = {+sad_radik_task_inside_done} remark@fight_end
+
+; --------------------------------------------------------------------------------------------------------------------------------------------
+
+[death]
+on_info = {=killed_by_actor} %+sad_radik_dead +sad_radik_actor_enemy%, %+sad_radik_dead%
+
+[death@member]
+on_info = {=killed_by_actor} %+sad_radik_actor_enemy%
+
+[hit]
+on_info = {=actor_enemy} %+sad_radik_actor_enemy%
+
+
+
+

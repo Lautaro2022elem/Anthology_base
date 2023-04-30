@@ -1,0 +1,19 @@
+[logic]
+active = sr_idle
+
+[sr_idle]
+on_info = {+spectrum_project_start +actor_hit_face_shmatco_info} sr_idle@1
+
+[sr_idle@1]
+on_timer = 500 | sr_idle@2
+
+[sr_idle@2]
+on_timer = 3000 | sr_idle@3 %+esc_barrer_npc_remove_pat_1  =teleport_actor(esc_barrer_actor_walk:esc_barrer_actor_look)%
+
+[sr_idle@3]
+on_timer = 1000 | sr_idle@4 %=func_spawn_esc_borland%
+
+[sr_idle@4]
+on_info = {+esc_colonel_kolyazin_prisoner_actor_dialog_complite} sr_idle@5 %=enable_ui%
+
+[sr_idle@5]

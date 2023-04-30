@@ -1,0 +1,48 @@
+[logic@esc_squad_baza_bandits_lom]
+active = walker@home
+suitable = {=check_npc_name(esc_lom)} true, false
+prior = 300
+
+[walker@home]
+path_walk = stalker_base_walk
+path_look = stalker_base_look
+gather_items_enabled = false
+corpse_detection_enabled = false
+combat_ignore_keep_when_attacked = false
+combat_ignore_cond = false
+invulnerable = false
+meet = meet
+use_camp = false
+on_info = {=dist_to_actor_le(60) -esc_final_sidor_quest_dialog_done -esc_base_stalker_closed} %=esc_way_to_base_closed +esc_base_stalker_closed%
+on_info2 = {=dist_to_actor_le(35) -esc_final_sidor_quest_dialog_done -esc_base_stalker_closed_1} %=esc_way_to_base_closed_1 +esc_base_stalker_closed_1%
+on_info3 = {=dist_to_actor_le(25) -esc_final_sidor_quest_dialog_done} %=set_squad_enemy_to_actor(esc_squad_baza_bandits)%
+on_info4 = {=dist_to_actor_ge(65) -esc_final_sidor_quest_dialog_done +esc_base_stalker_closed} %-esc_base_stalker_closed -esc_base_stalker_closed_1%
+on_info5 = {=dist_to_actor_le(55) +esc_final_sidor_quest_dialog_done -esc_base_stalker_open} %=esc_way_to_base_open +esc_base_stalker_open%
+on_info6 = {=dist_to_actor_le(6) +esc_final_sidor_quest_dialog_done -esc_stalkerbase_guard_redirect_stop} %+esc_stalkerbase_guard_redirect_stop =play_sound(esc_stalkerbase_guard_redirect)%
+on_info7 = {=surge_started()} walker@lom_surge
+
+[walker@lom_surge]
+path_walk = stalker_lom_surge_walk
+path_look = stalker_lom_surge_look
+on_info = {=surge_complete()} walker@home
+on_info2 = {=dist_to_actor_le(45) -esc_final_sidor_quest_dialog_done -esc_base_stalker_closed} %=esc_way_to_base_closed +esc_base_stalker_closed%
+on_info3 = {=dist_to_actor_le(20) -esc_final_sidor_quest_dialog_done} %=set_squad_enemy_to_actor(esc_squad_baza_bandits)%
+on_info4 = {=dist_to_actor_ge(55) -esc_final_sidor_quest_dialog_done +esc_base_stalker_closed} %-esc_base_stalker_closed%
+on_info5 = {=dist_to_actor_le(45) +esc_final_sidor_quest_dialog_done -esc_base_stalker_open} %=esc_way_to_base_open +esc_base_stalker_open%
+gather_items_enabled = false
+corpse_detection_enabled = false
+combat_ignore_keep_when_attacked = true 
+combat_ignore_cond = true
+invulnerable = false
+meet = meet
+use_camp = false
+
+[meet]
+close_anim 	= nil
+close_victim 	= nil
+far_anim 	= nil
+far_victim 	= nil
+close_distance  = 0
+far_distance 	= 0
+use = {=actor_enemy} false, true
+allow_break 	= false

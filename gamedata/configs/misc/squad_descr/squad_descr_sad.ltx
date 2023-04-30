@@ -1,0 +1,852 @@
+; Здесь содержатся дескрипшены сквадов, которые потом можно создавать используя спец функции.
+
+
+;----------------------------- start ----------------------------------------
+[sad_start_first_squad]:online_offline_group
+faction = stalker
+npc = sim_default_stalker_2, sim_default_stalker_2
+target_smart = sad_start
+spawn_point = sad_start_man_2_walk
+story_id = sad_start_first_squad
+
+[sad_final_ucheny_squad]:online_offline_group
+faction = stalker
+npc = sad_ucheny_3, sad_ucheny_2, sad_ucheny_1
+target_smart = {+sad_nauchny_switch_cave} sad_cave, {+sad_nauchny_switch_ran} sad_ran, sad_b2
+spawn_point = {+sad_nauchny_switch_ran} sad_ran_podval_spawn, sad_b2_podval_spawn
+always_arrived = true
+on_death = %+sad_final_ucheny_squad_dead%
+story_id = sad_final_ucheny_squad
+
+[sad_stalker_guide_squad]:online_offline_group
+faction = stalker
+npc = sad_stalker_guide
+target_smart = {+sad_turist_enemy} nil, sad_start
+spawn_point = sad_start_cs_provodnik_start
+story_id = sad_stalker_guide_squad
+
+[sad_turist_squad]:online_offline_group
+faction = stalker
+npc = sad_turist_master, sad_turist_master, sad_turist_master, sad_turist_master
+target_smart = {+sad_turist_enemy} nil, sad_start
+spawn_point = sad_start_turist_squad_spawn
+on_death = %+sad_turist_squad_dead%
+story_id = sad_turist_squad
+
+; atr - artefuck trader
+[sad_atr_squad]:online_offline_group
+faction = ecolog
+npc = sad_atr_trader, sad_atr_guard
+target_smart = sad_atr
+spawn_point = sad_atr_squad_spawn
+story_id = sad_atr_squad
+
+
+;----------------------------- SAD_B1 ----------------------------------------
+
+[sad_b1_stalker_mutny_squad]:online_offline_group
+faction = stalker
+npc = sad_b1_stalker_mutny, sad_b1_stalker_barman, sad_b1_stalker_tech, sad_b1_mutny_member_1, sad_b1_mutny_member_2
+target_smart = {+sad_mutny_b1_accuped} sad_sim_1, sad_b1
+spawn_point = {+sad_mutny_b1_accuped} sad_b1_spawn_point, sad_b1_bunker_spoint
+story_id = sad_b1_stalker_mutny_squad
+always_arrived = true
+
+[sad_b1_stalker_mutny_renegade_squad]:online_offline_group
+faction = renegade
+npc = sad_b1_stalker_mutny_renegade, sad_b1_stalker_barman_renegade, sad_b1_stalker_tech_renegade, sad_b1_mutny_member_1_renegade, sad_b1_mutny_member_2_renegade
+target_smart = sad_b1
+spawn_point = {+sad_mutny_b1_accuped} sad_b1_spawn_point, sad_b1_bunker_spoint
+story_id = sad_b1_stalker_mutny_renegade_squad
+always_arrived = true
+
+[sad_b1_mutny_squad_two]:online_offline_group
+faction = renegade
+npc = sad_b1_mutny_member_3, sad_b1_mutny_member_4, sad_b1_mutny_member_5, sad_b1_mutny_member_3, sad_b1_mutny_member_4, sad_b1_mutny_member_5
+target_smart = sad_sim_1
+spawn_point = sad_b1_spawn_point
+story_id = sad_b1_mutny_squad_two
+always_arrived = true
+
+[sad_b1_new_bunker_squad]:online_offline_group
+faction = stalker
+npc = sad_b1_new_trader, sad_b1_new_tech
+target_smart = sad_b1
+spawn_point = sad_b1_bunker_spoint
+story_id = sad_b1_new_bunker_squad
+
+[sad_b1_stalker_squad_novice]:online_offline_group
+faction = stalker
+npc_random = sim_default_stalker_0, sim_default_stalker_0, sim_default_stalker_1
+npc_in_squad = 4, 4
+target_smart = sad_b1
+
+[sad_b1_stalker_squad_veteran]:online_offline_group
+faction = stalker
+npc_random = sim_default_stalker_2, sim_default_stalker_3
+npc_in_squad = 4, 4
+target_smart = sad_b1
+
+[sad_b1_mudak_squad]:online_offline_group
+faction = stalker
+npc = sad_b1_stalker_mudak, sim_default_stalker_1
+target_smart = {+sad_b1_mudak_switch_sim_3} sad_sim_3, sad_b1
+story_id = sad_b1_mudak_squad
+sympathy = 0
+
+[sad_stalker_grisha_squad]:online_offline_group
+faction = stalker
+npc = sad_stalker_grisha, sad_grisha_member_1, sad_grisha_member_2, sad_grisha_member_3 , sad_grisha_member_4
+target_smart = {+sad_grisha_switch_b1} sad_b1, {+sad_grisha_switch_sim_1} sad_sim_1, sad_sim_3
+always_arrived = true
+on_death = %+sad_grisha_squad_dead%
+story_id = sad_stalker_grisha_squad
+
+[sad_stalker_b1_squad_1]:online_offline_group
+faction = stalker
+npc = sim_default_stalker_1, sim_default_stalker_1, sim_default_stalker_0, sim_default_stalker_0, sim_default_stalker_0
+target_smart = sad_b1
+on_death = %+sad_stalker_b1_squad_1_dead%
+story_id = sad_stalker_b1_squad_1
+
+[sad_stalker_b1_squad_2]:online_offline_group
+faction = stalker
+npc = sim_default_stalker_1, sim_default_stalker_1, sim_default_stalker_0, sim_default_stalker_0, sim_default_stalker_0
+target_smart = sad_b1
+on_death = %+sad_stalker_b1_squad_2_dead%
+story_id = sad_stalker_b1_squad_2
+
+;----------------------------- SAD_BAN ----------------------------------------
+
+[sad_ban_bandit_leader_squad]:online_offline_group
+faction = bandit
+relationship = friend
+npc = sad_ban_bandit_leader, sad_ban_bandit_gvard, sim_default_bandit_2, sim_default_bandit_3
+target_smart = sad_ban
+spawn_point = sad_ban_leader_spawn
+story_id = sad_ban_bandit_leader_squad
+
+[sad_ban_bandit_squad_1]:online_offline_group
+faction = bandit
+relationship = friend
+npc = sim_default_bandit_3, sim_default_bandit_2, sim_default_bandit_1, sim_default_bandit_2, sim_default_bandit_2
+target_smart = sad_ban
+spawn_point = sad_ban_spawn_point
+;story_id = sad_ban_bandit_squad_1
+
+[sad_ban_bandit_squad_2]:online_offline_group
+faction = bandit
+relationship = friend
+npc = sim_default_bandit_3, sim_default_bandit_1, sim_default_bandit_1, sim_default_bandit_1, sim_default_bandit_1
+target_smart = sad_ban
+spawn_point = sad_ban_outsitter_walk
+;story_id = sad_ban_bandit_squad_2
+
+[sad_ban_squad_advanced]:online_offline_group
+faction = bandit
+relationship = friend
+npc = sim_default_bandit_3, sim_default_bandit_1, sim_default_bandit_1, sim_default_bandit_1
+target_smart = sad_ban
+
+;----------------------------- SAD_B2 ----------------------------------------
+
+[sad_b2_stalker_barman_squad]:online_offline_group
+faction = stalker
+npc = sad_b2_stalker_barman
+target_smart = sad_b2
+story_id = sad_b2_stalker_barman_squad
+
+[sad_b2_stalker_tech_squad]:online_offline_group
+faction = stalker
+npc = sad_b2_stalker_tech
+target_smart = sad_b2
+story_id = sad_b2_stalker_tech_squad
+
+[sad_b2_bunker_squad]:online_offline_group
+faction = stalker
+npc = sad_b2_bunker_guard
+target_smart = sad_b2
+story_id = sad_b2_bunker_squad
+
+[sad_b2_volodya_squad]:online_offline_group
+faction = stalker
+npc = sad_stalker_volodya
+target_smart = sad_b2
+story_id = sad_b2_volodya_squad
+
+[sad_b2_stalker_artur_squad]:online_offline_group
+faction = stalker
+npc = sad_b2_stalker_artur
+target_smart = sad_b2
+story_id = sad_b2_stalker_artur_squad
+
+[sad_b2_stalker_maxim_squad]:online_offline_group
+faction = stalker
+npc = sad_b2_stalker_maxim
+target_smart = {+sad_maxim_switch_b3a} sad_b3a, {+sad_maxim_switch_b3} sad_b3, sad_b2
+spawn_point = {+sad_maxim_switch_b3a} sad_b3a_maxim_walk, {+sad_maxim_switch_b3} sad_b3_ataka_1_walk, sad_b2_podval_spawn
+story_id = sad_b2_stalker_maxim_squad
+always_arrived = true
+
+[sad_b3a_stalker_ataka_squad]:online_offline_group
+faction = stalker
+npc = sad_b2_stalker_maxim_member_1 , sad_b2_stalker_maxim_member_2, sad_b2_stalker_maxim_member_3, sad_b2_stalker_maxim_member_4, sad_b2_stalker_maxim_member_5
+target_smart = {+sad_maxim_switch_b3} sad_b3, sad_b3a
+;spawn_point = {+sad_maxim_switch_b3} sad_b3_ataka_1_walk, sad_b3a_spawn_point
+story_id = sad_b3a_stalker_ataka_squad
+on_death = %+sad_b3a_stalker_ataka_squad_dead%
+always_arrived = true
+
+[sad_b2_stalker_squad_regular]:online_offline_group
+faction = stalker
+npc = sim_default_stalker_2, sim_default_stalker_2 , sim_default_stalker_2, sim_default_stalker_2
+target_smart = {+sad_mutny_gone} nil, sad_b2
+
+[sad_b2_stalker_squad_veteran]:online_offline_group
+faction = stalker
+npc = sim_default_stalker_4, sim_default_stalker_3 , sim_default_stalker_3
+target_smart = sad_b2
+
+; ---------------------------- RANCHO ---------------------------------------
+
+[sad_ran_cowboy_squad]:online_offline_group
+faction = freedom
+npc = sad_ran_cowboy, sim_default_freedom_2, sim_default_freedom_3, sim_default_freedom_3
+target_smart = {+sad_cowboy_switch_sim_16} sad_sim_16, sad_ran
+spawn_point = {+sad_cowboy_switch_sim_16} sad_sim_16_dogs_home_1, sad_ran_cowboy_squad_spawn
+story_id = sad_ran_cowboy_squad
+always_arrived = true
+sympathy = 0
+
+[sad_ran_squad_a]:online_offline_group
+faction = freedom
+npc = sim_default_freedom_0, sim_default_freedom_1, sim_default_freedom_2
+target_smart = sad_ran
+spawn_point = sad_ran_squad_a_spawn_point
+story_id = sad_ran_squad_a
+sympathy = 0
+
+[sad_ran_squad_b]:online_offline_group
+faction = freedom
+npc = sim_default_freedom_2, sim_default_freedom_2, sim_default_freedom_1, sim_default_freedom_2
+target_smart = sad_ran
+spawn_point = sad_ran_squad_b_spawn_point
+story_id = sad_ran_squad_b
+sympathy = 0
+
+[sad_ran_ucheny_squad]:online_offline_group
+faction = freedom
+npc = sad_ran_ucheny
+target_smart = {+sad_tesla_switch_sim_16} sad_sim_16, sad_ran
+spawn_point = {+sad_tesla_switch_sim_16} sad_sim_16_tesla_teleport_point, sad_ran_podval_spawn
+story_id = sad_ran_ucheny_squad
+always_arrived = true
+sympathy = 0
+
+[sad_volodya_the_big_squad]:online_offline_group
+faction = stalker
+npc = sad_stalker_volodya, sim_default_stalker_3 , sim_default_stalker_3, sim_default_stalker_3
+target_smart = sad_ran
+spawn_point = {+sad_ran_cowboy_gone} sad_volodya_spawn_near_b2, sad_ran_volodya_spawn
+story_id = sad_volodya_the_big_squad
+always_arrived = true
+
+[sad_ran_stalker_podval_squad]:online_offline_group
+faction = stalker
+npc = sad_ran_trader
+target_smart = sad_ran
+spawn_point = sad_ran_podval_spawn
+story_id = sad_ran_stalker_podval_squad
+
+[sad_sim_14_oleg_squad]:online_offline_group
+faction = freedom
+relationship = enemy
+npc = sad_sim_14_oleg, sim_default_freedom_2, sim_default_freedom_2, sim_default_freedom_1, sim_default_freedom_1
+target_smart = sad_sim_14
+spawn_point = sad_sim_14_spawn
+on_death = %+sad_sim_14_oleg_squad_dead%
+story_id = sad_sim_14_oleg_squad
+
+[sad_ran_stalker_squad_regular]:online_offline_group
+faction = stalker
+npc = sim_default_stalker_3, sim_default_stalker_2 , sim_default_stalker_2, sim_default_stalker_2
+target_smart = sad_ran
+
+;----------------------------- SAD_B3 ----------------------------------------
+
+[sad_b3_killer_a_squad]:online_offline_group
+faction = killer
+npc = sim_default_killer_0, sim_default_killer_0, sim_default_killer_0, sim_default_killer_0
+target_smart = sad_b3
+spawn_point = sad_b3_spawn_roof
+story_id = sad_b3_killer_a_squad
+
+[sad_b3_killer_b_squad]:online_offline_group
+faction = killer
+npc = sim_default_killer_1, sim_default_killer_0, sim_default_killer_1, sim_default_killer_0
+target_smart = sad_b3
+spawn_point = sad_b3_spawn_killer_squad_b
+story_id = sad_b3_killer_b_squad
+
+[sad_b3_killer_c_squad]:online_offline_group
+faction = killer
+npc = sim_default_killer_0, sim_default_killer_1, sim_default_killer_0, sim_default_killer_1
+target_smart = sad_b3
+spawn_point = sad_b3_spawn_killer_squad_c
+story_id = sad_b3_killer_c_squad
+
+[sad_b3_killer_d_squad]:online_offline_group
+faction = killer
+npc = sim_default_killer_1, sim_default_killer_1, sim_default_killer_2 ;, sim_default_killer_2
+target_smart = sad_b3
+spawn_point = sad_b3_spawn_killer_squad_d
+story_id = sad_b3_killer_d_squad
+
+[sad_b3a_killer_squad]:online_offline_group
+faction = killer
+npc = sim_default_killer_3, sim_default_killer_2, sim_default_killer_1, sim_default_killer_1
+target_smart = sad_b3a
+;spawn_point = sad_b3a_spawn_point
+
+[sad_b3_stalker_squad_regular]:online_offline_group
+faction = stalker
+npc = sim_default_stalker_4, sim_default_stalker_3 , sim_default_stalker_2
+target_smart = {-sad_actor_enemy_to_someone} sad_b3, nil
+
+[sad_b3_bunker_squad]:online_offline_group
+faction = stalker
+npc = sad_b3_trader
+target_smart = sad_b3
+spawn_point = sad_b3_trader_spawn
+story_id = sad_b3_bunker_squad
+
+[sad_b3_technic_squad]:online_offline_group
+faction = stalker
+npc = sad_b3_technic
+target_smart = sad_b3
+story_id = sad_b3_technic_squad
+
+[sad_b3_ucheny_squad]:online_offline_group
+faction = stalker
+npc = sad_b3_ucheny_raz, sad_b3_ucheny_dva
+target_smart = {+sad_b3_andrey_dead} nil, {+sad_ucheny_switch_18} sad_sim_18, sad_b3
+always_arrived = true
+on_death = %+sad_b3_ucheny_squad_dead%
+story_id = sad_b3_ucheny_squad
+
+[sad_b3_merc_a_squad]:online_offline_group
+faction = killer
+npc = sim_default_killer_2, sim_default_killer_1, sim_default_killer_1
+target_smart = sad_b3
+spawn_point = sad_b3_ucheny_start_look
+on_death = %+sad_b3_merc_a_squad_dead%
+story_id = sad_b3_merc_a_squad
+
+[sad_b3_merc_b_squad]:online_offline_group
+faction = killer
+npc = sim_default_killer_2, sim_default_killer_2, sim_default_killer_1, sim_default_killer_0, sim_default_killer_0, sim_default_killer_0
+target_smart = sad_b3
+spawn_point = sad_b3_ucheny_3_start
+on_death = %+sad_b3_merc_b_squad_dead%
+story_id = sad_b3_merc_b_squad
+
+[simulation_bandit_b3a]:online_offline_group
+faction = bandit
+npc_random = sim_default_bandit_0, sim_default_bandit_1, sim_default_bandit_2, sim_default_bandit_3
+npc_in_squad = 3, 4
+target_smart = sad_b3a ;{~30} sad_b3a:sad_b3:nil, {+sad_ran_cowboy_gone} sad_b3a:sad_ran:nil, sad_b3a:sad_b2:nil
+
+;----------------------------- SAD SHER ----------------------------------------
+
+[sad_stalker_radik_squad]:online_offline_group
+faction = stalker
+npc = sad_stalker_radik, sad_radik_member_2, sad_radik_member_3, sad_radik_member_1
+target_smart = {+sad_radik_switch_ran} sad_ran, {+sad_radik_switch_b3} sad_b3, {+sad_radik_switch_sim_13} sad_sim_13, {+sad_radik_switch_b4} sad_b4, sad_sher
+;spawn_point = {+sad_radik_switch_b3} nil, {+sad_radik_switch_sim_13} nil, {+sad_radik_switch_b4} nil, sad_sher_spawn_point
+on_death = %+sad_stalker_radik_squad_dead%
+story_id = sad_stalker_radik_squad
+always_arrived = true
+
+[sad_sher_killer_pdast_squad]:online_offline_group
+faction = killer
+npc = sad_sher_killer_pdast, sim_default_killer_1, sim_default_killer_1, sim_default_killer_1
+target_smart = sad_sher
+spawn_point = sad_sher_spawn_killers
+story_id = sad_sher_killer_pdast_squad
+always_arrived = true
+
+[sad_sher_killer_masters_squad]:online_offline_group
+faction = killer
+npc = sim_default_killer_3, sim_default_killer_3, sim_default_killer_3, sim_default_killer_3, sim_default_killer_3
+target_smart = sad_sher
+spawn_point = sad_sher_spawn_killers
+story_id = sad_sher_killer_masters_squad
+always_arrived = true
+
+[sad_b2_outfit_gonets_squad]:online_offline_group
+faction = stalker
+npc = sad_sher_outfit_gonets
+target_smart = {-sad_b2_gonets_switch_b3} sad_b2, sad_b3
+spawn_point = {-sad_b2_gonets_switch_b3} sad_b2_podval_spawn, nil
+story_id = sad_b2_outfit_gonets_squad
+
+[sad_sher_killer_sim_squad]:online_offline_group
+faction = killer
+npc = sim_default_killer_3, sim_default_killer_2, sim_default_killer_1, sim_default_killer_1
+target_smart = sad_sher:sad_sim_20:sad_sim_12:sad_sim_20:sad_sher:loop
+
+;----------------------------- SAD_B4 ----------------------------------------
+
+[sad_b4_killer_one_squad]:online_offline_group
+faction = killer
+npc = sim_default_killer_1, sim_default_killer_1 ;, sim_default_killer_2
+target_smart = sad_b4
+;spawn_point = sad_b4_spawn_point
+story_id = sad_b4_killer_one_squad
+
+[sad_b4_killer_two_squad]:online_offline_group
+faction = killer
+npc = sad_b4_killer_glavar, sad_b4_killer_podgvard, sim_default_killer_2, sim_default_killer_2, sim_default_killer_3
+target_smart = sad_b4
+spawn_point = sad_b4_podval_spawn
+story_id = sad_b4_killer_two_squad
+
+[sad_b4_killer_house_squad]:online_offline_group
+faction = killer
+npc = sim_default_killer_1, sim_default_killer_1, sim_default_killer_2
+target_smart = sad_b4
+;spawn_point = sad_b4_spawn_point
+story_id = sad_b4_killer_house_squad
+
+[sad_b4_killer_def_squad]:online_offline_group
+faction = killer
+npc = sim_default_killer_0, sim_default_killer_1, sim_default_killer_2, sim_default_killer_3
+target_smart = sad_b4
+spawn_point = sad_b4_spawn_from_cave_point
+story_id = sad_b4_killer_def_squad
+
+[sad_b4_fedor_squad]:online_offline_group
+faction = stalker
+npc = sad_b4_stalker_fedor
+target_smart = sad_b4
+spawn_point = sad_b4_fedor_place
+story_id = sad_b4_fedor_squad
+
+; ---------------------------- sim 2 ----------------------------------------
+[sad_sim_2_stalker_vasya_squad]:online_offline_group
+faction = stalker
+npc = sad_sim_2_stalker_vasya
+target_smart = sad_sim_2
+spawn_point = sad_sim_2_bandos_1_look
+story_id = sad_sim_2_stalker_vasya_squad
+
+[sad_sim_2_banditosy]:online_offline_group
+relationship = friend
+faction = bandit
+npc = sad_sim_2_bandos, sim_default_bandit_2, sim_default_bandit_1, sim_default_bandit_1, sim_default_bandit_0
+target_smart = sad_sim_2
+spawn_point = sad_sim_2_spawn_point
+story_id = sad_sim_2_banditosy
+on_death = %+sad_sim_2_banditosy_dead%
+
+; ---------------------------- sim 3 ----------------------------------------
+[simulation_bandit_sim_3]:online_offline_group
+faction = bandit
+npc_random = sim_default_bandit_0, sim_default_bandit_1, sim_default_bandit_2, sim_default_bandit_3
+npc_in_squad = 4, 4
+target_smart = sad_sim_3
+
+;----------------------------- sim 7 ----------------------------------------
+
+[sad_sim_7_gena_squad]:online_offline_group
+faction = stalker
+npc = sad_sim_7_stalker_gena, sim_default_stalker_0, sim_default_stalker_0
+target_smart = {+sad_gena_switch_ban} sad_ban, sad_sim_7
+spawn_point = sad_sim_7_gena_walk
+story_id = sad_sim_7_gena_squad
+always_arrived = true
+
+[sad_sim_7_gena_after_squad]:online_offline_group
+faction = stalker
+npc = sad_sim_7_stalker_gena
+target_smart = {+sad_gena_switch_ban} sad_ban, sad_sim_7
+spawn_point = sad_sim_7_gena_zakop_start_walk
+story_id = sad_sim_7_gena_after_squad
+always_arrived = true
+
+;----------------------------- sim 9 ----------------------------------------
+[sad_sim_9_noy_squad]:online_offline_group
+faction = stalker
+npc = sad_sim_9_noy
+target_smart = sad_sim_9
+spawn_point = sad_sim_9_vyshka_spawn
+story_id = sad_sim_9_noy_squad
+
+;----------------------------- sim 11 ----------------------------------------
+[sad_sim_11_stalkers_squad]:online_offline_group
+faction = stalker
+npc = sim_default_stalker_2, sim_default_stalker_2, sim_default_stalker_2, sim_default_stalker_2
+target_smart = sad_sher
+
+[sad_sim_11_merc_squad]:online_offline_group
+faction = killer
+npc = sim_default_killer_1, sim_default_killer_1, sim_default_killer_2, sim_default_killer_2
+target_smart = sad_sim_11
+
+
+;-------------------------------------------------------------------------------------------------------------------------------------------- MONSTERS ----------------------------------------
+
+[sad_start_zombie]:online_offline_group
+faction = monster
+npc_random = zombie_normal
+npc_in_squad = 9, 9
+spawn_point = sad_start_zombi_home_1
+target_smart = sad_start
+story_id = sad_start_zombie
+
+; --------------------------------------------------------------------------------- sim 1
+[sad_sim_1_bloodsuckers]:online_offline_group
+faction = monster
+npc = bloodsucker_normal ;, bloodsucker_weak
+target_smart = sad_sim_1
+spawn_point = sad_sim_1_krovosos_dva
+story_id = sad_sim_1_bloodsuckers
+
+; ------------------------------------------------------------------------------- sim 4
+[sad_sim_4_dogs]:online_offline_group
+faction = monster
+npc_random =  dog_normal, dog_weak, pseudodog_normal
+npc_in_squad = 4, 6
+target_smart = sad_sim_4
+spawn_point = sad_sim_4_mobs_home_1
+
+; ------------------------------------------------------------------------------- near ban (sim 5)
+[sad_sim_5_dogs]:online_offline_group
+faction = monster
+npc_random =  dog_strong, dog_normal, pseudodog_normal
+npc_in_squad = 6, 6
+target_smart = sad_sim_5
+spawn_point = sad_sim_5_dog_home_1
+
+[sad_sim_5_boars]:online_offline_group
+faction = monster
+npc_random =  boar_strong, boar_normal, flesh_strong, flesh_normal
+npc_in_squad = 6, 6
+target_smart = sad_sim_5
+spawn_point = sad_sim_5_dog_home_2
+
+[sad_sim_5_zombi]:online_offline_group
+faction = monster
+npc_random = zombie_normal
+npc_in_squad = 9, 9
+spawn_point = sad_sim_5_zom_walk_1
+target_smart = sad_sim_5
+
+; -------------------------------------------------------------------------------- task: Вадик + Ромка
+[sad_sim_6_snorki]:online_offline_group
+faction = monster
+npc = snork_normal, snork_normal, snork_weak, snork_weak, snork_weak
+target_smart = sad_sim_6
+on_death = %+sad_sim_6_snorki_dead%
+story_id = sad_sim_6_snorki
+
+[sad_sim_6_sim_snorki]:online_offline_group
+faction = monster
+npc = snork_normal, snork_weak, snork_normal
+target_smart = sad_sim_6
+
+; ------------------------------------------------------------------------------ mi-6 squad (sim 8)
+[sad_sim_8_zombo]:online_offline_group
+faction = zombied
+npc = sim_default_zombied_3, sim_default_zombied_3, sim_default_zombied_3
+target_smart = sad_sim_8
+spawn_point = sad_sim_8_zombo_2_walk
+on_death = %+sad_sim_8_zombo_dead%
+story_id = sad_sim_8_zombo
+
+[sad_sim_8_dogs]:online_offline_group
+faction = monster
+npc_random =  dog_strong, dog_normal, pseudodog_normal
+npc_in_squad = 4, 6
+target_smart = sad_sim_8
+spawn_point = sad_sim_8_dogs_home_1
+
+; ------------------------------------------------------------------------------- Noah
+[sad_sim_9_snorki]:online_offline_group
+faction = monster
+npc = snork_bomz
+target_smart = sad_sim_9
+spawn_point = sad_sim_9_mob_spawn_1
+story_id = sad_sim_9_snorki
+always_arrived = true
+
+; ------------------------------------------------------------------------------- после Б-3 (sim 10)
+[sad_sim_10_dogs]:online_offline_group
+faction = monster
+npc = dog_strong, dog_strong, dog_strong, dog_normal, dog_normal, dog_normal, dog_normal, pseudodog_normal, psy_dog
+target_smart = sad_sim_10
+spawn_point = sad_sim_10_dog_home_1
+
+[sad_sim_10_boars]:online_offline_group
+faction = monster
+npc_random =  boar_strong, boar_normal, flesh_strong, flesh_normal
+npc_in_squad = 7, 7
+target_smart = sad_sim_10
+spawn_point = sad_sim_10_dog_home_1
+
+; --------------------------------------------------------------------------------- sim 11
+[sad_sim_11_zombie]:online_offline_group
+faction = monster
+npc_random = zombie_normal
+npc_in_squad = 8, 8
+target_smart = {-sad_b4_actor_recognized} sad_sim_11, nil
+
+[sad_sim_11_boars]:online_offline_group
+faction = monster
+npc_random =  boar_strong, boar_normal, flesh_strong, flesh_normal
+npc_in_squad = 6, 6
+target_smart = sad_sim_11
+spawn_point = sad_sim_11_mob_home
+
+[sad_sim_11_bloodsuckers]:online_offline_group
+faction = monster
+npc = zasada_sucker, zasada_sucker, zasada_sucker ;, zasada_sucker
+target_smart = sad_sim_11
+story_id = sad_sim_11_bloodsuckers
+
+; -------------------------------------------------------------------------------- после Радика (sim 12)
+[sad_sim_12_snorki]:online_offline_group
+faction = monster
+npc = snork_radik_one, snork_radik_one, snork_radik_one, snork_radik_one, snork_radik_one
+target_smart = sad_sim_12
+spawn_point = sad_sim_12_snork_3_walk
+story_id = sad_sim_12_snorki
+
+[sad_sim_12_ucheny_snorki]:online_offline_group
+faction = monster
+npc = snork_weak_sad_ucheny, snork_weak_sad_ucheny, snork_weak_sad_ucheny, snork_weak_sad_ucheny
+target_smart = {+sad_b3_ucheny_mission_on} sad_sim_12, nil
+spawn_point = sad_sim_12_snork_uch_1_start
+story_id = sad_sim_12_ucheny_snorki
+
+[sad_sim_12_dogs]:online_offline_group
+faction = monster
+;npc_random =  snork_strong, snork_normal
+;npc_in_squad = 4, 4
+npc = borya_normal, borya_normal, borya_normal, borya_normal
+target_smart = sad_sim_12
+spawn_point = sad_sim_12_dogs_home_1
+
+; -------------------------------------------------------------------------------- (sim 13)
+[sad_sim_13_gigant]:online_offline_group
+faction = monster
+npc = gigant_normal
+target_smart = sad_sim_13
+spawn_point = sad_sim_13_teleport_point
+
+[sad_sim_13_snorki]:online_offline_group
+faction = monster
+npc = snork_radik_two, snork_radik_two, snork_radik_two
+target_smart = sad_sim_13
+spawn_point = sad_sim_13_snokr_2_jump1
+story_id = sad_sim_13_snorki
+
+; -------------------------------------------------------------------------------- (sim 15)
+[sad_sim_15_zombo]:online_offline_group
+faction = zombied
+npc = sim_default_zombied_2, sim_default_zombied_2, sim_default_zombied_2, sim_default_zombied_2, sim_default_zombied_2, sim_default_zombied_2
+target_smart = sad_sim_15
+spawn_point = sad_sim_15_zombi_walk
+;on_death = %+sad_sim_15_zombo_dead%
+
+; -------------------------------------------------------------------------------- сканер оазис (sim 16)
+[sad_sim_16_dogs]:online_offline_group
+faction = monster
+npc = dog_weak, dog_strong, dog_normal, dog_normal, dog_normal, dog_normal, pseudodog_normal, pseudodog_normal
+target_smart = sad_sim_16
+spawn_point = sad_sim_16_dogs_home_1
+
+[sad_sim_16_krovosos]:online_offline_group
+faction = monster
+npc = bloodsucker_strong
+target_smart = sad_sim_16
+spawn_point = sad_sim_16_bloodsucker_1_look
+
+[sad_sim_16_bloodsuckers]:online_offline_group
+faction = monster
+npc = bloodsucker_strong, bloodsucker_normal, bloodsucker_weak
+target_smart = sad_sim_16
+spawn_point = sad_sim_16_bloodsucker_1_look
+story_id = sad_sim_16_bloodsuckers
+
+; ------------------------------------------------------------------------------ на пути Радика (sim 17)
+[sad_sim_17_himera]:online_offline_group
+faction = monster
+npc = chimera_normal
+target_smart = sad_sim_17
+spawn_point = sad_sim_17_gigant_home
+
+[sad_sim_17_tushkans]:online_offline_group
+faction = monster
+npc = tushkano_normal, tushkano_normal, tushkano_normal, tushkano_normal, tushkano_normal, tushkano_normal, tushkano_normal, tushkano_normal
+target_smart = sad_sim_17
+spawn_point = sad_sim_17_tusha_spawn_1
+story_id = sad_sim_17_tushkans
+
+[sad_radik_tushkans]:online_offline_group
+faction = monster
+npc = tushkano_radik, tushkano_radik, tushkano_radik, tushkano_radik, tushkano_radik, tushkano_radik ;, tushkano_radik, tushkano_radik
+target_smart = sad_sim_17
+spawn_point = sad_sim_17_radik_tushkan_spawn_1
+
+; ------------------------------------------------------------------------------- military corpse (sim 18)
+[sad_sim_18_tushkans]:online_offline_group
+faction = monster
+npc = tushkano_normal, tushkano_normal, tushkano_normal, tushkano_normal, tushkano_normal, tushkano_normal
+target_smart = sad_sim_18
+;spawn_point = sad_sim_18_tusim_dom_1
+story_id = sad_sim_18_tushkans
+
+[sad_sim_18_tush_sim]:online_offline_group
+faction = monster
+;npc = tushkano_normal, tushkano_normal, tushkano_normal, tushkano_normal, tushkano_normal, tushkano_normal
+npc_random =  dog_strong, dog_normal, pseudodog_normal
+npc_in_squad = 5, 6
+target_smart = sad_sim_18
+spawn_point = sad_sim_18_tusim_dom_1
+
+; --------------------------------------------------------------------------------- sim 19
+[sad_sim_19_snorki]:online_offline_group
+faction = monster
+npc_random = snork_normal, snork_normal, snork_strong
+npc_in_squad = 5, 5
+target_smart = sad_sim_19
+spawn_point = sad_sim_19_snork_squad_spawn
+;story_id = sad_sim_19_snorki
+
+[sad_sim_19_bloodsucker]:online_offline_group
+faction = monster
+npc = bloodsucker_strong
+target_smart = sad_sim_19
+spawn_point = sad_sim_19_mob_xaos_1
+
+; --------------------------------------------------------------------------------- sim 20
+[sad_sim_20_zombo]:online_offline_group
+faction = zombied
+npc_random = sim_default_zombied_2, sim_default_zombied_3, sim_default_zombied_4
+npc_in_squad = 5, 6
+target_smart = sad_sim_20
+
+[sad_sim_20_dogs]:online_offline_group
+faction = monster
+npc_random = dog_strong, dog_normal, dog_normal, dog_normal, pseudodog_normal
+npc_in_squad = 8, 8
+target_smart = sad_sim_20
+spawn_point = sad_sim_20_mobs_home_1
+
+; --------------------------------------------------------------------------------- sim 21
+[sad_sim_21_dogs]:online_offline_group
+faction = monster
+npc =  dog_strong, dog_strong, dog_strong, dog_strong, dog_strong, dog_strong, dog_strong, dog_strong, pseudodog_normal, psy_dog
+target_smart = sad_sim_21
+spawn_point = sad_sim_21_mobs_home_1
+
+; --------------------------------------------------------------------------------- sim 22
+[sad_sim_22_dogs]:online_offline_group
+faction = monster
+npc_random =  dog_strong, dog_normal
+npc_in_squad = 8, 8
+target_smart = sad_sim_22
+spawn_point = sad_sim_22_mob_home
+
+; --------------------------------------------------------------------------------- sim 23
+[sad_sim_23_snork]:online_offline_group
+faction = monster
+npc = snork_strong
+target_smart = sad_sim_23
+spawn_point = sad_sim_23_snokr_hide
+story_id = sad_sim_23_snork
+
+[maxim_snorki]:online_offline_group
+faction = monster
+npc = snork_maxim, snork_maxim
+target_smart = sad_sim_23
+on_death = %+sad_maxim_snorki_dead%
+story_id = maxim_snorki
+
+; --------------------------------------------------------------------------------- sher
+[sad_sher_himera]:online_offline_group
+faction = monster
+npc = chimera_normal
+target_smart = sad_sher
+spawn_point = sad_sher_spawn_point
+
+; ------------------------------------------------------------------------------ Oasis cave
+[sad_oasis_zombo_squad]:online_offline_group
+faction = zombied
+npc = sim_default_zombied_2, sim_default_zombied_2, sim_default_zombied_2
+target_smart = sad_oasis
+spawn_point = sad_oasis_controller_point_2
+story_id = sad_oasis_zombo_squad
+
+[sad_oasis_tushkans]:online_offline_group
+faction = monster
+npc = tushkano_normal, tushkano_normal, tushkano_normal, tushkano_normal, tushkano_normal, tushkano_normal
+target_smart = sad_oasis
+spawn_point = sad_oasis_tushkan_spawn_1
+story_id = sad_oasis_tushkans
+
+[sad_oasis_tushkans2]:online_offline_group
+faction = monster
+npc = tushkano_normal, tushkano_normal, tushkano_normal, tushkano_normal, tushkano_normal, tushkano_normal
+target_smart = sad_oasis
+spawn_point = sad_oasis_tushkan_spawn_2
+story_id = sad_oasis_tushkans2
+
+[sad_oasis_controller_squad]:online_offline_group
+faction = monster
+npc = sad_oasis_controller
+target_smart = sad_oasis
+spawn_point = sad_oasis_controller_point_1
+story_id = sad_oasis_controller_squad
+
+; ------------------------------------------------------------------------------ psy cave
+[sad_psi_cave_zombo]:online_offline_group
+faction = zombied
+npc = sim_default_zombied_2, sim_default_zombied_2, sim_default_zombied_2, sim_default_zombied_2, sim_default_zombied_2, sim_default_zombied_2
+target_smart = sad_psi_cave
+spawn_point = sad_psi_cave_zombied_spawn
+;on_death = %+sad_sim_8_zombo_dead%
+story_id = sad_psi_cave_zombo
+
+; ------------------------------------------------------------------------------ nauchny cave
+[sad_cave_tushkans]:online_offline_group
+faction = monster
+npc = tushkano_big, tushkano_big, tushkano_big ;, tushkano_big, tushkano_big, tushkano_big, tushkano_big
+target_smart = sad_cave
+spawn_point = {=sad_cave_actor_side_check} sad_cave_mob_spawn_2, sad_cave_mob_spawn_5
+story_id = sad_cave_tushkans
+
+[sad_cave_normal_tushkans]:online_offline_group
+faction = monster
+npc = tushkano_normal, tushkano_normal, tushkano_normal, tushkano_normal, tushkano_normal, tushkano_normal, tushkano_normal
+target_smart = sad_cave
+spawn_point = sad_cave_mobs_home_1
+story_id = sad_cave_normal_tushkans
+
+[sad_cave_snorks]:online_offline_group
+faction = monster
+npc = snork_cave, snork_cave, snork_cave, snork_cave, snork_cave
+target_smart = sad_cave
+;on_death = %+sad_cave_snorks_dead%
+;spawn_point = sad_cave_last_mob_home
+story_id = sad_cave_snorks
+
+[sad_cave_zombied]:online_offline_group
+faction = zombied
+npc = sim_default_zombied_3, sim_default_zombied_3, sim_default_zombied_3, sim_default_zombied_3, sim_default_zombied_3, sim_default_zombied_3, sim_default_zombied_3
+target_smart = sad_cave
+spawn_point = sad_cave_last_mob_home
+story_id = sad_cave_zombied
+always_arrived = true
+on_death = %+sad_cave_start_zamer%

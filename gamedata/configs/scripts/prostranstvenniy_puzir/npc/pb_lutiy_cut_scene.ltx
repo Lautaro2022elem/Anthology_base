@@ -1,0 +1,120 @@
+#include "pb_lutiy_cut_scene_*.ltx"
+#include "pb_lutiy_heli_*.ltx"
+
+;#include "scripts\prostranstvenniy_puzir\npc\pb_lutiy_cut_scene_general.ltx"
+;#include "scripts\prostranstvenniy_puzir\npc\pb_lutiy_heli_crash.ltx"
+
+[logic]
+active = walker@lutiy_meet_to_actor
+suitable = {=check_npc_name(pb_lutiy)} true, false
+level_spot = quest_npc
+prior = 250
+
+[walker@lutiy_meet_to_actor]
+path_walk = pro_lutiy_meet_to_actor_start_walk
+path_look = pro_lutiy_meet_to_actor_start_look
+on_info = {+perevalochnaya_lutiy_to_actor_meet_start} remark@lutiy_meet_to_actor_start
+combat_ignore_cond = true
+combat_ignore_keep_when_attacked = true
+invulnerable = true
+gather_items_enabled = false
+help_wounded_enabled = false
+corpse_detection_enabled = false
+meet = no_meet
+
+[remark@lutiy_meet_to_actor_start]
+anim = guard_na
+target = story | actor
+on_info = {+perevalochnaya_lutiy_meet_to_zombied_done} remark@lutiy_meet_to_moskit_start
+combat_ignore_cond = true
+combat_ignore_keep_when_attacked = true
+invulnerable = true
+gather_items_enabled = false
+help_wounded_enabled = false
+corpse_detection_enabled = false
+meet = meet@start_quest
+
+[remark@lutiy_meet_to_moskit_start]
+anim = guard_na
+target = path | pro_lutiy_meet_to_moskit_look, 0
+on_info = {-infa_lutiy_meet_to_zombied_stop_sound +perevalochnaya_lutiy_meet_to_zombied_done} %+infa_lutiy_meet_to_zombied_stop_sound =play_sound(pb_lutiy_meet_to_moskit)%
+on_timer = 19000 | walker@lutiy_stay_of_base
+combat_ignore_cond = true
+combat_ignore_keep_when_attacked = true
+invulnerable = true
+gather_items_enabled = false
+help_wounded_enabled = false
+corpse_detection_enabled = false
+meet = no_meet
+
+[walker@lutiy_stay_of_base]
+path_walk = pro_lutiy_stay_of_base_walk
+path_look = pro_lutiy_stay_of_base_look
+on_info = {+perevalochnaya_baza_zver_see_to_document} remark@lutiy_meet_to_kill_zombie
+combat_ignore_cond = true
+combat_ignore_keep_when_attacked = true
+invulnerable = true
+gather_items_enabled = false
+help_wounded_enabled = false
+corpse_detection_enabled = false
+meet = no_meet
+
+[remark@lutiy_meet_to_kill_zombie]
+anim = guard_na
+target = path | pro_lutiy_stay_of_base_look, 0
+on_info = {+controller_spawn_end} remark@psy_back
+combat_ignore_cond = true
+combat_ignore_keep_when_attacked = true
+invulnerable = true
+gather_items_enabled = false
+help_wounded_enabled = false
+corpse_detection_enabled = false
+meet = meet@to_kill_zombie
+
+[remark@psy_back]
+anim = psy_pain
+target = path | pro_lutiy_stay_of_base_look, 0
+on_info = {-infa_lutiy_psy_atack_stop_sound +controller_spawn_end} %+infa_lutiy_psy_atack_stop_sound =play_sound(pb_lutiy_psy_atack)%
+on_info2 = {+controller_quest_dead} remark@lutiy_meet_to_kill_controller
+meet = no_meet
+combat_ignore_cond = true 
+combat_ignore_keep_when_attacked = true 
+gather_items_enabled = false
+corpse_detection_enabled = false
+invulnerable = true
+
+[remark@lutiy_meet_to_kill_controller]
+anim = guard_na
+target = path | pro_lutiy_stay_of_base_look, 0
+on_info = {+pb_zver_go_to_sleep_give} remark@lutiy_stay_after_go_sleep
+combat_ignore_cond = true
+combat_ignore_keep_when_attacked = true
+invulnerable = true
+gather_items_enabled = false
+help_wounded_enabled = false
+corpse_detection_enabled = false
+meet = meet@to_kill_controller
+
+[remark@lutiy_stay_over]
+anim = guard_na
+target = path | pro_lutiy_stay_of_base_look, 0
+on_info = {+zver_found_padalshik} animpoint@lutiy_sit_normal
+combat_ignore_cond = true
+combat_ignore_keep_when_attacked = true
+invulnerable = true
+gather_items_enabled = false
+help_wounded_enabled = false
+corpse_detection_enabled = false
+meet = meet@stay_over
+
+[remark@lutiy_stay_over_meet_to_markus]
+anim = guard_na
+target = path | pro_lutiy_in_podval_look, 0
+on_info = {+pb_lutiy_found_signal} remark@lutiy_stay_see_pda
+combat_ignore_cond = true
+combat_ignore_keep_when_attacked = true
+invulnerable = true
+gather_items_enabled = false
+help_wounded_enabled = false
+corpse_detection_enabled = false
+meet = meet@to_markus

@@ -1,0 +1,11 @@
+[logic]
+active = sr_idle
+
+[sr_idle]
+on_actor_inside = {-city_TEST +spectrum_project_start} sr_idle@1 %+labx14_search_exit_complete =spawn_object(city_npc_army_kep:city_npc_army_kep_spawn) =spawn_object(city_npc_army_start_1:city_npc_army_start_1_spawn) =spawn_object(city_npc_army_start_2:city_npc_army_start_2_spawn)%
+on_info = {+city_TEST} sr_idle@nil
+
+[sr_idle@1]
+on_info = sr_idle@nil %=set_game_time(19:00) =spawn_object(city_npc_army_base_2:city_npc_army_base_2_walk) =spawn_object(city_npc_army_base_1:city_npc_army_base_1_walk) =spawn_object(city_npc_army_kep_base:city_npc_army_kep_base_walk) =spawn_object(city_npc_kolyazin:city_npc_kolyazin_spawn)%
+
+[sr_idle@nil] 

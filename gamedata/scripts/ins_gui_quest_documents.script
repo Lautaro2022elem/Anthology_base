@@ -1,0 +1,48 @@
+-------------------- GUI элементы Cмерти вопреки в квестовых документах----------------------
+------------------------- Copyright 2012-2013 Geonezis ---------------------------
+
+-----------------------------------------------
+class "ui_notepad_type_one_1" (CUIScriptWnd)
+
+function ui_notepad_type_one_1:__init(owner) super()
+	self.owner = owner
+	self:InitControls()
+	self:InitCallBacks()
+end
+
+function ui_notepad_type_one_1:__finalize()
+end
+
+function ui_notepad_type_one_1:InitControls()
+	self:SetWndRect			(Frect():set(0,0,1024,768))
+	local xml, ctrl			= CScriptXmlInit(), CUIWindow()
+	xml:ParseFile			("ui_gui_elements.xml")
+	self.form_notepad_type_one				= xml:InitStatic("form_notepad_type_one",self)
+	xml:InitStatic			("form_notepad_type_one:caption",self.form_notepad_type_one)  
+    self:register_element(xml,"text_field") 	
+	self.text_field:TextControl():SetText(game.translate_string("st_notepad_type_one_sc_text"))
+    self.button_close = xml:Init3tButton ("form_notepad_type_one:btn_close", self.form_notepad_type_one) 
+    self:Register (self.button_close, "button_close")	
+end
+
+function ui_notepad_type_one_1:Update()
+   CUIScriptWnd.Update(self)
+   if not object_alive(db.actor) then
+      self:HideDialog()
+   end   
+end
+
+function ui_notepad_type_one_1:InitCallBacks()    
+	self:AddCallback("button_close", ui_events.BUTTON_CLICKED, self.OnButton_close_clicked, self)
+end
+
+function ui_notepad_type_one_1:OnButton_close_clicked()
+    give_object_to_actor("topi_main_quest_document_1")          
+	self:HideDialog()	
+end
+
+function ui_notepad_type_one_1:register_element(xml,element_name)
+   self[element_name]=xml:InitStatic("form_notepad_type_one:"..element_name,self.form_notepad_type_one)
+end
+-------------------- GUI элементы Cмерти вопреки в квестовых документах ----------------------
+------------------------- Copyright 2012-2013 Geonezis ---------------------------

@@ -1,0 +1,182 @@
+;=========meet_bandit_vil========
+[meet@bandit_vil]
+close_anim 		= nil
+close_victim 	= nil
+far_anim 		= nil
+far_victim 		= nil
+close_distance 	= 0
+far_distance 	= 0
+use = {=actor_enemy} false, {=dist_to_actor_le(3)} true, false
+snd_on_use = {!dist_to_actor_le(3)} nil
+meet_on_talking = false
+;==================================
+
+
+
+[logic@blck_val_a31_bandit_4]
+suitable = {=check_npc_name(blck_val_a31_bandit_4)} true
+prior = 100
+active = walker@blck_val_a31_bandit_4
+
+[walker@blck_val_a31_bandit_4]
+path_walk = bandit_4_walk
+path_look = bandit_4_look
+def_state_standing = sleep
+on_info = {=dist_to_actor_le(7)} %=play_sound(esc_enot_sleep)%
+meet = no_meet
+combat_ignore_cond = {=check_enemy_name(blck_val_a31_stalker_1:blck_val_a31_stalker_2)} true
+
+
+
+[logic@blck_val_a31_bandit_5]
+suitable = {=check_npc_name(blck_val_a31_bandit_5)} true
+prior = 100
+can_select_weapon = false
+active = animpoint@blck_val_a31_bandit_5
+
+[animpoint@blck_val_a31_bandit_5]
+cover_name = blck_val_a31_bandit_cover_1
+avail_animations = animpoint_stay_table
+meet = meet@blck_val_a31_bandit_5
+combat_ignore_cond = true
+combat_ignore_keep_when_attacked = true
+gather_items_enabled = false
+help_wounded_enabled = false
+corpse_detection_enabled = false
+
+[meet@blck_val_a31_bandit_5]:meet@bandit_vil
+close_victim = actor
+meet_dialog = blck_val_stalker_in_bar_start
+allow_break = false
+trade_enable = false
+
+
+
+[logic@blck_val_a31_bandit_6]
+suitable = {=check_npc_name(blck_val_a31_bandit_6)} true
+prior = 100
+active = animpoint@blck_val_a31_bandit_6
+
+[animpoint@blck_val_a31_bandit_6]
+cover_name = blck_val_a31_bandit_cover_2
+avail_animations = animpoint_stay_wall
+meet = meet@blck_val_a31_bandit_6
+on_info = {+blck_val_stavrid_dialog_give_explosive} %=release_npc%
+combat_ignore_cond = true
+combat_ignore_keep_when_attacked = true
+gather_items_enabled = false
+help_wounded_enabled = false
+corpse_detection_enabled = false
+
+[meet@blck_val_a31_bandit_6]:meet@bandit_vil
+close_snd_hello = pb_lutiy_leader_meet
+close_snd_bye = pb_lutiy_leader_meet_bye
+close_snd_distance = 3
+close_victim = actor
+meet_dialog = blck_val_actor_meet_from_lutiy
+allow_break = false
+trade_enable = false
+
+
+
+[logic@blck_val_a31_bandit_7]
+suitable = {=check_npc_name(blck_val_a31_bandit_7)} true
+prior = 100
+active = animpoint@blck_val_a31_bandit_7
+
+[animpoint@blck_val_a31_bandit_7]
+cover_name = blck_val_a31_bandit_cover_3
+avail_animations = zat_b106_wounded_idle
+on_info = {+blck_val_actor_meet_dialog_fish} %=release_npc%
+meet = no_meet
+combat_ignore_cond = {=check_enemy_name(blck_val_a31_stalker_1:blck_val_a31_stalker_2)} true
+
+
+
+[logic@blck_val_a31_bandit_8]
+suitable = {=check_npc_name(blck_val_a31_bandit_8)} true
+prior = 100
+active = animpoint@blck_val_a31_bandit_8
+
+[animpoint@blck_val_a31_bandit_8]
+cover_name = blck_val_a31_bandit_cover_4
+avail_animations = jup_b10_drunk_ravings
+meet = meet@blck_val_drunk_meet
+combat_ignore_cond = {=check_enemy_name(blck_val_a31_stalker_1:blck_val_a31_stalker_2)} true
+
+[meet@blck_val_drunk_meet]:meet@bandit_vil
+close_snd_hello = blck_val_stalker_drunk_meet
+;close_snd_bye = blck_val_stavrid_meet_bye
+close_victim = actor
+allow_break = false
+close_snd_distance = 3
+meet_dialog = blck_val_stalker_drunk_quest
+trade_enable = false
+
+
+
+[logic@blck_val_a31_stalker_1]
+suitable = {=check_npc_name(blck_val_a31_stalker_1)} true
+prior = 100
+active = animpoint@blck_val_a31_stalker_1
+
+[animpoint@blck_val_a31_stalker_1]
+cover_name = blck_val_a31_stalker_cover_1
+avail_animations = animpoint_sit_ass
+on_info = {+blck_val_meet_prisoner_give} animpoint@blck_val_a31_prisoner_1
+combat_ignore_cond = true
+meet = no_meet
+
+[animpoint@blck_val_a31_prisoner_1]
+cover_name = blck_val_a31_stalker_cover_1
+avail_animations = animpoint_sit_ass
+on_info = {+blck_val_prisoner_quest_line_meet_done} animpoint@blck_val_a31_prisoner_2
+combat_ignore_cond = true
+meet = meet@blck_val_prisoner_meet
+
+[meet@blck_val_prisoner_meet]:meet@bandit_vil
+close_snd_hello = blck_val_prisoner_meet
+;close_snd_bye = blck_val_stavrid_meet_bye
+close_victim = actor
+close_snd_distance = 3
+allow_break = false
+meet_dialog = blck_val_prisoner_quest_line_meet
+trade_enable = false
+
+[animpoint@blck_val_a31_prisoner_2]
+cover_name = blck_val_a31_stalker_cover_1
+avail_animations = animpoint_sit_ass
+on_info = {+blck_val_vihr_meet_all_done} walker@blck_val_a31_bandit_shmiga %=teleport_npc(blck_val_a31_bandit_shmiga_walk)%
+combat_ignore_cond = true
+meet = no_meet
+
+[walker@blck_val_a31_bandit_shmiga]
+path_walk = bandit_shmiga_walk
+path_look = bandit_shmiga_look
+on_info = {+blck_val_bandit_escape_spawn} %=release_npc%
+combat_ignore_cond = true
+meet = meet@blck_val_prisoner_quest
+
+[meet@blck_val_prisoner_quest]:meet@bandit_vil
+close_snd_hello = blck_val_prisoner_meet
+;close_snd_bye = blck_val_stavrid_meet_bye
+close_victim = actor
+close_snd_distance = 3
+use = {+blck_val_stavrid_dop_action_give_info} true, {=dist_to_actor_le(4) +blck_val_dialog_meet_from_shmiga_give -blck_val_stavrid_dop_action_give_info} self, false
+allow_break = false
+meet_dialog = blck_val_bandit_shmiga_talk_quest
+trade_enable = false
+
+
+[logic@blck_val_a31_stalker_2]
+suitable = {=check_npc_name(blck_val_a31_stalker_2)} true
+prior = 100
+active = camper@blck_val_a31_stalker_2
+
+[camper@blck_val_a31_stalker_2]
+path_walk = stalker_1_walk
+path_look = stalker_1_look
+def_state_standing = sleep
+on_info = {+blck_val_bandit_escape_spawn} %=release_npc%
+combat_ignore_cond = true
+meet = no_meet

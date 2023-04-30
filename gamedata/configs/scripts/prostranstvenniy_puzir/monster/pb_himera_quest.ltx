@@ -1,0 +1,27 @@
+[logic]
+active = mob_walker@sleep
+prior = 70
+on_death = mob_death
+on_hit = hit
+
+[mob_walker@sleep]
+path_walk = pro_himera_walk
+path_look = pro_himera_sleep_look
+actor_friendly = true
+on_info = {=dist_to_actor_le(2) -pro_himera_actor_enemy} %+pro_himera_actor_enemy%
+on_info2 = {+pro_himera_actor_enemy} mob_home@attack
+combat_ignore_cond = {=check_enemy_name(pb_dubolom)} true, {=check_enemy_name(actor)} true
+aggressive = false
+
+[mob_home@attack]
+path_home = pro_himera_walk
+home_min_radius = 30
+home_max_radius = 40
+aggressive = true
+actor_friendly = false
+
+[hit]
+on_info = {=hit_by_actor -pro_himera_actor_enemy} %+pro_himera_actor_enemy%
+
+[mob_death]
+on_info = %+pro_himera_quest_dead%

@@ -1,0 +1,32 @@
+
+
+; ------------------------------------------------------------------------------------------------------------------------ 1
+[logic@zombo_raz]
+suitable = { =check_npc_name(sim_default_zombied) } true
+active = walker@zombo_raz
+prior = 200
+post_combat_time = 0,0
+
+[walker@zombo_raz]
+path_walk = zombo_1_walk
+
+; ------------------------------------------------------------------------------------------------------------------------ 2
+[logic@zombo_dwa]
+suitable = { =check_npc_name(sim_default_zombied) } true
+active = walker@zombo_dwa
+prior = 200
+post_combat_time = 0,0
+
+[walker@zombo_dwa]
+path_walk = zombo_1_walk
+
+; ------------------------------------------------------------------------------------------------------------------------ 3
+[logic@zombo_tri]
+suitable = { =check_npc_name(sim_default_zombied) } true
+active = walker@zombo_tri
+prior = 200
+post_combat_time = 0,0
+
+[walker@zombo_tri]
+path_walk = zombo_2_walk
+path_look = zombo_2_look

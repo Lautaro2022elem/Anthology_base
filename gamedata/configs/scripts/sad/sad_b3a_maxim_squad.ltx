@@ -1,0 +1,130 @@
+; -------------------------------
+[walker@def]
+gather_items_enabled = false
+help_wounded_enabled = false
+corpse_detection_enabled = false
+out_restr = sad_b3a_sr_zone
+combat_ignore_cond = {=is_enemy_actor} true, {=fighting_dist_ge(20)} true
+on_info9 = {=actor_enemy} remark@actor_eminem %+sad_maxim_squad_actor_enemy%
+
+[remark@actor_eminem]
+
+
+; ------------------------------------------------------------------------------ 1
+[logic@maximilian_member_1]
+active = walker@1_init
+suitable = { =check_npc_name(sad_b2_stalker_maxim_member_1) } true
+on_death = death
+on_hit = hit
+prior = 150
+
+[walker@1_init]:walker@def
+path_walk = surge_1_walk
+path_look = surge_1_look
+out_restr = sad_b3a_surge_hide
+on_info = {+sad_maxim_squad_go_position} walker@1_to_position %=sad_reset_animation%
+;on_info2 = {+sad_maxim_start_teleport} walker@1_to_position %=teleport_npc(sad_b3a_gvard_1_walk)%
+
+[walker@1_to_position]:walker@def
+path_walk = gvard_1_walk
+path_look = gvard_1_look
+def_state_moving = sneak_run
+def_state_standing = binocular
+meet = no_meet
+
+; ------------------------------------------------------------------------------ 2
+[logic@maximilian_member_2]
+active = walker@2_init
+suitable = { =check_npc_name(sad_b2_stalker_maxim_member_2) } true
+on_death = death
+on_hit = hit
+prior = 150
+
+[walker@2_init]:walker@def
+path_walk = surge_2_walk
+path_look = surge_2_look
+out_restr = sad_b3a_surge_hide
+on_info = {+sad_maxim_squad_go_position} walker@2_to_position %=sad_reset_animation%
+;on_info2 = {+sad_maxim_start_teleport} walker@2_to_position %=teleport_npc(sad_b3a_gvard_2_walk)%
+
+[walker@2_to_position]:walker@def
+path_walk = gvard_2_walk
+path_look = gvard_2_look
+def_state_standing = sit
+def_state_moving = sneak_run
+meet = no_meet
+
+; ------------------------------------------------------------------------------ 3
+[logic@maximilian_member_3]
+active = walker@3_init
+suitable = { =check_npc_name(sad_b2_stalker_maxim_member_3) } true
+on_death = death
+on_hit = hit
+prior = 150
+
+[walker@3_init]:walker@def
+path_walk = surge_3_walk
+path_look = surge_3_look
+out_restr = sad_b3a_surge_hide
+on_info = {+sad_maxim_squad_go_position} walker@3_to_position %=sad_reset_animation%
+;on_info2 = {+sad_maxim_start_teleport} walker@3_to_position %=teleport_npc(sad_b3a_gvard_3_walk)%
+
+[walker@3_to_position]:walker@def
+path_walk = gvard_3_walk
+path_look = gvard_3_look
+def_state_standing = hide
+def_state_moving = sneak_run
+meet = no_meet
+
+; ------------------------------------------------------------------------------ 4
+[logic@maximilian_member_4]
+active = walker@4_init
+suitable = { =check_npc_name(sad_b2_stalker_maxim_member_4) } true
+on_death = death
+on_hit = hit
+prior = 150
+
+[walker@4_init]:walker@def
+path_walk = surge_4_walk
+path_look = surge_4_look
+out_restr = sad_b3a_surge_hide
+on_info = {+sad_maxim_squad_go_position} walker@4_to_position %=sad_reset_animation%
+;on_info2 = {+sad_maxim_start_teleport} walker@4_to_position %=teleport_npc(sad_b3a_gvard_4_walk)%
+
+[walker@4_to_position]:walker@def
+path_walk = gvard_4_walk
+path_look = gvard_4_look
+def_state_standing = hide
+def_state_moving = sneak_run
+meet = no_meet
+
+; ------------------------------------------------------------------------------ 5
+[logic@maximilian_member_5]
+active = walker@5_init
+suitable = { =check_npc_name(sad_b2_stalker_maxim_member_5) } true
+on_death = death
+on_hit = hit
+prior = 150
+
+[walker@5_init]:walker@def
+path_walk = surge_5_walk
+path_look = surge_5_look
+out_restr = sad_b3a_surge_hide
+on_info = {+sad_maxim_squad_go_position} walker@5_to_position %=sad_reset_animation%
+;on_info2 = {+sad_maxim_start_teleport} walker@5_to_position %=teleport_npc(sad_b3a_gvard_5_walk)%
+
+[walker@5_to_position]:walker@def
+path_walk = gvard_5_walk
+path_look = gvard_5_look
+def_state_standing = hide
+def_state_moving = sneak_run
+meet = no_meet
+
+; ------------------------------------------------------------------------------
+[death]
+on_info = {=killed_by_actor} %+sad_maxim_squad_actor_enemy%
+
+[hit]
+on_info = {=actor_enemy} %+sad_maxim_squad_actor_enemy%
+
+

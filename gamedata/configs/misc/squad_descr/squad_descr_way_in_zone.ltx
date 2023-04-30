@@ -1,0 +1,147 @@
+;;;;;;;;;;;;;;;;;;SIMULATION;;;;;;;;;;;;;;;;;;
+
+[wiz_kosta_squad]:online_offline_group
+faction = stalker
+npc = wiz_kosta
+target_smart = wiz_bivsh_nii
+;spawn_point = wiz_sp_kosta
+story_id = wiz_kosta_squad_id
+
+[wiz_chip_and_kruger_squad]:online_offline_group
+faction = stalker
+npc = wiz_chip
+target_smart = wiz_bivsh_nii
+story_id = wiz_chip_and_kruger_squad_id
+
+[wiz_jekan_squad]:online_offline_group
+faction = stalker
+npc = wiz_jekan
+target_smart = wiz_bivsh_nii
+story_id = wiz_jekan_squad_id
+
+[wiz_foma_squad]:online_offline_group
+faction = stalker
+npc = wiz_foma
+target_smart = wiz_bivsh_nii
+;spawn_point = wiz_sp_foma
+story_id = wiz_foma_squad_id
+
+[wiz_ivanich_squad]:online_offline_group
+faction = stalker
+npc = wiz_ivanich
+target_smart = wiz_bivsh_nii
+;spawn_point = wiz_sp_ivanich
+story_id = wiz_ivanich_squad_id
+
+[wiz_rjaviu_squad]:online_offline_group
+faction = stalker
+npc = wiz_rjaviu
+target_smart = wiz_bivsh_nii
+;spawn_point = wiz_sp_rjaviu
+story_id = wiz_rjaviu_squad_id
+
+[wiz_bivsh_nii_first]:online_offline_group
+faction = stalker
+npc = sim_default_stalker_1, sim_default_stalker_2, sim_default_stalker_2
+target_smart = wiz_bivsh_nii
+story_id = wiz_bivsh_nii_first
+
+[wiz_bivsh_nii_second]:online_offline_group
+faction = stalker
+npc = sim_default_stalker_1, sim_default_stalker_2, sim_default_stalker_3, sim_default_stalker_4, sim_default_stalker_3
+target_smart = wiz_bivsh_nii
+story_id = wiz_bivsh_nii_second
+
+[wiz_stalker_nauch_sim]:online_offline_group
+faction = stalker
+npc_random = sim_default_stalker_0, sim_default_stalker_1, sim_default_stalker_2, sim_default_stalker_3, sim_default_stalker_4
+npc_in_squad = 2, 3 
+
+[wiz_stalker_baza_sim]:online_offline_group
+faction = stalker
+npc = sim_default_stalker_1, sim_default_stalker_2, sim_default_stalker_2, sim_default_stalker_3, sim_default_stalker_4, sim_default_stalker_3, sim_default_stalker_4, sim_default_stalker_3
+target_smart = wiz_baza
+
+[wiz_baza_killers_squad]:online_offline_group
+faction = killer
+npc = wiz_krivou, sim_default_killer_1, sim_default_killer_1, sim_default_killer_2, sim_default_killer_2, sim_default_killer_3
+target_smart = wiz_baza
+on_hit = %+uninvited_guests_fail%
+story_id = wiz_baza_killers_squad
+on_death = %+wiz_baza_killers_squad_die%
+
+[wiz_sim_3_sim_zombie]:online_offline_group
+faction = zombied
+npc	= sim_default_zombied_1, sim_default_zombied_1, sim_default_zombied_2, sim_default_zombied_2, sim_default_zombied_3
+target_smart = wiz_sim_3
+
+[wiz_sim_3_simulation_controller]:online_offline_group
+faction = monster_zombied_day
+npc = m_controller_normal
+target_smart = wiz_sim_3
+;spawn_point = wiz_sp_controller
+
+[wiz_baza_dolg_squad]:online_offline_group
+faction = dolg
+npc = wiz_lt_krasnopolsky, sim_default_duty_3, sim_default_duty_4, sim_default_duty_3, sim_default_duty_4, sim_default_duty_3
+target_smart = wiz_baza
+story_id = wiz_baza_dolg_squad
+
+[wiz_sim_6_bandit]:online_offline_group
+faction = bandit
+npc = wiz_guard_bandit_1, wiz_guard_bandit_2, wiz_guard_bandit_3, wiz_guard_bandit_4, wiz_guard_bandit_5, wiz_guard_bandit_6, wiz_guard_bandit_7, wiz_guard_bandit_8, wiz_guard_bandit_9, wiz_guard_bandit_10
+target_smart = wiz_sim_6
+story_id = wiz_sim_6_bandit
+on_death = %+wiz_sim_6_bandit_all_die%
+
+[wiz_raiders_squad]:online_offline_group
+faction = stalker
+npc = wiz_rjaviu_raider, wiz_raider_stalker_1, wiz_raider_stalker_2, wiz_raider_stalker_3
+target_smart = wiz_derevnya_bandits
+story_id = wiz_raiders_squad
+
+[wiz_jekan_scene_squad]:online_offline_group
+faction = stalker
+npc = wiz_jekan_scene
+target_smart = wiz_sim_6
+
+[wiz_mut_num_1_squad]:online_offline_group
+faction = monster
+npc = flesh_normal, flesh_normal, flesh_normal, flesh_strong, flesh_strong, flesh_strong
+target_smart = wiz_sim_10
+story_id = wiz_mut_num_1_squad_id
+on_death = %+wiz_mut_num_1_squad_die%
+
+[wiz_mut_num_2_squad]:online_offline_group
+faction = monster
+npc = snork_weak, snork_weak, snork_normal, snork_normal, snork_strong
+target_smart = wiz_bandits_boloto
+story_id = wiz_mut_num_2_squad_id
+on_death = %+wiz_mut_num_2_squad_die%
+
+[wiz_mut_num_3_squad]:online_offline_group
+faction = monster
+npc = dog_weak, dog_normal, dog_strong, dog_cute, dog_strong, dog_normal
+target_smart = wiz_sim_9
+story_id = wiz_mut_num_3_squad_id
+on_death = %+wiz_mut_num_3_squad_die%
+
+[wiz_mut_num_4_squad]:online_offline_group
+faction = monster
+npc = boar_normal, boar_normal, boar_normal, boar_strong, boar_normal, boar_strong
+target_smart = wiz_sim_7
+story_id = wiz_mut_num_4_squad_id
+on_death = %+wiz_mut_num_4_squad_die%
+
+[zombie_blind_kat_smart_terrain]:online_offline_group
+faction         = monster
+npc             = zombie_blind, zombie_blind, zombie_weak, zombie_normal, zombie_strong, zombie_strong, zombie_strong, zombie_strong
+target_smart = kat_smart_terrain
+
+[wiz_stalker_breeder_squad]:online_offline_group
+faction = ecolog
+npc = wiz_stalker_breeder
+target_smart = wiz_bivsh_nii
+story_id = wiz_stalker_breeder_squad_id
+
+;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;

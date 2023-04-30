@@ -1,0 +1,16 @@
+[logic]
+active = sr_idle@start_bad_end_game
+
+[sr_idle@start_bad_end_game]
+on_info = {+bar_actor_go_to_bad_end_game} sr_idle@spawn_otshelnik
+
+[sr_idle@spawn_otshelnik]
+on_timer = 10 | sr_idle@start_bad_end_1 %=spawn_object(bar_otshelnik:bar_otshelnik_end_spawn)%
+
+[sr_idle@start_bad_end_1]
+on_info = {+bar_otshelnik_dead_end_game} sr_idle@start_bad_end_2
+
+[sr_idle@start_bad_end_2]
+on_timer = 1500 | sr_idle@nil %=labx7_actor_replic_about_otshelnik_death%
+
+[sr_idle@nil]

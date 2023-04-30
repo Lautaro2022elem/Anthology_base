@@ -1,0 +1,22 @@
+[logic]
+active = sr_idle@wait
+
+[sr_idle@wait]
+on_info = {+sad_ban_bandits_fight} sr_idle@10 %=set_faction_community_to_actor(bandit:enemy)%
+
+[sr_idle@10]
+on_info = {!squad_exist(sad_ban_bandit_leader_squad)} sr_idle@40 ; sr_idle@20
+
+;[sr_idle@20]
+;on_info = {!squad_exist(sad_ban_bandit_squad_1)} sr_idle@30
+
+;[sr_idle@30]
+;on_info = {!squad_exist(sad_ban_bandit_squad_2)} sr_idle@40
+
+[sr_idle@40]
+on_game_timer = 7200 | sr_idle@50
+
+[sr_idle@50]
+on_info = {=distance_to_obj_ge(sad_ban_sr_spot:150)} sr_idle@nil %+sad_bandit_leader_gone%
+
+[sr_idle@nil]

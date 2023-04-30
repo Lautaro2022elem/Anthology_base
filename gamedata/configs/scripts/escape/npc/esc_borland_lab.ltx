@@ -1,0 +1,67 @@
+[logic]
+active = remark
+post_combat_time = 0, 0
+
+[remark]
+anim = wait_na
+target = story | actor
+meet = meet@1
+gather_items_enabled = false
+corpse_detection_enabled = false
+invulnerable = true
+on_info = {+esc_quest_line_research_underground_open_laba} walker@laba 
+on_info2 = {-esc_borland_lab_actor_friend} %=actor_friend +esc_borland_lab_actor_friend%
+
+[walker@laba]
+path_walk = esc_borland_underground_walk_laba
+on_info = {=dist_to_actor_ge(12)} remark@waitlaba %=esc_borland_underground_2_sms%
+on_signal = esc_borland_und_laba| remark@labacomplite %+esc_borland_und_laba =esc_sidor_underground_sms%
+gather_items_enabled = false
+corpse_detection_enabled = false
+def_state_moving = raid
+invulnerable = true
+meet = no_meet
+
+[remark@waitlaba]
+anim = threat_danger
+target = story | actor
+meet = no_meet
+danger = danger
+on_info = {=dist_to_actor_le(6)} walker@laba
+gather_items_enabled = false
+corpse_detection_enabled = false
+invulnerable = true
+
+[remark@labacomplite]
+anim = guard
+target = story | actor
+meet = no_meet
+danger = danger
+gather_items_enabled = false
+corpse_detection_enabled = false
+invulnerable = true
+on_info = {+esc_codelock_lab_unlock} walker@labaout
+
+[walker@labaout]
+path_walk = esc_borland_underground_walk_labaout
+gather_items_enabled = false
+corpse_detection_enabled = false
+def_state_moving = raid
+def_state_standing = threat_danger
+invulnerable = true
+meet = no_meet
+
+[meet]
+abuse           = false
+close_anim 		= nil
+far_anim 		= nil
+far_victim 		= nil
+close_distance  = 0
+far_distance 	= 0
+close_victim = actor
+trade_enable = false
+allow_break = false
+
+[meet@1]:meet
+use = {=dist_to_actor_le(2)} self, true
+meet_dialog = esc_borland_quest_line_research_underground_part_3_dialog

@@ -1,0 +1,10 @@
+[logic]
+active = sr_idle@start_game
+
+[sr_idle@start_game]
+on_info = {+wiz_start =actor_on_level(wiz)} sr_idle@time_to_save
+
+[sr_idle@time_to_save]
+on_timer = 5000 | sr_idle@nil %=scenario_autosave(st_save_zat_a1_game_start) =hero_thoughts_01%
+
+[sr_idle@nil]

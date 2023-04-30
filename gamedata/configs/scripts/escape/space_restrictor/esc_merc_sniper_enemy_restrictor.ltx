@@ -1,0 +1,13 @@
+[logic]
+active = sr_idle@esc_radio_pharos_spawn
+
+[sr_idle@esc_radio_pharos_spawn]
+on_info = {+esc_trader_take_info_radio} sr_idle@esc_merc_sniper_enemy_spawn %=esc_trader_radio_pharos_item_spawn%
+
+[sr_idle@esc_merc_sniper_enemy_spawn]
+on_info = {+esc_trader_first_quest_dialog_done} sr_idle@esc_merc_sniper_enemy_info %=spawn_object(esc_merc_sniper_enemy:esc_merc_sniper_enemy_spawn)%
+
+[sr_idle@esc_merc_sniper_enemy_info]
+on_actor_inside = {+esc_trader_first_quest_dialog_done} sr_idle@nil %+esc_merc_sniper_enemy_shoot_to_actor%
+
+[sr_idle@nil]

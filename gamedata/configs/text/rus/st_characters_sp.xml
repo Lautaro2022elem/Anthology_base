@@ -1,0 +1,188 @@
+<?xml version="1.0" encoding="windows-1251" ?>
+<string_table>
+
+	<string id="escape_trader_skidan_name">
+		<text>Скидан</text>
+	</string>
+	<string id="esc_pes_name">
+		<text>Пёс</text>
+	</string>
+	<string id="esc_mechanic_furgon_name">
+		<text>Стёпка</text>
+	</string>
+	<string id="esc_mechanic_barkas_name">
+		<text>Баркас</text>
+	</string>
+	<string id="esc_trader_kusto_name">
+		<text>Кусто</text>
+	</string>
+	<string id="esc_barman_patogen_name">
+		<text>Патогеныч</text>
+	</string>
+	<string id="esc_shaman_name">
+		<text>Шаман</text>
+	</string>
+	<string id="esc_risovalshik_name">
+		<text>Рисовальщик</text>
+	</string>
+	<string id="esc_medic_antibiotic_name">
+		<text>Антибиотик</text>
+	</string>
+	<string id="esc_colonel_kolyazin_name">
+		<text>Полковник Колязин</text>
+	</string>
+	<string id="esc_bandit_logoped_name">
+		<text>Логопед</text>
+	</string>
+	<string id="esc_bandit_tick_name">
+		<text>Клещ</text>
+	</string>
+	<string id="esc_borland_start_name">
+		<text>Борланд</text>
+	</string>
+	<string id="esc_army_shmatco_name">
+		<text>Прапорщик Шматко</text>
+	</string>
+	<string id="esc_army_kuznecov_name">
+		<text>Ефрейтор Кузнецов</text>
+	</string>
+	<string id="esc_trepach_name">
+		<text>Трепач</text>
+	</string>
+	<string id="esc_dybolom_name">
+		<text>Дуболом</text>
+	</string>
+	<string id="esc_npc_kishka_name">
+		<text>Кишка</text>
+	</string>
+	<string id="esc_army_chernenco_name">
+		<text>Ефрейтор Черненко</text>
+	</string>
+	<string id="esc_klin_name">
+		<text>Клин</text>
+	</string>
+	<string id="esc_npc_wood_goblin_name">
+		<text>Леший</text>
+	</string>
+	<string id="esc_npc_sour_name">
+		<text>Кислый</text>
+	</string>
+	<string id="esc_npc_garlic_name">
+		<text>Чеснок</text>
+	</string>
+	<string id="esc_npc_pate_name">
+		<text>Паштет</text>
+	</string>
+	<string id="esc_quest_sb_tryp_name">
+		<text>Колотун</text>
+	</string>
+	<string id="esc_merc_bear_name">
+		<text>Медведь</text>
+	</string>
+	<string id="esc_bandit_shmiga_name">
+		<text>Шмыга</text>
+	</string>
+	<string id="esc_npc_shvabroid_name">
+		<text>Шпала</text>
+	</string>
+	<string id="esc_freedom_plen_name">
+		<text>Яблонский</text>
+	</string>
+	<string id="esc_trup_alpinist_name">
+		<text>Альпинист</text>
+	</string>
+	<string id="esc_bandit_shoroh_npc_name">
+		<text>Шорох</text>
+	</string>
+	<string id="esc_npc_moskit_name">
+		<text>Москит</text>
+	</string>
+	<string id="esc_nps_soer_name">
+		<text>Сойер</text>
+	</string>
+	<string id="esc_npc_csky_holod_name">
+		<text>Дым</text>
+	</string>
+	<string id="esc_npc_watchmaker_name">
+		<text>Часовщик</text>
+	</string>
+	<string id="esc_npc_student_name">
+		<text>Студент</text>
+	</string>
+	<string id="esc_army_stepan_name">
+		<text>Сержант Степаненко</text>
+	</string>
+	<string id="esc_army_prapor_corpse_name">
+		<text>Прапорщик Кантимиров</text>
+	</string>
+	<string id="esc_dezertir_bandit_name">
+		<text>Шрам</text>
+	</string>
+	<string id="esc_shaman_name">
+		<text>Шаман</text>
+	</string>
+	<string id="bar_npc_voronin_name">
+		<text>Капитан Иванцов</text>
+	</string>
+	<string id="bar_npc_dolg_trader_name">
+		<text>Пушкин</text>
+	</string>
+	<string id="bar_npc_dolg_mechanic_name">
+		<text>Марков</text>
+	</string>
+	<string id="bar_npc_dolg_svayzist_name">
+		<text>Кочубей</text>
+	</string>
+	<string id="bar_npc_barman_name">
+		<text>Маландринус</text>
+	</string>
+	<string id="bar_npc_kalgun_arena_name">
+		<text>Калган</text>
+	</string>
+	<string id="bar_npc_nimble_name">
+		<text>Виталик</text>
+	</string>
+	<string id="bar_npc_kostolom_arena_name">
+		<text>Костолом</text>
+	</string>
+	<string id="bar_npc_dolg_general_dangerous_duty_name">
+		<text>Начальник караула</text>
+	</string>
+	<string id="bar_npc_otshelnik_name">
+		<text>Отшельник</text>
+	</string>
+	<string id="bar_medic_name">
+		<text>Укол</text>
+	</string>
+	<string id="gar_a2_digger_name">
+		<text>Черный</text>
+	</string>
+	<string id="gar_a2_main_quest_dolg_1_name">
+		<text>Багрецев</text>
+	</string>
+	<string id="city_npc_army_kep_name">
+		<text>Капитан Теребенько</text>
+	</string>
+	<string id="city_npc_army_attak_1_name">
+		<text>Сержат Меняйло</text>
+	</string>
+	<string id="city_npc_army_attak_2_name">
+		<text>Сержант Седенький</text>
+	</string>
+	<string id="city_npc_army_attak_3_name">
+		<text>Рядовой Ткачук</text>
+	</string>
+	<string id="city_npc_army_attak_4_name">
+		<text>Ефрейтор Сёмин</text>
+	</string>
+	<string id="city_npc_army_final_3_name">
+		<text>Рядовой Попов</text>
+	</string>
+	<string id="city_npc_army_final_4_name">
+		<text>Ефрейтор Симонов</text>
+	</string>
+	<string id="city_npc_sp_leader_name">
+		<text>Аскольд</text>
+	</string>
+	
+</string_table>

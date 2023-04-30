@@ -1,0 +1,74 @@
+[logic]
+active = walker@wait
+post_combat_time = 0, 0
+
+[walker@wait]
+path_walk = esc_npc_watchmaker_spawn
+on_info = {-esc_quest_line_research_underground_chasovhik +esc_squad_quest_tushkan_dead} remark@hello
+on_info2 = {+esc_quest_line_research_underground_chasovhik} remark@lab_wait
+invulnerable = true
+meet = no_meet
+
+[remark@hello]
+anim = hello_wpn
+target = story | actor
+meet = no_meet
+on_info = {=dist_to_actor_le(2)} remark@dialog_actor
+invulnerable = true
+
+[remark@dialog_actor]
+anim = wait_na
+target = story | actor
+meet = meet@dialog
+on_info = {+esc_watchmaker_quest_line_dungeon_dialog_and} remark@release
+invulnerable = true
+
+[remark@release]
+anim = wait
+target = story | actor
+meet = no_meet
+on_info = {+esc_quest_line_dungeon_borland =dist_to_actor_ge(25)} %=release_npc%
+invulnerable = true
+
+[remark@lab_wait]
+anim = wait_na
+target = story | actor
+meet = meet@dialog_2
+on_info = {+esc_quest_line_research_underground_sidor_key} remark@out
+invulnerable = true
+
+[remark@out]
+anim = wait
+target = story | actor
+meet = no_meet
+on_info = {+esc_quest_line_research_underground_sidor_key =dist_to_actor_ge(15)} %=release_npc +esc_watchmaker_key_door_closed%
+invulnerable = true
+
+[meet@dialog]
+abuse           = false
+close_anim 		= nil
+far_anim 		= nil
+far_victim 		= nil
+close_distance  = 0
+far_distance 	= 0
+close_victim = actor
+use = {=dist_to_actor_le(2)} self, true
+allow_break = false
+meet_dialog = esc_watchmaker_quest_line_dungeon_dialog
+trade_enable = false
+
+[meet@dialog_2]
+abuse           = false
+close_anim 		= nil
+far_anim 		= nil
+far_victim 		= nil
+close_distance  = 0
+far_distance 	= 0
+close_victim = actor
+use = {=dist_to_actor_le(2)} self, true
+allow_break = false
+meet_dialog = esc_watchmaker_quest_line_research_underground_dialog
+trade_enable = false
+
+[smart_terrains]
+none = true

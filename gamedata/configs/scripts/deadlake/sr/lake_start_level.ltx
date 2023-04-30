@@ -1,0 +1,16 @@
+[logic]
+active = sr_idle@testing
+
+[sr_idle@testing]
+on_info = {+wiz_start =actor_on_level(dl)} sr_idle@scene %=run_postprocess(black:1188:true) =relocate_really_all_actor_inventory_to_box(dl_bandits_treasure_id) =give_task(in_hot_pursuit) +act_inv_released%
+
+[sr_idle@scene]
+on_timer = 5000 | sr_idle@timer_to_phasez %=stop_postprocess(1188) =agro_start_cs_callback_1 =hero_thoughts_20 =give_actor(device_pda_1)%
+
+[sr_idle@timer_to_phasez]
+on_timer = 15000 | sr_idle@check_item %=give_task(lake_out_bandits) =give_task(dl_return_treasure) =spawn_object_in(af_dummy_battery:dl_bandits_treasure_id) =spawn_object_in(helm_hardhat:dl_bandits_treasure_id) =spawn_object_in(wpn_addon_scope_cobra:dl_bandits_treasure_id) =spawn_object_in(ammo_12x76_zhekan:dl_bandits_treasure_id) =spawn_object_in(ammo_12x76_zhekan:dl_bandits_treasure_id)%
+
+[sr_idle@check_item]
+on_info = {=actor_has_item(dl_pda_bandita)} sr_idle@nil %+dl_actor_has_pda_bandita%
+
+[sr_idle@nil]

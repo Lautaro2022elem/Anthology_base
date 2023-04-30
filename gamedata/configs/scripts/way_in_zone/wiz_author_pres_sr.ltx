@@ -1,0 +1,40 @@
+[logic]
+active = sr_idle@presents
+
+[sr_idle@presents]
+on_info = {=actor_on_level(way_in_zone)} sr_idle@presents_start %=disable_ui =run_postprocess(black:1488:true)%
+
+[sr_idle@presents_start];Приветствие автора и мода.
+on_info = {!black_screen} sr_idle@txt %=add_cs_text(st_wiz_start_game_text_lanser_0)%
+
+[sr_idle@txt]
+on_game_timer = 50 | sr_idle@control %=stop_postprocess(1488) =del_cs_text()%
+
+[sr_idle@control]
+on_game_timer = 20 | sr_idle@control_2 %=show_path(path_one_name)%
+
+[sr_idle@control_2]
+on_game_timer2 = 20 | sr_idle@control_3 %=show_path_name(path_one_location)%
+
+[sr_idle@control_3]
+on_game_timer3 = 20 | sr_idle@product %=show_path_descr(path_one_descr)% 
+
+[sr_idle@product]
+on_game_timer = 40 | sr_idle@time_to_save %=del_show_path_123(path_one_name:path_one_location:path_one_descr) =enable_ui%
+
+[sr_idle@time_to_save]
+on_timer = 3000 | sr_idle@nil %=scenario_autosave(st_save_zat_a1_game_start) =hero_thoughts_01%
+
+[sr_idle@merc_pda_messages]
+on_info = {=actor_has_item(wiz_pda_merc)} sr_idle@message_1
+
+[sr_idle@message_1]
+on_timer = 15000 | sr_idle@message_2 %=zametki_pda_poslannika_1%
+
+[sr_idle@message_2]
+on_timer = 10000 | sr_idle@message_3 %=zametki_pda_poslannika_2%
+
+[sr_idle@message_3]
+on_timer = 7000 | sr_idle@nil %=zametki_pda_poslannika_3%
+
+[sr_idle@nil]

@@ -1,0 +1,187 @@
+--[[ ------------------------------------------------------------------------------------------------
+ File       : function_garbage.script
+ Description: Скрипт-обработчик функций для Свалки
+ Copyright  : 2013 © Spectrum project
+ Author		: Geonezis
+ Last edit  : 09.11.2013 (Geonezis)
+--]] ------------------------------------------------------------------------------------------------
+--/											Variables
+--]] ------------------------------------------------------------------------------------------------
+local iTime = 0
+
+local tNpcs = {
+--						|section|					   |X|				   |Y|				   |Z|		   |LVL|  |GAME|
+						
+				
+				["gar_b2_walking_killer_1"]   = {-277.01641845703,   -7.4009776115417,   -171.9605255127,  1405,    352},
+				["gar_b2_walking_killer_2"]	  = {270.55941772461,    -2.0395476818085,   -93.915405273438, 353347,  433},
+				
+				["gar_b2_walking_csky_1"]	  = {-95.685020446777,   1.5194090604782,    -35.049144744873, 103547,  309},
+				
+				["gar_b2_walking_freedom_1"]  = {148.79542541504,    -2.6741943359375,   256.4333190918,   289246,  268},
+				["gar_b2_walking_freedom_2"]  = {294.49829101563,    3.6473236083984,    131.60690307617,  356929,  348},
+				["gar_b2_walking_freedom_3"]  = {271.00650024414,    -7.9049825668335,   2.4409353733063,  353366,  256},
+				
+--							
+				["gar_b2_walking_stalker_1"]  = {-9.3192863464355,   1.7508491277695,    66.169090270996,  153106,  291},
+				["gar_b2_walking_stalker_2"]  = {135.03981018066,    0.01896134018898,   -126.4566192627,  279056,  403},
+				["gar_b2_walking_stalker_3"]  = {72.616149902344,    -0.11901247501373,  181.70602416992,  230405,  317},
+--				["gar_b2_walking_stalker_4"]  = {87.345359802246,    -0.82125008106232,  -55.648956298828, 242664,  402},
+				["gar_b2_walking_stalker_5"]  = {-223.62240600586,   -8.2535772323608,   -138.11416625977, 11861,   351},
+				
+--				["gar_a1_quest_mutant_1"]     = {103.57640075684,    2.4295969009399,    -15.673110961914, 255236,  234},
+--				["gar_a1_quest_mutant_2"]     = {83.165603637695,    1.927297949791,     -32.553718566895, 239300,  234},
+--				["gar_a1_quest_mutant_3"]     = {62.222724914551,    0.67781984806061,   -47.122646331787, 221533,  402},
+--				["gar_a1_quest_mutant_4"]     = {35.012172698975,    0.39931586384773,   -48.855785369873, 194684,  259},
+--				["gar_a1_quest_mutant_5"]     = {11.05645942688,     0.30976977944374,   -20.023307800293, 168909,  319},
+				["gar_a1_quest_mutant_6"]     = {0.376399487257,     0.39821162819862,   23.097610473633,  160132,  292},
+				["gar_a1_quest_mutant_7"]     = {-0.013500190339983, 0.37578144669533,   48.708656311035,  159645,  292},
+				["gar_a1_quest_mutant_8"]     = {20.678888320923,    0.4355545938015,    77.200141906738,  178850,  290},
+				["gar_a1_quest_mutant_9"]     = {43.15599822998,     0.33655861020088,   124.76805114746,  203925,  411},
+				["gar_a1_quest_mutant_10"]    = {1.5286265611649,    0.49515023827553,   154.45652770996,  160817,  316},
+				
+				["gar_a2_main_quest_dolg_1"]  = {34.836154937744,    0.41846725344658,   210.81988525391,  195006,  322},
+				["gar_a2_main_quest_dolg_2"]  = {40.701553344727,    0.39972129464149,   231.70463562012,  201256,  269},
+				["gar_a2_main_quest_dolg_3"]  = {42.652805328369,    0.91211807727814,   241.1904296875,   203366,  269},
+				["gar_a2_main_quest_dolg_4"]  = {25.967350006104,    0.41754415631294,   235.63272094727,  184652,  356},
+				["gar_a2_main_quest_dolg_5"]  = {34.541603,          0.398157,           214.423996,       194223,  322},
+				["gar_a2_main_quest_dolg_6"]  = {31.979017,          0.399201,           206.890427,       191843,  322},
+				
+				["gar_a2_borland"]  		  = {44.92894744873,	 0.91296052932739,	 243.5736541748,   205452,  269},
+			  }
+			  
+local tNpcq = {
+--						|section|					   |X|				   |Y|				   |Z|		   |LVL|  |GAME|
+				["gar_a2_neutral_stalker_1"]  = {75.791648864746,    0.5988734960556,    144.49269104004,  232836,  338},
+				["gar_a2_neutral_stalker_2"]  = {52.51220703125,     0.59886014461517,   168.44927978516,  212631,  409},
+				["gar_a2_neutral_stalker_3"]  = {58.096965789795,    0.38442322611809,   123.43055725098,  217911,  411},
+				["gar_a2_neutral_stalker_4"]  = {96.357269287109,    3.6649670600891,    162.87055969238,  250028,  340},
+				["gar_a2_neutral_stalker_5"]  = {62.54150390625,     0.59957492351532,   169.94079589844,  221669,  409},
+				["gar_a2_neutral_stalker_6"]  = {103.22661590576,    -0.36952656507492,  134.97027587891,  254810,  357},
+				["gar_a2_neutral_stalker_7"]  = {59.3225440979,      0.59535181522369,   169.61029052734,  219282,  409},
+				["gar_a2_neutral_stalker_8"]  = {99.41584777832,     3.7737374305725,    173.2967376709,   252216,  340},
+				["gar_a2_neutral_stalker_9"]  = {96.129341125488,    8.1987228393555,    177.28581237793,  249505,  345},
+				["gar_a2_neutral_stalker_10"] = {104.67577362061,    8.4111633300781,    177.08985900879,  256540,  345},
+				["gar_a2_neutral_stalker_11"] = {106.27165985107,    8.2972860336304,    159.94532775879,  257596,  341},
+				["gar_a2_neutral_stalker_12"] = {103.42260742188,    3.7416882514954,    167.00486755371,  255390,  340},
+				["gar_a2_neutral_stalker_13"] = {100.27807617188,    3.6640582084656,    161.50874328613,  252742,  340},
+				["gar_a2_neutral_stalker_14"] = {103.7230758667,     3.672206401825,     170.50019836426,  255395,  340},
+				["gar_a2_neutral_stalker_15"] = {105.25500488281,    8.1986742019653,    155.29202270508,  256495,  341},						
+			  }
+local tNpcq_v1 = {
+--						|section|					   |X|				   |Y|				   |Z|		   |LVL|  |GAME|
+				["gar_a2_bandit_enemy_1"] 	  = {-57.867977142334,   -2.6009278297424,   -211.35079956055, 123372,  358},
+				["gar_a2_bandit_enemy_2"] 	  = {-54.749366760254,   -1.9346896409988,   -188.65129089355, 125228,  312},
+				["gar_a2_bandit_enemy_3"] 	  = {-67.847328186035,   -2.6000916957855,   -204.06867980957, 118622,  362},
+				["gar_a2_bandit_enemy_4"] 	  = {-69.59375,		     -2.4915199279785,   -216.33601379395, 117900,  249},
+				["gar_a2_bandit_enemy_5"] 	  = {-76.017562866211,   -2.5976414680481,   -217.77882385254, 114266,  249},				
+			  }
+local tNpcq_v2 = {
+--						|section|					   |X|				   |Y|				   |Z|		   |LVL|  |GAME|			
+				["gar_b2_bandit_enemy_1"] 	  = {36.758853912354,    0.48392090201378,   -302.90725708008, 196793,  241},
+				["gar_b2_bandit_enemy_2"] 	  = {41.846771240234,    0.4536620080471,    -297.86407470703, 202063,  241},
+				["gar_b2_bandit_enemy_3"] 	  = {33.822887420654,    0.43801799416542,   -294.64837646484, 192766,  241},
+				["gar_b2_bandit_enemy_4"] 	  = {38.970527648926,    0.4023702442646,    -290.77169799805, 199193,  241},
+				["gar_b2_bandit_enemy_5"]	  = {43.447952270508,    0.39761677384377,   -301.74157714844, 203452,  241},				
+			  }
+--]] ------------------------------------------------------------------------------------------------
+--/											Initialize
+--]] ------------------------------------------------------------------------------------------------
+function Init()
+	event("ActorSpawned"):register(OnActorSpawned)
+    event("ActorUpdate"):register(OnActorUpdate)
+    event("ItemTake"):register(OnItemTake)
+    
+    --event("ItemUse[gar_main_quest_lekarstvo_1]"):register(UseMedicine)
+end
+--]] ------------------------------------------------------------------------------------------------
+--/											Callback`s
+--]] ------------------------------------------------------------------------------------------------
+function OnActorSpawned()
+   if level.name() == "e_g" then
+	 if not has_alife_info("sp_a2_hero_to_garbage_come") then
+		if not has_alife_info("gar_mod_npcs_spawner") then
+           xr_effects.gar_a2_create_dolg()
+		give_info("gar_mod_npcs_spawner")
+		end
+	 end	
+   end	
+end
+
+function OnActorUpdate()
+	if iTime <= time_global() then
+    	iTime = time_global()+5000
+    	
+    	UpdateTasks()
+	end
+end
+
+function OnItemTake()
+	if (sec == "gar_main_quest_lekarstvo_1") then
+		db.actor:eat(db.actor:object("gar_main_quest_lekarstvo_1"))
+		give_info("gar_a2_gg_eat_lekarstvo_items")
+		SendTip("Использован предмет "..GetString(GetItemName(sec)), nil, 0, 10, "predmet_otdan")
+	end	
+end
+--]] ------------------------------------------------------------------------------------------------
+--/											Functions
+--]] ------------------------------------------------------------------------------------------------
+function UpdateTasks()
+	local sLvlName = level.name()
+	
+	if sLvlName == "e_g" then
+		--/Квест: Первый сюжетный
+		if has_alife_info("gar_mod_npcs_spawner") and (not has_alife_info("gar_a2_main_quest_1_give")) then 
+			task_manager.get_task_manager():give_task("gar_start_new_quest")
+			give_info("gar_a2_main_quest_1_give")
+		end		
+		if has_alife_info("gar_a2_borland_talking_1") and not has_alife_info("gar_a2_quest_tainik_spawn") then     
+            local x1_cell=alife():create("quest_rukzak",vector():set(-236.65063476563,2.4969086647034,448.83023071289),379970,9694)
+              parse_table=utils_data.parse_spawns("gar_main_quest_lekarstvo_1,gar_main_quest_lekarstvo_2")
+                for k,v in pairs(parse_table) do
+                  for i=1,v.prob do
+                  alife():create(v.section,vector(),0,0,x1_cell.id)
+                end
+            end	   
+	        give_info("gar_a2_quest_tainik_spawn")
+        end
+        if (not has_alife_info("gar_a2_gg_have_all_items")) and db.actor:object("gar_main_quest_lekarstvo_2") and db.actor:object("gar_b47_digger_pda") and has_alife_info("gar_a2_gg_eat_lekarstvo_items") then     
+	       give_info("gar_a2_gg_have_all_items")		  
+        end		
+		if has_alife_info("gar_a2_gg_have_all_items") and xr_effects.has_several_info("gar_a2_sp_killer_","_death",1,5) and (not has_alife_info("gar_a2_sp_killer_all_death")) then       
+		   SendTip("gar_borland_message_text_1", "Борланд:", nil, 14, "borland")
+		   give_info("gar_a2_sp_killer_all_death")
+		end       
+		if not has_alife_info("gar_mod_quest_npcs_spawner") and has_alife_info("bar_a2_dop_quest_4_talking_1") then	
+
+         xr_effects.gar_a2_create_neutral_stalker()
+
+			give_info("gar_mod_quest_npcs_spawner")
+		end	   
+		if has_alife_info("bar_a2_dop_quest_4_create_enemy_1") and (not has_alife_info("gar_mod_questv1_npcs_spawner")) then	
+
+         xr_effects.gar_a2_create_bandit_enemy()
+
+			give_info("gar_mod_questv1_npcs_spawner")
+		end	
+		if has_alife_info("bar_a2_dop_quest_4_create_enemy_2") and (not has_alife_info("gar_mod_questv2_npcs_spawner")) then	
+         xr_effects.gar_b2_create_bandit_enemy()
+
+			give_info("gar_mod_questv2_npcs_spawner")
+		end	
+        --/Квест: Пятый доп. у Азота
+		if has_alife_info("bar_a2_dop_quest_4_talking_1") and xr_effects.has_several_info("bar_a2_dop_quest_4_talking_","_npc",1,5) and (not has_alife_info("bar_a2_dop_quest_4_talking_all_npc")) then           
+			give_info("bar_a2_dop_quest_4_talking_all_npc")
+		end
+        if has_alife_info("bar_a2_dop_quest_4_talking_1") and has_alife_info("bar_a2_dop_quest_4_create_enemy_1") and xr_effects.has_several_info("bar_a2_dop_quest_npc1_","_killed",1,5) and (not has_alife_info("bar_a2_dop_quest_npc1_all_killed")) then           
+			give_info("bar_a2_dop_quest_npc1_all_killed")
+		end
+        if has_alife_info("bar_a2_dop_quest_4_talking_1") and has_alife_info("bar_a2_dop_quest_4_create_enemy_2") and xr_effects.has_several_info("bar_a2_dop_quest_npc2_","_killed",1,5) and (not has_alife_info("bar_a2_dop_quest_npc2_all_killed")) then           
+			give_info("bar_a2_dop_quest_npc2_all_killed")
+		end        		
+	end		   
+end
+
+function UseMedicine()
+	give_info("gar_a2_gg_eat_lekarstvo_items")
+end

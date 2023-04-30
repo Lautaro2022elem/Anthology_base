@@ -1,0 +1,31 @@
+[logic]
+active = sr_idle@give_task
+
+[sr_idle@give_task]
+on_info = {+dl_actor_going_village_dolg_mess} sr_idle@check_position %=give_task(dl_storyline_task_dolg)%
+
+[sr_idle@check_position]
+on_info = {=actor_in_zone(deadlake_storyline_dolg_messages_sr)} sr_idle@message_01 %=dl_message_00%
+
+[sr_idle@message_01]
+on_game_timer = 30 | sr_idle@message_02 %=dl_message_01%
+
+[sr_idle@message_02]
+on_game_timer2 = 50 | sr_idle@message_03 %=dl_message_02%
+
+[sr_idle@message_03]
+on_game_timer3 = 75 | sr_idle@message_04 %=dl_message_03%
+
+[sr_idle@message_04]
+on_game_timer4 = 110 | sr_idle@message_05 %=dl_message_04%
+
+[sr_idle@message_05]
+on_game_timer5 = 130 | sr_idle@message_06 %=dl_message_05%
+
+[sr_idle@message_06]
+on_game_timer6 = 150 | sr_idle@hero_thoughts_31 %=dl_message_06 +dl_actor_complete_dolg_wait%
+
+[sr_idle@hero_thoughts_31]
+on_game_timer7 = 170 | sr_idle@nil %=hero_thoughts_31%
+
+[sr_idle@nil]

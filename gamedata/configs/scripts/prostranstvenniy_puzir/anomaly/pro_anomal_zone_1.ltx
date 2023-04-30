@@ -1,0 +1,19 @@
+[anomal_zone]
+layers_count = 1
+respawn_tries = 3
+max_artefacts = 3
+;applying_force_xz = 200
+;applying_force_y = 400 
+artefacts = af_class_gravi
+start_artefact = af_class_gravi
+coeff = 3, 3, 2, 2, 1, 1
+artefact_ways = pro_electro_af_way_1
+
+[mines_core]
+zone_mine_gravitational_strong_0000
+
+[layer_1]
+mines_section = mines_layer_1 
+
+[mines_layer_1]:mines_core
+name = zone_mine_gravitational_strong_0000

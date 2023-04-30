@@ -1,0 +1,7 @@
+[logic]
+active = sr_idle@start_scene_end_line
+
+[sr_idle@start_scene_end_line]
+on_actor_inside = {+pro_lesnik_final_dialog_meet_complete -pro_actor_teleport_to_black_valley} sr_idle@nil %=CutSceneOnTorch +pro_actor_teleport_to_black_valley%
+
+[sr_idle@nil]

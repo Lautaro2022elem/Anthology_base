@@ -1,0 +1,29 @@
+; general section
+
+[walker@gen]
+meet = no_meet
+use_camp = false
+combat_ignore_cond = true
+combat_ignore_keep_when_attacked = true
+invulnerable = true
+gather_items_enabled = false
+help_wounded_enabled = false
+corpse_detection_enabled = false
+
+; work section
+
+[logic]
+active = walker@1
+
+[walker@1]:walker@gen
+path_walk = sad_sher_cs_actor_walk
+path_look = sad_sher_cs_actor_look
+on_info = {+sad_sher_cs_actor_go_away} walker@2
+
+[walker@2]:walker@gen
+path_walk = sad_sher_actor_after_cut_walk
+;def_state_moving = walk_noweap
+on_timer = 3000 | walker@3 %+sad_sher_cutscene_stop%
+
+[walker@3]:walker@gen
+path_walk = sad_sher_actor_after_cut_walk

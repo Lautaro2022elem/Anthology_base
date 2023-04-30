@@ -1,0 +1,670 @@
+<?xml version='1.0' encoding="UTF-8"?>
+<xml>	
+<!---------------------------------------------========--------------------------------------------------->
+<!-------------------'Смерти вопреки'------------------------------------->
+<!---------------------------------------------========--------------------------------------------------->
+
+
+<!-- База сталкеров. Топи -->
+<character id="topi_stalker_base_patrol_1">
+<class>topi_stalker_base_patrol_1</class>
+</character>
+<character id="topi_stalker_base_patrol_2">
+<class>topi_stalker_base_patrol_2</class>
+</character>
+<character id="topi_stalker_base_patrol_3">
+<class>topi_stalker_base_patrol_3</class>
+</character>
+<character id="topi_stalker_base_patrol_4">
+<class>topi_stalker_base_patrol_4</class>
+</character>
+<character id="topi_stalker_base_patrol_5">
+<class>topi_stalker_base_patrol_5</class>
+</character>
+<character id="topi_stalker_base_patrol_6">
+<class>topi_stalker_base_patrol_6</class>
+</character>
+<character id="topi_stalker_base_patrol_7">
+<class>topi_stalker_base_patrol_7</class>
+</character>
+<character id="topi_stalker_base_patrol_8">
+<class>topi_stalker_base_patrol_8</class>
+</character>
+<character id="topi_stalker_base_lider">
+<class>topi_stalker_base_lider</class>
+</character>
+<character id="topi_stalker_base_zam">
+<class>topi_stalker_base_zam</class>
+</character>
+<character id="topi_stalker_base_medic">
+<class>topi_stalker_base_medic</class>
+</character>
+<character id="topi_stalker_base_trader">
+<class>topi_stalker_base_trader</class>
+</character>
+<character id="topi_stalker_base_artefacter">
+<class>topi_stalker_base_artefacter</class>
+</character>
+<character id="topi_stalker_base_hunter">
+<class>topi_stalker_base_hunter</class>
+</character>
+<character id="topi_stalker_base_snab">
+<class>topi_stalker_base_snab</class>
+</character>
+<character id="topi_stalker_base_radist">
+<class>topi_stalker_base_radist</class>
+</character>
+<character id="topi_stalker_base_mechanic">
+<class>topi_stalker_base_mechanic</class>
+</character>
+<!-- Группа сталкеров в деревне -->
+<character id="topi_b1_stalker_group_leader">
+<class>topi_b1_stalker_group_leader</class>
+</character>
+<character id="topi_b1_stalker_group_member_1">
+<class>topi_b1_stalker_group_member_1</class>
+</character>
+<character id="topi_b1_stalker_group_member_2">
+<class>topi_b1_stalker_group_member_2</class>
+</character>
+<character id="topi_b1_stalker_group_member_3">
+<class>topi_b1_stalker_group_member_3</class>
+</character>
+<character id="topi_b1_stalker_group_member_4">
+<class>topi_b1_stalker_group_member_4</class>
+</character>
+<!-- Охотники в лесу -->
+<character id="topi_a7_stalker_hunter_leader">
+<class>topi_a7_stalker_hunter_leader</class>
+</character>
+<character id="topi_a7_stalker_hunter_member_1">
+<class>topi_a7_stalker_hunter_member_1</class>
+</character>
+<character id="topi_a7_stalker_hunter_member_2">
+<class>topi_a7_stalker_hunter_member_2</class>
+</character>
+
+<character id="topi_a7_stalker_hunter_leader_1">
+<class>topi_a7_stalker_hunter_leader_1</class>
+</character>
+<character id="topi_a7_stalker_hunter_member_1_1">
+<class>topi_a7_stalker_hunter_member_1_1</class>
+</character>
+<character id="topi_a7_stalker_hunter_member_2_1">
+<class>topi_a7_stalker_hunter_member_2_1</class>
+</character>
+<!-- Бандиты у схрона -->
+<character id="topi_b9_bandit_member_1">
+<class>topi_b9_bandit_member_1</class>
+</character>
+<character id="topi_b9_bandit_member_2">
+<class>topi_b9_bandit_member_2</class>
+</character>
+<character id="topi_b9_bandit_member_3">
+<class>topi_b9_bandit_member_3</class>
+</character>
+<!-- Эколог в аномалии -->
+<character id="topi_b306_ecolog_death_body">
+<class>topi_b306_ecolog_death_body</class>
+</character>
+<!-- Раненный сталкер -->
+<character id="topi_b1_stalker_group_wounded">
+<class>topi_b1_stalker_group_wounded</class>
+</character>
+<!-- Связной Чистого Неба -->
+<character id="topi_a3_suget_quest_3_svayznoy">
+<class>topi_a3_suget_quest_3_svayznoy</class>
+</character>
+<!-- Бандиты по первому квесту торговца -->
+<character id="topi_b7_trader_quest_1_bandit_member_1">
+<class>topi_b7_trader_quest_1_bandit_member_1</class>
+</character>
+<character id="topi_b7_trader_quest_1_bandit_member_2">
+<class>topi_b7_trader_quest_1_bandit_member_2</class>
+</character>
+<character id="topi_b7_trader_quest_1_bandit_member_3">
+<class>topi_b7_trader_quest_1_bandit_member_3</class>
+</character>
+<character id="topi_b7_trader_quest_1_bandit_wounded">
+<class>topi_b7_trader_quest_1_bandit_wounded</class>
+</character>
+<character id="topi_b7_trader_quest_1_bandit_prisoner">
+<class>topi_b7_trader_quest_1_bandit_prisoner</class>
+</character>
+<character id="topi_b7_trader_quest_1_stalker_member_1">
+<class>topi_b7_trader_quest_1_stalker_member_1</class>
+</character>
+<character id="topi_b7_trader_quest_1_stalker_member_2">
+<class>topi_b7_trader_quest_1_stalker_member_2</class>
+</character>
+<character id="topi_b7_trader_quest_1_stalker_member_3">
+<class>topi_b7_trader_quest_1_stalker_member_3</class>
+</character>
+<!-- Бандиты по первому квесту торговца -->
+<character id="topi_a6_trader_quest_2_bandit_member_1">
+<class>topi_a6_trader_quest_2_bandit_member_1</class>
+</character>
+<character id="topi_a6_trader_quest_2_bandit_member_2">
+<class>topi_a6_trader_quest_2_bandit_member_2</class>
+</character>
+<character id="topi_a6_trader_quest_2_bandit_member_3">
+<class>topi_a6_trader_quest_2_bandit_member_3</class>
+</character>
+<character id="topi_a6_trader_quest_2_bandit_member_4">
+<class>topi_a6_trader_quest_2_bandit_member_4</class>
+</character>
+<character id="topi_a6_trader_quest_2_bandit_member_5">
+<class>topi_a6_trader_quest_2_bandit_member_5</class>
+</character>
+<!-- Клык -->
+<character id="topi_stalker_fang">
+<class>topi_stalker_fang</class>
+</character>
+<!-- Анубис -->
+<character id="topi_anubis_suget_quest_4">
+<class>topi_anubis_suget_quest_4</class>
+</character>
+<character id="topi_anubis_2_suget_quest_4">
+<class>topi_anubis_2_suget_quest_4</class>
+</character>
+<!-- Группа Чистого Неба. Четвертый сюжетный. -->
+<character id="topi_b9_suget_quest_4_csky_member_1">
+<class>topi_b9_suget_quest_4_csky_member_1</class>
+</character>
+<character id="topi_b9_suget_quest_4_csky_member_2">
+<class>topi_b9_suget_quest_4_csky_member_2</class>
+</character>
+<character id="topi_b9_suget_quest_4_csky_member_3">
+<class>topi_b9_suget_quest_4_csky_member_3</class>
+</character>
+<character id="topi_b9_suget_quest_4_csky_member_4">
+<class>topi_b9_suget_quest_4_csky_member_4</class>
+</character>
+<character id="topi_b9_suget_quest_4_csky_member_5">
+<class>topi_b9_suget_quest_4_csky_member_5</class>
+</character>
+<character id="topi_b9_suget_quest_4_csky_member_6">
+<class>topi_b9_suget_quest_4_csky_member_6</class>
+</character>
+<character id="topi_b9_suget_quest_4_csky_member_7">
+<class>topi_b9_suget_quest_4_csky_member_7</class>
+</character>
+<!-- Группа сталкеров вариант зама -->
+<character id="topi_b1_scaut_leader_var_1">
+<class>topi_b1_scaut_leader_var_1</class>
+</character>
+<character id="topi_b1_scaut_member_1_var_1">
+<class>topi_b1_scaut_member_1_var_1</class>
+</character>
+<character id="topi_b1_scaut_member_2_var_1">
+<class>topi_b1_scaut_member_2_var_1</class>
+</character>
+<!-- Группа сталкеров вариант лидера -->
+<character id="topi_b1_scaut_leader_var_2">
+<class>topi_b1_scaut_leader_var_2</class>
+</character>
+<character id="topi_b1_scaut_member_1_var_2">
+<class>topi_b1_scaut_member_1_var_2</class>
+</character>
+<character id="topi_b1_scaut_member_2_var_2">
+<class>topi_b1_scaut_member_2_var_2</class>
+</character>
+<character id="topi_b1_scaut_killer_member_1">
+<class>topi_b1_scaut_killer_member_1</class>
+</character>
+<character id="topi_b1_scaut_killer_member_2">
+<class>topi_b1_scaut_killer_member_2</class>
+</character>
+<!-- Анубис и Группа чн- второй вариант сюжета первый квест. -->
+<character id="topi_anubis_var_2_suget_quest_1">
+<class>topi_anubis_var_2_suget_quest_1</class>
+</character>
+<character id="topi_var_2_suget_quest_1_csky_member_1">
+<class>topi_var_2_suget_quest_1_csky_member_1</class>
+</character>
+<character id="topi_var_2_suget_quest_1_csky_member_2">
+<class>topi_var_2_suget_quest_1_csky_member_2</class>
+</character>
+<character id="topi_var_2_suget_quest_1_csky_member_3">
+<class>topi_var_2_suget_quest_1_csky_member_3</class>
+</character>
+<!-- Анубис, трупы чн, наемники- второй вариант сюжета второй квест. -->
+<character id="topi_anubis_var_2_suget_quest_2">
+<class>topi_anubis_var_2_suget_quest_2</class>
+</character>
+<character id="topi_var_2_suget_quest_2_csky_body_1">
+<class>topi_var_2_suget_quest_2_csky_body_1</class>
+</character>
+<character id="topi_var_2_suget_quest_2_csky_body_2">
+<class>topi_var_2_suget_quest_2_csky_body_2</class>
+</character>
+<character id="topi_var_2_suget_quest_2_csky_body_3">
+<class>topi_var_2_suget_quest_2_csky_body_3</class>
+</character>
+<character id="topi_var_2_suget_quest_2_killer_member_1">
+<class>topi_var_2_suget_quest_2_killer_member_1</class>
+</character>
+<character id="topi_var_2_suget_quest_2_killer_member_2">
+<class>topi_var_2_suget_quest_2_killer_member_2</class>
+</character>
+<character id="topi_var_2_suget_quest_2_killer_member_3">
+<class>topi_var_2_suget_quest_2_killer_member_3</class>
+</character>
+<character id="topi_var_2_suget_quest_2_killer_member_4">
+<class>topi_var_2_suget_quest_2_killer_member_4</class>
+</character>
+<character id="topi_var_2_suget_quest_2_killer_member_5">
+<class>topi_var_2_suget_quest_2_killer_member_5</class>
+</character>
+<!-- База сталкеров. Третий квест. Второй вариант. -->
+<character id="topi_stalker_base_var_2_member_1">
+<class>topi_stalker_base_var_2_member_1</class>
+</character>
+<character id="topi_stalker_base_var_2_member_2">
+<class>topi_stalker_base_var_2_member_2</class>
+</character>
+<character id="topi_stalker_base_var_2_member_3">
+<class>topi_stalker_base_var_2_member_3</class>
+</character>
+<character id="topi_stalker_base_var_2_member_4">
+<class>topi_stalker_base_var_2_member_4</class>
+</character>
+<character id="topi_stalker_base_var_2_member_5">
+<class>topi_stalker_base_var_2_member_5</class>
+</character>
+<character id="topi_stalker_base_var_2_member_6">
+<class>topi_stalker_base_var_2_member_6</class>
+</character>
+<character id="topi_stalker_base_var_2_member_7">
+<class>topi_stalker_base_var_2_member_7</class>
+</character>
+<character id="topi_stalker_base_var_2_member_8">
+<class>topi_stalker_base_var_2_member_8</class>
+</character>
+<character id="topi_stalker_base_var_2_member_9">
+<class>topi_stalker_base_var_2_member_9</class>
+</character>
+<character id="topi_stalker_base_var_2_member_10">
+<class>topi_stalker_base_var_2_member_10</class>
+</character>
+<!-- ‚торой вариант. ”инальный квест. -->
+<character id="topi_a107_ecolog_member_1">
+<class>topi_a107_ecolog_member_1</class>
+</character>
+<character id="topi_a107_ecolog_member_2">
+<class>topi_a107_ecolog_member_2</class>
+</character>
+<character id="topi_a107_ecolog_member_3">
+<class>topi_a107_ecolog_member_3</class>
+</character>
+<character id="topi_anubis_var_2_suget_quest_final">
+<class>topi_anubis_var_2_suget_quest_final</class>
+</character>
+<!-- Џервый вариант. ”инальный квест. -->
+<character id="topi_anubis_var_1_suget_quest_final_1">
+<class>topi_anubis_var_1_suget_quest_final_1</class>
+</character>
+<character id="topi_anubis_var_1_suget_quest_final_2">
+<class>topi_anubis_var_1_suget_quest_final_2</class>
+</character>
+<character id="topi_var_1_suget_quest_final_csky_member_1">
+<class>topi_var_1_suget_quest_final_csky_member_1</class>
+</character>
+<character id="topi_var_1_suget_quest_final_csky_member_2">
+<class>topi_var_1_suget_quest_final_csky_member_2</class>
+</character>
+<character id="topi_var_1_suget_quest_final_csky_member_3">
+<class>topi_var_1_suget_quest_final_csky_member_3</class>
+</character>
+<character id="topi_var_1_suget_quest_final_csky_member_4">
+<class>topi_var_1_suget_quest_final_csky_member_4</class>
+</character>
+<character id="topi_var_1_suget_quest_final_csky_member_5">
+<class>topi_var_1_suget_quest_final_csky_member_5</class>
+</character>
+<character id="topi_var_1_suget_quest_final_csky_member_6">
+<class>topi_var_1_suget_quest_final_csky_member_6</class>
+</character>
+<character id="topi_var_1_suget_quest_final_csky_member_7">
+<class>topi_var_1_suget_quest_final_csky_member_7</class>
+</character>
+<character id="topi_svyaznoy_var_1_suget_quest_final">
+<class>topi_svyaznoy_var_1_suget_quest_final</class>
+</character>
+<character id="topi_ecolog_var_1_quest_final_member_1">
+<class>topi_ecolog_var_1_quest_final_member_1</class>
+</character>
+<character id="topi_ecolog_var_1_quest_final_member_2">
+<class>topi_ecolog_var_1_quest_final_member_2</class>
+</character>
+<character id="topi_ecolog_var_1_quest_final_member_3">
+<class>topi_ecolog_var_1_quest_final_member_3</class>
+</character>
+<!-- Тайник наемников с отравлением.  -->
+<character id="topi_i1_killer_yad_quest">
+<class>topi_i1_killer_yad_quest</class>
+</character>
+<character id="topi_i1_anubis_yad_quest">
+<class>topi_i1_anubis_yad_quest</class>
+</character>
+<!-- Трупы пасхилки.  -->
+<character id="topi_stalker_trup_pashalka_1">
+<class>topi_stalker_trup_pashalka_1</class>
+</character>
+<character id="topi_stalker_trup_pashalka_2">
+<class>topi_stalker_trup_pashalka_2</class>
+</character>
+<character id="topi_stalker_trup_pashalka_3">
+<class>topi_stalker_trup_pashalka_3</class>
+</character>
+<character id="topi_stalker_trup_pashalka_4">
+<class>topi_stalker_trup_pashalka_4</class>
+</character>
+<character id="topi_stalker_trup_pashalka_5">
+<class>topi_stalker_trup_pashalka_5</class>
+</character>
+<!-- Первый квест.  -->
+<character id="topi_b2_freedom_lider_first_quest">
+<class>topi_b2_freedom_lider_first_quest</class>
+</character>
+<character id="topi_b2_freedom_1_first_quest">
+<class>topi_b2_freedom_1_first_quest</class>
+</character>
+<character id="topi_b2_freedom_2_first_quest">
+<class>topi_b2_freedom_2_first_quest</class>
+</character>
+<character id="topi_b2_freedom_3_first_quest">
+<class>topi_b2_freedom_3_first_quest</class>
+</character>
+<character id="topi_b2_freedom_4_first_quest">
+<class>topi_b2_freedom_4_first_quest</class>
+</character>
+<character id="topi_b2_freedom_5_first_quest">
+<class>topi_b2_freedom_5_first_quest</class>
+</character>
+<!------------------------------------>
+<character id="topi_b2_dolg_1_first_quest">
+<class>topi_b2_dolg_1_first_quest</class>
+</character>
+<character id="topi_b2_dolg_2_first_quest">
+<class>topi_b2_dolg_2_first_quest</class>
+</character>
+<character id="topi_b2_dolg_3_first_quest">
+<class>topi_b2_dolg_3_first_quest</class>
+</character>
+<character id="topi_b2_dolg_4_first_quest">
+<class>topi_b2_dolg_4_first_quest</class>
+</character>
+<!------------------------------------>
+<character id="topi_m1_sborshik_member_1">
+<class>topi_m1_sborshik_member_1</class>
+</character>
+<character id="topi_m1_sborshik_member_2">
+<class>topi_m1_sborshik_member_2</class>
+</character>
+<character id="topi_m1_sborshik_member_3">
+<class>topi_m1_sborshik_member_3</class>
+</character>
+<!------------------------------------>
+<character id="topi_a5_stalker_hunter">
+<class>topi_a5_stalker_hunter</class>
+</character>
+<!------------------------------------>
+<character id="topi_c17_sborshik_mahir">
+<class>topi_c17_sborshik_mahir</class>
+</character>
+<character id="topi_c17_mahir_member_1">
+<class>topi_c17_mahir_member_1</class>
+</character>
+<character id="topi_c17_mahir_member_2">
+<class>topi_c17_mahir_member_2</class>
+</character>
+<character id="topi_c17_sborshik_mahir_2">
+<class>topi_c17_sborshik_mahir_2</class>
+</character>
+<!------------------------------------>
+<character id="topi_a15_freedom_vozmezdie_lider">
+<class>topi_a15_freedom_vozmezdie_lider</class>
+</character>
+<character id="topi_a15_freedom_vozmezdie_member_1">
+<class>topi_a15_freedom_vozmezdie_member_1</class>
+</character>
+<character id="topi_a15_freedom_vozmezdie_member_2">
+<class>topi_a15_freedom_vozmezdie_member_2</class>
+</character>
+<character id="topi_a15_dolg_vozmezdie_lider">
+<class>topi_a15_dolg_vozmezdie_lider</class>
+</character>
+<character id="topi_a15_dolg_vozmezdie_member_1">
+<class>topi_a15_dolg_vozmezdie_member_1</class>
+</character>
+<character id="topi_a15_dolg_vozmezdie_member_2">
+<class>topi_a15_dolg_vozmezdie_member_2</class>
+</character>
+
+<character id="topi_a15_freedom_member_killer_1">
+<class>topi_a15_freedom_member_killer_1</class>
+</character>
+<character id="topi_a15_freedom_member_killer_2">
+<class>topi_a15_freedom_member_killer_2</class>
+</character>
+<character id="topi_a15_freedom_member_killer_3">
+<class>topi_a15_freedom_member_killer_3</class>
+</character>
+<character id="topi_a15_dolg_member_killer_1">
+<class>topi_a15_dolg_member_killer_1</class>
+</character>
+<character id="topi_a15_dolg_member_killer_2">
+<class>topi_a15_dolg_member_killer_2</class>
+</character>
+<character id="topi_a15_dolg_member_killer_3">
+<class>topi_a15_dolg_member_killer_3</class>
+</character>
+<!------------------------------------>
+<character id="topi_b15_dolg_member_1_harold">
+<class>topi_b15_dolg_member_1_harold</class>
+</character>
+<character id="topi_b15_dolg_member_2_harold">
+<class>topi_b15_dolg_member_2_harold</class>
+</character>
+<character id="topi_b15_dolg_member_3_harold">
+<class>topi_b15_dolg_member_3_harold</class>
+</character>
+<character id="topi_b15_dolg_member_4_harold">
+<class>topi_b15_dolg_member_4_harold</class>
+</character>
+<character id="topi_b15_dolg_member_5_harold">
+<class>topi_b15_dolg_member_5_harold</class>
+</character>
+<character id="topi_b15_dolg_member_1_hasan">
+<class>topi_b15_dolg_member_1_hasan</class>
+</character>
+<character id="topi_b15_dolg_member_2_hasan">
+<class>topi_b15_dolg_member_2_hasan</class>
+</character>
+<character id="topi_b15_dolg_member_3_hasan">
+<class>topi_b15_dolg_member_3_hasan</class>
+</character>
+<character id="topi_b15_dolg_member_4_hasan">
+<class>topi_b15_dolg_member_4_hasan</class>
+</character>
+<character id="topi_b15_dolg_member_5_hasan">
+<class>topi_b15_dolg_member_5_hasan</class>
+</character>
+
+<character id="topi_b15_freedom_member_1_harold">
+<class>topi_b15_freedom_member_1_harold</class>
+</character>
+<character id="topi_b15_freedom_member_2_harold">
+<class>topi_b15_freedom_member_2_harold</class>
+</character>
+<character id="topi_b15_freedom_member_3_harold">
+<class>topi_b15_freedom_member_3_harold</class>
+</character>
+<character id="topi_b15_freedom_member_4_harold">
+<class>topi_b15_freedom_member_4_harold</class>
+</character>
+<character id="topi_b15_freedom_member_5_harold">
+<class>topi_b15_freedom_member_5_harold</class>
+</character>
+<character id="topi_b15_freedom_member_1_hasan">
+<class>topi_b15_freedom_member_1_hasan</class>
+</character>
+<character id="topi_b15_freedom_member_2_hasan">
+<class>topi_b15_freedom_member_2_hasan</class>
+</character>
+<character id="topi_b15_freedom_member_3_hasan">
+<class>topi_b15_freedom_member_3_hasan</class>
+</character>
+<character id="topi_b15_freedom_member_4_hasan">
+<class>topi_b15_freedom_member_4_hasan</class>
+</character>
+<character id="topi_b15_freedom_member_5_hasan">
+<class>topi_b15_freedom_member_5_hasan</class>
+</character>
+<!------------------------------------>
+<character id="topi_b19_stalker_technik_helper">
+<class>topi_b19_stalker_technik_helper</class>
+</character>
+
+<character id="topi_a45_stalker_scaut_member_1">
+<class>topi_a45_stalker_scaut_member_1</class>
+</character>
+<character id="topi_a45_stalker_scaut_member_2">
+<class>topi_a45_stalker_scaut_member_2</class>
+</character>
+<character id="topi_a45_stalker_scaut_member_3">
+<class>topi_a45_stalker_scaut_member_4</class>
+</character>
+<character id="topi_a45_stalker_scaut_member_4">
+<class>topi_a45_stalker_scaut_member_4</class>
+</character>
+<!------------------------------------>
+<character id="topi_c7_quest_killer_member_1">
+<class>topi_c7_quest_killer_member_1</class>
+</character>
+<character id="topi_c7_quest_killer_member_2">
+<class>topi_c7_quest_killer_member_2</class>
+</character>
+<character id="topi_c7_quest_killer_member_3">
+<class>topi_c7_quest_killer_member_3</class>
+</character>
+<!------------------------------------>
+<character id="topi_b65_stalker_hasan_member_1">
+<class>topi_b65_stalker_hasan_member_1</class>
+</character>
+<character id="topi_b65_stalker_hasan_member_2">
+<class>topi_b65_stalker_hasan_member_2</class>
+</character>
+<character id="topi_b65_stalker_hasan_member_3">
+<class>topi_b65_stalker_hasan_member_3</class>
+</character>
+<!------------------------------------>
+<character id="topi_a65_stalker_harold_member_1">
+<class>topi_a65_stalker_harold_member_1</class>
+</character>
+<character id="topi_a65_stalker_harold_member_2">
+<class>topi_a65_stalker_harold_member_2</class>
+</character>
+<character id="topi_a65_stalker_harold_member_3">
+<class>topi_a65_stalker_harold_member_3</class>
+</character>
+<!------------------------------------>
+<character id="topi_d5_killer_ceh_quest_1">
+<class>topi_d5_killer_ceh_quest_1</class>
+</character>
+<character id="topi_d5_csky_svayznoy_quest_2">
+<class>topi_d5_csky_svayznoy_quest_2</class>
+</character>
+<!------------------------------------>
+<character id="topi_e7_csky_quest_4_member_1">
+<class>topi_e7_csky_quest_4_member_1</class>
+</character>
+<character id="topi_e7_csky_quest_4_member_2">
+<class>topi_e7_csky_quest_4_member_2</class>
+</character>
+<character id="topi_e7_csky_quest_4_member_3">
+<class>topi_e7_csky_quest_4_member_3</class>
+</character>
+<character id="topi_e7_csky_quest_4_member_4">
+<class>topi_e7_csky_quest_4_member_4</class>
+</character>
+<character id="topi_e7_csky_quest_4_member_5">
+<class>topi_e7_csky_quest_4_member_5</class>
+</character>
+<character id="topi_e7_csky_quest_4_member_6">
+<class>topi_e7_csky_quest_4_member_6</class>
+</character>
+<character id="topi_e7_csky_quest_4_member_7">
+<class>topi_e7_csky_quest_4_member_7</class>
+</character>
+<character id="topi_e7_csky_quest_4_member_8">
+<class>topi_e7_csky_quest_4_member_8</class>
+</character>
+<character id="topi_e7_csky_quest_4_member_9">
+<class>topi_e7_csky_quest_4_member_9</class>
+</character>
+<character id="topi_e7_csky_quest_4_member_10">
+<class>topi_e7_csky_quest_4_member_10</class>
+</character>
+<!------------------------------------>
+<character id="topi_m2_killer_ceh_quest_5">
+<class>topi_m2_killer_ceh_quest_5</class>
+</character>
+<!-- База сталкеров. Пятый квест. Третий вариант. -->
+<character id="topi_stalker_base_var_3_member_1">
+<class>topi_stalker_base_var_3_member_1</class>
+</character>
+<character id="topi_stalker_base_var_3_member_2">
+<class>topi_stalker_base_var_3_member_2</class>
+</character>
+<character id="topi_stalker_base_var_3_member_3">
+<class>topi_stalker_base_var_3_member_3</class>
+</character>
+<character id="topi_stalker_base_var_3_member_4">
+<class>topi_stalker_base_var_3_member_4</class>
+</character>
+<character id="topi_stalker_base_var_3_member_5">
+<class>topi_stalker_base_var_3_member_5</class>
+</character>
+<character id="topi_stalker_base_var_3_member_6">
+<class>topi_stalker_base_var_3_member_6</class>
+</character>
+<character id="topi_stalker_base_var_3_member_7">
+<class>topi_stalker_base_var_3_member_7</class>
+</character>
+<character id="topi_stalker_base_var_3_member_8">
+<class>topi_stalker_base_var_3_member_8</class>
+</character>
+<character id="topi_stalker_base_var_3_member_9">
+<class>topi_stalker_base_var_3_member_9</class>
+</character>
+<character id="topi_stalker_base_var_3_member_10">
+<class>topi_stalker_base_var_3_member_10</class>
+</character>
+<!------------------------------------>
+<character id="topi_k9_freedom_anubis_quest_6">
+<class>topi_k9_freedom_anubis_quest_6</class>
+</character>
+<character id="topi_k9_killer_ceh_quest_6">
+<class>topi_k9_killer_ceh_quest_6</class>
+</character>
+<!------------------------------------>
+
+	<character id="sim_default_stalker_topi_0">
+		<class>sim_default_stalker_topi_0</class>
+	</character>
+	<character id="sim_default_stalker_topi_1">
+		<class>sim_default_stalker_topi_1</class>
+	</character>
+	<character id="sim_default_stalker_topi_2">
+		<class>sim_default_stalker_topi_2</class>
+	</character>
+	<character id="sim_default_stalker_topi_3">
+		<class>sim_default_stalker_topi_3</class>
+	</character>
+	<character id="sim_default_stalker_topi_4">
+		<class>sim_default_stalker_topi_4</class>
+	</character>
+
+</xml>

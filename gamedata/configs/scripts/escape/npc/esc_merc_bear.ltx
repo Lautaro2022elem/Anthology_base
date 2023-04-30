@@ -1,0 +1,84 @@
+[logic@esc_squad_esc_merc_bear]
+active = walker@wait
+prior = 100
+suitable = {=check_npc_name(esc_merc_bear)} true, false
+
+[walker@wait]
+path_walk = bear_walk_1
+on_info = {=dist_to_actor_le(50)} remark@hello
+meet = no_meet
+
+[remark@hello]
+anim = hello_wpn
+target = story | actor
+meet = meet@dialog
+danger = danger
+on_info = {=dist_to_actor_le(2)} remark@dialog_actor
+
+[remark@dialog_actor]
+anim = wait_na
+target = story | actor
+meet = meet@dialog
+danger = danger
+on_info = {+esc_quest_dangerous_business_merc_proval} %=actor_enemy%
+
+[meet@dialog]
+abuse           = false
+close_anim 		= nil
+far_anim 		= nil
+far_victim 		= nil
+close_distance  = 0
+far_distance 	= 0
+close_victim = actor
+use = {!actor_enemy =dist_to_actor_le(2) -esc_quest_dangerous_business_merc_dialog_and} self, true
+allow_break = false
+meet_dialog = esc_quest_dangerous_business_merc_dialog
+trade_enable = false
+
+[smart_terrains]
+none = true
+
+[logic@esc_squad_esc_merc_1]
+active = walker@1
+
+[walker@1]
+path_walk = merc_1_walk_1
+on_info = {=dist_to_actor_le(50)} remark@1
+meet = no_meet
+
+[remark@1]
+anim = threat_na
+target = story | actor
+meet = no_meet
+danger = danger
+on_info = {+esc_quest_dangerous_business_merc_proval} %=actor_enemy%
+
+[logic@esc_squad_esc_merc_2]
+active = walker@2
+
+[walker@2]
+path_walk = merc_2_walk_1
+on_info = {=dist_to_actor_le(50)} remark@2
+meet = no_meet
+
+[remark@2]
+anim = threat_na
+target = story | actor
+meet = no_meet
+danger = danger
+on_info = {+esc_quest_dangerous_business_merc_proval} %=actor_enemy%
+
+[logic@esc_squad_esc_merc_3]
+active = walker@3
+
+[walker@3]
+path_walk = merc_3_walk_1
+on_info = {=dist_to_actor_le(50)} remark@3
+meet = no_meet
+
+[remark@3]
+anim = threat_na
+target = story | actor
+meet = no_meet
+danger = danger
+on_info = {+esc_quest_dangerous_business_merc_proval} %=actor_enemy%

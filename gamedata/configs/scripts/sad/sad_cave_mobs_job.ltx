@@ -1,0 +1,25 @@
+[mob_home@1]
+path_home = mobs_home_1
+home_min_radius = 10
+home_max_radius = 20
+aggressive = true
+
+[mob_death]
+on_info = %=inc_counter(sad_cave_mob_dead)%
+
+; --------------------------------------------
+[logic@mobx_1]
+suitable = {=target_squad_name(sad_cave_tushkans)} true
+on_death = mob_death
+monster_job = true
+active = mob_home@1
+prior = 250
+
+[logic@mobx_2]:logic@mobx_1
+[logic@mobx_3]:logic@mobx_1
+[logic@mobx_4]:logic@mobx_1
+[logic@mobx_5]:logic@mobx_1
+[logic@mobx_6]:logic@mobx_1
+[logic@mobx_7]:logic@mobx_1
+[logic@mobx_8]:logic@mobx_1
+[logic@mobx_9]:logic@mobx_1

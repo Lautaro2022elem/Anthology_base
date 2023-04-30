@@ -1,0 +1,271 @@
+<?xml version='1.0' encoding="UTF-8"?>
+
+<xml>
+	<!-- SAD Profiles -->
+	
+   <character id="sad_cs_temp_char">
+		<class>sad_cs_temp_char</class> 
+   </character>
+	
+   <character id="sad_stalker_guide">
+		<class>sad_stalker_guide</class> 
+   </character>
+	
+   <character id="sad_atr_trader">
+		<class>sad_atr_trader</class> 
+   </character>
+   <character id="sad_atr_guard">
+		<class>sad_atr_guard</class> 
+   </character>
+   
+   <character id="sad_turist_master">
+		<class>sad_turist_master</class> 
+   </character>
+   
+	<!-- B1 -->
+   <character id="sad_b1_stalker_mutny">
+		<class>sad_b1_stalker_mutny</class> 
+   </character>
+   <character id="sad_b1_mutny_member_1">
+		<class>sad_b1_mutny_member_1</class> 
+   </character>
+   <character id="sad_b1_mutny_member_2">
+		<class>sad_b1_mutny_member_2</class> 
+   </character>
+   <character id="sad_b1_mutny_member_3">
+		<class>sad_b1_mutny_member_3</class> 
+   </character>
+   <character id="sad_b1_mutny_member_4">
+		<class>sad_b1_mutny_member_4</class> 
+   </character>
+   <character id="sad_b1_mutny_member_5">
+		<class>sad_b1_mutny_member_5</class> 
+   </character>
+   <character id="sad_b1_stalker_barman">
+		<class>sad_b1_stalker_barman</class> 
+   </character>
+   <character id="sad_b1_stalker_tech">
+		<class>sad_b1_stalker_tech</class> 
+   </character>
+   <character id="sad_b1_stalker_mudak">
+		<class>sad_b1_stalker_mudak</class> 
+   </character>
+
+    ;Mutny Renegade
+   <character id="sad_b1_stalker_mutny_renegade">
+		<class>sad_b1_stalker_mutny_renegade</class> 
+   </character>
+   <character id="sad_b1_stalker_barman_renegade">
+		<class>sad_b1_stalker_barman_renegade</class> 
+   </character>
+   <character id="sad_b1_stalker_tech_renegade">
+		<class>sad_b1_stalker_tech_renegade</class> 
+   </character>
+   <character id="sad_b1_mutny_member_1_renegade">
+		<class>sad_b1_mutny_member_1_renegade</class> 
+   </character>
+   <character id="sad_b1_mutny_member_2_renegade">
+		<class>sad_b1_mutny_member_2_renegade</class> 
+   </character>
+
+   <character id="sad_b1_new_trader">
+		<class>sad_b1_new_trader</class> 
+   </character>
+   <character id="sad_b1_new_tech">
+		<class>sad_b1_new_tech</class> 
+   </character>
+   
+   <!-- SIM 2 -->
+   <character id="sad_sim_2_stalker_vasya">
+		<class>sad_sim_2_stalker_vasya</class> 
+   </character>
+   <character id="sad_sim_2_bandos">
+		<class>sad_sim_2_bandos</class> 
+   </character>
+   
+   <!-- BAN -->
+   
+   <character id="sad_ban_bandit_leader">
+		<class>sad_ban_bandit_leader</class> 
+   </character>
+   <character id="sad_ban_bandit_gvard">
+		<class>sad_ban_bandit_gvard</class> 
+   </character>
+   
+   <!-- B2 -->
+   
+   <character id="sad_b2_stalker_maxim">
+		<class>sad_b2_stalker_maxim</class> 
+   </character>
+   <character id="sad_b2_stalker_barman">
+		<class>sad_b2_stalker_barman</class> 
+   </character>
+   
+   <character id="sad_b2_stalker_tech">
+		<class>sad_b2_stalker_tech</class> 
+   </character>
+   <character id="sad_b2_bunker_guard">
+		<class>sad_b2_bunker_guard</class> 
+   </character>
+   <character id="sad_stalker_volodya">
+		<class>sad_stalker_volodya</class> 
+   </character>
+   <character id="sad_b2_stalker_artur">
+		<class>sad_b2_stalker_artur</class> 
+   </character>
+   
+   <!-- SIM 7 -->
+   <character id="sad_sim_7_stalker_gena">
+		<class>sad_sim_7_stalker_gena</class> 
+   </character>
+   
+   <!-- SAD_B3A -->
+   <character id="sad_b2_stalker_maxim_member_1">
+		<class>sad_b2_stalker_maxim_member_1</class> 
+   </character>
+   <character id="sad_b2_stalker_maxim_member_2">
+		<class>sad_b2_stalker_maxim_member_2</class> 
+   </character>
+   <character id="sad_b2_stalker_maxim_member_3">
+		<class>sad_b2_stalker_maxim_member_3</class> 
+   </character>
+   <character id="sad_b2_stalker_maxim_member_4">
+		<class>sad_b2_stalker_maxim_member_4</class> 
+   </character>
+   <character id="sad_b2_stalker_maxim_member_5">
+		<class>sad_b2_stalker_maxim_member_5</class> 
+   </character>
+   
+   <!-- RANCHO -->
+   <character id="sad_ran_cowboy">
+		<class>sad_ran_cowboy</class> 
+   </character>
+   <character id="sad_ran_ucheny">
+		<class>sad_ran_ucheny</class> 
+   </character>
+   <character id="sad_ran_trader">
+		<class>sad_ran_trader</class> 
+   </character>
+   <character id="sad_sim_14_oleg">
+		<class>sad_sim_14_oleg</class> 
+   </character>
+   
+   <!-- B3 -->
+   
+   <character id="sad_b3_trader">
+		<class>sad_b3_trader</class> 
+   </character>
+   <character id="sad_b3_technic">
+		<class>sad_b3_technic</class> 
+   </character>
+   
+   <!--	-->
+   
+   <character id="sad_stalker_radik">
+		<class>sad_stalker_radik</class> 
+   </character>
+   <character id="sad_radik_member_1">
+		<class>sad_radik_member_1</class> 
+   </character>
+   <character id="sad_radik_member_2">
+		<class>sad_radik_member_2</class> 
+   </character>
+   <character id="sad_radik_member_3">
+		<class>sad_radik_member_3</class> 
+   </character>
+   <character id="sad_sher_outfit_gonets">
+		<class>sad_sher_outfit_gonets</class> 
+   </character>
+   
+   <character id="sad_sher_killer_pdast">
+		<class>sad_sher_killer_pdast</class> 
+   </character>
+   <character id="sad_b4_killer_podgvard">
+		<class>sad_b4_killer_podgvard</class> 
+   </character>
+   <character id="sad_b4_killer_glavar">
+		<class>sad_b4_killer_glavar</class> 
+   </character>
+   <character id="sad_b4_stalker_fedor">
+		<class>sad_b4_stalker_fedor</class> 
+   </character>
+   
+   <character id="sad_stalker_grisha">
+		<class>sad_stalker_grisha</class> 
+   </character>
+   <character id="sad_grisha_member_1">
+		<class>sad_grisha_member_1</class> 
+   </character>
+   <character id="sad_grisha_member_2">
+		<class>sad_grisha_member_2</class> 
+   </character>
+   <character id="sad_grisha_member_3">
+		<class>sad_grisha_member_3</class> 
+   </character>
+   <character id="sad_grisha_member_4">
+		<class>sad_grisha_member_4</class> 
+   </character>
+   
+    <character id="sad_sim_9_noy">
+		<class>sad_sim_9_noy</class> 
+   </character>
+   
+    <character id="sad_b3_ucheny_raz">
+		<class>sad_b3_ucheny_raz</class> 
+   </character>
+    <character id="sad_b3_ucheny_dva">
+		<class>sad_b3_ucheny_dva</class> 
+   </character>
+    <character id="sad_b3_helper_ucheny_1">
+		<class>sad_b3_helper_ucheny_1</class> 
+   </character>
+    <character id="sad_b3_helper_ucheny_2">
+		<class>sad_b3_helper_ucheny_2</class> 
+   </character>
+   
+    <character id="sad_ucheny_1">
+		<class>sad_ucheny_1</class> 
+   </character>
+    <character id="sad_ucheny_2">
+		<class>sad_ucheny_2</class> 
+   </character>
+    <character id="sad_ucheny_3">
+		<class>sad_ucheny_3</class> 
+   </character>
+   
+   <!-- CORPSES -->
+   
+   <character id="sad_trus_corpse">
+		<class>sad_trus_corpse</class> 
+   </character>
+   <character id="sad_military_corpsik">
+		<class>sad_military_corpsik</class> 
+   </character>
+   <character id="sad_sim_3_novice_corpse">
+		<class>sad_sim_3_novice_corpse</class> 
+   </character>
+   <character id="sad_sim_6_vadik_corpse">
+		<class>sad_sim_6_vadik_corpse</class> 
+   </character>
+   <character id="sad_sim_6_romka_corpse">
+		<class>sad_sim_6_romka_corpse</class> 
+   </character>
+   <character id="sad_sim_5_corpse">
+		<class>sad_sim_5_corpse</class> 
+   </character>
+   <character id="sad_vofka_corpse">
+		<class>sad_vofka_corpse</class> 
+   </character>
+   <character id="sad_psi_cave_corpse">
+		<class>sad_psi_cave_corpse</class> 
+   </character>
+   <character id="sad_sim_7_cave_corpse">
+		<class>sad_sim_7_cave_corpse</class> 
+   </character>
+   <character id="sad_cave_corpse_1">
+		<class>sad_cave_corpse_1</class> 
+   </character>
+   <character id="sad_cave_corpse_2">
+		<class>sad_cave_corpse_2</class> 
+   </character>   
+</xml>

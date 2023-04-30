@@ -1,0 +1,25 @@
+[logic]
+active = sr_idle@cut_scene_final
+
+[sr_idle@cut_scene_final]
+on_info = {+blck_val_final_zastava_quest_neutral_end -blck_val_spawn_cut_scene_stalker_final} sr_idle@cut_scene_final_0 %=run_postprocess(black:2525:true) =RavenMemmoryStart =teleport_actor(actor_in_final_scene_teleport_walk:actor_in_final_scene_teleport_look) =set_game_time(19:20) =spawn_object(blck_val_final_scene_hunter:blck_val_final_scene_hunter_spawn) =spawn_object(blck_val_final_scene_actor:blck_val_final_scene_actor_spawn) +blck_val_spawn_cut_scene_stalker_final%
+
+[sr_idle@cut_scene_final_0]
+on_timer = 3000 | sr_idle@cut_scene_final_1 %=intro_ending_neutral_0%
+
+[sr_idle@cut_scene_final_1]
+on_timer = 400 | sr_cutscene@cut_scene_final_2 %+blck_val_intro_ending_neutral_0_stop_postprocess%
+
+[sr_cutscene@cut_scene_final_2]
+point = actor_in_final_scene_teleport_walk
+look = actor_in_final_scene_teleport_look
+cam_effector = scenario_cam\black_valley\blck_val_final_scene_camera
+enable_ui_on_end = false
+global_cameffect = true
+on_info = {+blck_val_intro_ending_neutral_0_stop_postprocess -blck_val_intro_ending_neutral_0_show_start} %=stop_postprocess(2525) +blck_val_intro_ending_neutral_0_show_start%
+on_timer = 25000 | sr_idle@cut_scene_final_3 %=run_postprocess(black:2525:true)%
+
+[sr_idle@cut_scene_final_3]
+on_timer = 1000 | sr_idle@nil %=teleport_actor(actor_to_digger_stash_teleport_walk:actor_to_digger_stash_teleport_look)%
+
+[sr_idle@nil]

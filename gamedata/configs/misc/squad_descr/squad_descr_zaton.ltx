@@ -1,0 +1,57 @@
+; «десь содержатс€ дескрипшены сквадов, которые потом можно создавать использу€ спец функции.
+
+[zaton_killer_guide_station_squad]:online_offline_group
+faction = killer
+npc = zaton_killer_guide_station
+npc_in_squad = 1, 1
+target_smart = zat_b40_smart_terrain
+
+[zat_tech_mlr_squad]:online_offline_group
+faction = stalker
+npc_random = zat_tech_mlr
+npc_in_squad = 1, 1
+target_smart = zat_stalker_base_smart
+
+[simulation_snork_task_noah_2]:online_offline_group
+faction = monster_zombied_day
+npc_random = snork_weak, snork_weak2, snork_weak3, snork_normal3, snork_normal, snork_normal2, snork_strong, snork_strong2, snork_strong3
+npc_in_squad = 4, 6
+on_death = %+simulation_snork_task_noah_2_death%
+target_smart = zat_b28
+
+[zat_stalker_base_smart_mlr_squad]:online_offline_group
+faction = stalker
+npc_random = sim_default_stalker_0, sim_default_stalker_1, sim_default_stalker_2, sim_default_stalker_1, sim_default_stalker_2
+npc_in_squad = 2, 3
+target_smart = zat_stalker_base_smart
+
+[zat_stancia_trader_merc_squad]:online_offline_group
+faction = killer
+npc = zat_stancia_trader_merc
+npc_in_squad = 1, 1
+target_smart = zat_b40_smart_terrain
+
+[zat_stancia_mech_merc_squad]:online_offline_group
+faction = killer
+npc = zat_stancia_mech_merc
+npc_in_squad = 1, 1
+target_smart = zat_b40_smart_terrain
+
+[guid_zan_stalker_locman_squad]:online_offline_group
+faction = stalker
+npc =  guid_zan_stalker_locman
+target_smart = zat_stalker_base_smart
+story_id = guid_zan_stalker_locman_squad
+
+[zat_stalker_breeder_squad]:online_offline_group
+faction = ecolog
+npc = zat_stalker_breeder
+target_smart = zat_stalker_base_smart
+story_id = zat_stalker_breeder_squad
+
+[zat_b22_medic_2]:online_offline_group
+faction = stalker
+sympathy = 0
+npc = zat_b22_stalker_medic_2
+target_smart = zat_stalker_base_smart
+story_id = zat_b22_medic_2

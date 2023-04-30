@@ -1,0 +1,86 @@
+;=========meet_quest_line========
+[meet@quest_line]
+close_anim 		= nil
+close_victim 	= nil
+far_anim 		= nil
+far_victim 		= nil
+close_distance 	= 0
+far_distance 	= 0
+use = {=actor_enemy} false, {=dist_to_actor_le(3)} true, false
+snd_on_use = {!dist_to_actor_le(3)} nil
+meet_on_talking = false
+;==================================
+
+[logic]
+active = remark@blck_val_bandit_prison_spawn
+post_combat_time = 0, 0
+suitable = {=check_npc_name(blck_val_bandit_prison_scene)} true, false
+prior = 250
+
+[remark@blck_val_bandit_prison_spawn]
+anim = guard_na
+target = story | actor
+on_info = {+blck_val_bandit_escape_spawn} camper@blck_val_bandit_prison_scene_move
+combat_ignore_cond = true
+combat_ignore_keep_when_attacked = true
+invulnerable = true
+gather_items_enabled = false
+help_wounded_enabled = false
+corpse_detection_enabled = false
+meet = no_meet
+
+[camper@blck_val_bandit_prison_scene_move]
+path_walk = blck_val_bandit_prison_scene_walk_1
+meet = no_meet
+def_state_moving = sneak_run
+gather_items_enabled = false
+help_wounded_enabled = false
+corpse_detection_enabled = false
+invulnerable = true
+on_signal = blck_val_bandit_prison_scene_move | {-blck_val_bandit_prison_scene_come} remark@blck_val_bandit_prison_meet %+blck_val_bandit_prison_scene_come%
+
+[remark@blck_val_bandit_prison_meet]
+anim = hide
+target = story | actor
+on_info = {+blck_val_shmiga_escape_from_prison} camper@blck_val_bandit_prison_scene_move_1
+combat_ignore_cond = true
+combat_ignore_keep_when_attacked = true
+invulnerable = true
+gather_items_enabled = false
+help_wounded_enabled = false
+corpse_detection_enabled = false
+use_camp = false
+meet = no_meet
+
+[camper@blck_val_bandit_prison_scene_move_1]
+path_walk = blck_val_bandit_prison_scene_walk_2
+meet = no_meet
+def_state_moving = run
+on_info = {=dist_to_actor_ge(100)} %=release_npc%
+on_info2 = {+blck_val_key_to_prison_spawn_end} %=release_npc%
+gather_items_enabled = false
+help_wounded_enabled = false
+corpse_detection_enabled = false
+invulnerable = true
+on_signal = blck_val_bandit_prison_scene_move_1 | {-blck_val_bandit_prison_scene_come_1} remark@stay_no_meet %+blck_val_bandit_prison_scene_come_1%
+
+[remark@stay_no_meet]
+anim = guard_na
+target = story | actor
+on_info = {=dist_to_actor_ge(80)} %=release_npc%
+on_info2 = {+blck_val_key_to_prison_spawn_end} %=release_npc%
+combat_ignore_cond = true
+combat_ignore_keep_when_attacked = true
+invulnerable = true
+gather_items_enabled = false
+help_wounded_enabled = false
+corpse_detection_enabled = false
+use_camp = false
+meet = no_meet
+
+[meet@start_quest]:meet@quest_line
+close_victim = actor
+;use = {!actor_enemy} self, true
+allow_break = false
+meet_dialog = blck_val_bandit_prison_escape
+trade_enable = false

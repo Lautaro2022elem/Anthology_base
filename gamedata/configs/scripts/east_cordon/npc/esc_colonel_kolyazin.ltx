@@ -1,0 +1,67 @@
+[logic@esc_colonel_kolyazin]
+active = animpoint@esc_colonel_kolyazin
+suitable = {=check_npc_name(esc_colonel_kolyazin)} true, false
+level_spot = quest_npc
+prior = 300
+
+[animpoint@esc_colonel_kolyazin]
+cover_name = esc_barrer_colonel_kolyazin_sit
+gather_items_enabled = false
+corpse_detection_enabled = false
+combat_ignore_keep_when_attacked = true 
+combat_ignore_cond = true
+invulnerable = true
+meet = meet
+use_camp = false
+on_info = {+esc_barrer_npc_remove_pat_1} remark@see_actor %=teleport_npc(esc_colonel_kolyazin_walk_1:esc_colonel_kolyazin_look_1)%
+
+[remark@see_actor]
+anim = fold_arms
+target = story | actor
+meet = meet@dialog
+danger = danger
+on_info = {+esc_colonel_kolyazin_prisoner_actor_dialog_complite} walker
+
+[walker]
+path_walk = esc_colonel_kolyazin_walk_2
+path_look = esc_colonel_kolyazin_look_2
+on_info = {+esc_actor_barrier_outside} animpoint@2
+def_state_standing = fold_arms
+invulnerable = true
+meet = no_meet
+
+[animpoint@2]
+cover_name = esc_barrer_colonel_kolyazin_sit
+gather_items_enabled = false
+corpse_detection_enabled = false
+combat_ignore_keep_when_attacked = true 
+combat_ignore_cond = true
+invulnerable = true
+meet = meet
+use_camp = false
+
+[meet]
+;close_snd_hello = esc_colonel_kolyazin_meet
+;close_snd_bye 	= esc_colonel_kolyazin_meet_bye
+close_anim 	= nil
+close_victim 	= nil
+far_anim 	= nil
+far_victim 	= nil
+close_distance  = 0
+far_distance 	= 0
+close_snd_distance = 3
+use = {=actor_enemy} false, true
+allow_break 	= false
+
+[meet@dialog]
+abuse           = false
+close_anim 		= nil
+far_anim 		= nil
+far_victim 		= nil
+close_distance  = 0
+far_distance 	= 0
+close_victim	= actor
+use				= {!actor_enemy =dist_to_actor_le(2)} self, true
+allow_break		= false
+meet_dialog		= esc_colonel_kolyazin_prisoner_actor_dialog
+trade_enable	= false

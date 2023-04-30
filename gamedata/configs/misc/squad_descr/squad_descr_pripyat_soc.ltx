@@ -1,0 +1,70 @@
+[pri_followers_stalker_squad]:online_offline_group
+faction = stalker
+npc = pri_followers_leader, pri_followers_bomber, pri_followers_stalker1, pri_followers_stalker2, pri_followers_stalker3
+on_death = %+pri_followers_all_dead%
+target_smart = {+aes_smart_terrain_monolit_blockpost4_squad_death} nil, {+aes_desant_go} aes_smart_terrain_monolit_blockpost4, {+pri_smart_pseudodog_lair1_squad_death} aes_smart_terrain_monsters1, {+pri_smart_tushkano_lair1_squad_death} pri_smart_pseudodog_lair1, {+pri_smart_controler_lair1_squad_death} pri_smart_tushkano_lair1, {+pri_smart_monolith_stalker3_squad_death} pri_smart_controler_lair1, {+pri_followers_start} pri_smart_monolith_stalker3, pri_smart_neutral_stalker1
+rush = true
+story_id = pri_followers_stalker_squad
+
+[pri_respawn_freedom_squad_veteran]:online_offline_group
+faction = freedom
+npc_random = sim_default_freedom_4
+npc_in_squad = 5
+target_smart = {+aes_smart_terrain_monolit_blockpost4_squad_death} nil, {+aes_desant_go} aes_smart_terrain_monolit_blockpost4, {+pri_smart_pseudodog_lair1_squad_death} aes_smart_terrain_monsters1, {+pri_smart_tushkano_lair1_squad_death} pri_smart_pseudodog_lair1, {+pri_smart_controler_lair1_squad_death} pri_smart_tushkano_lair1, {+pri_smart_monolith_stalker3_squad_death} pri_smart_controler_lair1, {+pri_followers_start} pri_smart_monolith_stalker3
+rush = true
+
+[pri_respawn_dolg_squad_veteran]:online_offline_group
+faction = dolg
+npc_random = sim_default_duty_4
+npc_in_squad = 5
+target_smart = {+aes_smart_terrain_monolit_blockpost4_squad_death} nil, {+aes_desant_go} aes_smart_terrain_monolit_blockpost4, {+pri_smart_pseudodog_lair1_squad_death} aes_smart_terrain_monsters1, {+pri_smart_tushkano_lair1_squad_death} pri_smart_pseudodog_lair1, {+pri_smart_controler_lair1_squad_death} pri_smart_tushkano_lair1, {+pri_smart_monolith_stalker3_squad_death} pri_smart_controler_lair1, {+pri_followers_start} pri_smart_monolith_stalker3
+rush = true
+
+[pri_respawn_military_squad_veteran]:online_offline_group
+faction = army
+npc_random = sim_default_military_4
+npc_in_squad = 8
+target_smart = {+aes_smart_terrain_monolit_blockpost4_squad_death} nil, {+aes_desant_go} aes_smart_terrain_monolit_blockpost4, aes_smart_terrain_monsters1
+rush = true
+
+[pri_respawn_merc_squad_veteran]:online_offline_group
+faction = killer
+npc_random = sim_default_killer_4
+npc_in_squad = 5
+target_smart = {+aes_smart_terrain_monolit_blockpost4_squad_death} nil, {+aes_desant_go} aes_smart_terrain_monolit_blockpost4, aes_smart_terrain_monsters1
+rush = true
+
+[pri_smart_monolith_stalker3_squad]:online_offline_group
+faction = monolith
+npc_random = sim_default_monolith_2, sim_default_monolith_2, sim_default_monolith_3
+npc_in_squad = 4
+on_death = %+pri_smart_monolith_stalker3_squad_death%
+target_smart = pri_smart_monolith_stalker3
+
+[pri_smart_controler_lair1_squad]:online_offline_group
+faction = monolith
+npc_random = sim_default_monolith_2, sim_default_monolith_2, sim_default_monolith_3
+npc_in_squad = 4, 5
+on_death = %+pri_smart_controler_lair1_squad_death%
+target_smart = pri_smart_tushkano_lair1
+
+[pri_smart_tushkano_lair1_squad]:online_offline_group
+faction = monolith
+npc_random = sim_default_monolith_2, sim_default_monolith_2, sim_default_monolith_3
+npc_in_squad = 4
+on_death = %+pri_smart_tushkano_lair1_squad_death%
+target_smart = pri_smart_tushkano_lair1
+
+[pri_smart_pseudodog_lair1_squad]:online_offline_group
+faction = monolith
+npc_random = sim_default_monolith_2, sim_default_monolith_2, sim_default_monolith_3
+npc_in_squad = 4
+on_death = %+pri_smart_pseudodog_lair1_squad_death%
+target_smart = pri_smart_pseudodog_lair1
+
+[aes_smart_terrain_monolit_blockpost4_squad]:online_offline_group
+faction = monolith
+npc_random = sim_default_monolith_2, sim_default_monolith_2, sim_default_monolith_3
+npc_in_squad = 5
+on_death = %+aes_smart_terrain_monolit_blockpost4_squad_death%
+target_smart = aes_smart_terrain_monolit_blockpost4

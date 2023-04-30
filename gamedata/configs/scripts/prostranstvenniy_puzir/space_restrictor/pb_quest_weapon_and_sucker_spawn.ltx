@@ -1,0 +1,7 @@
+[logic]
+active = sr_idle@spawn_weapon
+
+[sr_idle@spawn_weapon]
+on_info = {+pro_quest_duty_weapon_found_meet -pro_weapon_and_bloodsucker_spawn_end} sr_idle@nil %=spawn_object(pb_wpn_abakan:pro_bunchuk_weapon_spawn) =create_squad(pro_bloodsucker_quest_squad:pro_smart_terrain_4_1_quest) +pro_weapon_and_bloodsucker_spawn_end%
+
+[sr_idle@nil]

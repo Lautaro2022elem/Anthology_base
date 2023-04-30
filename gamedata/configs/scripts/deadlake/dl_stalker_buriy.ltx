@@ -1,0 +1,62 @@
+[logic@dl_stalker_buriy]
+active = animpoint@base
+suitable = {=check_npc_name(dl_stalker_buriy)}
+prior = 200
+can_select_weapon = false
+level_spot = quest_npc
+
+[animpoint@base]
+cover_name = val_a3_stalker_buriy_cover
+avail_animations = animpoint_sit_normal
+meet = meet@base
+use_camp = false
+reach_distance = 1
+combat_ignore_cond = true
+combat_ignore_keep_when_attacked = true
+invulnerable = true
+gather_items_enabled = false
+help_wounded_enabled = false
+corpse_detection_enabled = false
+on_info = {+dl_stalker_buriy_talk_of_bizon} animpoint@base_01
+
+[animpoint@base_01]
+cover_name = val_a3_stalker_buriy_cover
+avail_animations = animpoint_sit_normal
+meet = meet@base_01
+use_camp = false
+reach_distance = 1
+combat_ignore_cond = true
+combat_ignore_keep_when_attacked = true
+invulnerable = true
+gather_items_enabled = false
+help_wounded_enabled = false
+corpse_detection_enabled = false
+
+[meet@base]
+close_anim 		= nil
+close_victim 	= nil
+far_anim 		= nil
+far_victim 		= nil
+close_distance  = 0
+far_distance 	= 0
+close_snd_distance = 3
+use = {!actor_enemy =dist_to_actor_le(3)} self, true
+trade_enable    = false
+allow_break 	= false
+meet_dialog = dl_first_dialog_buriy_base
+meet_on_talking = true
+
+[meet@base_01]
+close_anim 		= nil
+close_victim 	= nil
+far_anim 		= nil
+far_victim 		= nil
+close_distance  = 0
+far_distance 	= 0
+close_snd_distance = 3
+use = nil
+trade_enable    = false
+allow_break 	= false
+;meet_dialog = dl_first_dialog_buriy_base
+meet_on_talking = true
+

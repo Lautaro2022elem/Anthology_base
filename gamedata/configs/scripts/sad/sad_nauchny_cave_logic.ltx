@@ -1,0 +1,10 @@
+[logic]
+active = sr_idle@start
+
+[sr_idle@start]
+on_actor_inside = sr_idle@remove
+
+[sr_idle@remove]
+;on_info = {=story_object_exist(sad_zaslon_kamen)} sr_idle@nil %=destroy_object(story:sad_zaslon_kamen)%, sr_idle@nil
+
+[sr_idle@nil]

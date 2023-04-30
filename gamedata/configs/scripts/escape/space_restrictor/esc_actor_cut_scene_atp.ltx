@@ -1,0 +1,37 @@
+[logic]
+active = sr_idle@memmmory_atp
+
+[sr_idle@memmmory_atp]
+on_info = {+esc_raven_talk_end -meet_dialog_stalker_to_atp_done} sr_idle@memmmory_atp_start %=CutSceneAtpStart =run_postprocess(black:2525:true) +esc_scene_atp_start%
+
+[sr_idle@memmmory_atp_start]
+on_timer = 4000 | sr_idle@memmmory_atp_start_2 %=teleport_actor(esc_actor_cut_scene_atp_walk:esc_actor_cut_scene_atp_look) =esc_activate_weapon(wpn_ak74m_camo)%
+
+[sr_idle@memmmory_atp_start_2]
+on_timer = 300 | sr_idle@memmmory_atp_start_3 %=stop_postprocess(2525)%
+
+[sr_idle@memmmory_atp_start_3]
+on_timer = 1500 | sr_idle@memmmory_atp_start_4 %=show_chapter(chapter_2)%
+
+[sr_idle@memmmory_atp_start_4]
+on_timer = 4000 | sr_idle@memmmory_atp_start_5 %+esc_killer_say_dont_move =spawn_object(esc_killer_raven_scene:esc_quest_killer_raven_walk)%
+
+[sr_idle@memmmory_atp_start_5]
+on_info = {+stop_meet_stalker_to_atp} sr_idle@memmmory_atp_start_6
+
+[sr_idle@memmmory_atp_start_6]
+on_timer = 7200 | sr_idle@memmmory_atp_start_7 %=enable_ui +esc_dialog_quest_line_atp_meet%
+
+[sr_idle@memmmory_atp_start_7]
+on_info = {+esc_leader_group_stalker_to_atp_dead +esc_squad_stalker_to_atp_dead} sr_idle@memmmory_atp_start_8
+
+[sr_idle@memmmory_atp_start_8]
+on_timer = 2000 | sr_idle@memmmory_atp_start_9 %=esc_dop_action_first_quest +esc_dop_action_first_give_info%
+
+[sr_idle@memmmory_atp_start_9]
+on_info = {+esc_dop_action_first_give_info +esc_dop_action_first_complete} sr_idle@memmmory_atp_start_10 %=esc_dop_action_first_complete%
+
+[sr_idle@memmmory_atp_start_10]
+on_info = {+esc_qrif_quest_bar_sms_final} sr_idle@nil %=create_squad(esc_merc_bar_security_squad:esc_smart_terrain_1_1_bar_92)%
+
+[sr_idle@nil]

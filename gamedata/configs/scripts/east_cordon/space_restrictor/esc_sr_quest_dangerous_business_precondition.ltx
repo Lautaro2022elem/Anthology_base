@@ -1,0 +1,10 @@
+[logic]
+active = sr_idle
+
+[sr_idle]
+on_info = {+spectrum_project_start +esc_bandit_shmiga_dead} sr_idle@2 %=spawn_object_in(esc_sidor_habar_key:esc_bandit_shmiga)%
+
+[sr_idle@2]
+on_info = {=actor_has_item(esc_sidor_habar_key)} sr_idle@nil %+esc_sidor_habar_open%
+
+[sr_idle@nil]

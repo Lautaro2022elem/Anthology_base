@@ -1,0 +1,16 @@
+[logic]
+active = sr_light@1
+
+[sr_light@1]
+light_on = true
+;on_actor_inside = sr_light@2 ;%=run_postprocess(postprocess_psi:9119)% ; postprocess_acidic ; postprocess_rad ; postprocess_psi
+
+[sr_light@2]
+light_on = true
+on_actor_outside = sr_light@1 ;%=stop_postprocess(9119)%
+on_info = {=sad_dist_to_path_le(sad_cave_nauchny_21_look:140:0)} sr_light@3 %=run_postprocess(effector_alcohol:9118)% ; =stop_postprocess(9119)
+
+[sr_light@3]
+light_on = true
+on_actor_outside = sr_light@1 %=stop_postprocess(9118)% ; =stop_postprocess(9119)%
+on_info = {=sad_dist_to_path_ge(sad_cave_nauchny_21_look:160:0)} sr_light@2 %=stop_postprocess(9118)% ; =run_postprocess(postprocess_rad:9119)%

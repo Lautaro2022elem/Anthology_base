@@ -1,0 +1,13 @@
+[logic]
+active = sr_idle@messages_mercs
+
+[sr_idle@messages_mercs]
+on_info = {+wiz_merc_messages_base} sr_idle@messages_mercs_01 %=uninvited_guests_message_01%
+
+[sr_idle@messages_mercs_01]
+on_timer = 8000 | sr_idle@messages_mercs_02 %=uninvited_guests_message_02%
+
+[sr_idle@messages_mercs_02]
+on_timer = 12000 | sr_idle@nil %=uninvited_guests_message_03 +uninvited_guests_5_done%
+
+[sr_idle@nil]

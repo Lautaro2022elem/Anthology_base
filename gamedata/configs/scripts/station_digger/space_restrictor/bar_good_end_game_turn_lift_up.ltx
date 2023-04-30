@@ -1,0 +1,16 @@
+[logic]
+active = sr_idle@start_bad_end_game
+
+[sr_idle@start_bad_end_game]
+on_info = {+bar_lift_turn_on} sr_idle@teleport_actor %=run_postprocess(black:2525:true) =RavenMemmoryStart =lift_down_cut_scene%
+
+[sr_idle@teleport_actor]
+on_timer = 4000 | sr_idle@stop_postprocess %=teleport_actor(actor_good_end_turn_to_lift_walk:actor_good_end_turn_to_lift_look)%
+
+[sr_idle@stop_postprocess]
+on_timer = 16000 | sr_idle@enable_ui %=stop_postprocess(2525) =spawn_object(bar_digger_semen:bar_digger_semen_walk) =spawn_object(bar_gigant_lab:bar_psevdogigant_lab_walk)%
+
+[sr_idle@enable_ui]
+on_timer = 100 | sr_idle@nil %=enable_ui +bar_give_info_meet_from_zmeelov =spawn_object(bar_markus_end_game:bar_stalker_markus_spawn)%
+
+[sr_idle@nil]

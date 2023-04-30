@@ -1,0 +1,44 @@
+[logic]
+active = sr_idle
+
+[sr_idle]
+on_info = {+spectrum_project_start +esc_the_first_penny_complite} sr_idle@quest
+
+[sr_idle@quest]
+on_game_timer = 150 | sr_idle@scenario_autosave %=give_task(esc_quest_work_for_beginner) +esc_trader_door_unlock%
+
+[sr_idle@scenario_autosave]
+on_timer = 100 | {-save_esc_quest_work_for_beginner} %+save_esc_quest_work_for_beginner =scenario_autosave(st_esc_quest_work_for_beginner)%
+on_info = {+save_esc_quest_work_for_beginner} sr_idle@0
+
+[sr_idle@0]
+on_info = {+esc_quest_work_for_beginner_complite} sr_idle@2, {+esc_quest_work_for_beginner_fail} sr_idle@2
+
+[sr_idle@2]
+on_game_timer = 500 | sr_idle@scenario_autosave2 %+esc_quest_trifling_matter_sidor_dialog_open =esc_sidor_talk_sms =give_task(esc_quest_trifling_matter)%
+
+[sr_idle@scenario_autosave2]
+on_timer = 100 | {-save_esc_trifling_matter} %+save_esc_trifling_matter =scenario_autosave(st_save_esc_trifling_matter)%
+on_info = {+save_esc_trifling_matter} sr_idle@3
+
+[sr_idle@3]
+on_info = {+esc_the_first_penny_complite +esc_quest_trifling_matter_complite} sr_idle@4
+
+[sr_idle@4]
+on_game_timer = 1400 | sr_idle@scenario_autosave3 %+esc_quest_serious_business_sidor_dialog_open =esc_sidor_esc_quest_serious_business_sms =give_task(esc_quest_serious_business)%
+
+[sr_idle@scenario_autosave3]
+on_timer = 100 | {-save_esc_serious_business} %+save_esc_serious_business =scenario_autosave(st_save_esc_serious_business)%
+on_info = {+save_esc_serious_business} sr_idle@5
+
+[sr_idle@5]
+on_info = {+esc_serious_business_complite} sr_idle@6
+
+[sr_idle@6]
+on_game_timer = 3600 | sr_idle@scenario_autosave4 %+esc_quest_dangerous_business_sidor_dialog_open =esc_sidor_esc_quest_dangerous_business_sms =give_task(esc_quest_dangerous_business)%
+
+[sr_idle@scenario_autosave4]
+on_timer = 100 | {-save_esc_dangerous_business} %+save_esc_dangerous_business =scenario_autosave(st_save_esc_dangerous_business)%
+on_info = {+save_esc_dangerous_business} sr_idle@nil
+
+[sr_idle@nil]

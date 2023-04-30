@@ -1,0 +1,153 @@
+; --------------------------------------------------------------------------------------------------------------------------------------------
+[walker@default_1]
+gather_items_enabled = false
+help_wounded_enabled = false
+corpse_detection_enabled = false
+out_restr = sad_b1_sr_no_assault
+in_restr = sad_b1_sr_light
+use_camp = false
+wounded = wounded
+on_info99 = {=actor_enemy} remark@eminem %+sad_grisha_enemy%
+
+[remark@eminem]
+gather_items_enabled = false
+help_wounded_enabled = false
+corpse_detection_enabled = false
+wounded = wounded
+
+[patrol@cut]:walker@default_1
+path_walk = grisha_patrul
+formation = line
+def_state_moving = assault
+combat_ignore_cond = {-sad_grisha_enemy =is_enemy_actor} true
+
+; -------------------------------------------------------------------------------------------------------- Grisha
+[logic@grisha]
+active = remark@grisha_init
+suitable = {=check_npc_name(sad_stalker_grisha)} true
+on_hit = hit
+on_death = death@grisha
+post_combat_time = 0, 0
+prior = 250
+
+[remark@grisha_init]
+on_info = {+sad_b1_cutscene_grisha_patrol} patrol@grisha_1 %=teleport_npc(sad_b1_grishas_teleport)%, {+sad_b1_grisha_go_no_cut} walker@grisha
+
+[patrol@grisha_1]:patrol@cut
+commander = true
+on_info = {+sad_b1_cutscene_ataka_end} walker@grisha
+
+[walker@grisha]:walker@default_1
+path_walk = mumer_3_0_walk
+def_state_moving = assault
+on_actor_dist_ge_nvis = 140 | {=kill_npc}
+
+; -------------------------------------------------------------------------------------------------------- member 1
+[logic@grisha_member_1]
+active = remark@grisha_member_1
+suitable = { =target_squad_name(sad_stalker_grisha_squad) !check_npc_name(sad_stalker_grisha) } true
+on_hit = hit
+on_death = death
+post_combat_time = 0, 0
+prior = 250
+
+[remark@grisha_member_1]
+on_info = {+sad_b1_cutscene_grisha_patrol} patrol@member_1 %=teleport_npc(sad_b1_grishas_teleport_1)%
+on_info2 = {+sad_b1_grisha_go_no_cut} walker@1
+
+[patrol@member_1]:patrol@cut
+commander = false
+on_info = {+sad_b1_cutscene_ataka_end} walker@1
+
+[walker@1]:walker@default_1
+path_walk = mumer_barman_camper_walk
+def_state_moving = assault
+on_actor_dist_ge = 150 | {=kill_npc}
+
+; -------------------------------------------------------------------------------------------------------- member 2
+[logic@grisha_member_2]
+active = remark@grisha_member_2
+suitable = { =target_squad_name(sad_stalker_grisha_squad) !check_npc_name(sad_stalker_grisha) } true
+on_hit = hit
+on_death = death
+post_combat_time = 0, 0
+prior = 250
+
+[remark@grisha_member_2]
+on_info = {+sad_b1_cutscene_grisha_patrol} patrol@member_2 %=teleport_npc(sad_b1_grishas_teleport_2)%
+on_info2 = {+sad_b1_grisha_go_no_cut} walker@2
+
+[patrol@member_2]:patrol@cut
+commander = false
+on_info = {+sad_b1_cutscene_ataka_end} walker@2
+
+[walker@2]:walker@default_1
+path_walk = mumer_8_0_walk
+def_state_moving = assault
+on_actor_dist_ge = 150 | {=kill_npc}
+
+; -------------------------------------------------------------------------------------------------------- member 3
+[logic@grisha_member_3]
+active = remark@grisha_member_3
+suitable = { =target_squad_name(sad_stalker_grisha_squad) !check_npc_name(sad_stalker_grisha) } true
+on_hit = hit
+on_death = death
+post_combat_time = 0, 0
+prior = 250
+
+[remark@grisha_member_3]
+on_info = {+sad_b1_cutscene_grisha_patrol} patrol@member_3 %=teleport_npc(sad_b1_grishas_teleport_3)%
+on_info2 = {+sad_b1_grisha_go_no_cut} walker@3
+
+[patrol@member_3]:patrol@cut
+commander = false
+on_info = {+sad_b1_cutscene_ataka_end} walker@3
+
+[walker@3]:walker@default_1
+path_walk = mumer_10_0_walk
+def_state_moving = assault
+on_actor_dist_ge = 150 | {=kill_npc}
+
+; -------------------------------------------------------------------------------------------------------- member 4
+[logic@grisha_member_4]
+active = remark@grisha_member_4
+suitable = { =target_squad_name(sad_stalker_grisha_squad) !check_npc_name(sad_stalker_grisha) } true
+on_hit = hit
+on_death = death
+post_combat_time = 0, 0
+prior = 250
+
+[remark@grisha_member_4]
+on_info = {+sad_b1_cutscene_grisha_patrol} patrol@member_4 %=teleport_npc(sad_b1_grishas_teleport_4)%
+on_info2 = {+sad_b1_grisha_go_no_cut} walker@4
+
+[patrol@member_4]:patrol@cut
+commander = false
+on_info = {+sad_b1_cutscene_ataka_end} walker@4
+
+[walker@4]:walker@default_1
+path_walk = mumer_5_0_walk
+def_state_moving = assault
+on_actor_dist_ge = 150 | {=kill_npc}
+
+
+; --------------------------------------------------------------------------------------------------------
+
+[wounded] ;Не должен быть раненым
+hp_state = 0|wounded_heavy@help_heavy
+hp_state_see = 0|wounded_heavy@help_heavy
+hp_victim = 0|nil
+hp_fight = 0|false
+hp_cover = 0|false
+
+
+[hit]
+on_info = {=actor_enemy} %+sad_grisha_enemy%
+
+[death]
+on_info = {=killed_by_actor} %+sad_grisha_enemy%
+
+[death@grisha]
+on_info = {=killed_by_actor} %+sad_grisha_enemy +sad_grisha_dead%, %+sad_grisha_dead%
+
+

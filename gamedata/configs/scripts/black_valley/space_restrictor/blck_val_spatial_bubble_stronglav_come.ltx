@@ -1,0 +1,16 @@
+[logic]
+active = sr_idle@radio_on
+
+[sr_idle@radio_on]
+on_info = {+blck_val_actor_sends_koordinat} sr_idle@trader_meet_klim
+
+[sr_idle@trader_meet_klim]
+on_timer = 4500 | sr_idle@trader_meet_klim_1 %+blck_val_spatial_anomaly_activation%
+
+[sr_idle@trader_meet_klim_1]
+on_timer = 2000 | sr_idle@trader_meet_klim_2 %=spawn_object(blck_val_spatial_fish:blck_val_spatial_fish_spawn) =spawn_object(blck_val_spatial_igla:blck_val_spatial_igla_spawn) =spawn_object(blck_val_spatial_burguy:blck_val_spatial_burguy_spawn)%
+
+[sr_idle@trader_meet_klim_2]
+on_timer = 2000 | sr_idle@nil %+blck_val_stalker_run_in_spatial_anomaly%
+
+[sr_idle@nil]

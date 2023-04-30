@@ -1,0 +1,13 @@
+[logic]
+active = sr_idle@start_bad_end_game
+
+[sr_idle@start_bad_end_game]
+on_actor_inside = {+pro_dialog_duty_tachenko_end_line_done -pro_actor_is_not_podzemka} sr_idle@quest_sms %+pro_actor_is_not_podzemka%
+
+[sr_idle@quest_sms]
+on_timer = 4000 | sr_idle@quest_give %=pb_lesnik_quest_sends_sms_1%
+
+[sr_idle@quest_give]
+on_timer = 3000 | sr_idle@nil %=give_task(pb_go_to_lesnik_scene)%
+
+[sr_idle@nil]

@@ -1,0 +1,9 @@
+[logic]
+active = sr_idle@start
+
+[sr_idle@start]
+on_info = {-bar_zmeelov_and_helper_spawn =actor_on_level(station_digger)} %=set_game_time(01:25) =spawn_object(bar_zmeelov_digger_scene:bar_zmeelov_digger_spawn) =spawn_object(bar_digger_helper_1:bar_digger_helper_1_spawn) =spawn_object(bar_digger_helper_2:bar_digger_helper_2_spawn) +bar_zmeelov_and_helper_spawn%
+on_info2 = {+bar_zmeelov_and_helper_spawn} sr_idle@nil %=spawn_object(bar_digger_semen:bar_digger_semen_walk) =spawn_object(bar_markus_end_game:bar_stalker_markus_spawn)%
+
+
+[sr_idle@nil]

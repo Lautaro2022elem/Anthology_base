@@ -1,0 +1,58 @@
+[logic]
+active = walker
+on_death = death
+on_hit = hit
+
+[walker]
+path_walk = esc_npc_moskit_1_walk
+def_state_standing = sit
+def_state_moving = run
+on_info = {-esc_npc_moskit_na_atp =dist_to_actor_le(3)} remark
+on_info2 = {+esc_npc_moskit_hit} walker@sprint 
+on_info3 = {=dist_to_actor_ge(150)} %=release_npc +esc_quest_gopstop_fail%
+on_npc_in_zone = esc_npc_moskit | esc_base_atp_sr_noweap | %+esc_quest_gopstop_fail%
+on_signal = esc_npc_moskit_na_atp| {-esc_npc_moskit_na_atp} walker@atp %+esc_npc_moskit_na_atp%
+meet = meet
+
+[walker@sprint]
+path_walk = esc_npc_moskit_1_walk
+def_state_moving = sprint
+def_state_standing = sit
+gather_items_enabled = false
+corpse_detection_enabled = false
+combat_ignore_keep_when_attacked = true 
+combat_ignore_cond = true
+on_npc_in_zone = esc_npc_moskit | esc_base_atp_sr_noweap | %+esc_quest_gopstop_fail%
+on_signal = esc_npc_moskit_na_atp| {-esc_npc_moskit_na_atp} walker@atp %+esc_npc_moskit_na_atp%
+on_info = {=dist_to_actor_ge(150)} %=release_npc +esc_quest_gopstop_fail%
+
+[remark]
+anim = wait_na
+target = story | actor
+meet = meet
+on_info = {-esc_npc_moskit_na_atp =dist_to_actor_ge(4)} walker
+on_info2 = {+esc_npc_moskit_na_atp} walker@atp
+on_info3 = {+esc_npc_moskit_hit} walker@sprint 
+
+[walker@atp]
+path_walk = esc_npc_moskit_2_walk
+path_look = esc_npc_moskit_2_look
+def_state_standing = sit_ass
+meet = no_meet
+gather_items_enabled = false
+corpse_detection_enabled = false
+combat_ignore_keep_when_attacked = true 
+combat_ignore_cond = true
+invulnerable = true
+on_info = {=dist_to_actor_ge(150)} %=release_npc +esc_quest_gopstop_fail%
+
+[meet]
+use				= {=actor_enemy} false, true
+allow_break		= false
+
+[death]
+on_info = {-esc_moskit_dialog_and} %+esc_npc_moskit_dead =spawn_object_in(af_cristall_flower:esc_npc_moskit)%
+on_info2 = %+esc_npc_moskit_dead%
+
+[hit]
+on_info = %+esc_npc_moskit_hit%

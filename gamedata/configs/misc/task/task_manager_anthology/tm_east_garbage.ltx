@@ -1,0 +1,19 @@
+
+[gar_start_new_quest]
+icon = ui_iconsTotal_storyline
+prior = 2
+storyline = true
+title = gar_start_quest_title
+descr = gar_start_quest_text
+target = nil 
+condlist_0 = {+gar_start_quest_reversed} complete
+
+
+[gar_main_suget_quest]
+icon = ui_inGame2_Mesta_evakuatsii
+prior = 3
+storyline = true
+title = {+gar_a2_bagretcev_quest_dialog_info} gar_main_quest_title6, {+gar_a2_borland_quest_dialog_info} gar_main_quest_title5, {+gar_a2_sp_borland_spasenie} gar_main_quest_title4, {+gar_main_suget_quest_zasada} gar_main_quest_title3_3, {+gar_a2_gg_have_all_items -gar_a2_sp_killer_all_death} gar_main_quest_title3, {+gar_main_suget_quest_search}gar_main_quest_title2_2, {+gar_a2_borland_talking_1 -gar_a2_gg_have_all_items} gar_main_quest_title2, {+gar_a2_bagretcev_talking_1 -gar_a2_borland_talking_1} gar_main_quest_title1, {-gar_a2_bagretcev_talking_1} gar_main_quest_title0
+descr = {+gar_a2_bagretcev_quest_dialog_info} gar_main_quest_text6, {+gar_a2_borland_quest_dialog_info} gar_main_quest_text5, {+gar_a2_sp_borland_spasenie} gar_main_quest_text4, {+gar_main_suget_quest_zasada} gar_main_quest_text3_3, {+gar_a2_gg_have_all_items -gar_a2_sp_killer_all_death} gar_main_quest_text3, {+gar_main_suget_quest_search}gar_main_quest_text2_2, {+gar_a2_borland_talking_1 -gar_a2_gg_have_all_items} gar_main_quest_text2, {+gar_a2_bagretcev_talking_1 -gar_a2_borland_talking_1} gar_main_quest_text1, {-gar_a2_bagretcev_talking_1} gar_main_quest_text0
+target = {+gar_a2_bagretcev_quest_dialog_info} e_g_space_restrictor_to_e_b_1, {+gar_a2_borland_quest_dialog_info} gar_a2_main_quest_dolg_1, {+gar_a2_sp_borland_spasenie} gar_a2_borland, {+gar_main_suget_quest_zasada} nil, {+gar_a2_gg_have_all_items -gar_a2_sp_killer_all_death} gar_sr_zona_warning, {+gar_main_suget_quest_search}nil, {+gar_a2_borland_talking_1 -gar_a2_gg_have_all_items} gar_sr_zona_tainika, {+gar_a2_bagretcev_talking_1 -gar_a2_borland_talking_1} gar_a2_borland, {-gar_a2_bagretcev_talking_1} gar_a2_main_quest_dolg_1
+condlist_0 = {+sp_a2_hero_to_bar_come} complete

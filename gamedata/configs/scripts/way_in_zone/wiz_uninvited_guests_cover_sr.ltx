@@ -1,0 +1,53 @@
+[logic]
+active = sr_idle@wiz_climb_over_the_fence_run_tutor
+
+[sr_idle@wiz_climb_over_the_fence_run_tutor]
+on_info = {=actor_in_zone(wiz_uninvited_guests_cover_sr) -wiz_climb_over_the_fence +wiz_mercs_base_cover_start !has_active_tutorial} sr_idle@wiz_climb_over_the_fence_stop_tutor %=run_tutorial(wiz_climb_over_the_fence)%
+on_info2 = {+wiz_climb_over_the_fence} sr_idle@check_actor 
+
+[sr_idle@wiz_climb_over_the_fence_stop_tutor]
+on_info = {!actor_in_zone(wiz_uninvited_guests_cover_sr)} sr_idle@wiz_climb_over_the_fence_run_tutor %=stop_tutorial%
+on_info2 = {!has_active_tutorial} sr_idle@wiz_climb_over_the_fence_run_tutor
+
+[sr_idle@check_actor]
+on_info = {+wiz_mercs_base_cover_start +wiz_climb_over_the_fence =actor_in_zone(wiz_uninvited_guests_cover_sr)} sr_cutscene@scene %=create_cutscene_actor_with_weapon(wiz_actor_sil_scene:wiz_actor_silent_walk) +wiz_poslannik_krivogo_go_kill%
+
+[sr_cutscene@scene] 
+point = wiz_actor_dmc_walk
+look = wiz_actor_dmc_look
+cam_effector = scenario_cam\Wiz\wiz_actor_silent_walk_merc_base
+global_cameffect = true 
+enable_ui_on_end = false 
+on_timer = 15500 | sr_idle@black_screen_started %=stop_sr_cutscene =run_postprocess(black:1020:true) =destroy_object(story:wiz_actor_sil_scene) +wiz_merc_messages_base%
+
+[sr_idle@black_screen_started]
+on_info = {+wiz_merc_messages_base} sr_idle@black_screen_started_done
+
+[sr_idle@black_screen_started_done]
+on_timer = 15000 | sr_idle@hero_thoughts_06 %=stop_postprocess(1020) =enable_ui =spawn_object(wiz_poslannik_krivogo:wiz_uninvited_guests_merc_walk) =hero_thoughts_04%
+
+[sr_idle@hero_thoughts_06]
+on_info = {+wiz_poslannik_krivogo_die} sr_idle@hero_thoughts_06_go
+
+[sr_idle@hero_thoughts_06_go]
+on_info = {=actor_has_item(wiz_pda_merc_lock)} sr_idle@ivanich_unlock_pda_check_time  %=hero_thoughts_06%
+
+[sr_idle@ivanich_unlock_pda_check_time]
+on_info = {+wiz_ivanich_merc_pda_unlocking_start} sr_idle@ivanich_unlock_pda_check_info
+
+[sr_idle@ivanich_unlock_pda_check_info]
+on_game_timer = 5000 | sr_idle@check_item_in_inv %+wiz_ivanich_merc_pda_unlocking_wait_done =ivanich_unlock_signal_message%
+
+[sr_idle@check_item_in_inv]
+on_info = {=actor_has_item(wiz_pda_merc)} sr_idle@hero_thoughts_07 %=give_task(enemy_with_neutral) =remove_squad(wiz_baza_killers_squad)%
+
+[sr_idle@hero_thoughts_07]
+on_timer = 7000 | sr_idle@code_messages %=hero_thoughts_07%
+
+[sr_idle@code_messages]
+on_info = {!actor_in_zone(wiz_nauch_sr)} %=codes_messages_kosta_to_mercs% sr_idle@code_messages_merc
+
+[sr_idle@code_messages_merc]
+on_timer = 4500 | sr_idle@nil %=codes_messages_mercs_to_kosta%
+
+[sr_idle@nil]

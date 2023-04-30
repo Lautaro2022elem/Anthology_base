@@ -1,0 +1,23 @@
+[logic]
+active = sr_idle@start
+
+[sr_idle@start]
+on_info = {+spectrum_project_start +esc_quest_work_for_beginner_poisk}sr_idle@0 %=spawn_object(af_cristall:esc_quest_work_for_beginner_af_eye)%
+
+[sr_idle@0]
+on_info = {-esc_quest_work_for_beginner_complite -esc_quest_work_for_beginner_fail +esc_quest_work_for_beginner_poisk}sr_idle
+
+[sr_idle]
+on_info  = {-esc_quest_work_for_beginner_art =actor_has_item(af_fireball)} sr_idle@af_fireball %+esc_quest_work_for_beginner_art%
+on_info1 = {-esc_quest_work_for_beginner_art =actor_has_item(af_cristall)} sr_idle@af_cristall %+esc_quest_work_for_beginner_art%
+on_info2 = {-esc_quest_work_for_beginner_art =actor_has_item(af_eye)}      sr_idle@af_eye      %+esc_quest_work_for_beginner_art%
+
+
+[sr_idle@af_fireball]
+on_info  = {!actor_has_item(af_fireball)} sr_idle@0 %-esc_quest_work_for_beginner_art%
+
+[sr_idle@af_cristall]
+on_info1 = {!actor_has_item(af_cristall)} sr_idle@0 %-esc_quest_work_for_beginner_art%
+
+[sr_idle@af_eye]
+on_info2 = {!actor_has_item(af_eye)}      sr_idle@0 %-esc_quest_work_for_beginner_art%

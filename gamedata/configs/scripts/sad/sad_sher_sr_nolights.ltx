@@ -1,0 +1,11 @@
+[logic]
+active = sr_idle@1
+
+[sr_idle@1]
+on_info = {+sad_sher_cutscene_stop} sr_light
+
+[sr_light]
+light_on = false
+on_info = {+sad_sher_pdasts_are_killed} sr_idle@nil
+
+[sr_idle@nil]

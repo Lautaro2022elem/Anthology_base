@@ -1,0 +1,115 @@
+<?xml version="1.0" encoding="windows-1251" ?>
+<string_table>
+
+	<!-- esc_mechanic_furgon -->
+	<string id="esc_mechanic_furgon_task_1_name">
+		<text>Find %s for Stepka</text>
+	</string>
+	<string id="esc_mechanic_furgon_task_1_text">
+		<text>You need to bring tools to Stepka so he can upgrade the equipment.</text>
+	</string>
+	<string id="esc_mechanic_furgon_task_1_about">
+		<text>You know, bro, I'm actually a pretty good technician. I can fix both weapons and armor, and even do some upgrades! Well, I would if the tools were decent. But where can you get them around here? Maybe you can help me get a simple set?</text>
+	</string>
+	<string id="esc_mechanic_furgon_task_1_fetch_about">
+		<text>I need a set of tools for rough work. It should include tools and oils for working with weapons. If you can get it, I'll be grateful, and maybe even pay you! .. Probably.</text>
+	</string>
+	<string id="esc_mechanic_furgon_task_1_fetch_finish">
+		<text>Great job, dude! Oh, sorry, I have nothing to pay you with. But I can give you a good discount!</text>
+	</string>
+	<string id="esc_mechanic_furgon_task_2_name">
+	<text>Find %s for Styopka</text>
+</string>
+<string id="esc_mechanic_furgon_task_2_text">
+	<text>We need to bring tools for delicate work to Styopka. He needs a more complete set to carry out more complex equipment upgrades.</text>
+</string>
+<string id="esc_mechanic_furgon_task_2_about">
+	<text>Hey dude, if you agree to get me a more complete set, you'll get an even bigger discount. Will you help me out, buddy?</text>
+</string>
+<string id="esc_mechanic_furgon_task_2_fetch_about">
+	<text>I need tools for delicate work. It should have everything I need. You'll be my brother if you get it for me!</text>
+</string>
+<string id="esc_mechanic_furgon_task_2_fetch_finish">
+	<text>Wow, thanks bro! Now I'll definitely get rich. Damn, I'll finally become successful!.. If, of course, I don't miss this chance. But for now, I can't offer you anything better than a discount. Sorry, buddy.</text>
+</string>
+<string id="esc_mechanic_furgon_task_3_name">
+	<text>Find %s for Styopka</text>
+</string>
+<string id="esc_mechanic_furgon_task_3_text">
+	<text>We need to bring %s to Styopka. He needs a unique set to carry out even more complex equipment upgrades.</text>
+</string>
+<string id="esc_mechanic_furgon_task_3_about">
+	<text>Hey kid, if you find something worthwhile, I'll give you a discount!</text>
+</string>
+<string id="esc_mechanic_furgon_task_3_fetch_about">
+	<text>I need tools for calibration. It should have everything I need. You'll be my brother if you get them for me!</text>
+</string>
+<string id="esc_mechanic_furgon_task_3_fetch_finish">
+	<text>No way...! Thanks, bro! Now I'll definitely get rich. Damn, I'll finally become successful!.. If, of course, I don't miss this chance. But for now, I can't offer you anything better than a discount. Sorry, pal.</text>
+</string>
+
+	<!-- esc_mechanic_barkas -->
+	<string id="esc_mechanic_barkas_task_1_name">
+	<text>Find %s for Barkas</text>
+</string>
+<string id="esc_mechanic_barkas_task_1_text">
+	<text>You need to bring tools to Barkas so that he can upgrade the equipment.</text>
+</string>
+<string id="esc_mechanic_barkas_task_1_about">
+	<text>You know, bro, I'm actually a pretty good technician. I can fix both weapons and armor, even do some upgrades! Well, I would if I had decent tools. But where can you get them here? Maybe you can help me get a simple set, huh?</text>
+</string>
+<string id="esc_mechanic_barkas_task_1_fetch_about">
+	<text>I need a set of tools for rough work. It should contain tools and oils for working with weapons. If you can get it, I'll be grateful, I might even pay you!.. Probably.</text>
+</string>
+<string id="esc_mechanic_barkas_task_1_fetch_finish">
+	<text>Great, dude! Oh, sorry, I have nothing to pay you with. But I can give you a good discount!</text>
+</string>
+<string id="esc_mechanic_barkas_task_2_name">
+	<text>Find %s for Barkas</text>
+</string>
+<string id="esc_mechanic_barkas_task_2_text">
+	<text>Barkas needs tools for delicate work. He needs a more complete set to perform more complex equipment upgrades.</text>
+</string>
+<string id="esc_mechanic_barkas_task_2_about">
+	<text>Hey, dude, if you agree to get me a more complete set, you'll get an even bigger discount. Will you help me out, pal?</text>
+</string>
+<string id="esc_mechanic_barkas_task_2_fetch_about">
+	<text>I need tools for delicate work. It should contain everything I need. You'll be like a brother to me if you get it!</text>
+</string>
+<string id="esc_mechanic_barkas_task_2_fetch_finish">
+	<text>Oh, damn! Thank you, bro! Now I'll definitely get rich. Hell, I might even become successful!.. If, of course, I don't miss this chance. But for now, I can't offer you anything better than a discount. Sorry, pal.</text>
+</string>
+<string id="esc_mechanic_barkas_task_3_name">
+	<text>Find %s for Barkas</text>
+</string>
+<string id="esc_mechanic_barkas_task_3_text">
+	<text>Barkas needs %s. He needs a unique set of tools to perform even more complex equipment upgrades.</text>
+</string>
+<string id="esc_mechanic_barkas_task_3_about">
+	<text>Hey, guy, if you find something worthwhile, I'll give you a discount!</text>
+</string>
+<string id="esc_mechanic_barkas_task_3_fetch_about">
+	<text>I need calibration tools. It should contain everything I need. You'll be like a brother to me if you get them!</text>
+</string>
+	<string id="esc_mechanic_barkas_task_3_fetch_finish">
+		<text>"No way...! Wow, thanks, buddy! Now I'll definitely become rich. Damn, I will finally become successful!... If, of course, I don't miss this chance. But for now, I can't offer you anything better than a discount. Sorry, friend."</text>
+	</string>
+
+	<!-- esc_medic_antibiotic -->
+<string id="esc_medic_antibiotic_task_1_name">
+	<text>%s for Antibiotic</text>
+</string>
+<string id="esc_medic_antibiotic_task_1_text">
+	<text>You need to find a medical kit and bring it to Medic Antibiotic.</text>
+</string>
+<string id="esc_medic_antibiotic_task_1_about">
+	<text>"I need a good set of medical tools. I can quickly patch up minor injuries, but for something more serious than a simple scalpel, I don't have what I need."</text>
+</string>
+<string id="esc_medic_antibiotic_task_1_fetch_about">
+	<text>"I need a good set of medical tools. I can quickly patch up minor injuries, but for something more serious than a simple scalpel, I don't have what I need."</text>
+</string>
+<string id="esc_medic_antibiotic_task_1_fetch_finish">
+	<text>"Thank you, my friend! These tools will save many people's lives. Thanks again for the tools."</text>
+</string>
+
+</string_table>

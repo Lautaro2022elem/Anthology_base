@@ -1,0 +1,78 @@
+[_group]
+        effects_count                    = 8
+        flags                            = 0
+        timelimit                        = 15.000000
+        version                          = 3
+ 
+[effect_0000]
+        effect_name                      = hit_fx\effects\hit_impact_dust_concrete_small
+        flags                            = 4
+        on_birth_child                   =
+        on_death_child                   =
+        on_play_child                    =
+        time0                            = 0.000000
+        time1                            = 0.000000
+ 
+[effect_0001]
+        effect_name                      = hit_fx\effects\hit_impact_metal_center_spark
+        flags                            = 4
+        on_birth_child                   =
+        on_death_child                   =
+        on_play_child                    =
+        time0                            = 0.000000
+        time1                            = 0.000000
+ 
+[effect_0002]
+        effect_name                      = hit_fx\effects\hit_impact_metal_center_spark_glow
+        flags                            = 4
+        on_birth_child                   =
+        on_death_child                   =
+        on_play_child                    =
+        time0                            = 0.000000
+        time1                            = 0.000000
+ 
+[effect_0003]
+        effect_name                      = hit_fx\effects\hit_impact_metal_sparks
+        flags                            = 4
+        on_birth_child                   =
+        on_death_child                   =
+        on_play_child                    =
+        time0                            = 0.000000
+        time1                            = 0.000000
+ 
+[effect_0004]
+        effect_name                      = explosions\effects\hit_sparks
+        flags                            = 4
+        on_birth_child                   =
+        on_death_child                   =
+        on_play_child                    =
+        time0                            = 0.000000
+        time1                            = 0.000000
+ 
+[effect_0005]
+        effect_name                      = hit_fx\effects\hit_impact_dust_concrete
+        flags                            = 4
+        on_birth_child                   =
+        on_death_child                   =
+        on_play_child                    =
+        time0                            = 0.000000
+        time1                            = 0.000000
+ 
+[effect_0006]
+        effect_name                      = hit_fx\effects\hit_impact_asphalt_base_linger
+        flags                            = 0
+        on_birth_child                   =
+        on_death_child                   =
+        on_play_child                    =
+        time0                            = 0.000000
+        time1                            = 15.000000
+ 
+[effect_0007]
+        effect_name                      = hit_fx\effects\hit_impact_sparks_linger
+        flags                            = 4
+        on_birth_child                   =
+        on_death_child                   =
+        on_play_child                    =
+        time0                            = 0.000000
+        time1                            = 0.000000
+ 

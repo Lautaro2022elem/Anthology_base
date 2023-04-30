@@ -1,0 +1,63 @@
+[logic]
+active = remark@see_actor
+on_death = death
+on_hit = hit
+
+[remark@see_actor]
+anim = guard_na
+target = story | actor
+meet = no_meet
+danger = danger
+on_info = {=dist_to_actor_le(12)} remark@claim
+on_info2 = {+esc_trepach_dialog_robbery_attack} %=actor_enemy%
+on_info3 = {+esc_the_first_penny_nashel} %=release_npc%
+
+[remark@claim]
+anim = claim
+target = story | actor
+meet = meet@dialog
+danger = danger
+on_info1 = {-infa_esc_trepach_stop_sound =dist_to_actor_le(5)} %+infa_esc_trepach_stop_sound =play_sound(esc_robbery_scene_stop)%
+on_info2 = {=dist_to_actor_le(2)} remark@dialog_actor
+on_info3 = {+esc_trepach_dialog_robbery_attack} %=actor_enemy%
+on_info4 = {+esc_the_first_penny_nashel} %=release_npc%
+
+[remark@dialog_actor]
+anim = threat
+target = story | actor
+meet = meet@dialog
+danger = danger
+on_info = {+esc_trepach_dialog_robbery_attack} %=actor_enemy%
+on_info2 = {+esc_trepach_dialog_robbery_complit} remark %=play_sound(esc_robbery_scene_after_pay)%
+on_info3 = {+esc_the_first_penny_nashel} %=release_npc%
+
+[remark]
+anim = guard_na
+target = story | actor
+meet = no_meet
+danger = danger
+on_info = {+esc_trepach_dialog_robbery_attack} %=actor_enemy%
+on_info2 = {+esc_the_first_penny_nashel} %=release_npc%
+
+
+[meet@dialog]
+abuse           = false
+close_anim 		= nil
+far_anim 		= nil
+far_victim 		= nil
+close_distance  = 0
+far_distance 	= 0
+close_victim = actor
+use = {!actor_enemy =dist_to_actor_le(2) -esc_trepach_dialog_robbery_end} self, false
+allow_break = false
+meet_dialog = esc_trepach_dialog_robbery
+trade_enable = false
+
+[smart_terrains]
+none = true
+
+[death]
+on_info = %+esc_trepach_dead =set_squad_enemy_to_actor(esc_squad_tunnel) +esc_trepach_dialog_robbery_attack%
+
+[hit]
+on_info = %+esc_trepach_hit =set_squad_enemy_to_actor(esc_squad_tunnel) +esc_trepach_dialog_robbery_attack%  ;=play_sound(esc_robbery_kill)

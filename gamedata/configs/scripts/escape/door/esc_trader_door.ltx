@@ -1,0 +1,68 @@
+[logic]
+active = ph_door@locked
+
+[ph_door@locked]
+closed = true
+locked = true
+snd_open_start = trader_door_locked
+tip_open = tip_door_locked
+on_info = {+spatial_anomaly} ph_door@closed_pa, ph_door@locked_coc
+
+[ph_door@locked_pa]
+closed = true
+locked = true
+snd_open_start = trader_door_locked
+tip_open = tip_door_locked
+on_info = {+esc_dialog_wolf_operation_end} ph_door@closed_pa
+
+[ph_door@closed_pa]
+closed = true
+locked = false
+on_use = ph_door@open_pa
+snd_open_start = trader_door_open_start
+snd_close_start = trader_door_close_start
+snd_close_stop = trader_door_close_stop
+
+[ph_door@open_pa]
+closed = false
+locked = false
+on_use = ph_door@closed
+on_game_timer = 50 | ph_door@closed_pa
+snd_open_start = trader_door_open_start
+snd_close_start = trader_door_close_start
+snd_close_stop = trader_door_close_stop
+
+
+[ph_door@locked_coc]
+locked = true
+closed = true
+snd_open_start = metal_small_open
+snd_close_start = metal_small_close_start
+snd_close_stop = metal_small_close_stop
+on_use = {!is_actor_enemy_to_faction(stalker)} ph_door@close_coc ;-->> new line added, to prevent the possibility of door from staying locked once actor somehow become good with loners in Cordon 
+
+[ph_door@close_coc]
+locked = false
+closed = true
+snd_open_start = metal_small_open
+snd_close_start = metal_small_close_start
+snd_close_stop = metal_small_close_stop
+on_use = {!is_actor_enemy_to_faction(stalker)} ph_door@open_coc, ph_door@locked_coc	;-->> add condition here, if true it will open the door, false will lock
+on_actor_in_zone = esc_space_restrictor_trader_door_into | ph_door@near_coc
+
+[ph_door@near_coc]
+locked = false
+closed = true
+snd_open_start = metal_small_open
+snd_close_start = metal_small_close_start
+snd_close_stop = metal_small_close_stop
+on_use = {!is_actor_enemy_to_faction(stalker)} ph_door@open_coc, ph_door@locked_coc ;-->> add condition here, if true it will open the door, false will lock
+
+[ph_door@open_coc]
+locked = false
+closed = false
+snd_open_start = metal_small_open
+snd_close_start = metal_small_close_start
+snd_close_stop = metal_small_close_stop
+on_use = ph_door@near_coc
+on_actor_not_in_zone = esc_space_restrictor_trader_door_into | ph_door@close_coc

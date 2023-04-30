@@ -1,0 +1,10 @@
+[logic]
+active = sr_idle
+
+[sr_idle]
+on_info = {+spectrum_project_start +esc_quest_shadowing_shaman_dialog_and} sr_idle@2 %=spawn_object(esc_nps_soer:esc_nps_soer_spawn)%
+
+[sr_idle@2]
+on_info = {+esc_quest_shadowing_complite} sr_idle@nil %+esc_quest_fighting_for_territory_open%, {+esc_quest_shadowing_fail} sr_idle@nil %+esc_quest_fighting_for_territory_open%
+
+[sr_idle@nil]

@@ -1,0 +1,14 @@
+[logic]
+active = ph_button@sit_idle_0
+
+[ph_button@sit_idle_0]
+anim_blend = true
+anim = sit_2_idle_1
+on_info = {+pro_start_scene_end_info} %=destroy_object%
+on_timer = 5000 | ph_button@sit_idle_1
+
+[ph_button@sit_idle_1]
+anim_blend = true
+anim = sit_2_idle_3
+on_info = {+pro_start_scene_end_info} %=destroy_object%
+on_timer = 5000 | ph_button@sit_idle_0

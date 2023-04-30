@@ -1,0 +1,742 @@
+--[[ ------------------------------------------------------------------------------------------------
+ File       : _s_utils.script
+ Description: Вспомогательные функции
+ Copyright  : 2011-2013 © Spectrum project
+ Author     : Viнt@rь   
+ Last edit  : 04.11.2013 (Viнt@rь)
+--]] ------------------------------------------------------------------------------------------------
+--/											Variables
+--]] ------------------------------------------------------------------------------------------------
+local bFuncG = false
+--]] ------------------------------------------------------------------------------------------------
+--/											Functions
+--]] ------------------------------------------------------------------------------------------------
+-----------------------------------------------------------------------------------------------------
+--[[---------------------------------------------------------------
+--// 				Функции обработки перменных
+--]]---------------------------------------------------------------
+--[[
+--	Сохраняем переменную
+--	@param	string		sVarName	имя переменной
+--	@param	all types	Value		значение переменной
+--]]
+function WriteVariable(sVarName, Value)
+	if Value ~= nil then
+		_s_storage.storage[sVarName] = Value
+	else
+		_abort("~WriteVariable:sVarName[%s] value is nil", sVarName)
+	end
+end
+
+--[[
+--	Загружаем переменную
+--	@param	string		sVarName	имя переменной
+--	@param	all types	DefVal		дефолтовое значение
+--	@return
+--]]
+function ReadVariable(sVarName, DefVal)
+	if _s_storage.storage[sVarName] ~= nil then
+		return _s_storage.storage[sVarName]
+	end
+	return DefVal
+end
+
+--[[
+--	Удаляем переменную
+--	@param	string	sVarName	имя переменной
+--]]
+function DeleteVariable(sVarName)
+	if _s_storage.storage[sVarName] ~= nil then
+		_s_storage.storage[sVarName] = nil
+	else
+		_abort("~DeleteVariable:sVarName[%s] not find in storage", sVarName)
+	end
+end
+-----------------------------------------------------------------------------------------------------
+--[[---------------------------------------------------------------
+--// 						Строки
+--]]---------------------------------------------------------------
+--[[
+--	По айди указаной строки транслитит ее
+--	@param	string	sId	айди строки 
+--]]
+function GetString(sId)
+	if not sId then _abort("~GetString:sId is nil") return "" end
+	return game.translate_string(sId)
+end
+
+--[[
+--	разбивает сроку по разделителю
+--	@param	string	sStr 	строка
+--	@param	string	sDiv 	разделитель
+--	@param	boolean	bClear 	обрезать пробелы
+--	@return table
+--]]
+function StrSplit(sStr,sDiv,bClear)
+	local tRet = {}
+	local sPattern, sValue = "", ""
+	if sDiv and type(sDiv) == 'string' then --/ если divider задан: разделяем по нему
+		sPattern = '%s*([^'..sDiv..']+)%s*' --/'[^%s%'..sDiv..']+'
+	else --/ разделяем слова
+		sPattern = '[%w%_]+'
+	end
+	for sValue in sStr:gmatch(sPattern) do
+		table.insert(tRet, (not bClear and sValue) or sValue:match('^%s*(.*%S)'))
+	end
+	return tRet
+end
+
+--[[
+--	разделяет строку на строки заданной длины(iLen)
+--	@param	string	sStr 	строка
+--	@param	integer	iLen 	длина строки
+--	@param	string	sDiv 	разделитель
+--	@param	boolean	bClear 	обрезать пробелы
+--	@return table
+--]]
+function StrSplitByLen(sStr,iLen,sDiv,bClear)
+	if type(iLen) ~= 'number' then iLen = 1 end
+	if type(sDiv) ~= 'string' then sDiv = " " end
+  
+	local iLenDiv = sDiv:len()
+	local sStr = sStr or ""
+	local tRet = {}
+  
+  	--/ субцикл выделения одной строки заданной длины
+	local GetDivPos = function()
+		if sStr:len() > iLen then
+			local iPosDiv = sStr:find(sDiv,1,true)
+			local iPos = iPosDiv
+			while iPosDiv and iPosDiv <= iLen+1 do
+				iPos = iPosDiv
+				iPosDiv = sStr:find(sDiv,iPosDiv+iLenDiv,true)
+			end
+			return iPos
+		end
+		return nil
+	end
+  
+	--/ основной(общий) цикл разделения исходной строки на строки заданной длины
+	local iPos = GetDivPos()
+	while iPos do
+		local sLine = sStr:sub(1,iPos-1)
+		sStr = sStr:sub(iPos+iLenDiv)
+		table.insert(tRet, (not bClear and sLine) or sLine:match('^%s*(.*%S)'))
+		iPos = GetDivPos()
+	end
+	--/ остаток:
+	if sStr ~= "" and sStr ~= sDiv then
+		table.insert(tRet, (not bClear and sStr) or sStr:match('^%s*(.*%S)'))
+	end
+	--/ возвращаем таблицу со строками заданной длины
+	return tRet
+end
+
+--[[
+--	обрезает пробельные символы в начале и в конце строки
+--	@param	string	sStr  строка
+--	@return string
+--]]
+function TrimLine(sStr)
+	if sStr and sStr ~= '' then
+		return sStr:match('^%s*(.*%S)') or ''
+	end
+	return sStr or ''
+end
+
+--[[
+--	Начальная часть строки (до первого пробела) без пробелов
+--	@param	string	sStr  строка
+--	@return string
+--]]
+function TrimWord(sStr)
+	if sStr and sStr ~= '' then
+		return sStr:match('%S+')
+	end
+	return sStr
+end
+
+--[[
+--	перевод строки в булевное значение (true/false)
+--	@param	string	sStr строка
+--	@return boolen
+--]]
+function toboolean(sStr)
+	return (sStr == "1" or string.lower(sStr:match('(%S*)')) == "true")
+end
+-----------------------------------------------------------------------------------------------------
+--[[---------------------------------------------------------------
+--// 						Таблици
+--]]---------------------------------------------------------------
+--[[
+--	Получает реальный размер таблицы
+--	@param	table	tTbl	таблица
+--	@return integer
+--]]
+function GetTblSize(tTbl)
+	if IsTblList(tTbl) then
+		return #tTbl
+	end
+	local iSize = 0
+	for k, v in pairs(tTbl) do
+		iSize = iSize + 1
+	end
+	return iSize
+end
+
+--[[
+--	Проверка типа таблицы:'список' или нет?
+--	@param	table	tTbl	таблица
+--	@return boolean
+--]]
+function IsTblList(tTbl)
+	local bList = false
+	local iCntIdx = #tTbl
+	if iCntIdx > 0 then
+		if next(tTbl) == 1 and not next(tTbl,iCntIdx) then
+			for i=2,iCntIdx-1 do
+				if tTbl[i] == nil then
+					return false
+				end
+			end
+			bList = true
+		end
+	end
+	return bList
+end
+-----------------------------------------------------------------------------------------------------
+--[[---------------------------------------------------------------
+--// 				Функции обработки мап-спотов
+--]]---------------------------------------------------------------
+--[[
+-- 	Проверить, стоит ли метка на обьекте.
+-- 	@param	integer	oId			Айди обьекта на котором нужно проверить метку.
+-- 	@param	string	sSpotName	Название(тега) метки.
+-- 	@return	boolen  
+--]]
+function HasMapSpot(oId,sSpotName)
+	if oId and level.map_has_object_spot(oId,sSpotName)==0 then
+		return false
+	end
+	return true
+end
+
+--[[
+-- 	Повесить метку на указанный обьект.
+-- 	@param	integer	oId			Айди обьекта на который нужно влепить метку.
+-- 	@param	string	sSpotName	Название(тега) метки которую нужно поставить. например - "red_location".
+-- 	@param	string	sText		Текст метки.
+-- 	@param	boolean	bSer		(Не)Постоянная метка.
+--]]
+function AddMapSpot(oId,sSpotName,sText,bSer)
+	if oId and not HasMapSpot(oId,sSpotName) then
+		sText = sText or ""
+		if bSer then
+			level.map_add_object_spot_ser(oId,sSpotName,sText)
+		else
+			level.map_add_object_spot(oId,sSpotName,sText)
+		end
+	end
+end
+
+--[[
+-- 	Удаляет метку с обьекта.
+-- 	@param	integer	oId			Айди обьекта из которого нужно убрать метку.
+-- 	@param	string	sSpotName	Название(тега) метки который нужно убрать. например -  "red_location".
+--]]
+function RemoveMapSpot(oId,sSpotName)
+	if oId and HasMapSpot(oId,sSpotName) then
+		level.map_remove_object_spot(oId,sSpotName)
+	end
+end
+-----------------------------------------------------------------------------------------------------
+--[[---------------------------------------------------------------
+--// 				Функции спавна/удаления айтимов
+--]]---------------------------------------------------------------
+--[[
+--	спавнит обьект на карту по указаным кординатам
+--	@param	string	sItem	секция предмета
+--	@param	integer	vPos	позиция(x,y,z)
+--	@param	integer	iLVId	позиция(level_vertex_id)
+--	@param	integer	iGVId	позиция(game_vertex_id)
+--	@return	create
+--]]
+function SpawnItem(sItem,vPos,iLVId,iGVId) 
+	vPos  = vPos or db.actor:position()
+	iLVId = iLVId or db.actor:level_vertex_id()
+	iGVId = iGVId or db.actor:game_vertex_id()
+ 	return alife():create(sItem, vPos, iLVId, iGVId)
+end
+
+--[[
+--	спавнит обьект в инвентаре
+--	@param	string	sItem	секция предмета
+--	@param	string	oNpc	кому спавнить
+--	@return	create
+--]]
+function SpawnItemInInv(sItem,oNpc)
+	local oNpc = oNpc or db.actor
+	return alife():create(sItem,oNpc:position(),oNpc:level_vertex_id(),oNpc:game_vertex_id(),oNpc:id())
+end
+
+--[[
+--	удаляет объект из игры
+--	@param	string	oObj	обьект
+--	@return	boolean
+--]]
+function RemoveItem(oObj)
+	if not alife():object(oObj:id()) then
+		_abort("~RemoveItem:oObj:id[%s], section[%s] not find in alife", oObj:id(), oObj:section())
+	else
+		alife():release(alife():object(oObj:id()),true)
+	end
+end
+
+--[[
+--	удаляет предмет из инвентаря по его иду
+--	@param	string	sItem	секция предмета
+--	@param	string	oNpc	у кого удалять
+--]]
+function RemoveItemFromInv(sItem,oNpc)
+	local oNpc = oNpc or db.actor
+	if not alife():object(oNpc:object(sItem):id()) then
+		_abort("~RemoveItemFromInv:oObj:id[%s], section[%s] not find in NPC:name[%s]", oObj:id(), oObj:section(), oNpc:character_name())
+	else
+		alife():release(alife():object(oNpc:object(sItem):id()), true)
+	end
+end
+
+--[[
+-- 	перенос вещей ГГ в ящик по его STORY ID
+-- 	@param	story id	oBoxSId	стори айди ящика.
+--]]
+function RelocActInvInBox(oBoxSId)
+	local oBox = get_story_object(oBoxSId)
+	if oBox then
+		local function TransferItems(oItem)
+			if oItem:section()~="wpn_binoc" and oItem:section()~="wpn_knife" and oItem:section()~="device_torch" then
+				db.actor:transfer_item(oItem,oBox)
+			end
+		end
+		db.actor:inventory_for_each(TransferItems)
+	else
+		_abort("~RelocActInvInBox:oBox:sid[%s] is nil", oBoxSId)
+	end
+end
+
+--[[
+-- 	Перенос вещей из ящика(по его STORY ID) в инвентарь ГГ
+-- 	@param	story id	oBoxSId	стори айди ящика.
+--]]
+function RelocActInvFromBox(oBoxSId)
+	local aItems = {}
+	local oBox = get_story_object(oBoxSId)
+	if oBox then
+		local function TransferItems(oDummy, oItem) 
+				oBox:transfer_item(oItem, db.actor)
+				local sItem = oItem:section()
+				if not aItems[sItem] then
+					aItems[sItem] = 0
+				end
+				if aItems[sItem] then
+					aItems[sItem] = aItems[sItem] + 1
+				end
+			end
+		oBox:iterate_inventory_box(TransferItems)
+		for k,v in pairs(aItems) do
+			news_manager.relocate_item(db.actor, "in", k, v)
+		end
+	else
+		_abort("~RelocActInvFromBox:oBox:sid[%s] is nil", oBoxSId)
+	end
+end
+-----------------------------------------------------------------------------------------------------
+--[[---------------------------------------------------------------
+--// 					Разные функции...
+--]]---------------------------------------------------------------
+--[[
+--	Получает время в часах
+--	Получает время в минутах
+--	Получает время в секундах
+--	@return	number
+--]]
+function GetGameHours()
+	return level.get_time_days()*24+level.get_time_hours()
+end
+function GetGameMin()
+	return level.get_time_days()*60*24+level.get_time_hours()*60+level.get_time_minutes()
+end
+function GetGameSec()
+	return level.get_time_days()*60*60*24+level.get_time_hours()*60*60+level.get_time_minutes()*60
+end
+
+--[[
+-- 	Взорвать обьект по его айди
+-- 	@param	object	oId	айди обьекта
+--]]
+function BlowUpObj(oId)
+	if oId and level.object_by_id(oId) then
+		level.object_by_id(oId):explode(0)
+	else
+		if not oId then
+			_abort("~BlowUpObj:oId:[%s] is nil", oId)
+		else
+			_abort("~BlowUpObj:oObj:id[%s] not find", oId)
+		end
+	end
+end
+
+--[[
+--	Узнает отношение одного НПС к другому
+--	@param	object	oObj	I объект 
+--	@param	object	oTarget	II объект-цель, к которому узнается отношение
+--	@return	string
+--]]
+function GetNpcRelation(oObj,oTarget)
+	local oRel, oRel2 = oObj:relation(oTarget), ""
+	if oRel==game_object.neutral then 
+  		oRel2="neutral"
+	elseif oRel==game_object.friend then 
+  		oRel2="friend"
+	elseif oRel==game_object.enemy then 
+  		oRel2="enemy"
+	else 
+		return false
+	end
+	return oRel2
+end
+
+--[[
+--	по айди выдает задание актору
+--	@param	string	tId	айди задания
+--]]
+function GiveTask(tId)
+	if not tId then return end
+	task_manager.get_task_manager():give_task(tId)
+end
+
+--[[
+-- 	Получить дистанцию между обьектами.
+-- 	@param	object	oObj1	Первый обьект.
+-- 	@param	object	oObj2	Второй обьект.
+-- 	@return	integer
+--]]
+function DisToObj(oObj1,oObj2)
+	return oObj1:position():distance_to(oObj2:position())
+end
+
+--[[
+-- 	Получает функцию/обьект и его метод-функцию
+-- 	@param	table/function	oFunc	таблица/функция
+-- 	@return	function/userdata
+--]]
+function GetFunc(oFunc)
+	local sFuncType = type(oFunc)
+	if sFuncType == 'function' or sFuncType == 'userdata' then
+		return oFunc
+	elseif sFuncType == 'table' and type(oFunc.oBind) == 'userdata' and type(oFunc.oFunc) == 'function' then
+		return oFunc.oFunc, oFunc.oBind
+	end
+end
+
+--[[
+--	Получение разговаривающего нпс
+--]]
+function GetTalkingNpc()
+	for k,v in pairs(db.storage) do
+		local oNpc = v.object
+		if oNpc ~= nil then
+			if oNpc:is_talking() and oNpc:id() ~= db.actor:id() then
+				return oNpc
+			end
+		end
+	end
+end
+
+--[[
+--	Ожидание одного апдейта
+--]]
+function WaitOneUpd(tData)
+	local x = 1
+	local _precondition = function()
+		x = x - 1
+		return x == 0
+	end
+	local _action = function()
+		event("OneUpdPassed"):once():trigger(tData)
+	end
+	level.add_call(_precondition, _action)
+end
+
+--[[
+-- 	Телепортирует ГГ в заданую точку и заданым направлением камеры
+-- 	@param	integer	x,y,z	Коррдинаты точки.
+-- 	@param	string	vLPath	Направление камеры.
+--]]
+function TpActor(x,y,z,vLPath)
+	level.add_pp_effector("black.ppe",9999,false)
+	db.actor:set_actor_position(vector():set(x,y,z))
+	if vLPath then
+		local vDir = patrol(vLPath):point(0):sub(patrol(vLPath):point(0))
+		db.actor:set_actor_direction(-vDir:getH())
+  	end
+end
+
+--[[
+-- 	Постэффекты удара/взрыва по ГГ прикладом/бочки
+--]]
+function KickAct(tData)
+	local vCamDir = device().cam_dir
+	sound_object([[actor\pain_2]]):play_at_pos(db.actor, vector():set(0,0,0), 0, sound_object.s2d)
+	if not tData or (tData and not tData.bPunched) then
+		db.actor:set_actor_direction(vCamDir.x,vCamDir.y,0)	-- выравниваем направление взгляда, чтобы было падение более реалистичным
+	end
+ 	level.add_cam_effector("camera_effects\\surge_02.anm", 2532, false, "")
+	xr_effects.disable_ui(db.actor, nil)
+ 	PrepareGTimer("level.add_pp_effector('surge_fade.ppe', 2011, false)", 2):Start(true)
+ 	PrepareGTimer("game.start_tutorial('KickAct')", 20):Start(true)
+end
+
+--[[
+-- 	ГГ очнулся после удара/взрыва
+--]]
+function AfterKickAct()
+	if ReadVar("KickInfo") then
+		give_info(ReadVar("KickInfo"))
+		DeleteVar("KickInfo")
+	end
+	level.add_cam_effector("camera_effects\\surge_01.anm", 4468, false, "")
+	level.add_pp_effector("sleepy.ppe",2323, true)
+	level.set_pp_effector_factor(2323,5.0)
+	sound_object([[actor\breath_1]]):play_at_pos(db.actor, vector():set(0,0,0), 3, sound_object.s2d)
+	PrepareGTimer("level.remove_pp_effector(2323)", 75):Start()
+end
+--[[---------------------------------------------------------------
+--// 			Таблица квестовых нпс для исключения
+--]]---------------------------------------------------------------
+local tExcludedNpcs = {
+	--/ Кордон /--
+	esc_borland 				= true,
+	esc_borland_start 			= true,
+	esc_borland_quest 			= true,
+	esc_borland_underground 	= true,
+	esc_borland_lab 			= true,
+	esc_dybolom 				= true,
+	esc_klin 					= true,
+	esc_npc_wood_goblin 		= true,
+	esc_npc_sour 				= true,
+	esc_npc_garlic 				= true,
+	esc_npc_pate 				= true,
+	esc_quest_sb_tryp 			= true,
+	esc_merc_bear 				= true,
+	esc_bandit_shmiga 			= true,
+	esc_npc_shvabroid 			= true,
+	esc_freedom_plen 			= true,
+	esc_npc_freend_shvabroid_1 	= true,
+	esc_npc_freend_shvabroid_2 	= true,
+	esc_trup_alpinist 			= true,
+	esc_bandit_shoroh_npc 		= true,
+	esc_npc_moskit 				= true,
+	esc_nps_soer 				= true,
+	escape_trader 				= true,
+	esc_wolf 					= true,
+	esc_mechanic_furgon 		= true,
+	esc_mechanic_barkas 		= true,
+	esc_trader_kusto 			= true,
+	esc_barman_patogen 			= true,
+	esc_shaman 					= true,
+	esc_risovalshik 			= true,
+	esc_medic_antibiotic 		= true,
+	esc_bandit_logoped 			= true,
+	esc_bandit_tick 			= true,
+	esc_trepach 				= true,
+	esc_colonel_kolyazin 		= true,
+	esc_army_shmatco 			= true,
+	esc_army_kuznecov 			= true,
+	esc_army_chernenco 			= true,
+	esc_npc_csky_holod 			= true,
+	esc_npc_csky_trader_holod 	= true,
+	esc_npc_watchmaker 			= true,
+	esc_trader_walker 			= true
+	--/ Кордон /--
+					 }	 			 
+--[[
+-- 	Исключаем квестовых нпс
+-- 	@param	object	oNpc	обьект.
+-- 	@return	boolean
+--]]
+function ExcludedNpcs(oNpc)
+	return tExcludedNpcs[oNpc:name()]
+end
+--[[---------------------------------------------------------------
+--// 						Типсы(сообщения)
+--]]---------------------------------------------------------------
+local tIcons = {
+	default		= "ui_iconsTotal_grouping",
+	monsters	= "ui_iconsTotal_mutant",
+	loc_info	= "ui_iconsTotal_locations",
+	location	= "ui_inGame2_Mesta_evakuatsii",
+	pda			= "ui_inGame2_PD_Torgovets_informatsiey",
+	surge		= "ui_inGame2_Vibros",
+  	glaz		= "ui_inGame2_PD_Otmecheniy_zonoy",
+  	notebook	= "ui_inGame2_Lager_naemnikov",
+  	money		= "ui_inGame2_Sdelka",
+	lose_money	= "ui_inGame2_Dengi_otdani",
+  	give_money 	= "ui_inGame2_Dengi_polucheni",
+  	instrumenti	= "ui_inGame2_Instrumenti",
+  	radiations	= "ui_inGame2_V_zone_nedavno_proshel_vibros",
+  	pidori		= "ui_inGame2_Razgovor_s_glazu_na_glaz",
+  	autoritet	= "ui_inGame2_PD_Lider",
+  	skadovsk	= "ui_inGame2_Bezopasnoe_mesto",
+  	boroda		= "ui_inGame2_Artefakti_na_zakaz",
+  	sich		= "ui_inGame2_Zamanchiviy_biznes",
+  	sultan		= "ui_inGame2_Naezd",
+	kardan		= "ui_inGame2_Tri_tovarisha",
+	actor		= "ui_inGame2_PD_Svoy_paren",
+  	monolith	= "ui_inGame2_Vizhivshiy_monolit",
+  	krovosos	= "ui_inGame2_Ohota_na_Krovososov",
+  	chimer		= "ui_inGame2_Ohota_na_Himeru",
+  	burer		= "ui_inGame2_Ohota_na_Burerov",
+	
+	sidor		= "ui_sms_sidor",
+	wolf		= "ui_sms_wolf",
+	kolyazin	= "ui_sms_colonel_kolyazin",
+	goblin		= "ui_sms_wood_goblin",
+	borland 	= "ui_sms_borland",
+	logoped 	= "ui_sms_logoped",
+	shaman		= "ui_sms_shaman",
+	risovalshik		= "ui_inGame2_risovalshik",
+	
+	barmen		= "ui_sms_barmen",
+	voronin		= "ui_sms_voronin",
+	azot		= "ui_inGame2_Azot",
+	
+	predmet_otdan		= "ui_inGame2_Predmet_otdan",
+	
+	
+	general		= "ui_inGame2_general_channel",
+	bandit		= "ui_inGame2_bandit_channel",
+	killer		= "ui_inGame2_killer_channel"
+	
+	--news		= "ui_inGame2_PD_newsms"
+}
+
+--[[
+-- 	показываем типс
+--]]
+function SendTip(sText, sHeader, iTimeOut, iTimeShow, sIconMsg, sSndType)
+	if not sText then return _abort("~SendTip:sText is nil", oId) end
+	
+	sHeader   = sHeader or GetString("st_tip")
+	iTimeOut  = iTimeOut or 0
+	iTimeShow = iTimeShow or 5
+  
+	local oSnd
+	if sSndType ~= false then
+		if sSndType == 'news' then 
+			oSnd = sound_object([[device\pda\pda_news]])
+		elseif sSndType == 'task' then 
+			oSnd = sound_object([[device\pda\pda_objective]])
+  		else 
+			oSnd = sound_object([[device\pda\pda_tip]])
+  		end
+  		--' Играем звук
+  		oSnd:play(db.actor,iTimeOut,sound_object.s2d)
+  	end
+  	
+  	sText 	 = "%c[default]"..GetString(sText)
+  	sIconMsg = tIcons[sIconMsg] or sIconMsg or tIcons["default"]
+
+	if db.actor and sIconMsg then
+		db.actor:give_game_news(sHeader, sText, sIconMsg, iTimeOut*1000, iTimeShow*1000)
+  	end
+	return true
+end
+--[[------------------------------------------------------------------------------------------------
+--/ expansion classes functionality (интегрируем в уже имеющиеся классы)
+--]]------------------------------------------------------------------------------------------------
+--[[----------------------------------------------
+--/ table expansion
+--]]----------------------------------------------
+if not table.size then
+	table.size = this.GetTblSize
+end
+
+if not table.islist then
+	table.islist = this.IsTblList
+end
+
+if not table.print then
+	table.print = _dbg and _dbg._printtbl or function()end
+end
+--[[----------------------------------------------
+--/ string expansion
+--]]----------------------------------------------
+if not string.trim then
+	string.trim = this.TrimLine
+end
+
+if not string.trim_w then
+	string.trim_w = this.TrimWord
+end
+
+if not string.split then
+	string.split = this.StrSplit
+end
+
+if not string.splitbylen then
+	string.splitbylen = this.StrSplitByLen
+end
+--[[-------------------------------------------------------------------------
+--/ Интеграция синонимов функций из текущего скрипта в _g.script(tnx Artos)
+--]]-------------------------------------------------------------------------
+if not bFuncG then
+	local tFuncG = {
+		["WriteVar"] 		= WriteVariable,
+		["ReadVar"] 		= ReadVariable,
+		["DeleteVar"] 		= DeleteVariable,
+		--
+		["HasMapSpot"] 		= HasMapSpot,
+		["AddMapSpot"] 		= AddMapSpot,
+		["RemoveMapSpot"] 	= RemoveMapSpot,
+		--
+		["SItem"] 			= SpawnItem,
+		["SItemInInv"] 		= SpawnItemInInv,
+		["RItem"] 			= RemoveItem,
+		["RItemFromInv"]	= RemoveItemFromInv,
+		["RActInvFromBox"]	= RelocActInvFromBox,
+		["RActInvInBox"]	= RelocActInvInBox,
+		--
+		["GetString"] 		= GetString,
+		["GetGameMin"] 		= GetGameMin,
+		["GetGameSec"] 		= GetGameSec,
+		["GetNpcRelation"]	= GetNpcRelation,
+		["BlowUpObj"]		= BlowUpObj,
+		["GiveTask"]		= GiveTask,
+		["DisToObj"]		= DisToObj,
+		["GetFunc"]			= GetFunc,
+		["GetTalkingNpc"]	= GetTalkingNpc,
+		["WaitOneUpd"]		= WaitOneUpd,
+		["teleport_actor"]	= TpActor,
+		["KickAct"]			= KickAct,
+		["AfterKickAct"]	= AfterKickAct,
+		["ExcludedNpcs"]	= ExcludedNpcs,
+		-- DBG ------------------------------------------------------------------
+		["_log"]			= _dbg and _dbg._log or function()end,
+		["_printf"]			= _dbg and _dbg._printf or function()end,
+		["_abort"]			= _dbg and _dbg._abort or function()end,
+		["_cheksl"]			= _dbg and _dbg._cheksl or function()end,
+		-- DBG ------------------------------------------------------------------
+		["SendTip"] 		= SendTip,
+		["toboolean"] 		= toboolean
+	}
+	local oModule = _G
+	setfenv(1,oModule)
+	for k,v in pairs(tFuncG) do
+		oModule[k] = v
+		setfenv(oModule[k],oModule)
+	end
+	bFuncG = true
+end
+--/--------------------------------------------------------------------------
+

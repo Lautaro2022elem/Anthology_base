@@ -1,0 +1,28 @@
+[logic]
+active = move@waiting
+post_combat_time = 0, 0
+
+[move@waiting]
+move_dest_number       = 684787
+move_look_vertex       = 680073
+move_state_when_center = guard
+move_state_when_move   = walk
+meet                   = meet
+invulnerable           = true
+on_info                = {+topi_var_2_suget_quest_3_give} nil %=release_npc%
+on_info2                = {+topi_m2_killer_ceh_quest_5_talking_1} nil %=release_npc%
+
+
+[meet]
+close_anim 		= nil
+close_victim 	= nil
+close_snd_hello = nil
+close_snd_bye 	= nil
+far_anim 		= nil
+far_victim 		= nil
+close_distance  = 0
+far_distance 	= 0
+use = {=actor_enemy} false, true
+allow_break = false
+trade_enable = true
+meet_on_talking = false

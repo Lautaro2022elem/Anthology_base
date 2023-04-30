@@ -1,0 +1,7 @@
+[logic] 
+active = sr_idle@start 
+
+[sr_idle@start]
+on_info = {+spectrum_project_start =actor_in_zone(pod_a1_dop_zone_restr_2) +labx5_b1_come_point_1 -labx5_a1_dop_zone_restr_effects_spez_1} sr_idle@nil %=labx5_b2_main_quest_1_lift_effect +labx5_a1_dop_zone_restr_effects_spez_1%
+
+[sr_idle@nil] 

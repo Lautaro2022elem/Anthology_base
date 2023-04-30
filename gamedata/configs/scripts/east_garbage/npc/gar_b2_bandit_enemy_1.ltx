@@ -1,0 +1,26 @@
+[logic]
+active = move@killer_garrizone
+on_death = death
+
+[death]
+on_info = %+bar_a2_dop_quest_npc2_1_killed%
+
+
+[move@killer_garrizone]
+meet = meet
+on_info                = {!actor_enemy +gar_mod_npcs_spawner} %=actor_enemy%
+
+[meet]
+close_anim 		= nil
+close_victim 	= nil
+far_anim 		= nil
+far_victim 		= nil
+close_distance  = 0
+far_distance 	= 0
+close_snd_distance = 3
+abuse           = false
+use = {=actor_enemy} false, true
+allow_break = false
+meet_on_talking = false
+meet_on_talking = false
+

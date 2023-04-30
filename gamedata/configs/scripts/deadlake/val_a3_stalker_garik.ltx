@@ -1,0 +1,115 @@
+[logic@val_a3_stalker_garik]
+active = animpoint@base
+suitable = {=check_npc_name(val_a3_stalker_garik)} true
+prior = 200
+level_spot = quest_npc
+post_combat_time = 0, 0
+
+[remark@base]  
+no_move = true  
+anim = guard
+target = story | actor
+meet = meet@base
+combat_ignore_cond = true
+combat_ignore_keep_when_attacked = true
+gather_items_enabled = true
+corpse_detection_enabled = false
+invulnerable = true
+on_info = {+val_search_lost_mechanic_start_task} animpoint@base
+help_wounded_enabled = false
+
+[animpoint@base]
+cover_name = val_a3_stalker_garik_cover
+avail_animations = animpoint_stay_wall
+meet = meet@base
+use_camp = false
+reach_distance = 1
+combat_ignore_cond = true
+combat_ignore_keep_when_attacked = true
+invulnerable = true
+gather_items_enabled = false
+on_info = {+dl_first_dialog_val_a3_stalker_garik_done} animpoint@base_01
+help_wounded_enabled = false
+corpse_detection_enabled = false
+
+[animpoint@base_01]
+cover_name = val_a3_stalker_garik_cover
+avail_animations = animpoint_stay_wall
+meet = meet@base_01
+use_camp = false
+reach_distance = 1
+combat_ignore_cond = true
+combat_ignore_keep_when_attacked = true
+invulnerable = true
+gather_items_enabled = false
+help_wounded_enabled = false
+corpse_detection_enabled = false
+on_info = {+zat_b42_mayron_spawn} walker@out_base
+
+[walker@out_base]
+path_walk = stalker_garik_walk
+def_state_moving = rush
+meet = meet@base_02
+use_camp = false
+reach_distance = 1
+invulnerable = true
+gather_items_enabled = false
+help_wounded_enabled = false
+corpse_detection_enabled = false
+on_info = {+dl_sos_signal_complete} animpoint@base_02
+
+[animpoint@base_02]
+cover_name = val_a3_stalker_garik_cover
+avail_animations = animpoint_stay_wall
+meet = meet@base_02
+use_camp = false
+reach_distance = 1
+combat_ignore_cond = true
+combat_ignore_keep_when_attacked = true
+invulnerable = true
+gather_items_enabled = false
+help_wounded_enabled = false
+corpse_detection_enabled = false
+
+[meet@base]
+;close_snd_hello = zat_b30_owl_stalker_trader_greeting
+;close_snd_bye = zat_b30_owl_stalker_trader_farewell
+close_anim 		= nil
+close_victim 	= nil
+far_anim 		= threat_na
+far_victim 		= nil
+close_distance  = 0
+far_distance 	= 0
+close_snd_distance = 3
+use = {!actor_enemy =dist_to_actor_le(3)} self, true
+allow_break = false
+meet_on_talking = false
+
+[meet@base_01]
+close_anim 		= nil
+close_victim 	= nil
+far_anim 		= nil
+far_victim 		= nil
+close_distance  = 0
+far_distance 	= 0
+close_snd_distance = 3
+use 			= nil
+close_snd_hello = nil
+trade_enable    = true
+allow_break 	= false
+meet_dialog = {+dl_new_time_search_art_complete} dl_storyline_garik_quest, dl_done_first_quest_val_a3_stalker_garik
+meet_on_talking = true
+
+[meet@base_02]
+close_anim 		= nil
+close_victim 	= nil
+far_anim 		= nil
+far_victim 		= nil
+close_distance  = 0
+far_distance 	= 0
+close_snd_distance = 3
+use 			= nil
+close_snd_hello = nil
+trade_enable    = true
+allow_break 	= false
+meet_on_talking = true

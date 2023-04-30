@@ -1,0 +1,13 @@
+[logic]
+active = sr_idle
+
+[sr_idle]
+on_info = {+spectrum_project_start +sp_a2_hero_to_garbage_come +gar_a2_dolg_guard_dialog_info} sr_idle@2 %=disable_ui =run_postprocess(black:2525:true) +gar_a2_main_quest_borland_release%
+
+[sr_idle@2]
+on_game_timer = 40 | sr_idle@3 %=teleport_actor(gar_actor_teleport_bar_walk:gar_actor_teleport_bar_look) =enable_ui%
+
+[sr_idle@3] 
+on_game_timer = 20 | sr_idle@nil %=stop_postprocess(2525)%
+
+[sr_idle@nil] 

@@ -1,0 +1,21 @@
+[logic]
+active = sr_idle
+ 
+[sr_idle]
+on_info = {+spectrum_project_start +esc_squad_nebo_attack_go} sr_idle@2
+ 
+[sr_idle@2]
+on_timer = 100| sr_cutscene@cam
+ 
+[sr_cutscene@cam]
+point = esc_quest_away_from_the_bandits_actor_walk
+look = esc_quest_away_from_the_bandits_actor_look
+cam_effector = scenario_cam\level_escape\camera_baza_bandits_plen
+enable_ui_on_end = true
+global_cameffect = true
+on_signal = cameff_end | sr_idle@3 %+esc_squad_baza_bandits_dead_info%
+
+[sr_idle@3]
+on_info = {-esc_squad_baza_bandits_dead} sr_idle@nil %=kill_squad(esc_squad_baza_bandits)%
+
+[sr_idle@nil]

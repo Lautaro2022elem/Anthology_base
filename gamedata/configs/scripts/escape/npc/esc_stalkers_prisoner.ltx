@@ -1,0 +1,85 @@
+---------------Муравей-----------------
+[logic@esc_squad_stalkers_prisoner_muravei]
+suitable = {=check_npc_name(esc_stalker_muravei)} true
+prior = 200
+active = walker@esc_stalker_muravei_prisoner
+
+[walker@esc_stalker_muravei_prisoner]
+path_walk = muravei_prizoner_walk
+path_look = muravei_prizoner_look
+use_camp = false
+on_info = {=dist_to_actor_le(6) +esc_squad_kpp_bandits_dead} remark@esc_stalker_muravei_free %=play_sound(help_thanks)%
+combat_ignore_cond = true
+combat_ignore_keep_when_attacked = true
+invulnerable = true
+gather_items_enabled = false
+help_wounded_enabled = false
+corpse_detection_enabled = false
+meet = no_meet
+
+[remark@esc_stalker_muravei_free]
+anim = wait_na
+target = story | esc_killer_duplet
+on_info = {+esc_dialog_muravei_end} remark@esc_stalker_muravei_no_meet
+combat_ignore_cond = false
+combat_ignore_keep_when_attacked = false
+invulnerable = false
+gather_items_enabled = false
+help_wounded_enabled = false
+corpse_detection_enabled = false
+meet = meet@muravei_dialog_start
+
+[remark@esc_stalker_muravei_no_meet]
+anim = wait_na
+target = story | esc_killer_duplet
+on_info = {+esc_zver_come_back_vilage} %=release_npc%
+combat_ignore_cond = false
+combat_ignore_keep_when_attacked = false
+invulnerable = false
+gather_items_enabled = false
+help_wounded_enabled = false
+corpse_detection_enabled = false
+meet = no_meet
+
+[meet@muravei_dialog_start]
+abuse           = false
+close_anim 		= nil
+far_anim 		= nil
+far_victim 		= nil
+close_distance  = 0
+far_distance 	= 0
+close_victim = actor
+allow_break = false
+meet_dialog = esc_stalker_muravei_free
+trade_enable = false
+
+---------------Левша-----------------
+[logic@esc_squad_stalkers_prisoner_levsha]
+suitable = {=check_npc_name(esc_stalker_levsha)} true
+prior = 200
+active = walker@esc_stalker_levsha_prisoner
+
+[walker@esc_stalker_levsha_prisoner]
+path_walk = levsha_prizoner_walk
+path_look = levsha_prizoner_look
+use_camp = false
+on_info = {=dist_to_actor_le(6) +esc_squad_kpp_bandits_dead} remark@esc_stalker_levsha_free
+combat_ignore_cond = true
+combat_ignore_keep_when_attacked = true
+invulnerable = true
+gather_items_enabled = false
+help_wounded_enabled = false
+corpse_detection_enabled = false
+meet = no_meet
+
+[remark@esc_stalker_levsha_free]
+anim = wait_na
+target = story | esc_killer_duplet
+on_info = {+esc_zver_come_back_vilage} %=release_npc%
+combat_ignore_cond = false
+combat_ignore_keep_when_attacked = false
+invulnerable = false
+gather_items_enabled = false
+help_wounded_enabled = false
+corpse_detection_enabled = false
+meet = no_meet

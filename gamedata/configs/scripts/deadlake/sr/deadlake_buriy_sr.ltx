@@ -1,0 +1,13 @@
+[logic]
+active = sr_idle@delete_npc
+
+[sr_idle@delete_npc]
+on_info = {+dl_stalker_buriy_ranen_off} sr_idle@timer %=run_postprocess(fade_in) =disable_ui =remove_npc(dl_stalker_buriy_ranen_id)%
+
+[sr_idle@timer]
+on_timer = 1000 | sr_idle@timer_off %=teleport_actor(dl_actor_walk:dl_actor_look) =forward_game_time(6)%
+
+[sr_idle@timer_off]
+on_timer = 1000 | sr_idle@nil %=enable_ui =create_squad(dl_stalker_buriy_squad:val_a3)%
+
+[sr_idle@nil]

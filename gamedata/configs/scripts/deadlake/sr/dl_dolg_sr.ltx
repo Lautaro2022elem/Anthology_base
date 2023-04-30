@@ -1,0 +1,31 @@
+[logic]
+active = sr_idle@check_info
+
+[sr_idle@check_info]
+on_info = {+dl_task_wait_dolg_go} sr_idle@timer_start %=give_task(storyline_quest_last)%
+
+[sr_idle@timer_start]
+on_game_timer = 52000 | sr_idle@check_night
+
+[sr_idle@check_night]
+on_info = {=zat_b7_is_night} sr_idle@spawn_and_teleport %=clear_smart_terrain(wiz_baza:true) =create_squad(dl_dolg_attakers_val_a3:val_a3) +dl_dolg_squad_pribil%
+
+[sr_idle@spawn_and_teleport]
+on_info = {+dl_go_wait_to_attak_mercenaries} sr_idle@teleport %=create_squad(dl_dolg_attakers:dl_shturm_smart) =create_squad(dl_stalker_attakers:dl_shturm_smart) =create_squad(dl_merc_sim_squad_advanced:lake_smart_terrain_4) =run_postprocess(fade_in) =disable_ui%
+
+[sr_idle@teleport]
+on_timer = 1000 | sr_idle@timer_off %=teleport_actor(dl_attack_walk:dl_attack_look) =forward_game_time(2)%
+
+[sr_idle@timer_off]
+on_timer = 1000 | sr_idle@check_item %=enable_ui =spawn_corpse(dl_bizon_stalker:dl_bizon_death_sp)%
+
+[sr_idle@check_item]
+on_info = {=actor_has_item(dl_notes_bizon)} sr_idle@time_to_outro %+modification_complete%
+
+[sr_idle@time_to_outro]
+on_timer = 25000 | sr_idle@outro %=run_postprocess(fade_in) =disable_ui%
+
+[sr_idle@outro]
+on_timer = 3000 | sr_idle@nil %=run_tutorial(outro_game_wiz)%
+
+[sr_idle@nil]

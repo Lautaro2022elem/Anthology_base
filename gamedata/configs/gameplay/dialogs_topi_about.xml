@@ -1,0 +1,991 @@
+<?xml version="1.0" encoding="windows-1251" ?>
+<game_dialogs>
+
+<dialog id="about_afgan_dialog">
+        <precondition>dialogs_topi.ins_precond</precondition>
+        <phrase_list>
+            <phrase id="0">
+                <text>dm_about_afgan_talk</text>
+                <next>101</next>
+                <next>102</next>
+                <next>103</next>
+                <next>104</next>
+                <next>105</next>
+                <next>106</next>
+                <next>107</next>
+                <next>108</next>
+                <next>109</next>
+                <next>110</next>
+                <next>111</next>
+                <next>112</next>
+                <next>113</next>
+                <next>114</next>
+                <next>115</next>
+                <next>116</next>
+                <next>117</next>
+                <next>118</next>
+                <next>119</next>
+                <next>120</next>
+                <next>190</next>
+            </phrase>
+            <phrase id="101">
+                <dont_has_info>random_afgan_1</dont_has_info>
+                <text>stalker_afgan_1</text>
+                <give_info>random_afgan_1</give_info>
+                <next>200</next>
+            </phrase>
+            <phrase id="102">
+                <dont_has_info>random_afgan_2</dont_has_info>
+                <text>stalker_afgan_2</text>
+                <give_info>random_afgan_2</give_info>
+                <next>200</next>
+            </phrase>
+            <phrase id="103">
+                <dont_has_info>random_afgan_3</dont_has_info>
+                <text>stalker_afgan_3</text>
+                <give_info>random_afgan_3</give_info>
+                <next>200</next>
+            </phrase>
+            <phrase id="104">
+                <dont_has_info>random_afgan_4</dont_has_info>
+                <text>stalker_afgan_4</text>
+                <give_info>random_afgan_4</give_info>
+                <next>200</next>
+            </phrase>
+            <phrase id="105">
+                <dont_has_info>random_afgan_5</dont_has_info>
+                <text>stalker_afgan_5</text>
+                <give_info>random_afgan_5</give_info>
+                <next>200</next>
+            </phrase>
+            <phrase id="106">
+                <dont_has_info>random_afgan_6</dont_has_info>
+                <text>stalker_afgan_6</text>
+                <give_info>random_afgan_6</give_info>
+                <next>200</next>
+            </phrase>
+            <phrase id="107">
+                <dont_has_info>random_afgan_7</dont_has_info>
+                <text>stalker_afgan_7</text>
+                <give_info>random_afgan_7</give_info>
+                <next>200</next>
+            </phrase>
+            <phrase id="108">
+                <dont_has_info>random_afgan_8</dont_has_info>
+                <text>stalker_afgan_8</text>
+                <give_info>random_afgan_8</give_info>
+                <next>200</next>
+            </phrase>
+            <phrase id="109">
+                <dont_has_info>random_afgan_9</dont_has_info>
+                <text>stalker_afgan_9</text>
+                <give_info>random_afgan_9</give_info>
+                <next>200</next>
+            </phrase>
+            <phrase id="110">
+                <dont_has_info>random_afgan_10</dont_has_info>
+                <text>stalker_afgan_10</text>
+                <give_info>random_afgan_10</give_info>
+                <next>200</next>
+            </phrase>
+            <phrase id="111">
+                <dont_has_info>random_afgan_11</dont_has_info>
+                <text>stalker_afgan_11</text>
+                <give_info>random_afgan_11</give_info>
+                <next>200</next>
+            </phrase>
+            <phrase id="112">
+                <dont_has_info>random_afgan_12</dont_has_info>
+                <text>stalker_afgan_12</text>
+                <give_info>random_afgan_12</give_info>
+                <next>200</next>
+            </phrase>
+            <phrase id="113">
+                <dont_has_info>random_afgan_13</dont_has_info>
+                <text>stalker_afgan_13</text>
+                <give_info>random_afgan_13</give_info>
+                <next>200</next>
+            </phrase>
+            <phrase id="114">
+                <dont_has_info>random_afgan_14</dont_has_info>
+                <text>stalker_afgan_14</text>
+                <give_info>random_afgan_14</give_info>
+                <next>200</next>
+            </phrase>
+            <phrase id="115">
+                <dont_has_info>random_afgan_15</dont_has_info>
+                <text>stalker_afgan_15</text>
+                <give_info>random_afgan_15</give_info>
+                <next>200</next>
+            </phrase>
+            <phrase id="116">
+                <dont_has_info>random_afgan_16</dont_has_info>
+                <text>stalker_afgan_16</text>
+                <give_info>random_afgan_16</give_info>
+                <next>200</next>
+            </phrase>
+            <phrase id="117">
+                <dont_has_info>random_afgan_17</dont_has_info>
+                <text>stalker_afgan_17</text>
+                <give_info>random_afgan_17</give_info>
+                <next>200</next>
+            </phrase>
+            <phrase id="118">
+                <dont_has_info>random_afgan_18</dont_has_info>
+                <text>stalker_afgan_18</text>
+                <give_info>random_afgan_18</give_info>
+                <next>200</next>
+            </phrase>
+            <phrase id="119">
+                <dont_has_info>random_afgan_19</dont_has_info>
+                <text>stalker_afgan_19</text>
+                <give_info>random_afgan_19</give_info>
+                <next>200</next>
+            </phrase>
+            <phrase id="120">
+                <dont_has_info>random_afgan_20</dont_has_info>
+                <text>stalker_afgan_20</text>
+                <give_info>random_afgan_20</give_info>
+                <next>200</next>
+            </phrase>
+            <phrase id="190">
+                <has_info>random_afgan_1</has_info>
+                <has_info>random_afgan_2</has_info>
+                <has_info>random_afgan_3</has_info>
+                <has_info>random_afgan_4</has_info>
+                <has_info>random_afgan_5</has_info>
+                <has_info>random_afgan_6</has_info>
+                <has_info>random_afgan_7</has_info>
+                <has_info>random_afgan_8</has_info>
+                <has_info>random_afgan_9</has_info>
+                <has_info>random_afgan_10</has_info>
+                <has_info>random_afgan_11</has_info>
+                <has_info>random_afgan_12</has_info>
+                <has_info>random_afgan_13</has_info>
+                <has_info>random_afgan_14</has_info>
+                <has_info>random_afgan_15</has_info>
+                <has_info>random_afgan_16</has_info>
+                <has_info>random_afgan_17</has_info>
+                <has_info>random_afgan_18</has_info>
+                <has_info>random_afgan_19</has_info>
+                <has_info>random_afgan_20</has_info>
+                <text>about_dont_afgan</text>
+                <disable_info>random_afgan_1</disable_info>
+                <disable_info>random_afgan_2</disable_info>
+                <disable_info>random_afgan_3</disable_info>
+                <disable_info>random_afgan_4</disable_info>
+                <disable_info>random_afgan_5</disable_info>
+                <disable_info>random_afgan_6</disable_info>
+                <disable_info>random_afgan_7</disable_info>
+                <disable_info>random_afgan_8</disable_info>
+                <disable_info>random_afgan_9</disable_info>
+                <disable_info>random_afgan_10</disable_info>
+                <disable_info>random_afgan_11</disable_info>
+                <disable_info>random_afgan_12</disable_info>
+                <disable_info>random_afgan_13</disable_info>
+                <disable_info>random_afgan_14</disable_info>
+                <disable_info>random_afgan_15</disable_info>
+                <disable_info>random_afgan_16</disable_info>
+                <disable_info>random_afgan_17</disable_info>
+                <disable_info>random_afgan_18</disable_info>
+                <disable_info>random_afgan_19</disable_info>
+                <disable_info>random_afgan_20</disable_info>
+                <next>200</next>
+            </phrase>
+            <phrase id="200">
+                <text>dm_about_afgan_end</text>
+            </phrase>
+        </phrase_list>
+
+</dialog>
+
+<dialog id="about_aneki_dialog">
+        <precondition>dialogs_topi.ins_precond</precondition>
+        <phrase_list>
+            <phrase id="0">
+                <text>dm_about_aneki_talk</text>
+                <next>101</next>
+                <next>102</next>
+                <next>103</next>
+                <next>104</next>
+                <next>105</next>
+                <next>106</next>
+                <next>107</next>
+                <next>108</next>
+                <next>109</next>
+                <next>110</next>
+                <next>111</next>
+                <next>112</next>
+                <next>113</next>
+                <next>114</next>
+                <next>115</next>
+                <next>116</next>
+                <next>117</next>
+                <next>118</next>
+                <next>119</next>
+                <next>120</next>
+                <next>190</next>
+            </phrase>
+            <phrase id="101">
+                <dont_has_info>random_aneki_1</dont_has_info>
+                <text>stalker_aneki_1</text>
+                <give_info>random_aneki_1</give_info>
+                <next>200</next>
+            </phrase>
+            <phrase id="102">
+                <dont_has_info>random_aneki_2</dont_has_info>
+                <text>stalker_aneki_2</text>
+                <give_info>random_aneki_2</give_info>
+                <next>200</next>
+            </phrase>
+            <phrase id="103">
+                <dont_has_info>random_aneki_3</dont_has_info>
+                <text>stalker_aneki_3</text>
+                <give_info>random_aneki_3</give_info>
+                <next>200</next>
+            </phrase>
+            <phrase id="104">
+                <dont_has_info>random_aneki_4</dont_has_info>
+                <text>stalker_aneki_4</text>
+                <give_info>random_aneki_4</give_info>
+                <next>200</next>
+            </phrase>
+            <phrase id="105">
+                <dont_has_info>random_aneki_5</dont_has_info>
+                <text>stalker_aneki_5</text>
+                <give_info>random_aneki_5</give_info>
+                <next>200</next>
+            </phrase>
+            <phrase id="106">
+                <dont_has_info>random_aneki_6</dont_has_info>
+                <text>stalker_aneki_6</text>
+                <give_info>random_aneki_6</give_info>
+                <next>200</next>
+            </phrase>
+            <phrase id="107">
+                <dont_has_info>random_aneki_7</dont_has_info>
+                <text>stalker_aneki_7</text>
+                <give_info>random_aneki_7</give_info>
+                <next>200</next>
+            </phrase>
+            <phrase id="108">
+                <dont_has_info>random_aneki_8</dont_has_info>
+                <text>stalker_aneki_8</text>
+                <give_info>random_aneki_8</give_info>
+                <next>200</next>
+            </phrase>
+            <phrase id="109">
+                <dont_has_info>random_aneki_9</dont_has_info>
+                <text>stalker_aneki_9</text>
+                <give_info>random_aneki_9</give_info>
+                <next>200</next>
+            </phrase>
+            <phrase id="110">
+                <dont_has_info>random_aneki_10</dont_has_info>
+                <text>stalker_aneki_10</text>
+                <give_info>random_aneki_10</give_info>
+                <next>200</next>
+            </phrase>
+            <phrase id="111">
+                <dont_has_info>random_aneki_11</dont_has_info>
+                <text>stalker_aneki_11</text>
+                <give_info>random_aneki_11</give_info>
+                <next>200</next>
+            </phrase>
+            <phrase id="112">
+                <dont_has_info>random_aneki_12</dont_has_info>
+                <text>stalker_aneki_12</text>
+                <give_info>random_aneki_12</give_info>
+                <next>200</next>
+            </phrase>
+            <phrase id="113">
+                <dont_has_info>random_aneki_13</dont_has_info>
+                <text>stalker_aneki_13</text>
+                <give_info>random_aneki_13</give_info>
+                <next>200</next>
+            </phrase>
+            <phrase id="114">
+                <dont_has_info>random_aneki_14</dont_has_info>
+                <text>stalker_aneki_14</text>
+                <give_info>random_aneki_14</give_info>
+                <next>200</next>
+            </phrase>
+            <phrase id="115">
+                <dont_has_info>random_aneki_15</dont_has_info>
+                <text>stalker_aneki_15</text>
+                <give_info>random_aneki_15</give_info>
+                <next>200</next>
+            </phrase>
+            <phrase id="116">
+                <dont_has_info>random_aneki_16</dont_has_info>
+                <text>stalker_aneki_16</text>
+                <give_info>random_aneki_16</give_info>
+                <next>200</next>
+            </phrase>
+            <phrase id="117">
+                <dont_has_info>random_aneki_17</dont_has_info>
+                <text>stalker_aneki_17</text>
+                <give_info>random_aneki_17</give_info>
+                <next>200</next>
+            </phrase>
+            <phrase id="118">
+                <dont_has_info>random_aneki_18</dont_has_info>
+                <text>stalker_aneki_18</text>
+                <give_info>random_aneki_18</give_info>
+                <next>200</next>
+            </phrase>
+            <phrase id="119">
+                <dont_has_info>random_aneki_19</dont_has_info>
+                <text>stalker_aneki_19</text>
+                <give_info>random_aneki_19</give_info>
+                <next>200</next>
+            </phrase>
+            <phrase id="120">
+                <dont_has_info>random_aneki_20</dont_has_info>
+                <text>stalker_aneki_20</text>
+                <give_info>random_aneki_20</give_info>
+                <next>200</next>
+            </phrase>
+            <phrase id="190">
+                <has_info>random_aneki_1</has_info>
+                <has_info>random_aneki_2</has_info>
+                <has_info>random_aneki_3</has_info>
+                <has_info>random_aneki_4</has_info>
+                <has_info>random_aneki_5</has_info>
+                <has_info>random_aneki_6</has_info>
+                <has_info>random_aneki_7</has_info>
+                <has_info>random_aneki_8</has_info>
+                <has_info>random_aneki_9</has_info>
+                <has_info>random_aneki_10</has_info>
+                <has_info>random_aneki_11</has_info>
+                <has_info>random_aneki_12</has_info>
+                <has_info>random_aneki_13</has_info>
+                <has_info>random_aneki_14</has_info>
+                <has_info>random_aneki_15</has_info>
+                <has_info>random_aneki_16</has_info>
+                <has_info>random_aneki_17</has_info>
+                <has_info>random_aneki_18</has_info>
+                <has_info>random_aneki_19</has_info>
+                <has_info>random_aneki_20</has_info>
+                <text>about_dont_aneki</text>
+                <disable_info>random_aneki_1</disable_info>
+                <disable_info>random_aneki_2</disable_info>
+                <disable_info>random_aneki_3</disable_info>
+                <disable_info>random_aneki_4</disable_info>
+                <disable_info>random_aneki_5</disable_info>
+                <disable_info>random_aneki_6</disable_info>
+                <disable_info>random_aneki_7</disable_info>
+                <disable_info>random_aneki_8</disable_info>
+                <disable_info>random_aneki_9</disable_info>
+                <disable_info>random_aneki_10</disable_info>
+                <disable_info>random_aneki_11</disable_info>
+                <disable_info>random_aneki_12</disable_info>
+                <disable_info>random_aneki_13</disable_info>
+                <disable_info>random_aneki_14</disable_info>
+                <disable_info>random_aneki_15</disable_info>
+                <disable_info>random_aneki_16</disable_info>
+                <disable_info>random_aneki_17</disable_info>
+                <disable_info>random_aneki_18</disable_info>
+                <disable_info>random_aneki_19</disable_info>
+                <disable_info>random_aneki_20</disable_info>
+                <next>200</next>
+            </phrase>
+            <phrase id="200">
+                <text>dm_about_aneki_end</text>
+            </phrase>
+        </phrase_list>
+</dialog>
+
+<dialog id="about_zonanews_dialog">
+        <precondition>dialogs_topi.ins_precond</precondition>
+        <phrase_list>
+            <phrase id="0">
+                <text>dm_about_zonanews_talk</text>
+                <next>101</next>
+                <next>102</next>
+                <next>103</next>
+                <next>104</next>
+                <next>105</next>
+                <next>106</next>
+                <next>107</next>
+                <next>108</next>
+                <next>109</next>
+                <next>110</next>
+                <next>111</next>
+                <next>112</next>
+                <next>113</next>
+                <next>114</next>
+                <next>115</next>
+                <next>116</next>
+                <next>117</next>
+                <next>118</next>
+                <next>119</next>
+                <next>120</next>
+                <next>190</next>
+            </phrase>
+            <phrase id="101">
+                <dont_has_info>random_zonanews_1</dont_has_info>
+                <text>stalker_zonanews_1</text>
+                <give_info>random_zonanews_1</give_info>
+                <next>200</next>
+            </phrase>
+            <phrase id="102">
+                <dont_has_info>random_zonanews_2</dont_has_info>
+                <text>stalker_zonanews_2</text>
+                <give_info>random_zonanews_2</give_info>
+                <next>200</next>
+            </phrase>
+            <phrase id="103">
+                <dont_has_info>random_zonanews_3</dont_has_info>
+                <text>stalker_zonanews_3</text>
+                <give_info>random_zonanews_3</give_info>
+                <next>200</next>
+            </phrase>
+            <phrase id="104">
+                <dont_has_info>random_zonanews_4</dont_has_info>
+                <text>stalker_zonanews_4</text>
+                <give_info>random_zonanews_4</give_info>
+                <next>200</next>
+            </phrase>
+            <phrase id="105">
+                <dont_has_info>random_zonanews_5</dont_has_info>
+                <text>stalker_zonanews_5</text>
+                <give_info>random_zonanews_5</give_info>
+                <next>200</next>
+            </phrase>
+            <phrase id="106">
+                <dont_has_info>random_zonanews_6</dont_has_info>
+                <text>stalker_zonanews_6</text>
+                <give_info>random_zonanews_6</give_info>
+                <next>200</next>
+            </phrase>
+            <phrase id="107">
+                <dont_has_info>random_zonanews_7</dont_has_info>
+                <text>stalker_zonanews_7</text>
+                <give_info>random_zonanews_7</give_info>
+                <next>200</next>
+            </phrase>
+            <phrase id="108">
+                <dont_has_info>random_zonanews_8</dont_has_info>
+                <text>stalker_zonanews_8</text>
+                <give_info>random_zonanews_8</give_info>
+                <next>200</next>
+            </phrase>
+            <phrase id="109">
+                <dont_has_info>random_zonanews_9</dont_has_info>
+                <text>stalker_zonanews_9</text>
+                <give_info>random_zonanews_9</give_info>
+                <next>200</next>
+            </phrase>
+            <phrase id="110">
+                <dont_has_info>random_zonanews_10</dont_has_info>
+                <text>stalker_zonanews_10</text>
+                <give_info>random_zonanews_10</give_info>
+                <next>200</next>
+            </phrase>
+            <phrase id="111">
+                <dont_has_info>random_zonanews_11</dont_has_info>
+                <text>stalker_zonanews_11</text>
+                <give_info>random_zonanews_11</give_info>
+                <next>200</next>
+            </phrase>
+            <phrase id="112">
+                <dont_has_info>random_zonanews_12</dont_has_info>
+                <text>stalker_zonanews_12</text>
+                <give_info>random_zonanews_12</give_info>
+                <next>200</next>
+            </phrase>
+            <phrase id="113">
+                <dont_has_info>random_zonanews_13</dont_has_info>
+                <text>stalker_zonanews_13</text>
+                <give_info>random_zonanews_13</give_info>
+                <next>200</next>
+            </phrase>
+            <phrase id="114">
+                <dont_has_info>random_zonanews_14</dont_has_info>
+                <text>stalker_zonanews_14</text>
+                <give_info>random_zonanews_14</give_info>
+                <next>200</next>
+            </phrase>
+            <phrase id="115">
+                <dont_has_info>random_zonanews_15</dont_has_info>
+                <text>stalker_zonanews_15</text>
+                <give_info>random_zonanews_15</give_info>
+                <next>200</next>
+            </phrase>
+            <phrase id="116">
+                <dont_has_info>random_zonanews_16</dont_has_info>
+                <text>stalker_zonanews_16</text>
+                <give_info>random_zonanews_16</give_info>
+                <next>200</next>
+            </phrase>
+            <phrase id="117">
+                <dont_has_info>random_zonanews_17</dont_has_info>
+                <text>stalker_zonanews_17</text>
+                <give_info>random_zonanews_17</give_info>
+                <next>200</next>
+            </phrase>
+            <phrase id="118">
+                <dont_has_info>random_zonanews_18</dont_has_info>
+                <text>stalker_zonanews_18</text>
+                <give_info>random_zonanews_18</give_info>
+                <next>200</next>
+            </phrase>
+            <phrase id="119">
+                <dont_has_info>random_zonanews_19</dont_has_info>
+                <text>stalker_zonanews_19</text>
+                <give_info>random_zonanews_19</give_info>
+                <next>200</next>
+            </phrase>
+            <phrase id="120">
+                <dont_has_info>random_zonanews_20</dont_has_info>
+                <text>stalker_zonanews_20</text>
+                <give_info>random_zonanews_20</give_info>
+                <next>200</next>
+            </phrase>
+            <phrase id="190">
+                <has_info>random_zonanews_1</has_info>
+                <has_info>random_zonanews_2</has_info>
+                <has_info>random_zonanews_3</has_info>
+                <has_info>random_zonanews_4</has_info>
+                <has_info>random_zonanews_5</has_info>
+                <has_info>random_zonanews_6</has_info>
+                <has_info>random_zonanews_7</has_info>
+                <has_info>random_zonanews_8</has_info>
+                <has_info>random_zonanews_9</has_info>
+                <has_info>random_zonanews_10</has_info>
+                <has_info>random_zonanews_11</has_info>
+                <has_info>random_zonanews_12</has_info>
+                <has_info>random_zonanews_13</has_info>
+                <has_info>random_zonanews_14</has_info>
+                <has_info>random_zonanews_15</has_info>
+                <has_info>random_zonanews_16</has_info>
+                <has_info>random_zonanews_17</has_info>
+                <has_info>random_zonanews_18</has_info>
+                <has_info>random_zonanews_19</has_info>
+                <has_info>random_zonanews_20</has_info>
+                <text>about_dont_zonanews</text>
+                <disable_info>random_zonanews_1</disable_info>
+                <disable_info>random_zonanews_2</disable_info>
+                <disable_info>random_zonanews_3</disable_info>
+                <disable_info>random_zonanews_4</disable_info>
+                <disable_info>random_zonanews_5</disable_info>
+                <disable_info>random_zonanews_6</disable_info>
+                <disable_info>random_zonanews_7</disable_info>
+                <disable_info>random_zonanews_8</disable_info>
+                <disable_info>random_zonanews_9</disable_info>
+                <disable_info>random_zonanews_10</disable_info>
+                <disable_info>random_zonanews_11</disable_info>
+                <disable_info>random_zonanews_12</disable_info>
+                <disable_info>random_zonanews_13</disable_info>
+                <disable_info>random_zonanews_14</disable_info>
+                <disable_info>random_zonanews_15</disable_info>
+                <disable_info>random_zonanews_16</disable_info>
+                <disable_info>random_zonanews_17</disable_info>
+                <disable_info>random_zonanews_18</disable_info>
+                <disable_info>random_zonanews_19</disable_info>
+                <disable_info>random_zonanews_20</disable_info>
+                <next>200</next>
+            </phrase>
+            <phrase id="200">
+                <text>dm_about_zonanews_end</text>
+            </phrase>
+        </phrase_list>
+</dialog>
+
+<dialog id="about_baiki_dialog">
+        <precondition>dialogs_topi.ins_precond</precondition>
+        <phrase_list>
+            <phrase id="0">
+                <text>dm_about_baiki_talk</text>
+                <next>101</next>
+                <next>102</next>
+                <next>103</next>
+                <next>104</next>
+                <next>105</next>
+                <next>106</next>
+                <next>107</next>
+                <next>108</next>
+                <next>109</next>
+                <next>110</next>
+                <next>111</next>
+                <next>112</next>
+                <next>113</next>
+                <next>114</next>
+                <next>115</next>
+                <next>116</next>
+                <next>117</next>
+                <next>118</next>
+                <next>119</next>
+                <next>120</next>
+                <next>190</next>
+            </phrase>
+            <phrase id="101">
+                <dont_has_info>random_baiki_1</dont_has_info>
+                <text>stalker_baiki_1</text>
+                <give_info>random_baiki_1</give_info>
+                <next>200</next>
+            </phrase>
+            <phrase id="102">
+                <dont_has_info>random_baiki_2</dont_has_info>
+                <text>stalker_baiki_2</text>
+                <give_info>random_baiki_2</give_info>
+                <next>200</next>
+            </phrase>
+            <phrase id="103">
+                <dont_has_info>random_baiki_3</dont_has_info>
+                <text>stalker_baiki_3</text>
+                <give_info>random_baiki_3</give_info>
+                <next>200</next>
+            </phrase>
+            <phrase id="104">
+                <dont_has_info>random_baiki_4</dont_has_info>
+                <text>stalker_baiki_4</text>
+                <give_info>random_baiki_4</give_info>
+                <next>200</next>
+            </phrase>
+            <phrase id="105">
+                <dont_has_info>random_baiki_5</dont_has_info>
+                <text>stalker_baiki_5</text>
+                <give_info>random_baiki_5</give_info>
+                <next>200</next>
+            </phrase>
+            <phrase id="106">
+                <dont_has_info>random_baiki_6</dont_has_info>
+                <text>stalker_baiki_6</text>
+                <give_info>random_baiki_6</give_info>
+                <next>200</next>
+            </phrase>
+            <phrase id="107">
+                <dont_has_info>random_baiki_7</dont_has_info>
+                <text>stalker_baiki_7</text>
+                <give_info>random_baiki_7</give_info>
+                <next>200</next>
+            </phrase>
+            <phrase id="108">
+                <dont_has_info>random_baiki_8</dont_has_info>
+                <text>stalker_baiki_8</text>
+                <give_info>random_baiki_8</give_info>
+                <next>200</next>
+            </phrase>
+            <phrase id="109">
+                <dont_has_info>random_baiki_9</dont_has_info>
+                <text>stalker_baiki_9</text>
+                <give_info>random_baiki_9</give_info>
+                <next>200</next>
+            </phrase>
+            <phrase id="110">
+                <dont_has_info>random_baiki_10</dont_has_info>
+                <text>stalker_baiki_10</text>
+                <give_info>random_baiki_10</give_info>
+                <next>200</next>
+            </phrase>
+            <phrase id="111">
+                <dont_has_info>random_baiki_11</dont_has_info>
+                <text>stalker_baiki_11</text>
+                <give_info>random_baiki_11</give_info>
+                <next>200</next>
+            </phrase>
+            <phrase id="112">
+                <dont_has_info>random_baiki_12</dont_has_info>
+                <text>stalker_baiki_12</text>
+                <give_info>random_baiki_12</give_info>
+                <next>200</next>
+            </phrase>
+            <phrase id="113">
+                <dont_has_info>random_baiki_13</dont_has_info>
+                <text>stalker_baiki_13</text>
+                <give_info>random_baiki_13</give_info>
+                <next>200</next>
+            </phrase>
+            <phrase id="114">
+                <dont_has_info>random_baiki_14</dont_has_info>
+                <text>stalker_baiki_14</text>
+                <give_info>random_baiki_14</give_info>
+                <next>200</next>
+            </phrase>
+            <phrase id="115">
+                <dont_has_info>random_baiki_15</dont_has_info>
+                <text>stalker_baiki_15</text>
+                <give_info>random_baiki_15</give_info>
+                <next>200</next>
+            </phrase>
+            <phrase id="116">
+                <dont_has_info>random_baiki_16</dont_has_info>
+                <text>stalker_baiki_16</text>
+                <give_info>random_baiki_16</give_info>
+                <next>200</next>
+            </phrase>
+            <phrase id="117">
+                <dont_has_info>random_baiki_17</dont_has_info>
+                <text>stalker_baiki_17</text>
+                <give_info>random_baiki_17</give_info>
+                <next>200</next>
+            </phrase>
+            <phrase id="118">
+                <dont_has_info>random_baiki_18</dont_has_info>
+                <text>stalker_baiki_18</text>
+                <give_info>random_baiki_18</give_info>
+                <next>200</next>
+            </phrase>
+            <phrase id="119">
+                <dont_has_info>random_baiki_19</dont_has_info>
+                <text>stalker_baiki_19</text>
+                <give_info>random_baiki_19</give_info>
+                <next>200</next>
+            </phrase>
+            <phrase id="120">
+                <dont_has_info>random_baiki_20</dont_has_info>
+                <text>stalker_baiki_20</text>
+                <give_info>random_baiki_20</give_info>
+                <next>200</next>
+            </phrase>
+            <phrase id="190">
+                <has_info>random_baiki_1</has_info>
+                <has_info>random_baiki_2</has_info>
+                <has_info>random_baiki_3</has_info>
+                <has_info>random_baiki_4</has_info>
+                <has_info>random_baiki_5</has_info>
+                <has_info>random_baiki_6</has_info>
+                <has_info>random_baiki_7</has_info>
+                <has_info>random_baiki_8</has_info>
+                <has_info>random_baiki_9</has_info>
+                <has_info>random_baiki_10</has_info>
+                <has_info>random_baiki_11</has_info>
+                <has_info>random_baiki_12</has_info>
+                <has_info>random_baiki_13</has_info>
+                <has_info>random_baiki_14</has_info>
+                <has_info>random_baiki_15</has_info>
+                <has_info>random_baiki_16</has_info>
+                <has_info>random_baiki_17</has_info>
+                <has_info>random_baiki_18</has_info>
+                <has_info>random_baiki_19</has_info>
+                <has_info>random_baiki_20</has_info>
+                <text>about_dont_baiki</text>
+                <disable_info>random_baiki_1</disable_info>
+                <disable_info>random_baiki_2</disable_info>
+                <disable_info>random_baiki_3</disable_info>
+                <disable_info>random_baiki_4</disable_info>
+                <disable_info>random_baiki_5</disable_info>
+                <disable_info>random_baiki_6</disable_info>
+                <disable_info>random_baiki_7</disable_info>
+                <disable_info>random_baiki_8</disable_info>
+                <disable_info>random_baiki_9</disable_info>
+                <disable_info>random_baiki_10</disable_info>
+                <disable_info>random_baiki_11</disable_info>
+                <disable_info>random_baiki_12</disable_info>
+                <disable_info>random_baiki_13</disable_info>
+                <disable_info>random_baiki_14</disable_info>
+                <disable_info>random_baiki_15</disable_info>
+                <disable_info>random_baiki_16</disable_info>
+                <disable_info>random_baiki_17</disable_info>
+                <disable_info>random_baiki_18</disable_info>
+                <disable_info>random_baiki_19</disable_info>
+                <disable_info>random_baiki_20</disable_info>
+                <next>200</next>
+            </phrase>
+            <phrase id="200">
+                <text>dm_about_baiki_end</text>
+            </phrase>
+        </phrase_list>
+</dialog>
+
+	<dialog id="about_story_dialog">
+        <precondition>dialogs_topi.ins_precond</precondition>
+        <phrase_list>
+            <phrase id="0">
+                <text>dm_about_story_talk</text>
+                <next>101</next>
+                <next>102</next>
+                <next>103</next>
+                <next>104</next>
+                <next>105</next>
+                <next>106</next>
+                <next>107</next>
+                <next>108</next>
+                <next>109</next>
+                <next>110</next>
+                <next>111</next>
+                <next>112</next>
+                <next>113</next>
+                <next>114</next>
+                <next>115</next>
+                <next>116</next>
+                <next>117</next>
+                <next>118</next>
+                <next>119</next>
+                <next>120</next>
+                <next>190</next>
+            </phrase>
+            <phrase id="101">
+                <dont_has_info>random_story_1</dont_has_info>
+                <text>stalker_story_1</text>
+                <give_info>random_story_1</give_info>
+                <next>200</next>
+            </phrase>
+            <phrase id="102">
+                <dont_has_info>random_story_2</dont_has_info>
+                <text>stalker_story_2</text>
+                <give_info>random_story_2</give_info>
+                <next>200</next>
+            </phrase>
+            <phrase id="103">
+                <dont_has_info>random_story_3</dont_has_info>
+                <text>stalker_story_3</text>
+                <give_info>random_story_3</give_info>
+                <next>200</next>
+            </phrase>
+            <phrase id="104">
+                <dont_has_info>random_story_4</dont_has_info>
+                <text>stalker_story_4</text>
+                <give_info>random_story_4</give_info>
+                <next>200</next>
+            </phrase>
+            <phrase id="105">
+                <dont_has_info>random_story_5</dont_has_info>
+                <text>stalker_story_5</text>
+                <give_info>random_story_5</give_info>
+                <next>200</next>
+            </phrase>
+            <phrase id="106">
+                <dont_has_info>random_story_6</dont_has_info>
+                <text>stalker_story_6</text>
+                <give_info>random_story_6</give_info>
+                <next>200</next>
+            </phrase>
+            <phrase id="107">
+                <dont_has_info>random_story_7</dont_has_info>
+                <text>stalker_story_7</text>
+                <give_info>random_story_7</give_info>
+                <next>200</next>
+            </phrase>
+            <phrase id="108">
+                <dont_has_info>random_story_8</dont_has_info>
+                <text>stalker_story_8</text>
+                <give_info>random_story_8</give_info>
+                <next>200</next>
+            </phrase>
+            <phrase id="109">
+                <dont_has_info>random_story_9</dont_has_info>
+                <text>stalker_story_9</text>
+                <give_info>random_story_9</give_info>
+                <next>200</next>
+            </phrase>
+            <phrase id="110">
+                <dont_has_info>random_story_10</dont_has_info>
+                <text>stalker_story_10</text>
+                <give_info>random_story_10</give_info>
+                <next>200</next>
+            </phrase>
+            <phrase id="111">
+                <dont_has_info>random_story_11</dont_has_info>
+                <text>stalker_story_11</text>
+                <give_info>random_story_11</give_info>
+                <next>200</next>
+            </phrase>
+            <phrase id="112">
+                <dont_has_info>random_story_12</dont_has_info>
+                <text>stalker_story_12</text>
+                <give_info>random_story_12</give_info>
+                <next>200</next>
+            </phrase>
+            <phrase id="113">
+                <dont_has_info>random_story_13</dont_has_info>
+                <text>stalker_story_13</text>
+                <give_info>random_story_13</give_info>
+                <next>200</next>
+            </phrase>
+            <phrase id="114">
+                <dont_has_info>random_story_14</dont_has_info>
+                <text>stalker_story_14</text>
+                <give_info>random_story_14</give_info>
+                <next>200</next>
+            </phrase>
+            <phrase id="115">
+                <dont_has_info>random_story_15</dont_has_info>
+                <text>stalker_story_15</text>
+                <give_info>random_story_15</give_info>
+                <next>200</next>
+            </phrase>
+            <phrase id="116">
+                <dont_has_info>random_story_16</dont_has_info>
+                <text>stalker_story_16</text>
+                <give_info>random_story_16</give_info>
+                <next>200</next>
+            </phrase>
+            <phrase id="117">
+                <dont_has_info>random_story_17</dont_has_info>
+                <text>stalker_story_17</text>
+                <give_info>random_story_17</give_info>
+                <next>200</next>
+            </phrase>
+            <phrase id="118">
+                <dont_has_info>random_story_18</dont_has_info>
+                <text>stalker_story_18</text>
+                <give_info>random_story_18</give_info>
+                <next>200</next>
+            </phrase>
+            <phrase id="119">
+                <dont_has_info>random_story_19</dont_has_info>
+                <text>stalker_story_19</text>
+                <give_info>random_story_19</give_info>
+                <next>200</next>
+            </phrase>
+            <phrase id="120">
+                <dont_has_info>random_story_20</dont_has_info>
+                <text>stalker_story_20</text>
+                <give_info>random_story_20</give_info>
+                <next>200</next>
+            </phrase>
+            <phrase id="190">
+                <has_info>random_story_1</has_info>
+                <has_info>random_story_2</has_info>
+                <has_info>random_story_3</has_info>
+                <has_info>random_story_4</has_info>
+                <has_info>random_story_5</has_info>
+                <has_info>random_story_6</has_info>
+                <has_info>random_story_7</has_info>
+                <has_info>random_story_8</has_info>
+                <has_info>random_story_9</has_info>
+                <has_info>random_story_10</has_info>
+                <has_info>random_story_11</has_info>
+                <has_info>random_story_12</has_info>
+                <has_info>random_story_13</has_info>
+                <has_info>random_story_14</has_info>
+                <has_info>random_story_15</has_info>
+                <has_info>random_story_16</has_info>
+                <has_info>random_story_17</has_info>
+                <has_info>random_story_18</has_info>
+                <has_info>random_story_19</has_info>
+                <has_info>random_story_20</has_info>
+                <text>about_dont_story</text>
+                <disable_info>random_story_1</disable_info>
+                <disable_info>random_story_2</disable_info>
+                <disable_info>random_story_3</disable_info>
+                <disable_info>random_story_4</disable_info>
+                <disable_info>random_story_5</disable_info>
+                <disable_info>random_story_6</disable_info>
+                <disable_info>random_story_7</disable_info>
+                <disable_info>random_story_8</disable_info>
+                <disable_info>random_story_9</disable_info>
+                <disable_info>random_story_10</disable_info>
+                <disable_info>random_story_11</disable_info>
+                <disable_info>random_story_12</disable_info>
+                <disable_info>random_story_13</disable_info>
+                <disable_info>random_story_14</disable_info>
+                <disable_info>random_story_15</disable_info>
+                <disable_info>random_story_16</disable_info>
+                <disable_info>random_story_17</disable_info>
+                <disable_info>random_story_18</disable_info>
+                <disable_info>random_story_19</disable_info>
+                <disable_info>random_story_20</disable_info>
+                <next>200</next>
+            </phrase>
+            <phrase id="200">
+                <text>dm_about_story_end</text>
+            </phrase>
+        </phrase_list>
+</dialog>
+
+</game_dialogs>
+

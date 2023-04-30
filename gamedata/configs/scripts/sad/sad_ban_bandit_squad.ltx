@@ -1,0 +1,60 @@
+; sad_ban_bandits_fight
+; -----------------------------------------------------------------------
+[hit]
+on_info = {=actor_enemy -sad_ban_bandits_fight} %+sad_ban_bandits_fight%
+
+[death]
+on_info = %=stop_sound +sad_ban_bandits_fight =set_squad_goodwill(sad_ban_bandit_leader_squad:enemy)%
+
+[walker@def]
+on_info = {+sad_ban_bandits_fight} remark@kill %=set_squad_goodwill(sad_ban_bandit_leader_squad:enemy)%
+on_info4 = {=is_wounded} remark@wound
+out_rest = sad_ban_surge_hide
+meet = no_meet
+
+[remark@wound]
+on_game_timer = 180 | %=kill_npc%
+
+[remark@kill]
+out_rest = sad_ban_surge_hide
+
+; -----------------------------------------------------------------------
+[logic@sad_ban_bandit_guard_2]
+active = animpoint@guard_2
+suitable = {=target_squad_name(sad_ban_bandit_leader_squad) !check_npc_name(sad_ban_bandit_leader) !check_npc_name(sad_ban_bandit_gvard)} true
+on_hit = hit
+on_death = death
+prior = 200
+
+[animpoint@guard_2]:walker@def
+cover_name = sad_ban_podval_zed_1
+avail_animations = animpoint_sit_normal_no_rnd
+on_info2 = {=actor_in_zone(sad_ban_surge_hide) =actor_has_weapon} remark@dropweapon_2
+
+[remark@dropweapon_2]:walker@def
+anim = backoff2
+target = story | actor
+snd = jup_a10_bandits_warn
+on_timer = 5000 | %+sad_ban_bandits_fight%
+on_info2 = {!actor_has_weapon} animpoint@guard_2
+
+
+; -----------------------------------------------------------------------
+[logic@sad_ban_bandit_guard_3]
+active = walker@guard_3
+suitable = {=target_squad_name(sad_ban_bandit_leader_squad) !check_npc_name(sad_ban_bandit_leader) !check_npc_name(sad_ban_bandit_gvard)} true
+on_hit = hit
+on_death = death
+prior = 200
+
+[walker@guard_3]:walker@def
+path_walk = leader_gvard_stoj_walk
+path_look = leader_gvard_stoj_look
+on_info2 = {=actor_in_zone(sad_ban_surge_hide) =actor_has_weapon} remark@dropweapon_3
+
+[remark@dropweapon_3]:walker@def
+anim = backoff2
+target = story | actor
+snd = jup_a10_bandits_warn
+on_timer = 5000 | %+sad_ban_bandits_fight%
+on_info2 = {!actor_has_weapon} walker@guard_3

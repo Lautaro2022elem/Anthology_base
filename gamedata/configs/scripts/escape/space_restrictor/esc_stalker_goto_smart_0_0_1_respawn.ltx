@@ -1,0 +1,9 @@
+[logic]
+active = nil; sr_idle@spawn
+
+[sr_idle@spawn]
+on_info  = {+esc_raven_talk_end -esc_stalker_goto_smart_0_0_1_spawn_end} sr_idle@respawn %=create_squad(esc_stalker_goto_smart_0_0_1:esc_smart_terrain_2_0) +esc_stalker_goto_smart_0_0_1_spawn_end%
+
+;------------------Респавн патрульных сквадов-------------------------------------------
+[sr_idle@respawn]
+on_info  = {+esc_stalker_goto_smart_0_0_1_dead !squad_exist(esc_stalker_goto_smart_0_0_1) =is_day =dist_to_objs_ge(100:esc_smart_terrain_2_0:esc_smart_terrain_3_8)} %=create_squad(esc_stalker_goto_smart_0_0_1:esc_smart_terrain_2_0) -esc_stalker_goto_smart_0_0_1_dead%

@@ -1,0 +1,7 @@
+[logic]
+active = ph_idle@wait
+
+[ph_idle@wait]
+on_info = {+sad_nauchny_exit_cave +sad_nauchny_task_cancel =story_object_exist(sad_zaslon_kamen)} ph_idle@nil %=destroy_object(story:sad_zaslon_kamen)%
+
+[ph_idle@nil]

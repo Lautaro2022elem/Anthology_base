@@ -1,0 +1,7 @@
+[logic]
+active = sr_idle@check
+
+[sr_idle@check]
+on_info = {+jup_b217_tech_instruments_start} sr_idle@nil %=give_task(jup_b217_tech_instruments)%
+
+[sr_idle@nil]

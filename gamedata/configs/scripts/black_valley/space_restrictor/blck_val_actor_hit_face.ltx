@@ -1,0 +1,23 @@
+[logic]
+active = sr_idle@fish_hit_actor
+
+[sr_idle@fish_hit_actor]
+on_info = {+blck_val_actor_meet_dialog_fish -blck_val_actor_hide_knife} %=esc_activate_weapon(wpn_knife) +blck_val_actor_hide_knife%
+on_info2 = {+blck_val_actor_hit_face_fish_info} sr_idle@fish_hit_actor_1
+
+[sr_idle@fish_hit_actor_1]
+on_timer = 180 | sr_idle@fish_hit_actor_2 %=NpcKickActor%
+
+[sr_idle@fish_hit_actor_2]
+on_timer = 1400 | sr_idle@fish_hit_actor_3 %=bed_getup_zver =run_postprocess(black:2525:true) =create_squad(blck_val_a31_sologub_trader_squad:blck_val_a32)%
+
+[sr_idle@fish_hit_actor_3]
+on_timer = 4000 | sr_idle@fish_hit_actor_4 %=teleport_actor(actor_wake_up_hutor_walk:actor_wake_up_hutor_look)%
+
+[sr_idle@fish_hit_actor_4]
+on_timer = 2000 | sr_idle@fish_hit_actor_5 %=stop_postprocess(2525)%
+
+[sr_idle@fish_hit_actor_5]
+on_timer = 10 | sr_idle@fish_hit_actor_nil %=enable_ui +blck_val_actor_wake_up_hutor_in%
+
+[sr_idle@fish_hit_actor_nil]

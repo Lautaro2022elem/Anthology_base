@@ -1,0 +1,19 @@
+[logic]
+active = sr_idle
+
+[sr_idle]
+on_actor_inside = {+spectrum_project_start +labx14_search_exit_complete +city_assault_heli_1} sr_idle@1 %+city_heli_1_start +city_heli_2_start +city_assault_kill_gg_info +city_assault_heli_stop%
+
+[sr_idle@1]
+on_game_timer = 75 |  sr_idle@2 %+city_assault_heli_2 =city_sms_genarmy_4%
+
+[sr_idle@2]
+on_game_timer = 275 |  sr_idle@3 %+city_assault_heli_death =city_sms_genarmy_5%
+
+[sr_idle@3]
+on_info = sr_idle@4 %=spawn_object(city_npc_army_final_1:city_npc_army_final_1_spawn) =spawn_object(city_npc_army_final_2:city_npc_army_final_2_spawn) =spawn_object(city_npc_army_final_3:city_npc_army_final_3_spawn) =spawn_object(city_npc_army_final_4:city_npc_army_final_4_spawn)%
+
+[sr_idle@4]
+on_game_timer = 10 | sr_idle@nil %=spawn_object(city_npc_sp_final_1:city_npc_sp_final_1_spawn) =spawn_object(city_npc_sp_final_2:city_npc_sp_final_2_spawn) =spawn_object(city_npc_sp_final_3:city_npc_sp_final_3_spawn) =spawn_object(city_npc_sp_final_4:city_npc_sp_final_4_spawn) =spawn_object(city_npc_sp_final_5:city_npc_sp_final_5_spawn) =spawn_object(city_npc_sp_final_6:city_npc_sp_final_6_spawn) =spawn_object(city_npc_sp_final_7:city_npc_sp_final_7_spawn) =spawn_object(city_npc_sp_final_8:city_npc_sp_final_8_spawn)%
+
+[sr_idle@nil] 

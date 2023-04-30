@@ -1,0 +1,10 @@
+[logic]
+active = sr_idle@torch_off
+
+[sr_idle@torch_off]
+on_info = {-bar_zmeelov_and_helper_spawn} sr_idle@torch_on %=disable_actor_torch +blck_val_actor_hit_face_fish_info%
+
+[sr_idle@torch_on]
+on_info = {+blck_val_actor_hit_face_fish_info} sr_idle@nil %=enable_actor_torch%
+
+[sr_idle@nil]

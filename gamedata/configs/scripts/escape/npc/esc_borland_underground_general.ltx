@@ -1,0 +1,24 @@
+;esc_borland_underground (дополнительная логика)
+
+[meet]
+abuse           = false
+close_anim 		= nil
+far_anim 		= nil
+far_victim 		= nil
+close_distance  = 0
+far_distance 	= 0
+close_victim = actor
+trade_enable = false
+allow_break = false
+
+[meet@1]:meet
+use = {=dist_to_actor_le(2)} self, true
+meet_dialog = esc_borland_quest_line_dungeon_dialog
+
+[meet@2]:meet
+use = {=dist_to_actor_le(3)} self, true
+meet_dialog = esc_borland_quest_line_research_underground_dialog
+
+[meet@3]:meet
+use = {=dist_to_actor_le(2)} self, true
+meet_dialog = esc_borland_quest_line_research_underground_part_2_dialog

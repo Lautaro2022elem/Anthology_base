@@ -1,0 +1,22 @@
+[logic]
+active = sr_idle@wait
+
+[sr_idle@wait]
+on_info = {+topi_b15_lider_quest_freedom_talking_1} sr_particle@idle_1
+on_info2 = {+topi_b15_zam_quest_dolg_talking_1} sr_particle@idle_2
+
+[sr_particle@idle_1]
+name = new_effects\grn_green
+path = topi_b15_particle_play_point_4
+mode = 2
+looped = true
+on_info = {+topi_b15_freedom_member_harold_all_dead} sr_idle@nil
+
+[sr_particle@idle_2]
+name = new_effects\grn_green
+path = topi_b15_particle_play_point_4
+mode = 2
+looped = true
+on_info = {+topi_b15_dolg_member_hasan_all_dead} sr_idle@nil
+
+[sr_idle@nil]

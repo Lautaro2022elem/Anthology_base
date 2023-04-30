@@ -1,0 +1,13 @@
+[logic] 
+active = ph_sound@radio_on
+
+[ph_sound@radio_on] 
+snd = radio_music_2
+looped = false 
+min_idle = 6
+max_idle = 7
+random = true
+on_info = {+bar_stalker_barman_radio_off} sr_idle@radio_off %-bar_stalker_barman_radio_on%
+
+[sr_idle@radio_off]
+on_info = {+bar_stalker_barman_radio_on} ph_sound@radio_on %-bar_stalker_barman_radio_off%

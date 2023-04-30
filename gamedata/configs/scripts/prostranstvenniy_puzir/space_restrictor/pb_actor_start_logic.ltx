@@ -1,0 +1,48 @@
+[logic]
+active = sr_idle@proloque_start
+
+[sr_idle@proloque_start]
+on_info = {+spatial_anomaly +pro_start_scene_end_info -pb_found_to_markus_done -perevalochnaya_baza_proloque_start} %=stop_postprocess(2525) =ProloqueCutScene +perevalochnaya_baza_proloque_start%
+on_info2 = {+spatial_anomaly +perevalochnaya_baza_proloque_start} sr_idle@proloque_start_2
+
+[sr_idle@proloque_start_2]
+on_timer = 2000 | sr_idle@proloque_start_3 %=spawn_object(pb_stronglav:stronglav_spawn) =create_squad(perevalochnaya_baza_woundet_stalkers:pro_smart_terrain_1_1) =create_squad(perevalochnaya_baza_moskit_squad:pro_smart_terrain_1_1) =create_squad(perevalochnaya_baza_dubolom_squad:pro_smart_terrain_1_1) =create_squad(perevalochnaya_baza_kuvalda_and_snake_squad:pro_smart_terrain_1_1) =spawn_object(pb_kanistra_gas:pro_otshelnik_puzir_spawn) =give_actor(pb_quest_bloknot_1) =give_actor(wpn_fort) =give_actor(ammo_9x18_fmj) =give_actor(ammo_5.45x39_fmj) =give_actor(ammo_5.45x39_fmj)%
+
+[sr_idle@proloque_start_3]
+on_timer = 4000 | sr_idle@proloque_start_4 %=damage_actor_items_on_start%
+
+[sr_idle@proloque_start_4]
+on_timer = 2900 | sr_idle@proloque_start_5 %=run_postprocess(black:2525:true)%
+
+[sr_idle@proloque_start_5]
+on_timer = 100 | sr_idle@proloque_start_6 %=smex_stronglava%
+
+[sr_idle@proloque_start_6]
+on_timer = 4800 | sr_idle@proloque_start_7 %=teleport_actor(actor_start_game_walk:actor_start_game_look) =set_game_time(03:20)%
+
+[sr_idle@proloque_start_7]
+on_timer = 2000 | sr_idle@start %+perevalochnaya_baza_effect_end%
+
+[sr_idle@start]
+on_info = {-perevalochnaya_baza_start_game =actor_on_level(p_p)} %+perevalochnaya_baza_start_game +perevalochnaya_baza_quest_line_start%
+on_info2 = {+perevalochnaya_baza_quest_line_start} sr_cutscene@game_start
+
+[sr_cutscene@game_start]
+point = actor_start_game_walk
+look = actor_start_game_look
+cam_effector = scenario_cam\prostranstvenniy_puzir\camera_start_game
+enable_ui_on_end = false
+global_cameffect = true
+on_info = {+perevalochnaya_baza_quest_line_start} %=play_sound(pb_intro_getting_up) =stop_postprocess(2525)%
+on_signal = cameff_end | sr_idle@game_start %=stop_sound(pb_intro_getting_up)%
+
+[sr_idle@game_start]
+on_timer = 500 | sr_idle@game_start_2 %=enable_ui +perevalochnaya_lutiy_to_actor_meet_start%
+
+[sr_idle@game_start_2]
+on_timer = 1000 | sr_idle@game_start_3 %=give_task(pb_who_is_happening) +quest_line_started%
+
+[sr_idle@game_start_3]
+on_timer = 1000 | sr_idle@game_start_nil %+perevalochnaya_baza_start_quest_line_done =esc_activate_weapon(wpn_pm)%
+
+[sr_idle@game_start_nil]

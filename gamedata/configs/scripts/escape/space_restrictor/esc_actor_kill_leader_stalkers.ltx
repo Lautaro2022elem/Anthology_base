@@ -1,0 +1,19 @@
+[logic]
+active = sr_idle@zver_kill_leader
+
+[sr_idle@zver_kill_leader]
+on_info = {+esc_actor_from_raven_meet_leader_done} sr_idle@zver_kill_leader_1 %=RavenMemmoryStart =run_postprocess(black:2525:true) =spawn_object(esc_killer_raven_td:esc_raven_td_perehod_walk) =spawn_object(esc_killer_td_1:esc_killer_td_1_walk) =spawn_object(esc_killer_td_2:esc_killer_td_2_walk) =create_squad(esc_squad_leader_base:esc_smart_terrain_3_2_quest_td)%
+
+[sr_idle@zver_kill_leader_1]
+on_timer = 2000 | sr_idle@zver_kill_leader_2 %=teleport_actor(esc_actor_kill_valeryan_walk:esc_actor_kill_valeryan_look) +esc_leader_go_way_1%
+
+[sr_idle@zver_kill_leader_2]
+on_timer = 2000 | sr_idle@zver_kill_leader_3 %=stop_postprocess(2525) +esc_leader_go_way_2%
+
+[sr_idle@zver_kill_leader_3]
+on_timer = 1000 | sr_idle@zver_kill_leader_4 %=enable_ui +esc_zver_quest_kill_leader_stalkers_give%
+
+[sr_idle@zver_kill_leader_4]
+on_timer = 2000 | sr_idle@nil %+esc_killers_wait_signal%
+
+[sr_idle@nil]

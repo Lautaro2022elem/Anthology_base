@@ -1,0 +1,16 @@
+[logic]
+active = sr_idle@start
+
+[sr_idle@start]
+on_info = {+digst_lamp_destroyed} sr_idle@1
+
+[sr_idle@1]
+on_timer = 2000 | sr_idle@2 %=spawn_object(digst_stronglav_scene:digst_stronglav_scene_spawn)%
+
+[sr_idle@2]
+on_timer = 1000 | sr_idle@3 %=smex_stronglava%
+
+[sr_idle@3]
+on_timer = 7000 | {-digst_actor_hit_stronglav} sr_idle@nil %+digst_delete_stronglav +digst_device_torch_actor_on%
+
+[sr_idle@nil]

@@ -1,0 +1,80 @@
+[yan_repair_defend]
+prior = 3
+storyline = true
+target = yan_repair_defend
+title = yan_repair_defend_name
+descr = yan_repair_defend_text
+condlist_0 = {+yan_ready_actor_position_cut6} complete
+condlist_1 = {+yan_stop_spawn_cut6} complete
+on_complete = %+yan_hold_position_cut6%
+
+[yan_actor_destroy_wave1] 
+prior = 3
+storyline = true
+target = yan_space_restrictor_wave_1
+title = yan_actor_destroy_wave1_name
+descr = yan_actor_destroy_wave1_text
+on_complete = %+yan_ready_wave2_cut6 +yan_hold_position_cut6%
+condlist_0 = {+yan_task1_end_cut6} complete
+condlist_1 = {+yan_stop_spawn_cut6} complete
+
+[yan_actor_destroy_wave2]
+prior = 3 
+storyline = true
+target = yan_space_restrictor_wave_2
+title = yan_actor_destroy_wave2_name
+descr = yan_actor_destroy_wave2_text
+condlist_0 = {+yan_task2_end_cut6} complete
+condlist_1 = {+yan_stop_spawn_cut6} complete
+on_complete = %+yan_ready_wave3_cut6 +yan_hold_position_cut6%
+
+[yan_actor_go_base_science]
+prior = 1
+storyline = true
+target = yan_stalker_sakharov
+title = yan_actor_go_base_science_name
+descr = yan_actor_go_base_science_text
+condlist_0 = {+ystanovka_reward_break_dialog} complete
+on_complete = %=complete_task_inc_goodwill(50:ecolog) =reward_money(5000)%
+
+[yan_quest_doc]
+prior = 1
+storyline = true
+target = yan_stalker
+title = yan_quest_doc_name
+descr = yan_quest_doc_text
+condlist_0 = {+yan_otnesti_doc_saharavy} complete
+
+[yan_otnesti_doc_saharavy]
+prior = 1
+storyline = true
+target = yan_stalker_sakharov
+title = yan_otnesti_doc_saharavy_name
+descr = yan_otnesti_doc_saharavy_text
+condlist_0 = {+yan_quest_levsha} complete
+on_complete = %=complete_task_inc_goodwill(50:ecolog) =reward_money(5000)%
+
+[yan_quest_levsha]
+prior = 1
+storyline = true
+target = yan_stalker_levsha
+title = yan_quest_levsha_name
+descr = yan_quest_levsha_text
+condlist_0 = {+yan_proriv_k_ystanovke} complete
+
+[yan_proriv_k_ystanovke]
+prior = 1
+storyline = true
+target = yan_proriv_k_ystanovke
+title = yan_proriv_k_ystanovke_name
+descr = yan_proriv_k_ystanovke_text
+condlist_0 = {+yan_actor_start_to_go} complete
+on_complete = %=complete_task_inc_goodwill(50:ecolog)%
+
+[yan_defend_smart]
+prior = 8
+storyline = true
+target = yan_stalker_sakharov
+title = sim_defend_smart
+descr = sim_defend_smart_text
+condlist_0 = {-yan_alarm_signal_stalkers_cut2} complete

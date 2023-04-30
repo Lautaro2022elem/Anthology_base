@@ -1,0 +1,105 @@
+;=========meet_stalker_korpys========
+[meet@korpys_stalker]
+close_anim 		= nil
+close_victim 	= nil
+far_anim 		= nil
+far_victim 		= nil
+close_distance 	= 0
+far_distance 	= 0
+use = {=actor_enemy} false, {=dist_to_actor_le(3)} true, false
+snd_on_use = {!dist_to_actor_le(3)} nil
+meet_on_talking = false
+;==================================
+
+[logic]
+active = walker@raven_vilage_final
+suitable = {=check_npc_name(esc_killer_raven_final)} true, false
+on_death = death
+level_spot = quest_npc
+prior = 250
+
+[walker@raven_vilage_final]
+path_walk = esc_raven_vilage_walk
+path_look = esc_raven_vilage_look
+on_info = {=surge_started()} walker@raven_vilage_surge
+on_info2 = {=actor_enemy} %=actor_neutral%
+on_info3 = {+esc_koordinator_to_sklad_dialog_done} walker@raven_vilage_blackbox_meet
+combat_ignore_cond = false
+combat_ignore_keep_when_attacked = false
+invulnerable = false
+gather_items_enabled = false
+help_wounded_enabled = false
+corpse_detection_enabled = false
+meet = no_meet
+
+[walker@raven_vilage_surge]
+path_walk = esc_raven_vilage_surge_walk
+path_look = esc_raven_vilage_surge_look
+on_info = {=surge_complete() -esc_koordinator_to_sklad_dialog_done} walker@raven_vilage_final
+on_info2 = {=surge_complete() +esc_koordinator_to_sklad_dialog_done -esc_actor_meet_enot_from_kill_leader_done} walker@raven_vilage_blackbox_meet
+on_info3 = {=surge_complete() +esc_actor_meet_enot_from_kill_leader_done} walker@raven_vilage_final_meet
+on_info4 = {=actor_enemy} %=actor_neutral%
+gather_items_enabled = false
+corpse_detection_enabled = false
+combat_ignore_keep_when_attacked = true 
+combat_ignore_cond = true
+invulnerable = false
+meet = no_meet
+use_camp = false
+
+[walker@raven_vilage_blackbox_meet]
+path_walk = esc_raven_vilage_walk
+path_look = esc_raven_vilage_look
+on_info = {=surge_started()} walker@raven_vilage_surge
+on_info2 = {+esc_raven_final_release} %=release_npc%
+on_info3 = {=actor_enemy} %=actor_neutral%
+on_info4 = {+esc_actor_meet_enot_from_kill_leader_done} walker@raven_vilage_final_meet
+combat_ignore_cond = false
+combat_ignore_keep_when_attacked = false
+invulnerable = false
+gather_items_enabled = false
+help_wounded_enabled = false
+corpse_detection_enabled = false
+meet = meet@esc_quest_blackbox_check
+
+[walker@raven_vilage_final_meet]
+path_walk = esc_raven_vilage_walk
+path_look = esc_raven_vilage_look
+on_info = {=surge_started()} walker@raven_vilage_surge
+on_info2 = {+esc_raven_final_release} %=release_npc%
+on_info3 = {=actor_enemy} %=actor_neutral%
+combat_ignore_cond = false
+combat_ignore_keep_when_attacked = false
+invulnerable = false
+gather_items_enabled = false
+help_wounded_enabled = false
+corpse_detection_enabled = false
+meet = meet@esc_quest_leader_kill
+
+[remark@raven_delete]
+anim = wait_na
+target = story | actor
+on_info = {+esc_raven_final_release} %=release_npc%
+combat_ignore_cond = true
+combat_ignore_keep_when_attacked = true
+invulnerable = false
+gather_items_enabled = false
+help_wounded_enabled = false
+corpse_detection_enabled = false
+meet = no_meet
+
+[meet@esc_quest_blackbox_check]:meet@korpys_stalker
+close_victim = actor
+use = {!actor_enemy -esc_actor_talk_raven_from_enot} true, false
+allow_break = false
+meet_dialog = esc_killer_raven_meet_blackbox
+trade_enable = false
+
+[meet@esc_quest_leader_kill]:meet@korpys_stalker
+close_victim = actor
+allow_break = false
+meet_dialog = esc_killer_raven_meet_kill_leader
+trade_enable = false
+
+[death]
+on_info = %+esc_raven_dead%

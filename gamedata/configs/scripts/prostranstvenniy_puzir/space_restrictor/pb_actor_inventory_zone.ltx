@@ -1,0 +1,7 @@
+[logic]
+active = sr_idle@actor_has_item
+
+[sr_idle@actor_has_item]
+on_info = {=actor_has_item(pb_actor_inventory)} sr_idle@nil %=eat_pb_actor_inventory +pb_actor_inventory_done%
+
+[sr_idle@nil]

@@ -1,0 +1,26 @@
+[logic] 
+active = sr_idle@spawn
+
+[sr_idle@spawn]
+on_info = {+topi_start +topi_b1_leader_1_quest_talking_1 -topi_i1_killer_trup_spawn} sr_idle@start %=spawn_corpse(topi_i1_killer_yad_quest : topi_i1_killer_yad_quest_walk) +topi_i1_killer_trup_spawn%
+
+[sr_idle@start]
+on_info = {+topi_i1_killer_trup_spawn =actor_has_item(topi_killer_ukazanie_1) -topi_i1_killer_quest_give} %=give_task(geonezis_topi_i1_killer_quest) +topi_i1_killer_quest_give%
+on_info2 = {+topi_i1_killer_quest_give -topi_i1_killer_tainik_spawn} %=topi_i1_create_tainik +topi_i1_killer_tainik_spawn%
+on_info3 = {!actor_has_item(topi_killer_ukazanie_2) +topi_i1_killer_tainik_spawn -topi_i1_killer_object_spawn} sr_idle@first %+topi_i1_killer_object_spawn =spawn_object_in(topi_killer_ukazanie_2:topi_i1_killer_code_tainik)%
+
+[sr_idle@first]
+on_info = {+topi_i1_killer_object_spawn -topi_i1_killer_tainik_find =actor_in_zone(topi_i1_killer_quest_restr)} %+topi_i1_killer_tainik_find%
+on_info2 = {+topi_i1_killer_tainik_find =actor_has_item(topi_killer_ukazanie_2) -topi_i1_killer_tainik_find_otrava} sr_timer@second %+topi_i1_killer_tainik_find_otrava%
+
+[sr_timer@second]
+type = dec
+string = "Back to base"
+start_value = 150000
+on_value = 0 | sr_idle@nil %=kill_actor +topi_i1_killer_quest_igra_time_is_out%
+on_info = {+topi_i1_killer_quest_igra_end} sr_idle@nil 
+on_game_timer = 100 | {-topi_i1_killer_quest_igra_effect_1_take} %=topi_i1_quest_igra_effect_1 +topi_i1_killer_quest_igra_effect_1_take%
+on_game_timer2 = 200 | {-topi_i1_killer_quest_igra_effect_2_take} %=topi_i1_quest_igra_effect_2 +topi_i1_killer_quest_igra_effect_2_take%
+on_game_timer3 = 400 | {-topi_i1_killer_quest_igra_effect_3_take} %=topi_i1_quest_igra_effect_3 +topi_i1_killer_quest_igra_effect_3_take%
+
+[sr_idle@nil]

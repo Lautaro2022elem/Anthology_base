@@ -1,0 +1,32 @@
+[logic@jup_a6_important_npc_1]
+suitable = {=check_npc_name(jup_a6_freedom_trader_ashot)} true, {=check_npc_trader} true
+prior = 200
+active = animpoint@base
+level_spot = trader
+can_select_weapon = true
+trade = items\trade\trade_freedom.ltx
+
+[animpoint@base]
+cover_name = jup_a6_animpint_freedom_trader
+use_camp = false
+meet = meet
+out_restr = jup_a6_sr_noweap
+combat_ignore_cond = {=actor_enemy =check_enemy_name(actor)} false, true
+combat_ignore_keep_when_attacked = true
+invulnerable = {!actor_enemy} true, false
+gather_items_enabled = false
+help_wounded_enabled = false
+corpse_detection_enabled = false
+
+[meet]
+close_anim 		= nil
+close_victim 	= nil
+far_anim 		= nil
+far_victim 		= nil
+close_distance  = 0
+far_distance 	= 0
+close_snd_distance = 3
+abuse           = false
+use = {=actor_enemy} false, true
+allow_break = false
+meet_on_talking = false

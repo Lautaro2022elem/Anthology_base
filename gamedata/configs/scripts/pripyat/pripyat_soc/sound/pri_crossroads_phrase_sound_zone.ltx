@@ -1,0 +1,9 @@
+[logic]
+active = sr_idle
+
+[sr_idle]
+on_info = %+pri_wave5_leader_phrase_end%, {-pri_followers_actor_enemy -pri_followers_all_dead +pri_wave5_end} sr_idle@sound_act
+
+[sr_idle@sound_act]
+on_timer = 1000| %=play_snd(characters_voice\scenario\pri\followers_crossroads_phrase)%
+on_signal = sound_end | nil %+pri_wave5_leader_phrase_end%

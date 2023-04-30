@@ -1,0 +1,11 @@
+[logic]
+active = sr_idle@monolit_spawn
+
+[sr_idle@monolit_spawn]
+on_info = {+blck_val_zavod_zasada_monolit_start -blck_val_zasada_monolit_1_spawn} %=create_squad(blck_val_monolith_squad_veteran:blck_val_b205) +blck_val_zasada_monolit_1_spawn%
+on_info2 = {+blck_val_zavod_zasada_monolit_start -blck_val_zasada_monolit_2_spawn} %=create_squad(blck_val_monolith_squad_novice:blck_val_b206) +blck_val_zasada_monolit_2_spawn%
+on_info3 = {+blck_val_zavod_zasada_monolit_start -blck_val_zasada_monolit_3_spawn} %=create_squad(blck_val_monolith_squad_advance:blck_val_b207) +blck_val_zasada_monolit_3_spawn%
+on_info4 = {+blck_val_zavod_zasada_monolit_start -blck_val_zasada_monolit_4_spawn} %=create_squad(blck_val_monolith_squad_master:blck_val_b208) +blck_val_zasada_monolit_4_spawn%
+on_info5 = {+blck_val_zasada_monolit_4_spawn} sr_idle@nil
+
+[sr_idle@nil]

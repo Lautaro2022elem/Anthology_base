@@ -1,0 +1,8 @@
+[logic]
+active = nil ; sr_idle@alarm
+
+[sr_idle@alarm]
+on_info2 = {-esc_mil_alarm -esc_sr_barrer_zona_alarm_restiktor =dist_to_actor_le(150)} sr_idle@wait %=play_sound(megafon)%
+
+[sr_idle@wait]
+on_game_timer = 150 | sr_idle@alarm

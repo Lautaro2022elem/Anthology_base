@@ -1,0 +1,48 @@
+[logic]
+active = sr_idle@wait
+
+[sr_idle@wait]
+on_actor_inside = sr_idle@100 %+sad_zombocave_actor_inside =create_squad(sad_start_zombie:sad_start) =spawn_corpse(sad_vofka_corpse:sad_zombocave_trup_1) =spawn_corpse(sim_default_stalker_1:sad_zombocave_trup_2) =spawn_corpse(sim_default_stalker_1:sad_zombocave_trup_3)%
+
+[sr_idle@100]
+on_info = {=sad_ready_to_take_zombo_art} sr_idle@tut %=run_tutorial(sad_zombocave_tut)%
+
+[sr_idle@tut]
+on_info = {!sad_ready_to_take_zombo_art} sr_idle@100 %=stop_tutorial%
+on_info2 = {+sad_zombocave_give_art} sr_idle@500 %=stop_tutorial =give_actor(af_knot) =destroy_object(story:sad_zombocave_fake_art_id) =sad_add_pp_effector(sad_zombocave.ppe:1234) =play_sound(sad_zombocave_sound)%
+on_info3 = {!has_active_tutorial} sr_idle@100
+
+[sr_idle@500]
+on_info = sr_particle@1 %+sad_zombocave_sound_11%
+
+[sr_particle@1]
+name = sad\zombocave_way
+path = sad_zombocave_prt_1
+mode = 2
+looped = true
+on_info = {=sad_zombocave_check(1:1)} sr_particle@2 %+sad_zombocave_sound_21%
+on_info2 = {=sad_zombocave_check(1:2)} sr_idle@600
+
+[sr_particle@2]
+name = sad\zombocave_way
+path = sad_zombocave_prt_2
+mode = 2
+looped = true
+on_info = {=sad_zombocave_check(2:1)} sr_particle@3 %+sad_zombocave_sound_31%
+on_info2 = {=sad_zombocave_check(2:2)} sr_idle@600
+
+[sr_particle@3]
+name = sad\zombocave_way
+path = sad_zombocave_prt_3
+mode = 2
+looped = true
+on_info = {=sad_zombocave_check(3:1)} sr_particle@1 %+sad_zombocave_sound_11%
+on_info2 = {=sad_zombocave_check(3:2)} sr_idle@600
+
+[sr_idle@600]
+on_info = sr_idle@inside %=sad_add_pp_effector(blink.ppe:1235) =teleport_actor(sad_zombocave_teleport_actor) -sad_zombocave_actor_inside%
+
+[sr_idle@inside]
+on_actor_inside = sr_particle@1 %+sad_zombocave_actor_inside%
+
+[sr_idle@nil]

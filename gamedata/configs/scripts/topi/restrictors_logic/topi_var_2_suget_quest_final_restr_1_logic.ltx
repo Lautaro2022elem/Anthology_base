@@ -1,0 +1,24 @@
+[logic] 
+active = sr_idle@start
+
+[sr_idle@start] 
+on_info  = {+topi_start +topi_a107_ecolog_member_all_death =actor_in_zone(topi_var_2_suget_quest_final_restr_1) =actor_has_item(topi_anubis_var_2_bomba)} sr_idle@tutorial %=run_tutorial(topi_var_2_suget_quest_final_1_tutor)% 
+on_info2 = {+topi_start +topi_var_2_suget_quest_final_bomba_set} sr_timer@first 
+
+[sr_idle@tutorial] 
+on_info   = {+topi_a107_ecolog_member_all_death !actor_in_zone(topi_var_2_suget_quest_final_restr_1)} sr_idle@start %=stop_tutorial% 
+on_info2 = {+topi_var_2_suget_quest_final_bomba_set} sr_timer@first %=stop_tutorial%
+on_info3 = {-topi_var_2_suget_quest_final_bomba_set +topi_var_2_suget_quest_final_bomba_set_close} sr_idle@start %=stop_tutorial%
+on_info4 = {!has_active_tutorial} sr_idle@start 
+
+[sr_timer@first]
+type = dec
+string = "Подрыв заряда"
+start_value = 15000
+on_value = 0 | sr_idle@particle %=play_s3d_sound(new\explosions\mrk_building_big_explod_2b) +topi_var_2_suget_quest_final_bomba_time_out%
+
+[sr_idle@particle]
+on_info  = {+topi_var_2_suget_quest_final_bomba_time_out =actor_in_zone(topi_var_2_suget_quest_final_restr_1)} sr_idle@nil %=kill_actor +topi_var_2_suget_quest_final_effect_end%
+on_timer = 6000 | {+topi_var_2_suget_quest_final_bomba_time_out} sr_idle@nil %+topi_var_2_suget_quest_final_effect_end%
+
+[sr_idle@nil] 

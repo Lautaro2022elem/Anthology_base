@@ -1,0 +1,20 @@
+[smart_terrain]
+squad_id = 1
+max_population = 2
+respawn_params = respawn@ros_ret
+respawn_idle = 172800
+
+
+
+[respawn@ros_ret]
+spawn_renegade@veteran
+
+[spawn_renegade@veteran]
+spawn_squads = renegade_sim_squad_advanced, renegade_sim_squad_veteran
+spawn_num = 1
+
+[exclusive]
+ros_ret_camp_work_1 = rostok\ros_ret_smart_logic.ltx
+ros_ret_camp_work_2 = rostok\ros_ret_smart_logic.ltx
+ros_ret_camp_work_3 = rostok\ros_ret_smart_logic.ltx
+ros_ret_camp_work_4 = rostok\ros_ret_smart_logic.ltx

@@ -1,0 +1,21 @@
+[logic]
+active = sr_idle@wait
+
+[sr_idle@wait]
+on_info = {+sad_b3_ucheny_mission_on} sr_idle@100
+
+[sr_idle@100]
+on_info = {+sad_ucheny_switch_18} sr_idle@200
+
+[sr_idle@200]
+on_info = {-sad_b3_ucheny_mission_on} sr_idle@nil, {+sad_b3_andrey_dead} sr_idle@nil, {+sad_b3_ucheny_enemy} sr_idle@nil
+on_info5 = {=distance_to_obj_ge(sad_b3_ucheny_raz:40)} sr_idle@300
+
+[sr_idle@300]
+on_info = {~50} sr_idle@400 %=send_tip(sad_b3_ucheny_warn_1:sad_b3_ucheny_raz)%, sr_idle@400 %=send_tip(sad_b3_ucheny_warn_2:sad_b3_ucheny_raz)%
+
+[sr_idle@400]
+on_game_timer = 240 | sr_idle@nil %+sad_ucheny_actor_faraway =send_tip(sad_b3_ucheny_utufar:sad_b3_ucheny_raz)%
+on_info5 = {=distance_to_obj_le(sad_b3_ucheny_raz:35)} sr_idle@200
+
+[sr_idle@nil]

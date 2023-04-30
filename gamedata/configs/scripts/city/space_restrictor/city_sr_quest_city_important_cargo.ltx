@@ -1,0 +1,21 @@
+[logic]
+active = sr_idle
+
+[sr_idle]
+on_info = {+spectrum_project_start +labx14_search_exit_complete +city_npc_kolyazin_meeting_dialog_info} sr_idle@scenario_autosave %=give_task(city_important_cargo) =spawn_object(city_safe_container:city_smart_terrain_1_4_af_way_3) =spawn_object(city_mutant_0:city_mutant_0_spawn) =spawn_object(city_mutant_1:city_mutant_1_spawn)%
+
+[sr_idle@scenario_autosave]
+on_timer = 100 | {-save_city_important_cargo} %+save_city_important_cargo =scenario_autosave(st_city_important_cargo)%
+on_info = {+save_city_important_cargo} sr_idle@2
+
+[sr_idle@2]
+on_info = {=actor_has_item(city_safe_container)} sr_idle@3 %+city_important_cargo_otnesti =spawn_object(city_npc_sp_zasada_1:city_npc_sp_zasada_1_spawn) =spawn_object(city_npc_sp_zasada_2:city_npc_sp_zasada_2_spawn) =spawn_object(city_npc_sp_zasada_3:city_npc_sp_zasada_3_spawn) =spawn_object(city_npc_sp_zasada_4:city_npc_sp_zasada_4_spawn) =spawn_object(city_npc_sp_zasada_5:city_npc_sp_zasada_5_spawn)%
+
+[sr_idle@3]
+on_info = {+city_npc_kolyazin_mportant_cargo_dialog_info} sr_idle@scenario_autosave_2 %=give_task(city_sabotage) +city_sabotage_c4_start =spawn_object(city_quest_mutant_0:city_quest_mutant_0_spawn) =spawn_object(city_quest_mutant_1:city_quest_mutant_1_spawn)%
+
+[sr_idle@scenario_autosave_2]
+on_timer = 100 | {-save_city_sabotage} %+save_city_sabotage =scenario_autosave(st_city_sabotage)%
+on_info = {+save_city_sabotage} sr_idle@nil
+
+[sr_idle@nil]

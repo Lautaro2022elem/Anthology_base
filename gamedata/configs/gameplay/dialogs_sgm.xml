@@ -1,0 +1,659 @@
+<?xml version="1.0" encoding="windows-1251" ?>
+<game_dialogs>
+
+<dialog id="jup_german_about_biodetector_quest_1_first_dialog">
+    <dont_has_info>jup_bioradar_fenix_1_quest_begin</dont_has_info>
+	    <phrase_list>
+		<phrase id="0">
+             <text>jup_german_about_biodetector_quest_1_first_talking_0</text>
+             <next>1</next>
+        </phrase>
+		<phrase id="1">
+             <text>jup_german_about_biodetector_quest_1_first_talking_1</text>
+             <next>2</next>
+        </phrase>
+        <phrase id="2">
+             <text>jup_german_about_biodetector_quest_1_first_talking_2</text>
+             <next>3</next>
+        </phrase>
+        <phrase id="3">
+             <text>jup_german_about_biodetector_quest_1_first_talking_3</text>
+             <next>4</next>
+        </phrase>
+		<phrase id="4">
+             <text>jup_german_about_biodetector_quest_1_first_talking_4</text>
+             <next>5</next>
+        </phrase>
+        <phrase id="5">
+             <text>jup_german_about_biodetector_quest_1_first_talking_5</text>
+		 <next>6</next>
+        </phrase>
+		<phrase id="6">
+             <text>jup_german_about_biodetector_quest_1_first_talking_6</text>
+		 <next>7</next>
+        </phrase>
+		<phrase id="7">
+             <text>jup_german_about_biodetector_quest_1_first_talking_7</text>
+		 <next>8</next>
+        </phrase>
+       <phrase id="8">
+             <text>jup_german_about_biodetector_quest_1_first_talking_8</text>
+		 <next>9</next>
+	
+        </phrase>
+		<phrase id="9">
+             <text>jup_german_about_biodetector_quest_1_first_talking_9</text>
+		 <next>10</next>
+        </phrase>
+        <phrase id="10">
+             <text>jup_german_about_biodetector_quest_1_first_talking_10</text>
+		 <next>11</next>
+	
+        </phrase>
+        <phrase id="11">
+             <text>jup_german_about_biodetector_quest_1_first_talking_11</text>
+             <next>12</next>
+        </phrase>
+        <phrase id="12">
+             <text>jup_german_about_biodetector_quest_1_first_talking_12</text>
+		 <next>13</next>
+                       		
+        </phrase>
+		<phrase id="13">
+             <text>jup_german_about_biodetector_quest_1_first_talking_13</text>
+             <next>14</next>
+        </phrase>
+		<phrase id="14">
+             <text>jup_german_about_biodetector_quest_1_first_talking_14</text>
+		 <next>15</next>
+            <give_info>jup_bioradar_fenix_1_quest_begin</give_info>
+             <action>dialogs_sgm_jupiter.give_german_fenix_1_quest</action>
+        </phrase>
+		<phrase id="15">
+             <text>jup_german_about_biodetector_quest_1_first_talking_15</text>
+	
+        </phrase>
+       </phrase_list>
+</dialog>
+
+<dialog id="jup_german_about_biodetector_quest_1_second_dialog">
+     <has_info>jup_bioradar_fenix_1_quest_begin</has_info>
+	 <dont_has_info>jup_bioradar_fenix_1_quest_done</dont_has_info>
+	    <phrase_list>
+		<phrase id="0">
+             <text>jup_german_about_biodetector_quest_1_second_talking_0</text>
+             <next>1</next>
+        </phrase>
+		<phrase id="1">
+             <text>jup_german_about_biodetector_quest_1_second_talking_00</text>
+             <next>2</next>
+            <next>3</next>
+             <next>4</next>
+             <next>5</next>
+             <next>6</next>
+             <next>7</next>
+             <next>8</next>
+             <next>88</next>
+        </phrase>
+        <phrase id="2">
+            <precondition>dialogs_sgm_jupiter.actor_has_10_snork_part</precondition>
+             <dont_has_info>jup_fenix_1_actor_take_mutants_snork_part</dont_has_info>
+             <text>jup_german_about_biodetector_quest_1_second_talking_1</text>
+             <next>000</next>
+		 <action>dialogs_sgm_jupiter.give_10_snork_part_to_german</action>
+		 <give_info>jup_fenix_1_actor_take_mutants_snork_part</give_info>
+        </phrase>
+		<phrase id="3">
+             <precondition>dialogs_sgm_jupiter.actor_has_5_bloodsucker_part</precondition>
+             <dont_has_info>jup_fenix_1_actor_take_mutants_bloodsucker_part</dont_has_info>
+             <text>jup_german_about_biodetector_quest_1_second_talking_2</text>
+             <next>000</next>
+		 <action>dialogs_sgm_jupiter.give_5_bloodsucker_part_to_german</action>
+		 <give_info>jup_fenix_1_actor_take_mutants_bloodsucker_part</give_info>
+        </phrase>
+		<phrase id="4">
+             <precondition>dialogs_sgm_jupiter.actor_has_3_burer_part</precondition>
+             <dont_has_info>jup_fenix_1_actor_take_mutants_burer_part</dont_has_info>
+             <text>jup_german_about_biodetector_quest_1_second_talking_3</text>
+             <next>000</next>
+		 <action>dialogs_sgm_jupiter.give_3_burer_part_to_german</action>
+		 <give_info>jup_fenix_1_actor_take_mutants_burer_part</give_info>
+        </phrase>
+		<phrase id="5">
+             <precondition>dialogs_sgm_jupiter.actor_has_1_kontroller_part</precondition>
+            <dont_has_info>jup_fenix_1_actor_take_mutants_kontroller_part</dont_has_info>
+             <text>jup_german_about_biodetector_quest_1_second_talking_4</text>
+             <next>000</next>
+		 <action>dialogs_sgm_jupiter.give_1_kontroller_part_to_german</action>
+		 <give_info>jup_fenix_1_actor_take_mutants_kontroller_part</give_info>
+        </phrase>
+		<phrase id="6">
+             <precondition>dialogs_sgm_jupiter.actor_has_1_chimera_part</precondition>
+             <dont_has_info>jup_fenix_1_actor_take_mutants_chimera_part</dont_has_info>
+             <text>jup_german_about_biodetector_quest_1_second_talking_5</text>
+             <next>000</next>
+		 <action>dialogs_sgm_jupiter.give_1_chimera_part_to_german</action>
+		 <give_info>jup_fenix_1_actor_take_mutants_chimera_part</give_info>
+        </phrase>
+		<phrase id="7">
+             <precondition>dialogs_sgm_jupiter.actor_has_1_gigant_part</precondition>
+             <dont_has_info>jup_fenix_1_actor_take_mutants_gigant_part</dont_has_info>
+             <text>jup_german_about_biodetector_quest_1_second_talking_6</text>
+             <next>000</next>
+		 <action>dialogs_sgm_jupiter.give_1_gigant_part_to_german</action>
+		 <give_info>jup_fenix_1_actor_take_mutants_gigant_part</give_info>
+       </phrase>
+		<phrase id="000">
+             <text>jup_german_about_biodetector_quest_1_second_talking_7</text>
+             <next>0001</next>
+        </phrase>
+		<phrase id="0001">
+             <text>jup_german_about_biodetector_quest_1_second_talking_8</text>
+	
+        </phrase>
+        <phrase id="8">
+             <has_info>jup_fenix_1_actor_take_mutants_gigant_part</has_info>
+             <has_info>jup_fenix_1_actor_take_mutants_chimera_part</has_info>
+             <has_info>jup_fenix_1_actor_take_mutants_kontroller_part</has_info>
+             <has_info>jup_fenix_1_actor_take_mutants_burer_part</has_info>
+             <has_info>jup_fenix_1_actor_take_mutants_bloodsucker_part</has_info>
+             <has_info>jup_fenix_1_actor_take_mutants_snork_part</has_info>
+             <text>jup_german_about_biodetector_quest_1_second_talking_9</text>
+             <next>9</next>
+	
+        </phrase>
+		<phrase id="9">
+             <text>jup_german_about_biodetector_quest_1_second_talking_10</text>
+		 <give_info>jup_bioradar_fenix_1_quest_done</give_info>
+             <next>10</next>
+        </phrase>
+		<phrase id="10">
+             <text>jup_german_about_biodetector_quest_1_second_talking_11</text>
+             <next>11</next>
+        </phrase>
+        <phrase id="11">
+             <text>jup_german_about_biodetector_quest_1_second_talking_12</text>
+	
+        </phrase>
+        <phrase id="88">
+             <text>jup_german_about_biodetector_quest_1_second_talking_000</text>
+       <action>dialogs.break_dialog</action>
+        </phrase>
+        </phrase_list>
+</dialog>
+
+<dialog id="jup_ozersky_about_biodetector_quest_2_first_dialog">
+    <has_info>jup_bioradar_fenix_1_quest_done</has_info>
+    <dont_has_info>jup_bioradar_fenix_2_quest_begin</dont_has_info>
+	    <phrase_list>
+		<phrase id="0">
+             <text>jup_ozersky_about_biodetector_quest_2_first_talking_0</text>
+             <next>1</next>
+        </phrase>
+		<phrase id="1">
+             <text>jup_ozersky_about_biodetector_quest_2_first_talking_1</text>
+             <next>2</next>
+        </phrase>
+        <phrase id="2">
+             <text>jup_ozersky_about_biodetector_quest_2_first_talking_2</text>
+             <next>3</next>
+        </phrase>
+        <phrase id="3">
+             <text>jup_ozersky_about_biodetector_quest_2_first_talking_3</text>
+             <next>4</next>
+        </phrase>
+		<phrase id="4">
+             <text>jup_ozersky_about_biodetector_quest_2_first_talking_4</text>
+             <next>5</next>
+        </phrase>
+        <phrase id="5">
+             <text>jup_ozersky_about_biodetector_quest_2_first_talking_5</text>
+		 <next>6</next>
+        </phrase>
+		<phrase id="6">
+             <text>jup_ozersky_about_biodetector_quest_2_first_talking_6</text>
+		 <next>7</next>
+             <give_info>jup_bioradar_fenix_2_quest_begin</give_info>
+             <action>dialogs_sgm_jupiter.give_ozersky_fenix_2_quest</action>
+        </phrase>
+		<phrase id="7">
+             <text>jup_ozersky_about_biodetector_quest_2_first_talking_7</text>
+                   </phrase>
+        </phrase_list>
+</dialog>
+
+<dialog id="jup_ozersky_about_biodetector_quest_2_second_dialog">
+     <has_info>jup_bioradar_fenix_2_quest_begin</has_info>
+	 <dont_has_info>jup_bioradar_fenix_2_quest_done</dont_has_info>
+	    <phrase_list>
+		<phrase id="0">
+             <text>jup_ozersky_about_biodetector_quest_2_second_talking_0</text>
+             <next>1</next>
+        </phrase>
+		<phrase id="1">
+             <text>jup_ozersky_about_biodetector_quest_2_second_talking_1</text>
+             <next>2</next>
+             <next>3</next>
+             <next>4</next>
+             <next>5</next>
+	
+             <next>8</next>
+             <next>88</next>
+        </phrase>
+        <phrase id="2">
+             <precondition>dialogs_sgm_jupiter.actor_has_3_af_lomot</precondition>
+             <dont_has_info>jf2_a1</dont_has_info>
+             <text>jup_ozersky_about_biodetector_quest_2_second_talking_2</text>
+             <next>000</next>
+		 <action>dialogs_sgm_jupiter.give_3_af_lomot_to_ozersky</action>
+		 <give_info>jf2_a1</give_info>
+        </phrase>
+		<phrase id="3">
+             <precondition>dialogs_sgm_jupiter.actor_has_2_af_benglfire</precondition>
+             <dont_has_info>jf2_a2</dont_has_info>
+             <text>jup_ozersky_about_biodetector_quest_2_second_talking_3</text>
+             <next>000</next>
+		 <action>dialogs_sgm_jupiter.give_2_af_benglfire_to_ozersky</action>
+		 <give_info>jf2_a2</give_info>
+       </phrase>
+		<phrase id="4">
+             <precondition>dialogs_sgm_jupiter.actor_has_2_af_vivert</precondition>
+             <dont_has_info>jf2_a3</dont_has_info>
+             <text>jup_ozersky_about_biodetector_quest_2_second_talking_4</text>
+             <next>000</next>
+		 <action>dialogs_sgm_jupiter.give_2_af_vivert_to_ozersky</action>
+		 <give_info>jf2_a3</give_info>
+        </phrase>
+		<phrase id="5">
+             <precondition>dialogs_sgm_jupiter.actor_has_1_af_glas</precondition>
+            <dont_has_info>jf2_a4</dont_has_info>
+             <text>jup_ozersky_about_biodetector_quest_2_second_talking_5</text>
+             <next>000</next>
+		 <action>dialogs_sgm_jupiter.give_1_af_glas_to_ozersky</action>
+		 <give_info>jf2_a4</give_info>
+        </phrase>
+		<phrase id="000">
+             <text>jup_ozersky_about_biodetector_quest_2_second_talking_6</text>
+             <next>0001</next>
+        </phrase>
+		<phrase id="0001">
+             <text>jup_ozersky_about_biodetector_quest_2_second_talking_7</text>
+	
+        </phrase>
+        <phrase id="8">
+             <has_info>jf2_a1</has_info>
+            <has_info>jf2_a2</has_info>
+             <has_info>jf2_a3</has_info>
+             <has_info>jf2_a4</has_info>
+             <text>jup_ozersky_about_biodetector_quest_2_second_talking_8</text>
+             <next>9</next>
+	
+        </phrase>
+		<phrase id="9">
+             <text>jup_ozersky_about_biodetector_quest_2_second_talking_9</text>
+		 <give_info>jup_bioradar_fenix_2_quest_done</give_info>
+            <next>10</next>
+        </phrase>
+		<phrase id="10">
+             <text>jup_ozersky_about_biodetector_quest_2_second_talking_10</text>
+             <next>11</next>
+        </phrase>
+        <phrase id="11">
+             <text>jup_ozersky_about_biodetector_quest_2_second_talking_11</text>
+	
+        </phrase>
+        <phrase id="88">
+             <text>jup_ozersky_about_biodetector_quest_2_second_talking_12</text>
+        <action>dialogs.break_dialog</action>
+        </phrase>
+        </phrase_list>
+</dialog>
+
+<dialog id="jup_novikov_about_biodetector_quest_3_first_dialog">
+    <has_info>jup_bioradar_fenix_2_quest_done</has_info>
+    <dont_has_info>jup_bioradar_fenix_3_quest_begin</dont_has_info>
+	    <phrase_list>
+		<phrase id="0">
+             <text>jup_novikov_about_biodetector_quest_3_first_talking_0</text>
+             <next>1</next>
+       </phrase>
+		<phrase id="1">
+             <text>jup_novikov_about_biodetector_quest_3_first_talking_1</text>
+             <next>2</next>
+        </phrase>
+       <phrase id="2">
+             <text>jup_novikov_about_biodetector_quest_3_first_talking_2</text>
+             <next>3</next>
+       </phrase>
+        <phrase id="3">
+             <text>jup_novikov_about_biodetector_quest_3_first_talking_3</text>
+             <next>4</next>
+             <action>dialogs_sgm_jupiter.give_actor_ecolog_outfit_for_quest</action>
+        </phrase>
+		<phrase id="4">
+             <text>jup_novikov_about_biodetector_quest_3_first_talking_4</text>
+             <next>5</next>
+        </phrase>
+       <phrase id="5">
+             <text>jup_novikov_about_biodetector_quest_3_first_talking_5</text>
+		 <next>6</next>
+              <action>dialogs_sgm_jupiter.create_novikov_fenix_3_quest</action>
+        </phrase>
+		<phrase id="6">
+             <text>jup_novikov_about_biodetector_quest_3_first_talking_6</text>
+		 <next>7</next>
+             <give_info>jup_bioradar_fenix_3_quest_begin</give_info>
+             <action>dialogs_sgm_jupiter.give_novikov_fenix_3_quest</action>
+        </phrase>
+	<phrase id="7">
+             <text>jup_novikov_about_biodetector_quest_3_first_talking_7</text>
+		
+        </phrase>
+        </phrase_list>
+</dialog>
+
+<dialog id="jup_novikov_about_biodetector_quest_3_second_dialog">
+     <has_info>jup_bioradar_fenix_3_quest_begin</has_info>
+	 <precondition>dialogs_sgm_jupiter.actor_has_anomal_scaner_1</precondition>
+    <precondition>dialogs_sgm_jupiter.actor_has_anomal_scaner_2</precondition>
+     <precondition>dialogs_sgm_jupiter.actor_has_anomal_scaner_3</precondition>
+    <precondition>dialogs_sgm_jupiter.actor_has_anomal_scaner_4</precondition>
+	 <dont_has_info>jup_bioradar_fenix_3_quest_done</dont_has_info>
+	    <phrase_list>
+		<phrase id="0">
+            <text>jup_novikov_about_biodetector_quest_3_second_talking_0</text>
+             <next>1</next>
+		 <action>dialogs_sgm_jupiter.give_novikov_quest_anomal_scaner</action>
+        </phrase>
+		<phrase id="1">
+             <text>jup_novikov_about_biodetector_quest_3_second_talking_1</text>
+             <next>2</next>
+        </phrase>
+        <phrase id="2">
+             <text>jup_novikov_about_biodetector_quest_3_second_talking_2</text>
+             <next>3</next>
+        </phrase>
+        <phrase id="3">
+             <text>jup_novikov_about_biodetector_quest_3_second_talking_3</text>
+             <next>4</next>
+             <give_info>jup_bioradar_fenix_3_quest_done</give_info>
+            <action>dialogs_sgm_jupiter.give_actor_bioradar_fenix</action>
+        </phrase>
+		<phrase id="4">
+             <text>jup_novikov_about_biodetector_quest_3_second_talking_4</text>
+             <next>5</next>
+        </phrase>
+        <phrase id="5">
+             <text>jup_novikov_about_biodetector_quest_3_second_talking_5</text>
+	
+        </phrase>
+        </phrase_list>
+</dialog>
+
+<dialog id="novikov_detectors_modify_dialog">
+        <phrase_list>
+            <phrase id="990">
+                <text>novikov_detectors_modify_dialog_1</text>
+            </phrase>
+            <phrase id="980">
+                <text>novikov_detectors_modify_dialog_2</text>
+            </phrase>
+            <phrase id="950">
+                <text>novikov_detectors_modify_dialog_3</text>
+            </phrase>
+            <phrase id="0">
+                <text>novikov_detectors_modify_dialog_4</text>
+                <next>1</next>
+                <next>111</next>
+                <next>2000</next>
+            </phrase>
+            <phrase id="1">
+                <dont_has_info>jup_bring_detector_kit_start</dont_has_info>
+                <text>novikov_detectors_modify_dialog_5</text>
+                <next>2</next>
+            </phrase>
+            <phrase id="111">
+                <has_info>jup_bring_detector_kit_otdal</has_info>
+                <text>novikov_detectors_modify_dialog_6</text>
+                <next>2</next>
+            </phrase>
+            <phrase id="2000">
+                <has_info>jup_bring_detector_kit_start</has_info>
+                <dont_has_info>jup_bring_detector_kit_otdal</dont_has_info>
+                <text>novikov_detectors_modify_dialog_7</text>
+                <next>2001</next>
+                <next>2020</next>
+            </phrase>
+            <phrase id="2020">
+                <precondition>sgm_dialogs.dont_detector_modify_toolkit</precondition>
+                <text>novikov_detectors_modify_dialog_8</text>
+                <next>2021</next>
+            </phrase>
+            <phrase id="2021">
+                <text>novikov_detectors_modify_dialog_9</text>
+                <next>2022</next>
+            </phrase>
+            <phrase id="2022">
+                <text>novikov_detectors_modify_dialog_10</text>
+            </phrase>
+            <phrase id="2001">
+                <precondition>sgm_dialogs.has_detector_modify_toolkit</precondition>
+                <text>novikov_detectors_modify_dialog_11</text>
+                <action>sgm_dialogs.give_detector_modify_toolkit</action>
+                <next>2002</next>
+            </phrase>
+            <phrase id="2002">
+                <text>novikov_detectors_modify_dialog_12</text>
+                <give_info>jup_bring_detector_kit_otdal</give_info>
+                <next>2003</next>
+                <next>20030</next>
+            </phrase>
+            <phrase id="20030">
+                <text>novikov_detectors_modify_dialog_13</text>
+            </phrase>
+            <phrase id="2003">
+                <text>novikov_detectors_modify_dialog_14</text>
+                <give_info>jup_bring_detector_kit_otdal</give_info>
+                <next>2004</next>
+            </phrase>
+            <phrase id="2004">
+                <text>novikov_detectors_modify_dialog_15</text>
+                <action>sgm_dialogs.novikov_available_modyfy</action>
+                <next>100</next>
+                <next>200</next>
+                <next>300</next>
+                <next>400</next>
+                <next>500</next>
+                <next>990</next>
+            </phrase>
+            <phrase id="1000">
+                <dont_has_info>jup_bring_detector_kit_start</dont_has_info>
+                <dont_has_info>jup_bring_detector_kit_otdal</dont_has_info>
+                <text>novikov_detectors_modify_dialog_16</text>
+                <next>1001</next>
+                <next>980</next>
+            </phrase>
+            <phrase id="1001">
+                <text>novikov_detectors_modify_dialog_17</text>
+                <next>1002</next>
+            </phrase>
+            <phrase id="1002">
+                <text>novikov_detectors_modify_dialog_18</text>
+                <action>sgm_dialogs.jup_bring_detector_kit</action>
+                <give_info>jup_bring_detector_kit_start</give_info>
+                <next>1003</next>
+            </phrase>
+            <phrase id="1003">
+                <text>novikov_detectors_modify_dialog_19</text>
+                <action>dialogs.break_dialog</action>
+            </phrase>
+            <phrase id="2">
+                <text>novikov_detectors_modify_dialog_20</text>
+                <next>3</next>
+                <next>1000</next>
+            </phrase>
+            <phrase id="3">
+                <has_info>jup_bring_detector_kit_start</has_info>
+                <text>novikov_detectors_modify_dialog_21</text>
+                <action>sgm_dialogs.novikov_available_modyfy</action>
+                <next>100</next>
+                <next>200</next>
+                <next>300</next>
+                <next>400</next>
+                <next>500</next>
+                <next>990</next>
+            </phrase>
+            <phrase id="100">
+                <precondition>sgm_dialogs.has_detector_simple</precondition>
+                <text>novikov_detectors_modify_dialog_22</text>
+                <next>101</next>
+            </phrase>
+            <phrase id="101">
+                <text>novikov_detectors_modify_dialog_27</text>
+                <next>102</next>
+                <next>130</next>
+                <next>150</next>
+            </phrase>
+            <phrase id="150">
+                <precondition>sgm_dialogs.not_money_to_detector_simple</precondition>
+                <text>novikov_detectors_modify_dialog_32</text>
+            </phrase>
+            <phrase id="130">
+                <precondition>sgm_dialogs.has_money_to_detector_simple</precondition>
+                <text>novikov_detectors_modify_dialog_35</text>
+            </phrase>
+            <phrase id="102">
+                <precondition>sgm_dialogs.has_money_to_detector_simple</precondition>
+                <text>novikov_detectors_modify_dialog_34</text>
+                <action>sgm_dialogs.give_money_to_detector_simple</action>
+                <next>103</next>
+            </phrase>
+            <phrase id="103">
+                <text>novikov_detectors_modify_dialog_33</text>
+                <action>sgm_dialogs.modify_detector_simple</action>
+                <next>950</next>
+            </phrase>
+            <phrase id="200">
+                <precondition>sgm_dialogs.has_detector_advanced</precondition>
+                <text>novikov_detectors_modify_dialog_23</text>
+                <next>201</next>
+            </phrase>
+            <phrase id="201">
+                <text>novikov_detectors_modify_dialog_28</text>
+                <next>202</next>
+                <next>230</next>
+                <next>250</next>
+            </phrase>
+            <phrase id="250">
+                <precondition>sgm_dialogs.not_money_to_detector_advanced</precondition>
+                <text>novikov_detectors_modify_dialog_32</text>
+            </phrase>
+            <phrase id="230">
+                <precondition>sgm_dialogs.has_money_to_detector_advanced</precondition>
+                <text>novikov_detectors_modify_dialog_35</text>
+            </phrase>
+            <phrase id="202">
+                <precondition>sgm_dialogs.has_money_to_detector_advanced</precondition>
+                <text>novikov_detectors_modify_dialog_34</text>
+                <action>sgm_dialogs.give_money_to_detector_advanced</action>
+                <next>203</next>
+            </phrase>
+            <phrase id="203">
+                <text>novikov_detectors_modify_dialog_33</text>
+                <action>sgm_dialogs.modify_detector_advanced</action>
+                <next>950</next>
+            </phrase>
+            <phrase id="300">
+                <precondition>sgm_dialogs.has_detector_elite</precondition>
+                <text>novikov_detectors_modify_dialog_24</text>
+                <next>301</next>
+            </phrase>
+            <phrase id="301">
+                <text>novikov_detectors_modify_dialog_29</text>
+                <next>302</next>
+                <next>330</next>
+                <next>350</next>
+            </phrase>
+            <phrase id="350">
+                <precondition>sgm_dialogs.not_money_to_detector_elite</precondition>
+                <text>novikov_detectors_modify_dialog_32</text>
+            </phrase>
+            <phrase id="330">
+                <precondition>sgm_dialogs.has_money_to_detector_elite</precondition>
+                <text>novikov_detectors_modify_dialog_35</text>
+            </phrase>
+            <phrase id="302">
+                <precondition>sgm_dialogs.has_money_to_detector_elite</precondition>
+                <text>novikov_detectors_modify_dialog_34</text>
+                <action>sgm_dialogs.give_money_to_detector_elite</action>
+                <next>303</next>
+            </phrase>
+            <phrase id="303">
+                <text>novikov_detectors_modify_dialog_33</text>
+                <action>sgm_dialogs.modify_detector_elite</action>
+                <next>950</next>
+            </phrase>
+            <phrase id="400">
+                <precondition>sgm_dialogs.has_detector_scientific</precondition>
+                <text>novikov_detectors_modify_dialog_25</text>
+                <next>401</next>
+            </phrase>
+            <phrase id="401">
+                <text>novikov_detectors_modify_dialog_30</text>
+                <next>402</next>
+                <next>430</next>
+                <next>450</next>
+            </phrase>
+            <phrase id="450">
+                <precondition>sgm_dialogs.not_money_to_detector_scientific</precondition>
+                <text>novikov_detectors_modify_dialog_32</text>
+            </phrase>
+            <phrase id="430">
+                <precondition>sgm_dialogs.has_money_to_detector_scientific</precondition>
+                <text>novikov_detectors_modify_dialog_35</text>
+            </phrase>
+            <phrase id="402">
+                <precondition>sgm_dialogs.has_money_to_detector_scientific</precondition>
+                <text>novikov_detectors_modify_dialog_34</text>
+                <action>sgm_dialogs.give_money_to_detector_scientific</action>
+                <next>403</next>
+            </phrase>
+            <phrase id="403">
+                <text>novikov_detectors_modify_dialog_33</text>
+                <action>sgm_dialogs.modify_detector_scientific</action>
+                <next>950</next>
+            </phrase>
+            <phrase id="500">
+                <precondition>sgm_dialogs.has_detector_omega</precondition>
+                <text>novikov_detectors_modify_dialog_26</text>
+                <next>501</next>
+            </phrase>
+            <phrase id="501">
+                <text>novikov_detectors_modify_dialog_31</text>
+                <next>502</next>
+                <next>530</next>
+                <next>550</next>
+            </phrase>
+            <phrase id="550">
+                <precondition>sgm_dialogs.not_money_to_detector_omega</precondition>
+                <text>novikov_detectors_modify_dialog_32</text>
+            </phrase>
+            <phrase id="530">
+                <precondition>sgm_dialogs.has_money_to_detector_omega</precondition>
+                <text>novikov_detectors_modify_dialog_35</text>
+            </phrase>
+            <phrase id="502">
+                <precondition>sgm_dialogs.has_money_to_detector_omega</precondition>
+                <text>novikov_detectors_modify_dialog_34</text>
+                <action>sgm_dialogs.give_money_to_detector_omega</action>
+                <next>503</next>
+            </phrase>
+            <phrase id="503">
+                <text>novikov_detectors_modify_dialog_33</text>
+                <action>sgm_dialogs.modify_detector_omega</action>
+                <next>950</next>
+            </phrase>
+        </phrase_list>
+</dialog>
+
+</game_dialogs>

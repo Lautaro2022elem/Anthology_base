@@ -1,0 +1,377 @@
+<?xml version="1.0" encoding="windows-1251" ?>
+<!--	CoC 1.4.10 - DoctorX Questlines 1.6 -->
+<game_dialogs>
+
+<!-- Ashot -->
+    <dialog id="jup_a6_freedom_trader_ashot_start">
+        <phrase_list>
+            <phrase id="0">
+                <text>jup_a6_freedom_trader_ashot_start_dialog_0</text>
+            </phrase>
+        </phrase_list>
+    </dialog>
+
+	
+<!-- Yar -->
+    <dialog id="jup_b19_freedom_yar_start">
+        <phrase_list>
+            <phrase id="0">
+                <text>jup_b19_freedom_yar_start_dialog_0</text>
+            </phrase>
+        </phrase_list>
+    </dialog>
+
+	
+<!-- Trapper -->
+	<dialog id="jup_trapper_about_himself">
+        <dont_has_info>jup_b220_trapper_about_himself_told</dont_has_info>
+        <phrase_list>
+            <phrase id="0">
+                <text>jup_trapper_about_himself_0</text>
+                <next>1</next>
+            </phrase>
+            <phrase id="1">
+                <text>jup_trapper_about_himself_1</text>
+                <give_info>jup_b220_trapper_about_himself_told</give_info>
+            </phrase>
+        </phrase_list>
+    </dialog>
+
+	<dialog id="jup_trapper_about_retire">
+        <has_info>jup_b220_trapper_about_himself_told</has_info>
+        <dont_has_info>jup_b220_trapper_about_retire_told</dont_has_info>
+        <phrase_list>
+			<phrase id="0">
+                <text>jup_trapper_about_retire_0</text>
+                <next>1</next>
+            </phrase>
+            <phrase id="1">
+                <text>jup_trapper_about_retire_1</text>
+                <give_info>jup_b220_trapper_about_retire_told</give_info>
+            </phrase>
+        </phrase_list>
+    </dialog>
+	
+<!-- Hermann -->
+	<dialog id="hermann_lab">	
+		<phrase_list>
+			<phrase id="0">
+			<text>hermann_lab_0</text>
+		<next>1</next>
+		</phrase>
+			<phrase id="1">
+			<text>hermann_lab_1</text>
+		</phrase>	
+		</phrase_list>
+	</dialog>
+	
+	
+<!-- Ozersky -->
+	<dialog id="ozersky_oasis">	
+		<phrase_list>
+			<phrase id="0">
+				<text>ozersky_oasis_0</text>
+			<next>1</next>
+			</phrase>
+				<phrase id="1">
+				<text>ozersky_oasis_1</text>
+			</phrase>	
+		</phrase_list>
+	</dialog>
+	
+	
+<!-- Hawaiian -->
+	<dialog id="hawaiian_yanov">	
+		<phrase_list>
+			<phrase id="0">
+				<text>hawaiian_yanov_0</text>
+			<next>1</next>
+			</phrase>
+			<phrase id="1">
+				<text>hawaiian_yanov_1</text>
+			</phrase>	
+		</phrase_list>
+	</dialog>
+	
+
+<!-- Tukarev Escort Jupiter Scientists dialog -->
+	<dialog id="ecolog_companion_task_2_dialog">
+		<phrase_list>
+			<phrase id="0">
+				<text />
+				<next>1</next>
+			</phrase>
+			<phrase id="1">
+				<text />
+				<next>111</next>
+				<next>112</next>
+				<next>113</next>
+			</phrase>
+			<phrase id="111">
+				<dont_has_info>ecolog_companion_task_2_started</dont_has_info>
+				<precondition>dialogs_jupiter.ecolog_companion_task_2_not_complete</precondition>
+				<text>ecolog_companion_task_1_start_dialog_1</text>
+				<give_info>ecolog_companion_task_2_started</give_info>
+				<next>1111</next>
+			</phrase>
+			<phrase id="112">
+				<has_info>ecolog_companion_task_2_started</has_info>
+				<precondition>dialogs_jupiter.ecolog_companion_task_2_not_complete</precondition>
+				<text>ecolog_companion_task_1_start_dialog_2</text>
+				<give_info>ecolog_companion_task_2_started</give_info>
+				<next>1111</next>
+			</phrase>
+			<phrase id="113">
+				<precondition>dialogs_jupiter.ecolog_companion_task_2_complete</precondition>
+				<text>ecolog_companion_task_1_complete</text>
+				<next>1113</next>
+			</phrase>
+			<phrase id="1111">
+				<text>ecolog_companion_task_1_actor_reply</text>
+			</phrase>
+			<phrase id="1113">
+				<text>ecolog_companion_task_1_actor_reply</text>
+				<!-- <action>dialogs_jupiter.ecolog_companion_task_2_give_reward</action> -->
+				<action>dialogs_jupiter.ecolog_companion_task_2_complete_task</action>
+			</phrase>
+		</phrase_list>
+	</dialog>
+
+
+<!-- (Monolith Mechanic - Jupiter factory) -->
+	<dialog id="mechanic_monolith_jup_depo_start">
+		<phrase_list>
+			<phrase id="0">
+				<text>mechanic_monolith_jup_depo_start_0</text>
+			</phrase>
+		</phrase_list>
+	</dialog>
+	
+	
+<!-- (Monolith Trader - Jupiter factory) -->
+	<dialog id="meet_guid_jupdepo_mon">
+		<dont_has_info>meet_guid_jupdepo_mon_over</dont_has_info>
+		<phrase_list>
+			<phrase id="0">
+				<text>meet_guid_jupdepo_mon_0</text>
+				<next>1</next>
+			</phrase>
+			<phrase id="1">
+				<text>meet_guid_jupdepo_mon_1</text>
+				<give_info>meet_guid_jupdepo_mon_over</give_info>
+			</phrase>
+		</phrase_list>
+	</dialog>
+	
+	<dialog id="meet_guid_jupdepo_mon_list">
+		<has_info>meet_guid_jupdepo_mon_over</has_info>
+		<phrase_list>
+			<phrase id="0">
+				<text>meet_guid_jupdepo_mon_list_0</text>
+				<next>1</next>
+			</phrase>
+			<phrase id="1">
+				<text>meet_guid_jupdepo_mon_list_1</text>
+			</phrase>
+		</phrase_list>
+	</dialog>
+	
+	<dialog id="travel_guid_jupdepo_mon_mon">
+		<has_info>meet_guid_jupdepo_mon_over</has_info>
+		<phrase_list>
+			<phrase id="0">
+				<text>travel_guid_jupdepo_mon_mon_0</text>
+				<next>1</next>
+			</phrase>
+			<phrase id="1">
+				<text>travel_guid_jupdepo_mon_mon_1</text>
+				<next>2</next>
+				<next>3</next>
+				<next>4</next>
+				<next>5</next>
+			</phrase>
+			<phrase id="2">
+				<text>travel_guid_jupdepo_mon_mon_2</text>
+				<precondition>dialogs_mlr.have_money_to_jupiter_guid_bar</precondition>
+				<action>dialogs_mlr.sell_money_to_jupiter_guid_bar</action>
+				<action>dialogs_mlr.red_forest_guid_mon</action>
+			</phrase>
+			<phrase id="3">
+				<text>travel_guid_jupdepo_mon_mon_3</text>
+				<precondition>dialogs_mlr.have_money_to_zaton_guid_jup</precondition>
+				<action>dialogs_mlr.sell_money_to_zaton_guid_jup</action>
+				<action>dialogs_mlr.pripyat_guid_mon</action>
+			</phrase>
+			<phrase id="4">
+				<text>travel_guid_jupdepo_mon_mon_4</text>
+				<precondition>dialogs_mlr.have_money_to_military_guid_bar</precondition>
+				<action>dialogs_mlr.sell_money_to_military_guid_bar</action>
+				<action>dialogs_mlr.l11_pripyat_guid_mon</action>
+			</phrase>
+			<phrase id="5">
+				<text>travel_guid_jupdepo_mon_mon_5</text>
+			</phrase>
+		</phrase_list>
+	</dialog>
+	
+	
+<!-- Garry (Guide) -->
+	<dialog id="meet_guid_jup">
+		<dont_has_info>meet_guid_jup_over</dont_has_info>
+		<phrase_list>
+			<phrase id="0">
+				<text>meet_guid_jup_0</text>
+				<next>1</next>
+			</phrase>
+			<phrase id="1">
+				<text>meet_guid_jup_1</text>
+				<give_info>meet_guid_jup_over</give_info>
+			</phrase>
+		</phrase_list>
+	</dialog>
+	
+	<dialog id="meet_guid_jup_list">
+		<has_info>meet_guid_jup_over</has_info>
+		<phrase_list>
+			<phrase id="0">
+				<text>meet_guid_jup_list_0</text>
+				<next>1</next>
+			</phrase>
+			<phrase id="1">
+				<text>meet_guid_jup_list_1</text>
+			</phrase>
+		</phrase_list>
+	</dialog>
+	
+	<dialog id="travel_guid_jup">
+		<precondition>dialogs_mlr.have_money_to_jupiter_underground_guid_jup</precondition>
+		<has_info>meet_guid_jup_over</has_info>
+		<phrase_list>
+			<phrase id="0">
+				<text>travel_guid_jup_0</text>
+				<next>1</next>
+			</phrase>
+			<phrase id="1">
+				<text>travel_guid_jup_1</text>
+				<next>2</next>
+				<next>3</next>
+				<next>4</next>
+				<next>5</next>
+				<next>6</next>
+				<next>7</next>
+			</phrase>
+			<phrase id="2">
+				<text>travel_guid_jup_2</text>
+				<precondition>dialogs_mlr.have_money_to_jupiter_guid_bar</precondition>
+				<action>dialogs_mlr.sell_money_to_jupiter_guid_bar</action>
+				<action>dialogs_mlr.l05_bar_guid</action>
+			</phrase>
+			<phrase id="3">
+				<text>travel_guid_jup_3</text>
+				<precondition>dialogs_mlr.have_money_to_escape_guid_bar</precondition>
+				<action>dialogs_mlr.sell_money_to_escape_guid_bar</action>
+				<action>dialogs_mlr.l11_pripyat_guid</action>
+			</phrase>
+			<phrase id="4">
+				<text>travel_guid_jup_4</text>
+				<precondition>dialogs_mlr.have_money_to_red_forest_guid_jup</precondition>
+				<action>dialogs_mlr.sell_money_to_red_forest_guid_jup</action>
+				<action>dialogs_mlr.red_forest_guid</action>
+			</phrase>
+			<phrase id="5">
+				<text>travel_guid_jup_5</text>
+				<precondition>dialogs_mlr.have_money_to_jupiter_underground_guid_jup</precondition>
+				<action>dialogs_mlr.sell_money_to_jupiter_underground_guid_jup</action>
+				<action>dialogs_mlr.jupiter_underground_2_guid</action>
+			</phrase>
+			<phrase id="6">
+				<text>travel_guid_jup_6</text>
+				<precondition>dialogs_mlr.have_money_to_zaton_guid_jup</precondition>
+				<action>dialogs_mlr.sell_money_to_zaton_guid_jup</action>
+				<action>dialogs_mlr.zaton_guid</action>
+			</phrase>
+			<phrase id="7">
+				<text>travel_guid_jup_7</text>
+			</phrase>
+		</phrase_list>
+	</dialog>
+	
+
+<!-- Loki (Freedom Leader) in Yanov -->
+	<dialog id="loki_st">
+		<dont_has_info>loki_st_done</dont_has_info>
+		<phrase_list>
+			<phrase id="0">
+				<text>loki_st_0</text>
+				<next>1</next>
+			</phrase>
+			<phrase id="1">
+				<text>loki_st_1</text>
+				<next>2</next>
+			</phrase>
+			<phrase id="2">
+				<text>loki_st_2</text>
+				<next>3</next>
+			</phrase>
+			<phrase id="3">
+				<text>loki_st_3</text>
+				<next>4</next>
+			</phrase>
+			<phrase id="4">
+				<text>loki_st_4</text>
+				<next>5</next>
+			</phrase>
+			<phrase id="5">
+				<text>loki_st_5</text>
+				<next>6</next>
+			</phrase>
+			<phrase id="6">
+				<text>loki_st_6</text>
+				<next>7</next>
+			</phrase>
+			<phrase id="7">
+				<text>loki_st_7</text>
+				<next>8</next>
+			</phrase>
+			<phrase id="8">
+				<text>loki_st_8</text>
+				<next>9</next>
+			</phrase>
+			<phrase id="9">
+				<text>loki_st_9</text>
+				<next>10</next>
+			</phrase>
+			<phrase id="10">
+				<text>loki_st_10</text>
+				<next>11</next>
+			</phrase>
+			<phrase id="11">
+				<text>loki_st_11</text>
+				<next>12</next>
+			</phrase>
+			<phrase id="12">
+				<text>loki_st_12</text>
+				<give_info>loki_st_done</give_info>
+			</phrase>
+		</phrase_list>
+	</dialog>
+	
+	<dialog id="devushka_loki_help">
+		<dont_has_info>devushka_help_done</dont_has_info>
+		<precondition>dialogs_devushka.devushka_help_2_has</precondition>
+		<has_info>devushka_help_2_give</has_info>
+        <phrase_list>
+            <phrase id="0">
+                <text>devushka_loki_help_0</text>
+				<action>dialogs_devushka.devushka_help_2_done</action>
+				<next>1</next>
+            </phrase>
+            <phrase id="1">
+                <text>devushka_loki_help_1</text>
+				<give_info>devushka_help_done</give_info>
+				<action>dialogs_devushka.devushka_4_info</action>
+            </phrase>
+		</phrase_list>
+	</dialog>
+	
+</game_dialogs>

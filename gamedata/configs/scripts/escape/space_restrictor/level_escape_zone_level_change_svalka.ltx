@@ -1,0 +1,13 @@
+[logic]
+active = nil ; sr_level_changer
+
+[sr_level_changer]
+on_actor_inside = {-actor_in_level_changer} %+actor_in_level_changer%
+on_actor_outside = {+actor_in_level_changer} %-actor_in_level_changer%
+use_cond            = {+infa_done} true, false
+travel_coord        = 28.458|-16.663|685.797
+throw_coord         = 29.983|16.607|676.457
+spot                = level_changer_up|st_perehod_in_escape_to_garbage
+travel_time         = 3|45                                             
+message_possible    = ui_st_sr_level_changer_open                
+message_impossible  = ui_st_sr_level_changer_closed

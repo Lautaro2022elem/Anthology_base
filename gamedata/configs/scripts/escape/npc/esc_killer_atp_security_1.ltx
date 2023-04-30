@@ -1,0 +1,14 @@
+---------------Охрана: Админ. здание-----------------
+[logic]
+suitable = {=check_npc_name(esc_killer_atp_adm)} true
+prior = 200
+active = walker@esc_killer_atp_adm
+
+[walker@esc_killer_atp_adm]
+path_walk = esc_killer_atp_adm_walk
+path_look = esc_killer_atp_adm_look
+invulnerable = false
+gather_items_enabled = false
+help_wounded_enabled = false
+corpse_detection_enabled = false
+meet = no_meet

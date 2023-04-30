@@ -1,0 +1,267 @@
+--[[ ----------------------------------------------------------------------------------------------- 
+ File       : xr_companion_guard.script
+ Description: Схема поведения компаньена модифицированная
+ Copyright  : 2012 © Spectrum Project Game Worold
+ Author		: Клоникрована со стандартной схемы компаньена и модернизирована denis2000
+ Last edit  : 9.08.2012
+--]] -----------------------------------------------------------------------------------------------
+
+local minimal_distance = 2 -- Расстояние от точки сопровождения до ГГ
+local desired_distance = 3 -- Расстояние на котором НПС начинает выбирать точку сопровождения ГГ
+
+local keep_state_min_time = 1000 -- переключившись в состояние (бег, ходьба, спринт), не переключаться в другое N ms
+
+local dist_walk = 4 -- Расстояние от ГГ при котором НПС начинает двигаться за ГГ < dist_run
+local dist_run  = 10 -- Расстояние от ГГ при котором НПС начинает доганять ГГ otherwise - sprint
+
+-- Модели поведения:
+beh_walk_simple = 0 -- Идет/бежит за ГГ
+beh_walk_near 	= 1 -- Отсутствует
+beh_walk_ignore = 2 -- Отсутствует
+beh_wait_simple = 3 -- Ждет возле ГГ
+beh_wait_near 	= 4 -- Отсутствует
+beh_wait_ignore = 5 -- Отсутствует
+
+local anim_idle          = "wait_trade" 	-- Дефолтная анимация
+local anim_wait 	 	 = "hide"			-- Анимация ожидания
+local anim_move 	 	 = "sneak_no_wpn"	-- Анимация движения
+local anim_move_fast	 = "sneak_run"		-- Анимация быстрого движения
+local anim_move_veryfast = "sprint"			-- Анимация очень быстрого движения
+
+----------------------------------------------------------------------------------------------------------------------
+class "evaluator_need_companion_guard" (property_evaluator)
+
+function evaluator_need_companion_guard:__init(storage, name) super (nil, name)
+	self.st = storage
+end
+
+function evaluator_need_companion_guard:evaluate()
+	return xr_logic.is_active(self.object, self.st)
+end
+
+----------------------------------------------------------------------------------------------------------------------
+class "action_companion_guard_activity" (action_base)
+
+function action_companion_guard_activity:__init(npc_name, action_name, storage) super (nil, action_name)
+	self.st = storage
+end
+
+function action_companion_guard_activity:initialize()
+	--printf("_bp: action_companion_guard_activity: initialize")
+	action_base.initialize(self)
+	self.object:set_desired_position()
+	self.object:set_desired_direction()
+	self.object:enable_talk()
+	self.assist_point = nil
+	self.last_state = self.st.anim_idle
+	state_mgr.set_state(self.object, self.last_state, nil, nil, nil, { animation = true })
+	self.keep_state_until = time_global()
+end
+
+function action_companion_guard_activity:beh_walk_simple()
+	local actor = db.actor
+	local select_new_pt = false
+	local target = nil
+	local dist_from_self_to_actor = self.object:position():distance_to(actor:position())
+	local dist_from_assist_pt_to_actor
+	if self.assist_point then
+		dist_from_assist_pt_to_actor = level.vertex_position(self.assist_point):distance_to(actor:position())
+	else
+		dist_from_assist_pt_to_actor = nil
+	end
+	if dist_from_self_to_actor >= self.st.minimal_distance and
+		 (not dist_from_assist_pt_to_actor or
+			dist_from_assist_pt_to_actor >= self.st.desired_distance ) then
+		select_new_pt = true
+	end
+	-- 1. Если мы находимся за большим радиусом - необходимо выбрать новую точку
+	if select_new_pt then
+		self.assist_point = select_position(self.object, self.st)
+		if not self.assist_point then
+			return
+		end
+	elseif not self.assist_point then
+		return
+	end
+
+	-- 2. Двигаемся на точку: если точка далеко - бежим, иначе идем
+	self.object:set_path_type(game_object.level_path)
+	self.object:set_dest_level_vertex_id(self.assist_point)
+
+	local dist_to_assist_pt = level.vertex_position(self.assist_point):distance_to(self.object:position())
+
+	printf("_bp: action_companion_guard_activity:execute(): name='%s', dist_to_assist_pt=%s",
+		self.object:name(), dist_to_assist_pt)
+
+	local new_state
+
+	if self.object:level_vertex_id() == self.assist_point then
+		-- Уже пришли на точку отхода, разрешить еще раз начать отход
+		-- (случай, когда игрок подошел слишком близко к ассистенту)
+		--self.dir_approaching = true
+
+		new_state = self.st.anim_wait
+		target = {look_object = get_story_object("actor")}
+	else
+		local t = time_global()
+		if t >= self.keep_state_until then
+			self.keep_state_until = t + keep_state_min_time
+
+			--printf("_bp: move_mgr: distance to destination waypoint: %d", dist_to_assist_pt)
+			if dist_to_assist_pt <= self.st.dist_walk then
+				new_state = self.st.anim_move
+				target = {look_object = get_story_object("actor")}
+			elseif dist_to_assist_pt <= self.st.dist_run then
+				new_state = self.st.anim_move_fast
+			else
+				new_state = self.st.anim_move_veryfast
+			end
+		end
+	end
+
+	if new_state and new_state ~= self.last_state then
+		state_mgr.set_state(self.object, new_state,
+			nil, nil, target, { animation = true })
+		self.last_state = new_state
+	end
+
+	
+end
+
+function action_companion_guard_activity:beh_wait_simple()
+	local actor = db.actor
+	local new_state = self.st.anim_wait
+	if new_state ~= self.last_state then
+		state_mgr.set_state(self.object, new_state,
+			nil, nil, {look_object = get_story_object("actor")}, { animation = true })
+		self.last_state = new_state
+	end
+
+	
+end
+
+function action_companion_guard_activity:execute()
+	action_base.execute(self)
+	if self.st.behavior == beh_walk_simple then
+		self:beh_walk_simple()
+	elseif self.st.behavior == beh_wait_simple then
+		self:beh_wait_simple()
+	end
+end
+
+function action_companion_guard_activity:finalize()
+	action_base.finalize(self)
+end
+
+--' Выбор новой позиции
+function select_position(npc, st)
+	local node_1_vertex_id = nil
+	local node_1_distance = nil
+	local node_2_vertex_id = nil
+	local node_2_distance = nil
+
+	local actor = db.actor
+
+	-- проверяем точку слева от актера
+	desired_direction = vector_rotate_y(actor:direction(), math.random(50,60) )
+	node_1_vertex_id = level.vertex_in_direction(actor:level_vertex_id(),
+		desired_direction,	st.minimal_distance)
+	if npc:accessible(node_1_vertex_id) ~= true or node_1_vertex_id == actor:level_vertex_id() then
+		node_1_vertex_id = nil
+	end
+	-- проверяем точку справа от актера
+	desired_direction = vector_rotate_y(actor:direction(), -math.random(50,60) )
+	node_2_vertex_id = level.vertex_in_direction(actor:level_vertex_id(),
+		desired_direction,	st.minimal_distance)
+	if npc:accessible(node_2_vertex_id) ~= true or node_2_vertex_id == actor:level_vertex_id() then
+		node_2_vertex_id = nil
+	end
+
+	-- Проверяем растояния до точек
+	if node_1_vertex_id ~= nil then
+		node_1_distance = npc:position():distance_to_sqr(level.vertex_position(node_1_vertex_id))
+	else
+		node_1_distance = -1
+	end
+	if node_2_vertex_id ~= nil then
+		node_2_distance = npc:position():distance_to_sqr(level.vertex_position(node_2_vertex_id))
+	else
+		node_2_distance = -1
+	end
+
+	-- Выбираем ближайшую из существующих
+	if node_1_distance == -1 and node_2_distance == -1 then
+		--' Не смогли найти точку, ругаться
+		return nil
+	end
+	if node_1_distance == -1 then
+		return node_2_vertex_id
+	end
+	if node_2_distance == -1 then
+		return node_1_vertex_id
+	end
+	if node_1_distance < node_2_distance then
+		return node_1_vertex_id
+	else
+		return node_2_vertex_id
+	end
+end
+
+
+function vector_rotate_y (v, angle)
+		angle = angle * 0.017453292519943295769236907684886
+		local c = math.cos (angle)
+		local s = math.sin (angle)
+		return vector ():set (v.x * c - v.z * s, v.y, v.x * s + v.z * c)
+end
+
+----------------------------------------------------------------------------------------------------------------------
+function add_to_binder(npc, ini, scheme, section, storage)
+	--printf("_bp: add_to_binder (companion_guard)")
+	local operators    = {}
+	local properties  = {}
+
+	local manager = npc:motivation_action_manager()
+
+	properties["need_companion_guard"]   = xr_evaluators_id.zmey_companion_guard_base + 1
+	properties["state_mgr_logic_active"] 	= xr_evaluators_id.state_mgr + 4
+	
+	operators["action_companion_guard"]   = xr_actions_id.zmey_companion_guard_base + 1
+
+	-- evaluators
+	manager:add_evaluator (properties["need_companion_guard"],   this.evaluator_need_companion_guard  (storage, "companion_guard_need_companion_guard"))
+
+	local new_action = this.action_companion_guard_activity(npc, "action_companion_guard_activity", storage)
+	new_action:add_precondition    (world_property(stalker_ids.property_alive,   true))
+	new_action:add_precondition    (world_property(stalker_ids.property_enemy,   false))
+	new_action:add_precondition    (world_property(properties["need_companion_guard"],   true))
+	xr_motivator.addCommonPrecondition(new_action)
+	new_action:add_effect(world_property(properties["need_companion_guard"], false))
+	new_action:add_effect (world_property(properties["state_mgr_logic_active"], false))
+	manager:add_action(operators["action_companion_guard"], new_action)
+
+	-- Зарегистрировать все actions, в которых должен быть вызван метод reset_scheme при изменении настроек схемы:
+	xr_logic.subscribe_action_for_events(npc, storage, new_action)
+
+	new_action = manager:action(xr_actions_id.alife)
+	new_action:add_precondition(world_property(properties["need_companion_guard"], false))
+end
+
+function set_scheme(object, ini, scheme, section)
+	local st = xr_logic.assign_storage_and_bind(object, ini, scheme, section)
+	st.logic				= xr_logic.cfg_get_switch_conditions(ini, section, npc)
+	st.behavior = beh_walk_simple
+	
+	--Чтение параметров из файла конфигурации схемы
+	st.minimal_distance = utils.cfg_get_number(ini, section, "minimal_distance", npc, false, minimal_distance)
+	st.desired_distance = utils.cfg_get_number(ini, section, "desired_distance", npc, false, desired_distance)
+	st.dist_walk = utils.cfg_get_number(ini, section, "dist_walk", npc, false, dist_walk)
+	st.dist_run = utils.cfg_get_number(ini, section, "dist_run", npc, false, dist_run)
+	st.anim_idle = utils.cfg_get_string(ini, section, "anim_idle", npc, false, "", anim_idle)       
+	st.anim_wait = utils.cfg_get_string(ini, section, "anim_wait", npc, false, "", anim_wait) 	
+	st.anim_move = utils.cfg_get_string(ini, section, "anim_move", npc, false, "", anim_move) 	
+	st.anim_move_fast =	utils.cfg_get_string(ini, section, "anim_move_fast", npc, false, "", anim_move_fast)
+	st.anim_move_veryfast = utils.cfg_get_string(ini, section, "anim_move_veryfast", npc, false, "", anim_move_veryfast)
+	
+	
+end

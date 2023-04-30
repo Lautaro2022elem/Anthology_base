@@ -1,0 +1,231 @@
+;----------- << MARSH >> ------------
+;unique starting base
+![mar_smart_terrain_base]:default_base
+sim_avail 	            = true
+ecolog		            = 1
+stalker		            = 1
+surge 		            = 1
+csky 		            = 5
+
+[mar_smart_terrain_doc]:default_base
+sim_avail 	            = false
+
+[mar_smart_terrain_doc_2]:default_resource
+sim_avail 	= true
+surge 		= 1
+
+;---------	SIMULATION	--------
+;NW fishing village, bandits
+[mar_smart_terrain_3_3]:default_base
+sim_avail 	            = true
+surge 		            = 1
+bandit 		            = 1
+renegade				= 2
+all				= 1
+
+[mar_smart_terrain_3_7]:weak_lair
+sim_avail 	            = true
+stalker 		        = 1
+csky			        = 1
+ecolog			        = 1
+resource 		        = 1
+
+[mar_smart_terrain_3_10]:weak_lair
+sim_avail 	            = true
+
+;NW village, military
+[mar_smart_terrain_4_5]:weak_lair
+sim_avail 	            = true
+surge 		            = 1
+bandit 		            = 1
+lair 		            = 1
+stalker 		        = 1
+renegade				= 2
+all				= 1
+
+[mar_smart_terrain_4_7]:weak_lair
+sim_avail 	            = true
+bandit 			        = 1
+stalker 		        = 1
+renegade				= 1
+
+;Center, pumping station
+[mar_smart_terrain_5_8]:default_base
+sim_avail 	            = {+pump_station_defense_task_smart_reserved} false, true
+ecolog		            = 1
+stalker		            = 1
+bandit		            = 1
+csky		            = 1
+killer		            = 1
+surge 		            = 1
+renegade				= 1
+
+;South, fishing village
+[mar_smart_terrain_5_12]:default_base
+sim_avail 	= {+faction_base_defense_active} false, true
+stalker	                = 1
+ecolog		= 1
+bandit		            = 1
+renegade				= 1
+csky		            = 2
+surge 		            = 1
+lair 		            = 1 
+
+[mar_smart_terrain_6_4]:weak_lair
+sim_avail 	            = true
+
+[mar_smart_terrain_6_7]:weak_lair
+sim_avail 	            = true
+
+[mar_smart_terrain_6_8]:weak_lair
+sim_avail 	            = true
+
+[mar_smart_terrain_6_10]:weak_lair
+sim_avail 	            = true
+
+;South watchtower
+[mar_smart_terrain_6_11]:default_base
+sim_avail 	            = true
+lair 		            = 1 
+csky		            = 1
+bandit 		            = 1
+renegade				= 1
+monster					= 1
+monster_predatory_day 	= 1
+monster_predatory_night = 1
+monster_vegetarian		= 1
+
+[mar_smart_terrain_7_3]:weak_lair
+sim_avail 	            = true
+bandit 			        = 1
+renegade				= 1
+stalker 		        = 1
+
+[mar_smart_terrain_7_7]:weak_lair
+sim_avail 	            = true
+
+[mar_smart_terrain_8_4]:weak_lair
+sim_avail 	            = true
+
+[mar_smart_terrain_8_8]:default_resource
+sim_avail 	            = true
+lair 		            = 1 
+bandit 			        = 1
+renegade				= 1
+ecolog			        = 1
+stalker 		        = 1
+csky			        = 1
+freedom			        = 1
+all				        = 1
+
+[mar_smart_terrain_8_9]:weak_lair
+sim_avail 	            = true
+stalker 		        = 1
+csky			        = 1
+bandit 			        = 1
+renegade				= 1
+
+;East temple
+[mar_smart_terrain_8_11]:default_base
+sim_avail 	            = true
+surge 		            = 1
+bandit 			        = 1
+renegade				= 1
+stalker 		        = 1
+csky			        = 2
+ecolog			        = 1
+stalker 		        = 1
+
+;NE car repair, military
+[mar_smart_terrain_10_5]:default_base
+sim_avail 	= true
+renegade		= 3
+bandit 		= 1
+surge 		= 1
+monster				= 1
+monster_predatory_day 		= 1
+monster_predatory_night 	= 1
+monster_vegetarian		= 1
+
+[mar_smart_terrain_10_7]:weak_lair
+sim_avail 	            = true
+
+[mar_smart_terrain_10_10]:default_resource
+sim_avail 	            = true
+lair 		            = 1 
+ecolog			        = 1
+stalker 		        = 1
+csky			        = 1
+
+[mar_smart_terrain_11_3]:default_resource
+sim_avail 	            = true
+lair 		            = 1 
+
+;NE village, exit1 to Escape
+[mar_smart_terrain_11_11]:default_base
+sim_avail 	            = true
+surge 		            = 1
+stalker		            = 1
+bandit		            = 1 
+renegade				= 1
+csky 		            = 1
+ecolog		            = 1 
+killer		            = 1
+freedom		            = 1
+dolg		            = 1
+
+;NE village, exit2 to Escape
+[mar_smart_terrain_12_2]:default_resource
+sim_avail 	            = true
+lair			        = 1
+base                    = 1
+surge 		            = 1
+stalker 		        = 1
+bandit 			        = 1
+renegade				= 1
+csky 		            = 1
+ecolog		            = 1 
+
+[mar_smart_terrain_5_10]:weak_lair
+sim_avail 	            = true
+lair 		            = 1 
+
+[mar_smart_terrain_9_10]:weak_lair
+sim_avail 	            = true
+lair 		            = 1 
+
+[mar_smart_terrain_csky_respawn]:weak_lair
+sim_avail 	            = true
+lair 		            = 1 
+csky		            = 1
+
+;---------	MARSH UNIQUE SQUADS	--------
+[mar_doctor_squad]:default_squad
+sim_avail = false
+
+[mar_smart_terrain_base_dog_doctor_squad]:default_squad
+sim_avail = false
+
+[mar_base_stalker_barmen_squad]:default_squad
+sim_avail = false
+
+[mar_base_owl_stalker_trader_squad]:default_squad
+sim_avail = false
+
+[mar_base_stalker_tech_squad]:default_squad
+sim_avail = false
+
+[mar_smart_terrain_base_lager_squad]:default_squad
+sim_avail = false
+
+[mar_smart_terrain_base_stalker_leader_marsh_squad]:default_squad
+sim_avail = false
+
+[ecolog_companion_task_1]:default_squad
+sim_avail = true 
+
+[mar_smart_terrain_doc_squad]:default_squad
+sim_avail = false
+
+[mar_smart_terrain_doc_dog_squad]:default_squad
+sim_avail = false

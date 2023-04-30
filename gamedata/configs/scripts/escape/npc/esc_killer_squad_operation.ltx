@@ -1,0 +1,157 @@
+---------------Глава группы-----------------
+[logic@esc_killer_glava_squad]
+suitable = {=check_npc_name(esc_killer_atp_2)} true
+prior = 200
+active = remark@esc_killer_glava_squad
+
+[remark@esc_killer_glava_squad]
+anim = threat_danger
+target = story | actor
+danger = danger
+use_camp = false
+on_info = {+esc_killer_raven_operation_start} remark@esc_killer_glava_squad_fire
+combat_ignore_cond = true
+combat_ignore_keep_when_attacked = true
+invulnerable = true
+gather_items_enabled = false
+help_wounded_enabled = false
+corpse_detection_enabled = false
+meet = no_meet
+
+[remark@esc_killer_glava_squad_fire]
+anim = patrol_fire
+target = story | esc_squad_kpp
+on_info = {+esc_squad_kpp_bandits_dead} walker@esc_killer_glava_squad_end
+combat_ignore_cond = false
+combat_ignore_keep_when_attacked = false
+invulnerable = false
+gather_items_enabled = false
+help_wounded_enabled = false
+corpse_detection_enabled = false
+meet = no_meet
+
+[walker@esc_killer_glava_squad_end]
+path_walk = walker_1_walk
+path_look = walker_1_look
+
+---------------Группа штурма-----------------
+[logic@esc_killer_squad_1]
+suitable = {=check_npc_name(esc_killer_atp_1)} true
+prior = 200
+active = remark@esc_killer_squad_1
+
+[remark@esc_killer_squad_1]
+anim = threat_danger
+target = story | actor
+danger = danger
+use_camp = false
+on_info = {+esc_killer_raven_operation_start} remark@esc_killer_squad_1_fire
+combat_ignore_cond = true
+combat_ignore_keep_when_attacked = true
+invulnerable = true
+gather_items_enabled = false
+help_wounded_enabled = false
+corpse_detection_enabled = false
+meet = no_meet
+
+[remark@esc_killer_squad_1_fire]
+anim = patrol_fire
+target = story | esc_squad_kpp
+on_info = {+esc_squad_kpp_bandits_dead} walker@esc_killer_squad_1_end
+combat_ignore_cond = false
+combat_ignore_keep_when_attacked = false
+invulnerable = false
+gather_items_enabled = false
+help_wounded_enabled = false
+corpse_detection_enabled = false
+meet = no_meet
+
+[walker@esc_killer_squad_1_end]
+path_walk = walker_2_walk
+path_look = walker_2_look
+
+
+[logic@esc_killer_squad_2]
+suitable = {=check_npc_name(esc_killer_atp_1)} true
+prior = 200
+active = remark@esc_killer_squad_2
+
+[remark@esc_killer_squad_2]
+anim = threat_danger
+target = story | actor
+danger = danger
+use_camp = false
+on_info = {+esc_killer_raven_operation_start} remark@esc_killer_squad_2_fire
+combat_ignore_cond = true
+combat_ignore_keep_when_attacked = true
+invulnerable = true
+gather_items_enabled = false
+help_wounded_enabled = false
+corpse_detection_enabled = false
+meet = no_meet
+
+[remark@esc_killer_squad_2_fire]
+anim = patrol_fire
+target = story | esc_squad_kpp
+on_info = {+esc_squad_kpp_bandits_dead} walker@esc_killer_squad_2_end
+combat_ignore_cond = false
+combat_ignore_keep_when_attacked = false
+invulnerable = false
+gather_items_enabled = false
+help_wounded_enabled = false
+corpse_detection_enabled = false
+meet = no_meet
+
+[walker@esc_killer_squad_2_end]
+path_walk = walker_4_walk
+path_look = walker_4_look
+
+
+[logic@esc_killer_squad_3]
+suitable = {=check_npc_name(esc_killer_atp_1)} true
+prior = 200
+active = remark@esc_killer_squad_3
+
+[remark@esc_killer_squad_3]
+anim = threat_danger
+target = story | actor
+danger = danger
+use_camp = false
+on_info = {+esc_killer_raven_operation_start} remark@esc_killer_squad_3_fire
+combat_ignore_cond = true
+combat_ignore_keep_when_attacked = true
+invulnerable = true
+gather_items_enabled = false
+help_wounded_enabled = false
+corpse_detection_enabled = false
+meet = no_meet
+
+[remark@esc_killer_squad_3_fire]
+anim = patrol_fire
+target = story | esc_squad_kpp
+on_info = {+esc_squad_kpp_bandits_dead} walker@esc_killer_squad_3_end
+combat_ignore_cond = false
+combat_ignore_keep_when_attacked = false
+invulnerable = false
+gather_items_enabled = false
+help_wounded_enabled = false
+corpse_detection_enabled = false
+meet = no_meet
+
+[walker@esc_killer_squad_3_end]
+path_walk = walker_5_walk
+path_look = walker_5_look
+
+[move@from_actor]
+invulnerable                 = false
+move_pursue_actor            = true
+move_pursue_look_subject     = actor 
+move_pursue_range            = 5|10
+move_pursue_state_stand      = wait_na
+move_pursue_state_move       = walk_noweap                     
+move_pursue_state_overtake   = run
+meet = no_meet
+gather_items_enabled = false
+corpse_detection_enabled = false
+combat_ignore_keep_when_attacked = false 
+combat_ignore_cond = false

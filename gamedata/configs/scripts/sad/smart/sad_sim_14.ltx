@@ -1,0 +1,31 @@
+[smart_terrain];	sad_sim_12 - Oleg place
+squad_id = 21
+max_population = 1
+;respawn_params = respawn
+arrive_dist = 40
+respawn_idle = 172800
+
+[respawn]
+spawn_stalker@merc
+;spawn_stalker@stalkers
+
+[spawn_stalker@merc]
+spawn_squads = merc_sim_squad_advanced
+spawn_num = {+sad_sim_14_oleg_squad_dead +sad_start_merc_simulation} 1, 0
+
+[spawn_stalker@stalkers]
+spawn_squads = stalker_sim_squad_veteran
+spawn_num = {+sad_sim_14_oleg_squad_dead +sad_actor_enemy_to_someone} 1, 0
+
+
+[exclusive]
+oleg = sad\sad_sim_14_jops.ltx
+oleg_member_1 = sad\sad_sim_14_jops.ltx
+oleg_member_2 = sad\sad_sim_14_jops.ltx
+oleg_member_3 = sad\sad_sim_14_jops.ltx
+oleg_member_4 = sad\sad_sim_14_jops.ltx
+
+job_1 = sad\sad_sim_14_sim_jobs.ltx
+job_2 = sad\sad_sim_14_sim_jobs.ltx
+job_3 = sad\sad_sim_14_sim_jobs.ltx
+job_4 = sad\sad_sim_14_sim_jobs.ltx

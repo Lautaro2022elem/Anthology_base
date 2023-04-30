@@ -1,0 +1,35 @@
+[rookie_pole_task_1]
+icon = ui_icons_find_item35
+prior = 10
+storyline = false
+title = rookie_pole_task_1_name
+descr = rookie_pole_task_1_text
+fetch_func = %=setup_generic_fetch_task(rookie_pole_task_1_fetch:1:wpn_saiga_rookie_pole)%
+stage_complete = 1
+status_functor = actor_has_fetch_item
+target = {=actor_has_item(wpn_saiga_rookie_pole)} fat_rookie_in_the_house_pole, pol_smart_terrain_1_2_anomaly_spot
+on_init = %=spawn_wpn_saiga_rookie_pole%
+task_complete_descr = rookie_pole_task_1_fetch_finish
+on_complete = %+rookie_pole_task_1_done =remove_fetch_item(rookie_pole_task_1_fetch) =inc_task_stage(rookie_pole_task_1)%
+precondition = {-rookie_pole_task_1_done} true, false
+condlist_0 = {+fat_rookie_in_the_house_pole_squad_destroyed} fail, {+rookie_pole_task_1_dlg_1} complete
+reward_item = af_electra_flash
+
+[rookie_pole_task_2]
+icon = ui_icons_pole_factory37
+prior = 10
+storyline = false
+title = {+can_talk_to_fat_stalker} rookie_pole_task_2_name_3, {+boss_controller_pole_dead} rookie_pole_task_2_name_3_0, {+boss_controller_pole_spawn} rookie_pole_task_2_name_2, {=actor_has_item(pole_factory_doc_1) =actor_has_item(pole_factory_doc_2) =actor_has_item(pole_factory_doc_3) =actor_has_item(pole_factory_doc_4)} rookie_pole_task_2_name_1, rookie_pole_task_2_name
+descr = rookie_pole_task_2_text
+target = {+can_talk_to_fat_stalker} fat_rookie_in_the_house_pole, {+boss_controller_pole_dead} pol_spot_house_fat_stalker, {+boss_controller_pole_spawn} pole_factory_complex_spot, {=actor_has_item(pole_factory_doc_1) =actor_has_item(pole_factory_doc_2) =actor_has_item(pole_factory_doc_3) =actor_has_item(pole_factory_doc_4)} pol_spot_house_fat_stalker, pole_factory_complex_spot
+condlist_0 = {+fat_rookie_in_the_house_pole_squad_destroyed} fail, {+morning_here_is_wake_up_pole_task_2} fail, {+take_barman_doc_from_factory_pole} fail, {+take_barman_doc_from_factory_pole} fail, {+rookie_pole_task_2_dlg_2} complete
+
+[rookie_pole_task_3]
+icon = ui_icons_kill_stalker6
+prior = 25
+storyline = false
+on_init = %=create_squad(fat_rookie_in_the_house_pole_purpose_squad:pol_smart_terrain_1_1)%
+title = {+rookie_pole_task_3_dlg_1} rookie_pole_task_3_name_1, rookie_pole_task_3_name
+descr = rookie_pole_task_3_text
+target = fat_rookie_in_the_house_pole_purpose
+condlist_0 = {+fat_rookie_in_the_house_pole_squad_destroyed} fail, {+fat_rookie_in_the_house_pole_purpose_squad_dead} complete

@@ -1,0 +1,19 @@
+[logic]
+active = sr_idle@shmiga_shcool_spawn
+
+[sr_idle@shmiga_shcool_spawn]
+on_info = {+blck_val_key_to_prison_spawn_end =is_day} sr_idle@shmiga_shcool_spawn_start
+
+[sr_idle@shmiga_shcool_spawn_start]
+on_timer = 1000 | sr_idle@shmiga_shcool_sends_sms %=spawn_object(blck_val_shmiga_shcool:blck_val_freedom_miklucha_walk) =create_squad(blck_val_a35_bandit_shcool_squad:blck_val_a35)%
+
+[sr_idle@shmiga_shcool_sends_sms]
+on_timer = 5000 | sr_idle@smiga_shcool_sms_send
+
+[sr_idle@smiga_shcool_sms_send]
+on_info = {=is_day -sleep_active} sr_idle@shmiga_shcool_give_quest %=blck_val_smiga_shcool_sms_1%
+
+[sr_idle@shmiga_shcool_give_quest]
+on_timer = 5000 | sr_idle@nil %=give_task(blck_val_shmiga_revard_quest) +blck_val_actor_meet_provodnik_to_shcool%
+
+[sr_idle@nil]

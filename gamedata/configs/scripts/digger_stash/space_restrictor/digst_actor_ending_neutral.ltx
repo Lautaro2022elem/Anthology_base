@@ -1,0 +1,25 @@
+[logic]
+active = sr_idle@start
+
+[sr_idle@start]
+on_info = {+blck_val_intro_ending_neutral_0_show_start =actor_on_level(digger_stash)} sr_idle@digst_scene_start %=run_postprocess(black:2525:true) =RavenMemmoryStart =turn_on_digst_lamps%
+
+[sr_idle@digst_scene_start]
+on_timer = 4000 | sr_idle@digst_scene_start_1 %=intro_ending_neutral_1%
+
+[sr_idle@digst_scene_start_1]
+on_timer = 600 | sr_idle@digst_scene_start_2 %=stop_postprocess(2525) =ActorEndingScene%
+
+[sr_idle@digst_scene_start_2]
+on_timer = 46500 | sr_idle@digst_scene_start_3 %=run_postprocess(black:2525:true)%
+
+[sr_idle@digst_scene_start_3]
+on_timer = 4500 | sr_idle@digst_scene_start_4 %=show_anomaly(spatial_anomaly)%
+
+[sr_idle@digst_scene_start_4]
+on_timer = 1800 | sr_idle@start_outro %=show_update(update_4_1)%
+
+[sr_idle@start_outro]
+on_timer = 12700 | sr_idle@nil %=start_outro%
+
+[sr_idle@nil]

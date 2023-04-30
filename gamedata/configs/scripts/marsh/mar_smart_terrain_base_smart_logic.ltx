@@ -1,0 +1,451 @@
+[logic@guard_1]
+active = camper@guard_1
+suitable = {!surge_started} true
+prior = 100
+
+[logic@guard_2]
+active = camper@guard_2
+suitable = {!surge_started} true
+prior = 100
+
+[logic@mar_base_animpoint_kamp1]
+active = animpoint@mar_base_animpoint_kamp1
+suitable = {!surge_started} true
+prior = 100
+
+[logic@mar_base_animpoint_kamp2]
+active = animpoint@mar_base_animpoint_kamp2
+suitable = {!surge_started} true
+prior = 100
+
+[logic@mar_base_animpoint_kamp3]
+active = animpoint@mar_base_animpoint_kamp3
+suitable = {!surge_started} true
+prior = 100
+
+[logic@mar_base_animpoint_kamp4]
+active = animpoint@mar_base_animpoint_kamp4
+suitable = {!surge_started} true
+prior = 100
+
+[animpoint@mar_base_animpoint_kamp1]
+cover_name = mar_base_animpoint_kamp1
+use_camp = true
+turn_on_campfire = true
+on_info = {=is_heavy_rain} animpoint@mar_base_animpoint_kamp15
+
+[animpoint@mar_base_animpoint_kamp2]
+cover_name = mar_base_animpoint_kamp2
+use_camp = true
+turn_on_campfire = true
+on_info = {=is_heavy_rain} animpoint@mar_base_animpoint_kamp16
+
+[animpoint@mar_base_animpoint_kamp3]
+cover_name = mar_base_animpoint_kamp3
+use_camp = true
+turn_on_campfire = true
+on_info = {=is_heavy_rain} animpoint@mar_base_animpoint_kamp17
+
+[animpoint@mar_base_animpoint_kamp4]
+cover_name = mar_base_animpoint_kamp4
+use_camp = true
+turn_on_campfire = true
+on_info = {=is_heavy_rain} animpoint@mar_base_animpoint_kamp18
+
+[camper@guard_1]
+path_walk = intro_walk
+path_look = intro_look
+turn_on_campfire = true
+
+[camper@guard_2]
+path_walk = main_walk
+path_look = main_look
+turn_on_campfire = true
+
+[walker@mar_smart_terrain_base_surge_def]
+def_state_standing = sit
+def_state_moving = assault
+combat_ignore_cond = {!is_enemy_actor_or_companion =check_enemy_name(mar_smart_terrain_base_dog_doctor)} true, false
+turn_on_campfire = false
+
+[logic@mar_smart_terrain_base_surge_def]
+suitable = {=surge_started} true
+prior = 100
+
+[logic@mar_smart_terrain_base_surge_work_1]:logic@mar_smart_terrain_base_surge_def
+active = walker@mar_smart_terrain_base_surge_work_1
+
+[logic@mar_smart_terrain_base_surge_work_2]:logic@mar_smart_terrain_base_surge_def
+active = walker@mar_smart_terrain_base_surge_work_2
+
+[logic@mar_smart_terrain_base_surge_work_3]:logic@mar_smart_terrain_base_surge_def
+active = walker@mar_smart_terrain_base_surge_work_3
+
+[logic@mar_smart_terrain_base_surge_work_4]:logic@mar_smart_terrain_base_surge_def
+active = walker@mar_smart_terrain_base_surge_work_4
+
+[logic@mar_smart_terrain_base_surge_work_5]:logic@mar_smart_terrain_base_surge_def
+active = walker@mar_smart_terrain_base_surge_work_5
+
+[logic@mar_smart_terrain_base_surge_work_6]:logic@mar_smart_terrain_base_surge_def
+active = walker@mar_smart_terrain_base_surge_work_6
+
+[walker@mar_smart_terrain_base_surge_work_1]:walker@mar_smart_terrain_base_surge_def
+path_walk = surge_hide_1_walk
+path_look = surge_hide_1_look
+;out_restr = mar_base_surge_hide_a3
+
+[walker@mar_smart_terrain_base_surge_work_2]:walker@mar_smart_terrain_base_surge_def
+path_walk = surge_hide_2_walk
+path_look = surge_hide_2_look
+;out_restr = mar_base_surge_hide_a3
+
+[walker@mar_smart_terrain_base_surge_work_3]:walker@mar_smart_terrain_base_surge_def
+path_walk = surge_hide_3_walk
+path_look = surge_hide_2_look
+;out_restr = mar_base_surge_hide_a3
+
+[walker@mar_smart_terrain_base_surge_work_4]:walker@mar_smart_terrain_base_surge_def
+path_walk = surge_hide_4_walk
+path_look = surge_hide_3_look
+;out_restr = mar_base_surge_hide_a3
+
+[walker@mar_smart_terrain_base_surge_work_5]:walker@mar_smart_terrain_base_surge_def
+path_walk = surge_hide_5_walk
+path_look = surge_hide_3_look
+;out_restr = mar_base_surge_hide_a3
+
+[walker@mar_smart_terrain_base_surge_work_6]:walker@mar_smart_terrain_base_surge_def
+path_walk = surge_hide_6_walk
+path_look = surge_hide_4_look
+;out_restr = mar_base_surge_hide_a3
+
+;------------------------------
+;------- Mutant swarm ----------
+;------------------------------
+
+[logic@faction_base_defense_enemy1]
+active = mob_home@faction_base_defense_enemy1
+suitable = {=target_squad_name(faction_base_defense_flesh_squad)} true
+monster_job = true
+prior = 200
+
+[mob_home@faction_base_defense_enemy1]
+path_home = home_attackers
+home_min_radius = 1
+home_max_radius = 30
+aggressive = true
+panic = 0
+
+[logic@faction_base_defense_enemy2]
+active = mob_home@faction_base_defense_enemy2
+suitable = {=target_squad_name(faction_base_defense_boar_squad)} true
+monster_job = true
+prior = 200
+
+[mob_home@faction_base_defense_enemy2]
+path_home = home_attackers
+aggressive = true
+home_min_radius = 1
+home_max_radius = 30
+panic = 0
+
+[logic@faction_base_defense_enemy3]
+active = mob_home@faction_base_defense_enemy3
+suitable = {=target_squad_name(faction_base_defense_dog_squad)} true
+monster_job = true
+prior = 200
+
+[mob_home@faction_base_defense_enemy3]
+path_home = home_attackers
+home_min_radius = 1
+home_max_radius = 30
+aggressive = true
+panic = 0
+
+
+;mlr
+
+[logic@mar_base_animpoint_kamp5]
+active = animpoint@mar_base_animpoint_kamp5
+suitable = {!surge_started} true
+prior = 100
+
+[logic@mar_base_animpoint_kamp6]
+active = animpoint@mar_base_animpoint_kamp6
+suitable = {!surge_started} true
+prior = 100
+
+[logic@mar_base_animpoint_kamp7]
+active = animpoint@mar_base_animpoint_kamp7
+suitable = {!surge_started} true
+prior = 100
+
+[logic@mar_base_animpoint_kamp8]
+active = animpoint@mar_base_animpoint_kamp8
+suitable = {!surge_started} true
+prior = 100
+
+[logic@mar_base_animpoint_kamp9]
+active = animpoint@mar_base_animpoint_kamp9
+suitable = {!surge_started} true
+prior = 100
+
+[logic@mar_base_animpoint_kamp10]
+active = animpoint@mar_base_animpoint_kamp10
+suitable = {!surge_started} true
+prior = 100
+
+[logic@mar_base_animpoint_kamp11]
+active = animpoint@mar_base_animpoint_kamp11
+suitable = {!surge_started} true
+prior = 100
+
+[animpoint@mar_base_animpoint_kamp5]
+cover_name = mar_smart_terrain_base_animpoint_1
+use_camp = true
+turn_on_campfire = true
+on_info = {=is_heavy_rain} animpoint@mar_base_animpoint_kamp12
+
+[animpoint@mar_base_animpoint_kamp6]
+cover_name = mar_smart_terrain_base_animpoint_2
+use_camp = true
+turn_on_campfire = true
+on_info = {=is_heavy_rain} animpoint@mar_base_animpoint_kamp13
+
+[animpoint@mar_base_animpoint_kamp7]
+cover_name = mar_smart_terrain_base_animpoint_3
+use_camp = true
+turn_on_campfire = true
+on_info = {=is_heavy_rain} animpoint@mar_base_animpoint_kamp14
+
+[animpoint@mar_base_animpoint_kamp8]
+cover_name = mar_smart_terrain_base_animpoint_4
+use_camp = true
+
+[animpoint@mar_base_animpoint_kamp9]
+cover_name = mar_smart_terrain_base_animpoint_5
+use_camp = true
+
+[animpoint@mar_base_animpoint_kamp10]
+cover_name = mar_smart_terrain_base_animpoint_6
+use_camp = true
+
+[animpoint@mar_base_animpoint_kamp11]
+cover_name = mar_smart_terrain_base_animpoint_7
+use_camp = true
+
+;mlr rain
+
+[logic@mar_base_animpoint_kamp12]
+active = animpoint@mar_base_animpoint_kamp12
+suitable = {!surge_started} true
+prior = 100
+
+[logic@mar_base_animpoint_kamp13]
+active = animpoint@mar_base_animpoint_kamp13
+suitable = {!surge_started} true
+prior = 100
+
+[logic@mar_base_animpoint_kamp14]
+active = animpoint@mar_base_animpoint_kamp14
+suitable = {!surge_started} true
+prior = 100
+
+[logic@mar_base_animpoint_kamp15]
+active = animpoint@mar_base_animpoint_kamp15
+suitable = {!surge_started} true
+prior = 100
+
+[logic@mar_base_animpoint_kamp16]
+active = animpoint@mar_base_animpoint_kamp16
+suitable = {!surge_started} true
+prior = 100
+
+[logic@mar_base_animpoint_kamp17]
+active = animpoint@mar_base_animpoint_kamp17
+suitable = {!surge_started} true
+prior = 100
+
+[logic@mar_base_animpoint_kamp18]
+active = animpoint@mar_base_animpoint_kamp18
+suitable = {!surge_started} true
+prior = 100
+
+[animpoint@mar_base_animpoint_kamp12]
+cover_name = mar_base_animpoint_kamp5
+use_camp = true
+on_info = {!is_heavy_rain} animpoint@mar_base_animpoint_kamp5
+meet = meet_random
+
+[animpoint@mar_base_animpoint_kamp13]
+cover_name = mar_base_animpoint_kamp6
+use_camp = true
+on_info = {!is_heavy_rain} animpoint@mar_base_animpoint_kamp6
+
+[animpoint@mar_base_animpoint_kamp14]
+cover_name = mar_base_animpoint_kamp7
+use_camp = true
+on_info = {!is_heavy_rain} animpoint@mar_base_animpoint_kamp7
+meet = meet_random
+
+[animpoint@mar_base_animpoint_kamp15]
+cover_name = mar_base_animpoint_kamp8
+use_camp = true
+on_info = {!is_heavy_rain} animpoint@mar_base_animpoint_kamp1
+meet = meet_random
+
+[animpoint@mar_base_animpoint_kamp16]
+cover_name = mar_base_animpoint_kamp9
+use_camp = true
+meet = meet_random
+on_info = {!is_heavy_rain} animpoint@mar_base_animpoint_kamp2
+
+[animpoint@mar_base_animpoint_kamp17]
+cover_name = mar_base_animpoint_kamp10
+use_camp = true
+on_info = {!is_heavy_rain} animpoint@mar_base_animpoint_kamp3
+
+[animpoint@mar_base_animpoint_kamp18]
+cover_name = mar_base_animpoint_kamp11
+use_camp = true
+meet = meet_random
+on_info = {!is_heavy_rain} animpoint@mar_base_animpoint_kamp4
+
+
+[logic@base_walker_1]
+active = walker@base_walker_1
+suitable = {!surge_started} true
+prior = 200
+
+[walker@base_walker_1]
+path_walk = walker_1_walk
+path_look = walker_1_look
+meet = meet_random
+on_timer = 50000 | walker@rimsa_snork
+
+[walker@rimsa_snork]		; shooting snork
+path_walk = snork_target_1
+path_look = snork_target_2
+on_timer = 20000 | walker@base_walker_1
+
+[logic@base_walker_2]
+active = walker@base_walker_2
+suitable = {!surge_started} true
+prior = 50
+
+[walker@base_walker_2]
+path_walk = walker_2_walk
+path_look = walker_2_look
+meet = meet_random
+
+[logic@base_walker_3]
+active = walker@base_walker_3
+suitable = {!surge_started} true
+prior = 50
+
+[walker@base_walker_3]
+path_walk = walker_3_walk
+path_look = walker_3_look
+meet = meet_random
+
+[logic@base_walker_4]
+active = walker@base_walker_4
+suitable = {!surge_started} true
+prior = 50
+
+[walker@base_walker_4]
+path_walk = walker_4_walk
+path_look = walker_4_look
+meet = meet_random
+
+[logic@base_walker_5]
+active = walker@base_walker_5
+suitable = {!surge_started} true
+prior = 50
+
+[walker@base_walker_5]
+path_walk = walker_5_walk
+path_look = walker_5_look
+meet = meet_random
+
+[logic@base_walker_6]
+active = walker@base_walker_6
+suitable = {!surge_started} true
+prior = 50
+
+[walker@base_walker_6]
+path_walk = walker_6_walk
+path_look = walker_6_look
+meet = meet_random
+
+[logic@base_walker_7]
+active = walker@base_walker_7
+suitable = {!surge_started} true
+prior = 50
+
+[walker@base_walker_7]
+path_walk = walker_7_walk
+path_look = walker_7_look
+meet = meet_random
+
+[logic@base_walker_8]
+active = walker@base_walker_8
+suitable = {!surge_started} true
+prior = 50
+
+[walker@base_walker_8]
+path_walk = walker_8_walk
+path_look = walker_8_look
+meet = meet_random
+
+
+; ----------------------------------------------------------------------------- 3 -turnik
+[logic@mar_base_animpoint_turnik]
+suitable = {!surge_started} true
+active = animpoint@animp_3
+prior = 250
+
+[animpoint@animp_3]
+cover_name = mar_base_1_animp_turnik
+use_camp = true
+on_info = {=is_rain} animpoint@animp_rain_3
+on_game_timer = 750 | animpoint@3_turnik
+
+[animpoint@3_turnik]
+avail_animations = turnik
+cover_name = mar_base_2_animp_turnik
+reach_movement = walk_noweap
+use_camp = false
+meet = no_meet
+on_info = {=is_rain} animpoint@animp_rain_3
+on_info2 = {=animpoint_reached} animpoint@3_turnik_anim
+
+[animpoint@3_turnik_anim]
+avail_animations = turnik
+cover_name = mar_base_2_animp_turnik
+reach_movement = walk_noweap
+meet = no_meet
+use_camp = false
+on_game_timer = 200 | animpoint@animp_3
+gather_items_enabled = false
+help_wounded_enabled = false
+corpse_detection_enabled = false
+
+[animpoint@animp_rain_3]
+cover_name = mar_base_3_animp_turnik
+on_info = {!is_rain} animpoint@animp_3
+
+
+[meet_random]
+close_anim 		= nil
+close_victim 	= nil
+far_anim 		= nil
+far_victim 		= nil
+close_distance  = 0
+far_distance 	= 0
+close_snd_distance = 6
+abuse           = false
+use = false
+allow_break = false
+meet_on_talking = false

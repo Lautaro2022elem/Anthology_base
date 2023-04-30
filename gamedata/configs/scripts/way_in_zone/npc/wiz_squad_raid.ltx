@@ -1,0 +1,38 @@
+[logic@wiz_raider_stalker_1]
+active = walker@wiz_raider_stalker_1
+suitable = {=check_npc_name(wiz_raider_stalker_1)} true
+prior = 75
+
+[logic@wiz_raider_stalker_2]
+active = walker@wiz_raider_stalker_2
+suitable = {=check_npc_name(wiz_raider_stalker_2)} true
+prior = 90
+
+[logic@wiz_raider_stalker_3]
+active = walker@wiz_raider_stalker_3
+suitable = {=check_npc_name(wiz_raider_stalker_3)} true
+prior = 90
+
+[walker@wiz_raider_stalker_1]
+path_walk = raider_1_walk
+path_look = raider_1_look
+def_state_moving = assault
+invulnerable = true
+use_camp = false
+meet = no_meet
+
+[walker@wiz_raider_stalker_2]
+path_walk = raider_2_walk
+path_look = raider_2_look
+def_state_moving = assault
+invulnerable = true
+use_camp = false
+meet = no_meet
+
+[walker@wiz_raider_stalker_3]
+path_walk = raider_3_walk
+path_look = raider_3_look
+def_state_moving = assault
+invulnerable = true
+use_camp = false
+meet = no_meet

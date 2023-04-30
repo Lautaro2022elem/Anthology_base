@@ -1,0 +1,43 @@
+[logic@zom_1]
+suitable = {=check_npc_name(sim_default_zombied)} true
+active = walker@1
+prior = 120
+
+[logic@zom_2]:logic@zom_1
+active = walker@2
+
+[logic@zom_3]:logic@zom_1
+active = walker@3
+
+[logic@zom_4]:logic@zom_1
+active = walker@4
+
+[logic@zom_5]:logic@zom_1
+active = walker@5
+
+[logic@zom_6]:logic@zom_1
+active = walker@6
+
+[walker@1]
+path_walk = zombi_walk_1
+out_restr = sad_psi_cave_restrictor
+
+[walker@2]
+path_walk = zombi_walk_2
+out_restr = sad_psi_cave_restrictor
+
+[walker@3]
+path_walk = zombi_walk_3
+out_restr = sad_psi_cave_restrictor
+
+[walker@4]
+path_walk = zombi_walk_4
+out_restr = sad_psi_cave_restrictor
+
+[walker@5]
+path_walk = zombi_walk_5
+out_restr = sad_psi_cave_restrictor
+
+[walker@6]
+path_walk = zombi_walk_6
+out_restr = sad_psi_cave_restrictor

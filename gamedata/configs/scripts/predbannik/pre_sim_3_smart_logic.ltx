@@ -1,0 +1,118 @@
+[logic@pre_toad]
+suitable = {=check_npc_name(pre_toad)} true
+prior = 200
+trade = items\trade\trade_stalker_sidorovich.ltx
+active = animpoint@pre_toad
+level_spot = trader
+can_select_weapon = false
+
+[animpoint@pre_toad]
+cover_name = pre_sim_3_trader
+use_camp = false
+meet = meet@pre_toad
+combat_ignore_cond = {=actor_enemy =check_enemy_name(actor)} false, true
+combat_ignore_keep_when_attacked = true
+invulnerable = {!actor_enemy} true, false
+reach_distance = 10
+gather_items_enabled = false
+help_wounded_enabled = false
+corpse_detection_enabled = false
+enemy_ignore_cond = {=actor_enemy =check_enemy_name(actor)} false, true
+
+[meet@pre_toad]
+close_snd_hello = toad_meet
+close_snd_bye = toad_bye
+close_anim 		= nil
+close_victim 	= nil
+far_anim 		= nil
+far_victim 		= nil
+close_distance  = 0
+far_distance 	= 0
+close_snd_distance = 3
+use = {=actor_enemy} false, true
+meet_on_talking = false
+allow_break = false
+
+
+[logic@pre_sim_3_camp_work_1]
+active = animpoint@pre_sim_3_camp_work_1
+prior = 45
+
+[logic@pre_sim_3_camp_work_2]
+active = animpoint@pre_sim_3_camp_work_2
+prior = 45
+
+[logic@pre_sim_3_camp_work_3]
+active = animpoint@pre_sim_3_camp_work_3
+prior = 45
+
+[logic@pre_sim_3_camp_work_4]
+active = animpoint@pre_sim_3_camp_work_4
+prior = 45
+
+[logic@pre_sim_3_camp_work_5]
+active = animpoint@pre_sim_3_camp_work_5
+prior = 45
+
+[logic@pre_sim_3_camp_work_6]
+active = animpoint@pre_sim_3_camp_work_6
+prior = 45
+
+[logic@pre_sim_3_camp_work_7]
+active = animpoint@pre_sim_3_camp_work_7
+prior = 45
+
+[logic@pre_sim_3_camp_work_8]
+active = animpoint@pre_sim_3_camp_work_8
+prior = 45
+
+[animpoint@pre_sim_3_camp_work_1]
+cover_name = pre_sim_3_animpoint_kamp1
+use_camp = true
+turn_on_campfire = true
+
+[animpoint@pre_sim_3_camp_work_2]
+cover_name = pre_sim_3_animpoint_kamp2
+use_camp = true
+turn_on_campfire = true
+
+[animpoint@pre_sim_3_camp_work_3]
+cover_name = pre_sim_3_animpoint_kamp3
+use_camp = true
+turn_on_campfire = true
+
+[animpoint@pre_sim_3_camp_work_4]
+cover_name = pre_sim_3_animpoint_kamp4
+use_camp = true
+turn_on_campfire = true
+
+[animpoint@pre_sim_3_camp_work_5]
+cover_name = pre_sim_3_animpoint_kamp5
+use_camp = true
+turn_on_campfire = true
+
+[animpoint@pre_sim_3_camp_work_6]
+cover_name = pre_sim_3_animpoint_kamp6
+use_camp = true
+turn_on_campfire = true
+
+[animpoint@pre_sim_3_camp_work_7]
+cover_name = pre_sim_3_animpoint_kamp7
+use_camp = true
+turn_on_campfire = true
+
+[animpoint@pre_sim_3_camp_work_8]
+cover_name = pre_sim_3_animpoint_kamp8
+use_camp = true
+turn_on_campfire = true
+
+[meet]
+close_snd_hello = nil
+close_snd_bye   = nil
+close_anim 		= nil
+close_victim 	= nil
+far_anim 		= nil
+far_victim 		= nil
+close_distance  = 0
+far_distance 	= 0
+use = true

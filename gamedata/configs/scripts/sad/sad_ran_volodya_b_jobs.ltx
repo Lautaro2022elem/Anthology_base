@@ -1,0 +1,119 @@
+[walker@def]
+gather_items_enabled = false
+help_wounded_enabled = true
+corpse_detection_enabled = false
+wounded = wounded
+
+[patrol@def]:walker@def
+formation = back
+def_state_moving = assault
+combat_ignore_cond = {-sad_volodya_actor_enemy =is_enemy_actor} true, {-sad_volodya_actor_enemy =fighting_dist_ge(30)} true
+on_info = {=npc_in_zone(sad_ran_sr_zone)} %+sad_volodya_arrived_ran%
+
+[meet@comandor]
+close_snd_hello = nil
+close_distance  = 0
+close_victim    = actor
+close_anim 		= nil
+use 			= {=dist_to_actor_ge(2)} false, {=actor_enemy} false, true
+meet_dialog 	= sad_volodya_after
+;trade_enable 	= false
+allow_break 	= false
+
+[meet@member]
+close_snd_hello = nil
+close_distance  = 0
+close_victim    = actor
+close_anim 		= nil
+use 			= {=dist_to_actor_ge(2)} false, {=actor_enemy} false, true
+snd_on_use 		= nil ;meet_use_no_talk_leader
+
+[wounded]
+hp_state 		= 0|wounded_heavy@help_heavy
+hp_state_see 	= 0|wounded_heavy@help_heavy
+hp_victim 		= 0|nil
+hp_fight 		= 0|false
+hp_cover		= 0|false
+
+; -------------------------------------------------------------------------------------------------------------------------------------------- Volodya
+[logic@volodya_b_1]
+active = remark@volodya
+suitable = { =target_squad_name(sad_volodya_the_big_squad) =is_squad_commander +sad_ran_cowboy_gone } true
+prior = 200
+on_death = death
+on_hit = hit
+post_combat_time = 0, 0
+
+[remark@volodya]
+on_info = animpoint@volodya
+
+[animpoint@volodya]:walker@def
+reach_movement = run
+cover_name = sad_ran_animp_leader_surge
+use_camp = false
+meet = meet@comandor
+
+; -------------------------------------------------------------------------------------------------------------------------------------------- 2
+[logic@volodya_b_2]
+active = remark@2
+suitable = { =target_squad_name(sad_volodya_the_big_squad) !is_squad_commander +sad_ran_cowboy_gone } true
+prior = 180
+on_death = death@member
+on_hit = hit
+post_combat_time = 0, 0
+
+[remark@2]
+on_info = animpoint@2_1
+
+[animpoint@2_1]:walker@def
+cover_name = sad_ran_podval_table_1
+use_camp = false
+meet = meet@member
+
+; -------------------------------------------------------------------------------------------------------------------------------------------- 3
+[logic@volodya_b_3]
+active = remark@3
+suitable = { =target_squad_name(sad_volodya_the_big_squad) !is_squad_commander +sad_ran_cowboy_gone } true
+prior = 160
+on_death = death@member
+on_hit = hit
+post_combat_time = 0, 0
+
+[remark@3]
+on_info = walker@3
+
+[walker@3]:walker@def
+path_walk = balkon_gvard_walk
+path_look = balkon_gvard_look
+meet = no_meet
+
+; -------------------------------------------------------------------------------------------------------------------------------------------- 4
+[logic@volodya_b_4]
+active = remark@4
+suitable = { =target_squad_name(sad_volodya_the_big_squad) !is_squad_commander +sad_ran_cowboy_gone } true
+prior = 170
+on_death = death@member
+on_hit = hit
+post_combat_time = 0, 0
+
+[remark@4]
+on_info = animpoint@4_1
+
+[animpoint@4_1]:walker@def
+cover_name = sad_ran_podval_table_2
+use_camp = false
+meet = meet@member
+
+; --------------------------------------------------------------------------------------------------------------------------------------------
+[death]
+on_info = {=killed_by_actor} %+sad_volodya_dead +sad_volodya_actor_enemy%, %+sad_volodya_dead%
+
+[death@member]
+on_info = {=killed_by_actor} %+sad_volodya_actor_enemy%
+
+[hit]
+on_info = {=actor_enemy} %+sad_volodya_actor_enemy%
+
+
+
+

@@ -1,0 +1,392 @@
+<?xml version='1.0' encoding="windows-1251"?>
+
+<game_information_portions>
+  
+
+  <!-- Общие -->
+
+  <info_portion id="esc_tech_instruments_task_end"></info_portion>
+  <info_portion id="esc_tech_tech_instruments_start"></info_portion>
+  <info_portion id="esc_tech_all_instruments_brought"></info_portion>
+  <info_portion id="esc_tech_dicline_once"></info_portion>
+  <info_portion id="esc_tech_instrument_1_brought"></info_portion>
+  <info_portion id="esc_tech_instrument_2_brought"></info_portion>
+  <info_portion id="esc_tech_instrument_3_brought"></info_portion>
+  
+  
+  <info_portion id="esc_order_ready_task"></info_portion>
+  <info_portion id="esc_order_in_process"></info_portion>
+  <info_portion id="esc_order_refused"></info_portion>
+
+
+  
+  <info_portion id="esc_wolf_about_you_info"></info_portion>
+  <info_portion id="esc_wolf_about_zone_info"></info_portion>
+  <info_portion id="esc_stalker_mechanic_about_you_info"></info_portion>
+  <info_portion id="esc_stalker_trader_about_you_info"></info_portion>
+  <info_portion id="esc_barman_patogen_about_zone_info"></info_portion>
+  <info_portion id="esc_leader_shaman_joining_a_clan_failure_info"></info_portion>
+  <info_portion id="esc_leader_shaman_joining_a_clan_complite_info_dostypa"></info_portion>
+
+  
+  <info_portion id="esc_quest_shadowing_shaman_dialog_and"></info_portion>
+  <info_portion id="esc_quest_shadowing_soer_enemy"></info_portion>
+  <info_portion id="esc_quest_shadowing_shaman"></info_portion>
+  <info_portion id="esc_quest_shadowing_soer_dialog_and"></info_portion>
+  <info_portion id="esc_quest_shadowing_shaman_complite_dialog_and"></info_portion>
+  <info_portion id="esc_quest_shadowing_complite"></info_portion>
+  <info_portion id="esc_quest_fighting_for_territory_open"></info_portion>
+  <info_portion id="esc_quest_fighting_for_territory_shaman_dialog_and"></info_portion>
+  <info_portion id="esc_quest_fighting_for_territory_kusto_dialog_and"></info_portion>
+  <info_portion id="esc_quest_fighting_for_territory_kill_band"></info_portion>
+  <info_portion id="esc_quest_fighting_for_territory_reversed"></info_portion>
+  <info_portion id="esc_squad_atp_quest_bandits_dead"></info_portion>
+  <info_portion id="esc_quest_fighting_for_territory_complite"></info_portion>
+  <info_portion id="esc_quest_shadowing_fail"></info_portion>
+  <info_portion id="esc_quest_fighting_for_territory_fail"></info_portion>
+  
+  
+  
+   <info_portion id="esc_order_ready"></info_portion>
+   <info_portion id="esc_ordered_item_2_2"></info_portion>
+   <info_portion id="esc_ordered_item_3_3"></info_portion>
+   <info_portion id="esc_ordered_item_4_2"></info_portion>
+   <info_portion id="esc_ordered_item_4_3"></info_portion>
+   <info_portion id="esc_ordered_item_5_1"></info_portion>
+   <info_portion id="esc_ordered_item_6_1"></info_portion>
+   <info_portion id="esc_processing_category_2"></info_portion>
+   <info_portion id="esc_processing_category_5"></info_portion>
+   <info_portion id="esc_processing_category_6"></info_portion>
+   <info_portion id="esc_processing_category_3"></info_portion>
+   <info_portion id="esc_ordered_item_3_1"></info_portion>
+   <info_portion id="esc_ordered_item_2_3"></info_portion>
+   <info_portion id="esc_ordered_item_7_1"></info_portion>
+   <info_portion id="esc_processing_category_7"></info_portion>
+   <info_portion id="esc_processing_category_4"></info_portion>
+   <info_portion id="esc_ordered_item_4_1"></info_portion>
+   <info_portion id="esc_ordered_item_3_2"></info_portion>
+   <info_portion id="esc_ordered_item_1_1"></info_portion>
+   <info_portion id="esc_risovalshik_get_order_0"></info_portion>
+   <info_portion id="esc_processing_category_1"></info_portion>
+   <info_portion id="esc_ordered_item_1_2"></info_portion>
+   <info_portion id="esc_told_about_item_1_2"></info_portion>
+   <info_portion id="esc_order_refused"></info_portion>
+   <info_portion id="esc_order_ready"></info_portion>
+   <info_portion id="esc_order_in_process"></info_portion>
+   <info_portion id="esc_told_about_item_1_3"></info_portion>
+   <info_portion id="esc_ordered_item_2_1"></info_portion>
+   <info_portion id="esc_told_about_item_2_1"></info_portion>
+   <info_portion id="esc_told_about_item_2_2"></info_portion>
+   <info_portion id="esc_told_about_item_1_1"></info_portion>
+   <info_portion id="esc_told_about_item_2_3"></info_portion>
+   <info_portion id="esc_told_about_item_3_1"></info_portion>
+   <info_portion id="esc_told_about_item_3_2"></info_portion>
+   <info_portion id="esc_told_about_item_3_3"></info_portion>
+   <info_portion id="esc_told_about_item_4_1"></info_portion>
+   <info_portion id="esc_told_about_item_4_2"></info_portion>
+   <info_portion id="esc_told_about_item_4_3"></info_portion>
+   <info_portion id="esc_told_about_item_5_1"></info_portion>
+   <info_portion id="esc_told_about_item_6_1"></info_portion>
+   <info_portion id="esc_told_about_item_7_1"></info_portion>
+   <info_portion id="esc_order_unavailable"></info_portion>
+   <info_portion id="esc_finished_category_4"></info_portion>
+   <info_portion id="esc_finished_category_5"></info_portion>
+   <info_portion id="esc_finished_categories_all"></info_portion>
+   <info_portion id="esc_processing_category_1"></info_portion>
+   <info_portion id="esc_processing_category_2"></info_portion>
+   <info_portion id="esc_processing_category_3"></info_portion>
+   <info_portion id="esc_processing_category_4"></info_portion>
+   <info_portion id="esc_processing_category_5"></info_portion>
+   <info_portion id="esc_processing_category_6"></info_portion>
+   <info_portion id="esc_processing_category_7"></info_portion>
+   <info_portion id="esc_finished_category_1"></info_portion>
+   <info_portion id="esc_finished_category_2"></info_portion>
+   <info_portion id="esc_finished_category_3"></info_portion>
+   <info_portion id="esc_finished_category_6"></info_portion>
+   <info_portion id="esc_finished_category_7"></info_portion>
+   <info_portion id="esc_risovalshik_intro"></info_portion>
+   
+   
+   <info_portion id="esc_shaman_about_info_dialog_229"></info_portion>
+   <info_portion id="esc_shaman_about_info_dialog_44"></info_portion>
+   <info_portion id="esc_shaman_about_info_dialog_341"></info_portion>
+   <info_portion id="esc_shaman_about_info_dialog_339"></info_portion>
+   <info_portion id="esc_shaman_about_info_dialog_337"></info_portion>
+   <info_portion id="esc_shaman_about_info_dialog_335"></info_portion>
+   <info_portion id="esc_shaman_about_info_dialog_333"></info_portion>
+   <info_portion id="esc_shaman_about_info_dialog_231"></info_portion>
+   <info_portion id="esc_shaman_about_info_dialog_227"></info_portion>
+   <info_portion id="esc_shaman_about_info_dialog_225"></info_portion>
+   <info_portion id="esc_shaman_about_info_dialog_223"></info_portion>
+   <info_portion id="esc_shaman_about_info_dialog_88"></info_portion>
+   <info_portion id="esc_shaman_about_info_dialog_77"></info_portion>
+   <info_portion id="esc_shaman_about_info_dialog_66"></info_portion>
+   <info_portion id="esc_shaman_about_info_dialog_55"></info_portion>
+   <info_portion id="esc_shaman_about_info_dialog_part_1"></info_portion>
+   <info_portion id="esc_shaman_about_info_dialog_part_2"></info_portion>
+   <info_portion id="esc_shaman_about_info_dialog_part_3"></info_portion>  
+   <info_portion id="esc_shaman_about_info_dialog_end"></info_portion>  
+  
+   
+
+   
+   
+   <!-- I начало-->
+   <info_portion id="esc_borland_start_dialog_go_info"></info_portion>
+   <info_portion id="esc_army_shmatco_dialog_kpp_complit"></info_portion>
+   <info_portion id="esc_colonel_kolyazin_prisoner_actor_dialog_complite"></info_portion>
+   <info_portion id="esc_army_shmatco_spawn_info"></info_portion>
+   <info_portion id="esc_actor_barrier_outside"></info_portion>
+   <info_portion id="esc_sr_barrer_zona_save"></info_portion>
+   <info_portion id="infa_esc_sr_barrer_zona_alarm_restiktor"></info_portion>
+   <info_portion id="infa_esc_sr_barrer_zona_danger_restiktor"></info_portion>
+   <info_portion id="esc_sr_barrer_zona_stop_restiktor"></info_portion>
+   <info_portion id="esc_reach_base_complite"></info_portion>
+   <info_portion id="esc_barrer_npc_remove_pat_1"></info_portion>
+   <info_portion id="esc_army_shmatco_dialog_kpp_dialog_actor"></info_portion>
+   
+   
+   <!-- II первые копейки--> 
+   <info_portion id="esc_dialog_wolf_the_first_penny"></info_portion>
+   <info_portion id="esc_dialog_wolf_the_first_penny_okey"></info_portion>
+   <info_portion id="esc_trepach_dialog_robbery_end"></info_portion>
+   <info_portion id="esc_trepach_dialog_robbery_complit"></info_portion>
+   <info_portion id="esc_the_first_penny_inventory"></info_portion>
+   <info_portion id="esc_dialog_wolf_the_first_penny_complite_and"></info_portion>
+   <info_portion id="esc_dialog_wolf_the_first_penny_complite"></info_portion>
+   <info_portion id="esc_the_first_penny_nashel"></info_portion>
+   <info_portion id="esc_the_first_penny_complite"></info_portion>
+   <info_portion id="esc_sr_escape_two_part"></info_portion>
+   <info_portion id="spawn_esc_trepach"></info_portion>
+   <info_portion id="esc_infa_open_quest_trimming"></info_portion>
+  
+   
+      <!-- III плата--> 
+   <info_portion id="esc_dialog_army_chernenco_and"></info_portion>
+   <info_portion id="esc_colonel_kolyazin_quest_fee_and"></info_portion>
+   <info_portion id="esc_colonel_kolyazin_quest_fee_out_habar"></info_portion>
+   <info_portion id="esc_borland_fee_dialog_and"></info_portion>
+   <info_portion id="esc_quest_fee_to_give_money"></info_portion>
+   <info_portion id="eac_quest_fee_complite"></info_portion>
+
+   
+     <!-- IV зачистка--> 
+   <info_portion id="esc_wolf_quest_trimming_dialog_and"></info_portion>
+   <info_portion id="esc_klin_quest_trimming_dialog_and"></info_portion>
+   <info_portion id="esc_squad_quest_monster_1_dead"></info_portion>
+   <info_portion id="esc_squad_quest_monster_2_dead"></info_portion>
+   <info_portion id="esc_wolf_quest_trimming_dialog_complite_and"></info_portion>
+   <info_portion id="eac_quest_trimming_complite"></info_portion>
+   <info_portion id="esc_squad_quest_trimming_spawn"></info_portion>
+    <info_portion id="esc_wolf_quest_insurance_dialog_open"></info_portion>
+   
+   
+    <!-- V Страховка --> 
+   <info_portion id="esc_wolf_quest_insurance_dialog_open"></info_portion>
+   <info_portion id="esc_wolf_quest_insurance_dialog_and"></info_portion>
+   <info_portion id="esc_wolf_quest_insurance_dialog_strahovka"></info_portion>
+   <info_portion id="esc_wolf_quest_insurance_dialog_gg"></info_portion>
+   <info_portion id="esc_wolf_quest_insurance_dialog_complite_and"></info_portion>
+   <info_portion id="esc_quest_insurance_complite"></info_portion>
+
+   
+    <!-- VI охота --> 
+	<info_portion id="esc_wolf_quest_hunting_dialog_open"></info_portion>
+	<info_portion id="esc_wolf_quest_hunting_dialog_and"></info_portion>
+	<info_portion id="esc_quest_talk_wolf_work_complite"></info_portion>
+	<info_portion id="esc_quest_hunting_npc_wood_goblin_dialog_and"></info_portion>
+	<info_portion id="esc_quest_hunting_npc_wood_goblin_hanter_dialog_and"></info_portion>
+	<info_portion id="esc_quest_hunting_npc_wood_goblin_wounded_dialog_and"></info_portion>
+	<info_portion id="esc_quest_hunting_shaman_dialog_and"></info_portion>
+
+
+	<!-- VII работа для новичка --> 
+	<info_portion id="esc_quest_work_for_beginner_sidor_dialog_and"></info_portion>
+	<info_portion id="esc_quest_work_for_beginner_sidor_dialog_open"></info_portion>
+	<info_portion id="esc_quest_work_for_beginner_poisk"></info_portion>
+	<info_portion id="esc_quest_work_for_beginner_sidor_dialog_complite_and"></info_portion>
+	<info_portion id="esc_quest_work_for_beginner_fail"></info_portion>
+	<info_portion id="esc_quest_work_for_beginner_art"></info_portion>
+	<info_portion id="esc_quest_work_for_beginner_complite"></info_portion>
+
+	
+	<!-- VIII плевое дело --> 
+    <info_portion id="esc_quest_trifling_matter_sidor_dialog_open"></info_portion>
+	<info_portion id="esc_quest_trifling_matter_sidor_dialog_and"></info_portion>
+	<info_portion id="esc_quest_trifling_matter_postal"></info_portion>
+	<info_portion id="esc_quest_trifling_matter_sour_garlic"></info_portion>
+	<info_portion id="esc_quest_trifling_matter_sour_dialog_safe"></info_portion>
+	<info_portion id="esc_quest_trifling_sydba"></info_portion>
+	<info_portion id="esc_quest_trifling_matter_sour_dialog_and"></info_portion>
+	<info_portion id="esc_quest_trifling_matter_fail"></info_portion>
+	<info_portion id="esc_quest_trifling_matter_sour_dialog_safe_and"></info_portion>
+	<info_portion id="esc_quest_trifling_matter_compl"></info_portion>
+	<info_portion id="esc_quest_trifling_matter_npc_garlic_dialog_and"></info_portion>
+	<info_portion id="esc_quest_trifling_matter_sidor_dialog_complite_and"></info_portion>
+	<info_portion id="esc_quest_trifling_matter_complite"></info_portion>
+	<info_portion id="esc_quest_trifling_matter_proval"></info_portion>
+	<info_portion id="esc_quest_trifling_matter_sidor_dialog_fail_and"></info_portion>
+	
+	
+	<!-- IX серьезное дело --> 
+	<info_portion id="esc_quest_serious_business_sidor_dialog_open"></info_portion>
+	<info_portion id="esc_quest_serious_business_sidor_dialog_and"></info_portion>
+	<info_portion id="esc_quest_serious_business_search"></info_portion>
+	<info_portion id="esc_quest_serious_business_d1_dialog_and"></info_portion>
+	<info_portion id="esc_quest_serious_business_d2_dialog_and"></info_portion>
+	<info_portion id="esc_quest_serious_business_d3_dialog_and"></info_portion>
+	<info_portion id="esc_quest_serious_business_dybolom"></info_portion>
+	<info_portion id="esc_quest_serious_business_risovalshik"></info_portion>
+	<info_portion id="esc_quest_serious_business_obzor"></info_portion>
+	<info_portion id="esc_quest_serious_business_npc_pate_enemy"></info_portion>
+	<info_portion id="esc_quest_serious_business_npc_pate_dialog_and"></info_portion>
+	<info_portion id="esc_squad_kpp_quest_dead"></info_portion>
+	<info_portion id="esc_quest_serious_business_sidor_dialog_complite_and"></info_portion>
+	<info_portion id="esc_serious_business_complite"></info_portion>
+	<info_portion id="esc_quest_serious_business_sidor_dialog_fail_and"></info_portion>
+	<info_portion id="esc_quest_serious_business_kpp"></info_portion>
+
+	<!-- X Теперь ты в армии --> 
+	<!-- часть 1 -->
+	<info_portion id="esc_colonel_kolyazin_contract"></info_portion>
+	<info_portion id="esc_quest_army_contract_start"></info_portion>
+	<info_portion id="esc_quest_army_contract_1_talk_kolyazin"></info_portion>
+	<info_portion id="esc_quest_army_contract_1_complite"></info_portion>
+	<info_portion id="esc_quest_army_contract_1_in_zone"></info_portion>
+	<info_portion id="esc_quest_army_contract_talk_wolf"></info_portion>
+	<!-- часть 2 -->
+	<info_portion id="esc_quest_dezertir_talk_wolf"></info_portion>
+	<info_portion id="esc_quest_dezertir_talk_patogen"></info_portion>
+	<info_portion id="esc_quest_dezertir_talk_logoped"></info_portion>
+	<info_portion id="esc_quest_dezertir_talk_dezertir"></info_portion>
+	<info_portion id="esc_quest_army_contract_2_talk_kolyazin"></info_portion>
+	<info_portion id="esc_quest_army_contract_2_complite"></info_portion>
+	<info_portion id="esc_quest_army_contract_2_good"></info_portion>
+	<info_portion id="esc_quest_army_contract_2_bad"></info_portion>
+	
+	<!-- XI Техник для бандитов --> 
+	<info_portion id="esc_quest_mechanic_search_logoped_1_talk"></info_portion>
+	<info_portion id="esc_quest_mechanic_search_mechanic_talk"></info_portion>
+	<info_portion id="esc_quest_mechanic_search_logoped_2_talk"></info_portion>
+	<info_portion id="esc_quest_mechanic_search_complite"></info_portion>
+	<info_portion id="esc_quest_mechanic_search_fail"></info_portion>
+
+	<!-- XII Опасное дело -->
+	<info_portion id="esc_quest_dangerous_business_sidor_dialog_and"></info_portion>
+	<info_portion id="esc_quest_dangerous_business_spawn"></info_portion>
+	<info_portion id="esc_quest_dangerous_business_ataka"></info_portion>
+	<info_portion id="esc_quest_dangerous_business_merc_proval"></info_portion>
+	<info_portion id="esc_quest_dangerous_business_talk_logoped"></info_portion>
+	<info_portion id="esc_quest_dangerous_business_talk_shmiga"></info_portion>
+	<info_portion id="esc_quest_dangerous_business_hit_shmiga"></info_portion>
+	<info_portion id="esc_quest_dangerous_business_shmiga_wounded"></info_portion>
+	<info_portion id="esc_quest_dangerous_business_live_shmiga"></info_portion>
+	<info_portion id="esc_quest_dangerous_business_dead_shmiga"></info_portion>
+	<info_portion id="esc_quest_dangerous_business_otdat"></info_portion>
+	<info_portion id="esc_quest_dangerous_business_stop"></info_portion>
+	<info_portion id="esc_sidor_habar_open"></info_portion>
+	<info_portion id="esc_dangerous_business_complite"></info_portion>
+	<info_portion id="esc_dangerous_business_fall"></info_portion>
+	
+	<!-- XIII Криминальный бизнес -->
+	<info_portion id="esc_quest_criminal_business_box"></info_portion>
+	<info_portion id="esc_quest_criminal_business_talk_logoped"></info_portion>
+	<info_portion id="esc_quest_criminal_business_complite"></info_portion>
+	<info_portion id="esc_quest_criminal_business_fall"></info_portion>
+	
+	
+	<!-- сюжетная линия --> 
+	<!-- часть 1 --> 
+	<info_portion id="esc_quest_line_borland_meet_open"></info_portion>
+	<info_portion id="esc_quest_fee_fail"></info_portion>
+	<info_portion id="esc_quest_line_borland_meet_dialog_and"></info_portion>
+	<info_portion id="esc_quest_line_meet_borland_complete"></info_portion>
+	<info_portion id="esc_quest_line_patogen_meet_dialog_open"></info_portion>
+	<info_portion id="eac_quest_fee_complite"></info_portion>
+	<info_portion id="esc_colonel_kolyazin_quest_fee_out_habar"></info_portion>
+	<info_portion id="esc_about_price_dialog_complit"></info_portion>
+	<info_portion id="esc_quest_line_borland_meet_dialog_frend_and"></info_portion>
+	<info_portion id="esc_quest_line_patogen_meet_dialog_and"></info_portion>
+	<info_portion id="esc_quest_line_meet_patogen_complete"></info_portion>
+	<info_portion id="esc_freedom_plen_death"></info_portion>
+	<info_portion id="esc_quest_line_missing_connected_doclad"></info_portion>
+	<info_portion id="esc_quest_line_missing_connected_complete"></info_portion>
+	<info_portion id="esc_quest_line_patogen_meet_dialog_complite_two_and"></info_portion>
+	<info_portion id="esc_quest_line_salvation_freedom_dialog_open"></info_portion>
+	<info_portion id="esc_quest_line_salvation_freedom_reversed"></info_portion>
+	<info_portion id="esc_quest_line_salvation_freedom_complete"></info_portion>
+	<!-- часть 2 --> 
+	<info_portion id="esc_quest_line_salvation_freedom_dialog_and"></info_portion>
+	<info_portion id="esc_quest_line_secret_freedom_pda"></info_portion>
+	<info_portion id="esc_quest_line_secret_freedom_fyrgon_dialog_and"></info_portion>
+	<info_portion id="esc_quest_line_secret_freedom_wait"></info_portion>
+	<info_portion id="esc_quest_line_secret_freedom_search"></info_portion>
+	<info_portion id="esc_quest_line_secret_freedom_elevator"></info_portion>
+	<info_portion id="esc_quest_line_secret_freedom_patogen_dialog_and"></info_portion>
+	<info_portion id="esc_quest_line_secret_freedom_naiti_borlanda"></info_portion>
+	<info_portion id="esc_quest_line_important_meet_borland_complete"></info_portion>
+	<info_portion id="esc_quest_line_important_meet_borland_dialog_and"></info_portion>
+     <!-- часть 3 --> 
+	<info_portion id="esc_dybolom_habar_dialog_and"></info_portion>
+	<info_portion id="esc_wolf_art_medusa_dialog_and"></info_portion>
+	<info_portion id="esc_logoped_quest_away_from_the_bandits_dialog_and"></info_portion>
+	<info_portion id="esc_quest_away_from_the_bandits_out"></info_portion>
+	<info_portion id="esc_shoroh_quest_away_from_the_bandits_dialog_and"></info_portion>
+	<info_portion id="esc_quest_away_from_the_bandits_wait"></info_portion>
+	<info_portion id="esc_quest_line_away_from_the_bandits_complete"></info_portion>
+	<info_portion id="esc_borland_quest_away_from_the_bandits_dialog_village"></info_portion>
+	<info_portion id="esc_borland_quest_away_from_the_bandits_dialog_complite"></info_portion>
+	
+	
+	 <!-- часть 4 --> 
+	<info_portion id="esc_quest_line_research_underground_lab"></info_portion>
+	<info_portion id="esc_quest_line_research_underground_chasovhik"></info_portion>
+	<info_portion id="esc_quest_line_research_underground_sidor_key"></info_portion>
+	<info_portion id="esc_quest_line_research_underground_laba_go"></info_portion>
+	<info_portion id="esc_sidor_quest_line_research_underground_part_2_dialog_and"></info_portion>
+	<info_portion id="esc_quest_line_research_underground_open_laba"></info_portion>
+	<info_portion id="esc_quest_line_research_underground_start"></info_portion>
+	<info_portion id="esc_borland_quest_line_dungeon_dialog_open_door"></info_portion>
+	<info_portion id="esc_watchmaker_quest_line_dungeon_dialog_and"></info_portion>
+	<info_portion id="esc_quest_line_dungeon_borland"></info_portion>
+	<info_portion id="esc_wolf_quest_line_dungeon_dialog_and"></info_portion>
+	<info_portion id="esc_quest_line_dungeon_search"></info_portion>
+	<info_portion id="esc_quest_line_dungeon_wolf"></info_portion>
+	<info_portion id="esc_quest_line_research_underground_complete"></info_portion>
+	
+	
+	
+		 <!-- TM_escape --> 
+	<info_portion id="esc_codelock_lab_unlock"></info_portion>
+	<info_portion id="esc_borland_und_laba"></info_portion>
+	<info_portion id="esc_quest_line_research_underground_chasovhik_dialog"></info_portion>
+	<info_portion id="esc_underground_truba_exit_2"></info_portion>
+	<info_portion id="esc_quest_line_dungeon_complete"></info_portion>
+	<info_portion id="esc_squad_quest_tushkan_dead"></info_portion>
+	<info_portion id="esc_quest_line_dungeon_help"></info_portion>
+	
+	
+		<!--Инфопорции автосохранений-->
+	<info_portion id="save_escape_start_game"></info_portion>
+	<info_portion id="save_esc_entry_into_stalkers"></info_portion>
+	<info_portion id="save_esc_quest_line_dungeon_search"></info_portion>
+	<info_portion id="save_esc_quest_line_research_underground"></info_portion>
+	<info_portion id="save_esc_quest_line_secret_freedom"></info_portion>
+	<info_portion id="save_esc_zona_complite"></info_portion>
+	<info_portion id="save_esc_freedom_life"></info_portion>
+	<info_portion id="save_esc_quest_work_for_beginner"></info_portion>
+	<info_portion id="save_esc_trifling_matter"></info_portion>
+	<info_portion id="save_esc_serious_business"></info_portion>
+	<info_portion id="save_esc_dangerous_business"></info_portion>
+	<info_portion id="save_esc_quest_trimming"></info_portion>
+	<info_portion id="save_esc_quest_insurance"></info_portion>
+	<info_portion id="save_esc_quest_hunting"></info_portion>
+	<info_portion id="save_esc_quest_wolf_work_conductor"></info_portion>
+	<info_portion id="save_esc_quest_line_research_underground_2"></info_portion>
+	<info_portion id="save_esc_the_first_penny"></info_portion>
+
+	<info_portion id="spectrum_project_start"></info_portion>
+
+
+
+</game_information_portions>

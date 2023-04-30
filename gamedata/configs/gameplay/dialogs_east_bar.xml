@@ -1,0 +1,2752 @@
+<?xml version="1.0" encoding="windows-1251" ?>
+<game_dialogs>
+    <dialog id="bar_azot_zero_quest_dialog_1">	   
+        <dont_has_info>bar_a2_azot_quest_0_talking_0</dont_has_info>
+	<has_info>bar_new_details_barmen_dialog_info</has_info>
+        <phrase_list>            
+            <phrase id="0">
+                <text>bar_azot_zero_quest_dialog_1_talking_0</text>                
+                <next>1</next>
+            </phrase>
+	    <phrase id="1">
+                <text>bar_azot_zero_quest_dialog_1_talking_1</text>                
+                <next>2</next>
+		<next>22</next>
+		<next>222</next>
+            </phrase>
+	    <phrase id="22">
+                <text>bar_azot_zero_quest_dialog_1_talking_22</text>                                
+                <action>dialogs.break_dialog</action>
+            </phrase>
+	    <phrase id="222">			    
+                <text>bar_azot_zero_quest_dialog_1_talking_222</text>  
+                <give_info>bar_a2_azot_quest_0_talking_0</give_info>				
+                <action>dialogs.break_dialog</action>
+            </phrase>
+	    <phrase id="2">
+                <text>bar_azot_zero_quest_dialog_1_talking_2</text>                                
+                <next>3</next>
+            </phrase>
+	    <phrase id="3">
+                <text>bar_azot_zero_quest_dialog_1_talking_3</text>
+		<action>dialogs_east_bar.bar_b53_give_quest_perk</action>
+		<give_info>bar_a2_azot_quest_0_talking_0</give_info>
+		<give_info>bar_a2_azot_quest_0_talking_1</give_info>
+            </phrase>
+        </phrase_list>
+    </dialog>
+	<dialog id="bar_a6_stalker_radiobattle_rpg_1_dialog"> 
+        <dont_has_info>mar_ach_radiobattle_all_info</dont_has_info>
+	    <phrase_list>		    
+            <phrase id="0">
+                <text>bar_a6_stalker_radiobattle_rpg_1_dialog_0</text>
+                <next>1</next>                                				
+            </phrase>
+	    <phrase id="1">
+                <text>bar_a6_stalker_radiobattle_rpg_1_dialog_1</text>				
+                <next>2</next>              
+                <next>3</next>
+                <next>4</next>				
+            </phrase>						
+            <phrase id="2">
+                <precondition>dialogs_east_bar.actor_has_5000_money</precondition>
+                <dont_has_info>mar_ach_radiobattle_all_info</dont_has_info>				
+                <text>bar_a6_stalker_radiobattle_rpg_1_dialog_2</text>
+                <action>dialogs_east_bar.run_gui_ach_radiobattle_main</action>
+                <next>1</next>				
+            </phrase>			
+            <phrase id="3">
+                <text>bar_a6_stalker_radiobattle_rpg_1_dialog_3</text>
+                <action>dialogs.break_dialog</action>				
+            </phrase> 
+            <phrase id="4">
+		<precondition>dialogs_east_bar.actor_hasnt_5000_money</precondition>
+                <text>bar_a6_stalker_radiobattle_rpg_1_dialog_4</text>
+                <action>dialogs.break_dialog</action>				
+            </phrase>			
+	</phrase_list>
+    </dialog>
+	<dialog id="bar_azot_zero_quest_dialog_2">
+	<has_info>mar_ach_radiobattle_all_info</has_info>
+        <dont_has_info>bar_a2_azot_quest_0_talking_2</dont_has_info>
+        <phrase_list>            
+            <phrase id="0">
+                <text>bar_azot_zero_quest_dialog_2_talking_0</text>                
+                <next>1</next>
+            </phrase>
+	    <phrase id="1">
+                <text>bar_azot_zero_quest_dialog_2_talking_1</text> 
+                <action>dialogs_east_bar.bar_b53_azot_zero_quest_give_reward</action>				
+                <next>2</next>
+            </phrase>
+	    <phrase id="2">
+                <text>bar_azot_zero_quest_dialog_2_talking_2</text>                
+                <next>3</next>
+            </phrase>
+	    <phrase id="3">
+                <text>bar_azot_zero_quest_dialog_2_talking_3</text>
+		<give_info>bar_a2_azot_quest_0_talking_2</give_info>
+            </phrase>
+        </phrase_list>
+    </dialog>
+    <dialog id="bar_azot_first_quest_dialog_1">	
+        <has_info>bar_a2_azot_quest_0_talking_2</has_info>	
+        <dont_has_info>bar_a2_azot_quest_1_talking_1</dont_has_info>
+        <phrase_list>            
+            <phrase id="0">
+                <text>bar_azot_first_quest_dialog_1_talking_0</text>                
+                <next>1</next>
+            </phrase>
+			<phrase id="1">
+                <text>bar_azot_first_quest_dialog_1_talking_1</text>                
+                <next>2</next>
+            </phrase>
+			<phrase id="2">
+                <text>bar_azot_first_quest_dialog_1_talking_2</text>                                
+                <next>3</next>
+            </phrase>
+			<phrase id="3">
+                <text>bar_azot_first_quest_dialog_1_talking_3</text>
+				<action>dialogs_east_bar.bar_b53_give_quest_oszil</action>
+				<give_info>bar_a2_azot_quest_1_talking_1</give_info>
+            </phrase>
+        </phrase_list>
+    </dialog>
+	<dialog id="bar_azot_first_quest_dialog_2">
+	    <has_info>bar_a2_killer_azot_all_death</has_info>
+        <dont_has_info>bar_a2_azot_quest_1_talking_2</dont_has_info>
+        <phrase_list>            
+            <phrase id="0">
+                <text>bar_azot_first_quest_dialog_2_talking_0</text>                
+                <next>1</next>
+            </phrase>
+			<phrase id="1">
+                <text>bar_azot_first_quest_dialog_2_talking_1</text>
+                <action>dialogs_east_bar.bar_b53_azot_first_quest_give_reward</action>                
+                <next>2</next>
+            </phrase>
+			<phrase id="2">
+                <text>bar_azot_first_quest_dialog_2_talking_2</text>                
+                <next>3</next>
+            </phrase>
+			<phrase id="3">
+                <text>bar_azot_first_quest_dialog_2_talking_3</text>
+				<action>dialogs_east_bar.bar_b53_give_quest_razia</action>
+				<give_info>bar_a2_azot_quest_1_talking_2</give_info>
+				<give_info>bar_a2_azot_quest_2_talking_1</give_info>
+            </phrase>
+        </phrase_list>
+    </dialog>
+	<dialog id="bar_azot_second_quest_dialog_1">      
+        <dont_has_info>bar_a2_azot_quest_2_talking_1</dont_has_info>
+        <phrase_list>            
+            <phrase id="0">
+                <text>bar_azot_second_quest_dialog_1_talking_0</text>                
+                <next>1</next>
+            </phrase>
+			<phrase id="1">
+                <text>bar_azot_second_quest_dialog_1_talking_1</text>                
+                <next>2</next>
+            </phrase>
+			<phrase id="2">
+                <text>bar_azot_second_quest_dialog_1_talking_2</text>                                
+                <next>3</next>
+            </phrase>
+			<phrase id="3">
+                <text>bar_azot_second_quest_dialog_1_talking_3</text>
+				<action>dialogs_east_bar.bar_b53_give_quest_razia</action>
+				<give_info>bar_a2_azot_quest_2_talking_1</give_info>
+            </phrase>
+        </phrase_list>
+    </dialog>
+	<dialog id="bar_azot_second_quest_dialog_2"> 
+	<has_info>bar_a2_azot_quest_2_talking_1</has_info>	
+        <has_info>bar_npc_nimble_dialog_info</has_info>	
+        <dont_has_info>bar_a2_azot_quest_2_talking_2</dont_has_info>
+        <phrase_list>            
+            <phrase id="0">
+                <text>bar_azot_second_quest_dialog_2_talking_0</text>                
+                <next>1</next>
+            </phrase>
+	    <phrase id="1">
+                <text>bar_azot_second_quest_dialog_2_talking_1</text>
+                <action>dialogs_east_bar.bar_b53_give_item_razia</action>                
+                <next>2</next>
+            </phrase>
+	    <phrase id="2">
+                <text>bar_azot_second_quest_dialog_2_talking_2</text>                                
+                <next>3</next>
+            </phrase>
+	    <phrase id="3">
+                <text>bar_azot_second_quest_dialog_2_talking_3</text>					
+		<next>4</next>
+            </phrase>
+	    <phrase id="4">
+                <text>bar_azot_second_quest_dialog_2_talking_4</text>				
+		<give_info>bar_a2_azot_quest_2_talking_2</give_info>
+		<action>dialogs.break_dialog</action>
+            </phrase>
+        </phrase_list>
+    </dialog>
+	<dialog id="bar_azot_second_quest_dialog_3"> 
+        <has_info>bar_a2_quest_all_razia_used</has_info>	
+        <dont_has_info>bar_a2_azot_quest_2_talking_3</dont_has_info>
+        <phrase_list>            
+            <phrase id="0">
+                <text>bar_azot_second_quest_dialog_3_talking_0</text> 
+                <action>dialogs_east_bar.bar_b53_give_item_razia_back</action>				
+                <next>1</next>
+            </phrase>
+	    <phrase id="1">
+                <text>bar_azot_second_quest_dialog_3_talking_1</text>               
+                <next>2</next>
+            </phrase>
+	    <phrase id="2">
+                <text>bar_azot_second_quest_dialog_3_talking_2</text>
+                <give_info>bar_a2_azot_quest_2_talking_3</give_info>				
+                <next>3</next>
+            </phrase>
+	    <phrase id="3">
+                <text>bar_azot_second_quest_dialog_3_talking_3</text>
+                <action>dialogs_east_bar.bar_b53_give_quest_payalnik</action>				
+		<next>4</next>
+            </phrase>
+	    <phrase id="4">
+                <text>bar_azot_second_quest_dialog_3_talking_4</text>
+                <give_info>bar_a2_azot_quest_3_talking_1</give_info>				
+		<action>dialogs.break_dialog</action>
+            </phrase>
+        </phrase_list>
+    </dialog>
+	
+	<dialog id="bar_azot_third_quest_dialog_1"> 
+        <has_info>bar_a2_azot_quest_3_talking_1</has_info>	
+        <dont_has_info>bar_a2_azot_quest_3_talking_2</dont_has_info>
+        <phrase_list>            
+            <phrase id="0">
+                <text>bar_azot_third_quest_dialog_1_talking_0</text>                
+                <next>1</next>
+            </phrase>
+			<phrase id="1">
+                <text>bar_azot_third_quest_dialog_1_talking_1</text>
+                <action>dialogs_east_bar.bar_b53_give_component_payalnik</action>				
+                <next>2</next>
+            </phrase>
+			<phrase id="2">
+                <text>bar_azot_third_quest_dialog_1_talking_2</text>               		
+                <give_info>bar_a2_azot_quest_3_talking_2</give_info>				
+				<action>dialogs.break_dialog</action>
+            </phrase>			
+        </phrase_list>
+    </dialog>	
+	<dialog id="bar_azot_third_quest_dialog_2"> 
+        <has_info>bar_a2_azot_quest_3_talking_2</has_info>	
+        <dont_has_info>bar_a2_azot_quest_3_talking_3</dont_has_info>
+        <phrase_list>            
+            <phrase id="0">
+                <text>bar_azot_third_quest_dialog_2_talking_0</text>                
+                <next>1</next>
+            </phrase>
+			<phrase id="1">
+                <text>bar_azot_third_quest_dialog_2_talking_1</text>
+                <action>dialogs_east_bar.bar_b53_give_item_payalnik</action>					
+                <next>2</next>
+            </phrase>
+			<phrase id="2">
+                <text>bar_azot_third_quest_dialog_2_talking_2</text>               		
+                <give_info>bar_a2_azot_quest_3_talking_3</give_info>				
+				<action>dialogs.break_dialog</action>
+            </phrase>			
+        </phrase_list>
+    </dialog>
+	<dialog id="bar_azot_third_quest_dialog_3"> 
+        <has_info>bar_a2_spec_juk_item_have_unnown</has_info>	
+        <dont_has_info>bar_a2_azot_quest_3_talking_4</dont_has_info>
+        <phrase_list>            
+            <phrase id="0">
+                <text>bar_azot_third_quest_dialog_3_talking_0</text>
+                <action>dialogs_east_bar.bar_b53_give_item_payalnik_back</action>                
+                <next>1</next>
+            </phrase>
+			<phrase id="1">
+                <text>bar_azot_third_quest_dialog_3_talking_1</text>
+                <give_info>bar_a2_azot_quest_3_talking_4</give_info>				
+                <next>2</next>
+            </phrase>
+			<phrase id="2">
+                <text>bar_azot_third_quest_dialog_3_talking_2</text>               		
+                <next>3</next>
+            </phrase>
+			<phrase id="3">
+                <text>bar_azot_third_quest_dialog_3_talking_3</text>
+				<action>dialogs_east_bar.bar_b53_give_quest_spectr</action>
+                <give_info>bar_a2_dop_quest_4_talking_1</give_info>                		
+				<next>4</next>
+            </phrase>
+			<phrase id="4">
+                <text>bar_azot_third_quest_dialog_3_talking_4</text>                				
+				<action>dialogs.break_dialog</action>
+            </phrase>
+        </phrase_list>
+    </dialog>
+	
+	<dialog id="bar_azot_fouth_quest_dialog_1"> 
+        <has_info>bar_a2_dop_quest_spectr_used</has_info>	
+        <dont_has_info>bar_a2_dop_quest_4_talking_2</dont_has_info>
+		<precondition>dialogs_east_bar.actor_has_info_4_quest_end</precondition>
+        <phrase_list>            
+            <phrase id="0">
+                <text>bar_azot_fouth_quest_dialog_1_talking_0</text>              
+                <next>1</next>
+            </phrase>
+			<phrase id="1">
+                <text>bar_azot_fouth_quest_dialog_1_talking_1</text>               
+                <next>2</next>
+            </phrase>
+			<phrase id="2">
+                <text>bar_azot_fouth_quest_dialog_1_talking_2</text>               		
+                <next>3</next>
+            </phrase>
+			<phrase id="3">
+                <text>bar_azot_fouth_quest_dialog_1_talking_3</text>
+                <action>dialogs_east_bar.bar_b53_give_quest_spectr_reward</action>				
+                <give_info>bar_a2_dop_quest_4_talking_2</give_info>				
+				<next>4</next>
+            </phrase>
+			<phrase id="4">
+                <text>bar_azot_fouth_quest_dialog_1_talking_4</text>                				
+				<action>dialogs.break_dialog</action>
+            </phrase>
+        </phrase_list>
+    </dialog>
+	
+	<dialog id="bar_azot_foush_quest_dialog_npc_1"> 
+        <has_info>bar_a2_dop_quest_4_talking_1</has_info>	
+        <dont_has_info>bar_a2_dop_quest_4_talking_1_npc</dont_has_info>
+		<precondition>dialogs_east_bar.actor_has_item_zhuchok</precondition>
+        <phrase_list>            
+            <phrase id="0">
+                <text>bar_azot_foush_quest_dialog_npc_1_talking_0</text>
+                <action>dialogs_east_bar.bar_b53_give_item_zhuchok</action>                
+                <next>1</next>
+            </phrase>
+			<phrase id="1">
+                <text>bar_azot_foush_quest_dialog_npc_1_talking_1</text>                			
+                <next>2</next>
+            </phrase>
+			<phrase id="2">
+                <text>bar_azot_foush_quest_dialog_npc_1_talking_2</text>               		
+                <next>3</next>
+            </phrase>
+			<phrase id="3">
+                <text>bar_azot_foush_quest_dialog_npc_1_talking_3</text>                				
+				<next>4</next>
+            </phrase>
+			<phrase id="4">
+                <text>bar_azot_foush_quest_dialog_npc_1_talking_4</text>
+                <give_info>bar_a2_dop_quest_4_talking_1_npc</give_info>				
+				<action>dialogs.break_dialog</action>
+            </phrase>
+        </phrase_list>
+    </dialog>
+	<dialog id="bar_azot_foush_quest_dialog_npc_2"> 
+        <has_info>bar_a2_dop_quest_4_talking_1</has_info>	
+        <dont_has_info>bar_a2_dop_quest_4_talking_2_npc</dont_has_info>
+		<precondition>dialogs_east_bar.actor_has_item_zhuchok</precondition>
+        <phrase_list>            
+            <phrase id="0">
+                <text>bar_azot_foush_quest_dialog_npc_2_talking_0</text>
+                <action>dialogs_east_bar.bar_b53_give_item_zhuchok</action>                
+                <next>1</next>
+            </phrase>
+			<phrase id="1">
+                <text>bar_azot_foush_quest_dialog_npc_2_talking_1</text>                			
+                <next>2</next>
+            </phrase>
+			<phrase id="2">
+                <text>bar_azot_foush_quest_dialog_npc_2_talking_2</text>               		
+                <next>3</next>
+            </phrase>
+			<phrase id="3">
+                <text>bar_azot_foush_quest_dialog_npc_2_talking_3</text>                				
+				<next>4</next>
+            </phrase>
+			<phrase id="4">
+                <text>bar_azot_foush_quest_dialog_npc_2_talking_4</text>
+                <give_info>bar_a2_dop_quest_4_talking_2_npc</give_info>				
+				<action>dialogs.break_dialog</action>
+            </phrase>
+        </phrase_list>
+    </dialog>
+	<dialog id="bar_azot_foush_quest_dialog_npc_3"> 
+        <has_info>bar_a2_dop_quest_4_talking_1</has_info>	
+        <dont_has_info>bar_a2_dop_quest_4_talking_3_npc</dont_has_info>
+		<precondition>dialogs_east_bar.actor_has_item_zhuchok</precondition>
+        <phrase_list>            
+            <phrase id="0">
+                <text>bar_azot_foush_quest_dialog_npc_3_talking_0</text>
+                <action>dialogs_east_bar.bar_b53_give_item_zhuchok</action>                
+                <next>1</next>
+            </phrase>
+			<phrase id="1">
+                <text>bar_azot_foush_quest_dialog_npc_3_talking_1</text>                			
+                <next>2</next>
+            </phrase>
+			<phrase id="2">
+                <text>bar_azot_foush_quest_dialog_npc_3_talking_2</text>               		
+                <next>3</next>
+            </phrase>
+			<phrase id="3">
+                <text>bar_azot_foush_quest_dialog_npc_3_talking_3</text>                				
+				<next>4</next>
+            </phrase>
+			<phrase id="4">
+                <text>bar_azot_foush_quest_dialog_npc_3_talking_4</text>
+                <give_info>bar_a2_dop_quest_4_talking_3_npc</give_info>				
+				<action>dialogs.break_dialog</action>
+            </phrase>
+        </phrase_list>
+    </dialog>
+	<dialog id="bar_azot_foush_quest_dialog_npc_4"> 
+        <has_info>bar_a2_dop_quest_4_talking_1</has_info>	
+        <dont_has_info>bar_a2_dop_quest_4_talking_4_npc</dont_has_info>
+		<precondition>dialogs_east_bar.actor_has_item_zhuchok</precondition>
+        <phrase_list>            
+            <phrase id="0">
+                <text>bar_azot_foush_quest_dialog_npc_4_talking_0</text>
+                <action>dialogs_east_bar.bar_b53_give_item_zhuchok</action>                
+                <next>1</next>
+            </phrase>
+			<phrase id="1">
+                <text>bar_azot_foush_quest_dialog_npc_4_talking_1</text>                			
+                <next>2</next>
+            </phrase>
+			<phrase id="2">
+                <text>bar_azot_foush_quest_dialog_npc_4_talking_2</text>               		
+                <next>3</next>
+            </phrase>
+			<phrase id="3">
+                <text>bar_azot_foush_quest_dialog_npc_4_talking_3</text>                				
+				<next>4</next>
+            </phrase>
+			<phrase id="4">
+                <text>bar_azot_foush_quest_dialog_npc_4_talking_4</text>
+                <give_info>bar_a2_dop_quest_4_talking_4_npc</give_info>				
+				<action>dialogs.break_dialog</action>
+            </phrase>
+        </phrase_list>
+    </dialog>
+	<dialog id="bar_azot_foush_quest_dialog_npc_5"> 
+        <has_info>bar_a2_dop_quest_4_talking_1</has_info>	
+        <dont_has_info>bar_a2_dop_quest_4_talking_5_npc</dont_has_info>
+		<precondition>dialogs_east_bar.actor_has_item_zhuchok</precondition>
+        <phrase_list>            
+            <phrase id="0">
+                <text>bar_azot_foush_quest_dialog_npc_5_talking_0</text>
+                <action>dialogs_east_bar.bar_b53_give_item_zhuchok</action>                
+                <next>1</next>
+            </phrase>
+			<phrase id="1">
+                <text>bar_azot_foush_quest_dialog_npc_5_talking_1</text>                			
+                <next>2</next>
+            </phrase>
+			<phrase id="2">
+                <text>bar_azot_foush_quest_dialog_npc_5_talking_2</text>               		
+                <next>3</next>
+            </phrase>
+			<phrase id="3">
+                <text>bar_azot_foush_quest_dialog_npc_5_talking_3</text>                				
+				<next>4</next>
+            </phrase>
+			<phrase id="4">
+                <text>bar_azot_foush_quest_dialog_npc_5_talking_4</text>
+                <give_info>bar_a2_dop_quest_4_talking_5_npc</give_info>				
+				<action>dialogs.break_dialog</action>
+            </phrase>
+        </phrase_list>
+    </dialog>
+	
+    <dialog id="bar_stard_dialog_barman">
+        <phrase_list>
+            <phrase id="0">
+                <text>bar_stard_dialog_barman_text</text>
+            </phrase>
+        </phrase_list>
+    </dialog>
+	
+    <dialog id="bar_medic_need_health_care">
+        <phrase_list>
+            <phrase id="0">
+                <text>bar_medic_need_health_care_0</text>
+                <next>1</next>
+                <next>2</next>
+            </phrase>
+            <phrase id="2">
+                <text>bar_medic_need_health_care_2</text>
+                <precondition>dialogs.actor_is_damn_healthy</precondition>
+            </phrase>
+            <phrase id="11">
+                <text>bar_medic_need_health_care_11</text>
+                <action>dialogs.medic_magic_potion</action>
+                <next>111</next>
+            </phrase>
+            <phrase id="1">
+                <text>bar_medic_need_health_care_1</text>
+                <precondition>dialogs.actor_needs_bless</precondition>
+                <next>11</next>
+            </phrase>
+            <phrase id="111">
+                <text>bar_medic_need_health_care_111</text>
+            </phrase>
+        </phrase_list>
+    </dialog>
+    <dialog id="bar_after_arena_fight_dialog">
+        <has_info>talk_kostolom_after_fight</has_info>
+        <phrase_list>
+            <phrase id="0">
+                <text>bar_after_arena_fight_dialog_0</text>
+                <next>1</next>
+            </phrase>
+            <phrase id="1">
+                <text>bar_after_arena_fight_dialog_1</text>
+                <next>21</next>
+                <next>22</next>
+                <action>dialogs_east_bar.clear_arena_after_fight</action>
+                <disable_info>talk_kostolom_after_fight</disable_info>
+                <disable_info>arena_ready</disable_info>
+            </phrase>
+            <phrase id="21">
+                <dont_has_info>talk_kostolom_about_inventory</dont_has_info>
+                <text>bar_after_arena_fight_dialog_21</text>
+                <action>dialogs_east_bar.give_task_inventory_from_box</action>
+                <action>dialogs_east_bar.give_task_reward_from_logoped</action>
+                <give_info>talk_kostolom_about_inventory</give_info>
+                <next>31</next>
+            </phrase>
+            <phrase id="22">
+                <has_info>talk_kostolom_about_inventory</has_info>
+                <text>bar_after_arena_fight_dialog_22</text>
+                <next>32</next>
+            </phrase>
+            <phrase id="31">
+                <text>bar_after_arena_fight_dialog_31</text>
+                <action>dialogs.break_dialog</action>
+            </phrase>
+            <phrase id="32">
+                <text>bar_after_arena_fight_dialog_32</text>
+                <action>dialogs.break_dialog</action>
+            </phrase>
+        </phrase_list>
+    </dialog>
+    <dialog id="bar_bodyguard_1_naim_dialog">
+        <dont_has_info>bar_arena_bodyguard_on</dont_has_info>
+        <phrase_list>
+            <phrase id="0">
+                <text>bar_bodyguard_1_naim_dialog_0</text>
+                <next>1</next>
+            </phrase>
+            <phrase id="1">
+                <text>bar_bodyguard_1_naim_dialog_1</text>
+                <next>21</next>
+                <next>22</next>
+            </phrase>
+            <phrase id="21">
+                <text>bar_bodyguard_1_naim_dialog_21</text>
+                <next>31</next>
+            </phrase>
+            <phrase id="31">
+                <text>bar_bodyguard_1_naim_dialog_31</text>
+                <next>41</next>
+            </phrase>
+            <phrase id="41">
+                <text>bar_bodyguard_1_naim_dialog_41</text>
+            </phrase>
+            <phrase id="22">
+                <text>bar_bodyguard_1_naim_dialog_22</text>
+                <next>32</next>
+            </phrase>
+            <phrase id="32">
+                <text>bar_bodyguard_1_naim_dialog_32</text>
+                <next>421</next>
+                <next>422</next>
+            </phrase>
+            <phrase id="421">
+                <text>bar_bodyguard_1_naim_dialog_421</text>
+                <next>5</next>
+                <give_info>bar_arena_bodyguard_on</give_info>
+                <give_info>bar_arena_bodyguard_1_on</give_info>
+            </phrase>
+            <phrase id="422">
+                <text>bar_bodyguard_1_naim_dialog_422</text>
+                <next>10</next>
+            </phrase>
+            <phrase id="10">
+                <text>bar_bodyguard_1_naim_dialog_10</text>
+            </phrase>
+            <phrase id="5">
+                <text>bar_bodyguard_1_naim_dialog_5</text>
+                <next>6</next>
+            </phrase>
+            <phrase id="6">
+                <text>bar_bodyguard_1_naim_dialog_6</text>
+                <action>dialogs.break_dialog</action>
+            </phrase>
+        </phrase_list>
+    </dialog>
+    <dialog id="bar_bodyguard_2_naim_dialog">
+        <dont_has_info>bar_arena_bodyguard_on</dont_has_info>
+        <phrase_list>
+            <phrase id="0">
+                <text>bar_bodyguard_2_naim_dialog_0</text>
+                <next>1</next>
+            </phrase>
+            <phrase id="1">
+                <text>bar_bodyguard_2_naim_dialog_1</text>
+                <next>21</next>
+                <next>22</next>
+            </phrase>
+            <phrase id="21">
+                <text>bar_bodyguard_2_naim_dialog_21</text>
+                <next>31</next>
+            </phrase>
+            <phrase id="31">
+                <text>bar_bodyguard_2_naim_dialog_31</text>
+                <next>41</next>
+            </phrase>
+            <phrase id="41">
+                <text>bar_bodyguard_2_naim_dialog_41</text>
+            </phrase>
+            <phrase id="22">
+                <text>bar_bodyguard_2_naim_dialog_22</text>
+                <next>32</next>
+            </phrase>
+            <phrase id="32">
+                <text>bar_bodyguard_2_naim_dialog_32</text>
+                <next>421</next>
+                <next>422</next>
+            </phrase>
+            <phrase id="421">
+                <text>bar_bodyguard_2_naim_dialog_421</text>
+                <next>5</next>
+                <give_info>bar_arena_bodyguard_on</give_info>
+                <give_info>bar_arena_bodyguard_2_on</give_info>
+            </phrase>
+            <phrase id="422">
+                <text>bar_bodyguard_2_naim_dialog_422</text>
+                <next>10</next>
+            </phrase>
+            <phrase id="10">
+                <text>bar_bodyguard_2_naim_dialog_10</text>
+            </phrase>
+            <phrase id="5">
+                <text>bar_bodyguard_2_naim_dialog_5</text>
+                <next>6</next>
+            </phrase>
+            <phrase id="6">
+                <text>bar_bodyguard_2_naim_dialog_6</text>
+                <action>dialogs.break_dialog</action>
+            </phrase>
+        </phrase_list>
+    </dialog>
+    <dialog id="bar_bodyguard_3_naim_dialog">
+        <dont_has_info>bar_arena_bodyguard_on</dont_has_info>
+        <phrase_list>
+            <phrase id="0">
+                <text>bar_bodyguard_3_naim_dialog_0</text>
+                <next>1</next>
+            </phrase>
+            <phrase id="1">
+                <text>bar_bodyguard_3_naim_dialog_1</text>
+                <next>21</next>
+                <next>22</next>
+            </phrase>
+            <phrase id="21">
+                <text>bar_bodyguard_3_naim_dialog_21</text>
+                <next>31</next>
+            </phrase>
+            <phrase id="31">
+                <text>bar_bodyguard_3_naim_dialog_31</text>
+                <next>41</next>
+            </phrase>
+            <phrase id="41">
+                <text>bar_bodyguard_3_naim_dialog_41</text>
+            </phrase>
+            <phrase id="22">
+                <text>bar_bodyguard_3_naim_dialog_22</text>
+                <next>32</next>
+            </phrase>
+            <phrase id="32">
+                <text>bar_bodyguard_3_naim_dialog_32</text>
+                <next>421</next>
+                <next>422</next>
+            </phrase>
+            <phrase id="421">
+                <text>bar_bodyguard_3_naim_dialog_421</text>
+                <next>5</next>
+                <give_info>bar_arena_bodyguard_on</give_info>
+                <give_info>bar_arena_bodyguard_3_on</give_info>
+            </phrase>
+            <phrase id="422">
+                <text>bar_bodyguard_3_naim_dialog_422</text>
+                <next>10</next>
+            </phrase>
+            <phrase id="10">
+                <text>bar_bodyguard_3_naim_dialog_10</text>
+            </phrase>
+            <phrase id="5">
+                <text>bar_bodyguard_3_naim_dialog_5</text>
+                <next>6</next>
+            </phrase>
+            <phrase id="6">
+                <text>bar_bodyguard_3_naim_dialog_6</text>
+                <action>dialogs.break_dialog</action>
+            </phrase>
+        </phrase_list>
+    </dialog>
+    <dialog id="bar_friend_1_naim_dialog">
+        <dont_has_info>bar_arena_friend_on</dont_has_info>
+        <phrase_list>
+            <phrase id="0">
+                <text>bar_friend_1_naim_dialog_0</text>
+                <next>1</next>
+            </phrase>
+            <phrase id="1">
+                <text>bar_friend_1_naim_dialog_1</text>
+                <next>21</next>
+                <next>22</next>
+            </phrase>
+            <phrase id="21">
+                <text>bar_friend_1_naim_dialog_21</text>
+                <next>31</next>
+            </phrase>
+            <phrase id="31">
+                <text>bar_friend_1_naim_dialog_31</text>
+                <next>41</next>
+            </phrase>
+            <phrase id="41">
+                <text>bar_friend_1_naim_dialog_41</text>
+            </phrase>
+            <phrase id="22">
+                <text>bar_friend_1_naim_dialog_22</text>
+                <next>32</next>
+            </phrase>
+            <phrase id="32">
+                <text>bar_friend_1_naim_dialog_32</text>
+                <next>421</next>
+                <next>422</next>
+            </phrase>
+            <phrase id="421">
+                <text>bar_friend_1_naim_dialog_421</text>
+                <next>5</next>
+                <give_info>bar_arena_friend_on</give_info>
+                <give_info>bar_arena_friend_1_on</give_info>
+            </phrase>
+            <phrase id="422">
+                <text>bar_friend_1_naim_dialog_422</text>
+                <next>10</next>
+            </phrase>
+            <phrase id="10">
+                <text>bar_friend_1_naim_dialog_10</text>
+            </phrase>
+            <phrase id="5">
+                <text>bar_friend_1_naim_dialog_5</text>
+                <next>6</next>
+            </phrase>
+            <phrase id="6">
+                <text>bar_friend_1_naim_dialog_6</text>
+                <action>dialogs.break_dialog</action>
+            </phrase>
+        </phrase_list>
+    </dialog>
+    <dialog id="bar_friend_2_naim_dialog">
+        <dont_has_info>bar_arena_friend_on</dont_has_info>
+        <phrase_list>
+            <phrase id="0">
+                <text>bar_friend_2_naim_dialog_0</text>
+                <next>1</next>
+            </phrase>
+            <phrase id="1">
+                <text>bar_friend_2_naim_dialog_1</text>
+                <next>21</next>
+                <next>22</next>
+            </phrase>
+            <phrase id="21">
+                <text>bar_friend_2_naim_dialog_21</text>
+                <next>31</next>
+            </phrase>
+            <phrase id="31">
+                <text>bar_friend_2_naim_dialog_31</text>
+                <next>41</next>
+            </phrase>
+            <phrase id="41">
+                <text>bar_friend_2_naim_dialog_41</text>
+            </phrase>
+            <phrase id="22">
+                <text>bar_friend_2_naim_dialog_22</text>
+                <next>32</next>
+            </phrase>
+            <phrase id="32">
+                <text>bar_friend_2_naim_dialog_32</text>
+                <next>421</next>
+                <next>422</next>
+            </phrase>
+            <phrase id="421">
+                <text>bar_friend_2_naim_dialog_421</text>
+                <next>5</next>
+                <give_info>bar_arena_friend_on</give_info>
+                <give_info>bar_arena_friend_2_on</give_info>
+            </phrase>
+            <phrase id="422">
+                <text>bar_friend_2_naim_dialog_422</text>
+                <next>10</next>
+            </phrase>
+            <phrase id="10">
+                <text>bar_friend_2_naim_dialog_10</text>
+            </phrase>
+            <phrase id="5">
+                <text>bar_friend_2_naim_dialog_5</text>
+                <next>6</next>
+            </phrase>
+            <phrase id="6">
+                <text>bar_friend_2_naim_dialog_6</text>
+                <action>dialogs.break_dialog</action>
+            </phrase>
+        </phrase_list>
+    </dialog>
+    <dialog id="bar_friend_3_naim_dialog">
+        <dont_has_info>bar_arena_friend_on</dont_has_info>
+        <phrase_list>
+            <phrase id="0">
+                <text>bar_friend_3_naim_dialog_0</text>
+                <next>1</next>
+            </phrase>
+            <phrase id="1">
+                <text>bar_friend_3_naim_dialog_1</text>
+                <next>21</next>
+                <next>22</next>
+            </phrase>
+            <phrase id="21">
+                <text>bar_friend_3_naim_dialog_21</text>
+                <next>31</next>
+            </phrase>
+            <phrase id="31">
+                <text>bar_friend_3_naim_dialog_31</text>
+                <next>41</next>
+            </phrase>
+            <phrase id="41">
+                <text>bar_friend_3_naim_dialog_41</text>
+            </phrase>
+            <phrase id="22">
+                <text>bar_friend_3_naim_dialog_22</text>
+                <next>32</next>
+            </phrase>
+            <phrase id="32">
+                <text>bar_friend_3_naim_dialog_32</text>
+                <next>421</next>
+                <next>422</next>
+            </phrase>
+            <phrase id="421">
+                <text>bar_friend_3_naim_dialog_421</text>
+                <next>5</next>
+                <give_info>bar_arena_friend_on</give_info>
+                <give_info>bar_arena_friend_3_on</give_info>
+            </phrase>
+            <phrase id="422">
+                <text>bar_friend_3_naim_dialog_422</text>
+                <next>10</next>
+            </phrase>
+            <phrase id="10">
+                <text>bar_friend_3_naim_dialog_10</text>
+            </phrase>
+            <phrase id="5">
+                <text>bar_friend_3_naim_dialog_5</text>
+                <next>6</next>
+            </phrase>
+            <phrase id="6">
+                <text>bar_friend_3_naim_dialog_6</text>
+                <action>dialogs.break_dialog</action>
+            </phrase>
+        </phrase_list>
+    </dialog>
+    <dialog id="bar_friend_after_fight_dialog">
+        <has_info>bar_arena_friend_on</has_info>
+        <phrase_list>
+            <phrase id="0">
+                <text>bar_friend_after_fight_dialog_0</text>
+                <next>111</next>
+                <next>112</next>
+                <next>113</next>
+                <next>114</next>
+                <next>115</next>
+                <next>121</next>
+                <next>122</next>
+                <next>123</next>
+                <next>124</next>
+                <next>125</next>
+                <next>131</next>
+                <next>132</next>
+                <next>133</next>
+                <next>134</next>
+                <next>135</next>
+                <next>100</next>
+            </phrase>
+            <phrase id="100">
+                <dont_has_info>arena_start_friend_1</dont_has_info>
+                <text>bar_friend_after_fight_dialog_100</text>
+                <next>2</next>
+            </phrase>
+            <phrase id="111">
+                <has_info>bar_arena_friend_1_on</has_info>
+                <has_info>arena_start_friend_1</has_info>
+                <dont_has_info>arena_start_friend_2</dont_has_info>
+                <text>bar_friend_after_fight_dialog_111</text>
+                <next>2</next>
+            </phrase>
+            <phrase id="112">
+                <has_info>bar_arena_friend_1_on</has_info>
+                <has_info>arena_start_friend_2</has_info>
+                <dont_has_info>arena_start_friend_3</dont_has_info>
+                <text>bar_friend_after_fight_dialog_112</text>
+                <next>2</next>
+            </phrase>
+            <phrase id="113">
+                <has_info>bar_arena_friend_1_on</has_info>
+                <has_info>arena_start_friend_3</has_info>
+                <dont_has_info>arena_start_friend_4</dont_has_info>
+                <text>bar_friend_after_fight_dialog_113</text>
+                <next>2</next>
+            </phrase>
+            <phrase id="114">
+                <has_info>bar_arena_friend_1_on</has_info>
+                <has_info>arena_start_friend_4</has_info>
+                <dont_has_info>arena_start_friend_5</dont_has_info>
+                <text>bar_friend_after_fight_dialog_114</text>
+                <next>2</next>
+            </phrase>
+            <phrase id="115">
+                <has_info>bar_arena_friend_1_on</has_info>
+                <has_info>arena_start_friend_5</has_info>
+                <text>bar_friend_after_fight_dialog_115</text>
+                <next>2</next>
+            </phrase>
+            <phrase id="121">
+                <has_info>bar_arena_friend_2_on</has_info>
+                <has_info>arena_start_friend_1</has_info>
+                <dont_has_info>arena_start_friend_2</dont_has_info>
+                <text>bar_friend_after_fight_dialog_121</text>
+                <next>2</next>
+            </phrase>
+            <phrase id="122">
+                <has_info>bar_arena_friend_2_on</has_info>
+                <has_info>arena_start_friend_2</has_info>
+                <dont_has_info>arena_start_friend_3</dont_has_info>
+                <text>bar_friend_after_fight_dialog_122</text>
+                <next>2</next>
+            </phrase>
+            <phrase id="123">
+                <has_info>bar_arena_friend_2_on</has_info>
+                <has_info>arena_start_friend_3</has_info>
+                <dont_has_info>arena_start_friend_4</dont_has_info>
+                <text>bar_friend_after_fight_dialog_123</text>
+                <next>2</next>
+            </phrase>
+            <phrase id="124">
+                <has_info>bar_arena_friend_2_on</has_info>
+                <has_info>arena_start_friend_4</has_info>
+                <dont_has_info>arena_start_friend_5</dont_has_info>
+                <text>bar_friend_after_fight_dialog_124</text>
+                <next>2</next>
+            </phrase>
+            <phrase id="125">
+                <has_info>bar_arena_friend_2_on</has_info>
+                <has_info>arena_start_friend_5</has_info>
+                <text>bar_friend_after_fight_dialog_125</text>
+                <next>2</next>
+            </phrase>
+            <phrase id="131">
+                <has_info>bar_arena_friend_3_on</has_info>
+                <has_info>arena_start_friend_1</has_info>
+                <dont_has_info>arena_start_friend_2</dont_has_info>
+                <text>bar_friend_after_fight_dialog_131</text>
+                <next>2</next>
+            </phrase>
+            <phrase id="132">
+                <has_info>bar_arena_friend_3_on</has_info>
+                <has_info>arena_start_friend_2</has_info>
+                <dont_has_info>arena_start_friend_3</dont_has_info>
+                <text>bar_friend_after_fight_dialog_132</text>
+                <next>2</next>
+            </phrase>
+            <phrase id="133">
+                <has_info>bar_arena_friend_3_on</has_info>
+                <has_info>arena_start_friend_3</has_info>
+                <dont_has_info>arena_start_friend_4</dont_has_info>
+                <text>bar_friend_after_fight_dialog_133</text>
+                <next>2</next>
+            </phrase>
+            <phrase id="134">
+                <has_info>bar_arena_friend_3_on</has_info>
+                <has_info>arena_start_friend_4</has_info>
+                <dont_has_info>arena_start_friend_5</dont_has_info>
+                <text>bar_friend_after_fight_dialog_134</text>
+                <next>2</next>
+            </phrase>
+            <phrase id="135">
+                <has_info>bar_arena_friend_3_on</has_info>
+                <has_info>arena_start_friend_5</has_info>
+                <text>bar_friend_after_fight_dialog_135</text>
+                <next>2</next>
+            </phrase>
+            <phrase id="2">
+                <text>bar_friend_after_fight_dialog_2</text>
+            </phrase>
+        </phrase_list>
+    </dialog>
+    <dialog id="bar_bodyguard_after_fight_dialog">
+        <has_info>bar_arena_bodyguard_on</has_info>
+        <phrase_list>
+            <phrase id="0">
+                <text>bar_bodyguard_after_fight_dialog_0</text>
+                <next>111</next>
+                <next>112</next>
+                <next>113</next>
+                <next>114</next>
+                <next>115</next>
+                <next>121</next>
+                <next>122</next>
+                <next>123</next>
+                <next>124</next>
+                <next>125</next>
+                <next>131</next>
+                <next>132</next>
+                <next>133</next>
+                <next>134</next>
+                <next>135</next>
+                <next>100</next>
+            </phrase>
+            <phrase id="100">
+                <dont_has_info>arena_start_bodyguard_1</dont_has_info>
+                <text>bar_bodyguard_after_fight_dialog_100</text>
+                <next>2</next>
+            </phrase>
+            <phrase id="111">
+                <has_info>bar_arena_bodyguard_1_on</has_info>
+                <has_info>arena_start_bodyguard_1</has_info>
+                <dont_has_info>arena_start_bodyguard_2</dont_has_info>
+                <text>bar_bodyguard_after_fight_dialog_111</text>
+                <next>2</next>
+            </phrase>
+            <phrase id="112">
+                <has_info>bar_arena_bodyguard_1_on</has_info>
+                <has_info>arena_start_bodyguard_2</has_info>
+                <dont_has_info>arena_start_bodyguard_3</dont_has_info>
+                <text>bar_bodyguard_after_fight_dialog_112</text>
+                <next>2</next>
+            </phrase>
+            <phrase id="113">
+                <has_info>bar_arena_bodyguard_1_on</has_info>
+                <has_info>arena_start_bodyguard_3</has_info>
+                <dont_has_info>arena_start_bodyguard_4</dont_has_info>
+                <text>bar_bodyguard_after_fight_dialog_113</text>
+                <next>2</next>
+            </phrase>
+            <phrase id="114">
+                <has_info>bar_arena_bodyguard_1_on</has_info>
+                <has_info>arena_start_bodyguard_4</has_info>
+                <dont_has_info>arena_start_bodyguard_5</dont_has_info>
+                <text>bar_bodyguard_after_fight_dialog_114</text>
+                <next>2</next>
+            </phrase>
+            <phrase id="115">
+                <has_info>bar_arena_bodyguard_1_on</has_info>
+                <has_info>arena_start_bodyguard_5</has_info>
+                <text>bar_bodyguard_after_fight_dialog_115</text>
+                <next>2</next>
+            </phrase>
+            <phrase id="121">
+                <has_info>bar_arena_bodyguard_2_on</has_info>
+                <has_info>arena_start_bodyguard_1</has_info>
+                <dont_has_info>arena_start_bodyguard_2</dont_has_info>
+                <text>bar_bodyguard_after_fight_dialog_121</text>
+                <next>2</next>
+            </phrase>
+            <phrase id="122">
+                <has_info>bar_arena_bodyguard_2_on</has_info>
+                <has_info>arena_start_bodyguard_2</has_info>
+                <dont_has_info>arena_start_bodyguard_3</dont_has_info>
+                <text>bar_bodyguard_after_fight_dialog_122</text>
+                <next>2</next>
+            </phrase>
+            <phrase id="123">
+                <has_info>bar_arena_bodyguard_2_on</has_info>
+                <has_info>arena_start_bodyguard_3</has_info>
+                <dont_has_info>arena_start_bodyguard_4</dont_has_info>
+                <text>bar_bodyguard_after_fight_dialog_123</text>
+                <next>2</next>
+            </phrase>
+            <phrase id="124">
+                <has_info>bar_arena_bodyguard_2_on</has_info>
+                <has_info>arena_start_bodyguard_4</has_info>
+                <dont_has_info>arena_start_bodyguard_5</dont_has_info>
+                <text>bar_bodyguard_after_fight_dialog_124</text>
+                <next>2</next>
+            </phrase>
+            <phrase id="125">
+                <has_info>bar_arena_bodyguard_2_on</has_info>
+                <has_info>arena_start_bodyguard_5</has_info>
+                <text>bar_bodyguard_after_fight_dialog_125</text>
+                <next>2</next>
+            </phrase>
+            <phrase id="131">
+                <has_info>bar_arena_bodyguard_3_on</has_info>
+                <has_info>arena_start_bodyguard_1</has_info>
+                <dont_has_info>arena_start_bodyguard_2</dont_has_info>
+                <text>bar_bodyguard_after_fight_dialog_131</text>
+                <next>2</next>
+            </phrase>
+            <phrase id="132">
+                <has_info>bar_arena_bodyguard_3_on</has_info>
+                <has_info>arena_start_bodyguard_2</has_info>
+                <dont_has_info>arena_start_bodyguard_3</dont_has_info>
+                <text>bar_bodyguard_after_fight_dialog_132</text>
+                <next>2</next>
+            </phrase>
+            <phrase id="133">
+                <has_info>bar_arena_bodyguard_3_on</has_info>
+                <has_info>arena_start_bodyguard_3</has_info>
+                <dont_has_info>arena_start_bodyguard_4</dont_has_info>
+                <text>bar_bodyguard_after_fight_dialog_133</text>
+                <next>2</next>
+            </phrase>
+            <phrase id="134">
+                <has_info>bar_arena_bodyguard_3_on</has_info>
+                <has_info>arena_start_bodyguard_4</has_info>
+                <dont_has_info>arena_start_bodyguard_5</dont_has_info>
+                <text>bar_bodyguard_after_fight_dialog_134</text>
+                <next>2</next>
+            </phrase>
+            <phrase id="135">
+                <has_info>bar_arena_bodyguard_3_on</has_info>
+                <has_info>arena_start_bodyguard_5</has_info>
+                <text>bar_bodyguard_after_fight_dialog_135</text>
+                <next>2</next>
+            </phrase>
+            <phrase id="2">
+                <text>bar_bodyguard_after_fight_dialog_2</text>
+            </phrase>
+        </phrase_list>
+    </dialog>
+    <dialog id="bar_arena_take_rewqard_dialog">
+        <has_info>talk_kostolom_about_inventory</has_info>
+        <phrase_list>
+            <phrase id="0">
+                <text>bar_arena_take_rewqard_dialog_0</text>
+				<give_info>arena_reward_taken</give_info>
+                <next>111</next>
+                <next>112</next>
+                <next>113</next>
+                <next>114</next>
+                <next>115</next>
+                <next>121</next>
+                <next>122</next>
+                <next>123</next>
+                <next>124</next>
+                <next>125</next>
+                <next>131</next>
+                <next>132</next>
+                <next>133</next>
+                <next>134</next>
+                <next>135</next>
+                <next>141</next>
+                <next>142</next>
+                <next>143</next>
+                <next>144</next>
+                <next>145</next>
+                <next>151</next>
+                <next>152</next>
+                <next>153</next>
+                <next>154</next>
+                <next>155</next>
+                <next>161</next>
+                <next>162</next>
+                <next>163</next>
+                <next>164</next>
+                <next>165</next>
+                <next>100</next>
+            </phrase>
+            <phrase id="100">
+                <precondition>dialogs_east_bar.no_more_reward</precondition>
+                <text>bar_arena_take_rewqard_dialog_100</text>
+                <next>2</next>
+            </phrase>
+            <phrase id="111">
+                <has_info>bar_arena_enemy_assalut_1_death</has_info>
+                <dont_has_info>take_reward_assalut_1</dont_has_info>
+                <text>bar_arena_take_rewqard_dialog_111</text>
+                <give_info>take_reward_assalut_1</give_info>
+                <action>dialogs_east_bar.take_reward_assalut_1</action>
+                <next>2</next>
+            </phrase>
+            <phrase id="112">
+                <has_info>bar_arena_enemy_assalut_2_death</has_info>
+                <dont_has_info>take_reward_assalut_2</dont_has_info>
+                <text>bar_arena_take_rewqard_dialog_112</text>
+                <give_info>take_reward_assalut_2</give_info>
+                <action>dialogs_east_bar.take_reward_assalut_2</action>
+                <next>2</next>
+            </phrase>
+            <phrase id="113">
+                <has_info>bar_arena_enemy_assalut_3_death</has_info>
+                <dont_has_info>take_reward_assalut_3</dont_has_info>
+                <text>bar_arena_take_rewqard_dialog_113</text>
+                <give_info>take_reward_assalut_3</give_info>
+                <action>dialogs_east_bar.take_reward_assalut_3</action>
+                <next>2</next>
+            </phrase>
+            <phrase id="114">
+                <has_info>bar_arena_enemy_assalut_4_death</has_info>
+                <dont_has_info>take_reward_assalut_4</dont_has_info>
+                <text>bar_arena_take_rewqard_dialog_114</text>
+                <give_info>take_reward_assalut_4</give_info>
+                <action>dialogs_east_bar.take_reward_assalut_4</action>
+                <next>2</next>
+            </phrase>
+            <phrase id="115">
+                <has_info>bar_arena_enemy_assalut_5_death</has_info>
+                <dont_has_info>take_reward_assalut_5</dont_has_info>
+                <text>bar_arena_take_rewqard_dialog_115</text>
+                <give_info>take_reward_assalut_5</give_info>
+                <action>dialogs_east_bar.take_reward_assalut_5</action>
+                <next>2</next>
+            </phrase>
+            <phrase id="121">
+                <has_info>bar_arena_enemy_bodyguard_1_death</has_info>
+                <dont_has_info>take_reward_bodyguard_1</dont_has_info>
+                <dont_has_info>arena_bodyguard_1_fall</dont_has_info>
+                <text>bar_arena_take_rewqard_dialog_121</text>
+                <give_info>take_reward_bodyguard_1</give_info>
+                <action>dialogs_east_bar.take_reward_bodyguard_1</action>
+                <next>2</next>
+            </phrase>
+            <phrase id="122">
+                <has_info>bar_arena_enemy_bodyguard_2_death</has_info>
+                <dont_has_info>take_reward_bodyguard_2</dont_has_info>
+                <dont_has_info>arena_bodyguard_2_fall</dont_has_info>
+                <text>bar_arena_take_rewqard_dialog_122</text>
+                <give_info>take_reward_bodyguard_2</give_info>
+                <action>dialogs_east_bar.take_reward_bodyguard_2</action>
+                <next>2</next>
+            </phrase>
+            <phrase id="123">
+                <has_info>bar_arena_enemy_bodyguard_3_death</has_info>
+                <dont_has_info>take_reward_bodyguard_3</dont_has_info>
+                <dont_has_info>arena_bodyguard_3_fall</dont_has_info>
+                <text>bar_arena_take_rewqard_dialog_123</text>
+                <give_info>take_reward_bodyguard_3</give_info>
+                <action>dialogs_east_bar.take_reward_bodyguard_3</action>
+                <next>2</next>
+            </phrase>
+            <phrase id="124">
+                <has_info>bar_arena_enemy_bodyguard_4_death</has_info>
+                <dont_has_info>take_reward_bodyguard_4</dont_has_info>
+                <dont_has_info>arena_bodyguard_4_fall</dont_has_info>
+                <text>bar_arena_take_rewqard_dialog_124</text>
+                <give_info>take_reward_bodyguard_4</give_info>
+                <action>dialogs_east_bar.take_reward_bodyguard_4</action>
+                <next>2</next>
+            </phrase>
+            <phrase id="125">
+                <has_info>bar_arena_enemy_bodyguard_5_death</has_info>
+                <dont_has_info>take_reward_bodyguard_5</dont_has_info>
+                <dont_has_info>arena_bodyguard_5_fall</dont_has_info>
+                <text>bar_arena_take_rewqard_dialog_125</text>
+                <give_info>take_reward_bodyguard_5</give_info>
+                <action>dialogs_east_bar.take_reward_bodyguard_5</action>
+                <next>2</next>
+            </phrase>
+            <phrase id="131">
+                <has_info>bar_arena_enemy_duel_1_death</has_info>
+                <dont_has_info>take_reward_duel_1</dont_has_info>
+                <text>bar_arena_take_rewqard_dialog_131</text>
+                <give_info>take_reward_duel_1</give_info>
+                <action>dialogs_east_bar.take_reward_duel_1</action>
+                <next>2</next>
+            </phrase>
+            <phrase id="132">
+                <has_info>bar_arena_enemy_duel_2_death</has_info>
+                <dont_has_info>take_reward_duel_2</dont_has_info>
+                <text>bar_arena_take_rewqard_dialog_132</text>
+                <give_info>take_reward_duel_2</give_info>
+                <action>dialogs_east_bar.take_reward_duel_2</action>
+                <next>2</next>
+            </phrase>
+            <phrase id="133">
+                <has_info>bar_arena_enemy_duel_3_death</has_info>
+                <dont_has_info>take_reward_duel_3</dont_has_info>
+                <text>bar_arena_take_rewqard_dialog_133</text>
+                <give_info>take_reward_duel_3</give_info>
+                <action>dialogs_east_bar.take_reward_duel_3</action>
+                <next>2</next>
+            </phrase>
+            <phrase id="134">
+                <has_info>bar_arena_enemy_duel_4_death</has_info>
+                <dont_has_info>take_reward_duel_4</dont_has_info>
+                <text>bar_arena_take_rewqard_dialog_134</text>
+                <give_info>take_reward_duel_4</give_info>
+                <action>dialogs_east_bar.take_reward_duel_4</action>
+                <next>2</next>
+            </phrase>
+            <phrase id="135">
+                <has_info>bar_arena_enemy_duel_5_death</has_info>
+                <dont_has_info>take_reward_duel_5</dont_has_info>
+                <text>bar_arena_take_rewqard_dialog_135</text>
+                <give_info>take_reward_duel_5</give_info>
+                <action>dialogs_east_bar.take_reward_duel_5</action>
+                <next>2</next>
+            </phrase>
+            <phrase id="141">
+                <has_info>bar_arena_enemy_friend_1_death</has_info>
+                <dont_has_info>take_reward_friend_1</dont_has_info>
+				<dont_has_info>arena_friend_1_fall</dont_has_info>
+                <text>bar_arena_take_rewqard_dialog_141</text>
+                <give_info>take_reward_friend_1</give_info>
+                <action>dialogs_east_bar.take_reward_friend_1</action>
+                <next>2</next>
+            </phrase>
+            <phrase id="142">
+                <has_info>bar_arena_enemy_friend_2_death</has_info>
+                <dont_has_info>take_reward_friend_2</dont_has_info>
+				<dont_has_info>arena_friend_2_fall</dont_has_info>
+                <text>bar_arena_take_rewqard_dialog_142</text>
+                <give_info>take_reward_friend_2</give_info>
+                <action>dialogs_east_bar.take_reward_friend_2</action>
+                <next>2</next>
+            </phrase>
+            <phrase id="143">
+                <has_info>bar_arena_enemy_friend_3_death</has_info>
+                <dont_has_info>take_reward_friend_3</dont_has_info>
+				<dont_has_info>arena_friend_3_fall</dont_has_info>
+                <text>bar_arena_take_rewqard_dialog_143</text>
+                <give_info>take_reward_friend_3</give_info>
+                <action>dialogs_east_bar.take_reward_friend_3</action>
+                <next>2</next>
+            </phrase>
+            <phrase id="144">
+                <has_info>bar_arena_enemy_friend_4_death</has_info>
+                <dont_has_info>take_reward_friend_4</dont_has_info>
+				<dont_has_info>arena_friend_4_fall</dont_has_info>
+                <text>bar_arena_take_rewqard_dialog_144</text>
+                <give_info>take_reward_friend_4</give_info>
+                <action>dialogs_east_bar.take_reward_friend_4</action>
+                <next>2</next>
+            </phrase>
+            <phrase id="145">
+                <has_info>bar_arena_enemy_friend_5_death</has_info>
+                <dont_has_info>take_reward_friend_5</dont_has_info>
+				<dont_has_info>arena_friend_5_fall</dont_has_info>
+                <text>bar_arena_take_rewqard_dialog_145</text>
+                <give_info>take_reward_friend_5</give_info>
+                <action>dialogs_east_bar.take_reward_friend_5</action>
+                <next>2</next>
+            </phrase>
+            <phrase id="151">
+                <has_info>bar_arena_enemy_hunt_1_death</has_info>
+                <dont_has_info>take_reward_hunt_1</dont_has_info>
+                <text>bar_arena_take_rewqard_dialog_151</text>
+                <give_info>take_reward_hunt_1</give_info>
+                <action>dialogs_east_bar.take_reward_hunt_1</action>
+                <next>2</next>
+            </phrase>
+            <phrase id="152">
+                <has_info>bar_arena_enemy_hunt_2_death</has_info>
+                <dont_has_info>take_reward_hunt_2</dont_has_info>
+                <text>bar_arena_take_rewqard_dialog_152</text>
+                <give_info>take_reward_hunt_2</give_info>
+                <action>dialogs_east_bar.take_reward_hunt_2</action>
+                <next>2</next>
+            </phrase>
+            <phrase id="153">
+                <has_info>bar_arena_enemy_hunt_3_death</has_info>
+                <dont_has_info>take_reward_hunt_3</dont_has_info>
+                <text>bar_arena_take_rewqard_dialog_153</text>
+                <give_info>take_reward_hunt_3</give_info>
+                <action>dialogs_east_bar.take_reward_hunt_3</action>
+                <next>2</next>
+            </phrase>
+            <phrase id="154">
+                <has_info>bar_arena_enemy_hunt_4_death</has_info>
+                <dont_has_info>take_reward_hunt_4</dont_has_info>
+                <text>bar_arena_take_rewqard_dialog_154</text>
+                <give_info>take_reward_hunt_4</give_info>
+                <action>dialogs_east_bar.take_reward_hunt_4</action>
+                <next>2</next>
+            </phrase>
+            <phrase id="155">
+                <has_info>bar_arena_enemy_hunt_5_death</has_info>
+                <dont_has_info>take_reward_hunt_5</dont_has_info>
+                <text>bar_arena_take_rewqard_dialog_155</text>
+                <give_info>take_reward_hunt_5</give_info>
+                <action>dialogs_east_bar.take_reward_hunt_5</action>
+                <next>2</next>
+            </phrase>
+            <phrase id="161">
+                <has_info>bar_arena_enemy_wantlive_1_death</has_info>
+                <dont_has_info>take_reward_wantlive_1</dont_has_info>
+                <text>bar_arena_take_rewqard_dialog_161</text>
+                <give_info>take_reward_wantlive_1</give_info>
+                <action>dialogs_east_bar.take_reward_wantlive_1</action>
+                <next>2</next>
+            </phrase>
+            <phrase id="162">
+                <has_info>bar_arena_enemy_wantlive_2_death</has_info>
+                <dont_has_info>take_reward_wantlive_2</dont_has_info>
+                <text>bar_arena_take_rewqard_dialog_162</text>
+                <give_info>take_reward_wantlive_2</give_info>
+                <action>dialogs_east_bar.take_reward_wantlive_2</action>
+                <next>2</next>
+            </phrase>
+            <phrase id="163">
+                <has_info>bar_arena_enemy_wantlive_3_death</has_info>
+                <dont_has_info>take_reward_wantlive_3</dont_has_info>
+                <text>bar_arena_take_rewqard_dialog_163</text>
+                <give_info>take_reward_wantlive_3</give_info>
+                <action>dialogs_east_bar.take_reward_wantlive_3</action>
+                <next>2</next>
+            </phrase>
+            <phrase id="164">
+                <has_info>bar_arena_enemy_wantlive_4_death</has_info>
+                <dont_has_info>take_reward_wantlive_4</dont_has_info>
+                <text>bar_arena_take_rewqard_dialog_164</text>
+                <give_info>take_reward_wantlive_4</give_info>
+                <action>dialogs_east_bar.take_reward_wantlive_4</action>
+                <next>2</next>
+            </phrase>
+            <phrase id="165">
+                <has_info>bar_arena_enemy_wantlive_5_death</has_info>
+                <dont_has_info>take_reward_wantlive_5</dont_has_info>
+                <text>bar_arena_take_rewqard_dialog_165</text>
+                <give_info>take_reward_wantlive_5</give_info>
+                <action>dialogs_east_bar.take_reward_wantlive_5</action>
+                <next>2</next>
+            </phrase>
+            <phrase id="2">
+                <text>bar_arena_take_rewqard_dialog_2</text>
+            </phrase>
+        </phrase_list>
+    </dialog>
+    <dialog id="bar_start_arena_kostolom_dialog">
+        <dont_has_info>arena_ready</dont_has_info>
+        <phrase_list>
+            <phrase id="21">
+                <text>bar_start_arena_kostolom_dialog_21</text>
+                <dont_has_info>bar_arena_enemy_duel_5_death</dont_has_info>
+                <next>311</next>
+                <next>312</next>
+                <next>313</next>
+                <next>314</next>
+                <next>315</next>
+            </phrase>
+            <phrase id="22">
+                <text>bar_start_arena_kostolom_dialog_22</text>
+                <dont_has_info>bar_arena_enemy_hunt_5_death</dont_has_info>
+                <next>321</next>
+                <next>322</next>
+                <next>323</next>
+                <next>324</next>
+                <next>325</next>
+            </phrase>
+            <phrase id="23">
+                <text>bar_start_arena_kostolom_dialog_23</text>
+                <dont_has_info>bar_arena_enemy_bodyguard_5_death</dont_has_info>
+                <next>331</next>
+                <next>332</next>
+                <next>333</next>
+                <next>334</next>
+                <next>335</next>
+                <next>337</next>
+                <next>338</next>
+                <next>339</next>
+            </phrase>
+            <phrase id="24">
+                <text>bar_start_arena_kostolom_dialog_24</text>
+                <dont_has_info>bar_arena_enemy_friend_5_death</dont_has_info>
+                <next>341</next>
+                <next>342</next>
+                <next>343</next>
+                <next>344</next>
+                <next>345</next>
+                <next>347</next>
+                <next>348</next>
+                <next>349</next>
+            </phrase>
+            <phrase id="25">
+                <text>bar_start_arena_kostolom_dialog_25</text>
+                <dont_has_info>bar_arena_enemy_wantlive_5_death</dont_has_info>
+                <next>351</next>
+                <next>352</next>
+                <next>353</next>
+                <next>354</next>
+                <next>355</next>
+            </phrase>
+            <phrase id="26">
+                <text>bar_start_arena_kostolom_dialog_26</text>
+                <dont_has_info>bar_arena_enemy_assalut_5_death</dont_has_info>
+                <next>361</next>
+                <next>362</next>
+                <next>363</next>
+                <next>364</next>
+                <next>365</next>
+            </phrase>
+            <phrase id="27">
+                <text>bar_start_arena_kostolom_dialog_27</text>
+                <next>10</next>
+            </phrase>
+            <phrase id="311">
+                <text>bar_start_arena_kostolom_dialog_311</text>
+                <dont_has_info>arena_start_duel_1</dont_has_info>
+                <give_info>arena_ready</give_info>
+                <give_info>arena_start_duel_1</give_info>
+                <next>4</next>
+            </phrase>
+            <phrase id="312">
+                <text>bar_start_arena_kostolom_dialog_312</text>
+                <dont_has_info>arena_start_duel_2</dont_has_info>
+                <give_info>arena_ready</give_info>
+                <give_info>arena_start_duel_2</give_info>
+                <has_info>bar_arena_enemy_duel_1_death</has_info>
+                <next>4</next>
+            </phrase>
+            <phrase id="313">
+                <text>bar_start_arena_kostolom_dialog_313</text>
+                <dont_has_info>arena_start_duel_3</dont_has_info>
+                <give_info>arena_ready</give_info>
+                <give_info>arena_start_duel_3</give_info>
+                <has_info>bar_arena_enemy_duel_2_death</has_info>
+                <next>4</next>
+            </phrase>
+            <phrase id="314">
+                <text>bar_start_arena_kostolom_dialog_314</text>
+                <dont_has_info>arena_start_duel_4</dont_has_info>
+                <give_info>arena_ready</give_info>
+                <give_info>arena_start_duel_4</give_info>
+                <has_info>bar_arena_enemy_duel_3_death</has_info>
+                <next>4</next>
+            </phrase>
+            <phrase id="315">
+                <text>bar_start_arena_kostolom_dialog_315</text>
+                <dont_has_info>arena_start_duel_5</dont_has_info>
+                <give_info>arena_ready</give_info>
+                <give_info>arena_start_duel_5</give_info>
+                <has_info>bar_arena_enemy_duel_4_death</has_info>
+                <next>4</next>
+            </phrase>
+            <phrase id="321">
+                <text>bar_start_arena_kostolom_dialog_321</text>
+                <dont_has_info>arena_start_hunt_1</dont_has_info>
+                <give_info>arena_ready</give_info>
+                <give_info>arena_start_hunt_1</give_info>
+                <next>4</next>
+            </phrase>
+            <phrase id="322">
+                <text>bar_start_arena_kostolom_dialog_322</text>
+                <dont_has_info>arena_start_hunt_2</dont_has_info>
+                <give_info>arena_ready</give_info>
+                <give_info>arena_start_hunt_2</give_info>
+                <has_info>bar_arena_enemy_hunt_1_death</has_info>
+                <next>4</next>
+            </phrase>
+            <phrase id="323">
+                <text>bar_start_arena_kostolom_dialog_323</text>
+                <dont_has_info>arena_start_hunt_3</dont_has_info>
+                <give_info>arena_ready</give_info>
+                <give_info>arena_start_hunt_3</give_info>
+                <has_info>bar_arena_enemy_hunt_2_death</has_info>
+                <next>4</next>
+            </phrase>
+            <phrase id="324">
+                <text>bar_start_arena_kostolom_dialog_324</text>
+                <dont_has_info>arena_start_hunt_4</dont_has_info>
+                <give_info>arena_ready</give_info>
+                <give_info>arena_start_hunt_4</give_info>
+                <has_info>bar_arena_enemy_hunt_3_death</has_info>
+                <next>4</next>
+            </phrase>
+            <phrase id="325">
+                <text>bar_start_arena_kostolom_dialog_325</text>
+                <dont_has_info>arena_start_hunt_5</dont_has_info>
+                <give_info>arena_ready</give_info>
+                <give_info>arena_start_hunt_5</give_info>
+                <has_info>bar_arena_enemy_hunt_4_death</has_info>
+                <next>4</next>
+            </phrase>
+            <phrase id="331">
+                <text>bar_start_arena_kostolom_dialog_331</text>
+                <dont_has_info>arena_start_bodyguard_1</dont_has_info>
+                <dont_has_info>bar_arena_bodyguard_death</dont_has_info>
+                <give_info>arena_ready</give_info>
+                <give_info>arena_start_bodyguard_1</give_info>
+                <has_info>bar_arena_bodyguard_on</has_info>
+                <next>4</next>
+            </phrase>
+            <phrase id="332">
+                <text>bar_start_arena_kostolom_dialog_332</text>
+                <dont_has_info>arena_start_bodyguard_2</dont_has_info>
+                <dont_has_info>bar_arena_bodyguard_death</dont_has_info>
+                <give_info>arena_ready</give_info>
+                <give_info>arena_start_bodyguard_2</give_info>
+                <has_info>bar_arena_enemy_bodyguard_1_death</has_info>
+                <has_info>bar_arena_bodyguard_on</has_info>
+                <next>4</next>
+            </phrase>
+            <phrase id="333">
+                <text>bar_start_arena_kostolom_dialog_333</text>
+                <dont_has_info>arena_start_bodyguard_3</dont_has_info>
+                <dont_has_info>bar_arena_bodyguard_death</dont_has_info>
+                <give_info>arena_ready</give_info>
+                <give_info>arena_start_bodyguard_3</give_info>
+                <has_info>bar_arena_enemy_bodyguard_2_death</has_info>
+                <has_info>bar_arena_bodyguard_on</has_info>
+                <next>4</next>
+            </phrase>
+            <phrase id="334">
+                <text>bar_start_arena_kostolom_dialog_334</text>
+                <dont_has_info>arena_start_bodyguard_4</dont_has_info>
+                <dont_has_info>bar_arena_bodyguard_death</dont_has_info>
+                <give_info>arena_ready</give_info>
+                <give_info>arena_start_bodyguard_4</give_info>
+                <has_info>bar_arena_enemy_bodyguard_3_death</has_info>
+                <has_info>bar_arena_bodyguard_on</has_info>
+                <next>4</next>
+            </phrase>
+            <phrase id="335">
+                <text>bar_start_arena_kostolom_dialog_335</text>
+                <dont_has_info>arena_start_bodyguard_5</dont_has_info>
+                <dont_has_info>bar_arena_bodyguard_death</dont_has_info>
+                <give_info>arena_ready</give_info>
+                <give_info>arena_start_bodyguard_5</give_info>
+                <has_info>bar_arena_enemy_bodyguard_4_death</has_info>
+                <has_info>bar_arena_bodyguard_on</has_info>
+                <next>4</next>
+            </phrase>
+            <phrase id="337">
+                <text>bar_start_arena_kostolom_dialog_337</text>
+                <action>dialogs_east_bar.give_task_naim_arena_bodyguard</action>
+                <dont_has_info>talk_kostolom_about_bodyguard</dont_has_info>
+                <dont_has_info>bar_arena_bodyguard_on</dont_has_info>
+                <give_info>talk_kostolom_about_bodyguard</give_info>
+            </phrase>
+            <phrase id="338">
+                <text>bar_start_arena_kostolom_dialog_338</text>
+                <dont_has_info>bar_arena_bodyguard_on</dont_has_info>
+                <has_info>talk_kostolom_about_bodyguard</has_info>
+            </phrase>
+            <phrase id="339">
+                <text>bar_start_arena_kostolom_dialog_339</text>
+                <has_info>bar_arena_bodyguard_death</has_info>
+            </phrase>
+            <phrase id="341">
+                <text>bar_start_arena_kostolom_dialog_341</text>
+                <dont_has_info>arena_start_friend_1</dont_has_info>
+                <dont_has_info>bar_arena_friend_death</dont_has_info>
+                <give_info>arena_ready</give_info>
+                <give_info>arena_start_friend_1</give_info>
+                <has_info>bar_arena_friend_on</has_info>
+                <next>4</next>
+            </phrase>
+            <phrase id="342">
+                <text>bar_start_arena_kostolom_dialog_342</text>
+                <dont_has_info>arena_start_friend_2</dont_has_info>
+                <dont_has_info>bar_arena_friend_death</dont_has_info>
+                <give_info>arena_ready</give_info>
+                <give_info>arena_start_friend_2</give_info>
+                <has_info>bar_arena_enemy_friend_1_death</has_info>
+                <has_info>bar_arena_friend_on</has_info>
+                <next>4</next>
+            </phrase>
+            <phrase id="343">
+                <text>bar_start_arena_kostolom_dialog_343</text>
+                <dont_has_info>arena_start_friend_3</dont_has_info>
+                <dont_has_info>bar_arena_friend_death</dont_has_info>
+                <give_info>arena_ready</give_info>
+                <give_info>arena_start_friend_3</give_info>
+                <has_info>bar_arena_enemy_friend_2_death</has_info>
+                <has_info>bar_arena_friend_on</has_info>
+                <next>4</next>
+            </phrase>
+            <phrase id="344">
+                <text>bar_start_arena_kostolom_dialog_344</text>
+                <dont_has_info>arena_start_friend_4</dont_has_info>
+                <dont_has_info>bar_arena_friend_death</dont_has_info>
+                <give_info>arena_ready</give_info>
+                <give_info>arena_start_friend_4</give_info>
+                <has_info>bar_arena_enemy_friend_3_death</has_info>
+                <has_info>bar_arena_friend_on</has_info>
+                <next>4</next>
+            </phrase>
+            <phrase id="345">
+                <text>bar_start_arena_kostolom_dialog_345</text>
+                <dont_has_info>arena_start_friend_5</dont_has_info>
+                <dont_has_info>bar_arena_friend_death</dont_has_info>
+                <give_info>arena_ready</give_info>
+                <give_info>arena_start_friend_5</give_info>
+                <has_info>bar_arena_enemy_friend_4_death</has_info>
+                <has_info>bar_arena_friend_on</has_info>
+                <next>4</next>
+            </phrase>
+            <phrase id="347">
+                <text>bar_start_arena_kostolom_dialog_347</text>
+                <action>dialogs_east_bar.give_task_naim_arena_friend</action>
+                <dont_has_info>talk_kostolom_about_friend</dont_has_info>
+                <dont_has_info>bar_arena_friend_on</dont_has_info>
+                <give_info>talk_kostolom_about_friend</give_info>
+            </phrase>
+            <phrase id="348">
+                <text>bar_start_arena_kostolom_dialog_348</text>
+                <dont_has_info>bar_arena_friend_on</dont_has_info>
+                <has_info>talk_kostolom_about_friend</has_info>
+            </phrase>
+            <phrase id="349">
+                <text>bar_start_arena_kostolom_dialog_349</text>
+                <has_info>bar_arena_friend_death</has_info>
+            </phrase>
+            <phrase id="351">
+                <text>bar_start_arena_kostolom_dialog_351</text>
+                <dont_has_info>arena_start_wantlive_1</dont_has_info>
+                <give_info>arena_ready</give_info>
+                <give_info>arena_start_wantlive_1</give_info>
+                <next>4</next>
+            </phrase>
+            <phrase id="352">
+                <text>bar_start_arena_kostolom_dialog_352</text>
+                <dont_has_info>arena_start_wantlive_2</dont_has_info>
+                <give_info>arena_ready</give_info>
+                <give_info>arena_start_wantlive_2</give_info>
+                <has_info>bar_arena_enemy_wantlive_1_death</has_info>
+                <next>4</next>
+            </phrase>
+            <phrase id="353">
+                <text>bar_start_arena_kostolom_dialog_353</text>
+                <dont_has_info>arena_start_wantlive_3</dont_has_info>
+                <give_info>arena_ready</give_info>
+                <give_info>arena_start_wantlive_3</give_info>
+                <has_info>bar_arena_enemy_wantlive_2_death</has_info>
+                <next>4</next>
+            </phrase>
+            <phrase id="354">
+                <text>bar_start_arena_kostolom_dialog_354</text>
+                <dont_has_info>arena_start_wantlive_4</dont_has_info>
+                <give_info>arena_ready</give_info>
+                <give_info>arena_start_wantlive_4</give_info>
+                <has_info>bar_arena_enemy_wantlive_3_death</has_info>
+                <next>4</next>
+            </phrase>
+            <phrase id="355">
+                <text>bar_start_arena_kostolom_dialog_355</text>
+                <dont_has_info>arena_start_wantlive_5</dont_has_info>
+                <give_info>arena_ready</give_info>
+                <give_info>arena_start_wantlive_5</give_info>
+                <has_info>bar_arena_enemy_wantlive_4_death</has_info>
+                <next>4</next>
+            </phrase>
+            <phrase id="361">
+                <text>bar_start_arena_kostolom_dialog_361</text>
+                <dont_has_info>bar_arena_enemy_assalut_1_death</dont_has_info>
+                <give_info>arena_ready</give_info>
+                <give_info>arena_start_assalut_1</give_info>
+                <next>4</next>
+            </phrase>
+            <phrase id="362">
+                <text>bar_start_arena_kostolom_dialog_362</text>
+                <dont_has_info>bar_arena_enemy_assalut_2_death</dont_has_info>
+                <give_info>arena_ready</give_info>
+                <give_info>arena_start_assalut_2</give_info>
+                <has_info>arena_start_assalut_1</has_info>
+                <next>4</next>
+            </phrase>
+            <phrase id="363">
+                <text>bar_start_arena_kostolom_dialog_363</text>
+                <dont_has_info>bar_arena_enemy_assalut_3_death</dont_has_info>
+                <give_info>arena_ready</give_info>
+                <give_info>arena_start_assalut_3</give_info>
+                <has_info>arena_start_assalut_2</has_info>
+                <next>4</next>
+            </phrase>
+            <phrase id="364">
+                <text>bar_start_arena_kostolom_dialog_364</text>
+                <dont_has_info>bar_arena_enemy_assalut_4_death</dont_has_info>
+                <give_info>arena_ready</give_info>
+                <give_info>arena_start_assalut_4</give_info>
+                <has_info>arena_start_assalut_3</has_info>
+                <next>4</next>
+            </phrase>
+            <phrase id="365">
+                <text>bar_start_arena_kostolom_dialog_365</text>
+                <dont_has_info>bar_arena_enemy_assalut_5_death</dont_has_info>
+                <give_info>arena_ready</give_info>
+                <give_info>arena_start_assalut_5</give_info>
+                <has_info>arena_start_assalut_4</has_info>
+                <next>4</next>
+            </phrase>
+            <phrase id="4">
+                <text>bar_start_arena_kostolom_dialog_4</text>
+                <next>5</next>
+            </phrase>
+            <phrase id="812">
+                <text>bar_start_arena_kostolom_dialog_812</text>
+                <action>dialogs_east_bar.give_actor_inventory_to_duel_2</action>
+                <dont_has_info>bar_arena_enemy_duel_2_death</dont_has_info>
+                <has_info>arena_start_duel_2</has_info>
+                <next>9</next>
+            </phrase>
+            <phrase id="813">
+                <text>bar_start_arena_kostolom_dialog_813</text>
+                <action>dialogs_east_bar.give_actor_inventory_to_duel_3</action>
+                <dont_has_info>bar_arena_enemy_duel_3_death</dont_has_info>
+                <has_info>arena_start_duel_3</has_info>
+                <next>9</next>
+            </phrase>
+            <phrase id="814">
+                <text>bar_start_arena_kostolom_dialog_814</text>
+                <action>dialogs_east_bar.give_actor_inventory_to_duel_4</action>
+                <dont_has_info>bar_arena_enemy_duel_4_death</dont_has_info>
+                <has_info>arena_start_duel_4</has_info>
+                <next>9</next>
+            </phrase>
+            <phrase id="815">
+                <text>bar_start_arena_kostolom_dialog_815</text>
+                <action>dialogs_east_bar.give_actor_inventory_to_duel_5</action>
+                <dont_has_info>bar_arena_enemy_duel_5_death</dont_has_info>
+                <has_info>arena_start_duel_5</has_info>
+                <next>9</next>
+            </phrase>
+            <phrase id="821">
+                <text>bar_start_arena_kostolom_dialog_821</text>
+                <action>dialogs_east_bar.give_actor_inventory_to_hunt_1</action>
+                <dont_has_info>bar_arena_enemy_hunt_1_death</dont_has_info>
+                <has_info>arena_start_hunt_1</has_info>
+                <next>9</next>
+            </phrase>
+            <phrase id="822">
+                <text>bar_start_arena_kostolom_dialog_822</text>
+                <action>dialogs_east_bar.give_actor_inventory_to_hunt_2</action>
+                <dont_has_info>bar_arena_enemy_hunt_2_death</dont_has_info>
+                <has_info>arena_start_hunt_2</has_info>
+                <next>9</next>
+            </phrase>
+            <phrase id="823">
+                <text>bar_start_arena_kostolom_dialog_823</text>
+                <action>dialogs_east_bar.give_actor_inventory_to_hunt_3</action>
+                <dont_has_info>bar_arena_enemy_hunt_3_death</dont_has_info>
+                <has_info>arena_start_hunt_3</has_info>
+                <next>9</next>
+            </phrase>
+            <phrase id="824">
+                <text>bar_start_arena_kostolom_dialog_824</text>
+                <action>dialogs_east_bar.give_actor_inventory_to_hunt_4</action>
+                <dont_has_info>bar_arena_enemy_hunt_4_death</dont_has_info>
+                <has_info>arena_start_hunt_4</has_info>
+                <next>9</next>
+            </phrase>
+            <phrase id="825">
+                <text>bar_start_arena_kostolom_dialog_825</text>
+                <action>dialogs_east_bar.give_actor_inventory_to_hunt_5</action>
+                <dont_has_info>bar_arena_enemy_hunt_5_death</dont_has_info>
+                <has_info>arena_start_hunt_5</has_info>
+                <next>9</next>
+            </phrase>
+            <phrase id="831">
+                <text>bar_start_arena_kostolom_dialog_831</text>
+                <action>dialogs_east_bar.give_actor_inventory_to_bodyguard_1</action>
+                <dont_has_info>bar_arena_enemy_bodyguard_1_death</dont_has_info>
+                <has_info>arena_start_bodyguard_1</has_info>
+                <next>9</next>
+            </phrase>
+            <phrase id="832">
+                <text>bar_start_arena_kostolom_dialog_832</text>
+                <action>dialogs_east_bar.give_actor_inventory_to_bodyguard_2</action>
+                <dont_has_info>bar_arena_enemy_bodyguard_2_death</dont_has_info>
+                <has_info>arena_start_bodyguard_2</has_info>
+                <next>9</next>
+            </phrase>
+            <phrase id="833">
+                <text>bar_start_arena_kostolom_dialog_833</text>
+                <action>dialogs_east_bar.give_actor_inventory_to_bodyguard_3</action>
+                <dont_has_info>bar_arena_enemy_bodyguard_3_death</dont_has_info>
+                <has_info>arena_start_bodyguard_3</has_info>
+                <next>9</next>
+            </phrase>
+            <phrase id="834">
+                <text>bar_start_arena_kostolom_dialog_834</text>
+                <action>dialogs_east_bar.give_actor_inventory_to_bodyguard_4</action>
+                <dont_has_info>bar_arena_enemy_bodyguard_4_death</dont_has_info>
+                <has_info>arena_start_bodyguard_4</has_info>
+                <next>9</next>
+            </phrase>
+            <phrase id="835">
+                <text>bar_start_arena_kostolom_dialog_835</text>
+                <action>dialogs_east_bar.give_actor_inventory_to_bodyguard_5</action>
+                <dont_has_info>bar_arena_enemy_bodyguard_5_death</dont_has_info>
+                <has_info>arena_start_bodyguard_5</has_info>
+                <next>9</next>
+            </phrase>
+            <phrase id="841">
+                <text>bar_start_arena_kostolom_dialog_841</text>
+                <action>dialogs_east_bar.give_actor_inventory_to_friend_1</action>
+                <dont_has_info>bar_arena_enemy_friend_1_death</dont_has_info>
+                <has_info>arena_start_friend_1</has_info>
+                <next>9</next>
+            </phrase>
+            <phrase id="842">
+                <text>bar_start_arena_kostolom_dialog_842</text>
+                <action>dialogs_east_bar.give_actor_inventory_to_friend_2</action>
+                <dont_has_info>bar_arena_enemy_friend_2_death</dont_has_info>
+                <has_info>arena_start_friend_2</has_info>
+                <next>9</next>
+            </phrase>
+            <phrase id="843">
+                <text>bar_start_arena_kostolom_dialog_843</text>
+                <action>dialogs_east_bar.give_actor_inventory_to_friend_3</action>
+                <dont_has_info>bar_arena_enemy_friend_3_death</dont_has_info>
+                <has_info>arena_start_friend_3</has_info>
+                <next>9</next>
+            </phrase>
+            <phrase id="844">
+                <text>bar_start_arena_kostolom_dialog_844</text>
+                <action>dialogs_east_bar.give_actor_inventory_to_friend_4</action>
+                <dont_has_info>bar_arena_enemy_friend_4_death</dont_has_info>
+                <has_info>arena_start_friend_4</has_info>
+                <next>9</next>
+            </phrase>
+            <phrase id="845">
+                <text>bar_start_arena_kostolom_dialog_845</text>
+                <action>dialogs_east_bar.give_actor_inventory_to_friend_5</action>
+                <dont_has_info>bar_arena_enemy_friend_5_death</dont_has_info>
+                <has_info>arena_start_friend_5</has_info>
+                <next>9</next>
+            </phrase>
+            <phrase id="851">
+                <text>bar_start_arena_kostolom_dialog_851</text>
+                <action>dialogs_east_bar.give_actor_inventory_to_wantlive_1</action>
+                <dont_has_info>bar_arena_enemy_wantlive_1_death</dont_has_info>
+                <has_info>arena_start_wantlive_1</has_info>
+                <next>9</next>
+            </phrase>
+            <phrase id="852">
+                <text>bar_start_arena_kostolom_dialog_852</text>
+                <action>dialogs_east_bar.give_actor_inventory_to_wantlive_2</action>
+                <dont_has_info>bar_arena_enemy_wantlive_2_death</dont_has_info>
+                <has_info>arena_start_wantlive_2</has_info>
+                <next>9</next>
+            </phrase>
+            <phrase id="853">
+                <text>bar_start_arena_kostolom_dialog_853</text>
+                <action>dialogs_east_bar.give_actor_inventory_to_wantlive_3</action>
+                <dont_has_info>bar_arena_enemy_wantlive_3_death</dont_has_info>
+                <has_info>arena_start_wantlive_3</has_info>
+                <next>9</next>
+            </phrase>
+            <phrase id="854">
+                <text>bar_start_arena_kostolom_dialog_854</text>
+                <action>dialogs_east_bar.give_actor_inventory_to_wantlive_4</action>
+                <dont_has_info>bar_arena_enemy_wantlive_4_death</dont_has_info>
+                <has_info>arena_start_wantlive_4</has_info>
+                <next>9</next>
+            </phrase>
+            <phrase id="855">
+                <text>bar_start_arena_kostolom_dialog_855</text>
+                <action>dialogs_east_bar.give_actor_inventory_to_wantlive_5</action>
+                <dont_has_info>bar_arena_enemy_wantlive_5_death</dont_has_info>
+                <has_info>arena_start_wantlive_5</has_info>
+                <next>9</next>
+            </phrase>
+            <phrase id="861">
+                <text>bar_start_arena_kostolom_dialog_861</text>
+                <action>dialogs_east_bar.give_actor_inventory_to_assalut_1</action>
+                <dont_has_info>bar_arena_enemy_assalut_1_death</dont_has_info>
+                <has_info>arena_start_assalut_1</has_info>
+                <next>9</next>
+            </phrase>
+            <phrase id="862">
+                <text>bar_start_arena_kostolom_dialog_862</text>
+                <action>dialogs_east_bar.give_actor_inventory_to_assalut_2</action>
+                <dont_has_info>bar_arena_enemy_assalut_2_death</dont_has_info>
+                <has_info>arena_start_assalut_2</has_info>
+                <next>9</next>
+            </phrase>
+            <phrase id="863">
+                <text>bar_start_arena_kostolom_dialog_863</text>
+                <action>dialogs_east_bar.give_actor_inventory_to_assalut_3</action>
+                <dont_has_info>bar_arena_enemy_assalut_3_death</dont_has_info>
+                <has_info>arena_start_assalut_3</has_info>
+                <next>9</next>
+            </phrase>
+            <phrase id="864">
+                <text>bar_start_arena_kostolom_dialog_864</text>
+                <action>dialogs_east_bar.give_actor_inventory_to_assalut_4</action>
+                <dont_has_info>bar_arena_enemy_assalut_4_death</dont_has_info>
+                <has_info>arena_start_assalut_4</has_info>
+                <next>9</next>
+            </phrase>
+            <phrase id="865">
+                <text>bar_start_arena_kostolom_dialog_865</text>
+                <action>dialogs_east_bar.give_actor_inventory_to_assalut_5</action>
+                <dont_has_info>bar_arena_enemy_assalut_5_death</dont_has_info>
+                <has_info>arena_start_assalut_5</has_info>
+                <next>9</next>
+            </phrase>
+            <phrase id="9">
+                <text>bar_start_arena_kostolom_dialog_9</text>
+            </phrase>
+            <phrase id="10">
+                <text>bar_start_arena_kostolom_dialog_10</text>
+            </phrase>
+            <phrase id="5">
+                <text>bar_start_arena_kostolom_dialog_5</text>
+                <next>6</next>
+            </phrase>
+            <phrase id="6">
+                <text>bar_start_arena_kostolom_dialog_6</text>
+                <action>dialogs_east_bar.relocate_actor_inventory_to_arena_box</action>
+                <next>7</next>
+            </phrase>
+            <phrase id="811">
+                <text>bar_start_arena_kostolom_dialog_811</text>
+                <action>dialogs_east_bar.give_actor_inventory_to_duel_1</action>
+                <dont_has_info>bar_arena_enemy_duel_1_death</dont_has_info>
+                <has_info>arena_start_duel_1</has_info>
+                <next>9</next>
+            </phrase>
+            <phrase id="7">
+                <text>bar_start_arena_kostolom_dialog_7</text>
+                <next>811</next>
+                <next>812</next>
+                <next>813</next>
+                <next>814</next>
+                <next>815</next>
+                <next>821</next>
+                <next>822</next>
+                <next>823</next>
+                <next>824</next>
+                <next>825</next>
+                <next>831</next>
+                <next>832</next>
+                <next>833</next>
+                <next>834</next>
+                <next>835</next>
+                <next>841</next>
+                <next>842</next>
+                <next>843</next>
+                <next>844</next>
+                <next>845</next>
+                <next>851</next>
+                <next>852</next>
+                <next>853</next>
+                <next>854</next>
+                <next>855</next>
+                <next>861</next>
+                <next>862</next>
+                <next>863</next>
+                <next>864</next>
+                <next>865</next>
+            </phrase>
+            <phrase id="0">
+                <text>bar_start_arena_kostolom_dialog_0</text>
+                <next>1</next>
+            </phrase>
+            <phrase id="1">
+                <text>bar_start_arena_kostolom_dialog_1</text>
+                <give_info>bar_arena_kostolom_first_talk</give_info>
+                <next>21</next>
+                <next>22</next>
+                <next>23</next>
+                <next>24</next>
+                <next>25</next>
+                <next>26</next>
+                <next>27</next>
+            </phrase>
+        </phrase_list>
+    </dialog>
+    <dialog id="bar_about_arena_kostolom_dialog">
+        <phrase_list>
+            <phrase id="21">
+                <text>bar_about_arena_kostolom_dialog_21</text>
+                <next>31</next>
+            </phrase>
+            <phrase id="22">
+                <text>bar_about_arena_kostolom_dialog_22</text>
+                <next>32</next>
+            </phrase>
+            <phrase id="23">
+                <text>bar_about_arena_kostolom_dialog_23</text>
+                <next>33</next>
+            </phrase>
+            <phrase id="24">
+                <text>bar_about_arena_kostolom_dialog_24</text>
+                <next>34</next>
+            </phrase>
+            <phrase id="25">
+                <text>bar_about_arena_kostolom_dialog_25</text>
+                <next>35</next>
+            </phrase>
+            <phrase id="26">
+                <text>bar_about_arena_kostolom_dialog_26</text>
+                <next>36</next>
+            </phrase>
+            <phrase id="31">
+                <text>bar_about_arena_kostolom_dialog_31</text>
+                <next>41</next>
+            </phrase>
+            <phrase id="32">
+                <text>bar_about_arena_kostolom_dialog_32</text>
+                <next>42</next>
+            </phrase>
+            <phrase id="33">
+                <text>bar_about_arena_kostolom_dialog_33</text>
+                <next>43</next>
+            </phrase>
+            <phrase id="34">
+                <text>bar_about_arena_kostolom_dialog_34</text>
+                <next>44</next>
+            </phrase>
+            <phrase id="35">
+                <text>bar_about_arena_kostolom_dialog_35</text>
+                <next>45</next>
+            </phrase>
+            <phrase id="36">
+                <text>bar_about_arena_kostolom_dialog_36</text>
+                <next>46</next>
+            </phrase>
+            <phrase id="41">
+                <text>bar_about_arena_kostolom_dialog_41</text>
+            </phrase>
+            <phrase id="42">
+                <text>bar_about_arena_kostolom_dialog_42</text>
+            </phrase>
+            <phrase id="43">
+                <text>bar_about_arena_kostolom_dialog_43</text>
+            </phrase>
+            <phrase id="44">
+                <text>bar_about_arena_kostolom_dialog_44</text>
+            </phrase>
+            <phrase id="45">
+                <text>bar_about_arena_kostolom_dialog_45</text>
+            </phrase>
+            <phrase id="46">
+                <text>bar_about_arena_kostolom_dialog_46</text>
+            </phrase>
+            <phrase id="0">
+                <text>bar_about_arena_kostolom_dialog_0</text>
+                <next>1</next>
+            </phrase>
+            <phrase id="1">
+                <text>bar_about_arena_kostolom_dialog_1</text>
+                <next>21</next>
+                <next>22</next>
+                <next>23</next>
+                <next>24</next>
+                <next>25</next>
+                <next>26</next>
+            </phrase>
+        </phrase_list>
+    </dialog>
+    <dialog id="bar_start_arena_kalgun_dialog">
+		<dont_has_info>bar_arena_kalgun_first_talk</dont_has_info>
+        <phrase_list>
+            <phrase id="0">
+                <text>bar_start_arena_kalgun_dialog_0</text>
+                <next>1</next>
+            </phrase>
+            <phrase id="1">
+                <text>bar_start_arena_kalgun_dialog_1</text>
+                <give_info>bar_arena_kalgun_first_talk</give_info>
+                <next>2</next>
+            </phrase>
+            <phrase id="2">
+                <text>bar_start_arena_kalgun_dialog_2</text>
+                <next>3</next>
+            </phrase>
+            <phrase id="3">
+                <text>bar_start_arena_kalgun_dialog_3</text>
+                <action>dialogs_east_bar.give_task_kostolom_first_talk</action>
+                <next>4</next>
+            </phrase>
+            <phrase id="4">
+                <text>bar_start_arena_kalgun_dialog_4</text>
+            </phrase>
+        </phrase_list>
+    </dialog>
+	
+	
+	
+	<!--------------------------------------------------------->
+	<!------------- СЮЖЕТНЫЕ ДИАЛОГИ  ------------------------->
+	<!--------------------------------------------------------->
+	
+	    <dialog id="bar_first_talk_barmen_dialog">
+	  <has_info>bar_first_talk_barmen_dialog_open</has_info>
+        <dont_has_info>bar_first_talk_barmen_dialog_info</dont_has_info>
+        <phrase_list>
+            <phrase id="0">
+                <text>bar_first_talk_barmen_dialog_0</text>
+				<give_info>bar_first_talk_barmen_complete</give_info>
+                <next>1</next>
+            </phrase>
+            <phrase id="1">
+                <text>bar_first_talk_barmen_dialog_1</text>
+				<next>2</next>
+            </phrase>
+            <phrase id="2">
+                <text>bar_first_talk_barmen_dialog_2</text>
+				<next>3</next>
+            </phrase>
+            <phrase id="3">
+                <text>bar_first_talk_barmen_dialog_3</text>
+				<next>4</next>
+            </phrase>
+			 <phrase id="4">
+                <text>bar_first_talk_barmen_dialog_4</text>
+                <give_info>bar_first_talk_barmen_dialog_info</give_info>
+				<action>dialogs.break_dialog</action>
+            </phrase>
+        </phrase_list>
+    </dialog>
+	
+	
+	<dialog id="bar_doc_barmen_dialog">
+	  <has_info>bar_doc_barmen_dialog_open</has_info>
+        <dont_has_info>bar_doc_barmen_dialog_info</dont_has_info>
+        <phrase_list>
+            <phrase id="0">
+                <text>bar_doc_barmen_dialog_0</text>
+                <next>1</next>
+            </phrase>
+            <phrase id="1">
+                <text>bar_doc_barmen_dialog_1</text>
+				<next>111</next>
+				<next>112</next>
+				<next>113</next>
+            </phrase>
+            <phrase id="111">
+			<dont_has_info>bar_doc_barmen_doc_1</dont_has_info>
+			<precondition>dialogs_east_bar.bar_doc_1_precondition</precondition>
+			<action>dialogs_east_bar.transfer_bar_doc_1</action>
+			 <give_info>bar_doc_barmen_doc_1</give_info>
+                <text>bar_doc_barmen_dialog_111</text>
+                <next>2</next>
+            </phrase>
+            <phrase id="112">
+			<dont_has_info>bar_doc_barmen_doc_2</dont_has_info>
+			<precondition>dialogs_east_bar.bar_doc_2_precondition</precondition>
+			<action>dialogs_east_bar.transfer_bar_doc_2</action>
+			<give_info>bar_doc_barmen_doc_2</give_info>
+                <text>bar_doc_barmen_dialog_112</text>
+                <next>2</next>
+            </phrase>	
+            <phrase id="113">
+			<dont_has_info>bar_doc_barmen_doc_3</dont_has_info>
+			<precondition>dialogs_east_bar.bar_doc_3_precondition</precondition>
+			<action>dialogs_east_bar.transfer_bar_doc_3</action>
+			<give_info>bar_doc_barmen_doc_3</give_info>
+                <text>bar_doc_barmen_dialog_113</text>
+                <next>2</next>
+            </phrase>	
+            <phrase id="2">
+                <text>bar_doc_barmen_dialog_2</text>
+				<action>dialogs_east_bar.bar_doc_money</action>
+				<next>111</next>
+				<next>112</next>
+				<next>113</next>
+				<next>3</next>
+            </phrase>
+			 <phrase id="3">
+                <text>bar_doc_barmen_dialog_3</text>
+				<give_info>labx5_quest_doc_complete</give_info>
+                <give_info>bar_doc_barmen_dialog_info</give_info>
+				<action>dialogs.break_dialog</action>
+            </phrase>
+        </phrase_list>
+    </dialog>
+	
+	
+
+
+	
+
+	
+	
+	<dialog id="bar_new_details_barmen_dialog">
+	  <has_info>bar_new_details_barmen_dialog_open</has_info>
+        <dont_has_info>bar_new_details_barmen_dialog_info</dont_has_info>
+        <phrase_list>
+            <phrase id="0">
+                <text>bar_new_details_barmen_dialog_0</text>
+                <next>1</next>
+            </phrase>
+            <phrase id="1">
+                <text>bar_new_details_barmen_dialog_1</text>
+				<next>2</next>
+            </phrase>
+            <phrase id="2">
+                <text>bar_new_details_barmen_dialog_2</text>
+				<next>3</next>
+            </phrase>			
+            <phrase id="3">
+                <text>bar_new_details_barmen_dialog_3</text>
+				<next>4</next>
+            </phrase>
+            <phrase id="4">
+                <text>bar_new_details_barmen_dialog_4</text>
+				<next>5</next>
+            </phrase>
+            <phrase id="5">
+                <text>bar_new_details_barmen_dialog_5</text>
+				<next>6</next>
+            </phrase>			
+            <phrase id="6">
+                <text>bar_new_details_barmen_dialog_6</text>
+				<next>7</next>
+            </phrase>
+            <phrase id="7">
+                <text>bar_new_details_barmen_dialog_7</text>
+				<next>8</next>
+            </phrase>
+			 <phrase id="8">
+                <text>bar_new_details_barmen_dialog_8</text>
+				<give_info>bar_new_details_barland_dialog_open</give_info>
+                <give_info>bar_new_details_barmen_dialog_info</give_info>
+				<action>dialogs.break_dialog</action>
+            </phrase>
+        </phrase_list>
+    </dialog>
+	
+	<dialog id="bar_new_details_barland_dialog">
+	  <has_info>bar_new_details_barland_dialog_open</has_info>
+        <dont_has_info>bar_new_details_barland_dialog_open_info</dont_has_info>
+        <phrase_list>
+            <phrase id="0">
+                <text>bar_new_details_barland_dialog_0</text>
+                <next>1</next>
+            </phrase>
+            <phrase id="1">
+                <text>bar_new_details_barland_dialog_1</text>
+				<next>2</next>
+            </phrase>
+            <phrase id="2">
+                <text>bar_new_details_barland_dialog_2</text>
+				<next>3</next>
+            </phrase>			
+            <phrase id="3">
+                <text>bar_new_details_barland_dialog_3</text>
+				<next>4</next>
+            </phrase>
+            <phrase id="4">
+                <text>bar_new_details_barland_dialog_4</text>
+				<next>5</next>
+            </phrase>
+            <phrase id="5">
+                <text>bar_new_details_barland_dialog_5</text>
+				<next>6</next>
+            </phrase>			
+            <phrase id="6">
+                <text>bar_new_details_barland_dialog_6</text>
+				<next>7</next>
+            </phrase>
+			 <phrase id="7">
+                <text>bar_new_details_barland_dialog_7</text>
+                <give_info>bar_new_details_barland_dialog_info</give_info>
+				<give_info>bar_new_details_complete</give_info>
+				<action>dialogs.break_dialog</action>
+            </phrase>
+        </phrase_list>
+    </dialog>
+	
+	
+	<dialog id="bar_expectation_barmen_dialog">
+
+	  <has_info>bar_expectation_barmen_open</has_info>
+        <dont_has_info>bar_expectation_barmen_info</dont_has_info>
+        <phrase_list>
+            <phrase id="0">
+                <text>bar_expectation_barmen_dialog_0</text>
+				<give_info>bar_expectation_complete</give_info>
+                <next>1</next>
+            </phrase>
+            <phrase id="1">
+                <text>bar_expectation_barmen_dialog_1</text>
+				<next>2</next>
+            </phrase>
+            <phrase id="2">
+                <text>bar_expectation_barmen_dialog_2</text>
+				<next>3</next>
+            </phrase>			
+            <phrase id="3">
+                <text>bar_expectation_barmen_dialog_3</text>
+				<next>4</next>
+            </phrase>
+            <phrase id="4">
+                <text>bar_expectation_barmen_dialog_4</text>
+				<next>5</next>
+            </phrase>
+            <phrase id="5">
+                <text>bar_expectation_barmen_dialog_5</text>
+				<next>6</next>
+            </phrase>			
+            <phrase id="6">
+                <text>bar_expectation_barmen_dialog_6</text>
+				<next>7</next>
+            </phrase>
+            <phrase id="7">
+                <text>bar_expectation_barmen_dialog_7</text>
+				<next>8</next>
+            </phrase>
+            <phrase id="8">
+                <text>bar_expectation_barmen_dialog_8</text>
+				<next>9</next>
+            </phrase>
+            <phrase id="9">
+                <text>bar_expectation_barmen_dialog_9</text>
+				<next>10</next>
+            </phrase>
+			 <phrase id="10">
+                <text>bar_expectation_barmen_dialog_10</text>
+                <give_info>bar_expectation_barmen_info</give_info>
+				<action>dialogs.break_dialog</action>
+            </phrase>
+        </phrase_list>
+    </dialog>
+	
+	
+	<dialog id="bar_expectation_voronin_dialog">
+	  <has_info>bar_expectation_voronin_dialog_open</has_info>
+        <dont_has_info>bar_expectation_voronin_dialog_info</dont_has_info>
+        <phrase_list>
+            <phrase id="0">
+                <text>bar_expectation_voronin_dialog_0</text>
+                <next>1</next>
+            </phrase>
+            <phrase id="1">
+                <text>bar_expectation_voronin_dialog_1</text>
+				<next>2</next>
+            </phrase>
+            <phrase id="2">
+                <text>bar_expectation_voronin_dialog_2</text>
+				<next>3</next>
+            </phrase>			
+            <phrase id="3">
+                <text>bar_expectation_voronin_dialog_3</text>
+				<next>4</next>
+            </phrase>
+            <phrase id="4">
+                <text>bar_expectation_voronin_dialog_4</text>
+				<next>5</next>
+            </phrase>
+            <phrase id="5">
+                <text>bar_expectation_voronin_dialog_5</text>
+				<next>6</next>
+            </phrase>			
+            <phrase id="6">
+                <text>bar_expectation_voronin_dialog_6</text>
+				<next>7</next>
+            </phrase>
+            <phrase id="7">
+                <text>bar_expectation_voronin_dialog_7</text>
+				<next>8</next>
+            </phrase>
+			 <phrase id="8">
+                <text>bar_expectation_voronin_dialog_8</text>
+				<give_info>bar_dangerous_duty_start</give_info>
+                <give_info>bar_expectation_voronin_dialog_info</give_info>
+				<action>dialogs.break_dialog</action>
+            </phrase>
+        </phrase_list>
+    </dialog>
+	
+	
+	<dialog id="bar_npc_dolg_general_dangerous_duty_dialog">
+	  <has_info>bar_dangerous_duty_time</has_info>
+        <dont_has_info>bar_npc_dolg_general_dangerous_duty_dialog_info</dont_has_info>
+        <phrase_list>
+            <phrase id="0">
+                <text>bar_npc_dolg_general_dangerous_duty_dialog_0</text>
+                <next>1</next>
+            </phrase>
+			 <phrase id="1">
+                <text>bar_npc_dolg_general_dangerous_duty_dialog_1</text>
+				<give_info>bar_npc_dolg_general_dangerous_duty_start</give_info>
+                <give_info>bar_npc_dolg_general_dangerous_duty_dialog_info</give_info>
+				<action>dialogs.break_dialog</action>
+            </phrase>
+        </phrase_list>
+    </dialog>
+	
+
+	<dialog id="bar_npc_dolg_general_dangerous_duty_2_dialog">
+        <dont_has_info>bar_npc_dolg_general_dangerous_duty_2_dialog_info</dont_has_info>
+        <phrase_list>
+            <phrase id="0">
+                <text>bar_npc_dolg_general_dangerous_duty_2_dialog_0</text>
+                <next>1</next>
+            </phrase>
+	        <phrase id="1">
+                <text>bar_npc_dolg_general_dangerous_duty_2_dialog_1</text>
+                <next>2</next>
+            </phrase>
+            <phrase id="2">
+                <text>bar_npc_dolg_general_dangerous_duty_2_dialog_2</text>
+                <next>3</next>
+            </phrase>		
+			 <phrase id="3">
+                <text>bar_npc_dolg_general_dangerous_duty_2_dialog_3</text>
+                <give_info>bar_npc_dolg_general_dangerous_duty_2_dialog_info</give_info>
+				<give_info>bar_expectation_barmen_part2_dialog_open</give_info>
+				<action>dialogs.break_dialog</action>
+            </phrase>
+        </phrase_list>
+    </dialog>
+	
+	<dialog id="bar_expectation_barmen_part2_dialog">
+	  <has_info>bar_expectation_barmen_part2_dialog_open</has_info>
+        <dont_has_info>bar_expectation_barmen_part2_dialog_info</dont_has_info>
+        <phrase_list>
+            <phrase id="0">
+                <text>bar_expectation_barmen_part2_dialog_0</text>
+				<give_info>bar_cooperation_complete</give_info>
+                <next>1</next>
+            </phrase>
+            <phrase id="1">
+                <text>bar_expectation_barmen_part2_dialog_1</text>
+				<next>2</next>
+            </phrase>
+            <phrase id="2">
+                <text>bar_expectation_barmen_part2_dialog_2</text>
+				<next>3</next>
+            </phrase>			
+            <phrase id="3">
+                <text>bar_expectation_barmen_part2_dialog_3</text>
+				<next>4</next>
+            </phrase>
+            <phrase id="4">
+                <text>bar_expectation_barmen_part2_dialog_4</text>
+				<next>5</next>
+            </phrase>
+            <phrase id="5">
+                <text>bar_expectation_barmen_part2_dialog_5</text>
+				<next>6</next>
+            </phrase>			
+            <phrase id="6">
+                <text>bar_expectation_barmen_part2_dialog_6</text>
+				<next>7</next>
+            </phrase>
+            <phrase id="7">
+                <text>bar_expectation_barmen_part2_dialog_7</text>
+				<next>8</next>
+            </phrase>
+            <phrase id="8">
+                <text>bar_expectation_barmen_part2_dialog_8</text>
+				<next>9</next>
+            </phrase>
+	            <phrase id="9">
+                <text>bar_expectation_barmen_part2_dialog_9</text>
+				<next>10</next>
+            </phrase>		
+			 <phrase id="10">
+                <text>bar_expectation_barmen_part2_dialog_10</text>
+                <give_info>bar_expectation_barmen_part2_dialog_info</give_info>
+				<action>dialogs.break_dialog</action>
+            </phrase>
+        </phrase_list>
+    </dialog>
+	
+	
+	<dialog id="bar_npc_otshelnik_dialog">
+        <dont_has_info>bar_npc_otshelnik_dialog_info</dont_has_info>
+        <phrase_list>
+            <phrase id="0">
+                <text>bar_npc_otshelnik_dialog_0</text>
+                <next>1</next>
+            </phrase>
+	        <phrase id="1">
+                <text>bar_npc_otshelnik_dialog_1</text>
+                <next>2</next>
+            </phrase>
+            <phrase id="2">
+                <text>bar_npc_otshelnik_dialog_2</text>
+                <next>3</next>
+            </phrase>
+            <phrase id="3">
+                <text>bar_npc_otshelnik_dialog_3</text>
+                <next>4</next>
+            </phrase>	
+            <phrase id="4">
+                <text>bar_npc_otshelnik_dialog_4</text>
+                <next>5</next>
+            </phrase>	
+            <phrase id="5">
+                <text>bar_npc_otshelnik_dialog_5</text>
+                <next>6</next>
+            </phrase>	
+            <phrase id="6">
+                <text>bar_npc_otshelnik_dialog_6</text>
+                <next>7</next>
+            </phrase>	
+            <phrase id="7">
+                <text>bar_npc_otshelnik_dialog_7</text>
+                <next>8</next>
+            </phrase>	
+            <phrase id="8">
+                <text>bar_npc_otshelnik_dialog_8</text>
+                <next>9</next>
+            </phrase>	
+            <phrase id="9">
+                <text>bar_npc_otshelnik_dialog_9</text>
+                <next>10</next>
+            </phrase>	
+            <phrase id="10">
+                <text>bar_npc_otshelnik_dialog_10</text>
+                <next>11</next>
+            </phrase>	
+            <phrase id="11">
+                <text>bar_npc_otshelnik_dialog_11</text>
+                <next>12</next>
+            </phrase>	
+            <phrase id="12">
+                <text>bar_npc_otshelnik_dialog_12</text>
+                <next>13</next>
+            </phrase>				
+			 <phrase id="13">
+                <text>bar_npc_otshelnik_dialog_13</text>
+                <give_info>bar_npc_otshelnik_dialog_info</give_info>
+				<give_info>bar_npc_otshelnik_dialog_start</give_info>
+				<action>dialogs.break_dialog</action>
+            </phrase>
+        </phrase_list>
+    </dialog>
+	
+	
+	<dialog id="bar_walker_lab_barmen_dialog">
+	  <has_info>bar_walker_lab_barmen_dialog_open</has_info>
+        <dont_has_info>bar_walker_lab_barmen_dialog_info</dont_has_info>
+        <phrase_list>
+            <phrase id="0">
+                <text>bar_walker_lab_barmen_dialog_0</text>
+                <next>1</next>
+            </phrase>
+            <phrase id="1">
+                <text>bar_walker_lab_barmen_dialog_1</text>
+				<next>2</next>
+            </phrase>
+            <phrase id="2">
+                <text>bar_walker_lab_barmen_dialog_2</text>
+				<next>3</next>
+            </phrase>			
+            <phrase id="3">
+                <text>bar_walker_lab_barmen_dialog_3</text>
+				<next>4</next>
+            </phrase>
+            <phrase id="4">
+                <text>bar_walker_lab_barmen_dialog_4</text>
+				<next>5</next>
+            </phrase>
+            <phrase id="5">
+                <text>bar_walker_lab_barmen_dialog_5</text>
+				<action>dialogs_east_bar.bar_barmen_lab_inventory</action>
+				<next>6</next>
+            </phrase>
+			 <phrase id="6">
+                <text>bar_walker_lab_barmen_dialog_6</text>
+                <give_info>bar_walker_lab_barmen_dialog_info</give_info>
+				<action>dialogs.break_dialog</action>
+            </phrase>
+        </phrase_list>
+    </dialog>
+	
+	
+	<dialog id="bar_npc_nimble_dialog">
+        <dont_has_info>bar_npc_nimble_dialog_info</dont_has_info>
+        <phrase_list>
+            <phrase id="0">
+                <text>bar_npc_nimble_dialog_0</text>
+                <next>1</next>
+            </phrase>
+            <phrase id="1">
+                <text>bar_npc_nimble_dialog_1</text>
+				<next>2</next>
+            </phrase>
+            <phrase id="2">
+                <text>bar_npc_nimble_dialog_2</text>
+				<next>3</next>
+            </phrase>			
+            <phrase id="3">
+                <text>bar_npc_nimble_dialog_3</text>
+				<next>4</next>
+            </phrase>
+            <phrase id="4">
+                <text>bar_npc_nimble_dialog_4</text>
+				<next>5</next>
+            </phrase>
+            <phrase id="5">
+                <text>bar_npc_nimble_dialog_5</text>
+				<next>6</next>
+            </phrase>
+            <phrase id="6">
+                <text>bar_npc_nimble_dialog_6</text>
+				<next>7</next>
+            </phrase>
+            <phrase id="7">
+                <text>bar_npc_nimble_dialog_7</text>
+				<next>8</next>
+            </phrase>
+            <phrase id="8">
+                <text>bar_npc_nimble_dialog_8</text>
+				<next>9</next>
+            </phrase>
+            <phrase id="9">
+                <text>bar_npc_nimble_dialog_9</text>
+				<next>10</next>
+            </phrase>
+            <phrase id="10">
+                <text>bar_npc_nimble_dialog_10</text>
+				<next>11</next>
+            </phrase>
+            <phrase id="11">
+                <text>bar_npc_nimble_dialog_11</text>
+				<next>12</next>
+            </phrase>
+            <phrase id="12">
+                <text>bar_npc_nimble_dialog_12</text>
+				<next>13</next>
+            </phrase>
+            <phrase id="13">
+                <text>bar_npc_nimble_dialog_13</text>
+				<next>14</next>
+            </phrase>
+            <phrase id="14">
+                <text>bar_npc_nimble_dialog_14</text>
+				<next>15</next>
+            </phrase>
+            <phrase id="15">
+                <text>bar_npc_nimble_dialog_15</text>
+				<next>16</next>
+            </phrase>
+            <phrase id="16">
+                <text>bar_npc_nimble_dialog_16</text>
+				<next>17</next>
+            </phrase>
+            <phrase id="17">
+                <text>bar_npc_nimble_dialog_17</text>
+				<next>18</next>
+            </phrase>
+            <phrase id="18">
+                <text>bar_npc_nimble_dialog_18</text>
+				<next>19</next>
+            </phrase>
+			 <phrase id="19">
+                <text>bar_npc_nimble_dialog_19</text>
+                <give_info>bar_npc_nimble_dialog_info</give_info>
+				<action>dialogs.break_dialog</action>
+            </phrase>
+        </phrase_list>
+    </dialog>
+	
+	
+</game_dialogs>

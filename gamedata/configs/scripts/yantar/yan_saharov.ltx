@@ -1,0 +1,79 @@
+[logic@yan_saharov]
+suitable = {=check_npc_name(yan_stalker_sakharov)} true, {=check_npc_trader} true
+active = walker
+trade = items\trade\trade_ecolog_sakharov.ltx
+prior = 200
+can_select_weapon = {=is_warfare} true, false
+level_spot = trader
+dont_keep_items = true
+
+[walker]
+meet = meet
+path_walk = yan_walker_saharov_walk
+path_look = yan_walker_saharov_look
+on_info = {+yan_actor_away_saharov} camper@1
+combat_ignore_cond = {=is_warfare} false, {=actor_true_enemy =check_enemy_name(actor)} false, true
+combat_ignore_keep_when_attacked = {=is_warfare} false, true
+invulnerable = {=is_warfare} false, {!actor_true_enemy} true, false
+gather_items_enabled = false
+help_wounded_enabled = false
+corpse_detection_enabled = false
+out_restr = yan_space_restrictor_no_weapon_actor_base_cut2
+aggressive = false
+
+[camper@default]
+meet = meet
+combat_ignore_cond = {=is_warfare} false, {=actor_true_enemy =check_enemy_name(actor)} false, true
+combat_ignore_keep_when_attacked = {=is_warfare} false, true
+invulnerable = {=is_warfare} false, {!actor_true_enemy} true, false
+gather_items_enabled = false
+help_wounded_enabled = false
+corpse_detection_enabled = false
+out_restr = yan_space_restrictor_no_weapon_actor_base_cut2
+aggressive = false
+
+[camper@1]:camper@default
+path_walk = yan_camper_saharov_walk
+path_look = yan_camper_saharov_look
+on_info = {-yan_actor_away_saharov} walker
+on_info2 = {+yan_quest_levsha !talking -yan_ui_disabled} remark@sakharov_start_operation %+yan_ui_disabled%
+
+[camper@2]:camper@default
+path_walk = yan_camper_saharov_walk
+path_look = yan_camper_saharov_look
+
+[camper@3]:camper@default
+path_walk = yan_walker_saharov_walk
+path_look = yan_walker_saharov_look
+on_info = {+yan_actor_away_saharov} camper@3_1
+
+[remark@sakharov_start_operation]
+anim = wait_rac
+target = story | actor
+meet = no_meet
+combat_ignore_cond = true
+on_signal = anim_end | %=play_sound(yan_professor_about_actor)%
+on_signal2 = sound_end | camper@1 %=play_sound(yan_professr_reply_actor:stalker:yan_st_levsha_name)%
+out_restr = yan_space_restrictor_no_weapon_actor_base_cut2
+
+[camper@3_1]:camper@default
+path_walk = yan_walker_saharov_walk
+path_look = yan_walker_saharov_look
+on_info = {-yan_actor_away_saharov} walker
+
+[meet]
+close_snd_hello = yan_stalker_sakharov_greeting
+close_snd_bye = yan_stalker_sakharov_farewell
+close_anim 		= nil
+close_victim 	= nil
+far_anim 		= nil
+far_victim 		= nil
+close_distance  = 2
+far_distance 	= 6
+close_snd_distance = 3
+use = {=actor_enemy} false, true
+allow_break = false
+trade_enable = false	;{+zaim1} false, {+zaim2} false, {+zaim3} false, true
+abuse           = false
+use = {+saharok_brain_start} true, {!actor_enemy +ystanovka_reward_break_dialog =dist_to_actor_ge(3)} self, {=actor_enemy} false, true, {+saharok_digger_start} false, {!actor_enemy +yan_stalker_sakharov_psi_helmet_good =dist_to_actor_ge(3)} self, {=actor_enemy} false, true
+meet_dialog = {+ystanovka_reward_break_dialog} saharok_brain_start, {+yan_stalker_sakharov_psi_helmet_good} saharok_digger_start

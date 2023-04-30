@@ -1,0 +1,141 @@
+[walker@def]
+gather_items_enabled = false
+help_wounded_enabled = true
+corpse_detection_enabled = false
+wounded = wounded
+on_info = {=npc_in_zone(sad_b3_sr_assault)} %+sad_radik_reached_b3 -sad_radik_switch_b4 +sad_radik_switch_b3%
+
+; -------------------------------------------------------------------------------------------------------------------------------------------- Comandor
+[logic@b3_comandor]
+active = remark@comandor
+suitable = {=target_squad_name(sad_stalker_radik_squad) =is_squad_commander +sad_sim_13_cave_reached +sad_radik_task_inside_done} true
+prior = 200
+on_death = death
+on_hit = hit
+
+[remark@comandor]
+on_info = patrol@comandor %=restore_health%
+
+[patrol@comandor]:walker@def
+path_walk = way_from_b4_to_b3
+commander = true
+def_state_moving = assault
+formation = back
+meet = no_meet
+
+
+; -------------------------------------------------------------------------------------------------------------------------------------------- 1
+[logic@arrive_b3_1]
+active = remark@1_init
+suitable = { =target_squad_name(sad_stalker_radik_squad) !is_squad_commander +sad_sim_13_cave_reached +sad_radik_task_inside_done} true
+prior = 190
+
+[remark@1_init]
+on_info = patrol@1 %=restore_health%
+
+[patrol@1]:walker@def
+path_walk = way_from_b4_to_b3
+def_state_moving = assault
+formation = back
+wounded = wounded
+meet = no_meet
+;on_info = {=npc_in_zone(sad_b3_sr_assault)} %+sad_radik_reached_b3 -sad_radik_switch_b4 +sad_radik_switch_b3%
+
+; -------------------------------------------------------------------------------------------------------------------------------------------- 2
+[logic@arrive_b3_2]
+active = remark@2
+suitable = { =target_squad_name(sad_stalker_radik_squad) !is_squad_commander +sad_sim_13_cave_reached +sad_radik_task_inside_done } true
+prior = 180
+
+[remark@2]:walker@def
+on_info = patrol@2 %=restore_health%
+
+[patrol@2]:walker@def
+path_walk = way_from_b4_to_b3
+def_state_moving = assault
+formation = back
+wounded = wounded
+meet = no_meet
+;on_info = {=npc_in_zone(sad_b3_sr_assault)} %+sad_radik_reached_b3 -sad_radik_switch_b4 +sad_radik_switch_b3%
+
+; -------------------------------------------------------------------------------------------------------------------------------------------- 3
+[logic@arrive_b3_3]
+active = remark@3
+suitable = { =target_squad_name(sad_stalker_radik_squad) !is_squad_commander +sad_sim_13_cave_reached +sad_radik_task_inside_done} true
+prior = 170
+
+[remark@3]
+on_info = patrol@3 %=restore_health%
+
+[patrol@3]:walker@def
+path_walk = way_from_b4_to_b3
+def_state_moving = assault
+formation = back
+wounded = wounded
+meet = no_meet
+;on_info = {=npc_in_zone(sad_b3_sr_assault)} %+sad_radik_reached_b3 -sad_radik_switch_b4 +sad_radik_switch_b3%
+
+; -------------------------------------------------------------------------------------------------------------------------------------------- 4
+[logic@arrive_b3_4]
+active = remark@4
+suitable = { =target_squad_name(sad_stalker_radik_squad) !is_squad_commander +sad_sim_13_cave_reached +sad_radik_task_inside_done } true
+prior = 160
+
+[remark@4]
+on_info = patrol@4 %=restore_health%
+
+[patrol@4]:walker@def
+path_walk = way_from_b4_to_b3
+def_state_moving = assault
+formation = back
+wounded = wounded
+meet = no_meet
+;on_info = {=npc_in_zone(sad_b3_sr_assault)} %+sad_radik_reached_b3 -sad_radik_switch_b4 +sad_radik_switch_b3%
+
+; ------------------------------------
+[meet]
+close_snd_hello = nil
+close_distance  = 0
+close_victim    = nil
+close_anim = nil
+snd_on_use = {!actor_enemy} meet_use_no_talk_leader, nil
+use = false
+
+[meet@comandor]
+close_snd_hello = nil
+close_distance  = 2
+close_victim    = actor
+close_anim = nil
+use = {=actor_enemy} false, {=actor_has_weapon} false, {+sad_radik_otkaz} false, true
+meet_dialog = sad_sim_13_after
+trade_enable = false
+allow_break = false
+
+; --------------------------------------------------------------------------------------------------------------------------------------------
+[wounded] ;Не должен быть раненым
+hp_state = 0|wounded_heavy@help_heavy
+hp_state_see = 0|wounded_heavy@help_heavy
+hp_victim = 0|nil
+hp_fight = 0|false
+hp_cover = 0|false
+
+[hit@1]
+on_info = {=hit_by_actor} %+sad_radik_actor_enemy%
+
+[hit@2]
+on_info = {=hit_by_actor} %+sad_radik_actor_enemy%
+
+[hit@3]
+on_info = {=hit_by_actor} %+sad_radik_actor_enemy%
+
+[hit@4]
+on_info = {=hit_by_actor} %+sad_radik_actor_enemy%
+
+[hit@5]
+on_info = {=hit_by_actor} %+sad_radik_actor_enemy%
+
+[death]
+on_info = {=killed_by_actor} %+sad_radik_dead +sad_radik_actor_enemy%, %+sad_radik_dead%
+
+[hit]
+on_info = {=hit_by_actor =actor_enemy} %+sad_radik_actor_enemy%

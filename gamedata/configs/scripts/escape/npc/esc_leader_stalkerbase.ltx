@@ -1,0 +1,36 @@
+[logic@esc_squad_baza_bandits_leader]
+active = walker@leader_home
+level_spot = quest_npc
+suitable = {=check_npc_name(esc_leader_stalkerbase)} true, false
+prior = 200
+
+[walker@leader_home]
+path_walk = leader_stalkerbase_walk
+path_look = leader_stalkerbase_look
+on_info = {+esc_quest_line_in_escape_go_to_end} %=release_npc%
+gather_items_enabled = false
+corpse_detection_enabled = false
+combat_ignore_keep_when_attacked = true 
+combat_ignore_cond = true
+invulnerable = true
+meet = no_meet
+use_camp = false
+
+;------------------------------------------
+[meet@quest]
+abuse           = false
+close_anim 		= nil
+far_anim 		= nil
+far_victim 		= nil
+close_distance  = 0
+far_distance 	= 0
+close_victim = actor
+allow_break = false
+trade_enable = false
+
+[meet@meet_start]:meet@quest
+close_snd_hello = esc_wolf_meet
+close_snd_bye 	= esc_wolf_meet_bye
+close_snd_distance = 3
+use = {=actor_enemy} false, true
+meet_dialog = esc_actor_meet_from_wolf

@@ -1,0 +1,16 @@
+[logic]
+active = mob_home@attack
+prior = 70
+on_death = mob_death
+
+[mob_home@attack]
+path_home = blck_val_psevdoflesh_quest_walk
+home_min_radius = 20
+home_max_radius = 30
+on_info = {=dist_to_actor_le(18) -blck_val_psevdoflesh_see_actor} %+blck_val_psevdoflesh_see_actor%
+combat_ignore_cond = {=dist_to_actor_le(18)} false, true
+aggressive = true
+actor_friendly = false
+
+[mob_death]
+on_info = %+blck_val_psevdoflesh_quest_dead%

@@ -1,0 +1,26 @@
+[logic]
+active = sr_idle
+
+[sr_idle]
+on_info = {+spectrum_project_start -esc_test_start =actor_on_level(e_c)} sr_cutscene@cam
+on_info2 = {+spectrum_project_start +esc_test_start} sr_idle@game_start
+
+[sr_cutscene@cam]
+point = esc_start_actor_walk
+look = esc_start_actor_look
+cam_effector = scenario_cam\level_escape\camera_start_game
+enable_ui_on_end = true
+global_cameffect = true
+on_signal = cameff_end | sr_idle@game_start %+esc_open_dialogs_borland_start%
+
+[sr_idle@game_start]
+on_timer = 100 | sr_idle@game_start_2 %=give_task(esc_the_entrance_to_the_zone)%
+
+[sr_idle@game_start_2]
+on_info = {+esc_borland_start_dialog_go_info} sr_idle@game_start_3
+
+[sr_idle@game_start_3]
+on_timer = 100 | {-save_escape_start_game} %+save_escape_start_game =scenario_autosave(st_save_escape_start_game)%
+on_info = {+save_escape_start_game} sr_idle@nil
+
+[sr_idle@nil]

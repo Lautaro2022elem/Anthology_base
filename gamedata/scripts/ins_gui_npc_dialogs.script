@@ -1,0 +1,185 @@
+-------------------- GUI элементы в диалогах специализации Смерти вопреки ----------------------
+------------------------- Copyright 2012-2013 Geonezis & XOBAH ---------------------------
+------------------------------------------------------------------------------
+--                           Диалоговое окно лечения раненных НПС                  --
+------------------------------------------------------------------------------
+class "ui_all_medical_help_wounded" (CUIScriptWnd)
+
+function ui_all_medical_help_wounded:__init(owner) super()
+	self.owner = owner
+	self:InitControls()
+	self:InitCallBacks()
+end
+
+function ui_all_medical_help_wounded:__finalize()
+end
+
+function ui_all_medical_help_wounded:InitControls()
+	self:SetWndRect			(Frect():set(0,0,1024,768))
+	local xml, ctrl			= CScriptXmlInit(), CUIWindow()
+	xml:ParseFile			("ui_gui_elements.xml")
+	self.form_a1_medical_r1				= xml:InitStatic("form_a1_medical_r1",self)
+	xml:InitStatic			("form_a1_medical_r1:caption",self.form_a1_medical_r1) 
+    xml:InitStatic			("form_a1_medical_r1:osc_s1_text_item_1",self.form_a1_medical_r1)
+	xml:InitStatic			("form_a1_medical_r1:osc_s1_text_item_2",self.form_a1_medical_r1)
+	xml:InitStatic			("form_a1_medical_r1:osc_s1_text_item_3",self.form_a1_medical_r1)
+	xml:InitStatic			("form_a1_medical_r1:osc_s1_text_item_4",self.form_a1_medical_r1)
+    xml:InitStatic			("form_a1_medical_r1:osc_s1_text_a",self.form_a1_medical_r1)
+    xml:InitStatic			("form_a1_medical_r1:osc_s1_text_b",self.form_a1_medical_r1)
+    xml:InitStatic			("form_a1_medical_r1:osc_s1_text_d",self.form_a1_medical_r1)
+    xml:InitStatic			("form_a1_medical_r1:osc_s1_text_2a",self.form_a1_medical_r1)
+    xml:InitStatic			("form_a1_medical_r1:osc_s1_text_2b",self.form_a1_medical_r1)
+	xml:InitStatic			("form_a1_medical_r1:osc_s1_text_3a",self.form_a1_medical_r1)
+    xml:InitStatic			("form_a1_medical_r1:osc_s1_text_3b",self.form_a1_medical_r1)
+    xml:InitStatic			("form_a1_medical_r1:osc_s1_text_3d",self.form_a1_medical_r1)
+	xml:InitStatic			("form_a1_medical_r1:osc_s1_text_4a",self.form_a1_medical_r1)
+    xml:InitStatic			("form_a1_medical_r1:osc_s1_text_4b",self.form_a1_medical_r1)
+    xml:InitStatic			("form_a1_medical_r1:osc_s1_text_4d",self.form_a1_medical_r1)
+	xml:InitStatic			("form_a1_medical_r1:edt_texture_1",self.form_a1_medical_r1)
+    xml:InitStatic			("form_a1_medical_r1:edt_texture_2",self.form_a1_medical_r1)
+    xml:InitStatic			("form_a1_medical_r1:edt_texture_3",self.form_a1_medical_r1)
+    xml:InitStatic			("form_a1_medical_r1:edt_texture_21",self.form_a1_medical_r1)
+    xml:InitStatic			("form_a1_medical_r1:edt_texture_22",self.form_a1_medical_r1)
+    xml:InitStatic			("form_a1_medical_r1:edt_texture_31",self.form_a1_medical_r1)
+    xml:InitStatic			("form_a1_medical_r1:edt_texture_32",self.form_a1_medical_r1)
+    xml:InitStatic			("form_a1_medical_r1:edt_texture_33",self.form_a1_medical_r1)
+    xml:InitStatic			("form_a1_medical_r1:edt_texture_41",self.form_a1_medical_r1)
+    xml:InitStatic			("form_a1_medical_r1:edt_texture_42",self.form_a1_medical_r1)
+    xml:InitStatic			("form_a1_medical_r1:edt_texture_43",self.form_a1_medical_r1)	
+	self.edt_text_1	= xml:InitEditBox("form_a1_medical_r1:edt_text_1", self.form_a1_medical_r1)
+	self.edt_text_2	= xml:InitEditBox("form_a1_medical_r1:edt_text_2", self.form_a1_medical_r1)
+    self.edt_text_3	= xml:InitEditBox("form_a1_medical_r1:edt_text_3", self.form_a1_medical_r1)
+	self.edt_text_21	= xml:InitEditBox("form_a1_medical_r1:edt_text_21", self.form_a1_medical_r1)
+	self.edt_text_22	= xml:InitEditBox("form_a1_medical_r1:edt_text_22", self.form_a1_medical_r1)
+	self.edt_text_31	= xml:InitEditBox("form_a1_medical_r1:edt_text_31", self.form_a1_medical_r1)
+	self.edt_text_32	= xml:InitEditBox("form_a1_medical_r1:edt_text_32", self.form_a1_medical_r1)
+    self.edt_text_33	= xml:InitEditBox("form_a1_medical_r1:edt_text_33", self.form_a1_medical_r1)
+	self.edt_text_41	= xml:InitEditBox("form_a1_medical_r1:edt_text_41", self.form_a1_medical_r1)
+	self.edt_text_42	= xml:InitEditBox("form_a1_medical_r1:edt_text_42", self.form_a1_medical_r1)
+    self.edt_text_43	= xml:InitEditBox("form_a1_medical_r1:edt_text_43", self.form_a1_medical_r1)
+	self.button_use_1 = xml:Init3tButton ("form_a1_medical_r1:btn_use_1", self.form_a1_medical_r1) 
+    self:Register (self.button_use_1, "button_use_1")
+    self.button_use_2 = xml:Init3tButton ("form_a1_medical_r1:btn_use_2", self.form_a1_medical_r1) 
+    self:Register (self.button_use_2, "button_use_2")
+    self.button_use_2:Enable(false)	
+    self.button_close = xml:Init3tButton ("form_a1_medical_r1:btn_close", self.form_a1_medical_r1) 
+    self:Register (self.button_close, "button_close")
+    self.button_close:Enable(false)	
+end
+
+function ui_all_medical_help_wounded:Update()
+   CUIScriptWnd.Update(self)
+   if not object_alive(db.actor) then
+      self:HideDialog()
+   end   
+end
+
+function ui_all_medical_help_wounded:InitCallBacks()
+    self:AddCallback("button_use_1", ui_events.BUTTON_CLICKED, self.OnButton_use_1_clicked, self)
+    self:AddCallback("button_use_2", ui_events.BUTTON_CLICKED, self.OnButton_use_2_clicked, self)	
+	self:AddCallback("button_close", ui_events.BUTTON_CLICKED, self.OnButton_close_clicked, self)
+end
+
+function ui_all_medical_help_wounded:OnButton_use_1_clicked()
+local pf1 = math.random(1,3)
+    if pf1 == 1 then
+		self.button_use_1:Enable(false)
+	    self.button_use_2:Enable(true)
+		self.edt_text_1:SetText("N= 145, учащенный")
+        self.edt_text_2:SetText("N= 143, учащенный")
+        self.edt_text_3:SetText("N= 144, учащенный")
+        self.edt_text_21:SetText("T= 40.5, гипертемия")
+        self.edt_text_22:SetText("P= 120/80, норма")
+        self.edt_text_31:SetText("WBC= 3.3, понижено")
+        self.edt_text_32:SetText("RBC= 5.3, норма")
+        self.edt_text_33:SetText("PLT= 155, повышено")
+        self.edt_text_41:SetText("в сознание, норма")
+        self.edt_text_42:SetText("норма")
+        self.edt_text_43:SetText("3 степени, 25%")        		
+	end
+ 	if pf1 == 2 then
+		self.button_use_1:Enable(false)
+	    self.button_use_2:Enable(true)
+		self.edt_text_1:SetText("N= 60, слабый")
+        self.edt_text_2:SetText("N= 62, слабый")
+        self.edt_text_3:SetText("N= 61, слабый")
+        self.edt_text_21:SetText("T= 36.7, норма")
+        self.edt_text_22:SetText("P= 80/55, гипотония")
+        self.edt_text_31:SetText("WBC= 9, повышено")
+        self.edt_text_32:SetText("RBC= 3.7, понижено")
+        self.edt_text_33:SetText("PLT= 125, норма")
+        self.edt_text_41:SetText("в сознание, шок")
+        self.edt_text_42:SetText("малая берцевая")
+        self.edt_text_43:SetText("норма")        	
+	end
+ 	if pf1 == 3 then
+		self.button_use_1:Enable(false)
+	    self.button_use_2:Enable(true)
+		self.edt_text_1:SetText("N= 45, нитевидный")
+        self.edt_text_2:SetText("N= 44, нитевидный")
+        self.edt_text_3:SetText("N= 43, нитевидный")
+        self.edt_text_21:SetText("T= 34.8, гипотерния")
+        self.edt_text_22:SetText("P= 150/110, гипертония")
+        self.edt_text_31:SetText("WBC= 7, норма")
+        self.edt_text_32:SetText("RBC= 6.2, повышено")
+        self.edt_text_33:SetText("PLT= 35, понижено")
+        self.edt_text_41:SetText("полуобморочное")
+        self.edt_text_42:SetText("3,4 ребра")
+        self.edt_text_43:SetText("1 степени, 10%")        		
+	end	
+end
+
+function ui_all_medical_help_wounded:OnButton_use_2_clicked()
+local pf2 = math.random(1,3)
+    if pf2 == 1 then
+		self.button_use_2:Enable(false)
+	    self.button_close:Enable(true)
+		self.edt_text_1:SetText("норма")
+        self.edt_text_2:SetText("норма")
+        self.edt_text_3:SetText("норма")
+        self.edt_text_21:SetText("норма")
+        self.edt_text_22:SetText("норма")
+        self.edt_text_31:SetText("норма")
+        self.edt_text_32:SetText("норма")
+        self.edt_text_33:SetText("норма")
+        self.edt_text_41:SetText("норма")
+        self.edt_text_42:SetText("норма")
+        self.edt_text_43:SetText("норма")        		
+	end
+ 	if pf2 == 2 then
+		self.button_use_2:Enable(false)
+	    self.button_close:Enable(true)
+		self.edt_text_1:SetText("норма")
+        self.edt_text_2:SetText("норма")
+        self.edt_text_3:SetText("норма")
+        self.edt_text_21:SetText("норма")
+        self.edt_text_22:SetText("норма")
+        self.edt_text_31:SetText("норма")
+        self.edt_text_32:SetText("норма")
+        self.edt_text_33:SetText("норма")
+        self.edt_text_41:SetText("норма")
+        self.edt_text_42:SetText("норма")
+        self.edt_text_43:SetText("норма")       	
+	end
+ 	if pf2 == 3 then
+		self.button_use_2:Enable(false)
+	    self.button_close:Enable(true)
+		self.edt_text_1:SetText("норма")
+        self.edt_text_2:SetText("норма")
+        self.edt_text_3:SetText("норма")
+        self.edt_text_21:SetText("норма")
+        self.edt_text_22:SetText("норма")
+        self.edt_text_31:SetText("норма")
+        self.edt_text_32:SetText("норма")
+        self.edt_text_33:SetText("норма")
+        self.edt_text_41:SetText("норма")
+        self.edt_text_42:SetText("норма")
+        self.edt_text_43:SetText("норма")        		
+	end	
+end
+
+function ui_all_medical_help_wounded:OnButton_close_clicked()      
+	self:HideDialog()
+end
+-------------------- GUI элементы в диалогах специализации Смерти вопреки ----------------------
+------------------------- Copyright 2012-2013 Geonezis & XOBAH ---------------------------

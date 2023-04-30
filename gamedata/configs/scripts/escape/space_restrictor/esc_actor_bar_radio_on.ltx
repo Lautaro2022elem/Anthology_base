@@ -1,0 +1,10 @@
+[logic]
+active = sr_idle@bar_radio_off
+
+[sr_idle@bar_radio_off]
+on_info = {=actor_in_zone(esc_bar_sr_noweap) +esc_barmen_bar_radio_off} sr_idle@bar_radio_on
+
+[sr_idle@bar_radio_on]
+on_info = {!actor_in_zone(esc_bar_sr_noweap)} sr_idle@bar_radio_off %+esc_barmen_bar_radio_on%
+
+[sr_idle@nil]

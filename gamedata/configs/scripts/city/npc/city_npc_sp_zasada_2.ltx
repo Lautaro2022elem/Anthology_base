@@ -1,0 +1,13 @@
+[logic]
+active = move@killer_walk
+on_death = death
+
+[death]
+on_info = %+city_npc_sp_zasada_1_death%
+
+[move@killer_walk]
+move_dest_number = 74194
+move_look_vertex = 88020
+move_state_when_center = hide
+move_state_when_move = assault
+on_info = {=dist_to_actor_le(130) =dist_to_actor_ge(100)} %=release_npc%

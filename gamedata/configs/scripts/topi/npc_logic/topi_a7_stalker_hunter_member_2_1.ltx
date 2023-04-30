@@ -1,0 +1,11 @@
+[logic]
+active = move@killer_garrizone
+
+
+[move@killer_garrizone]
+move_dest_number       = 1074021
+move_look_vertex       = 200924
+move_state_when_center = hide
+move_state_when_move   = assault
+on_info                = {+topi_b18_hunter_bandit_talking_friend =dist_to_actor_ge(80)} nil %=release_npc%
+on_info2               = {!actor_enemy +topi_b18_hunter_bandit_talking_enemy} nil %=actor_enemy%

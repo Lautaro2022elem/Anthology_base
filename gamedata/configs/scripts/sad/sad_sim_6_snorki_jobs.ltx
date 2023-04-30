@@ -1,0 +1,121 @@
+; -------------------------------------------------------------------------------------------------------- 1
+[logic@snokr_1]
+active = mob_walker@1_wait
+suitable = {=target_squad_name(sad_sim_6_snorki)} true
+monster_job = true
+prior = 200
+
+[mob_walker@1_wait]
+path_walk = snork_1_walk
+on_info = mob_walker@1_start %=teleport_npc(sad_sim_6_snork_1_walk)%
+
+[mob_walker@1_start]
+path_walk = snork_1_walk
+on_info = mob_jump@1_jump
+
+[mob_jump@1_jump]
+path_jump = snork_1_jump
+ph_jump_factor = 1.0
+offset = 0,0,0
+on_signal = jumped | mob_home
+
+; -------------------------------------------------------------------------------------------------------- 2
+[logic@snokr_2]
+active = mob_walker@2_wait
+suitable = {=target_squad_name(sad_sim_6_snorki)} true
+monster_job = true
+prior = 200
+
+[mob_walker@2_wait]
+path_walk = snork_2_walk
+on_info = mob_walker@2_start %=teleport_npc(sad_sim_6_snork_2_walk)%
+
+[mob_walker@2_start]
+path_walk = snork_2_walk
+on_info = mob_jump@2_jump
+
+[mob_jump@2_jump]
+path_jump = snork_2_jump
+ph_jump_factor = 1.0
+offset = 0,0,0
+on_signal = jumped | mob_home
+
+; -------------------------------------------------------------------------------------------------------- 3
+[logic@snokr_3]
+active = mob_walker@3_wait
+suitable = {=target_squad_name(sad_sim_6_snorki)} true
+monster_job = true
+prior = 200
+
+[mob_walker@3_wait]
+path_walk = snork_3_walk
+on_info = mob_walker@3_start %=teleport_npc(sad_sim_6_snork_3_walk)%
+
+[mob_walker@3_start]
+path_walk = snork_3_walk
+on_info = mob_jump@3_jump
+
+[mob_jump@3_jump]
+path_jump = snork_3_jump
+ph_jump_factor = 1.0
+offset = 0,0,0
+on_signal = jumped | mob_home
+
+; -------------------------------------------------------------------------------------------------------- 4
+[logic@snokr_4]
+active = mob_walker@4_wait
+suitable = {=target_squad_name(sad_sim_6_snorki)} true
+monster_job = true
+prior = 200
+
+[mob_walker@4_wait]
+path_walk = snork_4_walk
+on_info = mob_walker@4_start %=teleport_npc(sad_sim_6_snork_4_walk)%
+
+[mob_walker@4_start]
+path_walk = snork_4_walk
+on_info = mob_jump@4_jump
+
+[mob_jump@4_jump]
+path_jump = snork_4_jump
+ph_jump_factor = 1.0
+offset = 0,0,0
+on_signal = jumped | mob_home
+
+; -------------------------------------------------------------------------------------------------------- 5
+[logic@snokr_5]
+active = mob_walker@5_wait
+suitable = {=target_squad_name(sad_sim_6_snorki)} true
+monster_job = true
+prior = 200
+
+[mob_walker@5_wait]
+path_walk = snork_5_walk
+on_info = mob_walker@5_start %=teleport_npc(sad_sim_6_snork_5_walk)%
+
+[mob_walker@5_start]
+path_walk = snork_5_walk
+on_info = mob_jump@5_jump
+
+[mob_jump@5_jump]
+path_jump = snork_5_jump
+ph_jump_factor = 1.0
+offset = 0,0,0
+on_signal = jumped | mob_home
+
+; -------------------------------------------------------------------------------------------------------- simula
+[logic@snokr_sim_1]
+active = mob_home
+suitable = {=is_monster_snork} true
+monster_job = true
+prior = 100
+
+[logic@snokr_sim_2]:logic@snokr_sim_1
+
+[logic@snokr_sim_3]:logic@snokr_sim_1
+
+[mob_home]
+path_home = snorki_hom
+home_min_radius = 10
+home_max_radius = 20
+aggressive = true

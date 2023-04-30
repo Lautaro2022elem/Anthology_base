@@ -1,0 +1,205 @@
+[yan_stalker_sakharov_squad]:online_offline_group
+faction = ecolog
+npc = yan_stalker_sakharov
+target_smart = yan_smart_terrain_6_4
+story_id = yan_stalker_sakharov_squad
+spawn_point = yan_smart_terrain_6_4_yan_walker_saharov_walk
+
+[yan_ecolog_kruglov_squad]:online_offline_group
+faction = ecolog
+npc = yan_ecolog_kruglov
+target_smart = yan_smart_terrain_6_4
+story_id = yan_ecolog_kruglov_squad
+;spawn_point = yan_kruglov_spawn
+
+[yan_ecolog_semenov_squad]:online_offline_group
+faction = ecolog
+npc = yan_ecolog_semenov
+target_smart = yan_smart_terrain_6_4
+story_id = yan_ecolog_semenov_squad
+;spawn_point = yan_semenov_spawn
+
+[yan_ecolog_vasilyev_squad]:online_offline_group
+faction = ecolog
+npc = yan_ecolog_vasilyev
+target_smart = yan_smart_terrain_6_4
+story_id = yan_ecolog_vasilyev_squad
+;spawn_point = yan_vasilyev_spawn
+
+[yan_bunker_guards_squad]:online_offline_group
+faction = ecolog
+npc_random = sim_default_ecolog_2, sim_default_ecolog_3, sim_default_ecolog_4
+npc_in_squad = 5
+target_smart = yan_smart_terrain_6_4
+
+[yan_bunker_guards2_squad]:online_offline_group
+faction = ecolog
+npc_random = sim_default_ecolog_2, sim_default_ecolog_3, sim_default_ecolog_4
+npc_in_squad = 5
+target_smart = yan_smart_terrain_6_4
+
+[yan_povar_army_mlr_squad]:online_offline_group
+faction = army
+npc = yan_povar_army_mlr
+npc_in_squad = 1, 1
+target_smart = yan_smart_terrain_6_4
+;spawn_point = spawn_yan_povar_army_mlr_squad
+
+[mechanic_army_yan_mlr_squad]:online_offline_group
+faction = army
+npc = mechanic_army_yan_mlr
+npc_in_squad = 1, 1
+target_smart = yan_smart_terrain_6_4
+;spawn_point = spawn_mechanic_army_yan_mlr_squad
+
+[yan_breeder_squad]:online_offline_group
+faction = ecolog
+npc = yan_breeder
+target_smart = yan_smart_terrain_6_4
+spawn_point = yan_smart_terrain_6_4_yan_breeder_spawn_point
+story_id = yan_breeder_squad
+
+[yan_stalker_levsha_1]:online_offline_group
+faction = stalker
+relationship = friend
+npc = sim_default_stalker_4, sim_default_stalker_4, sim_default_stalker_4, sim_default_stalker_4
+target_smart = {+yan_stop_spawn_cut6} yan_smart_terrain_6_4,  yan_smart_terrain_for_squad_levsha
+relation = friend
+sympathy = 0
+
+[yan_stalker_levsha_true]:online_offline_group
+faction = stalker
+relationship = friend
+npc = yan_stalker_levsha
+target_smart = {+yan_stop_spawn_cut6} yan_smart_terrain_6_4,  yan_smart_terrain_for_squad_levsha
+on_death = %+yan_levsha_dead% 
+story_id = yan_stalker_levsha
+
+[yan_stalker_levsha_2]:online_offline_group
+faction = stalker
+relationship = friend
+npc = sim_default_stalker_4, sim_default_stalker_4
+target_smart = {+yan_stop_spawn_cut6} yan_smart_terrain_6_4,  yan_smart_terrain_for_squad_levsha
+
+[yan_dog_normal_squad]:online_offline_group
+faction = monster_predatory_day
+npc_random = dog_normal_red, dog_normal_white, dog_normal_brown, dog_normal_bulterier, dog_weak_red, dog_weak_white, dog_weak_brown, dog_weak_bulterier, dog_strong_red, dog_strong_white, dog_strong_brown, dog_strong_bulterier, dog_strong_black
+npc_in_squad = 5, 7
+target_smart = yan_smart_terrain_4_2
+
+[yan_squad_zombi_in_sci_base1]:online_offline_group
+faction = zombied
+npc = sim_default_zombied_1, sim_default_zombied_1, sim_default_zombied_1, sim_default_zombied_2, sim_default_zombied_2
+target_smart = yan_smart_terrain_6_4
+on_death = %+yan_squad_zombi_in_sci_base% 
+
+[yan_squad_zombi_in_sci_base2]:online_offline_group
+faction = zombied
+npc = sim_default_zombied_1, sim_default_zombied_1, sim_default_zombied_1, sim_default_zombied_2, sim_default_zombied_2
+target_smart = yan_smart_terrain_6_4
+on_death = %+yan_squad_zombi_in_sci_base2% 
+
+[yan_squad_zombi_in_sci_base3]:online_offline_group
+faction = zombied
+npc = sim_default_zombied_1, sim_default_zombied_1, sim_default_zombied_1, sim_default_zombied_2, sim_default_zombied_2
+target_smart = yan_smart_terrain_6_4
+on_death = %+yan_squad_zombi_in_sci_base3% 
+
+[yan_squad_zombi_in_sci_base4]:online_offline_group
+faction = zombied
+npc = sim_default_zombied_1, sim_default_zombied_1, sim_default_zombied_1, sim_default_zombied_2, sim_default_zombied_2
+target_smart = yan_smart_terrain_6_4
+on_death = %+yan_squad_zombi_in_sci_base4% 
+
+[yan_squad_zombi_in_sci_base5]:online_offline_group
+faction = zombied
+npc = sim_default_zombied_1, sim_default_zombied_1, sim_default_zombied_1, sim_default_zombied_2, sim_default_zombied_2
+target_smart = yan_smart_terrain_6_4
+on_death = %+yan_squad_zombi_in_sci_base5% 
+
+[yan_squad_zombi_in_sci_base6]:online_offline_group
+faction = zombied
+npc = sim_default_zombied_1, sim_default_zombied_1, sim_default_zombied_1, sim_default_zombied_2, sim_default_zombied_2
+target_smart = yan_smart_terrain_6_4
+on_death = %+yan_squad_zombi_in_sci_base6% 
+
+[yan_squad_zombi_in_sci_base7]:online_offline_group
+faction = zombied
+npc = sim_default_zombied_1, sim_default_zombied_1, sim_default_zombied_1, sim_default_zombied_2, sim_default_zombied_2
+target_smart = yan_smart_terrain_6_4
+;on_death = %+yan_squad_zombi_in_sci_base7% 
+
+[yan_squad_zombi_in_sci_base8]:online_offline_group
+faction = zombied
+npc = sim_default_zombied_1, sim_default_zombied_1, sim_default_zombied_1, sim_default_zombied_2, sim_default_zombied_2
+target_smart = yan_smart_terrain_6_4
+;on_death = %+yan_squad_zombi_in_sci_base7% 
+
+[yan_squad_zombi_in_sci_base9]:online_offline_group
+faction = zombied
+npc = sim_default_zombied_1, sim_default_zombied_1, sim_default_zombied_1, sim_default_zombied_2, sim_default_zombied_2
+target_smart = yan_smart_terrain_6_4
+;on_death = %+yan_squad_zombi_in_sci_base7% 
+
+[yan_squad_zombi_in_sci_base10]:online_offline_group
+faction = zombied
+npc = sim_default_zombied_1, sim_default_zombied_1, sim_default_zombied_1, sim_default_zombied_2, sim_default_zombied_2
+target_smart = yan_smart_terrain_6_4
+;on_death = %+yan_squad_zombi_in_sci_base7% 
+
+[yan_squad_zombi_in_sci_base11]:online_offline_group
+faction = zombied
+npc = sim_default_zombied_1, sim_default_zombied_1, sim_default_zombied_1, sim_default_zombied_2, sim_default_zombied_2
+target_smart = yan_smart_terrain_6_4
+on_death = %+yan_squad_zombi_in_sci_base5% 
+
+[yan_squad_1_zombi_quest]:online_offline_group
+faction = zombied
+npc = sim_default_zombied_1, sim_default_zombied_1, sim_default_zombied_1, sim_default_zombied_2, sim_default_zombied_2
+target_smart = yan_smart_terrain_zombi_in_sci_base4
+;on_death = %+yan_squad_zombi_in_sci_base7% 
+
+[yan_squad_2_zombi_quest]:online_offline_group
+faction = zombied
+npc = sim_default_zombied_1, sim_default_zombied_1, sim_default_zombied_1, sim_default_zombied_2, sim_default_zombied_2
+target_smart = yan_smart_terrain_6_4
+;on_death = %+yan_squad_zombi_in_sci_base7% 
+
+[yan_squad_3_zombi_quest]:online_offline_group
+faction = zombied
+npc = sim_default_zombied_1, sim_default_zombied_1, sim_default_zombied_1, sim_default_zombied_2, sim_default_zombied_2
+target_smart = yan_smart_terrain_6_4
+;on_death = %+yan_squad_zombi_in_sci_base7% 
+
+[yan_squad_4_zombi_quest]:online_offline_group
+faction = zombied
+npc = sim_default_zombied_1, sim_default_zombied_1, sim_default_zombied_1, sim_default_zombied_2, sim_default_zombied_2
+target_smart = yan_smart_terrain_4_2
+;on_death = %+yan_squad_zombi_in_sci_base7% 
+
+[yan_squad_5_zombi_quest]:online_offline_group
+faction = zombied
+npc = sim_default_zombied_1, sim_default_zombied_1, sim_default_zombied_1, sim_default_zombied_2, sim_default_zombied_2
+target_smart = yan_smart_terrain_zombi_in_sci_base3
+;on_death = %+yan_squad_zombi_in_sci_base7% 
+
+[yan_squad_6_zombi_quest]:online_offline_group
+faction = zombied
+npc = sim_default_zombied_1, sim_default_zombied_1, sim_default_zombied_1, sim_default_zombied_2, sim_default_zombied_2
+target_smart = yan_smart_terrain_6_4
+;on_death = %+yan_squad_zombi_in_sci_base7% 
+
+[yan_squad_7_zombi_quest]:online_offline_group
+faction = zombied
+npc = sim_default_zombied_1, sim_default_zombied_1, sim_default_zombied_1, sim_default_zombied_2, sim_default_zombied_2
+target_smart = yan_smart_terrain_zombi_in_sci_base4
+;on_death = %+yan_squad_zombi_in_sci_base7% 
+
+[yan_squad_8_zombi_quest]:online_offline_group
+faction = zombied
+npc = sim_default_zombied_1, sim_default_zombied_1, sim_default_zombied_1, sim_default_zombied_2, sim_default_zombied_2
+target_smart = yan_smart_terrain_6_2
+;on_death = %+yan_squad_zombi_in_sci_base7% 
+
+
+

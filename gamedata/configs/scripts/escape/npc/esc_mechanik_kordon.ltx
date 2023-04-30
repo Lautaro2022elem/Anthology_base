@@ -1,0 +1,45 @@
+[logic@esc_squad_village_mechanic_furgon]
+active = animpoint@esc_mechanic_furgon_sit_normal
+level_spot = mechanic
+suitable = {=check_npc_name(esc_mechanic_furgon_pa)} true, false
+trade = items\trade\trade_generic_mechanic.ltx
+prior = 300
+
+[animpoint@esc_mechanic_furgon_sit_normal]
+cover_name = esc_mechanic_furgon_sit_normal
+avail_animations = zat_b3_tech_idle
+on_info = {+esc_wait_action_of_enot_drink} animpoint@esc_mechanic_furgon_sleep
+gather_items_enabled = false
+corpse_detection_enabled = false
+combat_ignore_keep_when_attacked = true 
+combat_ignore_cond = true
+invulnerable = true
+meet = meet
+use_camp = false
+
+[animpoint@esc_mechanic_furgon_sleep]
+cover_name = esc_mechanic_furgon_sit_normal
+avail_animations = zat_b3_tech_drunk
+use_camp = false
+meet = no_meet
+on_info = {+esc_wait_action_of_enot_drink =dist_to_actor_le(9)} %=play_sound(esc_enot_sleep)%
+on_info2 = {+esc_koordinator_syndikate_quest_done =is_day} animpoint@esc_mechanic_furgon_sit_normal %-esc_wait_action_of_enot_drink%
+combat_ignore_cond = true
+combat_ignore_keep_when_attacked = true
+invulnerable = true
+gather_items_enabled = false
+help_wounded_enabled = false
+corpse_detection_enabled = false
+
+[meet]
+close_snd_hello = esc_pa_stalker_mechanic_meet
+close_snd_bye 	= esc_pa_stalker_mechanic_meet_bye
+close_anim 	= nil
+close_victim 	= nil
+far_anim 	= nil
+far_victim 	= nil
+close_distance  = 0
+far_distance 	= 0
+close_snd_distance = 3
+use = {=actor_enemy} false, true
+allow_break 	= false

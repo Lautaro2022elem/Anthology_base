@@ -1,0 +1,10 @@
+[logic]
+active = sr_idle
+
+[sr_idle]
+on_actor_inside = {-esc_eger_com_to_zone_dead_kurer +esc_trader_quest_line_start_dialog_end} sr_idle@1 %+esc_eger_com_to_zone_dead_kurer%
+
+[sr_idle@1]
+on_timer = 100| {-esc_raven_com_to_zone_dead_kurer +esc_eger_com_to_zone_dead_kurer} sr_idle@nil %+esc_raven_com_to_zone_dead_kurer%
+
+[sr_idle@nil]

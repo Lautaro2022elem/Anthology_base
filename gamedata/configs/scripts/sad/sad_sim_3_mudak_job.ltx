@@ -1,0 +1,97 @@
+[wounded]
+hp_state 		= 0|wounded_heavy@help_heavy
+hp_state_see 	= 0|wounded_heavy@help_heavy
+hp_victim 		= 0|nil
+hp_fight 		= 0|false
+hp_cover 		= 0|false
+
+[walker@def]
+gather_items_enabled = false
+help_wounded_enabled = false
+corpse_detection_enabled = false
+
+[walker@cut]:walker@def
+combat_ignore_cond = true
+combat_ignore_keep_when_attacked = true
+invulnerable = true
+on_info9 = {+sad_sim_3_cutscene_end} remark@kill %=hit_npc_from_actor =sad_reset_animation%
+
+[remark@kill]:walker@def
+on_info = {-sad_sim_3_rob_sound !is_playing_sound} %+sad_sim_3_rob_sound =play_sound(grey_bandit_3)%
+wounded = wounded
+
+; -------------------------------------------------------------------------------------------------------- mudak 1
+[logic@mudak_1]
+active = remark@1_0
+suitable = {=check_npc_name(sad_b1_stalker_mudak)} true
+prior = 300
+
+[remark@1_0]
+on_info = walker@1_1 %=teleport_npc(sad_sim_3_rob_man_1_start)%
+
+[walker@1_1]:walker@cut
+path_walk = rob_man_1_start
+on_info = {+sad_sim_3_cutscene_start} walker@1_2
+
+[walker@1_2]:walker@cut
+path_walk = rob_man_1_place
+path_look = rob_man_1_look
+on_signal = on_position | remark@1_3 %+sad_sim_3_robman_1_ready%
+
+[remark@1_3]:walker@cut
+anim = guard_na
+target = story | sad_sim_3_cs_actor
+on_info = {+sad_sim_3_cutscene_rob_time +sad_sim_3_robman_2_ready +sad_sim_3_rob_actor_on_position} remark@1_4 %=play_sound(sad_bandits_demand_1) +sad_sim_3_rob_handsup =sad_reset_animation%
+
+[remark@1_4]:walker@cut
+anim = threat
+target = story | sad_sim_3_cs_actor
+on_signal = sound_end | %+sad_sim_3_rob_phrase_end%
+on_info = {+sad_sim_3_rob_snorki} remark@1_5
+
+[remark@1_5]:walker@cut
+anim = threat
+target = path | sad_sim_3_rob_snork_look_point, 0
+on_timer = 3000 | remark@1_6 %=sad_reset_animation =play_sound(grey_bandit_3)% ;grey_bandit_3
+
+[remark@1_6]:walker@cut
+anim = threat_fire
+target = path | sad_sim_3_rob_actor_look, 0
+on_timer = 5000 | %+sad_sim_3_rob_actor_away%
+
+; -------------------------------------------------------------------------------------------------------- mudak 2
+[logic@mudak_2]
+active = remark@2_0
+suitable = {=target_squad_name(sad_b1_mudak_squad) !check_npc_name(sad_b1_stalker_mudak)} true
+prior = 300
+
+[remark@2_0]
+on_info = walker@2_1 %=teleport_npc(sad_sim_3_rob_man_2_start)%
+
+[walker@2_1]:walker@cut
+path_walk = rob_man_2_start
+on_info = {+sad_sim_3_cutscene_start} walker@2_2
+
+[walker@2_2]:walker@cut
+path_walk = rob_man_2_place
+path_look = rob_man_2_look
+on_signal = on_position | remark@2_3 %+sad_sim_3_robman_2_ready%
+
+[remark@2_3]:walker@cut
+anim = guard_na
+target = story | sad_sim_3_cs_actor
+on_info = {+sad_sim_3_rob_handsup} remark@2_4
+
+[remark@2_4]:walker@cut
+anim = threat
+target = story | sad_sim_3_cs_actor
+on_info = {+sad_sim_3_rob_snorki} remark@2_5
+
+[remark@2_5]:walker@cut
+anim = threat
+target = path | sad_sim_3_rob_snork_look_point, 0
+on_timer = 3000 | remark@2_6
+
+[remark@2_6]:walker@cut
+anim = threat_fire
+target = path | sad_sim_3_rob_actor_look, 0

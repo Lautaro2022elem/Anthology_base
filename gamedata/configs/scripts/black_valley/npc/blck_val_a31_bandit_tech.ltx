@@ -1,0 +1,40 @@
+[logic@blck_val_a31_bandit_mechanic]
+active = animpoint@base
+suitable = {=check_npc_name(blck_val_a31_bandit_mechanic)} true
+prior = 200
+trade = items\trade\trade_generic_mechanic.ltx
+can_select_weapon = false
+level_spot = mechanic
+
+[animpoint@base]
+cover_name = blck_val_a31_tech_cover
+avail_animations = animpoint_sit_normal
+on_info = {=actor_enemy} %=actor_neutral%
+meet = meet@blck_val_a31_bandit_mechanic
+use_camp = false
+reach_distance = 1
+combat_ignore_cond = true
+combat_ignore_keep_when_attacked = true
+invulnerable = true
+gather_items_enabled = false
+help_wounded_enabled = false
+corpse_detection_enabled = false
+
+[meet@quest]
+close_anim 		= nil
+close_victim 	= nil
+far_anim 		= nil
+far_victim 		= nil
+close_distance 	= 0
+far_distance 	= 0
+use = {=actor_enemy} false, {=dist_to_actor_le(3)} true, false
+snd_on_use = {!dist_to_actor_le(3)} nil
+meet_on_talking = false
+
+[meet@blck_val_a31_bandit_mechanic]:meet@quest
+close_snd_hello = blck_val_petrovich_tech_greet
+close_snd_bye = blck_val_petrovich_tech_bye
+close_snd_distance = 3
+close_victim = actor
+allow_break = false
+meet_dialog = blck_val_actor_meet_from_tech

@@ -1,0 +1,129 @@
+---------------Марчук-----------------
+[logic@blck_val_stalker_hutor_1]
+suitable = {=check_npc_name(blck_val_stalker_hutor_1)} true
+prior = 200
+active = walker@blck_val_stalker_hutor_1
+
+[walker@blck_val_stalker_hutor_1]
+path_walk = stalker_hutor_2_walk
+path_look = stalker_hutor_2_look
+on_info = {+blck_val_hutor_quest_zasada_squad_dead} walker@blck_val_stalker_hutor_relax
+combat_ignore_cond = {+blck_val_bandit_hutor_see_actor} false, true
+combat_ignore_keep_when_attacked = false
+invulnerable = true
+gather_items_enabled = false
+help_wounded_enabled = false
+corpse_detection_enabled = false
+meet = no_meet
+
+[walker@blck_val_stalker_hutor_relax]
+path_walk = stalker_hutor_2_walk
+path_look = stalker_hutor_relax_look
+on_info = {+blck_val_marchuk_rac_wait_start} remark@blck_val_marchuk_meet_to_rac
+combat_ignore_cond = {+blck_val_bandit_hutor_see_actor} false, true
+combat_ignore_keep_when_attacked = false
+invulnerable = true
+gather_items_enabled = false
+help_wounded_enabled = false
+corpse_detection_enabled = false
+meet = meet@attack_done
+
+[remark@blck_val_marchuk_meet_to_rac]
+anim = wait_rac
+target = story | actor
+on_timer = 8000 | remark@blck_val_marchuk_meet_to_rac_start
+combat_ignore_cond = true
+combat_ignore_keep_when_attacked = true
+invulnerable = true
+gather_items_enabled = false
+help_wounded_enabled = false
+corpse_detection_enabled = false
+meet = no_meet
+
+[remark@blck_val_marchuk_meet_to_rac_start]
+anim = wait_rac
+target = story | actor
+on_info = {+blck_val_marchuk_rac_wait_start -blck_val_marchuk_rac_wait_done} %=play_sound(blck_val_bandit_talk_rac_from_hutor) +blck_val_marchuk_rac_wait_done%
+on_timer = 31000 | remark@blck_val_marchuk_meet_to_rac_end
+combat_ignore_cond = true
+combat_ignore_keep_when_attacked = true
+invulnerable = true
+gather_items_enabled = false
+help_wounded_enabled = false
+corpse_detection_enabled = false
+meet = no_meet
+
+[remark@blck_val_marchuk_meet_to_rac_end]
+anim = guard_na
+target = story | actor
+on_info = {+blck_val_actor_go_to_roof_hutor} walker@blck_val_stalker_hutor_1_end
+combat_ignore_cond = true
+combat_ignore_keep_when_attacked = true
+invulnerable = true
+gather_items_enabled = false
+help_wounded_enabled = false
+corpse_detection_enabled = false
+meet = meet@attack_again
+
+[walker@blck_val_stalker_hutor_1_end]
+path_walk = stalker_hutor_2_walk
+path_look = stalker_hutor_2_look
+combat_ignore_cond = (+blck_val_bandit_enemy_see_actor} false, true
+combat_ignore_keep_when_attacked = false
+invulnerable = true
+gather_items_enabled = false
+help_wounded_enabled = false
+corpse_detection_enabled = false
+meet = no_meet
+
+[meet@quest]
+close_anim 		= nil
+close_victim 	= actor
+far_anim 		= nil
+far_victim 		= nil
+close_distance 	= 0
+far_distance 	= 0
+use = {+blck_val_hutor_quest_zasada_squad_dead} true, false
+allow_break = false
+meet_on_talking = false
+trade_enable = false
+
+[meet@attack_done]:meet@quest
+meet_dialog = blck_val_actor_meet_from_marchuk
+
+[meet@attack_again]:meet@quest
+use = {+blck_val_actor_go_to_roof_hutor} false, self
+meet_dialog = blck_val_actor_meet_from_marchuk_end
+
+---------------Портной-----------------
+[logic@blck_val_stalker_hutor_2]
+suitable = {=check_npc_name(blck_val_stalker_hutor_2)} true
+prior = 200
+active = walker@blck_val_stalker_hutor_2
+on_death = death@stalker
+
+[walker@blck_val_stalker_hutor_2]
+path_walk = stalker_hutor_1_walk
+path_look = stalker_hutor_1_look
+on_info = {+blck_val_actor_go_to_roof_hutor} walker@blck_val_stalker_hutor_2_end
+combat_ignore_cond = {+blck_val_bandit_hutor_see_actor} false, true
+combat_ignore_keep_when_attacked = false
+invulnerable = false
+gather_items_enabled = false
+help_wounded_enabled = false
+corpse_detection_enabled = false
+meet = no_meet
+
+[walker@blck_val_stalker_hutor_2_end]
+path_walk = stalker_hutor_1_walk
+path_look = stalker_hutor_1_look
+combat_ignore_cond = {+blck_val_bandit_enemy_see_actor} false, true
+combat_ignore_keep_when_attacked = false
+invulnerable = false
+gather_items_enabled = false
+help_wounded_enabled = false
+corpse_detection_enabled = false
+meet = no_meet
+
+[death@stalker]
+on_info = %+blck_val_stalker_hutor_2_dead%

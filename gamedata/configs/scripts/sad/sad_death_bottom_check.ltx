@@ -1,0 +1,13 @@
+[logic]
+active = sr_idle@10
+
+[sr_idle@10]
+on_info = {=sad_actor_in_bottom} sr_idle@20 %=run_postprocess(postprocess_rad:6666) +sad_actor_in_bottom_info%
+
+[sr_idle@20]
+on_info = {!actor_alive} sr_idle@nil, {!sad_actor_in_bottom} sr_idle@10 %=stop_postprocess(6666) -sad_actor_in_bottom_info% ;, sr_idle@hit
+
+[sr_idle@hit]
+on_info = sr_idle@20 %=sad_actor_loose_health%
+
+[sr_idle@nil]

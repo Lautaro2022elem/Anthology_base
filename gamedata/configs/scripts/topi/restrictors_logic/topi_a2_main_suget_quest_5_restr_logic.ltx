@@ -1,0 +1,11 @@
+[logic] 
+active = sr_idle@start
+
+[sr_idle@start]
+on_info = {+topi_start +topi_anubis_suget_quest_4_talking_2 -topi_stalker_fang_create} %=topi_a2_stalker_fang_create +topi_stalker_fang_create%
+on_timer = 6000 | {+topi_start +topi_stalker_fang_create -topi_stalker_fang_quest_give} sr_idle@first %=give_task(geonezis_topi_a2_main_suget_quest_5) +topi_stalker_fang_quest_give%
+
+[sr_idle@first]
+on_info = {+topi_stalker_fang_talking -topi_stalker_fang_quest_come_to_point =actor_in_zone(topi_a2_main_suget_quest_5_restr)} sr_idle@nil %=topi_a2_freedom_anubis_message +topi_stalker_fang_quest_come_to_point%
+
+[sr_idle@nil]

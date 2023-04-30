@@ -1,0 +1,33 @@
+[mob_walker@def_sleep]
+path_look = sleeper_bloodsuckers_spawn
+out_restr = zat_b38_sleepers_territory
+combat_ignore_cond = true
+on_sound  = actor|WPN_shoot|10|0.9| %+zat_b38_bloodscukers_sleepers_stand_up% ;Услышит все, кроме пистолета с глушителем
+on_sound2 = actor|WPN_hit|10|0| %+zat_b38_bloodscukers_sleepers_stand_up%
+on_sound3 = actor|MST_damage|10|0.9| %+zat_b38_bloodscukers_sleepers_stand_up%
+on_sound4 = actor|MST_step|10|0.1| %+zat_b38_bloodscukers_sleepers_stand_up%
+on_sound5 = actor|MST_die|10|0| %+zat_b38_bloodscukers_sleepers_stand_up%
+on_sound6 = actor|WPN_empty|10|0.3| %+zat_b38_bloodscukers_sleepers_stand_up% ;Примерно с 3х метров услышит
+on_sound7 = actor|WPN_reload|10|0.3| %+zat_b38_bloodscukers_sleepers_stand_up% ;Примерно с 3х метров услышит
+on_info66 = {+zat_b57_roar_play} %=kill_npc()%
+
+[logic@flesh]
+active = mob_walker@idle
+suitable = {=target_squad_name(agr_smart_flesh_squad)} true
+monster_job = true
+prior = 200
+
+[mob_walker@idle]
+path_walk = flesh_walk
+path_look = flesh_look
+combat_ignore_cond = {+agr_small_house_window_covers_hit} false, {=see_actor} false, true
+on_info = {+agr_small_house_windows_cover_hit} mob_walker@aggressive 
+on_info2 = {=see_actor} mob_walker@aggressive
+on_info3 = {=dist_to_actor_le(7)} %=play_sound(agr_smart_flesh_help)%
+on_info4 = {+agr_small_house_door_open} mob_walker@aggressive
+on_sound  = actor|WPN_shoot|3|0.9| mob_walker@aggressive ;Услышит все, кроме пистолета с глушителем
+
+[mob_walker@aggressive]
+path_walk = flesh_walk
+path_look = flesh_look
+on_info = {=health_le(0.7) -agr_smart_flesh_runaway} %+agr_smart_flesh_runaway =restore_health%

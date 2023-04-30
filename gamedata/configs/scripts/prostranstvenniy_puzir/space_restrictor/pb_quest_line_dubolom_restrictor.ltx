@@ -1,0 +1,21 @@
+[logic]
+active = sr_idle@dubolom_spawn_start
+
+[sr_idle@dubolom_spawn_start]
+on_info = {-pro_dubolom_quest_spawn_end +quest_found_padalshik_done} %+pro_dubolom_quest_spawn_end =spawn_object(pb_dubolom_quest:pb_dubolom_quest_base_walk)%
+on_info2 = {+pro_dubolom_quest_spawn_end} sr_idle@dubolom_spawn_start_1
+
+[sr_idle@dubolom_spawn_start_1]
+on_timer = 500 | sr_idle@dubolom_spawn_start_2 %=pb_dop_action_soldier_quest%
+
+[sr_idle@dubolom_spawn_start_2]
+on_timer = 500 | sr_idle@chimera_spawn_start %=give_task(pb_talk_to_dubolom)%
+
+[sr_idle@chimera_spawn_start]
+on_info = {+pro_quest_night_hunting_ready} sr_idle@chimera_spawn_start_1
+on_info2 = {+rezak_quest_give -pb_dop_action_soldier_complete_on} %=pb_dop_action_soldier_complete +pb_dop_action_soldier_complete_on%
+
+[sr_idle@chimera_spawn_start_1]
+on_timer = 1000 | sr_idle@nil %=spawn_object(pb_quest_chimera:pro_himera_walk)%
+
+[sr_idle@nil]

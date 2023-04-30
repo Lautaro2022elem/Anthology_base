@@ -1,0 +1,280 @@
+[walker@def_base]
+gather_items_enabled = false
+help_wounded_enabled = false
+corpse_detection_enabled = false
+on_info8 = {+sad_b3_ucheny_enemy} remark@kill %=set_squad_enemy_to_actor(sad_b3_ucheny_squad)%
+on_info9 = {=actor_enemy} %+sad_b3_ucheny_enemy%
+wounded = wounded
+meet = no_meet ; meet@1
+
+[walker@def_com]:walker@def_base
+combat_ignore_cond = {=is_enemy_actor} true, {=fighting_dist_ge(20)} true
+
+[remark@kill]
+wounded = wounded
+
+[combat@com]
+combat_type = {=fighting_dist_ge(20)} camper
+
+; ************************************************************************************************************************************* patrol commander
+[logic@uchka_1]
+active = remark@commander
+suitable = {=target_squad_name(sad_b3_ucheny_squad) =is_squad_commander -sad_ucheny_start_zamer} true
+prior = 300
+on_death = death@com
+on_hit = hit
+post_combat_time = 0, 0
+;on_combat = combat@com
+
+[remark@commander]
+on_info = {-sad_ucheny_arrived_sim_18} patrol@sim_18_com, {-sad_ucheny_arrived_sim_17} patrol@sim_17_com, patrol@home_com
+
+[patrol@sim_18_com]:walker@def_base
+path_walk = ucheny_arrive_sim_18
+def_state_moving = assault
+formation = around
+commander = true
+on_info = {-sad_sim_11_bloodsuckers_awake =distance_from_npc_to_point_le(sad_sim_11_mob_home:0:100)} %+sad_sim_11_bloodsuckers_awake%
+combat_ignore_cond = {=is_enemy_actor} true, {-sad_sim_11_bloodsuckers_awake =check_enemy_name(zasada_sucker)} true, {=fighting_dist_ge(25)} true
+
+[patrol@sim_17_com]:walker@def_base
+path_walk = arrive_to_sim_17
+def_state_moving = assault
+formation = around
+commander = true
+on_signal = healing_1 | {-sad_ucheny_commander_healed_1} %+sad_ucheny_commander_healed_1 =restore_health%
+on_signal2 = healing_2 | {-sad_ucheny_commander_healed_2} %+sad_ucheny_commander_healed_2 =restore_health%
+combat_ignore_cond = {=is_enemy_actor} true, {-sad_sim_12_ucheny_snorki_awake =check_enemy_name(snork_weak_sad_ucheny)} true, {=fighting_dist_ge(25)} true
+
+[patrol@home_com]:walker@def_com
+path_walk = arrive_from_sim_17_to_b3
+def_state_moving = assault
+formation = around
+commander = true
+on_signal = healing_3 | {-sad_ucheny_commander_healed_3} %+sad_ucheny_commander_healed_3 =restore_health%
+
+; ************************************************************************************************************************************* patrol members
+[logic@uchka_2]
+active = remark@member
+suitable = {=target_squad_name(sad_b3_ucheny_squad) !is_squad_commander -sad_ucheny_start_zamer} true
+prior = 250
+on_death = death
+on_hit = hit
+post_combat_time = 0, 0
+
+[remark@member]
+on_info = {-sad_ucheny_arrived_sim_18} patrol@sim_18_mem, {-sad_ucheny_arrived_sim_17} patrol@sim_17_mem, patrol@home_mem
+
+[patrol@sim_18_mem]:walker@def_base
+path_walk = ucheny_arrive_sim_18
+on_game_timer = 180 | {-sad_ucheny_patrol_sound_1} %+sad_ucheny_patrol_sound_1 =play_sound(sad_svist)%
+formation = around
+combat_ignore_cond = {=is_enemy_actor} true, {-sad_sim_11_bloodsuckers_awake =check_enemy_name(zasada_sucker)} true
+def_state_moving = assault
+
+[patrol@sim_17_mem]:walker@def_base
+path_walk = arrive_to_sim_17
+on_info5 = {+sad_ucheny_commander_healed_1 -sad_ucheny_patrol_sound_2} %+sad_ucheny_patrol_sound_2 =play_sound(sad_svist)%
+on_info6 = {+sad_ucheny_commander_healed_2 -sad_ucheny_patrol_sound_3} %+sad_ucheny_patrol_sound_3 =play_sound(sad_svist)%
+formation = around
+combat_ignore_cond = {=is_enemy_actor} true, {-sad_sim_12_ucheny_snorki_awake =check_enemy_name(snork_weak_sad_ucheny)} true
+def_state_moving = assault
+
+[patrol@home_mem]:walker@def_base
+path_walk = arrive_from_sim_17_to_b3
+formation = around
+combat_ignore_cond = {=is_enemy_actor} true
+def_state_moving = assault
+
+[logic@uchka_3]:logic@uchka_2
+
+[logic@uchka_4]:logic@uchka_2
+
+[logic@uchka_5]:logic@uchka_2
+
+
+; ************************************************************************************************************************************* zamery ucheny
+[logic@uchka_zamer_1]
+active = remark@ucheny
+suitable = {=check_npc_name(sad_b3_ucheny_raz) +sad_ucheny_start_zamer} true
+prior = 300
+on_death = death
+on_hit = hit
+post_combat_time = 0, 0
+
+[remark@ucheny]
+on_info = {+sad_ucheny_no_zamer} remark@zamer, {-sad_ucheny_arrived_sim_17} walker@zamer1 %=restore_health%, walker@zamer2 %=restore_health%
+
+[walker@zamer1]:walker@def_com
+path_walk = ucheny_zamer_walk
+path_look = ucheny_zamer_look
+on_info = {=has_enemy} walker@fighter_1 %+sad_ucheny_fighting%
+on_info2 = {-sad_ucheny_zamer_snd_begin_1} %+sad_ucheny_zamer_snd_begin_1 =play_sound(jup_b6_stalker_1_first_measurement_begin)%
+on_info3 = {+sad_ucheny_zamer_sim_18_done} remark@zamer %=play_sound(jup_b6_stalker_1_measurements_done)%
+def_state_moving = run
+
+[walker@zamer2]:walker@def_com
+path_walk = ucheny_zamer2_walk
+path_look = ucheny_zamer2_look
+on_info = {=has_enemy} walker@fighter_2 %+sad_ucheny_fighting%
+on_info2 = {-sad_ucheny_zamer_snd_begin_2} %+sad_ucheny_zamer_snd_begin_2 =play_sound(jup_b6_stalker_1_first_measurement_begin)%
+on_info3 = {+sad_ucheny_zamer_sim_17_done} remark@zamer2 %=play_sound(jup_b6_stalker_1_measurements_done)%
+def_state_moving = run
+
+[walker@fighter_1]:walker@def_base
+path_walk = ucheny_zamer_walk
+path_look = ucheny_zamer_look
+on_info = {!has_enemy} walker@zamer1 %-sad_ucheny_fighting%
+combat_ignore_cond = {=is_enemy_actor} true, {=fighting_dist_ge(30)} true
+def_state_moving = run
+
+[walker@fighter_2]:walker@def_base
+path_walk = ucheny_zamer_walk
+path_look = ucheny_zamer_look
+on_info = {!has_enemy} walker@zamer2 %-sad_ucheny_fighting%
+combat_ignore_cond = {=is_enemy_actor} true, {=fighting_dist_ge(30)} true
+def_state_moving = run
+
+[remark@zamer]:walker@def_com
+anim = wait_na
+target = story | actor
+
+[remark@zamer2]:walker@def_com
+anim = wait_na
+target = story | actor
+meet = meet@home
+
+[meet@home]
+snd_on_use 		= nil
+close_snd_hello = nil
+close_snd_bye   = nil
+close_distance  = 10
+close_victim    = actor
+close_anim 		= wait_na
+far_anim 		= nil
+far_victim 		= nil
+far_distance 	= 0
+far_snd 		= nil
+meet_dialog 	= sad_b3_ucheny_arrive_home
+abuse 			= false
+meet_on_talking = false
+use 			= {=dist_to_actor_le(5)} self, false
+allow_break 	= false
+trade_enable	= false
+
+; ************************************************************************************************************************************* zamery assistant #2
+[logic@uchka_zamer_2]
+active = remark@assist_2
+suitable = {=target_squad_name(sad_b3_ucheny_squad) !check_npc_name(sad_b3_ucheny_raz) +sad_ucheny_start_zamer} true
+prior = 280
+on_death = death
+on_hit = hit
+post_combat_time = 0, 0
+
+[remark@assist_2]
+on_info = {+sad_ucheny_no_zamer} remark@zamer, {-sad_ucheny_arrived_sim_17} walker@zamer_12 %=restore_health%, walker@zamer_22 %=restore_health%
+
+[walker@zamer_12]:walker@def_com
+path_walk = ucheny_2_walk
+path_look = ucheny_2_look
+on_game_timer = 160 | {!has_enemy -sad_ucheny_snd_priroda} %+sad_ucheny_snd_priroda =play_sound(sad_ucheny_vnature)%
+def_state_moving = run
+
+[walker@zamer_22]:walker@def_com
+path_walk = ucheny_22_walk
+path_look = ucheny_22_look
+on_game_timer = 150 | {!has_enemy -sad_ucheny_snd_gluhoman_a} %+sad_ucheny_snd_gluhoman_a =play_sound(sad_gluhoman_a)%
+def_state_moving = run
+
+; ************************************************************************************************************************************* zamery assistant #3
+[logic@uchka_zamer_3]
+active = remark@assist_3
+suitable = {=target_squad_name(sad_b3_ucheny_squad) !check_npc_name(sad_b3_ucheny_raz) +sad_ucheny_start_zamer} true
+prior = 260
+on_death = death
+on_hit = hit
+post_combat_time = 0, 0
+
+[remark@assist_3]
+on_info = {+sad_ucheny_no_zamer} remark@zamer, {-sad_ucheny_arrived_sim_17} walker@zamer_13, walker@zamer_23
+
+[walker@zamer_13]:walker@def_com
+path_walk = ucheny_3_walk
+path_look = ucheny_3_look
+def_state_moving = run
+
+[walker@zamer_23]:walker@def_com
+path_walk = ucheny_23_walk
+path_look = ucheny_23_look
+on_game_timer = 190 | {!has_enemy +sad_ucheny_snd_gluhoman_a -sad_ucheny_snd_gluhoman_b} %+sad_ucheny_snd_gluhoman_b =play_sound(sad_gluhoman_b)%
+def_state_moving = run
+
+; ************************************************************************************************************************************* zamery assistant #4
+[logic@uchka_zamer_4]
+active = remark@assist_4
+suitable = {=target_squad_name(sad_b3_ucheny_squad) !check_npc_name(sad_b3_ucheny_raz) +sad_ucheny_start_zamer} true
+prior = 250
+on_death = death
+on_hit = hit
+post_combat_time = 0, 0
+
+[remark@assist_4]
+on_info = {+sad_ucheny_no_zamer} remark@zamer, {-sad_ucheny_arrived_sim_17} walker@zamer_14, walker@zamer_24
+
+[walker@zamer_14]:walker@def_com
+path_walk = ucheny_4_walk
+path_look = ucheny_4_look
+def_state_moving = run
+
+[walker@zamer_24]:walker@def_com
+path_walk = ucheny_24_walk
+path_look = ucheny_24_look
+def_state_moving = run
+
+; ************************************************************************************************************************************* zamery assistant #5
+[logic@uchka_zamer_5]
+active = remark@assist_5
+suitable = {=target_squad_name(sad_b3_ucheny_squad) !check_npc_name(sad_b3_ucheny_raz) +sad_ucheny_start_zamer} true
+prior = 250
+on_death = death
+on_hit = hit
+post_combat_time = 0, 0
+
+[remark@assist_5]
+on_info = {+sad_ucheny_no_zamer} remark@zamer, {-sad_ucheny_arrived_sim_17} walker@zamer_15, walker@zamer_25
+
+[walker@zamer_15]:walker@def_com
+path_walk = ucheny_5_walk
+path_look = ucheny_5_look
+def_state_moving = run
+
+[walker@zamer_25]:walker@def_com
+path_walk = ucheny_25_walk
+path_look = ucheny_25_look
+def_state_moving = run
+
+
+; *************************************************************************************************************************************
+[meet@1]
+close_snd_hello = nil
+close_distance  = 0
+close_victim    = nil
+close_anim = nil
+snd_on_use = {!actor_enemy} meet_use_no_fight, nil
+use = false
+
+[wounded]
+hp_state 		= 0|wounded_heavy@help_heavy
+hp_state_see 	= 0|wounded_heavy@help_heavy
+hp_victim 		= 0|nil
+hp_fight 		= 0|false
+hp_cover		= 0|false
+
+[death]
+on_info = {=check_npc_name(sad_b3_ucheny_raz)} %+sad_b3_andrey_dead%
+
+[death@com]
+on_info = {=check_npc_name(sad_b3_ucheny_raz)} %+sad_b3_andrey_dead +sad_ucheny_com_dead%, %+sad_ucheny_com_dead%
+
+[hit]
+on_info = {=actor_enemy} %+sad_b3_ucheny_enemy%

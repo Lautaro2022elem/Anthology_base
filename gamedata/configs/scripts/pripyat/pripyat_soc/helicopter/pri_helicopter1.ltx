@@ -1,0 +1,16 @@
+[logic]
+active = heli_move@idle
+
+[heli_move@idle]
+path_move = pri_heli1_wait_path
+on_info = {+pri_helicopters_start} heli_move@move
+engine_sound = false
+combat_ignore = true
+max_velocity = 500
+
+[heli_move@move]
+path_move = pri_heli1_go_path
+combat_ignore = true
+on_signal = arrived | %+pri_followers_heli_look%
+max_velocity = 500
+engine_sound = true

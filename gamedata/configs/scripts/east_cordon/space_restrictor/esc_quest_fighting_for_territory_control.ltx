@@ -1,0 +1,10 @@
+[logic]
+active = sr_idle
+
+[sr_idle]
+on_info = {+spectrum_project_start +esc_quest_fighting_for_territory_kill_band} sr_idle@2 %=set_squad_enemy_to_actor(esc_squad_atp_quest_bandits) =create_squad(esc_squad_atp_quest_bandits:esc_smart_terrain_2_3)%
+
+[sr_idle@2]
+;on_info = {+esc_quest_fighting_for_territory_complite} sr_idle@nil %+000%, {+esc_quest_fighting_for_territory_fail} sr_idle@nil %+00%, {+esc_quest_fighting_for_territory_reversed} sr_idle@nil %+00%
+
+[sr_idle@nil]

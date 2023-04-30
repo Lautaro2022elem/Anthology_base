@@ -1,0 +1,5 @@
+[logic]
+active = sr_idle
+
+[sr_idle]
+on_actor_inside = {+bar_deactivate_radar_done =is_faction_enemy_to_actor(monolith)} nil %=create_squad(rad_freedom_squad:rad2_loner_0001) =create_squad(rad_dolg_squad:rad_far_road_btr_ambush) =play_snd(characters_voice\scenario\radar\rad_freedom_dolg_1)% 

@@ -1,0 +1,62 @@
+[mob_home@1]
+path_home = mobs_home_1
+home_min_radius = 5
+home_max_radius = 15
+aggressive = true
+
+[mob_death]
+;on_info = %=inc_counter(sad_cave_mob_dead)%
+
+; --------------------------------------------
+[logic@default]
+suitable = {=target_squad_name(sad_cave_normal_tushkans)} true
+;on_death = mob_death
+monster_job = true
+prior = 200
+
+[logic@mob_1]:logic@default
+active = mob_walker@init_1
+
+[logic@mob_2]:logic@default
+active = mob_walker@init_2
+
+[logic@mob_3]:logic@default
+active = mob_walker@init_3
+
+[logic@mob_4]:logic@default
+active = mob_walker@init_4
+
+[logic@mob_5]:logic@default
+active = mob_walker@init_5
+
+[logic@mob_6]:logic@default
+active = mob_walker@init_6
+
+[logic@mob_7]:logic@default
+active = mob_walker@init_7
+
+; --------------------------------------------
+[mob_walker@init_1]
+path_walk = mob_spawn_1
+combat_ignore_cond = true
+friendly = true
+on_info = {+sad_cave_tushkanos_awake} mob_home@1, {=mob_was_hit} mob_home@1 %+sad_cave_tushkanos_awake%
+
+[mob_walker@init_2]:mob_walker@init_1
+path_walk = mob_spawn_2
+
+[mob_walker@init_3]:mob_walker@init_1
+path_walk = mob_spawn_3
+
+[mob_walker@init_4]:mob_walker@init_1
+path_walk = mob_spawn_4
+
+[mob_walker@init_5]:mob_walker@init_1
+path_walk = mob_spawn_5
+
+[mob_walker@init_6]:mob_walker@init_1
+path_walk = mob_spawn_6
+
+[mob_walker@init_7]:mob_walker@init_1
+path_walk = mob_spawn_7
+

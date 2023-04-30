@@ -1,0 +1,334 @@
+﻿<?xml version='1.0' encoding="UTF-8"?>
+
+<xml>
+
+	<!-- ПРОФИЛЯ ЛОКАЦИИ "БАР" -->
+	
+<character id="bar_npc_voronin">
+<class>bar_npc_voronin</class>
+<specific_character>bar_npc_voronin</specific_character>
+</character>
+<character id="bar_npc_dolg_trader">
+<class>bar_npc_dolg_trader</class>
+<specific_character>bar_npc_dolg_trader</specific_character>
+</character>
+<character id="bar_npc_dolg_mechanic">
+<class>bar_npc_dolg_mechanic</class>
+<specific_character>bar_npc_dolg_mechanic</specific_character>
+</character>
+<character id="bar_npc_barman">
+<class>bar_npc_barman</class>
+<specific_character>bar_npc_barman</specific_character>
+</character>
+<character id="bar_medic">
+<class>bar_medic</class>
+<specific_character>bar_medic</specific_character>
+</character>
+<character id="bar_npc_kalgun_arena">
+<class>bar_npc_kalgun_arena</class>
+<specific_character>bar_npc_kalgun_arena</specific_character>
+</character>
+<character id="bar_npc_nimble">
+<class>bar_npc_nimble</class>
+<specific_character>bar_npc_nimble</specific_character>
+</character>
+
+<character id="bar_borland_start">
+<class>bar_borland_start</class>
+<specific_character>bar_borland_start</specific_character>
+</character>
+<character id="bar_borland_bar">
+<class>bar_borland_start</class>
+<specific_character>bar_borland_bar</specific_character>
+</character>
+
+<character id="bar_npc_dolg_general_dangerous_duty">
+<class>bar_npc_dolg_general_dangerous_duty</class>
+<specific_character>bar_npc_dolg_general_dangerous_duty</specific_character>
+</character>
+<character id="bar_npc_dolg_general_dangerous_duty_2">
+<class>bar_npc_dolg_general_dangerous_duty_2</class>
+<specific_character>bar_npc_dolg_general_dangerous_duty_2</specific_character>
+</character>
+
+<character id="bar_npc_otshelnik">
+<class>bar_npc_otshelnik</class>
+<specific_character>bar_npc_otshelnik</specific_character>
+</character>
+
+
+
+<!-------------------Персонажи Арены------------------------------------------->
+<character id="bar_npc_kostolom_arena">
+<class>bar_npc_kostolom_arena</class>
+<specific_character>bar_npc_kostolom_arena</specific_character>
+</character>
+
+<!-------------------------Партнеры по бою Телохраниетель---------------------->
+<character id="bar_npc_bodyguard_1_arena">
+<class>bar_npc_bodyguard_1_arena</class>
+<specific_character>bar_npc_bodyguard_1_arena</specific_character>
+</character>
+<character id="bar_npc_bodyguard_2_arena">
+<class>bar_npc_bodyguard_2_arena</class>
+<specific_character>bar_npc_bodyguard_2_arena</specific_character>
+</character>
+<character id="bar_npc_bodyguard_3_arena">
+<class>bar_npc_bodyguard_3_arena</class>
+<specific_character>bar_npc_bodyguard_3_arena</specific_character>
+</character>
+
+<!-------------------------Партнеры по бою Напарник---------------------------->
+<character id="bar_npc_friend_1_arena">
+<class>bar_npc_friend_1_arena</class>
+<specific_character>bar_npc_friend_1_arena</specific_character>
+</character>
+<character id="bar_npc_friend_2_arena">
+<class>bar_npc_friend_2_arena</class>
+<specific_character>bar_npc_friend_2_arena</specific_character>
+</character>
+<character id="bar_npc_friend_3_arena">
+<class>bar_npc_friend_3_arena</class>
+<specific_character>bar_npc_friend_3_arena</specific_character>
+</character>
+
+<!-------------------------Противники по бою Дуэль---------------------------->
+<character id="bar_npc_duel_1_arena">
+<class>bar_npc_duel_1_arena</class>
+<specific_character>bar_npc_duel_1_arena</specific_character>
+</character>
+<character id="bar_npc_duel_2_arena">
+<class>bar_npc_duel_2_arena</class>
+<specific_character>bar_npc_duel_2_arena</specific_character>
+</character>
+<character id="bar_npc_duel_3_arena">
+<class>bar_npc_duel_3_arena</class>
+<specific_character>bar_npc_duel_3_arena</specific_character>
+</character>
+<character id="bar_npc_duel_4_arena">
+<class>bar_npc_duel_4_arena</class>
+<specific_character>bar_npc_duel_4_arena</specific_character>
+</character>
+<character id="bar_npc_duel_5_arena">
+<class>bar_npc_duel_5_arena</class>
+<specific_character>bar_npc_duel_5_arena</specific_character>
+</character>
+
+<!-------------Противники по бою Телохранитель/Напарнрик/Мститель------------->
+<!-------------Сталкеры--------------------->	
+<character id="bar_npc_stalker_1_arena">	
+<class>bar_npc_stalker_1_arena</class>
+<specific_character>bar_npc_stalker_1_arena</specific_character>
+</character>
+<character id="bar_npc_stalker_2_arena">	
+<class>bar_npc_stalker_2_arena</class>
+<specific_character>bar_npc_stalker_2_arena</specific_character>
+</character>
+<character id="bar_npc_stalker_3_arena">	
+<class>bar_npc_stalker_3_arena</class>
+<specific_character>bar_npc_stalker_3_arena</specific_character>
+</character>
+<character id="bar_npc_stalker_4_arena">	
+<class>bar_npc_stalker_4_arena</class>
+<specific_character>bar_npc_stalker_4_arena</specific_character>
+</character>
+<character id="bar_npc_stalker_5_arena">	
+<class>bar_npc_stalker_5_arena</class>
+<specific_character>bar_npc_stalker_5_arena</specific_character>
+</character>
+<character id="bar_npc_stalker_6_arena">	
+<class>bar_npc_stalker_6_arena</class>
+<specific_character>bar_npc_stalker_6_arena</specific_character>
+</character>
+
+<!-------------Бандиты--------------------->
+<character id="bar_npc_bandit_1_arena">	
+<class>bar_npc_bandit_1_arena</class>
+<specific_character>bar_npc_bandit_1_arena</specific_character>
+</character>
+<character id="bar_npc_bandit_2_arena">	
+<class>bar_npc_bandit_2_arena</class>
+<specific_character>bar_npc_bandit_2_arena</specific_character>
+</character>
+<character id="bar_npc_bandit_3_arena">	
+<class>bar_npc_bandit_3_arena</class>
+<specific_character>bar_npc_bandit_3_arena</specific_character>
+</character>
+<character id="bar_npc_bandit_4_arena">	
+<class>bar_npc_bandit_4_arena</class>
+<specific_character>bar_npc_bandit_4_arena</specific_character>
+</character>
+<character id="bar_npc_bandit_5_arena">	
+<class>bar_npc_bandit_5_arena</class>
+<specific_character>bar_npc_bandit_5_arena</specific_character>
+</character>
+<character id="bar_npc_bandit_6_arena">	
+<class>bar_npc_bandit_6_arena</class>
+<specific_character>bar_npc_bandit_6_arena</specific_character>
+</character>
+
+<!-------------Военные--------------------->
+<character id="bar_npc_military_1_arena">	
+<class>bar_npc_military_1_arena</class>
+<specific_character>bar_npc_military_1_arena</specific_character>
+</character>
+<character id="bar_npc_military_2_arena">	
+<class>bar_npc_military_2_arena</class>
+<specific_character>bar_npc_military_2_arena</specific_character>
+</character>
+<character id="bar_npc_military_3_arena">	
+<class>bar_npc_military_3_arena</class>
+<specific_character>bar_npc_military_3_arena</specific_character>
+</character>
+<character id="bar_npc_military_4_arena">	
+<class>bar_npc_military_4_arena</class>
+<specific_character>bar_npc_military_4_arena</specific_character>
+</character>
+<character id="bar_npc_military_5_arena">	
+<class>bar_npc_military_5_arena</class>
+<specific_character>bar_npc_military_5_arena</specific_character>
+</character>
+<character id="bar_npc_military_6_arena">	
+<class>bar_npc_military_6_arena</class>
+<specific_character>bar_npc_military_6_arena</specific_character>
+</character>
+
+<!-------------Наемники--------------------->
+<character id="bar_npc_killer_1_arena">	
+<class>bar_npc_killer_1_arena</class>
+<specific_character>bar_npc_killer_1_arena</specific_character>
+</character>
+<character id="bar_npc_killer_2_arena">	
+<class>bar_npc_killer_2_arena</class>
+<specific_character>bar_npc_killer_2_arena</specific_character>
+</character>
+<character id="bar_npc_killer_3_arena">	
+<class>bar_npc_killer_3_arena</class>
+<specific_character>bar_npc_killer_3_arena</specific_character>
+</character>
+<character id="bar_npc_killer_4_arena">	
+<class>bar_npc_killer_4_arena</class>
+<specific_character>bar_npc_killer_4_arena</specific_character>
+</character>
+<character id="bar_npc_killer_5_arena">	
+<class>bar_npc_killer_5_arena</class>
+<specific_character>bar_npc_killer_5_arena</specific_character>
+</character>
+<character id="bar_npc_killer_6_arena">	
+<class>bar_npc_killer_6_arena</class>
+<specific_character>bar_npc_killer_6_arena</specific_character>
+</character>
+
+<!-------------Монолит--------------------->
+<character id="bar_npc_monolit_1_arena">	
+<class>bar_npc_monolit_1_arena</class>
+<specific_character>bar_npc_monolit_1_arena</specific_character>
+</character>
+<character id="bar_npc_monolit_2_arena">	
+<class>bar_npc_monolit_2_arena</class>
+<specific_character>bar_npc_monolit_2_arena</specific_character>
+</character>
+<character id="bar_npc_monolit_3_arena">	
+<class>bar_npc_monolit_3_arena</class>
+<specific_character>bar_npc_monolit_3_arena</specific_character>
+</character>
+<character id="bar_npc_monolit_4_arena">	
+<class>bar_npc_monolit_4_arena</class>
+<specific_character>bar_npc_monolit_4_arena</specific_character>
+</character>
+<character id="bar_npc_monolit_5_arena">	
+<class>bar_npc_monolit_5_arena</class>
+<specific_character>bar_npc_monolit_5_arena</specific_character>
+</character>
+<character id="bar_npc_monolit_6_arena">	
+<class>bar_npc_monolit_6_arena</class>
+<specific_character>bar_npc_monolit_6_arena</specific_character>
+</character>
+
+<!-------------Долг--------------------->
+<character id="bar_npc_dolg_1_arena">	
+<class>bar_npc_dolg_1_arena</class>
+<specific_character>bar_npc_dolg_1_arena</specific_character>
+</character>
+<character id="bar_npc_dolg_2_arena">	
+<class>bar_npc_dolg_2_arena</class>
+<specific_character>bar_npc_dolg_2_arena</specific_character>
+</character>
+<character id="bar_npc_dolg_3_arena">	
+<class>bar_npc_dolg_3_arena</class>
+<specific_character>bar_npc_dolg_3_arena</specific_character>
+</character>
+<character id="bar_npc_dolg_4_arena">	
+<class>bar_npc_dolg_4_arena</class>
+<specific_character>bar_npc_dolg_4_arena</specific_character>
+</character>
+<character id="bar_npc_dolg_5_arena">	
+<class>bar_npc_dolg_5_arena</class>
+<specific_character>bar_npc_dolg_5_arena</specific_character>
+</character>
+<character id="bar_npc_dolg_6_arena">	
+<class>bar_npc_dolg_6_arena</class>
+<specific_character>bar_npc_dolg_6_arena</specific_character>
+</character>
+	
+<!-------------Свобода--------------------->
+<character id="bar_npc_freedom_1_arena">	
+<class>bar_npc_freedom_1_arena</class>
+<specific_character>bar_npc_freedom_1_arena</specific_character>
+</character>
+<character id="bar_npc_freedom_2_arena">	
+<class>bar_npc_freedom_2_arena</class>
+<specific_character>bar_npc_freedom_2_arena</specific_character>
+</character>
+<character id="bar_npc_freedom_3_arena">	
+<class>bar_npc_freedom_3_arena</class>
+<specific_character>bar_npc_freedom_3_arena</specific_character>
+</character>
+<character id="bar_npc_freedom_4_arena">	
+<class>bar_npc_freedom_4_arena</class>
+<specific_character>bar_npc_freedom_4_arena</specific_character>
+</character>
+<character id="bar_npc_freedom_5_arena">	
+<class>bar_npc_freedom_5_arena</class>
+<specific_character>bar_npc_freedom_5_arena</specific_character>
+</character>
+<character id="bar_npc_freedom_6_arena">	
+<class>bar_npc_freedom_6_arena</class>
+<specific_character>bar_npc_freedom_6_arena</specific_character>
+</character>
+
+<!-------------------------Квесты---------------------------->
+<character id="bar_a2_killer_azot_1">
+<class>bar_a2_killer_azot_1</class>
+<specific_character>bar_a2_killer_azot_1</specific_character>
+</character>
+<character id="bar_a2_killer_azot_2">
+<class>bar_a2_killer_azot_2</class>
+<specific_character>bar_a2_killer_azot_2</specific_character>
+</character>	
+<character id="bar_a2_killer_azot_3">
+<class>bar_a2_killer_azot_3</class>
+<specific_character>bar_a2_killer_azot_3</specific_character>
+</character>
+<character id="bar_a2_killer_azot_4">
+<class>bar_a2_killer_azot_4</class>
+<specific_character>bar_a2_killer_azot_4</specific_character>
+</character>
+<character id="bar_a2_killer_azot_5">
+<class>bar_a2_killer_azot_5</class>
+<specific_character>bar_a2_killer_azot_5</specific_character>
+</character>
+<character id="bar_a2_killer_azot_6">
+<class>bar_a2_killer_azot_6</class>
+<specific_character>bar_a2_killer_azot_6</specific_character>
+</character>
+<character id="bar_a2_killer_azot_7">
+<class>bar_a2_killer_azot_7</class>
+<specific_character>bar_a2_killer_azot_7</specific_character>
+</character>
+<character id="bar_npc_dolg_svayzist">
+<class>bar_npc_dolg_svayzist</class>
+<specific_character>bar_npc_dolg_svayzist</specific_character>
+</character>
+
+</xml>

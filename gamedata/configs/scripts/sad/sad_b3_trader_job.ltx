@@ -1,0 +1,95 @@
+[combat]
+out_restr = sad_b3_sr_trader_zone
+
+[logic@trader]
+active = animpoint@1
+suitable = {=check_npc_name(sad_b3_trader)} true
+on_death = death
+on_hit = hit
+on_combat = combat
+post_combat_time = 0, 0
+prior = 300
+trade = items\trade\trade_stalker_basic.ltx
+level_spot = trader
+
+[animpoint@1]
+gather_items_enabled = false
+help_wounded_enabled = false
+corpse_detection_enabled = false
+wounded = wounded
+cover_name = sad_b3_trader_place
+out_restr = sad_b3_sr_trader_zone
+avail_animations = animpoint_stay_table_no_rnd
+;on_info = {=actor_enemy} remark@enemy %+sad_b3_trader_door_unlock +sad_b3_trader_enemy%, {=health_le(0.8)} %=restore_health%
+combat_ignore_cond = {=is_enemy_actor} true, {=enemy_in_zone(sad_b3_sr_bunker_zone)} false, true
+meet = meet
+;on_info = {=actor_enemy} remark@enemy %+sad_actor_enemy_b2%, {=health_le(0.7)} %=restore_health%
+on_info = {=obj_on_job(sad_b3:sad_b3_beh_trade_job_1) =job_on_point(sad_b3:sad_b3_beh_trade_job_1:2:3:false)} %=trade_job_give_id(sad_b3:sad_b3_beh_trade_job_1)%
+
+[remark@enemy]
+wounded = wounded
+
+; ------------------------------------
+[meet]
+close_snd_hello = nil
+close_distance  = 0
+close_victim    = actor
+close_anim 		= nil
+use 			= {=actor_enemy} false, true
+allow_break 	= false
+
+; ------------------------------------
+[wounded] ;Не должен быть раненым
+hp_state = 0|wounded_heavy@help_heavy
+hp_state_see = 0|wounded_heavy@help_heavy
+hp_victim = 0|nil
+hp_fight = 0|false
+hp_cover = 0|false
+
+[death]
+on_info = %+sad_b3_trader_dead%
+
+[hit]
+
+
+;------------------------------
+;--------- NPC trade ----------
+;------------------------------
+[logic@sad_b3_beh_trade_job_1]
+active = beh@sad_b3_beh_trade_job_1
+suitable = {=npc_has_items_to_sell(sad_b3) !surge_started} true
+prior = 65
+
+[beh@general]
+meet = meet@sad_b3_animpoint_trade_meet
+gather_items_enabled = false
+help_wounded_enabled = false
+corpse_detection_enabled = false
+sound_idle = state
+behavior_state = beh_move
+target = waypoint
+walk_dist = 100
+jog_dist = 220
+wait_anim = guard
+walk_anim = patrol
+jog_anim = patrol
+run_anim = rush
+delay_anim = guard
+
+[beh@sad_b3_beh_trade_job_1]:beh@general ;--pt1 choose - pt2 zat_b14_give_artefact_act - pt3 guard
+pt1 = 10000,choose | pos:-1.5425865650177,-8.8461866378784,145.47550964355 look:-1.5447738170624,-8.848295211792,143.0943145752
+pt2 = 5000,zat_b14_give_artefact_act | pos:-1.5425865650177,-8.8461866378784,145.47550964355 look:-1.5447738170624,-8.848295211792,143.0943145752 sig:trade
+pt3 = 10000,guard | pos:-1.5425865650177,-8.8461866378784,145.47550964355 look:-1.5447738170624,-8.848295211792,143.0943145752
+on_signal = trade | %=trade_job_sell_items%
+path_end = loop
+
+[meet@sad_b3_animpoint_trade_meet]
+close_anim 		= nil
+close_victim 	= nil
+far_anim 		= nil
+far_victim 		= nil
+close_distance 	= 0
+far_distance 	= 0
+use = {=actor_enemy} false, {=dist_to_actor_le(3)} true, false
+snd_on_use = {!dist_to_actor_le(3)} nil
+meet_on_talking = false

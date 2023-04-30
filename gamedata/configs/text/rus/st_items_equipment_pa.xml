@@ -1,0 +1,159 @@
+<?xml version="1.0" encoding="windows-1251" ?>
+<string_table>
+	
+	<string id="amk_metka">
+		<text>GPS-маячок</text>
+	</string>
+	<string id="amk_metka_s">
+		<text>GPS-маячок</text>
+	</string>
+	<string id="enc_amk_metka">
+		<text>GPS-маячки используются в зоне для пометки тайников. Если поместить маячок в тайник, на PDA появится метка с его расположением. При этом список предметов в тайнике отобразится в комментариях на карте.</text>
+	</string>
+
+	<string id="st_pb_quest_document_1">
+		<text>Записка Серого</text>
+	</string>
+	<string id="st_pb_quest_document_1">
+		<text>Записка Серого</text>
+	</string>
+	<string id="st_pb_quest_document_1_descr">
+		<text>Записка сталкера, оставленная на вырваном из тетради листе бумаги. Для прочтения, нажмите "Использовать".</text>
+	</string>
+	<string id="st_pb_quest_mail_shpala">
+		<text>Записка Шпалы</text>
+	</string>
+	<string id="st_pb_quest_mail_shpala_descr">
+		<text>Записка сталкера, оставленная на вырваном из тетради листе бумаги. Для прочтения, нажмите "Использовать".</text>
+	</string>
+	<string id="st_pb_padalshik_pda_title">
+		<text>КПК Падальщика</text>
+	</string>
+	<string id="st_pb_padalshik_pda_title">
+		<text>КПК Падальщика</text>
+	</string>
+	<string id="st_pb_padalshik_pda_descr">
+		<text>КПК сталкера с кличкой Падальщик, исправен и не заблокирован. Для открытия КПК, нажмите "Использовать".</text>
+	</string>
+	<string id="st_zat_a2_suget_5_gui_razia_title">
+		<text>Радиопередатчик Бармица-РС</text>
+	</string>
+	<string id="st_zat_a2_suget_5_gui_razia_descr">
+		<text>Радиопередатчик "Бармица-РС" обеспечивает открытую и маскированную телефонную связь с однотипными радиостанциями, а также радиостанцией "Р-159" и радиостанциями комплексов "Р-163" и "Р-168" в сетях взвод/отделение. Содержит встроенный маскиратор речи. Предназначена для эксплуатации в сложных полевых условиях. Обладает малым весом, высокой механической прочностью (возможность десантирования), компактна. Имеет герметичный металлический пылевлагозащищенный корпус.</text>
+	</string>
+	<string id="device_warning_module">
+		<text>Модуль-дешифратор</text>
+	</string>
+	<string id="device_warning_module_descr">
+		<text>Изобретение ученых, что позволяет увидеть скрытые аномальные поля и одиночные аномалии, имеет возможность глушить слабые аномальные поля. Работает на съемных акумуляторах, до этого не тестировался.</text>
+	</string>
+	<string id="st_pb_quest_bloknot">
+		<text>Личный блокнот</text>
+	</string>
+	<string id="st_pb_quest_bloknot_descr">
+		<text>Иногда, просто крайне необходимо записать куда-то свои мысли, бумага все стерпит, мой блокнот поможет мне разобраться в ситуации.</text>
+	</string>
+	<string id="tainik_padalshika">
+		<text>Контейнер-тайник Падальщика</text>
+	</string>
+	<string id="tainik_padalshika_descr">
+		<text>Металический контенер, чаще всего используется как личный тайник, имеет сложный замок, закрыт на ключ.</text>
+	</string>
+	<string id="trader_radio_pharos">
+		<text>Радио-маяк</text>
+	</string>
+	<string id="trader_radio_pharos_descr">
+		<text>Устройство для поиска любого рода активности в большом диапазане, в данном случаи настроенно на поиск сигнала сталкеров по КПК, в Зоне довольно редкая вещь.</text>
+	</string>
+	<string id="st_pb_rezerv_key_door">
+		<text>Ключ от диспетчерской</text>
+	</string>
+	<string id="st_pb_rezerv_key_door_descr">
+		<text>Этим ключом можно открыть дверь в диспетчерскую, где лежит резервное снаряжение, на вид самый обычный ключ.</text>
+	</string>
+	<string id="esc_flash_klim">
+		<text>Флешка Клима</text>
+	</string>
+	<string id="esc_flash_klim_descr">
+		<text>Со слов Сидоровича, эта флешка несёт в себе очень ценную информацию, пренадлежала она сталкеру по прозвищу Клим, именно её просил меня найти торговец.</text>
+	</string>
+	<string id="esc_sidor_container_name">
+		<text>Посылка для Ореста</text>
+	</string>
+	<string id="esc_sidor_container_desc">
+		<text>Сидорович дал мне этот довольно тяжелый кейс и сказал, чтобы я отнёс его Оресту, он не сказал, что внутри, да я и не особо хочу знать о его содержимом.</text>
+	</string>
+	<string id="esc_pda_leader_base">
+		<text>КПК Отца Валерьяна</text>
+	</string>
+	<string id="esc_pda_leader_base_descr">
+		<text>Данный КПК принадлежал Отцу Валерьяну, теперь его хозяин мёртв. КПК заблокирован и я не могу просмотреть его содержимое.</text>
+	</string>
+	<string id="blck_val_knife_killer">
+		<text>Нож убийцы</text>
+	</string>
+	<string id="blck_val_knife_killer_descr">
+		<text>Охотничий нож, очень острый, скорее всего он пренадлежит человеку, что убил Левшу, если найду его владельца - найду убийцу.</text>
+	</string>
+
+	<string id="st_blck_val_chimik_pda_title">
+		<text>КПК Химика</text>
+	</string>
+	<string id="st_blck_val_chimik_pda_descr">
+		<text>КПК Химика, именно он убил Левшу и Хромого, в КПК может быть дополнительная информация по этом деле.</text>
+	</string>
+
+	<string id="st_esc_pashalka_shved_pda_title">
+		<text>КПК Шведа</text>
+	</string>
+	<string id="st_esc_pashalka_shved_pda_descr">
+		<text>КПК мёртвого сталкера, тело которого я нашел недалеко от блокпста военных на Кордоне.</text>
+	</string>
+
+	<string id="blck_val_miklucha_pda">
+		<text>КПК Миклухи</text>
+	</string>
+	<string id="blck_val_miklucha_pda_descr">
+		<text>Этот КПК принадлежал Миклухе, к сожалению КПК заблокирован и я не могу просмотреть его содержимое.</text>
+	</string>
+
+	<string id="st_blck_val_transiver_title">
+		<text>Радиопередатчик Р-250М2</text>
+	</string>
+	<string id="st_blck_val_transiver_descr">
+		<text>Радиопередатчик Р-250М2 - коротковолновый, магистральный, настольный армейский радиоприемник, любимый многими радиолюбителями. Выпускается в нескольких модификациях: "Р-250/М/М2" ("Кит/М/М2") - для сухопутных войск; "Р-670/М" ("Русалка/М") - для войск военно-морского флота. У приемника точная зеркальная оптическая фотошкала настройки, термостатированный кварцевый стабилизатор частоты гетеродина. Число поддиапазонов: 12, шириной по 2 MHz каждый.</text>
+	</string>
+
+	<string id="st_pb_quest_shell_brelok">
+		<text>Брелок Гильзы</text>
+	</string>
+	<string id="st_pb_quest_shell_brelok_desc">
+		<text>Гильза мёртв, при нем был только этот брелок, думаю, что стоит показать его Маркусу.</text>
+	</string>
+
+	<string id="st_blck_val_key_to_prison">
+		<text>Ключ от решетки</text>
+	</string>
+	<string id="st_blck_val_key_to_prison_descr">
+		<text>Запасной ключ от решетки с заключенными, после кончины Химика ключ хранится у Сологуба. Он оставляет ключ ночью на тумбочке, чтобы другие охранники смогли использовать его в случае необходимости.</text>
+	</string>
+
+	<string id="st_pb_quest_spez_razia">
+		<text>Аккумулятор DC12V 9800 мАч</text>
+	</string>
+	<string id="st_pb_quest_spez_razia_descr">
+		<text>Литий-ионный аккумулятор, хорошо подходит для питания небольшого трансивера или передатчика, не малая емкость. Внешних повреждений нет, это успокаивает, так как Мурад извлек данный аккумулятор из разбитого радиопередатчика.</text>
+	</string>
+	<string id="st_pb_kanistra_gas">
+		<text>Канистра с топливом</text>
+	</string>
+	<string id="st_pb_kanistra_gas_descr">
+		<text>Металическая канистра объемом десять литр, почти полностью заполненная топливом. Хорошо подойдет для заправки машин с дизельной системой двигателя или же, для заправки дизельного генератора.</text>
+	</string>
+	<string id="st_pb_bolt_box_small_title">
+		<text>Мешочек с болтами</text>
+	</string>
+	<string id="st_pb_bolt_box_small_descr">
+		<text>Сталкеры привыкли собирать болты в мешочки по пять штук, так болты сложнее потерять и удобнее использовать.</text>
+	</string>
+</string_table>

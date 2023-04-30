@@ -1,0 +1,52 @@
+[anomal_zone]
+        layers_count                     = 2
+        artefacts                        = af_class_electro, af_class_electro_musor
+        coeff                            = 2, 2, 1, 1, 1, 1
+        layers_count                     = 1
+        max_artefacts                    = 3
+        respawn_tries                    = 1
+        start_artefact                   =
+artefact_ways = topi_elektro_anomal_zone_af_way
+
+[mines_core]
+topi_zone_mine_electric_weak
+topi_zone_mine_electric_weak_0000
+topi_zone_mine_electric_weak_0001
+topi_zone_mine_electric_average
+topi_zone_mine_electric_average_0000
+topi_zone_mine_electric_average_0001
+topi_zone_mine_electric_average_0002
+topi_zone_mine_electric_strong
+topi_zone_mine_electric_strong_0000
+topi_zone_mine_electric_strong_0001
+topi_zone_mine_electric_strong_0002
+topi_zone_mine_electric_strong_0003
+topi_zone_mine_electric_strong_0004
+topi_zone_mine_electric_strong_0005
+topi_zone_mine_electric_strong_0006
+
+[layer_1]
+mines_section = mines_layer_1 
+
+[mines_layer_1]:mines_core
+topi_zone_mine_electric_weak
+topi_zone_mine_electric_weak_0000
+topi_zone_mine_electric_weak_0001
+topi_zone_mine_electric_average
+topi_zone_mine_electric_average_0000
+topi_zone_mine_electric_average_0001
+topi_zone_mine_electric_average_0002
+
+
+[layer_2]
+mines_section = mines_layer_2 
+
+[mines_layer_2]:mines_core
+topi_zone_mine_electric_strong
+topi_zone_mine_electric_strong_0000
+topi_zone_mine_electric_strong_0001
+topi_zone_mine_electric_strong_0002
+topi_zone_mine_electric_strong_0003
+topi_zone_mine_electric_strong_0004
+topi_zone_mine_electric_strong_0005
+topi_zone_mine_electric_strong_0006

@@ -1,0 +1,27 @@
+[smart_terrain]
+squad_id = 29
+max_population = 3
+respawn_idle = 86400
+respawn_params = respawn@val_b1  
+respawn_idle = 172800
+
+[respawn@val_b1]
+spawn_bandit@novice
+spawn_bandit@advanced
+spawn_bandit@master
+
+[spawn_bandit@novice]
+spawn_squads = bandit_sim_squad_novice
+spawn_num = 1
+
+[spawn_bandit@advanced]
+spawn_squads = bandit_sim_squad_novice, bandit_sim_squad_advanced
+spawn_num = 1
+
+[spawn_bandit@master]
+spawn_squads = bandit_sim_squad_veteran, bandit_sim_squad_advanced
+spawn_num = 1
+
+[exclusive]
+val_b1_bandit_pachan = deadlake\val_b1_bandit_stroyka.ltx
+val_b1_bandit_7 = deadlake\val_b1_bandit_trader.ltx

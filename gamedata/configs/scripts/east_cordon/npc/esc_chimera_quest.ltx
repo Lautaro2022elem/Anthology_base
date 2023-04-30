@@ -1,0 +1,19 @@
+[logic]
+active = mob_home@esc_chimera_quest
+on_death = death@esc_chimera_quest
+
+[death@esc_chimera_quest]
+on_info = %+esc_chimera_quest_dead%
+
+[mob_home@esc_chimera_quest]
+path_home = esc_npc_watchmaker_spawn
+home_min_radius = 5
+home_max_radius = 10
+aggressive = false
+on_info  = {+esc_quest_chimera_repilent_used =esc_quest_chimera_run} %+esc_chimera_quest_dead =release_npc%, {+esc_quest_chimera_repilent_used} mob_home@esc_chimera_quest_evil
+
+[mob_home@esc_chimera_quest_evil]
+path_home = esc_npc_watchmaker_spawn
+home_min_radius = 10
+home_max_radius = 15
+aggressive = true

@@ -1,0 +1,23 @@
+[logic@technic]
+active = animpoint
+suitable = {=check_npc_name(sad_b3_technic)} true
+prior = 500
+trade = items\trade\trade_generic_mechanic.ltx
+level_spot = mechanic
+
+[animpoint]
+cover_name = sad_b3_animp_radik_3
+gather_items_enabled = false
+help_wounded_enabled = false
+corpse_detection_enabled = false
+meet = meet
+
+[meet]
+close_snd_hello = nil
+close_snd_bye   = nil
+close_distance  = 0
+close_victim    = actor
+close_anim 		= nil
+abuse 			= false
+meet_on_talking = false
+use 			= {=actor_enemy} false, true

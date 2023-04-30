@@ -1,0 +1,14 @@
+[logic]
+active = sr_idle@not_sleep
+
+[sr_idle@not_sleep]
+on_info = {+esc_bed_in_bar_actor_buy} sr_idle@sleep_restrictor
+
+[sr_idle@sleep_restrictor]
+on_game_timer = 86400 | sr_idle@send_message %-esc_bed_in_bar_actor_buy +esc_actor_not_sleep_in_bed_mes%
+
+[sr_idle@send_message]
+on_info = {=actor_in_zone(esc_bar_sr_noweap) -esc_bed_in_bar_actor_buy} %+esc_actor_not_sleep_in_bed_bar%
+on_info2 = {+esc_actor_not_sleep_in_bed_mes -sleep_active} sr_idle@not_sleep %=esc_send_tip_barman_from_bed%
+
+[sr_idle@nil]

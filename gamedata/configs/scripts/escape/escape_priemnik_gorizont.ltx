@@ -1,0 +1,11 @@
+[logic] 
+active = ph_idle@music
+
+[ph_idle@music]
+on_info = %=play_sound(all_radio)%
+on_info2 = {+esc_barmen_bar_radio_off} ph_idle@radio_off %-esc_barmen_bar_radio_on%
+
+[ph_idle@radio_off]
+on_info = {+esc_barmen_bar_radio_on} ph_sound@radio_on %-esc_barmen_bar_radio_off%
+
+

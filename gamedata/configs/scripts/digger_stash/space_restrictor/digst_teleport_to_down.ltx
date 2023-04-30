@@ -1,0 +1,10 @@
+[logic]
+active = sr_teleport@to_down
+
+[sr_teleport@to_down]
+point1 = actor_teleport_to_down_walk
+look1 = actor_teleport_to_down_look
+on_info = {+digst_kill_to_spider_complite -digst_stay_dont_move_complite =actor_has_item(device_warning_module)} sr_idle@nil
+on_info2 = {+digst_stay_dont_move_complite -digst_kill_to_spider_complite =actor_has_item(device_warning_module)} sr_idle@nil
+
+[sr_idle@nil]

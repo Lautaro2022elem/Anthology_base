@@ -1,0 +1,10 @@
+[logic]
+active = sr_idle@spawn
+
+[sr_idle@spawn]
+on_info = sr_idle@wait
+
+[sr_idle@wait]
+on_info = sr_idle@nil
+
+[sr_idle@nil]

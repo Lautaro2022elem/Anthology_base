@@ -1,0 +1,60 @@
+[logic]
+suitable = {=check_npc_name(labx5_a2_borland_podmena)}
+active = move@stalker_commander
+danger = danger_ignore
+
+[danger_ignore]
+ignore_distance = 200
+ignore_distance_grenade = 200
+ignore_distance_corpse = 200
+ignore_distance_hit = 200
+ignore_distance_sound = 200
+
+[move@stalker_commander]
+move_dest_number       = 8488
+move_look_subject      = actor
+move_state_when_center = guard
+move_state_when_move   = walk
+move_stop_on_talk      = true
+invulnerable           = true
+meet                   = meet
+on_info                = {+labx5_mod_npcs_spawner} %=actor_friend%
+on_info2                = {+labx5_b1_borland_talking_4} move@guard_no_talking %=anim_obj_forward(lx2_physic_door_2)%
+
+
+[move@guard_no_talking]
+move_dest_number       = 8488
+move_look_vertex       = 8164
+move_state_when_center = hide
+move_state_when_move   = walk
+invulnerable           = true
+move_stop_on_talk      = true
+meet                   = no_meet
+on_info               = {+labx5_a2_monolith_default_2_death} nil %=anim_obj_backward(lx2_physic_door_2) =release_npc%
+
+
+[meet]
+abuse           = false
+close_anim 		= nil
+far_anim 		= nil
+far_victim 		= nil
+close_distance  = 0
+far_distance 	= 0
+close_victim = actor
+use = {!actor_enemy =dist_to_actor_le(5) -labx5_b1_borland_talking_4} self, true
+allow_break = false
+meet_dialog = labx5_borland_fouth_dialog
+trade_enable = false
+
+[no_meet]
+close_anim 		= nil
+close_victim 	= nil
+far_anim 		= nil
+far_victim 		= nil
+close_distance  = 0
+far_distance 	= 0
+close_snd_distance = 3
+abuse           = true
+use             = false
+allow_break     = true
+meet_on_talking = false

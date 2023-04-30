@@ -1,0 +1,14 @@
+[logic]
+active = sr_idle@wait
+
+[sr_idle@wait]
+on_info = {+pro_heli_destroy_complete -pro_particle_heli_play_end} sr_particle@idle_1 %+pro_particle_heli_play_end%
+
+[sr_particle@idle_1]
+name = amik\anomaly\electra\electro_hit_explode
+path = pb_particle_heli_play_point_1
+mode = 2
+looped = true
+on_info = {+pro_heli_destroy_down_complete} sr_idle@nil
+
+[sr_idle@nil]

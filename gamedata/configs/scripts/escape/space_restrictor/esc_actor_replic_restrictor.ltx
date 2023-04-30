@@ -1,0 +1,26 @@
+[logic]
+active = sr_idle@actor_replic_about_enot
+
+[sr_idle@actor_replic_about_enot]
+on_info = {+esc_actor_talk_raven_from_enot} sr_idle@actor_replic_about_enot_time
+
+[sr_idle@actor_replic_about_enot_time]
+on_game_timer = 1000 | sr_idle@actor_replic_about_enot_1
+
+[sr_idle@actor_replic_about_enot_1]
+on_info = {+esc_actor_talk_raven_from_enot -esc_actor_start_talk_from_enot -esc_enot_go_to_furgon_drink} sr_idle@actor_replic_about_enot_start_1
+on_info2 = {+esc_actor_talk_raven_from_enot +esc_enot_go_to_furgon_drink} sr_idle@actor_replic_about_enot_2
+
+[sr_idle@actor_replic_about_enot_start_1]
+on_timer = 2500 | sr_idle@actor_replic_about_enot_start_1_1 %=esc_actor_replic_enot_job_1%
+
+[sr_idle@actor_replic_about_enot_start_1_1]
+on_timer = 7000 | sr_idle@actor_replic_about_enot_2 %+esc_quest_dialog_from_enot_give%
+
+[sr_idle@actor_replic_about_enot_2]
+on_info = {+esc_actor_mind_go_to_enot} sr_idle@actor_replic_about_enot_start_2
+
+[sr_idle@actor_replic_about_enot_start_2]
+on_timer = 2500 | sr_idle@nil %=esc_actor_replic_enot_job_2%
+
+[sr_idle@nil]

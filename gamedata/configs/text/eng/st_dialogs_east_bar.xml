@@ -1,0 +1,1375 @@
+<?xml version="1.0" encoding="windows-1251" ?>
+<string_table>
+    <string id="bar_azot_foush_quest_dialog_npc_1_talking_0">
+		<text>Я от Виталика. Он просил передать, чтобы вы усилили наблюдение за перемещением живности и бандитов из Темной Долины. Вот, это специальные приборы для дистанционного наблюдения. Держи их при себе.</text>
+	</string>
+	<string id="bar_azot_foush_quest_dialog_npc_1_talking_1">
+		<text>Принято. А что это за прибор-то? Как работает?</text>
+	</string>
+	<string id="bar_azot_foush_quest_dialog_npc_1_talking_2">
+		<text>Не знаю я. Он сказал, просто передать. Я передал. Видимо, он позже объяснит сам, что к чему.</text>
+	</string>
+	<string id="bar_azot_foush_quest_dialog_npc_1_talking_3">
+		<text>Опять очередной навороченный гаджет от долговских умельцев поди?</text>
+	</string>
+	<string id="bar_azot_foush_quest_dialog_npc_1_talking_4">
+		<text>Может быть, не знаю. Ладно бывай.</text>
+	</string>
+	
+	<string id="bar_azot_foush_quest_dialog_npc_2_talking_0">
+		<text>Я от Виталика. Он просил передать, чтобы вы усилили наблюдение за перемещением вольных сталкеров с Кордона. Вот, это специальные приборы дистанционного наблюдения. Держать при себе.</text>
+	</string>
+	<string id="bar_azot_foush_quest_dialog_npc_2_talking_1">
+		<text>Хорошо. Это типа биолокатора?</text>
+	</string>
+	<string id="bar_azot_foush_quest_dialog_npc_2_talking_2">
+		<text>Понятия не имею. Он сказал, просто передать. Сказал, сам потом объяснит, зачем это нужно.</text>
+	</string>
+	<string id="bar_azot_foush_quest_dialog_npc_2_talking_3">
+		<text>Ясно. Вот что за человек! Нет бы, лучше, ствол покруче прислал.</text>
+	</string>
+	<string id="bar_azot_foush_quest_dialog_npc_2_talking_4">
+		<text>Ладно, бывай.</text>
+	</string>
+	
+	<string id="bar_azot_foush_quest_dialog_npc_3_talking_0">
+		<text>Я от Виталика. Он просил передать, чтобы вы усилили наблюдение за перемещением бандитов с Агропрома. Вот, это специальные приборы дистанционного сканирования и наблюдения. Держать при себе.</text>
+	</string>
+	<string id="bar_azot_foush_quest_dialog_npc_3_talking_1">
+		<text>Хорошо. А что это за приборы-то? Как их на людях-то использовать?</text>
+	</string>
+	<string id="bar_azot_foush_quest_dialog_npc_3_talking_2">
+		<text>Хрен знает. Он сказал, просто передать. Потом, наверно, сам объяснит, зачем это нужно и как работает.</text>
+	</string>
+	<string id="bar_azot_foush_quest_dialog_npc_3_talking_3">
+		<text>Лучше бы снарягу какую подогнал.</text>
+	</string>
+	<string id="bar_azot_foush_quest_dialog_npc_3_talking_4">
+		<text>Ладно, бывай.</text>
+	</string>
+	
+	<string id="bar_azot_foush_quest_dialog_npc_4_talking_0">
+		<text>Я от Виталика. Он просил передать, чтобы вы усилили наблюдение за перемещением сталкеров из Бара. Вот, это специальные приборы фиксации и бесконтактного наблюдения. При себе держи.</text>
+	</string>
+	<string id="bar_azot_foush_quest_dialog_npc_4_talking_1">
+		<text>Хорошо. А что это за приборы-то? Типа биолокатор?</text>
+	</string>
+	<string id="bar_azot_foush_quest_dialog_npc_4_talking_2">
+		<text>Он сказал, просто передать. Знать не знаю, что это.</text>
+	</string>
+	<string id="bar_azot_foush_quest_dialog_npc_4_talking_3">
+		<text>Ясно, опять очередной мегагаджет от Долга.</text>
+	</string>
+	<string id="bar_azot_foush_quest_dialog_npc_4_talking_4">
+		<text>Ладно, бывай.</text>
+	</string>
+	
+	<string id="bar_azot_foush_quest_dialog_npc_5_talking_0">
+		<text>Я от Виталика. Он просил передать, чтобы вы усилили наблюдение за перемещением мутантов с Болот. Вот, это специальные приборы дистанционного наблюдения за мутантами. При себе всё время держи.</text>
+	</string>
+	<string id="bar_azot_foush_quest_dialog_npc_5_talking_1">
+		<text>Хорошо. Биолокатор, что ли?</text>
+	</string>
+	<string id="bar_azot_foush_quest_dialog_npc_5_talking_2">
+		<text>Он сказал, просто передать. Я не знаю, что это.</text>
+	</string>
+	<string id="bar_azot_foush_quest_dialog_npc_5_talking_3">
+		<text>Ясно, вот что за человек...</text>
+	</string>
+	<string id="bar_azot_foush_quest_dialog_npc_5_talking_4">
+		<text>Ладно, бывай.</text>
+	</string>
+	
+	<string id="bar_azot_zero_quest_dialog_1_talking_0">
+		<text>Есть работа для меня?</text>
+	</string>
+	<string id="bar_azot_zero_quest_dialog_1_talking_1">
+		<text>В общем, тема такая. Несмотря на то, что Бар является нейтральной территорией, Долг здесь играет ключевую роль. Командование группировки поставило задачу укрепления позиций и обеспечения всеобщей безопасности. Естественно, каждый работает в своем направлении. \nМоё - радиотехническое, а если быть точным - РЭБ. Сюда стекается огромное количество бродяг, диггеров и сталкеров всех мастей со всей Зоны, проводятся различные сделки и переговоры. При этом используются различные методы и каналы связи. А прослушка своих потенциальных конкурентов или же жертв - это один из излюбленных приемов наемников и бандитов. И прочего криминального элемента. Вот с этим и боремся. \nНедавно исчезла группа сталкеров на территории Бара. Просто исчезли и всё, как и не было. Очень похоже на провокацию со стороны бандитских группировок. Обстановка накалилась. Сталкеры ставят под вопрос способность "Долга" обеспечить защиту и безопасность на территории Бара. Необходимо выяснить, кто именно стоит за этими исчезновениями. И устранить угрозу. \nДля этого я предлагаю тебе присоединиться к моей группе радио-электронной разведки.</text>
+	</string>
+	<string id="bar_azot_zero_quest_dialog_1_talking_2">
+		<text>Херь какая-то. Я в радио-электронной разведке разбираюсь хуже, чем в балете. А в балете-то я не разбираюсь от слова "совсем". Я паяльник от рубильника не отличаю. Я готов помочь, но как?</text>
+	</string>
+	<string id="bar_azot_zero_quest_dialog_1_talking_22">
+		<text>Не сейчас. Попозже зайду.</text>
+	</string>
+	<string id="bar_azot_zero_quest_dialog_1_talking_222">
+		<text>Да ну нахер. Это не мой профиль. Извини, без меня.</text>
+	</string>
+	<string id="bar_azot_zero_quest_dialog_1_talking_3">
+		<text>Всему научим. У нас тут радисты есть, они и обезьяну выучат со сканером обращаться. А ты ж поумнее любой обезьяны, значит - справишься. Сейчас отправляйся к радистам. Пройди небольшой курс обучения. Потом ко мне вернешься, обрисую дальнейший план. Внизу, в подвале они сидят.</text>
+	</string>
+	
+	<string id="bar_a6_stalker_radiobattle_rpg_1_dialog_0">
+		<text>Я от Маркова. Учиться хочу приёмам радиоэлектронной борьбы.</text>
+	</string>
+	<string id="bar_a6_stalker_radiobattle_rpg_1_dialog_1">
+		<text>Да без проблем. Только сам смотри - тебе придется проходить постепенное обучение.</text>
+	</string>
+	<string id="bar_a6_stalker_radiobattle_rpg_1_dialog_2">
+		<text>Ну, Погнали?</text>
+	</string>	
+	<string id="bar_a6_stalker_radiobattle_rpg_1_dialog_3">
+		<text>Попозже зайду, не готов сейчас.</text>
+	</string>
+	<string id="bar_a6_stalker_radiobattle_rpg_1_dialog_4">
+		<text>Попозже зайду.</text>
+	</string>
+	
+	<string id="bar_azot_zero_quest_dialog_2_talking_0">
+		<text>Прошел я курс обучения. Времени потратил караул. А толку - около ноля. Кидалово какое-то. Узнал нового чуть меньше, чем нихрена.</text>
+	</string>
+	<string id="bar_azot_zero_quest_dialog_2_talking_1">
+		<text>Вот тебе небольшая компенсация за затрат времени.</text>
+	</string>
+	<string id="bar_azot_zero_quest_dialog_2_talking_2">
+		<text>Это мне на пиво, что ли? Несерьёзно всё это. И что теперь?</text>
+	</string>
+	<string id="bar_azot_zero_quest_dialog_2_talking_3">
+		<text>Сейчас решим, как лучше всего поступить. Погоди чутка.</text>
+	</string>
+	
+    <string id="bar_azot_first_quest_dialog_1_talking_0">
+        <text>Ну так что, определился?</text>
+    </string>
+	<string id="bar_azot_first_quest_dialog_1_talking_1">
+        <text>Ты должен помочь мне провести электронную разведку, проводя различные замеры специальной аппаратурой - осциллографом.</text>
+    </string>
+	<string id="bar_azot_first_quest_dialog_1_talking_2">
+        <text>Осци.. Что? Совсем вы тут охренели. Выбросом вас накрыло, что ли? Это ж бред. Может просто пристрелить кого? Или артефакт какой принести? Я же сталкер, мать твою за ногу.</text>
+    </string>
+	<string id="bar_azot_first_quest_dialog_1_talking_3">
+        <text>Стрелять - не наш метод. Для этого есть боевые квады. А мы - элита, разведка и контрразведка. Электронную борьбу мы ведём в нескольких направлениях. Первое - глушим частоты наемников и прочих криминальных элементов. Второе - защищаем собственные каналы связи. Для этого существует модуляция и шифрование. Ты будешь работать в первом направлении. Проверь старый заброшенный ангар у южного блокпоста. Наши парни из боевых квадов недавно его прочесывали и нактнулись на скопления работающей радиотехники. Возможно, ее используют в своих целях кто-то из наших врагов. Вот тебе осциллограф. Прозвони частоты оборудования. Результаты тащи мне. Иди!</text>
+    </string>	
+	<string id="bar_azot_first_quest_dialog_2_talking_0">
+        <text>В гробу я видел такие развлечения с осциллографом!</text>
+    </string>
+	<string id="bar_azot_first_quest_dialog_2_talking_1">
+        <text>А? Чё морда такая кислая?</text>
+    </string>
+	<string id="bar_azot_first_quest_dialog_2_talking_2">
+        <text>Ждали там меня. Наемники. Это была засада. Кто-то сливает информацию на ту сторону, не ты ли, Марков?</text>
+    </string>
+	<string id="bar_azot_first_quest_dialog_2_talking_3">
+        <text>Ты говори, да не заговаривайся. Выбирай выражения. В Долге нет предателей, будь уверен. Информацию о засаде я передам кому надо, расследование будет проведено и меры приняты. А мы с тобой будем работать дальше. Данные давай, их нужно обработать и проанализировать, это займет какое-то время.  Новое задание для тебя есть. У нас есть сведения, что в ряды "Чистого неба" внедрены шпионы-наемники. Ступай к Виталику - это лидер местных чистонебов. Он лоялен Долгу. Будешь работать с ним. Вперёд, на подвиги!</text>
+    </string>
+	
+	<string id="bar_azot_second_quest_dialog_2_talking_0">
+        <text>Я от Маркова. Ниточки расследования ведут к твоим людям.</text>
+    </string>
+	<string id="bar_azot_second_quest_dialog_2_talking_1">
+        <text>Я в курсе. Уже передал Маркову, что окажу тебе все необходимое содействие. Вот, держи рацию-сканер, на наши 5 каналов настроенный. Значит, план таков. Необходимо сузить район поисков. Шакал либо в южных отрядах, что сейчас на Свалке. Либо где-то тут, на Баре.</text>
+    </string>
+	<string id="bar_azot_second_quest_dialog_2_talking_2">
+        <text>Не пойму, что делать нужно. В двух словах поясни.</text>
+    </string>
+	<string id="bar_azot_second_quest_dialog_2_talking_3">
+        <text>Отправляйся для начала в туманный лес. Там отработаешь. Включишь, отправишь сообщение. Сообщение, конечно, фальшивка. Посмотрим, кто клюнет. После - на самую высокую вышку в Баре. Радиостанция уже настроена должным образом. Тебе останеться лишь прозвонить все пять каналов, которые мы используем для переговоров.</text>
+    </string>
+	<string id="bar_azot_second_quest_dialog_2_talking_4">
+        <text>Принято.</text>
+    </string>
+	
+	<string id="bar_azot_second_quest_dialog_3_talking_0">
+        <text>Сделано. Забирай рацию. Что теперь?</text>
+    </string>
+	<string id="bar_azot_second_quest_dialog_3_talking_1">
+        <text>А теперь ждем результатов. Марков и радисты уже подключились в работу. А у тебя новое задание.</text>
+    </string>
+	<string id="bar_azot_second_quest_dialog_3_talking_2">
+        <text>Опять какая-нибудь херь с осциллографом? Вы за кого меня держите? Я вам не ботан какой-то. Я - сталкер!</text>
+    </string>
+	<string id="bar_azot_second_quest_dialog_3_talking_3">
+        <text>Осциллограф? Какой осциллограф? Ты про чего вообще? Не, другое: тебе необходимо собрать специальные прослушки - вроде персональных радиожучков. Нужно будет разоблачить конкретного вражеского агента, как только мы вычислим, в каком из наших отрядов он затаился. И скоро мы это будем знать, поверь мне. Сейчас к долговскому барыге за радиодеталями и прочим необходимым иди. Он наверху сидит, на 3 этаже. Там указатели и стрелки по стенам нарисованы, найдешь.</text>
+    </string>
+	<string id="bar_azot_second_quest_dialog_3_talking_4">
+        <text>Понял.</text>
+    </string>
+	
+	<string id="bar_azot_third_quest_dialog_1_talking_0">
+        <text>Я от Виталика. Радиодетали давай.</text>
+    </string>
+	<string id="bar_azot_third_quest_dialog_1_talking_1">
+        <text>Да, я в курсе. Уже подготовил тебе все необходимое. Вот, принимай и расписывайся. Все в лучшем виде. Иди к Маркову, он даст тебе паяльную станцию.</text>
+    </string>
+	<string id="bar_azot_third_quest_dialog_1_talking_2">
+        <text>Угу.</text>
+    </string>
+	
+	<string id="bar_azot_third_quest_dialog_2_talking_0">
+        <text>Мне паяльная станция нужна, снабженец сказал, что у тебя она.</text>
+    </string>
+	<string id="bar_azot_third_quest_dialog_2_talking_1">
+        <text>Вот держи. Жучки паять будешь, ага? Мой тебе совет, не нужно изобретать велосипед. Ставь значения 93 и 186 - и всё будет пучком. Я этих жучков уже тысячу спаял с такими настройками, работают как часы. Спаяешь жучки, доложишь об этом Виталику. Паяльную станцию отдашь ему же. Скоро точно станет ясно, где искать крыс - на Свалке или здесь, на Баре. Виталик тебе скажет, он на прямой связи с нашими дешифровальщиками.</text>
+    </string>
+	<string id="bar_azot_third_quest_dialog_2_talking_2">
+        <text>Понял.</text>
+    </string>
+	
+	<string id="bar_azot_third_quest_dialog_3_talking_0">
+        <text>Жучки готовы. Вот паяльная станция. Что теперь?</text>
+    </string>
+	<string id="bar_azot_third_quest_dialog_3_talking_1">
+        <text>Отлично. Мы узнали, где крот.</text>
+    </string>
+	<string id="bar_azot_third_quest_dialog_3_talking_2">
+        <text>И?</text>
+    </string>
+	<string id="bar_azot_third_quest_dialog_3_talking_3">
+        <text>Свалка. Среди наших людей на Барахолке. Твоя задача - повесить на них жучки, выявить крота и его связи. Крота возьмёт служба контрразведки Долга. Допросить его нужно с пристрастием, а они в этом мастера. А твоя задача - устранить тех, кто кротом командует. Думаю, они на Свалке где-то засели. Сколько их там, не имею понятия. Будет совсем горячо, запросишь помощи у Долга по радио. Иди, геройствуй!</text>
+    </string>
+	<string id="bar_azot_third_quest_dialog_3_talking_4">
+        <text>Принято.</text>
+    </string>
+	
+	<string id="bar_azot_fouth_quest_dialog_1_talking_0">
+        <text>Сделано. Крота выявил, его хозяев уничтожил. Бандюки оказались.</text>
+    </string>
+	<string id="bar_azot_fouth_quest_dialog_1_talking_1">
+        <text>Отличная работа. Крот после допроса поставлен к стенке. Рассказал перед этим много интересного, но это уже не твоя забота. От лица "Долга" объявляю тебе благодарность!</text>
+    </string>
+	<string id="bar_azot_fouth_quest_dialog_1_talking_2">
+        <text>Сколько благодарность потянет в денежном эквиваленте?</text>
+    </string>
+	<string id="bar_azot_fouth_quest_dialog_1_talking_3">
+        <text>Так, сейчас. Вот твоя награда. Отлично поработал, друг мой.</text>
+    </string>
+	<string id="bar_azot_fouth_quest_dialog_1_talking_4">
+        <text>Ну, если что - зови.</text>
+    </string>
+	
+    <string id="bar_about_arena_kostolom_dialog_0">
+        <text>Расскажи о правилах проведения боев на арене.</text>
+    </string>
+    <string id="bar_about_arena_kostolom_dialog_1">
+        <text>У нас на арене шесть видов поединков: Дуэль, Охота, Телохранитель, Напарник, Выживание и Мститель. О каком виде подробнее рассказать?</text>
+    </string>
+    <string id="bar_about_arena_kostolom_dialog_21">
+        <text>О дуэли...</text>
+    </string>
+    <string id="bar_about_arena_kostolom_dialog_22">
+        <text>Об охоте...</text>
+    </string>
+    <string id="bar_about_arena_kostolom_dialog_23">
+        <text>О телохранителе...</text>
+    </string>
+    <string id="bar_about_arena_kostolom_dialog_24">
+        <text>О напарнике...</text>
+    </string>
+    <string id="bar_about_arena_kostolom_dialog_25">
+        <text>О выживании...</text>
+    </string>
+    <string id="bar_about_arena_kostolom_dialog_26">
+        <text>О мстителе...</text>
+    </string>
+    <string id="bar_about_arena_kostolom_dialog_31">
+        <text>В этом бою ты выходишь один на один с противником. Получил у меня снаряжение для боя и бегом на Арену. Побеждает тот, кто выживет, а его противник покинет Арену в трупном мешке. С каждым новым этапом я буду подбирать тебе противника посильнее. На последнем пятом этапе ты борешься за звание мастера арены в классе Дуэль. И запомни дверь на арену под током до окончания поединка.</text>
+    </string>
+    <string id="bar_about_arena_kostolom_dialog_32">
+        <text>В этом бою ты выходишь один против мутантов. Я выделяю тебе снаряжение достаточное для удачной охоты. Твоя задача добыть радиоактивного мяса, но чтобы при этом все твое осталось при тебе. С каждым новым этапом я буду подбирать монстров посильнее. На последнем пятом этапе ты борешься за звание мастера арены в классе Охота. Дверь на арену под током до окончания поединка.</text>
+    </string>
+    <string id="bar_about_arena_kostolom_dialog_33">
+        <text>В этом бою твоя задача защитить напарника, который безоружен. Взял пушку и броню - за дело. Для победы необходимо убить всех нападающих, но при этом подзащитный должен выжить. Если подзащитный мертв как и нападающие, то награду ты не получишь и бои в данном виде наврятле продолжишь. С каждым новым этапом нападающие будут сильнее и многочисленнее. На последнем пятом этапе ты борешься за звание мастера арены в классе Телохранитель. И к стати дверь на арену под током до окончания поединка.</text>
+    </string>
+    <string id="bar_about_arena_kostolom_dialog_34">
+        <text>В этом бою твоя задача вместе с напарником уничтожить отрад противника. Ствол в руки и в бой. Для победы необходимо, чтобы никто из отряда противников не смог выжить. Напарник напротив должен остаться в живых, если он погибнет, то награду за бой ты не получишь и бой в данном виде продолжить не сможешь. С каждым новым этапом отряд противника будет сильнее и многочисленнее. На последнем пятом этапе ты борешься за звание мастера арены в классе Напарник. И наконец дверь на арену под током до окончания поединка.</text>
+    </string>
+    <string id="bar_about_arena_kostolom_dialog_35">
+        <text>В этом бою ты выходишь один против мутантов. Я выделяю тебе минимальное снаряжение. Твоя задача выжить в течение определенного времени. Можешь, конечно, стрелять в мутантов, но врятле тебе хватит на всех патронов, к тому, же так ты их только привлечешь. С каждым новым этапом я буду подбирать монстров посильнее. На последнем пятом этапе ты борешься за звание мастера арены в классе Выживание. Дверь на арену под током до окончания поединка.</text>
+    </string>
+    <string id="bar_about_arena_kostolom_dialog_36">
+        <text>В этом бою твоя задача в одиночку уничтожить отрад противника. Оружия и боеприпасов достаточно. Для победы необходимо, чтобы никто из отряда противников не смог выжить. С каждым новым этапом отряд противника будет сильнее и многочисленнее. На последнем пятом этапе ты борешься за звание мастера арены в классе Мститель. Дверь под током до окончания поединка.</text>
+    </string>
+    <string id="bar_about_arena_kostolom_dialog_41">
+        <text>Интересно.</text>
+    </string>
+    <string id="bar_about_arena_kostolom_dialog_42">
+        <text>Прикольно.</text>
+    </string>
+    <string id="bar_about_arena_kostolom_dialog_43">
+        <text>И кто такую херь напридумывал.</text>
+    </string>
+    <string id="bar_about_arena_kostolom_dialog_44">
+        <text>Да ну.</text>
+    </string>
+    <string id="bar_about_arena_kostolom_dialog_45">
+        <text>Забавно.</text>
+    </string>
+    <string id="bar_about_arena_kostolom_dialog_46">
+        <text>Познавательно.</text>
+    </string>
+    <string id="bar_after_arena_fight_dialog_0">
+        <text>Справился? Молодец! Сдавай все снаряжение.</text>
+    </string>
+    <string id="bar_after_arena_fight_dialog_1">
+        <text>Вот, все что есть.</text>
+    </string>
+    <string id="bar_after_arena_fight_dialog_21">
+        <text>Твое личное снаряжение в сейфе, что стоит в коридоре, можешь забрать. Награда за победу на арене в домике наверху получишь.</text>
+    </string>
+    <string id="bar_after_arena_fight_dialog_22">
+        <text>Твое снаряжение, как обычно в сейфе.</text>
+    </string>
+    <string id="bar_after_arena_fight_dialog_31">
+        <text>Добро.</text>
+    </string>
+    <string id="bar_after_arena_fight_dialog_32">
+        <text>Понял, спасибо.</text>
+    </string>
+    <string id="bar_arena_take_rewqard_dialog_0">
+        <text>Я хочу получить вознаграждение за бой на арене.</text>
+    </string>
+    <string id="bar_arena_take_rewqard_dialog_100">
+        <text>Все что я тебе должен, я уже отдал.</text>
+    </string>
+    <string id="bar_arena_take_rewqard_dialog_111">
+        <text>Вот награда за бой Мститель этап 1.</text>
+    </string>
+    <string id="bar_arena_take_rewqard_dialog_112">
+        <text>Вот награда за бой Мститель этап 2.</text>
+    </string>
+    <string id="bar_arena_take_rewqard_dialog_113">
+        <text>Вот награда за бой Мститель этап 3.</text>
+    </string>
+    <string id="bar_arena_take_rewqard_dialog_114">
+        <text>Вот награда за бой Мститель этап 4.</text>
+    </string>
+    <string id="bar_arena_take_rewqard_dialog_115">
+        <text>Вот награда за бой Мститель этап 5.</text>
+    </string>
+    <string id="bar_arena_take_rewqard_dialog_121">
+        <text>Вот награда за бой Телохранитель этап 1.</text>
+    </string>
+    <string id="bar_arena_take_rewqard_dialog_122">
+        <text>Вот награда за бой Телохранитель этап 2.</text>
+    </string>
+    <string id="bar_arena_take_rewqard_dialog_123">
+        <text>Вот награда за бой Телохранитель этап 3.</text>
+    </string>
+    <string id="bar_arena_take_rewqard_dialog_124">
+        <text>Вот награда за бой Телохранитель этап 4.</text>
+    </string>
+    <string id="bar_arena_take_rewqard_dialog_125">
+        <text>Вот награда за бой Телохранитель этап 5.</text>
+    </string>
+    <string id="bar_arena_take_rewqard_dialog_131">
+        <text>Вот награда за бой Дуэль этап 1.</text>
+    </string>
+    <string id="bar_arena_take_rewqard_dialog_132">
+        <text>Вот награда за бой Дуэль этап 2.</text>
+    </string>
+    <string id="bar_arena_take_rewqard_dialog_133">
+        <text>Вот награда за бой Дуэль этап 3.</text>
+    </string>
+    <string id="bar_arena_take_rewqard_dialog_134">
+        <text>Вот награда за бой Дуэль этап 4.</text>
+    </string>
+    <string id="bar_arena_take_rewqard_dialog_135">
+        <text>Вот награда за бой Дуэль этап 5.</text>
+    </string>
+    <string id="bar_arena_take_rewqard_dialog_141">
+        <text>Вот награда за бой Напарник этап 1.</text>
+    </string>
+    <string id="bar_arena_take_rewqard_dialog_142">
+        <text>Вот награда за бой Напарник этап 2.</text>
+    </string>
+    <string id="bar_arena_take_rewqard_dialog_143">
+        <text>Вот награда за бой Напарник этап 3.</text>
+    </string>
+    <string id="bar_arena_take_rewqard_dialog_144">
+        <text>Вот награда за бой Напарник этап 4.</text>
+    </string>
+    <string id="bar_arena_take_rewqard_dialog_145">
+        <text>Вот награда за бой Напарник этап 5.</text>
+    </string>
+    <string id="bar_arena_take_rewqard_dialog_151">
+        <text>Вот награда за бой Охота этап 1.</text>
+    </string>
+    <string id="bar_arena_take_rewqard_dialog_152">
+        <text>Вот награда за бой Охота этап 2.</text>
+    </string>
+    <string id="bar_arena_take_rewqard_dialog_153">
+        <text>Вот награда за бой Охота этап 3.</text>
+    </string>
+    <string id="bar_arena_take_rewqard_dialog_154">
+        <text>Вот награда за бой Охота этап 4.</text>
+    </string>
+    <string id="bar_arena_take_rewqard_dialog_155">
+        <text>Вот награда за бой Охота этап 5.</text>
+    </string>
+    <string id="bar_arena_take_rewqard_dialog_161">
+        <text>Вот награда за бой Выживание этап 1.</text>
+    </string>
+    <string id="bar_arena_take_rewqard_dialog_162">
+        <text>Вот награда за бой Выживание этап 2.</text>
+    </string>
+    <string id="bar_arena_take_rewqard_dialog_163">
+        <text>Вот награда за бой Выживание этап 3.</text>
+    </string>
+    <string id="bar_arena_take_rewqard_dialog_164">
+        <text>Вот награда за бой Выживание этап 4.</text>
+    </string>
+    <string id="bar_arena_take_rewqard_dialog_165">
+        <text>Вот награда за бой Выживание этап 5.</text>
+    </string>
+    <string id="bar_arena_take_rewqard_dialog_2">
+        <text>Спасибо.</text>
+    </string>
+    <string id="bar_bodyguard_1_naim_dialog_0">
+        <text>Ты участвуешь в боях на Арене?</text>
+    </string>
+    <string id="bar_bodyguard_1_naim_dialog_1">
+        <text>Внатуре корешь.</text>
+    </string>
+    <string id="bar_bodyguard_1_naim_dialog_10">
+        <text>Ну ты крендель, подкатывай когда внатуре готов будешь.</text>
+    </string>
+    <string id="bar_bodyguard_1_naim_dialog_21">
+        <text>Рассажи о своей специализации.</text>
+    </string>
+    <string id="bar_bodyguard_1_naim_dialog_22">
+        <text>Я тоже хочу поучаствовать в боях на арене, не желаещь присоедениться к бою Телохранитель?</text>
+    </string>
+    <string id="bar_bodyguard_1_naim_dialog_31">
+        <text>Я - Вася Штырь из бригады Паленого. Вот бабла решил по-быстрому срубить на Арене, стремно конечно, но зато навар приличный Логопед обещает за манцы охраняемым. Броника толкового у меня нет, но зато я мухой буду за тобой двигать, так что хрен в меня эти клоуны засандалят.</text>
+    </string>
+    <string id="bar_bodyguard_1_naim_dialog_32">
+        <text>Нет базара, если ты не зассышь.</text>
+    </string>
+    <string id="bar_bodyguard_1_naim_dialog_41">
+        <text>Понятно.</text>
+    </string>
+    <string id="bar_bodyguard_1_naim_dialog_421">
+        <text>Да меня всё устраивает.</text>
+    </string>
+    <string id="bar_bodyguard_1_naim_dialog_422">
+        <text>Нет погоди, я еще подумаю.</text>
+    </string>
+    <string id="bar_bodyguard_1_naim_dialog_5">
+        <text>Лады. Покандехаем на Арене.</text>
+    </string>
+    <string id="bar_bodyguard_1_naim_dialog_6">
+        <text>До встречи на Арене.</text>
+    </string>
+    <string id="bar_bodyguard_2_naim_dialog_0">
+        <text>Ты участвуешь в боях на Арене?</text>
+    </string>
+    <string id="bar_bodyguard_2_naim_dialog_1">
+        <text>Да.</text>
+    </string>
+    <string id="bar_bodyguard_2_naim_dialog_10">
+        <text>Я всегда здесь, если вдруг передумаешь.</text>
+    </string>
+    <string id="bar_bodyguard_2_naim_dialog_21">
+        <text>Рассажи о своей специализации.</text>
+    </string>
+    <string id="bar_bodyguard_2_naim_dialog_22">
+        <text>Я тоже хочу поучаствовать в боях на арене, не желаещь присоедениться к бою Телохранитель?</text>
+    </string>
+    <string id="bar_bodyguard_2_naim_dialog_31">
+        <text>Петр Болотный, с болот, как понимаешь, раньше в "Чистом небе" состоял теперь вот на Арене подрабатываю в качестве охраняемого. Броня и шлем у меня неплохие, но несколько сковывают движение, поэтому посматривай за мной внимательнее.</text>
+    </string>
+    <string id="bar_bodyguard_2_naim_dialog_32">
+        <text>Я не против, если тебя все устраивает.</text>
+    </string>
+    <string id="bar_bodyguard_2_naim_dialog_41">
+        <text>Понятно.</text>
+    </string>
+    <string id="bar_bodyguard_2_naim_dialog_421">
+        <text>Да меня все устраивает.</text>
+    </string>
+    <string id="bar_bodyguard_2_naim_dialog_422">
+        <text>Нет погоди я еще подумаю.</text>
+    </string>
+    <string id="bar_bodyguard_2_naim_dialog_5">
+        <text>Хорошо. До встречи на Арене.</text>
+    </string>
+    <string id="bar_bodyguard_2_naim_dialog_6">
+        <text>До встречи на Арене.</text>
+    </string>
+    <string id="bar_bodyguard_3_naim_dialog_0">
+        <text>Ты участвуешь в боях на Арене?</text>
+    </string>
+    <string id="bar_bodyguard_3_naim_dialog_1">
+        <text>Монолит свидель - да!</text>
+    </string>
+    <string id="bar_bodyguard_3_naim_dialog_10">
+        <text>Я постоянно здесь, если не в молитве.</text>
+    </string>
+    <string id="bar_bodyguard_3_naim_dialog_21">
+        <text>Рассажи о своей специализации.</text>
+    </string>
+    <string id="bar_bodyguard_3_naim_dialog_22">
+        <text>Я тоже хочу поучаствовать в боях на арене, не желаещь присоедениться к бою Телохранитель?</text>
+    </string>
+    <string id="bar_bodyguard_3_naim_dialog_31">
+        <text>Инокентий Отмороженный. Бывший последователь учения о великом Монолите. Теперь здесь на Арене выступаю в бою Телохранитель. Броня у меня мощная, хвала Монолиту, но сильно громоздкая, так что почаще оглядывайся и дожидайся меня.</text>
+    </string>
+    <string id="bar_bodyguard_3_naim_dialog_32">
+        <text>Я не возражаю, если на то воля Монолита.</text>
+    </string>
+    <string id="bar_bodyguard_3_naim_dialog_41">
+        <text>Понятно.</text>
+    </string>
+    <string id="bar_bodyguard_3_naim_dialog_421">
+        <text>Да меня все устраивает.</text>
+    </string>
+    <string id="bar_bodyguard_3_naim_dialog_422">
+        <text>Нет погоди, я еще подумаю.</text>
+    </string>
+    <string id="bar_bodyguard_3_naim_dialog_5">
+        <text>Вот и хорошо. Храни тебя Монолит.</text>
+    </string>
+    <string id="bar_bodyguard_3_naim_dialog_6">
+        <text>До встречи на Арене.</text>
+    </string>
+    <string id="bar_bodyguard_after_fight_dialog_0">
+        <text>Как тебе последний бой на Арене?</text>
+    </string>
+    <string id="bar_bodyguard_after_fight_dialog_100">
+        <text>Мы же еще не воевали.</text>
+    </string>
+    <string id="bar_bodyguard_after_fight_dialog_111">
+        <text>А круто ты их завалил.</text>
+    </string>
+    <string id="bar_bodyguard_after_fight_dialog_112">
+        <text>Нормуль, только чуть маслину не поймал.</text>
+    </string>
+    <string id="bar_bodyguard_after_fight_dialog_113">
+        <text>Слушай корешь, если так дальше пойдет, мы с тобой в кроссовках от Версаче будем ходить.</text>
+    </string>
+    <string id="bar_bodyguard_after_fight_dialog_114">
+        <text>Прикинь, я чуть копыта не откинул, ты, мля, смотри за этими кренделями. Тормозной ты какой-то.</text>
+    </string>
+    <string id="bar_bodyguard_after_fight_dialog_115">
+        <text>Во, кореш, круто забульбенили. Теперь у меня бабла хоть залейся.</text>
+    </string>
+    <string id="bar_bodyguard_after_fight_dialog_121">
+        <text>Нормально.</text>
+    </string>
+    <string id="bar_bodyguard_after_fight_dialog_122">
+        <text>Да все вроде хорошо прошло.</text>
+    </string>
+    <string id="bar_bodyguard_after_fight_dialog_123">
+        <text>Неплохо, неплохо еше пару раз - и на домик в деревне хватит.</text>
+    </string>
+    <string id="bar_bodyguard_after_fight_dialog_124">
+        <text>Ой ее, на волосок от смерти был, слава богу все обошлось.</text>
+    </string>
+    <string id="bar_bodyguard_after_fight_dialog_125">
+        <text>Здорово ты их, теперь я неплохо подзаработал и могу так не рисковать.</text>
+    </string>
+    <string id="bar_bodyguard_after_fight_dialog_131">
+        <text>Все в порядке.</text>
+    </string>
+    <string id="bar_bodyguard_after_fight_dialog_132">
+        <text>Здорово, все очень неплохо складывается.</text>
+    </string>
+    <string id="bar_bodyguard_after_fight_dialog_133">
+        <text>Все прекрасно, хвала Монолиту.</text>
+    </string>
+    <string id="bar_bodyguard_after_fight_dialog_134">
+        <text>Номально, так, чуть броню потрепало и всё.</text>
+    </string>
+    <string id="bar_bodyguard_after_fight_dialog_135">
+        <text>Все здорово, я жив здоров и броня в порядке, хвала Монолиту.</text>
+    </string>
+    <string id="bar_bodyguard_after_fight_dialog_2">
+        <text>Понятно.</text>
+    </string>
+    <string id="bar_friend_1_naim_dialog_0">
+        <text>Ты участвуешь в боях на Арене?</text>
+    </string>
+    <string id="bar_friend_1_naim_dialog_1">
+        <text>Ага, брателло.</text>
+    </string>
+    <string id="bar_friend_1_naim_dialog_10">
+        <text>Короче, я здесь если че.</text>
+    </string>
+    <string id="bar_friend_1_naim_dialog_21">
+        <text>Рассажи о своей специализации.</text>
+    </string>
+    <string id="bar_friend_1_naim_dialog_22">
+        <text>Я тут хочу поучаствовать в боях на арене, не желаещь присоедениться к бою Напарник?</text>
+    </string>
+    <string id="bar_friend_1_naim_dialog_31">
+        <text>Гена Лопата из бригады Сопатого. Люблю, прикинь рубилово на пару с корешем. Шмотки у меня слабые, зато ствол конкретный себе замутил.</text>
+    </string>
+    <string id="bar_friend_1_naim_dialog_32">
+        <text>Без базара, хоть сейчас кого в капусту покрошу.</text>
+    </string>
+    <string id="bar_friend_1_naim_dialog_41">
+        <text>Понятно.</text>
+    </string>
+    <string id="bar_friend_1_naim_dialog_421">
+        <text>Да, меня все устраивает.</text>
+    </string>
+    <string id="bar_friend_1_naim_dialog_422">
+        <text>Нет, погоди, я еще подумаю.</text>
+    </string>
+    <string id="bar_friend_1_naim_dialog_5">
+        <text>Покеда. Встретимся на бойне.</text>
+    </string>
+    <string id="bar_friend_1_naim_dialog_6">
+        <text>До встречи на Арене.</text>
+    </string>
+    <string id="bar_friend_2_naim_dialog_0">
+        <text>Ты участвуешь в боях на Арене?</text>
+    </string>
+    <string id="bar_friend_2_naim_dialog_1">
+        <text>Да.</text>
+    </string>
+    <string id="bar_friend_2_naim_dialog_10">
+        <text>Понятно, я подожду, если вдруг передумаешь.</text>
+    </string>
+    <string id="bar_friend_2_naim_dialog_21">
+        <text>Рассажи о своей специализации.</text>
+    </string>
+    <string id="bar_friend_2_naim_dialog_22">
+        <text>Я тут хочу поучаствовать в боях на арене, не желаещь присоедениться к бою Напарник?</text>
+    </string>
+    <string id="bar_friend_2_naim_dialog_31">
+        <text>Коля Счастливчик из вольных сталкеров. Зарабатываю на хлеб боями с напарником. Куртка как видишь не супер, но оружие неплохое имеется.</text>
+    </string>
+    <string id="bar_friend_2_naim_dialog_32">
+        <text>Я не против, если тебя все устраивает.</text>
+    </string>
+    <string id="bar_friend_2_naim_dialog_41">
+        <text>Понятно.</text>
+    </string>
+    <string id="bar_friend_2_naim_dialog_421">
+        <text>Да, меня все устраивает.</text>
+    </string>
+    <string id="bar_friend_2_naim_dialog_422">
+        <text>Нет, погоди, я еще подумаю.</text>
+    </string>
+    <string id="bar_friend_2_naim_dialog_5">
+        <text>Хорошо. До встречи на Арене.</text>
+    </string>
+    <string id="bar_friend_2_naim_dialog_6">
+        <text>До встречи на Арене.</text>
+    </string>
+    <string id="bar_friend_3_naim_dialog_0">
+        <text>Ты участвуешь в боях на Арене?</text>
+    </string>
+    <string id="bar_friend_3_naim_dialog_1">
+        <text>Так точно.</text>
+    </string>
+    <string id="bar_friend_3_naim_dialog_10">
+        <text>Подходи попозже, если вдруг передумаешь.</text>
+    </string>
+    <string id="bar_friend_3_naim_dialog_21">
+        <text>Рассажи о своей специализации.</text>
+    </string>
+    <string id="bar_friend_3_naim_dialog_22">
+        <text>Я тут хочу поучаствовать в боях на арене, не желаещь присоедениться к бою Напарник?</text>
+    </string>
+    <string id="bar_friend_3_naim_dialog_31">
+        <text>Митяй Коловорот бывший военный, теперь дезертир и вольный стрелок. Не прочь заработать в бою с нормальным напарником. Броня - облегченная армейская, но вот оружие простой пистолет.</text>
+    </string>
+    <string id="bar_friend_3_naim_dialog_32">
+        <text>Я - за, если тебя все устраивает.</text>
+    </string>
+    <string id="bar_friend_3_naim_dialog_41">
+        <text>Понятно.</text>
+    </string>
+    <string id="bar_friend_3_naim_dialog_421">
+        <text>Да, меня все устраивает.</text>
+    </string>
+    <string id="bar_friend_3_naim_dialog_422">
+        <text>Нет, погоди, я еще подумаю.</text>
+    </string>
+    <string id="bar_friend_3_naim_dialog_5">
+        <text>Добро. Встретимся на Арене.</text>
+    </string>
+    <string id="bar_friend_3_naim_dialog_6">
+        <text>До встречи на Арене.</text>
+    </string>
+    <string id="bar_friend_after_fight_dialog_0">
+        <text>Как тебе последний бой на Арене?</text>
+    </string>
+    <string id="bar_friend_after_fight_dialog_100">
+        <text>Мы же еще не воевали.</text>
+    </string>
+    <string id="bar_friend_after_fight_dialog_111">
+        <text>Зашибись, только мало. Я совсем не разогрелся.</text>
+    </string>
+    <string id="bar_friend_after_fight_dialog_112">
+        <text>Круто! Я только и шмалял из своей пушки.</text>
+    </string>
+    <string id="bar_friend_after_fight_dialog_113">
+        <text>Брателло, мы их просто порвали.</text>
+    </string>
+    <string id="bar_friend_after_fight_dialog_114">
+        <text>Мля, тяжковато было.</text>
+    </string>
+    <string id="bar_friend_after_fight_dialog_115">
+        <text>Брателло, да мы с тобой два терминатора.</text>
+    </string>
+    <string id="bar_friend_after_fight_dialog_121">
+        <text>Нормально.</text>
+    </string>
+    <string id="bar_friend_after_fight_dialog_122">
+        <text>Хорошо, мы стобой неплохо управляемся.</text>
+    </string>
+    <string id="bar_friend_after_fight_dialog_123">
+        <text>Замечательно, мы их разбили.</text>
+    </string>
+    <string id="bar_friend_after_fight_dialog_124">
+        <text>Неплохо, но не мешает за тылом посматривать.</text>
+    </string>
+    <string id="bar_friend_after_fight_dialog_125">
+        <text>Всё, мы чемпионы! Теперь все бабы наши, только осталось их найти.</text>
+    </string>
+    <string id="bar_friend_after_fight_dialog_131">
+        <text>Неплохо, грамотно двигаешся, надежно прикрываешь.</text>
+    </string>
+    <string id="bar_friend_after_fight_dialog_132">
+        <text>Все лучше и лучше, мы определенно сработаемся.</text>
+    </string>
+    <string id="bar_friend_after_fight_dialog_133">
+        <text>Отлично! Мы с тобой как бравый спецназ, всех покрошили.</text>
+    </string>
+    <string id="bar_friend_after_fight_dialog_134">
+        <text>Было конечно тяжело, но мы не промах, уложили супостатов.</text>
+    </string>
+    <string id="bar_friend_after_fight_dialog_135">
+        <text>Отлично, мы братья-чемпионы.</text>
+    </string>
+    <string id="bar_friend_after_fight_dialog_2">
+        <text>Понятно.</text>
+    </string>
+    <string id="bar_medic_need_health_care_0">
+        <text>Мне нужна медицинская помощь.</text>
+    </string>
+    <string id="bar_medic_need_health_care_1">
+        <text>Без проблем, давай я гляну...</text>
+    </string>
+    <string id="bar_medic_need_health_care_11">
+        <text>[далее...]</text>
+    </string>
+    <string id="bar_medic_need_health_care_2">
+        <text>Что-то ты гонишь, ты здоров как!</text>
+    </string>
+    <string id="bar_stard_dialog_barman_text">
+        <text>Здорова, друг, попутного ветра в горбатую спину. Какими судьбами?</text>
+    </string>
+    <string id="bar_start_arena_kostolom_dialog_0">
+        <text>Я хочу записаться на бой.</text>
+    </string>
+    <string id="bar_start_arena_kostolom_dialog_1">
+        <text>На какой вид боя тебя записать?</text>
+    </string>
+    <string id="bar_start_arena_kostolom_dialog_10">
+        <text>Как знаешь.</text>
+    </string>
+    <string id="bar_start_arena_kostolom_dialog_21">
+        <text>Я хочу записаться на бой - Дуэль.</text>
+    </string>
+    <string id="bar_start_arena_kostolom_dialog_22">
+        <text>Я хочу записаться на бой - Охота.</text>
+    </string>
+    <string id="bar_start_arena_kostolom_dialog_23">
+        <text>Я хочу записаться на бой - Телохранитель.</text>
+    </string>
+    <string id="bar_start_arena_kostolom_dialog_24">
+        <text>Я хочу записаться на бой - Напарник.</text>
+    </string>
+    <string id="bar_start_arena_kostolom_dialog_25">
+        <text>Я хочу записаться на бой - Выживание.</text>
+    </string>
+    <string id="bar_start_arena_kostolom_dialog_26">
+        <text>Я хочу записаться на бой - Мститель.</text>
+    </string>
+    <string id="bar_start_arena_kostolom_dialog_27">
+        <text>Нет, я, пожалуй, еще повременю умирать.</text>
+    </string>
+    <string id="bar_start_arena_kostolom_dialog_311">
+        <text>Так, записываю тебя на этап №1 бой Дуэль.</text>
+    </string>
+    <string id="bar_start_arena_kostolom_dialog_312">
+        <text>Записываю тебя на этап №2 бой Дуэль.</text>
+    </string>
+    <string id="bar_start_arena_kostolom_dialog_313">
+        <text>Записываю на этап №3 бой Дуэль.</text>
+    </string>
+    <string id="bar_start_arena_kostolom_dialog_314">
+        <text>Так, записываю тебя на этап №4 бой Дуэль.</text>
+    </string>
+    <string id="bar_start_arena_kostolom_dialog_315">
+        <text>Так, записываю тебя на этап №5 бой Дуэль.</text>
+    </string>
+    <string id="bar_start_arena_kostolom_dialog_321">
+        <text>Так, записываю тебя на этап №1 бой Охота.</text>
+    </string>
+    <string id="bar_start_arena_kostolom_dialog_322">
+        <text>Так, записываю тебя на этап №2 бой Охота.</text>
+    </string>
+    <string id="bar_start_arena_kostolom_dialog_323">
+        <text>Так, записываю тебя на этап №3 бой Охота.</text>
+    </string>
+    <string id="bar_start_arena_kostolom_dialog_324">
+        <text>Так, записываю тебя на этап №4 бой Охота.</text>
+    </string>
+    <string id="bar_start_arena_kostolom_dialog_325">
+        <text>Так, записываю тебя на этап №5 бой Охота.</text>
+    </string>
+    <string id="bar_start_arena_kostolom_dialog_331">
+        <text>Так, записываю тебя на этап №1 бой Телохранитель.</text>
+    </string>
+    <string id="bar_start_arena_kostolom_dialog_332">
+        <text>Так, записываю тебя на этап №2 бой Телохранитель.</text>
+    </string>
+    <string id="bar_start_arena_kostolom_dialog_333">
+        <text>Так, записываю тебя на этап №3 бой Телохранитель.</text>
+    </string>
+    <string id="bar_start_arena_kostolom_dialog_334">
+        <text>Так, записываю тебя на этап №4 бой Телохранитель.</text>
+    </string>
+    <string id="bar_start_arena_kostolom_dialog_335">
+        <text>Так, записываю тебя на этап №5 бой Телохранитель.</text>
+    </string>
+    <string id="bar_start_arena_kostolom_dialog_337">
+        <text>Для этого боя тебе нужен напарник, которого ты будешь охранять. Договорись с кем-то из сталкеров. Они обычно в тоннеле рядом возле вентиляторов ошиваються.</text>
+    </string>
+    <string id="bar_start_arena_kostolom_dialog_338">
+        <text>Я тебе уже говорил, договорись с кем-то из сталкеров об участии в бое.</text>
+    </string>
+    <string id="bar_start_arena_kostolom_dialog_339">
+        <text>К сожалению, твой подзащитный погиб, и больше никто не желает с тобой связываться.</text>
+    </string>
+    <string id="bar_start_arena_kostolom_dialog_341">
+        <text>Так, записываю тебя на этап №1 бой Напарник.</text>
+    </string>
+    <string id="bar_start_arena_kostolom_dialog_342">
+        <text>Так, записываю тебя на этап №2 бой Напарник.</text>
+    </string>
+    <string id="bar_start_arena_kostolom_dialog_343">
+        <text>Так, записываю тебя на этап №3 бой Напарник.</text>
+    </string>
+    <string id="bar_start_arena_kostolom_dialog_344">
+        <text>Так, записываю тебя на этап №4 бой Напарник.</text>
+    </string>
+    <string id="bar_start_arena_kostolom_dialog_345">
+        <text>Так, записываю тебя на этап №5 бой Напарник.</text>
+    </string>
+    <string id="bar_start_arena_kostolom_dialog_347">
+        <text>Для этого боя тебе нужен напарник. Договорись с кем-то из сталкеров, они обычно в тоннеле возле вентиляторов ошиваються.</text>
+    </string>
+    <string id="bar_start_arena_kostolom_dialog_348">
+        <text>Я тебе уже говорил, договорись с кем-то из сталкеров об участии в этом бое.</text>
+    </string>
+    <string id="bar_start_arena_kostolom_dialog_349">
+        <text>К сожалению, твой напарник погиб, и больше никто не желает с тобой связываться.</text>
+    </string>
+    <string id="bar_start_arena_kostolom_dialog_351">
+        <text>Так, записываю тебя на этап №1 бой Выживание.</text>
+    </string>
+    <string id="bar_start_arena_kostolom_dialog_352">
+        <text>Так, записываю тебя на этап №2 бой Выживание.</text>
+    </string>
+    <string id="bar_start_arena_kostolom_dialog_353">
+        <text>Так, записываю тебя на этап №3 бой Выживание.</text>
+    </string>
+    <string id="bar_start_arena_kostolom_dialog_354">
+        <text>Так, записываю тебя на этап №4 бой Выживание.</text>
+    </string>
+    <string id="bar_start_arena_kostolom_dialog_355">
+        <text>Так, записываю тебя на этап №5 бой Выживание.</text>
+    </string>
+    <string id="bar_start_arena_kostolom_dialog_361">
+        <text>Так, записываю тебя на этап №1 бой Мститель.</text>
+    </string>
+    <string id="bar_start_arena_kostolom_dialog_362">
+        <text>Так, записываю тебя на этап №2 бой Мститель.</text>
+    </string>
+    <string id="bar_start_arena_kostolom_dialog_363">
+        <text>Так, записываю тебя на этап №3 бой Мститель.</text>
+    </string>
+    <string id="bar_start_arena_kostolom_dialog_364">
+        <text>Так, записываю тебя на этап №4 бой Мститель.</text>
+    </string>
+    <string id="bar_start_arena_kostolom_dialog_365">
+        <text>Так, записываю тебя на этап №5 бой Мститель.</text>
+    </string>
+    <string id="bar_start_arena_kostolom_dialog_4">
+        <text>Договорились.</text>
+    </string>
+    <string id="bar_start_arena_kostolom_dialog_5">
+        <text>Личные вещи в сейф.</text>
+    </string>
+    <string id="bar_start_arena_kostolom_dialog_6">
+        <text>Хорошо.</text>
+    </string>
+    <string id="bar_start_arena_kostolom_dialog_7">
+        <text>Вот снаряжение для боя.</text>
+    </string>
+    <string id="bar_start_arena_kostolom_dialog_811">
+        <text>Давай.</text>
+    </string>
+    <string id="bar_start_arena_kostolom_dialog_812">
+        <text>Ага.</text>
+    </string>
+    <string id="bar_start_arena_kostolom_dialog_813">
+        <text>Отлично.</text>
+    </string>
+    <string id="bar_start_arena_kostolom_dialog_814">
+        <text>Угу.</text>
+    </string>
+    <string id="bar_start_arena_kostolom_dialog_815">
+        <text>Давай.</text>
+    </string>
+    <string id="bar_start_arena_kostolom_dialog_821">
+        <text>Давай.</text>
+    </string>
+    <string id="bar_start_arena_kostolom_dialog_822">
+        <text>Давай.</text>
+    </string>
+    <string id="bar_start_arena_kostolom_dialog_823">
+        <text>Давай.</text>
+    </string>
+    <string id="bar_start_arena_kostolom_dialog_824">
+        <text>Давай.</text>
+    </string>
+    <string id="bar_start_arena_kostolom_dialog_825">
+        <text>Давай.</text>
+    </string>
+    <string id="bar_start_arena_kostolom_dialog_831">
+        <text>Давай.</text>
+    </string>
+    <string id="bar_start_arena_kostolom_dialog_832">
+        <text>Давай.</text>
+    </string>
+    <string id="bar_start_arena_kostolom_dialog_833">
+        <text>Давай.</text>
+    </string>
+    <string id="bar_start_arena_kostolom_dialog_834">
+        <text>Давай.</text>
+    </string>
+    <string id="bar_start_arena_kostolom_dialog_835">
+        <text>Давай.</text>
+    </string>
+    <string id="bar_start_arena_kostolom_dialog_841">
+        <text>Давай.</text>
+    </string>
+    <string id="bar_start_arena_kostolom_dialog_842">
+        <text>Давай.</text>
+    </string>
+    <string id="bar_start_arena_kostolom_dialog_843">
+        <text>Давай.</text>
+    </string>
+    <string id="bar_start_arena_kostolom_dialog_844">
+        <text>Давай.</text>
+    </string>
+    <string id="bar_start_arena_kostolom_dialog_845">
+        <text>Давай.</text>
+    </string>
+    <string id="bar_start_arena_kostolom_dialog_851">
+        <text>Давай.</text>
+    </string>
+    <string id="bar_start_arena_kostolom_dialog_852">
+        <text>Давай.</text>
+    </string>
+    <string id="bar_start_arena_kostolom_dialog_853">
+        <text>Давай.</text>
+    </string>
+    <string id="bar_start_arena_kostolom_dialog_854">
+        <text>Давай.</text>
+    </string>
+    <string id="bar_start_arena_kostolom_dialog_855">
+        <text>Давай.</text>
+    </string>
+    <string id="bar_start_arena_kostolom_dialog_861">
+        <text>Давай.</text>
+    </string>
+    <string id="bar_start_arena_kostolom_dialog_862">
+        <text>Давай.</text>
+    </string>
+    <string id="bar_start_arena_kostolom_dialog_863">
+        <text>Давай.</text>
+    </string>
+    <string id="bar_start_arena_kostolom_dialog_864">
+        <text>Давай.</text>
+    </string>
+    <string id="bar_start_arena_kostolom_dialog_865">
+        <text>Давай.</text>
+    </string>
+    <string id="bar_start_arena_kostolom_dialog_9">
+        <text>Удачи!</text>
+    </string>
+    <string id="bar_start_arena_kalgun_dialog_0">
+        <text>Арена работает?</text>
+    </string>
+    <string id="bar_start_arena_kalgun_dialog_1">
+        <text>Да, и более того, мы расширились. И теперь на Арене несколько видов боев по пять этапов на каждый.</text>
+    </string>
+    <string id="bar_start_arena_kalgun_dialog_2">
+        <text>Здорово, я хотел бы поучаствовать в поединках.</text>
+    </string>
+    <string id="bar_start_arena_kalgun_dialog_3">
+        <text>Нет проблем, подробности проведения боев и их правила можешь узнать у моего помошника - Костолома. Он внизу, около входа на Арену. У него и запишешься на бои, снаряжение для проведения боев  тоже у него получать. Награду за выигранные бои получишь у меня.</text>
+    </string>
+    <string id="bar_start_arena_kalgun_dialog_4">
+        <text>Понятно, значит еще встретимся.</text>
+    </string>
+    <string id="esc_medic_need_health_care_111">
+        <text>Вот, теперь всё хорошо. Будешь жить.</text>
+    </string>
+	
+	<!------------------------------------------------------------------------>
+	<!--------------------------- СЮЖЕТНЫЕ ДИАЛОГИ БАРА ---------------------->
+	<!------------------------------------------------------------------------>
+	
+	<!------------>
+	<string id="bar_first_talk_barmen_dialog_0">
+        <text>Фух, еле успели! Ты здесь главный?</text>
+    </string>
+	<string id="bar_first_talk_barmen_dialog_1">
+        <text>Нехилый выброс сегодня, не нравится мне всё это. \nЯ - Маландринус. Держу это заведение. А ты кто такой?</text>
+    </string>
+	<string id="bar_first_talk_barmen_dialog_2">
+        <text>Я Саван. Напарник мой - Борланд.</text>
+    </string>
+	<string id="bar_first_talk_barmen_dialog_3">
+        <text>Борланда я узнал, знакомы. Ясно, понятно. Мне Скидан скидывал информацию, что вы появитесь. Сейчас обустраивайтесь, приходите в себя. После окончания выброса переговорим. Дело для вас есть.</text>
+    </string>
+	<string id="bar_first_talk_barmen_dialog_4">
+        <text>Вздремну пока. Минут 600.</text>
+    </string>
+	
+	
+	<string id="bar_doc_barmen_dialog_0">
+        <text>В лаборатории Х5, что под Кордоном, мы нашли документы. Там заумно всё, графики, формулы, чертежи. Хрен проссышь без полбутылки. Скидан велел отдать их тебе. Не задаром, конечно.</text>
+    </string>
+	<string id="bar_doc_barmen_dialog_1">
+        <text>Показывай, что там у тебя есть.</text>
+    </string>
+	<string id="bar_doc_barmen_dialog_111">
+        <text>Документ-1</text>
+    </string>
+	<string id="bar_doc_barmen_dialog_112">
+        <text>Документ-2</text>
+    </string>
+	<string id="bar_doc_barmen_dialog_113">
+        <text>Документ-3</text>
+    </string>
+	<string id="bar_doc_barmen_dialog_2">
+        <text>Полистаю на досуге. Если в них будет что-то полезное, я дам тебе знать. Чуть не забыл, вот тебе за труды.</text>
+    </string>
+	<string id="bar_doc_barmen_dialog_3">
+        <text>Это всё, что есть.</text>
+    </string>
+
+
+	
+	<!------------>
+	<string id="bar_new_details_barmen_dialog_0">
+        <text>Ну, так какое дело есть для нас?</text>
+    </string>
+	<string id="bar_new_details_barmen_dialog_1">
+        <text>Скидан просил помочь вам в поисках артефакта «Маятник». Спокойно, не надо на меня шикать, тут все про него знают. И многие тоже ищут. А ты как думал? Это Зона, тут сплетни и слухи распространяются со скоростью света. Тем более, что награда за его находку просто нереально щедрая. Более чем. Народ готов глотки грызть друг другу. К делу:  буквально на днях мне повезло - необычную информацию по поводу этого дела получил. Интересно?</text>
+    </string>
+	<string id="bar_new_details_barmen_dialog_2">
+        <text>Продолжай.</text>
+    </string>
+	<string id="bar_new_details_barmen_dialog_3">
+        <text>Один анонимный, но очень богатый коллекционер артефактов объявил невероятную награду тому, кто найдет артефакт «Маятник». Я вот тут на салфетке напишу цифры. Удивлён? Скидан тебе другую цифру сказал, ага? Старый лис, не угомонится никак. Каждого хочет вокруг пальца обвести. Никак не поймёт, что в тайне тут ничего нельзя удержать. Истина быстро всплывёт. Ну, да бог ему судья. Возращаясь к нашему делу: известно, что одна частная военная компания «Спектрум» организовала экспедицию на поиски этого артефакта, но найти его они никак не могут. Некоторые сталкеры утверждают, что монолитовцы до сих пор охраняют этот артефакт, и что он хранится где-то в подземельях Зоны. В одной из подземных лабораторий. Не известно, в какой именно. У всех снесло крышу от той суммы, которую объявили за его находку. Бандиты, наемники, вольные сталкеры, одиночки рыскают по подземельям, лезут в студень, гибнут в аномалиях лишь бы найти этот «Маятник». Народу уже полегло - жуть. Я сначала даже считал, а потом плюнул. Каждый день кто-то гибнет, в поисках этого "Маятника".</text>
+    </string>
+	<string id="bar_new_details_barmen_dialog_4">
+        <text>Спектрум, говоришь? Пересёкся тут с ними на Свалке, вели себя агрессивно. Пришлось сделать им замечание. Давай ближе к делу. Ты знаешь, где искать артефакт?</text>
+    </string>
+	<string id="bar_new_details_barmen_dialog_5">
+        <text>Пока не знаю, но со дня на день узнаю. У меня широкая сеть разведчиков, множество лучших сталкеров и диггеров работают на меня, притаскивая клочки информации. А я это всё собираю и анализирую. И скоро я буду точно знать. \nНу что, Саван, могу я вам доверять? Вы с Борландом в деле? Артефакт вы должны принести мне. Не Скидану, а мне. Это понятно? И оплата будет гораздо-гораздо больше той, чем обещал вам старый лис с Кордона. Скажем, в 10 раз больше.</text>
+    </string>
+	<string id="bar_new_details_barmen_dialog_6">
+        <text>Мы Скидану обещались, как ты понимаешь. Но в свете новых данных о цене.... Мне с Борландом надо посоветоваться. Я один не могу этот вопрос решить.</text>
+    </string>
+	<string id="bar_new_details_barmen_dialog_7">
+        <text>Хорошо, даю вам пару дней на раздумья. Только смотри, долго не тяни, у меня есть другие желающие на примете. Я вам первым это предлагаю только потому, что Борланда много лет знаю. А раз ты с ним, то, значит, тоже человек надежный. Ну и Скидан о тебе хорошо отозвался. Что бывает исключительно редко. Не знаю, чем ты его приворожил. Короче, думайте, решайте. Два дня у вас, не больше.</text>
+    </string>
+	<string id="bar_new_details_barmen_dialog_8">
+        <text>До скорого.</text>
+    </string>
+	
+    <!------------>
+	
+	<string id="bar_new_details_barland_dialog_0">
+        <text>О, проснулся. Мастер же ты подушку давать, аж завидно.</text>
+    </string>
+	<string id="bar_new_details_barland_dialog_1">
+        <text>Ты как? Жабры еще шевелятся? Я думал, что хана нам. А смотри - выжили. Теперь нужно важный вопрос решить, Маландринус торопит.</text>
+    </string>
+	<string id="bar_new_details_barland_dialog_2">
+        <text>Пока еще хреново мне. Всё от отравления никак не отойду. Спать не могу, глаза закрываю - и ничего. Нет сна. Что Маландринус от нас хочет?</text>
+    </string>
+	<string id="bar_new_details_barland_dialog_3">
+        <text>Маландринус готов дать нам инфу о возможном местонахождении артефакта «Маятник». Но мы должны будем принести этот артефакт Маландринусу, а не Сидору. Оплата в 10 раз выше. Ты как думаешь, соглашаемся?</text>
+    </string>
+	<string id="bar_new_details_barland_dialog_4">
+        <text>В Баре все только об этом и говорят. Говорят, что народ рыщет по всей Зоне. Уже куча сталкеров погибло. Кого бандиты подстрелили, кто в аномалии сгорел. А кто просто пропал без следа. Еще про какой-то «Спектрум» шепчутся. \nС меня хватит приключений, Саван, наелся по самое не балуйся. И вся эта история с наградой в 10 раз больше мне не нравится. Добром это не кончится, чую спинным мозгом. Чтоб Маландринус был готов перебить ставку Сидора - да не было такого никогда. Это очень хреновая ситуация, ты понимаешь? Не, это не для меня. Дальше без меня, Саван. Без обид. Я жить привык. Приду немного в себя и назад - на Большую землю. Зря я сюда вернулся. Это я окончательно решил, ты уж извини, брат. И тебе советую рвать когти из Зоны. Хрен с ним, с Маятником этим.</text>
+    </string>
+	<string id="bar_new_details_barland_dialog_5">
+        <text>Значит, ты не со мной?</text>
+    </string>
+	<string id="bar_new_details_barland_dialog_6">
+        <text>Нет, нет, нет - даже не уговаривай. Маландринус - тот еще жук. Ты думаешь, почему он тебя выбрал? Да потому, что ему все равно, кого отправлять на смерть, чтоб свои догадки проверять. Нихрена он не знает, где артефакт искать. Знал бы, уже у него в сейфе этот "Маятник" лежал бы. Говорил он тебе, что ты особенный и исключительный сталкер, и даже Сидор тебя хвалил? Говорил? И ты повёлся? Он это каждому сталкеру говорит. Даже текст не меняет. \nНе, это всё без меня. Извиняй. \nБроню и ствол я сам Скидану верну, не переживай.</text>
+    </string>
+	<string id="bar_new_details_barland_dialog_7">
+        <text>А я все же попытаю счастья. Бывай друг!</text>
+    </string>
+	
+   <!------------>	
+   
+ 	<string id="bar_expectation_barmen_dialog_0">
+        <text>А вот и я.</text>
+    </string> 
+ 	<string id="bar_expectation_barmen_dialog_1">
+        <text>Что надумал?</text>
+    </string>  
+ 	<string id="bar_expectation_barmen_dialog_2">
+        <text>Я готов сотрудничать на твоих условиях.</text>
+    </string>  
+ 	<string id="bar_expectation_barmen_dialog_3">
+        <text>Отлично, а где твой кореш? Борланд который.</text>
+    </string>  
+ 	<string id="bar_expectation_barmen_dialog_4">
+        <text>Он решил в этом не участвовать. Здоровье пошатнулось у него. В больничку поедет на Большую землю. Или в санаторий.</text>
+    </string>  
+ 	<string id="bar_expectation_barmen_dialog_5">
+        <text>Ну ничего, тебе больше достанется. Значит так. Долговцы поймали прямо на своей базе одну из шестерок Логопеда, пахана у бандитов на Кордоне, ты наверняка с ним пересекался. Сейчас твоя задача - пойти и переговорить с лидером "Долга" Капитаном Иванцовым. Они получил какую-то информацию из этого бандюка на допросе, перед тем, как шлёпнуть урода.</text>
+    </string>  
+ 	<string id="bar_expectation_barmen_dialog_6">
+        <text>Это все? Мне просто пойти и поговорить с ним?</text>
+    </string>  
+ 	<string id="bar_expectation_barmen_dialog_7">
+        <text>Да, пока это всё. Займись этим. А мне надо еще кое-что уточнить по своим каналам и сверить информацию из твоих документов.</text>
+    </string>  
+ 	<string id="bar_expectation_barmen_dialog_8">
+        <text>А не проще было тебе самому у Капитана Иванцова всё узнать? Тебе-то он охотнее расскажет. Я ведь с ним даже не знаком.</text>
+    </string>  
+ 	<string id="bar_expectation_barmen_dialog_9">
+        <text>Ты откуда такой умный? Раз говорю сходить, значит так надо. Встал и пошел. С энтузиазмом. Давай, пошевеливайся.</text>
+    </string>  
+ 	<string id="bar_expectation_barmen_dialog_10">
+        <text>Хорошо, я пошел.</text>
+    </string>  
+
+
+   <!------------>	
+   
+ 	<string id="bar_expectation_voronin_dialog_0">
+        <text>Здравия желаю! Меня Маландринус прислал. Он просил кое-что узнать.</text>
+    </string> 
+ 	<string id="bar_expectation_voronin_dialog_1">
+        <text>Значит вот какой ты, северный… кто заварил всю эту канитель. Знаю я, чем интересуется Маландринус. Расскажу, что мы успели выбить из этого гопаря, не вопрос. Только с тебя за это кое-какая работенка. Согласен?</text>
+    </string>
+ 	<string id="bar_expectation_voronin_dialog_2">
+        <text>Выбора у меня нет.</text>
+    </string>
+ 	<string id="bar_expectation_voronin_dialog_3">
+        <text>Если в двух словах: под заводом «Росток», где мы сейчас находимся, есть подземный комплекс - секретная лаборатория Х14. Оттуда ведет железнодорожный подземный путь прямо в закрытый город Курчатов. Не знаю никого, кто из этого Курчатова живым вернулся. Зловещие слухи об этом городе ходят, сталкеры его так и зовут - Мёртвый Город. Какой интерес бандюков к Курчатову мы так и не поняли, зачем они туда дорогу разведывали - не ясно. Пленный рассказать не успел. Слабенький оказался, помер на допросе. Попасть в эти подземелья можно через дверь с кодовым замком, которая находится в подвале нашей базы. У этой двери мы бандюка как раз и прихватили. Теперь мы за этой дверью наблюдаем круглосуточно… на всякий пожарный. Три посланых на разведку квада не вернулись. Мы не знаем, что там. Ключ к двери утерян, пропал без следа мой боец, у которого этот ключ был. К сожалению. Или к счастью. Смерть в этих катакомбах, смерть для всякого.</text>
+    </string>
+ 	<string id="bar_expectation_voronin_dialog_4">
+        <text>Познавательно. Что я должен взамен за эту информацию?</text>
+    </string>
+ 	<string id="bar_expectation_voronin_dialog_5">
+        <text>Да плевое дело! Нужно подежурить с моими ребятами на северном блокпосте. Разведка доложила, что на «Диких землях» до безобразия расплодились мутанты. И они могут ринуться на Бар. Скорее всего это произойдет. Отдежуришь сутки и свободен.</text>
+    </string>
+ 	<string id="bar_expectation_voronin_dialog_6">
+        <text>Хорошо.</text>
+    </string>
+ 	<string id="bar_expectation_voronin_dialog_7">
+        <text>Я сообщу, когда начнется твоя смена. Раз в сутки меняем бойцов на блокпосте, в 18-00 обычно. Будь наготове. Боезапас проверь. Далеко из Бара не уходи.</text>
+    </string>
+ 	<string id="bar_expectation_voronin_dialog_8">
+        <text>Договорились.</text>
+    </string>
+	
+	
+ 	<string id="bar_npc_dolg_general_dangerous_duty_dialog_0">
+        <text>Привет. Слушай внимательно. Сейчас ты заступаешь и будешь здесь стоять сутки с моими бойцами. Ожидается набег тварей со стороны Диких земель. Несанкционированное покидание поста считается дезертирством и карается по законам военного времени. Усёк?</text>
+    </string>
+ 	<string id="bar_npc_dolg_general_dangerous_duty_dialog_1">
+        <text>Вас понял. Приступаю к выполнению.</text>
+    </string>
+	
+ 	<string id="bar_npc_dolg_general_dangerous_duty_2_dialog_0">
+        <text>Ну что, герой, слегка зацепили тебя наши парни. Ты маленько вырубился, но сейчас ты - как огурец! Такой же зеленый!</text>
+    </string>
+ 	<string id="bar_npc_dolg_general_dangerous_duty_2_dialog_1">
+        <text>Слегка, говоришь?! До сих пор в башке звенит и левый глаз дергается.</text>
+    </string>
+ 	<string id="bar_npc_dolg_general_dangerous_duty_2_dialog_2">
+        <text>Не серчай, мужик. Главное - ты жив. Свой долг отработал. Можешь быть свободен.</text>
+    </string>
+ 	<string id="bar_npc_dolg_general_dangerous_duty_2_dialog_3">
+        <text>Я пошел.</text>
+    </string>
+	
+
+ 	<string id="bar_expectation_barmen_part2_dialog_0">
+        <text>Дай водички попить. В горле пересохло и голова звенит.</text>
+    </string>	
+ 	<string id="bar_expectation_barmen_part2_dialog_1">
+        <text>Живой?! Видел, как тебя сюда затаскивали. Подумал, что всё, отбегался Саван. А ты живуч как псевдособака! Ну что, рассказывай давай, чего узнал у Капитана Иванцова.</text>
+    </string>
+ 	<string id="bar_expectation_barmen_part2_dialog_2">
+        <text>Потрепало слегка, не впервой. Короче, он говорит, что под Баром есть подземные катакомбы. Какая-то лаборатория. Закрыта кодовой дверью. О городе Курчатове слышал?</text>
+    </string>
+ 	<string id="bar_expectation_barmen_part2_dialog_3">
+        <text>Хмм... Интересное совпадение. Информацию об этом закрытом городке я как раз и копал в последнее время. Недавно отправлял туда группу сталкеров на разведку. Они пошли через Армейский Склады и уже неделю на связь не выходят. Погибли где-то по дороге, видать. А они были бывалые сталкеры, в хорошей броне и с отличным оружием. Значит, поверху в Курчатов не пройти. Думаю, что тебе безопаснее будет пройти в городок через подземелья.</text>
+    </string>
+ 	<string id="bar_expectation_barmen_part2_dialog_4">
+        <text>Капитан Иванцов сказал, что три квада "Долга" в подземельях этих сгинули без следа. А ты меня одного посылаешь. На верную смерть, ага? Он сказал, что город этот - Мёртвый. И никто никогда оттуда не возвращался.</text>
+    </string>
+ 	<string id="bar_expectation_barmen_part2_dialog_5">
+        <text>Ты сталкер или где? На страшилки и враки Капитана Иванцова повёлся? Ты, может быть, единственный, кто может пройти. Шанс у тебя есть, в отличие от всех остальных. Все шли вслепую, а ты пойдешь по карте. У меня карта есть с подземными проходами в Курчатов, старые, советские еще. Там не хватало нескольких кусков -  мыши сожрали как раз то место, где были обозначены спуски под землю в районе завода "Росток". Судя по информации Капитана Иванцова, эти подземные катакомбы могут соединять Бар с Курчатовым. И вход на базе Долга. Удача! Карты я тебе дам, плутать не придётся. И, по моим данным, артефакт находится в этой подземной лаборатории, прямо на выходе в Курчатов.</text>
+    </string>
+ 	<string id="bar_expectation_barmen_part2_dialog_6">
+        <text>Капитан Иванцов сказал, что проход закрыт кодовым замком. А ключ они потеряли.</text>
+    </string>
+ 	<string id="bar_expectation_barmen_part2_dialog_7">
+        <text>Чтоб Капитан Иванцов да что-то потерял. Хех. Ты наивный, как чукотский мальчик. Врёт он. Не хочет тебя в лаборатории пускать. Но у меня есть некоторые мыслишки...</text>
+    </string>
+ 	<string id="bar_expectation_barmen_part2_dialog_8">
+        <text>Не томи.</text>
+    </string>
+ 	<string id="bar_expectation_barmen_part2_dialog_9">
+        <text>У нас тут неподалеку кислотное болотце за туманным лесом, в домике на котором поселился сумасшедший мужик. Кто такой и откуда - не знаю. Да и меня это не сильно волнует. Народ говорит, что он вроде бы раньше работал в лабораториях ОСОЗНАНИя, ставил эксперименты над людьми. Вот от такой работенки, говорят, он и слетел с катушек. Я в это не верю, конечно. Но проверить надо и этот вариант. Сходи к нему, возможно он знает, как попасть в подземную лабораторию под Баром.</text>
+    </string>
+ 	<string id="bar_expectation_barmen_part2_dialog_10">
+        <text>Хорошо, схожу.</text>
+    </string>
+	
+
+ 	<string id="bar_npc_otshelnik_dialog_0">
+        <text>Приветствую вас, любезнейший друг! Давно вас не было видно. Наверное, дела, работа... как жена?</text>
+    </string>
+	 	<string id="bar_npc_otshelnik_dialog_1">
+        <text>Что?!</text>
+    </string>
+	 	<string id="bar_npc_otshelnik_dialog_2">
+        <text>Так, стоп, Сенька, ты мне голову не морочь!</text>
+    </string>
+	 	<string id="bar_npc_otshelnik_dialog_3">
+        <text>Дядь, я тут по делу. Нужны ключи от лаборатории. Удружишь?</text>
+    </string>
+	 	<string id="bar_npc_otshelnik_dialog_4">
+        <text>Тсс... тихо, там всегда зима. Свет потушите. Кодовый ключ могу дать. Держу пари, вы наводите справки о больнице. Госпиталь в Лиманске. Никому ни слова.</text>
+    </string>
+	 	<string id="bar_npc_otshelnik_dialog_5">
+        <text>Внимание, смотрите сюда. Раз, раз. Сосредоточьтесь. Ключ от входной двери. Кодовый. От двери лаборатории. Где он?</text>
+    </string>
+	 	<string id="bar_npc_otshelnik_dialog_6">
+        <text>Ха-ха, карандаш, точилка, болото - артефакт! Обмен. Обмен возможен, да. Оплачено из государственных средств. Клянусь. Быстро-быстро! Я слышу голос, слышу.</text>
+    </string>
+	 	<string id="bar_npc_otshelnik_dialog_7">
+        <text>Пфф... что еще?</text>
+    </string>
+	 	<string id="bar_npc_otshelnik_dialog_8">
+        <text>Артефакт! Артефакты!!! Всё сливается, не могу сосредоточиться. Всё как во сне. Мы же не спим? Я не сплю!!!!!</text>
+    </string>
+	 	<string id="bar_npc_otshelnik_dialog_9">
+        <text>Нет, не спим. Тебе нужны артефакты? Поменяю на ключ.</text>
+    </string>
+	 	<string id="bar_npc_otshelnik_dialog_10">
+        <text>Да… нет, да, да. Поменяю. А ключик-то золотой! Весь род земной из него происходит. Я есть первооснова мира. Тс-с-с! Это великая тайна. За нами следят, они следят за мной.... всегда следят...</text>
+    </string>
+	 	<string id="bar_npc_otshelnik_dialog_11">
+        <text>Э-эх, мужик... ладно, что-то ты совсем. Значит тебе нужны артефакты? Сейчас пособираю на болотце твоём. После этого ты мне дашь ключ. Да? Или я его сам возьму.</text>
+    </string>
+	 	<string id="bar_npc_otshelnik_dialog_12">
+        <text>Дааа, да. Обмен… Обман... Облако... Окно...(дальше говорит что-то неразборчивое)</text>
+    </string>
+	 	<string id="bar_npc_otshelnik_dialog_13">
+        <text>Жди здесь.</text>
+    </string>
+	
+	
+	<string id="bar_walker_lab_barmen_dialog_0">
+        <text>И снова здрасьте.</text>
+    </string>
+	<string id="bar_walker_lab_barmen_dialog_1">
+        <text>Ты чего весь в грязище? Фу... и воняешь.</text>
+    </string>
+	<string id="bar_walker_lab_barmen_dialog_2">
+        <text>Но-но, это я в болоте искупался. В том самом, которое у дома сумасшедшего деда, земля ему пухом.</text>
+    </string>
+	<string id="bar_walker_lab_barmen_dialog_3">
+        <text>Каким пухом? Ты чего, грохнул его, что ли?</text>
+    </string>
+	<string id="bar_walker_lab_barmen_dialog_4">
+        <text>Я не специально. Он совсем того. Кукухой поехал конкретно. Нес какой-то бред. Вел себя агрессивно. Да не суть. Короче, ключ от той двери у меня. Ты зачем звал?</text>
+    </string>
+	<string id="bar_walker_lab_barmen_dialog_5">
+        <text>Раз ключик у тебя, значит ты скоро пойдешь в подземную лабораторию. Что или кто тебя там ждет, не знаю. Я крайне заинтересован в том, чтобы ты выжил и вернулся сюда с артефактом, поэтому даю тебе ствол и бронежилет. Совершенно бесплатно. Только не вздумай слинять и продать их! Они редкие… очень, м-да. Если они всплывут у торговцев, я об этом узнаю первым, и тебе за это придется ответить. Всё понял?</text>
+    </string>
+	<string id="bar_walker_lab_barmen_dialog_6">
+        <text>Понял, не дурак. Я пошел.</text>
+    </string>
+	
+	
+	<string id="bar_npc_nimble_dialog_0">
+        <text>Привет!</text>
+    </string>
+	<string id="bar_npc_nimble_dialog_1">
+        <text>Ты от Сиплого?</text>
+    </string>
+	<string id="bar_npc_nimble_dialog_2">
+        <text>Сиплого?</text>
+    </string>
+	<string id="bar_npc_nimble_dialog_3">
+        <text>Всё, проехали. Жду я тут одного типка. Может, чего слышал о нём?</text>
+    </string>
+	<string id="bar_npc_nimble_dialog_4">
+        <text>Не слышал. А вы кто такие, и что тут делаете?</text>
+    </string>
+	<string id="bar_npc_nimble_dialog_5">
+        <text>Кто спрашивает? Назовись.</text>
+    </string>
+	<string id="bar_npc_nimble_dialog_6">
+        <text>Я Саван. Шел тут мимо, смотрю - люди. Вроде бы, лица добрые. Думаю, а не спросить ли, кто такие. Может работёнку перехвачу.</text>
+    </string>
+	<string id="bar_npc_nimble_dialog_7">
+        <text>Тут тебе не служба занятости. Иди к Маландринусу, тот всегда рад озадачить работёнкой.</text>
+    </string>
+	<string id="bar_npc_nimble_dialog_8">
+        <text>Ну спасибо, я уже с Маландринусом виделся. Смотрю, ты не в настроении общаться.</text>
+    </string>
+	<string id="bar_npc_nimble_dialog_9">
+        <text>Вот привязался. "Чистое небо". Мы последние выжившие из этой группировки. Слыхал о такой?</text>
+    </string>
+	<string id="bar_npc_nimble_dialog_10">
+        <text>Кое-что слышал, но не конкретно.</text>
+    </string>
+	<string id="bar_npc_nimble_dialog_11">
+        <text>Ты здесь новенький?</text>
+    </string>
+	<string id="bar_npc_nimble_dialog_12">
+        <text>А сам-то как подумал?</text>
+    </string>
+	<string id="bar_npc_nimble_dialog_13">
+        <text>Всё с тобой понятно. Короче, была такая группировка на Болотах. Занимались мы разным. В основном наши учёные изучали артефакты, а мы обеспечивали безопасность всего мероприятия. Все были при деле, пока нас черт не дернул пойти на ЧАЭС. История длинная, может быть когда-то напишу об этом книгу, почитаешь. \nТак вот, там нас и накрыло сверх-выбросом. Большинство такого поворота не ожидали и предсказуемо дали дуба прямо на месте. У меня хватило ума спрятаться в подвал какой-то. После выброса вылез, смотрю - одни трупы.  Ну, собрал тех наших, кто тоже спрятался и выжил, и на Бар вернулись. Вот и вся история. Перебиваемся тут с хлеба на воду. Долг нас нанимает на охрану разных мест. Говорить не о чем.</text>
+    </string>
+	<string id="bar_npc_nimble_dialog_14">
+        <text>А тут чего ждёте? Пасхи? Чего в бар не идёте?</text>
+    </string>
+	<string id="bar_npc_nimble_dialog_15">
+        <text>Просто место сбора у нас тут. Все, кто выжил после похода на ЧАЭС, сюда подтягиваются. Думаем, по нашим старым местам пройти. Тем самым, где Лебедев с Сусловым артефакты прятали. Они исследовали артефакты, а потом их возвращали в Зону. Не знаю, зачем это они. Вот по этим местам мы и готовимся марш-бросок сделать. А потом продадим арты, разделим прибыль и на Большую землю. Хватит с нас Зоны. Извини, тебя с собой не зову, это дело касается только "Чистого неба".</text>
+    </string>
+	<string id="bar_npc_nimble_dialog_16">
+        <text>Значит, вы тоже ищете этот артефакт - "Маятник"?</text>
+    </string>
+	<string id="bar_npc_nimble_dialog_17">
+        <text>Конечно. Ну, ты сам подумай, такие деньги - почему бы не попробовать. Аммуниция и оружие у нас отличные, броники - одни из лучших, собственная разработка. Сканеры есть. Подготовка тоже позволяет - не первый год в Зоне, артефактов разных уже находили десятки, если не сотни. Мы только Сиплого ждем, так что, если ты вдруг его встретишь, передай, что мы его уже заждались. Пошел на разведку и пропал с радаров. Не нравится мне это.</text>
+    </string>
+	<string id="bar_npc_nimble_dialog_18">
+        <text>Если увижу, передам. Бывай.</text>
+    </string>
+	<string id="bar_npc_nimble_dialog_19">
+        <text>И тебе - не кашлять.</text>
+    </string>
+
+
+	
+	
+</string_table>

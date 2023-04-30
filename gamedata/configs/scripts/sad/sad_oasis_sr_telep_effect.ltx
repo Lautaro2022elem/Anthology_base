@@ -1,0 +1,53 @@
+[logic]
+active = sr_idle@wait_in
+
+[sr_idle@wait_in]
+on_info = {+sad_oasis_teleport_in_open} sr_particle@in
+on_info2 = {+sad_cowboy_enemy} sr_idle@nil
+
+[sr_particle@in]
+name = anomaly2\anomaly_teleport
+path = sad_sim_16_telep_in_effect_place
+mode = 2
+looped = true
+on_info = {-sad_oasis_teleport_in_open} sr_idle@wait_out
+on_info2 = {+sad_cowboy_enemy} sr_idle@nil
+
+[sr_idle@wait_out]
+on_info = {+sad_oasis_teleport_out_open} sr_particle@out
+on_info2 = {+sad_cowboy_enemy} sr_idle@nil
+
+[sr_particle@out]
+name = anomaly2\anomaly_teleport
+path = sad_sim_16_telep_out_effect_place
+mode = 2
+looped = true
+on_info = {-sad_oasis_teleport_out_open} sr_idle@cs
+on_info2 = {+sad_cowboy_enemy} sr_idle@nil
+
+[sr_idle@cs]
+on_info = {+sad_cutscene_robbery_start} sr_particle@cs
+
+[sr_particle@cs]
+name = anomaly2\anomaly_teleport
+path = sad_sim_16_telep_in_effect_place
+mode = 2
+looped = true
+on_info = {+sad_cutscene_robbery_start_3} sr_idle@nil
+
+[sr_idle@nil]
+on_info = {+sad_activate_teleport_tuda} sr_particle@in2, {+sad_activate_teleport_obratno} sr_particle@out2
+
+[sr_particle@in2]
+name = anomaly2\anomaly_teleport
+path = sad_sim_16_telep_in_effect_place
+mode = 2
+looped = true
+on_info = {-sad_activate_teleport_tuda} sr_idle@nil
+
+[sr_particle@out2]
+name = anomaly2\anomaly_teleport
+path = sad_sim_16_telep_out_effect_place
+mode = 2
+looped = true
+on_info = {-sad_activate_teleport_obratno} sr_idle@nil

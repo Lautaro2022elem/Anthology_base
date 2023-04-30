@@ -1,0 +1,258 @@
+--GUI элементы прокачки навыков по работе с РЭБ для получения соответвующего достижения в Путь во Мгле, Смерти вопреки --
+------------------------- Copyright 2013-2014 Geonezis ---------------------------
+------------------------------------------------------------------------------
+--                           Окно прокачки                        --
+------------------------------------------------------------------------------
+class "ui_achiva_radiobattle_prokachka" (CUIScriptWnd)
+
+--local actor_money_now = db.actor:money()
+
+function ui_achiva_radiobattle_prokachka:__init(owner) super()
+   self.owner = owner
+   self:InitControls()
+   self:InitCallBacks()
+end
+function ui_achiva_radiobattle_prokachka:__finalize()
+end
+function ui_achiva_radiobattle_prokachka:InitControls()
+   self:SetWndRect(Frect():set(0,0,1024,768))
+   local xml = CScriptXmlInit()
+   xml:ParseFile("ui_gui_elements.xml")
+   self.ach_radiobattle_1_form=xml:InitStatic("ach_radiobattle_1_form",self)   
+   self.yad_text_1 = xml:InitStatic("ach_radiobattle_1_form:yad_text_1", self.ach_radiobattle_1_form)
+   self.yad_text_2 = xml:InitStatic("ach_radiobattle_1_form:yad_text_2", self.ach_radiobattle_1_form)
+   self.yad_text_3 = xml:InitStatic("ach_radiobattle_1_form:yad_text_3", self.ach_radiobattle_1_form)
+   self.yad_text_4 = xml:InitStatic("ach_radiobattle_1_form:yad_text_4", self.ach_radiobattle_1_form)
+   self.yad_text_5 = xml:InitStatic("ach_radiobattle_1_form:yad_text_5", self.ach_radiobattle_1_form)
+   self:register_element(xml,"text_field_1")
+   self:register_element(xml,"text_field_2")
+   self:register_element(xml,"text_field_3")
+   self:register_element(xml,"text_field_4")
+   self:register_element(xml,"text_field_5")
+   if (not has_alife_info("mar_ach_radiobattle_1_info")) then
+     self.btn_1_slot = xml:Init3tButton ("ach_radiobattle_1_form:btn_1_slot", self.ach_radiobattle_1_form) 
+     self:Register (self.btn_1_slot, "btn_1_slot")	 
+   end
+   if (not has_alife_info("mar_ach_radiobattle_2_info")) then
+     self.btn_2_slot = xml:Init3tButton ("ach_radiobattle_1_form:btn_2_slot", self.ach_radiobattle_1_form) 
+     self:Register (self.btn_2_slot, "btn_2_slot")
+	 --self.btn_2_slot:Enable(false)
+   end
+   if (not has_alife_info("mar_ach_radiobattle_3_info")) then
+     self.btn_3_slot = xml:Init3tButton ("ach_radiobattle_1_form:btn_3_slot", self.ach_radiobattle_1_form) 
+     self:Register (self.btn_3_slot, "btn_3_slot")
+	 --self.btn_3_slot:Enable(false)
+   end
+   if (not has_alife_info("mar_ach_radiobattle_4_info")) then
+     self.btn_4_slot = xml:Init3tButton ("ach_radiobattle_1_form:btn_4_slot", self.ach_radiobattle_1_form) 
+     self:Register (self.btn_4_slot, "btn_4_slot")
+	 --self.btn_4_slot:Enable(false)
+   end
+   if (not has_alife_info("mar_ach_radiobattle_5_info")) then
+     self.btn_5_slot = xml:Init3tButton ("ach_radiobattle_1_form:btn_5_slot", self.ach_radiobattle_1_form) 
+     self:Register (self.btn_5_slot, "btn_5_slot")
+	 --self.btn_5_slot:Enable(false)
+   end 
+   if has_alife_info("mar_ach_radiobattle_1_info") then
+     self.btn_1_1_slot = xml:Init3tButton ("ach_radiobattle_1_form:btn_1_1_slot", self.ach_radiobattle_1_form) 
+     self:Register (self.btn_1_1_slot, "btn_1_1_slot")
+     self.btn_1_1_slot:Enable(false)	 
+   end
+   if has_alife_info("mar_ach_radiobattle_2_info") then
+     self.btn_2_1_slot = xml:Init3tButton ("ach_radiobattle_1_form:btn_2_1_slot", self.ach_radiobattle_1_form) 
+     self:Register (self.btn_2_1_slot, "btn_2_1_slot")
+     self.btn_2_1_slot:Enable(false)
+   end
+   if has_alife_info("mar_ach_radiobattle_3_info") then
+     self.btn_3_1_slot = xml:Init3tButton ("ach_radiobattle_1_form:btn_3_1_slot", self.ach_radiobattle_1_form) 
+     self:Register (self.btn_3_1_slot, "btn_3_1_slot")
+     self.btn_3_1_slot:Enable(false)
+   end
+   if has_alife_info("mar_ach_radiobattle_4_info") then
+     self.btn_4_1_slot = xml:Init3tButton ("ach_radiobattle_1_form:btn_4_1_slot", self.ach_radiobattle_1_form) 
+     self:Register (self.btn_4_1_slot, "btn_4_1_slot")
+     self.btn_4_1_slot:Enable(false)
+   end
+   if has_alife_info("mar_ach_radiobattle_5_info") then
+     self.btn_5_1_slot = xml:Init3tButton ("ach_radiobattle_1_form:btn_5_1_slot", self.ach_radiobattle_1_form) 
+     self:Register (self.btn_5_1_slot, "btn_5_1_slot")
+     self.btn_5_1_slot:Enable(false)
+   end   
+   self:Register(xml:Init3tButton("ach_radiobattle_1_form:btn_close",self.ach_radiobattle_1_form),"btn_close")   
+   self.btn_1_slot_count=xml:InitStatic("ach_radiobattle_1_form:btn_1_slot_count",self.ach_radiobattle_1_form)
+   self.btn_1_slot_count:TextControl():SetText("0")   
+   self.btn_2_slot_count=xml:InitStatic("ach_radiobattle_1_form:btn_2_slot_count",self.ach_radiobattle_1_form)
+   self.btn_2_slot_count:TextControl():SetText("0") 
+   self.btn_3_slot_count=xml:InitStatic("ach_radiobattle_1_form:btn_3_slot_count",self.ach_radiobattle_1_form)
+   self.btn_3_slot_count:TextControl():SetText("0") 
+   self.btn_4_slot_count=xml:InitStatic("ach_radiobattle_1_form:btn_4_slot_count",self.ach_radiobattle_1_form)
+   self.btn_4_slot_count:TextControl():SetText("0")    
+   self.btn_5_slot_count=xml:InitStatic("ach_radiobattle_1_form:btn_5_slot_count",self.ach_radiobattle_1_form)
+   self.btn_5_slot_count:TextControl():SetText("0") 
+   self.form_title=xml:InitStatic("ach_radiobattle_1_form:form_title",self.ach_radiobattle_1_form)   
+   self.need_artefacts_box=CUIMessageBoxEx()
+   self:Register(self.need_artefacts_box,"need_artefacts_box")
+end
+function ui_achiva_radiobattle_prokachka:InitCallBacks()
+   self:AddCallback("btn_1_slot",ui_events.BUTTON_CLICKED,self.on_btn_1_slot,self)
+   self:AddCallback("btn_2_slot",ui_events.BUTTON_CLICKED,self.on_btn_2_slot,self)
+   self:AddCallback("btn_3_slot",ui_events.BUTTON_CLICKED,self.on_btn_3_slot,self)
+   self:AddCallback("btn_4_slot",ui_events.BUTTON_CLICKED,self.on_btn_4_slot,self)
+   self:AddCallback("btn_5_slot",ui_events.BUTTON_CLICKED,self.on_btn_5_slot,self)
+   self:AddCallback("btn_close",ui_events.BUTTON_CLICKED,self.on_btn_close,self)   
+   self:AddCallback("need_artefacts_box",ui_events.MESSAGE_BOX_YES_CLICKED,self.need_artefacts_box_ok,self)
+   self:AddCallback("need_artefacts_box",ui_events.MESSAGE_BOX_OK_CLICKED,self.need_artefacts_box_ok,self)
+end
+function ui_achiva_radiobattle_prokachka:need_artefacts_box_ok()
+   self.need_artefacts_box:ShowDialog(false)
+   self.need_artefacts_box:HideDialog()
+end
+
+function ui_achiva_radiobattle_prokachka:Update()
+   CUIScriptWnd.Update(self)   
+   self.form_title:TextControl():SetText(game.translate_string("st_radiobattleachiva_form_title"))
+   self.text_field_1:TextControl():SetText(game.translate_string("st_ach_radiobattle_descr_1"))
+   self.text_field_2:TextControl():SetText(game.translate_string("st_ach_radiobattle_descr_4"))
+   self.text_field_3:TextControl():SetText(game.translate_string("st_ach_radiobattle_descr_2"))
+   self.text_field_4:TextControl():SetText(game.translate_string("st_ach_radiobattle_descr_5"))
+   self.text_field_5:TextControl():SetText(game.translate_string("st_ach_radiobattle_descr_3"))
+   if has_alife_info("mar_ach_radiobattle_1_info") then
+      self.btn_1_slot_count:TextControl():SetText("1")
+	  self.yad_text_1:TextControl():SetText("Навык изучен")
+   end
+   if has_alife_info("mar_ach_radiobattle_2_info") then
+      self.btn_2_slot_count:TextControl():SetText("1")
+	  self.yad_text_2:TextControl():SetText("Навык изучен")
+   end
+   if has_alife_info("mar_ach_radiobattle_3_info") then
+      self.btn_3_slot_count:TextControl():SetText("1")
+	  self.yad_text_3:TextControl():SetText("Навык изучен")
+   end
+   if has_alife_info("mar_ach_radiobattle_4_info") then
+      self.btn_4_slot_count:TextControl():SetText("1")
+	  self.yad_text_4:TextControl():SetText("Навык изучен")
+   end
+   if has_alife_info("mar_ach_radiobattle_5_info") then
+      self.btn_5_slot_count:TextControl():SetText("1")
+	  self.yad_text_5:TextControl():SetText("Навык изучен")
+   end   
+end
+
+function ui_achiva_radiobattle_prokachka:OnKeyboard(dik,keyboard_action)
+   CUIScriptWnd.OnKeyboard(self,dik,keyboard_action)
+   if keyboard_action == ui_events.WINDOW_KEY_PRESSED then
+      if dik == DIK_keys.DIK_ESCAPE then
+         self:btn_close()
+      end
+   end
+   return true
+end
+
+function ui_achiva_radiobattle_prokachka:on_btn_1_slot()
+   if db.actor:money() <1000 then
+      self.need_artefacts_box:InitMessageBox("mb_need_money_to_buy_1")
+      self.need_artefacts_box:ShowDialog(true)
+    else 
+      db.actor:give_money(-1000)
+	  --game_stats.money_trade_update(-1000)	
+      self.yad_text_1:TextControl():SetText("Навык изучен")
+	  self.btn_1_slot_count:TextControl():SetText("1")
+	  db.actor:give_info_portion("mar_ach_radiobattle_1_info")
+      self.btn_1_slot:Enable(false)
+	  self.btn_2_slot:Enable(true)
+    end	  
+end
+
+function ui_achiva_radiobattle_prokachka:on_btn_2_slot()
+  if has_alife_info("mar_ach_radiobattle_1_info") then
+   if db.actor:money() <2500 then
+       self.need_artefacts_box:InitMessageBox("mb_need_money_to_buy_1")
+       self.need_artefacts_box:ShowDialog(true)
+    else  
+    db.actor:give_money(-2500)
+	--game_stats.money_trade_update(-2500)     
+	db.actor:give_info_portion("mar_ach_radiobattle_2_info")
+	self.btn_2_slot_count:TextControl():SetText("1")
+	self.yad_text_2:TextControl():SetText("Навык изучен")
+    self.btn_2_slot:Enable(false)
+    self.btn_3_slot:Enable(true)    
+   end
+  end 
+  if not has_alife_info("mar_ach_radiobattle_1_info") then
+    self.need_artefacts_box:InitMessageBox("mb_need_precond_to_buy_1")
+    self.need_artefacts_box:ShowDialog(true)
+  end   
+end
+
+function ui_achiva_radiobattle_prokachka:on_btn_3_slot()
+  if has_alife_info("mar_ach_radiobattle_2_info") then
+   if db.actor:money() <2500 then
+       self.need_artefacts_box:InitMessageBox("mb_need_money_to_buy_1")
+       self.need_artefacts_box:ShowDialog(true)
+    else  
+    db.actor:give_money(-2500)
+	--game_stats.money_trade_update(-2500)       
+	db.actor:give_info_portion("mar_ach_radiobattle_3_info")
+	self.btn_3_slot_count:TextControl():SetText("1")
+	self.yad_text_3:TextControl():SetText("Навык изучен")
+    self.btn_3_slot:Enable(false)
+    self.btn_4_slot:Enable(true)    
+   end
+  end 
+  if not has_alife_info("mar_ach_radiobattle_2_info") then
+    self.need_artefacts_box:InitMessageBox("mb_need_precond_to_buy_1")
+    self.need_artefacts_box:ShowDialog(true)
+  end   
+end
+
+function ui_achiva_radiobattle_prokachka:on_btn_4_slot()
+  if has_alife_info("mar_ach_radiobattle_3_info") then
+   if db.actor:money() <5000 then
+       self.need_artefacts_box:InitMessageBox("mb_need_money_to_buy_1")
+       self.need_artefacts_box:ShowDialog(true)
+    else  
+    db.actor:give_money(-5000)
+	--game_stats.money_trade_update(-5000)       
+	db.actor:give_info_portion("mar_ach_radiobattle_4_info")
+	self.btn_4_slot_count:TextControl():SetText("1")
+	self.yad_text_4:TextControl():SetText("Навык изучен")
+    self.btn_4_slot:Enable(false)
+    self.btn_5_slot:Enable(true)    
+   end
+  end 
+  if not has_alife_info("mar_ach_radiobattle_3_info") then
+    self.need_artefacts_box:InitMessageBox("mb_need_precond_to_buy_1")
+    self.need_artefacts_box:ShowDialog(true)
+  end   
+end
+
+function ui_achiva_radiobattle_prokachka:on_btn_5_slot()
+  if has_alife_info("mar_ach_radiobattle_4_info") then
+   if db.actor:money() <5000 then
+       self.need_artefacts_box:InitMessageBox("mb_need_money_to_buy_1")
+       self.need_artefacts_box:ShowDialog(true)
+    else  
+    db.actor:give_money(-5000)
+	--game_stats.money_trade_update(-5000)    
+	db.actor:give_info_portion("mar_ach_radiobattle_5_info")
+	self.btn_5_slot_count:TextControl():SetText("1")
+	self.yad_text_5:TextControl():SetText("Навык изучен")
+    self.btn_5_slot:Enable(false)   
+   end
+  end 
+  if not has_alife_info("mar_ach_radiobattle_4_info") then
+    self.need_artefacts_box:InitMessageBox("mb_need_precond_to_buy_1")
+    self.need_artefacts_box:ShowDialog(true)
+  end   
+end
+
+function ui_achiva_radiobattle_prokachka:on_btn_close()   
+   self:HideDialog()
+end
+
+function ui_achiva_radiobattle_prokachka:register_element(xml,element_name)
+   self[element_name]=xml:InitStatic("ach_radiobattle_1_form:"..element_name,self.ach_radiobattle_1_form)
+end
+
+--GUI элементы прокачки навыков по работе с РЭБ для получения соответвующего достижения в Путь во Мгле, Смерти вопреки --
+------------------------- Copyright 2012-2013 Geonezis---------------------------

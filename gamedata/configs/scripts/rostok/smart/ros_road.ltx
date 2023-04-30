@@ -1,0 +1,20 @@
+[smart_terrain]
+squad_id = 2
+max_population = 2
+respawn_params = respawn@ros_road
+respawn_idle = 172800
+
+
+
+[respawn@ros_road]
+spawn_zombied
+
+[spawn_zombied]
+spawn_squads =  zombied_sim_squad_novice, zombied_sim_squad_advanced, zombied_sim_squad_veteran
+spawn_num = 1
+
+[exclusive]
+ros_road_camp_work_1 = rostok\ros_road_smart_logic.ltx
+ros_road_camp_work_2 = rostok\ros_road_smart_logic.ltx
+ros_road_camp_work_3 = rostok\ros_road_smart_logic.ltx
+ros_road_camp_work_4 = rostok\ros_road_smart_logic.ltx

@@ -1,0 +1,19 @@
+[logic]
+active = sr_idle@sniper_kpp_quest
+
+[sr_idle@sniper_kpp_quest]
+on_info = {+esc_zohan_first_dialogs_meet} sr_idle@sniper_kpp_quest_1 %=RavenMemmoryStart =run_postprocess(black:2525:true) =set_squad_enemy_to_actor(esc_squad_kpp) =spawn_object(esc_killer_raven_sniper:esc_raven_sniper_spawn) =create_squad(esc_squad_killer_operation_kpp:esc_smart_terrain_2_2_operation_quest) =create_squad(esc_squad_stalkers_prisoner:esc_smart_terrain_2_2) =create_squad(esc_squad_stalker_zohan:esc_smart_terrain_1_1)%
+
+[sr_idle@sniper_kpp_quest_1]
+on_timer = 2000 | sr_idle@sniper_kpp_quest_2 %=teleport_actor(esc_actor_kpp_sniper_walk:esc_actor_kpp_sniper_look)%
+
+[sr_idle@sniper_kpp_quest_2]
+on_timer = 2000 | sr_idle@sniper_kpp_quest_3 %=stop_postprocess(2525)%
+
+[sr_idle@sniper_kpp_quest_3]
+on_timer = 1000 | sr_idle@weapon_give_to_actor %=enable_ui +esc_kpp_operation_escape_start%
+
+[sr_idle@weapon_give_to_actor]
+on_info = {+esc_killer_raven_meet_complete -esc_actor_give_sniper_rifle_done} sr_idle@nil %=esc_activate_weapon(wpn_m98b) +esc_actor_give_sniper_rifle_done%
+
+[sr_idle@nil]

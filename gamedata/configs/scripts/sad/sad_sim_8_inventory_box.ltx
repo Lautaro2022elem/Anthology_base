@@ -1,0 +1,19 @@
+[logic] 
+active = ph_idle@wait
+
+[ph_idle@wait]
+nonscript_usable = true 
+tips = sad_inventory_box_key_locked
+on_info = {=actor_has_item(sad_sim_8_inventory_key)} ph_idle@locked
+
+[ph_idle@locked] 
+nonscript_usable = false 
+tips = sad_inventory_box_key_locked
+on_use = {=actor_has_item(sad_sim_8_inventory_key)} ph_idle@open %=remove_item(sad_sim_8_inventory_key) =play_sound(power_switch)%, %=play_sound(trader_door_locked)%
+on_info = {+sad_sim_8_inventory_box_open} ph_idle@open %=spawn_object_in(wpn_abakan:sad_sim_8_inventory_box)
+=spawn_object_in(wpn_abakan:sad_sim_8_inventory_box) =spawn_object_in(wpn_abakan:sad_sim_8_inventory_box) =spawn_object_in(wpn_svd:sad_sim_8_inventory_box) =spawn_object_in(ammo_5.45x39_fmj:sad_sim_8_inventory_box) =spawn_object_in(ammo_5.45x39_fmj:sad_sim_8_inventory_box) =spawn_object_in(ammo_5.45x39_fmj:sad_sim_8_inventory_box) =spawn_object_in(ammo_5.45x39_fmj:sad_sim_8_inventory_box) =spawn_object_in(ammo_5.45x39_fmj:sad_sim_8_inventory_box)=spawn_object_in(ammo_5.45x39_fmj:sad_sim_8_inventory_box) =spawn_object_in(ammo_5.45x39_fmj:sad_sim_8_inventory_box) =spawn_object_in(ammo_5.45x39_fmj:sad_sim_8_inventory_box) =spawn_object_in(ammo_5.45x39_fmj:sad_sim_8_inventory_box) =spawn_object_in(helm_hardhat:sad_sim_8_inventory_box) =spawn_object_in(helm_hardhat:sad_sim_8_inventory_box) =spawn_object_in(medkit_army:sad_sim_8_inventory_box) =spawn_object_in(medkit_army:sad_sim_8_inventory_box) =spawn_object_in(medkit_army:sad_sim_8_inventory_box) =spawn_object_in(medkit_army:sad_sim_8_inventory_box) =spawn_object_in(medkit_army:sad_sim_8_inventory_box) =spawn_object_in(antirad:sad_sim_8_inventory_box) =spawn_object_in(antirad:sad_sim_8_inventory_box) =spawn_object_in(antirad:sad_sim_8_inventory_box) =spawn_object_in(antirad:sad_sim_8_inventory_box) =spawn_object_in(antirad:sad_sim_8_inventory_box) =spawn_object_in(antirad:sad_sim_8_inventory_box) =spawn_object_in(antirad:sad_sim_8_inventory_box) =spawn_object_in(antirad:sad_sim_8_inventory_box) =spawn_object_in(antirad:sad_sim_8_inventory_box) =spawn_object_in(antirad:sad_sim_8_inventory_box) =spawn_object_in(sad_b2_trader_notebook:sad_sim_8_inventory_box)%
+
+[ph_idle@open] 
+nonscript_usable = true
+tips = inventory_box_use
+on_info = {-sad_sim_8_inventory_box_open} %+sad_sim_8_inventory_box_open%

@@ -1,0 +1,17 @@
+[logic] 
+active = sr_idle@spawn
+
+[sr_idle@spawn]
+on_info = {+topi_start +topi_lider_variant_quest_talking_2 -topi_liger_variant_quest_trup_spawn} sr_idle@start %=spawn_corpse(topi_b1_scaut_leader_var_2 : topi_b1_scaut_leader_var_2_walk) =spawn_corpse(topi_b1_scaut_member_1_var_2 : topi_b1_scaut_member_1_var_2_walk) =spawn_corpse(topi_b1_scaut_member_2_var_2 : topi_b1_scaut_member_2_var_2_walk) +topi_liger_variant_quest_trup_spawn%
+
+[sr_idle@start] 
+on_info  = {+topi_lider_variant_quest_talking_2 =actor_in_zone(topi_lider_variant_quest_restr_1) =actor_has_item(topi_lider_spectrometr_1)} sr_idle@tutorial %=run_tutorial(topi_lider_variant_quest_1_tutor)% 
+on_info2 = {+topi_liger_variant_quest_spectrometr_set} sr_idle@nil 
+
+[sr_idle@tutorial] 
+on_info   = {+topi_lider_variant_quest_talking_2 !actor_in_zone(topi_lider_variant_quest_restr_1)} sr_idle@start %=stop_tutorial% 
+on_info2 = {+topi_liger_variant_quest_spectrometr_set} sr_idle@nil %=stop_tutorial%
+on_info3 = {-topi_liger_variant_quest_spectrometr_set +topi_liger_variant_quest_spectrometr_set_close} sr_idle@start %=stop_tutorial%
+on_info4 = {!has_active_tutorial} sr_idle@start 
+
+[sr_idle@nil] 

@@ -1,0 +1,38 @@
+[logic]
+active = remark@see_actor
+
+[remark@see_actor]
+anim = hello_wpn
+target = story | actor
+meet = no_meet
+on_info = {=dist_to_actor_le(6)} remark@dialog_actor
+
+[remark@dialog_actor]
+anim = wait_na
+target = story | actor
+meet = meet@dialog
+on_info = {+esc_army_stepan_dialog_complite} walker
+
+[walker]
+path_walk = esc_army_kuznecov_walk_1
+path_look = esc_army_kuznecov_look_1
+def_state_standing = guard
+invulnerable = true
+meet = no_meet
+on_info = {+esc_reach_base_complite =dist_to_actor_le(100) =dist_to_actor_ge(50)} %=release_npc%
+
+[meet@dialog]
+abuse           = false
+close_anim 		= nil
+far_anim 		= nil
+far_victim 		= nil
+close_distance  = 0
+far_distance 	= 0
+close_victim = actor
+use = {!actor_enemy =dist_to_actor_le(5)} self, true
+allow_break = false
+meet_dialog = esc_army_stepan_dialog
+trade_enable = false
+
+[smart_terrains]
+none = true

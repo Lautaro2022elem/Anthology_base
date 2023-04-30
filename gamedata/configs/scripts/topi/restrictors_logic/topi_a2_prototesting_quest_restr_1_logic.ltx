@@ -1,0 +1,14 @@
+[logic] 
+active = sr_idle@start
+
+[sr_idle@start]
+on_info = {+topi_start +topi_mechanic_create_all_proto -topi_mechanic_proto_point_come =actor_in_zone(topi_a2_prototesting_quest_restr_1) =actor_has_item(topi_mechanic_proto_device_2)} sr_timer@first %+topi_mechanic_proto_point_come%
+
+[sr_timer@first]
+type = dec
+string = "Распыление газа"
+start_value = 105000
+on_value = 0 | sr_idle@nil %+topi_a2_prototesting_quest_false%
+on_info = {+topi_mechanic_testing_all_proto} sr_idle@nil
+
+[sr_idle@nil]

@@ -1,0 +1,13 @@
+[logic]
+active = sr_idle@10
+
+[sr_idle@10]
+on_info = {+sad_atr_trader_go_kitchen} sr_idle@20
+
+[sr_idle@20]
+on_game_timer = 10000 | sr_idle@30 %+sad_artefuck_ready =send_tip(sad_artefact_upgr_ready:sad_atr_trader) -sad_atr_trader_go_kitchen%
+
+[sr_idle@30]
+on_info = {-sad_artefuck_upgrade_process} sr_idle@10
+
+[sr_idle@nil]

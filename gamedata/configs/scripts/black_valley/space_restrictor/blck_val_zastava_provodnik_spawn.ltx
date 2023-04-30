@@ -1,0 +1,40 @@
+[logic]
+active = sr_idle@provodnik_spawn
+
+[sr_idle@provodnik_spawn]
+on_info = {+blck_val_levsha_first_meet_done -blck_val_levsha_first_meet_done_end} sr_idle@provodnik_spawn_start %+blck_val_levsha_first_meet_done_end%
+
+[sr_idle@provodnik_spawn_start]
+on_timer = 100 | sr_idle@cut_scene_hutor %=spawn_object(blck_val_zastava_provodnik:blck_val_zastava_provodnik_spawn)%
+
+[sr_idle@cut_scene_hutor]
+on_info = {+blck_val_first_dialog_provodnik_complete} sr_idle@teleport_actor %=RavenMemmoryStart =run_postprocess(black:2525:true) +blck_val_provodnik_teleport_to_hutor%
+
+[sr_idle@teleport_actor]
+on_timer = 2000 | sr_idle@stop_postprocess %=teleport_actor(actor_from_provodnik_in_hutor_walk:actor_from_provodnik_in_hutor_look)%
+
+[sr_idle@stop_postprocess]
+on_timer = 2000 | sr_idle@enable_ui %=stop_postprocess(2525)%
+
+[sr_idle@enable_ui]
+on_timer = 100 | sr_idle@give_info %=enable_ui%
+
+[sr_idle@give_info]
+on_timer = 100 | sr_idle@cut_scene_zavod %+blck_val_two_dialog_provodnik_give%
+
+[sr_idle@cut_scene_zavod]
+on_info = {+blck_val_dialog_from_zavod_teleport_start} sr_idle@teleport_actor_zavod %=RavenMemmoryStart =run_postprocess(black:2525:true) +blck_val_provodnik_teleport_to_zavod%
+
+[sr_idle@teleport_actor_zavod]
+on_timer = 2000 | sr_idle@stop_postprocess_zavod %=teleport_actor(actor_from_provodnik_in_zavod_walk:actor_from_provodnik_in_zavod_look)%
+
+[sr_idle@stop_postprocess_zavod]
+on_timer = 2000 | sr_idle@enable_ui_zavod %=stop_postprocess(2525)%
+
+[sr_idle@enable_ui_zavod]
+on_timer = 100 | sr_idle@give_info_zavod %=enable_ui%
+
+[sr_idle@give_info_zavod]
+on_timer = 100 | sr_idle@nil %+blck_val_dialog_from_zavod_teleport_give%
+
+[sr_idle@nil]

@@ -1,0 +1,22 @@
+[logic]
+active = sr_idle@wait
+
+[sr_idle@wait]
+on_info = {+topi_start =actor_has_item(topi_anubis_ukazanie_1)} sr_particle@idle_1 
+on_info2 = {+topi_start +topi_m2_killer_ceh_quest_5_talking_1} sr_particle@idle_2 
+
+[sr_particle@idle_1]
+name = new_effects\grn_green
+path = topi_dq6_particle_play_point_3
+mode = 2
+looped = true
+on_info = {+topi_stalker_base_var_2_member_all_death} sr_idle@nil
+
+[sr_particle@idle_2]
+name = new_effects\grn_green
+path = topi_dq6_particle_play_point_3
+mode = 2
+looped = true
+on_info = {+topi_stalker_base_var_3_member_all_death} sr_idle@nil
+
+[sr_idle@nil]

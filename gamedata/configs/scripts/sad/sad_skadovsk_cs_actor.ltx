@@ -1,0 +1,26 @@
+; general section
+
+[walker@gen]
+meet = no_meet
+use_camp = false
+combat_ignore_cond = true
+combat_ignore_keep_when_attacked = true
+invulnerable = true
+gather_items_enabled = false
+help_wounded_enabled = false
+corpse_detection_enabled = false
+
+; work section
+
+[logic]
+active = remark ;walker@1
+
+[walker@1]:walker@gen
+path_walk = zat_b106_return_actor_walk ; zat_scene_actor_walk
+;on_timer = 5000 | remark
+
+[remark]:walker@gen
+anim = guard_na ; guard_na ; bandit_hand_pocket ; ward ; fold_arms ; wait_na
+;target = story | zat_a2_stalker_barmen
+target = path | zat_scene_actor_walk, 0
+on_info = {+test_cs_actor_go} walker@1

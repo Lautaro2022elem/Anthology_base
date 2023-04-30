@@ -1,0 +1,11 @@
+[logic] 
+active = sr_idle
+
+[sr_idle]
+on_info = {+spectrum_project_start +sp_a2_hero_to_garbage_come +gar_start_quest_reversed} sr_idle@2
+
+[sr_idle@2]
+on_actor_outside = {-gar_a2_bagretcev_talking_1} sr_idle@actorkill %=SendTipFL(st_gar_dolg_general_kill_sms:st_tip:ui_inGame2_Dolg_4) +gar_dolg_general_kill%
+
+[sr_idle@actorkill] 
+on_game_timer = 50 | %=hit_actor =kill_actor%

@@ -1,0 +1,8 @@
+[logic]
+active = sr_idle@habar_padalshik
+
+[sr_idle@habar_padalshik]
+on_info = {=actor_has_item(tainik_padalshika) +zver_meet_to_habar} %+zver_found_habar_padalshik%
+on_info2 = {+zver_found_habar_padalshik} sr_idle@habar_padalshik_nil
+
+[sr_idle@habar_padalshik_nil]

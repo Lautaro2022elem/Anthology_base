@@ -1,0 +1,18 @@
+[logic]
+active = sr_idle
+
+[sr_idle]
+on_info = {+esc_quest_hunting_complite} sr_idle@sms %+esc_quest_hunting_info%
+on_info2 = {+esc_npc_wood_goblin_dead} sr_idle@sms %+esc_quest_hunting_info%
+on_info3 = {+esc_quest_hunting_reversed} sr_idle@sms %+esc_quest_hunting_info%
+
+[sr_idle@sms]
+on_info = {-esc_quest_shaman_worke_complite} sr_idle@timer
+
+[sr_idle@timer]
+on_game_timer = 800 | sr_idle@1
+
+[sr_idle@1]
+on_info = {-esc_quest_shaman_worke_complite} sr_idle@nil %=esc_shaman_worke =give_task(esc_quest_shaman_worke)%
+
+[sr_idle@nil]

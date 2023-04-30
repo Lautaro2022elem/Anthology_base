@@ -1,0 +1,28 @@
+[logic]
+active = sr_idle@zver_sends_sms_raven_start
+
+[sr_idle@zver_sends_sms_raven_start]
+on_info = {+esc_actor_meet_from_kill_leader_done} sr_idle@zver_sends_sms_raven_start_1
+
+[sr_idle@zver_sends_sms_raven_start_1]
+on_timer = 5000 | sr_idle@grif_sends_sms_zver %=esc_nps_zver_quest_sms_2%
+
+[sr_idle@grif_sends_sms_zver]
+on_timer = 13000 | sr_idle@zver_sends_sms_grif %=esc_qrif_quest_sms%
+
+[sr_idle@zver_sends_sms_grif]
+on_timer = 7000 | sr_idle@grif_sends_sms_zver_1 %=esc_nps_zver_quest_sms_3%
+
+[sr_idle@grif_sends_sms_zver_1]
+on_timer = 5500 | sr_idle@zver_quest_sms_4 %=esc_qrif_quest_sms_1%
+
+[sr_idle@zver_quest_sms_4]
+on_timer = 5000 | sr_idle@qrif_quest_bizon_sms_1 %=esc_nps_zver_quest_sms_4%
+
+[sr_idle@qrif_quest_bizon_sms_1]
+on_timer = 11000 | sr_idle@actor_go_meet_to_enot %=esc_qrif_quest_bizon_sms_1 +esc_actor_mind_go_to_enot%
+
+[sr_idle@actor_go_meet_to_enot]
+on_timer = 11500 | sr_idle@nil %+esc_actor_go_meet_to_enot%
+
+[sr_idle@nil]

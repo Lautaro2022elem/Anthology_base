@@ -1,0 +1,154 @@
+[logic@digst_markus_squad]
+suitable = {=check_npc_name(pb_markus_survive)} true
+prior = 200
+active = remark@start
+post_combat_time = 0, 0
+on_death = death
+level_spot = quest_npc
+
+[remark@start]
+anim = threat_danger
+target = story | actor
+danger = danger
+use_camp = false
+on_info = {+digger_stash_markus_to_actor_meet_start} remark@meet_to_actor_start
+combat_ignore_cond = true
+combat_ignore_keep_when_attacked = true
+gather_items_enabled = false
+help_wounded_enabled = false
+corpse_detection_enabled = false
+invulnerable = true
+meet = no_meet
+
+[remark@meet_to_actor_start]
+anim = threat_danger
+target = story | actor
+danger = danger
+use_camp = false
+on_info = {+digst_markus_go_home} walker@markus_shoot_to_lamp
+combat_ignore_cond = true
+combat_ignore_keep_when_attacked = true
+gather_items_enabled = false
+help_wounded_enabled = false
+corpse_detection_enabled = false
+invulnerable = true
+meet = meet@quest_line_start
+
+[walker@markus_shoot_to_lamp]
+path_walk = markus_to_light_walk
+path_look = markus_to_light_look
+on_info = {+digst_lamp_destroyed} remark@wait
+meet = no_meet
+invulnerable = true
+
+[remark@wait]
+anim = threat_danger
+target = story | actor
+meet = no_meet
+danger = danger
+on_info = {+digst_delete_stronglav} remark@good
+on_info2 = {+digst_actor_hit_stronglav} remark@fight
+combat_ignore_cond = true
+combat_ignore_keep_when_attacked = true
+gather_items_enabled = false
+corpse_detection_enabled = false
+invulnerable = true
+
+[remark@fight]
+anim = threat_danger
+target = story | actor
+meet = no_meet
+danger = danger
+on_info = {+digst_spider_quest_dead_2 +digst_spider_quest_dead_1 +digst_spider_quest_dead} walker@bad
+gather_items_enabled = false
+corpse_detection_enabled = false
+invulnerable = true
+
+[remark@good]
+anim = threat_danger
+target = story | actor
+danger = danger
+on_info = {+digst_stay_dont_move_complite} remark@no_meet
+use_camp = false
+combat_ignore_cond = true
+combat_ignore_keep_when_attacked = true
+gather_items_enabled = false
+help_wounded_enabled = false
+corpse_detection_enabled = false
+invulnerable = true
+meet = meet@quest_line_good
+
+[walker@bad]
+path_walk = markus_to_spot_walk_1
+on_info = {+digst_markus_not_move} remark@bad
+on_info2 = {=actor_enemy} %=actor_neutral%
+def_state_moving = run
+meet = no_meet
+invulnerable = true
+on_signal = digst_markus_not_move | {-digst_markus_not_move} remark@bad %+digst_markus_not_move%
+
+[remark@bad]
+anim = threat_danger
+target = story | actor
+danger = danger
+on_info = {+digst_kill_to_spider_complite} remark@no_meet
+use_camp = false
+combat_ignore_cond = true
+combat_ignore_keep_when_attacked = true
+gather_items_enabled = false
+help_wounded_enabled = false
+corpse_detection_enabled = false
+invulnerable = true
+meet = meet@quest_line_bad
+
+[remark@no_meet]
+anim = threat_danger
+target = story | actor
+danger = danger
+use_camp = false
+combat_ignore_cond = true
+combat_ignore_keep_when_attacked = true
+gather_items_enabled = false
+help_wounded_enabled = false
+corpse_detection_enabled = false
+invulnerable = true
+meet = no_meet
+
+[meet@quest_line]
+close_anim 		= nil
+close_victim 	= nil
+far_anim 		= nil
+far_victim 		= nil
+close_distance 	= 0
+far_distance 	= 0
+use = {=actor_enemy} false, {=dist_to_actor_le(3)} true, false
+snd_on_use = {!dist_to_actor_le(3)} nil
+meet_on_talking = false
+
+[meet@quest_line_start]:meet@quest_line
+close_snd_hello = pb_markus_meet_no_snd
+close_snd_distance = 3
+close_victim = actor
+use = {-digst_markus_go_home} self, true
+allow_break = false
+meet_dialog = digst_markus_talk_to_actor
+trade_enable = false
+
+[meet@quest_line_good]:meet@quest_line
+close_snd_hello = pb_markus_meet_no_snd
+close_snd_distance = 3
+close_victim = actor
+allow_break = false
+meet_dialog = digst_markus_talk_to_actor_good
+trade_enable = false
+
+[meet@quest_line_bad]:meet@quest_line
+close_snd_hello = pb_markus_meet_no_snd
+close_snd_distance = 3
+close_victim = actor
+allow_break = false
+meet_dialog = digst_markus_talk_to_actor_bad
+trade_enable = false
+
+[death]
+on_info = %+digst_markus_dead%

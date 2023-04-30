@@ -1,0 +1,22 @@
+[logic]
+active = walker
+
+[walker]
+path_walk = esc_npc_csky_2_walk
+on_signal = esc_npc_csky_compite_2| {-esc_npc_csky_compite_2} remark@wait %+esc_npc_csky_compite_2%
+def_state_moving = assault
+meet = no_meet
+danger = danger
+gather_items_enabled = false
+help_wounded_enabled = false
+corpse_detection_enabled = false
+
+[remark@wait]
+anim = threat_danger
+target = story | actor
+meet = no_meet
+danger = danger
+on_info = {+esc_csky_npc_del} %=release_npc%
+gather_items_enabled = false
+corpse_detection_enabled = false
+invulnerable = true

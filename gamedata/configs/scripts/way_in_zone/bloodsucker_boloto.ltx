@@ -1,0 +1,28 @@
+[smart_terrains]
+none = true
+
+[logic]
+active = mob_home@bloodsucker_boloto
+suitable = {=target_squad_name(wiz_bloodsucker_boloto)} true
+on_hit = mob_hit@bloodsucker_boloto
+on_death = mob_death@bloodsucker_boloto
+
+[mob_home@bloodsucker_boloto]
+path_home = wiz_sp_bloodshacker_boloto_foma
+home_min_radius = 20
+home_max_radius = 50
+out_restr = wiz_bloodsucker_boloto_zone
+on_info = {=dist_to_actor_ge(60)} mob_home@bloodsucker_boloto_2
+
+[mob_home@bloodsucker_boloto_2]
+path_home = wiz_sp_bloodshacker_boloto_foma
+home_min_radius = 20
+home_max_radius = 50
+out_restr = wiz_bloodsucker_boloto_zone
+on_info = {=dist_to_actor_le(50)} mob_home@bloodsucker_boloto
+
+[mob_hit@bloodsucker_boloto]
+on_info = %=berserk_particle_play%
+
+[mob_death@bloodsucker_boloto]
+on_info = %+bolotnaya_tvar_death =berserk_particle_stop%

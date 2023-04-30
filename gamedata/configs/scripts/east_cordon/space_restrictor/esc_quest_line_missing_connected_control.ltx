@@ -1,0 +1,8 @@
+[logic]
+active = sr_idle
+
+[sr_idle]
+on_actor_inside = {+spectrum_project_start +esc_quest_line_patogen_meet_dialog_and} sr_idle@nil %+esc_quest_line_missing_connected_doclad%
+on_info = {-esc_quest_shvabroid_pda_info =actor_has_item(esc_quest_shvabroid_pda)} sr_idle %+esc_quest_shvabroid_pda_info%
+
+[sr_idle@nil]

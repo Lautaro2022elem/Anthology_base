@@ -1,0 +1,13 @@
+<?xml version='1.0' encoding="windows-1251"?>
+
+<game_information_portions>
+  
+  <!-- Квестовые инфопоршни лабы x14 -->	
+	<info_portion id="labx14_mod_npcs_spawner"></info_portion>	
+    <info_portion id="labx14_a2_main_quest_1_give"></info_portion>
+	<info_portion id="labx14_a2_sp_killer_1_death"></info_portion>
+	<info_portion id="labx14_a2_sp_killer_2_death"></info_portion>
+	<info_portion id="labx14_a2_sp_killer_3_death"></info_portion>
+	<info_portion id="labx14_a2_sp_killer_4_death"></info_portion>
+	<info_portion id="labx14_a2_sp_killer_5_death"></info_portion>
+</game_information_portions>

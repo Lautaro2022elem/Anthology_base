@@ -1,0 +1,933 @@
+-------------------- GUI элементы записок в Смерти вопреки ----------------------
+------------------------- Copyright 2012-2013 Geonezis & XOBAH ---------------------------
+------------------------------------------------------------------------------
+--                           Записки                 --
+------------------------------------------------------------------------------
+class "ui_notepad_type_esc_1" (CUIScriptWnd)
+
+function ui_notepad_type_esc_1:__init(owner) super()
+	self.owner = owner
+	self:InitControls()
+	self:InitCallBacks()
+end
+
+function ui_notepad_type_esc_1:__finalize()
+end
+
+function ui_notepad_type_esc_1:InitControls()
+	self:SetWndRect			(Frect():set(0,0,1024,768))
+	local xml, ctrl			= CScriptXmlInit(), CUIWindow()
+	xml:ParseFile			("ui_gui_elements_pa.xml")
+	self.form_notepad_type_one				= xml:InitStatic("form_notepad_type_one",self)
+	xml:InitStatic			("form_notepad_type_one:caption_1",self.form_notepad_type_one)  
+    self:register_element(xml,"text_field") 	
+	self.text_field:TextControl():SetText(game.translate_string("st_pa_notepad_type_esc_1_text"))
+    self.button_close = xml:Init3tButton ("form_notepad_type_one:btn_close", self.form_notepad_type_one) 
+    self:Register (self.button_close, "button_close")	
+end
+
+function ui_notepad_type_esc_1:InitCallBacks()    
+	self:AddCallback("button_close", ui_events.BUTTON_CLICKED, self.OnButton_close_clicked, self)
+end
+
+function ui_notepad_type_esc_1:OnButton_close_clicked()
+    give_object_to_actor("esc_quest_mrakobes_mail")          
+	self:HideDialog()	
+end
+
+function ui_notepad_type_esc_1:register_element(xml,element_name)
+   self[element_name]=xml:InitStatic("form_notepad_type_one:"..element_name,self.form_notepad_type_one)
+end
+
+-----------------------------------------------
+class "ui_notepad_type_esc_2" (CUIScriptWnd)
+
+function ui_notepad_type_esc_2:__init(owner) super()
+	self.owner = owner
+	self:InitControls()
+	self:InitCallBacks()
+end
+
+function ui_notepad_type_esc_2:__finalize()
+end
+
+function ui_notepad_type_esc_2:InitControls()
+	self:SetWndRect			(Frect():set(0,0,1024,768))
+	local xml, ctrl			= CScriptXmlInit(), CUIWindow()
+	xml:ParseFile			("ui_gui_elements_pa.xml")
+	self.form_notepad_type_one				= xml:InitStatic("form_notepad_type_one",self)
+	xml:InitStatic			("form_notepad_type_one:caption_1",self.form_notepad_type_one)  
+    self:register_element(xml,"text_field") 	
+	self.text_field:TextControl():SetText(game.translate_string("st_pa_notepad_type_esc_2_text"))
+    self.button_close = xml:Init3tButton ("form_notepad_type_one:btn_close", self.form_notepad_type_one) 
+    self:Register (self.button_close, "button_close")	
+end
+
+function ui_notepad_type_esc_2:InitCallBacks()    
+	self:AddCallback("button_close", ui_events.BUTTON_CLICKED, self.OnButton_close_clicked, self)
+end
+
+function ui_notepad_type_esc_2:OnButton_close_clicked()
+    give_object_to_actor("esc_lisiy_notes")
+    give_info("esc_lisiy_notes_read")          
+	self:HideDialog()	
+end
+
+function ui_notepad_type_esc_2:register_element(xml,element_name)
+   self[element_name]=xml:InitStatic("form_notepad_type_one:"..element_name,self.form_notepad_type_one)
+end
+
+-----------------------------------------------
+class "ui_notepad_type_esc_3" (CUIScriptWnd)
+
+function ui_notepad_type_esc_3:__init(owner) super()
+	self.owner = owner
+	self:InitControls()
+	self:InitCallBacks()
+end
+
+function ui_notepad_type_esc_3:__finalize()
+end
+
+function ui_notepad_type_esc_3:InitControls()
+	self:SetWndRect			(Frect():set(0,0,1024,768))
+	local xml, ctrl			= CScriptXmlInit(), CUIWindow()
+	xml:ParseFile			("ui_gui_elements_pa.xml")
+	self.form_notepad_type_one				= xml:InitStatic("form_notepad_type_one",self)
+	xml:InitStatic			("form_notepad_type_one:caption_1",self.form_notepad_type_one)  
+    self:register_element(xml,"text_field") 	
+	self.text_field:TextControl():SetText(game.translate_string("st_pa_notepad_type_esc_3_text"))
+    self.button_close = xml:Init3tButton ("form_notepad_type_one:btn_close", self.form_notepad_type_one) 
+    self:Register (self.button_close, "button_close")	
+end
+
+function ui_notepad_type_esc_3:InitCallBacks()    
+	self:AddCallback("button_close", ui_events.BUTTON_CLICKED, self.OnButton_close_clicked, self)
+end
+
+function ui_notepad_type_esc_3:OnButton_close_clicked()
+    give_object_to_actor("pb_quest_dubolom_mail")       
+	self:HideDialog()	
+end
+
+function ui_notepad_type_esc_3:register_element(xml,element_name)
+   self[element_name]=xml:InitStatic("form_notepad_type_one:"..element_name,self.form_notepad_type_one)
+end
+
+-----------------------------------------------
+class "ui_notepad_type_one_1" (CUIScriptWnd)
+
+function ui_notepad_type_one_1:__init(owner) super()
+	self.owner = owner
+	self:InitControls()
+	self:InitCallBacks()
+end
+
+function ui_notepad_type_one_1:__finalize()
+end
+
+function ui_notepad_type_one_1:InitControls()
+	self:SetWndRect			(Frect():set(0,0,1024,768))
+	local xml, ctrl			= CScriptXmlInit(), CUIWindow()
+	xml:ParseFile			("ui_gui_elements_pa.xml")
+	self.form_notepad_type_one				= xml:InitStatic("form_notepad_type_one",self)
+	xml:InitStatic			("form_notepad_type_one:caption_1",self.form_notepad_type_one)  
+    self:register_element(xml,"text_field") 	
+	self.text_field:TextControl():SetText(game.translate_string("st_pa_notepad_type_one_1_text"))
+    self.button_close = xml:Init3tButton ("form_notepad_type_one:btn_close", self.form_notepad_type_one) 
+    self:Register (self.button_close, "button_close")	
+end
+
+function ui_notepad_type_one_1:InitCallBacks()    
+	self:AddCallback("button_close", ui_events.BUTTON_CLICKED, self.OnButton_close_clicked, self)
+end
+
+function ui_notepad_type_one_1:OnButton_close_clicked()
+    give_object_to_actor("pb_quest_document_1")    
+    give_info("perevalochnaya_baza_zver_see_to_document")      
+	self:HideDialog()	
+end
+
+function ui_notepad_type_one_1:register_element(xml,element_name)
+   self[element_name]=xml:InitStatic("form_notepad_type_one:"..element_name,self.form_notepad_type_one)
+end
+
+-----------------------------------------------
+class "ui_notepad_type_one_2" (CUIScriptWnd)
+
+function ui_notepad_type_one_2:__init(owner) super()
+	self.owner = owner
+	self:InitControls()
+	self:InitCallBacks()
+end
+
+function ui_notepad_type_one_2:__finalize()
+end
+
+function ui_notepad_type_one_2:InitControls()
+	self:SetWndRect			(Frect():set(0,0,1024,768))
+	local xml, ctrl			= CScriptXmlInit(), CUIWindow()
+	xml:ParseFile			("ui_gui_elements_pa.xml")
+	self.form_notepad_type_one				= xml:InitStatic("form_notepad_type_one",self)
+	xml:InitStatic			("form_notepad_type_one:caption_2",self.form_notepad_type_one)  
+    self:register_element(xml,"text_field") 	
+	self.text_field:TextControl():SetText(game.translate_string("st_pa_notepad_type_one_2_text"))
+    self.button_close = xml:Init3tButton ("form_notepad_type_one:btn_close", self.form_notepad_type_one) 
+    self:Register (self.button_close, "button_close")	
+end
+
+function ui_notepad_type_one_2:InitCallBacks()    
+	self:AddCallback("button_close", ui_events.BUTTON_CLICKED, self.OnButton_close_clicked, self)
+end
+
+function ui_notepad_type_one_2:OnButton_close_clicked()
+    give_object_to_actor("pb_quest_bloknot_1")          
+	self:HideDialog()	
+end
+
+function ui_notepad_type_one_2:register_element(xml,element_name)
+   self[element_name]=xml:InitStatic("form_notepad_type_one:"..element_name,self.form_notepad_type_one)
+end
+
+-----------------------------------------------
+class "ui_notepad_type_one_3" (CUIScriptWnd)
+
+function ui_notepad_type_one_3:__init(owner) super()
+	self.owner = owner
+	self:InitControls()
+	self:InitCallBacks()
+end
+
+function ui_notepad_type_one_3:__finalize()
+end
+
+function ui_notepad_type_one_3:InitControls()
+	self:SetWndRect			(Frect():set(0,0,1024,768))
+	local xml, ctrl			= CScriptXmlInit(), CUIWindow()
+	xml:ParseFile			("ui_gui_elements_pa.xml")
+	self.form_notepad_type_one				= xml:InitStatic("form_notepad_type_one",self)
+	xml:InitStatic			("form_notepad_type_one:caption_3",self.form_notepad_type_one)  
+    self:register_element(xml,"text_field") 	
+	self.text_field:TextControl():SetText(game.translate_string("st_pa_notepad_type_one_3_text"))
+    self.button_close = xml:Init3tButton ("form_notepad_type_one:btn_close", self.form_notepad_type_one) 
+    self:Register (self.button_close, "button_close")	
+end
+
+function ui_notepad_type_one_3:InitCallBacks()    
+	self:AddCallback("button_close", ui_events.BUTTON_CLICKED, self.OnButton_close_clicked, self)
+end
+
+function ui_notepad_type_one_3:OnButton_close_clicked()
+    give_object_to_actor("pb_quest_bloknot_2")          
+	self:HideDialog()	
+end
+
+function ui_notepad_type_one_3:register_element(xml,element_name)
+   self[element_name]=xml:InitStatic("form_notepad_type_one:"..element_name,self.form_notepad_type_one)
+end
+
+-----------------------------------------------
+class "ui_notepad_type_one_4" (CUIScriptWnd)
+
+function ui_notepad_type_one_4:__init(owner) super()
+	self.owner = owner
+	self:InitControls()
+	self:InitCallBacks()
+end
+
+function ui_notepad_type_one_4:__finalize()
+end
+
+function ui_notepad_type_one_4:InitControls()
+	self:SetWndRect			(Frect():set(0,0,1024,768))
+	local xml, ctrl			= CScriptXmlInit(), CUIWindow()
+	xml:ParseFile			("ui_gui_elements_pa.xml")
+	self.form_notepad_type_one				= xml:InitStatic("form_notepad_type_one",self)
+	xml:InitStatic			("form_notepad_type_one:caption_4",self.form_notepad_type_one)  
+    self:register_element(xml,"text_field") 	
+	self.text_field:TextControl():SetText(game.translate_string("st_pa_notepad_type_one_4_text"))
+    self.button_close = xml:Init3tButton ("form_notepad_type_one:btn_close", self.form_notepad_type_one) 
+    self:Register (self.button_close, "button_close")	
+end
+
+function ui_notepad_type_one_4:InitCallBacks()    
+	self:AddCallback("button_close", ui_events.BUTTON_CLICKED, self.OnButton_close_clicked, self)
+end
+
+function ui_notepad_type_one_4:OnButton_close_clicked()
+    give_object_to_actor("pb_quest_bloknot_3")          
+	self:HideDialog()	
+end
+
+function ui_notepad_type_one_4:register_element(xml,element_name)
+   self[element_name]=xml:InitStatic("form_notepad_type_one:"..element_name,self.form_notepad_type_one)
+end
+
+-----------------------------------------------
+class "ui_notepad_type_one_5" (CUIScriptWnd)
+
+function ui_notepad_type_one_5:__init(owner) super()
+	self.owner = owner
+	self:InitControls()
+	self:InitCallBacks()
+end
+
+function ui_notepad_type_one_5:__finalize()
+end
+
+function ui_notepad_type_one_5:InitControls()
+	self:SetWndRect			(Frect():set(0,0,1024,768))
+	local xml, ctrl			= CScriptXmlInit(), CUIWindow()
+	xml:ParseFile			("ui_gui_elements_pa.xml")
+	self.form_notepad_type_one				= xml:InitStatic("form_notepad_type_one",self)
+	xml:InitStatic			("form_notepad_type_one:caption_5",self.form_notepad_type_one)  
+    self:register_element(xml,"text_field") 	
+	self.text_field:TextControl():SetText(game.translate_string("st_pa_notepad_type_one_5_text"))
+    self.button_close = xml:Init3tButton ("form_notepad_type_one:btn_close", self.form_notepad_type_one) 
+    self:Register (self.button_close, "button_close")	
+end
+
+function ui_notepad_type_one_5:InitCallBacks()    
+	self:AddCallback("button_close", ui_events.BUTTON_CLICKED, self.OnButton_close_clicked, self)
+end
+
+function ui_notepad_type_one_5:OnButton_close_clicked()
+    give_object_to_actor("pb_quest_bloknot_4")          
+	self:HideDialog()	
+end
+
+function ui_notepad_type_one_5:register_element(xml,element_name)
+   self[element_name]=xml:InitStatic("form_notepad_type_one:"..element_name,self.form_notepad_type_one)
+end
+
+-----------------------------------------------
+class "ui_notepad_type_one_6" (CUIScriptWnd)
+
+function ui_notepad_type_one_6:__init(owner) super()
+	self.owner = owner
+	self:InitControls()
+	self:InitCallBacks()
+end
+
+function ui_notepad_type_one_6:__finalize()
+end
+
+function ui_notepad_type_one_6:InitControls()
+	self:SetWndRect			(Frect():set(0,0,1024,768))
+	local xml, ctrl			= CScriptXmlInit(), CUIWindow()
+	xml:ParseFile			("ui_gui_elements_pa.xml")
+	self.form_notepad_type_one				= xml:InitStatic("form_notepad_type_one",self)
+	xml:InitStatic			("form_notepad_type_one:caption_6",self.form_notepad_type_one)  
+    self:register_element(xml,"text_field") 	
+	self.text_field:TextControl():SetText(game.translate_string("st_pa_notepad_type_one_6_text"))
+    self.button_close = xml:Init3tButton ("form_notepad_type_one:btn_close", self.form_notepad_type_one) 
+    self:Register (self.button_close, "button_close")	
+end
+
+function ui_notepad_type_one_6:InitCallBacks()    
+	self:AddCallback("button_close", ui_events.BUTTON_CLICKED, self.OnButton_close_clicked, self)
+end
+
+function ui_notepad_type_one_6:OnButton_close_clicked()
+    give_object_to_actor("pb_quest_bloknot_5")          
+	self:HideDialog()	
+end
+
+function ui_notepad_type_one_6:register_element(xml,element_name)
+   self[element_name]=xml:InitStatic("form_notepad_type_one:"..element_name,self.form_notepad_type_one)
+end
+
+-----------------------------------------------
+class "ui_notepad_type_one_7" (CUIScriptWnd)
+
+function ui_notepad_type_one_7:__init(owner) super()
+	self.owner = owner
+	self:InitControls()
+	self:InitCallBacks()
+end
+
+function ui_notepad_type_one_7:__finalize()
+end
+
+function ui_notepad_type_one_7:InitControls()
+	self:SetWndRect			(Frect():set(0,0,1024,768))
+	local xml, ctrl			= CScriptXmlInit(), CUIWindow()
+	xml:ParseFile			("ui_gui_elements_pa.xml")
+	self.form_notepad_type_one				= xml:InitStatic("form_notepad_type_one",self)
+	xml:InitStatic			("form_notepad_type_one:caption_7",self.form_notepad_type_one)  
+    self:register_element(xml,"text_field") 	
+	self.text_field:TextControl():SetText(game.translate_string("st_pa_notepad_type_one_7_text"))
+    self.button_close = xml:Init3tButton ("form_notepad_type_one:btn_close", self.form_notepad_type_one) 
+    self:Register (self.button_close, "button_close")	
+end
+
+function ui_notepad_type_one_7:InitCallBacks()    
+	self:AddCallback("button_close", ui_events.BUTTON_CLICKED, self.OnButton_close_clicked, self)
+end
+
+function ui_notepad_type_one_7:OnButton_close_clicked()
+    give_object_to_actor("pb_quest_bloknot_6")          
+	self:HideDialog()	
+end
+
+function ui_notepad_type_one_7:register_element(xml,element_name)
+   self[element_name]=xml:InitStatic("form_notepad_type_one:"..element_name,self.form_notepad_type_one)
+end
+
+-----------------------------------------------
+class "ui_notepad_type_one_8" (CUIScriptWnd)
+
+function ui_notepad_type_one_8:__init(owner) super()
+	self.owner = owner
+	self:InitControls()
+	self:InitCallBacks()
+end
+
+function ui_notepad_type_one_8:__finalize()
+end
+
+function ui_notepad_type_one_8:InitControls()
+	self:SetWndRect			(Frect():set(0,0,1024,768))
+	local xml, ctrl			= CScriptXmlInit(), CUIWindow()
+	xml:ParseFile			("ui_gui_elements_pa.xml")
+	self.form_notepad_type_one				= xml:InitStatic("form_notepad_type_one",self)
+	xml:InitStatic			("form_notepad_type_one:caption_8",self.form_notepad_type_one)  
+    self:register_element(xml,"text_field") 	
+	self.text_field:TextControl():SetText(game.translate_string("st_pa_notepad_type_one_8_text"))
+    self.button_close = xml:Init3tButton ("form_notepad_type_one:btn_close", self.form_notepad_type_one) 
+    self:Register (self.button_close, "button_close")	
+end
+
+function ui_notepad_type_one_8:InitCallBacks()    
+	self:AddCallback("button_close", ui_events.BUTTON_CLICKED, self.OnButton_close_clicked, self)
+end
+
+function ui_notepad_type_one_8:OnButton_close_clicked()
+    give_object_to_actor("pb_quest_bloknot_7")          
+	self:HideDialog()	
+end
+
+function ui_notepad_type_one_8:register_element(xml,element_name)
+   self[element_name]=xml:InitStatic("form_notepad_type_one:"..element_name,self.form_notepad_type_one)
+end
+
+-----------------------------------------------
+class "ui_notepad_type_one_9" (CUIScriptWnd)
+
+function ui_notepad_type_one_9:__init(owner) super()
+	self.owner = owner
+	self:InitControls()
+	self:InitCallBacks()
+end
+
+function ui_notepad_type_one_9:__finalize()
+end
+
+function ui_notepad_type_one_9:InitControls()
+	self:SetWndRect			(Frect():set(0,0,1024,768))
+	local xml, ctrl			= CScriptXmlInit(), CUIWindow()
+	xml:ParseFile			("ui_gui_elements_pa.xml")
+	self.form_notepad_type_one				= xml:InitStatic("form_notepad_type_one",self)
+	xml:InitStatic			("form_notepad_type_one:caption_9",self.form_notepad_type_one)  
+    self:register_element(xml,"text_field") 	
+	self.text_field:TextControl():SetText(game.translate_string("st_pa_notepad_type_one_9_text"))
+    self.button_close = xml:Init3tButton ("form_notepad_type_one:btn_close", self.form_notepad_type_one) 
+    self:Register (self.button_close, "button_close")	
+end
+
+function ui_notepad_type_one_9:InitCallBacks()    
+	self:AddCallback("button_close", ui_events.BUTTON_CLICKED, self.OnButton_close_clicked, self)
+end
+
+function ui_notepad_type_one_9:OnButton_close_clicked()
+    give_object_to_actor("pb_quest_bloknot_8")          
+	self:HideDialog()	
+end
+
+function ui_notepad_type_one_9:register_element(xml,element_name)
+   self[element_name]=xml:InitStatic("form_notepad_type_one:"..element_name,self.form_notepad_type_one)
+end
+
+-----------------------------------------------
+class "ui_notepad_type_one_10" (CUIScriptWnd)
+
+function ui_notepad_type_one_10:__init(owner) super()
+	self.owner = owner
+	self:InitControls()
+	self:InitCallBacks()
+end
+
+function ui_notepad_type_one_10:__finalize()
+end
+
+function ui_notepad_type_one_10:InitControls()
+	self:SetWndRect			(Frect():set(0,0,1024,768))
+	local xml, ctrl			= CScriptXmlInit(), CUIWindow()
+	xml:ParseFile			("ui_gui_elements_pa.xml")
+	self.form_notepad_type_one				= xml:InitStatic("form_notepad_type_one",self)
+	xml:InitStatic			("form_notepad_type_one:caption_10",self.form_notepad_type_one)  
+    self:register_element(xml,"text_field") 	
+	self.text_field:TextControl():SetText(game.translate_string("st_pa_notepad_type_one_10_text"))
+    self.button_close = xml:Init3tButton ("form_notepad_type_one:btn_close", self.form_notepad_type_one) 
+    self:Register (self.button_close, "button_close")	
+end
+
+function ui_notepad_type_one_10:InitCallBacks()    
+	self:AddCallback("button_close", ui_events.BUTTON_CLICKED, self.OnButton_close_clicked, self)
+end
+
+function ui_notepad_type_one_10:OnButton_close_clicked()
+    give_object_to_actor("pb_quest_mail_shpala")          
+	self:HideDialog()	
+end
+
+function ui_notepad_type_one_10:register_element(xml,element_name)
+   self[element_name]=xml:InitStatic("form_notepad_type_one:"..element_name,self.form_notepad_type_one)
+end
+
+-------------------КВЕСТОВЫЕ----------------------------
+-----------------------------------------------
+class "ui_notepad_type_specquest_1" (CUIScriptWnd)
+
+function ui_notepad_type_specquest_1:__init(owner) super()
+	self.owner = owner
+	self:InitControls()
+	self:InitCallBacks()
+end
+
+function ui_notepad_type_specquest_1:__finalize()
+end
+
+function ui_notepad_type_specquest_1:InitControls()
+	self:SetWndRect			(Frect():set(0,0,1024,768))
+	local xml, ctrl			= CScriptXmlInit(), CUIWindow()
+	xml:ParseFile			("ui_gui_elements_pa.xml")
+	self.form_notepad_type_one				= xml:InitStatic("form_notepad_type_one",self)
+	xml:InitStatic			("form_notepad_type_one:caption_s",self.form_notepad_type_one)  
+    self:register_element(xml,"text_field") 	
+	self.text_field:TextControl():SetText(game.translate_string("st_pa_notepad_type_one_9_text_1"))
+    self.button_close = xml:Init3tButton ("form_notepad_type_one:btn_close", self.form_notepad_type_one) 
+    self:Register (self.button_close, "button_close")	
+end
+
+function ui_notepad_type_specquest_1:InitCallBacks()    
+	self:AddCallback("button_close", ui_events.BUTTON_CLICKED, self.OnButton_close_clicked, self)
+end
+
+function ui_notepad_type_specquest_1:OnButton_close_clicked()
+    give_object_to_actor("ui_notepad_second_quest_t1")          
+	self:HideDialog()	
+end
+
+function ui_notepad_type_specquest_1:register_element(xml,element_name)
+   self[element_name]=xml:InitStatic("form_notepad_type_one:"..element_name,self.form_notepad_type_one)
+end
+
+-----------------------------------------------
+class "ui_notepad_type_specquest_2" (CUIScriptWnd)
+
+function ui_notepad_type_specquest_2:__init(owner) super()
+	self.owner = owner
+	self:InitControls()
+	self:InitCallBacks()
+end
+
+function ui_notepad_type_specquest_2:__finalize()
+end
+
+function ui_notepad_type_specquest_2:InitControls()
+	self:SetWndRect			(Frect():set(0,0,1024,768))
+	local xml, ctrl			= CScriptXmlInit(), CUIWindow()
+	xml:ParseFile			("ui_gui_elements_pa.xml")
+	self.form_notepad_type_one				= xml:InitStatic("form_notepad_type_one",self)
+	xml:InitStatic			("form_notepad_type_one:caption_s",self.form_notepad_type_one)  
+    self:register_element(xml,"text_field") 	
+	self.text_field:TextControl():SetText(game.translate_string("st_pa_notepad_type_one_9_text_2"))
+    self.button_close = xml:Init3tButton ("form_notepad_type_one:btn_close", self.form_notepad_type_one) 
+    self:Register (self.button_close, "button_close")	
+end
+
+function ui_notepad_type_specquest_2:InitCallBacks()    
+	self:AddCallback("button_close", ui_events.BUTTON_CLICKED, self.OnButton_close_clicked, self)
+end
+
+function ui_notepad_type_specquest_2:OnButton_close_clicked()
+    give_object_to_actor("ui_notepad_second_quest_t2")          
+	self:HideDialog()	
+end
+
+function ui_notepad_type_specquest_2:register_element(xml,element_name)
+   self[element_name]=xml:InitStatic("form_notepad_type_one:"..element_name,self.form_notepad_type_one)
+end
+
+-----------------------------------------------
+class "ui_notepad_type_specquest_3" (CUIScriptWnd)
+
+function ui_notepad_type_specquest_3:__init(owner) super()
+	self.owner = owner
+	self:InitControls()
+	self:InitCallBacks()
+end
+
+function ui_notepad_type_specquest_3:__finalize()
+end
+
+function ui_notepad_type_specquest_3:InitControls()
+	self:SetWndRect			(Frect():set(0,0,1024,768))
+	local xml, ctrl			= CScriptXmlInit(), CUIWindow()
+	xml:ParseFile			("ui_gui_elements_pa.xml")
+	self.form_notepad_type_one				= xml:InitStatic("form_notepad_type_one",self)
+	xml:InitStatic			("form_notepad_type_one:caption_s",self.form_notepad_type_one)  
+    self:register_element(xml,"text_field") 	
+	self.text_field:TextControl():SetText(game.translate_string("st_pa_notepad_type_one_9_text_3"))
+    self.button_close = xml:Init3tButton ("form_notepad_type_one:btn_close", self.form_notepad_type_one) 
+    self:Register (self.button_close, "button_close")	
+end
+
+function ui_notepad_type_specquest_3:InitCallBacks()    
+	self:AddCallback("button_close", ui_events.BUTTON_CLICKED, self.OnButton_close_clicked, self)
+end
+
+function ui_notepad_type_specquest_3:OnButton_close_clicked()
+    give_object_to_actor("ui_notepad_second_quest_t3")          
+	self:HideDialog()	
+end
+
+function ui_notepad_type_specquest_3:register_element(xml,element_name)
+   self[element_name]=xml:InitStatic("form_notepad_type_one:"..element_name,self.form_notepad_type_one)
+end
+
+-----------------------------------------------
+class "ui_notepad_type_specquest_4" (CUIScriptWnd)
+
+function ui_notepad_type_specquest_4:__init(owner) super()
+	self.owner = owner
+	self:InitControls()
+	self:InitCallBacks()
+end
+
+function ui_notepad_type_specquest_4:__finalize()
+end
+
+function ui_notepad_type_specquest_4:InitControls()
+	self:SetWndRect			(Frect():set(0,0,1024,768))
+	local xml, ctrl			= CScriptXmlInit(), CUIWindow()
+	xml:ParseFile			("ui_gui_elements_pa.xml")
+	self.form_notepad_type_one				= xml:InitStatic("form_notepad_type_one",self)
+	xml:InitStatic			("form_notepad_type_one:caption_s",self.form_notepad_type_one)  
+    self:register_element(xml,"text_field") 	
+	self.text_field:TextControl():SetText(game.translate_string("st_pa_notepad_type_one_9_text_4"))
+    self.button_close = xml:Init3tButton ("form_notepad_type_one:btn_close", self.form_notepad_type_one) 
+    self:Register (self.button_close, "button_close")	
+end
+
+function ui_notepad_type_specquest_4:InitCallBacks()    
+	self:AddCallback("button_close", ui_events.BUTTON_CLICKED, self.OnButton_close_clicked, self)
+end
+
+function ui_notepad_type_specquest_4:OnButton_close_clicked()
+    give_object_to_actor("ui_notepad_second_quest_t4")          
+	self:HideDialog()	
+end
+
+function ui_notepad_type_specquest_4:register_element(xml,element_name)
+   self[element_name]=xml:InitStatic("form_notepad_type_one:"..element_name,self.form_notepad_type_one)
+end
+
+-----------------------------------------------
+class "ui_notepad_type_specquest_5" (CUIScriptWnd)
+
+function ui_notepad_type_specquest_5:__init(owner) super()
+	self.owner = owner
+	self:InitControls()
+	self:InitCallBacks()
+end
+
+function ui_notepad_type_specquest_5:__finalize()
+end
+
+function ui_notepad_type_specquest_5:InitControls()
+	self:SetWndRect			(Frect():set(0,0,1024,768))
+	local xml, ctrl			= CScriptXmlInit(), CUIWindow()
+	xml:ParseFile			("ui_gui_elements_pa.xml")
+	self.form_notepad_type_one				= xml:InitStatic("form_notepad_type_one",self)
+	xml:InitStatic			("form_notepad_type_one:caption_s",self.form_notepad_type_one)  
+    self:register_element(xml,"text_field") 	
+	self.text_field:TextControl():SetText(game.translate_string("st_pa_notepad_type_one_9_text_5"))
+    self.button_close = xml:Init3tButton ("form_notepad_type_one:btn_close", self.form_notepad_type_one) 
+    self:Register (self.button_close, "button_close")	
+end
+
+function ui_notepad_type_specquest_5:InitCallBacks()    
+	self:AddCallback("button_close", ui_events.BUTTON_CLICKED, self.OnButton_close_clicked, self)
+end
+
+function ui_notepad_type_specquest_5:OnButton_close_clicked()
+    give_object_to_actor("ui_notepad_second_quest_t5")          
+	self:HideDialog()	
+end
+
+function ui_notepad_type_specquest_5:register_element(xml,element_name)
+   self[element_name]=xml:InitStatic("form_notepad_type_one:"..element_name,self.form_notepad_type_one)
+end
+
+-----------------------------------------------
+class "ui_notepad_type_dopquest2_1" (CUIScriptWnd)
+
+function ui_notepad_type_dopquest2_1:__init(owner) super()
+	self.owner = owner
+	self:InitControls()
+	self:InitCallBacks()
+end
+
+function ui_notepad_type_dopquest2_1:__finalize()
+end
+
+function ui_notepad_type_dopquest2_1:InitControls()
+	self:SetWndRect			(Frect():set(0,0,1024,768))
+	local xml, ctrl			= CScriptXmlInit(), CUIWindow()
+	xml:ParseFile			("ui_gui_elements_pa.xml")
+	self.form_notepad_type_one				= xml:InitStatic("form_notepad_type_one",self)
+	xml:InitStatic			("form_notepad_type_one:caption_11",self.form_notepad_type_one)  
+    self:register_element(xml,"text_field") 	
+	self.text_field:TextControl():SetText(game.translate_string("st_pa_notepad_type_one_121_text"))
+    self.button_close = xml:Init3tButton ("form_notepad_type_one:btn_close", self.form_notepad_type_one) 
+    self:Register (self.button_close, "button_close")	
+end
+
+function ui_notepad_type_dopquest2_1:InitCallBacks()    
+	self:AddCallback("button_close", ui_events.BUTTON_CLICKED, self.OnButton_close_clicked, self)
+end
+
+function ui_notepad_type_dopquest2_1:OnButton_close_clicked()
+    give_object_to_actor("ui_notepad_dop_quest2_t1")          
+	self:HideDialog()	
+end
+
+function ui_notepad_type_dopquest2_1:register_element(xml,element_name)
+   self[element_name]=xml:InitStatic("form_notepad_type_one:"..element_name,self.form_notepad_type_one)
+end
+
+-----------------------------------------------
+class "ui_notepad_type_dopquest2_2" (CUIScriptWnd)
+
+function ui_notepad_type_dopquest2_2:__init(owner) super()
+	self.owner = owner
+	self:InitControls()
+	self:InitCallBacks()
+end
+
+function ui_notepad_type_dopquest2_2:__finalize()
+end
+
+function ui_notepad_type_dopquest2_2:InitControls()
+	self:SetWndRect			(Frect():set(0,0,1024,768))
+	local xml, ctrl			= CScriptXmlInit(), CUIWindow()
+	xml:ParseFile			("ui_gui_elements_pa.xml")
+	self.form_notepad_type_one				= xml:InitStatic("form_notepad_type_one",self)
+	xml:InitStatic			("form_notepad_type_one:caption_11",self.form_notepad_type_one)  
+    self:register_element(xml,"text_field") 	
+	self.text_field:TextControl():SetText(game.translate_string("st_pa_notepad_type_one_131_text"))
+    self.button_close = xml:Init3tButton ("form_notepad_type_one:btn_close", self.form_notepad_type_one) 
+    self:Register (self.button_close, "button_close")	
+end
+
+function ui_notepad_type_dopquest2_2:InitCallBacks()    
+	self:AddCallback("button_close", ui_events.BUTTON_CLICKED, self.OnButton_close_clicked, self)
+end
+
+function ui_notepad_type_dopquest2_2:OnButton_close_clicked()
+    give_object_to_actor("ui_notepad_dop_quest2_t2")          
+	self:HideDialog()	
+end
+
+function ui_notepad_type_dopquest2_2:register_element(xml,element_name)
+   self[element_name]=xml:InitStatic("form_notepad_type_one:"..element_name,self.form_notepad_type_one)
+end
+
+-----------------------------------------------
+class "ui_notepad_type_podquest_1" (CUIScriptWnd)
+
+function ui_notepad_type_podquest_1:__init(owner) super()
+	self.owner = owner
+	self:InitControls()
+	self:InitCallBacks()
+end
+
+function ui_notepad_type_podquest_1:__finalize()
+end
+
+function ui_notepad_type_podquest_1:InitControls()
+	self:SetWndRect			(Frect():set(0,0,1024,768))
+	local xml, ctrl			= CScriptXmlInit(), CUIWindow()
+	xml:ParseFile			("ui_gui_elements_pa.xml")
+	self.form_notepad_type_one				= xml:InitStatic("form_notepad_type_one",self)
+	xml:InitStatic			("form_notepad_type_one:caption_9",self.form_notepad_type_one)  
+    self:register_element(xml,"text_field") 	
+	self.text_field:TextControl():SetText(game.translate_string("st_notepad_podzemka_one_1_text"))
+    self.button_close = xml:Init3tButton ("form_notepad_type_one:btn_close", self.form_notepad_type_one) 
+    self:Register (self.button_close, "button_close")	
+end
+
+function ui_notepad_type_podquest_1:InitCallBacks()    
+	self:AddCallback("button_close", ui_events.BUTTON_CLICKED, self.OnButton_close_clicked, self)
+end
+
+function ui_notepad_type_podquest_1:OnButton_close_clicked()
+    give_object_to_actor("ui_notepad_podzemka_1")          
+	self:HideDialog()	
+end
+
+function ui_notepad_type_podquest_1:register_element(xml,element_name)
+   self[element_name]=xml:InitStatic("form_notepad_type_one:"..element_name,self.form_notepad_type_one)
+end
+
+-----------------------------------------------
+class "ui_notepad_type_podquest_2" (CUIScriptWnd)
+
+function ui_notepad_type_podquest_2:__init(owner) super()
+	self.owner = owner
+	self:InitControls()
+	self:InitCallBacks()
+end
+
+function ui_notepad_type_podquest_2:__finalize()
+end
+
+function ui_notepad_type_podquest_2:InitControls()
+	self:SetWndRect			(Frect():set(0,0,1024,768))
+	local xml, ctrl			= CScriptXmlInit(), CUIWindow()
+	xml:ParseFile			("ui_gui_elements_pa.xml")
+	self.form_notepad_type_one				= xml:InitStatic("form_notepad_type_one",self)
+	xml:InitStatic			("form_notepad_type_one:caption_9",self.form_notepad_type_one)  
+    self:register_element(xml,"text_field") 	
+	self.text_field:TextControl():SetText(game.translate_string("st_notepad_podzemka_one_2_text"))
+    self.button_close = xml:Init3tButton ("form_notepad_type_one:btn_close", self.form_notepad_type_one) 
+    self:Register (self.button_close, "button_close")	
+end
+
+function ui_notepad_type_podquest_2:InitCallBacks()    
+	self:AddCallback("button_close", ui_events.BUTTON_CLICKED, self.OnButton_close_clicked, self)
+end
+
+function ui_notepad_type_podquest_2:OnButton_close_clicked()
+    give_object_to_actor("ui_notepad_podzemka_2")          
+	self:HideDialog()	
+end
+
+function ui_notepad_type_podquest_2:register_element(xml,element_name)
+   self[element_name]=xml:InitStatic("form_notepad_type_one:"..element_name,self.form_notepad_type_one)
+end
+
+-----------------------------------------------
+class "ui_notepad_type_podquest_3" (CUIScriptWnd)
+
+function ui_notepad_type_podquest_3:__init(owner) super()
+	self.owner = owner
+	self:InitControls()
+	self:InitCallBacks()
+end
+
+function ui_notepad_type_podquest_3:__finalize()
+end
+
+function ui_notepad_type_podquest_3:InitControls()
+	self:SetWndRect			(Frect():set(0,0,1024,768))
+	local xml, ctrl			= CScriptXmlInit(), CUIWindow()
+	xml:ParseFile			("ui_gui_elements_pa.xml")
+	self.form_notepad_type_one				= xml:InitStatic("form_notepad_type_one",self)
+	xml:InitStatic			("form_notepad_type_one:caption_9",self.form_notepad_type_one)  
+    self:register_element(xml,"text_field") 	
+	self.text_field:TextControl():SetText(game.translate_string("st_notepad_podzemka_one_3_text"))
+    self.button_close = xml:Init3tButton ("form_notepad_type_one:btn_close", self.form_notepad_type_one) 
+    self:Register (self.button_close, "button_close")	
+end
+
+function ui_notepad_type_podquest_3:InitCallBacks()    
+	self:AddCallback("button_close", ui_events.BUTTON_CLICKED, self.OnButton_close_clicked, self)
+end
+
+function ui_notepad_type_podquest_3:OnButton_close_clicked()
+    give_object_to_actor("ui_notepad_podzemka_3")          
+	self:HideDialog()	
+end
+
+function ui_notepad_type_podquest_3:register_element(xml,element_name)
+   self[element_name]=xml:InitStatic("form_notepad_type_one:"..element_name,self.form_notepad_type_one)
+end
+
+-----------------------------------------------
+class "ui_notepad_type_podquest_4" (CUIScriptWnd)
+
+function ui_notepad_type_podquest_4:__init(owner) super()
+	self.owner = owner
+	self:InitControls()
+	self:InitCallBacks()
+end
+
+function ui_notepad_type_podquest_4:__finalize()
+end
+
+function ui_notepad_type_podquest_4:InitControls()
+	self:SetWndRect			(Frect():set(0,0,1024,768))
+	local xml, ctrl			= CScriptXmlInit(), CUIWindow()
+	xml:ParseFile			("ui_gui_elements_pa.xml")
+	self.form_notepad_type_one				= xml:InitStatic("form_notepad_type_one",self)
+	xml:InitStatic			("form_notepad_type_one:caption_9",self.form_notepad_type_one)  
+    self:register_element(xml,"text_field") 	
+	self.text_field:TextControl():SetText(game.translate_string("st_notepad_podzemka_one_4_text"))
+    self.button_close = xml:Init3tButton ("form_notepad_type_one:btn_close", self.form_notepad_type_one) 
+    self:Register (self.button_close, "button_close")	
+end
+
+function ui_notepad_type_podquest_4:InitCallBacks()    
+	self:AddCallback("button_close", ui_events.BUTTON_CLICKED, self.OnButton_close_clicked, self)
+end
+
+function ui_notepad_type_podquest_4:OnButton_close_clicked()
+    give_object_to_actor("ui_notepad_podzemka_4")          
+	self:HideDialog()	
+end
+
+function ui_notepad_type_podquest_4:register_element(xml,element_name)
+   self[element_name]=xml:InitStatic("form_notepad_type_one:"..element_name,self.form_notepad_type_one)
+end
+
+-----------------------------------------------
+class "ui_notepad_type_podquest_5" (CUIScriptWnd)
+
+function ui_notepad_type_podquest_5:__init(owner) super()
+	self.owner = owner
+	self:InitControls()
+	self:InitCallBacks()
+end
+
+function ui_notepad_type_podquest_5:__finalize()
+end
+
+function ui_notepad_type_podquest_5:InitControls()
+	self:SetWndRect			(Frect():set(0,0,1024,768))
+	local xml, ctrl			= CScriptXmlInit(), CUIWindow()
+	xml:ParseFile			("ui_gui_elements_pa.xml")
+	self.form_notepad_type_one				= xml:InitStatic("form_notepad_type_one",self)
+	xml:InitStatic			("form_notepad_type_one:caption_9",self.form_notepad_type_one)  
+    self:register_element(xml,"text_field") 	
+	self.text_field:TextControl():SetText(game.translate_string("st_notepad_podzemka_one_5_text"))
+    self.button_close = xml:Init3tButton ("form_notepad_type_one:btn_close", self.form_notepad_type_one) 
+    self:Register (self.button_close, "button_close")	
+end
+
+function ui_notepad_type_podquest_5:InitCallBacks()    
+	self:AddCallback("button_close", ui_events.BUTTON_CLICKED, self.OnButton_close_clicked, self)
+end
+
+function ui_notepad_type_podquest_5:OnButton_close_clicked()
+    give_object_to_actor("ui_notepad_podzemka_5")          
+	self:HideDialog()	
+end
+
+function ui_notepad_type_podquest_5:register_element(xml,element_name)
+   self[element_name]=xml:InitStatic("form_notepad_type_one:"..element_name,self.form_notepad_type_one)
+end
+-------------------- GUI элементы записок в Смерти вопреки  ----------------------
+------------------------- Copyright 2012-2013 Geonezis & XOBAH ---------------------------

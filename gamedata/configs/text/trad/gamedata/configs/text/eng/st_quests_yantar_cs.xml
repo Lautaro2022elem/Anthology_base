@@ -1,0 +1,114 @@
+<?xml version="1.0" encoding="windows-1251" ?>
+<string_table>
+	<string id="yan_actor_destroy_wave1">
+		<text>Zombie spawning point</text>
+	</string>
+	<string id="yan_actor_destroy_wave1_name">
+		<text>Don't let zombies near the stalkers on the roof.</text>
+	</string>
+	<string id="yan_actor_destroy_wave1_text">
+		<text>It is necessary to cover the stalkers on the roof while they are working with the valve installation. The repair team cannot be approached by zombies.</text>
+	</string>
+	<string id="yan_actor_destroy_wave2">
+		<text>Zombie spawning point</text>
+	</string>
+	<string id="yan_actor_destroy_wave2_name">
+		<text>Don't let zombies near the stalkers in the hangar.</text>
+	</string>
+	<string id="yan_actor_destroy_wave2_text">
+		<text>It is necessary to cover the stalkers in the hangar while they are working with the valve installation. The repair team cannot be approached by zombies.</text>
+	</string>
+	<string id="yan_actor_go_base_defence">
+		<text>Protect the scientist base</text>
+	</string>
+	<string id="yan_actor_go_base_defence_name">
+		<text>Protect the scientist base</text>
+	</string>
+	<string id="yan_actor_go_base_defence_text">
+		<text>Protect the scientist base.</text>
+	</string>
+	<string id="yan_actor_go_base_science">
+		<text>During a zombie attack, the bunker doors of the scientists are locked. It is necessary to repel the zombie attack to enter the bunker with the scientists.</text>
+	</string>
+	<string id="yan_actor_go_base_science_name">
+		<text>Talk to Sakharov</text>
+	</string>
+	<string id="yan_actor_go_base_science_text">
+		<text>It is necessary to reach the base and talk to Professor Sakharov.</text>
+	</string>
+	<string id="yan_actor_go_to_stalker">
+		<text>Clarify the position</text>
+	</string>
+	<string id="yan_actor_go_to_stalker_name">
+		<text>Clarify the position with the group leader</text>
+	</string>
+	<string id="yan_actor_go_to_stalker_text">
+		<text>Clarify the position with the group leader.</text>
+	</string>
+	<string id="yan_main_quest_line">
+		<text>Don't let the repair team die</text>
+	</string>
+	<string id="yan_main_quest_line_name">
+		<text>Hold the position!</text>
+	</string>
+	<string id="yan_main_quest_line_text">
+		<text>Hold the position!</text>
+	</string>
+	<string id="yan_otnesti_doc_saharavy">
+		<text>Deliver the documents to Sakharov</text>
+	</string>
+	<string id="yan_otnesti_doc_saharavy_name">
+		<text>Deliver the documents to Sakharov</text>
+	</string>
+	<string id="yan_otnesti_doc_saharavy_text">
+		<text>Deliver the documents to Sakharov. They might explain the reason for such strong psi-emissions on Yantar.</text>
+	</string>
+	<string id="yan_proriv_k_ystanovke">
+		<text>Break through to the installation</text>
+	</string>
+	<string id="yan_proriv_k_ystanovke_name">
+		<text>Break through to the complex's territory</text>
+	</string>
+	<string id="yan_proriv_k_ystanovke_text">
+		<text>The surroundings of the complex are teeming with zombies. Together with the Lefties group, you need to break through to its territory. You must hurry: the level of psi radiation can reach critical levels at any moment.</text>
+	</string>
+	<string id="yan_quest_doc">
+		<text>Find documents</text>
+	</string>
+	<string id="yan_quest_doc_name">
+		<text>Find a PDA with documents</text>
+	</string>
+	<string id="yan_quest_doc_text">
+		<text>A group of stalkers found important documents on the territory of the complex that could help Saharov determine the cause of the powerful psi radiation on Yantar. The group's signal was lost on leaving the complex. You must find the PDA with the documents.</text>
+	</string>
+	<string id="yan_quest_levsha">
+		<text>Meet with Lefty</text>
+	</string>
+	<string id="yan_quest_levsha_name">
+		<text>Meet with the Lefty squad</text>
+	</string>
+	<string id="yan_quest_levsha_text">
+		<text>A group of stalkers is preparing to break through to the complex's territory during a lull in the level of psi radiation. You must meet with the group's commander - Lefty.</text>
+	</string>
+	<string id="yan_repair_defend">
+		<text>Take position on the roof of the hangar</text>
+	</string>
+	<string id="yan_repair_defend_name">
+		<text>Follow the stalker to the roof of the hangar.</text>
+	</string>
+	<string id="yan_repair_defend_text">
+		<text>Lefty ordered everyone to take their positions. You must follow the stalker to the roof to reach your position.</text>
+	</string>
+	<string id="yan_recover_item_1_name">
+		<text>Bring the "Scarlet Flower"</text>
+	</string>
+	<string id="yan_recover_item_1_text">
+		<text>Help me out, mercenary. There's an artifact in the Zone that we've dubbed the "Scarlet Flower". It's useless to stalkers... but women love it so much that they can only dream of such a souvenir. Anyone would give themselves to you with such a gift. I have a date coming up soon and I really need this "Scarlet Flower". It was seen around here recently. The artifact looks like a magical flower, it glows day and night. Retrieve the artifact for me and I'll reward you!</text>
+	</string>
+	<string id="yan_recover_item_2_name">
+		<text>Return the souvenir grenade</text>
+	</string>
+	<string id="yan_recover_item_2_text">
+		<text>Mercenary, I need one thing... I lost a souvenir, it looks like a grenade.. but it's not a grenade... well, it's a grenade, but a training one... Anyway, return it to me... When I was crawling around the factory, something hit me hard... It messed up my brains and I almost forgot who I was... I only came to my senses here, and the grenade must have been left there. Return it to me...</text>
+	</string>
+</string_table>

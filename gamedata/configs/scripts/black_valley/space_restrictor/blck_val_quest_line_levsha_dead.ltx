@@ -1,0 +1,13 @@
+[logic]
+active = sr_idle@levsha_is_dead
+
+[sr_idle@levsha_is_dead]
+on_info = {=dist_to_actor_le(5) +blck_val_stavrid_meet_levsha_done} sr_idle@actor_talk_levsha_is_dead %=blck_val_actor_replic_about_levsha_death%
+
+[sr_idle@actor_talk_levsha_is_dead]
+on_timer = 9000 | sr_idle@miklucha_is_dead %+blck_val_zver_see_dead_levsha%
+
+[sr_idle@miklucha_is_dead]
+on_info = {=dist_to_actor_le(8) +blck_val_zasada_stavrid_not_help -blck_val_zver_see_dead_miklucha} sr_idle@nil %+blck_val_zver_see_dead_miklucha%
+
+[sr_idle@nil]

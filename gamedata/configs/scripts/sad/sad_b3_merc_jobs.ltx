@@ -1,0 +1,46 @@
+; -------------------------------
+[walker@def]
+gather_items_enabled = false
+help_wounded_enabled = false
+corpse_detection_enabled = false
+meet = no_meet
+
+; ------------------------------------------------------------------------------ squad A
+[logic@merc_1]
+active = walker@1
+suitable = {=target_squad_name(sad_b3_merc_a_squad)} true
+prior = 310
+
+[walker@1]:walker@def
+path_walk = kamper_1_walk
+
+[logic@merc_2]:logic@merc_1
+
+[logic@merc_3]:logic@merc_1
+
+[logic@merc_4]:logic@merc_1
+
+[logic@merc_5]:logic@merc_1
+
+; ------------------------------------------------------------------------------ squad B
+[logic@merc_6]
+active = walker@2
+suitable = {=target_squad_name(sad_b3_merc_b_squad)} true
+prior = 310
+
+[walker@2]:walker@def
+path_walk = killer_d1_walk
+
+[logic@merc_7]:logic@merc_6
+
+[logic@merc_8]:logic@merc_6
+
+[logic@merc_9]:logic@merc_6
+
+; ------------------------------------------------------------------------------  death
+[death]
+;on_info = {=killed_by_actor} %=inc_counter(sad_b3_actor_enemies_kill)%
+
+
+
+

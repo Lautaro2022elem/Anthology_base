@@ -1,0 +1,81 @@
+;=========meet_stalker_korpys========
+[meet@korpys_stalker]
+close_anim 		= nil
+close_victim 	= nil
+far_anim 		= nil
+far_victim 		= nil
+close_distance 	= 0
+far_distance 	= 0
+use = {=actor_enemy} false, {=dist_to_actor_le(3)} true, false
+snd_on_use = {!dist_to_actor_le(3)} nil
+meet_on_talking = false
+;==================================
+
+
+[logic@perevalochnaya_baza_woundet_stalkers_walker_2]
+active = walker@kuvalda_start
+prior = 80
+suitable = {=check_npc_name(pb_kuvalda)} true, false
+
+[walker@kuvalda_start]
+path_walk = kuvalda_start_walk
+path_look = kuvalda_start_look
+on_info = {+perevalochnaya_baza_snake_meet_end} move@kuvalda_to_actor
+on_info2 = {+pro_come_back_prostranstvenniy_puzir} %=release_npc%
+on_info3 = {+controller_spawn_end -controller_quest_dead} remark@psy_back_3
+gather_items_enabled = false
+corpse_detection_enabled = false
+combat_ignore_keep_when_attacked = true 
+combat_ignore_cond = true
+use_camp = true
+meet = meet@pb_kuvalda
+
+[remark@psy_back_3]
+anim = psy_pain
+target = path | pro_smart_terrain_1_1_lutiy_meet_to_actor_look, 0
+on_info = {+controller_quest_dead} walker@kuvalda_start
+meet = no_meet
+combat_ignore_cond = true 
+combat_ignore_keep_when_attacked = true 
+gather_items_enabled = false
+corpse_detection_enabled = false
+invulnerable = true
+
+[move@kuvalda_to_actor]
+invulnerable                 = false
+move_pursue_actor            = true
+move_pursue_look_subject     = actor 
+move_pursue_range            = 5|10
+move_pursue_state_stand      = wait_na
+move_pursue_state_move       = walk_noweap                     
+move_pursue_state_overtake   = run
+on_info = {+perevalochnaya_baza_quest_flash_dead} remark@kuvalda_wait
+meet = no_meet
+gather_items_enabled = false
+corpse_detection_enabled = false
+combat_ignore_keep_when_attacked = false 
+combat_ignore_cond = false
+
+[remark@kuvalda_wait]
+anim = wait_na
+target = story | actor
+on_info = {+pb_markus_founded_start_quest} %=release_npc%
+combat_ignore_cond = true
+combat_ignore_keep_when_attacked = true
+invulnerable = true
+gather_items_enabled = false
+help_wounded_enabled = false
+corpse_detection_enabled = false
+use_camp = false
+meet = meet@pb_kuvalda
+
+[meet@pb_kuvalda]:meet@korpys_stalker
+close_snd_hello = pb_kuvalda_meet
+close_snd_bye 	= pb_kuvalda_meet_bye
+close_snd_distance = 3
+close_victim = actor
+allow_break = false
+meet_dialog = pb_kuvalda_dialog_start
+trade_enable = false
+
+;================================================

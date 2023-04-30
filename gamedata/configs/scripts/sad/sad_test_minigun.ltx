@@ -1,0 +1,21 @@
+[logic]
+active = ph_idle
+
+[ph_idle]
+on_info = {+sad_oleg_fight} ph_idle@wait
+on_info2 = {+sad_minigun_stop} ph_idle@nil
+
+[ph_idle@wait]
+on_info = {=actor_in_zone(sad_sim_14_surge_hide)} ph_minigun
+on_info2 = {+sad_minigun_stop} ph_idle@nil
+
+[ph_minigun]
+auto_fire = true
+target = actor
+fire_range = 50
+fire_time = 5
+shoot_only_on_visible = false
+on_info = {!actor_in_zone(sad_sim_14_surge_hide)} ph_idle@wait
+on_info2 = {+sad_minigun_stop} ph_idle@nil
+
+[ph_idle@nil]

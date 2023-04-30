@@ -1,0 +1,40 @@
+[logic]
+active = sr_idle@start_quest
+
+[sr_idle@start_quest]
+on_info = {+uninvited_guests_gived_task} sr_idle@gonec_pravosudiya %=give_task(uninvited_guests) =scenario_autosave(st_save_jup_b8_searched_heli_4)%
+
+[sr_idle@gonec_pravosudiya]
+on_info = {+gonec_pravosudiya_started} sr_idle@timer_to_message
+
+[sr_idle@timer_to_message]
+on_game_timer = 2000 | sr_idle@check_info_to_teleport %=gonec_pravosudiya_rjaviu_message +gonec_pravosudiya_timer_out%
+
+[sr_idle@check_info_to_teleport]
+on_info = {+gonec_pravosudiya_going_to_kill} sr_idle@teleport_actor %=run_postprocess(fade_in:8512) =disable_ui%
+
+[sr_idle@teleport_actor]
+on_info = {-wiz_gonec_pravosudiya_actor_teleported} sr_idle@give_info_out_dark %=teleport_actor(gonec_pravosudiya_actor_walk:gonec_pravosudiya_actor_look) =forward_game_time(2) =spawn_object(wiz_rjaviu_scene:gonec_pravosudiya_rjaviu_sp) =spawn_object(wiz_kosta_scene:gonec_pravosudiya_kosta_sp) =remove_squad(wiz_kosta_squad_id)%
+
+[sr_idle@give_info_out_dark]
+on_timer = 5000 | sr_idle@stop_dark %+wiz_gonec_pravosudiya_actor_teleported%
+
+[sr_idle@stop_dark]
+on_info = {+wiz_gonec_pravosudiya_actor_teleported} sr_idle@check_dialog_kosta %=stop_postprocess(8512) =enable_ui%
+
+[sr_idle@check_dialog_kosta]
+on_info = {+gonec_pravosudiya_kill_kosta} sr_idle@doing_kill %=rjaviu_molis_tvar%
+
+[sr_idle@doing_kill]
+on_timer = 5000 | sr_idle@teleport_to_base %=run_postprocess(fade_in:8512) =disable_ui +wiz_kosta_die =play_sound(agr_kazn_ak74_shoot)%
+
+[sr_idle@teleport_to_base]
+on_info = {-gonec_pravosudiya_actor_to_base_teleported} sr_idle@out_dark %=teleport_actor(gonec_pravosudiya_actor_base_walk:gonec_pravosudiya_actor_base_look) =forward_game_time(2) =remove_npc(wiz_rjaviu_scene_id)%
+
+[sr_idle@out_dark]
+on_timer = 5000 | sr_idle@stop %+gonec_pravosudiya_actor_to_base_teleported%
+
+[sr_idle@stop]
+on_info = {+gonec_pravosudiya_actor_to_base_teleported} sr_idle@nil %=stop_postprocess(8512) =enable_ui%
+
+[sr_idle@nil]

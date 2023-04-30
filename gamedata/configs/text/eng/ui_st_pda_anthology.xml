@@ -1,0 +1,226 @@
+<?xml version="1.0" encoding="windows-1251" ?>
+<string_table>
+
+	
+	<string id="st_ui_pda_legend_junkman">
+		<text>Junk Dealer</text>
+	</string>
+	
+	<string id="st_esc_a1_spot_name">
+	<text>Barrier</text>
+</string>
+<string id="st_esc_a2_spot_name">
+	<text>Newbie Village</text>
+</string>
+<string id="st_esc_a3_spot_name">
+	<text>Checkpoint</text>
+</string>
+<string id="st_esc_a4_spot_name">
+	<text>Bandit Camp</text>
+</string>
+<string id="st_esc_a5_spot_name">
+	<text>"ATP" Stalker Base</text>
+</string>
+<string id="st_esc_a6_spot_name">
+	<text>Elevator</text>
+</string>
+<string id="st_esc_a7_spot_name">
+	<text>Anomaly "Bakery"</text>
+</string>
+<string id="st_esc_a8_spot_name">
+	<text>Anomaly "Dull Pit"</text>
+</string>
+<string id="st_esc_a9_spot_name">
+	<text>Anomaly "Acidic Pool"</text>
+</string>
+
+
+<string id="bar_a1_spot_name">
+	<text>Hermit's Shack</text>
+</string>
+<string id="bar_a2_spot_name">
+	<text>"Misty Forest"</text>
+</string>
+<string id="bar_a3_spot_name">
+	<text>Abandoned Hangar</text>
+</string>
+<string id="bar_a4_spot_name">
+	<text>Duty Southern Checkpoint</text>
+</string>
+<string id="bar_a5_spot_name">
+	<text>Clean Sky Recruitment Camp</text>
+</string>
+<string id="bar_a6_spot_name">
+	<text>Duty Main Base</text>
+</string>
+<string id="bar_a7_spot_name">
+	<text>"Bar 100 Rads"</text>
+</string>
+<string id="bar_a8_spot_name">
+	<text>Duty Northern Checkpoint</text>
+</string>
+<string id="bar_a9_spot_name">
+	<text>"Arena"</text>
+</string>
+
+<string id="st_search_treasure_sidor_habar_open">
+		<text>Open safe</text>
+	</string>
+	<string id="st_search_treasure_sidor_habar_closed">
+		<text>Closed. Key is needed</text>
+	</string>
+	
+	<string id="esc_locked_chasovshik_door">
+	<text>Knock...</text>
+</string>
+<string id="esc_locked_chasovshik_door_1">
+	<text>CLOSED (key needed)</text>
+</string>
+<string id="esc_locked_sidor_door">
+	<text>CLOSED (for inventory)</text>
+</string>
+
+<string id="tip_door_locked_reshotka">
+	<text>The door is locked from the other side</text>
+</string>
+<string id="bar_ip_door_locked_lab">
+	<text>The door is locked</text>
+</string>
+
+<!--FantomICW 23.03.14-->
+<string id="city_a1_spot_name">
+	<text>Anomaly "Hopelessness"</text>
+</string>
+<string id="city_a2_spot_name">
+	<text>Lenin Square</text>
+</string>
+<string id="city_a3_spot_name">
+	<text>CPSU Building</text>
+</string>
+<string id="city_a4_spot_name">
+	<text>House of Culture</text>
+</string>
+<string id="city_a5_spot_name">
+	<text>Gagarin Park</text>
+</string>
+
+<string id="st_search_bomba_used">
+	<text>Plant explosive</text>
+</string>
+<string id="ui_gui_bomba_caption">
+	<text>Plant explosive</text>
+</string>
+<string id="st_menu_rukzak_use">
+	<text>Install</text>
+</string>
+<string id="st_menu_rukzak_close">
+	<text>Close</text>
+</string>
+
+		
+	<!--Topi-->
+	<string id="st_topi_a1_spot_name">
+	<text>Stalkers' base</text>
+</string>
+<string id="st_topi_a2_spot_name">
+	<text>Old village</text>
+</string>
+<string id="st_topi_a3_spot_name">
+	<text>Abandoned farm</text>
+</string>
+<string id="st_topi_a4_spot_name">
+	<text>Village</text>
+</string>
+<string id="st_topi_a5_spot_name">
+	<text>Observation point</text>
+</string>
+<string id="st_topi_a6_spot_name">
+	<text>Chemical anomaly</text>
+</string>
+<string id="st_topi_a7_spot_name">
+	<text>Central checkpoint</text>
+</string>
+<string id="st_topi_a8_spot_name">
+	<text>Thermal anomaly</text>
+</string>
+<string id="st_topi_a9_spot_name">
+	<text>Caves</text>
+</string>
+<string id="st_topi_a10_spot_name">
+	<text>North checkpoint</text>
+</string>
+<string id="st_topi_a11_spot_name">
+	<text>South checkpoint</text>
+</string>
+
+<string id="st_pb_a1_name">
+	<text>Old warehouse</text>
+</string>
+<string id="st_pb_a2_name">
+	<text>Hill camp</text>
+</string>
+<string id="st_pb_a3_name">
+	<text>Barrier</text>
+</string>
+<string id="st_pb_a4_name">
+	<text>Dispatch</text>
+</string>
+<string id="st_pb_a5_name">
+	<text>Reserve</text>
+</string>
+<string id="st_pb_a6_name">
+	<text>Food warehouse</text>
+</string>
+<string id="st_pb_a7_name">
+	<text>Abandoned shelter</text>
+</string>
+<string id="st_esc_a9_spot_name">
+	<text>Anomaly "Burning Land"</text>
+</string>
+<string id="st_blck_val_a1_spot_name">
+	<text>North village</text>
+</string>
+<string id="st_blck_val_a2_spot_name">
+	<text>Anomaly "Inferno Circle"</text>
+</string>
+<string id="st_blck_val_a3_spot_name">
+	<text>Construction site</text>
+</string>
+<string id="st_blck_val_a4_spot_name">
+	<text>Sewage</text>
+</string>
+<string id="st_blck_val_a5_spot_name">
+	<text>Anomalous grove</text>
+</string>
+<string id="st_blck_val_a6_spot_name">
+	<text>Metallurgical plant</text>
+</string>
+<string id="st_blck_val_a7_spot_name">
+	<text>Pansky village</text>
+</string>
+<string id="st_perehod_in_valley_to_labx6">
+	<text>To laboratory X7</text>
+</string>
+<string id="pb_outro_text_1">
+	<text>The end.</text>
+</string>
+	<string id="ui_st_sr_level_changer_closed">
+		<text>I'm not leaving the location right now. My group is still here, and I haven't completed the contract with Sidorovich yet.</text>
+	</string>
+	<string id="ui_st_sr_level_changer_labx7">
+		<text>Descend to the laboratory?</text>
+	</string>
+	<string id="ui_st_sr_level_changer_closed_labx7">
+		<text>You can't get here in the build, and it's too early for you to come here yet.</text>
+	</string>
+	<string id="ui_st_sr_level_changer_station">
+		<text>Go up the stairs?</text>
+	</string>
+	<string id="ui_st_sr_level_changer_station_closed">
+		<text>Before leaving, I need to block the passage so that Stronghead doesn't follow me.</text>
+	</string>
+	<string id="ui_st_sr_level_changer_explosive">
+		<text>There's no turning back. I blew up the passage.</text>
+	</string>
+
+</string_table>

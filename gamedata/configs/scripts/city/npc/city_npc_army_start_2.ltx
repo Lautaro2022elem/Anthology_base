@@ -1,0 +1,39 @@
+[logic]
+active = walker
+
+
+[walker]
+path_walk = city_npc_army_start_2_spawn
+path_look = city_npc_army_start_2_look
+def_state_standing = threat
+meet = no_meet
+invulnerable = true
+gather_items_enabled = false
+corpse_detection_enabled = false
+combat_ignore_keep_when_attacked = true 
+combat_ignore_cond = true
+on_info = {=see_actor} remark
+on_info2 = {+city_army_start_remove} %=release_npc%
+show_spot = {=dist_to_actor_le(3)} true, false
+
+[remark]
+anim = threat
+target = story | actor
+meet = no_meet
+invulnerable = true
+gather_items_enabled = false
+corpse_detection_enabled = false
+combat_ignore_keep_when_attacked = true 
+combat_ignore_cond = true
+on_info = {+city_army_start_gg_kill} remark@enemy %=actor_enemy%
+on_info2 = {+city_army_start_remove} %=release_npc%
+show_spot = {=dist_to_actor_le(3)} true, false
+
+
+[remark@enemy]
+anim = threat_fire
+target = story | actor
+combat_ignore_cond = true 
+combat_ignore_keep_when_attacked = true 
+invulnerable = true
+meet = no_meet

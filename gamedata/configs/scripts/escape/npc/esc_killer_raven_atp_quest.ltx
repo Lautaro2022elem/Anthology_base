@@ -1,0 +1,40 @@
+;=========meet_stalker_korpys========
+[meet@korpys_stalker]
+close_anim 		= nil
+close_victim 	= nil
+far_anim 		= nil
+far_victim 		= nil
+close_distance 	= 0
+far_distance 	= 0
+use = {=actor_enemy} false, {=dist_to_actor_le(3)} true, false
+snd_on_use = {!dist_to_actor_le(3)} nil
+meet_on_talking = false
+;==================================
+
+[logic]
+active = walker@raven_atp_stop
+suitable = {=check_npc_name(esc_killer_raven_sniper)} true, false
+on_death = death
+level_spot = quest_npc
+prior = 250
+
+[walker@raven_atp_stop]
+path_walk = esc_raven_atp_final_walk
+path_look = esc_raven_atp_final_look
+on_info = {+esc_actor_hit_leader_group} %=release_npc%
+combat_ignore_cond = true
+combat_ignore_keep_when_attacked = true
+invulnerable = true
+gather_items_enabled = false
+help_wounded_enabled = false
+corpse_detection_enabled = false
+meet = meet@esc_quest_leader_kill_final
+
+[meet@esc_quest_leader_kill_final]:meet@korpys_stalker
+close_victim = actor
+allow_break = false
+meet_dialog = esc_killer_raven_meet_to_leader_in_td
+trade_enable = false
+
+[death]
+on_info = %+esc_raven_dead%

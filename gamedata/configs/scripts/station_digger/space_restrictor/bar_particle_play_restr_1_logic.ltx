@@ -1,0 +1,14 @@
+[logic]
+active = sr_idle@wait
+
+[sr_idle@wait]
+on_info = {+bar_stronglav_cycle_start} sr_particle@idle_1
+
+[sr_particle@idle_1]
+name = explosions\explosion_dym
+path = bar_stronglav_end_spawn_1
+mode = 2
+looped = true
+on_info = {+bar_end_delete_particle_1} sr_idle@play_restr_nil
+
+[sr_idle@play_restr_nil]

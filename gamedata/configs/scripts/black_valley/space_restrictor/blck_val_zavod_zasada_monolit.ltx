@@ -1,0 +1,13 @@
+[logic]
+active = sr_idle@proloque_start
+
+[sr_idle@proloque_start]
+on_info = {+blck_val_zavod_zasada_monolit_start} sr_idle@proloque_start_2 %=CutSceneOnTorch%
+
+[sr_idle@proloque_start_2]
+on_timer = 10 | sr_idle@proloque_start_3 %=blck_val_freedom_zavod_sms_1%
+
+[sr_idle@proloque_start_3]
+on_timer = 4000 | sr_idle@nil %=enable_ui +blck_val_zavod_zasada_sms_sends%
+
+[sr_idle@nil]

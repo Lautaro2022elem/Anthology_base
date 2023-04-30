@@ -1,0 +1,37 @@
+[logic]  
+active = remark@ranen
+
+[remark@ranen]  
+no_move = true  
+anim = wounded_heavy
+target = story | actor
+meet = meet
+combat_ignore_cond = true
+combat_ignore_keep_when_attacked = true
+gather_items_enabled = true
+corpse_detection_enabled = false
+invulnerable = true
+wounded = wounded@ranen
+help_wounded_enabled = false
+
+[wounded@ranen]
+hp_state = 101|wounded_heavy@nil
+hp_state_see = 101|wounded_heavy@nil
+hp_victim = 101|actor
+hp_cover = 101|false
+hp_fight = 101|false
+autoheal = false
+help_start_dialog = dl_first_dialog_wounded_buriy
+not_for_help = true
+
+[meet]  
+abuse           = false
+close_anim 		= nil
+far_anim 		= nil
+far_victim 		= nil
+close_distance  = 0
+far_distance 	= 0
+close_victim 	= nil
+use 			= true
+allow_break 	= false
+trade_enable	= false

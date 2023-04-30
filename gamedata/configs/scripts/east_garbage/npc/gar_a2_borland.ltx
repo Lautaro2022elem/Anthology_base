@@ -1,0 +1,115 @@
+[logic]
+active = walker
+post_combat_time = 0, 0
+
+[walker]
+path_walk = gar_a2_main_quest_borland_prisoner_walk
+path_look = gar_a2_main_quest_borland_prisoner_look
+on_info = {=dist_to_actor_le(2)} remark@dialog_actor
+on_info2 = {+gar_mod_npcs_spawner} %=actor_friend%
+gather_items_enabled = false
+corpse_detection_enabled = false
+combat_ignore_keep_when_attacked = true 
+combat_ignore_cond = true
+invulnerable = true
+meet = meet@dialog
+
+
+
+[remark@dialog_actor]
+anim = wait
+target = story | actor
+meet = meet@dialog
+invulnerable = true
+gather_items_enabled = false
+corpse_detection_enabled = false
+combat_ignore_keep_when_attacked = true 
+combat_ignore_cond = true
+on_info = {+gar_a2_borland_talking_1} walker@wait
+
+
+[walker@wait]
+path_walk = gar_a2_main_quest_borland_wait_walk
+path_look = gar_a2_main_quest_borland_wait_look
+anim = wounded
+meet = no_meet
+on_info = {+gar_a2_sp_borland_spasenie} walker@guard_after_battle
+invulnerable = true
+gather_items_enabled = false
+corpse_detection_enabled = false
+combat_ignore_keep_when_attacked = true 
+combat_ignore_cond = true
+
+
+[walker@guard_after_battle]
+path_walk = gar_a2_main_quest_borland_wait_walk
+path_look = gar_a2_main_quest_borland_wait_look
+anim = wounded
+invulnerable           = true
+wounded                = wounded@freedom
+meet                   = meet
+on_info                = {+gar_a2_borland_quest_dialog_info} walker@go
+on_info2                = {+gar_a2_second_timer_end} nil %=kill_npc%
+
+
+[remark@waiting]
+anim = sit
+target = story | actor
+meet = no_meet
+invulnerable = true
+gather_items_enabled = false
+corpse_detection_enabled = false
+combat_ignore_keep_when_attacked = true 
+combat_ignore_cond = true
+on_game_timer = 100 | walker@go
+
+
+[walker@go]
+path_walk = gar_a2_main_quest_borland_go_walk
+def_state_moving = run
+on_signal = gar_a2_main_quest_borland_nameste| {-gar_a2_main_quest_borland_nameste} walker@wait_bar %+gar_a2_main_quest_borland_nameste%
+meet = no_meet
+invulnerable = true
+gather_items_enabled = false
+corpse_detection_enabled = false
+combat_ignore_keep_when_attacked = true 
+combat_ignore_cond = true
+
+
+[walker@wait_bar]
+path_walk = gar_a2_main_quest_borland_wait_bar_walk
+path_look = gar_a2_main_quest_borland_wait_bar_look
+on_info2 = {+gar_a2_main_quest_borland_release} %=release_npc%
+meet = no_meet
+invulnerable = true
+gather_items_enabled = false
+corpse_detection_enabled = false
+combat_ignore_keep_when_attacked = true 
+combat_ignore_cond = true
+
+
+[wounded@freedom]
+hp_state               = 100|wounded_heavy@help_heavy
+hp_state_see           = 100|wounded_heavy@help_heavy
+hp_victim              = 100|nil
+hp_cover               = 100|false
+hp_fight               = 100|false
+autoheal               = false
+not_for_help           = true
+enable_talk            = true
+on_info                = {+gar_a2_second_timer_end} %=kill_npc%
+
+
+[meet@dialog]
+abuse           = false
+close_anim 		= nil
+far_anim 		= nil
+far_victim 		= nil
+close_distance  = 0
+far_distance 	= 0
+close_victim = actor
+use = {=dist_to_actor_le(2) -gar_a2_borland_talking_1} self, true
+allow_break = false
+meet_dialog = gar_a2_borland_start_dialog
+trade_enable = false
+

@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="windows-1251" ?>
+<string_table>
+
+	<string id="esc_first_dop_action_name">
+		<text>Дополнительное действие: \nПоговорить с Грифом</text>
+	</string>
+
+	<string id="blck_val_stavrid_dop_action_name">
+		<text>Дополнительное действие: \nРассказать Ставриду о планах бандитов</text>
+	</string>
+
+	<string id="blck_val_vihr_dop_action_name">
+		<text>Дополнительное действие: \nСпроосить о СР-3 "Вихрь"</text>
+	</string>
+
+	<string id="pro_snake_dop_action_name">
+		<text>Дополнительное действие: \nПоговорить со Змеем</text>
+	</string>
+
+	<string id="pro_soldier_dop_action_name">
+		<text>Дополнительное действие: \nПоговорить с военным</text>
+	</string>
+
+	<string id="pro_inventory_zone_dop_action_name">
+		<text>Дополнительное действие: \nНайти своё снаряжение в указанном районе</text>
+	</string>
+	<string id="pro_actor_ready_to_give_medicament_name">
+		<text>Дополнительное действие: \nОтдать вакцину</text>
+	</string>
+</string_table>

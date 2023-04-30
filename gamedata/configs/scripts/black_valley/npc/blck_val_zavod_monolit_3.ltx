@@ -1,0 +1,83 @@
+---------------Монолит на заводе-----------------
+[logic@blck_val_monolith_advance_1]
+suitable = {=check_npc_name(sim_default_monolith_1)} true
+prior = 200
+active = remark@blck_val_monolith_advance_1
+
+[remark@blck_val_monolith_advance_1]
+anim = wait
+target = story | blck_val_zavod_freedom_1
+on_info = {+blck_val_zasada_stavrid_not_help} %=kill_npc%
+danger = danger
+invulnerable = {+blck_val_zavod_zasada_monolit_time} false, true
+combat_ignore_cond = {=check_enemy_name(actor)} true, {+blck_val_zavod_zasada_monolit_time} false, true
+
+
+[logic@blck_val_monolith_advance_2]
+suitable = {=check_npc_name(sim_default_monolith_0)} true
+prior = 200
+active = remark@blck_val_monolith_advance_2
+
+[remark@blck_val_monolith_advance_2]
+anim = wait
+target = story | blck_val_zavod_freedom_1
+;on_info = %=kill_npc%
+danger = danger
+invulnerable = {+blck_val_zavod_zasada_monolit_time} false, true
+combat_ignore_cond = {=check_enemy_name(actor)} true, {+blck_val_zavod_zasada_monolit_time} false, true
+
+
+[logic@blck_val_monolith_advance_3]
+suitable = {=check_npc_name(sim_default_monolith_2)} true
+prior = 200
+active = remark@blck_val_monolith_advance_3
+
+[remark@blck_val_monolith_advance_3]
+anim = wait
+target = story | blck_val_zavod_freedom_1
+on_info = {+blck_val_zasada_stavrid_not_help} %=release_npc%
+danger = danger
+invulnerable = {+blck_val_zavod_zasada_monolit_time} false, true
+combat_ignore_cond = {=check_enemy_name(actor)} true, {+blck_val_zavod_zasada_monolit_time} false, true
+
+
+[logic@blck_val_monolith_advance_4]
+suitable = {=check_npc_name(sim_default_monolith_1)} true
+prior = 200
+active = remark@blck_val_monolith_advance_4
+
+[remark@blck_val_monolith_advance_4]
+anim = wait
+target = story | blck_val_zavod_freedom_1
+on_info = {+blck_val_zasada_stavrid_not_help} %=release_npc%
+danger = danger
+invulnerable = {+blck_val_zavod_zasada_monolit_time} false, true
+combat_ignore_cond = {=check_enemy_name(actor)} true, {+blck_val_zavod_zasada_monolit_time} false, true
+
+
+[logic@blck_val_monolith_advance_5]
+suitable = {=check_npc_name(sim_default_monolith_0)} true
+prior = 200
+active = remark@blck_val_monolith_advance_5
+
+[remark@blck_val_monolith_advance_5]
+anim = wait
+target = story | blck_val_zavod_freedom_1
+on_info = {+blck_val_zasada_stavrid_not_help} %=release_npc%
+danger = danger
+invulnerable = {+blck_val_zavod_zasada_monolit_time} false, true
+combat_ignore_cond = {=check_enemy_name(actor)} true, {+blck_val_zavod_zasada_monolit_time} false, true
+
+
+[logic@blck_val_monolith_advance_6]
+suitable = {=check_npc_name(sim_default_monolith_2)} true
+prior = 200
+active = remark@blck_val_monolith_advance_6
+
+[remark@blck_val_monolith_advance_6]
+anim = wait
+target = story | blck_val_zavod_freedom_1
+on_info = {+blck_val_zasada_stavrid_not_help} %=release_npc%
+danger = danger
+invulnerable = {+blck_val_zavod_zasada_monolit_time} false, true
+combat_ignore_cond = {=check_enemy_name(actor)} true, {+blck_val_zavod_zasada_monolit_time} false, true

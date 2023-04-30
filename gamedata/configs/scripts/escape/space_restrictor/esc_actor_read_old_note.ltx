@@ -1,0 +1,14 @@
+[logic]
+active = sr_idle@esc_actor_read_old_note
+
+[sr_idle@esc_actor_read_old_note]
+on_info = {+esc_old_notebook_use_done -esc_actor_go_to_cherep_notes} sr_idle@esc_actor_read_old_note_1
+
+[sr_idle@esc_actor_read_old_note_1]
+on_timer = 12000 | sr_idle@esc_actor_replic_about_tunel_angry %+esc_actor_go_to_cherep_notes%
+
+[sr_idle@esc_actor_replic_about_tunel_angry]
+on_info = {+esc_cherep_bandit_dead -lisiy_gone} sr_idle@nil %=esc_actor_replic_about_tunel_angry%
+on_info2 = {+lisiy_gone -esc_cherep_bandit_dead} sr_idle@nil %=esc_actor_replic_about_tunel_angry%
+
+[sr_idle@nil]

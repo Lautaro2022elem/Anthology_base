@@ -1,0 +1,20 @@
+[logic]
+active = nil; ph_idle@wait
+
+[ph_idle@wait]
+on_info = {+sad_b3_explode_this_shit} ph_idle@explosion %=spawn_object(pri_a25_enter_door_explosive_grenade:sad_b3_explosive_grenade_place)%
+on_info2 = {+sad_b3_killers_awake} ph_idle@wait_activation
+
+[ph_idle@explosion]
+on_info = {=object_exist(pri_a25_enter_door_explosive_grenade)} ph_idle@nil  %=destroy_object(story:pri_a25_explosive_charge_id)  =destroy_object(story:sad_b3_kon_door)
+=barrel_explode(pri_a25_enter_door_explosive_grenade)%
+
+[ph_idle@wait_activation]
+tips = pri_a25_blow_up_enter_door
+on_info = {+sad_b3_explode_this_shit} ph_idle@explosion %=spawn_object(pri_a25_enter_door_explosive_grenade:sad_b3_explosive_grenade_place)%
+on_use = ph_idle@spawn_explosive_grenade %=play_sound(pri_a25_blow_up_door_peep)%
+
+[ph_idle@spawn_explosive_grenade]
+on_game_timer = 50 | ph_idle@explosion %=spawn_object(pri_a25_enter_door_explosive_grenade:sad_b3_explosive_grenade_place)%
+
+[ph_idle@nil]

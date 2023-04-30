@@ -1,0 +1,23 @@
+[smart_terrain] 
+squad_id = 1
+max_population = 2
+respawn_params = respawn@rosf_eco_tunnel
+respawn_idle = 172800
+
+[respawn@rosf_eco_tunnel]
+spawn_ecolog
+
+[spawn_ecolog]
+spawn_squads =  ecolog_sim_squad_novice, ecolog_sim_squad_advanced, ecolog_sim_squad_veteran
+spawn_num = 1
+
+
+[exclusive]
+rosf_eco_tunnel_breeder = rostok_factory\rosf_eco_tunnel_breeder_logic.ltx
+rosf_eco_tunnel_scientists = rostok_factory\rosf_eco_tunnel_scientists_logic.ltx
+
+rosf_eco_tunnel_camp_work_1 = rostok_factory\rosf_eco_tunnel_smart_logic.ltx
+rosf_eco_tunnel_camp_work_2 = rostok_factory\rosf_eco_tunnel_smart_logic.ltx
+rosf_eco_tunnel_camp_work_3 = rostok_factory\rosf_eco_tunnel_smart_logic.ltx
+rosf_eco_tunnel_camp_work_4 = rostok_factory\rosf_eco_tunnel_smart_logic.ltx
+rosf_eco_tunnel_camp_work_5 = rostok_factory\rosf_eco_tunnel_smart_logic.ltx

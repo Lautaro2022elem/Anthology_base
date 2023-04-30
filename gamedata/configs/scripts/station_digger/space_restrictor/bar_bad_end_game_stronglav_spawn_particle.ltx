@@ -1,0 +1,40 @@
+[logic]
+active = sr_idle@spawn_stronglav_start
+
+[sr_idle@spawn_stronglav_start]
+on_info = {+bar_stronglav_spawn_1} sr_idle@spawn_stronglav_1
+
+[sr_idle@spawn_stronglav_1]
+on_timer = 500 | sr_idle@spawn_particle_1 %=spawn_object(bar_stronglav_end_game:bar_stronglav_end_spawn_1)%
+
+[sr_idle@spawn_particle_1]
+on_timer = 6000 | sr_light@turn_off_light_1 %+bar_stronglav_cycle_start%
+
+[sr_light@turn_off_light_1]
+on_timer = 4000 | sr_idle@spawn_stronglav_2 %=turn_off_bar_lamps_1 +bar_end_delete_particle_1 +bar_end_delete_stronglav%
+
+[sr_idle@spawn_stronglav_2]
+on_timer = 500 | sr_idle@spawn_particle_2 %-bar_end_delete_stronglav =spawn_object(bar_stronglav_end_game:bar_stronglav_end_spawn_2)%
+
+[sr_idle@spawn_particle_2]
+on_timer = 2000 | sr_light@turn_on_light_2 %+bar_stronglav_cycle_start_1%
+
+[sr_light@turn_on_light_2]
+on_timer = 1000 | sr_light@turn_off_light_2 %=turn_on_bar_lamps_2%
+
+[sr_light@turn_off_light_2]
+on_timer = 3000 | sr_idle@spawn_stronglav_3 %=turn_off_bar_lamps_2 +bar_end_delete_particle_2 +bar_end_delete_stronglav%
+
+[sr_idle@spawn_stronglav_3]
+on_timer = 400 | sr_idle@spawn_particle_3 %-bar_end_delete_stronglav =spawn_object(bar_stronglav_end_game:bar_stronglav_end_spawn_3)%
+
+[sr_idle@spawn_particle_3]
+on_timer = 400 | sr_light@turn_on_light_3
+
+[sr_light@turn_on_light_3]
+on_timer = 2000 | sr_light@turn_off_light_3 %=turn_on_bar_lamps_3%
+
+[sr_light@turn_off_light_3]
+on_timer = 3000 | sr_idle@nil %=turn_off_bar_lamps_3 +bar_end_delete_stronglav%
+
+[sr_idle@nil]

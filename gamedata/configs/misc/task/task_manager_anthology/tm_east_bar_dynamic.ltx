@@ -1,0 +1,107 @@
+;------------------------------------------------
+; Mangun (Duty Mechanic) Find Level 1 Toolkit Task-
+
+[bar_npc_dolg_mechanic_task_1]
+
+icon = ui_inGame2_Instrumenti
+storyline = false
+prior = 15
+precondition = {-bar_npc_dolg_mechanic_upgrade_tier_1} true, false
+
+title = bar_npc_dolg_mechanic_task_1_name
+title_functor = general_fetch_task
+descr = bar_npc_dolg_mechanic_task_1_text
+descr_functor = general_fetch_task
+job_descr = bar_npc_dolg_mechanic_task_1_about
+fetch_descr = bar_npc_dolg_mechanic_task_1_fetch_about
+task_complete_descr = bar_npc_dolg_mechanic_task_1_fetch_finish
+
+stage_complete = 1
+target_functor = general_fetch_task
+status_functor = actor_has_fetch_item
+condlist_0 = {!task_giver_alive(bar_npc_dolg_mechanic_task_1)} fail
+
+fetch_func = %=setup_generic_fetch_task(bar_npc_dolg_mechanic_task_1_fetch:1:itm_basickit)%
+on_complete = %=complete_task_inc_goodwill(50:dolg) =fetch_reward_and_remove(bar_npc_dolg_mechanic_task_1_fetch) =inc_task_stage(bar_npc_dolg_mechanic_task_1) +bar_npc_dolg_mechanic_upgrade_tier_1 =drx_sl_unregister_task_giver(bar_npc_dolg_mechanic_task_1)%
+on_fail = %=fail_task_dec_goodwill(25:dolg) =drx_sl_unregister_task_giver(bar_npc_dolg_mechanic_task_1)%
+
+;------------------------------------------------
+; Mangun (Duty Mechanic) Find Level 2 Toolkit Task-
+
+[bar_npc_dolg_mechanic_task_2]
+
+icon = ui_inGame2_Instrumenti
+storyline = false
+prior = 16
+precondition = {+bar_npc_dolg_mechanic_upgrade_tier_1 -bar_npc_dolg_mechanic_upgrade_tier_2} true, false
+
+title = bar_npc_dolg_mechanic_task_2_name
+title_functor = general_fetch_task
+descr = bar_npc_dolg_mechanic_task_2_text
+descr_functor = general_fetch_task
+job_descr = bar_npc_dolg_mechanic_task_2_about
+fetch_descr = bar_npc_dolg_mechanic_task_2_fetch_about
+task_complete_descr = bar_npc_dolg_mechanic_task_2_fetch_finish
+
+stage_complete = 1
+target_functor = general_fetch_task
+status_functor = actor_has_fetch_item
+condlist_0 = {!task_giver_alive(bar_npc_dolg_mechanic_task_2)} fail
+
+fetch_func = %=setup_generic_fetch_task(bar_npc_dolg_mechanic_task_2_fetch:1:itm_advancedkit)%
+on_complete = %=complete_task_inc_goodwill(50:dolg) =fetch_reward_and_remove(bar_npc_dolg_mechanic_task_2_fetch) =inc_task_stage(bar_npc_dolg_mechanic_task_2) +bar_npc_dolg_mechanic_upgrade_tier_2 =drx_sl_unregister_task_giver(bar_npc_dolg_mechanic_task_2)%
+on_fail = %=fail_task_dec_goodwill(25:dolg) =drx_sl_unregister_task_giver(bar_npc_dolg_mechanic_task_2)%
+
+;------------------------------------------------
+; Mangun (Duty Mechanic) Find Level 3 Toolkit Task-
+
+[bar_npc_dolg_mechanic_task_3]
+
+icon = ui_inGame2_Instrumenti
+storyline = false
+prior = 17
+precondition = {+bar_npc_dolg_mechanic_upgrade_tier_2 -bar_npc_dolg_mechanic_upgrade_tier_3} true, false
+
+title = bar_npc_dolg_mechanic_task_3_name
+title_functor = general_fetch_task
+descr = bar_npc_dolg_mechanic_task_3_text
+descr_functor = general_fetch_task
+job_descr = bar_npc_dolg_mechanic_task_3_about
+fetch_descr = bar_npc_dolg_mechanic_task_3_fetch_about
+task_complete_descr = bar_npc_dolg_mechanic_task_3_fetch_finish
+
+stage_complete = 1
+target_functor = general_fetch_task
+status_functor = actor_has_fetch_item
+condlist_0 = {!task_giver_alive(bar_npc_dolg_mechanic_task_3)} fail
+
+fetch_func = %=setup_generic_fetch_task(bar_npc_dolg_mechanic_task_3_fetch:1:itm_expertkit)%
+on_complete = %=complete_task_inc_goodwill(50:dolg) =fetch_reward_and_remove(bar_npc_dolg_mechanic_task_3_fetch) =inc_task_stage(bar_npc_dolg_mechanic_task_3) +bar_npc_dolg_mechanic_upgrade_tier_3 =drx_sl_unregister_task_giver(bar_npc_dolg_mechanic_task_3)%
+on_fail = %=fail_task_dec_goodwill(25:dolg) =drx_sl_unregister_task_giver(bar_npc_dolg_mechanic_task_3)%
+
+;------------------------------------------------------------------------------------------
+;-- Bar medic (Loner Medic)
+
+[bar_medic_task_1]
+icon = ui_inGame2_D_Sisshik
+prior = 50
+repeat_timeout = 43200
+storyline = false
+precondition = {-bar_medic_drugkit_done} true, false
+
+title = bar_medic_task_1_name
+title_functor = general_fetch_task
+descr = bar_medic_task_1_text
+descr_functor = general_fetch_task
+job_descr = bar_medic_task_1_about
+fetch_descr = bar_medic_task_1_fetch_about
+task_complete_descr = bar_medic_task_1_fetch_finish
+
+stage_complete = 1
+status_functor = actor_has_fetch_item
+target_functor = general_fetch_task
+
+fetch_func = %=setup_generic_fetch_task(bar_medic_task_1_fetch:1:itm_drugkit)%
+on_complete = %=reward_stash(true) +bar_medic_drugkit_done =fetch_reward_and_remove(bar_medic_task_1_fetch:1.5) =complete_task_inc_goodwill(50:stalker) =inc_task_stage(bar_medic_task_1) =pstor_reset(bar_medic_task_1_fetch) =drx_sl_unregister_task_giver(bar_medic_task_1) =drx_sl_reset_stored_task(bar_medic_task_1)%
+on_fail = %=pstor_reset(bar_medic_task_1_fetch) =drx_sl_unregister_task_giver(bar_medic_task_1) =drx_sl_reset_stored_task(bar_medic_task_1)%
+condlist_0 = {!task_giver_alive(bar_medic_task_1)} fail

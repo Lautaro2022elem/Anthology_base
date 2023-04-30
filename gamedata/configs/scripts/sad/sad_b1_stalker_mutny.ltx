@@ -1,0 +1,223 @@
+[walker@default]
+combat_ignore_cond = true
+combat_ignore_keep_when_attacked = true
+invulnerable = true
+gather_items_enabled = false
+help_wounded_enabled = false
+corpse_detection_enabled = false
+out_restr = sad_b1_sr_noweap
+
+; ********************************************************************************************************************* Mutny
+[logic@sad_b1_stalker_mutny]
+suitable = {=check_npc_name(sad_b1_stalker_mutny) -sad_mutny_b1_accuped} true
+active = animpoint@mutny
+can_select_weapon = false
+prior = 200
+
+[animpoint@mutny]:walker@default
+cover_name = sad_b1_animpoint_mutny
+avail_animations = ward_noweap
+use_camp = false
+meet = meet@mutny
+on_info = {!npc_in_zone(sad_b1_sr_light)} %=teleport_npc(sad_b1_mutny_walk)%
+
+[meet@mutny]
+close_snd_hello = nil
+close_snd_bye   = nil
+close_distance  = 0
+close_victim    = actor
+close_anim 		= nil
+far_anim 		= nil
+far_victim 		= nil
+far_distance 	= 0
+far_snd 		= nil
+meet_on_talking = false
+use 			= {=actor_enemy} false, true
+trade_enable 	= false
+allow_break 	= false
+
+; ********************************************************************************************************************* Barman
+[logic@sad_b1_stalker_barman]
+suitable = {=check_npc_name(sad_b1_stalker_barman) -sad_mutny_b1_accuped} true
+trade = items\trade\trade_stalker_basic.ltx
+active = animpoint@barman
+prior = 200
+can_select_weapon = false
+level_spot = trader
+
+[animpoint@barman]:walker@default
+cover_name = sad_b1_animpoint_barman
+avail_animations = animpoint_stay_table 
+use_camp = false
+meet = meet@barman
+;on_info = {!npc_in_zone(sad_b1_sr_light)} %=teleport_npc(sad_b1_barman_walk)%
+on_info = {=obj_on_job(sad_b1:sad_b1_beh_trade_job_1) =job_on_point(sad_b1:sad_b1_beh_trade_job_1:2:3:false)} %=trade_job_give_id(sad_b1:sad_b1_beh_trade_job_1)%
+
+[meet@barman]
+close_snd_hello = nil ; jup_a6_stalker_barmen_greeting
+close_snd_bye 	= nil ; jup_a6_stalker_barmen_farewell
+close_anim 		= nil
+close_victim 	= nil
+far_anim 		= nil
+far_victim 		= nil
+close_distance  = 0
+far_distance 	= 0
+close_snd_distance = 3
+use = {=actor_enemy} false, true
+allow_break = false
+meet_on_talking = false
+
+
+;------------------------------
+;--------- NPC trade ----------
+;------------------------------
+[logic@sad_b1_beh_trade_job_1]
+active = beh@sad_b1_beh_trade_job_1
+suitable = {=npc_has_items_to_sell(sad_b1) !surge_started} true
+prior = 65
+
+[beh@general]
+meet = meet@sad_b1_animpoint_trade_meet
+gather_items_enabled = false
+help_wounded_enabled = false
+corpse_detection_enabled = false
+sound_idle = state
+behavior_state = beh_move
+target = waypoint
+walk_dist = 100
+jog_dist = 220
+wait_anim = guard
+walk_anim = patrol
+jog_anim = patrol
+run_anim = rush
+delay_anim = guard
+
+[beh@sad_b1_beh_trade_job_1]:beh@general ;--pt1 choose - pt2 zat_b14_give_artefact_act - pt3 guard
+pt1 = 10000,choose | pos:320.26165771484,-15.932480812073,331.93588256836 look:317.49044799805,-15.931139945984,331.80853271484
+pt2 = 5000,zat_b14_give_artefact_act | pos:320.26165771484,-15.932480812073,331.93588256836 look:317.49044799805,-15.931139945984,331.80853271484 sig:trade
+pt3 = 10000,guard | pos:320.26165771484,-15.932480812073,331.93588256836 look:317.49044799805,-15.931139945984,331.80853271484
+on_signal = trade | %=trade_job_sell_items%
+path_end = loop
+
+[meet@sad_b1_animpoint_trade_meet]
+close_anim 		= nil
+close_victim 	= nil
+far_anim 		= nil
+far_victim 		= nil
+close_distance 	= 0
+far_distance 	= 0
+use = {=actor_enemy} false, {=dist_to_actor_le(3)} true, false
+snd_on_use = {!dist_to_actor_le(3)} nil
+meet_on_talking = false
+
+; ********************************************************************************************************************* Tech
+[logic@sad_b1_stalker_tech]
+suitable = {=check_npc_name(sad_b1_stalker_tech) -sad_mutny_b1_accuped} true
+active = animpoint@tech
+prior = 200
+can_select_weapon = false
+level_spot = mechanic
+trade = items\trade\trade_generic_mechanic.ltx
+
+[animpoint@tech]:walker@default
+cover_name = sad_b1_animpoint_tech
+avail_animations = animpoint_sit_normal
+use_camp = false
+meet = meet@tech
+on_info = {!npc_in_zone(sad_b1_sr_light)} %=teleport_npc(sad_b1_tech_walk)%
+
+[meet@tech]
+close_snd_hello = nil ;jup_b217_stalker_tech_greeting
+close_snd_bye 	= nil ;jup_b217_stalker_tech_farewell
+close_anim 		= nil
+close_victim 	= nil
+far_anim 		= nil
+far_victim 		= nil
+close_distance  = 0
+far_distance 	= 0
+close_snd_distance = 3
+use = {=actor_enemy} false, true
+allow_break = false
+meet_on_talking = false
+
+; ********************************************************************************************************************* Members
+[logic@sad_b1_mutny_member_1]
+suitable = {=check_npc_name(sad_b1_mutny_member_2) -sad_mutny_b1_accuped} true
+active = animpoint@1
+prior = 200
+
+[animpoint@1]:walker@default
+cover_name = sad_b1_animp_8
+on_game_timer = 3600 | walker@1_1 %-sad_b1_mumer_stage_3 -sad_b1_mumer_stage_2 -sad_b1_mumer_stage_1%
+meet = meet@mem
+
+[animpoint@1b]:walker@default
+cover_name = sad_b1_animpoint_drunk
+on_game_timer = 3600 | walker@1_1 %-sad_b1_mumer_stage_3 -sad_b1_mumer_stage_2 -sad_b1_mumer_stage_1%
+meet = meet@mem
+
+[animpoint@1c]:walker@default
+cover_name = sad_b1_animp_9
+on_game_timer = 3600 | walker@1_1 %-sad_b1_mumer_stage_3 -sad_b1_mumer_stage_2 -sad_b1_mumer_stage_1%
+meet = meet@mem
+
+[walker@1_1]:walker@default
+path_walk = trener_walk1
+path_look = trener_look1
+on_signal = look_at_loh | remark@1_0 %+sad_b1_mumer_stage_1 =play_sound(sad_b1_scene_getup)% ; "вставай"
+meet = no_meet
+
+[remark@1_0]:walker@default
+anim = wait_na
+target = story | sad_b1_mutny_member_1
+meet = no_meet
+on_info = {+sad_b1_mumer_stage_2} remark@1_2 %-sad_b1_mumer_stage_2% ; =play_sound(sad_b1_scene_cmon)
+
+[remark@1_2]:walker@default
+anim = fold_arms
+target = story | sad_b1_mutny_member_1
+meet = no_meet
+on_game_timer = 120 | remark@1_3 %=play_sound(sad_b1_scene_cmon)%
+
+[remark@1_3]:walker@default
+anim = wait_na
+target = story | sad_b1_mutny_member_1
+meet = no_meet
+on_game_timer = 120 | {~33} animpoint@1 %=play_sound(sad_b1_scene_end) +sad_b1_mumer_stage_3%, {~66} animpoint@1b %=play_sound(sad_b1_scene_end) +sad_b1_mumer_stage_3%, animpoint@1c %=play_sound(sad_b1_scene_end) +sad_b1_mumer_stage_3%
+
+; -------------------------------------------------------------------------- 
+[logic@sad_b1_mutny_member_2]
+suitable = {=check_npc_name(sad_b1_mutny_member_1) -sad_mutny_b1_accuped} true
+active = walker@2_1
+prior = 200
+
+[walker@2_1]:walker@default
+path_walk = podval_asser_walk
+path_look = podval_asser_look
+meet = meet@mem
+on_info = {+sad_b1_mumer_stage_1} animpoint@2_go %-sad_b1_mumer_stage_1%
+
+[animpoint@2_go]:walker@default
+cover_name = sad_b1_animp_gimka
+avail_animations = otzimani_2
+on_info = {=animpoint_reached} animpoint@2_anim %+sad_b1_mumer_stage_2 -sad_b1_mumer_stage_1%
+meet = no_meet
+
+[animpoint@2_anim]:walker@default
+cover_name = sad_b1_animp_gimka
+avail_animations = otzimani_2
+on_info = {+sad_b1_mumer_stage_3} walker@2_1 %-sad_b1_mumer_stage_3%
+meet = no_meet
+
+
+[meet@mem]
+close_anim 		= nil
+close_victim 	= nil
+far_anim 		= nil
+far_victim 		= nil
+close_distance  = 0
+far_distance 	= 0
+use 			= false
+snd_on_use 		= meet_use_no_talk_leader
+
+; *********************************************************************************************************************

@@ -1,0 +1,9 @@
+[logic] 
+active = sr_idle@start
+
+[sr_idle@start]
+on_info = {+topi_start +topi_trader_2_quest_talking_1 -topi_trader_2_quest_give} %=give_task(geonezis_topi_trader_quest_2) +topi_trader_2_quest_give%
+on_info2 = {+topi_start +topi_a6_trader_quest_2_tainik_set -topi_a6_trader_quest_2_bandit_create} %=topi_trader_quest_2_create_bandit +topi_a6_trader_quest_2_bandit_create%
+on_info3 = {+topi_start +topi_trader_2_quest_talking_bandit -topi_trader_2_quest_give_effects} sr_idle@nil %=topi_trader_quest_2_effects +topi_trader_2_quest_give_effects%
+
+[sr_idle@nil]

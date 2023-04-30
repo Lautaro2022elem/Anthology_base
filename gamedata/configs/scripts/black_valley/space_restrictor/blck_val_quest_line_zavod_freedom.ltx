@@ -1,0 +1,19 @@
+[logic]
+active = sr_idle@miklucha_freedom_spawn
+
+[sr_idle@miklucha_freedom_spawn]
+on_info = {+blck_val_miklucha_first_quest_give} sr_idle@teleport_actor %=RavenMemmoryStart =run_postprocess(black:2525:true) =spawn_object(blck_val_zavod_miklucha:blck_val_miklucha_freedom_spawn) =spawn_object(blck_val_zavod_freedom_1:blck_val_stalker_freedom_1_spawn) =spawn_object(blck_val_zavod_freedom_2:blck_val_stalker_freedom_2_spawn) =spawn_object(blck_val_zavod_freedom_3:blck_val_stalker_freedom_3_spawn)%
+
+[sr_idle@teleport_actor]
+on_timer = 2000 | sr_idle@stop_postprocess %=teleport_actor(actor_zavod_quest_freedom_walk:actor_zavod_quest_freedom_look)%
+
+[sr_idle@stop_postprocess]
+on_timer = 2000 | sr_idle@enable_ui %=stop_postprocess(2525)%
+
+[sr_idle@enable_ui]
+on_timer = 100 | sr_idle@give_info %=enable_ui%
+
+[sr_idle@give_info]
+on_timer = 100 | sr_idle@nil %+blck_val_zavod_zasada_quest_give%
+
+[sr_idle@nil]

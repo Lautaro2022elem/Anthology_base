@@ -1,0 +1,12 @@
+[logic]
+active = walker
+
+[walker]
+path_walk = esc_npc_freend_shvabroid_2_walk
+path_look = esc_npc_freend_shvabroid_2_look
+on_info = {+esc_npc_shvabroid_actor_enemy} %=actor_enemy%
+on_info2 = {=dist_to_actor_le(10)} %=actor_enemy +esc_npc_shvabroid_actor_enemy%
+def_state_standing = wait
+gather_items_enabled = false
+corpse_detection_enabled = false
+meet = no_meet

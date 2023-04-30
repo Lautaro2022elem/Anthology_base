@@ -1,0 +1,123 @@
+
+[tark]:cat_strong_base
+$spawn = "monsters\tark"
+visual = monsters\tark\tark
+corpse_visual = monsters\tark\tark
+ph_mass = 50
+icon = ui_npc_monster_cat
+cform = skeleton
+class = SM_CAT_S
+ef_creature_type = 2
+ef_weapon_type = 2
+ef_detector_type = 1
+panic_threshold = 0.0
+rank = 6
+species = chimera
+kind = SM_TARK
+sound_idle = monsters\tark\tark_idle_1
+sound_eat = monsters\tark\tark_eat
+sound_aggressive = monsters\tark\tark_attack_1
+sound_attack_hit = monsters\tark\tark_attack_2
+sound_take_damage = monsters\tark\tark_hit
+sound_die = monsters\tark\tark_die_1
+sound_threaten = monsters\tark\tark_threat_2
+sound_landing = monsters\tark\tark_idle_2
+sound_steal = monsters\tark\tark_attack_3
+sound_panic = monsters\tark\tark_threat_1
+sound_growling = monsters\tark\tark_attack_4
+sound_die_in_anomaly = monsters\tark\tark_die_2
+killer_clsids = Z_MINCER,Z_GALANT,ZS_BFUZZ,ZS_MBALD,ZS_GALAN,ZS_MINCE
+idle_sound_delay = 16000
+eat_sound_delay = 3000
+attack_sound_delay = 6000
+sound_distant_idle = monsters\tark\tark_idle_1
+distant_idle_sound_delay = 80000
+distant_idle_sound_range = 100.0
+DamagedThreshold = 0.4
+Velocity_Stand = 0,		3.0,			3.0,		1,		1
+Velocity_WalkFwdNormal = 2.2,		2.5,			1.5,		0.2,	2.0
+Velocity_WalkFwdDamaged = 1.2,		2.14,			2.14,		0.2,	2.0
+Velocity_RunFwdNormal = 8.5,		2.5,			2.5,		0.2,	1
+Velocity_RunFwdDamaged = 4.5,  	3.0,			3.0,		0.2,	1
+Velocity_Drag = 1.5,		2.14,			2.14,		1,		1
+Velocity_Steal = 1.3,		2.14,			2.14,		1,		1
+Accel_Generic = 1.5
+Accel_Calm = 2.5
+Accel_Aggressive = 20.5
+hit_type = wound
+MinAttackDist = 1.4
+MaxAttackDist = 2.0
+as_min_dist = 0.3
+as_step = 0.4
+DayTime_Begin = 3
+DayTime_End = 22
+Min_Satiety = 0.00055
+Max_Satiety = 0.9
+distance_to_corpse = 1.8
+
+[tark_default]:tark
+visual = monsters\tark\tark
+corpse_visual = monsters\tark\tark
+species = chimera
+spec_rank = normal
+community = chimera
+immunities_sect = tark_immunities_default
+attack_params = tark_attack_params_default
+damage = tark_damage
+Health = 500
+
+[tark_immunities_default]
+burn_immunity = 3.0
+strike_immunity = 0.75
+shock_immunity = 3.0
+wound_immunity = 0.022
+radiation_immunity = 0.0
+telepatic_immunity = 0.0
+chemical_burn_immunity = 0.5
+explosion_immunity = 0.5
+fire_wound_immunity = 0.22
+
+[tark_attack_params_default]
+stand_attack_0 = 0.55,		0.7,		    70,         0.0, 0.5, 1.0,		 -1.2, 1.2, -1.2, 1.2,						2.5
+stand_attack_1 = 0.65,		0.75,		    80,       	0.0, 0.5, 1.0,		 -1.2, 1.2, -1.2, 1.2,						3.5
+stand_attack_rat_0 = 0.70,		0.7,			70,			0.0, -0.5,1.0,       -0.6, 0.6, -1.6, 0.6,						2.0
+jump_attack_2 = 0.70,		1.33,			140,		0.0, -0.5,1.0,       -0.6, 0.6, -1.6, 0.6,						2.0
+stand_run_attack_0 = 0.55,		1.2,		    110,         0.0, 0.5, 1.0,		 -1.2, 1.2, -1.2, 1.2,						2.0
+
+[tark_damage]
+default = 0.75, -1, 0.3
+bip01_pelvis = 1.0, -1, 0.4
+bip01_spine = 1.0, -1, 0.4
+bip01_spine1 = 1.0, -1, 0.4
+bip01_neck = 1.0, -1, 1.0
+bip01_head = 0.7, -1, 0.5
+bone01 = 1.9, -1, 0.4
+bone03 = 1.9, -1, 0.4
+bone05 = 1.9, -1, 0.4
+bip01_ponytail1 = 0.3, -1, 0.1
+bip01_ponytail2 = 0.3, -1, 0.1
+
+[tark_smaller]:tark_default
+visual = monsters\tark\tark_90
+corpse_visual = monsters\tark\tark_90
+immunities_sect = tark_immunities_smaller
+attack_params = tark_attack_params_smaller
+Health = 450
+
+[tark_immunities_smaller]
+burn_immunity = 3.0
+strike_immunity = 0.75
+shock_immunity = 3.0
+wound_immunity = 0.025
+radiation_immunity = 0.0
+telepatic_immunity = 0.0
+chemical_burn_immunity = 0.55
+explosion_immunity = 0.55
+fire_wound_immunity = 0.25
+
+[tark_attack_params_smaller]
+stand_attack_0 = 0.505,		0.7,		    65,         0.0, 0.5, 1.0,		 -1.2, 1.2, -1.2, 1.2,						2.5
+stand_attack_1 = 0.605,		0.705,		    70,       	0.0, 0.5, 1.0,		 -1.2, 1.2, -1.2, 1.2,						3.5
+stand_attack_rat_0 = 0.65,		0.65,			65,			0.0, -0.5,1.0,       -0.6, 0.6, -1.6, 0.6,						2.0
+jump_attack_2 = 0.65,		1.233,			120,		0.0, -0.5,1.0,       -0.6, 0.6, -1.6, 0.6,						2.0
+stand_run_attack_0 = 0.505,		1.2,		    100,         0.0, 0.5, 1.0,		 -1.2, 1.2, -1.2, 1.2,						2.0

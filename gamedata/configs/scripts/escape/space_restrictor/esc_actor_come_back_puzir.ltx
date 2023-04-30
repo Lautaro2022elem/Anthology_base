@@ -1,0 +1,10 @@
+[logic]
+active = sr_idle@actor_come_back_puzir
+
+[sr_idle@actor_come_back_puzir]
+on_info = {+esc_dialog_from_mrakobes_final_done} sr_idle@actor_come_back_puzir_1 %=RavenMemmoryStart =esc_out_inv_away_from_final =run_postprocess(black:2525:true)%
+
+[sr_idle@actor_come_back_puzir_1]
+on_timer = 4000 | sr_idle@nil %=teleport_actor(esc_actor_come_back_puzir_walk:esc_actor_come_back_puzir_look)%
+
+[sr_idle@nil]

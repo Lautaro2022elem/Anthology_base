@@ -1,0 +1,40 @@
+[walker@generic]
+gather_items_enabled = false
+help_wounded_enabled = false
+corpse_detection_enabled = false
+wounded = wounded
+
+;----------------------------------------------------------------------------------------------------------
+
+[logic]
+suitable = {=check_npc_name(pri_a17_monolith_preacher)} true
+prior = 200
+active = walker@take_aim
+
+[walker@take_aim]:walker@generic
+path_walk = aes_smart_terrain_monolit_blockpost_mon_preacher_stay
+path_look = aes_smart_terrain_monolit_blockpost_mon_preacher_shoot
+on_game_timer = 60 | animpoint@pray
+combat_ignore_cond = true
+combat_ignore_keep_when_attacked = true
+invulnerable = true 
+meet = no_meet
+
+[animpoint@pray]:walker@generic
+cover_name = aes_smart_terrain_monolit_blockpost_sc_mon_preacher
+avail_animations = pri_a17_pray_in
+reach_movement = patrol
+on_game_timer = 60 | {-pri_a17_monolith_preacher_done} %=play_sound(pri_a17_monolith_preacher) +pri_a17_monolith_preacher_done% 
+on_game_timer2 = 180| camper@angry_preacher
+meet = no_meet
+combat_ignore_cond = true
+combat_ignore_keep_when_attacked = true 
+
+[camper@angry_preacher]:walker@generic
+path_walk = aes_smart_terrain_monolit_blockpost_mon_preacher_stay
+path_look = aes_smart_terrain_monolit_blockpost_mon_preacher_shoot
+radius = 1
+no_retreat = true
+def_state_campering = threat
+def_state_campering_fire = threat_fire
+meet = no_meet

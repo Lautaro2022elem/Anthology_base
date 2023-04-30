@@ -1,0 +1,59 @@
+;trader
+
+[logic@pre_zavod_bandit_trader]
+suitable = {=check_npc_name(trucks_cemetery_bandit_trader)} true
+prior = 200
+active = animpoint@sit
+level_spot = trader
+can_select_weapon = true
+dont_keep_items = true
+trade = misc\trade\trade_bandit.ltx
+
+[animpoint@sit]
+cover_name = pre_zavod_bandit_trader
+avail_animations = animpoint_sit_normal
+invulnerable = {!actor_enemy} true, false
+combat_ignore_cond = {=actor_enemy =check_enemy_name(actor)} false, true
+combat_ignore_keep_when_attacked = true
+gather_items_enabled = false
+help_wounded_enabled = false
+corpse_detection_enabled = false
+use_camp = false
+meet = meet
+
+
+[meet]
+close_anim 		= nil
+close_victim 	= nil
+far_anim 		= nil
+far_victim 		= nil
+close_distance  = 0
+far_distance 	= 0
+close_snd_distance = 3
+abuse           = false
+use = {=actor_enemy} false, true
+allow_break = false
+meet_on_talking = false
+
+;mechanic
+
+[logic@pre_zavod_bandit_mechanic]
+suitable = {=check_npc_name(trucks_cemetery_bandit_mechanic)} true
+prior = 200
+active = animpoint@stay
+level_spot = mechanic
+can_select_weapon = true
+dont_keep_items = true
+trade = misc\trade\trade_mechanic.ltx
+
+[animpoint@stay]
+cover_name = pre_zavod_bandit_mechanic
+avail_animations = animpoint_stay_ohrana
+invulnerable = {!actor_enemy} true, false
+combat_ignore_cond = {=actor_enemy =check_enemy_name(actor)} false, true
+combat_ignore_keep_when_attacked = true
+gather_items_enabled = false
+help_wounded_enabled = false
+corpse_detection_enabled = false
+use_camp = false
+meet = meet

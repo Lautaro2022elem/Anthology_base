@@ -1,0 +1,856 @@
+;---------------------------------------------------------------------------------------;
+;                                 —мерти вопреки[ѕервичные]                                       ;
+;---------------------------------------------------------------------------------------;
+--|>
+[geonezis_topi_b9_main_suget_quest_1]
+icon = ui_inGame2_Mutants_Wave
+prior = 200
+storyline = true
+title = {+topi_f1_dolg_squad_lider_talking} topi_f1_main_suget_quest_1_title4, {+topi_f1_freedom_first_device_set -topi_f1_dolg_squad_lider_talking} topi_f1_main_suget_quest_1_title3, {+topi_f1_freedom_scaut_lider_talking -topi_f1_freedom_first_device_set} topi_f1_main_suget_quest_1_title2, {+topi_f1_freedom_patrol_lider_talking -topi_f1_freedom_scaut_lider_talking} topi_f1_main_suget_quest_1_title1, {-topi_f1_freedom_patrol_lider_talking} topi_f1_main_suget_quest_1_title0
+descr = {+topi_f1_dolg_squad_lider_talking} topi_f1_main_suget_quest_1_text4, {+topi_f1_freedom_first_device_set -topi_f1_dolg_squad_lider_talking} topi_f1_main_suget_quest_1_text3, {+topi_f1_freedom_scaut_lider_talking -topi_f1_freedom_first_device_set} topi_f1_main_suget_quest_1_text2, {+topi_f1_freedom_patrol_lider_talking -topi_f1_freedom_scaut_lider_talking} topi_f1_main_suget_quest_1_text1, {-topi_f1_freedom_patrol_lider_talking} topi_f1_main_suget_quest_1_text0
+target =  {+topi_f1_dolg_squad_lider_talking} topi_b2_dolg_1_first_quest, {+topi_f1_freedom_first_device_set -topi_f1_dolg_squad_lider_talking} topi_b2_dolg_1_first_quest, {+topi_f1_freedom_scaut_lider_talking -topi_f1_freedom_first_device_set} topi_f1_main_suget_quest_restr_id, {+topi_f1_freedom_patrol_lider_talking -topi_f1_freedom_scaut_lider_talking} topi_b2_freedom_lider_first_quest, {-topi_f1_freedom_patrol_lider_talking} topi_b2_freedom_1_first_quest
+condlist_0 = {+topi_f1_dolg_squad_member_all_death} complete
+
+--|>
+[geonezis_topi_a1_main_suget_quest_2]
+icon = ui_inGame2_Fall_Groups
+prior = 100
+storyline = true
+title = {+topi_a1_main_suget_second_quest_come_to_base} topi_a1_main_suget_quest_2_title1, {-topi_a1_main_suget_second_quest_come_to_base} topi_a1_main_suget_quest_2_title0
+descr = {+topi_a1_main_suget_second_quest_come_to_base} topi_a1_main_suget_quest_2_text1, {-topi_a1_main_suget_second_quest_come_to_base} topi_a1_main_suget_quest_2_text0
+target =  {+topi_a1_main_suget_second_quest_come_to_base} nil, {-topi_a1_main_suget_second_quest_come_to_base} topi_a1_main_suget_quest_2_restr_id
+condlist_0 = {+topi_a1_main_suget_second_all_talking} complete
+condlist_1 = {-topi_a1_main_suget_second_1_talking +topi_stalker_base_zam_death} fail
+condlist_2 = {-topi_a1_main_suget_second_2_talking +topi_stalker_base_lider_death} fail
+condlist_3 = {-topi_a1_main_suget_second_3_talking +topi_stalker_base_medic_death} fail
+condlist_4 = {-topi_a1_main_suget_second_4_talking +topi_stalker_base_artefacter_death} fail
+condlist_5 = {-topi_a1_main_suget_second_5_talking +topi_stalker_base_snab_death} fail
+condlist_6 = {-topi_a1_main_suget_second_6_talking +topi_stalker_base_radist_death} fail
+condlist_7 = {-topi_a1_main_suget_second_7_talking +topi_stalker_base_mechanic_death} fail
+condlist_8 = {-topi_a1_main_suget_second_7_talking +topi_stalker_base_trader_death} fail
+
+--|>
+[geonezis_topi_a1_main_suget_quest_3]
+icon = ui_inGame2_Story_of_Osiris
+prior = 200
+storyline = true
+title = {+topi_a3_suget_quest_3_svayznoy_come_to_loka} topi_a1_main_suget_quest_3_title1, {-topi_a3_suget_quest_3_svayznoy_come_to_loka} topi_a1_main_suget_quest_3_title0
+descr = {+topi_a3_suget_quest_3_svayznoy_come_to_loka} topi_a1_main_suget_quest_3_text1, {-topi_a3_suget_quest_3_svayznoy_come_to_loka} topi_a1_main_suget_quest_3_text0
+target =  {+topi_a3_suget_quest_3_svayznoy_come_to_loka} topi_a3_suget_quest_3_svayznoy, {-topi_a3_suget_quest_3_svayznoy_come_to_loka} nil
+condlist_0 = {+topi_a3_suget_quest_3_svayznoy_talking} complete
+condlist_1 = {+topi_var_2_suget_quest_1_talking_2} reversed
+condlist_2 = {+topi_d5_killer_ceh_quest_1_talking} reversed
+
+--|>
+[geonezis_topi_b9_main_suget_quest_4]
+icon = ui_inGame2_Story_of_Avenger
+prior = 200
+storyline = true
+title = {+topi_suget_quest_4_fugas_come_to_point} topi_b9_main_suget_quest_4_title5, {+topi_suget_quest_4_fugas_all_instal -topi_suget_quest_4_fugas_come_to_point} topi_b9_main_suget_quest_4_title4, {+topi_suget_quest_4_fugas_create -topi_suget_quest_4_fugas_all_instal} topi_b9_main_suget_quest_4_title3, {+topi_suget_quest_4_have_fugas_item -topi_suget_quest_4_fugas_create} topi_b9_main_suget_quest_4_title2, {+topi_anubis_suget_quest_4_talking_1 -topi_suget_quest_4_have_fugas_item} topi_b9_main_suget_quest_4_title1, {-topi_anubis_suget_quest_4_talking_1} topi_b9_main_suget_quest_4_title0
+descr =  {+topi_suget_quest_4_fugas_come_to_point} topi_b9_main_suget_quest_4_text5, {+topi_suget_quest_4_fugas_all_instal -topi_suget_quest_4_fugas_come_to_point} topi_b9_main_suget_quest_4_text4, {+topi_suget_quest_4_fugas_create -topi_suget_quest_4_fugas_all_instal} topi_b9_main_suget_quest_4_text3, {+topi_suget_quest_4_have_fugas_item -topi_suget_quest_4_fugas_create} topi_b9_main_suget_quest_4_text2, {+topi_anubis_suget_quest_4_talking_1 -topi_suget_quest_4_have_fugas_item} topi_b9_main_suget_quest_4_text1, {-topi_anubis_suget_quest_4_talking_1} topi_b9_main_suget_quest_4_text0
+target = {+topi_suget_quest_4_fugas_come_to_point} nil, {+topi_suget_quest_4_fugas_all_instal -topi_suget_quest_4_fugas_come_to_point} topi_b9_main_suget_quest_4_restr_2_id, {+topi_suget_quest_4_fugas_create -topi_suget_quest_4_fugas_all_instal} nil, {+topi_suget_quest_4_have_fugas_item -topi_suget_quest_4_fugas_create} nil, {+topi_anubis_suget_quest_4_talking_1 -topi_suget_quest_4_have_fugas_item} topi_b9_main_suget_quest_4_restr_1_id, {-topi_anubis_suget_quest_4_talking_1} topi_anubis_suget_quest_4
+condlist_0 = {+topi_suget_quest_4_fugas_time_out} complete
+
+--|>
+[geonezis_topi_b9_main_suget_quest_4_end_1]
+icon = ui_inGame2_Story_of_Avenger
+prior = 200
+storyline = true
+title = {+topi_b9_suget_quest_4_csky_member_all_var_1_death} topi_b9_main_suget_quest_4_end_1_title1, {-topi_b9_suget_quest_4_csky_member_all_var_1_death} topi_b9_main_suget_quest_4_end_1_title0
+descr = {+topi_b9_suget_quest_4_csky_member_all_var_1_death} topi_b9_main_suget_quest_4_end_1_text1, {-topi_b9_suget_quest_4_csky_member_all_var_1_death} topi_b9_main_suget_quest_4_end_1_text0
+target =  {+topi_b9_suget_quest_4_csky_member_all_var_1_death} topi_anubis_2_suget_quest_4, {-topi_b9_suget_quest_4_csky_member_all_var_1_death} topi_b9_quest_4_fugas_restr_1_id
+condlist_0 = {+topi_anubis_suget_quest_4_talking_2} complete
+
+--|>
+[geonezis_topi_b9_main_suget_quest_4_end_2]
+icon = ui_inGame2_Story_of_Avenger
+prior = 200
+storyline = true
+title = {+topi_b9_suget_quest_4_csky_member_all_var_2_death} topi_b9_main_suget_quest_4_end_2_title1, {-topi_b9_suget_quest_4_csky_member_all_var_2_death} topi_b9_main_suget_quest_4_end_2_title0
+descr = {+topi_b9_suget_quest_4_csky_member_all_var_2_death} topi_b9_main_suget_quest_4_end_2_text1, {-topi_b9_suget_quest_4_csky_member_all_var_2_death} topi_b9_main_suget_quest_4_end_2_text0
+target =  {+topi_b9_suget_quest_4_csky_member_all_var_2_death} topi_anubis_2_suget_quest_4, {-topi_b9_suget_quest_4_csky_member_all_var_2_death} topi_b9_quest_4_fugas_restr_1_id
+condlist_0 = {+topi_anubis_suget_quest_4_talking_2} complete
+
+--|>
+[geonezis_topi_b9_main_suget_quest_4_set_1]
+icon = ui_inGame2_Story_of_Avenger
+prior = 200
+storyline = true
+title = topi_b9_main_suget_quest_4_set_1_title0
+descr = topi_b9_main_suget_quest_4_set_1_text0
+target =  topi_b9_quest_4_fugas_restr_1_id
+condlist_0 = {+topi_suget_quest_4_fugas_1_instal} complete
+
+--|>
+[geonezis_topi_b9_main_suget_quest_4_set_2]
+icon = ui_inGame2_Story_of_Avenger
+prior = 200
+storyline = true
+title = topi_b9_main_suget_quest_4_set_2_title0
+descr = topi_b9_main_suget_quest_4_set_2_text0
+target =  topi_b9_quest_4_fugas_restr_2_id
+condlist_0 = {+topi_suget_quest_4_fugas_2_instal} complete
+
+--|>
+[geonezis_topi_b9_main_suget_quest_4_set_3]
+icon = ui_inGame2_Story_of_Avenger
+prior = 200
+storyline = true
+title = topi_b9_main_suget_quest_4_set_3_title0
+descr = topi_b9_main_suget_quest_4_set_3_text0
+target =  topi_b9_quest_4_fugas_restr_3_id
+condlist_0 = {+topi_suget_quest_4_fugas_3_instal} complete
+
+--|>
+[geonezis_topi_a2_main_suget_quest_5]
+icon = ui_inGame2_Dolg_Diversant
+prior = 200
+storyline = true
+title = {+topi_stalker_fang_talking} topi_a2_main_suget_quest_5_title1, {-topi_stalker_fang_talking} topi_a2_main_suget_quest_5_title0
+descr = {+topi_stalker_fang_talking} topi_a2_main_suget_quest_5_text1, {-topi_stalker_fang_talking} topi_a2_main_suget_quest_5_text0
+target =  {+topi_stalker_fang_talking} topi_a2_main_suget_quest_5_restr_id, {-topi_stalker_fang_talking} topi_stalker_fang
+condlist_0 = {+topi_stalker_fang_quest_come_to_point} reversed
+
+--|>
+[geonezis_topi_var_2_suget_quest_1]
+icon = ui_inGame2_Story_of_Clear_Sky
+prior = 200
+storyline = true
+title = {+topi_var_2_suget_quest_1_talking_2} topi_var_2_suget_quest_1_title2, {+topi_var_2_suget_quest_1_talking_1 -topi_var_2_suget_quest_1_talking_2} topi_var_2_suget_quest_1_title1, {-topi_var_2_suget_quest_1_talking_1} topi_var_2_suget_quest_1_title0
+descr = {+topi_var_2_suget_quest_1_talking_2} topi_var_2_suget_quest_1_text2, {+topi_var_2_suget_quest_1_talking_1 -topi_var_2_suget_quest_1_talking_2} topi_var_2_suget_quest_1_text1, {-topi_var_2_suget_quest_1_talking_1} topi_var_2_suget_quest_1_text0
+target =  {+topi_var_2_suget_quest_1_talking_2} nil, {+topi_var_2_suget_quest_1_talking_1 -topi_var_2_suget_quest_1_talking_2} topi_var_2_suget_quest_1_csky_member_1, {-topi_var_2_suget_quest_1_talking_1} topi_anubis_var_2_suget_quest_1
+condlist_0 = {+topi_var_2_suget_quest_1_csky_member_all_death} complete
+condlist_1 = {+topi_d5_killer_ceh_quest_1_talking} reversed
+
+--|>
+[geonezis_topi_var_2_suget_quest_2]
+icon = ui_inGame2_Na_Pripyat
+prior = 200
+storyline = true
+title = {+topi_var_2_suget_quest_2_talking_2} topi_var_2_suget_quest_2_title2, {+topi_var_2_suget_quest_2_talking_1 -topi_var_2_suget_quest_2_talking_2} topi_var_2_suget_quest_2_title1, {-topi_var_2_suget_quest_2_talking_1} topi_var_2_suget_quest_2_title0
+descr = {+topi_var_2_suget_quest_2_talking_2} topi_var_2_suget_quest_2_text2, {+topi_var_2_suget_quest_2_talking_1 -topi_var_2_suget_quest_2_talking_2} topi_var_2_suget_quest_2_text1, {-topi_var_2_suget_quest_2_talking_1} topi_var_2_suget_quest_2_text0
+target =  {+topi_var_2_suget_quest_2_talking_2} topi_var_2_suget_quest_2_killer_member_1, {+topi_var_2_suget_quest_2_talking_1 -topi_var_2_suget_quest_2_talking_2} topi_stalker_base_zam, {-topi_var_2_suget_quest_2_talking_1} topi_anubis_var_2_suget_quest_2
+condlist_0 = {+topi_var_2_suget_quest_2_killer_member_all_death} complete
+
+--|>
+[geonezis_topi_var_2_suget_quest_3]
+icon = ui_inGame2_Jupiter_Battle
+prior = 200
+storyline = true
+title = {=actor_has_item(topi_anubis_ukazanie_1)} topi_var_2_suget_quest_3_title1, {!actor_has_item(topi_anubis_ukazanie_1)} topi_var_2_suget_quest_3_title0
+descr = {=actor_has_item(topi_anubis_ukazanie_1)} topi_var_2_suget_quest_3_text1, {!actor_has_item(topi_anubis_ukazanie_1)} topi_var_2_suget_quest_3_text0
+target =  {=actor_has_item(topi_anubis_ukazanie_1)} topi_stalker_base_var_2_member_1, {!actor_has_item(topi_anubis_ukazanie_1)} topi_anubis_ukazanie_1_spot
+condlist_0 = {+topi_stalker_base_var_2_member_all_death} complete
+
+--|>
+[geonezis_topi_var_2_suget_quest_final]
+icon = ui_inGame2_Jubileynii_Sturm
+prior = 200
+storyline = true
+title =  {+topi_var_2_suget_quest_final_bomba_time_out} topi_var_2_suget_quest_final_title3, {+topi_var_2_suget_quest_final_bomba_set -topi_var_2_suget_quest_final_bomba_time_out} topi_var_2_suget_quest_final_title2, {+topi_a107_ecolog_member_all_death -topi_var_2_suget_quest_final_bomba_set} topi_var_2_suget_quest_final_title1, {-topi_a107_ecolog_member_all_death} topi_var_2_suget_quest_final_title0
+descr =  {+topi_var_2_suget_quest_final_bomba_time_out} topi_var_2_suget_quest_final_text3, {+topi_var_2_suget_quest_final_bomba_set -topi_var_2_suget_quest_final_bomba_time_out} topi_var_2_suget_quest_final_text2, {+topi_a107_ecolog_member_all_death -topi_var_2_suget_quest_final_bomba_set} topi_var_2_suget_quest_final_text1, {-topi_a107_ecolog_member_all_death} topi_var_2_suget_quest_final_text0
+target = {+topi_var_2_suget_quest_final_bomba_time_out} topi_anubis_var_2_suget_quest_final, {+topi_var_2_suget_quest_final_bomba_set -topi_var_2_suget_quest_final_bomba_time_out} nil, {+topi_a107_ecolog_member_all_death -topi_var_2_suget_quest_final_bomba_set} topi_var_2_suget_quest_final_restr_1_id, {-topi_a107_ecolog_member_all_death} topi_a107_ecolog_member_1
+condlist_0 = {+topi_var_2_suget_quest_final_talking_1} complete
+
+--|>
+[geonezis_topi_var_1_final_quest]
+icon = ui_inGame2_Jubileynii_Sturm
+prior = 200
+storyline = true
+title = {+topi_anubis_var_1_suget_quest_final_death} topi_var_1_final_quest_title7, {+topi_a6_suget_quest_6_anubis_talking_2 -topi_anubis_var_1_suget_quest_final_death} topi_var_1_final_quest_title6, {+topi_ecolog_var_1_quest_final_member_all_death -topi_a6_suget_quest_6_anubis_talking_2} topi_var_1_final_quest_title5, {+topi_var_1_suget_quest_final_csky_member_all_death -topi_ecolog_var_1_quest_final_member_all_death} topi_var_1_final_quest_title4, {+topi_a6_suget_quest_6_radist_talking_1 -topi_var_1_suget_quest_final_csky_member_all_death} topi_var_1_final_quest_title3, {+topi_svyaznoy_var_1_suget_quest_final_death -topi_a6_suget_quest_6_radist_talking_1} topi_var_1_final_quest_title2, {+topi_a6_suget_quest_6_anubis_talking_1 -topi_svyaznoy_var_1_suget_quest_final_death} topi_var_1_final_quest_title1, {-topi_a6_suget_quest_6_anubis_talking_1} topi_var_1_final_quest_title0
+descr = {+topi_anubis_var_1_suget_quest_final_death} topi_var_1_final_quest_text7, {+topi_a6_suget_quest_6_anubis_talking_2 -topi_anubis_var_1_suget_quest_final_death} topi_var_1_final_quest_text6, {+topi_ecolog_var_1_quest_final_member_all_death -topi_a6_suget_quest_6_anubis_talking_2} topi_var_1_final_quest_text5, {+topi_var_1_suget_quest_final_csky_member_all_death -topi_ecolog_var_1_quest_final_member_all_death} topi_var_1_final_quest_text4, {+topi_a6_suget_quest_6_radist_talking_1 -topi_var_1_suget_quest_final_csky_member_all_death} topi_var_1_final_quest_text3, {+topi_svyaznoy_var_1_suget_quest_final_death -topi_a6_suget_quest_6_radist_talking_1} topi_var_1_final_quest_text2, {+topi_a6_suget_quest_6_anubis_talking_1 -topi_svyaznoy_var_1_suget_quest_final_death} topi_var_1_final_quest_text1, {-topi_a6_suget_quest_6_anubis_talking_1} topi_var_1_final_quest_text0
+target = {+topi_anubis_var_1_suget_quest_final_death} topi_stalker_base_lider, {+topi_a6_suget_quest_6_anubis_talking_2 -topi_anubis_var_1_suget_quest_final_death} topi_anubis_var_1_suget_quest_final_2, {+topi_ecolog_var_1_quest_final_member_all_death -topi_a6_suget_quest_6_anubis_talking_2} topi_anubis_var_1_suget_quest_final_2, {+topi_var_1_suget_quest_final_csky_member_all_death -topi_ecolog_var_1_quest_final_member_all_death} topi_ecolog_var_1_quest_final_member_1, {+topi_a6_suget_quest_6_radist_talking_1 -topi_var_1_suget_quest_final_csky_member_all_death} topi_var_1_suget_quest_final_csky_member_1, {+topi_svyaznoy_var_1_suget_quest_final_death -topi_a6_suget_quest_6_radist_talking_1} topi_stalker_base_radist, {+topi_a6_suget_quest_6_anubis_talking_1 -topi_svyaznoy_var_1_suget_quest_final_death} topi_svyaznoy_var_1_suget_quest_final, {-topi_a6_suget_quest_6_anubis_talking_1} topi_anubis_var_1_suget_quest_final_1
+condlist_0 = {+topi_var_1_suget_quest_final_harold_talking} complete
+
+--|>
+[geonezis_topi_b65_harold_main]
+icon = ui_inGame2_BringSharpshooterBino
+prior = 200
+storyline = true
+title = {+topi_b65_stalker_harold_talking_1} topi_b65_harold_main_title1, {-topi_b65_stalker_harold_talking_1} topi_b65_harold_main_title0
+descr = {+topi_b65_stalker_harold_talking_1} topi_b65_harold_main_text1, {-topi_b65_stalker_harold_talking_1} topi_b65_harold_main_text0
+target = {+topi_b65_stalker_harold_talking_1} nil, {-topi_b65_stalker_harold_talking_1} topi_stalker_base_lider
+condlist_0 = {+topi_b65_stalker_hasan_member_1_dead} complete
+condlist_1 = {+topi_b65_fugas_time_out} complete
+condlist_2 = {-topi_b65_stalker_harold_talking_1 +topi_stalker_fang_talking} reversed
+
+--|>
+[geonezis_topi_b65_harold_quest_1]
+icon = ui_inGame2_BringSharpshooterBino
+prior = 200
+storyline = true
+title = {+topi_b65_stalker_hasan_member_all_dead} topi_b65_harold_quest_1_title1, {-topi_b65_stalker_hasan_member_all_dead} topi_b65_harold_quest_1_title0
+descr = {+topi_b65_stalker_hasan_member_all_dead} topi_b65_harold_quest_1_text1, {-topi_b65_stalker_hasan_member_all_dead} topi_b65_harold_quest_1_text0
+target = {+topi_b65_stalker_hasan_member_all_dead} topi_stalker_base_lider, {-topi_b65_stalker_hasan_member_all_dead} topi_b65_stalker_hasan_member_1
+condlist_0 = {+topi_b65_stalker_harold_talking_2} complete
+
+--|>
+[geonezis_topi_b65_harold_quest_2]
+icon = ui_inGame2_BringSharpshooterBino
+prior = 200
+storyline = true
+title = {+topi_b65_fugas_time_out} topi_b65_harold_quest_2_title2, {+topi_b65_fugas_set -topi_b65_fugas_time_out} topi_b65_harold_quest_2_title1, {-topi_b65_fugas_set} topi_b65_harold_quest_2_title0
+descr = {+topi_b65_fugas_time_out} topi_b65_harold_quest_2_text2, {+topi_b65_fugas_set -topi_b65_fugas_time_out} topi_b65_harold_quest_2_text1, {-topi_b65_fugas_set} topi_b65_harold_quest_2_text0
+target = {+topi_b65_fugas_time_out} topi_stalker_base_lider, {+topi_b65_fugas_set -topi_b65_fugas_time_out} nil, {-topi_b65_fugas_set} topi_b65_kill_zam_restr_2_id
+condlist_0 = {+topi_b65_stalker_harold_talking_3} complete
+
+--|>
+[geonezis_topi_a65_hasan_main]
+icon = ui_inGame2_BloodsuckerVaccine
+prior = 200
+storyline = true
+title = {+topi_a65_stalker_hasan_talking_1} topi_a65_hasan_main_title1, {-topi_a65_stalker_hasan_talking_1} topi_a65_hasan_main_title0
+descr = {+topi_a65_stalker_hasan_talking_1} topi_a65_hasan_main_text1, {-topi_a65_stalker_hasan_talking_1} topi_a65_hasan_main_text0
+target = {+topi_a65_stalker_hasan_talking_1} nil, {-topi_a65_stalker_hasan_talking_1} topi_stalker_base_zam
+condlist_0 = {+topi_a65_stalker_harold_member_1_dead} complete
+condlist_1 = {+topi_a65_fugas_time_out} complete
+condlist_2 = {+topi_var_2_suget_quest_2_killer_member_all_death} fail
+condlist_3 = {-topi_a65_stalker_hasan_talking_1 +topi_var_2_suget_quest_2_talking_1} reversed
+
+--|>
+[geonezis_topi_a65_hasan_quest_1]
+icon = ui_inGame2_BloodsuckerVaccine
+prior = 200
+storyline = true
+title = {+topi_a65_stalker_harold_member_all_dead} topi_a65_hasan_quest_1_title1, {-topi_a65_stalker_harold_member_all_dead} topi_a65_hasan_quest_1_title0
+descr = {+topi_a65_stalker_harold_member_all_dead} topi_a65_hasan_quest_1_text1, {-topi_a65_stalker_harold_member_all_dead} topi_a65_hasan_quest_1_text0
+target = {+topi_a65_stalker_harold_member_all_dead} topi_stalker_base_zam, {-topi_a65_stalker_harold_member_all_dead} topi_a65_stalker_harold_member_1
+condlist_0 = {+topi_a65_stalker_hasan_talking_2} complete
+condlist_1 = {+topi_var_2_suget_quest_2_killer_member_all_death} fail
+on_complete = %+topi_var_quest_4_precondition%
+on_fail = %+topi_var_quest_4_precondition%
+
+--|>
+[geonezis_topi_a65_hasan_quest_2]
+icon = ui_inGame2_BloodsuckerVaccine
+prior = 200
+storyline = true
+title = {+topi_a65_fugas_time_out} topi_a65_hasan_quest_2_title2, {+topi_a65_fugas_set -topi_a65_fugas_time_out} topi_a65_hasan_quest_2_title1, {-topi_a65_fugas_set} topi_a65_hasan_quest_2_title0
+descr = {+topi_a65_fugas_time_out} topi_a65_hasan_quest_2_text2, {+topi_a65_fugas_set -topi_a65_fugas_time_out} topi_a65_hasan_quest_2_text1, {-topi_a65_fugas_set} topi_a65_hasan_quest_2_text0
+target = {+topi_a65_fugas_time_out} topi_stalker_base_zam, {+topi_a65_fugas_set -topi_a65_fugas_time_out} nil, {-topi_b65_fugas_set} topi_a65_kill_lider_restr_2_id
+condlist_0 = {+topi_a65_stalker_hasan_talking_3} complete
+condlist_1 = {+topi_var_2_suget_quest_2_killer_member_all_death} fail
+on_complete = %+topi_var_quest_4_precondition%
+on_fail = %+topi_var_quest_4_precondition%
+
+--|>
+[geonezis_topi_d5_third_end_quest_1]
+icon = ui_inGame2_All_Secret_Lab
+prior = 200
+storyline = true
+title = topi_d5_third_end_quest_1_title0
+descr = topi_d5_third_end_quest_1_text0
+target =  topi_d5_killer_ceh_quest_1
+condlist_0 = {+topi_d5_killer_ceh_quest_1_talking} complete
+condlist_1 = {+topi_var_2_suget_quest_1_talking_1} reversed
+
+--|>
+[geonezis_topi_d5_third_end_quest_2]
+icon = ui_inGame2_Part_of_Mistery
+prior = 200
+storyline = true
+title = {+topi_d5_radist_quest_2_talking} topi_d5_third_end_quest_2_title1, {-topi_d5_radist_quest_2_talking} topi_d5_third_end_quest_2_title0
+descr = {+topi_d5_radist_quest_2_talking} topi_d5_third_end_quest_2_text1, {-topi_d5_radist_quest_2_talking} topi_d5_third_end_quest_2_text0
+target =  {+topi_d5_radist_quest_2_talking} topi_d5_csky_svayznoy_quest_2, {-topi_d5_radist_quest_2_talking} topi_stalker_base_radist
+condlist_0 = {+topi_d5_csky_quest_2_talking} complete
+
+--|>
+[geonezis_topi_e7_third_end_quest_4]
+icon = ui_inGame2_For_Freedoms
+prior = 200
+storyline = true
+title = topi_e7_third_end_quest_4_title0
+descr = topi_e7_third_end_quest_4_text0
+target =  topi_e7_csky_quest_4_member_1
+condlist_0 = {+topi_e7_csky_quest_4_member_all_dead} complete
+
+--|>
+[geonezis_topi_m2_third_end_quest_5]
+icon = ui_inGame2_Nano_Exoskelet
+prior = 200
+storyline = true
+title = {+topi_m2_killer_ceh_quest_5_talking} topi_m2_third_end_quest_5_title1, {-topi_m2_killer_ceh_quest_5_talking} topi_m2_third_end_quest_5_title0
+descr = {+topi_m2_killer_ceh_quest_5_talking} topi_m2_third_end_quest_5_text1, {-topi_m2_killer_ceh_quest_5_talking} topi_m2_third_end_quest_5_text0
+target =  {+topi_m2_killer_ceh_quest_5_talking} topi_stalker_base_var_3_member_1, {-topi_m2_killer_ceh_quest_5_talking} topi_m2_killer_ceh_quest_5
+condlist_0 = {+topi_stalker_base_var_3_member_all_death} complete
+
+--|>
+[geonezis_topi_k9_third_end_quest_6]
+icon = ui_inGame2_Pri_Progect_Istochnik
+prior = 200
+storyline = true
+title =  {+topi_k9_freedom_anubis_quest_6_death} topi_k9_third_end_quest_6_title2, {+topi_k9_freedom_anubis_quest_6_talking -topi_k9_freedom_anubis_quest_6_death} topi_k9_third_end_quest_6_title1, {-topi_k9_freedom_anubis_quest_6_talking} topi_k9_third_end_quest_6_title0
+descr = {+topi_k9_freedom_anubis_quest_6_death} topi_k9_third_end_quest_6_text2, {+topi_k9_freedom_anubis_quest_6_talking -topi_k9_freedom_anubis_quest_6_death} topi_k9_third_end_quest_6_text1, {-topi_k9_freedom_anubis_quest_6_talking} topi_k9_third_end_quest_6_text0
+target =  {+topi_k9_freedom_anubis_quest_6_death} topi_k9_killer_ceh_quest_6, {+topi_k9_freedom_anubis_quest_6_talking -topi_k9_freedom_anubis_quest_6_death} nil, {-topi_k9_freedom_anubis_quest_6_talking} topi_k9_freedom_anubis_quest_6
+condlist_0 = {+topi_k9_killer_ceh_quest_6_talking} complete
+
+
+;---------------------------------------------------------------------------------------;
+;                                 —мерти вопреки[¬торичные]                                       ;
+;---------------------------------------------------------------------------------------;
+
+
+--|>
+[geonezis_topi_c7_ceh_quest_1]
+icon = ui_inGame2_BringHeavyMedkits
+prior = 1
+storyline = false
+title = {+topi_c7_ceh_quest_device_1_set} topi_c7_ceh_quest_1_title1, {-topi_c7_ceh_quest_device_1_set} topi_c7_ceh_quest_1_title0
+descr = {+topi_c7_ceh_quest_device_1_set} topi_c7_ceh_quest_1_text1, {-topi_c7_ceh_quest_device_1_set} topi_c7_ceh_quest_1_text0
+target = {+topi_c7_ceh_quest_device_1_set} topi_stalker_base_patrol_7, {-topi_c7_ceh_quest_device_1_set} topi_c7_ceh_quest_1_restr_id
+condlist_0 = {+topi_p1_patrol_ceh_talking_2} complete
+on_complete = %+topi_hunter_quest_first_precondition%
+
+--|>
+[geonezis_topi_c7_ceh_quest_2]
+icon = ui_inGame2_BringHeavyMedkits
+prior = 1
+storyline = false
+title = {+topi_c7_ceh_quest_device_2_set} topi_c7_ceh_quest_2_title1, {-topi_c7_ceh_quest_device_2_set} topi_c7_ceh_quest_2_title0
+descr = {+topi_c7_ceh_quest_device_2_set} topi_c7_ceh_quest_2_text1, {-topi_c7_ceh_quest_device_2_set} topi_c7_ceh_quest_2_text0
+target = {+topi_c7_ceh_quest_device_2_set} topi_stalker_base_patrol_7, {-topi_c7_ceh_quest_device_2_set} topi_c7_ceh_quest_2_restr_id
+condlist_0 = {+topi_p1_patrol_ceh_talking_2} complete
+on_complete = %+topi_hunter_quest_first_precondition%
+
+--|>
+[geonezis_topi_b45_angel_quest]
+icon = ui_inGame2_BringPhotoDevice
+prior = 1
+storyline = false
+title = {+topi_a45_medic_quest_angel_talking_1} topi_b45_angel_quest_title5, {+topi_a45_radist_step_1 -topi_a45_medic_quest_angel_talking_1} topi_b45_angel_quest_title4, {+topi_a45_radist_quest_member_all_dead -topi_a45_radist_step_1} topi_b45_angel_quest_title3, {+topi_a45_radist_quest_point_come -topi_a45_radist_quest_member_all_dead} topi_b45_angel_quest_title2, {+topi_a45_radist_quest_angel_talking_1 -topi_a45_radist_quest_point_come} topi_b45_angel_quest_title1, {-topi_a45_radist_quest_angel_talking_1} topi_b45_angel_quest_title0
+descr = {+topi_a45_medic_quest_angel_talking_1} topi_b45_angel_quest_text5, {+topi_a45_radist_step_1 -topi_a45_medic_quest_angel_talking_1} topi_b45_angel_quest_text4, {+topi_a45_radist_quest_member_all_dead -topi_a45_radist_step_1} topi_b45_angel_quest_text3, {+topi_a45_radist_quest_point_come -topi_a45_radist_quest_member_all_dead} topi_b45_angel_quest_text2, {+topi_a45_radist_quest_angel_talking_1 -topi_a45_radist_quest_point_come} topi_b45_angel_quest_text1, {-topi_a45_radist_quest_angel_talking_1} topi_b45_angel_quest_text0
+target = {+topi_a45_medic_quest_angel_talking_1} topi_stalker_base_radist, {+topi_a45_radist_step_1 -topi_a45_medic_quest_angel_talking_1} topi_stalker_base_medic, {+topi_a45_radist_quest_member_all_dead -topi_a45_radist_step_1} nil, {+topi_a45_radist_quest_point_come -topi_a45_radist_quest_member_all_dead} nil, {+topi_a45_radist_quest_angel_talking_1 -topi_a45_radist_quest_point_come} topi_a45_angel_quest_restr_1_id, {-topi_a45_radist_quest_angel_talking_1} topi_stalker_base_radist
+condlist_0 = {+topi_a45_radist_quest_angel_talking_2} complete
+condlist_1 = {+topi_a45_radist_quest_angel_talking_fail} reversed
+
+--|>
+[geonezis_topi_b19_technic_pnv_quest]
+icon = ui_inGame2_BringArmsCase
+prior = 1
+storyline = false
+title = {+topi_b19_pnv_use_end_3} topi_b19_technic_pnv_quest_title9, {+topi_b19_pnv_use_item_3 -topi_b19_pnv_use_end_3} topi_b19_technic_pnv_quest_title8, {+topi_b19_helper_quest_pnv_talking_3 -topi_b19_pnv_use_item_3} topi_b19_technic_pnv_quest_title7, {+topi_b19_pnv_use_end_2 -topi_b19_helper_quest_pnv_talking_3} topi_b19_technic_pnv_quest_title6, {+topi_b19_pnv_use_item_2 -topi_b19_pnv_use_end_2} topi_b19_technic_pnv_quest_title5, {+topi_b19_helper_quest_pnv_talking_2 -topi_b19_pnv_use_item_2} topi_b19_technic_pnv_quest_title4, {+topi_b19_pnv_use_end_1 -topi_b19_helper_quest_pnv_talking_2} topi_b19_technic_pnv_quest_title3, {+topi_b19_pnv_use_item_1 -topi_b19_pnv_use_end_1} topi_b19_technic_pnv_quest_title2, {+topi_b19_helper_quest_pnv_talking_1 -topi_b19_pnv_use_item_1} topi_b19_technic_pnv_quest_title1, {-topi_b19_helper_quest_pnv_talking_1} topi_b19_technic_pnv_quest_title0
+descr = {+topi_b19_pnv_use_end_3} topi_b19_technic_pnv_quest_text9, {+topi_b19_pnv_use_item_3 -topi_b19_pnv_use_end_3} topi_b19_technic_pnv_quest_text8, {+topi_b19_helper_quest_pnv_talking_3 -topi_b19_pnv_use_item_3} topi_b19_technic_pnv_quest_text7, {+topi_b19_pnv_use_end_2 -topi_b19_helper_quest_pnv_talking_3} topi_b19_technic_pnv_quest_text6, {+topi_b19_pnv_use_item_2 -topi_b19_pnv_use_end_2} topi_b19_technic_pnv_quest_text5, {+topi_b19_helper_quest_pnv_talking_2 -topi_b19_pnv_use_item_2} topi_b19_technic_pnv_quest_text4, {+topi_b19_pnv_use_end_1 -topi_b19_helper_quest_pnv_talking_2} topi_b19_technic_pnv_quest_text3, {+topi_b19_pnv_use_item_1 -topi_b19_pnv_use_end_1} topi_b19_technic_pnv_quest_text2, {+topi_b19_helper_quest_pnv_talking_1 -topi_b19_pnv_use_item_1} topi_b19_technic_pnv_quest_text1, {-topi_b19_helper_quest_pnv_talking_1} topi_b19_technic_pnv_quest_text0
+target = {+topi_b19_pnv_use_end_3} topi_stalker_base_mechanic, {+topi_b19_pnv_use_item_3 -topi_b19_pnv_use_end_3} nil, {+topi_b19_helper_quest_pnv_talking_3 -topi_b19_pnv_use_item_3} nil, {+topi_b19_pnv_use_end_2 -topi_b19_helper_quest_pnv_talking_3} topi_b19_stalker_technik_helper, {+topi_b19_pnv_use_item_2 -topi_b19_pnv_use_end_2} nil, {+topi_b19_helper_quest_pnv_talking_2 -topi_b19_pnv_use_item_2} nil, {+topi_b19_pnv_use_end_1 -topi_b19_helper_quest_pnv_talking_2} topi_b19_stalker_technik_helper, {+topi_b19_pnv_use_item_1 -topi_b19_pnv_use_end_1} nil, {+topi_b19_helper_quest_pnv_talking_1 -topi_b19_pnv_use_item_1} nil, {-topi_b19_helper_quest_pnv_talking_1} topi_b19_stalker_technik_helper
+condlist_0 = {+topi_b19_technic_quest_pnv_talking_2} complete
+
+--|>
+[geonezis_topi_b41_seleczia_quest]
+icon = ui_inGame2_Trader_Mutants
+prior = 1
+storyline = false
+title = {+topi_b41_artefacter_quest_seleczia_all_set} topi_b41_seleczia_quest_title1, {-topi_b41_artefacter_quest_seleczia_all_set} topi_b41_seleczia_quest_title0
+descr = {+topi_b41_artefacter_quest_seleczia_all_set} topi_b41_seleczia_quest_text1, {-topi_b41_artefacter_quest_seleczia_all_set} topi_b41_seleczia_quest_text0
+target = {+topi_b41_artefacter_quest_seleczia_all_set} topi_stalker_base_artefacter, {-topi_b41_artefacter_quest_seleczia_all_set} nil
+condlist_0 = {+topi_b41_artefacter_quest_seleczia_talking_2} complete
+reward_money = 4000
+
+--|>
+[geonezis_topi_a15_dolg_quest]
+icon = ui_inGame2_NightAgentMeeting
+prior = 1
+storyline = false
+title = {+topi_a15_dolg_come_to_base} topi_a15_dolg_quest_title2, {+topi_a15_dolg_step_1 -topi_a15_dolg_come_to_base} topi_a15_dolg_quest_title1, {-topi_a15_dolg_step_1} topi_a15_dolg_quest_title0
+descr = {+topi_a15_dolg_come_to_base} topi_a15_dolg_quest_text2, {+topi_a15_dolg_step_1 -topi_a15_dolg_come_to_base} topi_a15_dolg_quest_text1, {-topi_a15_dolg_step_1} topi_a15_dolg_quest_text0
+target = {+topi_a15_dolg_come_to_base} nil, {+topi_a15_dolg_step_1 -topi_a15_dolg_come_to_base} topi_a15_base_restr_1_id, {-topi_a15_dolg_step_1} topi_a15_dolg_vozmezdie_lider
+condlist_0 = {+topi_a15_zamolider_quest_talking_1} complete
+reward_money = 18000
+
+--|>
+[geonezis_topi_b15_hasan_dolg_quest]
+icon = ui_inGame2_NightAgentMeeting
+prior = 1
+storyline = false
+title = {+topi_b15_dolg_member_hasan_all_dead} topi_b15_hasan_dolg_title1, {-topi_b15_dolg_member_hasan_all_dead} topi_b15_hasan_dolg_title0
+descr = {+topi_b15_dolg_member_hasan_all_dead} topi_b15_hasan_dolg_text1, {-topi_b15_dolg_member_hasan_all_dead} topi_b15_hasan_dolg_text0
+target = {+topi_b15_dolg_member_hasan_all_dead} topi_stalker_base_zam, {-topi_b15_dolg_member_hasan_all_dead} topi_b15_dolg_member_1_hasan
+condlist_0 = {+topi_b15_zam_quest_dolg_talking_2} complete
+on_complete = %+topi_artefakter_quest_seleczia_precondition%
+
+--|>
+[geonezis_topi_b15_harold_dolg_quest]
+icon = ui_inGame2_NightAgentMeeting
+prior = 1
+storyline = false
+title = {+topi_b15_dolg_member_harold_all_dead} topi_b15_harold_dolg_title1, {-topi_b15_dolg_member_harold_all_dead} topi_b15_harold_dolg_title0
+descr = {+topi_b15_dolg_member_harold_all_dead} topi_b15_harold_dolg_text1, {-topi_b15_dolg_member_harold_all_dead} topi_b15_harold_dolg_text0
+target = {+topi_b15_dolg_member_harold_all_dead} topi_stalker_base_lider, {-topi_b15_dolg_member_harold_all_dead} topi_b15_dolg_member_1_harold
+condlist_0 = {+topi_b15_lider_quest_dolg_talking_2} complete
+on_complete = %+topi_artefakter_quest_seleczia_precondition%
+
+--|>
+[geonezis_topi_a15_freedom_quest]
+icon = ui_inGame2_RasvetDestroySnorks
+prior = 1
+storyline = false
+title = {+topi_a15_freedom_come_to_base} topi_a15_freedom_quest_title2, {+topi_a15_freedom_step_1 -topi_a15_freedom_come_to_base} topi_a15_freedom_quest_title1, {-topi_a15_freedom_step_1} topi_a15_freedom_quest_title0
+descr = {+topi_a15_freedom_come_to_base} topi_a15_freedom_quest_text2, {+topi_a15_freedom_step_1 -topi_a15_freedom_come_to_base} topi_a15_freedom_quest_text1, {-topi_a15_freedom_step_1} topi_a15_freedom_quest_text0
+target = {+topi_a15_freedom_come_to_base} nil, {+topi_a15_freedom_step_1 -topi_a15_freedom_come_to_base} topi_a15_base_restr_1_id, {-topi_a15_freedom_step_1} topi_a15_freedom_vozmezdie_lider
+condlist_0 = {+topi_a15_zamolider_quest_talking_1} complete
+reward_money = 15000
+
+--|>
+[geonezis_topi_b15_hasan_freedom_quest]
+icon = ui_inGame2_RasvetDestroySnorks
+prior = 1
+storyline = false
+title = {+topi_b15_freedom_member_hasan_all_dead} topi_b15_hasan_freedom_title1, {-topi_b15_freedom_member_hasan_all_dead} topi_b15_hasan_freedom_title0
+descr = {+topi_b15_freedom_member_hasan_all_dead} topi_b15_hasan_freedom_text1, {-topi_b15_freedom_member_hasan_all_dead} topi_b15_hasan_freedom_text0
+target = {+topi_b15_freedom_member_hasan_all_dead} topi_stalker_base_zam, {-topi_b15_freedom_member_hasan_all_dead} topi_b15_freedom_member_1_hasan
+condlist_0 = {+topi_b15_zam_quest_freedom_talking_2} complete
+on_complete = %+topi_artefakter_quest_seleczia_precondition%
+
+--|>
+[geonezis_topi_b15_harold_freedom_quest]
+icon = ui_inGame2_RasvetDestroySnorks
+prior = 1
+storyline = false
+title = {+topi_b15_freedom_member_harold_all_dead} topi_b15_harold_freedom_title1, {-topi_b15_freedom_member_harold_all_dead} topi_b15_harold_freedom_title0
+descr = {+topi_b15_freedom_member_harold_all_dead} topi_b15_harold_freedom_text1, {-topi_b15_freedom_member_harold_all_dead} topi_b15_harold_freedom_text0
+target = {+topi_b15_freedom_member_harold_all_dead} topi_stalker_base_lider, {-topi_b15_freedom_member_harold_all_dead} topi_b15_freedom_member_1_harold
+condlist_0 = {+topi_b15_lider_quest_freedom_talking_2} complete
+on_complete = %+topi_artefakter_quest_seleczia_precondition%
+
+--|>
+[geonezis_topi_с17_snab_mahir_quest]
+icon = ui_inGame2_Final_Quest
+prior = 1
+storyline = false
+title = {+topi_c17_mahir_quest_licvidation_talking_1} topi_с17_snab_mahir_quest_title1, {-topi_c17_mahir_quest_licvidation_talking_1} topi_с17_snab_mahir_quest_title0
+descr = {+topi_c17_mahir_quest_licvidation_talking_1} topi_с17_snab_mahir_quest_text1, {-topi_c17_mahir_quest_licvidation_talking_1} topi_с17_snab_mahir_quest_text0
+target = {+topi_c17_mahir_quest_licvidation_talking_1} topi_stalker_base_snab, {-topi_c17_mahir_quest_licvidation_talking_1} topi_c17_sborshik_mahir
+condlist_0 = {+topi_c17_snab_quest_licvidation_talking_2} complete
+condlist_1 = {+topi_c17_mahir_quest_licvidation_talking_2} reversed
+condlist_2 = {+topi_c17_mahir_teleport_1} reversed
+on_complete = %+topi_trader_quest_1_precondition%
+
+--|>
+[geonezis_topi_с17_snab_mahir_quest_2]
+icon = ui_inGame2_Final_Quest
+prior = 1
+storyline = false
+title = {+topi_c17_mahir_quest_licvidation_talking_3} topi_с17_snab_mahir_quest_1_title2, {+topi_c17_mahir_quest_come_to_point -topi_c17_mahir_quest_licvidation_talking_3} topi_с17_snab_mahir_quest_1_title1, {-topi_c17_mahir_quest_come_to_point} topi_с17_snab_mahir_quest_1_title0
+descr = {+topi_c17_mahir_quest_licvidation_talking_3} topi_с17_snab_mahir_quest_1_text2, {+topi_c17_mahir_quest_come_to_point -topi_c17_mahir_quest_licvidation_talking_3} topi_с17_snab_mahir_quest_1_text1, {-topi_c17_mahir_quest_come_to_point} topi_с17_snab_mahir_quest_1_text0
+target = {+topi_c17_mahir_quest_licvidation_talking_3} topi_stalker_base_snab, {+topi_c17_mahir_quest_come_to_point -topi_c17_mahir_quest_licvidation_talking_3} topi_c17_sborshik_mahir, {-topi_c17_mahir_quest_come_to_point} topi_c17_sborshik_mahir
+condlist_0 = {+topi_c17_snab_quest_licvidation_talking_3} complete
+on_complete = %+topi_trader_quest_1_precondition%
+
+--|>
+[geonezis_topi_с17_snab_mahir_quest_3]
+icon = ui_inGame2_Final_Quest
+prior = 1
+storyline = false
+title = {+topi_c17_mahir_quest_fake_death} topi_с17_snab_mahir_quest_2_title3, {+topi_c17_mahir_quest_fake_talking_1 -topi_c17_mahir_quest_fake_death} topi_с17_snab_mahir_quest_2_title2, {+topi_c17_mahir_step_1 -topi_c17_mahir_quest_fake_talking_1} topi_с17_snab_mahir_quest_2_title1, {-topi_c17_mahir_step_1} topi_с17_snab_mahir_quest_2_title0
+descr = {+topi_c17_mahir_quest_fake_death} topi_с17_snab_mahir_quest_2_text3, {+topi_c17_mahir_quest_fake_talking_1 -topi_c17_mahir_quest_fake_death} topi_с17_snab_mahir_quest_2_text2, {+topi_c17_mahir_step_1 -topi_c17_mahir_quest_fake_talking_1} topi_с17_snab_mahir_quest_2_text1, {-topi_c17_mahir_step_1} topi_с17_snab_mahir_quest_2_text0
+target = {+topi_c17_mahir_quest_fake_death} topi_stalker_base_snab, {+topi_c17_mahir_quest_fake_talking_1 -topi_c17_mahir_quest_fake_death} topi_c17_sborshik_mahir_2, {+topi_c17_mahir_step_1 -topi_c17_mahir_quest_fake_talking_1} topi_c17_sborshik_mahir_2, {-topi_c17_mahir_step_1} nil
+condlist_0 = {+topi_c17_snab_quest_licvidation_talking_4} complete
+on_complete = %+topi_trader_quest_1_precondition%
+
+--|>
+[geonezis_topi_b5_hunter_chimera_quest]
+icon = ui_inGame2_Refer_Parcel
+prior = 1
+storyline = false
+title = {+topi_a5_hunter_quest_come_back} topi_b5_hunter_chimera_quest_title5, {+topi_a5_hunter_quest_chimera_death -topi_a5_hunter_quest_come_back} topi_b5_hunter_chimera_quest_title4, {+topi_a5_hunter_quest_himera_talking_2 -topi_a5_hunter_quest_chimera_death} topi_b5_hunter_chimera_quest_title3, {+topi_a5_hunter_come_to_spez_point -topi_a5_hunter_quest_himera_talking_2} topi_b5_hunter_chimera_quest_title2, {+topi_a5_hunter_quest_himera_talking_1 -topi_a5_hunter_come_to_spez_point} topi_b5_hunter_chimera_quest_title1, {-topi_a5_hunter_quest_himera_talking_1} topi_b5_hunter_chimera_quest_title0
+descr = {+topi_a5_hunter_quest_come_back} topi_b5_hunter_chimera_quest_text5, {+topi_a5_hunter_quest_chimera_death -topi_a5_hunter_quest_come_back} topi_b5_hunter_chimera_quest_text4, {+topi_a5_hunter_quest_himera_talking_2 -topi_a5_hunter_quest_chimera_death} topi_b5_hunter_chimera_quest_text3, {+topi_a5_hunter_come_to_spez_point -topi_a5_hunter_quest_himera_talking_2} topi_b5_hunter_chimera_quest_text2, {+topi_a5_hunter_quest_himera_talking_1 -topi_a5_hunter_come_to_spez_point} topi_b5_hunter_chimera_quest_text1, {-topi_a5_hunter_quest_himera_talking_1} topi_b5_hunter_chimera_quest_text0
+target = {+topi_a5_hunter_quest_come_back} topi_stalker_base_hunter, {+topi_a5_hunter_quest_chimera_death -topi_a5_hunter_quest_come_back} topi_b5_hunter_chimera_restr_id, {+topi_a5_hunter_quest_himera_talking_2 -topi_a5_hunter_quest_chimera_death} topi_a5_hunter_quest_chimera, {+topi_a5_hunter_come_to_spez_point -topi_a5_hunter_quest_himera_talking_2} topi_a5_stalker_hunter, {+topi_a5_hunter_quest_himera_talking_1 -topi_a5_hunter_come_to_spez_point} topi_a5_stalker_hunter, {-topi_a5_hunter_quest_himera_talking_1} topi_a5_stalker_hunter
+condlist_0 = {+topi_a5_zmeelov_quest_himera_talking_2} complete
+reward_money = 2000
+
+--|>
+[geonezis_topi_m1_snab_quest]
+icon = ui_inGame2_WillLeaveJupiter
+prior = 1
+storyline = false
+title = {+topi_m1_sborshik_all_talking} topi_m1_snab_quest_title1, {-topi_m1_sborshik_all_talking} topi_m1_snab_quest_title0
+descr = {+topi_m1_sborshik_all_talking} topi_m1_snab_quest_text1, {-topi_m1_sborshik_all_talking} topi_m1_snab_quest_text0
+target = {+topi_m1_sborshik_all_talking} topi_stalker_base_snab, {-topi_m1_sborshik_all_talking} nil
+condlist_0 = {+topi_m1_snab_quest_talking_2} complete
+
+--|>
+[geonezis_topi_m1_sborshik_1]
+icon = ui_inGame2_WillLeaveJupiter
+prior = 1
+storyline = false
+title = topi_m1_sborshik_1_title0
+descr = topi_m1_sborshik_1_text0
+target =  topi_m1_sborshik_member_1
+condlist_0 = {+topi_m1_sborshik_1_talking} complete
+
+--|>
+[geonezis_topi_m1_sborshik_2]
+icon = ui_inGame2_WillLeaveJupiter
+prior = 1
+storyline = false
+title = topi_m1_sborshik_2_title0
+descr = topi_m1_sborshik_2_text0
+target =  topi_m1_sborshik_member_2
+condlist_0 = {+topi_m1_sborshik_2_talking} complete
+
+--|>
+[geonezis_topi_m1_sborshik_3]
+icon = ui_inGame2_WillLeaveJupiter
+prior = 1
+storyline = false
+title = topi_m1_sborshik_3_title0
+descr = topi_m1_sborshik_3_text0
+target =  topi_m1_sborshik_member_3
+condlist_0 = {+topi_m1_sborshik_3_talking} complete
+
+--|>
+[geonezis_topi_k1_zam_or_lider]
+icon = ui_inGame2_Story_of_Avenger
+prior = 1
+storyline = false
+title = topi_k1_zam_or_lider_0_title0
+descr = topi_k1_zam_or_lider_0_text0
+target =  nil
+condlist_0 = {+topi_k1_zam_or_lider_talking} complete
+
+--|>
+[geonezis_topi_i1_killer_quest]
+icon = ui_inGame2_Mairon_Find
+prior = 1
+storyline = false
+title = {+topi_i1_killer_quest_igra_end} topi_i1_killer_quest_title3, {=actor_has_item(topi_killer_ukazanie_2) -topi_i1_killer_quest_igra_end} topi_i1_killer_quest_title2, {+topi_i1_killer_tainik_find !actor_has_item(topi_killer_ukazanie_2)} topi_i1_killer_quest_title1, {-topi_i1_killer_tainik_find} topi_i1_killer_quest_title0
+descr = {+topi_i1_killer_quest_igra_end} topi_i1_killer_quest_text3, {=actor_has_item(topi_killer_ukazanie_2) -topi_i1_killer_quest_igra_end} topi_i1_killer_quest_text2, {+topi_i1_killer_tainik_find !actor_has_item(topi_killer_ukazanie_2)} topi_i1_killer_quest_text1, {-topi_i1_killer_tainik_find} topi_i1_killer_quest_text0
+target = {+topi_i1_killer_quest_igra_end} topi_stalker_base_medic, {=actor_has_item(topi_killer_ukazanie_2) -topi_i1_killer_quest_igra_end} topi_i1_anubis_yad_quest, {+topi_i1_killer_tainik_find !actor_has_item(topi_killer_ukazanie_2)} nil, {-topi_i1_killer_tainik_find} nil
+condlist_0 = {+topi_i1_killer_quest_medic_talking} complete
+condlist_1 = {+topi_i1_killer_quest_igra_time_is_out} fail
+
+--|>
+[geonezis_topi_b1_leader_first_quest]
+icon = ui_inGame2_Monsters_Wave
+prior = 200
+storyline = true
+title = {+topi_b1_leader_1_quest_talking_2} topi_b1_leader_first_quest_title2, {+topi_b1_leader_1_quest_mine_all_find -topi_b1_leader_1_quest_talking_2} topi_b1_leader_first_quest_title1, {-topi_b1_leader_1_quest_mine_all_find} topi_b1_leader_first_quest_title0
+descr = {+topi_b1_leader_1_quest_talking_2} topi_b1_leader_first_quest_text2, {+topi_b1_leader_1_quest_mine_all_find -topi_b1_leader_1_quest_talking_2} topi_b1_leader_first_quest_text1, {-topi_b1_leader_1_quest_mine_all_find} topi_b1_leader_first_quest_text0
+target = {+topi_b1_leader_1_quest_talking_2} nil, {+topi_b1_leader_1_quest_mine_all_find -topi_b1_leader_1_quest_talking_2} topi_b1_stalker_group_leader, {-topi_b1_leader_1_quest_mine_all_find} nil
+condlist_0 = {+topi_beat_from_monsters_safely} complete
+
+--|>
+[geonezis_topi_trader_quest_2]
+icon = ui_inGame2_Bandit_Narkptraffik
+prior = 1
+storyline = false
+title = {+topi_a6_trader_quest_2_bandit_all_death} topi_trader_quest_2_title3, {+topi_trader_2_quest_talking_bandit -topi_a6_trader_quest_2_bandit_all_death} topi_trader_quest_2_title2, {+topi_a6_trader_quest_2_bandit_create -topi_trader_2_quest_talking_bandit} topi_trader_quest_2_title1, {-topi_a6_trader_quest_2_bandit_create} topi_trader_quest_2_title0
+descr = {+topi_a6_trader_quest_2_bandit_all_death} topi_trader_quest_2_text3, {+topi_trader_2_quest_talking_bandit -topi_a6_trader_quest_2_bandit_all_death} topi_trader_quest_2_text2, {+topi_a6_trader_quest_2_bandit_create -topi_trader_2_quest_talking_bandit} topi_trader_quest_2_text1, {-topi_a6_trader_quest_2_bandit_create} topi_trader_quest_2_text0
+target =  {+topi_a6_trader_quest_2_bandit_all_death} topi_stalker_base_trader, {+topi_trader_2_quest_talking_bandit -topi_a6_trader_quest_2_bandit_all_death} nil, {+topi_a6_trader_quest_2_bandit_create -topi_trader_2_quest_talking_bandit} topi_a6_trader_quest_2_bandit_member_1, {-topi_a6_trader_quest_2_bandit_create} topi_trader_quest_2_restr_id
+condlist_0 = {+topi_trader_2_quest_talking_2} complete
+condlist_1 = {-topi_trader_2_quest_talking_2 +topi_stalker_base_trader_death} fail
+reward_money = 2000
+
+--|>
+[geonezis_topi_trader_quest_1]
+icon = ui_inGame2_Siege_of_Skladovsk
+prior = 1
+storyline = false
+title = {+topi_b7_trader_quest_1_bandit_prisoner_death} topi_trader_quest_1_title5, {+topi_trader_1_quest_talking_prisoner -topi_b7_trader_quest_1_bandit_prisoner_death} topi_trader_quest_1_title4, {+topi_b7_trader_quest_1_bandit_wounded_death -topi_trader_1_quest_talking_prisoner} topi_trader_quest_1_title3, {+topi_trader_1_quest_talking_wounded -topi_b7_trader_quest_1_bandit_wounded_death} topi_trader_quest_1_title2, {+topi_b7_trader_quest_1_bandit_member_all_death -topi_trader_1_quest_talking_wounded} topi_trader_quest_1_title1, {-topi_b7_trader_quest_1_bandit_member_all_death} topi_trader_quest_1_title0
+descr = {+topi_b7_trader_quest_1_bandit_prisoner_death} topi_trader_quest_1_text5, {+topi_trader_1_quest_talking_prisoner -topi_b7_trader_quest_1_bandit_prisoner_death} topi_trader_quest_1_text4, {+topi_b7_trader_quest_1_bandit_wounded_death -topi_trader_1_quest_talking_prisoner} topi_trader_quest_1_text3, {+topi_trader_1_quest_talking_wounded -topi_b7_trader_quest_1_bandit_wounded_death} topi_trader_quest_1_text2, {+topi_b7_trader_quest_1_bandit_member_all_death -topi_trader_1_quest_talking_wounded} topi_trader_quest_1_text1, {-topi_b7_trader_quest_1_bandit_member_all_death} topi_trader_quest_1_text0
+target =  {+topi_b7_trader_quest_1_bandit_prisoner_death} topi_stalker_base_trader, {+topi_trader_1_quest_talking_prisoner -topi_b7_trader_quest_1_bandit_prisoner_death} nil, {+topi_b7_trader_quest_1_bandit_wounded_death -topi_trader_1_quest_talking_prisoner} topi_b7_trader_quest_1_bandit_prisoner, {+topi_trader_1_quest_talking_wounded -topi_b7_trader_quest_1_bandit_wounded_death} topi_b7_trader_quest_1_bandit_wounded, {+topi_b7_trader_quest_1_bandit_member_all_death -topi_trader_1_quest_talking_wounded} topi_b7_trader_quest_1_bandit_wounded, {-topi_b7_trader_quest_1_bandit_member_all_death} topi_trader_quest_1_restr_id
+condlist_0 = {+topi_trader_1_quest_talking_2} complete
+condlist_1 = {-topi_trader_1_quest_talking_2 +topi_stalker_base_trader_death} fail
+reward_money = 2000
+
+--|>
+[geonezis_topi_medic_quest_arts_give]
+icon = ui_inGame2_Af_Skripka
+prior = 1	
+storyline = false
+title = {+topi_medic_quest_sborki2_done -topi_medic_quest_sborki1_done} topi_medic_quest_bring_1_name, {+topi_medic_quest_sborki1_done -topi_medic_quest_sborki2_done} topi_medic_quest_bring_2_name, {+topi_medic_quest_sborki1_done +topi_medic_quest_sborki2_done} topi_medic_quest_thanks_for_2_items_name, {-topi_medic_quest_sborki1_done -topi_medic_quest_sborki2_done} topi_medic_quest_sborki_started_name
+descr = {+topi_medic_quest_sborki2_done -topi_medic_quest_sborki1_done} topi_medic_quest_bring_1_text, {+topi_medic_quest_sborki1_done -topi_medic_quest_sborki2_done} topi_medic_quest_bring_2_text, {+topi_medic_quest_sborki1_done +topi_medic_quest_sborki2_done} topi_medic_quest_thanks_for_2_items_text, {-topi_medic_quest_sborki1_done -topi_medic_quest_sborki2_done} topi_medic_quest_sborki_started_text
+target = topi_stalker_base_medic
+condlist_0 = {+topi_medic_quest_sborki1_done +topi_medic_quest_sborki2_done} complete
+on_complete = %+topi_medic_quest_sborki_complete%
+reward_money = 2000
+
+[geonezis_topi_b30_medic_quest]
+icon = ui_inGame2_Af_Skripka
+prior = 1
+storyline = false
+title = {=actor_has_item(af_glass) =actor_has_item(af_mincer_meat)} topi_b30_medic_quest_title3, {=actor_has_item(af_glass) !actor_has_item(af_mincer_meat)} topi_b30_medic_quest_title2, {!actor_has_item(af_glass) =actor_has_item(af_mincer_meat)} topi_b30_medic_quest_title1, topi_b30_medic_quest_title0 
+descr = {=actor_has_item(af_glass) =actor_has_item(af_mincer_meat)} topi_b30_medic_quest_text3, {=actor_has_item(af_glass) !actor_has_item(af_mincer_meat)} topi_b30_medic_quest_text2, {!actor_has_item(af_glass) =actor_has_item(af_mincer_meat)} topi_b30_medic_quest_text1, topi_b30_medic_quest_text0
+target = {=actor_has_item(af_glass) =actor_has_item(af_mincer_meat)} topi_stalker_base_medic, nil
+condlist_0 = {+topi_b30_medic_talking_2} complete
+on_complete = %+topi_medic_quest_sborki_complete%
+reward_money = 2000
+
+--|>
+[geonezis_topi_medic_quest_peredacha]
+icon = ui_inGame2_Revange_of_Falls
+prior = 1	
+storyline = false
+title = {+topi_b1_stalker_group_wounded_talking} topi_medic_quest_peredacha_title1, {-topi_b1_stalker_group_wounded_talking} topi_medic_quest_peredacha_title0
+descr = {+topi_b1_stalker_group_wounded_talking} topi_medic_quest_peredacha_text1, {-topi_b1_stalker_group_wounded_talking} topi_medic_quest_peredacha_text0
+target = {+topi_b1_stalker_group_wounded_talking} topi_b1_stalker_group_leader, {-topi_b1_stalker_group_wounded_talking} topi_b1_stalker_group_wounded
+condlist_0 = {+topi_medic_quest_peredacha_complete} complete
+condlist_1 = {+topi_b1_stalker_group_wounded_time_false} fail
+
+--|>
+[geonezis_topi_spec_scaner]
+icon = ui_inGame2_Accompany_To_Boat
+prior = 1	
+storyline = false
+title  = {+topi_novikov_quest_zaton_scanner_have_7} topi_spec_anomaly_scaner_title7, {+topi_novikov_quest_zaton_scanner_create_7 -topi_novikov_quest_zaton_scanner_have_7} topi_spec_anomaly_scaner_title6, {+topi_novikov_quest_zaton_scanner_create_6 -topi_novikov_quest_zaton_scanner_create_7} topi_spec_anomaly_scaner_title5, {+topi_novikov_quest_zaton_scanner_create_5 -topi_novikov_quest_zaton_scanner_create_6} topi_spec_anomaly_scaner_title4, {+topi_novikov_quest_zaton_scanner_create_4 -topi_novikov_quest_zaton_scanner_create_5} topi_spec_anomaly_scaner_title3, {+topi_novikov_quest_zaton_scanner_create_3 -topi_novikov_quest_zaton_scanner_create_4} topi_spec_anomaly_scaner_title2, {+topi_novikov_quest_zaton_scanner_create_2 -topi_novikov_quest_zaton_scanner_create_3} topi_spec_anomaly_scaner_title1, {-topi_novikov_quest_zaton_scanner_create_2} topi_spec_anomaly_scaner_title0
+descr  = {+topi_novikov_quest_zaton_scanner_have_7} topi_spec_anomaly_scaner_text7, {+topi_novikov_quest_zaton_scanner_create_7 -topi_novikov_quest_zaton_scanner_have_7} topi_spec_anomaly_scaner_text6, {+topi_novikov_quest_zaton_scanner_create_6 -topi_novikov_quest_zaton_scanner_create_7} topi_spec_anomaly_scaner_text5, {+topi_novikov_quest_zaton_scanner_create_5 -topi_novikov_quest_zaton_scanner_create_6} topi_spec_anomaly_scaner_text4, {+topi_novikov_quest_zaton_scanner_create_4 -topi_novikov_quest_zaton_scanner_create_5} topi_spec_anomaly_scaner_text3, {+topi_novikov_quest_zaton_scanner_create_3 -topi_novikov_quest_zaton_scanner_create_4} topi_spec_anomaly_scaner_text2, {+topi_novikov_quest_zaton_scanner_create_2 -topi_novikov_quest_zaton_scanner_create_3} topi_spec_anomaly_scaner_text1, {-topi_novikov_quest_zaton_scanner_create_2} topi_spec_anomaly_scaner_text0
+target = {+topi_novikov_quest_zaton_scanner_have_7} topi_stalker_base_artefacter, {+topi_novikov_quest_zaton_scanner_create_7 -topi_novikov_quest_zaton_scanner_have_7} topi_spec_anomaly_scanner_7, {+topi_novikov_quest_zaton_scanner_create_6 -topi_novikov_quest_zaton_scanner_create_7} topi_spec_anomaly_scanner_6, {+topi_novikov_quest_zaton_scanner_create_5 -topi_novikov_quest_zaton_scanner_create_6} topi_spec_anomaly_scanner_5, {+topi_novikov_quest_zaton_scanner_create_4 -topi_novikov_quest_zaton_scanner_create_5} topi_spec_anomaly_scanner_4, {+topi_novikov_quest_zaton_scanner_create_3 -topi_novikov_quest_zaton_scanner_create_4} topi_spec_anomaly_scanner_3, {+topi_novikov_quest_zaton_scanner_create_2 -topi_novikov_quest_zaton_scanner_create_3} topi_spec_anomaly_scanner_2, {-topi_novikov_quest_zaton_scanner_create_2} topi_spec_anomaly_scanner_1 
+condlist_0 = {+topi_novikov_quest_zaton_scanner_end} complete
+on_complete = %=inc_faction_goodwill_to_actor(stalker:100)%
+reward_money = 3000
+
+--|>
+[geonezis_topi_hunter_quest_frogs]
+icon = ui_inGame2_Revange_of_Varg
+prior = 1	
+storyline = false
+title = {+topi_hunter_first_quest_talking_2} topi_hunter_quest_frogs_title3, {+topi_b6_attacked_frog_all_dead -topi_hunter_first_quest_talking_2} topi_hunter_quest_frogs_title2, {+topi_hunter_first_quest_talking_1 -topi_b6_attacked_frog_all_dead} topi_hunter_quest_frogs_title1, {-topi_hunter_first_quest_talking_1} topi_hunter_quest_frogs_title0
+descr = {+topi_hunter_first_quest_talking_2} topi_hunter_quest_frogs_text3, {+topi_b6_attacked_frog_all_dead -topi_hunter_first_quest_talking_2} topi_hunter_quest_frogs_text2, {+topi_hunter_first_quest_talking_1 -topi_b6_attacked_frog_all_dead} topi_hunter_quest_frogs_text1, {-topi_hunter_first_quest_talking_1} topi_hunter_quest_frogs_text0
+target = {+topi_hunter_first_quest_talking_2} topi_stalker_base_hunter, {+topi_b6_attacked_frog_all_dead -topi_hunter_first_quest_talking_2} topi_a7_stalker_hunter_leader, {+topi_hunter_first_quest_talking_1 -topi_b6_attacked_frog_all_dead} nil, {-topi_hunter_first_quest_talking_1} topi_a7_stalker_hunter_leader
+condlist_0 = {+topi_hunter_first_quest_talking_3} complete
+on_complete = %+topi_hunter_quest_himera_precondition%
+
+--|>
+[geonezis_topi_hunter_quest_polter]
+icon = ui_inGame2_Spravedlivoe_Vozmezdie
+prior = 1	
+storyline = false
+title = {+topi_hunter_polter_quest_talking_1} topi_hunter_quest_polter_title2, {+topi_b6_attacked_polter_all_dead -topi_hunter_polter_quest_talking_1} topi_hunter_quest_polter_title1, {-topi_b6_attacked_polter_all_dead} topi_hunter_quest_polter_title0
+descr = {+topi_hunter_polter_quest_talking_1} topi_hunter_quest_polter_text2, {+topi_b6_attacked_polter_all_dead -topi_hunter_polter_quest_talking_1} topi_hunter_quest_polter_text1, {-topi_b6_attacked_polter_all_dead} topi_hunter_quest_polter_text0
+target = {+topi_hunter_polter_quest_talking_1} topi_stalker_base_hunter, {+topi_b6_attacked_polter_all_dead -topi_hunter_polter_quest_talking_1} topi_a7_stalker_hunter_leader_1, {-topi_b6_attacked_polter_all_dead} topi_b6_attacked_polter_1
+condlist_0 = {+topi_hunter_polter_quest_talking_2} complete
+on_complete = %+topi_hunter_quest_himera_precondition%
+reward_money = 3000
+
+--|>
+[geonezis_topi_snab_quest_main]
+icon = ui_inGame2_Gauss_Nevedim
+prior = 1	
+storyline = false
+title = {+topi_snab_quest_tai_all_used} topi_snab_quest_main_title3, {+topi_snab_first_quest_talking_2 -topi_snab_quest_tai_all_used} topi_snab_quest_main_title2, {+topi_snab_quest_tai_all_set -topi_snab_first_quest_talking_2} topi_snab_quest_main_title1, {-topi_snab_quest_tai_all_set} topi_snab_quest_main_title0
+descr = {+topi_snab_quest_tai_all_used} topi_snab_quest_main_text3, {+topi_snab_first_quest_talking_2 -topi_snab_quest_tai_all_used} topi_snab_quest_main_text2, {+topi_snab_quest_tai_all_set -topi_snab_first_quest_talking_2} topi_snab_quest_main_text1, {-topi_snab_quest_tai_all_set} topi_snab_quest_main_text0
+target = {+topi_snab_quest_tai_all_used} topi_stalker_base_snab, {+topi_snab_first_quest_talking_2 -topi_snab_quest_tai_all_used} nil, {+topi_snab_quest_tai_all_set -topi_snab_first_quest_talking_2} topi_stalker_base_snab, {-topi_snab_quest_tai_all_set} nil
+condlist_0 = {+topi_snab_first_quest_talking_3} complete
+condlist_1 = {-topi_snab_first_quest_talking_3 +topi_stalker_base_snab_death} fail
+on_complete = %=inc_faction_goodwill_to_actor(stalker:100)%
+reward_money = 4000
+
+--|>
+[geonezis_topi_snab_set_1]
+icon = ui_inGame2_Gauss_Nevedim
+prior = 1
+storyline = false
+title = topi_snab_quest_set_1_title0
+descr = topi_snab_quest_set_1_text0
+target =  topi_snab_quest_taynik_restr_1_id
+condlist_0 = {+topi_snab_quest_tai_1_set} complete
+condlist_1 = {-topi_snab_first_quest_talking_2 +topi_stalker_base_snab_death} fail
+
+--|>
+[geonezis_topi_snab_set_2]
+icon = ui_inGame2_Gauss_Nevedim
+prior = 1
+storyline = false
+title = topi_snab_quest_set_2_title0
+descr = topi_snab_quest_set_2_text0
+target =  topi_snab_quest_taynik_restr_2_id
+condlist_0 = {+topi_snab_quest_tai_2_set} complete
+condlist_1 = {-topi_snab_first_quest_talking_2 +topi_stalker_base_snab_death} fail
+
+--|>
+[geonezis_topi_snab_set_3]
+icon = ui_inGame2_Gauss_Nevedim
+prior = 1
+storyline = false
+title = topi_snab_quest_set_3_title0
+descr = topi_snab_quest_set_3_text0
+target =  topi_snab_quest_taynik_restr_3_id
+condlist_0 = {+topi_snab_quest_tai_3_set} complete
+condlist_1 = {-topi_snab_first_quest_talking_2 +topi_stalker_base_snab_death} fail
+
+--|>
+[geonezis_topi_snab_use_1]
+icon = ui_inGame2_Gauss_Nevedim
+prior = 1
+storyline = false
+title = topi_snab_quest_use_1_title0
+descr = topi_snab_quest_use_1_text0
+target =  topi_snab_quest_taynik_restr_1_id
+condlist_0 = {+topi_snab_quest_tai_1_used} complete
+condlist_1 = {-topi_snab_first_quest_talking_3 +topi_stalker_base_snab_death} fail
+
+--|>
+[geonezis_topi_snab_use_2]
+icon = ui_inGame2_Gauss_Nevedim
+prior = 1
+storyline = false
+title = topi_snab_quest_use_2_title0
+descr = topi_snab_quest_use_2_text0
+target =  topi_snab_quest_taynik_restr_2_id
+condlist_0 = {+topi_snab_quest_tai_2_used} complete
+condlist_1 = {-topi_snab_first_quest_talking_3 +topi_stalker_base_snab_death} fail
+
+--|>
+[geonezis_topi_snab_use_3]
+icon = ui_inGame2_Gauss_Nevedim
+prior = 1
+storyline = false
+title = topi_snab_quest_use_3_title0
+descr = topi_snab_quest_use_3_text0
+target =  topi_snab_quest_taynik_restr_3_id
+condlist_0 = {+topi_snab_quest_tai_3_used} complete
+condlist_1 = {-topi_snab_first_quest_talking_3 +topi_stalker_base_snab_death} fail
+
+--|>
+[geonezis_topi_b1_leader_second_quest]
+icon = ui_inGame2_Killer_Help
+prior = 1
+storyline = false
+title = {+topi_b1_leader_second_quest_used} topi_b1_leader_second_quest_title1, {-topi_b1_leader_second_quest_used} topi_b1_leader_second_quest_title0
+descr = {+topi_b1_leader_second_quest_used} topi_b1_leader_second_quest_text1, {-topi_b1_leader_second_quest_used} topi_b1_leader_second_quest_text0
+target =  {+topi_b1_leader_second_quest_used} topi_b1_stalker_group_leader, {-topi_b1_leader_second_quest_used} topi_b1_leader_second_quest_restr_id
+condlist_0 = {+topi_b1_leader_second_quest_talking_2} complete
+condlist_1 = {-topi_b1_leader_second_quest_talking_2 +topi_b1_leader_death} fail
+on_complete = %=inc_faction_goodwill_to_actor(stalker:100)%
+reward_money = 2000
+
+--|>
+[geonezis_topi_b1_leader_third_quest]
+icon = ui_inGame2_Killer_Help
+prior = 1
+storyline = false
+title = {+topi_b1_leader_third_quest_used} topi_b1_leader_third_quest_title1, {-topi_b1_leader_third_quest_used} topi_b1_leader_third_quest_title0
+descr = {+topi_b1_leader_third_quest_used} topi_b1_leader_third_quest_text1, {-topi_b1_leader_third_quest_used} topi_b1_leader_third_quest_text0
+target =  {+topi_b1_leader_third_quest_used} topi_b1_stalker_group_leader, {-topi_b1_leader_third_quest_used} topi_b1_leader_third_quest_restr_id
+condlist_0 = {+topi_b1_leader_third_quest_talking_2} complete
+condlist_1 = {-topi_b1_leader_third_quest_talking_2 +topi_b1_leader_death} fail
+on_complete = %=inc_faction_goodwill_to_actor(stalker:100)%
+reward_money = 2000
+
+--|>
+[geonezis_topi_radist_quest_main]
+icon = ui_inGame2_Top_Secret
+prior = 1	
+storyline = false
+title = {+topi_radit_quest_radiolocator_kalib} topi_radist_quest_main_title3, {+topi_radist_quest_talking_2 -topi_radit_quest_radiolocator_kalib} topi_radist_quest_main_title2, {+topi_radist_quest_tai_all_used -topi_radist_quest_talking_2} topi_radist_quest_main_title1, {-topi_radist_quest_tai_all_used} topi_radist_quest_main_title0
+descr = {+topi_radit_quest_radiolocator_kalib} topi_radist_quest_main_text3, {+topi_radist_quest_talking_2 -topi_radit_quest_radiolocator_kalib} topi_radist_quest_main_text2, {+topi_radist_quest_tai_all_used -topi_radist_quest_talking_2} topi_radist_quest_main_text1, {-topi_radist_quest_tai_all_used} topi_radist_quest_main_text0
+target = {+topi_radit_quest_radiolocator_kalib} topi_stalker_base_radist, {+topi_radist_quest_talking_2 -topi_radit_quest_radiolocator_kalib} topi_radist_quest_comp_restr_id, {+topi_radist_quest_tai_all_used -topi_radist_quest_talking_2} topi_stalker_base_radist, {-topi_radist_quest_tai_all_used} nil
+condlist_0 = {+topi_radist_quest_talking_3} complete
+condlist_1 = {-topi_radist_quest_talking_2 +topi_stalker_base_radist_death} fail
+on_complete = %=inc_faction_goodwill_to_actor(stalker:100)%
+reward_money = 4000
+
+--|>
+[geonezis_topi_radist_set_1]
+icon = ui_inGame2_Top_Secret
+prior = 1
+storyline = false
+title = {+topi_radist_quest_tai_1_set} topi_radist_quest_set_1_title1, {-topi_radist_quest_tai_1_set} topi_radist_quest_set_1_title0
+descr = {+topi_radist_quest_tai_1_set} topi_radist_quest_set_1_text1, {-topi_radist_quest_tai_1_set} topi_radist_quest_set_1_text0
+target =  topi_radist_quest_taynik_restr_1_id
+condlist_0 = {+topi_radist_quest_tai_1_used} complete
+condlist_1 = {-topi_radist_quest_talking_2 +topi_stalker_base_radist_death} fail
+
+--|>
+[geonezis_topi_radist_set_2]
+icon = ui_inGame2_Top_Secret
+prior = 1
+storyline = false
+title = {+topi_radist_quest_tai_2_set} topi_radist_quest_set_2_title1, {-topi_radist_quest_tai_2_set} topi_radist_quest_set_2_title0
+descr = {+topi_radist_quest_tai_2_set} topi_radist_quest_set_2_text1, {-topi_radist_quest_tai_2_set} topi_radist_quest_set_2_text0
+target =  topi_radist_quest_taynik_restr_2_id
+condlist_0 = {+topi_radist_quest_tai_2_used} complete
+condlist_1 = {-topi_radist_quest_talking_2 +topi_stalker_base_radist_death} fail
+
+--|>
+[geonezis_topi_radist_set_3]
+icon = ui_inGame2_Top_Secret
+prior = 1
+storyline = false
+title = {+topi_radist_quest_tai_3_set} topi_radist_quest_set_3_title1, {-topi_radist_quest_tai_3_set} topi_radist_quest_set_3_title0
+descr = {+topi_radist_quest_tai_3_set} topi_radist_quest_set_3_text1, {-topi_radist_quest_tai_3_set} topi_radist_quest_set_3_text0
+target =  topi_radist_quest_taynik_restr_3_id
+condlist_0 = {+topi_radist_quest_tai_3_used} complete
+condlist_1 = {-topi_radist_quest_talking_2 +topi_stalker_base_radist_death} fail
+
+--|>
+[geonezis_topi_mechanic_quest_proto]
+icon = ui_inGame2_Otvetnii_Udar
+prior = 1	
+storyline = false
+title = {+topi_mechanic_testing_all_proto} topi_mechanic_quest_proto_title4, {+topi_mechanic_proto_point_come -topi_mechanic_testing_all_proto} topi_mechanic_quest_proto_title3, {+topi_mechanic_create_all_proto -topi_mechanic_proto_point_come} topi_mechanic_quest_proto_title2, {+topi_mechanic_proto_quest_tainik_have -topi_mechanic_create_all_proto} topi_mechanic_quest_proto_title1, {-topi_mechanic_proto_quest_tainik_have} topi_mechanic_quest_proto_title0
+descr = {+topi_mechanic_testing_all_proto} topi_mechanic_quest_proto_text4, {+topi_mechanic_proto_point_come -topi_mechanic_testing_all_proto} topi_mechanic_quest_proto_text3, {+topi_mechanic_create_all_proto -topi_mechanic_proto_point_come} topi_mechanic_quest_proto_text2, {+topi_mechanic_proto_quest_tainik_have -topi_mechanic_create_all_proto} topi_mechanic_quest_proto_text1, {-topi_mechanic_proto_quest_tainik_have} topi_mechanic_quest_proto_text0
+target = {+topi_mechanic_testing_all_proto} topi_stalker_base_mechanic, {+topi_mechanic_proto_point_come -topi_mechanic_testing_all_proto} nil, {+topi_mechanic_create_all_proto -topi_mechanic_proto_point_come} topi_a2_prototesting_quest_restr_1_id, {+topi_mechanic_proto_quest_tainik_have -topi_mechanic_create_all_proto} nil, {-topi_mechanic_proto_quest_tainik_have} topi_b8_mechanic_proto_quest_spot
+condlist_0 = {+topi_mechanic_proto_quest_talking_2} complete
+condlist_1 = {-topi_mechanic_proto_quest_talking_2 +topi_stalker_base_mechanik_death} fail
+condlist_2 = {-topi_mechanic_proto_quest_talking_2 +topi_a2_prototesting_quest_false} fail
+on_complete = %+topi_mechanic_quest_night_precondition%
+reward_money = 3000
+
+--|>
+[geonezis_topi_radist_quest_multimetr]
+icon = ui_inGame2_Tonnel_Rates
+prior = 1	
+storyline = false
+title = {+topi_radist_multimetr_tai_1_use} topi_radist_quest_multimetr_title6, {+topi_radist_multimetr_tai_1_set -topi_radist_multimetr_tai_1_use} topi_radist_quest_multimetr_title5, {+topi_radist_multimetr_new_plata_create -topi_radist_multimetr_tai_1_set} topi_radist_quest_multimetr_title4, {+topi_radist_multimetr_quest_talking_2 -topi_radist_multimetr_new_plata_create} topi_radist_quest_multimetr_title3, {+topi_radist_multimetr_all_proveren -topi_radist_multimetr_quest_talking_2} topi_radist_quest_multimetr_title2, {+topi_radist_multimetr_quest_used_1 -topi_radist_multimetr_all_proveren} topi_radist_quest_multimetr_title1, {-topi_radist_multimetr_quest_used_1} topi_radist_quest_multimetr_title0
+descr = {+topi_radist_multimetr_tai_1_use} topi_radist_quest_multimetr_text6, {+topi_radist_multimetr_tai_1_set -topi_radist_multimetr_tai_1_use} topi_radist_quest_multimetr_text5, {+topi_radist_multimetr_new_plata_create -topi_radist_multimetr_tai_1_set} topi_radist_quest_multimetr_text4, {+topi_radist_multimetr_quest_talking_2 -topi_radist_multimetr_new_plata_create} topi_radist_quest_multimetr_text3, {+topi_radist_multimetr_all_proveren -topi_radist_multimetr_quest_talking_2} topi_radist_quest_multimetr_text2, {+topi_radist_multimetr_quest_used_1 -topi_radist_multimetr_all_proveren} topi_radist_quest_multimetr_text1, {-topi_radist_multimetr_quest_used_1} topi_radist_quest_multimetr_text0
+target = {+topi_radist_multimetr_tai_1_use} topi_stalker_base_radist, {+topi_radist_multimetr_tai_1_set -topi_radist_multimetr_tai_1_use} topi_radist_quest_multimetr_restr_2_id, {+topi_radist_multimetr_new_plata_create -topi_radist_multimetr_tai_1_set} topi_radist_quest_multimetr_restr_2_id, {+topi_radist_multimetr_quest_talking_2 -topi_radist_multimetr_new_plata_create} nil, {+topi_radist_multimetr_all_proveren -topi_radist_multimetr_quest_talking_2} topi_stalker_base_radist, {+topi_radist_multimetr_quest_used_1 -topi_radist_multimetr_all_proveren} nil, {-topi_radist_multimetr_quest_used_1} topi_radist_quest_multimetr_restr_1_id
+condlist_0 = {+topi_radist_multimetr_quest_talking_3} complete
+condlist_1 = {-topi_radist_multimetr_quest_talking_3 +topi_stalker_base_radist_death} fail
+on_complete = %=inc_faction_goodwill_to_actor(stalker:100)%
+reward_money = 3000
+
+--|>
+[geonezis_topi_a105_razia_quest]
+icon = ui_inGame2_Story_of_Clear_Sky
+prior = 1	
+storyline = false
+title = {+topi_mechanic_testing_all_razia} topi_a105_razia_quest_title1, {-topi_mechanic_testing_all_razia} topi_a105_razia_quest_title0
+descr = {+topi_mechanic_testing_all_razia} topi_a105_razia_quest_text1, {-topi_mechanic_testing_all_razia} topi_a105_razia_quest_text0
+target = {+topi_mechanic_testing_all_razia} topi_stalker_base_mechanic, {-topi_mechanic_testing_all_razia} topi_a105_razia_quest_restr_1_id
+condlist_0 = {+topi_mechanic_razia_quest_talking_2} complete
+condlist_1 = {-topi_mechanic_razia_quest_talking_2 +topi_stalker_base_mechanik_death} fail
+on_complete = %+topi_mechanic_quest_night_precondition%
+reward_money = 3000
+
+--|>
+[geonezis_topi_zam_variant_quest]
+icon = ui_inGame2_Dolg_Artefakts
+prior = 1
+storyline = false
+title = {+topi_zam_variant_quest_time_is_out} topi_zam_variant_quest_title6, {+topi_zam_variant_quest_come_to_point -topi_zam_variant_quest_time_is_out} topi_zam_variant_quest_title5, {+topi_zam_variant_quest_talking_3 -topi_zam_variant_quest_come_to_point} topi_zam_variant_quest_title4, {+topi_zam_variant_quest_katalizator_set -topi_zam_variant_quest_talking_3} topi_zam_variant_quest_title3, {+topi_zam_variant_quest_proto_create -topi_zam_variant_quest_katalizator_set} topi_zam_variant_quest_title2, {+topi_zam_variant_quest_talking_2 -topi_zam_variant_quest_proto_create} topi_zam_variant_quest_title1, {-topi_zam_variant_quest_talking_2} topi_zam_variant_quest_title0
+descr = {+topi_zam_variant_quest_time_is_out} topi_zam_variant_quest_text6, {+topi_zam_variant_quest_come_to_point -topi_zam_variant_quest_time_is_out} topi_zam_variant_quest_text5, {+topi_zam_variant_quest_talking_3 -topi_zam_variant_quest_come_to_point} topi_zam_variant_quest_text4, {+topi_zam_variant_quest_katalizator_set -topi_zam_variant_quest_talking_3} topi_zam_variant_quest_text3, {+topi_zam_variant_quest_proto_create -topi_zam_variant_quest_katalizator_set} topi_zam_variant_quest_text2, {+topi_zam_variant_quest_talking_2 -topi_zam_variant_quest_proto_create} topi_zam_variant_quest_text1, {-topi_zam_variant_quest_talking_2} topi_zam_variant_quest_text0
+target = {+topi_zam_variant_quest_time_is_out} topi_stalker_base_zam, {+topi_zam_variant_quest_come_to_point -topi_zam_variant_quest_time_is_out} nil, {+topi_zam_variant_quest_talking_3 -topi_zam_variant_quest_come_to_point} topi_zam_variant_quest_restr_2_id, {+topi_zam_variant_quest_katalizator_set -topi_zam_variant_quest_talking_3} topi_b1_scaut_leader_var_1, {+topi_zam_variant_quest_proto_create -topi_zam_variant_quest_katalizator_set} topi_zam_variant_quest_restr_1_id, {+topi_zam_variant_quest_talking_2 -topi_zam_variant_quest_proto_create} nil, {-topi_zam_variant_quest_talking_2} topi_stalker_base_mechanic
+condlist_0 = {+topi_zam_variant_quest_talking_4} complete
+condlist_1 = {-topi_zam_variant_quest_talking_4 +topi_stalker_base_zam_death} fail
+
+--|>
+[geonezis_topi_lider_variant_quest]
+icon = ui_inGame2_Dolg_Artefakts
+prior = 1
+storyline = false
+title =  {=actor_has_item(topi_lider_copromat_1)} topi_lider_variant_quest_title5, {+mar_kardan_quest_1_find_to_open !actor_has_item(topi_lider_copromat_1)} topi_lider_variant_quest_title4, {+topi_lider_variant_quest_talking_3 -mar_kardan_quest_1_find_to_open} topi_lider_variant_quest_title3, {+topi_liger_variant_quest_spectrometr_set -topi_lider_variant_quest_talking_3} topi_lider_variant_quest_title2, {+topi_lider_variant_quest_talking_2 -topi_liger_variant_quest_spectrometr_set} topi_lider_variant_quest_title1, {-topi_lider_variant_quest_talking_2} topi_lider_variant_quest_title0
+descr =  {=actor_has_item(topi_lider_copromat_1)} topi_lider_variant_quest_text5, {+mar_kardan_quest_1_find_to_open !actor_has_item(topi_lider_copromat_1)} topi_lider_variant_quest_text4, {+topi_lider_variant_quest_talking_3 -mar_kardan_quest_1_find_to_open} topi_lider_variant_quest_text3, {+topi_liger_variant_quest_spectrometr_set -topi_lider_variant_quest_talking_3} topi_lider_variant_quest_text2, {+topi_lider_variant_quest_talking_2 -topi_liger_variant_quest_spectrometr_set} topi_lider_variant_quest_text1, {-topi_lider_variant_quest_talking_2} topi_lider_variant_quest_text0
+target =  {=actor_has_item(topi_lider_copromat_1)} topi_stalker_base_lider, {+mar_kardan_quest_1_find_to_open !actor_has_item(topi_lider_copromat_1)} mar_kardan_quest_container_id, {+topi_lider_variant_quest_talking_3 -mar_kardan_quest_1_find_to_open} mar_kardan_quest_container_id, {+topi_liger_variant_quest_spectrometr_set -topi_lider_variant_quest_talking_3} topi_stalker_base_mechanic, {+topi_lider_variant_quest_talking_2 -topi_liger_variant_quest_spectrometr_set} topi_lider_variant_quest_restr_1_id, {-topi_lider_variant_quest_talking_2} topi_stalker_base_snab
+condlist_0 = {+topi_lider_variant_quest_talking_4} complete
+condlist_1 = {-topi_lider_variant_quest_talking_4 +topi_stalker_base_lider_death} fail
+
+--|>
+[geonezis_topi_lider_variant_quest_1]
+icon = ui_inGame2_Dolg_Artefakts
+prior = 1
+storyline = false
+title = {+topi_b1_scaut_killer_member_1_death} topi_lider_variant_quest_1_title1, {-topi_b1_scaut_killer_member_1_death} topi_lider_variant_quest_1_title0
+descr = {+topi_b1_scaut_killer_member_1_death} topi_lider_variant_quest_1_text1, {-topi_b1_scaut_killer_member_1_death} topi_lider_variant_quest_1_text0
+target =  topi_b1_scaut_killer_member_1
+condlist_0 = {=actor_has_item(topi_b12_key_1)} complete
+condlist_1 = {-topi_lider_variant_quest_talking_4 +topi_stalker_base_lider_death} fail
+
+--|>
+[geonezis_topi_lider_variant_quest_2]
+icon = ui_inGame2_Dolg_Artefakts
+prior = 1
+storyline = false
+title = {+topi_b1_scaut_killer_member_2_death} topi_lider_variant_quest_2_title1, {-topi_b1_scaut_killer_member_2_death} topi_lider_variant_quest_2_title0
+descr = {+topi_b1_scaut_killer_member_2_death} topi_lider_variant_quest_2_text1, {-topi_b1_scaut_killer_member_2_death} topi_lider_variant_quest_2_text0
+target =  topi_b1_scaut_killer_member_2
+condlist_0 = {=actor_has_item(topi_b12_key_2)} complete
+condlist_1 = {-topi_lider_variant_quest_talking_4 +topi_stalker_base_lider_death} fail

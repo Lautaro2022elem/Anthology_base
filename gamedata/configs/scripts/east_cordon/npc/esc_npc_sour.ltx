@@ -1,0 +1,69 @@
+[logic] ;Кислый
+active = remark
+on_death = death
+post_combat_time = 0, 0
+
+[remark]
+anim = ward
+target = story | actor
+meet = no_meet
+danger = danger
+on_info = {=dist_to_actor_le(2)} remark@dialog_actor
+gather_items_enabled = false
+combat_ignore_cond = true
+gather_items_enabled = false
+corpse_detection_enabled = false
+on_info2 = {+esc_quest_trifling_matter_compl =dist_to_actor_le(100) =dist_to_actor_ge(50)} %=release_npc%
+on_info3 = {+esc_quest_trifling_matter_proval =dist_to_actor_le(100) =dist_to_actor_ge(50)} %=release_npc%
+
+[remark@dialog_actor]
+anim = wait_na
+target = story | actor
+meet = meet@dialog
+danger = danger
+gather_items_enabled = false
+combat_ignore_cond = true
+gather_items_enabled = false
+corpse_detection_enabled = false
+on_info = {+esc_quest_trifling_sydba} walker
+on_info2 = {+esc_quest_trifling_matter_fail} walker
+on_info3 = {+esc_quest_trifling_matter_compl =dist_to_actor_le(100) =dist_to_actor_ge(50)} %=release_npc%
+on_info4 = {+esc_quest_trifling_matter_proval =dist_to_actor_le(100) =dist_to_actor_ge(50)} %=release_npc%
+
+[walker]
+path_walk = esc_npc_sour_walk
+path_look = esc_npc_sour_look
+meet = meet
+def_state_moving = patrol
+def_state_standing = sit
+on_info = {+esc_quest_trifling_matter_compl =dist_to_actor_le(100) =dist_to_actor_ge(50)} %=release_npc%
+on_info2 = {+esc_quest_trifling_matter_proval =dist_to_actor_le(100) =dist_to_actor_ge(50)} %=release_npc%
+
+[meet@dialog]
+abuse           = false
+close_anim 		= nil
+far_anim 		= nil
+far_victim 		= nil
+close_distance  = 0
+far_distance 	= 0
+close_victim = actor
+use = {!actor_enemy =dist_to_actor_le(2) -esc_quest_trifling_matter_sour_dialog_and} self, true
+allow_break = false
+meet_dialog = esc_quest_trifling_matter_sour_dialog
+trade_enable = false
+
+[meet]
+close_anim 	= nil
+close_victim 	= nil
+far_anim 	= nil
+far_victim 	= nil
+close_distance  = 0
+far_distance 	= 0
+use = {=actor_enemy} false, true
+allow_break 	= false
+
+[smart_terrains]
+none = true
+
+[death]
+on_info = %+esc_npc_sour_dead%

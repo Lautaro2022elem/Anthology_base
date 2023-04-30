@@ -1,0 +1,19 @@
+[logic] 
+active = sr_idle@start 
+
+[sr_idle@start] 
+on_info  = {+spectrum_project_start +sp_a2_hero_to_garbage_come +bar_a2_dop_quest_4_talking_1 +bar_a2_spec_juk_item_1_have -bar_a2_spec_juk_item_2_have =actor_in_zone(bar_a2_azot_quest_4_restr_1)} sr_idle@tutorial_1 %=run_tutorial(bar_b2_spectr_tutor_1)% 
+on_info2  = {+spectrum_project_start +sp_a2_hero_to_garbage_come +bar_a2_dop_quest_4_talking_1 +bar_a2_spec_juk_item_2_have -bar_a2_spec_juk_item_1_have =actor_in_zone(bar_a2_azot_quest_4_restr_1)} sr_idle@tutorial_2 %=run_tutorial(bar_b2_spectr_tutor_2)% 
+on_info3 = {+spectrum_project_start +sp_a2_hero_to_garbage_come +bar_a2_dop_quest_spectr_used} sr_idle@nil
+
+[sr_idle@tutorial_1] 
+on_info   = {+bar_a2_azot_quest_1_talking_1 !actor_in_zone(bar_a2_azot_quest_4_restr_1)} sr_idle@start %=stop_tutorial% 
+on_info2 = {+bar_a2_dop_quest_spectr_used} sr_idle@nil %=stop_tutorial%
+on_info3 = {!has_active_tutorial} sr_idle@start
+
+[sr_idle@tutorial_2] 
+on_info   = {+bar_a2_azot_quest_1_talking_1 !actor_in_zone(bar_a2_azot_quest_4_restr_1)} sr_idle@start %=stop_tutorial% 
+on_info2 = {+bar_a2_dop_quest_spectr_used} sr_idle@nil %=stop_tutorial%
+on_info3 = {!has_active_tutorial} sr_idle@start
+
+[sr_idle@nil] 

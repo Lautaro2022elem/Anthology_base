@@ -1,0 +1,191 @@
+--[[ ------------------------------------------------------------------------------------------------
+ File       : _s_storage.script
+ Description: новый сторадж
+ Copyright  : 2011-2013 © Spectrum project
+ Author     : Viнt@rь(tnx xStream & Malandrius)
+ Last edit  : 02.01.2013 (Viнt@rь)
+ 
+ Since: 02.01.2013 16:18
+	-- написан класс обьекта стораджа
+ Since: 03.01.2013 20:06
+	-- написано корректные сейв/лоад данных в сторадж из нет-пакетов хранилища
+ Since: 28.07.2013 18:26
+	-- пофиксено неправильное использование функции удаления обьекта из игры
+	-- пофиксено не правильная запись значений ключам в storage
+ Since: 11.08.2013 22:47
+	-- пофиксено удаление обьекта стораджа, из за чего мог переполнятся его буфер
+ Since: 13.08.2013 17:13
+	-- пофиксено сохранение/загрузка таблиц с под-таблицами
+--]] ------------------------------------------------------------------------------------------------
+-- функция вывода лога в консоль/новости/файл
+-- TODO в релиз не совать!!!!!!!!!!
+local sName = script_name()
+_log_db = function (sText, ...)
+	if ReadVar(sName,true) then
+		_log(sName..":"..sText, ...)
+	end
+end
+--]] ------------------------------------------------------------------------------------------------
+--/											Variables
+--]] ------------------------------------------------------------------------------------------------
+storage = {}
+local bStReg
+local type2marker = {
+				['boolean']	= 1,
+				['number']	= 2,
+				['string']	= 3,
+				['table']	= 4
+			  }
+local marker2type = {
+				[1] = 'boolean',
+				[2] = 'number',
+				[3] = 'string',
+				[4] = 'table'
+			  }
+--]] ------------------------------------------------------------------------------------------------
+--/											Initialize
+--]] ------------------------------------------------------------------------------------------------
+function Init()
+	event("ActorSave"):register(CreateStorageObj)
+	event("ActorLoad"):register(ReleaseStorageObj)
+end
+--]] ------------------------------------------------------------------------------------------------
+--/											Callback`s
+--]] ------------------------------------------------------------------------------------------------
+function CreateStorageObj()
+	ReleaseStorageObj()
+	if not bStReg then
+		local oStorage = alife():create("custom_storage", vector(), 0, 0)
+		-- никогда не выйдет в онлайн
+    	oStorage:can_switch_online(false)
+    	oStorage:can_switch_offline(true)
+    	bStReg = true
+    end
+end
+
+function ReleaseStorageObj()
+	if bStReg then
+		for k = 1, 65535 do
+			sobj = alife():object(k)
+			if sobj and sobj:section_name() == "custom_storage" then
+				alife():release(sobj)
+				bStReg = nil
+				return
+			end
+		end
+	end
+end
+--* * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * *
+-- *			                    		se_custom_storage		                       			*
+--* * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * *
+class "se_custom_storage" (cse_alife_dynamic_object)
+function se_custom_storage:__init(section) super(section)
+end
+
+function se_custom_storage:on_register()
+	cse_alife_dynamic_object.on_register(self)
+	bStReg = true
+end
+
+function se_custom_storage:STATE_Read(packet, size)
+	cse_alife_dynamic_object.STATE_Read(self, packet, size)
+	_cheksl(packet, "load", false, "se_custom_storage", nil, ReadVar(sName,true)) -- test
+	event("StorageLoad"):once():trigger({packet = packet})
+	_log_db("-Load:")
+	while not packet:r_eof() do
+		local k = packet:r_stringZ()
+		_log_db("Key:[%s]",tostring(k))
+		LoadValue = function()
+			local value
+			local tv = marker2type[packet:r_u8()]
+			if tv == 'string' then
+				value = packet:r_stringZ()
+			elseif tv == 'boolean' then
+				value = packet:r_bool()
+			elseif tv == 'number' then
+				value = packet:r_float()
+			elseif tv == 'table' then
+				local v = {}
+				local n = packet:r_u8()
+				if n > 0 then
+					local b = packet:r_bool()
+					if b then
+						for i = 1, n do
+							v[i] = LoadValue()
+						end
+					else
+						for i = 1, n do
+							local kk = packet:r_stringZ()
+							_log_db("Key:[%s]",kk)
+							v[kk] = LoadValue()
+						end
+					end
+				end
+				value = v
+			end
+			_log_db("Value:[%s]", tostring(value))
+			return value
+		end
+		storage[k] = LoadValue()
+	end
+	event("StorageLoaded"):once():trigger()
+	_log_db("-Loaded")
+	_cheksl(packet, "load", true, "se_custom_storage", nil, ReadVar(sName,true))  -- test
+end
+
+function se_custom_storage:STATE_Write(packet)
+	cse_alife_dynamic_object.STATE_Write(self, packet)
+	_cheksl(packet, "save", false, "se_custom_storage", nil, ReadVar(sName,true))  -- test
+	event("StorageSave"):trigger({packet = packet})
+	_log_db("-Save:")
+	if next(storage) then
+		for k, v in pairs(storage) do
+			if v ~= nil then
+				packet:w_stringZ(k)
+				_log_db("Key:[%s]",tostring(k))
+				SaveValue = function(Value)
+					_log_db("Value:[%s]",tostring(Value))
+					local tv = type(Value)
+					if type2marker[tv] then
+						packet:w_u8(type2marker[tv])
+						if tv == 'string' then
+							packet:w_stringZ(Value)
+						elseif tv == 'boolean' then
+							packet:w_bool(Value)
+						elseif tv == 'number' then
+							packet:w_float(Value)
+						elseif tv == 'table' then
+							local iTblSize = table.size(Value)
+							_log_db("size = [%s]",iTblSize)
+							packet:w_u8(iTblSize)
+							if iTblSize > 0 then
+								packet:w_bool(table.islist(Value))
+								if table.islist(Value) then
+									for i = 1, iTblSize do
+										SaveValue(Value[i])
+									end 
+								else
+									for kk, vv in pairs(Value) do
+										_log_db("Key:[%s]",kk)
+										packet:w_stringZ(kk)
+										SaveValue(vv)
+									end 
+								end
+							end
+						end
+					else
+						_log_db("~Not savable type:=[%s]",tv)
+					end
+				end
+				SaveValue(v)
+			end
+		end
+	end
+	_log_db("-Saved")
+	_cheksl(packet, "save", true, "se_custom_storage", nil, ReadVar(sName,true))  -- test
+end
+
+-- этот объект всегда будет сохраняться
+function se_custom_storage:can_save()
+	return true
+end

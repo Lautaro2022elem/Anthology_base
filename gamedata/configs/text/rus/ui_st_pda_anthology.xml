@@ -1,0 +1,234 @@
+<?xml version="1.0" encoding="windows-1251" ?>
+<string_table>
+
+	
+	<string id="st_ui_pda_legend_junkman">
+		<text>Старьевщик</text>
+	</string>
+	
+	<string id="st_esc_a1_spot_name">
+		<text>Барьер</text>
+	</string>
+	<string id="st_esc_a2_spot_name">
+		<text>Деревня новичков</text>
+	</string>
+	<string id="st_esc_a3_spot_name">
+		<text>КПП</text>
+	</string>
+	<string id="st_esc_a4_spot_name">
+		<text>Лагерь бандитов</text>
+	</string>
+	<string id="st_esc_a5_spot_name">
+		<text>"АТП" База сталкеров</text>
+	</string>
+	<string id="st_esc_a6_spot_name">
+		<text>Элеватор</text>
+	</string>
+	<string id="st_esc_a7_spot_name">
+		<text>Аномалия "Пекарня"</text>
+	</string>
+	<string id="st_esc_a8_spot_name">
+		<text>Аномалия "Тупая яма"</text>
+	</string>
+	<string id="st_esc_a9_spot_name">
+		<text>Аномалия "Кислотная лужа"</text>
+	</string>
+	
+	
+	<string id="bar_a1_spot_name">
+		<text>Хижина отшельника</text>
+	</string>
+	<string id="bar_a2_spot_name">
+		<text>«Туманный лес»</text>
+	</string>
+	<string id="bar_a3_spot_name">
+		<text>Заброшеный ангар</text>
+	</string>
+	<string id="bar_a4_spot_name">
+		<text>Южный блокпост Долга</text>
+	</string>
+	<string id="bar_a5_spot_name">
+		<text>Вербовочный лагерь Чистого Неба</text>
+	</string>
+	<string id="bar_a6_spot_name">
+		<text>Главная база Долга</text>
+	</string>
+	<string id="bar_a7_spot_name">
+		<text>«Бар 100 рентген»</text>
+	</string>
+	<string id="bar_a8_spot_name">
+		<text>Северный блокпост Долга</text>
+	</string>
+	<string id="bar_a9_spot_name">
+		<text>«Арена»</text>
+	</string>
+	
+	<string id="st_search_treasure_sidor_habar_open">
+		<text>Открыть сейф</text>
+	</string>
+	<string id="st_search_treasure_sidor_habar_closed">
+		<text>Закрыто. Нужен ключ</text>
+	</string>
+	
+	
+	<string id="esc_locked_chasovshik_door">
+		<text>Постучать...</text>
+	</string>
+	<string id="esc_locked_chasovshik_door_1">
+		<text>ЗАКРЫТО (нужен ключ)</text>
+	</string>
+	<string id="esc_locked_sidor_door">
+		<text>ЗАКРЫТО (на переучет)</text>
+	</string>
+	
+	
+	
+	<string id="tip_door_locked_reshotka">
+		<text>Дверь заперта с той стороны</text>
+	</string>
+	<string id="bar_ip_door_locked_lab">
+		<text>Дверь заперта</text>
+	</string>
+
+	
+	
+	<!--FantomICW 23.03.14-->
+	<string id="city_a1_spot_name">
+		<text>Аномалия "Безысходность"</text>
+	</string>
+	<string id="city_a2_spot_name">
+		<text>Площадь Ленина</text>
+	</string>
+	<string id="city_a3_spot_name">
+		<text>Здание КПСС</text>
+	</string>
+	<string id="city_a4_spot_name">
+		<text>Дом культуры</text>
+	</string>
+	<string id="city_a5_spot_name">
+		<text>Парк отдыха имени "Гагарина"</text>
+	</string>
+	
+	<string id="st_search_bomba_used">
+		<text>"Заложить взрывчатку"</text>
+	</string>
+	<string id="ui_gui_bomba_caption">
+		<text>"Заложить взрывчатку"</text>
+	</string>
+	<string id="st_menu_rukzak_use">
+		<text>"Установить"</text>
+	</string>
+	<string id="st_menu_rukzak_close">
+		<text>"Закрыть"</text>
+	</string>
+		
+	<!--Topi-->
+	<string id="st_topi_a1_spot_name">
+		<text>База сталкеров</text>
+	</string>
+	<string id="st_topi_a2_spot_name">
+		<text>Старый хутор</text>
+	</string>
+	<string id="st_topi_a3_spot_name">
+		<text>Заброшенная ферма</text>
+	</string>
+	<string id="st_topi_a4_spot_name">
+		<text>Деревня</text>
+	</string>
+	<string id="st_topi_a5_spot_name">
+		<text>Наблюдательный пункт</text>
+	</string>
+	<string id="st_topi_a6_spot_name">
+		<text>Химическая аномалия</text>
+	</string>
+	<string id="st_topi_a7_spot_name">
+		<text>Центральный блокпост</text>
+	</string>
+	<string id="st_topi_a8_spot_name">
+		<text>Термальная аномалия</text>
+	</string>
+	<string id="st_topi_a9_spot_name">
+		<text>Пещеры</text>
+	</string>
+	<string id="st_topi_a10_spot_name">
+		<text>Северный блокпост</text>
+	</string>
+	<string id="st_topi_a11_spot_name">
+		<text>Южный блокпост</text>
+	</string>
+
+
+
+
+
+	<string id="st_pb_a1_name">
+		<text>Старый склад</text>
+	</string>
+	<string id="st_pb_a2_name">
+		<text>Лагерь на холме</text>
+	</string>
+	<string id="st_pb_a3_name">
+		<text>Барьер</text>
+	</string>
+	<string id="st_pb_a4_name">
+		<text>Диспетчерская</text>
+	</string>
+	<string id="st_pb_a5_name">
+		<text>Резерв</text>
+	</string>
+	<string id="st_pb_a6_name">
+		<text>Склад продовольствия</text>
+	</string>
+	<string id="st_pb_a7_name">
+		<text>Заброшенное убежище</text>
+	</string>
+	<string id="st_esc_a9_spot_name">
+		<text>Аномалия "Пылающая земля"</text>
+	</string>
+	<string id="st_blck_val_a1_spot_name">
+		<text>Северный хутор</text>
+	</string>
+	<string id="st_blck_val_a2_spot_name">
+		<text>Аномалия "Адский круг"</text>
+	</string>
+	<string id="st_blck_val_a3_spot_name">
+		<text>Стройплощадка</text>
+	</string>
+	<string id="st_blck_val_a4_spot_name">
+		<text>Отстойник</text>
+	</string>
+	<string id="st_blck_val_a5_spot_name">
+		<text>Аномальная роща</text>
+	</string>
+	<string id="st_blck_val_a6_spot_name">
+		<text>Металлургический завод</text>
+	</string>
+	<string id="st_blck_val_a7_spot_name">
+		<text>Панский хутор</text>
+	</string>
+	<string id="st_perehod_in_valley_to_labx6">
+		<text>В лабораторию Х7</text>
+	</string>
+	<string id="pb_outro_text_1">
+		<text>Конец.</text>
+	</string>
+	<string id="ui_st_sr_level_changer_closed">
+		<text>Я не собираюсь покидать локацию сейчас, на ней пребывает моя группа и контракт у Сидоровича еще не выполнен.</text>
+	</string>
+	<string id="ui_st_sr_level_changer_labx7">
+		<text>Спуститься в лабораторию?</text>
+	</string>
+	<string id="ui_st_sr_level_changer_closed_labx7">
+		<text>А в билде сюда попасть нельзя, да и рано вам сюда еще.</text>
+	</string>
+	<string id="ui_st_sr_level_changer_station">
+		<text>Подняться вверх по лестнице?</text>
+	</string>
+	<string id="ui_st_sr_level_changer_station_closed">
+		<text>Перед уходом нужно завалить проход, чтобы Стронглав не последовал за мной.</text>
+	</string>
+	<string id="ui_st_sr_level_changer_explosive">
+		<text>Назад дороги нет, я подорвал проход.</text>
+	</string>
+
+</string_table>

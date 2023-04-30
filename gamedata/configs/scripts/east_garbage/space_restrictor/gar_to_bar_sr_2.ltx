@@ -1,0 +1,10 @@
+[logic]
+active = nil ;sr_level_changer
+
+[sr_level_changer]
+type				= {-gar_to_bar_sr_1_infa_open} close, {+gar_to_bar_sr_1_infa_open} open
+level_changer_sid	= gar_to_bar_lchanger_2
+spot 				= level_changer_up|to_bar
+travel_time         = 0|30
+save_text			= to_bar
+message_impossible	= {-gar_to_bar_sr_1_infa_open} ui_st_sr_level_changer_impossible_gar_bar

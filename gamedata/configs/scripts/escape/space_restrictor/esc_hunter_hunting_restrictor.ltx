@@ -1,0 +1,16 @@
+[logic]
+active = sr_idle@hunting_start
+
+[sr_idle@hunting_start]
+on_info = {+esc_hunter_hunting_psy_dog_found} sr_idle@spawn_psy_dog
+
+[sr_idle@spawn_psy_dog]
+on_timer = 1000 | sr_idle@give_quest_kill %=spawn_object(esc_psy_dog_quest:esc_psy_dog_quest_spawn)%
+
+[sr_idle@give_quest_kill]
+on_timer = 1000 | sr_idle@give_quest_item_flash %+esc_hunter_hunting_psy_dog_give%
+
+[sr_idle@give_quest_item_flash]
+on_info = {=actor_has_item(esc_flash_klim) -esc_flask_klim_give_done} sr_idle@nil %=esc_flask_klim_give +esc_flask_klim_give_done%
+
+[sr_idle@nil]

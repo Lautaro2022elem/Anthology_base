@@ -1,0 +1,38 @@
+;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
+;;;;;;;;;;;;;;; Второстепенные квесты на Кордоне by Stalker66 ;;;;;;;;;;;;;;;;;;;;;;;;;
+;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
+
+[esc_zohan_flair_quest] ;Чутьё Зохана
+icon = ui_inGame2_Reputatsiya
+prior = 200
+storyline = true
+title = {+dialog_zohan_pda_fleshka_u_menja}esc_zohan_flair_quest_7_name, {=actor_has_item(esc_flash_for_keys) =actor_has_item(esc_papka_for_keys) +esc_lisiy_keys_quest_complete}esc_zohan_flair_quest_6_name, {+esc_dialog_zohan_keys_complete}esc_zohan_flair_quest_5_name, {+lisiy_dialog_tonnel_start +lisiy_gone}esc_zohan_flair_quest_4_name, {+esc_cherep_bandit_dead =actor_has_item(esc_lisiy_keys) -lisiy_gone}esc_zohan_flair_quest_10_name, {+esc_cherep_bandit_dead -lisiy_gone}esc_zohan_flair_quest_11_name, {!is_day +esc_lisiy_notes_read -lisiy_gone}esc_zohan_flair_quest_3_name, {=is_day +esc_lisiy_notes_read -lisiy_gone}esc_zohan_flair_quest_2_name, {+esc_esc_lisiy_notes_picked_up -lisiy_gone}esc_zohan_flair_quest_9_name, {+esc_actor_go_to_cherep_notes}esc_zohan_flair_quest_1_name, {+esc_old_notebook_picked_up}esc_zohan_flair_quest_8_name, esc_zohan_flair_quest_0_name
+descr = {+dialog_zohan_pda_fleshka_u_menja}esc_zohan_flair_quest_7_text, {=actor_has_item(esc_flash_for_keys) =actor_has_item(esc_papka_for_keys) +esc_lisiy_keys_quest_complete}esc_zohan_flair_quest_6_text, {+esc_dialog_zohan_keys_complete}esc_zohan_flair_quest_5_text, {+lisiy_dialog_tonnel_start +lisiy_gone}esc_zohan_flair_quest_4_text, {+esc_cherep_bandit_dead =actor_has_item(esc_lisiy_keys) -lisiy_gone}esc_zohan_flair_quest_10_text, {+esc_cherep_bandit_dead -lisiy_gone}esc_zohan_flair_quest_11_text, {!is_day +esc_lisiy_notes_read -lisiy_gone}esc_zohan_flair_quest_3_text, {=is_day +esc_lisiy_notes_read -lisiy_gone}esc_zohan_flair_quest_2_text, {+esc_esc_lisiy_notes_picked_up -lisiy_gone}esc_zohan_flair_quest_9_text, {+esc_actor_go_to_cherep_notes}esc_zohan_flair_quest_1_name, {+esc_old_notebook_picked_up}esc_zohan_flair_quest_8_text, esc_zohan_flair_quest_0_text
+target = {+dialog_zohan_pda_fleshka_u_menja}esc_squad_stalker_zohan, {=actor_has_item(esc_flash_for_keys) =actor_has_item(esc_papka_for_keys) +esc_lisiy_keys_quest_complete}esc_squad_stalker_zohan, {+esc_dialog_zohan_keys_complete}nil, {+lisiy_dialog_tonnel_start +lisiy_gone}esc_squad_stalker_zohan, {+esc_cherep_bandit_dead =actor_has_item(esc_lisiy_keys) -lisiy_gone}esc_squad_stalker_zohan, {+lisiy_dialog_tonnel_start =actor_has_item(esc_lisiy_keys)}esc_squad_stalker_zohan, {+esc_lisiy_notes_read +esc_esc_lisiy_notes_picked_up =is_night}esc_quest_zone_to_zohan_flair_2, {+esc_esc_lisiy_notes_picked_up}nil, {+esc_actor_go_to_cherep_notes}esc_lisiy_notes, esc_quest_zone_to_zohan_flair
+condlist_0 = {+zohan_flair_quest_complete} complete
+
+[esc_lisiy_keys_quest] ;Странный кейс
+icon = ui_inGame2_Memmory_start
+storyline = false
+title = {+esc_lisiy_keys_crash_time_out}esc_keys_lisiy_quest_1_name, esc_keys_lisiy_quest_0_name
+descr = {+esc_lisiy_keys_crash_time_out}esc_keys_lisiy_quest_1_text, esc_keys_lisiy_quest_0_text
+target = {+esc_lisiy_keys_crash_time_out}esc_mechanic_furgon, nil
+condlist_0 = {+esc_lisiy_keys_quest_complete} complete
+
+[esc_witch_bounce_quest] ;Ведьмин круг
+icon = ui_inGame2_Prostranstvennaya_anomaly
+prior = 200
+storyline = true
+title = {+esc_dialog_bobik_vagon}esc_witch_bounce_quest_1_name, esc_witch_bounce_quest_0_name
+descr = {+esc_dialog_bobik_vagon}esc_witch_bounce_quest_1_text, esc_witch_bounce_quest_0_text
+target = {+esc_dialog_bobik_vagon}esc_barmen_base, esc_sr_witcher_bounce
+condlist_0 = {+esc_witch_bounce_quest_complete} complete
+condlist_1 = {+esc_shilov_quest_cancel} reversed
+
+[esc_chain_of_events_quest] ;Цепь событий
+icon = ui_inGame2_Sudba_deshifratora
+storyline = false
+title = {+esc_controller_jd_dead}esc_chain_of_events_quest_1_name, {+esc_postavil_metku_jd_kontr +esc_dialog_shtik_quest_was_anomaly}esc_chain_of_events_quest_2_name, esc_chain_of_events_quest_0_name
+descr = {+esc_controller_jd_dead}esc_chain_of_events_quest_2_text, {+esc_postavil_metku_jd_kontr +esc_dialog_shtik_quest_was_anomaly}esc_chain_of_events_quest_1_text, esc_chain_of_events_quest_0_text
+target = {+esc_controller_jd_dead}esc_barmen_base, {+esc_postavil_metku_jd_kontr +esc_dialog_shtik_quest_was_anomaly}esc_target_actor_to_tonnel_jd, nil
+condlist_0 = {+esc_chain_of_events_quest_complete} complete

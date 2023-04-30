@@ -1,0 +1,9 @@
+[logic]
+active = sr_no_weapon
+
+[sr_no_weapon]
+on_info = {+spectrum_project_start +esc_quest_dangerous_business_teleport -esc_quest_dangerous_business_live_shmiga -esc_bandit_shmiga_dead} sr_idle@duel
+
+[sr_idle@duel]
+on_info  = {+esc_quest_dangerous_business_live_shmiga} sr_no_weapon
+on_info2 = {+esc_bandit_shmiga_dead} sr_no_weapon

@@ -1,0 +1,16 @@
+[logic]
+active = sr_idle
+
+[sr_idle]
+on_actor_inside = {+esc_dialog_wolf_operation_end} sr_idle@zver_come_trader %=SidorFirstMeet =run_postprocess(black:2525:true)%
+
+[sr_idle@zver_come_trader]
+on_timer = 2000 | sr_idle@zver_come_trader_1 %=teleport_actor(esc_actor_come_to_trader_walk:esc_actor_come_to_trader_look)%
+
+[sr_idle@zver_come_trader_1]
+on_timer = 500 | sr_idle@zver_come_trader_2 %=stop_postprocess(2525)%
+
+[sr_idle@zver_come_trader_2]
+on_timer = 9500 | sr_idle@nil %=enable_ui%
+
+[sr_idle@nil]

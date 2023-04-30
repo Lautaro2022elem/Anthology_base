@@ -1,0 +1,36 @@
+[logic@wiz_chip]
+suitable = {=check_npc_name(wiz_chip)} true
+trade = items\trade\trade_generic_medic.ltx
+prior = 200
+active = animpoint@wiz_chip
+can_select_weapon = false
+level_spot = medic
+
+[animpoint@wiz_chip]
+cover_name = wiz_bivsh_nii_medik_cover
+avail_animations = animpoint_sit_normal
+use_camp = false
+combat_ignore_cond = true
+combat_ignore_keep_when_attacked = true
+gather_items_enabled = false
+help_wounded_enabled = false
+corpse_detection_enabled = false
+invulnerable = true
+meet = meet@wiz_chip
+
+[meet@wiz_chip]
+close_snd_hello = wiz_stalker_medik_greeting
+close_snd_bye 	= wiz_stalker_medik_farewell
+close_anim 		= nil
+close_victim 	= nil
+far_anim 		= nil
+far_victim 		= nil
+close_distance  = 0
+far_distance 	= 0
+close_snd_distance = 3
+use 			= nil
+trade_enable    = true
+allow_break 	= false
+meet_on_talking = true
+
+

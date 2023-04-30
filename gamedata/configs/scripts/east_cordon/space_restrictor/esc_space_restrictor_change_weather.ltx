@@ -1,0 +1,8 @@
+[logic]
+active = nil ; sr_idle@1
+
+[sr_idle@1]
+on_actor_in_zone = esc_space_restrictor_change_weather | sr_idle@2 %=SetWeather(indoor)%
+
+[sr_idle@2] 
+on_actor_not_in_zone = esc_space_restrictor_change_weather | sr_idle@1 %=SetWeather(default_cloudy)%

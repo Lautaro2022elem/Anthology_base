@@ -1,0 +1,10 @@
+[logic]
+active = sr_idle@start_bad_end_game
+
+[sr_idle@start_bad_end_game]
+on_actor_inside = {+labx7_actor_stay_in_level} sr_idle@start_bad_end_game_1 %=labx7_actor_replic_destroy_way%
+
+[sr_idle@start_bad_end_game_1]
+on_timer = 5000 | sr_idle@nil %+labx7_give_info_explosive_in_plant%
+
+[sr_idle@nil]

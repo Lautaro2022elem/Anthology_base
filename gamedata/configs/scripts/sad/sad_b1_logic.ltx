@@ -1,0 +1,387 @@
+[meet_guard]
+close_distance = 5
+close_anim = guard_na
+close_victim = actor
+use = {=actor_enemy} false ,{=actor_has_weapon } false, true
+;abuse = true
+trade_enable = false
+snd_on_use = {=actor_has_weapon} meet_hide_weapon, nil
+
+[walker@default_0]
+gather_items_enabled = false
+help_wounded_enabled = false
+corpse_detection_enabled = false
+
+[walker@default_1]:walker@default_0
+out_restr = sad_b1_sr_no_assault
+in_restr = sad_b1_sr_light
+
+[meet_animpoint]
+close_distance 	= 2
+close_anim      = nil
+close_victim    = nil
+use				= {=actor_enemy} false ,{=actor_has_weapon } false, true
+abuse			= true
+snd_on_use 		= {=actor_has_weapon} meet_hide_weapon, nil
+
+[animpoint@sad_b1_animp_def]
+reach_movement = walk_noweap
+use_camp = true
+meet = meet_animpoint
+out_restr = sad_b1_sr_no_assault
+gather_items_enabled = false
+help_wounded_enabled = false
+corpse_detection_enabled = false
+
+; -------------------------------------------------------------------------------------------------------- BUNKER GUARD 1
+[logic@sad_b1_guarder_1]
+active = walker@guarder_1 
+;suitable = {=check_npc_name(sim_default_stalker)} true
+prior = 190
+
+[walker@guarder_1]:walker@default_1
+path_walk = guarder_1b_walk
+path_look = guarder_1b_look
+def_state_standing = sit
+on_game_timer = 1000 | walker@guarder_1b
+meet = meet_animpoint
+on_info = {-sad_snd_miningit_1 =dist_to_actor_le(8)} remark@guarder_1 %+sad_snd_miningit_1 =play_sound(sad_miningit_a)%
+
+[walker@guarder_1b]:walker@default_1
+path_walk = guarder_1_walk
+path_look = guarder_1_look
+on_game_timer = 500 | walker@guarder_1
+meet = meet_animpoint
+
+[remark@guarder_1]:walker@default_1
+meet = no_meet
+anim = sit
+target = path | sad_b1_guarder_1b_look, 0
+on_signal = sound_end | remark@guarder_1x
+
+[remark@guarder_1x]:walker@default_1
+meet = no_meet
+anim = sit
+target = path | sad_b1_guarder_1b_look, 0
+on_timer = 1000 | walker@guarder_1b %+sad_snd_miningit_2%
+
+; -------------------------------------------------------------------------------------------------------- BUNKER GUARD 2
+[logic@sad_b1_guarder_2]
+active = walker@guarder_2 
+;suitable = {=check_npc_name(sim_default_stalker)} true
+prior = 190
+
+[walker@guarder_2]:walker@default_1
+path_walk = guarder_2_walk
+path_look = guarder_2_look
+on_info = {=is_rain} animpoint@guarder_2
+on_game_timer = 900 | animpoint@guarder_2
+meet = meet_animpoint
+on_info = {+sad_snd_miningit_2} %-sad_snd_miningit_2 =play_sound(sad_miningit_b)%
+
+[animpoint@guarder_2]:walker@default_1
+cover_name = sad_b1_bunker_sit
+on_game_timer = 900 | {!is_rain} walker@guarder_2
+meet = meet_animpoint
+on_info = {+sad_snd_miningit_2} %-sad_snd_miningit_2 =play_sound(sad_miningit_b)%
+
+; -------------------------------------------------------------------------------------------------------- VHOD GUARD 3
+[logic@sad_b1_guarder_3]
+active = walker@guarder_3
+;suitable = {=check_npc_name(sim_default_stalker)} true
+prior = 190
+
+[walker@guarder_3]:walker@default_1
+path_walk = guarder_3_walk
+path_look = guarder_3_look
+meet = meet_guard
+use_camp = false
+
+; -------------------------------------------------------------------------------------------------------- VHOD GUARD 4
+[logic@sad_b1_guarder_4]
+active = walker@guarder_4
+;suitable = {=check_npc_name(sim_default_stalker)} true
+prior = 190
+
+[walker@guarder_4]:walker@guarder_3
+path_walk = guarder_4_walk
+path_look = guarder_4_look
+meet = meet_animpoint
+
+; ----------------------------------------------------------------------------------------------- job 1 (palatka)
+[logic@job_1]
+active = animpoint@sad_b1_animp1
+;suitable = {=check_npc_name(sim_default_stalker)} true
+prior = 140
+
+[animpoint@sad_b1_animp1]:animpoint@sad_b1_animp_def
+cover_name = sad_b1_animp1
+on_info = { =is_rain } animpoint@sad_b1_animp1_rain
+
+[animpoint@sad_b1_animp1_rain]:animpoint@sad_b1_animp_def
+cover_name = sad_b1_animp1_rain
+on_info = { !is_rain } animpoint@sad_b1_animp1
+
+; ----------------------------------------------------------------------------------------------- job 2 (palatka)
+[logic@job_2]
+active = animpoint@sad_b1_animp2
+;suitable = {=check_npc_name(sim_default_stalker)} true
+prior = 140
+
+[animpoint@sad_b1_animp2]:animpoint@sad_b1_animp_def
+cover_name = sad_b1_animp2
+on_info = { =is_rain } walker@sad_b1_animp2_rain
+
+[walker@sad_b1_animp2_rain]:animpoint@sad_b1_animp_def
+path_walk = animp2_rain_walk
+path_look = animp2_rain_look
+on_info = { !is_rain } animpoint@sad_b1_animp2
+
+; ----------------------------------------------------------------------------------------------- job 3
+[logic@job_3]
+active = animpoint@sad_b1_animp3
+;suitable = {=check_npc_name(sim_default_stalker)} true
+prior = 140
+
+[animpoint@sad_b1_animp3]:animpoint@sad_b1_animp_def
+cover_name = sad_b1_animp3
+on_info = { =is_rain } animpoint@sad_b1_animp3_rain
+
+[animpoint@sad_b1_animp3_rain]:animpoint@sad_b1_animp_def
+cover_name = sad_b1_animp3_rain
+on_info = { !is_rain } animpoint@sad_b1_animp3
+
+
+; ------------------------------------------------------------------------------------------------ job 4 = otgiman
+[logic@job_4]
+active = walker@sad_b1_animp4
+suitable = {!is_squad_commander} true
+prior = 150
+
+[walker@sad_b1_animp4]:animpoint@sad_b1_animp_def
+path_walk = animp4_walk
+path_look = animp4_look
+on_info = { =is_rain } animpoint@sad_b1_animp4_rain
+on_game_timer = 850 | {-sad_b1_gym_started} animpoint@4_shadow_reach %+sad_b1_gym_started%
+
+[animpoint@4_shadow_reach]:animpoint@sad_b1_animp_def
+cover_name = sad_b1_shadow_place
+avail_animations = sad_shadowbox
+use_camp = false
+meet = no_meet
+on_info = {=animpoint_reached} animpoint@4_shadow_act
+
+[animpoint@4_shadow_act]
+cover_name = sad_b1_shadow_place
+avail_animations = sad_shadowbox
+use_camp = false
+meet = no_meet
+on_game_timer = 210 | walker@sad_b1_animp4 %-sad_b1_gym_started%
+gather_items_enabled = false
+help_wounded_enabled = false
+corpse_detection_enabled = false
+
+[animpoint@sad_b1_animp4_rain]:animpoint@sad_b1_animp_def
+cover_name = sad_b1_animp4_rain
+on_info = { !is_rain } walker@sad_b1_animp4
+
+; --------------------------------------------------------------------------------------------  job 5 = turnik
+[logic@job_5]
+active = animpoint@sad_b1_animp5
+suitable = {!is_squad_commander} true
+prior = 150
+
+[animpoint@sad_b1_animp5]:animpoint@sad_b1_animp_def
+cover_name = sad_b1_animp5
+on_info = {=is_rain} walker@sad_b1_animp5_rain
+on_game_timer = 920 | {-sad_b1_gym_started} animpoint@5_turnik %+sad_b1_gym_started%
+
+[animpoint@5_turnik]:animpoint@sad_b1_animp_def
+cover_name = sad_b1_animp_turnik
+avail_animations = turnik
+use_camp = false
+meet = no_meet
+on_info = {=is_rain} walker@sad_b1_animp5_rain
+on_info2 = {=animpoint_reached} animpoint@5_turnik_anim
+
+[animpoint@5_turnik_anim]
+cover_name = sad_b1_animp_turnik
+avail_animations = turnik
+use_camp = false
+meet = no_meet
+on_game_timer = 180 | animpoint@sad_b1_animp5 %-sad_b1_gym_started%
+gather_items_enabled = false
+help_wounded_enabled = false
+corpse_detection_enabled = false
+
+[walker@sad_b1_animp5_rain]
+path_walk = rain_job_5_walk
+path_look = rain_job_5_look
+on_info = {!is_rain} animpoint@sad_b1_animp5
+
+
+; --------------------------------------------------------------------------------------------  job 6 = house
+[logic@job_6]
+active = animpoint@6_1
+suitable = {!is_squad_commander} true
+prior = 140
+
+[animpoint@6_1]:animpoint@sad_b1_animp_def
+cover_name = sad_b1_animp_11
+on_game_timer = 600 | walker@6_2
+
+[walker@6_2]:walker@default_1
+path_walk = house_window_1_walk
+path_look = house_window_1_look
+on_game_timer = 600 | animpoint@6_1
+def_state_standing = guard
+meet = meet_animpoint
+
+; --------------------------------------------------------------------------------------------  job 7 = house
+[logic@job_7]
+active = walker@7_0
+suitable = {!is_squad_commander} true
+prior = 140
+
+[walker@7_0]:walker@default_1
+path_walk = house_obhod_1_walk
+path_look = house_obhod_1_look
+on_info = {+sad_mutny_gone} walker@7_1 %=sad_give_item_if_hasnt(wpn_spas12:ammo_12x76_zhekan)%, walker@7_1 %=sad_give_item_if_hasnt(wpn_toz34:ammo_12x76_zhekan)%
+
+[walker@7_1]:walker@default_1
+path_walk = house_obhod_1_walk
+path_look = house_obhod_1_look
+on_game_timer = 1500 | {+sad_mutny_gone} walker@7_1 %=sad_give_item_if_hasnt(wpn_spas12:ammo_12x76_zhekan)%, walker@7_1 %=sad_give_item_if_hasnt(wpn_toz34:ammo_12x76_zhekan)%
+
+; --------------------------------------------------------------------------------------------  job 8 = house
+[logic@job_8]
+active = animpoint@8_1
+suitable = {!is_squad_commander} true
+prior = 140
+
+[animpoint@8_1]:animpoint@sad_b1_animp_def
+cover_name = sad_b1_animp_12
+on_game_timer = 900 | walker@8_2
+
+[walker@8_2]:walker@default_1
+path_walk = back_balkon_walk
+path_look = back_balkon_look
+on_game_timer = 400 | animpoint@8_1
+meet = meet_animpoint
+
+; --------------------------------------------------------------------------------------------  job 9 lager obhod
+[logic@job_9]
+active = walker@9_0
+suitable = {!is_squad_commander} true
+prior = 150
+
+[walker@9_0]:walker@default_1
+path_walk = lager_obhod_walk
+path_look = lager_obhod_look
+on_info = {+sad_mutny_gone} walker@9_1 %=sad_give_item_if_hasnt(wpn_spas12:ammo_12x76_zhekan)%, walker@9_1 %=sad_give_item_if_hasnt(wpn_toz34:ammo_12x76_zhekan)%
+
+[walker@9_1]:walker@default_1
+path_walk = lager_obhod_walk
+path_look = lager_obhod_look
+on_game_timer = 1500 | {+sad_mutny_gone} walker@9_1 %=sad_give_item_if_hasnt(wpn_spas12:ammo_12x76_zhekan)%, walker@9_1 %=sad_give_item_if_hasnt(wpn_toz34:ammo_12x76_zhekan)%
+
+; --------------------------------------------------------------------------------------------  job 10 barak
+[logic@job_10]
+active = walker@10_1
+suitable = {!is_squad_commander} true
+prior = 130
+
+[walker@10_1]:walker@default_1
+path_walk = barak_okno_walk
+path_look = barak_okno_look
+on_game_timer = 500 | animpoint@10_2
+meet = meet_animpoint
+use_camp = false
+
+[animpoint@10_2]:animpoint@sad_b1_animp_def
+cover_name = sad_b1_animp_13
+on_game_timer = 900 | walker@10_1
+
+; --------------------------------------------------------------------------------------------  job 11 barak
+[logic@job_11]
+active = animpoint@11_2
+;suitable = {=check_npc_name(sim_default_stalker)} true
+prior = 130
+
+[walker@11_1]:walker@default_1
+path_walk = barak_okno2_walk
+path_look = barak_okno2_look
+on_game_timer = 400 | animpoint@11_2
+use_camp = false
+
+[animpoint@11_2]:animpoint@sad_b1_animp_def
+cover_name = sad_b1_animp_14
+on_game_timer = 1000 | walker@11_1
+
+; --------------------------------------------------------------------------------------------  job 12 
+[logic@job_12]
+active = walker@12_3
+suitable = {!is_squad_commander} true
+prior = 160
+
+[walker@12_1]:walker@default_1					; shooting snork
+path_walk = rimsa_snork_strelec
+path_look = snork_target
+on_timer = 10000 | animpoint@12_2
+use_camp = false
+
+[animpoint@12_2]:animpoint@sad_b1_animp_def		; balkon sit
+cover_name = sad_b1_rimsa_sed_misto
+avail_animations = sad_b1_rimsa_sed
+use_camp = false
+meet = no_meet
+reach_distance = 0.3
+on_game_timer = 900 | walker@12_3
+
+[walker@12_3]:walker@default_1					; diesel inspekce
+path_walk = diesel_walk
+path_look = diesel_look
+on_game_timer = 550 | walker@12_4 %=sad_give_item_if_hasnt(detector_advanced) =sad_reset_animation%
+use_camp = false
+
+[walker@12_4]:walker@default_1					; anomal inspekce
+path_walk = anomal_inspekce_walk
+path_look = anomal_inspekce_look
+on_game_timer = 300 | animpoint@12_5
+use_camp = false
+
+[animpoint@12_5]:animpoint@sad_b1_animp_def		; ladder reach
+cover_name = sad_b1_ladder_anim
+avail_animations = wait_na
+use_camp = false
+meet = no_meet
+reach_distance = 0.3
+on_info = {=animpoint_reached} animpoint@12_7
+
+[animpoint@12_7]:animpoint@sad_b1_animp_def		; ladder action
+cover_name = sad_b1_ladder_anim
+avail_animations = sad_b1_ladder_up
+use_camp = false
+meet = no_meet
+on_timer = 6000 | {+sad_mutny_gone} walker@12_1 %=sad_give_item_if_hasnt(wpn_protecta:ammo_12x76_zhekan)%, walker@12_1 %=sad_give_item_if_hasnt(wpn_wincheaster1300:ammo_12x76_zhekan)%
+
+; ----------------------------------------------------------------------------------------------- SARAY SLEEPER 1
+[logic@sad_b1_sleeper_1]
+active = sleeper@sleeper_1
+suitable = {=check_npc_name(sim_default)} true
+prior = 120
+
+[sleeper@sleeper_1]
+path_main = saray_sleep
+meet = no_meet
+
+; --------------------------------------------------------------------------------------------------------
+
+
+
+[hit]
+
+[death]
+
+
+

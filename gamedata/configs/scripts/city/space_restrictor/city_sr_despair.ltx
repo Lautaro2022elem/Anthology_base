@@ -1,0 +1,20 @@
+[logic]
+active = sr_idle
+
+[sr_idle]
+on_info = {+spectrum_project_start +labx14_search_exit_complete +city_npc_sp_leader_dialog_info} sr_idle@1 %=spawn_object(city_npc_kolyazin_final:city_npc_kolyazin_final_spawn) +city_hit_army_bay_gg_stop%
+
+[sr_idle@1]
+on_actor_inside = {-city_npc_army_enemy -city_despair_runrun +city_npc_sp_leader_dialog_info} sr_idle@2 %=city_sms_genarmy_6%
+
+[sr_idle@2]
+on_info = {+city_npc_kolyazin_final_dialog_info} sr_idle@kill %=disable_ui%
+on_info2 = {+city_despair_runrun} sr_idle@nil
+
+[sr_idle@kill]
+on_info = {+city_npc_kolyazin_final_hit} sr_idle@kill2
+
+[sr_idle@kill2]
+on_game_timer = 15 | sr_idle@nil %=kill_actor%
+
+[sr_idle@nil]

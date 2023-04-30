@@ -1,0 +1,28 @@
+[logic]
+active = sr_idle@wait
+
+[sr_idle@wait]
+on_info = {+sad_b3_killers_gone} sr_idle@2, {+sad_actor_enemy_to_someone} sr_idle@nil
+
+[sr_idle@2]
+on_info = {+sad_actor_enemy_to_someone} sr_idle@nil, {=sad_dist_to_path_ge(sad_b3_trader_spawn:40000)} sr_idle@2x %=create_squad(sad_b3_bunker_squad:sad_b3) =create_squad(sad_b3_technic_squad:sad_b3)%
+
+[sr_idle@2x]
+on_info = sr_idle@3 %=remove_squad(sad_b3a_stalker_ataka_squad)%
+
+[sr_idle@3]
+on_info = {+sad_b3_trader_give_task} sr_idle@100 %=give_task(sad_b3_trader_task) +sad_b3a_start_simulation%
+on_info2 = {+sad_b3_trader_enemy} sr_idle@nil, {+sad_b3_trader_dead} sr_idle@nil
+
+[sr_idle@100]
+on_info = {=actor_in_zone(sad_psi_cave_enter_spot)} sr_idle@110 %+sad_psi_cave_actor_was_where%, {=actor_in_zone(sad_psi_cave_restrictor)} sr_idle@110 %+sad_psi_cave_actor_was_where%
+on_info2 = {+sad_b3_trader_enemy} sr_idle@nil, {+sad_b3_trader_dead} sr_idle@nil, {+sad_b3_trader_task_done} sr_idle@nil
+
+[sr_idle@110]
+on_info = {=actor_has_item(sad_psi_case)} %+sad_b3_trader_task_have%, %-sad_b3_trader_task_have%
+on_info2 = {+sad_b3_trader_enemy} sr_idle@nil, {+sad_b3_trader_dead} sr_idle@nil, {+sad_b3_trader_task_done} sr_idle@nil
+
+[sr_idle@nil]
+on_info = sr_idle@ppp %+sad_b3a_start_simulation%
+
+[sr_idle@ppp]

@@ -1,0 +1,15 @@
+[logic]
+active = nil; sr_idle@wait
+
+[sr_idle@wait]
+on_actor_inside = sr_cutscene 
+
+[sr_cutscene]
+point = agr_trailer_victim_scene_actor_walk
+look = agr_trailer_victim_scene_actor_look
+cam_effector = scenario_cam\agroprom\agr_trailer_victim_scene_cam
+global_cameffect = true
+enable_ui_on_end = true
+on_signal = cameff_end | sr_idle@end %+agr_trailer_victim_scene_cam_done% ;%=teleport_actor(arn_test_actor_jump_walk_2:arn_test_actor_jump_look_2) =destroy_object(story:arn_test_actor_jump_stalker)%
+
+[sr_idle@end]

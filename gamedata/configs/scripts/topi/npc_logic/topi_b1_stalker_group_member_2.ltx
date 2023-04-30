@@ -1,0 +1,30 @@
+[logic]
+suitable = {=check_npc_name(topi_b1_stalker_group_member_2)} true
+active = move@guard
+
+[move@guard]
+scheme_type            = patrol
+patrol_count_path      = 3
+patrol_path_1          = 627246
+patrol_path_1_state    = patrol
+patrol_path_2          = 585433
+patrol_path_2_state    = patrol
+patrol_path_3          = 587427
+patrol_path_3_state    = patrol
+invulnerable           = false
+meet                   = no_meet
+on_info                = {+topi_b1_leader_1_quest_mine_all_find} nil %=release_npc%
+
+
+[no_meet]
+close_anim 		= nil
+close_victim 	= nil
+far_anim 		= nil
+far_victim 		= nil
+close_distance  = 0
+far_distance 	= 0
+close_snd_distance = 3
+abuse           = true
+use             = false
+allow_break     = true
+meet_on_talking = false

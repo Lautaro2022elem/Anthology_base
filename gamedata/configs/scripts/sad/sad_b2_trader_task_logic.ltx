@@ -1,0 +1,21 @@
+[logic]
+active = sr_idle@spawn_corpse
+
+[sr_idle@spawn_corpse]
+on_info = sr_idle@wait_for_start %=spawn_corpse(sad_military_corpsik:sad_corpse_military_spawn)%
+
+[sr_idle@wait_for_start]
+on_info = {-sad_actor_has_sim_8_key =actor_has_item(sad_sim_8_inventory_key)} %+sad_actor_has_sim_8_key =create_squad(sad_sim_18_tushkans:sad_sim_18)%
+on_info2 = {+sad_b2_trader_nb_task_give} sr_idle@10 %=give_task(sad_b2_trader_nb_task)%
+on_info3 = {+sad_actor_enemy_b2} sr_idle@wait_for_key
+
+[sr_idle@10]
+on_info = {-sad_actor_has_sim_8_key =actor_has_item(sad_sim_8_inventory_key)} %+sad_actor_has_sim_8_key =create_squad(sad_sim_18_tushkans:sad_sim_18)%
+on_info2 = {=actor_has_item(sad_b2_trader_notebook)} %+sad_b2_trader_nb_have%, %-sad_b2_trader_nb_have%
+on_info3 = {+sad_actor_enemy_b2} sr_idle@wait_for_key
+on_info4 = {+sad_b2_trader_nb_task_done} sr_idle@nil
+
+[sr_idle@wait_for_key]
+on_info = {+sad_actor_has_sim_8_key} sr_idle@nil, {=actor_has_item(sad_sim_8_inventory_key)} sr_idle@nil %+sad_actor_has_sim_8_key =create_squad(sad_sim_18_tushkans:sad_sim_18)%
+
+[sr_idle@nil]

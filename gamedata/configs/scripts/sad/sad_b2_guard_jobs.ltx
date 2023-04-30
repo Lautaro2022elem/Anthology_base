@@ -1,0 +1,103 @@
+[hit]
+on_info = {-sad_actor_enemy_b2 =actor_enemy} %+sad_actor_enemy_b2%
+
+[death]
+on_info = {-sad_actor_enemy_b2 =killed_by_actor} %+sad_actor_enemy_b2%
+
+; ----------------------------------------------------------------------------- BGuard 1
+[logic@sad_b2_bguard_1]
+suitable = {=check_npc_name(sim_default_stalker)} true
+active = walker@bguard_1
+on_death = death
+on_hit = hit
+prior = 190
+
+[walker@bguard_1]
+path_walk = bguard_2_walk
+path_look = bguard_2_look
+out_restr = sad_b2_sr_no_assault
+
+; ----------------------------------------------------------------------------- BGuard 2
+[logic@sad_b2_bguard_2]
+suitable = {=check_npc_name(sim_default_stalker)} true
+active = walker@bguard_2
+on_death = death
+on_hit = hit
+prior = 190
+
+[walker@bguard_2]
+path_walk = bguard_3_walk
+path_look = bguard_3_look
+out_restr = sad_b2_sr_no_assault
+
+; ----------------------------------------------------------------------------- BGuard 3
+[logic@sad_b2_bguard_3]
+suitable = {=check_npc_name(sim_default_stalker)} true
+active = walker@bguard_3
+on_death = death
+on_hit = hit
+prior = 200
+
+[walker@bguard_3]
+path_walk = bguard_1_walk
+path_look = bguard_1_look
+out_restr = sad_b2_sr_no_assault
+
+; ----------------------------------------------------------------------------- VGuard 1
+[logic@sad_b2_vguard_1]
+suitable = {=check_npc_name(sim_default_stalker)} true
+active = walker@vguard_1
+on_death = death
+on_hit = hit
+prior = 180
+
+[walker@vguard_1]
+path_walk = vyshka_gvard_1_walk
+path_look = vyshka_gvard_1_look
+out_restr = sad_b2_sr_no_assault
+
+; ----------------------------------------------------------------------------- VGuard 2
+[logic@sad_b2_vguard_2]
+suitable = {=check_npc_name(sim_default_stalker)} true
+active = walker@vguard_2
+on_death = death
+on_hit = hit
+prior = 200
+
+[walker@vguard_2]
+path_walk = vyshka_gvard_2_walk
+path_look = vyshka_gvard_2_look
+out_restr = sad_b2_sr_no_assault
+
+; ----------------------------------------------------------------------------- VGuard 3
+[logic@sad_b2_vguard_3]
+suitable = {=check_npc_name(sim_default_stalker)} true
+active = walker@vguard_3
+on_death = death
+on_hit = hit
+prior = 190
+
+[walker@vguard_3]
+path_walk = vyshka_gvard_3_walk
+path_look = vyshka_gvard_3_look
+out_restr = sad_b2_sr_no_assault
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

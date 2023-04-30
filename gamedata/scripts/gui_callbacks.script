@@ -1,0 +1,272 @@
+--------------------------------------------------------------------------------------------------------------
+---------------------------------------------Функция для вызова GUI-----------------------------------
+--------------------------------------------------------------------------------------------------------------
+-- [предмет] = функция
+local item2func = {}
+item2func['eptEnc'] = function(item)
+	run_gui(_s_notepad.CNotepad())
+end
+item2func['pb_padalshik_pda'] = function(item)
+	run_gui(ui_gui_npc_unique_pda.mar_type_1_stalker_pda_2())
+end
+item2func['pb_quest_document_1'] = function(item)
+	run_gui(ui_gui_notepad_items.ui_notepad_type_one_1())
+	give_info("pro_actor_open_document_1")
+end
+item2func['pb_quest_bloknot_1'] = function(item)
+	run_gui(ui_gui_notepad_items.ui_notepad_type_one_2())
+	give_info("pb_bloknot_text_1_see")
+end
+item2func['pb_quest_bloknot_2'] = function(item)
+	run_gui(ui_gui_notepad_items.ui_notepad_type_one_3())
+	give_info("pb_bloknot_text_2_see")
+end
+item2func['pb_quest_bloknot_3'] = function(item)
+	run_gui(ui_gui_notepad_items.ui_notepad_type_one_4())
+	give_info("pb_bloknot_text_3_see")
+end
+item2func['pb_quest_bloknot_4'] = function(item)
+	run_gui(ui_gui_notepad_items.ui_notepad_type_one_5())
+	give_info("pb_bloknot_text_4_see")
+end
+item2func['pb_quest_bloknot_5'] = function(item)
+	run_gui(ui_gui_notepad_items.ui_notepad_type_one_6())
+	give_info("pb_bloknot_text_5_see")
+end
+item2func['pb_quest_bloknot_6'] = function(item)
+	run_gui(ui_gui_notepad_items.ui_notepad_type_one_7())
+	give_info("pb_bloknot_text_6_see")
+end
+item2func['pb_quest_bloknot_7'] = function(item)
+	run_gui(ui_gui_notepad_items.ui_notepad_type_one_8())
+	give_info("pb_bloknot_text_7_see")
+end
+item2func['pb_quest_bloknot_8'] = function(item)
+	run_gui(ui_gui_notepad_items.ui_notepad_type_one_9())
+	give_info("pb_bloknot_text_8_see")
+end
+item2func['pb_quest_dubolom_mail'] = function(item)
+	run_gui(ui_gui_notepad_items.ui_notepad_type_esc_3())
+end
+item2func['esc_quest_mrakobes_mail'] = function(item)
+	run_gui(ui_gui_notepad_items.ui_notepad_type_esc_1())
+end
+item2func['blck_val_chimik_pda'] = function(item)
+	run_gui(ui_gui_npc_unique_pda.mar_type_1_stalker_pda_3())
+end
+item2func['esc_pashalka_shved_pda'] = function(item)
+	run_gui(ui_gui_npc_unique_pda.mar_type_1_stalker_pda_4())
+	give_info("esc_pashalka_shved_pda_actor_see")
+end
+item2func['esc_old_notebook_use'] = function(item)
+     sObj2 = sound_object([[characters_voice\scenario\actor\esc_actor_replic_about_note]])
+     sObj2:play_at_pos(db.actor, vector():set(0,0,0), 1, sound_object.s2d)
+	give_object_to_actor("esc_old_notebook")
+	give_info("esc_old_notebook_use_done")
+end
+item2func['esc_lisiy_notes'] = function(item)
+	run_gui(ui_gui_notepad_items.ui_notepad_type_esc_2())
+end
+item2func['blck_val_transiver_1'] = function(item)
+     sObj2 = sound_object([[characters_voice\scenario\actor\blck_val_actor_replic_transiver_1]])
+     sObj2:play_at_pos(db.actor, vector():set(0,0,0), 1, sound_object.s2d)
+	give_object_to_actor("blck_val_transiver_1")
+end
+item2func['blck_val_transiver_2'] = function(item)
+	run_gui(ins_gui_quest_devices.ui_conventer_shpion_guk_r1())
+	give_info("blck_val_transiver_2_use")
+end
+item2func['blck_val_transiver_3'] = function(item)
+     sObj2 = sound_object([[characters_voice\scenario\actor\blck_val_actor_replic_transiver_3]])
+     sObj2:play_at_pos(db.actor, vector():set(0,0,0), 1, sound_object.s2d)
+	give_object_to_actor("blck_val_transiver_3")
+end
+item2func['pb_vodka_quest'] = function(item)
+	give_info("pro_zver_drink_vodka_quest")
+end
+item2func['pb_quest_mail_shpala'] = function(item)
+	run_gui(ui_gui_notepad_items.ui_notepad_type_one_10())
+	give_info("pro_zver_see_to_mail_shpala")
+end
+item2func['pb_actor_inventory'] = function(item)
+	alife():create("wpn_ak74u_snag", vector(), 0, 0, 0)
+	alife():create("bolt", vector(), 0, 0, 0)
+	alife():create("bolt", vector(), 0, 0, 0)
+	alife():create("bolt", vector(), 0, 0, 0)
+	alife():create("bolt", vector(), 0, 0, 0)
+	alife():create("bolt", vector(), 0, 0, 0)
+	alife():create("bolt", vector(), 0, 0, 0)
+	alife():create("bolt", vector(), 0, 0, 0)
+	alife():create("bolt", vector(), 0, 0, 0)
+	alife():create("bolt", vector(), 0, 0, 0)
+	alife():create("bolt", vector(), 0, 0, 0)
+	alife():create("bandage", vector(), 0, 0, 0)
+	alife():create("bandage", vector(), 0, 0, 0)
+	alife():create("medkit_scientic", vector(), 0, 0, 0)
+	alife():create("medkit_scientic", vector(), 0, 0, 0)
+	alife():create("medkit_scientic", vector(), 0, 0, 0)
+	alife():create("ammo_5.45x39_fmj", vector(), 0, 0, 0)
+	alife():create("ammo_5.45x39_fmj", vector(), 0, 0, 0)
+	alife():create("conserva", vector(), 0, 0, 0)
+	alife():create("conserva", vector(), 0, 0, 0)
+	give_info("pro_zver_found_inventory")
+        xr_effects.pb_actor_inventory_in()
+end
+item2func['pb_bolt_box_small'] = function(item)
+	alife():create("bolt", vector(), 0, 0, 0)
+	alife():create("bolt", vector(), 0, 0, 0)
+	alife():create("bolt", vector(), 0, 0, 0)
+	alife():create("bolt", vector(), 0, 0, 0)
+	alife():create("bolt", vector(), 0, 0, 0)
+        xr_effects.pb_bolt_box_small_in()
+end
+-- Спальник
+item2func['spalnik'] = function(item)
+	if (surge_manager.actor_in_cover()) then
+		ui_sleep_dialog.sleep()
+		give_info("sleep_active")
+	else
+		news_manager.send_tip(db.actor, game.translate_string("st_spalnik_nosleep"))
+	end
+	alife():create("spalnik", vector(), 0, 0, 0)
+end
+-- Вынесено в одну функцию
+-- Всё, что нужно сделать, заносим в таблицу выше
+function on_use_item(obj)
+	local section = obj:section()
+	if item2func[section] then
+		item2func[section](obj)
+	end
+--	local s_obj=alife():object(obj:id())
+--     if s_obj:section_name()=="pb_padalshik_pda" then
+--	  run_gui(ui_gui_npc_unique_pda.mar_type_1_stalker_pda_2())
+--	 end
+end
+
+function on_use_item_1(obj)
+  local s_obj=alife():object(obj:id())
+     if s_obj:section_name()=="pb_vodka_quest" then
+	give_info("pro_zver_drink_vodka_1")
+	 end
+end
+
+function on_use_item_2(obj)
+  local s_obj=alife():object(obj:id())
+     if s_obj:section_name()=="spez_razia" then
+	  run_gui(ui_gui_elements.ui_gui_razia())
+	give_info("perevalochnaya_baza_rezak_onn_to_razia")
+	 end
+end
+
+function on_use_item_9(obj)
+  local s_obj=alife():object(obj:id())
+     if s_obj:section_name()=="esc_quest_document_1" then
+	  run_gui(ui_gui_notepad_items.ui_notepad_type_esc_1())
+	give_info("perevalochnaya_baza_rezak_onn_to_razia")
+	 end
+end
+
+function on_use_item_vodka_quest(obj)
+  local s_obj=alife():object(obj:id())
+     if s_obj:section_name()=="pb_vodka_quest" then
+	give_info("pro_zver_drink_vodka_quest")
+	 end
+end
+
+function on_use_item_10(obj)
+  local s_obj=alife():object(obj:id())
+     if s_obj:section_name()=="blck_val_chimik_pda" then
+	  run_gui(ui_gui_npc_unique_pda.mar_type_1_stalker_pda_3())
+	 end
+end
+
+function on_use_item_11(obj)
+  local s_obj=alife():object(obj:id())
+     if s_obj:section_name()=="esc_pashalka_shved_pda" then
+	  run_gui(ui_gui_npc_unique_pda.mar_type_1_stalker_pda_4())
+	 end
+end
+
+function on_use_item_12(obj)
+  local s_obj=alife():object(obj:id())
+     if s_obj:section_name()=="blck_val_transiver_1" then
+	SendTip("%c[default]Передатчик нужно запустить возле пространственной аномалии, а не здесь.", "Зверь:", nil, 5, "ui_inGame2_Zver_sends_sms")
+        give_object_to_actor("blck_val_transiver_1")
+	 end
+end
+
+function on_use_item_13(obj)
+  local s_obj=alife():object(obj:id())
+     if s_obj:section_name()=="blck_val_transiver_2" then
+	  run_gui(ins_gui_quest_devices.ui_conventer_shpion_guk_r1())
+	give_info("blck_val_transiver_2_use")
+	 end
+end
+
+function on_use_item_14(obj)
+  local s_obj=alife():object(obj:id())
+     if s_obj:section_name()=="blck_val_transiver_3" then
+	SendTip("%c[default]Я уже отправил координаты выхода из аномалии, нет нужды повторно это делать.", "Зверь:", nil, 5, "ui_inGame2_Zver_sends_sms")
+        give_object_to_actor("blck_val_transiver_3")
+	 end
+end
+
+function on_use_item_15(obj)
+  local s_obj=alife():object(obj:id())
+     if s_obj:section_name()=="pb_quest_mail_shpala" then
+	  run_gui(ui_gui_notepad_items.ui_notepad_type_one_10())
+	give_info("pro_zver_see_to_mail_shpala")
+	 end
+end
+
+
+------------------------------------------------------------------------------
+--                          Блокнот Зверя                                   --
+------------------------------------------------------------------------------
+function on_use_item_3(obj)
+  local s_obj=alife():object(obj:id())
+     if s_obj:section_name()=="pb_quest_bloknot_1" then
+	  run_gui(ui_gui_notepad_items.ui_notepad_type_one_2())
+	give_info("pb_bloknot_text_1_see")
+	 end
+end
+
+function on_use_item_4(obj)
+  local s_obj=alife():object(obj:id())
+     if s_obj:section_name()=="pb_quest_bloknot_2" then
+	  run_gui(ui_gui_notepad_items.ui_notepad_type_one_3())
+	give_info("pb_bloknot_text_2_see")
+	 end
+end
+
+function on_use_item_5(obj)
+  local s_obj=alife():object(obj:id())
+     if s_obj:section_name()=="pb_quest_bloknot_3" then
+	  run_gui(ui_gui_notepad_items.ui_notepad_type_one_4())
+	give_info("pb_bloknot_text_3_see")
+	 end
+end
+
+function on_use_item_6(obj)
+  local s_obj=alife():object(obj:id())
+     if s_obj:section_name()=="pb_quest_bloknot_4" then
+	  run_gui(ui_gui_notepad_items.ui_notepad_type_one_5())
+	give_info("pb_bloknot_text_4_see")
+	 end
+end
+
+function on_use_item_7(obj)
+  local s_obj=alife():object(obj:id())
+     if s_obj:section_name()=="pb_quest_bloknot_5" then
+	  run_gui(ui_gui_notepad_items.ui_notepad_type_one_6())
+	give_info("pb_bloknot_text_5_see")
+	 end
+end
+
+function on_use_item_8(obj)
+  local s_obj=alife():object(obj:id())
+     if s_obj:section_name()=="pb_quest_bloknot_6" then
+	  run_gui(ui_gui_notepad_items.ui_notepad_type_one_7())
+	give_info("perevalochnaya_baza_rezak_onn_to_razia")
+	 end
+end

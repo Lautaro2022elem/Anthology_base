@@ -1,0 +1,132 @@
+[walker@def]
+gather_items_enabled = false
+help_wounded_enabled = true
+corpse_detection_enabled = false
+wounded = wounded
+
+[meet]
+close_snd_hello = nil
+close_distance  = 0
+close_victim    = actor
+close_anim 		= nil
+use 			= {=dist_to_actor_ge(2)} false, {=actor_enemy} false, true
+snd_on_use 		= nil
+
+[wounded]
+hp_state 		= 0|wounded_heavy@help_heavy
+hp_state_see 	= 0|wounded_heavy@help_heavy
+hp_victim 		= 0|nil
+hp_fight 		= 0|false
+hp_cover		= 0|false
+
+; -------------------------------------------------------------------------------------------------------------------------------------------- 1
+[logic@poherkto_1]
+active = walker@1
+suitable = {+sad_ran_cowboy_gone} true
+prior = 150
+
+[walker@1]:walker@def
+path_walk = hod_vokrug
+path_look = hod_vokrug_look
+use_camp = false
+meet = meet
+
+; -------------------------------------------------------------------------------------------------------------------------------------------- 2
+[logic@poherkto_2]
+active = walker@2
+suitable = {+sad_ran_cowboy_gone} true
+prior = 140
+
+[walker@2]:walker@def
+path_walk = out_gvard_1_walk
+path_look = out_gvard_1_look
+use_camp = false
+meet = meet
+
+; -------------------------------------------------------------------------------------------------------------------------------------------- 3
+[logic@poherkto_3]
+active = walker@3
+suitable = {+sad_ran_cowboy_gone} true
+prior = 140
+
+[walker@3]:walker@def
+path_walk = out_gvard_2_walk
+path_look = out_gvard_2_look
+on_info2 = {=is_rain} walker@3_rain
+meet = meet
+
+[walker@3_rain]:walker@def
+path_walk = out_gvard_2_rain_walk
+path_look = out_gvard_2_rain_look
+on_info2 = {!is_rain} walker@3
+meet = meet
+
+; -------------------------------------------------------------------------------------------------------------------------------------------- 4
+[logic@poherkto_4]
+active = walker@4
+suitable = {+sad_ran_cowboy_gone} true
+prior = 140
+
+[walker@4]:walker@def
+path_walk = out_gvard_3_walk
+path_look = out_gvard_3_look
+on_info2 = {=is_rain} walker@4_rain
+meet = meet
+
+[walker@4_rain]:walker@def
+path_walk = out_gvard_3_rain_walk
+path_look = out_gvard_3_rain_look
+on_info2 = {!is_rain} walker@4
+meet = meet
+
+; -------------------------------------------------------------------------------------------------------------------------------------------- 5 inside
+[logic@poherkto_5]
+active = animpoint@5
+suitable = {+sad_ran_cowboy_gone} true
+prior = 120
+
+[animpoint@5]:walker@def
+cover_name = sad_ran_animp_4
+meet = meet
+
+; -------------------------------------------------------------------------------------------------------------------------------------------- 6 inside
+[logic@poherkto_6]
+active = animpoint@6
+suitable = {+sad_ran_cowboy_gone} true
+prior = 120
+
+[animpoint@6]:walker@def
+cover_name = sad_ran_animp_2
+meet = meet
+
+; -------------------------------------------------------------------------------------------------------------------------------------------- 7 inside
+[logic@poherkto_7]
+active = animpoint@7
+suitable = {+sad_ran_cowboy_gone} true
+prior = 120
+
+[animpoint@7]:walker@def
+cover_name = sad_ran_animp_3
+meet = meet
+
+; -------------------------------------------------------------------------------------------------------------------------------------------- 8 inside
+[logic@poherkto_8]
+active = walker@8
+suitable = {+sad_ran_cowboy_gone} true
+prior = 130
+
+[walker@8]:walker@def
+path_walk = gvard_b_walk
+path_look = gvard_b_look
+meet = meet
+
+; -------------------------------------------------------------------------------------------------------------------------------------------- 9 balkon
+[logic@poherkto_9]
+active = walker@9
+suitable = {+sad_ran_cowboy_gone} true
+prior = 130
+
+[walker@9]:walker@def
+path_walk = balkon_gvard_walk
+path_look = balkon_gvard_look
+meet = meet

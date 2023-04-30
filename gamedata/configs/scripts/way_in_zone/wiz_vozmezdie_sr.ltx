@@ -1,0 +1,19 @@
+[logic]
+active = sr_idle@wait_for_start
+
+[sr_idle@wait_for_start]
+on_info = {=actor_has_item(wiz_pda_nazar)} sr_idle@messages % +actor_has_pda_nazar%
+
+[sr_idle@messages]
+on_timer = 10000 | sr_idle@messages_02 %=zametki_pda_nazara_1%
+
+[sr_idle@messages_02]
+on_timer = 8000 | sr_idle@messages_03 %=zametki_pda_nazara_2%
+
+[sr_idle@messages_03]
+on_timer = 10000 | sr_idle@hero_thoughts %=zametki_pda_nazara_3%
+
+[sr_idle@hero_thoughts]
+on_timer = 6000 | sr_idle@nil %=hero_thoughts_11 =give_task(vozmezdie)%
+
+[sr_idle@nil]

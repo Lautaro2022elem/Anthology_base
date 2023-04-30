@@ -1,0 +1,14 @@
+[logic] 
+active = sr_idle@start
+
+[sr_idle@start]
+on_info = {+topi_start +topi_stalker_fang_quest_come_to_point -topi_var_1_suget_quest_final_anubis_create} %=topi_var_1_suget_quest_final_create_npc +topi_var_1_suget_quest_final_anubis_create%
+on_timer = 6000 | {+topi_start +topi_var_1_suget_quest_final_anubis_create -topi_var_1_suget_quest_final_give} sr_idle@first %=give_task(geonezis_topi_var_1_final_quest) +topi_var_1_suget_quest_final_give%
+
+[sr_idle@first]
+on_info = {+topi_var_1_suget_quest_final_csky_member_1_death -topi_var_1_suget_quest_final_ecolog_create} sr_idle@second %=topi_var_1_suget_quest_final_create_ecolog +topi_var_1_suget_quest_final_ecolog_create%
+
+[sr_idle@second]
+on_info = {+topi_ecolog_var_1_quest_final_member_2_death -topi_var_1_suget_quest_final_anu_create} sr_idle@nil %=topi_var_1_suget_quest_final_create_anu +topi_var_1_suget_quest_final_anu_create%
+
+[sr_idle@nil]

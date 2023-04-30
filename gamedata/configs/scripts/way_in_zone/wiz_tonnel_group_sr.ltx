@@ -1,0 +1,13 @@
+[logic]
+active = sr_idle@hero_thoughts
+
+[sr_idle@hero_thoughts]
+on_info = {=actor_in_zone(wiz_tonnel_group_sr)} sr_idle@hero_thoughts_01 %=hero_thoughts_08%
+
+[sr_idle@hero_thoughts_01]
+on_info = {=actor_has_item(wiz_pda_rezaka)} sr_idle@timer
+
+[sr_idle@timer]
+on_timer = 7000 | sr_idle@nil %=hero_thoughts_09%
+
+[sr_idle@nil]

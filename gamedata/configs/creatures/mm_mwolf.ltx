@@ -1,0 +1,170 @@
+
+[mwolf]:pseudodog_normal
+$spawn = "monsters\psy_dog\psy_dog"
+visual = monsters\wolfdog\wolfdog_120
+corpse_visual = monsters\wolfdog\wolfdog_120
+icon = ui_npc_monster_pseudodo
+immunities_sect = mwolf_immunities_strong
+attack_params = mwolf_attack_params_strong
+kind = SM_VOLK
+Health = 200
+MaxHealthValue = 1.0
+sound_distant_idle = monsters\mwolf\mwolf_distant_idle_
+distant_idle_sound_delay = 60000
+distant_idle_sound_range = 100.0
+sound_idle = monsters\mwolf\wolf_idle_
+idle_sound_delay = 15000
+sound_take_damage = monsters\mwolf\wolf_pain_
+sound_eat = monsters\biting\def_
+sound_aggressive = monsters\mwolf\wolf_attack_
+sound_attack_hit = monsters\mwolf\wolf_attack_hit_
+sound_die = monsters\mwolf\wolf_death_
+sound_bkgnd = monsters\mwolf\wolf_idle_
+sound_threaten = monsters\mwolf\wolf_idle_
+sound_landing = monsters\biting\def_
+sound_steal = monsters\biting\def_
+sound_panic = monsters\biting\def_
+sound_growling = monsters\mwolf\wolf_idle_
+sound_die_in_anomaly = monsters\biting\def_
+Velocity_Stand = 0,		1.4,			1.4,		1,		1
+Velocity_RunFwdNormal = 9.2,		2.0,			2.0,		0.05,	1.0
+Velocity_RunFwdDamaged = 6.3,  	2.0,			2.0,		0.5,	1.0
+Velocity_WalkFwdNormal = 6.5,		2.0,			2.0,		0.1,	1.0
+Velocity_WalkFwdDamaged = 3.2,		3.0,			3.0,		0.1,	2.2
+Velocity_Drag = 0.6,		0.8,			0.8,		1,		1
+Velocity_Steal = 1.6,		3.0,			3.0,		1,		1
+Accel_Generic = 1.5
+Accel_Calm = 2.5
+Accel_Aggressive = 18.5
+
+[mwolf_immunities_strong]
+burn_immunity = 3.0
+strike_immunity = 0.75
+shock_immunity = 3.0
+wound_immunity = 0.5
+radiation_immunity = 0.0
+telepatic_immunity = 0.0
+chemical_burn_immunity = 0.7
+explosion_immunity = 0.7
+fire_wound_immunity = 0.40
+
+[mwolf_attack_params_strong]
+stand_attack_0 = 0.55,		0.5,		    35,        0.0, 1.0, 1.0,		 -1.0, 1.0, -1.0, 1.0,								  1.6
+run_jamp_1 = 0.65,		0.7,		    100,        0.0, 1.0, 4.0,		 -1.8, 1.8, -1.8, 1.8,								  1.0
+
+[mwolf_leader]:mwolf
+$spawn = "monsters\psy_dog\psy_dog"
+visual = monsters\wolfdog\wolfdog_135
+corpse_visual = monsters\wolfdog\wolfdog_135
+icon = ui_npc_monster_pseudodo
+immunities_sect = mwolf_immunities_leader
+attack_params = mwolf_attack_params_leader
+Health = 300
+MaxHealthValue = 1.35
+damage = mwolf_damage
+sound_eat = monsters\biting\def_
+sound_aggressive = monsters\mwolf\wolf_attack_
+sound_attack_hit = monsters\mwolf\wolf_attack_hit_
+sound_die = monsters\mwolf\wolf_death_
+sound_bkgnd = monsters\biting\def_
+sound_threaten = monsters\mwolf\wolf_attack_
+sound_landing = monsters\biting\def_
+sound_steal = monsters\biting\def_
+sound_panic = monsters\biting\def_
+sound_growling = monsters\biting\def_
+sound_die_in_anomaly = monsters\biting\def_
+
+[mwolf_immunities_leader]
+burn_immunity = 3.0
+strike_immunity = 0.75
+shock_immunity = 3.0
+wound_immunity = 0.0435
+radiation_immunity = 0.0
+telepatic_immunity = 0.0
+chemical_burn_immunity = 0.6
+explosion_immunity = 0.6
+fire_wound_immunity = 0.32
+
+[mwolf_attack_params_leader]
+stand_attack_0 = 0.55,		0.6,		    50,        0.0, 1.0, 1.0,		 -1.0, 1.0, -1.0, 1.0,								  1.6
+run_jamp_1 = 0.65,		1.0,		    120,        0.0, 1.0, 4.0,		 -1.8, 1.8, -1.8, 1.8,								  1.0
+
+[mwolf_damage]
+default = 0.5, -1, 0.3
+bip01_pelvis = 1.15, -1, 0.4
+bip01_spine = 0.65, -1, 0.3
+bip01_spine1 = 0.7, -1, 0.3
+bip01_neck = 0.75, -1, 2.0
+bip01_head = 0.5, -1, 1.0, 10
+
+[mwolf_maverick]:mwolf
+$spawn = "monsters\psy_dog\psy_dog"
+visual = monsters\wolfdog\wolfdog_160
+corpse_visual = monsters\wolfdog\wolfdog_160
+icon = ui_npc_monster_pseudodo
+immunities_sect = mwolf_immunities_maverick
+attack_params = mwolf_attack_params_maverick
+Health = 500
+MaxHealthValue = 1.55
+sound_eat = monsters\biting\def_
+sound_aggressive = monsters\mwolf\wolf_attack_
+sound_attack_hit = monsters\mwolf\wolf_attack_hit_
+sound_die = monsters\mwolf\wolf_death_
+sound_bkgnd = monsters\biting\def_
+sound_threaten = monsters\mwolf\wolf_attack_
+sound_landing = monsters\biting\def_
+sound_steal = monsters\biting\def_
+sound_panic = monsters\biting\def_
+sound_growling = monsters\biting\def_
+sound_die_in_anomaly = monsters\biting\def_
+
+[mwolf_immunities_maverick]
+burn_immunity = 3.0
+strike_immunity = 0.75
+shock_immunity = 3.0
+wound_immunity = 0.0225
+radiation_immunity = 0.0
+telepatic_immunity = 0.0
+chemical_burn_immunity = 0.5
+explosion_immunity = 0.5
+fire_wound_immunity = 0.28
+
+[mwolf_attack_params_maverick]
+stand_attack_0 = 0.55,		0.7,		    75,        0.0, 1.0, 1.0,		 -1.0, 1.0, -1.0, 1.0,								  1.6
+run_jamp_1 = 0.65,		1.5,		    170,        0.0, 1.0, 4.0,		 -1.8, 1.8, -1.8, 1.8,								  1.0
+
+[mwolf_top_dog]:mwolf
+$spawn = "monsters\psy_dog\psy_dog"
+visual = monsters\wolfdog\wolfdog_200
+corpse_visual = monsters\wolfdog\wolfdog_200
+icon = ui_npc_monster_pseudodo
+immunities_sect = mwolf_immunities_top_dog
+attack_params = mwolf_attack_params_top_dog
+Health = 800
+MaxHealthValue = 1.85
+sound_eat = monsters\biting\def_
+sound_aggressive = monsters\mwolf\wolf_attack_
+sound_attack_hit = monsters\mwolf\wolf_attack_hit_
+sound_die = monsters\mwolf\wolf_death_
+sound_bkgnd = monsters\biting\def_
+sound_threaten = monsters\mwolf\wolf_attack_
+sound_landing = monsters\biting\def_
+sound_steal = monsters\biting\def_
+sound_panic = monsters\biting\def_
+sound_growling = monsters\biting\def_
+sound_die_in_anomaly = monsters\biting\def_
+
+[mwolf_immunities_top_dog]
+burn_immunity = 3.0
+strike_immunity = 0.75
+shock_immunity = 3.0
+wound_immunity = 0.012
+radiation_immunity = 0.0
+telepatic_immunity = 0.0
+chemical_burn_immunity = 0.4
+explosion_immunity = 0.4
+fire_wound_immunity = 0.25
+
+[mwolf_attack_params_top_dog]
+stand_attack_0 = 0.55,		0.8,		    100,        0.0, 1.0, 1.0,		 -1.0, 1.0, -1.0, 1.0,								  1.6
+run_jamp_1 = 0.65,		1.85,		    200,        0.0, 1.0, 4.0,		 -1.8, 1.8, -1.8, 1.8,								  1.0

@@ -1,0 +1,22 @@
+[logic] 
+active = sr_idle
+
+[sr_idle]
+on_actor_inside = {+spectrum_project_start +sp_a2_hero_to_garbage_come} sr_idle@2 %=SendTipFL(st_gar_dolg_general_start_sms:st_tip:ui_inGame2_Dolg_4) +gar_start_quest_reversed%
+
+[sr_idle@2]
+on_game_timer = 10 | sr_idle@3 %=give_task(gar_main_suget_quest)%
+
+[sr_idle@3]
+on_info = {+gar_a2_bagretcev_talking_1} sr_idle@4
+
+[sr_idle@4]
+on_game_timer = 400 | {-gar_a6_effect_1_take} %=gar_a6_main_quest_igra_effect_1 +gar_a6_effect_1_take%
+on_game_timer = 800 | {-gar_a6_effect_2_take} %=gar_a6_main_quest_igra_effect_2 +gar_a6_effect_2_take%
+on_game_timer = 1200 | {-gar_a6_effect_3_take} sr_idle@5 %=gar_a6_main_quest_igra_effect_3 +gar_a6_effect_3_take%
+on_info = {+gar_a2_borland_talking_1} sr_idle@nil
+
+[sr_idle@5]
+on_info = sr_idle@nil %=kill_actor%
+
+[sr_idle@nil]

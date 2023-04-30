@@ -1,0 +1,10 @@
+[logic]
+active = sr_idle@spawner
+
+[sr_idle@spawner]
+on_info = {+aes_desant_go} sr_idle@spawner_2 %=create_squad(army_attack_squad:aes_smart_terran_soldier2)%
+
+[sr_idle@spawner_2]
+on_info = {+aes_actor_road2} sr_idle@nil %=create_squad(army_attack_2_squad:aes_smart_terran_soldier)%
+
+[sr_idle@nil]

@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="windows-1251" ?>
+<string_table>
+
+	<!-- pb_shurup -->
+	<string id="pb_shurup_task_1_name">
+	<text>Find %s for Shurup</text>
+</string>
+<string id="pb_shurup_task_1_text">
+	<text>You need to bring tools to Shurup so that he can upgrade equipment.</text>
+</string>
+<string id="pb_shurup_task_1_about">
+	<text>You know, bro, I'm actually pretty good at mechanics. I can repair weapons and armor, and I can even do some upgrades! Well, I would do them if the tools were normal. But where can you get them here? Maybe you could help me get a simple set?</text>
+</string>
+<string id="pb_shurup_task_1_fetch_about">
+	<text>I need a set of tools for rough work. It should have tools and oils for working with weapons. If you can get it for me, I'll be grateful, I might even pay you!.. Maybe.</text>
+</string>
+<string id="pb_shurup_task_1_fetch_finish">
+	<text>Great, dude! Oh, sorry, I have nothing to pay you with. But I can give you a good discount!</text>
+</string>
+<string id="pb_shurup_task_2_name">
+	<text>Find %s for Shurup</text>
+</string>
+<string id="pb_shurup_task_2_text">
+	<text>You need to bring Shurup tools for delicate work. He needs a more complete set to carry out more complex equipment upgrades.</text>
+</string>
+<string id="pb_shurup_task_2_about">
+	<text>Hey, dude, if you agree to get me a more complete set, you'll get an even bigger discount. Will you help me out, pal?</text>
+</string>
+<string id="pb_shurup_task_2_fetch_about">
+	<text>I need tools for delicate work. It should have everything I need. You'll be like a brother to me if you get it for me!</text>
+</string>
+<string id="pb_shurup_task_2_fetch_finish">
+	<text>Wow, thanks, buddy! Now I'm definitely going to get rich. Damn, I'm going to be successful!.. Well, if I don't miss this opportunity. But for now, I can't offer you anything better than a discount. Sorry, pal.</text>
+</string>
+<string id="pb_shurup_task_3_name">
+	<text>Find %s for Shurup</text>
+</string>
+<string id="pb_shurup_task_3_text">
+	<text>You need to bring %s to Shurup. He needs a unique set to carry out even more complex equipment upgrades.</text>
+</string>
+<string id="pb_shurup_task_3_about">
+	<text>Hey, guy, if you find something worthwhile, I'll give you a discount!</text>
+</string>
+<string id="pb_shurup_task_3_fetch_about">
+	<text>I need tools for calibration. It should have everything I need. You'll be like a brother to me if you get them for me!</text>
+</string>
+	<string id="pb_shurup_task_3_fetch_finish">
+		<text>No way...! Damn, thanks bro! Now I will definitely get rich. Hell, I will become successful!... If, of course, I don't miss this chance. But for now, I can't offer you anything better than a discount. Sorry, buddy.</text>
+	</string>
+
+</string_table>

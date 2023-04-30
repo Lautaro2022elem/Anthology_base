@@ -1,0 +1,41 @@
+[logic]
+active = sr_idle@proloque_start
+
+[sr_idle@proloque_start]
+on_info = {-blck_val_zver_teleport_to_zastava =actor_on_level(black_valley)} %=CutSceneOnTorch =bed_getup_zver =run_postprocess(black:2525:true) =spawn_object(blck_val_lutiy_scene:blck_val_lutiy_scene_spawn) +blck_val_zver_teleport_to_zastava =set_game_time(00:14)%
+on_info2 = {+blck_val_zver_teleport_to_zastava} sr_idle@teleport_actor
+
+[sr_cutscene@game_start]
+point = actor_not_prisoner_more_walk
+look = actor_not_prisoner_more_look
+cam_effector = scenario_cam\black_valley\camera_prison_wake_up
+enable_ui_on_end = true
+global_cameffect = true
+on_info = {+blck_val_zver_teleport_to_zastava} %=play_sound(pb_intro_getting_up)%
+on_signal = cameff_end | sr_idle@proloque_start_2 %=stop_sound(pb_intro_getting_up)%
+
+[sr_idle@teleport_actor]
+on_timer = 3500 | sr_idle@out_inv_away_from_the_start %=teleport_actor(actor_wake_up_start_game_walk:actor_wake_up_start_game_look)%
+
+[sr_idle@out_inv_away_from_the_start]
+on_timer = 1500 | sr_idle@stop_postprocess %=blck_val_out_inv_away_from_the_start%
+
+[sr_idle@stop_postprocess]
+on_timer = 1500 | sr_idle@proloque_start_1 %=stop_postprocess(2525)%
+
+[sr_idle@proloque_start_1]
+on_timer = 2000 | sr_idle@proloque_start_2 %=show_chapter(chapter_4) =blck_val_actor_replic_about_prison%
+
+[sr_idle@proloque_start_2]
+on_timer = 6500 | sr_idle@scenario_autosave %=enable_ui =give_task(blck_val_actor_prisoner) =del_item_from_actor(pb_quest_bloknot_7:1) =pro_bloknot_8_reload%
+
+[sr_idle@scenario_autosave]
+on_info = {+blck_val_cut_scene_first_complete -blck_val_meet_prisoner_give_save_complete} sr_idle@bloknot_reload_in_zastava %+blck_val_meet_prisoner_give_save_complete =scenario_autosave(st_blck_val_actor_prisoner)%
+
+[sr_idle@bloknot_reload_in_zastava]
+on_info = {+blck_val_cut_scene_first_complete} sr_idle@bloknot_reload_in_zastava_1
+
+[sr_idle@bloknot_reload_in_zastava_1]
+on_timer = 3000 | sr_idle@nil %=pb_new_text_in_bloknot%
+
+[sr_idle@nil]

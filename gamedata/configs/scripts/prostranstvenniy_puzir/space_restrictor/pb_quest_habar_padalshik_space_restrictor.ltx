@@ -1,0 +1,16 @@
+[logic]
+active = sr_idle@actor_give_habar
+
+[sr_idle@actor_give_habar]
+on_info = {+pb_find_habar_padalshik_done} sr_idle@shurup_sends_sms
+
+[sr_idle@shurup_sends_sms]
+on_game_timer = 30800 | sr_idle@shurup_quest_give %+pro_shurup_crash_habar_sms_sends%
+
+[sr_idle@shurup_quest_give]
+on_info = {+pro_shurup_crash_habar_sms_sends -sleep_active} sr_idle@shurup_quest_reload %=pb_shurup_crash_habar_sms%
+
+[sr_idle@shurup_quest_reload]
+on_timer = 3000 | sr_idle@nil %+pro_quest_open_padalshik_habar%
+
+[sr_idle@nil]

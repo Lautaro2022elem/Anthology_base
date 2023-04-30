@@ -1,0 +1,91 @@
+;---------------------------------------------------/==>
+;-------------------Детекторы----------------------/==>
+;-------------------------------------------------/==>
+[detector_simple_up]:detector_simple
+$spawn		             = "devices\detector_simple_up"
+inv_name		     = st_detector1_up
+inv_name_short	             = st_detector1_up
+cost			     = 15000
+af_radius		     = 35
+af_vis_radius		     = 6
+inv_weight		     = 0.3
+inv_grid_x	             = 109
+inv_grid_y	             = 4
+icons_texture        = ui\ui_icon_equipment_2
+
+;--------/==>
+[detector_advanced_up]:detector_advanced
+$spawn		             = "devices\detector_advanced_up"
+inv_name		     = st_detector2_up
+inv_name_short	             = st_detector2_up
+cost			     = 45000
+af_radius		     = 35
+af_vis_radius		     = 8
+inv_weight		     = 0.3
+inv_grid_x	             = 110
+inv_grid_y	             = 4
+icons_texture        = ui\ui_icon_equipment_2
+
+;--------/==>
+[detector_elite_up]:detector_elite
+$spawn		             = "devices\detector_elite_up"
+class			     = DET_SCIE
+inv_name		     = st_detector3_up
+inv_name_short	             = st_detector3_up
+cost			     = 135000
+af_radius		     = 35
+af_vis_radius		     = 12
+inv_weight		     = 0.3
+inv_grid_x	             = 111
+inv_grid_y	             = 4
+icons_texture        = ui\ui_icon_equipment_2
+
+;--------/==>
+[detector_scientific_up]:detector_scientific
+$spawn		             = "devices\detector_scientific_up"
+inv_name		     = st_detector4_up
+inv_name_short	             = st_detector4_up
+cost			     = 450000
+af_radius		     = 35
+af_vis_radius		     = 14
+inv_weight		     = 0.2
+inv_grid_x	             = 112
+inv_grid_y	             = 4
+icons_texture        = ui\ui_icon_equipment_2
+;--------/==>
+
+
+[detector_fenix]:detector_scientific
+visual			= dynamics\devices\dev_detector_6\dev_detector_6.ogf
+inv_name		= st_detector6
+inv_name_short	= st_detector6
+description		= st_detector6_descr
+hud				= detector_fenix_hud
+inv_grid_width	= 1
+inv_grid_height	= 1
+inv_grid_x		= 115
+inv_grid_y		= 4
+cost			= 300000
+icons_texture        = ui\ui_icon_equipment_2
+
+[detector_fenix_hud]:detector_scientific_hud
+item_visual     = dynamics\devices\dev_detector_6\dev_detector_6_hud
+
+[detector_omega]:detector_scientific
+$spawn 			        = "devices\detector_omega"
+visual			        = dynamics\devices\dev_detector_5\dev_detector_5.ogf
+inv_name		        = st_detector_omega
+inv_name_short	                = st_detector_omega
+description		        = st_detector_omega_descr
+cost			= 400000
+af_radius		        = 40
+af_vis_radius		        = 15
+radar_area                      = 50
+radar_accuracy                  = false
+inv_grid_x			= 114
+inv_grid_y			= 4
+hud			        = detector_omega_hud
+icons_texture        = ui\ui_icon_equipment_2
+
+[detector_omega_hud]:detector_scientific_hud
+item_visual                   	= dynamics\devices\dev_detector_5\dev_detector_5_hud

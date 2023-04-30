@@ -1,0 +1,17 @@
+[logic]
+active = sr_idle@wait
+
+[sr_idle@wait]
+;on_info = {+sad_b4_killers_gone} sr_idle@start %=create_squad(sad_sim_13_bloodsuckers:sad_sim_13)%
+
+[sr_idle@start]
+on_game_timer = 60 | sr_idle@check
+
+[sr_idle@check]
+on_info = {!squad_exist(sad_sim_13_bloodsuckers)} sr_idle@squad, {!squad_npc_count_ge(sad_sim_13_bloodsuckers:3)} sr_idle@member, sr_idle@start
+
+[sr_idle@member]
+on_info = {~70} sr_idle@start %=sad_sim_13_create_bloodsucker(bloodsucker_strong)%, sr_idle@start %=sad_sim_13_create_bloodsucker(bloodsucker_normal)%
+
+[sr_idle@squad]
+on_info = {=sad_dist_to_path_ge(sad_sim_13_mobs_home_1:6500)} sr_idle@start %=create_squad(sad_sim_13_bloodsuckers:sad_sim_13)%, sr_idle@start

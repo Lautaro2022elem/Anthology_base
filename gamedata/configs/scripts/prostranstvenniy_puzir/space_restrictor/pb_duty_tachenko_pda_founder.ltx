@@ -1,0 +1,7 @@
+[logic]
+active = sr_idle@actor_duty_founder_pda
+
+[sr_idle@actor_duty_founder_pda]
+on_info = {-jup_b46_duty_founder_pda_start =actor_has_item(jup_b46_duty_founder_pda)} sr_idle@nil %+jup_b46_duty_founder_pda_start =play_sound(jup_b46_duty_founder_pda_diary)%
+
+[sr_idle@nil]

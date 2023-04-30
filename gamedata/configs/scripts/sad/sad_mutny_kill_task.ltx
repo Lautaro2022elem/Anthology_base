@@ -1,0 +1,146 @@
+[logic]
+active = sr_idle@wait_recognized
+
+; ----------------------------------------------------------------------------------------------------------------------------------- wait for start 
+[sr_idle@wait_recognized]
+on_info = {+sad_b4_actor_recognized} sr_idle@10 %+sad_mutny_b1_accuped =set_counter(sad_b1_actor_enemies_kill:0)% ; +sad_b1_unlock_trader_door%
+
+[sr_idle@10]
+on_info = sr_idle@11 %=clear_smart_terrain(sad_b1:false) =create_squad(sad_b1_stalker_mutny_renegade_squad:sad_sim_1) =create_squad(sad_b1_mutny_squad_two:sad_sim_1) -sad_b1_gym_started% ; =sad_remove_npc_inventory(sad_b2_stalker_barman)%
+
+[sr_idle@11]
+on_info = {=squad_exist(sad_stalker_b1_squad_1)} sr_idle@12 % =remove_squad(sad_stalker_b1_squad_1)%, sr_idle@12
+
+[sr_idle@12]
+on_info = {=squad_exist(sad_stalker_b1_squad_2)} sr_idle@13 %=remove_squad(sad_stalker_b1_squad_2)%, sr_idle@13
+
+[sr_idle@13]
+on_info = {=squad_exist(sad_b1_stalker_mutny_squad)} sr_idle@20 %=remove_squad(sad_b1_stalker_mutny_squad)%, sr_idle@20
+
+[sr_idle@20]
+on_info = {=squad_exist(sad_b1_mutny_squad_two)} sr_idle@30 %=set_squad_enemy_to_actor(sad_b1_stalker_mutny_squad) =set_squad_enemy_to_actor(sad_b1_mutny_squad_two)%
+on_timer = 2000 | sr_idle@30 ;%=set_squad_enemy_to_actor(sad_b1_stalker_mutny_squad) =set_squad_enemy_to_actor(sad_b1_mutny_squad_two)%
+
+[sr_idle@30]
+on_info = {+sad_actor_enemy_to_someone} sr_idle@mche_1 %+sad_dont_tell_about_mutny%, sr_idle@40
+
+[sr_idle@40]
+on_info = sr_idle@100 %=create_squad(sad_stalker_grisha_squad:sad_sim_3)%
+
+
+; ----------------------------------------------------------------------------------------------------------------------------------- wait for atacka
+[sr_idle@100]
+on_actor_inside = sr_idle@110 %+sad_dont_tell_about_mutny =play_sound(sad_grisha_get_here)%
+on_info = {=actor_in_zone(sad_b1_sr_actor_near_check)} %+sad_mutny_squad_awake%
+on_info2 = {+sad_mutny_squad_awake} sr_idle@500 %+sad_dont_tell_about_mutny%
+on_info3 = {+sad_grisha_enemy} sr_idle@grisha_enemy %+sad_mutny_squad_awake +sad_dont_tell_about_mutny%
+on_info5 = {+sad_mutny_gone} sr_idle@500
+
+[sr_idle@110]
+on_timer = 3000 | sr_idle@120 %=give_task(sad_meet_grisha_task)%
+
+[sr_idle@120]
+on_info = {=actor_in_zone(sad_b1_sr_actor_near_check)} %+sad_mutny_squad_awake%
+on_info2 = {+sad_mutny_squad_awake} sr_idle@500
+on_info3 = {+sad_grisha_enemy} sr_idle@grisha_enemy %+sad_mutny_squad_awake%
+on_info4 = {+sad_actor_kill_mutny_agree} sr_idle@130 %=give_task(sad_kill_mutny_task)%
+on_info5 = {+sad_actor_kill_mutny_otkaz} sr_idle@400
+
+[sr_idle@130]
+on_info = {+sad_grisha_enemy} sr_idle@grisha_enemy %+sad_mutny_squad_awake%
+on_info2 = {=actor_in_zone(sad_b1_sr_actor_near_check)} %+sad_mutny_squad_awake%
+on_info3 = {+sad_b1_ataka_start} sr_idle@precut %=run_postprocess(fade_in:9745)=disable_ui%
+on_info4 = {+sad_mutny_squad_awake} sr_idle@500
+
+; ----------------------------------------------------------------------------------------------------------------------------------- Cutscene
+[sr_idle@precut]
+on_timer = 500 | sr_idle@precut_0 %=teleport_actor(sad_b1_actor_afret_cs_walk) =run_postprocess(black:9746)  +sad_grisha_switch_sim_1%
+
+[sr_idle@precut_0]
+on_timer = 500 | sr_idle@precut_1 %=teleport_squad(sad_stalker_grisha_squad:sad_b1_grishas_teleport)% ;%=create_cutscene_actor_with_weapon(sad_b1_cs_actor:sad_b1_cs_actor_walk:0:90:3)%
+
+[sr_idle@precut_1]
+on_timer = 500 | sr_cutscene@ataka %+sad_b1_cutscene_ataka_start%
+
+[sr_cutscene@ataka]
+point = sad_b1_actor_afret_cs_walk
+look = sad_b1_actor_afret_cs_look
+cam_effector = scenario_cam\sad\sad_b1_cut_camera
+global_cameffect = true
+enable_ui_on_end = false
+outdoor = true
+on_timer = 250 | {-sad_b1_cs_fade_out} %+sad_b1_cs_fade_out =stop_postprocess(9745) =stop_postprocess(9746)%
+on_timer2 = 5000 | %+sad_b1_cutscene_grisha_patrol%
+on_timer3 = 7000 | %+sad_mutny_snipers_awake%
+on_timer4 = 15000 | {-sad_b1_cs_fade_end} %+sad_b1_cs_fade_end =stop_sr_cutscene%
+on_signal = cameff_end | sr_idle@cs_end_1 %=run_postprocess(black:9747)%
+on_signal2 = cam_effector_stop | sr_idle@cs_end_1 %=run_postprocess(black:9747)%
+
+[sr_idle@cs_end_1]
+on_timer = 250 | sr_idle@cs_end_2 %=teleport_npc_by_story_id(sad_b1_stalker_mutny:sad_sim_1_mutny_rage_walk1)%
+
+[sr_idle@cs_end_2]
+on_info = {=story_object_exist(sad_b1_cs_actor)} sr_idle@cs_end_3 %=destroy_object(story:sad_b1_cs_actor)%, sr_idle@cs_end_3
+
+[sr_idle@cs_end_3]
+on_timer = 250 | sr_idle@ataka %=stop_postprocess(9747) =enable_ui +sad_b1_cutscene_ataka_end =set_squads_enemies(sad_stalker_grisha_squad:sad_b1_stalker_mutny_squad) =set_squads_enemies(sad_stalker_grisha_squad:sad_b1_mutny_squad_two) +sad_mutny_squad_awake%
+
+
+; ----------------------------------------------------------------------------------------------------------------------------------- ATAKUEV IH
+[sr_idle@ataka]
+on_info = {+sad_grisha_enemy} sr_idle@grisha_enemy
+on_info2 = {!squad_exist(sad_b1_mutny_squad_two)} sr_idle@ataka_1
+
+[sr_idle@ataka_1]
+on_info = {+sad_grisha_enemy} sr_idle@grisha_enemy
+on_info2 = {!squad_exist(sad_b1_stalker_mutny_renegade_squad)} sr_idle@ataka_end %+sad_mutny_gone%
+
+[sr_idle@ataka_end]
+on_info = sr_idle@1000 %=heal_squad(sad_stalker_grisha_squad) +sad_grisha_switch_b1%
+
+[sr_idle@1000]
+on_info = {=counter_greater(sad_b1_actor_enemies_kill:7)} sr_idle@1100 %+sad_b1_actor_kill_8%, {=counter_greater(sad_b1_actor_enemies_kill:3)} sr_idle@1100 %+sad_b1_actor_kill_4%, {=counter_greater(sad_b1_actor_enemies_kill:1)} sr_idle@1100 %+sad_b1_actor_kill_2%, {=counter_greater(sad_b1_actor_enemies_kill:0)} sr_idle@1100 %+sad_b1_actor_kill_1%, sr_idle@1100 %+sad_b1_actor_suka_pacifist%
+
+; ----------------------------------------------------------------------------------------------------------------------------------- New trader inside
+[sr_idle@1100]
+on_info = {+sad_actor_enemy_to_someone} sr_idle@nil
+on_game_timer = 7200 | sr_idle@2000
+
+[sr_idle@2000]
+on_info = {=sad_dist_to_path_ge(sad_b1_spawn_point:60000:0)} sr_idle@2010 %=create_squad(sad_b1_new_bunker_squad:sad_b1) -sad_b1_unlock_trader_door +sad_b1_new_trader_come%
+
+[sr_idle@2010]
+on_info = sr_idle@nil ;%=send_tip(sad_b1_new_trader_arrived)%
+
+; ----------------------------------------------------------------------------------------------------------------------------------- Actor v otkaz
+[sr_idle@400]
+on_info = {+sad_grisha_enemy} sr_idle@grisha_enemy %+sad_mutny_squad_awake%
+on_game_timer = 60 | sr_idle@500 ; 1800
+
+; ----------------------------------------------------------------------------------------------------------------------------------- Grisha go to B1
+[sr_idle@500]
+on_info = sr_idle@510 %+sad_grisha_arrive_b1 +sad_b1_ataka_start +sad_b1_grisha_go_no_cut =set_squads_enemies(sad_stalker_grisha_squad:sad_b1_stalker_mutny_renegade_squad) =set_squads_enemies(sad_stalker_grisha_squad:sad_b1_mutny_squad_two) +sad_mutny_squad_awake%
+
+[sr_idle@510]
+on_info = {+sad_grisha_enemy} sr_idle@grisha_enemy %+sad_mutny_squad_awake%, {+sad_mutny_gone} sr_idle@ataka
+on_info2 = {=squad_in_zone(sad_stalker_grisha_squad:sad_sim_3_sr_grisha_on_position)} sr_idle@520 %+sad_grisha_switch_sim_1 =set_squads_enemies(sad_stalker_grisha_squad:sad_b1_stalker_mutny_renegade_squad) =set_squads_enemies(sad_stalker_grisha_squad:sad_b1_mutny_squad_two) +sad_mutny_squad_awake%
+on_info3 = {-sad_actor_kill_mutny_otkaz =sad_grisha_check_for_teleport} sr_idle@520 %=teleport_squad(sad_stalker_grisha_squad:sad_b1_grishas_teleport) +sad_grisha_switch_sim_1 =set_squads_enemies(sad_stalker_grisha_squad:sad_b1_stalker_mutny_renegade_squad) =set_squads_enemies(sad_stalker_grisha_squad:sad_b1_mutny_squad_two) +sad_mutny_squad_awake%
+on_info4 = {-sad_actor_kill_mutny_otkaz =actor_in_zone(sad_b1_sr_actor_near_check) -sad_grisha_teleported_x} %+sad_grisha_teleported_x =teleport_squad(sad_stalker_grisha_squad:sad_grishas_teleport_x)%
+
+[sr_idle@520]
+on_info = sr_idle@ataka
+
+-----------------------------------------------------------------------------------------------------------------------------------
+[sr_idle@grisha_enemy]
+on_info = sr_idle@mche_1 %=set_squad_enemy_to_actor(sad_stalker_grisha_squad)%
+
+[sr_idle@mche_1]
+on_info2 = {!squad_exist(sad_b1_mutny_squad_two)} sr_idle@mche_2
+
+[sr_idle@mche_2]
+on_info2 = {!squad_exist(sad_b1_stalker_mutny_renegade_squad)} sr_idle@1100 %+sad_mutny_gone +sad_grisha_switch_b1%
+
+; -----------------------------------------------------------------------------------------------------------------------------------
+[sr_idle@nil]
+
+

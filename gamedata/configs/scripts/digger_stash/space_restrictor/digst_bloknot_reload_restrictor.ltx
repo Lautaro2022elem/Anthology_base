@@ -1,0 +1,10 @@
+[logic]
+active = sr_idle@bloknot_reload_digst
+
+[sr_idle@bloknot_reload_digst]
+on_info = {+digst_bloknot_reload_to_digst} sr_idle@bloknot_reload_digst_1
+
+[sr_idle@bloknot_reload_digst_1]
+on_timer = 3000 | sr_idle@nil %=pb_new_text_in_bloknot%
+
+[sr_idle@nil]

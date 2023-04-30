@@ -1,0 +1,19 @@
+[logic] 
+active = ph_idle@wait
+
+[ph_idle@wait]
+nonscript_usable = true 
+tips = sad_inventory_box_key_locked
+on_info = {=actor_has_item(sad_b2_maxim_key)} ph_idle@spawn
+
+[ph_idle@spawn]
+on_info = ph_idle@locked %=spawn_object_in(stalker_outfit:sad_b2_maxim_treasure) =spawn_object_in(wpn_groza_nimble:sad_b2_maxim_treasure) =spawn_object_in(ammo_5.45x39_ap:sad_b2_maxim_treasure) =spawn_object_in(helm_hardhat_snag:sad_b2_maxim_treasure)%
+
+[ph_idle@locked] 
+nonscript_usable = false 
+tips = sad_maxim_tresure_locked_txt
+on_use = {=actor_has_item(sad_b2_maxim_key)} ph_idle@open %=remove_item(sad_b2_maxim_key) =play_sound(power_switch)%, %=play_sound(trader_door_locked)%
+
+[ph_idle@open] 
+nonscript_usable = true
+tips = inventory_box_use ;actor_inventory_box_use

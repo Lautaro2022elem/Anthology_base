@@ -1,0 +1,35 @@
+;loner leader
+[logic@esc_leader_stalkerbase]
+suitable = {=check_npc_name(esc_leader_stalkerbase)} true
+prior = 200
+active = animpoint@loner_leader
+level_spot = quest_npc
+can_select_weapon = false
+
+[animpoint@loner_leader]
+cover_name = esc_smart_terrain_5_7_smart_cover_leader
+avail_animations = animpoint_stay_ohrana
+use_camp = false
+meet = meet@loner_leader
+combat_ignore_cond = {=actor_enemy =check_enemy_name(actor)} false, true
+combat_ignore_keep_when_attacked = true
+invulnerable = {!actor_enemy} true, false
+reach_distance = 10
+gather_items_enabled = false
+help_wounded_enabled = false
+corpse_detection_enabled = false
+enemy_ignore_cond = {=actor_enemy =check_enemy_name(actor)} false, true
+
+[meet@loner_leader]
+close_snd_hello = esc_leader_meet
+close_snd_bye = esc_leader_meet_bye
+close_anim 		= nil
+close_victim 	= nil
+far_anim 		= nil
+far_victim 		= nil
+close_distance  = 0
+far_distance 	= 0
+close_snd_distance = 3
+use = {=actor_enemy} false, true
+meet_on_talking = false
+allow_break = false

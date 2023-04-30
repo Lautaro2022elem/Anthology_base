@@ -1,0 +1,171 @@
+[walker@def]
+gather_items_enabled = false
+help_wounded_enabled = false
+corpse_detection_enabled = false
+on_info666 = {=actor_enemy} remark@enemya
+wounded = wounded
+
+[remark@enemya]
+wounded = wounded
+
+[combat]
+out_restr = sad_b3_surge_hide
+
+; ************************************************************************************** 1
+[logic@ucheny_1]
+active = animpoint@1
+suitable = {=check_npc_name(sad_b3_ucheny_raz)} true
+on_death = death@andrey
+on_hit = hit
+on_combat = combat
+post_combat_time = 0, 0
+level_spot = quest_npc
+prior = 400
+
+[animpoint@1]:walker@def
+cover_name = sad_b3_ucheny_place_1
+avail_animations = animpoint_sit_normal_no_rnd
+out_restr = sad_b3_surge_hide
+meet = meet@11
+reach_movement = run
+use_camp = false
+on_info = {=animpoint_reached} animpoint@1_meet
+on_info2 = {+sad_b3_start_arrive +sad_b3_ucheny_mission_on} walker@1_out
+
+[animpoint@1_meet]:walker@def
+cover_name = sad_b3_ucheny_place_1
+out_restr = sad_b3_surge_hide
+on_info = {+sad_b3_start_arrive +sad_b3_ucheny_mission_on} walker@1_out
+meet = meet@1
+on_info2 = {=actor_enemy =health_le(0.5)} %=restore_health%
+combat_ignore_cond = {=is_enemy_actor} true, {=enemy_in_zone(sad_b3_sr_bunker_zone)} false, true
+
+[walker@1_out]:walker@def
+path_walk = ucheny_1_start
+path_look = ucheny_start_look
+def_state_moving = run
+on_info = {=npc_in_zone(sad_b3_sr_ucheny_v_sbore)} %+sad_b3_ucheny_raz_ready%
+meet = no_meet
+
+; ************************************************************************************** 2
+[logic@ucheny_2]
+active = animpoint@2
+suitable = {=check_npc_name(sad_b3_ucheny_dva)} true
+on_death = death
+on_hit = hit
+on_combat = combat
+post_combat_time = 0, 0
+prior = 400
+
+[animpoint@2]:walker@def
+cover_name = sad_b3_ucheny_place_2
+out_restr = sad_b3_surge_hide
+meet = meet@2
+on_game_timer = 600 | walker@2
+on_info = {+sad_b3_start_arrive +sad_b3_ucheny_mission_on} walker@2_out %=sad_reset_animation%
+on_info2 = {=actor_enemy =health_le(0.5)} %=restore_health%
+
+[walker@2]:walker@def
+path_walk = ucheny_light_walk
+path_look = ucheny_light_look
+out_restr = sad_b3_surge_hide
+meet = meet@2
+on_game_timer = 300 | animpoint@2
+on_info = {+sad_b3_start_arrive +sad_b3_ucheny_mission_on} walker@2_out
+on_info2 = {=actor_enemy =health_le(0.5)} %=restore_health%
+
+[walker@2_out]:walker@def
+path_walk = ucheny_2_start
+path_look = ucheny_start_look
+def_state_moving = run
+on_info = {=npc_in_zone(sad_b3_sr_ucheny_v_sbore)} %+sad_b3_ucheny_dva_ready%
+meet = no_meet
+
+; ************************************************************************************** 3
+[logic@ucheny_3]
+active = walker@3
+suitable = {=target_squad_name(sad_b3_ucheny_squad) !is_squad_commander +sad_b3_ucheny_mission_on} true
+on_death = death
+on_hit = hit
+on_combat = combat
+post_combat_time = 0, 0
+prior = 350
+
+[walker@3]:walker@def
+path_walk = ucheny_3_start
+path_look = ucheny_start_look
+meet = no_meet
+
+; ************************************************************************************** 4
+[logic@ucheny_4]
+active = walker@4
+suitable = {=target_squad_name(sad_b3_ucheny_squad) !is_squad_commander +sad_b3_ucheny_mission_on} true
+on_death = death
+on_hit = hit
+on_combat = combat
+post_combat_time = 0, 0
+prior = 350
+
+[walker@4]:walker@def
+path_walk = ucheny_4_start
+path_look = ucheny_start_look
+meet = no_meet
+
+; ************************************************************************************** 5
+[logic@ucheny_5]
+active = walker@5
+suitable = {=target_squad_name(sad_b3_ucheny_squad) !is_squad_commander +sad_b3_ucheny_mission_on} true
+on_death = death
+on_hit = hit
+on_combat = combat
+post_combat_time = 0, 0
+prior = 350
+
+[walker@5]:walker@def
+path_walk = ucheny_5_start
+path_look = ucheny_start_look
+meet = no_meet
+
+; ------------------------------------
+[meet@1]
+close_snd_hello = nil
+close_distance  = 0
+close_victim    = actor
+close_anim 		= nil
+use 			= {=actor_enemy} false, {=dist_to_actor_ge(3)} false, true
+allow_break 	= false
+trade_enable	= false
+
+[meet@11]
+close_snd_hello = nil
+close_distance  = 3
+close_victim    = actor
+close_anim 		= wait_na
+use 			= {=actor_enemy} false, true
+allow_break 	= false
+trade_enable	= false
+
+[meet@2]
+close_snd_hello = nil
+close_distance  = 0
+close_victim    = nil
+close_anim 		= nil
+use 			= false
+snd_on_use 		= meet_use_no_talk_leader
+
+; ------------------------------------
+[wounded] ;Не должен быть раненым
+hp_state = 0|wounded_heavy@help_heavy
+hp_state_see = 0|wounded_heavy@help_heavy
+hp_victim = 0|nil
+hp_fight = 0|false
+hp_cover = 0|false
+
+[death@andrey]
+on_info = {=killed_by_actor} %+sad_b3_ucheny_enemy +sad_b3_andrey_dead%, %+sad_b3_andrey_dead%
+
+[death]
+on_info = {=killed_by_actor} %+sad_b3_ucheny_enemy%
+
+[hit]
+on_info = {=actor_enemy} %+sad_b3_ucheny_enemy%

@@ -1,0 +1,19 @@
+[logic]
+active = sr_idle@spawn_murad
+
+[sr_idle@spawn_murad]
+on_info = {+pro_markus_alive_first_dialog_end -pro_murad_prisoner_on_base_spawn} sr_idle@markus_send_sms_restr %=spawn_object(pb_murad_prison:pro_murad_prison_walk) +pro_murad_prisoner_on_base_spawn%
+
+[sr_idle@markus_send_sms_restr]
+on_info = {+pro_murad_prisoner_dialog_done} sr_idle@markus_send_sms %=create_squad(pro_base_final_lutiy_squad:pro_smart_terrain_3_0) =create_squad(pro_base_final_snake_squad:pro_smart_terrain_3_0) =create_squad(pro_base_final_murad_squad:pro_smart_terrain_3_0) =create_squad(pro_podzemka_duty_squad:pro_smart_terrain_2_1)%
+
+[sr_idle@markus_send_sms]
+on_timer = 6000 | sr_idle@markus_give_info %=pb_markus_send_sms_memmory%
+
+[sr_idle@markus_give_info]
+on_timer = 17100 | sr_idle@spawn_stalker %+pro_markus_base_sends_sms_quest%
+
+[sr_idle@spawn_stalker]
+on_info = {+pro_lutiy_final_end_line_meet_done} sr_idle@nil %=spawn_object(pb_paskhalka_stalker:pro_paskhalka_stalker_walk)%
+
+[sr_idle@nil]

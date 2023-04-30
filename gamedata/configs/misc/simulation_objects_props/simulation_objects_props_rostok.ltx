@@ -1,0 +1,199 @@
+;----------- << ROSTOK BAR >> ------------
+;---------	SIMULATION	--------
+;sim smarties
+[bar_zastava_dogs_lair]:default_lair
+sim_avail 	            = {+faction_base_defense_active} false, true
+territory	            = 0
+dolg		            = 1
+stalker		            = 1
+
+[bar_zastava_dogs_lair_2]:default_lair
+sim_avail 	            = {+faction_base_defense_active} false, true
+territory	            = 0
+dolg		            = 1
+stalker		            = 1
+
+[bar_dolg_bunker]:default_base
+sim_avail 	            = true
+surge 		            = 1
+dolg		            = 2
+
+[bar_dolg_general]:default_base
+sim_avail 	            = true
+surge 		            = 1
+dolg		            = 2
+
+[bar_visitors]:default_base
+sim_avail 	            = true
+surge 		            = 1
+stalker		            = 2
+csky		            = 2 
+ecolog		            = 2 
+dolg		            = 2
+
+;unique smarties, sim after guards die
+[bar_zastava]:default_base
+sim_avail               = {!squad_exist(bar_duty_security_squad_leader_squad)} true, false
+surge                   = 1
+dolg                    = 1
+lair                    = 1
+
+[bar_zastava_2]:default_base
+sim_avail               = {!squad_exist(bar_zastava_2_commander_squad)} true, false
+surge                   = 1
+dolg                    = 1
+lair                    = 1
+
+[bar_baza]:default_base
+sim_avail 	= true
+surge 		= 1
+dolg        = 1
+stalker     = 1
+
+[bar_territory]:default_territory
+sim_avail 	= true
+
+[bar_home]:default_territory
+sim_avail 	= true
+
+[bar_lesop]:default_territory
+sim_avail = true
+surge 		= 1
+
+[bar_camp]:default_territory
+sim_avail = true
+surge 		= 1
+stalker     = 1
+dolg        = 1
+
+[bar_terhome]:default_territory
+sim_avail = true
+surge 		= 1
+
+[bar_arena]:default_territory
+sim_avail = true
+surge 		= 1
+
+[bar_bar]:default_base
+sim_avail = true
+surge 		= 1
+stalker     = 3
+dolg        = 2
+ecolog        = 2
+csky		            = 2 
+
+[bar_zavod]:default_territory
+sim_avail = true
+surge 		= 1
+stalker     = 1
+csky		            = 1 
+ecolog		            = 1 
+dolg        = 1
+
+[bar_bar2]:default_base
+sim_avail = true
+surge 		= 1
+stalker     = 1
+dolg        = 1
+csky		            = 1 
+ecolog		            = 1 
+
+[bar_tunnel]:default_territory
+sim_avail = true
+surge 		= 1
+
+;----------- << ROSTOK (WILD TERRITORY) >> ------------
+;---------	SIMULATION	--------
+;sim smarties
+[ros_smart_monster4]:default_lair
+sim_avail 	            = true
+
+[ros_smart_monster5]:default_lair
+sim_avail 	            = true
+territory	            = 1
+
+[ros_smart_monster7]:weak_lair		;edited so rare monsters don't come here
+sim_avail 	            = true
+
+[ros_smart_snork1]:default_lair
+sim_avail 	            = true
+
+[ros_smart_stalker_killers1]:default_base
+sim_avail 	            = true
+surge 		            = 1
+killer		            = 2
+
+[ros_smart_stalker1]:default_base
+sim_avail 	            = true
+stalker		            = 1 
+ecolog		            = 1 
+csky		            = 1
+dolg		            = 1
+
+[ros_smart_stalker2]:default_lair
+sim_avail 	            = true
+territory	            = 1
+
+[ros_smart_stalker3]:default_lair
+sim_avail 	            = true
+territory	            = 1
+
+[ros_smart_monster8]:default_lair
+sim_avail 	            = true
+
+[ros_smart_poltergeist1]:default_lair
+sim_avail 	            = true
+
+[ros_smart_monster6]:default_lair
+sim_avail 	            = true
+
+[ros_smart_monster2]:default_lair
+sim_avail 	            = true
+
+[ros_smart_monster1]:default_lair
+sim_avail 	            = true
+
+[ros_smart_bloodsucker1]:default_lair
+sim_avail 	            = true
+
+[ros_smart_killers1]:default_territory
+sim_avail 	            = true
+territory	            = 1
+killer		            = 2
+
+[ros_vert]:default_territory
+sim_avail = true
+surge 		= 1
+
+[ros_lair]:default_lair
+sim_avail = true
+surge 		= 1
+dolg        = 1
+
+[ros_bar]:default_territory
+sim_avail = true
+surge 		= 1
+bandit      = 1
+killer      = 1
+
+[ros_ret]:default_territory
+sim_avail = true
+surge 		= 1
+renegade      = 2
+
+[ros_home]:default_territory
+sim_avail 	= true
+surge 		= 1
+bandit      = 2
+dolg        = 1
+killer      = 1
+
+[ros_perron]:default_territory
+sim_avail 	= true
+
+[ros_road]:default_territory
+sim_avail 	= true
+
+[ros_str]:default_territory
+sim_avail 	= true
+killer      = 2

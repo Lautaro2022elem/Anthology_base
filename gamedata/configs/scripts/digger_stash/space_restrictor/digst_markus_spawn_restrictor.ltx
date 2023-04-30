@@ -1,0 +1,8 @@
+[logic]
+active = sr_idle
+
+[sr_idle]
+on_info = {-perevalochnaya_baza_digger_stash_scene =actor_on_level(digger_stash)} %+perevalochnaya_baza_digger_stash_scene +perevalochnaya_baza_digger_stash_scene_start%
+on_info2 = {+perevalochnaya_baza_digger_stash_scene_start} sr_idle@nil
+
+[sr_idle@nil]

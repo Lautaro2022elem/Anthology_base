@@ -1,0 +1,29 @@
+[smart_terrain];	sad_b3a
+squad_id = 13
+max_population = 1
+;respawn_params = respawn
+arrive_dist = 40
+
+[respawn]
+spawn_bandit
+
+[spawn_bandit]
+spawn_squads = simulation_bandit_b3a ;bandit_sim_squad_novice
+spawn_num = {-sad_b3a_start_simulation -sad_actor_enemy_to_someone} 0, 1
+
+[exclusive]
+stalker_maximilian = sad\sad_b3a_maximilian.ltx
+maximilian_member_1 = sad\sad_b3a_maxim_squad.ltx
+maximilian_member_2 = sad\sad_b3a_maxim_squad.ltx
+maximilian_member_3 = sad\sad_b3a_maxim_squad.ltx
+maximilian_member_4 = sad\sad_b3a_maxim_squad.ltx
+maximilian_member_5 = sad\sad_b3a_maxim_squad.ltx
+
+bandit_job_1 = sad\sad_b3a_sim_jobs.ltx
+bandit_job_2 = sad\sad_b3a_sim_jobs.ltx
+bandit_job_3 = sad\sad_b3a_sim_jobs.ltx
+bandit_job_4 = sad\sad_b3a_sim_jobs.ltx
+
+killer_1 = sad\sad_b3a_killer_jobs.ltx
+killer_2 = sad\sad_b3a_killer_jobs.ltx
+killer_3 = sad\sad_b3a_killer_jobs.ltx

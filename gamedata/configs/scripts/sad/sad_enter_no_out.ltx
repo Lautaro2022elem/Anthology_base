@@ -1,0 +1,17 @@
+[logic]
+active = sr_idle@wait
+
+[sr_idle@wait]
+on_actor_inside = sr_idle@question %=run_postprocess(black:3009:true) =disable_ui%
+;on_actor_inside = sr_idle@teleport
+
+[sr_idle@100]
+;on_info = {+sad_actor_has_all_stuff +sad_af_oasis_heart_have} sr_idle@quest_complete, {-sad_actor_has_all_stuff -sad_af_oasis_heart_have} sr_idle@quest_zero, sr_idle@quest_half
+
+[sr_idle@question]
+on_game_timer = 10 | {-pri_a28_show_freeplay_dialog} %+pri_a28_show_freeplay_dialog =enable_ui =show_freeplay_dialog(st_freeplay_text_yes_no:true)%
+on_info = {+pri_a28_actor_in_zone_stay} sr_idle@teleport %-pri_a28_show_freeplay_dialog -pri_a28_actor_in_zone_stay =disable_ui%
+on_info2 = {+pri_a28_actor_in_zone_leave} sr_idle@nil %=enable_ui =run_tutorial(outro_game)%
+
+[sr_idle@teleport]
+on_timer = 500 | sr_idle@wait %=stop_postprocess(3009) =teleport_actor(sad_actor_enter_walk:sad_actor_enter_look) =enable_ui%

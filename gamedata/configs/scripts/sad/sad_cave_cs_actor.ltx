@@ -1,0 +1,28 @@
+; general section
+
+[walker@gen]
+meet = no_meet
+use_camp = false
+combat_ignore_cond = true
+combat_ignore_keep_when_attacked = true
+invulnerable = true
+gather_items_enabled = false
+help_wounded_enabled = false
+corpse_detection_enabled = false
+
+[logic]
+active = walker@1
+
+[walker@1]:walker@gen
+path_walk = sad_cave_cs_actor_start
+on_info = {+sad_cave_cutscene_start} walker@2
+
+[walker@2]:walker@gen
+path_walk = sad_cave_cs_actor_walk
+path_look = sad_cave_cs_actor_place
+on_info = {+sad_nauchny_go_to_zamer} walker@3
+
+[walker@3]:walker@gen
+path_walk = sad_cave_cs_actor_walk
+path_look = sad_cave_cs_nauchny_21_look
+def_state_standing = guard

@@ -1,0 +1,69 @@
+[logic]
+active = remark@1
+post_combat_time = 0, 0
+
+[remark@1]
+anim = wait
+target = story | actor
+invulnerable = true
+gather_items_enabled = false
+corpse_detection_enabled = false
+combat_ignore_keep_when_attacked = true 
+combat_ignore_cond = true
+meet = no_meet
+on_info = {+bar_dangerous_duty_time} remark
+
+
+[remark]
+anim = hello_wpn
+target = story | actor
+invulnerable = true
+gather_items_enabled = false
+corpse_detection_enabled = false
+combat_ignore_keep_when_attacked = true 
+combat_ignore_cond = true
+on_info = {=dist_to_actor_le(2)} remark@dialog_actor
+
+[remark@dialog_actor]
+anim = wait
+target = story | actor
+meet = meet@dialog
+invulnerable = true
+gather_items_enabled = false
+corpse_detection_enabled = false
+combat_ignore_keep_when_attacked = true 
+combat_ignore_cond = true
+on_info = {+bar_npc_dolg_general_dangerous_duty_dialog_info} remark@wait
+
+
+[remark@wait]
+anim = wait
+target = story | actor
+meet = no_meet
+invulnerable = true
+on_info = {+bar_npc_dolg_general_release} %=release_npc%
+
+
+
+
+[meet@dialog]
+abuse           = false
+close_anim 		= nil
+far_anim 		= nil
+far_victim 		= nil
+close_distance  = 0
+far_distance 	= 0
+close_victim = actor
+use = {=dist_to_actor_le(2) -bar_npc_dolg_general_dangerous_duty_dialog_info} self, true
+allow_break = false
+meet_dialog = bar_npc_dolg_general_dangerous_duty_dialog
+trade_enable = false
+
+
+
+
+
+
+
+
+

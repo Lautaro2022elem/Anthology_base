@@ -1,0 +1,3033 @@
+<?xml version="1.0" encoding="windows-1251" ?>
+<string_table>
+    <string id="system_title">
+		<text>Система оповещений:</text>
+	</string>
+	<string id="descr_title">
+		<text>Полное описание:</text>
+	</string>
+	<string id="st_gui_chars_title">
+		<text>Название и характеристики:</text>
+	</string>
+	<string id="st_gui_upgrades">
+		<text>Апгрейды</text>
+	</string>	
+	<string id="st_gui_main_group">
+		<text>Основная группа</text>
+	</string>
+	
+	<string id="one">
+		<text>Список оружия</text>
+	</string>
+	<string id="two">
+		<text>Список боеприпасов</text>
+	</string>
+	<string id="three">
+		<text>Список бронекостюмов</text>
+	</string>
+	<string id="four">
+		<text>Список артефактов</text>
+	</string>
+	<string id="five">
+		<text>Список медикаментов</text>
+	</string>
+	<string id="seven">
+		<text>Список продовольствия</text>
+	</string>
+	<string id="six">
+		<text>Список прочего снаряжения</text>
+	</string>
+	<string id="ui_gui_pc_document_1">
+		<text>This document is encrypted. View content is possible only after decryption.</text>
+	</string>
+	<string id="ui_gui_pc_document_2">
+		<text>This document is encrypted. View content is possible only after decryption.</text>
+	</string>
+	<string id="ui_gui_pc_zametka_1">
+		<text>Расположение объектов закрытого лабораторного комплекса по разработке наших перспективным боевых средств было изменено. В результате дополнительных договоренностей все они были вывезены в Долину Теней для дальнейшего размещения. Сведения в имеющихся документах возможно расшифровать только после посещения основной лаборатории в Долине Теней.</text>
+	</string>
+	<string id="ui_gui_vhod_caption">
+		<text>Кодовый замок</text>
+	</string>
+	<string id="ui_bai_1_priem_text">
+		<text>Items</text>
+	</string>
+	<string id="ui_bai_2_priem_text">
+		<text>Campfire</text>
+	</string>
+	<string id="ui_bai_3_priem_text">
+		<text>Amount:</text>
+	</string>
+	<string id="st_menu_close">
+		<text>Close</text>
+	</string>
+	<string id="st_menu_info_use">
+		<text>Info</text>
+	</string>
+	<string id="st_menu_weapon_use">
+		<text>Weaponry</text>
+	</string>
+	<string id="st_menu_perk_close">
+		<text>Skills</text>
+	</string>
+	<string id="ui_rai_1_priem_text">
+		<text>Contents</text>
+	</string>
+	<string id="ui_rai_2_priem_text">
+		<text>PDA</text>
+	</string>
+	<string id="ui_rai_3_priem_text">
+		<text>Skills section:</text>
+	</string>
+	<string id="ui_mm_reat_1">
+		<text>Skills 1</text>
+	</string>
+	<string id="ui_mm_reat_2">
+		<text>Skills 2</text>
+	</string>
+	<string id="ui_mm_reat_3">
+		<text>Skill 3</text>
+	</string>
+	<string id="ui_mm_reat_4">
+		<text>Skill 4</text>
+	</string>
+	<string id="ui_mm_reat_5">
+		<text>Skill 5</text>
+	</string>
+	<string id="ui_mm_reat_6">
+		<text>Skill 6</text>
+	</string>
+	<string id="ui_mm_reat_7">
+		<text>Skill 7</text>
+	</string>
+	<string id="ui_mm_reat_8">
+		<text>Skill 8</text>
+	</string>
+	<string id="ui_mm_reat_9">
+		<text>Skill 9</text>
+	</string>
+	<string id="ui_mm_reat_10">
+		<text>Skill 10</text>
+	</string>
+	<string id="ui_mm_reat_11">
+		<text>Skill 11</text>
+	</string>
+	<string id="ui_mm_reat_12">
+		<text>Skill 12</text>
+	</string>
+	<string id="ui_mm_reat_13">
+		<text>Skill 13</text>
+	</string>
+	<string id="ui_mm_reat_14">
+		<text>Skill 14</text>
+	</string>
+	<string id="ui_gui_perkfife_1_hint">
+		<text>Просмотр навыка "Селекция"</text>
+	</string>
+	<string id="ui_gui_perkfife_2_hint">
+		<text>Просмотр навыка "Ремонт брони"</text>
+	</string>
+	<string id="ui_gui_perkfife_3_hint">
+		<text>Просмотр навыка "Ремонт оружия"</text>
+	</string>
+	<string id="ui_gui_perkfife_4_hint">
+		<text>Просмотр навыка "Механика"</text>
+	</string>
+	<string id="ui_gui_perkfife_5_hint">
+		<text>Просмотр навыка "Химия"</text>
+	</string>
+	<string id="ui_gui_perkfife_6_hint">
+		<text>Просмотр навыка "Основы охоты"</text>
+	</string>
+	<string id="ui_gui_perkfife_7_hint">
+		<text>Просмотр навыка "Мастер-охотник"</text>
+	</string>
+	<string id="ui_gui_perkfife_8_hint">
+		<text>Просмотр навыка "Поиск аномалий"</text>
+	</string>
+	<string id="ui_gui_perkfife_9_hint">
+		<text>Просмотр навыка "Сбор артефактов"</text>
+	</string>
+	<string id="ui_gui_perkfife_10_hint">
+		<text>Просмотр навыка "Биорадар мутантов"</text>
+	</string>
+	<string id="ui_gui_perkfife_11_hint">
+		<text>Просмотр навыка "Полевой врач"</text>
+	</string>
+	<string id="ui_gui_perkfife_12_hint">
+		<text>Просмотр навыка "Основные способности"</text>
+	</string>
+	<string id="ui_gui_perkfife_13_hint">
+		<text>Просмотр навыка "Воровство"</text>
+	</string>
+	<string id="ui_gui_perkfife_14_hint">
+		<text>Просмотр навыка "РЭБ"</text>
+	</string>
+	
+	<string id="ui_mm_beat_1">
+		<text>Boar meat</text>
+	</string>
+	<string id="ui_mm_beat_2">
+		<text>Dog meat</text>
+	</string>
+	<string id="ui_mm_beat_3">
+		<text>Flesh meat</text>
+	</string>
+	<string id="ui_gui_bonfife_1_hint">
+		<text>Cook boar meat</text>
+	</string>
+	<string id="ui_gui_bonfife_2_hint">
+		<text>Cook dog meat</text>
+	</string>
+	<string id="ui_gui_bonfife_3_hint">
+		<text>Cook flesh meat</text>
+	</string>
+	<string id="ui_gui_copinf_caption">
+		<text>Copy information</text>
+	</string>
+	<string id="st_mutant_type_no_title">
+		<text>Unknown type.</text>
+	</string>
+	<string id="st_menu_copy_use">
+		<text>Copy</text>
+	</string>
+	<string id="st_npcrac_attach_1">
+		<text>Start</text>
+	</string>
+	<string id="st_npcrac_1_hint">
+		<text>Прослушивание радио-частоты.</text>
+	</string>
+	<string id="ui_gui_npc_razia_npc_caption">
+		<text>Многоканальная рация</text>
+	</string>
+	<string id="st_ui_specsvc_about_use_item_1">
+		<text>При запуске будет осуществлен автоматический замер СВЧ-излучения.</text>
+	</string>
+	<string id="st_ui_specsvc_about_use_item_2">
+		<text>При запуске будет осуществлен автоматический замер гамма-излучения.</text>
+	</string>
+	<string id="st_bomba_installed_descr">
+		<text>Бомба установлена</text>
+	</string>
+	<string id="st_menu_prot_use">
+		<text>Подать импульс</text>
+	</string>
+	<string id="st_menu_radiovzruv_use">
+		<text>Применить</text>
+	</string>
+	<string id="ui_gui_mutdq4_caption">
+		<text>Прототипная установка.</text>
+	</string>
+	<string id="ui_gui_rvzruv_caption">
+		<text>Взрыватель.</text>
+	</string>
+	<string id="ui_gui_rtimer_caption">
+		<text>Вентиль.</text>
+	</string>
+	<string id="ui_gui_rgener_caption">
+		<text>Генератор.</text>
+	</string>
+	<string id="ui_gui_rstantion_caption">
+		<text>Радиостанция.</text>
+	</string>
+	<string id="ui_gui_bomba_caption">
+		<text>Установка бомбы.</text>
+	</string>
+	<string id="st_rukzak_t1_hint">
+		<text>Взять предмет.</text>
+	</string>
+	<string id="st_rukzak_use_hint">
+		<text>Взять всё.</text>
+	</string>
+	<string id="st_rukzak_close_hint">
+		<text>Close.</text>
+	</string>
+	<string id="ui_gui_geiger_caption">
+		<text>.</text>
+	</string>
+	<string id="ui_gui_svc_caption">
+		<text>Inspector RD X2</text>
+	</string>
+	<string id="ui_gui_timer_1_hint">
+		<text>Запустить таймер</text>
+	</string>
+	<string id="ui_gui_timer_2_hint">
+		<text>Сброс таймера</text>
+	</string>
+	<string id="ui_gui_timer_3_hint">
+		<text>Закрыть окно</text>
+	</string>
+	<string id="st_mutant_use_otrezat">
+		<text>Отрезать</text>
+	</string>
+	<string id="st_mutanter_warning_no_item">
+		<text>Невозможно добыть трофей.</text>
+	</string>
+	<string id="st_mutant_boar_booty_text">
+		<text>Отрезано копыто кабана</text>
+	</string>
+	<string id="st_mutant_snork_booty_text">
+		<text>Отрезана стопа снорка</text>
+	</string>
+	<string id="st_mutant_psevdodog_booty_text">
+		<text>Отрезан хвост слепой собаки</text>
+	</string>
+	<string id="st_mutant_krovosos_booty_text">
+		<text>Отрезано щупальце кровососа</text>
+	</string>
+	<string id="st_mutant_dog_booty_text">
+		<text>Отрезан хвост чернобыльца</text>
+	</string>
+	<string id="st_mutant_flesh_booty_text">
+		<text>Вырезан глаз плоти</text>
+	</string>
+	<string id="st_mutant_giant_booty_text">
+		<text>Вырезан глаз гигант</text>
+	</string>
+	<string id="st_mutant_chimera_booty_text">
+		<text>Отрезан коготь химеры</text>
+	</string>
+	<string id="st_mutant_controler_booty_text">
+		<text>Отрезана рука контроллера</text>
+	</string>
+	<string id="st_mutant_burer_booty_text">
+		<text>Отрезана рука бюрера</text>
+	</string>
+	<string id="st_mutant_no_booty_text">
+		<text>Не удалось добыть трофей.</text>
+	</string>
+	<string id="st_mutant_level_0_title">
+		<text>Уровень: 0</text>
+	</string>
+	<string id="st_mutant_level_1_title">
+		<text>Уровень: 1</text>
+	</string>
+	<string id="st_mutant_level_2_title">
+		<text>Уровень: 2</text>
+	</string>
+	<string id="st_mutant_level_3_title">
+		<text>Уровень: 3</text>
+	</string>
+	<string id="st_mutant_level_4_title">
+		<text>Уровень: 4</text>
+	</string>
+	<string id="st_mutant_level_5_title">
+		<text>Уровень: 5</text>
+	</string>
+	<string id="st_mutant_level_6_title">
+		<text>Уровень: 6</text>
+	</string>
+	<string id="st_mutant_level_7_title">
+		<text>Уровень: 7</text>
+	</string>
+	<string id="st_mutant_level_8_title">
+		<text>Уровень: 8</text>
+	</string>
+	<string id="st_mutant_level_9_title">
+		<text>Уровень: 9</text>
+	</string>
+	<string id="st_mutant_level_10_title">
+		<text>Уровень: 10</text>
+	</string>
+	<string id="st_mutant_type_1_title">
+		<text>Тип мутанта: Кабан</text>
+	</string>
+	<string id="st_mutant_type_2_title">
+		<text>Тип мутанта: Псевдоплоть</text>
+	</string>
+	<string id="st_mutant_type_3_title">
+		<text>Тип мутанта: Чернобылец</text>
+	</string>
+	<string id="st_mutant_type_4_title">
+		<text>Тип мутанта: Слепая собака</text>
+	</string>
+	<string id="st_mutant_type_5_title">
+		<text>Тип мутанта: Снорк</text>
+	</string>
+	<string id="st_mutant_type_6_title">
+		<text>Тип мутанта: Кровосос</text>
+	</string>
+	<string id="st_mutant_type_7_title">
+		<text>Тип мутанта: Бюрер</text>
+	</string>
+	<string id="st_mutant_type_8_title">
+		<text>Тип мутанта: Псионик</text>
+	</string>
+	<string id="st_mutant_type_9_title">
+		<text>Тип мутанта: Химера</text>
+	</string>
+	<string id="st_mutant_type_10_title">
+		<text>Тип мутанта: Псевдогигинт</text>
+	</string>
+	<string id="st_mutant_type_11_title">
+		<text>Тип мутанта: Неидентифицирован</text>
+	</string>
+	<string id="st_ui_hunter_about_rank">
+		<text>Ранг навыков охотника на мутантов (от 1 до 10).</text>
+	</string>
+	<string id="st_ui_need_precondition_to_use_1">
+		<text>Изучите предыдущий навык.</text>
+	</string>
+	<string id="st_ui_need_info_to_use_1">
+		<text>Добыча трофея невозможна, отсутствует специальный навык.</text>
+	</string>
+	<string id="st_ui_need_knife_to_use_1">
+		<text>Добыча трофея невозможна, отсутствует охотничий нож.</text>
+	</string>
+	<string id="st_ui_need_info_to_use_2">
+		<text>Добыча трофея невозможна, неизвестный тип мутанта.</text>
+	</string>	
+	<string id="st_menu_use">
+		<text>Применить</text>
+	</string>
+	<string id="st_geiger_attach_1">
+		<text>Замер</text>
+	</string>
+	<string id="ui_gui_spec_1_caption">
+		<text>Специализация "Снайпер".</text>
+	</string>
+	<string id="ui_gui_spec_2_caption">
+		<text>Специализация "Диверсант".</text>
+	</string>
+	<string id="ui_gui_spec_3_caption">
+		<text>Специализация "Пехотинец".</text>
+	</string>
+	<string id="st_dopspec_item_1_used">
+		<text>Доп. боеприпас</text>
+	</string>
+	<string id="st_dopspec_item_2_used">
+		<text>Сухпаек и аптечка</text>
+	</string>
+	<string id="st_dopspec_item_3_used">
+		<text>Аддоны к оружию</text>
+	</string>
+	<string id="st_dopspec_item_4_used">
+		<text>Спец. снаряжение</text>
+	</string>
+	<string id="st_dopspec_item_5_used">
+		<text>Противогаз</text>
+	</string>
+	<string id="st_dopspec_item_6_used">
+		<text>Гранаты</text>
+	</string>
+	<string id="st_prof_spec_1_item_name_1">
+		<text>ОЦ-33 "Пернач"</text>
+	</string>
+	<string id="st_prof_spec_1_item_name_2">
+		<text>СВД</text>
+	</string>
+	<string id="st_prof_spec_1_item_name_3">
+		<text>Пермячка-М</text>
+	</string>
+	<string id="st_prof_spec_1_item_descr_1">
+		<text>Урон- 55; Скорострельность- 350; Прицельная дальность- 200.</text>
+	</string>
+	<string id="st_prof_spec_1_item_descr_2">
+		<text>Урон- 105; Скорострельность- 100; Прицельная дальность- 1500.</text>
+	</string>
+	<string id="st_prof_spec_1_item_descr_3">
+		<text>Пулестойкость- 35; Защита от аномалий- 40; Защита от радиации- 40.</text>
+	</string>
+	<string id="st_prof_spec_2_item_name_1">
+		<text>Beretta 92FS</text>
+	</string>
+	<string id="st_prof_spec_2_item_name_2">
+		<text>Абакан</text>
+	</string>
+	<string id="st_prof_spec_2_item_name_3">
+		<text>Бармица</text>
+	</string>
+	<string id="st_prof_spec_2_item_descr_1">
+		<text>Урон- 50; Скорострельность- 150; Прицельная дальность- 150.</text>
+	</string>
+	<string id="st_prof_spec_2_item_descr_2">
+		<text>Урон- 45; Скорострельность- 800; Прицельная дальность- 1000.</text>
+	</string>
+	<string id="st_prof_spec_2_item_descr_3">
+		<text>Пулестойкость- 45; Защита от аномалий- 40; Защита от радиации- 40.</text>
+	</string>
+	<string id="st_prof_spec_3_item_name_1">
+		<text>SIG 220</text>
+	</string>
+	<string id="st_prof_spec_3_item_name_2">
+		<text>HK 416</text>
+	</string>
+	<string id="st_prof_spec_3_item_name_3">
+		<text>Ратник</text>
+	</string>
+	<string id="st_prof_spec_3_item_descr_1">
+		<text>Урон- 60; Скорострельность- 120; Прицельная дальность- 180.</text>
+	</string>
+	<string id="st_prof_spec_3_item_descr_2">
+		<text>Урон- 55; Скорострельность- 750; Прицельная дальность- 800.</text>
+	</string>
+	<string id="st_prof_spec_3_item_descr_3">
+		<text>Пулестойкость- 55; Защита от аномалий- 50; Защита от радиации- 40.</text>
+	</string>
+	<string id="st_spec_main_attach_use1">
+		<text>Снайпер.</text>
+	</string>
+	<string id="st_spec_main_attach_use2">
+		<text>Диверсант.</text>
+	</string>
+	<string id="st_spec_main_attach_use3">
+		<text>Пехотинец.</text>
+	</string>
+	<string id="st_spec_sniper_descr_1">
+		<text>Вооружение- СВД, ОЦ-33; Снаряжение- Пермячка.</text>
+	</string>
+	<string id="st_spec_diversant_descr_2">
+		<text>Вооружение- АН-94, SIG-220; Снаряжение- Бармица.</text>
+	</string>
+	<string id="st_spec_assaulter_descr_3">
+		<text>Вооружение- HK-416, Beretta 92FS; Снаряжение- Ратник.</text>
+	</string>
+	<string id="ui_gui_spec_main_caption">
+		<text>Стартовая специализация.</text>
+	</string>
+	<string id="st_svc_1_hint">
+		<text>При запуске будет произведен замер пси-излучения.</text>
+	</string>
+	<string id="st_geiger_1_hint">
+		<text>При запуске будет произведен замер гамма- и бета-излучений.</text>
+	</string>
+	<string id="st_rpg_attach_1">
+		<text>Изучить навык 1</text>
+	</string>
+	<string id="st_rpg_attach_2">
+		<text>Изучить навык 2</text>
+	</string>
+	<string id="st_rpg_attach_3">
+		<text>Изучить навык 3</text>
+	</string>
+	<string id="st_rpg_attach_4">
+		<text>Изучить навык 4</text>
+	</string>
+	<string id="st_rpg_attach_5">
+		<text>Изучить навык 5</text>
+	</string>
+	<string id="st_ui_fsart_about_use_navuk">
+		<text>Информация для изучения навыка селекционирования определенного артефакта отсутствует. Селекционеру нужна флеш-карта с данными.</text>
+	</string>
+	<string id="st_thiefachiva_form_title">
+		<text>Изучение навыка "Воровство".</text>
+	</string>	
+	<string id="st_mediсachiva_form_title">
+		<text>Изучение навыка "Медицина".</text>
+	</string>
+	<string id="st_radiobattleachiva_form_title">
+		<text>Изучение навыка "РЭБ".</text>
+	</string>
+	<string id="st_mainperkachiva_form_title">
+		<text>Изучение общих навыков.</text>
+	</string>	
+	<string id="st_hun1achiva_form_title">
+		<text>Изучение навыка "Основы охоты".</text>
+	</string>
+	<string id="st_hun2achiva_form_title">
+		<text>Изучение навыка "Охотник на мутантов".</text>
+	</string>
+	<string id="st_detector_1_form_title">
+		<text>Изучение настроек прибора по калибровке детектора аномалий.</text>
+	</string>
+	<string id="st_detector_2_form_title">
+		<text>Изучение настроек прибора по калибровке детектора артефактов.</text>
+	</string>
+	<string id="st_detector_3_form_title">
+		<text>Изучение настроек прибора по калибровке детектора с функцией биорадара.</text>
+	</string>
+	
+	<string id="st_ach_thief_descr_1">
+		<text>1-ый уровень. Обнаружение скрытых сталкерских схронов. Возможность более тщательного обследования местности на предмет сложнодоступных тайников.</text>
+	</string>
+	<string id="st_ach_thief_descr_4">
+		<text>2-ой уровень. "Ученик вора". Возможность осуществить кражу при разговоре с неопытными собеседниками. Сумма кражи составляет 100 руб.</text>
+	</string>
+	<string id="st_ach_thief_descr_2">
+		<text>3-ий уровень. "Опытной вор". Возможность осуществить кражу при разговоре с обычными собеседниками. Сумма кражи составляет 200 руб. Помимо денег может быть украден какой либо предмет.</text>
+	</string>
+	<string id="st_ach_thief_descr_5">
+		<text>4-ый уровень. "Мастер-вор". Возможность осуществить крупную кражу. Сумма кражи составляет 300 руб. Помимо денег может быть украден какой либо артефакт.</text>
+	</string>
+	<string id="st_ach_thief_descr_3">
+		<text>5-ый уровень. Навык "Внимательность". Данный навык позволяет защититься от карманного воровства во время разговора со сталкерами.</text>
+	</string>
+	<string id="ui_gui_thiefdet1_1_hint">
+		<text>Изучить навык обнаружения скрытых сталкерских схронов. Стоимость 1000 руб.</text>
+	</string>
+	<string id="ui_gui_thiefdet1_2_hint">
+		<text>За определенную сумму денег (2500 руб.) будет изучена возможность осуществления воровства начального уровня.</text>
+	</string>
+	<string id="ui_gui_thiefdet1_3_hint">
+		<text>За определенную сумму денег (2500 руб.) будет изучена возможность осуществления воровства среднего уровня.</text>
+	</string>
+	<string id="ui_gui_thiefdet1_4_hint">
+		<text>За определенную сумму денег (5000 руб.) будет изучена возможность осуществления воровства высокого уровня.</text>
+	</string>
+	<string id="ui_gui_thiefdet1_5_hint">
+		<text>За определенную сумму денег (5000 руб.) будет изучена возможность защиты от воровства.</text>
+	</string>
+	
+	<string id="st_ach_mediс_descr_1">
+		<text>1-ый уровень. Оказание первой медецинской помощи. Возможность оказать оказать элементарную, но наиболее качественную первую медецинскую помощь раненным.</text>
+	</string>
+	<string id="st_ach_mediс_descr_4">
+		<text>2-ой уровень. Врачевание начального уровня навыка "Ученик". Возможность осуществить необходимое лечение рваных ран, полученных в результате нападения мутантов.</text>
+	</string>
+	<string id="st_ach_mediс_descr_2">
+		<text>3-ий уровень. Врачевание среднего уровня навыка "Опытный врач". Возможность осуществить необходимое лечение разноображных ожогов и термических поражений вплоть до максимальной степени тяжести.</text>
+	</string>
+	<string id="st_ach_mediс_descr_5">
+		<text>4-ый уровень. Врачевание высокого уровня навыка "Полевой доктор". Возможность осуществить необходимое лечение всех видов и степеней РХБ поражений.</text>
+	</string>
+	<string id="st_ach_mediс_descr_3">
+		<text>5-ый уровень. Врачевание максимального уровня навыка "Полевой хирург". Данный навык позволяет осуществлять лечение огнестрельных ранений, полученных на поле боя.</text>
+	</string>
+	<string id="ui_gui_mediсdet1_1_hint">
+		<text>За определенную сумму денег (1000 руб.) будет изучена возможность оказания первой медецинской помощи.</text>
+	</string>
+	<string id="ui_gui_mediсdet1_2_hint">
+		<text>За определенную сумму денег (2500 руб.) будет изучена возможность осуществления врачевания начального уровня.</text>
+	</string>
+	<string id="ui_gui_mediсdet1_3_hint">
+		<text>За определенную сумму денег (2500 руб.) будет изучена возможность осуществления врачевания среднего уровня.</text>
+	</string>
+	<string id="ui_gui_mediсdet1_4_hint">
+		<text>За определенную сумму денег (5000 руб.) будет изучена возможность осуществления врачевания высокого уровня.</text>
+	</string>
+	<string id="ui_gui_mediсdet1_5_hint">
+		<text>За определенную сумму денег (5000 руб.) будет изучена возможность осуществления врачевания максимального уровня.</text>
+	</string>
+	
+	<string id="st_ach_mainperk_descr_1">
+		<text>1-ый уровень. Разагревание пищи на костре. Возможность осуществить разогрев пищи из армейского сухпайка на костре.</text>
+	</string>
+	<string id="st_ach_mainperk_descr_4">
+		<text>2-ой уровень. Эффективное использование брони. Возможность осуществить необходимое правильное применение неизвестной экипировки для обеспечения снижения воздействия вредных поражений организма.</text>
+	</string>
+	<string id="st_ach_mainperk_descr_2">
+		<text>3-ий уровень. Работа с детектерами аномалий. Возможность осуществить грамотный подбор находимых артефактов во избежания поражения организма вредным воздействием.</text>
+	</string>
+	<string id="st_ach_mainperk_descr_5">
+		<text>4-ый уровень. Работа с контейнерами артефактов. Возможность осуществить грамотное хранение артефактов в рюкзаке, после их нахождения.</text>
+	</string>
+	<string id="st_ach_mainperk_descr_3">
+		<text>5-ый уровень. Работа со сложным снаряжением. Данный навык позволяет осуществлять дальнейшие грамотное обучение по выбранным специализациям.</text>
+	</string>
+	<string id="ui_gui_mainperkdet1_1_hint">
+		<text>За определенную сумму денег (1000 руб.) будет изучена возможность оказания первой медецинской помощи.</text>
+	</string>
+	<string id="ui_gui_mainperkdet1_2_hint">
+		<text>За определенную сумму денег (2500 руб.) будет изучена возможность осуществления врачевания начального уровня.</text>
+	</string>
+	<string id="ui_gui_mainperkdet1_3_hint">
+		<text>За определенную сумму денег (2500 руб.) будет изучена возможность осуществления врачевания среднего уровня.</text>
+	</string>
+	<string id="ui_gui_mainperkdet1_4_hint">
+		<text>За определенную сумму денег (5000 руб.) будет изучена возможность осуществления врачевания высокого уровня.</text>
+	</string>
+	<string id="ui_gui_mainperkdet1_5_hint">
+		<text>За определенную сумму денег (5000 руб.) будет изучена возможность осуществления врачевания максимального уровня.</text>
+	</string>
+	
+	<string id="st_ach_radiobattle_descr_1">
+		<text>1-ый уровень. Радиоэлектронное подавление. Изучение принципов и основ радиоэлектронного подавления, которое обеспечивается созданием активных и пассивных помех, применением ложных целей, ловушек.</text>
+	</string>
+	<string id="st_ach_radiobattle_descr_4">
+		<text>2-ой уровень. Радиоэлектронная защита. Изучение принципов и основ радиоэлектронной защиты, направленной на обеспечение устойчивой работы РЭС в условиях воздействия преднамеренных радиопомех.</text>
+	</string>
+	<string id="st_ach_radiobattle_descr_2">
+		<text>3-ий уровень. Радиоэлектронная разведка. Изучение принципов и основ радиоэлектронной разведки, которая заключается в сборе информации на основе приёма и анализа электромагнитного излучения.</text>
+	</string>
+	<string id="st_ach_radiobattle_descr_5">
+		<text>4-ый уровень. Комплексный технический контроль. Контроль за состоянием функционирования своих радиоэлектронных средств и их защиты от технических средств разведки противника.</text>
+	</string>
+	<string id="st_ach_radiobattle_descr_3">
+		<text>5-ый уровень. Электромагнитное поражение. Данный навык позволяет при наличи специального оборудования осуществлять электромагнитное воздействие за счёт наведения индукционных токов.</text>
+	</string>
+	<string id="ui_gui_radiobattledet1_1_hint">
+		<text>За определенную сумму денег (1000 руб.) будут изучены основы радиоэлектронного подавления.</text>
+	</string>
+	<string id="ui_gui_radiobattledet1_2_hint">
+		<text>За определенную сумму денег (2500 руб.) будет изучены основы радиоэлектронной защиты.</text>
+	</string>
+	<string id="ui_gui_radiobattledet1_3_hint">
+		<text>За определенную сумму денег (2500 руб.) будет изучены основы радиоэлектронной разведки.</text>
+	</string>
+	<string id="ui_gui_radiobattledet1_4_hint">
+		<text>За определенную сумму денег (5000 руб.) будет изучены основы проведения комплексного технического контроля.</text>
+	</string>
+	<string id="ui_gui_radiobattledet1_5_hint">
+		<text>За определенную сумму денег (5000 руб.) будет изучена возможность осуществления электромагнитного поражения.</text>
+	</string>
+	
+	<string id="st_mar_ach_1_detector_descr_1">
+		<text>1-ый уровень. Обнаружение аномалии типа "Гравитационных". Возможность получить настройки прибора для обнаружения аномалий подобного типа.</text>
+	</string>
+	<string id="st_mar_ach_1_detector_descr_4">
+		<text>2-ой уровень. Обнаружение аномалии типа "Пси-зон". Возможность получить настройки прибора для обнаружения аномалий подобного типа.</text>
+	</string>
+	<string id="st_mar_ach_1_detector_descr_2">
+		<text>3-ий уровень. Обнаружение аномалии типа "Термальных". Возможность получить настройки прибора для обнаружения аномалий подобного типа.</text>
+	</string>
+	<string id="st_mar_ach_1_detector_descr_5">
+		<text>4-ый уровень. Обнаружение аномалии типа "Химических". Возможность получить настройки прибора для обнаружения аномалий подобного типа.</text>
+	</string>
+	<string id="st_mar_ach_1_detector_descr_3">
+		<text>5-ый уровень. Обнаружение аномалии типа "Электростатических". Возможность получить настройки прибора для обнаружения аномалий подобного типа.</text>
+	</string>
+	<string id="ui_gui_achdet1_1_hint">
+		<text>За определенную сумму денег (1000 руб.) будет изучена возможность получения настроек для прибора по обнаружению аномалий типа "Гравитационных".</text>
+	</string>
+	<string id="ui_gui_achdet1_2_hint">
+		<text>За определенную сумму денег (2500 руб.) будет изучена возможность получения настроек для прибора по обнаружению аномалий типа "Пси-зон".</text>
+	</string>
+	<string id="ui_gui_achdet1_3_hint">
+		<text>За определенную сумму денег (2500 руб.) будет изучена возможность получения настроек для прибора по обнаружению аномалий типа "Термальных".</text>
+	</string>
+	<string id="ui_gui_achdet1_4_hint">
+		<text>За определенную сумму денег (5000 руб.) будет изучена возможность получения настроек для прибора по обнаружению аномалий типа "Химических".</text>
+	</string>
+	<string id="ui_gui_achdet1_5_hint">
+		<text>За определенную сумму денег (5000 руб.) будет изучена возможность получения настроек для прибора по обнаружению аномалий типа "Электростатических".</text>
+	</string>	
+	<string id="st_mar_ach_2_detector_descr_1">
+		<text>1-ый уровень. Обнаружение артефактов типа "Гравитационных". Возможность получить настройки прибора для обнаружения артефактов подобного типа.</text>
+	</string>
+	<string id="st_mar_ach_2_detector_descr_4">
+		<text>2-ой уровень. Обнаружение артефактов типа "Химических". Возможность получить настройки прибора для обнаружения артефактов подобного типа.</text>
+	</string>
+	<string id="st_mar_ach_2_detector_descr_2">
+		<text>3-ий уровень. Обнаружение артефактов типа "Термальных". Возможность получить настройки прибора для обнаружения артефактов подобного типа.</text>
+	</string>
+	<string id="st_mar_ach_2_detector_descr_5">
+		<text>4-ый уровень. Обнаружение артефактов типа "Электростатических". Возможность получить настройки прибора для обнаружения артефактов подобного типа.</text>
+	</string>
+	<string id="st_mar_ach_2_detector_descr_3">
+		<text>5-ый уровень. Обнаружение артефактов типа "Специальные". Возможность получить настройки прибора для обнаружения артефактов подобного типа.</text>
+	</string>
+	<string id="ui_gui_achdet2_1_hint">
+		<text>За определенную сумму денег (1000 руб.) будет изучена возможность получения настроек для прибора по обнаружению артефактов типа "Гравитационных".</text>
+	</string>
+	<string id="ui_gui_achdet2_2_hint">
+		<text>За определенную сумму денег (2500 руб.) будет изучена возможность получения настроек для прибора по обнаружению артефактов типа "Химических".</text>
+	</string>
+	<string id="ui_gui_achdet2_3_hint">
+		<text>За определенную сумму денег (2500 руб.) будет изучена возможность получения настроек для прибора по обнаружению артефактов типа "Термальных".</text>
+	</string>
+	<string id="ui_gui_achdet2_4_hint">
+		<text>За определенную сумму денег (5000 руб.) будет изучена возможность получения настроек для прибора по обнаружению артефактов типа "Электростатических".</text>
+	</string>
+	<string id="ui_gui_achdet2_5_hint">
+		<text>За определенную сумму денег (5000 руб.) будет изучена возможность получения настроек для прибора по обнаружению артефактов типа "Специальные".</text>
+	</string>	
+	<string id="st_mar_ach_3_detector_descr_1">
+		<text>1-ый уровень. Обнаружение биоорганизмов 1-ого типа. Возможность получить настройки прибора для обнаружения биоорганизмов подобного типа.</text>
+	</string>
+	<string id="st_mar_ach_3_detector_descr_4">
+		<text>2-ой уровень. Обнаружение биоорганизмов 2-ого типа. Возможность получить настройки прибора для обнаружения биоорганизмов подобного типа.</text>
+	</string>
+	<string id="st_mar_ach_3_detector_descr_2">
+		<text>3-ий уровень. Обнаружение биоорганизмов 3-ого типа. Возможность получить настройки прибора для обнаружения биоорганизмов подобного типа.</text>
+	</string>
+	<string id="st_mar_ach_3_detector_descr_5">
+		<text>4-ый уровень. Обнаружение биоорганизмов 4-ого типа. Возможность получить настройки прибора для обнаружения биоорганизмов подобного типа.</text>
+	</string>
+	<string id="st_mar_ach_3_detector_descr_3">
+		<text>5-ый уровень. Обнаружение биоорганизмов 5-ого типа. Возможность получить настройки прибора для обнаружения биоорганизмов подобного типа.</text>
+	</string>
+	<string id="ui_gui_achdet3_1_hint">
+		<text>За определенную сумму денег (1000 руб.) будет изучена возможность получения настроек для прибора по обнаружению биоорганизмов 1-ого типа.</text>
+	</string>
+	<string id="ui_gui_achdet3_2_hint">
+		<text>За определенную сумму денег (2500 руб.) будет изучена возможность получения настроек для прибора по обнаружению биоорганизмов 2-ого типа.</text>
+	</string>
+	<string id="ui_gui_achdet3_3_hint">
+		<text>За определенную сумму денег (2500 руб.) будет изучена возможность получения настроек для прибора по обнаружению биоорганизмов 3-ого типа.</text>
+	</string>
+	<string id="ui_gui_achdet3_4_hint">
+		<text>За определенную сумму денег (5000 руб.) будет изучена возможность получения настроек для прибора по обнаружению биоорганизмов 4-ого типа.</text>
+	</string>
+	<string id="ui_gui_achdet3_5_hint">
+		<text>За определенную сумму денег (5000 руб.) будет изучена возможность получения настроек для прибора по обнаружению биоорганизмов 5-ого типа.</text>
+	</string>
+	
+	<string id="ui_gui_achhun1_1_hint">
+		<text>За определенную сумму денег (1000 руб.) будет изучена возможность отрезания ценных частей с мутанта "Слепая собака".</text>
+	</string>
+	<string id="ui_gui_achhun1_2_hint">
+		<text>За определенную сумму денег (2500 руб.) будет изучена возможность отрезания ценных частей с мутанта "Чернобылец".</text>
+	</string>
+	<string id="ui_gui_achhun1_3_hint">
+		<text>За определенную сумму денег (2500 руб.) будет изучена возможность отрезания ценных частей с мутанта "Плоть".</text>
+	</string>
+	<string id="ui_gui_achhun1_4_hint">
+		<text>За определенную сумму денег (5000 руб.) будет изучена возможность отрезания ценных частей с мутанта "Кабан".</text>
+	</string>
+	<string id="ui_gui_achhun1_5_hint">
+		<text>За определенную сумму денег (5000 руб.) будет изучена возможность отрезания ценных частей с мутанта "Снорк".</text>
+	</string>
+	<string id="st_ach_hun1achiva_descr_1">
+		<text>1-ый уровень. Работа с мутантом "Слепая собака". Возможность изучения навыка правильного извлечения ценных частей туши.</text>
+	</string>
+	<string id="st_ach_hun1achiva_descr_4">
+		<text>2-ой уровень. Работа с мутантом "Чернобылец". Возможность изучения навыка правильного извлечения ценных частей туши.</text>
+	</string>
+	<string id="st_ach_hun1achiva_descr_2">
+		<text>3-ий уровень. Работы с мутантом "Плоть". Возможность изучения навыка правильного извлечения ценных частей туши.</text>
+	</string>
+	<string id="st_ach_hun1achiva_descr_5">
+		<text>4-ый уровень. Работы с мутантом "Кабан". Возможность изучения навыка правильного извлечения ценных частей туши.</text>
+	</string>
+	<string id="st_ach_hun1achiva_descr_3">
+		<text>5-ый уровень. Работы с мутантом "Снорк". Возможность изучения навыка правильного извлечения ценных частей туши.</text>
+	</string>
+	<string id="ui_gui_achhun2_1_hint">
+		<text>За определенную сумму денег (1000 руб.) будет изучена возможность отрезания ценных частей с мутанта "Кровосос".</text>
+	</string>
+	<string id="ui_gui_achhun2_2_hint">
+		<text>За определенную сумму денег (2500 руб.) будет изучена возможность отрезания ценных частей с мутанта "Бюрер".</text>
+	</string>
+	<string id="ui_gui_achhun2_3_hint">
+		<text>За определенную сумму денег (2500 руб.) будет изучена возможность отрезания ценных частей с мутанта "Контроллер".</text>
+	</string>
+	<string id="ui_gui_achhun2_4_hint">
+		<text>За определенную сумму денег (5000 руб.) будет изучена возможность отрезания ценных частей с мутанта "Химера".</text>
+	</string>
+	<string id="ui_gui_achhun2_5_hint">
+		<text>За определенную сумму денег (5000 руб.) будет изучена возможность отрезания ценных частей с мутанта "Гигант".</text>
+	</string>
+	<string id="st_ach_hun2achiva_descr_1">
+		<text>6-ый уровень. Работа с мутантом "Кровосос". Возможность изучения навыка правильного извлечения ценных частей туши.</text>
+	</string>
+	<string id="st_ach_hun2achiva_descr_4">
+		<text>7-ой уровень. Работа с мутантом "Бюрер". Возможность изучения навыка правильного извлечения ценных частей туши.</text>
+	</string>
+	<string id="st_ach_hun2achiva_descr_2">
+		<text>8-ий уровень. Работы с мутантом "Контроллер". Возможность изучения навыка правильного извлечения ценных частей туши.</text>
+	</string>
+	<string id="st_ach_hun2achiva_descr_5">
+		<text>9-ый уровень. Работы с мутантом "Химера". Возможность изучения навыка правильного извлечения ценных частей туши.</text>
+	</string>
+	<string id="st_ach_hun2achiva_descr_3">
+		<text>10-ый уровень. Работы с мутантом "Гигант". Возможность изучения навыка правильного извлечения ценных частей туши.</text>
+	</string>
+	<string id="st_selart_form_title">
+		<text>Прокачка селекционирования артефактов.</text>
+	</string>
+	<string id="st_remcomplect_form_title">
+		<text>Прокачка навыка работы с ремкомплектом оружия.</text>
+	</string>
+	<string id="st_remcomplect_outfit_form_title">
+		<text>Прокачка навыка работы с ремкомплектом снаряжения.</text>
+	</string>
+	<string id="st_mechachiva_form_title">
+		<text>Прокачка навыка мастера по работе с механическими приборами и электроникой.</text>
+	</string>	
+	<string id="st_chemicachiva_form_title">
+		<text>Прокачка навыка по работе с химическими и билологическими реагентами.</text>
+	</string>
+	<string id="ui_gui_achchem_1_hint">
+		<text>За определенную сумму денег (1000 руб.) будет получена возможность работы с органическими ядами.</text>
+	</string>
+	<string id="ui_gui_achchem_2_hint">
+		<text>За определенную сумму денег (2500 руб.) будет получена возможность работы с реагентами для создания осветительных шашек.</text>
+	</string>
+	<string id="ui_gui_achchem_3_hint">
+		<text>За определенную сумму денег (2500 руб.) будет получена возможность работы с реагентами для создания взрывных устройств.</text>
+	</string>
+	<string id="ui_gui_achchem_4_hint">
+		<text>За определенную сумму денег (5000 руб.) будет получена возможность работы с химическими отравляющими веществами.</text>
+	</string>
+	<string id="ui_gui_achchem_5_hint">
+		<text>За определенную сумму денег (5000 руб.) будет получена возможность работы с нервно-психотропными веществами.</text>
+	</string>
+	<string id="st_ach_chemical_descr_1">
+		<text>1-ый уровень. Работа с органическими ядами. Возможность синтеза ядов по типа рицин, аконитин, ботулинотоксин, мышьяк, яда змей.</text>
+	</string>
+	<string id="st_ach_chemical_descr_4">
+		<text>2-ой уровень. Работа с химическми веществами по типу фосфара, для создания осветительных шашек.</text>
+	</string>
+	<string id="st_ach_chemical_descr_2">
+		<text>3-ий уровень. Работы с соедининиями типа тротилл, нитроглицирин, напалм для создания взрывчатых и зажигательных смесей.</text>
+	</string>
+	<string id="st_ach_chemical_descr_5">
+		<text>4-ый уровень. Работы с ХОВ, такие как ипртит, зорин, зоман, ви-экс, синильная кислота, сернистый ангидрид.</text>
+	</string>
+	<string id="st_ach_chemical_descr_3">
+		<text>5-ый уровень. Общий навык работ с психотропными препаратами по типу этилмеркаптан, формальдегид.</text>
+	</string>
+	<string id="ui_gui_achmech_1_hint">
+		<text>За определенную сумму денег (1000 руб.) будет получена возможность работы с паяльными устновками.</text>
+	</string>
+	<string id="ui_gui_achmech_2_hint">
+		<text>За определенную сумму денег (2500 руб.) будет получена возможность работы с радиоприборами.</text>
+	</string>
+	<string id="ui_gui_achmech_3_hint">
+		<text>За определенную сумму денег (2500 руб.) будет получена возможность работы со взрывными устройствами.</text>
+	</string>
+	<string id="ui_gui_achmech_4_hint">
+		<text>За определенную сумму денег (5000 руб.) будет получена возможность взлома электронных замков.</text>
+	</string>
+	<string id="ui_gui_achmech_5_hint">
+		<text>За определенную сумму денег (5000 руб.) будет получен базовый навык хакерства.</text>
+	</string>
+	<string id="st_ach_mechanic_descr_1">
+		<text>1-ый уровень. Работа с паяльными установками. Возможность пайки микросхем.</text>
+	</string>
+	<string id="st_ach_mechanic_descr_4">
+		<text>2-ой уровень. Работа с радоприборами по типу высокачастных раций, осциллографов, анализаторов спектра.</text>
+	</string>
+	<string id="st_ach_mechanic_descr_2">
+		<text>3-ий уровень. Работы с различными взрывными устройствами. Радиоуправляемые мины, фугасы, растяжки- их обнаружение и обезвреживание.</text>
+	</string>
+	<string id="st_ach_mechanic_descr_5">
+		<text>4-ый уровень. Взлом электронных замков. Возможность подбора необходимого оборудования.</text>
+	</string>
+	<string id="st_ach_mechanic_descr_3">
+		<text>5-ый уровень. Общий навык основ хакерства по взлому паролей и прошивок электронных устройств.</text>
+	</string>	
+	<string id="ui_gui_remoutf_1_hint">
+		<text>За определенную сумму денег (1000 руб.) будет доступна возможность починки всего снаряжения 1-ого уровня (смазка и чистка главных механизмов).</text>
+	</string>
+	<string id="ui_gui_remoutf_2_hint">
+		<text>За определенную сумму денег (2500 руб.) будет доступна возможность починки основного снаряжения 1-ого уровня (починка и клепка бронепластин).</text>
+	</string>
+	<string id="ui_gui_remoutf_3_hint">
+		<text>За определенную сумму денег (2500 руб.) будет доступна возможность починки дополнительного снаряжения 1-ого уровня (общая починка).</text>
+	</string>
+	<string id="ui_gui_remoutf_4_hint">
+		<text>За определенную сумму денег (5000 руб.) будет доступна возможность починки основного снаряжения 2-ого уровня (ремонт защитных систем).</text>
+	</string>
+	<string id="ui_gui_remoutf_5_hint">
+		<text>За определенную сумму денег (5000 руб.) будет доступна возможность починки дополнительного снаряжения 2-ого уровня (ремонт защитных систем).</text>
+	</string>
+	<string id="ui_gui_remweap_1_hint">
+		<text>За определенную сумму денег (1000 руб.) будет доступна возможность смазки и чистки оружия.</text>
+	</string>
+	<string id="ui_gui_remweap_2_hint">
+		<text>За определенную сумму денег (2500 руб.) будет доступна возможность починки основного оружия 1-ого уровня (починка ударно-спускового механизма).</text>
+	</string>
+	<string id="ui_gui_remweap_3_hint">
+		<text>За определенную сумму денег (2500 руб.) будет доступна возможность починки дополнительного оружия 1-ого уровня (починка ударно-спускового механизма).</text>
+	</string>
+	<string id="ui_gui_remweap_4_hint">
+		<text>За определенную сумму денег (5000 руб.) будет доступна возможность починки основного оружия 2-ого уровня (основной ремонт).</text>
+	</string>
+	<string id="ui_gui_remweap_5_hint">
+		<text>За определенную сумму денег (5000 руб.) будет доступна возможность починки дополнительного оружия 2-ого уровня (основной ремонт).</text>
+	</string>
+	<string id="st_rem_weapon_descr_1">
+		<text>1-ый уровень. Чистка шомполом и ершиком. Смазка маслом.</text>
+	</string>
+	<string id="st_rem_weapon_descr_4">
+		<text>2-ой уровень. Ремонт ударно-спускового механизма основных типов оружия.</text>
+	</string>
+	<string id="st_rem_weapon_descr_2">
+		<text>3-ий уровень. Ремонт ударно-спускового механизма дополнительных типов оружия.</text>
+	</string>
+	<string id="st_rem_weapon_descr_5">
+		<text>4-ый уровень. Общая починка механизмов основных типов оружия.</text>
+	</string>
+	<string id="st_rem_weapon_descr_3">
+		<text>5-ый уровень. Общая починка механизмов дополнительных типов оружия.</text>
+	</string>
+	<string id="st_rem_outfit_descr_1">
+		<text>1-ый уровень. Чистка и смазка.</text>
+	</string>
+	<string id="st_rem_outfit_descr_4">
+		<text>2-ой уровень. Ремонт бронепластин основных типов снаряжения.</text>
+	</string>
+	<string id="st_rem_outfit_descr_2">
+		<text>3-ий уровень. Ремонт защитного покрытия механизма дополнительных типов снаряжения.</text>
+	</string>
+	<string id="st_rem_outfit_descr_5">
+		<text>4-ый уровень. Общая починка защитных механизмов основных типов снаряжения.</text>
+	</string>
+	<string id="st_rem_outfit_descr_3">
+		<text>5-ый уровень. Общая починка защитных механизмов дополнительных типов снаряжения.</text>
+	</string>
+	<string id="ui_gui_selart_1_hint">
+		<text>При наличии определенных данных будет доступна возможность селекции артефакта Браслет.</text>
+	</string>
+	<string id="ui_gui_selart_2_hint">
+		<text>При наличии определенных данных будет доступна возможность селекции артефакта Дементор.</text>
+	</string>
+	<string id="ui_gui_selart_3_hint">
+		<text>При наличии определенных данных будет доступна возможность селекции артефакта Губка.</text>
+	</string>
+	<string id="ui_gui_selart_4_hint">
+		<text>При наличии определенных данных будет доступна возможность селекции артефакта Райское яблочко.</text>
+	</string>
+	<string id="ui_gui_selart_5_hint">
+		<text>При наличии определенных данных будет доступна возможность селекции артефакта Колокол.</text>
+	</string>
+	<string id="ui_gui_fsart_caption">
+		<text>«Селекционирование артефактов»</text>
+	</string>
+	<string id="ui_mm_fsart_s_text">
+		<text>Этапы работы:</text>
+	</string>
+	<string id="ui_mm_fsart_use_1">
+		<text>Калибровка</text>
+	</string>
+	<string id="ui_mm_fsart_use_2">
+		<text>V/дел;T/дел</text>
+	</string>
+	<string id="ui_mm_fsart_use_3">
+		<text>Селекция</text>
+	</string>
+	<string id="ui_mm_fsart_use_1_text">
+		<text>Эталонные параметры импульса: Acen-900Гц, Bmax- 1,4мВ.</text>
+	</string>
+	<string id="ui_mm_fsart_use_2_text">
+		<text>Масштаб: Rвх-3 МОм, Свх-30 пФ; к-нт по X-30мкВ/дел, к-нт по Y-60мс/дел</text>
+	</string>
+	<string id="ui_mm_fsart_use_12_text">
+		<text>Эталонные параметры импульса: Acen-900Гц, Bmax- 1,4мВ.</text>
+	</string>
+	<string id="ui_mm_fsart_use_22_text">
+		<text>Масштаб: Rвх-3 МОм, Свх-30 пФ; к-нт по X-30мкВ/дел, к-нт по Y-60мс/дел</text>
+	</string>
+	<string id="ui_mm_fsart_use_13_text">
+		<text>Эталонные параметры импульса: Acen-1,2КГц, Bmax- 1,6мВ.</text>
+	</string>
+	<string id="ui_mm_fsart_use_23_text">
+		<text>Масштаб: Rвх-3 МОм, Свх-30 пФ; к-нт по X-48мкВ/дел, к-нт по Y-65мс/дел</text>
+	</string>
+	<string id="ui_mm_fsart_use_3_text">
+		<text>Тип селекции установлен. Операция успешно завершена.</text>
+	</string>	
+	<string id="ui_gui_fsart_1_caption">
+		<text>«Калибровка»</text>
+	</string>
+	<string id="ui_gui_fsart_2_caption">
+		<text>«Спектральный анализ»</text>
+	</string>
+	<string id="ui_gui_fsart_3_caption">
+		<text>«Селекция»</text>
+	</string>
+	<string id="st_menu_fsart_1_use_1">
+		<text>Установить</text>
+	</string>
+	<string id="st_menu_fsart_1_use_2">
+		<text>Установить</text>
+	</string>
+	<string id="st_menu_fsart_1_use_3">
+		<text>Селекция</text>
+	</string>
+	<string id="st_fsart_action_1">
+		<text>Тип селекции</text>
+	</string>
+	<string id="st_fsart_action_3">
+		<text>Тип селекции</text>
+	</string>
+	<string id="st_fsart_action_2">
+		<text>Коэффициент</text>
+	</string>
+	<string id="st_fsart_action_4">
+		<text>Выполнить</text>
+	</string>
+	<string id="st_fsart_item_1_used">
+		<text>Радиационная</text>
+	</string>
+	<string id="st_fsart_item_2_used">
+		<text>Гравитационная</text>
+	</string>
+	<string id="st_fsart_item_3_used">
+		<text>Востановительная</text>
+	</string>
+	<string id="st_fsart_item_4_used">
+		<text>Химическая</text>
+	</string>
+	<string id="st_fsart_item_5_used">
+		<text>Термальная</text>
+	</string>
+	<string id="ui_gui_fsart_1_item_1">
+		<text>Выставить F = 1000 Гц</text>
+	</string>
+	<string id="ui_gui_fsart_1_item_2">
+		<text>Выставить А = 1500 В</text>
+	</string>
+    <string id="ui_gui_fsart_2_item_1">
+		<text>Выставить X = 20 мкВ/дел</text>
+	</string>
+	<string id="ui_gui_fsart_2_item_2">
+		<text>Выставить Y = 50 мс/дел</text>
+	</string>	
+    <string id="ui_gui_fsart_11_item_1">
+		<text>Выставить F = 900 Гц</text>
+	</string>
+	<string id="ui_gui_fsart_11_item_2">
+		<text>Выставить А = 1400 В</text>
+	</string>
+    <string id="ui_gui_fsart_21_item_1">
+		<text>Выставить X = 30 мкВ/дел</text>
+	</string>
+	<string id="ui_gui_fsart_21_item_2">
+		<text>Выставить Y = 60 мс/дел</text>
+	</string>
+    <string id="ui_gui_fsart_12_item_1">
+		<text>Выставить F = 1200 Гц</text>
+	</string>
+	<string id="ui_gui_fsart_12_item_2">
+		<text>Выставить А = 1600 В</text>
+	</string>
+    <string id="ui_gui_fsart_22_item_1">
+		<text>Выставить X = 48 мкВ/дел</text>
+	</string>
+	<string id="ui_gui_fsart_22_item_2">
+		<text>Выставить Y = 65 мс/дел</text>
+	</string>	
+	<string id="st_ui_fsart_about_use_item_1">
+		<text>Описание первого действия. Калибровка. По клику на кнопку перед вами откроется одноименное окно, в котором будет необходимо выполнить определенный порядок действий. Во время опереции калибровки необходимо ввести числовые значения параметров эталонного видеоимпульса (Амплитуда и Частота). Данные вводятся в специальные поля. Сами значения будут указаны в окне калибровки.</text>
+	</string>
+	<string id="st_ui_fsart_about_use_item_2">
+		<text>Описание второго действия. Спектральный анализ. По клику на кнопку перед вами откроется одноименное окно, в котором будет необходимо выполнить определенный порядок действий. Во время опереции масштабирования необходимо  ввести числовые значения параметров коэффициентов по осям X и Y. Данные вводятся в специальные поля. Сами значения будут указаны в окне спектрального анализа.</text>
+	</string>
+	<string id="st_ui_fsart_about_use_item_3">
+		<text>Описание третьего действия. Селекция. По клику на кнопку перед вами откроется одноименное окно, в котором необходимо будет выбрать тип селекции и основной усилительный коэффициент.</text>
+	</string>
+	<string id="st_menu_fsart_2_close">
+		<text>Стоп</text>
+	</string>
+	<string id="st_menu_fsart_1_close">
+		<text>Применить</text>
+	</string>
+	<string id="ui_gui_a2_falsh_caption">
+		<text>Флеш-карта.</text>
+	</string>
+	<string id="ui_notepad_third_type_caption">
+		<text>Информация с флеш-карты.</text>
+	</string>
+	<string id="st_a2_flash_view">
+		<text>Просмотреть</text>
+	</string>
+	<string id="st_a2_flash_use">
+		<text>Скопировать</text>
+	</string>
+	<string id="ui_gui_trade_caption">
+		<text>Окно торговли.</text>
+	</string>
+	<string id="ui_num_text_0">
+		<text>0</text>
+	</string>
+	<string id="ui_num_text_1">
+		<text>1</text>
+	</string>
+	<string id="ui_num_text_2">
+		<text>2</text>
+	</string>
+	<string id="ui_num_text_3">
+		<text>3</text>
+	</string>
+	<string id="ui_num_text_4">
+		<text>4</text>
+	</string>
+	<string id="ui_num_text_5">
+		<text>5</text>
+	</string>
+	<string id="st_all_trade_use_1">
+		<text>Всего денег.</text>
+	</string>	
+	<string id="st_all_trade_use_2">
+		<text>Цена.</text>
+	</string>	
+	<string id="st_all_trade_use_3">
+		<text>Кол-во.</text>
+	</string>
+	<string id="st_all_trade_use_4">
+		<text>В наличии.</text>
+	</string>
+	<string id="st_trade_attach_use1">
+		<text>Купить</text>
+	</string>
+	<string id="st_trade_attach_use2">
+		<text>Продать</text>
+	</string>
+	<string id="ui_gui_trade_1_hint">
+		<text>Осуществление покупки (продажи) выбранного предмета. За один раз можно купить (продать) максимум 5 едениц одного предмета.</text>
+	</string>	
+	<string id="st_ui_need_money_to_trade">
+		<text>У вас недостаточно предметов для осуществления операции продажи.</text>
+	</string>
+	<string id="st_ui_need_money_to_buy">
+		<text>У вас недостаточно денег для осуществления операции.</text>
+	</string>
+	<string id="ui_mar_medic_all_1_text_1">
+		<text>Промедол</text>
+	</string>
+	<string id="ui_mar_medic_all_1_text_2">
+		<text>Бинт перевязочный</text>
+	</string>
+	<string id="ui_mar_medic_all_1_text_3">
+		<text>Антирад</text>
+	</string>
+	<string id="ui_mar_medic_all_1_text_4">
+		<text>Психоделин</text>
+	</string>
+	<string id="ui_mar_medic_all_1_text_5">
+		<text>Анаболик</text>
+	</string>
+    <string id="ui_mar_medic_all_1_text_6">
+		<text>Индралин</text>
+	</string>
+	<string id="ui_mar_medic_all_1_text_7">
+		<text>Викасол</text>
+	</string>
+	<string id="ui_mar_medic_all_1_text_8">
+		<text>Пси-блокада</text>
+	</string>
+	<string id="ui_mar_medic_all_1_text_9">
+		<text>Антидот</text>
+	</string>
+	<string id="ui_mar_medic_all_1_text_10">
+		<text>Геркулес</text>
+	</string>	
+	<string id="ui_gui_meds2_caption">
+		<text>Описание комплекта.</text>
+	</string>
+	<string id="ui_gui_meds1_caption">
+		<text>Описание аптечки.</text>
+	</string>
+	<string id="ui_mm_meds2_text">
+		<text>Содержание справки:</text>
+	</string>
+	<string id="ui_mar_medic_item_s1_text_1">
+		<text>Общее описание</text>
+	</string>
+	<string id="ui_mar_medic_item_s1_text_2">
+		<text>Состав комплекта</text>
+	</string>
+	<string id="ui_mar_medic_item_s1_text_3">
+		<text>Принцип работы</text>
+	</string>	 
+	<string id="st_mar_medic_item_s1_descr_1">
+		<text>Находиться в алюминиевом корпусе, с пластиковым покрытием внутри, размеры 52,6х40х17см, наличие отсеков для комплектующих, 26 ячеек для ампул. Применяется при необходимости срочных реанимационных мероприятий. </text>
+	</string>    
+    <string id="st_mar_medic_item_s1_descr_2">
+		<text>Дополнительные ампульная стойка для 10 ампул, Система подачи кислорода OXYWAY, включающая: кислородный баллон 0,8л с редуктором со скоростью подачи кислорода 4л/мин, дыхательный шланг 200см, изогнутый под углом коннектор, Ремни для крепления кислородного баллона, Ручной аппарат ИВЛ (мешок Амбу), COMBIBAG универсальный для взрослых и детей, может автоклавироваться, Надувные резиновые дыхательные маски \n
+Орофарингеальные воздуховоды \n
+Назофарингеальные воздуховоды \n
+Механический отсос MANUVAC \n
+Аспирационные катетеры стерильные, 50см.</text>
+	</string>
+    <string id="st_mar_medic_item_s1_descr_3">
+		<text>Аппарат осуществляет диагностику сосотяния и автоматическую экстенную медецинскую помощь. Помимо этого возможно применение различных стимуляторов.</text>
+	</string>
+
+    <string id="st_mar_medic_item_s2_descr_1">
+		<text>Содержит весь комплекс необходимых для защиты населения препаратов. Новая аптечка предназначена для оказания первой само и взаимопомощи, предупреждения или ослабления поражающего действия радиоактивных веществ (РВ), бактериальных средств (БС), фосфорорганических веществ (ФОВ) и токсичных веществ (АХОВ). АИ-4 комплектуется современными более эффективными фармпрепаратами. В целом, аптечка АИ-4 наиболее соответствует реалиям сегодняшнего дня и может быть успешно и эффективно применяться как в закладке в резерв, так и для оснащения действующих подразделений спасателей.
+Выглядит как ярко-оранжевая пластиковая коробочка размера 9см ? 10см ? 2 см с надписью «Аптечка индивидуальная», крестом в круге и выступами для удержания. Внутри — ячейки для лекарств, пеналы с лекарствами, инструкция. Поставляется в полиэтиленовом пакете с нанесенной информацией о изделии и производителе.</text>
+	</string>    
+    <string id="st_mar_medic_item_s2_descr_2">
+		<text>Противоболевое средство (гнездо № 1, пенал без окраски. Применяется при переломах, обширных ранах и ожогах. Одну таблетку на прием);
+Средство при отравлении АХОВ (гнездо № 2, пенал желто-зеленого цвета. Принимается по 1 капсуле за 20-30 мин. до вхождения в зону задымления (загазованности), при высоком риске ингаляции CO — угарным газом, в горящем лесу, в период проведения работ по ликвидации тушения самих пожаров и спасения пострадавших);
+Средство при отравлении ФОВ (гнездо № 3, шприц-тюбик с красным колпачком. Для внутримышечного использования. Принимается по сигналу Гражданской обороны);
+Радиозащитное средство № 1 (гнездо № 4, пенал малинового цвета. Принимается содержимое пенала за 15-20 мин. до предполагаемого облучения);
+Радиозащитное средство № 2 (гнездо № 5, пенал белого цвета. Принимается взрослыми и детьми по 1 таблетке до предполагаемого облучения или в течение 30 минут после облучения. Далее по 1 таблетке ежедневно после выпадения радиоактивных осадков. Детям до 2-х лет по 1/3 таблетки);
+Противобактериальное средство № 1 (гнездо № 6, пенал без окраски. Принимается при угрозе или бактериальном заражении, а также при ранах и ожогах содержимое пенала, запивая водой. Детям до 8 лет запрещен, от 8 до 12 лет — 1 капсула на прием);
+Противобактериальное средство № 2 (гнездо № 7, пенал без окраски. Принимается после облучения при возникновении желудочно-кишечных расстройств по 1 таблетке 2 раза в сутки. Детям запрещен);
+Противорвотное средство (гнездо № 9, пенал голубого цвета. Принимается по 1 таблетке сразу после облучения. Детям от 6 лет по 1/2 таблетки);
+Резервный антидот ФОВ (антиоксидантное средство, гнездо № 8, пенал красного цвета. Принимается содержимое пенала по сигналу Гражданской обороны. Детям 5-12 лет по 1 таблетке).</text>
+	</string>
+    <string id="st_mar_medic_item_s2_descr_3">
+		<text>Стандартный.</text>
+	</string>
+	
+	<string id="ui_gui_ai_spec_caption">
+		<text>Комплект ULM CASE I</text>
+	</string>
+	<string id="ui_gui_aimed_1_hint">
+		<text>При нажатии на кнопку произойдет диагностика текущего состояния ГГ по пять основным параметрам и добавление дополнительной подборки препоратов.</text>
+	</string>
+	<string id="ui_gui_aimed_2_hint">
+		<text>При нажатии на кнопку медицинским модулем будет осуществлено лечение ГГ с возможным применением дополнительных стимуляторов жизнедеятельности. В случае отказа от использования стимуляторов будет возможно их последующее применение отдельно.</text>
+	</string>
+	<string id="st_ai_med_item_1_used">
+		<text>Использование радиопротектора.</text>
+	</string>
+	<string id="st_ai_med_item_2_used">
+		<text>Повышение свертываемости крови.</text>
+	</string>
+	<string id="st_ai_med_item_3_used">
+		<text>Использование пси-стимулятора.</text>
+	</string>
+	<string id="st_ai_med_item_4_used">
+		<text>Использование антидота.</text>
+	</string>
+	<string id="st_ai_med_item_5_used">
+		<text>Повышение выносливости.</text>
+	</string>
+	<string id="st_ui_specai_about_use_item_1">
+		<text>При включеном флажке медицинским модулем будет осуществлено автоматическое применение специального радиопротектора «Индралин-Б190»</text>
+	</string>
+	<string id="st_ui_specai_about_use_item_2">
+		<text>При включеном флажке медицинским модулем будет осуществлено автоматическое введение в организм препората повышающего свертываемость крови.</text>
+	</string>
+	<string id="st_ui_specai_about_use_item_3">
+		<text>При включеном флажке медицинским модулем будет осуществлено автоматическое введение в организм препората пси-защиты.</text>
+	</string>
+	<string id="st_ui_specai_about_use_item_4">
+		<text>При включеном флажке медицинским модулем будет осуществлено автоматическое введение в организм универсального антидота.</text>
+	</string>
+	<string id="st_ui_specai_about_use_item_5">
+		<text>При включеном флажке медицинским модулем будет осуществлено автоматическое введение в организм препората повышающего общую выносливость.</text>
+	</string>
+	<string id="ui_gui_dialmed_caption">
+		<text>Система лечения</text>
+	</string>
+	<string id="st_dialog_med_attach_use1">
+		<text>Диагностика</text>
+	</string>
+	<string id="st_dialog_med_attach_use2">
+		<text>Лечение</text>
+	</string>
+	<string id="st_dialog_med_use_1">
+		<text>Общее состояние:</text>
+	</string>
+	<string id="st_dialog_med_use_2">
+		<text>Радиация:</text>
+	</string>
+	<string id="st_dialog_med_use_3">
+		<text>Кровотечение:</text>
+	</string>
+	<string id="st_dialog_med_use_4">
+		<text>Выносливость:</text>
+	</string>
+	<string id="st_dialog_med_use_5">
+		<text>Пси-здоровье:</text>
+	</string>
+	<string id="ui_gui_dialmed_1_hint">
+		<text>При нажатии на клавишу будет осуществлена диагностика текущего состояния здоровья по трем основным критериям- общее состояние, кровотечение, радиационное поражение. То есть произойдет определение уровня поражения организма по каждым из этих трех параметров.</text>
+	</string>
+	<string id="ui_gui_dialmed_2_hint">
+		<text>При нажатии на клавишу медик автоматически осуществит лечение теми или иными препаратами в зависимости от результатов диагностики.</text>
+	</string>
+	<string id="st_npc_med_1_descr_1">
+		<text>легкая степень</text>
+	</string>
+	<string id="st_npc_med_1_descr_2">
+		<text>средняя степень</text>
+	</string>
+	<string id="st_npc_med_1_descr_3">
+		<text>тяжелая степень</text>
+	</string>
+	<string id="st_npc_med_use_descr_all">
+		<text>норма</text>
+	</string>	
+	<string id="st_conventer_eqv_attach_use1">
+		<text>Тип 1.</text>
+	</string>
+	<string id="st_conventer_eqv_attach_use2">
+		<text>Тип 2.</text>
+	</string>
+	<string id="st_conventer_eqv_attach_use3">
+		<text>Тип 3.</text>
+	</string>
+	<string id="ui_gui_eqv_spec_caption">
+		<text>Комплектация обмундирования.</text>
+	</string>
+	<string id="all_2_stalker_tainik_type_1_used">
+		<text>Вскрыт сталкерский схрон. Содержание рюкзака: мед. аптечка специальная, артефакт "Грави", оптический прицел, две пачки бронебойных патронов, немного денег.</text>
+	</string>
+	<string id="all_2_stalker_tainik_type_2_used">
+		<text>Вскрыт сталкерский cхрон. Содержание рюкзака: артефакт "Щипач-камень", две наступательные гранаты, автомат АКМ, армейский сухпаек, немного денег.</text>
+	</string>
+	<string id="all_2_stalker_tainik_type_3_used">
+		<text>Вскрыт сталкерский схрон. Содержание рюкзака: пистолет Beretta 92FS, две наступательные гранаты, подствольный гранатомет, артефакт "Губка", немного денег.</text>
+	</string>
+	<string id="st_ui_tai2_about_use_item_1">
+		<text>При включеном флажке будет осуществлено автоматическое извлечения предмета из первого слота рюкзака.</text>
+	</string>
+	<string id="st_ui_tai2_about_use_item_2">
+		<text>При включеном флажке будет осуществлено автоматическое извлечения предмета из второго слота рюкзака.</text>
+	</string>
+	<string id="st_ui_tai2_about_use_item_3">
+		<text>При включеном флажке будет осуществлено автоматическое извлечения предмета из третьего слота рюкзака.</text>
+	</string>
+	<string id="st_ui_tai2_about_use_item_4">
+		<text>При включеном флажке будет осуществлено автоматическое извлечения предмета из четвертого слота рюкзака.</text>
+	</string>
+	<string id="st_ui_tai2_about_use_item_5">
+		<text>При включеном флажке будет осуществлено автоматическое извлечения предмета из пятого слота рюкзака.</text>
+	</string>
+	<string id="ui_gui_tai2_1_hint">
+		<text>При нажатии на клавишу будет осуществлено отображение содержимого всех пять слотов найенного тайника.</text>
+	</string>
+	<string id="ui_gui_tai2_2_hint">
+		<text>При нажатии на клавишу будет произведено взятие предметов из того или иного слота, в зависимости от того, какой из них был выбран.</text>
+	</string>
+	<string id="ui_gui_tai2_3_hint">
+		<text>При нажатии на клавишу будет произведено изъятие всего содержимого из пяти имеющихся слотов.</text>
+	</string>
+	<string id="st_all_tainik_2_1_descr_1">
+		<text>Мед. аптечка.</text>
+	</string>
+	<string id="st_all_tainik_2_1_descr_2">
+		<text>Арт. "Грави".</text>
+	</string>
+	<string id="st_all_tainik_2_1_descr_3">
+		<text>Оптический прицел.</text>
+	</string>
+	<string id="st_all_tainik_2_1_descr_4">
+		<text>2 пачки патрон.</text>
+	</string>
+	<string id="st_all_tainik_2_1_descr_5">
+		<text>Немного денег.</text>
+	</string>
+	<string id="st_all_tainik_2_2_descr_1">
+		<text>Автомат АКМ.</text>
+	</string>
+	<string id="st_all_tainik_2_2_descr_2">
+		<text>Арт. "Щипач- камень".</text>
+	</string>
+	<string id="st_all_tainik_2_2_descr_3">
+		<text>Армейский сухпаек.</text>
+	</string>
+	<string id="st_all_tainik_2_2_descr_4">
+		<text>2 гранаты.</text>
+	</string>
+	<string id="st_all_tainik_2_2_descr_5">
+		<text>Немного денег.</text>
+	</string>
+	<string id="st_all_tainik_2_3_descr_1">
+		<text>Beretta 92FS.</text>
+	</string>
+	<string id="st_all_tainik_2_3_descr_2">
+		<text>Арт. "губка".</text>
+	</string>
+	<string id="st_all_tainik_2_3_descr_3">
+		<text>Подствольник.</text>
+	</string>
+	<string id="st_all_tainik_2_3_descr_4">
+		<text>2 гранаты.</text>
+	</string>
+	<string id="st_all_tainik_2_3_descr_5">
+		<text>Немного денег.</text>
+	</string>
+	<string id="ui_gui_tainik_2_caption">
+		<text>Сталкерский схрон</text>
+	</string>
+	<string id="st_tai_2_attach_use1">
+		<text>Содежимое</text>
+	</string>
+	<string id="st_tai_2_attach_use2">
+		<text>Извлечение</text>
+	</string>
+	<string id="st_tai_2_attach_use3">
+		<text>Взять все</text>
+	</string>
+	<string id="st_tai_2_item_1_used">
+		<text>Извлечь из слота 1.</text>
+	</string>
+	<string id="st_tai_2_item_2_used">
+		<text>Извлечь из слота 2.</text>
+	</string>
+	<string id="st_tai_2_item_3_used">
+		<text>Извлечь из слота 3.</text>
+	</string>
+	<string id="st_tai_2_item_4_used">
+		<text>Извлечь из слота 4.</text>
+	</string>
+	<string id="st_tai_2_item_5_used">
+		<text>Извлечь из слота 5.</text>
+	</string>
+	<string id="st_tai_2_use_1">
+		<text>Содержимое слота 1.</text>
+	</string>
+	<string id="st_tai_2_use_2">
+		<text>Содержимое слота 2.</text>
+	</string>
+	<string id="st_tai_2_use_3">
+		<text>Содержимое слота 3.</text>
+	</string>
+	<string id="st_tai_2_use_4">
+		<text>Содержимое слота 4.</text>
+	</string>
+	<string id="st_tai_2_use_5">
+		<text>Содержимое слота 5.</text>
+	</string>
+	<string id="st_all_tainik_2_descr_all">
+		<text>Взято.</text>
+	</string>
+    <string id="all_stalker_tainik_type_2_end_used">
+		<text>Вскрыт сталкерский схрон. Рюкзак повтороной закладке не подлежит и будет выброшен вместе с неиспользованным содержимым.</text>
+	</string>	
+	<string id="all_stalker_tainik_type_1_used">
+		<text>Вскрыт сталкерский схрон. Содержание рюкзака: автомат АКС-74, две пачки бронебойных патронов, немного денег.</text>
+	</string>
+	<string id="all_stalker_tainik_type_2_used">
+		<text>Вскрыт сталкерский cхрон. Содержание рюкзака: артефакт "Щипач-камень", два анабиотика, немного денег.</text>
+	</string>
+	<string id="all_stalker_tainik_type_3_used">
+		<text>Вскрыт сталкерский схрон. Содержание рюкзака: пистолет Beretta 92FS, две наступательные гранаты, немного денег.</text>
+	</string>
+	<string id="all_stalker_tainik_type_4_used">
+		<text>Вскрыт сталкерский схрон. Содержание рюкзака: автомат АН-94 "Абакан", армейских сухпаек, немного денег.</text>
+	</string>
+	<string id="all_stalker_tainik_type_5_used">
+		<text>Вскрыт сталкерский схрон. Содержание рюкзака: бронекостюм "Ветер Свободы", аптечка АИ-2, немного денег.</text>
+	</string>
+	<string id="all_stalker_tainik_type_6_used">
+		<text>Вскрыт сталкерский схрон. Содержание рюкзака: глушитель, оптический прицел, два радиопротектора.</text>
+	</string>
+	<string id="all_stalker_tainik_type_7_used">
+		<text>Вскрыт сталкерский схрон. Содержание рюкзака: артефакт "Губка", аптечка АИ-2.</text>
+	</string>
+	<string id="all_stalker_tainik_type_8_used">
+		<text>Вскрыт сталкерский схрон. Содержание рюкзака: бронекостюм Заря, две наступательные гранаты, детектор "Медведь".</text>
+	</string>
+	<string id="all_stalker_tainik_type_9_used">
+		<text>Вскрыт сталкерский схрон. Содержание рюкзака: артефакт "Грави", карабин "Сайга", детектор "Медведь".</text>
+	</string>
+	<string id="all_stalker_tainik_type_10_used">
+		<text>Вскрыт сталкерский схрон. Содержание рюкзака: винтовка Colt M16A2, аптечка АИ-2, армейский сухпаек.</text>
+	</string>
+	<string id="ui_mar_ai4_item_s1_text_1">
+		<text>Промедол</text>
+	</string>
+	<string id="ui_mar_ai4_item_s1_text_2">
+		<text>Бинт</text>
+	</string>
+	<string id="ui_mar_ai4_item_s1_text_3">
+		<text>Антирад</text>
+	</string>
+	<string id="ui_mar_ai4_item_s1_text_4">
+		<text>Антидот</text>
+	</string>
+	<string id="ui_mar_ai4_item_s1_text_5">
+		<text>Викасол</text>
+	</string>
+	<string id="all_about_suhpai_1_used_text">
+		<text>Сухпаек ИРП-П использован.</text>
+	</string>
+	<string id="ui_gui_suhpai_1_caption">
+		<text>Сухпаек: ИРП-П</text>
+	</string>		
+	<string id="all_about_suhpai_2_used_text">
+		<text>Сухпаек ИРП-Б использован.</text>
+	</string>
+	<string id="ui_gui_suhpai_2_caption">
+		<text>Армейский сухпаек: ИРП-Б</text>
+	</string>
+	<string id="ui_gui_suhirp_2_caption">
+		<text>Армейский сухпаек: ИРП-П</text>
+	</string>
+	<string id="ui_gui_ai_2_caption">
+		<text>Армейская аптечка: АИ-2</text>
+	</string>
+	<string id="ui_gui_ai_4_caption">
+		<text>Армейская аптечка: АИ-4</text>
+	</string>
+	<string id="ui_irp_3_text">
+		<text>3</text>
+	</string>
+	<string id="ui_irp_2_text">
+		<text>2</text>
+	</string>
+	<string id="ui_irp_1_text">
+		<text>1</text>
+	</string>
+	<string id="ui_irp_sostav_text">
+		<text>Состав сухпайка:</text>
+	</string>
+	<string id="ui_ai_sostav_text">
+		<text>Состав аптечки:</text>
+	</string>
+	<string id="ui_mar_irp_item_s1_text_1">
+		<text>Raw boar meat</text>
+	</string>
+	<string id="ui_mar_irp_item_s1_text_2">
+		<text>Хлебцы армейские</text>
+	</string>
+	<string id="ui_mar_irp_item_s1_text_3">
+		<text>Паштет</text>
+	</string>
+	<string id="ui_mar_irp_item_s1_text_4">
+		<text>Raw dog meat</text>
+	</string>
+	<string id="ui_mar_irp_item_s1_text_5">
+		<text>Raw flesh meat</text>
+	</string>
+	<string id="ui_mar_irp_item_s1_text_6">
+		<text>Напиток</text>
+	</string>
+	<string id="ui_mar_irp_item_s1_text_7">
+		<text>Шоколад</text>
+	</string>
+	<string id="ui_mar_irp_item_s1_text_8">
+		<text>Сок</text>
+	</string>
+	<string id="ui_irp_1_priem_text">
+		<text>1-ый прием пищи.</text>
+	</string>
+	<string id="ui_irp_2_priem_text">
+		<text>2-ый прием пищи.</text>
+	</string>
+	<string id="ui_irp_3_priem_text">
+		<text>3-ый прием пищи.</text>
+	</string>
+	<string id="ui_ai_1_priem_text">
+		<text>1-ое применение.</text>
+	</string>
+	<string id="ui_ai_2_priem_text">
+		<text>2-ое применение.</text>
+	</string>
+	<string id="ui_ai_3_priem_text">
+		<text>3-ие применение.</text>
+	</string>
+	<string id="ui_gui_ai4_1_hint">
+		<text>Описание действия. По клику на кнопку вы возьмете из содержимого аптечки стандарт антирада.</text>
+	</string>
+	<string id="ui_gui_ai4_3_hint">
+		<text>Описание действия. По клику на кнопку вы возьмете из содержимого аптечки препарат "промедол".</text>
+	</string>
+	<string id="ui_gui_ai4_4_hint">
+		<text>Описание действия. По клику на кнопку вы возьмете из содержимого аптечки бинт перевязочный.</text>
+	</string>
+	<string id="ui_gui_ai4_2_hint">
+		<text>Описание действия. По клику на кнопку вы возьмете из содержимого аптечки специальный антидот.</text>
+	</string>
+	<string id="ui_gui_ai4_8_hint">
+		<text>Описание действия. По клику на кнопку вы возьмете из содержимого аптечки препарат "викасол".</text>
+	</string>
+	
+	<string id="ui_gui_suhpai_1_hint">
+		<text>Описание действия. По клику на кнопку вы возьмете из содержимого сухпайка консервы из тушеной говядины в банке.</text>
+	</string>
+	<string id="ui_gui_suhpai_8_hint">
+		<text>Описание действия. По клику на кнопку вы возьмете из содержимого сухпайка пюре картофельное в запакованных брикете.</text>
+	</string>
+	<string id="ui_gui_suhpai_2_hint">
+		<text>Описание действия. По клику на кнопку вы возьмете из содержимого сухпайка специальную рисовую кашу с говядиной в банке.</text>
+	</string>
+	<string id="ui_gui_suhpai_6_hint">
+		<text>Описание действия. По клику на кнопку вы возьмете из содержимого сухпайка плитку шоколада черного.</text>
+	</string>
+	<string id="ui_gui_suhpai_7_hint">
+		<text>Описание действия. По клику на кнопку вы возьмете из содержимого сухпайка апельсиновый сок в пакете.</text>
+	</string>
+	<string id="ui_gui_suhpai_3_hint">
+		<text>Описание действия. По клику на кнопку вы возьмете из содержимого сухпайка галеты (хлебцы) армейские в пачке.</text>
+	</string>
+	<string id="ui_gui_suhpai_5_hint">
+		<text>Описание действия. По клику на кнопку вы возьмете из содержимого сухпайка специальный паштет из куриной печени в банке.</text>
+	</string>
+    <string id="ui_gui_suhpai_4_hint">
+		<text>Описание действия. По клику на кнопку вы возьмете из содержимого сухпайка энергетический напиток с кофеином в банке.</text>
+	</string>	
+	<string id="ui_mm_help_1">
+		<text>?</text>
+	</string>
+	<string id="ui_mm_ai_s1">
+		<text>Взять антирад</text>
+	</string>
+	<string id="ui_mm_ai_s2">
+		<text>Взять промедол</text>
+	</string>
+	<string id="ui_mm_ai_s3">
+		<text>Взять бинт</text>
+	</string>
+	<string id="ui_mm_ai_s4">
+		<text>Взять антидот</text>
+	</string>
+	<string id="ui_mm_ai_s5">
+		<text>Взять викасол</text>
+	</string>
+	<string id="ui_mm_eat_s1">
+		<text>Взять консервы</text>
+	</string>
+	<string id="ui_mm_eat_s2">
+		<text>Взять хлебцы</text>
+	</string>
+	<string id="ui_mm_eat_s3">
+		<text>Взять напиток</text>
+	</string>
+	<string id="ui_mm_eat_s4">
+		<text>Взять кашу</text>
+	</string>
+	<string id="ui_mm_eat_s5">
+		<text>Взять пюре</text>
+	</string>
+	<string id="ui_mm_eat_1">
+		<text>Взять консервы</text>
+	</string>
+	<string id="ui_mm_eat_2">
+		<text>Взять кашу</text>
+	</string>
+	<string id="ui_mm_eat_3">
+		<text>Взять хлебцы</text>
+	</string>
+	<string id="ui_mm_eat_4">
+		<text>Взять напиток</text>
+	</string>
+	<string id="ui_mm_eat_5">
+		<text>Взять паштет</text>
+	</string>
+	<string id="ui_mm_eat_6">
+		<text>Взять шоколад</text>
+	</string>
+	<string id="ui_mm_eat_7">
+		<text>Взять сок</text>
+	</string>
+	<string id="ui_mm_eat_8">
+		<text>Взять пюре</text>
+	</string>
+	<string id="ui_irp_f_1_text">
+		<text>1-ый слот.</text>
+	</string>
+	<string id="ui_irp_f_2_text">
+		<text>2-ой слот.</text>
+	</string>
+	<string id="ui_irp_f_3_text">
+		<text>3-ий слот.</text>
+	</string>
+	<string id="ui_irp_f_4_text">
+		<text>4-ый слот.</text>
+	</string>
+	<string id="ui_irp_s_1_text">
+		<text>5-ый слот.</text>
+	</string>
+	<string id="ui_irp_s_2_text">
+		<text>6-ой слот.</text>
+	</string>
+	<string id="ui_irp_s_3_text">
+		<text>7-ой слот.</text>
+	</string>
+	<string id="ui_irp_s_4_text">
+		<text>8-ой слот.</text>
+	</string>
+	<string id="ui_irp_t_1_text">
+		<text>9-ый слот.</text>
+	</string>
+	<string id="ui_irp_t_2_text">
+		<text>10-ый слот.</text>
+	</string>
+	<string id="ui_irp_t_3_text">
+		<text>11-ый слот.</text>
+	</string>
+	<string id="ui_irp_t_4_text">
+		<text>12-ый слот.</text>
+	</string>
+	<string id="ui_irp_f2_1_text">
+		<text>1-ый слот.</text>
+	</string>
+	<string id="ui_irp_f2_2_text">
+		<text>2-ой слот.</text>
+	</string>
+	<string id="ui_irp_f2_3_text">
+		<text>3-ий слот.</text>
+	</string>
+	<string id="ui_irp_s2_1_text">
+		<text>4-ый слот.</text>
+	</string>
+	<string id="ui_irp_s2_2_text">
+		<text>5-sй слот.</text>
+	</string>
+	<string id="ui_irp_s2_3_text">
+		<text>6-ой слот.</text>
+	</string>
+	<string id="ui_irp_t2_1_text">
+		<text>7-ой слот.</text>
+	</string>
+	<string id="ui_irp_t2_2_text">
+		<text>8-ой слот.</text>
+	</string>
+	<string id="ui_irp_t2_3_text">
+		<text>9-ый слот.</text>
+	</string>
+	<string id="ui_mm_pai_1_text">
+		<text>Выберите действие:</text>
+	</string>
+	<string id="ui_mm_closed">
+		<text>Close</text>
+	</string>
+	<string id="ui_mm_pai_s_text">
+		<text>Содержание сухпайка ИРП-П:</text>
+	</string>	
+	<string id="ui_mm_pai_s1_text">
+		<text>Говядина тушеная; банка (250 г); 3 шт.</text>
+	</string>
+	<string id="ui_mm_pai_s2_text">
+		<text>Галеты армейские; пачка (50 г); 3 шт.</text>
+	</string>
+	<string id="ui_mm_pai_s3_text">
+		<text>Паштет печеночный; банка (250 г); 1 шт.</text>
+	</string>
+	<string id="ui_mm_pai_s4_text">
+		<text>Каша рисовая с говядиной; банка (250 г); 2 шт.</text>
+	</string>
+	<string id="ui_mm_pai_s5_text">
+		<text>Напиток энергетический; банка (250 г); 1 шт.</text>
+	</string>
+	<string id="ui_mm_pai_2_text">
+		<text>Выберите действие:</text>
+	</string>
+	<string id="ui_mm_pai2_s_text">
+		<text>Содержание сухпайка ИРП-Б:</text>
+	</string>
+	<string id="ui_mm_eat_1_2">
+		<text>Взять консервы</text>
+	</string>
+	<string id="ui_mm_eat_2_2">
+		<text>Взять пюре</text>
+	</string>
+	<string id="ui_mm_eat_3_2">
+		<text>Взять кашу</text>
+	</string>
+	<string id="ui_mm_eat_4_2">
+		<text>Взять шоколад</text>
+	</string>
+	<string id="ui_mm_eat_5_2">
+		<text>Взять сок</text>
+	</string>
+	<string id="ui_mm_pai2_s1_text">
+		<text>Говядина тушеная; банка (250 г); 3 шт.</text>
+	</string>
+	<string id="ui_mm_pai2_s2_text">
+		<text>Пюре картофельное; брикет (150 г); 3 шт.</text>
+	</string>
+	<string id="ui_mm_pai2_s3_text">
+		<text>Каша рисовая с говядиной; банка (250 г); 2 шт.</text>
+	</string>
+	<string id="ui_mm_pai2_s4_text">
+		<text>Шоколад черный; плитка (100 г); 2 шт.</text>
+	</string>
+	<string id="ui_mm_pai2_s5_text">
+		<text>Сок апельсиновый; пакет (250 г); 1 шт.</text>
+	</string>
+	
+	<string id="all_about_ai_1_used_text">
+		<text>Аптечка АИ-2 использована.</text>
+	</string>
+	<string id="ui_gui_ai_1_caption">
+		<text>Аптечка: АИ-2</text>
+	</string>
+	<string id="st_ui_ai_1_about_use_item_1">
+		<text>Описание первого действия. По клику на кнопку вы возьмете из содержимого аптечки индивидуальной противошоковое средство, его количиство 3 шт.</text>
+	</string>
+	<string id="st_ui_ai_1_about_use_item_2">
+		<text>Описание второго действия. По клику на кнопку вы возьмете из содержимого аптечки индивидуальной перевязочный бинт, его количиство 3 шт.</text>
+	</string>
+	<string id="st_ui_ai_1_about_use_item_3">
+		<text>Описание третьего действия. По клику на кнопку вы возьмете из содержимого аптечки индивидуальной специальный противорадиационный препарат, его количиство 3 шт.</text>
+	</string>
+	<string id="st_ui_ai_1_about_use_item_4">
+		<text>Описание четвертого действия. По клику на кнопку вы возьмете из содержимого аптечки индивидуальной специальный антидот при отравлении ФОВ, его количиство 2 шт.</text>
+	</string>
+	<string id="st_ui_ai_1_about_use_item_5">
+		<text>Описание пятого действия. По клику на кнопку вы возьмете из содержимого аптечки индивидуальной радиопротектор, его количиство 1 шт.</text>
+	</string>
+	<string id="ui_mm_ai_1">
+		<text>Взять из 1.</text>
+	</string>
+	<string id="ui_mm_ai_2">
+		<text>Взять из 2.</text>
+	</string>
+	<string id="ui_mm_ai_3">
+		<text>Взять из 3.</text>
+	</string>
+	<string id="ui_mm_ai_4">
+		<text>Взять из 4.</text>
+	</string>
+	<string id="ui_mm_ai_5">
+		<text>Взять из 5.</text>
+	</string>
+	<string id="ui_mm_ai_1_text">
+		<text>Выберите действие:</text>
+	</string>
+	<string id="ui_mm_ai_1_s_text">
+		<text>Содержание аптечки АИ-2:</text>
+	</string>
+	<string id="ui_mm_ai_1_s1_text">
+		<text>1-ое гнездо; противоболевое средсвто; 3 шт.</text>
+	</string>
+	<string id="ui_mm_ai_1_s2_text">
+		<text>2-ое гнездо; бинт перевязочный; 3 шт.</text>
+	</string>
+	<string id="ui_mm_ai_1_s3_text">
+		<text>3-ие гнездо; противорадиационный препорат; 3 шт.</text>
+	</string>
+	<string id="ui_mm_ai_1_s4_text">
+		<text>4-ое гнездо; средсвто при отравлении ФОВ; 2 шт.</text>
+	</string>
+	<string id="ui_mm_ai_1_s5_text">
+		<text>5-ое гнездо; радиопротектор; 1 шт.</text>
+	</string>
+	
+	<string id="all_about_ai_2_used_text">
+		<text>Аптечка АИ-4 использована.</text>
+	</string>
+	<string id="ui_gui_ai_2_caption">
+		<text>Аптечка: АИ-4</text>
+	</string>
+	<string id="st_ui_ai_2_about_use_item_1">
+		<text>Описание первого действия. По клику на кнопку вы возьмете из содержимого аптечки индивидуальной противошоковое средсвто, их количиство 3 шт.</text>
+	</string>
+	<string id="st_ui_ai_2_about_use_item_2">
+		<text>Описание второго действия. По клику на кнопку вы возьмете из содержимого аптечки индивидуальной бинты перевязочные, их количиство 3 шт.</text>
+	</string>
+	<string id="st_ui_ai_2_about_use_item_3">
+		<text>Описание третьего действия. По клику на кнопку вы возьмете из содержимого аптечки индивидуальной противобактериальное средство, его количиство 1 шт.</text>
+	</string>
+	<string id="st_ui_ai_2_about_use_item_4">
+		<text>Описание четвертого действия. По клику на кнопку вы возьмете из содержимого аптечки индивидуальной специальный анабиотик, их количиство 2 шт.</text>
+	</string>
+	<string id="st_ui_ai_2_about_use_item_5">
+		<text>Описание пятого действия. По клику на кнопку вы возьмете из содержимого аптечки индивидуальной экспериментальный антидот, его количиство 1 шт.</text>
+	</string>
+	<string id="ui_mm_ai_2_1">
+		<text>Взять из 1.</text>
+	</string>
+	<string id="ui_mm_ai_2_2">
+		<text>Взять из 2.</text>
+	</string>
+	<string id="ui_mm_ai_2_3">
+		<text>Взять из 3.</text>
+	</string>
+	<string id="ui_mm_ai_2_4">
+		<text>Взять из 4.</text>
+	</string>
+	<string id="ui_mm_ai_2_5">
+		<text>Взять из 5.</text>
+	</string>
+	<string id="ui_mm_ai_2_text">
+		<text>Выберите действие:</text>
+	</string>
+	<string id="ui_mm_ai_2_s_text">
+		<text>Содержание аптечки АИ-4:</text>
+	</string>
+	<string id="ui_mm_ai_2_s1_text">
+		<text>1-ое гнездо; противошоковое средсвто; 3 шт.</text>
+	</string>
+	<string id="ui_mm_ai_2_s2_text">
+		<text>2-ое гнездо; бинты перевязочные; 3 шт.</text>
+	</string>
+	<string id="ui_mm_ai_2_s3_text">
+		<text>3-ое гнездо; противобактериальное средство; 1 шт.</text>
+	</string>
+	<string id="ui_mm_ai_2_s4_text">
+		<text>4-ое гнездо; специальный анабиотик; 2 шт.</text>
+	</string>
+	<string id="ui_mm_ai_2_s5_text">
+		<text>5-ое гнездо; экспериментальный антидот; 1 шт.</text>
+	</string>
+	
+	<string id="st_need_art1_box_text">
+		<text>Для соединения гравитационной сборки - необходимы 5 артефактов Золотая Рыбка.</text>
+	</string>
+	<string id="st_need_art2_box_text">
+		<text>Для соединения химической сборки - необходимы 5 артефактов Слюда.</text>
+	</string>
+	<string id="st_need_art3_box_text">
+		<text>Для соединения термической сборки - необходимы 5 артефактов Мамины бусы.</text>
+	</string>
+	<string id="st_conventer_yad_title">
+		<text>«Портативная химическая лаборатория»</text>
+	</string>
+	<string id="st_conventer_yad_help">
+		<text>Запись с задачей</text>
+	</string>
+	<string id="st_conventer_yad_attach">
+		<text>Синтезировать(Рицин)</text>
+	</string>
+	<string id="st_conventer_artefacts_title">
+		<text>«Конвертер для артефактов»</text>
+	</string>
+    <string id="st_conventer_grenade_attach_art1">
+		<text>Соединить(Золотую Рыбку)</text>
+	</string>
+    <string id="st_conventer_grenade_attach_art2">
+		<text>Соединить(Слюду)</text>
+	</string>
+    <string id="st_conventer_grenade_attach_art3">
+		<text>Соединить(Мамины Бусы)</text>
+	</string>
+	
+	<string id="st_conventer_juk_title">
+		<text>Паяльная станция Lukey-853D</text>
+	</string>
+	<string id="st_conventer_detector_title">
+		<text>Персональная паяльная станция</text>
+	</string>
+	<string id="ui_gui_guk_2_caption">
+		<text>Transmitter for sending coordinates</text>
+	</string>
+	<string id="ui_gui_guk_1_caption">
+		<text>Расчетная задача</text>
+	</string>
+	<string id="st_conventer_guk_attach_use1">
+		<text>Расчетные параметры</text>
+	</string>
+	<string id="st_conventer_guk_attach_use4">
+		<text>Преобразование</text>
+	</string>
+	<string id="st_conventer_guk_attach_use2">
+		<text>Справочные данные</text>
+	</string>
+	<string id="st_conventer_guk_attach_use3">
+		<text>Спайка прибора</text>
+	</string>
+	<string id="st_need_guk1_box_text">
+		<text>Для создания прослушивающих приборов необходимо иметь при себе 5 специальных микросхем, 15 конденсаторов и 10 катушек индуктивности каждая из которых имеет свою специальную маркировку.</text>
+	</string>
+	<string id="ui_gui_guk_item_1">
+		<text>Parameters for loading coordinates:</text>
+	</string>
+	<string id="ui_gui_guk_item_2">
+		<text>Estimated receivable parameters:</text>
+	</string>
+	<string id="st_guk_type_one_1_text">
+		<text>Кнопка для загрузки координат.</text>
+	</string>
+	<string id="st_guk_1_use_1">
+		<text>Load</text>
+	</string>
+	<string id="st_guk_1_use_2">
+		<text>Receive</text>
+	</string>
+    
+	<string id="ui_gui_a2_pda_copy_caption">
+		<text>«Копирование информации»</text>
+	</string>
+	<string id="st_a2_pda_copy_use">
+		<text>Копировать</text>
+	</string>
+    <string id="ui_gui_rukzak_caption">
+		<text>«Размещение схрона»</text>
+	</string>
+	<string id="ui_gui_rukzak_caption_2">
+		<text>«Сталкерский схрон»</text>
+	</string>
+	<string id="st_menu_rukzak_use_1">
+		<text>Извлечь</text>
+	</string>
+	<string id="st_menu_rukzak_use">
+		<text>Установить</text>
+	</string>
+    <string id="st_menu_rukzak_close">
+		<text>Close</text>
+	</string>
+    <string id="st_a2_scanner_use">
+		<text>Извлечь модуль</text>
+	</string>
+    <string id="st_a2_scanner_close">
+		<text>Close</text>
+	</string>
+	<string id="ui_gui_a2_samopisez_caption">
+		<text>«Бортовой регистратор МСРП-12-96»</text>
+	</string>
+	<string id="ui_gui_a2_samopisez_caption_1">
+		<text>«Борт вертолета Ми-24»</text>
+	</string>
+	<string id="ui_gui_a2_scanner_caption">
+		<text>«Радиосканер IC-R9800»</text>
+	</string>
+    <string id="ui_gui_vphr_caption">
+		<text>«ВПХР»</text>
+	</string>
+    <string id="ui_mm_vphr_use_1">
+		<text>Анализ пробы</text>
+	</string>
+	<string id="ui_mm_vphr_use_2">
+		<text>ФОВ; Прочие ОВ</text>
+	</string>
+	<string id="ui_mm_vphr_use_3">
+		<text>Контрольные трубки</text>
+	</string>
+    <string id="ui_mm_vphr_use_1_text">
+		<text>Анализ пробы: Канал № 1- 1000, Канал № 2- 1500.</text>
+	</string>
+	<string id="ui_mm_vphr_use_2_text">
+		<text>СДЯВ: к-нт по X-75 мг/дел, к-нт по Y-25 л/дел</text>
+	</string>
+	<string id="ui_mm_vphr_use_3_text">
+		<text>Результат работы: Иприт- 3*10-3 мг/л, VX- 1*10-3 мг/л, ФОВ- нет.</text>
+	</string>
+	<string id="ui_gui_vphr_1_item_1">
+		<text>Выставить N1 = 1000</text>
+	</string>
+	<string id="ui_gui_vphr_1_item_2">
+		<text>Выставить N2 = 1500</text>
+	</string>
+    <string id="ui_gui_vphr_2_item_1">
+		<text>Выставить X = 75 t1/дел</text>
+	</string>
+	<string id="ui_gui_vphr_2_item_2">
+		<text>Выставить Y = 25 t2/дел</text>
+	</string>
+	<string id="ui_gui_vphr_1_caption">
+		<text>«Параметры»</text>
+	</string>
+	<string id="ui_gui_vphr_2_caption">
+		<text>«Оценка»</text>
+	</string>
+	<string id="ui_gui_vphr_3_caption">
+		<text>«Результат»</text>
+	</string>
+	<string id="ui_gui_yad_zadacha_caption">
+		<text>«Задача синтеза»</text>
+	</string>
+	<string id="ui_gui_med_help_caption_1">
+		<text>«Справочные данные»</text>
+	</string>
+	<string id="ui_mm_help_m_text">
+		<text>«Содержание справочника:»</text>
+	</string>
+	<string id="st_ui_vphr_about_use_item_1">
+		<text>Описание первого действия. Анализ пробы. По клику на кнопку перед вами откроется одноименное окно, в котором будет необходимо выполнить определенный порядок действий. Во время операции анализа необходимо ввести числовые значения параметров N1 и N2. Данные вводятся в специальные поля. Сами значения будут указаны в одноименном окне.</text>
+	</string>
+	<string id="st_ui_vphr_about_use_item_2">
+		<text>Описание второго действия. Оценка пробы. По клику на кнопку перед вами откроется одноименное окно, в котором будет необходимо выполнить определенный порядок действий. Во время операции оценки необходимо ввести числовые значения параметров коэффициентов по осям X и Y. Данные вводятся в специальные поля. Сами значения будут указаны в одноименном окне.</text>
+	</string>
+	<string id="st_ui_vphr_about_use_item_3">
+		<text>Описание третьего действия. Результат. По клику на кнопку перед вами откроется одноименное окно, в котором будет выведена визуализация полученного результата работы ВПХР. Данное окно можно просто закрыть, завершив работу.</text>
+	</string>	
+	<string id="ui_gui_osc_caption">
+		<text>«Осциллограф С1-65А»</text>
+	</string>
+	<string id="ui_mm_osc_s_text">
+		<text>Этапы работы:</text>
+	</string>
+	<string id="ui_mm_osc_use_1">
+		<text>Калибровка</text>
+	</string>
+	<string id="ui_mm_osc_use_2">
+		<text>V/дел;T/дел</text>
+	</string>
+	<string id="ui_mm_osc_use_3">
+		<text>Сигнал</text>
+	</string>
+	<string id="ui_mm_osc_use_1_text">
+		<text>Эталонные параметры видеоимпульса: Частота-1КГц, Амплитуда- 1,5мВ.</text>
+	</string>
+	<string id="ui_mm_osc_use_2_text">
+		<text>Масштаб: Rвх-1 МОм, Свх-30 пФ; к-нт по X-20мкВ/дел, к-нт по Y-50мс/дел</text>
+	</string>
+	<string id="ui_mm_osc_use_3_text">
+		<text>Форма эл-ого сигнала: синусоидальный, Период-0.2с, Амплитуда-20В.</text>
+	</string>
+	<string id="ui_gui_razia_caption">
+		<text>«Радиостанция Бармица-РС»</text>
+	</string>
+	<string id="ui_gui_oszill_1_caption">
+		<text>«Калибровка»</text>
+	</string>
+	<string id="ui_gui_oszill_2_caption">
+		<text>«Масштабирование»</text>
+	</string>
+	<string id="ui_gui_oszill_3_caption">
+		<text>«Сигнал»</text>
+	</string>
+	<string id="st_menu_radiostanzia_use">
+		<text>Отправить</text>
+	</string>
+	<string id="st_menu_radiogenerator_use">
+		<text>Отключить</text>
+	</string>
+	<string id="st_menu_oszill_1_use_1">
+		<text>Установить</text>
+	</string>
+	<string id="st_menu_oszill_1_use_2">
+		<text>Установить</text>
+	</string>
+	<string id="ui_gui_oszill_1_item_1">
+		<text>Выставить F = 1000 Гц</text>
+	</string>
+	<string id="ui_gui_oszill_1_item_2">
+		<text>Выставить А = 1500 В</text>
+	</string>
+    <string id="ui_gui_oszill_2_item_1">
+		<text>Выставить X = 20 мкВ/дел</text>
+	</string>
+	<string id="ui_gui_oszill_2_item_2">
+		<text>Выставить Y = 50 мс/дел</text>
+	</string>	
+	<string id="st_ui_osc_about_use_item_1">
+		<text>Описание первого действия. Калибровка. По клику на кнопку перед вами откроется одноименное окно, в котором будет необходимо выполнить определенный порядок действий. Во время опереции калибровки необходимо ввести числовые значения параметров эталонного видеоимпульса (Амплитуда и Частота). Данные вводятся в специальные поля. Сами значения будут указаны в окне калибровки.</text>
+	</string>
+	<string id="st_ui_osc_about_use_item_2">
+		<text>Описание второго действия. Масштабирование. По клику на кнопку перед вами откроется одноименное окно, в котором будет необходимо выполнить определенный порядок действий. Во время опереции масштабирования необходимо  ввести числовые значения параметров коэффициентов по осям X и Y. Данные вводятся в специальные поля. Сами значения будут указаны в окне масштабирования.</text>
+	</string>
+	<string id="st_ui_osc_about_use_item_3">
+		<text>Описание третьего действия. Визуализация сигнала. По клику на кнопку перед вами откроется одноименное окно, в котором будет выведена визуализация полученного результата работы осциллографа. Данное окно можно просто закрыть, завершив работу.</text>
+	</string>
+	<string id="st_menu_oszill_2_close">
+		<text>Стоп</text>
+	</string>
+	<string id="st_menu_oszill_1_close">
+		<text>Применить</text>
+	</string>
+	<string id="ui_gui_b5_medical_main_caption">
+		<text>«Медецинский комплект системы WPSM»</text>
+	</string>
+	<string id="ui_gui_med_1_caption_2">
+		<text>«Диагностика и лечение»</text>
+	</string>
+	<string id="ui_gui_med_1_caption">
+		<text>«Модуль функциональной диагностики»</text>
+	</string>
+	<string id="ui_gui_med_2_caption">
+		<text>«Справочные данные»</text>
+	</string>
+	<string id="ui_gui_med_3_caption">
+		<text>«Лечебный модуль»</text>
+	</string>
+	<string id="ui_mm_med_use_1">
+		<text>Диагностика</text>
+	</string>
+	<string id="ui_mm_med_use_2">
+		<text>Справочник</text>
+	</string>
+	<string id="ui_mm_med_use_3">
+		<text>Лечение</text>
+	</string>
+	<string id="st_b5_med_1_use_1">
+		<text>Осмотр</text>
+	</string>
+	<string id="st_a5_med_1_use_1">
+		<text>Диагностика</text>
+	</string>
+	<string id="st_a5_med_1_use_2">
+		<text>Лечение</text>
+	</string>
+	<string id="st_b5_med_3_use_1">
+		<text>Выполнить</text>
+	</string>
+	<string id="st_b5_med_close">
+		<text>Close</text>
+	</string>
+	<string id="ui_mm_med_lechenie_doing_text">
+		<text>Лечебный модуль завершил свою работу.</text>
+	</string>
+	<string id="ui_mm_med_osmotr_doing_text">
+		<text>Диагностика осуществлена. Использую справочные данные определите возможный диагноз: 1-, 2-, 3-.</text>
+	</string>
+	<string id="ui_gui_med_diag_item_1">
+		<text>Пульс:</text>
+	</string>
+	<string id="ui_gui_med_diag_item_2">
+		<text>Температура и давление:</text>
+	</string>
+	<string id="ui_gui_med_diag_item_3">
+		<text>Анализ крови:</text>
+	</string>
+	<string id="ui_gui_med_diag_item_4">
+		<text>Прочее:</text>
+	</string>
+	<string id="ui_gui_med_lech_item_1">
+		<text>Остановка кровотечения:</text>
+	</string>
+	<string id="ui_gui_med_lech_item_2">
+		<text>Обезболивающие:</text>
+	</string>
+	<string id="ui_gui_med_lech_item_3">
+		<text>Дезинфекция и детоксикация:</text>
+	</string>
+	<string id="ui_gui_med_lech_item_4">
+		<text>Антибиотики:</text>
+	</string>
+	<string id="ui_gui_med_lech_op1">
+		<text>Выполняемое действие:</text>
+	</string>
+	<string id="ui_gui_med_lech_op2">
+		<text>Вводимый препорат:</text>
+	</string>
+	<string id="ui_gui_med_lech_op3">
+		<text>Выбранное обезболивающее:</text>
+	</string>
+	<string id="ui_gui_med_lech_op4">
+		<text>Вводимый антибиотик:</text>
+	</string>
+	<string id="ui_mm_med_s_text">
+		<text>Содержание справочника</text>
+	</string>
+	<string id="st_b5_r3_use_1_text">
+	    <text>1- бинтовая повязка\n  2- препорат викасол\n  3- препорат дицинон\n</text>
+    </string>
+	<string id="st_b5_r3_use_2_text">
+	    <text>1- анальгетик морфин\n  2- препорат анальгин\n  3- препорат трамал\n</text>
+    </string>
+	<string id="st_b5_r3_use_3_text">
+	    <text>1- реополиглюкин\n  2- препорат диоксидин\n 3- препорат октинисепт\n</text>
+    </string>
+	<string id="st_b5_r3_use_4_text">
+	    <text>1- препорат пенициллин\n  2- препорат цифран\n  3- эритромицин\n</text>
+    </string>
+    <string id="ui_mm_med_helper_text_1">
+		<text>Анальгин</text>
+	</string>
+	<string id="ui_mm_med_helper_text_2">
+		<text>Викасол</text>
+	</string>
+	<string id="ui_mm_med_helper_text_3">
+		<text>Дицинон</text>
+	</string>
+	<string id="ui_mm_med_helper_text_4">
+		<text>Диоксидин</text>
+	</string>	
+	<string id="ui_mm_med_helper_text_5">
+		<text>Октинисепт</text>
+	</string>
+	<string id="ui_mm_med_helper_text_6">
+		<text>Бинт</text>
+	</string>
+	<string id="ui_mm_med_helper_text_7">
+		<text>Морфин</text>
+	</string>
+	<string id="ui_mm_med_helper_text_8">
+		<text>Трамал</text>
+	</string>
+	<string id="ui_mm_med_helper_text_9">
+		<text>Реополиглюкин</text>
+	</string>
+	<string id="ui_mm_med_helper_text_10">
+		<text>Пенициллин</text>
+	</string>
+	<string id="ui_mm_med_helper_text_11">
+		<text>Цифран</text>
+	</string>
+	<string id="ui_mm_med_helper_text_12">
+		<text>Эритромицин</text>
+	</string>
+    <string id="st_mm_med_helper_descr_1">
+		<text>Метамизол натрия («Анальгин») — лекарственное средство, анальгетик и антипиретик из группы пиразолонов. Во многих странах изъят из оборота в связи с риском развития агранулоцитоза.
+	    Относится к НПВП, группе производных пиразолона. По механизму действия похож на другие НПВП (неселективно блокирует ЦОГ и снижает образование простагландинов из арахидоновой кислоты). Препятствует проведению болевых экстра- и проприорецептивных импульсов по пучкам Голля и Бурдаха, повышает порог возбудимости таламических центров болевой чувствительности, увеличивает теплоотдачу.
+		Показания \n  Лихорадочный синдром (инфекционно-воспалительные заболевания, укусы насекомых — комары, пчёлы, оводы и др., посттрансфузионные осложнения); Болевой синдром (слабой и умеренной выраженности): в том числе невралгия, миалгия, артралгия...
+		В частных случаях рекомендован при гипотернии и нитевидном пульсе.
+	    </text>
+	</string>
+    <string id="st_mm_med_helper_descr_2">
+		<text>Викасол. Викасол принимает участие в образовании печенью протромбина и способствует нормализации свертывания крови. Действие викасола проявляется через 12—18 ч после введения в организм.
+        Показания к применению. \n Гипо- и авитаминоз К, обтурационная желтуха, острый гепатит; паренхиматозные, капиллярные, геморроидальные, желудочные, кишечные, носовые и легочные кровотечения; ранения, операции, лучевая болезнь, тромбоцитопеническая пурпура, последний месяц беременности (для профилактики геморрагии у новорожденных), маточные ювенильные и преклимактерические кровотечения, спонтанная кровоточивость при подготовке к операциям с затрудненным гемостазом, септические заболевания с геморрагическими явлениями, при передозировке антикоагулянтов (дикумарин, фенилин).
+		В частных случаях рекомендован к применению при шоковом состоянии пациента.
+		</text>
+	</string>
+    <string id="st_mm_med_helper_descr_3">
+		<text>Дицинон. Гемостатический препарат. Кровоостанавливающее действие основано на усилении первой ступени механизма гемостаза (взаимодействия между эндотелием и тромбоцитами) Дицинон защищает эндотелий. Доказано, что Дицинон повышает адгезию тромбоцитов, стабилизирует стенки капилляров, снижая, таким образом, их проницаемость, тормозит синтез тех простагландинов, которые вызывают дезагрегацию тромбоцитов, вазодилатацию и увеличение проницаемости капилляров. 
+Это приводит к сокращению времени кровотечения и уменьшению кровопотери. Дицинон не оказывает влияния на механизм коагуляции, протромбиновое время, фибринолиз и уровень тромбоцитов (в норме). Рекомендован при пониженном содержании тромбоцитов в крови.
+		</text>
+	</string>
+    <string id="st_mm_med_helper_descr_4">
+		<text>Диоксидин - отечественный синтетический АМП широкого спектра действия. Разрешен для медицинского применения в 1976 г. 
+В связи с особенностями токсикологии с целью системного действия (в/в) используется только по жизненным показаниям для лечения тяжелых форм анаэробной или смешанной аэробно-анаэробной инфекции, вызванной полирезистентными штаммами при неэффективности или непереносимости других АМП. При тяжелых формах гнойной инфекции может применяться в полости, эндобронхиально, местно.
+Механизм действия \n Диоксидин оказывает бактерицидное действие, механизм которого до конца не изучен. Активность диоксидина усиливается в анаэробной среде за счет индукции образования активных форм кислорода. В частных случаях рекомендовано применять при пониженном содержании лейкоцитов в крови.</text>
+	</string>
+    <string id="st_mm_med_helper_descr_5">
+		<text>Октинисепт. Показания- обработка кожи и слизистых оболочек перед диагностическими и оперативными мероприятиями в педиатрической, хирургической и акушерско-гинекологической практике, в травматологии, проктологии, дерматовенерологии, оториноларингологии, стоматологии;
+обработка раневых и ожоговых поверхностей; профилактика микозов стоп и межпальцевых микозов.
+        В частных случаях рекомендован при гипертонии и полуобморочном состоянии.
+		</text>
+	</string>
+    <string id="st_mm_med_helper_descr_6">
+		<text>Бинт — полоска ткани (марли, холста, полотна, фланели), используемая для перевязки ран, наложения повязки.
+Структура медицинского бинта заключается в сложном переплетении хлопчатобумажных нитей, вида — полотняное переплетение нитей. Ткань бинта состоит из двух переплетающихся систем нитей, расположенных взаимно перпендикулярно.
+        В частных случаях лучше всего применим когда пациент в сознании и его общее состояние в пределах нормы.</text>
+	</string>
+    <string id="st_mm_med_helper_descr_7">
+		<text>Морфин — лекарственное средство, оказывающее анальгезирующее (опиоидное) действие.
+В медицине применяют производные морфина, в частности, гидрохлорид (для инъекций) и сульфат (в качестве перорального препарата). Морфин способен эффективно подавлять ощущение сильной физической боли и боли психогенного происхождения. Обладает также седативной активностью, подавляет кашлевой рефлекс.
+        В частных случаях рекомендован к применению при слабом пульсе и нормальной температуре тела.
+		</text>
+	</string>
+    <string id="st_mm_med_helper_descr_8">
+		<text>Трамал- Опиоидный синтетический анальгетик, обладающий центральным действием и действием на спинной мозг (способствует открытию K+ и Ca2+-каналов, вызывает гиперполяризацию мембран и тормозит проведение болевых импульсов), усиливает действие седативных ЛС. В частных случаях применяют при гипетермии и учащенном пульсе.</text>
+	</string>
+    <string id="st_mm_med_helper_descr_9">
+		<text>Реополиглюкин - представляет собой плазмозаменный раствор, специфическое действие которого состоит в повышении суспензийных свойств крови, уменьшении её вязкости, содействии восстановлению кровотока в мелких капиллярах, предотвращении и устранении агрегации форменных элементов крови. 
+Реополиглюкин применяют для улучшения капиллярного кровотока с целью профилактики и лечения травматического, операционного, токсичного и ожогового шока.
+        Рекомендован при гипотонии и повышенном содержании лейкоцитов.
+		</text>
+	</string>
+    <string id="st_mm_med_helper_descr_10">
+		<text>Пенициллины — антимикробные препараты, относящиеся к классу b-лактамных антибиотиков.
+В настоящее время в группу пенициллинов входят препараты, которые в зависимости от происхождения, химической структуры и антимикробной активности подразделяются на несколько подгрупп. 
+         В частных случаях рекомендован при повышенном содержинии эрийтроцитов.
+		 </text>
+	</string>
+    <string id="st_mm_med_helper_descr_11">
+		<text>Цифран— противомикробный препарат группы фторхинолонов. Механизм действия обусловлен ингибированием фермента ДНК-гиразы бактерий и нарушением синтеза ДНК. Цифран активен в отношении грамположительных и грамотрицательных бактерий, включая штаммы, резистентные к пенициллинам, цефалоспоринам и аминогликозидам. В частных случаях рекомендован при повышенном содержании тромбоцитов в крови.</text>
+	</string>
+    <string id="st_mm_med_helper_descr_12">
+		<text>Эритромицин- бактериостатический антибиотик из группы макролидов, обратимо связывается с 50S-субъединицей рибосом, что нарушает образование пептидных связей между молекулами аминокислот и блокирует синтез белков микроорганизмов (не влияет на синтез нуклеиновых кислот). При применении в высоких дозах в зависимости от вида возбудителя может проявлять бактерицидное действие.
+		Рекомендован при пониженном содержании эрейтроцитов.
+		</text>
+	</string>	
+	<string id="ui_gui_med_diag_op1_1">
+		<text>Каротидный:</text>
+	</string>
+	<string id="ui_gui_med_diag_op1_2">
+		<text>Лучевой:</text>
+	</string>
+	<string id="ui_gui_med_diag_op1_3">
+		<text>Верхушечный:</text>
+	</string>
+	<string id="ui_gui_med_diag_op2_1">
+		<text>Температура тела:</text>
+	</string>
+	<string id="ui_gui_med_diag_op2_2">
+		<text>Давление:</text>
+	</string>
+	<string id="ui_gui_med_diag_op3_1">
+		<text>Лейкоциты (WBC):</text>
+	</string>
+	<string id="ui_gui_med_diag_op3_2">
+		<text>Эрийтроциты (RBC):</text>
+	</string>
+	<string id="ui_gui_med_diag_op3_3">
+		<text>Тромбоциты (PLT):</text>
+	</string>
+	<string id="ui_gui_med_diag_op4_1">
+		<text>Общее состояние:</text>
+	</string>
+	<string id="ui_gui_med_diag_op4_2">
+		<text>Перелом конечностей:</text>
+	</string>
+	<string id="ui_gui_med_diag_op4_3">
+		<text>Ожег кожи:</text>
+	</string>
+    <string id="st_ui_med_about_use_item_1">
+		<text>Описание первого действия. Анализ состоянии раненного. По клику на кнопку перед вами откроется окно, в котором будет приведен полный анализ состояния раненного поопределенным параметрам. Необходимо запомнить эти показатели для того чтобы в последующим провести подбор необходимых препоратов для лечения. Подбор препоратов осуществляется выявление соответсвий для того или иного препоратадля частных случаев. Запомнив показатели анализирующего модуля можно закрыть окно.</text>
+	</string>
+	<string id="st_ui_med_about_use_item_2">
+		<text>Описание второго действия. Справочные сведения. По клику на кнопку перед вами откроется одноименное окно, в котором будут размещены справочные сведения о 12-ти используемых в приборе препоратах. Игроку понадобиться изучив эту информацию подобрать необходимый препорат для использования в третьем модуле. Слеует обращать внимание на информацию для частных случаев. К примеру Цифран рекомендован при повышенном содержании тромбоцитов в крови. Следовательно его необходимо применять тогда, когда первый модуль вывел соответсвующие показатели. </text>
+	</string>
+	<string id="st_ui_med_about_use_item_3">
+		<text>Описание третьего действия. Лечебный модуль. По клику на кнопку перед вами откроется окно, в котором необходимо будет выполнить ввод определенной косбинации препоратов для того или иного состояния раненного. Препораты вводят по данным анализа и их сопоставлению со справочными сведениями.</text>
+	</string>	
+	<string id="st_menu_vzl_1_close">
+		<text>Finish</text>
+	</string>
+	<string id="ui_gui_vzlom_zamka_caption">
+		<text>«Сканер электронного взлома»</text>
+	</string>
+	<string id="ui_gui_vzl_1_caption">
+		<text>«Сканирование и преобразование частот»</text>
+	</string>
+	<string id="ui_gui_vzl_2_caption">
+		<text>«Дешифрирование радио импульса»</text>
+	</string>
+	<string id="ui_gui_vzl_3_caption">
+		<text>«Генерация исходного кода»</text>
+	</string>
+	<string id="ui_mm_vzl_use_1">
+		<text>Распознование</text>
+	</string>
+	<string id="ui_mm_vzl_use_2">
+		<text>Дешифровка</text>
+	</string>
+	<string id="ui_mm_vzl_use_3">
+		<text>Генерация</text>
+	</string>
+	<string id="st_ui_zam_about_use_item_1">
+		<text>Описание первого действия. Распознование сигнала. По клику на кнопку перед вами откроется одноименное окно, в котором будет необходимо выполнить определенный порядок действий. Во время опереции разпознования необходимо провести сканирование частоты сигнала, его пропуск через полосовый фильтры и определение несущей частоты ВЧ импульса. Это значение передается на НЧ преобразователь для его подготовки к дешифрированию.</text>
+	</string>
+	<string id="st_ui_zam_about_use_item_2">
+		<text>Описание второго действия. Дешифрирование. По клику на кнопку перед вами откроется одноименное окно, в котором будет необходимо выполнить определенный порядок действий. Во время опереции дешифровки необходимо провести пропускание полученного НЧ сигнала через комплекс дешифраторов. Расшифрованные значение передаются в двоичном коде, после чего они передаются в генератор десятичного кода.</text>
+	</string>
+	<string id="st_ui_zam_about_use_item_3">
+		<text>Описание третьего действия. Генератор конечного двоичного кода. По клику на кнопку перед вами откроется одноименное окно, в котором будет выведен сгенерированный код и его ввод для взлома. Данное окно можно просто закрыть, завершив работу.</text>
+	</string>
+	<string id="ui_mm_vzl_use_1_text">
+		<text>ВЧС пропущен через ПФ...искомая F найдена...преобразован в НЧС</text>
+	</string>
+	<string id="ui_mm_vzl_use_2_text">
+		<text>первичная и вторичная дешифровка осуществлена</text>
+	</string>
+	<string id="ui_mm_vzl_use_3_text">
+		<text>генерация электронного кода завершена...замок взломан.</text>
+	</string>
+	<string id="ui_gui_vzlom_zamka_item_1">
+		<text>Фильтрация ВЧ сигнала:</text>
+	</string>
+	<string id="ui_gui_vzlom_zamka_item_2">
+		<text>Преобразователь в НЧ сигнал:</text>
+	</string>
+	<string id="ui_gui_vzlom_zamka_item_3">
+		<text>Дешифровка НЧ сигнала:</text>
+	</string>
+	<string id="ui_gui_vzlom_zamka_item_4">
+		<text>Вторичное преобразование:</text>
+	</string>
+	<string id="ui_gui_vzlom_zamka_item_5">
+		<text>Сгенерировать последовательность кода:</text>
+	</string>
+	<string id="ui_gui_vzlom_zamka_item_6">
+		<text>Введите полученный код:</text>
+	</string>
+	<string id="st_vzlom_zamka_1_use_1">
+		<text>Пропустить</text>
+	</string>
+	<string id="st_vzlom_zamka_3_use_1">
+		<text>Send</text>
+	</string>
+	<string id="st_vzlom_zamka_1_use_3">
+		<text>Сгенерировать</text>
+	</string>
+	<string id="st_vzlom_zamka_1_use_2">
+		<text>Взломать</text>
+	</string>
+	<string id="st_vzlom_zamka_1_close">
+		<text>Close</text>
+	</string>
+	<string id="ui_notepad_type_esc_1">
+		<text>Note from Obscurant</text>
+	</string>
+	<string id="st_pa_notepad_type_esc_1_text">
+		<text>Remember, your target is a middle-aged man. Bald and bearded. He dons regular merc armor, and he goes by the nickname “Beast.” His PDA marker should confirm his position on the map. Take position on the second floor of the grain elevator and wait for the target to appear. Make sure nobody else is with him, as this needs to be done without witnesses. After you eliminate him, return for your reward.</text>
+	</string>
+	<string id="ui_notepad_type_esc_2">
+		<text>Note from Skull</text>
+	</string>
+	<string id="st_pa_notepad_type_esc_2_text">
+		<text>Damn, just for how long are we going to be waiting for you here?Getting realtiredofyoujustwastingmytime. And the place you guys picked is real shitty—stalkers on one side and mercenaries on the other… Basically, a shithole. On top of that, I’moverhearingsomekindofshootingontheothersideoftherailroadembankment, so I’m gettingoutofhere. I’m gonna wait for you in the tunnel under the embankment at nighttime.Asfortheprice, it stays the same.</text>
+	</string>
+	<string id="ui_notepad_type_esc_3">
+		<text>Note from Knucklehead</text>
+	</string>
+	<string id="st_pa_notepad_type_esc_3_text">
+		<text>Beast, if you’re reading this, it means I’m no longer among the living… It’s very hard to write these words, but I have to ask for your forgiveness. Back when I first met you in the Cordon, I didn’t really have a high opinion on you. And when you got trapped in thespatialanomaly, my opinion of you still didn’t change. I was one of the few who wanted you out of our base because Ithoughtyouwouldonlycauseusproblems. But I realize now how wrong I was… I want to thank you for trying to save mylife. It’s too bad your efforts weren’t successful. I hope that all of you findyourwayoutofthisforsakenanomaly. Goodbye, Beast! \ nSincerely, Knucklehead.</text>
+	</string>
+	<string id="ui_gui_notepad_caption_1">
+		<text>Note fromSeriy</text>
+	</string>
+	<string id="st_pa_notepad_type_one_1_text">
+		<text>«..Испытание Господь мне послал.. Столько лет мытарился, других мытарил, воровал, убивал.. В Зону эту проклятую попал – и зачем? Снова других жизни лишать ради наживы.. Ад это. Ад на земле, при жизни.. Чтобы мучился, чтобы кровью искупление свое заработал. Прошлые грехи – не забыть, не исправить, а будущее – вот оно, здесь, среди таких же как я.. Высшая Воля ведает, что ждет меня завтра, но все в руках моих, и спасение не дается лишь за слова и мысли. Я должен делом своим и примером своим доказать, что достоин..»</text>
+	</string>
+	<string id="ui_gui_notepad_caption_2">
+		<text>Personal log</text>
+	</string>
+	<string id="st_pa_notepad_type_one_2_text">
+		<text>%c[default]I can’t remember a thing… My head hurts likehell…WhereamI? What is this place? Some sort of barn, it seems… Damn it. That dream didn’t help in the slightest… Or maybe itwasn’tadream? What kind of creature did I see back there? And that laugh… I can still hearit. Somanyquestionsandnotasingleanswer…Allright, Beast, take it easy…  First, I need to sort everything out. What happened before thenightmare? The last thing I remember was thechase. Yeah, that’s right, IcaughtVector, but he managed to slipawayfromme. But how? Is he the one behind my appearance  here? Onsecondthought, it doesn’t really matternow, does it? All right, I need to takeoutthosezombieslikeSavageaskedmeto, and after that, I can start figuringoutwhathappened.</text>
+	</string>
+	<string id="ui_gui_notepad_caption_3">
+		<text>Personal log</text>
+	</string>
+	<string id="st_pa_notepad_type_one_3_text">
+		<text>%c[default]I took care of thosedamnedzombies! Ugh, Zone, what are you doing to thesepeople?! They gave birthtoyou, and you… Well, I found a note on one of the zombies…Thecontentsdoraisesomequestions. I suppose Savage will want to seethis. I’m going back to thebarn. Or rather: back to base. I still can’t believe I’m stuck here. How the hell did Ienduphere? How did Isurvive? I need to find outmoredetails.</text>
+	</string>
+	<string id="ui_gui_notepad_caption_4">
+		<text>Personal log</text>
+	</string>
+	<string id="st_pa_notepad_type_one_4_text">
+		<text>%c[default]I’ve never seen such a creature that close before… Markus told me we need to find a way out of here, andhe’sright. I don’t want to be here when that thingreturns. What is it,anyway? A human, amutant, or maybe another oneoftheZone’sphantoms? Damn it… The more I trytofindananswer, the more questions arise. But enough chit-chatting—I have to find a way out ofhere!</text>
+	</string>
+	<string id="ui_gui_notepad_caption_5">
+		<text>Personal log</text>
+	</string>
+	<string id="st_pa_notepad_type_one_5_text">
+		<text>%c[default]Fucking hell! A damncontroller! How do I keep running into these creatures? First the zombies and now this… This must beacabinetofcuriosities, not the Zone ofAlienation. At leastthepieceofshitisdead. Now I know how those Dutyers became zombified: the controller here drove them mad. Now that the creature’s dead, our chance of getting out of here has been increased by two percent, which amounts to… threepercent. Well, it’s something.</text>
+	</string>
+	<string id="ui_gui_notepad_caption_6">
+		<text>Personal log</text>
+	</string>
+	<string id="st_pa_notepad_type_one_6_text">
+		<text>%c[default]Savage is starting to get on my nerves with his requests.Won’theeverpissoff? Do this. Find that. Kill thismutant. Beast is turning into a simpleerrandboy. What would the guys in the Syndicate say if they ever find out about this? On the other hand, things could be alotworse. After all, Savage is just trying to keepusallalive. Mylifedependsonit…</text>
+	</string>
+	<string id="ui_gui_notepad_caption_7">
+		<text>Note fromObscurant</text>
+	</string>
+	<string id="st_pa_notepad_type_one_7_text">
+		<text>%c[default]Hatchet and his squad will pay for what they’ve done. I won’t let them get away with Sledge’s death… He’s right about one thing, though: I’ve really lost it. This place has changed me. I don’t feel so cold-bloodedanymore, or perhaps that’s not the case?… Either way, Markus told me he’s got some kind of plan. I needtoaskhimaboutit.</text>
+	</string>
+	<string id="ui_gui_notepad_caption_8">
+		<text>Note fromSkull</text>
+	</string>
+	<string id="st_pa_notepad_type_one_8_text">
+		<text>%c[default]About a month has passed since the death ofSledgehammer, and things haven’t gotten better… Whether it wasacoincidenceornot, things went to hell after that night. Infected meat didn’t turn out to be the besttypeoffood, and now we have a whole epidemic in ourbase. I’ve managed to find some medicine fortheguys, but unfortunately, it’s not enough. They still need further treatment. Rightnow, all I can do is pray to God thatthevaccineswillwork.</text>
+	</string>
+	<string id="ui_gui_notepad_caption_9">
+		<text>Note fromKnucklehead</text>
+	</string>
+	<string id="st_pa_notepad_type_one_9_text">
+		<text>%c[default]Those numskulls have put me behind bars with some bandits. They think I’m some kindofthreat…Yeah. The irony—even though I’ve escaped the anomaly, I’m still trapped. I went through so much in there—lost so many  friends. The guard tells me that Markus didn’t make itoutoftheanomaly, but how? Whereishe? I should talk to Savage aboutthis. This is likely the last time I write in this notebook. I don’t want to write down my worries anymore. I don’t even know how I’ll keep living my life. Ifeeldeadinside…</text>
+	</string>
+	<string id="ui_gui_notepad_caption_10">
+		<text>Crosstie’s note</text>
+	</string>
+	<string id="st_pa_notepad_type_one_10_text">
+		<text>I managed to escape but my legstillhurts. That snork came out of nowhere and I couldn’t react in time. At the very least my leg’s not broken. I wasted my last cartridges on that mutant. Listen, Alex, if you’re reading this, know that I’m still alive. Wait for me in thebasement. I’ll be here tonight. I think we’ll find a way outofhereifwesticktogether.Justwaitforme, okay?  Sincerely, Crosstie!</text>
+	</string>
+	<string id="ui_gui_document_caption_1">
+		<text>Запись в документе</text>
+	</string>
+	<string id="ui_gui_document_caption_2">
+		<text>Запись в документе</text>
+	</string>
+	<string id="ui_gui_document_caption_3">
+		<text>Запись в документе</text>
+	</string>
+	<string id="st_pa_notepad_type_second_3_text">
+		<text>«Голодно- то как. Уже дня два, наверное, во рту не было ни крошки. Тусклый фонарь едва освещал своим тускловатым светом холодеющего огонька непроглядную мглу, уходящую вглубь бункера. Аслан, наш проводник, который уводил группу от погони, перестал поскуливать, и нам показалось, что он уже не дышал. Рука Женьки коснулась его  шеи, в тщетных попытках прощупать пульс на сонной артерии. Полминуты, минута... Она отвернулась и закрыла ладонью лицо, пытаясь взять себя в руки и не рыдать. Она отступила на пару шагов назад от бездыханного тела проводника и буквально рухнула на пол. На этот раз она уже не смогла сдержать душераздирающий крик, вырывающийся наружу. Я пытался успокоить ее, но это было бесполезно. Нервы у нее окончательно сдали. Мы не знали, сколько нам еще оставалось жить, и ждали неминуемого конца. Через пару дней она затихла. Не знаю, сколько бы она еще билась в судорогах, но сознание ее не выдержало окончательно и отключилось. Они сидела на полусогнутых коленях, медленно покачивая головой, и смотрела куда-то вдаль пустыми бездонными глазами, полными слез. Через пару часов она умерла. Я следующий. Надо же, думал что не пригодится. Патрон, вытащенный у того солдата-неудачника был сейчас очень кстати. Скоро все кончится. Снимаю автомат с предохранителя и досылаю патрон в патронник. Одно движение пальцем и мы все встретимся вновь.»</text>
+	</string>
+	<string id="ui_gui_document_caption_4">
+		<text>Запись в документе</text>
+	</string>
+	<string id="st_pa_notepad_type_second_4_text">
+		<text>«Одним днем живу. Всего одним. Каждый час, каждую минуту,  до самого последнего вздоха. Пока небосвод  усыпают звезды, пока  роса орошает траву своей игристой лучезарной свежестью. Ни один человек в этом испорченном, изуродованном желчью, болью и предрассудками мире не может быть так искренне счастлив как я. Вы все, лишь винтики в своей сатанинской системе развитого капитализма, безликие тени, существующие по установленным правилам закулисных кукловодов и тайных господ. Я вырвался из этой трясины, я сумел выбраться и теперь стал свободен. Свободен  от всего. И от самого себя. Только бы дожить до завтрашнего дня… Только бы дожить. Зона освобождает рабов внешнего мира. Она отпускает вам ваши грехи и помогает начинать новую жизнь с чистого листа. Она освобождает от долгов и обязательств, давая шанс идти лишь своим выбранным путем. Пусть коротким, пусть до первой аномалии или шальной пули, но все же своим. И умирая на последнем вздохе, вы будете вспоминать вкус нежных губ его последнего жаркого поцелуя, ее затуманенные глаза, полные соленых невыплаканных слез. Она благословляет своих детей на их последний путь. Зона знает, что лишь единицы смогут вернуться назад, для того чтобы завтра повторить забег вновь. Один вздох, один глоток воздуха и новый шаг навстречу неизвестности. Навстречу своей свободе…»</text>
+	</string>
+	<string id="ui_gui_document_caption_5">
+		<text>Запись в документе</text>
+	</string>
+	<string id="st_pa_notepad_type_second_5_text">
+		<text>«Короче, этот ваш вафел долговский ничего не смог дельного намутить.  Сколько мы его не нагибали после прокола- один хрен без толку. Толи он засланный, толи он вообще на гэбню ишачит - выяснить не удастся. Посему поэтому братва решать дело с ним надо. И решать быстро, дабы адвокат наш, сученыш засланный, не пронюхал чего без ведома. Добром парня пытались сповадить на нашу сторону, барыши предлагали- не тот он клиент. Видимо умом тронутый. Так как-то. А по вопросу, того гавнюка крылатого, то и вовсе все ясно. Мочить гниду. Сразу и быстро, пока не оперился, голубь ясный. Адвокату информацию по- поводу кордоновской темы он слил, причем слил с потрохами. А Сидор сука, уже передал куда ведомо и не ведомо.  Гэбист гребаный, кислород ему чтоб не дышался.  Готовьте акцию на конец месяца. Адвоката тоже привлеките, чтоб жизнь ему медом совсем не казалось. Тогда же и планируйте его устранение. Только без шума- тихо, чтобы не привлекать внимание левый лиц. Ему давно уже пора на покой.  Да и не переусердствуете с Сидором.  Живым его падлу чтобы оставили. Адвоката желательно на его глазах порешить, чтобы урок запомнил, и место свое помнил. Все, работайте.»</text>
+	</string>
+	<string id="ui_gui_document_caption_6">
+		<text>Запись в документе</text>
+	</string>
+	<string id="st_pa_notepad_type_second_6_text">
+		<text>«Эх, пошлять надо было. На хрена та урка, макруху на душу взяла? Кто теперь весь груз в замкадье контролировать будет? Сивый? У него мозг атрофировался еще в тот момент, когда его мамаша шлюха трахалась со своим упырем. А людей-то больше и нет. Нету людей-то. Серж - тот еще больший мудозвон. Ему палец в рот не клади, дай бы кого опустить, вставить  понты, да наложать в конечном итоге. Как эти идиоты его в паханы выдвинули - я вообще понять не могу. Ну да ладо, то их гемор, пусть сами распутывают.  То что он не тянет - не проблема, нож под ребро и в аномалию. Даже закапывать не надо. И поминай, как звали. Так, что-то я отошел от тем. Короче подгоняйте бабло, дабы подмаслить гоблином, ибо уж очень они нервные стали. Пернатые же совсем походу зажались в своей голубятне. Их вынести не проблема. Грабли в другом. Какой-то лютый пацаненок опять наведывался к центру Зоны. Мы пытались его отследить, но не пошла тема. Слишком серьезный профи отказался. Синих в Темной долине вынес всех от и до. Плюс наших немало на Свалке тогда полегло. Так что пробейте по этому типчику через официальные каналы. Работайте парни. На вас пока вся надежда.»</text>
+	</string>
+	<string id="st_pa_notepad_type_second_1_text">
+		<text>Шаг за шагом он приближался к намеченной цели. Снова и снова он едва слышно переступал через пожухшую листву, стараясь, как можно меньше обращать внимание на полусгнившие трупы то и дело попадающиеся ему на пути.  Путник шел, не переставая думать о своем нелепо погибшем спутнике, казалось бы, находился отрешенно от всего происходящего вокруг. Слепой пес, жалостно поскуливая и подгибая перебитую несколько дней назад лапу, поспешил ретироваться с дороги и юркнул в кусты. Он, хищно оскаливаясь, смотрел вслед сталкеру, при этом по-своему благодарил собачью судьбу,  что на этот раз ему повезло.  Пошел дождь. Он падал с тяжелого неба, орошая звонким стуком капель  мертвую землю.   Дорогу стало размывать, идти путнику становилось все тяжелее. Правда, развороченные тела незадачливых охотников за легкой добычей стало попадаться все меньше. Он дал все же кому-то уйти.  Что может быть, даже было сделано зря. Хотя он дал им свой шанс. Быть может, они воспользуются им и сохранят свои никчемные, никому ненужные жизни…</text>
+	</string>
+	<string id="st_pa_notepad_type_second_2_text">
+		<text>…Его знала каждая тварь в Южной зоне. Такой специфичный подчерк мог быть только у нескольких человек промышлявших этим образом. Убийство это было то ремесло, которое было здесь обыденным явление и мало кого можно было чем удивить. Все, за исключением одного... Заказы на устранение неугодных лиц сыпались от заказчиков к посредникам по несколько раз на дню и стали чем-то обыденным, как и трехразовый прием пищи в среде срочников.  За долгие годы среди сталкеров южных кланов раскинулась целая сеть наемных убийц, контролировавших ту или иную территорию и работая на них словно мусорщики. Кланы наемников становились здесь теневыми господинами, чья воля отождествляла здесь все- и закон и суд и исполнение приговора. Но отдельная каста одиночек даже среди них держалась особняком. Люди без прошлого и без будущего, живущие одним днем и ради одной минуты, такие как Макс были редки и бесценны. Они знали, что они лучшие в своем деле и все кто обращался к ним, понимали это при первой же встрече. Никто не знал откуда они появились и как давно попали в Зону, но она приняла их как родных, постоянно воспитывая и прививая им все больше смертоносных навыков. Макс был специалистом экстра класса, но его последний заказ изменил многое. Зачем и почему он встал на иной путь не знал никто, возможно даже и он сам.</text>
+	</string>
+	<string id="st_pa_notepad_type_second_551_text">
+		<text>Код доступа будет обозначем следующим образом:\nиьцж ыеь ршкъъь еь пеь дьодчсаке пкцьдкфа фаъе\nНеобходимо изучить и применить метод шифрования с помощью двоичного кода. Сам вид шифра и ключ к нему знают лишь некоторые члены группировки.</text>
+	</string>
+	<string id="st_pa_notepad_type_second_552_text">
+		<text>Ключ к шифру следующий: \n Шифрование с использование двоичного кода: \n
+Каждая буква русского алфавита шифруется двоичным кодом, например буква А = 00000, Б=00001, В=00010, Г=00011..., Я=11111. \n
+Пример: Слово ШИФР. В двоичном коде выглядит так: \n
+11000 01000 10100 10000  \n
+Теперь проводим сдвиг ВЛЕВО на 1 шаг, получим код: \n
+10000 10001 01001 00001 \n
+Теперь переводим обратно в буквы, получим текст: \n  
+РСЙБ \n
+Для обратной расшифровки вам понадобиться осущиствить сдвиг ВПРАВО, чтобы получить двоичный код исходной комбинации. \n
+</text>
+	</string>
+	<string id="st_pa_notepad_type_one_121_text">
+		<text>Короче походу я понял че тут да как. Метод шифрования следующий: \n Шифрование с использование шифра Цезаря: \n
+Каждая буква русского алфавита шифруется своим аналагом, полученным путем сдвига всего алфавита на заданный шаг. \n
+Основной алфавит следующий: АБВГЕЕДЖЗИЙКЛМНОПРСТУФХЦЧШЩЪЫЬЭЮЯ \n
+Алфавит соответсвий с шагом 7: ЖЗИЙКЛМНОПРСТУФХЦЧШЩЪЫЬЭЮЯАБВГЕЕД \n
+То есть вместо буквы А в зашифрованном тексте будет буква Ж, вместо буквы Г буква Й и т.д.: \n
+Для обратной расшифровки вам понадобиться осуществить поиск обратного соответстивия, чтобы получить расшифрованный текст исходной комбинации слов. \n
+Полученный текст может сосотять из слов переставленнх местами. Дальше надо расставить их по порядку и осознав смысл фразы найти четырехзначное численное соответсвие. Этот четырехзначный код и есть нужная нам комбинация для открытия замка тайника. \n
+Зашифрованный текст следующий: ШЩЛФВ СЧЛЦХШЩФХР ФЖЯ ИЛТПСПР СХЙКЖ ЦЖТ Ъ ЖКУПЧЖТ \n
+</text>
+	</string>
+	<string id="st_pa_notepad_type_one_131_text">
+		<text>Короче походу теперь тут понятно че тут да как. Метод шифрования следующий: \n Шифрование с использование шифра Цезаря: \n
+Каждая буква русского алфавита шифруется своим аналагом, полученным путем сдвига всего алфавита на заданный шаг. \n
+Основной алфавит следующий: АБВГЕЕДЖЗИЙКЛМНОПРСТУФХЦЧШЩЪЫЬЭЮЯ \n
+Алфавит соответсвий с шагом 7: ЖЗИЙКЛМНОПРСТУФХЦЧШЩЪЫЬЭЮЯАБВГЕЕД \n
+То есть вместо буквы А в зашифрованном тексте будет буква Ж, вместо буквы Г буква Й и т.д.: \n
+Для обратной расшифровки вам понадобиться осуществить поиск обратного соответстивия, чтобы получить расшифрованный текст исходной комбинации слов. \n
+Полученный текст может сосотять из слов переставленнх местами. Дальше надо расставить их по порядку и осознав смысл фразы найти четырехзначное численное соответсвие. Этот четырехзначный код и есть нужная нам комбинация для вскрытия тайника.\n
+Зашифрованный текст следующий: ФЛЗЛШФХЛ ЭЖЧШЩИХ ЦХК ХЩКЖФХ ЗВТХ ЬЖЩЩПФХУ ШЖТТЖЬЪ \n
+</text>
+	</string>
+	<string id="st_pa_notepad_type_one_1_text">
+		<text>%c[default]Вот же блин! Понесла меня нелегкая в Припять. Лучше бы сидел себе в Баре, да и горя не знал. Командир послал нас аномалию какую-то проверить, возле старого КБО. Что-то типа пространственной аномалии. Если бы я тогда знал, что на нас ждет, не пошел бы туда никогда... Поначалу все спокойно вроде было, а потом, когда мутанты со всех щелей на нас повалили, мы со страху в эту аномалию и сиганули. Очнулись уже здесь, в этом месте. Куда бы ни шли, всегда возвращаемся обратно, к этому сараю. Сколько это будет продолжаться?.. Думаю это конец, живыми отсюда точно не выбраться. Патроны на исходе, долго мы без них не протянем.\n 
+</text>
+	</string>
+	<string id="st_pa_notepad_type_yad_text">
+		<text>%c[0,1,0,0]• %c[default]Для синтезирования яда необходимо осуществить химическую реакцию с использованием трех ключевых компонентов. Перед тем как начать синтез, необходимо вычислить концентрацию исходных компонентов.
+Одна из двух реакций на выбор, протекающая под действием катализатора, имеет следующие коэффициенты входных и выходных веществ.
+X*(реа-нт1)2+Y*(реа-нт2)2+Z*(реа-нт3)2=2*(реа-нт1)(реа-нт2)3(реа-нт3)+8*(реа-нт3)+2*(реа-нт1)
+X*(реа-нт1)3+Y*(реа-нт2)2+Z*(реа-нт3)2=2*(реа-нт1)(реа-нт2)5+6*(реа-нт3)+2*(реа-нт1)2
+Концентрация одной единицы вещества на входе равна 10.
+Вычислите коэффициенты в уравнении и умножьте их на число 10, чтобы определить входные концентрации компонентов.  
+Возможные варианты значений X,Y,Z помноженные на 10.\n 
+30 50 20\n 
+20 50 30\n
+50 30 20\n 
+20 30 50\n 
+30 20 50\n 
+50 20 30\n </text>
+	</string>
+	<string id="st_menu_stop">
+		<text>Стоп</text>
+	</string>	
+	<string id="ui_mm_rac_s_text">
+		<text>Выберите канал:</text>
+	</string>
+	<string id="ui_mm_rac_use_1">
+		<text>Канал 1.</text>
+	</string>
+	<string id="ui_mm_rac_use_2">
+		<text>Канал 2.</text>
+	</string>
+	<string id="ui_mm_rac_use_3">
+		<text>Канал 3.</text>
+	</string>
+	<string id="ui_mm_rac_use_4">
+		<text>Канал 4.</text>
+	</string>
+	<string id="ui_mm_rac_use_5">
+		<text>Канал 5.</text>
+	</string>
+	<string id="ui_mm_racnpc_1_text">
+		<text>Радиочастота:</text>
+	</string>
+	<string id="ui_mm_rac_1_text">
+		<text>Диапазон радиочастот, номер и тип каналов:</text>
+	</string>
+	<string id="ui_mm_rac_npcs_text">
+		<text>48.975 MHz</text>
+	</string>
+	<string id="ui_mm_rac_s1_text">
+		<text>1-ый канал; частота 48.975 MHz; закрытая миротворческих сил.</text>
+	</string>
+	<string id="ui_mm_rac_s2_text">
+		<text>2-ой канал; частота 49.025 MHz; закрытая группировки «Долг».</text>
+	</string>
+	<string id="ui_mm_rac_s3_text">
+		<text>3-ий канал; частота 51.250 MHz; закрытая группировки «Свобода».</text>
+	</string>
+	<string id="ui_mm_rac_s4_text">
+		<text>4-ый канал; частота 51.925 MHz; закрытая группировки «Наемники».</text>
+	</string>
+	<string id="ui_mm_rac_s5_text">
+		<text>5-ый канал; частота 53.250 MHz; закрытая группировки «Монолит».</text>
+	</string>
+    <string id="ui_mm_rac_sq1_text">
+		<text>1-ый канал; частота 58.375 MHz.</text>
+	</string>
+	<string id="ui_mm_rac_sq2_text">
+		<text>2-ой канал; частота 45.125 MHz.</text>
+	</string>
+	<string id="ui_mm_rac_sq3_text">
+		<text>3-ий канал; частота 50.175 MHz.</text>
+	</string>
+	<string id="ui_mm_rac_sq4_text">
+		<text>4-ый канал; частота 53.450 MHz.</text>
+	</string>
+	<string id="ui_mm_rac_sq5_text">
+		<text>5-ый канал; частота 49.250 MHz.</text>
+	</string>
+	<string id="st_razia_1_hint">
+		<text>По клику на кнопку сеанс связи прервется.</text>
+	</string>
+    <string id="st_ui_rac_about_use_item_all">
+		<text>По клику на кнопку вы настроите радиостанцию на прием сигнала с частоты первого открытого канала. Переключение на закрытый канал без специальной прошивки невозможно.</text>
+	</string>	
+	<string id="st_ui_rac_about_use_item_1">
+		<text>Описание первого действия. По клику на кнопку вы настроите радиостанцию на прием сигнала с частоты первого закрытого канала миротворческих сил. Чтобы прекратить прием, необходимо нажать кнопку «Стоп». Во время работы переключение на другой канал невозможно.</text>
+	</string>
+	<string id="st_ui_rac_about_use_item_2">
+		<text>Описание второго действия. По клику на кнопку вы настроите радиостанцию на прием сигнала с частоты первого закрытого канала группировки «Долг». Чтобы прекратить прием, необходимо нажать кнопку «Стоп». Во время работы переключение на другой канал невозможно.</text>
+	</string>
+	<string id="st_ui_rac_about_use_item_3">
+		<text>Описание третьего действия. По клику на кнопку вы настроите радиостанцию на прием сигнала с частоты первого закрытого канала группировки «Свобода». Чтобы прекратить прием, необходимо нажать кнопку «Стоп». Во время работы переключение на другой канал невозможно.</text>
+	</string>
+	<string id="st_ui_rac_about_use_item_4">
+		<text>Описание четвертого действия. По клику на кнопку вы настроите радиостанцию на прием сигнала с частоты первого закрытого канала группировки «Наемники». Чтобы прекратить прием, необходимо нажать кнопку «Стоп». Во время работы переключение на другой канал невозможно.</text>
+	</string>
+	<string id="st_ui_rac_about_use_item_5">
+		<text>Описание пятого действия. По клику на кнопку вы настроите радиостанцию на прием сигнала с частоты первого закрытого канала группировки «Монолит». Чтобы прекратить прием, необходимо нажать кнопку «Стоп». Во время работы переключение на другой канал невозможно.</text>
+	</string>
+	<string id="ui_gui_dairy_2_caption">
+		<text>Записи Харадрима</text>
+	</string>
+	<string id="ui_mm_dairy_s_text">
+		<text>Содержание дневника:</text>
+	</string>
+	<string id="ui_mm_dairy_helper_text_1">
+		<text>Путешествие</text>
+	</string>
+	<string id="ui_mm_dairy_helper_text_2">
+		<text>Вознесение</text>
+	</string>
+	<string id="ui_mm_dairy_helper_text_3">
+		<text>Мулла</text>
+	</string>
+	<string id="ui_mm_dairy_helper_text_4">
+		<text>Ибрахим</text>
+	</string>	
+	<string id="ui_mm_dairy_helper_text_5">
+		<text>Владыка</text>
+	</string> 
+
+    <string id="ui_mm_dairy_helper1_text_1">
+		<text>Глава 1</text>
+	</string>
+	<string id="ui_mm_dairy_helper1_text_2">
+		<text>Глава 2</text>
+	</string>
+	<string id="ui_mm_dairy_helper1_text_3">
+		<text>Глава 3</text>
+	</string>
+	<string id="ui_mm_dairy_helper1_text_4">
+		<text>Глава 4</text>
+	</string>	
+	<string id="ui_mm_dairy_helper1_text_5">
+		<text>Глава 5</text>
+	</string>
+	
+	<string id="st_mm_dairy_helper_descr_1">
+		<text>Однажды, когда Мухаммад спал около Аль-каабы, Его разбудил Джибриль. Ангел привёл с собой необыкновенное животное по имени Бурак и сказал, что оно возило на себе всех Пророков, а теперь повезёт Мухаммада. Мухаммад сел верхом на Бурака, и тот по воздуху перенёс Его в Иерусалим. Там Он встретил Ибрахима (Авраама), Мусу (Моисея), Ису (Иисуса) и других Пророков. 
+Они все вместе молились, и руководил молитвой Мухаммад, потом ему предложили выпить из трёх сосудов: с водой, вином и молоком. Мухаммад выбрал сосуд с молоком, и это означало, что Его община пойдёт верным путём. А вино для мусульман с тех пор стало запретным.
+После этого к нему спустилась лестница, по которой Он вместе с Джибрилем вознёсся на семь небес. На нижнем небе Он увидел, как Адам решает судьбы душ  умерших. Ангелы показали Мухаммаду ад, и Он почувствовал жар огня и увидел страшные муки грешников. Поднимаясь с неба на небо, Он встречал Пророков: на втором – Ису, на третьем – Иусуфа, на четвёртом – Идриса, на пятом – Харуна, на шестом – Мусу, на седьмом – Ибрахима.... 
+		</text>
+	</string>    
+    <string id="st_mm_dairy_helper_descr_2">
+		<text>...Потом Мухаммад побывал в раю, где увидел блаженство верующих. Затем с ним  говорил Аллах и обязал мусульман молиться 50 раз в день. Когда Мухаммад возвращался вниз, Муса уговорил Его вернуться к Аллаху и попросить сократить число молитв. Так повторялось несколько раз, пока число молитв для мусульман не сократилось до 5 раз в день.
+Когда Мухаммад рассказал о своём путешествии, ему не поверили. Люди говорили: «Караван идёт туда целый месяц, как можно слетать туда за одну ночь?». Даже верный из его друзей Абу Бакр усомнился. 
+Тогда  Мухаммад описал ему  Иерусалим, который видел сверху, и в котором никогда прежде не был. Эти описания совпали с воспоминаниями Абу Бакра об этом городе, и правдивость слов Мухаммада была подтверждена. Ещё Мухаммад рассказал о караване, который он тоже видел сверху. 
+Караван через некоторое время прибыл в Мекку, и рассказ Его подтвердился.
+		</text>
+	</string>
+    <string id="st_mm_dairy_helper_descr_3">
+		<text>Однажды мулла пришел в зал, чтобы обратиться к верующим. Зал был пуст, если не считать молодого конюха, что сидел в первом ряду. Мулла подумал про себя: «Должен я говорить или нет?» И он решился спросить у конюха:
+- Кроме тебя здесь никого нет, как ты думаешь, должен я говорить или нет? Конюх ответил:
+- Господин, я простой человек, я ничего в этом не понимаю. Но когда я прихожу в конюшню и вижу, что все лошади разбежались, а осталась только одна, я все равно дам ей поесть.
+Мулла, приняв близко к сердцу эти слова, начал свою проповедь. Он говорил больше двух часов, и, закончив, почувствовал на душе облегчение. Ему захотелось услышать подтверждение, насколько хороша была его речь. Он спросил:
+- Как тебе понравилась моя проповедь? - Я уже сказал, что я простой человек и не очень понимаю все это. Но если я прихожу в конюшню и вижу, что все лошади разбежались, а осталась только одна, я все равно ее накормлю. Но я не отдам ей весь корм, который предназначен для всех лошадей.
+		</text>
+	</string>
+	<string id="st_mm_dairy_helper_descr_4">
+		<text>Ибрахим разочаровался в идолах и стал искать себе иных богов: «И когда покрыла его ночь, он увидел звезду и сказал: «Это – Господь мой!» Когда же она закатилась, он сказал: «Не люблю я закатывающихся».
+Когда он увидел месяц восходящим, он сказал: «Это – Господь мой!» Когда же тот зашёл, он сказал: «Если господь мой не выведет меня на прямой путь, я буду из людей заблудившихся».
+Когда же он увидел солнце восходящим, то сказал: «Это – Господь мой, он – больший!» 
+Когда же оно зашло, он сказал: «О народ мой! Я не причастен к тому, что вы придаёте Ему в сотоварищи. 
+Теперь я обратил лицо своё к тому, кто сотворил небеса и землю, поклоняясь Ему чисто, и я – не из многобожников». (Коран,6:76-79)
+	    </text>
+	</string>
+    <string id="st_mm_dairy_helper_descr_5">
+		<text>
+		Один восточный владыка захотел узнать всю историю человечества. Мудрец принес ему пятьсот томов. Занятый государственными делами, царь отослал его, повелев изложить все это в более краткой форме.
+Через двадцать лет мудрец вернулся: история человечества занимала теперь всего пятьдесят томов, но царь уже был слишком стар, чтоб одолеть столько толстых книг, и снова отослал мудреца.
+Прошло еще двадцать лет, и постаревший, убеленный сединами мудрец принес владыке один-единственный том, содержавший всю премудрость мира, которую тот жаждал познать. Но царь лежал на смертном одре, и у него не осталось времени, чтобы прочесть даже одну эту книгу.
+Тогда мудрец изложил ему историю человечества в одной строку, и она гласила: «Человек рождается, страдает и умирает».
+        </text>
+	</string>
+	<string id="ui_gui_dairy_caption">
+		<text>Записи в дневнике</text>
+	</string>
+	<string id="st_mm_dairy_helper1_descr_1">
+		<text>18.04.11. Показатели прототипа после сравнения с результатами анализом свидетельствуют о невозможности его применения.</text>
+	</string>
+	<string id="st_mm_dairy_helper1_descr_2">
+		<text>19.04.11. Пробный запуск на 75% от максимальной мощности подтвердил предыдущее предположение. Последствия эксперимента над видоизмененными человеческими зародышами дали свои плодотворные результаты. Выведенные образцы мутантов обладали поистине уникальными свойствами. Объект получил врожденную устойчивость к пси-воздействию и радиации любой интенсивности. Измененная генная структура позволила существам создавать вокруг себя специфичную ауру полу-электрической и термальной природы. Дальнейшие исследования в данной области будут осуществляться по трем другим направлениям. Все данные должны быть засекречены. </text>
+	</string>
+	<string id="st_mm_dairy_helper1_descr_3">
+		<text>20.04.11. Встал вопрос о целесообразности применения установки для пробного испытания локальной аномалии класса ЧА в рамках ограниченной зоны радиусом 25 метров в районе статической насосной станции на южных болотах. Проведение эксперимента назначить на 24.04.11 с исходными данными, указанными в приложении следующей записи.</text>
+	</string>
+	<string id="st_mm_dairy_helper1_descr_4">
+		<text>22.04.11. Создание локального очага возникновения аномалии ЧА провести согласно предварительной договоренности с объектом. Для эксперимента использовать следующие входные параметры: A= 15, k1=5, k2= 10, k3=0, T0= 250 </text>
+	</string>
+	<string id="st_mm_dairy_helper1_descr_5">
+		<text>25.04.11. Создание очаговой зоны прошло успешно. Появившаяся аномалия была активирована в назначенный срок в штатном режиме. Проведение замеров в районе воздействие выявило положительную тенденцию по параметрам расположения и статичности объекта. Эксперимент следует считать успешным. Указанные выше входные параметры прототипа рекомендуется использовать как эталон для последующих опытов в данной области. </text>
+	</string>	
+	<string id="st_mm_dairy_helper2_descr_1">
+		<text>13.48 05.06.11.Проведение плановых работ по замене аккумуляторных батарей пошло не по плану. Примерно через 25 минут после начала процедуры охлаждения, система дала сбой. Принудительное  обесточивание не принесло результатов. Началась обратная реакция. Обесточивание всего комплекса - лишь вопрос времени.</text>
+	</string>
+	<string id="st_mm_dairy_helper2_descr_2">
+		<text>14.35 05.06.11. Остановка основного электрогенератора. Мгновенный выход из строя запасной системы электроснабжения ввиду сильного скачка напряжения. Дестабилизация системы охранного ограждения как следствие. Незамедлительная эвакуация всего персонала.</text>
+	</string>
+	<string id="st_mm_dairy_helper2_descr_3">
+		<text>15.03 05.06.11. Произошел взрыв хранилища реагентов, вследствие разгерметизации отходников. Ситуация вышла из под контроля полностью. Реагенты распространяются без работающей вытяжки системы вентиляции медленнее, но стандартная система вентилирования справиться не в состоянии. Если не эвакуировать персонал в течение получаса, то эта лаборатория станет склепом. Трое охранников уже погибли, пытаясь сдержать поток тварей, попытавшихся проникнуть в комплекс. Остальные долго не продержатся.</text>
+	</string>
+	<string id="st_mm_dairy_helper2_descr_4">
+		<text> 15.25 05.06.11. Несколько кровососов прорвались через линию охраны. Оставшиеся бойцы попытались отступить через запасной люк, но их это не спасло. Задавили массой. Мы срочно баррикадируемся в помещении 18.48. Выходные отверстия вентиляции перекрыты, но это еще двадцать минут от силы. Дыхательных масок хватит еще на два часа…</text>
+	</string>
+	<string id="st_mm_dairy_helper2_descr_5">
+		<text>17.12 05.06.11. Воздуха в баллонах осталось на полчаса. Двое наших не выдержали и попытались пробиться. Мутанты разорвали их в клочья.  Мы не знаем, сколько еще продержимся. Даже вшестером пробиться нет шансов. Ждать помощь неоткуда - об аварии и гибели узнают не раньше чем через сутки, о нашей гибели чуть позже. Нам не спастись… Перед запуском системы, я заметил, что профессор Каменский поднялся на поверхность. Вероятно, авария была спланирована. Диверсия.. Отомстите за нас...</text>
+	</string>
+	<string id="st_mm_dairy_helper3_descr_1">
+		<text>03.03.11. От главного были получены сообщения с приказом подготовить аппаратную для разгрузки. Доставить все необходимые материалы в срок в комплекс Долины для нас является первостепенной задачей. Основная установка должна пройти испытания в штатном режиме. После этого возможно полное сворачивание объекта на Болоте.</text>
+	</string>
+	<string id="st_mm_dairy_helper3_descr_2">
+		<text>04.03.11. Профессор Митрофанов и его научная группа в полном составе была отправлена на новое место работы. Подготовка к первым испытаниям объекта Долина должна начаться в течение недели.</text>
+	</string>
+	<string id="st_mm_dairy_helper3_descr_3">
+		<text>07.03.11. Отчет о проведенных подготовительных работах должен быть передан руководству проекта в течение следующих трех суток. Обеспечьте точное соблюдение регламента и всех необходимых правил при подготовке ввода в эксплуатацию.</text>
+	</string>
+	<string id="st_mm_dairy_helper3_descr_4">
+		<text>09.03.11. Лидерами проекта поставлена первостепенная задача ввода в эксплуатацию проекта Долина в кратчайшие сроки. Кроме того, было принято решение продолжить работы по дополнительным профилям на объекте Болота, в частности по задачам проекта ЧА.</text>
+	</string>
+	<string id="st_mm_dairy_helper3_descr_5">
+		<text>12.03.11. Объект Долина введен в эксплуатацию. Переходим к распределению мощностей согласно регламенту.</text>
+	</string>
+	<string id="st_mm_dairy_helper4_descr_1">
+		<text>02.08.11. Что за мерзость этот коллектор. Едва не вляпались не пойми во что. Гадство. Сплошные аномалии кругом. И кто только догадался размещать здесь какие-то установки? Хотя, в принципе-то прикрытие годное. Только бы эта была именно та установка.</text>
+	</string>
+	<string id="st_mm_dairy_helper4_descr_2">
+		<text>04.08.11. Подходы к закрытым помещениям лабораторного комплекса все же удалось отыскать на следующие сутки. Погибло двое проводников. Один влетел в студень, второго огрел по голове чем-то тяжелым невесть откуда появившийся бюрер.</text>
+	</string>
+	<string id="st_mm_dairy_helper4_descr_3">
+		<text>05.08.11. После долгих четырех часов работы нашему электронщику удалось взломать кодовый замок к законсервированному объекту. Освещение отсутствует напрочь. Видать, и запасной генератор накрылся при аварии. Не знаю почему, но что-то мешает идти вперед. Страха нет, но тревожно как-то.</text>
+	</string>
+	<string id="st_mm_dairy_helper4_descr_4">
+		<text>06.08.11. Пройти к самым нижним уровням не представляется возможным. Проход перекрыт аномалией неизвестной природы. Того, что здесь насмотрелись, хватит на многие годы вперед. Персонал объекта уничтожен. Отдельная группа из четырех человек оказалась найдена запертой изнутри в одном из "стерилизаторов". Погибли от удушья. Что здесь могло произойти - до сих не понятно. Такое ощущение, что кто-то вырубил систему охраны и жизнеобеспечения, и законсервировал объект.</text>
+	</string>
+	<string id="st_mm_dairy_helper4_descr_5">
+		<text>07.08.11. Электронный чип главного модуля оказался на месте. Пытаемся покинуть объект через верхнюю ветку коллектора. Зверье подтягивается во все большем количестве. Если мы уцелеем - это будет чудом. Только бы дойти до запасного тоннеля.</text>
+	</string>
+	<string id="st_mm_dairy_helper5_descr_1">
+		<text>Проект О-Сознание снова набирает силы. На этот раз Кречет и Северин врят ли перед чем-нибудь остановятся. Заварушка, которую они начали с использование сектантских группировок, может иметь очень далеко идущие последствия. Помимо фанатиков Монолита в операциях О-Сознания можно выделить группировку Грех. Как стало известно, бывшая группа полоумных сталкеров-канибалов практически полностью была уничтожена пару месяцев назад. Лидера ликвидировал некто Призрак, сталкер-одиночка, а объединившиеся кланы Долга, Свободы и нескольких сталкерских групп поменьше добили остальных грешников. Как оказалось, это было не единственное "гнездо". Уцелевшие члены группировки позже были найдены и завербованы в новый проект.</text>
+	</string>
+	<string id="st_mm_dairy_helper5_descr_2">
+		<text>Обновленный "Грех" дополнили остатками уничтоженного бандитского клана "Черные слизни". Возникли незадолго до кульминации операции. Положили один долговский квад и тут же исчезли.</text>
+	</string>
+	<string id="st_mm_dairy_helper5_descr_3">
+		<text>Разведывательный отряд группировки Грех был замечен восточной бригадой наемников вблизи Лиманска. При появлении в прямом  поле видимости вступили в боестолкновение.  Один сектант был убит. Двое наемников получили ранение. Стычка длилась минут пять-семь, после и те и другие растворились. Оказавшиеся на месте схватки свободовцы обнаружили тело.</text>
+	</string>
+	<string id="st_mm_dairy_helper5_descr_4">
+		<text>Как стало известно, грешников готовят по программе, схожей с программной Монолита. Однако их психологическая обработка проводилась на более высоком уровне. Видимо, О-сознание использовали новые программы-кодоны, программирование грешников не делало из них бездушных солдат - они беспрекословно подчиняются приказам, но вместе с тем обладают присущеми тренированным бойцам навыками тактических и стратегических навыков ведения боя. Помимо этого стало известно о подготовке опытных диверсантов, которых предполагается внедрять во вражеские группировки.</text>
+	</string>
+	<string id="st_mm_dairy_helper5_descr_5">
+		<text>Именно слаженная работа диверсионных групп грешников спровоцировала новый виток войны группировок. Стравливание центральных и южных кланов - дело рук грешников и О-Сознания.</text>
+	</string>
+	<string id="ui_gui_notepad_caption_s">
+		<text>Секретный документ</text>
+	</string>
+	<string id="st_pa_notepad_type_one_9_text_1">
+		<text>Коллеги, напоминаю вам, что коды доступа на закрытый объект Болота в скором времени будут изменены. Необходимо будет пройти повторную операцию по смене сертификатов безопасности. В связи с этим необходимо осуществить сброс дефолтных ключей в системе ПроКрипто. Осуществить перегенерацию внутрисистемного пароля, по существующему рабочему ключу сформировать запрос на получение нового сертификата безопасности и сформировать новый технологический ключ доступа. Осуществить эту операцию необходимо как можно скорее, дабы избежать вероятной утечки информации. Кроме этого, будет осуществлено обновление основных шифров в системе передачи информации. Курирование по вопросам безопасности будет осуществляться на основной базе под руководством Суслова. Попытайтесь доставить все необходимые сведения через наземных курьеров, и как можно скорее. Кроме тропников, возможно передача сведений и через коммуникацию объекта “Болота”.</text>
+	</string>
+	<string id="st_pa_notepad_type_one_9_text_2">
+		<text>Передача наиболее значимых данных по вопросам проектов Чистого Неба осуществляется в зашифрованной форме. Использовано шифрование минимальной степени сложности. Первый шифр – алфавитный Цезаря, со смещением строки алфавита на 5 (10) букв назад, не применялся. Досточно осуществить прочтение текста перевертыша.</text>
+	</string>
+	<string id="st_pa_notepad_type_one_9_text_3">
+		<text>.атолоб аткеъбо и ызаб то адохто итуп огоньлетинлопод и апутсод огомярп яинечулоп ьтсонжомзов оличепсебо ароткеллок еенар огешвавовтсещус йицакинуммок хынмездоп еинавозьлопсИ .атолоб ткеъбо ястёатсо иицаколсид нойар в метуп мынневтсниде вопутсод хынтсевзи еенар хесв яинавориколбаз елсоп, анмонотва юьтсонлоп иксечиткарп азаб ашан отч, лазакоп йетуп хындохбо ксиоП</text>
+	</string>
+	<string id="st_pa_notepad_type_one_9_text_4">
+		<text>.иицакол ан кеортсоп хиксечинхет енойар в моннежолопсар ,ероткеллок монмездоп в ясьтидохан аквонатсу яаксечинхет и аткеъбо мяинещемоп к путсоД .аморпорга йицакинуммок хынмездоп еинежлодорп еоксечигол йобос хищюялвя ,йиротаробал скелпмок йыннечеркесаз йобос теялватсдерп - атолоб ткеъбО .еткеъбо мотырказ ан ьтачан омидохбоен иквонатсу уквотогдоП .йечадаз йонтетироирп ьтатс онжлод мокинвиторп с ебьроб в ярызок огешан еинадзоС</text>
+	</string>
+	<string id="st_pa_notepad_type_one_9_text_5">
+		<text>код тайника 7654 .яинанзос-о мяицизоп оп араду огонвитневерп огонжомзов и яинавижредс аткаф яинелвтсещусо ялд юуннечанзандерп ,улис юуньлетишурзар юунщом ебес в аливя и юледен итчоп алавовтсещусорп уноз яаньламона яивтсйедзов огоньлаицепс ищомоп ирп яаннадзоС .коняотс хикцеволобыр хынревес то укеладопен онваден месвос анатыпси алыб етнаирав монборп меовс в - легна йынреч яиламонА</text>
+	</string>
+	
+	<string id="ui_mar_perk_s1_text_1">
+		<text>1. Селекция</text>
+	</string>
+	<string id="st_perk_1_transcription">
+		<text>Селекция - необязательный навык, но он может пригодится главному героя для проведения артмодифицирования из имеющихся артефактов. Возможно поэтапное его изучение у местного селекционера. Усовершенствовать можно одно из известных свойств артефакта. Для изучения нывыка необходимо достать для селекционера информацию для тонкой настройки специально оборудования, для каждого артефакта отдельно.</text>
+	</string>
+	<string id="ui_mar_perk_s1_text_2">
+		<text>2. Ремонт брони</text>
+	</string>
+	<string id="st_perk_2_transcription">
+		<text>Ремонт брони - необязательный навык, однако он может пригодится для более качественной починки своего снаряжения при помощи специализированного ремкомплекта.</text>
+	</string>
+	<string id="ui_mar_perk_s1_text_3">
+		<text>3. Ремонт оружия</text>
+	</string>
+	<string id="st_perk_3_transcription">
+		<text>Ремонт брони - необязательный навык, предназначен для более качественной починки своего оружия при помощи специализированного ремкомплекта.</text>
+	</string>
+	<string id="ui_mar_perk_s1_text_4">
+		<text>4. Механика</text>
+	</string>
+	<string id="st_perk_4_transcription">
+		<text>Обязательный к изучению навык, который позволит главному герою научиться более грамотно работать с широким спектром устройств. Необходим для успешного выполнения поставленной перед Рэдом задачи.</text>
+	</string>
+	<string id="ui_mar_perk_s1_text_5">
+		<text>5. Химия</text>
+	</string>
+	<string id="st_perk_5_transcription">
+		<text>Обязательный к изучению навык, который позволит главному герою научиться более грамотно работать с широким спектром компонентов. Необходим для успешного выполнения поставленной перед Рэдом задачи.</text>
+	</string>
+	<string id="ui_mar_perk_s1_text_6">
+		<text>6. Основы охоты</text>
+	</string>
+	<string id="st_perk_6_transcription">
+		<text>Навык, который пригодится главному герою в случае его занятий охотой на мутантов - для извлечения ценных трофеев из туш.</text>
+	</string>
+	<string id="ui_mar_perk_s1_text_7">
+		<text>7. Охотник на мутантов</text>
+	</string>
+	<string id="st_perk_7_transcription">
+		<text>Навык, который пригодится главному герою в случае его занятий охотой на мутантов - для извлечения ценных трофеев из туш.(Для изучения необходим навык "Основы охоты")</text>
+	</string>
+	<string id="ui_mar_perk_s1_text_8">
+		<text>8. Аномалии</text>
+	</string>
+	<string id="st_perk_8_transcription">
+		<text>Навык, необходимый для создания полноценного детектора аномалий.</text>
+	</string>
+	<string id="ui_mar_perk_s1_text_9">
+		<text>9. Собирательство</text>
+	</string>
+	<string id="st_perk_9_transcription">
+		<text>Навык, необходимый для создания полноценного детектора артефактов.</text>
+	</string>
+	<string id="ui_mar_perk_s1_text_10">
+		<text>10. Биолокация</text>
+	</string>
+	<string id="st_perk_10_transcription">
+		<text>Навык, необходимый для создания полноценного детектора жизненных форм.</text>
+	</string>	
+	<string id="ui_mar_perk_s1_text_11">
+		<text>11. Медицина</text>
+	</string>
+	<string id="st_perk_11_transcription">
+		<text>Навык, необходимый для оказания медицинской помощи разной степени сложности.</text>
+	</string>
+	<string id="ui_mar_perk_s1_text_12">
+		<text>12. Общие навыки</text>
+	</string>
+	<string id="st_perk_12_transcription">
+		<text>Навыки, необходимые для выживания в условиях ЧАЗО.</text>
+	</string>
+	<string id="ui_mar_perk_s1_text_13">
+		<text>13. Воровство</text>
+	</string>
+	<string id="st_perk_13_transcription">
+		<text>Навык, необходимый для защиты от карманных воров, а также для осуществления собственных краж.</text>
+	</string>
+	<string id="ui_mar_perk_s1_text_14">
+		<text>14. РЭБ</text>
+	</string>
+	<string id="st_perk_14_transcription">
+		<text>Навык радиолокационной борьбы, необходимый для осуществления различных операций по данной специальности.</text>
+	</string>
+	
+	<string id="st_ui_dnevnik_podzemka_1">
+		<text>Дневники Чернобыля</text>
+	</string>
+	<string id="st_ui_dnevnik_podzemka_1_descr">
+		<text>Различные записи, которые были найдены в лабораторном комплексе. Содержат в себе довольно интересные и важные сведения, которые многих могут заинтересовать, а потому имеют немалую ценность.</text>
+	</string>
+	<string id="st_ui_dnevnik_podzemka_2">
+		<text>Дневники Чернобыля</text>
+	</string>
+	<string id="st_ui_dnevnik_podzemka_2_descr">
+		<text>Различные записи, которые были найдены в лабораторном комплексе. Содержат в себе довольно интересные и важные сведения, которые многих могут заинтересовать, а потому имеют немалую ценность.</text>
+	</string>
+	<string id="st_ui_dnevnik_podzemka_3">
+		<text>Дневники Чернобыля</text>
+	</string>
+	<string id="st_ui_dnevnik_podzemka_3_descr">
+		<text>Различные записи, которые были найдены в лабораторном комплексе. Содержат в себе довольно интересные и важные сведения, которые многих могут заинтересовать, а потому имеют немалую ценность.</text>
+	</string>
+	<string id="st_ui_dnevnik_podzemka_4">
+		<text>Дневники Чернобыля</text>
+	</string>
+	<string id="st_ui_dnevnik_podzemka_4_descr">
+		<text>Различные записи, которые были найдены в лабораторном комплексе. Содержат в себе довольно интересные и важные сведения, которые многих могут заинтересовать, а потому имеют немалую ценность.</text>
+	</string>
+	<string id="st_ui_dnevnik_podzemka_5">
+		<text>Дневники Чернобыля</text>
+	</string>
+	<string id="st_ui_dnevnik_podzemka_5_descr">
+		<text>Различные записи, которые были найдены в лабораторном комплексе. Содержат в себе довольно интересные и важные сведения, которые многих могут заинтересовать, а потому имеют немалую ценность.</text>
+	</string>
+	<string id="ui_gui_notepad_caption_11">
+		<text>Зашифрованная запись.</text>
+	</string>
+	<string id="st_flash_secret_document_descr_1">
+		<text>«Проводимые исследования в данном направлении практически не дали результатов. Большая часть подопытных не сумела пережить второй день после операции. Наблюдалось резкое повышение уровня гемоглобина в крови, после введения штамма 3219, однако этого оказалось недостаточно. Смерть стопроцентная. В указанные сроки разработка опытных образцов не представляется возможным. Нападение на группу Федорова в Темной Долине также не пойдет на пользу дальнейшей деятельности организации. Хотя скорее всего наемники осуществили лишь показательную акцию, для отвода глаз других конкурентов. Сам Федоров не пострадал. Обращаем ваше внимание на усилении консолидации ударных сил группировки Свобода в стратегическом для нас направлении. Будьте готовы к отражению нападения. Обеспечение безопасности объекта - в приоритете.</text>
+	</string>
+	<string id="st_flash_secret_document_descr_2">
+		<text>«В сущности, проект "Дион" не являлся чем-то сверхважным и сверхсекретным, скорее он осуществлял только показательную функцию, для привлечение продажных инвесторов из-за кордона. Принципиально нового и уникального они все-равно не смогли бы им предложить. Это было лишь обманкой, призванной отвести подозрения от их основных маршрутов и поставщиков. Сам научный комплекс, где был размещено оборудование, и главные серверные установки "Диона", являются дочерним комплексом лаборатории X-10, по главному проекту «О-Сознания». Располагался этот комплекс в северной части Мертвого Города, между перегороженными подвальными помещениями и подземными бункерами. В комплексе работало несколько завербованных сотрудников из смежной организации. Отчасти они были нейтральны к нам, по крайнем мере Плутарху удалось добыть у них часть нужной информации. После захвата территории кланом Долг, дальнейшая судьба проекта неизвестна. В случае получения какого-либо подтверждения его обнаружения или уничтожения необходимо немедленно организовать экспедицию в указанный квадрат.</text>
+	</string>
+	<string id="st_flash_secret_document_descr_3">
+		<text>«Барьер мог иметь рукотворную природу. Примерно такое же излучение было обнаружено Ральфом и его людьми в районе Янтарного озера. Однако попытка проникновения на территорию комплекса закончилась катастрофой. Внезапная дестабилизация пси-обстановки в районе обернулась гибелью разведывательной группы. Ученые из бункера лишь разводили руками. Восстановление первоначальной ситуации не было в их компетенции. Как было установлено, существующая под основным комплексом лаборатория под индексом X-16 являлась источником указанного излучения. Без многоуровневой пси-защиты нахождение в зоне его поражения не представляется возможным. Необходимо предупредить сталкеров из союзных группировок о невозможности проведения какой-либо деятельности в районе Янтарного озера. Закрытие территории на неопределенный срок. Крайне желательно получить поддержку заинтересованных лиц в вопросе разработки комплексных средств защиты и проведении операции по ликвидации опасного объекта. В дальнейшем полученный опыт можно использовать для возможного осуществления прорыва через основной барьер к городу-призраку - Припяти.»</text>
+	</string>
+	<string id="st_flash_secret_document_descr_4">
+		<text>«Мы не знаем, почему это все произошло. Эксперимент шел по запланированному графику. Однако что-то пошло не так. Какая то мелочь, которую мы не учли и не сумели понять. Мы не знали, чем это все закончится. Наемники не справились со своей задачей. Их конвои один за одним гибли на улицах этой проклятой Припяти. Нечто жуткое подстерегало их на каждом шагу и не давало ступить и шагу сквозь скопления аномалий. Партии оборудования и готового товара не достигали своей цели. Все это было невыносимо, но как бы ни старались - ни просьбами, ни угрозами полученного результата добиться не удалось. Поставщики и покупатели были вне себя от ярости и грозились расторгнуть контракты. Однако это было ничто. Все это было пустым колыханием, по сравнению с тем, с чем мы столкнулись сейчас. Запросить эвакуацию - наш единственный выход, если бы только не тот неизвестный в черном плаще, который каждый раз подталкивал нас к заведомо ложному пути. Но у нас не было выбора. Все начало рушиться, и мы были вынуждены принять условия его игры. И проиграли. Он уничтожил каждого из нас, подчиняя своей воле и воле своих покровителей. Он всего лишь пешка, но кто как не пешка может найти в себе силы стать ферзем?..»</text>
+	</string>
+	<string id="st_flash_secret_document_descr_5">
+		<text>«О-Сознание» сделало очередной шаг. И это было ужасно. По сути мы не знали, что подготовка к операции началась еще задолго до формирования нашей группы энтузиастов. Уже тогда они знали, что все наши старания окажутся заведомо обречены на неудачу, и что ни я, ни кто-либо другой не смогут им помешать. И лишь одно осознание этой мысли сдавливало мне горло, мешая дышать. Эта беспомощность убивала. Наш враг подготовил эту войну между кланами и разыграл свой карт-бланш. Старвливание прошло на ура. Свобода объявила войну Долгу и выдвинула свои силы из Темной Долины в направлении к Свалке, и дальше на юго-запад к Агропрому и Болотам. Бандиты неожиданно для всех беспрепятсвенно пропустили их, атаковав при этом диггеров и забросив передовые отряды к Кордону. Все завязалось как нельзя круто, и мы оказались зажаты в этих тисках круговорота межклановой войны. Группировки истащали себя и не могли заметить, как кто-то сумел обмануть всех и выдвинуться навстречу неизвестности. И он погубит нас, если его не остановить.»</text>
+	</string>
+	<string id="st_flash_secret_document_descr_6">
+		<text>«В сущности, этот комплекс не являлся комплексом, скорее он осуществлял только показательную функцию, для отвода глаз комиссиям из других НИИ. Сам научный комплекс являлся большим хранилищем всей документации, по одному из проектов «О-Сознания». Располагался комплекс на территории бывшего НИИ «Агропром». В комплексе работали сотрудники, отчасти переведённые из разных лабораторий. Особой роли он не играл, только лишь собирал разного рода документы и материалы о проведённых исследованиях и экспериментах. К счастью, перед Второй Катастрофой на АЭС всю основную документацию успели вывезти за пределы Зоны Отчуждения. Остальные материалы были уничтожены. После того, как случилась авария, группа ученых возвращаться в Х12 не стала. Так лаборатория была заброшена. Однако по непроверенным данным сложилось впечатление, что кто-то все равно использует лабораторию в своих целях. Точных подтверждений этому нет. Пару квадов из клана Долг отправлялись к ней, однако все участники экспедиции погибли еще на подходе, что также вызвало немало вопросов и подозрений.»</text>
+	</string>
+</string_table>

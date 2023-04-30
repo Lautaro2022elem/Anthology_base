@@ -1,0 +1,3490 @@
+<?xml version="1.0" encoding="windows-1251" ?>
+<string_table>
+
+    <string id="esc_sidor_start_dialog_text">
+    <text> I don't lend money! What do you want? </text>
+</string>
+
+<string id="esc_borland_start_dialog_text">
+    <text> Hey, Savan. </text>
+</string>
+
+<string id="esc_bandit_logoped_start_dialog_text">
+    <text> What do you want, buddy? </text>
+</string>
+
+<string id="esc_bandit_tick_start_dialog_text">
+    <text> So, what's up with you? </text>
+</string>
+
+<string id="esc_army_shmatco_dialog_kpp_0">
+    <text> Stop right there! Who are you? </text>
+</string>
+
+<string id="esc_army_shmatco_dialog_kpp_1">
+    <text> We're scientists under contract... </text>
+</string>
+
+<string id="esc_army_shmatco_dialog_kpp_2">
+    <text> Do you know the procedure? Papers for inspection! Slowly. If anything, I'll shoot without warning! </text>
+</string>
+
+<string id="esc_army_shmatco_dialog_kpp_3">
+    <text> Here you go. </text>
+</string>
+
+<string id="esc_army_shmatco_dialog_kpp_4">
+    <text> Let's see... Stamp and signatures in place. Seems to be in order... But why are you on foot? Where is the escort? Where's Major Polischuk? </text>
+</string>
+
+<string id="esc_army_shmatco_dialog_kpp_5">
+    <text> Our car broke down, he stayed with it. It's not far, a couple of kilometers. We decided to walk, since we can't drive any further anyway. </text>
+</string>
+
+<string id="esc_army_shmatco_dialog_kpp_6">
+    <text> When are they going to replace this piece of junk? What are they thinking, for God's sake? They should be sent here for a day... Okay, here are your papers. You may pass. </text>
+</string>
+
+<string id="esc_army_shmatco_dialog_kpp_7">
+    <text> Thank you. </text>
+</string>
+<string id="esc_army_shmatco_dialog_kpp_8">
+    <text>Didn't understand! What did you smear your hand with, ink? Stop! Don't hide your pass. Give it here. The stamp is smudged! It's a forgery! Well, pray, scoundrel!</text>
+</string>
+<string id="esc_army_shmatco_dialog_kpp_9">
+    <text>No! Don't shoot!!!</text>
+</string>
+<string id="esc_barman_patogen_about_zone_0">
+    <text>Tell me about the Zone.</text>
+</string>
+<string id="esc_barman_patogen_about_zone_1">
+    <text>I found the right person to ask! Ask the eggheads instead, they examine it under a microscope and put it in an X-ray. But I know a little bit about the Zone... It allows me to earn enough money to buy my own plot of land with a vineyard on the seaside in two years - that's it.</text>
+</string>
+<string id="esc_borland_fee_dialog_1">
+    <text>Thank you, brother! You saved me - I won't forget it! Sorry, I don't have any money right now. But I'll pay you back later! And now, let me give you the coordinates of the stash. I hid a good sawn-off shotgun there on my last trip. Whatever you find is yours. I owe you my life, Savan. I'm in your debt.</text>
+</string>
+<string id="esc_borland_fee_dialog_2">
+    <text>Oh, come on, don't mention it.</text>
+</string>
+<string id="esc_borland_fee_dialog_3">
+    <text>Believe me, not everyone would risk their life for someone they barely know. Here in the Zone, it's usually every man for himself. Anyway, I'm heading to the ATP, I've got some business there. See you later, I think. Take care! </text>
+</string>
+<string id="esc_borland_fee_dialog_4">
+    <text>You too, take care!</text>
+</string>
+<string id="esc_borland_quest_away_from_the_bandits_dialog_0">
+    <text>There you are. We've searched the entire camp. So, are you alive and well?</text>
+</string>
+<string id="esc_borland_quest_away_from_the_bandits_dialog_1">
+    <text>Yeah. I met some new people. From the swamps.</text>
+</string>
+<string id="esc_borland_quest_away_from_the_bandits_dialog_2">
+    <text>Are you talking about Dima? Well, we've known each other for ages, just haven't seen each other for a while. And here - a pleasant surprise. So, let's go to the village and discuss our business? I found something in Logoped's notes that I think you'll find interesting. By the way, keep your stuff, I can't carry it forever.</text>
+</string>
+<string id="esc_borland_quest_away_from_the_bandits_dialog_3">
+    <text>Let's go quickly, I'm starving - I have no strength left.</text>
+</string>
+ <string id="esc_borland_quest_away_from_the_bandits_dialog_complite_0">
+    <text>Good thing everything worked out. They could have killed you. I warned you not to ask about the Freedom member directly. Anyway, let's not dwell on that. I found out a lot of things here.</text>
+</string>
+<string id="esc_borland_quest_away_from_the_bandits_dialog_complite_1">
+    <text>For example?</text>
+</string>
+<string id="esc_borland_quest_away_from_the_bandits_dialog_complite_10">
+    <text>There's a local resident here, an old man who's obsessed with clocks. He's supposedly a master of clockmaking. They say he's been living in this village since its founding, even before the first disaster in 1986, can you imagine? And he survived the second disaster too.</text>
+</string>
+<string id="esc_borland_quest_away_from_the_bandits_dialog_complite_11">
+    <text>What good is that to us?</text>
+</string>
+<string id="esc_borland_quest_away_from_the_bandits_dialog_complite_12">
+    <text>Just listen. Logopedist had some blueprints of old communications in his laptop: pipes, tunnels, ventilation shafts. I figured out that one of these tunnels passes right under this Clockmaker's house.</text>
+</string>
+<string id="esc_borland_quest_away_from_the_bandits_dialog_complite_13">
+    <text>What are you suggesting? Break into the old man's house and search it?</text>
+</string>
+<string id="esc_borland_quest_away_from_the_bandits_dialog_complite_14">
+    <text>Are you an idiot on Saturdays or what? Why break in? We won't break in. We'll ask him nicely. Maybe the old man needs something and we'll bring it to him, like a glass of water or something. Can you go and talk to the Clockmaker?</text>
+</string>
+<string id="esc_borland_quest_away_from_the_bandits_dialog_complite_15">
+    <text>Why me? I'm no negotiator, I'm just a grunt.</text>
+</string>
+<string id="esc_borland_quest_away_from_the_bandits_dialog_complite_16">
+    <text>I know you're no diplomat, that's for sure. But I need to go to Shaman's urgently, to give him Logopedist's laptop. There's still a lot of useful information for the free stalkers on it. I can't trust anyone else with it, not even you. No hard feelings. Don't worry, I deleted all the information about the catacombs from the laptop. So now, nobody knows about these underground passages except us.</text>
+</string>
+<string id="esc_borland_quest_away_from_the_bandits_dialog_complite_17">
+    <text>Okay, I'll talk to the old man. Damn you.</text>
+</string>
+<string id="esc_borland_quest_away_from_the_bandits_dialog_complite_2">
+    <text>I found out where they caught the Freedom member. Can you believe it? The bandits took him almost right near the rookie village.</text>
+</string>
+    <string id="esc_borland_quest_away_from_the_bandits_dialog_complite_3">
+    <text>So, right here?</text>
+</string>
+<string id="esc_borland_quest_away_from_the_bandits_dialog_complite_4">
+    <text>Almost. There's an iron hut on the hill. That's where they took him. Can you imagine, the bandits have never ventured so far into stalker territory before. It seems they had been tracking the freelancer for a long time. He was very important to them for something.</text>
+</string>
+<string id="esc_borland_quest_away_from_the_bandits_dialog_complite_5">
+    <text>What kind of hut is it?</text>
+</string>
+<string id="esc_borland_quest_away_from_the_bandits_dialog_complite_6">
+    <text>Just an ordinary hut, like a transformer or something. Only there are no electrical wires running to it, which is strange. God knows why it was placed there. Maybe for ventilation? It's impossible to find out, the door is welded shut.</text>
+</string>
+<string id="esc_borland_quest_away_from_the_bandits_dialog_complite_7">
+    <text>So, what's in it for us?</text>
+</string>
+<string id="esc_borland_quest_away_from_the_bandits_dialog_complite_8">
+    <text>Now here's where it gets interesting. Do you know Clockmaker?</text>
+</string>
+<string id="esc_borland_quest_away_from_the_bandits_dialog_complite_9">
+    <text>Who is that?</text>
+</string>
+<string id="esc_borland_quest_line_dungeon_dialog_0">
+    <text>There you are. So, did you find out about the dungeon from Clockmaker?</text>
+</string>
+<string id="esc_borland_quest_line_dungeon_dialog_1">
+    <text>Yeah, and not only did I find out, but I also got the key to the room that has the entrance to the dungeon.</text>
+</string>
+<string id="esc_borland_quest_line_dungeon_dialog_2">
+    <text>Excellent, I didn't expect it to be so easy. What did he ask for in return?</text>
+</string>
+<string id="esc_borland_quest_line_dungeon_dialog_3">
+    <text>Nothing. He just gave me the key out of the kindness of his heart. So, Borland, do you want to explore the dungeon?</text>
+</string>
+<string id="esc_borland_quest_line_dungeon_dialog_4">
+    <text>You're asking. Of course!</text>
+</string>
+<string id="esc_borland_quest_line_dungeon_dialog_5">
+    <text>Let's go.</text>
+</string>
+<string id="esc_borland_quest_line_research_underground_dialog_0">
+    <text>Savan, you're alive?! You're something else! I've never seen a performance like that, not even in the circus. How did you manage to fall?</text>
+</string>
+<string id="esc_borland_quest_line_research_underground_dialog_1">
+    <text>Oh... alive, alive... What can I do? I twisted my leg.</text>
+</string>
+<string id="esc_borland_quest_line_research_underground_dialog_2">
+    <text>Come on, you're a lousy climber. How can you be so clumsy... Wait! I heard something.</text>
+</string>
+    <string id="esc_borland_quest_line_research_underground_dialog_3">
+    <text>Um, what?</text>
+</string>
+<string id="esc_borland_quest_line_research_underground_dialog_4">
+    <text>Shh! Follow me. Don't make any noise. Get your weapon ready.</text>
+</string>
+<string id="esc_borland_quest_line_research_underground_dialog_5">
+    <text>Let's go ahead, I'm behind you.</text>
+</string>
+<string id="esc_borland_quest_line_research_underground_part_2_dialog_0">
+    <text>What? This is the first time I've heard of such a thing as an inverted artifact. Do you think it's true, Savan?</text>
+</string>
+<string id="esc_borland_quest_line_research_underground_part_2_dialog_1">
+    <text>Are you asking me? Who's the experienced stalker here, huh? I don't know about the artifact. Maybe it exists, maybe it doesn't. But I have heard the story about the Marked One before. In a different place, at a different time, with less detail. I thought it was just a pretty fairy tale. Looks like I was wrong... Something serious is going on here. And I don't like Skidan, he's clearly hiding something from us. He wants to use us blindly. Is that what we want?</text>
+</string>
+<string id="esc_borland_quest_line_research_underground_part_2_dialog_2">
+    <text>Oh, come on, Savan. Aren't you interested? This is a once-in-a-lifetime chance to touch the main mystery of the Zone. Agree! Do you know how much this artifact is worth? A number with five zeros. In dollars.</text>
+</string>
+<string id="esc_borland_quest_line_research_underground_part_2_dialog_3">
+    <text>You're right. We came to the Zone for money. If this artifact is really as valuable as Skidan says, then I can go back to the Big Land with a lot of cash.</text>
+</string>
+<string id="esc_borland_quest_line_research_underground_part_2_dialog_4">
+    <text>Well, that works too. Money is as good a motive as any. So I understand you. My motive is different - to get to the heart of the Zone's secrets.</text>
+</string>
+<string id="esc_borland_quest_line_research_underground_part_2_dialog_5">
+    <text>Okay, let's go further into the laboratory. According to the plans, there's a sealed door with a code lock ahead. We need a key-card and a code. Skidan probably has it, but I don't want to ask him. He won't just give it to us, he'll demand something in return, like a favor or money. Wait here, I'll ask the Watchmaker for the key-card. He must have it.</text>
+</string>
+<string id="esc_borland_quest_line_research_underground_part_3_dialog_0">
+    <text>Oh wow! I see you're dressed up. Skidan didn't skimp. Top-notch gear. He also gave me some nice equipment and a good gun.</text>
+</string>
+    <string id="esc_borland_quest_line_research_underground_part_3_dialog_1">
+    <text>Can you imagine, someone broke into the Clockmaker's house and stole his access keycard to the laboratory. So, we won't be alone down there.</text>
+</string>
+<string id="esc_borland_quest_line_research_underground_part_3_dialog_2">
+    <text>Who cares? We'll kill everyone if it comes to that. Everyone should be afraid of us now, we're like two terminators. Follow me!</text>
+</string>
+<string id="esc_borland_quest_line_research_underground_part_3_dialog_3">
+    <text>Let's go.</text>
+</string>
+<string id="esc_borland_start_dialog_start_game_0">
+    <text>Here we are, at the Cordon. I told you you wouldn't get lost with me. I know every trail here blindfolded. It's not my first time. Now, the most important thing: don't joke around. The military doesn't understand jokes. They'll shoot first and won't even ask for your name. Let's approach calmly, show our documents and leave. You haven't forgotten the cover story, have you?</text>
+</string>
+<string id="esc_borland_start_dialog_start_game_1">
+    <text>I can repeat it.</text>
+</string>
+<string id="esc_borland_start_dialog_start_game_10">
+    <text>Hold on a minute. Let me check your documents. Damn, the ink on your pass hasn't even dried yet. If it smears during the inspection, we're done for. Alright, try to be careful, don't touch the stamp with your fingers. Are you ready?</text>
+</string>
+<string id="esc_borland_start_dialog_start_game_11">
+    <text>Ready.</text>
+</string>
+<string id="esc_borland_start_dialog_start_game_2">
+    <text>No, that's unnecessary. And remember: if something goes wrong, these fake passes will lead us straight to the cemetery instead of the Zone. Or to prison. I don't know which is worse.</text>
+</string>
+<string id="esc_borland_start_dialog_start_game_3">
+    <text>Do you think they'll notice?</text>
+</string>
+<string id="esc_borland_start_dialog_start_game_4">
+    <text>They shouldn't, but anything can happen. The fact that the military didn't open fire right away is a good sign. But if push comes to shove, they might shoot. And then say that it was justified. It's not uncommon here, even stalkers with real passes have been killed. Like "good morning". The Zone will cover it up.</text>
+</string>
+<string id="esc_borland_start_dialog_start_game_5">
+    <text>Is there any hope? I'm scared.</text>
+</string>
+<string id="esc_borland_start_dialog_start_game_6">
+    <text>There's always hope. But, as they say, the odds aren't in our favor.</text>
+</string>
+<string id="esc_borland_start_dialog_start_game_7">
+    <text>Are there any other options? I don't like the idea of going to prison, let alone the cemetery.</text>
+</string>
+    <string id="esc_borland_start_dialog_start_game_8">
+        <text>Well, there is another option. If the soldiers don't turn out to be completely frozen, they will demand money. Which we don't have. So keep your face simple and don't wander with your eyes. Look ahead, but don't stare. Got it?</text>
+</string>
+<string id="esc_borland_start_dialog_start_game_9">
+        <text>Got it.</text>
+</string>
+<string id="esc_colonel_kolyazin_prisoner_actor_dialog_0">
+        <text>What are you looking at, ugly? Thought you were the smartest? I've seen a dozen like you in the past month.</text>
+</string>
+<string id="esc_colonel_kolyazin_prisoner_actor_dialog_1">
+        <text>Don't shoot. Please, don't shoot! Let me speak!</text>
+</string>
+<string id="esc_colonel_kolyazin_prisoner_actor_dialog_2">
+        <text>What can you say, you monster? Why did you try to sneak into the Ecological Disaster Zone through a guarded perimeter?</text>
+</string>
+<string id="esc_colonel_kolyazin_prisoner_actor_dialog_3">
+        <text>I wanted to earn some money. Let's make a deal.</text>
+</string>
+<string id="esc_colonel_kolyazin_prisoner_actor_dialog_4">
+        <text>You want to make a deal, huh? Then give me the money - and we'll make a deal.</text>
+</string>
+<string id="esc_colonel_kolyazin_prisoner_actor_dialog_5">
+        <text>How much do you need?</text>
+</string>
+    <string id="esc_colonel_kolyazin_prisoner_actor_dialog_6">
+    <text>How much are you willing to pay for your life and your friend's life? Let's say, 500 rubles each, that's still a good deal. He will stay with me for now. But if you ever think of betraying me, I will cut off his head and send a message to the free stalkers about who sold him. Then the Zone will seem like a dead end for you.</text>
+</string>
+<string id="esc_colonel_kolyazin_prisoner_actor_dialog_7">
+    <text>I will try to earn the required amount. I can do it! How much time do I have?</text>
+</string>
+<string id="esc_colonel_kolyazin_prisoner_actor_dialog_8">
+    <text>Maybe you can. If you don't mess around, you can earn it in a couple of days, I think. Just don't bring any junk here.</text>
+</string>
+<string id="esc_colonel_kolyazin_prisoner_actor_dialog_9">
+    <text>I will bring the money.</text>
+</string>
+<string id="esc_colonel_kolyazin_quest_fee_0">
+    <text>I brought the money.</text>
+</string>
+<string id="esc_colonel_kolyazin_quest_fee_1">
+    <text>Oh, our sponsor has arrived. We have been waiting for you.</text>
+</string>
+<string id="esc_colonel_kolyazin_quest_fee_10">
+    <text>Well, too bad. That means your partner will stay with us. We will make him pay every last penny. And if not, I will personally get rid of him. I will get an exceptional vacation for that. Or a medal.</text>
+</string>
+<string id="esc_colonel_kolyazin_quest_fee_11">
+    <text>Wait, please! Don't touch Borland! Maybe there are other options?</text>
+</string>
+<string id="esc_colonel_kolyazin_quest_fee_12">
+    <text>Hmm. There are a couple of options! Either you give your equipment to the regular army, or you do a couple of missions "and we're even," as Skidan says. What do you choose?</text>
+</string>
+<string id="esc_colonel_kolyazin_quest_fee_13">
+    <text>All right, take the equipment. I hope we never see each other again.</text>
+</string>
+<string id="esc_colonel_kolyazin_quest_fee_30">
+    <text>I'll do your tasks, no problem.</text>
+</string>
+<string id="esc_colonel_kolyazin_quest_fee_31">
+    <text>So, rookie, we lost one of our lieutenants. And some valuable documents that were on his PDA. The investigation showed that he was last seen in the north-west tower area, and at that time a Chimera attacked the outpost. We've been tracking this fast beast for several days near the swamp, but we can't catch it. Maybe it has a den nearby, and it's possible that it took the lieutenant with it. Your job is to retrieve the documents and kill the Chimera.</text>
+</string>
+<string id="esc_colonel_kolyazin_quest_fee_32">
+    <text>Sending me to certain death?</text>
+</string>
+	<string id="esc_colonel_kolyazin_quest_fee_33">
+    <text>You're a stalker! You came to the Zone to die anyway! So let's get to it without talking. Or have you forgotten who you're dealing with?</text>
+</string>
+<string id="esc_colonel_kolyazin_quest_fee_34">
+    <text>I remember, I remember... I'm going.</text>
+</string>
+<string id="esc_colonel_kolyazin_quest_fee_2">
+    <text>As agreed, here are 30 pieces.</text>
+</string>
+<string id="esc_colonel_kolyazin_quest_fee_22">
+    <text>I changed my mind.</text>
+</string>
+<string id="esc_colonel_kolyazin_quest_fee_3">
+    <text>Bringing the money is good. But while you were away, the price went up. Your friend wanted to escape. He broke the sergeant's nose and tried to take away his gun. But he didn't succeed in anything. So now it's not 30, but all 40 pieces from you. As compensation for the losses.</text>
+</string>
+<string id="esc_colonel_kolyazin_quest_fee_40">
+    <text>Bringing the money is good. But while you were away, the price went up. So now it's not 30, but all 50 pieces from you.</text>
+</string>
+<string id="esc_colonel_kolyazin_quest_fee_4">
+    <text>Oh, you... Alright, here's another 10,000, to take them. Are you satisfied?</text>
+</string>
+<string id="esc_colonel_kolyazin_quest_fee_41">
+    <text>Oh, you... Alright, here's another 20,000, to take them. Are you satisfied?</text>
+</string>
+<string id="esc_colonel_kolyazin_quest_fee_5">
+    <text>Of course! It's nice to deal with a conscious stalker, unlike some. Well, if you're passing by - come in.</text>
+</string>
+<string id="esc_colonel_kolyazin_quest_fee_6">
+    <text>No-no-no. Once was enough. I wish I never saw you again.</text>
+</string>
+<string id="esc_colonel_kolyazin_quest_fee_7">
+    <text>Well, suit yourself. You're free to go! By the way, don't forget your gear - it's in a box on the first floor. And if you decide to come back, you won't forget where to find us! Ha-ha-ha! I'll warn my guys, they won't touch you, so come in if you need any work, we really need our own stalkers in the Zone.</text>
+</string>
+   <string id="esc_colonel_kolyazin_quest_fee_8">
+        <text>I'll keep that in mind.</text>
+    </string>
+    <string id="esc_colonel_kolyazin_quest_fee_9">
+        <text>But that's all I have! I don't have anything else.</text>
+    </string>
+    <string id="esc_dialog_army_chernenco_0">
+        <text>Stop! Drop your weapon! Hands up!</text>
+    </string>
+    <string id="esc_dialog_army_chernenco_1">
+        <text>I'm here to see the Colonel. I have an appointment.</text>
+    </string>
+    <string id="esc_dialog_army_chernenco_2">
+        <text>Stay still and don't move. Take off your backpack and gun - you'll get them back on your way out. The Colonel is waiting for you in his office. And mind you, no funny business!</text>
+    </string>
+    <string id="esc_dialog_army_chernenco_3">
+        <text>Don't put your things too far away.</text>
+    </string>
+    <string id="esc_dialog_army_chernenco_4">
+        <text>Who do you think you are telling me what to do? Our commander has been found! I'll teach you a lesson...</text>
+    </string>
+    <string id="esc_dialog_army_chernenco_5">
+        <text>That's enough, calm down!</text>
+    </string>
+    <string id="esc_dialog_wolf_the_first_penny_0">
+        <text>Why are you so scared? What happened?</text>
+    </string>
+    <string id="esc_dialog_wolf_the_first_penny_1">
+        <text>Guys, help me out! I urgently need money! Can you lend me 30,000? I'll pay it back, I swear! It's urgent, right now. A matter of life and death.</text>
+    </string>
+    <string id="esc_dialog_wolf_the_first_penny_10">
+        <text>Ha! Of course. You're running around like you're on fire. Alright, enough talking. So, shall we start earning?</text>
+    </string>
+    <string id="esc_dialog_wolf_the_first_penny_11">
+        <text>Let's start! What do we need to do?</text>
+    </string>
+    <string id="esc_dialog_wolf_the_first_penny_12">
+        <text>We have a hothead here - they call him Dubolom. He's a promising guy, but as impulsive as diarrhea. He wants to do everything faster than anyone else. When it comes to killing mutants, he's in the front lines. When it comes to searching for artifacts, he's indispensable. He hasn't been here for a week and he's already gone to the Dump. He thinks he's experienced, but he's still very green.</text>
+    </string>
+    <string id="esc_dialog_wolf_the_first_penny_13">
+        <text>Well, I just arrived from Big Land myself. Isn't it too early for me to go to the Dump? Especially since I don't even know where it is.</text>
+    </string>
+   <string id="esc_dialog_wolf_the_first_penny_14">
+        <text>Don't panic ahead of time. Nobody is sending you to the Dump. This stalker guy is already here, at the Cordon. A couple of hours ago, he sent me a message that he's returning to the camp. He wrote that he found something interesting at the Dump and wants to sell it to Skidan, a local trader. And I still haven't heard from him, even though it's only a twenty-minute walk.</text>
+</string>
+<string id="esc_dialog_wolf_the_first_penny_15">
+        <text>What do you need from me? Find him?</text>
+</string>
+<string id="esc_dialog_wolf_the_first_penny_16">
+        <text>Yes. Preferably alive and unharmed. But if something happened to him, at least bring back his backpack or any other belongings.</text>
+</string>
+<string id="esc_dialog_wolf_the_first_penny_17">
+        <text>Where should I look?</text>
+</string>
+<string id="esc_dialog_wolf_the_first_penny_18">
+        <text>In his last message, he wrote that he wants to cut through the "electric train," our local attraction. Start your search from there.</text>
+</string>
+<string id="esc_dialog_wolf_the_first_penny_19">
+        <text>I'm not familiar with the area yet. Where is it, approximately?</text>
+</string>
+<string id="esc_dialog_wolf_the_first_penny_2">
+        <text>Hold on, calm down! Tell me what happened.</text>
+</string>
+<string id="esc_dialog_wolf_the_first_penny_20">
+        <text>First, you need to overcome the railway embankment. Since you're new here, it's better for you to go through the tunnel to the west of the elevator. Just be careful, there are some tough guys there - they collect a fee from everyone who passes through.</text>
+</string>
+<string id="esc_dialog_wolf_the_first_penny_21">
+        <text>Tough guys? Bandits, you mean? How much do they charge?</text>
+</string>
+<string id="esc_dialog_wolf_the_first_penny_22">
+        <text>It depends on who's passing through. They have nothing to take from you right now, so let's try to negotiate with them. The guys at the tunnel like to take newcomers by the collar, so here's a bottle, or two bottles of vodka, just to be safe. If you give it to them, I think they'll let you pass without any problems. You can return through the "electric train" - just climb onto a wagon and jump over the barbed wire on the other side.</text>
+</string>
+<string id="esc_dialog_wolf_the_first_penny_23">
+        <text>Are there any other options? I don't really want to meet with bandits.</text>
+</string>
+<string id="esc_dialog_wolf_the_first_penny_24">
+        <text>Of course there are other options! You can walk under the bridge. But even experienced stalkers are afraid to go there, let alone someone like you. It's so hot down there that one wrong step could be your last. And if you don't get burned, you'll turn into a golden crust in no time. So it's better to go through the tunnel - you'll be safer.</text>
+</string>
+    <string id="esc_dialog_wolf_the_first_penny_25">
+    <text>And the bandits won't touch me for sure?</text>
+</string>
+<string id="esc_dialog_wolf_the_first_penny_26">
+    <text>No, they won't touch you. Are they complete idiots to kill the hen that lays golden eggs? We stalkers are their only way of making money. They don't look for artifacts themselves, but they take their cut from us. Those are the rules here, it's easier for stalkers to pay for passage than to get into conflicts. And don't call them bandits, they'll get offended.</text>
+</string>
+<string id="esc_dialog_wolf_the_first_penny_27">
+    <text>Yes, it's an unpleasant situation. Anyway, I'm going.</text>
+</string>
+<string id="esc_dialog_wolf_the_first_penny_28">
+    <text>Wait! Where are you going without any gear, fool? This is not an amusement park - people even carry weapons to the toilet. Here, take this beginner's kit for free. It'll be enough for a while, and then you can get your own stuff. Do you know how to handle a weapon?</text>
+</string>
+<string id="esc_dialog_wolf_the_first_penny_29">
+    <text>I had some experience in the army. Thanks for the gun! I'm going to look for your lost friend now.</text>
+</string>
+<string id="esc_dialog_wolf_the_first_penny_3">
+    <text>I'm in trouble! I mean, we are. Me and my partner got caught at the checkpoint - our papers are fake, the ink blurred while the soldiers were checking. Now they're demanding money, or they'll kill my partner. And then probably me too...</text>
+</string>
+<string id="esc_dialog_wolf_the_first_penny_4">
+    <text>How much are they asking for?</text>
+</string>
+<string id="esc_dialog_wolf_the_first_penny_5">
+    <text>Like I said, 30,000. 15,000 per person. So, are you going to lend us the money?</text>
+</string>
+<string id="esc_dialog_wolf_the_first_penny_6">
+    <text>We're not going to lend you anything, this is not a bank. But we'll give you a chance to earn the money yourself. When did they say you should bring the money?</text>
+</string>
+<string id="esc_dialog_wolf_the_first_penny_7">
+    <text>You have to do it within 48 hours, or... I don't even want to think about what will happen.</text>
+</string>
+<string id="esc_dialog_wolf_the_first_penny_8">
+    <text>Don't worry, everything will be fine! But you shouldn't delay, you never know what they'll do to your friend. I see you're new to the Zone?</text>
+</string>
+<string id="esc_dialog_wolf_the_first_penny_9">
+    <text>Yeah, is it that obvious?</text>
+</string>
+    <string id="esc_dialog_wolf_the_first_penny_complite_0">
+    <text>What did you find?</text>
+</string>
+<string id="esc_dialog_wolf_the_first_penny_complite_1">
+    <text>I found the backpack. I didn't find the stalker. Honestly, I didn't have much time to search - there are wild boars there. So, I guess Dubolom was killed by the boars. Sorry.</text>
+</string>
+<string id="esc_dialog_wolf_the_first_penny_complite_2">
+    <text>He's alive, Dubolom is alive! He rode up about ten minutes ago. His eyes are worth five rubles - he can't say anything coherent. We sent him to the basement to heal with vodka. And you're a hero! On such an occasion, take a bonus from me. Also, while you were away, I talked to a local trader. He's offering some work. The pay is not great, but it's stable. So, go see him if you haven't already. His name is Skidan, and he lives in a bunker behind the village. If you have any more questions, come see me.</text>
+</string>
+<string id="esc_dialog_wolf_the_first_penny_complite_3">
+    <text>What should I do with the things?</text>
+</string>
+<string id="esc_dialog_wolf_the_first_penny_complite_4">
+    <text>Just give them to Dubolom. Although, if we were being fair, we should teach him a lesson and not give him his things back. But never mind, he has already punished himself.</text>
+</string>
+<string id="esc_dialog_wolf_the_first_penny_complite_5">
+    <text>Thanks for your help, Pooch. See you!</text>
+</string>
+<string id="esc_dialog_wolf_the_first_penny_complite_6">
+    <text>There's nobody there. I found a torn backpack near the fire. But it's empty. Apparently, the boars took all the things. I didn't see the stalker either. Most likely, the boars got to him too.</text>
+</string>
+<string id="esc_dialog_wolf_the_first_penny_complite_7">
+    <text>That's too bad. But don't worry about Dubolom - he's back. He's scared and muttering something. But never mind, it's his own fault. He won't be showing off for no reason again.</text>
+</string>
+<string id="esc_dialog_wolf_the_first_penny_complite_8">
+    <text>Right. So, are you taking the job?</text>
+</string>
+<string id="esc_dialog_wolf_the_first_penny_complite_9">
+    <text>Oh yeah. Here, take this for your efforts.</text>
+</string>
+<string id="esc_dialog_wolf_the_first_penny_complite_x">
+    <text>Hello, Pooch. I went to the "electric train".</text>
+</string>
+<string id="esc_dybolom_habar_dialog_0">
+    <text>Hey, hero! I brought you your things. You left them in the backpack near the "electric train".</text>
+</string>
+    <string id="esc_dybolom_habar_dialog_1">
+    <text>Oh, another one. I'd take a look at you if you were taking care of business and a boar came out of the bushes at full speed. I wouldn't have time for my backpack then. I don't even remember how I got on that train. The animals went crazy. Can you imagine? When I was walking from the Garbage, some creature jumped out of every bush at me. I could barely run. Pseudodog told me about you. Thanks for going on the search, I respect that. And leave my stuff, I don't need that junk anymore. I'll buy myself some new gear - you won't believe it!</text>
+</string>
+<string id="esc_dybolom_habar_dialog_2">
+    <text>Glad to see you're okay. Thanks for the gear.</text>
+</string>
+<string id="esc_dybolom_habar_dialog_3">
+    <text>No problem. Hold on, let's exchange numbers. Here are the coordinates of my stash - there's an automatic rifle and spare ammo hidden there. Take it, for honesty!</text>
+</string>
+<string id="esc_dybolom_habar_dialog_4">
+    <text>Wow. Well, thanks. Good luck!</text>
+</string>
+<string id="esc_holod_quest_away_from_the_bandits_dialog_0">
+    <text>Hey man, did the explosion get you? Sorry, my guys went too far.</text>
+</string>
+<string id="esc_holod_quest_away_from_the_bandits_dialog_1">
+    <text>Oh, my head... What a day. Thanks for not killing me.</text>
+</string>
+<string id="esc_holod_quest_away_from_the_bandits_dialog_10">
+    <text>Are you kidding me? You're a funny guy. The Shaman called us for help. We were just thinking of moving to your location at the Cordon. We also took care of the bandits and freed you. Aren't you happy?</text>
+</string>
+<string id="esc_holod_quest_away_from_the_bandits_dialog_11">
+    <text>Happy? Of course! Thanks for saving me, I won't forget it.</text>
+</string>
+<string id="esc_holod_quest_away_from_the_bandits_dialog_2">
+    <text>Kidding? That means you're alive. What's your name?</text>
+</string>
+<string id="esc_holod_quest_away_from_the_bandits_dialog_3">
+    <text>They call me Savan. And you?</text>
+</string>
+<string id="esc_holod_quest_away_from_the_bandits_dialog_4">
+    <text>Smoke.</text>
+</string>
+<string id="esc_holod_quest_away_from_the_bandits_dialog_5">
+    <text>And who are you guys anyway? I've never seen you around here before.</text>
+</string>
+<string id="esc_holod_quest_away_from_the_bandits_dialog_6">
+    <text>Well, not many people have heard of our group, even during its heyday. And now, no one knows us at all. Some call us the "Swampers," but we're really all that's left of the "Clear Sky" group. A scientific research group. It was... and then it was gone. But now it's coming back. And we're going to finish what we started.</text>
+</string>
+    <string id="esc_holod_quest_away_from_the_bandits_dialog_7">
+        <text>How did it "sink"? Where did it sink? What happened?</text>
+    </string>
+    <string id="esc_holod_quest_away_from_the_bandits_dialog_8">
+        <text>Well, I don't even know what happened back then. We still can't figure it out. Don't bother yourself with it, you'll just break your head. People smarter than you thought about it, but didn't come up with anything.</text>
+    </string>
+    <string id="esc_holod_quest_away_from_the_bandits_dialog_9">
+        <text>So, what brings you here? Just passing by? From the village of Shishigino to Monte Carlo?</text>
+    </string>
+    <string id="esc_info_ot_sidora_">
+        <text>?</text>
+    </string>
+    <string id="esc_info_ot_sidora_1">
+        <text>I heard you trade information, is that true?</text>
+    </string>
+    <string id="esc_info_ot_sidora_10">
+        <text>Alright, forget it.</text>
+    </string>
+    <string id="esc_info_ot_sidora_11">
+        <text>What can you tell me about the Shaman?</text>
+    </string>
+    <string id="esc_info_ot_sidora_12">
+        <text>500 rubles and I'll tell you everything I know.</text>
+    </string>
+    <string id="esc_info_ot_sidora_13">
+        <text>Alright, here you go.</text>
+    </string>
+    <string id="esc_info_ot_sidora_14">
+        <text>The Shaman is a decent guy, used to be a special forces or something like that. Of course, he's no match for the Dog, but he's been roaming the zone for many years and can easily outperform many stalkers with his 100 points ahead. He's a true leader and stalkers rely on him like on a rock - he won't abandon them in trouble and will share his last piece of bread. He's an honest, straightforward guy with a reasonable head on his shoulders - a real genius of tactics and strategy. The operations he carries out are amazing! In short, he's a trustworthy guy and a real stalker.</text>
+    </string>
+    <string id="esc_info_ot_sidora_15">
+        <text>Do you know anything interesting about Mark?</text>
+    </string>
+    <string id="esc_info_ot_sidora_16">
+        <text>For your money, anything you want. Give me 500 rubles.</text>
+    </string>
+    <string id="esc_info_ot_sidora_19">
+        <text>Do you know anything about Borland? I'd like to find out more about him.</text>
+    </string>
+    <string id="esc_info_ot_sidora_2">
+        <text>That's an overstatement, I just sell a little bit. What do you want to know?</text>
+    </string>
+    <string id="esc_info_ot_sidora_20">
+        <text>For that kind of information, my rate is always 500 rubles.</text>
+    </string>
+    <string id="esc_info_ot_sidora_21">
+        <text>Will you give me change from a thousand?</text>
+    </string>
+    <string id="esc_info_ot_sidora_22">
+    <text>Borland was a famous stalker. Didn't know that? He-he. He was a former motorcycle racer and street racer. He played guitar like a god. He was memorable for many things in the Zone. He killed the leader of marauders nicknamed Lavash. There was a lawless man here that old-timers remember. After that, the entire gang of marauders fell apart. It's hard for jackals to live together. Borland fought against the Monolith faction, not alone, of course. The "Horizon of Events" operation. Haven't heard of it? Many legends are still told around the campfire about it. Anyway, he spent 7 years in the Zone and then left everything behind. Probably got tired. \nAnd now, apparently, he's back. Why, don't ask me, I don't know. Former stalkers rarely return here, very rarely. Because the reason for returning to the Zone must be very serious, you know. They also say that Borland had a rich stash on the swamp near Agroprom, and apparently, he left it untouched when he left the Zone forever. So, the question is, why? If you don't need it, give it away for free or sell it. It's a matter of business, of course. Although, if he planned to come back, then it makes sense.</text>
+</string>
+<string id="esc_info_ot_sidora_23">
+    <text>I don't know who else to ask. Can you tell me about the Zone? You've been here for a long time, you must have understood something about this place?</text>
+</string>
+<string id="esc_info_ot_sidora_24">
+    <text>Oh, Savan, that's what you need to ask about. Give me 500 rubles and listen.</text>
+</string>
+<string id="esc_info_ot_sidora_25">
+    <text>All ears.</text>
+</string>
+<string id="esc_info_ot_sidora_26">
+    <text>So, with the Zone, it's like this: if you return with loot - it's a miracle, if you return alive - it's good luck, if a stray bullet misses you - it's a stroke of luck, and everything else is fate. You know what they say - the further into the Zone, the closer to heaven. Haven't heard that? Well, everything is ahead of you. You're a stalker, and stalkers are allowed into paradise without standing in line. The Zone is alive, it lives its own life, and we're newcomers here - we're just pulling chestnuts out of the fire. Artifacts, it doesn't matter... And it all depends on whether we're lucky or not. For the planet Earth, the appearance of the Zone passed without a trace, in general. Of course, it's not excluded that by randomly pulling chestnuts out of this fire, we will eventually pull out something that will make life not only here, but also on the whole planet simply impossible. That would be bad luck. However, it's always been a threat to humanity. Although... I've long since stopped speculating about humanity as a whole...</text>
+</string>
+    <string id="esc_info_ot_sidora_27">
+    <text>Can you tell me something about the Strelok group? About Pripyat, for example?</text>
+</string>
+<string id="esc_info_ot_sidora_28">
+    <text>Give me 500 rubles.</text>
+</string>
+<string id="esc_info_ot_sidora_29">
+    <text>Here you go.</text>
+</string>
+<string id="esc_info_ot_sidora_3">
+    <text>Tell me about the Dog: who is he, where is he from?</text>
+</string>
+<string id="esc_info_ot_sidora_30">
+    <text>The Ghost was a born spy - he could sneak into anywhere unnoticed. No wonder he was given such a nickname. It's just a pity he died. He went into the laboratory under Lake Yantar and never came back out. Ah, what a shame - he was a skilled stalker.</text>
+</string>
+<string id="esc_info_ot_sidora_4">
+    <text>Information, Stalker, also costs money. Give me 500 rubles.</text>
+</string>
+<string id="esc_info_ot_sidora_5">
+    <text>Oh, well of course. Here you go.</text>
+</string>
+<string id="esc_info_ot_sidora_6">
+    <text>Wow, isn't that a lot for a simple conversation? I don't have that kind of money.</text>
+</string>
+<string id="esc_info_ot_sidora_7">
+    <text>I started writing my memoirs in my spare time, and there's a whole chapter about the Dog. Let me read it to you: "Sergei Yekimov (the Dog) and his family were always unlucky. His wife left him when he was fired from his job. He drank heavily at first. But one day, when his younger brother Peter Yekimov got mixed up with a bad crowd and was severely beaten, breaking his nose and arm - the Dog snapped. He took his father's old shotgun, found his brother's attacker, and shot him. After some thought, the brothers left for the Zone. At first, Sergei didn't have a nickname, and he was constantly called "Grey" until one of the experienced stalkers made a joke and recited a rhyme: "Grey Dog, Grey Dog, at the bread bin - click." And so Sergei became the Dog. As time went on, his experience grew, and the respect of the stalkers for the Dog grew as well. He became a mentor to newbies in the village. He walked all over the Zone and was considered almost a legend of the Zone." Well, what do you think? Can I put letters into words?</text>
+</string>
+<string id="esc_info_ot_sidora_8">
+    <text>Do you know anything else? You're trading valuable information, huh?</text>
+</string>
+   <string id="esc_info_ot_sidora_9">
+        <text>Oh, I see. Well, thank you for the information.</text>
+    </string>
+    <string id="esc_klin_quest_trimming_dialog_0">
+        <text>Hey there, Stalker. Ready to go on a safari with us?</text>
+    </string>
+    <string id="esc_klin_quest_trimming_dialog_1">
+        <text>Sure!</text>
+    </string>
+    <string id="esc_klin_quest_trimming_dialog_2">
+        <text>Then don't lag behind and cover the rest of the guys. Ready?</text>
+    </string>
+    <string id="esc_klin_quest_trimming_dialog_3">
+        <text>Let's go.</text>
+    </string>
+    <string id="esc_leader_shaman_joining_a_clan_complite_0">
+        <text>Can I join the clan of the free Stalkers now? Will you take me in?</text>
+    </string>
+    <string id="esc_leader_shaman_joining_a_clan_complite_1">
+        <text>Of course! I liked you from the start... but, you know how it is: trust but verify! Well, after what you've done, I'm ready to accept you into our clan without question. Ready?</text>
+    </string>
+    <string id="esc_leader_shaman_joining_a_clan_complite_2">
+        <text>Always ready! What could be better than the life of a free Stalker?</text>
+    </string>
+    <string id="esc_leader_shaman_joining_a_clan_complite_3">
+        <text>Well, for example, Smoky beer and hot sand on the beach by the ocean. Ah, never mind... I hope I don't need to tell you about the Stalker's code?</text>
+    </string>
+    <string id="esc_leader_shaman_joining_a_clan_complite_4">
+        <text>It's better if you tell me, so there won't be any questions later.</text>
+    </string>
+    <string id="esc_leader_shaman_joining_a_clan_complite_5">
+        <text>It's simple. To be a Stalker means to be human. To help a comrade in a difficult moment, not to be a sneak, not to commit treachery. Share a medkit or a piece of bread, cover each other's backs in battle, share a night by the campfire. And our main enemy right now is the bandit scum, who only parasitize on our Stalker brethren. We are neutral towards other clans in the Zone. \nWe don't have an army structure, but a community of free people. You are free to decide what to do at any given moment. And no one gives you orders, not even me. Any questions?</text>
+    </string>
+    <string id="esc_leader_shaman_joining_a_clan_complite_6">
+        <text>No questions, everything is clear.</text>
+    </string>
+    <string id="esc_leader_shaman_joining_a_clan_complite_7">
+    <text>Then I won't bother you anymore. Congratulations to everyone present on the arrival of our new comrade in our friendly community! No claws, no anomalies for you, stalker Savan!</text>
+</string>
+<string id="esc_leader_shaman_joining_a_clan_complite_8">
+    <text>Okay then. I'll go about my stalker business...</text>
+</string>
+<string id="esc_leader_shaman_joining_a_clan_complite_9">
+    <text>I'll think about it. I'm not sure if I need this.</text>
+</string>
+<string id="esc_leader_shaman_joining_a_clan_failure_0">
+    <text>How can I join your clan?</text>
+</string>
+<string id="esc_leader_shaman_joining_a_clan_failure_1">
+    <text>Easy! If I see that you are a good person and can be trusted, I will call you one of us. You know, they say a friend is known in trouble. Well, we're full of troubles right now. Help us out and consider it a test passed.</text>
+</string>
+<string id="esc_leader_shaman_joining_a_clan_failure_2">
+    <text>Understood.</text>
+</string>
+<string id="esc_logoped_quest_away_from_the_bandits_dialog_0">
+    <text>Do you have a minute?</text>
+</string>
+<string id="esc_logoped_quest_away_from_the_bandits_dialog_1">
+    <text>What do you want? Just make it quick, time is money.</text>
+</string>
+<string id="esc_logoped_quest_away_from_the_bandits_dialog_2">
+    <text>I've heard rumors that your freedom fighter brothers took someone down recently. They were taken here, in Korodon. I want to know where exactly.</text>
+</string>
+<string id="esc_logoped_quest_away_from_the_bandits_dialog_3">
+    <text>Did Ramses mess up? Are you insane, do you understand where you are and who you're talking to? Are you immortal or something?</text>
+</string>
+<string id="esc_logoped_quest_away_from_the_bandits_dialog_4">
+    <text>Sorry, my mistake. I'll leave now.</text>
+</string>
+<string id="esc_logoped_quest_gopstop_dialog_0">
+    <text>I'm here. Did you call for me?</text>
+</string>
+<string id="esc_logoped_quest_gopstop_dialog_1">
+    <text>Ah, it's you. I have an offer for you, kid. Will you join our brigade? We're desperately short on fighters now. You're new to the Zone, so it's either us or the free ones. Basically, it's chaos out there: everyone kills whoever they want. But we live by certain rules, and we teach others, for which we take our fair share. Everything's in order on the Dump, now it's time for the Cordons. We've already taken over half of it. To completely control this territory, we just need to drive out the stalker base at the ATP and show who the real boss is. And the newbie village - there are only wimps there. Look at them sternly, and they'll lay down for us themselves. So it's profitable to join us. I'm not pressuring you, think it over. So, what do you say?</text>
+</string>
+   <string id="esc_logoped_quest_gopstop_dialog_10">
+        <text>I've sent you his coordinates on your PDA, and you have the equipment, so there should be no problems.</text>
+    </string>
+    <string id="esc_logoped_quest_gopstop_dialog_11">
+        <text>Okay, I'll do it right away.</text>
+    </string>
+    <string id="esc_logoped_quest_gopstop_dialog_12">
+        <text>I wouldn't mind working with you, but don't call me to join your team, I prefer to work alone.</text>
+    </string>
+    <string id="esc_logoped_quest_gopstop_dialog_13">
+        <text>That's too bad, but I won't force you. However, I always have some work for you if you need it.</text>
+    </string>
+    <string id="esc_logoped_quest_gopstop_dialog_14">
+        <text>Go ahead, I'm listening.</text>
+    </string>
+    <string id="esc_logoped_quest_gopstop_dialog_15">
+        <text>We need to take out a stalker who's carrying a valuable item through the Dark Valley. If you do it, you can keep the item, and I'll even pay you extra. Are you in?</text>
+    </string>
+    <string id="esc_logoped_quest_gopstop_dialog_16">
+        <text>Sure, no problem.</text>
+    </string>
+    <string id="esc_logoped_quest_gopstop_dialog_17">
+        <text>I've sent you his coordinates on your PDA, and you have the weapon, so there should be no problems. I'll be waiting for good news.</text>
+    </string>
+    <string id="esc_logoped_quest_gopstop_dialog_18">
+        <text>I'll be done quickly, just wait for me.</text>
+    </string>
+    <string id="esc_logoped_quest_gopstop_dialog_2">
+        <text>No, sorry, I prefer to work alone.</text>
+    </string>
+    <string id="esc_logoped_quest_gopstop_dialog_3">
+        <text>You're making a mistake, kid. But it's your decision. Leave now, while I'm still feeling generous.</text>
+    </string>
+    <string id="esc_logoped_quest_gopstop_dialog_4">
+        <text>Okay, I'm leaving now.</text>
+    </string>
+    <string id="esc_logoped_quest_gopstop_dialog_5">
+        <text>Yes, I've always dreamed of this kind of adventure.</text>
+    </string>
+    <string id="esc_logoped_quest_gopstop_dialog_6">
+        <text>Great, then you'll need to pass a test, a real one with blood. I happen to have a job like that.</text>
+    </string>
+    <string id="esc_logoped_quest_gopstop_dialog_7">
+        <text>I'm all ears.</text>
+    </string>
+    <string id="esc_logoped_quest_gopstop_dialog_8">
+    <text>You'll have to take down the Stalker, he's carrying contraband from the Dark Valley. Take him out and you can keep the contraband for yourself.</text>
+</string>
+<string id="esc_logoped_quest_gopstop_dialog_9">
+    <text>No problem.</text>
+</string>
+<string id="esc_logoped_quest_gopstop_gotovo_dialog_0">
+    <text>I took out that Stalker and kept the contraband for myself.</text>
+</string>
+<string id="esc_logoped_quest_gopstop_gotovo_dialog_1">
+    <text>Job well done! Here's a small monetary reward.</text>
+</string>
+<string id="esc_logoped_quest_gopstop_gotovo_dialog_2">
+    <text>If you need anything else, just let me know.</text>
+</string>
+<string id="esc_logoped_quest_gopstop_soglasn_dialog_0">
+    <text>I took out that Stalker and kept the contraband for myself.</text>
+</string>
+<string id="esc_logoped_quest_gopstop_soglasn_dialog_1">
+    <text>You did the job well, no questions asked. But it all went too smoothly, which makes me suspicious. So, you go ahead and wander around the Zone while I make some inquiries. If everything checks out, I'll contact you on your PDA.</text>
+</string>
+<string id="esc_logoped_quest_gopstop_soglasn_dialog_2">
+    <text>Understood.</text>
+</string>
+<string id="esc_medic_antibiotic_need_health_care_0">
+    <text>I need medical help.</text>
+</string>
+<string id="esc_medic_antibiotic_need_health_care_1">
+    <text>Come on, let me take a look...</text>
+</string>
+<string id="esc_medic_antibiotic_need_health_care_11">
+    <text>[Continued...]</text>
+</string>
+<string id="esc_medic_antibiotic_need_health_care_111">
+    <text>Alright, you're all good now.</text>
+</string>
+<string id="esc_medic_antibiotic_need_health_care_2">
+    <text>Let's see... Your liver is naturally enlarged, but that's professional... Otherwise, you're as healthy as a Burer!</text>
+</string>
+    <string id="esc_moskit_dialog_0">
+        <text>Hello, dead man! Empty your pockets and hand over your bribe.</text>
+    </string>
+    <string id="esc_moskit_dialog_1">
+        <text>I don't understand! What do you want from me?</text>
+    </string>
+    <string id="esc_moskit_dialog_2">
+        <text>What's there to understand? Hand over the bribe or die!</text>
+    </string>
+    <string id="esc_moskit_dialog_3">
+        <text>Alright, here you go. I only have this artifact worth 1300 rubles, but remember, it won't be easy for you to sell it.</text>
+    </string>
+    <string id="esc_moskit_dialog_4">
+        <text>Alright, leave me alone and let me live.</text>
+    </string>
+    <string id="esc_quest_dangerous_business_merc_dialog_0">
+        <text>Stop right there. Who are you?</text>
+    </string>
+    <string id="esc_quest_dangerous_business_merc_dialog_1">
+        <text>I'm from Skidan, with payment.</text>
+    </string>
+    <string id="esc_quest_dangerous_business_merc_dialog_2">
+        <text>Alright, come on in.</text>
+    </string>
+    <string id="esc_quest_dangerous_business_merc_dialog_3">
+        <text>Here's the bag. The seal is intact, just as we agreed. You can count the contents if you like.</text>
+    </string>
+    <string id="esc_quest_dangerous_business_merc_dialog_4">
+        <text>Great. Let me check the number... all good. I won't count it again - Skidan always keeps his word. So, are you coming with us or staying here?</text>
+    </string>
+    <string id="esc_quest_dangerous_business_merc_dialog_5">
+        <text>You start moving and we'll see. Don't worry, I won't get in your way.</text>
+    </string>
+    <string id="esc_quest_dangerous_business_sidor_dialog_0">
+        <text>How's it going with Shmyga?</text>
+    </string>
+    <string id="esc_quest_dangerous_business_sidor_dialog_1">
+        <text>You arrived just in time - the mercenaries are already on their way. Did you get some rest?</text>
+    </string>
+    <string id="esc_quest_dangerous_business_sidor_dialog_10">
+        <text>I'll figure things out once I get there. So, can I go now?</text>
+    </string>
+    <string id="esc_quest_dangerous_business_sidor_dialog_11">
+        <text>Hold on. If everything goes smoothly, I'll give you a generous 10,000 rubles. It's worth it for a job like this. Alright, go ahead now.</text>
+    </string>
+    <string id="esc_quest_dangerous_business_sidor_dialog_12">
+        <text>You're quite generous, Skidan. I'll go do my job now.</text>
+    </string>
+    <string id="esc_quest_dangerous_business_sidor_dialog_2">
+        <text>We'll get some rest on the other side!</text>
+    </string>
+    <string id="esc_quest_dangerous_business_sidor_dialog_3">
+    <text>Nice to hear from you! So here's the situation: there will be some mercenaries waiting for you near the camp of those degenerates, Shmyga's buddies. I'm paying them good money for this job. Here, take this bag of money. Deliver it to the leader of the group. And be careful not to mess things up! The bag has a seal on it, and I've already sent the mercenaries the number. If anything goes wrong, they'll shoot you on the spot. So be cautious with them.</text>
+</string>
+<string id="esc_quest_dangerous_business_sidor_dialog_4">
+    <text>But they won't kill me for sure, will they? They'll just take the money and say they did the job.</text>
+</string>
+<string id="esc_quest_dangerous_business_sidor_dialog_5">
+    <text>No, Savan, mercenaries are serious people. If they take on a job, they'll do it well. Otherwise, no one will ever hire them again. But if you ever come across them in the Zone in the future, it's best to stay away. If you interfere with their contract, they'll shoot you without a second thought. Do you understand what I'm saying?</text>
+</string>
+<string id="esc_quest_dangerous_business_sidor_dialog_6">
+    <text>Okay. But if it's so complicated with the mercenaries, why didn't you ask some free stalkers? They're closer, and they won't ask for as much money.</text>
+</string>
+<string id="esc_quest_dangerous_business_sidor_dialog_7">
+    <text>Everything should go perfectly, and no one but professionals can be trusted with that. Stalkers are a friendly bunch, but they can't keep their mouths shut. Okay, enough talk. The hired guns will be waiting for you near the rocks not far from Shmyga's camp. You'll give them the money, and you don't have to fight. The most important thing is to find Shmyga and take my case from him.</text>
+</string>
+<string id="esc_quest_dangerous_business_sidor_dialog_8">
+    <text>Are you sure there will be a case there? What if Shmyga has already opened it?</text>
+</string>
+<string id="esc_quest_dangerous_business_sidor_dialog_9">
+    <text>He hasn't opened it. I'm sure. It has a tricky lock that only one master in the Zone can pick. But I've already informed him about the theft, so Shmyga won't try to break it himself. Although he might hide the case somewhere nearby so that it's always within reach. So if you don't find the case with Shmyga, look for it in the camp.</text>
+</string>
+    <string id="esc_quest_dangerous_business_sidor_dialog_complite_0">
+    <text>Well, Skidan, celebrate! I dealt with Shmyga.</text>
+</string>
+<string id="esc_quest_dangerous_business_sidor_dialog_complite_1">
+    <text>Where's the case?!</text>
+</string>
+<string id="esc_quest_dangerous_business_sidor_dialog_complite_2">
+    <text>Here, here! Take your suitcase, Scrooge McDuck. Hehe!</text>
+</string>
+<string id="esc_quest_dangerous_business_sidor_dialog_complite_3">
+    <text>Oh! Praise the Black Stalker! Well done, Savan! Take your hard-earned reward. Ah, now we'll live!</text>
+</string>
+<string id="esc_quest_dangerous_business_sidor_dialog_complite_4">
+    <text>Well, I won't interrupt your joy.</text>
+</string>
+<string id="esc_quest_fighting_for_territory_kusto_complite_dialog_0">
+    <text>What about the bandits?</text>
+</string>
+<string id="esc_quest_fighting_for_territory_kusto_complite_dialog_1">
+    <text>So, how did everything go?</text>
+</string>
+<string id="esc_quest_fighting_for_territory_kusto_complite_dialog_2">
+    <text>They didn't even have time to be surprised.</text>
+</string>
+<string id="esc_quest_fighting_for_territory_kusto_complite_dialog_3">
+    <text>Nothing happened yet.</text>
+</string>
+<string id="esc_quest_fighting_for_territory_kusto_complite_dialog_4">
+    <text>You're not dragging your feet, alright.</text>
+</string>
+<string id="esc_quest_fighting_for_territory_kusto_complite_dialog_5">
+    <text>Thanks a lot! Here's your reward!</text>
+</string>
+<string id="esc_quest_fighting_for_territory_kusto_dialog_0">
+    <text>Shaman sent me. Need any help?</text>
+</string>
+    <string id="esc_quest_fighting_for_territory_kusto_dialog_1">
+        <text>Need help? Yes, we do. You see, we've just set up our base and haven't had the chance to clear the area around it yet. Bandits are everywhere, robbing stalkers who bring me supplies. At this rate, I won't have anything left to trade. Just yesterday, another group of bandits appeared. Brazen, they set up camp right in front of our base! Could you take care of them for us?</text>
+    </string>
+    <string id="esc_quest_fighting_for_territory_kusto_dialog_2">
+        <text>No problem! Everything will be taken care of.</text>
+    </string>
+    <string id="esc_quest_fighting_for_territory_kusto_dialog_3">
+        <text>You know what, maybe some other time.</text>
+    </string>
+    <string id="esc_quest_fighting_for_territory_shaman_dialog_0">
+        <text>Can I help you with something?</text>
+    </string>
+    <string id="esc_quest_fighting_for_territory_shaman_dialog_1">
+        <text>Yes, we have a problem. Ask our trader, he'll explain the situation.</text>
+    </string>
+    <string id="esc_quest_fighting_for_territory_shaman_dialog_2">
+        <text>Okay.</text>
+    </string>
+    <string id="esc_quest_help_nebo_apparatyra_dialog_0">
+        <text>Phew, I brought your equipment. It's heavy.</text>
+    </string>
+    <string id="esc_quest_help_nebo_apparatyra_dialog_1">
+        <text>Great, Savan. We'll set it up now. The main thing is that it works.</text>
+    </string>
+    <string id="esc_quest_help_nebo_apparatyra_dialog_2">
+        <text>Can I help with anything else?</text>
+    </string>
+    <string id="esc_quest_help_nebo_apparatyra_dialog_3">
+        <text>Yes, Savan, but later. For now, you can take care of your own business. Just don't go too far, we'll need your help soon. Stay in touch.</text>
+    </string>
+    <string id="esc_quest_help_nebo_apparatyra_dialog_4">
+        <text>Got it. I won't go far from the Zone.</text>
+    </string>
+    <string id="esc_quest_help_nebo_shaman_dialog_0">
+        <text>What's the urgent matter? Stepa told me about it.</text>
+    </string>
+    <string id="esc_quest_help_nebo_shaman_dialog_1">
+        <text>Sit down. It's a serious matter. Pathogen told me about our dead contact. I don't know if Logoped knew about it, or if Shpala did it himself, but I'm sick of this. It's time to end these scumbags. Are you in?</text>
+    </string>
+    <string id="esc_quest_help_nebo_shaman_dialog_2">
+        <text>Of course. What do you need me to do?</text>
+    </string>
+   <string id="esc_quest_help_nebo_shaman_dialog_3">
+    <text>Actually, we don't need much. We have plenty of weapons, enough ammunition and armor for everyone. But we're really short on people. As you can see, there aren't many of us here at the ATP. I'm not counting the newcomers from the village, they're all inexperienced. To deal with the bandits once and for all, we need allies. The military won't help us, they're too proud. The Duty faction doesn't care about our problems, they're fighting mutants. The Freedom faction doesn't even know what's going on here, and they're neutral with the bandits. So, we're completely alone against these thieving bastards.</text>
+</string>
+<string id="esc_quest_help_nebo_shaman_dialog_4">
+    <text>So, what should we do?</text>
+</string>
+<string id="esc_quest_help_nebo_shaman_dialog_5">
+    <text>I have an idea of who could help us. Can you go to Skidan and get something for us?</text>
+</string>
+<string id="esc_quest_help_nebo_shaman_dialog_6">
+    <text>Sure, no problem. What exactly do you need?</text>
+</string>
+<string id="esc_quest_help_nebo_shaman_dialog_7">
+    <text>Skidan knows about it. I'll contact him now, and he'll give you what you need. And of course, don't tell anyone else about this. We need to keep this a secret to maintain the element of surprise. Alright, you can go now.</text>
+</string>
+<string id="esc_quest_help_nebo_shaman_dialog_8">
+    <text>Got it. My lips are sealed. I'm on my way.</text>
+</string>
+<string id="esc_quest_help_nebo_sidor_dialog_0">
+    <text>Hey Skidan, Shaman sent me to get something. I'm not sure what it is, though.</text>
+</string>
+<string id="esc_quest_help_nebo_sidor_dialog_1">
+    <text>Yeah, I know what it is. Here's your box. Are you trying to make friends with the swampers or something?</text>
+</string>
+<string id="esc_quest_help_nebo_sidor_dialog_2">
+    <text>What are you talking about? I have no idea. Wow, this box is heavy. And who are the swampers?</text>
+</string>
+<string id="esc_quest_help_nebo_sidor_dialog_3">
+    <text>Oh, if you don't know, I won't spoil the surprise. You'll find out when the time comes. Hehe. And be careful not to drop the box, there's valuable equipment in there!</text>
+</string>
+<string id="esc_quest_help_nebo_sidor_dialog_4">
+    <text>I'll try not to drop it too often.</text>
+</string>
+<string id="esc_quest_hunting_npc_wood_goblin_atp_dialog_0">
+    <text>Thank you so much, Savan. I'll tell everyone in our camp how you helped me. Go see Shaman, he'll reward you.</text>
+</string>
+<string id="esc_quest_hunting_npc_wood_goblin_atp_dialog_1">
+    <text>Alright, but how about you? Are you okay?</text>
+</string>
+    <string id="esc_quest_hunting_npc_wood_goblin_atp_dialog_2">
+        <text>It will heal like a dog, the medkit worked. I feel a bit better. I think I'll go to the medic and get my wounds patched up.</text>
+</string>
+<string id="esc_quest_hunting_npc_wood_goblin_atp_dialog_3">
+        <text>Take care of yourself, Leshy. And consider changing your profession.</text>
+</string>
+<string id="esc_quest_hunting_npc_wood_goblin_dialog_0">
+        <text>Hey there. I thought you weren't coming. Did Pёs send you?</text>
+</string>
+<string id="esc_quest_hunting_npc_wood_goblin_dialog_1">
+        <text>Yes. So, you must be the best hunter around here?</text>
+</string>
+<string id="esc_quest_hunting_npc_wood_goblin_dialog_2">
+        <text>Correction - the only hunter. They call me Leshy. Listen to me carefully - everything I say, you do unquestioningly: if I say stand, you stand; if I say lie down, you lie down; if I say kiss a boar on the ass, you kiss a boar on the ass.</text>
+</string>
+<string id="esc_quest_hunting_npc_wood_goblin_dialog_3">
+        <text>Wouldn't you go, old man?!</text>
+</string>
+<string id="esc_quest_hunting_npc_wood_goblin_dialog_4">
+        <text>Just kidding! Don't get angry. Just try not to make noise and follow me step by step. Let's go hunt a boar. There's one here that's as strong as a bear. He's already killed several people. We need to calm him down. Are you ready?</text>
+</string>
+<string id="esc_quest_hunting_npc_wood_goblin_dialog_5">
+        <text>A boar's a boar. Show me the way.</text>
+</string>
+<string id="esc_quest_hunting_npc_wood_goblin_hanter_dialog_0">
+        <text>We last saw the boar not far from the train tracks. There's a small hollow there - it's always damp, even on sunny days. Most likely, the boar's there. When we get closer, you go up the hill on the right and I'll go on the left. When you see the boar, drive it towards me - I'll stop it with my shotgun. And be on the lookout - there could be mutants there too.</text>
+</string>
+<string id="esc_quest_hunting_npc_wood_goblin_hanter_dialog_1">
+        <text>Good luck.</text>
+</string>
+<string id="esc_quest_hunting_npc_wood_goblin_wounded_dialog_0">
+        <text>Damn it, damn it, damn it! It hurts like hell, like they've ripped my stomach open. It's killing me. Do you have a medkit? I'll die otherwise.</text>
+</string>
+<string id="esc_quest_hunting_npc_wood_goblin_wounded_dialog_1">
+        <text>Here's a medkit. You're not cut out to be a hunter, Leshy. You're as useless as a turd. You need to change your profession while you're still alive.</text>
+</string>
+<string id="esc_quest_hunting_npc_wood_goblin_wounded_dialog_2">
+        <text>Sorry, I don't have a medkit.</text>
+</string>
+    <string id="esc_quest_hunting_npc_wood_goblin_wounded_dialog_3">
+        <text>"Thank you for the medkit, Savan. I underestimated my strength... It's good you were nearby. Listen, I can make it to the camp on my own, no problem. But I'm not much of a shooter right now. Can you take me to the ATP? There might still be some beasts lurking in the bushes."</text>
+    </string>
+    <string id="esc_quest_hunting_npc_wood_goblin_wounded_dialog_4">
+        <text>"No problem. Hang in there, Leshiy, we're almost at the camp."</text>
+    </string>
+    <string id="esc_quest_hunting_shaman_dialog_0">
+        <text>"Well, well, look who we have here, Savan."</text>
+    </string>
+    <string id="esc_quest_hunting_shaman_dialog_1">
+        <text>"Any problems?"</text>
+    </string>
+    <string id="esc_quest_hunting_shaman_dialog_2">
+        <text>"No problems, Savan. I just wanted to talk to you as the leader of the stalkers in the Zone. Officially, you know. I'm the elder around here, although among free stalkers, it's just a formality, as you can imagine."</text>
+    </string>
+    <string id="esc_quest_hunting_shaman_dialog_3">
+        <text>"Speak, Shaman, I'm listening carefully."</text>
+    </string>
+    <string id="esc_quest_hunting_shaman_dialog_4">
+        <text>"Petya thinks highly of you. And now I see for myself that you're not just any guy - you helped Leshiy in a tough moment. Here's a small reward for you."</text>
+    </string>
+    <string id="esc_quest_hunting_shaman_dialog_5">
+        <text>"Thanks for the shotgun - I've been dreaming of one for a long time."</text>
+    </string>
+    <string id="esc_quest_line_borland_meet_dialog_0">
+        <text>"Borland! Glad to see you alive and well! How did you manage to shake off the military?"</text>
+    </string>
+    <string id="esc_quest_line_borland_meet_dialog_1">
+        <text>"There are still good people in the world. Shaman's stalkers bailed me out. I knew right away that you wouldn't be able to gather that much money in two days. And Koljazin isn't stupid. On the second day, when the deadline was approaching, he came to me and started asking who else could pay the ransom for me. You can always count on being put up against the wall, but you can't make that much money that fast. So, I sent a message to Shaman, and he sent a messenger with the ransom. But Koljazin is still angry at you, so don't mess with the military anymore. And be careful, you never know what might happen."</text>
+    </string>
+    <string id="esc_quest_line_borland_meet_dialog_10">
+        <text>"Alright, I'll go chat with someone. See you later!"</text>
+    </string>
+    <string id="esc_quest_line_borland_meet_dialog_2">
+        <text>Oh, what a disaster. I had almost gathered the necessary amount, but I fell short. And Kolyazin kept sending me threats on my pager. And then he wrote that they fed you to the mutants, and now it's my turn. Well, I got scared and backed off.</text>
+    </string>
+    <string id="esc_quest_line_borland_meet_dialog_3">
+        <text>Yeah, it's an unpleasant situation. The Colonel will now make it his business to get to you - he's stubborn. Watch your back more often now.</text>
+    </string>
+    <string id="esc_quest_line_borland_meet_dialog_4">
+        <text>That's true, but let's not dwell on the sad stuff. How are you doing?</text>
+    </string>
+    <string id="esc_quest_line_borland_meet_dialog_5">
+        <text>I'm doing fine, even though I got shot a couple of times by the soldiers. It's nothing serious, I've been through worse. Why did I call you? Will you be my partner? I've been in the Zone for many years, you won't get lost with me. Experience, as they say, is something you can't buy! My previous partner decided to quit the Zone and go somewhere else, maybe to the States or somewhere. He got tired, you know. And he made enough money here, enough for the rest of his life and even for his grandkids. I even wanted to go to America with him, but at the last moment I changed my mind - I can't live without adrenaline! So I decided to come back to the Zone and find a new partner somewhere here. And then I saw you crawling through the hole in the fence, and there was a minefield. I thought, well, that's it - the cat's done for. And me too, because they'll send me to the outpost for the explosion. That's why I decided to rescue you. It was just a coincidence. And now I see that you're not a total idiot, you pick things up quickly, and you're good at adapting to situations. And most importantly - you don't whine. I'll teach you a few tricks of the trade, and you'll become an excellent stalker. So, are you in?</text>
+    </string>
+    <string id="esc_quest_line_borland_meet_dialog_6">
+        <text>I'm not against it. You seem like a reliable guy. Do you have a plan for what's next? I've had my fill of the Cordon and realized that there's not much money to be made here. Should we head north together? Or maybe towards the center of the Zone? I've heard different things about the center, don't know if they're true. But apparently, everything there is made of pure gold. Or something like that.</text>
+    </string>
+    <string id="esc_quest_line_borland_meet_dialog_7">
+        <text>Hold on a minute, what kind of Zone center can we reach with our ragtag group? First, we need to get some gear and better weapons. There's no gold in the center of the Zone, but we can strike it rich there. And make flippers there too. Even faster than striking it rich. That's why we need good... </text>
+    </string>
+    <string id="esc_quest_line_borland_meet_dialog_8">
+        <text>So, what's your plan?</text>
+</string>
+<string id="esc_quest_line_borland_meet_dialog_9">
+        <text>My plan is a clean thermonuclear bomb! Just kidding. I do have a plan. I'm going to chat with Skidan. He asked me for some service, to go somewhere or something like that. I can't refuse - he'll get offended. But I'll try to bargain with him for some cheap gear in return. So, I might be gone for a day or two. Don't just sit around doing nothing. Go see Pathogen and Shaman, they started something but it didn't work out. Maybe they need some help. Who knows, you might even earn a bit. Every penny counts for us now.</text>
+</string>
+<string id="esc_quest_line_borland_meet_dialog_frend_0">
+        <text>Hello buddy! How are you doing?</text>
+</string>
+<string id="esc_quest_line_important_meet_borland_dialog_0">
+        <text>Where have you been?</text>
+</string>
+<string id="esc_quest_line_important_meet_borland_dialog_1">
+        <text>You can't even imagine what happened to me!</text>
+</string>
+<string id="esc_quest_line_important_meet_borland_dialog_10">
+        <text>Let me try. So... Mm-hmm... Wow... Is that all? That's interesting... What kind of artifact did they snatch from the Monolith? And I've never heard about a lab near the Cordon. There are some service tunnels here, but no one knows where they lead. And the strangest thing is that the Monolith agent was wearing a Freedom mask. Nobody will believe it if you tell them!</text>
+</string>
+<string id="esc_quest_line_important_meet_borland_dialog_11">
+        <text>Do you think what's written in the PDA is true? I mean, about the artifact and the lab?</text>
+</string>
+<string id="esc_quest_line_important_meet_borland_dialog_12">
+        <text>If there was an artifact, someone has probably already found it and sold it to Skidan or someone else. But I wouldn't mind checking out the information about the lab. Can you imagine if no stalker has been there yet? You can gather so much stuff there! And we won't need any artifact Klondike.</text>
+</string>
+<string id="esc_quest_line_important_meet_borland_dialog_13">
+        <text>So, what's next?</text>
+</string>
+<string id="esc_quest_line_important_meet_borland_dialog_14">
+        <text>I'll try to find out about the catacombs from Skidan. He's been sitting in his basement for so long, he's practically one of the first stalkers. He must know something. And your mission, bro, is the most responsible - go see Logoped. You haven't had a falling out with him, have you? Do you talk normally? Try to get something out of him about the Freedom captive. The bros still don't know that they had a Monolith guy in captivity. Try to find out where they caught him, maybe the entrance to the catacombs is nearby. Just be careful, don't mess with the bros...</text>
+</string>
+    <string id="esc_quest_line_important_meet_borland_dialog_15">
+        <text>I'll do my best.</text>
+</string>
+<string id="esc_quest_line_important_meet_borland_dialog_2">
+        <text>Were the mutants causing trouble? Or did the bandits rob you?</text>
+</string>
+<string id="esc_quest_line_important_meet_borland_dialog_3">
+        <text>No way! Someone tried to smash my skull on the elevator! Somebody crept up behind me and hit me straight on the head. It's still ringing. I was unconscious, but they didn't take anything. Everything is still with me, can you believe it?</text>
+</string>
+<string id="esc_quest_line_important_meet_borland_dialog_4">
+        <text>Weird. What were you doing on the elevator?</text>
+</string>
+<string id="esc_quest_line_important_meet_borland_dialog_5">
+        <text>I was looking for Stepka there, he was supposed to unlock the Stalker PDA for me. And I found him. But it was too late - Stepka was killed.</text>
+</string>
+<string id="esc_quest_line_important_meet_borland_dialog_6">
+        <text>Wow! Who killed Stepka? And what was in the PDA? Tell me everything in order.</text>
+</string>
+<string id="esc_quest_line_important_meet_borland_dialog_7">
+        <text>I freed a Stalker from the bandits captivity, and instead of saying "thanks", he just shot himself in the head. I took his PDA and searched for Stepka to unlock it and see what's inside.</text>
+</string>
+<string id="esc_quest_line_important_meet_borland_dialog_8">
+        <text>And?</text>
+</string>
+<string id="esc_quest_line_important_meet_borland_dialog_9">
+        <text>Here's the PDA. I didn't understand a damn thing. Some kind of encryption, I didn't understand half of the words. Maybe you'll be able to figure it out?</text>
+</string>
+<string id="esc_quest_line_patogen_meet_dialog_0">
+        <text>I heard you're offering work?</text>
+</string>
+<string id="esc_quest_line_patogen_meet_dialog_1">
+        <text>I heard they milk cows in Limansk! Ha-ha! Well, I have some problems. Can you help me figure them out? I'll pay you well.</text>
+</string>
+<string id="esc_quest_line_patogen_meet_dialog_10">
+        <text>Alright, I'll do it.</text>
+</string>
+<string id="esc_quest_line_patogen_meet_dialog_2">
+        <text>Go ahead.</text>
+</string>
+   <string id="esc_quest_line_patogen_meet_dialog_3">
+    <text>Shaman and I decided that we can't afford to lose people in clashes with bandits anymore. Even the stalkers are tired of fighting, and not everyone can pass through the "Bakery". So we decided to make a deal with the gang - they let our people pass through the tunnel freely, and we give them a percentage of our earnings once a week. The negotiator seemed happy with the terms. We sent our contact person with the agreement, but he never made it to Logoped. I have no idea where he could have gone - he vanished into thin air. We don't want to jump to conclusions about the gang too soon, especially since it's in everyone's best interest to honor the agreement. But our contact person has disappeared, so what happened to him?</text>
+</string>
+<string id="esc_quest_line_patogen_meet_dialog_4">
+    <text>Why did you send him without any protection?</text>
+</string>
+<string id="esc_quest_line_patogen_meet_dialog_5">
+    <text>That's the thing - we didn't expect any foul play. I've known Logoped for a long time, we crossed paths a few years ago. He may be a bandit, but he keeps his word. However, he and our Shaman don't get along - they had a falling out. That's why I handle all the negotiations with Logoped. And he's clearly not involved in this.</text>
+</string>
+<string id="esc_quest_line_patogen_meet_dialog_6">
+    <text>Could Logoped have enemies among his own people who want to set him up?</text>
+</string>
+<string id="esc_quest_line_patogen_meet_dialog_7">
+    <text>That was also a possibility - someone really doesn't want us to make a deal with the gang. And I have a hunch about who that might be.</text>
+</string>
+<string id="esc_quest_line_patogen_meet_dialog_8">
+    <text>And who is it?</text>
+</string>
+<string id="esc_quest_line_patogen_meet_dialog_9">
+    <text>They have a real piece of work in their camp named Shpala. He threatened to kill all the free stalkers, but Logoped keeps him on a short leash. This Shpala could have pulled something behind his boss's back. Here's the plan: I'll give you Shpala's radio frequency. Our technician Stepka has golden hands, he's already hacked into all the gang leaders' radios. They don't have their own technician, so they call Stepka whenever something breaks. And Stepka isn't dumb - he's already cracked their frequencies and codes, so we can monitor all their movements at any time. So, keep an eye on Shpala: what he's doing, where he's going, and who he's talking to.</text>
+</string>
+<string id="esc_quest_line_patogen_meet_dialog_complite_one_0">
+    <text>I've been keeping an eye on Shpala.</text>
+</string>
+    <string id="esc_quest_line_patogen_meet_dialog_complite_one_1">
+    <text>Do you have any leads on our contact?</text>
+</string>
+<string id="esc_quest_line_patogen_meet_dialog_complite_one_2">
+    <text>Yes, but the news is bad. Our contact is dead. The bandits killed him, but I don't think it's as simple as it seems.</text>
+</string>
+<string id="esc_quest_line_patogen_meet_dialog_complite_one_3">
+    <text>This is what I feared. Did Shpala decide to betray the Speech Therapist? Or did the Speech Therapist know everything? But then why did they kill our guy? There are many questions, but no answers. Here, take this as payment for your work.</text>
+</string>
+<string id="esc_quest_line_patogen_meet_dialog_complite_one_4">
+    <text>That's not all. Besides your contact and the bandits, there was another stalker there. Judging by the patch on his armor, he was from the "Freedom" clan. But he was completely frozen - I killed the bandits, and this "Freedom" guy picked up a gun from the ground and shot himself. Can you imagine? He put the gun to his head and pulled the trigger without saying a word.</text>
+</string>
+<string id="esc_quest_line_patogen_meet_dialog_complite_one_5">
+    <text>What? You're kidding me. He shot himself? Yeah, right. Don't lie to me. We haven't seen anyone from "Freedom" around here for a long time. What are they doing here? And I definitely don't believe he shot himself. Maybe they like to smoke weed or something hallucinogenic, but to commit suicide - you're a storyteller. Anyway, here's 500 rubles for your interesting story, go buy yourself a flag. I'll take care of serious matters - the bandits can't get away with killing our contact.</text>
+</string>
+<string id="esc_quest_line_patogen_meet_dialog_complite_one_6">
+    <text>You're wrong, Patogenych, that's exactly what happened. Anyway, it's your business. Goodbye for now.</text>
+</string>
+<string id="esc_quest_line_patogen_meet_dialog_complite_two_0">
+    <text>I've been watching Shpala.</text>
+</string>
+<string id="esc_quest_line_patogen_meet_dialog_complite_two_1">
+    <text>Did you find out anything about our contact?</text>
+</string>
+<string id="esc_quest_line_patogen_meet_dialog_complite_two_2">
+    <text>I'm not 100% sure, but he's probably dead. I didn't get too close, but I saw a dead stalker there. Most likely, that's your contact.</text>
+</string>
+<string id="esc_quest_line_patogen_meet_dialog_complite_two_3">
+    <text>What if it's not him? Although, who am I kidding. That dead guy is probably our contact. Poor guy. But the bandits can't get away with this, whether or not the Speech Therapist knew about it. Those bastards need to be punished. Here's your payment - thanks for keeping an eye on things.</text>
+</string>
+    <string id="esc_quest_line_patogen_meet_dialog_complite_two_4">
+        <text>Погоди, Патогеныч, это ещё не всё. Шпала с бандитами у того дома какого-то сталкера в плену держат. Точно не скажу, но нашивка на бронике - «Свобода». Я в бинокль разглядел.</text>
+    </string>
+    <string id="esc_quest_line_patogen_meet_dialog_complite_two_5">
+        <text>А вот это интересно! Свобода, хех. Зачем свободовец так далеко от своей базы забрёл? Их тут отродясь не видели... У нас со Свободой мир. Вроде как союзники нам. Есть желание разобраться? У меня тоже. Заплачу за любую информацию. Или за решение проблемы.</text>
+    </string>
+    <string id="esc_quest_line_patogen_meet_dialog_complite_two_6">
+        <text>Самому интересно. И не оставлять же человека в плену у этих отморозков.</text>
+    </string>
+    <string id="esc_quest_line_patogen_meet_dialog_complite_two_7">
+        <text>Я тебе не указ, как сам решишь. Если вдруг спасешь из плена - веди к нам сюда. Только бегом надо, пока его бандюки не шлёпнули.</text>
+    </string>
+    <string id="esc_quest_line_patogen_meet_dialog_complite_two_8">
+        <text>Убёг бегом бежать.</text>
+    </string>
+    <string id="esc_quest_line_salvation_freedom_dialog_0">
+        <text>Патогеныч, не знаю, как сказать. Херь какая-то. Свободовец застрелился.</text>
+    </string>
+    <string id="esc_quest_line_salvation_freedom_dialog_1">
+        <text>Что значит "застрелился"? Сам???</text>
+    </string>
+    <string id="esc_quest_line_salvation_freedom_dialog_2">
+        <text>А то и значит! Перебил я бандитов, подхожу к свободовцу, а он ствол с земли подобрал и в голову себе выстрелил. Ни слова не говоря. Я даже сориентироваться не успел.</text>
+    </string>
+    <string id="esc_quest_line_salvation_freedom_dialog_3">
+        <text>Во дела... «Свободы» на Кордоне нам ещё не хватало. Да и бандитам он на кой чёрт сдался, у них же вроде нейтралитет? А застрелися-то он почему, укурился что-ли? Ну и история. Загадки во тьме. Если что нового узнаешь - заходи.</text>
+    </string>
+    <string id="esc_quest_line_salvation_freedom_dialog_4">
+        <text>Обязательно.</text>
+    </string>
+    <string id="esc_quest_line_secret_freedom_fyrgon_dialog_0">
+        <text>Привет труженикам молота и отвёртки! Дело есть - КПК сможешь разлочить?</text>
+    </string>
+    <string id="esc_quest_line_secret_freedom_fyrgon_dialog_1">
+        <text>Про паяльник забыл. Привет. Давай свой КПК, посмотрю что да как. А чего залоченный-то? Украл что-ли, или с трупа снял?</text>
+    </string>
+    <string id="esc_quest_line_secret_freedom_fyrgon_dialog_2">
+        <text>Да ты чего? Я никого не убивал, он уже убитый был. В смысле хозяин. Представляешь, я его спас от бандитов, а он возьми да и застрелись.</text>
+    </string>
+    <string id="esc_quest_line_secret_freedom_fyrgon_dialog_3">
+        <text>Ничего себе. Ну да ладно, не моё это дело. КПК я разблокировать смогу, только тут время понадобится. Заходи через пару часов.</text>
+    </string>
+    <string id="esc_quest_line_secret_freedom_fyrgon_dialog_4">
+        <text>Отлично, скоро вернусь.</text>
+    </string>
+    <string id="esc_quest_line_secret_freedom_fyrgon_dialog_5">
+        <text>Погоди, ты бы к Шаману зашел, у него дело есть срочное, может поможешь ему, а я КПК тебе как раз разблокирую бесплатно.</text>
+    </string>
+    <string id="esc_quest_line_secret_freedom_fyrgon_dialog_6">
+        <text>Договорились.</text>
+    </string>
+    <string id="esc_quest_line_secret_freedom_patogen_dialog_0">
+        <text>Стёпку не видал? Я к нему с услугой обратился, а он куда-то свалил. Странно.</text>
+    </string>
+    <string id="esc_quest_line_secret_freedom_patogen_dialog_1">
+        <text>Я без понятия куда он уйти мог, мне не докладывает. Хотя, постой-ка. Серёга буквально пять минут назад вернулся с ходки и что-то он про Стёпку говорил. Кажется, тот Серёгу чуть с ног не сбил у остановки, бежал куда-то в сторону элеватора. Ты там и глянь.</text>
+    </string>
+    <string id="esc_quest_line_secret_freedom_patogen_dialog_2">
+        <text>Спасибо, побегу гляну.</text>
+    </string>
+    <string id="esc_quest_serious_business_d1_dialog_0">
+        <text>Не видал тут давеча сталкера по кличке Шмыга? Ну или кого похожего на него? Или вообще кого-нибудь подозрительного?</text>
+    </string>
+    <string id="esc_quest_serious_business_d1_dialog_1">
+        <text>Шмыгу дня два или три не видел. Вроде как пропал он с концами. Скидан за ним сильно убивался, не знаю уж, отчего такие чувства. По-моему, подонок он, и нечего о нём грустить. А подозрительного... Дай-ка подумать. Сам я не видел, но ребята у костра болтали о каких-то странных типах на элеваторе. Может, там Шмыга и прячется?</text>
+    </string>
+    <string id="esc_quest_serious_business_d1_dialog_2">
+        <text>Может быть. Пойду, ещё у кого-нибудь спрошу.</text>
+    </string>
+    <string id="esc_quest_serious_business_d1_dialog_3">
+        <text>А ты у Кишки спроси, он всюду свой нос суёт. Может подскажет чего. Он тут, в деревне сейчас.</text>
+    </string>
+    <string id="esc_quest_serious_business_d1_dialog_4">
+        <text>Спрошу. Спасибо, Пёс.</text>
+    </string>
+    <string id="esc_quest_serious_business_d2_dialog_0">
+        <text>Слушай, не видал на днях каких-нибудь подозрительных типов на Кордоне?</text>
+    </string>
+    <string id="esc_quest_serious_business_d2_dialog_1">
+        <text>Да тут каждая вторая рожа подозрительная. Твоя, например, очень подозрительная. Ты конкретней спрашивай - кого ищешь?</text>
+    </string>
+    <string id="esc_quest_serious_business_d2_dialog_2">
+        <text>Шмыгу ищу. Знаешь такого?</text>
+    </string>
+    <string id="esc_quest_serious_business_d2_dialog_3">
+        <text>Ну, знаю. Дрянь-человек. Пару дней назад это было. Сидели мы у костра, а этот Шмыга всем хвастался, мол, скоро разбогатеет и свалит из Зоны. А потом куда-то пропал. Мы так и подумали, что он свалил. А вчера Ромка его видел возле заброшенного дома напротив фермы за мостом. Что-то Шмыга там не поделил с братками, очень громко они ругались. Ромка решил не вмешиваться да стороной обошёл. А вообще, ты сходи к Рисовальщику на АТП. Этот мужик все слухи знает: кто, что, где, куда и почему. Прям сарафанное радио и газета "Аргументы и факты", только в одном лице. Если и он не знает, то никто не знает.</text>
+    </string>
+    <string id="esc_quest_serious_business_d2_dialog_4">
+        <text>Спасибо за наводку.</text>
+    </string>
+    <string id="esc_quest_serious_business_d3_dialog_0">
+        <text>Говорят, ты слухами поделиться можешь? Про сталкера Шмыгу что-нибудь знаешь?</text>
+    </string>
+    <string id="esc_quest_serious_business_d3_dialog_1">
+        <text>Знаю я твоего Шмыгу - неприятный тип. Да только если ищешь его, то ко мне зря пришёл - не знаю я, где он ошивается, не докладывается он мне. Но если он на Кордоне, то здесь всего несколько нормальных мест для укрытия: элеватор, дом у фермы за мостом и блокпост на севере. Посмотри в этих местах, авось и найдёшь там Шмыгу. Если он жив, конечно.</text>
+    </string>
+    <string id="esc_quest_serious_business_d3_dialog_2">
+        <text>Ну что ж, и на том спасибо.</text>
+    </string>
+    <string id="esc_quest_serious_business_d3_dialog_3">
+        <text>Спасибо на хлеб не намажешь.</text>
+    </string>
+    <string id="esc_quest_serious_business_d3_dialog_4">
+        <text>Вот тебе на бутерброд с красной икорочкой. Удачи!</text>
+    </string>
+    <string id="esc_quest_serious_business_d3_dialog_5">
+        <text>Ничего, с голоду не помрёшь.</text>
+    </string>
+    <string id="esc_quest_serious_business_npc_pate_dialog_0">
+        <text>Чё надо, фраер?</text>
+    </string>
+    <string id="esc_quest_serious_business_npc_pate_dialog_1">
+        <text>Мужики, я проблем не желаю. Просто ищу одного человека тут. Не знаете, случаем, Шмыгу?</text>
+    </string>
+    <string id="esc_quest_serious_business_npc_pate_dialog_2">
+        <text>Ты кто? И чё тебе от него надо?</text>
+    </string>
+    <string id="esc_quest_serious_business_npc_pate_dialog_3">
+        <text>Да мне ему послание передать надо, буквально на пару слов. Так вы знаете его?</text>
+    </string>
+    <string id="esc_quest_serious_business_npc_pate_dialog_4">
+        <text>Слышишь, посланец, давай-ка ты чеши отсюда, пока ноги целы.</text>
+    </string>
+    <string id="esc_quest_serious_business_npc_pate_dialog_5">
+        <text>Я уйду, не вопрос. Только скажите, здесь Шмыга или нет?</text>
+    </string>
+    <string id="esc_quest_serious_business_npc_pate_dialog_6">
+        <text>Ты чё, не врубаешься?! Я тебе сейчас в башке ещё одну дырку сделаю, если ты про нашего бугра ещё чё вякнешь!</text>
+    </string>
+    <string id="esc_quest_serious_business_npc_pate_dialog_7">
+        <text>Так Шмыга ваш бугор?</text>
+    </string>
+    <string id="esc_quest_serious_business_npc_pate_dialog_8">
+        <text>Ну всё, фуфел, ты нарвался! Вали его, пацаны!!!</text>
+    </string>
+    <string id="esc_quest_serious_business_npc_pate_dialog_9">
+        <text>Уп-с!</text>
+    </string>
+    <string id="esc_quest_serious_business_sidor_dialog_0">
+        <text>Сталкер Саван для выполнения работы прибыл!</text>
+    </string>
+    <string id="esc_quest_serious_business_sidor_dialog_1">
+        <text>Ох ты, какой шустрый! Молодец! Держи конфетку.</text>
+    </string>
+    <string id="esc_quest_serious_business_sidor_dialog_10">
+        <text>Не парься, Скидан, всё сделаю в лучшем виде.</text>
+    </string>
+    <string id="esc_quest_serious_business_sidor_dialog_2">
+        <text>Рад стараться! Ладно, пошутили и хватит. Что стряслось?</text>
+    </string>
+    <string id="esc_quest_serious_business_sidor_dialog_3">
+        <text>Эх, Саван, мне и самому не до шуток. В общем, такое дело - есть тут один сталкер, звать Шмыгой. Имечко дурацкое, не спорю. Хотя, кому я рассказываю. Но не в этом дело. Короче, этот Шмыга мне должен серьёзную сумму. Очень. Вызвался он быть посредником между мной и одними... Тебе не нужно это знать, к делу не относится. Кто они - неважно, но мне их связи позарез нужны были. Впрочим, это к делу тоже не относится. Короче, я устроил этому Шмыге пару проверок - вроде нормальный парень оказался. Все проверки мои прошел. Всё сделал без сучка и без задоринки. Вот я и доверился ему - попросил его передать тем самым людям оплату за товар. В итоге товар-то я получил, а деньги до клиентов так и не дошли. Ладно, у меня всегда заначка имеется на черный день - кое-как расплатился с поставщиками. С пустыми карманами остался.</text>
+    </string>
+    <string id="esc_quest_serious_business_sidor_dialog_4">
+        <text>Не пойму, к чему ты всё это рассказываешь. А что со Шмыгой случилось? Погиб или сбежал?</text>
+    </string>
+    <string id="esc_quest_serious_business_sidor_dialog_5">
+        <text>Я сначала думал, что он погиб. Чёрта-с-два, жив и целёхонек он. Только кличут его теперь не Шмыгой. Масть сменил. Его нового имени я не знаю. Но точно знаю, что он где-то на Кордоне трётся - местные ребятки видели похожего мужика недавно. Так что к тебе у меня очень важное задание: найди этого сталкера. Но не убивай, денег при нём может не оказаться. Твоя задача только найти его. Остальное мои заботы. Берёшься за поиски?</text>
+    </string>
+    <string id="esc_quest_serious_business_sidor_dialog_6">
+        <text>Что платишь?</text>
+    </string>
+    <string id="esc_quest_serious_business_sidor_dialog_7">
+        <text>Даю десять тысяч. И ещё скидку на свои товары. Саван, очень надо, соглашайся.</text>
+    </string>
+    <string id="esc_quest_serious_business_sidor_dialog_8">
+        <text>Хорошо, найду я твоего должника.</text>
+    </string>
+    <string id="esc_quest_serious_business_sidor_dialog_9">
+        <text>Запомни, ни при каких обстоятельствах не убивай Шмыгу или его дружков. Если он умрёт, то и мои денежки уйдут в могилу вместе с ним. А если он сбежит на север Зоны, то его там уже вовек не сыщешь.</text>
+    </string>
+    <string id="esc_quest_serious_business_sidor_dialog_complite_0">
+        <text>Выполнил я твоё задание. Самого Шмыгу не видел, но знаю где у него лагерь. Он со своими дружками на северном блокпосту устроился. У них там, по ходу, банда новая организовалась. А он стал бугром. Очень агрессивные у него друзья - мне чуть пулю в голову не засадили. Спасло только то, что быстро бегаю.</text>
+    </string>
+    <string id="esc_quest_serious_business_sidor_dialog_complite_1">
+        <text>Молодец, Саван! Всё правильно сделал. Насчёт Шмыги и его банды не беспокойся, ими займутся профессионалы. Но твоя помощь мне ещё пригодится. Ты пока отдохни, а я переговорю кое с кем. Через часок подходи, будет для тебя особое задание. Учти, придётся пострелять, так что запасись патронами и аптечками, мало ли как всё обернётся.</text>
+    </string>
+    <string id="esc_quest_serious_business_sidor_dialog_complite_2">
+        <text>Отлично, не терпится проучить этих отморозков.</text>
+    </string>
+    <string id="esc_quest_serious_business_sidor_dialog_fail_0">
+        <text>Завалил я этих упырей, друзей Шмыги. Да только его самого там не оказалось. Видать, ускользнуть успел. Ты извини, Скидан, но они первые начали.</text>
+    </string>
+    <string id="esc_quest_serious_business_sidor_dialog_fail_1">
+        <text>«Первые начали»? Ты что, ребёнок малолетний такие отмазки выдумывать? Эх ты, Саван. Испортил всё дело. Кто тебя просил геройствовать? Я же тебе по-русски сказал - никого не убивать! А ты?</text>
+    </string>
+    <string id="esc_quest_serious_business_sidor_dialog_fail_2">
+        <text>Что я? Я же говорю, они первыми в меня выстрелили! Мне что, по-твоему, надо было стоять и пули ловить? Проучил уродов, в следующий раз неповадно твоему Шмыге будет.</text>
+    </string>
+    <string id="esc_quest_serious_business_sidor_dialog_fail_3">
+        <text>Да не будет следующего раза! Теперь Шмыга уйдёт к центру Зоны, а там ищи его свищи. Всё, плакали мои денежки. На вот, держи за уродов оплату, пять штук тебе хватит. Остальное в неустойку пойдёт. Эх, Саван, Саван... А ведь такие надежды подавал. Прощай.</text>
+    </string>
+    <string id="esc_quest_serious_business_sidor_dialog_fail_4">
+        <text>Да я... это... не специально я, Скидан.</text>
+    </string>
+    <string id="esc_quest_shadowing_shaman_complite_dialog_0">
+        <text>Выследил я Сойера и узнал место, где он прячет хабар. Вот координаты.</text>
+    </string>
+    <string id="esc_quest_shadowing_shaman_complite_dialog_1">
+        <text>Отлично Саван, держи вознаграждение.</text>
+    </string>
+    <string id="esc_quest_shadowing_shaman_complite_dialog_2">
+        <text>Что вы с ним сделаете?</text>
+    </string>
+    <string id="esc_quest_shadowing_shaman_complite_dialog_3">
+        <text>На кол посадим! Шутка. У нас есть правила клана, а он их нарушил. Так что придётся нам его наказать. Отведем куда-нибудь в лесочек, дадим пистолет и один патрон. Будет ему урок, если, конечно выберется.</text>
+    </string>
+    <string id="esc_quest_shadowing_shaman_complite_dialog_4">
+        <text>Жёстко.</text>
+    </string>
+    <string id="esc_quest_shadowing_shaman_complite_dialog_5">
+        <text>Правила - пустой звук, если нет наказания. Нельзя спустить всё это с рук, на то я и лидер.</text>
+    </string>
+    <string id="esc_quest_shadowing_shaman_complite_dialog_6">
+        <text>Ну ладно, удачи тебе.</text>
+    </string>
+    <string id="esc_quest_shadowing_shaman_dialog_0">
+        <text>Есть работа для меня?</text>
+    </string>
+    <string id="esc_quest_shadowing_shaman_dialog_1">
+        <text>Есть одно дельце, Саван, как раз для такого, как ты. Нужен человек новый, со строны. Понимаешь, завелась на корабле крыса. У ребят вещи пропадать начали. Подозрения падают на Сойера, но с поличным его не поймали, а доказать, что это именно он, никто не может. Надо бы проследить за ним, но только без шума. Просто глянь куда он то и дело бегает, а потом мне это место покажешь. Только действуй скрытно, и самосудом не занимайся, мы его сами проучим.</text>
+    </string>
+    <string id="esc_quest_shadowing_shaman_dialog_2">
+        <text>Устроили бы ему тёмную, и всех делов.</text>
+    </string>
+    <string id="esc_quest_shadowing_shaman_dialog_3">
+        <text>Это мы всегда успеем. Да только украденные вещи мы так не вернём. Этот Сойер упёртый мужик. Скидываю тебе координаты его КПК. Глянь куда он снова собрался. Только не светись.</text>
+    </string>
+    <string id="esc_quest_shadowing_shaman_dialog_4">
+        <text>Лады, сделаю.</text>
+    </string>
+    <string id="esc_quest_shadowing_soer_dialog_0">
+        <text>Фух! Ну ты и напугал, мужик. Чего к людям подкрадываешься?</text>
+    </string>
+    <string id="esc_quest_shadowing_soer_dialog_1">
+        <text>Так вот, где ты ворованные вещички прячешь.</text>
+    </string>
+    <string id="esc_quest_shadowing_soer_dialog_2">
+        <text>Э, мужик, полегче! Это мои вещи. Ты кто такой вообще?</text>
+    </string>
+    <string id="esc_quest_shadowing_soer_dialog_3">
+        <text>Меня послал Шаман, чтобы выследить, где крыса свои запасы прячет. Теперь я знаю всё.</text>
+    </string>
+    <string id="esc_quest_shadowing_soer_dialog_4">
+        <text>Чёрт! Мужик, прошу, не выдавай меня Шаману! Ведь без этих вещей он ничего не докажет. Не сдавай меня! А я тебе денег дам. Сколько тебе платят? Две тысячи? Пять? Я дам тебе 10 тысяч, чтобы ты не выдавал меня. А Шаману скажешь левые координаты - там тайник Васьки Лютого. Я туда пару украденных вещичек подкину, и все на него подумают. Соглашайся!</text>
+    </string>
+    <string id="esc_quest_shadowing_soer_dialog_5">
+        <text>Ну ладно, деньги возьму.</text>
+    </string>
+    <string id="esc_quest_shadowing_soer_dialog_6">
+        <text>Держи деньги. Достань КПК, я скину тебе координаты Васькиного схрона. Ну всё, готово.</text>
+    </string>
+    <string id="esc_quest_shadowing_soer_dialog_7">
+        <text>Советую тебе бежать с Кордона. Бывай.</text>
+    </string>
+    <string id="esc_quest_trifling_matter_npc_garlic_dialog_0">
+        <text>Ты, что ли, почтальоном у Скидана заделался? Принёс?</text>
+    </string>
+    <string id="esc_quest_trifling_matter_npc_garlic_dialog_1">
+        <text>Конечно. Держи свой ящик. Тяжеленный, зараза. Всё в целости и сохранности.</text>
+    </string>
+    <string id="esc_quest_trifling_matter_npc_garlic_dialog_2">
+        <text>Ну, спасибо, удружил. А то у нас времени совсем мало осталось - с мужиками в ходку собираемся. Назаказывали всякого, а послать за товаром некого. Держи вот, от меня лично, премию за скорость доставки.</text>
+    </string>
+    <string id="esc_quest_trifling_matter_npc_garlic_dialog_3">
+        <text>Ух ты, спасибо! Если чего ещё надо будет, меня Саваном звать, обращайтесь.</text>
+    </string>
+    <string id="esc_quest_trifling_matter_sidor_dialog_0">
+        <text>Что за работа? Сколько платишь?</text>
+    </string>
+    <string id="esc_quest_trifling_matter_sidor_dialog_1">
+        <text>Зашёл-таки, а я уж думал, ты сгинул где. Хе-хе.</text>
+    </string>
+    <string id="esc_quest_trifling_matter_sidor_dialog_10">
+        <text>Вот так бы сразу, а то устроил тут исповедь. По рукам, давай свою посылку.</text>
+    </string>
+    <string id="esc_quest_trifling_matter_sidor_dialog_2">
+        <text>Не понял юмора. Чего звал-то?</text>
+    </string>
+    <string id="esc_quest_trifling_matter_sidor_dialog_3">
+        <text>Работа нужна ещё?</text>
+    </string>
+    <string id="esc_quest_trifling_matter_sidor_dialog_4">
+        <text>Ясен перец, нужна. Зачем же я тогда пришел, по-твоему?</text>
+    </string>
+    <string id="esc_quest_trifling_matter_sidor_dialog_5">
+        <text>Ну, мало ли, может ты зашёл больного старика проведать. Апельсинчиков принёс или ещё какой гостинчик. А то от вашего брата даже хорошего слова не дождешься, не то что апельсинчиков. Вечно нас, торговцев, недолюбливаете. А у нас, думаешь, жизнь - шоколад? Цвет, может, и такой же, да на вкус совсем другая. Вот возьму, да и свалю на Большую землю. Поеду на юга отдыхать. Вот тогда вы вспомните, кто такой был Скидан и что он для вас сделал. Я же тут ради вас, обормотов, всё здоровье угробил. Печень ни к черту, спина болит, колени крутит. В санаторий мне нужно, на воды целебные. Или на курорт. Если подумать, то на курорт даже лучше.</text>
+    </string>
+    <string id="esc_quest_trifling_matter_sidor_dialog_6">
+        <text>Выговорился? Может о деле поговорим?</text>
+    </string>
+    <string id="esc_quest_trifling_matter_sidor_dialog_7">
+        <text>Да ну тебя. Нет в тебе искры божьей. Не хочу я с тобой дел иметь.</text>
+    </string>
+    <string id="esc_quest_trifling_matter_sidor_dialog_8">
+        <text>Тогда на кой чёрт ты меня звал, старый хрыч? Есть работа - давай, нет - я пошёл.</text>
+    </string>
+    <string id="esc_quest_trifling_matter_sidor_dialog_9">
+        <text>Постой, Саван, извини. Куда-то меня понесло. Не обижайся, погода, видать, влияет. Есть для тебя одно дельце. Напрягаться даже не придётся - надо доставить посылочку одному сталкеру на АТП. Сталкер, погоняло Чеснок, будет ждать тебя у входа. За работу плачу 3 тысячи рублей. После доставки, конечно. По рукам?</text>
+    </string>
+    <string id="esc_quest_trifling_matter_sidor_dialog_complite_0">
+        <text>Всё нормально. Доставил посылку в лучшем виде. Мне тот сталкер Чеснок даже премию дал за скорость.</text>
+    </string>
+    <string id="esc_quest_trifling_matter_sidor_dialog_complite_1">
+        <text>Ну, раз он с тобой расплатился, то я тебе ничего платить не буду.</text>
+    </string>
+    <string id="esc_quest_trifling_matter_sidor_dialog_complite_2">
+        <text>Вот козёл!</text>
+    </string>
+    <string id="esc_quest_trifling_matter_sidor_dialog_complite_3">
+        <text>Обидеть хочешь? Да шучу я! Юмор у меня такой! А ты сразу «козёл». Эх, молодёжь, ничего-то вы в жизни не понимаете. А уж тут, в Зоне, и подавно. Вот твои деньги - я своё слово всегда держу.</text>
+    </string>
+    <string id="esc_quest_trifling_matter_sidor_dialog_complite_4">
+        <text>Ну ты шутник. Петросян отдыхает.</text>
+    </string>
+    <string id="esc_quest_trifling_matter_sidor_dialog_complite_5">
+        <text>А как же! Тут без юмора никуда! Хе-хе-хе!</text>
+    </string>
+    <string id="esc_quest_trifling_matter_sidor_dialog_complite_6">
+        <text>Тоже мне, «Аншлаг» в подвале. Ладно, будет ещё работа, зови.</text>
+    </string>
+    <string id="esc_quest_trifling_matter_sidor_dialog_fail_0">
+        <text>Скидан, ну ё-моё, что за дела?! Почему ты не предупредил, что у вас тут гопота бродит? Отобрали твою посылку! Ур-р-роды! Сам еле живой ушёл - чуть не пристрелили. Давай компенсацию за риск!</text>
+    </string>
+    <string id="esc_quest_trifling_matter_sidor_dialog_fail_1">
+        <text>А ну пошёл вон, ублюдок! Ты что думал, меня вот так развести можно?! Думал, я как маленький ребёнок тебе на слово поверю?! Этот сталкер, с которым ты добро из посылки поделил, он на меня работает!!! Остолоп ты чёртов! Проверка это была.</text>
+    </string>
+    <string id="esc_quest_trifling_matter_sidor_dialog_fail_2">
+        <text>Скидан, да я...</text>
+    </string>
+    <string id="esc_quest_trifling_matter_sidor_dialog_fail_3">
+        <text>Быстро свалил отсюда, пока я тебя дробью не накормил!!! Ишь кого кинуть удумал, скотина! Чтоб духу твоего я больше не видел!</text>
+    </string>
+    <string id="esc_quest_trifling_matter_sidor_dialog_fail_4">
+        <text>Да я... Не серчай, начальник.</text>
+    </string>
+    <string id="esc_quest_trifling_matter_sour_dialog_0">
+        <text>Здорово, бродяга. Дело есть, давай поговорим.</text>
+    </string>
+    <string id="esc_quest_trifling_matter_sour_dialog_1">
+        <text>Ну, здорово, коли не шутишь. Что за дело?</text>
+    </string>
+    <string id="esc_quest_trifling_matter_sour_dialog_10">
+        <text>Была, не была, давай вскрывай скорее замок.</text>
+    </string>
+    <string id="esc_quest_trifling_matter_sour_dialog_11">
+        <text>Вот это другое дело! Сейчас, один момент.</text>
+    </string>
+    <string id="esc_quest_trifling_matter_sour_dialog_12">
+        <text>Ну, что там?</text>
+    </string>
+    <string id="esc_quest_trifling_matter_sour_dialog_13">
+        <text>Ого, да тут добра навалом! Сейчас, погоди, всё по чесноку разделим. Вот, смотри, что возьмёшь: Калаш или каску?</text>
+    </string>
+    <string id="esc_quest_trifling_matter_sour_dialog_14">
+        <text>Каску давай, хоть голову прикрою. А то стреляют тут всякие.</text>
+    </string>
+    <string id="esc_quest_trifling_matter_sour_dialog_15">
+        <text>Калаш давай, тут без пушки никуда.</text>
+    </string>
+    <string id="esc_quest_trifling_matter_sour_dialog_16">
+        <text>Держи. Так, смотрим дальше. Что выбираешь: советский подствольник или забугорный прицел?</text>
+    </string>
+    <string id="esc_quest_trifling_matter_sour_dialog_17">
+        <text>Прицел давай, прикручу куда-нибудь. Я ж в своей роте самым метким стрелком был.</text>
+    </string>
+    <string id="esc_quest_trifling_matter_sour_dialog_18">
+        <text>Давай гранатомёт, люблю такие вещи - раз шмальнул и всех навынос.</text>
+    </string>
+    <string id="esc_quest_trifling_matter_sour_dialog_19">
+        <text>Лады, забирай. О, да тут ещё и пушки есть! Какую хочешь: итальянское ружьё или английскую винтовку?</text>
+    </string>
+    <string id="esc_quest_trifling_matter_sour_dialog_2">
+        <text>Я тут слыхал, что ты посылку на АТП несёшь. Сколько тебе Скидан за неё обещал?</text>
+    </string>
+    <string id="esc_quest_trifling_matter_sour_dialog_20">
+        <text>Винтовку давай, не люблю я эти ружья.</text>
+    </string>
+    <string id="esc_quest_trifling_matter_sour_dialog_21">
+        <text>Конечно дробовик - убойная вещь!</text>
+    </string>
+    <string id="esc_quest_trifling_matter_sour_dialog_22">
+        <text>Так, тут ещё пару артов имеется. Их я, пожалуй, себе заберу, заслужил. А тебе вот, комбез остался - "Ветер Свободы". Хорошая вещь, я тебе скажу. Свободовцы в лёгкой броне толк знают.</text>
+    </string>
+    <string id="esc_quest_trifling_matter_sour_dialog_23">
+        <text>Сгодится. Это всё?</text>
+    </string>
+    <string id="esc_quest_trifling_matter_sour_dialog_24">
+        <text>Ага. Ну что, доволен? Тут снаряги явно больше чем на на 5 штук. Ну а с Скиданем ты уж как-нибудь договоришься.</text>
+    </string>
+    <string id="esc_quest_trifling_matter_sour_dialog_25">
+        <text>Договорюсь. Пока.</text>
+    </string>
+    <string id="esc_quest_trifling_matter_sour_dialog_3">
+        <text>Твоё какое дело? Не суй свой нос в чужой вопрос. Иди, куда шел.</text>
+    </string>
+    <string id="esc_quest_trifling_matter_sour_dialog_4">
+        <text>Но-но, полегче! Не дерзи, родное сердце! Я тебе помочь хочу, а ты ругаешься. Не хочешь, так сразу и скажи.</text>
+    </string>
+    <string id="esc_quest_trifling_matter_sour_dialog_5">
+        <text>Не просил я у тебя помощи. Я тебя не знаю. Отвали.</text>
+    </string>
+    <string id="esc_quest_trifling_matter_sour_dialog_6">
+        <text>Фу, как грубо! Ты хоть знаешь, что внутри посылки, а? Вижу, что не знаешь. А вот я знаю - там товара на тридцать штук! Стволы козырные, обвес и разное всякое. А Скидан тебе всего пять даёт. Или меньше? Меньше??? Вот жмот. Так вот, какое моё предложение: давай поделим содержимое посылки пополам, а ты скажешь торговцу, что у тебя посылку гопники отняли. Тут такое сплошь и рядом. Могу тебе для достоверности фингал организовать. Ну, что скажешь? Соглашайся! Тебе на такой хабар горбатиться и горбатиться. А тут получишь вся и сразу.</text>
+    </string>
+    <string id="esc_quest_trifling_matter_sour_dialog_7">
+        <text>А не пошёл бы ты, дядя!</text>
+    </string>
+    <string id="esc_quest_trifling_matter_sour_dialog_8">
+        <text>Оу! Ну не хочешь, как хочешь. Не надо на меня глаза выпучивать, нервный какой. Моё дело предложить - твоё отказаться. Только учти, что без спецоборудования замок на ящике тебе не открыть. А у меня, чисто случайно, такое оборудование имеется. Если надумаешь, я тут буду ждать. Ты обдумай спокойно, прикинь все плюсы. Скидан не обеднеет, у него процент на усушку-утруску и бой стеклотары во все цены включен. Сам понимаешь, Зона. Ну, думай, торопить не стану.</text>
+    </string>
+    <string id="esc_quest_trifling_matter_sour_dialog_9">
+        <text>Ага, ищи дураков!</text>
+    </string>
+    <string id="esc_quest_work_for_beginner_sidor_dialog_0">
+        <text>Дед, где тут торговца найти? Скидан какой-то. Сказали, в этом бункере искать.</text>
+    </string>
+    <string id="esc_quest_work_for_beginner_sidor_dialog_1">
+        <text>Ха-ха-ха! Дед?! Ха-ха! Дожил! Ха-ха-ха! Ой, не могу!</text>
+    </string>
+    <string id="esc_quest_work_for_beginner_sidor_dialog_10">
+        <text>Да ладно тебе, мужик. Я всё понял, не дурак. Найду я тебе этот... как там его? Африкат-шмартифак. В общем, принесу я тебе твою чудо-хрень. Ты только не кипятись. Жди - скоро буду.</text>
+    </string>
+    <string id="esc_quest_work_for_beginner_sidor_dialog_2">
+        <text>Чего смешного-то? Ты, что-ли, Скидан? Мне сообщение пришло от тебя. Работу предлагаешь?</text>
+    </string>
+    <string id="esc_quest_work_for_beginner_sidor_dialog_3">
+        <text>Да погоди ты со своей работой, аха-ха-ха! Ох, ну вот и приплыл - молодёжь дедом называет! Ох... Аж до слёз. Ну, чего тебе?</text>
+    </string>
+    <string id="esc_quest_work_for_beginner_sidor_dialog_4">
+        <text>Работу ищу, сказал ведь уже.</text>
+    </string>
+    <string id="esc_quest_work_for_beginner_sidor_dialog_5">
+        <text>Как звать? Что-то рожа у тебя незнакомая. Новенький?</text>
+    </string>
+    <string id="esc_quest_work_for_beginner_sidor_dialog_6">
+        <text>Я тут первый день, звать Саваном.</text>
+    </string>
+    <string id="esc_quest_work_for_beginner_sidor_dialog_7">
+        <text>Вот что, Саван. Ну и погоняло у тебя жуткое, прости госспади. Да не суть. Прежде, чем дать тебе нормальную работу, я должен удостовериться в твоих способностях. Для начала - всё по стандарту. Притащи мне какой-нибудь артефакт. Желательно, что-нибудь из «Пекарни», а то поясница в последнее время беспокоить стала - прогреть хочу. За такую услугу я дам тебе... скажем...одну тысячу вечнодеревянных рублей. Согласен?</text>
+    </string>
+    <string id="esc_quest_work_for_beginner_sidor_dialog_8">
+        <text>Дед, ты чего, шутишь что-ли? Так это не смешно. Мне 30 тысяч за два дня собрать надо, а ты мне одну тысячу предлагаешь. Это несерьёзно. Давай, поступим другим способом: ты мне сейчас занимаешь 30 тысяч рублей, я расплачиваюсь с вояками и освобождаю своего напарника, а потом возвращаюсь к тебе и отрабатываю долг. Ну что, по рукам?</text>
+    </string>
+    <string id="esc_quest_work_for_beginner_sidor_dialog_9">
+        <text>Малец, ты чего-то не догоняешь? Ты либо соглашаешься на моё щедрое предложение и находишь для меня какой-нибудь огненный артефакт, либо валишь на все четыре стороны. А уж я позабочусь, чтобы ты в Зоне больше и копейки не заработал. Выбирай, как поступим.</text>
+    </string>
+    <string id="esc_quest_work_for_beginner_sidor_dialog_complite_0">
+        <text>Я по поводу африката.</text>
+    </string>
+    <string id="esc_quest_work_for_beginner_sidor_dialog_complite_1">
+        <text>Принёс?</text>
+    </string>
+    <string id="esc_quest_work_for_beginner_sidor_dialog_complite_10">
+        <text>Есть тут одна занятная штуковина. Смотри. Это?</text>
+    </string>
+    <string id="esc_quest_work_for_beginner_sidor_dialog_complite_11">
+        <text>Отлично, Саван. А вот тебе, как и обещал, заслуженная награда. Для начала неплохо, но для серьёзного дела ты ещё не годишься. Ты походи пока, окрестности посмотри, с людьми пообщайся. Если понадобишься - я тебе сообщение скину. Ну, удачи тебе, сталкер.</text>
+    </string>
+    <string id="esc_quest_work_for_beginner_sidor_dialog_complite_12">
+        <text>И ты не болей, Скидан.</text>
+    </string>
+    <string id="esc_quest_work_for_beginner_sidor_dialog_complite_2">
+        <text>Нет, еще не нашёл.</text>
+    </string>
+    <string id="esc_quest_work_for_beginner_sidor_dialog_complite_3">
+        <text>Так какого ты тогда приперся?</text>
+    </string>
+    <string id="esc_quest_work_for_beginner_sidor_dialog_complite_4">
+        <text>Да так, заскочил посмотреть, что да как.</text>
+    </string>
+    <string id="esc_quest_work_for_beginner_sidor_dialog_complite_5">
+        <text>Скидан, там пекло как в духовке! Я туда и с одной стороны попробовал, и с другой - чуть жо... то есть, чуть штаны себе не подпалил. Ну никак не подобраться. Так ещё и не знаю, что тебе тащить - как этот твой африкат выглядит-то? Там мусора разного полно, не пойму, что брать. Короче, я с пустыми руками. Давай другое задание, полегче.</text>
+    </string>
+    <string id="esc_quest_work_for_beginner_sidor_dialog_complite_6">
+        <text>Огорчил ты меня до невозможности. Эх ты, салага. Всё с тобой ясно. А работы для тебя у меня больше нет, уж извини. Но если что для такого растяпы подберётся, то я тебе сообщение скину, будь уверен. С глаз моих уйди.</text>
+    </string>
+    <string id="esc_quest_work_for_beginner_sidor_dialog_complite_7">
+        <text>Ну ладно, бывай.</text>
+    </string>
+    <string id="esc_quest_work_for_beginner_sidor_dialog_complite_8">
+        <text>Нашёл, вот, хреновину какую-то. На горный хрусталь похожа. Только светится необычно. Подойдёт?</text>
+    </string>
+    <string id="esc_quest_work_for_beginner_sidor_dialog_complite_9">
+        <text>Слушай, уж и не знаю оно или не оно. Держи, вот тебе шарик. Тёплый. Больше там ничего более странного не было.</text>
+    </string>
+    <string id="esc_risovalshik_get_order_0">
+        <text>Я хочу забрать заказ.</text>
+    </string>
+    <string id="esc_risovalshik_get_order_111">
+        <text>Вот. «Степной орёл»! Пришлось с ним повозиться... Вещью один коллекционер заинтересовался, так я утащил буквально у него из-под носа. Сам взгляни: ручная работа, детали подогнаны с ювелирной точностью. Слышал шутку про снайперский пистолет? Так вот это не шутка - это он. Да, с тебя ещё 2800.</text>
+    </string>
+    <string id="esc_risovalshik_get_order_1111">
+        <text>Хорошо, держи.</text>
+    </string>
+    <string id="esc_risovalshik_get_order_11111">
+        <text>И ты держи... Спасибо за заказ!</text>
+    </string>
+    <string id="esc_risovalshik_get_order_1112">
+        <text>У меня нет столько денег.</text>
+    </string>
+    <string id="esc_risovalshik_get_order_11121">
+        <text>Что ж, товар я могу чуток придержать. Надеюсь, ты сможешь побыстрей найти нужную сумму.</text>
+    </string>
+    <string id="esc_risovalshik_get_order_1113">
+        <text>Я не хочу это покупать.</text>
+    </string>
+    <string id="esc_risovalshik_get_order_11131">
+        <text>Если отказываешься забрать собственный заказ, я в следующий раз не смогу рассчитывать на твоё слово. Мне придётся включить в цену затраты на риск и увеличить сумму задатка.</text>
+    </string>
+    <string id="esc_risovalshik_get_order_111311">
+        <text>Тем не менее, я не буду забирать этот заказ.</text>
+    </string>
+    <string id="esc_risovalshik_get_order_1113111">
+        <text>Ну что же, дело твоё.</text>
+    </string>
+    <string id="esc_risovalshik_get_order_1114">
+        <text>Я ещё подумаю.</text>
+    </string>
+    <string id="esc_risovalshik_get_order_11141">
+        <text>Как хочешь, конечно... Твой товар я пока придержу.</text>
+    </string>
+    <string id="esc_risovalshik_get_order_112">
+        <text>Вот, «Степной орёл»! Сверхточная машина, на секундочку... С тебя ещё 2800.</text>
+    </string>
+    <string id="esc_risovalshik_get_order_121">
+        <text>Смотри, это - «Альпиец». С уверенностью могу сказать, что такой пистолет один на всю Зону. Уникальная модель: выпустили малой серией для одного спецподразделения. Достать было нелегко, но я уж подключил кое-кого из своих знакомых за рубежом... Увеличенный магазин, ствол из особо прочной стали, ствольная коробка из сверхпрочного полимера. Оставшиеся 2800 - и он твой.</text>
+    </string>
+    <string id="esc_risovalshik_get_order_122">
+        <text>Вот «Альпиец» - пистолет с увеличенной ёмкостью магазина. Оставшиеся 2800 - и он твой.</text>
+    </string>
+    <string id="esc_risovalshik_get_order_131">
+        <text>Взгляни - эта штука называется «Марш». Принадлежал наёмнику по кличке Пёсодав. Компактная крупнокалиберная пушка с коротким ходом затвора и облегченной затворной частью - видно, что прежний хозяин, хоть и редкая был сволочь, но в оружии толк знал... Говорят, любимой шуткой Пёсодава было прострелить человеку все четыре конечности, а потом, пока тот падал - и голову... мда. В общем, с тебя 2800.</text>
+    </string>
+    <string id="esc_risovalshik_get_order_132">
+        <text>Вот, скорострельный пистолет «Марш». С тебя еще 2800.</text>
+    </string>
+    <string id="esc_risovalshik_get_order_211">
+        <text>Смотри: пистолет-пулемет «Фрезер». Сразу скажу - не обращай внимания на внешний вид, это совершенно новое оружие. Даже не серийный образец - прототип, прямо из оружейной мастерской, полностью ручная работа! Те инженеры спроектировали неплохое оружие ближнего боя: большой калибр, отличные скорострельность и точность. С тебя ещё 8000.</text>
+    </string>
+    <string id="esc_risovalshik_get_order_212">
+        <text>Угу, скорострельный пистолет-пулемёт «Фрезер». С тебя ещё 8000.</text>
+    </string>
+    <string id="esc_risovalshik_get_order_221">
+        <text>Прекрасный образец - «Карабинер»! Замечательный армейский дробовик. Может вести автоматический огонь, причём хозяина бешеной отдачей не бьёт - там внутри сбалансированная безударная система. С тебя оставшиеся 8000.</text>
+    </string>
+    <string id="esc_risovalshik_get_order_222">
+        <text>Вот: автоматический дробовик «Карабинер». С тебя оставшиеся 8000.</text>
+    </string>
+    <string id="esc_risovalshik_get_order_231">
+        <text>Полагаю, вот именно то, что тебе нужно. «Отбойник», одна из последних разработок! Вся партия должна была отправиться в Центральную Африку, но мне по знакомству переправили один образец. Автоматический дробовик с ёмким магазином и отличной скорострельностью. 8000 и забирай.</text>
+    </string>
+    <string id="esc_risovalshik_get_order_232">
+        <text>Конечно. Автоматический дробовик «Отбойник» с магазином повышенной ёмкости. За 8000.</text>
+    </string>
+    <string id="esc_risovalshik_get_order_311">
+        <text>Конечно. Вот: автоматно-гранатомётный комплекс «Шторм». Опытный образец - модификация обычного оружия, делали строго для спецподразделений, действующих в Зоне. Чудо технической мысли братьев-славян... 16000 и забирай.</text>
+    </string>
+    <string id="esc_risovalshik_get_order_312">
+        <text>Конечно. Вот: автоматно-гранатомётный комплекс «Шторм», с магазином повышенной ёмкости, за недостающие 16000.</text>
+    </string>
+    <string id="esc_risovalshik_get_order_321">
+        <text>Вот она, ГП37, штурмовая винтовка нового поколения! Точная, надёжная, удобная, со встроенной оптикой... Принадлежала одному из группы наблюдателей ООН - их сюда забросили для изучения ситуации... а та возьми и стань критической. За 16000 она твоя.</text>
+    </string>
+    <string id="esc_risovalshik_get_order_322">
+        <text>Вот она, ГП37, штурмовая винтовка нового поколения. С тебя 16000.</text>
+    </string>
+    <string id="esc_risovalshik_get_order_331">
+        <text>Секунду! Вот: модульная винтовка ФТ-200М, детище бельгийских оружейников. Точная, универсальная, полностью двусторонняя - так что не важно, праворукий ты или левша... ну и оптика с гранатомётом до кучи, понятно. Досталась мне от наблюдателей ООН. С тебя ещё 16000.</text>
+    </string>
+    <string id="esc_risovalshik_get_order_332">
+        <text>Вот: модульная винтовка ФТ-200М. С тебя ещё 16000.</text>
+    </string>
+    <string id="esc_risovalshik_get_order_411">
+        <text>Вот - «Прибой». Создавался для военных подразделений, специально для ведения боя с зомбированными, на базе бесшумной снайперской винтовки. У него пониженный темп стрельбы, зато повышенная убойная сила пули, так что зомбированных можно грохать по одному и при этом не выдавать своей позиции. Только в серию она не пошла - это после того как выяснили, что зомбированных можно и так остановить на Барьере. Будет твоя за оставшиеся 16000.</text>
+    </string>
+    <string id="esc_risovalshik_get_order_412">
+        <text>Вот - «Прибой», бесшумная снайперская винтовка с повышенной убойной силой. За оставшиеся 16000 можешь забирать.</text>
+    </string>
+    <string id="esc_risovalshik_get_order_421">
+        <text>Вот, это «СВУ2-А», укороченная снайперская винтовка с повышенным боевым темпом стрельбы. Купил её у Макса - это такой легендарный хранитель группировки «Свобода». Так вот, Макс клялся, что она одна такая на всю Зону... если даже и врал, то в этих местах она точно эксклюзив. С тебя ещё 16000.</text>
+    </string>
+    <string id="esc_risovalshik_get_order_422">
+        <text>Угу. «СВУ2-А» - укороченная снайперская винтовка с повышенным боевым темпом стрельбы. С тебя ещё 16000.</text>
+    </string>
+    <string id="esc_risovalshik_get_order_431">
+        <text>Конечно. Вот, смотри, - «Рысь». Собрана вручную одним местным специалистом... теперь покойным, поэтому другой такой уже не будет. Внешне вроде ничем не отличается от обычного образца, зато в действии сразу чувствуешь разницу: просто идеальное соотношение точности и убойной силы! Оставшиеся 16000 и она будет твоя.</text>
+    </string>
+    <string id="esc_risovalshik_get_order_432">
+        <text>Да, «Рысь» - снайперская винтовка с повышенными точностью боя и мощностью. С тебя оставшиеся 16000.</text>
+    </string>
+    <string id="esc_risovalshik_get_order_511">
+        <text>Смотри. Удалось достать то, что планировал - набор из ЧН-3а и шлема. Сам по себе шлем ничего особого не представляет, но это хорошая база для установки мобильного тактического комплекса с толковым прибором ночного видения и инфракрасным сканером. А вот ЧН-3а - особый разговор. Хорошая защита от пуль и аномалий при лёгкости и мобильности нечасто встречается. За всё вместе - 32000.</text>
+    </string>
+    <string id="esc_risovalshik_get_order_512">
+        <text>Ага. Набор из брони ЧН-3а и тактического шлема. Всё вместе - 32000.</text>
+    </string>
+    <string id="esc_risovalshik_get_order_611">
+        <text>Специально для тебя - комбинезон «СЕВА». Как ты заказывал: замкнутая система дыхания, плюс термостойкость, контур электрозащиты и антикоррозийные материалы внешнего покрытия. В качестве дополнения - встроенные контейнеры для артефактов. Незаменимая вещь для сталкера!.. С тебя, как и договаривались, 24000.</text>
+    </string>
+    <string id="esc_risovalshik_get_order_612">
+        <text>Держи. Комбинезон «СЕВА». Как и договаривались - 24000.</text>
+    </string>
+    <string id="esc_risovalshik_get_order_711">
+        <text>Вот он, красавец! Экзоскелет боевой, одна штука! Лучшая защита от пуль, когтей и осколков, которую только можно найти в Зоне - ну, исключая, понятное дело, бронетехнику... Однако он, как и бронетехника, берёт на себя вес твоего снаряжения - в разумных пределах, конечно. За 48000 забирай его с потрохами - в смысле, с аккумулятором и сервомоторами.</text>
+    </string>
+    <string id="esc_risovalshik_get_order_712">
+        <text>Вот он - экзоскелет боевой, одна штука! 48000 - и забирай.</text>
+    </string>
+    <string id="esc_risovalshik_place_order_0">
+        <text>Хочу сделать заказ.</text>
+    </string>
+    <string id="esc_risovalshik_place_order_1">
+        <text>Без проблем. Что нужно?</text>
+    </string>
+    <string id="esc_risovalshik_place_order_11">
+        <text>Пистолет.</text>
+    </string>
+    <string id="esc_risovalshik_place_order_111">
+        <text>Легко. Пистолет будет стоить 3500. Из них 700 мне нужны как задаток.</text>
+    </string>
+    <string id="esc_risovalshik_place_order_1111">
+        <text>Хорошо, держи.</text>
+    </string>
+    <string id="esc_risovalshik_place_order_11111">
+        <text>Я свяжусь с тобой, когда заказ будет готов.</text>
+    </string>
+    <string id="esc_risovalshik_place_order_1112">
+        <text>У меня сейчас нет денег.</text>
+    </string>
+    <string id="esc_risovalshik_place_order_11121">
+        <text>Что ж... Будут деньги - обращайся.</text>
+    </string>
+    <string id="esc_risovalshik_place_order_1113">
+        <text>Знаешь, я передумал.</text>
+    </string>
+    <string id="esc_risovalshik_place_order_11131">
+        <text>Ладно. Если всё-таки решишь что-то заказать - обращайся.</text>
+    </string>
+    <string id="esc_risovalshik_place_order_112">
+        <text>Знаешь, ты не особо надёжный покупатель, потому пистолет будет стоить 4200. Из них 1400 мне нужны как задаток.</text>
+    </string>
+    <string id="esc_risovalshik_place_order_113">
+        <text>Боюсь, лучшие пистолеты уже распроданы. А ширпотреб можно у Сыча купить.</text>
+    </string>
+    <string id="esc_risovalshik_place_order_12">
+        <text>Оружие для ближнего боя.</text>
+    </string>
+    <string id="esc_risovalshik_place_order_121">
+        <text>Запросто. Это обойдётся тебе в 10000, причём 2000 мне понадобятся сразу.</text>
+    </string>
+    <string id="esc_risovalshik_place_order_122">
+        <text>От предыдущего заказа ты отказался... Значит, этот обойдется тебе в 12000, причем 4000 понадобятся сразу.</text>
+    </string>
+    <string id="esc_risovalshik_place_order_123">
+        <text>М-м-м... Ты знаешь, наверное, я с этим помочь не смогу. Слишком большой спрос.</text>
+    </string>
+    <string id="esc_risovalshik_place_order_13">
+        <text>Штурмовое оружие.</text>
+    </string>
+    <string id="esc_risovalshik_place_order_131">
+        <text>Крупнокалиберное и скорострельное... Обычная цена - 20000, из них 4000 - задаток. Ну как?</text>
+    </string>
+    <string id="esc_risovalshik_place_order_132">
+        <text>С тобой трудно работать. Для тебя цена будет... да, 24000. Из них 8000 - задаток. Согласен?</text>
+    </string>
+    <string id="esc_risovalshik_place_order_133">
+        <text>Как раз с этим сейчас проблемы: военные на Кордоне буйствуют... Недавно кто-то атаковал их блокпост, так что теперь с ними договориться крайне сложно.</text>
+    </string>
+    <string id="esc_risovalshik_place_order_14">
+        <text>Снайперское оружие.</text>
+    </string>
+    <string id="esc_risovalshik_place_order_141">
+        <text>Могу достать за 20000, но 4000 из них нужно будет внести заранее.</text>
+    </string>
+    <string id="esc_risovalshik_place_order_142">
+        <text>Работа с тобой связана с определённым риском... Я мог бы попробовать организовать заказ за 24000, но 8000 из них мне нужны будут заранее.</text>
+    </string>
+    <string id="esc_risovalshik_place_order_143">
+        <text>Прости, с этим туго. У поставщика по части снайпинга определенные... кхм... проблемы со здоровьем.</text>
+    </string>
+    <string id="esc_risovalshik_place_order_15">
+        <text>Бронезащита.</text>
+    </string>
+    <string id="esc_risovalshik_place_order_151">
+        <text>Есть у меня кое-что на примете... Обойдется в 40000, но 8000 из них нужно будет заплатить вперед.</text>
+    </string>
+    <string id="esc_risovalshik_place_order_152">
+        <text>Есть у меня кое-что на примете... Но ты не забрал прошлый заказ, потому этот обойдется в 48000. И 16000 из них нужно будет заплатить вперед.</text>
+    </string>
+    <string id="esc_risovalshik_place_order_153">
+        <text>Ничего лучше предыдущего набора я достать не смогу... Да и тот был в одном экземпляре.</text>
+    </string>
+    <string id="esc_risovalshik_place_order_16">
+        <text>Костюм с замкнутой системой дыхания.</text>
+    </string>
+    <string id="esc_risovalshik_place_order_161">
+        <text>Нечастый заказ... даже не знаю. Могу попробовать достать один за 30000, но тогда 6000 я пропрошу в качестве задатка.</text>
+    </string>
+    <string id="esc_risovalshik_place_order_162">
+        <text>Ты подвел меня с предыдущим заказом, так что я даже не знаю... Могу попробовать достать один за 36000, но тогда 12000 я пропрошу в качестве задатка.</text>
+    </string>
+    <string id="esc_risovalshik_place_order_163">
+        <text>Предыдущий я достал с большим трудом. Боюсь, что второго такого мне сейчас не найти.</text>
+    </string>
+    <string id="esc_risovalshik_place_order_17">
+        <text>Экзоскелет.</text>
+    </string>
+    <string id="esc_risovalshik_place_order_171">
+        <text>Серьёзный выбор!.. Думаю, я мог бы раздобыть его боевую модификацию, но это обойдется в 60000. Недёшево, но это снаряжение стоит таких денег. Учти, 12000 из них будут мне нужны прямо сейчас.</text>
+    </string>
+    <string id="esc_risovalshik_place_order_172">
+        <text>Ты не очень хорошо поступил с предыдущим заказом, так что этот обойдётся тебе в 72000. Учти, 24000 из них нужно заплатить прямо сейчас.</text>
+    </string>
+    <string id="esc_risovalshik_place_order_173">
+        <text>Без шансов. С тех пор как завод-производитель закрыли, экзоскелеты теперь в основном снимают с трупов, но это не мой метод.</text>
+    </string>
+    <string id="esc_risovalshik_place_order_18">
+        <text>Пока ничего.</text>
+    </string>
+    <string id="esc_risovalshik_place_order_2">
+        <text>Прости, сейчас не работаю. Временные трудности с переправкой заказов...</text>
+    </string>
+    <string id="esc_risovalshik_start_11">
+        <text>Приветствую. Я - Рисовальщик. По дешевке скупаю оружие в любом состоянии и торгую информацией.</text>
+    </string>
+    <string id="esc_risovalshik_start_12">
+        <text>Приветствую. Хочешь что-нибудь продать?</text>
+    </string>
+    <string id="esc_risovalshik_start_13">
+        <text>Приветствую.</text>
+    </string>
+    <string id="esc_risovalshik_start_14">
+        <text>Заказ будет выполнен в ближайшее время.</text>
+    </string>
+    <string id="esc_risovalshik_start_15">
+        <text>Твой заказ выполнен. Можешь забрать.</text>
+    </string>
+    <string id="esc_shaman_about_info_dialog_0">
+        <text>Можешь ответить на пару вопросов?</text>
+    </string>
+    <string id="esc_shaman_about_info_dialog_1">
+        <text>Спрашивай что хотел.</text>
+    </string>
+    <string id="esc_shaman_about_info_dialog_2">
+        <text>Расскажи о себе.</text>
+    </string>
+    <string id="esc_shaman_about_info_dialog_22">
+        <text>Расскажи о Зоне.</text>
+    </string>
+    <string id="esc_shaman_about_info_dialog_221">
+        <text>Спрашивай, поделюсь что знаю.</text>
+    </string>
+    <string id="esc_shaman_about_info_dialog_222">
+        <text>Да вот, с первого дня здесь меня один вопрос интересует, правду говорят, что Зона постоянно расширяется?</text>
+    </string>
+    <string id="esc_shaman_about_info_dialog_223001">
+        <text>А ты сам как думаешь? Конечно, правда. Раньше Зона была гораздо меньше. Когда она только появилась, её граница находилась севернее нынешнего Бара. Где точно я тебе не скажу, да никто не скажет, но, судя по наличию аномалий, Зона начиналась у брошенных армейских складов.</text>
+    </string>
+    <string id="esc_shaman_about_info_dialog_223002">
+        <text>И как быстро она увеличивается? Сейчас аномалий здесь довольно много, неужели раньше меньше было?</text>
+    </string>
+    <string id="esc_shaman_about_info_dialog_223003">
+        <text>Хочешь, верь, хочешь не верь, но ещё год назад здесь, на Кордоне, в разы меньше аномалий было. А аномальных полей не было вообще. А пять лет назад в этом районе вообще ни одной аномалии не было. Военные тогда держали защитный периметр в районе нынешнего северного блокпоста на Свалке. Но потом Зона начала увеличиваться. Не знаю почему, это ты у каких-нибудь учёных спрашивай, может они что и знают по этому поводу. Увеличивалась Зона рывками, притом безо всякой на то причины. Это увеличение обычно сопровождалось выбросами. Раньше они крайне редко происходили, раз в несколько месяцев. Но с каждым годом расширение замедлялось. А выбросы слабели, но учащались. Теперь вообще почти каждые сутки гремит, зато аномалий пока дальше Кордона не видели. Но новый барьер вояки всё равно строить начали, теперь уже в десяти километрах от нынешнего.</text>
+    </string>
+    <string id="esc_shaman_about_info_dialog_223004">
+        <text>А с нынешним барьером что будет? Я так понимаю, это уже не первый периметр?</text>
+    </string>
+    <string id="esc_shaman_about_info_dialog_223005">
+        <text>Правильно понимаешь, Саван, не первый это барьер. Так, дай прикинуть... Этот блокпост, что со стеной на юге Кордона, уже третий по счёту. Его начали строить, когда Зона впервые увеличилась. Тогда на периметре много народу полегло. Кого выбросом накрыло, но большинство мутанты загрызли. Никто никогда не видел этих тварей в таком количестве, их там десятки, а то и сотни были! По тревоге все ближайшие части подняли. Ох, и бойня же здесь была! Миномёты, вертолёты, танки, БТРы - били со всего и сразу. По рации даже запросы на бомбардировку передавали, но к тому моменту всё уже успокоилось. После того инцидента за Зону принялись всерьёз. Старый барьер решили не восстанавливать, а на юге Свалки соорудили на скорую руку минные заграждения. Но и на этом не остановились. Решили строить вторую линию защиты на тот случай, если первая не справится. Нынешний блокпост на юге и есть бывшая вторая линия. Теперь он на передовой.</text>
+    </string>
+    <string id="esc_shaman_about_info_dialog_223006">
+        <text>Почему блокпост вояк так странно выглядит? Я в том смысле, что он не похож на укреплённую оборонительную позицию. Да и стена эта странная, почему она так построена, что часть строений внутри периметра оказалось?</text>
+    </string>
+    <string id="esc_shaman_about_info_dialog_223007">
+        <text>Блокпост тебя смущает? Так это и не блокпост. Не было тут никаких военных построек раньше. До аварии в восемьдесят шестом здесь станция техобслуживания была. Да и потом её ещё использовали, заправляли и ремонтировали технику, что на ЧАЭС работала. А после появления Зоны военные обосновались. Никакой стены здесь тогда и не подразумевалось. Её строить начали после первого прорыва, когда этот блокпост объявили второй заградительной линией Чернобыльской Аномальной Зоны. Да только инженеры в спешке что-то напутали, или ещё по какой причине, но строить стену начали южнее блокпоста. После постройки все строения оказались бы внутри Зоны. Кому-то тогда по шапке за оплошность здорово надавали, а стену решили развернуть, чтобы она хотя бы часть строений прикрывала. Вот и получилась такая хренотень.</text>
+    </string>
+    <string id="esc_shaman_about_info_dialog_223008">
+        <text>А ворота где? что-то я их там не увидел.</text>
+    </string>
+    <string id="esc_shaman_about_info_dialog_223009">
+        <text>А нет их больше, снесли. Мутанты пару месяцев назад на прорыв ринулись. Что примечательно, выброса в тот день не было. Просто вмиг откуда-то с севера появились полчища собак, кабанов и плотей, снесли ворота, потоптали несколько солдат и двинулись дальше на Большую землю. А как подоспели вертолёты и начали утюжить мутантов, случилось вообще нечто странное - все твари в едином порыве развернулись и рванули обратно к центру Зоны. Что это было, никто так и не понял, ничего подобного раньше не видали. Ворота решили не восстанавливать, всё равно скоро вторую линию закончат, тогда отсюда солдат и вывезут. Ты, кстати, с юга ведь пришёл? Видал вторую линию? Красота, правда? Всё по правилам фортификации: огнемёты, миномёты, укреплённые окопы и доты с редутами. Минное поле чего стоит, ни один тушкан не проскочит. Денег туда вбухали миллиарды. Европе на безопасность ничего не жалко, спонсирование на высшем уровне.</text>
+    </string>
+
+	
+    <string id="esc_shaman_about_info_dialog_2231">
+        <text>Спасибо за информацию!</text>
+    </string>
+    <string id="esc_shaman_about_info_dialog_224">
+        <text>Вопрос 2</text>
+    </string>
+    <string id="esc_shaman_about_info_dialog_225">
+        <text>Ответ 2</text>
+    </string>
+    <string id="esc_shaman_about_info_dialog_2251">
+        <text>Спасибо за информацию!</text>
+    </string>
+    <string id="esc_shaman_about_info_dialog_226">
+        <text>Вопрос 3</text>
+    </string>
+    <string id="esc_shaman_about_info_dialog_227">
+        <text>Ответ 3</text>
+    </string>
+    <string id="esc_shaman_about_info_dialog_2271">
+        <text>Спасибо за информацию!</text>
+    </string>
+    <string id="esc_shaman_about_info_dialog_228">
+        <text>Вопрос 4</text>
+    </string>
+    <string id="esc_shaman_about_info_dialog_229">
+        <text>Ответ 4</text>
+    </string>
+    <string id="esc_shaman_about_info_dialog_2291">
+        <text>Спасибо за информацию!</text>
+    </string>
+    <string id="esc_shaman_about_info_dialog_230">
+        <text>Вопрос 5</text>
+    </string>
+    <string id="esc_shaman_about_info_dialog_231">
+        <text>Ответ 5</text>
+    </string>
+    <string id="esc_shaman_about_info_dialog_2311">
+        <text>Спасибо за информацию!</text>
+    </string>
+    <string id="esc_shaman_about_info_dialog_3">
+        <text>Что-то конкретное интересует?</text>
+    </string>
+    <string id="esc_shaman_about_info_dialog_33">
+        <text>Расскажи что-нибудь интересное.</text>
+    </string>
+    <string id="esc_shaman_about_info_dialog_331">
+        <text>Про американских шпионов историю слыхал?</text>
+    </string>
+    <string id="esc_shaman_about_info_dialog_332">
+        <text>Нет, а что за история?</text>
+    </string>
+    <string id="esc_shaman_about_info_dialog_333">
+        <text>Ну, значит, слушай. В прошлом году Скидану поступило предложение организовать туристический поход по Зоне для трёх иностранцев. Деньги предлагали хорошие, поэтому торговец и согласился. Но он мужик хитрый, всё проверяет. В общем, пробил он по своим каналам информацию об этих иностранцах, и выяснил что никакие они не туристы, а агенты ЦРУ. Деньги терять Скидан не хотел, но и сталкеров подставлять тоже не дело.</text>
+    </string>
+    <string id="esc_shaman_about_info_dialog_3330001">
+        <text>И что он придумал?</text>
+    </string>
+    <string id="esc_shaman_about_info_dialog_3330002">
+        <text>Он обратился ко мне, объяснил всё как есть. Потолковали мы с ним по душам, и нашли решение - отправить со шпионами в качестве проводника Илюху Муромского. Сам понимаешь, прозвище соответствующее. Детина выше двух метров ростом, косая сажень в плечах, силы в нём немерено. Он как-то раз взрослому кабану шею свернул голыми руками, просто попробовать решил, получится или нет. Так что за себя, в случае чего постоять сможет.</text>
+    </string>	
+    <string id="esc_shaman_about_info_dialog_3330003">
+        <text>А дальше?</text>
+    </string>	
+    <string id="esc_shaman_about_info_dialog_3330004">
+        <text>В назначенное время Илья встретился с «туристами» и повёл их по злачным местам приграничных локаций. «Туристы» хотели издалека посмотреть на некоторых мутантов, сфотографировать их и, если повезёт, кого-нибудь даже подстрелить. Но Илья плохо знал английский язык и не понял даже десятой части того, что говорили ему подопечные. Накопленного багажа знаний ему хватило только чтобы понять, что гости хотят бить мутантов, этим самым Илюха и решил заняться.</text>
+    </string>
+	<string id="esc_shaman_about_info_dialog_3330005">
+        <text>Кажется, я начинаю догадываться.</text>
+    </string>	
+    <string id="esc_shaman_about_info_dialog_3330006">
+        <text>Да ты слушай, это только начало. В общем, три дня Илья таскал за собой несчастных американцев. Где они только не побывали за это время и чего только не насмотрелись. В подземельях Агропрома на них напал кровосос и чуть не зашиб одного «туриста». На Янтаре Илья «случайно» забыл предупредить иностранцев о зомби, и когда один полусгнивший труп начал подниматься на ноги в метре от справляющего малую нужду шпиона, тот большую нужду здесь же справил. Я уж не говорю о нескольких стаях кабанов, слепых псов и плотей, на которых Илюша, опять-таки «случайно», выводил группу. А на третий день, уже на обратном пути, Илья предложил заночевать в недостроенном комплексе на севере Тёмной долины. О бюрерах он, естественно, снова умолчал. Даже не знаю, кому в ту ночь страшнее было, американским шпионам, увидавшим так близко вонючих и грязных карликов в рваных балахонах, или бюрерам, повстречавшим визжащих на ультразвуке от ужаса «туристов». Когда Илья это всё рассказывал, у нас от смеха животы чуть не надорвались. \nНо это ещё не всё. Следующим утром «туристы», с полными воспоминаний штанами, вернулись на Кордон к Скидану, чтобы он переправил их через блокпост. На посту в тот день было оживлённо - приехали какие-то шишки из-за границы. Колязин попросил Скидана организовать для вновь прибывших особые условия. Иностранцами оказались три агента ЦРУ, официально направленные в Зону для прохождения специальной подготовительной программы. Скидан был в недоумении, зачем ЦРУ присылать сначала одних своих агентов под видом «туристов», а потом официально присылать ещё троих агентов. Этими мыслями он поделился с «туристами», на что те с ужасом в глазах на ломаном русском, который они успели выучить за эти три дня с Илюхой, объяснили, что они никакие не шпионы, а обычные туристы, просто приехали посмотреть на Зону, и заплатили за путёвки немалые деньги. Никакого отношения к ЦРУ они не имели.</text>
+    </string>	
+    <string id="esc_shaman_about_info_dialog_3330007">
+        <text>Охренеть! Это что же получается, этот ваш Илья Муромский самых настоящих туристов по Зоне таскал и всячески запугивал, думая, что они шпионы?  Ну вы, блин, даёте! Ха-ха-ха!</text>
+    </string>	
+    <string id="esc_shaman_about_info_dialog_3330008">
+        <text>Да, вот такая история. Чуть людей не загубили. Кстати, официальных шпионов мы тоже с Илюхой отправили, по тому же маршруту. Вот бюреры в Тёмной долине обрадовались. Хе-хе!</text>
+    </string>
+    <string id="esc_shaman_about_info_dialog_3330009">
+        <text>Спасибо, настроение поднял.</text>
+    </string>	
+	
+	
+    <string id="esc_shaman_about_info_dialog_3331">
+        <text>Спасибо за информацию!</text>
+    </string>
+    <string id="esc_shaman_about_info_dialog_334">
+        <text>Вопрос 2</text>
+    </string>
+    <string id="esc_shaman_about_info_dialog_335">
+        <text>Ответ 2</text>
+    </string>
+    <string id="esc_shaman_about_info_dialog_3351">
+        <text>Спасибо за информацию!</text>
+    </string>
+    <string id="esc_shaman_about_info_dialog_336">
+        <text>Вопрос 3</text>
+    </string>
+    <string id="esc_shaman_about_info_dialog_337">
+        <text>Ответ 3</text>
+    </string>
+    <string id="esc_shaman_about_info_dialog_3371">
+        <text>Спасибо за информацию!</text>
+    </string>
+    <string id="esc_shaman_about_info_dialog_338">
+        <text>Вопрос 4</text>
+    </string>
+    <string id="esc_shaman_about_info_dialog_339">
+        <text>Ответ 4</text>
+    </string>
+    <string id="esc_shaman_about_info_dialog_3391">
+        <text>Спасибо за информацию!</text>
+    </string>
+    <string id="esc_shaman_about_info_dialog_340">
+        <text>Вопрос 5</text>
+    </string>
+    <string id="esc_shaman_about_info_dialog_341">
+        <text>Ответ 5</text>
+    </string>
+    <string id="esc_shaman_about_info_dialog_3411">
+        <text>Спасибо за информацию!</text>
+    </string>
+    <string id="esc_shaman_about_info_dialog_4">
+        <text>Откуда ты родом?</text>
+    </string>
+    <string id="esc_shaman_about_info_dialog_44">
+        <text>Родился я в славном городе Оха, что на Сахалине. Надеюсь, знаешь где это? А то нынче молодёжь ничем не интересуется, а своей страной и подавно.</text>
+    </string>
+    <string id="esc_shaman_about_info_dialog_44001">
+        <text>Про Сахалин то? Конечно знаю, это остров на Дальнем Востоке, недалеко от Японии. Надо же, откуда тебя занесло. А чем ты там занимался?</text>
+    </string>
+    <string id="esc_shaman_about_info_dialog_44002">
+        <text>Городок рабочий, живёт в основном за счёт нефти и газа. Да и древним профессиям место нашлось, лесозаготовки да рыбный промысел. Так что работы всегда хватало. Но меня с самого детства на приключения тянуло, не мог я на одном месте усидеть. В округе все горы да леса исходи вдоль и поперёк. Но мне было мало. Поэтому как только мне восемнадцать лет стукнуло, я с радостью в военкомат отправился. В моём случае это был единственный способ выбраться с острова и посмотреть на мир.</text>
+    </string>
+    <string id="esc_shaman_about_info_dialog_441">
+        <text>Спасибо за информацию!</text>
+    </string>
+    <string id="esc_shaman_about_info_dialog_5">
+        <text>А в Зону ты как попал?</text>
+    </string>
+    <string id="esc_shaman_about_info_dialog_55001">
+        <text>Да я сам до сих пор не пойму, то ли это была цепь случайностей, то ли Зона сама меня сюда привела. В общем, в армии я себя хорошо зарекомендовал. Со спортом я с пелёнок дружу, так что даже два года в спецназе для меня не были чем-то непосильным. Хотя, к концу Афганской войны я всё же успел, да только в боях почти не участвовал, повезло. Потом, по рекомендациям из штаба, меня направили на профильное военное обучение. Пока учился обзавёлся семьёй. Детишек, правда, не было, но оно и к лучшему, как оказалось. После учёбы меня по гарнизонам затаскали, не до детей было. А потом отправили в Чечню. Там я свою Маришку и потерял... И зачем, дурак, с собой её тогда взял, ведь говорили что на базе опасно, возможны нападения дудаевских боевиков. А я... идиот... Не уберёг.</text>
+    </string>
+    <string id="esc_shaman_about_info_dialog_55002">
+        <text>Извини, я не хотел напоминать... Прости, не знал.</text>
+    </string>
+    <string id="esc_shaman_about_info_dialog_55003">
+        <text>Забудь, это моя вина, моё прошлое, мой крест. Мне с этим до самой смерти жить. Может, Зона за это и привела меня к себе, как думаешь?.. После первой Чеченской много чего ещё было, всего и не рассказать. Но появление Зоны я помню как сейчас. Такой переполох забыть невозможно. Никто в первые часы даже не понял что случилось: реактор рванул или метеорит упал, а может и вовсе война началась. В Москве ничуть не меньше Киева всполошились. Тогда наши войска по договорённости и отправили в Зону. Этот день я никогда не забуду, Зона постаралась. Я почти весь свой отряд из-за штабных крыс потерял. Им, видите ли, надо было выяснить как аномалии на людей влияют. Ублюдки. А нас даже никто не спрашивал. Как мы с Серёгой и Димкой выбрались оттуда я не представляю. Будто сама Зона нас вела между аномалий. Я как только в штаб вошёл тому генералу сразу промеж глаз зарядил. Хотел уже ствол из кобуры достать, да меня повязали. Сидеть бы мне сейчас далеко и долго, если бы не друзья, помогли мне из камеры выбраться. А как ушёл из лагеря, то выбора у меня особого и не было: либо в Зоне попытаться выжить, либо вне Зоны попытаться существовать. Вот я и выбрал свой путь - лучше пожить хоть немного в Зоне, чем существовать всю оставшуюся жизнь в тюрьмах.</text>
+    </string>
+    <string id="esc_shaman_about_info_dialog_55004">
+        <text>Да-а, вот так история. А домой не тянет, на малую Родину?</text>
+    </string>
+    <string id="esc_shaman_about_info_dialog_55005">
+        <text>Знаешь, в первое время вообще не тянуло, не до этого было. Это сейчас Зона уже более менее обжитая, куда не пойди на кого-нибудь обязательно наткнёшься. А тогда тут вообще никого не было. Я хоть и боевой офицер, ужасов за время службы насмотрелся, но когда на твоих глазах нарушаются все известные законы физики и ты видишь как верный товарищ в нечеловеческих муках исчезает прямо в воздухе, тут уж не до самообладания, страх заменяет все чувства. Но сноровку не пропьёшь, как-то всё же удалось мне выжить. Потом, со временем, когда опыта в Зоне поднабрался, тогда и начали приходить мысли о будущем. Сейчас очень домой вернуться хочется. Повидать родителей, если живы ещё. Да на родные места посмотреть. Веришь, даже готов пойти под трибунал, если бы дали хоть денёк на Родине провести. Эх...</text>
+    </string>
+    <string id="esc_shaman_about_info_dialog_551">
+        <text>Спасибо за информацию!</text>
+    </string>
+    <string id="esc_shaman_about_info_dialog_6">
+        <text>Вопрос 3</text>
+    </string>
+    <string id="esc_shaman_about_info_dialog_66">
+        <text>Ответ 3</text>
+    </string>
+    <string id="esc_shaman_about_info_dialog_661">
+        <text>Спасибо за информацию!</text>
+    </string>
+    <string id="esc_shaman_about_info_dialog_7">
+        <text>Вопрос 4</text>
+    </string>
+    <string id="esc_shaman_about_info_dialog_77">
+        <text>Ответ 4</text>
+    </string>
+    <string id="esc_shaman_about_info_dialog_771">
+        <text>Спасибо за информацию!</text>
+    </string>
+    <string id="esc_shaman_about_info_dialog_777">
+        <text>Да я тебе все что заню, уже рассказал.</text>
+    </string>
+    <string id="esc_shaman_about_info_dialog_8">
+        <text>Вопрос 5</text>
+    </string>
+    <string id="esc_shaman_about_info_dialog_88">
+        <text>Ответ 5</text>
+    </string>
+    <string id="esc_shaman_about_info_dialog_881">
+        <text>Спасибо за информацию!</text>
+    </string>
+    <string id="esc_shaman_about_info_dialog_999">
+        <text>Да нет передумал.</text>
+    </string>
+    <string id="esc_shaman_about_info_dialog_9990">
+        <text>text in default</text>
+    </string>
+    <string id="esc_shoroh_quest_away_from_the_bandits_dialog_0">
+        <text>Ну всё, фраер, суши вёсла.</text>
+    </string>
+    <string id="esc_shoroh_quest_away_from_the_bandits_dialog_1">
+        <text>Да что ж такое-то?! Ну почему все меня по голове бьют?!</text>
+    </string>
+    <string id="esc_shoroh_quest_away_from_the_bandits_dialog_2">
+        <text>Скажи спасибо, что живой. Видать, у Логопеда на тебя есть планы. Хе-хе.</text>
+    </string>
+    <string id="esc_shoroh_quest_away_from_the_bandits_dialog_3">
+        <text>Башка болит, сил нет. Слушай, браток, а может договоримся? Я могу заплатить.</text>
+    </string>
+    <string id="esc_shoroh_quest_away_from_the_bandits_dialog_4">
+        <text>Да чем ты заплатишь? У тебя ж и нет ничего! И с Логопедом я потом разбираться не хочу. Мне такие головняки не в мазу.</text>
+    </string>
+    <string id="esc_shoroh_quest_away_from_the_bandits_dialog_5">
+        <text>У моего напарника деньги есть. Он заплатит! Сколько скажешь, заплатит. Его Борландом зовут.</text>
+    </string>
+    <string id="esc_shoroh_quest_away_from_the_bandits_dialog_6">
+        <text>Борланд, говоришь? Известное погоняло. Слыхал я про такого. Сталкер в авторитете. Этот, может, и заплатит. Ладно, ты пока тут посиди, о грехах своих подумай, а я с твоим корешем перетру. Не уходи никуда.</text>
+    </string>
+    <string id="esc_shoroh_quest_away_from_the_bandits_dialog_7">
+        <text>Да куда я денусь из клетки.</text>
+    </string>
+    <string id="esc_sidor_quest_line_research_underground_dialog_0">
+        <text>Тьфу ты! Напугали, черты окаянные! Какого лешего вы тут делаете?</text>
+    </string>
+    <string id="esc_sidor_quest_line_research_underground_dialog_1">
+        <text>Скидан?! Вот так встреча! Ты сам-то тут чего делаешь?</text>
+    </string>
+    <string id="esc_sidor_quest_line_research_underground_dialog_10">
+        <text>Саван, давай как на духу. Я же тебя насквозь вижу, от меня ничего не утаишь. Вон и Борланд это подтвердит.</text>
+    </string>
+    <string id="esc_sidor_quest_line_research_underground_dialog_11">
+        <text>Да мы... это... как бы...</text>
+    </string>
+    <string id="esc_sidor_quest_line_research_underground_dialog_12">
+        <text>Выкладывай всё как есть, не тяни кота за яйца.</text>
+    </string>
+    <string id="esc_sidor_quest_line_research_underground_dialog_13">
+        <text>Ты слышал о случае со сталкером из "Свободы"?</text>
+    </string>
+    <string id="esc_sidor_quest_line_research_underground_dialog_14">
+        <text>Про самоубийцу-то? Конечно слыхал, да весь Кордон на ушах стоит, как бы сюда "свободные" не нагрянули для расследования. Им ведь и не докажешь, что он сам себе пулю пустил. Из свидетелей только ты. Так что не так с этим сталкером?</text>
+    </string>
+    <string id="esc_sidor_quest_line_research_underground_dialog_15">
+        <text>Он не из "свободных". Это был тайный агент "Монолита".</text>
+    </string>
+    <string id="esc_sidor_quest_line_research_underground_dialog_16">
+        <text>Да ладно?! Не может быть. Ты пьяный, что ли? Монолит, хех. Ну ты и сказанул. Откуда бы ему взяться? Их группировка уже давно распалась, кукловодов-то всех порешили. Нету никакого "Монолита", давно нету.</text>
+    </string>
+    <string id="esc_sidor_quest_line_research_underground_dialog_17">
+        <text>Это ты про чего? Какие кукловоды?</text>
+    </string>
+    <string id="esc_sidor_quest_line_research_underground_dialog_18">
+        <text>Да потом как-нибудь расскажу. Длинная история. Ты мне сначала про агента этого расскажи. Неспроста же ты о нём разговор завёл?</text>
+    </string>
+    <string id="esc_sidor_quest_line_research_underground_dialog_19">
+        <text>Ну так вот, у монолитовца этого при себе был КПК, да только заблокированный. Я попросил Стёпку его разблокировать. Это как раз когда я к тебе за рацией приходил. Я когда от тебя вернулся, пошёл к Стёпку в будку, а его и след простыл. Я его искать отправился... и нашёл. Лучше бы не находил.</text>
+    </string>
+    <string id="esc_sidor_quest_line_research_underground_dialog_2">
+        <text>Не твоё собачье дело. Это ж надо, третий раз за неделю сигнализацию ломают. И откуда вы такие умные берётесь?</text>
+    </string>
+    <string id="esc_sidor_quest_line_research_underground_dialog_20">
+        <text>Ну, и? Не тяни душу, рассказывай.</text>
+    </string>
+    <string id="esc_sidor_quest_line_research_underground_dialog_21">
+        <text>Убили Стёпку.</text>
+    </string>
+    <string id="esc_sidor_quest_line_research_underground_dialog_22">
+        <text>Так вот куда он пропал. А его уже сутки всем лагерем ищут. Чего ж ты раньше-то молчал?</text>
+    </string>
+    <string id="esc_sidor_quest_line_research_underground_dialog_23">
+        <text>Да погоди ты, Скидан, дай закончить. Я когда над Стёпкой наклонился, меня по башке кто-то хорошенько треснул. Я несколько часов без сознания на элеваторе провалялся. А как очнулся, так мёртвого Стёпку и след простыл, как и не было его там. И кто бы мне поверил, что не я его убил, если даже тела нет?</text>
+    </string>
+    <string id="esc_sidor_quest_line_research_underground_dialog_24">
+        <text>Ну, это ты верно подметил. Погоди-ка, где, говоришь, Стёпку нашёл, на элеваторе?</text>
+    </string>
+    <string id="esc_sidor_quest_line_research_underground_dialog_25">
+        <text>Ну да, вчера. А что? Есть какие-то соображения, кто мог меня вырубить?</text>
+    </string>
+    <string id="esc_sidor_quest_line_research_underground_dialog_26">
+        <text>Есть, но тебе сказать не могу. Скажу лишь, что я организовал вчера встречу для очень серьёзных людей на элеваторе, и встреча эта сорвалась. Видимо, из-за тебя и Стёпку. Но вот кто мог убить техника, для меня остаётся загадкой. Хотя...</text>
+    </string>
+    <string id="esc_sidor_quest_line_research_underground_dialog_27">
+        <text>Что? Скидан, не темни. Стёпку убили, тут не до конфиденциальности.</text>
+    </string>
+    <string id="esc_sidor_quest_line_research_underground_dialog_28">
+        <text>Ладно, так уж и быть, дело серьёзное. На элеватор я отправил одного сталкера. Он на днях на Свалке нашёл один занятный контейнер, который уже давно разыскивали мои клиенты из центра Зоны. Это их деньги упёр Шмыга.</text>
+    </string>
+    <string id="esc_sidor_quest_line_research_underground_dialog_29">
+        <text>А что за контейнер? Что внутри? И кто тот сталкер?</text>
+    </string>
+    <string id="esc_sidor_quest_line_research_underground_dialog_3">
+        <text>Скидан, какая сигнализация? Какой третий раз за неделю? Мы тут впервые, честное пионерское.</text>
+    </string>
+    <string id="esc_sidor_quest_line_research_underground_dialog_30">
+        <text>Да кто ж его знает, что внутри контейнера. Я его не открывал, только глянул на цифры на крышке и сразу смекнул, что это именно тот контейнер, что искали мои клиенты. Сталкера того Дуболомом кличут. Очень он обрадовался, когда я ему рассказал про сделку. Сам я не решился выкупать у него контейнер, поэтому и организовал встречу. Да только теперь не знаю что там случилось - клиенты контейнер не получили, сталкер исчез, да ещё и ты с Стёпкой. Мои клиенты не могли на Стёпку напасть - не их методы. Да и сталкер тоже вряд ли на такое решился бы. Хотя, я за него поручиться не смогу. Остаётся кто-то третий. Может бандиты?</text>
+    </string>
+    <string id="esc_sidor_quest_line_research_underground_dialog_31">
+        <text>Дуболом? Ну ничего себе! Я же его знаю, меня Пёс попросил найти этого сталкера при первой встрече. Он мне ещё тогда странным показался, на свой хабар ему явно плевать было. А он вон чего задумал. Может, он и убил Стёпку? А потом и меня по голове огрел как свидетеля?</text>
+    </string>
+    <string id="esc_sidor_quest_line_research_underground_dialog_32">
+        <text>Может и он, хотя мужик вроде нормальный, без заскоков. Зачем ему было Стёпку убивать? Не знаю. Вот уж действительно странная история. И где теперь Дуболома искать - тоже неизвестно.</text>
+    </string>
+    <string id="esc_sidor_quest_line_research_underground_dialog_33">
+        <text>Да, дела... Так на чём я остановился? Ах да, вспомнил. У Стёпку я нашёл разблокированный КПК монолитовца. В нём осталось лишь несколько последних сообщений. Вкратце, там говорилось о некой группе сталкеров, которые украли артефакт у монолитовцев, и те их преследовали. Артефакт оказывает на людей губительное воздействие, что-то там про психику было написано, слишком заумно. Поэтому его поместили в контейнер, и этот контейнер у монолитовцев и умыкнули сталкеры.</text>
+    </string>
+    <string id="esc_sidor_quest_line_research_underground_dialog_34">
+        <text>Контейнер, говоришь? Уж не тот ли это контейнер?..</text>
+    </string>
+    <string id="esc_sidor_quest_line_research_underground_dialog_35">
+        <text>Может и тот. В общем, слушай дальше. Во время погони нескольких сталкеров убили, но оставшимся удалось затеряться. Поэтому монолитовцы привлекли своих агентов под прикрытием, чтобы те обнаружили похитителей. Не знаю, сколько этих агентов было, но сюда, на Кордон, добрался агент под прикрытием свободовца. Он проследил одного из сталкеров до деревни новичков, но его самого повязали бандиты. Уж и не знаю, зачем им это нужно было.</text>
+    </string>
+    <string id="esc_sidor_quest_line_research_underground_dialog_36">
+        <text>Ничего не понимаю. Получается, что Дуболом и есть один из тех сталкеров? Да не может этого быть. Он в Зоне всего пару недель, только на днях на Свалку выбрался, пробыл там всего день и назад вернулся. Тем же днём он и принёс мне тот самый контейнер. Что дальше было, я тебе уже рассказал.</text>
+    </string>
+    <string id="esc_sidor_quest_line_research_underground_dialog_37">
+        <text>Значит, Дуболом нашёл этот контейнер на Свалке. Скорее всего, те сталкеры, что украли артефакт, спрятали его на Свалке, а Дуболом случайно наткнулся на него. Не мог же он их убить. Или мог? Стёпку же кто-то убил. И ещё этот артефакт. Как думаешь, Скидан, что за артефакт в контейнере?</text>
+    </string>
+    <string id="esc_sidor_quest_line_research_underground_dialog_38">
+        <text>Да кто ж его знает! Артефакты каждый день новые появляются. Но если прикинуть, вспоминается мне один артефакт со схожим действием. "Маятник" называется. Только это крайне редкий артефакт, их всего две штуки находили. Стоит бешеных денег.</text>
+    </string>
+    <string id="esc_sidor_quest_line_research_underground_dialog_39">
+        <text>И за что же он так ценится?</text>
+    </string>
+    <string id="esc_sidor_quest_line_research_underground_dialog_4">
+        <text>Хорош заливать мне! А кто ещё мог сигналку зацепить? Она на человека рассчитана, тушканам или собакам не активировать. А значит, только человек мог наступить на сигнальную растяжку. А если не вы, то кто?</text>
+    </string>
+    <string id="esc_sidor_quest_line_research_underground_dialog_40">
+        <text>Этот артефакт двухсторонний. Он имеет два разнонаправленных свойства: с одной стороны он поглощает всё пси-излучение, а с другой наоборот, излучает его с неимоверной мощью. Полюсы поглощения и излучения меняются, друг с другом в течение некоторого времени, через час или около того. Поэтому его нужно постоянно переворачивать, если несёшь на поясе.\nВпервые этот артефакт нашла группа Брокера. Но тогда они не сразу выяснили свойства "Маятника", поэтому до лагеря учёных на Янтаре живым добрался только Штопор. Еле на ногах держался. Ботаники его на вертолёте на Большую землю вывезли, а артефакт, естественно, себе на изучение оставили. У них самих несколько лаборантов чуть не померли, пока подходящий защитный контейнер собрали. Это я потом уже узнал, из копии отчёта. Сахаров подсуетил. С тех пор про первый артефакт ничего неизвестно. Наверно, до сих пор в каком-нибудь секретном НИИ изучают.\n</text>
+    </string>
+    <string id="esc_sidor_quest_line_research_underground_dialog_41">
+        <text>А про второй что знаешь?</text>
+    </string>
+    <string id="esc_sidor_quest_line_research_underground_dialog_42">
+        <text>О, а тут история куда интересней произошла. Слыхал о Стрелке?</text>
+    </string>
+    <string id="esc_sidor_quest_line_research_underground_dialog_43">
+        <text>Нет, не знаю такого. А что за Стрелок?</text>
+    </string>
+    <string id="esc_sidor_quest_line_research_underground_dialog_44">
+        <text>О, брат, это не сталкер - легенда! Не знаю я, когда он в Зоне появился, но дело своё знал на все сто - такие артефакты порой приносил, закачаешься. И где только находил, никто до сих пор не поймёт. И вот как-то раз посчастливилось ему найти этот самый "Маятник". Стрелок парень смышлёный был, как только поплохело, он сразу сообразил, что у артефакта негативное влияние имеется. Уж и не знаю, сколько дней он этот артефакт изучал, но выяснил про него почти всё тоже, что и учёные у себя в лабораториях. И это в полевых условиях, представляешь?! После этого он и стал всюду этот артефакт таскать. И благодаря ему же он и через "Выжигатель мозгов" свою группу провёл. Столько всего тогда принесли, хабара на небольшой остров в тихом океане хватило бы. Торговцы со всей Зоны чуть не в очередь к нему выстраивались за артефактами, а он упёртый, несколько штук продал, а остальные-то ли себе оставил, то ли ещё куда дел. Эх, хороший мужик был.</text>
+    </string>
+    <string id="esc_sidor_quest_line_research_underground_dialog_45">
+        <text>Почему "был"? Что с ним случилось?</text>
+    </string>
+    <string id="esc_sidor_quest_line_research_underground_dialog_46">
+        <text>Пару лет назад Стрелок внезапно пропал. Тогда мы подумали, что он погиб от мощнейшего выброса. Раньше таких я не видел. И поверь мне, я тут многое повидал. Но спустя несколько месяцев Стрелка нашли живым в одном из грузовиков смерти. Как он туда попал неизвестно. Да он и сам ничего не помнил, даже имени своего. Его тогда сразу не узнал - на него смотреть страшно было: худой, весь в ссадинах, лицо обветренное, непонятные шрамы по всему телу. И ещё эта метка на руке, будто звери клеймили - татуировка S.T.A.L.K.E.R. Но самое странное это то, что в его КПК имелась лишь одна запись "Убить Стрелка". То есть самого себя, представляешь?</text>
+    </string>
+    <string id="esc_sidor_quest_line_research_underground_dialog_47">
+        <text>И что дальше?</text>
+    </string>
+    <string id="esc_sidor_quest_line_research_underground_dialog_48">
+        <text>Не скрою, Меченого, так Сидорович его за татуировку прозвал, тоже свою выгоду поимел. Ему ведь Стрелка найти нужно было, а значит и его тайники он наверняка мог бы найти. Но самым интересным для нас оставался путь на север Зоны, там ведь клондайк артефактов находится. Ну, Сидорович с остальными торговцами и решили втёмную использовать Меченого.</text>
+    </string>
+    <string id="esc_sidor_quest_line_research_underground_dialog_49">
+        <text>Что-то я не удивлён.</text>
+    </string>
+    <string id="esc_sidor_quest_line_research_underground_dialog_5">
+        <text>Скидан, честное слово, мы ничего такого не хотели. Мы договорились с Часовщиком, что он пустит нас посмотреть на туннель и катакомбы. Ничего дурного мы не замышляли.</text>
+    </string>
+    <string id="esc_sidor_quest_line_research_underground_dialog_50">
+        <text>Гхм. Так вот Стрелок, то есть Меченый, отправился на поиски самого себя. То есть по своим же следам на Север Зоны пошёл. Учёные ему помогли с прототипом пси-блокиратора, чтобы мозги не закипели. Взамен Меченый, сам того не ведая, собирал для них всю информацию о недоступных участках Зоны. Заодно и два излучателя отключил: один на озере Янтарь, другой на Радаре - тот самый "Выжигатель мозгов". Путь к Припяти и центру Зоны был открыт. Нельзя было этого делать, да кто ж знал, как всё обернётся.\nВсе в Зоне как с ума посходили. Только ленивый не отправился к центру. Все к "Исполнителю Желаний" хотели первыми попасть. Я тогда обрадовался, всё, думаю, путь к Припяти и ЧАЭС открыт, теперь артефакты ко мне рекой польются. Да не тут-то было - назад никто не возвращался. Набрали в долг снаряги и двинули к Саркофагу. А как до Припяти дошли, там большинство и полегло - весь город просто кишел монолитовцами. Да и группировки со своими принципами снова войну развязали - никто не хотел отступать, все рвались только вперёд. Позже и военные подтянулись. В общем, такой кипиш начался. И под финал произошёл выброс. Народу полегло не сосчитать.</text>
+    </string>
+    <string id="esc_sidor_quest_line_research_underground_dialog_51">
+        <text>А Стрелок? Он выбрался?</text>
+    </string>
+    <string id="esc_sidor_quest_line_research_underground_dialog_52">
+        <text>Не знаю. Не видел его никто после того случая. И даже пси-блокиратор с передатчиком найти не удалось, хотя там имелся GPS-модуль. Видать, выброс повредил его. Последние координаты указывали на вход в Саркофаг, то есть Стрелок добрался до него за пару минут до выброса. Может, и остался в живых, да только не узнаем мы этого. С тех пор уже год прошёл, в центре много народу побывало. В одном из бункеров возле ЧАЭС нашли какую-то лабораторию странную - там трупы в капсулах лежали. Притом будто во сне их застрелили. Сталкеры тогда много всяких документов нашли - всё учёным сдали. А там такое написано было, что никто и не поверил. За гранью мыслимого.</text>
+    </string>
+    <string id="esc_sidor_quest_line_research_underground_dialog_53">
+        <text>Что там написано-то было?</text>
+    </string>
+    <string id="esc_sidor_quest_line_research_underground_dialog_54">
+        <text>Там имелась техническая информация касательно пси-излучателей, генераторов и "Исполнителя желаний". Оказалось, что "Монолит" был искусственным объектом, его использовали для промывания мозгов фанатикам. Это объяснило тот факт, что никакого "Исполнителя желаний" никто после того выброса не нашёл - в Саркофаге ничего не было кроме разрушенного реактора. С помощью этого устройства некие учёные из проекта О-Сознание, как они себя называли в документах, гипнотизировали сталкеров, подобравшихся слишком близко к тайне возникновения Зоны. Завербованным агентам давали скрытые задания и отправляли к границам Зоны. Видимо, Стрелок каким-то образом стал одним из таких агентов и получил задание на убийство самого себя. Но потом "Монолит" был уничтожен. Монолитовских фанатиков начало отпускать - несколько десятков отрядов из центра вернулись, ничего не помнят. Их тут чуть не поубивали сначала, враги ведь бывшие. Но, оказывается, не все от гипноза отошли. Судя по твоему рассказу ещё много таких марионеток без кукловодов. И ведь что-то они затевают, не зря "Маятник" в контейнер поместили. Интересно, это тот самый артефакт, что Стрелку принадлежал?</text>
+    </string>
+    <string id="esc_sidor_quest_line_research_underground_dialog_55">
+        <text>Тебе бы книжки писать, Скидан. В момент бы прославился и все премии писательские получил. Я вот сейчас как будто роман в твоем пересказе услышал. По всем законам жанра: пролог - завязка - кульминация - развязка. Неужто вправду всё так и было? Не верится даже. Полна чудес Зона. Мы тут оглядимся немного, может чего найдем интересного. Ты не против?</text>
+    </string>
+    <string id="esc_sidor_quest_line_research_underground_dialog_56">
+        <text>Погоди, Саван. Дело есть. В свете обозначенных событий, предлагаю заключить сделку: я вам экипировку и оружие по первому разряду за мой счет, а вы, как найдёте "Маятник", то продадите его именно мне, заплачу хорошие деньги. Даже дороже заплачу, чем он стоит. Что скажешь?</text>
+    </string>
+    <string id="esc_sidor_quest_line_research_underground_dialog_57">
+        <text>Не знаю, Скидан. А вдруг мы не найдём ничего? Вдруг это просто сказка сталкерская? Легенда и ничего больше.</text>
+    </string>
+    <string id="esc_sidor_quest_line_research_underground_dialog_58">
+        <text>Ну, тогда всё вернёте и за аренду снаряги по минимуму заплатите. Главное, чтоб в живых остались, а то потом искать ещё вас, да броню с трупов снимать. Дело не из приятных.</text>
+    </string>
+    <string id="esc_sidor_quest_line_research_underground_dialog_59">
+        <text>Спасибо, успокоил. Обдумать надо, посоветоваться. Давай, мы позже зайдём, хорошо? А пока мы тут побродим, может Дуболома найдём.</text>
+    </string>
+    <string id="esc_sidor_quest_line_research_underground_dialog_6">
+        <text>Погоди-ка, так вас Часовщик пустил? То есть вы не через трубу сюда попали?</text>
+    </string>
+    <string id="esc_sidor_quest_line_research_underground_dialog_7">
+        <text>Какую ещё трубу? Мы по лестнице спустились. А что за труба?</text>
+    </string>
+    <string id="esc_sidor_quest_line_research_underground_dialog_8">
+        <text>Так, это уже скверно. Ты, Саван, порой и ведёшь себя как дурачок, но врать не умеешь. А значит, за последнюю неделю сюда проникли трижды, не считая вас. Так что, ты говоришь, вы здесь ищите?</text>
+    </string>
+    <string id="esc_sidor_quest_line_research_underground_dialog_9">
+        <text>Не говорил я, что мы тут что-то ищем. Окстись, Скидан. Просто мы посмотреть хотели, что тут да как, интересно же.\n</text>
+    </string>
+    <string id="esc_sidor_quest_line_research_underground_part_2_dialog_0">
+        <text>Я обдумал твое предложение. Мы согласны. Артефакт принесем тебе. Давай свои крутые пушки и броники. Еще нужен код и ключ-карта для прохода в подземную лабораторию под Кордоном.</text>
+    </string>
+    <string id="esc_sidor_quest_line_research_underground_part_2_dialog_1">
+        <text>Вот это другой разговор. Сейчас, где тут у меня припрятано. Вот! Все, как и говорил - это хоть и не самое крутое снаряжение в Зоне, зато проверено во множестве ходок. Лучше только под заказ с Большой земли достать можно. Ну, или на Баре, если повезёт. Давай КПК, скину тебе мастер-код. Это лучше, чем любая ключ-карта. Он сто процентов подойдёт, в отличие от обычных служебных шифров. А пароль я узнаю с минуты на минуту и тебе на КПК перешлю по радио. Вот амуниция, как и обещал. Борланда я уже броней и оружием обеспечил, внизу ждет тебя. Сейчас я открою для тебя свой личный потайной ход в катакомбы. Ну что, готов?</text>
+    </string>
+    <string id="esc_sidor_quest_line_research_underground_part_2_dialog_2">
+        <text>Готов.</text>
+    </string>
+    <string id="esc_stalker_mechanic_about_you_0">
+        <text>Расскажи мне о себе.</text>
+    </string>
+    <string id="esc_stalker_mechanic_about_you_1">
+        <text>Независимость я очень ценю, потому всегда был сам по себе и только на себя работал. Но когда услыхал, что сталкеры военных потеснили и свою базу организовали, сразу сюда пришёл. Я, знаешь, со многими в Зоне пересекался, но как по мне, то сталкеры - самое оно. Ну, как сказать... нормальные они, понимаешь? Без этих дурацких заморочек с кодексами, правилами, как оно есть в других группировках. По большому счёту, в Зоне только сталкеры и должны быть: тогда и взаимовыручка будет всюду, и поспокойнее станет. В общем, решил я этих ребят поддержать.</text>
+    </string>
+    <string id="esc_stalker_mechanic_about_you_11">
+        <text>Техника редко встретишь в Зоне. Расскажи, что ты умеешь?</text>
+    </string>
+    <string id="esc_stalker_mechanic_about_you_111">
+        <text>Ну, примочек модных или каких навороченных штук ты от меня не жди. Однако и сомневаться тоже не надо: котелок у меня пока варит, а руки из правильного места растут. \nВсё, что тебе жизнь может спасти, всё умею. Чаще всего оружие и броню ремонтирую, а если нужные детали появятся, так и улучшить твою пушку либо снарягу смогу. Если хочешь узнать, чем именно я занимаюсь, глянь в апгрейды - думаю, разберёшься.</text>
+    </string>
+    <string id="esc_stalker_mechanic_about_you_1111">
+        <text>Я так понял, ты порядком по Зоне побродил? Что-нибудь необычное видел?</text>
+    </string>
+    <string id="esc_stalker_mechanic_about_you_11111">
+        <text>Необычное? Я сюда через Агропром шёл как раз после того выброса мощного. Гляжу - ну, чудеса-а... На старом месте, где раньше ни черта не было, теперь участок земли исковерканной - аж вспучилась. И фонит так, что мимо бегом бежать надо. Мне потом ребята рассказали, что мощней этой аномалии нету: из неё энергия не просто фонтаном, а Ниагарским водопадом прёт! Место - опасней не придумаешь, но фокус в том, что там чаще всего редкие артефакты случаются, у «Выверта» этого. Так что если наткнешься на это место, поглядывай.</text>
+    </string>
+    <string id="esc_stalker_trader_about_you_0">
+        <text>Расскажи мне о себе.</text>
+    </string>
+    <string id="esc_stalker_trader_about_you_1">
+        <text>Торговец я... начинающий. Как видишь, мы тут совсем недавно. Как только сказал Шаман, что каждый может стать кем хочет, я сразу решил - торговать стану и никаких гвоздей. А что, способности у меня есть, да и Скидан вон рядом, пример живой... Я, если хочешь знать, ещё в школе игрушку электронную - ну, помнишь, Пёс яйца куриные ловил? - так я эту штуку сдавал одноклассникам по десять копеек за партию. Жилка такая у меня есть, понимаешь? Да-а, золотые денёчки были... Сейчас вот осваиваюсь, вникаю в профессию, так сказать. Беру у Скидана товар на реализацию, так что цены, сам понимаешь, пока не очень. Но кое-что интересное найдётся: ребята уже начали потихоньку свой хабар мне носить.</text>
+    </string>
+    <string id="esc_stalker_trader_about_you_111">
+        <text>Эх, дружище, заживём мы теперь, как у Христа за пазухой... ну, или кто там нами, грешными, заведует. Больше вояки нас гнобить не будут, теперь всё для пользы сталкера пойдёт. И после рейда можно будет на Кордоне отдохнуть, и оборудование что надо появится... За хабар тоже реальные деньги пойдут, не то что раньше: нам объедки, а самые сливки военным. Погоди, мы ещё по воякам популяем! А что? Нечего им, знаешь, расслабляться, не в сказку попали! Словом, заживё-ом!..</text>
+    </string>
+    <string id="esc_stalker_trader_about_you_2">
+        <text>Как думаешь жизнь на Кордоне поменется?</text>
+    </string>
+    <string id="esc_stalker_trader_about_you_3">
+        <text>Эх, дружище, заживём мы теперь, как у Христа за пазухой... ну, или кто там нами, грешными, заведует. Больше вояки нас гнобить не будут, теперь всё для пользы сталкера пойдёт. И после рейда можно будет на Кордоне отдохнуть, и оборудование что надо появится... За хабар тоже реальные деньги пойдут, не то что раньше: нам объедки, а самые сливки военным. Погоди, мы ещё по воякам популяем! А что? Нечего им, знаешь, расслабляться, не в сказку попали! Словом, заживё-ом!..</text>
+    </string>
+	
+    <string id="esc_student_quest_conductor_atp_dialog_0">
+        <text>Большое спасибо, товарищ сталкер.</text>
+    </string>
+    <string id="esc_student_quest_conductor_atp_dialog_1">
+        <text>Пожалуйста, "товарищ". И откуда вас таких в Зону отправляют...</text>
+    </string>
+    <string id="esc_student_quest_conductor_atp_dialog_2">
+        <text>Я из Новосибирска. Знаете, у нас в Академгородке...</text>
+    </string>
+    <string id="esc_student_quest_conductor_atp_dialog_3">
+        <text>Да что ж такое-то?! Зачем ты мне это рассказываешь? Это был риторический вопрос. Всё, я свою работу выполнил, пусть другие теперь с тобой мучаются. Удачи!</text>
+    </string>
+    <string id="esc_student_quest_conductor_dialog_0">
+        <text>Здорово, Студент. Ну что, пошли?</text>
+    </string>
+    <string id="esc_student_quest_conductor_dialog_1">
+        <text>Доброго вам дня, уважаемый! Так это вы будете моим провожатым? Очень приятно. А вы опытный сталкер? Это не опасно? Нас по пути бандиты не подстрелят? А мутанты? Я слышал, там тьма мутантов.</text>
+    </string>
+    <string id="esc_student_quest_conductor_dialog_2">
+        <text>Во-первых, тут все на "ты". Во-вторых, идём быстро и молча. Подчеркиваю - молча! В-третьих, я очень опытный сталкер, и всё будет хорошо. В путь!</text>
+    </string>
+	
+	
+    <string id="esc_tech_barkas_dialog_0">
+        <text>Ты новый механик?</text>
+    </string>
+    <string id="esc_tech_barkas_dialog_1">
+        <text>Да, Стёпка пропал куда-то, теперь я вместо него.</text>
+    </string>
+    <string id="esc_tech_barkas_instr_0">
+        <text>Я на счет инструментов хотел узнать.</text>
+    </string>
+    <string id="esc_tech_barkas_instr_1">
+        <text>Что именно?</text>
+    </string>
+    <string id="esc_tech_barkas_instr_2">
+        <text>Да я вот Стёпку приносил инструменты...</text>
+    </string>
+    <string id="esc_tech_barkas_instr_3">
+        <text>Да, ну тут не все, еще нужны, если найдешь, притаскивай.</text>
+    </string>
+    <string id="esc_tech_barkas_instr_4">
+        <text>Хорошо.</text>
+    </string>
+    <string id="esc_tech_instruments_0">
+        <text>Я принес тебе инструменты.</text>
+    </string>
+    <string id="esc_tech_instruments_1">
+        <text>О, класс! Какими поделишься?</text>
+    </string>
+    <string id="esc_tech_instruments_11">
+        <text>Для грубой работы.</text>
+    </string>
+    <string id="esc_tech_instruments_111">
+        <text>Отлично! Теперь бы раздобыть ещё инструменты для тонкой работы и для калибровки...</text>
+    </string>
+    <string id="esc_tech_instruments_12">
+        <text>Для тонкой работы.</text>
+    </string>
+    <string id="esc_tech_instruments_121">
+        <text>Отлично! Теперь бы раздобыть ещё инструменты для грубой работы и для калибровки...</text>
+    </string>
+    <string id="esc_tech_instruments_13">
+        <text>Для калибровки.</text>
+    </string>
+    <string id="esc_tech_instruments_131">
+        <text>Отлично! Теперь бы раздобыть ещё инструменты для грубой работы и для тонкой...</text>
+    </string>
+    <string id="esc_tech_instruments_14">
+        <text>Пока никакими.</text>
+    </string>
+    <string id="esc_tech_instruments_141">
+        <text>Класс! Мне бы ещё инструменты для калибровки, и всё было бы в ажуре.</text>
+    </string>
+    <string id="esc_tech_instruments_151">
+        <text>Класс! Мне бы ещё инструменты для тонкой работы, и всё было бы в ажуре.</text>
+    </string>
+    <string id="esc_tech_instruments_161">
+        <text>Класс! Мне бы ещё инструменты для грубой работы, и всё было бы в ажуре.</text>
+    </string>
+    <string id="esc_tech_instruments_171">
+        <text>Ух ты! Ну, силён... где ты их только тут откопал?</text>
+    </string>
+    <string id="esc_tech_instruments_work_0">
+        <text>Если проблема в инструментах, я могу их добыть.</text>
+    </string>
+    <string id="esc_tech_instruments_work_1">
+        <text>Вот это было бы здорово! А то работаю, как в каменном веке. Из нового времени один паяльник, да и тот больше вместо шаманского жезла... Вот будут инструменты - будут и первоклассные тюны. Да и тебе монета-другая капнет.</text>
+    </string>
+    <string id="esc_tech_instruments_work_11">
+        <text>Хорошо. Поищу что-нибудь.</text>
+    </string>
+    <string id="esc_tech_instruments_work_12">
+        <text>Я передумал.</text>
+    </string>
+    <string id="esc_tech_instruments_work_3">
+        <text>Давай, тема полезная. Мне - тюны делать, тебе - на них заработать.</text>
+    </string>
+    <string id="esc_tex_instryments_1">
+        <text>Привет. Инструменты нужны?</text>
+    </string>
+    <string id="esc_tex_instryments_2">
+        <text>Ты еще спрашиваешь! Конечно нужны. Показывай, что там у тебя есть?</text>
+    </string>
+    <string id="esc_tex_instryments_3">
+        <text>Для грубой работы.</text>
+    </string>
+    <string id="esc_tex_instryments_4">
+        <text>Отлично! Теперь смогу тебе модифицировать оружие и броню.</text>
+    </string>
+    <string id="esc_tex_instryments_5">
+        <text>Для тонкой работы.</text>
+    </string>
+    <string id="esc_tex_instryments_6">
+        <text>Отлично! Теперь наш локальный научно технический прогресс сделает рывок вперед.</text>
+    </string>
+    <string id="esc_tex_instryments_7">
+        <text>Для калибровки.</text>
+    </string>
+    <string id="esc_tex_instryments_8">
+        <text>Отлично! Теперь я тебе такой автомат сделать смогу... такой, что Cидорович тебе душу за него отдаст, хе-хе.</text>
+    </string>
+    <string id="esc_tex_instryments_9">
+        <text>Пока никаких инструментов не нашел. Еще поищу.</text>
+    </string>
+    <string id="esc_trepach_dialog_robbery_0">
+        <text>Хе-хе. Добро пожаловать в наш скромный уголок счастья, уважаемый. Извольте ознакомиться с нашим прейскурантом.</text>
+    </string>
+    <string id="esc_trepach_dialog_robbery_1">
+        <text>Чё?</text>
+    </string>
+    <string id="esc_trepach_dialog_robbery_10">
+        <text>О как! Ну ты прям кудесник, чисто фокусник. Как его...это.. Купперфильд! Уважаю. Лады, можешь разок-другой пройти через туннель. А мы пока с братвой подлечимся. Путь открыт, шкандыбай уже, куда там тебе надо.</text>
+    </string>
+    <string id="esc_trepach_dialog_robbery_11">
+        <text>Уже ушёл.</text>
+    </string>
+    <string id="esc_trepach_dialog_robbery_2">
+        <text>Чё «чё»? Бабки гони, вот чё!</text>
+    </string>
+    <string id="esc_trepach_dialog_robbery_3">
+        <text>Э-эм, нет у меня денег.</text>
+    </string>
+    <string id="esc_trepach_dialog_robbery_4">
+        <text>Хе-хе. Ну, ты юморной. И куда ты без бабосов собрался, дурень? Нет бабосов - нет снаряги. Нет снаряги - нет артов. А нет артов... А чё там дальше-то? Как-то складно было... А, нет артов - нет бабосов! Во как! Порочный круг, называется. Врубился? Хе-хе. Так что давай-ка, вали отсюда, пока цел! Потом ещё спасибо скажешь. То же мне, супергерой нашёлся. Хе-хе.</text>
+    </string>
+    <string id="esc_trepach_dialog_robbery_5">
+        <text>Мужики, мне на ту сторону надо. Очень надо. Может, договоримся?</text>
+    </string>
+    <string id="esc_trepach_dialog_robbery_6">
+        <text>Надо ему. Мало ли, кому что надо. Мне, может, опохмелиться надо. Ну, так я же не пристаю к тебе со своими проблемами. Вали, пока цел.</text>
+    </string>
+    <string id="esc_trepach_dialog_robbery_7">
+        <text>Так это, может водкой возьмёте? У меня есть.</text>
+    </string>
+    <string id="esc_trepach_dialog_robbery_71">
+        <text>Мужики, я первый день в Зоне. Может, так пропустите?</text>
+    </string>
+    <string id="esc_trepach_dialog_robbery_72">
+        <text>Хе-хе! Ну ты выдал - «так пропустите». За так даже кошки не родятся! Так что, или плати, или вали - третьего не дано!</text>
+    </string>
+    <string id="esc_trepach_dialog_robbery_73">
+        <text>Ну и чёрт с вами!</text>
+    </string>
+    <string id="esc_trepach_dialog_robbery_8">
+        <text>А я смотрю, ты нормальный пацанчик. Ну, давай свою водку. Да только я тебя всё равно не пущу. Хе-хе! А ты думал, что в сказку попал? Вали отсюдова, пока я добрый.</text>
+    </string>
+    <string id="esc_trepach_dialog_robbery_9">
+        <text>А у меня ещё бутылка есть - держи!</text>
+    </string>
+    <string id="esc_watchmaker_quest_line_dungeon_dialog_0">
+        <text>Спасибо тебе. Что-то мутанты взбесились в последнее время - проходу не дают.</text>
+    </string>
+    <string id="esc_watchmaker_quest_line_dungeon_dialog_1">
+        <text>Да не за что, дедуля. Вы ведь Часовщик?</text>
+    </string>
+    <string id="esc_watchmaker_quest_line_dungeon_dialog_10">
+        <text>Эх, не пожил ты при Союзе, в те времена ещё и не такое делали - реки вспять поворачивали! Во как! А уж дыр в земле нарыть это раз плюнуть было.</text>
+    </string>
+    <string id="esc_watchmaker_quest_line_dungeon_dialog_11">
+        <text>Дед, а как туда попасть, ну, в катакомбы эти? Уж очень посмотреть охота.</text>
+    </string>
+    <string id="esc_watchmaker_quest_line_dungeon_dialog_12">
+        <text>Ишь ты шустрый какой. С чего это я должен тебя в туннель пущать? Мне начальство строго-настрого велело никого без ведома не пускать.</text>
+    </string>
+    <string id="esc_watchmaker_quest_line_dungeon_dialog_13">
+        <text>Дед, какое начальство? Тут Зона давным-давно - не осталось твоего начальства.</text>
+    </string>
+    <string id="esc_watchmaker_quest_line_dungeon_dialog_14">
+        <text>Как не осталось? А шумит там кто?</text>
+    </string>
+    <string id="esc_watchmaker_quest_line_dungeon_dialog_15">
+        <text>Где?</text>
+    </string>
+    <string id="esc_watchmaker_quest_line_dungeon_dialog_16">
+        <text>В туннеле. Каждую ночь кто-то шумит. Если это не начальство, то кто?</text>
+    </string>
+    <string id="esc_watchmaker_quest_line_dungeon_dialog_17">
+        <text>Да мало ли. Твари, мутанты. Хочешь, гляну?</text>
+    </string>
+    <string id="esc_watchmaker_quest_line_dungeon_dialog_18">
+        <text>Ну, хитрец, обмануть меня хотел? Ладно. Я тебе, вроде как, обязан. Так уж и быть - вот тебе запасной ключ от моей хаты. Только ничего в доме не трогай!</text>
+    </string>
+    <string id="esc_watchmaker_quest_line_dungeon_dialog_19">
+        <text>Лады, дед. Спасибо тебе!</text>
+    </string>
+    <string id="esc_watchmaker_quest_line_dungeon_dialog_2">
+        <text>Ну да. А ты сам-то кто будешь?</text>
+    </string>
+    <string id="esc_watchmaker_quest_line_dungeon_dialog_3">
+        <text>Меня Саваном кличут. Я Вас как раз искал.</text>
+    </string>
+    <string id="esc_watchmaker_quest_line_dungeon_dialog_4">
+        <text>Меня? Надо же. И чем я могу тебе помочь?</text>
+    </string>
+    <string id="esc_watchmaker_quest_line_dungeon_dialog_5">
+        <text>Расскажите мне о туннеле под деревней.</text>
+    </string>
+    <string id="esc_watchmaker_quest_line_dungeon_dialog_6">
+        <text>О как. Я смотрю, ты парень не промах, вокруг да около не ходишь, рубишь с плеча. Что ж, уважаю прямых людей. Ладно, расскажу тебе всё как есть. Но сам понимаешь, никому не слова, понял?</text>
+    </string>
+    <string id="esc_watchmaker_quest_line_dungeon_dialog_7">
+        <text>Могила!</text>
+    </string>
+    <string id="esc_watchmaker_quest_line_dungeon_dialog_8">
+        <text>После Великой Отечественной Войны, руководство СССР было крайне обеспокоено защитными мерами и путями отхода высокопоставленных лиц. Поэтому было решено создать тайную разветвленную подземную коммуникационную сеть. В первую очередь, эта сеть должна была обеспечивать экстренную эвакуацию из осаждённых городов, таких как Киев, Минск и Москва. Одна из подземных железнодорожых веток этой сети расположена здесь, под Зоной, это путь Киев - Минск. Вместе с этой веткой были построены подземные коммуникации для обслуживания подвижного состава, а также для доставки материалов в другие важные объекты, коих на тот момент везде хватало. А меня тут поставили охранять чёрный ход. Вот с тех самых пор и сторожу.</text>
+    </string>
+    <string id="esc_watchmaker_quest_line_dungeon_dialog_9">
+        <text>То есть, туннель под деревней ведёт к железной дороге? Не может быть!</text>
+    </string>
+    <string id="esc_watchmaker_quest_line_research_underground_dialog_0">
+        <text>О, явился, не запылился! Чего тебе ещё надо?</text>
+    </string>
+    <string id="esc_watchmaker_quest_line_research_underground_dialog_1">
+        <text>Дед, что случилось? Ты чего злой такой?</text>
+    </string>
+    <string id="esc_watchmaker_quest_line_research_underground_dialog_10">
+        <text>Сынок, ты найди того гадёныша что по шкафам моим без спросу лазал, очень прошу. Ни стыда, ни совести у людей. И ключ мой верни.</text>
+    </string>
+    <string id="esc_watchmaker_quest_line_research_underground_dialog_11">
+        <text>Всё сделаю, дед, не переживай.</text>
+    </string>
+    <string id="esc_watchmaker_quest_line_research_underground_dialog_2">
+        <text>Он ещё и издевается. Ты зачем у меня в хате шурудил? Что искал? Деньги, ценности? Нет у меня ничего кроме часов, да и те не рабочие.</text>
+    </string>
+    <string id="esc_watchmaker_quest_line_research_underground_dialog_3">
+        <text>Дед, да ты чего, не искал я у тебя ничего! Делать мне больше нечего.</text>
+    </string>
+    <string id="esc_watchmaker_quest_line_research_underground_dialog_4">
+        <text>А кто у меня по шкафам лазал? Домовой? Ещё и карту упёрли.</text>
+    </string>
+    <string id="esc_watchmaker_quest_line_research_underground_dialog_5">
+        <text>Какую карту?</text>
+    </string>
+    <string id="esc_watchmaker_quest_line_research_underground_dialog_6">
+        <text>Карту доступа. Ключ, если проще говорить.</text>
+    </string>
+    <string id="esc_watchmaker_quest_line_research_underground_dialog_7">
+        <text>Уж не от двери ли в подземную лабораторию?</text>
+    </string>
+    <string id="esc_watchmaker_quest_line_research_underground_dialog_8">
+        <text>А ты откуда знаешь? Точно ты взял. Давай обратно!</text>
+    </string>
+    <string id="esc_watchmaker_quest_line_research_underground_dialog_9">
+        <text>Вот так совпадение, а я как раз у тебя хотел этот ключ попросить. Нет у меня карты, дед. Но, кажется, знаю я, кто мог её у тебя украсть. Что ж, придётся обратиться за помощью к торговцу.</text>
+    </string>
+    <string id="esc_wolf_about_around_0">
+        <text>Что тут интересного в округе?</text>
+    </string>
+    <string id="esc_wolf_about_around_1">
+        <text>Это место для новичков. На окраине деревни живёт торговец, Скиданем зовут. Дальше блокпост военных - да ты, собственно, оттуда и пришёл. По другую сторону от блокпоста - дорога в глубину Зоны.</text>
+    </string>
+    <string id="esc_wolf_about_around_11">
+        <text>Расскажи про Деревню новичков.</text>
+    </string>
+    <string id="esc_wolf_about_around_111">
+        <text>Ну что тебе сказать за здешние порядки? Все, кто потолковее, затариваются у Скидана самым необходимым и двигают на Свалку: там и артефакты пожирнее, и не так опасно, как ближе к центру Зоны. Можно опыта поднабраться. Хотя помереть тоже можно в два счёта: мутанты, бандиты, аномалии - там всего этого в избытке. Как везде, больше риска - больше прибыль. А тут остаются только полные... долбодятлы, мягко говоря. Иной раз такое чудо притащится - чуть ли не в тапочках и с авоськой. Романтики ему захотелось, понимаешь! А то доцентик какой, который серьёзнее логарифмической линейки ничего в руках не держал. Такие тут накрываются быстро, это уж как пить дать. Иногда ещё матёрые сталкеры заходят, чтобы после дальнего выхода хабар Скидану скинуть, сплетни с Большой земли послушать и отоспаться денёк-другой в спокойном месте. Не часто такое бывает, давно уже никто с севера далёкого не приходил.</text>
+    </string>
+    <string id="esc_wolf_about_around_1111">
+        <text>Хорошо устроились тут. Просто курорт. А военные вас не трогают?</text>
+    </string>
+    <string id="esc_wolf_about_around_11111">
+        <text>Военные не особо прессуют: им не до нас сейчас. Да они сами говорят - на фига, мол, на этих сталкеров боезапас расходовать, и так в аномалиях передохнут. Ну а мы, в ответ, не борзеем: если они ищут кого, так не мешаем - когда рейд там или проверка на блокпосте из штаба, по подвалам отсиживаемся. В общем, сам видишь, что люди мы тихие и неконфликтные.</text>
+    </string>
+    <string id="esc_wolf_about_around_22">
+        <text>Расскажи про Скидана.</text>
+    </string>
+    <string id="esc_wolf_about_around_222">
+        <text>Прижимистый, как все торговцы. Много лет уже торгует на Кордоне. Основными клиентами являются сталкеры-новички, недавно пришедшие в Зону. Имеет множество связей, в том числе с военными, разными группировками Зоны и даже бандитами. Товар ему военные таскают через блокпост. Такой вот бизнес. Болтают, что торговлей он увлёкся с самого детства, в студенческие годы нелегально продавал слабые наркотики. А может и не слабые. И, вроде как, имел через это проблемы с уголовным кодексом. Не знаю, правда или нет. Тут, знаешь, каждому слову верить нельзя. Сталкеры сплетни сочиняют - почище старых бабок на лавочке у подъезда. Почти все сталкеры Зоны в начале пути поработали на Скидана, поэтому он про всех почти знает, и про каждого своё мнение имеет. Короче говоря, его каждая собака в Зоне знает!</text>
+    </string>
+    <string id="esc_wolf_about_you_0">
+        <text>Раскажи о себе.</text>
+    </string>
+    <string id="esc_wolf_about_you_1">
+        <text>Я здесь вроде главного в этой деревне. Типа наставника для новичков. Учу уму-разуму зелень пузатую, очкариков всяких тепличных, чтоб их на первом же заходе костлявая не цапнула. Ох, тяжко это - учить! Некоторые необучаемы в принципе. Смотришь на такого, и думаешь: "Чему его можно научить-то?! Он же в жизни прочёл две книжки - "Букварь" и такую, синенькую". И закономерно помирают такие в первой же аномалии, забыв кинуть гайку впереди себя. Сам-то я уже натоптался по Зоне, кусок жизни тут оставил. Уйти отсюда думаю, сколько можно уже. Только злая ведьма какая-то ворожит, не иначе, и выбраться никак не получается: то вояки с рейдом нагрянут, то вон выброс шибанёт. Да и деньги, если честно... бывает, предлагают работу выгодную, так отчего бы не взяться? Знаешь, как оно: думаешь, что ну вот ещё этот последний выход, и всё, сваливаю - и вот так раз за разом.</text>
+    </string>
+    <string id="esc_wolf_about_zone_0">
+        <text>Расскажи об этом месте</text>
+    </string>
+    <string id="esc_wolf_about_zone_0">
+        <text>Расскажи об этом месте</text>
+    </string>
+    <string id="esc_wolf_about_zone_0">
+        <text>Расскажи об этом месте</text>
+    </string>
+    <string id="esc_wolf_about_zone_1">
+        <text>На Кордоне мы сейчас. На юг - за армейским блокпостом - внешний мир, а дальше на север уже Зона. Тут ещё мало что о ней напоминает: аномалий мало, артефактов почти никаких, монстров и то редко встретишь. Шуму здесь тоже мало, потому как военные стараются всё чётко контролировать. В общем, место довольно тихое - конечно, по сравнению с остальной Зоной.</text>
+    </string>
+    <string id="esc_wolf_about_zone_1">
+        <text>На Кордоне мы сейчас. За армейским блокпостом - внешний мир, а дальше на север уже Зона. Тут ещё мало что о ней напоминает: аномалий мало, артефактов почти никаких, монстров и то редко встретишь. Шуму здесь тоже мало, потому как военные стараются всё чётко контролировать. В общем, место довольно тихое - конечно, по сравнению с остальной Зоной.</text>
+    </string>
+    <string id="esc_wolf_about_zone_1">
+        <text>На Кордоне мы сейчас. За армейским блокпостом - внешний мир, а дальше на север уже Зона. Тут ещё мало что о ней напоминает: аномалий мало, артефактов почти никаких, монстров и то редко встретишь. Шуму здесь тоже мало, потому как военные стараются всё чётко контролировать. В общем, место довольно тихое - конечно, по сравнению с остальной Зоной.</text>
+    </string>
+    <string id="esc_wolf_about_zone_111">
+        <text>Это Деревня новичков. На окраине находится бункер Скидана, торговца. Дальше блокпост военных - ты, собственно, оттуда пришёл. В другую сторону от блокпоста - дорога в глубь Зоны.</text>
+    </string>
+    <string id="esc_wolf_about_zone_111">
+        <text>Это Деревня новичков. На окраине находится бункер Скидана, торговца. Дальше блокпост военных - ты, собственно, оттуда пришёл. В другую сторону от блокпоста - дорога в глубь Зоны.</text>
+    </string>
+    <string id="esc_wolf_about_zone_111">
+        <text>Это Деревня новичков. На окраине находится бункер Скидана, торговца. Дальше блокпост военных - ты, собственно, оттуда пришёл. В другую сторону от блокпоста - дорога в глубь Зоны.</text>
+    </string>
+    <string id="esc_wolf_art_medusa_dialog_0">
+        <text>Пёс, я подумал над твоим предложением и решил продать тебе тот артефакт.</text>
+    </string>
+    <string id="esc_wolf_art_medusa_dialog_1">
+        <text>Правильно решил. Скидан тебе бы в два раза меньше за него дал. Уж я то этого скрягу знаю.</text>
+    </string>
+    <string id="esc_wolf_art_medusa_dialog_2">
+        <text>Ну да, я уж и сам убедился на личном опыте.</text>
+    </string>
+    <string id="esc_wolf_quest_conductor_dialog_0">
+        <text>Что за работа?</text>
+    </string>
+    <string id="esc_wolf_quest_conductor_dialog_1">
+        <text>Работа не пыльная, нужно одного пассажира до лагеря сталкеров на АТП провести. Клиент в Зоне недавно, но обеспечен неплохо. Платит 10 штук. Половину сейчас, остальное - по завершении, если доведешь живым. Учти, он стрелять не умеет. Помощи в пути от него не жди. Возьмёшься?</text>
+    </string>
+    <string id="esc_wolf_quest_conductor_dialog_2">
+        <text>По рукам. Где пассажир твой?</text>
+    </string>
+    <string id="esc_wolf_quest_conductor_dialog_3">
+        <text>Да вон он трётся, звать Студентом. Как до базы доведешь, возвращайся обратно, я тебе вторую часть денег отдам. Студент мне сообщит, когда вы доберётесь до АТП.</text>
+    </string>
+    <string id="esc_wolf_quest_conductor_dialog_4">
+        <text>Ну, всё, пошёл.</text>
+    </string>
+    <string id="esc_wolf_quest_conductor_dialog_5">
+        <text>Не, Пёс, извини. Доставка пассажиров - не мой профиль. Из меня проводник, как из тебя - балерина. Может, кто другой возьмётся?</text>
+    </string>
+    <string id="esc_wolf_quest_conductor_dialog_6">
+        <text>Ну, как знаешь. Такие деньги на дороге не валяются. А желающих я всегда найду. Про тебя первого подумал, знаю, что тебе деньги срочно нужны были. Нет, так нет.</text>
+    </string>
+    <string id="esc_wolf_quest_conductor_dialog_7">
+        <text>Успехов.</text>
+    </string>
+    <string id="esc_wolf_quest_conductor_repeat_dialog_0">
+        <text>Я тут подумал... В общем, я согласен провести того новичка на АТП.</text>
+    </string>
+    <string id="esc_wolf_quest_conductor_repeat_dialog_1">
+        <text>Кто бы сомневался. Ладно, вон он стоит, звать его Студентом. Как доведёшь до АТП, возвращайся ко мне, я вторую часть отдам. Студент сообщит мне, как на АТП окажется.</text>
+    </string>
+    <string id="esc_wolf_quest_conductor_repeat_dialog_2">
+        <text>Не парься, Пёс, всё сделаю как надо. Тут идти-то всего ничего.</text>
+    </string>
+    <string id="esc_wolf_quest_conductor_repeat_dialog_3">
+        <text>Поздно, Саван, поздно. Новичок то уже тю-тю, ушёл. Не один ты сталкер в Зоне, есть и другие желающие заработать. Долго думал, вот и проворонил халявную работку.</text>
+    </string>
+    <string id="esc_wolf_quest_conductor_repeat_dialog_4">
+        <text>Да не очень-то и хотелось.</text>
+    </string>
+    <string id="esc_wolf_quest_conductor_reward_dialog_0">
+        <text>Работа выполнена. Студент на АТП.</text>
+    </string>
+    <string id="esc_wolf_quest_conductor_reward_dialog_1">
+        <text>Ну как, всё нормально? В дороге ничего не случилось?</text>
+    </string>
+    <string id="esc_wolf_quest_conductor_reward_dialog_2">
+        <text>Случилось... Студент случился. Ох, и любитель он языком чесать. С трудом сдержался, чтоб не пристрелить его. Теперь понимаю, почему за такую работу оплата высокая.</text>
+    </string>
+    <string id="esc_wolf_quest_conductor_reward_dialog_3">
+        <text>Это да, любит он поговорить. Ботаник, что с него взять. Кстати, об оплате, держи вторую часть, как и обещал.</text>
+    </string>
+    <string id="esc_wolf_quest_conductor_reward_dialog_4">
+        <text>Отлично, Пёс. Если что ещё будет наклёвываться, зови.</text>
+    </string>
+	
+    <string id="esc_wolf_quest_hunting_dialog_0">
+        <text>Получил твое сообщение. Чем обрадуешь?</text>
+    </string>
+    <string id="esc_wolf_quest_hunting_dialog_1">
+        <text>Обрадую, обрадую. Учителя тебе нашел. Давай свой КПК, я тебе метку скину на одного сталкера. Звать его Лешим - он охотник. Не просто охотник, а натуральная легенда Зоны. Можно сказать, на этом деле кровососа съел.</text>
+    </string>
+    <string id="esc_wolf_quest_hunting_dialog_2">
+        <text>Мне это зачем? Я кровососов есть не собираюсь.</text>
+    </string>
+    <string id="esc_wolf_quest_hunting_dialog_3">
+        <text>Ты еще не понял, как тебе подфартило, Саван. Леший тебя может научить, каких мутантом как лучше убить. Не каждому новичку такой шанс выпадает. Ему просто напарник дозарезу нужен сейчас, и я о тебе подумал.</text>
+    </string>
+    <string id="esc_wolf_quest_hunting_dialog_4">
+        <text>Ставь метку.</text>
+    </string>
+    <string id="esc_wolf_quest_hunting_dialog_5">
+        <text>Метку я тебе скинул. Леший будет ждать тебя за дорогой, недалеко от АТП.</text>
+    </string>
+    <string id="esc_wolf_quest_hunting_dialog_6">
+        <text>Спасибо, Пёс.</text>
+    </string>
+    <string id="esc_wolf_quest_insurance_dialog_0">
+        <text>Получил твоё сообщение. Что за помощь требуется?</text>
+    </string>
+    <string id="esc_wolf_quest_insurance_dialog_1">
+        <text>Хорошо, что пришел. Я бы и сам справился, да с тобой веселее будет. Заодно и сам чему-нибудь научишься.</text>
+    </string>
+    <string id="esc_wolf_quest_insurance_dialog_2">
+        <text>Так с чем помочь-то?</text>
+    </string>
+    <string id="esc_wolf_quest_insurance_dialog_3">
+        <text>Да вот, разжился я новым детектором. И хочу его проверить его, так сказать, в боевых условиях. Артефакты пойдём искать.</text>
+    </string>
+    <string id="esc_wolf_quest_insurance_dialog_4">
+        <text>Африкаты? А где их искать?</text>
+    </string>
+    <string id="esc_wolf_quest_insurance_dialog_5">
+        <text>В аномалиях. Точнее, в аномальных полях. И не "африкаты", а - артефакты. А если коротко - арты. Основа всего сталкерского ремесла. И источник денег. Ну что, научить тебя арты собирать?</text>
+    </string>
+    <string id="esc_wolf_quest_insurance_dialog_6">
+        <text>Спрашиваешь!</text>
+    </string>
+    <string id="esc_wolf_quest_insurance_dialog_7">
+        <text>Ну, тогда иди за мной. Тут рядышком.</text>
+    </string>
+    <string id="esc_wolf_quest_insurance_dialog_8">
+        <text>Веди.</text>
+    </string>
+    <string id="esc_wolf_quest_insurance_dialog_complite_1">
+        <text>Давай, хвались, что за арт выудил.</text>
+    </string>
+    <string id="esc_wolf_quest_insurance_dialog_complite_2">
+        <text>Вот!</text>
+    </string>
+    <string id="esc_wolf_quest_insurance_dialog_complite_3">
+        <text>Надо же, повезло тебе. Тут такие артефакты не часто найдёшь. А ты способный ученик! Раньше не сталкерил? Уверен? Шучу-шучу. \nЕсли хочешь, то я могу у тебя этот арт купить за хорошие деньги. Торговцы полной цены тебе никогда не дадут, сам понимаешь. А мне как раз такой арт нужен под заказ. Я могу и другие арты у тебя покупать, но только редкие. Подумай на досуге. Если что - знаешь, где меня искать. \nЛадно, двинули в лагерь. Небось, не терпится у костра мужикам рассказать о находке?</text>
+    </string>
+    <string id="esc_wolf_quest_insurance_dialog_complite_4">
+        <text>Похваляться - не мой стиль. Африкаты...тьфу, то есть арты эти, если найду, притащу тебе на продажу. Деньги край как нужны, сам знаешь.</text>
+    </string>
+    <string id="esc_wolf_quest_insurance_dialog_gg_0">
+        <text>Всё, нашёл я тропку в центр поля. Детектор показывает, что артефакт тут есть. И даже не один. Теперь твоя очередь. Держи, вот тебе подарок - улучшенная модель, детектор «Медведь». Показывает не только расстояние до артефакта, но и направление поиска. Кидай болты и обходи аномалии. Как увидишь на экране сигнал - иди в ту же сторону. Только осторожно! Арт сразу не увидишь. Сначала нужно подойти к нему близко, вот тогда он и выскочит из аномального поля. Удачи!</text>
+    </string>
+    <string id="esc_wolf_quest_insurance_dialog_gg_1">
+        <text>Не поминай лихом!</text>
+    </string>
+    <string id="esc_wolf_quest_insurance_dialog_strahovka_0">
+        <text>Вот и пришли. Видишь эту яму позади меня? Это и есть аномальное поле. Тут надо быть крайне осторожным. Любой неверный шаг - и поминай как звать. Там и радиация, и куча гравитационных аномалий. Значит так, поступим следующим образом: я обследую аномалию и найду проход, а заодно и детектор протестирую. Тем временем ты внимательно наблюдай за моими действиями, но не забывай смотреть по сторонам  - мутанты могут пожаловать. Готов?</text>
+    </string>
+    <string id="esc_wolf_quest_insurance_dialog_strahovka_1">
+        <text>Ага.</text>
+    </string>
+    <string id="esc_wolf_quest_line_dungeon_dialog_0">
+        <text>Привет, Пёс. Не знаешь, случаем, где мне найти Часовщика? Дома его нет, дверь на замке, а у меня к нему вопрос имеется.</text>
+    </string>
+    <string id="esc_wolf_quest_line_dungeon_dialog_1">
+        <text>Ну, так ушёл он. Позавчера ещё.</text>
+    </string>
+    <string id="esc_wolf_quest_line_dungeon_dialog_2">
+        <text>Далеко ушёл?</text>
+    </string>
+    <string id="esc_wolf_quest_line_dungeon_dialog_3">
+        <text>На болота. Он там травы какие-то собирает, а потом настойки делает. От простуды самое то, я тебе скажу. Да и от других болячек помогает. И просто для согрева души.</text>
+    </string>
+    <string id="esc_wolf_quest_line_dungeon_dialog_4">
+        <text>Эх, млин. Скоро вернётся, не говорил?</text>
+    </string>
+    <string id="esc_wolf_quest_line_dungeon_dialog_5">
+        <text>Да сегодня и вернётся. Сколько там уже натикало?... Хм, должен был прийти уже. Странно, он никогда не опаздывает, не зря его Часовщиком прозвали. Может, чего случилось? Слушай, Саван, тебе ответственное поручение - беги к туннелю, что недалеко от блокпоста вояк. Через этот туннель Часовщик и должен вернуться с Болот. Мало ли, что там стряслось. Он хоть мужик и опытный, всю жизнь в Зоне, но возраст своё берёт. Координаты я тебе скинул. Всё, бегом давай!</text>
+    </string>
+    <string id="esc_wolf_quest_line_dungeon_dialog_6">
+        <text>Считай, уже там.</text>
+    </string>
+    <string id="esc_wolf_quest_trimming_dialog_0">
+        <text>Работа есть, ты мне написал?</text>
+    </string>
+    <string id="esc_wolf_quest_trimming_dialog_1">
+        <text>А то, для тебя у меня всегда есть что-нибудь интересненькое. Как ты относишься к сафари?</text>
+    </string>
+    <string id="esc_wolf_quest_trimming_dialog_2">
+        <text>Да, собственно, никак - не был я никогда на сафари.</text>
+    </string>
+    <string id="esc_wolf_quest_trimming_dialog_3">
+        <text>А хотелось бы? У нас тут, конечно, не саванна, львов нет, уж извиняй. Зато кабаны такие, что твоему льву сто очков форы дать могут. Вот их то и надо утихомирить. А то безобразничают. Клин с ребятами буквально несколько минут назад ушли - хотят пострелять мутантов в окрестностях деревни. Есть желание к ним присоединиться?</text>
+    </string>
+    <string id="esc_wolf_quest_trimming_dialog_4">
+        <text>Почему бы и нет. Зверья тут действительно много, до сих пор тех кабанов у «электрички» забыть не могу.</text>
+    </string>
+    <string id="esc_wolf_quest_trimming_dialog_5">
+        <text>Молодец, правильно рассуждаешь: и лагерю хорошо, и тебе денежка не лишней будет. Кстати, ставка на зачистку у нас 6 тысяч рублей. Каждому! Так что, заработок отличный. Согласен?</text>
+    </string>
+    <string id="esc_wolf_quest_trimming_dialog_6">
+        <text>Ещё спрашиваешь? Конечно согласен! Куда идти?</text>
+    </string>
+    <string id="esc_wolf_quest_trimming_dialog_7">
+        <text>Я тебе координаты скинул на КПК. Они недавно вышли, так что, думаю, еще не начали стрелять.</text>
+    </string>
+    <string id="esc_wolf_quest_trimming_dialog_8">
+        <text>Ну, побегу догонять.</text>
+    </string>
+    <string id="esc_wolf_quest_trimming_dialog_complite_0">
+        <text>Всё, постреляли мутантов!</text>
+    </string>
+    <string id="esc_wolf_quest_trimming_dialog_complite_1">
+        <text>Уже? Как тебе наше местное сафари?</text>
+    </string>
+    <string id="esc_wolf_quest_trimming_dialog_complite_2">
+        <text>Отлично. Надо будет как-нибудь повторить.</text>
+    </string>
+    <string id="esc_wolf_quest_trimming_dialog_complite_3">
+        <text>Это завсегда пожалуйста. Тварей тут всегда хватает. И откуда столько берётся - ума не приложу. Ладно, вот твоя награда. Если будет ещё какая работа, я тебе скину сообщение. Удачи!</text>
+    </string>
+    <string id="esc_wolf_quest_trimming_dialog_complite_4">
+        <text>Спасибо, Пёс! До связи!</text>
+    </string>
+    <string id="esc_bandit_trader_questions_0">
+        <text>Не хочешь пообщаться, пока клиентов нет?</text>
+    </string>
+    <string id="esc_bandit_trader_questions_1">
+        <text>Да запросто. О чём базар?</text>
+    </string>
+    <string id="esc_bandit_trader_questions_11">
+        <text>Расскажи о себе.</text>
+    </string>
+    <string id="esc_bandit_trader_questions_111">
+        <text>Э-э, брат, я ещё при Союзе коммерцию двигал! Был этим самым... которые «проклятые спекулянты». Погорел на серьёзной сделке, ну и получил по полной. Отмотал, что присудили, а заодно и знакомцев завёл среди народа воровского. Как откинулся, начал с крадунами работать, добычу их брать. За три года опять повязали, а вышел, так «совок» уже пару лет как накрылся. Не срослось что-то у меня с новыми порядками, долго по мелочи всякой работать пришлось, обнищал совсем, а тут бац - Зона нарисовалась. Я давай сюда, а тут лафа: почти всё как в старые времена! С моим опытом тут сейчас торговать - самое то.</text>
+    </string>
+    <string id="esc_bandit_trader_questions_1111">
+        <text>Мысль понял. Расскажешь что-нибудь ещё?</text>
+    </string>
+    <string id="esc_bandit_trader_questions_1112">
+        <text>Понял. Ну, хватит языками трепать.</text>
+    </string>
+    <string id="esc_bandit_trader_questions_12">
+        <text>Что думаешь о Логопеде?</text>
+    </string>
+    <string id="esc_bandit_trader_questions_121">
+        <text>Я те так скажу: недолго осталось Логопеду в тузах ходить. Нутром чую: подсидит его Коба, уделает по полной. Всё к тому идет. Пахан-то нос задрал без меры, понты одни. Змею пригрел, а сам того не замечает, что доброй половине пацанов уже ясно. Это я тебе не к тому рассказываю, чтоб ты раззвизделся сейчас налево и направо: я тебе доверие проявил, чтобы и ты мне верить мог. Да, так если на что интересное наткнёшься, тащи ко мне. Учти, я что при Логопеде, что при Кобе на своём месте всегда усижу.</text>
+    </string>
+    <string id="esc_bandit_trader_questions_13">
+        <text>Расскажи о Свалке.</text>
+    </string>
+    <string id="esc_bandit_trader_questions_131">
+        <text>Да пацаны там, в ту парашу, без особой радости притащились. Раньше ведь туда и не совались даже: мусор тут, радиация... А потом подфартило парочке сталкеров нарыть вещичек недешёвых. И всё - ломанулись сюда людишки со всей Зоны так, как болячки на старую курву. Бардак творился полнейший, но потом наши пацаны порядок навели. Главное, чтобы рука сильная была и шваль эту крепко держала. И Зона должна быть как зона: или красная мусорская, или чёрная воровская. Вот пацаны тут чёрную масть и утвердили. Ежу понятно, что за порядок платить надо. Пацанам-то есть тоже хочется, так что доля им полагается со всего. Эх, а мне, хоть и тут не кисло, всё ж охота до мест покозырней этого добраться...</text>
+    </string>
+    <string id="esc_bandit_trader_questions_14">
+        <text>Какие последние новости в Зоне?</text>
+    </string>
+    <string id="esc_bandit_trader_questions_141">
+        <text>Не люблю я такие слова - «последние новости». И ты поменьше их вставляй, чтоб в натуре новость не накликать, которая для тебя последняя будет. Хоть твари у нас тут не такие стрёмные, но на днях случилась одна история... Короче, пришкандыбал сталкер один - белый как стена, руки трясутся... С каких-то хренов начал исповедоваться. Тема такая: он с другом от полтергейстов смывались, а тут опа - стая тушканов на них вываливает. Ну, парня переклинило, рефлекс какой-то бешеный включился, он друга наискось очередью и располосовал. Сам, ясно, тут же дёру дал, а тушканы на тело кинулись: ну а на хрена им за мясом бегать, когда есть готовое? Ну а тут на втором пузыре водки у него сознанка включилась, он и давай выть на всю Свалку: «Игорё-о-ок, ты ж мне аптечку единственную тогда отдал, а я как сука, как тварь последняя, тебя кончил!..». Короче, повыл-повыл, а ночью на ремне повесился. Такие вот обстоятельства с людьми приключаются...</text>
+    </string>
+    <string id="esc_bandit_trader_questions_15">
+        <text>Да ни о чём, наверное.</text>
+    </string>
+    <string id="esc_bandit_trader_questions_151">
+        <text>Как хошь, дело твоё.</text>
+    </string>
+	
+	
+	<string id="esc_quest_night_hunting_barman_patogen_dialog_0">
+        <text>Может, чем помочь надо?</text>
+    </string>
+	<string id="esc_quest_night_hunting_barman_patogen_dialog_1">
+        <text>Да нет, Саван, спасибо, сами справляемся. Хотя... Есть тут одно дельце. Да только сомневаюсь, что ты за него возьмёшься</text>
+    </string>
+	<string id="esc_quest_night_hunting_barman_patogen_dialog_2">
+        <text>Что за дело, Патогеныч? Давай, колись, я же от тебя не отстану. Рассказывай всё как есть, а я уже решу, браться мне за работу или нет.</text>
+    </string>
+	<string id="esc_quest_night_hunting_barman_patogen_dialog_3">
+        <text>Да рассказывать то особо и нечего. Тварь тут одна недалеко поселилась. Псевдопёс. Хитрый, ублюдок. Как стемнеет, к лагерю приходит и начинает выть. Уже все нервы нам вымотал. Пару раз наши хотели найти его нору, да только не нашли ничего, ни следов, ни самой твари никто даже не видел, будто и не было никого. Но выть по ночам продолжает.</text>
+    </string>
+	<string id="esc_quest_night_hunting_barman_patogen_dialog_4">
+        <text>Так вы бы вечером с ним и разобрались, когда он к лагерю приходит</text>
+    </string>
+	<string id="esc_quest_night_hunting_barman_patogen_dialog_5">
+        <text>Ха, легко сказать. Я ж говорю, псевдособаки твари хитрые, а этот урод так вообще неуловимый. Да и, чтобы ночью на мутанта идти, нужно быть либо последним идиотом, либо Чаком Норрисом. Сам-то что думаешь, осилишь? Я тебе и шлем с ПНВ подгоню. Да что там - если справишься, забирай шлем насовсем. А я тебе сверху ещё и деньжат подкину. Идёт?</text>
+    </string>
+	<string id="esc_quest_night_hunting_barman_patogen_dialog_6">
+        <text>А давай! Ночная охота, что может быть лучше. Давай свой шлем. Как закончу, вернусь.</text>
+    </string>
+	
+	<string id="esc_quest_night_hunting_barman_patogen_dialog_7">
+        <text>Нет, спасибо, еще псевдо собачек мне не хватало.</text>
+    </string>
+	<string id="esc_quest_night_hunting_barman_patogen_dialog_8">
+        <text>Ну, я же сказал, что ты не возьмешься, не сможешь.</text>
+    </string>
+	<string id="esc_quest_night_hunting_barman_patogen_dialog_9">
+        <text>Только я знаю, что я могу!</text>
+    </string>
+	
+	<string id="esc_quest_night_hunting_barman_patogen_complete_dialog_0">
+        <text>Завалил я твою псину, Патогеныч. Прав ты оказался, ох и хитрющая же тварь, хрен попадёшь. Но ничего, я сам не пальцем деланный. Больше по ночам выть не будет, гарантирую.</text>
+    </string>
+	<string id="esc_quest_night_hunting_barman_patogen_complete_dialog_1">
+        <text>Вот это молодец, уважаю! Держи от меня ещё в награду, заслужил. Сегодня хоть выспимся нормально. Спасибо, Саван. Помни, тебе здесь всегда рады.</text>
+    </string>
+	<string id="esc_quest_night_hunting_barman_patogen_complete_dialog_2">
+        <text>Да не за что, Патогеныч. Если еще, какая тварь беспокоить будет, ты знаешь, кого позвать.</text>
+    </string>
+	
+	
+	<string id="esc_logoped_quest_mechanic_search_start_dialog_0">
+        <text>Зачем вызывал? Есть дело для меня?</text>
+    </string>
+	<string id="esc_logoped_quest_mechanic_search_start_dialog_1">
+        <text>Да, специально для тебя не пыльная работенка нашлась. Нужно найти толкового чувака, чтобы оружие и снарягу мог пацанам подлатать. Платить ему будем за каждую починку по трифу, как полагается, к тому же от пацанов уважуха и почет. Тебе за труды тоже перепадет. Берешся?</text>
+    </string>
+	<string id="esc_logoped_quest_mechanic_search_start_dialog_2">
+        <text>Без базара.</text>
+    </string>
+	<string id="esc_logoped_quest_mechanic_search_start_dialog_3">
+        <text>Лады, но только не затягивай.</text>
+    </string>
+	<string id="esc_logoped_quest_mechanic_search_start_dialog_4">
+        <text>Уже метнулся.</text>
+    </string>
+	<string id="esc_logoped_quest_mechanic_search_start_dialog_11">
+        <text>Не влом...</text>
+    </string>
+	<string id="esc_logoped_quest_mechanic_search_start_dialog_12">
+        <text>Вот крендель, влом ему... Вали тогда.</text>
+    </string>
+	<string id="esc_logoped_quest_mechanic_search_start_dialog_13">
+        <text>Ну и повалил.</text>
+    </string>
+	
+	
+	<string id="esc_logoped_quest_mechanic_search_end_dialog_0">
+        <text>Здоров Босс, я нашел в бригаду механика, прикольный пацан и толковый к тому же.</text>
+    </string>
+	<string id="esc_logoped_quest_mechanic_search_end_dialog_1">
+        <text>Вот это дело. Теперь наши дела еще кучерявее пойдут.</text>
+    </string>
+	<string id="esc_logoped_quest_mechanic_search_end_dialog_2">
+        <text>Ну как скажешь, кучерявее так кучерявее.</text>
+    </string>
+	
+	
+	<string id="esc_dybolom_quest_mechanic_search_dialog_0">
+        <text>Послушвй Дуболом, а ты не хочешь заняться ремонтом снаряги у братвы?</text>
+    </string>
+	<string id="esc_dybolom_quest_mechanic_search_dialog_1">
+        <text>Ну в общем то я не против. Тем более как ты знаешь с вольным сталкерством у меня не очень получается, а мастерить я могу так, что Стёпка может позавидовать. Но постой, Логопед теперь работу сталкерам предлагает?</text>
+    </string>
+	<string id="esc_dybolom_quest_mechanic_search_dialog_2">
+        <text>Лгопеду все равно, что ты вольным сталкером был. Обещает оплату трудов и уважение братвы.</text>
+    </string>
+	<string id="esc_dybolom_quest_mechanic_search_dialog_3">
+        <text>Тогда я согласен.</text>
+    </string>
+	<string id="esc_dybolom_quest_mechanic_search_dialog_4">
+        <text>Заметано, так Логопеду и передам.</text>
+    </string>	
+	
+	<string id="esc_colonel_kolyazin_quest_contract_0">
+        <text>Химера нейтрализована, вот ПДА.</text>
+    </string>
+	<string id="esc_colonel_kolyazin_quest_contract_1">
+        <text>Отлично! Получи новое задание. У нас дезертировал один военнослужащий. Рядовой Никита Сергеевич Нефедов. Судя по всему, сбежал в Зону. Найди, где он прячется или удостоверься в его смерти.</text>
+    </string>
+	<string id="esc_colonel_kolyazin_quest_contract_2">
+        <text>Хорошо. Это полегче химеры будет.</text>
+    </string>
+	
+	<string id="esc_colonel_kolyazin_quest_contract_end_0">
+        <text>Я нашел дезертира.</text>
+    </string>
+	<string id="esc_colonel_kolyazin_quest_contract_end_1">
+        <text>И где он прячется?</text>
+    </string>
+	<string id="esc_colonel_kolyazin_quest_contract_end_2">
+        <text>Он мертв, вот его армейские жетоны, снятые с трупа.</text>
+    </string>
+	<string id="esc_colonel_kolyazin_quest_contract_end_3">
+        <text>Ну чтож, значит туда ему и дорога. Вы с напарником можете проваливать.</text>
+    </string>
+	<string id="esc_colonel_kolyazin_quest_contract_end_4">
+        <text>Прошай, надеюсь больше не увидимся никогда.</text>
+    </string>
+	<string id="esc_colonel_kolyazin_quest_contract_end_10">
+        <text>Он находиться в лагере бандитов за железной дорогой и выдает себя за сталкера Шрама.</text>
+    </string>
+	<string id="esc_colonel_kolyazin_quest_contract_end_11">
+        <text>Вот, значит как. Вышлю отряд, чтобы арестовать его. Вы с напарником свободны,  больше не попадайтесь.</text>
+    </string>
+	<string id="esc_colonel_kolyazin_quest_contract_end_12">
+        <text>Уж постараемся.</text>
+    </string>
+	
+	<string id="esc_wolf_quest_army_contract_dialog_0">
+        <text>Слушай, Пёс, ты же бывалый охотник. Мне нужно одну химеру устранить, а то она воякам жизни не даёт. Не подскажешь, как справиться с химерой в одиночку?</text>
+    </string>
+	<string id="esc_wolf_quest_army_contract_dialog_1">
+        <text>Ты, кстати, тоже неплохой охотник. Вон и Лешего вытащил, и с зачисткой територии от мутантов сильно помог. Поэтому скажу, как охотник - охотнику, есть неординарный способ.</text>
+    </string>
+	<string id="esc_wolf_quest_army_contract_dialog_2">
+        <text>Неординарный? Это как понимать?</text>
+    </string>
+	<string id="esc_wolf_quest_army_contract_dialog_3">
+        <text>Слышал о Зверобое? Так вот он изготовил репиллент на основе мочи самца химеры. Если намазать им непокрытые одеждой части тела, то химера, учуяв запах конкурентной особи, ретируется. Сбежит и больше не вернётся. Хотя не всё так просто.</text>
+    </string>
+	<string id="esc_wolf_quest_army_contract_dialog_4">
+        <text>Ну, как обычно. Побочные эффекты?</text>
+    </string>
+	<string id="esc_wolf_quest_army_contract_dialog_5">
+        <text>Дело в том, что чем сильнее самец химеры, тем больше в моче особых веществ, сигнализирующих о силе противника. Самка химеры предпочтет удрать, слабый самец тоже сбежит. Но если встретишь сильного самца, то запах конкурента приведет его в неистовство. В ярость. Ну и, как понимаешь, разъяренный сильный самец химеры порвёт тебя на британский флаг. Порвёт, как тузик - грелку. \n"Мяу" не успеешь сказать.</text>
+    </string>
+	<string id="esc_wolf_quest_army_contract_dialog_6">
+        <text>Ладно, рискну. Есть у тебя этот репиллент? Дорого просишь за него?</text>
+    </string>
+	<string id="esc_wolf_quest_army_contract_dialog_7">
+        <text>Вот держи. Денег не возьму, даже не вздумай. Считай, это моя благодарность за спасение Лешего.</text>
+    </string>
+	<string id="esc_wolf_quest_army_contract_dialog_8">
+        <text>Спасибо, Пёс.</text>
+    </string>
+	<string id="esc_wolf_quest_army_contract_dialog_10">
+        <text>Нет, я уж лучше обойдусь без этого чудо-репиллента. Химера сама по себе - не подарок, а химера в ярости - это вообще верная смерть. Нафиг-нафиг такое счастье.</text>
+    </string>
+	
+	<string id="esc_wolf_quest_dezertir_dialog_0">
+		<text>Пёс, такое дело. В деревне не появлялся солдат по фамилии Нефедов?</text>
+    </string>
+	<string id="esc_wolf_quest_dezertir_dialog_1">
+		<text>Солдат тут не бывает, у нас с ними напряженные отношения. Не стреляем, конечно,  друг в друга. Но стараемся не соприкасаться. Они к нам не лезут, а мы - к ним.</text>
+    </string>
+	<string id="esc_wolf_quest_dezertir_dialog_2">
+		<text>А из новичков последнее время был кто-то по имени Никита?</text>
+    </string>
+	<string id="esc_wolf_quest_dezertir_dialog_3">
+		<text>Некоторое время назад был новичок по имени Никита. Кличка у него была, такая странная. Каша. Никита Каша. Но он давно перебрался на АТП.</text>
+    </string>
+	<string id="esc_wolf_quest_dezertir_dialog_4">
+		<text>Спасибо за инфу.</text>
+    </string>
+	
+	
+	<string id="esc_patogen_quest_dezertir_dialog_0">
+		<text>Патогеныч, здравствуй, вопрос к тебе есть. Не встречался тебе сталкер по имени Каша или Никита? Или Никита Каша? Бывший военный. Ась?</text>
+    </string>
+	<string id="esc_patogen_quest_dezertir_dialog_1">
+		<text>Нет ни Каши, ни Никиты я не встречал. Да и не принято у сталкеров настоящие имена использовать.</text>
+    </string>
+	<string id="esc_patogen_quest_dezertir_dialog_2">
+		<text>Ну а может, недавно встречал бывшего военного?</text>
+    </string>
+	<string id="esc_patogen_quest_dezertir_dialog_3">
+		<text>Это как определять бывшего военного? Кто быстрее всего просыпается и вскакивает при команде: "Рота подъем!", что ли?</text>
+    </string>
+	<string id="esc_patogen_quest_dezertir_dialog_4">
+		<text>Патогеныч, ты мне зубы не заговаривай. Ты же сталкер опытный, повидавший всякого. Неужели глаз не наметан служивого распознать?</text>
+    </string>
+	<string id="esc_patogen_quest_dezertir_dialog_5">
+		<text>Да, в общем-то, был один сталкер. По кличке Погон, у него еще шрам на лице был, вот он точно из бывших. И не по кличке видно, а по тому, как на других сталкеров смотрел. Как солдат - на вошь. Как Ленин - на буржуазию.</text>
+    </string>
+	<string id="esc_patogen_quest_dezertir_dialog_6">
+		<text>И где он сейчас?</text>
+    </string>
+	<string id="esc_patogen_quest_dezertir_dialog_7">
+		<text>А хрен его знает. Может погиб, может к бандитам ушел. Тут его давно не видно.</text>
+    </string>
+	<string id="esc_patogen_quest_dezertir_dialog_8">
+		<text>Спасибо, помог.</text>
+    </string>
+	
+	<string id="esc_logoped_quest_dezertir_dialog_0">
+		<text>Логопед, не встречал ли ты среди своих человека по кличке Погон?</text>
+    </string>
+	<string id="esc_logoped_quest_dezertir_dialog_1">
+		<text>Погон? Не из легавых?</text>
+    </string>
+	<string id="esc_logoped_quest_dezertir_dialog_2">
+		<text>Нет, что ты. Просто кличка такая. У него шрам на лице, и недавно тут должен был появиться.</text>
+    </string>
+	<string id="esc_logoped_quest_dezertir_dialog_3">
+		<text>Появился у нас человечек со шрамом на лице. Ну мы его так и называем - Шрам.</text>
+    </string>
+	<string id="esc_logoped_quest_dezertir_dialog_4">
+		<text>Он сейчас здесь?</text>
+    </string>
+	<string id="esc_logoped_quest_dezertir_dialog_5">
+		<text>Да, где-то здесь.</text>
+    </string>
+	<string id="esc_logoped_quest_dezertir_dialog_6">
+		<text>Перетру с ним.</text>
+    </string>
+	
+	<string id="esc_dezertir_quest_dezertir_dialog_0">
+		<text>И тебе привет. Дело к тебе есть.</text>
+    </string>
+	<string id="esc_dezertir_quest_dezertir_dialog_1">
+		<text>Какое у тебя может быть ко мне дело?</text>
+    </string>
+	<string id="esc_dezertir_quest_dezertir_dialog_2">
+		<text>Никита, мне бугор одно задание дал, но один я не потяну. Мне напрарник нужен, подсобишь?</text>
+    </string>
+	<string id="esc_dezertir_quest_dezertir_dialog_3">
+		<text>Ну, если дело обещает быть прибыльным... Постой как ты меня назвал?</text>
+    </string>
+	<string id="esc_dezertir_quest_dezertir_dialog_4">
+		<text>Я назвал тебя Никита Нефедов, бывший рядовой Украинской армии, а сейчас дезертир в розыске. Колязин всех на уши поставил, чтобы тебя найти.</text>
+    </string>
+	<string id="esc_dezertir_quest_dezertir_dialog_5">
+		<text>Вот черт, не отпускает меня моё прошлое... Послушай, мне все равно обратной дороги нет, но раз Колязин не успокоится, пока не найдет меня, то помоги мне. Вот мои брелки военнослужащего, отдай их ему и скажи, что нашел на мертвом моём теле. А я дальше на север уйду, чтоб не нашли.</text>
+    </string>
+	<string id="esc_dezertir_quest_dezertir_dialog_6">
+		<text>Ладно, давай.</text>
+    </string>
+	
+	<string id="esc_sidor_about_price_dialog_0">
+		<text>Скидан, а что с ценами стало?</text>
+    </string>
+	<string id="esc_sidor_about_price_dialog_1">
+		<text>Что, что. Какой-то умник из сталкеров насолил военным, теперь Колязин поднял пошлину за доставку товаров через блокпост. А ты думал, как ко мне товары попадают? Узнал бы кто нагадил, сам бы голову оторвал. Вот этими самыми руками.</text>
+    </string>
+	<string id="esc_sidor_about_price_dialog_2">
+		<text>И что теперь?</text>
+    </string>
+	<string id="esc_sidor_about_price_dialog_3">
+		<text>А то, что настали для всех сталкеров тяжелые времена. Теперь продовольствие, обмундирование , боеприпасы и оружие, в общем всё, выросло в цене. А мне нерентабельно теперь торговать здесь, на Кордоне. Такие дела.</text>
+    </string>
+	<string id="esc_sidor_about_price_dialog_4">
+		<text>Надо что-то делать.</text>
+    </string>
+	<string id="esc_sidor_about_price_dialog_5">
+		<text>Что будут делать сталкеры, я не знаю. Ну а я, если ситуация с военными не измениться, буду перебераться в район КПП "Дитятки".</text>
+    </string>
+	<string id="esc_sidor_about_price_dialog_6">
+		<text>Понятно.</text>
+    </string>
+	
+	<string id="esc_patogen_about_price_dialog_0">
+		<text>Патогеныч, а что с ценами стало?</text>
+    </string>
+	<string id="esc_patogen_about_price_dialog_1">
+		<text>Колязин озверел, взвинтил цену на провоз товаров через блокпост. Теперь тяжко со снабжением и значит цены выросли.</text>
+    </string>
+	<string id="esc_patogen_about_price_dialog_2">
+		<text>Понятно.</text>
+    </string>
+	
+	<string id="esc_antibiotic_about_price_dialog_0">
+		<text>Антибиотик, а что с ценами стало?</text>
+    </string>
+	<string id="esc_antibiotic_about_price_dialog_1">
+		<text>Колязин оборзел, повысил оплату на провоз медикоментов через блокпост. Цены и выросли.</text>
+    </string>
+	<string id="esc_antibiotic_about_price_dialog_2">
+		<text>Понятно.</text>
+    </string>
+	
+	<string id="esc_tick_about_price_dialog_0">
+		<text>Клещ, а что с ценами стало?</text>
+    </string>
+	<string id="esc_tick_about_price_dialog_1">
+		<text>Колязин, шваль мусорская, втридорого требует башлять за доставку подогрева через колючку. Вот и мне нужно в убытке не остаться. Бизнес, млять.</text>
+    </string>
+	<string id="esc_tick_about_price_dialog_2">
+		<text>Ясно.</text>
+    </string>
+	
+	<string id="esc_kusto_about_price_dialog_0">
+		<text>Кусто, а что с ценами стало?</text>
+    </string>
+	<string id="esc_kusto_about_price_dialog_1">
+		<text>Колязин совсем охренел, поднял цену на провоз товаров через блокпост. Теперь тяжко со снабжением. И, значит, цены выросли.</text>
+    </string>
+	<string id="esc_kusto_about_price_dialog_2">
+		<text>Уяснил.</text>
+    </string>
+	
+	<string id="esc_quest_dangerous_business_logoped_dialog_0">
+		<text>Вызывал? Зачем я понадобился?</text>
+    </string>
+	<string id="esc_quest_dangerous_business_logoped_dialog_1">
+		<text>Слышал я про Шмыгу и про то что он выгодное дельце провернул. Но вот поступать по понятиям не хочет: если дело выгорело, отстегни в общак десятую часть добычи.</text>
+    </string>
+	<string id="esc_quest_dangerous_business_logoped_dialog_2">
+		<text>Ты предлагаешь мне выбить из Шмыги долю в общак?</text>
+    </string>
+	<string id="esc_quest_dangerous_business_logoped_dialog_3">
+		<text>Какой догадливый, но не просто выбить, а еше и наказать его за борзость и не желание жить по понятиям.</text>
+    </string>
+	<string id="esc_quest_dangerous_business_logoped_dialog_4">
+		<text>Как наказать?</text>
+    </string>
+	<string id="esc_quest_dangerous_business_logoped_dialog_5">
+		<text>Как полагается, по-пацански. Пустить кровь ножичком, чтобы он запомнил и другим неповадно было. Передай ему, что если жить хочет, пусть отдает долю.</text>
+    </string>
+	<string id="esc_quest_dangerous_business_logoped_dialog_6">
+		<text>Сделаю.</text>
+    </string>
+	
+	<string id="esc_quest_dangerous_business_shmiga_first_dialog_0">
+		<text>Отдайвай, сука, кейс Скидана.</text>
+    </string>
+	<string id="esc_quest_dangerous_business_shmiga_first_dialog_1">
+		<text>Чего? А ключи от квартиры, где деньги лежат, не хочешь? Отвали по хорошему.</text>
+    </string>
+	<string id="esc_quest_dangerous_business_shmiga_first_dialog_2">
+		<text>Какие ключи? Ты мне не заливай. Это не твой кейс, и открыть ты его не сможешь.</text>
+    </string>
+	<string id="esc_quest_dangerous_business_shmiga_first_dialog_3">
+		<text>Не беспокойся, то, что моё, я смогу открыть.</text>
+    </string>
+	<string id="esc_quest_dangerous_business_shmiga_first_dialog_4">
+		<text>Я тебя сейчас пристрелю, падла.</text>
+    </string>
+	<string id="esc_quest_dangerous_business_shmiga_first_dialog_5">
+		<text>Тут на базе братвы? Да тебя самого в момент полажат, не успеешь на правильного пацана ствол поднять.</text>
+    </string>
+	<string id="esc_quest_dangerous_business_shmiga_first_dialog_6">
+		<text>Ладно свидимся еще.</text>
+    </string>
+	
+	<string id="esc_quest_dangerous_business_shmiga_second_dialog_0">
+		<text>Вот тебе слово пахана отморозок: ты, падла, поступил не по понятиям, с добычи не отстегнул в общак. Поэтому братва за тебя не станет вписываться.</text>
+    </string>
+	<string id="esc_quest_dangerous_business_shmiga_second_dialog_1">
+		<text>Братва? Ну и хрен с ней. У меня своя бригада скоро будет.</text>
+    </string>
+	<string id="esc_quest_dangerous_business_shmiga_second_dialog_2">
+		<text>Не будет. Логопед приказал наказать тебя и расписать бритвой твою наглую морду.</text>
+    </string>
+	<string id="esc_quest_dangerous_business_shmiga_second_dialog_3">
+		<text>Что? Я тебя сечас самого попишу ножичком, фраер.</text>
+    </string>
+	<string id="esc_quest_dangerous_business_shmiga_second_dialog_4">
+		<text>Погнали.</text>
+    </string>
+	
+	<string id="esc_quest_dangerous_business_shmiga_last_dialog_0">
+		<text>Пощади, не убивай, я отдам долю в общак.</text>
+    </string>
+	<string id="esc_quest_dangerous_business_shmiga_last_dialog_1">
+		<text>Ну вот, надо было с этого начинать, я передам Логопеду твое согласие.</text>
+    </string>
+	<string id="esc_quest_dangerous_business_shmiga_last_dialog_2">
+		<text>Ты, меня точно не убъешь?</text>
+    </string>
+	<string id="esc_quest_dangerous_business_shmiga_last_dialog_3">
+		<text>Живи пока.</text>
+    </string>
+	<string id="esc_quest_dangerous_business_shmiga_last_dialog_10">
+		<text>Не так быстро, сученок, эти деньги ты должен не Логопеду, а Скидану.</text>
+    </string>
+	<string id="esc_quest_dangerous_business_shmiga_last_dialog_11">
+		<text>Но ты же сказал, что это доля в общак.</text>
+    </string>
+	<string id="esc_quest_dangerous_business_shmiga_last_dialog_12">
+		<text>Я соврал! С тебя весь хабар Скидана и твоя жизнь. Мертвые не потеют. И тайн не выдают...</text>
+    </string>
+	
+	<string id="esc_quest_dangerous_business_logoped_end_dialog_0">
+		<text>Я разобрался со Шмыгой.</text>
+    </string>
+	<string id="esc_quest_dangerous_business_logoped_end_dialog_1">
+		<text>Зашибись, теперь никто не посмеет зажать долю в общак. Вот и тебе за труды перепало.</text>
+    </string>
+	<string id="esc_quest_dangerous_business_logoped_end_dialog_2">
+		<text>Неплохо, неплохо.</text>
+    </string>
+	<string id="esc_quest_dangerous_business_logoped_end_dialog_10">
+		<text>Ты че оборзел, тебе было сказано подрезать, а не валить!</text>
+    </string>
+	<string id="esc_quest_dangerous_business_logoped_end_dialog_11">
+		<text>Согласен, перестарался. Но трудно было удержаться.</text>
+    </string>
+	<string id="esc_quest_dangerous_business_logoped_end_dialog_12">
+		<text>В следующий раз делай что говорят, а не устраивай беспредел. Что с хабаром?</text>
+    </string>
+	<string id="esc_quest_dangerous_business_logoped_end_dialog_13">
+		<text>Не известно, при себе у Шмыги не было ничего. И где хабар, теперь не узнать.</text>
+    </string>
+	<string id="esc_quest_dangerous_business_logoped_end_dialog_14">
+		<text>Да, накосячил ты конкретно, вали с глаз моих, пока не приказал и тебя замочить.</text>
+    </string>
+	<string id="esc_quest_dangerous_business_logoped_end_dialog_15">
+		<text>Уже ушел.</text>
+    </string>
+		
+	
+	<string id="esc_army_stepan_dialog_0">
+        <text>--------</text>
+    </string>
+	<string id="esc_army_stepan_dialog_1">
+        <text>--------</text>
+    </string>
+	<string id="esc_army_stepan_dialog_2">
+        <text>--------</text>
+    </string>
+	<string id="esc_army_stepan_dialog_3">
+        <text>--------</text>
+    </string>
+	
+
+
+	<string id="my_dialogs_01">
+		<text>Скидан, а чё у тебя такой ассортимент? Водка, жратва, броники, аптечки да гладкоствол с дробью?</text>
+	</string>
+	<string id="my_dialogs_02">
+		<text>Любой каприз за ваши деньги. Хе-хе. Ассортимент богатый, верно заметил. Всё, что нужно для настоящего сталкера! Хе-хе. Приходит голый новичок и упаковывается у меня с ног до головы. Были бы деньги. Самый ходовой товар, конечно, водка. Возьмешь пару бутылок? Свежая, только вчера подвезли.</text>
+	</string>
+	<string id="my_dialogs_03">
+		<text>Не, ты не понял. Ассортимент убогий, я это хотел сказать. Гладкоствольные ружья, да охотничьи патроны 12 калибра. Да в любом военторге на Большой земле побогаче будет. Где автоматы, пистолеты, пулемёты, гранаты? Ты ж скупаешь это. Под прилавком прячешь?</text>
+	</string>
+	<string id="my_dialogs_04">
+		<text>Ты торговлей занимался когда-нибудь, Саван? Магазин держал в Зоне?</text>
+	</string>
+	<string id="my_dialogs_05">
+		<text>Нет, конечно.</text>
+	</string>
+	<string id="my_dialogs_06">
+		<text>Я так и думал. И вот мой тебе совет, причем, совершенно бесплатный: никогда, слышишь, никогда не открывай магазин в Зоне. Каждая сопля зелёная будет тебе каждый день тыкать, что у тебя хреновый ассортимент. И цены высокие. Каждый желторотый птенчик знает, как надо правильно вести торговлю в Зоне, только Скидан не в курсе, ага? \nТы думаешь, ты первый такой с вопросом про ассортимент? Да каждый божий день! Я, может, и полысел только от этого. Всю плешь проели мне этим. Я-то сначала каждому объяснял, что сижу я под боком у военных, и любая комиссия с проверкой с блок-поста идёт именно в мой бункер. И тут у меня всё должно быть тип-топ, соответствовать всем законам страны. У меня всё официально оформленно как охотничьий магазин, совмещенный с магазином "Продукты". Лицензия, справки от санэпиднадзора и торговой инспекции. Все дела. Я налоги плачу каждый месяц, а ты как думал?</text>
+	</string>
+	<string id="my_dialogs_07">
+		<text>Налоги? Охренеть. Взятки, наверно?</text>
+	</string>
+	<string id="my_dialogs_08">
+		<text>И взятки тоже плачу, куда без этого. Ты, небось, тоже думал, что я цену на всё удваиваю от балды, а прибыль себе в карман, что наживаюсь на брате-сталкере? Думал, что Скидан - кровосос? Думал же, а? А я концы с концами едва свожу. Основной мой товар - информация. А магазин... хорошо, если в ноль выходит. А бывают месяцы, когда и убытки. Оружие, которое я у сталкеров скупаю за копейки, я сдаю на блок-пост. На вес. Они это оформляют, как конфискацию. И им хорошо - план по конфискации огнестрельного незарегистрированного выполняют, звездочки капают на погоны, отпуска внеочередные. И мне неплохо, я потому и беру за копейки, что отдаю лишь чуть дороже. Зато с вояками хорошие отношения, не прессуют меня. Чем глубже в Зону, чем дальше от блок-постов вояк, тем обширнее ассортимент. До Бара если доберешься, там тебе будет и любое нарезное, и гранаты, и базуки и броня, какой тут в глаза никто не видел. Это же азбука, основы. Теперь-то я это не объясняю каждому, а просто говорю "Иди на хер!". \nИ тебе, Саван, скажу то же самое. Иди на хер!</text>
+	</string>
+	<string id="my_dialogs_09">
+		<text>Скидан, извиняй. Не знал я. Давай забудем об этом разговоре, как будто его и не было.</text>
+	</string>
+
+	<string id="xolod_dialogs_01">
+		<text>Дым, ты же в научной экспедиции много лет. Что про Зону понял? Что это? Откуда? Почему Зона растёт? И чем это всё кончится?</text>
+	</string>
+	<string id="xolod_dialogs_02">
+		<text>Хотел бы я сам знать, чем всё это кончится. Между прочим, десять лет назад я совершенно точно знал, чем всё это должно кончиться. Непреодолимые кордоны. Пояс пустоты шириной в пятьдесят километров. Учёные и солдаты, больше никого. Страшная язва на теле планеты заблокирована намертво. \nИ  все так считали, не только я. Какие произносились речи, какие вносились законопроекты!.. А теперь вот уже даже и не вспомнишь, каким образом эта всеобщая стальная решимость расплылась вдруг киселём. \nА началось это, кажется, когда сталкеры вынесли из Зоны первые «Батарейки». Да, кажется, с этого и началось. Особенно когда открылось, какие у них свойства. Язва оказалась не такой уж и язвой, и даже не язвой вовсе, а вроде как бы сокровищницей… А теперь уже никто и не знает, что это такое - язва ли, сокровищница, адский соблазн, шкатулка Пандоры, чёрт, дьявол… Пользуются помаленьку.</text>
+	</string>
+	<string id="xolod_dialogs_03">
+		<text>Погоди. Неужели за эти годы ученые ничего не поняли про артефакты?</text>
+	</string>
+	<string id="xolod_dialogs_04">
+		<text>Как это ни забавно, почти ничего. Мы обнаружили много чудес. В некоторых случаях мы научились даже использовать эти чудеса для своих нужд. Обезьяна нажимает красную кнопку - получает банан, нажимает белую - апельсин, но как раздобыть бананы и апельсины без кнопок, она не знает. И какое отношение имеют кнопки к бананам и апельсинам, она не понимает. \nВозьмём, скажем, артефакты. Мы научились ими пользоваться. Но мы до сих пор не сумели воссоздать ни одного артефакта, не понимаем, как они устроены, и, судя по всему, разберёмся во всём этом не скоро… \nЯ совершенно уверен, что в подавляющем большинстве случаев мы забиваем микроскопами гвозди. Но всё-таки кое-что мы применяем: «батарейки», «браслеты», артефакты, стимулирующие жизненные процессы… различные типы квазибиологических масс, которые произвели переворот в медицине… \nМы получили новые транквилизаторы, новые типы минеральных удобрений, переворот в агрономии… Назовём эту группу объектов полезными. Можно сказать, что в какой-то степени человечество ими облагодетельствовано, хотя никогда не следует забывать, что в нашем эвклидовом мире всякая палка имеет два конца.</text>
+	</string>
+	<string id="xolod_dialogs_05">
+		<text>Два конца? Ты про аномалии, которые убивают? Или про Выбросы?</text>
+	</string>
+	<string id="xolod_dialogs_06">
+		<text>Нет, с этим, как раз, более менее понятно. Смерть. И не надо туда лезть. Я о другом. Действие каждого полезного артефакта нами более или менее объяснено. \nСложнее обстоит дело с другой группой артефактов, сложнее именно потому, что никакого применения они у нас не находят, а свойства их в рамках наших нынешних представлений решительно необъяснимы. Короче говоря, артефакты этой группы для нынешней человеческой практики совершенно бесполезны, хотя с чисто научной точки зрения они имеют фундаментальное значение. \nЭто свалившиеся с неба ответы на вопросы, которые мы ещё не умеем задать. Я не буду вдаваться в подробности, но существование таких объектов разом зачеркнуло целое поле недавно процветавших теорий и вызвало к жизни совершенно новые идеи. А ведь есть ещё третья группа…</text>
+	</string>
+	<string id="xolod_dialogs_07">
+		<text>Артефакты с отрицательными свойствами, да?</text>
+	</string>
+	<string id="xolod_dialogs_08">
+		<text>Нет-нет. Всё это следует отнести либо к первой, либо ко второй группе. Я имею в виду объекты, о которых мы ничего не знаем или знаем только понаслышке, которые мы никогда не держали в руках. То, что уволокли у нас из-под носа сталкеры, - продали неизвестно кому, припрятали. То, о чём они молчат. Легенды и полулегенды: «Маятник», например. Или "Смерть-лампа".</text>
+	</string>
+	<string id="xolod_dialogs_09">
+		<text>Хм... легенды, значит. Спасибо, Дым, за обстоятельный рассказ. Не скажу, что я что-то понял, но теперь я смотрю на всё по-новому. Буду много думать.</text>
+	</string>
+	<string id="wolf_dialogs_01">
+		<text>Пёс, один вопрос мне покоя не даёт. Про сталкеров.</text>
+	</string>
+	<string id="wolf_dialogs_02">
+		<text>Что интересует, Саван?</text>
+	</string>
+	<string id="wolf_dialogs_03">
+		<text>Вот смотри, военные про сталкеров знают. Видят каждый день, как вы тут мельтешите прямо перед блокпостом. Да и про других сталкеров в глубине Зоны тоже, думаю, в курсе. Более того, все сталкеры в Зону попадают через военные блокпосты, других-то путей нет. Минные поля и что похуже по периметру Зоны, не пройти. Только через блокпосты. Ну, то есть, всё выглядит так, как будто вояки специально пропускают сталкеров в Зону. Они же, вроде, должны наоборот со сталкерами бороться и всячески их не пущать. Одно с другим не стыкуется. В непонятках я.</text>
+	</string>
+	<string id="wolf_dialogs_04">
+		<text>О! Быстро ты, Саван, начал правильные вопросы задавать. Другие новички месяцами до этого вопроса дорастают. Всё верно ты говоришь - военные про сталкеров знают и специально их сюда пропускают. Всё так. Делают вид, конечно, что борются с этим уродливым явлением. Но даже ты на вторые сутки здесь понял, что это всего лишь цирк, и вояки нам палки в колёса вставлять даже не пытаются. И вот тут главный вопрос: "Почему так?". И есть ответ. Довольно простой. Только сталкер может найти артефакт, увидеть его, взять и принести в мир людей.</text>
+	</string>
+	<string id="wolf_dialogs_05">
+		<text>В смысле, "только сталкер"? Чё там видеть? Включил сканер-детектор, подошел к точке, куда стрелка на экране указывает, артефакт сам к тебе в руки выпрыгнет. Не высшая математика. Темнишь, Пёс?</text>
+	</string>
+	<string id="wolf_dialogs_06">
+		<text>А вот тут - самая интересная часть Марлезонского балета. В первые годы после появления Зоны никаких детекторов и сканеров не было. Сталкеры просто видели артефакты, как валяющиеся там и сям предметы. Или парящие над землёй. Или прыгающие. Светящиеся. Теплые. И сталкеры их подбирали. Несли барыгам-перекупщикам, ученым, коллекционерам, шпионам разных государств, тем же военным. Много тут желающих, заполучить подарки Зоны. Когда сталкер подобрал артефакт, тот становится виден всем людям, понимаешь? Сталкеры как бы проводники, они проявляют артефакт в наш мир, как бы вытаскивают их из.... не знаю, из чего. Из другого измерения, из другой вселенной, из другого времени? Ученые много лет бьются, пытаясь понять это, ни фига не поняли.\nФакт в том, что обычные люди артефактов не видят до тех пор, пока те не побывают в руках сталкеров. Хоть обвешайся сканерами и детекторами с ног до головы - не увидишь. А сталкер просто видит. Чувствует. И никто, кроме сталкеров, не видит, что артефакты светятся, не чувствует, что они тёплые. Не видит, какие они красивые. Для остальных людей это черные куски непонятно чего. Холодные. Я со многими беседовал обычными людьми, никто из них не видит сияния и красоты артефактов.</text>
+	</string>
+	<string id="wolf_dialogs_07">
+		<text>Да ты гонишь, Пёс! Быть такого не может.</text>
+	</string>
+	<string id="wolf_dialogs_08">
+		<text>Зона, брат. Тут и не такие чудеса случаются. Одним словом, нет сталкеров - нет артефактов. Думаешь, почему бандюки или наемники, или сами вояки артефакты не собирают? Не видят они их. Не чувствуют. Да 90% людей в Зоне артефакты найти в принципе неспособны. Такая вот арифметика. А, может, и все 99%, я точных цифр не знаю. Знаешь, почему Скидан каждому новичку даёт одно и то же первое задание - найти какой-нибудь артефакт? Сейчас-то понимаешь, что это проверка. Проверяет Скидан, есть у тебя этот талант быть сталкером, или ты просто погулять вышел. Большинство проверку не проходят. И заранее нельзя определить, кто станет сталкером, а кто - нет. Это что-то врожденное, я думаю. Только в момент нахождения артефакта это и можно понять. \nВоенные и ученые поначалу пытались роботов приспособить артефакты добывать. Делали машинки такие небольшие, туда сканеров и детекторов напихивали разных целую кучу, манипулятор был для захвата объектов, контейнеры для хранения свинцовые, дистанционное управление, искусственный интеллект и всё дела. Японские разработки. Запустили пять, кажется, таких роботов разом. И все пять гробанулись в аномалиях в течение суток, ни одного артефакта так и не найдя. А собрали они в свои свинцовые контейнеры всякий мусор - камни, железякие какие-то. Вот тебе и искусственный интеллект. На этом опыт с роботами и закончился. Денег на это потратили - капец! Мне Сахаров, ученый с Янтаря, рассказал эту историю, он тогда научным руководителем был в этом проекте.\nПотом решили военных сталкеров делать. Набрали добровольцев среди вояк-контрактников и стали их натаскивать на поиск артефактов. Наняли вольных сталкеров в учителя. Меня наняли, в том числе. Платили щедро. Да только толку ноль. Хорошо, если 1 из 20 мог найти артефакт, это еще, считай, повезло. Научить этому нельзя. Это как цвет глаз, ты с этим рождаешься. Ты либо сталкер, либо нет. Военсталки и сейчас работают в Зоне, да только мало их. Вот поэтому вояки пропускают в Зону всех подряд, чтобы здесь Зона сама выявила настоящих сталкеров. А уж когда сталкер проявится, он без работы и денег не останется. Это ты, думаю, уже понял. И будь уверен, что и вояки и СБУ за каждым истинным сталкером пристально наблюдают. Думаю, на тебя уже досье заведено под грифом "совершенно секретно". Такие дела.</text>
+	</string>
+	<string id="wolf_dialogs_09">
+		<text>Ну, Пёс, удивил ты меня. Можно сказать, ошарашил. Чувствую себя немножко мутантом.</text>
+	</string>
+
+</string_table>

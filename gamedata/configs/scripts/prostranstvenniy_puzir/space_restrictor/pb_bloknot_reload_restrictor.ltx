@@ -1,0 +1,34 @@
+[logic]
+active = sr_idle@bloknot_reload_again
+
+[sr_idle@bloknot_reload_again]
+on_info = {+perevalochnaya_baza_zver_see_to_document} sr_idle@bloknot_reload_again_1 %=del_item_from_actor(pb_quest_bloknot_1:1) =pro_bloknot_2_reload%
+
+[sr_idle@bloknot_reload_again_1]
+on_timer = 6000 | sr_idle@bloknot_reload_two %=pb_new_text_in_bloknot%
+
+[sr_idle@bloknot_reload_two]
+on_info = {+controller_quest_dead} sr_idle@bloknot_reload_two_1 %=del_item_from_actor(pb_quest_bloknot_2:1) =pro_bloknot_4_reload%
+
+[sr_idle@bloknot_reload_two_1]
+on_timer = 2000 | sr_idle@bloknot_reload %=pb_new_text_in_bloknot%
+
+[sr_idle@bloknot_reload]
+on_info = {+padalshik_found_quest_give} sr_idle@bloknot_reload_1
+
+[sr_idle@bloknot_reload_1]
+on_timer = 3000 | sr_idle@bloknot_reload_in_chapter %=pb_new_text_in_bloknot%
+
+[sr_idle@bloknot_reload_in_chapter]
+on_info = {+pro_markus_alive_first_dialog_end} sr_idle@bloknot_reload_in_chapter_1 %=pro_bloknot_6_reload%
+
+[sr_idle@bloknot_reload_in_chapter_1]
+on_timer = 3000 | sr_idle@bloknot_reload_in_skip_time %=pb_new_text_in_bloknot%
+
+[sr_idle@bloknot_reload_in_skip_time]
+on_info = {+pro_actor_go_to_medicament_search} sr_idle@bloknot_reload_in_skip_time_1 %=del_item_from_actor(pb_quest_bloknot_6:1) =pro_bloknot_7_reload%
+
+[sr_idle@bloknot_reload_in_skip_time_1]
+on_timer = 3000 | sr_idle@bloknot_reload_nil %=pb_new_text_in_bloknot%
+
+[sr_idle@bloknot_reload_nil]

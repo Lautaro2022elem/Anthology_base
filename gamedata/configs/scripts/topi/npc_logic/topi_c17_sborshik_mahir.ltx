@@ -1,0 +1,70 @@
+[logic]
+active = move@waiting
+
+[move@waiting]
+move_dest_number       = 470338
+move_look_vertex       = 476165
+move_state_when_center = guard
+move_state_when_move   = walk
+meet                   = meet
+invulnerable           = true
+on_info                = {+topi_c17_mahir_quest_licvidation_talking_1 -topi_c17_mahir_quest_licvidation_talking_2} move@waiting_offline
+on_info2                = {+topi_c17_mahir_quest_licvidation_talking_2 -topi_c17_mahir_quest_licvidation_talking_1} move@going_nahui
+on_info3                = {+topi_c17_mahir_quest_fake_talking_1} nil %=release_npc%
+
+
+[move@waiting_offline]
+move_dest_number       = 470338
+move_look_vertex       = 476165
+move_state_when_center = sit_ass
+move_state_when_move   = walk
+meet                   = meet
+invulnerable           = false
+on_info                = {+topi_c17_mahir_quest_licvidation_talking_1 =dist_to_actor_ge(10)} nil %+topi_c17_mahir_quest_effect_start =kill_npc%
+
+[move@going_nahui]
+scheme_type            = patrol
+patrol_count_path      = 4
+patrol_path_1          = 512539
+patrol_path_1_state    = raid
+patrol_path_2          = 659398
+patrol_path_2_state    = rush
+patrol_path_3          = 745397
+patrol_path_3_state    = assault
+patrol_path_4          = 885075
+patrol_path_4_state    = sneak_run
+approach_state         = hide_na|20|>
+on_patrol_path         = 4|move@recovery_wait %+topi_c17_mahir_quest_come_to_point%
+invulnerable           = true
+meet                   = no_meet
+
+[move@recovery_wait]
+move_dest_number       = 885075
+move_look_vertex       = 873347
+move_state_when_center = guard
+move_state_when_move   = walk
+combat_ignore_cond     = true
+combat_ignore_keep_when_attacked = true
+gather_items_enabled = false
+help_wounded_enabled = false
+corpse_detection_enabled = false
+use_camp = false
+invulnerable           = false
+move_stop_on_talk      = true
+meet                   = meet
+on_info                = {+topi_c17_mahir_quest_licvidation_talking_3 =dist_to_actor_ge(80)} nil %=release_npc%
+
+
+[meet]
+close_anim 		= nil
+close_victim 	= nil
+close_snd_hello = nil
+close_snd_bye 	= nil
+far_anim 		= nil
+far_victim 		= nil
+close_distance  = 0
+far_distance 	= 0
+use = {=actor_enemy} false, true
+allow_break = false
+trade_enable = true
+meet_on_talking = false

@@ -1,0 +1,228 @@
+﻿<?xml version='1.0' encoding="UTF-8"?>
+
+<xml>
+
+	<!-- ПРОФИЛИ ЛОКАЦИИ "Свалка" -->
+	
+<character id="gar_a2_neutral_stalker_1">
+     <class>gar_a2_neutral_stalker_1</class>
+<specific_character>gar_a2_neutral_stalker_1</specific_character>
+</character>
+<character id="gar_a2_neutral_stalker_2">
+     <class>gar_a2_neutral_stalker_2</class>
+<specific_character>gar_a2_neutral_stalker_2</specific_character>
+</character>
+<character id="gar_a2_neutral_stalker_3">
+     <class>gar_a2_neutral_stalker_3</class>
+<specific_character>gar_a2_neutral_stalker_3</specific_character>
+</character>
+<character id="gar_a2_neutral_stalker_4">
+     <class>gar_a2_neutral_stalker_4</class>
+<specific_character>gar_a2_neutral_stalker_4</specific_character>
+</character>
+<character id="gar_a2_neutral_stalker_5">
+     <class>gar_a2_neutral_stalker_5</class>
+<specific_character>gar_a2_neutral_stalker_5</specific_character>
+</character>
+<character id="gar_a2_neutral_stalker_6">
+     <class>gar_a2_neutral_stalker_6</class>
+<specific_character>gar_a2_neutral_stalker_6</specific_character>
+</character>
+<character id="gar_a2_neutral_stalker_7">
+     <class>gar_a2_neutral_stalker_7</class>
+<specific_character>gar_a2_neutral_stalker_7</specific_character>
+</character>
+<character id="gar_a2_neutral_stalker_8">
+     <class>gar_a2_neutral_stalker_8</class>
+<specific_character>gar_a2_neutral_stalker_8</specific_character>
+</character>
+<character id="gar_a2_neutral_stalker_9">
+     <class>gar_a2_neutral_stalker_9</class>
+<specific_character>gar_a2_neutral_stalker_9</specific_character>
+</character>
+<character id="gar_a2_neutral_stalker_10">
+     <class>gar_a2_neutral_stalker_10</class>
+<specific_character>gar_a2_neutral_stalker_10</specific_character>
+</character>
+
+<character id="gar_a2_neutral_stalker_11">
+     <class>gar_a2_neutral_stalker_11</class>
+<specific_character>gar_a2_neutral_stalker_11</specific_character>
+</character>
+<character id="gar_a2_neutral_stalker_12">
+     <class>gar_a2_neutral_stalker_12</class>
+<specific_character>gar_a2_neutral_stalker_12</specific_character>
+</character>
+<character id="gar_a2_neutral_stalker_13">
+     <class>gar_a2_neutral_stalker_13</class>
+<specific_character>gar_a2_neutral_stalker_13</specific_character>
+</character>
+<character id="gar_a2_neutral_stalker_14">
+     <class>gar_a2_neutral_stalker_14</class>
+<specific_character>gar_a2_neutral_stalker_14</specific_character>
+</character>
+<character id="gar_a2_neutral_stalker_15">
+     <class>gar_a2_neutral_stalker_15</class>
+<specific_character>gar_a2_neutral_stalker_15</specific_character>
+</character>
+
+<character id="gar_b2_walking_stalker_1">
+     <class>gar_b2_walking_stalker_1</class>
+<specific_character>gar_b2_walking_stalker_1</specific_character>
+</character>
+<character id="gar_b2_walking_stalker_2">
+     <class>gar_b2_walking_stalker_2</class>
+<specific_character>gar_b2_walking_stalker_2</specific_character>
+</character>
+<character id="gar_b2_walking_stalker_3">
+     <class>gar_b2_walking_stalker_3</class>
+<specific_character>gar_b2_walking_stalker_3</specific_character>
+</character>
+<character id="gar_b2_walking_stalker_4">
+     <class>gar_b2_walking_stalker_4</class>
+<specific_character>gar_b2_walking_stalker_4</specific_character>
+</character>
+<character id="gar_b2_walking_stalker_5">
+     <class>gar_b2_walking_stalker_5</class>
+<specific_character>gar_b2_walking_stalker_5</specific_character>
+</character>
+
+<character id="gar_b2_walking_dolg_1">
+     <class>gar_b2_walking_dolg_1</class>
+<specific_character>gar_b2_walking_dolg_1</specific_character>
+</character>
+<character id="gar_b2_walking_dolg_2">
+     <class>gar_b2_walking_dolg_2</class>
+<specific_character>gar_b2_walking_dolg_2</specific_character>
+</character>
+<character id="gar_b2_walking_dolg_3">
+     <class>gar_b2_walking_dolg_3</class>
+<specific_character>gar_b2_walking_dolg_3</specific_character>
+</character>
+<character id="gar_b2_walking_dolg_4">
+     <class>gar_b2_walking_dolg_4</class>
+<specific_character>gar_b2_walking_dolg_4</specific_character>
+</character>
+
+<character id="gar_b2_walking_freedom_1">
+     <class>gar_b2_walking_freedom_1</class>
+<specific_character>gar_b2_walking_freedom_1</specific_character>
+</character>
+<character id="gar_b2_walking_freedom_2">
+     <class>gar_b2_walking_freedom_2</class>
+<specific_character>gar_b2_walking_freedom_2</specific_character>
+</character>
+<character id="gar_b2_walking_freedom_3">
+     <class>gar_b2_walking_freedom_3</class>
+<specific_character>gar_b2_walking_freedom_3</specific_character>
+</character>
+
+<character id="gar_b2_walking_killer_1">
+     <class>gar_b2_walking_killer_1</class>
+<specific_character>gar_b2_walking_killer_1</specific_character>
+</character>
+<character id="gar_b2_walking_killer_2">
+     <class>gar_b2_walking_killer_2</class>
+<specific_character>gar_b2_walking_killer_2</specific_character>
+</character>
+<character id="gar_b2_walking_csky_1">
+     <class>gar_b2_walking_csky_1</class>
+<specific_character>gar_b2_walking_csky_1</specific_character>
+</character>
+
+<character id="gar_a2_bandit_enemy_1">
+     <class>gar_a2_bandit_enemy_1</class>
+<specific_character>gar_a2_bandit_enemy_1</specific_character>
+</character>
+<character id="gar_a2_bandit_enemy_2">
+     <class>gar_a2_bandit_enemy_2</class>
+<specific_character>gar_a2_bandit_enemy_2</specific_character>
+</character>
+<character id="gar_a2_bandit_enemy_3">
+     <class>gar_a2_bandit_enemy_3</class>
+<specific_character>gar_a2_bandit_enemy_3</specific_character>
+</character>
+<character id="gar_a2_bandit_enemy_4">
+     <class>gar_a2_bandit_enemy_4</class>
+<specific_character>gar_a2_bandit_enemy_4</specific_character>
+</character>
+<character id="gar_a2_bandit_enemy_5">
+     <class>gar_a2_bandit_enemy_5</class>
+<specific_character>gar_a2_bandit_enemy_5</specific_character>
+</character>
+
+<character id="gar_b2_bandit_enemy_1">
+     <class>gar_b2_bandit_enemy_1</class>
+<specific_character>gar_b2_bandit_enemy_1</specific_character>
+</character>
+<character id="gar_b2_bandit_enemy_2">
+     <class>gar_b2_bandit_enemy_2</class>
+<specific_character>gar_b2_bandit_enemy_2</specific_character>
+</character>
+<character id="gar_b2_bandit_enemy_3">
+     <class>gar_b2_bandit_enemy_3</class>
+<specific_character>gar_b2_bandit_enemy_3</specific_character>
+</character>
+<character id="gar_b2_bandit_enemy_4">
+     <class>gar_b2_bandit_enemy_4</class>
+<specific_character>gar_b2_bandit_enemy_4</specific_character>
+</character>
+<character id="gar_b2_bandit_enemy_5">
+     <class>gar_b2_bandit_enemy_5</class>
+<specific_character>gar_b2_bandit_enemy_5</specific_character>
+</character>
+
+<character id="gar_a2_main_quest_dolg_1">
+     <class>gar_a2_main_quest_dolg_1</class>
+<specific_character>gar_a2_main_quest_dolg_1</specific_character>
+</character>
+<character id="gar_a2_main_quest_dolg_2">
+     <class>gar_a2_main_quest_dolg_2</class>
+<specific_character>gar_a2_main_quest_dolg_2</specific_character>
+</character>
+<character id="gar_a2_main_quest_dolg_3">
+     <class>gar_a2_main_quest_dolg_3</class>
+<specific_character>gar_a2_main_quest_dolg_3</specific_character>
+</character>
+<character id="gar_a2_main_quest_dolg_4">
+     <class>gar_a2_main_quest_dolg_4</class>
+<specific_character>gar_a2_main_quest_dolg_4</specific_character>
+</character>
+<character id="gar_a2_main_quest_dolg_5">
+     <class>gar_a2_main_quest_dolg_5</class>
+<specific_character>gar_a2_main_quest_dolg_5</specific_character>
+</character>
+<character id="gar_a2_main_quest_dolg_6">
+     <class>gar_a2_main_quest_dolg_6</class>
+<specific_character>gar_a2_main_quest_dolg_6</specific_character>
+</character>
+<character id="gar_a2_borland">
+     <class>gar_a2_borland</class>
+<specific_character>gar_a2_borland</specific_character>
+</character>
+<character id="gar_a2_digger">
+     <class>gar_a2_digger</class>
+<specific_character>gar_a2_digger</specific_character>
+</character>
+<character id="gar_a2_sp_killer_1">
+     <class>gar_a2_sp_killer_1</class>
+<specific_character>gar_a2_sp_killer_1</specific_character>
+</character>
+<character id="gar_a2_sp_killer_2">
+     <class>gar_a2_sp_killer_2</class>
+<specific_character>gar_a2_sp_killer_2</specific_character>
+</character>
+<character id="gar_a2_sp_killer_3">
+     <class>gar_a2_sp_killer_3</class>
+<specific_character>gar_a2_sp_killer_3</specific_character>
+</character>
+<character id="gar_a2_sp_killer_4">
+     <class>gar_a2_sp_killer_4</class>
+<specific_character>gar_a2_sp_killer_4</specific_character>
+</character>
+<character id="gar_a2_sp_killer_5">
+     <class>gar_a2_sp_killer_5</class>
+<specific_character>gar_a2_sp_killer_5</specific_character>
+</character>
+
+</xml>

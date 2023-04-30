@@ -1,0 +1,79 @@
+[walker@def_2]
+gather_items_enabled = false
+help_wounded_enabled = false
+corpse_detection_enabled = false
+combat_ignore_cond = {+sad_noy_ignore_monsters} true
+out_restr = sad_sim_9_sr_vyshka
+on_info9 = {+sad_sim_9_noy_enemy} walker@enemy
+wounded = wounded
+
+[combat]
+out_restr = sad_sim_9_sr_vyshka
+
+[death]
+on_info = %+sad_sim_9_noy_dead%
+
+[hit]
+on_info = {=actor_enemy} %+sad_sim_9_noy_enemy%
+
+; ------------------------------------------------------------------------------------------------
+[logic@noy_job]
+suitable = {=check_npc_name(sad_sim_9_noy) } true
+active = walker@noy
+on_combat = combat
+post_combat_time = 0, 0
+on_death = death
+on_hit = hit
+prior = 200
+
+[walker@noy]:walker@def_2
+path_walk = vyshka_spawn
+on_info = {+sad_sim_9_noy_ready_to_talk} walker@noy_talk
+on_info2 = {+sad_sim_9_noy_go_sleep} sleeper@noy
+meet = no_meet
+
+[walker@noy_talk]:walker@def_2
+path_walk = vyshka_spawn
+on_info = {-sad_sim_9_stop_snorks} walker@noy
+on_info2 = {+sad_sim_9_noy_go_sleep} sleeper@noy
+meet = meet
+
+[sleeper@noy]:walker@def_2
+path_main = vyshka_sleep
+on_info = {-sad_sim_9_stop_snorks} walker@noy
+meet = no_meet
+
+[walker@enemy]
+gather_items_enabled = false
+help_wounded_enabled = false
+corpse_detection_enabled = false
+out_restr = sad_sim_9_sr_vyshka
+path_walk = vyshka_spawn
+on_info = {-sad_sim_9_noy_enemy} walker@noy
+meet = no_meet
+wounded = wounded
+
+; -------------------------------------------------------------------------------------------------
+[wounded]
+hp_state 		= 0|wounded_heavy@help_heavy
+hp_state_see 	= 0|wounded_heavy@help_heavy
+hp_victim 		= 0|nil
+hp_fight 		= 0|false
+hp_cover		= 0|false
+
+[meet]
+snd_on_use 		= nil
+close_snd_hello = nil
+close_snd_bye   = nil
+close_distance  = 2
+close_victim    = actor
+close_anim 		= wait_na
+far_anim 		= nil
+far_victim 		= nil
+far_distance 	= 0
+far_snd 		= nil
+meet_on_talking = false
+use 			= {=actor_enemy} false, true
+allow_break 	= false
+trade_enable	= false
+

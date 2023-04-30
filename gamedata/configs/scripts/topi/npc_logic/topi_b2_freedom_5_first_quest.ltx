@@ -1,0 +1,35 @@
+[logic]
+active = move@waiting
+post_combat_time = 0,0
+
+[move@waiting]
+move_dest_number       = 986628
+move_look_vertex       = 991408
+move_state_when_center = hide
+move_state_when_move   = walk
+meet                   = no_meet
+invulnerable           = true
+on_info                = {+topi_f1_freedom_scaut_lider_talking} move@waiting_offline
+
+
+[move@waiting_offline]
+move_dest_number       = 986628
+move_look_vertex       = 991408
+move_state_when_center = guard
+move_state_when_move   = walk
+meet                   = no_meet
+invulnerable           = false
+on_info                = {+topi_f1_freedom_members_killed} nil %=kill_npc%
+
+[no_meet]
+close_anim 		= nil
+close_victim 	= nil
+far_anim 		= nil
+far_victim 		= nil
+close_distance  = 0
+far_distance 	= 0
+close_snd_distance = 3
+abuse           = true
+use             = false
+allow_break     = true
+meet_on_talking = false

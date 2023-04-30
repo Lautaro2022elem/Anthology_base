@@ -1,0 +1,29 @@
+;---рестриктор для искуственного прохождения сюжетной линии до определенного момента 
+;---БАР
+
+;---- ВКЛЮЧЕНО ----------------
+
+[logic]
+active = sr_idle@nil
+;----active = sr_idle@start
+
+[sr_idle@start]
+on_info = sr_idle@1 %+TEST_bar_1 =give_task(labx5_quest_doc) +bar_doc_barmen_dialog_open%
+
+[sr_idle@1]
+on_info = sr_idle@2 %+sp_a2_hero_to_bar_come +bar_new_details_open +bar_first_talk_barmen_dialog_info =SetWeather(default_cloudy_black_clean) =remove_npc(bar_borland_start) =teleport_actor(bar_actor_teleport_waitsurget_walk:bar_actor_teleport_waitsurget_look) +bar_borland_start_release%
+
+
+[sr_idle@2]
+on_info = sr_idle@3 %=bar_expectation_barmen_sms +bar_expectation_barmen_open +TEST_bar_2 +bar_borland_bar_release +bar_new_details_complete =give_task(bar_expectation) +bar_new_details_barmen_dialog_info%
+
+
+[sr_idle@3]
+on_info = sr_idle@4 %+bar_cooperation_complete +bar_expectation_voronin_dialog_info +bar_expectation_barmen_part2_dialog_info +bar_house_in_the_swamp_dialog +bar_expectation_barmen_info +bar_expectation_complete%
+
+[sr_idle@4]
+
+
+[sr_idle@nil]
+
+

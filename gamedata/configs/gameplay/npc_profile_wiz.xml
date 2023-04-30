@@ -1,0 +1,392 @@
+<?xml version='1.0' encoding="UTF-8"?>
+
+<xml>
+
+	<character id="wiz_kosta">
+		<class>wiz_kosta</class>
+	</character>
+	<character id="wiz_otmichka_scaner">
+		<class>wiz_otmichka_scaner</class>
+	</character>
+	<character id="wiz_kruger">
+		<class>wiz_kruger</class>
+	</character>
+	<character id="wiz_chip">
+		<class>wiz_chip</class>
+	</character>
+	<character id="wiz_jekan">
+		<class>wiz_jekan</class>
+	</character>
+	<character id="wiz_jekan_scene">
+		<class>wiz_jekan_scene</class>
+	</character>
+	<character id="wiz_foma">
+		<class>wiz_foma</class>
+	</character>
+	<character id="wiz_ivanich">
+		<class>wiz_ivanich</class>
+	</character>
+	<character id="wiz_rjaviu">
+		<class>wiz_rjaviu</class>
+	</character>
+	<character id="wiz_rjaviu_raider">
+		<class>wiz_rjaviu_raider</class>
+	</character>
+	<character id="wiz_raider_stalker_1">
+		<class>wiz_raider_stalker_1</class>
+	</character>
+	<character id="wiz_raider_stalker_2">
+		<class>wiz_raider_stalker_2</class>
+	</character>
+	<character id="wiz_raider_stalker_3">
+		<class>wiz_raider_stalker_3</class>
+	</character>
+	<character id="wiz_nazar">
+		<class>wiz_nazar</class>
+	</character>
+	<character id="wiz_krivou">
+		<class>wiz_krivou</class>
+	</character>
+	<character id="wiz_poslannik_krivogo">
+		<class>wiz_poslannik_krivogo</class>
+	</character>
+	<character id="wiz_lt_krasnopolsky">
+		<class>wiz_lt_krasnopolsky</class>
+	</character>
+
+<!-- 													   -->
+<!-- 			Bandit WIZ GUARDS VILLAGE				   -->
+<!-- 													   -->
+
+	<character id="wiz_guard_bandit_1">
+		<class>wiz_guard_bandit_1</class>
+	</character>
+	<character id="wiz_guard_bandit_2">
+		<class>wiz_guard_bandit_2</class>
+	</character>
+	<character id="wiz_guard_bandit_3">
+		<class>wiz_guard_bandit_3</class>
+	</character>
+	<character id="wiz_guard_bandit_4">
+		<class>wiz_guard_bandit_4</class>
+	</character>
+	<character id="wiz_guard_bandit_5">
+		<class>wiz_guard_bandit_5</class>
+	</character>
+	<character id="wiz_guard_bandit_6">
+		<class>wiz_guard_bandit_6</class>
+	</character>
+	<character id="wiz_guard_bandit_7">
+		<class>wiz_guard_bandit_7</class>
+	</character>
+	<character id="wiz_guard_bandit_8">
+		<class>wiz_guard_bandit_8</class>
+	</character>
+	<character id="wiz_guard_bandit_9">
+		<class>wiz_guard_bandit_9</class>
+	</character>
+	<character id="wiz_guard_bandit_10">
+		<class>wiz_guard_bandit_10</class>
+	</character>
+
+	<character id="dl_groz">
+		<class>dl_groz</class>
+	</character>
+
+	<character id="dl_lost_stalker">
+		<class>dl_lost_stalker</class>
+	</character>
+
+	<character id="dl_stalker_buriy">
+		<class>dl_stalker_buriy</class>
+	</character>
+
+	<character id="dl_dead_stalker_last">
+		<class>dl_dead_stalker_last</class>
+	</character>
+
+	<character id="dl_dead_mercenaries">
+		<class>dl_dead_mercenaries</class>
+	</character>
+
+	<character id="dl_leader_killers">
+		<class>dl_leader_killers</class>
+	</character>
+
+	<character id="dl_bizon_stalker">
+		<class>dl_bizon_stalker</class>
+	</character>
+
+	<character id="val_a3_stalker_leader">
+		<class>val_a3_stalker_leader</class>
+	</character>
+
+	<character id="val_a4_stalker_pianist">
+		<class>val_a4_stalker_pianist</class>
+	</character>
+
+	<character id="val_a3_stalker_garik">
+		<class>val_a3_stalker_garik</class>
+	</character>
+
+	<character id="val_a3_stalker_barmen">
+		<class>val_a3_stalker_barmen</class>
+	</character>
+
+	<character id="val_a3_stalker_1">
+		<class>val_a3_stalker_1</class>
+	</character>
+
+	<character id="val_a3_stalker_2">
+		<class>val_a3_stalker_2</class>
+	</character>
+
+	<character id="val_a3_stalker_3">
+		<class>val_a3_stalker_3</class>
+	</character>
+
+	<character id="val_a3_stalker_4">
+		<class>val_a3_stalker_4</class>
+	</character>
+
+	<character id="val_a3_stalker_5">
+		<class>val_a3_stalker_5</class>
+	</character>
+
+	<character id="val_a3_stalker_6">
+		<class>val_a3_stalker_6</class>
+	</character>
+
+	<character id="val_a3_stalker_7">
+		<class>val_a3_stalker_7</class>
+	</character>
+
+	<character id="val_a3_stalker_8">
+		<class>val_a3_stalker_8</class>
+	</character>
+
+	<character id="val_a3_stalker_9">
+		<class>val_a3_stalker_9</class>
+	</character>
+
+	<character id="val_a3_stalker_10">
+		<class>val_a3_stalker_10</class>
+	</character>
+
+	<character id="val_a3_bandit_zakl">
+		<class>val_a3_bandit_zakl</class>
+	</character>
+
+	<character id="val_a7_stalker_prototype">
+		<class>val_a7_stalker_prototype</class>
+	</character>
+
+	<character id="val_a9_freedom_komand">
+		<class>val_a9_freedom_komand</class>
+	</character>
+
+	<character id="val_a9_freedom_1">
+		<class>val_a9_freedom_1</class>
+	</character>
+
+	<character id="val_a9_freedom_2">
+		<class>val_a9_freedom_2</class>
+	</character>
+
+	<character id="val_a9_freedom_3">
+		<class>val_a9_freedom_3</class>
+	</character>
+
+	<character id="val_a9_freedom_4">
+		<class>val_a9_freedom_4</class>
+	</character>
+
+	<character id="val_a9_freedom_5">
+		<class>val_a9_freedom_5</class>
+	</character>
+
+	<character id="val_a9_freedom_6">
+		<class>val_a9_freedom_6</class>
+	</character>
+
+	<character id="val_a9_freedom_7">
+		<class>val_a9_freedom_7</class>
+	</character>
+
+	<character id="val_a9_freedom_8">
+		<class>val_a9_freedom_8</class>
+	</character>
+
+	<character id="val_a9_freedom_9">
+		<class>val_a9_freedom_9</class>
+	</character>
+
+	<character id="val_a19_digger_komand">
+		<class>val_a19_digger_komand</class>
+	</character>
+
+	<character id="val_a19_digger_1">
+		<class>val_a19_digger_1</class>
+	</character>
+
+	<character id="val_a19_digger_2">
+		<class>val_a19_digger_2</class>
+	</character>
+
+	<character id="val_a19_digger_3">
+		<class>val_a19_digger_3</class>
+	</character>
+
+	<character id="val_b1_bandit_pachan">
+		<class>val_b1_bandit_pachan</class>
+	</character>
+
+	<character id="val_b1_bandit_1">
+		<class>val_b1_bandit_1</class>
+	</character>
+
+	<character id="val_b1_bandit_2">
+		<class>val_b1_bandit_2</class>
+	</character>
+
+	<character id="val_b1_bandit_3">
+		<class>val_b1_bandit_3</class>
+	</character>
+
+	<character id="val_b1_bandit_4">
+		<class>val_b1_bandit_4</class>
+	</character>
+
+	<character id="val_b1_bandit_5">
+		<class>val_b1_bandit_5</class>
+	</character>
+
+	<character id="val_b1_bandit_6">
+		<class>val_b1_bandit_6</class>
+	</character>
+
+	<character id="val_b1_bandit_7">
+		<class>val_b1_bandit_7</class>
+	</character>
+
+	<character id="val_b1_bandit_8">
+		<class>val_b1_bandit_8</class>
+	</character>
+
+	<character id="val_b1_bandit_9">
+		<class>val_b1_bandit_9</class>
+	</character>
+
+	<character id="val_b18_bandit_1">
+		<class>val_b18_bandit_1</class>
+	</character>
+
+	<character id="val_b18_bandit_2">
+		<class>val_b18_bandit_2</class>
+	</character>
+
+	<character id="val_b18_bandit_3">
+		<class>val_b18_bandit_3</class>
+	</character>
+
+	<character id="val_b18_bandit_4">
+		<class>val_b18_bandit_4</class>
+	</character>
+
+	<character id="val_b18_bandit_5">
+		<class>val_b18_bandit_5</class>
+	</character>
+
+	<character id="val_b18_bandit_6">
+		<class>val_b18_bandit_6</class>
+	</character>
+
+	<character id="val_b18_bandit_7">
+		<class>val_b18_bandit_7</class>
+	</character>
+
+	<character id="val_b18_bandit_8">
+		<class>val_b18_bandit_8</class>
+	</character>
+
+	<character id="val_b18_bandit_9">
+		<class>val_b18_bandit_9</class>
+	</character>
+
+	<character id="val_b18_bandit_10">
+		<class>val_b18_bandit_10</class>
+	</character>
+
+	<character id="val_b18_bandit_11">
+		<class>val_b18_bandit_11</class>
+	</character>
+
+	<character id="val_b25_bandit_mechanic">
+		<class>val_b25_bandit_mechanic</class>
+	</character>
+
+	<character id="val_b25_bandit_2">
+		<class>val_b25_bandit_2</class>
+	</character>
+
+	<character id="val_b25_bandit_3">
+		<class>val_b25_bandit_3</class>
+	</character>
+
+	<character id="val_b25_bandit_4">
+		<class>val_b25_bandit_4</class>
+	</character>
+
+	<character id="val_b25_bandit_5">
+		<class>val_b25_bandit_5</class>
+	</character>
+
+	<character id="val_b25_bandit_6">
+		<class>val_b25_bandit_6</class>
+	</character>
+
+	<character id="val_b25_bandit_7">
+		<class>val_b25_bandit_7</class>
+	</character>
+
+	<character id="val_b25_bandit_8">
+		<class>val_b25_bandit_8</class>
+	</character>
+
+	<character id="val_b25_bandit_9">
+		<class>val_b25_bandit_9</class>
+	</character>
+
+	<character id="val_b25_bandit_10">
+		<class>val_b25_bandit_10</class>
+	</character>
+
+	<character id="val_b25_bandit_11">
+		<class>val_b25_bandit_11</class>
+	</character>
+
+	<character id="val_b25_stalker_15">
+		<class>val_b25_stalker_15</class>
+	</character>
+
+	<character id="val_b41_stalker_hunter">
+		<class>val_b41_stalker_hunter</class>
+	</character>
+
+	<character id="val_b47_bandit_hunter">
+		<class>val_b47_bandit_hunter</class>
+	</character>
+
+	<character id="val_b47_bandit_1_hunter">
+		<class>val_b47_bandit_1_hunter</class>
+	</character>
+
+	<character id="zav_freedom_stalker">
+		<class>zav_freedom_stalker</class>
+	</character>
+
+	<character id="wiz_stalker_breeder">
+		<class>wiz_stalker_breeder</class>
+	</character>
+
+</xml>

@@ -1,0 +1,110 @@
+[walker@def]
+gather_items_enabled = false
+help_wounded_enabled = true
+corpse_detection_enabled = false
+combat_ignore_cond = {-sad_b4_actor_recognized =is_enemy_actor} true, {-sad_b4_actor_recognized =check_enemy_name(sad_b4_stalker_fedor)} true
+wounded = wounded
+
+; -------------------------------------------------------------------------------------------------------------------------------------------- 1
+[logic@house_killer_1]
+suitable = { =target_squad_name(sad_b4_killer_house_squad) } true
+active = walker@1_1
+on_hit = hit
+on_death = death
+prior = 200
+
+[walker@1_1]:walker@def
+path_walk = house_1_walk
+path_look = house_1_look
+out_restr = sad_b4_sr_house_zone
+on_signal = prisol | animpoint@1_1
+meet = no_meet
+on_info = {=is_wounded} remark@1_wounded
+
+[animpoint@1_1]:walker@def
+cover_name = sad_b4_house_animp_1
+on_game_timer = 300 | walker@1_1
+out_restr = sad_b4_sr_house_zone
+meet = no_meet
+on_info = {=is_wounded} remark@1_wounded
+
+[remark@1_wounded]
+on_info = {!is_wounded} animpoint@1_1
+on_game_timer = 240 | %=kill_npc%
+
+; -------------------------------------------------------------------------------------------------------------------------------------------- 2
+[logic@house_killer_2]
+suitable = { =target_squad_name(sad_b4_killer_house_squad) } true
+active = walker@2_1
+on_hit = hit
+on_death = death
+prior = 200
+
+[walker@2_1]:walker@def
+path_walk = house_2_walk
+path_look = house_2_look
+out_restr = sad_b4_sr_house_zone
+on_game_timer = 600 | animpoint@2_1
+meet = no_meet
+on_info = {=is_wounded} remark@2_wounded
+
+[animpoint@2_1]:walker@def
+cover_name = sad_b4_house_animp_2
+on_game_timer = 300 | walker@2_1
+out_restr = sad_b4_sr_house_zone
+meet = no_meet
+on_info = {=is_wounded} remark@2_wounded
+
+[remark@2_wounded]
+on_info = {!is_wounded} animpoint@2_1
+on_game_timer = 240 | %=kill_npc%
+
+; -------------------------------------------------------------------------------------------------------------------------------------------- 3
+[logic@house_killer_3]
+suitable = { =target_squad_name(sad_b4_killer_house_squad) } true
+active = walker@3_1
+on_hit = hit
+on_death = death
+prior = 200
+
+[walker@3_1]:walker@def
+path_walk = house_3_walk
+path_look = house_3_look
+out_restr = sad_b4_sr_house_zone
+on_game_timer = 600 | animpoint@3_1
+meet = no_meet
+
+[animpoint@3_1]:walker@def
+cover_name = sad_b4_house_animp_3
+on_game_timer = 300 | walker@3_1
+out_restr = sad_b4_sr_house_zone
+meet = no_meet
+on_info = {=is_wounded} remark@3_wounded
+
+[remark@3_wounded]
+on_info = {!is_wounded} animpoint@3_1
+on_game_timer = 240 | %=kill_npc%
+
+
+; ------------------------------------
+[meet]
+close_snd_hello = nil
+close_distance  = 2
+close_victim    = actor
+close_anim = nil
+use = {=actor_enemy} false, {=actor_has_weapon} false, {+sad_radik_otkaz} false, true
+trade_enable = false
+allow_break = false
+
+[death]
+on_info = {=killed_by_actor} %+sad_b4_actor_recognized%
+
+[hit]
+on_info = {=hit_by_actor} %+sad_b4_actor_recognized%
+
+[wounded]
+hp_state 		= 20|wounded_heavy@help_heavy
+hp_state_see 	= 20|wounded_heavy@help_heavy
+hp_victim 		= 0|nil
+hp_fight 		= 0|false
+hp_cover		= 0|false

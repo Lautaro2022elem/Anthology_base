@@ -1,0 +1,17 @@
+[logic]
+active = move
+on_death = death
+on_hit = hit
+
+[hit]
+on_info = {=actor_enemy -city_hit_army_bay_gg_stop -city_hit_army_bay_gg} %+city_hit_army_bay_gg%
+
+[death]
+on_info = %+city_npc_army_attak_3_death%
+
+[move]
+move_dest_number = 164769
+move_look_vertex = 110564
+move_state_when_center = hide
+move_state_when_move = assault
+on_info = {+city_assault_heli_death} %=kill_npc%

@@ -1,0 +1,23 @@
+[logic]
+active = walker
+on_death = death
+
+[walker]
+path_walk = esc_npc_shvabroid_walk_1
+on_info = {=dist_to_actor_le(10)} %=actor_enemy +esc_npc_shvabroid_actor_enemy% walker@barrer
+def_state_moving = run
+on_signal = esc_npc_shvabroid_na_meste | walker@barrer
+gather_items_enabled = false
+corpse_detection_enabled = false
+combat_ignore_keep_when_attacked = true 
+combat_ignore_cond = true
+meet = no_meet
+
+[walker@barrer]
+path_walk = esc_npc_shvabroid_walk_2
+path_look = esc_npc_shvabroid_look_2
+on_info = {=dist_to_actor_le(8)} %=actor_enemy +esc_npc_shvabroid_actor_enemy%
+on_info2 = {+esc_npc_shvabroid_actor_enemy} %=actor_enemy%
+
+[death]
+on_info = %+esc_npc_shvabroid_dead =spawn_object_in(esc_quest_shvabroid_pda:esc_npc_shvabroid)%

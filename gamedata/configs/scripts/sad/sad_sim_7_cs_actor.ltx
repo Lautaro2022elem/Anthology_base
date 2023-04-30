@@ -1,0 +1,23 @@
+; general section
+
+[walker@gen]
+meet = no_meet
+use_camp = false
+combat_ignore_cond = true
+combat_ignore_keep_when_attacked = true
+invulnerable = true
+gather_items_enabled = false
+help_wounded_enabled = false
+corpse_detection_enabled = false
+
+[logic]
+active = walker@1
+
+[walker@1]:walker@gen
+path_walk = sad_gena_zakop_actor_start_walk
+path_look = sad_gena_zakop_actor_start_look
+on_info = {+sad_gena_zakop_cutscene_start} walker@2
+
+[walker@2]:walker@gen
+path_walk = sad_gena_zakop_cs_actor_walk
+path_look = sad_gena_zakop_cs_actor_look

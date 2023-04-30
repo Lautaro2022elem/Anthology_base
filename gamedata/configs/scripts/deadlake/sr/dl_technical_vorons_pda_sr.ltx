@@ -1,0 +1,16 @@
+[logic]
+active = sr_idle@check
+
+[sr_idle@check]
+on_info = {=actor_has_item(kat_pda_stalker_lock)} sr_idle@check_out_pda 
+
+[sr_idle@check_out_pda]
+on_info = {+dl_actor_out_pda_vorona_wait} sr_idle@timer_to_unlock
+
+[sr_idle@timer_to_unlock]
+on_game_timer = 10000 | sr_idle@voron_notes %+dl_pda_vorona_unlocked_go_to_tech =dl_tech_unlocked_pda_vorona%
+
+[sr_idle@voron_notes]
+on_info = {+dl_pda_vorona_unlocked =actor_has_item(kat_pda_stalker_unlock)} sr_idle@nil %=dl_voron_notes%
+
+[sr_idle@nil]

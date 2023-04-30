@@ -1,0 +1,31 @@
+[logic@wiz_jekan]  
+suitable = {=check_npc_name(wiz_jekan)} true
+prior = 200
+active = walker@wiz_jekan
+
+[walker@wiz_jekan]
+path_walk = kosta_walk
+path_look = kosta_look
+def_state_standing = ward
+combat_ignore_cond = true
+combat_ignore_keep_when_attacked = true
+gather_items_enabled = false
+help_wounded_enabled = true
+corpse_detection_enabled = false
+invulnerable = true
+use_camp = false
+meet = meet@wiz_jekan
+
+[meet@wiz_jekan]
+close_snd_hello = wiz_stalker_kosta_greeting
+close_snd_bye = wiz_stalker_kosta_farewell  
+abuse           = false
+close_anim 		= nil
+far_anim 		= nil
+far_victim 		= nil
+close_distance  = 0
+far_distance 	= 0
+close_victim = actor
+use = nil
+allow_break = false
+trade_enable = false

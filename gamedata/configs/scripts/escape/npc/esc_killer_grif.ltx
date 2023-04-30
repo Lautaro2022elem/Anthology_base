@@ -1,0 +1,31 @@
+[logic@esc_squad_atp_killer_grif]
+active = walker@stay
+suitable = {=check_npc_name(esc_killer_grif)} true, false
+prior = 250
+
+[walker@stay]
+path_walk = grif_walk
+path_look = grif_look
+gather_items_enabled = false
+corpse_detection_enabled = false
+combat_ignore_keep_when_attacked = true 
+combat_ignore_cond = true
+invulnerable = false
+meet = meet@esc_grif_meet_quest
+
+[meet@start]
+close_snd_hello = esc_qrif_merc_meet
+close_snd_bye 	= esc_qrif_merc_meet_bye
+close_snd_distance = 3
+abuse           = false
+close_anim 		= nil
+far_anim 		= nil
+far_victim 		= nil
+close_distance  = 0
+far_distance 	= 0
+close_victim = actor
+allow_break = false
+trade_enable = false
+
+[meet@esc_grif_meet_quest]:meet@start
+meet_dialog = esc_killer_grif_meet_to_killers

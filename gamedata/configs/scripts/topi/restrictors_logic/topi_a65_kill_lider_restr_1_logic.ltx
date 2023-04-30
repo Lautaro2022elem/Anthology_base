@@ -1,0 +1,9 @@
+[logic] 
+active = sr_idle@start
+
+[sr_idle@start]
+on_info = {+topi_start +topi_var_2_suget_quest_1_csky_member_all_death -topi_a65_hasan_kill_lider_message_give} %=topi_a65_hasan_give_message +topi_a65_hasan_kill_lider_message_give%
+on_info2 = {+topi_start +topi_d5_csky_quest_2_for_message -topi_a65_hasan_kill_lider_message_give} %=topi_a65_hasan_give_message +topi_a65_hasan_kill_lider_message_give%
+on_timer = 6000 | {+topi_start +topi_a65_hasan_kill_lider_message_give -topi_a65_hasan_kill_lider_quest_give} sr_idle@nil %=give_task(geonezis_topi_a65_hasan_main) +topi_a65_hasan_kill_lider_quest_give%
+
+[sr_idle@nil]

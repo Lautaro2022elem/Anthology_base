@@ -1,0 +1,148 @@
+;pb_lutiy_cut_scene (дополнительная логика)
+;pb_lutiy_heli_crash (дополнительная логика)
+
+;=========meet_stalker_korpys========
+[meet@korpys_stalker]
+close_anim 		= nil
+close_victim 	= nil
+far_anim 		= nil
+far_victim 		= nil
+close_distance 	= 0
+far_distance 	= 0
+use = {=actor_enemy} false, {=dist_to_actor_le(3)} true, false
+snd_on_use = {!dist_to_actor_le(3)} nil
+meet_on_talking = false
+;==================================
+
+[remark@lutiy_stay_after_go_sleep]
+anim = guard_na
+target = path | pro_lutiy_stay_of_base_look, 0
+on_info = {+pro_actor_meet_soldier_done} remark@lutiy_meet_from_heli_crash
+combat_ignore_cond = true
+combat_ignore_keep_when_attacked = true
+invulnerable = true
+gather_items_enabled = false
+help_wounded_enabled = false
+corpse_detection_enabled = false
+meet = no_meet
+
+[remark@lutiy_meet_from_heli_crash]
+anim = guard_na
+target = path | pro_lutiy_stay_of_base_look, 0
+on_info = {+padalshik_found_quest_give} remark@lutiy_stay_over
+combat_ignore_cond = true
+combat_ignore_keep_when_attacked = true
+invulnerable = true
+gather_items_enabled = false
+help_wounded_enabled = false
+corpse_detection_enabled = false
+meet = meet@from_heli_crash
+
+[animpoint@lutiy_sit_normal]
+cover_name = pro_lutiy_sit_animpoint_1
+avail_animations = zat_b3_tech_idle
+on_info = {+quest_found_padalshik_done} animpoint@drinking
+gather_items_enabled = false
+corpse_detection_enabled = false
+invulnerable = true
+meet = meet@stay_over
+
+[animpoint@drinking]
+cover_name = pro_lutiy_sit_animpoint_1
+avail_animations = zat_b3_tech_drink
+on_game_timer2 = 42 | animpoint@lutiy_sit_normal_after
+gather_items_enabled = false
+corpse_detection_enabled = false
+invulnerable = true
+meet = no_meet
+
+[animpoint@lutiy_sit_normal_after]
+cover_name = pro_lutiy_sit_animpoint_1
+avail_animations = zat_b3_tech_idle
+on_info = {+pro_quest_night_hunting_ready} walker@lutiy_in_podval_stay
+gather_items_enabled = false
+corpse_detection_enabled = false
+invulnerable = true
+meet = meet@stay_over
+
+[remark@lutiy_stay_see_pda]
+anim = checkpda
+target = path | pro_lutiy_in_podval_look, 0
+on_info = {+pb_lutiy_signal_search_end} remark@lutiy_signal_search_end
+combat_ignore_cond = true
+combat_ignore_keep_when_attacked = true
+invulnerable = true
+gather_items_enabled = false
+help_wounded_enabled = false
+corpse_detection_enabled = false
+meet = no_meet
+
+[remark@lutiy_signal_search_end]
+anim = checkpda
+target = path | pro_lutiy_in_podval_look, 0
+on_info = {+pro_come_back_prostranstvenniy_puzir} %=release_npc%
+combat_ignore_cond = true
+combat_ignore_keep_when_attacked = true
+invulnerable = true
+gather_items_enabled = false
+help_wounded_enabled = false
+corpse_detection_enabled = false
+meet = meet@to_markus_end
+
+[meet@start_quest]:meet@korpys_stalker
+close_victim = actor
+use = {!actor_enemy =dist_to_actor_le(12) +pro_first_dialog_lutiy_complete -perevalochnaya_lutiy_meet_to_zombied_done} self, {!actor_enemy =dist_to_actor_le(12) -pro_first_dialog_lutiy_not_complete} self, true
+allow_break = false
+meet_dialog = pb_quest_line_lutiy_start
+trade_enable = false
+
+[meet@to_kill_zombie]:meet@korpys_stalker
+close_snd_hello = pb_lutiy_leader_meet
+close_snd_bye = pb_lutiy_leader_meet_bye
+close_snd_distance = 3
+close_victim = actor
+allow_break = false
+meet_dialog = pb_quest_line_lutiy_talk_to_dead_zombied
+trade_enable = false
+
+[meet@to_kill_controller]:meet@korpys_stalker
+close_victim = actor
+allow_break = false
+meet_dialog = pb_quest_line_lutiy_talk_to_go_sleep
+trade_enable = false
+
+[meet@from_heli_crash]:meet@korpys_stalker
+close_snd_hello = pb_lutiy_leader_meet
+close_snd_bye = pb_lutiy_leader_meet_bye
+close_snd_distance = 3
+close_victim = actor
+allow_break = false
+meet_dialog = pb_quest_line_lutiy_talk_after_heli_crash
+trade_enable = false
+
+[meet@stay_over]:meet@korpys_stalker
+close_snd_hello = pb_lutiy_leader_meet
+close_snd_bye = pb_lutiy_leader_meet_bye
+close_snd_distance = 3
+close_victim = actor
+allow_break = false
+meet_dialog = pb_quest_line_lutiy_talk_after_heli_crash
+trade_enable = false
+
+[meet@to_markus]:meet@korpys_stalker
+close_snd_hello = pb_lutiy_leader_meet
+close_snd_bye = pb_lutiy_leader_meet_bye
+close_snd_distance = 3
+close_victim = actor
+allow_break = false
+meet_dialog = pb_quest_lutiy_meet_to_markus
+trade_enable = false
+
+[meet@to_markus_end]:meet@korpys_stalker
+close_snd_hello = pb_lutiy_leader_meet
+close_snd_bye = pb_lutiy_leader_meet_bye
+close_snd_distance = 3
+close_victim = actor
+allow_break = false
+meet_dialog = pb_quest_lutiy_meet_to_markus_end
+trade_enable = false

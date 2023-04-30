@@ -1,0 +1,15 @@
+[logic]
+active = sr_idle@wait
+
+[sr_idle@wait]
+on_info = {+sad_oasis_activate_mobs} sr_idle@inside
+
+[sr_idle@inside]
+on_actor_inside = sr_idle@100 %=play_sound(zat_b42_controller_warning_1) +sad_oasis_activate_zombi%
+
+[sr_idle@100]
+on_signal = sound_end | sr_idle@110
+on_timer = 10000 | sr_idle@110 
+
+[sr_idle@110]
+on_timer = 1000 | nil %=play_sound(zat_b42_controller_warning_2) +sad_oasis_activate_controller%

@@ -1,0 +1,409 @@
+
+	
+<Dream1>
+	<global_wnd width="1024" height="768">
+		<auto_static width="1024" height="768" stretch="1" alignment="c">
+			<texture>intro\intro_back</texture>
+		</auto_static>
+	</global_wnd>
+	<play_each_item>1</play_each_item>
+	<item type="video">
+		<delay>1</delay>
+		<sound>dreams\0_pause</sound>
+		<pause_state>on</pause_state>
+		<function_on_stop>ui_sleep_dialog.dream_callback</function_on_stop>
+		<video_wnd start_time="0" length_sec="8" x="0" y="32" width="1024" height="576" stretch="1">
+			<widescreen_rect width="1024" height="768"/>
+			<texture width="638" height="358">outro\0_pause</texture>
+		</video_wnd>
+	</item>
+</Dream1>
+
+<Dream2>
+	<global_wnd width="1024" height="768">
+		<auto_static width="1024" height="768" stretch="1" alignment="c">
+			<texture>intro\intro_back</texture>
+		</auto_static>
+	</global_wnd>
+	<play_each_item>1</play_each_item>
+	<item type="video">
+		<delay>1</delay>
+		<sound>dreams\9_oasis</sound>
+		<pause_state>on</pause_state>
+		<function_on_stop>ui_sleep_dialog.dream_callback</function_on_stop>
+		<video_wnd start_time="0" length_sec="24.8" x="0" y="32" width="1024" height="576" stretch="1">
+			<widescreen_rect width="1024" height="768"/>
+			<texture width="638" height="358">outro\9_oasis</texture>
+		</video_wnd>
+	</item>
+</Dream2>
+
+<Dream3>
+	<global_wnd width="1024" height="768">
+		<auto_static width="1024" height="768" stretch="1" alignment="c">
+			<texture>intro\intro_back</texture>
+		</auto_static>
+	</global_wnd>
+	<play_each_item>1</play_each_item>
+	<item type="video">
+		<delay>1</delay>
+		<sound>dreams\11a_yanov_good</sound>
+		<pause_state>on</pause_state>
+		<function_on_stop>ui_sleep_dialog.dream_callback</function_on_stop>
+		<video_wnd start_time="0" length_sec="24.8" x="0" y="32" width="1024" height="576" stretch="1">
+			<widescreen_rect width="1024" height="768"/>
+			<texture width="638" height="358">outro\11a_yanov_good</texture>
+		</video_wnd>
+	</item>
+</Dream3>
+
+<NpcKickAct>
+	<global_wnd/>
+	<item>
+		<length_sec>7</length_sec>
+		<sound>actor\heartbeat</sound>
+		<pause_state>on</pause_state>
+		<function_on_stop>xr_effects.AfterNpcKick</function_on_stop>
+		<main_wnd>
+		</main_wnd>
+	</item>
+</NpcKickAct>
+<KickAct>
+	<global_wnd/>
+	<item>
+		<length_sec>7</length_sec>
+		<sound>actor\heartbeat</sound>
+		<pause_state>on</pause_state>
+		<function_on_stop>AfterKickAct</function_on_stop>
+		<main_wnd>
+		</main_wnd>
+	</item>
+</KickAct>
+
+	<pb_main_bonfire_tutor_1> 
+     <global_wnd/> 
+        <item> 
+            <disabled_key>quit</disabled_key> 
+            <length_sec/> 
+            <action id="use" finalize="1">xr_effects.pb_bonfire_tutoruse_1</action> 
+            <guard_key>use</guard_key> 
+            <grab_input>0</grab_input> 
+                <main_wnd> 
+                <auto_static start_time="0" length_sec="5000" x="512" y="660" width="300" height="60" alignment="c" stretch="1"la_cyclic="1" la_texture="1" la_alpha="1"> 
+                <text font="graffiti22" r="225" g="225" b="250" a="255" align="c">st_main_bonfire_use</text> 
+                </auto_static> 
+                </main_wnd> 
+        </item> 
+    </pb_main_bonfire_tutor_1>
+
+	<pb_main_bonfire_tutor_2> 
+     <global_wnd/> 
+        <item> 
+            <disabled_key>quit</disabled_key> 
+            <length_sec/> 
+            <action id="use" finalize="1">xr_effects.pb_bonfire_tutoruse_2</action> 
+            <guard_key>use</guard_key> 
+            <grab_input>0</grab_input> 
+                <main_wnd> 
+                <auto_static start_time="0" length_sec="5000" x="512" y="660" width="300" height="60" alignment="c" stretch="1"la_cyclic="1" la_texture="1" la_alpha="1"> 
+                <text font="graffiti22" r="225" g="225" b="250" a="255" align="c">st_main_bonfire_use</text> 
+                </auto_static> 
+                </main_wnd> 
+        </item> 
+    </pb_main_bonfire_tutor_2>
+
+	<pb_main_bonfire_tutor_3> 
+     <global_wnd/> 
+        <item> 
+            <disabled_key>quit</disabled_key> 
+            <length_sec/> 
+            <action id="use" finalize="1">xr_effects.pb_bonfire_tutoruse_3</action> 
+            <guard_key>use</guard_key> 
+            <grab_input>0</grab_input> 
+                <main_wnd> 
+                <auto_static start_time="0" length_sec="5000" x="512" y="660" width="300" height="60" alignment="c" stretch="1"la_cyclic="1" la_texture="1" la_alpha="1"> 
+                <text font="graffiti22" r="225" g="225" b="250" a="255" align="c">st_main_bonfire_use</text> 
+                </auto_static> 
+                </main_wnd> 
+        </item> 
+    </pb_main_bonfire_tutor_3>
+
+	<pb_main_bonfire_tutor_4> 
+     <global_wnd/> 
+        <item> 
+            <disabled_key>quit</disabled_key> 
+            <length_sec/> 
+            <action id="use" finalize="1">xr_effects.pb_bonfire_tutoruse_4</action> 
+            <guard_key>use</guard_key> 
+            <grab_input>0</grab_input> 
+                <main_wnd> 
+                <auto_static start_time="0" length_sec="5000" x="512" y="660" width="300" height="60" alignment="c" stretch="1"la_cyclic="1" la_texture="1" la_alpha="1"> 
+                <text font="graffiti22" r="225" g="225" b="250" a="255" align="c">st_main_bonfire_use</text> 
+                </auto_static> 
+                </main_wnd> 
+        </item> 
+    </pb_main_bonfire_tutor_4>
+
+	<pb_main_bonfire_tutor_5> 
+     <global_wnd/> 
+        <item> 
+            <disabled_key>quit</disabled_key> 
+            <length_sec/> 
+            <action id="use" finalize="1">xr_effects.pb_bonfire_tutoruse_5</action> 
+            <guard_key>use</guard_key> 
+            <grab_input>0</grab_input> 
+                <main_wnd> 
+                <auto_static start_time="0" length_sec="5000" x="512" y="660" width="300" height="60" alignment="c" stretch="1"la_cyclic="1" la_texture="1" la_alpha="1"> 
+                <text font="graffiti22" r="225" g="225" b="250" a="255" align="c">st_main_bonfire_use</text> 
+                </auto_static> 
+                </main_wnd> 
+        </item> 
+    </pb_main_bonfire_tutor_5>
+
+<esc_quest_trader_radio_tutor> 
+<global_wnd/> 
+<item> 
+<disabled_key>quit</disabled_key> 
+<length_sec/> 
+<action id="use" finalize="1">xr_effects.esc_quest_trader_radio</action> 
+<guard_key>use</guard_key> 
+<grab_input>0</grab_input> 
+<main_wnd> 
+<auto_static start_time="0" length_sec="5000" x="512" y="660" width="300" height="60" alignment="c" stretch="1"la_cyclic="1" la_texture="1" la_alpha="1"> 
+<text font="graffiti22" r="225" g="225" b="250" a="255" align="c">esc_quest_trader_radio_tips</text> 
+</auto_static> 
+</main_wnd> 
+</item> 
+</esc_quest_trader_radio_tutor>
+
+<esc_quest_trader_take_radio_tutor> 
+<global_wnd/> 
+<item> 
+<disabled_key>quit</disabled_key> 
+<length_sec/> 
+<action id="use" finalize="1">xr_effects.esc_quest_trader_take_radio</action> 
+<guard_key>use</guard_key> 
+<grab_input>0</grab_input> 
+<main_wnd> 
+<auto_static start_time="0" length_sec="5000" x="512" y="660" width="300" height="60" alignment="c" stretch="1"la_cyclic="1" la_texture="1" la_alpha="1"> 
+<text font="graffiti22" r="225" g="225" b="250" a="255" align="c">esc_quest_trader_take_radio_tips</text> 
+</auto_static> 
+</main_wnd> 
+</item> 
+</esc_quest_trader_take_radio_tutor>
+
+<esc_quest_enot_wake_up_tutor> 
+<global_wnd/> 
+<item> 
+<disabled_key>quit</disabled_key> 
+<length_sec/> 
+<action id="use" finalize="1">xr_effects.esc_quest_enot_wake_up</action> 
+<guard_key>use</guard_key> 
+<grab_input>0</grab_input> 
+<main_wnd> 
+<auto_static start_time="0" length_sec="5000" x="512" y="660" width="300" height="60" alignment="c" stretch="1"la_cyclic="1" la_texture="1" la_alpha="1"> 
+<text font="graffiti22" r="225" g="225" b="250" a="255" align="c">esc_quest_enot_wake_up_tips</text> 
+</auto_static> 
+</main_wnd> 
+</item> 
+</esc_quest_enot_wake_up_tutor>
+
+<pb_tutorial_sleep_quest> 
+<global_wnd/> 
+<item> 
+<disabled_key>quit</disabled_key> 
+<length_sec/> 
+<action id="use" finalize="1">xr_effects.pb_tutorial_sleep_quest</action> 
+<guard_key>use</guard_key> 
+<grab_input>0</grab_input> 
+<main_wnd> 
+<auto_static start_time="0" length_sec="5000" x="512" y="660" width="300" height="60" alignment="c" stretch="1"la_cyclic="1" la_texture="1" la_alpha="1"> 
+<text font="graffiti22" r="225" g="225" b="250" a="255" align="c">sleep_zone_tip</text> 
+</auto_static> 
+</main_wnd> 
+</item> 
+</pb_tutorial_sleep_quest>
+
+<pb_tutorial_turn_off_light_on_base> 
+<global_wnd/> 
+<item> 
+<disabled_key>quit</disabled_key> 
+<length_sec/> 
+<action id="use" finalize="1">xr_effects.pb_tutorial_turn_off_light_on_base</action> 
+<guard_key>use</guard_key> 
+<grab_input>0</grab_input> 
+<main_wnd> 
+<auto_static start_time="0" length_sec="5000" x="512" y="660" width="300" height="60" alignment="c" stretch="1"la_cyclic="1" la_texture="1" la_alpha="1"> 
+<text font="graffiti22" r="225" g="225" b="250" a="255" align="c">pb_turn_of_light_tip</text> 
+</auto_static> 
+</main_wnd> 
+</item> 
+</pb_tutorial_turn_off_light_on_base>
+
+<pb_tutorial_transformator_podzemka> 
+<global_wnd/> 
+<item> 
+<disabled_key>quit</disabled_key> 
+<length_sec/> 
+<action id="use" finalize="1">xr_effects.pb_tutorial_transformator_podzemka</action> 
+<guard_key>use</guard_key> 
+<grab_input>0</grab_input> 
+<main_wnd> 
+<auto_static start_time="0" length_sec="5000" x="512" y="660" width="300" height="60" alignment="c" stretch="1"la_cyclic="1" la_texture="1" la_alpha="1"> 
+<text font="graffiti22" r="225" g="225" b="250" a="255" align="c">pb_turn_on_light_tip</text> 
+</auto_static> 
+</main_wnd> 
+</item> 
+</pb_tutorial_transformator_podzemka>
+
+<blck_val_tutorial_sleep_quest> 
+<global_wnd/> 
+<item> 
+<disabled_key>quit</disabled_key> 
+<length_sec/> 
+<action id="use" finalize="1">xr_effects.blck_val_tutorial_sleep_quest</action> 
+<guard_key>use</guard_key> 
+<grab_input>0</grab_input> 
+<main_wnd> 
+<auto_static start_time="0" length_sec="5000" x="512" y="660" width="300" height="60" alignment="c" stretch="1"la_cyclic="1" la_texture="1" la_alpha="1"> 
+<text font="graffiti22" r="225" g="225" b="250" a="255" align="c">sleep_zone_tip</text> 
+</auto_static> 
+</main_wnd> 
+</item> 
+</blck_val_tutorial_sleep_quest>
+
+<blck_val_tutorial_transiver> 
+<global_wnd/> 
+<item> 
+<disabled_key>quit</disabled_key> 
+<length_sec/> 
+<action id="use" finalize="1">xr_effects.blck_val_quest_transiver</action> 
+<guard_key>use</guard_key> 
+<grab_input>0</grab_input> 
+<main_wnd> 
+<auto_static start_time="0" length_sec="5000" x="512" y="660" width="300" height="60" alignment="c" stretch="1"la_cyclic="1" la_texture="1" la_alpha="1"> 
+<text font="graffiti22" r="225" g="225" b="250" a="255" align="c">lift_turn_tip</text> 
+</auto_static> 
+</main_wnd> 
+</item> 
+</blck_val_tutorial_transiver>
+
+<blck_val_tutorial_key_out> 
+<global_wnd/> 
+<item> 
+<disabled_key>quit</disabled_key> 
+<length_sec/> 
+<action id="use" finalize="1">xr_effects.blck_val_tutorial_key_out</action> 
+<guard_key>use</guard_key> 
+<grab_input>0</grab_input> 
+<main_wnd> 
+<auto_static start_time="0" length_sec="5000" x="512" y="660" width="300" height="60" alignment="c" stretch="1"la_cyclic="1" la_texture="1" la_alpha="1"> 
+<text font="graffiti22" r="225" g="225" b="250" a="255" align="c">key_out_tip</text> 
+</auto_static> 
+</main_wnd> 
+</item> 
+</blck_val_tutorial_key_out>
+
+<bar_tutorial_lift_turn_off> 
+<global_wnd/> 
+<item> 
+<disabled_key>quit</disabled_key> 
+<length_sec/> 
+<action id="use" finalize="1">xr_effects.bar_lift_turn_off</action> 
+<guard_key>use</guard_key> 
+<grab_input>0</grab_input> 
+<main_wnd> 
+<auto_static start_time="0" length_sec="5000" x="512" y="660" width="300" height="60" alignment="c" stretch="1"la_cyclic="1" la_texture="1" la_alpha="1"> 
+<text font="graffiti22" r="225" g="225" b="250" a="255" align="c">lift_turn_tip</text> 
+</auto_static> 
+</main_wnd> 
+</item> 
+</bar_tutorial_lift_turn_off>
+
+<bar_tutorial_energy_on> 
+<global_wnd/> 
+<item> 
+<disabled_key>quit</disabled_key> 
+<length_sec/> 
+<action id="use" finalize="1">xr_effects.bar_generator_energy_on</action> 
+<guard_key>use</guard_key> 
+<grab_input>0</grab_input> 
+<main_wnd> 
+<auto_static start_time="0" length_sec="5000" x="512" y="660" width="300" height="60" alignment="c" stretch="1"la_cyclic="1" la_texture="1" la_alpha="1"> 
+<text font="graffiti22" r="225" g="225" b="250" a="255" align="c">touch_buttom_tip</text> 
+</auto_static> 
+</main_wnd> 
+</item> 
+</bar_tutorial_energy_on>
+
+<bar_tutorial_lift_turn> 
+<global_wnd/> 
+<item> 
+<disabled_key>quit</disabled_key> 
+<length_sec/> 
+<action id="use" finalize="1">xr_effects.bar_lift_turn_on</action> 
+<guard_key>use</guard_key> 
+<grab_input>0</grab_input> 
+<main_wnd> 
+<auto_static start_time="0" length_sec="5000" x="512" y="660" width="300" height="60" alignment="c" stretch="1"la_cyclic="1" la_texture="1" la_alpha="1"> 
+<text font="graffiti22" r="225" g="225" b="250" a="255" align="c">lift_turn_tip</text> 
+</auto_static> 
+</main_wnd> 
+</item> 
+</bar_tutorial_lift_turn>
+
+<labx7_tutorial_explosive_spawn> 
+<global_wnd/> 
+<item> 
+<disabled_key>quit</disabled_key> 
+<length_sec/> 
+<action id="use" finalize="1">xr_effects.labx7_tutorial_explosive_spawn</action> 
+<guard_key>use</guard_key> 
+<grab_input>0</grab_input> 
+<main_wnd> 
+<auto_static start_time="0" length_sec="5000" x="512" y="660" width="300" height="60" alignment="c" stretch="1"la_cyclic="1" la_texture="1" la_alpha="1"> 
+<text font="graffiti22" r="225" g="225" b="250" a="255" align="c">expl_spawn_tip</text> 
+</auto_static> 
+</main_wnd> 
+</item> 
+</labx7_tutorial_explosive_spawn>
+
+		<tutorial_lift_button_1>
+		<global_wnd/>
+
+		<item>
+			<disabled_key>quit</disabled_key>
+			<length_sec/>
+			<action id="use" finalize="1">fsm_functions.call_lift_1</action>
+<!--			<function_on_stop>xr_effects.sleep</function_on_stop> -->
+			<guard_key>use</guard_key>
+			<disabled_key>quit</disabled_key>
+			<grab_input>0</grab_input>
+			<main_wnd>
+				<auto_static start_time="0" length_sec="5000" x="512" y="660" width="300" height="60" alignment="c" stretch="1"
+							la_cyclic="1" la_texture="1" la_alpha="1">
+					<text font="graffiti22" r="225" g="225" b="250" a="255" align="c">button_lift_zone_tip</text>
+				</auto_static>
+			</main_wnd>
+		</item>
+	</tutorial_lift_button_1>
+	
+			<tutorial_lift_switcher_1>
+		<global_wnd/>
+
+		<item>
+			<disabled_key>quit</disabled_key>
+			<length_sec/>
+			<action id="use" finalize="1">fsm_functions.run_lift_s1</action>
+<!--			<function_on_stop>xr_effects.sleep</function_on_stop> -->
+			<guard_key>use</guard_key>
+			<disabled_key>quit</disabled_key>
+			<grab_input>0</grab_input>
+			<main_wnd>
+				<auto_static start_time="0" length_sec="5000" x="512" y="660" width="300" height="60" alignment="c" stretch="1"
+							la_cyclic="1" la_texture="1" la_alpha="1">
+					<text font="graffiti22" r="225" g="225" b="250" a="255" align="c">switcher_lift_zone_tip</text>
+				</auto_static>
+			</main_wnd>
+		</item>
+	</tutorial_lift_switcher_1>

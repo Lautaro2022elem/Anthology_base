@@ -1,0 +1,68 @@
+--[[ ----------------------------------------------------------------------------------------------- 
+ File       : dlg_shaman.script
+ Description: Диалоговые функции для shaman
+ Copyright  : 2015 © Spectrum project
+ Author		: Болотный Доктор
+ Last edit  : 14.03.2012
+--]] -----------------------------------------------------------------------------------------------
+--/										Выкуп предметов у ГГ
+--]] -----------------------------------------------------------------------------------------------
+function knife_killer(first_speaker, second_speaker)
+    return first_speaker:object("blck_val_knife_killer") ~= nil
+end
+
+function knife_killer_z(first_speaker, second_speaker)
+    dialogs.relocate_item_section_from_actor(first_speaker, second_speaker, "blck_val_knife_killer")
+end
+
+function knife_killer_money(first_speaker, second_speaker)
+    dialogs.relocate_money_to_actor(first_speaker, second_speaker, 4500)
+end
+
+function chimik_pda(first_speaker, second_speaker)
+    return first_speaker:object("blck_val_chimik_pda") ~= nil
+end
+
+function chimik_pda_z(first_speaker, second_speaker)
+    dialogs.relocate_item_section_from_actor(first_speaker, second_speaker, "blck_val_chimik_pda")
+end
+
+function chimik_pda_money(first_speaker, second_speaker)                                           
+    dialogs.relocate_money_to_actor(first_speaker, second_speaker, 2000)
+end
+
+function shved_pda(first_speaker, second_speaker)
+    return first_speaker:object("esc_pashalka_shved_pda") ~= nil
+end
+
+function shved_pda_z(first_speaker, second_speaker)
+    dialogs.relocate_item_section_from_actor(first_speaker, second_speaker, "esc_pashalka_shved_pda")
+end
+
+function shved_pda_money(first_speaker, second_speaker)                                           
+    dialogs.relocate_money_to_actor(first_speaker, second_speaker, 7000)              
+end
+
+function padalshik_pda(first_speaker, second_speaker)
+    return first_speaker:object("pb_padalshik_pda") ~= nil
+end
+
+function padalshik_pda_z(first_speaker, second_speaker)
+    dialogs.relocate_item_section_from_actor(first_speaker, second_speaker, "pb_padalshik_pda")
+end
+
+function padalshik_pda_money(first_speaker, second_speaker)                                           
+    dialogs.relocate_money_to_actor(first_speaker, second_speaker, 1500)               
+end
+
+function quest_document_1(first_speaker, second_speaker)
+    return first_speaker:object("pb_quest_document_1") ~= nil
+end
+
+function quest_document_1_z(first_speaker, second_speaker)
+    dialogs.relocate_item_section_from_actor(first_speaker, second_speaker, "pb_quest_document_1")
+end
+
+function quest_document_1_money(first_speaker, second_speaker)                                           
+    dialogs.relocate_money_to_actor(first_speaker, second_speaker, 1000)              
+end

@@ -1,0 +1,562 @@
+<?xml version="1.0" encoding="windows-1251" ?>
+<string_table>
+
+<!-- Квест: В плену -->
+<string id="blck_val_actor_prisoner_part_1_name">
+<text>В плену: Узнать, что произошло</text>
+</string>
+<string id="blck_val_actor_prisoner_part_1_text">
+<text>Мы выбрались из аномалии, но я не понимаю, что произошло после этого, почему я в клетке? Нужно выяснить это.</text>
+</string>
+<string id="blck_val_actor_prisoner_part_2_name">
+<text>В плену: Поговорить с пленным</text>
+</string>
+<string id="blck_val_actor_prisoner_part_2_text">
+<text>Лютый ничего не объяснил, но сказал, что попытается помочь. Думаю, что стоит поговорить с пленным, может он знает, что я здесь делаю.</text>
+</string>
+<string id="blck_val_actor_prisoner_part_3_name">
+<text>В плену: Лечь спать</text>
+</string>
+<string id="blck_val_actor_prisoner_part_3_text">
+<text>Дела плохи, но пока я не имею представления как выбраться отсюда, нужно дождаться утра, там может и Лютый сможет договориться с этим Ставридом, самый лучший способ скоротать время - лечь спать.</text>
+</string>
+<string id="blck_val_actor_prisoner_part_4_name">
+<text>В плену: Дождаться действий от Лютого</text>
+</string>
+<string id="blck_val_actor_prisoner_part_4_text">
+<text>Наступило утро, теперь нужно подождать, думаю, что я скоро узнаю смог договорится Лютый о моем освобождении или нет.</text>
+</string>
+<string id="blck_val_actor_prisoner_part_5_name">
+<text>В плену: Поговорить с охранником</text>
+</string>
+<string id="blck_val_actor_prisoner_part_5_text">
+<text>Охранник сказал, что хочет со мной поговорить, нужно поговорить с ним.</text>
+</string>
+<string id="blck_val_actor_prisoner_part_6_name">
+<text>В плену: Переговорить со Ставридом</text>
+</string>
+<string id="blck_val_actor_prisoner_part_6_text">
+<text>Главный на базе - Ставрид, охранник сказал, что он хочет со мной поговорить, в любом случае нужно сделать это.</text>
+</string>
+
+<!-- Квест: Два друга -->
+<string id="blck_val_search_killer_part_1_name">
+<text>Два друга: Найти и убить Левшу</text>
+</string>
+<string id="blck_val_search_killer_part_1_text">
+<text>Ставрид – глава сталкеров на Заставе, рассказал, что день назад у них произошло ЧП. Нажрались водки сталкеры, чего-то там не поделили и мордобой начался, на утро одного из этих сталкеров нашли с перерезанным горлом, а другой сталкер Левша куда-то пропал. Дело тут нечистое и нужно разбираться, хотя разбираться тут и не в чем, похоже, что Левша прирезал своего обидчика, а потом понял, что натворил и смылся. Нужно найти его и наказать.</text>
+</string>
+<string id="blck_val_search_killer_part_2_name">
+<text>Два друга: Поговорить с Распутиным</text>
+</string>
+<string id="blck_val_search_killer_part_2_text">
+<text>Местный бармен, по кличке Распутин, попросил меня зайти к нему, чтобы поговорить, нужно узнать, чего он хочет.</text>
+</string>
+<string id="blck_val_search_killer_part_3_name">
+<text>Два друга: Найти Левшу</text>
+</string>
+<string id="blck_val_search_killer_part_3_text">
+<text>Распутин говорит, что Левша не мог убить Хромого, лучше при встрече с этим Левшой сначала с ним поговорить, может и расскажет, что случилось у них на самом деле.</text>
+</string>
+<string id="blck_val_search_killer_part_4_name">
+<text>Два друга: Поговорить с Левшой</text>
+</string>
+<string id="blck_val_search_killer_part_4_text">
+<text>Я нашел Левшу, нужно поговорить с ним.</text>
+</string>
+<string id="blck_val_search_killer_part_5_name">
+<text>Два друга: Рассказать новые подробности Ставриду</text>
+</string>
+<string id="blck_val_search_killer_part_5_text">
+<text>Левша рассказал, что они с Хромым недавно собрали много артефактов и спрятали их в контейнер, а позже вместе с ещё парочкой сталкеров решили выпить, позже Левша узнал, что Хромой с собой на базу контейнер принёс из-за этого они и поссорились. После этого Левша ушел, а спустя время Распутин сообщил ему, что Хромого убили, а контейнер украли. Думаю, что его словам можно верить, теперь нужно рассказать об этом Ставриду.</text>
+</string>
+<string id="blck_val_search_killer_part_6_name">
+<text>Два друга: Вернуться к Левше</text>
+</string>
+<string id="blck_val_search_killer_part_6_text">
+<text>Ставрид разрешил вернуться Левше обратно, теперь нужно вернуться к Левше и сказать ему об этом.</text>
+</string>
+<string id="blck_val_search_killer_part_7_name">
+<text>Два друга: Обыскать место убийства</text>
+</string>
+<string id="blck_val_search_killer_part_7_text">
+<text>Левша мёртв, это точно сделали не бандиты, скорее всего кто-то заметает следы, нужно поискать здесь улики, может и смогу что-то найти.</text>
+</string>
+<string id="blck_val_search_killer_part_8_name">
+<text>Два друга: Поговорить со Ставридом</text>
+</string>
+<string id="blck_val_search_killer_part_8_text">
+<text>На месте преступления я нашел нож, теперь нужно сходить к Ставриду и рассказать ему о случившемся.</text>
+</string>
+<string id="blck_val_search_killer_part_9_name">
+<text>Два друга: Поговорить с Распутиным о ноже</text>
+</string>
+<string id="blck_val_search_killer_part_9_text">
+<text>Распутин бармен и должен знать всех, кто приходит на базу, возможно он знает кто является владельцем ножа.</text>
+</string>
+<string id="blck_val_search_killer_part_10_name">
+<text>Два друга: Вернуться к месту убийства</text>
+</string>
+<string id="blck_val_search_killer_part_10_text">
+<text>Распутин сказал, что у меня нож Химика, также он сказал, что Химик как бы вспомнил где потерял нож и пошел его искать, нужно вернуться к месту, где был убит Левша и проверит, нет ли там этого Химика.</text>
+</string>
+<string id="blck_val_search_killer_part_11_name">
+<text>Два друга: Убить Химика</text>
+</string>
+<string id="blck_val_search_killer_part_11_text">
+<text>Химик и есть убийца, он убил Хромого, а позже и Левшу, теперь мне нужно отомстить за их смерть.</text>
+</string>
+<string id="blck_val_search_killer_part_12_name">
+<text>Два друга: Обыскать труп Химика</text>
+</string>
+<string id="blck_val_search_killer_part_12_text">
+<text>Химик убит, нужно обыскать его, возможно у него в рюкзаке есть что-то, что поможет полностью удостовериться в том, что он убийца Хромого и Левши.</text>
+</string>
+<string id="blck_val_search_killer_part_13_name">
+<text>Два друга: Поискать информацию в КПК Химика</text>
+</string>
+<string id="blck_val_search_killer_part_13_text">
+<text>В рюкзаке Химика был КПК, нужно посмотреть последние записи.</text>
+</string>
+<string id="blck_val_search_killer_part_14_name">
+<text>Два друга: Рассказать всё Ставриду</text>
+</string>
+<string id="blck_val_search_killer_part_14_text">
+<text>Химик действительно убил Хромого и Левшу, пора рассказать всё Ставриду.</text>
+</string>
+
+<!-- Квест: Активная разведка -->
+<string id="blck_val_night_shooter_part_1_name">
+<text>Активная разведка: Поговорить со Ставридом</text>
+</string>
+<string id="blck_val_night_shooter_part_1_text">
+<text>Шаман передал, что Ставрид просил мене зайти к нему, надо узнать, что ему нужно.</text>
+</string>
+<string id="blck_val_night_shooter_part_2_name">
+<text>Активная разведка: Оставаться на снайперской позиции</text>
+</string>
+<string id="blck_val_night_shooter_part_2_text">
+<text>Моя задача - помочь ребятам со снайперской позиции, осталось дождаться бандитов.</text>
+</string>
+<string id="blck_val_night_shooter_part_3_name">
+<text>Активная разведка: Убить бандитов</text>
+</string>
+<string id="blck_val_night_shooter_part_3_text">
+<text>Бандиты уже движутся в сторону Северного хутора, надо остановить их.</text>
+</string>
+<string id="blck_val_night_shooter_part_4_name">
+<text>Активная разведка: Поговорить с Марчуком</text>
+</string>
+<string id="blck_val_night_shooter_part_4_text">
+<text>Мы убили бандитов, стоит переговорить с лидером отряда, что помог мне отбить нападение.</text>
+</string>
+<string id="blck_val_night_shooter_part_5_name">
+<text>Активная разведка: Проверить закрытый канал бандитов</text>
+</string>
+<string id="blck_val_night_shooter_part_5_text">
+<text>Нужно убедится, не затевают ли бандиты еще чего, для этого надо прослушать закрытый канал бандитов.</text>
+</string>
+<string id="blck_val_night_shooter_part_6_name">
+<text>Активная разведка: Вернуться на снайперскую позицию</text>
+</string>
+<string id="blck_val_night_shooter_part_6_text">
+<text>Бандиты отправили еще один отряд бандитов к Панскому хутору, надо вернуться на позицию и утихомирить подкрепление.</text>
+</string>
+<string id="blck_val_night_shooter_part_7_name">
+<text>Активная разведка: Уничтожить подкрепление бандитов</text>
+</string>
+<string id="blck_val_night_shooter_part_7_text">
+<text>Подкрепление прибыло, нужно уничтожить его.</text>
+</string>
+<string id="blck_val_night_shooter_part_8_name">
+<text>Активная разведка: Вернуться к Ставриду</text>
+</string>
+<string id="blck_val_night_shooter_part_8_text">
+<text>Мы отбили нападение и справились с подкреплением, самое время вернуться к Ставриду и поведать ему о случившемся, заодно получить награду за выполненную работу.</text>
+</string>
+
+<!-- Квест: Упокой душ -->
+<string id="blck_val_kill_to_zombied_part_1_name">
+<text>Упокой душ: Убить зомбированных на кладбище</text>
+</string>
+<string id="blck_val_kill_to_zombied_part_1_text">
+<text>Косой, пьяница из северного хутора, попросил меня избавить от страданий зомбированных в районе кладбища.</text>
+</string>
+<string id="blck_val_kill_to_zombied_part_2_name">
+<text>Упокой душ: Вернуться к Косому</text>
+</string>
+<string id="blck_val_kill_to_zombied_part_2_text">
+<text>Зомбированные мертвы, можно возвращаться к Косому.</text>
+</string>
+
+<!-- Квест: Встретиться с Миклухой -->
+<string id="blck_val_talk_to_miklucha_part_1_name">
+<text>Встретиться с Миклухой</text>
+</string>
+<string id="blck_val_talk_to_miklucha_part_1_text">
+<text>Миклуха, лидер группы свободовцев на Заставе, попросил меня зайти к нему.</text>
+</string>
+
+<!-- Квест: Зов Монолита -->
+<string id="blck_val_monolit_call_part_1_name">
+<text>Зов Монолита: Собрать людей для срыва встречи монолитовцев</text>
+</string>
+<string id="blck_val_monolit_call_part_1_text">
+<text>Миклуха рассказал, что в скором времени на территории завода должна произойти встреча представителей верхушки Монолита, охраны на этой встрече будет не много, это неплохой шанс убить главаря монолитовцев. Также Миклуха попросил найти несколько человек для этого похода.</text>
+</string>
+<string id="blck_val_monolit_call_part_2_name">
+<text>Зов Монолита: Вернуться к Миклухе</text>
+</string>
+<string id="blck_val_monolit_call_part_2_text">
+<text>Миклуха прислал сообщение о том, что пора заканчивать подготовку, встреча уже близко, нужно зайти к нему и обсудить детали.</text>
+</string>
+<string id="blck_val_monolit_call_part_3_name">
+<text>Зов Монолита: Поговорить с Миклухой</text>
+</string>
+<string id="blck_val_monolit_call_part_3_text">
+<text>Мы почти добрались к заводу, пришло время переговорить с Миклухой.</text>
+</string>
+<string id="blck_val_monolit_call_part_4_name">
+<text>Зов Монолита: Следовать за Миклухой</text>
+</string>
+<string id="blck_val_monolit_call_part_4_text">
+<text>Нужно следовать за Миклухой.</text>
+</string>
+<string id="blck_val_monolit_call_part_5_name">
+<text>Зов Монолита: Поговорить с Миклухой</text>
+</string>
+<string id="blck_val_monolit_call_part_5_text">
+<text>Мы на месте, теперь можно переговорить с Миклухой.</text>
+</string>
+<string id="blck_val_monolit_call_part_6_name">
+<text>Зов Монолита: Попросить помощи у сталкеров</text>
+</string>
+<string id="blck_val_monolit_call_part_6_text">
+<text>Встреча оказалась липовой, на заводе нас ждала засада, Миклуха с ребятами прикрыл меня и дал выскользнуть из лап монолитовцев, нужно добраться к базе и попросить у Ставрида отправить подкрепление ребятам.</text>
+</string>
+<string id="blck_val_monolit_call_part_7_name">
+<text>Зов Монолита: Вернуться обратно на завод</text>
+</string>
+<string id="blck_val_monolit_call_part_7_text">
+<text>Ставрид отказался отправлять своих ребят на завод, нужно попытаться мне самому спасти Миклуху и остальных.</text>
+</string>
+<string id="blck_val_monolit_call_part_8_name">
+<text>Зов Монолита: Обыскать труп Миклухи</text>
+</string>
+<string id="blck_val_monolit_call_part_8_text">
+<text>Группа Миклухи мертва, я не успел их спасти, нужна посмотреть, что в рюкзаке Миклухи, может смогу найти что-то полезное.</text>
+</string>
+<string id="blck_val_monolit_call_part_9_name">
+<text>Зов Монолита: Найти способ взломать КПК Миклухи</text>
+</string>
+<string id="blck_val_monolit_call_part_9_text">
+<text>В рюкзаке Миклухи я нашел его КПК, но он заблокирован, нужно найти человека, что сможет разблокировать КПК.</text>
+</string>
+
+<!-- Квест: Тени прошлого -->
+<string id="blck_val_spatial_bubble_wound_part_1_name">
+<text>Тени прошлого: Добраться к пространственном пузыре на заводе</text>
+</string>
+<string id="blck_val_spatial_bubble_wound_part_1_text">
+<text>Петрович попросил меня отправить координаты выхода из пузыря сталкерам, что застряли внутри, это, но лучше будет если я отправлю координаты вблизи от аномалии.</text>
+</string>
+<string id="blck_val_spatial_bubble_wound_part_2_name">
+<text>Тени прошлого: Отправить координаты выхода из аномалии</text>
+</string>
+<string id="blck_val_spatial_bubble_wound_part_2_text">
+<text>Я возле аномалии, теперь можно попробовать отправить координаты.</text>
+</string>
+<string id="blck_val_spatial_bubble_wound_part_3_name">
+<text>Тени прошлого: Дождаться ответа от плененных в пузыре</text>
+</string>
+<string id="blck_val_spatial_bubble_wound_part_3_text">
+<text>Координаты отправлены, нужно убедится, что сталкеры внутри аномалии получили их.</text>
+</string>
+<string id="blck_val_spatial_bubble_wound_part_4_name">
+<text>Тени прошлого: Поговорить с Рыбой</text>
+</string>
+<string id="blck_val_spatial_bubble_wound_part_4_text">
+<text>Эти сталкеры хорошо мне знакомы, нужно переговирить с ними.</text>
+</string>
+<string id="blck_val_spatial_bubble_wound_part_5_name">
+<text>Тени прошлого: Узнать о произошедшем от сталкера</text>
+</string>
+<string id="blck_val_spatial_bubble_wound_part_5_text">
+<text>Я очнулся на хуторе и после удара прикладом ничего не помню, нужно расспросить об этом у сталкера.</text>
+</string>
+<string id="blck_val_spatial_bubble_wound_part_6_name">
+<text>Тени прошлого: Поговорить с Петровичем</text>
+</string>
+<string id="blck_val_spatial_bubble_wound_part_6_text">
+<text>Скорее всего я выпустил на свободу Стронглава, сталкерам об этом пока лучше не знать, в любом случае нужно поговорить с Петровичем.</text>
+</string>
+<string id="blck_val_spatial_bubble_wound_part_7_name">
+<text>Тени прошлого: Поговорить с Ставридом</text>
+</string>
+<string id="blck_val_spatial_bubble_wound_part_7_text">
+<text>Петрович рассказал, что в КПК Миклухи были довольно занятные записи, нужно узнать подробней об этом у Ставрида.</text>
+</string>
+
+<!-- Квест: Обмен -->
+<string id="blck_val_wpn_vihr_search_part_1_name">
+<text>Обмен: Раздобыть ствол СР-3 "Вихрь"</text>
+</string>
+<string id="blck_val_wpn_vihr_search_part_1_text">
+<text>Торговец, что может предоставить нам два монолитовских костюма, взамен требует ствол СР-3 "Вихрь", нужно попытаться его раздобыть.</text>
+</string>
+<string id="blck_val_wpn_vihr_search_part_2_name">
+<text>Обмен: Отдать СР-3 "Вихрь" Ставриду</text>
+</string>
+<string id="blck_val_wpn_vihr_search_part_2_text">
+<text>СР-3 "Вихрь" уже у меня, можно отнести его Ставриду.</text>
+</string>
+
+<!-- Квест: Легкая добыча -->
+<string id="blck_val_hunt_dog_tail_part_1_name">
+<text>Легкая добыча: Добыть шесть хвостов слепых псов</text>
+</string>
+<string id="blck_val_hunt_dog_tail_part_1_text">
+<text>Нужно добыть шесть хвостов слепых псов для охотников у вагончика.</text>
+</string>
+<string id="blck_val_hunt_dog_tail_part_2_name">
+<text>Легкая добыча: Отдать хвосты охотнику</text>
+</string>
+<string id="blck_val_hunt_dog_tail_part_2_text">
+<text>Хвосты у меня, нужно отдать их охотникам у вагончика.</text>
+</string>
+
+<!-- Квест: Под покровом ночи -->
+<string id="blck_val_prison_breack_part_1_name">
+<text>Под покровом ночи: Дождаться ночи</text>
+</string>
+<string id="blck_val_prison_breack_part_1_text">
+<text>Шмыга сказал, что он может достать для меня СР-3 "Вихрь", но я должен помочь ему сбежать из плена. Думаю, что другого способа достать этот ствол у меня нет, нужно помочь ему, украв ключ от клетку, но для начала нужно дождаться момента когда Сологуб уйдет спать.</text>
+</string>
+<string id="blck_val_prison_breack_part_2_name">
+<text>Под покровом ночи: Украсть ключ с тумбочки</text>
+</string>
+<string id="blck_val_prison_breack_part_2_text">
+<text>Сологуб уже должен спать, самое время украсть ключ с тумбочки.</text>
+</string>
+<string id="blck_val_prison_breack_part_3_name">
+<text>Под покровом ночи: Вернуться к Шмыге</text>
+</string>
+<string id="blck_val_prison_breack_part_3_text">
+<text>Ключ у меня, можно возвращаться к Шмыге.</text>
+</string>
+<string id="blck_val_prison_breack_part_4_name">
+<text>Под покровом ночи: Отдать ключ Шмыге</text>
+</string>
+<string id="blck_val_prison_breack_part_4_text">
+<text>Нужно отдать ключ Шмыге.</text>
+</string>
+<string id="blck_val_prison_breack_part_5_name">
+<text>Под покровом ночи: Пойти на место встречи</text>
+</string>
+<string id="blck_val_prison_breack_part_5_text">
+<text>Ключ уже у Шмыги, нужно подождать его за домом, пока он и еще один бандит выберутся из клетки.</text>
+</string>
+<string id="blck_val_prison_breack_part_6_name">
+<text>Под покровом ночи: Дождаться Шмыгу</text>
+</string>
+<string id="blck_val_prison_breack_part_6_text">
+<text>Теперь остается только дождаться Шмыгу на месте встречи.</text>
+</string>
+<string id="blck_val_prison_breack_part_7_name">
+<text>Под покровом ночи: Поговорить с Шмыгой</text>
+</string>
+<string id="blck_val_prison_breack_part_7_text">
+<text>Нужно поговорить с Шмыгой.</text>
+</string>
+<string id="blck_val_prison_breack_part_8_name">
+<text>Под покровом ночи: Вернуть ключ на место</text>
+</string>
+<string id="blck_val_prison_breack_part_8_text">
+<text>Шмыга удачно сбежал и сказал, что утром я смогу забрать свои стволы, теперь самое время вернуть ключ на место.</text>
+</string>
+<string id="blck_val_prison_breack_part_9_name">
+<text>Под покровом ночи: Вернуться к Ставриду</text>
+</string>
+<string id="blck_val_prison_breack_part_9_text">
+<text>Шмыга удачно сбежал и сказал, что утром я смогу забрать свои стволы, теперь самое время вернуться к Ставриду.</text>
+</string>
+
+<!-- Квест: Свободное время -->
+<string id="blck_val_shaman_quest_talk_part_1_name">
+<text>Свободное время: Поговорить с Распутиным на счет работы</text>
+</string>
+<string id="blck_val_shaman_quest_talk_part_1_text">
+<text>Ставрид сказал, что прямо сейчас я не смогу покинуть Заставу, вывести отсюда меня сможет только проводник, но его сейчас нет на Заставе и пока я его жду, то можно занять себя работой, нужно поговорить с Распутиным по этому поводу.</text>
+</string>
+
+<!-- Квест: Аномальная роща -->
+<string id="blck_val_find_art_barman_part_1_name">
+<text>Аномальная роща: Достать артефакт "Колобок" для Распутина</text>
+</string>
+<string id="blck_val_find_art_barman_part_1_text">
+<text>Распутин рассказал, что в аномальной роще, вернее на её верхушке есть артефакт "Колобок", Распутин попросил меня, достать этот артефакт и принести его ему.</text>
+</string>
+<string id="blck_val_find_art_barman_part_2_name">
+<text>Аномальная роща: Отдать артефакт "Колобок" Распутину</text>
+</string>
+<string id="blck_val_find_art_barman_part_2_text">
+<text>Артефакт у меня, можно возвращаться обратно к Распутину.</text>
+</string>
+<string id="blck_val_find_art_barman_part_3_name">
+<text>Аномальная роща: Рассказать Распутину о случившемся</text>
+</string>
+<string id="blck_val_find_art_barman_part_3_text">
+<text>Возле аномальной рощи меня обокрали бандиты, забрали они артефакт "Колобок", нужно рассказать об этом Распутину.</text>
+</string>
+
+<!-- Квест: Зуб за зуб -->
+<string id="blck_val_shmiga_revard_quest_part_1_name">
+<text>Зуб за зуб: Забрать стволы у Шмыги</text>
+</string>
+<string id="blck_val_shmiga_revard_quest_part_1_text">
+<text>Кривой сообщил, что Шмыга готов отдать мне награду, в виде двух СР-3 "Вихрь", за его освобождение, нужно сходить к нему и забрать свои стволы.</text>
+</string>
+
+<!-- Квест: Маскарад -->
+<string id="blck_val_monolit_base_part_1_name">
+<text>Маскарад: Подождать прыбития посылки с комбинезонами</text>
+</string>
+<string id="blck_val_monolit_base_part_1_text">
+<text>Я отдал СР-3 "Вихрь" Ставриду, теперь осталось дождаться посылку с комбинезонами.</text>
+</string>
+<string id="blck_val_monolit_base_part_2_name">
+<text>Маскарад: Поговорить со Ставридом</text>
+</string>
+<string id="blck_val_monolit_base_part_2_text">
+<text>Ставрид написал, что посылка с комбинезонами прибыла, нужно зайти и поговорить с ним.</text>
+</string>
+<string id="blck_val_monolit_base_part_3_name">
+<text>Маскарад: Перенастроить КПК у Петровича</text>
+</string>
+<string id="blck_val_monolit_base_part_3_text">
+<text>Комбинезон и взрывчатка уже у меня, остался последний пункт - перенастроить КПК, чтобы монолитовцы приняли меня за своего.</text>
+</string>
+<string id="blck_val_monolit_base_part_4_name">
+<text>Маскарад: Поговорить с Лютым</text>
+</string>
+<string id="blck_val_monolit_base_part_4_text">
+<text>Петрович перенастроил мой КПК, теперь можно поговорить с Лютым и отправляться в путь.</text>
+</string>
+<string id="blck_val_monolit_base_part_5_name">
+<text>Маскарад: Следовать за Лютым</text>
+</string>
+<string id="blck_val_monolit_base_part_5_text">
+<text>Нужно следовать за Лютым к монолитовской базе.</text>
+</string>
+<string id="blck_val_monolit_base_part_6_name">
+<text>Маскарад: Поговорить с Вервольфом</text>
+</string>
+<string id="blck_val_monolit_base_part_6_text">
+<text>Лидер монолитовской группы прислал сообщение о том, чтобы мы подошли к нему. Главное, чтобы он не раскусил нас.</text>
+</string>
+<string id="blck_val_monolit_base_part_7_name">
+<text>Маскарад: Установить взрывчатку на втором этаже</text>
+</string>
+<string id="blck_val_monolit_base_part_7_text">
+<text>Мы проникли на базу, самое время установить взрывчатку.</text>
+</string>
+<string id="blck_val_monolit_base_part_8_name">
+<text>Маскарад: Надеть монолитовский комбинезон</text>
+</string>
+<string id="blck_val_monolit_base_part_8_text">
+<text>Ставрид дал мне монолитовский комбинезон, нужно его надеть.</text>
+</string>
+
+<!-- Квест: Интересное предложение -->
+<string id="blck_val_shaman_talk_line_part_1_name">
+<text>Интересное предложение: Поговорить с Распутиным</text>
+</string>
+<string id="blck_val_shaman_talk_line_part_1_text">
+<text>Распутин написал, что у него есть ко мне разговор. Интересно, что ему нужно в этот раз?.. Самое время выяснить это.</text>
+</string>
+<string id="blck_val_shaman_talk_line_part_2_name">
+<text>Интересное предложение: Поговорить с Хантером</text>
+</string>
+<string id="blck_val_shaman_talk_line_part_2_text">
+<text>Распутин рассказал мне о охотнике, что прибыл на хутор, кличка у него Хантер и ему нужна помощь. Нужно поговорить с ним.</text>
+</string>
+
+<!-- Квест: Псевдо-плоть -->
+<string id="blck_val_hunter_hunting_part_1_name">
+<text>Псевдо-плоть: Найти псевдо-плоть</text>
+</string>
+<string id="blck_val_hunter_hunting_part_1_text">
+<text>Нужно найти псевдо-плоть.</text>
+</string>
+<string id="blck_val_hunter_hunting_part_2_name">
+<text>Псевдо-плоть: Следовать за Хантером</text>
+</string>
+<string id="blck_val_hunter_hunting_part_2_text">
+<text>Хантер попросил помочь ему выследить и убить псевдо-плоть, нужно помочь ему с этим.</text>
+</string>
+<string id="blck_val_hunter_hunting_part_3_name">
+<text>Псевдо-плоть: Ожидать указаний от Хантера</text>
+</string>
+<string id="blck_val_hunter_hunting_part_3_text">
+<text>Мы добрались к Свалке, нужно дождаться указаний от Хантера.</text>
+</string>
+<string id="blck_val_hunter_hunting_part_4_name">
+<text>Псевдо-плоть: Поговорить с Хантером</text>
+</string>
+<string id="blck_val_hunter_hunting_part_4_text">
+<text>Кажется Хантер никого не обнаружил, нужно с ним поговорить по этому поводу.</text>
+</string>
+<string id="blck_val_hunter_hunting_part_5_name">
+<text>Псевдо-плоть: Следовать за Хантером</text>
+</string>
+<string id="blck_val_hunter_hunting_part_5_text">
+<text>Хантер предположил, что псевдо-плоть может находится в другой части свалки, нужно проверить то место.</text>
+</string>
+<string id="blck_val_hunter_hunting_part_6_name">
+<text>Псевдо-плоть: Убить псевдо-плоть</text>
+</string>
+<string id="blck_val_hunter_hunting_part_6_text">
+<text>Мы нашли псевдо-плоть, теперь нужно убить её.</text>
+</string>
+<string id="blck_val_hunter_hunting_part_7_name">
+<text>Псевдо-плоть: Поговорить с Хантером</text>
+</string>
+<string id="blck_val_hunter_hunting_part_7_text">
+<text>Псевдо-плоть мертва, самое время поговорить с Хантером.</text>
+</string>
+
+<!-- Квест: Право на выбор -->
+<string id="blck_val_final_zastava_quest_part_1_name">
+<text>Право на выбор: Спуститься в лабораторию или поговорить со Ставридом</text>
+</string>
+<string id="blck_val_final_zastava_quest_part_1_text">
+<text>Лютому может угрожать опасность, мне нужно помочь ему, но возможно сначала лучше поговорить со Ставридом.</text>
+</string>
+<string id="blck_val_final_zastava_quest_part_2_name">
+<text>Право на выбор: Спуститься в лабораторию</text>
+</string>
+<string id="blck_val_final_zastava_quest_part_2_text">
+<text>Я поговорил со Ставридом, теперь можно отправляться в лабораторию, чтобы спасти Лютого из плена монолитовцев.</text>
+</string>
+<string id="blck_val_final_zastava_quest_part_3_name">
+<text>Право на выбор: Перенастроить КПК у Петровича</text>
+</string>
+<string id="blck_val_final_zastava_quest_part_3_text">
+<text>Пожалуй всё же не нужно идти в лабораторию, Лютого мне всё-равно не спасти, лучше пойду поговорю с Хантером, пусть выведет меня из Заставы, но перед этим надо сходить к Петровичу.</text>
+</string>
+<string id="blck_val_final_zastava_quest_part_4_name">
+<text>Право на выбор: Поговорить с Хантером</text>
+</string>
+<string id="blck_val_final_zastava_quest_part_4_text">
+<text>Я принял решение не идти Лютому на выручку, это самоубийство, Ставрид сказал, что Хантер готов вывести меня с Заставы, пожалуй надо поговорить с ним об этом.</text>
+</string>
+
+<!-- Квест: Коллекционер -->
+<string id="blck_val_petrovich_dop_quest_part_1_name">
+<text>Коллекционер: Найти коллекцию фигурок мутантов для Петровича</text>
+</string>
+<string id="blck_val_petrovich_dop_quest_part_1_text">
+<text>Петрович попросил меня помочь ему собрать колекцию фигурок всех мутантов, что можно встретить в Зоне. Фигурка кровососа у него уже есть, мне же нужно попытаться найти фигурки следующих мутантов: слепого пса, псевдо-собаки, кабана, плоти, бюрера, контролёра, химеры, снорка и псевдогиганта.</text>
+</string>
+
+</string_table>

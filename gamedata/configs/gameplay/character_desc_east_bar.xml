@@ -1,0 +1,2119 @@
+<?xml version='1.0' encoding="windows-1251"?>
+
+<xml>
+
+	<!---------------------------DOLG IVANCOV---------------------->
+<specific_character id="bar_npc_voronin" team_default = "1">
+		<name>bar_npc_voronin_name</name>
+		<icon>ui_npc_u_stalker_do_balon_5</icon>
+		<map_icon x="1" y="0"></map_icon>
+		<bio>Опытный сталкер. Детальная информация отсутствует.</bio>
+		<class>bar_npc_voronin</class>
+		<community>dolg</community> <terrain_sect>stalker_terrain</terrain_sect>
+		<snd_config>characters_voice\human\dolg_1\</snd_config>
+		<rank>30</rank>
+		<reputation>0</reputation>
+		<money min="50000" max="150000" infinitive="0"/>
+		<visual>actors\dolg\stalker_do_balon_5</visual>
+		<supplies>
+			[spawn] \n
+
+#include "gameplay\supplies\character_items.xml"
+#include "gameplay\supplies\character_food.xml"
+#include "gameplay\supplies\character_drugs.xml"
+		</supplies>
+#include "gameplay\character_criticals.xml"
+
+<actor_dialog>bar_expectation_voronin_dialog</actor_dialog>
+		<actor_dialog>dm_ordered_task_dialog</actor_dialog>
+		<actor_dialog>dm_ordered_task_completed_dialog</actor_dialog>
+		<actor_dialog>dm_ordered_task_cancel_dialog</actor_dialog>	
+<actor_dialog>actor_break_dialog</actor_dialog>
+	</specific_character>
+	
+	
+	<specific_character id="bar_npc_dolg_trader" team_default = "1">
+		<name>bar_npc_dolg_trader_name</name>
+		<icon>ui_inGame2_none</icon>
+		<map_icon x="1" y="0"></map_icon>
+		<bio>Опытный сталкер. Детальная информация отсутствует.</bio>
+		<class>bar_npc_dolg_trader</class>
+		<community>dolg</community> <terrain_sect>stalker_terrain</terrain_sect>
+		<snd_config>characters_voice\human\dolg_1\</snd_config>
+		<rank>30</rank>
+		<reputation>0</reputation>
+		<money min="500000" max="1500000" infinitive="0"/>
+		<visual>actors\stalker_dolg\stalker_dolg_2</visual>
+		<supplies>
+			[spawn] \n
+
+#include "gameplay\supplies\character_items.xml"
+#include "gameplay\supplies\character_food.xml"
+#include "gameplay\supplies\character_drugs.xml"
+		</supplies>
+#include "gameplay\character_criticals.xml"
+<actor_dialog>dm_init_trader</actor_dialog>
+		<actor_dialog>dm_ordered_task_dialog</actor_dialog>
+		<actor_dialog>dm_ordered_task_completed_dialog</actor_dialog>
+		<actor_dialog>dm_ordered_task_cancel_dialog</actor_dialog>	
+<actor_dialog>bar_azot_third_quest_dialog_1</actor_dialog>
+<actor_dialog>actor_break_dialog</actor_dialog>
+	</specific_character>
+	
+	
+		<specific_character id="bar_npc_dolg_mechanic" team_default = "1">
+		<name>bar_npc_dolg_mechanic_name</name>
+		<icon>ui_inGame2_none</icon>
+		<map_icon x="1" y="0"></map_icon>
+		<bio>Опытный сталкер. Детальная информация отсутствует.</bio>
+		<class>bar_npc_dolg_mechanic</class>
+		<mechanic_mode>1</mechanic_mode>
+		<community>dolg</community> <terrain_sect>stalker_terrain</terrain_sect>
+		<snd_config>characters_voice\human\dolg_1\</snd_config>
+		<rank>30</rank>
+		<reputation>0</reputation>
+		<money min="500000" max="1500000" infinitive="0"/>
+		<visual>actors\stalker_dolg\stalker_dolg_2</visual>
+		<supplies>
+			[spawn] \n
+
+#include "gameplay\supplies\character_items.xml"
+#include "gameplay\supplies\character_food.xml"
+#include "gameplay\supplies\character_drugs.xml"
+		</supplies>
+#include "gameplay\character_criticals.xml"
+<actor_dialog>dm_init_trader</actor_dialog>
+<actor_dialog>dm_init_mechanic</actor_dialog>
+<actor_dialog>east_bar_mechanic_util_1</actor_dialog>	
+<actor_dialog>east_bar_mechanic_util_2</actor_dialog>	
+<actor_dialog>dm_ordered_task_dialog</actor_dialog>
+<actor_dialog>dm_ordered_task_completed_dialog</actor_dialog>
+<actor_dialog>dm_ordered_task_cancel_dialog</actor_dialog>
+<actor_dialog>bar_azot_zero_quest_dialog_1</actor_dialog>
+<actor_dialog>bar_azot_zero_quest_dialog_2</actor_dialog>
+<actor_dialog>bar_azot_first_quest_dialog_1</actor_dialog>
+<actor_dialog>bar_azot_first_quest_dialog_2</actor_dialog>
+<actor_dialog>bar_azot_third_quest_dialog_2</actor_dialog>
+<actor_dialog>bar_azot_fouth_quest_dialog_1</actor_dialog>
+<actor_dialog>dm_encrypted_pda</actor_dialog>
+<actor_dialog>dm_tech_repair</actor_dialog>
+<actor_dialog>actor_break_dialog</actor_dialog>
+	</specific_character>
+
+<specific_character id="bar_npc_dolg_svayzist" team_default = "1">
+		<name>bar_npc_dolg_svayzist_name</name>
+		<icon>ui_inGame2_none</icon>
+		<map_icon x="1" y="0"></map_icon>
+		<bio>Опытный сталкер. Детальная информация отсутствует.</bio>
+		<class>bar_npc_dolg_svayzist</class>
+		<community>dolg</community> <terrain_sect>stalker_terrain</terrain_sect>
+		<snd_config>characters_voice\human\dolg_1\</snd_config>
+		<rank>30</rank>
+		<reputation>0</reputation>
+		<money min="500000" max="1500000" infinitive="0"/>
+		<visual>actors\stalker_dolg\stalker_dolg_2</visual>
+		<supplies>
+			[spawn] \n
+
+#include "gameplay\supplies\character_items.xml"
+#include "gameplay\supplies\character_food.xml"
+#include "gameplay\supplies\character_drugs.xml"
+		</supplies>
+#include "gameplay\character_criticals.xml"
+<actor_dialog>bar_a6_stalker_radiobattle_rpg_1_dialog</actor_dialog>
+<actor_dialog>actor_break_dialog</actor_dialog>
+	</specific_character>
+	
+	
+<specific_character id="bar_npc_barman" team_default = "1">
+		<name>bar_npc_barman_name</name>
+		<icon>ui_inGame2_Barmen</icon>
+		<map_icon x="1" y="0"></map_icon>
+		<bio>Опытный сталкер. Детальная информация отсутствует.</bio>
+		<class>bar_npc_barman</class>
+		<community>stalker</community> <terrain_sect>stalker_terrain</terrain_sect>
+		<snd_config>characters_voice\human\stalker_3\</snd_config>
+		<rank>60</rank>
+		<money min="900000" max="999999" infinitive="0"/>
+		<reputation>0</reputation>
+		<visual>actors\stalker_exclusive\bar_barman_walker</visual>
+		<supplies>
+			[spawn] \n
+
+#include "gameplay\supplies\character_items_3.xml"
+#include "gameplay\supplies\character_food.xml"
+#include "gameplay\supplies\character_drugs_4.xml"
+		</supplies>
+#include "gameplay\character_criticals.xml"
+
+
+
+
+<actor_dialog>dm_init_trader</actor_dialog>
+<start_dialog>bar_stard_dialog_barman</start_dialog>
+		<actor_dialog>dm_ordered_task_dialog</actor_dialog>
+		<actor_dialog>dm_ordered_task_completed_dialog</actor_dialog>
+		<actor_dialog>dm_ordered_task_cancel_dialog</actor_dialog>	
+<actor_dialog>bar_walker_lab_barmen_dialog</actor_dialog>
+<actor_dialog>bar_expectation_barmen_part2_dialog</actor_dialog>
+<actor_dialog>bar_new_details_barmen_dialog</actor_dialog>
+<actor_dialog>bar_expectation_barmen_dialog</actor_dialog>
+<actor_dialog>bar_first_talk_barmen_dialog</actor_dialog>
+<actor_dialog>bar_doc_barmen_dialog</actor_dialog>
+<actor_dialog>actor_break_dialog</actor_dialog>
+	</specific_character>
+	
+	
+<specific_character id="bar_medic" team_default = "1">
+		<name>bar_medic_name</name>
+		<icon>ui_inGame2_neutral_1</icon>
+		<map_icon x="1" y="0"></map_icon>
+		<bio>Опытный сталкер. Детальная информация отсутствует.</bio>
+		<class>bar_medic</class>
+		<community>stalker</community> <terrain_sect>stalker_terrain</terrain_sect>
+		<snd_config>characters_voice\human\stalker_1\</snd_config>
+		<rank>25</rank>
+		<money min="250" max="1750" infinitive="0"/>
+		<reputation>0</reputation>
+		<visual>actors\stalker_neutral\stalker_neutral_1_mask_1</visual>
+		<supplies>
+			[spawn] \n
+			wpn_pm = 1 \n
+			ammo_9x18_fmj = 1 \n
+#include "gameplay\supplies\character_items.xml"
+#include "gameplay\supplies\character_food.xml"
+#include "gameplay\supplies\character_drugs.xml"
+		</supplies>
+#include "gameplay\character_criticals.xml"
+<actor_dialog>dm_init_trader</actor_dialog>
+		<actor_dialog>dm_ordered_task_dialog</actor_dialog>
+		<actor_dialog>dm_ordered_task_completed_dialog</actor_dialog>
+		<actor_dialog>dm_ordered_task_cancel_dialog</actor_dialog>	
+<actor_dialog>bar_medic_need_health_care</actor_dialog>
+<actor_dialog>actor_break_dialog</actor_dialog>
+	</specific_character>
+	
+	
+<specific_character id="bar_npc_kalgun_arena" team_default = "1">
+		<name>bar_npc_kalgun_arena_name</name>
+		<icon>ui_inGame2_neutral_2</icon>
+		<map_icon x="1" y="0"></map_icon>
+		<bio>Опытный сталкер. Детальная информация отсутствует.</bio>
+		<class>bar_npc_kalgun_arena</class>
+		<community>stalker</community> <terrain_sect>stalker_terrain</terrain_sect>
+		<snd_config>characters_voice\human\stalker_2\</snd_config>
+		<rank>25</rank>
+		<money min="25000" max="175000" infinitive="0"/>
+		<reputation>0</reputation>
+		<visual>actors\stalker_neutral\stalker_neutral_2_mask_2</visual>
+		<supplies>
+			[spawn] \n
+			ammo_12x70_buck = 1 \n
+			wpn_wincheaster1300 \n
+			wpn_beretta \n
+			ammo_9x19_fmj = 1 \n
+			grenade_rgd5 = 1 \n
+#include "gameplay\supplies\character_items.xml"
+#include "gameplay\supplies\character_food.xml"
+#include "gameplay\supplies\character_drugs.xml"
+		</supplies>
+#include "gameplay\character_criticals.xml"
+
+<actor_dialog>bar_arena_take_rewqard_dialog</actor_dialog>
+<actor_dialog>bar_start_arena_kalgun_dialog</actor_dialog>
+<actor_dialog>actor_break_dialog</actor_dialog>
+	</specific_character>
+	
+	
+<specific_character id="bar_npc_nimble" team_default = "1">
+		<name>bar_npc_nimble_name</name>
+		<icon>ui_inGame2_csky_1_1</icon>
+		<map_icon x="1" y="0"></map_icon>
+		<bio>Опытный сталкер. Детальная информация отсутствует.</bio>
+		<class>bar_npc_nimble</class>
+		<community>csky</community> <terrain_sect>stalker_terrain</terrain_sect>
+		<snd_config>characters_voice\human\csky_1\</snd_config>
+		<rank>30</rank>
+		<reputation>0</reputation>
+		<visual>actors\stalker_nebo\stalker_nebo_1</visual>
+		<supplies>
+			[spawn] \n
+			wpn_ak74 \n
+			ammo_5.45x39_ap = 1 \n
+			wpn_colt1911 = 1 \n
+			ammo_11.43x23_hydro = 1 \n
+			grenade_f1 = 1 \n
+#include "gameplay\supplies\character_items.xml"
+#include "gameplay\supplies\character_food.xml"
+#include "gameplay\supplies\character_drugs.xml"
+		</supplies>
+#include "gameplay\character_criticals.xml"
+
+
+<actor_dialog>bar_npc_nimble_dialog</actor_dialog>
+<actor_dialog>bar_azot_second_quest_dialog_2</actor_dialog>
+<actor_dialog>bar_azot_second_quest_dialog_3</actor_dialog>
+<actor_dialog>bar_azot_third_quest_dialog_3</actor_dialog>
+<actor_dialog>actor_break_dialog</actor_dialog>
+	</specific_character>
+
+<!-------------------Персонажи Арены------------------------------------------->	
+	
+<specific_character id="bar_npc_kostolom_arena" team_default = "1">
+		<name>bar_npc_kostolom_arena_name</name>
+		<icon>ui_inGame2_neutral_2_mask</icon>
+		<map_icon x="1" y="0"></map_icon>
+		<bio>Опытный сталкер. Детальная информация отсутствует.</bio>
+		<class>bar_npc_kostolom_arena</class>
+		<community>stalker</community> <terrain_sect>stalker_terrain</terrain_sect>
+		<snd_config>characters_voice\human\stalker_1\</snd_config>
+		<rank>25</rank>
+		<money min="250" max="1750" infinitive="0"/>
+		<reputation>0</reputation>
+		<visual>actors\stalker_neutral\stalker_neutral_2_mask_12</visual>
+		<supplies>
+			[spawn] \n
+			wpn_ak74 \n
+			ammo_5.45x39_ap = 1 \n
+			wpn_beretta \n
+			ammo_9x19_fmj = 1 \n
+			grenade_rgd5 = 2 \n
+#include "gameplay\supplies\character_items.xml"
+#include "gameplay\supplies\character_food.xml"
+#include "gameplay\supplies\character_drugs.xml"
+		</supplies>
+#include "gameplay\character_criticals.xml"
+
+<actor_dialog>bar_start_arena_kostolom_dialog</actor_dialog>
+<actor_dialog>bar_about_arena_kostolom_dialog</actor_dialog>
+<actor_dialog>actor_break_dialog</actor_dialog>
+</specific_character>
+
+<!-------------------------Партнеры по бою Телохраниетель---------------------------->
+	
+<specific_character id="bar_npc_bodyguard_1_arena" team_default = "1">
+		<name>Вася Штырь</name>
+		<icon>ui_inGame2_bandit_1</icon>
+		<map_icon x="1" y="0"></map_icon>
+		<bio>Опытный сталкер. Детальная информация отсутствует.</bio>
+		<class>bar_npc_bodyguard_1_arena</class>
+		<community>arena_friend</community> <terrain_sect>stalker_terrain</terrain_sect>
+		<snd_config>characters_voice\human\bandit_1\</snd_config>
+		<rank>0</rank>
+		<reputation>0</reputation>
+		<visual>actors\stalker_bandit\stalker_bandit_1</visual>
+		<supplies>
+			[spawn] \n
+			
+#include "gameplay\supplies\character_items.xml"
+#include "gameplay\supplies\character_food.xml"
+#include "gameplay\supplies\character_drugs.xml"
+		</supplies>
+#include "gameplay\character_criticals.xml"
+#include "gameplay\character_dialogs.xml"
+<actor_dialog>bar_bodyguard_1_naim_dialog</actor_dialog>
+<actor_dialog>bar_bodyguard_after_fight_dialog</actor_dialog>
+</specific_character>
+
+<specific_character id="bar_npc_bodyguard_2_arena" team_default = "1">
+		<name>Петр Болотный</name>
+		<icon>ui_inGame2_none</icon>
+		<map_icon x="1" y="0"></map_icon>
+		<bio>Опытный сталкер. Детальная информация отсутствует.</bio>
+		<class>bar_npc_bodyguard_2_arena</class>
+		<community>arena_friend</community> <terrain_sect>stalker_terrain</terrain_sect>
+		<snd_config>characters_voice\human\csky_3\</snd_config>
+		<rank>50</rank>
+		<reputation>0</reputation>
+		<visual>actors\stalker_nebo\stalker_nebo_2</visual>
+		<supplies>
+			[spawn] \n
+			
+#include "gameplay\supplies\character_items.xml"
+#include "gameplay\supplies\character_food.xml"
+#include "gameplay\supplies\character_drugs.xml"
+		</supplies>
+#include "gameplay\character_criticals.xml"
+#include "gameplay\character_dialogs.xml"
+<actor_dialog>bar_bodyguard_2_naim_dialog</actor_dialog>
+<actor_dialog>bar_bodyguard_after_fight_dialog</actor_dialog>
+</specific_character>
+
+<specific_character id="bar_npc_bodyguard_3_arena" team_default = "1">
+		<name>Инокентий Отмороженный</name>
+		<icon>ui_inGame2_monolit_2</icon>
+		<map_icon x="1" y="0"></map_icon>
+		<bio>Опытный сталкер. Детальная информация отсутствует.</bio>
+		<class>bar_npc_bodyguard_3_arena</class>
+		<community>arena_friend</community> <terrain_sect>stalker_terrain</terrain_sect>
+		<snd_config>characters_voice\human\military_2\</snd_config>
+		<rank>0</rank>
+		<reputation>0</reputation>
+		<visual>actors\stalker_monolith\stalker_monolith_4</visual>
+		<supplies>
+			[spawn] \n
+			
+#include "gameplay\supplies\character_items.xml"
+#include "gameplay\supplies\character_food.xml"
+#include "gameplay\supplies\character_drugs.xml"
+		</supplies>
+#include "gameplay\character_criticals.xml"
+#include "gameplay\character_dialogs.xml"
+<actor_dialog>bar_bodyguard_3_naim_dialog</actor_dialog>
+<actor_dialog>bar_bodyguard_after_fight_dialog</actor_dialog>
+</specific_character>
+
+<!-------------------------Партнеры по бою Напарник---------------------------->
+
+<specific_character id="bar_npc_friend_1_arena" team_default = "1">
+		<name>Гена Лопата</name>
+		<icon>ui_inGame2_none</icon>
+		<map_icon x="1" y="0"></map_icon>
+		<bio>Опытный сталкер. Детальная информация отсутствует.</bio>
+		<class>bar_npc_friend_1_arena</class>
+		<community>arena_friend</community> <terrain_sect>stalker_terrain</terrain_sect>
+		<snd_config>characters_voice\human\bandit_1\</snd_config>
+		<rank>20</rank>
+		<reputation>0</reputation>
+		<money min="250" max="1750" infinitive="0"/>
+		<visual>actors\stalker_bandit\stalker_bandit_1_mask_4</visual>
+		<supplies>
+			[spawn] \n
+			wpn_protecta \n
+			ammo_12x70_buck = 1 \n
+			wpn_beretta \n
+			ammo_9x19_pbp = 1 \n
+			grenade_f1 = 3 \n
+#include "gameplay\supplies\character_items_nd.xml"
+#include "gameplay\supplies\character_food.xml"
+#include "gameplay\supplies\character_drugs.xml"
+		</supplies>
+#include "gameplay\character_criticals.xml"
+#include "gameplay\character_dialogs.xml"
+<actor_dialog>bar_friend_1_naim_dialog</actor_dialog>
+<actor_dialog>bar_friend_after_fight_dialog</actor_dialog>
+</specific_character>
+
+<specific_character id="bar_npc_friend_2_arena" team_default = "1">
+		<name>Коля Счастливчик</name>
+		<icon>ui_inGame2_neutral_2</icon>
+		<map_icon x="1" y="0"></map_icon>
+		<bio>Опытный сталкер. Детальная информация отсутствует.</bio>
+		<class>bar_npc_friend_2_arena</class>
+		<community>arena_friend</community> <terrain_sect>stalker_terrain</terrain_sect>
+		<snd_config>characters_voice\human\stalker_1\</snd_config>
+		<rank>25</rank>
+		<money min="250" max="1750" infinitive="0"/>
+		<reputation>0</reputation>
+		<visual>actors\stalker_neutral\stalker_neutral_2_mask_2</visual>
+		<supplies>
+			[spawn] \n
+			wpn_sig550 \n
+			ammo_5.56x45_ap = 1 \n
+			wpn_fort = 1 \n
+			ammo_9x18_fmj = 1 \n
+#include "gameplay\supplies\character_items.xml"
+#include "gameplay\supplies\character_food.xml"
+#include "gameplay\supplies\character_drugs.xml"
+		</supplies>
+#include "gameplay\character_criticals.xml"
+#include "gameplay\character_dialogs.xml"
+<actor_dialog>bar_friend_2_naim_dialog</actor_dialog>
+<actor_dialog>bar_friend_after_fight_dialog</actor_dialog>
+</specific_character>
+
+<specific_character id="bar_npc_friend_3_arena" team_default = "1">
+		<name>Митяй Коловорот</name>
+		<icon>ui_inGame2_neutral_3</icon>
+		<map_icon x="1" y="0"></map_icon>
+		<bio>Опытный сталкер. Детальная информация отсутствует.</bio>
+		<class>bar_npc_friend_3_arena</class>
+		<community>arena_friend</community> <terrain_sect>stalker_terrain</terrain_sect>
+		<snd_config>characters_voice\human\stalker_3\</snd_config>
+		<rank>50</rank>
+		<money min="2500" max="5000" infinitive="0"/>
+		<reputation>0</reputation>
+		<visual>actors\stalker_neutral\stalker_neutral_3</visual>
+		<supplies>
+			[spawn] \n
+			wpn_fort \n
+			ammo_9x18_fmj = 1 \n
+			
+#include "gameplay\supplies\character_items_2.xml"
+#include "gameplay\supplies\character_food.xml"
+#include "gameplay\supplies\character_drugs_3.xml"
+#include "gameplay\supplies\character_drugs_sci.xml"
+		</supplies>
+#include "gameplay\character_criticals.xml"
+#include "gameplay\character_dialogs.xml"
+<actor_dialog>bar_friend_3_naim_dialog</actor_dialog>
+<actor_dialog>bar_friend_after_fight_dialog</actor_dialog>
+</specific_character>
+
+<!-------------------------Противники по бою Дуэль---------------------------->
+<specific_character id="bar_npc_duel_1_arena" team_default = "1">	
+	<name>GENERATE_NAME_stalker</name>
+		<icon>ui_inGame2_bandit_1</icon>
+		<map_icon x="1" y="0"></map_icon>
+		<bio>Опытный сталкер. Детальная информация отсутствует.</bio>
+		<class>bar_npc_duel_1_arena</class>
+		<community>arena_enemy</community> <terrain_sect>stalker_terrain</terrain_sect>
+		<snd_config>characters_voice\human\stalker_1\</snd_config>
+		<rank>0</rank>
+		<reputation>0</reputation>
+		<visual>actors\stalker_bandit\stalker_bandit_1</visual>
+		<supplies>
+			[spawn] \n
+			wpn_beretta = 1 \n
+			wpn_sig550 \n
+			ammo_5.56x45_ss190 = 1 \n
+			ammo_9x19_fmj = 1 \n
+			
+	#include "gameplay\supplies\character_items.xml"
+	#include "gameplay\supplies\character_food.xml"
+	#include "gameplay\supplies\character_drugs.xml"
+		</supplies>
+	#include "gameplay\character_criticals.xml"
+	#include "gameplay\character_dialogs.xml"
+</specific_character>
+
+<specific_character id="bar_npc_duel_2_arena" team_default = "1">	
+	<name>GENERATE_NAME_stalker</name>
+		<icon>ui_inGame2_neutral_2</icon>
+		<map_icon x="1" y="0"></map_icon>
+		<bio>Опытный сталкер. Детальная информация отсутствует.</bio>
+		<class>bar_npc_duel_2_arena</class>
+		<community>arena_enemy</community> <terrain_sect>stalker_terrain</terrain_sect>
+		<snd_config>characters_voice\human\stalker_1\</snd_config>
+		<rank>25</rank>
+		<money min="250" max="1750" infinitive="0"/>
+		<reputation>0</reputation>
+		<visual>actors\stalker_neutral\stalker_neutral_2_mask_12</visual>
+		<supplies>
+			[spawn] \n
+			wpn_ak74u = 1 \n
+			ammo_5.45x39_fmj = 1 \n
+			wpn_pm = 1 \n
+			ammo_9x18_fmj = 1 \n
+	#include "gameplay\supplies\character_items.xml"
+	#include "gameplay\supplies\character_food.xml"
+	#include "gameplay\supplies\character_drugs.xml"
+		</supplies>
+	#include "gameplay\character_criticals.xml"
+	#include "gameplay\character_dialogs.xml"
+</specific_character>
+
+<specific_character id="bar_npc_duel_3_arena" team_default = "1">	
+	<name>GENERATE_NAME_stalker</name>
+		<icon>ui_inGame2_merc_2</icon>
+		<map_icon x="1" y="0"></map_icon>
+		<bio>Опытный сталкер. Детальная информация отсутствует.</bio>
+		<class>bar_npc_duel_3_arena</class>
+		<community>arena_enemy</community> <terrain_sect>stalker_terrain</terrain_sect>
+		<snd_config>characters_voice\human\stalker_3\</snd_config>
+		<rank>45</rank>
+		<money min="1500" max="2500" infinitive="0"/>
+		<reputation>0</reputation>
+		<visual>actors\stalker_merc\stalker_merc_2</visual>
+		<supplies>
+			[spawn] \n
+			wpn_lr300 = 1, scope \n
+			ammo_5.56x45_ss190 = 1 \n
+			wpn_colt1911 = 1 \n
+			ammo_11.43x23_fmj  = 1 \n
+	#include "gameplay\supplies\character_items_nd.xml"
+	#include "gameplay\supplies\character_food.xml"
+	#include "gameplay\supplies\character_drugs_3.xml"
+		</supplies>
+	#include "gameplay\character_criticals.xml"
+	#include "gameplay\character_dialogs.xml"
+</specific_character>
+
+<specific_character id="bar_npc_duel_4_arena" team_default = "1">	
+    <name>GENERATE_NAME_stalker</name>
+		<icon>ui_inGame2_Freedom_3</icon>
+		<map_icon x="1" y="0"></map_icon>
+		<bio>Опытный сталкер. Детальная информация отсутствует.</bio>
+		<class>bar_npc_duel_4_arena</class>
+		<community>arena_enemy</community> <terrain_sect>stalker_terrain</terrain_sect>
+		<snd_config>characters_voice\human\freedom_2\</snd_config>
+		<rank>50</rank>
+		<reputation>0</reputation>
+		<money min="2500" max="5000" infinitive="0"/>
+		<visual>actors\stalker_freedom\stalker_freedom_3</visual>
+		<supplies>
+			[spawn] \n
+			wpn_sig550 = 1 \n
+			ammo_5.56x45_ap = 1 \n
+			wpn_sig220 \n
+			ammo_11.43x23_fmj = 1 \n
+	#include "gameplay\supplies\character_items_2.xml"
+	#include "gameplay\supplies\character_food.xml"
+	#include "gameplay\supplies\character_drugs_3.xml"
+	#include "gameplay\supplies\character_drugs_sci.xml"
+		</supplies>
+	#include "gameplay\character_criticals.xml"
+	#include "gameplay\character_dialogs.xml" 	
+</specific_character>
+
+<specific_character id="bar_npc_duel_5_arena" team_default = "1">	
+    <name>GENERATE_NAME_bandit</name>
+		<icon>ui_inGame2_bandit_4</icon>
+		<map_icon x="1" y="0"></map_icon>
+		<bio>Опытный сталкер. Детальная информация отсутствует.</bio>
+		<class>bar_npc_duel_5_arena</class>
+		<community>arena_enemy</community> <terrain_sect>stalker_terrain</terrain_sect>
+		<snd_config>characters_voice\human\bandit_2\</snd_config>
+		<rank>30</rank>
+		<reputation>0</reputation>
+		<money min="250" max="1750" infinitive="0"/>
+		<visual>actors\stalker_bandit\stalker_bandit_4_exo</visual>
+		<supplies>
+			[spawn] \n
+			wpn_pkm \n
+			ammo_pkm_100  = 1 \n
+			wpn_hpsa \n
+			ammo_9x19_fmj = 1 \n
+	#include "gameplay\supplies\character_items_nd.xml"
+	#include "gameplay\supplies\character_food.xml"
+	#include "gameplay\supplies\character_drugs.xml"
+		</supplies>
+	#include "gameplay\character_criticals.xml"
+	#include "gameplay\character_dialogs.xml"	
+</specific_character>
+
+<!-------------Противники по бою Телохранитель/Напарнрик/Мститель--------------->
+<!-------------Сталкеры--------------------->	
+<specific_character id="bar_npc_stalker_1_arena" team_default = "1">	
+	<name>GENERATE_NAME_stalker</name>
+		<icon>ui_inGame2_neutral_1</icon>
+		<map_icon x="1" y="0"></map_icon>
+		<bio>Опытный сталкер. Детальная информация отсутствует.</bio>
+		<class>bar_npc_stalker_1_arena</class>
+		<community>arena_enemy</community> <terrain_sect>stalker_terrain</terrain_sect>
+		<snd_config>characters_voice\human\stalker_1\</snd_config>
+		<rank>25</rank>
+		<money min="250" max="1750" infinitive="0"/>
+		<reputation>0</reputation>
+		<visual>actors\stalker_neutral\stalker_neutral_1_mask_2</visual>
+		<supplies>
+			[spawn] \n
+			wpn_toz34  \n
+			ammo_12x70_buck  = 1 \n
+			wpn_fort = 1 \n
+			ammo_9x18_fmj = 1 \n
+	#include "gameplay\supplies\character_items.xml"
+	#include "gameplay\supplies\character_food.xml"
+	#include "gameplay\supplies\character_drugs.xml"
+		</supplies>
+	#include "gameplay\character_criticals.xml"
+	#include "gameplay\character_dialogs.xml" 	
+</specific_character>
+
+<specific_character id="bar_npc_stalker_2_arena" team_default = "1">	
+	<name>GENERATE_NAME_stalker</name>
+		<icon>ui_inGame2_neutral_2</icon>
+		<map_icon x="1" y="0"></map_icon>
+		<bio>Опытный сталкер. Детальная информация отсутствует.</bio>
+		<class>bar_npc_stalker_2_arena</class>
+		<community>arena_enemy</community> <terrain_sect>stalker_terrain</terrain_sect>
+		<snd_config>characters_voice\human\stalker_1\</snd_config>
+		<rank>25</rank>
+		<money min="250" max="1750" infinitive="0"/>
+		<reputation>0</reputation>
+		<visual>actors\stalker_neutral\stalker_neutral_2_mask_10</visual>
+		<supplies>
+			[spawn] \n
+			wpn_ak74u = 1 \n
+			ammo_5.45x39_fmj = 1 \n
+			wpn_pm = 1 \n
+			ammo_9x18_fmj = 1 \n
+	#include "gameplay\supplies\character_items.xml"
+	#include "gameplay\supplies\character_food.xml"
+	#include "gameplay\supplies\character_drugs.xml"
+		</supplies>
+	#include "gameplay\character_criticals.xml"
+	#include "gameplay\character_dialogs.xml"	
+</specific_character>
+
+<specific_character id="bar_npc_stalker_3_arena" team_default = "1">	
+	<name>GENERATE_NAME_stalker</name>
+		<icon>ui_inGame2_neutral_3</icon>
+		<map_icon x="1" y="0"></map_icon>
+		<bio>Опытный сталкер. Детальная информация отсутствует.</bio>
+		<class>bar_npc_stalker_3_arena</class>
+		<community>arena_enemy</community> <terrain_sect>stalker_terrain</terrain_sect>
+		<snd_config>characters_voice\human\stalker_3\</snd_config>
+		<rank>50</rank>
+		<money min="2500" max="5000" infinitive="0"/>
+		<reputation>0</reputation>
+		<visual>actors\stalker_neutral\stalker_neutral_3</visual>
+		<supplies>
+			[spawn] \n
+			wpn_sig550 \n
+			ammo_5.56x45_ap = 1 \n
+			wpn_desert_eagle \n
+			ammo_11.43x23_hydro = 1 \n
+			
+	#include "gameplay\supplies\character_items_2.xml"
+	#include "gameplay\supplies\character_food.xml"
+	#include "gameplay\supplies\character_drugs_3.xml"
+	#include "gameplay\supplies\character_drugs_sci.xml"
+		</supplies>
+	#include "gameplay\character_criticals.xml"
+	#include "gameplay\character_dialogs.xml"
+</specific_character>
+
+<specific_character id="bar_npc_stalker_4_arena" team_default = "1">	
+	<name>GENERATE_NAME_stalker</name>
+		<icon>ui_inGame2_neutral_4</icon>
+		<map_icon x="1" y="0"></map_icon>
+		<bio>Опытный сталкер. Детальная информация отсутствует.</bio>
+		<class>bar_npc_stalker_4_arena</class>
+		<community>arena_enemy</community> <terrain_sect>stalker_terrain</terrain_sect>
+		<snd_config>characters_voice\human\stalker_3\</snd_config>
+		<rank>60</rank>
+		<money min="5000" max="10000" infinitive="0"/>
+		<reputation>0</reputation>
+		<visual>actors\stalker_neutral\stalker_neutral_4</visual>
+		<supplies>
+			[spawn] \n
+			wpn_groza = 1 \n
+			ammo_9x39_ap = 1 \n
+			wpn_usp = 1 \n
+			ammo_11.43x23_hydro = 1 \n
+			
+	#include "gameplay\supplies\character_items_3.xml"
+	#include "gameplay\supplies\character_food.xml"
+	#include "gameplay\supplies\character_drugs_4.xml"
+	#include "gameplay\supplies\character_drugs_sci.xml"
+		</supplies>
+	#include "gameplay\character_criticals.xml"
+	#include "gameplay\character_dialogs.xml"
+</specific_character>
+
+<specific_character id="bar_npc_stalker_5_arena" team_default = "1">	
+	<name>GENERATE_NAME_stalker</name>
+		<icon>ui_inGame2_neutral_3</icon>
+		<map_icon x="1" y="0"></map_icon>
+		<bio>Опытный сталкер. Детальная информация отсутствует.</bio>
+		<class>bar_npc_stalker_5_arena</class>
+		<community>arena_enemy</community> <terrain_sect>stalker_terrain</terrain_sect>
+		<snd_config>characters_voice\human\stalker_3\</snd_config>
+		<rank>50</rank>
+		<money min="2500" max="5000" infinitive="0"/>
+		<reputation>0</reputation>
+		<visual>actors\stalker_neutral\stalker_neutral_3</visual>
+		<supplies>
+			[spawn] \n
+			wpn_protecta \n
+			ammo_12x70_buck = 1 \n
+			wpn_desert_eagle \n
+			ammo_11.43x23_hydro = 1 \n
+			
+	#include "gameplay\supplies\character_items_2.xml"
+	#include "gameplay\supplies\character_food.xml"
+	#include "gameplay\supplies\character_drugs_3.xml"
+	#include "gameplay\supplies\character_drugs_sci.xml"
+		</supplies>
+	#include "gameplay\character_criticals.xml"
+	#include "gameplay\character_dialogs.xml"	
+</specific_character>
+
+<specific_character id="bar_npc_stalker_6_arena" team_default = "1">	
+	<name>GENERATE_NAME_stalker</name>
+		<icon>ui_inGame2_neutral_4</icon>
+		<map_icon x="1" y="0"></map_icon>
+		<bio>Опытный сталкер. Детальная информация отсутствует.</bio>
+		<class>bar_npc_stalker_6_arena</class>
+		<community>arena_enemy</community> <terrain_sect>stalker_terrain</terrain_sect>
+		<snd_config>characters_voice\human\stalker_3\</snd_config>
+		<rank>60</rank>
+		<money min="5000" max="10000" infinitive="0"/>
+		<reputation>0</reputation>
+		<visual>actors\stalker_neutral\stalker_neutral_4</visual>
+		<supplies>
+			[spawn] \n
+			wpn_pkm \n
+			ammo_pkm_100  = 1 \n
+			wpn_usp = 1 \n
+			ammo_11.43x23_hydro = 1 \n
+			
+	#include "gameplay\supplies\character_items_3.xml"
+	#include "gameplay\supplies\character_food.xml"
+	#include "gameplay\supplies\character_drugs_4.xml"
+	#include "gameplay\supplies\character_drugs_sci.xml"
+		</supplies>
+	#include "gameplay\character_criticals.xml"
+	#include "gameplay\character_dialogs.xml"	
+</specific_character>
+
+
+<!-------------Бандиты--------------------->
+<specific_character id="bar_npc_bandit_1_arena" team_default = "1">	
+	<name>GENERATE_NAME_stalker</name>
+		<icon>ui_inGame2_bandit_1</icon>
+		<map_icon x="1" y="0"></map_icon>
+		<bio>Опытный сталкер. Детальная информация отсутствует.</bio>
+		<class>bar_npc_bandit_1_arena</class>
+		<community>arena_enemy</community> <terrain_sect>stalker_terrain</terrain_sect>
+		<snd_config>characters_voice\human\stalker_1\</snd_config>
+		<rank>0</rank>
+		<reputation>0</reputation>
+		<visual>actors\stalker_bandit\stalker_bandit_1</visual>
+		<supplies>
+			[spawn] \n
+			wpn_beretta = 1 \n
+			wpn_sig550 \n
+			ammo_5.56x45_ss190 = 1 \n
+			ammo_9x19_fmj = 1 \n
+			
+	#include "gameplay\supplies\character_items.xml"
+	#include "gameplay\supplies\character_food.xml"
+	#include "gameplay\supplies\character_drugs.xml"
+		</supplies>
+	#include "gameplay\character_criticals.xml"
+	#include "gameplay\character_dialogs.xml"	
+</specific_character>
+
+<specific_character id="bar_npc_bandit_2_arena" team_default = "1">	
+	<name>GENERATE_NAME_bandit</name>
+		<icon>ui_inGame2_none</icon>
+		<map_icon x="1" y="0"></map_icon>
+		<bio>Опытный сталкер. Детальная информация отсутствует.</bio>
+		<class>bar_npc_bandit_2_arena</class>
+		<community>arena_enemy</community> <terrain_sect>stalker_terrain</terrain_sect>
+		<snd_config>characters_voice\human\bandit_1\</snd_config>
+		<rank>45</rank>
+		<reputation>0</reputation>
+		<money min="3000" max="4000" infinitive="0"/>
+		<visual>actors\stalker_bandit\stalker_bandit_2_mask_1</visual>
+		<supplies>
+			[spawn] \n
+			wpn_ak74 \n
+			ammo_5.45x39_ap = 1 \n
+			wpn_colt1911 \n
+			ammo_11.43x23_fmj  = 1 \n
+			
+	#include "gameplay\supplies\character_items_nd.xml"
+	#include "gameplay\supplies\character_food.xml"
+	#include "gameplay\supplies\character_drugs_2.xml"
+		</supplies>
+	#include "gameplay\character_criticals.xml"
+	#include "gameplay\character_dialogs.xml"
+	
+</specific_character>
+
+<specific_character id="bar_npc_bandit_3_arena" team_default = "1">	
+	<name>GENERATE_NAME_bandit</name>
+		<icon>ui_inGame2_bandit_3_mask</icon>
+		<map_icon x="1" y="0"></map_icon>
+		<bio>Опытный сталкер. Детальная информация отсутствует.</bio>
+		<class>bar_npc_bandit_3_arena</class>
+		<community>arena_enemy</community> <terrain_sect>stalker_terrain</terrain_sect>
+		<snd_config>characters_voice\human\bandit_2\</snd_config>
+		<rank>45</rank>
+		<reputation>0</reputation>
+		<money min="3000" max="4000" infinitive="0"/>
+		<visual>actors\stalker_bandit\stalker_bandit_3_mask</visual>
+		<supplies>
+			[spawn] \n
+			wpn_groza \n
+			ammo_9x39_ap = 1 \n
+			wpn_beretta \n
+			ammo_9x19_pbp  = 1 \n
+			
+	#include "gameplay\supplies\character_items_nd.xml"
+	#include "gameplay\supplies\character_food.xml"
+	#include "gameplay\supplies\character_drugs_2.xml"
+		</supplies>
+	#include "gameplay\character_criticals.xml"
+	#include "gameplay\character_dialogs.xml"
+</specific_character>
+
+<specific_character id="bar_npc_bandit_4_arena" team_default = "1">	
+	<name>GENERATE_NAME_bandit</name>
+		<icon>ui_inGame2_bandit_4</icon>
+		<map_icon x="1" y="0"></map_icon>
+		<bio>Опытный сталкер. Детальная информация отсутствует.</bio>
+		<class>bar_npc_bandit_4_arena</class>
+		<community>arena_enemy</community> <terrain_sect>stalker_terrain</terrain_sect>
+		<snd_config>characters_voice\human\bandit_2\</snd_config>
+		<rank>45</rank>
+		<reputation>0</reputation>
+		<money min="3000" max="4000" infinitive="0"/>
+		<visual>actors\stalker_bandit\stalker_bandit_4</visual>
+		<supplies>
+			[spawn] \n
+			wpn_spas12 \n
+			ammo_12x76_zhekan = 1 \n
+			wpn_beretta \n
+			ammo_9x19_pbp = 1 \n
+			
+	#include "gameplay\supplies\character_items_nd.xml"
+	#include "gameplay\supplies\character_food.xml"
+	#include "gameplay\supplies\character_drugs_2.xml"
+		</supplies>
+	#include "gameplay\character_criticals.xml"
+	#include "gameplay\character_dialogs.xml"
+</specific_character>
+
+<specific_character id="bar_npc_bandit_5_arena" team_default = "1">	
+	<name>GENERATE_NAME_bandit</name>
+		<icon>ui_inGame2_bandit_4</icon>
+		<map_icon x="1" y="0"></map_icon>
+		<bio>Опытный сталкер. Детальная информация отсутствует.</bio>
+		<class>bar_npc_bandit_5_arena</class>
+		<community>arena_enemy</community> <terrain_sect>stalker_terrain</terrain_sect>
+		<snd_config>characters_voice\human\bandit_2\</snd_config>
+		<rank>45</rank>
+		<reputation>0</reputation>
+		<money min="3000" max="4000" infinitive="0"/>
+		<visual>actors\stalker_bandit\stalker_bandit_4</visual>
+		<supplies>
+			[spawn] \n
+			wpn_protecta \n
+			ammo_12x70_buck = 1 \n
+			wpn_beretta \n
+			ammo_9x19_pbp = 1 \n
+			
+	#include "gameplay\supplies\character_items_nd.xml"
+	#include "gameplay\supplies\character_food.xml"
+	#include "gameplay\supplies\character_drugs_2.xml"
+		</supplies>
+	#include "gameplay\character_criticals.xml"
+	#include "gameplay\character_dialogs.xml"	
+</specific_character>
+
+<specific_character id="bar_npc_bandit_6_arena" team_default = "1">	
+    <name>GENERATE_NAME_bandit</name>
+		<icon>ui_inGame2_bandit_4</icon>
+		<map_icon x="1" y="0"></map_icon>
+		<bio>Опытный сталкер. Детальная информация отсутствует.</bio>
+		<class>bar_npc_bandit_6_arena</class>
+		<community>arena_enemy</community> <terrain_sect>stalker_terrain</terrain_sect>
+		<snd_config>characters_voice\human\bandit_2\</snd_config>
+		<rank>30</rank>
+		<reputation>0</reputation>
+		<money min="250" max="1750" infinitive="0"/>
+		<visual>actors\stalker_bandit\stalker_bandit_4_exo</visual>
+		<supplies>
+			[spawn] \n
+			wpn_pkm \n
+			ammo_pkm_100  = 1 \n
+			wpn_hpsa \n
+			ammo_9x19_fmj = 1 \n
+	#include "gameplay\supplies\character_items_nd.xml"
+	#include "gameplay\supplies\character_food.xml"
+	#include "gameplay\supplies\character_drugs.xml"
+		</supplies>
+	#include "gameplay\character_criticals.xml"
+	#include "gameplay\character_dialogs.xml"	
+</specific_character>
+
+<!-------------Военные--------------------->
+<specific_character id="bar_npc_military_1_arena" team_default = "1">	
+	<name>GENERATE_NAME_private</name>
+		<icon>ui_inGame2_Soldier_1</icon>
+		<map_icon x="1" y="0"></map_icon>
+		<bio>Опытный сталкер. Детальная информация отсутствует.</bio>
+		<class>bar_npc_military_1_arena</class>
+		<community>arena_enemy</community> <terrain_sect>stalker_terrain</terrain_sect>
+		<snd_config>characters_voice\human\military_1\</snd_config>
+		<rank>150</rank>
+		<reputation>0</reputation>
+		<visual>actors\stalker_soldier\stalker_soldier_1</visual>
+		<supplies>
+			[spawn] \n
+			wpn_ak74u \n
+			ammo_5.45x39_fmj = 1 \n
+			wpn_pm \n
+			ammo_9x18_fmj = 1 \n
+			
+	#include "gameplay\supplies\character_items.xml"
+	#include "gameplay\supplies\character_food.xml"
+	#include "gameplay\supplies\character_drugs.xml"
+    </supplies>
+	#include "gameplay\character_criticals.xml"
+	#include "gameplay\character_dialogs.xml"
+</specific_character>
+
+<specific_character id="bar_npc_military_2_arena" team_default = "1">	
+	<name>GENERATE_NAME_private</name>
+		<icon>ui_inGame2_Soldier_2</icon>
+		<map_icon x="1" y="0"></map_icon>
+		<bio>Опытный сталкер. Детальная информация отсутствует.</bio>
+		<class>bar_npc_military_2_arena</class>
+		<community>arena_enemy</community> <terrain_sect>stalker_terrain</terrain_sect>
+		<snd_config>characters_voice\human\military_1\</snd_config>
+		<rank>30</rank>
+		<reputation>0</reputation>
+		<visual>actors\stalker_soldier\stalker_soldier_2</visual>
+		<supplies>
+			[spawn] \n
+			wpn_ak74u \n
+			ammo_5.45x39_fmj = 1 \n
+			wpn_pm \n
+			ammo_9x18_fmj = 1 \n
+			
+	#include "gameplay\supplies\character_items_nd.xml"
+	#include "gameplay\supplies\character_food.xml"
+	#include "gameplay\supplies\character_drugs.xml"
+		</supplies>
+	#include "gameplay\character_criticals.xml"
+	#include "gameplay\character_dialogs.xml"
+</specific_character>
+
+<specific_character id="bar_npc_military_3_arena" team_default = "1">	
+	<name>GENERATE_NAME_lieutenant</name>
+		<icon>ui_inGame2_Soldier_3</icon>
+		<map_icon x="1" y="0"></map_icon>
+		<bio>Опытный сталкер. Детальная информация отсутствует.</bio>
+		<class>bar_npc_military_3_arena</class>
+		<community>arena_enemy</community> <terrain_sect>stalker_terrain</terrain_sect>
+		<snd_config>characters_voice\human\military_3\</snd_config>
+		<rank>55</rank>
+		<reputation>0</reputation>
+		<visual>actors\stalker_soldier\stalker_soldier_3</visual>
+		<supplies>
+			[spawn] \n
+			wpn_abakan \n
+			ammo_5.45x39_ap = 1 \n
+			wpn_fort \n
+			ammo_9x18_fmj = 1 \n
+			
+	#include "gameplay\supplies\character_items_nd.xml"
+	#include "gameplay\supplies\character_food.xml"
+	#include "gameplay\supplies\character_drugs.xml"
+		</supplies>
+	#include "gameplay\character_criticals.xml"
+	#include "gameplay\character_dialogs.xml"	
+</specific_character>
+
+<specific_character id="bar_npc_military_4_arena" team_default = "1">	
+	<name>GENERATE_NAME_captain</name>
+		<icon>ui_inGame2_Soldier_4</icon>
+		<map_icon x="1" y="0"></map_icon>
+		<bio>Опытный сталкер. Детальная информация отсутствует.</bio>
+		<class>bar_npc_military_4_arena</class>
+		<community>arena_enemy</community> <terrain_sect>stalker_terrain</terrain_sect>
+		<snd_config>characters_voice\human\military_3\</snd_config>
+		<rank>60</rank>
+		<reputation>0</reputation>
+		<visual>actors\stalker_soldier\stalker_soldier_4_mask_1</visual>
+		<supplies>
+			[spawn] \n
+			wpn_groza \n
+			ammo_9x39_ap = 1 \n
+			wpn_fort \n
+			ammo_9x18_fmj = 1 \n
+			
+	#include "gameplay\supplies\character_items_nd.xml"
+	#include "gameplay\supplies\character_food.xml"
+	#include "gameplay\supplies\character_drugs.xml"
+		</supplies>
+	#include "gameplay\character_criticals.xml"
+	#include "gameplay\character_dialogs.xml"
+</specific_character>
+
+<specific_character id="bar_npc_military_5_arena" team_default = "1">	
+	<name>GENERATE_NAME_captain</name>
+		<icon>ui_inGame2_Soldier_4</icon>
+		<map_icon x="1" y="0"></map_icon>
+		<bio>Опытный сталкер. Детальная информация отсутствует.</bio>
+		<class>bar_npc_military_5_arena</class>
+		<community>arena_enemy</community> <terrain_sect>stalker_terrain</terrain_sect>
+		<snd_config>characters_voice\human\military_3\</snd_config>
+		<rank>60</rank>
+		<reputation>0</reputation>
+		<visual>actors\stalker_soldier\stalker_soldier_4_mask_1</visual>
+		<supplies>
+			[spawn] \n
+			wpn_vintorez \n
+			ammo_9x39_ap = 1 \n
+			wpn_fort \n
+			ammo_9x18_fmj = 1 \n
+			
+	#include "gameplay\supplies\character_items_nd.xml"
+	#include "gameplay\supplies\character_food.xml"
+	#include "gameplay\supplies\character_drugs.xml"
+		</supplies>
+	#include "gameplay\character_criticals.xml"
+	#include "gameplay\character_dialogs.xml"	
+</specific_character>
+
+<specific_character id="bar_npc_military_6_arena" team_default = "1">	
+	<name>GENERATE_NAME_captain</name>
+		<icon>ui_inGame2_Soldier_4</icon>
+		<map_icon x="1" y="0"></map_icon>
+		<bio>Опытный сталкер. Детальная информация отсутствует.</bio>
+		<class>bar_npc_military_6_arena</class>
+		<community>arena_enemy</community> <terrain_sect>stalker_terrain</terrain_sect>
+		<snd_config>characters_voice\human\military_3\</snd_config>
+		<rank>60</rank>
+		<reputation>0</reputation>
+		<visual>actors\stalker_soldier\stalker_soldier_4_mask_1</visual>
+		<supplies>
+			[spawn] \n
+			wpn_pkm \n
+			ammo_pkm_100  = 1 \n
+			wpn_fort \n
+			ammo_9x18_fmj = 1 \n
+			
+	#include "gameplay\supplies\character_items_nd.xml"
+	#include "gameplay\supplies\character_food.xml"
+	#include "gameplay\supplies\character_drugs.xml"
+		</supplies>
+	#include "gameplay\character_criticals.xml"
+	#include "gameplay\character_dialogs.xml"	
+</specific_character>
+
+<!-------------Наемники--------------------->
+<specific_character id="bar_npc_killer_1_arena" team_default = "1">	
+	<name>GENERATE_NAME_stalker</name>
+		<icon>ui_inGame2_merc_2</icon>
+		<map_icon x="1" y="0"></map_icon>
+		<bio>Опытный сталкер. Детальная информация отсутствует.</bio>
+		<class>bar_npc_killer_1_arena</class>
+		<community>arena_enemy</community> <terrain_sect>stalker_terrain</terrain_sect>
+		<snd_config>characters_voice\human\bandit_3\</snd_config>
+		<rank>35</rank>
+		<money min="250" max="1750" infinitive="0"/>
+		<reputation>0</reputation>
+		<visual>actors\stalker_merc\stalker_merc_1</visual>
+		<supplies>
+			[spawn] \n
+			wpn_mp5 \n
+			wpn_hpsa \n
+			ammo_9x19_fmj = 1 \n
+	#include "gameplay\supplies\character_items_nd.xml"
+	#include "gameplay\supplies\character_food.xml"
+	#include "gameplay\supplies\character_drugs.xml"
+		</supplies>
+	#include "gameplay\character_criticals.xml"
+	#include "gameplay\character_dialogs.xml"	
+</specific_character>
+
+<specific_character id="bar_npc_killer_2_arena" team_default = "1">	
+	<name>GENERATE_NAME_stalker</name>
+		<icon>ui_inGame2_merc_2</icon>
+		<map_icon x="1" y="0"></map_icon>
+		<bio>Опытный сталкер. Детальная информация отсутствует.</bio>
+		<class>bar_npc_killer_2_arena</class>
+		<community>arena_enemy</community> <terrain_sect>stalker_terrain</terrain_sect>
+		<snd_config>characters_voice\human\bandit_3\</snd_config>
+		<rank>40</rank>
+		<money min="500" max="1750" infinitive="0"/>
+		<reputation>0</reputation>
+		<visual>actors\stalker_merc\stalker_merc_2_mask_2</visual>
+		<supplies>
+			[spawn] \n
+			wpn_ak74 \n
+			ammo_5.45x39_fmj = 1 \n
+			wpn_hpsa \n
+			ammo_9x19_fmj = 1 \n
+			
+	#include "gameplay\supplies\character_items_nd.xml"
+	#include "gameplay\supplies\character_food.xml"
+	#include "gameplay\supplies\character_drugs_2.xml"
+		</supplies>
+	#include "gameplay\character_criticals.xml"
+	#include "gameplay\character_dialogs.xml"
+</specific_character>
+
+<specific_character id="bar_npc_killer_3_arena" team_default = "1">	
+	<name>GENERATE_NAME_stalker</name>
+		<icon>ui_inGame2_merc_2</icon>
+		<map_icon x="1" y="0"></map_icon>
+		<bio>Опытный сталкер. Детальная информация отсутствует.</bio>
+		<class>sbar_npc_killer_3_arena</class>
+		<community>arena_enemy</community> <terrain_sect>stalker_terrain</terrain_sect>
+		<snd_config>characters_voice\human\bandit_2\</snd_config>
+		<rank>55</rank>
+		<money min="2500" max="5000" infinitive="0"/>
+		<reputation>0</reputation>
+		<visual>actors\stalker_merc\stalker_merc_3</visual>
+		<supplies>
+			[spawn] \n
+			 wpn_g36 \n
+			ammo_5.56x45_ap = 1 \n
+			wpn_sig220 = 1 \n
+			ammo_11.43x23_hydro = 1 \n
+			
+	#include "gameplay\supplies\character_items_nd.xml"
+	#include "gameplay\supplies\character_food.xml"
+	#include "gameplay\supplies\character_drugs_3.xml"
+	#include "gameplay\supplies\character_drugs_sci.xml"
+	#include "gameplay\supplies\character_drugs_mil.xml"
+		</supplies>
+	#include "gameplay\character_criticals.xml"
+	#include "gameplay\character_dialogs.xml"
+</specific_character>
+
+<specific_character id="bar_npc_killer_4_arena" team_default = "1">	
+	<name>GENERATE_NAME_stalker</name>
+		<icon>ui_inGame2_merc_4</icon>
+		<map_icon x="1" y="0"></map_icon>
+		<bio>Опытный сталкер. Детальная информация отсутствует.</bio>
+		<class>bar_npc_killer_4_arena</class>
+		<community>arena_enemy</community> <terrain_sect>stalker_terrain</terrain_sect>
+		<snd_config>characters_voice\human\bandit_1\</snd_config>
+		<rank>55</rank>
+		<money min="2500" max="5000" infinitive="0"/>
+		<reputation>0</reputation>
+		<visual>actors\stalker_merc\stalker_merc_4</visual>
+		<supplies>
+			[spawn] \n
+			 wpn_g36 \n
+			ammo_5.56x45_ap = 1 \n
+			wpn_sig220 = 1 \n
+			ammo_11.43x23_hydro = 1 \n
+			
+	#include "gameplay\supplies\character_items_nd.xml"
+	#include "gameplay\supplies\character_food.xml"
+	#include "gameplay\supplies\character_drugs_3.xml"
+	#include "gameplay\supplies\character_drugs_sci.xml"
+	#include "gameplay\supplies\character_drugs_mil.xml"
+		</supplies>
+	#include "gameplay\character_criticals.xml"
+	#include "gameplay\character_dialogs.xml" 	
+</specific_character>
+
+<specific_character id="bar_npc_killer_5_arena" team_default = "1">	
+	<name>GENERATE_NAME_stalker</name>
+		<icon>ui_inGame2_merc_4</icon>
+		<map_icon x="1" y="0"></map_icon>
+		<bio>Опытный сталкер. Детальная информация отсутствует.</bio>
+		<class>bar_npc_killer_5_arena</class>
+		<community>arena_enemy</community> <terrain_sect>stalker_terrain</terrain_sect>
+		<snd_config>characters_voice\human\bandit_2\</snd_config>
+		<rank>55</rank>
+		<money min="2500" max="5000" infinitive="0"/>
+		<reputation>0</reputation>
+		<visual>actors\stalker_merc\stalker_merc_5</visual>
+		<supplies>
+			[spawn] \n
+			 wpn_protecta \n
+			ammo_12x76_zhekan = 1 \n
+			wpn_usp = 1 \n
+			ammo_11.43x23_hydro = 1 \n
+			
+	#include "gameplay\supplies\character_items_nd.xml"
+	#include "gameplay\supplies\character_food.xml"
+	#include "gameplay\supplies\character_drugs_3.xml"
+	#include "gameplay\supplies\character_drugs_sci.xml"
+	#include "gameplay\supplies\character_drugs_mil.xml"
+		</supplies>
+	#include "gameplay\character_criticals.xml"
+	#include "gameplay\character_dialogs.xml"
+</specific_character>
+
+<specific_character id="bar_npc_killer_6_arena" team_default = "1">	
+	<name>GENERATE_NAME_stalker</name>
+		<icon>ui_inGame2_merc_4</icon>
+		<map_icon x="1" y="0"></map_icon>
+		<bio>Опытный сталкер. Детальная информация отсутствует.</bio>
+		<class>bar_npc_killer_6_arena</class>
+		<community>arena_enemy</community> <terrain_sect>stalker_terrain</terrain_sect>
+		<snd_config>characters_voice\human\bandit_2\</snd_config>
+		<rank>55</rank>
+		<money min="2500" max="5000" infinitive="0"/>
+		<reputation>0</reputation>
+		<visual>actors\stalker_merc\stalker_merc_5</visual>
+		<supplies>
+			[spawn] \n
+			wpn_pkm \n
+			ammo_pkm_100  = 1 \n
+			wpn_usp = 1 \n
+			ammo_11.43x23_hydro = 1 \n
+			
+	#include "gameplay\supplies\character_items_nd.xml"
+	#include "gameplay\supplies\character_food.xml"
+	#include "gameplay\supplies\character_drugs_3.xml"
+	#include "gameplay\supplies\character_drugs_sci.xml"
+	#include "gameplay\supplies\character_drugs_mil.xml"
+		</supplies>
+	#include "gameplay\character_criticals.xml"
+	#include "gameplay\character_dialogs.xml"	
+</specific_character>
+
+<!-------------Монолит--------------------->
+<specific_character id="bar_npc_monolit_1_arena" team_default = "1">	
+	<name>GENERATE_NAME_stalker</name>
+		<icon>ui_inGame2_monolit_1</icon>
+		<map_icon x="1" y="0"></map_icon>
+		<bio>Опытный сталкер. Детальная информация отсутствует.</bio>
+		<class>bar_npc_monolit_1_arena</class>
+		<community>arena_enemy</community> <terrain_sect>stalker_terrain</terrain_sect>
+		<snd_config>characters_voice\human\military_1\</snd_config>
+		<rank>45</rank>
+		<reputation>0</reputation>
+		<visual>actors\stalker_monolith\stalker_monolith_1</visual>
+		<supplies>
+			[spawn] \n
+			wpn_ak74 \n
+			ammo_5.45x39_ap = 1 \n
+			wpn_pm \n
+			ammo_9x18_pmm = 1 \n
+			
+	#include "gameplay\supplies\character_items_monolith.xml"
+	#include "gameplay\supplies\character_food.xml"
+	#include "gameplay\supplies\character_drugs_3.xml"
+		</supplies>
+	#include "gameplay\character_criticals.xml"
+	#include "gameplay\character_dialogs.xml"
+</specific_character>
+
+<specific_character id="bar_npc_monolit_2_arena" team_default = "1">	
+	<name>GENERATE_NAME_stalker</name>
+		<icon>ui_inGame2_monolit_2</icon>
+		<map_icon x="1" y="0"></map_icon>
+		<bio>Опытный сталкер. Детальная информация отсутствует.</bio>
+		<class>bar_npc_monolit_2_arena</class>
+		<community>arena_enemy</community> <terrain_sect>stalker_terrain</terrain_sect>
+		<snd_config>characters_voice\human\military_2\</snd_config>
+		<rank>45</rank>
+		<reputation>0</reputation>
+		<visual>actors\stalker_monolith\stalker_monolith_2</visual>
+		<supplies>
+			[spawn] \n
+			 wpn_ak74 = 1 \n
+			ammo_5.45x39_fmj = 1 \n
+			wpn_beretta \n
+			ammo_9x19_fmj = 1 \n
+			
+	#include "gameplay\supplies\character_items_monolith.xml"
+	#include "gameplay\supplies\character_food.xml"
+	#include "gameplay\supplies\character_drugs_2.xml"
+		</supplies>
+	#include "gameplay\character_criticals.xml"
+	#include "gameplay\character_dialogs.xml"
+</specific_character>
+
+<specific_character id="bar_npc_monolit_3_arena" team_default = "1">	
+	<name>GENERATE_NAME_stalker</name>
+		<icon>ui_inGame2_monolit_3</icon>
+		<map_icon x="1" y="0"></map_icon>
+		<bio>Опытный сталкер. Детальная информация отсутствует.</bio>
+		<class>bar_npc_monolit_3_arena</class>
+		<community>arena_enemy</community> <terrain_sect>stalker_terrain</terrain_sect>
+		<snd_config>characters_voice\human\military_2\</snd_config>
+		<rank>55</rank>
+		<reputation>0</reputation>
+		<visual>actors\stalker_monolith\stalker_monolith_3</visual>
+		<supplies>
+			[spawn] \n
+			wpn_val = 1, scope \n
+			ammo_9x39_ap = 1 \n
+			wpn_sig220 = 1, silencer \n
+			ammo_11.43x23_hydro = 1 \n
+			
+	#include "gameplay\supplies\character_items_monolith.xml"
+	#include "gameplay\supplies\character_food.xml"
+	#include "gameplay\supplies\character_drugs_3.xml"
+	#include "gameplay\supplies\character_drugs_sci.xml"
+	#include "gameplay\supplies\character_drugs_mil.xml"
+		</supplies>
+	#include "gameplay\character_criticals.xml"
+	#include "gameplay\character_dialogs.xml"
+</specific_character>
+
+<specific_character id="bar_npc_monolit_4_arena" team_default = "1">	
+	<name>GENERATE_NAME_stalker</name>
+		<icon>ui_inGame2_monolit_4</icon>
+		<map_icon x="1" y="0"></map_icon>
+		<bio>Опытный сталкер. Детальная информация отсутствует.</bio>
+		<class>bar_npc_monolit_4_arena</class>
+		<community>arena_enemy</community> <terrain_sect>stalker_terrain</terrain_sect>
+		<snd_config>characters_voice\human\military_2\</snd_config>
+		<rank>60</rank>
+		<reputation>0</reputation>
+		<visual>actors\stalker_monolith\stalker_monolith_4</visual>
+		<supplies>
+			[spawn] \n
+			wpn_groza \n
+			ammo_9x39_ap = 1 \n
+			wpn_sig220 = 1 \n
+			ammo_11.43x23_hydro = 1 \n
+			
+	#include "gameplay\supplies\character_items_monolith.xml"
+	#include "gameplay\supplies\character_food.xml"
+	#include "gameplay\supplies\character_drugs_4.xml"
+	#include "gameplay\supplies\character_drugs_sci.xml"
+	#include "gameplay\supplies\character_drugs_mil.xml"
+		</supplies>
+	#include "gameplay\character_criticals.xml"
+	#include "gameplay\character_dialogs.xml"	
+</specific_character>
+
+<specific_character id="bar_npc_monolit_5_arena" team_default = "1">	
+	<name>GENERATE_NAME_stalker</name>
+		<icon>ui_inGame2_monolit_4</icon>
+		<map_icon x="1" y="0"></map_icon>
+		<bio>Опытный сталкер. Детальная информация отсутствует.</bio>
+		<class>bar_npc_monolit_5_arena</class>
+		<community>arena_enemy</community> <terrain_sect>stalker_terrain</terrain_sect>
+		<snd_config>characters_voice\human\military_2\</snd_config>
+		<rank>60</rank>
+		<reputation>0</reputation>
+		<visual>actors\stalker_monolith\stalker_monolith_4</visual>
+		<supplies>
+			[spawn] \n
+			wpn_protecta \n
+			ammo_12x76_zhekan = 1 \n
+			wpn_sig220 = 1 \n
+			ammo_11.43x23_hydro = 1 \n
+			
+	#include "gameplay\supplies\character_items_monolith.xml"
+	#include "gameplay\supplies\character_food.xml"
+	#include "gameplay\supplies\character_drugs_4.xml"
+	#include "gameplay\supplies\character_drugs_sci.xml"
+	#include "gameplay\supplies\character_drugs_mil.xml"
+		</supplies>
+	#include "gameplay\character_criticals.xml"
+	#include "gameplay\character_dialogs.xml"	
+</specific_character>
+
+<specific_character id="bar_npc_monolit_6_arena" team_default = "1">	
+	<name>GENERATE_NAME_stalker</name>
+		<icon>ui_inGame2_merc_4</icon>
+		<map_icon x="1" y="0"></map_icon>
+		<bio>Опытный сталкер. Детальная информация отсутствует.</bio>
+		<class>bar_npc_monolit_6_arena</class>
+		<community>arena_enemy</community> <terrain_sect>stalker_terrain</terrain_sect>
+		<snd_config>characters_voice\human\military_1\</snd_config>
+		<rank>55</rank>
+		<money min="2500" max="5000" infinitive="0"/>
+		<reputation>0</reputation>
+		<visual>actors\stalker_merc\stalker_merc_5</visual>
+		<supplies>
+			[spawn] \n
+			wpn_pkm \n
+			ammo_pkm_100  = 1 \n
+			wpn_usp = 1 \n
+			ammo_11.43x23_hydro = 1 \n
+			
+	#include "gameplay\supplies\character_items_nd.xml"
+	#include "gameplay\supplies\character_food.xml"
+	#include "gameplay\supplies\character_drugs_3.xml"
+	#include "gameplay\supplies\character_drugs_sci.xml"
+	#include "gameplay\supplies\character_drugs_mil.xml"
+		</supplies>
+	#include "gameplay\character_criticals.xml"
+	#include "gameplay\character_dialogs.xml"	
+</specific_character>
+
+<!-------------Долг--------------------->
+<specific_character id="bar_npc_dolg_1_arena" team_default = "1">	
+	<name>GENERATE_NAME_private</name>
+		<icon>ui_inGame2_Dolg_1</icon>
+		<map_icon x="1" y="0"></map_icon>
+		<bio>Опытный сталкер. Детальная информация отсутствует.</bio>
+		<class>bar_npc_dolg_1_arena</class>
+		<community>arena_enemy</community> <terrain_sect>stalker_terrain</terrain_sect>
+		<snd_config>characters_voice\human\dolg_1\</snd_config>
+		<rank>30</rank>
+		<reputation>0</reputation>
+			<money min="500" max="1500" infinitive="0"/>
+		<visual>actors\stalker_dolg\stalker_dolg_1_mask_1</visual>
+		<supplies>
+			[spawn] \n
+			 wpn_ak74u \n
+			ammo_5.45x39_fmj = 1 \n
+			wpn_fort \n
+			ammo_9x18_fmj = 1 \n
+	#include "gameplay\supplies\character_items.xml"
+	#include "gameplay\supplies\character_food.xml"
+	#include "gameplay\supplies\character_drugs.xml"
+		</supplies>
+	#include "gameplay\character_criticals.xml"
+	#include "gameplay\character_dialogs.xml"
+</specific_character>
+
+<specific_character id="bar_npc_dolg_2_arena" team_default = "1">	
+	<name>GENERATE_NAME_sergeant</name>
+		<icon>ui_inGame2_Dolg_2</icon>
+		<map_icon x="1" y="0"></map_icon>
+		<bio>Опытный сталкер. Детальная информация отсутствует.</bio>
+		<class>bar_npc_dolg_2_arena</class>
+		<community>arena_enemy</community> <terrain_sect>stalker_terrain</terrain_sect>
+		<snd_config>characters_voice\human\dolg_1\</snd_config>
+		<rank>45</rank>
+		<reputation>0</reputation>
+			<money min="1500" max="3500" infinitive="0"/>
+		<visual>actors\stalker_dolg\stalker_dolg_2</visual>
+		<supplies>
+			[spawn] \n
+			wpn_ak74 \n
+			ammo_5.45x39_fmj = 1 \n
+			wpn_walther = 1 \n
+			ammo_9x19_pbp = 1 \n
+			
+	#include "gameplay\supplies\character_items_2.xml"
+	#include "gameplay\supplies\character_food.xml"
+	#include "gameplay\supplies\character_drugs_2.xml"
+	
+		</supplies>
+	#include "gameplay\character_criticals.xml"
+	#include "gameplay\character_dialogs.xml" 	
+</specific_character>
+
+<specific_character id="bar_npc_dolg_3_arena" team_default = "1">	
+	<name>GENERATE_NAME_lieutenant</name>
+		<icon>ui_inGame2_Dolg_3</icon>
+		<map_icon x="1" y="0"></map_icon>
+		<bio>Опытный сталкер. Детальная информация отсутствует.</bio>
+		<class>bar_npc_dolg_3_arena</class>
+		<community>arena_enemy</community> <terrain_sect>stalker_terrain</terrain_sect>
+		<snd_config>characters_voice\human\dolg_2\</snd_config>
+		<rank>55</rank>
+		<reputation>0</reputation>
+			<money min="2500" max="5000" infinitive="0"/>
+		<visual>actors\stalker_dolg\stalker_dolg_3_mask_2</visual>
+		<supplies>
+			[spawn] \n
+			wpn_abakan = 1 \n
+			ammo_5.45x39_ap = 1 \n
+			wpn_sig220 = 1 \n
+			ammo_11.43x23_fmj  = 1 \n
+			
+	#include "gameplay\supplies\character_items_2.xml"
+	#include "gameplay\supplies\character_food.xml"
+	#include "gameplay\supplies\character_drugs_3.xml"
+	#include "gameplay\supplies\character_drugs_mil.xml"
+		</supplies>
+	#include "gameplay\character_criticals.xml"
+	#include "gameplay\character_dialogs.xml"
+</specific_character>
+
+<specific_character id="bar_npc_dolg_4_arena" team_default = "1">	
+	<name>GENERATE_NAME_captain</name>
+		<icon>ui_inGame2_Dolg_4</icon>
+		<map_icon x="1" y="0"></map_icon>
+		<bio>Опытный сталкер. Детальная информация отсутствует.</bio>
+		<class>bar_npc_dolg_4_arena</class>
+		<community>arena_enemy</community> <terrain_sect>stalker_terrain</terrain_sect>
+		<snd_config>characters_voice\human\dolg_2\</snd_config>
+		<rank>60</rank>
+		<reputation>0</reputation>
+		<money min="5000" max="10000" infinitive="0"/>
+		<visual>actors\stalker_dolg\stalker_dolg_4</visual>
+		<supplies>
+			[spawn] \n
+			wpn_groza = 1 \n
+			ammo_9x39_ap = 1 \n
+			wpn_sig220 = 1 \n
+			ammo_11.43x23_hydro  = 1 \n
+			
+	#include "gameplay\supplies\character_items_3.xml"
+	#include "gameplay\supplies\character_food.xml"
+	#include "gameplay\supplies\character_drugs_4.xml"
+	#include "gameplay\supplies\character_drugs_mil.xml"
+		</supplies>
+	#include "gameplay\character_criticals.xml"
+	#include "gameplay\character_dialogs.xml"
+</specific_character>
+
+<specific_character id="bar_npc_dolg_5_arena" team_default = "1">	
+	<name>GENERATE_NAME_captain</name>
+		<icon>ui_inGame2_Dolg_4</icon>
+		<map_icon x="1" y="0"></map_icon>
+		<bio>Опытный сталкер. Детальная информация отсутствует.</bio>
+		<class>bar_npc_dolg_5_arena</class>
+		<community>arena_enemy</community> <terrain_sect>stalker_terrain</terrain_sect>
+		<snd_config>characters_voice\human\dolg_1\</snd_config>
+		<rank>60</rank>
+		<reputation>0</reputation>
+		<money min="5000" max="10000" infinitive="0"/>
+		<visual>actors\stalker_dolg\stalker_dolg_4</visual>
+		<supplies>
+			[spawn] \n
+			wpn_protecta \n
+			ammo_12x76_zhekan = 1 \n
+			wpn_sig220 = 1 \n
+			ammo_11.43x23_hydro  = 1 \n
+			
+	#include "gameplay\supplies\character_items_3.xml"
+	#include "gameplay\supplies\character_food.xml"
+	#include "gameplay\supplies\character_drugs_4.xml"
+	#include "gameplay\supplies\character_drugs_mil.xml"
+		</supplies>
+	#include "gameplay\character_criticals.xml"
+	#include "gameplay\character_dialogs.xml"	
+</specific_character>
+
+<specific_character id="bar_npc_dolg_6_arena" team_default = "1">	
+	<name>GENERATE_NAME_captain</name>
+		<icon>ui_inGame2_Dolg_4</icon>
+		<map_icon x="1" y="0"></map_icon>
+		<bio>Опытный сталкер. Детальная информация отсутствует.</bio>
+		<class>bar_npc_dolg_6_arena</class>
+		<community>arena_enemy</community> <terrain_sect>stalker_terrain</terrain_sect>
+		<snd_config>characters_voice\human\dolg_3\</snd_config>
+		<rank>60</rank>
+		<reputation>0</reputation>
+		<money min="5000" max="10000" infinitive="0"/>
+		<visual>actors\stalker_dolg\stalker_dolg_4</visual>
+		<supplies>
+			[spawn] \n
+			wpn_pkm \n
+			ammo_pkm_100  = 1 \n
+			wpn_sig220 = 1 \n
+			ammo_11.43x23_hydro  = 1 \n
+			
+	#include "gameplay\supplies\character_items_3.xml"
+	#include "gameplay\supplies\character_food.xml"
+	#include "gameplay\supplies\character_drugs_4.xml"
+	#include "gameplay\supplies\character_drugs_mil.xml"
+		</supplies>
+	#include "gameplay\character_criticals.xml"
+	#include "gameplay\character_dialogs.xml"	
+</specific_character>
+	
+<!-------------Свобода--------------------->
+<specific_character id="bar_npc_freedom_1_arena" team_default = "1">	
+	<name>GENERATE_NAME_stalker</name>
+		<icon>ui_inGame2_Freedom_1</icon>
+		<map_icon x="1" y="0"></map_icon>
+		<bio>Опытный сталкер. Детальная информация отсутствует.</bio>
+		<class>bar_npc_freedom_1_arena</class>
+		<community>arena_enemy</community> <terrain_sect>stalker_terrain</terrain_sect>
+		<snd_config>characters_voice\human\freedom_3\</snd_config>
+		<rank>30</rank>
+		<reputation>0</reputation>
+		<money min="500" max="1000" infinitive="0"/>
+		<visual>actors\stalker_freedom\stalker_freedom_1_mask_1</visual>
+		<supplies>
+			[spawn] \n
+			wpn_mp5 \n
+			wpn_pm \n
+			ammo_9x19_fmj = 1 \n
+			ammo_9x18_fmj = 1 \n
+	#include "gameplay\supplies\character_items.xml"
+	#include "gameplay\supplies\character_food.xml"
+	#include "gameplay\supplies\character_drugs.xml"
+		</supplies>
+	#include "gameplay\character_criticals.xml"
+	#include "gameplay\character_dialogs.xml"
+</specific_character>
+
+<specific_character id="bar_npc_freedom_2_arena" team_default = "1">	
+	<name>GENERATE_NAME_stalker</name>
+		<icon>ui_inGame2_Freedom_2_mask</icon>
+		<map_icon x="1" y="0"></map_icon>
+		<bio>Опытный сталкер. Детальная информация отсутствует.</bio>
+		<class>bar_npc_freedom_2_arena</class>
+		<community>arena_enemy</community> <terrain_sect>stalker_terrain</terrain_sect>
+		<snd_config>characters_voice\human\stalker_1\</snd_config>
+		<rank>0</rank>
+		<reputation>0</reputation>
+		<visual>actors\stalker_freedom\stalker_freedom_2_mask</visual>
+		<supplies>
+			[spawn] \n
+			wpn_beretta = 1 \n
+			wpn_sig550 \n
+			ammo_5.56x45_ss190 = 1 \n
+			ammo_9x19_fmj = 1 \n
+			
+	#include "gameplay\supplies\character_items.xml"
+	#include "gameplay\supplies\character_food.xml"
+	#include "gameplay\supplies\character_drugs.xml"
+		</supplies>
+	#include "gameplay\character_criticals.xml"
+	#include "gameplay\character_dialogs.xml"	
+</specific_character>
+
+<specific_character id="bar_npc_freedom_3_arena" team_default = "1">	
+	<name>GENERATE_NAME_stalker</name>
+		<icon>ui_inGame2_Freedom_3</icon>
+		<map_icon x="1" y="0"></map_icon>
+		<bio>Опытный сталкер. Детальная информация отсутствует.</bio>
+		<class>bar_npc_freedom_3_arena</class>
+		<community>arena_enemy</community> <terrain_sect>stalker_terrain</terrain_sect>
+		<snd_config>characters_voice\human\freedom_2\</snd_config>
+		<rank>50</rank>
+		<reputation>0</reputation>
+		<money min="2500" max="5000" infinitive="0"/>
+		<visual>actors\stalker_freedom\stalker_freedom_3_mask_2</visual>
+		<supplies>
+			[spawn] \n
+			 wpn_sig550 = 1 \n
+			ammo_5.56x45_ap = 1 \n
+			wpn_sig220 \n
+			ammo_11.43x23_fmj = 1 \n
+			
+	#include "gameplay\supplies\character_items_2.xml"
+	#include "gameplay\supplies\character_food.xml"
+	#include "gameplay\supplies\character_drugs_3.xml"
+	#include "gameplay\supplies\character_drugs_sci.xml"
+	
+		</supplies>
+	#include "gameplay\character_criticals.xml"
+	#include "gameplay\character_dialogs.xml"
+</specific_character>
+
+<specific_character id="bar_npc_freedom_4_arena" team_default = "1">	
+	<name>GENERATE_NAME_stalker</name>
+		<icon>ui_inGame2_Freedom_4</icon>
+		<map_icon x="1" y="0"></map_icon>
+		<bio>Опытный сталкер. Детальная информация отсутствует.</bio>
+		<class>bar_npc_freedom_4_arena</class>
+		<community>arena_enemy</community> <terrain_sect>stalker_terrain</terrain_sect>
+		<snd_config>characters_voice\human\freedom_3\</snd_config>
+		<rank>60</rank>
+		<reputation>0</reputation>
+		<money min="5000" max="10000" infinitive="0"/>
+		<visual>actors\stalker_freedom\stalker_freedom_4_mask_1</visual>
+		<supplies>
+			[spawn] \n
+			wpn_sig550 \n
+			ammo_5.56x45_ap = 1 \n
+			wpn_colt1911 \n
+			ammo_11.43x23_hydro = 1 \n
+			
+	#include "gameplay\supplies\character_items_3.xml"
+	#include "gameplay\supplies\character_food.xml"
+	#include "gameplay\supplies\character_drugs_4.xml"
+	#include "gameplay\supplies\character_drugs_sci.xml"
+	
+		</supplies>
+	#include "gameplay\character_criticals.xml"
+	#include "gameplay\character_dialogs.xml" 	
+</specific_character>
+
+<specific_character id="bar_npc_freedom_5_arena" team_default = "1">	
+	<name>GENERATE_NAME_stalker</name>
+		<icon>ui_inGame2_Freedom_4</icon>
+		<map_icon x="1" y="0"></map_icon>
+		<bio>Опытный сталкер. Детальная информация отсутствует.</bio>
+		<class>bar_npc_freedom_5_arena</class>
+		<community>arena_enemy</community> <terrain_sect>stalker_terrain</terrain_sect>
+		<snd_config>characters_voice\human\freedom_1\</snd_config>
+		<rank>60</rank>
+		<reputation>0</reputation>
+		<money min="5000" max="10000" infinitive="0"/>
+		<visual>actors\stalker_freedom\stalker_freedom_4</visual>
+		<supplies>
+			[spawn] \n
+			wpn_protecta \n
+			ammo_12x76_zhekan = 1 \n
+			wpn_desert_eagle \n
+			ammo_11.43x23_hydro = 1 \n
+			
+	#include "gameplay\supplies\character_items_3.xml"
+	#include "gameplay\supplies\character_food.xml"
+	#include "gameplay\supplies\character_drugs_4.xml"
+	#include "gameplay\supplies\character_drugs_sci.xml"
+	
+		</supplies>
+	#include "gameplay\character_criticals.xml"
+	#include "gameplay\character_dialogs.xml"
+</specific_character>
+
+<specific_character id="bar_npc_freedom_6_arena" team_default = "1">	
+	<name>GENERATE_NAME_stalker</name>
+		<icon>ui_inGame2_Freedom_4</icon>
+		<map_icon x="1" y="0"></map_icon>
+		<bio>Опытный сталкер. Детальная информация отсутствует.</bio>
+		<class>sbar_npc_freedom_6_arena</class>
+		<community>arena_enemy</community> <terrain_sect>stalker_terrain</terrain_sect>
+		<snd_config>characters_voice\human\freedom_2\</snd_config>
+		<rank>60</rank>
+		<reputation>0</reputation>
+		<money min="5000" max="10000" infinitive="0"/>
+		<visual>actors\stalker_freedom\stalker_freedom_4_mask_1</visual>
+		<supplies>
+			[spawn] \n
+			wpn_pkm \n
+			ammo_pkm_100  = 1 \n
+			wpn_colt1911 \n
+			ammo_11.43x23_hydro = 1 \n
+			
+	#include "gameplay\supplies\character_items_3.xml"
+	#include "gameplay\supplies\character_food.xml"
+	#include "gameplay\supplies\character_drugs_4.xml"
+	#include "gameplay\supplies\character_drugs_sci.xml"
+	
+		</supplies>
+	#include "gameplay\character_criticals.xml"
+	#include "gameplay\character_dialogs.xml"	
+</specific_character>	
+	
+<!-------------Квесты--------------------->
+<specific_character id="bar_a2_killer_azot_1" team_default = "1">	
+	<name>GENERATE_NAME_stalker</name>
+		<icon>ui_inGame2_merc_4</icon>
+		<map_icon x="1" y="0"></map_icon>
+		<bio>Опытный сталкер. Детальная информация отсутствует.</bio>
+		<class>bar_a2_killer_azot_1</class>
+		<community>killer</community> <terrain_sect>stalker_terrain</terrain_sect>
+		<snd_config>characters_voice\human_01\killer\</snd_config>
+		<rank>55</rank>
+		<money min="2500" max="5000" infinitive="0"/>
+		<reputation>0</reputation>
+		<visual>actors\stalker_merc\stalker_merc_4</visual>
+		<supplies>
+			[spawn] \n
+			 wpn_g36 \n
+			ammo_5.56x45_ap = 1 \n
+			wpn_sig220 = 1 \n
+			ammo_11.43x23_hydro = 1 \n
+			
+	#include "gameplay\supplies\character_items_nd.xml"
+	#include "gameplay\supplies\character_food.xml"
+	#include "gameplay\supplies\character_drugs_3.xml"
+	#include "gameplay\supplies\character_drugs_sci.xml"
+	#include "gameplay\supplies\character_drugs_mil.xml"
+		</supplies>
+	#include "gameplay\character_criticals.xml"
+	#include "gameplay\character_dialogs.xml" 	
+</specific_character>
+<specific_character id="bar_a2_killer_azot_2" team_default = "1">	
+	<name>GENERATE_NAME_stalker</name>
+		<icon>ui_inGame2_merc_2</icon>
+		<map_icon x="1" y="0"></map_icon>
+		<bio>Опытный сталкер. Детальная информация отсутствует.</bio>
+		<class>bar_a2_killer_azot_2</class>
+		<community>killer</community> <terrain_sect>stalker_terrain</terrain_sect>
+		<snd_config>characters_voice\human_02\killer\</snd_config>
+		<rank>55</rank>
+		<money min="2500" max="5000" infinitive="0"/>
+		<reputation>0</reputation>
+		<visual>actors\stalker_merc\stalker_merc_2</visual>
+		<supplies>
+			[spawn] \n
+			wpn_lr300 \n
+			ammo_5.56x45_ap = 1 \n
+			wpn_sig220 = 1 \n
+			ammo_11.43x23_hydro = 1 \n
+			
+	#include "gameplay\supplies\character_items_nd.xml"
+	#include "gameplay\supplies\character_food.xml"
+	#include "gameplay\supplies\character_drugs_3.xml"
+	#include "gameplay\supplies\character_drugs_sci.xml"
+	#include "gameplay\supplies\character_drugs_mil.xml"
+		</supplies>
+	#include "gameplay\character_criticals.xml"
+	#include "gameplay\character_dialogs.xml"
+</specific_character>
+<specific_character id="bar_a2_killer_azot_3" team_default = "1">	
+	<name>GENERATE_NAME_stalker</name>
+		<icon>ui_inGame2_merc_2</icon>
+		<map_icon x="1" y="0"></map_icon>
+		<bio>Опытный сталкер. Детальная информация отсутствует.</bio>
+		<class>bar_a2_killer_azot_3</class>
+		<community>killer</community> <terrain_sect>stalker_terrain</terrain_sect>
+		<snd_config>characters_voice\human_02\killer\</snd_config>
+		<rank>55</rank>
+		<money min="2500" max="5000" infinitive="0"/>
+		<reputation>0</reputation>
+		<visual>actors\stalker_merc\stalker_merc_2</visual>
+		<supplies>
+			[spawn] \n
+			wpn_lr300 \n
+			ammo_5.56x45_ap = 1 \n
+			wpn_sig220 = 1 \n
+			ammo_11.43x23_hydro = 1 \n
+			
+	#include "gameplay\supplies\character_items_nd.xml"
+	#include "gameplay\supplies\character_food.xml"
+	#include "gameplay\supplies\character_drugs_3.xml"
+	#include "gameplay\supplies\character_drugs_sci.xml"
+	#include "gameplay\supplies\character_drugs_mil.xml"
+		</supplies>
+	#include "gameplay\character_criticals.xml"
+	#include "gameplay\character_dialogs.xml"
+</specific_character>
+<specific_character id="bar_a2_killer_azot_4" team_default = "1">	
+	<name>GENERATE_NAME_stalker</name>
+		<icon>ui_inGame2_merc_2</icon>
+		<map_icon x="1" y="0"></map_icon>
+		<bio>Опытный сталкер. Детальная информация отсутствует.</bio>
+		<class>bar_a2_killer_azot_4</class>
+		<community>killer</community> <terrain_sect>stalker_terrain</terrain_sect>
+		<snd_config>characters_voice\human_02\killer\</snd_config>
+		<rank>55</rank>
+		<money min="2500" max="5000" infinitive="0"/>
+		<reputation>0</reputation>
+		<visual>actors\stalker_merc\stalker_merc_2</visual>
+		<supplies>
+			[spawn] \n
+			wpn_lr300 \n
+			ammo_5.56x45_ap = 1 \n
+			wpn_sig220 = 1 \n
+			ammo_11.43x23_hydro = 1 \n
+			
+	#include "gameplay\supplies\character_items_nd.xml"
+	#include "gameplay\supplies\character_food.xml"
+	#include "gameplay\supplies\character_drugs_3.xml"
+	#include "gameplay\supplies\character_drugs_sci.xml"
+	#include "gameplay\supplies\character_drugs_mil.xml"
+		</supplies>
+	#include "gameplay\character_criticals.xml"
+	#include "gameplay\character_dialogs.xml"
+</specific_character>
+<specific_character id="bar_a2_killer_azot_5" team_default = "1">	
+	<name>GENERATE_NAME_stalker</name>
+		<icon>ui_inGame2_merc_2</icon>
+		<map_icon x="1" y="0"></map_icon>
+		<bio>Опытный сталкер. Детальная информация отсутствует.</bio>
+		<class>bar_a2_killer_azot_5</class>
+		<community>killer</community> <terrain_sect>stalker_terrain</terrain_sect>
+		<snd_config>characters_voice\human_02\killer\</snd_config>
+		<rank>55</rank>
+		<money min="2500" max="5000" infinitive="0"/>
+		<reputation>0</reputation>
+		<visual>actors\stalker_merc\stalker_merc_2</visual>
+		<supplies>
+			[spawn] \n
+			wpn_lr300 \n
+			ammo_5.56x45_ap = 1 \n
+			wpn_sig220 = 1 \n
+			ammo_11.43x23_hydro = 1 \n
+			
+	#include "gameplay\supplies\character_items_nd.xml"
+	#include "gameplay\supplies\character_food.xml"
+	#include "gameplay\supplies\character_drugs_3.xml"
+	#include "gameplay\supplies\character_drugs_sci.xml"
+	#include "gameplay\supplies\character_drugs_mil.xml"
+		</supplies>
+	#include "gameplay\character_criticals.xml"
+	#include "gameplay\character_dialogs.xml"
+</specific_character>
+
+<specific_character id="bar_a2_killer_azot_6" team_default = "1">	
+	<name>GENERATE_NAME_stalker</name>
+		<icon>ui_inGame2_merc_2</icon>
+		<map_icon x="1" y="0"></map_icon>
+		<bio>Опытный сталкер. Детальная информация отсутствует.</bio>
+		<class>bar_a2_killer_azot_6</class>
+		<community>killer</community> <terrain_sect>stalker_terrain</terrain_sect>
+		<snd_config>characters_voice\human_02\killer\</snd_config>
+		<rank>55</rank>
+		<money min="2500" max="5000" infinitive="0"/>
+		<reputation>0</reputation>
+		<visual>actors\stalker_merc\stalker_merc_2</visual>
+		<supplies>
+			[spawn] \n
+			wpn_lr300 \n
+			ammo_5.56x45_ap = 1 \n
+			wpn_sig220 = 1 \n
+			ammo_11.43x23_hydro = 1 \n
+			
+	#include "gameplay\supplies\character_items_nd.xml"
+	#include "gameplay\supplies\character_food.xml"
+	#include "gameplay\supplies\character_drugs_3.xml"
+	#include "gameplay\supplies\character_drugs_sci.xml"
+	#include "gameplay\supplies\character_drugs_mil.xml"
+		</supplies>
+	#include "gameplay\character_criticals.xml"
+	#include "gameplay\character_dialogs.xml"
+</specific_character>
+
+<specific_character id="bar_a2_killer_azot_7" team_default = "1">	
+	<name>GENERATE_NAME_stalker</name>
+		<icon>ui_inGame2_merc_2</icon>
+		<map_icon x="1" y="0"></map_icon>
+		<bio>Опытный сталкер. Детальная информация отсутствует.</bio>
+		<class>bar_a2_killer_azot_7</class>
+		<community>killer</community> <terrain_sect>stalker_terrain</terrain_sect>
+		<snd_config>characters_voice\human_02\killer\</snd_config>
+		<rank>55</rank>
+		<money min="2500" max="5000" infinitive="0"/>
+		<reputation>0</reputation>
+		<visual>actors\stalker_merc\stalker_merc_2</visual>
+		<supplies>
+			[spawn] \n
+			wpn_lr300 \n
+			ammo_5.56x45_ap = 1 \n
+			wpn_sig220 = 1 \n
+			ammo_11.43x23_hydro = 1 \n
+			
+	#include "gameplay\supplies\character_items_nd.xml"
+	#include "gameplay\supplies\character_food.xml"
+	#include "gameplay\supplies\character_drugs_3.xml"
+	#include "gameplay\supplies\character_drugs_sci.xml"
+	#include "gameplay\supplies\character_drugs_mil.xml"
+		</supplies>
+	#include "gameplay\character_criticals.xml"
+	#include "gameplay\character_dialogs.xml"
+</specific_character>	
+
+
+<specific_character id="bar_borland_start" team_default = "1">
+		<name>esc_borland_start_name</name>
+		<icon>ui_inGame2_borland</icon>
+		<map_icon x="1" y="0"></map_icon>
+		<bio>Опытный сталкер. Детальная информация отсутствует.</bio>
+		<class>bar_borland_start</class>
+		<community>stalker</community> <terrain_sect>stalker_terrain</terrain_sect>
+		<snd_config>characters_voice\human\stalker_2\</snd_config>
+		<rank>900</rank>
+		<money min="5000" max="12000" infinitive="0"/>
+		<reputation>0</reputation>
+		<visual>actors\stalker_exclusive\esc_borland_upd</visual>
+		<supplies>
+			[spawn] \n
+			wpn_beretta = 1 \n
+			wpn_sig550 \n
+			ammo_5.56x45_ss190 = 1 \n
+			ammo_9x19_fmj = 1 \n
+			grenade_f1 = 1 \n
+
+#include "gameplay\supplies\character_items.xml"
+#include "gameplay\supplies\character_food.xml"
+#include "gameplay\supplies\character_drugs_2.xml"
+		</supplies>
+#include "gameplay\character_criticals.xml"
+
+
+<actor_dialog>actor_break_dialog</actor_dialog>
+	</specific_character>
+	
+
+<specific_character id="bar_borland_bar" team_default = "1">
+		<name>esc_borland_start_name</name>
+		<icon>ui_inGame2_borland</icon>
+		<map_icon x="1" y="0"></map_icon>
+		<bio>Опытный сталкер. Детальная информация отсутствует.</bio>
+		<class>bar_borland_bar</class>
+		<community>stalker</community> <terrain_sect>stalker_terrain</terrain_sect>
+		<snd_config>characters_voice\human\stalker_2\</snd_config>
+		<rank>900</rank>
+		<money min="5000" max="12000" infinitive="0"/>
+		<reputation>0</reputation>
+		<visual>actors\stalker_exclusive\esc_borland_upd</visual>
+		<supplies>
+			[spawn] \n
+			wpn_beretta = 1 \n
+			wpn_sig550 \n
+			ammo_5.56x45_ss190 = 1 \n
+			ammo_9x19_fmj = 1 \n
+			grenade_f1 = 1 \n
+
+#include "gameplay\supplies\character_items.xml"
+#include "gameplay\supplies\character_food.xml"
+#include "gameplay\supplies\character_drugs_2.xml"
+		</supplies>
+#include "gameplay\character_criticals.xml"
+
+
+<start_dialog>bar_new_details_barland_dialog</start_dialog>
+<actor_dialog>actor_break_dialog</actor_dialog>
+	</specific_character>
+	
+	
+	<specific_character id="bar_npc_dolg_general_dangerous_duty" team_default = "1">
+		<name>bar_npc_dolg_general_dangerous_duty_name</name>
+		<icon>ui_inGame2_Dolg_2</icon>
+		<map_icon x="1" y="0"></map_icon>
+		<bio>Опытный сталкер. Детальная информация отсутствует.</bio>
+		<class>bar_npc_dolg_general_dangerous_duty</class>
+		<community>dolg</community> <terrain_sect>stalker_terrain</terrain_sect>
+		<snd_config>characters_voice\human\dolg_1\</snd_config>
+		<rank>45</rank>
+		<reputation>0</reputation>
+			<money min="1500" max="3500" infinitive="0"/>
+		<visual>actors\stalker_dolg\stalker_dolg_3</visual>
+		<supplies>
+			[spawn] \n
+			wpn_beretta = 1 \n
+			wpn_sig550 \n
+			ammo_5.56x45_ss190 = 1 \n
+			ammo_9x19_fmj = 1 \n
+			grenade_f1 = 1 \n
+#include "gameplay\supplies\character_items_2.xml"
+#include "gameplay\supplies\character_food.xml"
+#include "gameplay\supplies\character_drugs_2.xml"
+
+		</supplies>
+#include "gameplay\character_criticals.xml"
+<actor_dialog>bar_npc_dolg_general_dangerous_duty_dialog</actor_dialog>
+<actor_dialog>actor_break_dialog</actor_dialog>
+	</specific_character>
+	
+
+ <specific_character id="bar_npc_dolg_general_dangerous_duty_2" team_default = "1">
+		<name>bar_npc_dolg_general_dangerous_duty_name</name>
+		<icon>ui_inGame2_Dolg_2</icon>
+		<map_icon x="1" y="0"></map_icon>
+		<bio>Опытный сталкер. Детальная информация отсутствует.</bio>
+		<class>bar_npc_dolg_general_dangerous_duty_2</class>
+		<community>dolg</community> <terrain_sect>stalker_terrain</terrain_sect>
+		<snd_config>characters_voice\human\dolg_1\</snd_config>
+		<rank>45</rank>
+		<reputation>0</reputation>
+			<money min="1500" max="3500" infinitive="0"/>
+		<visual>actors\stalker_dolg\stalker_dolg_3</visual>
+		<supplies>
+			[spawn] \n
+			wpn_beretta = 1 \n
+			wpn_sig550 \n
+			ammo_5.56x45_ss190 = 1 \n
+			ammo_9x19_fmj = 1 \n
+			grenade_f1 = 1 \n
+#include "gameplay\supplies\character_items_2.xml"
+#include "gameplay\supplies\character_food.xml"
+#include "gameplay\supplies\character_drugs_2.xml"
+
+		</supplies>
+#include "gameplay\character_criticals.xml"
+
+<actor_dialog>bar_npc_dolg_general_dangerous_duty_2_dialog</actor_dialog>
+<actor_dialog>actor_break_dialog</actor_dialog>
+	</specific_character>
+	
+	
+<specific_character id="bar_npc_otshelnik" team_default = "1">
+	<name>bar_npc_otshelnik_name</name>
+		<icon>ui_inGame2_Otshelnik</icon>
+		<map_icon x="1" y="0"></map_icon>
+		<bio>Опытный сталкер. Детальная информация отсутствует.</bio>
+		<class>bar_npc_otshelnik</class>
+		<community>stalker</community> <terrain_sect>stalker_terrain</terrain_sect>
+		<snd_config>characters_voice\human\stalker_1\</snd_config>
+		<rank>0</rank>
+		<reputation>0</reputation>
+		<money min="150" max="775" infinitive="0"/>
+		<visual>actors\stalker_quest\stalker_bomzara</visual>
+		<supplies>
+			[spawn] \n
+			wpn_toz34  \n
+			ammo_12x70_buck  = 1 \n
+			wpn_fort = 1 \n
+			ammo_9x18_fmj = 1 \n
+			bar_key_door  \n
+#include "gameplay\supplies\character_items.xml"
+#include "gameplay\supplies\character_food.xml"
+#include "gameplay\supplies\character_drugs.xml"
+		</supplies>
+#include "gameplay\character_criticals.xml"
+
+<start_dialog>bar_npc_otshelnik_dialog</start_dialog>
+	</specific_character>
+	
+    <!-------------------------- Breeder ------------------------>
+<specific_character id="bar_smart_terrain_0_0_breeder" team_default="1">
+		<name>bar_smart_terrain_0_0_breeder_name</name>
+		<icon>ui_inGame2_ecolog_orange</icon>
+		<map_icon x="1" y="0">
+		</map_icon>
+		<bio>Опытный сталкер. Детальная информация отсутствует.</bio>
+		<class>bar_smart_terrain_0_0_breeder</class>
+		<community>ecolog</community>
+		<terrain_sect>stalker_terrain</terrain_sect>
+		<snd_config>characters_voice\human\ecolog_3\</snd_config>
+		<rank>700</rank>
+		<reputation>0</reputation>
+		<money min="23400" max="53900" infinitive="0" />
+		<visual>actors\stalker_ecologist\stalker_ecolog_brown</visual>
+		<supplies>
+                 [spawn] \n
+             	</supplies>
+		<start_dialog>jup_ecolog_breeder_af_work_dialog</start_dialog>		
+		<actor_dialog>actor_break_dialog</actor_dialog>
+                 #include "gameplay\character_criticals_4.xml"
+                 #include "gameplay\character_dialogs.xml"
+</specific_character>
+
+</xml>

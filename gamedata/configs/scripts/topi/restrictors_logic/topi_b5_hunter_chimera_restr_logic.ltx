@@ -1,0 +1,7 @@
+[logic] 
+active = sr_idle@first
+
+[sr_idle@first]
+on_info = {+topi_start +topi_a5_hunter_quest_chimera_death -topi_a5_hunter_quest_come_back =actor_in_zone(topi_b5_hunter_chimera_restr)} sr_idle@nil %+topi_a5_hunter_quest_come_back%
+
+[sr_idle@nil]

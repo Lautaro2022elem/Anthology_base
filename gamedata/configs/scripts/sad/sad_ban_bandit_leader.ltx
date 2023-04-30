@@ -1,0 +1,34 @@
+[logic@sad_ban_bandit_leader]
+suitable = {=check_npc_name(sad_ban_bandit_leader)} true
+prior = 200
+active = animpoint@sad_ban_bandit_leader
+level_spot = quest_npc
+can_select_weapon = false
+
+[animpoint@sad_ban_bandit_leader]
+cover_name = sad_ban_animp_leader
+avail_animations = animpoint_sit_normal
+use_camp = false
+meet = meet@sad_ban_bandit_leader
+combat_ignore_cond = {=actor_enemy =check_enemy_name(actor)} false, true
+combat_ignore_keep_when_attacked = true
+invulnerable = {!actor_enemy} true, false
+reach_distance = 10
+gather_items_enabled = false
+help_wounded_enabled = false
+corpse_detection_enabled = false
+enemy_ignore_cond = {=actor_enemy =check_enemy_name(actor)} false, true
+
+[meet@sad_ban_bandit_leader]
+close_snd_hello = gar_bandit_leader_meet
+close_snd_bye = gar_bandit_leader_meet_bye
+close_anim 		= nil
+close_victim 	= nil
+far_anim 		= nil
+far_victim 		= nil
+close_distance  = 0
+far_distance 	= 0
+close_snd_distance = 3
+use = {=actor_enemy} false, true
+meet_on_talking = false
+allow_break = false

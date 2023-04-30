@@ -1,0 +1,7 @@
+[logic]
+active = sr_idle@actor_go_to_exit
+
+[sr_idle@actor_go_to_exit]
+on_info = {+labx7_sim_4_snork_down_squad_dead +labx7_sim_6_burer_squad_dead -labx7_ghost_two_spawned -labx7_actor_hit_ghost_two} sr_idle@nil %+labx7_ghost_two_spawned =spawn_object(labx7_ghost_two:labx7_ghost_two_spawn)%
+
+[sr_idle@nil]

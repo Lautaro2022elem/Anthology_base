@@ -1,0 +1,9 @@
+[logic]
+active = ph_idle@dl_actor_can_return_item
+
+[ph_idle@dl_bandits_treasure_end]
+nonscript_usable = true
+tips = inventory_box_use
+
+[ph_idle@dl_actor_can_return_item]:ph_idle@dl_bandits_treasure_end
+on_use = ph_idle@dl_bandits_treasure_end %+dl_actor_return_treasure%

@@ -1,0 +1,13 @@
+[logic]
+active = sr_idle
+
+[sr_idle]
+on_info = nil {+pri_helicopters_start} sr_idle@sound_act1
+
+[sr_idle@sound_act1]
+on_timer = 4500| %=play_snd(characters_voice\scenario\pri\heli_phrase1)%
+on_signal = sound_end | sr_idle@sound_act2
+
+[sr_idle@sound_act2]
+on_timer = 500| sr_idle@check_3 %=play_snd(characters_voice\scenario\pri\heli_phrase2)%
+on_signal = sound_end | nil

@@ -1,0 +1,44 @@
+; -------------------------------
+[walker@def]
+gather_items_enabled = false
+help_wounded_enabled = false
+corpse_detection_enabled = false
+danger = danger
+
+; ------------------------------------------------------------------------------ 1
+[logic@killer_1]
+active = walker@1
+suitable = { =check_npc_name(sim_default_killer) } true
+prior = 120
+
+[walker@1]:walker@def
+path_walk = maxim_walk
+path_look = gvard_4_look
+
+; ------------------------------------------------------------------------------ 2
+[logic@killer_2]
+active = walker@2
+suitable = { =check_npc_name(sim_default_killer) } true
+prior = 120
+
+[walker@2]:walker@def
+path_walk = gvard_1_walk
+path_look = gvard_2_look
+
+; ------------------------------------------------------------------------------ 3
+[logic@killer_3]
+active = walker@3
+suitable = { =check_npc_name(sim_default_killer) } true
+prior = 120
+
+[walker@3]:walker@def
+path_walk = gvard_3_walk
+path_look = gvard_2_look
+
+; --------------------------------------
+[danger]
+ignore_distance = 0
+ignore_distance_grenade = 0
+ignore_distance_corpse = 0
+ignore_distance_hit = 0
+ignore_distance_sound = 0

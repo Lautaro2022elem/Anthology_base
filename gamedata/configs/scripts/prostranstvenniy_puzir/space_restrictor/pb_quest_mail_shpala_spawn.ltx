@@ -1,0 +1,10 @@
+[logic]
+active = sr_idle@spawn_mail
+
+[sr_idle@spawn_mail]
+on_info = {+pro_markus_meet_from_shell_done -pro_quest_mail_shpala_spawn_end} sr_idle@actor_about_phantom %=pro_spawn_mail_shpala +pro_quest_mail_shpala_spawn_end%
+
+[sr_idle@actor_about_phantom]
+on_timer = 3000 | sr_idle@nil %=pb_actor_replic_about_phantom%
+
+[sr_idle@nil]

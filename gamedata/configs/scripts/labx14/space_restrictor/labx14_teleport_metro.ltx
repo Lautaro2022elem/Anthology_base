@@ -1,0 +1,13 @@
+[logic]
+active = sr_idle
+
+[sr_idle]
+on_actor_inside = sr_idle@2 %=disable_ui =run_postprocess(black:3009:true) =labx14_spawn_npc_black%
+
+[sr_idle@2]
+on_game_timer = 35 | sr_idle@3 %=teleport_actor(labx14_actor_walk:labx14_actor_look)%
+
+[sr_idle@3] 
+on_info = sr_idle@nil %=stop_postprocess(3009) =enable_ui +labx14_spawn_npc_black_info%
+
+[sr_idle@nil] 

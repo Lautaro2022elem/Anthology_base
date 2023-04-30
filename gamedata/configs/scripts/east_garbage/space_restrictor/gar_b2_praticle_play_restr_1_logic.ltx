@@ -1,0 +1,15 @@
+[logic]
+active = sr_idle@wait
+
+[sr_idle@wait]
+on_info = {+spectrum_project_start +sp_a2_hero_to_garbage_come +gar_a2_borland_talking_1 =actor_in_zone(gar_b2_praticle_play_restr_1)} %=play_s3d_sound(weapons\rgd5_explode) +gar_a6_main_quest_igra_effect_4_take%
+on_info2 = {+spectrum_project_start +sp_a2_hero_to_garbage_come +gar_a6_main_quest_igra_effect_4_take -gar_a6_main_quest_igra_effect_5_take} sr_particle@idle_1 %=gar_a6_main_quest_igra_effect_5 +gar_a6_main_quest_igra_effect_5_take%
+
+[sr_particle@idle_1]
+name = explosions\explosion_dym
+path = gar_b2_particle_play_point_1
+mode = 2
+looped = true
+on_info = {+gar_a2_gg_eat_lekarstvo_items} sr_idle@nil
+
+[sr_idle@nil]

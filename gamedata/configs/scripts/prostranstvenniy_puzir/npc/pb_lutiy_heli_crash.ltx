@@ -1,0 +1,56 @@
+;pb_lutiy_cut_scene (дополнительная логика)
+;pb_lutiy_cut_scene_general (дополнительная логика)
+
+[walker@lutiy_in_podval_stay]
+path_walk = pro_lutiy_in_podval_walk
+path_look = pro_lutiy_in_podval_look
+on_info = {+pb_markus_founded_start_quest} remark@lutiy_stay_over_meet_to_markus
+combat_ignore_cond = true
+combat_ignore_keep_when_attacked = true
+invulnerable = true
+gather_items_enabled = false
+help_wounded_enabled = false
+corpse_detection_enabled = false
+meet = meet@stay_over
+
+[remark@lutiy_meet_from_heli_crash_1]
+anim = guard_na
+target = path | pro_lutiy_stay_of_base_look, 0
+on_info = {+padalshik_found_quest_give} remark@lutiy_stay_over
+combat_ignore_cond = true
+combat_ignore_keep_when_attacked = true
+invulnerable = true
+gather_items_enabled = false
+help_wounded_enabled = false
+corpse_detection_enabled = false
+meet = from_heli_crash
+
+[remark@lutiy_signal_search_end_1]
+anim = checkpda
+target = path | pro_lutiy_stay_of_base_look, 0
+combat_ignore_cond = true
+combat_ignore_keep_when_attacked = true
+invulnerable = true
+gather_items_enabled = false
+help_wounded_enabled = false
+corpse_detection_enabled = false
+meet = meet@to_markus_end
+
+[meet@start_quest_1]:meet@korpys_stalker
+close_victim = actor
+use = {!actor_enemy =dist_to_actor_le(12) -perevalochnaya_lutiy_meet_to_zombied_done} self, true
+allow_break = false
+meet_dialog = pb_quest_line_lutiy_start
+trade_enable = false
+
+[meet@to_kill_zombie_1]:meet@korpys_stalker
+close_victim = actor
+allow_break = false
+meet_dialog = pb_quest_line_lutiy_talk_to_dead_zombied
+trade_enable = false
+
+[meet@to_kill_controller_1]:meet@korpys_stalker
+close_victim = actor
+allow_break = false
+meet_dialog = pb_quest_line_lutiy_talk_to_go_sleep
+trade_enable = false

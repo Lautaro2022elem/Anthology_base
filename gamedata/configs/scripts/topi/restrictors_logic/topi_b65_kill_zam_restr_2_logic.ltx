@@ -1,0 +1,24 @@
+[logic] 
+active = sr_idle@start
+
+[sr_idle@start] 
+on_info  = {+topi_start +topi_b65_stalker_snab_talking_1 =actor_in_zone(topi_b65_kill_zam_restr_2) =actor_has_item(topi_b65_zam_bomba)} sr_idle@tutorial %=run_tutorial(topi_b65_kill_quest_1_restr_tutor)% 
+on_info2 = {+topi_start +topi_b65_fugas_set} sr_timer@first 
+
+[sr_idle@tutorial] 
+on_info   = {+topi_b65_stalker_snab_talking_1 !actor_in_zone(topi_b65_kill_zam_restr_2)} sr_idle@start %=stop_tutorial% 
+on_info2 = {+topi_b65_fugas_set} sr_timer@first %=stop_tutorial%
+on_info3 = {-topi_b65_fugas_set +topi_b65_fugas_set_close} sr_idle@start %=stop_tutorial%
+on_info4 = {!has_active_tutorial} sr_idle@start 
+
+[sr_timer@first]
+type = dec
+string = "Wait"
+start_value = 15000
+on_value = 0 | sr_idle@particle %=play_s3d_sound(new\explosions\mrk_building_big_explod_2b) +topi_b65_fugas_time_out%
+
+[sr_idle@particle]
+on_info  = {+topi_b65_fugas_time_out =actor_in_zone(topi_b65_kill_zam_restr_2)} sr_idle@nil %=kill_actor +topi_b65_fugas_effect_end%
+on_timer = 7000 | {+topi_b65_fugas_time_out} sr_idle@nil %+topi_b65_fugas_effect_end%
+
+[sr_idle@nil] 

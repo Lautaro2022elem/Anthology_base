@@ -1,0 +1,12 @@
+[logic]
+active = nil; sr_idle@10
+
+[sr_idle@10]
+on_info = {=actor_in_zone(sad_psi_cave_restrictor)} sr_idle@20 %=sad_set_new_weather(indoor)%
+
+[sr_idle@20]
+on_info = {!actor_in_zone(sad_psi_cave_restrictor)} sr_idle@10 %=sad_restore_weather%
+on_game_timer = 900 | sr_idle@30 %=sad_refresh_weather(indoor)%
+
+[sr_idle@30]
+on_info = sr_idle@20

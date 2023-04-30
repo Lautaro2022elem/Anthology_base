@@ -1,0 +1,17 @@
+[smart_terrain]
+squad_id = 14
+max_population = 3
+respawn_params = respawn@pre_zavod
+respawn_idle = 172800
+ 
+[respawn@pre_zavod]
+spawn_bandit@novice
+
+[spawn_bandit@novice]
+spawn_squads = bandit_sim_squad_novice
+spawn_num = 3
+
+
+[exclusive]
+pre_zavod_bandit_trader = predbannik\pre_zavod_smart_logic.ltx
+pre_zavod_bandit_mechanic = predbannik\pre_zavod_smart_logic.ltx

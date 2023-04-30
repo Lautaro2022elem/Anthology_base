@@ -1,0 +1,2259 @@
+<?xml version="1.0" encoding="windows-1251" standalone="yes" ?>
+<string_table>
+    <string id="digst_markus_talk_to_actor_0">
+        <text>Ну и напугал ты меня, Зверь... Я и не думал, что человек может быть столько времени в отключке. Попали мы с тобой, ой попали...</text>
+    </string>
+    <string id="digst_markus_talk_to_actor_1">
+        <text>Какого чёрта... Что произошло?</text>
+    </string>
+    <string id="digst_markus_talk_to_actor_2">
+        <text>А хрен его знает, но я точно знаю, что ничего хорошего... Это, наверное, выходки той твари. Зря я поперся проверять то место, ой зря. Только тебе написал сообщение, а сзади кто-то как даст по башке. Очнулся я уже здесь, видимо это логово этой твари. Сначала обрадовался, думал, что я уже не внутри пространственной аномалии, но открыв КПК, я понял, что не выбрался. Мы до сих пор в аномалии, просто под ней.</text>
+    </string>
+    <string id="digst_markus_talk_to_actor_3">
+        <text>Печальные известия, о какой твари ты говоришь?</text>
+    </string>
+    <string id="digst_markus_talk_to_actor_4">
+        <text>Я видел её пару раз, никому не говорил об этом. Думал, что не поверят, назовут сумасшедшим, но это не так... Внешне эта тварь похожа на кровососа, но при этом умеет говорить и носит одежду, еще в контактах я увидел профиль с именем Стронглав, но это точно не человек. И это не самое страшное, я пытался убить её, но как только открыл огонь - тварь сразу же исчезла и засмеялась. Она смеялась с меня, Зверь! Я... Я не знаю, что делать...</text>
+    </string>
+    <string id="digst_markus_talk_to_actor_5">
+        <text>Я тоже видел эту тварь, но думал, что мне показалось. Нам нужно найти выход, Маркус и мы найдем его.</text>
+    </string>
+    <string id="digst_markus_talk_to_actor_6">
+        <text>Думаешь я не пытался его найти!? Если пройти вглубь норы, можно увидеть подъем вверх, но там что-то мешает подняться. Стой, ты чувствуешь?!</text>
+    </string>
+    <string id="digst_markus_talk_to_actor_7">
+        <text>Что я должен почувствовать?</text>
+    </string>
+    <string id="digst_markus_talk_to_actor_8">
+        <text>Этот запах, воняет гарью. Именно такой запах я чувствовал раньше, при приближении к твари. Сиди тихо, кажется, хозяин этой норы вернулся.</text>
+    </string>
+    <string id="digst_markus_talk_to_actor_9">
+        <text>Этого сейчас еще не хватало.</text>
+    </string>
+    <string id="digst_markus_talk_to_actor_bad_0">
+        <text>Ты выдал нас, еще и тварей этих на нас натравил...</text>
+    </string>
+    <string id="digst_markus_talk_to_actor_bad_1">
+        <text>Я не знаю, хотел прикончить эту тварь, но... Что вообще произошло?</text>
+    </string>
+    <string id="digst_markus_talk_to_actor_bad_2">
+        <text>Откуда я знаю? Нужно сваливать отсюда, оно вернется скоро...</text>
+    </string>
+    <string id="digst_markus_talk_to_actor_bad_3">
+        <text>Согласен с тобой, здесь оставаться нельзя. Давай искать выход?</text>
+    </string>
+    <string id="digst_markus_talk_to_actor_bad_4">
+        <text>Я не в том состоянии сейчас, давай пока лучше твой тыл прикрою, а ты поищешь выход?</text>
+    </string>
+    <string id="digst_markus_talk_to_actor_bad_5">
+        <text>Ладно, это хоть какое-то подобие плана.</text>
+    </string>
+    <string id="digst_markus_talk_to_actor_bad_6">
+        <text>Тогда, ты ищи выход, как найдешь, сообщение мне скинь, ладно? Не беспокойся за меня, я выберусь. Иди!</text>
+    </string>
+    <string id="digst_markus_talk_to_actor_bad_7">
+        <text>Спасибо. Я пошел.</text>
+    </string>
+    <string id="digst_markus_talk_to_actor_good_0">
+        <text>Что это было, Зверь? Что здесь происходит вообще? Оно ушло, но думаю не на долго...</text>
+    </string>
+    <string id="digst_markus_talk_to_actor_good_1">
+        <text>Дать тебе внятный ответ не могу, я сам не понимаю, что происходит.</text>
+    </string>
+    <string id="digst_markus_talk_to_actor_good_2">
+        <text>Оно опять смеялось, возможно, оно нас увидело. Надо бежать отсюда, причем срочно.</text>
+    </string>
+    <string id="digst_markus_talk_to_actor_good_3">
+        <text>Согласен. Давай искать выход?</text>
+    </string>
+    <string id="digst_markus_talk_to_actor_good_4">
+        <text>Я не в том состоянии сейчас, давай пока лучше твой тыл прикрою, а ты поищешь выход?</text>
+    </string>
+    <string id="digst_markus_talk_to_actor_good_5">
+        <text>Ладно, это хоть какое-то подобие плана.</text>
+    </string>
+    <string id="digst_markus_talk_to_actor_good_6">
+        <text>Тогда, ты ищи выход, как найдешь, сообщение мне скинь, ладно? Не беспокойся за меня, я выберусь. Иди!</text>
+    </string>
+    <string id="digst_markus_talk_to_actor_good_7">
+        <text>Спасибо. Я пошел.</text>
+    </string>
+    <string id="pb_actor_give_dubolom_medicament_0">
+        <text>Как ты себя чувствуешь, Дуболом?</text>
+    </string>
+    <string id="pb_actor_give_dubolom_medicament_1">
+        <text>Не лучшим образом, но пока справляюсь с этим, у тебя есть какие-то новости?</text>
+    </string>
+    <string id="pb_actor_give_dubolom_medicament_10">
+        <text>Увы, но у меня только две вакцины на троих, одну я решил отдать тебе.</text>
+    </string>
+    <string id="pb_actor_give_dubolom_medicament_11">
+        <text>Нет, Зверь, я не возьму её, отдай лучше мою вакцину кому-то из ребят, им еще жить и жить, а своё уже прожил.</text>
+    </string>
+    <string id="pb_actor_give_dubolom_medicament_12">
+        <text>Я попытаюсь найти еще лекарства, думаю, что еще есть время.</text>
+    </string>
+    <string id="pb_actor_give_dubolom_medicament_13">
+        <text>Я ценю твою попытку помочь, но на всякий случай, давай попрощаемся с тобой, возможно, что это наш последний разговор.</text>
+    </string>
+    <string id="pb_actor_give_dubolom_medicament_14">
+        <text>Нет, рано прощаться, я найду лекарство.</text>
+    </string>
+    <string id="pb_actor_give_dubolom_medicament_2">
+        <text>Я нашел лекарство, правда довольно мало.</text>
+    </string>
+    <string id="pb_actor_give_dubolom_medicament_3">
+        <text>Прости, Дуболом, но найденное мной лекарство я уже отдал.</text>
+    </string>
+    <string id="pb_actor_give_dubolom_medicament_4">
+        <text>Поговорим позже.</text>
+    </string>
+    <string id="pb_actor_give_dubolom_medicament_5">
+        <text>Ничего, Зверь, я понимаю, у каждого своя судьба, если мне суждено умереть здесь, значит этому быть, не стоит винить себя.</text>
+    </string>
+    <string id="pb_actor_give_dubolom_medicament_6">
+        <text>Я попытаюсь найти еще лекарства, думаю, что еще есть время.</text>
+    </string>
+    <string id="pb_actor_give_dubolom_medicament_7">
+        <text>Я ценю твою попытку помочь, но на всякий случай, давай попрощаемся с тобой, возможно, что это наш последний разговор.</text>
+    </string>
+    <string id="pb_actor_give_dubolom_medicament_8">
+        <text>Нет, рано прощаться, я найду лекарство.</text>
+    </string>
+    <string id="pb_actor_give_dubolom_medicament_9">
+        <text>Это приятно слышать, но хватит ли его всем нам?</text>
+    </string>
+    <string id="pb_actor_give_markus_medicament_0">
+        <text>Как ты, Маркус?</text>
+    </string>
+    <string id="pb_actor_give_markus_medicament_1">
+        <text>Хотел бы я сказать, что нормально, но это не так, Зверь, я так хреново себя не чувствовал никогда, кажется конец близок. Удалось раздобыть какие-то лекарства?</text>
+    </string>
+    <string id="pb_actor_give_markus_medicament_2">
+        <text>Да, я принёс одну дозу лекарства для тебя, оно поможет смягчить симптомы.</text>
+    </string>
+    <string id="pb_actor_give_markus_medicament_3">
+        <text>Поговорим позже.</text>
+    </string>
+    <string id="pb_actor_give_markus_medicament_4">
+        <text>Хоть так, может быть повезет и я смогу излечиться от этого заразы, давай сюда своё лекарство.</text>
+    </string>
+    <string id="pb_actor_give_markus_medicament_5">
+        <text>Вот, держи свою ампулу.</text>
+    </string>
+    <string id="pb_actor_give_markus_medicament_6">
+        <text>Спасибо за попытку спасти мне жизнь, Зверь, это многого стоит.</text>
+    </string>
+    <string id="pb_actor_give_markus_medicament_7">
+        <text>Увы, но это всё, что я могу сделать.</text>
+    </string>
+    <string id="pb_actor_give_rezak_medicament_0">
+        <text>Как ты себя чувствуешь, Резак?</text>
+    </string>
+    <string id="pb_actor_give_rezak_medicament_1">
+        <text>Не особо, бывало и лучше... С чем пришел?</text>
+    </string>
+    <string id="pb_actor_give_rezak_medicament_2">
+        <text>Я принёс тебе лекарство.</text>
+    </string>
+    <string id="pb_actor_give_rezak_medicament_3">
+        <text>Ни с чем. Бывай.</text>
+    </string>
+    <string id="pb_actor_give_rezak_medicament_4">
+        <text>Это радует, много удалось найти?..</text>
+    </string>
+    <string id="pb_actor_give_rezak_medicament_5">
+        <text>Нет, поэтому даю только одну дозу, больше увы нет.</text>
+    </string>
+    <string id="pb_actor_give_rezak_medicament_6">
+        <text>Значит после принятия лекарства у меня будет два пути, либо сдохнуть, либо пополнить ряды здоровых, но в любом случае спасибо.</text>
+    </string>
+    <string id="pb_actor_give_rezak_medicament_7">
+        <text>Выздоравливай, Резак.</text>
+    </string>
+    <string id="pb_dubolom_meet_after_dialog_10">
+        <text>Ну, выбирать тебе нет из чего, поэтому давай попробуем сменить твой привычный рацион. Сходи и подстрели нескольких кабанов, а потом просто приготовь их мясо на костре и всё, хотя бы голодным бродить здесь не придётся.</text>
+    </string>
+    <string id="pb_dubolom_meet_after_dialog_11">
+        <text>Чего тебе, наёмник?</text>
+    </string>
+    <string id="pb_dubolom_meet_after_dialog_12">
+        <text>Ладно, буду думать, что так оно и есть... У тебя ко мне есть что-то еще?</text>
+    </string>
+    <string id="pb_dubolom_meet_after_dialog_13">
+        <text>У меня провизия закончилась, Лютый сказал, чтобы я с тобой на этот счёт поговорил.</text>
+    </string>
+    <string id="pb_dubolom_meet_after_dialog_14">
+        <text>Может для тебя это будет открытием, но привычной еды у нас нет, последний запас консерв и колбасы, что у нас был, от тебя как раз и достался, но этот запас уже исчерпан... Поэтому опять придется на кабанятину и собачатину переходить, этим и питались всё то время, что здесь торчим. Конечно, остается шанс отравиться в любой момент, но при правильной готовке и употреблении, этого можно избежать.</text>
+    </string>
+    <string id="pb_dubolom_meet_after_dialog_15">
+        <text>Не думал, что придется местную фауну жрать, но выхода особого нет...</text>
+    </string>
+    <string id="pb_dubolom_meet_after_dialog_16">
+        <text>А как мне понять правильно ли приготовлено мясо?</text>
+    </string>
+    <string id="pb_dubolom_meet_after_dialog_17">
+        <text>Давай так, поджарь один кусочек мяса и принеси его мне, а я скажу правильно ли оно приготовлено или нет. Только мясо пожирнее у кабанов режь, оно вкуснее.</text>
+    </string>
+    <string id="pb_dubolom_meet_after_dialog_18">
+        <text>Понял тебя, Дуболом. Я пошел.</text>
+    </string>
+    <string id="pb_dubolom_meet_after_dialog_2">
+        <text>Погоди, я тебя знаю... Ты тот самый наёмник, что мне пси-собаку на Кордоне завалить помог, не так ли?</text>
+    </string>
+    <string id="pb_dubolom_meet_after_dialog_20">
+        <text>Ну, что там, Зверь? Принёс кусок кабанятины жаренной мне?</text>
+    </string>
+    <string id="pb_dubolom_meet_after_dialog_21">
+        <text>Да, вот держи.</text>
+    </string>
+    <string id="pb_dubolom_meet_after_dialog_22">
+        <text>Пока нет.</text>
+    </string>
+    <string id="pb_dubolom_meet_after_dialog_23">
+        <text>Так, приготовил ты его правильно. Как раз то, что нужно, мясо такой прожарки можно есть, шанс отравиться минимальный.</text>
+    </string>
+    <string id="pb_dubolom_meet_after_dialog_24">
+        <text>Спасибо за ценный совет, буду знать, да и мясо здесь намного проще раздобыть, в отличии от другой еды.</text>
+    </string>
+    <string id="pb_dubolom_meet_after_dialog_25">
+        <text>Не за что, наёмник. Надеюсь, что ты запомнил как именно надо готовить мясо, это важный момент.</text>
+    </string>
+    <string id="pb_dubolom_meet_after_dialog_26">
+        <text>Запомнил, не переживай. Ладно, пойду я.</text>
+    </string>
+    <string id="pb_dubolom_meet_after_dialog_28">
+        <text>Чего тебе, наёмник?</text>
+    </string>
+    <string id="pb_dubolom_meet_after_dialog_3">
+        <text>Да, это я, а Зона тесная оказывается...</text>
+    </string>
+    <string id="pb_dubolom_meet_after_dialog_30">
+        <text>Чего тебе, наёмник?</text>
+    </string>
+    <string id="pb_dubolom_meet_after_dialog_4">
+        <text>Мда, согласен. Ох и натворили вы тогда делов... Я ничего никому о тех событиях не расскажу, можешь не волноваться.</text>
+    </string>
+    <string id="pb_dubolom_meet_after_dialog_5">
+        <text>Всё то, что там было - это моя работа и ничего более.</text>
+    </string>
+    <string id="pb_dubolom_meet_after_dialog_6">
+        <text>Буду думать, что так оно и есть... Ладно, не буду отвлекать тебя от твоих дел. Бывай!</text>
+    </string>
+    <string id="pb_dubolom_meet_after_dialog_7">
+        <text>И тебе не хворать...</text>
+    </string>
+    <string id="pb_dubolom_meet_after_dialog_9">
+        <text>Чего тебе, наёмник?</text>
+    </string>
+    <string id="pb_dubolom_night_hunting_is_time_0">
+        <text>Я готов к охоте на химеру.</text>
+    </string>
+    <string id="pb_dubolom_night_hunting_is_time_1">
+        <text>Отлично, можем идти хоть сейчас, химера должна уже быть в бункере.</text>
+    </string>
+    <string id="pb_dubolom_night_hunting_is_time_2">
+        <text>Погоди ты, я же говорил, что химера только по ночам в бункер приходит, сейчас рано ещё. Подходи в два часа ночи где-то, как раз нормальное время.</text>
+    </string>
+    <string id="pb_dubolom_night_hunting_is_time_3">
+        <text>Тогда отправляемся.</text>
+    </string>
+    <string id="pb_dubolom_night_hunting_is_time_4">
+        <text>Понял, подойду.</text>
+    </string>
+    <string id="pb_dubolom_night_hunting_start_10">
+        <text>Ладно, вопросов больше нет.</text>
+    </string>
+    <string id="pb_dubolom_night_hunting_start_11">
+        <text>Химера в бункер только по ночам приходит. Так что можно идти хоть сейчас.</text>
+    </string>
+    <string id="pb_dubolom_night_hunting_start_12">
+        <text>Ну, тогда подходи ко мне часа в два ночи - химера только по ночам в бункер приходит.</text>
+    </string>
+    <string id="pb_dubolom_night_hunting_start_13">
+        <text>Здоров, Зверь, ты по какому делу ко мне?</text>
+    </string>
+    <string id="pb_dubolom_night_hunting_start_14">
+        <text>Ну, тогда отправляемся прямо сейчас.</text>
+    </string>
+    <string id="pb_dubolom_night_hunting_start_15">
+        <text>Понял, ночью поговорим еще с тобой.</text>
+    </string>
+    <string id="pb_dubolom_night_hunting_start_17">
+        <text>Всё, теперь, в случае чего, не нужно боятся, что химера неожиданно забредет к нам на базу. Спасибо, что подсобил.</text>
+    </string>
+    <string id="pb_dubolom_night_hunting_start_18">
+        <text>Да ладно тебе, для всех старались ведь, да и я спокойнее спать буду.</text>
+    </string>
+    <string id="pb_dubolom_night_hunting_start_19">
+        <text>Это да, думаю, ты уже успел заметить, что с едой у нас в последнее время напряг. Я уже примерно неделю испытываю один метод добывания пищи, остальным пока не говорил о нем. Да и побрезгуют они, наверное, это хавать...</text>
+    </string>
+    <string id="pb_dubolom_night_hunting_start_2">
+        <text>Здоров, Зверь, я слышал, что ты Падальщика нашел... Не ожидал я, что он на деле такой сволочью окажется, ну ладно, у меня к тебе есть очень серьезный разговор.</text>
+    </string>
+    <string id="pb_dubolom_night_hunting_start_20">
+        <text>Так, давай ближе к делу, о каком методе ты говоришь?</text>
+    </string>
+    <string id="pb_dubolom_night_hunting_start_21">
+        <text>Короче, пока остальные запас консервов доедают, я местным мясом питаться начал. Конечно, остается шанс отравиться в любой момент, но при правильной готовке и употреблении, этого можно избежать.</text>
+    </string>
+    <string id="pb_dubolom_night_hunting_start_22">
+        <text>Ничего в этом отвратительного не вижу, да, мутировавший кабан - это тебе не фаршированный кролик, но есть его мясо можно, мне уже приходилось его попробовать.</text>
+    </string>
+    <string id="pb_dubolom_night_hunting_start_23">
+        <text>Я знал, что ты меня поймешь, Зверь, но не обязательно есть только мясо кабана. Мне, к примеру, мясо слепых псов нравится, отличается оно по вкусу, да и не такое жесткое как у кабана. Слушай, а может сейчас, и попробуем сменить тебе рацион? Сходи и подстрели нескольких кабанов, а потом просто приготовишь его на костре и все, хотя бы голодным бродить здесь не придется.</text>
+    </string>
+    <string id="pb_dubolom_night_hunting_start_24">
+        <text>Ладно, пожалуй, подкрепится сейчас не помешает.</text>
+    </string>
+    <string id="pb_dubolom_night_hunting_start_25">
+        <text>Слушай, а можешь и мне кусочек жаренного мяса принести? А то что-то проголодался я, после охоты. Только мясо пожирнее у кабанов режь, оно вкуснее.</text>
+    </string>
+    <string id="pb_dubolom_night_hunting_start_26">
+        <text>Понял тебя, Дуболом. Я пошел.</text>
+    </string>
+    <string id="pb_dubolom_night_hunting_start_28">
+        <text>Ну, что там, Зверь? Принес мне мясца жареного?</text>
+    </string>
+    <string id="pb_dubolom_night_hunting_start_29">
+        <text>Да, вот держи.</text>
+    </string>
+    <string id="pb_dubolom_night_hunting_start_3">
+        <text>Давай выкладывай, внимательно тебя слушаю.</text>
+    </string>
+    <string id="pb_dubolom_night_hunting_start_30">
+        <text>Пока нет.</text>
+    </string>
+    <string id="pb_dubolom_night_hunting_start_31">
+        <text>Хорошо. О, и приготовил ты его правильно. Как раз то, что нужно. Благодарю!</text>
+    </string>
+    <string id="pb_dubolom_night_hunting_start_32">
+        <text>Спасибо за ценный совет, мясо здесь намного проще раздобыть, в отличие от другой еды.</text>
+    </string>
+    <string id="pb_dubolom_night_hunting_start_33">
+        <text>Кстати, пока я не забыл, Маркус просил передать , чтобы ты подошел к нему, как у тебя появится свободная минутка, конечно.</text>
+    </string>
+    <string id="pb_dubolom_night_hunting_start_34">
+        <text>Ладно, пойду с ним поговорю. Бывай.</text>
+    </string>
+    <string id="pb_dubolom_night_hunting_start_36">
+        <text>Здоров, Зверь. Ты по какому делу ко мне?</text>
+    </string>
+    <string id="pb_dubolom_night_hunting_start_37">
+        <text>Кстати, пока я не забыл, Маркус просил передать , чтобы ты подошел к нему, как у тебя появится свободная минутка, конечно.</text>
+    </string>
+    <string id="pb_dubolom_night_hunting_start_38">
+        <text>Ладно, пойду с ним поговорю. Бывай.</text>
+    </string>
+    <string id="pb_dubolom_night_hunting_start_4">
+        <text>Дело довольно серьезное, пару дней назад я видел недалеко от базы химеру, так как я был один, да и патронов у меня почти не было, то я не стал по ней стрелять, хорошо еще, что она меня не заметила. Тварь опасна, и выследить её сложно. Да и представь только, что будет, если она ночью в наш лагерь забредет.</text>
+    </string>
+    <string id="pb_dubolom_night_hunting_start_5">
+        <text>И что ты предлагаешь?</text>
+    </string>
+    <string id="pb_dubolom_night_hunting_start_6">
+        <text>Короче, нужно её убить. Сделать это безопаснее всего ночью, когда тварь приходит на ночлег в северный бункер. Вдвоем со спящей тварью мы быстро справимся, она и понять ничего не успеет. Ну, как тебе такой план, есть вопросы?</text>
+    </string>
+    <string id="pb_dubolom_night_hunting_start_7">
+        <text>А почему мы пойдем туда только вдвоем? Не безопаснее, может еще кого-то с собой взять?</text>
+    </string>
+    <string id="pb_dubolom_night_hunting_start_8">
+        <text>Достаточное количество патронов только у нас двоих, у остальных запас патронов кот наплакал. Да не боись, я до этого уже имел дело с этими тварями, вдвоем справимся.</text>
+    </string>
+    <string id="pb_duty_bunchuk_give_weapon_0">
+        <text>На счет ствола твоего.</text>
+    </string>
+    <string id="pb_duty_bunchuk_give_weapon_1">
+        <text>Что там, уже забрал его или нет?</text>
+    </string>
+    <string id="pb_duty_bunchuk_give_weapon_2">
+        <text>Да, забрал уже твой ствол, возле него кстати и кровососа, что тебя напугал встретил.</text>
+    </string>
+    <string id="pb_duty_bunchuk_give_weapon_3">
+        <text>Пока нет.</text>
+    </string>
+    <string id="pb_duty_bunchuk_give_weapon_4">
+        <text>Не напугал он меня, просто ситуация так сложилась, единственным вариантом было - убежать от него.</text>
+    </string>
+    <string id="pb_duty_bunchuk_give_weapon_5">
+        <text>Не оправдывайся, мне все-равно, испугался ты его или нет. Вот, держи свой ствол.</text>
+    </string>
+    <string id="pb_duty_bunchuk_give_weapon_6">
+        <text>Благодарю, теперь и в рейд с ребятами смогу сходить, да и спокойнее с стволом на плече будет, а то тут кое-кто слишком психованный стал. Вот держи от меня небольшой презент за помощь, деньги всё равно больше мне не нужны, может хоть тебе пригодятся.</text>
+    </string>
+    <string id="pb_duty_bunchuk_give_weapon_7">
+        <text>Спасибо. Пойду я.</text>
+    </string>
+    <string id="pb_duty_bunchuk_quest_weapon_0">
+        <text>Ну что, боец, рассказывай. Где потерял оружие? Приблизительное место указать можешь?</text>
+    </string>
+    <string id="pb_duty_bunchuk_quest_weapon_1">
+        <text>Я тебе могу точное место указать. Я знаю, где ствол лежит.</text>
+    </string>
+    <string id="pb_duty_bunchuk_quest_weapon_2">
+        <text>Ну, так в чем проблема? Чего вы мне тогда голову морочите? Сами бы уже давно сходили, да забрали.</text>
+    </string>
+    <string id="pb_duty_bunchuk_quest_weapon_3">
+        <text>Понимаешь, тут такое дело… В общем, я его не потерял, а специально бросил. Во время вылазки, на меня напал кровосос, выхода не было, пришлось отстреливаться от него. Но автомат дал осечку и заклинил, времени перезаряжать не было, поэтому я бросил автомат, пальнул пару раз в рожу этому гаду из пистолета и кинулся наутёк. Не могу я генералу сказать, что я от мутанта убежал. И безоружный за автоматом сходить не могу. Помоги сталкер, верни автомат. Я тебе по гроб жизни благодарен буду.</text>
+    </string>
+    <string id="pb_duty_bunchuk_quest_weapon_4">
+        <text>Да что же ты будешь делать. Ладно, схожу за твоим стволом.</text>
+    </string>
+    <string id="pb_duty_bunchuk_start_dialog_0">
+        <text>Стой там где стоишь! Кто такой? Чего сюда полез?</text>
+    </string>
+    <string id="pb_duty_bunchuk_start_dialog_1">
+        <text>Успокойся, лейтенант. Наёмник я, сюда пришел трансформатор перезапустить.</text>
+    </string>
+    <string id="pb_duty_bunchuk_start_dialog_2">
+        <text>Ну, допустим я тебя поверил... А решетку ты как открыл?</text>
+    </string>
+    <string id="pb_duty_bunchuk_start_dialog_3">
+        <text>Мне человек один помог её открыть. А вы давно здесь?</text>
+    </string>
+    <string id="pb_duty_bunchuk_start_dialog_4">
+        <text>Ага, вот так я взял и рассказал. Поди, вон у генерала спроси, может и расскажет...</text>
+    </string>
+    <string id="pb_duty_bunchuk_start_dialog_5">
+        <text>Ладно, поговорю с вашим генералом.</text>
+    </string>
+    <string id="pb_duty_tachenko_final_dialog_0">
+        <text>Эй, наёмник. Дай... Дай воды. Не могу больше, дай воды попить. Водички, дай.</text>
+    </string>
+    <string id="pb_duty_tachenko_final_dialog_1">
+        <text>Что за хрень? Я не могу. Я не могу подойти к тебе, меня отбрасывает назад. Что тут произошло?</text>
+    </string>
+    <string id="pb_duty_tachenko_final_dialog_2">
+        <text>Аномалия, судя по всему, только поменьше. Я не могу выбраться отсюда, запасы еды и воды уже вышли. А ребята… Один пропал, надеюсь он таки смог выбраться из этой чертовой ловушки, а остальные… Это полковник, похоже сошел с ума. Ребят пострелял и себе пулю в лоб. Вот я и остался один...</text>
+    </string>
+    <string id="pb_duty_tachenko_final_dialog_3">
+        <text>Погоди, я был у вас недавно и все было нормально. Ты мне только что сообщение сбросил. Как всё это могло так быстро произойти?</text>
+    </string>
+    <string id="pb_duty_tachenko_final_dialog_4">
+        <text>Недавно?.. Почти неделя прошла с того момента, как я отправил сообщение. Я и потом с кем-нибудь связаться пытался, но не мог, КПК отказывался отправлять сообщения.</text>
+    </string>
+    <string id="pb_duty_tachenko_final_dialog_5">
+        <text>Почти неделя?! Да какого хрена в этой чёртовой Зоне происходит? Как такое возможно? Что здесь творится вообще?</text>
+    </string>
+    <string id="pb_duty_tachenko_final_dialog_6">
+        <text>Сейчас это уже интересует меня меньше всего... Уходи отсюда, наёмник, дай побыть одному.</text>
+    </string>
+    <string id="pb_duty_tachenko_final_dialog_7">
+        <text>Прощай, генерал.</text>
+    </string>
+    <string id="pb_duty_tachenko_start_dialog_11">
+        <text>Здравия желаю, сталкер. У тебя еды случайно нету? А? Надоело уже местную радиоактивную свинину жрать, пищи человеческой хочется.</text>
+    </string>
+    <string id="pb_duty_tachenko_start_dialog_12">
+        <text>Нет, генерал, сам голодный как собака хожу.</text>
+    </string>
+    <string id="pb_duty_tachenko_start_dialog_13">
+        <text>Ага, я и не рассчитывал, что ты безвозмездно поделишься, поэтому я тебе обмен предлагаю. Мы когда в рейде были, артефактов пару нашли, и хотели их ученым сдать. Готов их все обменять на еду, примем от тебя любую еду: консервы, колбасу или хлеб, не столь важно, но нужно нам не менее восьми единиц продовольствия, думаю, на первое время хватит. Ну что по рукам?</text>
+    </string>
+    <string id="pb_duty_tachenko_start_dialog_14">
+        <text>Ладно, генерал, постараюсь найти для вас еды. Скоро вернусь.</text>
+    </string>
+    <string id="pb_duty_tachenko_start_dialog_15">
+        <text>Нет, ничем помочь не могу.</text>
+    </string>
+    <string id="pb_duty_tachenko_start_dialog_17">
+        <text>Ну, Зверь, с едой помочь не передумал еще?</text>
+    </string>
+    <string id="pb_duty_tachenko_start_dialog_19">
+        <text>Ну, как там, раздобыл уже еды?</text>
+    </string>
+    <string id="pb_duty_tachenko_start_dialog_2">
+        <text>Эй, сталкер. Что за чертовщина тут происходит? Где мы находимся?</text>
+    </string>
+    <string id="pb_duty_tachenko_start_dialog_20">
+        <text>Вот, генерал, принимай. Пришлось поднапрячься, что бы её добыть.</text>
+    </string>
+    <string id="pb_duty_tachenko_start_dialog_21">
+        <text>Ага, конечно. Ладно, свою часть уговора ты выполнил, молодец. Вот держи артефакты. Если выберешься из этой чертовой аномалии, сможешь продать за кругленькую сумму.</text>
+    </string>
+    <string id="pb_duty_tachenko_start_dialog_22">
+        <text>Пока нет.</text>
+    </string>
+    <string id="pb_duty_tachenko_start_dialog_23">
+        <text>Отлично. Ага, как же, что-то уже вообще мало вериться, что из этой аномалии есть выход. Ладно, бывай генерал.</text>
+    </string>
+    <string id="pb_duty_tachenko_start_dialog_24">
+        <text>Постой, сталкер. Есть еще дело к тебе. Во время вылазки из бункера Бунчук автомат свой потерял, помоги его найти, за мной не заржавеет. Сам понимаешь, бойцу без оружия туго придется.</text>
+    </string>
+    <string id="pb_duty_tachenko_start_dialog_25">
+        <text>Помогу. Примерное место поисков указать можешь?</text>
+    </string>
+    <string id="pb_duty_tachenko_start_dialog_26">
+        <text>А ты у него самого и спроси, он тебе все расскажет.</text>
+    </string>
+    <string id="pb_duty_tachenko_start_dialog_27">
+        <text>Ладно, схожу, поговорю с ним.</text>
+    </string>
+    <string id="pb_duty_tachenko_start_dialog_29">
+        <text>Здравия желаю, наёмник.</text>
+    </string>
+    <string id="pb_duty_tachenko_start_dialog_3">
+        <text>Хотел бы я сам знать, что это за место. Судя по всему, аномалия какая-то. Вы помните, как тут оказались?</text>
+    </string>
+    <string id="pb_duty_tachenko_start_dialog_4">
+        <text>Что еще за аномалия?</text>
+    </string>
+    <string id="pb_duty_tachenko_start_dialog_5">
+        <text>Пространственная. Вы здесь не одни, недалеко отсюда есть группа сталкеров, они уже давно внутри аномалии, более двух месяцев. Ну, так ты помнишь, как вы оказались здесь?</text>
+    </string>
+    <string id="pb_duty_tachenko_start_dialog_6">
+        <text>Твою мать, только еще этих «подарков» Зоны нам не хватало. Помню только, что шли мы по Агропрому и яркая вспышка, и вот мы здесь все в себя и пришли.</text>
+    </string>
+    <string id="pb_duty_tachenko_start_dialog_7">
+        <text>Ладно, мне еще электричество подать нужно, поговорим позже.</text>
+    </string>
+    <string id="pb_duty_tachenko_start_dialog_9">
+        <text>Здравия желаю, наёмник.</text>
+    </string>
+    <string id="pb_killer_leader_group_agres_0">
+        <text>Теперь ты убедился, что я не шучу... Спрашиваю еще раз, где хренов "Компас"?</text>
+    </string>
+    <string id="pb_killer_leader_group_agres_1">
+        <text>Твою мать! Ты псих, ты ведь меня знаешь, неужели ты не можешь понять, что я не вру?</text>
+    </string>
+    <string id="pb_killer_leader_group_agres_2">
+        <text>Времена меняются, люди тоже... Ты ведь свою свиту променял на кучку вонючих сталкеров в Пузыре, значит, от тебя можно ожидать чего угодно. Надоел ты мне, Мракобес выведет тебя погулять на свежий воздух. Спокойной ночи!</text>
+    </string>
+    <string id="pb_killer_leader_group_agres_3">
+        <text>Погоди, я еще не закончил, давай договорим...</text>
+    </string>
+    <string id="pb_killer_leader_group_meet_0">
+        <text>Проснись и пой! С возвращением в наш мир, слизняк.</text>
+    </string>
+    <string id="pb_killer_leader_group_meet_1">
+        <text>Какого черта происходит? Что вы здесь делаете?</text>
+    </string>
+    <string id="pb_killer_leader_group_meet_10">
+        <text>Неправильный ответ, даю тебе еще один шанс.</text>
+    </string>
+    <string id="pb_killer_leader_group_meet_11">
+        <text>Я говорю правду, артефакта у нас нет.</text>
+    </string>
+    <string id="pb_killer_leader_group_meet_2">
+        <text>На вас пришли посмотреть, да и Шакал соскучился, постоянно спрашивает о тебе, а ты вот он где.</text>
+    </string>
+    <string id="pb_killer_leader_group_meet_3">
+        <text>Ты понимаешь, что за место, как вы выбираться собираетесь?</text>
+    </string>
+    <string id="pb_killer_leader_group_meet_4">
+        <text>А зачем нам уходить? Мы ведь только пришли, вдруг нам здесь понравится. А если все же захотим уйти, то на такой случай у нас один интереснейший сканер имеется. Кстати, эту штучку я пожалуй у тебя заберу, от греха подальше.</text>
+    </string>
+    <string id="pb_killer_leader_group_meet_5">
+        <text>Какого хрена вы приперлись сюда, неужели меня спасать?</text>
+    </string>
+    <string id="pb_killer_leader_group_meet_6">
+        <text>Ты слишком высокого мнения о себе, Зверь. Сам подумай, зачем нам тебя спасать? Дела у нас тут и связанны они напрямую с вами. Ты и твои дружки отдаете нам "Компас" и мы уходим.</text>
+    </string>
+    <string id="pb_killer_leader_group_meet_7">
+        <text>О чем ты говоришь?</text>
+    </string>
+    <string id="pb_killer_leader_group_meet_8">
+        <text>"Компас" - это артефакт, только не делай вид, что ты не знаешь, о чем я говорю. Вы должны были уже давно найти его. Значит так, отдаёте артефакт, и мы уходим, а вы останетесь все живы и здоровы.</text>
+    </string>
+    <string id="pb_killer_leader_group_meet_9">
+        <text>У нас нет этого артефакта, а если бы и был, то ты точно его не получил бы.</text>
+    </string>
+    <string id="pb_kuvalda_dialog_from_work_0">
+        <text>Нужна какая-нибудь помощь?</text>
+    </string>
+    <string id="pb_kuvalda_dialog_from_work_1">
+        <text>Хорошо, что ты спросил, наёмник. В генераторе топливо заканчивается, а канистры уже все пустые, если не найдем топливо для него, то останемся без света, а это не шуточная проблема, ведь ночью мы врядли без света сможем разглядеть любого, кто захочет наведаться к нам в гости, будь то мутант или же враждебно настроенный сталкер. Попробуй отыскать топливо, а я за это тебе два бинта и аптечку дам, увы это всё, что могу предложить.</text>
+    </string>
+    <string id="pb_kuvalda_dialog_from_work_2">
+        <text>Ладно, я попытаюсь найти топливо.</text>
+    </string>
+    <string id="pb_kuvalda_dialog_from_work_3">
+        <text>Извини, я сейчас занят.</text>
+    </string>
+    <string id="pb_kuvalda_dialog_from_work_4">
+        <text>Мне нужно топливо для генератора, если его не добыть, то без света останемся, а это не шуточная проблема, ведь ночью мы вряд ли без света сможем разглядеть любого, кто захочет наведаться к нам в гости, будь то мутант или же враждебно настроенный сталкер. Попробуй отыскать топливо, а я за это тебе два бинта и аптечку дам, увы это всё, что могу предложить.</text>
+    </string>
+    <string id="pb_kuvalda_dialog_from_work_5">
+        <text>Хорошо, я попробую найти топливо для генератора.</text>
+    </string>
+    <string id="pb_kuvalda_dialog_from_work_6">
+        <text>Извини, я всё еще занят.</text>
+    </string>
+    <string id="pb_kuvalda_dialog_from_work_7">
+        <text>В данный момент твоя помощь не требуется, но спасибо, что спросил.</text>
+    </string>
+    <string id="pb_kuvalda_dialog_start_10">
+        <text>Ну, если ты с долговцем под одной крышей смог ужиться, то с наёмником и подавно сможешь...</text>
+    </string>
+    <string id="pb_kuvalda_dialog_start_11">
+        <text>Змей хороший парень, мы смогли найти общий язык, да и это место помогло нам сплотится, всё же надо думать как вырваться из этой ловушки, а не руководствоваться тем, что наши группировки враждуют.</text>
+    </string>
+    <string id="pb_kuvalda_dialog_start_13">
+        <text>Да, наёмник, слушаю тебя...</text>
+    </string>
+    <string id="pb_kuvalda_dialog_start_15">
+        <text>Как успехи, наёмник, удалось разыскать топливо для генератора?</text>
+    </string>
+    <string id="pb_kuvalda_dialog_start_16">
+        <text>Да, мне всё же удалось найти канистру с топливом здесь.</text>
+    </string>
+    <string id="pb_kuvalda_dialog_start_17">
+        <text>Пока не удалось...</text>
+    </string>
+    <string id="pb_kuvalda_dialog_start_18">
+        <text>Это не может не радовать, так хоть без света не останемся. Давай её сюда, заправлю генератор.</text>
+    </string>
+    <string id="pb_kuvalda_dialog_start_19">
+        <text>Вот, держи канистру.</text>
+    </string>
+    <string id="pb_kuvalda_dialog_start_2">
+        <text>Наёмник, поговорим позже, сначала нужно уничтожить зомбированных.</text>
+    </string>
+    <string id="pb_kuvalda_dialog_start_20">
+        <text>Спасибо, наёмник, ты помог нам всем. Ладно, как и обещал, держи два бинта и аптечку, тебе они больше пригодятся.</text>
+    </string>
+    <string id="pb_kuvalda_dialog_start_21">
+        <text>Не стоит благодарить за это, мы все делаем общее дело. Бывай.</text>
+    </string>
+    <string id="pb_kuvalda_dialog_start_23">
+        <text>Да, наёмник, слушаю тебя...</text>
+    </string>
+    <string id="pb_kuvalda_dialog_start_24">
+        <text>Ладно, бывай.</text>
+    </string>
+    <string id="pb_kuvalda_dialog_start_3">
+        <text>Знаю, побегу тогда.</text>
+    </string>
+    <string id="pb_kuvalda_dialog_start_5">
+        <text>Шел бы ты спать, наёмник... У меня нет желания говорить с тобой сейчас.</text>
+    </string>
+    <string id="pb_kuvalda_dialog_start_7">
+        <text>Здравствуй, наёмник. Давай знакомиться что ли... Меня тут все Кувалдой называют, в прошлом свободовцем был, сейчас уже нет, заставило меня это место свои взгляды на жизнь пересмотреть.</text>
+    </string>
+    <string id="pb_kuvalda_dialog_start_8">
+        <text>Ну, мою кличку ты уже знать должен, Зверь я.</text>
+    </string>
+    <string id="pb_kuvalda_dialog_start_9">
+        <text>Не буду лукавить и говорить, что это приятное знакомство, в свое время ваши ребята частенько мне дорогу переходили. Увидел бы я тебя несколькими месяцами ранее, разговор у нас не сложился бы, но как я сказал до этого, мне пришлось пересмотреть свои взгляды на жизнь.</text>
+    </string>
+    <string id="pb_lesnik_end_line_meet_0">
+        <text>Наёмник, ты, где был-то? Я уже устал тебя ждать здесь один...</text>
+    </string>
+    <string id="pb_lesnik_end_line_meet_1">
+        <text>А где все остальные?</text>
+    </string>
+    <string id="pb_lesnik_end_line_meet_2">
+        <text>Вышли из аномалии уже, а я вот тебя стою жду. Ты что-то о долговцах здешних говорил, они выходить из аномалии собираются?</text>
+    </string>
+    <string id="pb_lesnik_end_line_meet_3">
+        <text>Долговцы мертвы... Куда нас выведет этот выход из аномалии?</text>
+    </string>
+    <string id="pb_lesnik_end_line_meet_4">
+        <text>Ну, пусть земля им будет пухом... Куда нас выведет аномалия, я и сам не знаю. Ладно, ты как вообще готов к перемещению?</text>
+    </string>
+    <string id="pb_lesnik_end_line_meet_5">
+        <text>Да, давай уже наконец-то покинем этот чёртов пузырь.</text>
+    </string>
+    <string id="pb_lesnik_end_line_meet_6">
+        <text>Значит так, предупреждаю сразу, после такого долгого перемещения есть вероятность потерять сознание. Это я так, на всякий случай сказал. Нужно ко всему быть готовым. Сейчас слушай, идти нужно ровно за мной, не отходи ни на шаг, понял?</text>
+    </string>
+    <string id="pb_lesnik_end_line_meet_7">
+        <text>Понял, пойдем уже.</text>
+    </string>
+    <string id="pb_lesnik_first_meet_start_0">
+        <text>Спасибо тебе, добрый человек. Сам я точно не справился бы, слишком стар я уже. А зверьё взбесилось что-то в последнее время - проходу не дают.</text>
+    </string>
+    <string id="pb_lesnik_first_meet_start_1">
+        <text>Да не за что, старик. А ты кто будешь?</text>
+    </string>
+    <string id="pb_lesnik_first_meet_start_2">
+        <text>Лесник я, обитаю в Рыжем лесу, слыхал о нем? Ваши запросы о помощи на приемник словил, решил помочь, пока "Компас" при себе имею. Запросы о помощи - это твоих рук дело, я так понимаю или ты здесь не один?</text>
+    </string>
+    <string id="pb_lesnik_first_meet_start_3">
+        <text>Погоди, так ты, чтобы нас вытащить отсюда пришел?</text>
+    </string>
+    <string id="pb_lesnik_first_meet_start_4">
+        <text>Да сынок. У меня для этого дела "Компас" с собой, он то и поможет вывести тебя и других, если они есть, конечно, из этой ловушки.</text>
+    </string>
+    <string id="pb_lesnik_first_meet_start_5">
+        <text>Я здесь не один, немного севернее у нас лагерь, нас много здесь застряло, а еще группа долговцев в подземке.</text>
+    </string>
+    <string id="pb_lesnik_first_meet_start_6">
+        <text>Ну, показывай дорогу к вашему лагерю, нужно встретится с остальными хлопцами.</text>
+    </string>
+    <string id="pb_lesnik_first_meet_start_7">
+        <text>Ага, иди за мной.</text>
+    </string>
+    <string id="pb_lutiy_scene_final_base_after_quest_10">
+        <text>Ладно, хватит об этом, сейчас нужно вытащить из бункера трупы и похоронить их, а после почтить память Кувалды.</text>
+    </string>
+    <string id="pb_lutiy_scene_final_base_after_quest_11">
+        <text>Понял, пошли.</text>
+    </string>
+    <string id="pb_lutiy_scene_final_base_after_quest_13">
+        <text>Здравствуй, Зверь. Кого это ты привел?</text>
+    </string>
+    <string id="pb_lutiy_scene_final_base_after_quest_14">
+        <text>Он назвался Лесником и сказал, что сможет вывести нас из аномалии.</text>
+    </string>
+    <string id="pb_lutiy_scene_final_base_after_quest_15">
+        <text>Ты это серьезно?! Так, нужно срочно с ним поговорить, этим и займусь. А ты пока проверь еще один сигнал, ладно?</text>
+    </string>
+    <string id="pb_lutiy_scene_final_base_after_quest_16">
+        <text>Еще один?.. Они сговорились что ли, откуда поступает сигнал?</text>
+    </string>
+    <string id="pb_lutiy_scene_final_base_after_quest_17">
+        <text>Он почти там же где и предыдущий словили, я тебе сейчас координаты скину. Сходи, проверь, что там, а я, пожалуй, с Лесником поговорю.</text>
+    </string>
+    <string id="pb_lutiy_scene_final_base_after_quest_18">
+        <text>Ладно, скидывай координаты.</text>
+    </string>
+    <string id="pb_lutiy_scene_final_base_after_quest_19">
+        <text>Так-с, вроде бы всё, координаты уже должны быть у тебя.</text>
+    </string>
+    <string id="pb_lutiy_scene_final_base_after_quest_2">
+        <text>Отлично, Зверь! Хорошая работа, теперь хотя бы свет есть. Как всё прошло?</text>
+    </string>
+    <string id="pb_lutiy_scene_final_base_after_quest_20">
+        <text>Всё есть, я пошел.</text>
+    </string>
+    <string id="pb_lutiy_scene_final_base_after_quest_22">
+        <text>Зверь, потом поговорим, проверь сигнал сначала.</text>
+    </string>
+    <string id="pb_lutiy_scene_final_base_after_quest_24">
+        <text>Ну, Зверь, есть хорошие новости? Тебе удалось найти медикаменты, что помогут поднять больных ребят на ноги? Ситуация сложная, еще хотя бы день-два без лекарств и всё, похороним парней.</text>
+    </string>
+    <string id="pb_lutiy_scene_final_base_after_quest_25">
+        <text>Кое-какие лекарства я добыл, но увы только на один раз и то, всем троим не хватит, дозы только две, да и те могут не исправить ситуацию. А ведь всё из-за мяса мутантского, кто ж знал, что тот кабан болен был...</text>
+    </string>
+    <string id="pb_lutiy_scene_final_base_after_quest_26">
+        <text>Нам главное не унывать сейчас, остановимся пока на том, что удалось добыть, проблема другая, я не уверен смогу ли я выбирать среди ребят, кому дать лекарство, а кому нет. Можешь сделать это сам?</text>
+    </string>
+    <string id="pb_lutiy_scene_final_base_after_quest_27">
+        <text>Ладно, Лютый, я распределю лекарство.</text>
+    </string>
+    <string id="pb_lutiy_scene_final_base_after_quest_28">
+        <text>Спасибо, сам я такое решение не приму, как помнишь, больные у нас: Дуболом, Маркус и Резак, подумай и реши, кому ты дашь лекарство. Удачи, Зверь!</text>
+    </string>
+    <string id="pb_lutiy_scene_final_base_after_quest_29">
+        <text>Увидимся позже.</text>
+    </string>
+    <string id="pb_lutiy_scene_final_base_after_quest_3">
+        <text>В подземке я встретил долговцев, там целая группа из пяти человек...</text>
+    </string>
+    <string id="pb_lutiy_scene_final_base_after_quest_31">
+        <text>Ну, Зверь, ты уже распределил лекарство?</text>
+    </string>
+    <string id="pb_lutiy_scene_final_base_after_quest_32">
+        <text>Пока нет.</text>
+    </string>
+    <string id="pb_lutiy_scene_final_base_after_quest_34">
+        <text>Тебя не было несколько дней, где ты пропадал так долго?</text>
+    </string>
+    <string id="pb_lutiy_scene_final_base_after_quest_35">
+        <text>Я искал лекарство, а ночевал в сарае, там у меня было больше шансов встретить кого-то живого...</text>
+    </string>
+    <string id="pb_lutiy_scene_final_base_after_quest_36">
+        <text>Увы, но спасти всех ты не успел, Дуболом скончался вчера ночью, мы похоронили его недалеко от базы...</text>
+    </string>
+    <string id="pb_lutiy_scene_final_base_after_quest_37">
+        <text>А я так и не попрощался с ним...</text>
+    </string>
+    <string id="pb_lutiy_scene_final_base_after_quest_38">
+        <text>Я и сам не успел с ним попрощаться, до последнего надеялся, что он сможет одолеть болезнь... Ты это, сказал, что медикаменты искал, удалось еще хоть несколько ампул найти? Маркус и Резак чувствуют себя уже лучше, но им нужно продолжать лечение. Ах да, вот это мы нашли в вещах Дуболома, кажется, это тебе.</text>
+    </string>
+    <string id="pb_lutiy_scene_final_base_after_quest_39">
+        <text>Нет, больше вакцины я не нашел.</text>
+    </string>
+    <string id="pb_lutiy_scene_final_base_after_quest_4">
+        <text>Ничего себе, вот так новость! И давно они там?</text>
+    </string>
+    <string id="pb_lutiy_scene_final_base_after_quest_40">
+        <text>Жаль, будем надеятся, что одного вакцинирования хватит, чтобы одолеть болезнь полностью. Ну, ладно, что-то я заговорился здесь с тобой, иди отдохни, дай мне побыть одному.</text>
+    </string>
+    <string id="pb_lutiy_scene_final_base_after_quest_41">
+        <text>Бывай, Лютый.</text>
+    </string>
+    <string id="pb_lutiy_scene_final_base_after_quest_5">
+        <text>Нет, в аномалию они попали совсем недавно.</text>
+    </string>
+    <string id="pb_lutiy_scene_final_base_after_quest_6">
+        <text>О нас ты им ничего не говорил?</text>
+    </string>
+    <string id="pb_lutiy_scene_final_base_after_quest_7">
+        <text>Я рассказал им о нашей группе, но соединить наши группы не предлагал.</text>
+    </string>
+    <string id="pb_lutiy_scene_final_base_after_quest_8">
+        <text>Ну, если они к нам не просились, то смысла предлагать им это нет. Главное, чтобы, когда у них еда закончится, они у нас её отнимать не пришли.</text>
+    </string>
+    <string id="pb_lutiy_scene_final_base_after_quest_9">
+        <text>Ничего, наёмникам дали отпор и им дадим, если потребуется.</text>
+    </string>
+    <string id="pb_lutiy_scene_final_base_meet_0">
+        <text>Ты как, Зверь? Как там Шуруп, он в порядке? Думаю, что Маркус уже сообщил тебе, что здесь произошло.</text>
+    </string>
+    <string id="pb_lutiy_scene_final_base_meet_1">
+        <text>Да, все хорошо, я убил всех наёмников, что находились в сарае. С Шурупом все хорошо, да и со мной тоже.</text>
+    </string>
+    <string id="pb_lutiy_scene_final_base_meet_2">
+        <text>Очень жаль, что Тесак этот и несколько братков его сбежали, уже наверное и с аномалии свалить успели. Ну, ничего, они еще ответят за смерть Кувалды.</text>
+    </string>
+    <string id="pb_lutiy_scene_final_base_meet_3">
+        <text>Эта сволочь еще и дешифратор с собой унесла...</text>
+    </string>
+    <string id="pb_lutiy_scene_final_base_meet_4">
+        <text>Значит ты все-таки его нашел? А впрочем, какая теперь разница... Ладно, слушай, у меня идея появилась одна, я уже с ребятами обсудил её, думаю и с тобой нужно поговорить по этому поводу. В общем, лучше нам остаться в этом бункере, тут и дверь есть и укрытие от выброса надежное. Что скажешь по этому поводу?</text>
+    </string>
+    <string id="pb_lutiy_scene_final_base_meet_5">
+        <text>Думаю, что это хорошая идея, после случившегося глупо возвращаться в дырявый сарай, что у всех на виду.</text>
+    </string>
+    <string id="pb_lutiy_scene_final_base_meet_6">
+        <text>Вот и я так думаю. Кстати, те наёмники, которых нам удалось взять в плен, в общем, они тоже попытались сбежать, пришлось их убить.</text>
+    </string>
+    <string id="pb_lutiy_scene_final_base_meet_7">
+        <text>Они сделали свой выбор. Маркус уже рассказал тебе, что он нашел ключ от диспетчерской и теперь у нас есть боеприпасы?</text>
+    </string>
+    <string id="pb_lutiy_scene_final_base_meet_8">
+        <text>Да, он мне уже рассказал об этом, это действительно хорошая новость. Ладно, трепать позже будем, сейчас нужно свет здесь включить. Ты когда в сарае свет вырубил, то он и здесь вырубился тоже. Я уже Шурупу написал, чтобы он обратно включить попробовал, но у него не вышло, видимо где-то здесь есть трансформатор и для того, чтобы включить свет его нужно перезапустить. Мы с Резаком нашли здесь кое-какие схемы, выяснилось, что трансформатор находится недалеко от сарая, в подземке. Поручаю его перезапуск тебе. Вход в эту подземку закрыт, но Шуруп написал, что сможет взломать замок, в общем, иди он будет ждать тебя рядом с входом в это подземелье.</text>
+    </string>
+    <string id="pb_lutiy_scene_final_base_meet_9">
+        <text>Понял, займусь этим прямо сейчас.</text>
+    </string>
+    <string id="pb_markus_alive_talk_to_actor_0">
+        <text>Что здесь произошло? Это ты их двоих уделал?</text>
+    </string>
+    <string id="pb_markus_alive_talk_to_actor_1">
+        <text>Это не я, опять появился этот Стронглав и заставил их застрелиться.</text>
+    </string>
+    <string id="pb_markus_alive_talk_to_actor_2">
+        <text>Нихрена себе, он и на такое способен?! Тогда нам повезло, что мы до сих пор живы... Ладно, сейчас важнее парней из плена вытащить, и у меня есть план.</text>
+    </string>
+    <string id="pb_markus_alive_talk_to_actor_3">
+        <text>Что за план?</text>
+    </string>
+    <string id="pb_markus_alive_talk_to_actor_4">
+        <text>На складе остался кое-кто из наших, их охраняет несколько наёмников, сначала нужно взять под контроль склад, а тогда вернемся сюда и освободим остальных.</text>
+    </string>
+    <string id="pb_markus_alive_talk_to_actor_5">
+        <text>Всё равно выбора нет, приступаем. И еще одно, как тебе удалось выбраться из норы?</text>
+    </string>
+    <string id="pb_markus_alive_talk_to_actor_6">
+        <text>Все просто, после того как ты вылез, я тоже попробовал это сделать и у меня получилось, я от радости чуть полные штаны не наложил. Ну все, хватит об этом, давай к делу, для начала нам нужна амуниция и я знаю где её можно взять. Иди за мной, объясню все на месте.</text>
+    </string>
+    <string id="pb_markus_alive_talk_to_actor_7">
+        <text>Ладно, пошли.</text>
+    </string>
+    <string id="pb_markus_alive_talk_to_actor_end_2">
+        <text>Вот мы и на месте, это старый военный резерв. Не знаю как долго здесь лежит это оружие, но будем надеяться, что оно до сих пор в отличном состоянии.</text>
+    </string>
+    <string id="pb_markus_alive_talk_to_actor_end_3">
+        <text>Как дверь собираешься открывать?</text>
+    </string>
+    <string id="pb_markus_alive_talk_to_actor_end_4">
+        <text>У меня всё на мази. Я ключ от этой двери нашел, в логове этого Стронглава. Кое-что отсюда я уже себе взял, думаю, что и ты сможешь здесь найти что-то полезное для себя. Вот ключ от двери, бери все, что сможешь унести на себе, я подожду снаружи.</text>
+    </string>
+    <string id="pb_markus_alive_talk_to_actor_end_5">
+        <text>Понял, подожди меня, я сейчас.</text>
+    </string>
+    <string id="pb_markus_alive_talk_to_actor_end_7">
+        <text>Зверь, давай в темпе, бери всё, что сможешь унести, я подожду снаружи.</text>
+    </string>
+    <string id="pb_markus_alive_talk_to_actor_end_8">
+        <text>Понял, подожди меня, я сейчас.</text>
+    </string>
+    <string id="pb_markus_alive_talk_to_actor_final_0">
+        <text>Ну, что там, готов уже?</text>
+    </string>
+    <string id="pb_markus_alive_talk_to_actor_final_1">
+        <text>Да, готов. Вот забирай ключ, пусть у тебя будет.</text>
+    </string>
+    <string id="pb_markus_alive_talk_to_actor_final_2">
+        <text>Значит слушай, большая часть группы сейчас в сарае, они для чего-то оставили там Шурупа, нужно попытаться его спасти. Самый простой способ сделать это - вырубить электричество в сарае и перебить их в темноте. Ну, как план? И еще одно, могу я задать вопрос?</text>
+    </string>
+    <string id="pb_markus_alive_talk_to_actor_final_3">
+        <text>План прост и понятен, а на счет вопроса я думаю, что сейчас не самое подходящее время для разговоров...</text>
+    </string>
+    <string id="pb_markus_alive_talk_to_actor_final_4">
+        <text>Да я как раз таки о сложившейся ситуации и хотел поговорить. Ты уверен, что сможешь вступить в бой с наёмниками, ведь ты наверное знаешь многих из них?</text>
+    </string>
+    <string id="pb_markus_alive_talk_to_actor_final_5">
+        <text>Смогу, у меня не было друзей среди наёмников.</text>
+    </string>
+    <string id="pb_markus_alive_talk_to_actor_final_6">
+        <text>Не совсем готов к этому, но выбора нет, это необходимо сделать.</text>
+    </string>
+    <string id="pb_markus_alive_talk_to_actor_final_7">
+        <text>Хм, неожиданный ответ, но это не мое дело уже. Ладно, тогда ты займись наёмниками в сарае, а я попытаюсь освободить остальных.</text>
+    </string>
+    <string id="pb_markus_alive_talk_to_actor_final_8">
+        <text>Это да... Ладно, тогда ты займись наёмниками в сарае, а я попытаюсь освободить остальных.</text>
+    </string>
+    <string id="pb_markus_alive_talk_to_actor_final_9">
+        <text>Понял, ты иди, я как справлюсь - сразу же к вам на подмогу пойду.</text>
+    </string>
+    <string id="pb_markus_start_dialog_10">
+        <text>Когда будешь готов, поговори со Змеем - он заодно тебе и метку поставит в КПК.</text>
+    </string>
+    <string id="pb_markus_start_dialog_11">
+        <text>Понял, пойду я.</text>
+    </string>
+    <string id="pb_markus_start_dialog_13">
+        <text>Зверь, нет времени болтать, нужно уничтожить тех плотей.</text>
+    </string>
+    <string id="pb_markus_start_dialog_15">
+        <text>Приветствую, Зверь! Я заметил, что и сыщик с тебя не плохой, химеру с Дуболомом выследил, Падальщика сумел найти, более того о всех его грязных делах нам поведал.</text>
+    </string>
+    <string id="pb_markus_start_dialog_16">
+        <text>К чему ты клонишь?</text>
+    </string>
+    <string id="pb_markus_start_dialog_17">
+        <text>Помощь твоя нужна. Ещё до Лютого у нас был другой старший, кличка у него была - Гильза, хороший мужик был, но пропал...</text>
+    </string>
+    <string id="pb_markus_start_dialog_18">
+        <text>И как давно он пропал?</text>
+    </string>
+    <string id="pb_markus_start_dialog_19">
+        <text>Чуть больше месяца назад. Конечно, глупо верить, что он жив, но я словил сигнал его КПК несколько дней назад возле Заброшенного убежища, однако через секунду сигнал пропал, я обшарил весь тот подвал, но так ничего и не нашел. Может быть он как и Падальщик по телепортам перемещается, выход ищет или выбраться не может... Попробуй разыскать его, Зверь.</text>
+    </string>
+    <string id="pb_markus_start_dialog_2">
+        <text>Слушай, какие разговоры?! У нас тут зомбированные под боком, а достаточное количество патронов только у тебя и Москита. Ты бы сходил и убил этих безмозглых для начала, а потом и поговорим.</text>
+    </string>
+    <string id="pb_markus_start_dialog_20">
+        <text>Хм, думаешь, что он смог продержаться столько времени в одиночку?</text>
+    </string>
+    <string id="pb_markus_start_dialog_21">
+        <text>Всякое может быть, мужиком он был крепким, экзоскелет и ПКМ при себе имел. Да и еды и патронов, на момент его пропажи, было у него достаточно. Гильза хорошо справлялся с обязанностями главы, ему удалось сгруппировать нас вместе, а у нас ведь тут сталкеры всех мастей.</text>
+    </string>
+    <string id="pb_markus_start_dialog_22">
+        <text>Ладно, попробую найти этого Гильзу, может и получится что-то с этого.</text>
+    </string>
+    <string id="pb_markus_start_dialog_24">
+        <text>Приветствую, наёмник! Мы пока не успели с тобой познакомиться, меня Маркусом кличут, ты нам здорово помог, у нас хоть какой-то запас патронов появился, что не может не радовать.</text>
+    </string>
+    <string id="pb_markus_start_dialog_25">
+        <text>Будем знакомы, меня Зверем кличут, но ты и так должен знать об этом...</text>
+    </string>
+    <string id="pb_markus_start_dialog_26">
+        <text>Это да, значит данное место "Пространственной аномалией" именуется? Стало быть и выход отсюда все же есть, осталось только его найти... Ты сейчас не занят, мне твоя помощь нужна?</text>
+    </string>
+    <string id="pb_markus_start_dialog_27">
+        <text>Не занят, что за помощь нужна?</text>
+    </string>
+    <string id="pb_markus_start_dialog_28">
+        <text>Прости, но я занят сейчас.</text>
+    </string>
+    <string id="pb_markus_start_dialog_29">
+        <text>Ничего особо сложного, мне нужен артефакт "Выверт", он хорошо радиацию из организма выводит. Как видишь, гравитационных аномалий здесь хватает, он точно должен появляться в этих местах. Сам сходить не смогу, вокруг мутантов куча, а патронов у меня почти не осталось. С наградой не обижу, не переживай, есть у меня другой артефакт, он хоть и радиоактивен, но полезные свойства у него тоже есть.</text>
+    </string>
+    <string id="pb_markus_start_dialog_30">
+        <text>Ладно, попробую найти тебе "Выверт".</text>
+    </string>
+    <string id="pb_markus_start_dialog_32">
+        <text>Ну, что там? Уже не занят или еще не решил свои дела?</text>
+    </string>
+    <string id="pb_markus_start_dialog_33">
+        <text>Уже не занят, что за дело у тебя?</text>
+    </string>
+    <string id="pb_markus_start_dialog_34">
+        <text>Занят пока еще.</text>
+    </string>
+    <string id="pb_markus_start_dialog_36">
+        <text>Ну, что там, Зверь, как идут поиски артефакта, он уже у тебя?</text>
+    </string>
+    <string id="pb_markus_start_dialog_37">
+        <text>Да, он у меня.</text>
+    </string>
+    <string id="pb_markus_start_dialog_38">
+        <text>Нет, я пока не нашел его.</text>
+    </string>
+    <string id="pb_markus_start_dialog_39">
+        <text>Так это же отлично! Можно будет забыть о антирадах, а то у меня их недели две как нет, артефакт отлично их заменит. Давай его сюда.</text>
+    </string>
+    <string id="pb_markus_start_dialog_4">
+        <text>Привет, Зверь. Мы тут с ребятами собрались еды немного раздобыть, нужна твоя помощь.</text>
+    </string>
+    <string id="pb_markus_start_dialog_40">
+        <text>Вот, держи свой артефакт.</text>
+    </string>
+    <string id="pb_markus_start_dialog_41">
+        <text>А это тебе за то, что выполнил мою просьбу, я очень тебе благодарен.</text>
+    </string>
+    <string id="pb_markus_start_dialog_42">
+        <text>Обращайся, буду рад помочь.</text>
+    </string>
+    <string id="pb_markus_start_dialog_44">
+        <text>Привет, Зверь! Какие новости?</text>
+    </string>
+    <string id="pb_markus_start_dialog_46">
+        <text>Ну, Зверь, есть какие-нибудь новости о Гильзе?</text>
+    </string>
+    <string id="pb_markus_start_dialog_47">
+        <text>Я нашел Гильзу, он оказался зомбированным, мне пришлось убить его.</text>
+    </string>
+    <string id="pb_markus_start_dialog_48">
+        <text>Пока новостей нет.</text>
+    </string>
+    <string id="pb_markus_start_dialog_49">
+        <text>Грустно все это, зря он ушел от нас тогда... Может и жив бы остался, а как вообще тебе его удалось уложить, он ведь в экзоскелете был или нет?</text>
+    </string>
+    <string id="pb_markus_start_dialog_5">
+        <text>Какая помощь от меня нужна?</text>
+    </string>
+    <string id="pb_markus_start_dialog_50">
+        <text>Сложно было, но мне все-таки удалось это сделать.</text>
+    </string>
+    <string id="pb_markus_start_dialog_51">
+        <text>При нем были какие-то заметки или может полезное что-то нашел?</text>
+    </string>
+    <string id="pb_markus_start_dialog_52">
+        <text>При нем был только вот этот брелок, возьми.</text>
+    </string>
+    <string id="pb_markus_start_dialog_53">
+        <text>Да, это его брелок. Ладно, спасибо тебе, Зверь. Держи за это кое-что.</text>
+    </string>
+    <string id="pb_markus_start_dialog_54">
+        <text>Обращайся, если будет нужна помощь. Бывай!</text>
+    </string>
+    <string id="pb_markus_start_dialog_56">
+        <text>Привет, Зверь! С чем пожаловал ко мне?</text>
+    </string>
+    <string id="pb_markus_start_dialog_6">
+        <text>В общем слушай, Резак мне рассказал, что видел стаю плотей не далеко от базы. Мы решили, что раз другой еды у нас почти нет, нужно этих плотей на мясо пустить, поможешь ребятам убить их?</text>
+    </string>
+    <string id="pb_markus_start_dialog_60">
+        <text>Ладно, позже поговорим.</text>
+    </string>
+    <string id="pb_markus_start_dialog_7">
+        <text>Ладно, я помогу.</text>
+    </string>
+    <string id="pb_markus_start_dialog_8">
+        <text>С тобой пойдут Змей, Кувалда и я, но мне сначала в одно место заскочить нужно. Как только освобожусь - сразу к вам. Ты поглядывай, чтобы эти двое не поссорились там.</text>
+    </string>
+    <string id="pb_markus_start_dialog_9">
+        <text>Понял тебя, Маркус. Ставь метку, где этих плотей искать надо.</text>
+    </string>
+    <string id="pb_moskit_start_dialog_10">
+        <text>Помогу, не боись.</text>
+    </string>
+    <string id="pb_moskit_start_dialog_11">
+        <text>Ну, что, Зверь? Уже нашел патроны для СВД?</text>
+    </string>
+    <string id="pb_moskit_start_dialog_12">
+        <text>Да, патроны у меня, держи.</text>
+    </string>
+    <string id="pb_moskit_start_dialog_13">
+        <text>Нет, пока не нашел.</text>
+    </string>
+    <string id="pb_moskit_start_dialog_14">
+        <text>Отлично! Я думал, ты, не сможешь отыскать их здесь, а тут... Молодец, Зверь!</text>
+    </string>
+    <string id="pb_moskit_start_dialog_15">
+        <text>Что там на счет награды?</text>
+    </string>
+    <string id="pb_moskit_start_dialog_16">
+        <text>Вот, как и обещал.</text>
+    </string>
+    <string id="pb_moskit_start_dialog_17">
+        <text>Ну, хорошо. Пойду я.</text>
+    </string>
+    <string id="pb_moskit_start_dialog_19">
+        <text>Здравствуй, Зверь. Чего хотел?</text>
+    </string>
+    <string id="pb_moskit_start_dialog_3">
+        <text>Слушай, Зверь. Спасибо, что с зомбированными подсобил, ты сейчас не занят? Дело к тебе одно имеется.</text>
+    </string>
+    <string id="pb_moskit_start_dialog_4">
+        <text>Нет, не занят, что ты хотел?</text>
+    </string>
+    <string id="pb_moskit_start_dialog_5">
+        <text>Ну, что там? Уже не занят или еще не решил свои дела?</text>
+    </string>
+    <string id="pb_moskit_start_dialog_6">
+        <text>Уже не занят. Что за дело?</text>
+    </string>
+    <string id="pb_moskit_start_dialog_7">
+        <text>В общем, лежит у меня здесь неподалеку в схроне СВД. Хорошая снайперка, но патронов у меня к ней нет. Можешь поискать, для меня, патроны к ней? Найти для начала пачку хотя бы? Взамен дам тебе патроны к калашу, у меня как раз заначка появилась, да и деньжат сверху накину. Ну что, поможешь мне?</text>
+    </string>
+    <string id="pb_moskit_start_dialog_8">
+        <text>Занят пока еще.</text>
+    </string>
+    <string id="pb_moskit_start_dialog_9">
+        <text>Прости, но я занят сейчас.</text>
+    </string>
+    <string id="pb_mrakobes_talk_0">
+        <text>Какие люди!.. Привет, животное, ты что тут забыл вообще?</text>
+    </string>
+    <string id="pb_mrakobes_talk_1">
+        <text>Это ты, что здесь делаешь, придурок? Ты хоть представляешь, в какую жопу ты залез? Если сейчас же не уберешься с моего пути - завалю, мне терять нечего.</text>
+    </string>
+    <string id="pb_mrakobes_talk_2">
+        <text>Смотри как заговорил... Ну, ничего, сейчас ты по-другому запоешь. Ах да, тебе привет от Синдиката.</text>
+    </string>
+    <string id="pb_mrakobes_talk_3">
+        <text>Да я тебя...</text>
+    </string>
+    <string id="pb_murad_prison_meet_0">
+        <text>Спасибо тебе, Зверь. Уже второй раз мою шкуру спасаешь, неужели наёмники сюда из-за меня пришли?</text>
+    </string>
+    <string id="pb_murad_prison_meet_1">
+        <text>Нет, они здесь по другим причинам... Артефакт "Компас" ищут, думают, что мы нашли его, из-за этого Кувалду убили, суки.</text>
+    </string>
+    <string id="pb_murad_prison_meet_2">
+        <text>Мда, вот так ситуация получается... Значит это не все наёмники, что пришли и часть до сих пор держит в заложниках всех остальных?</text>
+    </string>
+    <string id="pb_murad_prison_meet_3">
+        <text>Да, Маркус пошел им на подмогу, думаю, что он придумает как их освободить.</text>
+    </string>
+    <string id="pb_murad_prison_meet_4">
+        <text>Слушай, иди помоги ему, от меня пользы мало будет, они мне здорово бока намяли, так что я лучше здесь подожду. Идет?</text>
+    </string>
+    <string id="pb_murad_prison_meet_5">
+        <text>Ладно, сиди здесь, а я побежал.</text>
+    </string>
+    <string id="pb_murad_quest_door_talk_0">
+        <text>О, наконец-то ты пришел, Лютый уже рассказал тебе о том, что тебе предстоит сделать?</text>
+    </string>
+    <string id="pb_murad_quest_door_talk_1">
+        <text>Рассказал в общих чертах.</text>
+    </string>
+    <string id="pb_murad_quest_door_talk_2">
+        <text>Тогда пошли, помогу тебе решетку открыть, только учти, я с тобой в подземелье это не полезу, мало ли, что там обитает. Я открою тебе вход, а сам на базу побегу, ты и без меня справишься. Ну что, готов?</text>
+    </string>
+    <string id="pb_murad_quest_door_talk_3">
+        <text>Да, пошли.</text>
+    </string>
+    <string id="pb_murad_quest_end_dialog_10">
+        <text>Меня просили найти аккумулятор к подобному радиопередатчику, давай его сюда</text>
+    </string>
+    <string id="pb_murad_quest_end_dialog_12">
+        <text>Да, наёмник. Чего тебе?</text>
+    </string>
+    <string id="pb_murad_quest_end_dialog_13">
+        <text>Ну вот тогда и передай аккумулятор этому человеку, а я пока отдышусь немного.</text>
+    </string>
+    <string id="pb_murad_quest_end_dialog_14">
+        <text>Ладно, пойду я.</text>
+    </string>
+    <string id="pb_murad_quest_end_dialog_2">
+        <text>Спасибо за помощь, мужик. Теперь, думаю, поговорить можно.</text>
+    </string>
+    <string id="pb_murad_quest_end_dialog_3">
+        <text>Ты сказал, что за тобой гнались наёмники, почему?</text>
+    </string>
+    <string id="pb_murad_quest_end_dialog_4">
+        <text>В общем, дали мне ученые, по контракту радиопередатчик, протестируй мол и все дела. Я крутил эту хреновину и случайно на закрытый канал наёмников вышел, ох и переговоры у них были, слушал я это все, рот открыв, и не оглядывался даже. А тут, наёмники поняли, что кто-то их связь палит, и передали всем своим окрестность прочесать. Ну тут и началось, из-за куста уже через минуту повалили наёмники. Я по случайность в аномалию сиганул, хорошо еще, что это не карусель какая-нибудь оказалась, а пространка. Вот так вот.</text>
+    </string>
+    <string id="pb_murad_quest_end_dialog_5">
+        <text>А этот радиопередатчик еще у тебя?</text>
+    </string>
+    <string id="pb_murad_quest_end_dialog_6">
+        <text>Он со мной, но, похоже, при перемещении сюда я разбил его, во время побега от наёмников я его в рюкзак засунул, а когда из аномалии вывалился, то на этот же рюкзак и плюхнулся, он теперь на конструктор стал похож.</text>
+    </string>
+    <string id="pb_murad_quest_end_dialog_7">
+        <text>Что-то из деталей этого передатчика уцелело?</text>
+    </string>
+    <string id="pb_murad_quest_end_dialog_8">
+        <text>Ладно, давай сюда аккумулятор, пусть пока полежит у меня. Пойду я.</text>
+    </string>
+    <string id="pb_murad_quest_end_dialog_9">
+        <text>Пара микросхем, но они бесполезны и аккумулятор, могу отдать тебе, если нужен.</text>
+    </string>
+    <string id="pb_murad_quest_start_dialog_0">
+        <text>Наёмник, ты кто такой, твою мать? Отвечай или я открою огонь!</text>
+    </string>
+    <string id="pb_murad_quest_start_dialog_1">
+        <text>Успокойся, я помочь пришел. Зверем меня кличут.</text>
+    </string>
+    <string id="pb_murad_quest_start_dialog_10">
+        <text>Не истери, успокойся или мне тебя успокоить?</text>
+    </string>
+    <string id="pb_murad_quest_start_dialog_11">
+        <text>Хана тебе, найм, всем вам конец придёт...</text>
+    </string>
+    <string id="pb_murad_quest_start_dialog_12">
+        <text>Это твой выбор...</text>
+    </string>
+    <string id="pb_murad_quest_start_dialog_2">
+        <text>Помочь ты пришел, да? Что ты мне лапшу на уши вешаешь? Что вам наёмникам от меня надо, вообще? Не слышал я ничего, вали!</text>
+    </string>
+    <string id="pb_murad_quest_start_dialog_3">
+        <text>Вам? Ты о ком? Нет здесь больше наёмников, один я только.</text>
+    </string>
+    <string id="pb_murad_quest_start_dialog_4">
+        <text>Допустим, что ты не врешь... Погоди, ты сказал «здесь», что ты имеешь в виду?</text>
+    </string>
+    <string id="pb_murad_quest_start_dialog_5">
+        <text>Эх, мужик, не повезло тебе, в пространственную аномалию ты попал.</text>
+    </string>
+    <string id="pb_murad_quest_start_dialog_6">
+        <text>Что? Блин, нужно выбираться, срочно! Наёмники скоро придут, они видели, где я пропал...</text>
+    </string>
+    <string id="pb_murad_quest_start_dialog_7">
+        <text>Не паникуй, пойдем к базе, там и обговорим все подробности.</text>
+    </string>
+    <string id="pb_murad_quest_start_dialog_8">
+        <text>Это далеко? Много здесь еще сталкеров?</text>
+    </string>
+    <string id="pb_murad_quest_start_dialog_9">
+        <text>Все вопросы на базе обсудим, пошли.</text>
+    </string>
+    <string id="pb_otshelnik_puzir_talk_0">
+        <text>Наёмник, тебе крупно повезло, что фантом не тронул тебя. Если бы ты не прошел его испытание, то уже никогда бы не смог проснуться. Фантомы очень коварны, но то, что их порождает - в разы опаснее.</text>
+    </string>
+    <string id="pb_otshelnik_puzir_talk_1">
+        <text>Погоди, что ты несешь? И кто ты вообще?</text>
+    </string>
+    <string id="pb_otshelnik_puzir_talk_2">
+        <text>Сейчас это не самое главное, тебе нужно опасаться фантомов и держаться подальше от них. Они очень опасны, запомни это...</text>
+    </string>
+    <string id="pb_otshelnik_puzir_talk_3">
+        <text>Что здесь творится? Что еще за фантомы?</text>
+    </string>
+    <string id="pb_otshelnik_puzir_talk_4">
+        <text>То, что ты видел здесь прошлой ночью и было фантомом. Фантомы - это души погибших людей, они появляются на месте своей гибели или поблизости от своего мёртвого тела. Обычно они не опасны, но того фантома, что ты видел создали чтобы заманить кого-то в ловушку.</text>
+    </string>
+    <string id="pb_otshelnik_puzir_talk_5">
+        <text>Тогда у того, кто это сделал, ничего не получилось, я ведь выбрался.</text>
+    </string>
+    <string id="pb_otshelnik_puzir_talk_6">
+        <text>Тебе повезло больше, чем сталкеру, что попал в ловушку до тебя, но нельзя постоянно опираться только на везение, она может подвести. Будь бдителен, наёмник, и не дай еще раз заманить себя в ловушку.</text>
+    </string>
+    <string id="pb_otshelnik_puzir_talk_7">
+        <text>Откуда ты все это знаешь, старик?</text>
+    </string>
+    <string id="pb_otshelnik_puzir_talk_8">
+        <text>Я много чего знаю, просто последуй моему совету, тебе угрожает опасность, не дай себя обмануть. Бывай, наёмник, надеюсь, еще встретимся.</text>
+    </string>
+    <string id="pb_otshelnik_puzir_talk_9">
+        <text>Что?! Эй! Погоди, а как ты собираешься покинуть аномалию?!</text>
+    </string>
+    <string id="pb_paskhalka_stalker_meet_0">
+        <text>Я смогу... почему я не хочу, чтобы эта... со мной... вот эта...</text>
+    </string>
+    <string id="pb_paskhalka_stalker_meet_1">
+        <text>Эй, мужик, что с тобой? Ты в порядке?</text>
+    </string>
+    <string id="pb_paskhalka_stalker_meet_10">
+        <text>Многое не помню... На Радаре... мы решили сократить путь... пошли через «Рыжий лес»... Как оказалось... там ничуть не безопасней... В заборе есть дырка... можно обойти некоторые патрули «монолитовцев»... Не... не... ты это...</text>
+    </string>
+    <string id="pb_paskhalka_stalker_meet_11">
+        <text>Что?</text>
+    </string>
+    <string id="pb_paskhalka_stalker_meet_12">
+        <text>Не помню... Голос зовёт... нужно идти... Я был там! Я видел это! Оно залезло ко мне в мозги и говорило со мной. Оно говорило со мной! В голове звучал ужасный голос, выжигая мозги. Ужас... Ужас. Ужас! Не ходи туда! Оно станет тобой так же, как стало мной. Дикая боль в голове... И голос... Шепчет мне.</text>
+    </string>
+    <string id="pb_paskhalka_stalker_meet_13">
+        <text>Успокойся, дружище. Всё хорошо, ты уже в безопасности.</text>
+    </string>
+    <string id="pb_paskhalka_stalker_meet_14">
+        <text>Шёпот... Шёпот и скрип детских качелей... Оно в моей голове и я сам стал чудовищем. Нет, нельзя. Друг, передай Лысому мой артефакт. Это всё, что я нашёл там, когда Оно влезло мне в голову. Лысый передаст это моей жене, моему сыну. Это компенсирует им...</text>
+    </string>
+    <string id="pb_paskhalka_stalker_meet_15">
+        <text>Что компенсирует?..</text>
+    </string>
+    <string id="pb_paskhalka_stalker_meet_2">
+        <text>Я нормальный! Я нормальный... Я выдержу, я смогу...</text>
+    </string>
+    <string id="pb_paskhalka_stalker_meet_3">
+        <text>Ты меня слышишь?!</text>
+    </string>
+    <string id="pb_paskhalka_stalker_meet_4">
+        <text>Нет, этого не будет со мной! Не будет этого со мной!</text>
+    </string>
+    <string id="pb_paskhalka_stalker_meet_5">
+        <text>Да отзовись же!</text>
+    </string>
+    <string id="pb_paskhalka_stalker_meet_6">
+        <text>Башка... это фигня вообще полная... Это… Рябой я. Излучение... чтоб его! Горбун, Горбун погиб!</text>
+    </string>
+    <string id="pb_paskhalka_stalker_meet_7">
+        <text>Горбун? Кто такой Горбун?</text>
+    </string>
+    <string id="pb_paskhalka_stalker_meet_8">
+        <text>Сталкер... Мы вместе отправились на «Выжигатель». Горбун, я и Лысый.</text>
+    </string>
+    <string id="pb_paskhalka_stalker_meet_9">
+        <text>Что вы делали возле «Выжигателя»?</text>
+    </string>
+    <string id="pb_quest_line_lutiy_start_10">
+        <text>Сейчас, в первую очередь, нам нужно зомбированных уничтожить неподалёку, а то они скоро и к нам доберутся. У тебя ведь патроны к калашу имеются?</text>
+    </string>
+    <string id="pb_quest_line_lutiy_start_11">
+        <text>Были вроде бы, перед тем как я здесь очухался...</text>
+    </string>
+    <string id="pb_quest_line_lutiy_start_12">
+        <text>Тогда, дай мне две пачки, я их Москиту отнесу, он хороший стрелок. Вместе с ним вы справитесь.</text>
+    </string>
+    <string id="pb_quest_line_lutiy_start_13">
+        <text>Ладно, держи патроны.</text>
+    </string>
+    <string id="pb_quest_line_lutiy_start_14">
+        <text>Мда, плохи дела.</text>
+    </string>
+    <string id="pb_quest_line_lutiy_start_15">
+        <text>Нам бы Падальщика разыскать, без него мы долго не протянем.</text>
+    </string>
+    <string id="pb_quest_line_lutiy_start_17">
+        <text>С возвращением из потустороннего мира, парень... Никто уже и не надеялся, что ты в себя придешь, четыре дня без сознания пролежал. Мда, здорово тебя выбросом долбануло, после такого никто бы не выжил. Но ты жив. Хорошо это или плохо - пока не знаю, не определился ещё. Но то, что это странно, вне сомнений. Так, хватит об этом, с виду ты нормальный вроде, но вот наёмничьи атрибуты твои мне не нравятся. Ты, чей будешь?</text>
+    </string>
+    <string id="pb_quest_line_lutiy_start_18">
+        <text>Зверь я, наёмник... Что это за место и кто ты такой?..</text>
+    </string>
+    <string id="pb_quest_line_lutiy_start_19">
+        <text>Хм, наёмник? Значит, я не ошибся... Ну, что ж, наёмник, на первый твой вопрос ответить будет сложно, потому, как я сам не в курсе, где мы находимся. Мистическое место какое-то, давно уже торчим здесь, видать Зона так над нами шутит. А кличут меня Лютым, будем знакомы. Да, кстати, ребята не очень обрадуются, что среди нас появился наёмник, поэтому попрошу вести себя сдержано, все мы оказались в довольно сложном положении, поэтому нервы у многих ни к чёрту. Надеюсь, мы поладим, и обойдется без конфликтов.</text>
+    </string>
+    <string id="pb_quest_line_lutiy_start_2">
+        <text>Наёмник, сейчас очень пригодилась бы твоя помощь... Зомбированные всё ближе и ближе к базе подбираются, надо прикончить их, иначе они скоро сюда припрутся.</text>
+    </string>
+    <string id="pb_quest_line_lutiy_start_20">
+        <text>Что ты такое несёшь, какое еще "мистическое место"?</text>
+    </string>
+    <string id="pb_quest_line_lutiy_start_21">
+        <text>Я не знаю, наёмник, нет отсюда выхода... Куда не пойди, вечно к этому гребанному сараю возвращаешься. Еле-еле сводим здесь концы с концами, чтобы не подохнуть от голода или от твари какой-нибудь. С патронами тоже напряг большой, а мутантов не счесть, хрен его знает, как они сюда путь находят.</text>
+    </string>
+    <string id="pb_quest_line_lutiy_start_22">
+        <text>Черт... Вот же вляпался... Сколько времени вы здесь торчите? И где снаряга моя?</text>
+    </string>
+    <string id="pb_quest_line_lutiy_start_23">
+        <text>Я и еще один сталкер - примерно семь месяцев, другие от трех месяцев до одного... Касаемо снаряги твоей, четыре дня назад один из наших пошел в обход окрестностей и наткнулся на твою бессознательную тушу. Где твоё снаряжение я ума не приложу. Всё, что было при тебе, это пистолет, несколько пачек патронов и этот комбез, который стал похож на тряпку половую. Понятно, что принуждать тебя выполнять все мои приказы я не могу, но я предлагаю тебе примкнуть к нашей группе, так у тебя хотя бы будет шанс сдохнуть чуть позже, чем без нас. К тому же и мы в твоих умениях были бы крайне заинтересованы. Надеюсь, ты меня услышал и дополнительных проблем для нас создавать не будешь, в ином случае, у тебя появится несколько новых проблем.</text>
+    </string>
+    <string id="pb_quest_line_lutiy_start_24">
+        <text>Мда... Ладно, успокойся, не собираюсь я создавать проблем.</text>
+    </string>
+    <string id="pb_quest_line_lutiy_start_3">
+        <text>Никто кроме меня не сможет разобраться с этим?</text>
+    </string>
+    <string id="pb_quest_line_lutiy_start_4">
+        <text>Некогда думать, тебе нужно помочь Резаку. Это именно он тебя в лагерь притащил и выходил, хотя некоторые были против. Так что теперь твой черед вернуть должок. Да, кстати, я видел несколько пачек патронов для калаша в твоей разгрузке, если дашь мне эти две пачки патронов, то смогу выделить тебя напарника. Пойдёт такой расклад?</text>
+    </string>
+    <string id="pb_quest_line_lutiy_start_5">
+        <text>Я даже как сюда попал, вспомнить не могу.</text>
+    </string>
+    <string id="pb_quest_line_lutiy_start_6">
+        <text>Черт бы его побрал, это место! Что же нам делать? Без еды и патронов мы долго не протянем здесь! Уже почти два месяца здесь не появлялись новые сталкеры. Обычно они гибли в аномалиях, а мы жили за их счет, но теперь... Еще и Падальщик исчез куда-то.</text>
+    </string>
+    <string id="pb_quest_line_lutiy_start_7">
+        <text>Придумаем что-то, не переживай.</text>
+    </string>
+    <string id="pb_quest_line_lutiy_start_8">
+        <text>Кто такой Падальщик?</text>
+    </string>
+    <string id="pb_quest_line_lutiy_start_9">
+        <text>Падальщик? Да если бы не он, нас бы уже давно не было! Он прочесывал местность и собирал с трупов в округе все, чем те богаты были. А два дня назад он ушел и так и не вернулся.</text>
+    </string>
+    <string id="pb_quest_line_lutiy_talk_after_heli_crash_1">
+        <text>Думаю да, самое сложное уже позади, ранения не смертельные, скоро бегать сможет.</text>
+    </string>
+    <string id="pb_quest_line_lutiy_talk_after_heli_crash_10">
+        <text>Да если бы не он, Зверь, нас не было б уже давно, он прочесывал местность и собирал с трупов в округе всё, чем те богаты были. А два дня назад, он ушел и так и не вернулся... Услышал какой-то сигнал, недалеко от базы, пошёл проверить и не вернулся назад. Я на его поиски ребят отправлял, Резака и Москита, но они не нашли его, но взамен нашли тебя. Я до сих пор одного понять не могу, как же все-таки ты выжил, ведь всего за десяток метров слепые псы обитают.</text>
+    </string>
+    <string id="pb_quest_line_lutiy_talk_after_heli_crash_11">
+        <text>Понятия не имею как, но все же я жив, а это главное. Ладно, я прочешу местность, может и найду тогда что-то.</text>
+    </string>
+    <string id="pb_quest_line_lutiy_talk_after_heli_crash_12">
+        <text>Понятия не имею как, но всё же я жив, а это главное. Ладно, я прочешу местность, может и найду тогда что-то.</text>
+    </string>
+    <string id="pb_quest_line_lutiy_talk_after_heli_crash_13">
+        <text>Буду очень благодарен, мало кто сможет заменить Падальщика, ему так много удавалось собрать за день, сейчас мы и половины того не находим.</text>
+    </string>
+    <string id="pb_quest_line_lutiy_talk_after_heli_crash_14">
+        <text>Если найду что-то, то сообщу тебе.</text>
+    </string>
+    <string id="pb_quest_line_lutiy_talk_after_heli_crash_15">
+        <text>Буду очень благодарен, мало кто сможет заменить Падальщика, ему так много удавалось собрать за день, сейчас мы и половины того не находим.</text>
+    </string>
+    <string id="pb_quest_line_lutiy_talk_after_heli_crash_16">
+        <text>Если найду что-то, сообщу тебе.</text>
+    </string>
+    <string id="pb_quest_line_lutiy_talk_after_heli_crash_17">
+        <text>Поговори с Дуболомом по этому поводу, он поможет тебя решить данную проблему. Да, еще одно, тебя Змей просил к нему подойти, сказал, что у него к тебе важное дело, как разберешься со всем, то подойдешь ко мне, поговорить надо будет.</text>
+    </string>
+    <string id="pb_quest_line_lutiy_talk_after_heli_crash_19">
+        <text>Ну и дела, а я уже подумал, что это был наш билет на свободу... Не хочет нас аномалия отпускать... Как там этот вояка, жить будет?</text>
+    </string>
+    <string id="pb_quest_line_lutiy_talk_after_heli_crash_2">
+        <text>Это хорошо, у меня есть подозрения, что до всего этого, это место было каким-то военным объектом, возможно он сможет дать нам новую информацию о этом месте.</text>
+    </string>
+    <string id="pb_quest_line_lutiy_talk_after_heli_crash_20">
+        <text>Хорошо, пойду, поговорю с ним.</text>
+    </string>
+    <string id="pb_quest_line_lutiy_talk_after_heli_crash_22">
+        <text>Приветствую, Зверь. Ты по какому делу ко мне?</text>
+    </string>
+    <string id="pb_quest_line_lutiy_talk_after_heli_crash_24">
+        <text>Нужна твоя помощь в одном деле... Был у нас сталкер один, мы его Падальщиком прозвали, да вот пропал два дня назад, но не хочу я думать, что он попросту помер.</text>
+    </string>
+    <string id="pb_quest_line_lutiy_talk_after_heli_crash_26">
+        <text>Приветствую, Зверь. Ты по какому делу ко мне?</text>
+    </string>
+    <string id="pb_quest_line_lutiy_talk_after_heli_crash_28">
+        <text>Приветствую, Зверь. Ты по какому делу ко мне?</text>
+    </string>
+    <string id="pb_quest_line_lutiy_talk_after_heli_crash_3">
+        <text>Возможно и так, но пока он вряд ли сможет помочь, пусть сначала здоровье свое восстановит немного.</text>
+    </string>
+    <string id="pb_quest_line_lutiy_talk_after_heli_crash_4">
+        <text>Это да, торопить его не надо, думаю у нас хватит медикаментов, чтобы окончательно поставить его на ноги. Жаль, что среди нас медиков нет. Кстати, вижу ты выглядишь уже намного лучше, сон однозначно пошел тебе на пользу.</text>
+    </string>
+    <string id="pb_quest_line_lutiy_talk_after_heli_crash_5">
+        <text>Да, чувствую себя лучше, хоть боль головная прошла... У меня с провизией беда, у вас есть какой-то запас еды?</text>
+    </string>
+    <string id="pb_quest_line_lutiy_talk_after_heli_crash_6">
+        <text>Это очень хорошо, Зверь. Помнишь, я говорил тебе о Падальщике?</text>
+    </string>
+    <string id="pb_quest_line_lutiy_talk_after_heli_crash_7">
+        <text>Это тот, что с трупов хабар собирал и вам приносил?</text>
+    </string>
+    <string id="pb_quest_line_lutiy_talk_after_heli_crash_8">
+        <text>Что еще за Падальщик?</text>
+    </string>
+    <string id="pb_quest_line_lutiy_talk_after_heli_crash_9">
+        <text>Да, Падальщик пропал два дня назад, примерно. Услышал какой-то сигнал, не далеко от базы, пошел проверить и не вернулся назад. Я на его поиски ребят отправлял, Резака и Москита, но они вместо его тебя притащили. Я до сих пор одного понять не могу, как же все-таки ты выжил, ведь всего за десяток метров слепые псы обитают.</text>
+    </string>
+    <string id="pb_quest_line_lutiy_talk_to_controller_kill_0">
+        <text>Вот они значит откуда были, зомбированные эти. Неожиданный гость к нам на огонек заглянул, однако. Спасибо за помощь в уничтожении. Зверь, я этого не забуду.</text>
+    </string>
+    <string id="pb_quest_line_lutiy_talk_to_controller_kill_1">
+        <text>Сейчас я тебе помог, потом ты поможешь мне... Не за что благодарить, Лютый.</text>
+    </string>
+    <string id="pb_quest_line_lutiy_talk_to_controller_kill_10">
+        <text>Буду рад, если найдешь его, Падальщик был хорошим сталкером, помог очень сильно нам.</text>
+    </string>
+    <string id="pb_quest_line_lutiy_talk_to_controller_kill_11">
+        <text>Если найду что-то, то сообщу тебе.</text>
+    </string>
+    <string id="pb_quest_line_lutiy_talk_to_controller_kill_2">
+        <text>Ладно, нужно выбираться отсюда, а то, я чувствую, сюда скоро псевдогиганты попрут.</text>
+    </string>
+    <string id="pb_quest_line_lutiy_talk_to_controller_kill_3">
+        <text>Придумаем что-то. Я попытаюсь найти выход отсюда. У тебя ко мне есть что-то еще?</text>
+    </string>
+    <string id="pb_quest_line_lutiy_talk_to_controller_kill_4">
+        <text>Да, Зверь. Помнишь, я говорил тебе о Падальщике?</text>
+    </string>
+    <string id="pb_quest_line_lutiy_talk_to_controller_kill_5">
+        <text>Это тот, что с трупов хабар собирал и вам приносил?</text>
+    </string>
+    <string id="pb_quest_line_lutiy_talk_to_controller_kill_6">
+        <text>Помнить, то я помню, но не знаю кто он.</text>
+    </string>
+    <string id="pb_quest_line_lutiy_talk_to_controller_kill_7">
+        <text>Да, Падальщик пропал два дня назад, примерно. Услышал какой-то сигнал, не далеко от базы, пошел проверить и не вернулся назад. Я на его поиски ребят отправил, Резака и Москита, а они вместо него, нашли тебя, но я рад, что ты появился. С зомбированными помог и контроллером, с патронами подсобил, спасибо тебе за это, Зверь.</text>
+    </string>
+    <string id="pb_quest_line_lutiy_talk_to_controller_kill_8">
+        <text>Да если бы не он, Зверь, нас не было б уже давно, он прочесывал местность и собирал с трупов в округе все, чем те богаты были. А два дня назад, он ушел и так и не вернулся... Услышал какой-то сигнал, не далеко от базы, пошел проверить и не вернулся назад. Я на его поиски ребят отправил, Резака и Москита, а они вместо него, нашли тебя, но я рад, что ты появился. С зомбированными помог и контроллером, с патронами подсобил, спасибо тебе за это.</text>
+    </string>
+    <string id="pb_quest_line_lutiy_talk_to_controller_kill_9">
+        <text>Не благодари, это лишнее... Я прочешу местность, может и найду тогда что-то.</text>
+    </string>
+    <string id="pb_quest_line_lutiy_talk_to_dead_zombied_0">
+        <text>Ну, что там, наёмник? Справились с зомбированными?</text>
+    </string>
+    <string id="pb_quest_line_lutiy_talk_to_dead_zombied_1">
+        <text>Да, зомбированные нейтрализованы, Москит не пострадал.</text>
+    </string>
+    <string id="pb_quest_line_lutiy_talk_to_dead_zombied_10">
+        <text>Хм, пространственная аномалия, говоришь? В записке нет никаких зацепок по поводу выхода из аномалии?</text>
+    </string>
+    <string id="pb_quest_line_lutiy_talk_to_dead_zombied_11">
+        <text>Нет. Кстати, у меня вопрос, а как сюда попали зомбированные?</text>
+    </string>
+    <string id="pb_quest_line_lutiy_talk_to_dead_zombied_2">
+        <text>Зомбированые уничтожены, но... Москит погиб.</text>
+    </string>
+    <string id="pb_quest_line_lutiy_talk_to_dead_zombied_3">
+        <text>Это хорошие новости, наёмник! Нашли в рюкзаках этих бедолаг что-то интересное?</text>
+    </string>
+    <string id="pb_quest_line_lutiy_talk_to_dead_zombied_4">
+        <text>Как же так? Эх, жаль парня... Хотя кто знает, что лучше, торчать здесь и ждать голодной смерти или отправится в мир иной...</text>
+    </string>
+    <string id="pb_quest_line_lutiy_talk_to_dead_zombied_5">
+        <text>Да. Первое, что удалось обнаружить это то, что все зомбированные принадлежали к группировке Долг. У одного из них, в рюкзаке, я нашел записку.</text>
+    </string>
+    <string id="pb_quest_line_lutiy_talk_to_dead_zombied_6">
+        <text>Это да. Кстати, забыл сказать: все зомбированные принадлежали к группировке Долг, и у одного из них была записка в рюкзаке.</text>
+    </string>
+    <string id="pb_quest_line_lutiy_talk_to_dead_zombied_7">
+        <text>И что там было написано?</text>
+    </string>
+    <string id="pb_quest_line_lutiy_talk_to_dead_zombied_8">
+        <text>И что там было написано?</text>
+    </string>
+    <string id="pb_quest_line_lutiy_talk_to_dead_zombied_9">
+        <text>В записке описывается это место, мы сейчас находимся внутри некой аномалии. Долговец, назвал эту аномалию - пространственной. Мне раньше приходилось слышать о подобном...</text>
+    </string>
+    <string id="pb_quest_line_lutiy_talk_to_go_sleep_0">
+        <text>Черт, моя голова... Что за напасть-то такая?! Ладно, теперь хоть знаем как зомбированные сюда попали, неожиданный гость к нам на огонек заглянул, однако. Интересно, почему ты не попал под его влияние как все остальные?</text>
+    </string>
+    <string id="pb_quest_line_lutiy_talk_to_go_sleep_1">
+        <text>Не знаю, до этого я уже попадал под влияние контролёра. И ему почти удалось меня зомбировать, но меня спас Рыба.</text>
+    </string>
+    <string id="pb_quest_line_lutiy_talk_to_go_sleep_2">
+        <text>Наверняка хороший мужик этот Рыба. Мда, ну и хорошо, что в этот раз ты не попал под влияние контролёра, а не то бы мы все сейчас у него на поводке были. Чем я думал?.. С нашей-то охраной, да сюда кто угодно попасть сможет, а самое страшное, что эти зомбированные уже не первый день около сарая ходили. Контролёр тоже, небось, постоянно у нас под боком был.</text>
+    </string>
+    <string id="pb_quest_line_lutiy_talk_to_go_sleep_3">
+        <text>Самое главное сейчас - раздобыть побольше патронов для парней, а то без них любая защита не имеет смысла.</text>
+    </string>
+    <string id="pb_quest_line_lutiy_talk_to_go_sleep_4">
+        <text>Ты прав, но дефицит патронов не главная проблема, наш запас еды почти на нуле, да и с питьевой водой плохо дела обстоят, боевой дух у парней всё ниже и ниже с каждым днем. Многие говорят, что выхода отсюда нет, и мы все помрём здесь голодной смертью, подобные мысли и у меня в голове проскакивают, но я стараюсь их отгонять.</text>
+    </string>
+    <string id="pb_quest_line_lutiy_talk_to_go_sleep_5">
+        <text>Я попытаюсь сделать всё, что в моих силах, чтобы найти выход отсюда.</text>
+    </string>
+    <string id="pb_quest_line_lutiy_talk_to_go_sleep_6">
+        <text>Надеюсь, что мы всё же сможем его найти, не хочется погибнуть здесь, да и ребят жалко... Не думал я, что Зона подарит мне такой подарок, доживать свои дни взаперти, хочу вернуться назад, домой к жене и дочери, на кой черт мне эта Зона сдалась?..</text>
+    </string>
+    <string id="pb_quest_line_lutiy_talk_to_go_sleep_7">
+        <text>Да, ситуация не из простых... У тебя ко мне есть что-то еще?</text>
+    </string>
+    <string id="pb_quest_line_lutiy_talk_to_go_sleep_8">
+        <text>Слушай, Зверь, хреново ты что-то выглядишь, ты столько времени пролежал в отключке, но видимо это не пошло тебе на пользу. Да и встреча с контролёром не лучшее лекарство. Ты пойди, отдохни, а то больно на тебя смотреть. Наш разговор утром продолжим, а я пока ребятам скажу, чтобы убрали тело этого мозголома отсюда.</text>
+    </string>
+    <string id="pb_quest_line_lutiy_talk_to_go_sleep_9">
+        <text>И правда, поспать сейчас не помешало бы.</text>
+    </string>
+    <string id="pb_quest_line_snake_start_10">
+        <text>Так, сейчас. Всё, метка должна уже быть в КПК.</text>
+    </string>
+    <string id="pb_quest_line_snake_start_12">
+        <text>Привет, Зверь. Ты что-то хотел?</text>
+    </string>
+    <string id="pb_quest_line_snake_start_13">
+        <text>Тогда пошли.</text>
+    </string>
+    <string id="pb_quest_line_snake_start_14">
+        <text>Слушаю тебя, Зверь.</text>
+    </string>
+    <string id="pb_quest_line_snake_start_15">
+        <text>Здравствуй. Ты искал меня?</text>
+    </string>
+    <string id="pb_quest_line_snake_start_16">
+        <text>Да, Зверь. Как ты мог заметить, дефицит еды и патронов - это не единственные наши проблемы, помимо этого у нас катострофически не хватает питьевой воды, хоть возле сарая есть колодец, но вода в нём радиоактивная и пить её не очистив от радиации - опасно для жизни. Но есть выход, временами внутри аномалии можно встретить аномальное растение, когда я помогал учёным на Янтаре, те с помощью такого растения, очищали воду, путём кипячения его в воде.</text>
+    </string>
+    <string id="pb_quest_line_snake_start_17">
+        <text>Ты хочешь меня на поиски какого-то гербария отправить? Это не мой профиль.</text>
+    </string>
+    <string id="pb_quest_line_snake_start_18">
+        <text>Нет, Зверь, тебе ничего искать не надо, Резак сообщил мне несколько точек, где он, с вышки, накануне видел подобные растения, просто сходи со мной, там мутантов много, а у меня патронов совсем чуть-чуть осталось. Подсобишь?</text>
+    </string>
+    <string id="pb_quest_line_snake_start_19">
+        <text>Ладно, прикрою тебя, когда отправляемся?</text>
+    </string>
+    <string id="pb_quest_line_snake_start_2">
+        <text>Наёмник, поговорим потом, сейчас бери ноги в руки и дуй, вместе с Москитом, зомбей стрелять.</text>
+    </string>
+    <string id="pb_quest_line_snake_start_20">
+        <text>Прямо сейчас, если ты готов конечно...</text>
+    </string>
+    <string id="pb_quest_line_snake_start_21">
+        <text>Я готов, можем идти.</text>
+    </string>
+    <string id="pb_quest_line_snake_start_22">
+        <text>Погоди немного, снарягу надо проверить.</text>
+    </string>
+    <string id="pb_quest_line_snake_start_24">
+        <text>Слушаю тебя, Зверь.</text>
+    </string>
+    <string id="pb_quest_line_snake_start_26">
+        <text>Вот и всё, растения у меня, спасибо, что прикрыл, Зверь. Теперь я смогу заняться очисткой воды для группы, этих растений должно хватить на какое-то время. Кстати, если у тебя закончится вода в фляге, то заходи ко мне, с радостью очищу для тебя воду.</text>
+    </string>
+    <string id="pb_quest_line_snake_start_28">
+        <text>Ну, Зверь, ты уже готов отправляться за растениями?</text>
+    </string>
+    <string id="pb_quest_line_snake_start_29">
+        <text>Готов, можем идти.</text>
+    </string>
+    <string id="pb_quest_line_snake_start_3">
+        <text>Пойду я тогда.</text>
+    </string>
+    <string id="pb_quest_line_snake_start_30">
+        <text>Погоди немного, я еще не готов.</text>
+    </string>
+    <string id="pb_quest_line_snake_start_31">
+        <text>Не за что. Принял, как закончится вода в фляге - зайду.</text>
+    </string>
+    <string id="pb_quest_line_snake_start_33">
+        <text>Привет, Зверь. Ты что-то хотел?</text>
+    </string>
+    <string id="pb_quest_line_snake_start_34">
+        <text>Моя фляга уже пустая, наполнишь её?</text>
+    </string>
+    <string id="pb_quest_line_snake_start_35">
+        <text>Без проблем, Зверь, давай её сюда.</text>
+    </string>
+    <string id="pb_quest_line_snake_start_36">
+        <text>Вот, держи флягу.</text>
+    </string>
+    <string id="pb_quest_line_snake_start_37">
+        <text>Я воду очищу, дождусь, пока она остынет и сообщу тебе, чтобы ты за флягой зашёл. Идёт?</text>
+    </string>
+    <string id="pb_quest_line_snake_start_38">
+        <text>Хорошо, буду ждать сообщения от тебя.</text>
+    </string>
+    <string id="pb_quest_line_snake_start_40">
+        <text>Вот, держи свою флягу, вода очищена и уже остыла, можешь хоть прямо сейчас пить.</text>
+    </string>
+    <string id="pb_quest_line_snake_start_41">
+        <text>Спасибо, Змей, очень выручил.</text>
+    </string>
+    <string id="pb_quest_line_snake_start_42">
+        <text>Слушай, тут такое дело, я еще воду для тебя не очистил, давай на плотей пойдем позже, я как с водой закончу, сообщу тебе, хорошо?</text>
+    </string>
+    <string id="pb_quest_line_snake_start_44">
+        <text>Вода еще не очищена, зайди позже.</text>
+    </string>
+    <string id="pb_quest_line_snake_start_46">
+        <text>Всё, я готов идти. Воду я уже очистил, вот, держи свою флягу. Теперь можем и нескольких плотей пришить, пока наш обед в аномалиях не сдох.</text>
+    </string>
+    <string id="pb_quest_line_snake_start_47">
+        <text>Спасибо за воду. Ставь метку на карту, где находятся эти плоти и погнали.</text>
+    </string>
+    <string id="pb_quest_line_snake_start_48">
+        <text>Так, сейчас. Всё, метка должна уже быть в КПК.</text>
+    </string>
+    <string id="pb_quest_line_snake_start_49">
+        <text>Тогда пошли.</text>
+    </string>
+    <string id="pb_quest_line_snake_start_50">
+        <text>Ладно, плоти подождут.</text>
+    </string>
+    <string id="pb_quest_line_snake_start_51">
+        <text>Ладно, подойду позже.</text>
+    </string>
+    <string id="pb_quest_line_snake_start_53">
+        <text>Вот, держи свою флягу, вода очищена и уже остыла, можешь хоть прямо сейчас пить.</text>
+    </string>
+    <string id="pb_quest_line_snake_start_54">
+        <text>Спасибо, Змей, очень выручил.</text>
+    </string>
+    <string id="pb_quest_line_snake_start_6">
+        <text>Приветствую, Зверь! Ну, что готов подстрелить парочку радиоактивных свинок?</text>
+    </string>
+    <string id="pb_quest_line_snake_start_7">
+        <text>Да, готов. Выдвигаемся прямо сейчас.</text>
+    </string>
+    <string id="pb_quest_line_snake_start_8">
+        <text>Отлично, тогда погнали, пока наш обед в аномалиях не сдох.</text>
+    </string>
+    <string id="pb_quest_line_snake_start_9">
+        <text>Ставь метку на карту, где находятся эти плоти и погнали.</text>
+    </string>
+    <string id="pb_quest_line_snake_water_clean_0">
+        <text>У меня фляга пустая, наполнишь?</text>
+    </string>
+    <string id="pb_quest_line_snake_water_clean_1">
+        <text>Конечно, без проблем, Зверь. Давай сюда свою флягу.</text>
+    </string>
+    <string id="pb_quest_line_snake_water_clean_2">
+        <text>Вот, держи флягу.</text>
+    </string>
+    <string id="pb_quest_line_snake_water_clean_3">
+        <text>Я воду очищу, дождусь, пока она остынет и сообщу тебе, чтобы ты за флягой зашёл. Хорошо?</text>
+    </string>
+    <string id="pb_quest_line_snake_water_clean_4">
+        <text>Договорились, буду ждать сообщения от тебя.</text>
+    </string>
+    <string id="pb_quest_lutiy_meet_to_all_0">
+        <text>Расскажи о своей группе.</text>
+    </string>
+    <string id="pb_quest_lutiy_meet_to_all_1">
+        <text>О ком хочешь узнать?</text>
+    </string>
+    <string id="pb_quest_lutiy_meet_to_all_10">
+        <text>Я передумал.</text>
+    </string>
+    <string id="pb_quest_lutiy_meet_to_all_11">
+        <text>Резак мужик строгий, да и характер у него сложный, но особо не конфликтный, даже наоборот, конфликты внутри группы помогает решить, если таковы возникают. Попал в аномалию где-то месяца два назад, долго в себя прийти не мог, но всё же адаптировался. Сейчас занимается разведкой местности, раньше этим Падальщик занимался. В целом, мужик неплохой, но в последнее время духом пал сильно, постоянно городит о том, что не выбраться нам отсюда.</text>
+    </string>
+    <string id="pb_quest_lutiy_meet_to_all_12">
+        <text>Спасибо за информацию.</text>
+    </string>
+    <string id="pb_quest_lutiy_meet_to_all_13">
+        <text>О Кувалде? Ну, что же, прошел он в своё время огонь и воду, закалился как сталь, просто кремень, а не мужик, я его еще до того как в аномалию попал, знал. В те времена он на Складах со свободовцами порядки налаживал, там его все ценили и уважали, но после того как здесь оказался, изменился он очень, друзей среди врагов здесь нашел, да и добрее стал. С нами он примерно два с половиной месяца уже.</text>
+    </string>
+    <string id="pb_quest_lutiy_meet_to_all_14">
+        <text>Хм, хоть какая-то польза от этого места есть, спасибо за информацию.</text>
+    </string>
+    <string id="pb_quest_lutiy_meet_to_all_15">
+        <text>Довольно молодой парень, по глупости вступивший в "Долг", по крайней мере, он сам так говорит, если поднаберется опыта, то сможет стать вполне неплохим бойцом, но если выберется отсюда, то вряд ли к "Долгу" вернется. Он с Кувалдой сдружился, хотя поначалу вражески настроены друг к другу были, тот ведь свободовцем был. С нами он чуть больше месяца уже.</text>
+    </string>
+    <string id="pb_quest_lutiy_meet_to_all_16">
+        <text>Маркус - это наш местный музыкант, ну и моя правая рука, если можно так выразиться, если я не в силах с чем-то справиться, то он помогает мне с этим. Мы вместе с ним в аномалию встряли, был еще третий, но сейчас не об этом. Можно сказать, что и это место мы с ним в порядок привели, если это можно порядком назвать, ну, а потом сталкеров здесь собрали.</text>
+    </string>
+    <string id="pb_quest_lutiy_meet_to_all_17">
+        <text>Спасибо за информацию.</text>
+    </string>
+    <string id="pb_quest_lutiy_meet_to_all_18">
+        <text>Спасибо за информацию, Лютый.</text>
+    </string>
+    <string id="pb_quest_lutiy_meet_to_all_19">
+        <text>Москит в прошлом снайпер, поэтому в точности стрельбы ему нет равных, будет нужна помощь хорошего стрелка, обращайся к нему. Если же говорить о других его качествах, то он довольно добродушный и болтливый, хоть кому-то удается не падать духом здесь. Он уже около трех месяцев с нами.</text>
+    </string>
+    <string id="pb_quest_lutiy_meet_to_all_2">
+        <text>Расскажи про Резака.</text>
+    </string>
+    <string id="pb_quest_lutiy_meet_to_all_20">
+        <text>Москит в прошлом снайпер, поэтому в точности стрельбы ему не было равных. Если же говорить о других его качествах, то он был довольно добродушным и болтливым, хоть кому-то из нас удавалось не падать духом здесь. Он около трех месяцев был с нами. Жаль, что погиб, так и не выбравшись отсюда.</text>
+    </string>
+    <string id="pb_quest_lutiy_meet_to_all_21">
+        <text>Спасибо за информацию.</text>
+    </string>
+    <string id="pb_quest_lutiy_meet_to_all_22">
+        <text>Дуболом - это тот, без которого нам пришлось бы худо, охотник и добытчик, после того как Падальщик пропал, регулярно помогает группе, снабжая нас мясом мутантов. Не знаю, как бы повернулась наша жизнь, если бы его с нами не было. Он с нами более трех месяцев уже.</text>
+    </string>
+    <string id="pb_quest_lutiy_meet_to_all_23">
+        <text>Спасибо за информацию.</text>
+    </string>
+    <string id="pb_quest_lutiy_meet_to_all_24">
+        <text>О Шурупе нет нужды долго говорить, он сердце нашей группы, без него мы бы не смогли починить своё снаряжение, а без снаряги протянуть здесь долго нам бы не удалось. Парни ему разный хлам приносят, он его выкупает за деньги, а затем с помощью этого хлама чинит нашу снарягу и без разницы, что не бесплатно он это делает. Он попал в аномалию через неделю или две, после нашего здесь появления, с тех пор и помогает нам.</text>
+    </string>
+    <string id="pb_quest_lutiy_meet_to_all_25">
+        <text>Спасибо за информацию.</text>
+    </string>
+    <string id="pb_quest_lutiy_meet_to_all_26">
+        <text>О себе говорить долго не буду, попал сюда во время штурма Лиманска, мы тогда с Маркусом и Гильзой в одном отряде были, все вместе сюда и попали, вот только не всем из нас дожить до этого момента удалось. Гильза главным в нашем отряде был, главным он остался и после пробуждения в аномалии, ну а после его исчезновения, его место занял я.</text>
+    </string>
+    <string id="pb_quest_lutiy_meet_to_all_27">
+        <text>Спасибо за информацию.</text>
+    </string>
+    <string id="pb_quest_lutiy_meet_to_all_28">
+        <text>Да не за что, если еще о ком-то захочешь подробней узнать, то спрашивай.</text>
+    </string>
+    <string id="pb_quest_lutiy_meet_to_all_3">
+        <text>Расскажи про Кувалду.</text>
+    </string>
+    <string id="pb_quest_lutiy_meet_to_all_4">
+        <text>Расскажи про Змея.</text>
+    </string>
+    <string id="pb_quest_lutiy_meet_to_all_5">
+        <text>Расскажи про Маркуса.</text>
+    </string>
+    <string id="pb_quest_lutiy_meet_to_all_6">
+        <text>Расскажи про Москита.</text>
+    </string>
+    <string id="pb_quest_lutiy_meet_to_all_7">
+        <text>Расскажи про Дуболома.</text>
+    </string>
+    <string id="pb_quest_lutiy_meet_to_all_8">
+        <text>Расскажи про Шурупа.</text>
+    </string>
+    <string id="pb_quest_lutiy_meet_to_all_9">
+        <text>Расскажи о себе.</text>
+    </string>
+    <string id="pb_quest_lutiy_meet_to_markus_0">
+        <text>Приветствую, Зверь. Ты по какому делу ко мне?</text>
+    </string>
+    <string id="pb_quest_lutiy_meet_to_markus_1">
+        <text>Маркус должен был уже вернуться, но его нет... Ты не знаешь, куда он отправился?</text>
+    </string>
+    <string id="pb_quest_lutiy_meet_to_markus_2">
+        <text>Хм, нет не знаю. Он ничего не говорил мне, погоди минуту, я попробую засечь сигнал его КПК.</text>
+    </string>
+    <string id="pb_quest_lutiy_meet_to_markus_3">
+        <text>Давай, жду.</text>
+    </string>
+    <string id="pb_quest_lutiy_meet_to_markus_end_2">
+        <text>Зверь, кажется я засёк сигнал КПК Маркуса, точнее, я засёк зону последней активности КПК. Срочно беги туда, я чувствую, что с Маркусом случилось что-то очень не хорошее.</text>
+    </string>
+    <string id="pb_quest_lutiy_meet_to_markus_end_3">
+        <text>Понял тебя, Лютый. Скидывай координаты. Пойду, проверю.</text>
+    </string>
+    <string id="pb_quest_lutiy_meet_to_markus_end_5">
+        <text>Зверь, разговоры потом, сходи, проверь последнюю зону активности КПК Маркуса, мы должны разыскать его.</text>
+    </string>
+    <string id="pb_quest_lutiy_meet_to_murad_0">
+        <text>Я по поводу сигнала SOS.</text>
+    </string>
+    <string id="pb_quest_lutiy_meet_to_murad_1">
+        <text>Слушаю тебя, ты поговорил с тем, кто его отправил?</text>
+    </string>
+    <string id="pb_quest_lutiy_meet_to_murad_10">
+        <text>Скорее всего.</text>
+    </string>
+    <string id="pb_quest_lutiy_meet_to_murad_2">
+        <text>Да, тот сталкер, что отправлял сигнал бедствия, уже здесь, я довел его до базы.</text>
+    </string>
+    <string id="pb_quest_lutiy_meet_to_murad_3">
+        <text>Я думаю, что ты правильно поступил, Зверь. В такой ситуации нужно держаться вместе, лишний ствол нам не помешает. Он хоть понимает, куда он встрял, ты ему объяснил?</text>
+    </string>
+    <string id="pb_quest_lutiy_meet_to_murad_4">
+        <text>Да, я рассказал ему. Когда я его нашел, он сказал, что за ним гнались наёмники.</text>
+    </string>
+    <string id="pb_quest_lutiy_meet_to_murad_5">
+        <text>А вот это уже проблема... Ладно, я думаю, что у них хватит мозгов не лезть в аномалию. Зверь, сходи, поговори с ним, расспроси, что да как. Чем больше мы будем знать о нем - тем больше у нас будет оснований доверять ему.</text>
+    </string>
+    <string id="pb_quest_lutiy_meet_to_murad_6">
+        <text>Да, думаю с ним нужно поговорить. Пойду я.</text>
+    </string>
+    <string id="pb_quest_lutiy_meet_to_murad_7">
+        <text>Слушаю тебя, ты поговорил с тем, кто его отправил?</text>
+    </string>
+    <string id="pb_quest_lutiy_meet_to_murad_8">
+        <text>Тот сталкер, что отправлял сигнал бедствия, погиб, мне не удалось привести его к базе.</text>
+    </string>
+    <string id="pb_quest_lutiy_meet_to_murad_9">
+        <text>Жаль сталкера, но Зона безпощадна, я уверен, что ты сделал всё возможное, чтобы спасти ему жизнь.</text>
+    </string>
+    <string id="pb_quest_lutiy_talk_after_foundet_padalshik_0">
+        <text>Я нашел Падальщика, он мёртв.</text>
+    </string>
+    <string id="pb_quest_lutiy_talk_after_foundet_padalshik_1">
+        <text>Как мёртв? Где ты нашел его, Зверь?</text>
+    </string>
+    <string id="pb_quest_lutiy_talk_after_foundet_padalshik_10">
+        <text>Сталкеры, которых обыскивал Падальщик, не были мертвы до этого, он сам убивал их.</text>
+    </string>
+    <string id="pb_quest_lutiy_talk_after_foundet_padalshik_11">
+        <text>Интересно, нам он, об этом ничего не говорил. Зверь, нам нужно отыскать этот дешифратор, думаю, что сейчас это, то что нам нужно.</text>
+    </string>
+    <string id="pb_quest_lutiy_talk_after_foundet_padalshik_12">
+        <text>Не беспокойся, я и сам хочу отыскать его.</text>
+    </string>
+    <string id="pb_quest_lutiy_talk_after_foundet_padalshik_13">
+        <text>Отлично, Зверь. Как только будет новая информация о нем, приходи - поговорим. Что еще было в КПК Падальщика?</text>
+    </string>
+    <string id="pb_quest_lutiy_talk_after_foundet_padalshik_14">
+        <text>Хм, ну это конечно его дело, я и так рад, что он нам хоть как-то помочь пытался. Если найдешь его тайник, тащи на базу. Помозгуем, что с ним делать, ему то он без надобности уже. Еще что-то в КПК было?</text>
+    </string>
+    <string id="pb_quest_lutiy_talk_after_foundet_padalshik_15">
+        <text>Эта, падла, еще и ныкала самый жирный хабар? Вот же... Ладно, найдешь тайник его, тащи на базу, помозгуем, что с ним делать.</text>
+    </string>
+    <string id="pb_quest_lutiy_talk_after_foundet_padalshik_16">
+        <text>Ты, серьезно? Вот, гадина! Узнай я это раньше, в порошок бы стер его. Ну и, слава Богу, что он сдох, так и надо ему.</text>
+    </string>
+    <string id="pb_quest_lutiy_talk_after_foundet_padalshik_17">
+        <text>Да, скользкий тип оказался, но теперь он мёртв.</text>
+    </string>
+    <string id="pb_quest_lutiy_talk_after_foundet_padalshik_18">
+        <text>Эх, вот, сволочь! А я ему доверял еще... Спасибо, что открыл мне глаза. Что-то еще было в КПК этой, паскуды?</text>
+    </string>
+    <string id="pb_quest_lutiy_talk_after_foundet_padalshik_19">
+        <text>Нет, это всё. Вот, возьми его КПК, в нём более подробно всё описывается.</text>
+    </string>
+    <string id="pb_quest_lutiy_talk_after_foundet_padalshik_2">
+        <text>За забором, он, видимо перешел через телепорт на севере, я так его и нашел.</text>
+    </string>
+    <string id="pb_quest_lutiy_talk_after_foundet_padalshik_20">
+        <text>Мда, редкой сволочью Падальщик оказался. Постарайся найти этот дешифратор, думаю, что сейчас это, то что нам нужно.</text>
+    </string>
+    <string id="pb_quest_lutiy_talk_after_foundet_padalshik_21">
+        <text>Не беспокойся, я и сам хочу отыскать его.</text>
+    </string>
+    <string id="pb_quest_lutiy_talk_after_foundet_padalshik_22">
+        <text>Отлично, Зверь. Как только будет новая информация о дешифраторе, приходи - поговорим. Что еще было в КПК Падальщика?</text>
+    </string>
+    <string id="pb_quest_lutiy_talk_after_foundet_padalshik_23">
+        <text>Хм, ну это конечно его дело, я и так рад, что он нам хоть как-то помочь пытался. Если найдешь его тайник, тащи на базу. Помозгуем, что с ним делать, ему то он без надобности уже.</text>
+    </string>
+    <string id="pb_quest_lutiy_talk_after_foundet_padalshik_24">
+        <text>Я уже нашел его тайник.</text>
+    </string>
+    <string id="pb_quest_lutiy_talk_after_foundet_padalshik_25">
+        <text>Да? Молодец, Зверь, что же ты там нашел?</text>
+    </string>
+    <string id="pb_quest_lutiy_talk_after_foundet_padalshik_26">
+        <text>Патроны, аптечки и самое главное - контейнер, он закрыт на ключ, ключа в тайнике не было.</text>
+    </string>
+    <string id="pb_quest_lutiy_talk_after_foundet_padalshik_27">
+        <text>Ага, давай сюда этот контейнер, я отнесу его Шурупу, может у него получится вскрыть его без ключа.</text>
+    </string>
+    <string id="pb_quest_lutiy_talk_after_foundet_padalshik_28">
+        <text>Вот, держи.</text>
+    </string>
+    <string id="pb_quest_lutiy_talk_after_foundet_padalshik_29">
+        <text>Я позову тебя, как только Шуруп его вскроет. Что еще в КПК было?</text>
+    </string>
+    <string id="pb_quest_lutiy_talk_after_foundet_padalshik_3">
+        <text>Мда, жаль его, толковым сталкером был, столько раз нас выручал...</text>
+    </string>
+    <string id="pb_quest_lutiy_talk_after_foundet_padalshik_30">
+        <text>Мда, много нового о Падальщике узнать довелось... Ладно, тебя тут Дуболом искал и вояка наш говорил, что у него к тебе разговор, иди и поговори с ними, дай мне побыть одному.</text>
+    </string>
+    <string id="pb_quest_lutiy_talk_after_foundet_padalshik_31">
+        <text>Хорошо, пойду поговорю с ним.</text>
+    </string>
+    <string id="pb_quest_lutiy_talk_after_foundet_padalshik_4">
+        <text>Не таким уж и толковым был Падальщик. Кстати, я забыл еще кое-что сказать, при нем был КПК.</text>
+    </string>
+    <string id="pb_quest_lutiy_talk_after_foundet_padalshik_5">
+        <text>Ты о чем, Зверь? А КПК выброси, в нем, наверное, нет ничего интересного...</text>
+    </string>
+    <string id="pb_quest_lutiy_talk_after_foundet_padalshik_6">
+        <text>Как раз наоборот, там есть, довольно-таки, интересные записи.</text>
+    </string>
+    <string id="pb_quest_lutiy_talk_after_foundet_padalshik_7">
+        <text>Да? И о чем ты узнал из КПК Падальщика?</text>
+    </string>
+    <string id="pb_quest_lutiy_talk_after_foundet_padalshik_8">
+        <text>Там есть запись о том, что он нашел какой-то дешифратор, который способен вывести из аномалии, но он не указал куда его спрятал.</text>
+    </string>
+    <string id="pb_quest_lutiy_talk_after_foundet_padalshik_9">
+        <text>Падальщик не отдавал вам все, самые ценные трофеи он куда-то прятал, а вот куда я не знаю.</text>
+    </string>
+    <string id="pb_quest_lutiy_talk_to_padalshik_0">
+        <text>На счет Падальщика, когда он пропал?</text>
+    </string>
+    <string id="pb_quest_lutiy_talk_to_padalshik_1">
+        <text>Падальщик пропал два дня назад. Услышал какой-то сигнал, не далеко от базы, пошел проверить и не вернулся. Я на его поиски Резака и Москита отправил, а они вместо него, нашли тебя. Но ты ничего не подумай, я рад, что ты появился. С зомбированными помог и контроллером, с патронами подсобил, спасибо тебе за это, Зверь.</text>
+    </string>
+    <string id="pb_quest_lutiy_talk_to_padalshik_2">
+        <text>Не благодари, это лишнее... Я прочешу местность, может, найду тогда что-то.</text>
+    </string>
+    <string id="pb_quest_lutiy_talk_to_padalshik_3">
+        <text>Буду рад, если найдешь его, Падальщик был хорошим сталкером, помог очень сильно нам.</text>
+    </string>
+    <string id="pb_quest_lutiy_talk_to_padalshik_4">
+        <text>Если найду что-то, то сообщу тебе.</text>
+    </string>
+    <string id="pb_quest_padalshik_habar_done_0">
+        <text>Я нашел тайник Падальщика.</text>
+    </string>
+    <string id="pb_quest_padalshik_habar_done_1">
+        <text>Да? Что же ты обнаружил в тайнике?</text>
+    </string>
+    <string id="pb_quest_padalshik_habar_done_2">
+        <text>Патроны, аптечки и самое главное - контейнер, он закрыт на ключ, ключа в тайнике не было.</text>
+    </string>
+    <string id="pb_quest_padalshik_habar_done_3">
+        <text>Ага, давай сюда этот контейнер, я отнесу его Шурупу, может у него получится вскрыть его без ключа.</text>
+    </string>
+    <string id="pb_quest_padalshik_habar_done_4">
+        <text>Вот, держи контейнер.</text>
+    </string>
+    <string id="pb_quest_padalshik_habar_done_5">
+        <text>Я позову тебя, как только Шуруп вскроет этот контейнер.</text>
+    </string>
+    <string id="pb_quest_padalshik_habar_done_6">
+        <text>Понял тебя, Лютый. Тогда я зайду позже.</text>
+    </string>
+    <string id="pb_rezak_first_meet_10">
+        <text>Может, расскажешь чего?</text>
+    </string>
+    <string id="pb_rezak_first_meet_11">
+        <text>Ну, может и расскажу. Смотря, что тебя интересует.</text>
+    </string>
+    <string id="pb_rezak_first_meet_12">
+        <text>Что думаешь об обитателях базы?</text>
+    </string>
+    <string id="pb_rezak_first_meet_13">
+        <text>Как думаешь, удастся ли нам, отсюда выбраться?</text>
+    </string>
+    <string id="pb_rezak_first_meet_14">
+        <text>Кем ты был раньше?</text>
+    </string>
+    <string id="pb_rezak_first_meet_15">
+        <text>Я передумал.</text>
+    </string>
+    <string id="pb_rezak_first_meet_16">
+        <text>Пойду я.</text>
+    </string>
+    <string id="pb_rezak_first_meet_17">
+        <text>А что тут думать, нормальные мужики. Мы все разные, но общая беда сплотила нас как цемент.</text>
+    </string>
+    <string id="pb_rezak_first_meet_18">
+        <text>Не знаю, но даже если и удастся - то не всем, это точно. Я до сих пор удивляюсь, как мы тут столько протянуть умудрились. Мало того, что жратвы и патронов нет, тут есть вещи и пострашнее. Вышел я позавчера ночью воздухом свежим подышать, и слышу такой отчётливый запах гари. Я уж подумал, может горит что… А потом увидел большой такой столп дыма, в центре которого вроде как стоит кто-то. Я в бинокль решил глянуть, кто там стоит, но в темноте не смог разобрать нифига. Решил я ближе подойти, как вдруг раздался смех, и дым этот пропал, и тот, кто в дыму стоял - тоже. Не знаю, что это было такое, но точно ничего хорошего, оно нам не предвещает.</text>
+    </string>
+    <string id="pb_rezak_first_meet_19">
+        <text>Сталкер я, одиночка. Сначала работой на Сидоровича промышлял, а потом на Янтарь к науке подался. Там и выплаты регулярные, и медицинское обслуживание, и военные не гоняют. Но, правда и в такую жопу эти яйцеголовые могут отправить, что просто жуть. Перед тем как очнуться в этой дыре, я помню, как шёл к аномалии одной на Янтаре за образцами для ученых, а потом вспышка яркая и всё.</text>
+    </string>
+    <string id="pb_rezak_first_meet_2">
+        <text>О, это ты, наёмник, выглядишь уже лучше. Спасибо, что зомбированных одолеть помог.</text>
+    </string>
+    <string id="pb_rezak_first_meet_3">
+        <text>Тебе спасибо, за то, что шкуру мою спас. Скажи, а ты помнишь место где меня нашел? Возможно там, что-то из моей снаряги осталось.</text>
+    </string>
+    <string id="pb_rezak_first_meet_4">
+        <text>Помню, как не помнить-то? Да только ничего ты там не найдешь, я тот квадрат излазил вдоль и поперёк. Сам пытался твою снарягу отыскать, а по возможности и выход из этой дыры, однако я всё ещё здесь, как видишь.</text>
+    </string>
+    <string id="pb_rezak_first_meet_5">
+        <text>Но ты всё же скинь координаты, хочу сам всё проверить.</text>
+    </string>
+    <string id="pb_rezak_first_meet_6">
+        <text>Да пожалуйста. Так, вроде бы всё, проверь свой КПК.</text>
+    </string>
+    <string id="pb_rezak_first_meet_7">
+        <text>Благодарю. Ладно, пойду поищу свой рюкзак.</text>
+    </string>
+    <string id="pb_rezak_first_meet_9">
+        <text>Ну, наёмник. С чем пришел?</text>
+    </string>
+    <string id="pb_shurup_start_dialog_3">
+        <text>Здравствуй, наёмник. Рад, что ты в порядке, я тут вроде-как местный техник, можешь приносить мне сломанные стволы, буду покупать у тебя их. Увы, но чиню и модифицирую снарягу я не за бесплатно, собираюсь в итоге покинуть это место, поэтому стараюсь понемногу собирать деньги, да и стволы на детали у других тоже за что-то покупать нужно. Кстати, если найдешь здесь какие-то инструменты, то приноси мне, найду им применение.</text>
+    </string>
+    <string id="pb_shurup_start_dialog_4">
+        <text>Здравствуй, наёмник. Отремонтировать что-то нужно или улучшить?</text>
+    </string>
+    <string id="pb_shurup_start_dialog_5">
+        <text>Понял тебя, буду иметь ввиду.</text>
+    </string>
+    <string id="pb_shurup_start_dialog_6">
+        <text>Приходи, как будет ко мне дело какое-то.</text>
+    </string>
+    <string id="pb_shurup_talk_to_open_habar_0">
+        <text>Что там на счет контейнера-тайника Падальщика?</text>
+    </string>
+    <string id="pb_shurup_talk_to_open_habar_1">
+        <text>Я открыл его, оказалось, что там довольно много вещей, там даже кое-какие инструменты были, так что теперь я смогу делать более сложные апгрейды, но сейчас не об этом. Как я написал тебе ранее, часть этого снаряжения ты можешь забрать себе, а остальное распределим между другими ребятами.</text>
+    </string>
+    <string id="pb_shurup_talk_to_open_habar_10">
+        <text>Давай его мне.</text>
+    </string>
+    <string id="pb_shurup_talk_to_open_habar_11">
+        <text>Он мне не нужен, что там еще?</text>
+    </string>
+    <string id="pb_shurup_talk_to_open_habar_12">
+        <text>Это всё, больше в тайнике особо ничего не было, только медикаменты и патроны, их я отдам Лютому, а он уже распределит это всё между группой.</text>
+    </string>
+    <string id="pb_shurup_talk_to_open_habar_13">
+        <text>Без проблем, вот твой ствол. Да, кстати, держи в качестве бонуса пачку патронов к нему, они тоже в тайнике лежали, калибр редкий, у нас его никто не использует. Так, дальше у нас тут две пачки армейских патронов калибра 5,45x39 мм с бронебойной пулей, очень эффективны против бронежилетов.</text>
+    </string>
+    <string id="pb_shurup_talk_to_open_habar_14">
+        <text>Пригодятся, давай их сюда.</text>
+    </string>
+    <string id="pb_shurup_talk_to_open_habar_15">
+        <text>Нет, патроны мне сейчас не нужны, что там еще?</text>
+    </string>
+    <string id="pb_shurup_talk_to_open_habar_16">
+        <text>Хорошо, держи патроны. Дальше у нас тут артефакт «Черный ангел», довольно неплохой, между прочим, дает довольно сильное пси-сопротивление. Берешь?</text>
+    </string>
+    <string id="pb_shurup_talk_to_open_habar_17">
+        <text>Да, возьму.</text>
+    </string>
+    <string id="pb_shurup_talk_to_open_habar_18">
+        <text>Нет, он мне не нужен. Что там еще?</text>
+    </string>
+    <string id="pb_shurup_talk_to_open_habar_19">
+        <text>Вот, держи артефакт, больше в тайнике особо ничего не было, только медикаменты и патроны, их я отдам Лютому, а он уже распределит это всё между группой.</text>
+    </string>
+    <string id="pb_shurup_talk_to_open_habar_2">
+        <text>Ну, тогда показывай, что там внутри.</text>
+    </string>
+    <string id="pb_shurup_talk_to_open_habar_20">
+        <text>Так, дальше у нас тут две пачки армейских патронов калибра 5,45x39 мм с бронебойной пулей, очень эффективны против бронежилетов.</text>
+    </string>
+    <string id="pb_shurup_talk_to_open_habar_21">
+        <text>Дальше у нас тут артефакт «Черный ангел», довольно неплохой, между прочим, дает довольно сильное пси-сопротивление. Берешь?</text>
+    </string>
+    <string id="pb_shurup_talk_to_open_habar_22">
+        <text>Хорошо. Бывай, Шуруп.</text>
+    </string>
+    <string id="pb_shurup_talk_to_open_habar_3">
+        <text>Так, начнем пожалуй с оптики 1ПН58, очень полезная вещь, имеет встроенный прибор ночного виденья, что облегчает наблюдение и обеспечение прицельной стрельбы ночью. Для установки на оружие используется крепление типа «ласточкин хвост».</text>
+    </string>
+    <string id="pb_shurup_talk_to_open_habar_4">
+        <text>Возьму её себе.</text>
+    </string>
+    <string id="pb_shurup_talk_to_open_habar_5">
+        <text>Это мне не нужно, давай дальше.</text>
+    </string>
+    <string id="pb_shurup_talk_to_open_habar_6">
+        <text>Хорошо, вот твоя оптика. Так, дальше у нас тут неплохой пистолет FN FNP 45, хоть и не модернизирован, но имеет очень хорошую убойность.</text>
+    </string>
+    <string id="pb_shurup_talk_to_open_habar_7">
+        <text>Давай его мне.</text>
+    </string>
+    <string id="pb_shurup_talk_to_open_habar_8">
+        <text>Он мне не нужен, что там еще?</text>
+    </string>
+    <string id="pb_shurup_talk_to_open_habar_9">
+        <text>Понял тебя. Так, дальше у нас тут неплохой пистолет FN FNP 45, хоть и не модернизирован, но имеет очень хорошую убойность.</text>
+    </string>
+    <string id="pb_shurup_talk_to_toolkit_1_0">
+        <text>Я тут инструменты кое-какие нашел, держи.</text>
+    </string>
+    <string id="pb_shurup_talk_to_toolkit_1_1">
+        <text>Тебе удалось отыскать инструменты для грубой работы? Они конечно вряд ли подойдут для работы, в которой нужна тонкость, но всё же очень меня выручат, большое спасибо, наёмник. Я тебе за это стоимость на ремонт и улучшения снижу, идёт?</text>
+    </string>
+    <string id="pb_shurup_talk_to_toolkit_1_2">
+        <text>Договорились, бывай.</text>
+    </string>
+    <string id="pb_soldier_oleynik_meet_10">
+        <text>Ищи дураков!</text>
+    </string>
+    <string id="pb_soldier_oleynik_meet_12">
+        <text>Ну, наёмник, не занят уже? Помочь сможешь?</text>
+    </string>
+    <string id="pb_soldier_oleynik_meet_13">
+        <text>Напомни-ка, какая помощь тебе требуется?</text>
+    </string>
+    <string id="pb_soldier_oleynik_meet_14">
+        <text>Нам бы радиопередатчик, что в этом подвале валялся, починить, для этого надо отыскать аккумулятор рабочий и два мотка медной проволоки. Я понимаю, что нужно большое везение, чтобы найти в этих местах аккумулятор, жаль, что с везением у нас не сложилось, раз застряли здесь... Медную проволоку, думаю, здесь найти шансов больше, но всё же, без аккумулятора у нас ничего не получится. В общем, если получится отыскать проволоку или аккумулятор, то тащи всё это мне. Думаю, тогда мне удастся починить эту бандуру, а затем можно будет попытаться отправить сигнал за границы аномалии. Глядишь, кто-то сигнал словит, и поможет нам хоть как-то...</text>
+    </string>
+    <string id="pb_soldier_oleynik_meet_15">
+        <text>Озадачил ты меня конечно. Ладно, если найду что-то из этого, то притащу тебе.</text>
+    </string>
+    <string id="pb_soldier_oleynik_meet_16">
+        <text>Сейчас занят, поговорим позже.</text>
+    </string>
+    <string id="pb_soldier_oleynik_meet_18">
+        <text>Ну, что там, наёмник? Удалось что-то найти?</text>
+    </string>
+    <string id="pb_soldier_oleynik_meet_2">
+        <text>Здоров, наёмник. Вот, потихоньку прихожу в себя, решил в подвал перебраться, чтобы остальным глаза не мозолить своим видом. Думаю, что для всех так будет лучше, да и мне в том числе.</text>
+    </string>
+    <string id="pb_soldier_oleynik_meet_20">
+        <text>Всё же удалось достать аккумулятор, еще один "счастливчик" в аномалию попал, он и поделился.</text>
+    </string>
+    <string id="pb_soldier_oleynik_meet_21">
+        <text>Мне удалось отыскать два мотка медной проволоки.</text>
+    </string>
+    <string id="pb_soldier_oleynik_meet_22">
+        <text>Сталкера жаль, конечно, но он здоровски нас выручил, я даже рад, что он попал в аномалию. Давай его сюда. А аккумулятор точно в рабочем состоянии?</text>
+    </string>
+    <string id="pb_soldier_oleynik_meet_23">
+        <text>Вот держи. Сказать сложно, он извлёк его из побитого радиопередатчика, но надо надеяться на лучшее.</text>
+    </string>
+    <string id="pb_soldier_oleynik_meet_24">
+        <text>Вот держи. Сказать сложно, он извлёк его из побитого радиопередатчика, но надо надеяться на лучшее.</text>
+    </string>
+    <string id="pb_soldier_oleynik_meet_25">
+        <text>Так, посмотрим... Ага, должен подойти. Только даже если он подойдет, то запустить его я не смогу сейчас, без медной проволоки я не смогу заменить сгоревшие контакты. Попытайся еще два мотка проволоки найти, тогда и будем пытаться эту бандуру починить.</text>
+    </string>
+    <string id="pb_soldier_oleynik_meet_26">
+        <text>Так, посмотрим... Ага, должен подойти. Если получится запустить с ним радиопередатчик то, думаю, я смогу отправить сигнал о помощи за границы аномалии. Зайди ко мне минут через двадцать, а я пока попытаюсь аккумулятор и сгоревшие контакты заменить.</text>
+    </string>
+    <string id="pb_soldier_oleynik_meet_27">
+        <text>Хорошо, подойду через двадцать минут.</text>
+    </string>
+    <string id="pb_soldier_oleynik_meet_29">
+        <text>Здоров, наёмник. Давай чуть-чуть позже поговорим, ладно?</text>
+    </string>
+    <string id="pb_soldier_oleynik_meet_3">
+        <text>Ну, это относительно хорошие вести. Мне тут Лютый передал, что ты хотел со мной поговорить, это так?</text>
+    </string>
+    <string id="pb_soldier_oleynik_meet_30">
+        <text>Хорошо, пойду я тогда.</text>
+    </string>
+    <string id="pb_soldier_oleynik_meet_32">
+        <text>Здоров, наёмник. С чем пожаловал?</text>
+    </string>
+    <string id="pb_soldier_oleynik_meet_33">
+        <text>А это ты, наёмник. По какому вопросу ко мне?</text>
+    </string>
+    <string id="pb_soldier_oleynik_meet_34">
+        <text>Привет, наёмник. Слушаю, тебя.</text>
+    </string>
+    <string id="pb_soldier_oleynik_meet_35">
+        <text>Нет, пока не нашел.</text>
+    </string>
+    <string id="pb_soldier_oleynik_meet_36">
+        <text>Очень хорошо, наёмник, давай сюда проволоку. Жаль, что без аккумулятора она малого стоит...</text>
+    </string>
+    <string id="pb_soldier_oleynik_meet_37">
+        <text>Вот, держи. По поводу аккумулятора попытаюсь что-то придумать, хотя всё больше убеждаюсь, что в этом месте нам подобную вещицу не найти.</text>
+    </string>
+    <string id="pb_soldier_oleynik_meet_38">
+        <text>В любом случае, держи меня в курсе, хорошо?</text>
+    </string>
+    <string id="pb_soldier_oleynik_meet_39">
+        <text>Ладно, пойду я.</text>
+    </string>
+    <string id="pb_soldier_oleynik_meet_4">
+        <text>Да, наёмник, есть к тебе очень деликатное дело, если коротко, радиопередатчик, что валялся в этом подвале, вполне можно починить, мне ранее уже приходилось иметь дело с подобными устройствами. Главная его поломка - это убитый аккумулятор, ну и несколько перегоревших контактов, мне бы пару мотков медной проволоки и новый аккумулятор, думаю, тогда бы я смог вдохнуть в него жизнь. Это здорово нас выручило бы, ведь с помощью подобного устройства можно попытаться отправить сигнал за границы этой аномалии проклятой, может кто-то, из услышавших сигнал, поможет нам выбраться отсюда.</text>
+    </string>
+    <string id="pb_soldier_oleynik_meet_40">
+        <text>Очень хорошо, наёмник, давай сюда проволоку и зайди ко мне минут через двадцать, а я пока попытаюсь аккумулятор и сгоревшие контакты заменить.</text>
+    </string>
+    <string id="pb_soldier_oleynik_meet_41">
+        <text>Вот, держи проволоку. Хорошо, через двадцать минут зайду.</text>
+    </string>
+    <string id="pb_soldier_oleynik_meet_42">
+        <text>Хорошо, попытаюсь найти проволку для тебя.</text>
+    </string>
+    <string id="pb_soldier_oleynik_meet_44">
+        <text>Зайди немного позже, наёмник. Мне надо починкой радиопередатчика заняться.</text>
+    </string>
+    <string id="pb_soldier_oleynik_meet_46">
+        <text>Я всё же починил этот гребанный радиопередатчик, теперь главное словить кого-то в эфире и передать ему сигнал бедствия. Это я и буду пытаться сделать.</text>
+    </string>
+    <string id="pb_soldier_oleynik_meet_47">
+        <text>Ничего путного не словил, пока настраивал радиопередатчик?</text>
+    </string>
+    <string id="pb_soldier_oleynik_meet_48">
+        <text>Пока ничего толком словить не удалось, может быть только несколько обрывков фраз и неразборчивое бормотание, но скорее всего это старые эфиры. Буду дальше волны искать, но всё же спасибо, наёмник, что помог отремонтировать передатчик, кто знает, может он поможет нам выбраться отсюда.</text>
+    </string>
+    <string id="pb_soldier_oleynik_meet_49">
+        <text>Благодарить не стоит, общее дело делаем ведь. Увидимся позже.</text>
+    </string>
+    <string id="pb_soldier_oleynik_meet_5">
+        <text>Идея-то хорошая, но где я тебе здесь аккумулятор достану, да еще и рабочий?</text>
+    </string>
+    <string id="pb_soldier_oleynik_meet_6">
+        <text>Сейчас занят, давай позже об этом поговорим.</text>
+    </string>
+    <string id="pb_soldier_oleynik_meet_7">
+        <text>Я просто перебираю варианты, наёмник. Я понимаю, что нужно большое везение, чтобы найти в этих местах аккумулятор, жаль, что с везением у нас не сложилось, раз застряли здесь... Медную проволоку, думаю, здесь найти шансов больше, мне два мотка хватит, но всё же, без аккумулятора у нас ничего не получится. В общем, если выйдет отыскать проволоку или аккумулятор, то тащи всё это мне.</text>
+    </string>
+    <string id="pb_soldier_oleynik_meet_8">
+        <text>Озадачил ты меня конечно. Ладно, если найду что-то из этого, то притащу тебе.</text>
+    </string>
+    <string id="pb_soldier_oleynik_meet_9">
+        <text>Что за помощь нужна?</text>
+    </string>
+    <string id="pb_soldier_oleynik_meet_final_2">
+        <text>Здоров, наёмник. С чем пожаловал?</text>
+    </string>
+    <string id="pb_soldier_oleynik_meet_final_3">
+        <text>А это ты, наёмник. По какому вопросу ко мне?</text>
+    </string>
+    <string id="pb_soldier_oleynik_meet_final_4">
+        <text>Привет, наёмник. Слушаю, тебя.</text>
+    </string>
+    <string id="pb_soldier_oleynik_wounded_10">
+        <text>Блин... Мужик... Дай аптечку, а то загнусь ведь...</text>
+    </string>
+    <string id="pb_soldier_oleynik_wounded_11">
+        <text>Добрались... Благодарю за помощь, кто его знает, как бы все обернулось если бы ты не помог. Боль утихла немного. Расскажи где мы? Что это за место?</text>
+    </string>
+    <string id="pb_soldier_oleynik_wounded_12">
+        <text>Ты слышал хоть что-то о пространственном пузыре?</text>
+    </string>
+    <string id="pb_soldier_oleynik_wounded_13">
+        <text>Ну, слышал кое-что и знаю, в общих чертах, что он из себя представляет. А что?</text>
+    </string>
+    <string id="pb_soldier_oleynik_wounded_14">
+        <text>Поздравляю, ты как раз таки сейчас в пространственном пузыре.</text>
+    </string>
+    <string id="pb_soldier_oleynik_wounded_15">
+        <text>Вот же... Угораздило нас к складам именно сегодня лететь... И что самое главное, хрен его знает как мы над этим местом оказались, его ни на одной карте наших маршрутов нет. Ладно, проехали с этим. А вы, как я понял, выхода из аномалии не нашли?</text>
+    </string>
+    <string id="pb_soldier_oleynik_wounded_16">
+        <text>Нет, пока не нашли. Где остальные военные из вертолёта сейчас?</text>
+    </string>
+    <string id="pb_soldier_oleynik_wounded_17">
+        <text>Хреново... Все в вертолёте, вернее в том, что от него осталось... Разорвало ребят, скорее всего. А меня, по счастливой случайности, через окно волной выбросило. Гребаная воздушная аномалия, что б её, в секунде вся электроника выгорела.</text>
+    </string>
+    <string id="pb_soldier_oleynik_wounded_18">
+        <text>Ладно, поправляйся, боец. Скоро нам понадобится твоя помощь.</text>
+    </string>
+    <string id="pb_soldier_oleynik_wounded_20">
+        <text>Ладно, поищу, если твой ствол все еще где-то здесь.</text>
+    </string>
+    <string id="pb_soldier_oleynik_wounded_23">
+        <text>Здоров, наёмник, чего тебе?</text>
+    </string>
+    <string id="pb_soldier_oleynik_wounded_3">
+        <text>Вот же... Угораздило меня... Мужик... Мужик добей, не могу терпеть это...</text>
+    </string>
+    <string id="pb_soldier_oleynik_wounded_4">
+        <text>Погоди ты. Может я тебе еще смогу помочь.</text>
+    </string>
+    <string id="pb_soldier_oleynik_wounded_5">
+        <text>Думаешь у меня есть шанс?.. Адская боль просто... Не могу терпеть... Облегчи мои страдания...</text>
+    </string>
+    <string id="pb_soldier_oleynik_wounded_6">
+        <text>Выживешь, я видел раны и похуже. Для начала нужно тебя аптечкой подлечить, чтобы ты смог к базе дойти.</text>
+    </string>
+    <string id="pb_soldier_oleynik_wounded_7">
+        <text>Ладно... Делай, что желаешь... Только... Только пусть прекратится эта адская боль... Давай свою аптечку...</text>
+    </string>
+    <string id="pb_soldier_oleynik_wounded_8">
+        <text>Держи аптечку.</text>
+    </string>
+    <string id="pb_soldier_oleynik_wounded_9">
+        <text>У меня нет аптечки, но я сейчас попытаюсь найти.</text>
+    </string>
+    <string id="super_0">
+        <text>default text</text>
+    </string>
+</string_table>

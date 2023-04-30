@@ -1,0 +1,556 @@
+<?xml version="1.0" encoding="windows-1251" ?>
+<string_table>
+
+	<!-- «Группа Бизона» -->
+	<string id="storyline_quest_name">
+		<text>«Группа Бизона»: Найти пропавшую группу</text>
+	</string>
+	<string id="storyline_quest_1_name">
+		<text>«Группа Бизона»: Осмотреть тело</text>
+	</string>
+	<string id="storyline_quest_descr">
+		<text>Группа Бизона отправилась на поиски какого-то чудо арта, зачем им это понадобилось – неизвестно, единственное, что знаю наверняка, так это то, отправную точку группы, с этого, пожалуй и начну.</text>
+	</string>
+	<string id="storyline_quest_1_descr">
+		<text>Бизон мёртв, нужно осмотреть его тело, возможно найду что-нибудь.</text>
+	</string>
+	<!-- «Штурм» -->
+	<string id="dl_shturm_name">
+		<text>«Штурм»: Дождаться группу Краснопольского</text>
+	</string>
+	<string id="dl_shturm_1_name">
+		<text>«Штурм»: Поговорить с Краснопольским</text>
+	</string>
+	<string id="dl_shturm_2_name">
+		<text>«Штурм»: Уничтожить противника</text>
+	</string>
+	<string id="dl_shturm_3_name">
+		<text>«Штурм»: Поговорить с Краснопольским</text>
+	</string>
+	<string id="dl_shturm_descr">
+		<text>Необходимо дождаться группу Краснопольского, прежде чем атаковать стоянку Наёмников.</text>
+	</string>
+	<string id="dl_shturm_1_descr">
+		<text>Группа прибыла, стоит переговорить с Краснопольским перед началом штурма.</text>
+	</string>
+	<string id="dl_shturm_2_descr">
+		<text>Группа начала штурм, необходимо уничтожить наёмников.</text>
+	</string>
+	<string id="dl_shturm_3_descr">
+		<text>Наёмники мертвы, необходимо поговорить с Краснопольским.</text>
+	</string>
+	<!-- «Кража» -->
+	<string id="dl_return_treasure_name">
+		<text>«Кража»: Вернуть свои вещи</text>
+	</string>
+	<string id="dl_return_treasure_descr">
+		<text>Бандиты отняли все мои вещи, нужно вернуть их.</text>
+	</string>
+	<!-- «Помощь» -->
+	<string id="dl_sos_message_name">
+		<text>«Помощь»: Откликнутся на сигнал</text>
+	</string>
+	<string id="dl_sos_message_descr">
+		<text>Лидер нейтралов попросил проверить сигнал бедствия, он находиться недалеко от лагеря.</text>
+	</string>
+	<!-- «Обитатели» -->
+	<string id="first_quest_name">
+		<text>«Обитатели»: Добраться до лагеря сталкеров</text>
+	</string>
+	<string id="first_quest_1_name">
+		<text>«Обитатели»: Пообщаться с местными</text>
+	</string>
+	<string id="first_quest_descr">
+		<text>Поиски стоит начать с местного лагеря сталкеров, я уверен, что группа там была, не могли ведь они пустые в ходку уйти, стоит расспросить местных насчёт группы.</text>
+	</string>
+	<string id="first_quest_1_descr">
+		<text>Сталкер на входе в лагерь, посоветовал пообщаться с Лидером лагеря и торговцем, раз других идей пока нет, стоит этим занятся.</text>
+	</string>
+	<!-- «Болотная Тварь» -->
+	<string id="bolotnaya_tvar_name">
+		<text>«Болотная Тварь»: Убить монстра</text>
+	</string>
+	<string id="bolotnaya_tvar_1_name">
+		<text>«Болотная Тварь»: Вернуться к Фоме</text>
+	</string>
+	<string id="bolotnaya_tvar_descr">
+		<text>Торгаш, за инфу о группе, попросил избавиться от какой-то болотной твари.</text>
+	</string>
+	<string id="bolotnaya_tvar_1_descr">
+		<text>Тварь мертва, теперь можно возвращаться к торговцу за информацией.</text>
+	</string>
+	<!-- «Возмездие» -->
+	<string id="vozmezdie_name">
+		<text>«Возмездие»: Найти убийцу</text>
+	</string>
+	<string id="vozmezdie_1_name">
+		<text>«Возмездие»: Решить судьбу Косты</text>
+	</string>
+	<string id="vozmezdie_descr">
+		<text>Судя по всему, наёмник убил этого сталкера и ушёл с артом, нужно найти этого наёмника и попытаться выяснить причину.</text>
+	</string>
+	<string id="vozmezdie_1_descr">
+		<text>Наёмник, который убил сталкера, теперь и сам червей кормит, однако остался ещё один виновник - Коста, стоит пообщаться с Ржавым, насчёт этого.</text>
+	</string>
+	<!-- «По горячим следам» -->
+	<string id="po_goryachim_sledam_name">
+		<text>«По горячим следам»: исследовать туннель</text>
+	</string>
+	<string id="po_goryachim_sledam_descr">
+		<text>Торгаш, особо не прояснил ситуации с группой, однако дал наводку на местный туннель, куда ушёл Бизон после покупки провизии. Стоит осмотреть там всё.</text>
+	</string>
+	<!-- «Катакомбы» -->
+	<string id="tonnels_more_name">
+		<text>«Катакомбы»: Разузнать больше</text>
+	</string>
+	<string id="tonnels_more_1_name">
+		<text>«Катакомбы»: Ожидать сообщения</text>
+	</string>
+	<string id="tonnels_more_2_name">
+		<text>«Катакомбы»: Поговорить с Фомой</text>
+	</string>
+	<string id="tonnels_more_3_name">
+		<text>«Катакомбы»: Найти схрон</text>
+	</string>
+	<string id="tonnels_more_4_name">
+		<text>«Катакомбы»: Найти Ключ</text>
+	</string>
+	<string id="tonnels_more_5_name">
+		<text>«Катакомбы»: Открыть двери</text>
+	</string>
+	<string id="tonnels_more_6_name">
+		<text>«Катакомбы»: Спуститься в подземелье</text>
+	</string>
+	<string id="tonnels_more_descr">
+		<text>В туннеле, удалось найти некоторые следы группы, им уже более трёх дней, однако ко всему прочему был найден ПДА Резака, он один из членов группы Бизона. В ПДА была информация о неких катакомбах, нужно разузнать больше о них и о том куда они ведут.</text>
+	</string>
+	<string id="tonnels_more_1_descr">
+		<text>Фома, к сожалению не знает ничего о катакомбах, но говорит, что знает старика, который сможет помочь. Где его искать, он не знает, однако старик этот частый посетитель бара и Фома пообещал сбросить сообщение, когда старик объявится.</text>
+	</string>
+	<string id="tonnels_more_2_descr">
+		<text>Торговец прислал сообщение, что у него есть новости, стоит поскорее с ним поговорить.</text>
+	</string>
+	<string id="tonnels_more_3_descr">
+		<text>Старик который знал как попасть в катакомбы – мёртв. У торговца есть координаты схрона в котором может быть что-то что поможет мне в поисках входа в катакомбы.</text>
+	</string>
+	<string id="tonnels_more_4_descr">
+		<text>В схроне старика, не много было вещей, самое интересное было в старой рукописи, в ней говориться, что один из спусков в катакомбы – запечатан, однако есть и второй, чтобы в него попасть, нужно отыскать ключ от комплекса, исходя из записей, он находиться где-то на территории где и есть спуск в комлпекс.</text>
+	</string>
+	<string id="tonnels_more_5_descr">
+		<text>Ключ у меня, я не ожидал, что это будет магнитная ключ-карта, однако ключ есть ключ, лишь бы те двери открыл.</text>
+	</string>
+	<string id="tonnels_more_6_descr">
+		<text>Двери открыты, теперь можно спускаться в катакомбы вслед за группой.</text>
+	</string>
+	<!-- «Незваные Гости» -->
+	<string id="uninvited_guests_name">
+		<text>«Незваные Гости»: Разведка</text>
+	</string>
+	<string id="uninvited_guests_1_name">
+		<text>«Незваные Гости»: Перебраться через ограду</text>
+	</string>
+	<string id="uninvited_guests_2_name">
+		<text>«Незваные Гости»: Подслушать разговор</text>
+	</string>
+	<string id="uninvited_guests_3_name">
+		<text>«Незваные Гости»: Вернуться к Ржавому</text>
+	</string>
+	<string id="uninvited_guests_descr">
+		<text>Ржавый подкинул дело: Нужно узнать, зачем наёмники прибыли в окрестности. Стоит разведать военную базу.</text>
+	</string>
+	<string id="uninvited_guests_1_descr">
+		<text>Дверь на базу – заперта, ключа соответственно нет, придётся искать другой лаз, думаю, что получится перелезть через ограду.</text>
+	</string>
+	<string id="uninvited_guests_2_descr">
+		<text>Подслушать разговор наёмников</text>
+	</string>
+	<string id="uninvited_guests_3_descr">
+		<text>Из разговора наёмников стало известно, что они были наняты для поиска какого-то артефакта и искомое уже при них, так же из слов наёмников стало известно, что лидер их некий – Кривой.</text>
+	</string>
+	<!-- «Чужой среди своих» -->
+	<string id="wiz_enemy_with_neutral_name">
+		<text>«Чужой среди своих»: Дождаться ночи</text>
+	</string>
+	<string id="wiz_enemy_with_neutral_1_name">
+		<text>«Чужой среди своих»: Проверить стоянку</text>
+	</string>
+	<string id="wiz_enemy_with_neutral_2_name">
+		<text>«Чужой среди своих»: Выбраться из карцера</text>
+	</string>
+	<string id="wiz_enemy_with_neutral_descr">
+		<text>В ПДА Наёмника, удалось найти информацию из которой следует, что лидер нейтралов – Коста, как-то замешан в связях с наёмниками. Следует дождаться ночи, чтобы проверить стоянку наёмников.</text>
+	</string>
+	<string id="wiz_enemy_with_neutral_1_descr">
+		<text>Сейчас подходящее время, думаю, что наёмники уже свалили оттуда.</text>
+	</string>
+	<string id="wiz_enemy_with_neutral_2_descr">
+		<text>Нужно найти способ выбраться из карцера…</text>
+	</string>
+	<!-- «Как на курорте» -->
+	<string id="wiz_kak_na_kurorte_name">
+		<text>«Как на курорте»: Найти свои вещи</text>
+	</string>
+	<string id="wiz_kak_na_kurorte_1_name">
+		<text>«Как на курорте»: Поговорить с Краснопольским</text>
+	</string>
+	<string id="wiz_kak_na_kurorte_2_name">
+		<text>«Как на курорте»: Забрать свои вещи</text>
+	</string>
+	<string id="wiz_kak_na_kurorte_descr">
+		<text>Наёмники отобрали всё моё снаряжение, думаю, что оно находится где-то недалеко.</text>
+	</string>
+	<string id="wiz_kak_na_kurorte_1_descr">
+		<text>Комната закрыта, судя по всему ключ уже во владении лейтенанта, стоит поговорить с ним.</text>
+	</string>
+	<string id="wiz_kak_na_kurorte_2_descr">
+		<text>Ключ от комнаты лидера мерков у меня, теперь можно открыть дверь и забрать своё добро.</text>
+	</string>
+	<!-- «Гонец Правосудия» -->
+	<string id="gonec_pravosudiya_name">
+		<text>«Гонец Правосудия»: Поговорить с Ржавым</text>
+	</string>
+	<string id="gonec_pravosudiya_1_name">
+		<text>«Гонец Правосудия»: Ожидать сообщения</text>
+	</string>
+	<string id="gonec_pravosudiya_2_name">
+		<text>«Гонец Правосудия»: Вернутся к Ржавому</text>
+	</string>
+	<string id="gonec_pravosudiya_3_name">
+		<text>«Гонец Правосудия»: Допросить Косту</text>
+	</string>
+	<string id="gonec_pravosudiya_4_name">
+		<text>«Гонец Правосудия»: Убить Косту</text>
+	</string>
+	<string id="gonec_pravosudiya_descr">
+		<text>Мои подозрения в счет лидера нейтралов – Косты, подтвердились. Он сотрудничал с наёмниками, продавал им артефакты и исходя из последних сведений, стало известно, что тот отправил сталкера на убой «синим». </text>
+	</string>
+	<string id="gonec_pravosudiya_1_descr">
+		<text>Вести о купленном лидере я сообщил Ржавому, он просил подождать пару часов, дабы рассказать обитателям лагеря обо всём, а после свяжется со мной и решим, что делать дальше. </text>
+	</string>
+	<string id="gonec_pravosudiya_2_descr">
+		<text>Ржавый прислал сообщение, нужно поговорить.</text>
+	</string>
+	<string id="gonec_pravosudiya_3_descr">
+		<text>Прежде чем убивать Косту, стоит допросить его.</text>
+	</string>
+	<string id="gonec_pravosudiya_4_descr">
+		<text>Всё что требовалось, я узнал, теперь можно и убить.</text>
+	</string>
+	<!-- «Пленник обстоятельств» -->
+	<string id="free_neutral_name">
+		<text>«Пленник обстоятельств»: Дождаться ночи</text>
+	</string>
+	<string id="free_neutral_1_name">
+		<text>«Пленник обстоятельств»: Отправиться в рейд</text>
+	</string>
+	<string id="free_neutral_2_name">
+		<text>«Пленник обстоятельств»: Зачистить лагерь</text>
+	</string>
+	<string id="free_neutral_3_name">
+		<text>«Пленник обстоятельств»: Поговорить с пленным</text>
+	</string>
+	<string id="free_neutral_4_name">
+		<text>«Пленник обстоятельств»: Поговорить с Ржавым</text>
+	</string>
+	<string id="free_neutral_descr">
+		<text>Коста перед смертью рассказал о том, что Жекан всё ещё жив и находится в плену у бандитов. Ржавый хочет вызволить его, и предложил поучаствовать. Нужно дождаться ночи.</text>
+	</string>
+	<string id="free_neutral_1_descr">
+		<text>Лучше времени суток чем ночь, не сыскать для внезапной атаки, поговорить с Ржавым</text>
+	</string>
+	<string id="free_neutral_2_descr">
+		<text>По-тихому вызволить пленника не удастся, поэтому придётся зачистить весь лагерь от бандитов.</text>
+	</string>
+	<string id="free_neutral_3_descr">
+		<text>Бандиты мертвы, стоит поговорить с пленником прежде чем возвращаться в лагерь.</text>
+	</string>
+	<string id="free_neutral_4_descr">
+		<text>Пленник освобождён, бандиты мертвы, теперь можно и с Ржавым переговорить насчёт моей награды да и стоит вернуться в лагерь.</text>
+	</string>
+	
+	<!-- «ЛОКАЦИЯ КАТАКОМБЫ» -->
+	<!-- «Дети подземелий» -->
+	<string id="wiz_children_of_the_dungeons_name">
+		<text>«Дети подземелий»: Исследовать катакомбы</text>
+	</string>
+	<string id="wiz_children_of_the_dungeons_1_name">
+		<text>«Дети подземелий»: Выбраться из катакомб</text>
+	</string>
+	<string id="wiz_children_of_the_dungeons_descr">
+		<text>Исходя из всей информации которую мне удалось раскопать у тех сталкеров, группа отправилась через эти катакомбы, но куда они ведут? Что сейчас в них творится? Стоит быть осторожнее.</text>
+	</string>
+	<string id="wiz_children_of_the_dungeons_1_descr">
+		<text>Скелеты, свежие трупы сталкеров, всё наводит на мысль, что группа так и не выбралась из катакомб, но среди всех трупов, я не нашёл ни одного из группы Бизона, да и его самого там не было, значит всё же выбрались? Стоит двигать дальше и искать выход.</text>
+	</string>
+	<!-- «Ворон» -->
+	<string id="kat_voron_locked_pda_quest_name">
+		<text>«Ворон»: Разблокировать ПДА</text>
+	</string>
+	<string id="kat_voron_locked_pda_quest_1_name">
+		<text>«Ворон»: Ожидать разблокировки</text>
+	</string>
+	<string id="kat_voron_locked_pda_quest_2_name">
+		<text>«Ворон»: Забрать ПДА</text>
+	</string>
+	<string id="kat_voron_locked_pda_quest_descr">
+		<text>В катакомбах я нашел труп Ворона, он был частью группы Бизона, при нём удалось найти ПДА, но он заблокирован. Нужно найти техника, который поможет с разблокировкой.</text>
+	</string>
+	<string id="kat_voron_locked_pda_quest_1_descr">
+		<text>ПДА был отдан местному технику - Пианисту, тот пообещал разблокировать его, нужно всего-то подождать.</text>
+	</string>
+	<string id="kat_voron_locked_pda_quest_2_descr">
+		<text>Техник сообщил, что ПДА разблокирован, стоит забрать его.</text>
+	</string>
+	
+	<!-- «ЛОКАЦИЯ МЁРТВОЕ ОЗЕРО» -->
+	<!-- «По следам» -->
+	<string id="zav_in_the_footsteps_name">
+		<text>«По следам»: Найти информацию</text>
+	</string>
+	<string id="zav_in_the_footsteps_1_name">
+		<text>«По следам»: Поговорить с Гариком</text>
+	</string>
+	<string id="zav_in_the_footsteps_2_name">
+		<text>«По следам»: Проверить наводку</text>
+	</string>
+	<string id="zav_in_the_footsteps_3_name">
+		<text>«По следам»: Проверить домик</text>
+	</string>
+	<string id="zav_in_the_footsteps_4_name">
+		<text>«По следам»: Поговорить с Тохой</text>
+	</string>
+	<string id="zav_in_the_footsteps_descr">
+		<text>Катакомбы уже позади, удалось найти там Ворона, но остальная часть группы видимо выбралась, а это очень даже хорошая новость. Раз так, значит стоит искать их здесь.</text>
+	</string>
+	<string id="zav_in_the_footsteps_1_descr">
+		<text>Гарик хочет о чем-то потолковать. Однако сначала нужно потолковать с Торговцем.</text>
+	</string>
+	<string id="zav_in_the_footsteps_2_descr">
+		<text>Сталкер из лагеря сообщил, что предположительно группу видели рядом с Юго-Восточным хутором и двигались они по направлению к болоту, стоит сходить проверить.</text>
+	</string>
+	<string id="zav_in_the_footsteps_3_descr">
+		<text>В ПДА Грека нашёл довольно печальную информацию, надеюсь мои опасения не подтвердятся...</text>
+	</string>
+	<string id="zav_in_the_footsteps_4_descr">
+		<text>В доме на болоте нашёл труп мерка. В ПДА была информация по его заказу, заказ он видимо выполнить не смог, а значит шанс что Бизон всё ешё жив, есть. Нужно поговорить с лидером нейтралов, может они видели наёмников в этих краях.</text>
+	</string>
+	<!-- «Долг: Связь» -->
+	<string id="dl_storyline_task_dolg_name">
+		<text>«Долг»: Выйти на связь</text>
+	</string>
+	<string id="dl_storyline_task_dolg_1_name">
+		<text>«Долг»: Вернутся к Тохе</text>
+	</string>
+	<string id="dl_storyline_task_dolg_descr">
+		<text>Лидер нейтралов непрочь поучаствовать в устранении людей из Синдиката, однако они опасаются, что если в штурме будут участвовать только сталкеры, то Синдикат вышлет людей, чтобы отомстить. Поэтому нужно связаться с Краснопольским и попробовать его убедить поучаствовать в штурме.</text>
+	</string>
+	<string id="dl_storyline_task_dolg_1_descr">
+		<text>Краснопольский с группой уже впути, однако будут они только завтра к полуночи. Теперь нужно вернутся к Тохе и сообщить хорошие новости.</text>
+	</string>
+	<!-- «Сигнал Бедствия» -->
+	<string id="dl_sos_signal_name">
+		<text>«Сигнал Бедствия»: Проверить точку</text>
+	</string>
+	<string id="dl_sos_signal_1_name">
+		<text>«Сигнал Бедствия»: Убить Контролёра</text>
+	</string>
+	<string id="dl_sos_signal_2_name">
+		<text>«Сигнал Бедствия»: Поговорить с Гариком</text>
+	</string>
+	<string id="dl_sos_signal_descr">
+		<text>Гарик попросил подсобить с исследованием сигнала бедствия, который они поймали не так давно.</text>
+	</string>
+	<string id="dl_sos_signal_1_descr">
+		<text>Убить мутанта.</text>
+	</string>
+	<string id="dl_sos_signal_2_descr">
+		<text>Контролёр мёртв как и сталкер который по всей видимости посылал сигнал бедствия, стоит поговорить с Гариком, прежде чем возвращатся на базу.</text>
+	</string>
+	<!-- «Неизвестный сигнал» -->
+	<string id="lake_out_bandits_1_name">
+		<text>«Безопастное место»: Добраться до безопасного места</text>
+	</string>
+	<string id="lake_out_bandits_1_descr">
+		<text>Голова гудит... Снаряга пропала, нужно выбираться отсюда и найти место побезопаснее.</text>
+	</string>
+	<!-- «На Выручку» -->
+	<string id="lake_na_virychky_name">
+		<text>«На Выручку»: Достать кейс из оврага</text>
+	</string>
+	<string id="lake_na_virychky_1_name">
+		<text>«На Выручку»: Доставить кейс Гарику</text>
+	</string>
+	<string id="lake_na_virychky_descr">
+		<text>Сталкер взамен на оружие, предложил выполнить для него одно поручение. На северо-запад от лагеря Сталкеров, есть небольшой овраг с аномалиями, а в овраге нужно достать кейс и доставить его Сталкеру.</text>
+	</string>
+	<string id="lake_na_virychky_1_descr">
+		<text>Кейс у меня, вроде бы всё прошло гладко! Осталось только доставить его владельцу.</text>
+	</string>
+	<!-- «Как без рук» -->
+	<string id="lost_name">
+		<text>«Потерянные»: Выяснить что поизошло?</text>
+	</string>
+	<string id="lost_1_name">
+		<text>«Потерянные»: Исследовать местность</text>
+	</string>
+	<string id="lost_2_name">
+		<text>«Потерянные»: Устранить отряд монолита</text>
+	</string>
+	<string id="lost_3_name">
+		<text>«Потерянные»: Осмотреть тела</text>
+	</string>
+	<string id="lost_4_name">
+		<text>«Потерянные»: Передать найденные документы</text>
+	</string>
+	<string id="lost_descr">
+		<text>В радио-эфире услышал что у сталкеров пропал отряд, стоит предложить свою помощь с поиском.</text>
+	</string>
+	<string id="lost_1_descr">
+		<text>Тоха вкраце обрисовал ситуацию и указал на последнюю точку выхода на связь отряда, стоит осмотреть там всё, может и удастся найти хоть что-то.</text>
+	</string>
+	<string id="lost_2_descr">
+		<text>При исследовании напоролся на отряд Монолита, вероятно они повинны в пропаже сталкеров, придётся действать.</text>
+	</string>
+	<string id="lost_3_descr">
+		<text>Отряд Монолита уничтожен, жаль но парней спасти не удалось, так уж у Монолита заведено, убить неверных... Стоит осмотреть тела ребят.</text>
+	</string>
+	<string id="lost_4_descr">
+		<text>У лидера отряда удалось найти какие-то документы, стоит отнести их Тохе.</text>
+	</string>
+	
+	<!-- SECONDS QUESTS -->
+	<!-- «Новое Начало: Поиск артефактов» -->
+	<string id="dl_new_time_search_art_1_name">
+		<text>«Новое Начало»: Исследовать зону</text>
+	</string>
+	<string id="dl_new_time_search_art_1_1_name">
+		<text>«Новое Начало»: Вернутся к лидеру нейтралов</text>
+	</string>
+	<string id="dl_new_time_search_art_1_descr">
+		<text>Лидер лагеря нейтралов отметил точку поиска артефакта, точка находиться в скоплении гравитационных аномалий, стоит быть осторожным.</text>
+	</string>
+	<string id="dl_new_time_search_art_1_1_descr">
+		<text>Артефакт найден, стоит вернутся к лидеру нейтралов.</text>
+	</string>
+	<string id="dl_new_time_search_art_2_name">
+		<text>«Новое Начало»: Исследовать зону</text>
+	</string>
+	<string id="dl_new_time_search_art_2_1_name">
+		<text>«Новое Начало»: Вернутся к лидеру нейтралов</text>
+	</string>
+	<string id="dl_new_time_search_art_2_descr">
+		<text>Лидер лагеря нейтралов отметил точку поиска артефакта, точка находиться в скоплении электрических аномалий, стоит быть осторожным.</text>
+	</string>
+	<string id="dl_new_time_search_art_2_1_descr">
+		<text>Артефакт найден, стоит вернутся к лидеру нейтралов.</text>
+	</string>
+	<string id="dl_new_time_search_art_3_name">
+		<text>«Новое Начало»: Исследовать зону</text>
+	</string>
+	<string id="dl_new_time_search_art_3_1_name">
+		<text>«Новое Начало»: Вернутся к лидеру нейтралов</text>
+	</string>
+	<string id="dl_new_time_search_art_3_descr">
+		<text>Лидер лагеря нейтралов отметил точку поиска артефакта, точка находиться в скоплении кислотных аномалий, стоит быть осторожным.</text>
+	</string>
+	<string id="dl_new_time_search_art_3_1_descr">
+		<text>Артефакт найден, стоит вернутся к лидеру нейтралов.</text>
+	</string>
+	<!-- «Сканирование» -->
+	<string id="wiz_scaner_1_name">
+		<text>«Сканирование»: Найти отмычку</text>
+	</string>
+	<string id="wiz_scaner_2_name">
+		<text>«Сканирование»: Установить сканер</text>
+	</string>
+	<string id="wiz_scaner_3_name">
+		<text>«Сканирование»: Вернуться за наградой</text>
+	</string>
+	<string id="wiz_scaner_1_descr">
+		<text>Иваныч поручил найти пропавшего отмычку и в последствии установить сканер в аномалии.</text>
+	</string>
+	<string id="wiz_scaner_2_descr">
+		<text>Отмычка мёртв, сканер теперь при мне. Осталось лишь установить его и возвращаться к Иванычу.</text>
+	</string>
+	<string id="wiz_scaner_3_descr">
+		<text>Сканер успешно установлен. Нужно вернуться за наградой.</text>
+	</string>
+	<!-- «Торговый договор» -->
+	<string id="wiz_germo_case_quest_name">
+		<text>«Торговый договор»: Отдать кейс</text>
+	</string>
+	<string id="wiz_germo_case_quest_descr">
+		<text>Видимо этот кейс и есть то что нужно Фоме, нужно отдать его.</text>
+	</string>
+	<!-- «Зачистка» -->
+	<string id="wiz_mutants_hunting_name">
+		<text>«Охота»: Уничтожить мутантов</text>
+	</string>
+	<string id="wiz_mutants_hunting_1_name">
+		<text>«Охота»: Забрать награду</text>
+	</string>
+	<string id="wiz_mutants_hunting_descr">
+		<text>Фома подрядил на охоту, мне предстоит зачистить четыре стоянки мутантов, в награду обещал хороший артефакт.</text>
+	</string>
+	<string id="wiz_mutants_hunting_1_descr">
+		<text>Зачистка проведена. Фома сбросил координаты схрона в котором лежит моя награда.</text>
+	</string>
+	<!-- «Военная тайна» -->
+	<string id="wiz_military_secret_name">
+		<text>«Военная тайна»: Найти военные карты</text>
+	</string>
+	<string id="wiz_military_secret_1_name">
+		<text>«Военная тайна»: Передать карты Жекану.</text>
+	</string>
+	<string id="wiz_military_secret_descr">
+		<text>Жекан поведал о том, что не так уж и давно в окрестностях упал военный вертолёт, однако где конкретно неизвестно. Моя задача найти вертолёт и добыть из него военные карты.</text>
+	</string>
+	<string id="wiz_military_secret_1_descr">
+		<text>Карты найдены, теперь нужно передать их Жекану и получить свою награду.</text>
+	</string>
+	<string id="dl_stalker_quest_name">
+		<text>Уничтожить бандитов</text>
+	</string>
+	<string id="dl_stalker_quest_1_name">
+		<text>Получить награду</text>
+	</string>
+	<string id="dl_stalker_quest_1_descr">
+		<text>Забрать награду за уничтоженных бандитов у торговца</text>
+	</string>
+	<string id="dl_stalker_quest_descr">
+		<text>Уничтожить бандитов на Чёртовой стоянке. Это поможет прекратить грабёж сталкеров, которые возвращаются с хабаром на базу.</text>
+	</string>
+	<!-- «Зачистка» -->
+	<string id="dl_zachistka_name">
+		<text>«Зачистка»: Встретится с отрядом</text>
+	</string>
+	<string id="dl_zachistka_1_name">
+		<text>«Зачистка»: Уничтожить противника</text>
+	</string>
+	<string id="dl_zachistka_2_name">
+		<text>«Зачистка»: Поговорить с Грозом</text>
+	</string>
+	<string id="dl_zachistka_3_name">
+		<text>«Зачистка»: Получить награду</text>
+	</string>
+	<string id="dl_zachistka_4_name">
+		<text>«Зачистка»: Получить награду</text>
+	</string>
+	<string id="dl_zachistka_descr">
+		<text>Торговец предложил работу по зачистке лагеря бандитов, теперь нужно встретиться с отрядом.</text>
+	</string>
+	<string id="dl_zachistka_1_descr">
+		<text>Лидер отряда - Гроз, особо не мешкал и приказал идти на штурм.</text>
+	</string>
+	<string id="dl_zachistka_2_descr">
+		<text>Бандиты уничтожены, стоит пререговорить с Грозом.</text>
+	</string>
+	<string id="dl_zachistka_3_descr">
+		<text>Получить награду.</text>
+	</string>
+	<string id="dl_zachistka_4_descr">
+		<text>Бандиты и штурмовой отряд погибли, однако награду за выполенное дело никто не отменял.</text>
+	</string>
+
+
+</string_table>

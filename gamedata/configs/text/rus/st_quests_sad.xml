@@ -1,0 +1,804 @@
+<?xml version="1.0" encoding="windows-1251" ?>
+<string_table>
+
+    <string id="zat_a2_meet_barmen_task_text">
+        <text>Поговорить с Бородой</text>
+    </string>
+    <string id="zat_a2_meet_barmen_task_desc">
+        <text>Макс зайди есть дело.</text>
+    </string>
+
+    <string id="zat_a2_meet_lotsman_task_text">
+        <text>Поговорить с Лоцманом</text>
+    </string>
+    <string id="zat_a2_meet_lotsman_task_desc">
+        <text>Борода сказал, что Лоцман проведёт меня в Долину Шорохов и сообщит дальнейшую информацию.</text>
+    </string>
+
+    <string id="sad_task_done_text">
+        <text>Три товарища: рассказать о судьбе сталкеров Бороде</text>
+    </string>
+    <string id="sad_task_done_text_desc">
+        <text>Мы узнали всё о судьбе Труса, Балбеса и Бывалого. Теперь это необходимо рассказать Бороде.</text>
+    </string>
+    <string id="sad_task_text_0">
+        <text>Три товарища: узнать о судьбе Труса, Балбеса и Бывалого</text>
+    </string>
+    <string id="sad_task_text_0_desc">
+        <text>Необходимо узнать о судьбе трёх сталкеров, которые отправилиль в Долину Шорохов: Труса, Балбеса и Бывалого.</text>
+    </string>
+    <string id="sad_task_text_1">
+        <text>Три товарища: узнать о судьбе Труса и Балбеса</text>
+    </string>
+    <string id="sad_task_text_1_desc">
+        <text>Мы узнали о судьбе Бывалого. Осталось узнать о судьбе Труса и Балбеса.</text>
+    </string>
+    <string id="sad_task_text_2">
+        <text>Три товарища: узнать о судьбе Труса и Бывалого</text>
+    </string>
+    <string id="sad_task_text_2_desc">
+        <text>Мы узнали о судьбе Балбеса. Осталось узнать о судьбе Труса и Бывалого.</text>
+    </string>
+    <string id="sad_task_text_3">
+        <text>Три товарища: узнать о судьбе Труса</text>
+    </string>
+    <string id="sad_task_text_3_desc">
+        <text>Необходимо узнать о судьбе Труса.</text>
+    </string>
+    <string id="sad_task_text_4">
+        <text>Три товарища: узнать о судьбе Балбеса и Бывалого</text>
+    </string>
+    <string id="sad_task_text_4_desc">
+        <text>Мы узнали о судьбе Труса. Осталось узнать о судьбе Балбеса и Бывалого.</text>
+    </string>
+    <string id="sad_task_text_5">
+        <text>Три товарища: узнать о судьбе Балбеса</text>
+    </string>
+    <string id="sad_task_text_5_desc">
+        <text>Необходимо узнать о судьбе Балбеса.</text>
+    </string>
+    <string id="sad_task_text_6">
+        <text>Три товарища: узнать о судьбе Бывалого</text>
+    </string>
+    <string id="sad_task_text_6_desc">
+        <text>Необходимо узнать о судьбе Бывалого.</text>
+    </string>
+
+    <string id="sad_main_task_art_text_1">
+        <text>Редкий арт: найти артефакт «Сердце Оазиса»</text>
+    </string>
+    <string id="sad_main_task_art_text_1_desc">
+        <text>Необходимо найти очень редкий артефакт «Сердце Оазиса».</text>
+    </string>
+    <string id="sad_main_task_art_text_2">
+        <text>Редкий арт: отдать артефакт «Сердце Оазиса» Бороде</text>
+    </string>
+    <string id="sad_main_task_art_text_2_desc">
+        <text>Артефакт «Сердце Оазиса» найден. Теперь его необходимо отдать Бороде.</text>
+    </string>
+
+    <string id="sad_b1_meet_mutny_task_text">
+        <text>База бывших: встретиться с Мутным</text>
+    </string>
+    <string id="sad_b1_meet_mutny_task_desc">
+        <text>Возможно, Мутный знает о судьбе трёх пропавших сталкеров.</text>
+    </string>
+	
+    <string id="sad_b1_plant_text_desc">
+        <text>Найти аномальное растение по заказу учёных и передать посреднику.</text>
+    </string>
+    <string id="sad_b1_plant_text_1">
+        <text>Аномальное растение: обследовать прилегающую местность</text>
+    </string>
+    <string id="sad_b1_plant_text_2">
+        <text>Аномальное растение: отнести заказ посреднику</text>
+    </string>
+	
+    <string id="sad_sim_3_rob_task_1_text">
+        <text>Неизвестная тварь: отправится на охоту с Ильёй Барбосом</text>
+    </string>
+    <string id="sad_sim_3_rob_task_1_desc">
+        <text>Помочь сталкерам убить неизвестную тварь в заброшенном лагере.</text>
+    </string>
+	
+    <string id="sad_b1_mutny_task_1_00_desc">
+        <text>Забрать флешку Фёдора у курьера и отнести её Мутному.</text>
+    </string>
+    <string id="sad_b1_mutny_task_1_01">
+        <text>Мутная работа: забрать флешку у курьера</text>
+    </string>
+    <string id="sad_b1_mutny_task_1_02">
+        <text>Мутная работа: отнести флешку Мутному</text>
+    </string>
+    <string id="sad_b1_mutny_task_fail">
+        <text>Мутный: Всё, сталкер - я больше не нуждаюсь в твоей помощи.</text>
+    </string>
+	
+    <string id="sad_ban_lager_bandit_desc">
+        <text>Забрать посылку Максимильяна у бандитов.</text>
+    </string>
+    <string id="sad_ban_posilka_text_1">
+        <text>Важная посылка: отдать посылку Максимильяну</text>
+    </string>
+    <string id="sad_ban_posilka_text_2">
+        <text>Важная посылка: забрать посылку у Костяна</text>
+    </string>
+    <string id="sad_ban_posilka_text_2b">
+        <text>Важная посылка: забрать посылку у бандитов</text>
+    </string>
+    <string id="sad_ban_posilka_text_3">
+        <text>Важная посылка: добраться до лагеря бандитов</text>
+    </string>
+    <string id="sad_ban_posilka_text_4">
+        <text>Важная посылка: найти главаря бандитов</text>
+    </string>
+    <string id="sad_ban_posilka_text_5">
+        <text>Важная посылка: взять посылку</text>
+    </string>
+	
+    <string id="sad_b2_lager_maxim_in">
+        <text>Идём по следу: встретиться с Максимильяном</text>
+    </string>
+    <string id="sad_b2_lager_maxim_in_desc">
+        <text>Максимильян, возможно, имеет информацию о пропавших сталкерах.</text>
+    </string>
+	
+    <string id="sad_b3_maxim_ataka_desc">
+        <text>Помочь Максимильяну захватить  лагерь наёмников.</text>
+    </string>
+    <string id="sad_b3_maxim_ataka_t1">
+        <text>Атака лагеря наёмников: дождаться назначенного времени</text>
+    </string>
+    <string id="sad_b3_maxim_ataka_t2">
+        <text>Атака лагеря наёмников: уничтожить наёмников</text>
+    </string>
+    <string id="sad_b3_maxim_ataka_t3">
+        <text>Атака лагеря наёмников: сообщить Максимильяну о готовности</text>
+    </string>
+    <string id="sad_b3_maxim_ataka_t4">
+        <text>Атака лагеря наёмников: следовать за Максимильяном</text>
+    </string>
+    <string id="sad_b3_maxim_ataka_t5">
+        <text>Атака лагеря наёмников: поговорить Максимильяном</text>
+    </string>
+
+	<string id="st_sad_maxim_im_ready">
+		<text>Максимильян: Подходи, пообщаемся.</text>
+	</string>
+	<string id="st_sad_maxim_sleeped">
+		<text>Максимильян ушёл без тебя.</text>
+	</string>
+	<string id="sad_maxim_wtf_faraway">
+		<text>Максимильян: Ты что, собрался на прогулку? Мы начинаем без тебя.</text>
+	</string>
+	<string id="sad_b3_maxim_talk_task_text">
+                <text>Поговорить с Максимильяном.</text>
+        </string>
+	<string id="sad_b3_radik_talk_task_text">
+                <text>Важный разговор: поговорить с Радиком</text>
+        </string>
+	<string id="sad_b3_radik_talk_task_desc">
+                <text>Необходимо найти Радика и переговорить с ним.</text>
+        </string>
+	<string id="sad_b3_radik_bring_task_text">
+                <text>Голод не тётка: принести еду</text>
+        </string>
+	<string id="sad_b3_radik_bring_task_desc">
+                <text>Принести еду отряду Радика. Достаточно пяти пайков.</text>
+        </string>
+	
+	<string id="sad_radik_get_pda_task_text_1">
+                <text>Ряженый: достать КПК наёмника</text>
+        </string>
+	<string id="sad_radik_get_pda_task_text_2">
+                <text>Ряженый: поговорить с Радиком</text>
+        </string>
+	<string id="sad_radik_get_pda_task_desc">
+                <text>КПК наёмника необходим для проникновения на их базу.</text>
+        </string>
+	
+	<string id="sad_radik_get_outfit_task_text_1">
+                <text>Ряженый: взять снаряжение наёмника у торговца</text>
+        </string>
+	<string id="sad_radik_get_outfit_task_text_2">
+                <text>Ряженый: взять снаряжение наёмника у гонца</text>
+        </string>
+	<string id="sad_radik_get_outfit_task_text_3">
+                <text>Ряженый: найти снаряжение наёмника</text>
+        </string>
+	<string id="sad_radik_get_outfit_task_desc">
+                <text>Снаряжение наёмника необходимо для проникновения на их базу.</text>
+        </string>
+	<string id="sad_radik_arrive_task_text_1">
+                <text>Прорыв: сопроводить отряд Радика</text>
+        </string>
+	<string id="sad_radik_arrive_task_text_1b">
+                <text>Прорыв: установить взрывчатку</text>
+        </string>	
+	<string id="sad_radik_arrive_task_text_2">
+                <text>Прорыв: поговорить с Радиком</text>
+        </string>
+	<string id="sad_radik_arrive_task_desc">
+                <text>Занять позицию неподалёку от базы наёмников.</text>
+        </string>
+	<string id="sad_radik_faraway">
+                <text>Радик: Эй, ты куда убежал? Вернись к группе!</text>
+        </string>
+	
+	<string id="sad_radik_task_inside_desc">
+                <text>Освободить сталкеров, попавших в плен к наёмникам.</text>
+        </string>
+	<string id="sad_radik_task_inside_text_1">
+                <text>Освобождение: пробраться на базу под видом наёмника</text>
+        </string>
+	<string id="sad_radik_task_inside_text_2">
+                <text>Освобождение: найти пленников</text>
+        </string>
+	<string id="sad_radik_task_inside_text_3">
+                <text>Освобождение: уничтожить наёмников</text>
+        </string>
+	<string id="sad_b4_fedor_dead_message">
+                <text>Фёдор умер.</text>
+        </string>
+	
+	<string id="sad_cowboy_meet_tesla_task_1">
+                <text>Технический вопрос: Поговорить с Мишкой Тесла по поводу сканера</text>
+        </string>
+	<string id="sad_cowboy_meet_tesla_task_desc">
+                <text>Мишка Тесла может помочь попасть на место, где, предположительно находится Трус.</text>
+        </string>
+	
+	<string id="sad_cowboy_stuff_task_desc">
+                <text>Достать недостающие детали для работы сканера.</text>
+        </string>
+	<string id="sad_cowboy_stuff_1">
+                <text>Недостающие детали: отнести «Компас» и микросхему Мишке Тесла</text>
+        </string>
+	<string id="sad_cowboy_stuff_2">
+                <text>Недостающие детали: поговорить с Семёном</text>
+        </string>
+	<string id="sad_cowboy_stuff_3">
+                <text>Недостающие детали: найти «Компас» и микросхему</text>
+        </string>
+	<string id="sad_cowboy_stuff_4">
+                <text>Недостающие детали: достать артефакт «Компас»</text>
+        </string>
+	<string id="sad_cowboy_stuff_5">
+                <text>Недостающие детали: найти Олега Моталыгу и забрать у него микросхему к сканеру</text>
+        </string>
+	
+	<string id="sad_tesla_monster_task_desc">
+                <text>Уничтожить мутантов около места телепортации.</text>
+        </string>
+	<string id="sad_tesla_monster_task_1">
+                <text>Невидимая смерть: зачистить местность от мутантов</text>
+        </string>
+	
+	<string id="sad_oasis_teleport_desc">
+                <text>Пробраться на плато, где, предположительно находится Трус.</text>
+        </string>
+	<string id="sad_oasis_teleport_0">
+                <text>Путь на плато: сообщить Мишке Тесла о готовности</text>
+        </string>
+	<string id="sad_oasis_teleport_1">
+                <text>Путь на плато: установить сканер</text>
+        </string>
+	<string id="sad_oasis_teleport_2">
+                <text>Путь на плато: дождаться пока Мишка Тесла настроит сканер</text>
+        </string>
+	<string id="sad_oasis_teleport_3">
+                <text>Путь на плато: прыгнуть в аномалию</text>
+        </string>
+	<string id="sad_oasis_teleport_4">
+                <text>Вернуться с плато: прыгнуть в аномалию</text>
+        </string>
+	<string id="sad_oasis_teleport_5">
+                <text>Обыскать местность и дождаться пока Мишка Тесла настроит сканер для возвращения</text>
+        </string>
+	<string id="sad_oasis_teleport_1b">
+                <text>Путь на плато: взять сканер</text>
+        </string>
+	
+	<string id="sad_oasis_stupid_thing">
+                <text>Мишка Тесла: Вот придурок... Как ты теперь обратно попадёшь?</text>
+        </string>
+	<string id="sad_oasis_get_back_here_scan">
+                <text>Мишка Тесла: Ты куда попёр с моим сканером?</text>
+        </string>
+	<string id="sad_oasis_get_back_here">
+                <text>Мишка Тесла: Эй, ты куда собрался? Я тебя здесь ждать не буду!</text>
+        </string>
+	<string id="sad_oasis_last_warning">
+                <text>Мишка Тесла: Эй, моё терпение на исходе! А ну вернись!</text>
+        </string>
+	<string id="sad_oasis_tesla_go_base">
+                <text>Мишка Тесла: Всё, ты меня достал. Я ухожу на базу.</text>
+        </string>
+	<string id="sad_oasis_tesla_fight">
+                <text>Мишка Тесла: Всё, ты меня достал!</text>
+        </string>
+	
+	<string id="sad_volodya_task_desc">
+                <text>Вместе с Володей Большим захватить базу Семёна Ковбоя.</text>
+        </string>
+	<string id="sad_volodya_task_1">
+                <text>Атака ранчо: поговорить с Володей Большим</text>
+        </string>
+	<string id="sad_volodya_task_2">
+                <text>Атака ранчо: сообщить Володе Большому о готовности</text>
+        </string>
+	
+	<string id="sad_kill_mutny_task_1">
+                <text>Атака лагеря: встретиться со сталкерами</text>
+        </string>
+	<string id="sad_kill_mutny_task_1_desc">
+                <text>Необходимо встретиться со сталкерами, для атаки базы Мутного.</text>
+        </string>
+	<string id="sad_kill_mutny_task_2">
+                <text>Атака лагеря: сообщить Грише о готовности</text>
+        </string>
+	<string id="sad_kill_mutny_task_2_desc">
+                <text>Сообщить Грише о готовности атаковать базу Мутного.</text>
+        </string>
+	<string id="sad_kill_mutny_task_3">
+                <text>Атака лагеря: уничтожить отряд Мутного</text>
+        </string>
+	<string id="sad_kill_mutny_task_3_desc">
+                <text>Необходимо уничтожить отряд Мутного на базе новичков.</text>
+        </string>
+	
+	<string id="sad_b2_tech_gena_task_desc">
+                <text>Вернуть инструменты технику.</text>
+        </string>
+	<string id="sad_b2_tech_gena_task_1">
+                <text>Инструменты: найти Гену Непомнящего</text>
+        </string>
+	<string id="sad_b2_tech_gena_task_2">
+                <text>Инструменты: найти способ забрать у Гены Непомнящего интрументы</text>
+        </string>
+	<string id="sad_b2_tech_gena_task_3">
+                <text>Инструменты: сообщить технику, что Гена Непомнящий убит</text>
+        </string>
+	<string id="sad_b2_tech_gena_task_4">
+                <text>Инструменты: сопроводить Гену Непомнящего к месту закопа</text>
+        </string>
+	<string id="sad_b2_tech_gena_task_5">
+                <text>Инструменты: отнести инструменты технику</text>
+        </string>
+	<string id="sad_b2_tech_gena_task_6">
+                <text>Инструменты: взять инструменты</text>
+        </string>
+	<string id="sad_b2_tech_gena_task_7">
+                <text>Инструменты: откопать ящик</text>
+        </string>
+	<string id="sad_b2_tech_gena_task_8">
+                <text>Инструменты: найти записку от Гены Непомнящего</text>
+        </string>
+	<string id="sad_b2_tech_gena_task_9">
+                <text>Инструменты: сообщить технику о случившемся</text>
+        </string>
+	<string id="sad_gena_zakop_tips">
+                <text>Установить заряд</text>
+        </string>
+	<string id="sad_gena_zapiska_tips">
+                <text>Обыскать куст</text>
+        </string>
+	<string id="sad_gena_zakop_info_message">
+                <text>Вот ты, лошара! На такую лажу повёлся. А за бабло спасибо, я теперь спокойно могу уйти из Зоны. Бывай. \nВсегда твой, Гена Непомнящий.</text>
+        </string>
+	
+	<string id="sad_b2_trader_nb_task_1">
+                <text>Ноутбук торговца: найти ноутбук Рокфеллера</text>
+        </string>
+	<string id="sad_b2_trader_nb_task_1_desc">
+                <text>Рокфеллер просит найти его ноутбук, который остался в вертолёте военных.</text>
+        </string>
+	<string id="sad_b2_trader_nb_task_2">
+                <text>Ноутбук торговца: вернуть ноутбук Рокфеллеру</text>
+        </string>
+	<string id="sad_b2_trader_nb_task_2_desc">
+                <text>Необходимо принести ноутбук Рокфеллеру.</text>
+        </string>
+	
+	<string id="sad_sim_9_noy_task_1">
+                <text>Странный незнакомец: помочь уничтожить снорков</text>
+        </string>
+	<string id="sad_sim_9_noy_task_1_desc">
+                <text>Помочь уничтожить снорков окруживших незнакомого сталкера.</text>
+        </string>
+	<string id="sad_sim_9_noy_task_2_desc">
+                <text>Помочь уничтожить мутантов окруживших незнакомого сталкера.</text>
+        </string>
+	<string id="sad_sim_9_noy_task_2">
+                <text>Странный незнакомец: помочь уничтожить мутантов</text>
+        </string>
+
+	<string id="sad_dont_sleep">
+                <text>Не хрен спать - враги кругом!</text>
+        </string>
+	
+	<string id="sad_artur_task_desc">
+                <text>Помочь Артуру забрать флешки его друзей из аномалии.</text>
+        </string>
+	<string id="sad_artur_task_1">
+                <text>Дружеский долг: отдать флешки Артуру</text>
+        </string>
+	<string id="sad_artur_task_2">
+                <text>Дружеский долг: найти флешки Вадика и Ромки</text>
+        </string>
+	<string id="sad_artur_task_3">
+                <text>Дружеский долг: найти флешку Вадика</text>
+        </string>
+	<string id="sad_artur_task_4">
+                <text>Дружеский долг: найти флешку Ромки</text>
+        </string>
+	
+	<string id="sad_b1_new_trader_arrived">
+                <text>База новичков: У нас теперь новый торговец и техник.</text>
+        </string>
+
+	<string id="sad_b3_ucheny_message_1">
+                <text>Андрей Голова: Сталкер, если интересует неплохой заработок, подходи в подвал Ивана Колбасы - пообщаемся.</text>
+        </string>
+	<string id="sad_b3_ucheny_task_desc">
+                <text>Помочь сталкерам провести замеры в аномалиях для учёных.</text>
+        </string>
+	<string id="sad_b3_ucheny_task_1">
+                <text>Исследование аномалий: сообщить о готовности</text>
+        </string>
+	<string id="sad_b3_ucheny_task_2">
+                <text>Исследование аномалий: сопроводить сталкеров к месту замеров</text>
+        </string>
+	<string id="sad_b3_ucheny_task_3">
+                <text>Исследование аномалий: поговорить с Андреем</text>
+        </string>
+	<string id="sad_b3_ucheny_warn_1">
+                <text>Андрей Голова: Эй, ты куда? Вернись к группе!</text>
+        </string>
+	<string id="sad_b3_ucheny_warn_2">
+                <text>Андрей Голова: Ты что, собрался на прогулку? А ну вернись к группе!</text>
+        </string>
+	<string id="sad_b3_ucheny_utufar">
+                <text>Андрей Голова: Всё, ты добегался. Можешь идти по своим делам. Ты больше не в команде.</text>
+        </string>
+	<string id="sad_b3_ucheny_get_money">
+                <text>Андрей Голова: Отлично сработано! Подходи за наградой.</text>
+        </string>
+	<string id="sad_b3_ucheny_go_home">
+                <text>Андрей Голова: Сталкер, ты не забрал оплату. Но мне ждать тебя некогда. Оставлю деньги у Ивана Колбасы.</text>
+        </string>	
+	
+	<string id="sad_b3_mission_failed">
+                <text>Чёрт! Андрей погиб. Возвращаемся на базу.</text>
+        </string>
+
+	<string id="sad_zombocave_tips">
+		<text>Подобрать артефакт ($$ACTION_USE$$)</text>
+	</string>
+	
+	<string id="sad_b3_trader_task_0">
+		<text>Товар торговца: добраться до пещеры</text>
+	</string>
+	<string id="sad_b3_trader_task_0_desc">
+		<text>Необходимо добраться до пещеры, в которой пропал снабженец торговца.</text>
+	</string>
+	<string id="sad_b3_trader_task_1">
+		<text>Товар торговца: найти ящик с товаром</text>
+	</string>
+	<string id="sad_b3_trader_task_1_desc">
+		<text>Необходимо найти ящик с товаром торговца.</text>
+	</string>
+	<string id="sad_b3_trader_task_2">
+		<text>Товар торговца: отдать ящик с товаром</text>
+	</string>
+	<string id="sad_b3_trader_task_2_desc">
+		<text>Необходимо вернуть торговцу утерянный ящик с товаром.</text>
+	</string>
+	
+	<string id="sad_radio_on">
+		<text>Включить радио ($$ACTION_USE$$)</text>
+	</string>
+	<string id="sad_radio_off">
+		<text>Выключить радио ($$ACTION_USE$$)</text>
+	</string>
+	
+        <string id="sad_zastavka_text_1">
+                <text>После долгих скитаний по Зоне сталкер Макс решил покинуть её периметр. Но перед возвращением на Большую Землю захотел сорвать большой куш.</text>
+        </string>
+        <string id="sad_zastavka_text_2">
+                <text>По стечению обстоятельств, у Бороды, известного торговца артефактами на Затоне, был серьёзный заказ на добычу ценного аномального образования, которое сталкеры называли «Сердце Оазиса».</text>
+        </string>
+        <string id="sad_zastavka_text_3">
+                <text>Когда Борода собрал информацию о возможном местоположении артефакта, то отправил на его поиски трёх своих друзей, которым доверял самые выгодные заказы. Через некоторое время стало ясно, что ребята пропали.</text>
+        </string>
+        <string id="sad_zastavka_text_4">
+                <text>Борода решил организовать поиски и поручил Максу узнать о судьбе своих товарищей. Макс отправился с проводником в Долину Шорохов...</text>
+        </string>
+	
+	<string id="sad_outro_text_1">
+                <text>Сталкер Макс ушёл из Зоны. Как сложилась его жизнь на Большой Земле - неизвестно.</text>
+        </string>
+	<string id="sad_outro_text_21">
+                <text>Узнав о судьбе своих товарищей, Борода более не заводил близких друзей среди тех, кто на него работал.</text>
+        </string>
+	<string id="sad_outro_text_22">
+                <text>Борода так и не узнал, что случилось с его товарищами. Но более не заводил близких друзей среди тех, кто на него работал.</text>
+        </string>
+	<string id="sad_outro_text_31">
+                <text>Под напором атак наёмников, Максимильян ушёл на свою основную базу, взорвав единственный мост, соединяющий две части долины. После этого атаки наёмников прекратились.</text>
+        </string>
+	<string id="sad_outro_text_41">
+                <text>Обосновавшись на новом месте, Радик проводил «экскурсии» по местным достопримечательностям вновь прибывшим сталкерам.</text>
+        </string>
+	<string id="sad_outro_text_51">
+                <text>В Долине Шорохов всё чаще стали появляться группы учёных, исследующих аномальные поля. Их особенно интересовали местные подземные аномалии.</text>
+        </string>
+	<string id="sad_outro_text_91">
+                <text>На базе новичков по прежнему всё спокойно. Среди вновь прибывших сталкеров история про Мутного передаётся из уст в уста и обрастает небылицами.</text>
+        </string>
+	
+	<string id="sad_maximilian_far_warn">
+                <text>Максимильян: Эй! Мы договорились идти вместе. Ты куда убежал?</text>
+        </string>
+	<string id="sad_maximilian_travel_snork">
+                <text>Максимильян: Ты где? Ёпт... Снорки!!! А-а-а-а!!!</text>
+        </string>
+	<string id="sad_maximilian_travel_snork_near">
+                <text>Максимильян: Снорки!</text>
+        </string>
+	
+	<string id="sad_rokfeler_about_ucheny">
+                <text>Рокфеллер: Сталкер, если хочешь подзаработать, зайди ко мне - есть дело.</text>
+        </string>
+
+	<string id="sad_ivan_we_attacked">
+                <text>Иван Колбаса: На помощь! Мы атакованы наёмниками!</text>
+        </string>
+
+	<string id="sad_nauchny_task_1">
+                <text>Тайны подземелий: поговорить с Рокфеллером</text>
+        </string>
+	<string id="sad_nauchny_task_1_desc">
+                <text>Поговорить с Рокфеллером насчёт взрывчатки.</text>
+        </string>
+
+	<string id="sad_nauchny_task_2">
+                <text>Тайны подземелий: забрать взрывчатку</text>
+        </string>
+	<string id="sad_nauchny_task_2_desc">
+                <text>Забрать взрывчатку у Ивана Колбасы.</text>
+        </string>
+
+	<string id="sad_nauchny_task_3">
+                <text>Тайны подземелий: поговорить с Яшей</text>
+        </string>
+	<string id="sad_nauchny_task_3_desc">
+                <text>Поговорить с Яшей.</text>
+        </string>
+
+	<string id="sad_nauchny_task_4">
+                <text>Тайны подземелий: следовать за Яшей</text>
+        </string>
+	<string id="sad_nauchny_task_4_desc">
+                <text>Следовать за Яшей к пещере.</text>
+        </string>
+
+	<string id="sad_nauchny_task_5">
+                <text>Тайны подземелий: установить заряд</text>
+        </string>
+	<string id="sad_nauchny_task_5_desc">
+                <text>Установить заряд для расчистки прохода в подземелье.</text>
+        </string>
+
+	<string id="sad_nauchny_task_6">
+                <text>Тайны подземелий: следовать за Яшей</text>
+        </string>
+	<string id="sad_nauchny_task_6_desc">
+                <text>Следовать за Яшей в подземелье.</text>
+        </string>
+
+	<string id="sad_nauchny_task_7">
+                <text>Тайны подземелий: забрать награду у Рокфеллера</text>
+        </string>
+	<string id="sad_nauchny_task_7_desc">
+                <text>Необходимо забрать у Рокфеллера награду, за сопровождение учёных.</text>
+        </string>
+
+	<string id="sad_nauchny_faraway_1">
+                <text>Яша: Эй, ты куда убежал?.. А-ну вернись!</text>
+        </string>
+	<string id="sad_nauchny_faraway_1b">
+                <text>Яша: Так, мы идём на базу.</text>
+        </string>	
+	<string id="sad_nauchny_faraway_2">
+                <text>Яша: Эй, собрался на прогулку? Вернись к отряду!</text>
+        </string>
+	<string id="sad_nauchny_faraway_3">
+                <text>Яша: Всё, ты исключён из отряда. Найдём кого-нибудь другого.</text>
+        </string>
+	
+	<string id="sad_b2_tech_wpn_task_1">
+                <text>Ценное оружие: найти дробовик Валерия Палыча</text>
+        </string>
+	<string id="sad_b2_tech_wpn_task_1_desc">
+                <text>Валерий Палыч просит найти его модифицированный дробовик.</text>
+        </string>
+	<string id="sad_b2_tech_wpn_task_2">
+                <text>Ценное оружие: вернуть дробовик Валерию Палычу</text>
+        </string>
+	<string id="sad_b2_tech_wpn_task_2_desc">
+                <text>Принести дробовик технику, с базы сталкеров, Валерию Палычу.</text>
+        </string>
+
+	<string id="sad_teleport_scan_ready">
+                <text>Валерий Палыч: Детектор готов, можешь забирать.</text>
+        </string>
+	
+	<string id="sad_artefact_upgr_ready">
+                <text>Профессор Стаховский: Артефакт готов, можете забирать.</text>
+        </string>
+	
+	<!-- Туристы -->
+	<string id="sad_turist_turist">
+                <text>Турист</text>
+        </string>
+	<string id="sad_turist_task_text">
+                <text>Провести экскурсию туристам по долине</text>
+        </string>
+	<string id="sad_turist_task_desc">
+                <text>Размер заработка зависит от количества убитых туристами мутантов и врагов</text>
+        </string>
+	
+	<string id="sad_turist_kill_mob_1">
+                <text>Завалил мутанта.</text>
+        </string>
+	<string id="sad_turist_kill_mob_2">
+                <text>Допрыгалась тварь.</text>
+        </string>
+	<string id="sad_turist_kill_mob_3">
+                <text>Пристрелил мутанта.</text>
+        </string>
+	<string id="sad_turist_kill_mob_4">
+                <text>Минус одна тварь.</text>
+        </string>
+	<string id="sad_turist_kill_mob_5">
+                <text>Я убил эту тварь.</text>
+        </string>
+	
+	<string id="sad_turist_kill_human_1">
+                <text>Завалил скотину.</text>
+        </string>
+	<string id="sad_turist_kill_human_2">
+                <text>Допрыгался козлина.</text>
+        </string>
+	<string id="sad_turist_kill_human_3">
+                <text>Пристрелил, пристрелил его.</text>
+        </string>
+	<string id="sad_turist_kill_human_4">
+                <text>Получи пулю.</text>
+        </string>
+	<string id="sad_turist_kill_human_5">
+                <text>Я убил ублюдка.</text>
+        </string>
+	
+	<string id="sad_turist_kill_mob_reward_0">
+                <text>С меня</text>
+        </string>
+	<string id="sad_turist_kill_mob_reward_1">
+                <text>в копилку</text>
+        </string>
+	
+	<string id="sad_turist_far">
+                <text>Туристы: Эй, ты где? Не уходи далеко!</text>
+        </string>
+	
+	<string id="sad_turist_exit_start">
+                <text>Так, давай посмотрим.</text>
+        </string>
+	<string id="sad_turist_dead">
+                <text>погиб.</text>
+        </string>
+	<string id="sad_turist_zarabotok">
+                <text>заработок</text>
+        </string>
+	<string id="sad_turist_kill_0">
+                <text>сказал, что с тобой больше в поход не пойдёт.</text>
+        </string>
+	<string id="sad_turist_kill_1">
+                <text>убито мутантов:</text>
+        </string>
+	<string id="sad_turist_kill_2">
+                <text>убито врагов:</text>
+        </string>
+	<string id="sad_turist_visits">
+                <text>посещено аномалий:</text>
+        </string>
+	<string id="sad_turist_reaction_good">
+                <text>доволен.</text>
+        </string>
+	<string id="sad_turist_reaction_normal">
+                <text>удовлетворён.</text>
+        </string>
+	<string id="sad_turist_reaction_bad">
+                <text>хреново поохотился.</text>
+        </string>
+	<string id="sad_turist_reaction_huynya">
+                <text>разочарован.</text>
+        </string>
+	<string id="sad_turist_total_zarabotok">
+                <text>Итого</text>
+        </string>
+	
+        <string id="sad_turist_visit_0">
+                <text>Туристы: Подожди немного, мы посмотрим на аномалию.</text>
+        </string>
+	<string id="sad_turist_visit_1">
+                <text>Ух ты, какое место!</text>
+        </string>
+	<string id="sad_turist_visit_2">
+                <text>Ну и местечко!</text>
+        </string>
+	<string id="sad_turist_visit_3">
+                <text>Вот это да! Я такого ещё на видел.</text>
+        </string>
+	<string id="sad_turist_visit_4">
+                <text>Красота.</text>
+        </string>
+	<string id="sad_turist_visit_end">
+                <text>Туристы: Можем двигать дальше.</text>
+        </string>
+	<string id="sad_turist_never_again">
+                <text>Можешь поставить крест на карьере гида.</text>
+        </string>
+        <string id="maxim_after_rob_msg">
+                <text>Максимильян: Сталкер, я смотрю ты тут рядом - подходи, пообщаемся.</text>
+        </string>
+
+
+	<string id="sad_b2_stalker_tech_1_name">
+		<text>Найти Палычу %s</text>
+	</string>
+	<string id="sad_b2_stalker_tech_1_text">
+		<text>Необходимо принести Палычу %s, чтобы он мог обеспечить более серьёзную модернизацию оружия или бронежилета.</text>
+	</string>
+	<string id="sad_b2_stalker_tech_1_about">
+		<text>Мне нужна помощь, сталкер. Множество сталкеров приходят ко мне с просьбой починить их оружие, но я не могу. У меня нет для этого подходящих инструментов. Я бы с радостью мог апгрейдить практически любую снарягу, будь у меня нужный набор. Братан, можешь мне с этим помочь?</text>
+	</string>
+	<string id="sad_b2_stalker_tech_1_fetch_about">
+		<text>Отлично, брат! Мне нужен набор инструментов для грубой работы. В нем должно быть всё, что мне нужно.. Если сможешь принести, наградой не обижу.</text>
+	</string>
+	<string id="sad_b2_stalker_tech_1_fetch_finish">
+		<text>Спасибо, именно то, что мне нужно. Вот, я обещал тебе награду, держи:</text>
+	</string>
+	<string id="sad_b2_stalker_tech_2_name">
+		<text>Найти Палычу %s</text>
+	</string>
+	<string id="sad_b2_stalker_tech_2_text">
+		<text>Необходимо принести Палычу %s, чтобы он мог обеспечить более серьёзную модернизацию оружия или бронежилета.</text>
+	</string>
+	<string id="sad_b2_stalker_tech_2_about">
+		<text>Дела ощутимо пошли вверх, всё больше сталкеров приходят ко мне за улучшениями, но я был бы способен на большее, будь у меня больше инструментов. Тот набор, что ты принес отличный, но в нем есть не всё, что мне нужно. Если бы ты принес более полный набор, я был бы тебе благодарен.</text>
+	</string>
+	<string id="sad_b2_stalker_tech_2_fetch_about">
+		<text>Мне нужны %s. Если принесешь, получишь награду.</text>
+	</string>
+	<string id="sad_b2_stalker_tech_2_fetch_finish">
+		<text>Отлично! Вот твоя награда, ты ее заслужил!</text>
+	</string>
+	<string id="sad_b2_stalker_tech_3_name">
+		<text>Найти Палычу %s</text>
+	</string>
+	<string id="sad_b2_stalker_tech_3_text">
+		<text>Необходимо принести Палычу %s, чтобы он мог обеспечить более серьёзную модернизацию оружия или бронежилета.</text>
+	</string>
+	<string id="sad_b2_stalker_tech_3_about">
+		<text>Тот набор, что ты принес отличный, но в нем есть не всё, что мне нужно. Если бы ты принес инструменты для калибровки, я был бы тебе благодарен.</text>
+	</string>
+	<string id="sad_b2_stalker_tech_3_fetch_about">
+		<text>Мне нужны %s. Если принесешь, получишь награду.</text>
+	</string>
+	<string id="sad_b2_stalker_tech_3_fetch_finish">
+		<text>Да! Да! Вот твоя награда, ты её заслужил!</text>
+	</string>	
+
+</string_table>

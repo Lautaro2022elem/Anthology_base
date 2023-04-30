@@ -1,0 +1,28 @@
+[logic@zom_1]
+suitable = {=check_npc_name(zombie_)} true
+active = mob_walker@1
+monster_job = true
+prior = 150
+
+[logic@zom_2]:logic@zom_1
+
+[logic@zom_3]:logic@zom_1
+
+[logic@zom_4]:logic@zom_1
+
+[logic@zom_5]:logic@zom_1
+active = mob_walker@2
+
+[logic@zom_6]:logic@zom_5
+
+[logic@zom_7]:logic@zom_5
+
+[logic@zom_8]:logic@zom_5
+
+[logic@zom_9]:logic@zom_5
+
+[mob_walker@1]
+path_walk = zom_walk_1
+
+[mob_walker@2]
+path_walk = zom_walk_2

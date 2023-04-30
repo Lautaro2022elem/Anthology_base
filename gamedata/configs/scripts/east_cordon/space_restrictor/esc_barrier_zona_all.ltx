@@ -1,0 +1,10 @@
+[logic]
+active = sr_idle
+
+[sr_idle]
+on_actor_outside = {+spectrum_project_start -esc_actor_barrier_outside +esc_colonel_kolyazin_prisoner_actor_dialog_complite} sr_idle@quest %+esc_actor_barrier_outside%
+
+[sr_idle@quest]
+on_timer = 4000 | sr_idle@nil %=give_task(eac_reach_base) +esc_barrier_quest_stop_zona_active%
+
+[sr_idle@nil]

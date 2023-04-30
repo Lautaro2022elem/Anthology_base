@@ -1,0 +1,74 @@
+[logic@red_greh_trader]
+active = animpoint@base
+suitable = {=check_npc_name(red_greh_trader)} true
+prior = 200
+level_spot = trader
+trade = items\trade\trade_greh.ltx
+can_select_weapon = true
+dont_keep_items = true
+   
+[animpoint@base]
+cover_name = red_greh_trader_cover
+use_camp = false
+gather_items_enabled = false
+help_wounded_enabled = false
+corpse_detection_enabled = false
+combat_ignore_cond = {=is_warfare} false, {=actor_true_enemy =check_enemy_name(actor)} false, true
+combat_ignore_keep_when_attacked = {=is_warfare} false, true
+invulnerable = {=is_warfare} false, {!actor_true_enemy} true, false
+meet = meet
+on_info = {=obj_on_job(red_smart_terrain_3_2:red_smart_terrain_3_2_beh_trade_job_1) =job_on_point(red_smart_terrain_3_2:red_smart_terrain_3_2_beh_trade_job_1:2:3:false)} %=trade_job_give_id(red_smart_terrain_3_2:red_smart_terrain_3_2_beh_trade_job_1)%
+
+[meet]
+close_anim 		= nil
+close_victim 	= nil
+far_anim 		= nil
+far_victim 		= nil
+close_distance  = 0
+far_distance 	= 0
+close_snd_distance = 3
+use = {=actor_enemy} false, true
+allow_break 	= false
+meet_on_talking = false
+
+;------------------------------
+;--------- NPC trade ----------
+;------------------------------
+[logic@red_smart_terrain_3_2_beh_trade_job_1]
+active = beh@red_smart_terrain_3_2_beh_trade_job_1
+suitable = {=npc_has_items_to_sell(red_smart_terrain_3_2) !surge_started} true
+prior = 65
+
+[beh@general]
+meet = meet@red_smart_terrain_3_2_animpoint_trade_meet
+gather_items_enabled = false
+help_wounded_enabled = false
+corpse_detection_enabled = false
+sound_idle = state
+behavior_state = beh_move
+target = waypoint
+walk_dist = 100
+jog_dist = 220
+wait_anim = guard
+walk_anim = patrol
+jog_anim = patrol
+run_anim = rush
+delay_anim = guard
+
+[beh@red_smart_terrain_3_2_beh_trade_job_1]:beh@general ;--pt1 choose - pt2 zat_b14_give_artefact_act - pt3 guard
+pt1 = 10000,choose | pos:-149.21102905273,2.178703546524,-38.504688262939 look:-149.12747192383,2.1766166687012,-39.983543395996
+pt2 = 5000,zat_b14_give_artefact_act | pos:-149.21102905273,2.178703546524,-38.504688262939 look:-149.12747192383,2.1766166687012,-39.983543395996 sig:trade
+pt3 = 10000,guard | pos:-149.21102905273,2.178703546524,-38.504688262939 look:-149.12747192383,2.1766166687012,-39.983543395996
+on_signal = trade | %=trade_job_sell_items%
+path_end = loop
+
+[meet@red_smart_terrain_3_2_animpoint_trade_meet]
+close_anim 		= nil
+close_victim 	= nil
+far_anim 		= nil
+far_victim 		= nil
+close_distance 	= 0
+far_distance 	= 0
+use = {=actor_enemy} false, {=dist_to_actor_le(3)} true, false
+snd_on_use = {!dist_to_actor_le(3)} nil
+meet_on_talking = false

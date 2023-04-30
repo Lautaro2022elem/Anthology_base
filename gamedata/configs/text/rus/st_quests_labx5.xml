@@ -1,0 +1,112 @@
+<?xml version="1.0" encoding="windows-1251" ?>
+<string_table>
+	<string id="labx5_main_quest_title0">
+		<text>Дети подземелья: Поговорить с Борландом.</text>
+	</string>
+	<string id="labx5_main_quest_text0">
+		<text>Необходимо подойти к Борланду и перекинутся парой слов.</text>
+	</string>
+	<string id="labx5_main_quest_title1">
+		<text>Дети подземелья: Следовать за Борландом.</text>
+	</string>
+	<string id="labx5_main_quest_text1">
+		<text>Идите следом за напарником и прикрывайте его в случае опасности.</text>
+	</string>
+	<string id="labx5_main_quest_title2">
+		<text>Дети подземелья: убейте мутанта.</text>
+	</string>
+	<string id="labx5_main_quest_text2">
+		<text>Борланда подцепил контролер. Уничтожьте тварь, пока она не разрушила его мозг.</text>
+	</string>
+	<string id="labx5_main_quest_title3">
+		<text>Дети подземелья: Поговорить с Борландом.</text>
+	</string>
+	<string id="labx5_main_quest_text3">
+		<text>Узнать о состоянии здоровья у Борланда.</text>
+	</string>
+	<string id="labx5_main_quest_title4">
+		<text>Дети подземелья: Следовать за Борландом.</text>
+	</string>
+	<string id="labx5_main_quest_text4">
+		<text>Идите следом за напарником, прикрывайть его в случае опасности.</text>
+	</string>
+	<string id="labx5_main_quest_title5">
+		<text>Дети подземелья: Пообщаться с напарником.</text>
+	</string>
+	<string id="labx5_main_quest_text5">
+		<text>Борланд нашел лифт, поговорите с ним на счет дальнейших действий..</text>
+	</string>
+	<string id="labx5_main_quest_title7">
+		<text>Дети подземелья: Найдите электрощиток и подайте питание.</text>
+	</string>
+	<string id="labx5_main_quest_text7">
+		<text>Необходимо пройти дальше в лабораторию и отыскать рубильник для подачи электропитания.</text>
+	</string>
+	<string id="labx5_main_quest_title6">
+		<text>Дети подземелья: отыщите проход к нижнему уровень</text>
+	</string>
+	<string id="labx5_main_quest_text6">
+		<text>Необходимо попасть на нижние этажи лаборатории. Возможно придеться найти способ взломать одну из дверей.</text>
+	</string>
+	<string id="labx5_main_quest_title8">
+		<text>Дети подземелья: проберитесь до аппаратной.</text>
+	</string>
+	<string id="labx5_main_quest_text8">
+		<text>Следуйте на самый нижний уровень.</text>
+	</string>
+	<string id="labx5_main_quest_title9">
+		<text>Дети подземелья: Поговорите с Борландом.</text>
+	</string>
+	<string id="labx5_main_quest_text9">
+		<text>Разузнайте обстановку.</text>
+	</string>
+	<string id="labx5_main_quest_title10">
+		<text>Дети подземелья: уничтожьте засаду.</text>
+	</string>
+	<string id="labx5_main_quest_text10">
+		<text>Ликвидируйте отряд монолитовцев, занявших холл и внутренние помещения.</text>
+	</string>
+	<string id="labx5_main_quest_title11">
+		<text>Дети подземелья: отыщите выход</text>
+	</string>
+	<string id="labx5_main_quest_text11">
+		<text>Продвигайтесь дальше и найдите выход из лаборатории.</text>
+	</string>
+	
+	<string id="labx5_quest_pitanie_1_title0">
+		<text>Дети подземелья: Найдите основной электрощиток.</text>
+	</string>
+	<string id="labx5_quest_pitanie_1_text0">
+		<text>Отыщите основной рубильник для подачи электропитания.</text>
+	</string>
+	<string id="labx5_quest_pitanie_2_title0">
+		<text>Дети подземелья: Найдите дополнительный электрощиток.</text>
+	</string>
+	<string id="labx5_quest_pitanie_2_text0">
+		<text>Отыщите дополнительный рубильник для подачи электропитания.</text>
+	</string>
+	
+	
+	
+<!-- Квест: Поручение Скидана -->
+<string id="labx5_quest_doc_part_1_title">
+<text>Поручение Скидана: найти документы</text>
+</string>
+<string id="labx5_quest_doc_part_1_descr">
+<text>Найти все возможные документы в Лаборатории.</text>
+</string>
+<string id="labx5_quest_doc_part_2_title">
+<text>Поручение Скидана: ждать указаний</text>
+</string>
+<string id="labx5_quest_doc_part_2_descr">
+<text>Подождать пока Скидан выйдет на связь.</text>
+</string>
+<string id="labx5_quest_doc_part_3_title">
+<text>Поручение Скидана: отдать документы Бармену</text>
+</string>
+<string id="labx5_quest_doc_part_3_descr">
+<text>НОТдать найденные документы Бармену.</text>
+</string>
+	
+	
+</string_table>

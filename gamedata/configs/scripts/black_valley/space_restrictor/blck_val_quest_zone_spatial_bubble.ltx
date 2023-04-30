@@ -1,0 +1,16 @@
+[logic]
+active = sr_idle@blck_val_b203_ruptured
+
+[sr_idle@blck_val_b203_ruptured]
+on_info = {+blck_val_spatial_anomaly_activation -blck_val_b203_spatial_bubble_ruptured} sr_particle@blck_val_b203_rupture_particle
+on_info2 = {+blck_val_b203_spatial_bubble_ruptured} sr_idle@blck_val_b203_end
+
+[sr_particle@blck_val_b203_rupture_particle]
+name = anomaly2\anomaly_spatial_bubble_rupture
+path = blck_val_b203_particle_point
+mode = 2
+looped = false 
+on_info = {-blck_val_b203_spatial_bubble_ruptured} %+blck_val_b203_spatial_bubble_ruptured =play_sound(jup_b46_spatial_bubble_rupture)%
+on_signal = particle_end | {+blck_val_b203_spatial_bubble_ruptured} sr_idle@blck_val_b203_end
+
+[sr_idle@blck_val_b203_end]

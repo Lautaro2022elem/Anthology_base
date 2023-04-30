@@ -1,0 +1,49 @@
+[logic]
+active = sr_idle@cut_scene_start
+
+[sr_idle@cut_scene_start]
+on_info = {+esc_dialog_from_mrakobes_final_done =actor_on_level(prostranstvenniy_puzir)} sr_idle@cut_scene_start_0 %=run_postprocess(black:2525:true) =set_game_time(20:20) =RavenMemmoryStart%
+
+[sr_idle@cut_scene_start_0]
+on_timer = 4000 | sr_idle@cut_scene_start_1 %=intro_chapter_3%
+
+[sr_idle@cut_scene_start_1]
+on_timer = 300 | sr_cutscene@cut_scene_start_2 %+pro_intro_chapter_3_stop_postprocess%
+
+[sr_cutscene@cut_scene_start_2]
+point = actor_come_back_puzir_walk
+look = actor_come_back_puzir_look
+cam_effector = scenario_cam\prostranstvenniy_puzir\pro_intro_camera
+enable_ui_on_end = false
+global_cameffect = true
+on_info = {+pro_intro_chapter_3_stop_postprocess -pro_intro_3_show_start} %=stop_postprocess(2525) =show_intro_three(intro_3) +pro_intro_3_show_start%
+on_timer = 33000 | sr_idle@proloque_start %=run_postprocess(black:2525:true)%
+
+[sr_idle@proloque_start]
+on_info = {-pro_come_back_prostranstvenniy_puzir +esc_dialog_from_mrakobes_final_done} %=CutSceneOnTorch =bed_getup_zver +pro_come_back_prostranstvenniy_puzir%
+on_info2 = {+pro_come_back_prostranstvenniy_puzir} sr_idle@proloque_start_1
+
+[sr_idle@proloque_start_1]
+on_timer = 1000 | sr_idle@proloque_start_2 %=spawn_object(pb_killer_leader_group:pro_leader_killer_group_walk) =spawn_object(pb_killer_fire:pro_killer_fire_spawn) =spawn_object(pb_kuvalda_prison:pro_kuvalda_prison_walk) =spawn_object(pb_snake_prison:pro_snake_prison_walk) =pro_in_inv_memmory_home%
+
+[sr_idle@proloque_start_2]
+on_timer = 5000 | sr_idle@proloque_start_3 %=teleport_actor(actor_come_back_puzir_walk:actor_come_back_puzir_look) =set_game_time(01:37)%
+
+[sr_idle@proloque_start_3]
+on_timer = 2000 | sr_idle@start %+perevalochnaya_baza_effect_end =stop_postprocess(2525) =ActorComeBack =show_chapter(chapter_3) =remove_npc(pb_quest_chimera)%
+
+[sr_idle@start]
+on_info = {-pro_come_back_start_game =actor_on_level(prostranstvenniy_puzir)} %+pro_come_back_start_game%
+on_info2 = {+pro_come_back_start_game} sr_idle@game_start
+
+[sr_idle@game_start]
+on_timer = 6800 | sr_idle@game_start_2 %=ActorComeBackEnd =enable_ui +pro_tesak_to_actor_meet_start%
+
+[sr_idle@game_start_2]
+on_timer = 500 | sr_idle@start_again %=give_task(pb_merc_leader_talk) =create_squad(pro_merc_enemy_base_squad:pro_smart_terrain_1_1)%
+
+[sr_idle@start_again]
+on_info = {+pro_actor_meet_leader_killer_1 -pro_kuvalda_scene_dead} %=CutSceneOnTorch%
+on_info2 = {+pro_kuvalda_scene_dead} sr_idle@nil %=enable_ui +pro_kuvalda_scene_dead_enable_ui +pro_intro_chapter_2_scene_end_info%
+
+[sr_idle@nil]

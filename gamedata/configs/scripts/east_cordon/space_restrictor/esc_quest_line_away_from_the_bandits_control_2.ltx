@@ -1,0 +1,29 @@
+[logic]
+active = sr_idle
+
+[sr_idle]
+on_info = {+spectrum_project_start +esc_squad_baza_bandits_dead_info} sr_idle@timer %=spawn_object(esc_npc_csky_holod:esc_npc_csky_holod_spawn)%
+
+[sr_idle@timer]
+on_game_timer = 70 | sr_idle@2 %=ActExplosive(esc_bandit_plen_1)%
+
+[sr_idle@2]
+on_info = {+esc_after_expkick_actor_info} sr_idle@3 %=teleport_actor(esc_quest_aftb_actor_walk_2:esc_quest_aftb_actor_look_2) +esc_quest_away_from_the_bandits_borland_go%
+
+[sr_idle@3]
+on_info = {+esc_borland_quest_baza_band_spawn} sr_idle@3a %=enable_ui =spawn_object(esc_borland_quest:esc_borland_quest_baza_band_spawn_walk)%
+
+[sr_idle@3a]
+on_info = {+esc_holod_quest_away_from_the_bandits_dialog_and} sr_idle@4 %=enable_ui%
+
+[sr_idle@4]
+on_info = {+esc_borland_quest_away_from_the_bandits_dialog_village} sr_idle@5 %=remove_npc(esc_borland_quest) =spawn_object(esc_borland_quest:esc_village_quest_look)%
+
+[sr_idle@5]
+on_info = {+esc_borland_quest_away_from_the_bandits_cleaner} sr_idle@6 %=remove_squad(esc_squad_tunnel) =remove_npc(esc_npc_csky_holod)%
+
+[sr_idle@6]
+on_game_timer = 400 | sr_idle@nil %=create_squad(esc_squad_baza_csky:esc_smart_terrain_8_0) =create_squad(esc_squad_csky_tunnel:esc_smart_terrain_2_1) +esc_csky_npc_del% 
+
+[sr_idle@nil]
+

@@ -1,0 +1,55 @@
+[logic]
+active = sr_idle@one
+
+[sr_idle@one]
+on_info = {+esc_esc_lisiy_notes_picked_up !is_day} %+start_night_quest_zohan%
+on_actor_inside = {!is_day +esc_esc_lisiy_notes_picked_up} %=create_squad(esc_smart_terrain_lisiy_squad:esc_smart_terrain_lisiy)% sr_idle@two
+
+[sr_idle@two]
+on_info = {+lisiy_fraza_one_end} %+esc_tunel_bandit_dialog_start% sr_idle@three
+
+[sr_idle@three]
+on_actor_inside = {+lisiy_dialog_tonnel_no_many} %=set_squad_enemy_to_actor(esc_smart_terrain_lisiy_squad)% sr_idle@four
+on_info = {+lisiy_dialog_tonnel_start} %=RavenMemmoryStart =run_postprocess(black:2525:true) =play_sound(esc_lisiy_step)% sr_idle@fiev
+
+[sr_idle@four]
+on_timer = 100 | sr_idle@eight %+esc_lisiy_dialog_tonnel_enemy%
+
+[sr_idle@fiev]
+on_timer = 1000 | sr_idle@six %=remove_squad(esc_smart_terrain_lisiy_squad)%
+
+[sr_idle@six]
+on_timer = 5000 | sr_idle@seven %=stop_postprocess(2525) =enable_ui%
+
+[sr_idle@seven]
+on_timer = 1700 | sr_idle@eight %+lisiy_gone%
+
+[sr_idle@eight]
+on_info = {+dialog_furgon_crash_keys} sr_idle@nine %=give_task(esc_lisiy_keys_quest)%
+
+[sr_idle@nine]
+on_game_timer = 10800 | sr_idle@ten
+
+[sr_idle@ten]
+on_info = {+dialog_furgon_crash_keys -sleep_active} sr_idle@11 %=esc_send_tip_furgon_from_keys +esc_lisiy_keys_crash_time_out%
+
+[sr_idle@11]
+on_info = {+dialog_zohan_quest_no_money} sr_idle@12
+on_info2 = {+dialog_zohan_quest_ya_podojdu} sr_idle@14
+
+[sr_idle@12]
+on_timer = 3000 | sr_idle@13 %=esc_send_tip_sidorovich_from_act +sidor_good_and_zohanBad_dialog_start%
+
+[sr_idle@13]
+on_game_timer = 30800 | sr_idle@13_1 %+esc_dolg_give_1%
+
+[sr_idle@13_1]
+on_info = {+esc_dolg_give_1 -sleep_active} sr_idle@nil %=esc_send_tip_zohan_from_actors_bad +esc_start_dialog_zohan_dolg%
+
+[sr_idle@14]
+on_game_timer = 30800 | sr_idle@14_1 %+esc_dolg_give_2%
+
+[sr_idle@14_1]
+on_info = {+esc_dolg_give_2 -sleep_active} sr_idle@nil %=esc_send_tip_zohan_from_actors +esc_start_dialog_zohan_dolg2%
+
+[sr_idle@nil]

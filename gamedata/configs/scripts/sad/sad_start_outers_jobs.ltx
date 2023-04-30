@@ -1,0 +1,102 @@
+[walker@def_1]
+gather_items_enabled = false
+help_wounded_enabled = false
+corpse_detection_enabled = false
+combat_ignore_cond = {!actor_enemy} true
+on_info8 = {=dist_to_actor_ge(80)} ;%=remove_squad(sad_start_first_squad)%
+on_info9 = {=actor_enemy} remark@enemy
+wounded = wounded
+
+[remark@enemy]
+
+[wounded]
+hp_state 		= 0|wounded_heavy@help_heavy
+hp_state_see 	= 0|wounded_heavy@help_heavy
+hp_victim 		= 0|nil
+hp_fight 		= 0|false
+hp_cover		= 0|false
+
+; ------------------------------------------------------------------------------------------------ 1
+[logic@man_1]
+suitable = {=target_squad_name(sad_start_first_squad) =is_squad_commander} true
+active = walker@10
+prior = 200
+
+[walker@10]:walker@def_1
+on_actor_dist_le_nvis = 8 | remark@11 %=play_sound(sad_start_eh_vovka)%
+path_walk = man_2_walk
+path_look = man_2_look
+meet = no_meet
+on_info = {+sad_zombocave_actor_inside} patrol@1_out
+
+[remark@11]:walker@def_1
+anim = wait_na
+target = path | sad_start_man_1_walk, 0
+on_signal = sound_end | remark@12 %+sad_start_men_snd_end%
+meet = no_meet
+
+[remark@12]:walker@def_1
+anim = wait_na
+target = path | sad_start_man_1_walk, 0
+on_timer = 5000 | patrol@1_out %-sad_start_men_snd_end%
+meet = meet
+
+[patrol@1_out]:walker@def_1
+path_walk = men_go_out
+commander = true
+formation = back
+def_state_moving = patrol
+on_info = {=squad_in_zone_all(sad_start_first_squad:sad_start_level_logic)} ;%=remove_squad(sad_start_first_squad)%
+meet = meet
+
+; ------------------------------------------------------------------------------------------------ 2
+[logic@man_2]
+suitable = {=target_squad_name(sad_start_first_squad) !is_squad_commander} true
+active = walker@20
+prior = 190
+
+[walker@20]:walker@def_1
+path_walk = man_1_walk
+path_look = man_1_look
+on_info = {+sad_start_men_snd_end} remark@21
+on_info2 = {+sad_zombocave_actor_inside} patrol@2_out
+def_state_standing = sit
+meet = no_meet
+
+[remark@21]:walker@def_1
+anim = wait_na
+target = path | sad_start_man_2_walk, 0
+on_timer = 500 | remark@22 %=play_sound(sad_start_artefak)%
+meet = no_meet
+
+[remark@22]:walker@def_1
+anim = wait_na
+target = path | sad_start_man_2_walk, 0
+on_info = {-sad_start_men_snd_end} patrol@2_out
+meet = no_meet
+
+[patrol@2_out]:walker@def_1
+path_walk = men_go_out
+on_info = {=squad_in_zone_all(sad_start_first_squad:sad_start_level_logic)} ;%=remove_squad(sad_start_first_squad)%
+meet = no_meet
+
+; -------------------------------------------------------------------------------------------------
+
+[meet]
+snd_on_use 		= nil
+close_snd_hello = nil
+close_snd_bye   = nil
+close_distance  = 3
+close_victim    = actor
+close_anim 		= wait_na
+far_anim 		= nil
+far_victim 		= nil
+far_distance 	= 0
+far_snd 		= nil
+meet_on_talking = false
+snd_on_use 		= {=actor_enemy} nil, {+sad_start_men_meeted} meet_use_no_default, nil
+use 			= {=actor_enemy} false, {+sad_start_men_meeted} false, {=dist_to_actor_ge(4)} false, true
+meet_dialog 	= sad_start_men_dialog
+allow_break 	= false
+trade_enable	= true
+

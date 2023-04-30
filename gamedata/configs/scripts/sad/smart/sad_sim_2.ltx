@@ -1,0 +1,31 @@
+[smart_terrain];	sad_sim_2
+squad_id = 4
+max_population = 1
+respawn_params = respawn@sad_sim_2
+arrive_dist = 40
+respawn_idle = 172800
+
+[respawn@sad_sim_2]
+spawn_stalker
+spawn_bandit
+
+[spawn_stalker]
+spawn_squads = stalker_sim_squad_advanced
+spawn_num = {+sad_mutny_gone +sad_sim_2_banditosy_dead} 1, 0
+
+[spawn_bandit]
+spawn_squads = bandit_sim_squad_advanced
+spawn_num = {+sad_mutny_gone +sad_sim_2_banditosy_dead} 1, 0
+
+[exclusive]
+sad_sim_2_stalker_vasya = sad\sad_sim_2_vasya_logic.ltx
+bandit_1 = sad\sad_sim_2_vasya_logic.ltx
+bandit_2 = sad\sad_sim_2_vasya_logic.ltx
+bandit_3 = sad\sad_sim_2_vasya_logic.ltx
+bandit_4 = sad\sad_sim_2_vasya_logic.ltx
+bandit_5 = sad\sad_sim_2_vasya_logic.ltx
+
+job_1 = sad\sad_sim_2_jobs.ltx
+job_2 = sad\sad_sim_2_jobs.ltx
+job_3 = sad\sad_sim_2_jobs.ltx
+job_4 = sad\sad_sim_2_jobs.ltx

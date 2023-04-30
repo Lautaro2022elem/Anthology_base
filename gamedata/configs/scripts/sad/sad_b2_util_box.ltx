@@ -1,0 +1,23 @@
+[logic] 
+active = ph_idle@wait
+
+[ph_idle@wait]
+nonscript_usable = false
+on_info = {+sad_b2_tech_util_start} ph_idle@100
+on_info2 = {+sad_actor_enemy_b2} ph_idle@enemy
+
+[ph_idle@100]
+nonscript_usable = true
+on_info = {!actor_in_zone(sad_b2_sr_noweap)} ph_idle@200 ; sad_b2_sr_no_assault
+on_info2 = {+sad_actor_enemy_b2} ph_idle@enemy
+tips = inventory_box_use
+
+[ph_idle@200] 
+nonscript_usable = true
+on_info = {=actor_in_zone(sad_b2_sr_light)} ph_idle@100 %=sad_b3_tech_util_check%
+on_info2 = {+sad_actor_enemy_b2} ph_idle@enemy
+tips = inventory_box_use
+
+[ph_idle@enemy]
+nonscript_usable = true
+tips = inventory_box_use

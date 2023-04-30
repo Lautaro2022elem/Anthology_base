@@ -1,0 +1,35 @@
+;=========meet_stalker_korpys========
+[meet@korpys_stalker]
+close_anim 		= nil
+close_victim 	= nil
+far_anim 		= nil
+far_victim 		= nil
+close_distance 	= 0
+far_distance 	= 0
+use = {=actor_enemy} false, {=dist_to_actor_le(3)} true, false
+snd_on_use = {!dist_to_actor_le(3)} nil
+meet_on_talking = false
+;==================================
+
+[logic]
+active = remark@stay
+suitable = {=check_npc_name(esc_killer_mrakobes)} true, false
+level_spot = quest_npc
+prior = 250
+
+[remark@stay]
+anim = wait
+target = path | esc_quest_killer_mrakobes_look, 0
+combat_ignore_cond = true
+combat_ignore_keep_when_attacked = true
+invulnerable = false
+gather_items_enabled = false
+help_wounded_enabled = false
+corpse_detection_enabled = false
+meet = meet@esc_end_memmory
+
+[meet@esc_end_memmory]:meet@korpys_stalker
+close_victim = actor
+allow_break = false
+meet_dialog = esc_actor_meet_from_mrakobes
+trade_enable = false

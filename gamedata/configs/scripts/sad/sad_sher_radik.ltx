@@ -1,0 +1,157 @@
+[walker@def]
+gather_items_enabled = false
+help_wounded_enabled = false
+corpse_detection_enabled = false
+wounded = wounded
+
+[remark@def_cs]:walker@def
+invulnerable = true
+combat_ignore_cond = true
+
+[logic@radik_job]
+active = walker@1
+suitable = { =check_npc_name(sad_stalker_radik) } true
+on_death = death
+on_hit = hit
+post_combat_time = 0, 0
+prior = 200
+
+[walker@1]:walker@def
+path_walk = radik_walk
+path_look = radik_look
+def_state_standing = ward_short
+meet = meet
+out_restr = sad_sher_surge_hide
+on_info = {-sad_radik_guard_talk =actor_in_zone(sad_sher_surge_hide)}  remark@1
+on_info2 = {+sad_radik_actor_enemy} walker@kill
+on_info3 = {+sad_radik_start_arrive} walker@fin %=play_sound(attack_begin)%
+;on_sound = actor|WPN_shoot|20|0.2| {=actor_in_zone(sad_sher_surge_hide) -sad_radik_guard_talk} %+sad_radik_actor_enemy%
+on_info4 = {+sad_sher_cutscene_start} remark@cs_1
+on_info5 = {+sad_radik_otkaz} walker@fin %=play_sound(attack_begin)%
+
+; --------------------------------------------- cutscene
+[remark@cs_1]:remark@def_cs
+anim = wait_na
+target  = story | sad_sher_cs_actor ;actor
+on_timer = 500 | remark@cs_2 %=play_sound(sad_sher_zahar_1)%
+
+[remark@cs_2]:remark@def_cs
+anim = wait_na
+target  = story | sad_sher_cs_actor ;actor
+on_signal = sound_end | remark@cs_2b
+
+[remark@cs_2b]:remark@def_cs
+anim = wait_rac
+target  = story | sad_sher_cs_actor ;actor
+on_signal = anim_end | remark@cs_3 %=play_sound(sad_sher_radik_1)%
+
+[remark@cs_3]:remark@def_cs
+anim = wait_rac
+target  = story | sad_sher_cs_actor ;actor
+on_signal = sound_end | remark@cs_4 %=play_sound(sad_sher_zahar_2)%
+
+[remark@cs_4]:remark@def_cs
+anim = wait_rac
+target  = story | sad_sher_cs_actor ;actor
+on_signal = sound_end | remark@cs_5 %=play_sound(sad_sher_radik_2)%
+
+[remark@cs_5]:remark@def_cs
+anim = wait_rac
+target  = story | sad_sher_cs_actor ;actor
+on_signal = sound_end | remark@cs_6
+
+[remark@cs_6]:remark@def_cs
+anim = wait_na
+target  = story | sad_sher_cs_actor ;actor
+on_timer = 500 | remark@cs_7 %=play_sound(sad_sher_radik_3)%
+
+[remark@cs_7]:remark@def_cs
+anim = wait_na
+target  = story | sad_sher_cs_actor ;actor
+on_signal = sound_end | walker@2 %+sad_sher_cs_actor_go_away%
+
+; ----------------------------------------------------------------
+[walker@2]:walker@def
+path_walk = radik_walk
+path_look = radik_look
+meet = meet@during_pdast
+out_restr = sad_sher_sr_noout
+on_info = {+sad_sher_pdasts_are_killed} walker@3
+on_info2 = {+sad_radik_actor_enemy} walker@kill
+on_info3 = {+sad_radik_start_arrive} walker@fin %=play_sound(attack_begin)%
+
+[walker@3]:walker@def
+path_walk = radik_walk
+path_look = radik_look
+def_state_standing = ward_short
+meet = meet
+out_restr = sad_sher_sr_noout
+on_info2 = {+sad_radik_actor_enemy} walker@kill
+on_info3 = {+sad_radik_start_arrive} walker@fin %=play_sound(attack_begin)%
+
+[walker@fin]:walker@def
+path_walk = radik_most_1_walk
+path_look = radik_most_1_look
+def_state_standing = threat_na
+def_state_moving = run
+on_info9 = {+sad_radik_actor_enemy} walker@kill
+meet = no_meet
+
+[remark@1]
+anim = threat
+target  = story | actor
+on_info = {+sad_radik_guard_talk} walker@1
+
+[walker@kill]:walker@def
+path_walk = radik_most_4_walk
+path_look = radik_most_2_look
+
+; ------------------------------------
+[meet]
+close_snd_hello = nil
+close_snd_bye   = nil
+close_distance  = 2
+close_victim    = actor
+close_anim 		= wait_na
+far_anim 		= wait_na
+far_victim 		= actor
+far_distance 	= 3
+use 			= {=actor_enemy} false, {+sad_radik_otkaz} false, {=dist_to_actor_ge(2)} false, true
+trade_enable 	= false
+allow_break 	= false
+meet_on_talking = false
+
+[meet@during_pdast]
+close_snd_hello = nil
+close_snd_bye   = nil
+close_distance  = 0
+close_victim    = nil
+close_anim 		= nil
+far_anim 		= nil
+far_victim 		= nil
+far_distance 	= 0
+use 			= false
+meet_on_talking = false
+snd_on_use		= meet_use_no_fight
+
+[danger]
+ignore_distance = 0
+ignore_distance_grenade = 0
+ignore_distance_corpse = 0
+ignore_distance_hit = 0
+ignore_distance_sound = 0
+
+[wounded]
+hp_state 		= 0|wounded_heavy@help_heavy
+hp_state_see 	= 0|wounded_heavy@help_heavy
+hp_victim 		= 0|nil
+hp_fight 		= 0|false
+hp_cover		= 0|false
+
+[death]
+on_info = {=killed_by_actor} %+sad_radik_dead +sad_radik_actor_enemy%, %+sad_radik_dead%
+
+[hit]
+on_info = {=actor_enemy} %+sad_radik_actor_enemy%
+
+

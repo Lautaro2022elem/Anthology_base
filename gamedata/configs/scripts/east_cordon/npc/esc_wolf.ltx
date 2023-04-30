@@ -1,0 +1,185 @@
+[logic@esc_squad_village_wolf]
+active = animpoint@wolf_home
+on_death = death
+level_spot = quest_npc
+suitable = {=check_npc_name(esc_wolf)} true, false
+prior = 200
+
+[animpoint@wolf_home]
+cover_name = esc_wolf_sit_home
+on_info = {=surge_started()} walker@wolf_surge
+on_info2 = {=zat_b7_is_night} animpoint@wolf_sleep
+on_info3 = {-esc_quest_insurance_complite +esc_wolf_quest_insurance_dialog_and} walker@insurance_1
+on_info4 = {=actor_enemy} %=actor_neutral%
+gather_items_enabled = false
+corpse_detection_enabled = false
+combat_ignore_keep_when_attacked = true 
+combat_ignore_cond = true
+invulnerable = true
+meet = meet
+use_camp = false
+
+[walker@wolf_surge]
+path_walk = esc_wolf_surge_way
+path_look = esc_wolf_surge_look
+on_info = {=surge_complete()} animpoint@wolf_home
+on_info2 = {=actor_enemy} %=actor_neutral%
+gather_items_enabled = false
+corpse_detection_enabled = false
+combat_ignore_keep_when_attacked = true 
+combat_ignore_cond = true
+invulnerable = true
+meet = meet
+use_camp = false
+
+[animpoint@wolf_sleep]
+cover_name = esc_wolf_night
+on_info = {=is_day} animpoint@wolf_home
+on_info2 = {=actor_enemy} %=actor_neutral%
+gather_items_enabled = false
+corpse_detection_enabled = false
+combat_ignore_keep_when_attacked = true 
+combat_ignore_cond = true
+invulnerable = true
+meet = meet
+use_camp = false
+
+[meet]
+close_snd_hello = esc_wolf_meet
+close_snd_bye 	= esc_wolf_meet_bye
+close_anim 	= nil
+close_victim 	= nil
+far_anim 	= nil
+far_victim 	= nil
+close_distance  = 0
+far_distance 	= 0
+close_snd_distance = 3
+use = {=actor_enemy} false, true
+allow_break 	= false
+
+[smart_terrains]
+none = true
+
+[death]
+on_info = %+esc_wolf_dead%
+
+;========================================================================
+;============== Квест: Страховка ========================================
+;========================================================================
+[walker@insurance_1]
+path_walk = esc_wolf_insurance_1_walk_1
+on_info = {=dist_to_actor_ge(90)} walker@insurance_6 %+esc_quest_insurance_reversed%
+on_info2 = {=actor_enemy} %=actor_neutral%
+def_state_moving = run
+meet = no_meet
+invulnerable = true
+gather_items_enabled = false
+corpse_detection_enabled = false
+on_signal = esc_wolf_insurance_1 | {-esc_wolf_insurance_1} remark@insurance_2 %+esc_wolf_insurance_1%
+
+[remark@insurance_2]
+anim = wait_na
+target = story | actor
+meet = meet@dialog
+danger = danger
+invulnerable = true
+gather_items_enabled = false
+corpse_detection_enabled = false
+on_info = {+esc_wolf_quest_insurance_dialog_strahovka} walker@insurance_3
+on_info2 = {=dist_to_actor_ge(80)} walker@insurance_6 %+esc_quest_insurance_reversed%
+on_info3 = {=actor_enemy} %=actor_neutral%
+
+[walker@insurance_3]
+path_walk = esc_wolf_insurance_3_walk_1
+path_look = esc_wolf_insurance_3_look_1
+on_info = {=dist_to_actor_ge(90)} walker@insurance_6 %+esc_quest_insurance_reversed%
+on_info2 = {=actor_enemy} %=actor_neutral%
+gather_items_enabled = false
+corpse_detection_enabled = false
+combat_ignore_keep_when_attacked = true 
+combat_ignore_cond = true
+def_state_moving = walk_noweap
+on_signal = esc_wolf_insurance_2| {-esc_wolf_insurance_2} walker@insurance_4 %+esc_wolf_insurance_2%
+meet = no_meet
+invulnerable = true
+
+[walker@insurance_4]
+path_walk = esc_wolf_insurance_3_walk_2
+def_state_moving = run
+on_signal = esc_wolf_insurance_3| {-esc_wolf_insurance_3} remark@insurance_5 %+esc_wolf_insurance_3%
+meet = no_meet
+invulnerable = true
+gather_items_enabled = false
+corpse_detection_enabled = false
+on_info = {=dist_to_actor_ge(90)} walker@insurance_6 %+esc_quest_insurance_reversed%
+on_info2 = {=actor_enemy} %=actor_neutral%
+
+[remark@insurance_5]
+anim = wait
+target = story | actor
+meet = meet@dialog_gg
+danger = danger
+invulnerable = true
+gather_items_enabled = false
+corpse_detection_enabled = false
+on_info = {+esc_wolf_quest_insurance_dialog_gg} remark@insurance_6
+on_info2 = {=dist_to_actor_ge(90)} walker@insurance_6 %+esc_quest_insurance_reversed%
+on_info3 = {=actor_enemy} %=actor_neutral%
+
+[remark@insurance_6]
+anim = wait
+target = story | actor
+meet = no_meet
+danger = danger
+invulnerable = true
+gather_items_enabled = false
+corpse_detection_enabled = false
+on_info = {+esc_wolf_quest_insurance_af_medusa} remark@insurance_7
+on_info2 = {=dist_to_actor_ge(90)} walker@insurance_6 %+esc_quest_insurance_reversed%
+on_info3 = {=actor_enemy} %=actor_neutral%
+
+[remark@insurance_7]
+anim = wait_na
+target = story | actor
+danger = danger
+invulnerable = true
+gather_items_enabled = false
+corpse_detection_enabled = false
+meet = meet@dialog_complite
+on_info = {+esc_wolf_quest_insurance_dialog_complite_and} walker@insurance_6
+on_info2 = {=dist_to_actor_ge(90)} walker@insurance_6 %+esc_quest_insurance_reversed%
+on_info3 = {=actor_enemy} %=actor_neutral%
+
+[walker@insurance_6]
+path_walk = esc_wolf_insurance_6_walk_1
+def_state_moving = run
+gather_items_enabled = false
+corpse_detection_enabled = false
+on_signal = esc_wolf_insurance_6| {-esc_quest_insurance_complite} animpoint@wolf_home %+esc_quest_insurance_complite%
+meet = no_meet
+invulnerable = true
+on_info = {=actor_enemy} %=actor_neutral%
+
+;------------------------------------------
+[meet@def]
+abuse           = false
+close_anim 		= nil
+far_anim 		= nil
+far_victim 		= nil
+close_distance  = 0
+far_distance 	= 0
+close_victim = actor
+allow_break = false
+trade_enable = false
+
+[meet@dialog]:meet@def
+use = {=dist_to_actor_le(3) -esc_wolf_quest_insurance_dialog_strahovka} self, true
+meet_dialog = esc_wolf_quest_insurance_dialog_strahovka
+
+[meet@dialog_gg]:meet@def
+use = {=dist_to_actor_le(3) -esc_wolf_quest_insurance_dialog_gg} self, true
+meet_dialog = esc_wolf_quest_insurance_dialog_gg
+
+[meet@dialog_complite]:meet@def
+use = {=dist_to_actor_le(2) -esc_wolf_quest_insurance_dialog_complite_and} self, true
+meet_dialog = esc_wolf_quest_insurance_dialog_complite

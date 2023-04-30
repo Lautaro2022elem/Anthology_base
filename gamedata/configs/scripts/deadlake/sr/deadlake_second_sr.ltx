@@ -1,0 +1,7 @@
+[logic]
+active = sr_idle@check_info
+
+[sr_idle@check_info]
+on_info = {+dl_stalker_quest_taked} sr_idle@nil %=create_squad(deadlake_bandits_quest_squad:deadlake_bandits_quest_smart) =give_task(dl_stalker_quest)%
+
+[sr_idle@nil]

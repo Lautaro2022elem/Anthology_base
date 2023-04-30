@@ -1,0 +1,42 @@
+[logic]
+active = sr_idle@one_part
+
+[sr_idle@one_part]
+on_info = {=actor_on_level(dl)} sr_idle@timer
+
+[sr_idle@timer] 
+on_game_timer = 52000 | sr_idle@second_part %=val_alife_counter_attack_check_1%
+
+[sr_idle@second_part]
+on_timer = 5000 | sr_idle@third_part %=val_alife_counter_attack_check_2%
+
+[sr_idle@third_part]
+on_timer = 5000 | sr_idle@four_part %=val_alife_counter_attack_check_3%
+
+[sr_idle@four_part]
+on_timer = 5000 | sr_idle@five_part %=val_alife_counter_attack_check_4%
+
+[sr_idle@five_part]
+on_timer = 5000 | sr_idle@six_part %=val_alife_counter_attack_counter_attack_begin_3%
+
+[sr_idle@six_part]
+on_timer = 5000 | sr_idle@spawn_monolith %=val_alife_counter_attack_reply_2 =give_task(lost) +dl_start_task_lost =hero_thoughts_28%
+
+[sr_idle@spawn_monolith]
+on_info = {+dl_lost_stalkers_squad_task} sr_idle@check_zone %=create_squad(dl_monolith_sim_squad_advanced:lake_smart_terrain_3) =create_squad(dl_monolith_sim_squad_advanced_2:lake_smart_terrain_3) =spawn_corpse(dl_lost_stalker:dl_trup_stalkera_4) =spawn_corpse(sim_default_stalker_2:dl_trup_stalkera_3) =spawn_corpse(sim_default_stalker_2:dl_trup_stalkera_1) =spawn_corpse(sim_default_stalker_2:dl_trup_stalkera_2)%
+
+[sr_idle@check_zone]
+on_info = {=dist_to_actor_le(60)} sr_cutscene@scene
+
+[sr_cutscene@scene] 
+point = dl_tls_walk
+look = dl_tls_look
+cam_effector = scenario_cam\Lake\dl_monolit_stalkers_kill_scene
+global_cameffect = true 
+enable_ui_on_end = true 
+on_signal = cameff_end | sr_idle@check_doc %=stop_sr_cutscene +dl_task_lost_squad_kill_monolith =hero_thoughts_29%
+
+[sr_idle@check_doc]
+on_info = {=actor_has_item(dl_lab_x6_info)} sr_idle@nil %+dl_quest_lost_squad_update =hero_thoughts_30%
+
+[sr_idle@nil]

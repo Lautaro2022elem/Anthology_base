@@ -1,0 +1,125 @@
+;=========meet_stalker_korpys========
+[meet@korpys_stalker]
+close_anim 		= nil
+close_victim 	= nil
+far_anim 		= nil
+far_victim 		= nil
+close_distance 	= 0
+far_distance 	= 0
+use = {=actor_enemy} false, {=dist_to_actor_le(3)} true, false
+snd_on_use = {!dist_to_actor_le(3)} nil
+meet_on_talking = false
+;==================================
+
+
+[logic@perevalochnaya_baza_smart_2_walker_1]
+active = walker@zombie_walker_1
+prior = 50
+suitable = {=check_npc_name(pb_zombied_dolg_man)} true, false
+on_hit = hit@zombie_1
+
+[walker@zombie_walker_1]
+path_walk = walker_1_walk
+path_look = walker_1_look
+on_info = {=dist_to_actor_le(25)} walker@zombie_atack_1
+on_info2 = {+pb_actor_hit_zombied_dolg_man} walker@zombie_atack_1
+combat_ignore_cond = true 
+combat_ignore_keep_when_attacked = true
+use_camp = false
+meet = no_meet
+
+[walker@zombie_atack_1]
+path_walk = walker_1_walk
+path_look = walker_1_look
+on_info = {=dist_to_actor_ge(35)} walker@zombie_walker_1
+use_camp = false
+meet = no_meet
+
+[hit@zombie_1]
+on_info = {=hit_by_actor -pb_actor_hit_zombied_dolg_man} %+pb_actor_hit_zombied_dolg_man%
+
+;================================================
+
+[logic@perevalochnaya_baza_smart_2_walker_2]
+active = walker@zombie_walker_2
+prior = 50
+suitable = {=check_npc_name(pb_zombied_dolg_man_1)} true, false
+on_hit = hit@zombie_2
+
+[walker@zombie_walker_2]
+path_walk = walker_2_walk
+path_look = walker_2_look
+on_info = {=dist_to_actor_le(25)} walker@zombie_atack_2
+on_info2 = {+pb_actor_hit_zombied_dolg_man_1} walker@zombie_atack_2
+combat_ignore_cond = true 
+combat_ignore_keep_when_attacked = true
+use_camp = false
+meet = no_meet
+
+[walker@zombie_atack_2]
+path_walk = walker_2_walk
+path_look = walker_2_look
+on_info = {=dist_to_actor_ge(35)} walker@zombie_walker_2
+use_camp = false
+meet = no_meet
+
+[hit@zombie_2]
+on_info = {=hit_by_actor -pb_actor_hit_zombied_dolg_man_1} %+pb_actor_hit_zombied_dolg_man_1%
+
+;================================================
+
+[logic@perevalochnaya_baza_smart_2_walker_3]
+active = walker@zombie_walker_3
+prior = 50
+suitable = {=check_npc_name(pb_zombied_dolg_man_2)} true, false
+on_hit = hit@zombie_3
+
+[walker@zombie_walker_3]
+path_walk = walker_3_walk
+path_look = walker_3_look
+on_info = {=dist_to_actor_le(25)} walker@zombie_atack_3
+on_info2 = {+pb_actor_hit_zombied_dolg_man_2} walker@zombie_atack_3
+combat_ignore_cond = true 
+combat_ignore_keep_when_attacked = true
+use_camp = false
+meet = no_meet
+
+[walker@zombie_atack_3]
+path_walk = walker_3_walk
+path_look = walker_3_look
+on_info = {=dist_to_actor_ge(35)} walker@zombie_walker_3
+use_camp = false
+meet = no_meet
+
+[hit@zombie_3]
+on_info = {=hit_by_actor -pb_actor_hit_zombied_dolg_man_2} %+pb_actor_hit_zombied_dolg_man_2%
+
+;================================================
+
+[logic@perevalochnaya_baza_smart_2_walker_4]
+active = walker@zombie_walker_4
+prior = 50
+suitable = {=check_npc_name(pb_zombied_dolg_man_3)} true, false
+on_hit = hit@zombie_4
+
+[walker@zombie_walker_4]
+path_walk = walker_4_walk
+path_look = walker_4_look
+on_info = {=dist_to_actor_le(25)} walker@zombie_atack_4
+on_info2 = {+pb_actor_hit_zombied_dolg_man_3} walker@zombie_atack_4
+combat_ignore_cond = true 
+combat_ignore_keep_when_attacked = true
+use_camp = false
+meet = no_meet
+
+[walker@zombie_atack_4]
+path_walk = walker_4_walk
+path_look = walker_4_look
+on_info = {=dist_to_actor_ge(35)} walker@zombie_walker_4
+use_camp = false
+meet = no_meet
+
+[hit@zombie_4]
+on_info = {=hit_by_actor -pb_actor_hit_zombied_dolg_man_3} %+pb_actor_hit_zombied_dolg_man_3%
+
+;================================================

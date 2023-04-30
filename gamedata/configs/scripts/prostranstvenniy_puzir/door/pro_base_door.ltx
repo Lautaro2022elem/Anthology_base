@@ -1,0 +1,27 @@
+[logic]
+active = ph_door@locked
+
+[ph_door@closed]
+closed = true
+locked = false
+on_use = ph_door@open
+snd_open_start = trader_door_open_start
+snd_close_start = trader_door_close_start
+snd_close_stop = trader_door_close_stop
+on_info = {+pro_base_final_door_is_opened !is_door_blocked_by_npc} ph_door@open
+
+[ph_door@open]
+closed = false
+locked = false
+on_use = ph_door@closed
+on_game_timer = 60 | ph_door@closed
+snd_open_start = trader_door_open_start
+snd_close_start = trader_door_close_start
+snd_close_stop = trader_door_close_stop
+
+[ph_door@locked]
+closed = true
+locked = true
+snd_open_start = trader_door_locked
+tip_open = tip_door_locked
+on_info = {+pro_murad_prisoner_dialog_done} ph_door@closed

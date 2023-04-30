@@ -1,0 +1,285 @@
+<?xml version="1.0" encoding="windows-1251" ?>
+<game_dialogs>
+
+<dialog id="friendly_fatty_companion_dialog">
+	<has_info>rookie_pole_task_2_dlg_make_friend</has_info>	
+	<precondition>dialogs_axr_companion.is_not_actor_companion</precondition>
+	<precondition>dialogs_axr_companion.is_not_hostage_task_giver</precondition>
+    <phrase_list>
+        <phrase id="0">
+            <text>axr_phrase_friend_companion_ask_join</text>
+            <next>1</next>
+        </phrase>
+        <phrase id="1">
+            <text>axr_phrase_friend_companion_answer_join</text>
+		<action>dialogs_axr_companion.become_actor_companion</action>
+        </phrase>
+    </phrase_list>
+</dialog>
+
+<dialog id="talk_to_saving_rookie_dlg">
+<has_info>you_save_rookie_hero</has_info>
+<dont_has_info>talk_to_saving_rookie</dont_has_info>
+<phrase_list>
+    <phrase id="0">
+        <text>Здарова, мужик. Спасибо тебе огромное, иначе думаю кровосос бы меня сожрал, дверь то довольно хлипкая.</text>
+        <next>1</next>
+    </phrase>
+    <phrase id="1">
+        <text>Как ты здесь оказался вообще?</text>
+		<next>2</next>	
+    </phrase>
+    <phrase id="2">
+        <text>Как это не банально прозвучит, но искал, чем здесь можно поживиться.</text>
+		<next>3</next>	
+    </phrase>
+    <phrase id="3">
+        <text>И как, нашёл?</text>
+		<next>4</next>	
+    </phrase>
+    <phrase id="4">
+        <text>А то! Поднимись на чердак, там кое-кто хабар припрятал, я его тебе в знак благодарности открываю. Слушай, если ты ничем занят не будешь, то подойди ко мне, пожалуйста. Предложение у меня одно есть.</text>
+<give_info>talk_to_saving_rookie</give_info>
+<disable_info>you_save_rookie_hero</disable_info>
+    </phrase>	
+</phrase_list>
+</dialog>
+
+<dialog id="rookie_pole_task_2_questions">
+<has_info>rookie_pole_task_2_dlg</has_info>
+<dont_has_info>boss_controller_pole_dead</dont_has_info>
+<phrase_list>
+    <phrase id="0">
+        <text>Есть какие-нибудь мысли?</text>
+        <next>1</next>	
+        <next>2</next>	
+        <next>3</next>	
+        <next>4</next>			
+    </phrase>
+    <phrase id="1">
+	<has_info>rookie_pole_task_2_near_entrance</has_info>	
+	<dont_has_info>rookie_pole_task_2_questions_1</dont_has_info>	
+        <text>Давай проверим этот КПП, вдруг там что-нибудь осталось, не думаю, что туда заглядывали.</text>	
+    <give_info>rookie_pole_task_2_questions_1</give_info>	
+    </phrase>	
+    <phrase id="2">
+	<has_info>rookie_pole_task_2_near_main_build</has_info>	
+	<dont_has_info>rookie_pole_task_2_questions_2</dont_has_info>
+        <text>Мне кажется стоит проверить это административное здание в три этажа посреди комплекса и цеха тоже само собой.</text>			
+	<give_info>rookie_pole_task_2_questions_2</give_info>			
+    </phrase>		
+    <phrase id="3">
+	<has_info>rookie_pole_task_2_near_dead_camp</has_info>	
+	<dont_has_info>rookie_pole_task_2_questions_4</dont_has_info>
+        <text>Обалдеть, да? Давай здесь поищем, может при жизни сталкеры оставили о себе какие-нибудь сведения. Только долго я здесь задерживаться не хочу, у меня плохое предчувствие.</text>
+	<give_info>rookie_pole_task_2_questions_4</give_info>			
+    </phrase>	
+    <phrase id="4">
+        <text>Не знаю даже.</text>					
+    </phrase>	
+</phrase_list>
+</dialog>
+
+<dialog id="rookie_pole_task_1_dlg">
+<has_info>talk_to_saving_rookie</has_info>
+<dont_has_info>rookie_pole_task_1_dlg</dont_has_info>
+<phrase_list>
+    <phrase id="0">
+        <text>Что ты хотел мне предложить?</text>
+        <next>1</next>
+    </phrase>
+    <phrase id="1">
+        <text>Это всё завод. Знаешь, место здесь конечно не "первой свежести", но сюда никто не жаловал, так как откровенно артефактов здесь не густо, да и опасно тут для окраин Зоны. Но недавно слушки о местном заводе ходить начали, дескать оружие здесь какое-то хранится, что после первого взрыва правительство разрабатывало. Ну ты знаешь наверно истории про Меченого и Стрелка, которые все подземные комплексы почти разграбили? А тут надежда новичкам не углубляясь в центр добыть что-нибудь эдакое ценное и дорогостоящее. Вот и попёрли они сюда, да и я в их числе, а следом за нами бандиты так как там где сталкеры, там и хабаром можно разжиться.</text>
+		<next>2</next>	
+    </phrase>
+    <phrase id="2">
+        <text>Хочешь предложить мне вместе поискать ценные сведения в этом месте?</text>
+		<next>3</next>	
+    </phrase>
+    <phrase id="3">
+        <text>Ага. Но сначала помоги мне пожалуйста, без оружия здесь лучше не околачиваться. Был у меня дробовик хороший, я прежде чем сюда сунуться денежки на него собрал, но полез в подстанцию местную (она здесь недалеко) и там аномалия какая-то была странная, ну в общем неосторожен я был и она как шарахнула! Благо не задело меня, но пересрал я знатно, так и бросил ствол, сюда убежал вот. Можешь смеяться, но когда ты лишь чудом смерти избежал... короче принесёшь мне его? И это, если хочешь, помоги мне ещё кое с чем.</text>
+		<next>4</next>	
+		<next>5</next>			
+    </phrase>
+    <phrase id="4">
+        <text>Ну схожу за твоим дробовиком.</text>
+		<action>dialogs_mlr.give_rookie_pole_task_1</action>			
+		<give_info>rookie_pole_task_1_dlg</give_info>
+    </phrase>	
+    <phrase id="5">
+        <text>Давай не сейчас.</text>
+    </phrase>		
+</phrase_list>
+</dialog>
+
+<dialog id="rookie_pole_task_1_dlg_1">
+<precondition>dialogs_mlr.has_wpn_saiga_rookie_pole</precondition>
+<has_info>rookie_pole_task_1_dlg</has_info>
+<dont_has_info>rookie_pole_task_1_dlg_1</dont_has_info>
+<phrase_list>
+    <phrase id="0">
+        <text>Вот возьми свой ствол, угораздило же тебя.</text>
+		<action>dialogs_mlr.take_wpn_saiga_rookie_pole</action>			
+        <next>1</next>
+    </phrase>
+    <phrase id="1">
+        <text>Спасибо, вот возьми "вспышку" в знак благодарности, я её успел в той аномалии найти. Подготовься хорошенько, в одну из ночей приходи, пойдём на завод.</text>
+		<give_info>rookie_pole_task_1_dlg_1</give_info>		
+		<give_info>rookie_pole_task_1_dlg_no_sleep</give_info>			
+    </phrase>	
+</phrase_list>
+</dialog>
+
+<dialog id="rookie_pole_task_2_dlg">
+<precondition>xr_conditions.is_night</precondition>
+<has_info>rookie_pole_task_1_dlg_1</has_info>
+<dont_has_info>take_barman_doc_from_factory_pole</dont_has_info>
+<dont_has_info>rookie_pole_task_2_dlg</dont_has_info>
+<phrase_list>
+    <phrase id="0">
+        <text>Ну я готов.</text>
+        <next>1</next>
+    </phrase>
+    <phrase id="1">
+        <text>Отлично, мне прямо не терпится узнать все тайны этого места. Но будь начеку, надеюсь обойдёмся без происшествий.</text>
+		<action>dialogs_mlr.give_rookie_pole_task_2</action>			<action>dialogs_axr_companion.become_actor_companion</action>			
+		<give_info>rookie_pole_task_2_dlg</give_info>
+		<give_info>rookie_pole_task_2_dlg_close_task_3</give_info>		
+		<disable_info>rookie_pole_task_1_dlg_no_sleep</disable_info>		
+    </phrase>	
+</phrase_list>
+</dialog>
+
+<dialog id="rookie_pole_task_2_dlg_2">
+<precondition>dialogs_mlr.has_pole_factory_documents</precondition>
+<has_info>can_talk_to_fat_stalker</has_info>
+<dont_has_info>rookie_pole_task_2_dlg_2</dont_has_info>
+<phrase_list>
+    <phrase id="0">
+        <text>Мда...</text>
+        <next>1</next>
+    </phrase>
+    <phrase id="1">
+        <text>Вот так всегда, понимаешь? Снова чуть не погибли и снова ты меня спас. А там ничего не было... Вот тебе и мораль, мужик: полагайся только на объективные разносторонние сведения, проводи мать его параллели и не живи в розовых очках. Тьфу, сука!</text>
+        <next>2</next>		
+    </phrase>
+    <phrase id="2">
+        <text>Что дальше?</text>
+        <next>3</next>
+    </phrase>	
+    <phrase id="3">
+        <text>Дашь мне документы? После вылазки себе на память сохраню. Отплатить мне тебе к сожалению нечем, но я могу стать тебе хорошим другом, если захочешь со мной побродить.</text>
+        <next>4</next>
+        <next>5</next>		
+    </phrase>		
+    <phrase id="4">
+        <text>Да держи, мне они ни к чему.</text>
+		<action>dialogs_mlr.take_pole_factory_documents</action>		
+		<give_info>rookie_pole_task_2_dlg_2</give_info>	
+		<give_info>rookie_pole_task_2_dlg_make_friend</give_info>	
+		<disable_info>rookie_pole_task_2_dlg_close_task_3</disable_info>			
+		<action>dialogs_axr_companion.remove_companions_from_squad</action>			
+    </phrase>	
+    <phrase id="5">
+        <text>Издеваешься что ли? Я жизнью рисковал из-за тебя, причём трижды. Пойду лучше Бармену сдам.</text>
+		<give_info>rookie_pole_task_2_dlg_2</give_info>	
+		<disable_info>rookie_pole_task_2_dlg_close_task_3</disable_info>			
+		<give_info>rookie_pole_task_2_dlg_docum_on_actor</give_info>			
+		<action>dialogs_axr_companion.remove_companions_from_squad</action>			
+    </phrase>			
+</phrase_list>
+</dialog>
+
+<dialog id="rookie_pole_task_3_dlg">
+<has_info>rookie_pole_task_1_dlg_1</has_info>
+<dont_has_info>rookie_pole_task_3_dlg</dont_has_info>
+<dont_has_info>rookie_pole_task_3_dlg_not</dont_has_info>
+<dont_has_info>rookie_pole_task_2_dlg_close_task_3</dont_has_info>	
+<phrase_list>
+    <phrase id="0">
+        <text>С чем тебе ещё помочь надо?</text>
+        <next>1</next>	
+    </phrase>
+    <phrase id="1">
+        <text>Не так давно сюда пришёл ещё один придурок из деревни. Он постоянно стебал меня насчёт моего внешнего вида, не мог бы ты убить этого урода?</text>
+        <next>2</next>				
+    </phrase>	
+    <phrase id="2">
+        <text>Как я его убью то, а если кто узнает, мне же голову открутят.</text>
+        <next>3</next>					
+    </phrase>	
+    <phrase id="3">
+        <text>Не узнают. Короче я слышал, что этот урод ищет с кем бы сходить посмотреть окрестности и помарадёрствовать, просто скажи, что ты опытный сталкер, заведи его к бандитам или мутантам, да и брось - пусть его там растерзают. Сделаешь? Награды у меня для тебя не будет, просто забери его вещи, если хочешь.</text>
+        <next>4</next>		
+        <next>5</next>			
+    </phrase>	
+    <phrase id="4">
+        <text>Ну давай схожу.</text>	
+	<action>dialogs_mlr.give_rookie_pole_task_3</action>			
+	<give_info>rookie_pole_task_3_dlg</give_info>			
+    </phrase>	
+    <phrase id="5">
+        <text>Это слишком, ты не находишь этого? Нет.</text>			
+	<give_info>rookie_pole_task_3_dlg_not</give_info>			
+    </phrase>	
+</phrase_list>
+</dialog>
+
+<dialog id="rookie_pole_task_1_dlg_1_from_factory">
+<precondition>dialogs_mlr.has_pole_factory_documents</precondition>
+<has_info>rookie_pole_task_1_dlg_1</has_info>
+<dont_has_info>rookie_pole_task_2_dlg</dont_has_info>
+<dont_has_info>rookie_pole_task_1_dlg_1_from_factory</dont_has_info>
+<phrase_list>
+    <phrase id="0">
+        <text>Честно говоря я уже был на заводе.</text>			
+        <next>1</next>
+    </phrase>
+    <phrase id="1">
+        <text>Да ладно мужик, не ври. Доказательства у тебя есть?</text>		
+		<next>2</next>
+		<next>3</next>	
+    </phrase>	
+    <phrase id="2">
+        <text>Да, это всё, что я там нашёл:</text>			
+        <next>4</next>
+    </phrase>	
+    <phrase id="3">
+        <text>Нету.</text>	
+        <next>5</next>		
+    </phrase>	
+    <phrase id="4">
+        <text>Во дела, а... чудес не бывает. Спасибо, что хотя бы прояснил ситуацию, да и опасно там похоже. Отплатить мне тебе нечем, кроме своего дробовика. Держи, он мне больше не понадобится:</text>	
+		<action>dialogs_mlr.take_pole_factory_documents</action>	
+		<action>dialogs_mlr.take_pole_factory_documents_grab_present</action>			
+		<give_info>rookie_pole_task_1_dlg_1_from_factory</give_info>	
+		<disable_info>rookie_pole_task_1_dlg_no_sleep</disable_info>
+		<disable_info>rookie_pole_task_1_dlg_1</disable_info>			
+    </phrase>
+    <phrase id="5">
+        <text>Ну и не сношай мне мозги.</text>			
+    </phrase>	
+</phrase_list>
+</dialog>
+
+<dialog id="rookie_pole_task_3_dlg_1">
+<has_info>rookie_pole_task_3_dlg</has_info>
+<dont_has_info>rookie_pole_task_3_dlg_1</dont_has_info>
+<phrase_list>
+    <phrase id="0">
+        <text>Здарова, ты тут искал опытного сталкера, чтобы спину тебе прикрыл?</text>
+        <next>1</next>	
+    </phrase>
+    <phrase id="1">
+        <text>Ёбтыть, здарова. И это ты опытный что ли? Гы-гы ебать, да ладно братан - не принимай близко к сердцу. Я бы и сам сходил их всех разъебал, но напарник в таком деле никогда лишним не будет. Ну, пошли?</text>
+        <next>2</next>				
+    </phrase>	
+    <phrase id="2">
+        <text>Пошли.</text>
+		<action>dialogs_axr_companion.become_actor_companion</action>
+		<give_info>rookie_pole_task_3_dlg_1</give_info>		
+    </phrase>		
+</phrase_list>
+</dialog>
+
+</game_dialogs>

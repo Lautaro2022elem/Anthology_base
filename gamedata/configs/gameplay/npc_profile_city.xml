@@ -1,0 +1,179 @@
+﻿<?xml version='1.0' encoding="UTF-8"?>
+
+<xml>
+
+<!-- ПРОФИЛЯ ЛОКАЦИИ "Курчатов" -->
+	
+
+<character id="city_npc_kolyazin">
+<class>city_npc_kolyazin</class>
+<specific_character>city_npc_kolyazin</specific_character>
+</character>
+
+<character id="city_npc_army_kep">
+<class>city_npc_army_kep</class>
+<specific_character>city_npc_army_kep</specific_character>
+</character>
+<character id="city_npc_army_start_1">
+<class>city_npc_army_start_1</class>
+<specific_character>city_npc_army_start_1</specific_character>
+</character>
+<character id="city_npc_army_start_2">
+<class>city_npc_army_start_2</class>
+<specific_character>city_npc_army_start_2</specific_character>
+</character>
+
+<character id="city_npc_army_kep_base">
+<class>city_npc_army_kep_base</class>
+<specific_character>city_npc_army_kep_base</specific_character>
+</character>
+<character id="city_npc_army_base_1">
+<class>city_npc_army_base_1</class>
+<specific_character>city_npc_army_base_1</specific_character>
+</character>
+<character id="city_npc_army_base_2">
+<class>city_npc_army_base_2</class>
+<specific_character>city_npc_army_base_2</specific_character>
+</character>
+
+<character id="city_npc_sp_zasada_1">
+<class>city_npc_sp_zasada_1</class>
+<specific_character>city_npc_sp_zasada_1</specific_character>
+</character>
+<character id="city_npc_sp_zasada_2">
+<class>city_npc_sp_zasada_2</class>
+<specific_character>city_npc_sp_zasada_2</specific_character>
+</character>
+<character id="city_npc_sp_zasada_3">
+<class>city_npc_sp_zasada_3</class>
+<specific_character>city_npc_sp_zasada_3</specific_character>
+</character>
+<character id="city_npc_sp_zasada_4">
+<class>city_npc_sp_zasada_4</class>
+<specific_character>city_npc_sp_zasada_4</specific_character>
+</character>
+<character id="city_npc_sp_zasada_5">
+<class>city_npc_sp_zasada_5</class>
+<specific_character>city_npc_sp_zasada_5</specific_character>
+</character>
+
+
+<character id="city_npc_army_attak_1">
+<class>city_npc_army_attak_1</class>
+<specific_character>city_npc_army_attak_1</specific_character>
+</character>
+<character id="city_npc_army_attak_2">
+<class>city_npc_army_attak_2</class>
+<specific_character>city_npc_army_attak_2</specific_character>
+</character>
+<character id="city_npc_army_attak_3">
+<class>city_npc_army_attak_3</class>
+<specific_character>city_npc_army_attak_3</specific_character>
+</character>
+<character id="city_npc_army_attak_4">
+<class>city_npc_army_attak_4</class>
+<specific_character>city_npc_army_attak_4</specific_character>
+</character>
+
+
+<character id="city_npc_sp_1">
+<class>city_npc_sp_1</class>
+<specific_character>city_npc_sp_1</specific_character>
+</character>
+<character id="city_npc_sp_2">
+<class>city_npc_sp_2</class>
+<specific_character>city_npc_sp_2</specific_character>
+</character>
+<character id="city_npc_sp_3">
+<class>city_npc_sp_3</class>
+<specific_character>city_npc_sp_3</specific_character>
+</character>
+<character id="city_npc_sp_4">
+<class>city_npc_sp_4</class>
+<specific_character>city_npc_sp_4</specific_character>
+</character>
+
+
+<character id="city_npc_sp_kps_1">
+<class>city_npc_sp_kps_1</class>
+<specific_character>city_npc_sp_kps_1</specific_character>
+</character>
+<character id="city_npc_sp_kps_2">
+<class>city_npc_sp_kps_2</class>
+<specific_character>city_npc_sp_kps_2</specific_character>
+</character>
+<character id="city_npc_sp_kps_3">
+<class>city_npc_sp_kps_3</class>
+<specific_character>city_npc_sp_kps_3</specific_character>
+</character>
+<character id="city_npc_sp_kps_4">
+<class>city_npc_sp_kps_4</class>
+<specific_character>city_npc_sp_kps_4</specific_character>
+</character>
+
+
+<character id="city_npc_army_final_1">
+<class>city_npc_army_final_1</class>
+<specific_character>city_npc_army_final_1</specific_character>
+</character>
+<character id="city_npc_army_final_2">
+<class>city_npc_army_final_2</class>
+<specific_character>city_npc_army_final_2</specific_character>
+</character>
+<character id="city_npc_army_final_3">
+<class>city_npc_army_final_3</class>
+<specific_character>city_npc_army_final_3</specific_character>
+</character>
+<character id="city_npc_army_final_4">
+<class>city_npc_army_final_4</class>
+<specific_character>city_npc_army_final_4</specific_character>
+</character>
+
+<character id="city_npc_sp_final_1">
+<class>city_npc_sp_final_1</class>
+<specific_character>city_npc_sp_final_1</specific_character>
+</character>
+<character id="city_npc_sp_final_2">
+<class>city_npc_sp_final_2</class>
+<specific_character>city_npc_sp_final_2</specific_character>
+</character>
+<character id="city_npc_sp_final_3">
+<class>city_npc_sp_final_3</class>
+<specific_character>city_npc_sp_final_3</specific_character>
+</character>
+<character id="city_npc_sp_final_4">
+<class>city_npc_sp_final_4</class>
+<specific_character>city_npc_sp_final_4</specific_character>
+</character>
+<character id="city_npc_sp_final_5">
+<class>city_npc_sp_final_5</class>
+<specific_character>city_npc_sp_final_5</specific_character>
+</character>
+<character id="city_npc_sp_final_6">
+<class>city_npc_sp_final_6</class>
+<specific_character>city_npc_sp_final_6</specific_character>
+</character>
+<character id="city_npc_sp_final_7">
+<class>city_npc_sp_final_7</class>
+<specific_character>city_npc_sp_final_7</specific_character>
+</character>
+<character id="city_npc_sp_final_8">
+<class>city_npc_sp_final_8</class>
+<specific_character>city_npc_sp_final_8</specific_character>
+</character>
+
+<character id="city_npc_kolyazin_final">
+<class>city_npc_kolyazin_final</class>
+<specific_character>city_npc_kolyazin_final</specific_character>
+</character>
+<character id="city_npc_sp_leader">
+<class>city_npc_sp_leader</class>
+<specific_character>city_npc_sp_leader</specific_character>
+</character>
+
+
+
+
+
+
+</xml>

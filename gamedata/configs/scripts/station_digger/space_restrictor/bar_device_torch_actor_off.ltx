@@ -1,0 +1,13 @@
+[logic]
+active = sr_idle@torch_off
+
+[sr_idle@torch_off]
+on_info = {-bar_zver_hide_weapon +bar_end_game_bad_sound_play} sr_idle@torch_on %=disable_actor_torch%
+
+[sr_idle@torch_on]
+on_info = {-bar_actor_torch_bad +bar_zver_hide_weapon} sr_idle@torch_off_1 %=enable_actor_torch%
+
+[sr_idle@torch_off_1]
+on_info = {-bar_zver_no_weapon +bar_actor_torch_bad} sr_idle@nil %=disable_actor_torch%
+
+[sr_idle@nil]

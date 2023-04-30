@@ -1,0 +1,77 @@
+[logic]
+active = walker@prisoner
+
+[walker@prisoner]
+path_walk = esc_borland_walk_prisoner
+path_look = esc_borland_look_prisoner
+on_info = {+esc_colonel_kolyazin_quest_fee_and} walker@prisoner_wait %=actor_friend%
+on_info3 = {+esc_borland_atp} animpoint
+def_state_standing = prisoner
+gather_items_enabled = false
+corpse_detection_enabled = false
+combat_ignore_keep_when_attacked = true 
+combat_ignore_cond = true
+invulnerable = true
+meet = no_meet
+
+[walker@prisoner_wait]
+path_walk = esc_borland_walk_prisoner
+path_look = esc_borland_look_prisoner
+on_info = {=dist_to_actor_le(4)} remark
+def_state_standing = prisoner
+gather_items_enabled = false
+corpse_detection_enabled = false
+combat_ignore_keep_when_attacked = true 
+combat_ignore_cond = true
+invulnerable = true
+meet = meet@dialog
+
+[remark]
+anim = wait
+target = story | actor
+meet = meet@dialog
+invulnerable = true
+on_info = {+esc_borland_fee_dialog_and} walker@walk
+
+[walker@walk]
+path_walk = esc_borland_teleport_atp_walk
+on_info = {-esc_borland_teleport_atp =dist_to_actor_ge(80)} animpoint %=teleport_npc(esc_borland_teleport_atp_walk:esc_borland_teleport_atp_look) +esc_borland_teleport_atp%
+on_signal = esc_borland_na_atp | animpoint %+esc_borland_teleport_atp%
+on_info2 = {+esc_borland_teleport_atp} animpoint
+def_state_moving = run
+meet = no_meet
+invulnerable = true
+
+[meet@dialog]
+abuse           = false
+close_anim 		= nil
+far_anim 		= nil
+far_victim 		= nil
+close_distance  = 0
+far_distance 	= 0
+close_victim = actor
+use = {!actor_enemy =dist_to_actor_le(2) -esc_borland_fee_dialog_and} self, true
+allow_break = false
+meet_dialog = esc_borland_fee_dialog
+trade_enable = false
+
+[animpoint]
+cover_name = esc_borland_animpoint_atp
+avail_animations = animpoint_stay_table
+on_info2 = {+esc_quest_line_missing_connected_watch} %=release_npc%
+use_camp = false
+combat_ignore_cond = true
+combat_ignore_keep_when_attacked = true
+invulnerable = true
+out_restr = zat_a2_sr_noweap
+gather_items_enabled = false
+help_wounded_enabled = false
+corpse_detection_enabled = false
+meet = meet
+
+[meet]
+use				= {=actor_enemy} false, true
+allow_break			= false
+
+[smart_terrains]
+none = true

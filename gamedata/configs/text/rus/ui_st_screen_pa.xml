@@ -1,0 +1,116 @@
+<?xml version="1.0" encoding="windows-1251" ?>
+<string_table>
+	<string id="proffesional_present">
+		<text>PROFFESIONAL представляет:</text>
+	</string>
+	<string id="spatial_anomaly">
+		<text>ПРОСТРАНСТВЕННАЯ АНОМАЛИЯ</text>
+	</string>
+	<string id="update_4_1">
+		<text>UPDATE 4.1</text>
+	</string>
+	<string id="three_monate_come_back">
+		<text>3 месяца назад</text>
+	</string>
+	<string id="time_skip_escape">
+		<text>Некоторое время спустя...</text>
+	</string>
+	<string id="puzir_skip_time">
+		<text>27 дней спустя</text>
+	</string>
+	<string id="chapter_1">
+		<text>Глава 1: Выхода нет</text>
+	</string>
+	<string id="chapter_2">
+		<text>Глава 2: Без морали</text>
+	</string>
+	<string id="chapter_3">
+		<text>Глава 3: Незваные гости</text>
+	</string>
+	<string id="chapter_4">
+		<text>Глава 4: Последняя надежда</text>
+	</string>
+	<string id="chapter_5">
+		<text>Глава 5: Кошмары подземелий</text>
+	</string>
+	<string id="intro_1">
+		<text>Иногда, чтобы продолжить - надо начать заново... Моим новым началом, стало пробуждение в этом месте. Я чувствовал, что я больше не тот человек, которым был прежде, ведь впервые за долгие годы, внутри меня проснулись совесть и сострадание к другим. Я наёмник по кличке Зверь и это моя история.</text>
+	</string>
+	<string id="intro_2">
+		<text>Мракобес тот еще кадр, мы с ним никогда не ладили, но истинное «веселье» началось после того, как Шакал перевесил чашу весов в мою сторону и назначил меня, вместо Мракобеса, главой небольшого отряда наёмников. В тот же день, мы отправились на Кордон по личному заказу Шакала, а Мракобес потихоньку принялся готовить мне план мести.</text>
+	</string>
+	<string id="intro_3">
+		<text>Вектор ранее был главой одной из групп наёмников, но потом отказался от выполнения одного персонального заказа Шакала и тот, не раздумывая, назначил за его голову награду, Вектор разумеется успел залечь на дно. У меня же, на поиски Вектора ушло несколько месяцев, но в самый ответственный момент, в погоне за ним, я угодил в «Пространственную аномалию». Ладно, самое время возвращаться в реальность и поведать, чем же для нас обернулась встреча с Мракобесом в Пузыре.</text>
+	</string>
+	<string id="intro_4">
+		<text>Вот и наступил тот момент, когда мы покинули аномалию, но сюрпризы на этом не закончились…</text>
+	</string>
+	<string id="pb_turn_of_light_tip">
+		<text>Отключить электричество ($$ACTION_USE$$)</text>
+	</string>
+	<string id="pb_turn_on_light_tip">
+		<text>Повернуть рычаг ($$ACTION_USE$$)</text>
+	</string>
+	<string id="expl_spawn_tip">
+		<text>Установить взрывчатку ($$ACTION_USE$$)</text>
+	</string>
+	<string id="key_out_tip">
+		<text>Положить ключ на тумбочку ($$ACTION_USE$$)</text>
+	</string>
+	<string id="button_lift_zone_tip">
+		<text>Вызвать лифт ($$ACTION_USE$$)</text>
+	</string>
+	<string id="switcher_lift_zone_tip">
+		<text>Использовать пульт ($$ACTION_USE$$)</text>
+	</string>
+	<string id="lift_turn_tip">
+		<text>Нажать на кнопку ($$ACTION_USE$$)</text>
+	</string>
+	<string id="touch_buttom_tip">
+		<text>Запустить генератор ($$ACTION_USE$$)</text>
+	</string>
+	<string id="esc_quest_trader_radio_tips">
+		<text>Установить радио-маяк ($$ACTION_USE$$)</text>
+	</string>
+	<string id="esc_quest_trader_take_radio_tips">
+		<text>Взять радио-маяк ($$ACTION_USE$$)</text>
+	</string>
+	<string id="psevdodog_quest_character_use">
+		<text>Вспороть брюхо ($$ACTION_USE$$)</text>
+	</string>
+	<string id="esc_tip_door_locked_tech">
+		<text>Нельзя открыть дверь, Фургон всё увидит</text>
+	</string>
+	<string id="esc_quest_enot_wake_up_tips">
+		<text>Разбудить Енота ($$ACTION_USE$$)</text>
+	</string>
+	<string id="sleep_warning_not_you">
+		<text>На этой кровати нельзя спать! Сначала нужно арендовать её у бармена.</text>
+	</string>
+	<string id="tip_door_anomaly_locked">
+		<text>Решетка заржавела</text>
+	</string>
+	<string id="tip_door_anomaly_closed">
+		<text>Решетка закрыта (нужен ключ)</text>
+	</string>
+	
+	<string id="st_save_perevalochnaya_baza_start_game">
+		<text>ПА - Пролог</text>
+	</string>
+	<string id="st_save_escape_start_game">
+		<text>ПА - Былые времена</text>
+	</string>
+	<string id="st_esc_come_to_base">
+		<text>ПА - Прибытие в деревню новичков</text>
+	</string>
+	<string id="st_blck_val_actor_prisoner">
+		<text>ПА - Больше не пленник</text>
+	</string>
+	<string id="st_blck_val_actor_in_anomaly_wild">
+		<text>ПА - Взбираясь на Аномальную рощу</text>
+	</string>
+	<string id="st_blck_val_stavrid_night_shooter_dialog_done_save">
+		<text>ПА - Атака на Северный хутор отражена</text>
+	</string>
+
+</string_table>

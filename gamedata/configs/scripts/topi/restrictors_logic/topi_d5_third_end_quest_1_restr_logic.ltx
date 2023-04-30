@@ -1,0 +1,24 @@
+[logic] 
+active = sr_idle@start
+
+[sr_idle@start]
+on_info = {+topi_start +topi_d5_killer_ceh_quest_1_message_start -topi_d5_killer_ceh_quest_1_message_give} %=topi_d5_killer_ceh_quest_1_give_message +topi_d5_killer_ceh_quest_1_message_give%
+on_timer = 8000 | {+topi_start +topi_zam_variant_quest_talking_4 +topi_a1_main_suget_second_all_talking -topi_d5_killer_ceh_quest_1_message_start} %+topi_d5_killer_ceh_quest_1_message_start%
+on_timer2 = 16000 | {+topi_start +topi_d5_killer_ceh_quest_1_message_give -topi_d5_killer_ceh_quest_1_give} sr_idle@first %=give_task(geonezis_topi_d5_third_end_quest_1) +topi_d5_killer_ceh_quest_1_give%
+
+[sr_idle@first]
+on_info = {+topi_e7_csky_quest_4_message_start -topi_e7_csky_quest_4_message_give} %=topi_e7_csky_quest_4_give_message +topi_e7_csky_quest_4_message_give%
+on_info2 = {+topi_var_2_suget_quest_1_talking_1} sr_idle@nil
+on_timer = 8000 | {+topi_var_quest_4_precondition -topi_e7_csky_quest_4_message_start} %+topi_e7_csky_quest_4_message_start%
+on_timer2 = 16000 | {+topi_e7_csky_quest_4_message_give -topi_e7_csky_quest_4_give} sr_idle@second %=give_task(geonezis_topi_e7_third_end_quest_4) +topi_e7_csky_quest_4_give%
+
+[sr_idle@second]
+on_info = {+topi_e7_csky_quest_4_member_all_dead -topi_m2_killer_ceh_quest_5_create} %=topi_m2_killer_ceh_quest_5_create_npc +topi_m2_killer_ceh_quest_5_create%
+on_timer = 6000 | {+topi_m2_killer_ceh_quest_5_create -topi_m2_killer_ceh_quest_5_give} sr_idle@third %=give_task(geonezis_topi_m2_third_end_quest_5) +topi_m2_killer_ceh_quest_5_give%
+
+[sr_idle@third]
+on_info = {+topi_k9_freedom_anubis_quest_6_message_start -topi_k9_freedom_anubis_quest_6_message_give} %=topi_k9_freedom_anubis_quest_6_give_message +topi_k9_freedom_anubis_quest_6_message_give%
+on_timer = 8000 | {+topi_stalker_base_var_3_member_all_death -topi_k9_freedom_anubis_quest_6_message_start} %+topi_k9_freedom_anubis_quest_6_message_start%
+on_timer2 = 16000 | {+topi_k9_freedom_anubis_quest_6_message_give -topi_k9_freedom_anubis_quest_6_give} sr_idle@nil %=give_task(geonezis_topi_k9_third_end_quest_6) +topi_k9_freedom_anubis_quest_6_give%
+
+[sr_idle@nil]

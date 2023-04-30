@@ -1,0 +1,14 @@
+[logic]
+active = sr_idle@start
+
+[sr_idle@start]
+on_info = {+blck_val_monolith_informator_dialog_done} sr_level_changer@final
+
+[sr_level_changer@final]
+use_cond            = {+blck_val_monolith_informator_dialog_done} true, false
+travel_coord        = 93.72|-15.68|119.15
+throw_coord         = 91.64|-6.66|112.50
+spot                = level_changer_up|st_perehod_in_valley_to_labx6
+travel_time         = 0|25                                             
+message_possible    = ui_st_sr_level_changer_labx7                
+message_impossible  = ui_st_sr_level_changer_closed           

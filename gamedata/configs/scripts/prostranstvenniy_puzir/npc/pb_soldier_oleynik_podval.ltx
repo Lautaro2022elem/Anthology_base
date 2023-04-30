@@ -1,0 +1,66 @@
+;=========meet_quest_line========
+[meet@quest_line]
+close_anim 		= nil
+close_victim 	= nil
+far_anim 		= nil
+far_victim 		= nil
+close_distance 	= 0
+far_distance 	= 0
+use = {=actor_enemy} false, {=dist_to_actor_le(3)} true, false
+snd_on_use = {!dist_to_actor_le(3)} nil
+meet_on_talking = false
+;==================================
+
+[logic]
+suitable = {=check_npc_name(pb_soldier_oleynik_podval)} true
+prior = 200
+active = animpoint@start_podval
+level_spot = quest_npc
+
+[animpoint@start_podval]
+cover_name = pro_podval_oleynik_animpoint_1
+on_info = {+pro_actor_wait_twenty_minut} animpoint@home
+on_info2 = {+pro_come_back_prostranstvenniy_puzir} %=release_npc%
+avail_animations = animpoint_sit_high_no_rnd
+combat_ignore_cond = true
+combat_ignore_keep_when_attacked = true
+invulnerable = true
+gather_items_enabled = false
+help_wounded_enabled = false
+corpse_detection_enabled = false
+use_camp = false
+meet = meet@to_quest
+
+[animpoint@home]
+cover_name = pro_podval_oleynik_animpoint_1
+on_info = {+pro_come_back_prostranstvenniy_puzir} %=release_npc%
+on_timer = 15000 | animpoint@radio_on %-pro_oleynik_transiver_on +pro_oleynik_transiver_off%
+avail_animations = animpoint_sit_high_no_rnd
+combat_ignore_cond = true
+combat_ignore_keep_when_attacked = true
+invulnerable = true
+gather_items_enabled = false
+help_wounded_enabled = false
+corpse_detection_enabled = false
+use_camp = false
+meet = meet@to_quest
+
+[animpoint@radio_on]
+cover_name = pro_podval_oleynik_animpoint_1
+on_info = {+pro_come_back_prostranstvenniy_puzir} %=release_npc%
+on_timer = 6000 | animpoint@home %+pro_oleynik_transiver_on -pro_oleynik_transiver_off%
+avail_animations = pri_a28_kirillov_sit_high_radio
+combat_ignore_cond = true
+combat_ignore_keep_when_attacked = true
+invulnerable = true
+gather_items_enabled = false
+help_wounded_enabled = false
+corpse_detection_enabled = false
+use_camp = false
+meet = meet@to_quest
+
+[meet@to_quest]:meet@quest_line
+close_victim = actor
+allow_break = false
+meet_dialog = pb_soldier_oleynik_meet
+trade_enable = false

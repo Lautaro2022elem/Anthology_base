@@ -1,0 +1,25 @@
+[logic]
+active = sr_idle@cut_scene_final
+
+[sr_idle@cut_scene_final]
+on_actor_inside = {+pro_lesnik_final_dialog_meet_complete -pro_spawn_cut_scene_final} sr_idle@cut_scene_final_0 %=set_game_time(20:20) =RavenMemmoryStart =pro_spawn_actor_intro_end =pro_spawn_sumka_intro_end =pro_spawn_food_intro_end =pro_spawn_lojka_intro_end =pro_spawn_parts_intro_end =pro_spawn_photo_intro_end +pro_spawn_cut_scene_final%
+
+[sr_idle@cut_scene_final_0]
+on_timer = 3000 | sr_idle@cut_scene_final_1 %=intro_chapter_4%
+
+[sr_idle@cut_scene_final_1]
+on_timer = 400 | sr_cutscene@cut_scene_final_2 %+pro_intro_chapter_4_stop_postprocess%
+
+[sr_cutscene@cut_scene_final_2]
+point = actor_start_scene_puzir_walk
+look = actor_start_scene_puzir_look
+cam_effector = scenario_cam\prostranstvenniy_puzir\pro_intro_camera
+enable_ui_on_end = false
+global_cameffect = true
+on_info = {+pro_intro_chapter_4_stop_postprocess -pro_intro_4_show_start} %=stop_postprocess(2525) =show_intro_four(intro_4) +pro_intro_4_show_start%
+on_timer = 10000 | sr_idle@cut_scene_final_3 %=run_postprocess(black:2525:true)%
+
+[sr_idle@cut_scene_final_3]
+on_timer = 2000 | sr_idle@nil %=teleport_actor(actor_teleport_to_valley_walk:actor_teleport_to_valley_look)%
+
+[sr_idle@nil]

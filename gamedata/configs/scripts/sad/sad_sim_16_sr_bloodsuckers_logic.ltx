@@ -1,0 +1,22 @@
+[logic]
+active = sr_idle@0
+
+[sr_idle@0]
+on_info = {+sad_cowboy_enemy} sr_idle@nil %+sad_sim_16_avail_simulation%
+on_info2 = {+sad_tesla_monster_task_give} sr_idle@1
+
+[sr_idle@1]
+on_info = {=squad_exist(sad_sim_16_bloodsuckers)} sr_idle@2
+on_game_timer = 600 | sr_idle@2
+
+[sr_idle@2]
+on_info = {!dist_to_story_obj_ge(sad_sim_16_spot:20)} sr_idle@3 %+sad_sim_16_bloodsuckers_awake =play_sound(zat_b38_bloodsucker_roar)%
+on_info2 = {!squad_exist(sad_sim_16_bloodsuckers)} sr_idle@4
+
+[sr_idle@3]
+on_info = {!squad_exist(sad_sim_16_bloodsuckers)} sr_idle@4
+
+[sr_idle@4]
+on_info = {+sad_cowboy_enemy} sr_idle@nil %+sad_sim_16_avail_simulation%
+
+[sr_idle@nil]

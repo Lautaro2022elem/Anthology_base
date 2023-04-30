@@ -1,0 +1,13 @@
+[logic]
+active = sr_idle
+
+[sr_idle]
+on_actor_outside = sr_idle@2
+
+[sr_idle@2]
+on_info = {+spectrum_project_start +sp_a2_hero_to_garbage_come =actor_has_item(labx5_quest_document_1)} sr_idle@nil %+labx5_quest_doc_all%
+on_info2 = {+spectrum_project_start +sp_a2_hero_to_garbage_come =actor_has_item(labx5_quest_document_2)} sr_idle@nil %+labx5_quest_doc_all%
+on_info3 = {+spectrum_project_start +sp_a2_hero_to_garbage_come =actor_has_item(labx5_quest_document_3)} sr_idle@nil %+labx5_quest_doc_all%
+on_info4 = {+spectrum_project_start +sp_a2_hero_to_garbage_come !actor_has_item(labx5_quest_document_1) !actor_has_item(labx5_quest_document_2) !actor_has_item(labx5_quest_document_3)} sr_idle@nil %+labx5_a2_quest_documents_fail%
+
+[sr_idle@nil]

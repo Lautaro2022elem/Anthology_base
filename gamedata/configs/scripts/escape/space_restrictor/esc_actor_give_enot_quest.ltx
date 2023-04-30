@@ -1,0 +1,16 @@
+[logic]
+active = sr_idle@actor_give_enot_quest
+
+[sr_idle@actor_give_enot_quest]
+on_info = {+esc_actor_meet_enot_from_kill_leader_done} sr_idle@actor_give_enot_quest_1 %=RavenMemmoryStart =run_postprocess(black:2525:true)%
+
+[sr_idle@actor_give_enot_quest_1]
+on_timer = 2000 | sr_idle@actor_give_enot_quest_2 %+esc_enot_go_to_leader_stalker%
+
+[sr_idle@actor_give_enot_quest_2]
+on_timer = 2000 | sr_idle@actor_give_enot_quest_3 %=stop_postprocess(2525)%
+
+[sr_idle@actor_give_enot_quest_3]
+on_timer = 500 | sr_idle@nil %=enable_ui +esc_actor_go_to_raven_meet%
+
+[sr_idle@nil]

@@ -1,0 +1,34 @@
+[smart_terrain]; sad sim 5
+squad_id = 7
+max_population = 1
+respawn_params = respawn@sad_sim_5
+arrive_dist = 80
+respawn_idle = 172800
+
+
+[respawn@sad_sim_5] ;-- Type: spawn_all_weak
+spawn_all_weak 
+
+
+[spawn_all_weak]	;-- Zombies/Normal mutants - Rates of groups:(3 zombies + 1 tushkano + 3 dogs + 2 cats + 3 fleshes/boars)
+spawn_squads = zombied_sim_squad_mix, simulation_zombie, simulation_mix_zombie, simulation_tushkano, simulation_dog, simulation_mix_dogs, simulation_pseudodog, simulation_cat, simulation_cat, simulation_mix_boar_flesh, simulation_flesh, simulation_boar ;--spawn-all-weak
+spawn_num = 2
+
+
+[exclusive]
+dog_1 = sad\sad_sim_5_sobaki.ltx
+dog_2 = sad\sad_sim_5_sobaki.ltx
+dog_3 = sad\sad_sim_5_sobaki.ltx
+dog_4 = sad\sad_sim_5_sobaki.ltx
+dog_5 = sad\sad_sim_5_sobaki.ltx
+dog_6 = sad\sad_sim_5_sobaki.ltx
+
+zom_1 = sad\sad_sim_5_zombi.ltx
+zom_2 = sad\sad_sim_5_zombi.ltx
+zom_3 = sad\sad_sim_5_zombi.ltx
+zom_4 = sad\sad_sim_5_zombi.ltx
+zom_5 = sad\sad_sim_5_zombi.ltx
+zom_6 = sad\sad_sim_5_zombi.ltx
+zom_7 = sad\sad_sim_5_zombi.ltx
+zom_8 = sad\sad_sim_5_zombi.ltx
+zom_9 = sad\sad_sim_5_zombi.ltx

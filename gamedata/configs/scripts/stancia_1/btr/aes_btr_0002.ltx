@@ -1,0 +1,18 @@
+[logic]
+active = ph_car
+
+[ph_car]
+path_walk = aes_btr_walk5
+target = actor
+on_signal = arrive | ph_car@2
+
+[ph_car@2]
+path_fire       = aes_btr_look5
+fire_repeat     = 50
+auto_fire       = true
+on_target_vis   = actor | ph_car@3
+
+[ph_car@3]
+target          = actor
+track_target    = true
+on_target_nvis  = actor | ph_car@2

@@ -1,0 +1,22 @@
+[logic]
+active = sr_idle@wait
+
+[sr_idle@wait]
+on_info = {+sad_artefuck_upgrade_process} sr_idle@10
+
+[sr_idle@10]
+on_actor_inside = sr_idle@run %=run_tutorial(tutorial_sleep_atr)%
+on_info = {-sad_artefuck_upgrade_process} sr_idle@wait
+
+[sr_idle@run]
+on_info = {!has_active_tutorial} sr_idle@10, {+atr_sleep_active} sr_idle@100 %=stop_tutorial =disable_ui =sad_add_pp_effector(sleep_fade.ppe:1248)%
+on_actor_outside = sr_idle@10 %=stop_tutorial%
+
+[sr_idle@100]
+on_timer = 3000 | sr_idle@110 %=forward_game_time(3) -atr_sleep_active%
+
+[sr_idle@110]
+on_timer = 2000 | sr_idle@120 %=enable_ui%
+
+[sr_idle@120]
+on_info = {-sad_artefuck_upgrade_process} sr_idle@wait

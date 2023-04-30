@@ -1,0 +1,13 @@
+[logic]
+active = sr_idle
+
+[sr_idle]
+on_actor_inside = {+blck_val_actor_meet_from_security_done} sr_idle@scenario_autosave %=blck_val_actor_replic_about_anomaly_wild%
+
+[sr_idle@scenario_autosave]
+on_timer = 500 | sr_idle@scenario_autosave_1
+
+[sr_idle@scenario_autosave_1]
+on_info = {+blck_val_actor_meet_from_security_done -blck_val_actor_in_anomaly_wild_save_complete} sr_idle@nil %+blck_val_actor_in_anomaly_wild_save_complete =scenario_autosave(st_blck_val_actor_in_anomaly_wild)%
+
+[sr_idle@nil]

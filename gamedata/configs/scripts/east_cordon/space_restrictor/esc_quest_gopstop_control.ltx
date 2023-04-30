@@ -1,0 +1,12 @@
+[logic]
+active = sr_idle
+
+[sr_idle]
+on_actor_inside = {+spectrum_project_start -esc_npc_moskit_hit -esc_npc_moskit_kill +esc_quest_gopstop_kill_stalker} sr_idle@2 %+esc_npc_moskit_kill =spawn_object(esc_npc_moskit:esc_npc_moskit_spawn)%
+on_info = {=is_squad_enemy_to_actor(esc_squad_baza_bandits)} sr_idle@nil %+esc_quest_gopstop_fail%
+
+[sr_idle@2]
+on_info = {+esc_quest_gopstop_fail} sr_idle@nil %=esc_sms_logoped_gopstop_fail%
+on_info2 = {=is_squad_enemy_to_actor(esc_squad_baza_bandits)} sr_idle@nil %+esc_quest_gopstop_fail%
+
+[sr_idle@nil]

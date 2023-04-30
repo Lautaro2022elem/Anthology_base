@@ -1,0 +1,1111 @@
+-- Edited by demonized 04.10.2021
+-- Cleanup and reformat
+-- MCM integration
+-- Slight optimizations
+-- You are free to modify this mess of a code
+
+-- =============================================================
+--
+-- "Dynamic NOCTURNAL Mutants" - script
+--
+-- for Anomaly 1.5 24/1/2021
+--
+-- created by bmblbx176 (Leviathan)
+--
+-- =============================================================
+
+-- NOTE: Snorks, Burers, Controllers, Geists, Karlik, Giant, dogs, cats - are excluded from this addon.
+-- They are numerous and annoying enough, AND also not 'suitable' for the purposes of this addon.
+
+-- NOTE2: nocturnal_mutants are active: 21h-23, 1h-4h
+-- NOTE3: All aboveground maps; close to humans, or where humans frequently pass , and/or outright attacking them/bases, etc
+
+-- NOTE4: possible encounters: swarms of rodents, up to: 2-3 bloodsuckers, 2 lurkers, chimera(+lurker/s), 2-5 zombies, 2 fractures...
+
+-- for increased 'creepiness', and zombies belong in the night
+
+--[[
+if the 'Moon phases' (ever) get implemented correctly in Anomaly,
+you can potentially make the 'probability_of_mutant_attacks' the following night higher, when there is 'No Moon', (i.e. darkest conditions)
+
+local current_moon_phase = level_weathers.WeatherManager:get_moon_phase()
+
+-- NOTE: 'default' Moon cycle is 8 days; 'current_moon_phase' will contain a NUMBER, that corresponds to the Moon phase
+-- example: 'current_moon_phase == 0' means a 'No Moon'
+
+-- so, "if (current_moon_phase == 0) or (current_moon_phase == 1) then PROBABILITY_FOR_MUTANT_ATTACKS_EACH_NIGHT_rng = PROBABILITY_FOR_MUTANT_ATTACKS_EACH_NIGHT + math_random(20,30) end"
+-- and continue with choosing whether to spawn the mutants at those times (wave1, wave2)
+-- "WAVES_CHOSEN = math_random( 1, math_floor(400/PROBABILITY_FOR_MUTANT_ATTACKS_EACH_NIGHT_rng) )"
+
+-- news_manager.send_tip(db.actor, current_moon_phase , nil, nil, 7000 )
+--]]
+local PROBABILITY_FOR_MUTANT_ATTACKS_EACH_NIGHT = 65 -- 1000 -- 0-100, %, the PROBABILITY that each night will experience nocturnal mutant attacks
+local PROBABILITY_THRESHOLD = 10 -- makes the above value vary (55 - 10, 55 + 2*10) = 45-75% ("likely" attacks ... to ... "very likely")
+local SAFE_DISTANCE_AROUND_PLAYER = 25 -- 1 -- -- (i.e. 'Exclusion Radius'), in meters, 'safe area' around the Player that NOCT_MUTANTS won't spawn in
+local WITHIN_DISTANCE_RANGE_AROUND_PLAYER = 750 -- 2000 -- -- (i.e. 'Inclusion Radius'), in meters, distance/range area around the Player, outsiode which NOCT_MUTANTS won't spawn
+
+-- NOTE: this will be further 'divided' between the two 'waves'; thus, each getting 30%
+local PERCENTAGE_TO_SPAWN_NOCTURNAL_MUTANTS_DEFAULT = 60 -- 30 -- set the percentage of the number of NOCT_MUTANTS from the MAX; 30, 60, 100...
+local PERCENTAGE_TO_SPAWN_LURKERS = 50 -- -- if you want less or no Lurkers, (for whatever reason)
+local PERCENTAGE_TO_SPAWN_CHIMERA = 40 -- 30 -- 100 -- set the probability to spawn a Chimera; NOTE: this probability is already vey low, example: 4%. setting the value to 50, will decrease it to 2%, etc
+-- percentage_to_spawn_noct_chimera: 0 - 8-12 days, 0% 8-12 - (8-12)*1.5 days, 20% after (8-12)*1.5 days, 40%
+--- all are carefully set values, so that chimeras ARE present but appropriately rare encounters (up to a few, during the night)
+--- (lurkers, bloodsuckers will be more prominent)
+---- (lurkers are closer in 'toughness' to the chimeras than their 'vanilla' versions, but still less deadly, so, they can be encountered more frequently)
+
+local DELAY_SPAWN_OF_CHIMERA_FOR_THE_FIRST_N_NIGHTS = 10 -- after this, it will get the value above
+local CHIMERA_DELAY_THRESHOLD = 2 --- this will make the delay for the chimera from 10-2 to 10+2 days, (instead of 10)
+
+-- IMPORTANT: this setting is to offer DYNAMIC_NOCTURNAL_MUTANTS numbers BEYOND the intended 100% of this addon
+-- in short, it spawns N 'waves' of mutants at once, (instead of only one at the time)
+-- CAUTION: change with care; values of 2,3 and above will decrease immersion and potentially have performance issues
+
+local INCREASED_SPAWN_MUTANTS_FACTOR = 1 -- 2 --
+local FIRST_ATTACK_HOUR = 22 -- the initial, default 'acceptable' values/hours, tipically, if all goes well, they are chosen randomly 21-23 1-4
+local SECOND_ATTACK_HOUR = 3
+local FIRST_ATTACK_MINUTES = 25 -- making possible the 'waves' to be anywhere between 21-0 1-4, at any minute inbetween, (not just "on the hours")
+local SECOND_ATTACK_MINUTES = 42
+local NOCTURNAL_Mutants_NUMBER_of_ENTRIES = 32 -- including singular mutants and 'patterns'/groups
+
+local ___NOCTURNAL_Mutants_LIST___ = {
+    "chimera_normal",
+    "chimera_strong4",
+    "chimera_weak",
+    "simulation_chimera",
+    "lurker_1_normal",
+    "lurker_2_strong",
+    "simulation_lurker_1_2",
+    "simulation_lurker_1_2",
+    "bloodsucker_black_strong",
+    "simulation_bloodsucker",
+    "simulation_bloodsucker",
+    "simulation_bloodsucker",
+    "bloodsucker_normal",
+    "bloodsucker_strong",
+    "bloodsucker_weak",
+    "zombie_normal",
+    "zombie_strong",
+    "zombie_ghol",
+    "simulation_mix_zombie",
+    "simulation_mix_zombie",
+    "simulation_mix_zombie",
+    "zombie_ghost",
+    "fracture_2",
+    "fracture_normal",
+    "simulation_tushkano",
+    "simulation_tushkano",
+    "simulation_tushkano",
+    "simulation_tushkano",
+    "simulation_rat",
+    "simulation_rat",
+    "simulation_rat",
+    "simulation_rat"
+}
+
+local timestamp_when_playthrough_started_in_days = 0 -- to get TIME (days) from start; global, and save it in the savegame
+-- (i.e. RegisterScriptCallback("actor_on_first_update",get_timestamp_when_playthrough_started)
+-- timestamp_when_playthrough_started = utils_data.CTimeToSec(game.get_game_time()) / 3600)
+
+local IDs_utilized_current_number = 0 -- to initialize it, for the ID counter
+local FIRST_ATTACK_PROCESSED = false
+local SECOND_ATTACK_PROCESSED = false
+local NEXT_NIGHT_ATTACK_HOURS_ARE_SET = false
+
+local NOCTURNAL_MUTANT_IDS_IN_A_TABLE = {} -- to store the created mutant IDs, and count, manage them, etc. may even decrease their heatlh to 0.2
+local NOCTURNAL_MUTANT_IDS_IN_A_TABLE_COUNTER = 0
+
+local message_1_posted = false -- to keep a 'flag' on whether one of the 'night random' messages are posted
+local message_2_posted = false -- NOTE: re-set them to false after dawn
+local message_3_posted = false
+local message_4_posted = false
+local message_5_posted = false
+
+local time_stamp = 0
+
+local msg_time_1 = 17
+local msg_time_2 = 30
+local msg_time_3 = 42
+
+local _send_attack_after_messages_ = false
+local time_stamp_skirmish = 0
+local time_interval_skirmish = 0
+local PROBABILITY_FOR_MUTANT_ATTACKS_EACH_NIGHT_SKIRMISH = 85 -- 100 --
+-- 85 +-10 %
+local PROBABILITY_THRESHOLD_SKIRMISH = 10 -- to add variety in the PROBABILITY for each night
+
+local time_interval_skirmish_lowest_value = 11
+-- this sets the interval between two consecutive small waves - 'skirmishes'
+local time_interval_skirmish_highest_value = 32 -- i.e at minimum, 11 min in-between; at most, 32 min
+-- time_ratio is 6:1, meaning: for each RL minute, 6 minutes pass in Anomaly
+--- 10 minutes IRL -> 60min (hour) has passed in
+
+local PERCENTAGE_TO_SPAWN_NOCTURNAL_MUTANTS_SKIRMISH_factor = 3 -- i.e. PERCENTAGE_TO_SPAWN_NOCTURNAL_MUTANTS / 7
+-- in short, a 'fraction' of the noct_mutants numbers present in the two (bigger) 'waves'
+-- with interval between 'skirmishes' of 11-32 minutes
+-- NOTE that these smaller waves will 'add up' over the duration of the night
+-- with ~85% probability, after 20-55 minutes, up until 5h
+local HIGHEST__NOCT_MUTANTS_NUMBER__ALLOWED_IN_ONE_NIGHT = 500 -- if it reaches this number during one night, it won't add more.
+-- NOTE: these noct_mutants may well be 'spread out' over several maps
+-- not only on one
+local NIGHT_NUMBERS_LIMIT_FACTOR = 5 -- this number * Slider setting = the NOCT-MUTANTS numbers LIMIT for the night
+
+local math_random = math.random
+local math_floor = math.floor
+local math_sqrt = math.sqrt
+local math_abs = math.abs
+local string_find = string.find
+local string_gsub = string.gsub
+local string_match = string.match
+local string_sub = string.sub
+local time_global = time_global
+
+local enable_pda_messages = true
+local PERCENTAGE_TO_SPAWN_NOCTURNAL_MUTANTS_factor = 35
+local actor_on_update_time = 0
+local actor_on_update_timer = 7000
+
+-- example: default, 60 * 5 == 300 max noct_mutants
+-- max: 500, min: 25
+
+--- to get the correct name of the current map the Player is on, in the form of "Cordon"
+local map_player_current_pos_table = {
+    ["zaton"] = "Zaton",
+    ["jupiter"] = "Jupiter",
+    ["l04_darkvalley"] = "DarkValley",
+    ["l03_agroprom"] = "Agroprom",
+    ["l02_garbage"] = "theGarbage",
+    ["l08_yantar"] = "Yantar",
+    ["l09_deadcity"] = "DeadCity",
+    ["l10_limansk"] = "Limansk",
+    ["l10_red_forest"] = "RedForest",
+    ["k02_trucks_cemetery"] = "theTruckCemetery",
+    ["l13_generators"] = "theGenerators",
+    ["l07_military"] = "theArmyWarehouses",
+    ["l10_radar"] = "Radar",
+    ["l12_stancia_2"] = "theChernobylNPP(North)",
+    ["l12_stancia"] = "theChernobylNPP(South)",
+    ["l11_pripyat"] = "Pripyat",
+    ["pripyat"] = "ontheoutskirtsofPripyat",
+    ["k01_darkscape"] = "Darkscape",
+    ["l01_escape"] = "Cordon",
+    ["k00_marsh"] = "theGreatSwamp",
+    ["l05_bar"] = "Rostok",
+    ["l06_rostok"] = "theWildTerritory",
+    ["y04_pole"] = "theMeadow",
+    ["l11_hospital"] = "theHospital"
+}
+
+-- local map_player_current_pos_string = level.name() or "" --> gets "i01_escape" for Cordon, in EVERY localization/language
+-- map_player_current_pos = ""
+-- if (map_player_current_pos_string == "zaton") then map_player_current_pos = "Zaton" end -- 0.1 - 0.9
+-- return map_player_current_pos
+
+local function get_player_current_map_pos()
+    -- IMPORTANT NOTE/CAUTION: -- local map_player_current_pos_string = dynamic_news_helper.GetPointDescription(db.actor) or ""
+    -- ' dynamic_news_helper.GetPointDescription(db.actor) ' gives: "Кордоне" in RUS localization, also is different for other langiages
+    -- For this code, we need in the form of "Cordon"
+    -- Thus, ' map_player_current_pos ' needs to contain the string in english
+    return map_player_current_pos_table[level.name()] or ""
+end
+
+-- sets the current time_stamp to ~20h, re-set it to 0 for next group_messages use
+-- and re-randomizes the msg_time_1, _2, _3
+
+local function reset_msg_times_stamp()
+    if (time_stamp == 0) then
+        time_stamp = utils_data.CTimeToSec(game.get_game_time()) / 60
+    -- msg_time_1 = math_random(2,18)
+    -- msg_time_2 = math_random(22,38)
+    -- msg_time_3 = math_random(42,55)
+    end
+end
+
+------------------------- necessary code ----------------------------------
+
+local FindSpeakerRandom_character_community = {
+	["monolith"] = true,
+	["army"] = true,
+    ["greh"] = true,
+    ["isg"] = true,
+    ["zombied"] = true
+}
+
+local function FindSpeakerRandom() -- Find a random, regular NPC
+    local t = {}
+
+    local db = db
+    for i = 1, #db.OnlineStalkers do
+        local st = db.storage[db.OnlineStalkers[i]]
+        local npc = st and st.object or level.object_by_id(db.OnlineStalkers[i])
+        if npc and IsStalker(npc, npc:clsid()) and npc:alive() and not get_object_story_id(db.OnlineStalkers[i]) and not FindSpeakerRandom_character_community[npc:character_community()] then
+    		t[#t + 1] = npc
+        end
+    end
+
+    if (#t == 0) then
+        return nil
+    end
+
+    return t[math_random(#t)] -- it returns a NPC, from the table
+end
+
+-- code section, for posting the messages
+----------------------------------------------------------------------------------------------------------------
+
+-- up to three messages per 'group', with their own probabilites
+
+local show_before_msg_probability = 80 -- 30 -- -- probability that it will show a message when it is triggered to do so
+local show_attack_msg_probability = 50 -- 50 -- -- NOTE: with 30%, it is bound to show at least on of the three messages
+local show_after_msg_probability = 60 -- 90 -- -- 60, for two messages 100, for three messsages, always
+local show_night_random_msg_probability = 90 -- 40 --
+
+local function show_msg(prob, msg)
+	-- PERCENTAGE_TO_SPAWN
+    local RNG_prob = math_random(1, 100)
+
+    if (RNG_prob >= prob) then
+        return
+    end -- exit this function, no message, if not within probability
+
+    local sender = FindSpeakerRandom()
+
+    -- check whether it is a regular NPC
+    -- if string_find(npc:section(),"sim_default") then -- to exclude special NPCs and Monolith, (latter do not chit-chat on dyn_news)
+    -- return false
+    -- end
+    -- to collect (in a table) all the messages in xml with 'dyn_noct_mutants_msg_before_ NUMBER'
+
+    local tbl = utils_data.collect_translations(msg, true)
+    if (not tbl) then
+        return false
+    end
+
+    if (sender) then -- check on whether 'sender' contains a NPC, may be 'nil' in UG maps, or if can't find any suitable NPC
+        local Se =
+            strformat(
+            "%s, %s -- %s",
+            sender:character_name(),
+            dynamic_news_helper.GetCommunityDescription(sender, 6),
+            game.translate_string("__NOCTURNAL_MUTANTS__")
+        )
+        dynamic_news_helper.send_tip(tbl[math_random(#tbl)], Se, 9, 15, sender:character_icon(), "beep_1", "npc")
+    end
+end
+
+-- posted closely before sunset after the current 'wave' has arrived, after 1-6 minutea
+local function show_before_msg()
+	show_msg(show_before_msg_probability, "dyn_noct_mutants_msg_before_")
+end
+
+-- posted slightly after the current 'wave' has arrived, after 1-6 minutea
+local function show_attack_msg()
+	show_msg(show_attack_msg_probability, "dyn_noct_mutants_msg_attack_")
+end
+
+-- posted after the current 'wave' has arrived, after 20-50 minutea
+local function show_after_msg()
+	show_msg(show_after_msg_probability, "dyn_noct_mutants_msg_after_")
+end
+
+-- posted at random times, during the whole night
+local function show_random_night_msg()
+	show_msg(show_night_random_msg_probability, "dyn_noct_mutants_msg_night_random_")
+end
+
+----------------------------------------------------------------------------------------------------------------
+
+-- code section, for posting the messages
+
+-- do some things with the existing mutants. example: set their health to 0.2 (for a percentage of them, or all)
+-- in this instance, despawn ('release') them after 6 hour
+
+local function despawn_existing_mutants_stored_in_table()
+    local id_check = 0
+    local sim = alife()
+
+    printf("despawning nocturnal mutants")
+
+    for iii = 0, #NOCTURNAL_MUTANT_IDS_IN_A_TABLE do
+        id_check = NOCTURNAL_MUTANT_IDS_IN_A_TABLE[iii] -- takes the ID number in the current field of the table
+
+        if (id_check) then
+            if (alife_object(id_check)) then -- if this mutant exists, 'release' it
+                printf("despawned %s", sim:object(id_check):section_name())
+                sim:release(sim:object(id_check)) -- to remove mutants on multiple maps
+            end
+            NOCTURNAL_MUTANT_IDS_IN_A_TABLE[iii] = nil
+        end
+    end
+
+    -- news_manager.send_tip(db.actor, " ----------- NOCTURNAL_MUTANT_IDS_IN_A_TABLE: " .. #NOCTURNAL_MUTANT_IDS_IN_A_TABLE , nil, nil, 10000 )
+end
+
+local function count_mutant_ids_in_table()
+    local id_check = 0
+    local EXISTING_MUTANT_IDS_IN_TABLE_COUNTER = 0
+    local DEAD_MUTANT_IDS_IN_TABLE_COUNTER = 0
+    for iii = 1, #NOCTURNAL_MUTANT_IDS_IN_A_TABLE do
+        id_check = NOCTURNAL_MUTANT_IDS_IN_A_TABLE[iii]
+        if (id_check) then
+            if (alife_object(id_check)) then -- if this mutant exosts, count up
+                EXISTING_MUTANT_IDS_IN_TABLE_COUNTER = EXISTING_MUTANT_IDS_IN_TABLE_COUNTER + 1
+            else
+                NOCTURNAL_MUTANT_IDS_IN_A_TABLE[iii] = nil
+                DEAD_MUTANT_IDS_IN_TABLE_COUNTER = DEAD_MUTANT_IDS_IN_TABLE_COUNTER + 1
+            end
+        end
+    end
+    -- news_manager.send_tip(db.actor, " ----------- NOCTURNAL_MUTANT_IDS_IN_A_TABLE: " .. #NOCTURNAL_MUTANT_IDS_IN_A_TABLE , nil, nil, 10000 )
+    news_manager.send_tip(
+        db.actor,
+        "Existing mutants number: " .. EXISTING_MUTANT_IDS_IN_TABLE_COUNTER,
+        nil,
+        nil,
+        10000
+    )
+    -- news_manager.send_tip(db.actor, "Dead mutants number: " .. DEAD_MUTANT_IDS_IN_TABLE_COUNTER , nil, nil, 10000 )
+    news_manager.send_tip(
+        db.actor,
+        " -- First attack - HOUR: " .. FIRST_ATTACK_HOUR .. ":" .. FIRST_ATTACK_MINUTES,
+        nil,
+        nil,
+        10000
+    )
+    news_manager.send_tip(
+        db.actor,
+        " -- Second attack - HOUR: " .. SECOND_ATTACK_HOUR .. ":" .. SECOND_ATTACK_MINUTES,
+        nil,
+        nil,
+        10000
+    )
+    -- 'current_time_in_minutes'
+    local next_small_wave_in_minutes =
+        time_stamp_skirmish + time_interval_skirmish - utils_data.CTimeToSec(game.get_game_time()) / 60
+    -- local current_time_in_minutes = utils_data.CTimeToSec(game.get_game_time()) / 60
+    news_manager.send_tip(
+        db.actor,
+        " ----- Next small wave in: " .. next_small_wave_in_minutes .. " minutes",
+        nil,
+        nil,
+        10000
+    )
+    -- news_manager.send_tip(db.actor, " --- time_stamp_skirmish: " .. time_stamp_skirmish .. " minutes" , nil, nil, 10000 )
+    -- news_manager.send_tip(db.actor, " --- current_time_in_minutes: " .. current_time_in_minutes .. " minutes" , nil, nil, 10000 )
+    -- news_manager.send_tip(db.actor, " --- time_interval_skirmish: " .. time_interval_skirmish .. " minutes" , nil, nil, 10000 )
+end
+
+local function set_first_start_timestamp()
+    -- check for the 'marker', i.e. whether the objects have already been spawned
+
+    if not (has_alife_info("first_start_timestamp_is_set_dyn_noct_mut")) then
+        timestamp_when_playthrough_started_in_days = level.get_time_days()
+
+        DELAY_SPAWN_OF_CHIMERA_FOR_THE_FIRST_N_NIGHTS =
+            math_random(
+            DELAY_SPAWN_OF_CHIMERA_FOR_THE_FIRST_N_NIGHTS - CHIMERA_DELAY_THRESHOLD,
+            DELAY_SPAWN_OF_CHIMERA_FOR_THE_FIRST_N_NIGHTS + CHIMERA_DELAY_THRESHOLD
+        )
+
+        give_info("first_start_timestamp_is_set_dyn_noct_mut") -- set the 'marker'
+    end
+end
+
+-- to get the same number of days you get in the PDA - Statistics.
+
+local function get_time_elapsed_from_new_game_start()
+    local s_time = level.get_start_time()
+    local seconds = tonumber(game.get_game_time():diffSec(s_time))
+
+    return math_floor(seconds / 86400)
+end
+
+-- for the continuous mutant 'skirmishes', with lower numbers than the two 'waves'
+-- will happen in 20-55 interval, 85+-10% probability, 1/7th +-2% percentage (numbers)
+-- 21h - 5h, approx. 7 of them, thr. the whole night
+local spawn_dynamic_nocturnal_mutants_skirmish_coeff = {
+	["Zaton"] = 0.14,
+	["Jupiter"] = 0.15, -- 0.22,
+	["DarkValley"] = 0.85,
+	["Agroprom"] = 0.6,
+	["theGarbage"] = 0.85,
+	["Yantar"] = 0.9,
+	["DeadCity"] = 0.7,
+	["Limansk"] = 0.85,
+	["RedForest"] = 1.0,
+	["theTruckCemetery"] = 1.0,
+	["theGenerators"] = 1.0,
+	["theArmyWarehouses"] = 0.65,
+	["Radar"] = 0.75,
+	["theChernobylNPP(North)"] = 0.9,
+	["theChernobylNPP(South)"] = 0.9,
+	["Pripyat"] = 0.55,
+	["ontheoutskirtsofPripyat"] = 0.4,
+	["Darkscape"] = 1.0,
+	["Cordon"] = 0.55,
+	["theGreatSwamp"] = 0.7,
+	["Rostok"] = 1.0,
+	["theWildTerritory"] = 1.0,
+	["theMeadow"] = 1.0,
+	["theHospital"] = 1.0,
+}
+
+-- to 'randomize' the selection of Zombies
+local ___Zombies_LIST___ = {
+    "zombie_normal",
+    "zombie_strong",
+    "zombie_ghol",
+    "zombie_ghost",
+    "zombie_blind",
+    "zombie_fake",
+    "zombie_teta",
+    "zombie_wich",
+    "zombi_babka_1",
+    "zombi_babka_2",
+    "zombi_babka_3",
+    "zombi_9"
+}
+local Zombies_LIST_NUMBER_of_ENTRIES = #___Zombies_LIST___
+
+local function create_nocturnal_mutant(sim, sec, pos, lid, gid)
+    printf("spawning nocturnal mutant %s", sec)
+	local se1 = sim:create(sec, pos, lid, gid)
+    NOCTURNAL_MUTANT_IDS_IN_A_TABLE[NOCTURNAL_MUTANT_IDS_IN_A_TABLE_COUNTER] = se1.id
+    NOCTURNAL_MUTANT_IDS_IN_A_TABLE_COUNTER = NOCTURNAL_MUTANT_IDS_IN_A_TABLE_COUNTER + 1
+end
+
+local chosen_NOCTURNAL_mutant_functions = {
+	["simulation_chimera"] = function(RNG_pn, sim, pos, lid, gid)
+		create_nocturnal_mutant(sim, "chimera_strong", pos, lid, gid)
+        if (RNG_pn > 45) then
+			create_nocturnal_mutant(sim, "lurker_2_strong", pos, lid, gid)
+        end
+        if (RNG_pn > 85) then
+        	create_nocturnal_mutant(sim, "lurker_3_weak", pos, lid, gid)
+        end
+    end,
+    ------------- lurker(s)
+    ["simulation_lurker_1_2"] = function(RNG_pn, sim, pos, lid, gid)
+    	create_nocturnal_mutant(sim, "lurker_1_normal", pos, lid, gid)
+        if (RNG_pn > 45) then
+    		create_nocturnal_mutant(sim, "lurker_2_strong", pos, lid, gid)
+        end
+    end,
+    ------------- bloodsucker
+    ["simulation_bloodsucker"] = function(RNG_pn, sim, pos, lid, gid)
+        create_nocturnal_mutant(sim, "bloodsucker_black_strong", pos, lid, gid)
+        if (RNG_pn > 55) then
+            create_nocturnal_mutant(sim, "bloodsucker_normal", pos, lid, gid)
+        end
+        if (RNG_pn > 95) then
+            create_nocturnal_mutant(sim, "bloodsucker_weak", pos, lid, gid)
+        end
+    end,
+    ------------- zombies
+    ["simulation_mix_zombie"] = function(RNG_pn, sim, pos, lid, gid)
+        create_nocturnal_mutant(sim, ___Zombies_LIST___[math_random(Zombies_LIST_NUMBER_of_ENTRIES)], pos, lid, gid)
+        create_nocturnal_mutant(sim, ___Zombies_LIST___[math_random(Zombies_LIST_NUMBER_of_ENTRIES)], pos, lid, gid)
+        if (RNG_pn > 35) then
+        	create_nocturnal_mutant(sim, ___Zombies_LIST___[math_random(Zombies_LIST_NUMBER_of_ENTRIES)], pos, lid, gid)
+        end
+        if (RNG_pn > 65) then
+            create_nocturnal_mutant(sim, ___Zombies_LIST___[math_random(Zombies_LIST_NUMBER_of_ENTRIES)], pos, lid, gid)
+        end
+        if (RNG_pn > 95) then
+            create_nocturnal_mutant(sim, ___Zombies_LIST___[math_random(Zombies_LIST_NUMBER_of_ENTRIES)], pos, lid, gid)
+        end
+    end,
+    ------------- fracture
+    ["simulation_fracture"] = function(RNG_pn, sim, pos, lid, gid)
+        create_nocturnal_mutant(sim, "fracture_normal", pos, lid, gid)
+        if (RNG_pn > 50) then
+            create_nocturnal_mutant(sim, "zombie_normal", pos, lid, gid)
+        end -- "fracture_strong"
+        if (RNG_pn > 75) then
+            create_nocturnal_mutant(sim, "fracture_2", pos, lid, gid)
+        end
+    end,
+    ------------- tushkanos
+    ["simulation_tushkano"] = function(RNG_pn, sim, pos, lid, gid)
+        create_nocturnal_mutant(sim, "tushkano_normal", pos, lid, gid)
+        create_nocturnal_mutant(sim, "tushkano_normal_a", pos, lid, gid)
+        if (RNG_pn > 10) then
+            create_nocturnal_mutant(sim, "tushkano_strong_b", pos, lid, gid)
+        end
+        if (RNG_pn > 25) then
+            create_nocturnal_mutant(sim, "tushkano_weak_c", pos, lid, gid)
+        end
+        if (RNG_pn > 55) then
+            create_nocturnal_mutant(sim, "tushkano_strong_b", pos, lid, gid)
+        end
+    end,
+    ------------- rats
+    ["simulation_rat"] = function(RNG_pn, sim, pos, lid, gid)
+        create_nocturnal_mutant(sim, "rat_strong", pos, lid, gid)
+        create_nocturnal_mutant(sim, "rat_normal", pos, lid, gid)
+        if (RNG_pn > 10) then
+            create_nocturnal_mutant(sim, "rat_strong", pos, lid, gid)
+        end
+        if (RNG_pn > 20) then
+            create_nocturnal_mutant(sim, "rat_normal", pos, lid, gid)
+        end
+        if (RNG_pn > 40) then
+            create_nocturnal_mutant(sim, "rat_weak", pos, lid, gid)
+        end
+        if (RNG_pn > 80) then
+            create_nocturnal_mutant(sim, "rat_normal", pos, lid, gid)
+        end
+    end
+}
+
+local function spawn_dynamic_nocturnal_mutants_func(prob_thresh, prob_attack, RNG_perc)
+	-- check against PROBABILITY ( that each night will experience nocturnal mutant attacks ), default, = 55%
+    local RNG_prob = math_random(1, 100)
+    local RNG_threshold = math_random(-prob_thresh, prob_thresh)
+    -- exit/end this function if not within probability for the current attack
+    if RNG_prob > (prob_attack + RNG_threshold) then
+        return
+    end
+    --- if probability condition is fulfilled, continue onto creating the nocturnal mutants
+    -- news_manager.send_tip(db.actor, " ----------- SPAWNING STARTED: " .. #NOCTURNAL_MUTANT_IDS_IN_A_TABLE , nil, nil, 10000 )
+    -- local ini = ini_file("plugins\\___gather_position_data_NOCTURNAL_MUTANTS.ltx")
+    -- local n = ini:line_count("DYNAMIC_NOCTURNAL_MUTANTS")
+    -- check IDs_utilized, and do not spawn if beyond 55.000
+    IDs_utilized_current_number = 0
+    local sim = alife()
+    for i = 1, 65534 do
+        local se_obj = sim:object(i)
+        if (se_obj) then
+            IDs_utilized_current_number = IDs_utilized_current_number + 1
+        end
+    end
+    -- check what map the Player is currently in, and spawn only NOCT_MUTANTS on that map
+    -- this info is gathered once per running of this function. (And use it to compare the map of all the recorded_positions in the 'for do' cycle)
+    local map_player_current_pos = get_player_current_map_pos() -- gets the correct name of the current map the Player is on,
+    -- in the form of "Cordon"; regardless of localization chosen
+    -- to get the selected "ATTACKS STRENGTH, i.e. PERCENTAGE_TO_SPAWN_NOCTURNAL_MUTANTS" in the in-game options
+    -- or PERCENTAGE_TO_SPAWN_NOCTURNAL_MUTANTS_DEFAULT
+    -- set the radius 'up to' (default = 750)
+    local WITHIN_DISTANCE_RANGE_AROUND_PLAYER_current = WITHIN_DISTANCE_RANGE_AROUND_PLAYER -- i.e '= 750'
+    if PERCENTAGE_TO_SPAWN_NOCTURNAL_MUTANTS_factor <= 20 then
+        WITHIN_DISTANCE_RANGE_AROUND_PLAYER_current = 250
+	elseif PERCENTAGE_TO_SPAWN_NOCTURNAL_MUTANTS_factor <= 30 then
+        WITHIN_DISTANCE_RANGE_AROUND_PLAYER_current = 350
+    elseif PERCENTAGE_TO_SPAWN_NOCTURNAL_MUTANTS_factor <= 50 then
+        WITHIN_DISTANCE_RANGE_AROUND_PLAYER_current = 600
+    end
+    -- now, 'WITHIN_DISTANCE_RANGE_AROUND_PLAYER_current' contains the 'up to' radius, dependent of 'Presence' setting
+    -- UPDATE: do NOT re-set the table at this time, it MAY contain data for mutants from the previous attacks
+    -- initialize the table, better be 'empty' at start of each 'attack'
+    -- NOCTURNAL_MUTANT_IDS_IN_A_TABLE = {} -- to store the created mutant IDs, and count, manage them, etc. may even decrease their heatlh to 0.2
+    NOCTURNAL_MUTANT_IDS_IN_A_TABLE_COUNTER = #NOCTURNAL_MUTANT_IDS_IN_A_TABLE + 1 or 0 -- continue filling the table, (it may contain IDs for mutants from the previous attack)
+    -- to (potentially) run several 'waves' at once, (instead of only one)
+    local ini1 = ini_file("plugins\\___gather_position_data_NOCTURNAL_MUTANTS.ltx")
+    local n = ini1:line_count("DYNAMIC_NOCTURNAL_MUTANTS")
+    for kk = 0, INCREASED_SPAWN_MUTANTS_FACTOR do -- =====================================================================================
+        -- start the 'cycle' of going through all the recorded_positions
+        for k = 0, n - 1 do
+            local result, i, v = ini1:r_line_ex("DYNAMIC_NOCTURNAL_MUTANTS", k)
+            local tp = v and str_explode(v, ",")
+            local pos = vector():set(tonumber(tp[1]), tonumber(tp[2]), tonumber(tp[3]))
+            local lid = tonumber(tp[4])
+            local gid = tonumber(tp[5])
+            -- 'extract' map name of current recorded_position
+            local map_pos_string = tp[8] --> map_pos_string = " LOCATION: in Zaton, north of the sawmill"
+            local map_pos = string_sub(map_pos_string, 12) --> map_pos = "DeadCity"
+            --- if the Player's current map and the current_recorded_position are the same, spawn NOCT_MUTANTS at that position
+            --- AND if it is within percentage_set to create that mutant
+            -- PERCENTAGE_TO_SPAWN
+            local RNG_p = math_random(1, 100)
+            -- also, check the distance from Player, 50m in X-Z, 2m in Y (only when Player is underneath, tunnel, house_attic-ground, etc)
+            local current_pos_actor = db.actor:position()
+            local current_pos_actor_x = math_abs(current_pos_actor.x - tonumber(tp[1]))
+            local current_pos_actor_z = math_abs(current_pos_actor.x - tonumber(tp[3]))
+            local current_pos_actor_y = tonumber(tp[2]) - current_pos_actor.y
+            local dist = math_sqrt(current_pos_actor_x * current_pos_actor_x + current_pos_actor_z * current_pos_actor_z)
+            -- X-side triangle Z-side triangle
+            local IS_IT_SAFE_DISTANCE_XYZ = dist > SAFE_DISTANCE_AROUND_PLAYER or current_pos_actor_y > 2
+            -- X-side triangle Z-side triangle
+            local IS_IT_WITHIN_DISTANCE_RANGE_XYZ = dist < WITHIN_DISTANCE_RANGE_AROUND_PLAYER_current
+            --- ========================================================================================================================
+            -- custom optimization of performance "per map"
+            -- to get similar level of performance on all maps, (fluidity, FPS, stutter)
+            --- decrease the mutant numbers considering the other action on that map
+            -- reference test: set at 100% slider/settings, 2000 radius, decrease the numbers that will show up per map. ~ 200 - 350 should be good
+            -- method: in each map, run two 'waves' - extreme scenario (can't happen tipically)
+            -- single wave must be stutter free, lower the coeff to compensate
+            --- detect/gauge any stutter. Lowered FPS is acceptable under these settings. Stutter is not.
+            ---- decrease the 'allowable' mutant numbers "per map", to achieve good performance
+            -- NOTE: up to 350-400 mutants attacking on one map, performance is good. beyond 400, there are dips, >500 heavier stutter. --> goal: at most, 350-380 mutants at the same time per map.
+            -- 90-100 mutants per wave, in a medium-sized map seems like a good scenario
+            
+            -------------------------------------------------------------------------
+            -- for 'custom' PERCENTAGE for some maps
+            local coeff = spawn_dynamic_nocturnal_mutants_skirmish_coeff[map_pos] or 1
+            
+            --- ========================================================================================================================
+            ------- spawn a NOCT_MUTANT at the current recorded_position, (if necessary conditions are met)
+            local RNG_percentage = math_random(-RNG_perc, RNG_perc) -- to add variety to the mutant numbers attacking; i.e. +-2%, instead of the 'flat' 60/7%
+            -- if slider set at '0', no threshold, effectively disabling this addon, no nocturnal mutants whatsoever
+            -- check whether noct_mutants number for that night is lower than 'the allowed' -- 'coeff' - for optimized performance "per map"
+            if 	NOCTURNAL_MUTANT_IDS_IN_A_TABLE_COUNTER <= (PERCENTAGE_TO_SPAWN_NOCTURNAL_MUTANTS_factor * NIGHT_NUMBERS_LIMIT_FACTOR) and
+                IDs_utilized_current_number < 55000 and
+                map_pos == map_player_current_pos and
+                RNG_p <= (PERCENTAGE_TO_SPAWN_NOCTURNAL_MUTANTS_factor / PERCENTAGE_TO_SPAWN_NOCTURNAL_MUTANTS_SKIRMISH_factor * coeff + RNG_percentage) and
+                IS_IT_SAFE_DISTANCE_XYZ and
+                IS_IT_WITHIN_DISTANCE_RANGE_XYZ
+            then
+                local RNG_p_CHIMERA_LURKER = math_random(1, 100)
+                -- now, to randomly choose a NOCT_MUT and place it at that position
+                local m = math_random(1, NOCTURNAL_Mutants_NUMBER_of_ENTRIES)
+                -- UPDATE, IMPORTANT: you can determine the time_passed_since start, with 'current_time_compare', it will be in hours here
+                -- i.e. 'timestamp_when_playthrough_started' is (potentially) not needed
+                -- check for the time delay (in days), after that PERCENTAGE to spawn chimera/giant is back to normal, (from 0)
+                -- 0-10 days, 0%, 10-15 days, 25%, >15 days, 50%, (this is still much lower than probability for all the other noct_mutants)
+                local current_time_days = get_time_elapsed_from_new_game_start()
+                local PERCENTAGE_TO_SPAWN_CHIMERA_delayed = 0
+                if (current_time_days >= (DELAY_SPAWN_OF_CHIMERA_FOR_THE_FIRST_N_NIGHTS * 1.5)) then
+                    PERCENTAGE_TO_SPAWN_CHIMERA_delayed = PERCENTAGE_TO_SPAWN_CHIMERA
+                elseif (current_time_days >= (DELAY_SPAWN_OF_CHIMERA_FOR_THE_FIRST_N_NIGHTS)) then
+                    PERCENTAGE_TO_SPAWN_CHIMERA_delayed = PERCENTAGE_TO_SPAWN_CHIMERA * 0.5
+                end
+                -- news_manager.send_tip(db.actor, "------ current_time_days: " .. current_time_days , nil, nil, 17000 )
+                -- news_manager.send_tip(db.actor, "------ DELAY_SPAWN_OF_CHIMERA_FOR_THE_FIRST_N_NIGHTS: " .. DELAY_SPAWN_OF_CHIMERA_FOR_THE_FIRST_N_NIGHTS , nil, nil, 17000 )
+                -- if (m < 5) then news_manager.send_tip(db.actor, "--------- CHIMERA NOCT spawn triggered m1: " .. m , nil, nil, 17000 ) end
+                -- check for CHIMERA_PERCENTAGE -- chimeras won't show up with lower Slider setting
+                -- to result in a somewhat 'lighter' nocturnal experience
+                if 	m < 5 and
+                	(RNG_p_CHIMERA_LURKER > PERCENTAGE_TO_SPAWN_CHIMERA_delayed or PERCENTAGE_TO_SPAWN_NOCTURNAL_MUTANTS_factor <= 20)
+                then
+                    m = math_random(5, NOCTURNAL_Mutants_NUMBER_of_ENTRIES) -- i.e. start the random selection AFTER the Chimeras in the table
+                end
+                -- check for LURKER_PERCENTAGE
+                if m < 9 and RNG_p_CHIMERA_LURKER > PERCENTAGE_TO_SPAWN_LURKERS then
+                    m = math_random(9, NOCTURNAL_Mutants_NUMBER_of_ENTRIES) -- i.e. start the random selection AFTER the Lurkers in the table
+                end
+                -- if (m < 5) then
+                -- news_manager.send_tip(db.actor, "------------ CHIMERA spawned NOCT --- PERCENTAGE_TO_SPAWN_CHIMERA_delayed: " .. PERCENTAGE_TO_SPAWN_CHIMERA_delayed , nil, nil, 17000 )
+                -- news_manager.send_tip(db.actor, "------ PERCENTAGE_TO_SPAWN_NOCTURNAL_MUTANTS_factor - 25: " .. ( PERCENTAGE_TO_SPAWN_NOCTURNAL_MUTANTS_factor - 25 ) , nil, nil, 17000 )
+                -- end
+                local chosen_NOCTURNAL_mutant = ___NOCTURNAL_Mutants_LIST___[m] -- selecting the mutant/group for the current position
+                -- -- creating 'patterns'/groups of mutants
+                local RNG_pn = math_random(1, 100) -- to use for 'randomizing' the 'patterns'
+                ------------- chimera,lurker
+                if (chosen_NOCTURNAL_mutant_functions[chosen_NOCTURNAL_mutant]) then
+                	chosen_NOCTURNAL_mutant_functions[chosen_NOCTURNAL_mutant](RNG_pn, sim, pos, lid, gid)
+                else
+	                -- for all other, 'normal' cases
+	                -- check whether the "chosen_mutant" is actually a "simulation_" and exclude it.
+	                -- (otherwise, It won't spawn anything, but it will give a warning in the console)
+	                if not string_match(chosen_NOCTURNAL_mutant, "simulation") then
+	                	create_nocturnal_mutant(sim, chosen_NOCTURNAL_mutant, pos, lid, gid)
+	                -- else
+	                -- news_manager.send_tip(db.actor, "---- simulation spawn ATTEMPTED: " .. chosen_NOCTURNAL_mutant , nil, nil, 10000 )
+	                end
+	            end
+            end
+            -------- a NOCT_MUTANT was spawned at the current recorded_position, (given that the necessary conditions were met)
+        end
+        -- end of the 'cycle' of going through all the recorded_positions
+    end -- =====================================================================================
+    -- to run several 'waves' at once, (instead of only one)
+end
+
+local function spawn_dynamic_nocturnal_mutants_skirmish()
+    -- news_manager.send_tip(db.actor, " --------- Small wave triggered" , nil, nil, 10000 )
+    time_stamp_skirmish = utils_data.CTimeToSec(game.get_game_time()) / 60 -- set the time_stamp and the interval_skirmish for the next 'small wave'
+    -- will save/load them in the savegame, if needed
+    time_interval_skirmish = math_random(time_interval_skirmish_lowest_value, time_interval_skirmish_highest_value) -- set the next time)moment for the next 'small wave'
+    -- check against PROBABILITY ( that each night will experience nocturnal mutant attacks ), default, = 55%
+    spawn_dynamic_nocturnal_mutants_func(PROBABILITY_THRESHOLD_SKIRMISH, PROBABILITY_FOR_MUTANT_ATTACKS_EACH_NIGHT_SKIRMISH, 2)
+end
+
+-- end of function 'spawn_dynamic_nocturnal_mutants_skirmish'. A nocturnal (small) wave was released now, if conditions were met
+-- =====================================================================================
+
+-- it 'triggers' on "actor_on_update", i.e. 'every frame'
+-- to optimize/minimize processing required,
+-- this function will make few checks, and if conditions are met, it will run the function to spawn the noct_mutants
+-- that function will check for probability of whether there should be attack that night, ( "likely", 60% by default, add some RNG to that value +-5, etc)
+
+-- has a check on its own, on probability_for_attacks_each_night
+local function spawn_dynamic_nocturnal_mutants()
+    time_stamp = 0
+    reset_msg_times_stamp() -- sets the current time_stamp for the subsequent messages, re-set it to 0 for next group_messages use
+    spawn_dynamic_nocturnal_mutants_func(PROBABILITY_THRESHOLD, PROBABILITY_FOR_MUTANT_ATTACKS_EACH_NIGHT, 5)
+    _send_attack_after_messages_ = true -- to allow their posting at the correct times only
+end
+
+local function check_whether_to_spawn_dynamic_nocturnal_mutants()
+	if PERCENTAGE_TO_SPAWN_NOCTURNAL_MUTANTS_factor == 0 then return end
+
+    local t = time_global()
+    if t < actor_on_update_time then return end
+    actor_on_update_time = t + actor_on_update_timer
+
+    local current_hour = level.get_time_hours() -- gives the current hour; example: 6, 19...
+    local current_minutes = level.get_time_minutes() -- gives the current minutes; after the hour: 17, 38...
+    local current_time_in_minutes = utils_data.CTimeToSec(game.get_game_time()) / 60 -- gives the time, in minutes, from New_game start
+    -------------------------------------------------------------------------------
+    -- for the continuous mutant 'skirmishes', with lower numbers than the two 'waves'
+    -- will happen in 20-55 interval, 85+-10% probability, 1/7th +-2% percentage (numbers)
+    -- 21h - 5h, approx. 7 of them, thr. the whole night
+    -- news_manager.send_tip(db.actor, " -- current_hour: " .. current_hour .. " time_stamp_skirmish: " .. time_stamp_skirmish , nil, nil, 10000 )
+    if ((current_hour >= 21) or (current_hour < 4)) and (time_stamp_skirmish == 0) then
+        -- news_manager.send_tip(db.actor, " -- time_stamp_skirmish is set" , nil, nil, 10000 )
+        time_stamp_skirmish = current_time_in_minutes -- sets the first time_stamp at 21h, to calculate the next interval to release 'small wave'
+        time_interval_skirmish = math_random(time_interval_skirmish_lowest_value, time_interval_skirmish_highest_value) -- set the next time)moment for the next 'small wave'
+    end
+    -- if the time_stamp is set, AND the interval_skirmish has passed, AND is within 21h-5h,
+    -- then run the function spawn_dynamic_nocturnal_mutants_skirmish()
+    if 	time_stamp_skirmish ~= 0 and
+    	current_time_in_minutes >= (time_stamp_skirmish + time_interval_skirmish) and
+    	(current_hour >= 21 or current_hour < 5)
+    then
+        spawn_dynamic_nocturnal_mutants_skirmish() -- this function will determine its own probability and percentage on its own
+    end
+    -------------------------------------------------------------------------------
+    -- in addition, at >6h, time_stamp_skirmish = 0, i.e. will re-set it; (to be set again later that night, at 21h)
+    -- at 21h, it will set the time_stamp_skirmish and the interval for the next (first that night) small wave - 'skirmish'
+    -- after that, it will run it periodically after the interval_skirmish has passed, up until 5h
+    -- 21h - < 0h
+    -------- check if current_hour is within 21-23 and past time-to-attack and not processed this already
+    if 	current_hour >= 21 and
+    	current_hour <= 23 and
+    	current_hour >= FIRST_ATTACK_HOUR and
+    	current_minutes >= FIRST_ATTACK_MINUTES and
+    	not FIRST_ATTACK_PROCESSED
+     then
+        FIRST_ATTACK_PROCESSED = true -- i.e. re-set them
+        FIRST_ATTACK_HOUR = 50
+        NEXT_NIGHT_ATTACK_HOURS_ARE_SET = false
+        -- news_manager.send_tip(db.actor, " ----------- SPAWNING TRIGGERED: " .. #NOCTURNAL_MUTANT_IDS_IN_A_TABLE , nil, nil, 10000 )
+        spawn_dynamic_nocturnal_mutants() -- run this function, it will further check for night_probability...
+    end
+    -- 1h - < 4h
+    -------- check if current_hour is within 1-4 and past time-to-attack and not processed this already
+    if 	current_hour >= 1 and
+    	current_hour <= 3 and 
+    	current_hour >= SECOND_ATTACK_HOUR and
+    	current_minutes >= SECOND_ATTACK_MINUTES and
+    	not SECOND_ATTACK_PROCESSED
+     then
+        SECOND_ATTACK_PROCESSED = true -- i.e. re-set them
+        SECOND_ATTACK_HOUR = 50
+        NEXT_NIGHT_ATTACK_HOURS_ARE_SET = false
+        -- news_manager.send_tip(db.actor, " ----------- SPAWNING TRIGGERED: " .. #NOCTURNAL_MUTANT_IDS_IN_A_TABLE , nil, nil, 10000 )
+        spawn_dynamic_nocturnal_mutants() -- run this function, it will further check for night_probability...
+    end
+    -- 5 - 20 - set the attack_hours, despawn existing noct_mutants
+    -------- check if current_hour is within 21-23 and past time-to-attack and not processed this already
+    if 	current_hour >= 5 and current_hour < 21 and not NEXT_NIGHT_ATTACK_HOURS_ARE_SET then
+        NEXT_NIGHT_ATTACK_HOURS_ARE_SET = true -- i.e. re-set them
+        FIRST_ATTACK_HOUR = math_random(21, 23)
+        SECOND_ATTACK_HOUR = math_random(1, 3)
+        -- this makes the 'attacks' possible at any minute between 21 - 0 1 - 4
+        FIRST_ATTACK_MINUTES = math_random(1, 59)
+        SECOND_ATTACK_MINUTES = math_random(1, 59)
+        FIRST_ATTACK_PROCESSED = false
+        SECOND_ATTACK_PROCESSED = false
+        despawn_existing_mutants_stored_in_table() -- go through the table that stored the IDs of the noct_mutants created and 'release' them
+        NOCTURNAL_MUTANT_IDS_IN_A_TABLE = {} -- re-set the table, up until now it contained IDs for mutants from both attacks
+        message_1_posted = false
+        message_2_posted = false -- re-set them for the following night
+        message_3_posted = false
+        message_4_posted = false
+        message_5_posted = false
+        time_stamp = 0
+        -- re-set them for the upcoming sunset
+        msg_time_1 = math_random(2, 18)
+        msg_time_2 = math_random(22, 38)
+        msg_time_3 = math_random(42, 55)
+        time_stamp_skirmish = 0 -- re-set the time_stamp_skirmish; will be set at 21h the next night
+    end
+    -- now, check conditions for posting the messages
+    -- for the 'before' messages
+    if enable_pda_messages and current_hour == 20 then
+        reset_msg_times_stamp() -- sets the current time_stamp to ~20h, (only for the first time, when it is set to '=0'), re-set it to 0 for next group_messages use
+        if time_stamp ~= 0 then
+            if current_time_in_minutes - time_stamp >= msg_time_1 and msg_time_1 < 1000 then -- the msg_time_1, _2, _3 are set this morning, (or later)
+                show_before_msg()
+                msg_time_1 = 5000
+            elseif current_time_in_minutes - time_stamp >= msg_time_2 and msg_time_2 < 1000 then
+                show_before_msg()
+                msg_time_2 = 5000
+            elseif current_time_in_minutes - time_stamp >= msg_time_3 and msg_time_3 < 1000 then
+                show_before_msg()
+                msg_time_3 = 5000
+                time_stamp = 0 -- after the third message, set it to 0, so that it can be re-set with 'reset_msg_times_stamp()', for the next group of messages
+                msg_time_1 = math_random(2, 18)
+                msg_time_2 = math_random(22, 38)
+                msg_time_3 = math_random(42, 55)
+            end
+        end
+    end
+    -- for the 'attack' messages (2-6 minutes after) and the 'after' messages (20-50 minutes after)
+    if enable_pda_messages and _send_attack_after_messages_ then -- to optimize/minimize the checks (on "actor_on_update")
+        -- for the 21-0h waves/messages
+        if time_stamp ~= 0 and current_hour >= 21 and current_hour <= 23 then
+            if current_time_in_minutes - time_stamp >= math_floor(msg_time_1 * 0.1) and msg_time_1 < 1000 then
+                show_attack_msg()
+                msg_time_1 = 5000
+            elseif current_time_in_minutes - time_stamp >= math_floor(msg_time_2 * 0.1) and msg_time_2 < 1000 then
+                show_attack_msg()
+                msg_time_2 = 5000
+            elseif current_time_in_minutes - time_stamp >= math_floor(msg_time_3 * 0.1) and msg_time_3 < 1000 then
+                show_attack_msg()
+                msg_time_3 = 5000
+                msg_time_1 = math_random(2, 18)
+                msg_time_2 = math_random(22, 38)
+                msg_time_3 = math_random(42, 55)
+                _send_attack_after_messages_ = false -- re-set it back after the thitd message, to be made 'true' only with spawning the next attack-wave
+            end
+            -- and now, for the 'after' messages
+            if current_time_in_minutes - time_stamp >= math_floor((msg_time_1 + 30) * 0.1) and msg_time_1 < 1000 then
+                show_after_msg()
+                msg_time_1 = 5000
+            elseif current_time_in_minutes - time_stamp >= math_floor((msg_time_2 + 30) * 0.1) and msg_time_2 < 1000 then
+                show_after_msg()
+                msg_time_2 = 5000
+            elseif current_time_in_minutes - time_stamp >= math_floor((msg_time_3 + 30) * 0.1) and msg_time_3 < 1000 then
+                show_after_msg()
+                msg_time_3 = 5000
+                time_stamp = 0 -- after the third message, set it to 0, so that it can be re-set with 'reset_msg_times_stamp()', for the next group of messages
+                msg_time_1 = math_random(2, 18)
+                msg_time_2 = math_random(22, 38)
+                msg_time_3 = math_random(42, 55)
+            end
+        end
+        -- for the 1-4h waves/messages
+        if time_stamp ~= 0 and current_hour >= 1 and current_hour <= 3 then
+            if current_time_in_minutes - time_stamp >= math_floor(msg_time_1 * 0.1) and msg_time_1 < 1000 then
+                show_attack_msg()
+                msg_time_1 = 5000
+            elseif current_time_in_minutes - time_stamp >= math_floor(msg_time_2 * 0.1) and msg_time_2 < 1000 then
+                show_attack_msg()
+                msg_time_2 = 5000
+            elseif current_time_in_minutes - time_stamp >= math_floor(msg_time_3 * 0.1) and msg_time_3 < 1000 then
+                show_attack_msg()
+                msg_time_3 = 5000
+                msg_time_1 = math_random(2, 18)
+                msg_time_2 = math_random(22, 38)
+                msg_time_3 = math_random(42, 55)
+                _send_attack_after_messages_ = false -- re-set it back after the thitd message, to be made 'true' only with spawning the next attack-wave
+            end
+            -- and now, for the 'after' messages
+            if current_time_in_minutes - time_stamp >= math_floor((msg_time_1 + 30) * 0.1) and msg_time_1 < 1000 then
+                show_after_msg()
+                msg_time_1 = 5000
+            elseif
+                current_time_in_minutes - time_stamp >= math_floor((msg_time_2 + 30) * 0.1) and msg_time_2 < 1000
+             then
+                show_after_msg()
+                msg_time_2 = 5000
+            elseif
+                current_time_in_minutes - time_stamp >= math_floor((msg_time_3 + 30) * 0.1) and msg_time_3 < 1000
+             then
+                show_after_msg()
+                msg_time_3 = 5000
+                time_stamp = 0 -- after the third message, set it to 0, so that it can be re-set with 'reset_msg_times_stamp()', for the next group of messages
+                msg_time_1 = math_random(2, 18)
+                msg_time_2 = math_random(22, 38)
+                msg_time_3 = math_random(42, 55)
+            end
+        end
+    end
+    -- for the 'night random' messages, 22h-3h
+    if enable_pda_messages and (current_hour >= 22 or current_hour < 4) then
+        -- possibility for a message within every hour
+        if current_hour == 22 and current_minutes >= msg_time_1 and not message_1_posted then
+            show_random_night_msg()
+            message_1_posted = true
+        end
+        if current_hour == 23 and current_minutes >= msg_time_2 and not message_2_posted then
+            show_random_night_msg()
+            message_2_posted = true
+        end
+        if current_hour == 1 and current_minutes >= msg_time_3 and not message_3_posted then
+            show_random_night_msg()
+            message_3_posted = true
+        end
+        if current_hour == 2 and current_minutes >= msg_time_2 and not message_4_posted then
+            show_random_night_msg()
+            message_4_posted = true
+        end
+        if current_hour == 3 and current_minutes >= msg_time_1 and not message_5_posted then
+            show_random_night_msg()
+            message_5_posted = true
+        end
+    end
+    -- checked conditions for posting the messages
+end
+
+-- end of function 'spawn_dynamic_nocturnal_mutants'. A nocturnal attack has started now, if within probability for that night
+-- =====================================================================================
+
+--[[
+axr_keybind.bind("DIK_NUMPAD9",function(p)
+if p == 1 then
+     count_affect_mutant_ids()
+end
+end)
+--]]
+------ to save/load statistics_data in the gamesave ------------------
+
+local function save_state(m_data)
+    -- local drink = {}
+    -- drink.last_drink = last_drink
+    -- drink.chk_drink = last_drink_chk and utils_data.CTime_to_table(last_drink_chk)
+
+    -- m_data.drink = drink
+
+    local dyn_noct_mutants_data_bmb = {}
+
+    dyn_noct_mutants_data_bmb.timestamp_when_playthrough_started = timestamp_when_playthrough_started
+    dyn_noct_mutants_data_bmb.DELAY_SPAWN_OF_CHIMERA_FOR_THE_FIRST_N_NIGHTS =
+        DELAY_SPAWN_OF_CHIMERA_FOR_THE_FIRST_N_NIGHTS
+
+    dyn_noct_mutants_data_bmb.FIRST_ATTACK_HOUR = FIRST_ATTACK_HOUR
+    dyn_noct_mutants_data_bmb.SECOND_ATTACK_HOUR = SECOND_ATTACK_HOUR
+
+    dyn_noct_mutants_data_bmb.FIRST_ATTACK_MINUTES = FIRST_ATTACK_MINUTES
+    dyn_noct_mutants_data_bmb.SECOND_ATTACK_MINUTES = SECOND_ATTACK_MINUTES
+
+    dyn_noct_mutants_data_bmb.msg_time_1 = msg_time_1
+    dyn_noct_mutants_data_bmb.msg_time_2 = msg_time_2
+    dyn_noct_mutants_data_bmb.msg_time_3 = msg_time_3
+
+    dyn_noct_mutants_data_bmb.time_stamp = time_stamp
+
+    dyn_noct_mutants_data_bmb.message_1_posted = message_1_posted
+    dyn_noct_mutants_data_bmb.message_2_posted = message_2_posted
+    dyn_noct_mutants_data_bmb.message_3_posted = message_3_posted
+    dyn_noct_mutants_data_bmb.message_4_posted = message_4_posted
+    dyn_noct_mutants_data_bmb.message_5_posted = message_5_posted
+
+    dyn_noct_mutants_data_bmb.time_stamp_skirmish = time_stamp_skirmish
+    dyn_noct_mutants_data_bmb.time_interval_skirmish = time_interval_skirmish
+
+    dyn_noct_mutants_data_bmb._send_attack_after_messages_ = _send_attack_after_messages_
+
+    dyn_noct_mutants_data_bmb.NOCTURNAL_MUTANT_IDS_IN_A_TABLE = NOCTURNAL_MUTANT_IDS_IN_A_TABLE
+
+    m_data.dyn_noct_mutants_data_bmb = dyn_noct_mutants_data_bmb
+end
+
+local function load_state(m_data)
+    if (not m_data.dyn_noct_mutants_data_bmb) then
+        return
+    end
+
+    local dyn_noct_mutants_data_bmb = m_data.dyn_noct_mutants_data_bmb
+
+    -- IMPORTANT: when loading a savegame that doesn't contain the DYN_NOCT_MUT data, it would crash when the script needs that data
+    -- solution: " local variable = value or 0 " --> sets it to '0' if no data available
+
+    timestamp_when_playthrough_started = dyn_noct_mutants_data_bmb.timestamp_when_playthrough_started or 0
+
+    DELAY_SPAWN_OF_CHIMERA_FOR_THE_FIRST_N_NIGHTS =
+        dyn_noct_mutants_data_bmb.DELAY_SPAWN_OF_CHIMERA_FOR_THE_FIRST_N_NIGHTS or 10
+
+    FIRST_ATTACK_HOUR = dyn_noct_mutants_data_bmb.FIRST_ATTACK_HOUR or 22
+    SECOND_ATTACK_HOUR = dyn_noct_mutants_data_bmb.SECOND_ATTACK_HOUR or 3
+
+    FIRST_ATTACK_MINUTES = dyn_noct_mutants_data_bmb.FIRST_ATTACK_MINUTES or 25
+    SECOND_ATTACK_MINUTES = dyn_noct_mutants_data_bmb.SECOND_ATTACK_MINUTES or 42
+
+    msg_time_1 = dyn_noct_mutants_data_bmb.msg_time_1 or 17
+    msg_time_2 = dyn_noct_mutants_data_bmb.msg_time_2 or 30
+    msg_time_3 = dyn_noct_mutants_data_bmb.msg_time_3 or 42
+
+    time_stamp = dyn_noct_mutants_data_bmb.time_stamp or 0
+
+    message_1_posted = dyn_noct_mutants_data_bmb.message_1_posted or false
+    message_2_posted = dyn_noct_mutants_data_bmb.message_2_posted or false
+    message_3_posted = dyn_noct_mutants_data_bmb.message_3_posted or false
+    message_4_posted = dyn_noct_mutants_data_bmb.message_4_posted or false
+    message_5_posted = dyn_noct_mutants_data_bmb.message_5_posted or false
+
+    time_stamp_skirmish = dyn_noct_mutants_data_bmb.time_stamp_skirmish or 0
+    time_interval_skirmish = dyn_noct_mutants_data_bmb.time_interval_skirmish or 0
+
+    _send_attack_after_messages_ = dyn_noct_mutants_data_bmb._send_attack_after_messages_ or false
+
+    NOCTURNAL_MUTANT_IDS_IN_A_TABLE = dyn_noct_mutants_data_bmb.NOCTURNAL_MUTANT_IDS_IN_A_TABLE or {}
+end
+
+------ end of to save/load statistics_data in the gamesave ------------------
+
+local function update_values()
+    if ui_mcm then
+        enable_pda_messages = ui_mcm.get("dynamic_mutants/enabled_noct_mutants_pda_messages")
+        actor_on_update_timer = ui_mcm.get("dynamic_mutants/dyn_mutants_update_period")
+        PERCENTAGE_TO_SPAWN_NOCTURNAL_MUTANTS_factor = ui_mcm.get("dynamic_mutants/dyn_noct_mutants_attacks_strength")
+    end
+end
+
+function on_game_start()
+    -- to set the 'timestamp' and its 'marker' ONLY on the first start
+    RegisterScriptCallback("on_option_change", update_values)
+    RegisterScriptCallback("actor_on_first_update", update_values)
+    RegisterScriptCallback("actor_on_first_update", set_first_start_timestamp)
+    RegisterScriptCallback("actor_on_update", check_whether_to_spawn_dynamic_nocturnal_mutants)
+    RegisterScriptCallback("save_state", save_state) -- save/load required data
+    RegisterScriptCallback("load_state", load_state)
+end
+
+--[[
+axr_keybind.bind("DIK_NUMPAD9",function(p)
+if p == 1 then
+     spawn_dynamic_nocturnal_mutants()
+end
+end)
+--]]
+--[[
+axr_keybind.bind("DIK_NUMPAD8",function(p)
+if p == 1 then
+     spawn_dynamic_nocturnal_mutants_skirmish()
+end
+end)
+--]]
+--[[
+axr_keybind.bind("DIK_MULTIPLY",function(p)
+if p == 1 then
+     count_mutant_ids_in_table()
+end
+end)
+--]]
+--[[
+axr_keybind.bind("DIK_ADD",function(p)
+if p == 1 then
+     despawn_existing_mutants_stored_in_table()
+end
+end)
+--]]
+--[[
+axr_keybind.bind("DIK_NUMPAD1",function(p)
+if p == 1 then
+     show_before_msg()
+end
+end)
+--]]
+--[[
+axr_keybind.bind("DIK_NUMPAD2",function(p)
+if p == 1 then
+     show_attack_msg()
+end
+end)
+--]]
+--[[
+axr_keybind.bind("DIK_NUMPAD3",function(p)
+if p == 1 then
+     show_after_msg()
+end
+end)
+--]]
+--[[
+axr_keybind.bind("DIK_NUMPAD4",function(p)
+if p == 1 then
+     show_random_night_msg()
+end
+end)
+--]]

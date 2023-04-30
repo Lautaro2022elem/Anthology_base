@@ -1,0 +1,53 @@
+[meet@quest_line]
+close_anim 		= nil
+close_victim 	= nil
+far_anim 		= nil
+far_victim 		= nil
+close_distance 	= 0
+far_distance 	= 0
+use = {=actor_enemy} false, {=dist_to_actor_le(3)} true, false
+snd_on_use = {!dist_to_actor_le(3)} nil
+meet_on_talking = false
+;==================================
+
+[logic]
+active = walker@monolith_leader_on_base
+level_spot = quest_npc
+suitable = {=check_npc_name(blck_val_monolith_leader)} true, false
+prior = 200
+
+[walker@monolith_leader_on_base]
+path_walk = blck_val_monolith_leader_on_base_walk
+path_look = blck_val_monolith_leader_on_base_look
+on_info = {=dist_to_actor_le(45) +blck_val_quest_lutiy_monolit_is_ready} walker@monolith_leader_final %=blck_val_monolit_leader_sends%
+on_info2 = {=actor_enemy} %=actor_neutral%
+gather_items_enabled = false
+corpse_detection_enabled = false
+combat_ignore_keep_when_attacked = true 
+combat_ignore_cond = true
+invulnerable = true
+meet = no_meet
+use_camp = false
+
+[walker@monolith_leader_final]
+path_walk = blck_val_monolith_leader_on_base_walk
+path_look = blck_val_monolith_leader_on_base_look
+on_info = {+blck_val_stronglav_go_to_labx7} %=release_npc%
+on_info2 = {=actor_enemy} %=actor_neutral%
+on_info3 = {=dist_to_actor_le(4) -blck_val_quest_monolith_leader_stop_sound} %=play_sound(blck_val_monolit_leader_meet) +blck_val_quest_monolith_leader_stop_sound%
+on_timer = 3500 | %+blck_val_monolit_leader_give_info%
+gather_items_enabled = false
+corpse_detection_enabled = false
+combat_ignore_keep_when_attacked = true 
+combat_ignore_cond = true
+invulnerable = true
+meet = meet@start_quest
+use_camp = false
+
+;------------------------------------------
+[meet@start_quest]:meet@quest_line
+close_victim = actor
+use = {+blck_val_monolit_leader_dialog_done} false, true
+allow_break = false
+meet_dialog = blck_val_actor_meet_from_monolit_leader
+trade_enable = false

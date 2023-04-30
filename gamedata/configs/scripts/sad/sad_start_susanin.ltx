@@ -1,0 +1,47 @@
+[walker@def]
+meet = no_meet
+use_camp = false
+combat_ignore_cond = true
+combat_ignore_keep_when_attacked = true
+invulnerable = true
+gather_items_enabled = false
+help_wounded_enabled = false
+corpse_detection_enabled = false
+
+; ------------------------------------------------------------------------------------------------
+[logic@susanin]
+suitable = {=check_npc_name(sad_stalker_guide) -sad_turist_available} true
+active = walker@1
+prior = 200
+
+[walker@1]:walker@def
+path_walk = cs_provodnik_start
+path_look = cs_provodnik_walk_1
+on_info = {+sad_start_start_cutscene} walker@2 %=sad_reset_animation%
+
+[walker@2]:walker@def
+path_walk = cs_provodnik_walk_1
+path_look = cs_provodnik_look_1
+def_state_moving = run
+on_timer = 1000 | %+sad_start_guide_run%
+on_timer2 = 4000 | {-sad_start_guide_talk_1} %+sad_start_guide_talk_1 =play_sound(sad_start_guide_1)%
+on_signal = on_position | walker@3
+
+[walker@3]:walker@def
+path_walk = cs_provodnik_walk_1
+path_look = cs_provodnik_look_1
+on_info = {!is_playing_sound} walker@4 %+sad_start_cs_guide_on_position%
+
+[walker@4]:walker@def
+path_walk = cs_provodnik_walk_1
+path_look = cs_provodnik_look_1
+on_info = {+sad_start_start_camera_2} remark@5 %=play_sound(sad_start_guide_2)%
+
+[remark@5]:walker@def
+target = story | sad_start_cs_actor
+on_signal = sound_end | walker@out %+sad_start_guide_end_talk =sad_reset_animation%
+
+[walker@out]:walker@def
+path_walk = cs_actor_start
+def_state_moving = run
+on_timer = 6000 | %+sad_start_cutscene_end%

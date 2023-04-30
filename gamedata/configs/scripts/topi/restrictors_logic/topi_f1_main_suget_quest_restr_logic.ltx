@@ -1,0 +1,18 @@
+[logic] 
+active = sr_idle@start
+
+[sr_idle@start]
+on_info = {+topi_start -topi_f1_freedom_partol_create} %=topi_f1_freedom_partol_create_npc +topi_f1_freedom_partol_create%
+on_timer = 6000 | {+topi_start +topi_f1_freedom_partol_create -topi_f1_freedom_quest_give} sr_idle@first %=give_task(geonezis_topi_b9_main_suget_quest_1) +topi_f1_freedom_quest_give%
+
+[sr_idle@first] 
+on_info  = {+topi_f1_freedom_scaut_lider_talking =actor_in_zone(topi_f1_main_suget_quest_restr) =actor_has_item(topi_f1_radioscaner)} sr_idle@tutorial %=run_tutorial(topi_f1_main_suget_quest_tutor)% 
+on_info2 = {+topi_f1_freedom_first_device_set} sr_idle@nil 
+
+[sr_idle@tutorial] 
+on_info   = {+topi_f1_freedom_scaut_lider_talking !actor_in_zone(topi_f1_main_suget_quest_restr)} sr_idle@first %=stop_tutorial% 
+on_info2 = {+topi_f1_freedom_first_device_set} sr_idle@nil %=stop_tutorial%
+on_info3 = {-topi_f1_freedom_first_device_set +topi_f1_freedom_first_device_set_close} sr_idle@first %=stop_tutorial%
+on_info4 = {!has_active_tutorial} sr_idle@first
+
+[sr_idle@nil] 

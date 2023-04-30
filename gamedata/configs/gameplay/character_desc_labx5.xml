@@ -1,0 +1,334 @@
+<?xml version='1.0' encoding="windows-1251"?>
+
+<xml>
+	
+ <specific_character id="labx5_a2_borland" team_default = "1">
+		<name>esc_borland_start_name</name>
+		<icon>ui_inGame2_borland</icon>
+		<map_icon x="1" y="0"></map_icon>
+		<bio>Опытный сталкер. Детальная информация отсутствует.</bio>
+		<class>labx5_a2_borland</class>
+		<community>stalker</community> <terrain_sect>stalker_terrain</terrain_sect>
+		<snd_config>characters_voice\human\stalker_2\</snd_config>
+		<rank>900</rank>
+		<money min="5000" max="12000" infinitive="0"/>
+		<reputation>0</reputation>
+		<visual>actors\stalker_exclusive\esc_borland_upd</visual>
+		<supplies>
+			[spawn] \n
+			wpn_beretta = 1 \n
+			wpn_sig550 \n
+			ammo_5.56x45_ss190 = 1 \n
+			ammo_9x19_fmj = 1 \n
+			grenade_f1 = 1 \n
+
+#include "gameplay\supplies\character_items.xml"
+#include "gameplay\supplies\character_food.xml"
+#include "gameplay\supplies\character_drugs_2.xml"
+		</supplies>
+#include "gameplay\character_criticals.xml"
+
+<start_dialog>labx5_borland_start_dialog</start_dialog>
+<actor_dialog>actor_break_dialog</actor_dialog>
+	</specific_character>	
+	
+	<specific_character id="labx5_a2_borland_podmena" team_default = "1">
+		<name>esc_borland_start_name</name>
+		<icon>ui_inGame2_borland</icon>
+		<map_icon x="1" y="0"></map_icon>
+		<bio>Опытный сталкер. Детальная информация отсутствует.</bio>
+		<class>labx5_a2_borland_podmena</class>
+		<community>stalker</community> <terrain_sect>stalker_terrain</terrain_sect>
+		<snd_config>characters_voice\human\stalker_2\</snd_config>
+		<rank>900</rank>
+		<money min="5000" max="12000" infinitive="0"/>
+		<reputation>0</reputation>
+		<visual>actors\stalker_exclusive\esc_borland_upd</visual>
+		<supplies>
+			[spawn] \n
+			wpn_beretta = 1 \n
+			wpn_sig550 \n
+			ammo_5.56x45_ss190 = 1 \n
+			ammo_9x19_fmj = 1 \n
+			grenade_f1 = 1 \n
+
+#include "gameplay\supplies\character_items.xml"
+#include "gameplay\supplies\character_food.xml"
+#include "gameplay\supplies\character_drugs_2.xml"
+		</supplies>
+#include "gameplay\character_criticals.xml"
+
+
+<actor_dialog>actor_break_dialog</actor_dialog>
+	</specific_character>
+	
+<specific_character id="labx5_a2_csky_dead_body_1" team_default = "1">
+		<name>GENERATE_NAME_stalker</name>
+		<icon>ui_inGame2_csky_1_1</icon>
+		<map_icon x="1" y="0"></map_icon>
+		<bio>Опытный сталкер. Детальная информация отсутствует.</bio>
+		<class>labx5_a2_csky_dead_body_1</class>
+		<community>csky</community> <terrain_sect>stalker_terrain</terrain_sect>
+		<snd_config>characters_voice\human\csky_1\</snd_config>
+		<rank>15</rank>
+		<reputation>0</reputation>
+		<visual>actors\stalker_nebo\stalker_nebo_1</visual>
+		<supplies>
+			[spawn] \n
+			wpn_mp5 = 1, silencer \n
+			ammo_9x19_pbp = 1 \n
+			wpn_colt1911 \n
+			ammo_11.43x23_hydro = 1 \n
+			grenade_f1 = 1 \n
+			labx5_b10_cfo_codegrabber \n
+#include "gameplay\supplies\character_items.xml"
+#include "gameplay\supplies\character_food.xml"
+#include "gameplay\supplies\character_drugs.xml"
+		</supplies>
+#include "gameplay\character_criticals.xml"
+#include "gameplay\character_dialogs.xml"
+	</specific_character>
+	
+	<specific_character id="labx5_a2_monolith_default_1" team_default = "1">
+		<name>GENERATE_NAME_stalker</name>
+		<icon>ui_inGame2_monolit_2</icon>
+		<map_icon x="1" y="0"></map_icon>
+		<bio>Опытный сталкер. Детальная информация отсутствует.</bio>
+		<class>labx5_a2_monolith_default_1</class>
+		<community>monolith</community> <terrain_sect>stalker_terrain</terrain_sect>
+		<snd_config>characters_voice\human\monolith_1\</snd_config>
+		<rank>60</rank>
+		<reputation>0</reputation>
+		<visual>actors\stalker_monolith\stalker_monolith_2</visual>
+		<supplies>
+			[spawn] \n
+			wpn_val = 1 \n
+			ammo_9x39_ap = 1 \n
+			wpn_sig220 = 1, silencer \n
+			ammo_11.43x23_hydro = 1 \n
+#include "gameplay\supplies\character_items_monolith.xml"
+#include "gameplay\supplies\character_food.xml"
+#include "gameplay\supplies\character_drugs_4.xml"
+#include "gameplay\supplies\character_drugs_sci.xml"
+#include "gameplay\supplies\character_drugs_mil.xml"
+		</supplies>
+#include "gameplay\character_criticals.xml"
+#include "gameplay\character_dialogs.xml"
+	</specific_character>
+	<specific_character id="labx5_a2_monolith_default_2" team_default = "1">
+		<name>GENERATE_NAME_stalker</name>
+		<icon>ui_inGame2_monolit_2</icon>
+		<map_icon x="1" y="0"></map_icon>
+		<bio>Опытный сталкер. Детальная информация отсутствует.</bio>
+		<class>labx5_a2_monolith_default_2</class>
+		<community>monolith</community> <terrain_sect>stalker_terrain</terrain_sect>
+		<snd_config>characters_voice\human\monolith_1\</snd_config>
+		<rank>60</rank>
+		<reputation>0</reputation>
+		<visual>actors\stalker_monolith\stalker_monolith_2</visual>
+		<supplies>
+			[spawn] \n
+			wpn_val = 1 \n
+			ammo_9x39_ap = 1 \n
+			wpn_sig220 = 1, silencer \n
+			ammo_11.43x23_hydro = 1 \n
+#include "gameplay\supplies\character_items_monolith.xml"
+#include "gameplay\supplies\character_food.xml"
+#include "gameplay\supplies\character_drugs_4.xml"
+#include "gameplay\supplies\character_drugs_sci.xml"
+#include "gameplay\supplies\character_drugs_mil.xml"
+		</supplies>
+#include "gameplay\character_criticals.xml"
+#include "gameplay\character_dialogs.xml"
+	</specific_character>
+	<specific_character id="labx5_a2_monolith_default_3" team_default = "1">
+		<name>GENERATE_NAME_stalker</name>
+		<icon>ui_inGame2_monolit_2</icon>
+		<map_icon x="1" y="0"></map_icon>
+		<bio>Опытный сталкер. Детальная информация отсутствует.</bio>
+		<class>labx5_a2_monolith_default_3</class>
+		<community>monolith</community> <terrain_sect>stalker_terrain</terrain_sect>
+		<snd_config>characters_voice\human\monolith_1\</snd_config>
+		<rank>60</rank>
+		<reputation>0</reputation>
+		<visual>actors\stalker_monolith\stalker_monolith_2</visual>
+		<supplies>
+			[spawn] \n
+			wpn_val = 1 \n
+			ammo_9x39_ap = 1 \n
+			wpn_sig220 = 1, silencer \n
+			ammo_11.43x23_hydro = 1 \n
+#include "gameplay\supplies\character_items_monolith.xml"
+#include "gameplay\supplies\character_food.xml"
+#include "gameplay\supplies\character_drugs_4.xml"
+#include "gameplay\supplies\character_drugs_sci.xml"
+#include "gameplay\supplies\character_drugs_mil.xml"
+		</supplies>
+#include "gameplay\character_criticals.xml"
+#include "gameplay\character_dialogs.xml"
+	</specific_character>
+	<specific_character id="labx5_a2_monolith_default_4" team_default = "1">
+		<name>GENERATE_NAME_stalker</name>
+		<icon>ui_inGame2_monolit_2</icon>
+		<map_icon x="1" y="0"></map_icon>
+		<bio>Опытный сталкер. Детальная информация отсутствует.</bio>
+		<class>labx5_a2_monolith_default_4</class>
+		<community>monolith</community> <terrain_sect>stalker_terrain</terrain_sect>
+		<snd_config>characters_voice\human\monolith_1\</snd_config>
+		<rank>60</rank>
+		<reputation>0</reputation>
+		<visual>actors\stalker_monolith\stalker_monolith_2</visual>
+		<supplies>
+			[spawn] \n
+			wpn_val = 1 \n
+			ammo_9x39_ap = 1 \n
+			wpn_sig220 = 1, silencer \n
+			ammo_11.43x23_hydro = 1 \n
+#include "gameplay\supplies\character_items_monolith.xml"
+#include "gameplay\supplies\character_food.xml"
+#include "gameplay\supplies\character_drugs_4.xml"
+#include "gameplay\supplies\character_drugs_sci.xml"
+#include "gameplay\supplies\character_drugs_mil.xml"
+		</supplies>
+#include "gameplay\character_criticals.xml"
+#include "gameplay\character_dialogs.xml"
+	</specific_character>
+	<specific_character id="labx5_a2_monolith_default_5" team_default = "1">
+		<name>GENERATE_NAME_stalker</name>
+		<icon>ui_inGame2_monolit_2</icon>
+		<map_icon x="1" y="0"></map_icon>
+		<bio>Опытный сталкер. Детальная информация отсутствует.</bio>
+		<class>labx5_a2_monolith_default_5</class>
+		<community>monolith</community> <terrain_sect>stalker_terrain</terrain_sect>
+		<snd_config>characters_voice\human\monolith_1\</snd_config>
+		<rank>60</rank>
+		<reputation>0</reputation>
+		<visual>actors\stalker_monolith\stalker_monolith_2</visual>
+		<supplies>
+			[spawn] \n
+			wpn_val = 1 \n
+			ammo_9x39_ap = 1 \n
+			wpn_sig220 = 1, silencer \n
+			ammo_11.43x23_hydro = 1 \n
+#include "gameplay\supplies\character_items_monolith.xml"
+#include "gameplay\supplies\character_food.xml"
+#include "gameplay\supplies\character_drugs_4.xml"
+#include "gameplay\supplies\character_drugs_sci.xml"
+#include "gameplay\supplies\character_drugs_mil.xml"
+		</supplies>
+#include "gameplay\character_criticals.xml"
+#include "gameplay\character_dialogs.xml"
+	</specific_character>
+	<specific_character id="labx5_a2_monolith_default_6" team_default = "1">
+		<name>GENERATE_NAME_stalker</name>
+		<icon>ui_inGame2_monolit_2</icon>
+		<map_icon x="1" y="0"></map_icon>
+		<bio>Опытный сталкер. Детальная информация отсутствует.</bio>
+		<class>labx5_a2_monolith_default_6</class>
+		<community>monolith</community> <terrain_sect>stalker_terrain</terrain_sect>
+		<snd_config>characters_voice\human\monolith_1\</snd_config>
+		<rank>60</rank>
+		<reputation>0</reputation>
+		<visual>actors\stalker_monolith\stalker_monolith_2</visual>
+		<supplies>
+			[spawn] \n
+			wpn_val = 1 \n
+			ammo_9x39_ap = 1 \n
+			wpn_sig220 = 1, silencer \n
+			ammo_11.43x23_hydro = 1 \n
+#include "gameplay\supplies\character_items_monolith.xml"
+#include "gameplay\supplies\character_food.xml"
+#include "gameplay\supplies\character_drugs_4.xml"
+#include "gameplay\supplies\character_drugs_sci.xml"
+#include "gameplay\supplies\character_drugs_mil.xml"
+		</supplies>
+#include "gameplay\character_criticals.xml"
+#include "gameplay\character_dialogs.xml"
+	</specific_character>
+
+
+	<specific_character id="labx5_a2_monolith_default_7" team_default = "1">
+		<name>GENERATE_NAME_stalker</name>
+		<icon>ui_inGame2_monolit_1</icon>
+		<map_icon x="1" y="0"></map_icon>
+		<bio>Опытный сталкер. Детальная информация отсутствует.</bio>
+		<class>labx5_a2_monolith_default_7</class>
+		<community>monolith</community> <terrain_sect>stalker_terrain</terrain_sect>
+		<snd_config>characters_voice\human\monolith_1\</snd_config>
+		<rank>60</rank>
+		<reputation>0</reputation>
+		<visual>actors\stalker_monolith\stalker_monolith_1</visual>
+		<supplies>
+			[spawn] \n
+			labx5_b10_cfo_codekey \n
+			wpn_groza \n
+			ammo_9x39_ap = 1 \n
+			wpn_sig220 = 1 \n
+			ammo_11.43x23_hydro = 1 \n
+			grenade_f1 = 4 \n
+#include "gameplay\supplies\character_items_monolith.xml"
+#include "gameplay\supplies\character_food.xml"
+#include "gameplay\supplies\character_drugs_4.xml"
+#include "gameplay\supplies\character_drugs_sci.xml"
+#include "gameplay\supplies\character_drugs_mil.xml"
+		</supplies>
+#include "gameplay\character_criticals.xml"
+#include "gameplay\character_dialogs.xml"
+	</specific_character>
+	<specific_character id="labx5_a2_monolith_default_8" team_default = "1">
+		<name>GENERATE_NAME_stalker</name>
+		<icon>ui_inGame2_monolit_4</icon>
+		<map_icon x="1" y="0"></map_icon>
+		<bio>Опытный сталкер. Детальная информация отсутствует.</bio>
+		<class>labx5_a2_monolith_default_8</class>
+		<community>monolith</community> <terrain_sect>stalker_terrain</terrain_sect>
+		<snd_config>characters_voice\human\monolith_3\</snd_config>
+		<rank>60</rank>
+		<reputation>0</reputation>
+		<visual>actors\stalker_monolith\stalker_monolith_4</visual>
+		<supplies>
+			[spawn] \n
+			wpn_groza \n
+			ammo_9x39_ap = 1 \n
+			wpn_sig220 = 1 \n
+			ammo_11.43x23_hydro = 1 \n
+			grenade_f1 = 4 \n
+#include "gameplay\supplies\character_items_monolith.xml"
+#include "gameplay\supplies\character_food.xml"
+#include "gameplay\supplies\character_drugs_4.xml"
+#include "gameplay\supplies\character_drugs_sci.xml"
+#include "gameplay\supplies\character_drugs_mil.xml"
+		</supplies>
+#include "gameplay\character_criticals.xml"
+#include "gameplay\character_dialogs.xml"
+	</specific_character>
+	<specific_character id="labx5_a2_monolith_default_9" team_default = "1">
+		<name>GENERATE_NAME_stalker</name>
+		<icon>ui_inGame2_monolit_4</icon>
+		<map_icon x="1" y="0"></map_icon>
+		<bio>Опытный сталкер. Детальная информация отсутствует.</bio>
+		<class>labx5_a2_monolith_default_9</class>
+		<community>monolith</community> <terrain_sect>stalker_terrain</terrain_sect>
+		<snd_config>characters_voice\human\monolith_3\</snd_config>
+		<rank>60</rank>
+		<reputation>0</reputation>
+		<visual>actors\stalker_monolith\stalker_monolith_4</visual>
+		<supplies>
+			[spawn] \n
+			wpn_groza \n
+			ammo_9x39_ap = 1 \n
+			wpn_sig220 = 1 \n
+			ammo_11.43x23_hydro = 1 \n
+			grenade_f1 = 4 \n
+#include "gameplay\supplies\character_items_monolith.xml"
+#include "gameplay\supplies\character_food.xml"
+#include "gameplay\supplies\character_drugs_4.xml"
+#include "gameplay\supplies\character_drugs_sci.xml"
+#include "gameplay\supplies\character_drugs_mil.xml"
+		</supplies>
+#include "gameplay\character_criticals.xml"
+#include "gameplay\character_dialogs.xml"
+	</specific_character>
+	
+	
+</xml>

@@ -1,0 +1,28 @@
+[logic]
+active = sr_idle@init
+
+[sr_idle@init]
+on_info = {+sad_b4_actor_recognized} sr_idle@wait %=create_squad(sad_sim_17_tushkans:sad_sim_17)%
+on_info2 = {+sad_actor_enemy_to_someone} sr_idle@wait %=create_squad(sad_sim_17_tushkans:sad_sim_17)%
+on_info3 = {+sad_radik_otkaz} sr_idle@wait %=create_squad(sad_sim_17_tushkans:sad_sim_17)%
+
+[sr_idle@wait]
+on_info = {=sad_dist_to_path_le(sad_sim_17_gigant_home:6400)} sr_idle@squad %=set_counter(sad_sim_17_tushkan_killed:0)%
+
+[sr_idle@squad]
+on_info = {!squad_exist(sad_sim_17_tushkans)} sr_idle@start %=create_squad(sad_sim_17_tushkans:sad_sim_17)%, sr_idle@start
+
+
+[sr_idle@start]
+on_info = {=sad_dist_to_path_ge(sad_sim_17_gigant_home:8100)} sr_idle@wait, {-sad_b3_ucheny_mission_on =counter_greater(sad_sim_17_tushkan_killed:16)} sr_idle@wait_outside, {+sad_b3_ucheny_mission_on =counter_greater(sad_sim_17_tushkan_killed:6)} sr_idle@wait_outside,sr_idle@check
+; sad_b3_ucheny_mission_on
+
+[sr_idle@check]
+on_info = {!squad_exist(sad_sim_17_tushkans)} sr_idle@wait_outside, {!squad_npc_count_ge(sad_sim_17_tushkans:7)} sr_idle@member, sr_idle@start
+
+[sr_idle@member]
+on_info = sr_idle@start %=sad_sim_17_create_tushkano(tushkano_normal) =inc_counter(sad_sim_17_tushkan_killed:1)%
+
+
+[sr_idle@wait_outside]
+on_info = {=sad_dist_to_path_ge(sad_sim_17_gigant_home:8100)} sr_idle@wait

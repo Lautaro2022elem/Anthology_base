@@ -1,0 +1,72 @@
+; --------------------------------------------------------------------------------------------- 1
+[logic@job_1]
+active = walker@1
+prior = 115
+
+[walker@1]
+path_walk = vasyas_gvard_2_walk
+path_look = vasyas_gvard_2_look
+on_info = {=is_rain} walker@11
+
+[walker@11]
+path_walk = vasyas_gvard_1_walk
+path_look = vasyas_gvard_1_look
+on_info = {!is_rain} walker@1
+
+; --------------------------------------------------------------------------------------------- 2
+[logic@job_2]
+active = animpoint@2
+prior = 113
+
+[animpoint@2]
+cover_name = sad_sim_2_animpoint_2
+on_info = {=is_rain} remark@20 animpoint@21
+
+[remark@20]
+on_info = {~50} animpoint@21, walker@22
+
+[animpoint@21]
+cover_name = sad_sim_2_animp1
+on_info = {!is_rain} animpoint@2
+
+[walker@22]
+path_walk = surge_3_walk
+path_look = surge_3_look
+on_info = {!is_rain} animpoint@2
+
+; --------------------------------------------------------------------------------------------- 3
+[logic@job_3]
+active = animpoint@3
+prior = 112
+
+[animpoint@3]
+cover_name = sad_sim_2_animpoint_1
+on_info = {=is_rain} remark@30
+
+[remark@30]
+on_info = {~50} walker@31, walker@32
+
+[walker@31]
+path_walk = vasyas_gvard_4_walk
+path_look = vasyas_gvard_4_look
+on_info = {!is_rain} animpoint@3
+
+[walker@32]
+path_walk = surge_2_walk
+path_look = surge_2_look
+on_info = {!is_rain} animpoint@3
+
+; --------------------------------------------------------------------------------------------- 4
+[logic@job_4]
+active = walker@4
+prior = 110
+
+[walker@4]
+path_walk = walker_1_walk
+path_look = walker_1_look
+on_info = {=is_rain} walker@41
+
+[walker@41]
+path_walk = surge_4_walk
+path_look = surge_4_look
+on_info = {!is_rain} walker@4

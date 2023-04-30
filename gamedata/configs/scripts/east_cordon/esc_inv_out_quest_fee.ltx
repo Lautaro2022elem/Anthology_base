@@ -1,0 +1,13 @@
+[logic]
+active = ph_idle@close
+
+[ph_idle@close]
+nonscript_usable = false
+tips = jup_b202_treasures_closed
+on_info = {+esc_colonel_kolyazin_quest_fee_out_habar} ph_idle@open
+
+[ph_idle@open]
+nonscript_usable = true
+tips = actor_inventory_box_use
+on_use = {+esc_colonel_kolyazin_quest_fee_out_habar} %+quest_fee_out_habar_box_used%
+on_info = {+eac_quest_fee_complite} ph_idle@close %-esc_colonel_kolyazin_quest_fee_out_habar%

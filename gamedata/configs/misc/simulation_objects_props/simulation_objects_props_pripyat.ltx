@@ -1,0 +1,132 @@
+; ---------------------------  Pripyat  ------------------------------------
+; --------------------------------------------------------------------------
+
+[pri_a15]:default_territory
+sim_avail = {+pri_a15_cutscene_end} true, {+cop_start} false, true
+
+[pri_a16]:default_base
+sim_avail = {+pri_a28_actor_in_zone_stay} true, {+cop_start} false, true
+stalker		            = 1 
+csky		            = 1 
+
+[pri_a17]:default_territory
+sim_avail = {+pri_a17_actor_has_gauss_rifle} true, {+cop_start} false, true
+
+[pri_a18_smart_terrain]:default_base
+sim_avail = {+pri_a18_reinf_go_base} true, {+cop_start} false, true
+surge                   = 1
+monolith                = 0
+
+[pri_a21_smart_terrain]:default_territory
+sim_avail = {-pri_a21_sentry_task_done +zat_a23_actor_has_gauss_rifle_documentation +pri_a20_talk_with_colonel_complete} false, true
+surge                   = 1
+
+[pri_a22_smart_terrain]:default_territory
+sim_avail = {+pri_a22_scene_done} true, {-pri_a22_scene_done +pri_a18_found_antenna +pri_a21_sentry_task_done +pri_a19_lab_x8_investigated} false, true
+
+[pri_a25_smart_terrain]:default_territory
+sim_avail = {+pri_a25_rfi_source_eliminated} true, {+cop_start} false, true
+
+[pri_b301]:default_resource
+sim_avail = {+pri_b301_zulus_dead} true, {+pri_b301_save_zulus_complete} true, {+cop_start} false, true
+surge                   = 1
+
+[pri_b302]:default_resource
+sim_avail 	            = true
+
+[pri_b303]:default_resource
+sim_avail = {+pri_b303_door_is_open} true, {+cop_start} false, true
+surge                   = 1
+
+[pri_b304]:default_territory
+sim_avail = {+pri_b304_actor_take_toolkit} true, {+cop_start} false, true
+surge                   = 1
+
+[pri_b306]:default_resource
+sim_avail = {+pri_b306_task_end} true, {+cop_start} false, true
+surge                   = 1
+
+[pri_b307]:default_resource
+sim_avail 	            = true
+
+[pri_b35_mercs]:default_territory
+sim_avail = {-pri_b35_task_end +pri_b35_task_running} false, true
+surge                   = 1
+
+[pri_b36_smart_terrain]:default_territory
+sim_avail = {+pri_b36_master_dead} true, {+cop_start} false, true
+surge 		            = 1
+zombied 	            = 1
+monolith	            = 1 
+
+[pri_sim_1]:default_lair
+sim_avail 	            = true
+surge                   = 1
+
+[pri_sim_2]:default_lair
+sim_avail 	            = true
+
+[pri_sim_3]:default_lair
+sim_avail 	            = true
+
+[pri_sim_4]:default_lair
+sim_avail 	            = true
+
+[pri_sim_5]:default_lair
+sim_avail 	            = true
+
+[pri_sim_6]:default_lair
+sim_avail 	            = true
+
+[pri_sim_7]:default_lair
+sim_avail 	            = true
+
+[pri_sim_8]:default_lair
+sim_avail 	            = true
+
+[pri_sim_9]:default_lair
+sim_avail 	            = true
+
+[pri_sim_10]:default_lair
+sim_avail 	            = true
+
+[pri_sim_11]:default_lair
+sim_avail 	            = true
+
+[pri_sim_12]:default_lair
+sim_avail 	            = true
+
+[pri_b35_military]:default_territory
+sim_avail = {-pri_b35_task_end +pri_b35_task_running} false, true
+surge                   = 1
+
+[pri_b305_dogs]:default_territory
+sim_avail               = false
+
+[pri_b304_monsters_smart_terrain]:default_territory
+sim_avail 	            = true
+
+[pri_a20]:default_territory
+sim_avail 	            = true
+
+[pri_a28_heli]:default_territory
+sim_avail 	            = true
+
+[pri_a28_base]:default_territory
+sim_avail 	            = true
+
+[pri_a28_shop]:default_territory
+sim_avail 	            = true
+
+[pri_a28_arch]:default_territory
+sim_avail 	            = true
+
+[pri_a28_school]:default_territory
+sim_avail 	            = true
+
+[pri_a28_evac]:default_territory
+sim_avail 	            = true
+
+;lab x8 building, bugged and overlapping jobs, do not use
+[kbo_terrain]:default_territory
+sim_avail 	            = false

@@ -1,0 +1,286 @@
+; ------------------------------------------------------------------------------------------------------------------------ Defaults
+[walker@def]
+gather_items_enabled = false
+help_wounded_enabled = false
+corpse_detection_enabled = false
+meet = no_meet
+
+[walker@def_cs]:walker@def
+invulnerable = true
+combat_ignore_cond = true
+wounded = wounded
+
+[wounded]
+hp_state 		= 0|wounded_heavy@help_heavy
+hp_state_see 	= 0|wounded_heavy@help_heavy
+hp_victim 		= 0|nil
+hp_fight 		= 0|false
+hp_cover		= 0|false
+
+[wounded@2]
+hp_state 		= 75|wounded_heavy@help_heavy
+hp_state_see 	= 75|wounded_heavy@help_heavy
+hp_victim 		= 75|nil
+hp_fight 		= 75|false
+hp_cover		= 75|false
+
+[wounded@3]
+hp_state 		= 40|wounded_heavy@help_heavy
+hp_state_see 	= 40|wounded_heavy@help_heavy
+hp_victim 		= 40|nil
+hp_fight 		= 40|false
+hp_cover		= 40|false
+
+[wounded@4]
+hp_state 		= 25|wounded_heavy@help_heavy
+hp_state_see 	= 25|wounded_heavy@help_heavy
+hp_victim 		= 25|nil
+hp_fight 		= 25|false
+hp_cover		= 25|false
+
+[death@vasya]
+on_info = %+sad_vasya_dead%
+
+[hit@vasya]
+;on_info = %=kill_npc%
+
+[hit]
+on_info = %+sad_vasya_start_fight%
+
+[remark@badit_fight]
+
+; ------------------------------------------------------------------------------------------------------------------------ Вася "Почта"
+[logic@sad_sim_2_stalker_vasya]
+active = animpoint@victim
+suitable = {=check_npc_name(sad_sim_2_stalker_vasya)} true
+post_combat_time = 0, 0
+on_death = death@vasya
+on_hit = hit@vasya
+prior = 200
+
+[animpoint@victim]:walker@def
+cover_name = sad_sim_2_vasya_victim
+avail_animations = prisoner
+use_camp = false
+combat_ignore_cond = true
+wounded = wounded
+on_info = {+sad_sim_2_vasya_talking} %-sad_sim_2_vasya_talking =play_sound(vasya_no_money)%
+on_info2 = {+sad_ban_bandits_fight} %+sad_vasya_dead =kill_npc%, {+sad_vasya_start_fight} remark@vasya_fight, {+sad_sim_2_banditosy_dead} animpoint@vasya
+
+[remark@vasya_fight]
+help_wounded_enabled = false
+corpse_detection_enabled = false
+on_info = {+sad_sim_2_banditosy_dead} animpoint@vasya
+on_info2 = {=dist_to_actor_ge(110)} %+sad_vasya_dead =kill_npc%
+wounded = wounded
+
+[animpoint@vasya]
+corpse_detection_enabled = false
+cover_name = sad_sim_2_animp_vasya
+wounded = wounded
+meet = meet@vasya
+
+[meet@vasya]
+close_distance  = 2
+close_victim    = actor
+close_anim 		= wait_na
+far_anim 		= nil
+far_victim 		= nil
+far_distance 	= 0
+far_snd 		= nil
+abuse 			= false
+meet_on_talking = false
+use 			= {=actor_enemy} false, true
+trade_enable	= true
+
+; ------------------------------------------------------------------------------------------------------------------------ Bandit 1
+[logic@bandit_1]
+active = walker@1
+suitable = {=check_npc_name(sad_sim_2_bandos)} true
+on_hit = hit
+prior = 250
+
+[walker@1]:walker@def
+path_walk = bandos_1_walk
+path_look = bandos_1_look
+combat_ignore_cond = true
+wounded = wounded@2
+on_info = {+sad_ban_bandits_fight} animpoint@11, {+sad_vasya_start_fight} remark@1_kill, {=actor_enemy} remark@1_kill %+sad_vasya_start_fight%
+on_info2 = {+sad_vasya_dead} animpoint@11, {+sad_sim_2_cutscene_start} remark@cs_10
+
+[remark@cs_10]:walker@def_cs
+anim = threat
+target = story | sad_sim_2_stalker_vasya
+on_info = {+sad_sim_2_cutscene_end} remark@13, {+sad_sim_2_baditos_talking} remark@cs_11 %=play_sound(vasya_give_money)%
+
+[remark@cs_11]:walker@def_cs
+anim = threat
+target = story | sad_sim_2_stalker_vasya
+on_timer = 2500 | remark@cs_12 %+sad_sim_2_vasya_talking%
+
+[remark@cs_12]:walker@def_cs
+anim = threat
+target = story | sad_sim_2_stalker_vasya
+on_info = {+sad_sim_2_cutscene_end} remark@13
+
+[remark@13]:walker@def
+anim = threat
+target = story | sad_sim_2_stalker_vasya
+combat_ignore_cond = true
+wounded = wounded@2
+;on_info = {=dist_to_actor_le(4)} remark@1_kill %+sad_vasya_start_fight%, {+sad_vasya_start_fight} remark@1_kill, {=actor_enemy} remark@1_kill %+sad_vasya_start_fight%
+on_info = {=dist_to_actor_le(4)} animpoint@11 %+sad_vasya_start_fight%, {+sad_vasya_start_fight} animpoint@11, {=actor_enemy} animpoint@11 %+sad_vasya_start_fight%
+on_game_timer = 240 | remark@1_kill
+
+[remark@1_kill]:walker@def
+wounded = wounded@2
+combat_ignore_cond = true
+anim = threat_fire
+target = story | sad_sim_2_stalker_vasya
+on_timer = 5000 | animpoint@11
+on_info = {+sad_vasya_dead} animpoint@11
+
+[animpoint@11]:walker@def
+wounded = wounded@2
+cover_name = sad_sim_2_animp1
+on_info = {-sad_vasya_start_fight =dist_to_actor_le(4)} %+sad_vasya_start_fight =hit_npc_from_actor%
+on_info2 = {-sad_vasya_dead =dist_to_actor_ge(20)} remark@1_kill
+on_game_timer = 240 | {-sad_vasya_dead} remark@1_kill
+
+; ------------------------------------------------------------------------------------------------------------------------ Bandit 2
+[logic@bandit_2]
+active = walker@2
+suitable = {=target_squad_name(sad_sim_2_banditosy)} true
+on_hit = hit
+prior = 200
+
+[walker@2]:walker@def
+path_walk = bandos_2_walk
+path_look = bandos_1_look
+combat_ignore_cond = true
+wounded = wounded@3
+on_info = {+sad_ban_bandits_fight} walker@22, {+sad_vasya_start_fight} remark@2_kill, {=actor_enemy} remark@2_kill %+sad_vasya_start_fight%
+on_info2 = {+sad_vasya_dead} walker@22, {+sad_sim_2_cutscene_start} remark@cs_20
+
+[remark@cs_20]:walker@def_cs
+anim = threat
+target = story | sad_sim_2_stalker_vasya
+on_info = {+sad_sim_2_cutscene_end} remark@21
+
+[remark@21]:walker@def
+anim = threat
+target = story | sad_sim_2_stalker_vasya
+combat_ignore_cond = true
+wounded = wounded@3
+on_info = {=dist_to_actor_le(4)} walker@22 %+sad_vasya_start_fight =hit_npc_from_actor%, {+sad_vasya_start_fight} walker@22 %=hit_npc_from_actor%, {=actor_enemy} walker@22 %+sad_vasya_start_fight =hit_npc_from_actor%
+on_game_timer2 = 240 | remark@2_kill
+on_game_timer = 120 | {-sad_vasya_ne_vrubaesh} %+sad_vasya_ne_vrubaesh =play_sound(vasya_give_money2)%
+
+[remark@2_kill]:walker@def
+wounded = wounded@3
+combat_ignore_cond = true
+anim = threat_fire
+target = story | sad_sim_2_stalker_vasya
+on_timer = 3000 | walker@22
+on_info = {+sad_vasya_dead} walker@22
+
+[walker@22]:walker@def
+path_walk = vasyas_gvard_4_walk
+path_look = vasyas_gvard_4_look
+wounded = wounded@3
+on_info = {-sad_vasya_start_fight =dist_to_actor_le(5)} %+sad_vasya_start_fight%
+on_info2 = {-sad_vasya_dead =dist_to_actor_ge(25)} remark@2_kill
+on_game_timer = 240 | {-sad_vasya_dead} remark@2_kill
+
+; ------------------------------------------------------------------------------------------------------------------------ Bandit 3
+[logic@bandit_3]
+active = walker@3
+suitable = {=target_squad_name(sad_sim_2_banditosy)} true
+on_hit = hit
+prior = 190
+
+[walker@3]:walker@def
+path_walk = vasyas_gvard_1_walk
+path_look = vasyas_gvard_1_look
+combat_ignore_cond = {-sad_vasya_start_fight} true
+wounded = wounded@4
+on_info = {+sad_vasya_dead} walker@32, {+sad_ban_bandits_fight} walker@32, {+sad_vasya_start_fight} walker@32, {=actor_enemy} walker@32 %+sad_vasya_start_fight%
+on_actor_dist_le_nvis = 11 | {-sad_vasya_first_warn} remark@311 %+sad_vasya_first_warn =play_sound(vasya_warning_1)%, {-sad_vasya_second_warn_2} remark@311 %+sad_vasya_second_warn_2 =play_sound(vasya_warning_2)%, walker@32 %+sad_vasya_start_fight%
+
+[remark@311]:walker@def
+combat_ignore_cond = {-sad_vasya_start_fight} true
+anim = threat
+target = story | actor
+on_info = {+sad_vasya_start_fight} walker@32
+on_timer = 5000 | walker@32 %+sad_vasya_start_fight =hit_npc_from_actor%
+on_actor_dist_ge_nvis = 12 | walker@3
+wounded = wounded@4
+
+[walker@32]:walker@def
+path_walk = vasyas_gvard_1_walk
+path_look = vasyas_gvard_1_look
+wounded = wounded@4
+
+; ------------------------------------------------------------------------------------------------------------------------ Bandit 4
+[logic@bandit_4]
+active = walker@4
+suitable = {=target_squad_name(sad_sim_2_banditosy)} true
+on_hit = hit
+prior = 190
+
+[walker@4]:walker@def
+path_walk = walker_1_walk
+path_look = walker_1_look
+combat_ignore_cond = {-sad_vasya_start_fight} true
+wounded = wounded@4
+on_info = {+sad_ban_bandits_fight} walker@42, {+sad_vasya_start_fight} walker@42 %=play_sound(vasya_warning_3)%, {=actor_enemy} walker@42 %+sad_vasya_start_fight =play_sound(vasya_warning_3)%
+on_actor_dist_le_nvis = 9 | remark@41
+on_info2 = {=is_rain} walker@40
+
+[walker@40]:walker@def
+path_walk = vasyas_gvard_5_walk
+path_look = vasyas_gvard_3_look
+combat_ignore_cond = {-sad_vasya_start_fight} true
+wounded = wounded@4
+on_info = {+sad_ban_bandits_fight} walker@42, {+sad_vasya_start_fight} walker@42 %=play_sound(vasya_warning_3)%, {=actor_enemy} walker@42 %+sad_vasya_start_fight =play_sound(vasya_warning_3)%
+on_info2 = {!is_rain} walker@4
+
+[remark@41]:walker@def
+anim = threat
+target = story | actor
+combat_ignore_cond = {-sad_vasya_start_fight} true
+on_info = {+sad_vasya_start_fight} walker@42 %=play_sound(vasya_warning_3)%
+on_timer = 5000 | walker@42 %+sad_vasya_start_fight%
+on_actor_dist_ge_nvis = 10 | walker@4
+wounded = wounded@4
+
+[walker@42]:walker@def
+path_walk = walker_1_walk
+path_look = walker_1_look
+wounded = wounded@4
+
+; ------------------------------------------------------------------------------------------------------------------------ Bandit 5
+[logic@bandit_5]
+active = animpoint@5
+suitable = {=target_squad_name(sad_sim_2_banditosy)} true
+on_hit = hit
+prior = 190
+
+[animpoint@5]:walker@def
+cover_name = sad_sim_2_animpoint_1
+combat_ignore_cond = {-sad_vasya_start_fight} true
+wounded = wounded@4
+on_info = {+sad_vasya_start_fight} animpoint@51, {=actor_enemy} animpoint@51 %+sad_vasya_start_fight%
+on_info2 = {=is_rain} walker@500
+
+[walker@500]:walker@def
+path_walk = vasyas_gvard_3_walk
+path_look = vasyas_gvard_3_look
+combat_ignore_cond = {-sad_vasya_start_fight} true
+wounded = wounded@4
+on_info = {+sad_vasya_start_fight} animpoint@51, {=actor_enemy} animpoint@51 %+sad_vasya_start_fight%
+on_info2 = {!is_rain} animpoint@5
+
+[animpoint@51]:walker@def
+cover_name = sad_sim_2_animpoint_1
+wounded = wounded@4

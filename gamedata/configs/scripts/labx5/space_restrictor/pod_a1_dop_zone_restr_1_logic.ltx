@@ -1,0 +1,8 @@
+[logic] 
+active = sr_idle@start 
+
+[sr_idle@start]
+on_info = {+spectrum_project_start =actor_in_zone(pod_a1_dop_zone_restr_1) +labx5_a2_monolith_default_all_death -labx5_a1_dop_zone_restr_effects_1} sr_idle@nil %+labx5_a1_dop_zone_restr_effects_1%
+on_info2 = {+spectrum_project_start =actor_in_zone(pod_a1_dop_zone_restr_1) -labx5_a2_monolith_default_all_death -labx5_a1_dop_zone_restr_effects_2} sr_idle@nil %=give_task(geonezis_labx5_quest_come_to_garbage_2) +labx5_a1_dop_zone_restr_effects_2%
+
+[sr_idle@nil] 

@@ -1,0 +1,7 @@
+[logic]
+active = sr_idle
+
+[sr_idle]
+;{+bar_deactivate_radar_done} 
+on_actor_inside = {+bar_deactivate_radar_done =actor_true_community(stalker:freedom:ecolog:csky:dolg)} nil %=rad_barman_spam =play_snd(characters_voice\scenario\radar\rad_barman_message)%
+

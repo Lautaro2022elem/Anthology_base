@@ -1,0 +1,13 @@
+[logic]
+active = move@killer_walk
+on_death = death
+
+[death]
+on_info = %+labx14_a2_sp_killer_2_death%
+
+[move@killer_walk]
+move_dest_number = 5176
+move_look_vertex = 5308
+move_state_when_center = hide
+move_state_when_move = assault
+on_info                = {!actor_enemy +gar_a2_gg_eat_lekarstvo_items} %=actor_enemy%

@@ -1,0 +1,7 @@
+[logic]
+active = sr_idle@nil
+
+[sr_idle@check_list]
+on_info = {!actor_in_zone(lake_lager_stalkers_id)} sr_idle@nil %=dl_message%
+
+[sr_idle@nil]

@@ -1,0 +1,30 @@
+[logic@bar_ranen_1]
+suitable = {=check_npc_name(bar_ranen_1)} true
+active = animpoint@animpoint_stalker_sleep
+prior = 200
+
+[animpoint@animpoint_stalker_sleep]
+cover_name = bar_stalker_sl_2_barney
+avail_animations = zat_b106_wounded_idle
+meet = no_meet
+;on_info = {+zat_b106_hunt_finish -zat_b106_gonta_dead} animpoint@base, {+zat_b106_hunt_finish +zat_b106_gonta_dead} animpoint@base_no_meet
+combat_ignore_cond = true
+combat_ignore_keep_when_attacked = true
+wounded = wounded
+danger = danger
+reach_distance = 50
+invulnerable = true
+gather_items_enabled = false
+help_wounded_enabled = false
+corpse_detection_enabled = false
+
+
+[danger]
+ignore_distance = 0
+
+[wounded]
+hp_state = 0|wounded_heavy@help_heavy
+hp_state_see = 0|wounded_heavy@help_heavy
+hp_victim = 0|nil
+hp_fight = 0|false
+hp_cover = 0|false

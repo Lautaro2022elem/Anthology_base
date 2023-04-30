@@ -1,0 +1,74 @@
+[logic@gar_dolg_blokpost_commander]
+suitable = {=check_npc_name(gar_dolg_blokpost_commander)} true
+prior = 200
+active = animpoint@gar_dolg_blokpost_commander
+level_spot = quest_npc
+can_select_weapon = false
+
+[animpoint@gar_dolg_blokpost_commander]
+cover_name = main_dolg_soldier_sit
+use_camp = false
+meet = meet@leader
+combat_ignore_cond = {=actor_enemy =check_enemy_name(actor)} false, true
+combat_ignore_keep_when_attacked = true
+invulnerable = {!actor_enemy} true, false
+reach_distance = 10
+gather_items_enabled = false
+help_wounded_enabled = false
+corpse_detection_enabled = false
+enemy_ignore_cond = {=actor_enemy =check_enemy_name(actor)} false, true
+
+[meet@leader]
+close_snd_hello = nil
+close_snd_bye = nil
+close_anim 		= nil
+close_victim 	= nil
+far_anim 		= 
+far_victim 		= nil
+close_distance  = 0
+far_distance 	= 0
+close_snd_distance = 3
+use = {=actor_enemy} false, true
+meet_on_talking = false
+allow_break = false
+
+;camp
+[logic@gar_smart_terrain_5_2_animpoint_kamp1]
+active = animpoint@gar_smart_terrain_5_2_animpoint_kamp1
+suitable = {!surge_started} true
+prior = 45
+
+[animpoint@gar_smart_terrain_5_2_animpoint_kamp1]
+cover_name = gar_smart_terrain_5_2_animpoint_kamp1
+use_camp = true
+turn_on_campfire = true
+
+[logic@gar_smart_terrain_5_2_animpoint_kamp2]
+active = animpoint@gar_smart_terrain_5_2_animpoint_kamp2
+suitable = {!surge_started} true
+prior = 45
+
+[animpoint@gar_smart_terrain_5_2_animpoint_kamp2]
+cover_name = gar_smart_terrain_5_2_animpoint_kamp2
+use_camp = true
+turn_on_campfire = true
+
+[logic@gar_smart_terrain_5_2_animpoint_kamp3]
+active = animpoint@gar_smart_terrain_5_2_animpoint_kamp3
+suitable = {!surge_started} true
+prior = 45
+
+[animpoint@gar_smart_terrain_5_2_animpoint_kamp3]
+cover_name = gar_smart_terrain_5_2_animpoint_kamp3
+use_camp = true
+turn_on_campfire = true
+
+[logic@gar_smart_terrain_5_2_animpoint_kamp4]
+active = animpoint@gar_smart_terrain_5_2_animpoint_kamp4
+suitable = {!surge_started} true
+prior = 45
+
+[animpoint@gar_smart_terrain_5_2_animpoint_kamp4]
+cover_name = gar_smart_terrain_5_2_animpoint_kamp4
+use_camp = true
+turn_on_campfire = true

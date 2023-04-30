@@ -1,0 +1,37 @@
+[logic@esc_squad_village_barman_bar]
+active = animpoint
+level_spot = trader
+suitable = {=check_npc_name(esc_barman_patogen_pa)} true, false
+trade = items\trade\trade_generic_barman.ltx
+can_select_weapon = false
+prior = 300
+
+[animpoint]
+cover_name = esc_bar_barman_animpoint
+avail_animations = jup_b41_novikov_stand
+gather_items_enabled = false
+corpse_detection_enabled = false
+combat_ignore_keep_when_attacked = true 
+combat_ignore_cond = true
+invulnerable = true
+meet = meet@meet_start
+use_camp = false
+
+;------------------------------------------
+[meet@quest]
+abuse           = false
+close_anim 		= nil
+far_anim 		= nil
+far_victim 		= nil
+close_distance  = 0
+far_distance 	= 0
+close_victim = actor
+allow_break = false
+trade_enable = true
+
+[meet@meet_start]:meet@quest
+close_snd_hello = esc_pa_shaman_barman_meet
+close_snd_bye = esc_pa_shaman_barman_meet_bye
+close_snd_distance = 3
+use = {=actor_enemy} false, true
+meet_dialog = esc_barman_chizhik_start_dialog

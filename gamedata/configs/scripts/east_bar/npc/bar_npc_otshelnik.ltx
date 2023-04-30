@@ -1,0 +1,67 @@
+[logic]
+active = walker
+on_death = death
+
+[walker]
+path_walk = bar_npc_otshelnik_walk
+path_look = bar_npc_otshelnik_look
+gather_items_enabled = false
+corpse_detection_enabled = false
+combat_ignore_keep_when_attacked = true 
+combat_ignore_cond = true
+invulnerable = true
+use_camp = false
+meet = meet
+on_info = {+bar_npc_otshelnik_dialog_start} walker@wait %=play_sound(bar_crazy_sound_1)%
+
+[walker@wait]
+path_walk = bar_npc_otshelnik_walk_2
+def_state_moving = run
+gather_items_enabled = false
+corpse_detection_enabled = false
+combat_ignore_keep_when_attacked = true 
+combat_ignore_cond = true
+invulnerable = true
+use_camp = false
+meet = no_meet
+on_signal = bar_npc_otshelnik_walk_2_nameste| {=dist_to_actor_le(12)} remark@enemy %=play_sound(bar_crazy_sound_2) +bar_npc_otshelnik_dialog_fair =actor_enemy%
+
+
+[remark]
+anim = wait_na
+target = story | bar_sr_house_in_the_swamp_art
+combat_ignore_cond = true 
+combat_ignore_keep_when_attacked = true 
+invulnerable = true
+meet = no_meet
+on_info = {=dist_to_actor_le(12)} remark@enemy %=play_sound(bar_crazy_sound_2) +bar_npc_otshelnik_dialog_fair =actor_enemy%
+
+
+[remark@enemy]
+anim = threat_fire
+combat_ignore_cond = true 
+combat_ignore_keep_when_attacked = true 
+no_retreat = true
+target = story | actor
+meet = no_meet
+on_game_timer = 15 | %=play_sound(bar_crazy_sound_3)%
+on_game_timer = 25 | %=play_sound(bar_crazy_sound_1)%
+on_game_timer = 40 | %=play_sound(bar_crazy_sound_2)%
+
+
+
+[meet]
+close_snd_hello = bar_crazy_sound_4
+close_snd_bye 	= bar_crazy_sound_1
+close_anim 	= nil
+close_victim 	= nil
+far_anim 	= nil
+far_victim 	= nil
+close_distance  = 0
+far_distance 	= 0
+close_snd_distance = 5
+use = {=actor_enemy} false, true
+allow_break 	= false
+
+[death]
+on_info = %+bar_house_in_the_swamp_death%

@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="windows-1251" ?>
+<string_table>
+	<string id="st_wiz_start_game_text_lanser_0">
+		<text>LanSeR PRESENT: «The Forgotten Squad» Mod.</text>
+	</string>
+	<string id="path_one_name">
+		<text>Глава Первая: «Обман»</text>
+	</string>
+	<string id="path_one_location">
+		<text>Место событий: Окрестности Бывш. НИИ</text>
+	</string>
+	<string id="path_one_descr">
+		<text>Основное задание: Найти информацию о группе</text>
+	</string>
+	<string id="path_two_name">
+		<text>Глава Вторая: «За всё нужно платить»</text>
+	</string>
+	<string id="path_two_location">
+		<text>Место событий: Мёртвое Озеро</text>
+	</string>
+	<string id="path_two_descr">
+		<text>Основное задание: Найти Бизона</text>
+	</string>
+
+</string_table>

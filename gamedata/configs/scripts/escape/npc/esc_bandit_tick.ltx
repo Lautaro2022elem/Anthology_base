@@ -1,0 +1,32 @@
+[logic@esc_squad_baza_bandits_tick]
+active = walker
+suitable = {=check_npc_name(esc_bandit_tick)} true, false
+trade = misc\trade\trade_jup_b202_stalker_barmen.ltx
+can_select_weapon = false
+level_spot = trader
+prior = 300
+
+[walker]
+path_walk = bandit_tick_walk
+path_look = bandit_tick_look
+gather_items_enabled = false
+corpse_detection_enabled = false
+combat_ignore_keep_when_attacked = true 
+combat_ignore_cond = true
+invulnerable = true
+meet = meet
+use_camp = false
+on_info = {+esc_remove_baza_bandits} %=release_npc%
+
+[meet]
+close_snd_hello = esc_bandit_trader_meet
+;close_snd_bye 	= esc_bandit_tick_meet_bye
+close_anim 	= nil
+close_victim 	= nil
+far_anim 	= nil
+far_victim 	= nil
+close_distance  = 0
+far_distance 	= 0
+close_snd_distance = 3
+use = {=actor_enemy} false, true
+allow_break 	= false

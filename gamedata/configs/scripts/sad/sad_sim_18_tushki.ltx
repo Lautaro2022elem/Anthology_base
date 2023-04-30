@@ -1,0 +1,60 @@
+[logic@def]
+suitable = {=target_squad_name(sad_sim_18_tushkans)} true
+monster_job = true
+prior = 200
+
+[logic@tu_1]:logic@def
+active = mob_walker@1
+
+[logic@tu_2]:logic@def
+active = mob_walker@2
+
+[logic@tu_3]:logic@def
+active = mob_walker@3
+
+[logic@tu_4]:logic@def
+active = mob_walker@4
+
+[logic@tu_5]:logic@def
+active = mob_walker@5
+
+[logic@tu_6]:logic@def
+active = mob_walker@6
+
+[mob_walker@1]
+path_walk = tusha_start_1
+on_info = mob_home@1 %=teleport_npc(sad_sim_18_tusha_start_1)%
+
+[mob_walker@2]
+path_walk = tusha_start_2
+on_info = mob_home@1 %=teleport_npc(sad_sim_18_tusha_start_2)%
+
+[mob_walker@3]
+path_walk = tusha_start_3
+on_info = mob_home@1 %=teleport_npc(sad_sim_18_tusha_start_3)%
+
+[mob_walker@4]
+path_walk = tusha_start_4
+on_info = mob_home@1 %=teleport_npc(sad_sim_18_tusha_start_4)%
+
+[mob_walker@5]
+path_walk = tusha_start_5
+on_info = mob_home@1 %=teleport_npc(sad_sim_18_tusha_start_5)%
+
+[mob_walker@6]
+path_walk = tusha_start_6
+on_info = mob_home@1 %=teleport_npc(sad_sim_18_tusha_start_6)%
+
+
+[mob_home@1]
+path_home = tushki_home
+aggressive = true
+home_min_radius = 5
+home_max_radius = 15
+on_info = {=sad_dist_to_path_ge(sad_corpse_military_spawn:900:0)} mob_home@2
+
+[mob_home@2]
+path_home = tusim_dom_1
+aggressive = true
+home_min_radius = 5
+home_max_radius = 15

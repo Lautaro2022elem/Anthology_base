@@ -1,0 +1,119 @@
+[logic@bar_arena_friend_1]
+active = animpoint@animpoint_1
+suitable = {=check_npc_name(bar_npc_friend_1_arena)} true, false
+prior = 50
+
+[animpoint@animpoint_1]
+cover_name = bar_smart_friend_base_animpoint_1
+avail_animations = animpoint_sit_normal
+gather_items_enabled = false
+corpse_detection_enabled = false
+combat_ignore_keep_when_attacked = true 
+combat_ignore_cond = true
+use_camp = false
+invulnerable = true
+meet = meet
+on_info  = {+bar_arena_friend_on -bar_arena_friend_replace_complit =dist_to_actor_ge(20)} %+bar_arena_friend_replace =remove_npc(bar_npc_friend_1_arena)%
+
+;================================================
+[logic@bar_arena_friend_2]
+active = animpoint@animpoint_2
+suitable = {=check_npc_name(bar_npc_friend_2_arena)} true, false
+prior = 50
+
+[animpoint@animpoint_2]
+cover_name = bar_smart_friend_base_animpoint_2
+avail_animations = animpoint_sit_high
+gather_items_enabled = false
+corpse_detection_enabled = false
+combat_ignore_keep_when_attacked = true 
+combat_ignore_cond = true
+use_camp = false
+invulnerable = true
+meet = meet
+on_info = {+bar_arena_friend_on -bar_arena_friend_replace_complit =dist_to_actor_ge(20)} %+bar_arena_friend_replace =remove_npc(bar_npc_friend_2_arena)%
+
+;================================================
+[logic@bar_arena_friend_3]
+active = animpoint@animpoint_3
+suitable = {=check_npc_name(bar_npc_friend_3_arena)} true, false
+prior = 50
+
+[animpoint@animpoint_3]
+cover_name = bar_smart_friend_base_animpoint_3
+avail_animations = animpoint_sit_normal
+gather_items_enabled = false
+corpse_detection_enabled = false
+combat_ignore_keep_when_attacked = true 
+combat_ignore_cond = true
+use_camp = false
+invulnerable = true
+meet = meet
+on_info = {+bar_arena_friend_on -bar_arena_friend_replace_complit =dist_to_actor_ge(20)} %+bar_arena_friend_replace =remove_npc(bar_npc_friend_3_arena)%
+
+;================================================
+[logic@bar_arena_body_1]
+active = animpoint@animpoint_4
+suitable = {=check_npc_name(bar_npc_bodyguard_1_arena)} true, false
+prior = 50
+
+[animpoint@animpoint_4]
+cover_name = bar_smart_friend_base_animpoint_4
+avail_animations = animpoint_sit_low
+gather_items_enabled = false
+corpse_detection_enabled = false
+combat_ignore_keep_when_attacked = true 
+combat_ignore_cond = true
+use_camp = false
+invulnerable = true
+meet = meet
+on_info = {+bar_arena_bodyguard_on -bar_arena_bodyguard_replace_complit =dist_to_actor_ge(20)} %+bar_arena_bodyguard_replace =remove_npc(bar_npc_bodyguard_1_arena)%
+
+;================================================
+[logic@bar_arena_body_2]
+active = animpoint@animpoint_5
+suitable = {=check_npc_name(bar_npc_bodyguard_2_arena)} true, false
+prior = 50
+
+[animpoint@animpoint_5]
+cover_name = bar_smart_friend_base_animpoint_5
+avail_animations = animpoint_sit_normal
+gather_items_enabled = false
+corpse_detection_enabled = false
+combat_ignore_keep_when_attacked = true 
+combat_ignore_cond = true
+use_camp = false
+invulnerable = true
+meet = meet
+on_info = {+bar_arena_bodyguard_on -bar_arena_bodyguard_replace_complit =dist_to_actor_ge(20)} %+bar_arena_bodyguard_replace =remove_npc(bar_npc_bodyguard_2_arena)%
+
+;================================================
+[logic@bar_arena_body_3]
+active = animpoint@animpoint_6
+suitable = {=check_npc_name(bar_npc_bodyguard_3_arena)} true, false
+prior = 50
+
+[animpoint@animpoint_6]
+cover_name = bar_smart_friend_base_animpoint_6
+avail_animations = animpoint_stay_wall
+gather_items_enabled = false
+corpse_detection_enabled = false
+combat_ignore_keep_when_attacked = true 
+combat_ignore_cond = true
+use_camp = false
+invulnerable = true
+meet = meet
+on_info = {+bar_arena_bodyguard_on -bar_arena_bodyguard_replace_complit =dist_to_actor_ge(20)} %+bar_arena_bodyguard_replace =remove_npc(bar_npc_bodyguard_3_arena)%
+
+[meet]
+snd_on_use 		= meet_use_no_default
+;close_snd_hello = meet_hello
+;close_distance  = 3
+;close_victim    = actor
+;close_anim = nil
+use = {=actor_enemy} false, {=actor_has_weapon} false, true
+trade_enable	= false
+allow_break 	= false
+
+
+

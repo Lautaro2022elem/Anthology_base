@@ -1,0 +1,49 @@
+[logic]
+active = move@waiting
+
+[move@waiting]
+move_dest_number       = 1032688
+move_look_vertex       = 1026023
+move_state_when_center = hide
+move_state_when_move   = walk
+meet                   = no_meet
+invulnerable           = true
+on_info                = {+topi_zam_variant_quest_talking_3} move@waiting_offline
+
+
+[move@waiting_offline]
+move_dest_number       = 1032688
+move_look_vertex       = 1026023
+move_state_when_center = hide
+move_state_when_move   = walk
+meet                   = no_meet
+invulnerable           = false
+on_info                = {+topi_zam_variant_quest_talking_3 =dist_to_actor_ge(80)} nil %=release_npc%
+
+
+[meet]
+close_anim 		= nil
+close_victim 	= nil
+close_snd_hello = nil
+close_snd_bye 	= nil
+far_anim 		= nil
+far_victim 		= nil
+close_distance  = 0
+far_distance 	= 0
+use = {=actor_enemy} false, true
+allow_break = false
+trade_enable = true
+meet_on_talking = false
+
+[no_meet]
+close_anim 		= nil
+close_victim 	= nil
+far_anim 		= nil
+far_victim 		= nil
+close_distance  = 0
+far_distance 	= 0
+close_snd_distance = 3
+abuse           = true
+use             = false
+allow_break     = true
+meet_on_talking = false

@@ -1,0 +1,11 @@
+[logic]
+active = ph_idle@disable
+
+[ph_idle@disable]
+nonscript_usable = false
+tips = st_search_treasure_sidor_habar_closed
+on_info = {+esc_sidor_habar_open} ph_idle@enable 
+
+[ph_idle@enable]
+nonscript_usable = true
+tips = st_search_treasure_sidor_habar_open

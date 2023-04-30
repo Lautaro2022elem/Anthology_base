@@ -1,0 +1,8 @@
+[logic]
+active = sr_idle
+
+[sr_idle]
+on_info = {+aes_desant_go +aes_desant_go} sr_idle@2
+
+[sr_idle@2]
+on_timer = 300000 | %+aes_actor_road% nil

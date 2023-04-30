@@ -1,0 +1,73 @@
+[logic@default_snork]
+suitable = {=target_squad_name(sad_sim_9_snorki)} true
+on_death = mob_death
+monster_job = true
+;on_combat = mob_combat
+active = mob_walker@first_jump
+prior = 200
+
+[mob_combat]
+out_restr = sad_sim_9_snokr_out_restr
+
+[mob_death]
+on_info = {=killed_by_actor} %=inc_counter(sad_sim_9_actor_mob_kill) =inc_counter(sad_sim_9_mob_killed)%, %=inc_counter(sad_sim_9_mob_killed)%
+
+[logic@mob_jumper_1]:logic@default_snork
+[logic@mob_jumper_2]:logic@default_snork
+[logic@mob_jumper_3]:logic@default_snork
+[logic@mob_jumper_4]:logic@default_snork
+[logic@mob_jumper_5]:logic@default_snork
+[logic@mob_jumper_6]:logic@default_snork
+
+[mob_home@def]
+home_min_radius = 8
+home_max_radius = 15
+combat_ignore_cond = {+sad_noy_ignore_monsters} true, {=check_enemy_name(sad_sim_9_noy)} true
+aggressive = true
+
+[mob_walker@first_jump]
+path_walk = monster_home_1
+combat_ignore_cond = true
+on_info = {=sad_sim_9_mob_jump_check(1)} mob_jump@1, {=sad_sim_9_mob_jump_check(2)} mob_jump@2, {=sad_sim_9_mob_jump_check(3)} mob_jump@3, {=sad_sim_9_mob_jump_check(4)} mob_jump@4, {=sad_sim_9_mob_jump_check(5)} mob_jump@5, {=sad_sim_9_mob_jump_check(6)} mob_jump@6, {=sad_sim_9_mob_jump_check(7)} mob_jump@7, {=sad_sim_9_mob_jump_check(7)} mob_jump@8, mob_home@hom_1
+on_game_timer = 20 | mob_home@hom_1
+
+[mob_home@hom_1]:mob_home@def
+path_home = monster_home_1
+
+; ----------------
+[mob_jump@def]
+combat_ignore_cond = true
+offset = 0,0,0
+on_signal = jumped | mob_home@hom_1 ; mob_walker ; mob_home@hom_2
+
+[mob_jump@1]:mob_jump@def
+path_jump = snork_jump_1
+ph_jump_factor = 1.3
+
+[mob_jump@2]:mob_jump@def
+path_jump = snork_jump_2
+ph_jump_factor = 1.2
+
+[mob_jump@3]:mob_jump@def
+path_jump = snork_jump_3
+ph_jump_factor = 1.2
+
+[mob_jump@4]:mob_jump@def
+path_jump = snork_jump_4
+ph_jump_factor = 1.3
+
+[mob_jump@5]:mob_jump@def
+path_jump = snork_jump_5
+ph_jump_factor = 1.1
+
+[mob_jump@6]:mob_jump@def
+path_jump = snork_jump_6
+ph_jump_factor = 1.1
+
+[mob_jump@7]:mob_jump@def
+path_jump = snork_jump_7
+ph_jump_factor = 1.2
+
+[mob_jump@8]:mob_jump@def
+path_jump = snork_jump_8
+ph_jump_factor = 1.2

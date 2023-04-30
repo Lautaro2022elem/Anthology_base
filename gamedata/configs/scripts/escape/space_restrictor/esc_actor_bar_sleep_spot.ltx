@@ -1,0 +1,10 @@
+[logic]
+active = sr_idle@not_sleep_bed
+
+[sr_idle@not_sleep_bed]
+on_info = {=actor_in_zone(esc_bar_sr_noweap) -esc_bed_in_bar_actor_buy} sr_idle@sleep_bed %+esc_actor_not_sleep_in_bed_bar%
+
+[sr_idle@sleep_bed]
+on_info = {!actor_in_zone(esc_bar_sr_noweap)} sr_idle@not_sleep_bed %-esc_actor_not_sleep_in_bed_bar%
+
+[sr_idle@nil]

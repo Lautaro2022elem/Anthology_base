@@ -1,0 +1,58 @@
+[walker@def]
+gather_items_enabled = false
+help_wounded_enabled = false
+corpse_detection_enabled = false
+on_info9 = {=actor_enemy} remark@arrived_b3a %+sad_maxim_actor_enemy%
+
+; ==========================================================================================================================================================
+[logic@sad_b2_maximilian]
+active = walker@init
+suitable = { =check_npc_name(sad_b2_stalker_maxim) } true
+on_death = death
+on_hit = hit
+on_combat = combat
+post_combat_time = 0, 0
+prior = 200
+
+[walker@init]:walker@def
+path_walk = maxim_walk
+path_look = maxim_look
+on_info = {+sad_maxim_arrive_to_b3a} walker@go_exit %+sad_maxim_leave_b2 =sad_reset_animation%
+on_info3 = {-sad_maxim_actor_enemy =health_le(0.5)} %=restore_health%
+def_state_standing = fold_arms 
+meet = meet
+out_restr = sad_b2_surge_hide
+combat_ignore_cond = {=is_enemy_actor} true, {=enemy_in_zone(sad_b2_surge_hide)} false, true
+
+[walker@go_exit]:walker@def
+path_walk = maxim_out_base_walk
+def_state_moving = run
+on_signal = arrive_start | remark@arrived_b3a %+sad_maxim_switch_b3a%
+meet = no_meet
+
+[walker@enemy]
+path_walk = maxim_enemy_walk
+path_look = maxim_enemy_look
+out_restr = sad_b2_surge_hide
+
+[remark@arrived_b3a]
+
+[death]
+on_info = {=killed_by_actor} %+sad_maxim_actor_enemy +sad_maximilian_dead +sad_actor_kill_maximilian =set_squad_enemy_to_actor(sad_b3a_stalker_ataka_squad)%, %+sad_maximilian_dead%
+
+[hit]
+on_info = {=actor_enemy} %+sad_maxim_actor_enemy%
+
+[combat]
+out_restr = sad_b2_surge_hide
+
+[meet]
+close_snd_hello = nil
+close_snd_bye   = nil
+close_distance  = 2
+close_victim    = actor
+close_anim 		= wait_na
+use 			= {=actor_enemy} false, true
+allow_break 	= false
+trade_enable	= false
+meet_on_talking = false

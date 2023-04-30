@@ -1,0 +1,245 @@
+﻿<?xml version='1.0' encoding="UTF-8"?>
+
+<xml>
+
+	<!-- ПРОФИЛЯ ЛОКАЦИИ "КОРДОН" -->
+	
+<character id="escape_trader">
+<class>Trader</class>
+<specific_character>escape_trader</specific_character>
+</character>
+<character id="esc_wolf">
+<class>esc_wolf</class>
+<specific_character>esc_wolf</specific_character>
+</character>
+<character id="esc_mechanic_furgon">
+<class>esc_mechanic_furgon</class>
+<specific_character>esc_mechanic_furgon</specific_character>
+</character>
+<character id="esc_mechanic_barkas">
+<class>esc_mechanic_barkas</class>
+<specific_character>esc_mechanic_barkas</specific_character>
+</character>
+<character id="esc_trader_kusto">
+<class>esc_trader_kusto</class>
+<specific_character>esc_trader_kusto</specific_character>
+</character>
+<character id="esc_barman_patogen">
+<class>esc_barman_patogen</class>
+<specific_character>esc_barman_patogen</specific_character>
+</character>
+<character id="esc_shaman">
+<class>esc_shaman</class>
+<specific_character>esc_shaman</specific_character>
+</character>
+<character id="esc_risovalshik">
+<class>esc_risovalshik</class>
+<specific_character>esc_risovalshik</specific_character>
+</character>
+<character id="esc_medic_antibiotic">
+<class>esc_medic_antibiotic</class>
+<specific_character>esc_medic_antibiotic</specific_character>
+</character>
+
+<character id="esc_npc_csky_1">
+<class>esc_npc_csky_1</class>
+<specific_character>esc_npc_csky_1</specific_character>
+</character>
+<character id="esc_npc_csky_2">
+<class>esc_npc_csky_2</class>
+<specific_character>esc_npc_csky_2</specific_character>
+</character>
+<character id="esc_npc_csky_3">
+<class>esc_npc_csky_3</class>
+<specific_character>esc_npc_csky_3</specific_character>
+</character>
+<character id="esc_npc_csky_4">
+<class>esc_npc_csky_4</class>
+<specific_character>esc_npc_csky_4</specific_character>
+</character>
+<character id="esc_npc_csky_5">
+<class>esc_npc_csky_5</class>
+<specific_character>esc_npc_csky_5</specific_character>
+</character>
+
+<!-- ПРОФИЛЯ БАНДИТОВ -->
+<character id="esc_bandit_logoped">
+<class>esc_bandit_logoped</class>
+<specific_character>esc_bandit_logoped</specific_character>
+</character>
+<character id="esc_bandit_tick">
+<class>esc_bandit_tick</class>
+<specific_character>esc_bandit_tick</specific_character>
+</character>
+<character id="esc_trepach">
+<class>esc_trepach</class>
+<specific_character>esc_trepach</specific_character>
+</character>
+<character id="esc_dybolom_bandit">
+<class>esc_dybolom_bandit</class>
+<specific_character>esc_dybolom_bandit</specific_character>
+</character>
+<character id="esc_dezertir_bandit">
+<class>esc_dezertir_bandit</class>
+<specific_character>esc_dezertir_bandit</specific_character>
+</character>
+
+<!-- ПРОФИЛЯ ВОЕННЫХ -->
+
+<character id="esc_colonel_kolyazin">
+<class>esc_colonel_kolyazin</class>
+<specific_character>esc_colonel_kolyazin</specific_character>
+</character>
+<character id="esc_army_shmatco">
+<class>esc_army_shmatco</class>
+<specific_character>esc_army_shmatco</specific_character>
+</character>
+<character id="esc_army_kuznecov">
+<class>esc_army_kuznecov</class>
+<specific_character>esc_army_kuznecov</specific_character>
+</character>
+<character id="esc_army_chernenco">
+<class>esc_army_chernenco</class>
+<specific_character>esc_army_chernenco</specific_character>
+</character>
+
+
+
+<!-- ПРОФИЛЯ КВЕСТОВЫХ ПЕРСОНАЖЕЙ -->
+
+<character id="esc_borland_start">
+<class>esc_borland_start</class>
+<specific_character>esc_borland_start</specific_character>
+</character>	
+<character id="esc_borland">
+<class>esc_borland</class>
+<specific_character>esc_borland</specific_character>
+</character>
+<character id="esc_dybolom">
+<class>esc_dybolom</class>
+<specific_character>esc_dybolom</specific_character>
+</character>
+<character id="esc_klin">
+<class>esc_klin</class>
+<specific_character>esc_klin</specific_character>
+</character>
+<character id="esc_npc_wood_goblin">
+<class>esc_npc_wood_goblin</class>
+<specific_character>esc_npc_wood_goblin</specific_character>
+</character>
+<character id="esc_npc_sour">
+<class>esc_npc_sour</class>
+<specific_character>esc_npc_sour</specific_character>
+</character>
+<character id="esc_npc_garlic">
+<class>esc_npc_garlic</class>
+<specific_character>esc_npc_garlic</specific_character>
+</character>
+<character id="esc_npc_pate">
+<class>esc_npc_pate</class>
+<specific_character>esc_npc_pate</specific_character>
+</character>
+<character id="esc_quest_sb_tryp">
+<class>esc_quest_sb_tryp</class>
+<specific_character>esc_quest_sb_tryp</specific_character>
+</character>
+<character id="esc_merc_bear">
+<class>esc_merc_bear</class>
+<specific_character>esc_merc_bear</specific_character>
+</character>
+<character id="esc_bandit_shmiga">
+<class>esc_bandit_shmiga</class>
+<specific_character>esc_bandit_shmiga</specific_character>
+</character>
+<character id="esc_borland_quest">
+<class>esc_borland_quest</class>
+<specific_character>esc_borland_quest</specific_character>
+</character>
+<character id="esc_npc_shvabroid">
+<class>esc_npc_shvabroid</class>
+<specific_character>esc_npc_shvabroid</specific_character>
+</character>
+<character id="esc_freedom_plen">
+<class>esc_freedom_plen</class>
+<specific_character>esc_freedom_plen</specific_character>
+</character>
+<character id="esc_test_npc">
+<class>esc_test_npc</class>
+<specific_character>esc_test_npc</specific_character>
+</character>
+<character id="esc_npc_freend_shvabroid_1">
+<class>esc_npc_freend_shvabroid_1</class>
+<specific_character>esc_npc_freend_shvabroid_1</specific_character>
+</character>
+<character id="esc_npc_freend_shvabroid_2">
+<class>esc_npc_freend_shvabroid_2</class>
+<specific_character>esc_npc_freend_shvabroid_2</specific_character>
+</character>
+<character id="esc_trup_alpinist">
+<class>esc_trup_alpinist</class>
+<specific_character>esc_trup_alpinist</specific_character>
+</character>
+<character id="esc_bandit_shoroh_npc">
+<class>esc_bandit_shoroh_npc</class>
+<specific_character>esc_bandit_shoroh_npc</specific_character>
+</character>
+<character id="esc_npc_moskit">
+<class>esc_npc_moskit</class>
+<specific_character>esc_npc_moskit</specific_character>
+</character>
+<character id="esc_nps_soer">
+<class>esc_nps_soer</class>
+<specific_character>esc_nps_soer</specific_character>
+</character>
+<character id="esc_npc_csky_holod">
+<class>esc_npc_csky_holod</class>
+<specific_character>esc_npc_csky_holod</specific_character>
+</character>
+<character id="esc_npc_csky_trader_holod">
+<class>esc_npc_csky_trader_holod</class>
+<specific_character>esc_npc_csky_trader_holod</specific_character>
+</character>
+<character id="esc_npc_watchmaker">
+<class>esc_npc_watchmaker</class>
+<specific_character>esc_npc_watchmaker</specific_character>
+</character>
+<character id="esc_borland_underground">
+<class>esc_borland_underground</class>
+<specific_character>esc_borland_underground</specific_character>
+</character>
+<character id="esc_zombied_1">
+<class>esc_zombied_1</class>
+<specific_character>esc_zombied_1</specific_character>
+</character>
+<character id="esc_trader_walker">
+<class>esc_trader_walker</class>
+<specific_character>esc_trader_walker</specific_character>
+</character>
+<character id="esc_borland_lab">
+<class>esc_borland_lab</class>
+<specific_character>esc_borland_lab</specific_character>
+</character>
+<character id="esc_npc_kishka">
+<class>esc_npc_kishka</class>
+<specific_character>esc_npc_kishka</specific_character>
+</character>
+<character id="esc_npc_student">
+<class>esc_npc_student</class>
+<specific_character>esc_npc_student</specific_character>
+</character>
+<character id="esc_army_stepan">
+<class>esc_army_stepan</class>
+<specific_character>esc_army_stepan</specific_character>
+</character>
+<character id="esc_army_prapor_corpse">
+<class>esc_army_prapor_corpse</class>
+<specific_character>esc_army_prapor_corpse</specific_character>
+</character>
+
+
+
+
+
+
+
+</xml>

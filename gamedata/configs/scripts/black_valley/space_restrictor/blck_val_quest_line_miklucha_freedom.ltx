@@ -1,0 +1,16 @@
+[logic]
+active = sr_idle@miklucha_freedom_spawn
+
+[sr_idle@miklucha_freedom_spawn]
+on_info = {+blck_val_stavrid_night_shooter_dialog_done =is_day -sleep_active} sr_idle@miklucha_freedom_spawn_start
+
+[sr_idle@miklucha_freedom_spawn_start]
+on_timer = 1000 | sr_idle@miklucha_sends_sms %=spawn_object(blck_val_miklucha_freedom:blck_val_freedom_miklucha_walk)%
+
+[sr_idle@miklucha_sends_sms]
+on_timer = 6000 | sr_idle@miklucha_give_quest %=blck_val_miklucha_quest_sms_1%
+
+[sr_idle@miklucha_give_quest]
+on_timer = 6000 | sr_idle@nil %=give_task(blck_val_talk_to_miklucha)%
+
+[sr_idle@nil]

@@ -1,0 +1,11 @@
+[logic]
+active = walker
+on_death = death
+
+[death]
+on_info = %+gar_a2_sp_killer_3_death%
+
+[walker]
+path_walk = gar_a2_sp_killer_3_walk
+path_look = gar_a2_sp_killer_3_look
+on_info                = {!actor_enemy +gar_a2_gg_eat_lekarstvo_items} %=actor_enemy%

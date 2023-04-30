@@ -1,0 +1,106 @@
+<?xml version="1.0" encoding="windows-1251"?>
+<string_table>
+
+	<!-- level description -->
+	<string id="st_dyn_news_sad">
+	<text>In the Valley of Whispers</text>
+</string>
+<string id="st_dyn_news_cit">
+	<text>In Kurchatov-37</text>
+</string>
+<string id="st_dyn_news_fgt">
+	<text>At the Outpost</text>
+</string>
+<string id="st_dyn_news_pre">
+	<text>In the Antechamber</text>
+</string>
+<string id="st_dyn_news_ave">
+	<text>In Uncharted Territory</text>
+</string>
+<string id="st_dyn_news_puz">
+	<text>In the Forgotten Forest</text>
+</string>
+<string id="st_dyn_news_sci">
+	<text>At the Scientific Station</text>
+</string>
+<string id="st_dyn_news_for">
+	<text>In the Cursed Forest</text>
+</string>
+<string id="st_dyn_news_swa">
+	<text>In the Eastern Swamps</text>
+</string>
+<string id="st_dyn_news_kas">
+	<text>In Kasyanov</text>
+</string>
+<string id="st_dyn_news_cou">
+	<text>In Anomalous Fields</text>
+</string>
+<string id="st_dyn_news_g_c">
+	<text>At the Central Dump</text>
+</string>
+<string id="st_dyn_news_los">
+	<text>In the Quiet Hills</text>
+</string>
+
+	<string id="st_dyn_news_atp">
+		<text>at ATP</text>
+	</string>
+	<string id="st_dyn_news_r_f">
+		<text>at Metallurgical Plant</text>
+	</string>
+	<string id="st_dyn_news_vok">
+		<text>at Train Station</text>
+	</string>
+	<string id="st_dyn_news_topi">
+		<text>in the Marshes</text>
+	</string>
+	<string id="st_dyn_news_out">
+		<text>in Chernobyl-1</text>
+	</string>
+	<string id="st_dyn_news_e_c">
+		<text>at the Eastern Border</text>
+	</string>
+	<string id="st_dyn_news_x5">
+		<text>in Laboratory X-5</text>
+	</string>
+	<string id="st_dyn_news_e_g">
+		<text>at the Eastern Dump</text>
+	</string>
+	<string id="st_dyn_news_e_b">
+		<text>at the Eastern Bar</text>
+	</string>
+	<string id="st_dyn_news_x14">
+		<text>in Laboratory X-14</text>
+	</string>
+	<string id="st_dyn_news_nii">
+		<text>at NII Medinstrument</text>
+	</string>
+	<string id="st_dyn_news_pro">
+		<text>in the Industrial Zone</text>
+	</string>
+	<string id="st_dyn_news_dl">
+		<text>in Dead Lake</text>
+	</string>
+	<string id="st_dyn_news_ano">
+		<text>in Anomalous Forest</text>
+	</string>
+	<string id="st_dyn_news_x27">
+		<text>in Laboratory X-27</text>
+	</string>
+	<string id="st_dyn_news_x7">
+		<text>in Laboratory X-7</text>
+	</string>
+	<string id="st_dyn_news_pu">
+		<text>in South Village</text>
+	</string>
+	<string id="st_dyn_news_rostok">
+		<text>at Rostok</text>
+	</string>
+	<string id="st_dyn_news_wiz">
+		<text>In the vicinity of the former NII</text>
+	</string>
+	<string id="st_dyn_news_p_p">
+		<text>At the training ground</text>
+	</string>
+
+</string_table>

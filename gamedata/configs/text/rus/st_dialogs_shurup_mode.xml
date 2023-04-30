@@ -1,0 +1,294 @@
+<?xml version="1.0" encoding="windows-1251" standalone="yes" ?>
+<string_table>
+    <string id="pb_dialog_shurup_skupka_0">
+        <text>Ты скупаешь поврежденное оружие?</text>
+    </string>
+    <string id="pb_dialog_shurup_skupka_1">
+        <text>Да. Что изволишь продать?</text>
+    </string>
+    <string id="pb_dialog_shurup_skupka_18">
+        <text>«Степной орёл» - 300 руб</text>
+    </string>
+    <string id="pb_dialog_shurup_skupka_188">
+        <text>Хорошо.</text>
+    </string>
+    <string id="pb_dialog_shurup_skupka_19">
+        <text>"СИП-т М200" - 250 руб</text>
+    </string>
+    <string id="pb_dialog_shurup_skupka_199">
+        <text>Хорошо.</text>
+    </string>
+    <string id="pb_dialog_shurup_skupka_2">
+        <text>"ПМ" - 100 руб</text>
+    </string>
+    <string id="pb_dialog_shurup_skupka_20">
+        <text>«Гадюка-5» - 300 руб</text>
+    </string>
+    <string id="pb_dialog_shurup_skupka_200">
+        <text>Хорошо.</text>
+    </string>
+    <string id="pb_dialog_shurup_skupka_21">
+        <text>"РПК-74" - 1020 руб</text>
+    </string>
+    <string id="pb_dialog_shurup_skupka_22">
+        <text>Хорошо.</text>
+    </string>
+    <string id="pb_dialog_shurup_skupka_222">
+        <text>Вот и отлично.</text>
+    </string>
+    <string id="pb_dialog_shurup_skupka_23">
+        <text>Хорошо.</text>
+    </string>
+    <string id="pb_dialog_shurup_skupka_25">
+        <text>[Уникальное]</text>
+    </string>
+    <string id="pb_dialog_shurup_skupka_27">
+        <text>Ну-ка, показывай, что там у тебя есть?</text>
+    </string>
+    <string id="pb_dialog_shurup_skupka_29">
+        <text>АКС-74У «Шторм» - 2500 руб</text>
+    </string>
+    <string id="pb_dialog_shurup_skupka_3">
+        <text>"ПБ-1с" - 120 руб</text>
+    </string>
+    <string id="pb_dialog_shurup_skupka_30">
+        <text>"АКМ-74/У" - 300 руб</text>
+    </string>
+    <string id="pb_dialog_shurup_skupka_300">
+        <text>Хорошо.</text>
+    </string>
+    <string id="pb_dialog_shurup_skupka_31">
+        <text>Хорошо.</text>
+    </string>
+    <string id="pb_dialog_shurup_skupka_33">
+        <text>Хорошо.</text>
+    </string>
+    <string id="pb_dialog_shurup_skupka_4">
+        <text>«Фора-12» - 150 руб</text>
+    </string>
+    <string id="pb_dialog_shurup_skupka_40">
+        <text>"АКМ-74" - 400 руб</text>
+    </string>
+    <string id="pb_dialog_shurup_skupka_400">
+        <text>Хорошо.</text>
+    </string>
+    <string id="pb_dialog_shurup_skupka_41">
+        <text>Ярыгина - ПЯ «Грач» - 450 руб</text>
+    </string>
+    <string id="pb_dialog_shurup_skupka_42">
+        <text>Хорошо.</text>
+    </string>
+    <string id="pb_dialog_shurup_skupka_43">
+        <text>ПП-19 «Бизон» - 500 руб</text>
+    </string>
+    <string id="pb_dialog_shurup_skupka_44">
+        <text>Хорошо.</text>
+    </string>
+    <string id="pb_dialog_shurup_skupka_4444">
+        <text>[Гранатометы]</text>
+    </string>
+    <string id="pb_dialog_shurup_skupka_44441">
+        <text>Ну-ка, показывай, что там у тебя есть?</text>
+    </string>
+    <string id="pb_dialog_shurup_skupka_445">
+        <text>"РПГ-7у" - 1500 руб</text>
+    </string>
+    <string id="pb_dialog_shurup_skupka_4455">
+        <text>Хорошо.</text>
+    </string>
+    <string id="pb_dialog_shurup_skupka_446">
+        <text>«Бульдог-6» - 1850 руб</text>
+    </string>
+    <string id="pb_dialog_shurup_skupka_4466">
+        <text>Хорошо.</text>
+    </string>
+    <string id="pb_dialog_shurup_skupka_45">
+        <text>Хорошо.</text>
+    </string>
+    <string id="pb_dialog_shurup_skupka_47">
+        <text>Хорошо.</text>
+    </string>
+    <string id="pb_dialog_shurup_skupka_5">
+        <text>"ХПСС-1м" - 180 руб</text>
+    </string>
+    <string id="pb_dialog_shurup_skupka_50">
+        <text>"АС-96" - 500 руб</text>
+    </string>
+    <string id="pb_dialog_shurup_skupka_500">
+        <text>Хорошо.</text>
+    </string>
+    <string id="pb_dialog_shurup_skupka_55">
+        <text>Хорошо.</text>
+    </string>
+    <string id="pb_dialog_shurup_skupka_5555">
+        <text>[Пистолеты]</text>
+    </string>
+    <string id="pb_dialog_shurup_skupka_55551">
+        <text>Ну-ка, показывай, что там у тебя есть?</text>
+    </string>
+    <string id="pb_dialog_shurup_skupka_6">
+        <text>«Марта» - 200 руб</text>
+    </string>
+    <string id="pb_dialog_shurup_skupka_60">
+        <text>"ИЛ86" - 450 руб</text>
+    </string>
+    <string id="pb_dialog_shurup_skupka_600">
+        <text>Хорошо.</text>
+    </string>
+    <string id="pb_dialog_shurup_skupka_66">
+        <text>Хорошо.</text>
+    </string>
+    <string id="pb_dialog_shurup_skupka_7">
+        <text>Walther P99 - 200 руб</text>
+    </string>
+    <string id="pb_dialog_shurup_skupka_70">
+        <text>"ТРс-301" - 550 руб</text>
+    </string>
+    <string id="pb_dialog_shurup_skupka_700">
+        <text>Хорошо.</text>
+    </string>
+    <string id="pb_dialog_shurup_skupka_77">
+        <text>Хорошо.</text>
+    </string>
+    <string id="pb_dialog_shurup_skupka_7777">
+        <text>[Автоматы]</text>
+    </string>
+    <string id="pb_dialog_shurup_skupka_77771">
+        <text>Ну-ка, показывай, что там у тебя есть?</text>
+    </string>
+    <string id="pb_dialog_shurup_skupka_8">
+        <text>«Кора-919» - 220 руб</text>
+    </string>
+    <string id="pb_dialog_shurup_skupka_80">
+        <text>"СГИ-5к" - 800 руб</text>
+    </string>
+    <string id="pb_dialog_shurup_skupka_800">
+        <text>Хорошо.</text>
+    </string>
+    <string id="pb_dialog_shurup_skupka_88">
+        <text>Хорошо.</text>
+    </string>
+    <string id="pb_dialog_shurup_skupka_881">
+        <text>"Обрез" - 80 руб</text>
+    </string>
+    <string id="pb_dialog_shurup_skupka_8811">
+        <text>Хорошо.</text>
+    </string>
+    <string id="pb_dialog_shurup_skupka_882">
+        <text>"Охотничье ружьё" - 130 руб</text>
+    </string>
+    <string id="pb_dialog_shurup_skupka_8822">
+        <text>Хорошо.</text>
+    </string>
+    <string id="pb_dialog_shurup_skupka_883">
+        <text>«Чейзер-13» - 200 руб</text>
+    </string>
+    <string id="pb_dialog_shurup_skupka_8833">
+        <text>Хорошо.</text>
+    </string>
+    <string id="pb_dialog_shurup_skupka_884">
+        <text>"СПСА-14" - 250 руб</text>
+    </string>
+    <string id="pb_dialog_shurup_skupka_8844">
+        <text>Хорошо.</text>
+    </string>
+    <string id="pb_dialog_shurup_skupka_885">
+        <text>«Отбойник» - 500 руб</text>
+    </string>
+    <string id="pb_dialog_shurup_skupka_8855">
+        <text>Хорошо.</text>
+    </string>
+    <string id="pb_dialog_shurup_skupka_8888">
+        <text>[Винтовки]</text>
+    </string>
+    <string id="pb_dialog_shurup_skupka_88881">
+        <text>Ну-ка, показывай, что там у тебя есть?</text>
+    </string>
+    <string id="pb_dialog_shurup_skupka_9">
+        <text>УДП «Компакт» - 250 руб</text>
+    </string>
+    <string id="pb_dialog_shurup_skupka_90">
+        <text>"ГП37" - 1000 руб</text>
+    </string>
+    <string id="pb_dialog_shurup_skupka_900">
+        <text>Хорошо.</text>
+    </string>
+    <string id="pb_dialog_shurup_skupka_9090">
+        <text>А что так дешево все скупаешь?</text>
+    </string>
+    <string id="pb_dialog_shurup_skupka_90901">
+        <text>А это уже мое дело. Не хочешь не продавай. У меня клиентов дотаточно.</text>
+    </string>
+    <string id="pb_dialog_shurup_skupka_910">
+        <text>"ФТ-200М" - 2500 руб</text>
+    </string>
+    <string id="pb_dialog_shurup_skupka_9100">
+        <text>Хорошо.</text>
+    </string>
+    <string id="pb_dialog_shurup_skupka_911">
+        <text>Как нибудь в следующий раз.</text>
+    </string>
+    <string id="pb_dialog_shurup_skupka_920">
+        <text>«Гром-С14» - 650 руб</text>
+    </string>
+    <string id="pb_dialog_shurup_skupka_9200">
+        <text>Хорошо.</text>
+    </string>
+    <string id="pb_dialog_shurup_skupka_930">
+        <text>"ПКМ" - 1150 руб</text>
+    </string>
+    <string id="pb_dialog_shurup_skupka_9300">
+        <text>Хорошо.</text>
+    </string>
+    <string id="pb_dialog_shurup_skupka_950">
+        <text>АК-74М - 450 руб</text>
+    </string>
+    <string id="pb_dialog_shurup_skupka_951">
+        <text>Хорошо.</text>
+    </string>
+    <string id="pb_dialog_shurup_skupka_952">
+        <text>Вот и отлично.</text>
+    </string>
+    <string id="pb_dialog_shurup_skupka_99">
+        <text>Хорошо.</text>
+    </string>
+    <string id="pb_dialog_shurup_skupka_991">
+        <text>СА «ЛАВИНА» - 950 руб</text>
+    </string>
+    <string id="pb_dialog_shurup_skupka_9911">
+        <text>Хорошо.</text>
+    </string>
+    <string id="pb_dialog_shurup_skupka_992">
+        <text>«Винтарь-ВС» - 1200 руб</text>
+    </string>
+    <string id="pb_dialog_shurup_skupka_9922">
+        <text>Хорошо.</text>
+    </string>
+    <string id="pb_dialog_shurup_skupka_993">
+        <text>"СВУмк-2" - 1500 руб</text>
+    </string>
+    <string id="pb_dialog_shurup_skupka_9933">
+        <text>Хорошо.</text>
+    </string>
+    <string id="pb_dialog_shurup_skupka_994">
+        <text>"СВДм-2" - 1600 руб</text>
+    </string>
+    <string id="pb_dialog_shurup_skupka_9944">
+        <text>Хорошо.</text>
+    </string>
+    <string id="pb_dialog_shurup_skupka_995">
+        <text>"Гаус пушка" - 50000 руб</text>
+    </string>
+    <string id="pb_dialog_shurup_skupka_9955">
+        <text>Хорошо.</text>
+    </string>
+    <string id="pb_dialog_shurup_skupka_9999">
+        <text>[Дробовики]</text>
+    </string>
+    <string id="pb_dialog_shurup_skupka_99991">
+        <text>Ну-ка, показывай, что там у тебя есть?</text>
+    </string>
+    <string id="super_0">
+        <text>default text</text>
+    </string>
+</string_table>

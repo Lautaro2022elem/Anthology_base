@@ -1,0 +1,797 @@
+<?xml version="1.0" encoding="windows-1251" ?>
+
+
+<string_table>
+
+
+
+
+
+		<string id="__NOCTURNAL_MUTANTS__">
+
+	<text>Ночные мутанты</text>
+
+	</string>
+
+
+
+
+		<string id="dyn_noct_mutants_msg_before_1">
+
+	<text>Что-то мне подсказывает, что те твари с прошлой ночи вернутся.</text>
+
+	</string>
+
+
+
+
+		<string id="dyn_noct_mutants_msg_before_2">
+
+	<text>Чую, эта ночь будет не из простых - полно монстров.</text>
+
+	</string>
+
+ 
+
+		<string id="dyn_noct_mutants_msg_before_3">
+
+	<text>Хорошо, что я купил винтовку несколько часов назад. Она уж точно мне понадобится. </text>
+
+	</string>
+
+ 
+
+		<string id="dyn_noct_mutants_msg_before_4">
+
+	<text>Хорошо, что сегодня утром мы закупились патронами. Они нам точно не помешают.</text>
+
+	</string>
+
+ 
+
+		<string id="dyn_noct_mutants_msg_before_5">
+
+	<text>Мутантов сегодня будет тьма, а я ещё помираю с голоду. Эх... Сейчас бы консерву.</text>
+
+	</string>
+
+ 
+
+		<string id="dyn_noct_mutants_msg_before_6">
+
+	<text>Говорят, сегодня вечером будет опасно, а у меня ни крошки. Думаю, что до утра не дотяну...</text>
+
+	</string>
+
+ 
+
+		<string id="dyn_noct_mutants_msg_before_7">
+
+	<text>Надеюсь, этой ночью твари будут крепко спать. Патронов только на застрелиться хватит.</text>
+
+	</string>
+
+ 
+
+		<string id="dyn_noct_mutants_msg_before_8">
+
+	<text>Надеюсь, сегодня вечером монстры пройдут мимо нас. У меня с собой только нож да ржавый обрез.</text>
+
+	</string>
+
+ 
+
+		<string id="dyn_noct_mutants_msg_before_9">
+
+	<text>Надеюсь, монстры не придут сегодня вечером - винтовка на ремонте. Одним пистолетом не отобьёшься.</text>
+
+	</string>
+
+ 
+
+		<string id="dyn_noct_mutants_msg_before_10">
+
+	<text>Блин, надеюсь, мутанты сегодня не вылезут из своих нор - ствол в хлам.</text>
+
+	</string>
+
+ 
+
+ 
+
+		<string id="dyn_noct_mutants_msg_before_11">
+
+	<text>Надеюсь, монстры не придут сегодня вечером. До сих пор тремор после вчерашнего.</text>
+
+	</string>
+
+ 
+
+		<string id="dyn_noct_mutants_msg_before_12">
+
+	<text>Надеюсь, твари сегодня вечером будут держаться подальше от меня. Хотелось бы хотя бы одну спокойную ночь на этой неделе.</text>
+
+	</string>
+
+ 
+
+ 
+
+		<string id="dyn_noct_mutants_msg_before_13">
+
+	<text>Надеюсь, этой ночью будет много мутантов. Мяска свежего захотелось.</text>
+
+	</string>
+
+ 
+
+		<string id="dyn_noct_mutants_msg_before_14">
+
+	<text>Не могу дождаться прихода монстров. Новый ствол без дела простаивает.</text>
+
+	</string>
+
+ 
+
+		<string id="dyn_noct_mutants_msg_before_15">
+
+	<text>Интересно, мутанты сегодня подвалят? А то мой нож давно лежит без дела.</text>
+
+	</string>
+
+ 
+
+		<string id="dyn_noct_mutants_msg_before_16">
+
+	<text>Эх, хоть бы мутантов побольше сегодня. У меня уже заказ учёных горит.</text>
+
+	</string>
+
+ 
+
+		<string id="dyn_noct_mutants_msg_before_17">
+
+	<text>Где же эти твари? Завалили моего друга, суки...</text>
+
+	</string>
+
+ 
+
+		<string id="dyn_noct_mutants_msg_before_18">
+
+	<text>Что-то с деньгами проблема. Надеюсь, сегодня будет чем поживиться. На шкурах можно хорошо навариться... Главное - выжить.</text>
+
+	</string>
+
+ 
+
+		<string id="dyn_noct_mutants_msg_before_19">
+
+	<text>Надеюсь, этой ночью набегут мутанты. Полакомлюсь щупальцами кровососа... Ммм... Да в томатном соусе... Если выживу.</text>
+
+	</string>
+
+ 
+
+		<string id="dyn_noct_mutants_msg_before_20">
+
+	<text>Не могу дождаться прихода монстров. Отведаю стейк из химеры... Главное - выжить.</text>
+
+	</string>
+
+ 
+
+ 
+
+ 
+
+		<string id="dyn_noct_mutants_msg_before_21">
+
+	<text>Товарищи, советую вам брать ноги в руки и бежать на ближайшую базу. .</text>
+
+	</string>
+
+ 
+
+		<string id="dyn_noct_mutants_msg_before_22">
+
+	<text>Всем: наступила ночь. Бросайте все дела и бегите в укрытие, если не хотите склеить ласты от случайной твари.</text>
+
+	</string>
+
+ 
+
+		<string id="dyn_noct_mutants_msg_before_23">
+
+	<text>Забудьте про ваши дела и бегом к ближайшему убежищу. Ночь в Зоне - не время для прогулки.</text>
+
+	</string>
+
+ 
+
+		<string id="dyn_noct_mutants_msg_before_24">
+
+	<text>Всем: наступила ночь. Рекомендую найти домик покрепче, выпить с товарищами у костра и не высовываться до утра.</text>
+
+	</string>
+
+ 
+
+		<string id="dyn_noct_mutants_msg_before_25">
+
+	<text>Смеркается. Не оставайтесь ночью на улице. Не надейтесь на авось. </text>
+
+	</string>
+
+ 
+
+		<string id="dyn_noct_mutants_msg_before_26">
+
+	<text>Всем: наступила ночь. Отложите все дела до утра, и отправляйтесь на ближайшую базу. Сейчас же.</text>
+
+	</string>
+
+ 
+
+ 
+
+		<string id="dyn_noct_mutants_msg_before_27">
+
+	<text>Всем: закат близок. Советую оставить все ваши дела и отправиться к ближайшему лагерю. Уж лучше выпить у костра, чем быть едой для псевдопса.</text>
+
+	</string>
+
+ 
+
+		<string id="dyn_noct_mutants_msg_before_28">
+
+	<text>Может, эта ночь будет спокойной, а может, и нет. Не стоит рисковать шкурой ради пары червонцев. Уж я то знаю.</text>
+
+	</string>
+
+ 
+
+		<string id="dyn_noct_mutants_msg_before_29">
+
+	<text>Не глупите - оставайтесь в лагере на ночь. Что бы вы ни планировали, оно того не стоит. Поверьте мне.</text>
+
+	</string>
+
+ 
+
+		<string id="dyn_noct_mutants_msg_before_30">
+
+	<text>Зелень, ищите нору глубже. И ни звука - не мешайте опытным.</text>
+
+	</string>
+
+ 
+
+		<string id="dyn_noct_mutants_msg_before_31">
+
+	<text>Новички, опыта набраться хотите? Вот ваш звёздный час. Берите в охапку ваши припасы и айда бить нечисть. Монстры могут вылезти в любой момент.</text>
+
+	</string>
+
+ 
+
+		<string id="dyn_noct_mutants_msg_before_32">
+
+	<text>Зелёные, хотите доказать, что вы чего-то стоите? Это ваш шанс. Берите свои стволы и присоединяйтесь к борьбе - мутанты не дремлют.</text>
+
+	</string>
+
+ 
+
+		<string id="dyn_noct_mutants_msg_before_33">
+
+	<text>Новички, хотите показать себя? Берите свои ружья и помогайте. Победим вместе эту заразу.</text>
+
+	</string>
+
+ 
+
+ 
+
+		<string id="dyn_noct_mutants_msg_before_34">
+
+	<text>Новички, жить хотите? Оставайтесь в укрытии. Поживешь подольше — увидишь побольше.</text>
+
+	</string>
+
+ 
+
+		<string id="dyn_noct_mutants_msg_before_35">
+
+	<text>Зелёные, не высовывайтесь. Не каждый опытный таких тварей переживёт, а вы и подавно.</text>
+
+	</string>
+
+ 
+
+		<string id="dyn_noct_mutants_msg_before_36">
+
+	<text>Новички, быстро в укрытие! Столько молодняка из-за этих тварей погибло...</text>
+
+	</string>
+
+ 
+
+ 
+
+		<string id="dyn_noct_mutants_msg_before_37">
+
+	<text>Иди в дом и не геройствуй, Рэмбо, блин. Они тебя сожрут и не подавятся.</text>
+
+	</string>
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+		<string id="dyn_noct_mutants_msg_attack_1">
+
+	<text>Вот они, парни. Не щадите этих тварей.</text>
+
+	</string>
+
+ 
+
+		<string id="dyn_noct_mutants_msg_attack_2">
+
+	<text>Заметил мутантов. Преподайте им урок, парни.</text>
+
+	</string>
+
+ 
+
+		<string id="dyn_noct_mutants_msg_attack_3">
+
+	<text>Вижу тварей. Нужно отбиваться. Их уже слишком много.</text>
+
+	</string>
+
+ 
+
+		<string id="dyn_noct_mutants_msg_attack_4">
+
+	<text>Я смотрю в темноту, я вижу огни... Это значит, где-то здесь скрывается зверь... Вспомнилось что-то. </text>
+
+	</string>
+
+ 
+
+		<string id="dyn_noct_mutants_msg_attack_5">
+
+	<text>Сюда идут мутанты. Дадим им отпор!</text>
+
+	</string>
+
+ 
+
+ 
+
+		<string id="dyn_noct_mutants_msg_attack_6">
+
+	<text>Увидел одного, но это только цветочки... Будьте начеку.</text>
+
+	</string>
+
+ 
+
+		<string id="dyn_noct_mutants_msg_attack_7">
+
+	<text>Я вижу монстров вдалеке. Будем отбиваться.</text>
+
+	</string>
+
+ 
+
+		<string id="dyn_noct_mutants_msg_attack_8">
+
+	<text>А вот и кровосос. Покажи, что ты умеешь.</text>
+
+	</string>
+
+ 
+
+		<string id="dyn_noct_mutants_msg_attack_9">
+
+	<text>Заканчивайте свои посиделки и хватайте пушки - идут.</text>
+
+	</string>
+
+ 
+
+		<string id="dyn_noct_mutants_msg_attack_10">
+
+	<text>Харэ водку жрать - твари уже под носом. Нужно побыстрее их завалить, пока новые не подоспели.</text>
+
+	</string>
+
+ 
+
+		<string id="dyn_noct_mutants_msg_attack_11">
+
+	<text>Хватай свой ствол. Устроим геноцид этих тварей.</text>
+
+	</string>
+
+ 
+
+		<string id="dyn_noct_mutants_msg_attack_12">
+
+	<text>Бери свою пушку. Монстры уже на подходе.</text>
+
+	</string>
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+		<string id="dyn_noct_mutants_msg_after_1">
+
+	<text>Блин, было тяжко. Проверьте свои припасы, перезарядитесь. Возможно, мы их ещё увидим.</text>
+
+	</string>
+
+ 
+
+		<string id="dyn_noct_mutants_msg_after_2">
+
+	<text>Было напряжённо, но теперь мы можем расслабиться. Залатывайте свои раны. Аптечки в ящике.</text>
+
+	</string>
+
+ 
+
+		<string id="dyn_noct_mutants_msg_after_3">
+
+	<text>Боже, было близко. Проверьте свою снарягу и не расслабляйтесь. Возможно, они еще покажутся.</text>
+
+	</string>
+
+ 
+
+		<string id="dyn_noct_mutants_msg_after_4">
+
+	<text>Мда, было сложнее, чем в прошлый раз. Ещё одна ночь борьбы за жизнь.</text>
+
+	</string>
+
+ 
+
+		<string id="dyn_noct_mutants_msg_after_5">
+
+	<text>Эти твари были быстрее, чем я думал. Хорошо, что я принёс новую винтовку вместо ТОЗа.</text>
+
+	</string>
+
+ 
+
+		<string id="dyn_noct_mutants_msg_after_6">
+
+	<text>Эти ублюдки были слишком быстрыми. Отстрелял своё мой ТОЗ - развалился прямо в руках. Буду копить на новый ствол.</text>
+
+	</string>
+
+ 
+
+ 
+
+		<string id="dyn_noct_mutants_msg_after_7">
+
+	<text>Чёрт, это было жёстко. Есть несколько жертв, но мы выжили.</text>
+
+	</string>
+
+ 
+
+		<string id="dyn_noct_mutants_msg_after_8">
+
+	<text>Я не мог поверить своим глазам. Два кровососа напали на нас из ниоткуда.</text>
+
+	</string>
+
+ 
+
+		<string id="dyn_noct_mutants_msg_after_9">
+
+	<text>Я понадеялся, что этой ночью будет тихо... А теперь мой лучший друг - воспоминание...</text>
+
+	</string>
+
+ 
+
+		<string id="dyn_noct_mutants_msg_after_10">
+
+	<text>Вы видели эту тварь? Что это было?</text>
+
+	</string>
+
+ 
+
+		<string id="dyn_noct_mutants_msg_after_11">
+
+	<text>Всем: Отличная работа. Повезло, что обошлись синяками да ссадинами.</text>
+
+	</string>
+
+ 
+
+		<string id="dyn_noct_mutants_msg_after_12">
+
+	<text>Всем: Ура! Атаку отразили с небольшими потерями - несколько раненых и один пострадавший.</text>
+
+	</string>
+
+ 
+
+		<string id="dyn_noct_mutants_msg_after_13">
+
+	<text>Всем: Поредили мы их популяцию знатно. Но сколько парней потеряли...</text>
+
+	</string>
+
+ 
+
+		<string id="dyn_noct_mutants_msg_after_14">
+
+	<text>Всем: Фух, можно выдохнуть - отбились.</text>
+
+	</string>
+
+ 
+
+ 
+
+ 
+
+		<string id="dyn_noct_mutants_msg_after_15">
+
+	<text>Это всё? Я только начал их косить...</text>
+
+	</string>
+
+ 
+
+		<string id="dyn_noct_mutants_msg_after_16">
+
+	<text>Ха! Это всё? А мяса сколько... Сегодня у нас шашлыки. И водка. Для профилактики.</text>
+
+	</string>
+
+ 
+
+		<string id="dyn_noct_mutants_msg_after_17">
+
+	<text>Всё кончено! Готовьте ножи, парни. Трофеев - вагон. Мясник будет доволен.</text>
+
+	</string>
+
+ 
+
+		<string id="dyn_noct_mutants_msg_after_18">
+
+	<text>Ха! Всё кончилось? Неси горилку и достань ножи для мяса - поминать погибших будем.</text>
+
+	</string>
+
+ 
+
+		<string id="dyn_noct_mutants_msg_after_19">
+
+	<text>Готовьте костёр, парни. Мяса - завались. И водку не забудьте. Пора праздновать.</text>
+
+	</string>
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+		<string id="dyn_noct_mutants_msg_night_random_1">
+
+	<text>Ты это слышал? Или я пьян?</text>
+
+	</string>
+
+ 
+
+		<string id="dyn_noct_mutants_msg_night_random_2">
+
+	<text>Вы это видели? Скажите, что вы это видели.</text>
+
+	</string>
+
+ 
+
+		<string id="dyn_noct_mutants_msg_night_random_3">
+
+	<text>Ты это слышал? Что-то шебуршит в деревьях.</text>
+
+	</string>
+
+ 
+
+		<string id="dyn_noct_mutants_msg_night_random_4">
+
+	<text>Вы это видели? Похоже что-то светится на том холме.</text>
+
+	</string>
+
+ 
+
+		<string id="dyn_noct_mutants_msg_night_random_5">
+
+	<text>Я что-то слышал в кустах. Прикрой.</text>
+
+	</string>
+
+ 
+
+		<string id="dyn_noct_mutants_msg_night_random_6">
+
+	<text>Я что-то слышал на том холме. Разведайте, но будьте осторожны.</text>
+
+	</string>
+
+ 
+
+		<string id="dyn_noct_mutants_msg_night_random_7">
+
+	<text>Я увидел что-то за деревьями. Прикрывай и будь тише воды.</text>
+
+	</string>
+
+ 
+
+		<string id="dyn_noct_mutants_msg_night_random_8">
+
+	<text>Вы что-то слышали? Надо быть осторожными.</text>
+
+	</string>
+
+ 
+
+ 
+
+		<string id="dyn_noct_mutants_msg_night_random_9">
+
+	<text>Лучше помолчи. Я что-то слышал.</text>
+
+	</string>
+
+ 
+
+		<string id="dyn_noct_mutants_msg_night_random_10">
+
+	<text>Тихо. Я что-то видел.</text>
+
+	</string>
+
+ 
+
+		<string id="dyn_noct_mutants_msg_night_random_11">
+
+	<text>Тихо. И бери свою пушку. Я услышал рычание.</text>
+
+	</string>
+
+ 
+
+		<string id="dyn_noct_mutants_msg_night_random_12">
+
+	<text>Что это было? Вы тоже это слышали? Нужна подмога.</text>
+
+	</string>
+
+ 
+
+		<string id="dyn_noct_mutants_msg_night_random_13">
+
+	<text>Меня разъедает тревога. Не могу дождаться рассвета.</text>
+
+	</string>
+
+ 
+
+		<string id="dyn_noct_mutants_msg_night_random_14">
+
+	<text>Надеюсь, сегодня вечером я не стану ужином для мутантов.</text>
+
+	</string>
+
+ 
+
+		<string id="dyn_noct_mutants_msg_night_random_15">
+
+	<text>Сиди ровно. Рассвет не за горами.</text>
+
+	</string>
+
+ 
+
+		<string id="dyn_noct_mutants_msg_night_random_16">
+
+	<text>Не глупи. Скоро рассвет.</text>
+
+	</string>
+
+
+
+
+
+
+
+
+</string_table>
+
+
+
+
+
+

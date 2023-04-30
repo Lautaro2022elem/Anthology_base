@@ -1,0 +1,86 @@
+;blck_val_zastava_provodnik (дополнительная логика)
+
+;=========meet_quest_line========
+[meet@quest_line]
+close_anim 		= nil
+close_victim 	= nil
+far_anim 		= nil
+far_victim 		= nil
+close_distance 	= 0
+far_distance 	= 0
+use = {=actor_enemy} false, {=dist_to_actor_le(3)} true, false
+snd_on_use = {!dist_to_actor_le(3)} nil
+meet_on_talking = false
+;==================================
+
+[camper@zastava_provodnik_in_zavod_stay]
+path_walk = blck_val_provodnik_in_zavod_walk
+path_look = blck_val_provodnik_in_zavod_look
+on_info = {+blck_val_provodnik_teleport_to_hutor_again -blck_val_provodnik_teleport_to_zavod_again} camper@zastava_provodnik_in_hutor_again %=teleport_npc(blck_val_zastava_provodnik_in_hutor)%
+on_info2 = {+blck_val_actor_meet_dialog_fish} camper@zastava_provodnik_in_hutor_again %+blck_val_provodnik_teleport_to_hutor_again -blck_val_dialog_actor_go_to_zavod -blck_val_provodnik_teleport_to_zavod_again =teleport_npc(blck_val_zastava_provodnik_in_hutor)%
+combat_ignore_cond = true
+combat_ignore_keep_when_attacked = true
+invulnerable = false
+gather_items_enabled = false
+help_wounded_enabled = false
+corpse_detection_enabled = false
+meet = meet@in_zavod
+
+[camper@zastava_provodnik_in_hutor_again]
+path_walk = blck_val_provodnik_in_hutor_walk
+path_look = blck_val_provodnik_in_hutor_look
+on_info = {+blck_val_provodnik_teleport_to_zavod_again -blck_val_provodnik_teleport_to_hutor_again} camper@zastava_provodnik_in_zavod_stay %=teleport_npc(blck_val_zastava_provodnik_in_zavod)%
+on_info2 = {+blck_val_provodnik_teleport_to_center -blck_val_provodnik_teleport_to_hutor_again} walker@zastava_provodnik_in_center_sit %=teleport_npc(blck_val_zastava_provodnik_in_center)%
+on_info3 = {+blck_val_provodnik_teleport_to_shcool -blck_val_provodnik_teleport_to_hutor_again} walker@zastava_provodnik_in_shcool_stay %=teleport_npc(blck_val_zastava_provodnik_in_shcool)%
+combat_ignore_cond = true
+combat_ignore_keep_when_attacked = true
+invulnerable = false
+gather_items_enabled = false
+help_wounded_enabled = false
+corpse_detection_enabled = false
+meet = meet@in_hutor
+
+[walker@zastava_provodnik_in_center_sit]
+path_walk = blck_val_provodnik_in_center_walk
+path_look = blck_val_provodnik_in_center_look
+on_info = {+blck_val_provodnik_teleport_to_hutor_again -blck_val_provodnik_teleport_to_center} camper@zastava_provodnik_in_hutor_again %=teleport_npc(blck_val_zastava_provodnik_in_hutor)%
+combat_ignore_cond = true
+combat_ignore_keep_when_attacked = true
+invulnerable = false
+gather_items_enabled = false
+help_wounded_enabled = false
+corpse_detection_enabled = false
+meet = meet@in_zavod
+
+[walker@zastava_provodnik_in_shcool_stay]
+path_walk = blck_val_provodnik_in_shcool_walk
+path_look = blck_val_provodnik_in_shcool_look
+on_info = {+blck_val_provodnik_teleport_to_hutor_again -blck_val_provodnik_teleport_to_shcool} camper@zastava_provodnik_in_hutor_again %=teleport_npc(blck_val_zastava_provodnik_in_hutor)%
+on_info2 = {+blck_val_miklucha_first_quest_give} camper@zastava_provodnik_in_hutor_again %+blck_val_provodnik_teleport_to_hutor_again -blck_val_dialog_actor_go_to_shcool -blck_val_provodnik_teleport_to_shcool =teleport_npc(blck_val_zastava_provodnik_in_hutor)%
+combat_ignore_cond = true
+combat_ignore_keep_when_attacked = true
+invulnerable = false
+gather_items_enabled = false
+help_wounded_enabled = false
+corpse_detection_enabled = false
+meet = meet@in_zavod
+
+[meet@start_quest]:meet@quest_line
+close_victim = actor
+allow_break = false
+meet_dialog = blck_val_actor_meet_from_provodnik
+trade_enable = false
+
+[meet@in_hutor]:meet@quest_line
+close_victim = actor
+use = {!actor_enemy +blck_val_two_dialog_provodnik_give -blck_val_two_dialog_provodnik_complete} self, true
+allow_break = false
+meet_dialog = blck_val_actor_meet_from_provodnik
+trade_enable = false
+
+[meet@in_zavod]:meet@quest_line
+close_victim = actor
+use = {!actor_enemy +blck_val_dialog_from_zavod_teleport_give -blck_val_dialog_from_zavod_teleport_complete} self, true
+allow_break = false
+meet_dialog = blck_val_actor_meet_from_provodnik
+trade_enable = false

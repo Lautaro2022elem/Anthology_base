@@ -1,0 +1,56 @@
+;=========meet_stalker_korpys========
+[meet@korpys_stalker]
+close_anim 		= nil
+close_victim 	= nil
+far_anim 		= nil
+far_victim 		= nil
+close_distance 	= 0
+far_distance 	= 0
+use = {=actor_enemy} false, {=dist_to_actor_le(3)} true, false
+snd_on_use = {!dist_to_actor_le(3)} nil
+meet_on_talking = false
+;==================================
+
+[logic]
+suitable = {=check_npc_name(pb_merc_killer_1)} true
+prior = 200
+active = walker@stay_start
+post_combat_time = 0, 0
+
+[walker@stay_start]
+path_walk = pro_merc_killer_1_walk
+path_look = pro_merc_killer_1_look
+on_info = {+pro_mercenary_suiside_give} remark@suiside
+use_camp = false
+combat_ignore_cond = true
+combat_ignore_keep_when_attacked = true
+invulnerable = true
+gather_items_enabled = false
+help_wounded_enabled = false
+corpse_detection_enabled = false
+meet = no_meet
+
+[remark]
+combat_ignore_cond = true
+combat_ignore_keep_when_attacked = true
+gather_items_enabled = false
+help_wounded_enabled = false
+corpse_detection_enabled = false
+use_camp = false
+invulnerable = true
+
+[remark@suiside]:remark
+anim = zat_b22_medic_suicide
+on_signal = anim_end | remark@suiside_shot
+meet = no_meet
+invulnerable = true
+help_wounded_enabled = false
+corpse_detection_enabled = false
+
+[remark@suiside_shot]:remark
+anim = zat_b22_medic_suicide
+on_game_timer = 7 | nil %=kill_npc%
+meet = no_meet
+invulnerable = true
+help_wounded_enabled = false
+corpse_detection_enabled = false

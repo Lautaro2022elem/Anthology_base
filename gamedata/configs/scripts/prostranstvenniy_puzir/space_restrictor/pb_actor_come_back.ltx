@@ -1,0 +1,8 @@
+[logic]
+active = sr_idle@come_back
+
+[sr_idle@come_back]
+on_info = {+pb_found_to_markus_done =actor_on_level(prostranstvenniy_puzir)} %=spawn_object(pb_mrakobes_scene:pb_mrakobes_scene_spawn) +pb_actor_come_back%
+on_info2 = {+pb_actor_come_back -pb_npc_zombie_removed} sr_idle@come_back_nil %=remove_npc(pb_zombied_dolg_man) =remove_npc(pb_zombied_dolg_man_1) =remove_npc(pb_zombied_dolg_man_2) =remove_npc(pb_zombied_dolg_man_3) +pb_npc_zombie_removed%
+
+[sr_idle@come_back_nil]

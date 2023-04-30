@@ -1,0 +1,43 @@
+[anomal_zone]
+        layers_count                     = 2
+        artefacts                        = af_class_chem, af_class_chem_musor
+        coeff                            = 2, 2, 2, 1, 1, 1, 2
+        max_artefacts                    = 3
+        respawn_tries                    = 2
+        start_artefact                   =
+artefact_ways = topi_himik_anomal_zone_af_way
+
+[mines_core]
+topi_zone_buzz_average
+topi_zone_buzz_average_0000
+topi_zone_buzz_average_0001
+topi_zone_buzz_average_0002
+topi_zone_buzz_average_0003
+topi_zone_buzz_average_0004
+topi_zone_buzz_average_0005
+topi_zone_buzz_average_0006
+topi_zone_buzz_average_0007
+topi_zone_buzz_average_0008
+topi_zone_buzz_average_0009
+
+[layer_1]
+mines_section = mines_layer_1 
+
+[mines_layer_1]:mines_core
+topi_zone_buzz_average
+topi_zone_buzz_average_0000
+topi_zone_buzz_average_0001
+topi_zone_buzz_average_0002
+topi_zone_buzz_average_0003
+topi_zone_buzz_average_0004
+
+
+[layer_2]
+mines_section = mines_layer_2 
+
+[mines_layer_2]:mines_core
+topi_zone_buzz_average_0005
+topi_zone_buzz_average_0006
+topi_zone_buzz_average_0007
+topi_zone_buzz_average_0008
+topi_zone_buzz_average_0009

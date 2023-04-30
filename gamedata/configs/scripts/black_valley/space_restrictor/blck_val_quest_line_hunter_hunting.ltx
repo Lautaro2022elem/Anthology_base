@@ -1,0 +1,28 @@
+[logic]
+active = sr_idle@miklucha_freedom_spawn
+
+[sr_idle@miklucha_freedom_spawn]
+on_info = {+blck_val_hunter_in_hutor_first_meet_done} sr_idle@teleport_actor %=RavenMemmoryStart =run_postprocess(black:2525:true)%
+
+[sr_idle@teleport_actor]
+on_timer = 2000 | sr_idle@stop_postprocess %=teleport_actor(actor_hunter_hunting_walk:actor_hunter_hunting_look) =spawn_object(blck_val_hunter_hunting:blck_val_hunter_hunting_spawn)%
+
+[sr_idle@stop_postprocess]
+on_timer = 2000 | sr_idle@enable_ui %=stop_postprocess(2525)%
+
+[sr_idle@enable_ui]
+on_timer = 10 | sr_idle@give_info %=enable_ui%
+
+[sr_idle@give_info]
+on_timer = 10 | sr_idle@blck_val_psevdoflesh_info %+blck_val_quest_hunter_hunting_is_ready =give_task(blck_val_hunter_hunting)%
+
+[sr_idle@blck_val_psevdoflesh_info]
+on_info = {+blck_val_hunter_hunting_go_to_flash} sr_idle@blck_val_psevdoflesh_spawn
+
+[sr_idle@blck_val_psevdoflesh_spawn]
+on_timer = 1000 | sr_idle@tech_change_community_monolith %=spawn_object(blck_val_psevdoflesh_quest:blck_val_psevdoflesh_quest_walk)%
+
+[sr_idle@tech_change_community_monolith]
+on_info = {+blck_val_tech_change_community_monolith -blck_val_tech_change_community_done} sr_idle@nil %=blck_val_tech_change_community_monolith +blck_val_tech_change_community_done%
+
+[sr_idle@nil]

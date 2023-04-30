@@ -1,0 +1,10 @@
+[logic]
+active = sr_idle
+
+[sr_idle]
+on_actor_inside = {+spectrum_project_start -esc_the_first_penny_nashel +esc_dialog_wolf_the_first_penny} sr_idle@2 % +esc_the_first_penny_nashel%
+
+[sr_idle@2]
+on_game_timer = 100 | {-esc_trepach_dialog_robbery_attack} sr_idle@nil %=esc_sms_logoped_predlog +esc_logoped_predlog_info =give_task(esc_quest_gopstop) =esc_spawn_random_quest_habar%
+
+[sr_idle@nil]

@@ -1,0 +1,19 @@
+	<!---------------------------------------------========--------------------------------------------------->
+<!-------------------------makdm, 2015 для COP 1.6.0.2. и Смерти Вопреки---------------------------------->
+<!---------------------------------------------========---------------------------------------------------> 
+
+ 		<first_thirst x="980" y="450" width="35" height="35" complex_mode="1" light_anim="ui_slow_blinking_alpha">
+			<texture>ui_inGame2_first_thirst</texture>
+		</first_thirst>
+		
+		<second_thirst x="980" y="450" width="35" height="35" complex_mode="1" light_anim="ui_slow_blinking_alpha">
+			<texture>ui_inGame2_second_thirst</texture>
+		</second_thirst>
+		
+		<third_thirst x="980" y="450" width="35" height="35" complex_mode="1" light_anim="ui_slow_blinking_alpha">
+			<texture>ui_inGame2_third_thirst</texture>
+		</third_thirst>
+		
+		<fourth_thirst x="980" y="450" width="35" height="35" complex_mode="1" light_anim="ui_slow_blinking_alpha">
+			<texture>ui_inGame2_fourth_thirst</texture>
+		</fourth_thirst>

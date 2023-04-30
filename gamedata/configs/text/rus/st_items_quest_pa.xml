@@ -1,0 +1,91 @@
+<?xml version="1.0" encoding="windows-1251" ?>
+<string_table>
+
+	<string id="st_blck_val_sleepdog_toy">
+		<text>Фигурка Слепого пса</text>
+	</string>
+	<string id="st_blck_val_sleepdog_toy_descr">
+		<text>Небольшая фигурка слепого пса, сделанная мастером, что ранее проживал на Заставе. Довольно высокого качества с множеством мелких деталей.</text>
+	</string>
+
+	<string id="st_blck_val_psevdo_toy">
+		<text>Фигурка Псевдо-собаки</text>
+	</string>
+	<string id="st_blck_val_psevdo_toy_descr">
+		<text>Небольшая фигурка псевдо-собаки, сделанная мастером, что ранее проживал на Заставе. Довольно высокого качества с множеством мелких деталей.</text>
+	</string>
+
+	<string id="st_blck_val_boar_toy">
+		<text>Фигурка Кабана</text>
+	</string>
+	<string id="st_blck_val_boar_toy_descr">
+		<text>Небольшая фигурка кабана, сделанная мастером, что ранее проживал на Заставе. Довольно высокого качества с множеством мелких деталей.</text>
+	</string>
+
+	<string id="st_blck_val_flesh_toy">
+		<text>Фигурка Плоти</text>
+	</string>
+	<string id="st_blck_val_flesh_toy_descr">
+		<text>Небольшая фигурка плоти, сделанная мастером, что ранее проживал на Заставе. Довольно высокого качества с множеством мелких деталей.</text>
+	</string>
+
+	<string id="st_blck_val_burer_toy">
+		<text>Фигурка Бюрера</text>
+	</string>
+	<string id="st_blck_val_burer_toy_descr">
+		<text>Небольшая фигурка бюрера, сделанная мастером, что ранее проживал на Заставе. Довольно высокого качества с множеством мелких деталей.</text>
+	</string>
+
+	<string id="st_blck_val_control_toy">
+		<text>Фигурка Контролёра</text>
+	</string>
+	<string id="st_blck_val_control_toy_descr">
+		<text>Небольшая фигурка контролёра, сделанная мастером, что ранее проживал на Заставе. Довольно высокого качества с множеством мелких деталей.</text>
+	</string>
+
+	<string id="st_blck_val_chimera_toy">
+		<text>Фигурка Химеры</text>
+	</string>
+	<string id="st_blck_val_chimera_toy_descr">
+		<text>Небольшая фигурка химеры, сделанная мастером, что ранее проживал на Заставе. Довольно высокого качества с множеством мелких деталей.</text>
+	</string>
+
+	<string id="st_blck_val_snork_toy">
+		<text>Фигурка Снорка</text>
+	</string>
+	<string id="st_blck_val_snork_toy_descr">
+		<text>Небольшая фигурка снорка, сделанная мастером, что ранее проживал на Заставе. Довольно высокого качества с множеством мелких деталей.</text>
+	</string>
+
+	<string id="st_blck_val_gigant_toy">
+		<text>Фигурка Псевдогиганта</text>
+	</string>
+	<string id="st_blck_val_gigant_toy_descr">
+		<text>Небольшая фигурка псевдогиганта, сделанная мастером, что ранее проживал на Заставе. Довольно высокого качества с множеством мелких деталей.</text>
+	</string>
+
+	<string id="pb_epidemy_medicaments_name">
+		<text>Вакцина</text>
+	</string>
+	<string id="pb_epidemy_medicaments_desc">
+		<text>Доза сильнодействующего вещества, что способствует выведению токсинов из организма, ампула расчитана на одно применение для взрослого человека, может вызывать привыкание.</text>
+	</string>
+	<string id="st_esc_quest_mrakobes_mail">
+		<text>Письмо от Мракобеса</text>
+	</string>
+	<string id="st_esc_quest_mrakobes_mail_descr">
+		<text>Записка сталкера, оставленная на вырваном из тетради листе бумаги. Для прочтения, нажмите "Использовать".</text>
+	</string>
+	<string id="st_pb_quest_dubolom_mail">
+		<text>Письмо от Дуболома</text>
+	</string>
+	<string id="st_pb_quest_dubolom_mail_descr">
+		<text>Записка сталкера, оставленная на вырваном из тетради листе бумаги. Для прочтения, нажмите "Использовать".</text>
+	</string>
+	<string id="st_pb_actor_inventory_title">
+		<text>Мой рюкзак</text>
+	</string>
+	<string id="st_pb_actor_inventory_descr">
+		<text>Мой потерянный личный рюкзак.</text>
+	</string>
+</string_table>

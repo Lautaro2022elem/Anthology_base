@@ -1,0 +1,126 @@
+[logic]
+active = move@stalker_commander
+danger = danger_ignore
+
+[danger_ignore]
+ignore_distance = 200
+ignore_distance_grenade = 200
+ignore_distance_corpse = 200
+ignore_distance_hit = 200
+ignore_distance_sound = 200
+
+[move@stalker_commander]
+move_dest_number       = 576
+move_look_subject      = actor
+move_state_when_center = guard_chasovoy
+move_state_when_move   = walk
+move_stop_on_talk      = true
+invulnerable           = true
+meet                   = meet
+gather_items_enabled = false
+help_wounded_enabled = false
+corpse_detection_enabled = false
+on_info                = {+labx5_mod_npcs_spawner} %=actor_friend%
+on_info2                = {+labx5_b1_borland_talking_1} move@guard_no_talking
+
+
+[move@guard_no_talking]
+move_dest_number       = 355
+move_look_vertex       = 200
+move_state_when_center = hide
+move_state_when_move   = rush
+invulnerable           = true
+move_stop_on_talk      = true
+meet                   = no_meet
+gather_items_enabled = false
+help_wounded_enabled = false
+corpse_detection_enabled = false
+on_info               = {+labx5_b1_sound_zone_restr_1_effects} move@guard_psy_wounded %=play_s3d_sound(characters_voice\scenario\labx5\borland_psy)%
+
+[move@guard_psy_wounded]
+move_dest_number       = 355
+move_look_vertex       = 200
+invulnerable           = true
+move_state_when_center = trans_1
+move_state_when_move   = walk
+move_stop_on_talk      = true
+meet                   = no_meet
+gather_items_enabled = false
+help_wounded_enabled = false
+corpse_detection_enabled = false
+on_info               = {+labx5_b1_psionik_killed} move@guard_after_wounded
+
+[move@guard_after_wounded]
+move_dest_number       = 355
+move_look_vertex       = 200
+invulnerable           = true
+move_state_when_center = sit_ass
+move_state_when_move   = assault
+invulnerable           = false
+move_stop_on_talk      = true
+meet                   = meet
+gather_items_enabled = false
+help_wounded_enabled = false
+corpse_detection_enabled = false
+on_info                = {+labx5_b1_borland_talking_2} move@guard_to_lift
+
+
+[move@guard_to_lift]
+move_dest_number       = 735
+move_look_vertex       = 737
+move_state_when_center = search
+move_state_when_move   = sneak_run
+invulnerable           = true
+move_stop_on_talk      = true
+meet                   = no_meet
+gather_items_enabled = false
+help_wounded_enabled = false
+corpse_detection_enabled = false
+on_game_timer          = 275|move@back_to_gg_1 %+labx5_b1_borland_lift_watch =play_s3d_sound(characters_voice\scenario\labx5\borland_1)%
+
+[move@back_to_gg_1]
+move_dest_number       = 735
+move_look_vertex       = 727
+move_state_when_center = guard
+move_state_when_move   = walk
+invulnerable           = true
+move_stop_on_talk      = true
+meet                   = meet
+gather_items_enabled = false
+help_wounded_enabled = false
+corpse_detection_enabled = false
+on_info                = {+labx5_b1_borland_talking_3} move@guard_sit_over_lift
+
+[move@guard_sit_over_lift]
+move_dest_number       = 735
+move_look_vertex       = 727
+move_state_when_center = threat_danger
+move_state_when_move   = walk
+invulnerable           = true
+move_stop_on_talk      = true
+meet                   = no_meet
+on_info                = {+labx5_b1_lift_pitanie_give} nil %=release_npc%
+
+[meet]
+close_anim 		= nil
+close_victim 	= nil
+far_anim 		= nil
+far_victim 		= nil
+abuse           = true
+use             = true
+allow_break     = false
+meet_on_talking = true
+trade_enable    = false
+
+[no_meet]
+close_anim 		= nil
+close_victim 	= nil
+far_anim 		= nil
+far_victim 		= nil
+close_distance  = 0
+far_distance 	= 0
+close_snd_distance = 3
+abuse           = true
+use             = false
+allow_break     = true
+meet_on_talking = false

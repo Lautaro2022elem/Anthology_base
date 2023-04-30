@@ -1,0 +1,22 @@
+[logic]
+active = sr_idle@anomaly_plant_spawn
+
+[sr_idle@anomaly_plant_spawn]
+on_info = {+pro_lutiy_say_to_dubolom_talk -pro_anomaly_plant_spawn_end} sr_idle@pb_dop_action_snake_quest %=spawn_object(pb_anomaly_plant_1:pro_anomaly_plant_1_spawn) =spawn_object(pb_anomaly_plant_2:pro_anomaly_plant_2_spawn) +pro_anomaly_plant_spawn_end%
+
+[sr_idle@pb_dop_action_snake_quest]
+on_timer = 100 | sr_idle@pb_dop_action_snake_check %=pb_dop_action_snake_quest%
+
+[sr_idle@pb_dop_action_snake_check]
+on_info = {+pro_actor_ready_go_to_plant} sr_idle@pb_dop_action_snake_complete
+
+[sr_idle@pb_dop_action_snake_complete]
+on_timer = 100 | sr_idle@pb_quest_lutiy_check %=pb_dop_action_snake_complete%
+
+[sr_idle@pb_quest_lutiy_check]
+on_info = {+pro_dubolom_quest_boar_meat_done +pro_quest_from_anomaly_plant_complete} sr_idle@pb_quest_lutiy_give
+
+[sr_idle@pb_quest_lutiy_give]
+on_timer = 100 | sr_idle@nil %=give_task(pb_talk_to_lutiy_come)%
+
+[sr_idle@nil]

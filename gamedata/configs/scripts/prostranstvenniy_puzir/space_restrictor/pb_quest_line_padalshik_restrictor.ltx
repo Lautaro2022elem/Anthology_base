@@ -1,0 +1,23 @@
+[logic]
+active = sr_idle@zver_padalshik_found
+
+[sr_idle@zver_padalshik_found]
+on_actor_inside = {-zver_found_teleport_zone +padalshik_corpse_spawn_end +padalshik_found_quest_give} %+zver_found_teleport_zone%
+on_info2 = {+zver_found_teleport_zone} sr_idle@zver_padalshik_found_1
+
+[sr_idle@zver_padalshik_found_1]
+on_timer = 1500 | sr_idle@zver_padalshik_found_2 %+zver_found_padalshik%
+
+[sr_idle@zver_padalshik_found_2]
+on_timer = 2000 | sr_idle@zver_padalshik_found_3 %=spawn_object(pb_soldier_oleynik_podval:pro_soldier_oleynik_podval_spawn)%
+
+[sr_idle@zver_padalshik_found_3]
+on_timer = 1000 | sr_idle@rezak_quest_give %=smex_stronglava%
+
+[sr_idle@rezak_quest_give]
+on_info = {+rezak_quest_give} sr_idle@rezak_quest_give_1
+
+[sr_idle@rezak_quest_give_1]
+on_timer = 500 | sr_idle@zver_padalshik_found_nil %=pb_dop_action_soldier_complete%
+
+[sr_idle@zver_padalshik_found_nil]

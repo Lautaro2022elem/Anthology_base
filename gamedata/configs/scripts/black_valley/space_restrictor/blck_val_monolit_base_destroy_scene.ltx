@@ -1,0 +1,10 @@
+[logic]
+active = sr_idle@monolith_leader_spawn
+
+[sr_idle@monolith_leader_spawn]
+on_info = {+blck_val_stronglav_go_to_labx7} sr_idle@remove_squad
+
+[sr_idle@remove_squad]
+on_timer = 10 | sr_idle@nil %=remove_squad(blck_val_monolith_squad_base)%
+
+[sr_idle@nil]

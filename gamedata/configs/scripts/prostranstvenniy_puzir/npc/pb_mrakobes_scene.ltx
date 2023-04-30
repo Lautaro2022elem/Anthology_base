@@ -1,0 +1,41 @@
+;=========meet_stalker_korpys========
+[meet@korpys_stalker]
+close_anim 		= nil
+close_victim 	= nil
+far_anim 		= nil
+far_victim 		= nil
+close_distance 	= 0
+far_distance 	= 0
+use = {=actor_enemy} false, {=dist_to_actor_le(3)} true, false
+snd_on_use = {!dist_to_actor_le(3)} nil
+meet_on_talking = false
+;==================================
+
+[logic]
+suitable = {=check_npc_name(pb_mrakobes_scene)} true
+prior = 200
+active = remark@home
+on_hit = hit
+
+[remark@home]
+anim = guard_na
+target = story | actor
+combat_ignore_cond = true
+combat_ignore_keep_when_attacked = true
+on_info = {+pro_come_back_prostranstvenniy_puzir} %=release_npc%
+invulnerable = true
+gather_items_enabled = false
+help_wounded_enabled = false
+corpse_detection_enabled = false
+use_camp = false
+meet = meet@pb_mrakobes
+
+[meet@pb_mrakobes]:meet@korpys_stalker
+close_victim = actor
+use = {!actor_enemy =dist_to_actor_le(6) -pb_actor_hit_face_mrakobes_info} self, true
+allow_break = false
+meet_dialog = pb_mrakobes_talk
+trade_enable = false
+
+[hit]
+on_info = {-pb_actor_hit_stronglav} %+pb_actor_hit_stronglav%

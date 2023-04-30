@@ -1,0 +1,16 @@
+[logic]
+active = sr_idle@wait
+
+[sr_idle@wait]
+on_game_timer = 30 | sr_idle@check
+
+[sr_idle@check]
+on_info = {-sad_sim_9_stop_snorks !squad_exist(sad_sim_9_snorki)} sr_idle@create_squad, {-sad_sim_9_stop_snorks !squad_npc_count_ge(sad_sim_9_snorki:3)} sr_idle@member
+
+[sr_idle@member]
+on_info = {-sad_sim_9_noy_dead} sr_idle@check %=sad_sim_9_create_mob_member%, sr_idle@check %=sad_sim_9_create_mob_member%
+
+[sr_idle@create_squad]
+on_info = sr_idle@check %=create_squad(sad_sim_9_snorki:sad_sim_9)%
+
+[sr_idle@nil]

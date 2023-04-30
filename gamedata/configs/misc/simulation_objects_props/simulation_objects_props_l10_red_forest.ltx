@@ -1,0 +1,76 @@
+;----------- << RED FOREST >> ------------
+;---------	SIMULATION	--------
+;Limansk enterance
+[red_bridge_bandit_smart_skirmish]:default_base ;mlr
+sim_avail 	            = true
+all			        = 1
+
+;Stancia1 exit camp
+[red_smart_terrain_3_1]:default_base
+sim_avail 	            = true
+all			            = 1 
+greh                    = 2
+
+;underground mine шахта
+[red_smart_terrain_3_2]:default_base
+sim_avail 	            = true
+;lair                    = 1 
+surge 		            = 1
+greh                    = 3
+
+
+[red_smart_terrain_3_3]:default_lair
+sim_avail 	            = true
+
+;Camp near Forester's house - at red forest gate
+[red_smart_terrain_4_2]:default_base
+sim_avail 	            = true
+surge 		            = 1
+greh                    = 2
+all			            = 1 
+army_heli	            = 1
+
+[red_smart_terrain_4_3]:default_lair
+sim_avail 	            = true
+
+[red_smart_terrain_4_5]:default_lair
+sim_avail 	            = true
+resource 		        = 2
+
+[red_smart_terrain_5_5]:default_lair
+sim_avail 	            = true
+
+[red_smart_terrain_5_6]:default_lair
+sim_avail 	            = true
+
+;deeper forest - anomaly field with weird rocks
+[red_smart_terrain_6_3]:default_lair
+sim_avail 	            = true
+resource 		        = 2
+all			            = 1
+stalker 		        = 1
+ecolog			        = 2
+
+[red_smart_terrain_6_6]:default_lair
+sim_avail 	            = true
+
+;bridge - forest side
+[red_smart_terrain_bridge]:default_base
+sim_avail 	            = true
+surge 		            = 1
+all			            = 1
+
+;deeper forest - near T72 tank
+[red_smart_terrain_monsters]:default_lair
+sim_avail 	            = true
+resource 		        = 2
+
+;tunnel to deeper forest - little mine
+[red_smart_terrain_monsters_2]:default_lair
+sim_avail 	            = true
+
+[red_smart_terrain_monsters_3]:default_lair
+sim_avail 	            = true
+
+[red_bridge_ally_smart]:default_lair
+sim_avail 	            = true

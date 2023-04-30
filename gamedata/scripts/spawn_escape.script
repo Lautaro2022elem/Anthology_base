@@ -1,0 +1,23 @@
+--[[ ----------------------------------------------------------------------------------------------- 
+ File       : spawn_escape.script
+ Description: Функции спавна квестовых нпс на Кордоне
+ Copyright  : 2011 © Spectrum project
+ Author		: Болотный Доктор
+ Last edit  : 01.05.2012
+--]] -----------------------------------------------------------------------------------------------
+function spawn_esc_army_shmatco()
+	xr_effects.spawn_object(nil, nil, {"esc_army_kuznecov","esc_army_kuznecov_walk_1"})
+	xr_effects.spawn_object(nil, nil, {"esc_army_shmatco","esc_army_shmatco_spawn"})
+end
+
+function spawn_esc_trepach()
+	xr_effects.spawn_object(nil, nil, {"esc_trepach","esc_trepach_spawn"})
+end
+
+function esc_spawn_npc_wood_goblin()
+	xr_effects.spawn_object(nil, nil, {"esc_npc_wood_goblin","esc_npc_wood_goblin_walk_1"})
+end
+
+function esc_npc_kishka_spawn()
+	xr_effects.spawn_object(nil, nil, {"esc_npc_kishka","esc_npc_kishka_spawn"})
+end

@@ -1,0 +1,121 @@
+; ------------------------------------------------------------------------- SAD SMARTS
+[sad_start]:default
+sim_avail = false
+
+[sad_b1]:default_base   	; Baza 1 - Mutny
+sim_avail = {+sad_mutny_b1_accuped -sad_mutny_gone} false, true
+surge 	= 5 
+surge		= 1
+stalker	= 3 
+
+[sad_ban]:default   ; Bandity
+surge 	= 5 
+sim_avail = true
+
+[sad_b2]:default_base   	; Baza 2 - Maximilian
+sim_avail = true
+surge 	= 5 
+stalker	= 3 
+ecolog	= 1
+csky	      = 1
+
+[sad_b3a]:default_base   ; For sad_b3 attacking
+sim_avail = {-sad_b3a_start_simulation -sad_actor_enemy_to_someone} false, true
+surge 	= 5 
+
+[sad_b3]:default   	; ------------------------------------- База №3 "Контейнер"
+sim_avail = true
+surge 	= 5 
+stalker	= 3 
+killer     = 3
+
+[sad_ran]:default   ; ------------------------------------- Семён "Ковбой"
+sim_avail = {+sad_ran_cowboy_gone} true, false
+surge 	= 5 
+
+[sad_sher]:default  ; ------------------------------------- Радик
+sim_avail = {+sad_b4_actor_recognized} true, false
+surge 	= 5 
+
+[sad_b4]:default   	; Baza 4 - Killers #2
+sim_avail = {+sad_b4_killers_gone} true, false
+surge 	= 5 
+
+[sad_sim_1]:default   	; -------------------------------- Для атаки на Б1
+sim_avail = {+sad_mutny_gone} true, false
+
+[sad_sim_2]:default   	; -------------------------------- Вася
+sim_avail = {+sad_mutny_gone +sad_sim_2_banditosy_dead} true, false
+
+[sad_sim_3]:default   	; -------------------------------- Веранда + вагон (Ограбление)
+sim_avail = {+sad_mutny_gone} true, false
+
+[sad_sim_4]:default_lair   	; -------------------------------- перекрёсток Б2-Ранчо-Б3
+sim_avail = true ;{+sad_b3_killers_gone} true, false
+
+[sad_sim_5]:default_lair   	; -------------------------------- Аномалия Каменный круг
+sim_avail = true
+
+[sad_sim_6]:default_lair   	; -------------------------------- трупы с флешками
+sim_avail = true
+
+[sad_sim_7]:default   	; -------------------------------- Гена
+sim_avail = {+sad_gena_switch_to_ban} true, false
+
+[sad_sim_8]:default_lair   	; -------------------------------- Упавший вертолёт
+sim_avail = true
+zombied	= 2
+
+[sad_sim_9]:default   	; -------------------------------- Ной
+sim_avail = false
+
+[sad_sim_10]:default_lair   	; -------------------------------- После Б3 (dogs)
+sim_avail = true
+
+[sad_sim_11]:default   	; -------------------------------- Зил перевернулся
+sim_avail = {+sad_start_merc_simulation} true, false
+
+[sad_sim_12]:default_lair   	; -------------------------------- snorki on Radik arrive b4
+sim_avail = {+sad_sim_12_start_dogs} true, false
+
+[sad_sim_13]:default   	; -------------------------------- Радик бежит туда
+sim_avail = true ;{+sad_b4_killers_gone} true, false
+
+[sad_sim_14]:default   	; -------------------------------- Место, где прячется Олег.
+sim_avail = {+sad_sim_14_oleg_squad_dead} true, false
+
+[sad_sim_15]:default   	; -------------------------------- Аномалия около Олега
+sim_avail = true ;{+sad_sim_14_oleg_squad_dead +sad_sim_15_zombo_dead} true, false
+
+[sad_sim_16]:default_lair   	; -------------------------------- Путь на плато, где оазис
+sim_avail = {+sad_sim_16_avail_simulation} true, false
+
+[sad_sim_17]:default_lair   	; -------------------------------- Аномалия на пути Радика
+sim_avail = {+sad_b4_killers_gone} true, false
+
+[sad_sim_18]:default_lair   	; -------------------------------- military corpse
+sim_avail = true ;{+sad_actor_has_sim_8_key} true, false
+
+[sad_sim_19]:default_lair   	; -------------------------------- Озеро около Sher
+sim_avail = {+sad_b4_actor_recognized} true, false
+
+[sad_sim_20]:default_lair   	; -------------------------------- После Sher
+sim_avail = {+sad_b4_actor_recognized} true, false
+
+[sad_sim_21]:default_lair   	; -------------------------------- Озеро около Б4
+sim_avail = true ;{+sad_b4_killers_gone} true, false
+
+[sad_sim_22]:default_lair   	; -------------------------------- собаки около Олега
+sim_avail = true
+
+[sad_sim_23]:default_lair   	; -------------------------------- 
+sim_avail = true
+
+[sad_oasis]:default_lair
+sim_avail = false
+
+[sad_cave]:default   			; -------------------------------- Пещера около ранчо
+sim_avail = false
+
+[sad_atr]:default   			; -------------------------------- Art upgrade
+sim_avail = false

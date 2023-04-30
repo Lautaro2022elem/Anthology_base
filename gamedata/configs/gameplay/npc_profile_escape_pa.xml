@@ -1,0 +1,152 @@
+<?xml version='1.0' encoding="UTF-8"?>
+
+<xml>
+
+	<!-- ÏÐÎÔÈËß ËÎÊÀÖÈÈ "ÊÎÐÄÎÍ" -->
+	
+<character id="esc_leader_orest">
+<class>esc_leader_orest</class>
+<specific_character>esc_leader_orest</specific_character>
+</character>
+<character id="esc_killer_bizon">
+<class>esc_killer_bizon</class>
+<specific_character>esc_killer_bizon</specific_character>
+</character>
+<character id="esc_killer_duplet">
+<class>esc_killer_duplet</class>
+<specific_character>esc_killer_duplet</specific_character>
+</character>
+<character id="esc_killer_grif">
+<class>esc_killer_grif</class>
+<specific_character>esc_killer_grif</specific_character>
+</character>
+<character id="esc_killer_raven">
+<class>esc_killer_raven</class>
+<specific_character>esc_killer_raven</specific_character>
+</character>
+<character id="esc_killer_raven_sniper">
+<class>esc_killer_raven_sniper</class>
+<specific_character>esc_killer_raven_sniper</specific_character>
+</character>
+<character id="esc_koordinator">
+<class>esc_koordinator</class>
+<specific_character>esc_koordinator</specific_character>
+</character>
+<character id="esc_barmen_base">
+<class>esc_barmen_base</class>
+<specific_character>esc_barmen_base</specific_character>
+</character>
+<character id="esc_lom">
+<class>esc_lom</class>
+<specific_character>esc_lom</specific_character>
+</character>
+<character id="esc_mechanic_furgon_pa">
+<class>esc_mechanic_furgon_pa</class>
+<specific_character>esc_mechanic_furgon_pa</specific_character>
+</character>
+<character id="esc_stalker_to_atp">
+<class>esc_stalker_to_atp</class>
+<specific_character>esc_stalker_to_atp</specific_character>
+</character>
+<character id="esc_stalker_to_atp_1">
+<class>esc_stalker_to_atp_1</class>
+<specific_character>esc_stalker_to_atp_1</specific_character>
+</character>
+<character id="esc_stalker_to_atp_2">
+<class>esc_stalker_to_atp_2</class>
+<specific_character>esc_stalker_to_atp_2</specific_character>
+</character>
+<character id="esc_killer_raven_final">
+<class>esc_killer_raven_final</class>
+<specific_character>esc_killer_raven_final</specific_character>
+</character>
+<character id="esc_bandit_kpp_glava">
+<class>esc_bandit_kpp_glava</class>
+<specific_character>esc_bandit_kpp_glava</specific_character>
+</character>
+<character id="esc_bandit_kpp_1">
+<class>esc_bandit_kpp_1</class>
+<specific_character>esc_bandit_kpp_1</specific_character>
+</character>
+<character id="esc_stalker_muravei">
+<class>esc_stalker_muravei</class>
+<specific_character>esc_stalker_muravei</specific_character>
+</character>
+<character id="esc_stalker_levsha">
+<class>esc_stalker_levsha</class>
+<specific_character>esc_stalker_levsha</specific_character>
+</character>
+<character id="esc_barman_patogen_pa">
+<class>esc_barman_patogen_pa</class>
+<specific_character>esc_barman_patogen_pa</specific_character>
+</character>
+<character id="esc_bar_security">
+<class>esc_bar_security</class>
+<specific_character>esc_bar_security</specific_character>
+</character>
+<character id="esc_bar_stalker_1">
+<class>esc_bar_stalker_1</class>
+<specific_character>esc_bar_stalker_1</specific_character>
+</character>
+<character id="esc_bar_stalker_2">
+<class>esc_bar_stalker_2</class>
+<specific_character>esc_bar_stalker_2</specific_character>
+</character>
+<character id="esc_bar_stalker_3">
+<class>esc_bar_stalker_3</class>
+<specific_character>esc_bar_stalker_3</specific_character>
+</character>
+<character id="esc_bar_stalker_drunk">
+<class>esc_bar_stalker_drunk</class>
+<specific_character>esc_bar_stalker_drunk</specific_character>
+</character>
+<character id="esc_bar_storyman">
+<class>esc_bar_storyman</class>
+<specific_character>esc_bar_storyman</specific_character>
+</character>
+
+<character id="esc_killer_atp_1">
+<class>esc_killer_atp_1</class>
+<specific_character>esc_killer_atp_1</specific_character>
+</character>
+<character id="esc_killer_atp_2">
+<class>esc_killer_atp_2</class>
+<specific_character>esc_killer_atp_2</specific_character>
+</character>
+<character id="esc_b46_friend_to_kurer_dead">
+<class>esc_b46_friend_to_kurer_dead</class>
+<specific_character>esc_b46_friend_to_kurer_dead</specific_character>
+</character>
+
+
+
+<!-- ÏÐÎÔÈËß ÂÎÅÍÍÛÕ -->
+
+<character id="esc_army_leader">
+<class>esc_army_leader</class>
+<specific_character>esc_army_leader</specific_character>
+</character>
+<character id="esc_army_yaroshuk">
+<class>esc_army_yaroshuk</class>
+<specific_character>esc_army_yaroshuk</specific_character>
+</character>
+
+
+
+<!-- ÏÐÎÔÈËß ÊÂÅÑÒÎÂÛÕ ÏÅÐÑÎÍÀÆÅÉ -->
+
+<character id="esc_atp_visual">
+<class>esc_atp_visual</class>
+<specific_character>esc_atp_visual</specific_character>
+</character>
+<character id="esc_merc_sniper_enemy">
+<class>esc_merc_sniper_enemy</class>
+<specific_character>esc_merc_sniper_enemy</specific_character>
+</character>
+
+
+
+
+
+
+</xml>

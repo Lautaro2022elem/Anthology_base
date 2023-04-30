@@ -1,0 +1,663 @@
+<?xml version="1.0" encoding="windows-1251" standalone="yes" ?>
+<string_table>
+    <string id="wiz_foma_about_yourself_0">
+        <text>Расскажи о себе.</text>
+    </string>
+    <string id="wiz_foma_about_yourself_1">
+        <text>С какого перепугу? Ты меня, сталкер, не за того принимаешь, я уже давно землю эту топчу и знаю, что ни в карман, ни в душу никого пускать нельзя.</text>
+    </string>
+    <string id="wiz_foma_second_quest_0">
+        <text>У тебя может работёнка какая имеется?</text>
+    </string>
+    <string id="wiz_foma_second_quest_1">
+        <text>Естественно! Вот смотри мне сборщики наши рассказали, что им мутанты досаждают, мешают мол артефакты собирать и всё такое. Твоя задача этих самых мутантов утихомирить, благо это исключительно по твоей специальности - охотник! В награду за зачистку подгоню тебе хороший артефакт, тебе пригодится будь уверен!</text>
+    </string>
+    <string id="wiz_foma_second_quest_2">
+        <text>Хорошо, я согласен.</text>
+    </string>
+    <string id="wiz_foma_second_quest_22">
+        <text>В другой раз.</text>
+    </string>
+    <string id="wiz_free_neutral_jekan_free_0">
+        <text>Кто ты сталкер?! Как мне тебя отблагодарить?</text>
+    </string>
+    <string id="wiz_free_neutral_jekan_free_1">
+        <text>Змеем кличут, а ты видимо и есть тот самый - Жекан?</text>
+    </string>
+    <string id="wiz_free_neutral_jekan_free_2">
+        <text>Да, но… Откуда ты меня знаешь?</text>
+    </string>
+    <string id="wiz_free_neutral_jekan_free_3">
+        <text>Поднимайся, как выйдем наружу - поймёшь.</text>
+    </string>
+    <string id="wiz_free_neutral_rjaviu_complete_0">
+        <text>Вот и всё, наконец-то справедливость, а уж и забыл, что она вообще существует! Огромное тебе человеческое спасибо Змей!</text>
+    </string>
+    <string id="wiz_free_neutral_rjaviu_complete_1">
+        <text>Всегда пожалуйста, думаю, не стоит тут на долго задерживаться как считаешь?</text>
+    </string>
+    <string id="wiz_free_neutral_rjaviu_complete_2">
+        <text>Ты прав, двигаем обратно в лагерь, кстати в лагере кое-что тебе подгоню, ты заслужил!</text>
+    </string>
+    <string id="wiz_free_neutral_rjaviu_complete_3">
+        <text>Хорошо, двинули!</text>
+    </string>
+    <string id="wiz_free_neutral_rjaviu_going_to_village_0">
+        <text>Думаю, сейчас подходящее время для нападения.</text>
+    </string>
+    <string id="wiz_free_neutral_rjaviu_going_to_village_1">
+        <text>Ты прав, сейчас окликну парней и двинем. Ты готов?</text>
+    </string>
+    <string id="wiz_free_neutral_rjaviu_going_to_village_2">
+        <text>Готов.</text>
+    </string>
+    <string id="wiz_free_neutral_rjaviu_going_to_village_22">
+        <text>Обожди, кое-что возьму.</text>
+    </string>
+    <string id="wiz_free_neutral_rjaviu_start_0">
+        <text>Значит Жекан всё ещё жив, это уже радует, думаю, нужно попытаться его вытащить из плена бандитов, ты с нами?</text>
+    </string>
+    <string id="wiz_free_neutral_rjaviu_start_1">
+        <text>Раз я уже раскопал столько, было бы глупо отказаться.</text>
+    </string>
+    <string id="wiz_free_neutral_rjaviu_start_2">
+        <text>Рад это слышать, подходи ночью ко мне, и выдвинемся к месту.</text>
+    </string>
+    <string id="wiz_free_neutral_rjaviu_start_3">
+        <text>Хорошо.</text>
+    </string>
+    <string id="wiz_germo_case_quest_dialog_0">
+        <text>Принимай свою "приблуду".</text>
+    </string>
+    <string id="wiz_germo_case_quest_dialog_1">
+        <text>О! Нашёл-таки молодец, надеюсь не только он был в схроне?</text>
+    </string>
+    <string id="wiz_germo_case_quest_dialog_2">
+        <text>Не только, там ещё рукопись старика была, из неё удалось узнать где спуск в катакомбы, кстати, а что в этом кейсе?</text>
+    </string>
+    <string id="wiz_germo_case_quest_dialog_3">
+        <text>Змей, я ведь в твои дела не лезу? Вот и тебе не стоит. За работу благодарю - свободен.</text>
+    </string>
+    <string id="wiz_germo_case_quest_dialog_4">
+        <text>Хорошо, бывай.</text>
+    </string>
+    <string id="wiz_gift_rjaviu_to_actor_0">
+        <text>Я конечно не настаиваю, но ты что-то говорил о "подгоне"?</text>
+    </string>
+    <string id="wiz_gift_rjaviu_to_actor_1">
+        <text>Да-да! Помню, вот держи, это очень хороший и редкий броник, ранее он принадлежал одной из ушедших в небытие группировок "Чистое Небо", возможно ты слыхал что-то о них, так вот, эти броники, сам Новиков делал, как он говорил: "Захреначим всё синей изолентой" - вот так вот! Береги его.</text>
+    </string>
+    <string id="wiz_gift_rjaviu_to_actor_2">
+        <text>Огромная тебе благодарность Ржавый, я думал ствол будет, а тут броник уже несуществующей группировки! Спасибо ещё раз!</text>
+    </string>
+    <string id="wiz_gonec_pravosudiya_kosta_0">
+        <text>Перед тем как ты умрёшь, я хочу знать, что ты сделал с Жеканом?</text>
+    </string>
+    <string id="wiz_gonec_pravosudiya_kosta_1">
+        <text>Интересно получается… Залётный охотник, смог нарыть больше информации чем люди, которые были непосредственно рядом, не ожидал…</text>
+    </string>
+    <string id="wiz_gonec_pravosudiya_kosta_10">
+        <text>Так ты ещё и с бандитами снюхался… Падаль! Ладно, встретимся на том свете…</text>
+    </string>
+    <string id="wiz_gonec_pravosudiya_kosta_2">
+        <text>Послушай, мне плевать на тебя, меня интересует лишь информация о Жекане.</text>
+    </string>
+    <string id="wiz_gonec_pravosudiya_kosta_3">
+        <text>Боюсь, что уже поздно…</text>
+    </string>
+    <string id="wiz_gonec_pravosudiya_kosta_4">
+        <text>Уверен? Ты можешь умереть быстро, а можешь умирать и долго, я могу это устроить!</text>
+    </string>
+    <string id="wiz_gonec_pravosudiya_kosta_5">
+        <text>Ты столь кровожаден? Не думаю…</text>
+    </string>
+    <string id="wiz_gonec_pravosudiya_kosta_6">
+        <text>Проверим?</text>
+    </string>
+    <string id="wiz_gonec_pravosudiya_kosta_7">
+        <text>Хрен с тобой, я расскажу…</text>
+    </string>
+    <string id="wiz_gonec_pravosudiya_kosta_8">
+        <text>Вот так бы сразу…</text>
+    </string>
+    <string id="wiz_gonec_pravosudiya_kosta_9">
+        <text>Жекан всё ещё жив, он в плену у бандитов из деревни, они держат его в подвале, это всё что я знаю. Не факт правда, что он ещё жив…</text>
+    </string>
+    <string id="wiz_gonec_pravosudiya_kosta_start_0">
+        <text>Здравствуй, расскажи-ка мне о сталкере по кличке - Назар.</text>
+    </string>
+    <string id="wiz_gonec_pravosudiya_kosta_start_1">
+        <text>О Назаре? Да ничего рассказать не могу, опытный был сталкер, сборщик от Бога так сказать. Для чего спрашиваешь-то?</text>
+    </string>
+    <string id="wiz_gonec_pravosudiya_kosta_start_2">
+        <text>Да так, нашёл его тело, и ПДА.</text>
+    </string>
+    <string id="wiz_gonec_pravosudiya_kosta_start_3">
+        <text>И что? Я пока понять не могу, чего ты хочешь!</text>
+    </string>
+    <string id="wiz_gonec_pravosudiya_kosta_start_4">
+        <text>Ничего, мне вот интересно, давно-ли ты с "синими" работать стал?</text>
+    </string>
+    <string id="wiz_gonec_pravosudiya_kosta_start_5">
+        <text>В смысле? Ни с кем я не работаю! Бухой что-ли?!</text>
+    </string>
+    <string id="wiz_gonec_pravosudiya_kosta_start_6">
+        <text>Не работаешь? Ну хорошо…</text>
+    </string>
+    <string id="wiz_gonec_pravosudiya_rjaviu_second_0">
+        <text>Змей, я сообщил ребятам о промысле Косты, ребята солидарны со мной и так же хотят кровной мести.</text>
+    </string>
+    <string id="wiz_gonec_pravosudiya_rjaviu_second_1">
+        <text>Хорошо, давай только сделаем это за пределами лагеря и перед тем как его убить, я допрошу его.</text>
+    </string>
+    <string id="wiz_gonec_pravosudiya_rjaviu_second_2">
+        <text>Хорошо, идём?</text>
+    </string>
+    <string id="wiz_gonec_pravosudiya_rjaviu_second_3">
+        <text>Да, идём.</text>
+    </string>
+    <string id="wiz_gonec_pravosudiya_rjaviu_start_0">
+        <text>Ржавый, тут такое дело…</text>
+    </string>
+    <string id="wiz_gonec_pravosudiya_rjaviu_start_1">
+        <text>Ну? Говори.</text>
+    </string>
+    <string id="wiz_gonec_pravosudiya_rjaviu_start_10">
+        <text>Ну что?</text>
+    </string>
+    <string id="wiz_gonec_pravosudiya_rjaviu_start_11">
+        <text>Вот же сука! Он просто продал его… Думаю, что Назар уже не первый, кто по его наводке на том свете, кстати, ты ведь не застал нашего лидера - Жекана?</text>
+    </string>
+    <string id="wiz_gonec_pravosudiya_rjaviu_start_12">
+        <text>Нет, а что?</text>
+    </string>
+    <string id="wiz_gonec_pravosudiya_rjaviu_start_13">
+        <text>Жекан, неделю назад ушёл в рейд с Костой, но не вернулся. Дружок "наш" Коста, сказал, мол пропал он, но перед пропажей назначил его замом, мы конечно с подозрением на это всё посмотрели, но это Зона и тут всякое происходит, поэтому и поверили Косте. Так вот, я думаю, что он и убил - Жекана, для того чтобы занять его место.</text>
+    </string>
+    <string id="wiz_gonec_pravosudiya_rjaviu_start_14">
+        <text>Так что будем делать?</text>
+    </string>
+    <string id="wiz_gonec_pravosudiya_rjaviu_start_15">
+        <text>Думаю, показательная казнь лучшее решение.</text>
+    </string>
+    <string id="wiz_gonec_pravosudiya_rjaviu_start_16">
+        <text>Согласен, но перед тем как это сделать, думаю не лишним будет узнать, что он с Жеканом сделал и где его искать.</text>
+    </string>
+    <string id="wiz_gonec_pravosudiya_rjaviu_start_17">
+        <text>Хорошо, через пару часов я тебя позову. Пойду пока ребятам эту весть донесу, дабы не было непоняток.</text>
+    </string>
+    <string id="wiz_gonec_pravosudiya_rjaviu_start_18">
+        <text>Буду ждать.</text>
+    </string>
+    <string id="wiz_gonec_pravosudiya_rjaviu_start_2">
+        <text>В общем, помнишь ты меня просил узнать какого хрена "синие" здесь забыли?</text>
+    </string>
+    <string id="wiz_gonec_pravosudiya_rjaviu_start_3">
+        <text>Ну помню и что? Да и ты уже узнал, говорил ведь арт они какой-то искали.</text>
+    </string>
+    <string id="wiz_gonec_pravosudiya_rjaviu_start_4">
+        <text>Искали… Артефакт, это мелочь по сравнению с тем, что мне удалось ещё раскопать.</text>
+    </string>
+    <string id="wiz_gonec_pravosudiya_rjaviu_start_5">
+        <text>Да что там? Говори уже!</text>
+    </string>
+    <string id="wiz_gonec_pravosudiya_rjaviu_start_6">
+        <text>Я когда за "синими" следил, устранил их гонца, у него был ПДА, я по началу особого внимания не предал этому, так вот, когда я тебе доложил обо всём, я сходил к Иванычу и попросил разблокировать тот ПДА. Иваныч - разблокировал, и в ПДА была зацепка, из которой выяснилось, что Коста как-то связан с "синими", я и решил дождаться ночи и двинул к ним в лагерь, думал, что они уже свалили, но они ждали меня. Ждали они потому, что их предупредил - Коста. Подтверждение сейчас скину тебе на ПДА.</text>
+    </string>
+    <string id="wiz_gonec_pravosudiya_rjaviu_start_7">
+        <text>Коста? Наёмники?... Чёрт, я конечно видел, что он не особо разговорчив был на тему о наёмниках, но чтобы работать с ними?</text>
+    </string>
+    <string id="wiz_gonec_pravosudiya_rjaviu_start_8">
+        <text>Ты прочти то, что я тебе только что сбросил.</text>
+    </string>
+    <string id="wiz_gonec_pravosudiya_rjaviu_start_9">
+        <text>[Читает архив сообщений из ПДА Кривого].</text>
+    </string>
+    <string id="wiz_ivanich_about_yourself_0">
+        <text>Расскажи о себе.</text>
+    </string>
+    <string id="wiz_ivanich_about_yourself_1">
+        <text>Я, как вы молодые говорите, "старый совок". Родом из Донецкой области, выучился, молодым специалистом уехал в город, чтобы поступить на завод и трудиться там всю жизнь. Я сам инженер. Сюда вообще случайно попал, работа подвернулась и меня кинули с зарплатой, а там на "Большой Земле", встретил паренька одного, так тот мне про Зону и рассказал, мол можно здесь денег неплохих поднять, вот я и пришёл. Видал уже много разного здесь, но решил осесть и ремонтировать парням всякое, благо образование и руки есть.</text>
+    </string>
+    <string id="wiz_ivanich_merc_pda_unlocking_done_0">
+        <text>Получил от тебя сообщение, ну что удалось вскрыть?</text>
+    </string>
+    <string id="wiz_ivanich_merc_pda_unlocking_done_1">
+        <text>А чегож нет-то! Вот те аппарат, я как культурный технарь, внутрь не лез, так что вся инфа в твоём распоряжении - дерзай!</text>
+    </string>
+    <string id="wiz_ivanich_merc_pda_unlocking_start_0">
+        <text>Иваныч, дело к тебе есть!</text>
+    </string>
+    <string id="wiz_ivanich_merc_pda_unlocking_start_1">
+        <text>Дело? Ну выкладывай коли не шутишь.</text>
+    </string>
+    <string id="wiz_ivanich_merc_pda_unlocking_start_2">
+        <text>Нужно ПДА один разблокировать, поможешь?</text>
+    </string>
+    <string id="wiz_ivanich_merc_pda_unlocking_start_3">
+        <text>Помогу, не бесплатно - разумеется.</text>
+    </string>
+    <string id="wiz_ivanich_merc_pda_unlocking_start_4">
+        <text>Сколько?</text>
+    </string>
+    <string id="wiz_ivanich_merc_pda_unlocking_start_5">
+        <text>Давай полторы и разойдёмся как в море корабли.</text>
+    </string>
+    <string id="wiz_ivanich_merc_pda_unlocking_start_6">
+        <text>Согласен, вот ПДА.</text>
+    </string>
+    <string id="wiz_ivanich_merc_pda_unlocking_start_66">
+        <text>У меня нет такой суммы.</text>
+    </string>
+    <string id="wiz_ivanich_merc_pda_unlocking_start_7">
+        <text>Славно! Как закончу, сразу с свяжусь с тобой.</text>
+    </string>
+    <string id="wiz_ivanich_merc_pda_unlocking_start_77">
+        <text>Как будет, тогда и подходи.</text>
+    </string>
+    <string id="wiz_jekan_second_quest_done_0">
+        <text>Вот те карты, о которых ты говорил.</text>
+    </string>
+    <string id="wiz_jekan_second_quest_done_1">
+        <text>Хорошая работа - Змей! Вот награда.</text>
+    </string>
+    <string id="wiz_jekan_second_quest_start_0">
+        <text>Ну как себя чувствуешь после плена?</text>
+    </string>
+    <string id="wiz_jekan_second_quest_start_1">
+        <text>Уже лучше, слушай, я тут пока в плену был, от бандитов слыхал, что в окрестностях где-то упавший вертолёт лежит и в нём есть карта зоны с разного рода отметками.</text>
+    </string>
+    <string id="wiz_jekan_second_quest_start_2">
+        <text>И что ты хочешь?</text>
+    </string>
+    <string id="wiz_jekan_second_quest_start_3">
+        <text>Хочу, чтобы ты нашёл этот самый вертолёт и достал из него эти самые карты, я хорошо заплачу за них. Искать его стоит недалеко транспортного туннеля.</text>
+    </string>
+    <string id="wiz_jekan_second_quest_start_4">
+        <text>Хорошо, я постараюсь найти.</text>
+    </string>
+    <string id="wiz_jekan_second_quest_start_44">
+        <text>Извеняй, но своих дел по горло…</text>
+    </string>
+    <string id="wiz_katacombs_foma_starik_die_dialog_0">
+        <text>Получил твоё сообщение, что там?</text>
+    </string>
+    <string id="wiz_katacombs_foma_starik_die_dialog_1">
+        <text>Тут такое дело... Старика нашли, не совсем живым...</text>
+    </string>
+    <string id="wiz_katacombs_foma_starik_die_dialog_2">
+        <text>Твою мать! И что теперь?!</text>
+    </string>
+    <string id="wiz_katacombs_foma_starik_die_dialog_3">
+        <text>Да погоди ты! У него в ПДА была инфа о каком-то схроне, вот координаты, может там есть что-то что тебе поможет, но из этого схрона мне понадобиться одна приблуда, когда найдёшь схрон - поймёшь, что это.</text>
+    </string>
+    <string id="wiz_katacombs_foma_starik_die_dialog_4">
+        <text>Договорились.</text>
+    </string>
+    <string id="wiz_kosta_about_terr_0">
+        <text>Что можешь рассказать об этом месте?</text>
+    </string>
+    <string id="wiz_kosta_about_terr_1">
+        <text>Ну слушай: Мы сейчас находимся на территории бывшего НИИ, но по некоторым данным, НИИ тут было ещё до аварии на ЧАЭС, а вот после аварии, здесь вояки обосновались, что они тут делали? Да и сам не знаю… Однако факт их присутствия здесь имеется, только на улицу выйди, как в глаза техника разная бросается.  На северо-востоке от нас, есть территория каких-то заброшенных ангаров, там что-то вроде рем-базы или чего-то подобного было, а может и просто стоянка для автобусников, короче хрен поймёшь, но есть деталь одна, там в одном из ангаров, есть спуск в подземку, но вот что в этой подземке, никто не знает! Двери потому что никто ещё не взломал. Немного дальше этих ангаров, есть старая военная база, но там территория закрыта и аномалий много, поэтому не советовал бы туда ходить. На востоке от нас, есть транспортный туннель, там наши ребята караул ведут, но бандиты довольно часто совершают набеги. Далее идёт старый КПП, вот там уже бандиты засели - стреляют или на гоп-стоп берут всех и каждого…</text>
+    </string>
+    <string id="wiz_kosta_about_terr_2">
+        <text>Интересно, однако!</text>
+    </string>
+    <string id="wiz_kosta_about_terr_3">
+        <text>Да погоди ты! Это ещё не всё! На юго-западе есть старая деревенька, там как раз братья наши меньшие и живут, рядом с деревней есть пара аномальных скоплений, далее на юго-востоке есть небольшая стоянка братьев наших меньших и там же есть дорога, но та в свою очередь усыпана аномалиями.</text>
+    </string>
+    <string id="wiz_kosta_about_terr_4">
+        <text>Погоди, так выходит, что отсюда нет выхода?</text>
+    </string>
+    <string id="wiz_kosta_about_terr_5">
+        <text>Как это нет? Есть, ты же прибыл сюда! Поэтому мы и не отчаиваемся, проводники знают о таких тропках, которые сами бы ми, ни в жизнь не отыскали бы! Вот так вот.</text>
+    </string>
+    <string id="wiz_kosta_about_yourself_0">
+        <text>Расскажи о себе?</text>
+    </string>
+    <string id="wiz_kosta_about_yourself_1">
+        <text>Давно меня об этом не просили… Не привычно даже, м-да. Да особо рассказывать-то и нечего, обычный сталкер как и все здесь, начинал как и все с поручений Сидоровича на Кордоне, потом прибился к группе одиночек которые занимались поисками артефактов на заказ, они меня так сказать научили и дальше сам уже начал заниматься, но быстро мне это надоело. На Большой земле-то у меня проблем нет, а в Зону пришёл исключительно из интереса к происходящему, да и есть здесь что-то такое, что не даёт заскучать.</text>
+    </string>
+    <string id="wiz_kosta_about_yourself_2">
+        <text>А сюда-то как попал?</text>
+    </string>
+    <string id="wiz_kosta_about_yourself_3">
+        <text>Всё просто, группа сталкеров во главе с Жеканом, решили исследовать новые места, вот я и примкнул к группе и вот мы здесь. Жекан правда, странный был, но лидер отличный, а вот где он сейчас и вернётся-ли не известно… Он ведь перед уходом, назначил меня своим замом и двинул в рейд, а зачем и на сколько, никто так и не узнал.</text>
+    </string>
+    <string id="wiz_krivoy_enemy_with_neutral_0">
+        <text>О, а вот и шнырь, который нашего завалил, ну что паря, говори: какого хрена здесь забыл?!</text>
+    </string>
+    <string id="wiz_krivoy_enemy_with_neutral_1">
+        <text>[Молчит]</text>
+    </string>
+    <string id="wiz_krivoy_enemy_with_neutral_2">
+        <text>В молчанку решил поиграть? Базар - вокзал! Мне и парням моим спешить пока-что некуда, поэтому мы подождём, когда у тебя язык развяжется.</text>
+    </string>
+    <string id="wiz_krivoy_enemy_with_neutral_3">
+        <text>[Молчит]</text>
+    </string>
+    <string id="wiz_lt_krasnopolsky_enemy_with_neutral_0">
+        <text>Змей? Ты как здесь?</text>
+    </string>
+    <string id="wiz_lt_krasnopolsky_enemy_with_neutral_1">
+        <text>Да вот позагорать решил, а вы?</text>
+    </string>
+    <string id="wiz_lt_krasnopolsky_enemy_with_neutral_2">
+        <text>Мы? Да как всегда! Получили приказ на закрепление, а к нему ещё и наводку на стоянку "синих".</text>
+    </string>
+    <string id="wiz_lt_krasnopolsky_enemy_with_neutral_3">
+        <text>Ясно, ладно лейтенант, пойду я.</text>
+    </string>
+    <string id="wiz_lt_krasnopolsky_enemy_with_neutral_second_0">
+        <text>Лейтенант, вопрос к тебе есть.</text>
+    </string>
+    <string id="wiz_lt_krasnopolsky_enemy_with_neutral_second_1">
+        <text>Слушаю.</text>
+    </string>
+    <string id="wiz_lt_krasnopolsky_enemy_with_neutral_second_2">
+        <text>Ключей у товарищей "синих", ты случаем не находил?</text>
+    </string>
+    <string id="wiz_lt_krasnopolsky_enemy_with_neutral_second_3">
+        <text>Был один, просто так не отдам…</text>
+    </string>
+    <string id="wiz_lt_krasnopolsky_enemy_with_neutral_second_4">
+        <text>Денег у меня не особо, снаряги как видишь и вовсе нет.</text>
+    </string>
+    <string id="wiz_lt_krasnopolsky_enemy_with_neutral_second_5">
+        <text>Успокойся, сразу за материальное… Не нужно мне ничего из этого. Меня интересует, только одно: почему ты у "синих" в карцере сидел? Змей, я тебя давно знаю, поэтому юлить и байки травить не стоит.</text>
+    </string>
+    <string id="wiz_lt_krasnopolsky_enemy_with_neutral_second_6">
+        <text>По наводке сталкера - Ржавого, который был обеспокоен появлением "синих" в этих краях, поэтому и попросил "разнюхать" меня побольше информации. Вот я и разнюхал, что "синие" имели какие-то связи с местным главой нейтралов, об этом я узнал из ПДА одного из этих… Так вот "синим" заказали какой-то редкий артефакт, сами они его решили не искать, решили, нанять местного сборщика. Сборщик-то артефакт нашёл, но вот вместо оплаты, его просто завалили, а раз в лагере об этом сборщике все молчат, значит дело замял - лидер. Вот я и решил собрать больше улик, чтобы прижать к стене крысу, но вместо сбора улик, меня оглушили… Я думаю, меня ждали…</text>
+    </string>
+    <string id="wiz_lt_krasnopolsky_enemy_with_neutral_second_7">
+        <text>Правильно думаешь! Видимо их предупредили, а значит кто-то другой не хотел дабы ты что-то разнюхал здесь, кстати, в ПДА "синего" была переписка одна, возможно она тебя заинтересует, я сбросил архив сообщений тебе.</text>
+    </string>
+    <string id="wiz_lt_krasnopolsky_enemy_with_neutral_second_8">
+        <text>Благодарствую лейтенант, бывай.</text>
+    </string>
+    <string id="wiz_lt_krasnopolsky_enemy_with_neutral_third_0">
+        <text>Лейтенант, вопрос к тебе есть.</text>
+    </string>
+    <string id="wiz_lt_krasnopolsky_enemy_with_neutral_third_1">
+        <text>Слушаю.</text>
+    </string>
+    <string id="wiz_lt_krasnopolsky_enemy_with_neutral_third_2">
+        <text>Ключей у товарищей "синих", ты случаем не находил?</text>
+    </string>
+    <string id="wiz_lt_krasnopolsky_enemy_with_neutral_third_3">
+        <text>Был один, просто так не отдам…</text>
+    </string>
+    <string id="wiz_lt_krasnopolsky_enemy_with_neutral_third_4">
+        <text>Денег у меня не особо, снаряги как видишь и вовсе нет.</text>
+    </string>
+    <string id="wiz_lt_krasnopolsky_enemy_with_neutral_third_5">
+        <text>Успокойся, сразу за материальное… Не нужно мне ничего из этого. Меня интересует, только одно: почему ты у "синих" в карцере сидел? Змей, я тебя давно знаю, поэтому юлить и байки травить не стоит.</text>
+    </string>
+    <string id="wiz_lt_krasnopolsky_enemy_with_neutral_third_6">
+        <text>"Синие" тут видимо местного главу нейтралов купили, тот им в свою очередь слил опытного сборщика артефактов - Назара. Сталкер этот по заказу нашёл какой-то редкий арт, который в свою очередь кто-то заказал "синим", вместо оплаты за находку, сталкера завалили, так сказать концы в воду, я же нашёл тело этого Назара и решил собрать больше доказательств работы "синих" с местным главой нейтралов. Пришёл сюда ночью, и вместо поисков, меня просто трахнули по голове. Вот так вот…</text>
+    </string>
+    <string id="wiz_lt_krasnopolsky_enemy_with_neutral_third_7">
+        <text>М-да… Печально слышать, что нейтралы своих же продают… Ладно, вот ключ и ещё Змей, в ПДА "синего" была переписка одна, возможно, как раз с лидером этих самых нейтралов, так вот я уже сбросил тебе архив этих сообщений.</text>
+    </string>
+    <string id="wiz_lt_krasnopolsky_enemy_with_neutral_third_8">
+        <text>Спасибо лейтенант, век не забуду!</text>
+    </string>
+    <string id="wiz_owl_stalker_trader_sell_items_0">
+        <text>Думаю, тебя заинтересует...</text>
+    </string>
+    <string id="wiz_owl_stalker_trader_sell_items_1">
+        <text>Что у тебя?</text>
+    </string>
+    <string id="wiz_owl_stalker_trader_sell_items_11">
+        <text>ПДА Назара.</text>
+    </string>
+    <string id="wiz_owl_stalker_trader_sell_items_111">
+        <text>Даже не стану спрашивать откуда он у тебя, даю 1500 тысячи.</text>
+    </string>
+    <string id="wiz_owl_stalker_trader_sell_items_1111">
+        <text>Договорились.</text>
+    </string>
+    <string id="wiz_owl_stalker_trader_sell_items_11112">
+        <text>Земля тебе пухом - Назар...</text>
+    </string>
+    <string id="wiz_owl_stalker_trader_sell_items_12">
+        <text>ПДА посланника наёмников. Нашёл рядом с военной базой.</text>
+    </string>
+    <string id="wiz_owl_stalker_trader_sell_items_121">
+        <text>Дам за него 1000.</text>
+    </string>
+    <string id="wiz_owl_stalker_trader_sell_items_1211">
+        <text>Договорились.</text>
+    </string>
+    <string id="wiz_owl_stalker_trader_sell_items_12112">
+        <text>Очень интересно... Отлично поработал, охотник!</text>
+    </string>
+    <string id="wiz_owl_stalker_trader_sell_items_13">
+        <text>Ноутбук из лагеря наёмников.</text>
+    </string>
+    <string id="wiz_owl_stalker_trader_sell_items_131">
+        <text>Предлагаю за него 2000.</text>
+    </string>
+    <string id="wiz_owl_stalker_trader_sell_items_1311">
+        <text>Договорились.</text>
+    </string>
+    <string id="wiz_owl_stalker_trader_sell_items_13112">
+        <text>Вот оно что! Интересно... Очень интересно!</text>
+    </string>
+    <string id="wiz_owl_stalker_trader_sell_items_14">
+        <text>ПДА сталкера Резака.</text>
+    </string>
+    <string id="wiz_owl_stalker_trader_sell_items_141">
+        <text>Предлагаю за него 500.</text>
+    </string>
+    <string id="wiz_owl_stalker_trader_sell_items_1411">
+        <text>Договорились.</text>
+    </string>
+    <string id="wiz_owl_stalker_trader_sell_items_14112">
+        <text>Как и предполагал, ничего интересного...</text>
+    </string>
+    <string id="wiz_rjaviu_about_yourself_0">
+        <text>Расскажи о себе.</text>
+    </string>
+    <string id="wiz_rjaviu_about_yourself_1">
+        <text>Честно говоря, я даже и не знаю, что говорить-то… Обычный сталкер, не ветеран, но и не отмычка, в Зону пришёл пару лет назад, особо ни с кем не знаком. Вот как-то так.</text>
+    </string>
+    <string id="wiz_storyline_dialog_foma_bsd_done_0">
+        <text>Мутант мёртв, говори что знаешь о группе Бизона.</text>
+    </string>
+    <string id="wiz_storyline_dialog_foma_bsd_done_1">
+        <text>Бывали здесь, правда на долго не задержались. Закупились жратвой, да патронами и ушли. От главного их услышал, что к туннелю они пойдут, вот там их и ищи. Это всё что я знаю.</text>
+    </string>
+    <string id="wiz_storyline_dialog_foma_bsd_done_2">
+        <text>М-да… Не густо, но и на этом спасибо.</text>
+    </string>
+    <string id="wiz_storyline_dialog_foma_katacombs_0">
+        <text>Ты кажется что-то хотел?</text>
+    </string>
+    <string id="wiz_storyline_dialog_foma_katacombs_1">
+        <text>Именно! Не буду ходить вокруг да около, мне нужна информация о катакомбах.</text>
+    </string>
+    <string id="wiz_storyline_dialog_foma_katacombs_2">
+        <text>Каких ещё катакомбах?</text>
+    </string>
+    <string id="wiz_storyline_dialog_foma_katacombs_3">
+        <text>Чёрт… В общем, был я в туннеле, о котором ты мне сообщил. Группы там соответственно не нашёл, но следы их пребывания и ПДА одного из членов группы, я всё же обнаружил. Так вот, в ПДА есть упоминание, о неких катакомбах, которые выведут группу куда-то, увы больше информации достать не удалось. Поэтому, Я снова пришёл к тебе за помощью.</text>
+    </string>
+    <string id="wiz_storyline_dialog_foma_katacombs_4">
+        <text>Интересно получается… Слыхал я конечно, о катакомбах, но думал, байки - не более. Как оказалось, не байки это. Касательно самих катакомб, я тебе помочь не смогу, однако к нам в бар, иногда старик один заходит, он здесь частенько бывает, так вот, он-то должен знать, что за катакомбы и куда они ведут.</text>
+    </string>
+    <string id="wiz_storyline_dialog_foma_katacombs_5">
+        <text>Отлично, где мне его найти?</text>
+    </string>
+    <string id="wiz_storyline_dialog_foma_katacombs_6">
+        <text>Чего не знаю, того не знаю. Однако могу тебе сообщить, когда он вновь к нам явится, не за просто так конечно.</text>
+    </string>
+    <string id="wiz_storyline_dialog_foma_katacombs_7">
+        <text>Само собой, что хочешь взамен?</text>
+    </string>
+    <string id="wiz_storyline_dialog_foma_katacombs_8">
+        <text>Давай так, у меня пока нет стоящего дела, чтобы закрыть вопрос оплаты. Поэтому предлагаю следующий вариант: Когда такое дело появится, ты его выполнишь. По рукам? Кстати, если не хочешь попросту ожидать от меня сообщения, то поговори с ребятами, может они работку какую не пыльную тебе подкинут.</text>
+    </string>
+    <string id="wiz_storyline_dialog_foma_katacombs_9">
+        <text>По рукам.</text>
+    </string>
+    <string id="wiz_storyline_dialog_foma_start_0">
+        <text>Охотник? Интересно! Очень интересно… Чего встал? Говори зачем пришёл?</text>
+    </string>
+    <string id="wiz_storyline_dialog_foma_start_1">
+        <text>Откуда знаешь, что я охотник? Хотя неважно! Коста посоветовал с тобой поговорить насчёт группы Бизона, что можешь о них рассказать?</text>
+    </string>
+    <string id="wiz_storyline_dialog_foma_start_2">
+        <text>О группе Бизона? Немного, но ты ведь понимаешь, что за информацию придётся заплатить?</text>
+    </string>
+    <string id="wiz_storyline_dialog_foma_start_3">
+        <text>Понимаю, сколько?</text>
+    </string>
+    <string id="wiz_storyline_dialog_foma_start_4">
+        <text>Не-не-не, ты не понял, меня деньги особо не интересуют, у меня более продуктивное предложение.</text>
+    </string>
+    <string id="wiz_storyline_dialog_foma_start_5">
+        <text>Слушаю…</text>
+    </string>
+    <string id="wiz_storyline_dialog_foma_start_6">
+        <text>Короче, недалеко отсюда есть болотце, так вот там тварь одна обитает, которая нашим парням, мешает арты из болота собирать. Дельце исконно по твоему профилю деятельности.</text>
+    </string>
+    <string id="wiz_storyline_dialog_foma_start_7">
+        <text>Давай сразу уточним! Я убиваю тварь, а ты мне всё что знаешь о группе Бизона, так?</text>
+    </string>
+    <string id="wiz_storyline_dialog_foma_start_8">
+        <text>Верно, смотри вот здесь и находится эта тварь, как закончишь - возвращайся.</text>
+    </string>
+    <string id="wiz_storyline_dialog_foma_start_9">
+        <text>Хорошо, ожидай.</text>
+    </string>
+    <string id="wiz_storyline_dialog_kosta_start_0">
+        <text>Новые лица? Интересно! Рассказывай, кто таков? С чем пришёл?</text>
+    </string>
+    <string id="wiz_storyline_dialog_kosta_start_1">
+        <text>Охотник - я, Змеем кличут и у меня дело. В общем, я ищу группу сталкеров во главе с Бизоном, по моим данным, они должны были к вам заходить. Что можешь рассказать?</text>
+    </string>
+    <string id="wiz_storyline_dialog_kosta_start_2">
+        <text>Ну, что же охотник - Змей, честно говоря… Ничего рассказать не могу. Ты лучше к Фоме загляни в бар, он у нас торговец местный, если твои ребята и были здесь, то с ним точно общались. Кстати, меня Костой кличут, если что.</text>
+    </string>
+    <string id="wiz_storyline_dialog_kosta_start_3">
+        <text>Спасибо, пойду потолкую с ним.</text>
+    </string>
+    <string id="wiz_storyline_dialog_rjaviu_start_0">
+        <text>Эй, сталкер! А ведь я тебя знаю!</text>
+    </string>
+    <string id="wiz_storyline_dialog_rjaviu_start_1">
+        <text>Мужик, ты обознался, я здесь впервые, не можешь ты меня знать…</text>
+    </string>
+    <string id="wiz_storyline_dialog_rjaviu_start_2">
+        <text>О нет! Знаю! Ты ведь охотник - Змей, если память не изменяет. Это ведь ты с группой Гонты, в окрестностях Затона зачистил логово снорков?</text>
+    </string>
+    <string id="wiz_storyline_dialog_rjaviu_start_3">
+        <text>Ну… Было дело, а что?</text>
+    </string>
+    <string id="wiz_storyline_dialog_rjaviu_start_4">
+        <text>Да ничего, просто я тот сталкер, которого вы спасли - Ржавым меня кличут, кстати будем знакомы.</text>
+    </string>
+    <string id="wiz_storyline_dialog_rjaviu_start_5">
+        <text>Ах вот оно что, тогда понятно, ну в таком случае приятно познакомится. Кстати, а ты здесь давно обитаешь?</text>
+    </string>
+    <string id="wiz_storyline_dialog_rjaviu_start_6">
+        <text>Не особо, всего третья неделя пошла, а что?</text>
+    </string>
+    <string id="wiz_storyline_dialog_rjaviu_start_7">
+        <text>Слушай, ты часом не встречал ребят из группы Бизона или его самого?</text>
+    </string>
+    <string id="wiz_storyline_dialog_rjaviu_start_8">
+        <text>Нее брат, ты лучше к лидеру нашему загляни или к торговцу, они-то точно должны были с ними видится, если тут бывали конечно.</text>
+    </string>
+    <string id="wiz_storyline_dialog_rjaviu_start_9">
+        <text>Хорошо, пообщаюсь с ними. Ладно, пора мне…</text>
+    </string>
+    <string id="wiz_storyline_mercs_rjaviu_done_0">
+        <text>Ну что там с "синими"?</text>
+    </string>
+    <string id="wiz_storyline_mercs_rjaviu_done_1">
+        <text>Ничего сверхъестественного, их наняли на поиски редкого артефакта, что за арт, узнать не удалось. Главное, что я узнал, так это то, что они собираются уже валить отсюда. Так что не стоит более переживать.</text>
+    </string>
+    <string id="wiz_storyline_mercs_rjaviu_done_2">
+        <text>Это всё что удалось узнать?</text>
+    </string>
+    <string id="wiz_storyline_mercs_rjaviu_done_3">
+        <text>Артефакт лично они не искали, наняли какого-то сталкера, тот нашёл артефакт, и они шлёпнули его. И ещё главаря "синих" - Кривым кличут, на этом всё.</text>
+    </string>
+    <string id="wiz_storyline_mercs_rjaviu_done_4">
+        <text>Не густо, ну будем надеяться, что они свалят. Так или иначе, я постараюсь нарыть информацию по лидеру "синих".</text>
+    </string>
+    <string id="wiz_storyline_mercs_rjaviu_done_5">
+        <text>Попробуй, но что-то мне подсказывает, что это группа одного заказа, людей наняли, друг друга они и знать не знают, после выполнения просто разойдутся в разные стороны и всё дело с концом. Что кстати с моей наградой?</text>
+    </string>
+    <string id="wiz_storyline_mercs_rjaviu_done_6">
+        <text>Как знать… Вот твоя награда, думаю, этого более чем достаточно!</text>
+    </string>
+    <string id="wiz_storyline_mercs_rjaviu_start_0">
+        <text>А вот и ты, подзаработать есть желание?</text>
+    </string>
+    <string id="wiz_storyline_mercs_rjaviu_start_1">
+        <text>Естественно, говори, чего делать-то нужно?</text>
+    </string>
+    <string id="wiz_storyline_mercs_rjaviu_start_2">
+        <text>Смотри парни наши недавно из рейда вернулись и рассказали, что видели небольшую группу наёмников. Те ошивались недалеко от старой военной базы. Ребята чуть обождали и увидели, как "синие" спокойно взломали ворота и скрылись на территории. Твоя задача выяснить какого хрена "синие" здесь забыли.</text>
+    </string>
+    <string id="wiz_storyline_mercs_rjaviu_start_3">
+        <text>"Синие"? Они же везде, у них контракты по всей Зоне и то что они пришли и сюда, вообще не мудрено! Кстати, ты Косте рассказал о "синих"? И на кой ляд тебе знать, что здесь "синие" делают?</text>
+    </string>
+    <string id="wiz_storyline_mercs_rjaviu_start_4">
+        <text>Говорил, да только он плечами пожал и сказал, мол не твоё это дело и не стоит вообще в дела "синих" лезть. Я бы и не лез, да вот только смущает меня само присутствие "синих" в аккурат с нашим лагерем. Ну так что?</text>
+    </string>
+    <string id="wiz_storyline_mercs_rjaviu_start_5">
+        <text>Коста прав, не стоит лезть в дела "синих", однако с другой стороны… Ладно, хрен с тобой, надеюсь гонорар будет достойным.</text>
+    </string>
+    <string id="wiz_storyline_mercs_rjaviu_start_6">
+        <text>Наградой не обижу, уж будь уверен!</text>
+    </string>
+    <string id="wiz_storyline_mercs_rjaviu_start_7">
+        <text>Надеюсь… Потому что я буду рисковать своей жопой…</text>
+    </string>
+    <string id="wiz_tech_secondary_quest_1_done_0">
+        <text>Иваныч, я касательно сканера и отмычки.</text>
+    </string>
+    <string id="wiz_tech_secondary_quest_1_done_1">
+        <text>Что там?</text>
+    </string>
+    <string id="wiz_tech_secondary_quest_1_done_2">
+        <text>Отмычка мёртв, его по всей видимости мутанты убили, а сканер при нём был, я установил в указанном тобой месте.</text>
+    </string>
+    <string id="wiz_tech_secondary_quest_1_done_3">
+        <text>Сталкера жаль конечно, но это Зона, никто ни от чего не застрахован…</text>
+    </string>
+    <string id="wiz_tech_secondary_quest_1_done_4">
+        <text>Согласен, у тебя может ещё работа какая-нибудь имеется?</text>
+    </string>
+    <string id="wiz_tech_secondary_quest_1_done_5">
+        <text>Да, есть, подходи позже, я пока занят.</text>
+    </string>
+    <string id="wiz_tech_secondary_quest_1_done_6">
+        <text>Хорошо, бывай.</text>
+    </string>
+    <string id="wiz_tech_secondary_quest_1_go_0">
+        <text>Бог в помощь, есть работа какая-нибудь?</text>
+    </string>
+    <string id="wiz_tech_secondary_quest_1_go_1">
+        <text>Благодарствую! Работа? Всегда имеется, всё зависит от того, что ты умеешь…</text>
+    </string>
+    <string id="wiz_tech_secondary_quest_1_go_2">
+        <text>Что умею? Да много чего, к примеру, был опыт работы с технарями Учёных, я им помогал с настройкой оборудования и замерами аномальных полей, так же отлично справляюсь с охотой на живность всякую.</text>
+    </string>
+    <string id="wiz_tech_secondary_quest_1_go_3">
+        <text>Даже так? Охота меня мало интересует, а вот опыт работы с учёными, мне подходит.</text>
+    </string>
+    <string id="wiz_tech_secondary_quest_1_go_4">
+        <text>Ну… Не томи, что за работа-то?</text>
+    </string>
+    <string id="wiz_tech_secondary_quest_1_go_5">
+        <text>В общем, я уже пару месяцев как заключил контракт с учёными, они мне оборудование, я им сканеры расставляю или людей для исследования каких-либо комплексов нахожу, так сказать прораб, и себе копеечку и людям. Так вот, по поводу сканеров, послал я давеча одного сталкера, чтоб тот сканер-то и установил, но от него уже давно ничего не слышно, а последний раз на связь выходил вблизи от той аномалии, в которой и нужно сканер установить. Что-то мне подсказывает, что он мёртв, но работу так или иначе выполнить нужно, поэтому найди его и забери у него сканер, точку где сканер установить, я тебе так же отмечу, за награду не переживай.</text>
+    </string>
+    <string id="wiz_tech_secondary_quest_1_go_6">
+        <text>Я тебя понял, тогда отправляюсь.</text>
+    </string>
+</string_table>

@@ -1,0 +1,263 @@
+[walker@def]
+gather_items_enabled = false
+help_wounded_enabled = false
+corpse_detection_enabled = false
+wounded = wounded
+combat_ignore_cond = {=is_enemy_actor} true
+on_info9 = {=actor_enemy} remark@fight_end %+sad_radik_actor_enemy%
+
+[walker@cut]
+gather_items_enabled = false
+help_wounded_enabled = false
+corpse_detection_enabled = false
+wounded = wounded
+combat_ignore_cond = true
+combat_ignore_keep_when_attacked = true
+invulnerable = true
+meet = no_meet
+
+[wounded] ;Не должен быть раненым
+hp_state = 		0|wounded_heavy@help_heavy
+hp_state_see = 	0|wounded_heavy@help_heavy
+hp_victim = 	0|nil
+hp_fight = 		0|false
+hp_cover = 		0|false
+
+[remark@fight_end]
+wounded = wounded
+
+; -------------------------------------------------------------------------------------------------------------------------------------------- comander after
+[logic@radik_after_0]
+active = walker@0_after
+suitable = { =target_squad_name(sad_stalker_radik_squad) =is_squad_commander +sad_radik_task_inside_done } true
+prior = 250
+post_combat_time = 0, 0
+on_death = death@member
+on_hit = hit
+
+[walker@0_after]:walker@def					; go to basement
+path_walk = radik_after_walk
+path_look = radik_after_look
+on_signal = see_fedor | walker@0a_wait_actor %+sad_b4_radik_in_basement%
+on_info = {+sad_b4_teleport_cs_radik_to_jail} walker@cut_10 %=teleport_npc(sad_b4_radik_inside_jail_walk_start) =stop_sound%
+def_state_moving = run
+meet = no_meet
+
+[walker@0a_wait_actor]:walker@def			; wait for actor
+path_walk = radik_after_walk
+path_look = radik_after_look
+on_info = {=actor_in_zone(sad_b4_sr_jail_zone_2)} remark@0a_talk_actor_0
+on_info2 = {+sad_b4_actor_dont_care_fedor} animpoint@0a_go_animp
+on_game_timer = 1200 | {+sad_radik_otkaz} animpoint@0a_go_animp
+meet = no_meet
+
+[remark@0a_talk_actor_0]:walker@def			; 
+target = story | actor
+on_info = {+sad_fedor_dead} animpoint@0a_go_animp %=play_sound(sad_b4_radik_fedor_dead)%, {-sad_fedor_dead -sad_b4_jail_door_released} remark@0a_talk_actor_1 %=play_sound(sad_b4_radik_get_key)%, walker@0a_inside
+meet = no_meet
+
+[remark@0a_talk_actor_1]:walker@def 		; wait for door opened | todo: snd_on_use = go_get_the_key
+target = story | actor
+on_signal = sound_end | walker@0a_look_fedor
+on_info = {+sad_b4_teleport_cs_radik_to_jail} walker@cut_10 %=teleport_npc(sad_b4_radik_inside_jail_walk_start) =stop_sound%
+on_info2 = {+sad_b4_actor_dont_care_fedor} animpoint@0a_go_animp
+meet = no_meet
+
+[walker@0a_look_fedor]:walker@def 			; todo: snd = wait_bro
+path_walk = radik_after_walk
+path_look = radik_after_look
+on_info = {+sad_b4_jail_door_released} walker@0a_inside
+on_info2 = {+sad_fedor_dead} animpoint@0a_go_animp
+on_info3 = {+sad_b4_teleport_cs_radik_to_jail} walker@cut_10 %=teleport_npc(sad_b4_radik_inside_jail_walk_start) =stop_sound%
+on_info4 = {+sad_b4_actor_dont_care_fedor} animpoint@0a_go_animp
+meet = no_meet
+
+[walker@0a_inside]:walker@def
+path_walk = radik_inside_jail_walk_start
+path_look = radik_inside_jail_look
+on_info = {+sad_b4_teleport_cs_radik_to_jail} walker@cut_10 %=teleport_npc(sad_b4_radik_inside_jail_walk_start) =stop_sound%
+meet = no_meet
+
+[walker@cut_10]:walker@cut	; ----------------------------------- cut
+path_walk = radik_inside_jail_walk_start
+path_look = radik_inside_jail_look
+;def_state_moving = walk_noweap
+on_info = {+sad_b4_cutscene_start} walker@cut_11 %=sad_reset_animation%
+
+[walker@cut_11]:walker@cut
+path_walk = radik_inside_jail_walk
+path_look = radik_inside_jail_look
+def_state_moving = walk_noweap
+on_signal = radik_inside_reached | remark@cut_11s
+
+[remark@cut_11s]:walker@cut
+anim = sit
+target = path | sad_b4_radik_inside_jail_look, 0
+on_timer = 500 | remark@cut_12 %=play_sound(sad_b4_radik_phrase_1)%
+
+[remark@cut_12]:walker@cut
+anim = sit
+target = path | sad_b4_radik_inside_jail_look, 0
+on_signal = sound_end | remark@cut_13 %+sad_b4_cs_radik_sound_end%
+
+[remark@cut_13]:walker@cut
+anim = sit
+target = path | sad_b4_radik_inside_jail_look, 0
+on_info = {+sad_b4_cs_fedor_sound_end} animpoint@kill_sucker %=sad_reset_animation%
+
+[animpoint@kill_sucker]:walker@cut
+cover_name = sad_b4_cs_radik_kill_fedor_place
+avail_animations = sad_radik_kill_fedor
+use_camp = false
+on_info = {+sad_fedor_killed_by_radik} walker@cut_15 %=teleport_npc(sad_b4_radik_inside_jail_walk)%
+
+[walker@cut_15]:walker@cut
+path_walk = radik_inside_jail_walk
+path_look = cs_actor_place_2
+on_info = {+sad_b4_cs_camera_4_on} remark@cut_16 %=play_sound(sad_b4_radik_phrase_3)%
+
+[remark@cut_16]:walker@cut
+target = path | sad_b4_cs_actor_place_2, 0
+on_signal = sound_end | remark@cut_17 %+sad_b4_cs_radik_sound_end%
+
+[remark@cut_17]:walker@cut
+target = path | sad_b4_cs_actor_place_2, 0
+on_info = {+sad_b4_cutscene_end} animpoint@0a_go_animp
+
+; -------------------------------------------------------------------------------------------------------------------- go to table
+[animpoint@0a_go_animp]:walker@def
+cover_name = sad_b4_animp_poval_comandor
+on_info = {=animpoint_reached} animpoint@0_animp
+meet = meet@comandor
+
+[animpoint@0_animp]:walker@def
+cover_name = sad_b4_animp_poval_comandor
+out_restr = sad_b4_surge_hide
+on_info = {+sad_b4_arrive_to_b3} remark@comariva
+meet = meet@comandor
+
+[remark@comariva]
+snd = attack_begin
+
+; -------------------------------------------------------------------------------------------------------------------------------------------- 1 after
+[logic@radik_after_1]
+active = remark@1_ater
+suitable = { =target_squad_name(sad_stalker_radik_squad) !is_squad_commander +sad_radik_task_inside_done } true
+prior = 180
+on_death = death@member
+on_hit = hit
+post_combat_time = 0, 0
+
+[remark@1_ater]
+on_info = walker@1_after
+
+[walker@1_after]:walker@def
+path_walk = podval_guard_walk
+path_look = podval_guard_look
+meet = meet@mem
+
+; -------------------------------------------------------------------------------------------------------------------------------------------- 2 after / mech
+[logic@radik_after_2]
+active = remark@2_ater
+suitable = { =target_squad_name(sad_stalker_radik_squad) !is_squad_commander =check_npc_name(sad_radik_member_1) +sad_radik_task_inside_done } true
+prior = 200
+on_death = death@member
+on_hit = hit
+post_combat_time = 0, 0
+
+[remark@2_ater]
+on_info = animpoint@2_after
+
+[animpoint@2_after]:walker@def
+cover_name = sad_b4_animp_poval_1
+meet = meet@mech
+
+; -------------------------------------------------------------------------------------------------------------------------------------------- 3 after
+[logic@radik_after_3]
+active = remark@3_ater
+suitable = { =target_squad_name(sad_stalker_radik_squad) !is_squad_commander +sad_radik_task_inside_done } true
+prior = 160
+on_death = death@member
+on_hit = hit
+post_combat_time = 0, 0
+
+[remark@3_ater]
+on_info = animpoint@3_after
+
+[animpoint@3_after]:walker@def
+cover_name = sad_b4_animp_poval_2
+meet = meet@mem
+
+; -------------------------------------------------------------------------------------------------------------------------------------------- 4 after
+[logic@radik_after_4]
+active = remark@4_ater
+suitable = { =target_squad_name(sad_stalker_radik_squad) !is_squad_commander +sad_radik_task_inside_done } true
+prior = 160
+on_death = death@member
+on_hit = hit
+post_combat_time = 0, 0
+
+[remark@4_ater]
+on_info = animpoint@4_after
+
+[animpoint@4_after]:walker@def
+cover_name = sad_b4_animp_poval_3
+meet = meet@mem
+
+
+; --
+[remark@kill]
+
+; --------------------------------------------------------------------------------------------------------------------------------------------
+[meet]
+close_snd_hello = nil
+close_distance  = 2
+close_victim    = actor
+close_anim = nil
+use = {=actor_enemy} false, {+sad_radik_otkaz} false, true
+trade_enable = false
+allow_break = false
+
+[meet@comandor]
+close_snd_hello = nil
+close_distance  = 2
+close_victim    = actor
+close_anim 		= wait_na
+use 			= {=dist_to_actor_ge(2)} false, {=actor_enemy} false, {+sad_radik_otkaz} false, true
+meet_dialog 	= sad_b4_talk_after
+trade_enable 	= {=check_npc_name(sad_radik_member_1)} true, false
+snd_on_use 		= {+sad_radik_otkaz} meet_use_no_default, nil
+allow_break 	= false
+
+[meet@comandor2]:meet@comandor
+close_distance  = 0
+
+[meet@mech]
+close_snd_hello = nil
+close_distance  = 0
+close_victim    = nil
+close_anim 		= nil
+use 			= {=actor_enemy} false, {+sad_radik_otkaz} false, {=dist_to_actor_ge(2)} false, true
+snd_on_use 		= {+sad_radik_otkaz} meet_use_no_default, nil
+meet_dialog 	= sad_sher_tech_start
+
+[meet@mem]
+close_snd_hello = nil
+close_distance  = 0
+close_victim    = nil
+close_anim		= nil
+snd_on_use 		= {+sad_radik_otkaz} meet_use_no_default, {!actor_enemy} meet_use_no_talk_leader, nil
+use 			= false
+
+[death]
+on_info = {=killed_by_actor} %+sad_radik_dead +sad_radik_actor_enemy%, %+sad_radik_dead%
+
+[death@member]
+on_info = {=killed_by_actor} %+sad_radik_actor_enemy%
+
+[hit]
+on_info = {=actor_enemy} %+sad_radik_actor_enemy%
+
+
+
+

@@ -1,0 +1,109 @@
+---------------Муравей-----------------
+[logic@esc_squad_village_muravei]
+suitable = {=check_npc_name(esc_stalker_muravei)} true
+prior = 200
+active = remark@esc_stalker_muravei_escape
+
+[remark@esc_stalker_muravei_escape]
+anim = wait_na
+target = story | actor
+on_info = {+esc_zver_come_back_vilage} walker@esc_stalker_muravei_come_back
+combat_ignore_cond = false
+combat_ignore_keep_when_attacked = false
+invulnerable = false
+gather_items_enabled = false
+help_wounded_enabled = false
+corpse_detection_enabled = false
+meet = no_meet
+
+[walker@esc_stalker_muravei_come_back]
+path_walk = muravei_walk
+path_look = muravei_look
+on_info = {=surge_started()} walker@esc_stalker_muravei_surge
+combat_ignore_cond = false
+combat_ignore_keep_when_attacked = false
+invulnerable = false
+gather_items_enabled = false
+help_wounded_enabled = false
+corpse_detection_enabled = false
+meet = no_meet
+
+[walker@esc_stalker_muravei_surge]
+path_walk = muravei_surge_walk
+path_look = muravei_surge_look
+on_info = {=surge_complete()} walker@esc_stalker_muravei_come_back
+combat_ignore_cond = false
+combat_ignore_keep_when_attacked = false
+invulnerable = false
+gather_items_enabled = false
+help_wounded_enabled = false
+corpse_detection_enabled = false
+meet = no_meet
+
+---------------Енот-----------------
+[logic@esc_squad_village_levsha]
+suitable = {=check_npc_name(esc_stalker_levsha)} true
+prior = 200
+active = remark@esc_stalker_levsha_escape
+
+[remark@esc_stalker_levsha_escape]
+anim = wait_na
+target = story | actor
+on_info = {+esc_zver_come_back_vilage} walker@esc_stalker_levsha_come_back
+combat_ignore_cond = false
+combat_ignore_keep_when_attacked = false
+invulnerable = false
+gather_items_enabled = false
+help_wounded_enabled = false
+corpse_detection_enabled = false
+meet = no_meet
+
+[walker@esc_stalker_levsha_come_back]
+path_walk = levsha_walk
+path_look = levsha_look
+on_info = {=surge_started()} walker@esc_stalker_levsha_surge
+on_info2 = {+esc_koordinator_to_sklad_dialog_done} walker@esc_enot_not_sleep %=teleport_npc(esc_smart_terrain_1_1_enot_not_sleep_walk)%
+combat_ignore_cond = false
+combat_ignore_keep_when_attacked = false
+invulnerable = false
+gather_items_enabled = false
+help_wounded_enabled = false
+corpse_detection_enabled = false
+meet = no_meet
+
+[walker@esc_stalker_levsha_surge]
+path_walk = levsha_surge_walk
+path_look = levsha_surge_look
+on_info = {=surge_complete()} walker@esc_stalker_levsha_come_back
+on_info2 = {+esc_koordinator_to_sklad_dialog_done} walker@esc_enot_not_sleep %=teleport_npc(esc_smart_terrain_1_1_enot_not_sleep_walk)%
+combat_ignore_cond = false
+combat_ignore_keep_when_attacked = false
+invulnerable = false
+gather_items_enabled = false
+help_wounded_enabled = false
+corpse_detection_enabled = false
+meet = no_meet
+
+[walker@esc_enot_not_sleep]
+path_walk = enot_not_sleep_walk
+path_look = enot_not_sleep_look
+on_info = {+esc_enot_go_to_furgon_drink_done} %=release_npc%
+combat_ignore_cond = true
+combat_ignore_keep_when_attacked = true
+invulnerable = false
+gather_items_enabled = false
+help_wounded_enabled = false
+corpse_detection_enabled = false
+meet = meet@esc_enot_quest_meet
+
+[meet@esc_enot_quest_meet]
+close_anim 	= nil
+far_anim 	= nil
+far_victim 	= nil
+close_distance  = 0
+far_distance 	= 0
+close_victim = actor
+use = {!actor_enemy +esc_actor_talk_raven_from_enot} true, false
+allow_break = false
+meet_dialog = esc_actor_meet_from_enot_first
+trade_enable = false

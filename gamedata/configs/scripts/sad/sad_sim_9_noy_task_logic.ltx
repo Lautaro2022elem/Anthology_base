@@ -1,0 +1,45 @@
+[sr_idle@default]
+on_info = {+sad_sim_9_noy_dead} sr_idle@nil %-sad_sim_9_stop_snorks%, {+sad_sim_9_noy_enemy} sr_idle@wait_outside %-sad_sim_9_stop_snorks -sad_noy_ignore_monsters%
+on_info2 = {+sad_actor_enemy_to_someone} sr_idle@wait_outside %-sad_sim_9_stop_snorks -sad_noy_ignore_monsters%
+
+
+; -----------------------------------------------
+[logic]
+active = sr_idle@0
+
+[sr_idle@0]
+on_info = {!dist_to_story_obj_ge(sad_sim_9_noy_place:120)} sr_idle@wait %=create_squad(sad_sim_9_noy_squad:sad_sim_9)%
+
+[sr_idle@wait]
+on_info = sr_idle@10 %=heal_squad(sad_sim_9_noy_squad) -sad_sim_9_noy_meeted_now -sad_sim_9_stop_snorks -sad_sim_9_noy_ready_to_talk -sad_sim_9_noy_task_done -sad_sim_9_noy_task_reversed -sad_sim_9_actor_kill_enough -sad_sim_9_noy_go_sleep%
+
+[sr_idle@10]:sr_idle@default
+on_actor_inside = sr_idle@20 %=set_counter(sad_sim_9_mob_killed:0) =set_counter(sad_sim_9_actor_mob_kill:0) =play_sound(sad_noah_start_task) =give_task(sad_sim_9_noy_task) -sad_noy_ignore_monsters%
+on_info3 = {=sad_sim_9_mob_combat_check} %-sad_noy_ignore_monsters%, %+sad_noy_ignore_monsters%
+on_info4 = {=dist_to_story_obj_ge(sad_sim_9_noy_place:125)} sr_idle@0 %=remove_squad(sad_sim_9_noy_squad)%
+
+[sr_idle@20]:sr_idle@default
+on_info3 = {=dist_to_story_obj_ge(sad_sim_9_noy_place:65)} sr_idle@wait %+sad_sim_9_noy_task_reversed%
+on_info4 = {=counter_greater(sad_sim_9_mob_killed:10)} sr_idle@30 %+sad_sim_9_stop_snorks =play_sound_by_story(sad_sim_9_noy:sad_noah_stop_snorks)%
+
+[sr_idle@30]:sr_idle@default
+on_info3 = {=dist_to_story_obj_ge(sad_sim_9_noy_place:65)} sr_idle@wait %+sad_sim_9_noy_task_reversed%
+on_info4 = {!squad_exist(sad_sim_9_snorki)} sr_idle@40 %play_sound_by_story(sad_sim_9_noy:sad_noah_otbilis) +sad_sim_9_noy_ready_to_talk +sad_sim_9_noy_task_done%
+on_info5 = {!squad_npc_count_ge(sad_sim_9_snorki:1)} sr_idle@31 %=play_sound_by_story(sad_sim_9_noy:sad_noah_one_more)%
+
+[sr_idle@31]:sr_idle@default
+on_info3 = {=dist_to_story_obj_ge(sad_sim_9_noy_place:65)} sr_idle@wait %+sad_sim_9_noy_task_reversed%
+on_info4 = {!squad_exist(sad_sim_9_snorki)} sr_idle@40 %=play_sound_by_story(sad_sim_9_noy:sad_noah_otbilis) +sad_sim_9_noy_ready_to_talk +sad_sim_9_noy_task_done%
+
+[sr_idle@40]
+on_info = {=counter_greater(sad_sim_9_actor_mob_kill:8)} sr_idle@50 %+sad_sim_9_actor_kill_enough%, sr_idle@50
+
+[sr_idle@50]:sr_idle@default
+on_game_timer = 3600 | sr_idle@wait
+on_info3 = {=dist_to_story_obj_ge(sad_sim_9_noy_place:125)} sr_idle@0 %=remove_squad(sad_sim_9_noy_squad)%
+
+[sr_idle@wait_outside]
+on_info = {+sad_sim_9_noy_dead} sr_idle@nil
+on_info2 = {=dist_to_story_obj_ge(sad_sim_9_noy_place:125)} sr_idle@0 %=remove_squad(sad_sim_9_noy_squad) -sad_sim_9_noy_enemy% ;=sad_sim_9_noy_neutral(sad_sim_9_noy)
+
+[sr_idle@nil]

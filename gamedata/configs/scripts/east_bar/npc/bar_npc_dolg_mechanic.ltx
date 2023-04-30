@@ -1,0 +1,32 @@
+[logic@bar_npc_dolg_mechanic]
+active = animpoint
+suitable = {=check_npc_name(bar_npc_dolg_mechanic)} true, false
+level_spot = mechanic
+can_select_weapon = false
+prior = 300
+trade = items\trade\trade_generic_mechanic.ltx
+dont_keep_items = true
+
+[animpoint]
+cover_name = bar_animpoint_mechanic
+avail_animations = animpoint_sit_normal
+gather_items_enabled = false
+corpse_detection_enabled = false
+combat_ignore_keep_when_attacked = true 
+combat_ignore_cond = true
+invulnerable = true
+meet = meet
+use_camp = false
+
+[meet]
+close_snd_hello = bar_dolg_tech_hello
+close_snd_bye 	= bar_dolg_tech_bye
+close_anim 	= nil
+close_victim 	= nil
+far_anim 	= nil
+far_victim 	= nil
+close_distance  = 0
+far_distance 	= 0
+close_snd_distance = 5
+use = {=actor_enemy} false, true
+allow_break 	= false

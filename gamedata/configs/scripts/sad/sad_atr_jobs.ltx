@@ -1,0 +1,74 @@
+[walker@def]
+gather_items_enabled = false
+help_wounded_enabled = false
+corpse_detection_enabled = false
+combat_ignore_cond = true
+invulnerable = true
+on_info = {-sad_atr_atror_enemy =actor_enemy} %+sad_atr_atror_enemy%
+
+; ------------------------------------------- 
+[logic@atr_ucheny]
+active = walker@1
+suitable = {=check_npc_name(sad_atr_trader)} true
+prior = 200
+level_spot = trader
+trade = items\trade\trade_ecolog_sakharov.ltx
+
+[walker@1]:walker@def
+path_walk = trader_walk
+path_look = trader_look
+def_state_standing = ward_noweap_short
+on_info = {+sad_artefuck_upgrade_process -sad_artefuck_ready !npc_talking} walker@11 %+sad_atr_trader_go_kitchen%
+meet = meet@trader
+
+[walker@11]:walker@def
+path_walk = trader_obhod_walk
+path_look = trader_obhod_look
+on_info = {-sad_atr_trader_go_kitchen} walker@1
+meet = no_meet
+
+[meet@trader]
+close_snd_hello = nil
+close_snd_bye   = nil
+close_distance  = 0
+close_victim    = actor
+close_anim 		= wait_na
+far_anim 		= nil
+far_victim 		= nil
+far_distance 	= 0
+far_snd 		= nil
+abuse 			= false
+meet_on_talking = false
+use 			= true
+trade_enable	= false
+
+; -------------------------------------------- 
+[logic@atr_guard]
+active = walker@2 
+suitable = {=check_npc_name(sad_atr_guard)} true
+prior = 190
+
+[walker@2]:walker@def
+path_walk = ohrana_walk
+path_look = ohrana_look
+on_info = {+sad_atr_guard_prohodi} %-sad_atr_guard_prohodi =play_sound(sad_atr_guard_prohodi)%
+on_info2 = {+sad_atr_guard_say_bye} %-sad_atr_guard_say_bye =play_sound(sad_atr_guard_poka)%
+on_info3 = {+sad_atr_guard_say_again} %-sad_atr_guard_say_again =play_sound(sad_atr_guard_again)%
+meet = meet@guard
+
+[meet@guard]
+snd_on_use 		= {-sad_atr_enter_door_locked} meet_use_no_default, nil
+close_snd_hello = nil
+close_snd_bye   = nil
+close_distance  = 3
+close_victim    = actor
+close_anim 		= guard_na
+far_anim 		= nil
+far_victim 		= nil
+far_distance 	= 0
+far_snd 		= nil
+abuse 			= false
+meet_on_talking = false
+use 			= {+sad_atr_enter_door_locked} false, true
+allow_break 	= false
+trade_enable	= false

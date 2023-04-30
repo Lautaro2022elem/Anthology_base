@@ -1,0 +1,34 @@
+[logic]
+active = sr_idle@levsha_zasada_spawn
+
+[sr_idle@levsha_zasada_spawn]
+on_info = {+blck_val_stavrid_first_dialog_done} sr_idle@levsha_zasada_give_quest
+
+[sr_idle@levsha_zasada_give_quest]
+on_timer = 1000 | sr_idle@levsha_zasada_sends_sms %=give_task(blck_val_search_killer)%
+
+[sr_idle@levsha_zasada_sends_sms]
+on_timer = 4000 | sr_idle@levsha_zasada_give_info %=blck_val_shaman_quest_sms_1%
+
+[sr_idle@levsha_zasada_give_info]
+on_timer = 4900 | sr_idle@levsha_zasada_start %+blck_val_shaman_sends_sms_actor%
+
+[sr_idle@levsha_zasada_start]
+on_info = {+blck_val_actor_meet_from_shaman_done} sr_idle@levsha_zasada_spawn_start
+
+[sr_idle@levsha_zasada_spawn_start]
+on_timer = 2000 | sr_idle@knife_killer_spawn %=create_squad(blck_val_b203_band_zasada_squad:blck_val_b203) =create_squad(blck_val_b203_stalker_zasada_squad:blck_val_b203)%
+
+[sr_idle@knife_killer_spawn]
+on_info = {+blck_val_stavrid_meet_levsha_done} sr_idle@knife_killer_spawn_start
+
+[sr_idle@knife_killer_spawn_start]
+on_timer = 1000 | sr_idle@actor_has_items %=spawn_object(blck_val_knife_killer_quest:blck_val_knife_killer_spawn)%
+
+[sr_idle@actor_has_items]
+on_info = {=actor_has_item(blck_val_knife_killer_quest) -blck_val_zver_has_item_knife_killer} sr_idle@actor_has_item_kpk %+blck_val_zver_has_item_knife_killer%
+
+[sr_idle@actor_has_item_kpk]
+on_info = {=actor_has_item(blck_val_chimik_pda) -blck_val_zver_has_item_pda_killer} sr_idle@nil %+blck_val_zver_has_item_pda_killer%
+
+[sr_idle@nil]

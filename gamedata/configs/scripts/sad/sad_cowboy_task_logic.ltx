@@ -1,0 +1,220 @@
+[logic]
+active = sr_idle@100
+;active = sr_idle@500
+;active = sr_idle@730 ; -- cutscene
+;active = sr_idle@900 ; -- check cowboy_gone
+
+[sr_idle@100]
+on_info = {+sad_cowboy_meeted} sr_idle@110 %=give_task(sad_cowboy_meet_tesla_task)%
+on_info9 = {+sad_cowboy_enemy} sr_idle@actor_enemy
+
+[sr_idle@110]
+on_info = {+sad_cowboy_stuff_task_give} sr_idle@200 %=give_task(sad_cowboy_stuff_task)%
+on_info9 = {+sad_cowboy_enemy} sr_idle@actor_enemy
+
+[sr_idle@200]
+on_info = {=actor_has_item(sad_microshema)} %+sad_microshema_have%, %-sad_microshema_have%
+on_info2 = {=actor_has_item(af_compass)} %+sad_ran_oasis_have%, %-sad_ran_oasis_have%
+on_info3 = {+sad_microshema_have +sad_ran_oasis_have} %+sad_cowboy_stuff_have_both%, %-sad_cowboy_stuff_have_both%
+on_info5 = {+sad_cowboy_stuff_task_done} sr_idle@300
+on_info9 = {+sad_cowboy_enemy} sr_idle@actor_enemy
+
+[sr_idle@300]
+on_info = {+sad_tesla_monster_task_give} sr_idle@400 %=give_task(sad_tesla_monster_task) =create_squad(sad_sim_16_bloodsuckers:sad_sim_16)%
+on_info9 = {+sad_cowboy_enemy} sr_idle@actor_enemy
+
+[sr_idle@400]
+on_info = {=squad_exist(sad_sim_16_bloodsuckers)} sr_idle@410
+on_game_timer = 120 | sr_idle@410
+
+[sr_idle@410]
+on_info = {!squad_exist(sad_sim_16_bloodsuckers)} sr_idle@500 %+sad_tesla_monster_task_done =sad_remove_npc_item(sad_ran_ucheny:sad_microshema)%
+on_info9 = {+sad_cowboy_enemy} sr_idle@actor_enemy
+
+[sr_idle@500]
+on_game_timer = 120 | sr_idle@600 %+sad_tesla_ready_to_go =play_sound(sad_tesla_scanner_ready) =give_task(sad_oasis_teleport_task)%
+on_info9 = {+sad_cowboy_enemy} sr_idle@actor_enemy
+
+[sr_idle@600]
+on_info = {+sad_tesla_arrive} sr_idle@610
+on_info9 = {+sad_cowboy_enemy} sr_idle@actor_enemy
+
+; ----------------------------------------------------------------------------------------------------------------------------------------------------------------------- sim_16 телепорт
+[sr_idle@610]
+on_timer = 250 | sr_idle@620 %=disable_ui =run_postprocess(fade_in:7280)%
+on_info9 = {+sad_cowboy_enemy} sr_idle@actor_enemy
+
+[sr_idle@620]
+on_timer = 1000 | sr_idle@630 %=teleport_actor(sad_sim_16_actor_teleport_walk:sad_sim_16_actor_teleport_look) =run_postprocess(black:7281) +sad_tesla_switch_sim_16 =forward_game_time(1)%
+
+[sr_idle@630]
+on_timer = 100 | sr_idle@640 %=teleport_squad(sad_ran_ucheny_squad:sad_sim_16_tesla_teleport_point)%
+
+[sr_idle@640]
+on_timer = 1500 | sr_idle@650 %=stop_postprocess(7280) =stop_postprocess(7281) =enable_ui +sad_tesla_sim_16_arrived%
+
+; ----------------------------------------------------------------------------------------------------------------------------------------------------------------------- 
+[sr_idle@650]
+on_info = {=actor_in_zone(sad_sim_16_sr_scaner)} sr_idle@660 %=run_tutorial(sad_oasis_scanner_tut)%
+on_info2 = {!sad_sim_16_actor_in_zone} sr_idle@650_out %=send_tip(sad_oasis_get_back_here_scan:sad_ran_ucheny)%
+;on_info2 = {=distance_to_obj_ge(sad_ran_ucheny:25)} sr_idle@650_out %=send_tip(sad_oasis_get_back_here_scan:sad_ran_ucheny)%
+on_info9 = {+sad_cowboy_enemy} sr_idle@actor_enemy
+
+[sr_idle@650_out]
+on_info = {=sad_sim_16_actor_in_zone} sr_idle@650
+on_game_timer = 80 | sr_idle@650_out2 %=send_tip(sad_oasis_last_warning:sad_ran_ucheny)% ;last warning
+on_info9 = {+sad_cowboy_enemy} sr_idle@actor_enemy %-sad_tesla_switch_sim_16%
+
+[sr_idle@650_out2]
+on_info = {=sad_sim_16_actor_in_zone} sr_idle@650
+on_game_timer = 60 | sr_idle@actor_enemy %+sad_cowboy_enemy -sad_tesla_switch_sim_16 =send_tip(sad_oasis_tesla_fight:sad_ran_ucheny)%
+on_info9 = {+sad_cowboy_enemy} sr_idle@actor_enemy %-sad_tesla_switch_sim_16%
+
+[sr_idle@660]
+on_info = {!actor_in_zone(sad_sim_16_sr_scaner)} sr_idle@650 %=stop_tutorial%
+on_info2 = {+sad_teleport_scaner_placed} sr_idle@700 %=stop_tutorial%
+on_info3 = {!has_active_tutorial} sr_idle@650
+on_info9 = {+sad_cowboy_enemy} sr_idle@actor_enemy
+
+[sr_idle@670]
+on_info = {+sad_oasis_jump_in_ready} sr_idle@700
+
+[sr_idle@700]
+on_info = {=actor_in_zone(sad_oasis_sr_enter)} sr_idle@710 %+sad_oasis_jumped_in -sad_oasis_teleport_in_open%
+on_info2 = {!sad_sim_16_actor_in_zone} sr_idle@700_out %=send_tip(sad_oasis_get_back_here:sad_ran_ucheny)%
+on_info9 = {+sad_cowboy_enemy} sr_idle@actor_enemy %-sad_oasis_teleport_in_open +sad_sim_16_scanner_time_to_remove -sad_tesla_switch_sim_16%
+
+[sr_idle@700_out]
+on_info = {=sad_sim_16_actor_in_zone} sr_idle@700
+on_game_timer = 80 | sr_idle@700_out2 %=send_tip(sad_oasis_last_warning:sad_ran_ucheny)% ;last warning
+on_info9 = {+sad_cowboy_enemy} sr_idle@actor_enemy %-sad_oasis_teleport_in_open +sad_sim_16_scanner_time_to_remove -sad_tesla_switch_sim_16%
+
+[sr_idle@700_out2]
+on_info = {=sad_sim_16_actor_in_zone} sr_idle@700
+on_game_timer = 60 | sr_idle@actor_enemy %+sad_cowboy_enemy -sad_tesla_switch_sim_16 =send_tip(sad_oasis_tesla_go_base:sad_ran_ucheny) +sad_sim_16_scanner_force_destroy =give_item(sad_scanner:sad_ran_ucheny)%
+on_info9 = {+sad_cowboy_enemy} sr_idle@actor_enemy %-sad_oasis_teleport_in_open +sad_sim_16_scanner_time_to_remove -sad_tesla_switch_sim_16%
+
+[sr_idle@710]
+on_info = {+sad_af_oasis_heart_have} sr_idle@720
+on_info9 = {+sad_cowboy_enemy} sr_idle@actor_enemy %=send_tip(sad_oasis_stupid_thing:sad_ran_cowboy)%
+
+[sr_idle@720]
+on_game_timer = 60 | sr_idle@730 %+sad_oasis_teleport_out_open +sad_oasis_jump_out_ready =play_sound(sad_tesla_found_out_portal)%
+on_info9 = {+sad_cowboy_enemy} sr_idle@actor_enemy %=send_tip(sad_oasis_stupid_thing:sad_ran_cowboy)%
+
+[sr_idle@730]
+on_info = {=actor_in_zone(sad_sim_16_sr_teleport_zone)} sr_idle@740 %+sad_oasis_jumped_out -sad_oasis_teleport_out_open =run_postprocess(fade_in:9280) =disable_ui%
+on_info9 = {+sad_cowboy_enemy} sr_idle@actor_enemy %-sad_oasis_teleport_out_open =send_tip(sad_oasis_stupid_thing:sad_ran_cowboy)%
+
+; ----------------------------------------------------------------------------------------------------------------------------------------------------------------------- Cutscene "robbery" #1
+[sr_idle@740]
+on_timer = 500 | sr_idle@750 %=run_postprocess(black:9281) =remove_squad(sad_ran_cowboy_squad) +sad_cowboy_switch_sim_16 =teleport_actor(sad_oasis_teleport_out_walk2)%
+
+[sr_idle@750]
+on_timer = 250 | sr_idle@760 %=create_cutscene_actor_with_weapon(sad_oasis_actor:sad_oasis_teleport_out_walk:0:90:0) =create_squad(sad_ran_cowboy_squad:sad_sim_16)%
+
+[sr_idle@760]
+on_timer = 2000 | {=squad_exist(sad_ran_cowboy_squad)} sr_cutscene@robbery %=stop_postprocess(9280) =stop_postprocess(9281) +sad_cutscene_robbery_start%, sr_idle@761
+
+[sr_idle@761]
+on_info = sr_idle@760
+
+[sr_cutscene@robbery]
+point = sad_oasis_teleport_out_walk
+look = sad_oasis_teleport_out_look
+cam_effector = scenario_cam\sad\sad_robbery_cut_camera_1
+global_cameffect = true
+enable_ui_on_end = false
+outdoor = true
+on_signal = cameff_end | sr_idle@770 %=run_postprocess(black:9381)%
+on_signal2 = cam_effector_stop | sr_idle@770 %=run_postprocess(black:9381)%
+on_info = {+sad_cowboy_talk_end} %-sad_cowboy_talk_end =run_postprocess(fade_in:9380)%
+on_info2 = {+sad_cutscene_robbery_end} %=stop_sr_cutscene -sad_cutscene_robbery_end%
+
+[sr_idle@770]
+on_info = sr_idle@771 %=sad_relocate_actor_inventory_to_box(sad_ran_actor_treasure:sad_ran_cowboy)%
+
+[sr_idle@771]
+on_info = {=story_object_exist(sad_oasis_actor)} sr_idle@772 %=destroy_object(story:sad_oasis_actor)%, sr_idle@772
+
+[sr_idle@772]
+on_timer = 500 | sr_idle@775 %=create_cutscene_actor_with_weapon(sad_oasis_actor:sad_oasis_teleport_out_walk:0:90:0)%
+
+[sr_idle@775]
+on_timer = 1000 | sr_cutscene@robbery2 %=stop_postprocess(9380) =stop_postprocess(9381) +sad_cutscene_robbery_start_2%
+
+[sr_cutscene@robbery2]
+point = sad_oasis_teleport_out_walk
+look = sad_oasis_teleport_out_look
+cam_effector = scenario_cam\sad\sad_robbery_cut_camera_2
+global_cameffect = true
+enable_ui_on_end = false
+outdoor = true
+on_signal = cameff_end | sr_idle@780 %=run_postprocess(black:9481)%
+on_signal2 = cam_effector_stop | sr_idle@780 %=run_postprocess(black:9481)%
+on_info = {+sad_cowboy_talk_end} %-sad_cowboy_talk_end =run_postprocess(fade_in:9480)%
+on_info2 = {+sad_cutscene_robbery_end} %=stop_sr_cutscene -sad_cutscene_robbery_end%
+
+[sr_idle@780]
+on_info = sr_idle@790 %-sad_cowboy_switch_sim_16 -sad_tesla_switch_sim_16 =teleport_squad(sad_ran_ucheny_squad:sad_ran_podval_spawn) =teleport_squad(sad_ran_cowboy_squad:sad_ran_cowboy_squad_spawn)%
+
+[sr_idle@790]
+on_timer = 1500 | sr_cutscene@robbery3 %=stop_postprocess(9480) =stop_postprocess(9481) +sad_cutscene_robbery_start_3%
+
+[sr_cutscene@robbery3]
+point = sad_oasis_teleport_out_walk
+look = sad_oasis_teleport_out_look
+cam_effector = scenario_cam\sad\sad_robbery_cut_camera_3
+global_cameffect = true
+enable_ui_on_end = false
+outdoor = true
+on_signal = cameff_end | sr_idle@800 %=run_postprocess(black:9580)%
+on_signal2 = cam_effector_stop | sr_idle@800 %=run_postprocess(black:9580)%
+on_timer = 8000 | %=stop_sr_cutscene%
+
+[sr_idle@800]
+on_timer = 1500 | sr_idle@810
+
+[sr_idle@810]
+on_info = sr_idle@robbery_end %=destroy_object(story:sad_sim_16_ph_scanner)%
+
+[sr_idle@robbery_end]
+on_info = {=story_object_exist(sad_oasis_actor)} sr_idle@robbery_really_end %=destroy_object(story:sad_oasis_actor)%, sr_idle@robbery_really_end
+
+[sr_idle@robbery_really_end]
+on_info = sr_idle@900 %=stop_postprocess(9580) =enable_ui  +sad_oasis_cutscene_robbery_end% ;=sad_heal_actor
+
+; -----------------------------------------------------------------------------------------------------------------------------------------------------------------------
+[sr_idle@900]
+on_info = sr_idle@1000 %+sad_cowboy_rob_actor +sad_cowboy_enemy =set_squad_enemy_to_actor(sad_ran_cowboy_squad) =set_squad_enemy_to_actor(sad_ran_squad_a) =set_squad_enemy_to_actor(sad_ran_squad_b) =set_squad_enemy_to_actor(sad_ran_ucheny_squad)%
+
+[sr_idle@1000]
+on_info = {!squad_exist(sad_ran_cowboy_squad)} sr_idle@1010
+
+[sr_idle@1010]
+on_info = {!squad_exist(sad_ran_squad_a)} sr_idle@1020
+
+[sr_idle@1020]
+on_info = {!squad_exist(sad_ran_squad_b)} sr_idle@1030
+
+[sr_idle@1030]
+on_info = {!squad_exist(sad_ran_ucheny_squad)} sr_idle@1100 %+sad_ran_cowboy_gone%
+
+; ----------------------------------------------------------------------------------------------------------------------------------------------------------------------- wait for trader
+[sr_idle@1100]
+on_game_timer = 600 | sr_idle@1110
+
+[sr_idle@1110]
+on_info = {=sad_dist_to_path_ge(sad_ran_podval_spawn:60000:0)} sr_idle@nil %=create_squad(sad_ran_stalker_podval_squad:sad_ran) +sad_ran_new_trader_come%
+
+; -----------------------------------------------------------------------------------------------------------------------------------------------------------------------
+[sr_idle@actor_enemy]
+on_info = sr_idle@actor_enemy_2 %=set_squad_enemy_to_actor(sad_ran_cowboy_squad) =set_squad_enemy_to_actor(sad_ran_squad_a) =set_squad_enemy_to_actor(sad_ran_squad_b) =set_squad_enemy_to_actor(sad_ran_ucheny_squad)%
+
+[sr_idle@actor_enemy_2]
+on_info = sr_idle@1000
+;on_info = {-sad_sim_16_scanner_time_to_remove} sr_idle@1000
+;on_info2 = {+sad_sim_16_scanner_remove} sr_idle@1000 %-sad_sim_16_scanner_remove -sad_sim_16_scanner_time_to_remove =give_actor(sad_scanner)%
+
+; ----------------------------------------------------------------------------------------------------------------------------------------------------------------------- 
+[sr_idle@nil]

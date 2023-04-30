@@ -1,0 +1,7 @@
+[logic]
+active = sr_idle@spawn_flash
+
+[sr_idle@spawn_flash]
+on_info = {+pb_hunt_to_flash_start -perevalochnaya_baza_quest_flash_dead} sr_idle@spawn_flash_nil %=create_squad(perevalochnaya_baza_quest_flash:pro_smart_terrain_2_0) =set_squads_friends(perevalochnaya_baza_kuvalda_and_snake_squad:perevalochnaya_baza_kuvalda_and_snake_squad)%
+
+[sr_idle@spawn_flash_nil]

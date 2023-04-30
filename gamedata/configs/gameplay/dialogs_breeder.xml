@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="windows-1251" ?>
+<game_dialogs>
+
+<dialog id="zat_stalker_breeder_af_work_dialog">
+        <precondition>sgm_dialogs.mod_dialog_precond</precondition>
+        <init_func>sgm_phrases.zat_stalker_breeder_dialog</init_func>
+</dialog>
+
+<dialog id="jup_stalker_breeder_af_work_dialog">
+        <init_func>sgm_phrases.jup_stalker_breeder_dialog</init_func>
+        <precondition>sgm_dialogs.mod_dialog_precond</precondition>
+</dialog>
+
+<dialog id="jup_ecolog_breeder_af_work_dialog">
+        <init_func>sgm_phrases.jup_ecolog_breeder_dialog</init_func>
+        <precondition>sgm_dialogs.mod_dialog_precond</precondition>
+</dialog>
+
+<dialog id="pri_army_breeder_af_work_dialog">
+        <init_func>sgm_phrases.pri_army_breeder_dialog</init_func>
+        <precondition>sgm_dialogs.mod_dialog_precond</precondition>
+</dialog>
+
+</game_dialogs>

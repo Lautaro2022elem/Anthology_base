@@ -1,0 +1,27 @@
+[logic]  
+active = remark
+
+[remark]  
+no_move = true  
+anim = hands_up
+target = story | wiz_rjaviu_scene_id
+meet = meet
+combat_ignore_cond = true
+combat_ignore_keep_when_attacked = true
+gather_items_enabled = true
+corpse_detection_enabled = false
+invulnerable = true
+on_info = {+wiz_kosta_die} %=kill_npc%
+help_wounded_enabled = false
+
+[meet]  
+abuse           = false
+close_anim 		= nil
+far_anim 		= nil
+far_victim 		= nil
+close_distance  = 0
+far_distance 	= 0
+close_victim 	= nil
+use 			= true
+allow_break 	= false
+trade_enable	= false

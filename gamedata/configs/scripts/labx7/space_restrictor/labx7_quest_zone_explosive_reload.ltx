@@ -1,0 +1,13 @@
+[logic]
+active = sr_idle@start
+
+[sr_idle@start]
+on_actor_inside = {+labx7_give_info_explosive_in_plant =actor_in_zone(labx7_quest_zone_explosive_reload)} sr_idle@tutorial %=run_tutorial(labx7_tutorial_explosive_spawn)%
+on_info2 = {+labx7_quest_explosive_spawn_restr_1} sr_idle@nil
+
+[sr_idle@tutorial]
+on_info = {+labx7_give_info_explosive_in_plant !actor_in_zone(labx7_quest_zone_explosive_reload)} sr_idle@start %=stop_tutorial%
+on_info2 = {+labx7_quest_explosive_spawn_restr_1} sr_idle@nil
+on_info3 = {!has_active_tutorial} sr_idle@start
+
+[sr_idle@nil]

@@ -1,0 +1,35 @@
+[smart_terrain] 
+squad_id = 30
+max_population = 1
+respawn_params = respawn
+arrive_dist = 80
+respawn_idle = 172800
+
+[respawn]
+;spawn_zombied
+spawn_dogs
+
+[spawn_zombied]
+spawn_squads = sad_sim_20_zombo
+spawn_num = {+sad_b4_actor_recognized} 1, 0
+
+[spawn_dogs]
+spawn_squads = sad_sim_20_dogs
+spawn_num = {+sad_b4_actor_recognized} 1, 0
+
+[exclusive]
+;zombied_1 = sad\sad_sim_20_zombo_job.ltx
+;zombied_2 = sad\sad_sim_20_zombo_job.ltx
+;zombied_3 = sad\sad_sim_20_zombo_job.ltx
+;zombied_4 = sad\sad_sim_20_zombo_job.ltx
+;zombied_5 = sad\sad_sim_20_zombo_job.ltx
+;zombied_6 = sad\sad_sim_20_zombo_job.ltx
+
+mob_1 = sad\sad_sim_20_mobs_job.ltx
+mob_2 = sad\sad_sim_20_mobs_job.ltx 
+mob_3 = sad\sad_sim_20_mobs_job.ltx 
+mob_4 = sad\sad_sim_20_mobs_job.ltx 
+mob_5 = sad\sad_sim_20_mobs_job.ltx 
+mob_6 = sad\sad_sim_20_mobs_job.ltx 
+mob_7 = sad\sad_sim_20_mobs_job.ltx 
+mob_8 = sad\sad_sim_20_mobs_job.ltx

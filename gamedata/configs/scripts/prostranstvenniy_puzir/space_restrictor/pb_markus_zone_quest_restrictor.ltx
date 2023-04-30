@@ -1,0 +1,10 @@
+[logic]
+active = sr_idle@markus_send
+
+[sr_idle@markus_send]
+on_info = {+perevalochnaya_baza_quest_flash_dead} sr_idle@markus_send_1 %=pb_markus_send_after_quest_sms%
+
+[sr_idle@markus_send_1]
+on_timer = 12200 | sr_idle@markus_send_nil %+pb_markus_sms_quest_sends%
+
+[sr_idle@markus_send_nil]

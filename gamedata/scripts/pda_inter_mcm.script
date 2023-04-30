@@ -1,0 +1,101 @@
+-- If you don't use MCM, change your defaults from here.
+local defaults = {
+	["int_pda_key"] = DIK_keys.DIK_M,
+
+	["raid_offer_mult"] = 0.1,
+	["raid_base_price"] = 25000,
+	["raid_price_power"] = 0.95,
+
+	["find_respond_mult"] = 0.1,
+	["find_see_distance"] = 120,
+	["find_can_lie"] = true,
+	["find_base_price"] = 5000,
+
+	["puzzle_reward"] = 100,
+	["slots_bet"] = 50,
+
+	["trade_respond_mult"] = 0.5,
+	["trade_delivery_price_mult"] = 1,
+	["trade_delivery_time_mult"] = 1,
+	["trade_stalker_pool"] = 2.5,
+
+	["banter_sos_distance"] = 200,
+	["banter_sos_duration"] = 90,
+	["banter_sos_cooldown"] = 300,
+	["banter_sos_limit"] = 4,
+
+	["task_respond_mult"] = 0.1,
+	["task_base_reward"] = 10000,
+	["task_cooldown"] = 24,
+	["task_goodwill_mult"] = 0,
+	["task_notes"] = true,
+	["task_guide_time_mult"] = 1,
+	["task_mutant_distance"] = 1500,
+	["task_bounty_distance"] = 5000,
+	["task_squad_distance"] = 5000,
+
+	["debugx"] = false,
+}
+
+function get_config(key)
+	if ui_mcm then return ui_mcm.get("pda_inter/"..key) else return defaults[key] end
+end
+
+function on_mcm_load()
+	op = { id= "pda_inter",sh=true ,gr={
+			{ id= "title",type= "slide",link= "ui_options_slider_player",text="ui_mcm_pda_inter_title",size= {512,50},spacing= 20 },
+
+			{id = "int_pda_key", type = "key_bind", val = 2, def = DIK_keys.DIK_M},
+
+			{ id= "title"				   ,type= "title"	 ,text= "ui_mcm_pda_inter_header_raid" 			,align= "c"	,clr= {255,200,200,200}	},
+			{id = "raid_offer_mult", type = "track", val = 2, min=0.05, max=1, step=0.05, def = 0.1},
+			{id = "raid_base_price", type = "track", val = 2, min=1000, max=100000, step=500, def = 25000},
+			{id = "raid_price_power", type = "track", val = 2, min=0.75, max=1.25, step=0.05, def = 0.95},
+
+			{id="divider", type="line" },
+			{ id= "title"				   ,type= "title"	 ,text= "ui_mcm_pda_inter_header_find" 			,align= "c"	,clr= {255,200,200,200}	},
+			{id = "find_respond_mult", type = "track", val = 2, min=0.05, max=1, step=0.05, def = 0.1},
+			{id = "find_see_distance", type = "track", val = 2, min=40, max=350, step=5, def = 120},
+			{id = "find_can_lie", type = "check", val = 1, def = true},
+			{id = "find_base_price", type = "track", val = 2, min=500, max=50000, step=500, def = 5000},
+
+			{id= "divider", type = "line" },
+			{ id= "title"				   ,type= "title"	 ,text= "ui_mcm_pda_inter_header_games" 			,align= "c"	,clr= {255,200,200,200}	},
+			{id = "puzzle_reward", type = "track", val = 2, min=50, max=1500, step=50, def = 100},
+			{id = "slots_bet", type = "track", val = 2, min=10, max=500, step=10, def = 50},
+
+			{id= "divider", type = "line" },
+			{ id= "title"				   ,type= "title"	 ,text= "ui_mcm_pda_inter_header_trade" 			,align= "c"	,clr= {255,200,200,200}	},
+			{id = "trade_respond_mult", type = "track", val = 2, min=0.05, max=3, step=0.05, def = 0.5},
+			{id = "trade_delivery_price_mult", type = "track", val = 2, min=0.1, max=3, step=0.1, def = 1},
+			{id = "trade_delivery_time_mult", type = "track", val = 2, min=0.05, max=2, step=0.05, def = 1},
+			{id = "trade_stalker_pool", type = "track", val = 2, min=0, max=10, step=0.5, def = 2.5},
+
+
+			{id= "divider", type = "line" },
+			{ id= "title"				   ,type= "title"	 ,text= "ui_mcm_pda_inter_header_banter" 			,align= "c"	,clr= {255,200,200,200}	},
+			{id = "banter_sos_distance", type = "track", val = 2, min=10, max=500, step=10, def = 200},
+			{id = "banter_sos_duration", type = "track", val = 2, min=10, max=300, step=10, def = 90},
+			{id = "banter_sos_cooldown", type = "track", val = 2, min=50, max=900, step=50, def = 300},
+			{id = "banter_sos_limit", type = "track", val = 2, min=1, max=20, step=1, def = 4},
+
+			{id= "divider", type = "line" },
+			{ id= "title"				   ,type= "title"	 ,text= "ui_mcm_pda_inter_header_task" 			,align= "c"	,clr= {255,200,200,200}	},
+			{id = "task_respond_mult", type = "track", val = 2, min=0.05, max=1, step=0.05, def = 0.1},
+			{id = "task_base_reward", type = "track", val = 2, min=1000, max=30000, step=500, def = 10000},
+			{id = "task_cooldown", type = "track", val = 2, min=1, max=96, step=1, def = 24},
+			{id = "task_goodwill_mult", type = "track", val = 2, min=0, max=3, step=0.1, def = 0},
+			{id = "task_notes", type = "check", val = 1, def = true},
+			{id = "task_guide_time_mult", type = "track", val = 2, min=0.1, max=3, step=0.1, def = 1},
+			{id = "task_mutant_distance", type = "track", val = 2, min=500, max=10000, step=250, def = 1500},
+			{id = "task_bounty_distance", type = "track", val = 2, min=500, max=10000, step=500, def = 5000},
+			{id = "task_squad_distance", type = "track", val = 2, min=500, max=10000, step=500, def = 5000},
+
+			{id= "divider", type = "line" },
+			{ id= "title"				   ,type= "title"	 ,text= "ui_mcm_pda_inter_header_debug" 			,align= "c"	,clr= {255,200,200,200}	},
+			{id = "debugx", type = "check", val = 1, def = false},
+		}
+	}
+
+	return op
+end

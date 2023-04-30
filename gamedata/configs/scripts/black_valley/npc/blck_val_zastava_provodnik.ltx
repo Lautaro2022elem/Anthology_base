@@ -1,0 +1,73 @@
+#include "scripts\black_valley\npc\blck_val_zastava_provodnik_general.ltx"
+
+[logic]
+active = remark@zastava_provodnik_search
+post_combat_time = 0, 0
+suitable = {=check_npc_name(blck_val_zastava_provodnik)} true, false
+level_spot = quest_npc
+prior = 250
+
+[remark@zastava_provodnik_search]
+anim = search
+target = story | blck_val_b203_bandit_1
+on_info = {=dist_to_actor_le(18)} remark@zastava_provodnik_hello
+invulnerable = false
+gather_items_enabled = false
+help_wounded_enabled = false
+corpse_detection_enabled = false
+meet = no_meet
+
+[remark@zastava_provodnik_hello]
+anim = hello
+target = story | actor
+on_info = {-blck_val_provodnik_call_end_sound} %=play_sound(blck_val_provodnik_call) +blck_val_provodnik_call_end_sound%
+on_info2 = {+blck_val_first_dialog_provodnik_start} remark@zastava_provodnik_meet
+invulnerable = false
+gather_items_enabled = false
+help_wounded_enabled = false
+corpse_detection_enabled = false
+meet = meet@start_quest
+
+[remark@zastava_provodnik_meet]
+anim = wait_na
+target = story | actor
+on_info = {+blck_val_provodnik_teleport_to_hutor} remark@zastava_provodnik_in_hutor %=teleport_npc(blck_val_zastava_provodnik_in_hutor)%
+invulnerable = false
+gather_items_enabled = false
+help_wounded_enabled = false
+corpse_detection_enabled = false
+meet = meet@start_quest
+
+[remark@zastava_provodnik_in_hutor]
+anim = wait_na
+target = story | actor
+on_info = {+blck_val_two_dialog_provodnik_complete} camper@zastava_provodnik_in_hutor_stay
+meet = meet@in_hutor
+gather_items_enabled = false
+help_wounded_enabled = false
+corpse_detection_enabled = false
+danger = danger
+invulnerable = false
+
+[camper@zastava_provodnik_in_hutor_stay]
+path_walk = blck_val_provodnik_in_hutor_walk
+path_look = blck_val_provodnik_in_hutor_look
+on_info = {+blck_val_provodnik_teleport_to_zavod} remark@zastava_provodnik_in_zavod %=teleport_npc(blck_val_zastava_provodnik_in_zavod)%
+combat_ignore_cond = true
+combat_ignore_keep_when_attacked = true
+invulnerable = false
+gather_items_enabled = false
+help_wounded_enabled = false
+corpse_detection_enabled = false
+meet = meet@in_hutor
+
+[remark@zastava_provodnik_in_zavod]
+anim = wait_na
+target = story | actor
+on_info = {+blck_val_dialog_from_zavod_teleport_complete} camper@zastava_provodnik_in_zavod_stay
+meet = meet@in_zavod
+gather_items_enabled = false
+help_wounded_enabled = false
+corpse_detection_enabled = false
+danger = danger
+invulnerable = false

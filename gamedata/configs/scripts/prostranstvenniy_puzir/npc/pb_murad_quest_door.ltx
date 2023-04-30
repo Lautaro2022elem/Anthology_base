@@ -1,0 +1,83 @@
+#include "pb_murad_quest_door_*.ltx"
+
+;#include "scripts\prostranstvenniy_puzir\npc\pb_murad_quest_door_general.ltx"
+
+[logic]
+suitable = {=check_npc_name(pb_murad_quest_door)} true
+prior = 200
+active = remark@pb_murad_stay
+level_spot = mechanic
+
+[remark@pb_murad_stay]
+anim = guard_na
+target = story | actor
+on_info = {+pro_murad_go_to_quest_door} walker@pb_murad_quest_door_move
+combat_ignore_cond = true
+combat_ignore_keep_when_attacked = true
+invulnerable = false
+gather_items_enabled = false
+help_wounded_enabled = false
+corpse_detection_enabled = false
+meet = meet@start_talk
+
+[walker@pb_murad_quest_door_move]
+path_walk = pro_murad_quest_go_door_walk_1
+meet = no_meet
+def_state_moving = run
+on_info = {+pro_murad_quest_door_come_1} animpoint@animpoint_1
+gather_items_enabled = false
+help_wounded_enabled = false
+corpse_detection_enabled = false
+invulnerable = true
+on_signal = pro_murad_quest_go_door_come | {-pro_murad_quest_go_door_come} remark@pb_murad_quest_door_stay %+pro_murad_quest_go_door_come%
+
+[remark@pb_murad_quest_door_stay]
+anim = wait_na
+target = story | actor
+on_info = {-infa_murad_quest_door_lock_stop_sound} %+infa_murad_quest_door_lock_stop_sound =play_sound(pb_murad_quest_door_lock)%
+on_info2 = {+pro_quest_door_open_in_process} remark@pb_murad_quest_look_from_door
+on_timer = 7000 | %+pro_quest_door_open_in_process%
+combat_ignore_cond = true
+combat_ignore_keep_when_attacked = true
+invulnerable = false
+gather_items_enabled = false
+help_wounded_enabled = false
+corpse_detection_enabled = false
+meet = no_meet
+
+[remark@pb_murad_quest_look_from_door]
+anim = wait_na
+target = path | pro_murad_quest_door_look, 0
+use_camp = false
+on_timer = 3000 | walker@pb_murad_quest_go_door_move
+combat_ignore_cond = true
+combat_ignore_keep_when_attacked = true
+invulnerable = true
+gather_items_enabled = false
+help_wounded_enabled = false
+corpse_detection_enabled = false
+meet = no_meet
+
+[walker@pb_murad_quest_go_door_move]
+path_walk = pro_murad_quest_door_walk_1
+meet = no_meet
+def_state_moving = run
+on_info = {+pro_murad_quest_door_come_1} animpoint@animpoint_1
+gather_items_enabled = false
+help_wounded_enabled = false
+corpse_detection_enabled = false
+invulnerable = true
+on_signal = pro_murad_quest_door_come | {-pro_murad_quest_door_come} remark@pb_murad_opened_door %+pro_murad_quest_door_come%
+
+[remark@pb_murad_opened_door]
+anim = zat_b38_stalker_break_lock
+target = path | pro_murad_quest_door_look, 0
+on_info = {+pro_quest_door_is_open} remark@pb_markus_remark
+on_timer = 6000 | %+pro_quest_door_is_open%
+combat_ignore_cond = true
+combat_ignore_keep_when_attacked = true
+invulnerable = false
+gather_items_enabled = false
+help_wounded_enabled = false
+corpse_detection_enabled = false
+meet = no_meet

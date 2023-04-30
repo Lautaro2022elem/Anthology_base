@@ -1,0 +1,1685 @@
+;*************************************************************************
+;**					Topi
+;*************************************************************************
+[default_inventory_box]
+GroupControlSection	= spawn_group
+discovery_dependency    =
+$spawn 			= "devices\default_inventory_box"
+class			= O_INVBOX
+cform			= skeleton
+visual			= dynamics\devices\dev_rukzak\dev_rukzak.ogf
+script_binding          = bind_physic_object.init
+radius                  = 3
+inv_grid_width		= 2
+inv_grid_height		= 2
+inv_grid_x		= 0
+inv_grid_y		= 38
+cost			= 3500
+can_take		= true
+inv_weight		= 1.14
+description		= 
+inv_name		= 
+inv_name_short		= 
+
+
+[generic_spot]:af_quest_b14_twisted
+$spawn 	= "devices\generic_spot"
+visual	= dynamics\scene_objects\part\part_none.ogf
+can_take = false
+quest_item     		= true
+inv_grid_width		= 1
+inv_grid_height		= 1
+inv_grid_x		= 0
+inv_grid_y		= 0
+
+[topi_quest_medic_container]:tch_quest
+$spawn 				= "quest_items\topi_quest_medic_container"
+story_id            = topi_quest_medic_container
+visual				= dynamics\equipments\quest\safe_container.ogf
+inv_name			= topi_quest_medic_container_name
+description			= topi_quest_medic_container_desc
+inv_weight			= 5.0
+inv_grid_width		= 2
+inv_grid_height		= 2
+inv_grid_x			= 56
+inv_grid_y			= 75
+can_trade			= false
+quest_item     		= true
+cost 				= 100
+icons_texture        = ui\ui_icon_equipment_2
+
+[topi_spec_anomaly_scanner_1_spot]:generic_spot
+story_id = topi_spec_anomaly_scanner_1
+
+[topi_spec_anomaly_scanner_2_spot]:generic_spot
+story_id = topi_spec_anomaly_scanner_2
+
+[topi_spec_anomaly_scanner_3_spot]:generic_spot
+story_id = topi_spec_anomaly_scanner_3
+
+[topi_spec_anomaly_scanner_4_spot]:generic_spot
+story_id = topi_spec_anomaly_scanner_4
+
+[topi_spec_anomaly_scanner_5_spot]:generic_spot
+story_id = topi_spec_anomaly_scanner_5
+
+[topi_spec_anomaly_scanner_6_spot]:generic_spot
+story_id = topi_spec_anomaly_scanner_6
+
+[topi_spec_anomaly_scanner_7_spot]:generic_spot
+story_id = topi_spec_anomaly_scanner_7
+
+[topi_spec_anomaly_scanner_1]:tch_quest
+$spawn 				= "quest_items\topi_spec_anomaly_scanner_1"
+description			= topi_spec_anomaly_scanner_1_descr
+inv_name			= topi_spec_anomaly_scanner_1_name
+visual				= dynamics\equipments\quest\scanner_anomaly.ogf
+inv_weight			= 0.5
+story_id 			= topi_spec_anomaly_scanner_1
+can_trade			= false
+quest_item     		= true
+inv_grid_width		= 2
+inv_grid_height		= 2
+inv_grid_x			= 56
+inv_grid_y			= 77
+icons_texture        = ui\ui_icon_equipment_2
+
+[topi_spec_anomaly_scanner_2]:tch_quest
+$spawn 				= "quest_items\topi_spec_anomaly_scanner_2"
+description			= topi_spec_anomaly_scanner_1_descr
+inv_name			= topi_spec_anomaly_scanner_1_name
+visual				= dynamics\equipments\quest\scanner_anomaly.ogf
+inv_weight			= 0.5
+story_id 			= topi_spec_anomaly_scanner_2
+can_trade			= false
+quest_item     		= true
+inv_grid_width		= 2
+inv_grid_height		= 2
+inv_grid_x			= 56
+inv_grid_y			= 77
+icons_texture        = ui\ui_icon_equipment_2
+
+[topi_spec_anomaly_scanner_3]:tch_quest
+$spawn 				= "quest_items\topi_spec_anomaly_scanner_3"
+description			= topi_spec_anomaly_scanner_1_descr
+inv_name			= topi_spec_anomaly_scanner_1_name
+visual				= dynamics\equipments\quest\scanner_anomaly.ogf
+inv_weight			= 0.5
+story_id 			= topi_spec_anomaly_scanner_3
+can_trade			= false
+quest_item     		= true
+inv_grid_width		= 2
+inv_grid_height		= 2
+inv_grid_x			= 56
+inv_grid_y			= 77
+icons_texture        = ui\ui_icon_equipment_2
+
+[topi_spec_anomaly_scanner_4]:tch_quest
+$spawn 				= "quest_items\topi_spec_anomaly_scanner_4"
+description			= topi_spec_anomaly_scanner_1_descr
+inv_name			= topi_spec_anomaly_scanner_1_name
+visual				= dynamics\equipments\quest\scanner_anomaly.ogf
+inv_weight			= 0.5
+story_id 			= topi_spec_anomaly_scanner_4
+can_trade			= false
+quest_item     		= true
+inv_grid_width		= 2
+inv_grid_height		= 2
+inv_grid_x			= 56
+inv_grid_y			= 77
+icons_texture        = ui\ui_icon_equipment_2
+
+[topi_spec_anomaly_scanner_5]:tch_quest
+$spawn 				= "quest_items\topi_spec_anomaly_scanner_5"
+description			= topi_spec_anomaly_scanner_1_descr
+inv_name			= topi_spec_anomaly_scanner_1_name
+visual				= dynamics\equipments\quest\scanner_anomaly.ogf
+inv_weight			= 0.5
+story_id 			= topi_spec_anomaly_scanner_5
+can_trade			= false
+quest_item     		= true
+inv_grid_width		= 2
+inv_grid_height		= 2
+inv_grid_x			= 56
+inv_grid_y			= 77
+icons_texture        = ui\ui_icon_equipment_2
+
+[topi_spec_anomaly_scanner_6]:tch_quest
+$spawn 				= "quest_items\topi_spec_anomaly_scanner_6"
+description			= topi_spec_anomaly_scanner_1_descr
+inv_name			= topi_spec_anomaly_scanner_1_name
+visual				= dynamics\equipments\quest\scanner_anomaly.ogf
+inv_weight			= 0.5
+story_id 			= topi_spec_anomaly_scanner_6
+can_trade			= false
+quest_item     		= true
+inv_grid_width		= 2
+inv_grid_height		= 2
+inv_grid_x			= 56
+inv_grid_y			= 77
+icons_texture        = ui\ui_icon_equipment_2
+
+[topi_spec_anomaly_scanner_7]:tch_quest
+$spawn 				= "quest_items\topi_spec_anomaly_scanner_7"
+description			= topi_spec_anomaly_scanner_1_descr
+inv_name			= topi_spec_anomaly_scanner_1_name
+visual				= dynamics\equipments\quest\scanner_anomaly.ogf
+inv_weight			= 0.5
+story_id 			= topi_spec_anomaly_scanner_7
+can_trade			= false
+quest_item     		= true
+inv_grid_width		= 2
+inv_grid_height		= 2
+inv_grid_x			= 56
+inv_grid_y			= 77
+icons_texture        = ui\ui_icon_equipment_2
+
+[topi_example_taynik_1_item]:tch_quest
+$spawn 				= "quest_items\topi_example_taynik_1_item"
+description			= topi_example_taynik_item_descr
+inv_name			= topi_example_taynik_item_name
+visual				= dynamics\devices\dev_rukzak\dev_rukzak.ogf
+inv_weight			= 2
+story_id 			= topi_example_taynik_1_item
+can_trade			= false
+quest_item     		= true
+inv_grid_width		= 2
+inv_grid_height		= 2
+inv_grid_x		    = 56
+inv_grid_y		    = 79
+icons_texture        = ui\ui_icon_equipment_2
+
+[topi_example_taynik_2_item]:tch_quest
+$spawn 				= "quest_items\topi_example_taynik_2_item"
+description			= topi_example_taynik_item_descr
+inv_name			= topi_example_taynik_item_name
+visual				= dynamics\devices\dev_rukzak\dev_rukzak.ogf
+inv_weight			= 2
+story_id 			= topi_example_taynik_2_item
+can_trade			= false
+quest_item     		= true
+inv_grid_width		= 2
+inv_grid_height		= 2
+inv_grid_x		    = 56
+inv_grid_y		    = 79
+icons_texture        = ui\ui_icon_equipment_2
+
+[topi_example_taynik_3_item]:tch_quest
+$spawn 				= "quest_items\topi_example_taynik_3_item"
+description			= topi_example_taynik_item_descr
+inv_name			= topi_example_taynik_item_name
+visual				= dynamics\devices\dev_rukzak\dev_rukzak.ogf
+inv_weight			= 2
+story_id 			= topi_example_taynik_3_item
+can_trade			= false
+quest_item     		= true
+inv_grid_width		= 2
+inv_grid_height		= 2
+inv_grid_x		    = 56
+inv_grid_y		    = 79
+icons_texture        = ui\ui_icon_equipment_2
+
+
+[topi_example_taynik_1]:default_inventory_box
+visual				= dynamics\devices\dev_rukzak\dev_rukzak.ogf
+custom_data       		= scripts\topi\inventory_boxs\topi_example_taynik_1.ltx
+story_id 			= topi_example_taynik_1
+
+[topi_example_taynik_2]:default_inventory_box
+visual				= dynamics\devices\dev_rukzak\dev_rukzak.ogf
+custom_data       		= scripts\topi\inventory_boxs\topi_example_taynik_2.ltx
+story_id 			= topi_example_taynik_2
+
+[topi_example_taynik_3]:default_inventory_box
+visual				= dynamics\devices\dev_rukzak\dev_rukzak.ogf
+custom_data       		= scripts\topi\inventory_boxs\topi_example_taynik_3.ltx
+story_id 			= topi_example_taynik_3
+
+[topi_main_quest_document_1]:tch_quest
+$spawn 				= "quest_items\topi_main_quest_document_1"
+story_id            = topi_main_quest_document_1
+visual				= dynamics\equipments\quest\notes_document_case_3.ogf
+description			= st_topi_main_quest_document_1_descr
+inv_name			= st_topi_main_quest_document_1_name
+inv_name_short		        = st_topi_main_quest_document_1_name
+inv_weight			= 0.1
+inv_grid_width		= 2
+inv_grid_height		= 1
+inv_grid_x			= 9
+inv_grid_y			= 6
+can_trade			= false
+quest_item     		= true
+cost 				= 100
+icons_texture        = ui\ui_icon_equipment_2
+
+[topi_b1_leader_radiotion_item]:tch_quest
+$spawn 				= "quest_items\topi_b1_leader_radiotion_item"
+story_id            = topi_b1_leader_radiotion_item
+visual				= dynamics\equipments\quest\safe_container.ogf
+inv_name			= topi_b1_leader_radiotion_item_name
+description			= topi_b1_leader_radiotion_item_desc
+inv_weight			= 5.0
+inv_grid_width		= 2
+inv_grid_height		= 2
+inv_grid_x			= 58
+inv_grid_y			= 75
+can_trade			= false
+quest_item     		= true
+cost 				= 100
+icons_texture        = ui\ui_icon_equipment_2
+
+[topi_b1_leader_radiotion_doc]:tch_quest
+$spawn 				= "quest_items\topi_b1_leader_radiotion_doc"
+story_id            = topi_b1_leader_radiotion_doc
+visual				= dynamics\equipments\quest\notes_document_case_3.ogf
+inv_name			= topi_b1_leader_radiotion_doc_name
+description			= topi_b1_leader_radiotion_doc_desc
+inv_weight			= 0.1
+inv_grid_width		= 2
+inv_grid_height		= 1
+inv_grid_x			= 9
+inv_grid_y			= 6
+can_trade			= false
+quest_item     		= true
+cost 				= 100
+icons_texture        = ui\ui_icon_equipment_2
+
+[topi_barsuk_taynik_1_item]:tch_quest
+$spawn 				= "quest_items\topi_barsuk_taynik_1_item"
+description			= topi_barsuk_taynik_item_descr
+inv_name			= topi_barsuk_taynik_item_name
+visual				= dynamics\equipments\quest\scanner_anomaly.ogf
+inv_weight			= 2
+story_id 			= topi_barsuk_taynik_1_item
+can_trade			= false
+quest_item     		= true
+inv_grid_width		= 2
+inv_grid_height		= 3
+inv_grid_x		    = 58
+inv_grid_y		    = 77
+icons_texture        = ui\ui_icon_equipment_2
+
+
+[topi_barsuk_taynik_1]:default_inventory_box
+visual		            = dynamics\box\expl_dinamit.ogf
+custom_data       		= scripts\topi\inventory_boxs\topi_barsuk_taynik_1.ltx
+story_id 			= topi_barsuk_taynik_1
+
+[topi_barsuk_taynik_2]:default_inventory_box
+visual		            = dynamics\box\expl_dinamit.ogf
+custom_data       		= scripts\topi\inventory_boxs\topi_barsuk_taynik_2.ltx
+story_id 			= topi_barsuk_taynik_2
+
+[topi_barsuk_taynik_3]:default_inventory_box
+visual		            = dynamics\box\expl_dinamit.ogf
+custom_data       		= scripts\topi\inventory_boxs\topi_barsuk_taynik_3.ltx
+story_id 			= topi_barsuk_taynik_3
+
+[topi_barsuk_taynik_1_akum]:tch_quest
+$spawn 				= "quest_items\topi_barsuk_taynik_1_akum"
+description			= topi_barsuk_taynik_akum_1_descr
+inv_name			= topi_barsuk_taynik_akum_1_name
+visual				= dynamics\equipments\quest\box_condensers.ogf
+inv_weight			= 1
+story_id 			= topi_barsuk_taynik_1_akum
+can_trade			= true
+quest_item     		= false
+inv_grid_width		= 2
+inv_grid_height		= 2
+inv_grid_x		    = 58
+inv_grid_y		    = 80
+icons_texture        = ui\ui_icon_equipment_2
+
+[topi_barsuk_taynik_1_kabel]:tch_quest
+$spawn 				= "quest_items\topi_barsuk_taynik_1_kabel_akum"
+description			= topi_barsuk_taynik_1_kabel_descr
+inv_name			= topi_barsuk_taynik_1_kabel_name
+visual				= dynamics\equipments\quest\box_condensers.ogf
+inv_weight			= 1
+story_id 			= topi_barsuk_taynik_1_kabel
+can_trade			= true
+quest_item     		= false
+inv_grid_width		= 2
+inv_grid_height		= 2
+inv_grid_x		    = 60
+inv_grid_y		    = 75
+icons_texture        = ui\ui_icon_equipment_2
+
+[topi_barsuk_taynik_1_naved]:tch_quest
+$spawn 				= "quest_items\topi_barsuk_taynik_1_naved"
+description			= topi_barsuk_taynik_1_naved_descr
+inv_name			= topi_barsuk_taynik_1_naved_name
+visual				= dynamics\equipments\quest\box_condensers.ogf
+inv_weight			= 1
+story_id 			= topi_barsuk_taynik_1_naved
+can_trade			= true
+quest_item     		= false
+inv_grid_width		= 2
+inv_grid_height		= 2
+inv_grid_x		    = 60
+inv_grid_y		    = 77
+icons_texture        = ui\ui_icon_equipment_2
+
+[topi_barsuk_taynik_1_pered]:tch_quest
+$spawn 				= "quest_items\topi_barsuk_taynik_1_pered"
+description			= topi_barsuk_taynik_1_pered_descr
+inv_name			= topi_barsuk_taynik_1_pered_name
+visual				= dynamics\equipments\quest\box_condensers.ogf
+inv_weight			= 1
+story_id 			= topi_barsuk_taynik_1_pered
+can_trade			= true
+quest_item     		= false
+inv_grid_width		= 2
+inv_grid_height		= 2
+inv_grid_x		    = 60
+inv_grid_y		    = 79
+icons_texture        = ui\ui_icon_equipment_2
+
+[topi_barsuk_taynik_1_blok]:tch_quest
+$spawn 				= "quest_items\topi_barsuk_taynik_1_blok"
+description			= topi_barsuk_taynik_1_blok_descr
+inv_name			= topi_barsuk_taynik_1_blok_name
+visual				= dynamics\equipments\quest\box_condensers.ogf
+inv_weight			= 1
+story_id 			= topi_barsuk_taynik_1_blok
+can_trade			= true
+quest_item     		= false
+inv_grid_width		= 2
+inv_grid_height		= 2
+inv_grid_x		    = 62
+inv_grid_y		    = 75
+icons_texture        = ui\ui_icon_equipment_2
+
+[topi_barsuk_taynik_1_comp]:tch_quest
+$spawn 				= "quest_items\topi_barsuk_taynik_1_comp"
+description			= topi_barsuk_taynik_1_comp_descr
+inv_name			= topi_barsuk_taynik_1_comp_name
+visual				= dynamics\equipments\quest\notebook.ogf
+inv_weight			= 3.5
+story_id 			= topi_barsuk_taynik_1_comp
+can_trade			= false
+quest_item     		= true
+inv_grid_width		= 2
+inv_grid_height		= 2
+inv_grid_x		    = 62
+inv_grid_y		    = 77
+icons_texture        = ui\ui_icon_equipment_2
+
+[topi_mechanic_proto_filtr_1]:tch_quest
+$spawn 				= "quest_items\topi_mechanic_proto_filtr_1"
+description			= topi_mechanic_proto_filtr_1_descr
+inv_name			= topi_mechanic_proto_filtr_1_name
+visual				= dynamics\equipments\quest\box_condensers.ogf
+inv_weight			= 0.2
+story_id 			= topi_mechanic_proto_filtr_1
+can_trade			= false
+quest_item     		= true
+inv_grid_width		= 1
+inv_grid_height		= 1
+inv_grid_x		    = 62
+inv_grid_y		    = 73
+icons_texture        = ui\ui_icon_equipment_2
+
+[topi_mechanic_proto_filtr_2]:tch_quest
+$spawn 				= "quest_items\topi_mechanic_proto_filtr_2"
+description			= topi_mechanic_proto_filtr_2_descr
+inv_name			= topi_mechanic_proto_filtr_2_name
+visual				= dynamics\equipments\quest\box_condensers.ogf
+inv_weight			= 0.2
+story_id 			= topi_mechanic_proto_filtr_2
+can_trade			= false
+quest_item     		= true
+inv_grid_width		= 1
+inv_grid_height		= 1
+inv_grid_x		    = 62
+inv_grid_y		    = 74
+icons_texture        = ui\ui_icon_equipment_2
+
+[topi_mechanic_proto_filtr_3]:tch_quest
+$spawn 				= "quest_items\topi_mechanic_proto_filtr_3"
+description			= topi_mechanic_proto_filtr_3_descr
+inv_name			= topi_mechanic_proto_filtr_3_name
+visual				= dynamics\equipments\quest\box_condensers.ogf
+inv_weight			= 0.2
+story_id 			= topi_mechanic_proto_filtr_3
+can_trade			= false
+quest_item     		= true
+inv_grid_width		= 1
+inv_grid_height		= 1
+inv_grid_x		    = 63
+inv_grid_y		    = 73
+icons_texture        = ui\ui_icon_equipment_2
+
+[topi_mechanic_proto_filtr_4]:tch_quest
+$spawn 				= "quest_items\topi_mechanic_proto_filtr_4"
+description			= topi_mechanic_proto_filtr_4_descr
+inv_name			= topi_mechanic_proto_filtr_4_name
+visual				= dynamics\equipments\quest\box_condensers.ogf
+inv_weight			= 0.2
+story_id 			= topi_mechanic_proto_filtr_4
+can_trade			= false
+quest_item     		= true
+inv_grid_width		= 1
+inv_grid_height		= 1
+inv_grid_x		    = 63
+inv_grid_y		    = 74
+icons_texture        = ui\ui_icon_equipment_2
+
+[topi_mechanic_proto_filtr_5]:tch_quest
+$spawn 				= "quest_items\topi_mechanic_proto_filtr_5"
+description			= topi_mechanic_proto_filtr_5_descr
+inv_name			= topi_mechanic_proto_filtr_5_name
+visual				= dynamics\equipments\quest\box_condensers.ogf
+inv_weight			= 0.2
+story_id 			= topi_mechanic_proto_filtr_5
+can_trade			= false
+quest_item     		= true
+inv_grid_width		= 1
+inv_grid_height		= 1
+inv_grid_x		    = 64
+inv_grid_y		    = 73
+icons_texture        = ui\ui_icon_equipment_2
+
+[topi_mechanic_proto_maska_1]:tch_quest
+$spawn 				= "quest_items\topi_mechanic_proto_maska_1"
+description			= topi_mechanic_proto_maska_1_descr
+inv_name			= topi_mechanic_proto_maska_1_name
+visual				= dynamics\equipments\quest\box_condensers.ogf
+inv_weight			= 1
+story_id 			= topi_mechanic_proto_maska_1
+can_trade			= false
+quest_item     		= true
+inv_grid_width		= 2
+inv_grid_height		= 2
+inv_grid_x		    = 65
+inv_grid_y		    = 73
+icons_texture        = ui\ui_icon_equipment_2
+
+[topi_mechanic_proto_maska_2]:tch_quest
+$spawn 				= "quest_items\topi_mechanic_proto_maska_2"
+description			= topi_mechanic_proto_maska_2_descr
+inv_name			= topi_mechanic_proto_maska_2_name
+visual				= dynamics\equipments\quest\box_condensers.ogf
+inv_weight			= 1
+story_id 			= topi_mechanic_proto_maska_2
+can_trade			= false
+quest_item     		= true
+inv_grid_width		= 2
+inv_grid_height		= 2
+inv_grid_x		    = 67
+inv_grid_y		    = 73
+icons_texture        = ui\ui_icon_equipment_2
+
+[topi_mechanic_proto_maska_3]:tch_quest
+$spawn 				= "quest_items\topi_mechanic_proto_maska_3"
+description			= topi_mechanic_proto_maska_3_descr
+inv_name			= topi_mechanic_proto_maska_3_name
+visual				= dynamics\equipments\quest\box_condensers.ogf
+inv_weight			= 1
+story_id 			= topi_mechanic_proto_maska_3
+can_trade			= false
+quest_item     		= true
+inv_grid_width		= 2
+inv_grid_height		= 2
+inv_grid_x		    = 69
+inv_grid_y		    = 73
+icons_texture        = ui\ui_icon_equipment_2
+
+[topi_mechanic_proto_maska_4]:tch_quest
+$spawn 				= "quest_items\topi_mechanic_proto_maska_4"
+description			= topi_mechanic_proto_maska_4_descr
+inv_name			= topi_mechanic_proto_maska_4_name
+visual				= dynamics\equipments\quest\box_condensers.ogf
+inv_weight			= 1
+story_id 			= topi_mechanic_proto_maska_4
+can_trade			= false
+quest_item     		= true
+inv_grid_width		= 2
+inv_grid_height		= 2
+inv_grid_x		    = 71
+inv_grid_y		    = 73
+icons_texture        = ui\ui_icon_equipment_2
+
+[topi_mechanic_proto_maska_5]:tch_quest
+$spawn 				= "quest_items\topi_mechanic_proto_maska_5"
+description			= topi_mechanic_proto_maska_5_descr
+inv_name			= topi_mechanic_proto_maska_5_name
+visual				= dynamics\equipments\quest\box_condensers.ogf
+inv_weight			= 1
+story_id 			= topi_mechanic_proto_maska_5
+can_trade			= false
+quest_item     		= true
+inv_grid_width		= 2
+inv_grid_height		= 2
+inv_grid_x		    = 73
+inv_grid_y		    = 73
+icons_texture        = ui\ui_icon_equipment_2
+
+[topi_mechanic_proto_dathik]:tch_quest
+$spawn 				= "quest_items\topi_mechanic_proto_dathik"
+description			= topi_mechanic_proto_dathik_descr
+inv_name			= topi_mechanic_proto_dathik_name
+visual				= dynamics\equipments\quest\box_condensers.ogf
+inv_weight			= 0.1
+story_id 			= topi_mechanic_proto_dathik
+can_trade			= false
+quest_item     		= true
+inv_grid_width		= 2
+inv_grid_height		= 1
+inv_grid_x		    = 56
+inv_grid_y		    = 81
+icons_texture        = ui\ui_icon_equipment_2
+
+[topi_mechanic_protivogaz_1]:tch_quest
+$spawn 				= "quest_items\topi_mechanic_protivogaz_1"
+description			= topi_mechanic_protivogaz_1_descr
+inv_name			= topi_mechanic_protivogaz_1_name
+visual				= dynamics\equipments\quest\box_condensers.ogf
+inv_weight			= 1.5
+story_id 			= topi_mechanic_protivogaz_1
+can_trade			= false
+quest_item     		= true
+inv_grid_width       	= 2
+inv_grid_height      	= 2
+inv_grid_x           	= 71
+inv_grid_y           	= 71
+icons_texture        = ui\ui_icon_equipment_2
+
+[topi_mechanic_protivogaz_2]:tch_quest
+$spawn 				= "quest_items\topi_mechanic_protivogaz_2"
+description			= topi_mechanic_protivogaz_2_descr
+inv_name			= topi_mechanic_protivogaz_2_name
+visual				= dynamics\equipments\quest\box_condensers.ogf
+inv_weight			= 1.5
+story_id 			= topi_mechanic_protivogaz_2
+can_trade			= false
+quest_item     		= true
+inv_grid_width     = 2
+inv_grid_height    = 2
+inv_grid_x         = 65
+inv_grid_y         = 71
+icons_texture        = ui\ui_icon_equipment_2
+
+[topi_mechanic_protivogaz_3]:tch_quest
+$spawn 				= "quest_items\topi_mechanic_protivogaz_3"
+description			= topi_mechanic_protivogaz_3_descr
+inv_name			= topi_mechanic_protivogaz_3_name
+visual				= dynamics\equipments\quest\box_condensers.ogf
+inv_weight			= 1.5
+story_id 			= topi_mechanic_protivogaz_3
+can_trade			= false
+quest_item     		= true
+inv_grid_width       	= 2
+inv_grid_height      	= 2
+inv_grid_x           	= 67
+inv_grid_y           	= 71
+icons_texture        = ui\ui_icon_equipment_2
+
+[topi_mechanic_protivogaz_4]:tch_quest
+$spawn 				= "quest_items\topi_mechanic_protivogaz_4"
+description			= topi_mechanic_protivogaz_4_descr
+inv_name			= topi_mechanic_protivogaz_4_name
+visual				= dynamics\equipments\quest\box_condensers.ogf
+inv_weight			= 1.5
+story_id 			= topi_mechanic_protivogaz_4
+can_trade			= false
+quest_item     		= true
+inv_grid_width       	= 2
+inv_grid_height      	= 2
+inv_grid_x           	= 69
+inv_grid_y           	= 71
+icons_texture        = ui\ui_icon_equipment_2
+
+[topi_mechanic_protivogaz_5]:tch_quest
+$spawn 				= "quest_items\topi_mechanic_protivogaz_5"
+description			= topi_mechanic_protivogaz_5_descr
+inv_name			= topi_mechanic_protivogaz_5_name
+visual				= dynamics\equipments\quest\box_condensers.ogf
+inv_weight			= 1.5
+story_id 			= topi_mechanic_protivogaz_5
+can_trade			= false
+quest_item     		= true
+inv_grid_width     = 2
+inv_grid_height    = 2
+inv_grid_x         = 73
+inv_grid_y         = 71
+icons_texture        = ui\ui_icon_equipment_2
+
+[topi_mechanic_proto_device_1]:booster
+$spawn 				= "food and drugs\topi_mechanic_proto_device_1"
+visual				= dynamics\equipments\quest\safe_container.ogf
+description			= st_topi_mechanic_proto_device_1_descr
+inv_name			= st_topi_mechanic_proto_device_1_name
+inv_name_short		        = st_topi_mechanic_proto_device_1_name
+inv_weight			= 1
+inv_grid_width		= 2
+inv_grid_height		= 2
+inv_grid_x			= 62
+inv_grid_y			= 79
+cost				= 7500
+attach_angle_offset		= 0.440521, 1.378287, -0.644026
+attach_position_offset	        = 0.104196, -0.010821, 0.076969
+attach_bone_name		= bip01_r_hand
+auto_attach			= false
+bone_name			= bip01_r_hand
+position_offset			= 0.0,0.0,0.0
+angle_offset			= 1.570790,1.570790,3.92699
+use_sound			= interface\inv_close
+icons_texture        = ui\ui_icon_equipment_2
+
+[topi_mechanic_proto_device_2]:booster
+$spawn 				= "food and drugs\topi_mechanic_proto_device_2"
+visual				= dynamics\equipments\quest\safe_container.ogf
+description			= st_topi_mechanic_proto_device_2_descr
+inv_name			= st_topi_mechanic_proto_device_2_name
+inv_name_short		        = st_topi_mechanic_proto_device_2_name
+inv_weight			= 1
+inv_grid_width		= 2
+inv_grid_height		= 2
+inv_grid_x			= 64
+inv_grid_y			= 75
+cost				= 7500
+attach_angle_offset		= 0.440521, 1.378287, -0.644026
+attach_position_offset	        = 0.104196, -0.010821, 0.076969
+attach_bone_name		= bip01_r_hand
+auto_attach			= false
+bone_name			= bip01_r_hand
+position_offset			= 0.0,0.0,0.0
+angle_offset			= 1.570790,1.570790,3.92699
+use_sound			= interface\inv_close
+icons_texture        = ui\ui_icon_equipment_2
+
+[topi_b8_mechanic_proto_quest_spot]:generic_spot
+story_id = topi_b8_mechanic_proto_quest_spot
+
+[topi_trader_taynik_1]:default_inventory_box
+custom_data       		= scripts\topi\inventory_boxs\topi_trader_taynik_1.ltx
+story_id 			= topi_trader_taynik_1
+
+[topi_a6_trader_documents]:tch_quest
+$spawn 				= "quest_items\topi_a6_trader_documents"
+story_id            = topi_a6_trader_documents
+visual				= dynamics\equipments\quest\notes_document_case_3.ogf
+inv_name			= topi_a6_trader_documents_name
+description			= topi_a6_trader_documents_desc
+inv_weight			= 0.1
+inv_grid_width		= 2
+inv_grid_height		= 1
+inv_grid_x			= 9
+inv_grid_y			= 6
+can_trade			= true
+quest_item     		= false
+cost 				= 100
+icons_texture        = ui\ui_icon_equipment_2
+
+[topi_b9_anubis_fugascreate_device]:booster
+$spawn 				= "food and drugs\topi_anubis_fugascreate_device"
+visual				= dynamics\equipments\quest\safe_container.ogf
+description			= st_topi_anubis_fugascreate_device_descr
+inv_name			= st_topi_anubis_fugascreate_device_name
+inv_name_short		        = st_topi_anubis_fugascreate_device_name
+inv_weight			= 1
+inv_grid_width		= 2
+inv_grid_height		= 2
+inv_grid_x			= 64
+inv_grid_y			= 77
+cost				= 7500
+attach_angle_offset		= 0.440521, 1.378287, -0.644026
+attach_position_offset	        = 0.104196, -0.010821, 0.076969
+attach_bone_name		= bip01_r_hand
+auto_attach			= false
+bone_name			= bip01_r_hand
+position_offset			= 0.0,0.0,0.0
+angle_offset			= 1.570790,1.570790,3.92699
+use_sound			= interface\inv_close
+icons_texture        = ui\ui_icon_equipment_2
+
+[topi_b9_anubis_fugas]:tch_quest
+$spawn 				= "quest_items\topi_b9_anubis_fugas"
+story_id            = topi_b9_anubis_fugas
+visual				= dynamics\equipments\quest\scanner_anomaly.ogf
+inv_name			= topi_b9_anubis_fugas_name
+description			= topi_b9_anubis_fugas_desc
+inv_weight			= 1.5
+inv_grid_width		= 2
+inv_grid_height		= 2
+inv_grid_x			= 64
+inv_grid_y			= 79
+can_trade			= false
+quest_item     		= true
+cost 				= 100
+icons_texture        = ui\ui_icon_equipment_2
+
+[topi_b9_anubis_fugas_components_1]:tch_quest
+$spawn 				= "quest_items\topi_b9_anubis_fugas_components_1"
+story_id            = topi_b9_anubis_fugas_components_1
+visual				= dynamics\equipments\quest\box_condensers.ogf
+inv_name			= topi_b9_anubis_fugas_components_1_name
+description			= topi_b9_anubis_fugas_components_1_desc
+inv_weight			= 0.5
+inv_grid_width		= 2
+inv_grid_height		= 2
+inv_grid_x			= 66
+inv_grid_y			= 75
+can_trade			= false
+quest_item     		= true
+cost 				= 100
+icons_texture        = ui\ui_icon_equipment_2
+
+[topi_b9_anubis_fugas_components_2]:tch_quest
+$spawn 				= "quest_items\topi_b9_anubis_fugas_components_2"
+story_id            = topi_b9_anubis_fugas_components_2
+visual				= dynamics\equipments\quest\box_condensers.ogf
+inv_name			= topi_b9_anubis_fugas_components_2_name
+description			= topi_b9_anubis_fugas_components_2_desc
+inv_weight			= 0.5
+inv_grid_width		= 2
+inv_grid_height		= 2
+inv_grid_x			= 66
+inv_grid_y			= 77
+can_trade			= false
+quest_item     		= true
+cost 				= 100
+icons_texture        = ui\ui_icon_equipment_2
+
+[topi_b9_anubis_fugas_components_3]:tch_quest
+$spawn 				= "quest_items\topi_b9_anubis_fugas_components_3"
+story_id            = topi_b9_anubis_fugas_components_3
+visual				= dynamics\equipments\quest\box_condensers.ogf
+inv_name			= topi_b9_anubis_fugas_components_3_name
+description			= topi_b9_anubis_fugas_components_3_desc
+inv_weight			= 0.5
+inv_grid_width		= 2
+inv_grid_height		= 2
+inv_grid_x			= 66
+inv_grid_y			= 79
+can_trade			= false
+quest_item     		= true
+cost 				= 100
+icons_texture        = ui\ui_icon_equipment_2
+
+[topi_b11_radiostation]:tch_quest
+$spawn 				= "quest_items\topi_b11_radiostation"
+description			= topi_b11_radiostation_descr
+inv_name			= topi_b11_radiostation_name
+visual				= dynamics\equipments\quest\scanner_anomaly.ogf
+inv_weight			= 2
+story_id 			= topi_b11_radiostation
+can_trade			= false
+quest_item     		= true
+inv_grid_width		= 3
+inv_grid_height		= 2
+inv_grid_x			= 68
+inv_grid_y			= 75
+icons_texture        = ui\ui_icon_equipment_2
+
+[topi_b11_plata_1]:tch_quest
+$spawn 				= "quest_items\topi_b11_plata_1"
+description			= topi_b11_plata_1_descr
+inv_name			= topi_b11_plata_1_name
+visual				= dynamics\equipments\quest\materials_textolite.ogf
+inv_weight			= 0.1
+story_id 			= topi_b11_plata_1
+can_trade			= true
+quest_item     		= false
+inv_grid_width		= 2
+inv_grid_height		= 2
+inv_grid_x			= 68
+inv_grid_y			= 77
+icons_texture        = ui\ui_icon_equipment_2
+
+[topi_b11_plata_2]:tch_quest
+$spawn 				= "quest_items\topi_b11_plata_2"
+description			= topi_b11_plata_2_descr
+inv_name			= topi_b11_plata_2_name
+visual				= dynamics\equipments\quest\materials_textolite.ogf
+inv_weight			= 0.1
+story_id 			= topi_b11_plata_2
+can_trade			= true
+quest_item     		= false
+inv_grid_width		= 2
+inv_grid_height		= 2
+inv_grid_x			= 68
+inv_grid_y			= 77
+icons_texture        = ui\ui_icon_equipment_2
+
+[topi_b11_plata_3]:tch_quest
+$spawn 				= "quest_items\topi_b11_plata_3"
+description			= topi_b11_plata_3_descr
+inv_name			= topi_b11_plata_3_name
+visual				= dynamics\equipments\quest\materials_textolite.ogf
+inv_weight			= 0.1
+story_id 			= topi_b11_plata_3
+can_trade			= false
+quest_item     		= true
+inv_grid_width		= 2
+inv_grid_height		= 2
+inv_grid_x			= 68
+inv_grid_y			= 77
+icons_texture        = ui\ui_icon_equipment_2
+
+[topi_b11_plata_3_paika]:tch_quest
+$spawn 				= "quest_items\topi_b11_plata_3"
+description			= topi_b11_plata_3_paika_descr
+inv_name			= topi_b11_plata_3_paika_name
+visual				= dynamics\equipments\quest\materials_textolite.ogf
+inv_weight			= 0.1
+story_id 			= topi_b11_plata_3_paika
+can_trade			= true
+quest_item     		= false
+inv_grid_width		= 2
+inv_grid_height		= 2
+inv_grid_x			= 68
+inv_grid_y			= 77
+icons_texture        = ui\ui_icon_equipment_2
+
+[topi_b11_plata_4]:tch_quest
+$spawn 				= "quest_items\topi_b11_plata_4"
+description			= topi_b11_plata_4_descr
+inv_name			= topi_b11_plata_4_name
+visual				= dynamics\equipments\quest\materials_textolite.ogf
+inv_weight			= 0.1
+story_id 			= topi_b11_plata_4
+can_trade			= true
+quest_item     		= false
+inv_grid_width		= 2
+inv_grid_height		= 2
+inv_grid_x			= 68
+inv_grid_y			= 77
+icons_texture        = ui\ui_icon_equipment_2
+
+[topi_b11_multimetr]:booster
+$spawn 				= "food and drugs\topi_b11_multimetr"
+visual				= dynamics\equipments\quest\safe_container.ogf
+description			= topi_b11_multimetr_descr
+inv_name			= topi_b11_multimetr_name
+inv_name_short		        = topi_b11_multimetr_name
+inv_weight			= 0.5
+inv_grid_width		= 2
+inv_grid_height		= 2
+inv_grid_x			= 68
+inv_grid_y			= 79
+cost				= 7500
+attach_angle_offset		= 0.440521, 1.378287, -0.644026
+attach_position_offset	        = 0.104196, -0.010821, 0.076969
+attach_bone_name		= bip01_r_hand
+auto_attach			= false
+bone_name			= bip01_r_hand
+position_offset			= 0.0,0.0,0.0
+angle_offset			= 1.570790,1.570790,3.92699
+use_sound			= interface\inv_close
+icons_texture        = ui\ui_icon_equipment_2
+
+[topi_b11_payalnik]:booster
+$spawn 				= "food and drugs\topi_b11_payalnik"
+visual				= dynamics\equipments\quest\safe_container.ogf
+description			= topi_b11_payalnik_descr
+inv_name			= topi_b11_payalnik_name
+inv_name_short		        = topi_b11_payalnik_name
+inv_weight			= 1
+inv_grid_width		= 3
+inv_grid_height		= 2
+inv_grid_x			= 71
+inv_grid_y			= 75
+cost				= 7500
+attach_angle_offset		= 0.440521, 1.378287, -0.644026
+attach_position_offset	        = 0.104196, -0.010821, 0.076969
+attach_bone_name		= bip01_r_hand
+auto_attach			= false
+bone_name			= bip01_r_hand
+position_offset			= 0.0,0.0,0.0
+angle_offset			= 1.570790,1.570790,3.92699
+use_sound			= interface\inv_close
+icons_texture        = ui\ui_icon_equipment_2
+
+[topi_b11_components_1]:tch_quest
+$spawn 				= "quest_items\topi_b11_components_1"
+description			= topi_b11_components_1_descr
+inv_name			= topi_b11_components_1_name
+visual				= dynamics\equipments\quest\materials_textolite.ogf
+inv_weight			= 0.1
+story_id 			= topi_b11_components_1
+can_trade			= false
+quest_item     		= true
+inv_grid_width		= 1
+inv_grid_height		= 1
+inv_grid_x			= 60
+inv_grid_y			= 81
+icons_texture        = ui\ui_icon_equipment_2
+
+[topi_b11_components_2]:tch_quest
+$spawn 				= "quest_items\topi_b11_components_2"
+description			= topi_b11_components_2_descr
+inv_name			= topi_b11_components_2_name
+visual				= dynamics\equipments\quest\materials_textolite.ogf
+inv_weight			= 0.1
+story_id 			= topi_b11_components_2
+can_trade			= false
+quest_item     		= true
+inv_grid_width		= 1
+inv_grid_height		= 1
+inv_grid_x			= 61
+inv_grid_y			= 81
+icons_texture        = ui\ui_icon_equipment_2
+
+[topi_b11_components_3]:tch_quest
+$spawn 				= "quest_items\topi_b11_components_3"
+description			= topi_b11_components_3_descr
+inv_name			= topi_b11_components_3_name
+visual				= dynamics\equipments\quest\materials_textolite.ogf
+inv_weight			= 0.1
+story_id 			= topi_b11_components_3
+can_trade			= false
+quest_item     		= true
+inv_grid_width		= 1
+inv_grid_height		= 1
+inv_grid_x			= 62
+inv_grid_y			= 81
+icons_texture        = ui\ui_icon_equipment_2
+
+[topi_b11_zaglushka]:tch_quest
+$spawn 				= "quest_items\topi_b11_zaglushka"
+description			= topi_b11_zaglushka_descr
+inv_name			= topi_b11_zaglushka_name
+visual				= dynamics\equipments\quest\materials_textolite.ogf
+inv_weight			= 0.1
+story_id 			= topi_b11_zaglushka
+can_trade			= false
+quest_item     		= true
+inv_grid_width		= 1
+inv_grid_height		= 1
+inv_grid_x			= 63
+inv_grid_y			= 81
+icons_texture        = ui\ui_icon_equipment_2
+
+[topi_radiostation_taynik_1]:default_inventory_box
+visual		            = dynamics\box\item_1.ogf
+custom_data       		= scripts\topi\inventory_boxs\topi_radiostation_taynik_1.ltx
+story_id 			= topi_radiostation_taynik_1
+
+[topi_b1_leader_vphr_item]:tch_quest
+$spawn 				= "quest_items\topi_b1_leader_vphr_item"
+story_id            = topi_b1_leader_vphr_item
+visual				= dynamics\equipments\quest\safe_container.ogf
+inv_name			= topi_b1_leader_vphr_item_name
+description			= topi_b1_leader_vphr_item_desc
+inv_weight			= 5.0
+inv_grid_width		= 2
+inv_grid_height		= 2
+inv_grid_x			= 70
+inv_grid_y			= 77
+can_trade			= false
+quest_item     		= true
+cost 				= 100
+icons_texture        = ui\ui_icon_equipment_2
+
+[topi_b1_leader_vphr_doc]:tch_quest
+$spawn 				= "quest_items\topi_b1_leader_vphr_doc"
+story_id            = topi_b1_leader_vphr_doc
+visual				= dynamics\equipments\quest\notes_document_case_3.ogf
+inv_name			= topi_b1_leader_vphr_doc_name
+description			= topi_b1_leader_vphr_doc_desc
+inv_weight			= 0.1
+inv_grid_width		= 2
+inv_grid_height		= 1
+inv_grid_x			= 11
+inv_grid_y			= 6
+can_trade			= false
+quest_item     		= true
+cost 				= 100
+icons_texture        = ui\ui_icon_equipment_2
+
+[topi_a105_razia_type_1]:tch_quest
+$spawn 				= "quest_items\topi_a105_razia_type_1"
+story_id            = topi_a105_razia_type_1
+visual				= dynamics\devices\item_pda_quest.ogf
+inv_name			= topi_a105_razia_type_1_name
+description			= topi_a105_razia_type_1_desc
+inv_weight			= 1.0
+inv_grid_width		= 2
+inv_grid_height		= 2
+inv_grid_x			= 70
+inv_grid_y			= 79
+can_trade			= false
+quest_item     		= true
+cost 				= 100
+icons_texture        = ui\ui_icon_equipment_2
+
+[topi_a105_razia_type_2]:tch_quest
+$spawn 				= "quest_items\topi_a105_razia_type_2"
+story_id            = topi_a105_razia_type_2
+visual				= dynamics\devices\item_pda_quest.ogf
+inv_name			= topi_a105_razia_type_2_name
+description			= topi_a105_razia_type_2_desc
+inv_weight			= 1.0
+inv_grid_width		= 2
+inv_grid_height		= 2
+inv_grid_x			= 72
+inv_grid_y			= 77
+can_trade			= false
+quest_item     		= true
+cost 				= 100
+icons_texture        = ui\ui_icon_equipment_2
+
+[topi_a105_razia_type_3]:tch_quest
+$spawn 				= "quest_items\topi_a105_razia_type_3"
+story_id            = topi_a105_razia_type_3
+visual				= dynamics\devices\item_pda_quest.ogf
+inv_name			= topi_a105_razia_type_3_name
+description			= topi_a105_razia_type_3_desc
+inv_weight			= 1.0
+inv_grid_width		= 2
+inv_grid_height		= 2
+inv_grid_x			= 72
+inv_grid_y			= 79
+can_trade			= false
+quest_item     		= true
+cost 				= 100
+icons_texture        = ui\ui_icon_equipment_2
+
+[topi_a105_razia_type_4]:tch_quest
+$spawn 				= "quest_items\topi_a105_razia_type_4"
+story_id            = topi_a105_razia_type_4
+visual				= dynamics\devices\item_pda_quest.ogf
+inv_name			= topi_a105_razia_type_4_name
+description			= topi_a105_razia_type_4_desc
+inv_weight			= 1.0
+inv_grid_width		= 2
+inv_grid_height		= 2
+inv_grid_x			= 74
+inv_grid_y			= 75
+can_trade			= false
+quest_item     		= true
+cost 				= 100
+icons_texture        = ui\ui_icon_equipment_2
+
+[topi_a105_razia_type_5]:tch_quest
+$spawn 				= "quest_items\topi_a105_razia_type_5"
+story_id            = topi_a105_razia_type_5
+visual				= dynamics\devices\item_pda_quest.ogf
+inv_name			= topi_a105_razia_type_5_name
+description			= topi_a105_razia_type_5_desc
+inv_weight			= 1.0
+inv_grid_width		= 2
+inv_grid_height		= 2
+inv_grid_x			= 74
+inv_grid_y			= 77
+can_trade			= false
+quest_item     		= true
+cost 				= 100
+icons_texture        = ui\ui_icon_equipment_2
+
+[topi_zam_proto_filtr_1]:tch_quest
+$spawn 				= "quest_items\topi_zam_proto_filtr_1"
+description			= topi_zam_proto_filtr_1_descr
+inv_name			= topi_zam_proto_filtr_1_name
+visual				= dynamics\equipments\quest\box_condensers.ogf
+inv_weight			= 0.2
+story_id 			= topi_zam_proto_filtr_1
+can_trade			= false
+quest_item     		= true
+inv_grid_width		= 1
+inv_grid_height		= 1
+inv_grid_x		    = 63
+inv_grid_y		    = 73
+icons_texture        = ui\ui_icon_equipment_2
+
+[topi_zam_maska_1]:tch_quest
+$spawn 				= "quest_items\topi_zam_maska_1"
+description			= topi_zam_maska_1_descr
+inv_name			= topi_zam_maska_1_name
+visual				= dynamics\equipments\quest\box_condensers.ogf
+inv_weight			= 1
+story_id 			= topi_zam_maska_1
+can_trade			= false
+quest_item     		= true
+inv_grid_width       	= 2
+inv_grid_height      	= 2
+inv_grid_x           	= 73
+inv_grid_y           	= 73
+icons_texture        = ui\ui_icon_equipment_2
+
+[topi_zam_protivogaz_1]:tch_quest
+$spawn 				= "quest_items\topi_zam_protivogaz_1"
+description			= topi_zam_protivogaz_1_descr
+inv_name			= topi_zam_protivogaz_1_name
+visual				= dynamics\equipments\quest\box_condensers.ogf
+inv_weight			= 1.5
+story_id 			= topi_zam_protivogaz_1
+can_trade			= false
+quest_item     		= true
+inv_grid_width       	= 2
+inv_grid_height      	= 2
+inv_grid_x         = 73
+inv_grid_y         = 71
+icons_texture        = ui\ui_icon_equipment_2
+
+[topi_zam_yad_1]:tch_quest
+$spawn 				= "quest_items\topi_zam_yad_1"
+description			= topi_zam_yad_1_descr
+inv_name			= topi_zam_yad_1_name
+visual				= dynamics\equipments\quest\box_condensers.ogf
+inv_weight			= 0.1
+story_id 			= topi_zam_yad_1
+can_trade			= false
+quest_item     		= true
+inv_grid_width       	= 2
+inv_grid_height      	= 2
+inv_grid_x		    = 74
+inv_grid_y		    = 79
+icons_texture        = ui\ui_icon_equipment_2
+
+[topi_zam_katalizator_1]:tch_quest
+$spawn 				= "quest_items\topi_zam_katalizator_1"
+description			= topi_zam_katalizator_1_descr
+inv_name			= topi_zam_katalizator_1_name
+visual				= dynamics\equipments\quest\box_condensers.ogf
+inv_weight			= 1.5
+story_id 			= topi_zam_katalizator_1
+can_trade			= false
+quest_item     		= true
+inv_grid_width       	= 2
+inv_grid_height      	= 2
+inv_grid_x           	= 76
+inv_grid_y           	= 75
+icons_texture        = ui\ui_icon_equipment_2
+
+[topi_zam_protocrafter]:booster
+$spawn 				= "food and drugs\topi_zam_protocrafter"
+visual				= dynamics\equipments\quest\safe_container.ogf
+description			= topi_zam_protocrafter_descr
+inv_name			= topi_zam_protocrafter_name
+inv_name_short		        = topi_zam_protocrafter_name
+inv_weight			= 1.5
+inv_grid_width		= 2
+inv_grid_height		= 2
+inv_grid_x			= 76
+inv_grid_y			= 77
+cost				= 7500
+attach_angle_offset		= 0.440521, 1.378287, -0.644026
+attach_position_offset	        = 0.104196, -0.010821, 0.076969
+attach_bone_name		= bip01_r_hand
+auto_attach			= false
+bone_name			= bip01_r_hand
+position_offset			= 0.0,0.0,0.0
+angle_offset			= 1.570790,1.570790,3.92699
+use_sound			= interface\inv_close
+icons_texture        = ui\ui_icon_equipment_2
+
+[topi_b12_key_1]:tch_quest
+$spawn 				= "quest_items\topi_b12_key_1"
+visual				= dynamics\equipments\quest\key.ogf
+description			= topi_b12_key_1_descr
+inv_name			= topi_b12_key_1_name
+inv_name_short			= topi_b12_key_1_name
+can_trade			= false
+quest_item      		= true
+cost				= 0
+inv_grid_width			= 1
+inv_grid_height			= 1
+inv_grid_x			= 13
+inv_grid_y			= 3
+icons_texture        = ui\ui_icon_equipment_2
+
+[topi_b12_key_2]:tch_quest
+$spawn 				= "quest_items\topi_b12_key_2"
+visual				= dynamics\equipments\quest\key.ogf
+description			= topi_b12_key_2_descr
+inv_name			= topi_b12_key_2_name
+inv_name_short			= topi_b12_key_2_name
+can_trade			= false
+quest_item      		= true
+cost				= 0
+inv_grid_width			= 1
+inv_grid_height			= 1
+inv_grid_x			= 13
+inv_grid_y			= 3
+icons_texture        = ui\ui_icon_equipment_2
+
+[topi_lider_spectrometr_1]:tch_quest
+$spawn 				= "quest_items\topi_lider_spectrometr_1"
+description			= topi_lider_spectrometr_1_descr
+inv_name			= topi_lider_spectrometr_1_name
+visual				= dynamics\equipments\quest\box_condensers.ogf
+inv_weight			= 1.5
+story_id 			= topi_lider_spectrometr_1
+can_trade			= false
+quest_item     		= true
+inv_grid_width       	= 2
+inv_grid_height      	= 2
+inv_grid_x           	= 76
+inv_grid_y           	= 79
+icons_texture        = ui\ui_icon_equipment_2
+
+[topi_lider_copromat_1]:tch_quest
+$spawn 				= "quest_items\topi_lider_copromat_1"
+story_id            = topi_lider_copromat_1
+visual				= dynamics\equipments\quest\notes_document_case_3.ogf
+inv_name			= topi_lider_copromat_1_name
+description			= topi_lider_copromat_1_desc
+inv_weight			= 0.1
+inv_grid_width		= 2
+inv_grid_height		= 1
+inv_grid_x			= 9
+inv_grid_y			= 6
+can_trade			= false
+quest_item     		= true
+cost 				= 100
+icons_texture        = ui\ui_icon_equipment_2
+
+[topi_anubis_ukazanie_1]:tch_quest
+$spawn 				= "quest_items\topi_anubis_ukazanie_1"
+story_id            = topi_anubis_ukazanie_1
+visual				= dynamics\equipments\quest\notes_document_case_3.ogf
+inv_name			= topi_anubis_ukazanie_1_name
+description			= topi_anubis_ukazanie_1_desc
+inv_weight			= 0.1
+inv_grid_width		= 2
+inv_grid_height		= 1
+inv_grid_x			= 9
+inv_grid_y			= 6
+can_trade			= false
+quest_item     		= true
+cost 				= 100
+icons_texture        = ui\ui_icon_equipment_2
+
+[topi_anubis_ukazanie_1_spot]:generic_spot
+story_id = topi_anubis_ukazanie_1_spot
+
+[topi_anubis_var_2_bomba]:tch_quest
+$spawn 				= "quest_items\topi_anubis_var_2_bomba"
+description			= topi_anubis_var_2_bomba_descr
+inv_name			= topi_anubis_var_2_bomba_name
+visual				= dynamics\equipments\quest\box_condensers.ogf
+inv_weight			= 1.5
+story_id 			= topi_anubis_var_2_bomba
+can_trade			= false
+quest_item     		= true
+inv_grid_width       	= 2
+inv_grid_height      	= 2
+inv_grid_x           	= 78
+inv_grid_y           	= 75
+icons_texture        = ui\ui_icon_equipment_2
+
+[topi_a2_main_tainik_1]:booster
+$spawn 				= "food and drugs\topi_a2_main_tainik_1"
+visual				= dynamics\devices\dev_rukzak\dev_rukzak.ogf
+description			= st_topi_a2_main_tainik_descr
+inv_name			= st_topi_a2_main_tainik_title
+inv_name_short		= st_topi_a2_main_tainik_title
+inv_weight			= 2.5
+inv_grid_width		= 2
+inv_grid_height		= 2
+inv_grid_x		    = 56
+inv_grid_y		    = 79
+cost				= 5500
+attach_angle_offset		= 0.440521, 1.378287, -0.644026
+attach_position_offset	        = 0.104196, -0.010821, 0.076969
+attach_bone_name		= bip01_r_hand
+auto_attach			= false
+bone_name			= bip01_r_hand
+position_offset			= 0.0,0.0,0.0
+angle_offset			= 1.570790,1.570790,3.92699
+use_sound			= interface\inv_close
+icons_texture        = ui\ui_icon_equipment_2
+
+[topi_killer_ukazanie_1]:tch_quest
+$spawn 				= "quest_items\topi_killer_ukazanie_1"
+story_id            = topi_killer_ukazanie_1
+visual				= dynamics\equipments\quest\notes_document_case_3.ogf
+inv_name			= topi_killer_ukazanie_1_name
+description			= topi_killer_ukazanie_1_desc
+inv_weight			= 0.1
+inv_grid_width		= 2
+inv_grid_height		= 1
+inv_grid_x			= 9
+inv_grid_y			= 6
+can_trade			= false
+quest_item     		= true
+cost 				= 100
+icons_texture        = ui\ui_icon_equipment_2
+
+[topi_killer_ukazanie_2]:tch_quest
+$spawn 				= "quest_items\topi_killer_ukazanie_2"
+story_id            = topi_killer_ukazanie_2
+visual				= dynamics\equipments\quest\notes_document_case_3.ogf
+inv_name			= topi_killer_ukazanie_2_name
+description			= topi_killer_ukazanie_2_desc
+inv_weight			= 0.1
+inv_grid_width		= 2
+inv_grid_height		= 1
+inv_grid_x			= 9
+inv_grid_y			= 6
+can_trade			= false
+quest_item     		= true
+cost 				= 100
+icons_texture        = ui\ui_icon_equipment_2
+
+[topi_i1_killer_code_tainik]:inventory_box
+$spawn 				= "devices\topi_i1_killer_code_tainik"
+story_id    = topi_i1_killer_code_tainik
+visual      = dynamics\devices\dev_rukzak\dev_rukzak.ogf
+custom_data = scripts\topi\inventory_boxs\topi_i1_killer_code_tainik.ltx
+
+[topi_f1_radioscaner]:tch_quest
+$spawn 				= "quest_items\topi_f1_radioscaner"
+description			= topi_f1_radioscaner_descr
+inv_name			= topi_f1_radioscaner_name
+visual				= dynamics\equipments\quest\scanner_anomaly.ogf
+inv_weight			= 2
+story_id 			= topi_f1_radioscaner
+can_trade			= false
+quest_item     		= true
+inv_grid_width		= 2
+inv_grid_height		= 2
+inv_grid_x			= 78
+inv_grid_y			= 77
+icons_texture        = ui\ui_icon_equipment_2
+
+[topi_b41_seleczia_device]:tch_quest
+$spawn 				= "quest_items\topi_b41_seleczia_device"
+description			= topi_b41_seleczia_device_descr
+inv_name			= topi_b41_seleczia_device_name
+visual				= dynamics\equipments\quest\scanner_anomaly.ogf
+inv_weight			= 2
+story_id 			= topi_b41_seleczia_device
+can_trade			= false
+quest_item     		= true
+inv_grid_width		= 2
+inv_grid_height		= 2
+inv_grid_x			= 78
+inv_grid_y			= 79
+icons_texture        = ui\ui_icon_equipment_2
+
+[topi_b41_artefact_1]:tch_quest
+$spawn 				= "quest_items\topi_b41_artefact_1"
+description			= topi_b41_artefact_1_descr
+inv_name			= topi_b41_artefact_1_name
+visual				= dynamics\artefacts\s2_spaika_2.ogf
+inv_weight			= 1
+story_id 			= topi_b41_artefact_1
+can_trade			= false
+quest_item     		= true
+inv_grid_width		= 1
+inv_grid_height		= 1
+inv_grid_x			= 61
+inv_grid_y			= 72
+icons_texture        = ui\ui_icon_equipment_2
+
+[topi_b41_artefact_2]:tch_quest
+$spawn 				= "quest_items\topi_b41_artefact_2"
+description			= topi_b41_artefact_2_descr
+inv_name			= topi_b41_artefact_2_name
+visual				= dynamics\artefacts\s2_spaika_2.ogf
+inv_weight			= 1
+story_id 			= topi_b41_artefact_2
+can_trade			= false
+quest_item     		= true
+inv_grid_width		= 1
+inv_grid_height		= 1
+inv_grid_x			= 61
+inv_grid_y			= 72
+icons_texture        = ui\ui_icon_equipment_2
+
+[topi_b41_artefact_3]:tch_quest
+$spawn 				= "quest_items\topi_b41_artefact_3"
+description			= topi_b41_artefact_3_descr
+inv_name			= topi_b41_artefact_3_name
+visual				= dynamics\artefacts\s2_spaika_2.ogf
+inv_weight			= 1
+story_id 			= topi_b41_artefact_3
+can_trade			= false
+quest_item     		= true
+inv_grid_width		= 1
+inv_grid_height		= 1
+inv_grid_x			= 61
+inv_grid_y			= 72
+icons_texture        = ui\ui_icon_equipment_2
+
+[topi_b19_quest_pnv_1]:booster
+$spawn 				= "food and drugs\topi_b19_quest_pnv_1"
+visual    			= dynamics\weapons\wpn_upgrade\wpn_scope_susat.ogf
+description			= topi_b19_quest_pnv_1_used_descr
+inv_name			= topi_b19_quest_pnv_1_used_name
+inv_name_short		        = topi_b19_quest_pnv_1_used_name
+inv_weight			= 0.5
+inv_grid_width		= 2
+inv_grid_height		= 2
+inv_grid_x			= 80
+inv_grid_y			= 75
+cost				= 7500
+attach_angle_offset		= 0.440521, 1.378287, -0.644026
+attach_position_offset	        = 0.104196, -0.010821, 0.076969
+attach_bone_name		= bip01_r_hand
+auto_attach			= false
+bone_name			= bip01_r_hand
+position_offset			= 0.0,0.0,0.0
+angle_offset			= 1.570790,1.570790,3.92699
+use_sound			= interface\inv_close
+icons_texture        = ui\ui_icon_equipment_2
+
+[topi_b19_quest_pnv_2]:booster
+$spawn 				= "food and drugs\topi_b19_quest_pnv_2"
+visual    			= dynamics\weapons\wpn_upgrade\wpn_scope_susat.ogf
+description			= topi_b19_quest_pnv_2_used_descr
+inv_name			= topi_b19_quest_pnv_2_used_name
+inv_name_short		        = topi_b19_quest_pnv_2_used_name
+inv_weight			= 0.5
+inv_grid_width		= 2
+inv_grid_height		= 2
+inv_grid_x			= 80
+inv_grid_y			= 77
+cost				= 7500
+attach_angle_offset		= 0.440521, 1.378287, -0.644026
+attach_position_offset	        = 0.104196, -0.010821, 0.076969
+attach_bone_name		= bip01_r_hand
+auto_attach			= false
+bone_name			= bip01_r_hand
+position_offset			= 0.0,0.0,0.0
+angle_offset			= 1.570790,1.570790,3.92699
+use_sound			= interface\inv_close
+icons_texture        = ui\ui_icon_equipment_2
+
+[topi_b19_quest_pnv_3]:booster
+$spawn 				= "food and drugs\topi_b19_quest_pnv_3"
+visual    			= dynamics\weapons\wpn_upgrade\wpn_scope_susat.ogf
+description			= topi_b19_quest_pnv_3_used_descr
+inv_name			= topi_b19_quest_pnv_3_used_name
+inv_name_short		        = topi_b19_quest_pnv_3_used_name
+inv_weight			= 0.5
+inv_grid_width		= 2
+inv_grid_height		= 2
+inv_grid_x			= 80
+inv_grid_y			= 79
+cost				= 7500
+attach_angle_offset		= 0.440521, 1.378287, -0.644026
+attach_position_offset	        = 0.104196, -0.010821, 0.076969
+attach_bone_name		= bip01_r_hand
+auto_attach			= false
+bone_name			= bip01_r_hand
+position_offset			= 0.0,0.0,0.0
+angle_offset			= 1.570790,1.570790,3.92699
+use_sound			= interface\inv_close
+icons_texture        = ui\ui_icon_equipment_2
+
+[topi_b19_quest_pnv_1_used]:tch_quest
+$spawn 				= "quest_items\topi_b19_quest_pnv_1_used"
+description			= topi_b19_quest_pnv_1_used_descr
+inv_name			= topi_b19_quest_pnv_1_used_name
+visual    			= dynamics\weapons\wpn_upgrade\wpn_scope_susat.ogf
+inv_weight			= 0.5
+story_id 			= topi_b19_quest_pnv_1_used
+can_trade			= false
+quest_item     		= true
+inv_grid_width		= 2
+inv_grid_height		= 2
+inv_grid_x			= 80
+inv_grid_y			= 75
+icons_texture        = ui\ui_icon_equipment_2
+
+[topi_b19_quest_pnv_2_used]:tch_quest
+$spawn 				= "quest_items\topi_b19_quest_pnv_2_used"
+description			= topi_b19_quest_pnv_2_used_descr
+inv_name			= topi_b19_quest_pnv_2_used_name
+visual    			= dynamics\weapons\wpn_upgrade\wpn_scope_susat.ogf
+inv_weight			= 0.5
+story_id 			= topi_b19_quest_pnv_2_used
+can_trade			= false
+quest_item     		= true
+inv_grid_width		= 2
+inv_grid_height		= 2
+inv_grid_x			= 80
+inv_grid_y			= 77
+icons_texture        = ui\ui_icon_equipment_2
+
+[topi_b19_quest_pnv_3_used]:tch_quest
+$spawn 				= "quest_items\topi_b19_quest_pnv_3_used"
+description			= topi_b19_quest_pnv_3_used_descr
+inv_name			= topi_b19_quest_pnv_3_used_name
+visual    			= dynamics\weapons\wpn_upgrade\wpn_scope_susat.ogf
+inv_weight			= 0.5
+story_id 			= topi_b19_quest_pnv_3_used
+can_trade			= false
+quest_item     		= true
+inv_grid_width		= 2
+inv_grid_height		= 2
+inv_grid_x			= 80
+inv_grid_y			= 79
+icons_texture        = ui\ui_icon_equipment_2
+
+[topi_c7_quest_device_1]:tch_quest
+$spawn 				= "quest_items\topi_c7_quest_device_1"
+description			= topi_c7_quest_device_1_descr
+inv_name			= topi_c7_quest_device_1_name
+visual				= dynamics\equipments\quest\scanner_anomaly.ogf
+inv_weight			= 1
+story_id 			= topi_c7_quest_device_1
+can_trade			= false
+quest_item     		= true
+inv_grid_width		= 2
+inv_grid_height		= 2
+inv_grid_x			= 82
+inv_grid_y			= 75
+icons_texture        = ui\ui_icon_equipment_2
+
+[topi_c7_quest_device_1_instal]:default_inventory_box
+visual		            = dynamics\box\item_1.ogf
+custom_data       		= scripts\topi\inventory_boxs\topi_c7_quest_device_1_instal.ltx
+story_id 			= topi_c7_quest_device_1_instal
+
+[topi_c7_quest_device_2]:tch_quest
+$spawn 				= "quest_items\topi_c7_quest_device_2"
+description			= topi_c7_quest_device_2_descr
+inv_name			= topi_c7_quest_device_2_name
+visual				= dynamics\equipments\quest\scanner_anomaly.ogf
+inv_weight			= 1
+story_id 			= topi_c7_quest_device_2
+can_trade			= false
+quest_item     		= true
+inv_grid_width		= 2
+inv_grid_height		= 2
+inv_grid_x			= 82
+inv_grid_y			= 77
+icons_texture        = ui\ui_icon_equipment_2
+
+[topi_c7_quest_device_2_instal]:default_inventory_box
+visual		            = dynamics\box\item_1.ogf
+custom_data       		= scripts\topi\inventory_boxs\topi_c7_quest_device_2_instal.ltx
+story_id 			= topi_c7_quest_device_2_instal
+
+[topi_b65_zam_bomba]:tch_quest
+$spawn 				= "quest_items\topi_b65_zam_bomba"
+description			= topi_b65_zam_bomba_descr
+inv_name			= topi_b65_zam_bomba_name
+visual				= dynamics\equipments\quest\box_condensers.ogf
+inv_weight			= 1.5
+story_id 			= topi_b65_zam_bomba
+can_trade			= false
+quest_item     		= true
+inv_grid_width       	= 2
+inv_grid_height      	= 2
+inv_grid_x           	= 78
+inv_grid_y           	= 75
+icons_texture        = ui\ui_icon_equipment_2
+
+[topi_a65_zam_bomba]:tch_quest
+$spawn 				= "quest_items\topi_a65_zam_bomba"
+description			= topi_a65_zam_bomba_descr
+inv_name			= topi_a65_zam_bomba_name
+visual				= dynamics\equipments\quest\box_condensers.ogf
+inv_weight			= 1.5
+story_id 			= topi_a65_zam_bomba
+can_trade			= false
+quest_item     		= true
+inv_grid_width       	= 2
+inv_grid_height      	= 2
+inv_grid_x           	= 78
+inv_grid_y           	= 75
+icons_texture        = ui\ui_icon_equipment_2
+
+;---------------------makdm 2015, для CoP 1.6.0.2. и Смерти Вопреки--------------------
+;-------------------------------------Детектор мин-------------------------------------
+;--------------------------------------------------------------------------------------
+
+[detector_scientific_hud_1]:detector_base_hud
+item_position				= -0.071685,0.036188,-0.009934
+item_orientation			= 314.589233,-186.420761,-189.323669
+
+item_visual                   	= dynamics\devices\dev_detector_4\dev_detector_5_hud
+
+anm_show                                 = d3_draw, draw
+anm_show_fast                            = d3_draw, draw
+anm_hide                                 = d3_holster, holster
+anm_hide_fast                            = d3_holster, holster
+anm_idle                                 = d3_idle, idle
+anm_idle_moving                          = d3_move, move
+anm_idle_moving_crouch                   = d3_crouch, move
+anm_idle_sprint                          = d3_sprint, sprint
+
+anm_show_16x9                            = d3_draw, draw
+anm_show_fast_16x9                       = d3_draw, draw
+anm_hide_16x9                            = d3_holster, holster
+anm_hide_fast_16x9                       = d3_holster, holster
+anm_idle_16x9                            = d3_idle, idle
+anm_idle_moving_16x9                     = d3_move, move
+anm_idle_moving_crouch_16x9              = d3_crouch, move
+anm_idle_sprint_16x9                     = d3_sprint, sprint
+
+[detector_mine]:identity_immunities,tch_device
+GroupControlSection	= spawn_group
+$spawn 				= "devices\detector_mine"
+$prefetch 		= 32
+cform			= skeleton
+class			= DET_SCIE
+visual			= dynamics\devices\dev_detector_4\dev_detector_5.ogf
+
+inv_name		= st_detector_mine
+inv_name_short	= st_detector_mine
+description		= st_detector_mine_descr
+
+hud			= detector_scientific_hud_1
+animation_slot		= 7
+ef_detector_type	= 1
+inv_weight		= 0.5
+default_to_ruck		= false
+slot			= 8
+
+inv_grid_width		= 1
+inv_grid_height		= 1
+inv_grid_x		= 116
+inv_grid_y		= 4
+cost			= 12500
+
+icons_texture        = ui\ui_icon_equipment_2
+
+ui_p			= -0.02904,0.01,0.0364
+ui_r			= 0,90,0
+af_radius		= 30
+af_vis_radius		= 6
+
+af_class_1		= af_oasis
+af_sound_1_		= detectors\art_beep1
+af_freq_1		= 0.05, 2
+
+zone_class_1		= zone_mine_field
+zone_freq_1			= 0.05, 2

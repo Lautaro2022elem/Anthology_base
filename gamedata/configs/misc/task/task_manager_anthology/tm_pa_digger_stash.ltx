@@ -1,0 +1,68 @@
+;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
+;;;;;;;;;;;;;;; СЮЖЕТНАЯ ЛИНИЯ ;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
+;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
+
+[digst_meet_to_markus] ;Битва со Стронглавом
+icon = ui_inGame2_Bitva_s_Stronglavom
+prior = 200
+storyline = true
+title = {+perevalochnaya_baza_zver_see_to_document}pb_who_is_happening_part_5_name, {-perevalochnaya_baza_zver_see_to_pda +perevalochnaya_baza_start_quest_zombied_kill_done =actor_has_item(pb_quest_document_1)}pb_who_is_happening_part_4_name, {+perevalochnaya_baza_start_quest_zombied_kill_done}pb_who_is_happening_part_3_name, {+perevalochnaya_lutiy_meet_to_zombied_done}pb_who_is_happening_part_2_name, pb_who_is_happening_part_1_name
+descr = {+perevalochnaya_baza_zver_see_to_document}pb_who_is_happening_part_5_text, {-perevalochnaya_baza_zver_see_to_pda +perevalochnaya_baza_start_quest_zombied_kill_done =actor_has_item(pb_quest_document_1)}pb_who_is_happening_part_4_text, {+perevalochnaya_baza_start_quest_zombied_kill_done}pb_who_is_happening_part_3_text, {+perevalochnaya_lutiy_meet_to_zombied_done}pb_who_is_happening_part_2_text, pb_who_is_happening_part_1_text
+target = {+perevalochnaya_baza_zver_see_to_document}pb_lutiy, {+perevalochnaya_baza_start_quest_zombied_kill_done}nil, {+perevalochnaya_lutiy_meet_to_zombied_done}pb_zombied_quest, pb_lutiy
+condlist_0 = {+perevalochnaya_baza_quest_line_zombied_kill_end} complete
+
+
+[digst_stay_dont_move] ;Вести себя тихо
+icon = ui_inGame2_Igra_v_pryatki
+prior = 150
+storyline = true
+title = {+digst_delete_stronglav}digst_stay_dont_move_part_2_name, digst_stay_dont_move_part_1_name
+descr = {+digst_delete_stronglav}digst_stay_dont_move_part_2_text, digst_stay_dont_move_part_1_text
+target = {+digst_delete_stronglav}digst_markus_survive, nil
+condlist_0 = {+digst_stay_dont_move_complite} complete
+condlist_1 = {+digst_actor_hit_stronglav} fail
+
+
+[digst_kill_to_spider] ;Уничтожить кровососов
+icon = ui_inGame2_Monolit_kill
+prior = 150
+storyline = true
+title = {+digst_spider_quest_dead_2 +digst_spider_quest_dead_1 +digst_spider_quest_dead}digst_kill_to_spider_part_2_name, digst_kill_to_spider_part_1_name
+descr = {+digst_spider_quest_dead_2 +digst_spider_quest_dead_1 +digst_spider_quest_dead}digst_kill_to_spider_part_2_text, digst_kill_to_spider_part_1_text
+target = {+digst_spider_quest_dead_2 +digst_spider_quest_dead_1 +digst_spider_quest_dead}digst_markus_survive, nil
+condlist_0 = {+digst_kill_to_spider_complite} complete
+
+
+[digst_find_exit_to_underground] ;Найти выход из норы
+icon = ui_inGame2_Laboratoriya_X8
+prior = 150
+storyline = true
+title = digst_find_exit_to_underground_part_1_name
+descr = digst_find_exit_to_underground_part_1_text
+target = nil
+condlist_0 = {+pb_found_to_markus_done =actor_on_level(prostranstvenniy_puzir)} complete
+condlist_1 = {+pb_clean_quest_item_done} reversed
+
+
+[labx7_find_lutiy_in_underground] ;Найти Лютого
+icon = ui_inGame2_Igra_v_pryatki
+prior = 150
+storyline = true
+title = {+labx7_lutiy_prisoner_come_here}labx7_find_lutiy_in_underground_part_2_name, labx7_find_lutiy_in_underground_part_1_name
+descr = {+labx7_lutiy_prisoner_come_here}labx7_find_lutiy_in_underground_part_2_text, labx7_find_lutiy_in_underground_part_1_text
+target = {+labx7_lutiy_prisoner_come_here}labx7_lutiy_prisoner, nil
+condlist_0 = {+labx7_actor_meet_from_lutiy_prisoner} complete
+
+
+[labx7_find_exit_to_labx7] ;Найти выход из Лаборатории
+icon = ui_inGame2_Laboratoriya_X8
+prior = 150
+storyline = true
+title = {=actor_on_level(station_digger)}labx7_find_exit_to_labx7_part_4_name, {+labx7_quest_explosive_spawn_restr_1}labx7_find_exit_to_labx7_part_3_name, {+labx7_give_info_explosive_in_plant}labx7_find_exit_to_labx7_part_2_name, labx7_find_exit_to_labx7_part_1_name
+descr = {=actor_on_level(station_digger)}labx7_find_exit_to_labx7_part_4_text, {+labx7_quest_explosive_spawn_restr_1}labx7_find_exit_to_labx7_part_3_text, {+labx7_give_info_explosive_in_plant}labx7_find_exit_to_labx7_part_2_text, labx7_find_exit_to_labx7_part_1_text
+target = {=actor_on_level(station_digger)}bar_turn_to_lift_buttom_off, {+labx7_quest_explosive_spawn_restr_1}labx6_change_station_digger_1, {+labx7_give_info_explosive_in_plant}labx7_quest_zone_explosive_reload, nil
+condlist_0 = {=actor_on_level(prostranstvenniy_puzir)} complete
+
+;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
+;;;;;;;;;;;;;;; САЙД-КВЕСТЫ ;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
+;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;

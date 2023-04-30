@@ -1,0 +1,14 @@
+[logic]
+active = sr_idle@wait
+
+[sr_idle@wait]
+on_info = {+sad_cowboy_enemy} nil
+on_info2 = {+sad_oasis_jumped_out} sr_idle@1 ; +sad_cutscene_robbery_start
+
+[sr_idle@1]
+on_info = {=sad_is_time_in_interval(19:50:6:10)} sr_light
+on_info2 = {+sad_oasis_cutscene_robbery_end} nil
+
+[sr_light]
+light_on = true
+on_info = {+sad_oasis_cutscene_robbery_end} nil

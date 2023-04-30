@@ -1,0 +1,16 @@
+[logic]
+active = sr_idle@1
+
+[sr_idle@1]
+on_actor_inside = {+spectrum_project_start -esc_the_first_penny_nashel} sr_idle@2 %+esc_sr_escape_two_part%, {+esc_the_first_penny_nashel} sr_idle@nil %=set_squad_enemy_to_actor(esc_squad_tunnel) =play_sound(esc_robbery_scene_kill_actor) +esc_trepach_dialog_robbery_attack% 
+
+[sr_idle@2]
+on_actor_inside = {+esc_dialog_wolf_the_first_penny} sr_idle@nil %+esc_robbery_info_1 =play_sound(esc_robbery_scene_see_actor)%, {-esc_dialog_wolf_the_first_penny} sr_idle@hit %=set_squad_enemy_to_actor(esc_squad_tunnel) =play_sound(esc_robbery_scene_kill_actor) +esc_trepach_dialog_robbery_attack%
+
+[sr_idle@hit] 
+on_game_timer = 50 | sr_idle@kill %=hit_actor%
+
+[sr_idle@kill] 
+on_game_timer = 5 | %=kill_actor%
+
+[sr_idle@nil]

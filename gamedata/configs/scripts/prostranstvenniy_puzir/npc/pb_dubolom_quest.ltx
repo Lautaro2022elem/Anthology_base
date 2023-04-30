@@ -1,0 +1,88 @@
+;=========meet_stalker_korpys========
+[meet@korpys_stalker]
+close_anim 		= nil
+close_victim 	= nil
+far_anim 		= nil
+far_victim 		= nil
+close_distance 	= 0
+far_distance 	= 0
+use = {=actor_enemy} false, {=dist_to_actor_le(3)} true, false
+snd_on_use = {!dist_to_actor_le(3)} nil
+meet_on_talking = false
+;==================================
+
+[logic]
+suitable = {=check_npc_name(pb_dubolom)} true
+prior = 200
+active = walker@dubolom_start_game
+level_spot = quest_npc
+post_combat_time = 0, 0
+
+[walker@dubolom_start_game]
+path_walk = pb_dubolom_quest_base_walk
+path_look = pb_dubolom_quest_base_look
+on_info = {+pro_quest_night_hunting_ready} walker@dubolom_go_to_quest
+on_info2 = {+actor_in_zone_markus_signal} %=release_npc%
+combat_ignore_cond = true 
+combat_ignore_keep_when_attacked = true
+gather_items_enabled = false
+corpse_detection_enabled = false
+invulnerable = true
+meet = meet@quest_night_hunting
+
+[walker@dubolom_go_to_quest]
+path_walk = pb_dubolom_night_hunting_walk_1
+meet = no_meet
+def_state_moving = run
+on_info = {+pro_dubolom_come_to_base_again} walker@dubolom_stay_final
+combat_ignore_cond = true 
+combat_ignore_keep_when_attacked = true
+gather_items_enabled = false
+help_wounded_enabled = false
+corpse_detection_enabled = false
+invulnerable = true
+on_signal = pb_dubolom_to_spot | {-pro_dubolom_come_to_chimera} remark@threat_danger %+pro_dubolom_come_to_chimera%
+
+[remark@threat_danger]
+anim = threat_danger
+target = story | actor
+on_info = {-pro_dubolom_hunter_meet_sound_stop} %=play_sound(pb_dubolom_night_hunting_meet) +pro_dubolom_hunter_meet_sound_stop%
+on_info2 = {+pro_himera_quest_dead} walker@dubolom_go_to_base
+on_timer = 12000 | %+pro_dubolom_hunter_start_quest_killing%
+danger = danger
+use_camp = false
+invulnerable = true
+gather_items_enabled = false
+help_wounded_enabled = false
+corpse_detection_enabled = false
+meet = no_meet
+
+[walker@dubolom_go_to_base]
+path_walk = pb_dubolom_quest_from_base_walk_1
+meet = no_meet
+def_state_moving = run
+on_info = {+pro_dubolom_come_to_base_again} walker@dubolom_stay_final
+combat_ignore_cond = false 
+combat_ignore_keep_when_attacked = false
+gather_items_enabled = false
+help_wounded_enabled = false
+corpse_detection_enabled = false
+invulnerable = true
+on_signal = pb_dubolom_to_base | {-pro_dubolom_come_to_base_again} walker@dubolom_stay_final %+pro_dubolom_come_to_base_again%
+
+[walker@dubolom_stay_final]
+path_walk = pb_dubolom_quest_base_walk
+path_look = pb_dubolom_quest_base_look
+on_info = {+actor_in_zone_markus_signal} %=release_npc%
+combat_ignore_cond = true 
+combat_ignore_keep_when_attacked = true
+gather_items_enabled = false
+corpse_detection_enabled = false
+invulnerable = true
+meet = meet@quest_night_hunting
+
+[meet@quest_night_hunting]:meet@korpys_stalker
+close_victim = actor
+allow_break = false
+meet_dialog = pb_dubolom_night_hunting_start
+trade_enable = false

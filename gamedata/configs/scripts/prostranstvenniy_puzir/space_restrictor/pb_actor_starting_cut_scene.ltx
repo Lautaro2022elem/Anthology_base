@@ -1,0 +1,34 @@
+[logic]
+active = sr_idle@cut_scene_start
+
+[sr_idle@cut_scene_start]
+on_info = {+spatial_anomaly -pb_found_to_markus_done =actor_on_level(p_p)} sr_idle@cut_scene_start_0 %=run_postprocess(black:2525:true) =RavenMemmoryStart =spawn_object(pb_lutiy_scene:pro_lutiy_meet_to_actor_start_walk)%
+
+[sr_idle@cut_scene_start_0]
+on_timer = 3000 | sr_idle@cut_scene_start_1 %=intro_chapter_1%
+
+[sr_idle@cut_scene_start_1]
+on_timer = 2500 | sr_idle@cut_scene_start_2 %=show_text_in_start(proffesional_present)%
+
+[sr_idle@cut_scene_start_2]
+on_timer = 6000 | sr_cutscene@cut_scene_start_3 %+pro_start_scene_stop_postprocess%
+
+[sr_cutscene@cut_scene_start_3]
+point = actor_start_scene_puzir_walk
+look = actor_start_scene_puzir_look
+cam_effector = scenario_cam\prostranstvenniy_puzir\pro_intro_camera
+enable_ui_on_end = false
+global_cameffect = true
+on_info = {+pro_start_scene_stop_postprocess} %=stop_postprocess(2525)%
+on_timer = 31000 | sr_idle@cut_scene_start_4 %=run_postprocess(black:2525:true)%
+
+[sr_idle@cut_scene_start_4]
+on_timer = 2500 | sr_idle@cut_scene_start_5 %=show_anomaly(spatial_anomaly)%
+
+[sr_idle@cut_scene_start_5]
+on_timer = 1800 | sr_idle@cut_scene_start_6 %=show_update(update_4_1)%
+
+[sr_idle@cut_scene_start_6]
+on_timer = 8500 | sr_idle@cut_scene_nil %+pro_start_scene_end_info%
+
+[sr_idle@cut_scene_nil]

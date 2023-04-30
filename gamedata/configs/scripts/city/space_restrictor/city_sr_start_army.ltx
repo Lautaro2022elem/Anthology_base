@@ -1,0 +1,29 @@
+[logic]
+active = sr_idle
+
+[sr_idle]
+on_actor_inside = {-city_TEST +spectrum_project_start +labx14_search_exit_complete} sr_idle@2 %=play_sound(city_army_start_1)%
+on_info = {+city_TEST} sr_idle@nil
+
+[sr_idle@2]
+on_info = {!actor_nomove_nowpn =actor_in_zone(city_sr_start_army_a)} sr_idle@kill %=disable_ui +city_army_start_gg_kill =stop_sound(city_army_start_1) =play_sound(city_army_start_3)%
+on_actor_outside =  {-city_npc_army_kep_start_dialog_info}sr_idle@kill %=disable_ui +city_army_start_gg_kill =stop_sound(city_army_start_1) =play_sound(city_army_start_3)%
+on_game_timer = 80 | {-city_army_start_2} %=play_sound(city_army_start_2) +city_army_start_2%
+on_info3 = {+city_npc_army_kep_start_dialog_info} sr_idle@3 %+city_npc_army_friend =disable_ui%
+
+[sr_idle@3]
+on_game_timer = 10 | sr_idle@4 %=run_postprocess(black:5000:true) =ChGameTime(1) +city_army_start_remove%
+
+[sr_idle@4]
+on_game_timer = 30 | sr_idle@5 %=teleport_actor(city_actor_teleport_base_walk:city_actor_teleport_base_look)%
+
+[sr_idle@5]
+on_game_timer = 20 | sr_idle@6 %=enable_ui =stop_postprocess(5000)%
+
+[sr_idle@6]
+on_info = {+city_npc_kolyazin_meeting_dialog_info} sr_idle@nil %=enable_ui%
+
+[sr_idle@kill]
+on_game_timer = 10 | sr_idle@nil %=hit_actor =kill_actor%
+
+[sr_idle@nil]

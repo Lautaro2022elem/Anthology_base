@@ -1,0 +1,37 @@
+[logic]
+active = remark
+
+[remark]
+anim = wait
+target = story | labx14_sr_zona_controler_2
+invulnerable = true
+gather_items_enabled = false
+corpse_detection_enabled = false
+combat_ignore_keep_when_attacked = true 
+combat_ignore_cond = true
+meet = no_meet
+on_info = {+labx14_spawn_npc_black_info} remark@1
+
+[remark@1]
+anim = wait
+target = story | actor
+invulnerable = true
+gather_items_enabled = false
+corpse_detection_enabled = false
+combat_ignore_keep_when_attacked = true 
+combat_ignore_cond = true
+meet = no_meet
+on_game_timer = 10 | walker
+on_info2 = {=dist_to_actor_ge(25)} %=release_npc%
+
+
+[walker]
+path_walk = labx14_npc_black_start_walk
+on_info2 = {=dist_to_actor_ge(25)} %=release_npc%
+on_signal = labx14_npc_black_signal| {-labx14_npc_black_signal} %+labx14_npc_black_signal =release_npc%
+gather_items_enabled = false
+corpse_detection_enabled = false
+combat_ignore_keep_when_attacked = true 
+combat_ignore_cond = true
+invulnerable = true
+meet = no_meet

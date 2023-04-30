@@ -1,0 +1,13 @@
+[logic@esc_dogs_nasip_squad]
+suitable = {=target_squad_name(esc_squad_monster_8)}
+active = mob_home@dogs
+monster_job = true
+prior = 70
+
+[mob_home@dogs]
+path_home = dogs_home_1
+home_min_radius = 5
+home_max_radius = 15
+actor_friendly = false
+npc_friendly = true
+combat_ignore_cond = {=check_enemy_name(esc_merc_sniper_enemy)} true

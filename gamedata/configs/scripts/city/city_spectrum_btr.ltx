@@ -1,0 +1,29 @@
+[logic] 
+active = ph_car
+
+[ph_car] 
+path_walk = city_spectrum_btr_start_way 
+target = actor 
+fire_range = 90
+fire_track_target = true
+fire_angle = 90
+auto_fire = true 
+track_target = true 
+fire_time = 5
+on_info = {+city_sabotage_has_item} ph_minigun@1
+invulnerable = true
+
+
+[ph_minigun@1]
+auto_fire = true
+invulnerable = false
+fire_range = 22
+fire_track_target = true
+fire_angle = 360
+target = actor
+shoot_only_on_visible = true
+invulnerable = true
+on_info = {+city_btr_ph_idle} ph_idle
+
+[ph_idle] ;-- выключен
+auto_fire = false

@@ -1,0 +1,8 @@
+[logic]
+active = sr_idle@start_controller_spawn
+
+[sr_idle@start_controller_spawn]
+on_info = {-controller_spawn_end +perevalochnaya_baza_quest_line_zombied_kill_end +perevalochnaya_lutiy_meet_to_zombied_done} %=create_squad(pb_quest_controller_squad:pro_smart_terrain_2_0) =give_task(pb_kill_to_controller) +controller_spawn_end%
+on_info2 = {+controller_spawn_end} sr_idle@start_controller_nil
+
+[sr_idle@start_controller_nil]

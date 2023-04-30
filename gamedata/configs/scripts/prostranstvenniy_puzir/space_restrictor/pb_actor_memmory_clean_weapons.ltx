@@ -1,0 +1,7 @@
+[logic]
+active = sr_idle@clean_quest_item
+
+[sr_idle@clean_quest_item]
+on_info = {+pb_actor_hide_knife -pb_clean_quest_item_complete} sr_idle@nil %=del_item_from_actor(pb_quest_mail_shpala:1) =del_item_from_actor(pb_quest_bloknot_3:1) =del_item_from_actor(tainik_padalshika:1) =del_item_from_actor(device_warning_module:1) =del_item_from_actor(pb_quest_document_1:1) =del_item_from_actor(spez_razia:1) =del_item_from_actor(pb_padalshik_pda:1) +pb_clean_quest_item_complete%
+
+[sr_idle@nil]

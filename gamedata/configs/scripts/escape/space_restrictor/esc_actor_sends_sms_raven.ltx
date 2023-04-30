@@ -1,0 +1,34 @@
+[logic]
+active = sr_idle@zver_sends_sms
+
+[sr_idle@zver_sends_sms]
+on_info = {+esc_wolf_quest_line_start_dialog_end} sr_idle@zver_sends_sms_1
+
+[sr_idle@zver_sends_sms_1]
+on_timer = 4000 | sr_idle@sidor_sends_sms %=esc_nps_zver_quest_sms%
+
+[sr_idle@sidor_sends_sms]
+on_info = {+zohan_flair_quest_complete} sr_idle@sidor_sends_sms_1
+
+[sr_idle@sidor_sends_sms_1]
+on_timer = 4000 | sr_idle@sidor_give_quest %=esc_send_tip_sidorovich_quest%
+
+[sr_idle@sidor_give_quest]
+on_timer = 3000 | sr_idle@sidor_sends_sms_again %=give_task(esc_talk_to_sidorovich_again)%
+
+[sr_idle@sidor_sends_sms_again]
+on_info = {+esc_quest_line_in_escape_go_to_end} sr_idle@sidor_sends_sms_again_1
+
+[sr_idle@sidor_sends_sms_again_1]
+on_timer = 5000 | sr_idle@sidor_give_quest_again %=esc_send_tip_sidorovich_quest%
+
+[sr_idle@sidor_give_quest_again]
+on_timer = 3000 | sr_idle@sidor_quest_orest_info %=give_task(esc_talk_to_sidorovich_final)%
+
+[sr_idle@sidor_quest_orest_info]
+on_info = {+esc_info_orest_spawn_in_base} sr_idle@sidor_quest_orest_spawn
+
+[sr_idle@sidor_quest_orest_spawn]
+on_timer = 1000 | sr_idle@nil %=create_squad(esc_squad_leader_orest:esc_smart_terrain_2_0)%
+
+[sr_idle@nil]

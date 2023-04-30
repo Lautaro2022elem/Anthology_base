@@ -1,0 +1,17 @@
+[logic]
+active = sr_idle@10
+
+[sr_idle@10]
+on_actor_inside = sr_idle@20
+on_info = {+sad_mutny_b1_accuped} sr_idle@nil
+on_info2 = {=is_squad_enemy_to_actor(sad_b1_stalker_mutny_squad)} sr_idle@nil %+sad_actor_mutny_enemy%
+
+[sr_idle@20]
+on_actor_outside = sr_idle@10 %-sad_b1_door_weapon_check%
+on_info = {=actor_has_weapon} %+sad_b1_door_weapon_check%, sr_no_weapon@wait %-sad_b1_door_weapon_check%
+on_info2 = {=is_squad_enemy_to_actor(sad_b1_stalker_mutny_squad)} sr_idle@nil %+sad_actor_mutny_enemy%
+
+[sr_no_weapon@wait]
+on_actor_outside = sr_idle@10
+
+[sr_idle@nil]

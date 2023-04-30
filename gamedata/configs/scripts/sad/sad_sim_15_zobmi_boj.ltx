@@ -1,0 +1,13 @@
+[logic@zom_1]
+suitable = {=check_npc_name(sim_default_zombied)} true
+active = walker
+prior = 120
+
+[logic@zom_2]:logic@zom_1
+[logic@zom_3]:logic@zom_1
+[logic@zom_4]:logic@zom_1
+[logic@zom_5]:logic@zom_1
+[logic@zom_6]:logic@zom_1
+
+[walker]
+path_walk = zombi_walk

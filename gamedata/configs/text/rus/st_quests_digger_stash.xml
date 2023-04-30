@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="windows-1251" ?>
+<string_table>
+
+<!-- Квест: Игра в прятки -->
+<string id="digst_stay_dont_move_part_1_name">
+<text>Игра в прятки: Сидеть тихо</text>
+</string>
+<string id="digst_stay_dont_move_part_1_text">
+<text>Нужно сидеть тихо, иначе Стронглав увидит нас.</text>
+</string>
+<string id="digst_stay_dont_move_part_2_name">
+<text>Игра в прятки: Поговорить с Маркусом</text>
+</string>
+<string id="digst_stay_dont_move_part_2_text">
+<text>Стронглав ушел, можно поговорить с Маркусом.</text>
+</string>
+
+<!-- Квест: Плохое решение -->
+<string id="digst_kill_to_spider_part_1_name">
+<text>Плохое решение: Уничтожить кровососов</text>
+</string>
+<string id="digst_kill_to_spider_part_1_text">
+<text>Тварь пропала, а на её месте появились два кровососа, нужно уничтожить этих кровососов, в противном случае - они уничтожат нас.</text>
+</string>
+<string id="digst_kill_to_spider_part_2_name">
+<text>Плохое решение: Поговорить с Маркусом</text>
+</string>
+<string id="digst_kill_to_spider_part_2_text">
+<text>Теперь можно поговорить с Маркусом.</text>
+</string>
+
+<!-- Квест: Найти выход -->
+<string id="digst_find_exit_to_underground_part_1_name">
+<text>В поиске выхода: Найти выход из норы</text>
+</string>
+<string id="digst_find_exit_to_underground_part_1_text">
+<text>Нужно найти выход из норы.</text>
+</string>
+
+<!-- Квест: Найти Лютого -->
+<string id="labx7_find_lutiy_in_underground_part_1_name">
+<text>Лаборатория Х7: Найти Лютого</text>
+</string>
+<string id="labx7_find_lutiy_in_underground_part_1_text">
+<text>Монолитовец сказал, что Лютого увели в лабораторию, значит он должен быть где-то здесь.</text>
+</string>
+<string id="labx7_find_lutiy_in_underground_part_2_name">
+<text>Лаборатория Х7: Поговорить с Лютым</text>
+</string>
+<string id="labx7_find_lutiy_in_underground_part_2_text">
+<text>Я засёк сигнал КПК Лютого, нужно срочно поговорить с ним.</text>
+</string>
+
+<!-- Квест: Найти выход из лаборатории Х7 -->
+<string id="labx7_find_exit_to_labx7_part_1_name">
+<text>Кошмары подземелий: Найти выход из лаборатории Х7</text>
+</string>
+<string id="labx7_find_exit_to_labx7_part_1_text">
+<text>Монолитовец сказал, что Лютого увели в лабораторию, значит он должен быть где-то здесь.</text>
+</string>
+<string id="labx7_find_exit_to_labx7_part_2_name">
+<text>Кошмары подземелий: Установить взрывчатку, чтобы завалить проход</text>
+</string>
+<string id="labx7_find_exit_to_labx7_part_2_text">
+<text>Стронглав все еще может преследовать меня, нужно установить взрывчатку в этой комнате, чтобы завалить проход.</text>
+</string>
+<string id="labx7_find_exit_to_labx7_part_3_name">
+<text>Кошмары подземелий: Подняться по лестнице</text>
+</string>
+<string id="labx7_find_exit_to_labx7_part_3_text">
+<text>Я установил взрывчатку, нужно срочно уйти с этого места.</text>
+</string>
+<string id="labx7_find_exit_to_labx7_part_4_name">
+<text>Кошмары подземелий: Исследовать блок</text>
+</string>
+<string id="labx7_find_exit_to_labx7_part_4_text">
+<text>Лестница привела меня на какую-то станцию, нужно исследовать это место.</text>
+</string>
+
+</string_table>

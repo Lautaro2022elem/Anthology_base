@@ -1,0 +1,15 @@
+[logic]
+active = remark@wait
+on_death = death
+
+[death]
+on_info = %+pri_wave6_monolith3_dead%
+
+[remark@wait]
+anim = hide_na
+on_info = {+pri_wave6_start} camper
+
+[camper]
+path_walk = pri_wave6_monolith3_walk
+path_look = pri_wave6_monolith3_look
+def_state_moving = assault

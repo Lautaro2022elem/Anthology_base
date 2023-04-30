@@ -1,0 +1,155 @@
+[logic@dl_attaker_1]
+suitable = {=check_npc_name(sim_default_stalker_1)} true
+active = walker@walk_sit_1
+prior = 200
+
+[walker@walk_sit_1]
+path_walk = attaker_1_walk
+path_look = attaker_1_look
+meet = no_meet
+corpse_detection_enabled = false
+gather_items_enabled = false
+combat_ignore_cond = true
+on_info = {+dl_spawn_squad_attak} walker@walk_sit_1_no_htoorm
+
+[walker@walk_sit_1_no_htoorm]
+path_walk = attaker_1_1_walk
+meet = no_meet
+def_state_moving = rush
+corpse_detection_enabled = false
+gather_items_enabled = false
+combat_ignore_cond = true
+on_info = {=npc_in_zone(val_b1_base_sr)} walker@walk_sit_1_htoorm
+
+[walker@walk_sit_1_htoorm]
+path_walk = attaker_1_2_walk
+path_look = attaker_1_2_look
+meet = no_meet
+def_state_moving = rush
+corpse_detection_enabled = false
+gather_items_enabled = false
+
+;------------------------------------------------------
+
+[logic@dl_attaker_2]
+suitable = {=check_npc_name(sim_default_stalker_2)} true
+active = walker@walk_sit_2
+prior = 200
+
+[walker@walk_sit_2]
+path_walk = attaker_2_walk
+path_look = attaker_2_look
+meet = no_meet
+corpse_detection_enabled = false
+gather_items_enabled = false
+combat_ignore_cond = true
+on_info = {+dl_spawn_squad_attak} walker@walk_sit_2_no_htoorm
+
+[walker@walk_sit_2_no_htoorm]
+path_walk = attaker_2_1_walk
+meet = no_meet
+def_state_moving = rush
+corpse_detection_enabled = false
+gather_items_enabled = false
+combat_ignore_cond = true
+on_info = {=npc_in_zone(val_b1_base_sr)} walker@walk_sit_2_htoorm
+
+[walker@walk_sit_2_htoorm]
+path_walk = attaker_2_2_walk
+path_look = attaker_2_2_look
+meet = no_meet
+def_state_moving = rush
+corpse_detection_enabled = false
+gather_items_enabled = false
+
+;------------------------------------------------------
+
+[logic@dl_attaker_3]
+suitable = {=check_npc_name(sim_default_stalker_3)} true
+active = walker@walk_sit_3
+prior = 200
+
+[walker@walk_sit_3]
+path_walk = attaker_3_walk
+path_look = attaker_3_look
+meet = no_meet
+corpse_detection_enabled = false
+gather_items_enabled = false
+combat_ignore_cond = true
+on_info = {+dl_spawn_squad_attak} walker@walk_sit_3_no_htoorm
+
+[walker@walk_sit_3_no_htoorm]
+path_walk = attaker_3_1_walk
+meet = no_meet
+def_state_moving = rush
+corpse_detection_enabled = false
+gather_items_enabled = false
+combat_ignore_cond = true
+on_info = {=npc_in_zone(val_b1_base_sr)} walker@walk_sit_3_htoorm
+
+[walker@walk_sit_3_htoorm]
+path_walk = attaker_3_2_walk
+meet = no_meet
+def_state_moving = patrol
+
+;------------------------------------------------------
+
+[logic@dl_groz]
+suitable = {=check_npc_name(dl_groz) !surge_started} true
+active = walker@dl_groz_logik_1
+prior = 200
+post_combat_time = 0, 0
+
+[walker@dl_groz_logik_1]
+path_walk = leader_1_walk
+path_look = leader_1_look
+def_state_moving = rush
+on_info = {+dl_spawn_squad_attak} walker@dl_groz_logik_2 %=play_sound(attack_begin_groz)%
+meet = meet@groz_meet_start_1
+corpse_detection_enabled = false
+gather_items_enabled = false
+combat_ignore_cond = true
+
+[walker@dl_groz_logik_2]
+path_walk = leader_1_1_walk
+def_state_moving = rush
+meet = no_meet
+corpse_detection_enabled = false
+gather_items_enabled = false
+combat_ignore_cond = true
+on_info = {=npc_in_zone(val_b1_base_sr)} walker@dl_groz_logik_3
+
+[walker@dl_groz_logik_3]
+path_walk = leader_1_2_walk
+path_look = leader_1_2_look
+def_state_moving = rush
+meet = meet@groz_meet_start_2
+corpse_detection_enabled = false
+gather_items_enabled = false
+
+[meet@groz_meet_start_1]
+close_anim 		= nil
+close_victim 	= nil
+far_anim 		= nil
+far_victim 		= nil
+close_distance  = 0
+far_distance 	= 0
+close_snd_distance = 3
+use = {=actor_enemy} false, {=dist_to_actor_le(2)} self
+allow_break 	= false
+meet_on_talking = false
+trade_enable    = false
+meet_dialog = dl_bandits_attak_wait
+
+[meet@groz_meet_start_2]
+close_anim 		= nil
+close_victim 	= nil
+far_anim 		= nil
+far_victim 		= nil
+close_distance  = 0
+far_distance 	= 0
+close_snd_distance = 3
+use = {=actor_enemy} false, true
+allow_break 	= false
+meet_on_talking = true
+trade_enable    = false

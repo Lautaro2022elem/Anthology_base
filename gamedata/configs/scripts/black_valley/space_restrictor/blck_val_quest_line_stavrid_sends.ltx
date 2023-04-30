@@ -1,0 +1,19 @@
+[logic]
+active = sr_idle@stavrid_sends_sms_info
+
+[sr_idle@stavrid_sends_sms_info]
+on_info = {+blck_val_hunter_flash_dead_dialog_done} sr_idle@stavrid_sends_sms
+
+[sr_idle@stavrid_sends_sms]
+on_timer = 6000 | sr_idle@stavrid_give_quest %=blck_val_stavrid_sends_sms_2%
+
+[sr_idle@stavrid_give_quest]
+on_timer = 3000 | sr_idle@lutiy_monolit_spawn %+blck_val_stavrid_sends_sms_from_outfit%
+
+[sr_idle@lutiy_monolit_spawn]
+on_info = {+blck_val_stavrid_dialog_give_explosive -blck_val_lutiy_monolit_spawn_end} sr_idle@actor_has_monolit_outfit %=spawn_object(blck_val_lutiy_monolith_on_base:blck_val_lutiy_monolith_start_walk) +blck_val_lutiy_monolit_spawn_end%
+
+[sr_idle@actor_has_monolit_outfit]
+on_info = {=blck_val_actor_has_monolit_outfit +blck_val_lutiy_monolit_dialog_done} sr_idle@nil %=set_squad_enemy_to_actor(blck_val_monolith_squad_base)%
+
+[sr_idle@nil]

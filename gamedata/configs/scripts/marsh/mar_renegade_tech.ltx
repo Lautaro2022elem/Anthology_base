@@ -1,0 +1,34 @@
+[logic@mar_renegade_tech]
+suitable = {=check_npc_name(mar_smart_terrain_10_5_renegade_tech)} true, {=check_npc_mechanic} true
+prior = 200
+active = animpoint@tech
+level_spot = mechanic
+can_select_weapon = false
+trade = items\trade\trade_generic_mechanic.ltx
+
+[animpoint@tech]
+cover_name = mar_renegade_tech_cover
+use_camp = false
+meet = meet@leader
+combat_ignore_cond = {=actor_enemy =check_enemy_name(actor)} false, true
+combat_ignore_keep_when_attacked = true
+invulnerable = {!actor_enemy} true, false
+reach_distance = 10
+gather_items_enabled = false
+help_wounded_enabled = true
+corpse_detection_enabled = false
+
+[meet@leader]
+close_snd_hello = nil
+close_snd_bye 	= nil
+close_anim 		= nil
+close_victim 	= nil
+far_anim 		= nil
+far_victim 		= nil
+close_distance  = 0
+far_distance 	= 0
+close_snd_distance = 3
+use 			= {!actor_enemy} true
+allow_break 	= false
+meet_on_talking = false
+

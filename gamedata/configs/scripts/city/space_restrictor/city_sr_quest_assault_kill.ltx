@@ -1,0 +1,7 @@
+[logic]
+active = sr_idle
+
+[sr_idle]
+on_actor_outside = {+spectrum_project_start +labx14_search_exit_complete +city_assault_kill_gg_info -city_assault_heli_death} sr_idle@nil %=kill_actor%
+
+[sr_idle@nil]

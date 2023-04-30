@@ -1,0 +1,16 @@
+[logic]
+active = sr_idle@one
+
+[sr_idle@one]
+on_actor_inside = {+esc_dialog_shtik_quest1 +esc_dialog_bobik_vagon} %=remove_squad(esc_smart_terrain_bobik_squad) =spawn_object(wpn_ak74:esc_bobik_dead_walk) =spawn_corpse(esc_bobik_npc_dead:esc_bobik_dead_walk) =play_sound(fear_snd_two)% sr_idle@two
+
+[sr_idle@two]
+on_timer = 5000 | sr_idle@three %=give_task(esc_chain_of_events_quest)%
+
+[sr_idle@three]
+on_info = {+esc_dialog_shtik_quest_was_anomaly}  sr_idle@four
+
+[sr_idle@four]
+on_timer = 17000 | sr_idle@nil %+esc_postavil_metku_jd_kontr%
+
+[sr_idle@nil]

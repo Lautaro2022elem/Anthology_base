@@ -1,0 +1,27 @@
+[logic]
+active = remark@leader_stay
+level_spot = quest_npc
+suitable = {=check_npc_name(esc_leader_stalkerbase)} true, false
+prior = 200
+on_hit = hit
+
+[remark@leader_stay]
+anim = wait_na
+target = story | actor
+on_info = {+esc_leader_go_way_2} walker@leader_go_way
+invulnerable = false
+gather_items_enabled = false
+help_wounded_enabled = false
+corpse_detection_enabled = false
+meet = no_meet
+
+[walker@leader_go_way]
+path_walk = esc_td_way_in_exit_walk
+def_state_moving = assault
+gather_items_enabled = false
+corpse_detection_enabled = false
+invulnerable = false
+meet = no_meet
+
+[hit]
+on_info = {-esc_actor_hit_leader_group} %+esc_actor_hit_leader_group%

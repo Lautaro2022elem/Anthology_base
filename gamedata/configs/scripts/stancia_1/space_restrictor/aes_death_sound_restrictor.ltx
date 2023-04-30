@@ -1,0 +1,9 @@
+[logic]
+active = sr_idle
+
+[sr_idle]
+on_info = {+aes_activate_sound} sr_sound_act
+
+[sr_sound_act]
+snd = anomaly\blowout
+on_signal = sound_end | nil

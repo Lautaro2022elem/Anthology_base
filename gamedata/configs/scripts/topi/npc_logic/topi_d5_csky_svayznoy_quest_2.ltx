@@ -1,0 +1,36 @@
+[logic]
+active = move@waiting
+
+[move@waiting]
+move_dest_number       = 1048030
+move_look_vertex       = 1043295
+move_state_when_center = guard
+move_state_when_move   = walk
+meet                   = meet
+invulnerable           = true
+on_info                = {+topi_d5_csky_quest_2_talking} move@waiting_offline
+
+
+[move@waiting_offline]
+move_dest_number       = 1048030
+move_look_vertex       = 1043295
+move_state_when_center = sit_ass
+move_state_when_move   = walk
+meet                   = meet
+invulnerable           = false
+on_info                = {+topi_d5_csky_quest_2_talking =dist_to_actor_ge(80)} nil %=release_npc +topi_d5_csky_quest_2_for_message%
+
+
+[meet]
+close_anim 		= nil
+close_victim 	= nil
+close_snd_hello = nil
+close_snd_bye 	= nil
+far_anim 		= nil
+far_victim 		= nil
+close_distance  = 0
+far_distance 	= 0
+use = {=actor_enemy} false, true
+allow_break = false
+trade_enable = true
+meet_on_talking = false

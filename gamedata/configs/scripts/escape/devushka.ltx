@@ -1,0 +1,78 @@
+[logic@devushka]
+suitable = {=check_npc_name(devushka)} true
+prior = 200
+active = animpoint@devushka
+level_spot = quest_npc
+can_select_weapon = true
+dont_keep_items = true
+
+[animpoint@devushka]
+cover_name = esc_2_12_stalker_devushka_2
+avail_animations = animpoint_sit_normal
+on_info = {=surge_started} animpoint@devushka_surge
+on_info2 = {=is_night} animpoint@devushka_night
+on_info3 = {=is_rain} animpoint@devushka_rain
+invulnerable = {!actor_enemy} true, false
+combat_ignore_cond = {=actor_enemy =check_enemy_name(actor)} false, true
+combat_ignore_keep_when_attacked = true
+gather_items_enabled = false
+help_wounded_enabled = false
+corpse_detection_enabled = false
+use_camp = false
+meet = meet
+
+
+[meet]
+close_anim 		= nil
+close_victim 	= nil
+far_anim 		= nil
+far_victim 		= nil
+close_distance  = 0
+far_distance 	= 0
+close_snd_distance = 3
+abuse           = false
+use = {=actor_enemy} false, true
+allow_break = false
+meet_on_talking = false
+
+
+[animpoint@devushka_surge]
+cover_name = esc_2_12_stalker_devushka
+avail_animations = animpoint_sit_normal
+on_info = {!surge_started} animpoint@devushka
+invulnerable = {!actor_enemy} true, false
+combat_ignore_cond = {=actor_enemy =check_enemy_name(actor)} false, true
+combat_ignore_keep_when_attacked = true
+gather_items_enabled = false
+help_wounded_enabled = false
+corpse_detection_enabled = false
+use_camp = false
+meet = meet
+
+
+[animpoint@devushka_night]
+cover_name = esc_2_12_stalker_devushka
+avail_animations = animpoint_sit_normal
+on_info = {!is_night} animpoint@devushka
+invulnerable = {!actor_enemy} true, false
+combat_ignore_cond = {=actor_enemy =check_enemy_name(actor)} false, true
+combat_ignore_keep_when_attacked = true
+gather_items_enabled = false
+help_wounded_enabled = false
+corpse_detection_enabled = false
+use_camp = false
+meet = meet
+
+
+[animpoint@devushka_rain]
+cover_name = esc_2_12_stalker_devushka
+avail_animations = animpoint_sit_normal
+on_info = {!is_rain} animpoint@devushka
+invulnerable = {!actor_enemy} true, false
+combat_ignore_cond = {=actor_enemy =check_enemy_name(actor)} false, true
+combat_ignore_keep_when_attacked = true
+gather_items_enabled = false
+help_wounded_enabled = false
+corpse_detection_enabled = false
+use_camp = false
+meet = meet

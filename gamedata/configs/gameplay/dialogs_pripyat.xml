@@ -1,0 +1,963 @@
+<?xml version="1.0" encoding="windows-1251" ?>
+<game_dialogs>
+
+<!-- Griffith (Mercs leader in Book Store) -->
+	<dialog id="grifon_meet_dialog">
+		<precondition>dialogs.actor_not_killer</precondition>
+		<dont_has_info>grifon_meet_dialog1</dont_has_info>
+		<phrase_list>
+			<phrase id="0">
+				<text>grifon_meet_dialog_0</text>
+				<next>1</next>
+			</phrase>
+			<phrase id="1">
+				<text>grifon_meet_dialog_1</text>
+				<next>2</next>
+			</phrase>
+			<phrase id="2">
+				<text>grifon_meet_dialog_2</text>
+				<next>3</next>
+			</phrase>
+			<phrase id="3">
+				<text>grifon_meet_dialog_3</text>
+				<give_info>grifon_meet_dialog1</give_info>
+			</phrase>
+		</phrase_list>
+	</dialog>
+	
+	<dialog id="task_find_inf_inx_8_mlr_1">
+		<has_info>grifon_meet_dialog1</has_info>
+		<dont_has_info>task_find_inf_inx_8_mlr_1</dont_has_info>
+		<dont_has_info>drx_task_x8_history_documents_started</dont_has_info>
+		<phrase_list>
+			<phrase id="0">
+				<text>task_find_inf_inx_8_mlr_1_0</text>
+				<next>1</next>
+			</phrase>
+			<phrase id="1">
+				<text>task_find_inf_inx_8_mlr_1_1</text>
+				<next>2</next>
+				<next>3</next>
+			</phrase>
+			<phrase id="2">
+				<text>task_find_inf_inx_8_mlr_1_2</text>
+				<give_info>task_find_inf_inx_8_mlr_1</give_info>
+				<action>dialogs_mlr.unlock_note_grifon</action>
+				<action>dialogs_mlr.spawn_lx8_history_douemnts</action>
+			</phrase>
+			<phrase id="3">
+				<text>task_find_inf_inx_8_mlr_1_3</text>
+			</phrase>
+		</phrase_list>
+	</dialog>
+	
+	<dialog id="task_find_inf_inx_8_mlr_2">
+		<has_info>task_find_inf_inx_8_mlr_1</has_info>
+		<has_info>grifon_meet_dialog1</has_info>
+		<dont_has_info>drx_task_x8_history_documents_started</dont_has_info>
+		<precondition>dialogs_mlr.has_lx8_history_document</precondition>
+		<phrase_list>
+			<phrase id="0">
+				<text>task_find_inf_inx_8_mlr_2_0</text>
+				<next>1</next>
+				<action>dialogs_mlr.reward_for_lx8_history_document</action>
+				<give_info>task_find_inf_inx_8_mlr_2</give_info>
+			</phrase>
+			<phrase id="1">
+				<text>task_find_inf_inx_8_mlr_2_1</text>
+			</phrase>
+		</phrase_list>
+	</dialog>
+	
+	
+<!-- Monolith Mechanic in the Yubileiny service center -->
+	<dialog id="mechanic_monolith_kbo_start">
+		<phrase_list>
+			<phrase id="0">
+				<text>mechanic_monolith_kbo_start_0</text>
+			</phrase>
+		</phrase_list>
+	</dialog>
+
+	
+<!-- Monolith trader in the Yubileiny service center -->
+	<dialog id="meet_guid_prikbo_mon">
+		<dont_has_info>meet_guid_prikbo_mon_over</dont_has_info>
+		<phrase_list>
+			<phrase id="0">
+				<text>meet_guid_prikbo_mon_0</text>
+				<next>1</next>
+			</phrase>
+			<phrase id="1">
+				<text>meet_guid_prikbo_mon_1</text>
+				<give_info>meet_guid_prikbo_mon_over</give_info>
+			</phrase>
+		</phrase_list>
+	</dialog>
+	
+	<dialog id="meet_guid_prikbo_mon_list">
+		<has_info>meet_guid_prikbo_mon_over</has_info>
+		<phrase_list>
+			<phrase id="0">
+				<text>meet_guid_prikbo_mon_list_0</text>
+				<next>1</next>
+			</phrase>
+			<phrase id="1">
+				<text>meet_guid_prikbo_mon_list_1</text>
+			</phrase>
+		</phrase_list>
+	</dialog>
+	
+	<dialog id="travel_guid_prikbo_mon_mon">
+		<has_info>meet_guid_prikbo_mon_over</has_info>
+		<phrase_list>
+			<phrase id="0">
+				<text>travel_guid_prikbo_mon_mon_0</text>
+				<next>1</next>
+			</phrase>
+			<phrase id="1">
+				<text>travel_guid_prikbo_mon_mon_1</text>
+				<next>2</next>
+				<next>3</next>
+				<next>4</next>
+				<next>5</next>
+			</phrase>
+			<phrase id="2">
+				<text>travel_guid_prikbo_mon_mon_2</text>
+				<precondition>dialogs_mlr.have_money_to_pripyat_guid_zat</precondition>
+				<action>dialogs_mlr.sell_money_to_pripyat_guid_zat</action>
+				<action>dialogs_mlr.red_forest_guid_mon</action>
+			</phrase>
+			<phrase id="3">
+				<text>travel_guid_prikbo_mon_mon_3</text>
+				<precondition>dialogs_mlr.have_money_to_zaton_guid_jup</precondition>
+				<action>dialogs_mlr.sell_money_to_zaton_guid_jup</action>
+				<action>dialogs_mlr.jupiter_guid_mon</action>
+			</phrase>
+			<phrase id="4">
+				<text>travel_guid_prikbo_mon_mon_4</text>
+				<precondition>dialogs_mlr.have_money_to_military_guid_bar</precondition>
+				<action>dialogs_mlr.sell_money_to_military_guid_bar</action>
+				<action>dialogs_mlr.l11_pripyat_guid_mon</action>
+			</phrase>
+			<phrase id="5">
+				<text>travel_guid_prikbo_mon_mon_5</text>
+			</phrase>
+		</phrase_list>
+	</dialog>
+	
+	
+<!-- Charon, in the basement of the Palace of Culture -->
+	<dialog id="meet_guid_l11pri_mon_haron">
+		<dont_has_info>meet_guid_l11pri_mon_haron_over</dont_has_info>
+		<phrase_list>
+			<phrase id="0">
+				<text>meet_guid_l11pri_mon_haron_0</text>
+				<next>1</next>
+			</phrase>
+			<phrase id="1">
+				<text>meet_guid_l11pri_mon_haron_1</text>
+				<give_info>meet_guid_l11pri_mon_haron_over</give_info>
+			</phrase>
+		</phrase_list>
+	</dialog>
+	
+	<dialog id="meet_guid_l11pri_mon_haron_list">
+		<has_info>meet_guid_l11pri_mon_haron_over</has_info>
+		<phrase_list>
+			<phrase id="0">
+				<text>meet_guid_l11pri_mon_haron_list_0</text>
+				<next>1</next>
+			</phrase>
+			<phrase id="1">
+				<text>meet_guid_l11pri_mon_haron_list_1</text>
+			</phrase>
+		</phrase_list>
+	</dialog>
+	
+	<dialog id="travel_guid_l11pri_mon_haron">
+		<has_info>meet_guid_l11pri_mon_haron_over</has_info>
+		<phrase_list>
+			<phrase id="0">
+				<text>travel_guid_l11pri_mon_haron_0</text>
+				<next>1</next>
+			</phrase>
+			<phrase id="1">
+				<text>travel_guid_l11pri_mon_haron_1</text>
+				<next>2</next>
+				<next>3</next>
+				<next>4</next>
+				<next>5</next>
+			</phrase>
+			<phrase id="2">
+				<text>travel_guid_l11pri_mon_haron_2</text>
+				<precondition>dialogs_mlr.have_money_to_military_guid_bar</precondition>
+				<action>dialogs_mlr.sell_money_to_military_guid_bar</action>
+				<action>dialogs_mlr.pripyat_guid_mon</action>
+			</phrase>
+			<phrase id="3">
+				<text>travel_guid_l11pri_mon_haron_3</text>
+				<precondition>dialogs_mlr.have_money_to_military_guid_bar</precondition>
+				<action>dialogs_mlr.sell_money_to_military_guid_bar</action>
+				<action>dialogs_mlr.jupiter_guid_mon</action>
+			</phrase>
+			<phrase id="4">
+				<text>travel_guid_l11pri_mon_haron_4</text>
+				<precondition>dialogs_mlr.have_money_to_pripyat_guid_zat</precondition>
+				<action>dialogs_mlr.sell_money_to_pripyat_guid_zat</action>
+				<action>dialogs_mlr.red_forest_guid_mon</action>
+			</phrase>
+			<phrase id="5">
+				<text>travel_guid_l11pri_mon_haron_5</text>
+			</phrase>
+		</phrase_list>
+	</dialog>
+	
+	<dialog id="find_blackbox_mlr_reward_haron">
+		<precondition>dialogs_mlr.have_blackbox_mlr</precondition>
+		<phrase_list>
+			<phrase id="0">
+				<text>find_blackbox_mlr_reward_haron_0</text>
+				<next>1</next>
+			</phrase>
+			<phrase id="1">
+				<text>find_blackbox_mlr_reward_haron_1</text>
+				<action>dialogs_mlr.take_blackbox_mlr</action>
+				<action>dialogs_mlr.take_money_from_haron_blackbox</action>
+				<action>dialogs_mlr.goodwill_for_blackbox_monolith_reward</action>
+			</phrase>
+		</phrase_list>
+	</dialog>
+	
+	
+<!-- Special trader, substituting Nimble as special orders trader -->
+	<dialog id="pri_special_trader_mlr1">
+		<dont_has_info>pri_special_trader_mlr_1</dont_has_info>
+		<phrase_list>
+			<phrase id="0">
+				<text>pri_special_trader_mlr1_0</text>
+				<next>1</next>
+			</phrase>
+			<phrase id="1">
+				<text>pri_special_trader_mlr1_1</text>
+				<give_info>pri_special_trader_mlr_1</give_info>
+			</phrase>
+		</phrase_list>
+	</dialog>
+	
+	<dialog id="pri_special_trader_mlr4">
+		<has_info>pri_special_trader_mlr_1</has_info>
+		<dont_has_info>pri_special_trader_mlr_2</dont_has_info>
+		<phrase_list>
+			<phrase id="0">
+				<text>pri_special_trader_mlr4_0</text>
+				<next>1</next>
+			</phrase>
+			<phrase id="1">
+				<text>pri_special_trader_mlr4_1</text>
+				<give_info>pri_special_trader_mlr_2</give_info>
+			</phrase>
+		</phrase_list>
+	</dialog>
+	
+	<dialog id="pri_special_trader_mlr2">
+		<dont_has_info>cancel_new_orders_pri_mlr</dont_has_info>
+		<has_info>pri_special_trader_mlr_1</has_info>
+		<phrase_list>
+			<phrase id="0">
+				<text>pri_special_trader_mlr2_0</text>
+				<disable_info>pri_special_trader_mlr_order_is_ready</disable_info>
+				<next>1</next>
+			</phrase>
+			<phrase id="1">
+				<text>pri_special_trader_mlr2_1</text>
+				<action>dialogs_mlr.unlock_note_meeker</action>
+				<next>2</next>
+				<next>3</next>
+				<next>4</next>
+				<next>5</next>
+				<next>6</next>
+			</phrase>
+			<phrase id="2">
+				<text>pri_special_trader_mlr2_2</text>
+				<next>7</next>
+			</phrase>
+			<phrase id="7">
+				<text>pri_special_trader_mlr2_7</text>
+				<next>8</next>
+				<next>9</next>
+				<next>10</next>
+				<next>15</next>
+			</phrase>
+			<phrase id="8">
+				<dont_has_info>pri_special_trader_mlr_SCI_DS3</dont_has_info>
+				<text>pri_special_trader_mlr2_8</text>
+				<give_info>pri_special_trader_mlr_DS</give_info>
+				<give_info>pri_special_trader_mlr_order_in_process</give_info>
+				<next>11</next>
+			</phrase>
+			<phrase id="11">
+				<text>pri_special_trader_mlr2_11</text>
+				<give_info>cancel_new_orders_pri_mlr</give_info> <!-- info to determine that an order can be cancelled -->
+			</phrase>
+			<phrase id="9">
+				<dont_has_info>pri_special_trader_mlr_SIG3</dont_has_info> <!-- makes sure the same weapon don't get ordered again -->
+				<text>pri_special_trader_mlr2_9</text>
+				<give_info>pri_special_trader_mlr_SIG</give_info>
+				<give_info>pri_special_trader_mlr_order_in_process</give_info> <!-- starts 24 h timer -->
+				<next>11</next>
+			</phrase>
+			<phrase id="10">
+				<dont_has_info>pri_special_trader_mlr_USP3</dont_has_info>
+				<text>pri_special_trader_mlr2_10</text>
+				<give_info>pri_special_trader_mlr_USP</give_info>
+				<give_info>pri_special_trader_mlr_order_in_process</give_info>
+				<next>11</next>
+			</phrase>
+			<phrase id="3">
+				<text>pri_special_trader_mlr2_3</text>
+				<next>28</next>
+			</phrase>
+			<phrase id="28">
+				<text>pri_special_trader_mlr2_28</text>
+				<next>12</next>
+				<next>13</next>
+				<next>14</next>
+				<next>15</next>
+			</phrase>
+			<phrase id="12">
+				<dont_has_info>pri_special_trader_mlr_MP3</dont_has_info>
+				<text>pri_special_trader_mlr2_12</text>
+				<give_info>pri_special_trader_mlr_MP</give_info>
+				<give_info>pri_special_trader_mlr_order_in_process</give_info>
+				<next>11</next>
+			</phrase>
+			<phrase id="13">
+				<dont_has_info>pri_special_trader_mlr_SPAS3</dont_has_info>
+				<text>pri_special_trader_mlr2_13</text>
+				<give_info>pri_special_trader_mlr_SPAS</give_info>
+				<give_info>pri_special_trader_mlr_order_in_process</give_info>
+				<next>11</next>
+			</phrase>
+			<phrase id="14">
+				<dont_has_info>pri_special_trader_mlr_STRIKE3</dont_has_info>
+				<text>pri_special_trader_mlr2_14</text>
+				<give_info>pri_special_trader_mlr_STRIKE</give_info>
+				<give_info>pri_special_trader_mlr_order_in_process</give_info>
+				<next>11</next>
+			</phrase>
+			<phrase id="15">
+				<text>pri_special_trader_mlr2_15</text>
+			</phrase>
+			<phrase id="4">
+				<text>pri_special_trader_mlr2_4</text>
+				<next>29</next>
+			</phrase>
+			<phrase id="29">
+				<text>pri_special_trader_mlr2_29</text>
+				<next>16</next>
+				<next>17</next>
+				<next>18</next>
+				<next>19</next>
+				<next>20</next>
+				<next>21</next>
+				<next>27</next>
+				<next>15</next>
+			</phrase>
+			<phrase id="16">
+				<dont_has_info>pri_special_trader_mlr_STORM3</dont_has_info>
+				<text>pri_special_trader_mlr2_16</text>
+				<give_info>pri_special_trader_mlr_STORM</give_info>
+				<give_info>pri_special_trader_mlr_order_in_process</give_info>
+				<next>11</next>
+			</phrase>
+			<phrase id="17">
+				<dont_has_info>pri_special_trader_mlr_G363</dont_has_info>
+				<text>pri_special_trader_mlr2_17</text>
+				<give_info>pri_special_trader_mlr_G36</give_info>
+				<give_info>pri_special_trader_mlr_order_in_process</give_info>
+				<next>11</next>
+			</phrase>
+			<phrase id="18">
+				<dont_has_info>pri_special_trader_mlr_FN3</dont_has_info>
+				<text>pri_special_trader_mlr2_18</text>
+				<give_info>pri_special_trader_mlr_FN</give_info>
+				<give_info>pri_special_trader_mlr_order_in_process</give_info>
+				<next>11</next>
+			</phrase>
+			<phrase id="19">
+				<dont_has_info>pri_special_trader_mlr_VSS3</dont_has_info>
+				<text>pri_special_trader_mlr2_19</text>
+				<give_info>pri_special_trader_mlr_VSS</give_info>
+				<give_info>pri_special_trader_mlr_order_in_process</give_info>
+				<next>11</next>
+			</phrase>
+			<phrase id="20">
+				<dont_has_info>pri_special_trader_mlr_SVY3</dont_has_info>
+				<text>pri_special_trader_mlr2_20</text>
+				<give_info>pri_special_trader_mlr_SVY</give_info>
+				<give_info>pri_special_trader_mlr_order_in_process</give_info>
+				<next>11</next>
+			</phrase>
+			<phrase id="21">
+				<dont_has_info>pri_special_trader_mlr_SVD3</dont_has_info>
+				<text>pri_special_trader_mlr2_21</text>
+				<give_info>pri_special_trader_mlr_SVD</give_info>
+				<give_info>pri_special_trader_mlr_order_in_process</give_info>
+				<next>11</next>
+			</phrase>
+			<phrase id="27">
+				<dont_has_info>pri_special_trader_mlr_GAUSS3</dont_has_info>
+				<text>pri_special_trader_mlr2_27</text>
+				<give_info>pri_special_trader_mlr_GAUSS</give_info>
+				<give_info>pri_special_trader_mlr_order_in_process</give_info>
+				<next>11</next>
+			</phrase>
+			<phrase id="5">
+				<text>pri_special_trader_mlr2_5</text>
+				<next>30</next>
+			</phrase>
+			<phrase id="30">
+				<text>pri_special_trader_mlr2_30</text>
+				<next>22</next>
+				<next>23</next>
+				<next>24</next>
+				<next>25</next>
+				<next>26</next>
+				<next>15</next>
+			</phrase>
+			<phrase id="22">
+				<dont_has_info>pri_special_trader_mlr_ECZ_MON3</dont_has_info>
+				<text>pri_special_trader_mlr2_22</text>
+				<give_info>pri_special_trader_mlr_ECZ_MON</give_info>
+				<give_info>pri_special_trader_mlr_order_in_process</give_info>
+				<next>11</next>
+			</phrase>
+			<phrase id="23">
+				<dont_has_info>pri_special_trader_mlr_ECZ_KIL3</dont_has_info>
+				<text>pri_special_trader_mlr2_23</text>
+				<give_info>pri_special_trader_mlr_ECZ_KIL</give_info>
+				<give_info>pri_special_trader_mlr_order_in_process</give_info>
+				<next>11</next>
+			</phrase>
+			<phrase id="24">
+				<dont_has_info>pri_special_trader_mlr_ECZ_BAN</dont_has_info>
+				<text>pri_special_trader_mlr2_24</text>
+				<give_info>pri_special_trader_mlr_ECZ_BAN</give_info>
+				<give_info>pri_special_trader_mlr_order_in_process</give_info>
+				<next>11</next>
+			</phrase>
+			<phrase id="25">
+				<dont_has_info>pri_special_trader_mlr_SCI_MON3</dont_has_info>
+				<text>pri_special_trader_mlr2_25</text>
+				<give_info>pri_special_trader_mlr_SCI_MON</give_info>
+				<give_info>pri_special_trader_mlr_order_in_process</give_info>
+				<next>11</next>
+			</phrase>
+			<phrase id="26">
+				<dont_has_info>pri_special_trader_mlr_SCI_KIL3</dont_has_info>
+				<text>pri_special_trader_mlr2_26</text>
+				<give_info>pri_special_trader_mlr_SCI_KIL</give_info>
+				<give_info>pri_special_trader_mlr_order_in_process</give_info>
+				<next>11</next>
+			</phrase>
+			<phrase id="6">
+				<text>pri_special_trader_mlr2_6</text>
+			</phrase>
+		</phrase_list>
+	</dialog>
+	
+	<dialog id="pri_special_trader_mlr3">
+		<has_info>order_pri_mlr_is_done</has_info>
+		<phrase_list>
+			<phrase id="0">
+				<text>pri_special_trader_mlr3_0</text>
+				<next>1</next>
+			</phrase>
+			<phrase id="1">
+				<script_text>dialogs_mlr.pri_special_trader_mlr3_1</script_text>
+				<next>2</next>
+				<next>3</next>
+				<next>4</next>
+				<next>5</next>
+				<next>6</next>
+				<next>7</next>
+				<next>8</next>
+				<next>9</next>
+				<next>10</next>
+				<next>11</next>
+				<next>12</next>
+				<next>13</next>
+				<next>14</next>
+				<next>15</next>
+				<next>16</next>
+				<next>17</next>
+				<next>18</next>
+				<next>19</next>
+				<next>21</next>
+			</phrase>
+			
+			<phrase id="2">
+				<dont_has_info>pri_special_trader_mlr_DS3</dont_has_info>
+				<precondition>dialogs_mlr.have_pri_special_trader_mlr_1</precondition>
+				<has_info>pri_special_trader_mlr_DS</has_info>
+				<has_info>order_pri_mlr_is_done</has_info>
+				<text>pri_special_trader_mlr3_2</text>
+				<next>20</next>
+				<action>dialogs_mlr.give_pri_special_trader_mlr_1</action>
+				<action>dialogs_mlr.take_pri_special_trader_mlr_1</action>
+				<action>dialogs_mlr.disable_pri_special_trader_mlr_1</action>
+				<give_info>pri_special_trader_mlr_DS3</give_info>
+				<disable_info>pri_special_trader_mlr_DS</disable_info>
+			</phrase>
+			<phrase id="3">
+				<dont_has_info>pri_special_trader_mlr_SIG3</dont_has_info>
+				<precondition>dialogs_mlr.have_pri_special_trader_mlr_2</precondition>
+				<has_info>pri_special_trader_mlr_SIG</has_info>
+				<has_info>order_pri_mlr_is_done</has_info>
+				<text>pri_special_trader_mlr3_3</text>
+				<next>20</next>
+				<action>dialogs_mlr.give_pri_special_trader_mlr_2</action>
+				<action>dialogs_mlr.take_pri_special_trader_mlr_2</action>
+				<action>dialogs_mlr.disable_pri_special_trader_mlr_1</action>
+				<give_info>pri_special_trader_mlr_SIG3</give_info>
+				<disable_info>pri_special_trader_mlr_SIG</disable_info>
+			</phrase>
+			<phrase id="4">
+				<dont_has_info>pri_special_trader_mlr_USP3</dont_has_info>
+				<precondition>dialogs_mlr.have_pri_special_trader_mlr_3</precondition>
+				<has_info>pri_special_trader_mlr_USP</has_info>
+				<has_info>order_pri_mlr_is_done</has_info>
+				<text>pri_special_trader_mlr3_4</text>
+				<next>20</next>
+				<action>dialogs_mlr.give_pri_special_trader_mlr_3</action>
+				<action>dialogs_mlr.take_pri_special_trader_mlr_3</action>
+				<action>dialogs_mlr.disable_pri_special_trader_mlr_1</action>
+				<give_info>pri_special_trader_mlr_USP3</give_info>
+				<disable_info>pri_special_trader_mlr_USP</disable_info>
+			</phrase>
+			<phrase id="5">
+				<dont_has_info>pri_special_trader_mlr_MP3</dont_has_info>
+				<precondition>dialogs_mlr.have_pri_special_trader_mlr_4</precondition>
+				<has_info>pri_special_trader_mlr_MP</has_info>
+				<has_info>order_pri_mlr_is_done</has_info>
+				<text>pri_special_trader_mlr3_5</text>
+				<next>20</next>
+				<action>dialogs_mlr.give_pri_special_trader_mlr_4</action>
+				<action>dialogs_mlr.take_pri_special_trader_mlr_4</action>
+				<action>dialogs_mlr.disable_pri_special_trader_mlr_1</action>
+				<give_info>pri_special_trader_mlr_MP3</give_info>
+				<disable_info>pri_special_trader_mlr_MP</disable_info>
+			</phrase>
+			<phrase id="6">
+				<dont_has_info>pri_special_trader_mlr_SPAS3</dont_has_info>
+				<precondition>dialogs_mlr.have_pri_special_trader_mlr_5</precondition>
+				<has_info>pri_special_trader_mlr_SPAS</has_info>
+				<has_info>order_pri_mlr_is_done</has_info>
+				<text>pri_special_trader_mlr3_6</text>
+				<next>20</next>
+				<action>dialogs_mlr.give_pri_special_trader_mlr_5</action>
+				<action>dialogs_mlr.take_pri_special_trader_mlr_5</action>
+				<action>dialogs_mlr.disable_pri_special_trader_mlr_1</action>
+				<give_info>pri_special_trader_mlr_SPAS3</give_info>
+				<disable_info>pri_special_trader_mlr_SPAS</disable_info>
+			</phrase>
+			<phrase id="7">
+				<dont_has_info>pri_special_trader_mlr_STRIKE3</dont_has_info>
+				<precondition>dialogs_mlr.have_pri_special_trader_mlr_6</precondition>
+				<has_info>pri_special_trader_mlr_STRIKE</has_info>
+				<has_info>order_pri_mlr_is_done</has_info>
+				<text>pri_special_trader_mlr3_7</text>
+				<next>20</next>
+				<action>dialogs_mlr.give_pri_special_trader_mlr_6</action>
+				<action>dialogs_mlr.take_pri_special_trader_mlr_6</action>
+				<action>dialogs_mlr.disable_pri_special_trader_mlr_1</action>
+				<give_info>pri_special_trader_mlr_STRIKE3</give_info>
+				<disable_info>pri_special_trader_mlr_STRIKE</disable_info>
+			</phrase>
+			<phrase id="8">
+				<dont_has_info>pri_special_trader_mlr_STORM3</dont_has_info>
+				<precondition>dialogs_mlr.have_pri_special_trader_mlr_7</precondition>
+				<has_info>pri_special_trader_mlr_STORM</has_info>
+				<has_info>order_pri_mlr_is_done</has_info>
+				<text>pri_special_trader_mlr3_8</text>
+				<next>20</next>
+				<action>dialogs_mlr.give_pri_special_trader_mlr_7</action>
+				<action>dialogs_mlr.take_pri_special_trader_mlr_7</action>
+				<action>dialogs_mlr.disable_pri_special_trader_mlr_1</action>
+				<give_info>pri_special_trader_mlr_STORM3</give_info>
+				<disable_info>pri_special_trader_mlr_STORM</disable_info>
+			</phrase>
+			<phrase id="9">
+				<dont_has_info>pri_special_trader_mlr_G363</dont_has_info>
+				<precondition>dialogs_mlr.have_pri_special_trader_mlr_8</precondition>
+				<has_info>pri_special_trader_mlr_G36</has_info>
+				<has_info>order_pri_mlr_is_done</has_info>
+				<text>pri_special_trader_mlr3_9</text>
+				<next>20</next>
+				<action>dialogs_mlr.give_pri_special_trader_mlr_8</action>
+				<action>dialogs_mlr.take_pri_special_trader_mlr_8</action>
+				<action>dialogs_mlr.disable_pri_special_trader_mlr_1</action>
+				<give_info>pri_special_trader_mlr_G363</give_info>
+				<disable_info>pri_special_trader_mlr_G36</disable_info>
+			</phrase>
+			<phrase id="10">
+				<dont_has_info>pri_special_trader_mlr_FN3</dont_has_info>
+				<precondition>dialogs_mlr.have_pri_special_trader_mlr_9</precondition>
+				<has_info>pri_special_trader_mlr_FN</has_info>
+				<has_info>order_pri_mlr_is_done</has_info>
+				<text>pri_special_trader_mlr3_10</text>
+				<next>20</next>
+				<action>dialogs_mlr.give_pri_special_trader_mlr_9</action>
+				<action>dialogs_mlr.take_pri_special_trader_mlr_9</action>
+				<action>dialogs_mlr.disable_pri_special_trader_mlr_1</action>
+				<give_info>pri_special_trader_mlr_FN3</give_info>
+				<disable_info>pri_special_trader_mlr_FN</disable_info>
+			</phrase>
+			<phrase id="11">
+				<dont_has_info>pri_special_trader_mlr_VSS3</dont_has_info>
+				<precondition>dialogs_mlr.have_pri_special_trader_mlr_10</precondition>
+				<has_info>pri_special_trader_mlr_VSS</has_info>
+				<has_info>order_pri_mlr_is_done</has_info>
+				<text>pri_special_trader_mlr3_11</text>
+				<next>20</next>
+				<action>dialogs_mlr.give_pri_special_trader_mlr_10</action>
+				<action>dialogs_mlr.take_pri_special_trader_mlr_10</action>
+				<action>dialogs_mlr.disable_pri_special_trader_mlr_1</action>
+				<give_info>pri_special_trader_mlr_VSS3</give_info>
+				<disable_info>pri_special_trader_mlr_VSS</disable_info>
+			</phrase>
+			<phrase id="12">
+				<dont_has_info>pri_special_trader_mlr_SVY3</dont_has_info>
+				<precondition>dialogs_mlr.have_pri_special_trader_mlr_11</precondition>
+				<has_info>pri_special_trader_mlr_SVY</has_info>
+				<has_info>order_pri_mlr_is_done</has_info>
+				<text>pri_special_trader_mlr3_12</text>
+				<next>20</next>
+				<action>dialogs_mlr.give_pri_special_trader_mlr_11</action>
+				<action>dialogs_mlr.take_pri_special_trader_mlr_11</action>
+				<action>dialogs_mlr.disable_pri_special_trader_mlr_1</action>
+				<give_info>pri_special_trader_mlr_SVY3</give_info>
+				<disable_info>pri_special_trader_mlr_SVY</disable_info>
+			</phrase>
+			<phrase id="13">
+				<dont_has_info>pri_special_trader_mlr_SVD3</dont_has_info>
+				<precondition>dialogs_mlr.have_pri_special_trader_mlr_12</precondition>
+				<has_info>pri_special_trader_mlr_SVD</has_info>
+				<has_info>order_pri_mlr_is_done</has_info>
+				<text>pri_special_trader_mlr3_13</text>
+				<next>20</next>
+				<action>dialogs_mlr.give_pri_special_trader_mlr_12</action>
+				<action>dialogs_mlr.take_pri_special_trader_mlr_12</action>
+				<action>dialogs_mlr.disable_pri_special_trader_mlr_1</action>
+				<give_info>pri_special_trader_mlr_SVD3</give_info>
+				<disable_info>pri_special_trader_mlr_SVD</disable_info>
+			</phrase>
+			<phrase id="14">
+				<dont_has_info>pri_special_trader_mlr_ECZ_MON3</dont_has_info>
+				<precondition>dialogs_mlr.have_pri_special_trader_mlr_13</precondition>
+				<has_info>pri_special_trader_mlr_ECZ_MON</has_info>
+				<has_info>order_pri_mlr_is_done</has_info>
+				<text>pri_special_trader_mlr3_14</text>
+				<next>20</next>
+				<action>dialogs_mlr.give_pri_special_trader_mlr_13</action>
+				<action>dialogs_mlr.take_pri_special_trader_mlr_13</action>
+				<action>dialogs_mlr.disable_pri_special_trader_mlr_1</action>
+				<give_info>pri_special_trader_mlr_ECZ_MON3</give_info>
+				<disable_info>pri_special_trader_mlr_ECZ_MON</disable_info>
+			</phrase>
+			<phrase id="15">
+				<dont_has_info>pri_special_trader_mlr_ECZ_KIL3</dont_has_info>
+				<precondition>dialogs_mlr.have_pri_special_trader_mlr_14</precondition>
+				<has_info>pri_special_trader_mlr_ECZ_KIL</has_info>
+				<has_info>order_pri_mlr_is_done</has_info>
+				<text>pri_special_trader_mlr3_15</text>
+				<next>20</next>
+				<action>dialogs_mlr.give_pri_special_trader_mlr_14</action>
+				<action>dialogs_mlr.take_pri_special_trader_mlr_14</action>
+				<action>dialogs_mlr.disable_pri_special_trader_mlr_1</action>
+				<give_info>pri_special_trader_mlr_ECZ_KIL3</give_info>
+				<disable_info>pri_special_trader_mlr_ECZ_KIL</disable_info>
+			</phrase>
+			<phrase id="16">
+				<dont_has_info>pri_special_trader_mlr_ECZ_BAN3</dont_has_info>
+				<precondition>dialogs_mlr.have_pri_special_trader_mlr_15</precondition>
+				<has_info>pri_special_trader_mlr_ECZ_BAN</has_info>
+				<has_info>order_pri_mlr_is_done</has_info>
+				<text>pri_special_trader_mlr3_16</text>
+				<next>20</next>
+				<action>dialogs_mlr.give_pri_special_trader_mlr_15</action>
+				<action>dialogs_mlr.take_pri_special_trader_mlr_15</action>
+				<action>dialogs_mlr.disable_pri_special_trader_mlr_1</action>
+				<give_info>pri_special_trader_mlr_ECZ_BAN3</give_info>
+				<disable_info>pri_special_trader_mlr_ECZ_BAN</disable_info>
+			</phrase>
+			<phrase id="17">
+				<dont_has_info>pri_special_trader_mlr_SCI_MON3</dont_has_info>
+				<precondition>dialogs_mlr.have_pri_special_trader_mlr_16</precondition>
+				<has_info>pri_special_trader_mlr_SCI_MON</has_info>
+				<has_info>order_pri_mlr_is_done</has_info>
+				<text>pri_special_trader_mlr3_17</text>
+				<next>20</next>
+				<action>dialogs_mlr.give_pri_special_trader_mlr_16</action>
+				<action>dialogs_mlr.take_pri_special_trader_mlr_16</action>
+				<action>dialogs_mlr.disable_pri_special_trader_mlr_1</action>
+				<give_info>pri_special_trader_mlr_SCI_MON3</give_info>
+				<disable_info>pri_special_trader_mlr_SCI_MON</disable_info>
+			</phrase>
+			<phrase id="18">
+				<dont_has_info>pri_special_trader_mlr_SCI_KIL3</dont_has_info>
+				<precondition>dialogs_mlr.have_pri_special_trader_mlr_17</precondition>
+				<has_info>pri_special_trader_mlr_SCI_KIL</has_info>
+				<has_info>order_pri_mlr_is_done</has_info>
+				<text>pri_special_trader_mlr3_18</text>
+				<next>20</next>
+				<action>dialogs_mlr.give_pri_special_trader_mlr_17</action>
+				<action>dialogs_mlr.take_pri_special_trader_mlr_17</action>
+				<action>dialogs_mlr.disable_pri_special_trader_mlr_1</action>
+				<give_info>pri_special_trader_mlr_SCI_KIL3</give_info>
+				<disable_info>pri_special_trader_mlr_SCI_KIL</disable_info>
+			</phrase>
+			<phrase id="19">
+				<dont_has_info>pri_special_trader_mlr_GAUSS3</dont_has_info>
+				<precondition>dialogs_mlr.have_pri_special_trader_mlr_18</precondition>
+				<has_info>pri_special_trader_mlr_GAUSS</has_info>
+				<has_info>order_pri_mlr_is_done</has_info>
+				<text>pri_special_trader_mlr3_19</text>
+				<next>20</next>
+				<action>dialogs_mlr.give_pri_special_trader_mlr_18</action>
+				<action>dialogs_mlr.take_pri_special_trader_mlr_18</action>
+				<action>dialogs_mlr.disable_pri_special_trader_mlr_1</action>
+				<give_info>pri_special_trader_mlr_GAUSS3</give_info>
+				<disable_info>pri_special_trader_mlr_GAUSS</disable_info>
+			</phrase>
+			<phrase id="20">
+				<text>pri_special_trader_mlr3_20</text>
+				<give_info>pri_special_trader_mlr_order_is_ready</give_info>	<!-- basically dialogs_mlr.disable_pri_special_trader_mlr_1 -->
+				<disable_info>order_pri_mlr_is_done</disable_info>	<!-- order is ready to be acquired from meeker -->
+				<disable_info>cancel_new_orders_pri_mlr</disable_info>
+				<disable_info>pri_special_trader_mlr_order_in_process</disable_info>
+			</phrase>
+			<phrase id="21">
+				<text>pri_special_trader_mlr3_21</text>
+			</phrase>
+		</phrase_list>
+	</dialog>
+	
+
+<!-- Guide in eastern Pripyat -->
+	<dialog id="meet_guid_pri_stalker">
+		<dont_has_info>meet_guid_pri_stalker_over</dont_has_info>
+		<phrase_list>
+			<phrase id="0">
+				<text>meet_guid_pri_stalker_0</text>
+				<next>1</next>
+			</phrase>
+			<phrase id="1">
+				<text>meet_guid_pri_stalker_1</text>
+				<give_info>meet_guid_pri_stalker_over</give_info>
+			</phrase>
+		</phrase_list>
+	</dialog>
+	
+	<dialog id="meet_guid_pri_stalker_list">
+		<has_info>meet_guid_pri_stalker_over</has_info>
+		<phrase_list>
+			<phrase id="0">
+				<text>meet_guid_pri_stalker_list_0</text>
+				<next>1</next>
+			</phrase>
+			<phrase id="1">
+				<text>meet_guid_pri_stalker_list_1</text>
+			</phrase>
+		</phrase_list>
+	</dialog>
+	
+	<dialog id="travel_guid_pri_stalker">
+		<precondition>dialogs_mlr.have_money_to_military_guid_bar</precondition>
+		<has_info>meet_guid_pri_stalker_over</has_info>
+		<phrase_list>
+			<phrase id="0">
+				<text>travel_guid_pri_stalker_0</text>
+				<next>1</next>
+			</phrase>
+			<phrase id="1">
+				<text>travel_guid_pri_stalker_1</text>
+				<next>2</next>
+				<next>3</next>
+				<next>4</next>
+				<next>5</next>
+				<next>6</next>
+				<next>7</next>
+				<next>8</next>
+			</phrase>
+			<phrase id="2">
+				<text>travel_guid_pri_stalker_2</text>
+				<precondition>dialogs_mlr.have_money_to_stancia_guid_pri</precondition>
+				<action>dialogs_mlr.sell_money_to_stancia_guid_pri</action>
+				<action>dialogs_mlr.stancia_guid</action>
+			</phrase>
+			<phrase id="3">
+				<text>travel_guid_pri_stalker_3</text>
+				<precondition>dialogs_mlr.have_money_to_escape_guid_bar</precondition>
+				<action>dialogs_mlr.sell_money_to_escape_guid_bar</action>
+				<action>dialogs_mlr.pripyat_2_guid</action>
+			</phrase>
+			<phrase id="4">
+				<text>travel_guid_pri_stalker_4</text>
+				<precondition>dialogs_mlr.have_money_to_radar_guid_pri</precondition>
+				<action>dialogs_mlr.sell_money_to_radar_guid_pri</action>
+				<action>dialogs_mlr.radar_guid</action>
+			</phrase>
+			<phrase id="5">
+				<text>travel_guid_pri_stalker_5</text>
+				<precondition>dialogs_mlr.have_money_to_pripyat_guid_jup</precondition>
+				<action>dialogs_mlr.sell_money_to_pripyat_guid_jup</action>
+				<action>dialogs_mlr.jupiter_guid</action>
+			</phrase>
+			<phrase id="6">
+				<text>travel_guid_pri_stalker_6</text>
+				<precondition>dialogs_mlr.have_money_to_military_guid_bar</precondition>
+				<action>dialogs_mlr.sell_money_to_military_guid_bar</action>
+				<action>dialogs_mlr.jupiter_underground_2_guid</action>
+			</phrase>
+			<phrase id="7">
+				<text>travel_guid_pri_stalker_7</text>
+				<precondition>dialogs_mlr.have_money_to_pripyat_guid_jup</precondition>
+				<action>dialogs_mlr.sell_money_to_pripyat_guid_jup</action>
+				<action>dialogs_mlr.zaton_guid</action>
+			</phrase>
+			<phrase id="8">
+				<text>travel_guid_pri_stalker_8</text>
+			</phrase>
+		</phrase_list>
+	</dialog>
+	
+
+<!-- Trunk (Merc Mechanic in Bookstore) -->
+	<dialog id="tech_a18_meet_dialog">
+		<dont_has_info>tech_a18_meet_dialog1</dont_has_info>
+		<phrase_list>
+			<phrase id="0">
+				<text>tech_a18_meet_dialog_0</text>
+				<next>1</next>
+			</phrase>
+			<phrase id="1">
+				<text>tech_a18_meet_dialog_1</text>
+				<give_info>tech_a18_meet_dialog1</give_info>
+			</phrase>
+		</phrase_list>
+	</dialog>
+	
+	<dialog id="tech_a18_meet_dialog_1">
+		<has_info>tech_a18_meet_dialog1</has_info>
+		<phrase_list>
+			<phrase id="0">
+				<text>tech_a18_meet_dialog_1_0</text>
+				<next>1</next>
+			</phrase>
+			<phrase id="1">
+				<text>tech_a18_meet_dialog_1_1</text>
+				<action>dialogs_mlr.unlock_note_trunk</action>
+			</phrase>
+		</phrase_list>
+	</dialog>
+	
+	<dialog id="tech_a18_meet_dialog_2">
+		<has_info>tech_a18_meet_dialog1</has_info>
+		<phrase_list>
+			<phrase id="0">
+				<text>tech_a18_meet_dialog_2_0</text>
+				<next>1</next>
+			</phrase>
+			<phrase id="1">
+				<text>tech_a18_meet_dialog_2_1</text>
+				<next>2</next>
+				<next>3</next>
+				<next>4</next>
+				<next>5</next>
+				<next>6</next>
+			</phrase>
+			<phrase id="2">
+				<precondition>dialogs_mlr.have_pri_a18_barter_9_19</precondition>
+				<text>tech_a18_meet_dialog_2_2</text>
+				<action>dialogs_mlr.take_pri_a18_barter_9_19</action>
+				<action>dialogs_mlr.give_pri_a18_barter_9_19</action>
+			</phrase>
+			<phrase id="3">
+				<precondition>dialogs_mlr.have_pri_a18_barter_5_56</precondition>
+				<text>tech_a18_meet_dialog_2_3</text>
+				<action>dialogs_mlr.take_pri_a18_barter_5_56</action>
+				<action>dialogs_mlr.give_pri_a18_barter_5_56</action>
+			</phrase>
+			<phrase id="4">
+				<precondition>dialogs_mlr.have_pri_a18_barter_f1</precondition>
+				<text>tech_a18_meet_dialog_2_4</text>
+				<action>dialogs_mlr.take_pri_a18_barter_f1</action>
+				<action>dialogs_mlr.give_pri_a18_barter_f1</action>
+			</phrase>
+			<phrase id="5">
+				<precondition>dialogs_mlr.have_pri_a18_barter_rgd5</precondition>
+				<text>tech_a18_meet_dialog_2_5</text>
+				<action>dialogs_mlr.take_pri_a18_barter_rgd5</action>
+				<action>dialogs_mlr.give_pri_a18_barter_rgd5</action>
+			</phrase>
+			<phrase id="6">
+				<text>tech_a18_meet_dialog_2_6</text>
+			</phrase>
+		</phrase_list>
+	</dialog>
+	
+	
+<!-- Eidolon (Monolith Elite Soldier) -->
+	<dialog id="monolith_eidolon_start">
+        <phrase_list>
+            <phrase id="0">
+                <text>monolith_eidolon_start_0</text>
+            </phrase>
+        </phrase_list>
+    </dialog>
+	
+	<dialog id="monolith_eidolon_st">
+        <phrase_list>
+            <phrase id="0">
+                <text>dm_dialog_character_history</text>
+                <next>1</next>
+            </phrase>
+            <phrase id="1">
+                <text>monolith_eidolon_st_1</text>
+            </phrase>
+        </phrase_list>
+    </dialog>
+
+    <dialog id="pri_monolith_monolith_mechanic_util_box_1">
+        <dont_has_info>pri_monolith_monolith_mechanic_util_box_start</dont_has_info>
+        <phrase_list>
+            <phrase id="1">
+                <text>sad_b2_tech_util_1_1</text>
+                <give_info>pri_monolith_monolith_mechanic_util_box_start</give_info>
+            </phrase>
+            <phrase id="0">
+                <text>sad_b2_tech_util_1_0</text>
+                <next>1</next>
+            </phrase>
+        </phrase_list>
+    </dialog>
+    <dialog id="pri_monolith_monolith_mechanic_util_box_2">
+        <has_info>pri_monolith_monolith_mechanic_util_box_has_money</has_info>
+        <has_info>pri_monolith_monolith_mechanic_util_box_start</has_info>
+        <phrase_list>
+            <phrase id="1">
+                <text>sad_b2_tech_util_2_1</text>
+                <action>dialogs_sad.sad_b2_tech_util_give_money</action>
+                <disable_info>pri_monolith_monolith_mechanic_util_box_has_money</disable_info>
+            </phrase>
+            <phrase id="0">
+                <text>sad_b2_tech_util_2_0</text>
+                <next>1</next>
+            </phrase>
+        </phrase_list>
+    </dialog>
+
+	
+</game_dialogs>

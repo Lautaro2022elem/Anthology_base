@@ -1,0 +1,52 @@
+;=========meet_stalker_korpys========
+[meet@korpys_stalker]
+close_anim 		= nil
+close_victim 	= nil
+far_anim 		= nil
+far_victim 		= nil
+close_distance 	= 0
+far_distance 	= 0
+use = {=actor_enemy} false, {=dist_to_actor_le(3)} true, false
+snd_on_use = {!dist_to_actor_le(3)} nil
+meet_on_talking = false
+;==================================
+
+[logic]
+active = walker@sleep
+suitable = {=check_npc_name(esc_levsha)} true, false
+level_spot = quest_npc
+prior = 250
+
+[walker@sleep]
+path_walk = esc_enot_sleep_walk
+path_look = esc_enot_sleep_look
+on_info = {-esc_actor_enot_wake_up =dist_to_actor_le(5)} %=play_sound(esc_enot_sleep)%
+on_info2 = {+esc_actor_enot_wake_up} %=stop_sound(esc_enot_sleep) +esc_actor_enot_wake_up_stop_sleep%
+on_info3 = {+esc_actor_enot_wake_up_stop_sleep} walker@enot_not_sleep
+combat_ignore_cond = true
+combat_ignore_keep_when_attacked = true
+invulnerable = false
+gather_items_enabled = false
+help_wounded_enabled = false
+corpse_detection_enabled = false
+meet = no_meet
+
+[walker@enot_not_sleep]
+path_walk = esc_enot_not_sleep_walk
+path_look = esc_enot_not_sleep_look
+on_info = {+esc_actor_enot_wake_up_stop_sleep =dist_to_actor_le(5) -esc_actor_enot_wake_up_stop_sound} %=play_sound(esc_enot_wake_up) +esc_actor_enot_wake_up_stop_sound%
+on_info2 = {+esc_enot_go_to_leader_stalker} %=release_npc%
+combat_ignore_cond = true
+combat_ignore_keep_when_attacked = true
+invulnerable = false
+gather_items_enabled = false
+help_wounded_enabled = false
+corpse_detection_enabled = false
+meet = meet@esc_enot_quest
+
+[meet@esc_enot_quest]:meet@korpys_stalker
+close_victim = actor
+use = {!actor_enemy =dist_to_actor_le(6) -esc_raven_talk_end} self, true
+allow_break = false
+meet_dialog = esc_actor_meet_from_enot
+trade_enable = false

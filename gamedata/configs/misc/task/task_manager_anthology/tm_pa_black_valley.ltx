@@ -1,0 +1,175 @@
+;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
+;;;;;;;;;;;;;;; СЮЖЕТНАЯ ЛИНИЯ ;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
+;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
+
+[blck_val_actor_prisoner] ;В плену
+icon = ui_inGame2_V_plenu
+prior = 200
+storyline = true
+title = {+blck_val_security_from_roof_go}blck_val_actor_prisoner_part_6_name, {+blck_val_quest_actor_in_prison_reload}blck_val_actor_prisoner_part_5_name, {+blck_val_actor_zasava_wake_up}blck_val_actor_prisoner_part_4_name, {+blck_val_prisoner_quest_line_meet_done}blck_val_actor_prisoner_part_3_name, {+blck_val_meet_prisoner_give}blck_val_actor_prisoner_part_2_name, blck_val_actor_prisoner_part_1_name
+descr = {+blck_val_security_from_roof_go}blck_val_actor_prisoner_part_6_text, {+blck_val_quest_actor_in_prison_reload}blck_val_actor_prisoner_part_5_text, {+blck_val_actor_zasava_wake_up}blck_val_actor_prisoner_part_4_text, {+blck_val_prisoner_quest_line_meet_done}blck_val_actor_prisoner_part_3_text, {+blck_val_meet_prisoner_give}blck_val_actor_prisoner_part_2_text, blck_val_actor_prisoner_part_1_text
+target = {+blck_val_security_from_roof_go}blck_val_stavrid, {+blck_val_quest_actor_in_prison_reload}blck_val_stalker_security, {+blck_val_prisoner_quest_line_meet_done}blck_val_quest_zone_sleep, {+blck_val_meet_prisoner_give}blck_val_prisoner_quest, nil
+condlist_0 = {+blck_val_stavrid_first_dialog_done} complete
+
+[blck_val_search_killer] ;Найти убийцу
+icon = ui_inGame2_Flash_klim_found
+prior = 200
+storyline = true
+title = {+blck_val_zver_open_pda_chimik}blck_val_search_killer_part_14_name, {+blck_val_zver_has_item_pda_killer}blck_val_search_killer_part_13_name, {+blck_val_stalker_chimik_is_dead}blck_val_search_killer_part_12_name, {+blck_val_stalker_chimik_is_enemy}blck_val_search_killer_part_11_name, {+blck_val_actor_give_knife_shaman}blck_val_search_killer_part_10_name, {+blck_val_actor_search_killer}blck_val_search_killer_part_9_name, {+blck_val_zver_has_item_knife_killer}blck_val_search_killer_part_8_name, {+blck_val_zver_see_dead_levsha}blck_val_search_killer_part_7_name, {+blck_val_stavrid_meet_levsha_done}blck_val_search_killer_part_6_name, {+blck_val_levsha_first_meet_done}blck_val_search_killer_part_5_name, {+blck_val_actor_found_levsha_zasada}blck_val_search_killer_part_4_name, {+blck_val_actor_meet_from_shaman_done}blck_val_search_killer_part_3_name, {+blck_val_shaman_sends_sms_actor}blck_val_search_killer_part_2_name, blck_val_search_killer_part_1_name
+descr = {+blck_val_zver_open_pda_chimik}blck_val_search_killer_part_14_text, {+blck_val_zver_has_item_pda_killer}blck_val_search_killer_part_13_text, {+blck_val_stalker_chimik_is_dead}blck_val_search_killer_part_12_text, {+blck_val_stalker_chimik_is_enemy}blck_val_search_killer_part_11_text, {+blck_val_actor_give_knife_shaman}blck_val_search_killer_part_10_text, {+blck_val_actor_search_killer}blck_val_search_killer_part_9_text, {+blck_val_zver_has_item_knife_killer}blck_val_search_killer_part_8_text, {+blck_val_zver_see_dead_levsha}blck_val_search_killer_part_7_text, {+blck_val_stavrid_meet_levsha_done}blck_val_search_killer_part_6_text, {+blck_val_levsha_first_meet_done}blck_val_search_killer_part_5_text, {+blck_val_actor_found_levsha_zasada}blck_val_search_killer_part_4_text, {+blck_val_actor_meet_from_shaman_done}blck_val_search_killer_part_3_text, {+blck_val_shaman_sends_sms_actor}blck_val_search_killer_part_2_text, blck_val_search_killer_part_1_text
+target = {+blck_val_zver_open_pda_chimik}blck_val_stavrid, {+blck_val_zver_has_item_pda_killer}nil, {+blck_val_stalker_chimik_is_dead}blck_val_chimik_killer, {+blck_val_actor_give_knife_shaman}blck_val_zavod_spot, {+blck_val_actor_search_killer}blck_val_barman_shaman, {+blck_val_zver_has_item_knife_killer}blck_val_stavrid, {+blck_val_zver_see_dead_levsha}blck_val_zavod_spot, {+blck_val_stavrid_meet_levsha_done}blck_val_levsha_spot, {+blck_val_levsha_first_meet_done}blck_val_stavrid, {+blck_val_actor_found_levsha_zasada}blck_val_levsha_spot, {+blck_val_actor_meet_from_shaman_done}nil, {+blck_val_shaman_sends_sms_actor}blck_val_barman_shaman, nil
+condlist_0 = {+blck_val_quest_two_friends_done} complete
+
+[blck_val_night_shooter] ;Активная разведка
+icon = ui_inGame2_Final_talk_in_escape
+prior = 200
+storyline = true
+title = {+blck_val_actor_go_to_stavrid_from_base}blck_val_night_shooter_part_8_name, {+blck_val_actor_in_roof_hutor_again}blck_val_night_shooter_part_7_name, {+blck_val_actor_go_to_roof_hutor}blck_val_night_shooter_part_6_name, {+blck_val_marchuk_rac_wait_start}blck_val_night_shooter_part_5_name, {+blck_val_hutor_quest_zasada_squad_dead}blck_val_night_shooter_part_4_name, {+blck_val_bandit_go_to_hutor_quest}blck_val_night_shooter_part_3_name, {+blck_val_actor_wait_bandit_in_roof}blck_val_night_shooter_part_2_name, blck_val_night_shooter_part_1_name
+descr = {+blck_val_actor_go_to_stavrid_from_base}blck_val_night_shooter_part_8_text, {+blck_val_actor_in_roof_hutor_again}blck_val_night_shooter_part_7_text, {+blck_val_actor_go_to_roof_hutor}blck_val_night_shooter_part_6_text, {+blck_val_marchuk_rac_wait_start}blck_val_night_shooter_part_5_text, {+blck_val_hutor_quest_zasada_squad_dead}blck_val_night_shooter_part_4_text, {+blck_val_bandit_go_to_hutor_quest}blck_val_night_shooter_part_3_text, {+blck_val_actor_wait_bandit_in_roof}blck_val_night_shooter_part_2_text, blck_val_night_shooter_part_1_text
+target = {+blck_val_actor_go_to_stavrid_from_base}blck_val_stavrid, {+blck_val_actor_in_roof_hutor_again}blck_val_hutor_quest_zasada_now_squad, {+blck_val_actor_go_to_roof_hutor}blck_val_hutor_roof_zone, {+blck_val_hutor_quest_zasada_squad_dead}blck_val_stalker_hutor_1, {+blck_val_bandit_go_to_hutor_quest}blck_val_hutor_quest_zasada_squad, {+blck_val_actor_wait_bandit_in_roof}nil, blck_val_stavrid
+condlist_0 = {+blck_val_stavrid_night_shooter_dialog_done} complete
+
+[blck_val_talk_to_miklucha] ;Встретиться с Миклухой
+icon = ui_inGame2_PD_Diplomat
+prior = 200
+storyline = true
+title = blck_val_talk_to_miklucha_part_1_name
+descr = blck_val_talk_to_miklucha_part_1_text
+target = blck_val_miklucha_freedom
+condlist_0 = {+blck_val_miklucha_first_quest_give} complete
+
+[blck_val_monolit_call] ;Зов Монолита
+icon = ui_inGame2_Monolit_kill
+prior = 200
+storyline = true
+title = {+blck_val_miklucha_pda_in_bag_actor}blck_val_monolit_call_part_9_name, {+blck_val_zver_see_dead_miklucha}blck_val_monolit_call_part_8_name, {+blck_val_zasada_stavrid_not_help}blck_val_monolit_call_part_7_name, {+blck_val_freedom_need_help}blck_val_monolit_call_part_6_name, {+blck_val_miklucha_to_zavod_come}blck_val_monolit_call_part_5_name, {+blck_val_quest_zavod_start}blck_val_monolit_call_part_4_name, {+blck_val_zavod_zasada_quest_give}blck_val_monolit_call_part_3_name, {+blck_val_meet_prisoner_give}blck_val_monolit_call_part_2_name, blck_val_monolit_call_part_1_name
+descr = {+blck_val_miklucha_pda_in_bag_actor}blck_val_monolit_call_part_9_text, {+blck_val_zver_see_dead_miklucha}blck_val_monolit_call_part_8_text, {+blck_val_zasada_stavrid_not_help}blck_val_monolit_call_part_7_text, {+blck_val_freedom_need_help}blck_val_monolit_call_part_6_text, {+blck_val_miklucha_to_zavod_come}blck_val_monolit_call_part_5_text, {+blck_val_quest_zavod_start}blck_val_monolit_call_part_4_text, {+blck_val_zavod_zasada_quest_give}blck_val_monolit_call_part_3_text, {+blck_val_meet_prisoner_give}blck_val_monolit_call_part_2_text, blck_val_monolit_call_part_1_text
+target = {+blck_val_miklucha_pda_in_bag_actor}nil, {+blck_val_zver_see_dead_miklucha}blck_val_zavod_miklucha, {+blck_val_zasada_stavrid_not_help}blck_val_zavod_spot, {+blck_val_freedom_need_help}blck_val_stavrid, {+blck_val_zavod_zasada_quest_give}blck_val_zavod_miklucha, {+blck_val_meet_prisoner_give}blck_val_miklucha_freedom, nil
+condlist_0 = {+blck_val_spatial_bubble_quest_give} complete
+
+[blck_val_spatial_bubble_wound] ;Тени прошлого (пространственный пузырь)
+icon = ui_inGame2_Prostranstvennaya_anomaly
+prior = 200
+storyline = true
+title = {+blck_val_actor_meet_tech_spatial_done}blck_val_spatial_bubble_wound_part_7_name, {+blck_val_actor_dialog_from_sologub_end}blck_val_spatial_bubble_wound_part_6_name, {+blck_val_actor_wake_up_hutor_in}blck_val_spatial_bubble_wound_part_5_name, {+blck_val_spatial_fish_come}blck_val_spatial_bubble_wound_part_4_name, {+blck_val_actor_sends_koordinat}blck_val_spatial_bubble_wound_part_3_name, {+blck_val_transiver_spatial_2_spawn}blck_val_spatial_bubble_wound_part_2_name, blck_val_spatial_bubble_wound_part_1_name
+descr = {+blck_val_actor_meet_tech_spatial_done}blck_val_spatial_bubble_wound_part_7_text, {+blck_val_actor_dialog_from_sologub_end}blck_val_spatial_bubble_wound_part_6_text, {+blck_val_actor_wake_up_hutor_in}blck_val_spatial_bubble_wound_part_5_text, {+blck_val_spatial_fish_come}blck_val_spatial_bubble_wound_part_4_text, {+blck_val_actor_sends_koordinat}blck_val_spatial_bubble_wound_part_3_text, {+blck_val_transiver_spatial_2_spawn}blck_val_spatial_bubble_wound_part_2_text, blck_val_spatial_bubble_wound_part_1_text
+target = {+blck_val_actor_meet_tech_spatial_done}blck_val_stavrid, {+blck_val_actor_dialog_from_sologub_end}blck_val_petrovich, {+blck_val_actor_wake_up_hutor_in}blck_val_sologub_trader, {+blck_val_spatial_fish_come}blck_val_spatial_fish, {+blck_val_transiver_spatial_2_spawn}nil, blck_val_spatial_bubble
+condlist_0 = {+blck_val_quest_wpn_vihr_search_give} complete
+
+[blck_val_wpn_vihr_search] ;Раздобыть СР-3 "Вихрь"
+icon = ui_inGame2_Zakaz_new_trader
+prior = 200
+storyline = true
+title = {+blck_val_bandit_shmiga_give_vihr}blck_val_wpn_vihr_search_part_2_name, blck_val_wpn_vihr_search_part_1_name
+descr = {+blck_val_bandit_shmiga_give_vihr}blck_val_wpn_vihr_search_part_2_text, blck_val_wpn_vihr_search_part_1_text
+target = {+blck_val_bandit_shmiga_give_vihr}blck_val_stavrid, nil
+condlist_0 = {+blck_val_stavrid_dialog_vihr_complete} complete
+
+[blck_val_prison_breack] ;Помочь Шмыге сбежать из плена
+icon = ui_inGame2_Igra_v_pryatki
+prior = 200
+storyline = false
+title = {+blck_val_shmiga_escape_from_prison +blck_val_dialog_stavrid_dop_action_done}blck_val_prison_breack_part_9_name, {+blck_val_shmiga_escape_from_prison -blck_val_dialog_stavrid_dop_action_done}blck_val_prison_breack_part_8_name, {+blck_val_bandit_shmiga_scene_come}blck_val_prison_breack_part_7_name, {+blck_val_bandit_escape_spawn}blck_val_prison_breack_part_6_name, {+blck_val_actor_givekey_to_prison}blck_val_prison_breack_part_5_name, {+blck_val_info_give_key_bandit_shmiga}blck_val_prison_breack_part_4_name, {=actor_has_item(blck_val_key_to_prison) =zat_b7_is_night}blck_val_prison_breack_part_3_name, {=zat_b7_is_night}blck_val_prison_breack_part_2_name, blck_val_prison_breack_part_1_name
+descr = {+blck_val_shmiga_escape_from_prison +blck_val_dialog_stavrid_dop_action_done}blck_val_prison_breack_part_9_text, {+blck_val_shmiga_escape_from_prison -blck_val_dialog_stavrid_dop_action_done}blck_val_prison_breack_part_8_text, {+blck_val_bandit_shmiga_scene_come}blck_val_prison_breack_part_7_text, {+blck_val_bandit_escape_spawn}blck_val_prison_breack_part_6_text, {+blck_val_actor_givekey_to_prison}blck_val_prison_breack_part_5_text, {+blck_val_info_give_key_bandit_shmiga}blck_val_prison_breack_part_4_text, {=actor_has_item(blck_val_key_to_prison) =zat_b7_is_night}blck_val_prison_breack_part_3_text, {=zat_b7_is_night}blck_val_prison_breack_part_2_text, blck_val_prison_breack_part_1_text
+target = {+blck_val_shmiga_escape_from_prison +blck_val_dialog_stavrid_dop_action_done}blck_val_stavrid, {+blck_val_shmiga_escape_from_prison -blck_val_dialog_stavrid_dop_action_done}blck_val_quest_zone_key_out, {+blck_val_bandit_shmiga_scene_come}blck_val_bandit_shmiga_scene, {+blck_val_bandit_escape_spawn}nil, {+blck_val_actor_givekey_to_prison}blck_val_quest_zone_bandit_shmiga_gone, {=actor_has_item(blck_val_key_to_prison) =zat_b7_is_night}blck_val_prisoner_quest, {=zat_b7_is_night}blck_val_key_to_prison, nil
+condlist_0 = {+blck_val_key_to_prison_spawn_end} complete
+
+[blck_val_shaman_talk_line] ;Поговорить с Шаманом
+icon = ui_inGame2_Who_is_happening
+prior = 20
+storyline = false
+title = {+blck_val_shaman_dialog_from_hunter_done}blck_val_shaman_talk_line_part_2_name, blck_val_shaman_talk_line_part_1_name
+descr = {+blck_val_shaman_dialog_from_hunter_done}blck_val_shaman_talk_line_part_2_text, blck_val_shaman_talk_line_part_1_text
+target = {+blck_val_shaman_dialog_from_hunter_done}blck_val_hunter_hutor, blck_val_barman_shaman
+condlist_0 = {+blck_val_hunter_in_hutor_first_meet_done} complete
+
+[blck_val_hunter_hunting] ;Псевдо-плоть
+icon = ui_inGame2_Hunter_quest_line
+prior = 20
+storyline = false
+title = {+blck_val_psevdoflesh_quest_dead}blck_val_hunter_hunting_part_7_name, {+blck_val_psevdoflesh_see_actor}blck_val_hunter_hunting_part_6_name, {+blck_val_hunter_hunting_go_to_flash}blck_val_hunter_hunting_part_5_name, {+blck_val_hunter_hunting_dialog_reload}blck_val_hunter_hunting_part_4_name, {+blck_val_hunter_hunting_come}blck_val_hunter_hunting_part_3_name, {+blck_val_quest_hunter_hunting_is_ready}blck_val_hunter_hunting_part_2_name, blck_val_hunter_hunting_part_1_name
+descr = {+blck_val_psevdoflesh_quest_dead}blck_val_hunter_hunting_part_7_text, {+blck_val_psevdoflesh_see_actor}blck_val_hunter_hunting_part_6_text, {+blck_val_hunter_hunting_go_to_flash}blck_val_hunter_hunting_part_5_text, {+blck_val_hunter_hunting_dialog_reload}blck_val_hunter_hunting_part_4_text, {+blck_val_hunter_hunting_come}blck_val_hunter_hunting_part_3_text, {+blck_val_quest_hunter_hunting_is_ready}blck_val_hunter_hunting_part_2_text, blck_val_hunter_hunting_part_1_text
+target = {+blck_val_psevdoflesh_quest_dead}blck_val_hunter_hunting, {+blck_val_psevdoflesh_see_actor}blck_val_psevdoflesh_quest, {+blck_val_quest_hunter_hunting_is_ready}blck_val_hunter_hunting, nil
+condlist_0 = {+blck_val_hunter_flash_dead_dialog_done} complete
+
+[blck_val_monolit_base] ;Маскарад
+icon = ui_inGame2_Maskarad
+prior = 200
+storyline = true
+title = {+blck_val_monolit_leader_dialog_done}blck_val_monolit_base_part_7_name, {+blck_val_monolit_leader_give_info}blck_val_monolit_base_part_6_name, {+blck_val_quest_lutiy_monolit_is_ready}blck_val_monolit_base_part_5_name, {=blck_val_actor_not_has_monolit_outfit +blck_val_tech_reload_community}blck_val_monolit_base_part_4_name, {+blck_val_stavrid_dialog_give_explosive =blck_val_actor_not_has_monolit_outfit}blck_val_monolit_base_part_3_name, {=blck_val_actor_has_monolit_outfit +blck_val_stavrid_dialog_give_explosive}blck_val_monolit_base_part_8_name, {+blck_val_stavrid_sends_sms_from_outfit}blck_val_monolit_base_part_2_name, blck_val_monolit_base_part_1_name
+descr = {+blck_val_monolit_leader_dialog_done}blck_val_monolit_base_part_7_text, {+blck_val_monolit_leader_give_info}blck_val_monolit_base_part_6_text, {+blck_val_quest_lutiy_monolit_is_ready}blck_val_monolit_base_part_5_text, {=blck_val_actor_not_has_monolit_outfit +blck_val_tech_reload_community}blck_val_monolit_base_part_4_text, {+blck_val_stavrid_dialog_give_explosive =blck_val_actor_not_has_monolit_outfit}blck_val_monolit_base_part_3_text, {=blck_val_actor_has_monolit_outfit +blck_val_stavrid_dialog_give_explosive}blck_val_monolit_base_part_8_text, {+blck_val_stavrid_sends_sms_from_outfit}blck_val_monolit_base_part_2_text, blck_val_monolit_base_part_1_text
+target = {+blck_val_monolit_leader_dialog_done}blck_val_monolit_base_destroy_spot, {+blck_val_monolit_leader_give_info}blck_val_monolith_leader, {+blck_val_quest_lutiy_monolit_is_ready}blck_val_lutiy_monolith, {+blck_val_tech_reload_community}blck_val_lutiy_monolith_on_base, {+blck_val_stavrid_dialog_give_explosive}blck_val_petrovich, {+blck_val_stavrid_sends_sms_from_outfit}blck_val_stavrid, nil
+condlist_0 = {+blck_val_monolith_informator_dialog_done} complete
+condlist_1 = {+blck_val_quest_lutiy_monolit_is_ready =blck_val_actor_has_monolit_outfit} fail
+
+[blck_val_final_zastava_quest] ;Право на выбор
+icon = ui_inGame2_Monolit_kill
+prior = 200
+storyline = true
+title = {+blck_val_tech_reload_community_again}blck_val_final_zastava_quest_part_4_name, {+blck_val_final_zastava_quest_to_petrovich}blck_val_final_zastava_quest_part_3_name, {+blck_val_final_zastava_quest_stavrid}blck_val_final_zastava_quest_part_2_name, blck_val_final_zastava_quest_part_1_name
+descr = {+blck_val_tech_reload_community_again}blck_val_final_zastava_quest_part_4_text, {+blck_val_final_zastava_quest_to_petrovich}blck_val_final_zastava_quest_part_3_text, {+blck_val_final_zastava_quest_stavrid}blck_val_final_zastava_quest_part_2_text, blck_val_final_zastava_quest_part_1_text
+target = {+blck_val_tech_reload_community_again}blck_val_hunter_home, {+blck_val_final_zastava_quest_to_petrovich}blck_val_petrovich, nil
+condlist_0 = {+blck_val_monolith_informator_dialog_done =actor_on_level(labx7)} complete
+condlist_1 = {+blck_val_final_zastava_quest_neutral_end} complete
+
+;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
+;;;;;;;;;;;;;;; САЙД-КВЕСТЫ ;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
+;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
+
+[blck_val_kill_to_zombied] ;Убить зомбированных
+icon = ui_inGame2_Zastava_dolg_man
+prior = 15
+storyline = false
+title = {+blck_val_stalker_zombied_squad_dead}blck_val_kill_to_zombied_part_2_name, blck_val_kill_to_zombied_part_1_name
+descr = {+blck_val_stalker_zombied_squad_dead}blck_val_kill_to_zombied_part_2_text, blck_val_kill_to_zombied_part_1_text
+target = {+blck_val_stalker_zombied_squad_dead}blck_val_stalker_drunk, blck_val_stalker_zombied_squad
+condlist_0 = {+blck_val_stalker_drunk_quest_done} complete
+reward_money = 2500
+reward_item = wpn_spas12:ammo_12x76_zhekan:bandage:medkit:bandage:medkit:ammo_12x76_zhekan:ammo_12x76_zhekan:antirad:antirad
+
+[blck_val_shaman_quest_talk] ;Поговорить с Шаманом (на счет работы)
+icon = ui_inGame2_Grey_stalker
+prior = 20
+storyline = false
+title = blck_val_shaman_quest_talk_part_1_name
+descr = blck_val_shaman_quest_talk_part_1_text
+target = blck_val_barman_shaman
+condlist_0 = {+blck_val_quest_find_art_from_barmen} complete
+
+[blck_val_find_art_barman] ;Найти артефакт "Колобок"
+icon = ui_inGame2_Kontrakt_s_uchenimi
+prior = 15
+storyline = false
+title = {+blck_val_bandit_gop_stop_art_out}blck_val_find_art_barman_part_3_name, {+blck_val_spawn_bandit_end}blck_val_find_art_barman_part_2_name, blck_val_find_art_barman_part_1_name
+descr = {+blck_val_bandit_gop_stop_art_out}blck_val_find_art_barman_part_3_text, {+blck_val_spawn_bandit_end}blck_val_find_art_barman_part_2_text, blck_val_find_art_barman_part_1_text
+target = {+blck_val_spawn_bandit_end}blck_val_barman_shaman, blck_val_him_anomal_zone
+condlist_0 = {+blck_val_quest_find_art_from_barmen_done} complete
+
+[blck_val_shmiga_revard_quest] ;Забрать стволы у бандитов
+icon = ui_inGame2_PD_Diplomat
+prior = 20
+storyline = false
+title = blck_val_shmiga_revard_quest_part_1_name
+descr = blck_val_shmiga_revard_quest_part_1_text
+target = blck_val_shmiga_shcool
+condlist_0 = {+blck_val_bandit_shmiga_give_vihr} complete
+
+[blck_val_hunt_dog_tail] ;Принести 6 собачих хвостов
+icon = ui_inGame2_Dog_hunt
+prior = 15
+storyline = false
+title = {+blck_val_out_quest_mutant_dog_tail}blck_val_hunt_dog_tail_part_2_name, {=actor_has_item_count(mutant_part_dog_tail:6)}blck_val_hunt_dog_tail_part_2_name, {-blck_val_out_quest_mutant_dog_tail}blck_val_hunt_dog_tail_part_1_name
+descr = {+blck_val_out_quest_mutant_dog_tail}blck_val_hunt_dog_tail_part_2_text, {=actor_has_item_count(mutant_part_dog_tail:6)}blck_val_hunt_dog_tail_part_2_text, {-blck_val_out_quest_mutant_dog_tail}blck_val_hunt_dog_tail_part_1_text
+target = {+blck_val_out_quest_mutant_dog_tail}blck_val_a37_hunter_3, {=actor_has_item_count(mutant_part_dog_tail:6)}blck_val_a37_hunter_3, {-blck_val_out_quest_mutant_dog_tail}nil
+condlist_0 = {+blck_val_quest_mutant_dog_tail_done} complete
+reward_money = 1200
+reward_item = ammo_12x76_zhekan:ammo_12x76_zhekan:ammo_12x76_zhekan:antirad:antirad
+
+[blck_val_petrovich_dop_quest] ;Найти коллекцию фигурок мутантов для Петровича
+icon = ui_inGame2_Ohota_na_Himeru
+prior = 20
+storyline = false
+title = blck_val_petrovich_dop_quest_part_1_name
+descr = blck_val_petrovich_dop_quest_part_1_text
+target = nil
+condlist_0 = {+blck_val_petrovich_dop_quest_complete} complete

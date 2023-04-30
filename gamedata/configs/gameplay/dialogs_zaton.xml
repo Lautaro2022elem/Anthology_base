@@ -1,0 +1,671 @@
+<?xml version="1.0" encoding="windows-1251" ?>
+<game_dialogs>
+
+<!-- (Mercenary Guide) at the merc base -->
+<!-- (Mercenary Trader) at the merc base -->
+	<dialog id="meet_zaton_killer_guide_station">
+		<precondition>dialogs.actor_killer</precondition>
+		<dont_has_info>meet_zaton_killer_guide_station_over</dont_has_info>
+		<phrase_list>
+			<phrase id="0">
+				<text>meet_zaton_killer_guide_station_0</text>
+				<next>1</next>
+			</phrase>
+			<phrase id="1">
+				<text>meet_zaton_killer_guide_station_1</text>
+				<give_info>meet_zaton_killer_guide_station_over</give_info>
+			</phrase>
+		</phrase_list>
+	</dialog>
+	
+	<dialog id="meet_zaton_killer_guide_station_list">
+		<has_info>meet_zaton_killer_guide_station_over</has_info>
+		<phrase_list>
+			<phrase id="0">
+				<text>meet_zaton_killer_guide_station_list_0</text>
+				<next>1</next>
+			</phrase>
+			<phrase id="1">
+				<text>meet_zaton_killer_guide_station_list_1</text>
+			</phrase>
+		</phrase_list>
+	</dialog>
+	
+	<dialog id="travel_zaton_killer_guide_station_base">
+		<has_info>meet_zaton_killer_guide_station_over</has_info>
+		<phrase_list>
+			<phrase id="0">
+				<text>travel_zaton_killer_guide_station_base_0</text>
+				<next>1</next>
+			</phrase>
+			<phrase id="1">
+				<text>travel_zaton_killer_guide_station_base_1</text>
+				<next>2</next>
+				<next>3</next>
+			</phrase>
+			<phrase id="2">
+				<text>travel_zaton_killer_guide_station_base_2</text>
+				<precondition>dialogs_mlr.have_money_to_radar_guid_pri</precondition>
+				<action>dialogs_mlr.sell_money_to_radar_guid_pri</action>
+				<action>dialogs_mlr.ds_soviet_store</action>
+			</phrase>
+			<phrase id="3">
+				<text>travel_zaton_killer_guide_station_base_3</text>
+			</phrase>
+		</phrase_list>
+	</dialog>
+	
+	
+<!-- (Loner Mechanic - Ship) -->
+	<dialog id="zat_tech_mlr_st">
+		<has_info>kardan_st_done</has_info>
+		<dont_has_info>zat_tech_mlr_st_over</dont_has_info>
+		<phrase_list>
+			<phrase id="0">
+				<text>zat_tech_mlr_st_0</text>
+				<next>1</next>
+			</phrase>
+			<phrase id="1">
+				<text>zat_tech_mlr_st_1</text>
+				<next>2</next>
+			</phrase>
+			<phrase id="2">
+				<text>zat_tech_mlr_st_2</text>
+				<next>3</next>
+			</phrase>
+			<phrase id="3">
+				<text>zat_tech_mlr_st_3</text>
+				<next>4</next>
+			</phrase>
+			<phrase id="4">
+				<text>zat_tech_mlr_st_4</text>
+				<next>5</next>
+			</phrase>
+			<phrase id="5">
+				<text>zat_tech_mlr_st_5</text>
+				<next>6</next>
+			</phrase>
+			<phrase id="6">
+				<text>zat_tech_mlr_st_6</text>
+				<next>7</next>
+			</phrase>
+			<phrase id="7">
+				<text>zat_tech_mlr_st_7</text>
+				<next>8</next>
+			</phrase>
+			<phrase id="8">
+				<text>zat_tech_mlr_st_8</text>
+				<next>9</next>
+			</phrase>
+			<phrase id="9">
+				<text>zat_tech_mlr_st_9</text>
+				<next>10</next>
+			</phrase>
+			<phrase id="10">
+				<text>zat_tech_mlr_st_10</text>
+				<give_info>zat_tech_mlr_st_over</give_info>
+			</phrase>
+		</phrase_list>
+	</dialog>
+	
+
+<!-- Pilot (Loner Guide) -->
+	<dialog id="stalker_guide_about_himself">
+        <dont_has_info>stalker_guide_about_himself</dont_has_info>
+        <phrase_list>
+            <phrase id="1">
+                <text>stalker_guide_about_himself_1</text>
+                <give_info>stalker_guide_about_himself</give_info>
+            </phrase>
+            <phrase id="0">
+                <text>stalker_guide_about_himself_0</text>
+                <next>1</next>
+            </phrase>
+        </phrase_list>
+    </dialog>
+	
+	<dialog id="stalker_guide_about_anomalies">
+        <phrase_list>
+            <phrase id="1116">
+                <text>stalker_guide_about_anomalies_1116</text>
+            </phrase>
+            <phrase id="111">
+                <text />
+                <next>1111</next>
+                <next>1112</next>
+                <next>1113</next>
+                <next>1114</next>
+                <next>1115</next>
+                <next>1116</next>
+            </phrase>
+            <phrase id="1111">
+                <text>stalker_guide_about_anomalies_1111</text>
+                <next>11111</next>
+            </phrase>
+            <phrase id="11111">
+                <text>stalker_guide_about_anomalies_11111</text>
+                <next>11</next>
+            </phrase>
+            <phrase id="1112">
+                <text>stalker_guide_about_anomalies_1112</text>
+                <next>11121</next>
+            </phrase>
+            <phrase id="11121">
+                <text>stalker_guide_about_anomalies_11121</text>
+                <next>11</next>
+            </phrase>
+            <phrase id="1113">
+                <text>stalker_guide_about_anomalies_1113</text>
+                <next>11131</next>
+            </phrase>
+            <phrase id="11131">
+                <text>stalker_guide_about_anomalies_11131</text>
+                <next>11</next>
+            </phrase>
+            <phrase id="1114">
+                <text>stalker_guide_about_anomalies_1114</text>
+                <next>11141</next>
+            </phrase>
+            <phrase id="11141">
+                <text>stalker_guide_about_anomalies_11141</text>
+                <next>11</next>
+            </phrase>
+            <phrase id="11">
+                <text />
+                <next>111</next>
+            </phrase>
+            <phrase id="1">
+                <text>stalker_guide_about_anomalies_1</text>
+                <next>11</next>
+            </phrase>
+            <phrase id="1115">
+                <text>stalker_guide_about_anomalies_1115</text>
+                <next>11151</next>
+            </phrase>
+            <phrase id="11151">
+                <text>stalker_guide_about_anomalies_11151</text>
+                <next>11</next>
+            </phrase>
+            <phrase id="0">
+                <text>stalker_guide_about_anomalies_0</text>
+                <next>1</next>
+            </phrase>
+        </phrase_list>
+    </dialog>	
+	
+	<dialog id="meet_guid_zat">
+		<dont_has_info>meet_guid_zat_over</dont_has_info>
+		<phrase_list>
+			<phrase id="0">
+				<text>meet_guid_zat_0</text>
+				<next>1</next>
+			</phrase>
+			<phrase id="1">
+				<text>meet_guid_zat_1</text>
+				<give_info>meet_guid_zat_over</give_info>
+			</phrase>
+		</phrase_list>
+	</dialog>
+	
+	<dialog id="meet_guid_zat_list">
+		<has_info>meet_guid_zat_over</has_info>
+		<phrase_list>
+			<phrase id="0">
+				<text>meet_guid_zat_list_0</text>
+				<next>1</next>
+			</phrase>
+			<phrase id="1">
+				<text>meet_guid_zat_list_1</text>
+			</phrase>
+		</phrase_list>
+	</dialog>
+	
+	<dialog id="travel_guid_zat">
+		<precondition>dialogs_mlr.have_money_to_zaton_guid_jup</precondition>
+		<has_info>meet_guid_zat_over</has_info>
+		<phrase_list>
+			<phrase id="0">
+				<text>travel_guid_zat_0</text>
+				<next>1</next>
+			</phrase>
+			<phrase id="1">
+				<text>travel_guid_zat_1</text>
+				<next>2</next>
+				<next>3</next>
+				<next>4</next>
+				<next>5</next>
+			</phrase>
+			<phrase id="2">
+				<text>travel_guid_zat_2</text>
+				<precondition>dialogs_mlr.have_money_to_pripyat_guid_jup</precondition>
+				<action>dialogs_mlr.sell_money_to_pripyat_guid_jup</action>
+				<action>dialogs_mlr.l11_pripyat_guid</action>
+			</phrase>
+			<phrase id="3">
+				<text>travel_guid_zat_3</text>
+				<precondition>dialogs_mlr.have_money_to_pripyat_guid_zat</precondition>
+				<action>dialogs_mlr.sell_money_to_pripyat_guid_zat</action>
+				<action>dialogs_mlr.pripyat_guid_mon</action>
+			</phrase>
+			<phrase id="4">
+				<text>travel_guid_zat_4</text>
+				<precondition>dialogs_mlr.have_money_to_zaton_guid_jup</precondition>
+				<action>dialogs_mlr.sell_money_to_zaton_guid_jup</action>
+				<action>dialogs_mlr.jupiter_guid</action>
+			</phrase>
+			<phrase id="5">
+				<text>travel_guid_zat_5</text>
+			</phrase>
+		</phrase_list>
+	</dialog>
+	
+
+<!-- Owl (Loner Trader) -->
+	<dialog id="owl_story">
+		<dont_has_info>owl_story_inf</dont_has_info>
+		<phrase_list>
+			<phrase id="0">
+				<text>owl_story_0</text>
+				<next>1</next>
+			</phrase>
+			<phrase id="1">
+				<text>owl_story_1</text>
+				<next>2</next>
+			</phrase>
+			<phrase id="2">
+				<text>owl_story_2</text>
+				<next>3</next>
+			</phrase>
+			<phrase id="3">
+				<text>owl_story_3</text>
+				<next>4</next>
+			</phrase>
+			<phrase id="4">
+				<text>owl_story_4</text>
+				<give_info>owl_story_inf</give_info>
+			</phrase>
+		</phrase_list>
+	</dialog>
+	
+	<dialog id="information_about_stash_owl_zat">
+		<dont_has_info>information_about_stash_owl_zat1</dont_has_info>
+		<phrase_list>
+			<phrase id="0">
+				<text>information_about_stash_owl_zat_0</text>
+				<next>1</next>
+			</phrase>
+			<phrase id="1">
+				<text>information_about_stash_owl_zat_1</text>
+				<give_info>information_about_stash_owl_zat1</give_info>
+			</phrase>
+		</phrase_list>
+	</dialog>
+	
+	<dialog id="information_about_stash_owl_zat1">
+		<precondition>dialogs_mlr.have_pri_special_trader_mlr_1</precondition>
+		<has_info>information_about_stash_owl_zat1</has_info>
+		<phrase_list>
+			<phrase id="0">
+				<text>information_about_stash_owl_zat_0</text>
+				<next>1</next>
+			</phrase>
+			<phrase id="1">
+				<text>information_about_stash_owl_zat_1</text>
+				<action>dialogs_mlr.give_pri_special_trader_mlr_1</action>
+				<action>xr_effects.reward_stash</action>
+			</phrase>
+		</phrase_list>
+	</dialog>
+
+	<dialog id="find_blackbox_mlr_reward_owl">
+		<precondition>dialogs_mlr.have_blackbox_mlr</precondition>
+		<phrase_list>
+			<phrase id="0">
+				<text>find_blackbox_mlr_reward_owl_0</text>
+				<next>1</next>
+			</phrase>
+			<phrase id="1">
+				<text>find_blackbox_mlr_reward_owl_1</text>
+				<action>dialogs_mlr.take_blackbox_mlr</action>
+				<action>dialogs_mlr.take_money_from_owl_blackbox</action>
+			</phrase>
+		</phrase_list>
+	</dialog>
+	
+
+<!-- Beard (Loner Barman) -->
+	<dialog id="boroda_story">
+		<dont_has_info>boroda_story_inf</dont_has_info>
+		<phrase_list>
+			<phrase id="0">
+				<text>boroda_story_0</text>
+				<next>1</next>
+			</phrase>
+			<phrase id="1">
+				<text>boroda_story_1</text>
+				<next>2</next>
+			</phrase>
+			<phrase id="2">
+				<text>boroda_story_2</text>
+				<next>3</next>
+			</phrase>
+			<phrase id="3">
+				<text>boroda_story_3</text>
+				<next>4</next>
+			</phrase>
+			<phrase id="4">
+				<text>boroda_story_4</text>
+				<give_info>boroda_story_inf</give_info>
+			</phrase>
+		</phrase_list>
+	</dialog>
+	
+	<dialog id="devushka_boroda_help">
+		<dont_has_info>devushka_help_done</dont_has_info>
+		<precondition>dialogs_devushka.devushka_help_1_has</precondition>
+		<has_info>devushka_help_1_give</has_info>
+        <phrase_list>
+            <phrase id="0">
+                <text>devushka_boroda_help_0</text>
+				<action>dialogs_devushka.devushka_help_1_done</action>
+				<next>1</next>
+            </phrase>
+            <phrase id="1">
+                <text>devushka_boroda_help_1</text>
+				<give_info>devushka_help_done</give_info>
+				<action>dialogs_devushka.devushka_3_info</action>
+            </phrase>
+		</phrase_list>
+	</dialog>
+
+	
+<!-- Noah (Loner Honcho) Character Description -->	
+	<dialog id="noah_start_dialog">
+		<dont_has_info>noah_start_dialog1</dont_has_info>
+		<phrase_list>
+			<phrase id="0">
+				<text>noah_start_dialog_0</text>
+				<next>1</next>
+			</phrase>
+			<phrase id="1">
+				<text>noah_start_dialog_1</text>
+				<next>2</next>
+			</phrase>
+			<phrase id="2">
+				<text>noah_start_dialog_2</text>
+				<next>3</next>
+			</phrase>
+			<phrase id="3">
+				<text>noah_start_dialog_3</text>
+				<give_info>noah_start_dialog1</give_info>
+			</phrase>
+		</phrase_list>
+	</dialog>
+	
+	<dialog id="noah_start_dialog1">
+		<has_info>noah_start_dialog1</has_info>
+		<phrase_list>
+			<phrase id="0">
+				<text>noah_start_dialog1_0</text>
+				<next>1</next>
+			</phrase>
+			<phrase id="1">
+				<text>noah_start_dialog1_1</text>
+				<next>2</next>
+				<next>3</next>
+				<next>4</next>
+				<next>5</next>
+			</phrase>
+			<phrase id="2">
+				<dont_has_info>noah_start_dialog2</dont_has_info>
+				<text>noah_start_dialog1_2</text>
+				<next>7</next>
+			</phrase>
+			<phrase id="7">
+				<text>noah_start_dialog1_7</text>
+				<next>8</next>
+				<next>9</next>
+			</phrase>
+			<phrase id="8">
+				<text>noah_start_dialog1_8</text>
+				<give_info>noah_start_dialog2</give_info>
+			</phrase>
+			<phrase id="9">
+				<text>noah_start_dialog1_9</text>
+				<give_info>noah_start_dialog2</give_info>
+				<give_info>zat_b18_actor_enemy</give_info>
+				<action>dialogs.break_dialog</action>
+			</phrase>
+			<phrase id="3">
+				<dont_has_info>noah_start_dialog3</dont_has_info>
+				<text>noah_start_dialog1_3</text>
+				<next>10</next>
+			</phrase>
+			<phrase id="10">
+				<text>noah_start_dialog1_10</text>
+				<next>11</next>
+			</phrase>
+			<phrase id="11">
+				<text>noah_start_dialog1_11</text>
+				<next>12</next>
+			</phrase>
+			<phrase id="12">
+				<text>noah_start_dialog1_12</text>
+				<next>13</next>
+			</phrase>
+			<phrase id="13">
+				<text>noah_start_dialog1_13</text>
+				<give_info>noah_start_dialog3</give_info>
+			</phrase>
+			<phrase id="4">
+				<dont_has_info>noah_start_dialog4</dont_has_info>
+				<text>noah_start_dialog1_4</text>
+				<next>14</next>
+			</phrase>
+			<phrase id="14">
+				<text>noah_start_dialog1_14</text>
+				<give_info>noah_start_dialog4</give_info>
+			</phrase>
+			<phrase id="5">
+				<text>noah_start_dialog1_5</text>
+			</phrase>
+		</phrase_list>
+	</dialog>
+	
+	<dialog id="tasks_noah_dialog">
+		<has_info>noah_start_dialog3</has_info>
+		<phrase_list>
+			<phrase id="0">
+				<text>tasks_noah_dialog_0</text>
+				<next>1</next>
+			</phrase>
+			<phrase id="1">
+				<text>tasks_noah_dialog_1</text>
+				<next>2</next>
+				<next>3</next>
+				<next>4</next>
+			</phrase>
+			<phrase id="2">
+				<dont_has_info>task_noah_1_dialog</dont_has_info>
+				<text>tasks_noah_dialog_2</text>
+				<next>5</next>
+			</phrase>
+			<phrase id="5">
+				<text>tasks_noah_dialog_5</text>
+				<give_info>task_noah_1_dialog</give_info>
+				<action>dialogs_mlr.give_task_noah_1</action>
+			</phrase>
+			<phrase id="3">
+				<dont_has_info>task_noah_2_dialog</dont_has_info>
+				<text>tasks_noah_dialog_3</text>
+				<next>6</next>
+			</phrase>
+			<phrase id="6">
+				<text>tasks_noah_dialog_6</text>
+				<give_info>task_noah_2_dialog</give_info>
+				<action>dialogs_mlr.give_task_noah_2</action>
+			</phrase>
+			<phrase id="4">
+				<text>tasks_noah_dialog_4</text>
+			</phrase>
+		</phrase_list>
+	</dialog>
+	
+	<dialog id="task_1_noah_done">
+		<precondition>dialogs_mlr.has_wpn_protecta_task_noah_1</precondition>
+		<has_info>task_noah_1_dialog</has_info>
+		<dont_has_info>task_1_noah_done</dont_has_info>
+		<phrase_list>
+			<phrase id="0">
+				<text>task_1_noah_done_0</text>
+				<next>1</next>
+			</phrase>
+			<phrase id="1">
+				<text>task_1_noah_done_1</text>
+				<give_info>task_1_noah_done</give_info>
+				<action>dialogs_mlr.take_wpn_protecta_noah_task_1</action>
+			</phrase>
+		</phrase_list>
+	</dialog>
+	
+	<dialog id="task_2_noah_done">
+		<has_info>task_noah_2_dialog</has_info>
+		<has_info>simulation_snork_task_noah_2_death</has_info>
+		<dont_has_info>task_2_noah_done</dont_has_info>
+		<phrase_list>
+			<phrase id="0">
+				<text>task_2_noah_done_0</text>
+				<next>1</next>
+			</phrase>
+			<phrase id="1">
+				<text>task_2_noah_done_1</text>
+				<give_info>task_2_noah_done</give_info>
+			</phrase>
+		</phrase_list>
+	</dialog>
+
+	<!-- Gonta -->
+	<dialog id="gonta_about_himself">
+        <dont_has_info>gonta_about_himself_lock</dont_has_info>
+        <phrase_list>
+            <phrase id="1">
+                <text>gonta_about_himself_1</text>
+            </phrase>
+            <phrase id="0">
+                <text>gonta_about_himself_0</text>
+                <give_info>gonta_about_himself_lock</give_info>
+                <next>1</next>
+            </phrase>
+        </phrase_list>
+    </dialog>
+	
+    <dialog id="gonta_about_mutants">
+        <has_info>gonta_about_himself_lock</has_info>
+        <phrase_list>
+            <phrase id="1116">
+                <text>gonta_about_mutants_1116</text>
+            </phrase>
+            <phrase id="1114">
+                <text>gonta_about_mutants_1114</text>
+                <next>11141</next>
+            </phrase>
+            <phrase id="11141">
+                <text>gonta_about_mutants_11141</text>
+                <next>11</next>
+            </phrase>
+            <phrase id="1115">
+                <text>gonta_about_mutants_1115</text>
+                <next>11151</next>
+            </phrase>
+            <phrase id="11151">
+                <text>gonta_about_mutants_11151</text>
+                <next>11</next>
+            </phrase>
+            <phrase id="111">
+                <text />
+                <next>1111</next>
+                <next>1112</next>
+                <next>1113</next>
+                <next>1114</next>
+                <next>1115</next>
+                <next>1116</next>
+            </phrase>
+            <phrase id="1111">
+                <text>gonta_about_mutants_1111</text>
+                <next>11111</next>
+            </phrase>
+            <phrase id="11111">
+                <text>gonta_about_mutants_11111</text>
+                <next>11</next>
+            </phrase>
+            <phrase id="1112">
+                <text>gonta_about_mutants_1112</text>
+                <next>11121</next>
+            </phrase>
+            <phrase id="11121">
+                <text>gonta_about_mutants_11121</text>
+                <next>11</next>
+            </phrase>
+            <phrase id="1113">
+                <text>gonta_about_mutants_1113</text>
+                <next>11131</next>
+            </phrase>
+            <phrase id="11131">
+                <text>gonta_about_mutants_11131</text>
+                <next>11</next>
+            </phrase>
+            <phrase id="11">
+                <text />
+                <next>111</next>
+            </phrase>
+            <phrase id="1">
+                <text>gonta_about_mutants_1</text>
+                <next>11</next>
+            </phrase>
+            <phrase id="0">
+                <text>gonta_about_mutants_0</text>
+                <next>1</next>
+            </phrase>
+        </phrase_list>
+    </dialog>
+	
+
+<!-- zat_b22_stalker_medic -->
+    <dialog id="zat_b22_stalker_medic_start">
+        <phrase_list>
+            <phrase id="0">
+                <text>zat_b22_stalker_medic_start_1</text>
+            </phrase>
+        </phrase_list>
+    </dialog>
+
+    <dialog id="zat_a2_stalker_mechanic_util_1">
+        <dont_has_info>zat_a2_stalker_mechanic_util_start</dont_has_info>
+        <phrase_list>
+            <phrase id="1">
+                <text>sad_b2_tech_util_1_1</text>
+                <give_info>zat_a2_stalker_mechanic_util_start</give_info>
+            </phrase>
+            <phrase id="0">
+                <text>sad_b2_tech_util_1_0</text>
+                <next>1</next>
+            </phrase>
+        </phrase_list>
+    </dialog>
+    <dialog id="zat_a2_stalker_mechanic_util_2">
+        <has_info>zat_a2_stalker_mechanic_util_has_money</has_info>
+        <has_info>zat_a2_stalker_mechanic_util_start</has_info>
+        <phrase_list>
+            <phrase id="1">
+                <text>sad_b2_tech_util_2_1</text>
+                <action>dialogs_sad.sad_b2_tech_util_give_money</action>
+                <disable_info>zat_a2_stalker_mechanic_util_has_money</disable_info>
+            </phrase>
+            <phrase id="0">
+                <text>sad_b2_tech_util_2_0</text>
+                <next>1</next>
+            </phrase>
+        </phrase_list>
+    </dialog>
+
+</game_dialogs>

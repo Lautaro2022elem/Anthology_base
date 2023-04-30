@@ -1,0 +1,231 @@
+;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
+;;;;;;;;;;;;;;;;;;;;;;;СЮЖЕТНЫЕ КВЕСТЫ;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
+;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
+
+[bar_cover_surget] ;укрыться от выброса
+icon = ui_inGame2_Vibros
+prior = 2
+storyline = true
+title = {+bar_cover_surget_wait}bar_cover_surget_part_2_title, bar_cover_surget_title
+descr = {+bar_cover_surget_wait}bar_cover_surget_part_2_descr, bar_cover_surget_descr
+target = {+bar_cover_surget_wait}bar_borland_start, bar_cover_suget_target
+condlist_0 = {+bar_cover_surget_complete} complete
+condlist_1 = {+bar_cover_surget_fail} fail
+
+
+[bar_first_talk_barmen] ; поговорить с Барменом
+icon = ui_iconsTotal_storyline
+prior = 3
+storyline = true
+title = bar_first_talk_barmen_title
+descr = bar_first_talk_barmen_descr
+target = bar_npc_barman
+condlist_0 = {+bar_first_talk_barmen_complete} complete
+condlist_1 = {+bar_first_talk_barmen_fail} fail
+
+
+[bar_new_details] ; Новые подробности
+icon = ui_iconsTotal_storyline
+prior = 4
+storyline = true
+title = {+bar_new_details_barland_dialog_open}bar_new_details_part_2_title, bar_new_details_title
+descr = {+bar_new_details_barland_dialog_open}bar_new_details_part_2_descr, bar_new_details_descr
+target = {+bar_new_details_barland_dialog_open}bar_borland_bar, bar_npc_barman
+condlist_0 = {+bar_new_details_complete} complete
+
+
+[bar_expectation] ; Ожидание
+icon = ui_inGame2_bar_expectation
+prior = 5
+storyline = true
+title = {+bar_expectation_barmen_open}bar_expectation_part_2_title, bar_expectation_title
+descr = {+bar_expectation_barmen_open}bar_expectation_part_2_descr, bar_expectation_descr
+target = {+bar_expectation_barmen_open}bar_npc_barman, nil
+condlist_0 = {+bar_expectation_complete} complete
+
+
+[bar_cooperation] ; Сотрудничество
+icon = ui_iconsTotal_quest_trifling_matter
+prior = 7
+storyline = true
+title = {+bar_dangerous_duty_dialog}bar_cooperation_part_3_title, {+bar_dangerous_duty_start}bar_cooperation_part_2_title, bar_cooperation_title
+descr = {+bar_dangerous_duty_dialog}bar_cooperation_part_3_descr, {+bar_dangerous_duty_start}bar_cooperation_part_2_descr, bar_cooperation_descr
+target = {+bar_dangerous_duty_dialog}bar_npc_barman, {+bar_dangerous_duty_start}nil, bar_npc_voronin
+condlist_0 = {+bar_cooperation_complete} complete
+
+
+[bar_dangerous_duty] ; Опасное дежурство
+icon = ui_inGame2_Ohrana_uchenih
+prior = 10
+storyline = true
+title = {+bar_npc_dolg_general_dangerous_duty_start}bar_dangerous_duty_part_3_title, {+bar_dangerous_duty_time}bar_dangerous_duty_part_2_title, bar_dangerous_duty_part_1_title
+descr = {+bar_npc_dolg_general_dangerous_duty_start}bar_dangerous_duty_part_3_descr, {+bar_dangerous_duty_time}bar_dangerous_duty_part_2_descr, bar_dangerous_duty_part_1_descr
+target = {+bar_npc_dolg_general_dangerous_duty_start}bar_sr_dangerous_duty, {+bar_dangerous_duty_time}bar_npc_dolg_general_dangerous_duty, nil
+condlist_0 = {+bar_dangerous_duty_complete} complete
+condlist_1 = {+bar_dangerous_duty_fail} fail
+
+
+[bar_house_in_the_swamp] ; Дом на болоте
+icon = ui_inGame2_bar_house_in_the_swamp
+prior = 12
+storyline = true
+title = {+bar_house_in_the_swamp_death}bar_house_in_the_swamp_5_title, {+bar_npc_otshelnik_dialog_fair}bar_house_in_the_swamp_4_title, {+bar_npc_otshelnik_dialog_start}bar_house_in_the_swamp_3_title, {+bar_house_in_the_swamp_dialog}bar_house_in_the_swamp_2_title, bar_house_in_the_swamp_1_title
+descr = {+bar_house_in_the_swamp_death}bar_house_in_the_swamp_5_descr, {+bar_npc_otshelnik_dialog_fair}bar_house_in_the_swamp_4_descr, {+bar_npc_otshelnik_dialog_start}bar_house_in_the_swamp_3_descr, {+bar_house_in_the_swamp_dialog}bar_house_in_the_swamp_2_descr, bar_house_in_the_swamp_1_descr
+target = {+bar_npc_otshelnik_dialog_fair}bar_npc_otshelnik, {+bar_npc_otshelnik_dialog_start}bar_sr_house_in_the_swamp_art, {+bar_house_in_the_swamp_dialog}bar_npc_otshelnik, bar_sr_house_in_the_swamp_control
+condlist_0 = {=actor_has_item(bar_key_door)} complete %+bar_laba_open_door_info =give_task(bar_walker_lab)%
+
+
+[bar_walker_lab] ; Спуск в Лабораторию
+icon = ui_inGame2_Put_v_pripyat
+prior = 15
+storyline = true
+title = bar_walker_lab_title
+descr = bar_walker_lab_descr
+target = bar_to_labx14
+condlist_0 = {+bar_walker_lab_complete} complete
+
+
+
+;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
+
+
+[bar_arena_kostolom_first_talk] ;Поговорить с Костоломом о боях
+icon = ui_iconsTotal_storyline
+prior = 2
+storyline = false
+title = bar_arena_kostolom_first_talk_title
+descr = bar_arena_kostolom_first_talk_descr
+target = bar_npc_kostolom_arena
+condlist_0 = {+bar_arena_kostolom_first_talk} complete
+condlist_1 = {+bar_quest_failed} fail
+
+[bar_arena_kostolom_after_fight] ;Поговорить с Костоломом после боя
+icon = ui_iconsTotal_storyline
+prior = 2
+storyline = false
+title = bar_arena_kostolom_after_fight_title
+descr = bar_arena_kostolom_after_fight_descr
+target = bar_npc_kostolom_arena
+condlist_0 = {+talk_kostolom_about_inventory} complete
+condlist_1 = {+bar_quest_failed} fail
+
+[bar_arena_goto_arena] ;Выйти на арену
+icon = ui_iconsTotal_storyline
+prior = 2
+storyline = false
+title = bar_arena_goto_arena_title
+descr = bar_arena_goto_arena_descr
+target = arena_start_sr
+condlist_0 = {+bar_arena_goto_arena_complete} complete
+condlist_1 = {+bar_quest_failed} fail
+
+[bar_arena_friend_naim] ;Договориться с напарником
+icon = ui_iconsTotal_storyline
+prior = 2
+storyline = false
+title = bar_arena_friend_naim_title
+descr = bar_arena_friend_naim_descr
+target = bar_npc_friend_1_arena
+condlist_0 = {+bar_arena_friend_on} complete
+condlist_1 = {+bar_quest_failed} fail
+
+[bar_arena_bodyguard_naim] ;Договориться с охраняемым
+icon = ui_iconsTotal_storyline
+prior = 2
+storyline = false
+title = bar_arena_bodyguard_naim_title
+descr = bar_arena_bodyguard_naim_descr
+target = bar_npc_bodyguard_1_arena
+condlist_0 = {+bar_arena_bodyguard_on} complete
+condlist_1 = {+bar_quest_failed} fail
+
+[bar_arena_inventory_take] ;Забрать инвентарь
+icon = ui_iconsTotal_storyline
+prior = 2
+storyline = false
+title = bar_arena_inventory_take_title
+descr = bar_arena_inventory_take_descr
+target = east bar_arena_inventory_box
+condlist_0 = {+arena_inventory_box_used} complete
+condlist_1 = {+bar_quest_failed} fail
+
+[bar_arena_reward_take] ;Получить награду
+icon = ui_iconsTotal_storyline
+prior = 2
+storyline = false
+title = bar_arena_reward_take_title
+descr = bar_arena_reward_take_descr
+target = bar_npc_logoped_arena
+condlist_0 = {+arena_reward_taken} complete
+condlist_1 = {+bar_quest_failed} fail
+
+------------------------------------------------------------------------------------------------------------------------------------------
+[geonezis_bar_azot_dop_quest_0] 
+icon = ui_iconsTotal_storyline
+prior = 2
+storyline = false
+title =  {+mar_ach_radiobattle_all_info} bar_azot_dop_quest_0_title1, {-mar_ach_radiobattle_all_info} bar_azot_dop_quest_0_title0
+descr = {+mar_ach_radiobattle_all_info} bar_azot_dop_quest_0_text1, {-mar_ach_radiobattle_all_info} bar_azot_dop_quest_0_text0
+target = {+mar_ach_radiobattle_all_info} bar_npc_dolg_mechanic, {-mar_ach_radiobattle_all_info} bar_npc_dolg_svayzist
+condlist_0 = {+bar_a2_azot_quest_0_talking_2} complete
+condlist_1 = {+bar_quest_failed} fail
+
+[geonezis_bar_azot_dop_quest_1] 
+icon = ui_iconsTotal_storyline
+prior = 2
+storyline = false
+title = {+bar_a2_killer_azot_all_death} bar_azot_dop_quest_1_title4, {+bar_a2_azot_quest_1_restr_3_used -bar_a2_killer_azot_all_death} bar_azot_dop_quest_1_title3, {+bar_a2_azot_quest_1_restr_2_used -bar_a2_azot_quest_1_restr_3_used} bar_azot_dop_quest_1_title2, {+bar_a2_azot_quest_1_restr_1_used -bar_a2_azot_quest_1_restr_2_used} bar_azot_dop_quest_1_title1, {-bar_a2_azot_quest_1_restr_1_used} bar_azot_dop_quest_1_title0
+descr = {+bar_a2_killer_azot_all_death} bar_azot_dop_quest_1_text4, {+bar_a2_azot_quest_1_restr_3_used -bar_a2_killer_azot_all_death} bar_azot_dop_quest_1_text3, {+bar_a2_azot_quest_1_restr_2_used -bar_a2_azot_quest_1_restr_3_used} bar_azot_dop_quest_1_text2, {+bar_a2_azot_quest_1_restr_1_used -bar_a2_azot_quest_1_restr_2_used} bar_azot_dop_quest_1_text1, {-bar_a2_azot_quest_1_restr_1_used} bar_azot_dop_quest_1_text0
+target = {+bar_a2_killer_azot_all_death} bar_npc_dolg_mechanic, {+bar_a2_azot_quest_1_restr_3_used -bar_a2_killer_azot_all_death} nil, {+bar_a2_azot_quest_1_restr_2_used -bar_a2_azot_quest_1_restr_3_used} bar_a2_azot_quest_1_restr_3_id, {+bar_a2_azot_quest_1_restr_1_used -bar_a2_azot_quest_1_restr_2_used} bar_a2_azot_quest_1_restr_2_id, {-bar_a2_azot_quest_1_restr_1_used} bar_a2_azot_quest_1_restr_1_id
+condlist_0 = {+bar_a2_azot_quest_1_talking_2} complete
+condlist_1 = {+bar_quest_failed} fail
+
+[geonezis_bar_azot_dop_quest_2] 
+icon = ui_iconsTotal_storyline
+prior = 2
+storyline = false
+title = {+bar_a2_azot_quest_2_restr_2_used} bar_azot_dop_quest_2_title5, {+bar_b2_dop_quest_2_point_2_come -bar_a2_azot_quest_2_restr_2_used} bar_azot_dop_quest_2_title4, {+bar_a2_azot_quest_2_restr_1_used -bar_b2_dop_quest_2_point_2_come} bar_azot_dop_quest_2_title3, {+bar_b2_dop_quest_2_point_1_come -bar_a2_azot_quest_2_restr_1_used} bar_azot_dop_quest_2_title2, {+bar_a2_azot_quest_2_talking_2 -bar_b2_dop_quest_2_point_1_come} bar_azot_dop_quest_2_title1, {-bar_a2_azot_quest_2_talking_2} bar_azot_dop_quest_2_title0
+descr = {+bar_a2_azot_quest_2_restr_2_used} bar_azot_dop_quest_2_text5, {+bar_b2_dop_quest_2_point_2_come -bar_a2_azot_quest_2_restr_2_used} bar_azot_dop_quest_2_text4, {+bar_a2_azot_quest_2_restr_1_used -bar_b2_dop_quest_2_point_2_come} bar_azot_dop_quest_2_text3, {+bar_b2_dop_quest_2_point_1_come -bar_a2_azot_quest_2_restr_1_used} bar_azot_dop_quest_2_text2, {+bar_a2_azot_quest_2_talking_2 -bar_b2_dop_quest_2_point_1_come} bar_azot_dop_quest_2_text1, {-bar_a2_azot_quest_2_talking_2} bar_azot_dop_quest_2_text0
+target = {+bar_a2_azot_quest_2_restr_2_used} bar_npc_nimble, {+bar_b2_dop_quest_2_point_2_come -bar_a2_azot_quest_2_restr_2_used} nil, {+bar_a2_azot_quest_2_restr_1_used -bar_b2_dop_quest_2_point_2_come} bar_a2_azot_quest_2_restr_2_id, {+bar_b2_dop_quest_2_point_1_come -bar_a2_azot_quest_2_restr_1_used} nil, {+bar_a2_azot_quest_2_talking_2 -bar_b2_dop_quest_2_point_1_come} bar_a2_azot_quest_2_restr_1_id, {-bar_a2_azot_quest_2_talking_2} bar_npc_nimble
+condlist_0 = {+bar_a2_azot_quest_2_talking_3} complete
+condlist_1 = {+bar_quest_failed} fail
+
+[geonezis_bar_azot_dop_quest_3] 
+icon = ui_iconsTotal_storyline
+prior = 2
+storyline = false
+title =  {+bar_a2_spec_juk_item_have_unnown} bar_azot_dop_quest_3_title3, {+bar_a2_azot_quest_3_talking_3 -bar_a2_spec_juk_item_have_unnown} bar_azot_dop_quest_3_title2, {+bar_a2_azot_quest_3_talking_2 -bar_a2_azot_quest_3_talking_3} bar_azot_dop_quest_3_title1, {-bar_a2_azot_quest_3_talking_2} bar_azot_dop_quest_3_title0
+descr =  {+bar_a2_spec_juk_item_have_unnown} bar_azot_dop_quest_3_text3, {+bar_a2_azot_quest_3_talking_3 -bar_a2_spec_juk_item_have_unnown} bar_azot_dop_quest_3_text2, {+bar_a2_azot_quest_3_talking_2 -bar_a2_azot_quest_3_talking_3} bar_azot_dop_quest_3_text1, {-bar_a2_azot_quest_3_talking_2} bar_azot_dop_quest_3_text0
+target = {+bar_a2_spec_juk_item_have_unnown} bar_npc_nimble, {+bar_a2_azot_quest_3_talking_3 -bar_a2_spec_juk_item_have_unnown} nil, {+bar_a2_azot_quest_3_talking_2 -bar_a2_azot_quest_3_talking_3} bar_npc_dolg_mechanic, {-bar_a2_azot_quest_3_talking_2} bar_npc_dolg_trader
+condlist_0 = {+bar_a2_azot_quest_3_talking_4} complete
+condlist_1 = {+bar_quest_failed} fail
+
+[geonezis_bar_azot_dop_quest_4] 
+icon = ui_iconsTotal_storyline
+prior = 2
+storyline = false
+title =  {+bar_a2_dop_quest_4_talking_all_npc} bar_azot_dop_quest_4_title1, {-bar_a2_dop_quest_4_talking_all_npc} bar_azot_dop_quest_4_title0
+descr =  {+bar_a2_dop_quest_4_talking_all_npc} bar_azot_dop_quest_4_text1, {-bar_a2_dop_quest_4_talking_all_npc} bar_azot_dop_quest_4_text0
+target = {+bar_a2_dop_quest_4_talking_all_npc} bar_a2_azot_quest_4_restr_1_id, {-bar_a2_dop_quest_4_talking_all_npc} nil
+condlist_0 = {+bar_a2_dop_quest_spectr_used} complete
+condlist_1 = {+bar_quest_failed} fail
+
+[geonezis_bar_azot_dop_quest_4_1] 
+icon = ui_iconsTotal_storyline
+prior = 2
+storyline = false
+title =  {+bar_a2_dop_quest_npc1_all_killed} bar_azot_dop_quest_4_1_title1, {-bar_a2_dop_quest_npc1_all_killed} bar_azot_dop_quest_4_1_title0
+descr =  {+bar_a2_dop_quest_npc1_all_killed} bar_azot_dop_quest_4_1_text1, {-bar_a2_dop_quest_npc1_all_killed} bar_azot_dop_quest_4_1_text0
+target = {+bar_a2_dop_quest_npc1_all_killed} bar_npc_dolg_mechanic, {-bar_a2_dop_quest_npc1_all_killed} gar_a2_bandit_enemy_1
+condlist_0 = {+bar_a2_dop_quest_4_talking_2} complete
+condlist_1 = {+bar_quest_failed} fail
+
+[geonezis_bar_azot_dop_quest_4_2] 
+icon = ui_iconsTotal_storyline
+prior = 2
+storyline = false
+title =  {+bar_a2_dop_quest_npc2_all_killed} bar_azot_dop_quest_4_2_title1, {-bar_a2_dop_quest_npc2_all_killed} bar_azot_dop_quest_4_2_title0
+descr =  {+bar_a2_dop_quest_npc2_all_killed} bar_azot_dop_quest_4_2_text1, {-bar_a2_dop_quest_npc2_all_killed} bar_azot_dop_quest_4_2_text0
+target = {+bar_a2_dop_quest_npc2_all_killed} bar_npc_dolg_mechanic, {-bar_a2_dop_quest_npc2_all_killed} gar_b2_bandit_enemy_1
+condlist_0 = {+bar_a2_dop_quest_4_talking_2} complete
+condlist_1 = {+bar_quest_failed} fail

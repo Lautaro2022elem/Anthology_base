@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="windows-1251" ?>
+<string_table>
+
+	<string id="gar_start_quest_title">
+		<text>Выбраться из подземелья</text>
+	</string>
+	<string id="gar_start_quest_text">
+		<text>Найти Борланда</text>
+	</string>
+
+
+	<string id="gar_main_quest_title0">
+		<text>Закрытый перевал: поговори с командиром заставы</text>
+	</string>
+	<string id="gar_main_quest_text0">
+		<text>Борланд у долговцев. Выясни у них что случилось и что им нужно.</text>
+	</string>
+	<string id="gar_main_quest_title1">
+		<text>Закрытый перевал: поговори с Борландом.</text>
+	</string>
+	<string id="gar_main_quest_text1">
+		<text>Необходимо подойти к Борланду и перекинуться парой слов.</text>
+	</string>
+	<string id="gar_main_quest_title2">
+		<text>Закрытый перевал: отыщите вход в укрытие диггеров.</text>
+	</string>
+	<string id="gar_main_quest_text2">
+		<text>Необходимо обследовать обозначенную местность вокруг холма и найти вход-контейнер. Надите там информацию о пропавшем диггера и антидоты.</text>
+	</string>
+	<string id="gar_main_quest_title2_2">
+		<text>Закрытый перевал: обыскать территорию</text>
+	</string>
+	<string id="gar_main_quest_text2_2">
+		<text>Надите в тайнике информацию о пропавшем диггера и антидоты для себя и Борланда.</text>
+	</string>
+	
+	<string id="gar_main_quest_title3">
+		<text>Закрытый перевал: выбраться наружу.</text>
+	</string>
+	<string id="gar_main_quest_text3">
+		<text>Необходимо вернуться к Борланду и дать ему противоядие.</text>
+	</string>
+	
+	
+	<string id="gar_main_quest_title3_3">
+		<text>Закрытый перевал: засада</text>
+	</string>
+	<string id="gar_main_quest_text3_3">
+		<text>Сражаться или бежать...</text>
+	</string>
+	
+	
+	<string id="gar_main_quest_title4">
+		<text>Закрытый перевал: вернитесь к Борланду.</text>
+	</string>
+	<string id="gar_main_quest_text4">
+		<text>Необходимо вернуться к Борланду в указанный промежуток времени и принести ему противоядие.</text>
+	</string>
+	<string id="gar_main_quest_title5">
+		<text>Закрытый перевал: поговорите с Багрецовым.</text>
+	</string>
+	<string id="gar_main_quest_text5">
+		<text>Долговский командир должен сообщить вам что-то важное. Следуйте к нему.</text>
+	</string>
+	<string id="gar_main_quest_title6">
+		<text>Закрытый перевал: добраться до Бара.</text>
+	</string>
+	<string id="gar_main_quest_text6">
+		<text>Следуйте в Бар.</text>
+	</string>	
+</string_table>

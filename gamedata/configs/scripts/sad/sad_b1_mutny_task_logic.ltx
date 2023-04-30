@@ -1,0 +1,27 @@
+[logic]
+active = sr_idle@10
+
+[sr_idle@10]
+on_info = {+sad_actor_mutny_enemy} sr_idle@nil %+sad_vasya_start_fight%, {+sad_b1_mutny_flesh_task_complete} sr_idle@nil
+on_info2 = {+sad_b1_mutny_flesh_task_given} sr_idle@20 %=give_task(sad_b1_mutny_flesh_task)%
+on_info3 = {+sad_b2_maxim_meeted} sr_idle@23, {+sad_maxim_actor_enemy} sr_idle@23, {+sad_b3_killers_awake} sr_idle@23
+on_info4 = {=actor_has_item(sad_fedor_flesh)} %+sad_b1_mutny_flesh_have% , %-sad_b1_mutny_flesh_have%
+
+[sr_idle@20]
+on_info = {+sad_actor_mutny_enemy} sr_idle@24, {+sad_b1_mutny_flesh_task_complete} sr_idle@nil
+on_info2 = {+sad_b2_maxim_meeted} sr_idle@21, {+sad_maxim_actor_enemy} sr_idle@21
+on_info3 = {=actor_has_item(sad_fedor_flesh)} %+sad_b1_mutny_flesh_have% , %-sad_b1_mutny_flesh_have%
+
+[sr_idle@21]
+on_timer = 5000 | {+sad_vasya_dead} sr_idle@nil, sr_idle@22
+
+[sr_idle@22]
+on_info = {!talking} sr_idle@23
+
+[sr_idle@23]
+on_timer = 5000 | {+sad_b1_mutny_flesh_task_given} sr_idle@24 %+sad_b1_mutny_flesh_task_fail =send_tip(sad_b1_mutny_task_fail:sad_b1_stalker_mutny)%, sr_idle@24 %+sad_b1_mutny_flesh_task_fail%
+
+[sr_idle@24]
+on_info = {=squad_exist(sad_sim_2_stalker_vasya_squad)} sr_idle@nil %+sad_vasya_dead =remove_squad(sad_sim_2_stalker_vasya_squad)%, sr_idle@nil %+sad_vasya_dead%
+
+[sr_idle@nil]

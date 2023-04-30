@@ -1,0 +1,20 @@
+[logic]
+active = sr_idle@raven_sends_sms_from_actor_info
+
+[sr_idle@raven_sends_sms_from_actor_info]
+on_info = {+esc_koordinator_quest_line_dialog_done -esc_grif_first_meet_complete} sr_idle@raven_sends_sms_from_actor_info_1 %=esc_dop_action_first_fail +esc_grif_first_meet_complete%
+on_info2 = {+esc_koordinator_quest_line_dialog_done +esc_grif_first_meet_complete} sr_idle@raven_sends_sms_from_actor_info_1
+
+[sr_idle@raven_sends_sms_from_actor_info_1]
+on_info = {+esc_chain_of_events_quest_complete} sr_idle@raven_sends_sms_from_actor
+
+[sr_idle@raven_sends_sms_from_actor]
+on_timer = 5000 | sr_idle@raven_give_quest_from_actor %=esc_raven_final_sends_sms =spawn_object(esc_killer_mrakobes:esc_quest_killer_mrakobes_walk)%
+
+[sr_idle@raven_give_quest_from_actor]
+on_timer = 4000 | sr_idle@security_in_atp %=give_task(esc_final_talk_in_escape)%
+
+[sr_idle@security_in_atp]
+on_info = {+esc_killer_atp_adm_spawn +esc_killer_atp_dvor_td_spawn +esc_killer_atp_dvor_left_spawn +esc_killer_atp_dvor_right_spawn -esc_killer_atp_all_spawn} sr_idle@nil %+esc_killer_atp_all_spawn%
+
+[sr_idle@nil]

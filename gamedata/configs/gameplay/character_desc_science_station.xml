@@ -1,0 +1,68 @@
+<?xml version='1.0' encoding="windows-1251"?>
+
+<xml>
+
+<!-------------------------------------------------->
+    <specific_character id="yan_sci_bunker_scientists" team_default = "1">
+    <name>yan_sci_bunker_scientists_name</name>
+    <icon>ui_inGame2_ecolog_white</icon>
+    <map_icon x="1" y="0">
+    </map_icon>
+    <bio>ќпытный сталкер. ?етальна¤ информаци¤ отсутствует.</bio>
+    <class>yan_sci_bunker_scientists</class>
+    <community>ecolog</community>
+    <terrain_sect>stalker_terrain</terrain_sect>
+    <snd_config>characters_voice\human\ecolog_3\</snd_config>
+    <rank>136</rank>
+    <reputation>2314</reputation>
+    <visual>actors\stalker_ecologist\stalker_ecolog_white</visual>
+    <supplies>
+		[spawn] \n
+		wpn_sig550 = 1 \n
+		ammo_5.56x45_ap = 1 \n
+		wpn_sig220 \n
+		ammo_11.43x23_fmj = 1 \n
+#include "gameplay\supplies\character_items.xml"
+#include "gameplay\supplies\character_food.xml"
+#include "gameplay\supplies\character_drugs.xml"
+    </supplies>
+		<actor_dialog>dm_init_trader</actor_dialog>
+	     <actor_dialog>dm_ordered_task_dialog</actor_dialog>
+	     <actor_dialog>dm_ordered_task_completed_dialog</actor_dialog>
+		<actor_dialog>actor_break_dialog</actor_dialog>
+                 #include "gameplay\character_criticals.xml"
+                 #include "gameplay\character_dialogs.xml"
+</specific_character>
+
+	
+<!-------------------------------------------------->
+    <specific_character id="yan_sci_bunker_breeder" team_default = "1">
+    <name>yan_sci_bunker_breeder_name</name>
+    <icon>ui_inGame2_ecolog_blue</icon>
+    <map_icon x="1" y="0">
+    </map_icon>
+    <bio>ќпытный сталкер. ?етальна¤ информаци¤ отсутствует.</bio>
+    <class>yan_sci_bunker_breeder</class>
+    <community>ecolog</community>
+    <terrain_sect>stalker_terrain</terrain_sect>
+    <snd_config>characters_voice\human\ecolog_3\</snd_config>
+    <rank>136</rank>
+    <reputation>2314</reputation>
+    <visual>actors\stalker_ecologist\stalker_ecolog_blue</visual>
+    <supplies>
+		[spawn] \n
+		wpn_sig550 = 1 \n
+		ammo_5.56x45_ap = 1 \n
+		wpn_sig220 \n
+		ammo_11.43x23_fmj = 1 \n
+#include "gameplay\supplies\character_items.xml"
+#include "gameplay\supplies\character_food.xml"
+#include "gameplay\supplies\character_drugs.xml"
+    </supplies>
+		<start_dialog>pri_army_breeder_af_work_dialog</start_dialog>		
+		<actor_dialog>actor_break_dialog</actor_dialog>
+                 #include "gameplay\character_criticals.xml"
+                 #include "gameplay\character_dialogs.xml"
+</specific_character>
+
+</xml>

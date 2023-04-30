@@ -1,0 +1,34 @@
+[logic]
+active = sr_idle@scene_teleport_to_hutor
+
+[sr_idle@scene_teleport_to_hutor]
+on_info = {+blck_val_dialog_actor_go_to_hutor} sr_idle@teleport_actor %=RavenMemmoryStart =run_postprocess(black:2525:true) +blck_val_provodnik_teleport_to_hutor_again -blck_val_dialog_actor_go_to_shcool -blck_val_provodnik_teleport_to_shcool%
+
+[sr_idle@teleport_actor]
+on_timer = 2000 | sr_idle@stop_postprocess %=teleport_actor(actor_from_provodnik_in_hutor_walk:actor_from_provodnik_in_hutor_look)%
+
+[sr_idle@stop_postprocess]
+on_timer = 2000 | sr_idle@enable_ui %=stop_postprocess(2525)%
+
+[sr_idle@enable_ui]
+on_timer = 100 | sr_idle@give_info %=enable_ui%
+
+[sr_idle@give_info]
+on_timer = 100 | sr_idle@scene_teleport_to_shcool
+
+[sr_idle@scene_teleport_to_shcool]
+on_info = {+blck_val_dialog_actor_go_to_shcool} sr_idle@teleport_actor_shcool %=RavenMemmoryStart =run_postprocess(black:2525:true) +blck_val_provodnik_teleport_to_shcool -blck_val_dialog_actor_go_to_hutor -blck_val_provodnik_teleport_to_hutor_again%
+
+[sr_idle@teleport_actor_shcool]
+on_timer = 2000 | sr_idle@stop_postprocess_shcool %=teleport_actor(actor_from_provodnik_in_shcool_walk:actor_from_provodnik_in_shcool_look)%
+
+[sr_idle@stop_postprocess_shcool]
+on_timer = 2000 | sr_idle@enable_ui_shcool %=stop_postprocess(2525)%
+
+[sr_idle@enable_ui_shcool]
+on_timer = 100 | sr_idle@give_info_shcool %=enable_ui%
+
+[sr_idle@give_info_shcool]
+on_timer = 100 | sr_idle@scene_teleport_to_hutor
+
+[sr_idle@nil]

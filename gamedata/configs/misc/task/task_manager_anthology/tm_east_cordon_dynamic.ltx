@@ -1,0 +1,189 @@
+;------------------------------------------------
+; Furgon (Loner Mechanic) Find Level 1 Toolkit Task-
+
+[esc_mechanic_furgon_task_1]
+
+icon = ui_inGame2_Instrumenti
+storyline = false
+prior = 15
+precondition = {-esc_mechanic_furgon_upgrade_tier_1} true, false
+
+title = esc_mechanic_furgon_task_1_name
+title_functor = general_fetch_task
+descr = esc_mechanic_furgon_task_1_text
+descr_functor = general_fetch_task
+job_descr = esc_mechanic_furgon_task_1_about
+fetch_descr = esc_mechanic_furgon_task_1_fetch_about
+task_complete_descr = esc_mechanic_furgon_task_1_fetch_finish
+
+stage_complete = 1
+target_functor = general_fetch_task
+status_functor = actor_has_fetch_item
+condlist_0 = {!task_giver_alive(esc_mechanic_furgon_task_1)} fail
+
+fetch_func = %=setup_generic_fetch_task(esc_mechanic_furgon_task_1_fetch:1:itm_basickit)%
+on_complete = %=complete_task_inc_goodwill(50:stalker) =fetch_reward_and_remove(esc_mechanic_furgon_task_1_fetch) =inc_task_stage(esc_mechanic_furgon_task_1) +esc_mechanic_furgon_upgrade_tier_1 =drx_sl_unregister_task_giver(esc_mechanic_furgon_task_1)%
+on_fail = %=fail_task_dec_goodwill(25:stalker) =drx_sl_unregister_task_giver(esc_mechanic_furgon_task_1)%
+
+;------------------------------------------------
+; Furgon (Loner Mechanic) Find Level 2 Toolkit Task-
+
+[esc_mechanic_furgon_task_2]
+
+icon = ui_inGame2_Instrumenti
+storyline = false
+prior = 16
+precondition = {+esc_mechanic_furgon_upgrade_tier_1 -esc_mechanic_furgon_upgrade_tier_2} true, false
+
+title = esc_mechanic_furgon_task_2_name
+title_functor = general_fetch_task
+descr = esc_mechanic_furgon_task_2_text
+descr_functor = general_fetch_task
+job_descr = esc_mechanic_furgon_task_2_about
+fetch_descr = esc_mechanic_furgon_task_2_fetch_about
+task_complete_descr = esc_mechanic_furgon_task_2_fetch_finish
+
+stage_complete = 1
+target_functor = general_fetch_task
+status_functor = actor_has_fetch_item
+condlist_0 = {!task_giver_alive(esc_mechanic_furgon_task_2)} fail
+
+fetch_func = %=setup_generic_fetch_task(esc_mechanic_furgon_task_2_fetch:1:itm_advancedkit)%
+on_complete = %=complete_task_inc_goodwill(50:stalker) =fetch_reward_and_remove(esc_mechanic_furgon_task_2_fetch) =inc_task_stage(esc_mechanic_furgon_task_2) +esc_mechanic_furgon_upgrade_tier_2 =drx_sl_unregister_task_giver(esc_mechanic_furgon_task_2)%
+on_fail = %=fail_task_dec_goodwill(25:stalker) =drx_sl_unregister_task_giver(esc_mechanic_furgon_task_2)%
+
+;------------------------------------------------
+; Furgon (Loner Mechanic) Find Level 3 Toolkit Task-
+
+[esc_mechanic_furgon_task_3]
+
+icon = ui_inGame2_Instrumenti
+storyline = false
+prior = 17
+precondition = {+esc_mechanic_furgon_upgrade_tier_2 -esc_mechanic_furgon_upgrade_tier_3} true, false
+
+title = esc_mechanic_furgon_task_3_name
+title_functor = general_fetch_task
+descr = esc_mechanic_furgon_task_3_text
+descr_functor = general_fetch_task
+job_descr = esc_mechanic_furgon_task_3_about
+fetch_descr = esc_mechanic_furgon_task_3_fetch_about
+task_complete_descr = esc_mechanic_furgon_task_3_fetch_finish
+
+stage_complete = 1
+target_functor = general_fetch_task
+status_functor = actor_has_fetch_item
+condlist_0 = {!task_giver_alive(esc_mechanic_furgon_task_3)} fail
+
+fetch_func = %=setup_generic_fetch_task(esc_mechanic_furgon_task_3_fetch:1:itm_expertkit)%
+on_complete = %=complete_task_inc_goodwill(50:stalker) =fetch_reward_and_remove(esc_mechanic_furgon_task_3_fetch) =inc_task_stage(esc_mechanic_furgon_task_3) +esc_mechanic_furgon_upgrade_tier_3 =drx_sl_unregister_task_giver(esc_mechanic_furgon_task_3)%
+on_fail = %=fail_task_dec_goodwill(25:stalker) =drx_sl_unregister_task_giver(esc_mechanic_furgon_task_3)%
+
+
+;------------------------------------------------
+; Barkas (Loner Mechanic) Find Level 1 Toolkit Task-
+
+[esc_mechanic_barkas_task_1]
+
+icon = ui_inGame2_Instrumenti
+storyline = false
+prior = 15
+precondition = {-esc_mechanic_barkas_upgrade_tier_1} true, false
+
+title = esc_mechanic_barkas_task_1_name
+title_functor = general_fetch_task
+descr = esc_mechanic_barkas_task_1_text
+descr_functor = general_fetch_task
+job_descr = esc_mechanic_barkas_task_1_about
+fetch_descr = esc_mechanic_barkas_task_1_fetch_about
+task_complete_descr = esc_mechanic_barkas_task_1_fetch_finish
+
+stage_complete = 1
+target_functor = general_fetch_task
+status_functor = actor_has_fetch_item
+condlist_0 = {!task_giver_alive(esc_mechanic_barkas_task_1)} fail
+
+fetch_func = %=setup_generic_fetch_task(esc_mechanic_barkas_task_1_fetch:1:itm_basickit)%
+on_complete = %=complete_task_inc_goodwill(50:stalker) =fetch_reward_and_remove(esc_mechanic_barkas_task_1_fetch) =inc_task_stage(esc_mechanic_barkas_task_1) +esc_mechanic_barkas_upgrade_tier_1 =drx_sl_unregister_task_giver(esc_mechanic_barkas_task_1)%
+on_fail = %=fail_task_dec_goodwill(25:stalker) =drx_sl_unregister_task_giver(esc_mechanic_barkas_task_1)%
+
+;------------------------------------------------
+; Barkas (Loner Mechanic) Find Level 2 Toolkit Task-
+
+[esc_mechanic_barkas_task_2]
+
+icon = ui_inGame2_Instrumenti
+storyline = false
+prior = 16
+precondition = {+esc_mechanic_barkas_upgrade_tier_1 -esc_mechanic_barkas_upgrade_tier_2} true, false
+
+title = esc_mechanic_barkas_task_2_name
+title_functor = general_fetch_task
+descr = esc_mechanic_barkas_task_2_text
+descr_functor = general_fetch_task
+job_descr = esc_mechanic_barkas_task_2_about
+fetch_descr = esc_mechanic_barkas_task_2_fetch_about
+task_complete_descr = esc_mechanic_barkas_task_2_fetch_finish
+
+stage_complete = 1
+target_functor = general_fetch_task
+status_functor = actor_has_fetch_item
+condlist_0 = {!task_giver_alive(esc_mechanic_barkas_task_2)} fail
+
+fetch_func = %=setup_generic_fetch_task(esc_mechanic_barkas_task_2_fetch:1:itm_advancedkit)%
+on_complete = %=complete_task_inc_goodwill(50:stalker) =fetch_reward_and_remove(esc_mechanic_barkas_task_2_fetch) =inc_task_stage(esc_mechanic_barkas_task_2) +esc_mechanic_barkas_upgrade_tier_2 =drx_sl_unregister_task_giver(esc_mechanic_barkas_task_2)%
+on_fail = %=fail_task_dec_goodwill(25:stalker) =drx_sl_unregister_task_giver(esc_mechanic_barkas_task_2)%
+
+;------------------------------------------------
+; Barkas (Loner Mechanic) Find Level 3 Toolkit Task-
+
+[esc_mechanic_barkas_task_3]
+
+icon = ui_inGame2_Instrumenti
+storyline = false
+prior = 17
+precondition = {+esc_mechanic_barkas_upgrade_tier_2 -esc_mechanic_barkas_upgrade_tier_3} true, false
+
+title = esc_mechanic_barkas_task_3_name
+title_functor = general_fetch_task
+descr = esc_mechanic_barkas_task_3_text
+descr_functor = general_fetch_task
+job_descr = esc_mechanic_barkas_task_3_about
+fetch_descr = esc_mechanic_barkas_task_3_fetch_about
+task_complete_descr = esc_mechanic_barkas_task_3_fetch_finish
+
+stage_complete = 1
+target_functor = general_fetch_task
+status_functor = actor_has_fetch_item
+condlist_0 = {!task_giver_alive(esc_mechanic_barkas_task_3)} fail
+
+fetch_func = %=setup_generic_fetch_task(esc_mechanic_barkas_task_3_fetch:1:itm_expertkit)%
+on_complete = %=complete_task_inc_goodwill(50:stalker) =fetch_reward_and_remove(esc_mechanic_barkas_task_3_fetch) =inc_task_stage(esc_mechanic_barkas_task_3) +esc_mechanic_barkas_upgrade_tier_3 =drx_sl_unregister_task_giver(esc_mechanic_barkas_task_3)%
+on_fail = %=fail_task_dec_goodwill(25:stalker) =drx_sl_unregister_task_giver(esc_mechanic_barkas_task_3)%
+
+;------------------------------------------------------------------------------------------
+;-- Antibiotic (Loner Medic)
+
+[esc_medic_antibiotic_task_1]
+icon = ui_inGame2_D_Sisshik
+prior = 50
+repeat_timeout = 43200
+storyline = false
+precondition = {-esc_medic_antibiotic_drugkit_done} true, false
+
+title = esc_medic_antibiotic_task_1_name
+title_functor = general_fetch_task
+descr = esc_medic_antibiotic_task_1_text
+descr_functor = general_fetch_task
+job_descr = esc_medic_antibiotic_task_1_about
+fetch_descr = esc_medic_antibiotic_task_1_fetch_about
+task_complete_descr = esc_medic_antibiotic_task_1_fetch_finish
+
+stage_complete = 1
+status_functor = actor_has_fetch_item
+target_functor = general_fetch_task
+
+fetch_func = %=setup_generic_fetch_task(esc_medic_antibiotic_task_1_fetch:1:itm_drugkit)%
+on_complete = %=reward_stash(true) +esc_medic_antibiotic_drugkit_done =fetch_reward_and_remove(esc_medic_antibiotic_task_1_fetch:1.5) =complete_task_inc_goodwill(50:stalker) =inc_task_stage(esc_medic_antibiotic_task_1) =pstor_reset(esc_medic_antibiotic_task_1_fetch) =drx_sl_unregister_task_giver(esc_medic_antibiotic_task_1) =drx_sl_reset_stored_task(esc_medic_antibiotic_task_1)%
+on_fail = %=pstor_reset(esc_medic_antibiotic_task_1_fetch) =drx_sl_unregister_task_giver(esc_medic_antibiotic_task_1) =drx_sl_reset_stored_task(esc_medic_antibiotic_task_1)%
+condlist_0 = {!task_giver_alive(esc_medic_antibiotic_task_1)} fail

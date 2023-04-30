@@ -1,0 +1,14 @@
+[logic] 
+active = sr_idle@start
+
+[sr_idle@start] 
+on_info  = {+topi_start +topi_mechanic_razia_quest_talking_1 =actor_in_zone(topi_a105_razia_quest_restr_1) =actor_has_item(topi_a105_razia_type_1)} sr_idle@tutorial %=run_tutorial(topi_a105_razia_quest_1_tutor)% 
+on_info2 = {+topi_start +topi_mechanic_testing_all_razia} sr_idle@nil 
+
+[sr_idle@tutorial] 
+on_info   = {+topi_mechanic_razia_quest_talking_1 !actor_in_zone(topi_a105_razia_quest_restr_1)} sr_idle@start %=stop_tutorial% 
+on_info2 = {+topi_mechanic_testing_all_razia} sr_idle@nil %=stop_tutorial%
+on_info3 = {-topi_mechanic_testing_all_razia +topi_mechanic_testing_all_razia_close} sr_idle@start %=stop_tutorial%
+on_info4 = {!has_active_tutorial} sr_idle@start 
+
+[sr_idle@nil] 

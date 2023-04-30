@@ -1,0 +1,116 @@
+<?xml version="1.0" encoding="windows-1251" ?>
+<string_table>
+	<string id="proffesional_present">
+		<text>PROFESSIONAL presents:</text>
+	</string>
+<string id="spatial_anomaly">
+		<text>SPATIAL ANOMALY</text>
+	</string>
+<string id="update_4_1">
+		<text>UPDATE 4.1</text>
+	</string>
+<string id="three_monate_come_back">
+		<text>3 months ago</text>
+	</string>
+<string id="time_skip_escape">
+		<text>Some time later...</text>
+	</string>
+<string id="puzir_skip_time">
+		<text>27 days later</text>
+	</string>
+<string id="chapter_1">
+		<text>Chapter 1: No Way Out</text>
+	</string>
+<string id="chapter_2">
+		<text>Chapter 2: Without Morals</text>
+	</string>
+<string id="chapter_3">
+		<text>Chapter 3: Uninvited Guests</text>
+	</string>
+<string id="chapter_4">
+		<text>Chapter 4: Last Hope</text>
+	</string>
+<string id="chapter_5">
+		<text>Chapter 5: Nightmares of the Dungeon</text>
+	</string>
+<string id="intro_1">
+		<text>Sometimes, to move forward - you have to start over... My new beginning was waking up in this place. I felt that I was no longer the person I used to be, as for the first time in years, conscience and compassion for others awakened inside me. I am a mercenary known as "Beast" and this is my story.</text>
+	</string>
+<string id="intro_2">
+		<text>Makobes was a piece of work, we never got along, but the real "fun" began after Jackal tipped the scales in my favor and appointed me as the leader of a small group of mercenaries instead of Makobes. On the same day, we headed to the Cordon on Jackal's personal order, and Makobes quietly began to prepare a plan of revenge against me.</text>
+	</string>
+<string id="intro_3">
+		<text>Vector used to be the leader of a group of mercenaries, but then he refused to carry out a personal order from Jackal and without hesitation, he put a price on Vector's head. Of course, Vector had to go into hiding. It took me several months to find Vector, but at the most critical moment, while chasing him, I fell into the "Spatial Anomaly." Well, it's time to return to reality and tell you what happened when Makobes and I met in the "Bubble."</text>
+	</string>
+<string id="intro_4">
+		<text>So here we are, leaving the anomaly, but the surprises didn't end there...</text>
+	</string>
+<string id="pb_turn_of_light_tip">
+		<text>Turn off the electricity ($$ACTION_USE$$)</text>
+	</string>
+	<string id="pb_turn_on_light_tip">
+		<text>Turn on the light switch ($$ACTION_USE$$)</text>
+	</string>
+	<string id="expl_spawn_tip">
+		<text>Set explosive charge ($$ACTION_USE$$)</text>
+	</string>
+	<string id="key_out_tip">
+		<text>Put the key on the nightstand ($$ACTION_USE$$)</text>
+	</string>
+	<string id="button_lift_zone_tip">
+		<text>Call the elevator ($$ACTION_USE$$)</text>
+	</string>
+	<string id="switcher_lift_zone_tip">
+		<text>Use the control panel ($$ACTION_USE$$)</text>
+	</string>
+	<string id="lift_turn_tip">
+		<text>Press the button ($$ACTION_USE$$)</text>
+	</string>
+	<string id="touch_buttom_tip">
+		<text>Start the generator ($$ACTION_USE$$)</text>
+	</string>
+	<string id="esc_quest_trader_radio_tips">
+		<text>Install the radio beacon ($$ACTION_USE$$)</text>
+	</string>
+	<string id="esc_quest_trader_take_radio_tips">
+		<text>Take the radio beacon ($$ACTION_USE$$)</text>
+	</string>
+	<string id="psevdodog_quest_character_use">
+		<text>Cut open the belly ($$ACTION_USE$$)</text>
+	</string>
+	<string id="esc_tip_door_locked_tech">
+		<text>Can't open the door, the Van will see everything</text>
+	</string>
+	<string id="esc_quest_enot_wake_up_tips">
+		<text>Wake up Raccoon ($$ACTION_USE$$)</text>
+	</string>
+	<string id="sleep_warning_not_you">
+		<text>You can't sleep on this bed! You need to rent it from the bartender first.</text>
+	</string>
+	<string id="tip_door_anomaly_locked">
+		<text>The grate is rusted shut</text>
+	</string>
+	<string id="tip_door_anomaly_closed">
+		<text>The grate is closed (key required)</text>
+	</string>
+	
+	<string id="st_save_perevalochnaya_baza_start_game">
+	<text>PA - Prologue</text>
+</string>
+<string id="st_save_escape_start_game">
+	<text>PA - Old Times</text>
+</string>
+<string id="st_esc_come_to_base">
+	<text>PA - Arrival at the Rookie Village</text>
+</string>
+<string id="st_blck_val_actor_prisoner">
+	<text>PA - No Longer a Prisoner</text>
+</string>
+<string id="st_blck_val_actor_in_anomaly_wild">
+	<text>PA - Scaling the Anomaly Grove</text>
+</string>
+<string id="st_blck_val_stavrid_night_shooter_dialog_done_save">
+	<text>PA - Defended North Hamlet from the Attack</text>
+</string>
+
+</string_table>

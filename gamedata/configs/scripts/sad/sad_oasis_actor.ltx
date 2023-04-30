@@ -1,0 +1,43 @@
+; general section
+
+[animpoint@gen]
+meet = no_meet
+use_camp = false
+combat_ignore_cond = true
+combat_ignore_keep_when_attacked = true
+invulnerable = true
+gather_items_enabled = false
+help_wounded_enabled = false
+corpse_detection_enabled = false
+
+; work section
+
+[logic]
+active = animpoint@1
+on_hit = hit
+
+[walker@1]
+path_walk = sad_oasis_teleport_out_walk
+path_look = sad_oasis_teleport_out_look
+combat_ignore_cond = true
+combat_ignore_keep_when_attacked = true
+invulnerable = true
+meet = no_meet
+out_restr = sad_sim_16_sr_teleport_zone
+
+[animpoint@1]:animpoint@gen
+avail_animations = hands_up
+cover_name = sad_oasis_animp_actor
+on_info = {+sad_cutscene_robbery_start_2} animpoint@wait_for_jump
+
+[animpoint@wait_for_jump]:animpoint@gen
+avail_animations = wait_na
+cover_name = sad_oasis_animp_actor
+on_info = {+sad_oasis_actor_jumper} animpoint@2
+
+[animpoint@2]:animpoint@gen
+avail_animations = sad_oasis_actor_jump
+cover_name = sad_oasis_animp_actor
+
+[hit]
+;on_info = %+sad_oasis_cutscene_actor_hit% ; =destroy_object%

@@ -1,0 +1,8 @@
+[logic] 
+active = sr_idle@blck_val_spawn_transiver
+
+[sr_idle@blck_val_spawn_transiver] 
+on_info = {=dist_to_actor_le(30) +blck_val_spatial_bubble_quest_give -blck_val_transiver_2_use -blck_val_transiver_spatial_2_spawn} %=del_item_from_actor(blck_val_transiver_1:1) =blck_val_transiver_2_in +blck_val_zver_in_spatial_anomaly -blck_val_transiver_spatial_1_spawn%
+on_info2 = {=dist_to_actor_ge(30) +blck_val_zver_in_spatial_anomaly -blck_val_transiver_2_use -blck_val_transiver_spatial_1_spawn} %=del_item_from_actor(blck_val_transiver_2:1) =blck_val_transiver_1_in -blck_val_transiver_spatial_2_spawn%
+
+[sr_idle@nil]

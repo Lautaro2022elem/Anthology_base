@@ -1,0 +1,154 @@
+[logic@wiz_rjaviu]
+suitable = {=check_npc_name(wiz_rjaviu)} true
+prior = 200
+active = animpoint@wiz_rjaviu
+post_combat_time = 0, 0
+
+[animpoint@wiz_rjaviu]
+cover_name = wiz_bivsh_nii_rjaviu_cover
+avail_animations = animpoint_stay_wall
+combat_ignore_cond = false
+combat_ignore_keep_when_attacked = false
+gather_items_enabled = false
+help_wounded_enabled = true
+corpse_detection_enabled = false
+invulnerable = true
+on_info = {+wiz_storyline_dialog_rjaviu_done} walker@wiz_rjaviu
+meet = meet@wiz_rjaviu
+
+[walker@wiz_rjaviu]
+path_walk = rjaviu_walk
+def_state_moving = run
+def_state_standing = ward
+invulnerable = true
+on_info = {=npc_in_zone(wiz_rjaviy_sr)} animpoint@wiz_rjaviu_01
+meet = no_meet
+
+[animpoint@wiz_rjaviu_01]
+cover_name = wiz_bivsh_nii_rjaviu_sit_cover
+avail_animations = animpoint_sit_high
+combat_ignore_cond = false
+combat_ignore_keep_when_attacked = false
+gather_items_enabled = false
+help_wounded_enabled = true
+corpse_detection_enabled = false
+invulnerable = true
+on_info = {+uninvited_guests_5_done} animpoint@wiz_rjaviu_02
+meet = meet@wiz_rjaviu_01
+
+[animpoint@wiz_rjaviu_02]
+cover_name = wiz_bivsh_nii_rjaviu_sit_cover
+avail_animations = animpoint_sit_high
+combat_ignore_cond = false
+combat_ignore_keep_when_attacked = false
+gather_items_enabled = false
+help_wounded_enabled = true
+corpse_detection_enabled = false
+invulnerable = true
+on_info = {+gonec_pravosudiya_timer_out} animpoint@wiz_rjaviu_03
+meet = meet@wiz_rjaviu_02
+
+[animpoint@wiz_rjaviu_03]
+cover_name = wiz_bivsh_nii_rjaviu_sit_cover
+avail_animations = animpoint_sit_high
+combat_ignore_cond = false
+combat_ignore_keep_when_attacked = false
+gather_items_enabled = false
+help_wounded_enabled = true
+corpse_detection_enabled = false
+invulnerable = true
+on_info = {+wiz_kosta_die} animpoint@wiz_rjaviu_04
+meet = meet@wiz_rjaviu_03
+
+[animpoint@wiz_rjaviu_04]
+cover_name = wiz_bivsh_nii_rjaviu_sit_cover
+avail_animations = animpoint_sit_high
+combat_ignore_cond = false
+combat_ignore_keep_when_attacked = false
+gather_items_enabled = false
+help_wounded_enabled = true
+corpse_detection_enabled = false
+invulnerable = true
+meet = meet@wiz_rjaviu_04
+
+[meet@wiz_rjaviu]
+close_snd_hello = wiz_stalker_rjaviu_greeting
+close_snd_bye = wiz_stalker_rjaviu_farewell
+close_anim 		= nil
+close_victim 	= nil
+far_anim 		= nil
+far_victim 		= nil
+close_distance  = 0
+far_distance 	= 0
+close_snd_distance = 3
+use = {!actor_enemy =dist_to_actor_le(2)} self, true
+trade_enable    = false
+allow_break 	= false
+;meet_dialog = wiz_storyline_dialog_rjaviu_start
+meet_on_talking = true
+
+[meet@wiz_rjaviu_01]
+close_snd_hello = wiz_stalker_rjaviu_greeting
+close_snd_bye = wiz_stalker_rjaviu_farewell
+close_anim 		= nil
+close_victim 	= nil
+far_anim 		= nil
+far_victim 		= nil
+close_distance  = 0
+far_distance 	= 0
+close_snd_distance = 3
+use = nil
+trade_enable    = false
+allow_break 	= false
+meet_dialog = wiz_storyline_mercs_rjaviu_start
+meet_on_talking = true
+
+[meet@wiz_rjaviu_02]
+close_snd_hello = wiz_stalker_rjaviu_greeting
+close_snd_bye = wiz_stalker_rjaviu_farewell
+close_anim 		= nil
+close_victim 	= nil
+far_anim 		= nil
+far_victim 		= nil
+close_distance  = 0
+far_distance 	= 0
+close_snd_distance = 3
+use = nil
+trade_enable    = false
+allow_break 	= false
+meet_dialog = wiz_storyline_mercs_rjaviu_done
+meet_on_talking = true
+
+[meet@wiz_rjaviu_03]
+close_snd_hello = wiz_stalker_rjaviu_greeting
+close_snd_bye = wiz_stalker_rjaviu_farewell
+close_anim 		= nil
+close_victim 	= nil
+far_anim 		= nil
+far_victim 		= nil
+close_distance  = 0
+far_distance 	= 0
+close_snd_distance = 3
+use = nil
+trade_enable    = false
+allow_break 	= false
+meet_dialog = wiz_gonec_pravosudiya_rjaviu_second
+meet_on_talking = true
+
+[meet@wiz_rjaviu_04]
+close_snd_hello = wiz_stalker_rjaviu_greeting
+close_snd_bye = wiz_stalker_rjaviu_farewell
+close_anim 		= nil
+close_victim 	= nil
+far_anim 		= nil
+far_victim 		= nil
+close_distance  = 0
+far_distance 	= 0
+close_snd_distance = 3
+use = nil
+trade_enable    = false
+allow_break 	= false
+meet_dialog = wiz_free_neutral_rjaviu_start
+meet_on_talking = true
+
+

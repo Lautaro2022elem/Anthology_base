@@ -1,0 +1,34 @@
+[logic]
+active = sr_idle@0
+
+[sr_idle@0]
+on_info = {+sad_start_game} sr_idle@1
+
+[sr_idle@1]
+on_info = sr_idle@2 %=spawn_corpse(sad_sim_6_vadik_corpse:sad_sim_6_corpse_1) =spawn_corpse(sad_sim_6_romka_corpse:sad_sim_6_corpse_2)%
+
+[sr_idle@2]
+on_info = {+sad_artur_task_give} sr_idle@3 %=give_task(sad_artur_task)%
+on_actor_inside = sr_idle@4 %+sad_sim_6_snorki_awake% %=create_squad(sad_sim_6_snorki:sad_sim_6)%
+
+[sr_idle@3]
+on_actor_inside = sr_idle@4 %+sad_sim_6_snorki_awake% %=create_squad(sad_sim_6_snorki:sad_sim_6)%
+
+[sr_idle@4]
+on_info = {=actor_has_item(sad_vadik_flesh) -sad_vadik_flesh_have} %+sad_vadik_flesh_have%
+on_info2 = {=actor_has_item(sad_romka_flesh) -sad_romka_flesh_have} %+sad_romka_flesh_have%
+on_info3 = {+sad_vadik_flesh_have +sad_romka_flesh_have} sr_idle@5 %+sad_artur_task_have_both%
+on_info8 = {+sad_artur_dead} sr_idle@nil
+on_info9 = {+sad_actor_enemy_b2} sr_idle@nil
+
+[sr_idle@5]
+on_info = {+sad_artur_task_done} sr_idle@6
+on_info8 = {+sad_artur_dead} sr_idle@nil
+on_info9 = {+sad_actor_enemy_b2} sr_idle@nil
+
+[sr_idle@6]
+on_info = {=distance_to_obj_ge(sad_b2_stalker_artur:120)} sr_idle@nil %=remove_squad(sad_b2_stalker_artur_squad)%
+on_info8 = {+sad_artur_dead} sr_idle@nil
+on_info9 = {+sad_actor_enemy_b2} sr_idle@nil
+
+[sr_idle@nil]

@@ -1,0 +1,56 @@
+;=========meet_stalker_korpys========
+[meet@korpys_stalker]
+close_anim 		= nil
+close_victim 	= nil
+far_anim 		= nil
+far_victim 		= nil
+close_distance 	= 0
+far_distance 	= 0
+use = {=actor_enemy} false, {=dist_to_actor_le(3)} true, false
+snd_on_use = {!dist_to_actor_le(3)} nil
+meet_on_talking = false
+;==================================
+
+[logic]
+suitable = {=check_npc_name(pb_mrakobes_final)} true
+prior = 200
+active = walker@stay_start
+post_combat_time = 0, 0
+
+[walker@stay_start]
+path_walk = pro_merc_mrakobes_final_walk
+path_look = pro_merc_mrakobes_final_look
+on_info = {+pb_mrakobes_final_scene_start_sound -pb_mrakobes_final_scene_stop_sound} %=play_sound(pb_mrakobes_final_scene) +pb_mrakobes_final_scene_stop_sound%
+on_info2 = {+pro_mrakobes_suiside_give} remark@suiside
+combat_ignore_cond = true
+combat_ignore_keep_when_attacked = true
+invulnerable = true
+gather_items_enabled = false
+help_wounded_enabled = false
+corpse_detection_enabled = false
+meet = no_meet
+
+[remark]
+combat_ignore_cond = true
+combat_ignore_keep_when_attacked = true
+gather_items_enabled = false
+help_wounded_enabled = false
+corpse_detection_enabled = false
+use_camp = false
+invulnerable = true
+
+[remark@suiside]:remark
+anim = zat_b22_medic_suicide
+on_signal = anim_end | remark@suiside_shot
+meet = no_meet
+invulnerable = true
+help_wounded_enabled = false
+corpse_detection_enabled = false
+
+[remark@suiside_shot]:remark
+anim = zat_b22_medic_suicide
+on_game_timer = 5 | nil %=kill_npc%
+meet = no_meet
+invulnerable = true
+help_wounded_enabled = false
+corpse_detection_enabled = false

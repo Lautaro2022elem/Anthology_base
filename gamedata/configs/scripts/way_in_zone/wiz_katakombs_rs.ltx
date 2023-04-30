@@ -1,0 +1,10 @@
+[logic]
+active = sr_idle@check_quest
+
+[sr_idle@check_quest]
+on_info = {+wiz_storyline_dialog_foma_katacombs_wait} sr_idle@teleport_to_kat %+st_recrd_first_1 =new_writes_in_diary%
+
+[sr_idle@teleport_to_kat]
+on_info = {+wiz_teleport_actor_to_kat} sr_idle@nil
+
+[sr_idle@nil]

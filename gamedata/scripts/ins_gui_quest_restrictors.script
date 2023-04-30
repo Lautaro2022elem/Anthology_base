@@ -1,0 +1,1957 @@
+-------------------- GUI элементы Cмерти вопреки в рестрикторах----------------------
+------------------------- Copyright 2012-2013 Geonezis ---------------------------
+-----------------------------------------------
+class "ui_topi_a65_quest_bomba_1" (CUIScriptWnd)
+
+function ui_topi_a65_quest_bomba_1:__init(owner) super()
+	self.owner = owner
+	self:InitControls()
+	self:InitCallBacks()
+end
+
+function ui_topi_a65_quest_bomba_1:__finalize()
+end
+
+function ui_topi_a65_quest_bomba_1:InitControls()
+	self:SetWndRect			(Frect():set(0,0,1024,768))
+	local xml, ctrl			= CScriptXmlInit(), CUIWindow()
+	xml:ParseFile			("ui_gui_elements.xml")
+	self.form_a65bomba_quest_r1				= xml:InitStatic("form_a65bomba_quest_r1",self)
+
+	xml:InitStatic			("form_a65bomba_quest_r1:caption",self.form_a65bomba_quest_r1)
+    
+    self.button_use = xml:Init3tButton ("form_a65bomba_quest_r1:btn_use", self.form_a65bomba_quest_r1) 
+    self:Register (self.button_use, "button_use")        	
+    self.button_close = xml:Init3tButton ("form_a65bomba_quest_r1:btn_close", self.form_a65bomba_quest_r1) 
+    self:Register (self.button_close, "button_close")
+end
+
+function ui_topi_a65_quest_bomba_1:Update()
+   CUIScriptWnd.Update(self)
+   if not object_alive(db.actor) then
+      self:HideDialog()
+   end   
+end
+
+function ui_topi_a65_quest_bomba_1:InitCallBacks() 
+    self:AddCallback("button_use", ui_events.BUTTON_CLICKED, self.OnButton_use_clicked, self)  
+	self:AddCallback("button_close", ui_events.BUTTON_CLICKED, self.OnButton_close_clicked, self)
+end
+
+function ui_topi_a65_quest_bomba_1:OnButton_use_clicked()
+    xr_effects.topi_a65_kill_quest_1_s_used()    
+	self.button_use:Enable(false)
+end
+
+function ui_topi_a65_quest_bomba_1:OnButton_close_clicked()
+    db.actor:give_info_portion("topi_a65_fugas_set_close")    
+	self:HideDialog()
+end
+-----------------------------------------------
+class "ui_topi_b65_quest_bomba_1" (CUIScriptWnd)
+
+function ui_topi_b65_quest_bomba_1:__init(owner) super()
+	self.owner = owner
+	self:InitControls()
+	self:InitCallBacks()
+end
+
+function ui_topi_b65_quest_bomba_1:__finalize()
+end
+
+function ui_topi_b65_quest_bomba_1:InitControls()
+	self:SetWndRect			(Frect():set(0,0,1024,768))
+	local xml, ctrl			= CScriptXmlInit(), CUIWindow()
+	xml:ParseFile			("ui_gui_elements.xml")
+	self.form_b65bomba_quest_r1				= xml:InitStatic("form_b65bomba_quest_r1",self)
+
+	xml:InitStatic			("form_b65bomba_quest_r1:caption",self.form_b65bomba_quest_r1)
+    
+    self.button_use = xml:Init3tButton ("form_b65bomba_quest_r1:btn_use", self.form_b65bomba_quest_r1) 
+    self:Register (self.button_use, "button_use")        	
+    self.button_close = xml:Init3tButton ("form_b65bomba_quest_r1:btn_close", self.form_b65bomba_quest_r1) 
+    self:Register (self.button_close, "button_close")
+end
+
+function ui_topi_b65_quest_bomba_1:Update()
+   CUIScriptWnd.Update(self)
+   if not object_alive(db.actor) then
+      self:HideDialog()
+   end   
+end
+
+function ui_topi_b65_quest_bomba_1:InitCallBacks() 
+    self:AddCallback("button_use", ui_events.BUTTON_CLICKED, self.OnButton_use_clicked, self)  
+	self:AddCallback("button_close", ui_events.BUTTON_CLICKED, self.OnButton_close_clicked, self)
+end
+
+function ui_topi_b65_quest_bomba_1:OnButton_use_clicked()
+    xr_effects.topi_b65_kill_quest_1_s_used()    
+	self.button_use:Enable(false)
+end
+
+function ui_topi_b65_quest_bomba_1:OnButton_close_clicked()
+    db.actor:give_info_portion("topi_b65_fugas_set_close")    
+	self:HideDialog()
+end
+-----------------------------------------------
+class "ui_topi_b7_quest_ceh_1" (CUIScriptWnd)
+
+function ui_topi_b7_quest_ceh_1:__init(owner) super()
+	self.owner = owner
+	self:InitControls()
+	self:InitCallBacks()
+end
+
+function ui_topi_b7_quest_ceh_1:__finalize()
+end
+
+function ui_topi_b7_quest_ceh_1:InitControls()
+	self:SetWndRect			(Frect():set(0,0,1024,768))
+	local xml, ctrl			= CScriptXmlInit(), CUIWindow()
+	xml:ParseFile			("ui_gui_elements.xml")
+	self.form_cehdevice_1_quest_r1				= xml:InitStatic("form_cehdevice_1_quest_r1",self)
+
+	xml:InitStatic			("form_cehdevice_1_quest_r1:caption",self.form_cehdevice_1_quest_r1)
+    
+    self.button_use = xml:Init3tButton ("form_cehdevice_1_quest_r1:btn_use", self.form_cehdevice_1_quest_r1) 
+    self:Register (self.button_use, "button_use")        	
+    self.button_close = xml:Init3tButton ("form_cehdevice_1_quest_r1:btn_close", self.form_cehdevice_1_quest_r1) 
+    self:Register (self.button_close, "button_close")
+end
+
+function ui_topi_b7_quest_ceh_1:Update()
+   CUIScriptWnd.Update(self)
+   if not object_alive(db.actor) then
+      self:HideDialog()
+   end   
+end
+
+function ui_topi_b7_quest_ceh_1:InitCallBacks() 
+    self:AddCallback("button_use", ui_events.BUTTON_CLICKED, self.OnButton_use_clicked, self)  
+	self:AddCallback("button_close", ui_events.BUTTON_CLICKED, self.OnButton_close_clicked, self)
+end
+
+function ui_topi_b7_quest_ceh_1:OnButton_use_clicked()
+    xr_effects.topi_c7_ceh_quest_1_s_used()    
+	self.button_use:Enable(false)
+end
+
+function ui_topi_b7_quest_ceh_1:OnButton_close_clicked()
+    db.actor:give_info_portion("topi_c7_ceh_quest_device_1_set_close")    
+	self:HideDialog()
+end
+-----------------------------------------------
+class "ui_topi_b7_quest_ceh_2" (CUIScriptWnd)
+
+function ui_topi_b7_quest_ceh_2:__init(owner) super()
+	self.owner = owner
+	self:InitControls()
+	self:InitCallBacks()
+end
+
+function ui_topi_b7_quest_ceh_2:__finalize()
+end
+
+function ui_topi_b7_quest_ceh_2:InitControls()
+	self:SetWndRect			(Frect():set(0,0,1024,768))
+	local xml, ctrl			= CScriptXmlInit(), CUIWindow()
+	xml:ParseFile			("ui_gui_elements.xml")
+	self.form_cehdevice_2_quest_r1				= xml:InitStatic("form_cehdevice_2_quest_r1",self)
+
+	xml:InitStatic			("form_cehdevice_2_quest_r1:caption",self.form_cehdevice_2_quest_r1)
+    
+    self.button_use = xml:Init3tButton ("form_cehdevice_2_quest_r1:btn_use", self.form_cehdevice_2_quest_r1) 
+    self:Register (self.button_use, "button_use")        	
+    self.button_close = xml:Init3tButton ("form_cehdevice_2_quest_r1:btn_close", self.form_cehdevice_2_quest_r1) 
+    self:Register (self.button_close, "button_close")
+end
+
+function ui_topi_b7_quest_ceh_2:Update()
+   CUIScriptWnd.Update(self)
+   if not object_alive(db.actor) then
+      self:HideDialog()
+   end   
+end
+
+function ui_topi_b7_quest_ceh_2:InitCallBacks() 
+    self:AddCallback("button_use", ui_events.BUTTON_CLICKED, self.OnButton_use_clicked, self)  
+	self:AddCallback("button_close", ui_events.BUTTON_CLICKED, self.OnButton_close_clicked, self)
+end
+
+function ui_topi_b7_quest_ceh_2:OnButton_use_clicked()
+    xr_effects.topi_c7_ceh_quest_2_s_used()    
+	self.button_use:Enable(false)
+end
+
+function ui_topi_b7_quest_ceh_2:OnButton_close_clicked()
+    db.actor:give_info_portion("topi_c7_ceh_quest_device_2_set_close")    
+	self:HideDialog()
+end
+-----------------------------------------------
+class "ui_topi_b41_quest_seleczia_1" (CUIScriptWnd)
+
+function ui_topi_b41_quest_seleczia_1:__init(owner) super()
+	self.owner = owner
+	self:InitControls()
+	self:InitCallBacks()
+end
+
+function ui_topi_b41_quest_seleczia_1:__finalize()
+end
+
+function ui_topi_b41_quest_seleczia_1:InitControls()
+	self:SetWndRect			(Frect():set(0,0,1024,768))
+	local xml, ctrl			= CScriptXmlInit(), CUIWindow()
+	xml:ParseFile			("ui_gui_elements.xml")
+	self.form_seleczia_quest_r1				= xml:InitStatic("form_seleczia_quest_r1",self)
+
+	xml:InitStatic			("form_seleczia_quest_r1:caption",self.form_seleczia_quest_r1)
+    
+    self.button_use = xml:Init3tButton ("form_seleczia_quest_r1:btn_use", self.form_seleczia_quest_r1) 
+    self:Register (self.button_use, "button_use")        	
+    self.button_close = xml:Init3tButton ("form_seleczia_quest_r1:btn_close", self.form_seleczia_quest_r1) 
+    self:Register (self.button_close, "button_close")
+end
+
+function ui_topi_b41_quest_seleczia_1:Update()
+   CUIScriptWnd.Update(self)
+   if not object_alive(db.actor) then
+      self:HideDialog()
+   end   
+end
+
+function ui_topi_b41_quest_seleczia_1:InitCallBacks() 
+    self:AddCallback("button_use", ui_events.BUTTON_CLICKED, self.OnButton_use_clicked, self)  
+	self:AddCallback("button_close", ui_events.BUTTON_CLICKED, self.OnButton_close_clicked, self)
+end
+
+function ui_topi_b41_quest_seleczia_1:OnButton_use_clicked()
+    xr_effects.topi_b41_seleczia_1_s_used()    
+	self.button_use:Enable(false)
+end
+
+function ui_topi_b41_quest_seleczia_1:OnButton_close_clicked()
+    db.actor:give_info_portion("topi_b41_artefacter_quest_seleczia_1_set_close")    
+	self:HideDialog()
+end
+-----------------------------------------------
+class "ui_topi_b41_quest_seleczia_2" (CUIScriptWnd)
+
+function ui_topi_b41_quest_seleczia_2:__init(owner) super()
+	self.owner = owner
+	self:InitControls()
+	self:InitCallBacks()
+end
+
+function ui_topi_b41_quest_seleczia_2:__finalize()
+end
+
+function ui_topi_b41_quest_seleczia_2:InitControls()
+	self:SetWndRect			(Frect():set(0,0,1024,768))
+	local xml, ctrl			= CScriptXmlInit(), CUIWindow()
+	xml:ParseFile			("ui_gui_elements.xml")
+	self.form_seleczia_quest_r2				= xml:InitStatic("form_seleczia_quest_r2",self)
+
+	xml:InitStatic			("form_seleczia_quest_r2:caption",self.form_seleczia_quest_r2)
+    
+    self.button_use = xml:Init3tButton ("form_seleczia_quest_r2:btn_use", self.form_seleczia_quest_r2) 
+    self:Register (self.button_use, "button_use")        	
+    self.button_close = xml:Init3tButton ("form_seleczia_quest_r2:btn_close", self.form_seleczia_quest_r2) 
+    self:Register (self.button_close, "button_close")
+end
+
+function ui_topi_b41_quest_seleczia_2:Update()
+   CUIScriptWnd.Update(self)
+   if not object_alive(db.actor) then
+      self:HideDialog()
+   end   
+end
+
+function ui_topi_b41_quest_seleczia_2:InitCallBacks() 
+    self:AddCallback("button_use", ui_events.BUTTON_CLICKED, self.OnButton_use_clicked, self)  
+	self:AddCallback("button_close", ui_events.BUTTON_CLICKED, self.OnButton_close_clicked, self)
+end
+
+function ui_topi_b41_quest_seleczia_2:OnButton_use_clicked()
+    xr_effects.topi_b41_seleczia_2_s_used()    
+	self.button_use:Enable(false)
+end
+
+function ui_topi_b41_quest_seleczia_2:OnButton_close_clicked()
+    db.actor:give_info_portion("topi_b41_artefacter_quest_seleczia_2_set_close")    
+	self:HideDialog()
+end
+-----------------------------------------------
+class "ui_topi_b41_quest_seleczia_3" (CUIScriptWnd)
+
+function ui_topi_b41_quest_seleczia_3:__init(owner) super()
+	self.owner = owner
+	self:InitControls()
+	self:InitCallBacks()
+end
+
+function ui_topi_b41_quest_seleczia_3:__finalize()
+end
+
+function ui_topi_b41_quest_seleczia_3:InitControls()
+	self:SetWndRect			(Frect():set(0,0,1024,768))
+	local xml, ctrl			= CScriptXmlInit(), CUIWindow()
+	xml:ParseFile			("ui_gui_elements.xml")
+	self.form_seleczia_quest_r3				= xml:InitStatic("form_seleczia_quest_r3",self)
+
+	xml:InitStatic			("form_seleczia_quest_r3:caption",self.form_seleczia_quest_r3)
+    
+    self.button_use = xml:Init3tButton ("form_seleczia_quest_r3:btn_use", self.form_seleczia_quest_r3) 
+    self:Register (self.button_use, "button_use")        	
+    self.button_close = xml:Init3tButton ("form_seleczia_quest_r3:btn_close", self.form_seleczia_quest_r3) 
+    self:Register (self.button_close, "button_close")
+end
+
+function ui_topi_b41_quest_seleczia_3:Update()
+   CUIScriptWnd.Update(self)
+   if not object_alive(db.actor) then
+      self:HideDialog()
+   end   
+end
+
+function ui_topi_b41_quest_seleczia_3:InitCallBacks() 
+    self:AddCallback("button_use", ui_events.BUTTON_CLICKED, self.OnButton_use_clicked, self)  
+	self:AddCallback("button_close", ui_events.BUTTON_CLICKED, self.OnButton_close_clicked, self)
+end
+
+function ui_topi_b41_quest_seleczia_3:OnButton_use_clicked()
+    xr_effects.topi_b41_seleczia_3_s_used()    
+	self.button_use:Enable(false)
+end
+
+function ui_topi_b41_quest_seleczia_3:OnButton_close_clicked()
+    db.actor:give_info_portion("topi_b41_artefacter_quest_seleczia_3_set_close")    
+	self:HideDialog()
+end
+-----------------------------------------------
+class "ui_topi_f1_quest_radio" (CUIScriptWnd)
+
+function ui_topi_f1_quest_radio:__init(owner) super()
+	self.owner = owner
+	self:InitControls()
+	self:InitCallBacks()
+end
+
+function ui_topi_f1_quest_radio:__finalize()
+end
+
+function ui_topi_f1_quest_radio:InitControls()
+	self:SetWndRect			(Frect():set(0,0,1024,768))
+	local xml, ctrl			= CScriptXmlInit(), CUIWindow()
+	local text_1 = "ui_quest_f1_var_text_1"
+	local text_2 = "ui_quest_f1_var_text_2"
+	local text_3 = "ui_quest_f1_var_text_3"	
+	xml:ParseFile			("ui_gui_elements.xml")
+	self.radiometr_item_form				= xml:InitStatic("radiometr_item_form",self)
+	xml:InitStatic			("radiometr_item_form:caption",self.radiometr_item_form) 
+    xml:InitStatic			("radiometr_item_form:form_title",self.radiometr_item_form)	
+    self.button_close = xml:Init3tButton ("radiometr_item_form:btn_close", self.radiometr_item_form) 
+    self:Register (self.button_close, "button_close")
+	self.button_close:Enable(false) 
+    self.btn_1_slot = xml:Init3tButton ("radiometr_item_form:btn_1_slot", self.radiometr_item_form)
+    self:Register (self.btn_1_slot, "btn_1_slot")	
+    self.btn_2_slot = xml:Init3tButton ("radiometr_item_form:btn_2_slot", self.radiometr_item_form)
+    self:Register (self.btn_2_slot, "btn_2_slot")
+	self.btn_2_slot:Enable(false)
+    self.text_list	= xml:InitListBox("radiometr_item_form:list_items", self.radiometr_item_form)
+	self:Register(self.text_list, "listbox")
+	self:register_element(xml,"text_field")	
+	self.text_list:AddTextItem(text_1)
+    self.text_list:AddTextItem(text_2)
+    self.text_list:AddTextItem(text_3)    
+end
+
+function ui_topi_f1_quest_radio:Update()
+   CUIScriptWnd.Update(self)
+   if not object_alive(db.actor) then
+      self:HideDialog()
+   end   
+end
+
+function ui_topi_f1_quest_radio:InitCallBacks()    
+	self:AddCallback("btn_1_slot",ui_events.BUTTON_CLICKED,self.btn_1_slot_use,self)
+    self:AddCallback("btn_2_slot",ui_events.BUTTON_CLICKED,self.btn_2_slot_use,self)    
+	self:AddCallback("button_close", ui_events.BUTTON_CLICKED, self.OnButton_close_clicked, self)
+    self:AddCallback("listbox", ui_events.LIST_ITEM_CLICKED, self.Element_clicked, self)
+end
+
+function ui_topi_f1_quest_radio:btn_1_slot_use()
+   db.actor:give_info_portion("topi_f1_freedom_members_killed")
+   self.btn_1_slot:Enable(false)
+   self.btn_2_slot:Enable(true)
+end
+
+function ui_topi_f1_quest_radio:btn_2_slot_use()
+   create("topi_b2_dolg_1_first_quest",343.14028930664,-0.00019368529319763,207.94877624512,989539,8762)
+   create("topi_b2_dolg_2_first_quest",341.57290649414,-0.00037539005279541,215.30461120605,987604,8762)
+   create("topi_b2_dolg_3_first_quest",345.666015625,-0.0015753209590912,208.48651123047,993345,8762)
+   create("topi_b2_dolg_4_first_quest",343.25415039063,-0.48700848221779,190.66590881348,989529,8762)   
+   self.btn_2_slot:Enable(false) 
+   self.button_close:Enable(true)
+end
+
+function ui_topi_f1_quest_radio:OnButton_close_clicked()
+    xr_effects.topi_f1_quest_radio_1_s_used()
+    db.actor:give_info_portion("topi_f1_freedom_first_device_set_close")    
+	self:HideDialog()	
+end
+
+function ui_topi_f1_quest_radio:Element_clicked()
+	if self.text_list:GetSize()==0 then return end
+	    self.item = self.text_list:GetSelectedItem()
+		self.text_item = self.item:GetTextItem()		
+		if self.text_item:GetText() == "Панорамный анализ" then
+          self.text_field:TextControl():SetText(game.translate_string("st_quest_peleng_var_descr_1"))
+      	elseif self.text_item:GetText() == "Пеленгование" then
+          self.text_field:TextControl():SetText(game.translate_string("st_quest_peleng_var_descr_2"))
+        elseif self.text_item:GetText() == "Контроль радиоканалов" then
+          self.text_field:TextControl():SetText(game.translate_string("st_quest_peleng_var_descr_3"))          
+        end		 
+end
+
+function ui_topi_f1_quest_radio:register_element(xml,element_name)
+   self[element_name]=xml:InitStatic("radiometr_item_form:"..element_name,self.radiometr_item_form)
+end
+-----------------------------------------------
+class "ui_topi_c105_quest_mine_3" (CUIScriptWnd)
+
+function ui_topi_c105_quest_mine_3:__init(owner) super()
+	self.owner = owner
+	self:InitControls()
+	self:InitCallBacks()
+end
+
+function ui_topi_c105_quest_mine_3:__finalize()
+end
+
+function ui_topi_c105_quest_mine_3:InitControls()
+	self:SetWndRect			(Frect():set(0,0,1024,768))
+	local xml, ctrl			= CScriptXmlInit(), CUIWindow()
+	xml:ParseFile			("ui_gui_elements.xml")
+	self.form_mineiskatel_quest_r1				= xml:InitStatic("form_mineiskatel_quest_r1",self)
+
+	xml:InitStatic			("form_mineiskatel_quest_r1:caption",self.form_mineiskatel_quest_r1)
+    
+    self.button_use = xml:Init3tButton ("form_mineiskatel_quest_r1:btn_use", self.form_mineiskatel_quest_r1) 
+    self:Register (self.button_use, "button_use")        	
+    self.button_close = xml:Init3tButton ("form_mineiskatel_quest_r1:btn_close", self.form_mineiskatel_quest_r1) 
+    self:Register (self.button_close, "button_close")
+end
+
+function ui_topi_c105_quest_mine_3:Update()
+   CUIScriptWnd.Update(self)
+   if not object_alive(db.actor) then
+      self:HideDialog()
+   end   
+end
+
+function ui_topi_c105_quest_mine_3:InitCallBacks() 
+    self:AddCallback("button_use", ui_events.BUTTON_CLICKED, self.OnButton_use_clicked, self)  
+	self:AddCallback("button_close", ui_events.BUTTON_CLICKED, self.OnButton_close_clicked, self)
+end
+
+function ui_topi_c105_quest_mine_3:OnButton_use_clicked()
+    xr_effects.topi_c105_quest_mine_3_used()    
+	self.button_use:Enable(false)
+end
+
+function ui_topi_c105_quest_mine_3:OnButton_close_clicked()
+    db.actor:give_info_portion("topi_b1_leader_1_quest_mine_3_find_close")    
+	self:HideDialog()
+end
+
+-----------------------------------------------
+class "ui_topi_c105_quest_mine_2" (CUIScriptWnd)
+
+function ui_topi_c105_quest_mine_2:__init(owner) super()
+	self.owner = owner
+	self:InitControls()
+	self:InitCallBacks()
+end
+
+function ui_topi_c105_quest_mine_2:__finalize()
+end
+
+function ui_topi_c105_quest_mine_2:InitControls()
+	self:SetWndRect			(Frect():set(0,0,1024,768))
+	local xml, ctrl			= CScriptXmlInit(), CUIWindow()
+	xml:ParseFile			("ui_gui_elements.xml")
+	self.form_mineiskatel_quest_r1				= xml:InitStatic("form_mineiskatel_quest_r1",self)
+
+	xml:InitStatic			("form_mineiskatel_quest_r1:caption",self.form_mineiskatel_quest_r1)
+    
+    self.button_use = xml:Init3tButton ("form_mineiskatel_quest_r1:btn_use", self.form_mineiskatel_quest_r1) 
+    self:Register (self.button_use, "button_use")        	
+    self.button_close = xml:Init3tButton ("form_mineiskatel_quest_r1:btn_close", self.form_mineiskatel_quest_r1) 
+    self:Register (self.button_close, "button_close")
+end
+
+function ui_topi_c105_quest_mine_2:Update()
+   CUIScriptWnd.Update(self)
+   if not object_alive(db.actor) then
+      self:HideDialog()
+   end   
+end
+
+function ui_topi_c105_quest_mine_2:InitCallBacks() 
+    self:AddCallback("button_use", ui_events.BUTTON_CLICKED, self.OnButton_use_clicked, self)  
+	self:AddCallback("button_close", ui_events.BUTTON_CLICKED, self.OnButton_close_clicked, self)
+end
+
+function ui_topi_c105_quest_mine_2:OnButton_use_clicked()
+    xr_effects.topi_c105_quest_mine_2_used()    
+	self.button_use:Enable(false)
+end
+
+function ui_topi_c105_quest_mine_2:OnButton_close_clicked()
+    db.actor:give_info_portion("topi_b1_leader_1_quest_mine_2_find_close")    
+	self:HideDialog()
+end
+
+-----------------------------------------------
+class "ui_topi_c105_quest_mine_1" (CUIScriptWnd)
+
+function ui_topi_c105_quest_mine_1:__init(owner) super()
+	self.owner = owner
+	self:InitControls()
+	self:InitCallBacks()
+end
+
+function ui_topi_c105_quest_mine_1:__finalize()
+end
+
+function ui_topi_c105_quest_mine_1:InitControls()
+	self:SetWndRect			(Frect():set(0,0,1024,768))
+	local xml, ctrl			= CScriptXmlInit(), CUIWindow()
+	xml:ParseFile			("ui_gui_elements.xml")
+	self.form_mineiskatel_quest_r1				= xml:InitStatic("form_mineiskatel_quest_r1",self)
+
+	xml:InitStatic			("form_mineiskatel_quest_r1:caption",self.form_mineiskatel_quest_r1)
+    
+    self.button_use = xml:Init3tButton ("form_mineiskatel_quest_r1:btn_use", self.form_mineiskatel_quest_r1) 
+    self:Register (self.button_use, "button_use")        	
+    self.button_close = xml:Init3tButton ("form_mineiskatel_quest_r1:btn_close", self.form_mineiskatel_quest_r1) 
+    self:Register (self.button_close, "button_close")
+end
+
+function ui_topi_c105_quest_mine_1:Update()
+   CUIScriptWnd.Update(self)
+   if not object_alive(db.actor) then
+      self:HideDialog()
+   end   
+end
+
+function ui_topi_c105_quest_mine_1:InitCallBacks() 
+    self:AddCallback("button_use", ui_events.BUTTON_CLICKED, self.OnButton_use_clicked, self)  
+	self:AddCallback("button_close", ui_events.BUTTON_CLICKED, self.OnButton_close_clicked, self)
+end
+
+function ui_topi_c105_quest_mine_1:OnButton_use_clicked()
+    xr_effects.topi_c105_quest_mine_1_used()    
+	self.button_use:Enable(false)
+end
+
+function ui_topi_c105_quest_mine_1:OnButton_close_clicked()
+    db.actor:give_info_portion("topi_b1_leader_1_quest_mine_1_find_close")    
+	self:HideDialog()
+end
+
+-----------------------------------------------
+class "ui_topi_var_2_suget_quest_final" (CUIScriptWnd)
+
+function ui_topi_var_2_suget_quest_final:__init(owner) super()
+	self.owner = owner
+	self:InitControls()
+	self:InitCallBacks()
+end
+
+function ui_topi_var_2_suget_quest_final:__finalize()
+end
+
+function ui_topi_var_2_suget_quest_final:InitControls()
+	self:SetWndRect			(Frect():set(0,0,1024,768))
+	local xml, ctrl			= CScriptXmlInit(), CUIWindow()
+	xml:ParseFile			("ui_gui_elements.xml")
+	self.form_bombafinal_quest_r1				= xml:InitStatic("form_bombafinal_quest_r1",self)
+
+	xml:InitStatic			("form_bombafinal_quest_r1:caption",self.form_bombafinal_quest_r1)
+    
+    self.button_use = xml:Init3tButton ("form_bombafinal_quest_r1:btn_use", self.form_bombafinal_quest_r1) 
+    self:Register (self.button_use, "button_use")        	
+    self.button_close = xml:Init3tButton ("form_bombafinal_quest_r1:btn_close", self.form_bombafinal_quest_r1) 
+    self:Register (self.button_close, "button_close")
+end
+
+function ui_topi_var_2_suget_quest_final:Update()
+   CUIScriptWnd.Update(self)
+   if not object_alive(db.actor) then
+      self:HideDialog()
+   end   
+end
+
+function ui_topi_var_2_suget_quest_final:InitCallBacks() 
+    self:AddCallback("button_use", ui_events.BUTTON_CLICKED, self.OnButton_use_clicked, self)  
+	self:AddCallback("button_close", ui_events.BUTTON_CLICKED, self.OnButton_close_clicked, self)
+end
+
+function ui_topi_var_2_suget_quest_final:OnButton_use_clicked()
+    xr_effects.topi_var_2_suget_quest_final_used()    
+	self.button_use:Enable(false)
+end
+
+function ui_topi_var_2_suget_quest_final:OnButton_close_clicked()
+    db.actor:give_info_portion("topi_var_2_suget_quest_final_bomba_set_close")    
+	self:HideDialog()
+end
+-----------------------------------------------
+class "ui_lider_variant_spectrometr" (CUIScriptWnd)
+
+function ui_lider_variant_spectrometr:__init(owner) super()
+	self.owner = owner
+	self:InitControls()
+	self:InitCallBacks()
+end
+
+function ui_lider_variant_spectrometr:__finalize()
+end
+
+function ui_lider_variant_spectrometr:InitControls()
+	self:SetWndRect			(Frect():set(0,0,1024,768))
+	local xml, ctrl			= CScriptXmlInit(), CUIWindow()
+	local text_1 = "ui_quest_lider_var_text_1"
+	local text_2 = "ui_quest_lider_var_text_2"
+	local text_3 = "ui_quest_lider_var_text_3"	
+	xml:ParseFile			("ui_gui_elements.xml")
+	self.spectrometr_item_form				= xml:InitStatic("spectrometr_item_form",self)
+	xml:InitStatic			("spectrometr_item_form:caption",self.spectrometr_item_form) 
+    xml:InitStatic			("spectrometr_item_form:form_title",self.spectrometr_item_form)	
+    self.button_close = xml:Init3tButton ("spectrometr_item_form:btn_close", self.spectrometr_item_form) 
+    self:Register (self.button_close, "button_close")
+	self.button_close:Enable(false) 
+    self.btn_1_slot = xml:Init3tButton ("spectrometr_item_form:btn_1_slot", self.spectrometr_item_form)
+    self:Register (self.btn_1_slot, "btn_1_slot")	
+    self.btn_2_slot = xml:Init3tButton ("spectrometr_item_form:btn_2_slot", self.spectrometr_item_form)
+    self:Register (self.btn_2_slot, "btn_2_slot")
+	self.btn_2_slot:Enable(false)
+    self.text_list	= xml:InitListBox("spectrometr_item_form:list_items", self.spectrometr_item_form)
+	self:Register(self.text_list, "listbox")
+	self:register_element(xml,"text_field")	
+	self.text_list:AddTextItem(text_1)
+    self.text_list:AddTextItem(text_2)
+    self.text_list:AddTextItem(text_3)    
+end
+
+function ui_lider_variant_spectrometr:Update()
+   CUIScriptWnd.Update(self)
+   if not object_alive(db.actor) then
+      self:HideDialog()
+   end   
+end
+
+function ui_lider_variant_spectrometr:InitCallBacks()    
+	self:AddCallback("btn_1_slot",ui_events.BUTTON_CLICKED,self.btn_1_slot_use,self)
+    self:AddCallback("btn_2_slot",ui_events.BUTTON_CLICKED,self.btn_2_slot_use,self)    
+	self:AddCallback("button_close", ui_events.BUTTON_CLICKED, self.OnButton_close_clicked, self)
+    self:AddCallback("listbox", ui_events.LIST_ITEM_CLICKED, self.Element_clicked, self)
+end
+
+function ui_lider_variant_spectrometr:btn_1_slot_use()
+   self.btn_1_slot:Enable(false)
+   self.btn_2_slot:Enable(true)
+end
+
+function ui_lider_variant_spectrometr:btn_2_slot_use()   
+   self.btn_2_slot:Enable(false) 
+   self.button_close:Enable(true)
+end
+
+function ui_lider_variant_spectrometr:OnButton_close_clicked()
+    xr_effects.topi_lider_variant_quest_used()
+    db.actor:give_info_portion("topi_liger_variant_quest_spectrometr_set_close")    
+	self:HideDialog()	
+end
+
+function ui_lider_variant_spectrometr:Element_clicked()
+	if self.text_list:GetSize()==0 then return end
+	    self.item = self.text_list:GetSelectedItem()
+		self.text_item = self.item:GetTextItem()		
+		if self.text_item:GetText() == "База данных веществ" then
+          self.text_field:TextControl():SetText(game.translate_string("st_quest_lider_var_descr_1"))
+      	elseif self.text_item:GetText() == "Интерфейс пользователя" then
+          self.text_field:TextControl():SetText(game.translate_string("st_quest_lider_var_descr_2"))
+        elseif self.text_item:GetText() == "Рабочие условия" then
+          self.text_field:TextControl():SetText(game.translate_string("st_quest_lider_var_descr_3"))          
+        end		 
+end
+
+function ui_lider_variant_spectrometr:register_element(xml,element_name)
+   self[element_name]=xml:InitStatic("spectrometr_item_form:"..element_name,self.spectrometr_item_form)
+end
+-----------------------------------------------
+class "ui_zam_variant_katalizator" (CUIScriptWnd)
+
+function ui_zam_variant_katalizator:__init(owner) super()
+	self.owner = owner
+	self:InitControls()
+	self:InitCallBacks()
+end
+
+function ui_zam_variant_katalizator:__finalize()
+end
+
+function ui_zam_variant_katalizator:InitControls()
+	self:SetWndRect			(Frect():set(0,0,1024,768))
+	local xml, ctrl			= CScriptXmlInit(), CUIWindow()
+	xml:ParseFile			("ui_gui_elements.xml")
+	self.form_katalizator_quest_r1				= xml:InitStatic("form_katalizator_quest_r1",self)
+
+	xml:InitStatic			("form_katalizator_quest_r1:caption",self.form_katalizator_quest_r1)
+    
+    self.button_use = xml:Init3tButton ("form_katalizator_quest_r1:btn_use", self.form_katalizator_quest_r1) 
+    self:Register (self.button_use, "button_use")        	
+    self.button_close = xml:Init3tButton ("form_katalizator_quest_r1:btn_close", self.form_katalizator_quest_r1) 
+    self:Register (self.button_close, "button_close")
+end
+
+function ui_zam_variant_katalizator:Update()
+   CUIScriptWnd.Update(self)
+   if not object_alive(db.actor) then
+      self:HideDialog()
+   end   
+end
+
+function ui_zam_variant_katalizator:InitCallBacks() 
+    self:AddCallback("button_use", ui_events.BUTTON_CLICKED, self.OnButton_use_clicked, self)  
+	self:AddCallback("button_close", ui_events.BUTTON_CLICKED, self.OnButton_close_clicked, self)
+end
+
+function ui_zam_variant_katalizator:OnButton_use_clicked()
+    xr_effects.topi_zam_variant_quest_used()    
+	self.button_use:Enable(false)
+end
+
+function ui_zam_variant_katalizator:OnButton_close_clicked()
+    db.actor:give_info_portion("topi_zam_variant_quest_katalizator_set_close")    
+	self:HideDialog()
+end
+------------------------------------------------------------------------------
+--                           Тестирование раций                        --
+------------------------------------------------------------------------------
+class "ui_a105_razia_testing" (CUIScriptWnd)
+
+function ui_a105_razia_testing:__init(owner) super()
+   self.owner = owner
+   self:InitControls()
+   self:InitCallBacks()
+end
+function ui_a105_razia_testing:__finalize()
+end
+function ui_a105_razia_testing:InitControls()
+   self:SetWndRect(Frect():set(0,0,1024,768))
+   local xml = CScriptXmlInit()
+   xml:ParseFile("ui_gui_elements.xml")
+   self.razia_testing_form=xml:InitStatic("razia_testing_form",self)   
+   self.yad_text_1 = xml:InitStatic("razia_testing_form:yad_text_1", self.razia_testing_form)
+   self.yad_text_2 = xml:InitStatic("razia_testing_form:yad_text_2", self.razia_testing_form)
+   self.yad_text_3 = xml:InitStatic("razia_testing_form:yad_text_3", self.razia_testing_form)
+   self.yad_text_4 = xml:InitStatic("razia_testing_form:yad_text_4", self.razia_testing_form)
+   self.yad_text_5 = xml:InitStatic("razia_testing_form:yad_text_5", self.razia_testing_form)
+   self:register_element(xml,"text_field_1")
+   self:register_element(xml,"text_field_2")
+   self:register_element(xml,"text_field_3")
+   self:register_element(xml,"text_field_4")
+   self:register_element(xml,"text_field_5")
+   if (not has_alife_info("topi_mechanic_testing_1_razia")) then
+     self.btn_1_slot = xml:Init3tButton ("razia_testing_form:btn_1_slot", self.razia_testing_form) 
+     self:Register (self.btn_1_slot, "btn_1_slot")	 
+   end
+   if (not has_alife_info("topi_mechanic_testing_2_razia")) then
+     self.btn_2_slot = xml:Init3tButton ("razia_testing_form:btn_2_slot", self.razia_testing_form) 
+     self:Register (self.btn_2_slot, "btn_2_slot")
+	 --self.btn_2_slot:Enable(false)
+   end
+   if (not has_alife_info("topi_mechanic_testing_3_razia")) then
+     self.btn_3_slot = xml:Init3tButton ("razia_testing_form:btn_3_slot", self.razia_testing_form) 
+     self:Register (self.btn_3_slot, "btn_3_slot")
+	 --self.btn_3_slot:Enable(false)
+   end
+   if (not has_alife_info("topi_mechanic_testing_4_razia")) then
+     self.btn_4_slot = xml:Init3tButton ("razia_testing_form:btn_4_slot", self.razia_testing_form) 
+     self:Register (self.btn_4_slot, "btn_4_slot")
+	 --self.btn_4_slot:Enable(false)
+   end
+   if (not has_alife_info("topi_mechanic_testing_5_razia")) then
+     self.btn_5_slot = xml:Init3tButton ("razia_testing_form:btn_5_slot", self.razia_testing_form) 
+     self:Register (self.btn_5_slot, "btn_5_slot")
+	 --self.btn_5_slot:Enable(false)
+   end 
+   if has_alife_info("topi_mechanic_testing_1_razia") then
+     self.btn_1_1_slot = xml:Init3tButton ("razia_testing_form:btn_1_1_slot", self.razia_testing_form) 
+     self:Register (self.btn_1_1_slot, "btn_1_1_slot")
+     self.btn_1_1_slot:Enable(false)	 
+   end
+   if has_alife_info("topi_mechanic_testing_2_razia") then
+     self.btn_2_1_slot = xml:Init3tButton ("razia_testing_form:btn_2_1_slot", self.razia_testing_form) 
+     self:Register (self.btn_2_1_slot, "btn_2_1_slot")
+     self.btn_2_1_slot:Enable(false)
+   end
+   if has_alife_info("topi_mechanic_testing_3_razia") then
+     self.btn_3_1_slot = xml:Init3tButton ("razia_testing_form:btn_3_1_slot", self.razia_testing_form) 
+     self:Register (self.btn_3_1_slot, "btn_3_1_slot")
+     self.btn_3_1_slot:Enable(false)
+   end
+   if has_alife_info("topi_mechanic_testing_4_razia") then
+     self.btn_4_1_slot = xml:Init3tButton ("razia_testing_form:btn_4_1_slot", self.razia_testing_form) 
+     self:Register (self.btn_4_1_slot, "btn_4_1_slot")
+     self.btn_4_1_slot:Enable(false)
+   end
+   if has_alife_info("topi_mechanic_testing_5_razia") then
+     self.btn_5_1_slot = xml:Init3tButton ("razia_testing_form:btn_5_1_slot", self.razia_testing_form) 
+     self:Register (self.btn_5_1_slot, "btn_5_1_slot")
+     self.btn_5_1_slot:Enable(false)
+   end   
+   self.btn_close = xml:Init3tButton ("razia_testing_form:btn_close", self.razia_testing_form) 
+   self:Register (self.btn_close, "btn_close")
+   self.btn_close:Enable(false)   
+   self.btn_1_slot_count=xml:InitStatic("razia_testing_form:btn_1_slot_count",self.razia_testing_form)
+   self.btn_1_slot_count:TextControl():SetText("0")   
+   self.btn_2_slot_count=xml:InitStatic("razia_testing_form:btn_2_slot_count",self.razia_testing_form)
+   self.btn_2_slot_count:TextControl():SetText("0") 
+   self.btn_3_slot_count=xml:InitStatic("razia_testing_form:btn_3_slot_count",self.razia_testing_form)
+   self.btn_3_slot_count:TextControl():SetText("0") 
+   self.btn_4_slot_count=xml:InitStatic("razia_testing_form:btn_4_slot_count",self.razia_testing_form)
+   self.btn_4_slot_count:TextControl():SetText("0")    
+   self.btn_5_slot_count=xml:InitStatic("razia_testing_form:btn_5_slot_count",self.razia_testing_form)
+   self.btn_5_slot_count:TextControl():SetText("0") 
+   self.form_title=xml:InitStatic("razia_testing_form:form_title",self.razia_testing_form)   
+   self.need_artefacts_box=CUIMessageBoxEx()
+   self:Register(self.need_artefacts_box,"need_artefacts_box")
+end
+function ui_a105_razia_testing:InitCallBacks()
+   self:AddCallback("btn_1_slot",ui_events.BUTTON_CLICKED,self.on_btn_1_slot,self)
+   self:AddCallback("btn_2_slot",ui_events.BUTTON_CLICKED,self.on_btn_2_slot,self)
+   self:AddCallback("btn_3_slot",ui_events.BUTTON_CLICKED,self.on_btn_3_slot,self)
+   self:AddCallback("btn_4_slot",ui_events.BUTTON_CLICKED,self.on_btn_4_slot,self)
+   self:AddCallback("btn_5_slot",ui_events.BUTTON_CLICKED,self.on_btn_5_slot,self)
+   self:AddCallback("btn_close",ui_events.BUTTON_CLICKED,self.on_btn_close,self)   
+   self:AddCallback("need_artefacts_box",ui_events.MESSAGE_BOX_YES_CLICKED,self.need_artefacts_box_ok,self)
+   self:AddCallback("need_artefacts_box",ui_events.MESSAGE_BOX_OK_CLICKED,self.need_artefacts_box_ok,self)
+end
+function ui_a105_razia_testing:need_artefacts_box_ok()
+   self.need_artefacts_box:ShowDialog(false)
+   self.need_artefacts_box:HideDialog()
+end
+
+function ui_a105_razia_testing:Update()
+   CUIScriptWnd.Update(self)
+   if not object_alive(db.actor) then
+      self:on_btn_close()
+   end
+   self.form_title:TextControl():SetText(game.translate_string("st_razia_form_title"))
+   self.text_field_1:TextControl():SetText(game.translate_string("st_ach_razia_descr_1"))
+   self.text_field_2:TextControl():SetText(game.translate_string("st_ach_razia_descr_2"))
+   self.text_field_3:TextControl():SetText(game.translate_string("st_ach_razia_descr_3"))
+   self.text_field_4:TextControl():SetText(game.translate_string("st_ach_razia_descr_4"))
+   self.text_field_5:TextControl():SetText(game.translate_string("st_ach_razia_descr_5"))
+   if has_alife_info("topi_mechanic_testing_1_razia") then
+      self.btn_1_slot_count:TextControl():SetText("1")
+	  self.yad_text_1:TextControl():SetText("Тест завершен")
+   end
+   if has_alife_info("topi_mechanic_testing_2_razia") then
+      self.btn_2_slot_count:TextControl():SetText("1")
+	  self.yad_text_2:TextControl():SetText("Тест завершен")
+   end
+   if has_alife_info("topi_mechanic_testing_3_razia") then
+      self.btn_3_slot_count:TextControl():SetText("1")
+	  self.yad_text_3:TextControl():SetText("Тест завершен")
+   end
+   if has_alife_info("topi_mechanic_testing_4_razia") then
+      self.btn_4_slot_count:TextControl():SetText("1")
+	  self.yad_text_4:TextControl():SetText("Тест завершен")
+   end
+   if has_alife_info("topi_mechanic_testing_5_razia") then
+      self.btn_5_slot_count:TextControl():SetText("1")
+	  self.yad_text_5:TextControl():SetText("Тест завершен")
+   end   
+end
+
+function ui_a105_razia_testing:on_btn_1_slot()    
+   if has_alife_info("topi_mechanic_razia_quest_talking_1") then      
+      self.yad_text_1:TextControl():SetText("Тест завершен")
+	  self.btn_1_slot_count:TextControl():SetText("1")
+	  db.actor:give_info_portion("topi_mechanic_testing_1_razia")
+      self.btn_1_slot:Enable(false)
+	  self.btn_2_slot:Enable(true) 
+    end
+    if not has_alife_info("topi_mechanic_razia_quest_talking_1") then
+       self.need_artefacts_box:InitMessageBox("mb_need_precond_to_test_razia")
+       self.need_artefacts_box:ShowDialog(true)
+    end	
+end
+
+function ui_a105_razia_testing:on_btn_2_slot()
+  if has_alife_info("topi_mechanic_testing_1_razia") then     
+	db.actor:give_info_portion("topi_mechanic_testing_2_razia")
+	self.btn_2_slot_count:TextControl():SetText("1")
+	self.yad_text_2:TextControl():SetText("Тест завершен")
+    self.btn_2_slot:Enable(false)
+    self.btn_3_slot:Enable(true)   
+  end 
+  if not has_alife_info("topi_mechanic_testing_1_razia") then
+    self.need_artefacts_box:InitMessageBox("mb_need_precond_to_test_razia")
+    self.need_artefacts_box:ShowDialog(true)
+  end   
+end
+
+function ui_a105_razia_testing:on_btn_3_slot()
+  if has_alife_info("topi_mechanic_testing_2_razia") then    
+	db.actor:give_info_portion("topi_mechanic_testing_3_razia")
+	self.btn_3_slot_count:TextControl():SetText("1")
+	self.yad_text_3:TextControl():SetText("Тест завершен")
+    self.btn_3_slot:Enable(false)
+    self.btn_4_slot:Enable(true)   
+  end 
+  if not has_alife_info("topi_mechanic_testing_2_razia") then
+    self.need_artefacts_box:InitMessageBox("mb_need_precond_to_test_razia")
+    self.need_artefacts_box:ShowDialog(true)
+  end   
+end
+
+function ui_a105_razia_testing:on_btn_4_slot()
+  if has_alife_info("topi_mechanic_testing_3_razia") then    
+	db.actor:give_info_portion("topi_mechanic_testing_4_razia")
+	self.btn_4_slot_count:TextControl():SetText("1")
+	self.yad_text_4:TextControl():SetText("Тест завершен")
+    self.btn_4_slot:Enable(false)
+    self.btn_5_slot:Enable(true)   
+  end 
+  if not has_alife_info("topi_mechanic_testing_3_razia") then
+    self.need_artefacts_box:InitMessageBox("mb_need_precond_to_test_razia")
+    self.need_artefacts_box:ShowDialog(true)
+  end   
+end
+
+function ui_a105_razia_testing:on_btn_5_slot()
+  if has_alife_info("topi_mechanic_testing_4_razia") then    
+	db.actor:give_info_portion("topi_mechanic_testing_5_razia")
+	self.btn_5_slot_count:TextControl():SetText("1")
+	self.yad_text_5:TextControl():SetText("Тест завершен")
+    self.btn_5_slot:Enable(false)
+    self.btn_close:Enable(true)	
+  end 
+  if not has_alife_info("topi_mechanic_testing_4_razia") then
+    self.need_artefacts_box:InitMessageBox("mb_need_precond_to_test_razia")
+    self.need_artefacts_box:ShowDialog(true)
+  end   
+end
+
+function ui_a105_razia_testing:on_btn_close()
+   db.actor:give_info_portion("topi_mechanic_testing_all_razia_close")
+   self:HideDialog()
+end
+
+function ui_a105_razia_testing:register_element(xml,element_name)
+   self[element_name]=xml:InitStatic("razia_testing_form:"..element_name,self.razia_testing_form)
+end
+
+------------------------------------------------------------------------------
+--                           Окно Дозиметра Радиометра                      --
+------------------------------------------------------------------------------
+class "ui_dozimetr_vphr" (CUIScriptWnd)
+
+function ui_dozimetr_vphr:__init(owner) super()
+   self.owner = owner
+   self:InitControls()
+   self:InitCallBacks()
+end
+function ui_dozimetr_vphr:__finalize()
+end
+function ui_dozimetr_vphr:InitControls()
+   self:SetWndRect(Frect():set(0,0,1024,768))
+   local xml = CScriptXmlInit()
+   xml:ParseFile("ui_gui_elements.xml")
+   self.dozimetr_vphr_form=xml:InitStatic("dozimetr_vphr_form",self)  
+   self.helper=CUIMessageBoxEx()
+   self:Register(self.helper,"helper")	
+   ctrl = xml:Init3tButton	("dozimetr_vphr_form:btn_help_1",	self.dozimetr_vphr_form)
+   self:Register			(ctrl, "button_help_1")  
+   ctrl = xml:Init3tButton	("dozimetr_vphr_form:btn_help_2",	self.dozimetr_vphr_form)
+   self:Register			(ctrl, "button_help_2")
+   ctrl = xml:Init3tButton	("dozimetr_vphr_form:btn_help_3",	self.dozimetr_vphr_form)
+   self:Register			(ctrl, "button_help_3")
+   ctrl = xml:Init3tButton	("dozimetr_vphr_form:btn_help_4",	self.dozimetr_vphr_form)
+   self:Register			(ctrl, "button_help_4")   
+   self.yad_text_1 = xml:InitStatic("dozimetr_vphr_form:yad_text_1", self.dozimetr_vphr_form)
+   self.yad_text_2 = xml:InitStatic("dozimetr_vphr_form:yad_text_2", self.dozimetr_vphr_form)
+   self.yad_text_3 = xml:InitStatic("dozimetr_vphr_form:yad_text_3", self.dozimetr_vphr_form)
+   self.yad_text_4 = xml:InitStatic("dozimetr_vphr_form:yad_text_4", self.dozimetr_vphr_form)  
+   self:register_element(xml,"text_field_1")
+   self.text_field_1:TextControl():SetText(game.translate_string("st_vphr_dutchik_descr_1"))
+   self:register_element(xml,"text_field_2")
+   self.text_field_2:TextControl():SetText(game.translate_string("st_vphr_dutchik_descr_2"))
+   self:register_element(xml,"text_field_3")
+   self.text_field_3:TextControl():SetText(game.translate_string("st_vphr_dutchik_descr_3"))
+   self:register_element(xml,"text_field_4") 
+   self.text_field_4:TextControl():SetText(game.translate_string("st_vphr_dutchik_descr_4"))
+   self.result_text_1 = xml:InitStatic("dozimetr_vphr_form:result_text_1", self.dozimetr_vphr_form)
+   self.result_text_2 = xml:InitStatic("dozimetr_vphr_form:result_text_2", self.dozimetr_vphr_form)
+   self.result_text_3 = xml:InitStatic("dozimetr_vphr_form:result_text_3", self.dozimetr_vphr_form)
+   self.result_text_4 = xml:InitStatic("dozimetr_vphr_form:result_text_4", self.dozimetr_vphr_form)   
+   self.btn_1_slot = xml:Init3tButton ("dozimetr_vphr_form:btn_1_slot", self.dozimetr_vphr_form) 
+   self:Register (self.btn_1_slot, "btn_1_slot")	 
+   self.btn_2_slot = xml:Init3tButton ("dozimetr_vphr_form:btn_2_slot", self.dozimetr_vphr_form) 
+   self:Register (self.btn_2_slot, "btn_2_slot")
+   self.btn_2_slot:Enable(false)
+   self.btn_3_slot = xml:Init3tButton ("dozimetr_vphr_form:btn_3_slot", self.dozimetr_vphr_form) 
+   self:Register (self.btn_3_slot, "btn_3_slot")
+   self.btn_3_slot:Enable(false)
+   self.btn_4_slot = xml:Init3tButton ("dozimetr_vphr_form:btn_4_slot", self.dozimetr_vphr_form) 
+   self:Register (self.btn_4_slot, "btn_4_slot")
+   self.btn_4_slot:Enable(false)
+   self.btn_close = xml:Init3tButton ("dozimetr_vphr_form:btn_close", self.dozimetr_vphr_form) 
+   self:Register (self.btn_close, "btn_close")
+   self.btn_close:Enable(false)   
+   self.btn_1_slot_count=xml:InitStatic("dozimetr_vphr_form:btn_1_slot_count",self.dozimetr_vphr_form)
+   self.btn_1_slot_count:TextControl():SetText("0")   
+   self.btn_2_slot_count=xml:InitStatic("dozimetr_vphr_form:btn_2_slot_count",self.dozimetr_vphr_form)
+   self.btn_2_slot_count:TextControl():SetText("0") 
+   self.btn_3_slot_count=xml:InitStatic("dozimetr_vphr_form:btn_3_slot_count",self.dozimetr_vphr_form)
+   self.btn_3_slot_count:TextControl():SetText("0") 
+   self.btn_4_slot_count=xml:InitStatic("dozimetr_vphr_form:btn_4_slot_count",self.dozimetr_vphr_form)
+   self.btn_4_slot_count:TextControl():SetText("0")   
+   self.form_title_1=xml:InitStatic("dozimetr_vphr_form:form_title_1",self.dozimetr_vphr_form) 
+   self.form_title_1:TextControl():SetText(game.translate_string("st_dozimetr_vphr_form_title_1"))   
+end
+
+function ui_dozimetr_vphr:Update()
+   CUIScriptWnd.Update(self)
+   if not object_alive(db.actor) then
+      self:HideDialog()
+   end   
+end
+
+function ui_dozimetr_vphr:InitCallBacks()
+   self:AddCallback("helper",ui_events.MESSAGE_BOX_YES_CLICKED,self.need_helper_ok,self)
+   self:AddCallback("helper",ui_events.MESSAGE_BOX_OK_CLICKED,self.need_helper_ok,self)
+   self:AddCallback("btn_1_slot",ui_events.BUTTON_CLICKED,self.on_btn_1_slot,self)
+   self:AddCallback("btn_2_slot",ui_events.BUTTON_CLICKED,self.on_btn_2_slot,self)
+   self:AddCallback("btn_3_slot",ui_events.BUTTON_CLICKED,self.on_btn_3_slot,self)
+   self:AddCallback("btn_4_slot",ui_events.BUTTON_CLICKED,self.on_btn_4_slot,self)
+   self:AddCallback("button_help_1", ui_events.BUTTON_CLICKED, self.OnButton_help_1_clicked, self)
+   self:AddCallback("button_help_2", ui_events.BUTTON_CLICKED, self.OnButton_help_2_clicked, self)
+   self:AddCallback("button_help_3", ui_events.BUTTON_CLICKED, self.OnButton_help_3_clicked, self)
+   self:AddCallback("button_help_4", ui_events.BUTTON_CLICKED, self.OnButton_help_4_clicked, self)      
+   self:AddCallback("btn_close",ui_events.BUTTON_CLICKED,self.on_btn_close,self)   
+end
+
+function ui_dozimetr_vphr:on_btn_1_slot()   
+      self.yad_text_1:TextControl():SetText("Измерение выполнено")
+	  self.btn_1_slot_count:TextControl():SetText("1")	
+      self.result_text_1:TextControl():SetText("Отрицательный")	  
+      self.btn_1_slot:Enable(false)
+      self.btn_2_slot:Enable(true)	  
+end
+
+function ui_dozimetr_vphr:on_btn_2_slot()   
+      self.yad_text_2:TextControl():SetText("Измерение выполнено")
+	  self.btn_2_slot_count:TextControl():SetText("1")	
+      self.result_text_2:TextControl():SetText("Отрицательный")	  
+      self.btn_2_slot:Enable(false) 
+      self.btn_3_slot:Enable(true)	  
+end
+
+function ui_dozimetr_vphr:on_btn_3_slot()   
+      self.yad_text_3:TextControl():SetText("Измерение выполнено")
+	  self.btn_3_slot_count:TextControl():SetText("1")	
+      self.result_text_3:TextControl():SetText("Положительный")	  
+      self.btn_3_slot:Enable(false) 
+      self.btn_4_slot:Enable(true)	  
+end
+
+function ui_dozimetr_vphr:on_btn_4_slot()  
+      xr_effects.topi_b1_leader_third_quest_used() 
+      self.yad_text_4:TextControl():SetText("Измерение выполнено")
+	  self.btn_4_slot_count:TextControl():SetText("1")	
+      self.result_text_4:TextControl():SetText("Отрицательный")	  
+      self.btn_4_slot:Enable(false) 
+      self.btn_close:Enable(true)	  
+end
+
+function ui_dozimetr_vphr:need_helper_ok()
+   self.helper:ShowDialog(false)
+   self.helper:HideDialog()
+end
+
+function ui_dozimetr_vphr:OnButton_help_1_clicked()
+	self.helper:InitMessageBox("mb_dozimetr_vphr_item_1")
+    self.helper:ShowDialog(true)	
+end
+
+function ui_dozimetr_vphr:OnButton_help_2_clicked()
+	self.helper:InitMessageBox("mb_dozimetr_vphr_item_2")
+    self.helper:ShowDialog(true)	
+end
+
+function ui_dozimetr_vphr:OnButton_help_3_clicked()
+	self.helper:InitMessageBox("mb_dozimetr_vphr_item_3")
+    self.helper:ShowDialog(true)	
+end
+
+function ui_dozimetr_vphr:OnButton_help_4_clicked()
+	self.helper:InitMessageBox("mb_dozimetr_vphr_item_4")
+    self.helper:ShowDialog(true)	
+end
+
+function ui_dozimetr_vphr:on_btn_close() 
+   db.actor:give_info_portion("topi_b1_leader_third_quest_used_close")
+   give_object_to_actor("topi_b1_leader_vphr_doc")  
+   self:HideDialog()
+end
+
+function ui_dozimetr_vphr:register_element(xml,element_name)
+   self[element_name]=xml:InitStatic("dozimetr_vphr_form:"..element_name,self.dozimetr_vphr_form)
+end
+
+-----------------------------------------------
+class "ui_multimetr_quest_r2" (CUIScriptWnd)
+
+function ui_multimetr_quest_r2:__init(owner) super()
+	self.owner = owner
+	self:InitControls()
+	self:InitCallBacks()
+end
+
+function ui_multimetr_quest_r2:__finalize()
+end
+
+function ui_multimetr_quest_r2:InitControls()
+	self:SetWndRect			(Frect():set(0,0,1024,768))
+	local xml, ctrl			= CScriptXmlInit(), CUIWindow()
+	xml:ParseFile			("ui_gui_elements.xml")
+	self.form_multimetr_quest_r2				= xml:InitStatic("form_multimetr_quest_r2",self)
+
+	xml:InitStatic			("form_multimetr_quest_r2:caption",self.form_multimetr_quest_r2)
+    
+    self.button_use = xml:Init3tButton ("form_multimetr_quest_r2:btn_use", self.form_multimetr_quest_r2) 
+    self:Register (self.button_use, "button_use")        	
+    self.button_close = xml:Init3tButton ("form_multimetr_quest_r2:btn_close", self.form_multimetr_quest_r2) 
+    self:Register (self.button_close, "button_close")
+end
+
+function ui_multimetr_quest_r2:Update()
+   CUIScriptWnd.Update(self)
+   if not object_alive(db.actor) then
+      self:HideDialog()
+   end   
+end
+
+function ui_multimetr_quest_r2:InitCallBacks() 
+    self:AddCallback("button_use", ui_events.BUTTON_CLICKED, self.OnButton_use_clicked, self)  
+	self:AddCallback("button_close", ui_events.BUTTON_CLICKED, self.OnButton_close_clicked, self)
+end
+
+function ui_multimetr_quest_r2:OnButton_use_clicked()
+    xr_effects.topi_multimetr_quest_2_used()    
+	self.button_use:Enable(false)
+end
+
+function ui_multimetr_quest_r2:OnButton_close_clicked()
+    db.actor:give_info_portion("topi_radist_multimetr_tai_1_set_close")    
+	self:HideDialog()
+end
+
+-----------------------------------------------
+class "ui_multimetr_quest_r1" (CUIScriptWnd)
+
+function ui_multimetr_quest_r1:__init(owner) super()
+	self.owner = owner
+	self:InitControls()
+	self:InitCallBacks()
+end
+
+function ui_multimetr_quest_r1:__finalize()
+end
+
+function ui_multimetr_quest_r1:InitControls()
+	self:SetWndRect			(Frect():set(0,0,1024,768))
+	local xml, ctrl			= CScriptXmlInit(), CUIWindow()
+	xml:ParseFile			("ui_gui_elements.xml")
+	self.form_multimetr_quest_r1				= xml:InitStatic("form_multimetr_quest_r1",self)
+
+	xml:InitStatic			("form_multimetr_quest_r1:caption",self.form_multimetr_quest_r1)
+    
+    self.button_use = xml:Init3tButton ("form_multimetr_quest_r1:btn_use", self.form_multimetr_quest_r1) 
+    self:Register (self.button_use, "button_use")        	
+    self.button_close = xml:Init3tButton ("form_multimetr_quest_r1:btn_close", self.form_multimetr_quest_r1) 
+    self:Register (self.button_close, "button_close")
+end
+
+function ui_multimetr_quest_r1:Update()
+   CUIScriptWnd.Update(self)
+   if not object_alive(db.actor) then
+      self:HideDialog()
+   end   
+end
+
+function ui_multimetr_quest_r1:InitCallBacks() 
+    self:AddCallback("button_use", ui_events.BUTTON_CLICKED, self.OnButton_use_clicked, self)  
+	self:AddCallback("button_close", ui_events.BUTTON_CLICKED, self.OnButton_close_clicked, self)
+end
+
+function ui_multimetr_quest_r1:OnButton_use_clicked()
+    xr_effects.topi_multimetr_quest_1_used()    
+	self.button_use:Enable(false)
+end
+
+function ui_multimetr_quest_r1:OnButton_close_clicked()
+    db.actor:give_info_portion("topi_radist_multimetr_quest_used_1_close")    
+	self:HideDialog()
+end
+-----------------------------------------------
+class "ui_fugas_quest_r1" (CUIScriptWnd)
+
+function ui_fugas_quest_r1:__init(owner) super()
+	self.owner = owner
+	self:InitControls()
+	self:InitCallBacks()
+end
+
+function ui_fugas_quest_r1:__finalize()
+end
+
+function ui_fugas_quest_r1:InitControls()
+	self:SetWndRect			(Frect():set(0,0,1024,768))
+	local xml, ctrl			= CScriptXmlInit(), CUIWindow()
+	xml:ParseFile			("ui_gui_elements.xml")
+	self.form_fugas_quest_r1				= xml:InitStatic("form_fugas_quest_r1",self)
+
+	xml:InitStatic			("form_fugas_quest_r1:caption",self.form_fugas_quest_r1)
+    
+    self.button_use = xml:Init3tButton ("form_fugas_quest_r1:btn_use", self.form_fugas_quest_r1) 
+    self:Register (self.button_use, "button_use")        	
+    self.button_close = xml:Init3tButton ("form_fugas_quest_r1:btn_close", self.form_fugas_quest_r1) 
+    self:Register (self.button_close, "button_close")
+end
+
+function ui_fugas_quest_r1:Update()
+   CUIScriptWnd.Update(self)
+   if not object_alive(db.actor) then
+      self:HideDialog()
+   end   
+end
+
+function ui_fugas_quest_r1:InitCallBacks() 
+    self:AddCallback("button_use", ui_events.BUTTON_CLICKED, self.OnButton_use_clicked, self)  
+	self:AddCallback("button_close", ui_events.BUTTON_CLICKED, self.OnButton_close_clicked, self)
+end
+
+function ui_fugas_quest_r1:OnButton_use_clicked()
+    xr_effects.topi_fugas_quest_1_used()    
+	self.button_use:Enable(false)
+end
+
+function ui_fugas_quest_r1:OnButton_close_clicked()
+    db.actor:give_info_portion("topi_suget_quest_4_fugas_1_instal_close")    
+	self:HideDialog()
+end
+-----------------------------------------------
+class "ui_fugas_quest_r2" (CUIScriptWnd)
+
+function ui_fugas_quest_r2:__init(owner) super()
+	self.owner = owner
+	self:InitControls()
+	self:InitCallBacks()
+end
+
+function ui_fugas_quest_r2:__finalize()
+end
+
+function ui_fugas_quest_r2:InitControls()
+	self:SetWndRect			(Frect():set(0,0,1024,768))
+	local xml, ctrl			= CScriptXmlInit(), CUIWindow()
+	xml:ParseFile			("ui_gui_elements.xml")
+	self.form_fugas_quest_r2				= xml:InitStatic("form_fugas_quest_r2",self)
+
+	xml:InitStatic			("form_fugas_quest_r2:caption",self.form_fugas_quest_r2)
+    
+    self.button_use = xml:Init3tButton ("form_fugas_quest_r2:btn_use", self.form_fugas_quest_r2) 
+    self:Register (self.button_use, "button_use")        	
+    self.button_close = xml:Init3tButton ("form_fugas_quest_r2:btn_close", self.form_fugas_quest_r2) 
+    self:Register (self.button_close, "button_close")
+end
+
+function ui_fugas_quest_r2:Update()
+   CUIScriptWnd.Update(self)
+   if not object_alive(db.actor) then
+      self:HideDialog()
+   end   
+end
+
+function ui_fugas_quest_r2:InitCallBacks() 
+    self:AddCallback("button_use", ui_events.BUTTON_CLICKED, self.OnButton_use_clicked, self)  
+	self:AddCallback("button_close", ui_events.BUTTON_CLICKED, self.OnButton_close_clicked, self)
+end
+
+function ui_fugas_quest_r2:OnButton_use_clicked()
+    xr_effects.topi_fugas_quest_2_used()  
+	self.button_use:Enable(false)
+end
+
+function ui_fugas_quest_r2:OnButton_close_clicked()
+    db.actor:give_info_portion("topi_suget_quest_4_fugas_2_instal_close")    
+	self:HideDialog()
+end
+-----------------------------------------------
+class "ui_fugas_quest_r3" (CUIScriptWnd)
+
+function ui_fugas_quest_r3:__init(owner) super()
+	self.owner = owner
+	self:InitControls()
+	self:InitCallBacks()
+end
+
+function ui_fugas_quest_r3:__finalize()
+end
+
+function ui_fugas_quest_r3:InitControls()
+	self:SetWndRect			(Frect():set(0,0,1024,768))
+	local xml, ctrl			= CScriptXmlInit(), CUIWindow()
+	xml:ParseFile			("ui_gui_elements.xml")
+	self.form_fugas_quest_r3				= xml:InitStatic("form_fugas_quest_r3",self)
+
+	xml:InitStatic			("form_fugas_quest_r3:caption",self.form_fugas_quest_r3)
+    
+    self.button_use = xml:Init3tButton ("form_fugas_quest_r3:btn_use", self.form_fugas_quest_r3) 
+    self:Register (self.button_use, "button_use")        	
+    self.button_close = xml:Init3tButton ("form_fugas_quest_r3:btn_close", self.form_fugas_quest_r3) 
+    self:Register (self.button_close, "button_close")
+end
+
+function ui_fugas_quest_r3:Update()
+   CUIScriptWnd.Update(self)
+   if not object_alive(db.actor) then
+      self:HideDialog()
+   end   
+end
+
+function ui_fugas_quest_r3:InitCallBacks() 
+    self:AddCallback("button_use", ui_events.BUTTON_CLICKED, self.OnButton_use_clicked, self)  
+	self:AddCallback("button_close", ui_events.BUTTON_CLICKED, self.OnButton_close_clicked, self)
+end
+
+function ui_fugas_quest_r3:OnButton_use_clicked()
+    xr_effects.topi_fugas_quest_3_used()    
+	self.button_use:Enable(false)
+end
+
+function ui_fugas_quest_r3:OnButton_close_clicked()
+    db.actor:give_info_portion("topi_suget_quest_4_fugas_3_instal_close")    
+	self:HideDialog()
+end
+
+-----------------------------------------------
+class "ui_faraon_quest_r1" (CUIScriptWnd)
+
+function ui_faraon_quest_r1:__init(owner) super()
+	self.owner = owner
+	self:InitControls()
+	self:InitCallBacks()
+end
+
+function ui_faraon_quest_r1:__finalize()
+end
+
+function ui_faraon_quest_r1:InitControls()
+	self:SetWndRect			(Frect():set(0,0,1024,768))
+	local xml, ctrl			= CScriptXmlInit(), CUIWindow()
+	xml:ParseFile			("ui_gui_elements.xml")
+	self.form_faraon_quest_r1				= xml:InitStatic("form_faraon_quest_r1",self)
+
+	xml:InitStatic			("form_faraon_quest_r1:caption",self.form_faraon_quest_r1)
+    
+    self.button_use = xml:Init3tButton ("form_faraon_quest_r1:btn_use", self.form_faraon_quest_r1) 
+    self:Register (self.button_use, "button_use")        	
+    self.button_close = xml:Init3tButton ("form_faraon_quest_r1:btn_close", self.form_faraon_quest_r1) 
+    self:Register (self.button_close, "button_close")
+end
+
+function ui_faraon_quest_r1:Update()
+   CUIScriptWnd.Update(self)
+   if not object_alive(db.actor) then
+      self:HideDialog()
+   end   
+end
+
+function ui_faraon_quest_r1:InitCallBacks() 
+    self:AddCallback("button_use", ui_events.BUTTON_CLICKED, self.OnButton_use_clicked, self)  
+	self:AddCallback("button_close", ui_events.BUTTON_CLICKED, self.OnButton_close_clicked, self)
+end
+
+function ui_faraon_quest_r1:OnButton_use_clicked()
+    xr_effects.topi_snab_quest_rukzak_1_used()    
+	self.button_use:Enable(false)
+end
+
+function ui_faraon_quest_r1:OnButton_close_clicked()
+    db.actor:give_info_portion("topi_snab_quest_tai_1_set_close")    
+	self:HideDialog()
+end
+-----------------------------------------------
+class "ui_faraon_quest_r2" (CUIScriptWnd)
+
+function ui_faraon_quest_r2:__init(owner) super()
+	self.owner = owner
+	self:InitControls()
+	self:InitCallBacks()
+end
+
+function ui_faraon_quest_r2:__finalize()
+end
+
+function ui_faraon_quest_r2:InitControls()
+	self:SetWndRect			(Frect():set(0,0,1024,768))
+	local xml, ctrl			= CScriptXmlInit(), CUIWindow()
+	xml:ParseFile			("ui_gui_elements.xml")
+	self.form_faraon_quest_r2				= xml:InitStatic("form_faraon_quest_r2",self)
+
+	xml:InitStatic			("form_faraon_quest_r2:caption",self.form_faraon_quest_r2)
+    
+    self.button_use = xml:Init3tButton ("form_faraon_quest_r2:btn_use", self.form_faraon_quest_r2) 
+    self:Register (self.button_use, "button_use")        	
+    self.button_close = xml:Init3tButton ("form_faraon_quest_r2:btn_close", self.form_faraon_quest_r2) 
+    self:Register (self.button_close, "button_close")
+end
+
+function ui_faraon_quest_r2:Update()
+   CUIScriptWnd.Update(self)
+   if not object_alive(db.actor) then
+      self:HideDialog()
+   end   
+end
+
+function ui_faraon_quest_r2:InitCallBacks() 
+    self:AddCallback("button_use", ui_events.BUTTON_CLICKED, self.OnButton_use_clicked, self)  
+	self:AddCallback("button_close", ui_events.BUTTON_CLICKED, self.OnButton_close_clicked, self)
+end
+
+function ui_faraon_quest_r2:OnButton_use_clicked()
+    xr_effects.topi_snab_quest_rukzak_2_used()    
+	self.button_use:Enable(false)
+end
+
+function ui_faraon_quest_r2:OnButton_close_clicked()
+    db.actor:give_info_portion("topi_snab_quest_tai_2_set_close")    
+	self:HideDialog()
+end
+-----------------------------------------------
+class "ui_faraon_quest_r3" (CUIScriptWnd)
+
+function ui_faraon_quest_r3:__init(owner) super()
+	self.owner = owner
+	self:InitControls()
+	self:InitCallBacks()
+end
+
+function ui_faraon_quest_r3:__finalize()
+end
+
+function ui_faraon_quest_r3:InitControls()
+	self:SetWndRect			(Frect():set(0,0,1024,768))
+	local xml, ctrl			= CScriptXmlInit(), CUIWindow()
+	xml:ParseFile			("ui_gui_elements.xml")
+	self.form_faraon_quest_r3				= xml:InitStatic("form_faraon_quest_r3",self)
+
+	xml:InitStatic			("form_faraon_quest_r3:caption",self.form_faraon_quest_r3)
+    
+    self.button_use = xml:Init3tButton ("form_faraon_quest_r3:btn_use", self.form_faraon_quest_r3) 
+    self:Register (self.button_use, "button_use")        	
+    self.button_close = xml:Init3tButton ("form_faraon_quest_r3:btn_close", self.form_faraon_quest_r3) 
+    self:Register (self.button_close, "button_close")
+end
+
+function ui_faraon_quest_r3:Update()
+   CUIScriptWnd.Update(self)
+   if not object_alive(db.actor) then
+      self:HideDialog()
+   end   
+end
+
+function ui_faraon_quest_r3:InitCallBacks() 
+    self:AddCallback("button_use", ui_events.BUTTON_CLICKED, self.OnButton_use_clicked, self)  
+	self:AddCallback("button_close", ui_events.BUTTON_CLICKED, self.OnButton_close_clicked, self)
+end
+
+function ui_faraon_quest_r3:OnButton_use_clicked()
+    xr_effects.topi_snab_quest_rukzak_3_used()    
+	self.button_use:Enable(false)
+end
+
+function ui_faraon_quest_r3:OnButton_close_clicked()
+    db.actor:give_info_portion("topi_snab_quest_tai_3_set_close")    
+	self:HideDialog()
+end
+------------------------------------------------------------------------------
+--                           Окно Дозиметра Радиометра                      --
+------------------------------------------------------------------------------
+class "ui_dozimetr_radiometr" (CUIScriptWnd)
+
+function ui_dozimetr_radiometr:__init(owner) super()
+   self.owner = owner
+   self:InitControls()
+   self:InitCallBacks()
+end
+function ui_dozimetr_radiometr:__finalize()
+end
+function ui_dozimetr_radiometr:InitControls()
+   self:SetWndRect(Frect():set(0,0,1024,768))
+   local xml = CScriptXmlInit()
+   xml:ParseFile("ui_gui_elements.xml")
+   self.dozimetr_radiometr_form=xml:InitStatic("dozimetr_radiometr_form",self)  
+   self.helper=CUIMessageBoxEx()
+   self:Register(self.helper,"helper")	
+   ctrl = xml:Init3tButton	("dozimetr_radiometr_form:btn_help_1",	self.dozimetr_radiometr_form)
+   self:Register			(ctrl, "button_help_1")  
+   ctrl = xml:Init3tButton	("dozimetr_radiometr_form:btn_help_2",	self.dozimetr_radiometr_form)
+   self:Register			(ctrl, "button_help_2")
+   ctrl = xml:Init3tButton	("dozimetr_radiometr_form:btn_help_3",	self.dozimetr_radiometr_form)
+   self:Register			(ctrl, "button_help_3")
+   ctrl = xml:Init3tButton	("dozimetr_radiometr_form:btn_help_4",	self.dozimetr_radiometr_form)
+   self:Register			(ctrl, "button_help_4")   
+   self.yad_text_1 = xml:InitStatic("dozimetr_radiometr_form:yad_text_1", self.dozimetr_radiometr_form)
+   self.yad_text_2 = xml:InitStatic("dozimetr_radiometr_form:yad_text_2", self.dozimetr_radiometr_form)
+   self.yad_text_3 = xml:InitStatic("dozimetr_radiometr_form:yad_text_3", self.dozimetr_radiometr_form)
+   self.yad_text_4 = xml:InitStatic("dozimetr_radiometr_form:yad_text_4", self.dozimetr_radiometr_form)  
+   self:register_element(xml,"text_field_1")
+   self.text_field_1:TextControl():SetText(game.translate_string("st_dozimetr_dutchik_descr_1"))
+   self:register_element(xml,"text_field_2")
+   self.text_field_2:TextControl():SetText(game.translate_string("st_dozimetr_dutchik_descr_2"))
+   self:register_element(xml,"text_field_3")
+   self.text_field_3:TextControl():SetText(game.translate_string("st_dozimetr_dutchik_descr_3"))
+   self:register_element(xml,"text_field_4") 
+   self.text_field_4:TextControl():SetText(game.translate_string("st_dozimetr_dutchik_descr_4"))
+   self.result_text_1 = xml:InitStatic("dozimetr_radiometr_form:result_text_1", self.dozimetr_radiometr_form)
+   self.result_text_2 = xml:InitStatic("dozimetr_radiometr_form:result_text_2", self.dozimetr_radiometr_form)
+   self.result_text_3 = xml:InitStatic("dozimetr_radiometr_form:result_text_3", self.dozimetr_radiometr_form)
+   self.result_text_4 = xml:InitStatic("dozimetr_radiometr_form:result_text_4", self.dozimetr_radiometr_form)   
+   self.btn_1_slot = xml:Init3tButton ("dozimetr_radiometr_form:btn_1_slot", self.dozimetr_radiometr_form) 
+   self:Register (self.btn_1_slot, "btn_1_slot")	 
+   self.btn_2_slot = xml:Init3tButton ("dozimetr_radiometr_form:btn_2_slot", self.dozimetr_radiometr_form) 
+   self:Register (self.btn_2_slot, "btn_2_slot")
+   self.btn_2_slot:Enable(false)
+   self.btn_3_slot = xml:Init3tButton ("dozimetr_radiometr_form:btn_3_slot", self.dozimetr_radiometr_form) 
+   self:Register (self.btn_3_slot, "btn_3_slot")
+   self.btn_3_slot:Enable(false)
+   self.btn_4_slot = xml:Init3tButton ("dozimetr_radiometr_form:btn_4_slot", self.dozimetr_radiometr_form) 
+   self:Register (self.btn_4_slot, "btn_4_slot")
+   self.btn_4_slot:Enable(false)
+   self.btn_close = xml:Init3tButton ("dozimetr_radiometr_form:btn_close", self.dozimetr_radiometr_form) 
+   self:Register (self.btn_close, "btn_close")
+   self.btn_close:Enable(false)   
+   self.btn_1_slot_count=xml:InitStatic("dozimetr_radiometr_form:btn_1_slot_count",self.dozimetr_radiometr_form)
+   self.btn_1_slot_count:TextControl():SetText("0")   
+   self.btn_2_slot_count=xml:InitStatic("dozimetr_radiometr_form:btn_2_slot_count",self.dozimetr_radiometr_form)
+   self.btn_2_slot_count:TextControl():SetText("0") 
+   self.btn_3_slot_count=xml:InitStatic("dozimetr_radiometr_form:btn_3_slot_count",self.dozimetr_radiometr_form)
+   self.btn_3_slot_count:TextControl():SetText("0") 
+   self.btn_4_slot_count=xml:InitStatic("dozimetr_radiometr_form:btn_4_slot_count",self.dozimetr_radiometr_form)
+   self.btn_4_slot_count:TextControl():SetText("0")   
+   self.form_title_1=xml:InitStatic("dozimetr_radiometr_form:form_title_1",self.dozimetr_radiometr_form) 
+   self.form_title_1:TextControl():SetText(game.translate_string("st_dozimetr_radiometr_form_title_1"))   
+end
+
+function ui_dozimetr_radiometr:Update()
+   CUIScriptWnd.Update(self)
+   if not object_alive(db.actor) then
+      self:HideDialog()
+   end   
+end
+
+function ui_dozimetr_radiometr:InitCallBacks()
+   self:AddCallback("helper",ui_events.MESSAGE_BOX_YES_CLICKED,self.need_helper_ok,self)
+   self:AddCallback("helper",ui_events.MESSAGE_BOX_OK_CLICKED,self.need_helper_ok,self)
+   self:AddCallback("btn_1_slot",ui_events.BUTTON_CLICKED,self.on_btn_1_slot,self)
+   self:AddCallback("btn_2_slot",ui_events.BUTTON_CLICKED,self.on_btn_2_slot,self)
+   self:AddCallback("btn_3_slot",ui_events.BUTTON_CLICKED,self.on_btn_3_slot,self)
+   self:AddCallback("btn_4_slot",ui_events.BUTTON_CLICKED,self.on_btn_4_slot,self)
+   self:AddCallback("button_help_1", ui_events.BUTTON_CLICKED, self.OnButton_help_1_clicked, self)
+   self:AddCallback("button_help_2", ui_events.BUTTON_CLICKED, self.OnButton_help_2_clicked, self)
+   self:AddCallback("button_help_3", ui_events.BUTTON_CLICKED, self.OnButton_help_3_clicked, self)
+   self:AddCallback("button_help_4", ui_events.BUTTON_CLICKED, self.OnButton_help_4_clicked, self)      
+   self:AddCallback("btn_close",ui_events.BUTTON_CLICKED,self.on_btn_close,self)   
+end
+
+function ui_dozimetr_radiometr:on_btn_1_slot()   
+      self.yad_text_1:TextControl():SetText("Измерение выполнено")
+	  self.btn_1_slot_count:TextControl():SetText("1")	
+      self.result_text_1:TextControl():SetText("Норма")	  
+      self.btn_1_slot:Enable(false)
+      self.btn_2_slot:Enable(true)	  
+end
+
+function ui_dozimetr_radiometr:on_btn_2_slot()   
+      self.yad_text_2:TextControl():SetText("Измерение выполнено")
+	  self.btn_2_slot_count:TextControl():SetText("1")	
+      self.result_text_2:TextControl():SetText("Превышение нормы")	  
+      self.btn_2_slot:Enable(false) 
+      self.btn_3_slot:Enable(true)	  
+end
+
+function ui_dozimetr_radiometr:on_btn_3_slot()   
+      self.yad_text_3:TextControl():SetText("Измерение выполнено")
+	  self.btn_3_slot_count:TextControl():SetText("1")	
+      self.result_text_3:TextControl():SetText("Норма")	  
+      self.btn_3_slot:Enable(false) 
+      self.btn_4_slot:Enable(true)	  
+end
+
+function ui_dozimetr_radiometr:on_btn_4_slot()  
+      xr_effects.topi_b1_leader_second_quest_used() 
+      self.yad_text_4:TextControl():SetText("Измерение выполнено")
+	  self.btn_4_slot_count:TextControl():SetText("1")	
+      self.result_text_4:TextControl():SetText("Норма")	  
+      self.btn_4_slot:Enable(false) 
+      self.btn_close:Enable(true)	  
+end
+
+function ui_dozimetr_radiometr:need_helper_ok()
+   self.helper:ShowDialog(false)
+   self.helper:HideDialog()
+end
+
+function ui_dozimetr_radiometr:OnButton_help_1_clicked()
+	self.helper:InitMessageBox("mb_dozimetr_radiometr_item_1")
+    self.helper:ShowDialog(true)	
+end
+
+function ui_dozimetr_radiometr:OnButton_help_2_clicked()
+	self.helper:InitMessageBox("mb_dozimetr_radiometr_item_2")
+    self.helper:ShowDialog(true)	
+end
+
+function ui_dozimetr_radiometr:OnButton_help_3_clicked()
+	self.helper:InitMessageBox("mb_dozimetr_radiometr_item_3")
+    self.helper:ShowDialog(true)	
+end
+
+function ui_dozimetr_radiometr:OnButton_help_4_clicked()
+	self.helper:InitMessageBox("mb_dozimetr_radiometr_item_4")
+    self.helper:ShowDialog(true)	
+end
+
+function ui_dozimetr_radiometr:on_btn_close() 
+   db.actor:give_info_portion("topi_b1_leader_second_quest_used_close")
+   give_object_to_actor("topi_b1_leader_radiotion_doc")  
+   self:HideDialog()
+end
+
+function ui_dozimetr_radiometr:register_element(xml,element_name)
+   self[element_name]=xml:InitStatic("dozimetr_radiometr_form:"..element_name,self.dozimetr_radiometr_form)
+end
+-----------------------------------------------
+class "ui_radist_quest_r1" (CUIScriptWnd)
+
+function ui_radist_quest_r1:__init(owner) super()
+	self.owner = owner
+	self:InitControls()
+	self:InitCallBacks()
+end
+
+function ui_radist_quest_r1:__finalize()
+end
+
+function ui_radist_quest_r1:InitControls()
+	self:SetWndRect			(Frect():set(0,0,1024,768))
+	local xml, ctrl			= CScriptXmlInit(), CUIWindow()
+	xml:ParseFile			("ui_gui_elements.xml")
+	self.form_radist_quest_r1				= xml:InitStatic("form_radist_quest_r1",self)
+
+	xml:InitStatic			("form_radist_quest_r1:caption",self.form_radist_quest_r1)
+    
+    self.button_use = xml:Init3tButton ("form_radist_quest_r1:btn_use", self.form_radist_quest_r1) 
+    self:Register (self.button_use, "button_use")        	
+    self.button_close = xml:Init3tButton ("form_radist_quest_r1:btn_close", self.form_radist_quest_r1) 
+    self:Register (self.button_close, "button_close")
+end
+
+function ui_radist_quest_r1:Update()
+   CUIScriptWnd.Update(self)
+   if not object_alive(db.actor) then
+      self:HideDialog()
+   end   
+end
+
+function ui_radist_quest_r1:InitCallBacks() 
+    self:AddCallback("button_use", ui_events.BUTTON_CLICKED, self.OnButton_use_clicked, self)  
+	self:AddCallback("button_close", ui_events.BUTTON_CLICKED, self.OnButton_close_clicked, self)
+end
+
+function ui_radist_quest_r1:OnButton_use_clicked()
+    xr_effects.topi_radist_quest_rukzak_1_used()    
+	self.button_use:Enable(false)
+end
+
+function ui_radist_quest_r1:OnButton_close_clicked()
+    db.actor:give_info_portion("topi_radist_quest_tai_1_set_close")    
+	self:HideDialog()
+end
+-----------------------------------------------
+class "ui_radist_quest_r2" (CUIScriptWnd)
+
+function ui_radist_quest_r2:__init(owner) super()
+	self.owner = owner
+	self:InitControls()
+	self:InitCallBacks()
+end
+
+function ui_radist_quest_r2:__finalize()
+end
+
+function ui_radist_quest_r2:InitControls()
+	self:SetWndRect			(Frect():set(0,0,1024,768))
+	local xml, ctrl			= CScriptXmlInit(), CUIWindow()
+	xml:ParseFile			("ui_gui_elements.xml")
+	self.form_radist_quest_r2				= xml:InitStatic("form_radist_quest_r2",self)
+
+	xml:InitStatic			("form_radist_quest_r2:caption",self.form_radist_quest_r2)
+    
+    self.button_use = xml:Init3tButton ("form_radist_quest_r2:btn_use", self.form_radist_quest_r2) 
+    self:Register (self.button_use, "button_use")        	
+    self.button_close = xml:Init3tButton ("form_radist_quest_r2:btn_close", self.form_radist_quest_r2) 
+    self:Register (self.button_close, "button_close")
+end
+
+function ui_radist_quest_r2:Update()
+   CUIScriptWnd.Update(self)
+   if not object_alive(db.actor) then
+      self:HideDialog()
+   end   
+end
+
+function ui_radist_quest_r2:InitCallBacks() 
+    self:AddCallback("button_use", ui_events.BUTTON_CLICKED, self.OnButton_use_clicked, self)  
+	self:AddCallback("button_close", ui_events.BUTTON_CLICKED, self.OnButton_close_clicked, self)
+end
+
+function ui_radist_quest_r2:OnButton_use_clicked()
+    xr_effects.topi_radist_quest_rukzak_2_used()    
+	self.button_use:Enable(false)
+end
+
+function ui_radist_quest_r2:OnButton_close_clicked()
+    db.actor:give_info_portion("topi_radist_quest_tai_2_set_close")    
+	self:HideDialog()
+end
+-----------------------------------------------
+class "ui_radist_quest_r3" (CUIScriptWnd)
+
+function ui_radist_quest_r3:__init(owner) super()
+	self.owner = owner
+	self:InitControls()
+	self:InitCallBacks()
+end
+
+function ui_radist_quest_r3:__finalize()
+end
+
+function ui_radist_quest_r3:InitControls()
+	self:SetWndRect			(Frect():set(0,0,1024,768))
+	local xml, ctrl			= CScriptXmlInit(), CUIWindow()
+	xml:ParseFile			("ui_gui_elements.xml")
+	self.form_radist_quest_r3				= xml:InitStatic("form_radist_quest_r3",self)
+
+	xml:InitStatic			("form_radist_quest_r3:caption",self.form_radist_quest_r3)
+    
+    self.button_use = xml:Init3tButton ("form_radist_quest_r3:btn_use", self.form_radist_quest_r3) 
+    self:Register (self.button_use, "button_use")        	
+    self.button_close = xml:Init3tButton ("form_radist_quest_r3:btn_close", self.form_radist_quest_r3) 
+    self:Register (self.button_close, "button_close")
+end
+
+function ui_radist_quest_r3:Update()
+   CUIScriptWnd.Update(self)
+   if not object_alive(db.actor) then
+      self:HideDialog()
+   end   
+end
+
+function ui_radist_quest_r3:InitCallBacks() 
+    self:AddCallback("button_use", ui_events.BUTTON_CLICKED, self.OnButton_use_clicked, self)  
+	self:AddCallback("button_close", ui_events.BUTTON_CLICKED, self.OnButton_close_clicked, self)
+end
+
+function ui_radist_quest_r3:OnButton_use_clicked()
+    xr_effects.topi_radist_quest_rukzak_3_used()    
+	self.button_use:Enable(false)
+end
+
+function ui_radist_quest_r3:OnButton_close_clicked()
+    db.actor:give_info_portion("topi_radist_quest_tai_3_set_close")    
+	self:HideDialog()
+end
+
+-----------------------------------------------
+class "ui_quest_rls_subjects_1" (CUIScriptWnd)
+
+function ui_quest_rls_subjects_1:__init(owner) super()
+	self.owner = owner
+	self:InitControls()
+	self:InitCallBacks()
+end
+
+function ui_quest_rls_subjects_1:__finalize()
+end
+
+function ui_quest_rls_subjects_1:InitControls()
+	self:SetWndRect			(Frect():set(0,0,1024,768))
+	local xml, ctrl			= CScriptXmlInit(), CUIWindow()
+	local text_1 = "ui_quest_rls_helper_text_1"
+	local text_2 = "ui_quest_rls_helper_text_2"
+	local text_3 = "ui_quest_rls_helper_text_3"
+	local text_4 = "ui_quest_rls_helper_text_4"
+	local text_5 = "ui_quest_rls_helper_text_5"
+	local text_6 = "ui_quest_rls_helper_text_6"
+	xml:ParseFile			("ui_gui_elements.xml")
+	self.rls_quest_item_form				= xml:InitStatic("rls_quest_item_form",self)
+	xml:InitStatic			("rls_quest_item_form:caption",self.rls_quest_item_form) 
+    xml:InitStatic			("rls_quest_item_form:form_title",self.rls_quest_item_form)	
+    xml:InitStatic("rls_quest_item_form:rls_strong_picture",self.rls_quest_item_form)	
+	self.button_close = xml:Init3tButton ("rls_quest_item_form:btn_close", self.rls_quest_item_form) 
+    self:Register (self.button_close, "button_close")
+	self.button_close:Enable(false) 
+    self.btn_1_slot = xml:Init3tButton ("rls_quest_item_form:btn_1_slot", self.rls_quest_item_form)
+    self:Register (self.btn_1_slot, "btn_1_slot")	
+    self.btn_2_slot = xml:Init3tButton ("rls_quest_item_form:btn_2_slot", self.rls_quest_item_form)
+    self:Register (self.btn_2_slot, "btn_2_slot")
+	self.btn_2_slot:Enable(false)
+    self.btn_3_slot = xml:Init3tButton ("rls_quest_item_form:btn_3_slot", self.rls_quest_item_form)
+    self:Register (self.btn_3_slot, "btn_3_slot")
+	self.btn_3_slot:Enable(false)
+	self.text_list	= xml:InitListBox("rls_quest_item_form:list_items", self.rls_quest_item_form)
+	self:Register(self.text_list, "listbox")
+	self:register_element(xml,"text_field")	
+	self.text_list:AddTextItem(text_1)
+    self.text_list:AddTextItem(text_2)
+    self.text_list:AddTextItem(text_3)
+	self.text_list:AddTextItem(text_4)
+    self.text_list:AddTextItem(text_5)
+    self.text_list:AddTextItem(text_6)    
+	self:register_element(xml,"text_field_1")
+    self:register_element(xml,"text_field_2")
+    self:register_element(xml,"text_field_3")
+    self.text_field_1:TextControl():SetText(game.translate_string("st_rls_quest_descr_1"))
+    self.text_field_2:TextControl():SetText(game.translate_string("st_rls_quest_descr_2"))
+    self.text_field_3:TextControl():SetText(game.translate_string("st_rls_quest_descr_3"))
+    self.check_use_1=xml:InitCheck("rls_quest_item_form:check_use_1",self.rls_quest_item_form)
+    self.check_use_1:SetCheck(false)
+    self.check_use_2=xml:InitCheck("rls_quest_item_form:check_use_2",self.rls_quest_item_form)
+    self.check_use_2:SetCheck(false)
+    self.check_use_3=xml:InitCheck("rls_quest_item_form:check_use_3",self.rls_quest_item_form)
+    self.check_use_3:SetCheck(false)
+    self.check_use_4=xml:InitCheck("rls_quest_item_form:check_use_4",self.rls_quest_item_form)
+    self.check_use_4:SetCheck(false)
+    self.check_use_5=xml:InitCheck("rls_quest_item_form:check_use_5",self.rls_quest_item_form)
+    self.check_use_5:SetCheck(false)
+    self.check_use_6=xml:InitCheck("rls_quest_item_form:check_use_6",self.rls_quest_item_form)
+    self.check_use_6:SetCheck(false)	
+end
+
+function ui_quest_rls_subjects_1:Update()
+   CUIScriptWnd.Update(self)
+   if not object_alive(db.actor) then
+      self:HideDialog()
+   end
+   if self.check_use_1:GetCheck()==true then
+        self.check_use_2:SetCheck(false)      
+   end
+   if self.check_use_2:GetCheck()==true then
+        self.check_use_1:SetCheck(false)      
+   end
+   if self.check_use_3:GetCheck()==true then
+        self.check_use_4:SetCheck(false)      
+   end
+   if self.check_use_4:GetCheck()==true then
+        self.check_use_3:SetCheck(false)      
+   end
+   if self.check_use_5:GetCheck()==true then
+        self.check_use_6:SetCheck(false)      
+   end
+   if self.check_use_6:GetCheck()==true then
+        self.check_use_5:SetCheck(false)      
+   end
+end
+
+function ui_quest_rls_subjects_1:InitCallBacks()    
+	self:AddCallback("btn_1_slot",ui_events.BUTTON_CLICKED,self.btn_1_slot_use,self)
+    self:AddCallback("btn_2_slot",ui_events.BUTTON_CLICKED,self.btn_2_slot_use,self)
+    self:AddCallback("btn_3_slot",ui_events.BUTTON_CLICKED,self.btn_3_slot_use,self)
+	self:AddCallback("button_close", ui_events.BUTTON_CLICKED, self.OnButton_close_clicked, self)
+    self:AddCallback("listbox", ui_events.LIST_ITEM_CLICKED, self.Element_clicked, self)
+end
+
+function ui_quest_rls_subjects_1:btn_1_slot_use()
+   self.btn_1_slot:Enable(false)
+   self.btn_2_slot:Enable(true)
+end
+function ui_quest_rls_subjects_1:btn_2_slot_use()
+   self.btn_2_slot:Enable(false) 
+   self.btn_3_slot:Enable(true)
+end
+function ui_quest_rls_subjects_1:btn_3_slot_use()
+   xr_effects.topi_radist_quest_comp_used()
+   self.btn_3_slot:Enable(false) 
+   self.button_close:Enable(true)
+end
+
+function ui_quest_rls_subjects_1:OnButton_close_clicked()
+    db.actor:give_info_portion("topi_radit_quest_radiolocator_kalib_close")
+    if self.check_use_1:GetCheck()==true then
+      news_manager.send_tip(db.actor,game.translate_string("quest_rls_subjects_1_text"),0,"ui_icon_news_all",14000,nil,"all_system_name")
+    end
+    if self.check_use_2:GetCheck()==true then
+      news_manager.send_tip(db.actor,game.translate_string("quest_rls_subjects_2_text"),0,"ui_icon_news_all",14000,nil,"all_system_name")
+    end
+    if self.check_use_3:GetCheck()==true then
+      news_manager.send_tip(db.actor,game.translate_string("quest_rls_subjects_3_text"),0,"ui_icon_news_all",14000,nil,"all_system_name")
+    end
+    if self.check_use_4:GetCheck()==true then
+      news_manager.send_tip(db.actor,game.translate_string("quest_rls_subjects_4_text"),0,"ui_icon_news_all",14000,nil,"all_system_name")
+    end
+    if self.check_use_5:GetCheck()==true then
+      news_manager.send_tip(db.actor,game.translate_string("quest_rls_subjects_5_text"),0,"ui_icon_news_all",14000,nil,"all_system_name")
+    end
+    if self.check_use_6:GetCheck()==true then
+      news_manager.send_tip(db.actor,game.translate_string("quest_rls_subjects_6_text"),0,"ui_icon_news_all",14000,nil,"all_system_name")
+    end	
+	self:HideDialog()	
+end
+
+function ui_quest_rls_subjects_1:Element_clicked()
+	if self.text_list:GetSize()==0 then return end
+	    self.item = self.text_list:GetSelectedItem()
+		self.text_item = self.item:GetTextItem()		
+		if self.text_item:GetText() == "Первый параметр" then
+          self.text_field:TextControl():SetText(game.translate_string("st_quest_rls_helper_descr_1"))
+      	elseif self.text_item:GetText() == "Второй параметр" then
+          self.text_field:TextControl():SetText(game.translate_string("st_quest_rls_helper_descr_2"))
+        elseif self.text_item:GetText() == "Третий параметр" then
+          self.text_field:TextControl():SetText(game.translate_string("st_quest_rls_helper_descr_3"))
+        elseif self.text_item:GetText() == "Четвертый параметр" then
+          self.text_field:TextControl():SetText(game.translate_string("st_quest_rls_helper_descr_4"))
+		elseif self.text_item:GetText() == "Пятый параметр" then
+          self.text_field:TextControl():SetText(game.translate_string("st_quest_rls_helper_descr_5"))  
+        elseif self.text_item:GetText() == "Шестой параметр" then
+          self.text_field:TextControl():SetText(game.translate_string("st_quest_rls_helper_descr_6"))
+        end		 
+end
+
+function ui_quest_rls_subjects_1:register_element(xml,element_name)
+   self[element_name]=xml:InitStatic("rls_quest_item_form:"..element_name,self.rls_quest_item_form)
+end
+-------------------- GUI элементы Cмерти вопреки в рестрикторах ----------------------
+------------------------- Copyright 2012-2013 Geonezis ---------------------------

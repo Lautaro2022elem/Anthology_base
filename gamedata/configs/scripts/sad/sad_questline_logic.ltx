@@ -1,0 +1,14 @@
+[logic]
+active = sr_idle@wait
+
+[sr_idle@wait]
+on_info = {+sad_give_main_quest} sr_idle@10 %=give_task(sad_b1_meet_mutny_task)%
+
+[sr_idle@10]
+on_info = {=actor_has_item(sad_trus_pda)} %+sad_pda_trus_have%, %-sad_pda_trus_have%
+on_info2 = {=actor_has_item(sad_balbes_pda)} %+sad_pda_balbes_have%, %-sad_pda_balbes_have%
+on_info3 = {=actor_has_item(sad_byvaly_pda)} %+sad_pda_byvaly_have%, %-sad_pda_byvaly_have%
+on_info4 = {=actor_has_item(af_oasis_heart)} %+sad_af_oasis_heart_have%, %-sad_af_oasis_heart_have%
+on_info5 = {+sad_pda_trus_have +sad_pda_balbes_have +sad_pda_byvaly_have +sad_af_oasis_heart_have} %+sad_actor_has_all_stuff%, %-sad_actor_has_all_stuff%
+
+[sr_idle@nil]

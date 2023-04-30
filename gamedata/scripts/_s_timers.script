@@ -1,0 +1,281 @@
+--[[ ------------------------------------------------------------------------------------------------
+ File       : _s_timer.script
+ Description: таймера
+ Copyright  : 2011-2013 © Spectrum project
+ Author     : Viнt@rь
+ Last edit  : 13.08.2013 (Viнt@rь)
+ 
+ Since: 23.12.2011 21:26
+	-- поправлена работа таймеров вызова функций(он то опаздывал, то происходил раньше времени, причина - апдейт раз в 2 сек)
+ Since: 27.12.2011 18:50
+	-- переписан сейв функций, старый не работал...
+ Since: 28.12.2011 00:29
+	-- откоректирован код, убран дебаг режим
+ Since: 09.01.2012 23:46
+	-- переделан сейв/лоад функций на табличный метод
+ Since: 29.10.2012 20:33
+ 	-- переведено на метод регистрации коллбэков
+ Since: 14.12.2012 23:22
+ 	-- полностью переделаны таймера:
+ 		-- методы их подписки/регистрации
+ 		-- для уменьшения нагрузки на апдейт, таймера разделены на 2 типа высокоприоритетные и низкоприоритетные
+ 			-- первые - проверяются постоянно, вторые - раз в 2 сек реального времени
+ Since: 13.08.2013 21:36
+	-- переработаны и добавлены некоторые методы
+
+TODO сейв не строковых функций
+TODO установку условия вместо времени
+TODO несохраняемые таймера
+--]] ------------------------------------------------------------------------------------------------
+-- функция вывода лога в консоль/новости/файл
+-- TODO в релиз не совать!!!!!!!!!!
+local sName = script_name()
+_log_db = function (sText, ...)
+	if ReadVar(sName,true) then
+		_log(sName..":"..sText, ...)
+	end
+end
+--]] ------------------------------------------------------------------------------------------------
+--/											Variables
+--]] ------------------------------------------------------------------------------------------------
+local bFuncG
+local iUpdTime = 0
+local aTimers = {aHigh = {}, aLow = {}}
+--]] ------------------------------------------------------------------------------------------------
+--/											Initialize
+--]] ------------------------------------------------------------------------------------------------
+function Init()
+	event("ActorUpdate"):register(OnActorUpdate)
+	event("StorageSave"):register(Save)
+	event("StorageLoaded"):register(Load)
+	
+	_G.oTimers = CTimers
+end
+--]] ------------------------------------------------------------------------------------------------
+--/											Callback`s
+--]] ------------------------------------------------------------------------------------------------
+function OnActorUpdate()
+
+	_G.oTimers = CTimers
+
+	if next(aTimers.aHigh) then
+		for id, oTimer in pairs(aTimers.aHigh) do
+			if oTimer.__game_type then
+				if oTimer.__trigger_time <= game.get_game_time() then
+					oTimer:Trigger(true)
+				end
+			else
+				if oTimer.__trigger_time <= time_global() then
+					oTimer:Trigger(true)
+				end
+			end
+		end
+	end
+	
+	if iUpdTime > time_global() then return end
+		iUpdTime = time_global() + 2000
+		
+	if next(aTimers.aLow) then
+		for id, oTimer in pairs(aTimers.aLow) do
+			if oTimer.__game_type then
+				if oTimer.__trigger_time <= game.get_game_time() then
+					oTimer:Trigger()
+				end
+			else
+				if oTimer.__trigger_time <= time_global() then
+					oTimer:Trigger()
+				end
+			end
+		end
+	end
+end
+
+function Save()
+	local tSav = {aHigh = {}, aLow = {}}
+	if next(aTimers.aHigh) then
+		for id, oTimer in pairs(aTimers.aHigh) do
+			table.insert(tSav.aHigh, oTimer:Save())
+		end
+	end
+	if next(aTimers.aLow) then
+		for id, oTimer in pairs(aTimers.aLow) do
+			table.insert(tSav.aLow, oTimer:Save())
+		end
+	end
+	if next(tSav.aHigh) or next(tSav.aLow) then
+		WriteVar("tTimers",tSav)
+	end
+end
+
+function Load()
+	local tTimers = ReadVar("tTimers")
+	
+	if tTimers then
+		DeleteVar("tTimers")
+		if tTimers.aHigh and next(tTimers.aHigh) then
+			for _, v in pairs(tTimers.aHigh) do
+				oTimers(v.id):Load(v, true)
+			end
+		end
+		if tTimers.aLow and next(tTimers.aLow) then
+			for _, v in pairs(tTimers.aLow) do
+				oTimers(v.id):Load(v)
+			end
+		end
+	end
+end
+
+--* * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * *
+-- *			                    			CTimers		                       					*
+--* * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * *
+class "CTimers"
+function CTimers:__init(sName)
+	self.id 	= sName
+	self.__once = true
+end
+
+function CTimers:Once(bOnce)
+	self.__once = bOnce
+	return self
+end
+
+function CTimers:AddFunc(oFunc, ...)
+	self.__func	= oFunc
+	self.__args = {...}
+	return self
+end
+
+function CTimers:SetInterval(iTime)
+	self.__interval	= iTime or 0
+	return self
+end
+
+function CTimers:ReSetTime(iTime)
+	if not self.__game_type then
+		self.__trigger_time = time_global() + (iTime or self.__interval or 0)
+	else
+		local iSec, iMSec = math.modf(iTime or self.__interval or 0)
+		local iTime = game.CTime()
+		iTime:setHMSms(0, 0, iSec, iMSec)
+		self.__trigger_time = game.get_game_time() + iTime
+	end
+	return self
+end
+
+function CTimers:SetGameType()
+	self.__game_type = true
+	return self
+end
+
+function CTimers:Trigger(bPrior)
+	_log_db("Update:=Timer:[%s]:Type:[%s]:Prior:[%s]:DiffSec:(%s)", self.id, self.__game_type and "Game" or "Real", bPrior and "High" or "Low", GetRemTime(self))
+	if type(self.__func) == 'string' then
+		if next(self.__args) then
+			self.__func = self.__func.."(...)"
+		end
+		loadstring(self.__func)(unpack(self.__args))
+	end
+	if not self.__once then
+		self:ReSetTime()
+	else
+		self:Stop()
+	end
+end
+
+function CTimers:Start(bPrior)
+	self:ReSetTime()
+	if bPrior then
+		self.id = self.id or GenId(aTimers.aHigh)
+		aTimers.aHigh[self.id] = self
+	else
+		self.id = self.id or GenId(aTimers.aLow)
+		aTimers.aLow[self.id] = self
+	end
+end
+
+function CTimers:Stop()
+	if aTimers.aHigh[self.id] then
+		aTimers.aHigh[self.id] = nil
+	else
+		aTimers.aLow[self.id] = nil
+	end
+end
+
+function CTimers:Save()
+	local tSav = {
+					id 	 = self.id,
+					type = self.__game_type,
+					once = self.__once,
+					int  = self.__interval,
+					rem  = GetRemTime(self),
+					func = self.__func,
+					args = self.__args
+				}
+	return tSav
+end
+
+function CTimers:Load(t, bPrior)
+	self.__once 	 = t.once
+	self.__interval  = t.int
+	self.__game_type = t.type
+	self.__func	     = t.func
+	self.__args 	 = t.args
+	
+	self:ReSetTime(t.rem)
+	if bPrior then
+		aTimers.aHigh[self.id] = self
+	else
+		aTimers.aLow[self.id] = self
+	end
+end
+--]] ------------------------------------------------------------------------------------------------
+--/											Functions
+--]] ------------------------------------------------------------------------------------------------
+function GenId(tTbl)
+	local iId = 0
+	for iIdx in ipairs(tTbl) do
+		if type(iIdx) == 'number' then
+			iId = iIdx
+		end
+	end
+	return iId + 1
+end
+
+function GetRemTime(t)
+	if t.__game_type then
+		return t.__trigger_time:diffSec(game.get_game_time())
+	else
+		return t.__trigger_time - time_global()
+	end
+end
+
+function GetTimer(id)
+	return aTimers.aHigh[id] or aTimers.aLow[id]
+end
+
+function PrepareTimer(oFunc, iTime, sName, ...)
+	return oTimers(sName):AddFunc(oFunc, ...):SetInterval(iTime)
+end
+
+function PrepareGTimer(oFunc, iTime, sName, ...)
+	return PrepareTimer(oFunc, iTime, sName, ...):SetGameType()
+end
+
+--[[-------------------------------------------------------------------------
+--/ Интеграция синонимов функций из текущего скрипта в _g.script(tnx Artos)
+--]]-------------------------------------------------------------------------
+if not bFuncG then
+	local tFuncG = {
+		["GetTimer"] 		= GetTimer,
+		["PrepareTimer"] 	= PrepareTimer,
+		["PrepareGTimer"] 	= PrepareGTimer,
+	}
+	local oModule = _G
+	setfenv(1,oModule)
+	for k,v in pairs(tFuncG) do
+		oModule[k] = v
+		setfenv(oModule[k],oModule)
+	end
+	bFuncG = true
+end
+--/--------------------------------------------------------------------------

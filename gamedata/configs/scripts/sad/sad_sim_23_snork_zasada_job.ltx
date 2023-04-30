@@ -1,0 +1,58 @@
+; -------------------------------------------------------------------------------------------------------- 1
+[logic@snork_zasada]
+active = mob_walker@1_start
+suitable = {=target_squad_name(sad_sim_23_snork)} true
+monster_job = true
+prior = 200
+
+[mob_walker@1_start]
+path_walk = snokr_hide 
+path_look = snokr_jump1
+combat_ignore_cond = true
+friendly = true
+on_info = {!sad_dist_to_path_ge(sad_sim_23_snokr_jump1:280)} mob_jump@1 %=set_visual_memory_enabled(1)%
+on_info2 = {!sad_dist_to_path_ge(sad_sim_23_snokr_jump2:120)} mob_jump@2 %=set_visual_memory_enabled(1)%
+on_info3 = {!sad_dist_to_path_ge(sad_sim_23_snokr_jump3:140)} mob_jump@3 %=set_visual_memory_enabled(1)%
+on_info4 = {!sad_dist_to_path_ge(sad_sim_23_snokr_jump4:80)} mob_jump@4 %=set_visual_memory_enabled(1)%
+on_info5 = {=dist_to_actor_le(8)} mob_jump@1 %=set_visual_memory_enabled(1)%
+on_info8 = {-sad_sim_23_snokr_vis} %+sad_sim_23_snokr_vis =set_visual_memory_enabled(0)%
+on_info9 = {=mob_was_hit} mob_jump@1 %=set_visual_memory_enabled(1)%
+
+[mob_jump@1]
+path_jump = snokr_jump1
+ph_jump_factor = 1.0
+offset = 0,0,0
+on_signal = jumped | mob_home@1
+
+[mob_jump@2]
+path_jump = snokr_jump2
+ph_jump_factor = 1.0
+offset = 0,0,0
+on_signal = jumped | mob_home@1
+
+[mob_jump@3]
+path_jump = snokr_jump3
+ph_jump_factor = 1.0
+offset = 0,0,0
+on_signal = jumped | mob_home@1
+
+[mob_jump@4]
+path_jump = snokr_jump4
+ph_jump_factor = 1.0
+offset = 0,0,0
+on_signal = jumped | mob_home@1
+
+[mob_home@1]
+path_home = snokr_jump1
+home_min_radius = 20
+home_max_radius = 50
+aggressive = true
+
+[mob_home@2]:mob_home@1
+path_home = snokr_jump2
+
+[mob_home@3]:mob_home@1
+path_home = snokr_jump3
+
+[mob_home@4]:mob_home@1
+path_home = snokr_jump1

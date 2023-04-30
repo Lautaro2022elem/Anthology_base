@@ -1,0 +1,25 @@
+[logic]
+active = sr_idle@wait1
+
+[sr_idle@wait1]
+on_info = {+flag_run_lift_2a -flag_run_lift_2b -flag_run_lift_2c} sr_idle@wait2 %-flag_run_lift_2a +flag_run_lift_2b =stop_tutorial =anim_obj_forward(station_digger_lift_door_2_1)% 
+on_info2 = {+flag_run_lift_2c} sr_idle@run2 
+
+[sr_idle@wait2]
+on_game_timer = 4 | {+flag_run_lift_2b -flag_run_lift_2c} sr_idle@nil %=anim_obj_forward(station_digger_lift_door_2_2)%
+
+[sr_idle@nil]
+
+[sr_idle@start]
+on_info = {+flag_run_lift_2c} sr_idle@run1 %+flag_run_lift_2b%
+on_game_timer = 145 | {+flag_run_lift_2b -flag_run_lift_2s1 -flag_run_lift_2c} %+flag_run_lift_2s1 =anim_obj_backward(station_digger_lift_door_2_1)% 
+on_game_timer2 = 150 | {+flag_run_lift_2b -flag_run_lift_2s2 -flag_run_lift_2c} %+flag_run_lift_2s2 =anim_obj_backward(station_digger_lift_door_2_2)% 
+on_game_timer3 = 185 | {+flag_run_lift_2b +flag_run_lift_2s1 +flag_run_lift_2s2 -flag_run_lift_2c} sr_idle@wait1 %-flag_run_lift_2b -flag_run_lift_2s1 -flag_run_lift_2s2 =anim_obj_stop(station_digger_lift_door_2_1) =anim_obj_stop(station_digger_lift_door_2_2)% 
+
+[sr_idle@run1]
+on_info = {+flag_run_lift_2b +flag_run_lift_2c -flag_run_lift_2s1} %+flag_run_lift_2s1 =anim_obj_backward(station_digger_lift_door_2_1)%
+on_game_timer = 5 | {+flag_run_lift_2b +flag_run_lift_2c -flag_run_lift_2s2} %+flag_run_lift_2s2 =anim_obj_backward(station_digger_lift_door_2_2)%
+on_game_timer2 = 35 | {+flag_run_lift_2b +flag_run_lift_2s1 +flag_run_lift_2s2 +flag_run_lift_2c} sr_idle@run2 %-flag_run_lift_2c -flag_run_lift_2b -flag_run_lift_2s1 -flag_run_lift_2s2 =anim_obj_stop(station_digger_lift_door_2_1) =anim_obj_stop(station_digger_lift_door_2_2)% 
+
+[sr_idle@run2]
+on_game_timer = 70 | sr_idle@wait1 %=station_digger_lift_run%

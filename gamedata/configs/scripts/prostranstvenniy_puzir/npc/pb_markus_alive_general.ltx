@@ -1,0 +1,64 @@
+;pb_markus_alive (дополнительная логика)
+
+[remark@stay_no_meet]
+anim = guard_na
+target = story | actor
+on_info = {+pro_dialog_meet_from_markus_give} remark@dialog_start
+on_info2 = {=actor_enemy} %=actor_neutral%
+combat_ignore_cond = true
+combat_ignore_keep_when_attacked = true
+invulnerable = true
+gather_items_enabled = false
+help_wounded_enabled = false
+corpse_detection_enabled = false
+use_camp = false
+meet = no_meet
+
+[remark@dialog_start]
+anim = guard_na
+target = story | actor
+on_info = {+pro_actor_and_markus_kill_merc} walker@pb_markus_move_to_based
+on_info2 = {=actor_enemy} %=actor_neutral%
+combat_ignore_cond = true
+combat_ignore_keep_when_attacked = true
+invulnerable = true
+gather_items_enabled = false
+help_wounded_enabled = false
+corpse_detection_enabled = false
+use_camp = false
+meet = meet@start_quest_2
+
+[walker@pb_markus_move_to_actor]
+path_walk = pro_markus_alive_walk_3
+meet = no_meet
+def_state_moving = sneak
+on_info = {+pro_markus_alive_fight_come} remark@pb_markus_remark
+gather_items_enabled = false
+help_wounded_enabled = false
+corpse_detection_enabled = false
+invulnerable = true
+on_signal = pro_markus_alive_come_2 | {-pro_markus_alive_come_2} walker@pb_markus_alive_move %+pro_markus_alive_come_2%
+
+[walker@pb_markus_move_to_based]
+path_walk = pro_markus_alive_fight_walk_1
+meet = no_meet
+on_info = {=dist_to_actor_ge(100)} %=release_npc%
+on_info2 = {+pro_markus_alive_fight_come} remark@pb_markus_remark
+def_state_moving = run
+gather_items_enabled = false
+help_wounded_enabled = false
+corpse_detection_enabled = false
+invulnerable = true
+on_signal = pro_markus_alive_fight_come | {-pro_markus_alive_fight_come} remark@pb_markus_remark %+pro_markus_alive_fight_come%
+
+[remark@pb_markus_remark]
+anim = threat_danger
+target = story | actor
+on_info = {=dist_to_actor_ge(80)} %=release_npc%
+combat_ignore_cond = true
+combat_ignore_keep_when_attacked = true
+invulnerable = true
+gather_items_enabled = false
+help_wounded_enabled = false
+corpse_detection_enabled = false
+meet = no_meet

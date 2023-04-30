@@ -1,0 +1,8 @@
+[logic]
+active = sr_idle@spawn
+
+[sr_idle@spawn]
+on_info = {+esc_killer_atp_adm_spawn =dist_to_actor_ge(100) -esc_killer_atp_adm_spawn_end} %=spawn_object(esc_killer_atp_adm:esc_killer_atp_adm_walk) +esc_killer_atp_adm_spawn_end%
+on_info2 = {+esc_killer_atp_dvor_td_spawn =dist_to_actor_ge(100) -esc_killer_atp_dvor_td_spawn_end} %=spawn_object(esc_killer_atp_dvor_td:esc_killer_atp_dvor_td_walk) +esc_killer_atp_dvor_td_spawn_end%
+on_info3 = {+esc_killer_atp_dvor_left_spawn =dist_to_actor_ge(100) -esc_killer_atp_dvor_left_spawn_end} %=spawn_object(esc_killer_atp_dvor_left:esc_killer_atp_dvor_left_walk) +esc_killer_atp_dvor_left_spawn_end%
+on_info4 = {+esc_killer_atp_dvor_right_spawn =dist_to_actor_ge(100) -esc_killer_atp_dvor_right_spawn_end} %=spawn_object(esc_killer_atp_dvor_right:esc_killer_atp_dvor_right_walk) +esc_killer_atp_dvor_right_spawn_end%

@@ -1,0 +1,366 @@
+[sad_main_task_stalkers] ; ------------------------------------------------------------ Узнать о судьбе Труса, Балбеса и Бывалого.
+icon = ui_inGame2_Issledovatelskaya_gruppa
+prior = 100
+storyline = true
+title = {+sad_pda_trus_have +sad_pda_balbes_have +sad_pda_byvaly_have} sad_task_done_text, {-sad_pda_trus_have -sad_pda_balbes_have -sad_pda_byvaly_have} sad_task_text_0, {-sad_pda_trus_have -sad_pda_balbes_have +sad_pda_byvaly_have} sad_task_text_1, {-sad_pda_trus_have +sad_pda_balbes_have -sad_pda_byvaly_have} sad_task_text_2, {+sad_pda_trus_have -sad_pda_balbes_have -sad_pda_byvaly_have} sad_task_text_4, {-sad_pda_trus_have +sad_pda_balbes_have +sad_pda_byvaly_have} sad_task_text_3, {+sad_pda_trus_have -sad_pda_balbes_have +sad_pda_byvaly_have} sad_task_text_5, {+sad_pda_trus_have +sad_pda_balbes_have -sad_pda_byvaly_have} sad_task_text_6
+descr = {+sad_pda_trus_have +sad_pda_balbes_have +sad_pda_byvaly_have} sad_task_done_text_desc, {-sad_pda_trus_have -sad_pda_balbes_have -sad_pda_byvaly_have} sad_task_text_0_desc, {-sad_pda_trus_have -sad_pda_balbes_have +sad_pda_byvaly_have} sad_task_text_1_desc, {-sad_pda_trus_have +sad_pda_balbes_have -sad_pda_byvaly_have} sad_task_text_2_desc, {+sad_pda_trus_have -sad_pda_balbes_have -sad_pda_byvaly_have} sad_task_text_4_desc, {-sad_pda_trus_have +sad_pda_balbes_have +sad_pda_byvaly_have} sad_task_text_3_desc, {+sad_pda_trus_have -sad_pda_balbes_have +sad_pda_byvaly_have} sad_task_text_5_desc, {+sad_pda_trus_have +sad_pda_balbes_have -sad_pda_byvaly_have} sad_task_text_6_desc
+target = zat_a2_stalker_barmen {+sad_pda_trus_have +sad_pda_balbes_have +sad_pda_byvaly_have}, nil
+condlist_0 = {+sad_main_task_stalkers_complete} complete
+on_complete = %=complete_task_inc_goodwill(150:stalker)%
+
+[sad_main_task_atrefuck] ; ------------------------------------------------------------ Найти "Сердце Оазиса".
+icon = ui_inGame2_serdce_oazisa
+prior = 100
+storyline = true
+title = {+sad_af_oasis_heart_have} sad_main_task_art_text_2, sad_main_task_art_text_1
+descr = {+sad_af_oasis_heart_have} sad_main_task_art_text_2_desc, sad_main_task_art_text_1_desc
+target = zat_a2_stalker_barmen {+sad_af_oasis_heart_have}, nil
+condlist_0 = {+sad_main_task_art_complete} complete
+on_complete = %=complete_task_inc_goodwill(50:stalker)%
+reward_item = af_chertyaico
+
+[zat_a2_meet_barmen_task] ; ------------------------------------------------------------ Поговорить С Бородой
+icon = ui_inGame2_Boroda
+prior = 100
+storyline = true
+title = zat_a2_meet_barmen_task_text
+descr = zat_a2_meet_barmen_task_desc
+target = zat_a2_stalker_barmen
+condlist_0 = {+zat_a2_stalker_barmen_sad_asked} complete
+
+[zat_a2_meet_lotsman_task] ; ------------------------------------------------------------ Поговорить С Лоцманом
+icon = ui_inGame2_Lotsman
+prior = 100
+storyline = true
+title = zat_a2_meet_lotsman_task_text
+descr = zat_a2_meet_lotsman_task_desc
+target = guid_zan_stalker_locman
+on_init = %=open_route(zat:swa) =open_route(swa:kas) =open_route(sad:kas)%
+condlist_0 = {+zat_a2_meet_lotsman_task_done} complete
+
+[sad_b1_meet_mutny_task] ; ------------------------------------------------------------ Найти Мутного
+icon = ui_inGame2_nayti_mutnogo
+prior = 100
+storyline = true
+title = sad_b1_meet_mutny_task_text
+descr = sad_b1_meet_mutny_task_desc
+target = sad_b1_stalker_mutny
+condlist_0 = {+sad_meet_mutny_task_done} complete
+condlist_1 = {+sad_b2_maxim_meeted} reversed
+condlist_2 = {+sad_actor_mutny_enemy} reversed
+condlist_3 = {+sad_maxim_actor_enemy} reversed
+
+[sad_b1_mutny_flesh_task] ; ------------------------------------------------------------ Флешка для Мутного
+icon = ui_inGame2_fleshka
+prior = 100
+storyline = true
+title = {-sad_b1_mutny_flesh_have} sad_b1_mutny_task_1_01, sad_b1_mutny_task_1_02
+descr = sad_b1_mutny_task_1_00_desc
+target = {+sad_b1_mutny_flesh_have} sad_b1_stalker_mutny, {+sad_vasya_used} sad_sim_2_stalker_vasya, sad_sim_2_vasya_spot
+on_init = %=create_squad(sad_sim_2_stalker_vasya_squad:sad_sim_2) =create_squad(sad_sim_2_banditosy:sad_sim_2)%
+condlist_0 = {+sad_b1_mutny_flesh_task_complete} complete
+condlist_1 = {+sad_b1_mutny_flesh_task_fail} fail
+condlist_2 = {+sad_dont_tell_about_mutny} reversed
+condlist_3 = {+sad_actor_mutny_enemy} reversed
+on_complete = %=complete_task_inc_goodwill(30:stalker)%
+
+[sad_b1_plant] ; ------------------------------------------------------------ Заказ учёных
+icon = ui_inGame2_Anomalnoe_rastenie
+prior = 100
+storyline = false
+title = {+sad_b1_trader_plant_have} sad_b1_plant_text_2, sad_b1_plant_text_1
+descr = sad_b1_plant_text_desc
+target = {+sad_b1_trader_plant_have} sad_b1_stalker_barman, sad_sim_1_plant_spot
+condlist_0 = {+sad_b1_trader_task_done} complete
+condlist_1 = {+sad_dont_tell_about_mutny} reversed, {+sad_actor_mutny_enemy} reversed, {+sad_b2_trader_plant_give} reversed
+on_complete = %=complete_task_inc_goodwill(50:stalker)%
+
+[sad_sim_3_rob_task] ; ------------------------------------------------------------ Ограбление
+icon = ui_inGame2_Nochnaya_ohota
+prior = 100
+storyline = false
+title = sad_sim_3_rob_task_1_text
+descr = sad_sim_3_rob_task_1_desc
+target = sad_b1_stalker_mudak
+condlist_0 = {+sad_sim_3_rob_arrive} complete
+condlist_1 = {+sad_b4_actor_recognized} reversed
+condlist_2 = {+sad_mudak_enemy} reversed
+
+[sad_artur_task] ; ------------------------------------------------------------ Артур, Вадик и Ромка
+icon = ui_inGame2_fleshka
+prior = 100
+storyline = false
+title = {+sad_artur_task_have_both} sad_artur_task_1, {-sad_vadik_flesh_have -sad_romka_flesh_have} sad_artur_task_2, {-sad_vadik_flesh_have} sad_artur_task_3, sad_artur_task_4
+descr = sad_artur_task_desc
+target = {+sad_artur_task_have_both} sad_b2_stalker_artur, sad_sim_6_spot
+condlist_0 = {+sad_artur_task_done} complete
+condlist_1 = {+sad_actor_enemy_b2} reversed
+condlist_2 = {+sad_artur_dead} reversed
+on_complete = %=complete_task_inc_goodwill(50:stalker)%
+
+[sad_ban_weapon_for_maxim] ; ------------------------------------------------------------ Отобрать посылку у бандитов
+icon = ui_inGame2_posilka
+prior = 100
+storyline = true
+title = {+sad_b2_maxim_weapon_have} sad_ban_posilka_text_1,  {+sad_b2_maxim_weapon_have_once} sad_ban_posilka_text_5, {+sad_ban_bandit_leader_meeted} sad_ban_posilka_text_2, {+sad_ban_bandits_fight} sad_ban_posilka_text_2b, {=actor_in_zone(sad_ban_sr_weapon_check)} sad_ban_posilka_text_4, sad_ban_posilka_text_3
+descr = sad_ban_lager_bandit_desc
+on_init = %=create_squad(sad_ban_bandit_leader_squad:sad_ban) =create_squad(sad_ban_bandit_squad_1:sad_ban) =create_squad(sad_ban_bandit_squad_2:sad_ban)%
+target = {+sad_b2_maxim_weapon_have} sad_b2_stalker_maxim,  {+sad_b2_maxim_weapon_have_once} nil, {+sad_ban_bandit_leader_meeted} sad_ban_bandit_leader, {+sad_ban_bandits_fight} nil, {=actor_in_zone(sad_ban_sr_weapon_check)} nil, sad_ban_sr_spot
+condlist_0 = {+sad_b2_maxim_weapon_complete} complete
+condlist_1 = {+sad_maximilian_dead} reversed
+condlist_2 = {+sad_maxim_actor_enemy} reversed
+on_complete = %=complete_task_inc_goodwill(50:stalker)%
+
+[sad_b2_maxim_go_to_baza] ; ------------------------------------------------------------ Добраться до базы Максимильяна
+icon = ui_inGame2_Mesta_evakuatsii
+prior = 100
+storyline = true
+title = sad_b2_lager_maxim_in
+descr = sad_b2_lager_maxim_in_desc
+target = sad_b2_stalker_maxim
+condlist_0 = {+sad_b2_maxim_go_to_baza_done} complete
+condlist_1 = {+sad_maximilian_dead} reversed
+condlist_2 = {+sad_maxim_actor_enemy} reversed
+
+[sad_b3_maxim_ataka] ; ------------------------------------------------------------ Атака лагеря
+icon = ui_inGame2_ataka_lagerya_naemnikov
+prior = 100
+storyline = true
+title = {+sad_maxim_switch_b3} sad_b3_maxim_ataka_t2, {+sad_b3_maxim_ready_to_rush} sad_b3_maxim_ataka_t5, {+sad_maxim_leave_b2} sad_b3_maxim_ataka_t4, sad_b3_maxim_ataka_t3
+descr = sad_b3_maxim_ataka_desc
+target = {+sad_maxim_switch_b3} nil, sad_b2_stalker_maxim
+on_init = %=create_squad(sad_b3_killer_a_squad:sad_b3) =create_squad(sad_b3_killer_b_squad:sad_b3) =create_squad(sad_b3_killer_c_squad:sad_b3) =create_squad(sad_b3_killer_d_squad:sad_b3) = create_squad(sad_stalker_radik_squad:sad_sher) =create_squad(sad_ran_cowboy_squad:sad_ran) =create_squad(sad_ran_squad_a:sad_ran) =create_squad(sad_ran_squad_b:sad_ran) =create_squad(sad_ran_ucheny_squad:sad_ran)%
+condlist_0 = {+sad_b3_maxim_ataka_complete} complete
+condlist_1 = {+sad_b3_maxim_ataka_cenceled} reversed
+condlist_2 = {+sad_maxim_actor_enemy} reversed
+on_complete = %=complete_task_inc_goodwill(50:stalker)%
+
+[sad_b3_radik_talk_task] ; ------------------------------------------------------------ Поговорить с Радиком
+icon = ui_inGame2_pogovorit_s_radikom
+prior = 100
+storyline = true
+title = sad_b3_radik_talk_task_text
+descr = sad_b3_radik_talk_task_desc
+target = sad_stalker_radik
+condlist_0 = {+sad_b3_radik_talk_task_done} complete
+condlist_1 = {+sad_radik_actor_enemy} reversed
+
+[sad_b3_radik_bring_task] ; ------------------------------------------------------------ Принести еды Радику
+icon = ui_inGame2_Pripasi
+prior = 100
+storyline = true
+title = sad_b3_radik_bring_task_text
+descr = sad_b3_radik_bring_task_desc
+target = sad_stalker_radik
+condlist_0 = {+sad_b3_radik_task_complete} complete
+condlist_1 = {+sad_radik_actor_enemy} reversed, {+sad_radik_dead} reversed
+on_complete = %=complete_task_inc_goodwill(50:stalker)%
+
+[sad_radik_get_pda_task] ; ------------------------------------------------------------ Достать ПДА наёмника
+icon = ui_inGame2_Istoriya_dolga
+prior = 100
+storyline = true
+title = {-sad_radik_task_get_pda_have} sad_radik_get_pda_task_text_1, sad_radik_get_pda_task_text_2
+descr = sad_radik_get_pda_task_desc
+target = {-sad_radik_task_get_pda_have} nil, sad_stalker_radik
+condlist_0 = {+sad_radik_task_get_pda_done} complete
+condlist_1 = {+sad_radik_actor_enemy} reversed, {+sad_radik_dead} reversed
+
+[sad_radik_get_outfit_task] ; ------------------------------------------------------------ Достать костюм наёмника
+icon = ui_inGame2_kombez_naemnika
+prior = 100
+storyline = true
+title = {+sad_radik_task_get_outfit_have} sad_radik_get_pda_task_text_2, {-sad_radik_task_get_outfit_give} sad_radik_get_outfit_task_text_1, sad_radik_get_outfit_task_text_3
+descr = sad_radik_get_outfit_task_desc
+target = {+sad_radik_task_get_outfit_have} sad_stalker_radik, {-sad_radik_task_get_outfit_give} sad_b2_stalker_barman, nil
+condlist_0 = {+sad_radik_task_get_outfit_done} complete
+condlist_1 = {+sad_radik_actor_enemy} reversed, {+sad_radik_dead} reversed
+
+[sad_radik_arrive_task] ; ------------------------------------------------------------ Сопроводить Радика
+icon = ui_inGame2_Put_v_pripyat
+prior = 100
+storyline = true
+title = {+sad_radik_near_konteyner -sad_sher_explosion_done} sad_radik_arrive_task_text_1b, sad_radik_arrive_task_text_1
+descr = sad_radik_arrive_task_desc
+target = {+sad_radik_near_konteyner -sad_sher_explosion_done} sad_sher_kon_door, sad_stalker_radik_squad
+on_init = %=create_squad(sad_b4_killer_one_squad:sad_b4) =create_squad(sad_b4_killer_two_squad:sad_b4) =create_squad(sad_b4_killer_house_squad:sad_b4) =create_squad(sad_b4_killer_def_squad:sad_b4) =create_squad(sad_b4_fedor_squad:sad_b4)%
+condlist_0 = {+sad_sim_13_cave_reached} complete ;{+sad_radik_arrive_task_done} complete
+condlist_1 = {+sad_radik_actor_enemy} reversed, {+sad_stalker_radik_squad_dead} reversed
+
+[sad_radik_task_inside] ; ------------------------------------------------------------ Освободить пленников (Радик)
+icon = ui_inGame2_PD_Drug_Stalkerov
+prior = 100
+storyline = true
+title = {+sad_b4_actor_recognized} sad_radik_task_inside_text_3, {+sad_b4_entrance_talk} sad_radik_task_inside_text_2, sad_radik_task_inside_text_1
+descr = sad_radik_task_inside_desc
+target = {+sad_b4_actor_recognized} nil, {+sad_b4_entrance_talk} nil, sad_b4_sr_spot
+condlist_0 = {+sad_radik_task_inside_done} complete
+condlist_1 = {+sad_radik_actor_enemy} reversed, {+sad_stalker_radik_squad_dead} reversed
+on_complete = %=complete_task_inc_goodwill(50:stalker)%
+
+[sad_cowboy_meet_tesla_task] ; ------------------------------------------------------------ Поговорить с Тесла (Ковбой)
+icon = ui_inGame2_Gipoteza
+prior = 100
+storyline = true
+title = sad_cowboy_meet_tesla_task_1
+descr = sad_cowboy_meet_tesla_task_desc
+target = sad_ran_ucheny
+condlist_0 = {+sad_cowboy_meet_tesla_task_done} complete
+condlist_1 = {+sad_cowboy_enemy} reversed
+
+[sad_cowboy_stuff_task] ; ------------------------------------------------------------ Найти Компасс и микросхему (Тесла)
+icon = ui_inGame2_kompas_i_mickroshema
+prior = 100
+storyline = true
+title = {+sad_cowboy_stuff_have_both} sad_cowboy_stuff_1, {-sad_microshema_have -sad_ran_oasis_have} sad_cowboy_stuff_3, {+sad_microshema_have -sad_ran_oasis_have} sad_cowboy_stuff_4, {-sad_microshema_have +sad_ran_oasis_have} sad_cowboy_stuff_5
+descr = sad_cowboy_stuff_task_desc
+target = {+sad_cowboy_stuff_have_both} sad_ran_ucheny, nil
+on_init = %=create_squad(sad_sim_14_oleg_squad:sad_sim_14)%
+condlist_0 = {+sad_cowboy_stuff_task_done} complete
+condlist_1 = {+sad_cowboy_enemy} reversed
+
+[sad_tesla_monster_task] ; ------------------------------------------------------------ Уничтожить мутантов (Тесла)
+icon = ui_inGame2_Ohota_na_Krovososov
+prior = 100
+storyline = true
+title = sad_tesla_monster_task_1
+descr = sad_tesla_monster_task_desc
+target = sad_sim_16_spot
+condlist_0 = {+sad_tesla_monster_task_done} complete
+condlist_1 = {+sad_cowboy_enemy} reversed
+on_complete = %=complete_task_inc_goodwill(50:stalker)%
+
+[sad_oasis_teleport_task] ; ------------------------------------------------------------ Телепортация на плато
+icon = ui_inGame2_Put_na_plato
+prior = 100
+storyline = true
+title = {+sad_oasis_jump_out_ready} sad_oasis_teleport_4, {+sad_oasis_jumped_in} sad_oasis_teleport_5, {+sad_oasis_jump_in_ready} sad_oasis_teleport_3, {+sad_teleport_scaner_placed} sad_oasis_teleport_2, {+sad_tesla_sim_16_arrived =actor_has_item(sad_scanner)} sad_oasis_teleport_1, {+sad_tesla_sim_16_arrived !actor_has_item(sad_scanner)} sad_oasis_teleport_1b, sad_oasis_teleport_0
+descr = sad_oasis_teleport_desc
+target = {+sad_oasis_jump_out_ready} sad_oasis_teleport_out_spot, {+sad_oasis_jumped_in} nil, {+sad_oasis_jump_in_ready} sad_oasis_teleport_in_spot, {+sad_teleport_scaner_placed} nil, {+sad_tesla_sim_16_arrived =actor_has_item(sad_scanner)} sad_oasis_sr_scaner, {+sad_tesla_sim_16_arrived !actor_has_item(sad_scanner)} nil, sad_ran_ucheny
+condlist_0 = {=actor_in_zone(sad_sim_16_sr_teleport_zone) +sad_oasis_jump_out_ready} complete
+condlist_1 = {+sad_cowboy_enemy} reversed
+
+[sad_volodya_task] ; ------------------------------------------------------------ Володькина помощь
+icon = ui_inGame2_ataka_lagerya_kovboya
+prior = 100
+storyline = false
+title = {+sad_volodya_ready_to_go} sad_volodya_task_2, {+sad_actor_told_maxim_about_cowboy} sad_volodya_task_1
+descr = sad_volodya_task_desc
+target = sad_b2_bunker_guard
+condlist_0 = {+sad_volodya_arrive_ran} complete
+condlist_1 = {+sad_ran_cowboy_gone} reversed
+condlist_2 = {=actor_in_zone(sad_ran_sr_zone)} reversed
+
+[sad_meet_grisha_task] ; ------------------------------------------------------------ Поговорить с Гришей
+icon = ui_inGame2_PD_Lider
+prior = 100
+storyline = false
+title = sad_kill_mutny_task_1
+descr = sad_kill_mutny_task_1_desc
+target = sad_stalker_grisha
+condlist_0 = {+sad_grisha_meeted} complete
+condlist_1 = {+sad_grisha_enemy} reversed
+condlist_2 = {+sad_mutny_squad_awake} reversed
+
+[sad_kill_mutny_task] ; ------------------------------------------------------------ Убить Мутного
+icon = ui_inGame2_ubit_mutnogo
+prior = 100
+storyline = false
+title = {+sad_b1_ataka_start} sad_kill_mutny_task_3, sad_kill_mutny_task_2
+descr = {+sad_b1_ataka_start} sad_kill_mutny_task_3_desc, sad_kill_mutny_task_2_desc
+target = {+sad_b1_ataka_start} nil, sad_stalker_grisha
+condlist_0 = {+sad_mutny_gone} complete
+condlist_1 = {+sad_grisha_enemy} reversed
+on_complete = %=complete_task_inc_goodwill(50:stalker)%
+
+[sad_b2_tech_gena_task] ; ------------------------------------------------------------ Вернуть ящик технику Б2
+icon = ui_inGame2_vernut_yashik
+prior = 100
+storyline = false
+title = {+sad_sim_7_gena_has_stuff} sad_b2_tech_gena_task_5, {+sad_sim_7_gena_raskop_done} sad_b2_tech_gena_task_6, {+sad_sim_7_gena_dead} sad_b2_tech_gena_task_3, {+sad_sim_7_gena_actor_worned} sad_b2_tech_gena_task_2, sad_b2_tech_gena_task_1
+descr = sad_b2_tech_gena_task_desc
+target = {+sad_sim_7_gena_has_stuff} sad_b2_stalker_tech, {+sad_sim_7_gena_raskop_done} nil, {+sad_sim_7_gena_dead} sad_b2_stalker_tech, {+sad_sim_7_gena_actor_worned} sad_sim_7_stalker_gena, nil
+condlist_0 = {+sad_b2_tech_gena_task_complete} complete
+condlist_1 = {+sad_b2_tech_gena_task_fail} fail
+condlist_2 = {+sad_actor_enemy_to_someone} reversed
+on_complete = %=complete_task_inc_goodwill(50:stalker)%
+
+[sad_b2_tech_wpn_task] ; ------------------------------------------------------------ Вернуть дробовик технику Б2
+icon = ui_inGame2_vernut_orujie
+prior = 100
+storyline = false
+title = {=actor_has_item(wpn_spas12_nimble)} sad_b2_tech_wpn_task_2, sad_b2_tech_wpn_task_1
+descr = {=actor_has_item(wpn_spas12_nimble)} sad_b2_tech_wpn_task_2_desc, sad_b2_tech_wpn_task_1_desc
+target = {=actor_has_item(wpn_spas12_nimble)} sad_b2_stalker_tech
+condlist_0 = {+sad_b2_tech_wpn_task_done} complete
+condlist_1 = {+sad_actor_enemy_to_someone} reversed, {+sad_b2_tech_wpn_task_cancel} reversed
+on_complete = %=complete_task_inc_goodwill(50:stalker)%
+
+[sad_b2_trader_nb_task] ; ------------------------------------------------------------ Найти ноутбук торговца B2
+icon = ui_inGame2_Lager_naemnikov
+prior = 100
+storyline = false
+title = {+sad_b2_trader_nb_have} sad_b2_trader_nb_task_2, sad_b2_trader_nb_task_1
+descr = {+sad_b2_trader_nb_have} sad_b2_trader_nb_task_2_desc, sad_b2_trader_nb_task_1_desc
+target = {+sad_b2_trader_nb_have} sad_b2_stalker_barman
+condlist_0 = {+sad_b2_trader_nb_task_done} complete
+condlist_1 = {+sad_actor_enemy_to_someone} reversed
+on_complete = %=complete_task_inc_goodwill(50:stalker)%
+
+[sad_b3_trader_task] ; ------------------------------------------------------------ Найти товар торговца B3
+icon = ui_inGame2_posilka
+prior = 100
+storyline = false
+title = {+sad_b3_trader_task_have} sad_b3_trader_task_2, {+sad_psi_cave_actor_was_where} sad_b3_trader_task_1, sad_b3_trader_task_0
+descr = {+sad_b3_trader_task_have} sad_b3_trader_task_2_desc, {+sad_psi_cave_actor_was_where} sad_b3_trader_task_1_desc, sad_b3_trader_task_0_desc
+target = {+sad_b3_trader_task_have} sad_b3_trader, {-sad_psi_cave_actor_was_where} sad_psi_cave_enter_spot, nil
+condlist_0 = {+sad_b3_trader_task_done} complete
+condlist_1 = {+sad_b3_trader_enemy} reversed
+condlist_2 = {+sad_b3_trader_dead} reversed
+on_complete = %=complete_task_inc_goodwill(50:stalker)%
+
+[sad_sim_9_noy_task] ; ------------------------------------------------------------ Убой мутантов (Бомж)
+icon = ui_inGame2_ubit_mutantov
+prior = 100
+storyline = true
+title = {+sad_sim_9_noy_meeted} sad_sim_9_noy_task_1, sad_sim_9_noy_task_2
+descr = {+sad_sim_9_noy_meeted} sad_sim_9_noy_task_1_desc, sad_sim_9_noy_task_2_desc
+target = nil
+condlist_0 = {+sad_sim_9_noy_task_done} complete
+condlist_1 = {+sad_sim_9_noy_task_reversed} reversed
+on_complete = %=complete_task_inc_goodwill(50:stalker)%
+
+[sad_b3_ucheny_task] ; ------------------------------------------------------------ Исследование аномалий (Замеры)
+icon = ui_inGame2_Issledovanie_anomaliy
+prior = 100
+storyline = false
+title = {+sad_ucheny_zamer_sim_17_done} sad_b3_ucheny_task_3, {+sad_b3_start_arrive} sad_b3_ucheny_task_2, sad_b3_ucheny_task_1
+descr = sad_b3_ucheny_task_desc
+target = sad_b3_ucheny_raz
+condlist_0 = {+sad_ucheny_arrived_home} complete
+condlist_1 = {+sad_b3_ucheny_enemy} reversed
+condlist_2 = {+sad_b3_andrey_dead} fail
+condlist_3 = {+sad_ucheny_actor_faraway} reversed
+on_complete = %=complete_task_inc_goodwill(50:stalker)%
+
+[sad_nauchny_task] ; ------------------------------------------------------------ Помощь учёным (пси-подземелье)
+icon = ui_inGame2_Ohota_na_Burerov
+prior = 100
+storyline = false
+title = {+sad_nauchny_get_reward} sad_nauchny_task_7, {+sad_nauchny_task_complete} sad_nauchny_task_3, {+sad_nauchny_bomba_done} sad_nauchny_task_6, {+sad_nauchny_bomba_ready} sad_nauchny_task_3, {+sad_ran_ucheny_at_position} sad_nauchny_task_5, {+sad_ran_ucheny_go_position} sad_nauchny_task_4, {+sad_nauchny_bomba_give} sad_nauchny_task_3, {+sad_nauchny_take_bomba} sad_nauchny_task_2, sad_nauchny_task_1
+descr = {+sad_nauchny_get_reward} sad_nauchny_task_7_desc, {+sad_nauchny_task_complete} sad_nauchny_task_3_desc, {+sad_nauchny_bomba_done} sad_nauchny_task_6_desc, {+sad_nauchny_bomba_ready} sad_nauchny_task_3_desc, {+sad_ran_ucheny_at_position} sad_nauchny_task_5_desc, {+sad_ran_ucheny_go_position} sad_nauchny_task_4_desc, {+sad_nauchny_bomba_give} sad_nauchny_task_3_desc, {+sad_nauchny_take_bomba} sad_nauchny_task_2_desc, sad_nauchny_task_1_desc
+target = {+sad_nauchny_get_reward} sad_b2_stalker_barman, {+sad_nauchny_task_complete} sad_ucheny_1, {+sad_nauchny_bomba_done} sad_ucheny_1, {+sad_nauchny_bomba_ready} sad_ucheny_1, {+sad_ran_ucheny_at_position} sad_nauchny_bobma_place, {+sad_ran_ucheny_go_position} sad_ucheny_1, {+sad_nauchny_bomba_give} sad_ucheny_1, {+sad_nauchny_take_bomba} sad_b3_trader, sad_b2_stalker_barman
+condlist_0 = {+sad_nauchny_paid} complete
+condlist_1 = {+sad_nauchny_task_cancel} reversed, {+sad_actor_enemy_to_someone} reversed
+on_complete = %=complete_task_inc_goodwill(50:stalker)%
+
+[sad_turpohod_task] ; ------------------------------------------------------------ Туристы, млин
+icon = ui_inGame2_Ohrana_uchenih
+prior = 100
+storyline = false
+title = sad_turist_task_text
+descr = sad_turist_task_desc
+target = nil
+condlist_0 = {+sad_turist_task_done} complete
+condlist_1 = {+sad_turist_enemy} reversed
+condlist_2 = {+sad_turist_squad_dead} fail

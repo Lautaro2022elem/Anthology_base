@@ -1,0 +1,40 @@
+[logic]
+active = sr_idle@wait
+
+[sr_idle@wait]
+on_info = {+sad_vasya_dead} sr_idle@200, {+sad_vasya_start_fight} sr_idle@200, {+sad_ban_bandits_fight} sr_idle@nil
+on_actor_inside = sr_idle@20 %=run_postprocess(fade_in:9444) =disable_ui%
+
+
+[sr_idle@20]
+on_timer = 500 | sr_idle@21 %=run_postprocess(black:9445)%
+
+[sr_idle@21]
+on_timer = 1500 | sr_cutscene %=stop_postprocess(9444) =stop_postprocess(9445) =save_actor_position +sad_sim_2_cutscene_start%
+
+[sr_cutscene]
+point = sad_sim_2_cs_actor_position
+look = sad_sim_2_vasyas_gvard_4_look
+cam_effector = scenario_cam\sad\sad_sim_2_cs_camera
+global_cameffect = true
+enable_ui_on_end = false
+outdoor = true
+fov = 45
+on_signal = cameff_end | sr_idle@100 %=run_postprocess(black:9446)%
+on_signal2 = cam_effector_stop | sr_idle@100 %=run_postprocess(black:9446)%
+on_timer = 5000 | %+sad_sim_2_baditos_talking%
+on_timer2 = 12000 | %=stop_sr_cutscene%
+
+[sr_idle@100]
+on_timer = 500 | sr_idle@110 %=restore_actor_position%
+
+[sr_idle@110]
+on_timer = 1000 | sr_idle@200 %=stop_postprocess(9446) =enable_ui +sad_sim_2_cutscene_end%
+
+[sr_idle@200]
+on_info = {+sad_vasya_start_fight} sr_idle@210 %=set_squad_enemy_to_actor(sad_sim_2_banditosy)% ;set_squad_enemy_to_actor;kill_squad
+
+[sr_idle@210]
+on_info = {+sad_vasya_dead} sr_idle@nil, {+sad_b4_actor_recognized} sr_idle@nil %=remove_squad(sad_sim_2_stalker_vasya_squad)%
+
+[sr_idle@nil]

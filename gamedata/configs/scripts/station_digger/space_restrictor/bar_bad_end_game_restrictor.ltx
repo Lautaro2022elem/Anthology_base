@@ -1,0 +1,34 @@
+[logic]
+active = sr_idle@start_bad_end_game
+
+[sr_idle@start_bad_end_game]
+on_actor_inside = {+bar_actor_go_to_bad_end_game -bar_end_game_bad_sound_stop} sr_idle@teleport_actor %=run_postprocess(black:2525:true) =CutSceneEndGame%
+
+[sr_idle@teleport_actor]
+on_timer = 2000 | sr_idle@stop_postprocess %=teleport_actor(actor_bad_end_stronglav_walk:actor_bad_end_stronglav_look) +bar_end_game_bad_sound_play%
+
+[sr_idle@stop_postprocess]
+on_timer = 2000 | sr_light@turn_off_light_1 %=stop_postprocess(2525)%
+
+[sr_light@turn_off_light_1]
+on_timer = 3000 | sr_light@turn_off_light_2 %=turn_off_bar_lamps_1%
+
+[sr_light@turn_off_light_2]
+on_timer = 3000 | sr_light@turn_off_light_3 %=turn_off_bar_lamps_2%
+
+[sr_light@turn_off_light_3]
+on_timer = 3000 | sr_light@turn_off_light_4 %=turn_off_bar_lamps_3%
+
+[sr_light@turn_off_light_4]
+on_timer = 3000 | sr_light@turn_off_light_5 %=turn_off_bar_lamps_4%
+
+[sr_light@turn_off_light_5]
+on_timer = 3000 | sr_idle@actor_hide_weapon %=turn_off_bar_lamps_5 +bar_stronglav_spawn_1%
+
+[sr_idle@actor_hide_weapon]
+on_timer = 3000 | sr_light@turn_on_light_1 %=esc_activate_weapon(wpn_pmm) +bar_zver_hide_weapon%
+
+[sr_light@turn_on_light_1]
+on_timer = 5500 | sr_idle@nil %=turn_on_bar_lamps_1%
+
+[sr_idle@nil]

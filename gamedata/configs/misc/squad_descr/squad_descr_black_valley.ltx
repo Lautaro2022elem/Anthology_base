@@ -1,0 +1,235 @@
+; «десь содержатс€ дескрипшены сквадов, которые потом можно создавать использу€ спец функции.
+;-----------------------BLACK VALLEY---------------------------------
+;-----------------------a31---------------------------------
+[blck_val_a31_bandit_kom_squad]:online_offline_group
+faction = stalker
+relationship = neutral
+npc = blck_val_a31_bandit_kom
+target_smart = blck_val_a31
+;spawn_point = blck_val_a31_kom_;spawn_point
+
+[blck_val_a31_bandit_barmen_squad]:online_offline_group
+faction = stalker
+relationship = neutral
+npc = blck_val_a31_bandit_barmen
+target_smart = blck_val_a31
+;spawn_point = blck_val_a31_barmen_1_walk
+
+[blck_val_a31_sologub_trader_squad]:online_offline_group
+faction = stalker
+relationship = neutral
+npc = blck_val_a31_sologub_trader
+target_smart = blck_val_a32
+
+[blck_val_a31_bandit_medic_squad]:online_offline_group
+faction = stalker
+relationship = neutral
+npc = blck_val_a31_bandit_medic
+target_smart = blck_val_a31
+;;spawn_point = blck_val_a31_;spawn_point
+
+[blck_val_a31_bandit_mechanic_squad]:online_offline_group
+faction = stalker
+relationship = neutral
+npc = blck_val_a31_bandit_mechanic
+target_smart = blck_val_a31
+;spawn_point = blck_val_a31_tech_;spawn_point
+
+[blck_val_a31_bandit_vil_squad]:online_offline_group
+faction = stalker
+relationship = neutral
+npc = blck_val_a31_bandit_1, blck_val_a31_bandit_2, blck_val_a31_bandit_3, blck_val_a31_bandit_4, blck_val_a31_bandit_5, blck_val_a31_bandit_7, blck_val_a31_bandit_8, blck_val_a31_bandit_9
+target_smart = blck_val_a31
+;;spawn_point = blck_val_a31_;spawn_point
+
+[blck_val_a31_lutiy_squad]:online_offline_group
+faction = stalker
+relationship = neutral
+npc = blck_val_a31_bandit_6
+target_smart = blck_val_a31
+;;spawn_point = blck_val_a31_;spawn_point
+
+;[blck_val_a31_stalker_squad]:online_offline_group
+;faction = stalker
+;npc = blck_val_a31_stalker_1, blck_val_a31_stalker_2
+;target_smart = blck_val_a31
+;spawn_point = blck_val_a31_stalker_1_walk
+
+;-----------------------a35---------------------------------
+[blck_val_a35_freedom_squad]:online_offline_group
+faction = freedom
+npc = blck_val_a35_freedom_1, blck_val_a35_freedom_2, blck_val_a35_freedom_3
+target_smart = blck_val_a35
+;;spawn_point = blck_val_a35_;spawn_point
+
+[blck_val_a35_bandit_shcool_squad]:online_offline_group
+faction = bandit
+npc = blck_val_a31_stalker_2, sim_default_bandit_2, sim_default_bandit_3, blck_val_bandit_minigame
+target_smart = blck_val_a35
+;;spawn_point = blck_val_a35_;spawn_point
+
+;-----------------------a37---------------------------------
+[blck_val_a37_bandit_squad]:online_offline_group
+faction = stalker
+relationship = neutral
+npc = blck_val_a37_bandit_3, blck_val_a37_bandit_1, blck_val_a37_bandit_2
+target_smart = blck_val_a37
+;;spawn_point = blck_val_a37_;spawn_point
+
+;-----------------------b203---------------------------------
+[blck_val_b203_band_zasada_squad]:online_offline_group
+relationship = enemy
+faction = bandit
+npc = blck_val_b203_bandit_1, blck_val_b203_bandit_2
+target_smart = blck_val_b203
+on_death = %+blck_val_band_zasada_squad_is_dead%
+
+[blck_val_b203_stalker_zasada_squad]:online_offline_group
+faction = stalker
+npc = blck_val_b203_stalker
+target_smart = blck_val_b203
+;;spawn_point = blck_val_b203_;spawn_point
+
+;-----------------------b204---------------------------------
+[blck_val_b203_chimik_squad]:online_offline_group
+faction = stalker
+npc = blck_val_chimik_killer
+target_smart = blck_val_b204
+on_death = %+blck_val_stalker_chimik_is_dead%
+
+;-----------------------b205---------------------------------
+
+[blck_val_monolith_squad_novice]:online_offline_group
+faction = monolith
+npc = sim_default_monolith_1, sim_default_monolith_0, sim_default_monolith_2, sim_default_monolith_1, sim_default_monolith_2, sim_default_monolith_0
+target_smart = blck_val_b206
+story_id = blck_val_monolith_squad_novice
+on_death = %+blck_val_random_monolith_novice_dead%
+
+[blck_val_monolith_squad_advance]:online_offline_group
+faction = monolith
+npc = sim_default_monolith_1, sim_default_monolith_0, sim_default_monolith_2, sim_default_monolith_1, sim_default_monolith_2, sim_default_monolith_0
+target_smart = blck_val_b207
+story_id = blck_val_monolith_squad_advance
+on_death = %+blck_val_random_monolith_advance_dead%
+
+[blck_val_monolith_squad_veteran]:online_offline_group
+faction = monolith
+npc = sim_default_monolith_1, sim_default_monolith_0, sim_default_monolith_2, sim_default_monolith_1, sim_default_monolith_2, sim_default_monolith_0
+target_smart = blck_val_b205
+story_id = blck_val_monolith_squad_veteran
+on_death = %+blck_val_random_monolith_veteran_dead%
+
+[blck_val_monolith_squad_master]:online_offline_group
+faction = monolith
+npc = sim_default_monolith_1, sim_default_monolith_0, sim_default_monolith_2, sim_default_monolith_1, sim_default_monolith_2, sim_default_monolith_0
+target_smart = blck_val_b208
+story_id = blck_val_monolith_squad_master
+on_death = %+blck_val_random_monolith_master_dead%
+
+;-----------------------b45-----------------------------------
+[blck_val_monolith_squad_base]:online_offline_group
+faction = monolith
+npc = blck_val_monolith_group, sim_default_monolith_0, sim_default_monolith_2, sim_default_monolith_1, sim_default_monolith_2, sim_default_monolith_0, sim_default_monolith_1, sim_default_monolith_2, sim_default_monolith_1, sim_default_monolith_0, sim_default_monolith_2
+target_smart = blck_val_b45
+story_id = blck_val_monolith_squad_base
+on_death = %+blck_val_random_monolith_base_dead%
+
+;-----------------------hutor_quest----------------------------
+[blck_val_stalker_hutor_squad]:online_offline_group
+faction = stalker
+npc = blck_val_stalker_hutor_1, blck_val_stalker_hutor_2
+target_smart = blck_val_hutor_quest
+story_id = blck_val_stalker_hutor_squad
+on_death = %+blck_val_stalker_hutor_squad_dead%
+
+[blck_val_hutor_quest_zasada_squad]:online_offline_group
+relationship = enemy
+faction = bandit
+npc = blck_val_bandit_hutor_1, blck_val_bandit_hutor_2, blck_val_bandit_hutor_3, blck_val_bandit_hutor_4, blck_val_bandit_hutor_5, blck_val_bandit_hutor_6
+target_smart = blck_val_hutor_quest
+story_id = blck_val_hutor_quest_zasada_squad
+on_death = %+blck_val_hutor_quest_zasada_squad_dead%
+
+[blck_val_hutor_quest_zasada_now_squad]:online_offline_group
+relationship = enemy
+faction = bandit
+npc = blck_val_bandit_hutor_1, blck_val_bandit_hutor_2, blck_val_bandit_hutor_3, blck_val_bandit_hutor_4, blck_val_bandit_hutor_5, blck_val_bandit_hutor_6
+target_smart = blck_val_hutor_quest_enemy
+story_id = blck_val_hutor_quest_zasada_now_squad
+on_death = %+blck_val_hutor_quest_zasada_now_squad_dead%
+
+;-----------------------sim_1---------------------------------
+[blck_val_sim_1_tushkano_squad]:online_offline_group
+faction = monster
+npc = tushkano_normal, tushkano_normal, tushkano_normal, tushkano_normal, tushkano_normal, tushkano_normal, tushkano_normal, tushkano_normal
+target_smart = blck_val_sim_1
+;;spawn_point = blck_val_sim_1_;spawn_point
+
+;-----------------------sim_2---------------------------------
+[blck_val_sim_2_boar_squad]:online_offline_group
+faction = monster
+npc_random      = boar_normal, boar_normal, boar_normal, boar_strong, boar_01a_weak, boar_02a_weak, boar_02a_strong, boar_01a_hard, boar_02a_hard
+npc_in_squad    = 3, 4
+target_smart = blck_val_sim_2
+;;spawn_point = blck_val_sim_2_;spawn_point
+
+;-----------------------sim_3---------------------------------
+[blck_val_sim_3_dogs_squad]:online_offline_group
+faction = monster
+npc_random      = dog_normal_brown, pseudodog_grey_weak, pseudodog_normal, pseudodog_strong, pseudodog_grey_strong, dog_normal_red, dog_normal_white, dog_normal_brown, dog_normal_bulterier, dog_weak_red, dog_weak_white, dog_weak_brown, dog_weak_bulterier, dog_strong_red, dog_strong_white, dog_strong_brown, dog_strong_bulterier, dog_strong_black, dog_weak_bulterier, dog_weak_brown, dog_weak_brown
+npc_in_squad    = 2, 4
+target_smart = blck_val_sim_3
+;;spawn_point = blck_val_sim_3_;spawn_point
+
+;-----------------------sim_4---------------------------------
+[blck_val_sim_4_zombie_squad]:online_offline_group
+faction = zombied
+npc = blck_val_default_zombied_1, sim_default_zombied_2, sim_default_zombied_3, sim_default_zombied_1, sim_default_zombied_1, sim_default_zombied_2, sim_default_zombied_3
+target_smart = blck_val_sim_4
+on_death = %+blck_val_stalker_zombied_squad_dead%
+story_id = blck_val_stalker_zombied_squad
+
+;-----------------------sim_5---------------------------------
+[blck_val_sim_5_dogs_squad]:online_offline_group
+faction = monster
+npc_random      = dog_normal_brown, pseudodog_grey_weak, pseudodog_normal, pseudodog_strong, pseudodog_grey_strong, dog_normal_red, dog_normal_white, dog_normal_brown, dog_normal_bulterier, dog_weak_red, dog_weak_white, dog_weak_brown, dog_weak_bulterier, dog_strong_red, dog_strong_white, dog_strong_brown, dog_strong_bulterier, dog_strong_black, dog_weak_bulterier, dog_weak_brown, dog_weak_brown
+npc_in_squad    = 2, 4
+target_smart = blck_val_sim_5
+;;spawn_point = blck_val_sim_5_;spawn_point
+
+;-----------------------sim_6---------------------------------
+[blck_val_sim_6_snork_squad]:online_offline_group
+faction = monster
+npc_random      = snork_weak, snork_weak2, snork_weak3, snork_weak4, snork_normal, snork_normal2, snork_normal3, snork_normal4, snork_strong, snork_strong2, snork_strong3, snork_strong4
+npc_in_squad    = 2, 4
+target_smart = blck_val_sim_6
+;;spawn_point = blck_val_sim_6_;spawn_point
+
+
+
+;----------------------------ѕатрульные сквады--------------------------------------------------------
+;----------------------------ѕатруль сталкеров на smart_1-------------------------------------------
+[blck_val_a31_stalker_squad]:online_offline_group
+faction = stalker
+npc_random = sim_default_stalker_2, sim_default_stalker_3
+npc_in_squad = 5, 5
+target_smart = blck_val_a31
+on_death = %+blck_val_a31_stalker_squad_dead%
+
+[blck_val_stalker_goto_smart_1]:online_offline_group
+faction = stalker
+npc_random = sim_traveler_stalker_1, sim_traveler_stalker_0, sim_traveler_stalker_0, sim_traveler_stalker_1
+target_smart = {=surge_started}blck_val_a31_surge, {=is_night}blck_val_a31_night, {=is_day}blck_val_b3:blck_val_a31_night:blck_val_b2:blck_val_b1:blck_val_a31_night:loop
+on_death = %+blck_val_stalker_goto_smart_1_dead%
+npc_in_squad = 2, 3
+story_id = blck_val_stalker_goto_smart_1
+
+;----------------------------ѕатруль сталкеров на smart_2-------------------------------------------
+[blck_val_stalker_goto_smart_2]:online_offline_group
+faction = stalker
+npc_random = sim_default_stalker_1, sim_default_stalker_0, sim_default_stalker_0, sim_default_stalker_1
+target_smart = {=surge_started}blck_val_a31_night, {=is_night}blck_val_a31_night, {=is_day}esc_smart_terrain_1_0:esc_smart_terrain_1_0_1:esc_smart_terrain_1_0_2:esc_smart_terrain_0_1:esc_smart_terrain_1_0_2:blck_val_a31:loop
+on_death = %+blck_val_stalker_goto_smart_2_dead%
+npc_in_squad = 2, 3
+story_id = blck_val_stalker_goto_smart_2

@@ -1,0 +1,62 @@
+--[[ ------------------------------------------------------------------------------------------------
+ File       : function_labx14.script
+ Description: Скрипт-обработчик функций для Лабы X14
+ Copyright  : 2014 © Spectrum project
+ Author		: Geonezis
+ Last edit  : 01.04.2014 (Geonezis)
+--]] ------------------------------------------------------------------------------------------------
+--/											Variables
+--]] ------------------------------------------------------------------------------------------------
+local iTime = 0
+
+local tNpcs = {
+--						|section|					   |X|				   |Y|				   |Z|		   |LVL|  |GAME|			
+				
+				["labx14_a2_sp_killer_1"]  = {44.198513031006,    30.545221328735,    36.306293487549,  4157,  10041},
+				["labx14_a2_sp_killer_2"]  = {49.20972442627,     30.544994354248,    31.159818649292,  5176,  10041},
+				["labx14_a2_sp_killer_3"]  = {42.409229278564,    31.087562561035,    17.292247772217,  3883,  10041},
+--				["labx14_a2_sp_killer_4"]  = {49.08549118042,     30.548261642456,    17.187397003174,  5161,  10041},
+				["labx14_a2_sp_killer_5"]  = {45.828105926514,    30.545490264893,    7.8512563705444,  4310,  10041},
+			  } 
+
+--]] ------------------------------------------------------------------------------------------------
+--/											Initialize
+--]] ------------------------------------------------------------------------------------------------
+function Init()
+	event("ActorSpawned"):register(OnActorSpawned)
+    event("ActorUpdate"):register(OnActorUpdate)    
+end
+--]] ------------------------------------------------------------------------------------------------
+--/											Callback`s
+--]] ------------------------------------------------------------------------------------------------
+function OnActorSpawned()
+	if level.name() == "x14" then
+		if not has_alife_info("labx14_mod_npcs_spawner") then	
+			for k, v in pairs(tNpcs) do
+				SItem(k, vector():set(v[1],v[2],v[3]),v[4],v[5])
+			end
+			give_info("labx14_mod_npcs_spawner")
+		end
+	end	
+end
+
+function OnActorUpdate()
+	if iTime <= time_global() then
+    	iTime = time_global()+5000
+    	
+    	UpdateTasks()
+	end
+end
+--]] ------------------------------------------------------------------------------------------------
+--/											Functions
+--]] ------------------------------------------------------------------------------------------------
+function UpdateTasks()
+	local sLvlName = level.name()
+	
+	if sLvlName == "x14" then
+		--/Квест: Первый сюжетный
+		if has_alife_info("lab14_mod_npcs_spawner") and (not has_alife_info("labx14_a2_main_quest_1_give")) then			
+			give_info("labx14_a2_main_quest_1_give")
+		end		        		
+	end		   
+end

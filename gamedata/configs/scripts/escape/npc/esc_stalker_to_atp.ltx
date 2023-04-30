@@ -1,0 +1,45 @@
+;=========meet_stalker_korpys========
+[meet@korpys_stalker]
+close_anim 		= nil
+close_victim 	= nil
+far_anim 		= nil
+far_victim 		= nil
+close_distance 	= 0
+far_distance 	= 0
+use = {=actor_enemy} false, {=dist_to_actor_le(3)} true, false
+snd_on_use = {!dist_to_actor_le(3)} nil
+meet_on_talking = false
+;==================================
+
+[logic]
+active = walker@start_spot
+suitable = {=check_npc_name(esc_stalker_to_atp)} true, false
+prior = 250
+level_spot = quest_npc
+on_death = death
+
+[walker@start_spot]
+path_walk = esc_smart_terrain_1_1_quest_walker_1_walk
+path_look = esc_smart_terrain_1_1_quest_walker_1_look
+on_info = {+esc_raven_talk_end} walker@to_atp
+invulnerable = false
+meet = no_meet
+
+[walker@to_atp]
+path_walk = esc_stalker_to_atp_walk
+path_look = esc_stalker_to_atp_look
+on_info = {=dist_to_actor_le(8) -stop_meet_stalker_to_atp} %=play_sound(esc_stalker_to_atp_meet) +stop_meet_stalker_to_atp%
+on_info2 = {+meet_dialog_stalker_to_atp_done} %=actor_enemy%
+on_info3 = {+esc_zver_go_to_wolf =dist_to_actor_ge(100)} %=release_npc%
+invulnerable = false
+meet = meet@memmory_start
+
+[meet@memmory_start]:meet@korpys_stalker
+close_victim = actor
+use = {=dist_to_actor_le(8) +esc_dialog_quest_line_atp_meet} self, true
+allow_break = false
+meet_dialog = esc_actor_start_memmory_meet_to_stalker_atp
+trade_enable = false
+
+[death]
+on_info = %+esc_leader_group_stalker_to_atp_dead%

@@ -1,0 +1,10 @@
+[logic]
+active = sr_no_weapon@start
+
+[sr_no_weapon@start]
+on_info = {+bar_zver_hide_weapon} sr_idle@fight
+
+[sr_idle@fight]
+on_info = {+bar_zver_no_weapon} sr_no_weapon@after_start
+
+[sr_no_weapon@after_start]

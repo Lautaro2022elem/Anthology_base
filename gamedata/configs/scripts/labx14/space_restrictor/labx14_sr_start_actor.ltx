@@ -1,0 +1,14 @@
+[logic]
+active = sr_idle
+
+[sr_idle]
+on_actor_inside = {+spectrum_project_start +sp_a2_hero_to_bar_come} sr_idle@2 %+bar_walker_lab_complete +bar_quest_failed%
+
+[sr_idle@2]
+on_game_timer = 20 | sr_idle@3 %=give_task(labx14_search_exit)%
+
+[sr_idle@3]
+on_game_timer = 10 | sr_idle@nil %=play_sound(labx14_sirena)%
+
+
+[sr_idle@nil] 

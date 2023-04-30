@@ -1,0 +1,143 @@
+;----------- << DARK VALLEY >> ------------
+;---------	SIMULATION	--------
+;sim smarties
+;smaller base, x18 entrance building
+[val_smart_terrain_1_2]:default_base
+sim_avail 	            = true
+surge		            = 1
+army		            = 1
+army_heli	            = 1
+
+; camp on hills between farm and central lake
+[val_smart_terrain_3_0]:default_lair
+sim_avail 	            = true
+bandit					= 1
+
+;south pig farm
+[val_smart_terrain_4_0]:default_base
+sim_avail 	            = true
+surge		            = 1
+stalker 	            = 1 
+ecolog		            = 1 
+csky		            = 1
+dolg		            = 1
+killer			        = 1
+freedom			        = 1
+bandit 			        = 1
+renegade				= 1
+
+;camp at northern level changer to to garbage 
+[val_smart_terrain_5_7]:default_lair
+sim_avail 	            = true
+bandit					= 1
+
+;camp at southern level changer to to garbage 
+[val_smart_terrain_5_8]:default_lair
+sim_avail 	            = true
+bandit					= 1
+
+;lair near level changer to meadow
+[val_smart_terrain_5_10]:weak_lair
+sim_avail 	            = true
+
+;camp in front of west exit of bandit base
+[val_smart_terrain_6_4]:weak_lair
+sim_avail 	            = {+faction_base_defense_active} false, true
+bandit					= 1
+
+; cliff south of andit base
+[val_smart_terrain_6_5]:default_lair
+sim_avail 	            = true
+
+;bigger base, SOC bandits, CS freedom, inside outer building
+[val_smart_terrain_7_3]:default_base
+sim_avail 	            = true
+surge		            = 1
+bandit		            = 2
+
+;bigger base, SOC bandits, CS freedom, inside central building
+[val_smart_terrain_7_4]:default_base
+sim_avail 	            = true
+surge		            = 1
+bandit		            = 1
+lair                    = 1 
+
+;bigger base, SOC bandits, CS freedom, courtyard
+[val_smart_terrain_7_5]:default_base
+sim_avail 	            = true
+surge		            = 1
+bandit		            = 1
+
+;north island in lake
+[val_smart_terrain_7_8]:default_territory
+sim_avail 	            = true
+
+;camp near level changer to darkscape
+[val_smart_terrain_7_11]:weak_lair
+sim_avail 	            = true
+bandit					= 1
+
+[val_smart_terrain_8_6]:default_territory
+sim_avail 	            = true
+bandit		            = 1
+stalker 	            = 1 
+killer 		            = 1 
+dolg 		            = 1 
+freedom 	            = 1
+zoo_monster				= 0
+monster					= 0
+monster_predatory_day 	= 0
+monster_predatory_night = 0
+monster_vegetarian		= 0
+monster_zombied_day		= 0
+monster_zombied_night	= 0
+monster_special			= 0
+
+[val_smart_terrain_8_7]:weak_lair
+sim_avail 	            = true
+
+;south island in lake
+[val_smart_terrain_8_9]:default_lair
+sim_avail 	            = true
+
+[val_smart_terrain_9_10]:default_lair
+sim_avail 	            = true
+resource 		        = 1
+stalker 		        = 1
+csky			        = 1
+
+[val_smart_terrain_9_2]:default_lair
+sim_avail 	            = {+faction_base_defense_active} false, true
+
+[val_smart_terrain_9_4]:default_territory
+sim_avail 	            = true 
+surge		            = 1
+bandit		            = 1
+stalker 	            = 1 
+killer 		            = 1 
+dolg 		            = 1 
+freedom 	            = 1
+zoo_monster				= 0
+monster					= 0
+monster_predatory_day 	= 0
+monster_predatory_night = 0
+monster_vegetarian		= 0
+monster_zombied_day		= 0
+monster_zombied_night	= 0
+monster_special			= 0
+
+;camp near x-18 building
+[val_smart_terrain_9_6]:default_territory
+sim_avail 	            = true
+surge		            = 1
+bandit		            = 1
+stalker 	            = 1 
+killer 		            = 1 
+dolg 		            = 1 
+freedom 	            = 1
+
+[val_smart_terrain_7_6]:default_lair
+sim_avail 	            = true
+
+[val_smart_terrain_9_5]:default_lair
+sim_avail 	            = true

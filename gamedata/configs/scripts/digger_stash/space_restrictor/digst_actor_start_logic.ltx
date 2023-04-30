@@ -1,0 +1,14 @@
+[logic]
+active = sr_idle@start
+
+[sr_idle@start]
+on_info = {-digger_stash_start_game_scene -blck_val_intro_ending_good_show_start -blck_val_intro_ending_neutral_0_show_start =actor_on_level(digger_stash)} %=AfterStronglavKick +digger_stash_start_game_scene +digger_stash_scene_start%
+on_info2 = {+digger_stash_scene_start} sr_idle@digst_game_start
+
+[sr_idle@digst_game_start]
+on_timer = 6800 | sr_idle@digst_game_start_2 %=enable_ui +digger_stash_markus_to_actor_meet_start%
+
+[sr_idle@digst_game_start_2]
+on_timer = 1000 | sr_idle@nil %+digger_stash_quest_line_started%
+
+[sr_idle@nil]

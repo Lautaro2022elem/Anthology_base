@@ -1,0 +1,52 @@
+[logic@wiz_krivou]
+suitable = {=check_npc_name(wiz_krivou)} true
+prior = 200
+active = walker@wiz_krivou
+on_death = death@wiz_krivou
+post_combat_time = 0, 0
+
+[walker@wiz_krivou]
+path_walk = krivoy_def_walk
+path_look = krivoy_def_look
+def_state_moving = run
+def_state_standing = guard
+on_info = {+wiz_enemy_with_neutral_actor_kick} walker@wiz_krivou_1
+meet = meet@wiz_krivou
+
+[walker@wiz_krivou_1]
+path_walk = krivoy_walk
+path_look = krivoy_look
+def_state_moving = run
+def_state_standing = ward
+combat_ignore_cond = {=check_enemy_name(actor)} true
+combat_ignore_keep_when_attacked = true
+gather_items_enabled = false
+help_wounded_enabled = true
+corpse_detection_enabled = false
+on_info = {+wiz_enemy_with_neutral_actor_talk_with_krivoy} walker@wiz_krivou_2
+meet = meet@wiz_krivou
+
+[walker@wiz_krivou_2]
+path_walk = krivoy_def_walk
+path_look = krivoy_def_look
+combat_ignore_cond = {=check_enemy_name(actor)} true
+def_state_moving = run
+def_state_standing = guard
+meet = meet@wiz_krivou
+
+[meet@wiz_krivou]
+close_anim 		= nil
+close_victim 	= nil
+far_anim 		= nil
+far_victim 		= nil
+close_distance  = 0
+far_distance 	= 0
+close_snd_distance = 3
+use 			= nil
+close_snd_hello = nil
+trade_enable    = false
+allow_break 	= false
+meet_on_talking = true
+
+[death@wiz_krivou]
+on_info = %+wiz_krivou_die%

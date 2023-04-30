@@ -1,0 +1,196 @@
+;--------------------------------------------------------------------------------
+;----------- << Jupiter >> ------------
+
+[jup_a10_smart_terrain]:default_base
+sim_avail = {+jup_a10_vano_give_task_end} true, {+jup_a10_fals} true, false
+surge		            = 1
+stalker		            = 1 
+bandit		            = 1 
+csky		            = 1 
+dolg 		            = 1 
+freedom 	            = 1
+renegade				= 1
+
+[jup_a12]:default_territory
+sim_avail = {+jup_a12_task_done} true, false
+surge		            = 1
+bandit		            = 2
+renegade		        = 1
+
+[jup_a6]:default_base
+sim_avail 	            = true 
+surge 		            = 1
+stalker		            = 1 
+csky		            = 0 
+ecolog		            = 1
+freedom 	            = 1
+monolith	            = 0
+bandit		            = 0
+dolg		            = 0
+
+[jup_b1]:default_territory
+sim_avail = {+jup_b1_complete_end} true, {+cop_start} false, true
+surge		            = 1
+
+[jup_b19]:default_base
+sim_avail = {-jup_b19_agreed_to_go} true, {+jup_b19_complete} true, {+jup_b19_yar_enemy_or_dead} true, {+cop_start} false, true
+zombied 	            = 1
+
+[jup_b200]:default_base
+sim_avail	            = true
+surge		            = 1
+territory 	            = 1
+stalker		            = 1 
+bandit		            = 1 
+csky		            = 1 
+dolg 		            = 1 
+freedom 	            = 1
+
+[jup_b202]:default_territory
+sim_avail =	{-jup_b52_actor_items_can_be_stolen} true, {+jup_b202_actor_items_returned} true, {+cop_start} false, true
+
+[jup_b203]:default_territory
+sim_avail               = {+jup_b16_oasis_artifact_spawn} true, false
+surge		            = 1
+
+[jup_b204]:default_territory
+sim_avail = {+jup_b204_wachman_dead} true, {+cop_start} false, true
+
+[jup_b205_smart_terrain]:default_lair
+sim_avail = {+jup_b205_evacuation_visited} true, {+cop_start} false, true
+surge		            = 1
+
+[jup_b206]:default_resource
+sim_avail = {+jup_b206_anomalous_grove_done} true, {+cop_start} false, true
+
+[jup_b207]:default_territory
+sim_avail = {-jup_b207_morgan_gived_depot -jup_b207_freedom_knows_about_depot -jup_b207_duty_knows_about_depot} false, {+cop_start} false, true
+
+; pretty much overlaps jup_b208, do not use
+[depo_terrain]:default
+sim_avail = false
+
+[jup_b208]:default_territory
+sim_avail 	            = {+lttz_hb_isg_leader_in_jup -lttz_hb_leaving_jup_done} false, true
+surge		            = 1
+
+[jup_b209]:default_resource
+sim_avail = {+jup_b209_hypotheses_end} true, {+cop_start} false, true
+
+[jup_b211]:default_resource
+sim_avail = {+jup_b211_scene_done} true,  {+cop_start} false, true
+
+[jup_b212]:default_territory
+sim_avail = {+jup_b212_jupiter_chimera_hunt_done} true,  {+cop_start} false, true
+
+[jup_b25]:default_resource
+sim_avail = {+jup_b25_senya_dead} true, {+cop_start} false, true
+
+[jup_b32]:default_resource
+sim_avail 	            = true
+
+[jup_b4]:default_territory
+sim_avail = {+jup_b4_task_end} true, {+cop_start} false, true
+
+[jup_b41]:default_base
+sim_avail 	            = true
+surge		            = 1
+ecolog		            = 2
+
+[jup_b46]:default_territory
+sim_avail 	            = true
+
+[jup_b47]:default_territory
+sim_avail = {+jup_b47_products_info_complite} true, {+jup_b47_all_merc_dead} true, {+cop_start} false, true
+
+[jup_b6_anom_2]:default_resource
+sim_avail = {-jup_b6_give_task} true, {+jup_b6_task_fail} true, {+jup_b6_anom_2_count_end} true, {+cop_start} false, true
+
+;technical
+
+[jup_b200_tushkan_smart_terrain]:default_lair
+sim_avail 	            = true
+
+[jup_b207_depot_attack]:default_territory
+sim_avail               = false
+
+[jup_b219]:default_territory
+sim_avail               = false
+
+[jup_b8_smart_terrain]:default_territory
+sim_avail               = false
+
+[jup_b205_smart_terrain_tushkano]:default_territory
+sim_avail               = false
+
+[jup_a12_merc]:default_territory
+sim_avail               = false
+
+[jup_a9]:default_lair
+sim_avail               =  false
+
+;---------	SIMULATION	--------
+
+[jup_sim_1]:weak_lair
+sim_avail 	            = true
+
+[jup_sim_2]:default_lair		;edited	
+sim_avail 	            = true
+
+[jup_sim_3]:default_lair
+sim_avail 	            = true
+
+[jup_sim_4]:weak_lair
+sim_avail 	            = true
+
+[jup_sim_5]:weak_lair
+sim_avail 	            = true
+
+[jup_sim_6]:default_territory
+sim_avail 	            = true
+
+[jup_sim_7]:weak_lair
+sim_avail 	            = true
+
+[jup_sim_8]:weak_lair
+sim_avail 	            = true
+
+[jup_sim_9]:default_lair
+sim_avail 	            = true
+
+[jup_sim_10]:weak_lair
+sim_avail 	            = true
+
+[jup_sim_11]:weak_lair
+sim_avail 	            = true
+
+[jup_sim_12]:default_lair
+sim_avail 	            = true
+
+[jup_sim_13]:weak_lair
+sim_avail 	            = true
+
+[jup_sim_14]:weak_lair
+sim_avail 	            = true
+
+[jup_sim_15]:default_lair
+sim_avail 	            = true
+
+[jup_sim_16]:weak_lair
+sim_avail 	            = true
+
+[jup_sim_17]:weak_lair
+sim_avail 	            = true
+resource 	            = 2
+
+[jup_sim_18]:default_lair
+sim_avail 	            = true
+
+[jup_sim_19]:weak_lair
+sim_avail 	            = true
+
+[jup_sim_20]:weak_lair
+sim_avail 	            = true
+
+[jup_sim_21]:default_lair
+sim_avail 	            = true

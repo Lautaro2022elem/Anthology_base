@@ -1,0 +1,63 @@
+[logic]
+active = remark@see_actor
+
+[remark@see_actor]
+anim = guard_na
+target = story | actor
+meet = no_meet
+danger = danger
+on_info = {=dist_to_actor_le(20)} remark@claim %+infa_esc_sr_barrer_zona_danger_restiktor%
+on_info2 = {+infa_esc_sr_barrer_zona_alarm_restiktor} %=actor_enemy%
+
+[remark@claim]
+anim = claim
+target = story | actor
+meet = meet@dialog
+danger = danger
+on_info = {+infa_esc_sr_barrer_zona_alarm_restiktor} %=actor_enemy%
+on_info2 = {-infa_esc_shmatko_stop_sound =dist_to_actor_le(5)} %+infa_esc_shmatko_stop_sound =play_sound(esc_shmatko_stop)%
+on_info3 = {=dist_to_actor_le(2)} remark@dialog_actor
+on_info4 = {+esc_sr_barrer_zona_stop_restiktor} %=actor_enemy%
+on_info5 = {+esc_army_shmatco_dialog_kpp_dialog_actor} remark@dialog_actor
+
+[remark@dialog_actor]
+anim = threat
+target = story | actor
+meet = meet@dialog
+danger = danger
+on_info = {+infa_esc_sr_barrer_zona_alarm_restiktor} %=actor_enemy%
+on_info2 = {-infa_esc_shmatko_stop_sound =dist_to_actor_le(4)} %+infa_esc_shmatko_stop_sound =play_sound(esc_shmatko_stop)%
+on_info3 = {+esc_barrer_npc_remove_pat_1} walker %=teleport_npc(esc_army_shmatco_walk_1:esc_army_shmatco_look_1)%
+on_info4 = {+esc_sr_barrer_zona_stop_restiktor} %=actor_enemy%
+
+[walker]
+path_walk = esc_army_shmatco_walk_1
+path_look = esc_army_shmatco_look_1
+on_info = {+esc_colonel_kolyazin_prisoner_actor_dialog_complite} walker@guard
+def_state_standing = threat
+invulnerable = true
+meet = no_meet
+
+[walker@guard]
+path_walk = esc_army_shmatco_walk_2
+path_look = esc_army_shmatco_look_2
+def_state_standing = guard
+invulnerable = true
+meet = no_meet
+on_info = {+esc_colonel_kolyazin_quest_fee_and =dist_to_actor_le(100) =dist_to_actor_ge(50)} %=release_npc%
+
+[meet@dialog]
+abuse           = false
+close_anim 		= nil
+far_anim 		= nil
+far_victim 		= nil
+close_distance  = 0
+far_distance 	= 0
+close_victim = actor
+use = {!actor_enemy =dist_to_actor_le(2) -esc_army_shmatco_dialog_kpp_complit} self, true
+allow_break = false
+meet_dialog = esc_army_shmatco_dialog_kpp
+trade_enable = false
+
+[smart_terrains]
+none = true

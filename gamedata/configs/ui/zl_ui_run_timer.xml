@@ -1,0 +1,12 @@
+<w>
+	<panel x="0" y="0" width="145" height="40" stretch="1">
+		<box_faction x="0" y="0" width="65" height="65"/>
+		<box_faction_shadow x="2" y="2" width="65" height="65"/>
+		<text_time x="35" y="0" width="110" height="40" stretch="1">
+			<text x="0" y="0" r="107" g="254" b="120" font="graffiti50" vert_align="c" align="l"/>
+		</text_time>
+		<text_time_shadow x="37" y="2" width="110" height="40" stretch="1">
+			<text x="0" y="0" r="0" g="0" b="0" font="graffiti50" vert_align="c" align="l"/>
+		</text_time_shadow>
+	</panel>
+</w>

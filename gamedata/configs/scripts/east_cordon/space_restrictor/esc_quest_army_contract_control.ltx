@@ -1,0 +1,38 @@
+[logic]
+active = sr_idle
+
+[sr_idle]
+on_info = {+spectrum_project_start +esc_quest_army_contract_start} sr_idle@2 %=give_task(esc_quest_army_contract_1)%
+
+[sr_idle@2]
+on_info = sr_idle@timer %=spawn_corpse(esc_army_prapor_corpse:esc_army_prapor_corpse_spawn)%
+
+[sr_idle@timer]
+on_game_timer = 10 | sr_idle@3
+
+[sr_idle@3]
+on_info = sr_idle@4 %=spawn_object_in(esc_quest_army_doc:esc_army_prapor_corpse) +esc_quest_army_contract_talk_wolf%
+
+[sr_idle@4]
+on_info  = {=actor_in_zone(esc_quest_line_dungeon_control) =actor_has_item(esc_quest_chimera_repilent) -esc_quest_army_contract_1_in_zone} %+esc_quest_army_contract_1_in_zone =spawn_object(esc_chimera_quest_evil:esc_npc_watchmaker_spawn)%
+on_info2 = {=actor_in_zone(esc_quest_line_dungeon_control) !actor_has_item(esc_quest_chimera_repilent) -esc_quest_army_contract_1_in_zone} %+esc_quest_army_contract_1_in_zone =spawn_object(esc_chimera_quest:esc_npc_watchmaker_spawn)%
+on_info3 = {+esc_quest_army_contract_1_in_zone =actor_has_item(esc_quest_chimera_repilent)} %+esc_quest_chimera_repilent_used =remove_item(esc_quest_chimera_repilent)%
+on_info4 = {+esc_chimera_quest_dead =actor_has_item(esc_quest_army_doc)} sr_idle@5 %+esc_quest_army_contract_1_talk_kolyazin%
+
+[sr_idle@5]
+on_info = {+esc_quest_army_contract_1_complite} sr_idle@6 %=remove_item(esc_quest_army_doc)%
+
+[sr_idle@6]
+on_info = {+esc_quest_army_contract_1_complite -esc_quest_army_contract_1_talk_kolyazin} sr_idle@7 %=give_task(esc_quest_army_contract_2)%
+
+[sr_idle@7]
+on_info = {+esc_quest_dezertir_talk_patogen} sr_idle@8 %=spawn_object(esc_dezertir_bandit:esc_dezertir_bandit_spawn)%
+
+[sr_idle@8]
+on_info  = {+esc_quest_army_contract_2_good} sr_idle@nil %=remove_item(esc_quest_army_brelok)%
+on_info2 = {+esc_quest_army_contract_2_bad -esc_quest_army_contract_2_talk_kolyazin} sr_idle@9
+
+[sr_idle@9]
+on_game_timer = 300 | sr_idle@nil %=remove_item(esc_quest_army_brelok)%
+
+[sr_idle@nil]

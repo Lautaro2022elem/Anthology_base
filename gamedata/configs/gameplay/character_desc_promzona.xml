@@ -1,0 +1,31 @@
+<?xml version='1.0' encoding="windows-1251"?>
+
+<xml>
+<!--------------------------------------------------------------------------------------->	
+<!-------------------------------; Научная база;-------------     ----------------------->
+<!--------------------------------------------------------------------------------------->
+  <specific_character id="prom_kachalka_npc_1" team_default = "1">
+    <name>GENERATE_NAME_stalker</name>
+    <icon>ui_inGame2_neutral_2</icon>
+    <map_icon x="1" y="0"></map_icon>
+    <bio>Опытный сталкер. Детальная информация отсутствует.</bio>
+
+    <class>prom_kachalka_npc_1</class>
+    <community>stalker</community> <terrain_sect>stalker_terrain</terrain_sect>
+    <snd_config>characters_voice\human_03\stalker\</snd_config>
+
+    <rank>30</rank>
+	<money min="1000" max="2000" infinitive="0"/>
+    <reputation>0</reputation>
+
+    <visual>actors\stalker_neutral\stalker_neutral_2_face_7</visual>
+    <supplies>
+      [spawn] \n
+
+#include "gameplay\supplies\character_food_army.xml"
+#include "gameplay\supplies\character_drugs_2.xml"
+#include "gameplay\supplies\character_drugs_mil.xml"
+    </supplies>
+#include "gameplay\character_criticals.xml"
+  </specific_character>
+</xml>

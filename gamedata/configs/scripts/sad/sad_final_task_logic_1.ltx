@@ -1,0 +1,173 @@
+[logic]
+active = sr_idle@wait
+
+[sr_idle@def]
+on_info = {+sad_actor_enemy_to_someone} sr_idle@enemy, {=story_object_exist(sad_ucheny_1) =is_dead(sad_ucheny_1)} sr_idle@failed ; {+sad_ucheny_1_dead} sr_idle@failed ;
+
+[sr_idle@wait]
+on_info = {+sad_actor_enemy_to_someone} sr_idle@enemy
+on_info2 = {+sad_b3_start_arrive +sad_ran_cowboy_gone} sr_idle@wait_near
+
+[sr_idle@wait_near]
+on_info = {+sad_actor_enemy_to_someone} sr_idle@enemy
+on_info2 = {=sad_dist_to_path_le(sad_b2_spawn_point:8000)} sr_idle@100 %=send_tip(sad_rokfeler_about_ucheny:sad_b2_stalker_barman) =create_squad(sad_final_ucheny_squad:sad_b2) +sad_nauchny_task_active%
+;on_info2 = sr_idle@100 %=send_tip(sad_rokfeler_about_ucheny:sad_b2_stalker_barman) =create_squad(sad_final_ucheny_squad:sad_b2) +sad_nauchny_task_active%
+
+[sr_idle@100]
+on_info = {+sad_actor_enemy_to_someone} sr_idle@enemy
+on_info2 = {+sad_nauchny_task_agree} sr_idle@110 %=give_task(sad_nauchny_task)%
+
+[sr_idle@110]
+on_info = {=squad_exist(sad_b3_ucheny_squad)} sr_idle@120 %=remove_squad(sad_b3_ucheny_squad)%, sr_idle@120
+
+[sr_idle@120]
+on_info = {=squad_exist(sad_stalker_radik_squad)} sr_idle@130 %+sad_radik_switch_ran =teleport_squad(sad_stalker_radik_squad:sad_ran_squad_a_spawn_point)%, sr_idle@130
+
+[sr_idle@130]
+on_info = {=squad_exist(sad_b3a_stalker_ataka_squad)} sr_idle@140 %=remove_squad(sad_b3a_stalker_ataka_squad)%, sr_idle@140
+
+[sr_idle@140]
+on_info = sr_idle@150 ;%=clear_smart_terrain(sad_b3:false)%
+
+[sr_idle@150]:sr_idle@def
+on_info = {+sad_nauchny_take_bomba} sr_idle@200
+
+[sr_idle@200]:sr_idle@def
+on_info2 = {=actor_in_zone(sad_b3_explosive_cutscene)} sr_idle@ataka_spawn, {=actor_in_zone(sad_b3_ataker_inside)} sr_idle@ataka_spawn
+on_info3 = {+sad_nauchny_bomba_give} sr_idle@ataka_spawn
+
+[sr_idle@ataka_spawn]
+on_info = sr_idle@ataka %=create_squad(sad_b3_merc_a_squad:sad_b3a) =create_squad(sad_b3_merc_b_squad:sad_b3a) +sad_b3_merc_ataka_start =send_tip(sad_ivan_we_attacked:sad_b3_trader) +sad_nauchny_switch_ran =teleport_squad(sad_final_ucheny_squad:sad_ran_podval_spawn) =create_squad_member(sim_default_stalker_2:sad_final_ucheny_squad:sad_ran_surge_2_walk) =create_squad_member(sim_default_stalker_2:sad_final_ucheny_squad:sad_ran_surge_1_walk)%
+
+[sr_idle@ataka]:sr_idle@def
+on_info2 = {=actor_has_item(sad_nauchny_explosive)} sr_idle@300 %+sad_nauchny_bomba_has%
+
+[sr_idle@300]:sr_idle@def
+on_info2 = {+sad_ran_ucheny_at_position} sr_idle@310
+
+[sr_idle@310]:sr_idle@def
+on_info2 = {=actor_in_zone(sad_nauchny_bobma_place)} sr_idle@320 %=run_tutorial(sad_nauchny_set_bomb)%
+on_info3 = {=distance_to_obj_ge(sad_ucheny_1:50)} sr_idle@315 %=send_tip(sad_nauchny_faraway_1:sad_ucheny_1)%
+
+[sr_idle@315]:sr_idle@def
+on_info2 = {=distance_to_obj_le(sad_ucheny_1:40)} sr_idle@310
+on_game_timer = 180 | sr_idle@300 %-sad_ran_ucheny_at_position -sad_ran_ucheny_go_position =send_tip(sad_nauchny_faraway_1b:sad_ucheny_1)%
+
+[sr_idle@320]:sr_idle@def
+on_info2 = {!actor_in_zone(sad_nauchny_bobma_place)} sr_idle@310 %=stop_tutorial%
+on_info3 = {+sad_nauchny_bomba_ready} sr_idle@400 %=stop_tutorial =remove_item(sad_nauchny_explosive) =sad_spawn_bomba% ;=spawn_object(sad_nauchny_explosive_charge:sad_nauchny_bomba_place:0:230)%
+on_info4 = {!has_active_tutorial} sr_idle@310
+
+[sr_idle@400]:sr_idle@def
+on_info2 = {+sad_nauchny_bomba_done} sr_idle@410 %=spawn_object(sad_nauchny_explosive_grenade:sad_nauchny_explosive_barrel)%
+on_info3 = {=distance_to_obj_ge(sad_ucheny_1:40)} sr_idle@405 %=send_tip(sad_nauchny_faraway_2:sad_ucheny_1)%
+
+[sr_idle@405]:sr_idle@def
+on_info2 = {=distance_to_obj_le(sad_ucheny_1:30)} sr_idle@400
+on_game_timer = 180 | sr_idle@cancel %+sad_nauchny_exit_cave +sad_nauchny_task_cancel =send_tip(sad_nauchny_faraway_3:sad_ucheny_1)%
+
+[sr_idle@410]
+on_info = {=story_object_exist(sad_nauchny_explosive_grenade)} sr_idle@411 %=barrel_explode(sad_nauchny_explosive_grenade)%
+
+[sr_idle@411]
+on_info = {=story_object_exist(sad_zaslon_kamen)} sr_idle@420 %=destroy_object(story:sad_zaslon_kamen)%, sr_idle@420
+
+[sr_idle@420]
+on_info = {=story_object_exist(sad_nauchny_explosive_charge)} sr_idle@430 %=destroy_object(story:sad_nauchny_explosive_charge) =run_postprocess(effector_explode_hit)%, sr_idle@430 %=run_postprocess(effector_explode_hit)% ; =run_cam_effector(shell_shock)
+
+[sr_idle@430]
+on_game_timer = 30 | sr_idle@500 %+sad_nauchny_switch_cave =create_squad(sad_cave_zombied:sad_cave) =set_counter(sad_cave_mob_dead:0) =spawn_corpse(sad_cave_corpse_1:sad_cave_zombi_walk_1:0) =spawn_corpse(sad_cave_corpse_2:sad_cave_zombi_walk_1:3)%
+
+[sr_idle@500]:sr_idle@def
+on_info2 = {+sad_nauchny_cave_1_reached} sr_idle@510 
+
+[sr_idle@510]:sr_idle@def
+on_info2 = {+sad_nauchny_phrase_2} sr_idle@511
+on_game_timer = 120 | sr_idle@520 %+sad_cave_tushkanos_awake%
+
+[sr_idle@511]
+on_game_timer = 40 | sr_idle@520 %+sad_cave_tushkanos_awake =create_squad(sad_cave_tushkans:sad_cave)%
+
+[sr_idle@520]:sr_idle@def
+on_info2 = {=counter_greater(sad_cave_mob_dead:13)} sr_idle@530 %+sad_nauchny_phrase_4%
+on_info3 = {!actor_in_zone(sad_nauchny_cave_sr_light)} sr_idle@all_dead
+
+[sr_idle@530]:sr_idle@def
+on_info2 = {=counter_greater(sad_cave_mob_dead:16)} sr_idle@540 %+sad_cave_dont_spawn_tushkanos%
+on_info3 = {!actor_in_zone(sad_nauchny_cave_sr_light)} sr_idle@all_dead
+on_game_timer = 900 | sr_idle@540 %+sad_cave_dont_spawn_tushkanos%
+
+[sr_idle@540]:sr_idle@def
+on_info2 = {!squad_exist(sad_cave_tushkans)} sr_idle@600 %+sad_nauchny_go_cave_2% ;=play_sound(jup_b1_stalkers_monsters_beat_off)%
+on_info3 = {!actor_in_zone(sad_nauchny_cave_sr_light)} sr_idle@all_dead
+on_game_timer = 180 | sr_idle@600 %+sad_nauchny_go_cave_2%
+
+[sr_idle@600]:sr_idle@def
+on_info2 = {+sad_cave_snorki_awake} sr_idle@610 %=sad_heal_npc(sad_ucheny_1)%
+on_info3 = {!actor_in_zone(sad_nauchny_cave_sr_light)} sr_idle@all_dead
+
+[sr_idle@610]:sr_idle@def
+on_info2 = {!squad_exist(sad_cave_zombied)} sr_idle@61010 %=heal_squad(sad_final_ucheny_squad)%
+on_info3 = {!actor_in_zone(sad_nauchny_cave_sr_light)} sr_idle@all_dead
+
+[sr_idle@61010]:sr_idle@def
+on_info2 = {=squad_near_point(sad_final_ucheny_squad:sad_cave_cs_nauchny_11:0:1500)} sr_idle@61020 %+sad_cave_start_zamer%
+on_info4 = {!actor_in_zone(sad_nauchny_cave_sr_light)} sr_idle@all_dead
+on_game_timer = 900 | sr_idle@61020 %+sad_cave_start_zamer%
+
+[sr_idle@61020]:sr_idle@def
+on_info2 = {=sad_dist_to_path_ge(sad_cave_last_mob_home:6400)} sr_idle@620 %+sad_nauchny_go_to_zamer%
+on_info3 = {!actor_in_zone(sad_nauchny_cave_sr_light)} sr_idle@all_dead
+on_game_timer = 60 | sr_idle@61030 %=run_postprocess(fade_in:9565) =disable_ui%
+
+[sr_idle@61030]
+on_timer = 500 | sr_idle@61040 %=run_postprocess(black:9566) +sad_cave_cs_prepare%
+
+[sr_idle@61040]
+on_timer = 1500 | sr_idle@61041 %=create_cutscene_actor_with_weapon(sad_cave_cs_actor:sad_cave_cs_actor_start:0:270:3) +sad_cave_cutscene_start%
+
+[sr_idle@61041]
+on_timer = 1000 | sr_cutscene %=stop_postprocess(9565) =stop_postprocess(9566) +sad_cave_cutscene_start%
+
+[sr_cutscene]
+point = sad_cave_cs_actor_place
+look = sad_cave_cs_actor_walk
+cam_effector = scenario_cam\sad\sad_cave_cs_camera
+global_cameffect = true
+enable_ui_on_end = false
+outdoor = true
+fov = 60
+on_signal = cameff_end | sr_idle@61050 %=run_postprocess(black:9567) +sad_cave_stop_cutscene%
+on_signal2 = cam_effector_stop | sr_idle@61050 %=run_postprocess(black:9567) +sad_cave_stop_cutscene%
+on_timer = 7000 | %+sad_cave_ucheny_talking%
+on_timer2 = 39000 | {-sad_cave_cs_fade} %+sad_cave_cs_fade =run_postprocess(fade_in:9568)%
+;on_info = {+sad_cave_stop_cutscene} %=stop_sr_cutscene%
+
+[sr_idle@61050]
+on_timer = 350 | {=story_object_exist(sad_cave_cs_actor)} sr_idle@61060 %=destroy_object(story:sad_cave_cs_actor)%, sr_idle@61060
+
+[sr_idle@61060]
+on_timer = 500 | sr_idle@620 %=stop_postprocess(9567) =stop_postprocess(9568) =enable_ui +sad_cave_stop_cutscene%
+
+
+
+[sr_idle@620]:sr_idle@def
+on_info2 = {+sad_cave_nauchny_go_out} sr_idle@630 ;%create-more-mobs%
+
+[sr_idle@630]:sr_idle@def
+on_info2 = {+sad_nauchny_exit_cave} sr_idle@nil %+sad_nauchny_task_complete =heal_squad(sad_final_ucheny_squad) -sad_cave_dont_spawn_tushkanos%
+
+; -----------------------------------------------------------------------------------------------------
+[sr_idle@all_dead]
+on_info = sr_idle@nil %+sad_nauchny_task_cancel%
+
+[sr_idle@enemy]
+on_info = sr_idle@nil %+sad_nauchny_task_cancel%
+
+[sr_idle@failed]
+on_info = sr_idle@nil %+sad_nauchny_task_cancel%
+
+[sr_idle@nil]
+on_info = sr_idle@nil2 %+sad_cave_tushkanos_awake +sad_cave_snorki_awake -sad_cave_dont_spawn_tushkanos%
+
+[sr_idle@nil2]

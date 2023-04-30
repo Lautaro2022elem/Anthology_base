@@ -1,0 +1,98 @@
+<?xml version='1.0' encoding="windows-1251"?>
+
+<xml>
+	
+<!-------------------------- Медик из деревни новичков ------------------------>
+
+    <specific_character id="esc_2_12_medic_mlr" team_default = "1">
+    <name>Кашпировский</name>
+    <icon>ui_inGame2_neutral_1</icon>
+    <map_icon x="1" y="0"></map_icon>
+    <bio>Опытный сталкер. Детальная информация отсутствует.</bio>
+    <class>esc_2_12_medic_mlr</class>
+    <community>stalker</community> 
+	<terrain_sect>stalker_terrain</terrain_sect>
+    <snd_config>characters_voice\human\stalker_1\</snd_config>
+    <rank>900</rank>
+    <reputation>900</reputation>
+    <visual>actors\stalker_neutral\stalker_neutral1e</visual>
+    <supplies>
+        [spawn] \n
+        wpn_bm16 \n
+        ammo_12x70_buck = 1 \n
+    </supplies>
+#include "gameplay\character_criticals.xml"
+	<actor_dialog>dm_init_medic</actor_dialog>
+    <actor_dialog>dm_medic_general</actor_dialog>
+	<actor_dialog>dm_ordered_task_dialog</actor_dialog>
+	<actor_dialog>dm_ordered_task_completed_dialog</actor_dialog>
+		<actor_dialog>actor_break_dialog</actor_dialog>
+    </specific_character>
+
+<!-------------------------- Жирный новичок ------------------------>
+
+<specific_character id="fat_rookie_in_the_house_pole" team_default="1">
+<name>st_fat_rookie_in_the_house_pole_name</name>
+<icon>ui_inGame2_fatman</icon>
+<map_icon x="1" y="0"></map_icon>
+<bio>Опытный сталкер. Детальная информация отсутствует.</bio>
+
+<class>fat_rookie_in_the_house_pole</class>
+<community>stalker</community> 
+<terrain_sect>stalker_terrain</terrain_sect>
+<snd_config>characters_voice\human\stalker_1\</snd_config>
+
+<rank>600</rank>
+<money min="500" max="700" infinitive="0"/>
+<reputation>0</reputation>
+
+<visual>actors\stalker_neutral\esc_fat_stalker</visual>
+<supplies>
+
+[spawn] \n
+wpn_fort \n
+ammo_9x18_fmj = 1 \n
+ammo_12x70_buck = 5 \n
+</supplies>
+#include "gameplay\character_criticals.xml"
+<start_dialog>talk_to_saving_rookie_dlg</start_dialog>
+<actor_dialog>rookie_pole_task_2_questions</actor_dialog>
+<actor_dialog>rookie_pole_task_1_dlg</actor_dialog>
+<actor_dialog>rookie_pole_task_1_dlg_1</actor_dialog>
+<actor_dialog>rookie_pole_task_2_dlg</actor_dialog>
+<actor_dialog>rookie_pole_task_2_dlg_2</actor_dialog>
+<actor_dialog>rookie_pole_task_3_dlg</actor_dialog>
+<actor_dialog>rookie_pole_task_1_dlg_1_from_factory</actor_dialog>
+<actor_dialog>actor_break_dialog</actor_dialog>
+</specific_character>
+
+<!-------------------------- Цель Жирного ------------------------>
+
+<specific_character id="fat_rookie_in_the_house_pole_purpose" team_default="1">
+<name>st_fat_rookie_in_the_house_pole_purpose_name</name>
+<icon>ui_inGame2_neutral_2</icon>
+<map_icon x="1" y="0"></map_icon>
+<bio>Опытный сталкер. Детальная информация отсутствует.</bio>
+
+<class>fat_rookie_in_the_house_pole_purpose</class>
+<community>stalker</community> 
+<terrain_sect>stalker_terrain</terrain_sect>
+<snd_config>characters_voice\human\stalker_1\</snd_config>
+
+<rank>600</rank>
+<money min="3000" max="15000" infinitive="0"/>
+<reputation>1500</reputation>
+
+    <visual>actors\stalker_neutral\stalker_neutral_2</visual>
+<supplies>
+
+[spawn] \n
+wpn_abakan \n
+ammo_5.45x39_fmj = 1 \n
+</supplies>
+#include "gameplay\character_criticals.xml"
+<actor_dialog>rookie_pole_task_3_dlg_1</actor_dialog>
+<actor_dialog>actor_break_dialog</actor_dialog>
+</specific_character>
+
+</xml>

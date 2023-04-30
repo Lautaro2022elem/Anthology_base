@@ -1,0 +1,179 @@
+; «десь содержатс€ дескрипшены сквадов, которые потом можно создавать использу€ спец функции.
+
+[pro_smart_1]:online_offline_group
+faction      = monster
+npc          = psy_dog_normal, dog_strong_black, dog_normal_red, dog_normal_white, dog_normal_brown
+target_smart = pro_smart_1
+story_id     = pro_smart_1
+on_death = %+random_dogs_dead%
+
+[pro_smart_2]:online_offline_group
+faction      = zombied
+npc          = pb_zombied_dolg_man, pb_zombied_dolg_man_1, pb_zombied_dolg_man_2, pb_zombied_dolg_man_3
+target_smart = pro_smart_2
+story_id     = pb_zombied_quest
+on_death = %+perevalochnaya_baza_start_quest_zombied_kill_done%
+
+[pro_smart_3]:online_offline_group
+faction      = monster
+npc          = boar_strong, boar_normal, boar_normal, flesh_02a_normal
+target_smart = pro_smart_3
+story_id     = pro_smart_3
+on_death = %+random_boar_dead%
+
+[perevalochnaya_baza_woundet_stalkers]:online_offline_group
+faction      = stalker
+npc          = pb_markus_novice, pb_shurup
+target_smart = pro_smart_terrain_1_1
+story_id     = perevalochnaya_baza_woundet_stalkers
+
+[perevalochnaya_baza_rezak_squad]:online_offline_group
+faction      = stalker
+npc          = pb_rezak
+target_smart = pro_smart_terrain_1_1
+story_id     = perevalochnaya_baza_rezak_squad
+
+[perevalochnaya_baza_moskit_squad]:online_offline_group
+faction      = stalker
+npc          = pb_moskit
+target_smart = pro_smart_terrain_1_1
+story_id     = perevalochnaya_baza_moskit_squad
+on_death = %+perevalochnaya_baza_moskit_dead%
+
+[perevalochnaya_baza_dubolom_squad]:online_offline_group
+faction      = stalker
+npc          = pb_dubolom
+target_smart = pro_smart_terrain_1_1
+story_id     = perevalochnaya_baza_dubolom_squad
+
+[perevalochnaya_baza_kuvalda_and_snake_squad]:online_offline_group
+faction      = stalker
+npc          = pb_kuvalda, pb_snake
+target_smart = pro_smart_terrain_1_1
+story_id     = perevalochnaya_baza_kuvalda_and_snake_squad
+
+[perevalochnaya_baza_lutiy_squad]:online_offline_group
+faction      = stalker
+npc          = pb_lutiy
+target_smart = pro_smart_terrain_1_1
+story_id     = perevalochnaya_baza_lutiy_squad
+spawn_point = pro_smart_terrain_1_1_lutiy_start_game_walk
+
+[pro_soldier_oleynik_squad]:online_offline_group
+faction      = stalker
+npc          = pb_soldier_oleynik
+target_smart = pro_smart_terrain_1_2
+story_id     = pro_soldier_oleynik_squad
+
+[pro_soldier_oleynik_podval_squad]:online_offline_group
+faction      = stalker
+npc          = pb_soldier_oleynik_podval
+target_smart = pro_smart_terrain_1_2
+story_id     = pro_soldier_oleynik_podval_squad
+always_arrived = true
+
+[pro_paskhalka_stalker_squad]:online_offline_group
+faction      = stalker
+npc          = pb_paskhalka_stalker
+target_smart = pro_smart_terrain_1_2
+story_id     = pro_paskhalka_stalker_squad
+
+[pro_merc_enemy_base_squad]:online_offline_group
+faction      = killer
+relationship = enemy
+npc          = sim_default_killer_3, sim_default_killer_2, sim_default_killer_2, sim_default_killer_1, sim_default_killer_2, sim_default_killer_1, sim_default_killer_2
+target_smart = pro_smart_terrain_1_1
+story_id     = pro_merc_enemy_base_squad
+on_death = %+pro_merc_enemy_base_squad_dead%
+
+[pro_podzemka_duty_squad]:online_offline_group
+faction      = stalker
+npc          = pb_duty_tachenko, pb_duty_chepurnoy, pb_duty_bunchuck, pb_duty_kosmach, pb_duty_zaharchuk
+target_smart = pro_smart_terrain_2_1
+story_id     = pro_podzemka_duty_squad
+
+[pro_base_final_squad]:online_offline_group
+faction      = stalker
+npc          = pb_moskit, pb_rezak, pb_markus_novice
+target_smart = pro_smart_terrain_3_0
+story_id     = pro_base_final_squad
+
+[pro_base_final_lutiy_squad]:online_offline_group
+faction      = stalker
+npc          = pb_lutiy
+target_smart = pro_smart_terrain_3_0
+story_id     = pro_base_final_lutiy_squad
+
+[pro_base_final_snake_squad]:online_offline_group
+faction      = stalker
+npc          = pb_snake, pb_soldier_oleynik, pb_dubolom
+target_smart = pro_smart_terrain_3_0
+story_id     = pro_base_final_snake_squad
+
+[pro_base_final_murad_squad]:online_offline_group
+faction      = stalker
+npc          = pb_murad_on_base
+target_smart = pro_smart_terrain_3_0
+story_id     = pro_base_final_murad_squad
+
+[pro_lutiy_final_end_squad]:online_offline_group
+faction      = stalker
+npc          = pb_lutiy_final
+target_smart = pro_smart_terrain_3_0
+story_id     = pro_lutiy_final_end_squad
+
+[perevalochnaya_baza_quest_flash]:online_offline_group
+faction      = monster_vegetarian
+npc          = flesh_strong, flesh_normal, flesh_normal, flesh_normal, flesh_normal
+target_smart = pro_smart_terrain_2_0
+story_id     = perevalochnaya_baza_quest_flash
+on_death = %+perevalochnaya_baza_quest_flash_dead%
+
+[pb_quest_controller_squad]:online_offline_group
+faction      = monster
+npc          = pb_controller_quest
+target_smart = pro_smart_terrain_1_0_quest
+story_id     = pb_quest_controller_squad
+on_death = %+controller_quest_dead%
+
+[pro_dog_quest_squad]:online_offline_group
+faction      = monster
+npc          = pseudodog_normal, dog_strong, dog_normal, dog_weak, dog_normal, dog_cute
+target_smart = pro_smart_terrain_4_0_quest
+story_id     = pro_dog_quest_squad
+on_death = %+pro_dog_quest_squad_dead%
+
+[pro_bloodsucker_quest_squad]:online_offline_group
+faction      = monster
+npc          = bloodsucker_strong
+target_smart = pro_smart_terrain_4_1_quest
+story_id     = pro_bloodsucker_quest_squad
+on_death = %+pro_bloodsucker_quest_squad_dead%
+
+[pb_monolith_sim_squad_advanced]:online_offline_group
+faction = monolith
+npc = sim_default_monolith_0
+npc_in_squad = 1, 1
+target_smart = pro_smart_terrain_2_0
+on_death = %+random_monolith_advanced_dead%
+
+[pb_monolith_sim_squad_veteran]:online_offline_group
+faction = monolith
+npc = sim_default_monolith_1
+npc_in_squad = 1, 1
+target_smart = pro_smart_terrain_2_0
+on_death = %+random_monolith_veteran_dead%
+
+[pb_simulation_bloodsucker]:online_offline_group
+faction = monster
+npc_random = bloodsucker_weak, bloodsucker_weak, bloodsucker_weak, bloodsucker_normal, bloodsucker_normal, bloodsucker_strong
+npc_in_squad = 1, 1
+target_smart = pro_smart_terrain_2_0
+on_death = %+random_bloodsucker_dead%
+
+[pb_simulation_snork]:online_offline_group
+faction = monster
+npc_random = snork_weak, snork_weak, snork_normal, snork_normal, snork_strong
+npc_in_squad = 1, 2
+target_smart = pro_smart_terrain_2_0
+on_death = %+random_snork_dead%

@@ -1,0 +1,61 @@
+[logic@def]
+suitable = {=target_squad_name(sad_sim_13_snorki)} true
+monster_job = true
+prior = 200
+
+[mob_home]
+path_home = snokr_2_jump1
+home_min_radius = 15
+home_max_radius = 50
+aggressive = true
+
+[mob_walker@def]
+combat_ignore_cond = true
+friendly = true
+on_info2 = {=mob_was_hit} %+sad_sim_13_snorki_wake%
+on_info3 = {=dist_to_actor_le(5)} %+sad_sim_13_snorki_wake%
+
+; -------------------------------------------------------------------------------------------------------- 1
+[logic@snokr_1]:logic@def
+active = mob_walker@1
+
+[mob_walker@1]:mob_walker@def
+path_walk = snokr_1_hide 
+path_look = snokr_1_jump1
+on_info = {+sad_sim_13_snorki_wake} mob_jump@11
+
+[mob_jump@11]
+path_jump = snokr_1_jump1
+ph_jump_factor = 0.8
+offset = 0,0,0
+on_signal = jumped | mob_home
+
+; -------------------------------------------------------------------------------------------------------- 2
+[logic@snokr_2]:logic@def
+active = mob_walker@2
+
+[mob_walker@2]:mob_walker@def
+path_walk = snokr_2_hide
+path_look = snokr_2_jump1
+on_info = {+sad_sim_13_snorki_wake} mob_jump@21
+
+[mob_jump@21]
+path_jump = snokr_2_jump1
+ph_jump_factor = 0.8
+offset = 0,0,0
+on_signal = jumped | mob_home
+
+; -------------------------------------------------------------------------------------------------------- 3
+[logic@snokr_3]:logic@def
+active = mob_walker@3
+
+[mob_walker@3]:mob_walker@def
+path_walk = snokr_3_hide
+path_look = snokr_3_jump1
+on_info = {+sad_sim_13_snorki_wake} mob_jump@31
+
+[mob_jump@31]
+path_jump = snokr_3_jump1
+ph_jump_factor = 0.8
+offset = 0,0,0
+on_signal = jumped | mob_home

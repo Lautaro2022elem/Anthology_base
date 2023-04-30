@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="windows-1251"?>
+
+<!--
+    KillCam
+    Generated with AnomalyModCreator
+-->
+
+<!-- 
+	MCM
+-->
+<string_table>
+
+	<string id="ui_mcm_killcam_title">
+		<text>KillCam</text>
+	</string>
+	<string id="ui_mcm_menu_killcam">
+		<text>KillCam</text>
+	</string>
+
+	<string id="ui_mcm_killcam_enableDebug">
+		<text>Включить отладку</text>
+	</string>
+
+	<string id="ui_mcm_killcam_killCamTime">
+		<text>Продолжительность</text>
+	</string>
+	<string id="ui_mcm_killcam_killCamTimeFactor">
+		<text>Замедление времени</text>
+	</string>
+	<string id="ui_mcm_killcam_killCamDistance">
+		<text>Расстояние</text>
+	</string>
+	<string id="ui_mcm_killcam_killCamElevation">
+		<text>Высота</text>
+	</string>
+	<string id="ui_mcm_killcam_killCamSpeed">
+		<text>Скорость орбиты</text>
+	</string>
+
+	<string id="ui_mcm_killcam_killCamSmoothForward">
+		<text>Плавный вход</text>
+	</string>
+	<string id="ui_mcm_killcam_killCamSmoothBackward">
+		<text>Плавный возврат</text>
+	</string>
+	<string id="ui_mcm_killcam_killCamCooldown">
+		<text>Минимальное время между KillCam</text>
+	</string>
+	<string id="ui_mcm_killcam_killCamChance">
+		<text>Шанс срабатывания</text>
+	</string>
+
+</string_table>
+                        

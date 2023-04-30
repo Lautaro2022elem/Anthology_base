@@ -1,0 +1,13 @@
+[logic]
+active = sr_idle@chimik_killer_spawn
+
+[sr_idle@chimik_killer_spawn]
+on_info = {+blck_val_actor_give_knife_shaman} sr_idle@chimik_killer_spawn_start
+
+[sr_idle@chimik_killer_spawn_start]
+on_timer = 1000 | sr_idle@miklucha_pda_in_bag %=create_squad(blck_val_b203_chimik_squad:blck_val_b204)%
+
+[sr_idle@miklucha_pda_in_bag]
+on_info = {=actor_has_item(blck_val_miklucha_pda) -blck_val_miklucha_pda_in_bag_actor} sr_idle@nil %+blck_val_miklucha_pda_in_bag_actor%
+
+[sr_idle@nil]

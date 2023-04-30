@@ -1,0 +1,19 @@
+[logic] 
+active = sr_idle@start
+
+[sr_idle@start]
+on_info = {+topi_start +topi_suget_quest_4_fugas_all_instal -topi_suget_quest_4_fugas_come_to_point =actor_in_zone(topi_b9_main_suget_quest_4_restr_2)} sr_timer@first %+topi_suget_quest_4_fugas_come_to_point%
+
+[sr_timer@first]
+type = dec
+string = "Подрыв фугасов"
+start_value = 15000
+on_value = 0 | sr_idle@second %+topi_suget_quest_4_fugas_time_out%
+
+[sr_idle@second]
+on_info = {+topi_suget_quest_4_fugas_time_out +topi_suget_quest_4_fugas_create_var_1 -topi_anubis_suget_quest_4_create_npc_var_1 -topi_suget_quest_4_fugas_create_var_2} %=topi_b9_anubis_create_npc_var_1 +topi_anubis_suget_quest_4_create_npc_var_1%
+on_info2 = {+topi_suget_quest_4_fugas_time_out +topi_suget_quest_4_fugas_create_var_2 -topi_anubis_suget_quest_4_create_npc_var_2 -topi_suget_quest_4_fugas_create_var_1} %=topi_b9_anubis_create_npc_var_2 +topi_anubis_suget_quest_4_create_npc_var_2%
+on_info3 = {+topi_anubis_suget_quest_4_create_npc_var_1 -topi_anubis_suget_quest_4_podquest_end_1_give} sr_idle@nil %=give_task(geonezis_topi_b9_main_suget_quest_4_end_1) +topi_anubis_suget_quest_4_podquest_end_1_give%
+on_info4 = {+topi_anubis_suget_quest_4_create_npc_var_2 -topi_anubis_suget_quest_4_podquest_end_2_give} sr_idle@nil %=give_task(geonezis_topi_b9_main_suget_quest_4_end_2) +topi_anubis_suget_quest_4_podquest_end_2_give%
+
+[sr_idle@nil]

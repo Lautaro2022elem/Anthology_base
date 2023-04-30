@@ -1,0 +1,93 @@
+[logic@perevalochnaya_baza_moskit]
+suitable = {=check_npc_name(pb_moskit)} true
+prior = 200
+active = animpoint@moskit_start_game
+post_combat_time = 0, 0
+
+[animpoint@moskit_start_game]
+cover_name = moskit_stay_wall
+on_info = {+perevalochnaya_lutiy_meet_to_zombied_done} walker@moskit_meet_to_lutiy
+on_info2 = {+pro_come_back_prostranstvenniy_puzir} %=release_npc%
+gather_items_enabled = false
+corpse_detection_enabled = false
+invulnerable = true
+meet = no_meet
+
+[walker@moskit_meet_to_lutiy]
+path_walk = moskit_meet_to_lutiy_walk
+path_look = moskit_meet_to_lutiy_look
+on_timer = 17500 | move@to_actor %+perevalochnaya_baza_moskit_go_to_zombied%
+gather_items_enabled = false
+corpse_detection_enabled = false
+invulnerable = false
+meet = no_meet
+
+[move@to_actor]
+invulnerable                 = false
+move_pursue_actor            = true
+move_pursue_look_subject     = actor 
+move_pursue_range            = 5|10
+move_pursue_state_stand      = wait_na
+move_pursue_state_move       = walk_noweap                     
+move_pursue_state_overtake   = run
+on_info = {=dist_to_actor_ge(60) -perevalochnaya_baza_quest_line_zombied_kill_end} remark@wait %=pb_nps_moskit_quest_sms%
+on_info2 = {+perevalochnaya_baza_moskit_go_to_zombied =dist_to_actor_le(6) -infa_moskit_talk_to_actor_stop_sound} %=play_sound(pb_moskit_talk_to_actor) +infa_moskit_talk_to_actor_stop_sound%
+on_info3 = {+perevalochnaya_baza_start_quest_zombied_kill_done =dist_to_actor_le(8) -infa_moskit_talk_to_zombied_stop_sound -pro_moskit_talk_to_kill_zombied_pda} %=play_sound(pb_moskit_talk_to_kill_zombied) +infa_moskit_talk_to_zombied_stop_sound%
+on_info4 = {+perevalochnaya_baza_start_quest_zombied_kill_done =dist_to_actor_ge(8) -infa_moskit_talk_to_zombied_stop_sound -pro_moskit_talk_to_kill_zombied_pda} %=pb_moskit_talk_to_kill_zombied_pda +pro_moskit_talk_to_kill_zombied_pda%
+on_info5 = {+controller_spawn_end} remark@psy_back
+meet = no_meet
+gather_items_enabled = false
+corpse_detection_enabled = false
+combat_ignore_keep_when_attacked = false 
+combat_ignore_cond = false
+
+[remark@wait]
+anim = threat_danger
+target = story | actor
+meet = no_meet
+danger = danger
+on_info = {=dist_to_actor_le(40)} move@to_actor %=pb_nps_moskit_quest_sms_2%
+gather_items_enabled = false
+corpse_detection_enabled = false
+invulnerable = true
+
+[remark@psy_back]
+anim = psy_pain
+target = path | pro_smart_terrain_1_1_lutiy_meet_to_actor_look, 0
+on_info = {-infa_moskit_talk_to_controller_stop_sound +controller_spawn_end} %+infa_moskit_talk_to_controller_stop_sound =play_sound(pb_controller_coming)%
+on_info2 = {+controller_quest_dead} walker@moskit_stay_after_zombied_kill
+meet = no_meet
+combat_ignore_cond = true 
+combat_ignore_keep_when_attacked = true 
+gather_items_enabled = false
+corpse_detection_enabled = false
+invulnerable = true
+
+[walker@moskit_stay_after_zombied_kill]
+path_walk = moskit_stay_after_zombied_kill_walk
+path_look = moskit_stay_after_zombied_kill_look
+gather_items_enabled = false
+on_info = {+pro_come_back_prostranstvenniy_puzir} %=release_npc%
+corpse_detection_enabled = false
+invulnerable = false
+meet = meet@to_quest
+
+[meet@talk]
+close_anim 		= nil
+close_victim 	= nil
+far_anim 		= nil
+far_victim 		= nil
+close_distance 	= 0
+far_distance 	= 0
+use = {=actor_enemy} false, {=dist_to_actor_le(3)} true, false
+snd_on_use = {!dist_to_actor_le(3)} nil
+meet_on_talking = false
+
+[meet@to_quest]:meet@talk
+close_snd_hello = pb_moskit_meet
+close_snd_bye = pb_moskit_meet_bye
+close_snd_distance = 3
+close_victim = actor
+allow_break = false
+meet_dialog = pb_moskit_start_dialog
+trade_enable = false

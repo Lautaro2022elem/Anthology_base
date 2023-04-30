@@ -1,0 +1,4550 @@
+<?xml version="1.0" encoding="windows-1251" ?>
+<game_dialogs>
+    <dialog id="sad_b4_killer_glavar">
+        <phrase_list>
+            <phrase id="21">
+                <text>sad_b4_killer_glavar_21</text>
+                <next>211</next>
+            </phrase>
+            <phrase id="2">
+                <text />
+                <has_info>sad_b4_glavar_meeted</has_info>
+                <next>21</next>
+            </phrase>
+            <phrase id="111">
+                <text>sad_b4_killer_glavar_111</text>
+                <next>1111</next>
+            </phrase>
+            <phrase id="1">
+                <text />
+                <dont_has_info>sad_b4_glavar_meeted</dont_has_info>
+                <next>11</next>
+            </phrase>
+            <phrase id="1111">
+                <text>sad_b4_killer_glavar_1111</text>
+                <next>11111</next>
+            </phrase>
+            <phrase id="11">
+                <text>sad_b4_killer_glavar_11</text>
+                <next>111</next>
+            </phrase>
+            <phrase id="0">
+                <text />
+                <next>1</next>
+                <next>2</next>
+            </phrase>
+            <phrase id="11111">
+                <text>sad_b4_killer_glavar_11111</text>
+                <action>dialogs.break_dialog</action>
+                <give_info>sad_b4_glavar_meeted</give_info>
+            </phrase>
+            <phrase id="211">
+                <text>sad_b4_killer_glavar_211</text>
+                <action>dialogs.break_dialog</action>
+            </phrase>
+        </phrase_list>
+    </dialog>
+    <dialog id="sad_ban_bandit_dialog_start">
+        <phrase_list>
+            <phrase id="22">
+                <text>sad_ban_bandit_dialog_start_22</text>
+                <dont_has_info>sad_ban_bandit_leader_payd</dont_has_info>
+                <has_info>sad_ban_bandit_leader_meeted</has_info>
+            </phrase>
+            <phrase id="23">
+                <text>sad_ban_bandit_dialog_start_23</text>
+                <has_info>sad_ban_bandit_leader_payd</has_info>
+                <has_info>sad_ban_bandit_leader_meeted</has_info>
+            </phrase>
+            <phrase id="1">
+                <text />
+                <next>21</next>
+                <next>22</next>
+                <next>23</next>
+            </phrase>
+            <phrase id="21">
+                <text>sad_ban_bandit_dialog_start_21</text>
+                <dont_has_info>sad_ban_bandit_leader_meeted</dont_has_info>
+            </phrase>
+            <phrase id="0">
+                <text />
+                <next>1</next>
+            </phrase>
+        </phrase_list>
+    </dialog>
+    <dialog id="sad_ban_bandit_guard_1">
+        <phrase_list>
+            <phrase id="22222">
+                <text>sad_ban_bandit_guard_1_22222</text>
+            </phrase>
+            <phrase id="22">
+                <text>sad_ban_bandit_guard_1_22</text>
+                <next>222</next>
+                <next>221</next>
+            </phrase>
+            <phrase id="221">
+                <text>sad_ban_bandit_guard_1_221</text>
+                <next>2222</next>
+            </phrase>
+            <phrase id="2222">
+                <text>sad_ban_bandit_guard_1_2222</text>
+                <next>22221</next>
+            </phrase>
+            <phrase id="1111">
+                <text>sad_ban_bandit_guard_1_1111</text>
+                <next>11111</next>
+            </phrase>
+            <phrase id="111">
+                <text>sad_ban_bandit_guard_1_111</text>
+                <next>1111</next>
+            </phrase>
+            <phrase id="11">
+                <text>sad_ban_bandit_guard_1_11</text>
+                <next>111</next>
+            </phrase>
+            <phrase id="222">
+                <text>sad_ban_bandit_guard_1_222</text>
+                <action>dialogs.break_dialog</action>
+                <give_info>sad_ban_bandits_fight</give_info>
+            </phrase>
+            <phrase id="1">
+                <text>sad_ban_bandit_guard_1_1</text>
+                <dont_has_info>sad_ban_bandit_leader_payd</dont_has_info>
+                <next>11</next>
+            </phrase>
+            <phrase id="2">
+                <text>sad_ban_bandit_guard_1_2</text>
+                <dont_has_info>sad_ban_bandit_leader_payd</dont_has_info>
+                <next>22</next>
+            </phrase>
+            <phrase id="11111">
+                <text>sad_ban_bandit_guard_1_11111</text>
+                <action>dialogs.break_dialog</action>
+                <give_info>sad_ban_bandit_guard_1_bak</give_info>
+            </phrase>
+            <phrase id="22221">
+                <text>sad_ban_bandit_guard_1_22221</text>
+                <action>dialogs.break_dialog</action>
+                <give_info>sad_ban_bandit_guard_1_bak</give_info>
+            </phrase>
+            <phrase id="3">
+                <text>sad_ban_bandit_guard_1_3</text>
+                <action>dialogs.break_dialog</action>
+                <give_info>sad_ban_bandits_fight</give_info>
+                <has_info>sad_ban_bandit_leader_payd</has_info>
+            </phrase>
+            <phrase id="0">
+                <text>sad_ban_bandit_guard_1_0</text>
+                <next>1</next>
+                <next>2</next>
+                <next>3</next>
+            </phrase>
+        </phrase_list>
+    </dialog>
+    <dialog id="sad_b4_killer_first_meet">
+        <phrase_list>
+            <phrase id="1">
+                <text>sad_b4_killer_first_meet_1</text>
+                <next>2</next>
+            </phrase>
+            <phrase id="2">
+                <text>sad_b4_killer_first_meet_2</text>
+                <next>3</next>
+            </phrase>
+            <phrase id="3">
+                <text>sad_b4_killer_first_meet_3</text>
+                <action>dialogs.break_dialog</action>
+                <give_info>sad_b4_entrance_talk</give_info>
+            </phrase>
+            <phrase id="0">
+                <text>sad_b4_killer_first_meet_0</text>
+                <next>1</next>
+            </phrase>
+        </phrase_list>
+    </dialog>
+    <dialog id="sad_grisha_dialog_0">
+        <dont_has_info>sad_actor_kill_mutny_agree</dont_has_info>
+        <dont_has_info>sad_actor_kill_mutny_otkaz</dont_has_info>
+        <dont_has_info>sad_b1_ataka_start</dont_has_info>
+        <dont_has_info>sad_mutny_squad_awake</dont_has_info>
+        <phrase_list>
+            <phrase id="11">
+                <text>sad_grisha_dialog_0_11</text>
+                <give_info>sad_actor_kill_mutny_agree</give_info>
+                <next>111</next>
+            </phrase>
+            <phrase id="12">
+                <text>sad_grisha_dialog_0_12</text>
+                <action>dialogs.break_dialog</action>
+                <give_info>sad_actor_kill_mutny_otkaz</give_info>
+            </phrase>
+            <phrase id="111">
+                <text>sad_grisha_dialog_0_111</text>
+            </phrase>
+            <phrase id="0">
+                <text>sad_grisha_dialog_0_0</text>
+                <give_info>sad_grisha_meeted</give_info>
+                <next>1</next>
+                <next>2</next>
+            </phrase>
+            <phrase id="2">
+                <text>sad_grisha_dialog_0_2</text>
+                <dont_has_info>sad_actor_told_about_mutny</dont_has_info>
+                <next>11</next>
+                <next>12</next>
+            </phrase>
+            <phrase id="1">
+                <text>sad_grisha_dialog_0_1</text>
+                <has_info>sad_actor_told_about_mutny</has_info>
+                <next>11</next>
+                <next>12</next>
+            </phrase>
+        </phrase_list>
+    </dialog>
+    <dialog id="sad_ban_bandit_guard_1b">
+        <phrase_list>
+            <phrase id="1">
+                <text>sad_ban_bandit_guard_1b_1</text>
+                <action>dialogs.break_dialog</action>
+            </phrase>
+            <phrase id="2">
+                <text>sad_ban_bandit_guard_1b_2</text>
+                <action>dialogs.break_dialog</action>
+                <give_info>sad_ban_bandits_fight</give_info>
+            </phrase>
+            <phrase id="0">
+                <text>sad_ban_bandit_guard_1b_0</text>
+                <next>1</next>
+                <next>2</next>
+            </phrase>
+        </phrase_list>
+    </dialog>
+    <dialog id="sad_b4_fedor_talk">
+        <phrase_list>
+            <phrase id="1">
+                <text>sad_b4_fedor_talk_1</text>
+                <next>11</next>
+            </phrase>
+            <phrase id="11">
+                <text>sad_b4_fedor_talk_11</text>
+                <action>dialogs_sad.sad_radik_transfer_vodka</action>
+                <next>111</next>
+                <next>112</next>
+            </phrase>
+            <phrase id="112">
+                <text>sad_b4_fedor_talk_112</text>
+                <next>1121</next>
+            </phrase>
+            <phrase id="0">
+                <text>sad_b4_fedor_talk_0</text>
+                <next>1</next>
+            </phrase>
+            <phrase id="1121">
+                <text>sad_b4_fedor_talk_1121</text>
+                <next>111</next>
+                <next>11211</next>
+            </phrase>
+            <phrase id="111">
+                <text>sad_b4_fedor_talk_111</text>
+                <precondition>dialogs.have_actor_any_pistol</precondition>
+                <action>dialogs.transfer_any_pistol_from_actor</action>
+                <action>dialogs.break_dialog</action>
+                <give_info>sad_fedor_pistol_have</give_info>
+            </phrase>
+            <phrase id="11211">
+                <text>sad_b4_fedor_talk_11211</text>
+                <action>dialogs.break_dialog</action>
+                <give_info>sad_fedor_talk_end</give_info>
+            </phrase>
+        </phrase_list>
+    </dialog>
+    <dialog id="sad_b4_jail_guard">
+        <phrase_list>
+            <phrase id="1">
+                <text>sad_b4_jail_guard_1</text>
+                <next>2</next>
+            </phrase>
+            <phrase id="2">
+                <text>sad_b4_jail_guard_2</text>
+                <next>3</next>
+            </phrase>
+            <phrase id="3">
+                <text>sad_b4_jail_guard_3</text>
+                <next>4</next>
+            </phrase>
+            <phrase id="4">
+                <text>sad_b4_jail_guard_4</text>
+                <next>41</next>
+                <next>42</next>
+                <next>43</next>
+                <next>44</next>
+            </phrase>
+            <phrase id="44">
+                <text>sad_b4_jail_guard_44</text>
+                <action>dialogs.break_dialog</action>
+                <give_info>sad_b4_jail_guard_parol</give_info>
+            </phrase>
+            <phrase id="43">
+                <text>sad_b4_jail_guard_43</text>
+                <action>dialogs.break_dialog</action>
+                <give_info>sad_b4_jail_guard_parol</give_info>
+            </phrase>
+            <phrase id="42">
+                <text>sad_b4_jail_guard_42</text>
+                <action>dialogs.break_dialog</action>
+                <give_info>sad_b4_jail_guard_parol</give_info>
+            </phrase>
+            <phrase id="41">
+                <text>sad_b4_jail_guard_41</text>
+                <action>dialogs.break_dialog</action>
+                <give_info>sad_b4_jail_guard_parol</give_info>
+            </phrase>
+            <phrase id="0">
+                <text>sad_b4_jail_guard_0</text>
+                <next>1</next>
+            </phrase>
+        </phrase_list>
+    </dialog>
+    <dialog id="sad_b4_talk_after">
+        <phrase_list>
+            <phrase id="1">
+                <text />
+                <dont_has_info>sad_b4_arrive_to_b3_told</dont_has_info>
+                <next>11</next>
+            </phrase>
+            <phrase id="0">
+                <text />
+                <next>1</next>
+                <next>2</next>
+            </phrase>
+            <phrase id="11">
+                <text>sad_b4_talk_after_11</text>
+                <next>111</next>
+            </phrase>
+            <phrase id="111">
+                <text>sad_b4_talk_after_111</text>
+                <next>1111</next>
+            </phrase>
+            <phrase id="1111">
+                <text>sad_b4_talk_after_1111</text>
+                <next>11111</next>
+            </phrase>
+            <phrase id="11111">
+                <text>sad_b4_talk_after_11111</text>
+                <action>dialogs.break_dialog</action>
+                <give_info>sad_b4_arrive_to_b3_told</give_info>
+            </phrase>
+            <phrase id="2">
+                <text />
+                <has_info>sad_b4_arrive_to_b3_told</has_info>
+                <next>21</next>
+            </phrase>
+            <phrase id="21">
+                <text>sad_b4_talk_after_21</text>
+                <next>211</next>
+                <next>212</next>
+            </phrase>
+            <phrase id="212">
+                <text>sad_b4_talk_after_212</text>
+                <action>dialogs.break_dialog</action>
+                <give_info>sad_b4_arrive_to_b3</give_info>
+            </phrase>
+            <phrase id="211">
+                <text>sad_b4_talk_after_211</text>
+                <action>dialogs.break_dialog</action>
+            </phrase>
+        </phrase_list>
+    </dialog>
+    <dialog id="sad_ban_bandit_dialog_1">
+        <dont_has_info>sad_ban_bandit_leader_payd</dont_has_info>
+        <phrase_list>
+            <phrase id="111">
+                <text>sad_ban_bandit_dialog_1_111</text>
+                <next>1111</next>
+            </phrase>
+            <phrase id="111111">
+                <text>sad_ban_bandit_dialog_1_111111</text>
+                <precondition>dialogs_sad.sad_ban_has_money</precondition>
+                <action>dialogs_sad.sad_ban_actor_give_money</action>
+                <action>dialogs.break_dialog</action>
+                <give_info>sad_ban_bandit_leader_payd</give_info>
+            </phrase>
+            <phrase id="111112">
+                <text>sad_ban_bandit_dialog_1_111112</text>
+                <precondition>dialogs_sad.sad_ban_has_not_money</precondition>
+                <next>1111111</next>
+            </phrase>
+            <phrase id="1111111">
+                <text>sad_ban_bandit_dialog_1_1111111</text>
+                <next>111115</next>
+            </phrase>
+            <phrase id="111115">
+                <text>sad_ban_bandit_dialog_1_111115</text>
+                <action>dialogs.break_dialog</action>
+            </phrase>
+            <phrase id="1111">
+                <text>sad_ban_bandit_dialog_1_1111</text>
+                <next>11111</next>
+            </phrase>
+            <phrase id="11111">
+                <text>sad_ban_bandit_dialog_1_11111</text>
+                <give_info>sad_ban_bandit_leader_meeted</give_info>
+                <next>111111</next>
+                <next>111112</next>
+                <next>111115</next>
+            </phrase>
+            <phrase id="1">
+                <text>sad_ban_bandit_dialog_1_1</text>
+                <dont_has_info>sad_ban_bandit_leader_meeted</dont_has_info>
+                <next>11</next>
+            </phrase>
+            <phrase id="2">
+                <text>sad_ban_bandit_dialog_1_2</text>
+                <has_info>sad_ban_bandit_leader_meeted</has_info>
+                <next>111111</next>
+                <next>111112</next>
+                <next>111115</next>
+            </phrase>
+            <phrase id="11">
+                <text>sad_ban_bandit_dialog_1_11</text>
+                <next>111</next>
+            </phrase>
+            <phrase id="0">
+                <text>sad_ban_bandit_dialog_1_0</text>
+                <next>1</next>
+                <next>2</next>
+            </phrase>
+        </phrase_list>
+    </dialog>
+    <dialog id="sad_b2_barman_give_siut">
+        <has_info>sad_radik_task_get_outfit</has_info>
+        <dont_has_info>sad_radik_task_get_outfit_give</dont_has_info>
+        <dont_has_info>sad_radik_task_get_pda</dont_has_info>
+        <phrase_list>
+            <phrase id="1">
+                <text>sad_b2_barman_give_siut_1</text>
+                <action>dialogs_sad.sad_sher_radik_outfit_transfer</action>
+                <give_info>sad_radik_task_get_outfit_give</give_info>
+            </phrase>
+            <phrase id="0">
+                <text>sad_b2_barman_give_siut_0</text>
+                <next>1</next>
+            </phrase>
+        </phrase_list>
+    </dialog>
+    <dialog id="sad_b2_barman_give_weapon">
+        <has_info>sad_maxim_actor_help_agree</has_info>
+        <dont_has_info>sad_b2_barman_weapon_gived</dont_has_info>
+        <dont_has_info>sad_b3a_start_ataka</dont_has_info>
+        <phrase_list>
+            <phrase id="22">
+                <text>sad_b2_barman_give_weapon_22</text>
+                <next>222</next>
+            </phrase>
+            <phrase id="222">
+                <text>sad_b2_barman_give_weapon_222</text>
+                <action>dialogs_sad.sad_b2_barman_give_shturm</action>
+                <give_info>sad_b2_barman_weapon_gived</give_info>
+            </phrase>
+            <phrase id="1">
+                <text>sad_b2_barman_give_weapon_1</text>
+                <give_info>sad_b2_barman_weapon_gived</give_info>
+                <has_info>sad_maximilian_dead</has_info>
+            </phrase>
+            <phrase id="2">
+                <text>sad_b2_barman_give_weapon_2</text>
+                <dont_has_info>sad_maximilian_dead</dont_has_info>
+                <dont_has_info>sad_maxim_leave_b2</dont_has_info>
+                <next>21</next>
+                <next>22</next>
+            </phrase>
+            <phrase id="3">
+                <text>sad_b2_barman_give_weapon_3</text>
+                <dont_has_info>sad_maximilian_dead</dont_has_info>
+                <give_info>sad_b2_barman_weapon_gived</give_info>
+                <has_info>sad_maxim_leave_b2</has_info>
+            </phrase>
+            <phrase id="21">
+                <text>sad_b2_barman_give_weapon_21</text>
+                <next>221</next>
+            </phrase>
+            <phrase id="221">
+                <text>sad_b2_barman_give_weapon_221</text>
+                <action>dialogs_sad.sad_b2_barman_give_sniper</action>
+                <give_info>sad_b2_barman_weapon_gived</give_info>
+            </phrase>
+            <phrase id="0">
+                <text>sad_b2_barman_give_weapon_0</text>
+                <next>1</next>
+                <next>2</next>
+                <next>3</next>
+            </phrase>
+        </phrase_list>
+    </dialog>
+    <dialog id="sad_sim_9_noy_dialog_2">
+        <has_info>sad_sim_9_noy_meeted_now</has_info>
+        <dont_has_info>sad_sim_9_noy_about_bro</dont_has_info>
+        <phrase_list>
+            <phrase id="1">
+                <text>sad_sim_9_noy_dialog_2_1</text>
+                <give_info>sad_sim_9_noy_about_bro</give_info>
+            </phrase>
+            <phrase id="0">
+                <text>sad_sim_9_noy_dialog_2_0</text>
+                <next>1</next>
+            </phrase>
+        </phrase_list>
+    </dialog>
+    <dialog id="sad_cowboy_dialog_1">
+        <has_info>sad_actor_kill_oleg</has_info>
+        <has_info>sad_cowboy_stuff_task_give</has_info>
+        <dont_has_info>sad_actor_kill_oleg_reward</dont_has_info>
+        <phrase_list>
+            <phrase id="1">
+                <text>sad_cowboy_dialog_1_1</text>
+                <next>11</next>
+            </phrase>
+            <phrase id="11">
+                <text>sad_cowboy_dialog_1_11</text>
+                <next>111</next>
+            </phrase>
+            <phrase id="0">
+                <text>sad_cowboy_dialog_1_0</text>
+                <next>1</next>
+            </phrase>
+            <phrase id="111">
+                <text>sad_cowboy_dialog_1_111</text>
+                <action>dialogs_sad.sad_ran_oleg_reward</action>
+                <give_info>sad_actor_kill_oleg_reward</give_info>
+            </phrase>
+        </phrase_list>
+    </dialog>
+    <dialog id="sad_cowboy_start">
+        <phrase_list>
+            <phrase id="1111111111">
+                <text>sad_cowboy_start_1111111111</text>
+            </phrase>
+            <phrase id="2">
+                <text />
+                <has_info>sad_cowboy_meeted</has_info>
+                <next>21</next>
+            </phrase>
+            <phrase id="21">
+                <text>sad_cowboy_start_21</text>
+            </phrase>
+            <phrase id="1111111">
+                <text>sad_cowboy_start_1111111</text>
+                <next>11111111</next>
+            </phrase>
+            <phrase id="111111">
+                <text>sad_cowboy_start_111111</text>
+                <next>1111111</next>
+            </phrase>
+            <phrase id="11111">
+                <text>sad_cowboy_start_11111</text>
+                <next>111111</next>
+            </phrase>
+            <phrase id="1111">
+                <text>sad_cowboy_start_1111</text>
+                <next>11111</next>
+            </phrase>
+            <phrase id="111">
+                <text>sad_cowboy_start_111</text>
+                <next>1111</next>
+            </phrase>
+            <phrase id="0">
+                <text />
+                <next>1</next>
+                <next>2</next>
+            </phrase>
+            <phrase id="11">
+                <text>sad_cowboy_start_11</text>
+                <next>111</next>
+            </phrase>
+            <phrase id="1">
+                <text />
+                <dont_has_info>sad_cowboy_meeted</dont_has_info>
+                <next>11</next>
+            </phrase>
+            <phrase id="11111111">
+                <text>sad_cowboy_start_11111111</text>
+                <next>81</next>
+            </phrase>
+            <phrase id="81">
+                <text>sad_cowboy_start_81</text>
+                <next>811</next>
+            </phrase>
+            <phrase id="811">
+                <text>sad_cowboy_start_811</text>
+                <give_info>sad_cowboy_meeted</give_info>
+            </phrase>
+        </phrase_list>
+    </dialog>
+    <dialog id="sad_tesla_dialog_0">
+        <has_info>sad_cowboy_meeted</has_info>
+        <dont_has_info>sad_cowboy_stuff_task_give</dont_has_info>
+        <phrase_list>
+            <phrase id="11111">
+                <text>sad_tesla_dialog_0_11111</text>
+                <give_info>sad_cowboy_stuff_task_give</give_info>
+            </phrase>
+            <phrase id="1111">
+                <text>sad_tesla_dialog_0_1111</text>
+                <next>11111</next>
+            </phrase>
+            <phrase id="111">
+                <text>sad_tesla_dialog_0_111</text>
+                <next>1111</next>
+            </phrase>
+            <phrase id="11">
+                <text>sad_tesla_dialog_0_11</text>
+                <next>111</next>
+            </phrase>
+            <phrase id="0">
+                <text>sad_tesla_dialog_0_0</text>
+                <give_info>sad_cowboy_meet_tesla_task_done</give_info>
+                <next>1</next>
+            </phrase>
+            <phrase id="1">
+                <text>sad_tesla_dialog_0_1</text>
+                <next>11</next>
+            </phrase>
+        </phrase_list>
+    </dialog>
+    <dialog id="sad_tesla_dialog_1">
+        <has_info>sad_cowboy_stuff_have_both</has_info>
+        <dont_has_info>sad_tesla_monster_task_give</dont_has_info>
+        <phrase_list>
+            <phrase id="0">
+                <text>sad_tesla_dialog_1_0</text>
+                <next>1</next>
+            </phrase>
+            <phrase id="1">
+                <text>sad_tesla_dialog_1_1</text>
+                <action>dialogs_sad.sad_ran_stuff_transfer</action>
+                <give_info>sad_cowboy_stuff_task_done</give_info>
+                <next>11</next>
+            </phrase>
+            <phrase id="11">
+                <text>sad_tesla_dialog_1_11</text>
+                <next>111</next>
+            </phrase>
+            <phrase id="111">
+                <text>sad_tesla_dialog_1_111</text>
+                <action>dialogs_sad.sad_tesla_weapon_give</action>
+                <give_info>sad_tesla_monster_task_give</give_info>
+            </phrase>
+        </phrase_list>
+    </dialog>
+    <dialog id="sad_tesla_dialog_2">
+        <has_info>sad_tesla_ready_to_go</has_info>
+        <dont_has_info>sad_tesla_arrive</dont_has_info>
+        <phrase_list>
+            <phrase id="0">
+                <text>sad_tesla_dialog_2_0</text>
+                <next>1</next>
+            </phrase>
+            <phrase id="1">
+                <text>sad_tesla_dialog_2_1</text>
+                <action>dialogs_sad.sad_ran_scanner_transfer</action>
+                <next>2</next>
+            </phrase>
+            <phrase id="2">
+                <text>sad_tesla_dialog_2_2</text>
+                <action>dialogs.break_dialog</action>
+                <give_info>sad_tesla_arrive</give_info>
+            </phrase>
+        </phrase_list>
+    </dialog>
+    <dialog id="sad_cowboy_about_merc">
+        <has_info>sad_cowboy_meeted</has_info>
+        <has_info>sad_maxim_actor_help_agree</has_info>
+        <dont_has_info>sad_actor_ask_cowboy_about_merc</dont_has_info>
+        <phrase_list>
+            <phrase id="0">
+                <text>sad_cowboy_about_merc_0</text>
+                <next>1</next>
+            </phrase>
+            <phrase id="1">
+                <text>sad_cowboy_about_merc_1</text>
+                <give_info>sad_actor_ask_cowboy_about_merc</give_info>
+            </phrase>
+        </phrase_list>
+    </dialog>
+    <dialog id="sad_sim_9_noy_dialog_1">
+        <phrase_list>
+            <phrase id="111221">
+                <text>sad_sim_9_noy_dialog_1_111221</text>
+                <action>dialogs_sad.sad_noy_give_compass</action>
+                <give_info>sad_sim_9_noy_compass_give</give_info>
+                <next>1112111</next>
+            </phrase>
+            <phrase id="11122">
+                <text>sad_sim_9_noy_dialog_1_11122</text>
+                <dont_has_info>sad_sim_9_noy_compass_give</dont_has_info>
+                <dont_has_info>sad_cowboy_stuff_task_give</dont_has_info>
+                <next>111221</next>
+            </phrase>
+            <phrase id="1112">
+                <text>sad_sim_9_noy_dialog_1_1112</text>
+                <has_info>sad_sim_9_actor_kill_enough</has_info>
+                <next>11121</next>
+                <next>11122</next>
+                <next>11123</next>
+            </phrase>
+            <phrase id="11121">
+                <text>sad_sim_9_noy_dialog_1_11121</text>
+                <dont_has_info>sad_sim_9_noy_compass_give</dont_has_info>
+                <has_info>sad_cowboy_stuff_task_give</has_info>
+                <next>111211</next>
+            </phrase>
+            <phrase id="111211">
+                <text>sad_sim_9_noy_dialog_1_111211</text>
+                <action>dialogs_sad.sad_noy_give_compass</action>
+                <give_info>sad_sim_9_noy_compass_give</give_info>
+                <next>1112111</next>
+            </phrase>
+            <phrase id="1112111">
+                <text>sad_sim_9_noy_dialog_1_1112111</text>
+                <next>11121111</next>
+            </phrase>
+            <phrase id="11121111">
+                <text>sad_sim_9_noy_dialog_1_11121111</text>
+                <next>111211111</next>
+            </phrase>
+            <phrase id="111231">
+                <text>sad_sim_9_noy_dialog_1_111231</text>
+                <next>111211111</next>
+            </phrase>
+            <phrase id="11123">
+                <text>sad_sim_9_noy_dialog_1_11123</text>
+                <has_info>sad_sim_9_noy_compass_give</has_info>
+                <next>111231</next>
+            </phrase>
+            <phrase id="111211111">
+                <text>sad_sim_9_noy_dialog_1_111211111</text>
+                <action>dialogs.break_dialog</action>
+                <give_info>sad_sim_9_noy_meeted</give_info>
+                <give_info>sad_sim_9_noy_meeted_now</give_info>
+                <give_info>sad_sim_9_noy_go_sleep</give_info>
+            </phrase>
+            <phrase id="11111">
+                <text>sad_sim_9_noy_dialog_1_11111</text>
+                <action>dialogs.break_dialog</action>
+                <give_info>sad_sim_9_noy_meeted_now</give_info>
+                <give_info>sad_sim_9_noy_go_sleep</give_info>
+                <give_info>sad_sim_9_noy_meeted</give_info>
+            </phrase>
+            <phrase id="1111">
+                <text>sad_sim_9_noy_dialog_1_1111</text>
+                <dont_has_info>sad_sim_9_actor_kill_enough</dont_has_info>
+                <next>11111</next>
+            </phrase>
+            <phrase id="112">
+                <text>sad_sim_9_noy_dialog_1_112</text>
+                <has_info>sad_sim_9_noy_meeted</has_info>
+                <next>1111</next>
+                <next>1112</next>
+            </phrase>
+            <phrase id="0">
+                <text />
+                <next>1</next>
+                <next>2</next>
+            </phrase>
+            <phrase id="2">
+                <text>sad_sim_9_noy_dialog_1_2</text>
+                <has_info>sad_sim_9_noy_meeted_now</has_info>
+            </phrase>
+            <phrase id="1">
+                <text />
+                <dont_has_info>sad_sim_9_noy_meeted_now</dont_has_info>
+                <next>11</next>
+            </phrase>
+            <phrase id="11">
+                <text>sad_sim_9_noy_dialog_1_11</text>
+                <give_info>sad_sim_9_noy_meeted_now</give_info>
+                <next>111</next>
+                <next>112</next>
+            </phrase>
+            <phrase id="111">
+                <text>sad_sim_9_noy_dialog_1_111</text>
+                <dont_has_info>sad_sim_9_noy_meeted</dont_has_info>
+                <next>1111</next>
+                <next>1112</next>
+            </phrase>
+        </phrase_list>
+    </dialog>
+    <dialog id="sad_sim_9_noy_about_merc">
+        <has_info>sad_sim_9_noy_meeted</has_info>
+        <dont_has_info>sad_actor_ask_noah_about_merc</dont_has_info>
+        <phrase_list>
+            <phrase id="11">
+                <text>sad_sim_9_noy_about_merc_11</text>
+                <next>111</next>
+            </phrase>
+            <phrase id="1">
+                <text>sad_sim_9_noy_about_merc_1</text>
+                <next>11</next>
+            </phrase>
+            <phrase id="111">
+                <text>sad_sim_9_noy_about_merc_111</text>
+                <give_info>sad_actor_ask_noah_about_merc</give_info>
+            </phrase>
+            <phrase id="0">
+                <text>sad_sim_9_noy_about_merc_0</text>
+                <next>1</next>
+            </phrase>
+        </phrase_list>
+    </dialog>
+    <dialog id="sad_start_men_dialog">
+        <phrase_list>
+            <phrase id="1">
+                <text />
+                <dont_has_info>sad_start_men_meeted</dont_has_info>
+                <next>11</next>
+            </phrase>
+            <phrase id="2">
+                <text />
+                <has_info>sad_start_men_meeted</has_info>
+                <next>21</next>
+            </phrase>
+            <phrase id="21">
+                <text>sad_start_men_dialog_21</text>
+            </phrase>
+            <phrase id="0">
+                <text />
+                <next>1</next>
+                <next>2</next>
+            </phrase>
+            <phrase id="11">
+                <text>sad_start_men_dialog_11</text>
+                <next>111</next>
+            </phrase>
+            <phrase id="111">
+                <text>sad_start_men_dialog_111</text>
+                <next>1111</next>
+            </phrase>
+            <phrase id="1111">
+                <text>sad_start_men_dialog_1111</text>
+                <next>11111</next>
+            </phrase>
+            <phrase id="11111">
+                <text>sad_start_men_dialog_11111</text>
+                <next>111111</next>
+            </phrase>
+            <phrase id="111111">
+                <text>sad_start_men_dialog_111111</text>
+                <next>1111111</next>
+            </phrase>
+            <phrase id="1111111">
+                <text>sad_start_men_dialog_1111111</text>
+                <action>dialogs.break_dialog</action>
+                <give_info>sad_start_men_meeted</give_info>
+            </phrase>
+        </phrase_list>
+    </dialog>
+    <dialog id="sad_b2_trader_notebook_job_1">
+        <has_info>sad_maxim_actor_help_agree</has_info>
+        <dont_has_info>sad_b2_trader_nb_task_give</dont_has_info>
+        <phrase_list>
+            <phrase id="111">
+                <text>sad_b2_trader_notebook_job_1_111</text>
+                <next>1111</next>
+                <next>1112</next>
+                <next>1113</next>
+            </phrase>
+            <phrase id="11121">
+                <text>sad_b2_trader_notebook_job_1_11121</text>
+                <next>111211</next>
+                <next>111212</next>
+            </phrase>
+            <phrase id="11">
+                <text>sad_b2_trader_notebook_job_1_11</text>
+                <next>111</next>
+            </phrase>
+            <phrase id="1112121">
+                <text>sad_b2_trader_notebook_job_1_1112121</text>
+                <next>11121211</next>
+            </phrase>
+            <phrase id="11121211">
+                <text>sad_b2_trader_notebook_job_1_11121211</text>
+                <action>dialogs_sad.sad_b2_trader_give_money_15000</action>
+                <give_info>sad_b2_trader_nb_task_done</give_info>
+            </phrase>
+            <phrase id="1">
+                <text>sad_b2_trader_notebook_job_1_1</text>
+                <dont_has_info>sad_maxim_actor_enemy</dont_has_info>
+                <next>11</next>
+            </phrase>
+            <phrase id="2">
+                <text>sad_b2_trader_notebook_job_1_2</text>
+                <has_info>sad_maxim_actor_enemy</has_info>
+                <has_info>sad_maximilian_dead</has_info>
+            </phrase>
+            <phrase id="3">
+                <text>sad_b2_trader_notebook_job_1_3</text>
+                <dont_has_info>sad_maximilian_dead</dont_has_info>
+                <has_info>sad_maxim_actor_enemy</has_info>
+            </phrase>
+            <phrase id="111211">
+                <text>sad_b2_trader_notebook_job_1_111211</text>
+                <action>dialogs_sad.sad_b2_trader_give_money_7500</action>
+                <give_info>sad_b2_trader_nb_discount</give_info>
+                <give_info>sad_b2_trader_nb_task_done</give_info>
+            </phrase>
+            <phrase id="111212">
+                <text>sad_b2_trader_notebook_job_1_111212</text>
+                <next>1112121</next>
+            </phrase>
+            <phrase id="1113">
+                <text>sad_b2_trader_notebook_job_1_1113</text>
+            </phrase>
+            <phrase id="1112">
+                <text>sad_b2_trader_notebook_job_1_1112</text>
+                <has_info>sad_b2_trader_nb_have</has_info>
+                <next>11121</next>
+            </phrase>
+            <phrase id="1111">
+                <text>sad_b2_trader_notebook_job_1_1111</text>
+                <dont_has_info>sad_b2_trader_nb_have</dont_has_info>
+                <give_info>sad_b2_trader_nb_task_give</give_info>
+            </phrase>
+            <phrase id="0">
+                <text>sad_b2_trader_notebook_job_1_0</text>
+                <next>1</next>
+                <next>2</next>
+                <next>3</next>
+            </phrase>
+        </phrase_list>
+    </dialog>
+    <dialog id="sad_b3_trader_about_bomb">
+        <has_info>sad_nauchny_take_bomba</has_info>
+        <dont_has_info>sad_nauchny_bomba_give</dont_has_info>
+        <dont_has_info>sad_nauchny_task_cancel</dont_has_info>
+        <phrase_list>
+            <phrase id="1">
+                <text>sad_b3_trader_about_bomb_1</text>
+                <action>dialogs_sad.sad_b3_trader_give_bomba</action>
+                <give_info>sad_nauchny_bomba_give</give_info>
+            </phrase>
+            <phrase id="0">
+                <text>sad_b3_trader_about_bomb_0</text>
+                <next>1</next>
+            </phrase>
+        </phrase_list>
+    </dialog>
+    <dialog id="sad_cowboy_about_mutny">
+        <has_info>sad_cowboy_meeted</has_info>
+        <has_info>sad_actor_know_about_mutny</has_info>
+        <dont_has_info>sad_actor_told_cowboy_about_mutny</dont_has_info>
+        <dont_has_info>sad_mutny_gone</dont_has_info>
+        <phrase_list>
+            <phrase id="1">
+                <text>sad_cowboy_about_mutny_1</text>
+                <next>11</next>
+            </phrase>
+            <phrase id="11">
+                <text>sad_cowboy_about_mutny_11</text>
+                <next>111</next>
+            </phrase>
+            <phrase id="111">
+                <text>sad_cowboy_about_mutny_111</text>
+                <give_info>sad_actor_told_cowboy_about_mutny</give_info>
+            </phrase>
+            <phrase id="0">
+                <text>sad_cowboy_about_mutny_0</text>
+                <next>1</next>
+            </phrase>
+        </phrase_list>
+    </dialog>
+    <dialog id="sad_sher_gonets_dialog">
+        <phrase_list>
+            <phrase id="1">
+                <text>sad_sher_gonets_dialog_1</text>
+                <next>2</next>
+            </phrase>
+            <phrase id="2">
+                <text>sad_sher_gonets_dialog_2</text>
+                <action>dialogs_sad.sad_sher_radik_outfit_transfer</action>
+                <next>3</next>
+            </phrase>
+            <phrase id="3">
+                <text>sad_sher_gonets_dialog_3</text>
+                <action>dialogs.break_dialog</action>
+                <give_info>sad_radik_task_get_outfit_give</give_info>
+            </phrase>
+            <phrase id="0">
+                <text>sad_sher_gonets_dialog_0</text>
+                <next>1</next>
+            </phrase>
+        </phrase_list>
+    </dialog>
+    <dialog id="sad_sher_guard">
+        <phrase_list>
+            <phrase id="31">
+                <text>sad_sher_guard_31</text>
+                <next>311</next>
+            </phrase>
+            <phrase id="311">
+                <text>sad_sher_guard_311</text>
+                <action>dialogs.break_dialog</action>
+                <give_info>sad_radik_guard_talk</give_info>
+            </phrase>
+            <phrase id="11">
+                <text>sad_sher_guard_11</text>
+                <next>111</next>
+            </phrase>
+            <phrase id="111">
+                <text>sad_sher_guard_111</text>
+                <action>dialogs.break_dialog</action>
+                <give_info>sad_radik_guard_talk</give_info>
+            </phrase>
+            <phrase id="1">
+                <text>sad_sher_guard_1</text>
+                <has_info>sad_b3_maxim_ataka_complete</has_info>
+                <next>11</next>
+            </phrase>
+            <phrase id="2">
+                <text>sad_sher_guard_2</text>
+                <dont_has_info>sad_b3_maxim_ataka_complete</dont_has_info>
+                <next>31</next>
+            </phrase>
+            <phrase id="0">
+                <text>sad_sher_guard_0</text>
+                <next>1</next>
+                <next>2</next>
+            </phrase>
+        </phrase_list>
+    </dialog>
+    <dialog id="sad_sher_radik_1">
+        <has_info>sad_b3_radik_task_have</has_info>
+        <has_info>sad_b3_radik_task_give</has_info>
+        <dont_has_info>sad_b3_radik_task_complete</dont_has_info>
+        <phrase_list>
+            <phrase id="1">
+                <text>sad_sher_radik_1_1</text>
+                <give_info>sad_b3_radik_task_complete</give_info>
+            </phrase>
+            <phrase id="0">
+                <text>sad_sher_radik_1_0</text>
+                <action>dialogs_sad.sad_sher_transfer_food</action>
+                <next>1</next>
+            </phrase>
+        </phrase_list>
+    </dialog>
+    <dialog id="sad_sher_radik_4">
+        <has_info>sad_radik_task_get_outfit</has_info>
+        <has_info>sad_radik_task_get_outfit_have</has_info>
+        <dont_has_info>sad_radik_task_get_outfit_done</dont_has_info>
+        <phrase_list>
+            <phrase id="0">
+                <text>sad_sher_radik_4_0</text>
+                <give_info>sad_radik_task_get_outfit_done</give_info>
+                <next>1</next>
+            </phrase>
+            <phrase id="1">
+                <text>sad_sher_radik_4_1</text>
+                <next>2</next>
+            </phrase>
+            <phrase id="2">
+                <text>sad_sher_radik_4_2</text>
+                <action>dialogs.break_dialog</action>
+                <give_info>sad_radik_pdast_founded</give_info>
+            </phrase>
+        </phrase_list>
+    </dialog>
+    <dialog id="sad_sher_radik_3">
+        <has_info>sad_radik_task_get_pda_have</has_info>
+        <dont_has_info>sad_radik_task_get_pda_done</dont_has_info>
+        <phrase_list>
+            <phrase id="0">
+                <text>sad_sher_radik_3_0</text>
+                <give_info>sad_radik_task_get_pda_done</give_info>
+                <next>1</next>
+            </phrase>
+            <phrase id="1">
+                <text>sad_sher_radik_3_1</text>
+                <give_info>sad_radik_ready_to_go</give_info>
+            </phrase>
+        </phrase_list>
+    </dialog>
+    <dialog id="sad_sher_radik_2">
+        <has_info>sad_b3_radik_task_complete</has_info>
+        <dont_has_info>sad_radik_told_about</dont_has_info>
+        <phrase_list>
+            <phrase id="11">
+                <text>sad_sher_radik_2_11</text>
+                <next>111</next>
+            </phrase>
+            <phrase id="111">
+                <text>sad_sher_radik_2_111</text>
+                <next>1111</next>
+                <next>1112</next>
+            </phrase>
+            <phrase id="111111">
+                <text>sad_sher_radik_2_111111</text>
+                <next>1111111</next>
+            </phrase>
+            <phrase id="1111111">
+                <text>sad_sher_radik_2_1111111</text>
+                <next>11111111</next>
+            </phrase>
+            <phrase id="11111111">
+                <text>sad_sher_radik_2_11111111</text>
+                <next>111111111</next>
+            </phrase>
+            <phrase id="111111111">
+                <text>sad_sher_radik_2_111111111</text>
+                <give_info>sad_radik_told_about</give_info>
+                <give_info>sad_radik_task_get_outfit</give_info>
+                <next>1111111111</next>
+            </phrase>
+            <phrase id="1111111111">
+                <text>sad_sher_radik_2_1111111111</text>
+                <give_info>sad_radik_help_agree</give_info>
+                <next>11111111111</next>
+            </phrase>
+            <phrase id="11111">
+                <text>sad_sher_radik_2_11111</text>
+                <next>111111</next>
+            </phrase>
+            <phrase id="1111">
+                <text>sad_sher_radik_2_1111</text>
+                <give_info>sad_radik_mech_free</give_info>
+                <next>11111</next>
+            </phrase>
+            <phrase id="0">
+                <text>sad_sher_radik_2_0</text>
+                <next>1</next>
+            </phrase>
+            <phrase id="1">
+                <text>sad_sher_radik_2_1</text>
+                <action>dialogs_sad.sad_pda_balbes_transfer</action>
+                <give_info>sad_pda_balbes_have</give_info>
+                <next>11</next>
+            </phrase>
+            <phrase id="1112">
+                <text>sad_sher_radik_2_1112</text>
+                <action>dialogs.break_dialog</action>
+                <give_info>sad_radik_otkaz</give_info>
+                <give_info>sad_radik_told_about</give_info>
+            </phrase>
+            <phrase id="11111111111">
+                <text>sad_sher_radik_2_11111111111</text>
+            </phrase>
+        </phrase_list>
+    </dialog>
+    <dialog id="sad_sher_radik_about_merc">
+        <has_info>sad_radik_help_agree</has_info>
+        <dont_has_info>sad_actor_ask_radik_about_merc</dont_has_info>
+        <phrase_list>
+            <phrase id="1">
+                <text>sad_sher_radik_about_merc_1</text>
+                <give_info>sad_actor_ask_radik_about_merc</give_info>
+            </phrase>
+            <phrase id="0">
+                <text>sad_sher_radik_about_merc_0</text>
+                <next>1</next>
+            </phrase>
+        </phrase_list>
+    </dialog>
+    <dialog id="sad_sher_radik_start">
+        <phrase_list>
+            <phrase id="11211">
+                <text>sad_sher_radik_start_11211</text>
+                <action>dialogs.break_dialog</action>
+                <give_info>sad_radik_meeted</give_info>
+            </phrase>
+            <phrase id="1121">
+                <text>sad_sher_radik_start_1121</text>
+                <next>11211</next>
+            </phrase>
+            <phrase id="11111">
+                <text>sad_sher_radik_start_11111</text>
+                <action>dialogs_sad.sad_sher_transfer_food</action>
+                <has_info>sad_b3_radik_task_have</has_info>
+                <next>111111</next>
+            </phrase>
+            <phrase id="111111">
+                <text>sad_sher_radik_start_111111</text>
+                <give_info>sad_radik_meeted</give_info>
+                <give_info>sad_b3_radik_task_complete</give_info>
+            </phrase>
+            <phrase id="11112">
+                <text>sad_sher_radik_start_11112</text>
+                <action>dialogs.break_dialog</action>
+                <dont_has_info>sad_b3_radik_task_have</dont_has_info>
+            </phrase>
+            <phrase id="11122">
+                <text>sad_sher_radik_start_11122</text>
+                <action>dialogs.break_dialog</action>
+                <give_info>sad_radik_actor_enemy</give_info>
+                <give_info>sad_b3_radik_task_otkaz</give_info>
+                <give_info>sad_radik_meeted</give_info>
+            </phrase>
+            <phrase id="2111">
+                <text>sad_sher_radik_start_2111</text>
+            </phrase>
+            <phrase id="1111">
+                <text>sad_sher_radik_start_1111</text>
+                <give_info>sad_radik_meeted</give_info>
+                <has_info>sad_b3_radik_task_give</has_info>
+                <next>11111</next>
+                <next>11112</next>
+            </phrase>
+            <phrase id="1112">
+                <text>sad_sher_radik_start_1112</text>
+                <give_info>sad_radik_meeted</give_info>
+                <next>11411</next>
+                <next>11121</next>
+            </phrase>
+            <phrase id="1141">
+                <text>sad_sher_radik_start_1141</text>
+                <give_info>sad_radik_meeted</give_info>
+                <next>11411</next>
+                <next>11121</next>
+            </phrase>
+            <phrase id="11121">
+                <text>sad_sher_radik_start_11121</text>
+                <action>dialogs.break_dialog</action>
+                <dont_has_info>sad_b3_radik_task_have</dont_has_info>
+                <give_info>sad_b3_radik_task_give</give_info>
+                <give_info>sad_radik_meeted</give_info>
+            </phrase>
+            <phrase id="311">
+                <text>sad_sher_radik_start_311</text>
+                <action>dialogs.break_dialog</action>
+            </phrase>
+            <phrase id="31">
+                <text>sad_sher_radik_start_31</text>
+                <next>311</next>
+            </phrase>
+            <phrase id="5">
+                <text />
+                <dont_has_info>sad_radik_otkaz</dont_has_info>
+                <has_info>sad_radik_arrive_task_done</has_info>
+                <next>51</next>
+            </phrase>
+            <phrase id="51">
+                <text>sad_sher_radik_start_51</text>
+            </phrase>
+            <phrase id="11411">
+                <text>sad_sher_radik_start_11411</text>
+                <action>dialogs_sad.sad_sher_transfer_food</action>
+                <give_info>sad_b3_radik_task_complete</give_info>
+                <has_info>sad_b3_radik_task_have</has_info>
+                <next>114111</next>
+            </phrase>
+            <phrase id="114111">
+                <text>sad_sher_radik_start_114111</text>
+            </phrase>
+            <phrase id="212">
+                <text>sad_sher_radik_start_212</text>
+                <action>dialogs.break_dialog</action>
+                <dont_has_info>sad_b3_radik_task_have</dont_has_info>
+            </phrase>
+            <phrase id="11">
+                <text>sad_sher_radik_start_11</text>
+                <give_info>sad_b3_radik_talk_task_done</give_info>
+                <next>111</next>
+                <next>114</next>
+            </phrase>
+            <phrase id="111">
+                <text>sad_sher_radik_start_111</text>
+                <has_info>sad_b3_maxim_ataka_complete</has_info>
+                <next>1111</next>
+                <next>1112</next>
+            </phrase>
+            <phrase id="114">
+                <text>sad_sher_radik_start_114</text>
+                <dont_has_info>sad_b3_maxim_ataka_complete</dont_has_info>
+                <next>1141</next>
+            </phrase>
+            <phrase id="1">
+                <text />
+                <dont_has_info>sad_radik_meeted</dont_has_info>
+                <next>11</next>
+            </phrase>
+            <phrase id="2">
+                <text />
+                <dont_has_info>sad_radik_otkaz</dont_has_info>
+                <dont_has_info>sad_radik_arrive_task_done</dont_has_info>
+                <has_info>sad_radik_meeted</has_info>
+                <next>21</next>
+                <next>22</next>
+            </phrase>
+            <phrase id="3">
+                <text />
+                <has_info>sad_radik_otkaz</has_info>
+                <next>31</next>
+            </phrase>
+            <phrase id="21">
+                <text>sad_sher_radik_start_21</text>
+                <dont_has_info>sad_b3_radik_task_complete</dont_has_info>
+                <has_info>sad_b3_radik_task_give</has_info>
+                <next>11411</next>
+                <next>212</next>
+            </phrase>
+            <phrase id="22">
+                <text>sad_sher_radik_start_22</text>
+                <has_info>sad_b3_radik_task_complete</has_info>
+            </phrase>
+            <phrase id="0">
+                <text />
+                <next>1</next>
+                <next>2</next>
+                <next>3</next>
+                <next>5</next>
+            </phrase>
+        </phrase_list>
+    </dialog>
+    <dialog id="sad_sher_tech_start">
+        <phrase_list>
+            <phrase id="1">
+                <text />
+                <dont_has_info>sad_tech_radika_meeted</dont_has_info>
+                <next>11</next>
+                <next>12</next>
+            </phrase>
+            <phrase id="11">
+                <text>sad_sher_tech_start_11</text>
+                <dont_has_info>sad_radik_mech_free</dont_has_info>
+            </phrase>
+            <phrase id="12">
+                <text>sad_sher_tech_start_12</text>
+                <give_info>sad_tech_radika_meeted</give_info>
+                <has_info>sad_radik_mech_free</has_info>
+            </phrase>
+            <phrase id="2">
+                <text />
+                <has_info>sad_tech_radika_meeted</has_info>
+                <next>21</next>
+                <next>22</next>
+            </phrase>
+            <phrase id="22">
+                <text>sad_sher_tech_start_22</text>
+                <has_info>sad_radik_mech_free</has_info>
+            </phrase>
+            <phrase id="21">
+                <text>sad_sher_tech_start_21</text>
+                <dont_has_info>sad_radik_mech_free</dont_has_info>
+            </phrase>
+            <phrase id="0">
+                <text />
+                <next>1</next>
+                <next>2</next>
+            </phrase>
+        </phrase_list>
+    </dialog>
+    <dialog id="sad_sim_13_after">
+        <phrase_list>
+            <phrase id="21">
+                <text>sad_sim_13_after_21</text>
+                <next>111</next>
+            </phrase>
+            <phrase id="3">
+                <text />
+                <has_info>sad_radik_talk_after_arrive</has_info>
+                <next>31</next>
+            </phrase>
+            <phrase id="2">
+                <text />
+                <dont_has_info>sad_radik_dead</dont_has_info>
+                <dont_has_info>sad_radik_talk_after_arrive</dont_has_info>
+                <next>21</next>
+            </phrase>
+            <phrase id="31">
+                <text>sad_sim_13_after_31</text>
+                <next>11111</next>
+            </phrase>
+            <phrase id="11111">
+                <text>sad_sim_13_after_11111</text>
+                <action>dialogs.break_dialog</action>
+                <give_info>sad_radik_talk_after_arrive</give_info>
+            </phrase>
+            <phrase id="1111">
+                <text>sad_sim_13_after_1111</text>
+                <next>11111</next>
+            </phrase>
+            <phrase id="111">
+                <text>sad_sim_13_after_111</text>
+                <next>1111</next>
+            </phrase>
+            <phrase id="1">
+                <text />
+                <dont_has_info>sad_radik_talk_after_arrive</dont_has_info>
+                <has_info>sad_radik_dead</has_info>
+                <next>11</next>
+            </phrase>
+            <phrase id="11">
+                <text>sad_sim_13_after_11</text>
+                <next>111</next>
+            </phrase>
+            <phrase id="0">
+                <text />
+                <next>1</next>
+                <next>2</next>
+                <next>3</next>
+            </phrase>
+        </phrase_list>
+    </dialog>
+    <dialog id="sad_sher_radik_6">
+        <has_info>sad_radik_ready_to_go</has_info>
+        <dont_has_info>sad_radik_start_arrive</dont_has_info>
+        <phrase_list>
+            <phrase id="0">
+                <text>sad_sher_radik_6_0</text>
+                <next>1</next>
+            </phrase>
+            <phrase id="11">
+                <text>sad_sher_radik_6_11</text>
+                <action>dialogs.break_dialog</action>
+                <give_info>sad_radik_start_arrive</give_info>
+            </phrase>
+            <phrase id="1">
+                <text>sad_sher_radik_6_1</text>
+                <action>dialogs_sad.sad_radik_give_bomba</action>
+                <next>11</next>
+            </phrase>
+        </phrase_list>
+    </dialog>
+    <dialog id="sad_b3_ucheny_arrive_home">
+        <phrase_list>
+            <phrase id="0">
+                <text>sad_b3_ucheny_arrive_home_0</text>
+                <next>1</next>
+            </phrase>
+            <phrase id="1">
+                <text>sad_b3_ucheny_arrive_home_1</text>
+                <action>dialogs.break_dialog</action>
+                <give_info>sad_ucheny_teleport_b3</give_info>
+            </phrase>
+        </phrase_list>
+    </dialog>
+    <dialog id="sad_b3_trader_dialog_2">
+        <has_info>sad_b3_trader_task_have</has_info>
+        <dont_has_info>sad_b3_trader_task_done</dont_has_info>
+        <dont_has_info>sad_b3_trader_task_cancel</dont_has_info>
+        <phrase_list>
+            <phrase id="1">
+                <text>sad_b3_trader_dialog_2_1</text>
+                <action>dialogs_sad.sad_b3_trader_reward</action>
+                <give_info>sad_b3_trader_task_done</give_info>
+            </phrase>
+            <phrase id="0">
+                <text>sad_b3_trader_dialog_2_0</text>
+                <next>1</next>
+            </phrase>
+        </phrase_list>
+    </dialog>
+    <dialog id="sad_b3_trader_dialog_1">
+        <dont_has_info>sad_b3_trader_give_task</dont_has_info>
+        <phrase_list>
+            <phrase id="11">
+                <text>sad_b3_trader_dialog_1_11</text>
+                <next>111</next>
+            </phrase>
+            <phrase id="111">
+                <text>sad_b3_trader_dialog_1_111</text>
+                <next>1111</next>
+            </phrase>
+            <phrase id="1111">
+                <text>sad_b3_trader_dialog_1_1111</text>
+                <next>11111</next>
+            </phrase>
+            <phrase id="11111">
+                <text>sad_b3_trader_dialog_1_11111</text>
+                <next>111111</next>
+                <next>111112</next>
+            </phrase>
+            <phrase id="111111">
+                <text>sad_b3_trader_dialog_1_111111</text>
+                <give_info>sad_b3_trader_give_task</give_info>
+            </phrase>
+            <phrase id="111112">
+                <text>sad_b3_trader_dialog_1_111112</text>
+            </phrase>
+            <phrase id="1">
+                <text>sad_b3_trader_dialog_1_1</text>
+                <next>11</next>
+            </phrase>
+            <phrase id="0">
+                <text>sad_b3_trader_dialog_1_0</text>
+                <next>1</next>
+            </phrase>
+        </phrase_list>
+    </dialog>
+    <dialog id="sad_b1_mutny_start_dialog">
+        <has_info>zat_a2_stalker_barmen_sad_start</has_info>
+        <phrase_list>
+            <phrase id="1">
+                <text />
+                <give_info>sad_meet_mutny_task_done</give_info>
+                <next>11</next>
+                <next>13</next>
+            </phrase>
+            <phrase id="11">
+                <text>sad_b1_mutny_start_dialog_11</text>
+                <dont_has_info>sad_b1_mutny_meeted</dont_has_info>
+            </phrase>
+            <phrase id="13">
+                <text>sad_b1_mutny_start_dialog_13</text>
+                <has_info>sad_b1_mutny_meeted</has_info>
+            </phrase>
+            <phrase id="0">
+                <text />
+                <next>1</next>
+            </phrase>
+        </phrase_list>
+    </dialog>
+    <dialog id="sad_b2_gonets_talk">
+        <phrase_list>
+            <phrase id="1">
+                <text>sad_b2_gonets_talk_1</text>
+                <action>dialogs.break_dialog</action>
+                <give_info>sad_b2_gonets_teleport</give_info>
+            </phrase>
+            <phrase id="2">
+                <text>sad_b2_gonets_talk_2</text>
+                <action>dialogs.break_dialog</action>
+            </phrase>
+            <phrase id="0">
+                <text>sad_b2_gonets_talk_0</text>
+                <next>1</next>
+                <next>2</next>
+            </phrase>
+        </phrase_list>
+    </dialog>
+    <dialog id="sad_b2_tech_detector_2">
+        <has_info>sad_teledoc_give_stuff</has_info>
+        <dont_has_info>sad_teledoc_stuff_done</dont_has_info>
+        <phrase_list>
+            <phrase id="0">
+                <text>sad_b2_tech_detector_2_0</text>
+                <next>1</next>
+                <next>2</next>
+            </phrase>
+            <phrase id="2">
+                <text>sad_b2_tech_detector_2_2</text>
+                <dont_has_info>sad_teledoc_ready</dont_has_info>
+            </phrase>
+            <phrase id="1">
+                <text>sad_b2_tech_detector_2_1</text>
+                <action>dialogs_sad.sad_actor_give_detector_sad</action>
+                <give_info>sad_teledoc_stuff_done</give_info>
+                <has_info>sad_teledoc_ready</has_info>
+            </phrase>
+        </phrase_list>
+    </dialog>
+    <dialog id="sad_b1_mudak_start">
+        <phrase_list>
+            <phrase id="3">
+                <text />
+                <dont_has_info>sad_sim_3_rob_agree</dont_has_info>
+                <has_info>sad_b1_mudak_meeted</has_info>
+                <next>31</next>
+            </phrase>
+            <phrase id="11111">
+                <text>sad_b1_mudak_start_11111</text>
+                <next>111111</next>
+            </phrase>
+            <phrase id="111111">
+                <text>sad_b1_mudak_start_111111</text>
+                <next>1111111</next>
+                <next>1111112</next>
+            </phrase>
+            <phrase id="21">
+                <text>sad_b1_mudak_start_21</text>
+            </phrase>
+            <phrase id="31">
+                <text>sad_b1_mudak_start_31</text>
+                <next>1111111</next>
+                <next>1111112</next>
+            </phrase>
+            <phrase id="1111">
+                <text>sad_b1_mudak_start_1111</text>
+                <next>11111</next>
+            </phrase>
+            <phrase id="11">
+                <text>sad_b1_mudak_start_11</text>
+                <give_info>sad_b1_mudak_meeted</give_info>
+                <next>111</next>
+            </phrase>
+            <phrase id="111">
+                <text>sad_b1_mudak_start_111</text>
+                <next>1111</next>
+            </phrase>
+            <phrase id="2">
+                <text />
+                <has_info>sad_b1_mudak_meeted</has_info>
+                <has_info>sad_sim_3_rob_agree</has_info>
+                <next>21</next>
+            </phrase>
+            <phrase id="1">
+                <text />
+                <dont_has_info>sad_b1_mudak_meeted</dont_has_info>
+                <next>11</next>
+            </phrase>
+            <phrase id="1111111">
+                <text>sad_b1_mudak_start_1111111</text>
+                <give_info>sad_sim_3_rob_agree</give_info>
+                <next>11111111</next>
+                <next>11111112</next>
+            </phrase>
+            <phrase id="11111111">
+                <text>sad_b1_mudak_start_11111111</text>
+                <precondition>dialogs_sad.is_sad_sim_3_rob_time</precondition>
+            </phrase>
+            <phrase id="11111112">
+                <text>sad_b1_mudak_start_11111112</text>
+                <precondition>dialogs_sad.is_not_sad_sim_3_rob_time</precondition>
+            </phrase>
+            <phrase id="1111112">
+                <text>sad_b1_mudak_start_1111112</text>
+                <next>11111121</next>
+            </phrase>
+            <phrase id="11111121">
+                <text>sad_b1_mudak_start_11111121</text>
+                <give_info>sad_b1_mudak_go_saray</give_info>
+            </phrase>
+            <phrase id="0">
+                <text />
+                <next>1</next>
+                <next>2</next>
+                <next>3</next>
+            </phrase>
+        </phrase_list>
+    </dialog>
+    <dialog id="sad_b2_trader_notebook_job_2">
+        <has_info>sad_b2_trader_nb_have</has_info>
+        <has_info>sad_b2_trader_nb_task_give</has_info>
+        <dont_has_info>sad_b2_trader_nb_task_done</dont_has_info>
+        <phrase_list>
+            <phrase id="0">
+                <text>sad_b2_trader_notebook_job_2_0</text>
+                <next>1</next>
+            </phrase>
+            <phrase id="1">
+                <text>sad_b2_trader_notebook_job_2_1</text>
+                <action>dialogs_sad.sad_b2_trader_give_money_7500</action>
+                <give_info>sad_b2_trader_nb_task_done</give_info>
+                <give_info>sad_b2_trader_nb_discount</give_info>
+            </phrase>
+        </phrase_list>
+    </dialog>
+    <dialog id="sad_grisha_after_fight">
+        <phrase_list>
+            <phrase id="11">
+                <text>sad_grisha_after_fight_11</text>
+            </phrase>
+            <phrase id="2">
+                <text />
+                <dont_has_info>sad_b1_commander_meeted</dont_has_info>
+                <has_info>sad_actor_kill_mutny_otkaz</has_info>
+                <next>21</next>
+                <next>22</next>
+            </phrase>
+            <phrase id="21">
+                <text>sad_grisha_after_fight_21</text>
+                <has_info>sad_b1_actor_suka_pacifist</has_info>
+                <next>211</next>
+            </phrase>
+            <phrase id="22">
+                <text>sad_grisha_after_fight_22</text>
+                <dont_has_info>sad_b1_actor_suka_pacifist</dont_has_info>
+                <give_info>sad_b1_commander_meeted</give_info>
+            </phrase>
+            <phrase id="3">
+                <text />
+                <dont_has_info>sad_b1_commander_meeted</dont_has_info>
+                <dont_has_info>sad_actor_kill_mutny_agree</dont_has_info>
+                <dont_has_info>sad_actor_kill_mutny_otkaz</dont_has_info>
+                <next>31</next>
+                <next>32</next>
+            </phrase>
+            <phrase id="31">
+                <text>sad_grisha_after_fight_31</text>
+                <has_info>sad_b1_actor_suka_pacifist</has_info>
+                <next>211</next>
+            </phrase>
+            <phrase id="211">
+                <text>sad_grisha_after_fight_211</text>
+                <action>dialogs.break_dialog</action>
+                <give_info>sad_b1_commander_meeted</give_info>
+                <give_info>sad_b1_commander_no_talk</give_info>
+            </phrase>
+            <phrase id="32">
+                <text>sad_grisha_after_fight_32</text>
+                <dont_has_info>sad_b1_actor_suka_pacifist</dont_has_info>
+                <give_info>sad_b1_commander_meeted</give_info>
+            </phrase>
+            <phrase id="4">
+                <text />
+                <dont_has_info>sad_b1_commander_meeted</dont_has_info>
+                <has_info>sad_actor_kill_mutny_agree</has_info>
+                <next>41</next>
+                <next>42</next>
+                <next>43</next>
+            </phrase>
+            <phrase id="41">
+                <text>sad_grisha_after_fight_41</text>
+                <give_info>sad_b1_commander_meeted</give_info>
+                <has_info>sad_b1_actor_suka_pacifist</has_info>
+            </phrase>
+            <phrase id="431">
+                <text>sad_grisha_after_fight_431</text>
+                <next>4311</next>
+            </phrase>
+            <phrase id="42">
+                <text>sad_grisha_after_fight_42</text>
+                <dont_has_info>sad_b1_actor_suka_pacifist</dont_has_info>
+                <dont_has_info>sad_grisha_dead</dont_has_info>
+                <give_info>sad_b1_commander_meeted</give_info>
+            </phrase>
+            <phrase id="4311">
+                <text>sad_grisha_after_fight_4311</text>
+                <give_info>sad_b1_commander_meeted</give_info>
+            </phrase>
+            <phrase id="43">
+                <text>sad_grisha_after_fight_43</text>
+                <dont_has_info>sad_b1_actor_suka_pacifist</dont_has_info>
+                <has_info>sad_grisha_dead</has_info>
+                <next>431</next>
+            </phrase>
+            <phrase id="0">
+                <text />
+                <next>1</next>
+                <next>2</next>
+                <next>3</next>
+                <next>4</next>
+            </phrase>
+            <phrase id="1">
+                <text />
+                <has_info>sad_b1_commander_meeted</has_info>
+                <next>11</next>
+            </phrase>
+        </phrase_list>
+    </dialog>
+    <dialog id="sad_grisha_dialog_1">
+        <has_info>sad_actor_kill_mutny_agree</has_info>
+        <dont_has_info>sad_b1_ataka_start</dont_has_info>
+        <phrase_list>
+            <phrase id="0">
+                <text>sad_grisha_dialog_1_0</text>
+                <action>dialogs.break_dialog</action>
+                <give_info>sad_b1_ataka_start</give_info>
+            </phrase>
+        </phrase_list>
+    </dialog>
+    <dialog id="sad_b3_trader_about_ucheny">
+        <has_info>sad_ucheny_gone</has_info>
+        <dont_has_info>sad_ucheny_actor_paid</dont_has_info>
+        <phrase_list>
+            <phrase id="1">
+                <text>sad_b3_trader_about_ucheny_1</text>
+                <action>dialogs_sad.sad_ucheny_give_money</action>
+                <give_info>sad_ucheny_actor_paid</give_info>
+            </phrase>
+            <phrase id="0">
+                <text>sad_b3_trader_about_ucheny_0</text>
+                <next>1</next>
+            </phrase>
+        </phrase_list>
+    </dialog>
+    <dialog id="sad_b2_trader_about_mutny">
+        <has_info>sad_actor_know_about_mutny</has_info>
+        <dont_has_info>sad_dont_tell_about_mutny</dont_has_info>
+        <dont_has_info>sad_actor_told_trader_about_mutny</dont_has_info>
+        <phrase_list>
+            <phrase id="1">
+                <text>sad_b2_trader_about_mutny_1</text>
+                <dont_has_info>sad_actor_told_about_mutny</dont_has_info>
+                <next>11</next>
+            </phrase>
+            <phrase id="111">
+                <text>sad_b2_trader_about_mutny_111</text>
+                <give_info>sad_actor_told_about_mutny</give_info>
+                <give_info>sad_actor_told_trader_about_mutny</give_info>
+            </phrase>
+            <phrase id="2">
+                <text>sad_b2_trader_about_mutny_2</text>
+                <action>dialogs_sad.sad_b2_trader_reward_mutny</action>
+                <give_info>sad_actor_told_trader_about_mutny</give_info>
+                <has_info>sad_actor_told_about_mutny</has_info>
+            </phrase>
+            <phrase id="11">
+                <text>sad_b2_trader_about_mutny_11</text>
+                <next>111</next>
+            </phrase>
+            <phrase id="0">
+                <text>sad_b2_trader_about_mutny_0</text>
+                <next>1</next>
+                <next>2</next>
+            </phrase>
+        </phrase_list>
+    </dialog>
+    <dialog id="sad_vasya_stalkers_dialog">
+        <dont_has_info>sad_vasya_told_about_stalkers</dont_has_info>
+        <phrase_list>
+            <phrase id="0">
+                <text>sad_vasya_stalkers_dialog_0</text>
+                <next>1</next>
+            </phrase>
+            <phrase id="1">
+                <text>sad_vasya_stalkers_dialog_1</text>
+                <give_info>sad_vasya_told_about_stalkers</give_info>
+            </phrase>
+        </phrase_list>
+    </dialog>
+    <dialog id="sad_vasya_flesh_dialog">
+        <has_info>sad_b1_mutny_flesh_task_given</has_info>
+        <dont_has_info>sad_b1_mutny_flesh_task_fail</dont_has_info>
+        <dont_has_info>sad_vasya_flesh_give</dont_has_info>
+        <phrase_list>
+            <phrase id="0">
+                <text>sad_vasya_flesh_dialog_0</text>
+                <next>1</next>
+            </phrase>
+            <phrase id="1">
+                <text>sad_vasya_flesh_dialog_1</text>
+                <action>dialogs_sad.sad_vasya_flesh_transfer</action>
+                <give_info>sad_vasya_flesh_give</give_info>
+            </phrase>
+        </phrase_list>
+    </dialog>
+    <dialog id="sad_b1_mutny_dialog_15">
+        <has_info>sad_b1_mutny_meeted</has_info>
+        <has_info>sad_b1_mutny_flesh_have</has_info>
+        <has_info>sad_b1_mutny_told_about_flesh</has_info>
+        <dont_has_info>sad_b1_mutny_flesh_task_given</dont_has_info>
+        <dont_has_info>sad_b1_mutny_flesh_task_complete</dont_has_info>
+        <phrase_list>
+            <phrase id="1">
+                <text>sad_b1_mutny_dialog_15_1</text>
+                <give_info>sad_b1_mutny_flesh_task_complete</give_info>
+            </phrase>
+            <phrase id="0">
+                <text>sad_b1_mutny_dialog_15_0</text>
+                <action>dialogs_sad.sad_b1_mutny_actor_flesh_transfer</action>
+                <next>1</next>
+            </phrase>
+        </phrase_list>
+    </dialog>
+    <dialog id="sad_b1_mutny_dialog_14">
+        <has_info>sad_b1_mutny_flesh_task_given</has_info>
+        <has_info>sad_b1_mutny_flesh_have</has_info>
+        <dont_has_info>sad_b1_mutny_flesh_task_complete</dont_has_info>
+        <dont_has_info>sad_b1_mutny_flesh_task_fail</dont_has_info>
+        <phrase_list>
+            <phrase id="11">
+                <text>sad_b1_mutny_dialog_14_11</text>
+                <has_info>sad_vasya_dead</has_info>
+                <next>111</next>
+            </phrase>
+            <phrase id="111">
+                <text>sad_b1_mutny_dialog_14_111</text>
+            </phrase>
+            <phrase id="12">
+                <text>sad_b1_mutny_dialog_14_12</text>
+                <dont_has_info>sad_vasya_dead</dont_has_info>
+                <next>121</next>
+            </phrase>
+            <phrase id="121">
+                <text>sad_b1_mutny_dialog_14_121</text>
+            </phrase>
+            <phrase id="0">
+                <text>sad_b1_mutny_dialog_14_0</text>
+                <next>1</next>
+            </phrase>
+            <phrase id="1">
+                <text>sad_b1_mutny_dialog_14_1</text>
+                <action>dialogs_sad.sad_b1_mutny_actor_flesh_transfer</action>
+                <give_info>sad_b1_mutny_flesh_task_complete</give_info>
+                <next>11</next>
+                <next>12</next>
+            </phrase>
+        </phrase_list>
+    </dialog>
+    <dialog id="sad_b1_trader_agree">
+        <has_info>sad_b1_trader_meeted</has_info>
+        <dont_has_info>sad_b1_trader_task_give</dont_has_info>
+        <dont_has_info>sad_b1_trader_task_done</dont_has_info>
+        <dont_has_info>sad_b2_trader_plant_give</dont_has_info>
+        <phrase_list>
+            <phrase id="0">
+                <text>sad_b1_trader_agree_0</text>
+                <next>1</next>
+            </phrase>
+            <phrase id="1">
+                <text>sad_b1_trader_agree_1</text>
+                <next>11</next>
+                <next>12</next>
+            </phrase>
+            <phrase id="11">
+                <text>sad_b1_trader_agree_11</text>
+                <next>111</next>
+            </phrase>
+            <phrase id="111">
+                <text>sad_b1_trader_agree_111</text>
+            </phrase>
+            <phrase id="12">
+                <text>sad_b1_trader_agree_12</text>
+                <give_info>sad_b1_trader_task_give</give_info>
+                <next>121</next>
+            </phrase>
+            <phrase id="121">
+                <text>sad_b1_trader_agree_121</text>
+            </phrase>
+        </phrase_list>
+    </dialog>
+    <dialog id="sad_b1_trader_start">
+        <phrase_list>
+            <phrase id="1">
+                <text />
+                <dont_has_info>sad_b1_trader_meeted</dont_has_info>
+                <next>11</next>
+            </phrase>
+            <phrase id="111">
+                <text>sad_b1_trader_start_111</text>
+                <next>1111</next>
+            </phrase>
+            <phrase id="1111">
+                <text>sad_b1_trader_start_1111</text>
+                <next>11111</next>
+            </phrase>
+            <phrase id="11111">
+                <text>sad_b1_trader_start_11111</text>
+                <next>111111</next>
+            </phrase>
+            <phrase id="111111">
+                <text>sad_b1_trader_start_111111</text>
+                <next>1111111</next>
+                <next>1111112</next>
+                <next>1111113</next>
+            </phrase>
+            <phrase id="1111113">
+                <text>sad_b1_trader_start_1111113</text>
+            </phrase>
+            <phrase id="11">
+                <text>sad_b1_trader_start_11</text>
+                <give_info>sad_b1_trader_meeted</give_info>
+                <next>111</next>
+            </phrase>
+            <phrase id="1111111">
+                <text>sad_b1_trader_start_1111111</text>
+                <dont_has_info>sad_b1_trader_plant_have</dont_has_info>
+                <dont_has_info>sad_b2_trader_plant_give</dont_has_info>
+                <next>11111111</next>
+            </phrase>
+            <phrase id="11111111">
+                <text>sad_b1_trader_start_11111111</text>
+                <give_info>sad_b1_trader_task_give</give_info>
+            </phrase>
+            <phrase id="2">
+                <text />
+                <has_info>sad_b1_trader_meeted</has_info>
+                <has_info>sad_b1_trader_task_done</has_info>
+                <next>21</next>
+            </phrase>
+            <phrase id="21">
+                <text>sad_b1_trader_start_21</text>
+            </phrase>
+            <phrase id="3">
+                <text />
+                <dont_has_info>sad_b1_trader_task_done</dont_has_info>
+                <has_info>sad_b1_trader_meeted</has_info>
+                <has_info>sad_b1_trader_task_give</has_info>
+                <next>31</next>
+            </phrase>
+            <phrase id="31">
+                <text>sad_b1_trader_start_31</text>
+                <next>311</next>
+                <next>312</next>
+            </phrase>
+            <phrase id="311">
+                <text>sad_b1_trader_start_311</text>
+                <next>3111</next>
+            </phrase>
+            <phrase id="3111">
+                <text>sad_b1_trader_start_3111</text>
+            </phrase>
+            <phrase id="312">
+                <text>sad_b1_trader_start_312</text>
+                <has_info>sad_b1_trader_plant_have</has_info>
+                <next>11111121</next>
+            </phrase>
+            <phrase id="4">
+                <text />
+                <dont_has_info>sad_b1_trader_task_give</dont_has_info>
+                <has_info>sad_b1_trader_meeted</has_info>
+                <next>41</next>
+            </phrase>
+            <phrase id="41">
+                <text>sad_b1_trader_start_41</text>
+            </phrase>
+            <phrase id="0">
+                <text />
+                <next>1</next>
+                <next>2</next>
+                <next>3</next>
+                <next>4</next>
+            </phrase>
+            <phrase id="11111121">
+                <text>sad_b1_trader_start_11111121</text>
+                <action>dialogs_sad.sad_b1_trader_change</action>
+                <give_info>sad_b1_trader_task_done</give_info>
+            </phrase>
+            <phrase id="1111112">
+                <text>sad_b1_trader_start_1111112</text>
+                <has_info>sad_b1_trader_plant_have</has_info>
+                <next>11111121</next>
+            </phrase>
+        </phrase_list>
+    </dialog>
+    <dialog id="sad_b2_artur_start">
+        <phrase_list>
+            <phrase id="111">
+                <text>sad_b2_artur_start_111</text>
+                <next>1111</next>
+            </phrase>
+            <phrase id="1111">
+                <text>sad_b2_artur_start_1111</text>
+                <next>11111</next>
+            </phrase>
+            <phrase id="111111">
+                <text>sad_b2_artur_start_111111</text>
+                <next>1111111</next>
+            </phrase>
+            <phrase id="1111111">
+                <text>sad_b2_artur_start_1111111</text>
+                <next>11111111</next>
+            </phrase>
+            <phrase id="211">
+                <text>sad_b2_artur_start_211</text>
+                <has_info>sad_artur_task_have_both</has_info>
+                <next>1111111111</next>
+            </phrase>
+            <phrase id="212">
+                <text>sad_b2_artur_start_212</text>
+                <action>dialogs.break_dialog</action>
+                <dont_has_info>sad_artur_task_have_both</dont_has_info>
+            </phrase>
+            <phrase id="1">
+                <text />
+                <dont_has_info>sad_b2_artur_meeted</dont_has_info>
+                <next>11</next>
+            </phrase>
+            <phrase id="11">
+                <text>sad_b2_artur_start_11</text>
+                <next>111</next>
+            </phrase>
+            <phrase id="1111111111">
+                <text>sad_b2_artur_start_1111111111</text>
+                <action>dialogs_sad.sad_b2_artur_reward</action>
+                <give_info>sad_artur_task_done</give_info>
+            </phrase>
+            <phrase id="1111111121">
+                <text>sad_b2_artur_start_1111111121</text>
+            </phrase>
+            <phrase id="11111111">
+                <text>sad_b2_artur_start_11111111</text>
+                <give_info>sad_b2_artur_meeted</give_info>
+                <next>111111111</next>
+                <next>111111112</next>
+                <next>111111113</next>
+            </phrase>
+            <phrase id="21">
+                <text>sad_b2_artur_start_21</text>
+                <next>211</next>
+                <next>212</next>
+            </phrase>
+            <phrase id="2">
+                <text />
+                <dont_has_info>sad_artur_task_done</dont_has_info>
+                <has_info>sad_b2_artur_meeted</has_info>
+                <has_info>sad_artur_task_give</has_info>
+                <next>21</next>
+            </phrase>
+            <phrase id="3">
+                <text />
+                <dont_has_info>sad_artur_task_give</dont_has_info>
+                <dont_has_info>sad_artur_task_done</dont_has_info>
+                <has_info>sad_b2_artur_meeted</has_info>
+                <next>31</next>
+            </phrase>
+            <phrase id="31">
+                <text>sad_b2_artur_start_31</text>
+                <next>111111112</next>
+                <next>111111111</next>
+                <next>111111113</next>
+            </phrase>
+            <phrase id="111111112">
+                <text>sad_b2_artur_start_111111112</text>
+                <dont_has_info>sad_artur_task_have_both</dont_has_info>
+                <give_info>sad_artur_task_give</give_info>
+                <next>1111111121</next>
+            </phrase>
+            <phrase id="111111111">
+                <text>sad_b2_artur_start_111111111</text>
+                <has_info>sad_artur_task_have_both</has_info>
+                <next>1111111111</next>
+            </phrase>
+            <phrase id="111111113">
+                <text>sad_b2_artur_start_111111113</text>
+                <action>dialogs.break_dialog</action>
+            </phrase>
+            <phrase id="4">
+                <text />
+                <has_info>sad_b2_artur_meeted</has_info>
+                <has_info>sad_artur_task_done</has_info>
+                <next>41</next>
+            </phrase>
+            <phrase id="41">
+                <text>sad_b2_artur_start_41</text>
+            </phrase>
+            <phrase id="11111">
+                <text>sad_b2_artur_start_11111</text>
+                <next>111111</next>
+            </phrase>
+            <phrase id="0">
+                <text />
+                <next>1</next>
+                <next>2</next>
+                <next>3</next>
+                <next>4</next>
+            </phrase>
+        </phrase_list>
+    </dialog>
+    <dialog id="sad_b1_mutny_dialog_11">
+        <has_info>sad_b1_mutny_meeted</has_info>
+        <has_info>sad_b1_mutny_told_about_flesh</has_info>
+        <dont_has_info>sad_b1_mutny_flesh_task_given</dont_has_info>
+        <dont_has_info>sad_b1_mutny_flesh_have</dont_has_info>
+        <dont_has_info>sad_b1_mutny_flesh_task_complete</dont_has_info>
+        <dont_has_info>sad_b1_mutny_flesh_task_fail</dont_has_info>
+        <phrase_list>
+            <phrase id="1">
+                <text>sad_b1_mutny_dialog_11_1</text>
+                <give_info>sad_b1_mutny_flesh_task_given</give_info>
+            </phrase>
+            <phrase id="0">
+                <text>sad_b1_mutny_dialog_11_0</text>
+                <next>1</next>
+            </phrase>
+        </phrase_list>
+    </dialog>
+    <dialog id="sad_b3_ucheny_d2">
+        <has_info>sad_b3_ucheny_told_about</has_info>
+        <dont_has_info>sad_b3_ucheny_actor_agree</dont_has_info>
+        <phrase_list>
+            <phrase id="0">
+                <text>sad_b3_ucheny_d2_0</text>
+                <next>1</next>
+            </phrase>
+            <phrase id="1">
+                <text>sad_b3_ucheny_d2_1</text>
+                <give_info>sad_b3_ucheny_actor_agree</give_info>
+            </phrase>
+        </phrase_list>
+    </dialog>
+    <dialog id="sad_b3_ucheny_d3">
+        <has_info>sad_b3_ucheny_actor_agree</has_info>
+        <dont_has_info>sad_b3_start_arrive</dont_has_info>
+        <phrase_list>
+            <phrase id="0">
+                <text>sad_b3_ucheny_d3_0</text>
+                <next>1</next>
+            </phrase>
+            <phrase id="1">
+                <text>sad_b3_ucheny_d3_1</text>
+                <next>11</next>
+            </phrase>
+            <phrase id="11">
+                <text>sad_b3_ucheny_d3_11</text>
+                <action>dialogs.break_dialog</action>
+                <give_info>sad_b3_start_arrive</give_info>
+            </phrase>
+        </phrase_list>
+    </dialog>
+    <dialog id="sad_b3_ucheny_start">
+        <phrase_list>
+            <phrase id="0">
+                <text />
+                <next>1</next>
+                <next>2</next>
+                <next>3</next>
+            </phrase>
+            <phrase id="1">
+                <text />
+                <dont_has_info>sad_ucheny_arrived_home</dont_has_info>
+                <next>11</next>
+            </phrase>
+            <phrase id="11">
+                <text>sad_b3_ucheny_start_11</text>
+            </phrase>
+            <phrase id="2">
+                <text />
+                <dont_has_info>sad_ucheny_actor_paid</dont_has_info>
+                <has_info>sad_ucheny_arrived_home</has_info>
+                <next>21</next>
+            </phrase>
+            <phrase id="21">
+                <text>sad_b3_ucheny_start_21</text>
+                <action>dialogs_sad.sad_ucheny_give_money</action>
+                <give_info>sad_ucheny_actor_paid</give_info>
+            </phrase>
+            <phrase id="3">
+                <text />
+                <has_info>sad_ucheny_actor_paid</has_info>
+                <next>31</next>
+            </phrase>
+            <phrase id="31">
+                <text>sad_b3_ucheny_start_31</text>
+            </phrase>
+        </phrase_list>
+    </dialog>
+    <dialog id="sad_b3_ucheny_d1">
+        <dont_has_info>sad_b3_ucheny_actor_agree</dont_has_info>
+		<dont_has_info>sad_b3_ucheny_told_about</dont_has_info>
+        <phrase_list>
+            <phrase id="0">
+                <text>sad_b3_ucheny_d1_0</text>
+                <give_info>sad_b3_ucheny_meeted</give_info>
+                <next>1</next>
+            </phrase>
+            <phrase id="1">
+                <text>sad_b3_ucheny_d1_1</text>
+                <next>11</next>
+                <next>12</next>
+            </phrase>
+            <phrase id="11">
+                <text>sad_b3_ucheny_d1_11</text>
+                <next>111</next>
+            </phrase>
+            <phrase id="111">
+                <text>sad_b3_ucheny_d1_111</text>
+                <give_info>sad_b3_ucheny_told_about</give_info>
+                <give_info>sad_b3_ucheny_actor_agree</give_info>
+            </phrase>
+            <phrase id="12">
+                <text>sad_b3_ucheny_d1_12</text>
+                <next>121</next>
+            </phrase>
+            <phrase id="121">
+                <text>sad_b3_ucheny_d1_121</text>
+                <give_info>sad_b3_ucheny_told_about</give_info>
+            </phrase>
+        </phrase_list>
+    </dialog>
+    <dialog id="sad_b2_trader_about_ucheny">
+        <precondition>dialogs_sad.sad_actor_has_b3_ucheny_flesh</precondition>
+        <dont_has_info>sad_ucheny_actor_paid_b2</dont_has_info>
+        <phrase_list>
+            <phrase id="0">
+                <text>sad_b2_trader_about_ucheny_0</text>
+                <next>1</next>
+            </phrase>
+            <phrase id="1">
+                <text>sad_b2_trader_about_ucheny_1</text>
+                <next>11</next>
+            </phrase>
+            <phrase id="11">
+                <text>sad_b2_trader_about_ucheny_11</text>
+                <next>111</next>
+            </phrase>
+            <phrase id="111">
+                <text>sad_b2_trader_about_ucheny_111</text>
+                <next>1111</next>
+                <next>1112</next>
+            </phrase>
+            <phrase id="1111">
+                <text>sad_b2_trader_about_ucheny_1111</text>
+                <action>dialogs_sad.sad_ucheny_give_money_b2</action>
+                <give_info>sad_ucheny_actor_paid_b2</give_info>
+            </phrase>
+            <phrase id="1112">
+                <text>sad_b2_trader_about_ucheny_1112</text>
+            </phrase>
+        </phrase_list>
+    </dialog>
+    <dialog id="sad_b2_tech_about_luty">
+        <precondition>dialogs_sad.sad_actor_has_luty_pda</precondition>
+        <dont_has_info>sad_b2_tech_give_weapon_task</dont_has_info>
+        <phrase_list>
+            <phrase id="11">
+                <text>sad_b2_tech_about_luty_11</text>
+                <next>111</next>
+            </phrase>
+            <phrase id="111">
+                <text>sad_b2_tech_about_luty_111</text>
+                <next>1111</next>
+            </phrase>
+            <phrase id="1111">
+                <text>sad_b2_tech_about_luty_1111</text>
+                <next>11111</next>
+            </phrase>
+            <phrase id="1">
+                <text>sad_b2_tech_about_luty_1</text>
+                <next>11</next>
+            </phrase>
+            <phrase id="11111">
+                <text>sad_b2_tech_about_luty_11111</text>
+                <action>dialogs_sad.sad_b2_tech_give_wpn_task</action>
+                <give_info>sad_b2_tech_give_weapon_task</give_info>
+            </phrase>
+            <phrase id="0">
+                <text>sad_b2_tech_about_luty_0</text>
+                <action>dialogs_sad.sad_actor_transfer_luty_pda</action>
+                <next>1</next>
+            </phrase>
+        </phrase_list>
+    </dialog>
+    <dialog id="sad_b2_tech_about_mutny">
+        <has_info>sad_actor_know_about_mutny</has_info>
+        <dont_has_info>sad_actor_told_tech_about_mutny</dont_has_info>
+        <dont_has_info>sad_dont_tell_about_mutny</dont_has_info>
+        <phrase_list>
+            <phrase id="1">
+                <text>sad_b2_tech_about_mutny_1</text>
+                <dont_has_info>sad_actor_told_about_mutny</dont_has_info>
+                <next>11</next>
+            </phrase>
+            <phrase id="11">
+                <text>sad_b2_tech_about_mutny_11</text>
+                <next>12</next>
+            </phrase>
+            <phrase id="12">
+                <text>sad_b2_tech_about_mutny_12</text>
+                <action>dialogs_sad.sad_b2_tech_reward_mutny</action>
+                <give_info>sad_actor_told_tech_about_mutny</give_info>
+                <give_info>sad_actor_told_about_mutny</give_info>
+            </phrase>
+            <phrase id="2">
+                <text>sad_b2_tech_about_mutny_2</text>
+                <action>dialogs_sad.sad_b2_tech_reward_mutny</action>
+                <give_info>sad_actor_told_tech_about_mutny</give_info>
+                <has_info>sad_actor_told_about_mutny</has_info>
+            </phrase>
+            <phrase id="0">
+                <text>sad_b2_tech_about_mutny_0</text>
+                <next>1</next>
+                <next>2</next>
+            </phrase>
+        </phrase_list>
+    </dialog>
+    <dialog id="sad_b2_tech_detector_1">
+        <has_info>sad_teledoc_has</has_info>
+        <dont_has_info>sad_teledoc_give</dont_has_info>
+        <phrase_list>
+            <phrase id="1111111">
+                <text>sad_b2_tech_detector_1_1111111</text>
+                <give_info>sad_teledoc_give</give_info>
+            </phrase>
+            <phrase id="1111121">
+                <text>sad_b2_tech_detector_1_1111121</text>
+                <give_info>sad_teledoc_give</give_info>
+            </phrase>
+            <phrase id="11">
+                <text>sad_b2_tech_detector_1_11</text>
+                <next>111</next>
+            </phrase>
+            <phrase id="111">
+                <text>sad_b2_tech_detector_1_111</text>
+                <next>1111</next>
+            </phrase>
+            <phrase id="1111">
+                <text>sad_b2_tech_detector_1_1111</text>
+                <next>11111</next>
+            </phrase>
+            <phrase id="11111">
+                <text>sad_b2_tech_detector_1_11111</text>
+                <next>111111</next>
+                <next>111112</next>
+                <next>111113</next>
+            </phrase>
+            <phrase id="111111">
+                <text>sad_b2_tech_detector_1_111111</text>
+                <next>1111111</next>
+            </phrase>
+            <phrase id="111112">
+                <text>sad_b2_tech_detector_1_111112</text>
+                <dont_has_info>sad_teledoc_stuff_has</dont_has_info>
+                <next>1111121</next>
+            </phrase>
+            <phrase id="111113">
+                <text>sad_b2_tech_detector_1_111113</text>
+                <action>dialogs_sad.sad_actor_transfer_docs_stuff</action>
+                <give_info>sad_teledoc_give_stuff</give_info>
+                <has_info>sad_teledoc_stuff_has</has_info>
+                <next>1111131</next>
+            </phrase>
+            <phrase id="1111131">
+                <text>sad_b2_tech_detector_1_1111131</text>
+                <give_info>sad_teledoc_give</give_info>
+            </phrase>
+            <phrase id="1">
+                <text>sad_b2_tech_detector_1_1</text>
+                <action>dialogs_sad.sad_actor_transfer_docs</action>
+                <give_info>sad_teledoc_give</give_info>
+                <next>11</next>
+            </phrase>
+            <phrase id="0">
+                <text>sad_b2_tech_detector_1_0</text>
+                <next>1</next>
+            </phrase>
+        </phrase_list>
+    </dialog>
+    <dialog id="sad_b2_trader_nauchny_3">
+        <has_info>sad_nauchny_get_reward</has_info>
+        <dont_has_info>sad_nauchny_paid</dont_has_info>
+        <phrase_list>
+            <phrase id="1">
+                <text>sad_b2_trader_nauchny_3_1</text>
+                <action>dialogs_sad.sad_nauchny_reward</action>
+                <give_info>sad_nauchny_paid</give_info>
+            </phrase>
+            <phrase id="0">
+                <text>sad_b2_trader_nauchny_3_0</text>
+                <next>1</next>
+            </phrase>
+        </phrase_list>
+    </dialog>
+    <dialog id="sad_b1_mutny_dialog_1">
+        <dont_has_info>sad_b1_mutny_meeted</dont_has_info>
+        <phrase_list>
+            <phrase id="71">
+                <text>sad_b1_mutny_dialog_1_71</text>
+                <give_info>sad_b1_mutny_meeted</give_info>
+            </phrase>
+            <phrase id="72">
+                <text>sad_b1_mutny_dialog_1_72</text>
+                <give_info>sad_b1_mutny_meeted</give_info>
+            </phrase>
+            <phrase id="63">
+                <text>sad_b1_mutny_dialog_1_63</text>
+            </phrase>
+            <phrase id="11112">
+                <text>sad_b1_mutny_dialog_1_11112</text>
+                <give_info>sad_b1_mutny_meeted</give_info>
+                <has_info>sad_b2_maxim_meeted</has_info>
+            </phrase>
+            <phrase id="111">
+                <text>sad_b1_mutny_dialog_1_111</text>
+                <next>1111</next>
+            </phrase>
+            <phrase id="1">
+                <text>sad_b1_mutny_dialog_1_1</text>
+                <next>11</next>
+            </phrase>
+            <phrase id="11">
+                <text>sad_b1_mutny_dialog_1_11</text>
+                <next>111</next>
+            </phrase>
+            <phrase id="1111">
+                <text>sad_b1_mutny_dialog_1_1111</text>
+                <next>11111</next>
+                <next>11112</next>
+            </phrase>
+            <phrase id="11111">
+                <text>sad_b1_mutny_dialog_1_11111</text>
+                <dont_has_info>sad_b2_maxim_meeted</dont_has_info>
+                <next>111111</next>
+            </phrase>
+            <phrase id="111111">
+                <text>sad_b1_mutny_dialog_1_111111</text>
+                <next>1111111</next>
+            </phrase>
+            <phrase id="1111111">
+                <text>sad_b1_mutny_dialog_1_1111111</text>
+                <next>11111111</next>
+            </phrase>
+            <phrase id="11111111">
+                <text>sad_b1_mutny_dialog_1_11111111</text>
+                <next>111111111</next>
+            </phrase>
+            <phrase id="111111111">
+                <text>sad_b1_mutny_dialog_1_111111111</text>
+                <give_info>sad_b1_mutny_meeted</give_info>
+                <give_info>sad_b1_mutny_told_about_flesh</give_info>
+            </phrase>
+            <phrase id="0">
+                <text>sad_b1_mutny_dialog_1_0</text>
+                <next>1</next>
+            </phrase>
+        </phrase_list>
+    </dialog>
+    <dialog id="sad_sim_7_gena_dialog_1">
+        <has_info>sad_b2_tech_gena_task_give</has_info>
+        <dont_has_info>sad_sim_7_gena_actor_worned</dont_has_info>
+        <dont_has_info>sad_actor_enemy_b2</dont_has_info>
+        <phrase_list>
+            <phrase id="1">
+                <text>sad_sim_7_gena_dialog_1_1</text>
+                <next>11</next>
+            </phrase>
+            <phrase id="11">
+                <text>sad_sim_7_gena_dialog_1_11</text>
+                <action>dialogs.break_dialog</action>
+                <give_info>sad_sim_7_gena_actor_worned</give_info>
+            </phrase>
+            <phrase id="0">
+                <text>sad_sim_7_gena_dialog_1_0</text>
+                <give_info>sad_sim_7_gena_founded</give_info>
+                <next>1</next>
+            </phrase>
+        </phrase_list>
+    </dialog>
+    <dialog id="sad_sim_7_gena_dialog_2">
+        <phrase_list>
+            <phrase id="11">
+                <text>sad_sim_7_gena_dialog_2_11</text>
+                <next>111</next>
+                <next>112</next>
+            </phrase>
+            <phrase id="112">
+                <text>sad_sim_7_gena_dialog_2_112</text>
+                <precondition>dialogs_sad.sad_actor_dont_has_any_medkit</precondition>
+                <action>dialogs.break_dialog</action>
+            </phrase>
+            <phrase id="4">
+                <text>sad_sim_7_gena_dialog_2_4</text>
+                <precondition>dialogs_sad.sad_gena_squad_not_dead</precondition>
+                <action>dialogs.break_dialog</action>
+            </phrase>
+            <phrase id="2">
+                <text>sad_sim_7_gena_dialog_2_2</text>
+                <precondition>dialogs_sad.sad_gena_squad_dead</precondition>
+                <dont_has_info>sad_sim_7_gena_founded</dont_has_info>
+                <give_info>sad_sim_7_gena_founded</give_info>
+                <has_info>sad_b2_tech_gena_task_give</has_info>
+                <next>11</next>
+            </phrase>
+            <phrase id="1">
+                <text>sad_sim_7_gena_dialog_2_1</text>
+                <precondition>dialogs_sad.sad_gena_squad_dead</precondition>
+                <has_info>sad_sim_7_gena_founded</has_info>
+                <has_info>sad_b2_tech_gena_task_give</has_info>
+                <next>11</next>
+            </phrase>
+            <phrase id="0">
+                <text>sad_sim_7_gena_dialog_2_0</text>
+                <next>1</next>
+                <next>2</next>
+                <next>3</next>
+                <next>4</next>
+            </phrase>
+            <phrase id="111">
+                <text>sad_sim_7_gena_dialog_2_111</text>
+                <precondition>dialogs_sad.sad_actor_has_any_medkit</precondition>
+                <action>dialogs.break_dialog</action>
+                <action>dialogs_sad.sad_sim_7_gena_transfer_medkit</action>
+                <give_info>sad_sim_7_gena_healed</give_info>
+            </phrase>
+            <phrase id="3">
+                <text>sad_sim_7_gena_dialog_2_3</text>
+                <precondition>dialogs_sad.sad_gena_squad_dead</precondition>
+                <action>dialogs.break_dialog</action>
+                <dont_has_info>sad_b2_tech_gena_task_give</dont_has_info>
+            </phrase>
+        </phrase_list>
+    </dialog>
+    <dialog id="sad_b1_mutny_dialog_2">
+        <has_info>sad_b1_mutny_flesh_task_complete</has_info>
+        <dont_has_info>sad_b1_mutny_told_about</dont_has_info>
+        <phrase_list>
+            <phrase id="1111">
+                <text>sad_b1_mutny_dialog_2_1111</text>
+                <next>11111</next>
+            </phrase>
+            <phrase id="111111">
+                <text>sad_b1_mutny_dialog_2_111111</text>
+                <next>1111111</next>
+            </phrase>
+            <phrase id="13">
+                <text>sad_b1_mutny_dialog_2_13</text>
+                <has_info>sad_b2_maxim_told_about_radik</has_info>
+                <next>121</next>
+            </phrase>
+            <phrase id="11">
+                <text>sad_b1_mutny_dialog_2_11</text>
+                <dont_has_info>sad_b2_maxim_meeted</dont_has_info>
+                <next>111</next>
+            </phrase>
+            <phrase id="11111">
+                <text>sad_b1_mutny_dialog_2_11111</text>
+                <next>111111</next>
+            </phrase>
+            <phrase id="111">
+                <text>sad_b1_mutny_dialog_2_111</text>
+                <next>1111</next>
+            </phrase>
+            <phrase id="1111111">
+                <text>sad_b1_mutny_dialog_2_1111111</text>
+                <give_info>sad_b1_mutny_told_about</give_info>
+            </phrase>
+            <phrase id="12">
+                <text>sad_b1_mutny_dialog_2_12</text>
+                <dont_has_info>sad_b2_maxim_told_about_radik</dont_has_info>
+                <has_info>sad_b2_maxim_meeted</has_info>
+                <next>121</next>
+            </phrase>
+            <phrase id="121">
+                <text>sad_b1_mutny_dialog_2_121</text>
+                <action>dialogs_sad.sad_b1_mutny_give_money</action>
+                <give_info>sad_b1_mutny_told_about</give_info>
+            </phrase>
+            <phrase id="1">
+                <text>sad_b1_mutny_dialog_2_1</text>
+                <next>11</next>
+                <next>12</next>
+                <next>13</next>
+            </phrase>
+            <phrase id="0">
+                <text>sad_b1_mutny_dialog_2_0</text>
+                <next>1</next>
+            </phrase>
+        </phrase_list>
+    </dialog>
+    <dialog id="sad_b2_maxim_dialog_2">
+        <has_info>sad_b2_maxim_weapon_complete</has_info>
+        <dont_has_info>sad_b2_maxim_told_about_radik</dont_has_info>
+        <phrase_list>
+            <phrase id="11">
+                <text>sad_b2_maxim_dialog_2_11</text>
+                <next>111</next>
+            </phrase>
+            <phrase id="111">
+                <text>sad_b2_maxim_dialog_2_111</text>
+                <give_info>sad_b2_maxim_told_about_radik</give_info>
+                <next>1111</next>
+                <next>1112</next>
+                <next>1113</next>
+            </phrase>
+            <phrase id="1112">
+                <text>sad_b2_maxim_dialog_2_1112</text>
+                <next>11111</next>
+            </phrase>
+            <phrase id="11111">
+                <text>sad_b2_maxim_dialog_2_11111</text>
+                <next>1111</next>
+                <next>1113</next>
+            </phrase>
+            <phrase id="1111">
+                <text>sad_b2_maxim_dialog_2_1111</text>
+                <give_info>sad_maxim_actor_help_agree</give_info>
+                <next>111111</next>
+            </phrase>
+            <phrase id="1113">
+                <text>sad_b2_maxim_dialog_2_1113</text>
+                <next>222222</next>
+            </phrase>
+            <phrase id="222222">
+                <text>sad_b2_maxim_dialog_2_222222</text>
+                <next>2222222</next>
+                <next>222223</next>
+            </phrase>
+            <phrase id="2222222">
+                <text>sad_b2_maxim_dialog_2_2222222</text>
+                <give_info>sad_maxim_actor_help_agree</give_info>
+                <next>111111</next>
+            </phrase>
+            <phrase id="111111">
+                <text>sad_b2_maxim_dialog_2_111111</text>
+            </phrase>
+            <phrase id="222223">
+                <text>sad_b2_maxim_dialog_2_222223</text>
+                <give_info>sad_b3_actor_otkaz_ataka</give_info>
+            </phrase>
+            <phrase id="1">
+                <text>sad_b2_maxim_dialog_2_1</text>
+                <next>11</next>
+            </phrase>
+            <phrase id="0">
+                <text>sad_b2_maxim_dialog_2_0</text>
+                <next>1</next>
+            </phrase>
+        </phrase_list>
+    </dialog>
+    <dialog id="sad_b2_maxim_dialog_12">
+        <has_info>sad_b2_maxim_meeted</has_info>
+        <has_info>sad_b2_maxim_weapon_have</has_info>
+        <dont_has_info>sad_b2_maxim_weapon_complete</dont_has_info>
+        <phrase_list>
+            <phrase id="1">
+                <text>sad_b2_maxim_dialog_12_1</text>
+                <action>dialogs_sad.sad_maxim_posilka_reward</action>
+            </phrase>
+            <phrase id="0">
+                <text>sad_b2_maxim_dialog_12_0</text>
+                <action>dialogs_sad.sad_b2_posilka_transfer</action>
+                <give_info>sad_b2_maxim_weapon_complete</give_info>
+                <next>1</next>
+            </phrase>
+        </phrase_list>
+    </dialog>
+    <dialog id="sad_b2_maxim_dialog_11">
+        <dont_has_info>sad_b1_mutny_told_about</dont_has_info>
+        <dont_has_info>sad_b2_maxim_meeted</dont_has_info>
+        <phrase_list>
+            <phrase id="1">
+                <text>sad_b2_maxim_dialog_11_1</text>
+                <next>11</next>
+            </phrase>
+            <phrase id="11">
+                <text>sad_b2_maxim_dialog_11_11</text>
+                <next>111</next>
+            </phrase>
+            <phrase id="111">
+                <text>sad_b2_maxim_dialog_11_111</text>
+                <next>1111</next>
+                <next>1112</next>
+            </phrase>
+            <phrase id="1111">
+                <text>sad_b2_maxim_dialog_11_1111</text>
+                <action>dialogs.break_dialog</action>
+                <dont_has_info>sad_b2_maxim_weapon_have</dont_has_info>
+                <give_info>sad_b2_maxim_weapon_task_give</give_info>
+                <give_info>sad_b2_maxim_meeted</give_info>
+            </phrase>
+            <phrase id="1112">
+                <text>sad_b2_maxim_dialog_11_1112</text>
+                <action>dialogs_sad.sad_b2_posilka_transfer</action>
+                <give_info>sad_b2_maxim_weapon_complete</give_info>
+                <give_info>sad_b2_maxim_meeted</give_info>
+                <has_info>sad_b2_maxim_weapon_have</has_info>
+                <next>11111</next>
+            </phrase>
+            <phrase id="11111">
+                <text>sad_b2_maxim_dialog_11_11111</text>
+                <action>dialogs_sad.sad_maxim_posilka_reward</action>
+            </phrase>
+            <phrase id="0">
+                <text>sad_b2_maxim_dialog_11_0</text>
+                <next>1</next>
+            </phrase>
+        </phrase_list>
+    </dialog>
+    <dialog id="sad_b2_maxim_dialog_start">
+        <has_info>zat_a2_stalker_barmen_sad_start</has_info>
+        <phrase_list>
+            <phrase id="4111">
+                <text>sad_b2_maxim_dialog_start_4111</text>
+                <next>41111</next>
+                <next>442</next>
+            </phrase>
+            <phrase id="1">
+                <text />
+                <dont_has_info>sad_b2_maxim_meeted</dont_has_info>
+                <next>11</next>
+            </phrase>
+            <phrase id="11">
+                <text>sad_b2_maxim_dialog_start_11</text>
+                <dont_has_info>sad_b2_maxim_meeted</dont_has_info>
+                <give_info>sad_b2_maxim_go_to_baza_done</give_info>
+            </phrase>
+            <phrase id="2">
+                <text />
+                <dont_has_info>sad_maxim_actor_help_agree</dont_has_info>
+                <has_info>sad_b2_maxim_meeted</has_info>
+                <next>21</next>
+            </phrase>
+            <phrase id="21">
+                <text>sad_b2_maxim_dialog_start_21</text>
+            </phrase>
+            <phrase id="3">
+                <text />
+                <dont_has_info>sad_b3_maxim_ataka_complete</dont_has_info>
+                <has_info>sad_maxim_actor_help_agree</has_info>
+                <next>31</next>
+                <next>34</next>
+                <next>33</next>
+            </phrase>
+            <phrase id="31">
+                <text>sad_b2_maxim_dialog_start_31</text>
+                <dont_has_info>sad_b3_maxim_ready_to_rush</dont_has_info>
+            </phrase>
+            <phrase id="34">
+                <text>sad_b2_maxim_dialog_start_34</text>
+                <has_info>sad_b3a_start_ataka</has_info>
+            </phrase>
+            <phrase id="33">
+                <text>sad_b2_maxim_dialog_start_33</text>
+                <dont_has_info>sad_b3a_start_ataka</dont_has_info>
+                <has_info>sad_b3_maxim_ready_to_rush</has_info>
+                <next>331</next>
+            </phrase>
+            <phrase id="331">
+                <text>sad_b2_maxim_dialog_start_331</text>
+                <next>32</next>
+            </phrase>
+            <phrase id="32">
+                <text>sad_b2_maxim_dialog_start_32</text>
+                <dont_has_info>sad_b3a_start_ataka</dont_has_info>
+                <has_info>sad_b3_maxim_ready_to_rush</has_info>
+                <next>321</next>
+                <next>322</next>
+            </phrase>
+            <phrase id="321">
+                <text>sad_b2_maxim_dialog_start_321</text>
+                <action>dialogs.break_dialog</action>
+                <give_info>sad_b3a_start_ataka</give_info>
+            </phrase>
+            <phrase id="322">
+                <text>sad_b2_maxim_dialog_start_322</text>
+                <next>3221</next>
+            </phrase>
+            <phrase id="3221">
+                <text>sad_b2_maxim_dialog_start_3221</text>
+                <next>32211</next>
+            </phrase>
+            <phrase id="32211">
+                <text>sad_b2_maxim_dialog_start_32211</text>
+                <action>dialogs.break_dialog</action>
+                <give_info>sad_b3a_start_ataka</give_info>
+            </phrase>
+            <phrase id="5">
+                <text />
+                <has_info>sad_b3_maxim_ataka_payd</has_info>
+                <next>51</next>
+            </phrase>
+            <phrase id="51">
+                <text>sad_b2_maxim_dialog_start_51</text>
+            </phrase>
+            <phrase id="4">
+                <text />
+                <dont_has_info>sad_b3_maxim_ataka_payd</dont_has_info>
+                <has_info>sad_b3_maxim_ataka_complete</has_info>
+                <next>41</next>
+                <next>42</next>
+                <next>43</next>
+                <next>44</next>
+            </phrase>
+            <phrase id="41">
+                <text>sad_b2_maxim_dialog_start_41</text>
+                <action>dialogs_sad.sad_maxim_give_reward_best</action>
+                <dont_has_info>sad_b3_maxim_ataka_payd</dont_has_info>
+                <give_info>sad_b3_maxim_ataka_payd</give_info>
+                <has_info>sad_b3_actor_kill_more_6</has_info>
+                <next>411</next>
+            </phrase>
+            <phrase id="411">
+                <text>sad_b2_maxim_dialog_start_411</text>
+                <next>4111</next>
+            </phrase>
+            <phrase id="42">
+                <text>sad_b2_maxim_dialog_start_42</text>
+                <action>dialogs_sad.sad_maxim_give_reward_good</action>
+                <dont_has_info>sad_b3_maxim_ataka_payd</dont_has_info>
+                <give_info>sad_b3_maxim_ataka_payd</give_info>
+                <has_info>sad_b3_actor_kill_more_2</has_info>
+                <next>411</next>
+            </phrase>
+            <phrase id="43">
+                <text>sad_b2_maxim_dialog_start_43</text>
+                <dont_has_info>sad_b3_maxim_ataka_payd</dont_has_info>
+                <give_info>sad_b3_maxim_ataka_payd</give_info>
+                <has_info>sad_b3_actor_kill_more_0</has_info>
+                <next>41111</next>
+                <next>442</next>
+            </phrase>
+            <phrase id="41111">
+                <text>sad_b2_maxim_dialog_start_41111</text>
+                <action>dialogs.break_dialog</action>
+                <give_info>sad_b3_radik_task_give</give_info>
+            </phrase>
+            <phrase id="44">
+                <text>sad_b2_maxim_dialog_start_44</text>
+                <dont_has_info>sad_b3_maxim_ataka_payd</dont_has_info>
+                <give_info>sad_b3_maxim_ataka_payd</give_info>
+                <has_info>sad_b3_actor_kill_zero</has_info>
+                <next>441</next>
+                <next>442</next>
+            </phrase>
+            <phrase id="441">
+                <text>sad_b2_maxim_dialog_start_441</text>
+                <action>dialogs.break_dialog</action>
+                <give_info>sad_b3_radik_task_give</give_info>
+            </phrase>
+            <phrase id="442">
+                <text>sad_b2_maxim_dialog_start_442</text>
+                <action>dialogs.break_dialog</action>
+            </phrase>
+            <phrase id="0">
+                <text />
+                <next>1</next>
+                <next>2</next>
+                <next>3</next>
+                <next>4</next>
+                <next>5</next>
+            </phrase>
+        </phrase_list>
+    </dialog>
+    <dialog id="sad_b2_maxim_about_place">
+        <has_info>sad_b2_maxim_weapon_complete</has_info>
+        <dont_has_info>sad_b2_maxim_told_about_place</dont_has_info>
+        <phrase_list>
+            <phrase id="11">
+                <text>sad_b2_maxim_about_place_11</text>
+                <next>111</next>
+            </phrase>
+            <phrase id="111">
+                <text>sad_b2_maxim_about_place_111</text>
+                <next>1111</next>
+            </phrase>
+            <phrase id="1111">
+                <text>sad_b2_maxim_about_place_1111</text>
+                <next>11111</next>
+            </phrase>
+            <phrase id="11111">
+                <text>sad_b2_maxim_about_place_11111</text>
+                <give_info>sad_b2_maxim_told_about_place</give_info>
+            </phrase>
+            <phrase id="1">
+                <text>sad_b2_maxim_about_place_1</text>
+                <next>11</next>
+            </phrase>
+            <phrase id="0">
+                <text>sad_b2_maxim_about_place_0</text>
+                <next>1</next>
+            </phrase>
+        </phrase_list>
+    </dialog>
+    <dialog id="sad_b2_maxim_about_mutny">
+        <has_info>sad_actor_know_about_mutny</has_info>
+        <dont_has_info>sad_actor_told_maxim_about_mutny</dont_has_info>
+        <dont_has_info>sad_dont_tell_about_mutny</dont_has_info>
+        <phrase_list>
+            <phrase id="1">
+                <text>sad_b2_maxim_about_mutny_1</text>
+                <dont_has_info>sad_actor_told_about_mutny</dont_has_info>
+                <next>11</next>
+            </phrase>
+            <phrase id="111">
+                <text>sad_b2_maxim_about_mutny_111</text>
+                <give_info>sad_actor_told_about_mutny</give_info>
+                <give_info>sad_actor_told_maxim_about_mutny</give_info>
+            </phrase>
+            <phrase id="2">
+                <text>sad_b2_maxim_about_mutny_2</text>
+                <give_info>sad_actor_told_maxim_about_mutny</give_info>
+                <has_info>sad_actor_told_about_mutny</has_info>
+            </phrase>
+            <phrase id="11">
+                <text>sad_b2_maxim_about_mutny_11</text>
+                <next>111</next>
+            </phrase>
+            <phrase id="0">
+                <text>sad_b2_maxim_about_mutny_0</text>
+                <next>1</next>
+                <next>2</next>
+            </phrase>
+        </phrase_list>
+    </dialog>
+    <dialog id="sad_b2_maxim_about_merc">
+        <has_info>sad_maxim_actor_help_agree</has_info>
+        <dont_has_info>sad_actor_ask_maxim_about_merc</dont_has_info>
+        <phrase_list>
+            <phrase id="1">
+                <text>sad_b2_maxim_about_merc_1</text>
+                <give_info>sad_actor_ask_maxim_about_merc</give_info>
+            </phrase>
+            <phrase id="0">
+                <text>sad_b2_maxim_about_merc_0</text>
+                <next>1</next>
+            </phrase>
+        </phrase_list>
+    </dialog>
+    <dialog id="sad_b2_maxim_dialog_1">
+        <has_info>sad_b1_mutny_told_about</has_info>
+        <dont_has_info>sad_b2_maxim_meeted</dont_has_info>
+        <phrase_list>
+            <phrase id="111">
+                <text>sad_b2_maxim_dialog_1_111</text>
+                <give_info>sad_b2_maxim_meeted</give_info>
+            </phrase>
+            <phrase id="1">
+                <text>sad_b2_maxim_dialog_1_1</text>
+                <next>11</next>
+                <next>12</next>
+                <next>13</next>
+            </phrase>
+            <phrase id="11">
+                <text>sad_b2_maxim_dialog_1_11</text>
+                <action>dialogs_sad.sad_b2_posilka_transfer</action>
+                <dont_has_info>sad_ban_bandit_leader_payd</dont_has_info>
+                <give_info>sad_b2_maxim_weapon_complete</give_info>
+                <has_info>sad_b2_maxim_weapon_have</has_info>
+                <has_info>sad_ban_bandits_fight</has_info>
+                <next>111</next>
+            </phrase>
+            <phrase id="12">
+                <text>sad_b2_maxim_dialog_1_12</text>
+                <action>dialogs_sad.sad_b2_posilka_transfer</action>
+                <give_info>sad_b2_maxim_weapon_complete</give_info>
+                <has_info>sad_ban_bandit_leader_payd</has_info>
+                <has_info>sad_b2_maxim_weapon_have</has_info>
+                <next>112</next>
+            </phrase>
+            <phrase id="112">
+                <text>sad_b2_maxim_dialog_1_112</text>
+                <give_info>sad_b2_maxim_meeted</give_info>
+            </phrase>
+            <phrase id="13">
+                <text>sad_b2_maxim_dialog_1_13</text>
+                <dont_has_info>sad_b2_maxim_weapon_have</dont_has_info>
+                <next>113</next>
+            </phrase>
+            <phrase id="113">
+                <text>sad_b2_maxim_dialog_1_113</text>
+                <next>1111</next>
+            </phrase>
+            <phrase id="1111">
+                <text>sad_b2_maxim_dialog_1_1111</text>
+                <action>dialogs.break_dialog</action>
+                <give_info>sad_b2_maxim_meeted</give_info>
+            </phrase>
+            <phrase id="0">
+                <text>sad_b2_maxim_dialog_1_0</text>
+                <next>1</next>
+            </phrase>
+        </phrase_list>
+    </dialog>
+    <dialog id="sad_b2_maxim_dialog_21">
+        <has_info>sad_b2_maxim_told_about_radik</has_info>
+        <dont_has_info>sad_b3_actor_otkaz_ataka</dont_has_info>
+        <dont_has_info>sad_maxim_leave_b2</dont_has_info>
+        <phrase_list>
+            <phrase id="2">
+                <text>sad_b2_maxim_dialog_21_2</text>
+                <dont_has_info>sad_b2_barman_weapon_gived</dont_has_info>
+                <next>21</next>
+                <next>22</next>
+            </phrase>
+            <phrase id="221">
+                <text>sad_b2_maxim_dialog_21_221</text>
+                <next>11</next>
+            </phrase>
+            <phrase id="22">
+                <text>sad_b2_maxim_dialog_21_22</text>
+                <next>221</next>
+            </phrase>
+            <phrase id="1">
+                <text>sad_b2_maxim_dialog_21_1</text>
+                <has_info>sad_b2_barman_weapon_gived</has_info>
+                <next>11</next>
+            </phrase>
+            <phrase id="11">
+                <text>sad_b2_maxim_dialog_21_11</text>
+                <action>dialogs.break_dialog</action>
+                <give_info>sad_maxim_start_teleport</give_info>
+            </phrase>
+            <phrase id="21">
+                <text>sad_b2_maxim_dialog_21_21</text>
+                <action>dialogs.break_dialog</action>
+            </phrase>
+            <phrase id="0">
+                <text>sad_b2_maxim_dialog_21_0</text>
+                <next>1</next>
+                <next>2</next>
+            </phrase>
+        </phrase_list>
+    </dialog>
+    <dialog id="sad_maxim_about_cowboy_1">
+        <has_info>sad_cowboy_rob_actor</has_info>
+        <dont_has_info>sad_actor_told_maxim_about_cowboy</dont_has_info>
+        <dont_has_info>sad_af_oasis_heart_have</dont_has_info>
+        <dont_has_info>sad_ran_cowboy_gone</dont_has_info>
+        <dont_has_info>sad_volodya_ready_to_go</dont_has_info>
+        <phrase_list>
+            <phrase id="11">
+                <text>sad_maxim_about_cowboy_1_11</text>
+                <next>111</next>
+            </phrase>
+            <phrase id="1">
+                <text>sad_maxim_about_cowboy_1_1</text>
+                <next>11</next>
+            </phrase>
+            <phrase id="111">
+                <text>sad_maxim_about_cowboy_1_111</text>
+                <action>dialogs_sad.sad_maxim_key_transfer</action>
+                <give_info>sad_actor_told_maxim_about_cowboy</give_info>
+            </phrase>
+            <phrase id="0">
+                <text>sad_maxim_about_cowboy_1_0</text>
+                <next>1</next>
+            </phrase>
+        </phrase_list>
+    </dialog>
+    <dialog id="sad_volodya_dialog_start">
+        <phrase_list>
+            <phrase id="0">
+                <text />
+                <next>1</next>
+            </phrase>
+            <phrase id="1">
+                <text />
+            </phrase>
+        </phrase_list>
+    </dialog>
+    <dialog id="sad_volodya_dialog_2">
+        <has_info>sad_volodya_ready_to_go</has_info>
+        <dont_has_info>sad_volodya_arrive_ran</dont_has_info>
+        <dont_has_info>sad_actor_cancel_volodyas_help</dont_has_info>
+        <phrase_list>
+            <phrase id="0">
+                <text>sad_volodya_dialog_2_0</text>
+                <action>dialogs.break_dialog</action>
+                <give_info>sad_volodya_arrive_ran</give_info>
+            </phrase>
+        </phrase_list>
+    </dialog>
+    <dialog id="sad_volodya_dialog_3">
+        <has_info>sad_cowboy_rob_actor</has_info>
+        <dont_has_info>sad_ran_cowboy_gone</dont_has_info>
+        <dont_has_info>sad_actor_told_maxim_about_cowboy</dont_has_info>
+        <dont_has_info>sad_volodya_ready_to_go</dont_has_info>
+        <phrase_list>
+            <phrase id="0">
+                <text>sad_volodya_dialog_3_0</text>
+                <next>1</next>
+            </phrase>
+            <phrase id="1">
+                <text>sad_volodya_dialog_3_1</text>
+                <next>11</next>
+            </phrase>
+            <phrase id="11">
+                <text>sad_volodya_dialog_3_11</text>
+                <next>111</next>
+            </phrase>
+            <phrase id="111">
+                <text>sad_volodya_dialog_3_111</text>
+                <give_info>sad_volodya_ready_to_go</give_info>
+            </phrase>
+        </phrase_list>
+    </dialog>
+    <dialog id="sad_b2_trader_nauchny_1">
+        <has_info>sad_nauchny_task_active</has_info>
+        <dont_has_info>sad_trader_told_about_nauchny</dont_has_info>
+        <phrase_list>
+            <phrase id="1">
+                <text>sad_b2_trader_nauchny_1_1</text>
+                <give_info>sad_trader_told_about_nauchny</give_info>
+            </phrase>
+            <phrase id="0">
+                <text>sad_b2_trader_nauchny_1_0</text>
+                <next>1</next>
+            </phrase>
+        </phrase_list>
+    </dialog>
+    <dialog id="sad_atr_about_upgr">
+        <dont_has_info>sad_told_about_upgr</dont_has_info>
+        <phrase_list>
+            <phrase id="1">
+                <text>sad_atr_about_upgr_1</text>
+                <give_info>sad_artefuck_can_upgrade</give_info>
+                <give_info>sad_told_about_upgr</give_info>
+            </phrase>
+            <phrase id="0">
+                <text>sad_atr_about_upgr_0</text>
+                <next>1</next>
+            </phrase>
+        </phrase_list>
+    </dialog>
+    <dialog id="sad_atr_about_vofka">
+        <precondition>dialogs_sad.sad_actor_has_vofka_pda</precondition>
+        <has_info>sad_atr_trader_meeted</has_info>
+        <phrase_list>
+            <phrase id="1">
+                <text>sad_atr_about_vofka_1</text>
+                <next>11</next>
+            </phrase>
+            <phrase id="11">
+                <text>sad_atr_about_vofka_11</text>
+                <next>111</next>
+            </phrase>
+            <phrase id="111">
+                <text>sad_atr_about_vofka_111</text>
+                <next>1111</next>
+            </phrase>
+            <phrase id="1111">
+                <text>sad_atr_about_vofka_1111</text>
+                <action>dialogs_sad.sad_vofka_pda_transfer_2</action>
+            </phrase>
+            <phrase id="0">
+                <text>sad_atr_about_vofka_0</text>
+                <next>1</next>
+            </phrase>
+        </phrase_list>
+    </dialog>
+    <dialog id="sad_b2_tech_about_job">
+        <has_info>sad_maxim_actor_help_agree</has_info>
+        <dont_has_info>sad_b2_tech_gena_task_give</dont_has_info>
+        <dont_has_info>sad_b2_tech_gena_task_fail</dont_has_info>
+        <dont_has_info>sad_sim_7_gena_healed</dont_has_info>
+        <phrase_list>
+            <phrase id="12">
+                <text>sad_b2_tech_about_job_12</text>
+            </phrase>
+            <phrase id="1">
+                <text>sad_b2_tech_about_job_1</text>
+                <dont_has_info>sad_sim_7_gena_dead</dont_has_info>
+                <next>11</next>
+                <next>12</next>
+            </phrase>
+            <phrase id="2">
+                <text>sad_b2_tech_about_job_2</text>
+                <dont_has_info>sad_sim_7_gena_healed</dont_has_info>
+                <give_info>sad_b2_tech_gena_task_fail</give_info>
+                <has_info>sad_sim_7_gena_dead</has_info>
+            </phrase>
+            <phrase id="11">
+                <text>sad_b2_tech_about_job_11</text>
+                <action>dialogs_sad.sad_b2_tech_give_gena_task</action>
+                <give_info>sad_b2_tech_gena_task_give</give_info>
+            </phrase>
+            <phrase id="0">
+                <text>sad_b2_tech_about_job_0</text>
+                <next>1</next>
+                <next>2</next>
+            </phrase>
+        </phrase_list>
+    </dialog>
+    <dialog id="sad_b2_tech_gena_dead">
+        <has_info>sad_b2_tech_gena_task_give</has_info>
+        <has_info>sad_sim_7_gena_dead</has_info>
+        <has_info>sad_sim_7_gena_founded</has_info>
+        <dont_has_info>sad_b2_tech_gena_task_fail</dont_has_info>
+        <dont_has_info>sad_b2_tech_gena_task_complete</dont_has_info>
+        <dont_has_info>sad_sim_7_gena_healed</dont_has_info>
+        <phrase_list>
+            <phrase id="0">
+                <text>sad_b2_tech_gena_dead_0</text>
+                <next>1</next>
+            </phrase>
+            <phrase id="1">
+                <text>sad_b2_tech_gena_dead_1</text>
+                <next>11</next>
+            </phrase>
+            <phrase id="11">
+                <text>sad_b2_tech_gena_dead_11</text>
+                <next>111</next>
+            </phrase>
+            <phrase id="111">
+                <text>sad_b2_tech_gena_dead_111</text>
+                <give_info>sad_b2_tech_gena_task_fail</give_info>
+            </phrase>
+        </phrase_list>
+    </dialog>
+    <dialog id="sad_b2_tech_told_about_loh">
+        <has_info>sad_sim_7_gena_tell_tech</has_info>
+        <dont_has_info>sad_b2_tech_gena_task_fail</dont_has_info>
+        <dont_has_info>sad_b2_tech_gena_task_complete</dont_has_info>
+        <phrase_list>
+            <phrase id="11">
+                <text>sad_b2_tech_told_about_loh_11</text>
+                <next>111</next>
+            </phrase>
+            <phrase id="1">
+                <text>sad_b2_tech_told_about_loh_1</text>
+                <next>11</next>
+            </phrase>
+            <phrase id="0">
+                <text>sad_b2_tech_told_about_loh_0</text>
+                <next>1</next>
+            </phrase>
+            <phrase id="111">
+                <text>sad_b2_tech_told_about_loh_111</text>
+                <give_info>sad_b2_tech_gena_task_fail</give_info>
+            </phrase>
+        </phrase_list>
+    </dialog>
+    <dialog id="sad_b2_tech_util_1">
+        <dont_has_info>sad_b2_tech_util_start</dont_has_info>
+        <phrase_list>
+            <phrase id="1">
+                <text>sad_b2_tech_util_1_1</text>
+                <give_info>sad_b2_tech_util_start</give_info>
+            </phrase>
+            <phrase id="0">
+                <text>sad_b2_tech_util_1_0</text>
+                <next>1</next>
+            </phrase>
+        </phrase_list>
+    </dialog>
+    <dialog id="sad_b2_tech_util_2">
+        <has_info>sad_b2_util_has_money</has_info>
+        <has_info>sad_b2_tech_util_start</has_info>
+        <phrase_list>
+            <phrase id="1">
+                <text>sad_b2_tech_util_2_1</text>
+                <action>dialogs_sad.sad_b2_tech_util_give_money</action>
+                <disable_info>sad_b2_util_has_money</disable_info>
+            </phrase>
+            <phrase id="0">
+                <text>sad_b2_tech_util_2_0</text>
+                <next>1</next>
+            </phrase>
+        </phrase_list>
+    </dialog>
+    <dialog id="sad_b2_tech_detector_3">
+        <has_info>sad_teledoc_give</has_info>
+        <has_info>sad_teledoc_stuff_has</has_info>
+        <dont_has_info>sad_teledoc_give_stuff</dont_has_info>
+        <phrase_list>
+            <phrase id="1">
+                <text>sad_b2_tech_detector_3_1</text>
+                <action>dialogs_sad.sad_actor_transfer_docs_stuff</action>
+                <give_info>sad_teledoc_give_stuff</give_info>
+            </phrase>
+            <phrase id="0">
+                <text>sad_b2_tech_detector_3_0</text>
+                <next>1</next>
+            </phrase>
+        </phrase_list>
+    </dialog>
+    <dialog id="sad_b2_tech_cancel_wpn">
+        <has_info>sad_b2_tech_give_weapon_task</has_info>
+        <dont_has_info>sad_b2_tech_wpn_task_done</dont_has_info>
+        <dont_has_info>sad_b2_tech_wpn_task_cancel</dont_has_info>
+        <phrase_list>
+            <phrase id="1">
+                <text>sad_b2_tech_cancel_wpn_1</text>
+                <next>10</next>
+                <next>11</next>
+                <next>12</next>
+            </phrase>
+            <phrase id="10">
+                <text>sad_b2_tech_cancel_wpn_10</text>
+                <precondition>dialogs_sad.sad_actor_has_luty_stvol</precondition>
+                <next>101</next>
+            </phrase>
+            <phrase id="11">
+                <text>sad_b2_tech_cancel_wpn_11</text>
+                <next>111</next>
+            </phrase>
+            <phrase id="12">
+                <text>sad_b2_tech_cancel_wpn_12</text>
+            </phrase>
+            <phrase id="111">
+                <text>sad_b2_tech_cancel_wpn_111</text>
+                <give_info>sad_b2_tech_wpn_task_cancel</give_info>
+            </phrase>
+            <phrase id="101">
+                <text>sad_b2_tech_cancel_wpn_101</text>
+                <action>dialogs_sad.sad_actor_transfer_luty_stvol</action>
+                <give_info>sad_b2_tech_wpn_task_done</give_info>
+            </phrase>
+            <phrase id="0">
+                <text>sad_b2_tech_cancel_wpn_0</text>
+                <next>1</next>
+            </phrase>
+        </phrase_list>
+    </dialog>
+    <dialog id="sad_b2_tech_have_stuff">
+        <has_info>sad_sim_7_gena_has_stuff</has_info>
+        <has_info>sad_b2_tech_gena_task_give</has_info>
+        <dont_has_info>sad_b2_tech_gena_task_complete</dont_has_info>
+        <dont_has_info>sad_b2_tech_gena_task_fail</dont_has_info>
+        <phrase_list>
+            <phrase id="111">
+                <text>sad_b2_tech_have_stuff_111</text>
+            </phrase>
+            <phrase id="121">
+                <text>sad_b2_tech_have_stuff_121</text>
+            </phrase>
+            <phrase id="12">
+                <text>sad_b2_tech_have_stuff_12</text>
+                <dont_has_info>sad_gena_killed_by_actor</dont_has_info>
+                <next>121</next>
+            </phrase>
+            <phrase id="13">
+                <text>sad_b2_tech_have_stuff_13</text>
+                <next>131</next>
+            </phrase>
+            <phrase id="131">
+                <text>sad_b2_tech_have_stuff_131</text>
+            </phrase>
+            <phrase id="1">
+                <text>sad_b2_tech_have_stuff_1</text>
+                <action>dialogs_sad.sad_b2_tech_reward_transfer</action>
+                <next>11</next>
+                <next>12</next>
+                <next>13</next>
+            </phrase>
+            <phrase id="11">
+                <text>sad_b2_tech_have_stuff_11</text>
+                <has_info>sad_gena_killed_by_actor</has_info>
+                <next>111</next>
+            </phrase>
+            <phrase id="0">
+                <text>sad_b2_tech_have_stuff_0</text>
+                <action>dialogs_sad.sad_b2_tech_stuff_transfer</action>
+                <give_info>sad_b2_tech_gena_task_complete</give_info>
+                <next>1</next>
+            </phrase>
+        </phrase_list>
+    </dialog>
+    <dialog id="sad_b1_mutny_dialog_13">
+        <has_info>sad_b1_mutny_meeted</has_info>
+        <has_info>sad_b1_mutny_told_about_flesh</has_info>
+        <dont_has_info>sad_b1_mutny_flesh_task_given</dont_has_info>
+        <dont_has_info>sad_b1_mutny_flesh_qA_done</dont_has_info>
+        <dont_has_info>sad_b1_mutny_flesh_task_complete</dont_has_info>
+        <dont_has_info>sad_b1_mutny_flesh_task_fail</dont_has_info>
+        <phrase_list>
+            <phrase id="1">
+                <text>sad_b1_mutny_dialog_13_1</text>
+            </phrase>
+            <phrase id="0">
+                <text>sad_b1_mutny_dialog_13_0</text>
+                <give_info>sad_b1_mutny_flesh_qA_done</give_info>
+                <next>1</next>
+            </phrase>
+        </phrase_list>
+    </dialog>
+    <dialog id="sad_atr_guard_open_door">
+        <dont_has_info>sad_atr_open_ze_dver</dont_has_info>
+        <phrase_list>
+            <phrase id="1">
+                <text>sad_atr_guard_open_door_1</text>
+                <give_info>sad_atr_open_ze_dver</give_info>
+            </phrase>
+            <phrase id="0">
+                <text>sad_atr_guard_open_door_0</text>
+                <next>1</next>
+            </phrase>
+        </phrase_list>
+    </dialog>
+    <dialog id="sad_b2_trader_nauchny_2">
+        <has_info>sad_nauchny_task_agree</has_info>
+        <dont_has_info>sad_nauchny_take_bomba</dont_has_info>
+        <phrase_list>
+            <phrase id="1">
+                <text>sad_b2_trader_nauchny_2_1</text>
+                <give_info>sad_nauchny_take_bomba</give_info>
+            </phrase>
+            <phrase id="0">
+                <text>sad_b2_trader_nauchny_2_0</text>
+                <next>1</next>
+            </phrase>
+        </phrase_list>
+    </dialog>
+    <dialog id="sad_b2_trader_sell_stuff">
+        <precondition>dialogs_sad.sad_b2_trader_sell_stuff_check</precondition>
+        <phrase_list>
+            <phrase id="131">
+                <text>sad_b2_trader_sell_stuff_131</text>
+                <next>1311</next>
+            </phrase>
+            <phrase id="1311">
+                <text>sad_b2_trader_sell_stuff_1311</text>
+                <next>13111</next>
+            </phrase>
+            <phrase id="13111">
+                <text>sad_b2_trader_sell_stuff_13111</text>
+                <action>dialogs_sad.sad_b2_trader_saigak_reward</action>
+            </phrase>
+            <phrase id="111">
+                <text>sad_b2_trader_sell_stuff_111</text>
+                <action>dialogs_sad.sad_b2_trader_killer_pda</action>
+            </phrase>
+            <phrase id="141">
+                <text>sad_b2_trader_sell_stuff_141</text>
+                <dont_has_info>sad_told_trader_about_docs</dont_has_info>
+                <give_info>sad_told_trader_about_docs</give_info>
+            </phrase>
+            <phrase id="142">
+                <text>sad_b2_trader_sell_stuff_142</text>
+                <has_info>sad_told_trader_about_docs</has_info>
+            </phrase>
+            <phrase id="121">
+                <text>sad_b2_trader_sell_stuff_121</text>
+                <next>1211</next>
+                <next>1212</next>
+            </phrase>
+            <phrase id="1212">
+                <text>sad_b2_trader_sell_stuff_1212</text>
+                <next>12121</next>
+            </phrase>
+            <phrase id="12121">
+                <text>sad_b2_trader_sell_stuff_12121</text>
+            </phrase>
+            <phrase id="1211">
+                <text>sad_b2_trader_sell_stuff_1211</text>
+                <action>dialogs_sad.sad_radio_plant_transfer</action>
+                <give_info>sad_b2_trader_plant_give</give_info>
+            </phrase>
+            <phrase id="13">
+                <text>sad_b2_trader_sell_stuff_13</text>
+                <precondition>dialogs_sad.sad_has_saigak_pda</precondition>
+                <next>131</next>
+            </phrase>
+            <phrase id="14">
+                <text>sad_b2_trader_sell_stuff_14</text>
+                <precondition>dialogs_sad.sad_actor_has_docs</precondition>
+                <next>141</next>
+                <next>142</next>
+            </phrase>
+            <phrase id="12">
+                <text>sad_b2_trader_sell_stuff_12</text>
+                <precondition>dialogs_sad.sad_has_radio_plant</precondition>
+                <next>121</next>
+            </phrase>
+            <phrase id="11">
+                <text>sad_b2_trader_sell_stuff_11</text>
+                <precondition>dialogs_sad.sad_has_merc_pda</precondition>
+                <next>111</next>
+            </phrase>
+            <phrase id="17">
+                <text>sad_b2_trader_sell_stuff_17</text>
+                <precondition>dialogs_sad.sad_actor_has_fedor_flesh</precondition>
+                <next>171</next>
+            </phrase>
+            <phrase id="171">
+                <text>sad_b2_trader_sell_stuff_171</text>
+                <next>1711</next>
+                <next>1512</next>
+            </phrase>
+            <phrase id="1711">
+                <text>sad_b2_trader_sell_stuff_1711</text>
+                <action>dialogs_sad.sad_b2_trader_fedor_flesh_transfer</action>
+            </phrase>
+            <phrase id="15">
+                <text>sad_b2_trader_sell_stuff_15</text>
+                <precondition>dialogs_sad.sad_actor_has_mudak_pda</precondition>
+                <next>151</next>
+            </phrase>
+            <phrase id="151">
+                <text>sad_b2_trader_sell_stuff_151</text>
+                <next>1511</next>
+                <next>1512</next>
+            </phrase>
+            <phrase id="1511">
+                <text>sad_b2_trader_sell_stuff_1511</text>
+                <action>dialogs_sad.sad_b2_trader_mudak_pda_transfer</action>
+            </phrase>
+            <phrase id="1">
+                <text>sad_b2_trader_sell_stuff_1</text>
+                <next>11</next>
+                <next>12</next>
+                <next>13</next>
+                <next>14</next>
+                <next>15</next>
+                <next>16</next>
+                <next>17</next>
+                <next>18</next>
+            </phrase>
+            <phrase id="18">
+                <text>sad_b2_trader_sell_stuff_18</text>
+            </phrase>
+            <phrase id="0">
+                <text>sad_b2_trader_sell_stuff_0</text>
+                <next>1</next>
+            </phrase>
+            <phrase id="16">
+                <text>sad_b2_trader_sell_stuff_16</text>
+                <precondition>dialogs_sad.sad_actor_has_vofka_pda</precondition>
+                <next>161</next>
+            </phrase>
+            <phrase id="1512">
+                <text>sad_b2_trader_sell_stuff_1512</text>
+            </phrase>
+            <phrase id="1611">
+                <text>sad_b2_trader_sell_stuff_1611</text>
+                <action>dialogs_sad.sad_vofka_pda_transfer_1</action>
+            </phrase>
+            <phrase id="161">
+                <text>sad_b2_trader_sell_stuff_161</text>
+                <next>1611</next>
+                <next>1512</next>
+            </phrase>
+        </phrase_list>
+    </dialog>
+    <dialog id="upgrade_artefuck_dialog">
+        <precondition>dialog_atr.atr_dialog_precond</precondition>
+        <init_func>dialog_atr.init_new_dialog</init_func>
+    </dialog>
+    <dialog id="sad_artefuck_upgrade">
+	<precondition>dialog_atr.atr_dialog_precond</precondition>
+        <phrase_list>
+            <phrase id="0">		
+                <text>atr_actor_start</text>
+                <next>1</next>
+            </phrase>
+            <phrase id="1">
+                <text />
+                <script_text>dialog_atr.script_text_trader</script_text>
+		<next>100</next>
+		<next>101</next>
+		<next>102</next>
+		<next>103</next>
+		<next>104</next>
+		<next>105</next>
+		<next>106</next>
+		<next>107</next>
+		<next>108</next>
+		<next>109</next>
+		<next>110</next>
+		<next>111</next>
+		<next>112</next>
+		<next>113</next>
+		<next>114</next>
+		<next>115</next>
+		<next>116</next>
+		<next>117</next>
+		<next>118</next>
+		<next>119</next>
+		<next>120</next>
+		<next>121</next>
+		<next>122</next>
+		<next>199</next>
+            </phrase>
+            <phrase id="100">		
+		<precondition>dialog_atr.precondition_has_items</precondition>
+		<action>dialog_atr.action_zakaz</action>
+		<text>st_af_electra_sparkler_name</text>
+                <next>1111</next>
+            </phrase>
+            <phrase id="101">		
+		<precondition>dialog_atr.precondition_has_items</precondition>
+		<action>dialog_atr.action_zakaz</action>
+		<text>st_af_electra_flash_name</text>
+                <next>1111</next>
+            </phrase>
+            <phrase id="102">		
+		<precondition>dialog_atr.precondition_has_items</precondition>
+		<action>dialog_atr.action_zakaz</action>
+		<text>st_af_electra_moonlight_name</text>
+                <next>1111</next>
+            </phrase>
+            <phrase id="103">		
+		<precondition>dialog_atr.precondition_has_items</precondition>
+		<action>dialog_atr.action_zakaz</action>
+		<text>st_af_dummy_battery_name</text>
+                <next>1111</next>
+            </phrase>
+            <phrase id="104">		
+		<precondition>dialog_atr.precondition_has_items</precondition>
+		<action>dialog_atr.action_zakaz</action>
+		<text>st_af_dummy_dummy_name</text>
+                <next>1111</next>
+            </phrase>
+            <phrase id="105">		
+		<precondition>dialog_atr.precondition_has_items</precondition>
+		<action>dialog_atr.action_zakaz</action>
+		<text>st_af_ice_name</text>
+                <next>1111</next>
+            </phrase>
+            <phrase id="106">		
+		<precondition>dialog_atr.precondition_has_items</precondition>
+		<action>dialog_atr.action_zakaz</action>
+		<text>st_af_gold_fish_name</text>
+                <next>1111</next>
+            </phrase>
+            <phrase id="107">		
+		<precondition>dialog_atr.precondition_has_items</precondition>
+		<action>dialog_atr.action_zakaz</action>
+		<text>st_af_dummy_glassbeads_name</text>
+                <next>1111</next>
+            </phrase>
+            <phrase id="108">		
+		<precondition>dialog_atr.precondition_has_items</precondition>
+	        <action>dialog_atr.action_zakaz</action>
+		<text>st_af_glass_name</text>
+                <next>1111</next>
+            </phrase>
+            <phrase id="109">		
+		<precondition>dialog_atr.precondition_has_items</precondition>
+		<action>dialog_atr.action_zakaz</action>
+		<text>st_af_soul_name</text>
+                <next>1111</next>
+            </phrase>
+            <phrase id="110">		
+		<precondition>dialog_atr.precondition_has_items</precondition>
+		<action>dialog_atr.action_zakaz</action>
+		<text>st_af_fireball_name</text>
+                <next>1111</next>
+            </phrase>
+	    <phrase id="111">		
+		<precondition>dialog_atr.precondition_has_items</precondition>
+		<action>dialog_atr.action_zakaz</action>
+		<text>st_af_mincer_meat_name</text>
+                <next>1111</next>
+            </phrase>
+	    <phrase id="112">		
+		<precondition>dialog_atr.precondition_has_items</precondition>
+		<action>dialog_atr.action_zakaz</action>
+		<text>st_af_fuzz_kolobok_name</text>
+                <next>1111</next>
+            </phrase>
+	    <phrase id="113">		
+		<precondition>dialog_atr.precondition_has_items</precondition>
+		<action>dialog_atr.action_zakaz</action>
+		<text>st_af_gravi_name</text>
+                <next>1111</next>
+            </phrase>
+	    <phrase id="114">		
+		<precondition>dialog_atr.precondition_has_items</precondition>
+		<action>dialog_atr.action_zakaz</action>
+		<text>st_af_eye_name</text>
+                <next>1111</next>
+            </phrase>
+	    <phrase id="115">		
+		<precondition>dialog_atr.precondition_has_items</precondition>
+		<action>dialog_atr.action_zakaz</action>
+		<text>st_af_medusa_name</text>
+                <next>1111</next>
+            </phrase>
+	    <phrase id="116">		
+		<precondition>dialog_atr.precondition_has_items</precondition>
+		<action>dialog_atr.action_zakaz</action>
+		<text>st_af_baloon_name</text>
+                <next>1111</next>
+            </phrase>
+	    <phrase id="117">		
+		<precondition>dialog_atr.precondition_has_items</precondition>
+		<action>dialog_atr.action_zakaz</action>
+		<text>st_af_cristall_flower_name</text>
+                <next>1111</next>
+            </phrase>
+	    <phrase id="118">		
+		<precondition>dialog_atr.precondition_has_items</precondition>
+		<action>dialog_atr.action_zakaz</action>
+		<text>st_af_fire_name</text>
+                <next>1111</next>
+            </phrase>
+	    <phrase id="119">		
+		<precondition>dialog_atr.precondition_has_items</precondition>
+		<action>dialog_atr.action_zakaz</action>
+		<text>st_af_night_star_name</text>
+                <next>1111</next>
+            </phrase>
+	    <phrase id="120">		
+		<precondition>dialog_atr.precondition_has_items</precondition>
+		<action>dialog_atr.action_zakaz</action>
+		<text>st_af_cristall_name</text>
+                <next>1111</next>
+            </phrase>
+	    <phrase id="121">		
+		<precondition>dialog_atr.precondition_has_items</precondition>
+		<action>dialog_atr.action_zakaz</action>
+		<text>st_af_blood_name</text>
+                <next>1111</next>
+            </phrase>
+	    <phrase id="122">		
+		<precondition>dialog_atr.precondition_has_items</precondition>
+		<action>dialog_atr.action_zakaz</action>
+		<text>st_af_zakrut_name</text>
+                <next>1111</next>
+            </phrase>
+	    <phrase id="199">		
+		<text>atr_next_time_general</text>
+            </phrase>
+            <phrase id="1111">		
+		<text>atr_trader_come_later</text>
+            </phrase>
+        </phrase_list>
+    </dialog>
+    <dialog id="sad_vasya_dialog">
+        <phrase_list>
+            <phrase id="111211">
+                <text>sad_vasya_dialog_111211</text>
+                <action>dialogs.break_dialog</action>
+            </phrase>
+            <phrase id="11121">
+                <text>sad_vasya_dialog_11121</text>
+                <next>111211</next>
+            </phrase>
+            <phrase id="11">
+                <text>sad_vasya_dialog_11</text>
+                <give_info>sad_vasya_meeted</give_info>
+            </phrase>
+            <phrase id="2">
+                <text />
+                <has_info>sad_vasya_meeted</has_info>
+                <next>21</next>
+            </phrase>
+            <phrase id="21">
+                <text>sad_vasya_dialog_21</text>
+            </phrase>
+            <phrase id="1">
+                <text />
+                <dont_has_info>sad_vasya_meeted</dont_has_info>
+                <next>11</next>
+            </phrase>
+            <phrase id="0">
+                <text />
+                <give_info>sad_vasya_used</give_info>
+                <next>1</next>
+                <next>2</next>
+            </phrase>
+        </phrase_list>
+    </dialog>
+    <dialog id="sad_b1_mutny_dialog_12">
+        <has_info>sad_b1_mutny_meeted</has_info>
+        <has_info>sad_b1_mutny_told_about_flesh</has_info>
+        <dont_has_info>sad_b1_mutny_flesh_task_complete</dont_has_info>
+        <dont_has_info>sad_b1_mutny_flesh_qB_done</dont_has_info>
+        <dont_has_info>sad_b1_mutny_flesh_task_fail</dont_has_info>
+        <phrase_list>
+            <phrase id="2">
+                <text>sad_b1_mutny_dialog_12_2</text>
+                <has_info>sad_b1_mutny_flesh_task_given</has_info>
+            </phrase>
+            <phrase id="1">
+                <text>sad_b1_mutny_dialog_12_1</text>
+                <dont_has_info>sad_b1_mutny_flesh_task_given</dont_has_info>
+            </phrase>
+            <phrase id="0">
+                <text>sad_b1_mutny_dialog_12_0</text>
+                <give_info>sad_b1_mutny_flesh_qB_done</give_info>
+                <next>1</next>
+                <next>2</next>
+            </phrase>
+        </phrase_list>
+    </dialog>
+    <dialog id="sad_b1_mutny_about_place">
+        <has_info>sad_b1_mutny_meeted</has_info>
+        <dont_has_info>sad_b1_mutny_told_about_place</dont_has_info>
+        <phrase_list>
+            <phrase id="1">
+                <text>sad_b1_mutny_about_place_1</text>
+                <give_info>sad_b1_mutny_told_about_place</give_info>
+            </phrase>
+            <phrase id="0">
+                <text>sad_b1_mutny_about_place_0</text>
+                <next>1</next>
+            </phrase>
+        </phrase_list>
+    </dialog>
+    <dialog id="sad_nauchny_dialog_3">
+        <has_info>sad_nauchny_bomba_ready</has_info>
+        <dont_has_info>sad_nauchny_bomba_done</dont_has_info>
+        <phrase_list>
+            <phrase id="1">
+                <text>sad_nauchny_dialog_3_1</text>
+                <next>11</next>
+            </phrase>
+            <phrase id="11">
+                <text>sad_nauchny_dialog_3_11</text>
+                <action>dialogs.break_dialog</action>
+                <give_info>sad_nauchny_bomba_done</give_info>
+            </phrase>
+            <phrase id="0">
+                <text>sad_nauchny_dialog_3_0</text>
+                <next>1</next>
+            </phrase>
+        </phrase_list>
+    </dialog>
+    <dialog id="sad_nauchny_dialog_start">
+        <phrase_list>
+            <phrase id="0">
+                <text />
+                <next>1</next>
+            </phrase>
+            <phrase id="11">
+                <text>sad_nauchny_dialog_start_11</text>
+                <dont_has_info>sad_nauchny_task_complete</dont_has_info>
+            </phrase>
+            <phrase id="12">
+                <text>sad_nauchny_dialog_start_12</text>
+                <dont_has_info>sad_nauchny_get_reward</dont_has_info>
+                <give_info>sad_nauchny_get_reward</give_info>
+                <has_info>sad_nauchny_task_complete</has_info>
+            </phrase>
+            <phrase id="13">
+                <text>sad_nauchny_dialog_start_13</text>
+                <has_info>sad_nauchny_get_reward</has_info>
+            </phrase>
+            <phrase id="1">
+                <text />
+                <next>11</next>
+                <next>12</next>
+                <next>13</next>
+            </phrase>
+        </phrase_list>
+    </dialog>
+    <dialog id="sad_ran_guard_first_talk">
+        <phrase_list>
+            <phrase id="11">
+                <text>sad_ran_guard_first_talk_11</text>
+                <next>111</next>
+            </phrase>
+            <phrase id="111">
+                <text>sad_ran_guard_first_talk_111</text>
+                <action>dialogs.break_dialog</action>
+                <give_info>sad_ran_guard_warned</give_info>
+            </phrase>
+            <phrase id="0">
+                <text>sad_ran_guard_first_talk_0</text>
+                <next>1</next>
+            </phrase>
+            <phrase id="1">
+                <text>sad_ran_guard_first_talk_1</text>
+                <next>11</next>
+            </phrase>
+        </phrase_list>
+    </dialog>
+    <dialog id="sad_nauchny_dialog_4">
+        <has_info>sad_nauchny_task_complete</has_info>
+        <dont_has_info>sad_nauchny_told_about_lab</dont_has_info>
+        <phrase_list>
+            <phrase id="11">
+                <text>sad_nauchny_dialog_4_11</text>
+                <next>111</next>
+            </phrase>
+            <phrase id="111">
+                <text>sad_nauchny_dialog_4_111</text>
+                <next>1111</next>
+            </phrase>
+            <phrase id="1111">
+                <text>sad_nauchny_dialog_4_1111</text>
+                <next>11111</next>
+            </phrase>
+            <phrase id="11111">
+                <text>sad_nauchny_dialog_4_11111</text>
+                <give_info>sad_nauchny_told_about_lab</give_info>
+            </phrase>
+            <phrase id="0">
+                <text>sad_nauchny_dialog_4_0</text>
+                <next>1</next>
+            </phrase>
+            <phrase id="1">
+                <text>sad_nauchny_dialog_4_1</text>
+                <next>11</next>
+            </phrase>
+        </phrase_list>
+    </dialog>
+    <dialog id="sad_nauchny_dialog_1">
+        <dont_has_info>sad_nauchny_task_agree</dont_has_info>
+        <phrase_list>
+            <phrase id="11">
+                <text>sad_nauchny_dialog_1_11</text>
+                <next>111</next>
+            </phrase>
+            <phrase id="111">
+                <text>sad_nauchny_dialog_1_111</text>
+                <give_info>sad_nauchny_start_arrive_b2</give_info>
+                <next>1111</next>
+                <next>1112</next>
+            </phrase>
+            <phrase id="11111">
+                <text>sad_nauchny_dialog_1_11111</text>
+                <give_info>sad_nauchny_task_agree</give_info>
+            </phrase>
+            <phrase id="1111">
+                <text>sad_nauchny_dialog_1_1111</text>
+                <next>11111</next>
+            </phrase>
+            <phrase id="1112">
+                <text>sad_nauchny_dialog_1_1112</text>
+                <action>dialogs.break_dialog</action>
+            </phrase>
+            <phrase id="0">
+                <text>sad_nauchny_dialog_1_0</text>
+                <next>1</next>
+            </phrase>
+            <phrase id="1">
+                <text>sad_nauchny_dialog_1_1</text>
+                <next>11</next>
+            </phrase>
+        </phrase_list>
+    </dialog>
+    <dialog id="sad_nauchny_dialog_2">
+        <precondition>dialogs_sad.sad_actor_has_bomba</precondition>
+        <dont_has_info>sad_ran_ucheny_go_position</dont_has_info>
+        <phrase_list>
+            <phrase id="0">
+                <text>sad_nauchny_dialog_2_0</text>
+                <next>1</next>
+            </phrase>
+            <phrase id="12">
+                <text>sad_nauchny_dialog_2_12</text>
+                <action>dialogs.break_dialog</action>
+                <dont_has_info>sad_turist_task_active</dont_has_info>
+            </phrase>
+            <phrase id="1">
+                <text>sad_nauchny_dialog_2_1</text>
+                <next>11</next>
+                <next>12</next>
+                <next>13</next>
+            </phrase>
+            <phrase id="11">
+                <text>sad_nauchny_dialog_2_11</text>
+                <action>dialogs.break_dialog</action>
+                <dont_has_info>sad_turist_task_active</dont_has_info>
+                <give_info>sad_ran_ucheny_go_position</give_info>
+            </phrase>
+            <phrase id="13">
+                <text>sad_nauchny_dialog_2_13</text>
+                <action>dialogs.break_dialog</action>
+                <has_info>sad_turist_task_active</has_info>
+            </phrase>
+        </phrase_list>
+    </dialog>
+    <dialog id="sad_b1_mudak_dialog_1">
+        <has_info>sad_b1_mudak_meeted</has_info>
+        <has_info>sad_sim_3_rob_agree</has_info>
+        <dont_has_info>sad_sim_3_rob_arrive</dont_has_info>
+        <phrase_list>
+            <phrase id="11">
+                <text>sad_b1_mudak_dialog_1_11</text>
+                <action>dialogs.break_dialog</action>
+                <give_info>sad_sim_3_rob_arrive</give_info>
+            </phrase>
+            <phrase id="2">
+                <text>sad_b1_mudak_dialog_1_2</text>
+                <precondition>dialogs_sad.is_not_sad_sim_3_rob_time</precondition>
+            </phrase>
+            <phrase id="1">
+                <text>sad_b1_mudak_dialog_1_1</text>
+                <precondition>dialogs_sad.is_sad_sim_3_rob_time</precondition>
+                <next>11</next>
+            </phrase>
+            <phrase id="0">
+                <text>sad_b1_mudak_dialog_1_0</text>
+                <next>1</next>
+                <next>2</next>
+            </phrase>
+        </phrase_list>
+    </dialog>
+    <dialog id="sad_uni_about_stalkers">
+        <dont_has_info>sad_ask_about_stalkers_done</dont_has_info>
+        <dont_has_info>sad_b1_mutny_meeted</dont_has_info>
+        <dont_has_info>sad_b2_maxim_meeted</dont_has_info>
+        <phrase_list>
+            <phrase id="1">
+                <text>sad_uni_about_stalkers_1</text>
+                <give_info>sad_ask_about_stalkers_done</give_info>
+                <give_info>sad_meet_mutny_task_give</give_info>
+            </phrase>
+            <phrase id="0">
+                <text>sad_uni_about_stalkers_0</text>
+                <next>1</next>
+            </phrase>
+        </phrase_list>
+    </dialog>
+    <dialog id="sad_atr_trader_start">
+        <phrase_list>
+            <phrase id="2">
+                <text />
+                <has_info>sad_atr_trader_meeted</has_info>
+                <has_info>sad_artefuck_ready</has_info>
+                <next>21</next>
+            </phrase>
+            <phrase id="3">
+                <text />
+                <dont_has_info>sad_artefuck_ready</dont_has_info>
+                <has_info>sad_atr_trader_meeted</has_info>
+                <next>31</next>
+            </phrase>
+            <phrase id="21">
+                <text>sad_atr_trader_start_21</text>
+                <action>dialog_atr.give_new_artefuck</action>
+            </phrase>
+            <phrase id="31">
+                <text>sad_atr_trader_start_31</text>
+            </phrase>
+            <phrase id="1">
+                <text />
+                <dont_has_info>sad_atr_trader_meeted</dont_has_info>
+                <next>11</next>
+            </phrase>
+            <phrase id="11">
+                <text>sad_atr_trader_start_11</text>
+                <give_info>sad_atr_trader_meeted</give_info>
+            </phrase>
+            <phrase id="0">
+                <text />
+                <next>1</next>
+                <next>2</next>
+                <next>3</next>
+            </phrase>
+        </phrase_list>
+    </dialog>
+    <dialog id="sad_turist_stay_here">
+        <has_info>sad_turist_task_active</has_info>
+        <dont_has_info>sad_turist_stay_here</dont_has_info>
+        <phrase_list>
+            <phrase id="0">
+                <text>sad_turist_stay_here_0</text>
+                <action>dialogs.break_dialog</action>
+                <give_info>sad_turist_stay_here</give_info>
+            </phrase>
+        </phrase_list>
+    </dialog>
+    <dialog id="sad_turist_step_back">
+        <has_info>sad_turist_task_active</has_info>
+        <dont_has_info>sad_turist_step_back</dont_has_info>
+        <phrase_list>
+            <phrase id="0">
+                <text>sad_turist_step_back_0</text>
+                <action>dialogs.break_dialog</action>
+                <give_info>sad_turist_step_back</give_info>
+            </phrase>
+        </phrase_list>
+    </dialog>
+    <dialog id="sad_turist_cmon">
+        <has_info>sad_turist_task_active</has_info>
+        <has_info>sad_turist_stay_here</has_info>
+        <phrase_list>
+            <phrase id="0">
+                <text>sad_turist_cmon_0</text>
+                <action>dialogs.break_dialog</action>
+                <disable_info>sad_turist_stay_here</disable_info>
+            </phrase>
+        </phrase_list>
+    </dialog>
+    <dialog id="sad_b1_mudak_about_stalkers">
+        <has_info>sad_b1_mudak_meeted</has_info>
+        <dont_has_info>sad_b1_mudak_told_about_stalkers</dont_has_info>
+        <phrase_list>
+            <phrase id="111">
+                <text>sad_b1_mudak_about_stalkers_111</text>
+                <precondition>dialogs_sad.is_sad_sim_3_rob_time</precondition>
+            </phrase>
+            <phrase id="112">
+                <text>sad_b1_mudak_about_stalkers_112</text>
+                <precondition>dialogs_sad.is_not_sad_sim_3_rob_time</precondition>
+            </phrase>
+            <phrase id="11">
+                <text>sad_b1_mudak_about_stalkers_11</text>
+                <give_info>sad_sim_3_rob_agree</give_info>
+                <next>111</next>
+                <next>112</next>
+            </phrase>
+            <phrase id="121">
+                <text>sad_b1_mudak_about_stalkers_121</text>
+            </phrase>
+            <phrase id="12">
+                <text>sad_b1_mudak_about_stalkers_12</text>
+                <next>121</next>
+            </phrase>
+            <phrase id="2">
+                <text>sad_b1_mudak_about_stalkers_2</text>
+                <give_info>sad_b1_mudak_told_about_stalkers</give_info>
+                <has_info>sad_sim_3_rob_agree</has_info>
+            </phrase>
+            <phrase id="1">
+                <text>sad_b1_mudak_about_stalkers_1</text>
+                <dont_has_info>sad_sim_3_rob_agree</dont_has_info>
+                <give_info>sad_b1_mudak_told_about_stalkers</give_info>
+                <next>11</next>
+                <next>12</next>
+            </phrase>
+            <phrase id="0">
+                <text>sad_b1_mudak_about_stalkers_0</text>
+                <next>1</next>
+                <next>2</next>
+            </phrase>
+        </phrase_list>
+    </dialog>
+    <dialog id="sad_turist_locman_1">
+        <dont_has_info>sad_turist_task_start</dont_has_info>
+        <phrase_list>
+            <phrase id="11">
+                <text>sad_turist_locman_1_11</text>
+                <next>111</next>
+            </phrase>
+            <phrase id="111">
+                <text>sad_turist_locman_1_111</text>
+                <next>1111</next>
+            </phrase>
+            <phrase id="11111">
+                <text>sad_turist_locman_1_11111</text>
+                <next>111111</next>
+                <next>12</next>
+            </phrase>
+            <phrase id="111111">
+                <text>sad_turist_locman_1_111111</text>
+                <give_info>sad_turist_task_start</give_info>
+                <next>1111111</next>
+            </phrase>
+            <phrase id="1">
+                <text>sad_turist_locman_1_1</text>
+                <next>11</next>
+                <next>12</next>
+            </phrase>
+            <phrase id="1111111">
+                <text>sad_turist_locman_1_1111111</text>
+                <next>11111111</next>
+            </phrase>
+            <phrase id="11111111">
+                <text>sad_turist_locman_1_11111111</text>
+                <action>dialogs.break_dialog</action>
+            </phrase>
+            <phrase id="12">
+                <text>sad_turist_locman_1_12</text>
+                <action>dialogs.break_dialog</action>
+            </phrase>
+            <phrase id="0">
+                <text>sad_turist_locman_1_0</text>
+                <next>1</next>
+            </phrase>
+            <phrase id="1111">
+                <text>sad_turist_locman_1_1111</text>
+                <next>11111</next>
+            </phrase>
+        </phrase_list>
+    </dialog>
+    <dialog id="sad_turist_locman_2">
+        <has_info>sad_turist_task_start</has_info>
+        <dont_has_info>sad_turist_task_done</dont_has_info>
+        <phrase_list>
+            <phrase id="111">
+                <text>sad_turist_locman_2_111</text>
+                <next>1111</next>
+            </phrase>
+            <phrase id="11">
+                <text>sad_turist_locman_2_11</text>
+                <next>111</next>
+            </phrase>
+            <phrase id="1">
+                <text />
+                <script_text>sad_turist.locman_scripted_text</script_text>
+                <next>11</next>
+            </phrase>
+            <phrase id="0">
+                <text>sad_turist_locman_2_0</text>
+                <next>1</next>
+            </phrase>
+            <phrase id="1111">
+                <text>sad_turist_locman_2_1111</text>
+                <action>dialogs_sad.sad_turist_reward</action>
+                <give_info>sad_turist_task_done</give_info>
+            </phrase>
+        </phrase_list>
+    </dialog>
+    <dialog id="sad_b1_mutny_about_dolg">
+        <has_info>sad_b1_mutny_meeted</has_info>
+        <dont_has_info>sad_b1_mutny_told_about_dolg</dont_has_info>
+        <phrase_list>
+            <phrase id="1">
+                <text>sad_b1_mutny_about_dolg_1</text>
+                <give_info>sad_b1_mutny_told_about_dolg</give_info>
+            </phrase>
+            <phrase id="0">
+                <text>sad_b1_mutny_about_dolg_0</text>
+                <next>1</next>
+            </phrase>
+        </phrase_list>
+    </dialog>
+    <dialog id="sad_volodya_after">
+        <phrase_list>
+            <phrase id="1">
+                <text />
+                <dont_has_info>sad_volodya_after_atak_meeted</dont_has_info>
+                <next>11</next>
+                <next>12</next>
+            </phrase>
+            <phrase id="11">
+                <text>sad_volodya_after_11</text>
+                <dont_has_info>sad_volodya_dead</dont_has_info>
+                <give_info>sad_volodya_after_atak_meeted</give_info>
+            </phrase>
+            <phrase id="12">
+                <text>sad_volodya_after_12</text>
+                <give_info>sad_volodya_after_atak_meeted</give_info>
+                <has_info>sad_volodya_dead</has_info>
+            </phrase>
+            <phrase id="2">
+                <text />
+                <has_info>sad_volodya_after_atak_meeted</has_info>
+                <next>21</next>
+            </phrase>
+            <phrase id="21">
+                <text>sad_volodya_after_21</text>
+            </phrase>
+            <phrase id="0">
+                <text />
+                <next>1</next>
+                <next>2</next>
+            </phrase>
+        </phrase_list>
+    </dialog>
+    <dialog id="sad_turist_info_health">
+        <precondition>dialogs_sad.sad_turist_health_not_perfect</precondition>
+        <precondition>dialogs_sad.sad_actor_has_any_medkit</precondition>
+        <phrase_list>
+            <phrase id="1">
+                <text>sad_turist_info_health_1</text>
+                <action>dialogs_sad.sad_turist_transfer_medkit</action>
+            </phrase>
+            <phrase id="0">
+                <text>sad_turist_info_health_0</text>
+                <next>1</next>
+            </phrase>
+        </phrase_list>
+    </dialog>
+    <dialog id="sad_volodya_dialog_1">
+        <has_info>sad_actor_told_maxim_about_cowboy</has_info>
+        <dont_has_info>sad_volodya_ready_to_go</dont_has_info>
+        <dont_has_info>sad_actor_cancel_volodyas_help</dont_has_info>
+        <dont_has_info>sad_ran_cowboy_gone</dont_has_info>
+        <phrase_list>
+            <phrase id="111">
+                <text>sad_volodya_dialog_1_111</text>
+                <give_info>sad_volodya_ready_to_go</give_info>
+            </phrase>
+            <phrase id="1">
+                <text>sad_volodya_dialog_1_1</text>
+                <next>11</next>
+            </phrase>
+            <phrase id="0">
+                <text>sad_volodya_dialog_1_0</text>
+                <next>1</next>
+            </phrase>
+            <phrase id="11">
+                <text>sad_volodya_dialog_1_11</text>
+                <next>111</next>
+            </phrase>
+        </phrase_list>
+    </dialog>
+    <dialog id="sad_b1_mutny_about_mudak">
+        <has_info>sad_mudak_pda_have</has_info>
+        <has_info>sad_b1_mutny_meeted</has_info>
+        <dont_has_info>sad_actor_told_mutny_about_mudak</dont_has_info>
+        <phrase_list>
+            <phrase id="1">
+                <text>sad_b1_mutny_about_mudak_1</text>
+                <next>11</next>
+            </phrase>
+            <phrase id="11">
+                <text>sad_b1_mutny_about_mudak_11</text>
+                <action>dialogs_sad.sad_mudak_pda_transfer</action>
+                <disable_info>sad_mudak_pda_have</disable_info>
+                <next>111</next>
+            </phrase>
+            <phrase id="111">
+                <text>sad_b1_mutny_about_mudak_111</text>
+                <action>dialogs_sad.sad_mudak_pda_reward</action>
+                <give_info>sad_actor_told_mutny_about_mudak</give_info>
+            </phrase>
+            <phrase id="0">
+                <text>sad_b1_mutny_about_mudak_0</text>
+                <next>1</next>
+            </phrase>
+        </phrase_list>
+    </dialog>
+    <dialog id="sad_atr_about_self">
+        <dont_has_info>sad_told_about_self</dont_has_info>
+        <phrase_list>
+            <phrase id="1">
+                <text>sad_atr_about_self_1</text>
+                <give_info>sad_told_about_self</give_info>
+            </phrase>
+            <phrase id="0">
+                <text>sad_atr_about_self_0</text>
+                <next>1</next>
+            </phrase>
+        </phrase_list>
+    </dialog>
+    <dialog id="sad_turist_vvodnaya">
+        <phrase_list>
+            <phrase id="121">
+                <text>sad_turist_vvodnaya_121</text>
+                <next>1211</next>
+                <next>1212</next>
+            </phrase>
+            <phrase id="111">
+                <text>sad_turist_vvodnaya_111</text>
+            </phrase>
+            <phrase id="151">
+                <text>sad_turist_vvodnaya_151</text>
+            </phrase>
+            <phrase id="1211">
+                <text>sad_turist_vvodnaya_1211</text>
+                <disable_info>turist_ignore_default</disable_info>
+                <disable_info>turist_ignore_by_dist_50</disable_info>
+                <give_info>turist_ignore_by_dist_30</give_info>
+                <next>111</next>
+            </phrase>
+            <phrase id="1212">
+                <text>sad_turist_vvodnaya_1212</text>
+                <disable_info>turist_ignore_default</disable_info>
+                <disable_info>turist_ignore_by_dist_30</disable_info>
+                <give_info>turist_ignore_by_dist_50</give_info>
+                <next>111</next>
+            </phrase>
+            <phrase id="12">
+                <text>sad_turist_vvodnaya_12</text>
+                <next>121</next>
+            </phrase>
+            <phrase id="1">
+                <text>sad_turist_vvodnaya_1</text>
+                <next>11</next>
+                <next>12</next>
+                <next>15</next>
+                <next>16</next>
+                <next>19</next>
+            </phrase>
+            <phrase id="11">
+                <text>sad_turist_vvodnaya_11</text>
+                <disable_info>turist_ignore_default</disable_info>
+                <give_info>turist_ignore_until_actor</give_info>
+                <has_info>turist_ignore_default</has_info>
+                <next>111</next>
+            </phrase>
+            <phrase id="161">
+                <text>sad_turist_vvodnaya_161</text>
+            </phrase>
+            <phrase id="16">
+                <text>sad_turist_vvodnaya_16</text>
+                <disable_info>turist_ignore_follow_actor_20</disable_info>
+                <has_info>turist_ignore_follow_actor_20</has_info>
+                <next>161</next>
+            </phrase>
+            <phrase id="15">
+                <text>sad_turist_vvodnaya_15</text>
+                <dont_has_info>turist_ignore_follow_actor_20</dont_has_info>
+                <give_info>turist_ignore_follow_actor_20</give_info>
+                <next>151</next>
+            </phrase>
+            <phrase id="0">
+                <text>sad_turist_vvodnaya_0</text>
+                <next>1</next>
+            </phrase>
+            <phrase id="19">
+                <text>sad_turist_vvodnaya_19</text>
+                <disable_info>turist_ignore_follow_actor_20</disable_info>
+                <disable_info>turist_ignore_until_actor</disable_info>
+                <disable_info>turist_ignore_by_dist_30</disable_info>
+                <disable_info>turist_ignore_by_dist_50</disable_info>
+                <dont_has_info>turist_ignore_default</dont_has_info>
+                <give_info>turist_ignore_default</give_info>
+                <next>161</next>
+            </phrase>
+        </phrase_list>
+    </dialog>
+
+
+    <dialog id="zat_a2_stalker_barmen_sad">
+        <has_info>zat_sad_start</has_info>
+        <dont_has_info>zat_a2_stalker_barmen_sad_asked</dont_has_info>
+        <phrase_list>
+            <phrase id="3">
+                <text>zat_a2_stalker_barmen_sad_3</text>
+                <next>4</next>
+                <next>41</next>
+            </phrase>
+            <phrase id="1">
+                <text>zat_a2_stalker_barmen_sad_1</text>
+                <next>2</next>
+            </phrase>
+            <phrase id="2">
+                <text>zat_a2_stalker_barmen_sad_2</text>
+                <next>3</next>
+            </phrase>
+            <phrase id="4">
+                <text>zat_a2_stalker_barmen_sad_4</text>
+                <action>dialogs_sad.zat_a2_stalker_barmen_sad_give_task</action>
+                <next>51</next>
+            </phrase>
+            <phrase id="0">
+                <text>zat_a2_stalker_barmen_sad_0</text>
+                <next>1</next>
+            </phrase>
+            <phrase id="51">
+                <text>zat_a2_stalker_barmen_sad_51</text>
+                <next>6</next>
+            </phrase>
+            <phrase id="6">
+                <text>zat_a2_stalker_barmen_sad_6</text>
+                <give_info>zat_a2_stalker_barmen_sad_asked</give_info>
+                <give_info>zat_a2_stalker_barmen_sad_start</give_info>
+                <action>dialogs_sad.zat_a2_stalker_barmen_sad_2_give_task</action>
+            </phrase>
+            <phrase id="41">
+                <text>zat_a2_stalker_barmen_sad_41</text>
+                <next>5</next>
+            </phrase>
+            <phrase id="5">
+                <text>zat_a2_stalker_barmen_sad_5</text>
+            </phrase>
+        </phrase_list>
+    </dialog>
+
+    <dialog id="zat_b215_stalker_guide_sad">
+        <has_info>zat_a2_stalker_barmen_sad_start</has_info>
+        <dont_has_info>zat_a2_meet_lotsman_task_done</dont_has_info>
+        <phrase_list>
+            <phrase id="2">
+                <text>zat_b215_stalker_guide_sad_2</text>
+                <precondition>dialogs_mlr.have_money_to_zaton_guid_sad</precondition>
+                <action>dialogs_mlr.sell_money_to_zaton_guid_sad</action> 
+                <action>dialogs_mlr.sad_guid</action> 
+                <give_info>zat_a2_meet_lotsman_task_done</give_info>
+            </phrase>
+            <phrase id="21">
+                <text>zat_b215_stalker_guide_sad_21</text>
+                <next>3</next>
+            </phrase>
+            <phrase id="3">
+                <text>zat_b215_stalker_guide_sad_3</text>
+            </phrase>
+            <phrase id="1">
+                <text>zat_b215_stalker_guide_sad_1</text>
+                <next>2</next>
+                <next>21</next>
+            </phrase>
+            <phrase id="0">
+                <text>zat_b215_stalker_guide_sad_0</text>
+                <next>1</next>
+            </phrase>
+        </phrase_list>
+    </dialog>
+
+    <dialog id="zat_a2_stalker_barmen_sad_give_pda">
+        <precondition>dialogs_sad.if_actor_has_sad_trus_pda</precondition>
+        <precondition>dialogs_sad.if_actor_has_sad_balbes_pda</precondition>
+        <precondition>dialogs_sad.if_actor_has_sad_byvaly_pda</precondition>
+        <dont_has_info>zat_a2_stalker_barmen_sad_give_pda_done</dont_has_info>
+        <phrase_list>
+            <phrase id="2">
+                <text>zat_a2_stalker_barmen_sad_give_pda_2</text>
+                <next>3</next>
+            </phrase>
+            <phrase id="1">
+                <text>zat_a2_stalker_barmen_sad_give_pda_1</text>
+                <next>2</next>
+            </phrase>
+            <phrase id="0">
+                <text>zat_a2_stalker_barmen_sad_give_pda_0</text>
+                <next>1</next>
+            </phrase>
+            <phrase id="3">
+                <text>zat_a2_stalker_barmen_sad_give_pda_3</text>
+                <next>4</next>
+            </phrase>
+            <phrase id="4">
+                <text>zat_a2_stalker_barmen_sad_give_pda_4</text>
+                <action>dialogs_sad.sad_transfer_pda</action>
+                <action>dialogs_sad.zat_a2_stalker_barmen_sad_give_reward</action>
+                <give_info>zat_a2_stalker_barmen_sad_give_pda_done</give_info>
+                <give_info>sad_main_task_stalkers_complete</give_info>
+            </phrase>
+        </phrase_list>
+    </dialog>
+
+    <dialog id="zat_a2_stalker_barmen_sad_give_oasis">
+        <precondition>dialogs_sad.if_actor_has_sad_oasis</precondition>
+        <dont_has_info>zat_a2_stalker_barmen_sad_give_oasis_done</dont_has_info>
+        <phrase_list>
+            <phrase id="2">
+                <text>zat_a2_stalker_barmen_sad_give_oasis_2</text>
+                <give_info>zat_a2_stalker_barmen_sad_give_oasis_done</give_info>
+            </phrase>
+            <phrase id="1">
+                <text>zat_a2_stalker_barmen_sad_give_oasis_1</text>
+                <action>dialogs_sad.zat_a2_stalker_barmen_sad_oasis_give_reward</action>
+                <give_info>sad_main_task_art_complete</give_info>
+                <next>2</next>
+            </phrase>
+            <phrase id="0">
+                <text>zat_a2_stalker_barmen_sad_give_oasis_0</text>
+                <next>1</next>
+            </phrase>
+        </phrase_list>
+    </dialog>
+
+</game_dialogs>

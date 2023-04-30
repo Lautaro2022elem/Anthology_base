@@ -1,0 +1,220 @@
+; -------------------------------
+[walker@def]
+meet = no_meet
+gather_items_enabled = false
+help_wounded_enabled = false
+corpse_detection_enabled = false
+invulnerable = true
+combat_ignore_cond = true
+combat_ignore_keep_when_attacked = true
+out_restr = sad_b3_sr_assault
+
+[walker@def_ataka]
+meet = no_meet
+gather_items_enabled = false
+help_wounded_enabled = false
+corpse_detection_enabled = false
+out_restr = sad_b3_sr_assault
+danger = danger
+
+; ------------------------------------------------------------------------------ c1
+[logic@killer_c_1]
+active = walker@c1_wait
+suitable = { =target_squad_name(sad_b3_killer_c_squad) } true, false
+on_death = death@c1
+post_combat_time = 0, 0
+prior = 200
+
+[walker@c1_wait]:walker@def
+path_walk = killer_c1_1_walk
+path_look = killer_c1_1_look
+on_info = {+sad_b3_killers_awake} walker@c1_fight
+
+[walker@c1_fight]:walker@def_ataka
+path_walk = killer_c1_2_walk
+;no_retreat = true
+def_state_moving = raid
+
+; ------------------------------------------------------------------------------ c2
+[logic@killer_c_2]
+active = walker@c2_init
+suitable = { =target_squad_name(sad_b3_killer_c_squad) } true, false
+on_death = death@c2
+post_combat_time = 0, 0
+prior = 200
+
+[walker@c2_init]:walker@def
+path_walk = killer_c2_init
+on_info = {+sad_b3_killers_awake} walker@c2_fight
+
+[walker@c2_fight]:walker@def_ataka
+path_walk = killer_c2_walk
+;no_retreat = true
+def_state_moving = raid
+
+; ------------------------------------------------------------------------------ c3
+[logic@killer_c_3]
+active = walker@c3_init
+suitable = { =target_squad_name(sad_b3_killer_c_squad) } true, false
+on_death = death@c3
+post_combat_time = 0, 0
+prior = 200
+
+[walker@c3_init]:walker@def
+path_walk = killer_c3_init
+on_info = {+sad_b3_killers_awake} walker@c3_fight
+
+[walker@c3_fight]:walker@def_ataka
+path_walk = killer_c3_walk
+;no_retreat = true
+def_state_moving = raid
+
+; ------------------------------------------------------------------------------ c4
+[logic@killer_c_4]
+active = walker@c4_init
+suitable = { =target_squad_name(sad_b3_killer_c_squad) } true, false
+on_death = death@c4
+post_combat_time = 0, 0
+prior = 200
+
+[walker@c4_init]:walker@def
+path_walk = killer_c4_init
+on_info = {+sad_b3_killers_awake} walker@c4_fight
+
+[walker@c4_fight]:walker@def_ataka
+path_walk = killer_c4_walk
+path_look = killer_c4_look
+;no_retreat = true
+def_state_moving = raid
+
+; ------------------------------------------------------------------------------ d1
+[logic@killer_d_1]
+active = walker@d1_init
+suitable = { =target_squad_name(sad_b3_killer_d_squad) } true, false
+on_death = death@d1
+post_combat_time = 0, 0
+prior = 200
+
+[walker@d1_init]:walker@def
+path_walk = killer_d1_init
+on_info = {+sad_b3_killers_awake} walker@d1_go_out
+
+[walker@d1_go_out]:walker@def
+path_walk = killer_d1_walk
+path_look = killer_d1_look
+def_state_moving = run
+on_info = {!npc_in_zone(sad_b3_sr_bunker_zone)} walker@d1_fight
+on_info2 = {=see_enemy} walker@d1_fight
+
+[walker@d1_fight]:walker@def_ataka
+path_walk = killer_d1_walk
+path_look = killer_d1_look
+def_state_moving = raid
+
+; ------------------------------------------------------------------------------ d2
+[logic@killer_d_2]
+active = walker@d2_init
+suitable = { =target_squad_name(sad_b3_killer_d_squad) } true, false
+on_death = death@d2
+post_combat_time = 0, 0
+prior = 200
+
+[walker@d2_init]:walker@def
+path_walk = killer_d2_init
+on_info = {+sad_b3_killers_awake} walker@d2_go_out
+
+[walker@d2_go_out]:walker@def
+path_walk = killer_d2_walk
+path_look = killer_d2_look
+def_state_moving = run
+on_info = {!npc_in_zone(sad_b3_sr_bunker_zone)} walker@d2_fight
+on_info2 = {=see_enemy} walker@d1_fight
+
+[walker@d2_fight]
+path_walk = killer_d2_walk
+path_look = killer_d2_look
+;no_retreat = true
+def_state_moving = raid
+
+; ------------------------------------------------------------------------------ d3
+[logic@killer_d_3]
+active = walker@d3_init
+suitable = { =target_squad_name(sad_b3_killer_d_squad) } true, false
+on_death = death@d3
+post_combat_time = 0, 0
+prior = 200
+
+[walker@d3_init]:walker@def
+path_walk = killer_d3_init
+on_info = {+sad_b3_killers_awake} walker@d3_go_out
+
+[walker@d3_go_out]:walker@def
+path_walk = killer_d3_walk
+path_look = killer_d3_look
+def_state_moving = run
+on_info = {!npc_in_zone(sad_b3_sr_bunker_zone)} walker@d3_fight
+on_info2 = {=see_enemy} walker@d3_fight
+
+[walker@d3_fight]
+path_walk = killer_d3_walk
+path_look = killer_d3_look
+
+; ------------------------------------------------------------------------------ d4
+[logic@killer_d_4]
+active = walker@d4_init
+suitable = { =target_squad_name(sad_b3_killer_d_squad) } true, false
+on_death = death@d4
+post_combat_time = 0, 0
+prior = 200
+
+[walker@d4_init]:walker@def
+path_walk = killer_d4_init
+on_info = {+sad_b3_killers_awake} walker@d4_go_out
+
+[walker@d4_go_out]:walker@def
+path_walk = killer_d4_walk
+path_look = killer_d4_look
+def_state_moving = run
+on_info = {!npc_in_zone(sad_b3_sr_bunker_zone)} walker@d4_fight
+on_info2 = {=see_enemy} walker@d4_fight
+
+[walker@d4_fight]
+path_walk = killer_d4_walk
+path_look = killer_d4_look
+
+; ------------------------------------------------------------------------------
+[danger]
+ignore_distance = 0
+ignore_distance_grenade = 0
+ignore_distance_corpse = 0
+ignore_distance_hit = 0
+ignore_distance_sound = 0
+
+; ------------------------------------------------------------------------------  death
+[death@c1]
+on_info = {=killed_by_actor} %=inc_counter(sad_b3_actor_enemies_kill)%
+
+[death@c2]
+on_info = {=killed_by_actor} %=inc_counter(sad_b3_actor_enemies_kill)%
+
+[death@c3]
+on_info = {=killed_by_actor} %=inc_counter(sad_b3_actor_enemies_kill)%
+
+[death@c4]
+on_info = {=killed_by_actor} %=inc_counter(sad_b3_actor_enemies_kill)%
+
+[death@d1]
+on_info = {=killed_by_actor} %=inc_counter(sad_b3_actor_enemies_kill)%
+
+[death@d2]
+on_info = {=killed_by_actor} %=inc_counter(sad_b3_actor_enemies_kill)%
+
+[death@d3]
+on_info = {=killed_by_actor} %=inc_counter(sad_b3_actor_enemies_kill)%
+
+[death@d4]
+on_info = {=killed_by_actor} %=inc_counter(sad_b3_actor_enemies_kill)%
+
+
+
+

@@ -1,0 +1,1005 @@
+-----------------------------------------------------------------------
+function topi_f1_freedom_patrol_phrase_1(first_speaker, second_speaker)   
+    play_snd_at_actor([[characters_voice\dialogs\dialog_commander_1]])	   
+end
+-----------------------------------------------------------------------
+function topi_k9_freedom_create_npc(first_speaker, second_speaker)   
+    create("topi_k9_killer_ceh_quest_6",-122.40167999268,0.14213445782661,24.274215698242,352897,8762)	   
+end
+-----------------------------------------------------------------------
+function topi_m2_give_quest_item(first_speaker, second_speaker)   
+    create("topi_stalker_base_var_3_member_1",150.16804504395,-0.0064306557178497,592.53106689453,730649,8762)
+	create("topi_stalker_base_var_3_member_2",132.45812988281,-0.0034008324146271,583.42065429688,705400,8762)
+	create("topi_stalker_base_var_3_member_3",133.0694732666,-0.001269668340683,571.04833984375,706418,8762)
+	create("topi_stalker_base_var_3_member_4",113.58799743652,-0.0046133697032928,569.95684814453,679089,8762)
+	create("topi_stalker_base_var_3_member_5",110.52060699463,-0.00070971250534058,554.48034667969,675183,8762)
+	create("topi_stalker_base_var_3_member_6",158.97515869141,0.027035683393478,570.01599121094,743872,8762)
+	create("topi_stalker_base_var_3_member_7",180.9133605957,-0.03045254945755,559.24755859375,772602,8762)
+	create("topi_stalker_base_var_3_member_8",192.8897857666,-0.017697066068649,542.43139648438,789630,8762)
+	create("topi_stalker_base_var_3_member_9",189.45550537109,-0.0030226111412048,525.65924072266,784965,8762)
+	create("topi_stalker_base_var_3_member_10",172.259765625,0.0023795068264008,524.23400878906,761490,8762)
+    dialogs.relocate_item_section_to_actor(first_speaker, second_speaker, "wpn_l96")
+    dialogs.relocate_item_section_to_actor(first_speaker, second_speaker, "killer_outfit")
+    dialogs.relocate_item_section_to_actor(first_speaker, second_speaker, "ammo_7.62x51_ap", 3)	
+end
+-----------------------------------------------------------------------
+function topi_d5_give_quest_2() 
+    task_manager.get_task_manager():give_task("geonezis_topi_d5_third_end_quest_2")
+end
+
+function topi_d5_create_csky_svyaznoy(first_speaker, second_speaker)   
+    create("topi_d5_csky_svayznoy_quest_2",386.60171508789,-0.017687737941742,239.1872253418,1048030,8762)	   
+end
+-----------------------------------------------------------------------
+function topi_b10_give_flyaga_under_quest(first_speaker, second_speaker)
+    dialogs.relocate_item_section_to_actor(first_speaker, second_speaker, "flask_good_full")    
+end
+-----------------------------------------------------------------------
+function topi_a65_create_stalker(first_speaker, second_speaker)   
+    create("topi_a65_stalker_harold_member_1",-4.9659857749939,-0.00010749697685242,201.78988647461,517123,8762)
+	create("topi_a65_stalker_harold_member_2",-3.8719577789307,0.00015053153038025,194.02268981934,518097,8762)
+	create("topi_a65_stalker_harold_member_3",-11.722396850586,-0.00028467178344727,190.35409545898,507651,8762)    
+end
+
+function topi_a65_hasan_give_quest_1() 
+    task_manager.get_task_manager():give_task("geonezis_topi_a65_hasan_quest_1")
+end
+
+function topi_a65_hasan_give_quest_2() 
+    task_manager.get_task_manager():give_task("geonezis_topi_a65_hasan_quest_2")
+end
+
+function topi_a65_give_bomba(first_speaker, second_speaker)   
+    dialogs.relocate_item_section_to_actor(first_speaker, second_speaker, "topi_a65_zam_bomba")	
+end
+-----------------------------------------------------------------------
+function topi_b65_create_stalker(first_speaker, second_speaker)   
+    create("topi_b65_stalker_hasan_member_1",283.10693359375,-0.61444652080536,545.07531738281,908885,8762)
+	create("topi_b65_stalker_hasan_member_2",278.02340698242,-0.51349055767059,548.13385009766,902297,8762)
+	create("topi_b65_stalker_hasan_member_3",274.29174804688,-0.19944776594639,540.59191894531,897612,8762)    
+end
+
+function topi_b65_harold_give_quest_1() 
+    task_manager.get_task_manager():give_task("geonezis_topi_b65_harold_quest_1")
+end
+
+function topi_b65_harold_give_quest_2() 
+    task_manager.get_task_manager():give_task("geonezis_topi_b65_harold_quest_2")
+end
+
+function topi_b65_give_bomba(first_speaker, second_speaker)   
+    dialogs.relocate_item_section_to_actor(first_speaker, second_speaker, "topi_b65_zam_bomba")	
+end
+-----------------------------------------------------------------------
+function topi_c7_ceh_give_quest_1() 
+    task_manager.get_task_manager():give_task("geonezis_topi_c7_ceh_quest_1")
+end
+
+function topi_c7_ceh_give_quest_2() 
+    task_manager.get_task_manager():give_task("geonezis_topi_c7_ceh_quest_2")
+end
+
+function topi_c7_ceh_relocate_item_1(first_speaker, second_speaker)   
+    dialogs.relocate_item_section_to_actor(first_speaker, second_speaker, "topi_c7_quest_device_1")	
+end
+
+function topi_c7_ceh_relocate_item_2(first_speaker, second_speaker)   
+    dialogs.relocate_item_section_to_actor(first_speaker, second_speaker, "topi_c7_quest_device_2")	
+end
+-----------------------------------------------------------------------
+function topi_a45_create_stalker(first_speaker, second_speaker)   
+    create("topi_a45_stalker_scaut_member_1",112.01246643066,0.075075477361679,18.950761795044,676529,8762)
+    create("topi_a45_stalker_scaut_member_2",118.09922790527,1.01819896698,30.142702102661,685161,8762)
+    create("topi_a45_stalker_scaut_member_3",117.4278717041,0.35844638943672,22.267887115479,684202,8762)
+    create("topi_a45_stalker_scaut_member_4",110.52355957031,0.4284830391407,24.774021148682,674601,8762)	
+end
+-----------------------------------------------------------------------
+function topi_b19_pnv_give_item_all(first_speaker, second_speaker)   
+    dialogs.relocate_item_section_from_actor(first_speaker, second_speaker, "topi_b19_quest_pnv_1_used")	
+	dialogs.relocate_item_section_from_actor(first_speaker, second_speaker, "topi_b19_quest_pnv_2_used")
+    dialogs.relocate_item_section_from_actor(first_speaker, second_speaker, "topi_b19_quest_pnv_3_used")	
+end
+
+function topi_b19_pnv_have_item_all(first_speaker, second_speaker)
+	return first_speaker:object("topi_b19_quest_pnv_1_used") ~= nil and first_speaker:object("topi_b19_quest_pnv_2_used") ~= nil and first_speaker:object("topi_b19_quest_pnv_3_used") ~= nil
+end
+
+function topi_b19_pnv_give_item_1(first_speaker, second_speaker)   
+    dialogs.relocate_item_section_to_actor(first_speaker, second_speaker, "topi_b19_quest_pnv_1")	
+end
+
+function topi_b19_pnv_give_item_2(first_speaker, second_speaker)   
+    dialogs.relocate_item_section_to_actor(first_speaker, second_speaker, "topi_b19_quest_pnv_2")	
+end
+
+function topi_b19_pnv_give_item_3(first_speaker, second_speaker)   
+    dialogs.relocate_item_section_to_actor(first_speaker, second_speaker, "topi_b19_quest_pnv_3")	
+end
+
+function topi_b19_create_helper(first_speaker, second_speaker)   
+    create("topi_b19_stalker_technik_helper",251.80561828613,3.0734949111938,599.48522949219,868520,8762)	
+end
+
+function topi_b19_pnv_give_quests() 
+    task_manager.get_task_manager():give_task("geonezis_topi_b19_technic_pnv_quest")
+end
+-----------------------------------------------------------------------
+function topi_b15_zam_dialog_end_enabled(first_speaker, second_speaker)
+	local a = ((db.actor:has_info("topi_b15_dolg_member_hasan_all_dead")) and (db.actor:has_info("topi_b15_zam_quest_all_talking_1")))
+	local b = ((db.actor:has_info("topi_b15_freedom_member_hasan_all_dead")) and (db.actor:has_info("topi_b15_zam_quest_all_talking_1")))
+	return a or b
+end
+
+function topi_b15_lider_dialog_end_enabled(first_speaker, second_speaker)
+	local a = ((db.actor:has_info("topi_b15_dolg_member_harold_all_dead")) and (db.actor:has_info("topi_b15_lider_quest_all_talking_1")))
+	local b = ((db.actor:has_info("topi_b15_freedom_member_harold_all_dead")) and (db.actor:has_info("topi_b15_lider_quest_all_talking_1")))
+	return a or b
+end
+
+function topi_b15_create_hasan_freedom(first_speaker, second_speaker)   
+    create("topi_b15_freedom_member_1_hasan",323.37841796875,-0.0021418631076813,69.298233032227,962327,8762)
+	create("topi_b15_freedom_member_2_hasan",324.8424987793,-0.0010688304901123,76.115524291992,968198,8762)
+	create("topi_b15_freedom_member_3_hasan",316.47894287109,-3.5494565963745005,77.101852416992,952649,8762)
+	create("topi_b15_freedom_member_4_hasan",316.82159423828,-0.0010567903518677,72.448303222656,953583,8762)
+	create("topi_b15_freedom_member_5_hasan",312.29061889648,-0.00014767050743103,65.604690551758,947201,8762)
+end
+
+function topi_b15_give_hasan_freedom() 
+    task_manager.get_task_manager():give_task("geonezis_topi_b15_hasan_freedom_quest")
+end
+
+function topi_b15_create_hasan_dolg(first_speaker, second_speaker)   
+    create("topi_b15_dolg_member_1_hasan",-302.07855224609,0.27615079283714,440.2092590332,97781,8762)
+	create("topi_b15_dolg_member_2_hasan",-293.97552490234,0.16233232617378,443.5539855957,109620,8762)
+	create("topi_b15_dolg_member_3_hasan",-300.07177734375,-0.087269097566605,431.97476196289,100653,8762)
+	create("topi_b15_dolg_member_4_hasan",-296.86859130859,-0.029553890228271,433.12170410156,105583,8762)
+	create("topi_b15_dolg_member_5_hasan",-304.32009887695,0.050867229700089,435.70330810547,94948,8762)
+end
+
+function topi_b15_give_hasan_dolg() 
+    task_manager.get_task_manager():give_task("geonezis_topi_b15_hasan_dolg_quest")
+end
+
+function topi_b15_create_harold_freedom(first_speaker, second_speaker)   
+    create("topi_b15_freedom_member_1_harold",-302.07855224609,0.27615079283714,440.2092590332,97781,8762)
+	create("topi_b15_freedom_member_2_harold",-293.97552490234,0.16233232617378,443.5539855957,109620,8762)
+	create("topi_b15_freedom_member_3_harold",-300.07177734375,-0.087269097566605,431.97476196289,100653,8762)
+	create("topi_b15_freedom_member_4_harold",-296.86859130859,-0.029553890228271,433.12170410156,105583,8762)
+	create("topi_b15_freedom_member_5_harold",-304.32009887695,0.050867229700089,435.70330810547,94948,8762)
+end
+
+function topi_b15_give_harold_freedom() 
+    task_manager.get_task_manager():give_task("geonezis_topi_b15_harold_freedom_quest")
+end
+
+function topi_b15_create_harold_dolg(first_speaker, second_speaker)   
+    create("topi_b15_dolg_member_1_harold",323.37841796875,-0.0021418631076813,69.298233032227,962327,8762)
+	create("topi_b15_dolg_member_2_harold",324.8424987793,-0.0010688304901123,76.115524291992,968198,8762)
+	create("topi_b15_dolg_member_3_harold",316.47894287109,-3.5494565963745005,77.101852416992,952649,8762)
+	create("topi_b15_dolg_member_4_harold",316.82159423828,-0.0010567903518677,72.448303222656,953583,8762)
+	create("topi_b15_dolg_member_5_harold",312.29061889648,-0.00014767050743103,65.604690551758,947201,8762)
+end
+
+function topi_b15_give_harold_dolg() 
+    task_manager.get_task_manager():give_task("geonezis_topi_b15_harold_dolg_quest")
+end
+-----------------------------------------------------------------------
+function topi_b41_artefacter_give_quests() 
+    task_manager.get_task_manager():give_task("geonezis_topi_b41_seleczia_quest")
+end
+
+function topi_b41_artefacter_give_arts(first_speaker, second_speaker)
+    dialogs.relocate_item_section_to_actor(first_speaker, second_speaker, "af_baloon", 3)
+    dialogs.relocate_item_section_to_actor(first_speaker, second_speaker, "topi_b41_seleczia_device")	
+end
+
+function topi_b41_artefacter_give_arts_back(first_speaker, second_speaker)
+    dialogs.relocate_item_section_from_actor(first_speaker, second_speaker, "topi_b41_seleczia_device")
+    dialogs.relocate_item_section_from_actor(first_speaker, second_speaker, "topi_b41_artefact_1")
+    dialogs.relocate_item_section_from_actor(first_speaker, second_speaker, "topi_b41_artefact_2")
+    dialogs.relocate_item_section_from_actor(first_speaker, second_speaker, "topi_b41_artefact_3")	
+end
+
+function topi_b41_artefacter_have_arts(first_speaker, second_speaker)
+	return first_speaker:object("topi_b41_artefact_1") ~= nil and first_speaker:object("topi_b41_artefact_2") ~= nil and first_speaker:object("topi_b41_artefact_3") ~= nil
+end
+-----------------------------------------------------------------------
+function topi_a15_zamolider_dialog_enabled(first_speaker, second_speaker)
+	local a = ((db.actor:has_info("topi_a15_dolg_come_to_base")) and (db.actor:has_info("topi_a15_artefacter_quest_vozmezdie_talking_1")))
+	local b = ((db.actor:has_info("topi_a15_freedom_come_to_base")) and (db.actor:has_info("topi_a15_artefacter_quest_vozmezdie_talking_1")))
+	return a or b
+end
+
+function topi_a15_artefacter_create_1_stalker(first_speaker, second_speaker)   
+    create("topi_a15_dolg_vozmezdie_lider",214.6470489502,-0.00057524442672729,74.64379119873,818150,8762)
+	create("topi_a15_dolg_vozmezdie_member_1",212.85354614258,-0.0012813210487366,67.68302154541,815263,8762)
+	create("topi_a15_dolg_vozmezdie_member_2",211.02351379395,-0.00052881240844727,84.869186401367,812397,8762)
+end
+
+function topi_a15_artefacter_quest_1_give() 
+    task_manager.get_task_manager():give_task("geonezis_topi_a15_dolg_quest")
+end
+
+function topi_a15_artefacter_create_2_stalker(first_speaker, second_speaker)   
+    create("topi_a15_freedom_vozmezdie_lider",-299.85760498047,0.00031563639640808,71.697708129883,101230,8762)
+	create("topi_a15_freedom_vozmezdie_member_1",-296.5419921875,-0.00013694167137146,82.962516784668,105145,8762)
+	create("topi_a15_freedom_vozmezdie_member_2",-300.94342041016,1.6123056411743e-005,61.461151123047,99282,8762)
+end
+
+function topi_a15_artefacter_quest_2_give() 
+    task_manager.get_task_manager():give_task("geonezis_topi_a15_freedom_quest")
+end
+-----------------------------------------------------------------------
+function topi_c17_mahir_give_money(first_speaker, second_speaker)
+    dialogs.relocate_money_to_actor(first_speaker, second_speaker, 3000)    
+end
+
+function topi_c17_snab_create_stalker(first_speaker, second_speaker)
+    dialogs.relocate_money_to_actor(first_speaker, second_speaker, 6000)
+    dialogs.relocate_item_section_to_actor(first_speaker, second_speaker, "wpn_toz194")
+    create("topi_c17_sborshik_mahir",-39.031940460205,-0.0017864406108856,250.73347473145,470338,8762)
+end
+
+function topi_c17_snab_create_fake(first_speaker, second_speaker)   
+    create("topi_c17_sborshik_mahir_2",-320.10266113281,-1.7695963382721,396.73336791992,73744,8762)
+	create("topi_c17_mahir_member_1",-325.06790161133,-1.5721771717072,402.66366577148,67072,8762)
+	create("topi_c17_mahir_member_2",-324.88919067383,-1.240771651268,387.2839050293,67052,8762)
+end
+
+function topi_c17_snab_quest_give() 
+    task_manager.get_task_manager():give_task("geonezis_topi_ñ17_snab_mahir_quest")
+end
+
+function topi_c17_snab_quest_give_2() 
+    task_manager.get_task_manager():give_task("geonezis_topi_ñ17_snab_mahir_quest_2")
+end
+
+function topi_c17_snab_quest_give_3() 
+    task_manager.get_task_manager():give_task("geonezis_topi_ñ17_snab_mahir_quest_3")
+end
+
+function topi_c17_mahir_give_item(first_speaker, second_speaker)
+    dialogs.relocate_money_from_actor(first_speaker, second_speaker, 6000)
+    dialogs.relocate_item_section_from_actor(first_speaker, second_speaker, "wpn_toz194")    
+end
+
+function topi_c17_mahir_give_item_2(first_speaker, second_speaker)
+    dialogs.relocate_money_from_actor(first_speaker, second_speaker, 6000)     
+end
+-----------------------------------------------------------------------
+function is_mar_b106_hunting_time(first_speaker, second_speaker)
+	if level.get_time_hours() >= 2 and level.get_time_hours() < 5 then
+		if level.get_time_hours() > 2 then
+			return true
+		elseif level.get_time_minutes() >= 45 then
+			return true
+		end
+	end
+
+	return false
+end
+
+function is_not_mar_b106_hunting_time(first_speaker, second_speaker)
+	if level.get_time_hours() >= 2 and level.get_time_hours() < 5 then
+		if level.get_time_hours() > 2 then
+			return false
+		elseif level.get_time_minutes() >= 45 then
+			return false
+		end
+	end
+
+	return true
+end
+
+function topi_a5_zmeelov_create_stalker(first_speaker, second_speaker)
+    create("topi_a5_stalker_hunter",-148.38143920898,0.00022462010383606,91.844276428223,317871,8762)
+end
+
+function topi_a5_zmeelov_quest_give() 
+    task_manager.get_task_manager():give_task("geonezis_topi_b5_hunter_chimera_quest")
+end
+
+function topi_a5_hunter_create_himera(first_speaker, second_speaker)
+    create("topi_a5_hunter_quest_chimera",-214.07437133789,-0.00065058469772339,-74.559928894043,223677,8762)	
+end
+-----------------------------------------------------------------------
+function topi_m1_snab_create_stalker(first_speaker, second_speaker)
+    create("topi_m1_sborshik_member_3",200.37184143066,-4.2004175186157,-118.71112060547,798295,8762)
+    create("topi_m1_sborshik_member_2",-149.80406188965,-0.10578724741936,-40.48384475708,315869,8762)
+    create("topi_m1_sborshik_member_1",-259.79302978516,0.001202255487442,427.798828125,158823,8762)	
+end
+
+function topi_m1_snab_quest_give() 
+    task_manager.get_task_manager():give_task("geonezis_topi_m1_snab_quest")
+    task_manager.get_task_manager():give_task("geonezis_topi_m1_sborshik_1")
+    task_manager.get_task_manager():give_task("geonezis_topi_m1_sborshik_2")
+	task_manager.get_task_manager():give_task("geonezis_topi_m1_sborshik_3")
+end
+
+function topi_m1_sborshik_member_1_relocate(first_speaker, second_speaker)
+    dialogs.relocate_item_section_to_actor(first_speaker, second_speaker, "af_oblivion", 3)    	
+end
+
+function topi_m1_sborshik_member_2_relocate(first_speaker, second_speaker)
+    dialogs.relocate_item_section_to_actor(first_speaker, second_speaker, "af_vedsleza", 3)    	
+end
+
+function topi_m1_sborshik_member_3_relocate(first_speaker, second_speaker)
+    dialogs.relocate_item_section_to_actor(first_speaker, second_speaker, "af_fire", 3)    	
+end
+
+function topi_m1_snab_have_all_arts(first_speaker, second_speaker)
+ 	local a = 0
+	local b = 0
+	local c = 0
+	local function topi_m1_count(npc, item)		
+		if item:section() == "af_oblivion" then
+			a = a + 1
+		end
+	end
+	local function topi_m2_count(npc, item)		
+		if item:section() == "af_vedsleza" then
+			b = b + 1
+		end
+	end
+	local function topi_m3_count(npc, item)		
+		if item:section() == "af_fire" then
+			c = c + 1
+		end
+	end
+	db.actor:iterate_inventory(topi_m1_count, nil)
+	db.actor:iterate_inventory(topi_m2_count, nil)
+	db.actor:iterate_inventory(topi_m3_count, nil)
+	if (a > 2 and b > 2 and c > 2) then
+		return true
+	end
+	return false
+end
+
+function topi_m1_snab_relocate_all_arts(first_speaker, second_speaker)
+    dialogs.relocate_item_section_from_actor(first_speaker, second_speaker, "af_oblivion", 3)
+    dialogs.relocate_item_section_from_actor(first_speaker, second_speaker, "af_vedsleza", 3)
+    dialogs.relocate_item_section_from_actor(first_speaker, second_speaker, "af_fire", 3)	
+end
+-----------------------------------------------------------------------
+function topi_b30_medic_give_quest(first_speaker, second_speaker)
+    create("af_mincer_meat",-12.35011100769,-0.01137387752533,-37.640476226807,506413,8762)
+    create("af_glass",-16.380382537842,-0.68924051523209,-24.01900100708,501849,8762)
+    dialogs.relocate_item_section_to_actor(first_speaker, second_speaker, "detector_elite") 
+    task_manager.get_task_manager():give_task("geonezis_topi_b30_medic_quest") 
+end
+
+function topi_b30_medic_have_arts(first_speaker, second_speaker)
+	return ((db.actor:object("af_glass") ~= nil) and (db.actor:object("af_mincer_meat") ~= nil))
+end
+
+function topi_b30_medic_relocates_arts(first_speaker, second_speaker)
+	dialogs.relocate_item_section_from_actor(first_speaker, second_speaker, "af_glass")
+	dialogs.relocate_item_section_from_actor(first_speaker, second_speaker, "af_mincer_meat")
+end	
+
+-----------------------------------------------------------------------
+function topi_trader_2_quest_zamolider_vibor_give() 
+    task_manager.get_task_manager():give_task("geonezis_topi_k1_zam_or_lider")    
+end
+-----------------------------------------------------------------------
+function topi_radist_pred_money_give(first_speaker, second_speaker)
+	local topi_i7_money_1 = 3000
+	dialogs.relocate_money_to_actor(first_speaker, second_speaker, topi_i7_money_1)
+end
+
+function topi_radist_pred_item_give(first_speaker, second_speaker)
+    dialogs.relocate_item_section_from_actor(first_speaker, second_speaker, "topi_f1_radioscaner")    
+end
+-----------------------------------------------------------------------
+function topi_f1_freedom_patrol_create(first_speaker, second_speaker)    
+   create("topi_b2_freedom_lider_first_quest",341.28698730469,-0.25224164128304,197.52156066895,987588,8762)
+   create("topi_b2_freedom_4_first_quest",339.33404541016,-0.06548136472702,204.93542480469,984709,8762)   
+   create("topi_b2_freedom_5_first_quest",341.15823364258,-0.40059164166451,194.04339599609,986628,8762)    	
+end
+
+function topi_f1_freedom_give_device(first_speaker, second_speaker)
+    dialogs.relocate_item_section_to_actor(first_speaker, second_speaker, "topi_f1_radioscaner")    
+end
+-----------------------------------------------------------------------
+function ins_precond(first_speaker,second_speaker,dn)
+  return not is_wounded(first_speaker,second_speaker)
+end
+
+function is_wounded(first_speaker, second_speaker)
+  local npc = who_is_npc(first_speaker, second_speaker)
+  return xr_wounded.is_wounded(npc)
+end
+
+function who_is_npc(first_speaker, second_speaker)
+ local npc = second_speaker
+ if db.actor:id() == npc:id() then
+    npc=first_speaker
+ end
+ return npc
+end
+
+function precondition_about_story(actor,npc)
+  if xr_wounded.is_wounded(npc) or
+     xr_wounded.is_heavy_wounded_by_id(npc:id()) or
+     xr_wounded.is_psy_wounded_by_id(npc:id())
+  then
+     return false
+  end
+  return true
+end
+
+function precondition_for_dialog(actor,npc)
+  if xr_wounded.is_wounded(npc) or
+     xr_wounded.is_heavy_wounded_by_id(npc:id()) or
+     xr_wounded.is_psy_wounded_by_id(npc:id())
+  then
+     return false
+  end
+  return true
+end
+-----------------------------------------------------------------------
+function topi_var_1_suget_quest_final_create_svayznoy(first_speaker, second_speaker)    
+    create("topi_svyaznoy_var_1_suget_quest_final",379.90557861328,-0.0026701092720032,256.05499267578,1039501,8762)    	
+end
+
+function topi_var_1_suget_quest_final_create_batlle(first_speaker, second_speaker)    
+    create("topi_var_1_suget_quest_final_csky_member_1",152.68832397461,2.6772427558899,228.10470581055,734421,8762) 
+    create("topi_var_1_suget_quest_final_csky_member_2",160.36299133301,2.2002904415131,230.62776184082,745395,8762)
+    create("topi_var_1_suget_quest_final_csky_member_3",161.77551269531,2.2738029956818,234.30125427246,747356,8762)
+    create("topi_var_1_suget_quest_final_csky_member_4",150.48179626465,2.8259057998657,234.80877685547,731245,8762)
+    create("topi_var_1_suget_quest_final_csky_member_5",143.73277282715,2.6910972595215,232.10757446289,720871,8762)
+    create("topi_var_1_suget_quest_final_csky_member_6",152.49111938477,2.8800020217896,233.30126953125,734428,8762)
+    create("topi_var_1_suget_quest_final_csky_member_7",174.98565673828,0.40296545624733,225.86444091797,764819,8762)   	
+end
+-----------------------------------------------------------------------
+function actor_has_dvetreti_flyaga(first_speaker, second_speaker)
+	return first_speaker:object("flask_good_2_3") ~= nil 
+end
+
+function actor_has_odnatret_flyaga(first_speaker, second_speaker)
+	return first_speaker:object("flask_good_1_3") ~= nil 
+end
+
+function actor_has_pustaya_flyaga(first_speaker, second_speaker)
+	return first_speaker:object("flask_empty") ~= nil 
+end
+
+function actor_hasnt_water_money(first_speaker, second_speaker)
+	return db.actor:money() < 100
+end
+
+function actor_has_water_money_1(first_speaker, second_speaker)
+	return db.actor:money() >= 100
+end
+
+function actor_has_water_money_2(first_speaker, second_speaker)
+	return db.actor:money() >= 200
+end
+
+function actor_has_water_money_3(first_speaker, second_speaker)
+	return db.actor:money() >= 300
+end
+
+function topi_b1_trader_water_give_money_1(first_speaker, second_speaker)
+	local topi_a1_water_money_1 = 100
+	dialogs.relocate_money_from_actor(first_speaker, second_speaker, topi_a1_water_money_1)	
+	dialogs.relocate_item_section_from_actor(first_speaker, second_speaker, "flask_empty")
+end
+
+function topi_b1_trader_water_give_money_2(first_speaker, second_speaker)
+	local topi_a1_water_money_2 = 200
+	dialogs.relocate_money_from_actor(first_speaker, second_speaker, topi_a1_water_money_2)
+	dialogs.relocate_item_section_from_actor(first_speaker, second_speaker, "flask_empty")
+end
+
+function topi_b1_trader_water_give_money_2_1(first_speaker, second_speaker)
+	local topi_a1_water_money_2 = 200
+	dialogs.relocate_money_from_actor(first_speaker, second_speaker, topi_a1_water_money_2)
+	dialogs.relocate_item_section_from_actor(first_speaker, second_speaker, "flask_good_1_3")
+end
+
+function topi_b1_trader_water_give_money_3(first_speaker, second_speaker)
+	local topi_a1_water_money_3 = 300
+	dialogs.relocate_money_from_actor(first_speaker, second_speaker, topi_a1_water_money_3)
+	dialogs.relocate_item_section_from_actor(first_speaker, second_speaker, "flask_empty")
+end
+
+function topi_b1_trader_water_give_money_3_2(first_speaker, second_speaker)
+	local topi_a1_water_money_3 = 300
+	dialogs.relocate_money_from_actor(first_speaker, second_speaker, topi_a1_water_money_3)
+	dialogs.relocate_item_section_from_actor(first_speaker, second_speaker, "flask_good_2_3")
+end
+
+function topi_b1_trader_water_give_money_3_1(first_speaker, second_speaker)
+	local topi_a1_water_money_3 = 300
+	dialogs.relocate_money_from_actor(first_speaker, second_speaker, topi_a1_water_money_3)
+	dialogs.relocate_item_section_from_actor(first_speaker, second_speaker, "flask_good_1_3")
+end
+
+function topi_b1_trader_water_give_flyaga_1(first_speaker, second_speaker)
+    dialogs.relocate_item_section_to_actor(first_speaker, second_speaker, "flask_good_1_3")    
+end
+
+function topi_b1_trader_water_give_flyaga_2(first_speaker, second_speaker)
+    dialogs.relocate_item_section_to_actor(first_speaker, second_speaker, "flask_good_2_3")    
+end
+
+function topi_b1_trader_water_give_flyaga_3(first_speaker, second_speaker)
+    dialogs.relocate_item_section_to_actor(first_speaker, second_speaker, "flask_good_full")    
+end
+-----------------------------------------------------------------------
+function topi_b1_leader_1_quest_give_device(first_speaker, second_speaker)    
+    dialogs.relocate_item_section_to_actor(first_speaker, second_speaker, "detector_mine")	
+end
+
+function topi_b1_leader_1_quest_give_device_back(first_speaker, second_speaker)    
+    dialogs.relocate_item_section_from_actor(first_speaker, second_speaker, "detector_mine")	
+end
+-----------------------------------------------------------------------
+function topi_var_2_suget_quest_create_killer(first_speaker, second_speaker)    
+    create("topi_var_2_suget_quest_2_killer_member_1",42.760402679443,5.224347114563e-005,-66.061347961426,581491,8762)
+    create("topi_var_2_suget_quest_2_killer_member_2",67.254531860352,0.00013116002082825,-79.324340820313,614885,8762)
+    create("topi_var_2_suget_quest_2_killer_member_3",82.927825927734,-0.0014527142047882,-61.678649902344,636163,8762)
+    create("topi_var_2_suget_quest_2_killer_member_4",68.535507202148,-0.00011113286018372,-25.514934539795,616739,8762)
+    create("topi_var_2_suget_quest_2_killer_member_5",40.781421661377,-0.0019688308238983,-40.970161437988,578607,8762)	
+end
+-----------------------------------------------------------------------
+function topi_var_2_suget_quest_create_stalker(first_speaker, second_speaker)    
+    create("topi_var_2_suget_quest_1_csky_member_1",-101.46389770508,0.00068917870521545,592.72534179688,381383,8762)
+    create("topi_var_2_suget_quest_1_csky_member_2",-94.84285736084,0.00031206011772156,597.88586425781,390067,8762)
+    create("topi_var_2_suget_quest_1_csky_member_3",-108.25634002686,-0.0023182034492493,586.42803955078,372372,8762)	
+end
+
+-----------------------------------------------------------------------
+function topi_lider_variant_quest_give() 
+    task_manager.get_task_manager():give_task("geonezis_topi_lider_variant_quest")    
+end
+
+function topi_lider_variant_quest_give_items(first_speaker, second_speaker)    
+    dialogs.relocate_item_section_to_actor(first_speaker, second_speaker, "topi_lider_spectrometr_1")	
+end
+
+function actor_has_compromat_items(first_speaker, second_speaker)
+	return first_speaker:object("topi_lider_copromat_1") ~= nil 
+end
+
+function topi_lider_variant_quest_create_npc(first_speaker, second_speaker)    
+    create("topi_b1_scaut_killer_member_1",-114.76783752441,-0.17050340771675,20.441715240479,363266,8762)
+    create("topi_b1_scaut_killer_member_2",-331.33081054688,0.18472084403038,334.76516723633,57890,8762)	
+end
+
+function topi_lider_variant_quest_relocate_device(first_speaker, second_speaker)
+    dialogs.relocate_item_section_from_actor(first_speaker, second_speaker, "topi_lider_spectrometr_1") 
+    dialogs.relocate_item_section_from_actor(first_speaker, second_speaker, "topi_lider_copromat_1")   	
+end
+-----------------------------------------------------------------------
+function topi_zam_variant_quest_give() 
+    task_manager.get_task_manager():give_task("geonezis_topi_zam_variant_quest")    
+end
+
+function topi_zam_variant_quest_give_items(first_speaker, second_speaker)
+    create("topi_b1_scaut_leader_var_1",381.18215942383,-0.21354140341282,92.009254455566,1041292,8762)
+	create("topi_b1_scaut_member_1_var_1",374.91986083984,0.4818003475666,86.026763916016,1032688,8762)
+	create("topi_b1_scaut_member_2_var_1",389.99774169922,0.67421805858612,96.23265838623,1052710,8762)
+    dialogs.relocate_item_section_to_actor(first_speaker, second_speaker, "topi_zam_proto_filtr_1", 3) 
+    dialogs.relocate_item_section_to_actor(first_speaker, second_speaker, "topi_zam_yad_1", 3)
+    dialogs.relocate_item_section_to_actor(first_speaker, second_speaker, "topi_zam_maska_1", 3)
+    dialogs.relocate_item_section_to_actor(first_speaker, second_speaker, "topi_zam_protocrafter")
+    dialogs.relocate_item_section_to_actor(first_speaker, second_speaker, "topi_zam_katalizator_1")	
+end
+
+function topi_zam_variant_quest_relocate_proto(first_speaker, second_speaker)
+    dialogs.relocate_item_section_from_actor(first_speaker, second_speaker, "topi_zam_protivogaz_1", 3)    	
+end
+
+function topi_zam_variant_quest_relocate_device(first_speaker, second_speaker)
+    dialogs.relocate_item_section_from_actor(first_speaker, second_speaker, "topi_zam_protocrafter")    	
+end
+-----------------------------------------------------------------------
+function topi_a105_razia_give_quest() 
+    task_manager.get_task_manager():give_task("geonezis_topi_a105_razia_quest")    
+end
+
+function topi_a105_razia_give_items(first_speaker, second_speaker)
+    dialogs.relocate_item_section_to_actor(first_speaker, second_speaker, "topi_a105_razia_type_1") 
+    dialogs.relocate_item_section_to_actor(first_speaker, second_speaker, "topi_a105_razia_type_2")
+    dialogs.relocate_item_section_to_actor(first_speaker, second_speaker, "topi_a105_razia_type_3")
+    dialogs.relocate_item_section_to_actor(first_speaker, second_speaker, "topi_a105_razia_type_4")
+    dialogs.relocate_item_section_to_actor(first_speaker, second_speaker, "topi_a105_razia_type_5")	
+end
+
+function topi_a105_razia_back_items(first_speaker, second_speaker)
+    dialogs.relocate_item_section_from_actor(first_speaker, second_speaker, "topi_a105_razia_type_1") 
+    dialogs.relocate_item_section_from_actor(first_speaker, second_speaker, "topi_a105_razia_type_2")
+    dialogs.relocate_item_section_from_actor(first_speaker, second_speaker, "topi_a105_razia_type_3")
+    dialogs.relocate_item_section_from_actor(first_speaker, second_speaker, "topi_a105_razia_type_4")
+    dialogs.relocate_item_section_from_actor(first_speaker, second_speaker, "topi_a105_razia_type_5")	
+end
+-----------------------------------------------------------------------
+function topi_b1_leader_third_quest_give_quest() 
+    task_manager.get_task_manager():give_task("geonezis_topi_b1_leader_third_quest")    
+end
+
+function topi_b1_leader_third_quest_give_item(first_speaker, second_speaker)
+    dialogs.relocate_item_section_to_actor(first_speaker, second_speaker, "topi_b1_leader_vphr_item")    
+end
+
+function actot_has_b1_leader_third_quest_item(first_speaker, second_speaker)
+	return first_speaker:object("topi_b1_leader_vphr_item") ~= nil and first_speaker:object("topi_b1_leader_vphr_doc") ~= nil
+end
+
+function topi_b1_third_quest_item_to_stalker(first_speaker, second_speaker)
+    dialogs.relocate_item_section_from_actor(first_speaker, second_speaker, "topi_b1_leader_vphr_item")  
+    dialogs.relocate_item_section_from_actor(first_speaker, second_speaker, "topi_b1_leader_vphr_doc")	
+end
+
+-----------------------------------------------------------------------
+
+function topi_radist_multimetr_quest_give_zadanie() 
+    task_manager.get_task_manager():give_task("geonezis_topi_radist_quest_multimetr")    
+end
+
+function topi_radist_multimetr_quest_give_item(first_speaker, second_speaker)         
+         dialogs.relocate_item_section_to_actor(first_speaker, second_speaker, "topi_b11_multimetr")		        
+end
+
+function topi_radist_multimetr_give_back_pribor(first_speaker, second_speaker)         
+         dialogs.relocate_item_section_from_actor(first_speaker, second_speaker, "topi_b11_multimetr")
+         dialogs.relocate_item_section_from_actor(first_speaker, second_speaker, "topi_b11_plata_3")		 
+end
+
+function actot_has_multimetr_items(first_speaker, second_speaker)
+	return first_speaker:object("topi_b11_multimetr") ~= nil 
+end
+
+function actot_has_payalnik_items(first_speaker, second_speaker)
+	return first_speaker:object("topi_b11_payalnik") ~= nil 
+end
+
+function topi_radist_multimetr_give_payalnik(first_speaker, second_speaker)         
+         dialogs.relocate_item_section_to_actor(first_speaker, second_speaker, "topi_b11_payalnik")
+         dialogs.relocate_item_section_to_actor(first_speaker, second_speaker, "topi_b11_components_1", 3)
+         dialogs.relocate_item_section_to_actor(first_speaker, second_speaker, "topi_b11_components_2", 3)
+         dialogs.relocate_item_section_to_actor(first_speaker, second_speaker, "topi_b11_components_3", 3)		 
+end
+
+function topi_radist_multimetr_back_payalnik(first_speaker, second_speaker)         
+         dialogs.relocate_item_section_from_actor(first_speaker, second_speaker, "topi_b11_payalnik")       		 
+end
+
+-----------------------------------------------------------------------
+
+function topi_suget_4_quest_create_rukzak(first_speaker, second_speaker)	
+      local yad_cell=alife():create("quest_rukzak",vector():set(29.081130981445,-0.67153251171112,78.829315185547),563349,8762)
+        parse_table=utils.parse_spawns("topi_b9_anubis_fugas_components_1,3,topi_b9_anubis_fugas_components_2,3,topi_b9_anubis_fugas_components_3,3,topi_b9_anubis_fugascreate_device")
+            for k,v in pairs(parse_table) do
+              for i=1,v.prob do
+                alife():create(v.section,vector(),0,0,yad_cell.id)
+              end
+            end	
+end
+-----------------------------------------------------------------------
+
+function topi_trader_2_quest_relocate_arts(first_speaker, second_speaker)
+		dialogs.relocate_item_section_from_actor(first_speaker, second_speaker, "af_seaej")
+		dialogs.relocate_item_section_from_actor(first_speaker, second_speaker, "af_mayatnik")
+end
+
+function actot_has_trader_quest_2_bandit_items(first_speaker, second_speaker)
+	return first_speaker:object("af_seaej") ~= nil and first_speaker:object("af_mayatnik") ~= nil
+end
+
+function topi_trader_2_quest_create_rukzak(first_speaker, second_speaker)
+         create("topi_trader_taynik_1",-5.5031394958496,-0.6898638010025,241.09573364258,516203,8762)
+         dialogs.relocate_item_section_to_actor(first_speaker, second_speaker, "topi_a6_trader_documents")
+		 dialogs.relocate_item_section_to_actor(first_speaker, second_speaker, "af_seaej")
+         dialogs.relocate_item_section_to_actor(first_speaker, second_speaker, "af_mayatnik")   
+end
+-----------------------------------------------------------------------
+
+function topi_trader_1_quest_create_bandit(first_speaker, second_speaker)
+   create("topi_b7_trader_quest_1_bandit_member_1",-213.60693359375,9.5725059509277e-005,-61.968395233154,224677,8762)
+   create("topi_b7_trader_quest_1_bandit_member_2",-208.05101013184,0.00043025612831116,-70.27564239502,232782,8762)
+   create("topi_b7_trader_quest_1_bandit_member_3",-221.13302612305,-0.0021647214889526,-56.830795288086,213596,8762)
+   create("topi_b7_trader_quest_1_bandit_wounded",-259.60174560547,-3.4200177192688,-122.17167663574,158169,8762)  
+end
+
+function topi_trader_1_quest_create_stalker(first_speaker, second_speaker)
+   create("topi_b7_trader_quest_1_bandit_prisoner",-209.30819702148,0.017926424741745,38.925975799561,230818,8762)
+   create("topi_b7_trader_quest_1_stalker_member_1",-213.75621032715,7.8141689300537e-005,39.247611999512,224780,8762)
+   create("topi_b7_trader_quest_1_stalker_member_2",-214.27714538574,0.00038406252861023,43.236511230469,223795,8762)
+   create("topi_b7_trader_quest_1_stalker_member_3",-214.00373840332,-0.0027194023132324,36.108020782471,223785,8762)      
+end
+
+-----------------------------------------------------------------------
+function actot_has_all_suget_qoest_3_items(first_speaker, second_speaker)
+	return first_speaker:object("topi_main_quest_document_1") ~= nil 
+end
+
+function topi_give_all_suget_quest_3_items(first_speaker, second_speaker)
+		dialogs.relocate_item_section_from_actor(first_speaker, second_speaker, "topi_main_quest_document_1")
+end
+
+-----------------------------------------------------------------------
+function topi_mechanic_proto_give_some_items(first_speaker, second_speaker)
+    dialogs.relocate_item_section_to_actor(first_speaker, second_speaker, "topi_mechanic_proto_dathik", 5)
+    dialogs.relocate_item_section_to_actor(first_speaker, second_speaker, "topi_mechanic_proto_maska_1") 
+    dialogs.relocate_item_section_to_actor(first_speaker, second_speaker, "topi_mechanic_proto_maska_2")
+    dialogs.relocate_item_section_to_actor(first_speaker, second_speaker, "topi_mechanic_proto_maska_3")
+    dialogs.relocate_item_section_to_actor(first_speaker, second_speaker, "topi_mechanic_proto_maska_4")
+    dialogs.relocate_item_section_to_actor(first_speaker, second_speaker, "topi_mechanic_proto_maska_5")	
+end
+
+function topi_mechanic_proto_quest_give() 
+    task_manager.get_task_manager():give_task("geonezis_topi_mechanic_quest_proto")    
+end
+
+function actot_has_mechanic_proto_give_end_items(first_speaker, second_speaker)
+	return first_speaker:object("topi_mechanic_proto_device_1") ~= nil and first_speaker:object("topi_mechanic_proto_device_2") ~= nil
+end
+
+function topi_mechanic_proto_give_end_items(first_speaker, second_speaker)    
+    dialogs.relocate_item_section_from_actor(first_speaker, second_speaker, "topi_mechanic_proto_device_1") 
+    dialogs.relocate_item_section_from_actor(first_speaker, second_speaker, "topi_mechanic_proto_device_2")
+	dialogs.relocate_item_section_from_actor(first_speaker, second_speaker, "topi_mechanic_protivogaz_1")
+	dialogs.relocate_item_section_from_actor(first_speaker, second_speaker, "topi_mechanic_protivogaz_2")
+	dialogs.relocate_item_section_from_actor(first_speaker, second_speaker, "topi_mechanic_protivogaz_3")
+	dialogs.relocate_item_section_from_actor(first_speaker, second_speaker, "topi_mechanic_protivogaz_4")
+	dialogs.relocate_item_section_from_actor(first_speaker, second_speaker, "topi_mechanic_protivogaz_5")
+end
+
+function topi_mechanic_proto_quest_create_ruksak(first_speaker, second_speaker)	
+	create("topi_b8_mechanic_proto_quest_spot",191.87121582031,0.046878606081009,569.83349609375,787868,8762)
+      local yad_cell=alife():create("quest_rukzak",vector():set(191.87121582031,0.046878606081009,569.83349609375),787868,8762)
+        parse_table=utils.parse_spawns("topi_mechanic_proto_filtr_1,topi_mechanic_proto_filtr_2,topi_mechanic_proto_filtr_3,topi_mechanic_proto_filtr_4,topi_mechanic_proto_filtr_5,topi_mechanic_proto_device_1,topi_mechanic_proto_device_2")
+            for k,v in pairs(parse_table) do
+              for i=1,v.prob do
+                alife():create(v.section,vector(),0,0,yad_cell.id)
+              end
+            end	
+end
+
+-----------------------------------------------------------------------
+function topi_medic_quest_sborki_give(first_speaker, second_speaker)   
+    create("af_electra_sparkler",-134.63865661621,-0.00045770406723022,541.6787109375,337014,8762)
+    create("af_raibloko",-116.2956237793,-1.0520219802856e-005,556.65930175781,361951,8762)   
+    dialogs.relocate_item_section_to_actor(first_speaker, second_speaker, "detector_elite") 
+    task_manager.get_task_manager():give_task("geonezis_topi_medic_quest_arts_give") 
+end 
+
+function zat_b33_relocate_money_to_lotcman(first_speaker, second_speaker)	
+	dialogs.relocate_money_from_actor(first_speaker, second_speaker, 3000)	
+end
+
+function actor_has_first_or_second_art_item(first_speaker, second_speaker)
+	return first_speaker:object("af_raibloko") ~= nil or first_speaker:object("af_electra_sparkler") ~= nil
+end
+
+function actor_has_first_and_second_art_item(first_speaker, second_speaker)
+	return first_speaker:object("af_raibloko") ~= nil and first_speaker:object("af_electra_sparkler") ~= nil
+end
+
+function if_actor_has_zat_grenader_stalker_1(first_speaker, second_speaker)
+	return first_speaker:object("af_raibloko") ~= nil and first_speaker:object("af_electra_sparkler") == nil 
+end
+
+function if_actor_has_zat_grenader_stalker_2(first_speaker, second_speaker)
+	return first_speaker:object("af_electra_sparkler") ~= nil and first_speaker:object("af_raibloko") == nil
+end
+
+function transfer_zat_grenader_stalker_1(first_speaker, second_speaker)
+		dialogs.relocate_item_section_from_actor(first_speaker, second_speaker, "af_raibloko")
+end
+
+function transfer_zat_grenader_stalker_2(first_speaker, second_speaker)
+		dialogs.relocate_item_section_from_actor(first_speaker, second_speaker, "af_electra_sparkler")
+end
+
+function jup_b43_reward_for_first_artefact(first_speaker, second_speaker)
+	dialogs.relocate_money_to_actor(first_speaker, second_speaker, 2500)
+end
+
+function jup_b43_reward_for_second_artefact(first_speaker, second_speaker)
+	dialogs.relocate_money_to_actor(first_speaker, second_speaker, 3500)
+end
+
+function jup_b43_reward_for_both_artefacts(first_speaker, second_speaker)
+	dialogs.relocate_money_to_actor(first_speaker, second_speaker, 6000)
+end
+
+-----------------------------------------------------------------------
+function topi_medic_quest_peredacha_give(first_speaker, second_speaker) 
+    dialogs.relocate_money_to_actor(first_speaker, second_speaker, 1000) 
+    dialogs.relocate_item_section_to_actor(first_speaker, second_speaker, "topi_quest_medic_container") 
+    task_manager.get_task_manager():give_task("geonezis_topi_medic_quest_peredacha") 
+end
+
+function topi_medic_quest_peredacha_create_wounded(first_speaker, second_speaker)
+   create("topi_b1_stalker_group_wounded",121.47603607178,0.27999517321587,-30.911785125732,689801,8762) 
+   create("topi_b1_stalker_group_leader",69.826469421387,6.943941116333,-82.227851867676,618443,8762)
+   create("topi_b1_stalker_group_member_1",55.101501464844,-0.0023564696311951,-79.857383728027,598897,8762)
+   create("topi_b1_stalker_group_member_2",76.115798950195,-0.00033792853355408,-68.111793518066,627246,8762)
+   create("topi_b1_stalker_group_member_3",61.802719116211,0.81506073474884,-104.97379302979,607271,8762) 
+   create("topi_b1_stalker_group_member_4",55.122337341309,1.9669532775879e-005,-91.476684570313,598884,8762)   
+end
+
+function actor_has_medic_peredacha_item(first_speaker, second_speaker)
+	return first_speaker:object("topi_quest_medic_container") ~= nil
+end
+
+function topi_b1_stalker_dialog_enabled(first_speaker, second_speaker)
+	local a = ((db.actor:has_info("topi_b1_stalker_group_wounded_talking")) and (db.actor:has_info("topi_medic_quest_peredacha_give")))
+	local b = ((db.actor:has_info("topi_b1_stalker_group_wounded_time_false")) and (db.actor:has_info("topi_medic_quest_peredacha_give")))
+	return a or b
+end
+
+function run_gui_medic_healh_special(first_speaker, second_speaker)
+   run_gui(ins_gui_npc_dialogs.ui_all_medical_help_wounded())
+end
+
+function actor_give_quest_peredacha_item(first_speaker, second_speaker)
+		dialogs.relocate_item_section_from_actor(first_speaker, second_speaker, "topi_quest_medic_container")
+end
+-----------------------------------------------------------------------
+function topi_b6_create_first_scaner(first_speaker, second_speaker)   
+   alife():create("topi_spec_anomaly_scanner_1",vector():set(270.77215576172,0.57727074623108,562.33843994141),893138,8762) 
+   alife():create("topi_spec_anomaly_scanner_1_spot",vector():set(270.77215576172,0.57727074623108,562.33843994141),893138,8762) 
+end
+
+function topi_b6_to_actor_give_spez_outfit(first_speaker, second_speaker)
+   dialogs.relocate_item_section_to_actor(first_speaker, second_speaker, "stalker_outfit")
+end
+
+function give_novikov_zaton_scaner_quest() 
+    task_manager.get_task_manager():give_task("geonezis_topi_spec_scaner")    
+end
+
+function actot_to_novikov_give_zaton_scaner(first_speaker, second_speaker)
+   local items_table = {"topi_spec_anomaly_scanner_1","topi_spec_anomaly_scanner_2","topi_spec_anomaly_scanner_3","topi_spec_anomaly_scanner_4","topi_spec_anomaly_scanner_5","topi_spec_anomaly_scanner_6","topi_spec_anomaly_scanner_7"}
+   for k,v in pairs(items_table) do
+      if db.actor:object(v) ~= nil then
+         dialogs.relocate_item_section_from_actor(first_speaker, second_speaker, v)			
+      end
+   end	
+end
+
+function actot_have_all_zaton_scaner(first_speaker, second_speaker)
+   return db.actor:object("topi_spec_anomaly_scanner_1")~=nil and db.actor:object("topi_spec_anomaly_scanner_2")~=nil and 
+   db.actor:object("topi_spec_anomaly_scanner_3")~=nil and db.actor:object("topi_spec_anomaly_scanner_4")~=nil and 
+   db.actor:object("topi_spec_anomaly_scanner_5")~=nil and db.actor:object("topi_spec_anomaly_scanner_6")~=nil and
+   db.actor:object("topi_spec_anomaly_scanner_7")~=nil   	
+end
+-----------------------------------------------------------------------
+function topi_hunter_polter_quest_give() 
+    task_manager.get_task_manager():give_task("geonezis_topi_hunter_quest_polter")    
+end
+
+function topi_hunter_create_polters(first_speaker, second_speaker)
+   create("topi_b6_attacked_polter_1",-237.8479309082,-2.3394823074341e-005,513.56134033203,189825,8762)
+   create("topi_b6_attacked_polter_2",-235.78723144531,-0.00064599514007568,524.20715332031,192841,8762)
+   create("topi_b6_attacked_polter_3",-246.84716796875,-0.000527024269104,526.70727539063,177109,8762)
+   create("topi_b6_attacked_polter_4",-252.48304748535,0.081787626642075,518.75238037109,169032,8762)
+   create("topi_b6_attacked_polter_5",-253.98352050781,0.069995880126953,538.41394042969,166964,8762)   
+end
+-----------------------------------------------------------------------
+function topi_hunter_first_quest_give() 
+    task_manager.get_task_manager():give_task("geonezis_topi_hunter_quest_frogs")    
+end
+
+function topi_hunter_first_create_stalkers() 
+    create("topi_a7_stalker_hunter_leader",-0.86550617218018,0.00058081746101379,542.08044433594,523527,8762)
+	create("topi_a7_stalker_hunter_member_1",-4.1767163276672,-6.7293643951416,550.75701904297,518531,8762)
+	create("topi_a7_stalker_hunter_member_2",-1.2105300426483,-0.0030948519706726,527.0556640625,522509,8762)
+end
+
+function topi_hunter_first_quest_create_frogs(first_speaker, second_speaker)
+   create("topi_b6_attacked_frog_1",-181.90173339844,-0.00032487511634827,560.67791748047,271012,8762)
+   create("topi_b6_attacked_frog_2",-171.46128845215,-0.0001738965511322,571.33319091797,286091,8762)
+   create("topi_b6_attacked_frog_3",-162.80242919922,0.0038034319877625,565.98315429688,298203,8762)
+   create("topi_b6_attacked_frog_4",-153.06719970703,-0.002009391784668,560.31243896484,311913,8762)
+   create("topi_b6_attacked_frog_5",-162.50151062012,-0.001186728477478,554.27923583984,299175,8762)
+   create("topi_b6_attacked_frog_6",-183.57972717285,-0.0080010592937469,564.52130126953,268968,8762)
+   create("topi_b6_attacked_frog_7",-191.37762451172,-0.0014889538288116,554.81036376953,258106,8762)
+end
+
+function topi_hunter_first_quest_give_money_to_actor(first_speaker, second_speaker)
+	dialogs.relocate_money_to_actor(first_speaker, second_speaker, 6000)
+end
+
+function actot_has_hunter_money_1(first_speaker, second_speaker)
+	return db.actor:money() >= 3000
+end
+
+function actot_has_hunter_money_2(first_speaker, second_speaker)
+	return db.actor:money() >= 6000
+end
+
+function topi_give_money_to_hunter_1(first_speaker, second_speaker)
+	local topi_b6_money_1 = 3000
+	dialogs.relocate_money_from_actor(first_speaker, second_speaker, topi_b6_money_1)
+end
+
+function topi_give_money_to_hunter_2(first_speaker, second_speaker)
+	local topi_b6_money_2 = 6000
+	dialogs.relocate_money_from_actor(first_speaker, second_speaker, topi_b6_money_2)
+end
+-----------------------------------------------------------------------
+function topi_snab_tai_give(first_speaker, second_speaker)
+    dialogs.relocate_item_section_to_actor(first_speaker, second_speaker, "topi_example_taynik_1_item")
+    dialogs.relocate_item_section_to_actor(first_speaker, second_speaker, "topi_example_taynik_2_item")
+    dialogs.relocate_item_section_to_actor(first_speaker, second_speaker, "topi_example_taynik_3_item")	
+	create("topi_b9_bandit_member_1",319.58999633789,-0.0026794373989105,144.75373840332,957487,8762)
+	create("topi_b9_bandit_member_2",329.19354248047,-0.00099986791610718,149.32620239258,970211,8762)
+	create("topi_b9_bandit_member_3",302.16830444336,0.82165694236755,138.36454772949,935507,8762)
+end
+
+function topi_snab_quest_give() 
+    task_manager.get_task_manager():give_task("geonezis_topi_snab_quest_main")
+    task_manager.get_task_manager():give_task("geonezis_topi_snab_set_1")
+    task_manager.get_task_manager():give_task("geonezis_topi_snab_set_2")
+	task_manager.get_task_manager():give_task("geonezis_topi_snab_set_3")
+end
+
+function topi_snab_item_to_actor(first_speaker, second_speaker)   
+   dialogs.relocate_item_section_to_actor(first_speaker, second_speaker, "detector_advanced", 3)
+   dialogs.relocate_item_section_to_actor(first_speaker, second_speaker, "wpn_ak104", 3)
+end
+
+function topi_snab_quest_give_2()     
+    task_manager.get_task_manager():give_task("geonezis_topi_snab_use_1")
+    task_manager.get_task_manager():give_task("geonezis_topi_snab_use_2")
+	task_manager.get_task_manager():give_task("geonezis_topi_snab_use_3")
+end
+
+function actot_has_bandit_money_1(first_speaker, second_speaker)
+	return db.actor:money() >= 5000
+end
+
+function topi_bandit_money_1_give(first_speaker, second_speaker)
+	local topi_b6_money_3 = 5000
+	dialogs.relocate_money_from_actor(first_speaker, second_speaker, topi_b6_money_3)
+end
+
+-----------------------------------------------------------------------
+function topi_b1_leader_second_quest_give_quest() 
+    task_manager.get_task_manager():give_task("geonezis_topi_b1_leader_second_quest")    
+end
+
+function topi_b1_leader_second_quest_give_item(first_speaker, second_speaker)
+    dialogs.relocate_item_section_to_actor(first_speaker, second_speaker, "topi_b1_leader_radiotion_item")    
+end
+
+function actot_has_b1_leader_second_quest_item(first_speaker, second_speaker)
+	return first_speaker:object("topi_b1_leader_radiotion_doc") ~= nil and first_speaker:object("topi_b1_leader_radiotion_item") ~= nil
+end
+
+function topi_b1_second_quest_item_to_stalker(first_speaker, second_speaker)
+    dialogs.relocate_item_section_from_actor(first_speaker, second_speaker, "topi_b1_leader_radiotion_item")  
+    dialogs.relocate_item_section_from_actor(first_speaker, second_speaker, "topi_b1_leader_radiotion_doc")	
+end
+
+-----------------------------------------------------------------------
+function topi_radist_tai_give(first_speaker, second_speaker)
+    dialogs.relocate_item_section_to_actor(first_speaker, second_speaker, "topi_barsuk_taynik_1_naved", 3)
+    dialogs.relocate_item_section_to_actor(first_speaker, second_speaker, "topi_barsuk_taynik_1_kabel", 3)
+    dialogs.relocate_item_section_to_actor(first_speaker, second_speaker, "topi_barsuk_taynik_1_pered", 3)
+    dialogs.relocate_item_section_to_actor(first_speaker, second_speaker, "topi_barsuk_taynik_1_blok", 3)
+    dialogs.relocate_item_section_to_actor(first_speaker, second_speaker, "topi_barsuk_taynik_1_akum", 3)    
+	dialogs.relocate_item_section_to_actor(first_speaker, second_speaker, "topi_barsuk_taynik_1_item", 3)    	
+end
+
+function topi_radist_comp_give_to_actor(first_speaker, second_speaker)
+    dialogs.relocate_item_section_to_actor(first_speaker, second_speaker, "topi_barsuk_taynik_1_comp")        	
+end
+
+function topi_radist_comp_give_from_actor(first_speaker, second_speaker)
+    dialogs.relocate_item_section_from_actor(first_speaker, second_speaker, "topi_barsuk_taynik_1_comp")        	
+end
+
+function topi_radist_quest_give() 
+    task_manager.get_task_manager():give_task("geonezis_topi_radist_quest_main")
+    task_manager.get_task_manager():give_task("geonezis_topi_radist_set_1")
+    task_manager.get_task_manager():give_task("geonezis_topi_radist_set_2")
+	task_manager.get_task_manager():give_task("geonezis_topi_radist_set_3")
+end

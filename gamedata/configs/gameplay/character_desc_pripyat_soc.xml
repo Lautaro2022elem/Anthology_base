@@ -1,0 +1,131 @@
+<?xml version='1.0' encoding="windows-1251"?>
+<xml>
+
+<!-------------------------- STALKER ----------------------->
+<!------------------------- FOLLOWERS ---------------------->
+<specific_character id="pri_followers_bomber" team_default = "1">
+    <name>GENERATE_NAME_stalker</name>
+    <icon>ui_inGame2_stalker_exoseva</icon>
+    <map_icon x="1" y="0"></map_icon>
+    <bio>Опытный сталкер. Детальная информация отсутствует.</bio>
+    <class>pri_followers_bomber</class>
+    <community>stalker</community> <terrain_sect>stalker_terrain</terrain_sect>
+    <snd_config>characters_voice\human\stalker_3\</snd_config>
+    <rank>23028</rank>
+    <money min="5000" max="10000" infinitive="0"/>
+    <reputation>-88</reputation>
+    <visual>actors\stalker_neutral\stalker_neutral_exoseva</visual>
+    <supplies>
+#include "gameplay\loadouts\freedom_base.ltx"
+#include "gameplay\loadouts\freedom_tier_4.ltx"
+[spawn] \n
+#include "gameplay\supplies\character_items_2.xml"
+#include "gameplay\supplies\character_food_2.xml"
+#include "gameplay\supplies\character_medical_sci.xml"
+#include "gameplay\supplies\character_drugs_3.xml"
+    </supplies>
+#include "gameplay\character_criticals.xml"
+#include "gameplay\character_dialogs.xml"
+    </specific_character>
+
+<specific_character id="pri_followers_leader" team_default = "1">
+    <name>GENERATE_NAME_stalker</name>
+    <icon>ui_inGame2_neutral_4</icon>
+    <map_icon x="1" y="0"></map_icon>
+    <bio>Опытный сталкер. Детальная информация отсутствует.</bio>
+    <class>pri_followers_leader</class>
+    <community>stalker</community> <terrain_sect>stalker_terrain</terrain_sect>
+    <snd_config>characters_voice\human\stalker_3\</snd_config>
+    <rank>23028</rank>
+    <money min="5000" max="10000" infinitive="0"/>
+    <reputation>-88</reputation>
+    <visual>actors\stalker_neutral\stalker_neutral_4</visual>
+    <supplies>
+#include "gameplay\loadouts\freedom_base.ltx"
+#include "gameplay\loadouts\freedom_tier_4.ltx"
+[spawn] \n
+#include "gameplay\supplies\character_items_2.xml"
+#include "gameplay\supplies\character_food_2.xml"
+#include "gameplay\supplies\character_medical_sci.xml"
+#include "gameplay\supplies\character_drugs_3.xml"
+    </supplies>
+#include "gameplay\character_criticals.xml"
+#include "gameplay\character_dialogs.xml"
+    </specific_character>
+
+<specific_character id="pri_followers_stalker1" team_default = "1">
+    <name>GENERATE_NAME_stalker</name>
+    <icon>ui_inGame2_neutral_4</icon>
+    <map_icon x="1" y="0"></map_icon>
+    <bio>Опытный сталкер. Детальная информация отсутствует.</bio>
+    <class>pri_followers_stalker1</class>
+    <community>stalker</community> <terrain_sect>stalker_terrain</terrain_sect>
+    <snd_config>characters_voice\human\stalker_3\</snd_config>
+    <rank>23028</rank>
+    <money min="5000" max="10000" infinitive="0"/>
+    <reputation>-88</reputation>
+    <visual>actors\stalker_neutral\stalker_neutral_4</visual>
+    <supplies>
+#include "gameplay\loadouts\freedom_base.ltx"
+#include "gameplay\loadouts\freedom_tier_4.ltx"
+[spawn] \n
+#include "gameplay\supplies\character_items_2.xml"
+#include "gameplay\supplies\character_food_2.xml"
+#include "gameplay\supplies\character_medical_sci.xml"
+#include "gameplay\supplies\character_drugs_3.xml"
+    </supplies>
+#include "gameplay\character_criticals.xml"
+#include "gameplay\character_dialogs.xml"
+    </specific_character>
+
+<specific_character id="pri_followers_stalker2" team_default = "1">
+    <name>GENERATE_NAME_stalker</name>
+    <icon>ui_inGame2_neutral_4</icon>
+    <map_icon x="1" y="0"></map_icon>
+    <bio>Опытный сталкер. Детальная информация отсутствует.</bio>
+    <class>pri_followers_stalker2</class>
+    <community>stalker</community> <terrain_sect>stalker_terrain</terrain_sect>
+    <snd_config>characters_voice\human\stalker_3\</snd_config>
+    <rank>23028</rank>
+    <money min="5000" max="10000" infinitive="0"/>
+    <reputation>-88</reputation>
+    <visual>actors\stalker_neutral\stalker_neutral_4</visual>
+    <supplies>
+#include "gameplay\loadouts\freedom_base.ltx"
+#include "gameplay\loadouts\freedom_tier_4.ltx"
+[spawn] \n
+#include "gameplay\supplies\character_items_2.xml"
+#include "gameplay\supplies\character_food_2.xml"
+#include "gameplay\supplies\character_medical_sci.xml"
+#include "gameplay\supplies\character_drugs_3.xml"
+    </supplies>
+#include "gameplay\character_criticals.xml"
+#include "gameplay\character_dialogs.xml"
+    </specific_character>
+
+<specific_character id="pri_followers_stalker3" team_default = "1">
+    <name>GENERATE_NAME_stalker</name>
+    <icon>ui_inGame2_neutral_4</icon>
+    <map_icon x="1" y="0"></map_icon>
+    <bio>Опытный сталкер. Детальная информация отсутствует.</bio>
+    <class>pri_followers_stalker3</class>
+    <community>stalker</community> <terrain_sect>stalker_terrain</terrain_sect>
+    <snd_config>characters_voice\human\stalker_3\</snd_config>
+    <rank>23028</rank>
+    <money min="5000" max="10000" infinitive="0"/>
+    <reputation>-88</reputation>
+    <visual>actors\stalker_neutral\stalker_neutral_4</visual>
+    <supplies>
+#include "gameplay\loadouts\freedom_base.ltx"
+#include "gameplay\loadouts\freedom_tier_4.ltx"
+[spawn] \n
+#include "gameplay\supplies\character_items_2.xml"
+#include "gameplay\supplies\character_food_2.xml"
+#include "gameplay\supplies\character_medical_sci.xml"
+#include "gameplay\supplies\character_drugs_3.xml"
+    </supplies>
+#include "gameplay\character_criticals.xml"
+#include "gameplay\character_dialogs.xml"
+    </specific_character>
+
+</xml>

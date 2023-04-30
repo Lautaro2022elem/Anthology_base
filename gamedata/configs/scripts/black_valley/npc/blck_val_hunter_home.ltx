@@ -1,0 +1,38 @@
+;=========meet_quest_line========
+[meet@quest_line]
+close_anim 		= nil
+close_victim 	= nil
+far_anim 		= nil
+far_victim 		= nil
+close_distance 	= 0
+far_distance 	= 0
+use = {=actor_enemy} false, {=dist_to_actor_le(3)} true, false
+snd_on_use = {!dist_to_actor_le(3)} nil
+meet_on_talking = false
+;==================================
+
+[logic]
+active = walker@hunter_home
+level_spot = quest_npc
+suitable = {=check_npc_name(blck_val_hunter_home)} true, false
+prior = 200
+
+[walker@hunter_home]
+path_walk = blck_val_hunter_hutor_walk
+path_look = blck_val_hunter_hutor_look
+on_info = {=actor_enemy} %=actor_neutral%
+gather_items_enabled = false
+corpse_detection_enabled = false
+combat_ignore_keep_when_attacked = true 
+combat_ignore_cond = true
+invulnerable = true
+meet = meet@start_quest
+use_camp = false
+
+;------------------------------------------
+[meet@start_quest]:meet@quest_line
+close_victim = actor
+use = {+blck_val_tech_reload_community_again} true, false
+allow_break = false
+meet_dialog = blck_val_actor_meet_from_hunter
+trade_enable = false

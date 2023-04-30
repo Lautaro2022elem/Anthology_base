@@ -1,0 +1,85 @@
+--|>
+[geonezis_jup_bioradar_fenix_all_quest] 
+icon = ui_inGame2_Detector_Fenix_All
+prior = 100 
+storyline = false 
+title = jup_bioradar_fenix_all_quest_title0 
+descr = jup_bioradar_fenix_all_quest_text0 
+target = nil
+condlist_0 = {+jup_bioradar_fenix_3_quest_done} complete 
+on_complete = %=inc_faction_goodwill_to_actor(ecolog:150)%
+--|>
+[geonezis_jup_bioradar_fenix_1_quest] 
+icon = ui_inGame2_Detector_Fenix_1
+prior = 100 
+storyline = false 
+title = {+jup_fenix_1_actor_take_mutants_snork_part +jup_fenix_1_actor_take_mutants_bloodsucker_part +jup_fenix_1_actor_take_mutants_burer_part +jup_fenix_1_actor_take_mutants_kontroller_part +jup_fenix_1_actor_take_mutants_chimera_part +jup_fenix_1_actor_take_mutants_gigant_part} jup_bioradar_fenix_1_quest_title6, jup_bioradar_fenix_1_quest_title0 
+descr = {+jup_fenix_1_actor_take_mutants_snork_part +jup_fenix_1_actor_take_mutants_bloodsucker_part +jup_fenix_1_actor_take_mutants_burer_part +jup_fenix_1_actor_take_mutants_kontroller_part +jup_fenix_1_actor_take_mutants_chimera_part +jup_fenix_1_actor_take_mutants_gigant_part} jup_bioradar_fenix_1_quest_text6,  jup_bioradar_fenix_1_quest_text0
+target = jup_b6_scientist_nuclear_physicist
+condlist_0 = {+jup_bioradar_fenix_1_quest_done} complete 
+on_complete = %=inc_faction_goodwill_to_actor(ecolog:50)%
+reward_money = 5000
+--|>
+[geonezis_jup_bioradar_fenix_2_quest] 
+icon = ui_inGame2_Detector_Fenix_2
+prior = 100 
+storyline = false 
+title = {+jf2_a1 +jf2_a2 +jf2_a3 +jf2_a4} jf2_q_title4, {+jf2_a1 +jf2_a2 -jf2_a3 +jf2_a4} jf2_q_title3, {+jf2_a1 -jf2_a2 +jf2_a3 +jf2_a4} jf2_q_title3, {-jf2_a1 +jf2_a2 +jf2_a3 +jf2_a4} jf2_q_title3, {+jf2_a1 +jf2_a2 +jf2_a3 -jf2_a4} jf2_q_title3, {+jf2_a1 -jf2_a2 -jf2_a3 +jf2_a4} jf2_q_title2, {-jf2_a1 -jf2_a2 +jf2_a3 +jf2_a4} jf2_q_title2, {-jf2_a1 +jf2_a2 +jf2_a3 -jf2_a4} jf2_q_title2, {+jf2_a1 -jf2_a2 +jf2_a3 -jf2_a4} jf2_q_title2, {+jf2_a1 +jf2_a2 -jf2_a3 -jf2_a4} jf2_q_title2, {-jf2_a1 -jf2_a2 -jf2_a3 +jf2_a4} jf2_q_title1, {-jf2_a1 -jf2_a2 +jf2_a3 -jf2_a4} jf2_q_title1, {-jf2_a1 +jf2_a2 -jf2_a3 -jf2_a4} jf2_q_title1, {+jf2_a1 -jf2_a2 -jf2_a3 -jf2_a4} jf2_q_title1, {-jf2_a1 -jf2_a2 -jf2_a3 -jf2_a4} jf2_q_title0 
+descr = {+jf2_a1 +jf2_a2 +jf2_a3 +jf2_a4} jf2_q_text4, {+jf2_a1 +jf2_a2 -jf2_a3 +jf2_a4} jf2_q_text3, {+jf2_a1 -jf2_a2 +jf2_a3 +jf2_a4} jf2_q_text3, {-jf2_a1 +jf2_a2 +jf2_a3 +jf2_a4} jf2_q_text3, {+jf2_a1 +jf2_a2 +jf2_a3 -jf2_a4} jf2_q_text3, {+jf2_a1 -jf2_a2 -jf2_a3 +jf2_a4} jf2_q_text2, {-jf2_a1 -jf2_a2 +jf2_a3 +jf2_a4} jf2_q_text2, {-jf2_a1 +jf2_a2 +jf2_a3 -jf2_a4} jf2_q_text2, {+jf2_a1 -jf2_a2 +jf2_a3 -jf2_a4} jf2_q_text2, {+jf2_a1 +jf2_a2 -jf2_a3 -jf2_a4} jf2_q_text2, {-jf2_a1 -jf2_a2 -jf2_a3 +jf2_a4} jf2_q_text1, {-jf2_a1 -jf2_a2 +jf2_a3 -jf2_a4} jf2_q_text1, {-jf2_a1 +jf2_a2 -jf2_a3 -jf2_a4} jf2_q_text1, {+jf2_a1 -jf2_a2 -jf2_a3 -jf2_a4} jf2_q_text1, {-jf2_a1 -jf2_a2 -jf2_a3 -jf2_a4} jf2_q_text0 
+target = jup_b6_scientist_biochemist
+condlist_0 = {+jup_bioradar_fenix_2_quest_done} complete 
+on_complete = %=inc_faction_goodwill_to_actor(ecolog:50)%
+reward_money = 5000
+--|>
+[geonezis_jup_bioradar_fenix_3_1_quest] 
+icon = ui_inGame2_Detector_Fenix_3
+prior = 100 
+storyline = false 
+title = {=actor_has_item(zat_anomalies_1_scanner)}jup_bioradar_fenix_3_1_quest_title1, jup_bioradar_fenix_3_1_quest_title0 
+descr = jup_bioradar_fenix_3_quest_text0 
+target = {=actor_has_item(zat_anomalies_1_scanner)} jup_b6_scientist_tech, zat_b53_spot
+condlist_0 = {+jup_bioradar_fenix_3_quest_done} complete 
+on_complete = %=inc_faction_goodwill_to_actor(ecolog:15)%
+--|>
+[geonezis_jup_bioradar_fenix_3_2_quest] 
+icon = ui_inGame2_Detector_Fenix_3
+prior = 100 
+storyline = false 
+title = {=actor_has_item(zat_anomalies_2_scanner)}jup_bioradar_fenix_3_2_quest_title1, jup_bioradar_fenix_3_2_quest_title0 
+descr = jup_bioradar_fenix_3_quest_text0 
+target = {=actor_has_item(zat_anomalies_2_scanner)} jup_b6_scientist_tech, zat_b54_spot
+condlist_0 = {+jup_bioradar_fenix_3_quest_done} complete 
+on_complete = %=inc_faction_goodwill_to_actor(ecolog:15)%
+--|>
+[geonezis_jup_bioradar_fenix_3_3_quest] 
+icon = ui_inGame2_Detector_Fenix_3
+prior = 100 
+storyline = false 
+title = {=actor_has_item(zat_anomalies_3_scanner)}jup_bioradar_fenix_3_3_quest_title1, jup_bioradar_fenix_3_3_quest_title0 
+descr = jup_bioradar_fenix_3_quest_text0 
+target = {=actor_has_item(zat_anomalies_3_scanner)} jup_b6_scientist_tech, zat_b55_spot
+condlist_0 = {+jup_bioradar_fenix_3_quest_done} complete 
+on_complete = %=inc_faction_goodwill_to_actor(ecolog:15)%
+--|>
+[geonezis_jup_bioradar_fenix_3_4_quest] 
+icon = ui_inGame2_Detector_Fenix_3
+prior = 100 
+storyline = false 
+title = {=actor_has_item(zat_anomalies_4_scanner)}jup_bioradar_fenix_3_4_quest_title1, jup_bioradar_fenix_3_4_quest_title0 
+descr = jup_bioradar_fenix_3_quest_text0 
+target = {=actor_has_item(zat_anomalies_4_scanner)} jup_b6_scientist_tech, zat_b101_spot
+condlist_0 = {+jup_bioradar_fenix_3_quest_done} complete 
+on_complete = % =inc_faction_goodwill_to_actor(ecolog:15)%
+--|>
+
+;---------------------------------------------------------------------------------------;
+[sgm_jup_bring_detector_kit]
+icon = ui_inGame2_BringDetectorKit
+prior = 100
+storyline = false
+title = {+jup_bring_detector_kit_naydeni} jup_bring_detector_kit_title1,{-jup_bring_detector_kit_naydeni} jup_bring_detector_kit_title0
+descr = {+jup_bring_detector_kit_naydeni} jup_bring_detector_kit_text1,{-jup_bring_detector_kit_naydeni} jup_bring_detector_kit_text0
+target = {=actor_has_item(detector_modify_toolkit)} jup_b6_scientist_tech
+condlist_0 = {+jup_bring_detector_kit_otdal} complete
+on_complete = %+jup_bring_detector_kit_complete
+=inc_faction_goodwill_to_actor(ecolog:15)%

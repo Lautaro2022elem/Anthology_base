@@ -1,0 +1,19 @@
+[logic]
+active = sr_idle@zver_sends_sms_raven
+
+[sr_idle@zver_sends_sms_raven]
+on_info = {+esc_trader_first_quest_complete} sr_idle@zver_sends_sms_raven_1
+
+[sr_idle@zver_sends_sms_raven_1]
+on_timer = 8000 | sr_idle@zohan_sends_sms_actor %=esc_nps_zver_quest_sms_1 +esc_quest_zohan_sends_sms_ready%
+
+[sr_idle@zohan_sends_sms_actor]
+on_info = {+esc_quest_zohan_sends_sms_ready} sr_idle@zohan_sends_sms_actor_1
+
+[sr_idle@zohan_sends_sms_actor_1]
+on_timer = 11500 | sr_idle@zohan_give_quest_actor %=esc_send_tip_zohan_quest%
+
+[sr_idle@zohan_give_quest_actor]
+on_timer = 3000 | sr_idle@nil %=give_task(esc_talk_to_zohan_quest)%
+
+[sr_idle@nil]

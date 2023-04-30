@@ -1,0 +1,49 @@
+[mob_home@1]
+path_home = dogs_home_2
+home_min_radius = 15
+home_max_radius = 30
+aggressive = true
+on_game_timer = 600 | {!mob_has_enemy} mob_home@2
+
+[mob_home@2]
+path_home = dogs_home_1
+home_min_radius = 15
+home_max_radius = 30
+aggressive = true
+on_game_timer = 600 | {!mob_has_enemy} mob_home@3
+
+[mob_home@3]
+path_home = dogs_home_2
+home_min_radius = 15
+home_max_radius = 30
+aggressive = true
+on_game_timer = 600 | {!mob_has_enemy} mob_home@4
+
+[mob_home@4]
+path_home = dogs_home_3
+home_min_radius = 15
+home_max_radius = 30
+aggressive = true
+on_game_timer = 600 | {!mob_has_enemy} mob_home@1
+
+[logic@def_dog]
+suitable = {=is_monster_dog} true, false
+active = mob_home@1
+prior = 120
+monster_job = true
+
+[logic@dog_1]:logic@def_dog
+
+[logic@dog_2]:logic@def_dog
+
+[logic@dog_3]:logic@def_dog
+
+[logic@dog_4]:logic@def_dog
+
+[logic@dog_5]:logic@def_dog
+
+[logic@dog_6]:logic@def_dog
+
+[logic@dog_7]:logic@def_dog
+
+[logic@dog_8]:logic@def_dog

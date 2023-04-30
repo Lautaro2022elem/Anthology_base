@@ -1,0 +1,32 @@
+[logic]
+active = sr_idle@podval_start
+
+[sr_idle@podval_start]
+on_actor_inside = {+pro_zver_drink_vodka_quest -pro_zver_drink_vodka_vrong} sr_idle@podval_start_2
+on_actor_outside = {+pro_zver_drink_vodka_quest} %+pro_zver_drink_vodka_vrong%
+
+[sr_idle@podval_start_2]
+on_timer = 2000 | sr_idle@podval_start_3 %=DisableUiScene =run_postprocess(black:2525:true)%
+
+[sr_idle@podval_start_3]
+on_timer = 2000 | sr_idle@podval_start_4 %=teleport_actor(actor_dream_podzemka_walk:actor_dream_podzemka_look)%
+
+[sr_idle@podval_start_4]
+on_timer = 2000 | sr_idle@podval_start_5 %=stop_postprocess(2525) +pb_ghost_podval_delete%
+
+[sr_idle@podval_start_5]
+on_timer = 100 | sr_idle@podval_start_6 %=enable_ui%
+
+[sr_idle@podval_start_6]
+on_timer = 1000 | sr_idle@shell_spawn %=give_task(pb_podzemka_search) +pb_give_quest_podzemka_search%
+
+[sr_idle@shell_spawn]
+on_info = {+pb_quest_podzemka_search_done} sr_idle@wake_up_start %=spawn_object(pb_zombied_shell:pro_zombied_shell_spawn)%
+
+[sr_idle@wake_up_start]
+on_info = {=actor_has_item(pb_quest_shell_brelok)} sr_idle@spawn_otshelnik_puzir %=DisableUiScene =run_postprocess(black:2525:true) +pro_kill_shell_and_wake_up%
+
+[sr_idle@spawn_otshelnik_puzir]
+on_timer = 1000 | sr_idle@nil %=spawn_object(pb_otshelnik_puzir:pro_otshelnik_puzir_spawn)%
+
+[sr_idle@nil]

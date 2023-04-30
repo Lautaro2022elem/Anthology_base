@@ -1,0 +1,46 @@
+;=========meet_stalker_korpys========
+[meet@korpys_stalker]
+close_anim 		= nil
+close_victim 	= nil
+far_anim 		= nil
+far_victim 		= nil
+close_distance 	= 0
+far_distance 	= 0
+use = {=actor_enemy} false, {=dist_to_actor_le(3)} true, false
+snd_on_use = {!dist_to_actor_le(3)} nil
+meet_on_talking = false
+;==================================
+
+[logic@esc_trader_security]
+active = camper@esc_trader_security
+suitable = {=check_npc_name(esc_trader_security)} true, false
+prior = 250
+
+[camper@esc_trader_security]
+path_walk = esc_trader_security_walk
+path_look = esc_trader_security_look
+on_info = {+esc_trader_meet_to_security_end} camper@esc_trader_security_after
+combat_ignore_cond = true
+combat_ignore_keep_when_attacked = true
+invulnerable = false
+gather_items_enabled = false
+help_wounded_enabled = false
+corpse_detection_enabled = false
+meet = no_meet
+
+[camper@esc_trader_security_after]
+path_walk = esc_trader_security_after_walk
+path_look = esc_trader_security_after_look
+on_info = {=dist_to_actor_le(2) -esc_security_trader_talk_end_sound} %=play_sound(esc_security_trader_talk) +esc_security_trader_talk_end_sound%
+combat_ignore_cond = true
+combat_ignore_keep_when_attacked = true
+invulnerable = false
+gather_items_enabled = false
+help_wounded_enabled = false
+corpse_detection_enabled = false
+meet = no_meet
+
+[meet@esc_quest_leader_kill_final]:meet@korpys_stalker
+close_victim = actor
+allow_break = false
+trade_enable = false

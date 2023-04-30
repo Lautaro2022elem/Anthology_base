@@ -1,0 +1,72 @@
+[logic@blck_val_b203_bandit_1]
+suitable = {=check_npc_name(blck_val_b203_bandit_1)} true
+prior = 100
+active = walker@blck_val_b203_bandit_1
+
+[walker@blck_val_b203_bandit_1]
+path_walk = bandit_1_walk
+path_look = bandit_1_look
+on_info = {+blck_val_actor_meet_from_shaman_done} %=play_sound(blck_val_bandit_search_levsha)%
+def_state_standing = threat
+def_state_moving = patrol
+meet = meet@blck_val_b203_bandit_1
+combat_ignore_cond = {=check_enemy_name(blck_val_b203_stalker)} true
+
+[meet@blck_val_b203_bandit_1]
+close_anim 		= nil
+close_victim 	= nil
+far_anim 		= nil
+far_victim 		= nil
+close_distance  = 0
+far_distance 	= 0
+close_snd_distance = 3
+use 			= nil
+close_snd_hello = nil
+trade_enable    = false
+allow_break 	= false
+meet_on_talking = false
+
+
+
+
+[logic@blck_val_b203_bandit_2]
+suitable = {=check_npc_name(blck_val_b203_bandit_2)} true
+prior = 100
+active = walker@blck_val_b203_bandit_2
+
+[walker@blck_val_b203_bandit_2]
+path_walk = bandit_2_walk
+path_look = bandit_2_look
+def_state_standing = hide
+def_state_moving = patrol
+meet = no_meet
+combat_ignore_cond = {=check_enemy_name(blck_val_b203_stalker)} true
+
+
+
+
+[logic@blck_val_b203_stalker]
+suitable = {=check_npc_name(blck_val_b203_stalker)} true
+prior = 100
+active = smartcover@blck_val_b203_stalker
+
+[smartcover@blck_val_b203_stalker]
+cover_name = blck_val_b203_stalker_cover
+;avail_animations = crouch_front_left
+on_info = {+blck_val_stavrid_meet_levsha_done} %=kill_npc%
+meet = meet@blck_val_b203_stalker
+combat_ignore_cond = {=check_enemy_name(blck_val_b203_bandit_1:blck_val_b203_bandit_2)} true
+
+[meet@blck_val_b203_stalker]
+close_anim 		= nil
+close_victim 	= nil
+far_anim 		= nil
+far_victim 		= nil
+close_distance  = 0
+far_distance 	= 0
+close_snd_distance = 3
+use = {=see_actor =dist_to_actor_le(5) +blck_val_band_zasada_squad_is_dead -blck_val_levsha_first_meet_done} self, {+blck_val_levsha_first_meet_done} true, false
+allow_break = false
+meet_dialog = blck_val_levsha_first_meet
+meet_on_talking = false
+trade_enable = false

@@ -1,0 +1,51 @@
+;---рестриктор для искуственного прохождения сюжетной линии до определенного момента
+
+[logic]
+active = sr_idle@nil
+;;--- active = sr_idle
+
+[sr_idle]
+on_info = %+esc_test_start =create_squad(esc_squad_monster_quest_2:esc_smart_terrain_quest_2) =teleport_actor(esc_test_walk:esc_test_look) =func_spawn_esc_borland +esc_army_shmatco_dialog_kpp_dialog_actor +esc_barrer_npc_remove_pat_1 +esc_reach_base_complite +spawn_esc_trepach =give_task(eac_reach_base) +esc_borland_start_dialog_go_info +esc_army_shmatco_dialog_kpp_complit +esc_colonel_kolyazin_prisoner_actor_dialog_complite +esc_army_shmatco_spawn_info +esc_actor_barrier_outside +esc_sr_barrer_zona_save +infa_esc_sr_barrer_zona_alarm_restiktor +infa_esc_sr_barrer_zona_danger_restiktor +esc_sr_barrer_zona_stop_restiktor% sr_idle@2
+
+[sr_idle@2]
+on_info = %=give_task(esc_quest_fee)+esc_npc_moskit_kill +esc_logoped_quest_gopstop_gotovo_dialog_and +esc_logoped_quest_gopstop_soglasn_dialog_and +esc_logoped_predlog_and +esc_quest_gopstop_complite +esc_infa_open_quest_trimming +esc_sr_escape_two_part +esc_the_first_penny_complite +esc_the_first_penny_nashel +esc_dialog_wolf_the_first_penny_complite +esc_dialog_wolf_the_first_penny_complite_and +esc_the_first_penny_inventory +esc_trepach_dialog_robbery_complit +esc_trepach_dialog_robbery_end +esc_dialog_wolf_the_first_penny_okey +esc_dialog_wolf_the_first_penny% sr_idle@3
+
+[sr_idle@3]
+on_info = %+esc_dialog_army_chernenco_and +eac_quest_fee_complite +esc_quest_fee_fail +esc_colonel_kolyazin_quest_fee_and +esc_colonel_kolyazin_quest_fee_out_habar +esc_borland_fee_dialog_and +esc_quest_fee_to_give_money% sr_idle@4
+
+[sr_idle@4]
+on_info = %+esc_quest_talk_wolf_complite +esc_trepach_dialog_robbery_complit +esc_wolf_quest_insurance_dialog_open +esc_wolf_quest_trimming_dialog_and +esc_klin_quest_trimming_dialog_and +esc_squad_quest_monster_1_dead +esc_squad_quest_monster_2_dead +esc_wolf_quest_trimming_dialog_complite_and +eac_quest_trimming_complite +esc_squad_quest_trimming_spawn% sr_idle@5
+
+[sr_idle@5]
+on_info = %=give_task(esc_quest_shadowing) +esc_quest_shadowing_complite +esc_quest_shadowing_shaman_dialog_and +esc_wolf_quest_insurance_dialog_and +esc_quest_insurance_complite% sr_idle@6
+
+[sr_idle@6]
+on_info = %+esc_quest_work_for_beginner_sidor_dialog_and +esc_quest_work_for_beginner_sidor_dialog_complite_and +esc_quest_hunting_complite +esc_quest_talk_wolf_work_complite +esc_quest_work_for_beginner_complite% sr_idle@7
+
+[sr_idle@7]
+on_info = %+esc_quest_trifling_matter_sidor_dialog_complite_and +esc_quest_trifling_matter_sidor_dialog_fail_and +esc_quest_trifling_matter_fail +esc_quest_trifling_matter_compl +esc_quest_trifling_matter_complite +esc_quest_trifling_matter_sidor_dialog_and% sr_idle@8
+
+[sr_idle@8]
+on_info = %+esc_quest_serious_business_d1_dialog_and +esc_quest_serious_business_d2_dialog_and +esc_quest_serious_business_d3_dialog_and +esc_serious_business_complite +esc_quest_serious_business_sidor_dialog_and% sr_idle@9
+
+[sr_idle@9]
+on_info = %+esc_dangerous_business_complite +esc_quest_dangerous_business_sidor_dialog_and% sr_idle@10
+
+[sr_idle@10]
+on_info = %=give_actor(esc_quest_freedom_pda) =give_task(esc_quest_line_secret_freedom) +esc_quest_line_missing_connected_watch +esc_quest_line_borland_meet_open +esc_quest_line_borland_meet_dialog_and +esc_quest_line_meet_borland_complete +esc_quest_line_patogen_meet_dialog_open +esc_quest_line_borland_meet_dialog_frend_and +esc_quest_line_patogen_meet_dialog_and +esc_quest_line_meet_patogen_complete +esc_freedom_plen_death +esc_quest_line_missing_connected_doclad +esc_quest_line_missing_connected_complete +esc_quest_line_patogen_meet_dialog_complite_two_and +esc_quest_line_salvation_freedom_dialog_open +esc_quest_line_salvation_freedom_reversed +esc_quest_line_salvation_freedom_complete% sr_idle@11
+
+[sr_idle@11]
+on_info = %+esc_quest_line_secret_freedom_elevator +esc_quest_line_important_meet_borland_dialog_and =spawn_object(esc_borland_quest:esc_borland_village_spawn) +esc_quest_line_important_meet_borland_dialog_and +esc_quest_line_secret_freedom_complete =give_task(esc_quest_line_away_from_the_bandits)% sr_idle@12
+
+[sr_idle@12]
+on_info = %=give_task(esc_quest_line_dungeon) +esc_borland_quest_away_from_the_bandits_dialog_complite +esc_quest_line_away_from_the_bandits_complete =remove_npc(esc_borland_quest) =remove_squad(esc_squad_baza_bandits) =create_squad(esc_squad_baza_csky:esc_smart_terrain_8_0)% sr_idle@13
+
+[sr_idle@13]
+on_info = %=ChGameTime(8) +esc_watchmaker_key_door_open +esc_borland_quest_away_from_the_bandits_dialog_complite +esc_quest_line_dungeon_complete =give_task(esc_quest_line_research_underground) =spawn_object(esc_borland_underground:esc_borland_underground_spawn) +esc_quest_line_dungeon_borland +esc_borland_quest_line_dungeon_dialog_open_door +esc_TEST_infa_quest_go =teleport_actor(esc_camera_podzem_lesnica_actor_walk:esc_camera_podzem_lesnica_actor_look) +esc_quest_line_research_underground_start% sr_idle@14
+
+[sr_idle@14]
+;;--- on_info = %+esc_quest_line_research_underground_sidor +esc_quest_line_research_underground_lab +esc_quest_line_research_underground_chasovhik +esc_underground_truba_exit_2 +esc_quest_line_research_underground_chasovhik_dialog +esc_quest_line_research_underground_sidor_key +esc_quest_line_research_underground_laba_go +esc_borland_und_laba +esc_codelock_lab_unlock +esc_quest_line_research_underground_complete =teleport_actor(esc_test_walk:esc_test_look)% sr_idle@15
+
+[sr_idle@15]
+
+[sr_idle@nil]

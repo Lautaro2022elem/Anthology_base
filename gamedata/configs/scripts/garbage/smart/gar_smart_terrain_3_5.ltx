@@ -1,0 +1,34 @@
+[smart_terrain]
+squad_id = 5
+max_population = 3
+respawn_params = respawn@gar_smart_terrain_3_5
+respawn_idle = 86400
+
+[respawn@gar_smart_terrain_3_5]
+spawn_bandit@advanced
+spawn_bandit@master
+
+[spawn_bandit@advanced]
+spawn_squads = bandit_sim_squad_novice
+spawn_num = 1
+
+[spawn_bandit@master]
+spawn_squads = bandit_sim_squad_advanced
+spawn_num = 1
+
+[exclusive]
+gar_bandit_leader = garbage\gar_smart_terrain_3_5_smart_logic.ltx
+gar_bandit_senya = garbage\gar_smart_terrain_3_5_smart_logic.ltx
+gar_bandit_fixer = garbage\gar_smart_terrain_3_5_smart_logic.ltx
+gar_bandit_trader = garbage\gar_smart_terrain_3_5_smart_logic.ltx
+gar_bandit_minigame = garbage\gar_bandit_minigame.ltx
+
+commentator_1 = garbage\gar_bandit_base.ltx
+commentator_2 = garbage\gar_bandit_base.ltx
+
+gar_smart_terrain_3_5_beh_trade_1 = garbage\gar_smart_terrain_3_5_smart_logic.ltx
+gar_smart_terrain_3_5_camp_work_2 = garbage\gar_smart_terrain_3_5_smart_logic.ltx
+gar_smart_terrain_3_5_camp_work_3 = garbage\gar_smart_terrain_3_5_smart_logic.ltx
+gar_smart_terrain_3_5_camp_work_4 = garbage\gar_smart_terrain_3_5_smart_logic.ltx
+gar_smart_terrain_3_5_camp_work_5 = garbage\gar_smart_terrain_3_5_smart_logic.ltx
+gar_smart_terrain_3_5_camp_work_6 = garbage\gar_smart_terrain_3_5_smart_logic.ltx

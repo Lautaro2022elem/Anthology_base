@@ -1,0 +1,11 @@
+[logic]
+active = ph_car
+
+[ph_car]
+path_walk = aes_btr_walk4
+target = actor
+on_info = {+aes_actor_btr_move} ph_car@2
+
+[ph_car@2]
+path_walk = aes_btr_walk4_2
+target = actor

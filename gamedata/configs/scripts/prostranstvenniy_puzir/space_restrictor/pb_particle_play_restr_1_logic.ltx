@@ -1,0 +1,15 @@
+[logic]
+active = sr_idle@wait
+
+[sr_idle@wait]
+on_info = {+pro_start_scene_end_info =actor_on_level(prostranstvenniy_puzir)} %+pb_main_quest_igra_effect_1_take%
+on_info2 = {+pb_main_quest_igra_effect_1_take -pb_main_quest_igra_effect_2_take} sr_particle@idle_1 %+pb_main_quest_igra_effect_2_take%
+
+[sr_particle@idle_1]
+name = explosions\explosion_dym
+path = pb_particle_play_point_1
+mode = 2
+looped = true
+on_info = {+perevalochnaya_baza_effect_end} sr_idle@play_restr_nil
+
+[sr_idle@play_restr_nil]

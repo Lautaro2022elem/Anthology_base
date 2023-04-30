@@ -1,0 +1,309 @@
+; --------------------------------------------------------------------------------------------------------------------------------------------
+[wounded] ;Не должен быть раненым
+hp_state = 0|wounded_heavy@help_heavy
+hp_state_see = 0|wounded_heavy@help_heavy
+hp_victim = 0|nil
+hp_fight = 0|false
+hp_cover = 0|false
+
+[walker@default_1]
+gather_items_enabled = false
+help_wounded_enabled = false
+corpse_detection_enabled = false
+out_restr = sad_b1_sr_no_assault
+in_restr = sad_b1_sr_light
+use_camp = false
+wounded = wounded
+
+[combat]
+out_restr = sad_b1_sr_no_assault
+in_restr = sad_b1_sr_light
+
+[hit]
+on_info = %+sad_mutny_squad_awake%
+
+[death]
+on_info = {=killed_by_actor} %=inc_counter(sad_b1_actor_enemies_kill) +sad_mutny_squad_awake%, %+sad_mutny_squad_awake%
+
+[death@mutny]
+on_info = {=killed_by_actor} %=inc_counter(sad_b1_actor_enemies_kill) +sad_mutny_squad_awake +sad_mutny_killed_by_actor +sad_mutny_dead%, %+sad_mutny_squad_awake +sad_mutny_dead%
+
+; -------------------------------------------------------------------------------------------------------- Mutny
+[logic@mutny_rage]
+active = remark@mutny_teleport
+suitable = {=check_npc_name(sad_b1_stalker_mutny) +sad_mutny_b1_accuped} true
+on_hit = hit
+on_death = death@mutny
+on_combat = combat
+prior = 250
+
+[remark@mutny_teleport]
+on_info = walker@mutny_1 %=teleport_npc(sad_sim_1_mutny_rage_walk)%
+
+[walker@mutny_1]:walker@default_1
+path_walk = mutny_rage_walk
+path_look = mutny_rage_look
+invulnerable = true
+combat_ignore_cond = true
+def_state_standing = fold_arms
+on_info = {+sad_mutny_squad_awake} walker@mutny_2
+
+[walker@mutny_2]:walker@default_1
+path_walk = mutny_rage_walk1
+path_look = mutny_rage_look
+
+; -------------------------------------------------------------------------------------------------------- Barman
+[logic@barman_rage]
+active = remark@barman_teleport
+suitable = {=check_npc_name(sad_b1_stalker_barman) +sad_mutny_b1_accuped} true
+on_hit = hit
+on_death = death
+on_combat = combat
+prior = 250
+
+[remark@barman_teleport]
+on_info = walker@barman_1 %=teleport_npc(sad_sim_1_mumer_barman_camper_walk)%
+
+[walker@barman_1]:walker@default_1
+path_walk = mumer_barman_camper_walk
+path_look = mumer_barman_camper_look
+combat_ignore_cond = true
+invulnerable = true
+on_info = {+sad_mutny_squad_awake} walker@barman_2
+
+[walker@barman_2]:walker@default_1
+path_walk = mumer_barman_camper_walk
+path_look = mumer_barman_camper_look
+
+; -------------------------------------------------------------------------------------------------------- Tech
+[logic@tech_rage]
+active = remark@tech_teleport
+suitable = {=check_npc_name(sad_b1_stalker_tech) +sad_mutny_b1_accuped} true
+on_hit = hit
+on_death = death
+on_combat = combat
+prior = 250
+
+[remark@tech_teleport]
+on_info = walker@tech_1 %=teleport_npc(sad_sim_1_mumer_tech_walk)%
+
+[walker@tech_1]:walker@default_1
+path_walk = mumer_tech_walk
+def_state_standing = sit
+combat_ignore_cond = true
+invulnerable = true
+on_info = {+sad_mutny_squad_awake} walker@tech_2
+
+[walker@tech_2]:walker@default_1
+path_walk = mumer_tech_walk
+
+; -------------------------------------------------------------------------------------------------------- sniper #1
+[logic@mumer_1]
+active = remark@mumer_1
+suitable = {=check_npc_name(sad_b1_mutny_member_1) +sad_mutny_b1_accuped } true
+on_hit = hit
+on_death = death
+on_combat = combat
+prior = 350
+
+[remark@mumer_1]
+on_info = walker@mumer_1_0 %=teleport_npc(sad_sim_1_mumer_1_0_walk)%
+
+[walker@mumer_1_0]:walker@default_1
+path_walk = mumer_1_0_walk
+path_look = mumer_1_0_look
+def_state_standing = wait_na
+combat_ignore_cond = true
+invulnerable = true
+on_info = {+sad_mutny_squad_awake} smartcover@mumer_1_2
+on_info2 = {+sad_mutny_snipers_awake} smartcover@mumer_1_1
+
+[smartcover@mumer_1_1]:walker@default_1
+reach_movement = run
+cover_name = sad_b1_smart_cover_house_1
+combat_ignore_cond = true
+invulnerable = true
+on_info = {+sad_mutny_squad_awake} smartcover@mumer_1_2
+
+[smartcover@mumer_1_2]:walker@default_1
+cover_name = sad_b1_smart_cover_house_1
+use_in_combat = true
+
+; -------------------------------------------------------------------------------------------------------- sniper #2
+[logic@mumer_2]
+active = remark@mumer_2 
+suitable = {=check_npc_name(sad_b1_mutny_member_2) +sad_mutny_b1_accuped } true
+on_hit = hit
+on_death = death
+on_combat = combat
+prior = 350
+
+[remark@mumer_2]
+on_info = walker@mumer_2_0 %=teleport_npc(sad_sim_1_mumer_2_0_walk)%
+
+[walker@mumer_2_0]:walker@default_1
+path_walk = mumer_2_0_walk
+path_look = mumer_2_0_look
+def_state_standing = wait_na
+combat_ignore_cond = true
+invulnerable = true
+on_info = {+sad_mutny_squad_awake} smartcover@mumer_2_2
+on_info2 = {+sad_mutny_snipers_awake} smartcover@mumer_2_1
+
+[smartcover@mumer_2_1]:walker@default_1
+cover_name = sad_b1_smart_cover_house_2
+combat_ignore_cond = true
+invulnerable = true
+on_info = {+sad_mutny_squad_awake} smartcover@mumer_2_2
+
+[smartcover@mumer_2_2]:walker@default_1
+cover_name = sad_b1_smart_cover_house_2
+use_in_combat = true
+
+; -------------------------------------------------------------------------------------------------------- member #3
+[logic@mumer_3]
+active = walker@mumer_3_0 
+suitable = { =target_squad_name(sad_b1_mutny_squad_two) } true
+on_hit = hit
+on_death = death
+on_combat = combat
+prior = 350
+
+[walker@mumer_3_0]:walker@default_1
+path_walk = mumer_3_0_walk
+path_look = mumer_3_0_look
+def_state_standing = otzimani_2 ;sit_ass
+combat_ignore_cond = true
+on_info = {+sad_mutny_squad_awake} walker@mumer_3_1
+
+[walker@mumer_3_1]:walker@default_1
+path_walk = mumer_3_0_walk
+path_look = mumer_3_0_look
+
+; -------------------------------------------------------------------------------------------------------- member #4
+[logic@mumer_4]
+active = walker@mumer_4_0 
+suitable = { =target_squad_name(sad_b1_mutny_squad_two) } true
+on_hit = hit
+on_death = death
+on_combat = combat
+prior = 300
+
+[walker@mumer_4_0]:walker@default_1
+path_walk = mumer_4_0_walk
+path_look = mumer_4_0_look
+def_state_standing = sit
+combat_ignore_cond = true
+on_info = {+sad_mutny_squad_awake} walker@mumer_4_1
+
+[walker@mumer_4_1]:walker@default_1
+path_walk = mumer_4_0_walk
+path_look = mumer_4_0_look
+
+; -------------------------------------------------------------------------------------------------------- member #5
+[logic@mumer_5]
+active = animpoint@mumer_5_0 
+suitable = { =target_squad_name(sad_b1_mutny_squad_two) } true
+on_hit = hit
+on_death = death
+on_combat = combat
+prior = 300
+
+[animpoint@mumer_5_0]:walker@default_1
+cover_name = sad_b1_animp1
+combat_ignore_cond = {+sad_mutny_squad_awake} false, true
+
+; -------------------------------------------------------------------------------------------------------- member #6
+[logic@mumer_6]
+active = animpoint@mumer_6_0 
+suitable = { =target_squad_name(sad_b1_mutny_squad_two) } true
+on_hit = hit
+on_death = death
+on_combat = combat
+prior = 300
+
+[animpoint@mumer_6_0]:walker@default_1
+cover_name = sad_b1_animp2
+combat_ignore_cond = {+sad_mutny_squad_awake} false, true
+
+; -------------------------------------------------------------------------------------------------------- member #7
+[logic@mumer_7]
+active = walker@mumer_7_0 
+suitable = { =target_squad_name(sad_b1_mutny_squad_two) } true
+on_hit = hit
+on_death = death
+on_combat = combat
+prior = 280
+
+[walker@mumer_7_0]:walker@default_1
+path_walk = mumer_7_0_walk
+combat_ignore_cond = true
+on_info = {+sad_mutny_squad_awake} walker@mumer_7_1
+
+[walker@mumer_7_1]:walker@default_1
+path_walk = mumer_7_0_walk
+
+; -------------------------------------------------------------------------------------------------------- member #8
+[logic@mumer_8]
+active = walker@mumer_8_0 
+suitable = { =target_squad_name(sad_b1_mutny_squad_two) } true
+on_hit = hit
+on_death = death
+on_combat = combat
+prior = 300
+
+[walker@mumer_8_0]:walker@default_1
+path_walk = mumer_8_0_walk
+path_look = mumer_8_0_look
+def_state_standing = sleep
+combat_ignore_cond = true
+on_info = {+sad_mutny_squad_awake} walker@mumer_8_1
+
+[walker@mumer_8_1]:walker@default_1
+path_walk = mumer_8_0_walk
+path_look = mumer_8_0_look
+
+; -------------------------------------------------------------------------------------------------------- member #9
+[logic@mumer_9]
+active = walker@mumer_9_0 
+suitable = { =target_squad_name(sad_b1_mutny_squad_two) } true
+on_hit = hit
+on_death = death
+on_combat = combat
+prior = 300
+
+[walker@mumer_9_0]:walker@default_1
+path_walk = mumer_9_0_walk
+path_look = mumer_9_0_look
+combat_ignore_cond = true
+on_info = {+sad_mutny_squad_awake} smartcover@mumer_8_1
+
+[smartcover@mumer_8_1]:walker@default_1
+cover_name = sad_b1_smart_cover_buda
+use_in_combat = true
+
+; -------------------------------------------------------------------------------------------------------- member #10
+[logic@mumer_10]
+active = walker@mumer_10_0 
+suitable = { =target_squad_name(sad_b1_mutny_squad_two) } true
+on_hit = hit
+on_death = death
+on_combat = combat
+prior = 300
+
+[walker@mumer_10_0]:walker@default_1
+path_walk = mumer_10_0_walk
+path_look = mumer_10_0_look
+combat_ignore_cond = true
+on_info = {+sad_mutny_squad_awake} walker@mumer_10_1
+
+[walker@mumer_10_1]:walker@default_1
+path_walk = mumer_10_0_walk
+path_look = mumer_10_0_look
+
+
+
+
+
+
+

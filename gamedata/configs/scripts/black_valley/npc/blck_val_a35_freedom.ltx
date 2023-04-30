@@ -1,0 +1,69 @@
+;=========meet_freedom_school========
+[meet@freedom_school]
+close_anim 		= nil
+close_victim 	= nil
+far_anim 		= nil
+far_victim 		= nil
+close_distance 	= 0
+far_distance 	= 0
+use = {=actor_enemy} false, {=dist_to_actor_le(3)} true, false
+snd_on_use = {!dist_to_actor_le(3)} nil
+meet_on_talking = false
+;==================================
+
+
+
+[logic@blck_val_a35_freedom_1]
+suitable = {=check_npc_name(blck_val_a35_freedom_1)} true
+prior = 100
+active = walker@blck_val_a35_freedom_1
+
+[walker@blck_val_a35_freedom_1]
+path_walk = freedom_1_walk
+path_look = freedom_1_look
+def_state_standing = binocular
+on_info = {=dist_to_actor_le(4) +blck_val_quest_find_art_from_barmen_done -blck_val_freedom_kisliy_first_meet_stop} %=play_sound(blck_val_freedom_kisliy_first_meet) +blck_val_freedom_kisliy_first_meet_stop%
+on_info2 = {+blck_val_zavod_zasada_quest_give} %=release_npc%
+on_info3 = {+blck_val_bandit_shmiga_escape_from_prison} %=release_npc%
+use_camp = false
+def_state_moving = patrol
+meet = no_meet
+
+[meet@blck_val_a35_freedom_1]:meet@freedom_school
+
+
+
+[logic@blck_val_a35_freedom_2]
+suitable = {=check_npc_name(blck_val_a35_freedom_2)} true
+prior = 100
+active = animpoint@blck_val_a35_freedom_2
+
+[animpoint@blck_val_a35_freedom_2]
+cover_name = blck_val_a35_freedom_cover_1
+avail_animations = animpoint_sit_ass
+on_info = {+blck_val_zavod_zasada_quest_give} %=release_npc%
+on_info2 = {+blck_val_bandit_shmiga_escape_from_prison} %=release_npc%
+use_camp = true
+meet = meet@blck_val_a35_freedom_2
+
+[meet@blck_val_a35_freedom_2]:meet@freedom_school
+
+
+
+[logic@blck_val_a35_freedom_3]
+suitable = {=check_npc_name(blck_val_a35_freedom_3)} true
+prior = 100
+active = animpoint@blck_val_a35_freedom_3
+
+[animpoint@blck_val_a35_freedom_3]
+cover_name = blck_val_a35_freedom_cover_2
+avail_animations = animpoint_sit_knee
+on_info = {+blck_val_zavod_zasada_quest_give} %=release_npc%
+on_info2 = {+blck_val_bandit_shmiga_escape_from_prison} %=release_npc%
+use_camp = true
+meet = meet@blck_val_a35_freedom_3
+
+[meet@blck_val_a35_freedom_3]:meet@freedom_school
+close_snd_hello = blck_val_freedom_kisliy_meet
+close_snd_bye = blck_val_freedom_kisliy_meet_bye
+close_snd_distance = 3

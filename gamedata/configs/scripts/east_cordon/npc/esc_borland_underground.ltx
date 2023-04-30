@@ -1,0 +1,134 @@
+#include "esc_borland_underground_*.ltx"
+
+[logic]
+active = remark@start
+post_combat_time = 0, 0
+danger = danger_ignore
+
+[danger_ignore]
+ignore_distance = 200
+ignore_distance_grenade = 200
+ignore_distance_corpse = 200
+ignore_distance_hit = 200
+ignore_distance_sound = 200
+
+[remark@start]
+anim = wait
+target = story | actor
+meet = no_meet
+on_info = {=dist_to_actor_le(8)} remark@hello %=actor_friend%
+on_info2 = {=actor_enemy} %=actor_friend%
+on_info3 = {+esc_TEST_infa_quest_go} camper@underground %=teleport_npc(esc_borland_underground_teleport)%
+invulnerable = true
+gather_items_enabled = false
+corpse_detection_enabled = false
+combat_ignore_keep_when_attacked = true 
+combat_ignore_cond = true
+
+[remark@hello]
+anim = hello_wpn
+target = story | actor
+meet = no_meet
+on_info = {=dist_to_actor_le(2)} remark@dialog
+on_info2 = {=actor_enemy} %=actor_friend%
+invulnerable = true
+gather_items_enabled = false
+corpse_detection_enabled = false
+combat_ignore_keep_when_attacked = true 
+combat_ignore_cond = true
+
+[remark@dialog]
+anim = wait_na
+target = story | actor
+meet = meet@1
+on_info = {+esc_borland_quest_line_dungeon_dialog_open_door} walker@walk
+on_info2 = {=actor_enemy} %=actor_friend%
+invulnerable = true
+gather_items_enabled = false
+corpse_detection_enabled = false
+combat_ignore_keep_when_attacked = true 
+combat_ignore_cond = true
+
+[walker@walk]
+path_walk = esc_borland_underground_walk
+path_look = esc_borland_underground_look
+def_state_moving = run
+gather_items_enabled = false
+corpse_detection_enabled = false
+combat_ignore_keep_when_attacked = true 
+combat_ignore_cond = true
+invulnerable = true
+meet = no_meet
+on_info = {+esc_quest_line_dungeon_teleport_borland} remark@dialog_1 %=teleport_npc(esc_borland_underground_teleport:esc_camera_podzem_lesnica_actor_walk)%
+on_info2 = {=actor_enemy} %=actor_friend%
+
+[remark@dialog_1]
+anim = wait_na
+target = story | actor
+meet = meet@2
+on_info = {+esc_quest_line_research_underground_start} camper@underground
+invulnerable = true
+gather_items_enabled = false
+corpse_detection_enabled = false
+combat_ignore_keep_when_attacked = true 
+combat_ignore_cond = true
+
+[camper@underground]
+path_walk = esc_borland_underground_walk_1
+path_look = esc_borland_underground_look_1
+no_retreat = true
+radius = 1
+on_info = {-esc_quest_line_research_underground_sidor =dist_to_actor_ge(12)} remark@wait %=esc_borland_underground_1_sms%
+on_signal = esc_borland_sidr| remark@seesidor
+gather_items_enabled = false
+corpse_detection_enabled = false
+def_state_moving = raid
+invulnerable = true
+meet = no_meet
+
+[remark@wait]
+anim = threat_danger
+target = story | actor
+meet = no_meet
+danger = danger
+on_info = {-esc_quest_line_research_underground_sidor =dist_to_actor_le(6)} camper@underground
+on_info2 = {+esc_quest_line_research_underground_sidor} camper@underground
+gather_items_enabled = false
+corpse_detection_enabled = false
+invulnerable = true
+
+[remark@seesidor]
+anim = guard
+target = story | actor
+meet = no_meet
+combat_ignore_cond = true
+combat_ignore_keep_when_attacked = true
+invulnerable = true
+gather_items_enabled = false
+help_wounded_enabled = false
+corpse_detection_enabled = false
+on_info = {+esc_quest_line_research_underground_lab} remark@predlog
+
+[remark@predlog]
+anim = wait
+target = story | actor
+meet = meet@3
+combat_ignore_cond = true
+combat_ignore_keep_when_attacked = true
+invulnerable = true
+gather_items_enabled = false
+help_wounded_enabled = false
+corpse_detection_enabled = false
+on_info = {+esc_quest_line_research_underground_chasovhik} remark@wait_savan
+
+[remark@wait_savan]
+anim = guard_na
+target = story | actor
+meet = no_meet
+combat_ignore_cond = true
+combat_ignore_keep_when_attacked = true
+invulnerable = true
+gather_items_enabled = false
+help_wounded_enabled = false
+corpse_detection_enabled = false
+on_info = {=dist_to_actor_ge(50)} %=release_npc% 

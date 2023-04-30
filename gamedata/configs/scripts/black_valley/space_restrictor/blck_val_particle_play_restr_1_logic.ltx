@@ -1,0 +1,14 @@
+[logic]
+active = sr_idle@wait
+
+[sr_idle@wait]
+on_info = {+blck_val_stronglav_monolit_spawn_dym -blck_val_stronglav_igra_effect_1_take} sr_particle@idle_1 %+blck_val_stronglav_igra_effect_1_take%
+
+[sr_particle@idle_1]
+name = explosions\explosion_dym
+path = blck_val_particle_play_point_1
+mode = 2
+looped = true
+on_info = {+blck_val_stronglav_go_to_labx7} sr_idle@nil
+
+[sr_idle@nil]

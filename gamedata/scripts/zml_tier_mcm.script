@@ -1,0 +1,294 @@
+local defaults = {
+    --BASIC--
+    --repair
+    ["repair_tier1"] = 0,
+    ["repair_tier2"] = 60,
+    ["repair_tier3"] = 80,
+    ["repair_tier4"] = 95,
+    --repair
+    ["repair_tier1"] = 0,
+    ["repair_tier2"] = 60,
+    ["repair_tier3"] = 80,
+    ["repair_tier4"] = 95,
+    --meds
+    ["meds_tier1"] = 0,
+    ["meds_tier2"] = 60,
+    ["meds_tier3"] = 80,
+    ["meds_tier4"] = 95,
+    --useful
+    ["useful_tier1"] = 0,
+    ["useful_tier2"] = 60,
+    ["useful_tier3"] = 80,
+    ["useful_tier4"] = 95,
+    --food
+    ["food_tier1"] = 0,
+    ["food_tier2"] = 60,
+    ["food_tier3"] = 80,
+    ["food_tier4"] = 95,
+    --drinks
+    ["drink_tier1"] = 0,
+    ["drink_tier2"] = 60,
+    ["drink_tier3"] = 80,
+    ["drink_tier4"] = 95,
+    --device
+    ["device_tier1"] = 0,
+    ["device_tier2"] = 60,
+    ["device_tier3"] = 80,
+    ["device_tier4"] = 95,
+    --tool
+    ["tool_tier1"] = 0,
+    ["tool_tier2"] = 60,
+    ["tool_tier3"] = 80,
+    ["tool_tier4"] = 95,
+    --container
+    ["container_tier1"] = 0,
+    ["container_tier2"] = 60,
+    ["container_tier3"] = 80,
+    ["container_tier4"] = 95,
+    --FACTION--
+    --military
+    ["army_tier1"] = 0,
+    ["army_tier2"] = 60,
+    ["army_tier3"] = 80,
+    ["army_tier4"] = 95,
+    --bandit
+    ["bandit_tier1"] = 0,
+    ["bandit_tier2"] = 60,
+    ["bandit_tier3"] = 80,
+    ["bandit_tier4"] = 95,
+    --clear sky
+    ["csky_tier1"] = 0,
+    ["csky_tier2"] = 60,
+    ["csky_tier3"] = 80,
+    ["csky_tier4"] = 95,
+    --duty
+    ["dolg_tier1"] = 0,
+    ["dolg_tier2"] = 60,
+    ["dolg_tier3"] = 80,
+    ["dolg_tier4"] = 95,
+    --ecologist
+    ["ecolog_tier1"] = 0,
+    ["ecolog_tier2"] = 60,
+    ["ecolog_tier3"] = 80,
+    ["ecolog_tier4"] = 95,
+    --freedom
+    ["freedom_tier1"] = 0,
+    ["freedom_tier2"] = 60,
+    ["freedom_tier3"] = 80,
+    ["freedom_tier4"] = 95,
+    --sin
+    ["greh_tier1"] = 0,
+    ["greh_tier2"] = 60,
+    ["greh_tier3"] = 80,
+    ["greh_tier4"] = 95,
+    --mercenary
+    ["killer_tier1"] = 0,
+    ["killer_tier2"] = 60,
+    ["killer_tier3"] = 80,
+    ["killer_tier4"] = 95,
+    --unisg
+    ["isg_tier1"] = 0,
+    ["isg_tier2"] = 60,
+    ["isg_tier3"] = 80,
+    ["isg_tier4"] = 95,
+    --monolith
+    ["monolith_tier1"] = 0,
+    ["monolith_tier2"] = 60,
+    ["monolith_tier3"] = 80,
+    ["monolith_tier4"] = 95,
+    --loner
+    ["stalker_tier1"] = 0,
+    ["stalker_tier2"] = 60,
+    ["stalker_tier3"] = 80,
+    ["stalker_tier4"] = 95,
+    --renegade
+    ["renegade_tier1"] = 0,
+    ["renegade_tier2"] = 60,
+    ["renegade_tier3"] = 80,
+    ["renegade_tier4"] = 95,
+    --INTEGRATION--
+    --lootbox
+    ["zzlootbox_tier1"] = 0,
+    ["zzlootbox_tier2"] = 60,
+    ["zzlootbox_tier3"] = 80,
+    ["zzlootbox_tier4"] = 95,
+    --magus
+    ["magus_tier1"] = 0,
+    ["magus_tier2"] = 60,
+    ["magus_tier3"] = 80,
+    ["magus_tier4"] = 95,
+}
+
+function get_config(key)
+    if ui_mcm then return ui_mcm.get("ZML/zml_tier/"..key) else return defaults[key] end
+end
+
+function on_mcm_load()
+    return { id="zml_tier", sh=true, gr={
+        --general
+        { id="header", type="slide", link="ui_options_slider_economy_diff", text="ui_mcm_menu_zml_tier", size= {512,50}, spacing=20 },
+        { id="tier_divider", type="line" },
+        { id="general_info", type="desc", text="ui_mcm_ZML_zml_tier_general_info", },
+        -- test colors
+        --{ id="general_info", type="desc", clr={255, 255, 0, 0}, text="ui_mcm_ZML_zml_tier_howto1_info", },
+        --{ id="general_info", type="desc", clr={255, 0, 255, 0}, text="ui_mcm_ZML_zml_tier_howto2_info", },
+        --{ id="general_info", type="desc", clr={255, 0, 0, 255}, text="ui_mcm_ZML_zml_tier_howto3_info", },
+        --BASIC--
+        -- repair
+        { id="repair_divider", type="line" },
+        { id="repair_info", type="desc", text="ui_mcm_ZML_zml_tier_repair_info", },
+        { id="repair_tier1", type="track", val=2, min=0, max=100, step=1, def=0 },
+        { id="repair_tier2", type="track", val=2, min=0, max=100, step=1, def=60 },
+        { id="repair_tier3", type="track", val=2, min=0, max=100, step=1, def=90 },
+        { id="repair_tier4", type="track", val=2, min=0, max=100, step=1, def=95 },
+        -- meds
+        { id="meds_divider", type="line" },
+        { id="meds_info", type="desc", text="ui_mcm_ZML_zml_tier_meds_info", },
+        { id="meds_tier1", type="track", val=2, min=0, max=100, step=1, def=0 },
+        { id="meds_tier2", type="track", val=2, min=0, max=100, step=1, def=60 },
+        { id="meds_tier3", type="track", val=2, min=0, max=100, step=1, def=90 },
+        { id="meds_tier4", type="track", val=2, min=0, max=100, step=1, def=95 },
+        -- drug
+        { id="drug_divider", type="line" },
+        { id="drug_info", type="desc", text="ui_mcm_ZML_zml_tier_drug_info", },
+        { id="drug_tier1", type="track", val=2, min=0, max=100, step=1, def=0 },
+        { id="drug_tier2", type="track", val=2, min=0, max=100, step=1, def=60 },
+        { id="drug_tier3", type="track", val=2, min=0, max=100, step=1, def=90 },
+        { id="drug_tier4", type="track", val=2, min=0, max=100, step=1, def=95 },
+        -- food
+        { id="food_divider", type="line" },
+        { id="food_info", type="desc", text="ui_mcm_ZML_zml_tier_food_info", },
+        { id="food_tier1", type="track", val=2, min=0, max=100, step=1, def=0 },
+        { id="food_tier2", type="track", val=2, min=0, max=100, step=1, def=60 },
+        { id="food_tier3", type="track", val=2, min=0, max=100, step=1, def=90 },
+        { id="food_tier4", type="track", val=2, min=0, max=100, step=1, def=95 },
+        -- drink
+        { id="drink_divider", type="line" },
+        { id="drink_info", type="desc", text="ui_mcm_ZML_zml_tier_drink_info", },
+        { id="drink_tier1", type="track", val=2, min=0, max=100, step=1, def=0 },
+        { id="drink_tier2", type="track", val=2, min=0, max=100, step=1, def=60 },
+        { id="drink_tier3", type="track", val=2, min=0, max=100, step=1, def=90 },
+        { id="drink_tier4", type="track", val=2, min=0, max=100, step=1, def=95 },
+        -- tool
+        { id="tool_divider", type="line" },
+        { id="tool_info", type="desc", text="ui_mcm_ZML_zml_tier_tool_info", },
+        { id="tool_tier1", type="track", val=2, min=0, max=100, step=1, def=0 },
+        { id="tool_tier2", type="track", val=2, min=0, max=100, step=1, def=60 },
+        { id="tool_tier3", type="track", val=2, min=0, max=100, step=1, def=90 },
+        { id="tool_tier4", type="track", val=2, min=0, max=100, step=1, def=95 },
+        -- device
+        { id="device_divider", type="line" },
+        { id="device_info", type="desc", text="ui_mcm_ZML_zml_tier_device_info", },
+        { id="device_tier1", type="track", val=2, min=0, max=100, step=1, def=0 },
+        { id="device_tier2", type="track", val=2, min=0, max=100, step=1, def=60 },
+        { id="device_tier3", type="track", val=2, min=0, max=100, step=1, def=90 },
+        { id="device_tier4", type="track", val=2, min=0, max=100, step=1, def=95 },
+        -- container
+        { id="container_divider", type="line" },
+        { id="container_info", type="desc", text="ui_mcm_ZML_zml_tier_container_info", },
+        { id="container_tier1", type="track", val=2, min=0, max=100, step=1, def=0 },
+        { id="container_tier2", type="track", val=2, min=0, max=100, step=1, def=60 },
+        { id="container_tier3", type="track", val=2, min=0, max=100, step=1, def=90 },
+        { id="container_tier4", type="track", val=2, min=0, max=100, step=1, def=95 },
+        -- lootbox
+        { id="zzlootbox_divider", type="line" },
+        { id="zzlootbox_info", type="desc", text="ui_mcm_ZML_zml_tier_zzlootbox_info", },
+        { id="zzlootbox_tier1", type="track", val=2, min=0, max=100, step=1, def=0 },
+        { id="zzlootbox_tier2", type="track", val=2, min=0, max=100, step=1, def=60 },
+        { id="zzlootbox_tier3", type="track", val=2, min=0, max=100, step=1, def=90 },
+        { id="zzlootbox_tier4", type="track", val=2, min=0, max=100, step=1, def=95 },
+        --FACTION--
+        { id="header", type="slide", link="ui_options_slider_economy_diff", text="ui_mcm_menu_zml_faction_tier", size= {512,50}, spacing=20 },
+        --military
+        { id="army_divider",type="line" },
+        { id="army_info", clr={255, 155, 124, 33}, type="desc", text="ui_mcm_ZML_zml_tier_army_info", },
+        { id="army_tier1", type="track", val=2, min=0, max=100, step=1, def=0 },
+        { id="army_tier2", type="track", val=2, min=0, max=100, step=1, def=60 },
+        { id="army_tier3", type="track", val=2, min=0, max=100, step=1, def=90 },
+        { id="army_tier4", type="track", val=2, min=0, max=100, step=1, def=95 },
+        --bandit
+        { id="bandit_divider", type="line" },
+        { id="bandit_info", clr={255, 217, 217, 217}, type="desc", text="ui_mcm_ZML_zml_tier_bandit_info", },
+        { id="bandit_tier1", type="track", val=2, min=0, max=100, step=1, def=0 },
+        { id="bandit_tier2", type="track", val=2, min=0, max=100, step=1, def=60 },
+        { id="bandit_tier3", type="track", val=2, min=0, max=100, step=1, def=90 },
+        { id="bandit_tier4", type="track", val=2, min=0, max=100, step=1, def=95 },
+        --clear sky
+        { id="csky_divider", type="line" },
+        { id="csky_info", clr={255, 40, 146, 169}, type="desc", text="ui_mcm_ZML_zml_tier_csky_info", },
+        { id="csky_tier1", type="track", val=2, min=0, max=100, step=1, def=0 },
+        { id="csky_tier2", type="track", val=2, min=0, max=100, step=1, def=60 },
+        { id="csky_tier3", type="track", val=2, min=0, max=100, step=1, def=90 },
+        { id="csky_tier4", type="track", val=2, min=0, max=100, step=1, def=95 },
+        --duty
+        { id="dolg_divider", type="line" },
+        { id="dolg_info", clr={255, 177, 0, 0}, type="desc", text="ui_mcm_ZML_zml_tier_dolg_info", },
+        { id="dolg_tier1", type="track", val=2, min=0, max=100, step=1, def=0 },
+        { id="dolg_tier2", type="track", val=2, min=0, max=100, step=1, def=60 },
+        { id="dolg_tier3", type="track", val=2, min=0, max=100, step=1, def=90 },
+        { id="dolg_tier4", type="track", val=2, min=0, max=100, step=1, def=95 },
+        --ecologist
+        { id="ecolog_divider", type="line" },
+        { id="ecolog_info", clr={255, 43, 127, 235}, type="desc", text="ui_mcm_ZML_zml_tier_ecolog_info", },
+        { id="ecolog_tier1", type="track", val=2, min=0, max=100, step=1, def=0 },
+        { id="ecolog_tier2", type="track", val=2, min=0, max=100, step=1, def=60 },
+        { id="ecolog_tier3", type="track", val=2, min=0, max=100, step=1, def=90 },
+        { id="ecolog_tier4", type="track", val=2, min=0, max=100, step=1, def=95 },
+        --freedom
+        { id="freedom_divider", type="line" },
+        { id="freedom_info", clr={255, 23, 105, 18}, type="desc", text="ui_mcm_ZML_zml_tier_freedom_info", },
+        { id="freedom_tier1", type="track", val=2, min=0, max=100, step=1, def=0 },
+        { id="freedom_tier2", type="track", val=2, min=0, max=100, step=1, def=60 },
+        { id="freedom_tier3", type="track", val=2, min=0, max=100, step=1, def=90 },
+        { id="freedom_tier4", type="track", val=2, min=0, max=100, step=1, def=95 },
+        --sin
+        { id="greh_divider", type="line" },
+        { id="greh_info", clr={255, 183, 122, 78}, type="desc", text="ui_mcm_ZML_zml_tier_greh_info", },
+        { id="greh_tier1", type="track", val=2, min=0, max=100, step=1, def=0 },
+        { id="greh_tier2", type="track", val=2, min=0, max=100, step=1, def=60 },
+        { id="greh_tier3", type="track", val=2, min=0, max=100, step=1, def=90 },
+        { id="greh_tier4", type="track", val=2, min=0, max=100, step=1, def=95 },
+        --mercenary
+        { id="killer_divider", type="line" },
+        { id="killer_info", clr={255, 0, 80, 146}, type="desc", text="ui_mcm_ZML_zml_tier_killer_info", },
+        { id="killer_tier1", type="track", val=2, min=0, max=100, step=1, def=0 },
+        { id="killer_tier2", type="track", val=2, min=0, max=100, step=1, def=60 },
+        { id="killer_tier3", type="track", val=2, min=0, max=100, step=1, def=90 },
+        { id="killer_tier4", type="track", val=2, min=0, max=100, step=1, def=95 },
+        --unisg
+        { id="isg_divider", type="line" },
+        { id="isg_info", clr={255, 154, 83, 92}, type="desc", text="ui_mcm_ZML_zml_tier_isg_info", },
+        { id="isg_tier1", type="track", val=2, min=0, max=100, step=1, def=0 },
+        { id="isg_tier2", type="track", val=2, min=0, max=100, step=1, def=60 },
+        { id="isg_tier3", type="track", val=2, min=0, max=100, step=1, def=90 },
+        { id="isg_tier4", type="track", val=2, min=0, max=100, step=1, def=95 },
+        --monolith
+        { id="monolith_divider", type="line" },
+        { id="monolith_info", clr={255, 135, 231, 235}, type="desc", text="ui_mcm_ZML_zml_tier_monolith_info", },
+        { id="monolith_tier1", type="track", val=2, min=0, max=100, step=1, def=0 },
+        { id="monolith_tier2", type="track", val=2, min=0, max=100, step=1, def=60 },
+        { id="monolith_tier3", type="track", val=2, min=0, max=100, step=1, def=90 },
+        { id="monolith_tier4", type="track", val=2, min=0, max=100, step=1, def=95 },
+        --loner
+        { id="stalker_divider", type="line" },
+        { id="stalker_info", clr={255, 225, 175, 0}, type="desc", text="ui_mcm_ZML_zml_tier_stalker_info", },
+        { id="stalker_tier1", type="track", val=2, min=0, max=100, step=1, def=0 },
+        { id="stalker_tier2", type="track", val=2, min=0, max=100, step=1, def=60 },
+        { id="stalker_tier3", type="track", val=2, min=0, max=100, step=1, def=90 },
+        { id="stalker_tier4", type="track", val=2, min=0, max=100, step=1, def=95 },
+        --renegade
+        { id="renegade_divider", type="line" },
+        { id="renegade_info", clr={255, 0, 121, 5}, type="desc", text="ui_mcm_ZML_zml_tier_renegade_info", },
+        { id="renegade_tier1", type="track", val=2, min=0, max=100, step=1, def=0 },
+        { id="renegade_tier2", type="track", val=2, min=0, max=100, step=1, def=60 },
+        { id="renegade_tier3", type="track", val=2, min=0, max=100, step=1, def=90 },
+        { id="renegade_tier4", type="track", val=2, min=0, max=100, step=1, def=95 },
+        --magus
+        { id="magus_divider", type="line" },
+        { id="magus_info", clr={255, 151, 47, 220}, type="desc", text="ui_mcm_ZML_zml_tier_magus_info", },
+        { id="magus_tier1", type="track", val=2, min=0, max=100, step=1, def=0 },
+        { id="magus_tier2", type="track", val=2, min=0, max=100, step=1, def=60 },
+        { id="magus_tier3", type="track", val=2, min=0, max=100, step=1, def=90 },
+        { id="magus_tier4", type="track", val=2, min=0, max=100, step=1, def=95 },
+    }}, "ZML"
+end

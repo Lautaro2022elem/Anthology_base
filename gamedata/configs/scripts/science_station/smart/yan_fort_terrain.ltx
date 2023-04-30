@@ -1,0 +1,24 @@
+[smart_terrain] 
+squad_id = 9
+max_population = 3
+respawn_params = respawn@yan_fort_terrain
+respawn_idle = 172800
+
+[respawn@yan_fort_terrain]
+spawn_army@novice
+spawn_army@advanced
+
+
+
+[spawn_army@novice]
+spawn_squads = army_sim_squad_novice, army_sim_squad_advanced
+spawn_num = 2
+
+[spawn_army@advanced]
+spawn_squads = army_sim_squad_advanced
+spawn_num = 1
+
+[exclusive]
+yan_fort_terrain_camp_work_1 = science_station\yan_fort_terrain_logic.ltx
+yan_fort_terrain_camp_work_2 = science_station\yan_fort_terrain_logic.ltx
+

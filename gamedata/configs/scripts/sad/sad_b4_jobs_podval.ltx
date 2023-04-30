@@ -1,0 +1,218 @@
+[walker@def_base]
+gather_items_enabled = false
+help_wounded_enabled = true
+corpse_detection_enabled = false
+wounded = wounded
+
+[walker@def]:walker@def_base
+combat_ignore_cond = {-sad_b4_actor_recognized =is_enemy_actor} true, {-sad_b4_actor_recognized =check_enemy_name(sad_b4_stalker_fedor)} true
+on_sound = actor|WPN_shoot|60|0.3| {=actor_in_zone(sad_b4_surge_hide)} %+sad_b4_actor_recognized%
+
+[wounded]
+hp_state 		= 15|wounded_heavy@help_heavy
+hp_state_see 	= 15|wounded_heavy@help_heavy
+hp_victim 		= 0|nil
+hp_fight 		= 0|false
+hp_cover		= 0|false
+
+[combat]
+;combat_type = monolith
+
+; -------------------------------------------------------------------------------------------------------------------------------------------- glavar
+[logic@glavar]
+suitable = { =check_npc_name(sad_b4_killer_glavar) } true
+active = animpoint@glavar
+on_hit = hit
+on_death = death
+;on_combat = combat
+prior = 200
+
+[animpoint@glavar]:walker@def
+cover_name = sad_b4_animp_glavar
+out_restr = sad_b4_surge_hide
+meet = meet@glavar
+on_info = {+sad_b4_actor_recognized} walker@glavar
+
+[walker@glavar]:walker@def_base
+path_walk = podval_guard_walk
+path_look = podval_guard_look
+out_restr = sad_b4_surge_hide
+def_state_moving = assault
+def_state_standing = hide
+on_info = {=is_wounded} remark@glavar_wounded
+;combat_ignore_cond = {=enemy_in_zone(sad_b4_surge_hide)} false, true
+
+[remark@glavar_wounded]
+on_info = {!is_wounded} walker@glavar
+on_game_timer = 240 | %=kill_npc%
+
+; -------------------------------------------------------------------------------------------------------------------------------------------- jail_guard
+[logic@jail_guard]
+suitable = { =check_npc_name(sad_b4_killer_podgvard) } true
+active = walker@jail_guard
+on_hit = hit
+on_death = death
+prior = 200
+
+[walker@jail_guard]:walker@def
+path_walk = jail_guard_walk
+path_look = jail_guard_look
+out_restr = sad_b4_sr_jail_zone
+on_info = {+sad_b4_jail_guard_parol} remark@kill_prisoner %+sad_b4_actor_recognized =set_squads_enemies(sad_b4_killer_two_squad:sad_b4_fedor_squad)%
+on_info2 = {+sad_b4_actor_recognized !actor_in_zone(sad_b4_sr_jail_zone)} remark@kill_prisoner %=set_squads_enemies(sad_b4_killer_two_squad:sad_b4_fedor_squad) =make_enemy(sad_b4_stalker_fedor)%
+on_info3 = {+sad_b4_actor_recognized =actor_in_zone(sad_b4_sr_jail_zone)} remark@kill_prisoner %=set_squads_enemies(sad_b4_killer_two_squad:sad_b4_fedor_squad) =make_enemy(sad_b4_stalker_fedor)%
+meet = meet@jail
+
+[remark@kill_prisoner]:walker@def_base
+danger = danger
+anim = threat_fire
+target = story | sad_b4_stalker_fedor
+snd = sad_die_bitch
+meet = no_meet
+gather_items_enabled = false
+help_wounded_enabled = false
+corpse_detection_enabled = false
+on_info = {+sad_fedor_dead} remark@kill
+
+
+; -------------------------------------------------------------------------------------------------------------------------------------------- 1
+[logic@podval_killer_1]
+suitable = { =target_squad_name( sad_b4_killer_two_squad ) } true
+active = animpoint@1_1
+on_hit = hit
+on_death = death
+;on_combat = combat
+prior = 150
+
+[animpoint@1_1]:walker@def
+cover_name = sad_b4_animp_poval_1
+out_restr = sad_b4_surge_hide
+meet = no_meet
+on_info = {+sad_b4_actor_recognized} walker@1_f1 %=sad_reset_animation%
+
+[walker@1_f1]:walker@def_base
+path_walk = podval_fight_1_walk
+on_info = {=is_wounded} remark@1_wounded
+on_info2 = {+sad_fedor_dead} remark@1_f2
+on_info3 = {=npc_in_zone(sad_b4_sr_jail_zone_2) -sad_fedor_dead} remark@1_kill
+combat_ignore_cond = {=see_actor} false, true
+def_state_moving = assault
+out_restr = sad_b4_sr_jail_zone_2
+
+[remark@1_kill]:walker@def_base
+on_info = remark@1_f2 %=make_enemy(sad_b4_stalker_fedor)%
+
+[remark@1_f2]:walker@def_base
+on_info = {=is_wounded} remark@1_wounded
+
+[remark@1_wounded]
+on_info = {!is_wounded} remark@1_f2
+on_game_timer = 240 | %=kill_npc%
+
+; -------------------------------------------------------------------------------------------------------------------------------------------- 2
+[logic@podval_killer_2]
+suitable = { =target_squad_name( sad_b4_killer_two_squad ) } true
+active = animpoint@2_1
+on_hit = hit
+on_death = death
+;on_combat = combat
+prior = 160
+
+[animpoint@2_1]:walker@def
+cover_name = sad_b4_animp_poval_2
+out_restr = sad_b4_surge_hide
+meet = no_meet
+on_info = {+sad_b4_actor_recognized} remark@2_f1 %=sad_reset_animation%
+
+[remark@2_f1]:walker@def_base
+out_restr = sad_b4_surge_hide
+on_info = {=is_wounded} remark@2_wounded
+on_info2 = {-sad_fedor_dead !actor_in_zone(sad_b4_sr_jail_zone)} walker@2_f2
+on_info3 = {+sad_fedor_dead} remark@2_free
+
+[walker@2_f2]:walker@def_base
+path_walk = podval_fight_2_walk
+combat_ignore_cond = {=see_actor} false, {=hit_by_actor} false, true
+on_info = {=is_wounded} remark@3_wounded
+on_info2 = {+sad_fedor_dead} remark@2_free
+on_info3 = {=npc_in_zone(sad_b4_sr_jail_zone_2) -sad_fedor_dead} remark@2_kill
+def_state_moving = assault
+
+[remark@2_kill]:walker@def_base
+on_info = {=is_wounded} remark@2_wounded
+on_info2 = remark@2_free %=make_enemy(sad_b4_stalker_fedor)%
+
+[remark@2_free]:walker@def_base
+on_info = {=is_wounded} remark@2_wounded
+
+[remark@2_wounded]
+on_info = {!is_wounded} remark@2_free
+on_game_timer = 240 | %=kill_npc%
+
+; -------------------------------------------------------------------------------------------------------------------------------------------- 3
+[logic@podval_killer_3]
+suitable = { =target_squad_name( sad_b4_killer_two_squad ) } true
+active = walker@3_1
+on_hit = hit
+on_death = death
+;on_combat = combat
+prior = 170
+
+[walker@3_1]:walker@def
+path_walk = podval_guard_walk
+path_look = podval_guard_look
+out_restr = sad_b4_surge_hide
+meet = no_meet
+on_info = {+sad_b4_actor_recognized} walker@3_f1
+
+[walker@3_f1]:walker@def_base
+path_walk = podval_fight_2_walk
+on_info = {=is_wounded} remark@3_wounded
+on_info2 = {+sad_fedor_dead} walker@3_f2
+on_info3 = {=npc_in_zone(sad_b4_sr_jail_zone_2) -sad_fedor_dead} walker@3_f2 %=make_enemy(sad_b4_stalker_fedor)%
+combat_ignore_cond = {=see_actor} false, true
+def_state_moving = assault
+out_restr = sad_b4_sr_jail_zone_2
+
+[walker@3_f2]:walker@def_base
+path_walk = podval_fight_2_walk
+on_info = {=is_wounded} remark@3_wounded
+
+[remark@3_wounded]
+on_info = {!is_wounded} walker@3_f2
+on_game_timer = 240 | %=kill_npc%
+
+; ------------------------------------
+[remark@kill]
+;out_restr = sad_b4_sr_jail_zone
+
+; ------------------------------------
+[meet@jail]
+close_snd_hello = nil
+close_distance  = 3
+close_victim  = actor
+close_anim = wait_na
+far_distance 	= 4
+use = {-sad_b4_actor_recognized -sad_b4_jail_guard_parol =dist_to_actor_le(3)} self, false
+meet_dialog = sad_b4_jail_guard
+trade_enable = false
+allow_break = false
+
+[meet@glavar]
+close_snd_hello = nil
+close_distance  = 2
+close_victim    = actor
+close_anim = nil
+use = {-sad_b4_actor_recognized} true, false
+meet_dialog = sad_b4_killer_glavar
+trade_enable = false
+allow_break = false
+
+[death]
+on_info = {=killed_by_actor} %+sad_b4_actor_recognized%
+
+[hit]
+on_info = {=hit_by_actor} %+sad_b4_actor_recognized%
+
+[danger]
+ignore_distance = 0

@@ -1,0 +1,173 @@
+;=========meet_stalker_korpys========
+[meet@korpys_stalker]
+close_anim 		= nil
+close_victim 	= nil
+far_anim 		= nil
+far_victim 		= nil
+close_distance 	= 0
+far_distance 	= 0
+use = {=actor_enemy} false, {=dist_to_actor_le(3)} true, false
+snd_on_use = {!dist_to_actor_le(3)} nil
+meet_on_talking = false
+trade_enable = false
+;==================================
+
+
+[logic@pro_podzemka_duty_tachenko]
+active = walker@walker_1
+prior = 50
+suitable = {=check_npc_name(pb_duty_tachenko)} true, false
+
+[walker@walker_1]
+path_walk = duty_tachenko_walk
+path_look = duty_tachenko_look
+on_info = {+pro_paskhalka_stalker_is_dead} walker@walker_final_1
+gather_items_enabled = false
+corpse_detection_enabled = false
+combat_ignore_keep_when_attacked = true 
+combat_ignore_cond = true
+use_camp = true
+meet = meet@pb_tachenko
+
+[walker@walker_final_1]
+path_walk = duty_tachenko_final_walk
+path_look = duty_tachenko_final_look
+gather_items_enabled = false
+corpse_detection_enabled = false
+combat_ignore_keep_when_attacked = true 
+combat_ignore_cond = true
+use_camp = true
+meet = meet@pb_tachenko_final
+
+[meet@pb_tachenko]:meet@korpys_stalker
+close_snd_hello = pb_duty_tachenko_meet
+close_snd_distance = 3
+close_victim = actor
+allow_break = false
+meet_dialog = pb_duty_tachenko_start_dialog
+trade_enable = false
+
+[meet@pb_tachenko_final]:meet@korpys_stalker
+close_snd_hello = pb_duty_tachenko_meet
+close_snd_distance = 3
+close_victim = actor
+use = {!actor_enemy =dist_to_actor_le(10) +pro_actor_final_meet_tachenko_start -pro_dialog_duty_tachenko_end_line_done} self, true
+allow_break = false
+meet_dialog = pb_duty_tachenko_final_dialog
+trade_enable = false
+
+;================================================
+
+[logic@pro_podzemka_duty_chepurnoy]
+active = walker@walker_2
+prior = 50
+suitable = {=check_npc_name(pb_duty_chepurnoy)} true, false
+
+[walker@walker_2]
+path_walk = duty_chepurnoy_walk
+path_look = duty_chepurnoy_look
+on_info = {+pro_paskhalka_stalker_is_dead} %=release_npc%
+gather_items_enabled = false
+corpse_detection_enabled = false
+combat_ignore_keep_when_attacked = true 
+combat_ignore_cond = true
+use_camp = true
+meet = meet@pb_chepurnoy
+
+[meet@pb_chepurnoy]:meet@korpys_stalker
+
+;================================================
+
+[logic@pro_podzemka_duty_bunchuck]
+active = walker@walker_3
+prior = 50
+suitable = {=check_npc_name(pb_duty_bunchuck)} true, false
+
+[walker@walker_3]
+path_walk = duty_bunchuck_walk
+path_look = duty_bunchuck_look
+on_info = {+pro_quest_door_open_in_process} remark@stay_start
+gather_items_enabled = false
+corpse_detection_enabled = false
+combat_ignore_keep_when_attacked = true 
+combat_ignore_cond = true
+use_camp = true
+meet = no_meet
+
+[remark@stay_start]
+anim = threat_na
+target = story | actor
+on_info = {+pro_duty_bunchuk_start_dialog_meet} walker@walker_3_1
+use_camp = false
+combat_ignore_cond = true
+combat_ignore_keep_when_attacked = true
+invulnerable = true
+gather_items_enabled = false
+help_wounded_enabled = false
+corpse_detection_enabled = false
+meet = meet@pb_bunchuck_start
+
+[walker@walker_3_1]
+path_walk = duty_bunchuck_walk
+path_look = duty_bunchuck_look
+on_info = {+pro_paskhalka_stalker_is_dead} %=kill_npc%
+gather_items_enabled = false
+corpse_detection_enabled = false
+combat_ignore_keep_when_attacked = true 
+combat_ignore_cond = true
+use_camp = true
+meet = meet@pb_bunchuck
+
+[meet@pb_bunchuck_start]:meet@korpys_stalker
+close_victim = actor
+allow_break = false
+use = {!actor_enemy =dist_to_actor_le(6) +pro_actor_go_to_podzemka_info -pro_duty_bunchuk_start_dialog_meet} self, true
+meet_dialog = pb_duty_bunchuk_start_dialog
+trade_enable = false
+
+[meet@pb_bunchuck]:meet@korpys_stalker
+close_victim = actor
+allow_break = false
+trade_enable = false
+
+;================================================
+
+[logic@pro_podzemka_duty_kosmach]
+active = walker@walker_4
+prior = 50
+suitable = {=check_npc_name(pb_duty_kosmach)} true, false
+
+[walker@walker_4]
+path_walk = duty_kosmach_walk
+path_look = duty_kosmach_look
+on_info = {+pro_paskhalka_stalker_is_dead} %=kill_npc%
+gather_items_enabled = false
+corpse_detection_enabled = false
+combat_ignore_keep_when_attacked = true 
+combat_ignore_cond = true
+use_camp = true
+meet = meet@pb_kosmach
+
+[meet@pb_kosmach]:meet@korpys_stalker
+
+;================================================
+
+[logic@pro_podzemka_duty_zaharchuk]
+active = walker@walker_5
+prior = 50
+suitable = {=check_npc_name(pb_duty_zaharchuk)} true, false
+
+[walker@walker_5]
+path_walk = duty_zaharchuk_walk
+path_look = duty_zaharchuk_look
+on_info = {+pro_paskhalka_stalker_is_dead} %=kill_npc%
+gather_items_enabled = false
+corpse_detection_enabled = false
+combat_ignore_keep_when_attacked = true 
+combat_ignore_cond = true
+use_camp = true
+meet = meet@pb_zaharchuk
+
+[meet@pb_zaharchuk]:meet@korpys_stalker
+
+;================================================

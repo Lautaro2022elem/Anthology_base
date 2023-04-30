@@ -1,0 +1,28 @@
+[logic]
+active = walker
+on_death = death
+
+[walker]
+path_walk = esc_bandit_shmiga_walk_1
+on_info = {+esc_quest_dangerous_business_ataka} %=actor_enemy% walker@sprint
+
+[walker@sprint]
+path_walk = esc_bandit_shmiga_sprint
+def_state_moving = sprint
+gather_items_enabled = false
+corpse_detection_enabled = false
+combat_ignore_keep_when_attacked = true 
+combat_ignore_cond = true
+on_signal = esc_bandit_shmiga_quest | {-esc_quest_dangerous_business_merc_proval} walker@home %+esc_quest_dangerous_business_merc_proval%
+
+[walker@home]
+path_walk = esc_bandit_shmiga_walk_home_1
+path_look = esc_bandit_shmiga_look_home_1
+on_info = {=dist_to_actor_ge(45)} %=release_npc%
+gather_items_enabled = false
+corpse_detection_enabled = false
+combat_ignore_keep_when_attacked = true 
+combat_ignore_cond = true
+
+[death]
+on_info = %+esc_bandit_shmiga_dead%

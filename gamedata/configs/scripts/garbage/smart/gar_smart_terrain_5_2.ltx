@@ -1,0 +1,28 @@
+[smart_terrain]
+squad_id = 9
+max_population = 2
+respawn_params = respawn@gar_smart_terrain_5_2
+respawn_idle = 86400
+
+
+
+[respawn@gar_smart_terrain_5_2]
+spawn_duty@advanced
+spawn_duty@veteran
+
+
+
+[spawn_duty@advanced]
+spawn_squads = duty_sim_squad_advanced, duty_sim_squad_advanced, duty_sim_squad_novice
+spawn_num = 1
+
+[spawn_duty@veteran]
+spawn_squads = duty_sim_squad_veteran, duty_sim_squad_advanced
+spawn_num = 1
+
+[exclusive] 
+gar_dolg_blokpost_commander = garbage\gar_smart_terrain_5_2_smart_logic.ltx
+gar_smart_terrain_5_2_animpoint_kamp1 = garbage\gar_smart_terrain_5_2_smart_logic.ltx
+gar_smart_terrain_5_2_animpoint_kamp2 = garbage\gar_smart_terrain_5_2_smart_logic.ltx
+gar_smart_terrain_5_2_animpoint_kamp3 = garbage\gar_smart_terrain_5_2_smart_logic.ltx
+gar_smart_terrain_5_2_animpoint_kamp4 = garbage\gar_smart_terrain_5_2_smart_logic.ltx

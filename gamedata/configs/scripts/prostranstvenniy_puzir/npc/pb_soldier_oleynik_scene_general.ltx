@@ -1,0 +1,97 @@
+;pb_soldier_oleynik_scene (дополнительная логика)
+
+;=========meet_stalker_korpys========
+[meet@korpys_stalker]
+close_anim 		= nil
+close_victim 	= nil
+far_anim 		= nil
+far_victim 		= nil
+close_distance 	= 0
+far_distance 	= 0
+use = {=actor_enemy} false, {=dist_to_actor_le(3)} true, false
+snd_on_use = {!dist_to_actor_le(3)} nil
+meet_on_talking = false
+;==================================
+
+[walker@soldier_go_to_base_5]
+path_walk = pro_soldier_oleynik_walk_5
+meet = no_meet
+def_state_moving = walk_wounded
+on_info = {+pro_actor_meet_soldier_done} walker@soldier_to_base_only
+combat_ignore_cond = true 
+combat_ignore_keep_when_attacked = true
+gather_items_enabled = false
+help_wounded_enabled = false
+corpse_detection_enabled = false
+invulnerable = true
+on_signal = pro_soldier_oleynik_home_5 | {-pro_soldier_move_5} walker@soldier_go_to_base_6 %+pro_soldier_move_5%
+
+[walker@soldier_go_to_base_6]
+path_walk = pro_soldier_oleynik_walk_6
+meet = no_meet
+def_state_moving = walk_wounded
+on_info = {+pro_actor_meet_soldier_done} walker@soldier_to_base_only
+combat_ignore_cond = true 
+combat_ignore_keep_when_attacked = true
+gather_items_enabled = false
+help_wounded_enabled = false
+corpse_detection_enabled = false
+invulnerable = true
+on_signal = pro_soldier_oleynik_home_6 | {-pro_soldier_move_6} walker@soldier_go_to_base_7 %+pro_soldier_move_6%
+
+[walker@soldier_go_to_base_7]
+path_walk = pro_soldier_oleynik_walk_7
+meet = no_meet
+def_state_moving = walk_wounded
+on_info = {+pro_actor_meet_soldier_done} walker@soldier_to_base_only
+combat_ignore_cond = true 
+combat_ignore_keep_when_attacked = true
+gather_items_enabled = false
+help_wounded_enabled = false
+corpse_detection_enabled = false
+invulnerable = true
+on_signal = pro_soldier_oleynik_home_7 | {-pro_soldier_move_7} walker@soldier_go_to_base_8 %+pro_soldier_move_7%
+
+[walker@soldier_go_to_base_8]
+path_walk = pro_soldier_oleynik_walk_8
+meet = no_meet
+def_state_moving = walk_wounded
+on_info = {+pro_actor_meet_soldier_done} walker@soldier_to_base_only
+combat_ignore_cond = true 
+combat_ignore_keep_when_attacked = true
+gather_items_enabled = false
+help_wounded_enabled = false
+corpse_detection_enabled = false
+invulnerable = true
+on_signal = pro_soldier_oleynik_home_8 | {-pro_soldier_move_8} walker@soldier_go_to_base_9 %+pro_soldier_move_8%
+
+[walker@soldier_go_to_base_9]
+path_walk = pro_soldier_oleynik_walk_9
+meet = no_meet
+def_state_moving = walk_wounded
+on_info = {+pro_actor_meet_soldier_done} walker@soldier_to_base_only
+combat_ignore_cond = true 
+combat_ignore_keep_when_attacked = true
+gather_items_enabled = false
+help_wounded_enabled = false
+corpse_detection_enabled = false
+invulnerable = true
+on_signal = pro_soldier_oleynik_home_9 | {-pro_soldier_move_9} walker@soldier_to_base_only %+pro_soldier_move_9%
+
+[walker@soldier_to_base_only]
+path_look = pro_soldier_wounded_look
+path_walk = pro_soldier_wounded_walk
+on_info = {+zver_found_padalshik} %=release_npc%
+combat_ignore_cond = true
+combat_ignore_keep_when_attacked = true
+invulnerable = false
+gather_items_enabled = false
+help_wounded_enabled = false
+corpse_detection_enabled = false
+meet = meet@to_quest
+
+[meet@to_quest]:meet@korpys_stalker
+close_victim = actor
+allow_break = false
+meet_dialog = pb_soldier_oleynik_wounded
+trade_enable = false

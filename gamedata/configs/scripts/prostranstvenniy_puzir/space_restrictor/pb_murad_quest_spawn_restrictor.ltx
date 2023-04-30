@@ -1,0 +1,7 @@
+[logic]
+active = sr_idle@spawn_murad
+
+[sr_idle@spawn_murad]
+on_info = {+pro_lutiy_scene_final_quest_give -pro_murad_quest_door_spawn} sr_idle@nil %=spawn_object(pb_murad_quest_door:pro_murad_quest_door_spawn) +pro_murad_quest_door_spawn%
+
+[sr_idle@nil]

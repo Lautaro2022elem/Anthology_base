@@ -1,0 +1,19 @@
+[logic]
+active = sr_idle@start_bad_end_game
+
+[sr_idle@start_bad_end_game]
+on_actor_inside = {+labx7_actor_stay_in_level -labx7_killer_tesak_dialog_give} sr_idle@start_end_game_1 %+labx7_killer_tesak_dialog_give%
+
+[sr_idle@start_end_game_1]
+on_info = {+labx7_killer_enemy_1_dead_end_game +labx7_killer_enemy_2_dead_end_game +labx7_killer_tesak_dead_end_game} sr_idle@start_end_game_2
+
+[sr_idle@start_end_game_2]
+on_timer = 1000 | sr_idle@start_end_game_3 %=labx7_actor_replic_about_kill_merc%
+
+[sr_idle@start_end_game_3]
+on_info = {+labx7_lutiy_dead_end_game} sr_idle@start_end_game_4
+
+[sr_idle@start_end_game_4]
+on_timer = 500 | sr_idle@nil %=labx7_actor_replic_about_lutiy_death%
+
+[sr_idle@nil]

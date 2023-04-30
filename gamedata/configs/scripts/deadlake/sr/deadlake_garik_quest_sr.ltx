@@ -1,0 +1,32 @@
+[logic]
+active = sr_idle@push_quest
+
+[sr_idle@push_quest]
+on_info = {+dl_first_dialog_val_a3_stalker_garik_done} sr_idle@check_quest_item %=give_task(lake_na_virychky) =spawn_object(lake_garik_case:dl_sp_case_garika) +dl_first_dialog_val_a3_stalker_garik_done =hero_thoughts_22%
+
+[sr_idle@check_quest_item]
+on_info = {=actor_has_item(lake_garik_case)} sr_idle@timer %+dl_first_dialog_val_a3_stalker_garik_case =hero_thoughts_23%
+
+[sr_idle@timer]
+on_timer = 6000 | sr_idle@timer_1 %=spawn_object(dl_stalker_buriy_ranen:dl_sp_buriy) =dl_sos_message =give_task(dl_sos_message)%
+
+[sr_idle@timer_1]
+on_timer = 10000 | sr_idle@storyline %=hero_thoughts_24%
+
+[sr_idle@storyline]
+on_info = {+dl_val_a3_stalker_leader_first_dialog_done} sr_idle@spawn_art %=hero_thoughts_25%
+
+[sr_idle@spawn_art] 
+on_info = {+dl_random_spawn_art_vyvert} sr_idle@timer_to_thoughts %=spawn_object(af_vyvert:af_spawn_ev_2) =give_task(dl_new_time_search_art_1)%
+on_info2 = {+dl_random_spawn_art_flash} sr_idle@timer_to_thoughts %=spawn_object(af_electra_flash:af_spawn_ev_1) =give_task(dl_new_time_search_art_2)%
+on_info3 = {+dl_random_spawn_art_soul} sr_idle@timer_to_thoughts %=spawn_object(af_soul:af_spawn_ev_3) =give_task(dl_new_time_search_art_3)%
+
+[sr_idle@timer_to_thoughts]
+on_timer = 10000 | sr_idle@check_art %=hero_thoughts_26%
+
+[sr_idle@check_art]
+on_info = {=actor_has_item(af_vyvert)} sr_idle@nil %+dl_actor_has_first_art_vyvert%
+on_info2 = {=actor_has_item(af_electra_flash)} sr_idle@nil %+dl_actor_has_first_art_flash%
+on_info3 = {=actor_has_item(af_soul)} sr_idle@nil %+dl_actor_has_first_art_soul%
+
+[sr_idle@nil]

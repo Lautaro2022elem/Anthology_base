@@ -1,0 +1,185 @@
+function call_lift_1(actor,npc)
+	if not has_alife_info("flag_run_lift_1a") then       
+		db.actor:give_info_portion("flag_run_lift_1a")        	  
+    end	
+end	
+function run_lift_s1(actor,npc)
+	if not has_alife_info("flag_run_lift_1c") then       
+		db.actor:give_info_portion("flag_run_lift_1c")        	  
+    end	
+end
+
+function test_1()
+obj = alife():create("sim_default_bandit_1", 
+      db.actor:position(),
+      db.actor:level_vertex_id(),  
+      db.actor:game_vertex_id())
+fsm_flags.table_npc_all[obj.id] = "test"	  
+end
+
+function test_2()
+local a = db.actor:position() 
+this.create_anom("zone_mine_electric",2,a.x,a.y,a.z,db.actor:level_vertex_id(),db.actor:game_vertex_id())
+end
+
+function save_variable(variable_name, value)
+  if value==nil then
+    del_variable(variable_name)
+  else
+    xr_logic.pstor_store(db.actor, variable_name, value)
+  end
+end
+
+function load_variable(variable_name, value_if_not_found)
+  return xr_logic.pstor_retrieve(db.actor, variable_name, value_if_not_found)
+end
+
+function del_variable(variable_name)
+  if db.storage[db.actor:id()].pstor[variable_name] then
+    db.storage[db.actor:id()].pstor[variable_name] = nil
+  end
+end
+
+function give_item_to_object(items,obj_id)
+   local parse_items=utils.parse_spawns(items)
+   for k,v in pairs(parse_items) do
+      for i=1,v.prob do
+         alife():create(v.section,vector(),0,0,obj_id)
+      end
+   end
+end
+
+
+
+function create_anom(section,rad_anom,x,y,z,lv,gv,mode)
+      if gv==nil then gv=db.actor:game_vertex_id() end
+      if lv==nil then lv=db.actor:level_vertex_id() end
+      if pos==nil then pos=db.actor:position() end
+      local p_obj = alife():create(section,vector():set(x,y,z),lv,gv)
+	  fsm_flags.table_anomaly_all[p_obj.id] = section
+      local packet = net_packet()
+      packet:w_begin(0)
+      p_obj:STATE_Write(packet)
+      packet:r_seek(2)
+
+	local game_vertex_id = packet:r_u16()
+	local cse_alife_object__unk1_f32 = packet:r_float()
+	local cse_alife_object__unk2_u32 = packet:r_s32()
+	local level_vertex_id = packet:r_s32()
+	local object_flags = packet:r_s32()
+	local custom_data = packet:r_stringZ()
+	local story_id = packet:r_s32()
+	local cse_alife_object__unk3_u32 = packet:r_s32()
+
+	local shape_count = packet:r_u8()
+	for i=1,shape_count do
+		local shape_type = packet:r_u8()
+		if shape_type == 0 then
+			local center = packet:r_vec3()
+			local radius = packet:r_float()
+		else
+			local box = packet:r_matrix()
+		end
+	end
+
+	local restrictor_type = packet:r_u8()
+
+	local cse_alife_custom_zone__unk1_f32 = packet:r_float()
+	local cse_alife_custom_zone__unk2_u32 = packet:r_s32()
+	local on_off_mode_enabled_time = packet:r_s32()
+	local on_off_mode_disabled_time = packet:r_s32()
+	local on_off_mode_shift_time = packet:r_s32()
+
+	local offline_interactive_radius = packet:r_float()
+	local artefact_spawn_places_count = packet:r_u16()
+	local cse_alife_anomalous_zone__unk1_u32 = packet:r_s32()
+
+	local last_spawn_time_present = packet:r_u8()
+
+	packet:w_u16(game_vertex_id)
+	packet:w_float(cse_alife_object__unk1_f32)
+	packet:w_s32(cse_alife_object__unk2_u32)
+	packet:w_s32(level_vertex_id)
+	packet:w_s32(object_flags)
+	if mode~=nil then custom_data = mode end
+	packet:w_stringZ(custom_data)
+	packet:w_s32(story_id)
+	packet:w_s32(cse_alife_object__unk3_u32)
+
+	packet:w_u8(1)
+	packet:w_u8(0)
+	local sphere_center = vector()
+	sphere_center:set(0, 0, 0)
+	packet:w_vec3(sphere_center)
+	radius = rad_anom
+	packet:w_float(radius)
+
+	packet:w_u8(restrictor_type)
+
+	packet:w_float(cse_alife_custom_zone__unk1_f32)
+	cse_alife_custom_zone__unk2_u32 = bit_not(0)
+	packet:w_s32(cse_alife_custom_zone__unk2_u32)
+	packet:w_s32(on_off_mode_enabled_time)
+	packet:w_s32(on_off_mode_disabled_time)
+	packet:w_s32(on_off_mode_shift_time)
+
+	packet:w_float(offline_interactive_radius)
+	packet:w_u16(artefact_spawn_places_count)
+	packet:w_s32(cse_alife_anomalous_zone__unk1_u32)
+
+if mode == nil then
+
+	packet:w_u8(last_spawn_time_present)
+end
+	p_obj:STATE_Read(packet, packet:w_tell()-packet:r_tell())
+  
+	return p_obj
+end
+
+function spend_obj(name)
+   for k,v in pairs(fsm_functions.release_obj(name)) do
+      if v~=nil and alife():object(v) then
+         alife():release(alife():object(v),true)
+      end
+   end
+end
+
+function release_obj(name)
+   local item_cnt=0
+   local item_collected={}
+   local function calc(temp,item)
+      if item:section()==name then
+         if item_cnt==0 then
+            item_cnt=1
+            table.insert(item_collected,item:id())
+
+         end
+      end
+   end
+   db.actor:iterate_inventory(calc,db.actor)
+   return item_collected
+end
+
+function create_item(spawn_item, npc)
+  if npc == nil then 
+    npc = db.actor 
+  end
+  return alife():create(spawn_item, 
+      npc:position(),
+      npc:level_vertex_id(),  
+      npc:game_vertex_id(),
+      npc:id())
+end
+ 
+function check_item_id_inv_box(obj_box,item_id)
+    local completed = false
+    local function sCheck(dummy,item)
+        if item~=nil and item:id() == item_id then
+            completed = true
+            return true
+        end
+    end
+    obj_box:iterate_inventory_box(sCheck,obj_box)
+    return completed
+end
+ 

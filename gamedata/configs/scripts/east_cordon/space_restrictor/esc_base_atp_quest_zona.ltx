@@ -1,0 +1,10 @@
+[logic]
+active = sr_idle@wait
+
+[sr_idle@wait]
+on_info = {+spectrum_project_start +esc_student_quest_conductor_dialog_go} sr_idle
+
+[sr_idle]
+on_npc_in_zone = esc_npc_student | esc_base_atp_sr_noweap | {-esc_quest_conductor_fail} sr_idle@nil %+esc_quest_conductor_atp%
+
+[sr_idle@nil]

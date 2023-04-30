@@ -1,0 +1,15 @@
+[smart_terrain]
+squad_id = 29
+max_population = 2
+respawn_params = respawn@ros_home
+respawn_idle = 172800
+
+
+
+[respawn@ros_home]
+spawn_bandit@master
+
+
+[spawn_bandit@master]
+spawn_squads = bandit_sim_squad_advanced, bandit_sim_squad_advanced, bandit_sim_squad_veteran
+spawn_num = 1

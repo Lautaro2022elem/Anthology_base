@@ -1,0 +1,71 @@
+[logic@kachalka_npc]
+suitable = {=check_npc_name(prom_kachalka_npc_1)} true
+prior = 300
+active = animpoint@prisyad_reach
+
+[walker@def]
+gather_items_enabled = false
+help_wounded_enabled = false
+corpse_detection_enabled = false
+reach_movement = walk_noweap
+meet = no_meet
+
+
+[animpoint@prisyad_reach]:walker@def
+cover_name = prom_1a_prisyad_1
+avail_animations = gym_prisyad
+reach_distance = 0.3
+use_camp = false
+on_info = {=animpoint_reached} animpoint@prisyad_action
+
+[animpoint@prisyad_action]:walker@def
+cover_name = prom_1a_prisyad_1
+avail_animations = gym_prisyad
+reach_distance = 0.3
+use_camp = false
+on_timer = 20000 | animpoint@grudak_reach
+
+
+[animpoint@grudak_reach]:walker@def	
+cover_name = prom_1a_grudak_1
+avail_animations = gym_grudak
+reach_distance = 0.3
+use_camp = false
+on_info = {=animpoint_reached} animpoint@grudak_action
+
+[animpoint@grudak_action]:walker@def
+cover_name = prom_1a_grudak_1
+avail_animations = gym_grudak
+reach_distance = 0.3
+use_camp = false
+on_timer = 15000 | animpoint@gantel_reach
+
+
+[animpoint@gantel_reach]:walker@def
+cover_name = prom_1a_bicuha_1
+avail_animations = gym_bitsuha
+reach_distance = 0.3
+use_camp = false
+on_info = {=animpoint_reached} animpoint@gantel_action
+
+[animpoint@gantel_action]:walker@def
+cover_name = prom_1a_bicuha_1
+avail_animations = gym_bitsuha
+reach_distance = 0.3
+use_camp = false
+on_timer = 35000 | animpoint@brusya_reach
+
+
+[animpoint@brusya_reach]:walker@def
+cover_name = prom_1a_brusia_1
+avail_animations = gym_brusya
+reach_distance = 0.3
+use_camp = false
+on_info = {=animpoint_reached} animpoint@brusya_action
+
+[animpoint@brusya_action]:walker@def
+cover_name = prom_1a_brusia_1
+avail_animations = gym_brusya
+reach_distance = 0.3
+use_camp = false
+on_timer = 20000 | animpoint@prisyad_reach

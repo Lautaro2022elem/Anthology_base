@@ -1,0 +1,15 @@
+[logic]
+active = sr_idle@wait
+
+[sr_idle@wait]
+on_info = {+digst_lamp_destroyed -digst_main_quest_igra_effect_2_take} sr_particle@idle_1 %+digst_main_quest_igra_effect_2_take%
+
+[sr_particle@idle_1]
+name = explosions\explosion_dym
+path = digst_particle_play_point_1
+mode = 2
+looped = true
+on_info = {+digst_actor_hit_stronglav} sr_idle@nil
+on_info2 = {+digst_delete_stronglav} sr_idle@nil
+
+[sr_idle@nil]

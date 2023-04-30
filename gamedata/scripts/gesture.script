@@ -1,0 +1,127 @@
+local play_anm = true
+
+companion_wait = axr_companions.set_companion_to_wait_state
+
+function axr_companions.set_companion_to_wait_state(npc)
+	play_stuff("gesture_sound", "point_freeze", "anm_freeze", true)
+        companion_wait(npc)
+end
+
+local baseMTP = axr_companions.move_to_point
+function axr_companions.move_to_point(p)
+  baseMTP(p)
+	if not (p == 1 or p ==2) then
+		play_stuff("gesture_sound", "point_forward", "anm_point", true)
+	end
+end
+
+companion_follow = axr_companions.set_companion_to_follow_state
+
+function axr_companions.set_companion_to_follow_state(npc)
+	play_stuff("gesture_sound", "point_follow", "anm_follow", true)
+        companion_follow(npc)
+end
+
+companion_stop_stealth = axr_companions.set_companion_to_default_substate
+
+function axr_companions.set_companion_to_default_substate(npc)
+	play_stuff("gesture_sound", "point_nostealth", "anm_nostealth", true)
+		companion_stop_stealth(npc)
+end
+
+companion_attack = axr_companions.set_companion_to_attack_state
+
+function axr_companions.set_companion_to_attack_state(npc)
+	play_stuff("gesture_sound", "point_forward", "anm_point", true)
+		companion_attack(npc)
+end
+
+companion_stop_attack = axr_companions.set_companion_to_ignore_combat_state
+
+function axr_companions.set_companion_to_ignore_combat_state(npc)
+	play_stuff("gesture_sound", "point_freeze", "anm_freeze", true)
+		companion_stop_attack(npc)
+end
+
+companion_stealth = axr_companions.set_companion_to_stealth_substate
+
+function axr_companions.set_companion_to_stealth_substate(npc)
+	play_stuff("gesture_sound", "point_stealth", "anm_stealth", true)
+		companion_stealth(npc)
+end
+
+companion_stop_loot = axr_companions.set_companion_to_loot_nothing
+
+function axr_companions.set_companion_to_loot_nothing(npc)
+	play_stuff("gesture_sound", "point_freeze", "anm_freeze", true)
+		companion_stop_loot(npc)
+end
+
+companion_close = axr_companions.set_companion_to_stay_close
+
+function axr_companions.set_companion_to_stay_close(npc)
+	play_stuff("gesture_sound", "point_follow", "anm_follow", true)
+		companion_close(npc)
+end
+
+companion_far = axr_companions.set_companion_to_stay_far 
+
+function axr_companions.set_companion_to_stay_far(npc)
+	play_stuff("gesture_sound", "point_far", "anm_far", true)
+		companion_far(npc)
+end
+
+
+function companion_distance()
+
+	for id, _ in pairs(axr_companions.non_task_companions) do
+		local comp = level.object_by_id(id)
+		local comp_dist = comp and comp:alive() and comp:position()
+		if comp_dist and db.actor:position():distance_to(comp_dist) > 20 then
+			return true
+		end
+	end
+
+	return false
+end
+
+function play_stuff(sound1, anm1, anm2, dist_check)
+	local snd = sound_object("gestures\\" .. sound1)
+	if snd then
+		snd:play_at_pos(db.actor, VEC_ZERO, 0, sound_object.s2d)
+	end
+
+	if dist_check and companion_distance() then
+		return
+	end
+
+	local function delay()
+		play_anm = true
+		return true
+	end
+
+	if play_anm then
+		play_anm = false
+		local length = game.get_motion_length(anm1, anm2, 1) / 1000
+		game.play_hud_motion(1, anm1, anm2, true, 1.0)
+		CreateTimeEvent("gesture_anm_e", "gesture_anm_a", length, delay)
+	end
+
+end
+
+function GUI_on_show(name)
+	if name == "UIWheelCompanion" and companion_distance() then
+		play_stuff("radio_on", "point_radio", "anm_radio")
+	end
+end
+
+function GUI_on_hide(name)
+	if name == "UIWheelCompanion" and companion_distance() then
+		play_stuff("radio_off", "point_radio", "anm_radio")
+	end
+end
+
+function on_game_start()
+	RegisterScriptCallback("GUI_on_show", GUI_on_show)
+	RegisterScriptCallback("GUI_on_hide", GUI_on_hide)
+end

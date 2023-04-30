@@ -1,0 +1,28 @@
+<w>
+    <file name="ui\ui_actor_newsmanager_icons_wiz">
+
+	<!-- PROLOGUE SOTP -->
+	<texture id="ui_inGame2_Bandit" x="415" y="0" width="83" height="47" />
+	<texture id="ui_inGame2_Grif" x="415" y="94" width="83" height="47" />
+	<texture id="ui_inGame2_Common_channel" x="415" y="141" width="83" height="47" />
+	<texture id="ui_inGame2_Spatial_anomaly" x="415" y="376" width="83" height="47" />
+	<texture id="ui_inGame2_Bird" x="415" y="423" width="83" height="47" />
+	<texture id="ui_inGame2_Bird_quest" x="415" y="564" width="83" height="47" />
+	<texture id="ui_inGame2_Retribution" x="415" y="470" width="83" height="47" />
+	<texture id="ui_inGame2_Hmuriy" x="415" y="47" width="83" height="47" />
+	<texture id="ui_inGame2_Good_life" x="415" y="235" width="83" height="47" />
+	<texture id="ui_inGame2_Kareglazaya" x="415" y="517" width="83" height="47" />
+	<texture id="ui_inGame2_Kareglazaya_news" x="415" y="611" width="83" height="47" />
+	<texture id="ui_inGame2_Dizel" x="415" y="658" width="83" height="47" />
+	<texture id="ui_inGame2_Sapsan" x="415" y="705" width="83" height="47" />
+	<texture id="ui_inGame2_Killers" x="415" y="752" width="83" height="47" />
+	<texture id="ui_inGame2_Hmyriy" x="415" y="799" width="83" height="47" />
+	<texture id="ui_inGame2_Otmorozky" x="415" y="282" width="83" height="47" />
+	<texture id="ui_inGame2_Killers_freedom" x="415" y="846" width="83" height="47" />
+	<texture id="ui_inGame2_Quest" x="498" y="141" width="83" height="47" />
+	<texture id="ui_inGame2_Times" x="498" y="0" width="83" height="47" />
+	<texture id="ui_inGame2_Hunting" x="498" y="188" width="83" height="47" />
+	<texture id="ui_inGame2_Techicals" x="498" y="47" width="83" height="47" />
+	<texture id="ui_inGame2_Team" x="913" y="283" width="83" height="47" />	
+   </file>
+</w>

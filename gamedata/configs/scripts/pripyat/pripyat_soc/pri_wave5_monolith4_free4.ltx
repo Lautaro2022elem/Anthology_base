@@ -1,0 +1,20 @@
+[logic]
+active = remark@wait
+on_death = death
+
+[death]
+on_info = %+pri_wave5_monolith4_dead%
+
+[remark@wait]
+anim = hide
+on_info = {+pri_wave5_start} walker, {+pri_wave5_fake_start} remark@wait2
+
+[remark@wait2]
+anim = hide
+on_info = {+pri_wave5_start} walker
+
+[walker]
+path_walk = pri_wave5_monolith4_walk
+path_look = pri_wave5_monolith4_look
+def_state_moving1 = assault
+def_state_moving2 = assault

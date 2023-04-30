@@ -1,0 +1,1376 @@
+<?xml version="1.0" encoding="windows-1251"?>
+<string_table>
+ 
+	<string id="topi_b9_main_suget_quest_4_set_1_title0">
+	<text>"Ambush": Plant the explosive.</text>
+	</string>	
+	<string id="topi_b9_main_suget_quest_4_set_1_text0">
+	<text>Follow to the designated point and plant the assembled explosive device there.</text>
+	</string>
+	<string id="topi_b9_main_suget_quest_4_set_2_title0">
+	<text>"Ambush": Plant the explosive.</text>
+	</string>	
+	<string id="topi_b9_main_suget_quest_4_set_2_text0">
+	<text>Follow to the designated point and plant the assembled explosive device there.</text>
+	</string>
+	<string id="topi_b9_main_suget_quest_4_set_3_title0">
+	<text>"Ambush": Plant the explosive.</text>
+	</string>	
+	<string id="topi_b9_main_suget_quest_4_set_3_text0">
+	<text>Follow to the designated point and plant the assembled explosive device there.</text>
+	</string>	
+	<string id="topi_b9_main_suget_quest_4_title0">
+	<text>"Ambush": Meet with the Freedom member.</text>
+	</string>	
+	<string id="topi_b9_main_suget_quest_4_text0">
+	<text>The Freedom member who saved you has arranged a meeting with you. Follow to the specified area and find out why he needs you.</text>
+	</string>
+	<string id="topi_b9_main_suget_quest_4_title1">
+	<text>"Ambush": Open the stash.</text>
+	</string>	
+	<string id="topi_b9_main_suget_quest_4_text1">
+	<text>The Freedom member has instructed you to eliminate a group of renegades who are interfering with his investigation. Follow to his stash for the components to assemble the explosive device.</text>
+	</string>
+	<string id="topi_b9_main_suget_quest_4_title2">
+	<text>"Ambush": Assemble the explosive devices.</text>
+	</string>	
+	<string id="topi_b9_main_suget_quest_4_text2">
+	<text>Use a special tool to assemble the explosive devices.</text>
+	</string>
+	<string id="topi_b9_main_suget_quest_4_title3">
+	<text>"Ambush": Plant the explosives at the designated points.</text>
+	</string>	
+	<string id="topi_b9_main_suget_quest_4_text3">
+	<text>Follow the marker and plant the explosive devices in each of the three points.</text>
+	</string>
+	<string id="topi_b9_main_suget_quest_4_title4">
+	<text>"Ambush": Wait for the appearance of the bandits.</text>
+	</string>	
+	<string id="topi_b9_main_suget_quest_4_text4">
+	<text>Wait for the bandit group to arrive at the safe point.</text>
+	</string>
+	<string id="topi_b9_main_suget_quest_4_title5">
+	<text>"Ambush": Wait for the explosives to detonate.</text>
+	</string>	
+	<string id="topi_b9_main_suget_quest_4_text5">
+	<text>Bandits have taken over the area that you mined with explosives. Wait for them to be caught in the explosions.</text>
+	</string>
+	<string id="topi_b9_main_suget_quest_4_end_1_title0">
+	<text>"Ambush": check the ambush site.</text>
+	</string>
+	<string id="topi_b9_main_suget_quest_4_end_1_text0">
+	<text>The explosives that you set off have worked. The squad has been eliminated. Check the ambush site and finish off any wounded if someone managed to survive.</text>
+	</string>
+	<string id="topi_b9_main_suget_quest_4_end_1_title1">
+	<text>"Ambush": follow the freedom fighter.</text>
+	</string>
+	<string id="topi_b9_main_suget_quest_4_end_1_text1">
+	<text>The squad that you destroyed, supposedly consisting of bandits, was actually a combat group from "Clear Sky". Return to the employer and demand an explanation for what happened.</text>
+	</string>
+	<string id="topi_b9_main_suget_quest_4_end_2_title0">
+	<text>"Ambush": eliminate the enemy squad.</text>
+	</string>
+	<string id="topi_b9_main_suget_quest_4_end_2_text0">
+	<text>The explosives that you collected did not work. It is necessary to eliminate the enemy group in direct combat.</text>
+	</string>
+	<string id="topi_b9_main_suget_quest_4_end_2_title1">
+	<text>"Ambush": follow the freedom fighter.</text>
+	</string>
+	<string id="topi_b9_main_suget_quest_4_end_2_text1">
+	<text>The squad that you destroyed, supposedly consisting of bandits, was actually a combat group from "Clear Sky". Return to the employer and demand an explanation for what happened.</text>
+	</string>
+	<string id="topi_a1_main_suget_quest_2_title0">
+	<text>"Information Gathering": follow to the base of the stalkers.</text>
+	</string>
+	<string id="topi_a1_main_suget_quest_2_text0">
+	<text>Head to the base of the local independent Stalkers in search of work and information.</text>
+	</string>
+	<string id="topi_a1_main_suget_quest_2_title1">
+	<text>"Information Gathering": obtain information about the Scientists.</text>
+	</string>
+	<string id="topi_a1_main_suget_quest_2_text1">
+	<text>Try to gain the trust of the local stalkers and gather any information about the missing group of scientists and the search party from "Clear Sky". Surely someone has heard or seen something. Any information can be important, so don't hesitate to pay a price for it.</text>
+	</string>
+	<string id="topi_a2_main_suget_quest_5_title0">
+	<text>"Fang": find the stalker named Fang.</text>
+	</string>
+	<string id="topi_a2_main_suget_quest_5_text0">
+	<text>Anubis told you that there is one stalker who can shed light on how the "Clear Sky" group was linked to the disappearance of the group of scientists. Find out all the necessary information from him, but do not kill him. He may still be useful.</text>
+	</string>
+	<string id="topi_a2_main_suget_quest_5_title1">
+	<text>"Fang": hide in the Zone.</text>
+	</string>
+	<string id="topi_a2_main_suget_quest_5_text1">
+	<text>Fang shed light on the recent events and confirmed Anubis's information regarding the "Clear Sky" group. It is now too dangerous to stay here - leave the location as soon as possible, otherwise you will simply be traded as an unnecessary pawn.</text>
+	</string>
+	<string id="topi_a1_main_suget_quest_3_title0">
+	<text>"On the Trail": find the scientists and the "Clear Sky" group.</text>
+	</string>
+	<string id="topi_a1_main_suget_quest_3_text0">
+	<text>Your main task is to fulfill the contract of the "Clear Sky" group to search for missing scientists and the group of Clear Sky stalkers who went after them.</text>
+	</string>
+	<string id="topi_a1_main_suget_quest_3_title1">
+	<text>"On the Trail": meet with the Clear Sky contact.</text>
+	</string>
+	<string id="topi_a1_main_suget_quest_3_text1">
+	<text>The Clear Sky contact who gave you the contract has made contact. Meet with him, report what you have learned, and get new information.</text>
+	</string>
+	<string id="topi_trader_quest_1_title0">
+	<text>"Revenge": destroy the gang of bandits.</text>
+	</string>
+	<string id="topi_trader_quest_1_text0">
+	<text>Several thugs killed the mentor they were attached to. Follow them and destroy them before they join a large gang of thugs.</text>
+	</string>
+	<string id="topi_trader_quest_1_title1">
+	<text>"Revenge": interrogate the wounded bandit.</text>
+	</string>
+	<string id="topi_trader_quest_1_text1">
+	<text>Interrogate the wounded bandit and find out where the last runaway scum might have gone.</text>
+	</string>
+	<string id="topi_trader_quest_1_title2">
+	<text>"Revenge": finish off the wounded bandit.</text>
+	</string>
+	<string id="topi_trader_quest_1_text2">
+	<text>One of the bastards was wounded by his accomplice. Finish him off.</text>
+	</string>
+	<string id="topi_trader_quest_1_title3">
+	<text>"Revenge": interrogate the captured bandit.</text>
+	</string>
+	<string id="topi_trader_quest_1_text3">
+	<text>The trader sent you a message - the last killer was caught by the locals. Hurry up and interrogate him before they cut him up for their buddy's belts.</text>
+	</string>
+	<string id="topi_trader_quest_1_title4">
+	<text>Vengeance: wait for the stalkers to deal with the killer.</text>
+	</string>	
+	<string id="topi_trader_quest_2_text4">
+	<text>The bandit has given you some very interesting information regarding the connection between the local mercenaries and the deputy of the clan's faction. Keep this information up your sleeve for now.</text>
+	</string>
+	<string id="topi_trader_quest_1_title5">
+	<text>Vengeance: Return to the merchant.</text>
+	</string>	
+	<string id="topi_trader_quest_1_text5">
+	<text>Report to the trader about the successful completion of the task.</text>
+	</string>	
+	
+	<string id="topi_trader_quest_2_title0">
+	<text>"Deceit": hide the documents in the cache.</text>
+	</string>	
+	<string id="topi_trader_quest_2_text0">
+	<text>The merchant asks you to hide the documents for the contact in a special cache. Their content is unknown to you, but the information that is there can greatly influence further events.</text>
+	</string>
+	<string id="topi_trader_quest_2_title1">
+	<text>Deceit: Go to meet the bandits.</text>
+	</string>	
+	<string id="topi_trader_quest_2_text1">
+	<text>Give the bandit leader a couple of artifacts from the merchant. Why this is necessary is unclear. But still do it and be careful - you can expect everything from bandits.</text>
+	</string>
+	<string id="topi_trader_quest_2_title2">
+	<text>Deception: Eliminate the bandits.</text>
+	</string>	
+	<string id="topi_trader_quest_2_text2">
+	<text>As the merchant predicted, the bandits have decided to kill you. Destroy them.</text>
+	</string>
+	<string id="topi_trader_quest_2_title3">
+	<text>Deception: Return to the merchant for clarification.</text>
+	</string>	
+	<string id="topi_trader_quest_2_text3">
+	<text>The meaning of this order is not clear at all. The merchant sent you for some unknown reason, in fact, to be slaughtered by the bandits. Ask him to explain why exactly this was done.</text>
+	</string>
+	
+	<string id="topi_medic_quest_peredacha_title0">
+	<text>Rescue the Wounded: Go to the village to help the wounded scout.</text>
+	</string>	
+	<string id="topi_medic_quest_peredacha_text0">
+	<text>The Medic has received an urgent message from the Scout Team Leader. One of his men was injured and needs urgent help. Go to the location of the Scout group in the village.</text>
+	</string>
+	<string id="topi_medic_quest_peredacha_title1">
+	<text>Rescue the Wounded: Give the medical kit to Khromy.</text>
+	</string>	
+	<string id="topi_medic_quest_peredacha_text1">
+	<text>A wounded scout will live. Deliver the reusable medical kit to their commander.</text>
+	</string>
+	
+	<string id="topi_medic_quest_assembly_started_name">
+	<text>Artifact Request: Find two artifacts, Apple of Paradise and Sparkler.</text>
+	</string>
+	<string id="topi_medic_quest_assembly_started_text">
+	<text>Elimaeus instructed to find for him two artifacts "Apple of Paradise" and "Bengal Fire". You can find them near two large archanomalies...</text>
+	</string>
+	<string id="topi_medic_quest_thanks_for_2_items_name">
+	<text>Artifact Order: Pass both artifacts to the customer.</text>
+	</string>
+	<string id="topi_medic_quest_thanks_for_2_items_text">
+	<text>You must provide both artifacts to the customer.</text>
+	</string>
+	<string id="topi_medic_quest_bring_1_name">
+	<text>Artifact Writ: Find the Apple of Paradise.</text>
+	</string>
+	<string id="topi_medic_quest_bring_1_text">
+	<text>One artifact found. You need to get the second one.</text>
+	</string>
+	<string id="topi_medic_quest_bring_2_name">
+	<text>Artifact Bounty: Find the Bengal Fire.</text>
+	</string>
+	<string id="topi_medic_quest_bring_2_text">
+	<text>One artifact found. You need to get the second one.</text>
+	</string>
+	
+	<string id="topi_spec_anomaly_scanner_title0">
+	<text>Anomaly Scanners: Collect the first scanner.</text>
+	</string>	
+	<string id="topi_spec_anomaly_scanner_text0">
+	<text>Jorah has tasked you with collecting the installed Anomaly Scanners. Follow the first anomaly and pick it up.</text>
+	</string>
+	<string id="topi_spec_anomaly_scanner_title1">
+	<text>Anomaly Scanners: Collect the second scanner.</text>
+	</string>	
+	<string id="topi_spec_anomaly_scanner_text1">
+	<text>Go to the second anomaly and pick up the scanner installed there.</text>
+	</string>
+	<string id="topi_spec_anomaly_scanner_title2">
+	<text>Anomaly Scanners: Collect the third scanner.</text>
+	</string>	
+	<string id="topi_spec_anomaly_scanner_text2">
+	<text>Go to the third anomaly and pick up the scanner installed there.</text>
+	</string>
+	<string id="topi_spec_anomaly_scanner_title3">
+	<text>Anomaly Scanners: Collect the fourth scanner.</text>
+	</string>	
+	<string id="topi_spec_anomaly_scanner_text3">
+	<text>Go to the fourth anomaly and pick up the scanner installed there.</text>
+	</string>
+	<string id="topi_spec_anomaly_scanner_title4">
+	<text>Anomaly Scanners: Collect the fifth scanner.</text>
+	</string>	
+	<string id="topi_spec_anomaly_scanner_text4">
+	<text>Go to the fifth anomaly and pick up the scanner installed there.</text>
+	</string>
+	<string id="topi_spec_anomaly_scanner_title5">
+	<text>Anomaly Scanners: Collect the sixth scanner.</text>
+	</string>	
+	<string id="topi_spec_anomaly_scanner_text5">
+	<text>Go to the sixth anomaly and pick up the scanner installed there.</text>
+	</string>
+	<string id="topi_spec_anomaly_scanner_title6">
+	<text>Anomaly Scanners: Collect the seventh scanner.</text>
+	</string>	
+	<string id="topi_spec_anomaly_scanner_text6">
+	<text>Go to the seventh anomaly and pick up the scanner installed there.</text>
+	</string>
+	<string id="topi_spec_anomaly_scanner_title7">
+	<text>Anomaly Scanners: Submit the scanners found.</text>
+	</string>	
+	<string id="topi_spec_anomaly_scanner_text7">
+	<text>Return to Jorah and give him all the scanners you've collected.</text>
+	</string>
+	
+	<string id="topi_hunter_quest_polter_title0">
+	<text>Mutant Hunt: Follow the waypoint.</text>
+	</string>	
+	<string id="topi_hunter_quest_polter_text0">
+	<text>Snake has tasked you with eliminating a nest of poltergeists. Go there and destroy the mutants.</text>
+	</string>
+	<string id="topi_hunter_quest_polter_title1">
+	<text>Mutant Hunt: Talk to the stalker.</text>
+	</string>	
+	<string id="topi_hunter_quest_polter_text1">
+	<text>A group of unknown stalkers approached the scene of the fight. Find out who they are and what they need. If they pose a threat, eliminate them.</text>
+	</string>
+	<string id="topi_hunter_quest_polter_title2">
+	<text>Mutant Hunt: Return to the hunter.</text>
+	</string>	
+	<string id="topi_hunter_quest_polter_text2">
+	<text>A small task to eliminate the nest of mutants has been completed. Report this to the employer.</text>
+	</string>
+	
+	<string id="topi_hunter_quest_frogs_title0">
+	<text>Mutant Hunt: Follow the hunter squad.</text>
+	</string>	
+	<string id="topi_hunter_quest_frogs_text0">
+	<text>Snake has handed you over to one of his men. Follow the hunting party's camp, where their commander will provide you with more information.</text>
+	</string>
+	<string id="topi_hunter_quest_frogs_title1">
+	<text>Mutant Hunt: Destroy a group of swamp creatures.</text>
+	</string>	
+	<string id="topi_hunter_quest_frogs_text1">
+	<text>Finist instructed you to destroy a group of strange swamp creatures that have been spotted nearby near an old fishing farm. Do it.</text>
+	</string>
+	<string id="topi_hunter_quest_frogs_title2">
+	<text>Mutant Hunt: Return to Finist.</text>
+	</string>	
+	<string id="topi_hunter_quest_frogs_text2">
+	<text>The swamp vermin have been destroyed. Return to Finist for further instructions.</text>
+	</string>
+	<string id="topi_hunter_quest_frogs_title3">
+	<text>Mutant Hunt: Follow Zmeelov.</text>
+	</string>	
+	<string id="topi_hunter_quest_frogs_text3">
+	<text>Finist decided that you did a good job. Return to Zmeelov and report this. It is also necessary to transfer to him the amount of money that Finist gave you.</text>
+	</string>	
+	<string id="topi_snab_quest_set_1_title0">
+	<text>Stalker Cache: Place a stash at the first location.</text>
+	</string>	
+	<string id="topi_snab_quest_set_1_text0">
+	<text>It is necessary to install the stalker's backpack issued by the supplier as a cache.</text>
+	</string>
+	<string id="topi_snab_quest_set_3_title0">
+	<text>Stalker Cache: Place a cache at the second location.</text>
+	</string>	
+	<string id="topi_snab_quest_set_3_text0">
+	<text>It is necessary to install the stalker's backpack issued by the supplier as a cache.</text>
+	</string>
+	<string id="topi_snab_quest_set_2_title0">
+	<text>Stalker Cache: Place a stash at the third location.</text>
+	</string>	
+	<string id="topi_snab_quest_set_2_text0">
+	<text>It is necessary to install the stalker's backpack issued by the supplier as a cache.</text>
+	</string>	
+	<string id="topi_snab_quest_use_1_title0">
+	<text>"Stalker caches": fill the cache at the first point.</text>
+	</string>	
+	<string id="topi_snab_quest_use_1_text0">
+	<text>It is necessary to fill the stalker cache with supplies and weapons. The list is as follows: the Bear detector, an AK-104 assault rifle, a pack of cartridges for it, one anti-rad, one first-aid kit, one bandage, one can of canned food.</text>
+	</string>
+	<string id="topi_snab_quest_use_2_title0">
+	<text>Stalker Cache: Fill the stash at the second location.</text>
+	</string>	
+	<string id="topi_snab_quest_use_2_text0">
+	<text>It is necessary to fill the stalker cache with supplies and weapons. The list is as follows: the Bear detector, an AK-104 assault rifle, a pack of cartridges for it, one anti-rad, one first-aid kit, one bandage, one can of canned food.</text>
+	</string>
+	<string id="topi_snab_quest_use_3_title0">
+	<text>Stalker Cache: Fill the stash at the third location.</text>
+	</string>	
+	<string id="topi_snab_quest_use_3_text0">
+	<text>It is necessary to fill the stalker cache with supplies and weapons. The list is as follows: the Bear detector, an AK-104 assault rifle, a pack of cartridges for it, one anti-rad, one first-aid kit, one bandage, one can of canned food.</text>
+	</string>
+	<string id="topi_snab_quest_main_title0">
+	<text>Stalker Cache: Place all caches.</text>
+	</string>	
+	<string id="topi_snab_quest_main_text0">
+	<text>You need to place stalker caches at three points indicated by the supplier.</text>
+	</string>
+	<string id="topi_snab_quest_main_title1">
+	<text>Stalker Cache: Return to the Procurement Center.</text>
+	</string>	
+	<string id="topi_snab_quest_main_text1">
+	<text>Follow your supplier for further instructions.</text>
+	</string>
+	<string id="topi_snab_quest_main_title2">
+	<text>Stalker Cache: Fill all three caches.</text>
+	</string>	
+	<string id="topi_snab_quest_main_text2">
+	<text>Now you need to fill all the caches you placed earlier with supplies.</text>
+	</string>
+	<string id="topi_snab_quest_main_title3">
+	<text>Stalker caches: return to base.</text>
+	</string>	
+	<string id="topi_snab_quest_main_text3">
+	<text>Return to base and report on the mission.</text>
+	</string>	
+	<string id="topi_b1_leader_second_quest_title0">
+	<text>"Radiation measurements": measure the radiation level in the specified area.</text>
+	</string>	
+	<string id="topi_b1_leader_second_quest_text0">
+	<text>Your scout leader has tasked you with conducting a radiation survey of the area. Go to the indicated area and take measurements using a special dosimeter.</text>
+	</string>
+	<string id="topi_b1_leader_second_quest_title1">
+	<text>"Radiation measurements": give the results of the measurements to the scout.</text>
+	</string>	
+	<string id="topi_b1_leader_second_quest_text1">
+	<text>Return to the squad and give their leader the results of the measurements.</text>
+	</string>
+	
+	<string id="topi_radist_quest_main_title0">
+	<text>Radars: Place all radars around the perimeter.</text>
+	</string>	
+	<string id="topi_radist_quest_main_text0">
+	<text>The radio operator instructed you to install Credo-1E military radars. Proceed to all three indicated points and do it.</text>
+	</string>
+	<string id="topi_radist_quest_main_title1">
+	<text>Radars: Return to the radio operator.</text>
+	</string>	
+	<string id="topi_radist_quest_main_text1">
+	<text>Radar stations for reconnaissance of ground targets have been installed. However, one of them may have had incorrect settings. Return to the radio operator for further instructions.</text>
+	</string>
+	<string id="topi_radist_quest_main_title2">
+	<text>"Radars": fine-tune one of the stations.</text>
+	</string>	
+	<string id="topi_radist_quest_main_text2">
+	<text>As expected, one of the stations was not configured properly. Use a special control panel to configure it.</text>
+	</string>
+	<string id="topi_radist_quest_main_title3">
+	<text>"Radars": report on completion.</text>
+	</string>	
+	<string id="topi_radist_quest_main_text3">
+	<text>Return to base and report on the successful completion of the task.</text>
+	</string>
+	
+	<string id="topi_radist_quest_set_1_title0">
+	<text>"Radars": set the locator at the first point.</text>
+	</string>	
+	<string id="topi_radist_quest_set_1_text0">
+	<text>Follow the first point on the location and set up a tracking locator there.</text>
+	</string>
+	<string id="topi_radist_quest_set_1_title1">
+	<text>Radars: Attach the necessary equipment.</text>
+	</string>	
+	<string id="topi_radist_quest_set_1_text1">
+	<text>Assemble the component parts of the device into a single working system.</text>
+	</string>
+	
+	<string id="topi_radist_quest_set_2_title0">
+	<text>"Radars": set the locator at the second point.</text>
+	</string>	
+	<string id="topi_radist_quest_set_2_text0">
+	<text>Go to the second point on the location and set the tracking locator there.</text>
+	</string>
+	<string id="topi_radist_quest_set_2_title1">
+	<text>Radars: Attach the necessary equipment.</text>
+	</string>	
+	<string id="topi_radist_quest_set_2_text1">
+	<text>Assemble the component parts of the device into a single working system.</text>
+	</string>
+	
+	<string id="topi_radist_quest_set_3_title0">
+	<text>"Radars": set the locator at the third point.</text>
+	</string>	
+	<string id="topi_radist_quest_set_3_text0">
+	<text>Go to the third point on the location and set up a tracking locator there.</text>
+	</string>
+	<string id="topi_radist_quest_set_3_title1">
+	<text>Radars: Attach the necessary equipment.</text>
+	</string>	
+	<string id="topi_radist_quest_set_3_text1">
+	<text>Assemble the component parts of the device into a single working system.</text>
+	</string>
+	
+	<string id="topi_mechanic_quest_proto_title0">
+	<text>Gas Mask Testing: Collect the necessary equipment.</text>
+	</string>	
+	<string id="topi_mechanic_quest_proto_text0">
+	<text>A mechanic at the base has instructed you to test five samples of gas masks for their subsequent purchase in a certain batch. Take the necessary equipment from the box.</text>
+	</string>
+	<string id="topi_mechanic_quest_proto_title1">
+	<text>Gas Mask Testing: Prepare gas masks for testing.</text>
+	</string>	
+	<string id="topi_mechanic_quest_proto_text1">
+	<text>Use special equipment to prepare samples for testing.</text>
+	</string>
+	<string id="topi_mechanic_quest_proto_title2">
+	<text>Gas Mask Testing: Go to the test site.</text>
+	</string>	
+	<string id="topi_mechanic_quest_proto_text2">
+	<text>Gas masks will be checked in a specially designated area. Follow her.</text>
+	</string>
+	<string id="topi_mechanic_quest_proto_title3">
+	<text>Gas Mask Testing: Test the samples.</text>
+	</string>	
+	<string id="topi_mechanic_quest_proto_text3">
+	<text>While the chloropecrine sticks are working, test five different gas masks with different filters.</text>
+	</string>
+	<string id="topi_mechanic_quest_proto_title4">
+	<text>"Gas Mask Testing": Give the test results to the technician.</text>
+	</string>	
+	<string id="topi_mechanic_quest_proto_text4">
+	<text>Return to the base to the technician and give him the data with the test results.</text>
+	</string>
+	
+	<string id="topi_b1_leader_third_quest_title0">
+	<text>Chemical Reconnaissance: measure the levels of possible chemical contamination in a specified area.</text>
+	</string>	
+	<string id="topi_b1_leader_third_quest_text0">
+	<text>Your scout leader has assigned you to conduct a chemical survey of the area. Go to the indicated area and take measurements using the VPKhR.</text>
+	</string>
+	<string id="topi_b1_leader_third_quest_title1">
+	<text>Chemical Reconnaissance: Give the scout the results of the measurements.</text>
+	</string>	
+	<string id="topi_b1_leader_third_quest_text1">
+	<text>Return to the squad and give their leader the results of the measurements.</text>
+	</string>
+	
+	<string id="topi_radist_quest_multimetr_title0">
+	<text>"Faulty radio": head to the place where the radio is installed.</text>
+	</string>	
+	<string id="topi_radist_quest_multimetr_text0">
+	<text>One of the group's installed hidden radios has stopped working. Go to the place where it is installed and remove its work cards.</text>
+	</string>
+	<string id="topi_radist_quest_multimetr_title1">
+	<text>"Faulty radio": ring the extracted circuits with a multimeter.</text>
+	</string>	
+	<string id="topi_radist_quest_multimetr_text1">
+	<text>It is necessary to identify the malfunction of the working modules of the radio station. To do this, use a regular multimeter.</text>
+	</string>
+	<string id="topi_radist_quest_multimetr_title2">
+	<text>"Faulty radio": return to the radio operator.</text>
+	</string>	
+	<string id="topi_radist_quest_multimetr_text2">
+	<text>The multimeter has determined that one of the system boards has failed. And, apparently, its damage occurred as a result of external influences. Return to the radio operator for further instructions.</text>
+	</string>
+	<string id="topi_radist_quest_multimetr_title3">
+	<text>"Faulty radio": use a soldering station.</text>
+	</string>	
+	<string id="topi_radist_quest_multimetr_text3">
+	<text>The radio operator said that he would report to the command that the radio station was put out of action on purpose. You also need to restore its work. First, solder the damaged elements on the board.</text>
+	</string>
+	<string id="topi_radist_quest_multimetr_title4">
+	<text>Faulty Radio: Install the radio in a new location.</text>
+	</string>	
+	<string id="topi_radist_quest_multimetr_text4">
+	<text>In order to try again to avoid such sabotage, it was decided to install a radio station in another area with a different coverage area.</text>
+	</string>
+	<string id="topi_radist_quest_multimetr_title5">
+	<text>Faulty Radio: Insert the system boards you removed earlier.</text>
+	</string>	
+	<string id="topi_radist_quest_multimetr_text5">
+	<text>The station itself is installed. Now it is necessary to install the previously dismantled electronic modules.</text>
+	</string>
+	<string id="topi_radist_quest_multimetr_title6">
+	<text>"Faulty radio": report on the completion of the task.</text>
+	</string>	
+	<string id="topi_radist_quest_multimetr_text6">
+	<text>Return to the radio operator and report on the successful completion of the mission.</text>
+	</string>	
+	<string id="topi_a105_razia_quest_title0">
+	<text>Radio Testing: Go to the testing area.</text>
+	</string>	
+	<string id="topi_a105_razia_quest_text0">
+	<text>A mechanic has asked you to test five samples of portable radios. According to the results of the test, he will select the most suitable one for ordering a large batch. Help him test.</text>
+	</string>
+	<string id="topi_a105_razia_quest_title1">
+	<text>"Testing radio stations": report on the completion of the task.</text>
+	</string>	
+	<string id="topi_a105_razia_quest_text1">
+	<text>Return to the mechanic and report on the successful completion of the task.</text>
+	</string>
+	
+	<string id="topi_zam_variant_quest_title0">
+	<text>At the Crossroads: Collect everything you need from the mechanic.</text>
+	</string>	
+	<string id="topi_zam_variant_quest_text0">
+	<text>You have decided to support the clan deputy in his cause. He instructed you to first eliminate the group of the Lame. Take everything you need from the mechanic.</text>
+	</string>
+	<string id="topi_zam_variant_quest_title1">
+	<text>At the Crossroads: Collect a gas mask with a poisoned filter.</text>
+	</string>	
+	<string id="topi_zam_variant_quest_text1">
+	<text>Kromy must be eliminated without leaving any traces. Prepare a batch of gas masks with poisoned filters.</text>
+	</string>
+	<string id="topi_zam_variant_quest_title2">
+	<text>At the Crossroads: Plant a chemical bomb with a catalyst.</text>
+	</string>	
+	<string id="topi_zam_variant_quest_text2">
+	<text>In order to destroy Kromy's group, you need to prepare a special trap. Place a bomb with a chemical filling, which will be a catalyst for the formation of poison in gas mask filters.</text>
+	</string>
+	<string id="topi_zam_variant_quest_title3">
+	<text>At the Crossroads: Give Lame the gas masks.</text>
+	</string>	
+	<string id="topi_zam_variant_quest_text3">
+	<text>Proceed to the group of scouts and hand over the gas masks to them, along with additional instructions from the deputy.</text>
+	</string>
+	<string id="topi_zam_variant_quest_title4">
+	<text>At the Crossroads: Take the indicated point.</text>
+	</string>	
+	<string id="topi_zam_variant_quest_text4">
+	<text>For a while, you need not to appear at the base, so as not to arouse suspicion.</text>
+	</string>
+	<string id="topi_zam_variant_quest_title5">
+	<text>At the Crossroads: Wait until the chemical trap goes off.</text>
+	</string>	
+	<string id="topi_zam_variant_quest_text5">
+	<text>Wait until you get a signal from an observer. The deputy man must do this when the high-explosive bomb goes off and he is convinced of the death of the group. As soon as this happens, we can consider the job done.</text>
+	</string>
+	<string id="topi_zam_variant_quest_title6">
+	<text>“At the crossroads”: report to the deputy on the completion of your part of the work.</text>
+	</string>	
+	<string id="topi_zam_variant_quest_text6">
+	<text>Return to the deputy's base and report that you have received a signal about the liquidation of Khromy's group.</text>
+	</string>
+	
+	<string id="topi_lider_variant_quest_title0">
+	<text>At the Crossroads: Collect everything you need from the Procurer.</text>
+	</string>	
+	<string id="topi_lider_variant_quest_text0">
+	<text>You have made the decision to side with the clan leader in his confrontation with the deputy. First you need to investigate the death of a group of scouts and check the suspicion of Hasan's involvement in this. Take everything you need to inspect the site of the death of the group from the supplier.</text>
+	</string>
+	<string id="topi_lider_variant_quest_title1">
+	<text>At the Crossroads: Investigate where the group died.</text>
+	</string>	
+	<string id="topi_lider_variant_quest_text1">
+	<text>Using a special spectrometer, take samples in the area where the group died. Maybe something will show up.</text>
+	</string>
+	<string id="topi_lider_variant_quest_title2">
+	<text>At the Crossroads: Talk to the technician.</text>
+	</string>	
+	<string id="topi_lider_variant_quest_text2">
+	<text>The spectrometer showed the presence of traces of rare chemicals at the site of the death of the group. By themselves, they cannot be HOV, but together with others, they give rise to a real explosive mixture. They also cannot be the product of reactions taking place in the anomaly. Talk to the technician - whether he knows something about these substances or not.</text>
+	</string>
+	<string id="topi_lider_variant_quest_title3">
+	<text>At the Crossroads: Find Hassan's men or their possible hideout.</text>
+	</string>	
+	<string id="topi_lider_variant_quest_text3">
+	<text>The tech told you that he did deal with the issue of supplying and configuring devices with such a chemical content, but he could not even imagine that they could be used as covert means of elimination. He told you about who exactly took these components - it was Hassan's people. Check the spot where they were last seen.</text>
+	</string>
+	<string id="topi_lider_variant_quest_title4">
+	<text>At the Crossroads: Eliminate Hassan's men and, after finding the keys to their cache, open it.</text>
+	</string>	
+	<string id="topi_lider_variant_quest_text4">
+	<text>There was a cache of mercenaries at the place indicated by the technician. It needs to be opened. The technician also sent coordinates where the mercenaries themselves might be. Most likely, he just passed them.</text>
+	</string>
+	<string id="topi_lider_variant_quest_title5">
+	<text>At the Crossroads: Report any findings to the faction leader.</text>
+	</string>	
+	<string id="topi_lider_variant_quest_text5">
+	<text>In the mercenaries' cache, there was an archive with curious documentation, shedding light on the affairs of Hassan and his people. Present them to Harold as proof of Hassan's guilt.</text>
+	</string>
+	
+	<string id="topi_lider_variant_quest_1_title0">
+	<text>At the Crossroads: Eliminate the first member of Hassan's gang.</text>
+	</string>	
+	<string id="topi_lider_variant_quest_1_text0">
+	<text>Eliminate one of the mercenaries.</text>
+	</string>
+	<string id="topi_lider_variant_quest_1_title1">
+	<text>At the Crossroads: Collect the key from the mercenary.</text>
+	</string>	
+	<string id="topi_lider_variant_quest_1_text1">
+	<text>Search the corpse of Hasan's man for his stash key.</text>
+	</string>	
+	<string id="topi_lider_variant_quest_2_title0">
+	<text>At the Crossroads: Eliminate the second member of Hassan's gang.</text>
+	</string>	
+	<string id="topi_lider_variant_quest_2_text0">
+	<text>Eliminate one of the mercenaries.</text>
+	</string>
+	<string id="topi_lider_variant_quest_2_title1">
+	<text>At the Crossroads: Collect the key from the mercenary.</text>
+	</string>	
+	<string id="topi_lider_variant_quest_2_text1">
+	<text>Search the corpse of Hasan's man for his stash key.</text>
+	</string>
+	
+	<string id="topi_var_2_suget_quest_1_title0">
+	<text>Svyaznoy: Meet the Svoboda Scout.</text>
+	</string>	
+	<string id="topi_var_2_suget_quest_1_text0">
+	<text>Clear Sky's liaison has made an appointment for you, just as Hassan promised. However, suddenly an urgent message came from the Svoboda. Find out what he needs.</text>
+	</string>
+	<string id="topi_var_2_suget_quest_1_title1">
+	<text>Communicator: Go to a meeting with a Clear Sky agent.</text>
+	</string>	
+	<string id="topi_var_2_suget_quest_1_text1">
+	<text>Despite Anubis' warning, you still went to meet with the customer.</text>
+	</string>
+	<string id="topi_var_2_suget_quest_1_title2">
+	<text>"Svyaznoy": liquidate the pure-bombers.</text>
+	</string>	
+	<string id="topi_var_2_suget_quest_1_text2">
+	<text>Svobodovsky's agent turned out to be right about the Clear Sky grouping. At the meeting, they tried to kill you. Eliminate them.</text>
+	</string>	
+	<string id="topi_var_2_suget_quest_2_title0">
+	<text>Setup: Meet Svobodov's scout.</text>
+	</string>	
+	<string id="topi_var_2_suget_quest_2_text0">
+	<text>You shouldn't have believed the Liberty agent. Clear Sky used you and decided to remove you as soon as you were no longer needed.</text>
+	</string>
+	<string id="topi_var_2_suget_quest_2_title1">
+	<text>Setup: Prepare a trap.</text>
+	</string>	
+	<string id="topi_var_2_suget_quest_2_text1">
+	<text>Convince Hasan that it was Clear Sky who killed one of the syndicate people he was working with. Anubis will force a detachment of winged ones to go to the village. The mercenaries should also come there.</text>
+	</string>
+	<string id="topi_var_2_suget_quest_2_title2">
+	<text>Setup: Eliminate everyone in the village.</text>
+	</string>	
+	<string id="topi_var_2_suget_quest_2_text2">
+	<text>Bleeding Clear Sky and mercenaries. Just the first step. The way the rats gnaw each other. Finish off those who survive.</text>
+	</string>
+	<string id="topi_var_2_suget_quest_3_title0">
+	<text>Reckoning: Resupply the Freedom Cache.</text>
+	</string>	
+	<string id="topi_var_2_suget_quest_3_text0">
+	<text>To perform the next operation, you need to replenish your supplies. Do this and also receive additional instructions from Anubis.</text>
+	</string>
+	<string id="topi_var_2_suget_quest_3_title1">
+	<text>Payback: Eliminate the stalker base.</text>
+	</string>	
+	<string id="topi_var_2_suget_quest_3_text1">
+	<text>Go to the base to free stalkers and liquidate all who remained there. This must be done to remove traces. Most of the guards will not be in place - they will be distracted by the Svobodovsky scout.</text>
+	</string>
+	<string id="topi_var_2_suget_quest_final_title0">
+	<text>Decoupling: Eliminate the group of scientists you were supposed to save.</text>
+	</string>	
+	<string id="topi_var_2_suget_quest_final_text0">
+	<text>Complete Anubis's order and dispose of the waste material in this terrifying multi-turner.</text>
+	</string>
+	<string id="topi_var_2_suget_quest_final_title1">
+	<text>"Decoupling": lay a landmine with a HOV.</text>
+	</string>	
+	<string id="topi_var_2_suget_quest_final_text1">
+	<text>Perhaps some of the scientists are still hiding in the lower tiers of the bunker. Plant chemical bombs to eliminate all survivors.</text>
+	</string>
+	<string id="topi_var_2_suget_quest_final_title2">
+	<text>"Decoupling": wait for the fuse to go off.</text>
+	</string>	
+	<string id="topi_var_2_suget_quest_final_text2">
+	<text>Wait for the bomb to go off. At this point, it is better to stay away from her.</text>
+	</string>
+	<string id="topi_var_2_suget_quest_final_title3">
+	<text>Decoupling: Meet Anubis.</text>
+	</string>	
+	<string id="topi_var_2_suget_quest_final_text3">
+	<text>The job assigned to you by the Svoboda Scout is done. Follow him for further instructions, if any.</text>
+	</string>
+	<string id="topi_b1_leader_first_quest_title0">
+	<text>Sweep: Search for mercenary mines</text>
+	</string>	
+	<string id="topi_b1_leader_first_quest_text0">
+	<text>Go to the abandoned area where the mercenaries were recently spotted and scout the area for possible booby-trapped surprises.</text>
+	</string>
+	<string id="topi_b1_leader_first_quest_title1">
+	<text>Purge: Return to the village to the scout leader.</text>
+	</string>	
+	<string id="topi_b1_leader_first_quest_text1">
+	<text>All mines have been found and successfully defused. Return to your employer.</text>
+	</string>
+	<string id="topi_b1_leader_first_quest_title2">
+	<text>Purge: Fight off a wave of mutants.</text>
+	</string>	
+	<string id="topi_b1_leader_first_quest_text2">
+	<text>The parking lot of scouts and free stalkers was attacked by mutants. Fight them off.</text>
+	</string>
+	
+	<string id="topi_var_1_final_quest_title0">
+	<text>Decoupling: Meet Anubis.</text>
+	</string>	
+	<string id="topi_var_1_final_quest_text0">
+	<text>Go to meet the Free agent.</text>
+	</string>
+	<string id="topi_var_1_final_quest_title1">
+	<text>Decoupling: Eliminate the Clear Sky informant.</text>
+	</string>	
+	<string id="topi_var_1_final_quest_text1">
+	<text>Go to the designated area and kill the Clear Sky agent.</text>
+	</string>
+	<string id="topi_var_1_final_quest_title2">
+	<text>Decoupling: contact the Chistobovo squad.</text>
+	</string>	
+	<string id="topi_var_1_final_quest_text2">
+	<text>Send a message to the Clear Sky assault squad through the radio operator of the Free Stalkers.</text>
+	</string>
+	<string id="topi_var_1_final_quest_title3">
+	<text>Decoupling: Eliminate the dispatched Assault Squad.</text>
+	</string>	
+	<string id="topi_var_1_final_quest_text3">
+	<text>A group of Chistinebists was supposed to occupy the central checkpoint. Move towards him and destroy them.</text>
+	</string>
+	<string id="topi_var_1_final_quest_title4">
+	<text>Decoupling: Kill the other half of the group of scientists.</text>
+	</string>	
+	<string id="topi_var_1_final_quest_text4">
+	<text>Go to the place where the missing group of scientists was hiding for a long time and eliminate those who remained there.</text>
+	</string>
+	<string id="topi_var_1_final_quest_title5">
+	<text>Decoupling: Return to Anubis.</text>
+	</string>	
+	<string id="topi_var_1_final_quest_text5">
+	<text>Svoboda's instructions have been fulfilled. Report it to him.</text>
+	</string>
+	<string id="topi_var_1_final_quest_title6">
+	<text>Decoupling: Kill the Sinner Agent.</text>
+	</string>	
+	<string id="topi_var_1_final_quest_text6">
+	<text>At the very last moment, doubts arose about the correctness of the chosen path. Becoming an agent of sinners is not what you were going for. Eliminate Anubis.</text>
+	</string>
+	<string id="topi_var_1_final_quest_title7">
+	<text>Decoupling: Follow Harold.</text>
+	</string>	
+	<string id="topi_var_1_final_quest_text7">
+	<text>Accept Harold's offer to join his faction. Perhaps this new stage will help you forget everything that happened here.</text>
+	</string>
+	
+	<string id="topi_i1_killer_quest_title0">
+	<text>Syndicate Case: Find the stash of the mercenaries.</text>
+	</string>	
+	<string id="topi_i1_killer_quest_text0">
+	<text>A note found on the corpse of a syndicate fighter hints at a mercenary cache in the nearby area. Find him. Perhaps it is hidden in the caves or in the village.</text>
+	</string>
+	<string id="topi_i1_killer_quest_title1">
+	<text>Syndicate Case: Build a stash.</text>
+	</string>	
+	<string id="topi_i1_killer_quest_text1">
+	<text>You need to figure out the code that the mercenaries use to open the cache. Do not try to just break it in - most likely it is mined. The code may be known to some of the stalkers working for the syndicate.</text>
+	</string>
+	<string id="topi_i1_killer_quest_title2">
+	<text>Syndicate Case: Hurry to base.</text>
+	</string>	
+	<string id="topi_i1_killer_quest_text2">
+	<text>The syndicate's stash has a surprise in the form of a built-in poison gas tank. Whether it was specifically installed or not is unknown. Return to base for the antidote as soon as possible.</text>
+	</string>
+	<string id="topi_i1_killer_quest_title3">
+	<text>Syndicate Case: Go to the Medic.</text>
+	</string>	
+	<string id="topi_i1_killer_quest_text3">
+	<text>An unknown Svobodovsky scout saved your life. See a doctor, as he advised.</text>
+	</string>
+	
+	<string id="topi_f1_main_suget_quest_1_title0">
+	<text>"Arrival": Talk to the Svoboda.</text>
+	</string>	
+	<string id="topi_f1_main_suget_quest_1_text0">
+	<text>From the very beginning it was "lucky" to run into a Fremen patrol. And how difficult it was to bring them here. Find out what they need.</text>
+	</string>
+	<string id="topi_f1_main_suget_quest_1_title1">
+	<text>Arrival: Meet the leader of the Svobodov squad.</text>
+	</string>	
+	<string id="topi_f1_main_suget_quest_1_text1">
+	<text>Speak with the leader of the Freedom Scouts. It may be possible to find out some information on the missing scientists. Try to take a chance and deceive them by introducing yourself as the stalker that the patrol was expecting.</text>
+	</string>
+	<string id="topi_f1_main_suget_quest_1_title2">
+	<text>Arrival: Locate the missing scout's signal.</text>
+	</string>	
+	<string id="topi_f1_main_suget_quest_1_text2">
+	<text>The Svobodov leader is willing to share what he has if you can help find one of their missing people. Go to the place of his last contact and try to find his signal.</text>
+	</string>
+	<string id="topi_f1_main_suget_quest_1_title3">
+	<text>Arrival: Return to the squad.</text>
+	</string>	
+	<string id="topi_f1_main_suget_quest_1_text3">
+	<text>Go back to the commander and give him the information received using the manual direction finder.</text>
+	</string>
+	<string id="topi_f1_main_suget_quest_1_title4">
+	<text>Arrival: Destroy the Duty quad.</text>
+	</string>	
+	<string id="topi_f1_main_suget_quest_1_text4">
+	<text>Svobodov's stalkers were killed by their eternal enemies - Dolgovtsy. You were mistaken for an accomplice of "Freedom". Eliminate the debtors.</text>
+	</string>
+	
+	<string id="topi_k1_zam_or_lider_0_title0">
+	<text>Side Selection: Choose which side to take.</text>
+	</string>	
+	<string id="topi_k1_zam_or_lider_0_text0">
+	<text>The conflict between the deputy and the leader of the clan may take a much stronger turn than it seemed at first. And without your intervention is unlikely to do. Choose which side to stand on - Harold or Hassan.</text>
+	</string>
+	
+	<string id="topi_b30_medic_quest_title0">
+	<text>Elimaeus' Request: Find the Bell and Frozen Heart artifacts.</text>
+	</string>
+	<string id="topi_b30_medic_quest_text0">
+	<text>Elimey asked me to help him in one case and find for him two artifacts "Bell" and "Ice Heart", which one dying stalker spoke about.</text>
+	</string>
+	<string id="topi_b30_medic_quest_title1">
+	<text>Elimaeus' Request: Find the Frozen Heart artifact.</text>
+	</string>
+	<string id="topi_b30_medic_quest_text1">
+	<text>The Bell artifact has been found. Find the Frozen Heart.</text>
+	</string>
+	<string id="topi_b30_medic_quest_title2">
+	<text>Elimaeus' Request: Find the Bell Artifact</text>
+	</string>
+	<string id="topi_b30_medic_quest_text2">
+	<text>The Frozen Heart artifact has been found. Find the Bell.</text>
+	</string>
+	<string id="topi_b30_medic_quest_title3">
+	<text>Elimaeus Request: Hand over the found artifacts to Yelimaeus.</text>
+	</string>
+	<string id="topi_b30_medic_quest_text3">
+	<text>Both artifacts were successfully found at the location Yelimaeus told you about. Give them to the medic and collect the reward.</text>
+	</string>	
+	<string id="topi_m1_snab_quest_title0">
+	<text>Isai's Request: Collect artifacts from the collectors.</text>
+	</string>
+	<string id="topi_m1_snab_quest_text0">
+	<text>The purveyor has arranged with Jorah for you to collect artifacts from the stalkers. At the personal request of Isai, tell each of the collectors about the new caches.</text>
+	</string>
+	<string id="topi_m1_snab_quest_title1">
+	<text>Isai's Request: Give the collected artifacts to Isai.</text>
+	</string>
+	<string id="topi_m1_snab_quest_text1">
+	<text>The fishing rod is abandoned - each of the artifact collectors received the necessary information. It remains only to wait which of these three will prove themselves. Return to the base and hand over all the artifacts to the customer.</text>
+	</string>	
+	<string id="topi_m1_sborshik_1_title0">
+	<text>Isai's Request: Go to the first collector</text>
+	</string>
+	<string id="topi_m1_sborshik_1_text0">
+	<text>Meet the first assembler, collect the cargo from him and pass on the information that Isai gave you.</text>
+	</string>
+	<string id="topi_m1_sborshik_2_title0">
+	<text>Isai's Request: Go to the Second Collector</text>
+	</string>
+	<string id="topi_m1_sborshik_2_text0">
+	<text>Meet with the second collector, take the cargo from him and pass on the information that Isai gave you..</text>
+	</string>
+	<string id="topi_m1_sborshik_3_title0">
+	<text>Isai's Request: Go to the third collector</text>
+	</string>
+	<string id="topi_m1_sborshik_3_text0">
+	<text>Meet with the third assembler, collect the cargo from him and pass on the information that Isai gave you.</text>
+	</string>
+	
+	<string id="topi_b5_hunter_chimera_quest_title0">
+	<text>Night Predator: Meet Yakut.</text>
+	</string>
+	<string id="topi_b5_hunter_chimera_quest_text0">
+	<text>Your hunter has tasked you with taking out a nocturnal predator that has begun attacking gathering groups. Follow one of the most experienced hunters in the clan to hunt the chimera together.</text>
+	</string>
+	<string id="topi_b5_hunter_chimera_quest_title1">
+	<text>Night Predator: Scout the area.</text>
+	</string>
+	<string id="topi_b5_hunter_chimera_quest_text1">
+	<text>Try to occupy the local farms with the hunter as discreetly as possible.</text>
+	</string>
+	<string id="topi_b5_hunter_chimera_quest_title2">
+	<text>Night Predator: Specify details.</text>
+	</string>
+	<string id="topi_b5_hunter_chimera_quest_text2">
+	<text>Talk to Yakut again to clarify the plan of action.</text>
+	</string>
+	<string id="topi_b5_hunter_chimera_quest_title3">
+	<text>Night Predator: Eliminate the second Chimera.</text>
+	</string>
+	<string id="topi_b5_hunter_chimera_quest_text3">
+	<text>Yakut has informed you that two predators are working in the area - he noticed traces of two individuals. The hunter offered to split his forces. Take care of the creature, which is most likely injured and has just disappeared into the forest.</text>
+	</string>
+	<string id="topi_b5_hunter_chimera_quest_title4">
+	<text>Night Predator: Return to Yakut.</text>
+	</string>
+	<string id="topi_b5_hunter_chimera_quest_text4">
+	<text>One of the two nocturnal predators has been destroyed. However, for some reason, the sounds of shooting were not heard. Find out what happened to Yakut.</text>
+	</string>
+	<string id="topi_b5_hunter_chimera_quest_title5">
+	<text>Night Predator: Get back to base quickly.</text>
+	</string>
+	<string id="topi_b5_hunter_chimera_quest_text5">
+	<text>Yakut has disappeared. What happened to him is unknown. You killed one predator - and whether there was a second one is another question. Plus, the disappearance of a much more experienced hunter. Better not tempt fate and return to the customer.</text>
+	</string>
+	
+	<string id="topi_c17_snab_mahir_quest_title0">
+	<text>Artifact Collector: Pass the package to the Artifact Collector.</text>
+	</string>
+	<string id="topi_c17_snab_mahir_quest_text0">
+	<text>Isai, with your help, has figured out exactly which of the artifact collectors is involved in banditry. You now need to eliminate it. Give him a package with a "gift".</text>
+	</string>	
+	<string id="topi_c17_snab_mahir_quest_title1">
+	<text>Artifact Collector: Return to Isaiah.</text>
+	</string>
+	<string id="topi_c17_snab_mahir_quest_text1">
+	<text>Report to the employer on the successful completion of the task.</text>
+	</string>
+	
+	<string id="topi_с17_snab_mahir_quest_1_title0">
+	<text>Artifact Collector: Escort Mahir to the southern outpost.</text>
+	</string>
+	<string id="topi_с17_snab_mahir_quest_1_text0">
+	<text>You did not believe Isai's version of the involvement of the collectors in attacks and robberies. Help the person you were ordered to kill. Take him to a safe area so he can hide. However, insist on your decision to take him to the southern checkpoint.</text>
+	</string>
+	<string id="topi_с17_snab_mahir_quest_1_title1">
+	<text>Artifact Collector: Talk to the Artifact Collector.</text>
+	</string>
+	<string id="topi_c17_snab_mahir_quest_1_text1">
+	<text>Reconsider with Mahir the details of his rescue and what you will have to say to Isaiah afterwards.</text>
+	</string>
+	<string id="topi_c17_snab_mahir_quest_1_title2">
+	<text>Artifact Collector: Return to your employer.</text>
+	</string>
+	<string id="topi_с17_snab_mahir_quest_1_text2">
+	<text>Go to the base and lie to Isaiah that you eliminated the objectionable harvester. You may have made a mistake in your choice, but this is already on your conscience.</text>
+	</string>
+	
+	<string id="topi_c17_snab_mahir_quest_2_title0">
+	<text>Artifact Collector: Travel with the Artifact Collector to the North Outpost.</text>
+	</string>
+	<string id="topi_c17_snab_mahir_quest_2_text0">
+	<text>You didn't believe Isai's story about the harvesters and decided to save Mahir from death. At the same time, they agreed to his terms to withdraw him through the northern checkpoint.</text>
+	</string>
+	<string id="topi_с17_snab_mahir_quest_2_title1">
+	<text>Artifact Collector: Talk to Mahir again.</text>
+	</string>
+	<string id="topi_c17_snab_mahir_quest_2_text1">
+	<text>It seems that you agreed to help him in vain and did not believe the employer. The desire to cut down more dough will play a cruel joke on you.</text>
+	</string>
+	<string id="topi_с17_snab_mahir_quest_2_title2">
+	<text>Artifact Collector: Kill Mahir with bandits.</text>
+	</string>
+	<string id="topi_с17_snab_mahir_quest_2_text2">
+	<text>Isai was right about everything. Artifact Collector Mahir was one of the bandits who carried out acts of sabotage against the clan. And he led you into an ambush. Eliminate it.</text>
+	</string>
+	<string id="topi_с17_snab_mahir_quest_2_title3">
+	<text>Artifact collector: return to the customer.</text>
+	</string>
+	<string id="topi_с17_snab_mahir_quest_2_text3">
+	<text>Return to the customer and report that the assembler has been destroyed. And I hope you're smart enough to keep your mouth shut about trying to trick him.</text>
+	</string>
+	
+	<string id="topi_a15_dolg_quest_title0">
+	<text>Jorah's Request: Find the Dragon's Eye artifact.</text>
+	</string>
+	<string id="topi_a15_dolg_quest_text0">
+	<text>Your customer has asked you to find one of the rare artifacts, the Dragon's Eye. Go to the specified area to investigate the anomaly.</text>
+	</string>
+	<string id="topi_a15_dolg_quest_title1">
+	<text>Jorah's Request: Make it to the base alive.</text>
+	</string>
+	<string id="topi_a15_dolg_quest_text1">
+	<text>Most likely it was a trap. Dolgovtsy figured you out and decided to take revenge. They did not immediately kill you - they stunned you and left you without weapons and equipment. The only chance for you to survive is to get to the base.</text>
+	</string>
+	<string id="topi_a15_dolg_quest_title2">
+	<text>Jorah's Request: Seek help from faction leaders.</text>
+	</string>
+	<string id="topi_a15_dolg_quest_text2">
+	<text>Duty will not forgive you for killing your people, even though you survived their cruel game. Contact Hassan or Harold for help.</text>
+	</string>
+	
+	<string id="topi_a15_freedom_quest_title0">
+	<text>Jorah's Request: Find the Black Soul artifact.</text>
+	</string>
+	<string id="topi_a15_freedom_quest_text0">
+	<text>Your client has asked you to find one of the rare artifacts, the Black Soul. Go to the specified area to investigate the anomaly.</text>
+	</string>
+	<string id="topi_a15_freedom_quest_title1">
+	<text>Jorah's Request: Make it to the base alive.</text>
+	</string>
+	<string id="topi_a15_freedom_quest_text1">
+	<text>Most likely it was a trap. The Svobodovites figured you out and decided to take revenge. They did not immediately kill you - they stunned you and left you without weapons and equipment. The only chance for you to survive is to get to the base.</text>
+	</string>
+	<string id="topi_a15_freedom_quest_title2">
+	<text>Jorah's Request: Seek help from faction leaders.</text>
+	</string>
+	<string id="topi_a15_freedom_quest_text2">
+	<text>Freedom will not forgive you for killing its people, even if you survived their "cruel game". Contact Hassan or Harold for help.</text>
+	</string>
+	
+	<string id="topi_b41_seleczia_quest_title0">
+	<text>Artifact selection: Perform a selection of issued artifacts.</text>
+	</string>
+	<string id="topi_b41_seleczia_quest_text0">
+	<text>Jorah has tasked you with selecting similar artifacts in three different chemical anomalies. This will allow us to study them much better and understand how they formed here and what should be expected from them.</text>
+	</string>
+	<string id="topi_b41_seleczia_quest_title1">
+	<text>Artifact selection: return to the customer.</text>
+	</string>
+	<string id="topi_b41_seleczia_quest_text1">
+	<text>The artifacts have been altered in a special device by anomalous activity. Hand over the received samples to the customer.</text>
+	</string>
+	
+	<string id="topi_b15_hasan_dolg_title0">
+	<text>Revenge on "Debt": liquidate the debtors at the checkpoint.</text>
+	</string>
+	<string id="topi_b15_hasan_dolg_text0">
+	<text>Use Hasan's suggestion to help you deal with your Debt issues. Follow his instructions to occupy the checkpoint they captured.</text>
+	</string>
+	<string id="topi_b15_hasan_dolg_title1">
+	<text>Revenge of Duty: Return to Hassan.</text>
+	</string>
+	<string id="topi_b15_hasan_dolg_text1">
+	<text>You have completed your part of the operation. The rest is up to Hasan's people. They must arrange everything in such a way as to avert suspicion of an attack on the stalkers of the Duty group from you.</text>
+	</string>
+	<string id="topi_b15_harold_dolg_title0">
+	<text>Revenge on "Debt": liquidate the debtors at the checkpoint.</text>
+	</string>
+	<string id="topi_b15_harold_dolg_text0">
+	<text>Use Harold's suggestion to help you sort out your Debt issues. Following his instructions, take the checkpoint they captured.</text>
+	</string>
+	<string id="topi_b15_harold_dolg_title1">
+	<text>Revenge of Duty: Return to Harold.</text>
+	</string>
+	<string id="topi_b15_harold_dolg_text1">
+	<text>You have completed your part of the operation. The rest is up to Harold's people. They must arrange everything in such a way as to avert suspicion of an attack on the stalkers of the Duty group from you.</text>
+	</string>
+	
+	<string id="topi_b15_hasan_freedom_title0">
+	<text>Revenge on Svoboda: Eliminate Svoboda at the checkpoint.</text>
+	</string>
+	<string id="topi_b15_hasan_freedom_text0">
+	<text>Use Hasan's suggestion to help you deal with your problems with Freedom. Following his instructions, take the checkpoint they captured.</text>
+	</string>
+	<string id="topi_b15_hasan_freedom_title1">
+	<text>Revenge on Freedom: Return to Hassan.</text>
+	</string>
+	<string id="topi_b15_hasan_freedom_text1">
+	<text>You have completed your part of the operation. The rest is up to Hasan's people. They must arrange everything in such a way as to avert suspicion of an attack on the stalkers of the Freedom group from you.</text>
+	</string>
+	<string id="topi_b15_harold_freedom_title0">
+	<text>Revenge on Svoboda: Eliminate Svoboda at the checkpoint.</text>
+	</string>
+	<string id="topi_b15_harold_freedom_text0">
+	<text>Use Harold's suggestion to help you deal with your problems with Liberty. Following his instructions, take the checkpoint they captured.</text>
+	</string>
+	<string id="topi_b15_harold_freedom_title1">
+	<text>Revenge on Liberty: Return to Harold.</text>
+	</string>
+	<string id="topi_b15_harold_freedom_text1">
+	<text>You have completed your part of the operation. The rest is up to Harold's people. They must arrange everything in such a way as to avert suspicion of an attack on the stalkers of the Freedom group from you.</text>
+	</string>
+	
+	<string id="topi_b19_technic_pnv_quest_title0">
+	<text>Technician's Request: Follow the technician's helper.</text>
+	</string>
+	<string id="topi_b19_technic_pnv_quest_text0">
+	<text>The technician ordered to test three samples of various night vision devices. Go to the assistant for testing.</text>
+	</string>
+	<string id="topi_b19_technic_pnv_quest_title1">
+	<text>Technician's Request: Run the first type of NVD.</text>
+	</string>
+	<string id="topi_b19_technic_pnv_quest_text1">
+	<text>Include the first sample of NVD for testing.</text>
+	</string>
+	<string id="topi_b19_technic_pnv_quest_title2">
+	<text>Technician's request: wait for testing to finish.</text>
+	</string>
+	<string id="topi_b19_technic_pnv_quest_text2">
+	<text>Wait while the technician's assistant makes the necessary changes to the first fixture.</text>
+	</string>
+	<string id="topi_b19_technic_pnv_quest_title3">
+	<text>Technician's Request: Collect a second sample for testing.</text>
+	</string>
+	<string id="topi_b19_technical_pnv_quest_text3">
+	<text>Take the second type of night vision device from the assistant.</text>
+	</string>
+	<string id="topi_b19_technic_pnv_quest_title4">
+	<text>Technician's Request: Run the second type of NVD.</text>
+	</string>
+	<string id="topi_b19_technic_pnv_quest_text4">
+	<text>Include a second sample of NVD for testing.</text>
+	</string>
+	<string id="topi_b19_technic_pnv_quest_title5">
+	<text>Technician's request: wait for testing to finish.</text>
+	</string>
+	<string id="topi_b19_technical_pnv_quest_text5">
+	<text>Wait while the technician's assistant makes the necessary changes to the second fixture.</text>
+	</string>
+	<string id="topi_b19_technical_pnv_quest_title6">
+	<text>Technician's Request: Collect the third sample for testing.</text>
+	</string>
+	<string id="topi_b19_technic_pnv_quest_text6">
+	<text>Take the third type of night vision device from the assistant.</text>
+	</string>
+	<string id="topi_b19_technic_pnv_quest_title7">
+	<text>Technician's Request: Launch the third type of NVD.</text>
+	</string>
+	<string id="topi_b19_technic_pnv_quest_text7">
+	<text>Include a third sample of NVD for testing.</text>
+	</string>
+	<string id="topi_b19_technic_pnv_quest_title8">
+	<text>Technician's request: wait for testing to finish.</text>
+	</string>
+	<string id="topi_b19_technic_pnv_quest_text8">
+	<text>Wait while the technician's assistant makes the necessary changes to the third device.</text>
+	</string>
+	<string id="topi_b19_technic_pnv_quest_title9">
+	<text>Technician's Request: Return to the technician.</text>
+	</string>
+	<string id="topi_b19_technic_pnv_quest_text9">
+	<text>Return to the base and inform the customer about the successful completion of the task.</text>
+	</string>
+	
+	<string id="topi_b45_angel_quest_title0">
+	<text>Unknown danger: get to the radio operator immediately.</text>
+	</string>
+	<string id="topi_b45_angel_quest_text0">
+	<text>As soon as possible, go to the base to the radio operator. One of the installed radars has detected something strange and needs your help.</text>
+	</string>
+	<string id="topi_b45_angel_quest_title1">
+	<text>Unknown danger: travel to the specified location.</text>
+	</string>
+	<string id="topi_b45_angel_quest_text1">
+	<text>We need to find out what exactly the radar spotted. And learn about the fate of a group of scouts that were also sent to that area.</text>
+	</string>
+	<string id="topi_b45_angel_quest_title2">
+	<text>Unknown Danger: Kill Scouts who have lost their minds.</text>
+	</string>
+	<string id="topi_b45_angel_quest_text2">
+	<text>Something terrible has happened here. Unknown anomaly, crazy stalkers. Save your life.</text>
+	</string>
+	<string id="topi_b45_angel_quest_title3">
+	<text>Unknown danger: leave this place immediately.</text>
+	</string>
+	<string id="topi_b45_angel_quest_text3">
+	<text>Psi Strike. Either this is an anomaly, or some kind of mutant. Get out of here.</text>
+	</string>
+	<string id="topi_b45_angel_quest_title4">
+	<text>Unknown Danger: Talk to the Medic.</text>
+	</string>
+	<string id="topi_b45_angel_quest_text4">
+	<text>It is unknown what happened. You killed the scouts, then the blow. And emptiness. Find out from the doctor what exactly happened.</text>
+	</string>
+	<string id="topi_b45_angel_quest_title5">
+	<text>Unknown danger: report the incident to the radio operator.</text>
+	</string>
+	<string id="topi_b45_angel_quest_text5">
+	<text>The medic said you were found unconscious. The anomaly was no more. What it was is unknown. Tell everything you remember to the radio operator.</text>
+	</string>
+	
+	<string id="topi_c7_ceh_quest_1_title0">
+	<text>Cech's Mission: Set up a Jammer in the specified area.</text>
+	</string>
+	<string id="topi_c7_ceh_quest_1_text0">
+	<text>Go to the farms and install the necessary equipment disguised as regular crates.</text>
+	</string>
+	<string id="topi_c7_ceh_quest_1_title1">
+	<text>Cech's Mission: Return to your employer.</text>
+	</string>
+	<string id="topi_c7_ceh_quest_1_text1">
+	<text>Return to base and report to Cech about the completion of the task.</text>
+	</string>
+	<string id="topi_c7_ceh_quest_2_title0">
+	<text>Cech's mission: set up a radio-electronic complex in the specified area.</text>
+	</string>
+	<string id="topi_c7_ceh_quest_2_text0">
+	<text>Go to the village and install the necessary equipment disguised as regular crates.</text>
+	</string>
+	<string id="topi_c7_ceh_quest_2_title1">
+	<text>Cech's Mission: Return to your employer.</text>
+	</string>
+	<string id="topi_c7_ceh_quest_2_text1">
+	<text>Return to base and report to Cech about the completion of the task.</text>
+	</string>
+	
+	<string id="topi_b65_harold_main_title0">
+	<text>Harold's Request: Follow the faction leader.</text>
+	</string>
+	<string id="topi_b65_harold_main_text0">
+	<text>The leader of the stalkers asks you to report to him urgently. This is quite important, so you should not delay it.</text>
+	</string>
+	<string id="topi_b65_harold_main_title1">
+	<text>Harold's Request: Eliminate Hassan.</text>
+	</string>
+	<string id="topi_b65_harold_main_text1">
+	<text>Harold has tasked you with destroying his lieutenant, who betrayed him and began to play his own game. Do this by following one of the instructions given.</text>
+	</string>
+	
+	<string id="topi_b65_harold_quest_1_title0">
+	<text>Harold's Request: Defeat Hassan's party.</text>
+	</string>
+	<string id="topi_b65_harold_quest_1_text0">
+	<text>Go to the indicated area and deal with Hassan's squad.</text>
+	</string>
+	<string id="topi_b65_harold_quest_1_title1">
+	<text>Harold's Request: Return to the leader.</text>
+	</string>
+	<string id="topi_b65_harold_quest_1_text1">
+	<text>Inform the customer about the successful completion of the task.</text>
+	</string>
+	
+	<string id="topi_b65_harold_quest_2_title0">
+	<text>Harold's Request: Place an explosive charge.</text>
+	</string>
+	<string id="topi_b65_harold_quest_2_text0">
+	<text>Deal with Hassan by blowing him up at the base itself. To do this, use a charge stuffed with a special chemical poison.</text>
+	</string>
+	<string id="topi_b65_harold_quest_2_title1">
+	<text>Harold's Request: Wait for the explosive device to go off.</text>
+	</string>
+	<string id="topi_b65_harold_quest_2_text1">
+	<text>It is necessary to wait until the landmine with HOV is activated.</text>
+	</string>
+	<string id="topi_b65_harold_quest_2_title2">
+	<text>Harold's Request: Return to the leader.</text>
+	</string>
+	<string id="topi_b65_harold_quest_2_text2">
+	<text>Inform the customer about the successful completion of the task.</text>
+	</string>
+	
+	<string id="topi_a65_hasan_main_title0">
+	<text>Hassan's Request: Follow the faction leader's deputy.</text>
+	</string>
+	<string id="topi_a65_hasan_main_text0">
+	<text>Deputy the leader of the stalkers asks you to urgently come to him. This is quite important, so you should not delay it.</text>
+	</string>
+	<string id="topi_a65_hasan_main_title1">
+	<text>Hassan's Request: Eliminate Harold.</text>
+	</string>
+	<string id="topi_a65_hasan_main_text1">
+	<text>Hasan has tasked you with destroying the leader of the clan, who is no longer able to properly lead the clan and is only an obstacle to the deputy's path to power. Do this by following one of the instructions given.</text>
+	</string>
+	
+	<string id="topi_a65_hasan_quest_1_title0">
+	<text>Hassan's Request: Defeat Harold's party.</text>
+	</string>
+	<string id="topi_a65_hasan_quest_1_text0">
+	<text>Go to the indicated area and deal with Harold's men.</text>
+	</string>
+	<string id="topi_a65_hasan_quest_1_title1">
+	<text>Hasan's Request: Return to the deputy leader.</text>
+	</string>
+	<string id="topi_a65_hasan_quest_1_text1">
+	<text>Inform the customer about the successful completion of the task.</text>
+	</string>
+	
+	<string id="topi_a65_hasan_quest_2_title0">
+	<text>Hassan's Request: Place an explosive charge.</text>
+	</string>
+	<string id="topi_a65_hasan_quest_2_text0">
+	<text>Deal with Harold by blowing him up at the base itself. To do this, use a charge stuffed with a special chemical poison.</text>
+	</string>
+	<string id="topi_a65_hasan_quest_2_title1">
+	<text>Hassan's Request: Wait for the explosive device to go off.</text>
+	</string>
+	<string id="topi_a65_hasan_quest_2_text1">
+	<text>It is necessary to wait until the landmine with HOV is activated.</text>
+	</string>
+	<string id="topi_a65_hasan_quest_2_title2">
+	<text>Hasan's Request: Return to the deputy leader.</text>
+	</string>
+	<string id="topi_a65_hasan_quest_2_text2">
+	<text>Inform the customer about the successful completion of the task.</text>
+	</string>
+	
+	<string id="topi_d5_third_end_quest_1_title0">
+	<text>Meet the agent: talk to Cech.</text>
+	</string>
+	<string id="topi_d5_third_end_quest_1_text0">
+	<text>The Czech told you not to meet Anubis under any circumstances. Follow him for details.</text>
+	</string>
+	
+	<string id="topi_d5_third_end_quest_2_title0">
+	<text>Deceit: go to the base.</text>
+	</string>
+	<string id="topi_d5_third_end_quest_2_text0">
+	<text>The Czech suggested that we act according to his plan. First, return to the base and ask the radio operator to contact the Chistonebov agent to make an appointment.</text>
+	</string>	
+	<string id="topi_d5_third_end_quest_2_title1">
+	<text>Deceit: Meet the Chisnebov agent.</text>
+	</string>
+	<string id="topi_d5_third_end_quest_2_text1">
+	<text>Go to the Clear Sky agent and offer to exchange a group of scientists on your own terms.</text>
+	</string>
+	
+	<string id="topi_e7_third_end_quest_4_title0">
+	<text>The sky has seen everything: liquidate the Pure Nebo detachment.</text>
+	</string>
+	<string id="topi_e7_third_end_quest_4_text0">
+	<text>Destroy the Clear Sky faction that was sent here to clear out. Cech was right - your contract with the birds turned out to be a one-way ticket. Eliminate your employers.</text>
+	</string>
+	
+	<string id="topi_m2_third_end_quest_5_title0">
+	<text>Blanking your tracks: talk to Cech.</text>
+	</string>
+	<string id="topi_m2_third_end_quest_5_text0">
+	<text>Meet with the mercenary agent to discuss your next course of action.</text>
+	</string>
+	<string id="topi_m2_third_end_quest_5_title1">
+	<text>Blanking your tracks: clear the base of free stalkers.</text>
+	</string>
+	<string id="topi_m2_third_end_quest_5_text1">
+	<text>The Czech told you that the original plan failed. A clan of local stalkers, now led by Hasan, has declared a hunt for you in connection with the destruction of the Clear Sky group. Most likely the sinner Anubis is to blame for this. It is urgent to cover up the tracks before the matter takes an even more serious turn.</text>
+	</string>
+	
+	<string id="topi_k9_third_end_quest_6_title0">
+		<text>Decoupling: Meet Anubis.</text>
+	</string>
+	<string id="topi_k9_third_end_quest_6_text0">
+		<text>An agent of sinners has contacted you and set up a meeting. Find out what he needs.</text>
+	</string>
+	<string id="topi_k9_third_end_quest_6_title1">
+		<text>Decoupling: expect what happens.</text>
+	</string>
+	<string id="topi_k9_third_end_quest_6_text1">
+		<text>What the viper has told you can terrify you. Even more shocking is that he decided to shoot himself in front of you.</text>
+	</string>
+	<string id="topi_k9_third_end_quest_6_title2">
+		<text>Decoupling: follow to Czech.</text>
+	</string>
+	<string id="topi_k9_third_end_quest_6_text2">
+		<text>Tell Cech what happened and what the sinners agent told you.</text>
+	</string>
+
+</string_table>

@@ -1,0 +1,25 @@
+[logic]
+active = sr_idle@cut_scene_night_shooter_spawn
+
+[sr_idle@cut_scene_night_shooter_spawn]
+on_info = {+blck_val_actor_go_to_roof_hutor} sr_idle@cut_scene_night_shooter %=create_squad(blck_val_hutor_quest_zasada_now_squad:blck_val_hutor_quest_enemy)%
+
+[sr_idle@cut_scene_night_shooter]
+on_info = {+blck_val_actor_in_roof_hutor_again} sr_idle@cut_scene_night_shooter_1 %+blck_val_bandit_enemy_go_to_hutor_quest%
+
+[sr_idle@cut_scene_night_shooter_1]
+on_info = {+blck_val_bandit_enemy_see_actor} sr_idle@cut_scene_night_shooter_2
+
+[sr_idle@cut_scene_night_shooter_2]
+on_timer = 2000 | sr_idle@cut_scene_night_shooter_3 %=blck_val_stalker_hutor_1_wait_counter_pda_3%
+
+[sr_idle@cut_scene_night_shooter_3]
+on_info = {+blck_val_hutor_quest_zasada_now_squad_dead} sr_idle@cut_scene_night_shooter_4
+
+[sr_idle@cut_scene_night_shooter_4]
+on_timer = 2000 | sr_idle@cut_scene_night_shooter_5 %=blck_val_stalker_hutor_1_wait_counter_pda_4%
+
+[sr_idle@cut_scene_night_shooter_5]
+on_timer = 7000 | sr_idle@nil %+blck_val_actor_go_to_stavrid_from_base%
+
+[sr_idle@nil]

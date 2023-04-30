@@ -1,0 +1,101 @@
+---------------Раненый Зохан-----------------
+[logic@esc_stalker_zohan]
+suitable = {=check_npc_name(esc_b46_friend_to_kurer_dead)} true
+prior = 200
+active = walker@esc_stalker_zohan_wounded
+
+[walker@esc_stalker_zohan_wounded]
+path_walk = zohan_heavy_wounded_walk
+wounded = wounded@esc_stalker_zohan_wounded
+on_info = {-esc_zohan_dialog_survive_start} %=play_sound(esc_zohan_woundet)%
+on_info2 = {+esc_zohan_not_give_medkit} %-esc_zohan_dialog_survive_start%
+on_info3 = {+esc_zohan_eat_medkit} remark@esc_zohan_eat_medkit %+esc_zohan_dialog_survive_start%
+corpse_detection_enabled = false
+
+[wounded@esc_stalker_zohan_wounded_gen]
+hp_state = 101|wounded_heavy@nil
+hp_state_see = 101|wounded_heavy@nil
+hp_victim = 101|actor
+hp_cover = 101|false
+hp_fight = 101|false
+autoheal = false
+help_start_dialog = esc_stalker_zohan_wounded
+not_for_help = true
+
+[wounded@esc_stalker_zohan_wounded]:wounded@esc_stalker_zohan_wounded_gen
+enable_talk = true
+
+[remark@esc_zohan_eat_medkit]
+anim = wait_na
+target = story | actor
+danger = danger
+use_camp = false
+on_info = {+esc_zohan_eat_medkit -esc_zohan_meet_thanks} %=play_sound(help_thanks) +esc_zohan_meet_thanks%
+on_info = {+esc_zohan_wake_up} remark@esc_zohan_wake_up
+combat_ignore_cond = true
+combat_ignore_keep_when_attacked = true
+invulnerable = true
+gather_items_enabled = false
+help_wounded_enabled = false
+corpse_detection_enabled = false
+meet = no_meet
+
+[remark@esc_zohan_wake_up]
+anim = wait_na
+target = story | actor
+on_info = {+esc_killer_raven_meet_complete} %=release_npc%
+danger = danger
+use_camp = false
+combat_ignore_cond = true
+combat_ignore_keep_when_attacked = true
+invulnerable = true
+gather_items_enabled = false
+help_wounded_enabled = false
+corpse_detection_enabled = false
+meet = meet@meet_start_zohan
+
+[meet@meet_start_zohan]
+abuse           = false
+close_anim 		= nil
+far_anim 		= nil
+far_victim 		= nil
+close_distance  = 0
+far_distance 	= 0
+close_victim = actor
+use = {=dist_to_actor_le(6) -esc_zohan_first_dialogs_meet} self, true
+allow_break = false
+meet_dialog = esc_stalker_zohan_wounded
+trade_enable = false
+
+---------------Мертвые сталкеры-----------------
+[logic@esc_stalker_dead_1]
+suitable = {=check_npc_name(sim_default_stalker_0)} true
+prior = 200
+active = remark@esc_stalker_dead_1
+
+[remark@esc_stalker_dead_1]
+anim = wait
+path_walk = stalker_dead_1
+on_info = %=kill_npc%
+
+
+[logic@esc_stalker_dead_2]
+suitable = {=check_npc_name(sim_default_stalker_1)} true
+prior = 200
+active = remark@esc_stalker_dead_2
+
+[remark@esc_stalker_dead_2]
+anim = wait
+path_walk = stalker_dead_2
+on_info = %=kill_npc%
+
+
+[logic@esc_stalker_dead_3]
+suitable = {=check_npc_name(sim_default_stalker_0)} true
+prior = 200
+active = remark@esc_stalker_dead_3
+
+[remark@esc_stalker_dead_3]
+anim = wait
+path_walk = stalker_dead_3
+on_info = %=kill_npc%

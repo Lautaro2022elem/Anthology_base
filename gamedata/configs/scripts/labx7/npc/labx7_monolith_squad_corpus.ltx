@@ -1,0 +1,93 @@
+;=========meet_stalker_korpys========
+[meet@korpys_stalker]
+close_anim 		= nil
+close_victim 	= nil
+far_anim 		= nil
+far_victim 		= nil
+close_distance 	= 0
+far_distance 	= 0
+use = {=actor_enemy} false, {=dist_to_actor_le(3)} true, false
+snd_on_use = {!dist_to_actor_le(3)} nil
+meet_on_talking = false
+;==================================
+
+
+[logic@labx7_monolith_squad_corpus_1]
+active = walker@monolith_1
+prior = 50
+suitable = {=check_npc_name(sim_default_monolith_2)} true, false
+
+[walker@monolith_1]
+path_walk = walker_1_walk
+path_look = walker_1_look
+on_info = {+labx7_actor_go_to_stronglav} remark@monolith_1
+combat_ignore_cond = {+labx7_door_corpus_open} false, true
+meet = no_meet
+
+[remark@monolith_1]
+anim = guard_na
+target = story | actor
+combat_ignore_cond = {+labx7_door_corpus_open} false, true
+meet = no_meet
+
+;================================================
+
+[logic@labx7_monolith_squad_corpus_2]
+active = walker@monolith_2
+prior = 50
+suitable = {=check_npc_name(sim_default_monolith_1)} true, false
+
+[walker@monolith_2]
+path_walk = walker_2_walk
+path_look = walker_2_look
+on_info = {+labx7_actor_go_to_stronglav} remark@monolith_2
+combat_ignore_cond = {+labx7_door_corpus_open} false, true
+meet = no_meet
+
+[remark@monolith_2]
+anim = guard_na
+target = story | actor
+combat_ignore_cond = {+labx7_door_corpus_open} false, true
+meet = no_meet
+
+;================================================
+
+[logic@labx7_monolith_squad_corpus_3]
+active = walker@monolith_3
+prior = 50
+suitable = {=check_npc_name(sim_default_monolith_1)} true, false
+
+[walker@monolith_3]
+path_walk = walker_3_walk
+path_look = walker_3_look
+on_info = {+labx7_actor_go_to_stronglav} remark@monolith_3
+combat_ignore_cond = {+labx7_door_corpus_open} false, true
+meet = no_meet
+
+[remark@monolith_3]
+anim = guard_na
+target = story | actor
+combat_ignore_cond = {+labx7_door_corpus_open} false, true
+meet = no_meet
+
+;================================================
+
+[logic@labx7_monolith_squad_corpus_4]
+active = walker@monolith_4
+prior = 50
+suitable = {=check_npc_name(sim_default_monolith_2)} true, false
+
+[walker@monolith_4]
+path_walk = walker_4_walk
+path_look = walker_4_look
+on_info = {+labx7_actor_go_to_stronglav} remark@monolith_4
+combat_ignore_cond = {+labx7_door_corpus_open} false, true
+meet = no_meet
+
+[remark@monolith_4]
+anim = guard_na
+target = story | actor
+combat_ignore_cond = {+labx7_door_corpus_open} false, true
+meet = no_meet
+
+;================================================

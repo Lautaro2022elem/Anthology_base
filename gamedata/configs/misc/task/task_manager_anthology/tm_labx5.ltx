@@ -1,0 +1,60 @@
+[geonezis_labx5_main_quest_1]
+icon = ui_inGame2_Laboratoriya_X8
+prior = 2
+storyline = true
+title = {+labx5_a2_monolith_default_all_death} labx5_main_quest_title11, {+labx5_b1_borland_talking_4 -labx5_a2_monolith_default_all_death} labx5_main_quest_title10, {+labx5_b1_come_point_1 -labx5_b1_borland_talking_4} labx5_main_quest_title9, {+labx5_b1_lift_pitanie_give -labx5_b1_come_point_1} labx5_main_quest_title8, {+labx5_b1_first_door_open -labx5_b1_lift_pitanie_give} labx5_main_quest_title7, {+labx5_b1_borland_talking_3 -labx5_b1_first_door_open} labx5_main_quest_title6, {+labx5_b1_borland_lift_watch -labx5_b1_borland_talking_3} labx5_main_quest_title5, {+labx5_b1_borland_talking_2 -labx5_b1_borland_lift_watch} labx5_main_quest_title4, {+labx5_b1_psionik_killed -labx5_b1_borland_talking_2} labx5_main_quest_title3, {+labx5_b1_sound_zone_restr_1_effects -labx5_b1_psionik_killed} labx5_main_quest_title2, {+labx5_b1_borland_talking_1 -labx5_b1_sound_zone_restr_1_effects} labx5_main_quest_title1, {-labx5_b1_borland_talking_1} labx5_main_quest_title0
+descr = {+labx5_a2_monolith_default_all_death} labx5_main_quest_text11, {+labx5_b1_borland_talking_4 -labx5_a2_monolith_default_all_death} labx5_main_quest_text10, {+labx5_b1_come_point_1 -labx5_b1_borland_talking_4} labx5_main_quest_text9, {+labx5_b1_lift_pitanie_give -labx5_b1_come_point_1} labx5_main_quest_text8, {+labx5_b1_first_door_open -labx5_b1_lift_pitanie_give} labx5_main_quest_text7, {+labx5_b1_borland_talking_3 -labx5_b1_first_door_open} labx5_main_quest_text6, {+labx5_b1_borland_lift_watch -labx5_b1_borland_talking_3} labx5_main_quest_text5, {+labx5_b1_borland_talking_2 -labx5_b1_borland_lift_watch} labx5_main_quest_text4, {+labx5_b1_psionik_killed -labx5_b1_borland_talking_2} labx5_main_quest_text3, {+labx5_b1_sound_zone_restr_1_effects -labx5_b1_psionik_killed} labx5_main_quest_text2, {+labx5_b1_borland_talking_1 -labx5_b1_sound_zone_restr_1_effects} labx5_main_quest_text1, {-labx5_b1_borland_talking_1} labx5_main_quest_descr0
+target = {+labx5_a2_monolith_default_all_death} nil, {+labx5_b1_borland_talking_4 -labx5_a2_monolith_default_all_death} nil, {+labx5_b1_come_point_1 -labx5_b1_borland_talking_4} labx5_a2_borland_podmena, {+labx5_b1_lift_pitanie_give -labx5_b1_come_point_1} pod_b1_main_quest_restr_4_id, {+labx5_b1_first_door_open -labx5_b1_lift_pitanie_give} nil, {+labx5_b1_borland_talking_3 -labx5_b1_first_door_open} nil, {+labx5_b1_borland_lift_watch -labx5_b1_borland_talking_3} labx5_a2_borland, {+labx5_b1_borland_talking_2 -labx5_b1_borland_lift_watch} labx5_a2_borland, {+labx5_b1_psionik_killed -labx5_b1_borland_talking_2} labx5_a2_borland, {+labx5_b1_sound_zone_restr_1_effects -labx5_b1_psionik_killed} labx5_a2_attacked_psionik_1, {+labx5_b1_borland_talking_1 -labx5_b1_sound_zone_restr_1_effects} labx5_a2_borland, {-labx5_b1_borland_talking_1} labx5_a2_borland
+condlist_0 = {+sp_a2_hero_to_garbage_come} complete
+condlist_1 = {+labx5_a1_dop_zone_restr_effects_2} reversed
+
+
+[geonezis_labx5_quest_come_to_garbage_2]
+icon = ui_inGame2_Laboratoriya_X8
+prior = 2
+storyline = true
+title = labx5_main_quest_title11
+descr = labx5_main_quest_text11
+target = nil
+condlist_0 = {+sp_a2_hero_to_garbage_come} complete
+
+[labx5_quest_doc]
+icon = ui_inGame2_Poslednie_razrabotki
+prior = 2
+storyline = true
+title = {+bar_doc_barmen_dialog_open}labx5_quest_doc_part_3_title, {+labx5_quest_doc_all}labx5_quest_doc_part_2_title, labx5_quest_doc_part_1_title
+descr = {+bar_doc_barmen_dialog_open}labx5_quest_doc_part_3_title, {+labx5_quest_doc_all}labx5_quest_doc_part_2_descr, labx5_quest_doc_part_1_descr
+target = {+bar_doc_barmen_dialog_open}bar_npc_barman, nil
+condlist_0 = {+labx5_quest_doc_complete} complete
+condlist_1 = {+labx5_a2_quest_documents_fail} fail
+
+
+
+[geonezis_labx5_quest_pitanie_1]
+icon = ui_iconsTotal_storyline
+prior = 2
+storyline = true
+title = labx5_quest_pitanie_1_title0
+descr = labx5_quest_pitanie_1_text0
+target = pod_b1_main_quest_restr_3_id
+condlist_0 = {+labx5_b1_lift_pitanie_give} complete
+condlist_1 = {+labx5_a1_sound_zone_restr_1_effects} fail
+
+[geonezis_labx5_quest_pitanie_2]
+icon = ui_iconsTotal_storyline
+prior = 2
+storyline = true
+title = labx5_quest_pitanie_2_title0
+descr = labx5_quest_pitanie_2_text0
+target = pod_b1_main_quest_restr_dop_3_id
+condlist_0 = {+labx5_b1_lift_pitanie_give} complete
+
+
+[geonezis_labx5_quest_test]
+icon = ui_iconsTotal_storyline
+prior = 2
+storyline = true
+title = labx5_main_quest_title0
+descr = labx5_main_quest_text0
+target = labx5_a2_attacked_psionik_1
+condlist_0 = {+labx5_b1_psionik_killed} complete

@@ -1,0 +1,123 @@
+;=========meet_stalker_korpys========
+[meet@korpys_stalker]
+close_anim 		= nil
+close_victim 	= nil
+far_anim 		= nil
+far_victim 		= nil
+close_distance 	= 0
+far_distance 	= 0
+use = {=actor_enemy} false, {=dist_to_actor_le(3)} true, false
+snd_on_use = {!dist_to_actor_le(3)} nil
+meet_on_talking = false
+;==================================
+
+[logic]
+active = remark@stay_raven
+suitable = {=check_npc_name(esc_killer_raven)} true, false
+on_death = death
+level_spot = quest_npc
+prior = 250
+
+[remark@stay_raven]
+anim = wait_na
+target = story | actor
+on_info = {+esc_kpp_operation_escape_start} remark@dialog_start_raven
+combat_ignore_cond = true
+combat_ignore_keep_when_attacked = true
+invulnerable = false
+gather_items_enabled = false
+help_wounded_enabled = false
+corpse_detection_enabled = false
+meet = no_meet
+
+[remark@dialog_start_raven]
+anim = wait_na
+target = story | actor
+on_info = {+esc_killer_raven_meet_complete} remark@raven_meet_to_rac
+combat_ignore_cond = true
+combat_ignore_keep_when_attacked = true
+invulnerable = false
+gather_items_enabled = false
+help_wounded_enabled = false
+corpse_detection_enabled = false
+meet = meet@esc_start_quest_sniper
+
+[remark@raven_meet_to_rac]
+anim = wait_rac
+target = story | actor
+on_timer = 3000 | remark@raven_meet_to_rac_wait
+on_signal = sound_end | remark@raven_meet_to_rac_wait %+esc_killer_raven_rac_meet%
+combat_ignore_cond = true
+combat_ignore_keep_when_attacked = true
+invulnerable = false
+gather_items_enabled = false
+help_wounded_enabled = false
+corpse_detection_enabled = false
+meet = no_meet
+
+[remark@raven_meet_to_rac_wait]
+anim = wait_rac
+target = story | actor
+on_info = {+esc_killer_raven_meet_complete -esc_killer_raven_rac_meet} remark@raven_meet_to_rac_end %=play_sound(esc_killer_raven_operation_start) +esc_killer_raven_rac_meet%
+combat_ignore_cond = true
+combat_ignore_keep_when_attacked = true
+invulnerable = false
+gather_items_enabled = false
+help_wounded_enabled = false
+corpse_detection_enabled = false
+meet = no_meet
+
+[remark@raven_meet_to_rac_end]
+anim = wait_rac
+target = story | actor
+on_timer = 2500 | remark@raven_to_sniper_rifle %+esc_killer_raven_operation_start%
+combat_ignore_cond = true
+combat_ignore_keep_when_attacked = true
+invulnerable = false
+gather_items_enabled = false
+help_wounded_enabled = false
+corpse_detection_enabled = false
+meet = no_meet
+
+[remark@raven_to_sniper_rifle]
+anim = patrol_fire
+target = story | esc_squad_kpp
+on_info = {+esc_squad_kpp_bandits_dead} move@from_actor
+combat_ignore_cond = false
+combat_ignore_keep_when_attacked = false
+invulnerable = true
+gather_items_enabled = false
+help_wounded_enabled = false
+corpse_detection_enabled = false
+meet = no_meet
+
+[move@from_actor]
+invulnerable                 = false
+move_pursue_actor            = true
+move_pursue_look_subject     = actor 
+move_pursue_range            = 5|10
+move_pursue_state_stand      = wait_na
+move_pursue_state_move       = walk_noweap                     
+move_pursue_state_overtake   = run
+on_info = {+esc_zver_come_back_vilage} %=release_npc%
+meet = meet@esc_end_quest_sniper_end
+gather_items_enabled = false
+corpse_detection_enabled = false
+combat_ignore_keep_when_attacked = false 
+combat_ignore_cond = false
+
+[meet@esc_start_quest_sniper]:meet@korpys_stalker
+close_victim = actor
+use = {!actor_enemy =dist_to_actor_le(6) -last_info} self, true
+allow_break = false
+meet_dialog = esc_killer_raven_quest_sniper_atack_meet
+trade_enable = false
+
+[meet@esc_end_quest_sniper_end]:meet@korpys_stalker
+close_victim = actor
+allow_break = false
+meet_dialog = esc_killer_raven_meet_to_operation
+trade_enable = false
+
+[death]
+on_info = %+esc_raven_dead%

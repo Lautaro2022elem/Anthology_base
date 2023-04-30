@@ -1,0 +1,56 @@
+[logic@esc_squad_atp_shaman]
+active = animpoint
+level_spot = leader
+suitable = {=check_npc_name(esc_shaman)} true, false
+prior = 250
+
+[animpoint]
+cover_name = esc_shaman_animpoint
+gather_items_enabled = false
+corpse_detection_enabled = false
+combat_ignore_keep_when_attacked = true 
+combat_ignore_cond = true
+invulnerable = true
+meet = meet
+use_camp = false
+on_info = {+esc_quest_hunting_shaman -esc_quest_hunting_shaman_dialog_and}animpoint@quest
+
+[animpoint@quest]
+cover_name = esc_shaman_animpoint
+gather_items_enabled = false
+corpse_detection_enabled = false
+combat_ignore_keep_when_attacked = true 
+combat_ignore_cond = true
+invulnerable = true
+meet = meet@dialog
+use_camp = false
+out_restr = zat_a2_sr_noweap
+on_info = {+esc_quest_hunting_shaman_dialog_and}animpoint
+
+[meet]
+close_snd_hello = esc_stalker_leader_meet
+close_snd_bye 	= esc_stalker_leader_meet_bye
+close_anim 	= nil
+close_victim 	= nil
+far_anim 	= nil
+far_victim 	= nil
+close_distance  = 0
+far_distance 	= 0
+close_snd_distance = 3
+use = {=actor_enemy} false, true
+allow_break 	= false
+
+[meet@dialog]
+abuse           = false
+close_snd_hello = esc_stalker_leader_meet
+close_snd_bye 	= esc_stalker_leader_meet_bye
+close_anim 		= nil
+far_anim 		= nil
+far_victim 		= nil
+close_distance  = 0
+far_distance 	= 0
+close_victim = actor
+use = {!actor_enemy =dist_to_actor_le(2) -esc_quest_hunting_shaman_dialog_and} self, true
+allow_break = false
+meet_dialog = esc_quest_hunting_shaman_dialog
+trade_enable = false

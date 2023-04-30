@@ -1,0 +1,11 @@
+[logic]
+active = sr_idle
+
+[sr_idle]
+on_info = {+spectrum_project_start +sp_a2_hero_to_bar_come +bar_npc_nimble_dialog_info} sr_idle@2 %=spawn_corpse(labx14_csky_dead_body:labx14_csky_dead_body_spawn)%
+
+[sr_idle@2]
+on_game_timer = 10| sr_idle@nil %=spawn_object_in(ammo_gauss:labx14_csky_dead_body) =spawn_object_in(ammo_gauss:labx14_csky_dead_body) =spawn_object_in(labx14_csky_pda:labx14_csky_dead_body)%
+
+
+[sr_idle@nil] 

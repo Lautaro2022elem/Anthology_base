@@ -1,0 +1,7 @@
+[logic]
+active = sr_idle@start_end_game
+
+[sr_idle@start_end_game]
+on_info = {-labx7_actor_change_life_in_good} sr_idle@nil %+bar_actor_go_to_bad_end_game%
+
+[sr_idle@nil]

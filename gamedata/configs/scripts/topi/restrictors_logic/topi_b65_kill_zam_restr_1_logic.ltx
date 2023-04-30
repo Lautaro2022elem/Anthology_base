@@ -1,0 +1,8 @@
+[logic] 
+active = sr_idle@start
+
+[sr_idle@start]
+on_info = {+topi_start +topi_anubis_suget_quest_4_talking_2 -topi_b65_harold_kill_zam_message_give} %=topi_b65_harold_give_message +topi_b65_harold_kill_zam_message_give%
+on_timer = 6000 | {+topi_b65_harold_kill_zam_message_give -topi_b65_harold_kill_zam_quest_give} sr_idle@nil %=give_task(geonezis_topi_b65_harold_main) +topi_b65_harold_kill_zam_quest_give%
+
+[sr_idle@nil]

@@ -1,0 +1,635 @@
+---------------------------------------------------------------
+--------------------------------------------------------------makdm_start
+---------------------------------
+--------------------------------------–егистрируем колбэки дл€ проверки на апдейте √√
+---------------------------------
+local iTime = 0
+
+function OnActorUpdate()
+	if iTime <= time_global() then
+    	iTime = time_global()+5000
+    	
+    	first_quest()
+    	topi_csky_4()
+    	topi_baza_5()
+    	topi_angel()
+    	topi_trader_pred_1()
+    	topi_harold_1()
+    	topi_hasan_1()
+    	topi_vozmezdie()
+    	topi_seleczia()
+    	topi_sborshik()
+    	topi_var()
+    	topi_ecolog()
+    	topi_b1_leader()
+    	a107_ecolog()
+    	member_all()
+    	killer_member()
+    	csky_member()
+    	topi_b9_anubis()
+    	fugas_all()
+    	all_var_1()
+    	all_var_2()
+    	suget_second_all()
+    	multimetr()
+    	mechanic_proto()
+    	mechanic_create()
+    	mechanic_testing()
+    	all_razia()
+    	bandit_member()
+    	bandit_all()
+    	frog_all()
+    	attacked_polter()
+    	radist_quest()
+    	snab_quest()
+    	tai_all_used()
+    	scanner_have_1()
+    	create_2()
+    	scanner_have_2()
+    	create_3()
+    	scanner_have_3()
+    	create_4()
+    	scanner_have_4()
+    	create_5()
+    	scanner_have_5()
+    	create_6()
+    	scanner_have_6()
+    	create_7()
+    	scanner_have_7()
+	end
+end
+
+function init()
+
+end
+
+-------------------
+-------------------¬ызываем колбэк, и если услови€ true, то отрегистрируем его, чтобы больше не вызывать на апдейте √√
+-------------------
+
+function topi_baza_5()
+	if has_alife_info("topi_stalker_base_var_3_member_all_death") then
+		xr_s.unregister_callback( "update", topi_baza_5 )
+		return
+	end
+	--/ вест: зачистка базы вольных сталкеров.
+	if has_alife_info("topi_m2_killer_ceh_quest_5_talking") and has_several_info("topi_stalker_base_var_3_member_","_death",1,10) then 
+	   db.actor:give_info_portion("topi_stalker_base_var_3_member_all_death")                  
+    end
+end
+
+function topi_csky_4()
+	if has_alife_info("topi_e7_csky_quest_4_member_all_dead") then
+		xr_s.unregister_callback( "update", topi_csky_4 )
+		return
+	end
+	--/ вест: ликвидаци€ отр€да чистого неба.
+	if has_alife_info("topi_e7_csky_quest_4_message_give") and has_several_info("topi_e7_csky_quest_4_member_","_dead",1,10) then 
+	   db.actor:give_info_portion("topi_e7_csky_quest_4_member_all_dead")                  
+    end
+end
+
+function topi_trader_pred_1()
+	if has_alife_info("topi_trader_quest_all_precondition") then
+		xr_s.unregister_callback( "update", topi_trader_pred_1 )
+		return
+	end
+	--/предусловие торговца.
+	if has_alife_info("topi_hunter_quest_first_precondition") and has_alife_info("topi_artefakter_quest_seleczia_precondition") and 
+	   has_alife_info("topi_radist_multimetr_quest_talking_3") and has_alife_info("topi_trader_quest_1_precondition") and
+	   has_alife_info("topi_beat_from_monsters_safely") then 
+	   db.actor:give_info_portion("topi_trader_quest_all_precondition")                  
+    end
+end
+
+function topi_harold_1()
+	if has_alife_info("topi_a65_stalker_harold_member_all_dead") then
+		xr_s.unregister_callback( "update", topi_harold_1 )
+		return
+	end
+	--/ вест: ликвидаци€ харольда.
+	if has_alife_info("topi_a65_stalker_radist_talking_1") and has_several_info("topi_a65_stalker_harold_member_","_dead",1,3) then 
+	   db.actor:give_info_portion("topi_a65_stalker_harold_member_all_dead")                  
+    end
+end
+
+function topi_hasan_1()
+	if has_alife_info("topi_b65_stalker_hasan_member_all_dead") then
+		xr_s.unregister_callback( "update", topi_hasan_1 )
+		return
+	end
+	--/ вест: ликвидаци€ хасана.
+	if has_alife_info("topi_b65_stalker_radist_talking_1") and has_several_info("topi_b65_stalker_hasan_member_","_dead",1,3) then 
+	   db.actor:give_info_portion("topi_b65_stalker_hasan_member_all_dead")                  
+    end
+end
+
+function topi_vozmezdie()
+	if has_alife_info("topi_b15_vozmezdie_quest_callback") then
+		xr_s.unregister_callback( "update", topi_vozmezdie )
+		return
+	end
+	--/ вест: возмездие долга или свободы.
+	if has_alife_info("topi_b15_lider_quest_dolg_talking_1") and has_several_info("topi_b15_dolg_member_harold_","_dead",1,5) then 
+	   db.actor:give_info_portion("topi_b15_dolg_member_harold_all_dead")                  
+    end
+	if has_alife_info("topi_b15_zam_quest_dolg_talking_1") and has_several_info("topi_b15_dolg_member_hasan_","_dead",1,5) then 
+	   db.actor:give_info_portion("topi_b15_dolg_member_hasan_all_dead")                  
+    end
+	if has_alife_info("topi_b15_lider_quest_freedom_talking_1") and has_several_info("topi_b15_freedom_member_harold_","_dead",1,5) then 
+	   db.actor:give_info_portion("topi_b15_freedom_member_harold_all_dead")                  
+    end
+	if has_alife_info("topi_b15_zam_quest_freedom_talking_1") and has_several_info("topi_b15_freedom_member_hasan_","_dead",1,5) then 
+	   db.actor:give_info_portion("topi_b15_freedom_member_hasan_all_dead")                  
+    end
+	
+end
+
+function topi_angel()
+	if has_alife_info("topi_a45_radist_quest_member_all_dead") then
+		xr_s.unregister_callback( "update", topi_angel )
+		return
+	end
+	--/ вест: селекци€ артефактов.
+	if has_alife_info("topi_a45_radist_quest_point_come") and has_several_info("topi_a45_radist_quest_member_","_dead",1,3) then 
+	   db.actor:give_info_portion("topi_a45_radist_quest_member_all_dead")                  
+    end
+end
+
+function topi_seleczia()
+	if has_alife_info("topi_b41_artefacter_quest_seleczia_all_set") then
+		xr_s.unregister_callback( "update", topi_seleczia )
+		return
+	end
+	--/ вест: селекци€ артефактов.
+	if has_alife_info("topi_b41_artefacter_quest_seleczia_talking_1") and has_several_info("topi_b41_artefacter_quest_seleczia_","_set",1,3) then 
+	   db.actor:give_info_portion("topi_b41_artefacter_quest_seleczia_all_set")                  
+    end
+end
+
+function first_quest()
+	if has_alife_info("topi_f1_dolg_squad_member_all_death") then
+		xr_s.unregister_callback( "update", first_quest )
+		return
+	end
+	--/ вест: первый сюжетный.
+	if has_alife_info("topi_f1_freedom_first_device_set") and has_several_info("topi_f1_dolg_squad_member_","_death",1,4) then 
+	   db.actor:give_info_portion("topi_f1_dolg_squad_member_all_death")                  
+    end
+end
+
+function topi_sborshik()
+	if has_alife_info("topi_m1_sborshik_all_talking") then
+		xr_s.unregister_callback( "update", topi_sborshik )
+		return
+	end
+    --/ вест: сборщики артефактов. 
+	if has_alife_info("topi_m1_snab_quest_talking_1") and has_several_info("topi_m1_sborshik_","_talking",1,3) then           
+	   db.actor:give_info_portion("topi_m1_sborshik_all_talking")               
+    end
+end
+
+function topi_var()
+	if has_alife_info("topi_var_1_suget_quest_final_csky_member_all_death") then
+		xr_s.unregister_callback( "update", topi_var )
+		return
+	end
+    --/ вест: финальный. первый вариант. 
+	if has_alife_info("topi_a6_suget_quest_6_radist_talking_1") and has_several_info("topi_var_1_suget_quest_final_csky_member_","_death",1,7) then           
+	   db.actor:give_info_portion("topi_var_1_suget_quest_final_csky_member_all_death")               
+    end
+end
+
+function topi_ecolog()
+	if has_alife_info("topi_ecolog_var_1_quest_final_member_all_death") then
+		xr_s.unregister_callback( "update", topi_ecolog )
+		return
+	end
+ 	if has_alife_info("topi_var_1_suget_quest_final_csky_member_all_death") and has_several_info("topi_ecolog_var_1_quest_final_member_","_death",1,3) then           
+	   db.actor:give_info_portion("topi_ecolog_var_1_quest_final_member_all_death")                                 
+    end
+end
+
+function topi_b1_leader()
+	if has_alife_info("topi_b1_leader_1_quest_mine_all_find") then
+		xr_s.unregister_callback( "update", topi_b1_leader )
+		return
+	end
+     --/ вест: первый у лидера отр€да в деревне
+	if has_alife_info("topi_b1_leader_1_quest_talking_1") and has_several_info("topi_b1_leader_1_quest_mine_","_find",1,3) then           
+	   db.actor:give_info_portion("topi_b1_leader_1_quest_mine_all_find")                                 
+    end
+end
+
+function a107_ecolog()
+	if has_alife_info("topi_a107_ecolog_member_all_death") then
+		xr_s.unregister_callback( "update", a107_ecolog )
+		return
+	end
+    --/ вест: финальный сюжетный второй вариант
+	if has_alife_info("topi_var_2_suget_quest_final_give") and has_several_info("topi_a107_ecolog_member_","_death",1,3) then           
+	   db.actor:give_info_portion("topi_a107_ecolog_member_all_death")                                 
+    end
+end
+
+function member_all()
+	if has_alife_info("topi_stalker_base_var_2_member_all_death") then
+		xr_s.unregister_callback( "update", member_all )
+		return
+	end
+    --/ вест: третий сюжетный второй вариант
+	if has_alife_info("topi_var_2_suget_quest_3_give") and db.actor:object("topi_anubis_ukazanie_1") 
+		and has_several_info("topi_stalker_base_var_2_member_","_death",1,10) then           
+	   db.actor:give_info_portion("topi_stalker_base_var_2_member_all_death")                                 
+    end
+end
+
+function killer_member()
+	if has_alife_info("topi_var_2_suget_quest_2_killer_member_all_death") then
+		xr_s.unregister_callback( "update", killer_member )
+		return
+	end
+    --/ вест: второй сюжетный второй вариант
+	if has_alife_info("topi_var_2_suget_quest_2_talking_2") and has_several_info("topi_var_2_suget_quest_2_killer_member_","_death",1,5) then           
+	   db.actor:give_info_portion("topi_var_2_suget_quest_2_killer_member_all_death")                                 
+    end
+end
+
+function csky_member()
+	if has_alife_info("topi_var_2_suget_quest_1_csky_member_all_death") then
+		xr_s.unregister_callback( "update", csky_member )
+		return
+	end
+     --/ вест: первый сюжетный второй вариант
+	if has_alife_info("topi_var_2_suget_quest_1_talking_2") and has_several_info("topi_var_2_suget_quest_1_csky_member_","_death",1,3) then           
+	   db.actor:give_info_portion("topi_var_2_suget_quest_1_csky_member_all_death")                                 
+    end
+end
+
+function topi_b9_anubis()
+	if has_alife_info("topi_suget_quest_4_have_fugas_item") then
+		xr_s.unregister_callback( "update", topi_b9_anubis )
+		return
+	end
+     --/Квест: Четвертый сюжетный
+	if has_alife_info("topi_anubis_suget_quest_4_talking_1") and db.actor:object("topi_b9_anubis_fugascreate_device") and 
+ 	    db.actor:object("topi_b9_anubis_fugas_components_1") and db.actor:object("topi_b9_anubis_fugas_components_2") and 	    
+	    db.actor:object("topi_b9_anubis_fugas_components_3") then           
+		db.actor:give_info_portion("topi_suget_quest_4_have_fugas_item")                                
+    end
+end
+
+function fugas_all()
+	if has_alife_info("topi_suget_quest_4_fugas_all_instal") then
+		xr_s.unregister_callback( "update", fugas_all )
+		return
+	end
+	if has_alife_info("topi_suget_quest_4_fugas_create") and has_several_info("topi_suget_quest_4_fugas_","_instal",1,3) then           
+	   db.actor:give_info_portion("topi_suget_quest_4_fugas_all_instal")                                 
+    end
+end
+
+function all_var_1()
+	if has_alife_info("topi_b9_suget_quest_4_csky_member_all_var_1_death") then
+		xr_s.unregister_callback( "update", all_var_1 )
+		return
+	end
+	if has_alife_info("topi_anubis_suget_quest_4_podquest_end_1_give") and has_several_info("topi_b9_suget_quest_4_csky_member_","_death",1,3) then           
+	   db.actor:give_info_portion("topi_b9_suget_quest_4_csky_member_all_var_1_death")                                 
+    end
+end
+
+function all_var_2()
+	if has_alife_info("topi_b9_suget_quest_4_csky_member_all_var_2_death") then
+		xr_s.unregister_callback( "update", all_var_2 )
+		return
+	end
+	if has_alife_info("topi_anubis_suget_quest_4_podquest_end_2_give") and has_several_info("topi_b9_suget_quest_4_csky_member_","_death",1,7) then           
+	   db.actor:give_info_portion("topi_b9_suget_quest_4_csky_member_all_var_2_death")                                 
+    end
+end
+
+function suget_second_all()
+	if has_alife_info("topi_a1_main_suget_second_all_talking") then
+		xr_s.unregister_callback( "update", suget_second_all )
+		return
+	end
+	--/Квест:Второй сюжетный
+    if has_alife_info("topi_a1_main_suget_second_quest_come_to_base") and has_several_info("topi_a1_main_suget_second_","_talking",1,8) then           
+	   db.actor:give_info_portion("topi_a1_main_suget_second_all_talking")                                 
+    end
+end
+
+function multimetr()
+	if has_alife_info("topi_radist_multimetr_all_proveren") then
+		xr_s.unregister_callback( "update", multimetr )
+		return
+	end
+	--/Квест:ћультиметр
+	if has_alife_info("topi_radist_multimetr_quest_talking_1") and has_several_info("topi_radist_multimetr_","_proveren",1,4) then           
+	   db.actor:give_info_portion("topi_radist_multimetr_all_proveren")                                 
+    end
+end
+
+function mechanic_proto()
+	if has_alife_info("topi_mechanic_proto_quest_tainik_have") then
+		xr_s.unregister_callback( "update", mechanic_proto )
+		return
+	end
+	--/Квест:Второй у техников 
+    if has_alife_info("topi_mechanic_proto_quest_talking_1") and
+     	db.actor:object("topi_mechanic_proto_filtr_1") and db.actor:object("topi_mechanic_proto_filtr_2") and  
+	    db.actor:object("topi_mechanic_proto_filtr_3") and db.actor:object("topi_mechanic_proto_filtr_4") and 
+		db.actor:object("topi_mechanic_proto_filtr_5") and db.actor:object("topi_mechanic_proto_device_1") and 
+		db.actor:object("topi_mechanic_proto_device_2") then           
+	db.actor:give_info_portion("topi_mechanic_proto_quest_tainik_have")                                 
+    end
+end
+
+function mechanic_create()
+	if has_alife_info("topi_mechanic_create_all_proto") then
+		xr_s.unregister_callback( "update", mechanic_create )
+		return
+	end
+	if has_alife_info("topi_mechanic_proto_quest_tainik_have") and has_several_info("topi_mechanic_create_","_proto",1,5) then           
+	   db.actor:give_info_portion("topi_mechanic_create_all_proto")                                 
+    end
+end
+
+function mechanic_testing()
+	if has_alife_info("topi_mechanic_testing_all_proto") then
+		xr_s.unregister_callback( "update", mechanic_testing )
+		return
+	end
+	if has_alife_info("topi_mechanic_create_all_proto") and has_several_info("topi_mechanic_testing_","_proto",1,5) then           
+	   db.actor:give_info_portion("topi_mechanic_testing_all_proto")
+    end
+end
+
+function all_razia()
+	if has_alife_info("topi_mechanic_testing_all_razia") then
+		xr_s.unregister_callback( "update", all_razia )
+		return
+	end
+	--/ вест: “естирование раций
+	if has_alife_info("topi_mechanic_razia_quest_talking_1") and has_several_info("topi_mechanic_testing_","_razia",1,5) then           
+	   db.actor:give_info_portion("topi_mechanic_testing_all_razia")                                 
+    end
+end
+
+function bandit_member()
+	if has_alife_info("topi_b7_trader_quest_1_bandit_member_all_death") then
+		xr_s.unregister_callback( "update", bandit_member )
+		return
+	end
+	--/Квест:Первый у торговца
+	if has_alife_info("topi_trader_1_quest_talking_1") and has_several_info("topi_b7_trader_quest_1_bandit_member_","_death",1,3) then           
+	   news_manager.send_tip(db.actor,game.translate_string("topi_trader_come_back_text"),0,"ui_icon_news_all",14000,nil,"topi_stalker_base_trader_name")
+	   db.actor:give_info_portion("topi_b7_trader_quest_1_bandit_member_all_death")
+    end
+end
+
+function bandit_all()
+	if has_alife_info("topi_a6_trader_quest_2_bandit_all_death") then
+		xr_s.unregister_callback( "update", bandit_all )
+		return
+	end
+	--/Квест:Второй у торговца
+	if has_alife_info("topi_trader_2_quest_talking_bandit") and has_several_info("topi_a6_trader_quest_2_bandit_","_death",1,5) then          
+	   db.actor:give_info_portion("topi_a6_trader_quest_2_bandit_all_death")
+    end
+end
+
+function frog_all()
+	if has_alife_info("topi_b6_attacked_frog_all_dead") then
+		xr_s.unregister_callback( "update", frog_all )
+		return
+	end
+	--/Квест:Первый у охотников 
+    if has_alife_info("topi_hunter_first_quest_talking_1") and has_several_info("topi_b6_attacked_frog_","_dead",1,7) then        
+	   db.actor:give_info_portion("topi_b6_attacked_frog_all_dead")
+    end
+end
+
+function attacked_polter()
+	if has_alife_info("topi_b6_attacked_polter_all_dead") then
+		xr_s.unregister_callback( "update", attacked_polter )
+		return
+	end
+	--/Квест:Второй у охотников 
+    if has_alife_info("topi_hunter_polter_quest_give") and has_several_info("topi_b6_attacked_polter_","_dead",1,5) then
+	   create("topi_a7_stalker_hunter_leader_1",-226.10585021973,-0.045470505952835,492.68127441406,207155,8944)
+       create("topi_a7_stalker_hunter_member_1_1",-233.71520996094,-0.37673848867416,487.31549072266,197812,8944)
+       create("topi_a7_stalker_hunter_member_2_1",-217.97665405273,-0.002668172121048,492.90777587891,219191,8944)
+	   db.actor:give_info_portion("topi_b6_attacked_polter_all_dead")
+    end
+end
+
+function radist_quest()
+	if has_alife_info("topi_radist_quest_tai_all_used") then
+		xr_s.unregister_callback( "update", radist_quest )
+		return
+	end
+	--/Квест:Радиолокатор Кредо-1Е
+	if has_alife_info("topi_radist_quest_talking_1") and has_several_info("topi_radist_quest_tai_","_used",1,3) then           
+	   db.actor:give_info_portion("topi_radist_quest_tai_all_used")
+    end
+end
+
+function snab_quest()
+	if has_alife_info("topi_snab_quest_tai_all_set") then
+		xr_s.unregister_callback( "update", snab_quest )
+		return
+	end
+	--/Квест:Сталкерские схроны
+	if has_alife_info("topi_snab_first_quest_talking_1") and has_several_info("topi_snab_quest_tai_","_set",1,3) then           
+	   news_manager.send_tip(db.actor,game.translate_string("topi_snad_come_back_text"),0,"ui_icon_news_all",14000,nil,"topi_stalker_base_snab_name")
+	   db.actor:give_info_portion("topi_snab_quest_tai_all_set")
+    end
+end
+
+function tai_all_used()
+	if has_alife_info("topi_snab_quest_tai_all_used") then
+		xr_s.unregister_callback( "update", tai_all_used )
+		return
+	end
+	if has_alife_info("topi_snab_first_quest_talking_2") and has_several_info("topi_snab_quest_tai_","_used",1,3) then           
+	   db.actor:give_info_portion("topi_snab_quest_tai_all_used")
+    end
+end
+
+function scanner_have_1()
+	if has_alife_info("topi_novikov_quest_zaton_scanner_have_1") then
+		xr_s.unregister_callback( "update", scanner_have_1 )
+		return
+	end
+	--/Квест:Сканеры аномалий
+    if has_alife_info("topi_novikov_quest_zaton_scanner_start") and db.actor:object("topi_spec_anomaly_scanner_1") then 
+		db.actor:give_info_portion("topi_novikov_quest_zaton_scanner_have_1")
+    end
+end
+
+function create_2()
+	if has_alife_info("topi_novikov_quest_zaton_scanner_create_2") then
+		xr_s.unregister_callback( "update", create_2 )
+		return
+	end
+    if has_alife_info("topi_novikov_quest_zaton_scanner_have_1") then 
+		alife():create("topi_spec_anomaly_scanner_2",vector():set(278.26446533203,0.47391685843468,307.57308959961),902936,8944)
+		alife():create("topi_spec_anomaly_scanner_2_spot",vector():set(278.26446533203,0.47391685843468,307.57308959961),902936,8944)  
+		db.actor:give_info_portion("topi_novikov_quest_zaton_scanner_create_2")
+    end
+end
+
+function scanner_have_2()
+	if has_alife_info("topi_novikov_quest_zaton_scanner_have_2") then
+		xr_s.unregister_callback( "update", scanner_have_2 )
+		return
+	end
+	if has_alife_info("topi_novikov_quest_zaton_scanner_create_2") and db.actor:object("topi_spec_anomaly_scanner_2") then  
+		db.actor:give_info_portion("topi_novikov_quest_zaton_scanner_have_2")
+    end
+end
+
+function create_3()
+	if has_alife_info("topi_novikov_quest_zaton_scanner_create_3") then
+		xr_s.unregister_callback( "update", create_3 )
+		return
+	end
+    if has_alife_info("topi_novikov_quest_zaton_scanner_have_2") then 
+		alife():create("topi_spec_anomaly_scanner_3",vector():set(1.8920793533325,-0.98495006561279,239.04772949219),526925,8944)
+		alife():create("topi_spec_anomaly_scanner_3_spot",vector():set(1.8920793533325,-0.98495006561279,239.04772949219),526925,8944)                  
+		db.actor:give_info_portion("topi_novikov_quest_zaton_scanner_create_3")        	  
+    end
+end
+
+function scanner_have_3()
+	if has_alife_info("topi_novikov_quest_zaton_scanner_have_3") then
+		xr_s.unregister_callback( "update", scanner_have_3 )
+		return
+	end
+	if has_alife_info("topi_novikov_quest_zaton_scanner_create_3") and db.actor:object("topi_spec_anomaly_scanner_3") then
+       db.actor:give_info_portion("topi_novikov_quest_zaton_scanner_have_3")
+    end
+end
+
+function create_4()
+	if has_alife_info("topi_novikov_quest_zaton_scanner_create_4") then
+		xr_s.unregister_callback( "update", create_4 )
+		return
+	end
+    if has_alife_info("topi_novikov_quest_zaton_scanner_have_3") then     
+       alife():create("topi_spec_anomaly_scanner_4",vector():set(240.37120056152,-0.0011299550533295,61.46354675293),852396,8944)
+       alife():create("topi_spec_anomaly_scanner_4_spot",vector():set(240.37120056152,-0.0011299550533295,61.46354675293),852396,8944)  
+	   db.actor:give_info_portion("topi_novikov_quest_zaton_scanner_create_4")
+    end
+end
+
+function scanner_have_4()
+	if has_alife_info("topi_novikov_quest_zaton_scanner_have_4") then
+		xr_s.unregister_callback( "update", scanner_have_4 )
+		return
+	end
+	if has_alife_info("topi_novikov_quest_zaton_scanner_create_4") and db.actor:object("topi_spec_anomaly_scanner_4") then     
+       db.actor:give_info_portion("topi_novikov_quest_zaton_scanner_have_4")
+    end 
+end
+
+function create_5()
+	if has_alife_info("topi_novikov_quest_zaton_scanner_create_5") then
+		xr_s.unregister_callback( "update", create_5 )
+		return
+	end
+    if has_alife_info("topi_novikov_quest_zaton_scanner_have_4") then     
+       alife():create("topi_spec_anomaly_scanner_5",vector():set(-13.61777305603,-0.0005042552947998,-35.483108520508),505510,8944)
+       alife():create("topi_spec_anomaly_scanner_5_spot",vector():set(-13.61777305603,-0.0005042552947998,-35.483108520508),505510,8944)  
+	   db.actor:give_info_portion("topi_novikov_quest_zaton_scanner_create_5")
+    end
+end
+
+function scanner_have_5()
+	if has_alife_info("topi_novikov_quest_zaton_scanner_have_5") then
+		xr_s.unregister_callback( "update", scanner_have_5 )
+		return
+	end
+	if has_alife_info("topi_novikov_quest_zaton_scanner_create_5") and db.actor:object("topi_spec_anomaly_scanner_5") then     
+       db.actor:give_info_portion("topi_novikov_quest_zaton_scanner_have_5")
+    end
+end
+
+function create_6()
+	if has_alife_info("topi_novikov_quest_zaton_scanner_create_6") then
+		xr_s.unregister_callback( "update", create_6 )
+		return
+	end
+    if has_alife_info("topi_novikov_quest_zaton_scanner_have_5") then     
+       alife():create("topi_spec_anomaly_scanner_6",vector():set(-184.06336975098,0.00028851628303528,43.343891143799),267331,8944) 
+alife():create("topi_spec_anomaly_scanner_6_spot",vector():set(-184.06336975098,0.00028851628303528,43.343891143799),267331,8944) 
+	   db.actor:give_info_portion("topi_novikov_quest_zaton_scanner_create_6")
+    end
+end
+
+function scanner_have_6()
+	if has_alife_info("topi_novikov_quest_zaton_scanner_have_6") then
+		xr_s.unregister_callback( "update", scanner_have_6 )
+		return
+	end
+	if has_alife_info("topi_novikov_quest_zaton_scanner_create_6") and db.actor:object("topi_spec_anomaly_scanner_6") then     
+       db.actor:give_info_portion("topi_novikov_quest_zaton_scanner_have_6")
+    end
+end
+
+function create_7()
+	if has_alife_info("topi_novikov_quest_zaton_scanner_create_7") then
+		xr_s.unregister_callback( "update", create_7 )
+		return
+	end
+    if has_alife_info("topi_novikov_quest_zaton_scanner_have_6") then     
+       alife():create("topi_spec_anomaly_scanner_7",vector():set(-125.65202331543,-0.00052186846733093,538.57287597656),348601,8944) 
+       alife():create("topi_spec_anomaly_scanner_7_spot",vector():set(-125.65202331543,-0.00052186846733093,538.57287597656),348601,8944)                     
+	   db.actor:give_info_portion("topi_novikov_quest_zaton_scanner_create_7")        	  
+    end
+end
+
+function scanner_have_7()
+	if has_alife_info("topi_novikov_quest_zaton_scanner_have_7") then
+		xr_s.unregister_callback( "update", scanner_have_7 )
+		return
+	end
+	if has_alife_info("topi_novikov_quest_zaton_scanner_create_7") and db.actor:object("topi_spec_anomaly_scanner_7") then     
+       db.actor:give_info_portion("topi_novikov_quest_zaton_scanner_have_7")
+    end
+end
+
+----------------------------------------------------------------------makdm_end
+--/ вест:—канеры аномалий
+function task_main()
+   	if (not has_alife_info("topi_beat_from_monsters_start")) and has_alife_info("topi_b1_leader_1_quest_talking_2") then
+           create("topi_scaut_attacked_w1_boar_1",80.480712890625,1.1557058095932,-129.12561035156,633259,8944)
+           create("topi_scaut_attacked_w1_boar_2",114.98664855957,1.1901355981827,-111.80926513672,680283,8944)
+           create("topi_scaut_attacked_w1_boar_3",103.83178710938,1.2977032661438,-121.12550354004,664708,8944)
+           create("topi_scaut_attacked_w1_boar_4",31.691740036011,6.0707330703735,-10.434756278992,566213,8944)
+           create("topi_scaut_attacked_w1_boar_5",31.193254470825,-0.000264942646,-11.174102783203,566212,8944)
+           create("topi_scaut_attacked_w1_boar_6",17.686487197876,-0.000256597995,-16.146041870117,547257,8944)
+           create("topi_scaut_attacked_w1_boar_7",103.83178710938,1.2977032661438,-121.12550354004,664708,8944)
+           give_info("topi_beat_from_monsters_start")
+           give_info("topi_beat_from_monsters_wave_1")
+           give_info("topi_beat_from_monsters_wave_1_spawn")         
+        elseif (not has_alife_info("topi_beat_from_monsters_wave_2_spawn")) and has_alife_info("topi_beat_from_monsters_wave_2") then
+           create("topi_scaut_attacked_w2_pseudodog_1",80.480712890625,1.1557058095932,-129.12561035156,633259,8944)
+           create("topi_scaut_attacked_w2_pseudodog_2",114.98664855957,1.1901355981827,-111.80926513672,680283,8944)
+           create("topi_scaut_attacked_w2_pseudodog_3",103.83178710938,1.2977032661438,-121.12550354004,664708,8944)
+           create("topi_scaut_attacked_w2_pseudodog_4",31.691740036011,6.0707330703735,-10.434756278992,566213,8944)
+           create("topi_scaut_attacked_w2_bloodsucker_1",31.193254470825,-0.000264942646,-11.174102783203,566212,8944)
+           create("topi_scaut_attacked_w2_bloodsucker_2",31.193254470825,-0.000264942646,-11.174102783203,566212,8944)
+           create("topi_scaut_attacked_w2_bloodsucker_3",17.686487197876,-0.000256597995,-16.146041870117,547257,8944)
+           create("topi_scaut_attacked_w2_bloodsucker_4",103.83178710938,1.2977032661438,-121.12550354004,664708,8944)
+           create("topi_scaut_attacked_w2_bloodsucker_5",103.83178710938,1.2977032661438,-121.12550354004,664708,8944)
+           give_info("topi_beat_from_monsters_wave_2_spawn")
+        elseif (not has_alife_info("topi_beat_from_monsters_wave_3_spawn")) and has_alife_info("topi_beat_from_monsters_wave_3") then
+           create("topi_scaut_attacked_w3_snork_1",31.691740036011,6.0707330703735,-10.434756278992,566213,8944)
+           create("topi_scaut_attacked_w3_snork_2",103.83178710938,1.2977032661438,-121.12550354004,664708,8944)
+           create("topi_scaut_attacked_w3_snork_3",80.480712890625,1.1557058095932,-129.12561035156,633259,8944)
+           give_info("topi_beat_from_monsters_wave_3_spawn")
+    end
+end	

@@ -1,0 +1,25 @@
+[logic]
+active = sr_idle@presents
+
+[sr_idle@presents]
+on_info = {+wiz_start =actor_on_level(dl)} sr_idle@control
+
+[sr_idle@control]
+on_game_timer = 20 | sr_idle@control_2 %=show_path(path_two_name)%
+
+[sr_idle@control_2]
+on_game_timer2 = 20 | sr_idle@control_3 %=show_path_name(path_two_location)%
+
+[sr_idle@control_3]
+on_game_timer3 = 20 | sr_idle@product %=show_path_descr(path_two_descr)% 
+
+[sr_idle@product]
+on_game_timer = 40 | sr_idle@time_to_save %=del_show_path_123(path_two_name:path_two_location:path_two_descr)%
+
+[sr_idle@time_to_save]
+on_timer = 2000 | sr_idle@timer %=scenario_autosave(st_save_zat_b101_searched_heli_5) +st_recrd_first_3 =new_writes_in_diary%
+
+[sr_idle@timer]
+on_timer = 15000 | sr_idle@nil %=hero_thoughts_21%
+
+[sr_idle@nil]

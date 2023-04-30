@@ -1,0 +1,246 @@
+<?xml version='1.0' encoding="windows-1251"?>
+
+<game_information_portions>
+  
+  <!-- Инфопорции арены -->
+  
+  <!-- Инфопорции квестов -->
+    <info_portion id="bar_a2_azot_quest_3_talking_1"></info_portion>
+	<info_portion id="bar_a2_azot_quest_3_talking_2"></info_portion>
+	<info_portion id="bar_a2_azot_quest_3_talking_3"></info_portion>
+	<info_portion id="bar_a2_azot_quest_3_talking_4"></info_portion>
+	<info_portion id="bar_b2_dop_quest_3_juk_item_1_have"></info_portion>
+	<info_portion id="bar_b2_dop_quest_3_juk_item_2_have"></info_portion>
+	<info_portion id="bar_a2_spec_juk_item_have_unnown"></info_portion>
+	
+	<info_portion id="gar_mod_questv1_npcs_spawner"></info_portion>
+	<info_portion id="gar_mod_questv2_npcs_spawner"></info_portion>
+	<info_portion id="bar_a2_dop_quest_4_create_enemy_1"></info_portion>
+	<info_portion id="bar_a2_dop_quest_4_create_enemy_2"></info_portion>
+	<info_portion id="bar_a2_dop_quest_4_talking_1"></info_portion>
+	<info_portion id="gar_mod_quest_npcs_spawner"></info_portion>
+	<info_portion id="bar_a2_dop_quest_4_talking_1_npc"></info_portion>
+	<info_portion id="bar_a2_dop_quest_4_talking_2_npc"></info_portion>
+	<info_portion id="bar_a2_dop_quest_4_talking_3_npc"></info_portion>
+	<info_portion id="bar_a2_dop_quest_4_talking_4_npc"></info_portion>
+	<info_portion id="bar_a2_dop_quest_4_talking_5_npc"></info_portion>
+	<info_portion id="bar_a2_dop_quest_4_talking_all_npc"></info_portion>
+	<info_portion id="bar_a2_dop_quest_4_talking_2"></info_portion>
+	<info_portion id="bar_a2_dop_quest_spectr_used"></info_portion>
+	<info_portion id="bar_a2_dop_quest_npc1_1_killed"></info_portion>
+	<info_portion id="bar_a2_dop_quest_npc1_2_killed"></info_portion>
+	<info_portion id="bar_a2_dop_quest_npc1_3_killed"></info_portion>
+	<info_portion id="bar_a2_dop_quest_npc1_4_killed"></info_portion>
+	<info_portion id="bar_a2_dop_quest_npc1_5_killed"></info_portion>
+	<info_portion id="bar_a2_dop_quest_npc1_all_killed"></info_portion>
+	<info_portion id="bar_a2_dop_quest_npc2_1_killed"></info_portion>
+	<info_portion id="bar_a2_dop_quest_npc2_2_killed"></info_portion>
+	<info_portion id="bar_a2_dop_quest_npc2_3_killed"></info_portion>
+	<info_portion id="bar_a2_dop_quest_npc2_4_killed"></info_portion>
+	<info_portion id="bar_a2_dop_quest_npc2_5_killed"></info_portion>
+	<info_portion id="bar_a2_dop_quest_npc2_all_killed"></info_portion>
+	
+    <info_portion id="bar_a2_azot_quest_2_talking_1"></info_portion>
+	<info_portion id="bar_a2_azot_quest_2_talking_2"></info_portion>
+	<info_portion id="bar_a2_azot_quest_2_talking_3"></info_portion>
+	<info_portion id="bar_a2_azot_quest_2_restr_1_used"></info_portion>
+	<info_portion id="bar_a2_azot_quest_2_restr_2_used"></info_portion>
+	<info_portion id="bar_b2_dop_quest_2_point_1_come"></info_portion>
+	<info_portion id="bar_b2_dop_quest_2_point_2_come"></info_portion>
+	
+	<info_portion id="bar_a2_azot_quest_0_talking_0"></info_portion>
+	<info_portion id="bar_a2_azot_quest_0_talking_1"></info_portion>
+	<info_portion id="bar_a2_azot_quest_0_talking_2"></info_portion>
+	<info_portion id="mar_ach_radiobattle_1_info"></info_portion>
+    <info_portion id="mar_ach_radiobattle_2_info"></info_portion>
+    <info_portion id="mar_ach_radiobattle_3_info"></info_portion>
+    <info_portion id="mar_ach_radiobattle_4_info"></info_portion>
+    <info_portion id="mar_ach_radiobattle_5_info"></info_portion>
+    <info_portion id="mar_ach_radiobattle_all_info"></info_portion>
+
+    <info_portion id="bar_a2_azot_quest_1_talking_1"></info_portion>
+	<info_portion id="bar_a2_azot_quest_1_talking_2"></info_portion>
+	<info_portion id="bar_a2_azot_quest_1_restr_1_used"></info_portion>
+	<info_portion id="bar_a2_azot_quest_1_restr_2_used"></info_portion>
+	<info_portion id="bar_a2_azot_quest_1_restr_3_used"></info_portion>
+    <info_portion id="bar_a2_killer_azot_1_death"></info_portion>
+	<info_portion id="bar_a2_killer_azot_2_death"></info_portion>
+	<info_portion id="bar_a2_killer_azot_3_death"></info_portion>
+	<info_portion id="bar_a2_killer_azot_4_death"></info_portion>
+	<info_portion id="bar_a2_killer_azot_5_death"></info_portion>
+	<info_portion id="bar_a2_killer_azot_6_death"></info_portion>
+	<info_portion id="bar_a2_killer_azot_7_death"></info_portion>
+	<info_portion id="bar_a2_killer_azot_all_death"></info_portion>
+	<!-- Состояние арены -->
+	<info_portion id="arena_ready"></info_portion>
+	<info_portion id="arena_fight"></info_portion>
+	<info_portion id="arena_attack"></info_portion>
+	<info_portion id="arena_start_public"></info_portion>
+	<info_portion id="arena_monster_on_arena"></info_portion>
+	<info_portion id="arena_chempion_fight"></info_portion>
+	<info_portion id="arena_chempion_fight_bodyguard"></info_portion>
+	<info_portion id="arena_chempion_fight_friend"></info_portion>
+	<info_portion id="arena_bodyguard_1_fall"></info_portion>
+	<info_portion id="arena_bodyguard_2_fall"></info_portion>
+	<info_portion id="arena_bodyguard_3_fall"></info_portion>
+	<info_portion id="arena_bodyguard_4_fall"></info_portion>
+	<info_portion id="arena_bodyguard_5_fall"></info_portion>
+	<info_portion id="arena_friend_1_fall"></info_portion>
+	<info_portion id="arena_friend_2_fall"></info_portion>
+	<info_portion id="arena_friend_3_fall"></info_portion>
+	<info_portion id="arena_friend_4_fall"></info_portion>
+	<info_portion id="arena_friend_5_fall"></info_portion>
+		
+	<!-- Состояние боев -->
+	<info_portion id="arena_start_assalut_1"></info_portion>
+	<info_portion id="arena_start_assalut_2"></info_portion>
+	<info_portion id="arena_start_assalut_3"></info_portion>
+	<info_portion id="arena_start_assalut_4"></info_portion>
+	<info_portion id="arena_start_assalut_5"></info_portion>
+	
+	<info_portion id="arena_start_bodyguard_1"></info_portion>
+	<info_portion id="arena_start_bodyguard_2"></info_portion>
+	<info_portion id="arena_start_bodyguard_3"></info_portion>
+	<info_portion id="arena_start_bodyguard_4"></info_portion>
+	<info_portion id="arena_start_bodyguard_5"></info_portion>
+		
+	<info_portion id="arena_start_duel_1"></info_portion>
+	<info_portion id="arena_start_duel_2"></info_portion>
+	<info_portion id="arena_start_duel_3"></info_portion>
+	<info_portion id="arena_start_duel_4"></info_portion>
+	<info_portion id="arena_start_duel_5"></info_portion>
+		
+	<info_portion id="arena_start_friend_1"></info_portion>
+	<info_portion id="arena_start_friend_2"></info_portion>
+	<info_portion id="arena_start_friend_3"></info_portion>
+	<info_portion id="arena_start_friend_4"></info_portion>
+	<info_portion id="arena_start_friend_5"></info_portion>
+	
+	<info_portion id="arena_start_hunt_1"></info_portion>
+	<info_portion id="arena_start_hunt_2"></info_portion>
+	<info_portion id="arena_start_hunt_3"></info_portion>
+	<info_portion id="arena_start_hunt_4"></info_portion>
+	<info_portion id="arena_start_hunt_5"></info_portion>
+	
+	<info_portion id="arena_start_wantlive_1"></info_portion>
+	<info_portion id="arena_start_wantlive_2"></info_portion>
+	<info_portion id="arena_start_wantlive_3"></info_portion>
+	<info_portion id="arena_start_wantlive_4"></info_portion>
+	<info_portion id="arena_start_wantlive_5"></info_portion>
+	
+	<!-- Состояние сквадов-противников арены -->
+	<info_portion id="bar_arena_enemy_assalut_1_death"></info_portion>
+	<info_portion id="bar_arena_enemy_assalut_2_death"></info_portion>
+	<info_portion id="bar_arena_enemy_assalut_3_death"></info_portion>
+	<info_portion id="bar_arena_enemy_assalut_4_death"></info_portion>
+	<info_portion id="bar_arena_enemy_assalut_5_death"></info_portion>
+	
+	<info_portion id="bar_arena_enemy_bodyguard_1_death"></info_portion>
+	<info_portion id="bar_arena_enemy_bodyguard_2_death"></info_portion>
+	<info_portion id="bar_arena_enemy_bodyguard_3_death"></info_portion>
+	<info_portion id="bar_arena_enemy_bodyguard_4_death"></info_portion>
+	<info_portion id="bar_arena_enemy_bodyguard_5_death"></info_portion>	
+	
+	<info_portion id="bar_arena_enemy_duel_1_death"></info_portion>
+	<info_portion id="bar_arena_enemy_duel_2_death"></info_portion>
+	<info_portion id="bar_arena_enemy_duel_3_death"></info_portion>
+	<info_portion id="bar_arena_enemy_duel_4_death"></info_portion>
+	<info_portion id="bar_arena_enemy_duel_5_death"></info_portion>
+	
+	<info_portion id="bar_arena_enemy_friend_1_death"></info_portion>
+	<info_portion id="bar_arena_enemy_friend_2_death"></info_portion>
+	<info_portion id="bar_arena_enemy_friend_3_death"></info_portion>
+	<info_portion id="bar_arena_enemy_friend_4_death"></info_portion>
+	<info_portion id="bar_arena_enemy_friend_5_death"></info_portion>
+	
+	<info_portion id="bar_arena_enemy_hunt_1_death"></info_portion>
+	<info_portion id="bar_arena_enemy_hunt_2_death"></info_portion>
+	<info_portion id="bar_arena_enemy_hunt_3_death"></info_portion>
+	<info_portion id="bar_arena_enemy_hunt_4_death"></info_portion>
+	<info_portion id="bar_arena_enemy_hunt_5_death"></info_portion>
+	
+	<info_portion id="bar_arena_enemy_wantlive_1_death"></info_portion>
+	<info_portion id="bar_arena_enemy_wantlive_2_death"></info_portion>
+	<info_portion id="bar_arena_enemy_wantlive_3_death"></info_portion>
+	<info_portion id="bar_arena_enemy_wantlive_4_death"></info_portion>
+	<info_portion id="bar_arena_enemy_wantlive_5_death"></info_portion>
+	
+	<!-- Состояние сквадов-партнеров арены-->
+	<info_portion id="bar_arena_bodyguard_1_on"></info_portion>
+	<info_portion id="bar_arena_bodyguard_2_on"></info_portion>
+	<info_portion id="bar_arena_bodyguard_3_on"></info_portion>
+	<info_portion id="bar_arena_bodyguard_on"></info_portion>
+	
+	<info_portion id="bar_arena_friend_1_on"></info_portion>
+	<info_portion id="bar_arena_friend_2_on"></info_portion>
+	<info_portion id="bar_arena_friend_3_on"></info_portion>
+	<info_portion id="bar_arena_friend_on"></info_portion>
+	
+	<info_portion id="bar_arena_bodyguard_death"></info_portion>
+	<info_portion id="bar_arena_friend_death"></info_portion>
+	
+	<info_portion id="bar_arena_friend_replace"></info_portion>
+	<info_portion id="bar_arena_friend_replace_complit"></info_portion>	
+	<info_portion id="bar_arena_bodyguard_replace"></info_portion>
+	<info_portion id="bar_arena_bodyguard_replace_complit"></info_portion>
+		
+	<!-- Состояния диалогов около арены -->
+	<info_portion id="talk_kostolom_after_fight"></info_portion>
+	<info_portion id="talk_kostolom_about_inventory"></info_portion>
+	<info_portion id="talk_kostolom_about_friend"></info_portion>
+	<info_portion id="talk_kostolom_about_bodyguard"></info_portion>
+	
+	<info_portion id="take_reward_assalut_1"></info_portion>
+	<info_portion id="take_reward_assalut_2"></info_portion>
+	<info_portion id="take_reward_assalut_3"></info_portion>
+	<info_portion id="take_reward_assalut_4"></info_portion>
+	<info_portion id="take_reward_assalut_5"></info_portion>
+	
+	<info_portion id="take_reward_bodyguard_1"></info_portion>
+	<info_portion id="take_reward_bodyguard_2"></info_portion>
+	<info_portion id="take_reward_bodyguard_3"></info_portion>
+	<info_portion id="take_reward_bodyguard_4"></info_portion>
+	<info_portion id="take_reward_bodyguard_5"></info_portion>
+	
+	<info_portion id="take_reward_duel_1"></info_portion>
+	<info_portion id="take_reward_duel_2"></info_portion>
+	<info_portion id="take_reward_duel_3"></info_portion>
+	<info_portion id="take_reward_duel_4"></info_portion>
+	<info_portion id="take_reward_duel_5"></info_portion>
+	
+	<info_portion id="take_reward_friend_1"></info_portion>
+	<info_portion id="take_reward_friend_2"></info_portion>
+	<info_portion id="take_reward_friend_3"></info_portion>
+	<info_portion id="take_reward_friend_4"></info_portion>
+	<info_portion id="take_reward_friend_5"></info_portion>
+	
+	<info_portion id="take_reward_hunt_1"></info_portion>
+	<info_portion id="take_reward_hunt_2"></info_portion>
+	<info_portion id="take_reward_hunt_3"></info_portion>
+	<info_portion id="take_reward_hunt_4"></info_portion>
+	<info_portion id="take_reward_hunt_5"></info_portion>
+	
+	<info_portion id="take_reward_wantlive_1"></info_portion>
+	<info_portion id="take_reward_wantlive_2"></info_portion>
+	<info_portion id="take_reward_wantlive_3"></info_portion>
+	<info_portion id="take_reward_wantlive_4"></info_portion>
+	<info_portion id="take_reward_wantlive_5"></info_portion>
+	
+	<!-- Состояния квестов около арены -->
+	<info_portion id="arena_inventory_box_used"></info_portion>
+	<info_portion id="arena_reward_taken"></info_portion>
+	<info_portion id="bar_arena_kostolom_first_talk"></info_portion>
+	<info_portion id="bar_arena_goto_arena_complete"></info_portion>
+	<info_portion id="bar_arena_kalgun_first_talk"></info_portion>
+	
+	<!-- Инфопорции достижений на арене -->
+	<info_portion id="chempion_assalut_achievement_gained"></info_portion>
+	<info_portion id="chempion_bodyguard_achievement_gained"></info_portion>
+	<info_portion id="chempion_duel_achievement_gained"></info_portion>
+	<info_portion id="chempion_friend_achievement_gained"></info_portion>
+	<info_portion id="chempion_hunt_achievement_gained"></info_portion>
+	<info_portion id="chempion_wantlive_achievement_gained"></info_portion>
+	<info_portion id="chempion_absolut_achievement_gained"></info_portion>
+	
+
+</game_information_portions>

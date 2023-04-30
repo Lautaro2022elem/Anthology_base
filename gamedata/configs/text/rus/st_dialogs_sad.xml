@@ -1,0 +1,2139 @@
+<?xml version="1.0" encoding="windows-1251" ?>
+<string_table>
+    <string id="sad_atr_about_self_0">
+        <text>Расскажите о себе.</text>
+    </string>
+    <string id="sad_atr_about_self_1">
+        <text>Я - профессор Стаховский. Занимаюсь исследованием аномальных образований в ЧЗО. Раньше работал над этой темой за периметром. Но решил быть, так сказать, ближе к источнику. После супер-выброса в долине перебрался сюда. Условия неплохие, место защищённое...\n Правда предлагают работать ближе к центру - около завода Юпитер. Вот - думаю. Может в дальнейшем соглашусь на предложение. А пока здесь работы хватает.</text>
+    </string>
+    <string id="sad_atr_about_upgr_0">
+        <text>Расскажите, какие модификации артефактов можно сделать.</text>
+    </string>
+    <string id="sad_atr_about_upgr_1">
+        <text>Самый востребованый вид изменений - удаление радиационной составляющей. Как известно, многие артефакты радиоактивны, но есть способ это исправить. Как ни странно, эта операция возможна только с помощью артефакта «радиоактивный гриб», который не представляет никакой пользы в чистом виде. Но, как говорится - клин клином вышибают. При этом может усилиться и положительное воздействие артефакта на организм.</text>
+    </string>
+    <string id="sad_atr_about_vofka_0">
+        <text>Я нашёл труп сталкера - Вовкой звать.</text>
+    </string>
+    <string id="sad_atr_about_vofka_1">
+        <text>Вовка погиб? Жаль парня. А его КПК у Вас?</text>
+    </string>
+    <string id="sad_atr_about_vofka_11">
+        <text>Да. В одной из его заметок сказано, что он выполнил Ваше поручение.</text>
+    </string>
+    <string id="sad_atr_about_vofka_111">
+        <text>Я заплачу Вам за КПК 7500.</text>
+    </string>
+    <string id="sad_atr_about_vofka_1111">
+        <text>Подойдёт.</text>
+    </string>
+    <string id="sad_atr_guard_open_door_0">
+        <text>Открой дверь - я ухожу.</text>
+    </string>
+    <string id="sad_atr_guard_open_door_1">
+        <text>Давай, до свидания.</text>
+    </string>
+    <string id="sad_atr_trader_start_11">
+        <text>Здравствуйте. Приятно видеть новые лица. Если хотите изменить свойства артефактов, то Вы пришли по адресу.</text>
+    </string>
+    <string id="sad_atr_trader_start_21">
+        <text>Ваш заказ готов. Забирайте.</text>
+    </string>
+    <string id="sad_atr_trader_start_31">
+        <text>Да-да.</text>
+    </string>
+    <string id="sad_b1_mudak_about_stalkers_0">
+        <text>Ты, случайно, не встречал тут сталкеров - Труса, Балбеса или Бывалого?</text>
+    </string>
+    <string id="sad_b1_mudak_about_stalkers_1">
+        <text>Как же - были такие. Даже знаю где они. Но ты же не хочешь помочь нам тварь убить, так на кой ляд я буду тебе инфу давать? Соглашайся... Поохотимся, а потом я тебе всё расскажу.</text>
+    </string>
+    <string id="sad_b1_mudak_about_stalkers_11">
+        <text>Хорошо, я согласен вам помочь.</text>
+    </string>
+    <string id="sad_b1_mudak_about_stalkers_111">
+        <text>Другое дело... Эта тварь только по ночам выходит. Так что можно идти хоть сейчас.</text>
+    </string>
+    <string id="sad_b1_mudak_about_stalkers_112">
+        <text>Та тварь только по ночам выходит. Подходи часа в два ночи к сарайчику - мы с друганом будем там.</text>
+    </string>
+    <string id="sad_b1_mudak_about_stalkers_12">
+        <text>Я подумаю.</text>
+    </string>
+    <string id="sad_b1_mudak_about_stalkers_121">
+        <text>Ну, думай-думай... Профессор, ёпт.</text>
+    </string>
+    <string id="sad_b1_mudak_about_stalkers_2">
+        <text>Как же - были такие. Даже знаю где они. Вот после охоты я тебе всё и расскажу.</text>
+    </string>
+    <string id="sad_b1_mudak_dialog_1_0">
+        <text>Я готов к охоте.</text>
+    </string>
+    <string id="sad_b1_mudak_dialog_1_1">
+        <text>Вот это мужской разговор. Ну что, пойдём?</text>
+    </string>
+    <string id="sad_b1_mudak_dialog_1_11">
+        <text>Пошли.</text>
+    </string>
+    <string id="sad_b1_mudak_dialog_1_2">
+        <text>Подходи в два ночи - та тварь только по ночам выходит.</text>
+    </string>
+    <string id="sad_b1_mudak_start_11">
+        <text>Здоров. Что то я тебя здесь раньше не видел. Недавно тут?</text>
+    </string>
+    <string id="sad_b1_mudak_start_111">
+        <text>Да, недавно.</text>
+    </string>
+    <string id="sad_b1_mudak_start_1111">
+        <text>Есть дело денежное - интересует?</text>
+    </string>
+    <string id="sad_b1_mudak_start_11111">
+        <text>Рассказывай, а там посмотрим.</text>
+    </string>
+    <string id="sad_b1_mudak_start_111111">
+        <text>Вобщем... Есть тут недалеко заброшенный лагерь. Говорят, там какая-то тварь завелась. Днём где-то отсыпается, а ночью на охоту выходит. Местные сталкеры обходят это место стороной - боятся. Вот мы с друганом и решили тварь эту убить. И моральное удовлетворение, и благодарность сталкеров в денежном эквиваленте... Но вдвоём идти стрёмно. Вот мы и ищем ещё одного. Как говорится - третим будешь?</text>
+    </string>
+    <string id="sad_b1_mudak_start_1111111">
+        <text>Хорошо, я не против поохотиться.</text>
+    </string>
+    <string id="sad_b1_mudak_start_11111111">
+        <text>Эта тварь только по ночам выходит. Так что можно идти хоть сейчас.</text>
+    </string>
+    <string id="sad_b1_mudak_start_11111112">
+        <text>Ну, тогда подходи часа в два ночи - та тварь только по ночам выходит.</text>
+    </string>
+    <string id="sad_b1_mudak_start_1111112">
+        <text>Не в этот раз. У меня есть дела поважнее.</text>
+    </string>
+    <string id="sad_b1_mudak_start_11111121">
+        <text>Ну, если надумаешь, подходи к сарайчику. Мы с друганом там отдыхаем.</text>
+    </string>
+    <string id="sad_b1_mudak_start_21">
+        <text>А, это ты...</text>
+    </string>
+    <string id="sad_b1_mudak_start_31">
+        <text>Ну, что, не передумал насчёт охоты?</text>
+    </string>
+    <string id="sad_b1_mutny_about_dolg_0">
+        <text>Откуда у тебя костюм «Долга»?</text>
+    </string>
+    <string id="sad_b1_mutny_about_dolg_1">
+        <text>Дык я бывший «долговец». Старая история... Когда стало известно, как и почему образовался «Долг», то все великие идеи разом улетучились из головы. Мы с ребятами решили стать вольными сталкерами и ушли сюда. Мужики, вон, тоже «долговцы» из моего отряда, правда, теперь бывшие. А снаряга - как напоминание о наших заблуждениях...</text>
+    </string>
+    <string id="sad_b1_mutny_about_mudak_0">
+        <text>Меня пытались ограбить двое с твоей базы.</text>
+    </string>
+    <string id="sad_b1_mutny_about_mudak_1">
+        <text>Вот это новость. И кто же это?</text>
+    </string>
+    <string id="sad_b1_mutny_about_mudak_11">
+        <text>Илья Барбос с товарищем. Вот его КПК. Там всё подробно изложено. Как понимаешь - он и его дружок мертвы.</text>
+    </string>
+    <string id="sad_b1_mutny_about_mudak_111">
+        <text>Вот идиоты. Ну я понимаю, если б они грабили тех, кто домой возвращается с хабаром. А они тут... Ну точно дебилы... А ты молодца - избавил многих от головной боли. Держи вот скромное вознаграждение.</text>
+    </string>
+    <string id="sad_b1_mutny_about_place_0">
+        <text>Что можешь рассказать о здешних местах?</text>
+    </string>
+    <string id="sad_b1_mutny_about_place_1">
+        <text>А что рассказывать? До большого выброса был пустырь, а теперь видишь что получилось. Сталкеры за артефактами попёрли. Натащили сюда кучу барахла всякого, понастроили укрытий. Думали, что так вечно будет продолжаться... Только выбросы почему-то прекратились, и каждый артефакт теперь на вес золота. Хабара мало, вот и стали сталкеры друг другу глотки грызть, как слепые собаки. Так что держи ухо востро, да не поворачивайся спиной даже к нейтралам.\n А конкретно это место - лагерь новичков. Через нас все сталкеры проходят и туда, и обратно. Крутые парни прут вглубь долины, а новички остаются здесь опыта набираться.</text>
+    </string>
+    <string id="sad_b1_mutny_dialog_11_0">
+        <text>Хорошо, я достану флешку. Где мне искать этого Васю?</text>
+    </string>
+    <string id="sad_b1_mutny_dialog_11_1">
+        <text>Лови примерные координаты. И не тяни с этим делом, а то свалит, чего гляди, отсюда... Ищи-свищи его потом...</text>
+    </string>
+    <string id="sad_b1_mutny_dialog_12_0">
+        <text>А что на флешке? Компромат, небось, какой?</text>
+    </string>
+    <string id="sad_b1_mutny_dialog_12_1">
+        <text>Вот это не твоё дело.</text>
+    </string>
+    <string id="sad_b1_mutny_dialog_12_2">
+        <text>Как говорил мой хороший знакомый, покойник: «Я слишком много знал».</text>
+    </string>
+    <string id="sad_b1_mutny_dialog_13_0">
+        <text>А сам почему не решаешь вопрос?</text>
+    </string>
+    <string id="sad_b1_mutny_dialog_13_1">
+        <text>Валить сталкеров рядом с лагерем плохо скажется на моей репутации. Поди потом доказывай, что да как. А ты человек тут новый, и ,как посмотрю, не задержишься здесь надолго. С тебя и спроса нет.</text>
+    </string>
+    <string id="sad_b1_mutny_dialog_14_0">
+        <text>Держи флешку.</text>
+    </string>
+    <string id="sad_b1_mutny_dialog_14_1">
+        <text>Спасибо, удружил. А что с Васей?</text>
+    </string>
+    <string id="sad_b1_mutny_dialog_14_11">
+        <text>Помер.</text>
+    </string>
+    <string id="sad_b1_mutny_dialog_14_111">
+        <text>Ну, туда ему и дорога.</text>
+    </string>
+    <string id="sad_b1_mutny_dialog_14_12">
+        <text>Ничего. Флешку сам отдал.</text>
+    </string>
+    <string id="sad_b1_mutny_dialog_14_121">
+        <text>Хм... Странно.</text>
+    </string>
+    <string id="sad_b1_mutny_dialog_15_0">
+        <text>Вот эта флешка. Вася Почта мёртв.</text>
+    </string>
+    <string id="sad_b1_mutny_dialog_15_1">
+        <text>Ого... смотрю, ты успел уже с местными пообщаться.</text>
+    </string>
+    <string id="sad_b1_mutny_dialog_1_0">
+        <text>Здоров.</text>
+    </string>
+    <string id="sad_b1_mutny_dialog_1_1">
+        <text>Здоровее видали. Чего ищешь в этих краях?</text>
+    </string>
+    <string id="sad_b1_mutny_dialog_1_11">
+        <text>Ищу трёх приятелей - Труса, Балбеса и Бывалого.</text>
+    </string>
+    <string id="sad_b1_mutny_dialog_1_111">
+        <text>Странно, обычно сюда за хабаром ломятся, а не друзей разыскивают.</text>
+    </string>
+    <string id="sad_b1_mutny_dialog_1_1111">
+        <text>Вот они как раз и искали артефакт «Сердце Оазиса», да не вернулись в срок.</text>
+    </string>
+    <string id="sad_b1_mutny_dialog_1_11111">
+        <text>Да уж, за этим артефактом многие охотятся, да вот только не видел его никто. А сталкеров этих помню. Но я не справочная, за так ничего рассказывать не буду.</text>
+    </string>
+    <string id="sad_b1_mutny_dialog_1_111111">
+        <text>И сколько ты хочешь за информацию?</text>
+    </string>
+    <string id="sad_b1_mutny_dialog_1_1111111">
+        <text>Бабло твоё мне не нужно, а вот услуга не помешает.</text>
+    </string>
+    <string id="sad_b1_mutny_dialog_1_11111111">
+        <text>Что за дело?</text>
+    </string>
+    <string id="sad_b1_mutny_dialog_1_111111111">
+        <text>Был у нас сталкер по имени Фёдор, ушёл в центр долины за жирными артефактами. Да только сгинул где-то, по всей видимости. Так вот он передал мне флешку с ценной инфой. Да только Вася Почта, гнида, решил себе её прикарманить. Такое крысятничество так оставлять нельзя. Понимаешь к чему клоню?</text>
+    </string>
+    <string id="sad_b1_mutny_dialog_1_11112">
+        <text>Да уж, за этим артефактом многие охотятся, да вот только не видел его никто. А сталкеров этих помню. Я их к Максимильяну отправил - всё ближе к центру долины.</text>
+    </string>
+    <string id="sad_b1_mutny_dialog_1_63">
+        <text>Тогда за дело?</text>
+    </string>
+    <string id="sad_b1_mutny_dialog_1_71">
+        <text>Вот это не твоё дело. Ну, так что, берёшься?</text>
+    </string>
+    <string id="sad_b1_mutny_dialog_1_72">
+        <text>Валить сталкеров рядом с лагерем плохо скажется на моей репутации. Поди потом доказывай, что да как. А ты человек тут новый, и ,как посмотрю, не задержишься здесь надолго. Ну что, берёшься?</text>
+    </string>
+    <string id="sad_b1_mutny_dialog_2_0">
+        <text>Ну так что насчёт сталкеров?</text>
+    </string>
+    <string id="sad_b1_mutny_dialog_2_1">
+        <text>Были тут они. Ребята борзые, всё рвались в центр долины за артефактами. Вот и отправил я их к Максимильяну на базу.</text>
+    </string>
+    <string id="sad_b1_mutny_dialog_2_11">
+        <text>Да, не густо информации... А где мне найти этого Максимильяна?</text>
+    </string>
+    <string id="sad_b1_mutny_dialog_2_111">
+        <text>Дык, найти его несложно. Только не будет он с тобой просто так разговаривать. Осторожничает - уж дюже много всякой швали вокруг развелось, а надёжных людей мало. Но есть вариантик один...</text>
+    </string>
+    <string id="sad_b1_mutny_dialog_2_1111">
+        <text>Продолжай...</text>
+    </string>
+    <string id="sad_b1_mutny_dialog_2_11111">
+        <text>Несли ему, давича, посылку аж со Скадовска. Да сталкеров, которые её доставляли, по дороге бандюки нахлабучили. Прям около его лагеря. И посылка, вроде как, пропала. Максимильян, ясен пень, расстроен. Но людей у него для разборок с бандюками сейчас нет. Так что реши этот вопрос - думаю и разговор у вас пойдёт проще.</text>
+    </string>
+    <string id="sad_b1_mutny_dialog_2_111111">
+        <text>Возможно.</text>
+    </string>
+    <string id="sad_b1_mutny_dialog_2_1111111">
+        <text>Вобщем лови координаты базы Максимильяна и места, где, предположительно, ограбили сталкеров. А дальше сам решай.</text>
+    </string>
+    <string id="sad_b1_mutny_dialog_2_12">
+        <text>Да, не густо информации... Был я у него, да видно недоспросил.</text>
+    </string>
+    <string id="sad_b1_mutny_dialog_2_121">
+        <text>Ну это, брат, твои трудности... Но... Ладно... Держи в качестве компенсации.</text>
+    </string>
+    <string id="sad_b1_mutny_dialog_2_13">
+        <text>Погоди... Это всё я знаю... Я думал, что ты что-то новое мне скажешь.</text>
+    </string>
+    <string id="sad_b1_mutny_start_dialog_11">
+        <text>А, новые лица.</text>
+    </string>
+    <string id="sad_b1_mutny_start_dialog_13">
+        <text>Чего тебе?</text>
+    </string>
+    <string id="sad_b1_trader_agree_0">
+        <text>Растение, про которое ты говорил - я могу принести его, если плата будет достойная.</text>
+    </string>
+    <string id="sad_b1_trader_agree_1">
+        <text>Если достанешь растение, заплачу 3000 - это хорошая цена за него...</text>
+    </string>
+    <string id="sad_b1_trader_agree_11">
+        <text>Маловато будет...</text>
+    </string>
+    <string id="sad_b1_trader_agree_111">
+        <text>Ну, как знаешь... Мне иначе совсем ничего не остаётся.</text>
+    </string>
+    <string id="sad_b1_trader_agree_12">
+        <text>Договорились.</text>
+    </string>
+    <string id="sad_b1_trader_agree_121">
+        <text>Вот и посмотрим, из какого ты теста.</text>
+    </string>
+    <string id="sad_b1_trader_start_11">
+        <text>О, одним раздолбаем в долине стало больше... Ладно... Что надо? Купить? Продать?</text>
+    </string>
+    <string id="sad_b1_trader_start_111">
+        <text>Тебе что, с утра кто-то в кофе нассал? Так всех клиентов растеряешь.</text>
+    </string>
+    <string id="sad_b1_trader_start_1111">
+        <text>Да куда вы денетесь!? Не попрётесь же на Затон за палкой колбасы или пачкой патронов... Сталкерня... Тоже мне... Не можете простое задание по уму сделать - всё через жопу...</text>
+    </string>
+    <string id="sad_b1_trader_start_11111">
+        <text>Что, кто-то с заказом подвёл?</text>
+    </string>
+    <string id="sad_b1_trader_start_111111">
+        <text>Да, был у меня заказ от учёных - растение аномальное добыть. Я вычислил его примерное местоположение. Ну и поручил двум дебилам пошукать в том районе. Так они чуть не обделались, когда в кустах какое-то рычание услышали. Новички, мать их... И чего они в Зону попёрлись? Думали, что здесь бабки на деревьях растут? Туристы, блин...</text>
+    </string>
+    <string id="sad_b1_trader_start_1111111">
+        <text>Если плата достойная, то я забуду твои разговоры на тему дебилов и принесу растение.</text>
+    </string>
+    <string id="sad_b1_trader_start_11111111">
+        <text>Если достанешь растение, заплачу 3000 - это хорошая цена за него... ну и возьму свои слова обратно.</text>
+    </string>
+    <string id="sad_b1_trader_start_1111112">
+        <text>Случайно не это растение?</text>
+    </string>
+    <string id="sad_b1_trader_start_11111121">
+        <text>Ну, беру свои слова обратно... Ты прям настроение мне поднял... Держи 3000 - заработал по праву.</text>
+    </string>
+    <string id="sad_b1_trader_start_1111113">
+        <text>Понятно.</text>
+    </string>
+    <string id="sad_b1_trader_start_21">
+        <text>Привет.</text>
+    </string>
+    <string id="sad_b1_trader_start_31">
+        <text>Ну, что там с растением?</text>
+    </string>
+    <string id="sad_b1_trader_start_311">
+        <text>Я в процессе...</text>
+    </string>
+    <string id="sad_b1_trader_start_3111">
+        <text>Ну-ну... Всё понятно... Те двое были в таком же процессе...</text>
+    </string>
+    <string id="sad_b1_trader_start_312">
+        <text>Держи своё растение.</text>
+    </string>
+    <string id="sad_b1_trader_start_41">
+        <text>Чего тебе?</text>
+    </string>
+    <string id="sad_b2_artur_start_11">
+        <text>Снорки, мерзкие твари... Ненавижу...</text>
+    </string>
+    <string id="sad_b2_artur_start_111">
+        <text>Что, недавно на снорков охотился?</text>
+    </string>
+    <string id="sad_b2_artur_start_1111">
+        <text>Какой там, охотился... Скорее они на меня... Слушай, помоги мне в одном деле, а?</text>
+    </string>
+    <string id="sad_b2_artur_start_11111">
+        <text>Что за дело?</text>
+    </string>
+    <string id="sad_b2_artur_start_111111">
+        <text>Ходили мы с ребятами аномалию на артефакты шерстить. И всё было хорошо, я даже артефакт нашёл. Как вдруг - снорки... Ну мы начали отстреливаться... Помню только сначала Вадика свалили, затем Ромку... А потом я со всех ног дёру дал... Еле убежал...</text>
+    </string>
+    <string id="sad_b2_artur_start_1111111">
+        <text>А от меня ты чего хочешь?</text>
+    </string>
+    <string id="sad_b2_artur_start_11111111">
+        <text>Понимаешь, мы с парнями с детства друзья - в одном доме выросли. Мы заранее записали письма родным на флешки - знали ведь, куда шли. И договорились, что в случае смерти, оставшийся в живых передаст их по назначению... А я на то место больше ни ногой... Если ты достанешь флешки, я тебе отдам всё, что у меня есть - 2000, плюс артефакт этот грёбаный.</text>
+    </string>
+    <string id="sad_b2_artur_start_111111111">
+        <text>Похоже, я уже был там. Вот флешки твоих друзей.</text>
+    </string>
+    <string id="sad_b2_artur_start_1111111111">
+        <text>Вот это выручил. Теперь могу спокойно уйти из этой грёбаной Зоны.</text>
+    </string>
+    <string id="sad_b2_artur_start_111111112">
+        <text>Хорошо. Попытаюсь забрать флешки.</text>
+    </string>
+    <string id="sad_b2_artur_start_1111111121">
+        <text>Спасибо, друг.</text>
+    </string>
+    <string id="sad_b2_artur_start_111111113">
+        <text>У меня на это нет времени.</text>
+    </string>
+    <string id="sad_b2_artur_start_21">
+        <text>Ну что, забрал флешки?</text>
+    </string>
+    <string id="sad_b2_artur_start_211">
+        <text>Да, забирай.</text>
+    </string>
+    <string id="sad_b2_artur_start_212">
+        <text>Пока нет.</text>
+    </string>
+    <string id="sad_b2_artur_start_31">
+        <text>Эх, если б кто помог...</text>
+    </string>
+    <string id="sad_b2_artur_start_41">
+        <text>Привет...</text>
+    </string>
+    <string id="sad_b2_barman_give_siut_0">
+        <text>Радик сказал взять у тебя снарягу наёмника.</text>
+    </string>
+    <string id="sad_b2_barman_give_siut_1">
+        <text>Держи... Кстати, вон сталкер стоит - Лёха Лось. Скучно ему тут, хочет Радику помочь. Если лишняя пара рук не помешает, возьми его с собой. Парень, вроде, толковый.</text>
+    </string>
+    <string id="sad_b2_barman_give_weapon_0">
+        <text>Максимильян обещал мне снарягу.</text>
+    </string>
+    <string id="sad_b2_barman_give_weapon_1">
+        <text>Максимильян умер. Какая нафиг снаряга, чувак?</text>
+    </string>
+    <string id="sad_b2_barman_give_weapon_2">
+        <text>Лады. Тебе какая больше по душе - снайперская или штурмовая.</text>
+    </string>
+    <string id="sad_b2_barman_give_weapon_21">
+        <text>Снайперская.</text>
+    </string>
+    <string id="sad_b2_barman_give_weapon_22">
+        <text>Штурмовая.</text>
+    </string>
+    <string id="sad_b2_barman_give_weapon_221">
+        <text>Держи вот.</text>
+    </string>
+    <string id="sad_b2_barman_give_weapon_222">
+        <text>Держи вот.</text>
+    </string>
+    <string id="sad_b2_barman_give_weapon_3">
+        <text>Припоздал ты, парень, Максимильян уже ушёл с базы.</text>
+    </string>
+    <string id="sad_b2_gonets_talk_0">
+        <text>Здоров, мужик. Я слышал ты к Радику направляешься. Я хочу помочь, а то засиделся уже здесь. А вдвоём всяко веселей.</text>
+    </string>
+    <string id="sad_b2_gonets_talk_1">
+        <text>Хорошо, пойдём.</text>
+    </string>
+    <string id="sad_b2_gonets_talk_2">
+        <text>Я ещё здесь дела не закончил. Но буду иметь в виду.</text>
+    </string>
+    <string id="sad_b2_maxim_about_merc_0">
+        <text>Что здесь делают наёмники?</text>
+    </string>
+    <string id="sad_b2_maxim_about_merc_1">
+        <text>Да, это загадка. Видать кто-то не хочет, чтобы сталкеры совали свой нос в центр долины.</text>
+    </string>
+    <string id="sad_b2_maxim_about_mutny_0">
+        <text>Я должен сообщить тебе про Мутного, что на базе новичков.</text>
+    </string>
+    <string id="sad_b2_maxim_about_mutny_1">
+        <text>А что с ним?</text>
+    </string>
+    <string id="sad_b2_maxim_about_mutny_11">
+        <text>Мне стало известно, что он грабит сталкеров, когда те уходят из долины. А другого выхода, кроме как через базу новичков нет.</text>
+    </string>
+    <string id="sad_b2_maxim_about_mutny_111">
+        <text>Ну ни хрена себе новости! Я сообщу своим ребятам - надо разобраться с этой гнидой. А тебе спасибо. Зайди на базу, возьми у торговца награду, я предупрежу.</text>
+    </string>
+    <string id="sad_b2_maxim_about_mutny_2">
+        <text>Знаю, сообщили уже... Мы собрали группу, что бы убрать этого ублюдка.</text>
+    </string>
+    <string id="sad_b2_maxim_about_place_0">
+        <text>Что можешь рассказать о здешних местах?</text>
+    </string>
+    <string id="sad_b2_maxim_about_place_1">
+        <text>Ну... Пустырь здесь был... Пока большой выброс всю землю не искорёжил. Артефактов тогда на свет вылезло словно прыщей у подростка. Вот и переехали сюда сталкеры на ПМЖ. Пёрли сюда всё, что под руку попадалось. Строили времянки, укрытия - думали тут вечно клондайк артефактов будет. Но... Выбросы почему-то прекратились, и артефакты стали быстро заканчиваться. Так что скоро сталкеры отсюда свалят и опять будет пустырь, только искорёженный выбросом и загаженный людьми.</text>
+    </string>
+    <string id="sad_b2_maxim_about_place_11">
+        <text>Мда... А как сталкеры умудрились столько барахла сюда натащить?</text>
+    </string>
+    <string id="sad_b2_maxim_about_place_111">
+        <text>Дык на военных вертолётах и припёрли...</text>
+    </string>
+    <string id="sad_b2_maxim_about_place_1111">
+        <text>У военных же приказ уничтожать сталкеров.</text>
+    </string>
+    <string id="sad_b2_maxim_about_place_11111">
+        <text>Эх, брат... У высоких чинов Зона - это одно, а у простых вояк - другое. Когда хрен знает откуда опасности ждать, либо в аномалии сгинешь, либо монстры загрызут. А в кармане хрен заночевал... Вот и рапортуют вояки, что так, мол и так, в таком-то районе замечена активность монстров. Им приказ на зачистку, вертолёт и боеприпасы. А реально эту вертушку сталкеры зафрахтовали и, естественно, что никаких монстров в том районе нет. Сталкерам - транспорт, воякам - бабки да боеприпасы, которые потом торговцам сдают. Такая вот экономика, брат.</text>
+    </string>
+    <string id="sad_b2_maxim_dialog_11_0">
+        <text>Привет. Ты, похоже, главный тут. Подскажи насчёт одного дела.</text>
+    </string>
+    <string id="sad_b2_maxim_dialog_11_1">
+        <text>Мне твоими вопросами заниматься некогда, своих заморочек хватает.</text>
+    </string>
+    <string id="sad_b2_maxim_dialog_11_11">
+        <text>Слышал о взаимовыручке? Я помогу тебе, а ты мне...</text>
+    </string>
+    <string id="sad_b2_maxim_dialog_11_111">
+        <text>Возможно... Слушай. Несли мне два сталкера посылку со Скадовска. Да не донесли. Скорее всего их ограбили бандиты. Если ты сюда дошёл, то наверняка видел их. А посылочка важная. Сможешь забрать ящичек?</text>
+    </string>
+    <string id="sad_b2_maxim_dialog_11_1111">
+        <text>Хорошо, я попробую.</text>
+    </string>
+    <string id="sad_b2_maxim_dialog_11_11111">
+        <text>Ты даром времени не теряешь. За посылку спасибо. Если у тебя какие вопросы - задавай.</text>
+    </string>
+    <string id="sad_b2_maxim_dialog_11_1112">
+        <text>Случайно проходил мимо бандитов и забрал у них синий ящичек. Не твой случайно?</text>
+    </string>
+    <string id="sad_b2_maxim_dialog_12_0">
+        <text>Вот твоя посылка.</text>
+    </string>
+    <string id="sad_b2_maxim_dialog_12_1">
+        <text>Вот и славненько. Спасибо... Если у тебя какие вопросы - задавай.</text>
+    </string>
+    <string id="sad_b2_maxim_dialog_1_0">
+        <text>Привет. Я от Мутного.</text>
+    </string>
+    <string id="sad_b2_maxim_dialog_1_1">
+        <text>А, это ты... Мутный сказал, что ты уладишь вопрос с посылкой.</text>
+    </string>
+    <string id="sad_b2_maxim_dialog_1_11">
+        <text>Да, вот она. Пришлось убить бандитов.</text>
+    </string>
+    <string id="sad_b2_maxim_dialog_1_111">
+        <text>Ну, значит, другим неповадно будет. Мутный сказал, что ты кого-то ищешь здесь?</text>
+    </string>
+    <string id="sad_b2_maxim_dialog_1_1111">
+        <text>Хорошо.</text>
+    </string>
+    <string id="sad_b2_maxim_dialog_1_112">
+        <text>Да, надёжных людей всё меньше и меньше. Мутный сказал, что ты кого-то ищешь здесь?</text>
+    </string>
+    <string id="sad_b2_maxim_dialog_1_113">
+        <text>Ну, давай, не тяни кота за хвост. Сделаешь дело - будем разговаривать.</text>
+    </string>
+    <string id="sad_b2_maxim_dialog_1_12">
+        <text>Да, вот она. Пришлось выкупить её, так как курьеры проиграли её в карты.</text>
+    </string>
+    <string id="sad_b2_maxim_dialog_1_13">
+        <text>Я в процессе.</text>
+    </string>
+    <string id="sad_b2_maxim_dialog_21_0">
+        <text>Я готов идти.</text>
+    </string>
+    <string id="sad_b2_maxim_dialog_21_1">
+        <text>Значит так - путь неблизкий и всякое может случиться. Потому не отходи от меня далеко, а то обидно будет провалить операцию на этой стадии.</text>
+    </string>
+    <string id="sad_b2_maxim_dialog_21_11">
+        <text>Договорились.</text>
+    </string>
+    <string id="sad_b2_maxim_dialog_21_2">
+        <text>Хм... Ты же ещё снарягу у торговца не взял.</text>
+    </string>
+    <string id="sad_b2_maxim_dialog_21_21">
+        <text>Сейчас заберу.</text>
+    </string>
+    <string id="sad_b2_maxim_dialog_21_22">
+        <text>Да нафиг надо! Есле чё, то я и ножеком всех в лопшу пакрамсаю.</text>
+    </string>
+    <string id="sad_b2_maxim_dialog_21_221">
+        <text>Ну, дело твоё... Значит так - путь неблизкий. И всякое может случиться. Потому не отходи от меня далеко, а то обидно будет провалить операцию на этой стадии.</text>
+    </string>
+    <string id="sad_b2_maxim_dialog_2_0">
+        <text>Я ищу сталкеров - Труса, Балбеса и Бывалого. Видел их?</text>
+    </string>
+    <string id="sad_b2_maxim_dialog_2_1">
+        <text>Помню, были они здесь. Ребята, вроде, нормальные. Артефакт «Сердце Оазиса» искали, потому и ломились в центр долины. Да только неспокойно сейчас там. Наёмников, мать их, развелось. Так что если хочешь ребят своих найти, то нам по пути.</text>
+    </string>
+    <string id="sad_b2_maxim_dialog_2_11">
+        <text>Продолжай.</text>
+    </string>
+    <string id="sad_b2_maxim_dialog_2_111">
+        <text>Ушли они с группой Радика. Некоторое время от них ни слуху, ни духу - думали уже всё, пропали парни. Но недавно мы получили сигнал от Радика. Застряли они на другом конце долины без еды и, почти, без боеприпасов. Ни вперёд не могут пройти, ни назад. Единственный, известный нам, проход в центр долины контролируют наёмники. Мы собираемся атаковать их лагерь, чтобы освободить проход. Мои ребята уже на месте. Твоя помощь будет очень кстати. Тем более, выручить Радика и в твоих интересах тоже. Так что решай, ты с нами, или сам по себе?</text>
+    </string>
+    <string id="sad_b2_maxim_dialog_2_1111">
+        <text>Да, я с вами.</text>
+    </string>
+    <string id="sad_b2_maxim_dialog_2_11111">
+        <text>Некогда думать, брат. Решай сейчас.</text>
+    </string>
+    <string id="sad_b2_maxim_dialog_2_111111">
+        <text>Тогда можешь взять снаряжение у нашего торговца. И как будешь готов - подходи. Только смотри, я долго ждать не буду.</text>
+    </string>
+    <string id="sad_b2_maxim_dialog_2_1112">
+        <text>Я подумаю.</text>
+    </string>
+    <string id="sad_b2_maxim_dialog_2_1113">
+        <text>Нафиг вы мне нужны - сам справлюсь.</text>
+    </string>
+    <string id="sad_b2_maxim_dialog_2_222222">
+        <text>Ну тогда извини, дружище, ты хоть и помог мне с посылкой, но в целях конспирации тебя придётся задержать здесь, пока мы там не закончим.</text>
+    </string>
+    <string id="sad_b2_maxim_dialog_2_2222222">
+        <text>Блин, я просто мышкой не туда ткнул. Конечно я с вами.</text>
+    </string>
+    <string id="sad_b2_maxim_dialog_2_222223">
+        <text>Лады. Я уж лучше здесь посижу денёк - отдохну, чем с вами там под пули лезть.</text>
+    </string>
+    <string id="sad_b2_maxim_dialog_start_11">
+        <text>Кто такой?</text>
+    </string>
+    <string id="sad_b2_maxim_dialog_start_1111">
+        <text>А, это ты... Мутный сказал, что ты уладишь вопрос с посылкой.</text>
+    </string>
+    <string id="sad_b2_maxim_dialog_start_21">
+        <text>Говори...</text>
+    </string>
+    <string id="sad_b2_maxim_dialog_start_23">
+        <text>П...</text>
+    </string>
+    <string id="sad_b2_maxim_dialog_start_31">
+        <text>Чего тебе?</text>
+    </string>
+    <string id="sad_b2_maxim_dialog_start_32">
+        <text>Ну, а теперь слушай. План - проще не бывает. Ребята заложили взрывчатку на входе. Взрываем ворота, вламываемся и кладём их всех. Ты готов?</text>
+    </string>
+    <string id="sad_b2_maxim_dialog_start_321">
+        <text>Всегда готов.</text>
+    </string>
+    <string id="sad_b2_maxim_dialog_start_322">
+        <text>Я ещё осмотрюсь здесь.</text>
+    </string>
+    <string id="sad_b2_maxim_dialog_start_3221">
+        <text>Какого хрена? Говори «готов» и поехали.</text>
+    </string>
+    <string id="sad_b2_maxim_dialog_start_32211">
+        <text>Ладно, готов.</text>
+    </string>
+    <string id="sad_b2_maxim_dialog_start_33">
+        <text>Перед тем как рванём... Если со мной что-то случится, найди группу Радика. Их последние координаты я тебе уже скинул.</text>
+    </string>
+    <string id="sad_b2_maxim_dialog_start_331">
+        <text>Хорошо.</text>
+    </string>
+    <string id="sad_b2_maxim_dialog_start_34">
+        <text>Не до тебя сейчас.</text>
+    </string>
+    <string id="sad_b2_maxim_dialog_start_41">
+        <text>Ну ты мастер. Держи скромное вознаграждение.</text>
+    </string>
+    <string id="sad_b2_maxim_dialog_start_411">
+        <text>Спасибо.</text>
+    </string>
+    <string id="sad_b2_maxim_dialog_start_4111">
+        <text>Я сообщу Радику о твоих подвигах. Так что он поможет тебе, чем сможет. Только ты отнеси ему немного провизии.</text>
+    </string>
+    <string id="sad_b2_maxim_dialog_start_41111">
+        <text>Хорошо.</text>
+    </string>
+    <string id="sad_b2_maxim_dialog_start_42">
+        <text>Неплохо, неплохо. Держи скромное вознаграждение.</text>
+    </string>
+    <string id="sad_b2_maxim_dialog_start_43">
+        <text>Как боец, ты, конечно, слабоват, но... помог. Я сообщу Радику о твоих подвигах. Так что он поможет тебе, чем сможет. Только ты отнеси ему немного провизии.</text>
+    </string>
+    <string id="sad_b2_maxim_dialog_start_44">
+        <text>Скажу прямо - хреновый из тебя боец. Ни одного наёмника не завалил. Ну это твои проблемы - всё веселье мимо тебя прошло. Так что, отнесёшь Радику провизии?</text>
+    </string>
+    <string id="sad_b2_maxim_dialog_start_441">
+        <text>Давай, я всё равно к нему направляюсь.</text>
+    </string>
+    <string id="sad_b2_maxim_dialog_start_442">
+        <text>Я тебе не верблюд, всякую хрень на горбу таскать.</text>
+    </string>
+    <string id="sad_b2_maxim_dialog_start_51">
+        <text>Привет.</text>
+    </string>
+    <string id="sad_b2_tech_about_job_0">
+        <text>Слушай, а нет ли у тебя какой работёнки для меня?</text>
+    </string>
+    <string id="sad_b2_tech_about_job_1">
+        <text>Есть одно дельце. Был у нас сталкер - Гена Непомнящий. Так скоммуниздил он у меня ящичек с инструментами. Да ушёл с базы. Если найдёшь его, забери моё добро. Я в долгу не останусь.</text>
+    </string>
+    <string id="sad_b2_tech_about_job_11">
+        <text>Хорошо, если найду его, то заберу.</text>
+    </string>
+    <string id="sad_b2_tech_about_job_12">
+        <text>В другой раз.</text>
+    </string>
+    <string id="sad_b2_tech_about_job_2">
+        <text>Было у меня дело, по поводу одного сталкера. Только кто-то его недавно убил. А как говорил товарищ Сталин: «Нет человека, нет проблемы».</text>
+    </string>
+    <string id="sad_b2_tech_about_luty_0">
+        <text>Нашёл КПК Лютого. Там, вроде, что-то для тебя есть.</text>
+    </string>
+    <string id="sad_b2_tech_about_luty_1">
+        <text>Как? Лютый мёртв? Жаль парня. Где ты его нашёл?</text>
+    </string>
+    <string id="sad_b2_tech_about_luty_11">
+        <text>В пещере, недалеко от лагеря бандитов.</text>
+    </string>
+    <string id="sad_b2_tech_about_luty_111">
+        <text>Мда... Беда... Тут он пишет, что ствол сбросил, когда от мутантов убегал. Дело в том, что он попросил на время вылазки мой модифицированный дробовик. Мда - не помог он ему и ко мне не вернулся...</text>
+    </string>
+    <string id="sad_b2_tech_about_luty_1111">
+        <text>Что - ценный ствол?</text>
+    </string>
+    <string id="sad_b2_tech_about_luty_11111">
+        <text>Ствол сам по себе неплохой, но мне он дорог по другим причинам. Слушай, тут указаны координаты тайника, где он ствол оставил. Если будешь в тех краях - прихвати. Я в долгу не останусь. Лови координаты.</text>
+    </string>
+    <string id="sad_b2_tech_about_mutny_0">
+        <text>Я должен сообщить о ЧП на базе новичков.</text>
+    </string>
+    <string id="sad_b2_tech_about_mutny_1">
+        <text>А что там случилось?</text>
+    </string>
+    <string id="sad_b2_tech_about_mutny_11">
+        <text>Мне стало известно, что Мутный грабит сталкеров, когда те уходят из долины с хабаром.</text>
+    </string>
+    <string id="sad_b2_tech_about_mutny_12">
+        <text>Ни фига себе! Спасибо, что предупредил. Уже давно подозревали, что в тех местах происходит что-то неладное - мы теряли связь со многими сталкерами, которые уходили домой с артефактами. За такую инфу тебя ожидает награда из общака клана - поговори об этом с торговцем. А это лично от меня.</text>
+    </string>
+    <string id="sad_b2_tech_about_mutny_2">
+        <text>Знаю... Тут новости быстро разлетаются. Спасибо за информацию. Держи вот.</text>
+    </string>
+    <string id="sad_b2_tech_cancel_wpn_0">
+        <text>По поводу твоего дробовика...</text>
+    </string>
+    <string id="sad_b2_tech_cancel_wpn_1">
+        <text>Слушаю.</text>
+    </string>
+    <string id="sad_b2_tech_cancel_wpn_10">
+        <text>Я нашёл его. Забирай.</text>
+    </string>
+    <string id="sad_b2_tech_cancel_wpn_101">
+        <text>Вот спасибо - выручил.</text>
+    </string>
+    <string id="sad_b2_tech_cancel_wpn_11">
+        <text>Я не буду его искать - у меня других дел полно.</text>
+    </string>
+    <string id="sad_b2_tech_cancel_wpn_111">
+        <text>Не вопрос. Попрошу кого-нибудь другого.</text>
+    </string>
+    <string id="sad_b2_tech_cancel_wpn_12">
+        <text>Ничего.</text>
+    </string>
+    <string id="sad_b2_tech_detector_1_0">
+        <text>Может тебя заинтересует. Вот рукопись Мишки Тесла. Похоже, это его наработки по теме сканирования каких-то особых аномалий...</text>
+    </string>
+    <string id="sad_b2_tech_detector_1_1">
+        <text>Дай-ка гляну... Ух ты... А здесь он как?... Хм... Интересно...</text>
+    </string>
+    <string id="sad_b2_tech_detector_1_11">
+        <text>А если на человеческий перевести. Есть практическое применение?</text>
+    </string>
+    <string id="sad_b2_tech_detector_1_111">
+        <text>Похоже, Мишка большую работу проделал. Жаль не ту команду выбрал... Ладно.\n Есть такие аномалии - транспространственными называются. Я слышал об одной такой - люди, как в пузыре оказываются, куда не пойдут - один хрен назад возвращаются. Недаром такие аномалии «Пузырями» и прозвали. А по Мишкиным записям, похоже, что есть ещё и «нестабильные телепорты»...</text>
+    </string>
+    <string id="sad_b2_tech_detector_1_1111">
+        <text>А попроще можно?</text>
+    </string>
+    <string id="sad_b2_tech_detector_1_11111">
+        <text>Короче, тащи сюда детектор «Сварог» и артефакт «Компас». Я смогу настроить детектор так, что он будет определять эти аномалии. Если тебе это, конечно, надо.</text>
+    </string>
+    <string id="sad_b2_tech_detector_1_111111">
+        <text>Зачем мне этот детектор? Я собираюсь валить из Зоны к чёртовой бабушке.</text>
+    </string>
+    <string id="sad_b2_tech_detector_1_1111111">
+        <text>Ну, если передумаешь - подходи.</text>
+    </string>
+    <string id="sad_b2_tech_detector_1_111112">
+        <text>Буду иметь ввиду. Значит «Сварог» и «Компас»...</text>
+    </string>
+    <string id="sad_b2_tech_detector_1_1111121">
+        <text>Угу.</text>
+    </string>
+    <string id="sad_b2_tech_detector_1_111113">
+        <text>Держи «Сварог» и «Компас».</text>
+    </string>
+    <string id="sad_b2_tech_detector_1_1111131">
+        <text>Ну ты запасливый - всё у тебя есть. Подходи попозже - заберёшь настроенный детектор.</text>
+    </string>
+    <string id="sad_b2_tech_detector_2_0">
+        <text>Детектор готов?</text>
+    </string>
+    <string id="sad_b2_tech_detector_2_1">
+        <text>Да, забирай.</text>
+    </string>
+    <string id="sad_b2_tech_detector_2_2">
+        <text>Ещё нет.</text>
+    </string>
+    <string id="sad_b2_tech_detector_3_0">
+        <text>Держи «Сварог» и «Компас».</text>
+    </string>
+    <string id="sad_b2_tech_detector_3_1">
+        <text>Ну ты запасливый - всё у тебя есть. Подходи попозже - заберёшь настроенный детектор.</text>
+    </string>
+    <string id="sad_b2_tech_gena_dead_0">
+        <text>Нашёл я этого Гену.</text>
+    </string>
+    <string id="sad_b2_tech_gena_dead_1">
+        <text>Забрал мой ящик?</text>
+    </string>
+    <string id="sad_b2_tech_gena_dead_11">
+        <text>Нет... Его пришлось убить, а ящика при нём не оказалось.</text>
+    </string>
+    <string id="sad_b2_tech_gena_dead_111">
+        <text>Да... Не дурак был Гена, с собой весь хабар таскать. Ладно... Придётся новые инструменты заказывать.</text>
+    </string>
+    <string id="sad_b2_tech_have_stuff_0">
+        <text>Вот, держи свой ящик.</text>
+    </string>
+    <string id="sad_b2_tech_have_stuff_1">
+        <text>Вот это спасибо. Держи награду... Кстати, а что с Геной?</text>
+    </string>
+    <string id="sad_b2_tech_have_stuff_11">
+        <text>Я его грохнул... Таким не место в Зоне.</text>
+    </string>
+    <string id="sad_b2_tech_have_stuff_111">
+        <text>Ну... туда ему и дорога.</text>
+    </string>
+    <string id="sad_b2_tech_have_stuff_12">
+        <text>Отпустил его на все четыре стороны, а дальше - его проблемы.</text>
+    </string>
+    <string id="sad_b2_tech_have_stuff_121">
+        <text>Да и хрен с ним...</text>
+    </string>
+    <string id="sad_b2_tech_have_stuff_13">
+        <text>Да какая разница... Ящик у тебя - и ладно...</text>
+    </string>
+    <string id="sad_b2_tech_have_stuff_131">
+        <text>Ну, не хочешь говорить - не надо...</text>
+    </string>
+    <string id="sad_b2_tech_told_about_loh_0">
+        <text>Я нашёл Гену, хотел выкупить твои инструменты, а он свалил с деньгами.</text>
+    </string>
+    <string id="sad_b2_tech_told_about_loh_1">
+        <text>Ну ни фига себе! Небось старый трюк с запиской?</text>
+    </string>
+    <string id="sad_b2_tech_told_about_loh_11">
+        <text>Ага...</text>
+    </string>
+    <string id="sad_b2_tech_told_about_loh_111">
+        <text>Ну, ты, блин, даёшь... Ха, записку не выбрасывай, чтоб не забыть...</text>
+    </string>
+    <string id="sad_b2_tech_util_1_0">
+        <text>Тебе, случаем, не нужны повреждённые стволы на запчасти?</text>
+    </string>
+    <string id="sad_b2_tech_util_1_1">
+        <text>Нужны. Видишь ящик возле меня? Скидывай туда ненужное железо. Я на досуге поковыряюсь и заберу, что мне нужно будет. Много денег не дам, зато от хлама избавишься.</text>
+    </string>
+    <string id="sad_b2_tech_util_2_0">
+        <text>Ну что, выбрал что-нибудь из железок, которые я оставил?</text>
+    </string>
+    <string id="sad_b2_tech_util_2_1">
+        <text>Да, держи деньги.</text>
+    </string>
+    <string id="sad_b2_trader_about_mutny_0">
+        <text>Я должен сообщить о ЧП на базе новичков.</text>
+    </string>
+    <string id="sad_b2_trader_about_mutny_1">
+        <text>А что там случилось?</text>
+    </string>
+    <string id="sad_b2_trader_about_mutny_11">
+        <text>Мне стало известно, что Мутный грабит сталкеров, когда те уходят из долины с хабаром.</text>
+    </string>
+    <string id="sad_b2_trader_about_mutny_111">
+        <text>Ни фига себе! Уже давно подозревали, что в тех местах происходит что-то неладное - мы теряли связь со многими сталкерами, которые уходили домой с артефактами. А тебе пасибо за информацию. Держи награду.</text>
+    </string>
+    <string id="sad_b2_trader_about_mutny_2">
+        <text>Да, слышал... Спасибо за информацию. Тебе причитается с общака клана, держи.</text>
+    </string>
+    <string id="sad_b2_trader_about_ucheny_0">
+        <text>Ты знаешь Новикова? Это учёный, который работает на Янтаре.</text>
+    </string>
+    <string id="sad_b2_trader_about_ucheny_1">
+        <text>Знаю. Это как-то связано с группой сталкеров, которые проводили замеры по его заказу?</text>
+    </string>
+    <string id="sad_b2_trader_about_ucheny_11">
+        <text>Да, Андрей Голова, который делал замеры, погиб. У меня его флешка с результатами замеров.</text>
+    </string>
+    <string id="sad_b2_trader_about_ucheny_111">
+        <text>Хм... Дам тебе за неё 3000.</text>
+    </string>
+    <string id="sad_b2_trader_about_ucheny_1111">
+        <text>Забирай.</text>
+    </string>
+    <string id="sad_b2_trader_about_ucheny_1112">
+        <text>В другой раз.</text>
+    </string>
+    <string id="sad_b2_trader_nauchny_1_0">
+        <text>Ты посылал мне сообщение. Что за дело?</text>
+    </string>
+    <string id="sad_b2_trader_nauchny_1_1">
+        <text>К нам прислали сотрудников одной научной лаборатории, для проведения исследований в Долине Шорохов. Им нужна помощь в проведении замеров в аномальных зонах. Меня попросили найти надёжных людей. Платят они хорошо. Так что если нужен дополнительный доход - подойди к их главному.</text>
+    </string>
+    <string id="sad_b2_trader_nauchny_2_0">
+        <text>Я согласился помочь яйцеголовым. Нужна взрывчатка - они сказали, что ты в курсе.</text>
+    </string>
+    <string id="sad_b2_trader_nauchny_2_1">
+        <text>Врывчатку нам оставили наёмники на контейнерах. Я уже говорил с Иваном Колбасой, он отдаст её тебе.\n Судя по координатам, пещера находится рядом с местом, где базировался Семён Ковбой. Как заберёшь взрывчатку - иди сразу туда. А проводника для ребят я сам найду.</text>
+    </string>
+    <string id="sad_b2_trader_nauchny_3_0">
+        <text>Для меня должна быть посылка от яйцеголовых.</text>
+    </string>
+    <string id="sad_b2_trader_nauchny_3_1">
+        <text>Ха, есть такая. Держи.</text>
+    </string>
+    <string id="sad_b2_trader_notebook_job_1_0">
+        <text>Нет ли какой работёнки для меня?</text>
+    </string>
+    <string id="sad_b2_trader_notebook_job_1_1">
+        <text>Не буду вдаваться в подробности, но... Было время, военные шабашили на вертушках - забрасывали нам всякое барахло. Я, естественно, тоже с ними имел дела. Но последние два вертокрыла не долетели... Толи сбили их, толи в аномалии угодили - хрен знает. Один свалился около базы новичков, так что там уже ловить нечего. А вот второй упал где-то ближе к центру долины. Вот как раз на нём был мой заказ - пара стволов и ещё какое-то барахло. А самое главное ноутбук, я его давно ждал. Вобщем, найдёшь мой ноут - с меня причитается... Ну а барахло можешь себе забрать, или я у тебя его куплю...</text>
+    </string>
+    <string id="sad_b2_trader_notebook_job_1_11">
+        <text>Да, уж... Раньше никогда бы не подумал, что у военных здесь такой бизнес. Интересно, это им с рук сошло?</text>
+    </string>
+    <string id="sad_b2_trader_notebook_job_1_111">
+        <text>Нет, конечно. У местных вояк после этого пол офицерского состава раком нагнули... Хреново... Больше к нам по воздуху барахло не ходит... Давай к делу. Ну так что, найдёшь мой ноут?</text>
+    </string>
+    <string id="sad_b2_trader_notebook_job_1_1111">
+        <text>Хорошо, если найду - принесу.</text>
+    </string>
+    <string id="sad_b2_trader_notebook_job_1_1112">
+        <text>Видел я твою вертушку - за контейнерами валяется. И ноутбук я нашёл.</text>
+    </string>
+    <string id="sad_b2_trader_notebook_job_1_1113">
+        <text>Я подумаю.</text>
+    </string>
+    <string id="sad_b2_trader_notebook_job_1_11121">
+        <text>Ну ты даёшь! Нашёл? Держи за него 7500.</text>
+    </string>
+    <string id="sad_b2_trader_notebook_job_1_111211">
+        <text>Договорились.</text>
+    </string>
+    <string id="sad_b2_trader_notebook_job_1_111212">
+        <text>Нет... Это моя находка. Не буду продавать.</text>
+    </string>
+    <string id="sad_b2_trader_notebook_job_1_1112121">
+        <text>Ну ты жук... Ладно, держи 15000 и по рукам.</text>
+    </string>
+    <string id="sad_b2_trader_notebook_job_1_11121211">
+        <text>Это уже другое дело. По рукам.</text>
+    </string>
+    <string id="sad_b2_trader_notebook_job_1_2">
+        <text>Ходят слухи, что это ты Максимильяна убил... Это, конечно, не доказано, но... доверия к тебе нет.</text>
+    </string>
+    <string id="sad_b2_trader_notebook_job_1_3">
+        <text>Нет у меня к тебе доверия, мужик, а значит и работы нет.</text>
+    </string>
+    <string id="sad_b2_trader_notebook_job_2_0">
+        <text>Я нашёл ноутбук.</text>
+    </string>
+    <string id="sad_b2_trader_notebook_job_2_1">
+        <text>Ну ты даёшь! Нашёл? Держи за него 7500.</text>
+    </string>
+    <string id="sad_b2_trader_sell_stuff_0">
+        <text>Думаю тебя заинтересует.</text>
+    </string>
+    <string id="sad_b2_trader_sell_stuff_1">
+        <text>Что у тебя?</text>
+    </string>
+    <string id="sad_b2_trader_sell_stuff_11">
+        <text>КПК наёмника.</text>
+    </string>
+    <string id="sad_b2_trader_sell_stuff_111">
+        <text>Хм... Интересно... Держи 2000 - информация лишней не бывает.</text>
+    </string>
+    <string id="sad_b2_trader_sell_stuff_17">
+        <text>Флешка Фёдора.</text>
+    </string>
+    <string id="sad_b2_trader_sell_stuff_171">
+        <text>Хм... Интересно... Держи 1000 - информация лишней не бывает.</text>
+    </string>
+    <string id="sad_b2_trader_sell_stuff_1711">
+        <text>Лады.</text>
+    </string>
+    <string id="sad_b2_trader_sell_stuff_12">
+        <text>Взгляни какое растение я нашёл.</text>
+    </string>
+    <string id="sad_b2_trader_sell_stuff_121">
+        <text>Ух-ты, похоже, это то растение, за которое учёные мне 6000 обещали... Сам понимаешь, всю сумму я тебе дать не могу, а вот 5000 - супер цена. Ну и штукарь - мои копытные. По рукам?</text>
+    </string>
+    <string id="sad_b2_trader_sell_stuff_1211">
+        <text>По рукам.</text>
+    </string>
+    <string id="sad_b2_trader_sell_stuff_1212">
+        <text>Я подумаю.</text>
+    </string>
+    <string id="sad_b2_trader_sell_stuff_12121">
+        <text>Ну подумай, подумай.</text>
+    </string>
+    <string id="sad_b2_trader_sell_stuff_13">
+        <text>Нашёл труп Пети Сайгака. Знаешь его?</text>
+    </string>
+    <string id="sad_b2_trader_sell_stuff_131">
+        <text>Млин, Сайгак мёртв? Я так и думал. Он должен был мне передать кое-какую информацию, но пропал. Бедолага... Его КПК у тебя?</text>
+    </string>
+    <string id="sad_b2_trader_sell_stuff_1311">
+        <text>Да, забирай.</text>
+    </string>
+    <string id="sad_b2_trader_sell_stuff_13111">
+        <text>Спасибо.</text>
+    </string>
+    <string id="sad_b2_trader_sell_stuff_14">
+        <text>Рукописи Мишки Тесла.</text>
+    </string>
+    <string id="sad_b2_trader_sell_stuff_141">
+        <text>Меня не интересует. Это ты у техника нашего, Валерия Палыча, спроси. Они раньше знакомы были, вместе работали до того, как Мишка к «Свободе» примкнул.</text>
+    </string>
+    <string id="sad_b2_trader_sell_stuff_142">
+        <text>Я же тебе сказал - обратись к Валерию Палычу.</text>
+    </string>
+    <string id="sad_b2_trader_sell_stuff_15">
+        <text>КПК бандита.</text>
+    </string>
+    <string id="sad_b2_trader_sell_stuff_151">
+        <text>Дам за него 1000.</text>
+    </string>
+    <string id="sad_b2_trader_sell_stuff_1511">
+        <text>Лады.</text>
+    </string>
+    <string id="sad_b2_trader_sell_stuff_1512">
+        <text>Нет, придержу пока.</text>
+    </string>
+    <string id="sad_b2_trader_sell_stuff_16">
+        <text>КПК сталкера Вовки.</text>
+    </string>
+    <string id="sad_b2_trader_sell_stuff_161">
+        <text>Дай-ка посмотрю. Хм... Здесь говорится, что Вовка выполнял какой-то заказ для Стаховского. Он у нас «штатный повар» по артефактам. Западнее нашей базы есть пещера, Стаховский там со своим помощником обитает... Я могу купить у тебя этот КПК за 1500 рубчиков.</text>
+    </string>
+    <string id="sad_b2_trader_sell_stuff_1611">
+        <text>Сойдёт.</text>
+    </string>
+    <string id="sad_b2_trader_sell_stuff_18">
+        <text>Ничего.</text>
+    </string>
+    <string id="sad_b3_trader_about_bomb_0">
+        <text>Рокфеллер сказал, что у тебя есть взрывчатка.</text>
+    </string>
+    <string id="sad_b3_trader_about_bomb_1">
+        <text>Да, осталась от наёмников. Вот, держи.</text>
+    </string>
+    <string id="sad_b3_trader_about_ucheny_0">
+        <text>Андрей должен был оставить деньги для меня.</text>
+    </string>
+    <string id="sad_b3_trader_about_ucheny_1">
+        <text>Угу, держи.</text>
+    </string>
+    <string id="sad_b3_trader_dialog_1_0">
+        <text>Ну и цены у тебя... офигеть...</text>
+    </string>
+    <string id="sad_b3_trader_dialog_1_1">
+        <text>Доставка обходится дорого - вот тебе и цены. А последний груз, вообще, пропал вместе со сталкером, который его нёс.</text>
+    </string>
+    <string id="sad_b3_trader_dialog_1_11">
+        <text>Что, кинул тебя сталкер?</text>
+    </string>
+    <string id="sad_b3_trader_dialog_1_111">
+        <text>Нее... Ванька Сусанин не кидала. Хотя, было дело, завёл отряд бандюков в глухую аномалию.</text>
+    </string>
+    <string id="sad_b3_trader_dialog_1_1111">
+        <text>А что случилось?</text>
+    </string>
+    <string id="sad_b3_trader_dialog_1_11111">
+        <text>Ванька везде находил короткие тропинки, потому и работал быстро. Так вот он нашёл пещеры, по которым путь отсюда к выходу из долины можно сократить. Правда, сталкеры этой дорогой не ходят - пси-аномалия там, мозги закипают. Но Ванька хвастался, что нашёл артефакт с которым ему эти аномалии не страшны...\n Крайний раз он сообщил мне по рации, что уже на подходе. Но дальше связь пропала... Если согласишься, то я скину тебе координаты входа в пещеры. Когда найдёшь Ваньку, забери у него мой товар - я в долгу не останусь.</text>
+    </string>
+    <string id="sad_b3_trader_dialog_1_111111">
+        <text>Хорошо, я согласен.</text>
+    </string>
+    <string id="sad_b3_trader_dialog_1_111112">
+        <text>Я подумаю.</text>
+    </string>
+    <string id="sad_b3_trader_dialog_2_0">
+        <text>Держи свой товар. А Ваньку убили зомби в пещерах.</text>
+    </string>
+    <string id="sad_b3_trader_dialog_2_1">
+        <text>Да... Никогда не знаешь откуда ждать беды...</text>
+    </string>
+    <string id="sad_b3_ucheny_arrive_home_0">
+        <text>Все необходимые замеры выполнены. Рвём обратно на базу. Готов?</text>
+    </string>
+    <string id="sad_b3_ucheny_arrive_home_1">
+        <text>Пошли.</text>
+    </string>
+    <string id="sad_b3_ucheny_d1_0">
+        <text>Я получил ваше сообщение... Кто вы и что за работа?</text>
+    </string>
+    <string id="sad_b3_ucheny_d1_1">
+        <text>Меня зовут Андрей Голова, моего напарника - Степан. Нас наняли учёные, которые базируются на Янтаре. Их заинтересовали местные аномальные поля. И нам поручили сделать замеры в некоторых местах. Несколько замеров мы уже сделали, но... В последние пару дней наблюдается черезмерная активность мутантов, поэтому идти дальше в центр долины вдвоём - самоубийство. Мы связались с Новиковым, это наш непосредственный заказчик, и он дал добро на дополнительные расходы для найма группы сталкеров, которые обеспечат безопасность замеров. Трое уже согласились, но мы хотим взять в группу ещё одного.</text>
+    </string>
+    <string id="sad_b3_ucheny_d1_11">
+        <text>Я согласен.</text>
+    </string>
+    <string id="sad_b3_ucheny_d1_111">
+        <text>Вот и ладненько. Сообщи, когда будешь готов.</text>
+    </string>
+    <string id="sad_b3_ucheny_d1_12">
+        <text>У меня на это нет времени.</text>
+    </string>
+    <string id="sad_b3_ucheny_d1_121">
+        <text>Ну, если надумаешь - милости просим... Если до этого никого не найдём.</text>
+    </string>
+    <string id="sad_b3_ucheny_d2_0">
+        <text>Я по поводу замеров. Есть ещё место в отряде?</text>
+    </string>
+    <string id="sad_b3_ucheny_d2_1">
+        <text>Ты вовремя. Тут как раз ещё пара сомневающихся. Но ты уже был в тех местах, поэтому твоя помощь будет полезна. Сообщи, когда будешь готов.</text>
+    </string>
+    <string id="sad_b3_ucheny_d3_0">
+        <text>Я готов идти.</text>
+    </string>
+    <string id="sad_b3_ucheny_d3_1">
+        <text>Значит так, предупреждаю сразу - мы тут не на пикник собираемся, так что запасись снаряжением. И ещё - движемся группой. Если уйдёшь далеко от группы, то автоматически будешь исключён из пайщиков и бабла тебе не видать. Так же никому не видать бабла в случае моей смерти, по той простой причине, что те самые замеры, умею делать только я. Ну что, всё понял?</text>
+    </string>
+    <string id="sad_b3_ucheny_d3_11">
+        <text>Понял.</text>
+    </string>
+    <string id="sad_b3_ucheny_start_11">
+        <text>Слушаю.</text>
+    </string>
+    <string id="sad_b3_ucheny_start_21">
+        <text>Ты здорово помог. Держи деньги.</text>
+    </string>
+    <string id="sad_b3_ucheny_start_31">
+        <text>Да, да...</text>
+    </string>
+    <string id="sad_b4_fedor_talk_0">
+        <text>Помираю, брат...</text>
+    </string>
+    <string id="sad_b4_fedor_talk_1">
+        <text>Держи аптечку.</text>
+    </string>
+    <string id="sad_b4_fedor_talk_11">
+        <text>Не поможет... Пришло моё время. Жил как собака и помру так же... У меня есть только одна просьба... Дай мне ствол и один патрон.</text>
+    </string>
+    <string id="sad_b4_fedor_talk_111">
+        <text>Хорошо, держи.</text>
+    </string>
+    <string id="sad_b4_fedor_talk_112">
+        <text>Да ты чего раскис, дружище. Соберись! Доковыляем до доктора. Он тебя в миг на ноги поставит.</text>
+    </string>
+    <string id="sad_b4_fedor_talk_1121">
+        <text>У меня свои счёты с жизнью, брат. Ты тут в героя не играй. Так что или дай ствол, или вали отсюда...</text>
+    </string>
+    <string id="sad_b4_fedor_talk_11211">
+        <text>Прощай...</text>
+    </string>
+    <string id="sad_b4_jail_guard_0">
+        <text>Здоров, брат. Слышал - вас сталкеры подрезали?</text>
+    </string>
+    <string id="sad_b4_jail_guard_1">
+        <text>Да, застали врасплох.</text>
+    </string>
+    <string id="sad_b4_jail_guard_2">
+        <text>Небось руки чешутся добить эту гниду? Я только за. Не понимаю, нафиг он тут нужен живой. Но, приказ - есть приказ. Так что извини, брат, нельзя.</text>
+    </string>
+    <string id="sad_b4_jail_guard_3">
+        <text>А где второй? их же двое было.</text>
+    </string>
+    <string id="sad_b4_jail_guard_4">
+        <text>Ты что, брат, с дуба рухнул? Или... Что-то подозрительный ты какой-то. А ну-ка, скажи кодовое слово!</text>
+    </string>
+    <string id="sad_b4_jail_guard_41">
+        <text>А хрен его знает.</text>
+    </string>
+    <string id="sad_b4_jail_guard_42">
+        <text>Абра-швабра-кадабра?</text>
+    </string>
+    <string id="sad_b4_jail_guard_43">
+        <text>Сяськи-масяськи?</text>
+    </string>
+    <string id="sad_b4_jail_guard_44">
+        <text>Бамбарбия кергуду?</text>
+    </string>
+    <string id="sad_b4_killer_first_meet_0">
+        <text>Не понял, ты чего один? Где мужики?</text>
+    </string>
+    <string id="sad_b4_killer_first_meet_1">
+        <text>Да, млин, нарвались на отряд сталкеров - нет больше мужиков, я один остался.</text>
+    </string>
+    <string id="sad_b4_killer_first_meet_2">
+        <text>Ни хрена себе. Иди сообщи главному... Сталкеры попёрли, как мухи на мёд. Надо что-то решать.</text>
+    </string>
+    <string id="sad_b4_killer_first_meet_3">
+        <text>Лады.</text>
+    </string>
+    <string id="sad_b4_killer_glavar_11">
+        <text>Здоров. Уже наслышан о ваших «подвигах». Это позор - сталкеры надрали вам задницы.</text>
+    </string>
+    <string id="sad_b4_killer_glavar_111">
+        <text>Они застали нас врасплох.</text>
+    </string>
+    <string id="sad_b4_killer_glavar_1111">
+        <text>Ладно, с тобой ещё потом поговорим. Можешь идти.</text>
+    </string>
+    <string id="sad_b4_killer_glavar_11111">
+        <text>Хорошо.</text>
+    </string>
+    <string id="sad_b4_killer_glavar_21">
+        <text>Чего ещё?</text>
+    </string>
+    <string id="sad_b4_killer_glavar_211">
+        <text>Ничего... Ухожу.</text>
+    </string>
+    <string id="sad_b4_talk_after_11">
+        <text>Слушаю.</text>
+    </string>
+    <string id="sad_b4_talk_after_111">
+        <text>Что будешь делать дальше?</text>
+    </string>
+    <string id="sad_b4_talk_after_1111">
+        <text>Здесь делать нечего. Скоро двину к контейнерам. Там и останусь. Если надумаешь идти со мной - дай знать, сразу двинем. Вместе всяко веселей.</text>
+    </string>
+    <string id="sad_b4_talk_after_11111">
+        <text>Хорошо.</text>
+    </string>
+    <string id="sad_b4_talk_after_21">
+        <text>Ну что, готов идти?</text>
+    </string>
+    <string id="sad_b4_talk_after_211">
+        <text>Нет, я ещё осмотрюсь здесь.</text>
+    </string>
+    <string id="sad_b4_talk_after_212">
+        <text>Да, пойдём.</text>
+    </string>
+    <string id="sad_ban_bandit_dialog_1_0">
+        <text>Я насчёт хабара, который твои архаровцы ломанули у сталкеров на днях.</text>
+    </string>
+    <string id="sad_ban_bandit_dialog_1_1">
+        <text>А, это маленький ящичек, такой, синий...</text>
+    </string>
+    <string id="sad_ban_bandit_dialog_1_11">
+        <text>Да.</text>
+    </string>
+    <string id="sad_ban_bandit_dialog_1_111">
+        <text>Не, не слышал...</text>
+    </string>
+    <string id="sad_ban_bandit_dialog_1_1111">
+        <text>Кончай дуру гнать, это вещь Максимильяна. Слыхал о таком?</text>
+    </string>
+    <string id="sad_ban_bandit_dialog_1_11111">
+        <text>Да мне до одного места чьё добро. Те двое нажрались водяры и хабар в карты проиграли. Правда ящик заблокирован, мои братки об него чуть зубы не сломали. Короче, давай десять косарей и можешь забрать. Вот такое вот «поле чудес», мля.</text>
+    </string>
+    <string id="sad_ban_bandit_dialog_1_111111">
+        <text>Ладно, держи бабки.</text>
+    </string>
+    <string id="sad_ban_bandit_dialog_1_1111111">
+        <text>Ну заходи когда будут.</text>
+    </string>
+    <string id="sad_ban_bandit_dialog_1_111112">
+        <text>У меня нет 10000.</text>
+    </string>
+    <string id="sad_ban_bandit_dialog_1_111115">
+        <text>Я подумаю.</text>
+    </string>
+    <string id="sad_ban_bandit_dialog_1_2">
+        <text>Цену знаешь - решай, пока я не передумал.</text>
+    </string>
+    <string id="sad_ban_bandit_dialog_start_21">
+        <text>Чё надо, сталкер?</text>
+    </string>
+    <string id="sad_ban_bandit_dialog_start_22">
+        <text>Чё припёрся?</text>
+    </string>
+    <string id="sad_ban_bandit_dialog_start_23">
+        <text>Чё припёрся, вали нах.</text>
+    </string>
+    <string id="sad_ban_bandit_guard_1_0">
+        <text>Куда прёшь?</text>
+    </string>
+    <string id="sad_ban_bandit_guard_1_1">
+        <text>Да вот, думаю к вам в банду вступить.</text>
+    </string>
+    <string id="sad_ban_bandit_guard_1_11">
+        <text>Не думаю, что Костя Лапсердак примет такого фраера, как ты.</text>
+    </string>
+    <string id="sad_ban_bandit_guard_1_111">
+        <text>Да пошутил я, дело у меня у Костяну.</text>
+    </string>
+    <string id="sad_ban_bandit_guard_1_1111">
+        <text>Ну проходи, только не балуй.</text>
+    </string>
+    <string id="sad_ban_bandit_guard_1_11111">
+        <text>Понял.</text>
+    </string>
+    <string id="sad_ban_bandit_guard_1_2">
+        <text>Я из канадской компании. Хочу набор косметики пахану твоему продать.</text>
+    </string>
+    <string id="sad_ban_bandit_guard_1_22">
+        <text>Чё, мля, шутник нашёлся? Это мы быро исправим.</text>
+    </string>
+    <string id="sad_ban_bandit_guard_1_221">
+        <text>Да ладно, не кипятись... Дело у меня к пахану твоему есть.</text>
+    </string>
+    <string id="sad_ban_bandit_guard_1_222">
+        <text>Ну попробуй, рискни здоровьем.</text>
+    </string>
+    <string id="sad_ban_bandit_guard_1_2222">
+        <text>Ну проходи, шутник, только не балуй.</text>
+    </string>
+    <string id="sad_ban_bandit_guard_1_22221">
+        <text>Понял.</text>
+    </string>
+    <string id="sad_ban_bandit_guard_1_22222">
+        <text>Ну проходи, шутник, только не балуй.</text>
+    </string>
+    <string id="sad_ban_bandit_guard_1_3">
+        <text>Поспорили мы со сталкерами, что я у вас в подвале насру. Так что отойди с дороги.</text>
+    </string>
+    <string id="sad_ban_bandit_guard_1b_0">
+        <text>Вали нах отсюда, сталкер. Тебе здесь делать нечего.</text>
+    </string>
+    <string id="sad_ban_bandit_guard_1b_1">
+        <text>Понял, ухожу.</text>
+    </string>
+    <string id="sad_ban_bandit_guard_1b_2">
+        <text>За такие слова можно и в табло схлопотать.</text>
+    </string>
+    <string id="sad_cowboy_about_merc_0">
+        <text>Откуда здесь наёмники?</text>
+    </string>
+    <string id="sad_cowboy_about_merc_1">
+        <text>Это не моё дело. Не пускают нас к центру долины, значит кому-то это надо. А раз у них хватает бабла на оплату наёмников, значит нам с ними воевать не с руки.</text>
+    </string>
+    <string id="sad_cowboy_about_mutny_0">
+        <text>Слышал новость про Мутного?</text>
+    </string>
+    <string id="sad_cowboy_about_mutny_1">
+        <text>А что с ним?</text>
+    </string>
+    <string id="sad_cowboy_about_mutny_11">
+        <text>Оказалось, что он грабит сталкеров на обратном пути из долины. Предупреди своих.</text>
+    </string>
+    <string id="sad_cowboy_about_mutny_111">
+        <text>Ну... Всякое бывает... Как говорится - виноват не тот, кто гадит, а тот, кто попался...</text>
+    </string>
+    <string id="sad_cowboy_dialog_1_0">
+        <text>Тесла сказал, что с тебя сто грамм и пончик тому, кто убьёт Олега...</text>
+    </string>
+    <string id="sad_cowboy_dialog_1_1">
+        <text>А ты что, знаешь где прячется эта гнида?</text>
+    </string>
+    <string id="sad_cowboy_dialog_1_11">
+        <text>Знаю... В аду... Я его туда отправил.</text>
+    </string>
+    <string id="sad_cowboy_dialog_1_111">
+        <text>Вот это хорошая новость. Держи вот.</text>
+    </string>
+    <string id="sad_cowboy_start_11">
+        <text>Здоров. Чё надо?</text>
+    </string>
+    <string id="sad_cowboy_start_111">
+        <text>Я ищу сталкеров - Труса, Балбеса и Бывалого. Видел их?</text>
+    </string>
+    <string id="sad_cowboy_start_1111">
+        <text>Да, были они тут. Артефакт заказной искали. Трус здесь остался, хотел проверить одно место на наличие артефактов. А Балбес и Бывалый ушли за контейнера с какими-то сталкерами. Договорились встретиться на обратной дороге. Но я их больше не видел. А тебе-то, собственно, что за дело?</text>
+    </string>
+    <string id="sad_cowboy_start_11111">
+        <text>Не вернулись ребята в срок. Вот меня и наняли, чтоб я их нашёл и артефакт этот добыл... Ну, и... Трус нашёл артефакт?</text>
+    </string>
+    <string id="sad_cowboy_start_111111">
+        <text>Ну, слушай... На плато, где, предположительно, находится артефакт, просто так не попасть. А обратно вообще выхода прямого нет. Вобщем вернуться оттуда можно только если поймать пространственную аномалию. Наш механик, Мишка Тесла, соорудил специальный сканер, который ловит такие аномалии. Правда, работает не стабильно, но Трус решил рискнуть.</text>
+    </string>
+    <string id="sad_cowboy_start_1111111">
+        <text>Продолжай...</text>
+    </string>
+    <string id="sad_cowboy_start_11111111">
+        <text>Трус так и не дождался, пока Тесла всё проверит - понадеялся на авось. Вобщем, туда-то он телепортировался. А затем связь пропала. И ни слуху, ни духу. Жив он или нет - неизвестно.</text>
+    </string>
+    <string id="sad_cowboy_start_1111111111">
+        <text>Ха... Мои парни не самоубийцы туда лезть...</text>
+    </string>
+    <string id="sad_cowboy_start_21">
+        <text>Чего?</text>
+    </string>
+    <string id="sad_cowboy_start_81">
+        <text>А вы больше не пытались попасть на плато?</text>
+    </string>
+    <string id="sad_cowboy_start_811">
+        <text>Не... Мы сейчас довольствуемся лёгкой добычей. Да и «героев» среди нас нет - по аномалиям скакать. Если ты готов рискнуть, то поговори с Мишкой Тесла насчёт сканера. Я предупрежу его.</text>
+    </string>
+    <string id="sad_grisha_after_fight_11">
+        <text>Слушаю.</text>
+    </string>
+    <string id="sad_grisha_after_fight_21">
+        <text>Не о чем нам с тобой разговаривать, раз уж ты сам по себе, то и иди своей дорогой.</text>
+    </string>
+    <string id="sad_grisha_after_fight_211">
+        <text>Понял.</text>
+    </string>
+    <string id="sad_grisha_after_fight_22">
+        <text>Ты хоть и сказал, что сам по себе, но, вроде как, помог.</text>
+    </string>
+    <string id="sad_grisha_after_fight_31">
+        <text>А, это ты... Мы тебя звали пообщаться, хотели тебя позвать на захват лагеря, а ты нас проигнорил. Так что иди своей дорогой - нам с тобой говорить не о чем.</text>
+    </string>
+    <string id="sad_grisha_after_fight_32">
+        <text>Блин, мужик, мы ж тебя звали, чтоб атаковать лагерь вместе, а ты нас проигнорил... Но помог. За это спасибо.</text>
+    </string>
+    <string id="sad_grisha_after_fight_41">
+        <text>А, здоров... Ну что тебе сказать? Не помог ты нам ни хрена... Хоть бы одного ублюдка убил.</text>
+    </string>
+    <string id="sad_grisha_after_fight_42">
+        <text>Вот и всё - нет больше Мутного. Я теперь здесь останусь, за порядком буду следить.</text>
+    </string>
+    <string id="sad_grisha_after_fight_43">
+        <text>Привет... Эх, жаль Гришу, хороший был сталкер.</text>
+    </string>
+    <string id="sad_grisha_after_fight_431">
+        <text>Всякое бывает - чай не на курорте отдыхаем.</text>
+    </string>
+    <string id="sad_grisha_after_fight_4311">
+        <text>И то верно... Зато Мутного больше нет... А я теперь здесь останусь за порядком следить.</text>
+    </string>
+    <string id="sad_grisha_dialog_0_0">
+        <text>Я получил сообщение, что вам нужна помощь.</text>
+    </string>
+    <string id="sad_grisha_dialog_0_1">
+        <text>Дело касается Мутного. После того, как ты сообщил о его делишках, сталкеры, естественно, пошли к нему на разбор. А эта гнида со своими дружками, бывшими «долговцами», перебил всех новичков у себя на базе. Вобщем Мутному деваться теперь некуда, вот он и держит оборону на базе новичков. Мы собираемся уничножить ублюдков. Ты с нами?</text>
+    </string>
+    <string id="sad_grisha_dialog_0_11">
+        <text>Да, я с вами.</text>
+    </string>
+    <string id="sad_grisha_dialog_0_111">
+        <text>Ну, как будешь готов, подходи. Только не тяни - долго ждать не будем.</text>
+    </string>
+    <string id="sad_grisha_dialog_0_12">
+        <text>Нет, это ваши проблемы. Я сам по себе.</text>
+    </string>
+    <string id="sad_grisha_dialog_0_2">
+        <text>На базе новичков саботаж. Недавно Мутного уличили в грабеже сталкеров, которые возвращались из центра долины с хабаром. А новички, не подождав нас, пошли к нему на разбор. А эта гнида со своими дружками, бывшими «долговцами», перебил всех зелёных... Вобщем Мутному теперь деваться некуда, вот он и держит оборону на базе новичков. Мы собираемся уничножить ублюдков. Ты с нами?</text>
+    </string>
+    <string id="sad_grisha_dialog_1_0">
+        <text>Я готов выдвигаться.</text>
+    </string>
+    <string id="sad_maxim_about_cowboy_1_0">
+        <text>Тут такое дело... Вобщем, ограбили меня. Да так по-тупому, что аж стыдно рассказывать...</text>
+    </string>
+    <string id="sad_maxim_about_cowboy_1_1">
+        <text>Да ну нафиг. И кто ж это здесь такое творит?</text>
+    </string>
+    <string id="sad_maxim_about_cowboy_1_11">
+        <text>Есть тут один хрен - Семён Ковбой.</text>
+    </string>
+    <string id="sad_maxim_about_cowboy_1_111">
+        <text>Да, брат, дела... Ты, давай, иди на базу. Там найди Володю Большого. Я предупрежу его, он поможет. А за снарягой обратись к торговцу и к технику, может у них работёнка какая будет. И ещё вот... Держи ключ от моего личного ящика на базе, там всякое барахло осталось - оно твоё.</text>
+    </string>
+    <string id="sad_nauchny_dialog_1_0">
+        <text>Рокфеллер сказал, что вам нужна помощь. Что вы здесь исследуете?</text>
+    </string>
+    <string id="sad_nauchny_dialog_1_1">
+        <text>По нашей теории в этой местности есть некие аномальные образования под землёй. Возможно, именно они спровоцировали мощнейший локальный выброс, который перекроил всю долину. Мы посылали в долину сталкеров со специально настроенными детекторами для обнаружения таких аномалий. Один из этих сталкеров нашёл место, где датчики детектора зашкаливали. Но он погиб по дороге к нам. Рокфеллер продал нам его КПК. Так что теперь у нас есть координаты этого места. По записям в КПК сталкера - это пещера, заваленная камнями. Что в этой пещере - неизвестно. Поэтому нам нужны опытные бойцы для сопровождения.</text>
+    </string>
+    <string id="sad_nauchny_dialog_1_11">
+        <text>А наёмников не вы, случайно, нанимали для охраны этих мест от «дурных» следопытов?</text>
+    </string>
+    <string id="sad_nauchny_dialog_1_111">
+        <text>Нет. Наши финансовые возможности этого не позволяют. Но мы не единственные, кто пытается найти здесь эти аномальные образования.</text>
+    </string>
+    <string id="sad_nauchny_dialog_1_1111">
+        <text>Я согласен помочь. Каков план действий?</text>
+    </string>
+    <string id="sad_nauchny_dialog_1_11111">
+        <text>Сначала нужно раздобыть врывчатку, что бы расчистить вход в пещеру. Поговорите с Рокфеллером - он в курсе дела.</text>
+    </string>
+    <string id="sad_nauchny_dialog_1_1112">
+        <text>У меня на это нет времени.</text>
+    </string>
+    <string id="sad_nauchny_dialog_2_0">
+        <text>Я достал взрывчатку.</text>
+    </string>
+    <string id="sad_nauchny_dialog_2_1">
+        <text>Отлично. Готов идти?</text>
+    </string>
+    <string id="sad_nauchny_dialog_2_11">
+        <text>Да, пойдём.</text>
+    </string>
+    <string id="sad_nauchny_dialog_2_12">
+        <text>Мне ещё нужно время на подготовку.</text>
+    </string>
+    <string id="sad_nauchny_dialog_2_13">
+        <text>У меня небольшое дело - туристов развлекаю. Закончу с ними и рванём.</text>
+    </string>
+    <string id="sad_nauchny_dialog_3_0">
+        <text>Готово. Я установил заряд.</text>
+    </string>
+    <string id="sad_nauchny_dialog_3_1">
+        <text>Ну, тогда взрывай.</text>
+    </string>
+    <string id="sad_nauchny_dialog_3_11">
+        <text>Хорошо.</text>
+    </string>
+    <string id="sad_nauchny_dialog_4_0">
+        <text>Что это было там в пещере? Что за лаборатория?</text>
+    </string>
+    <string id="sad_nauchny_dialog_4_1">
+        <text>Не могу сказать ничего конкретно. Я всегда считал мифом наличие здесь подземных лабораторий. Но, как мы видели, они существуют. В любом случае - сейчас слишком мало данных. Одно можно сказать наверняка - наёмники охраняют именно эти секреты.</text>
+    </string>
+    <string id="sad_nauchny_dialog_4_11">
+        <text>Вы собираетесь исследовать этот вопрос?</text>
+    </string>
+    <string id="sad_nauchny_dialog_4_111">
+        <text>Скорее всего - да. Но не в этой части модификации. Так как в этом эпизоде не планировалось раскрытий тайн Зоны. Да и у вас сейчас другие задачи. Возможно, вы когда-нибудь вернётесь в долину и будете исследовать именно этот вопрос. Кто знает - вероятно здесь уже будет всё по другому.</text>
+    </string>
+    <string id="sad_nauchny_dialog_4_1111">
+        <text>Млин, ну ты и жук. Такая завязка намечается, а ты заднюю включил.</text>
+    </string>
+    <string id="sad_nauchny_dialog_4_11111">
+        <text>Это не ко мне, это к разрабам.</text>
+    </string>
+    <string id="sad_nauchny_dialog_start_11">
+        <text>Слушаю.</text>
+    </string>
+    <string id="sad_nauchny_dialog_start_12">
+        <text>Вы нам очень помогли. На всякий случай я оставил вознаграждение для Вас у Рокфеллера.</text>
+    </string>
+    <string id="sad_nauchny_dialog_start_13">
+        <text>Слушаю.</text>
+    </string>
+    <string id="sad_ran_guard_first_talk_0">
+        <text>Чего тебе тут надо, сталкер?</text>
+    </string>
+    <string id="sad_ran_guard_first_talk_1">
+        <text>Ищу сталкеров, они, возможно, были здесь. Кто у вас главный - поговорить надо.</text>
+    </string>
+    <string id="sad_ran_guard_first_talk_11">
+        <text>Ну, считай, фейс-контроль ты прошёл. Главного зовут Семён Ковбой, он на втором этаже. Проходи. Только будь любезен - с оружием не балуй.</text>
+    </string>
+    <string id="sad_ran_guard_first_talk_111">
+        <text>Лады.</text>
+    </string>
+    <string id="sad_sher_gonets_dialog_0">
+        <text>Здоров.</text>
+    </string>
+    <string id="sad_sher_gonets_dialog_1">
+        <text>Костюм принёс?</text>
+    </string>
+    <string id="sad_sher_gonets_dialog_2">
+        <text>Да, забирай.</text>
+    </string>
+    <string id="sad_sher_gonets_dialog_3">
+        <text>Бывай.</text>
+    </string>
+    <string id="sad_sher_guard_0">
+        <text>Тебе чего тут надо, сталкер?</text>
+    </string>
+    <string id="sad_sher_guard_1">
+        <text>Я от Максимильяна.</text>
+    </string>
+    <string id="sad_sher_guard_11">
+        <text>Проходи, только с оружием не балуй.</text>
+    </string>
+    <string id="sad_sher_guard_111">
+        <text>Понял.</text>
+    </string>
+    <string id="sad_sher_guard_2">
+        <text>Ищу кое-кого. Кто у вас главный? Поговорить надо.</text>
+    </string>
+    <string id="sad_sher_guard_31">
+        <text>Главного зовут Радик. Проходи, если по делу, только с оружием не балуй.</text>
+    </string>
+    <string id="sad_sher_guard_311">
+        <text>Понял.</text>
+    </string>
+    <string id="sad_sher_radik_1_0">
+        <text>Я принёс вам еды.</text>
+    </string>
+    <string id="sad_sher_radik_1_1">
+        <text>Вот это спасибо. Ну, рассказывай, что хотел?</text>
+    </string>
+    <string id="sad_sher_radik_2_0">
+        <text>Я ищу сталкеров - Труса, Балбеса и Бывалого. Максимильян сказал, что они ушли с вами.</text>
+    </string>
+    <string id="sad_sher_radik_2_1">
+        <text>Да, нам было по пути, вот и скооперировались. Только один из них - Трус, откололся ещё до контейнеров. Он, вроде, за артефактом каким-то решил полезть. Договорились, мол, встретит на обратной дороге. Тут в то время спокойно было.\n А мы двинули дальше. Ну и напоролись на отряд наёмников. Там, млин, не отряд был, а целая армия, мать их. Бывалый с Фёдором шли впереди. Только и успели предупредить нас, как их взяли в плен. Сражаться там без понту было. Мы рванули назад. Один из моих ребят «уснул», а Балбес в «трамплин» попал. Позже мы ходили туда и нашли его КПК. Вот, держи.</text>
+    </string>
+    <string id="sad_sher_radik_2_11">
+        <text>Понятно.</text>
+    </string>
+    <string id="sad_sher_radik_2_111">
+        <text>Ты не подумай - мы своих не бросаем. Просто в той ситуации не было выбора. Все бы там полегли. Сейчас мы собираемся Фёдора и Бывалого из плена доставать. Ты с нами?</text>
+    </string>
+    <string id="sad_sher_radik_2_1111">
+        <text>Да, я с вами.</text>
+    </string>
+    <string id="sad_sher_radik_2_11111">
+        <text>Тогда вникай. Атаковать в лоб нельзя - ребят, скорее всего, убьют. Тут хитростью надо брать. Запустим к ним «трояна». Сечёшь?</text>
+    </string>
+    <string id="sad_sher_radik_2_111111">
+        <text>Рассказывай.</text>
+    </string>
+    <string id="sad_sher_radik_2_1111111">
+        <text>Надо достать снаряжение наёмника и КПК одного из них. Затем ты, переодевшись, проберёшься к ним на базу, найдёшь ребят и подашь нам сигнал к атаке. А пока мы будем атаковать лагерь, ты будешь охранять парней. Такой вот план.</text>
+    </string>
+    <string id="sad_sher_radik_2_11111111">
+        <text>Неплохой план.</text>
+    </string>
+    <string id="sad_sher_radik_2_111111111">
+        <text>Значит так, иди на базу сталкеров. Забери у Рокфеллера снаряжение наёмника.</text>
+    </string>
+    <string id="sad_sher_radik_2_1111111111">
+        <text>Фигасе, откуда у него такая снаряга?</text>
+    </string>
+    <string id="sad_sher_radik_2_11111111111">
+        <text>Это когда я с Максимильяном по рации связался, то попросил, что бы он заказал бандеролью один экземплярчик, на всякий случай. Пригодилось, как видишь.</text>
+    </string>
+    <string id="sad_sher_radik_2_1112">
+        <text>Нафиг надо - я сам по себе.</text>
+    </string>
+    <string id="sad_sher_radik_3_0">
+        <text>Я забрал КПК наёмника.</text>
+    </string>
+    <string id="sad_sher_radik_3_1">
+        <text>Вот и славненько. Теперь полный комплект. Сообщи, когда будешь готов. Сразу и двинем.</text>
+    </string>
+    <string id="sad_sher_radik_4_0">
+        <text>Я забрал снаряжение наёмника.</text>
+    </string>
+    <string id="sad_sher_radik_4_1">
+        <text>Отлично. Осталось найти КПК наёмника.</text>
+    </string>
+    <string id="sad_sher_radik_4_2">
+        <text>Есть идеи?</text>
+    </string>
+    <string id="sad_sher_radik_6_0">
+        <text>Я готов.</text>
+    </string>
+    <string id="sad_sher_radik_6_1">
+        <text>Скорее всего наёмники перекрыли проход к своей базе. Но взрывчатка сделает своё дело. Держи.</text>
+    </string>
+    <string id="sad_sher_radik_6_11">
+        <text>Поехали.</text>
+    </string>
+    <string id="sad_sher_radik_about_merc_0">
+        <text>Что здесь делают наёмники?</text>
+    </string>
+    <string id="sad_sher_radik_about_merc_1">
+        <text>А хрен их знает. Одно ясно - их заказчики не хотят, что бы сталкеры шатались в центре долины.</text>
+    </string>
+    <string id="sad_sher_radik_start_11">
+        <text>Кто такой? Чего надо?</text>
+    </string>
+    <string id="sad_sher_radik_start_111">
+        <text>Я от Максимильяна.</text>
+    </string>
+    <string id="sad_sher_radik_start_1111">
+        <text>А... Он передал, что ты харчей принесёшь.</text>
+    </string>
+    <string id="sad_sher_radik_start_11111">
+        <text>Так я и принёс, держи.</text>
+    </string>
+    <string id="sad_sher_radik_start_111111">
+        <text>Вот это спасибо. Ну, рассказывай, что хотел?</text>
+    </string>
+    <string id="sad_sher_radik_start_11112">
+        <text>Принесу.</text>
+    </string>
+    <string id="sad_sher_radik_start_1112">
+        <text>Да, он говорил о тебе. Вот только разговор у нас с тобой не получится, пока мои бойцы голодны. Принеси нам хавчика, тогда и поговорим.</text>
+    </string>
+    <string id="sad_sher_radik_start_11121">
+        <text>Хорошо, принесу.</text>
+    </string>
+    <string id="sad_sher_radik_start_11122">
+        <text>Нафига вы мне нужны - харчи вам таскать.</text>
+    </string>
+    <string id="sad_sher_radik_start_1121">
+        <text>Погоди... Максимильян говорил о тебе. Ты, вроде как, отказался помочь ему. Так вот и у меня нет желания разговаривать с тобой. Ферштейн?</text>
+    </string>
+    <string id="sad_sher_radik_start_11211">
+        <text>Ладно.</text>
+    </string>
+    <string id="sad_sher_radik_start_114">
+        <text>Я ищу трёх приятелей - Труса, Балбеса и Бывалого. Мне сказали, что они в вами ушли.</text>
+    </string>
+    <string id="sad_sher_radik_start_1141">
+        <text>Да, было дело. Вот только разговор у нас с тобой не получится, пока мои бойцы голодны. Принеси нам хавчика, тогда и поговорим.</text>
+    </string>
+    <string id="sad_sher_radik_start_11411">
+        <text>Вот, держи.</text>
+    </string>
+    <string id="sad_sher_radik_start_114111">
+        <text>Вот это спасибо. Ну, рассказывай, что хотел?</text>
+    </string>
+    <string id="sad_sher_radik_start_21">
+        <text>Блин, в животе урчит... Ты хавчик принёс?</text>
+    </string>
+    <string id="sad_sher_radik_start_2111">
+        <text>text in default</text>
+    </string>
+    <string id="sad_sher_radik_start_212">
+        <text>Я в процессе.</text>
+    </string>
+    <string id="sad_sher_radik_start_22">
+        <text>Слушаю.</text>
+    </string>
+    <string id="sad_sher_radik_start_31">
+        <text>Иди своей дорогой, чувак.</text>
+    </string>
+    <string id="sad_sher_radik_start_311">
+        <text>Ладно.</text>
+    </string>
+    <string id="sad_sher_radik_start_51">
+        <text>Слушаю.</text>
+    </string>
+    <string id="sad_sher_tech_start_11">
+        <text>Здоров. Я тут, вроде, техник. Серьёзных апгрейдов делать не могу, но если надо ствол починить, обращайся.</text>
+    </string>
+    <string id="sad_sher_tech_start_12">
+        <text>За то что еды нам притащил и согласился помочь выручить товарищей из беды, буду для тебя пока бесплатно ремонтировать.</text>
+    </string>
+    <string id="sad_sher_tech_start_21">
+        <text>Ну, что там у тебя?</text>
+    </string>
+    <string id="sad_sher_tech_start_22">
+        <text>Ну, сломалось что?</text>
+    </string>
+    <string id="sad_sim_13_after_11">
+        <text>Вроде прорвались. Радик погиб - теперь я за него.</text>
+    </string>
+    <string id="sad_sim_13_after_111">
+        <text>Что дальше?</text>
+    </string>
+    <string id="sad_sim_13_after_1111">
+        <text>Дальше переодевайся наёмником и иди прямо по тропинке к ним на базу. Там ищи наших ребят... Ну а потом и мы подтянемся.</text>
+    </string>
+    <string id="sad_sim_13_after_11111">
+        <text>Добро.</text>
+    </string>
+    <string id="sad_sim_13_after_21">
+        <text>Вроде прорвались.</text>
+    </string>
+    <string id="sad_sim_13_after_31">
+        <text>Ну... Чего ждёшь? Дуй на базу наёмников!</text>
+    </string>
+    <string id="sad_sim_7_gena_dialog_1_0">
+        <text>Оба-на, какие люди! Гена Непомнящий! А я тебя везде ищу. Техник на базе, Валерий Палыч, вообще по тебе соскучился... И по ящичку своему.</text>
+    </string>
+    <string id="sad_sim_7_gena_dialog_1_1">
+        <text>Это наши с ним личные дела. И, кстати, ящичек я припрятал. Это на тот случай, если ты дурковать собираешься. Так что не лезь не в своё дело.</text>
+    </string>
+    <string id="sad_sim_7_gena_dialog_1_11">
+        <text>Думаю, если прострелить тебе руку или ногу, то ты станешь более разговорчив. До скорого свидания.</text>
+    </string>
+    <string id="sad_sim_7_gena_dialog_2_0">
+        <text>Помоги...</text>
+    </string>
+    <string id="sad_sim_7_gena_dialog_2_1">
+        <text>Э, нет, братец... Ты сначала мне скажи куда ящичек приныкал. А я подумаю давать тебе аптечку или нет.</text>
+    </string>
+    <string id="sad_sim_7_gena_dialog_2_11">
+        <text>Ладно. Я закопал его тут недалеко. Дай аптечку, а я отведу тебя к месту...</text>
+    </string>
+    <string id="sad_sim_7_gena_dialog_2_111">
+        <text>Ладно, держи аптечку...</text>
+    </string>
+    <string id="sad_sim_7_gena_dialog_2_112">
+        <text>Нет у меня аптечки. Поваляйся здесь - я поищу.</text>
+    </string>
+    <string id="sad_sim_7_gena_dialog_2_2">
+        <text>Оба-на, какие люди! Гена Непомнящий! А я тебя везде ищу. Техник на базе вообще по тебе соскучился... И по ящичку своему. Ну так что, жить хочется?</text>
+    </string>
+    <string id="sad_sim_7_gena_dialog_2_3">
+        <text>Ща, разбежался.</text>
+    </string>
+    <string id="sad_sim_7_gena_dialog_2_4">
+        <text>Сначала дружков твоих добью.</text>
+    </string>
+    <string id="sad_sim_9_noy_about_merc_0">
+        <text>Откуда здесь наёмники?</text>
+    </string>
+    <string id="sad_sim_9_noy_about_merc_1">
+        <text>Наёмникики? А, это те, что тут недалеко базируются?</text>
+    </string>
+    <string id="sad_sim_9_noy_about_merc_11">
+        <text>Ну, да...</text>
+    </string>
+    <string id="sad_sim_9_noy_about_merc_111">
+        <text>Не, не слышал...</text>
+    </string>
+    <string id="sad_sim_9_noy_dialog_1_11">
+        <text>Ты кто такой?</text>
+    </string>
+    <string id="sad_sim_9_noy_dialog_1_111">
+        <text>Сталкер. Хожу, прогуливаюсь. А тут концерт - ты и монстры. Вот, остался до антракта.</text>
+    </string>
+    <string id="sad_sim_9_noy_dialog_1_1111">
+        <text>Слабоватый ты охотник... Как ты сюда вообще добрался? Не понимаю... Ну, ты иди, потренеруйся в тире. Как опыта наберёшься - приходи, поговорим... А сейчас мне с тобой говорить не о чем...</text>
+    </string>
+    <string id="sad_sim_9_noy_dialog_1_11111">
+        <text>Ладно...</text>
+    </string>
+    <string id="sad_sim_9_noy_dialog_1_1112">
+        <text>Да... Охотник ты - будь здоров! Настрелял монстров... Чего ищешь в этих краях?</text>
+    </string>
+    <string id="sad_sim_9_noy_dialog_1_11121">
+        <text>Ищу артефакт «Компас»... Не знаешь где его найти?</text>
+    </string>
+    <string id="sad_sim_9_noy_dialog_1_111211">
+        <text>Эх, вы... Артефакт - шмартефакт... Вот накроет Зона ещё одним выбросом, как в прошлый раз... Кому они будут нужны?... Ладно... Есть у меня «Компас», держи...</text>
+    </string>
+    <string id="sad_sim_9_noy_dialog_1_1112111">
+        <text>Спасибо.</text>
+    </string>
+    <string id="sad_sim_9_noy_dialog_1_11121111">
+        <text>Ну иди... А мне выспаться надо...</text>
+    </string>
+    <string id="sad_sim_9_noy_dialog_1_111211111">
+        <text>Спокойной ночи...</text>
+    </string>
+    <string id="sad_sim_9_noy_dialog_1_11122">
+        <text>Да много чего ищу. Например, артефакт «Сердце Оазиса»... Слыхал о таком?</text>
+    </string>
+    <string id="sad_sim_9_noy_dialog_1_111221">
+        <text>Эх, вы... Артефакт - шмартефакт... Вот накроет Зона ещё одним выбросом, как в прошлый раз... Кому они будут нужны?... Ладно... Я хоть и живу тут отшельником, но кое-что в артефактах понимаю... Так вот, держи артефакт «Компас»... Чутьё мне подсказывает, что с его помощью ты найдёшь «Сердце Оазиса»...</text>
+    </string>
+    <string id="sad_sim_9_noy_dialog_1_11123">
+        <text>Да так, заскочил монстров пострелять...</text>
+    </string>
+    <string id="sad_sim_9_noy_dialog_1_111231">
+        <text>Ну, пострелял? А теперь иди... А мне выспаться надо...</text>
+    </string>
+    <string id="sad_sim_9_noy_dialog_1_112">
+        <text>Дык виделись уже... Сталкер я...</text>
+    </string>
+    <string id="sad_sim_9_noy_dialog_1_2">
+        <text>Чего?</text>
+    </string>
+    <string id="sad_sim_9_noy_dialog_2_0">
+        <text>Слушай, а у тебя нет брата близнеца на Затоне?</text>
+    </string>
+    <string id="sad_sim_9_noy_dialog_2_1">
+        <text>Все люди братья. На Затоне или здесь - всё равно.</text>
+    </string>
+    <string id="sad_start_men_dialog_11">
+        <text>Ну, привет... Видишь, как бывает... Был Вовка и нет Вовки...</text>
+    </string>
+    <string id="sad_start_men_dialog_111">
+        <text>Что случилось?</text>
+    </string>
+    <string id="sad_start_men_dialog_1111">
+        <text>Видишь, вон, аномалия. Там пещера. Из этой пещеры ещё никто не возвращался. Поговаривают, мол, артефакт там какой-то жирный находится. Вот и лезут туда отчаянные головы... Вовка тоже решил рискнуть... Нет больше Вовки...</text>
+    </string>
+    <string id="sad_start_men_dialog_11111">
+        <text>Да - это не курорт... А я вот троих приятелей ищу - Труса, Балбеса и Бывалого. Не встречал их?</text>
+    </string>
+    <string id="sad_start_men_dialog_111111">
+        <text>Нет, не видел. Ты у Мутного спроси. Если уж кто сюда притопал - мимо его базы не пройдёт.</text>
+    </string>
+    <string id="sad_start_men_dialog_1111111">
+        <text>Спасибо. Пока.</text>
+    </string>
+    <string id="sad_start_men_dialog_21">
+        <text>Слушаю.</text>
+    </string>
+    <string id="sad_tesla_dialog_0_0">
+        <text>Привет, я от Семёна Ковбоя.</text>
+    </string>
+    <string id="sad_tesla_dialog_0_1">
+        <text>А, ты насчёт сканера? Есть две проблемы. Первая - для стабильной работы сканера нужен артефакт «Компас», которого у меня нет. А без «Компаса» нет гарантии, что телепортация пройдёт корректно.</text>
+    </string>
+    <string id="sad_tesla_dialog_0_11">
+        <text>А вторая?</text>
+    </string>
+    <string id="sad_tesla_dialog_0_111">
+        <text>Был у нас сталкер - Олег Моталыга. Не сложились у нас с ним отношения. Вечно был чем-то недоволен - то апгрейд не тот, то детектор не так настроен... В один прекрасный момент свинтил он со сканера микросхему, да свалил с ней в неизвестном направлении. Вобщем, сделал гадость напоследок. Кстати, не только мне одному. Семён, вон, вообще за его голову награду назначил... \n Так что я пока заморозил работу по сканеру.</text>
+    </string>
+    <string id="sad_tesla_dialog_0_1111">
+        <text>Если я достану «Компас» и микросхему, сканер будет работать?</text>
+    </string>
+    <string id="sad_tesla_dialog_0_11111">
+        <text>А куда ж он денется? Я лично пойду с тобой и буду следить за работой сканера, если ты решишься прыгнуть.</text>
+    </string>
+    <string id="sad_tesla_dialog_1_0">
+        <text>Я принёс недостающие детали для сканера.</text>
+    </string>
+    <string id="sad_tesla_dialog_1_1">
+        <text>Давай их сюда... Настройка сканера займёт некоторое время, но на это время и для тебя дело найдётся.</text>
+    </string>
+    <string id="sad_tesla_dialog_1_11">
+        <text>Что за дело?</text>
+    </string>
+    <string id="sad_tesla_dialog_1_111">
+        <text>Видишь ли, мне придётся пойти с тобой, что бы следить за работой сканера. А места там... мягко говоря... стрёмные... Мутантов развелось - мама не горюй. Ты сходи, зачисти местность. Координаты я тебе уже скинул... И на вот, держи ствол - пригодится.</text>
+    </string>
+    <string id="sad_tesla_dialog_2_0">
+        <text>Всё чисто - мутантов нет. Можно выдвигаться.</text>
+    </string>
+    <string id="sad_tesla_dialog_2_1">
+        <text>Это хорошо... А я настроил сканер... Тяжёлый, зараза... Сам понимаешь - это твоя ноша. Ну что, двинули?</text>
+    </string>
+    <string id="sad_tesla_dialog_2_2">
+        <text>Пойдём.</text>
+    </string>
+    <string id="sad_turist_cmon_0">
+        <text>Пошли за мной.</text>
+    </string>
+    <string id="sad_turist_info_health_0">
+        <text>Возьми аптечку, подлечись.</text>
+    </string>
+    <string id="sad_turist_info_health_1">
+        <text>Спасибо.</text>
+    </string>
+    <string id="sad_turist_locman_1_0">
+        <text>Привет, чем занимаешься?</text>
+    </string>
+    <string id="sad_turist_locman_1_1">
+        <text>Да вот, туристов привёл. Не желаешь поводить их тут по злачным местам?</text>
+    </string>
+    <string id="sad_turist_locman_1_11">
+        <text>Цена вопроса?</text>
+    </string>
+    <string id="sad_turist_locman_1_111">
+        <text>Да бабки у них водятся.</text>
+    </string>
+    <string id="sad_turist_locman_1_1111">
+        <text>Что надо делать?</text>
+    </string>
+    <string id="sad_turist_locman_1_11111">
+        <text>Ребята ищут острых ощущений - зверья пострелять, на аномальные места посмотреть. Им нужен человек, который знает здешние места.</text>
+    </string>
+    <string id="sad_turist_locman_1_111111">
+        <text>Я согласен.</text>
+    </string>
+    <string id="sad_turist_locman_1_1111111">
+        <text>Постарайся сам мутантов не убивать, а только ранить. От того, сколько тварей туристы настреляют, зависит твой заработок. Да проведи их к аномалиям местным - пусть посмотрят. И не забывай переодически подлечивать их после боя - если кто из них помрёт, то, естественно, денег от него ты хрен получишь. Как нагуляетесь, приводи их ко мне - я буду ждать здесь.</text>
+    </string>
+    <string id="sad_turist_locman_1_11111111">
+        <text>Понял.</text>
+    </string>
+    <string id="sad_turist_locman_1_12">
+        <text>У меня не на это времени.</text>
+    </string>
+    <string id="sad_turist_locman_2_0">
+        <text>Всё, нагулялись - уводи их на Затон.</text>
+    </string>
+    <string id="sad_turist_locman_2_11">
+        <text>...</text>
+    </string>
+    <string id="sad_turist_locman_2_111">
+        <text>Ладно, этих я увожу. Может через сутки ещё приведу. Будь здоров.</text>
+    </string>
+    <string id="sad_turist_locman_2_1111">
+        <text>Пока.</text>
+    </string>
+    <string id="sad_turist_stay_here_0">
+        <text>Ждите здесь.</text>
+    </string>
+    <string id="sad_turist_step_back_0">
+        <text>Отойди, дружище - мешаешь пройти.</text>
+    </string>
+    <string id="sad_turist_vvodnaya_0">
+        <text>Слушай внимательно - даю всем вводную.</text>
+    </string>
+    <string id="sad_turist_vvodnaya_1">
+        <text>Слушаю.</text>
+    </string>
+    <string id="sad_turist_vvodnaya_11">
+        <text>Не атаковать, пока я не начну.</text>
+    </string>
+    <string id="sad_turist_vvodnaya_111">
+        <text>Ясно. Но если в нас будут стрелять, то мы не будем просто так стоять - мы не солдаты и твои приказы выполнять беспрекословно не будем.</text>
+    </string>
+    <string id="sad_turist_vvodnaya_12">
+        <text>Игнорировать бой, если противник далеко.</text>
+    </string>
+    <string id="sad_turist_vvodnaya_121">
+        <text>Насколько далеко?</text>
+    </string>
+    <string id="sad_turist_vvodnaya_1211">
+        <text>30 метров.</text>
+    </string>
+    <string id="sad_turist_vvodnaya_1212">
+        <text>50 метров.</text>
+    </string>
+    <string id="sad_turist_vvodnaya_15">
+        <text>Если я буду убегать, значит там "жопа". Игнорируйте врагов и бегом за мной.</text>
+    </string>
+    <string id="sad_turist_vvodnaya_151">
+        <text>Постараемся.</text>
+    </string>
+    <string id="sad_turist_vvodnaya_16">
+        <text>Отбой команды «убегать со мной».</text>
+    </string>
+    <string id="sad_turist_vvodnaya_161">
+        <text>Ясно.</text>
+    </string>
+    <string id="sad_turist_vvodnaya_19">
+        <text>Отменяю все установки. Если видите врага - стреляйте.</text>
+    </string>
+    <string id="sad_uni_about_stalkers_0">
+        <text>Я ищу трёх сталкеров - Труса, Балбеса и Бывалого. Видел их?</text>
+    </string>
+    <string id="sad_uni_about_stalkers_1">
+        <text>Не... Не видел. Ты у Мутного спроси - он тут старожил. Через его базу многие сталкеры проходят. Лови его координаты.</text>
+    </string>
+    <string id="sad_vasya_dialog_11">
+        <text>Спасибо, дружище, выручил. А я уже думал всё - кердык. В благодарность открою тебе секрет - ближе к центру долины есть куча контейнеров, мимо не пройдёшь, там дерево есть, прям по центру. Так вот на этом дереве рюкзачок лежит с добрым хабаром.</text>
+    </string>
+    <string id="sad_vasya_dialog_11121">
+        <text>Гуляй где-нибудь подальше отсюда.</text>
+    </string>
+    <string id="sad_vasya_dialog_111211">
+        <text>Понял.</text>
+    </string>
+    <string id="sad_vasya_dialog_21">
+        <text>А, спаситель.</text>
+    </string>
+    <string id="sad_vasya_flesh_dialog_0">
+        <text>Флешка Фёдора у тебя? Если да, что отдай мне без лишних вопросов и разойдёмся с миром.</text>
+    </string>
+    <string id="sad_vasya_flesh_dialog_1">
+        <text>Держи.</text>
+    </string>
+    <string id="sad_vasya_stalkers_dialog_0">
+        <text>Ты, случайно, не встречал тут сталкеров - Труса, Балбеса или Бывалого?</text>
+    </string>
+    <string id="sad_vasya_stalkers_dialog_1">
+        <text>Нет, не встречал.</text>
+    </string>
+    <string id="sad_volodya_after_11">
+        <text>Ну теперь мы тут будем базироваться.</text>
+    </string>
+    <string id="sad_volodya_after_12">
+        <text>Жаль, что Володя погиб... Хороший был человек...</text>
+    </string>
+    <string id="sad_volodya_after_21">
+        <text>Слушаю.</text>
+    </string>
+    <string id="sad_volodya_dialog_1_0">
+        <text>Привет, я от Максимильяна.</text>
+    </string>
+    <string id="sad_volodya_dialog_1_1">
+        <text>Да... Так что, хулиганит Ковбой?</text>
+    </string>
+    <string id="sad_volodya_dialog_1_11">
+        <text>Угу... Я залез в аномалию, нашёл артефакт. А когда вернулся они застали меня врасплох...</text>
+    </string>
+    <string id="sad_volodya_dialog_1_111">
+        <text>Ну, брат, нельзя здесь быть таким доверчивым... Ладно, ближе к делу. У нас с ребятами уже давно руки чешутся кому-нибудь зад надрать, а то сидим здесь, как в санатории - скукотища. Тем более, что место там хорошее. А теперь и причина есть нам туда сунуться. Сообщи когда будешь готов, сразу и двинем.</text>
+    </string>
+    <string id="sad_volodya_dialog_2_0">
+        <text>Я готов выдвигаться.</text>
+    </string>
+    <string id="sad_volodya_dialog_3_0">
+        <text>Здоров. Ты теперь здесь за главного?</text>
+    </string>
+    <string id="sad_volodya_dialog_3_1">
+        <text>Я бы так не сказал. Но если какие-то проблемы, обращайся.</text>
+    </string>
+    <string id="sad_volodya_dialog_3_11">
+        <text>Да, ограбил меня товарищ Ковбой со своим стадом. Вот ищу желающих занять его базу.</text>
+    </string>
+    <string id="sad_volodya_dialog_3_111">
+        <text>Ну, дела... У нас с ребятами уже давно руки чешутся кому-нибудь зад надрать, а то сидим здесь, как в санатории - скукотища. Тем более, что место там хорошее. А теперь и причина есть нам туда сунуться. Сообщи когда будешь готов, сразу и двинем.</text>
+    </string>
+
+	<!-- SAD_ATR_DIALOG -->
+
+	<string id="atr_actor_start">
+		<text>Хочу изменить свойства артефакта.</text>
+	</string>
+	<string id="atr_trader_start">
+		<text>Какие именно изменения Вы хотите сделать?</text>
+	</string>
+	<string id="atr_actor_exit">
+		<text>Я передумал.</text>
+	</string>
+	<string id="atr_radiation_general">
+		<text>Убрать радиоактивную составляющую.</text>
+	</string>
+	<string id="atr_mixer_general">
+		<text>Спаять артефакты.</text>
+	</string>
+	<string id="atr_power_general">
+		<text>Усилить свойства.</text>
+	</string>
+	<string id="atr_next_time_general">
+		<text>В другой раз.</text>
+	</string>
+	<string id="atr_radiation_trader_1">
+		<text>Для проведения этой процедуры мне понадобится местный радиоактивный гриб. Он у Вас есть? Нет...</text>
+	</string>
+	<string id="atr_radiation_trader_2">
+		<text>Я так понимаю, что радиоактивный гриб у Вас есть.</text>
+	</string>
+	<string id="atr_radiation_trader_3">
+		<text>Давайте посмотрим какие из ваших артефактов я могу, так сказать, прокачать.</text>
+	</string>
+	<string id="atr_radiation_trader_4">
+		<text>Давайте посмотрим... Хм... К сожалению, у Вас нет артефактов, свойства которых я могу изменить.</text>
+	</string>
+	<string id="atr_mixer_trader">
+		<text>В местных условиях я могу делать не любые спайки. Давайте посмотрим, какие артефакты у Вас есть.</text>
+	</string>
+	<string id="atr_mixer_trader_x">
+		<text>В этом эпизоде модификации данная услуга не работает.</text>
+	</string>
+	<string id="atr_power_trader">
+		<text>Не всякий артефакт я могу усилить. Давайте посмотрим, какие артефакты у Вас есть.</text>
+	</string>
+	<string id="atr_trader_come_later">
+		<text>Приходите часа через три. Если хотите, можете пока отдохнуть на диванчике.</text>
+	</string>
+
+    <string id="zat_a2_stalker_barmen_sad_0">
+        <text>Привет, Борода, чего звал?</text>
+    </string>
+    <string id="zat_a2_stalker_barmen_sad_1">
+        <text>Привет, Макс. Проблемы нарисовались. Пришел заказ на один артефакт - Сердце Оазиса называется, стал искать инфу по нему, и мне сказали, что возможно он находится в Долине Шорохов. Это такая территория, вся в трещинах, которые образовались после Большого Выброса. Так вот, на этот серьезный заказ я отправил своих друзей: Труса, Балбеса и Бывалого, но они пропали.</text>
+    </string>
+    <string id="zat_a2_stalker_barmen_sad_2">
+        <text>Да, дела. Что делать собираешься?</text>
+    </string>
+    <string id="zat_a2_stalker_barmen_sad_3">
+        <text>Поиски организовывать, нужно отыскать друзей и сам артефакт. Возьмёшься за работу?</text>
+    </string>
+    <string id="zat_a2_stalker_barmen_sad_4">
+        <text>Да, берусь.</text>
+    </string>
+    <string id="zat_a2_stalker_barmen_sad_41">
+        <text>Нет, у меня много дел.</text>
+    </string>
+    <string id="zat_a2_stalker_barmen_sad_5">
+        <text>Жаль. Но ты подходи, если что.</text>
+    </string>
+    <string id="zat_a2_stalker_barmen_sad_51">
+        <text>Хорошо, всю инфу кидаю тебе на ПДА. Подойди к Лоцману, он тебя отведёт в Долину Шорохов и даст наводку, у кого там можно будет поспрашивать про моих друзей.</text>
+    </string>
+    <string id="zat_a2_stalker_barmen_sad_6">
+        <text>К Лоцману, говоришь? Хорошо, сейчас пообщаюсь.</text>
+    </string>
+    <string id="zat_a2_stalker_barmen_sad_give_oasis_0">
+        <text>Борода, я по поводу заказа. Нашел я Сердце Оазиса. Вот, забирай.</text>
+    </string>
+    <string id="zat_a2_stalker_barmen_sad_give_oasis_1">
+        <text>Чудная штука, никогда такого не видал. Вот, держи награду.</text>
+    </string>
+    <string id="zat_a2_stalker_barmen_sad_give_oasis_2">
+        <text>Спасибо. Если будет еще работа - обращайся.</text>
+    </string>
+    <string id="zat_a2_stalker_barmen_sad_give_pda_0">
+        <text>Борода, у меня новости. Нашел я твоих товарищей - все мертвы. Опасное там место, зря ты их туда отправил.</text>
+    </string>
+    <string id="zat_a2_stalker_barmen_sad_give_pda_1">
+        <text>Эх... Как же так-то? Это же лучшие сталкеры, все опасные задания выполняли образцово и без потерь!</text>
+    </string>
+    <string id="zat_a2_stalker_barmen_sad_give_pda_2">
+        <text>Да, не повезло ребятам. Места там дикие, и люди - мрази, за копейку готовы предать. Вот, держи их ПДА. Может, найдешь там что интересное. </text>
+    </string>
+    <string id="zat_a2_stalker_barmen_sad_give_pda_3">
+        <text>Ладно, спасибо за работу, сталкер. Держи награду. </text>
+    </string>
+    <string id="zat_a2_stalker_barmen_sad_give_pda_4">
+        <text>Спасибо, Борода, если что - обращайся. </text>
+    </string>
+
+    <string id="zat_b215_stalker_guide_sad_0">
+        <text>Привет, Лоцман. Борода меня к тебе направил. Нужно отвести меня в Долину Шорохов. Он ещё сказал, что ты мне передашь информацию, с кем можно будет там поговорить.</text>
+    </string>
+    <string id="zat_b215_stalker_guide_sad_1">
+        <text>Значит, в Долину Шорохов надо? Борода мне уже всё перекинул на ПДА, я знаю, что ты ищешь. Ну что, готов идти? С тебя две тыщи.</text>
+    </string>
+    <string id="zat_b215_stalker_guide_sad_2">
+        <text>Согласен, пошли.</text>
+    </string>
+    <string id="zat_b215_stalker_guide_sad_21">
+        <text>У меня нету столько.</text>
+    </string>
+    <string id="zat_b215_stalker_guide_sad_3">
+        <text>Как будет - подходи.</text>
+    </string>
+
+</string_table>

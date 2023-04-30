@@ -1,0 +1,40 @@
+[logic]
+active = sr_idle@cut_scene_night_shooter
+
+[sr_idle@cut_scene_night_shooter]
+on_info = {+blck_val_stavrid_send_actor_to_hutor} sr_idle@cut_scene_night_shooter_1 %=RavenMemmoryStart =run_postprocess(black:2525:true) =set_game_time(02:53)%
+
+[sr_idle@cut_scene_night_shooter_1]
+on_timer = 500 | sr_idle@cut_scene_night_shooter_2 %=show_text_in_escape(time_skip_escape) =create_squad(blck_val_stalker_hutor_squad:blck_val_hutor_quest) =create_squad(blck_val_hutor_quest_zasada_squad:blck_val_hutor_quest)%
+
+[sr_idle@cut_scene_night_shooter_2]
+on_timer = 2000 | sr_idle@cut_scene_night_shooter_3 %=teleport_actor(actor_night_shoot_hutor_walk:actor_night_shoot_hutor_look)%
+
+[sr_idle@cut_scene_night_shooter_3]
+on_timer = 2000 | sr_idle@cut_scene_night_shooter_4 %=stop_postprocess(2525) =esc_activate_weapon(wpn_svd_nimble)%
+
+[sr_idle@cut_scene_night_shooter_4]
+on_timer = 500 | sr_idle@cut_scene_night_shooter_5 %=enable_ui +blck_val_actor_wait_bandit_in_roof%
+
+[sr_idle@cut_scene_night_shooter_5]
+on_timer = 2000 | sr_idle@cut_scene_night_shooter_6 %=blck_val_stalker_hutor_1_wait_counter_pda%
+
+[sr_idle@cut_scene_night_shooter_6]
+on_timer = 4500 | sr_idle@cut_scene_night_shooter_7 %=blck_val_stalker_hutor_2_wait_counter_pda%
+
+[sr_idle@cut_scene_night_shooter_7]
+on_timer = 5000 | sr_idle@cut_scene_night_shooter_8 %+blck_val_bandit_go_to_hutor_quest%
+
+[sr_idle@cut_scene_night_shooter_8]
+on_timer = 500 | sr_idle@cut_scene_night_shooter_9 %=blck_val_stalker_hutor_1_wait_counter_pda_1%
+
+[sr_idle@cut_scene_night_shooter_9]
+on_timer = 3500 | sr_idle@cut_scene_night_shooter_10 %=blck_val_stalker_hutor_2_wait_counter_pda_1%
+
+[sr_idle@cut_scene_night_shooter_10]
+on_info = {+blck_val_bandit_hutor_see_actor} sr_idle@cut_scene_night_shooter_11
+
+[sr_idle@cut_scene_night_shooter_11]
+on_timer = 2000 | sr_idle@nil %=blck_val_stalker_hutor_1_wait_counter_pda_2%
+
+[sr_idle@nil]

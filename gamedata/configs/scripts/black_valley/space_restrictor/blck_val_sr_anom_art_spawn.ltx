@@ -1,0 +1,10 @@
+[logic] 
+active = sr_idle@spawn_art
+
+[sr_idle@spawn_art]
+on_info = {+blck_val_miklucha_first_quest_give -blck_val_art_kolobok_spawn_end} sr_idle@spawn_bandit %=blck_val_art_kolobok_spawn +blck_val_art_kolobok_spawn_end%
+
+[sr_idle@spawn_bandit]
+on_info = {=actor_has_item(af_fuzz_kolobok) -blck_val_spawn_bandit_end} sr_idle@nil %=spawn_object(blck_val_bandit_gop_stop:blck_val_bandit_gop_stop_spawn) =spawn_object(blck_val_bandit_gop_stop_1:blck_val_bandit_gop_stop_1_spawn) =spawn_object(blck_val_bandit_gop_stop_2:blck_val_bandit_gop_stop_2_spawn) +blck_val_spawn_bandit_end%
+
+[sr_idle@nil]

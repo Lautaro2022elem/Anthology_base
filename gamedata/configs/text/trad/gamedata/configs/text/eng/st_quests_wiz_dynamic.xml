@@ -1,0 +1,113 @@
+<?xml version="1.0" encoding="windows-1251" ?>
+<string_table>
+
+	<!-- val_a4_stalker_pianist -->
+	<string id="val_a4_stalker_pianist_task_1_name">
+	<text>Find %s for the Pianist</text>
+</string>
+<string id="val_a4_stalker_pianist_task_1_text">
+	<text>You need to bring tools to the Pianist so that he can upgrade the equipment.</text>
+</string>
+<string id="val_a4_stalker_pianist_task_1_about">
+	<text>You know, bro, I'm actually a pretty good technician. I can fix both weapons and armor, and even do some upgrades! Well, I would, if the tools were normal. But where can you get them here? Maybe you can help me get a simple set, huh?</text>
+</string>
+<string id="val_a4_stalker_pianist_task_1_fetch_about">
+	<text>I need a set of tools for rough work. It should have tools and oils for working with weapons. If you can get it, I'll be grateful, maybe even pay you!.. Probably.</text>
+</string>
+<string id="val_a4_stalker_pianist_task_1_fetch_finish">
+	<text>Great, dude! Oh, sorry, I have nothing to pay you with. But I can give you a good discount!</text>
+</string>
+<string id="val_a4_stalker_pianist_task_2_name">
+	<text>Find %s for the Pianist</text>
+</string>
+<string id="val_a4_stalker_pianist_task_2_text">
+	<text>You need to bring tools for delicate work to the Pianist. He needs a more complete set to perform more complex equipment upgrades.</text>
+</string>
+<string id="val_a4_stalker_pianist_task_2_about">
+	<text>Hey, dude, if you agree to get me a more complete set, you'll get an even bigger discount. Will you help me, pal?</text>
+</string>
+<string id="val_a4_stalker_pianist_task_2_fetch_about">
+	<text>I need tools for delicate work. It should have everything I need. You'll be my brother if you get it for me!</text>
+</string>
+<string id="val_a4_stalker_pianist_task_2_fetch_finish">
+	<text>Wow, damn, thanks, bro! Now I'm definitely going to get rich. Damn it, I'm going to be successful!.. Well, if I don't miss this chance. But for now, I can't offer you anything better than a discount. Sorry, pal.</text>
+</string>
+<string id="val_a4_stalker_pianist_task_3_name">
+	<text>Find %s for the Pianist</text>
+</string>
+<string id="val_a4_stalker_pianist_task_3_text">
+	<text>You need to bring %s to the Pianist. He needs a unique set to perform even more complex equipment upgrades.</text>
+</string>
+<string id="val_a4_stalker_pianist_task_3_about">
+	<text>Hey, kid, if you find something worthwhile, I'll give you a discount!</text>
+</string>
+	<string id="val_a4_stalker_pianist_task_3_fetch_about">
+		<text>I need calibration tools. They should have everything I need. You'd be like a brother to me if you fetch them!</text>
+</string>
+<string id="val_a4_stalker_pianist_task_3_fetch_finish">
+	<text>No way...! Oh, thanks, buddy! Now I'm definitely going to get rich. Damn it, I'll finally become successful!... If, of course, I don't miss this opportunity. But for now, I can't offer you anything better than a discount. Sorry, pal.</text>
+</string>
+<!-- wiz_chip -->
+<string id="wiz_chip_task_1_name">
+	<text>%s for Chip</text>
+</string>
+<string id="wiz_chip_task_1_text">
+	<text>You need to find a set and take it to medic Chip.</text>
+</string>
+<string id="wiz_chip_task_1_about">
+	<text>I need a good set of medical tools. I can quickly fix minor injuries, but I don't have anything for more serious wounds.</text>
+</string>
+<string id="wiz_chip_task_1_fetch_about">
+	<text>I need a good set of medical tools. I can quickly fix minor injuries, but I don't have anything for more serious wounds.</text>
+</string>
+<string id="wiz_chip_task_1_fetch_finish">
+	<text>Thank you, my friend! These tools will save many lives. Thanks again for the tools.</text>
+</string>
+<!-- wiz_ivanich -->
+<string id="wiz_ivanich_task_1_name">
+	<text>Find %s for Ivanich</text>
+</string>
+<string id="wiz_ivanich_task_1_text">
+	<text>You need to bring tools to Ivanich so he can upgrade the equipment.</text>
+</string>
+<string id="wiz_ivanich_task_1_about">
+	<text>You know, brother, I'm actually a pretty good technician. I can fix weapons and armor, and even do some upgrades! Well, I would, if I had decent tools. But where can you get them around here? Maybe you can help me get a simple set, huh?</text>
+</string>
+<string id="wiz_ivanich_task_1_fetch_about">
+	<text>I need a set of tools for rough work. It should have tools and oils for working with weapons. If you can get it for me, I'll be grateful, I might even pay you!.. Probably.</text>
+</string>
+<string id="wiz_ivanich_task_1_fetch_finish">
+	<text>Great, man! Oh, sorry, I have nothing to pay you with. But I can give you a good discount!</text>
+</string>
+<string id="wiz_ivanich_task_2_name">
+	<text>Find %s for Ivanich</text>
+</string>
+<string id="wiz_ivanich_task_2_text">
+	<text>You need to bring Ivanich tools for delicate work. He needs a more complete set to carry out more complex equipment upgrades.</text>
+</string>
+	<string id="wiz_ivanich_task_2_about">
+		<text>Hey dude, if you agree to get me a more complete set, you'll get an even bigger discount. Will you help me out, buddy?</text>
+	</string>
+<string id="wiz_ivanich_task_2_fetch_about">
+		<text>I need tools for delicate work. There should be everything I need in there. You'll be like a brother to me if you get it for me!</text>
+	</string>
+<string id="wiz_ivanich_task_2_fetch_finish">
+		<text>Wow, thanks bro! Now I'm definitely going to get rich. Damn, I'm going to be successful!... If, of course, I don't miss this opportunity. But for now, I can't offer you anything better than a discount. Sorry, buddy.</text>
+	</string>
+<string id="wiz_ivanich_task_3_name">
+		<text>Find %s for Ivanich</text>
+	</string>
+<string id="wiz_ivanich_task_3_text">
+		<text>Ivanich needs %s. He needs a unique set to perform even more complex equipment upgrades.</text>
+	</string>
+<string id="wiz_ivanich_task_3_about">
+		<text>Hey, guy, if you find something worthwhile, I'll give you a discount!</text>
+	</string>
+<string id="wiz_ivanich_task_3_fetch_about">
+		<text>I need tools for calibration. There should be everything I need in them. You'll be like a brother to me if you get them for me!</text>
+	</string>
+<string id="wiz_ivanich_task_3_fetch_finish">
+		<text>Holy sh*t, thanks man! Now I'm definitely going to get rich. Damn, I'm going to be successful!... If, of course, I don't miss this opportunity. But for now, I can't offer you anything better than a discount. Sorry, friend.</text>
+	</string>
+
+</string_table>

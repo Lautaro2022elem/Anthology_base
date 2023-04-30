@@ -1,0 +1,54 @@
+[logic]
+active = sr_idle@10	;wait_for_start
+
+[sr_idle@wait_for_start]
+on_info = {+sad_sim_7_gena_dead} sr_idle@nil %+sad_gena_switch_to_ban%, {+sad_actor_enemy_to_someone} sr_idle@nil %+sad_gena_switch_to_ban%
+
+[sr_idle@10]
+on_info = {+sad_sim_7_gena_healed} sr_idle@cut_10 %=run_postprocess(fade_in:9677) =disable_ui%
+on_info3 = {+sad_sim_7_gena_dead} sr_idle@nil %+sad_gena_switch_to_ban%
+on_info9 = {+sad_actor_enemy_to_someone} sr_idle@nil %+sad_gena_switch_to_ban%
+
+; ************************************************************************************************************************************************ Раскопки
+[sr_idle@cut_10]
+on_timer = 600 | sr_idle@cut_20 %=teleport_actor(sad_gena_zakop_actor_place) =run_postprocess(black:9678) =remove_squad(sad_sim_7_gena_squad)%
+
+[sr_idle@cut_20]
+on_timer = 500 | sr_idle@cut_25 %=create_cutscene_actor_with_weapon(sad_sim_7_cs_actor:sad_gena_zakop_actor_start_walk:0:270:3)%
+
+[sr_idle@cut_25]
+on_timer = 1500 | sr_idle@cut_30 %=create_squad(sad_sim_7_gena_after_squad:sad_sim_7)%
+
+[sr_idle@cut_30]
+on_timer = 1500 | sr_cutscene@1 %=stop_postprocess(9678) =stop_postprocess(9677) +sad_gena_zakop_cutscene_start% ;=sad_remove_npc_weapons(sad_sim_7_stalker_gena)%
+
+[sr_cutscene@1]
+point = sad_gena_zakop_actor_place
+look = sad_gena_zakop_actor_look
+cam_effector = scenario_cam\sad\sad_cs_zakop_1
+global_cameffect = true
+enable_ui_on_end = false
+outdoor = true
+fov = 50
+on_signal = cameff_end | sr_idle@cut_100 %=run_postprocess(black:9679)%
+;on_signal2 = cam_effector_stop | sr_idle@cut_100 %=run_postprocess(black:9679)%
+on_info = {+sad_gena_zakop_stop_camera_1} %=stop_sr_cutscene%
+
+[sr_idle@cut_100]
+on_timer = 300 | {=story_object_exist(sad_gena_zakop_zatychka)} sr_idle@cut_110 %=destroy_object(story:sad_gena_zakop_zatychka)%, sr_idle@cut_110
+
+[sr_idle@cut_110]
+on_info = {=story_object_exist(sad_sim_7_cs_actor)} sr_idle@cut_120 %=destroy_object(story:sad_sim_7_cs_actor)%, sr_idle@cut_120
+
+[sr_idle@cut_120]
+on_info = sr_idle@cut_end %=teleport_actor(sad_gena_zakop_cs_actor_walk:sad_gena_zakop_cs_actor_look) =sad_remove_npc_item(sad_sim_7_stalker_gena:sad_saper_lopata)%
+
+[sr_idle@cut_end]
+on_timer = 1500 | sr_idle@200 %=stop_postprocess(9679) =enable_ui +sad_gena_kopati_jama_end =give_actor(sad_b2_tech_stuff) +sad_sim_7_gena_has_stuff +sad_sim_7_gena_raskop_done%
+
+; Вернуть шмот
+[sr_idle@200]
+on_info = {=actor_has_item(sad_b2_tech_stuff)} %+sad_sim_7_gena_has_stuff%, %-sad_sim_7_gena_has_stuff%
+on_info2 = {+sad_b2_tech_gena_task_complete} sr_idle@nil %+sad_gena_switch_to_ban%
+
+[sr_idle@nil]

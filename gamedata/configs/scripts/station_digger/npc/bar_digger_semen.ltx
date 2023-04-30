@@ -1,0 +1,69 @@
+;=========meet_stalker_korpys========
+[meet@korpys_stalker]
+close_anim 		= nil
+close_victim 	= nil
+far_anim 		= nil
+far_victim 		= nil
+close_distance 	= 0
+far_distance 	= 0
+use = {=actor_enemy} false, {=dist_to_actor_le(3)} true, false
+snd_on_use = {!dist_to_actor_le(3)} nil
+meet_on_talking = false
+;==================================
+
+[logic]
+suitable = {=check_npc_name(bar_digger_semen)} true
+prior = 200
+active = remark@stay_start
+
+[remark@stay_start]
+anim = wait_na
+target = path | bar_digger_semen_look, 0
+on_info = {+bar_zmeelov_talk_semen_sound_stop} remark@meet_zmeelov
+use_camp = false
+combat_ignore_cond = true
+combat_ignore_keep_when_attacked = true
+invulnerable = true
+gather_items_enabled = false
+help_wounded_enabled = false
+corpse_detection_enabled = false
+meet = no_meet
+
+[remark@meet_zmeelov]
+anim = wait_na
+target = path | bar_digger_semen_look, 0
+on_timer = 4000 | remark@meet_zmeelov_start
+use_camp = false
+combat_ignore_cond = true
+combat_ignore_keep_when_attacked = true
+invulnerable = true
+gather_items_enabled = false
+help_wounded_enabled = false
+corpse_detection_enabled = false
+meet = no_meet
+
+[remark@meet_zmeelov_start]
+anim = wait_na
+target = path | bar_digger_semen_look, 0
+on_info = {+bar_zmeelov_talk_semen_sound_stop -bar_semen_talk_to_zmeelov_stop} %=play_sound(bar_semen_talk_to_zmeelov) +bar_semen_talk_to_zmeelov_stop%
+on_timer = 16000 | walker@semen_stay_over
+use_camp = false
+combat_ignore_cond = true
+combat_ignore_keep_when_attacked = true
+invulnerable = true
+gather_items_enabled = false
+help_wounded_enabled = false
+corpse_detection_enabled = false
+meet = no_meet
+
+[walker@semen_stay_over]
+path_look = bar_digger_semen_final_look
+path_walk = bar_digger_semen_final_walk
+use_camp = false
+combat_ignore_cond = true
+combat_ignore_keep_when_attacked = true
+invulnerable = true
+gather_items_enabled = false
+help_wounded_enabled = false
+corpse_detection_enabled = false
+meet = no_meet

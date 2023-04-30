@@ -1,0 +1,18 @@
+[logic]
+active = walker
+
+[walker]
+path_walk = aes_soldier_wave2_walk1
+path_look = aes_soldier_wave2_look1
+on_signal = sound | %+aes_desant_proceed1%
+on_signal2 = sound2 | %+aes_desant_proceed4%
+on_signal3 = arrive | walker@move
+combat_ignore_cond = {=fighting_dist_ge(30)}
+danger = danger_condition
+
+[danger_condition]
+ignore_distance = 0 
+
+[walker@move]
+path_walk = aes_soldier_road_walk1
+path_look = aes_soldier_road_look1

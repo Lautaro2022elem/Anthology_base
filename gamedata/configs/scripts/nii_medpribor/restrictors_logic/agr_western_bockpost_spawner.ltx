@@ -1,0 +1,10 @@
+[logic]
+active = nil; sr_idle@spawn_corpse
+
+[sr_idle@spawn_corpse]
+on_info = sr_idle@send_tip %=spawn_corpse(agr_western_blockpost_victim:agr_western_blockpost_mob_2_look) =hit_obj(agr_western_blockpost_victim:bip01_head:5:500:agr_western_blockpost_mob_2_look) =hit_obj(agr_western_blockpost_victim:bip01_spine2:3:1000:agr_western_blockpost_mob_2_look)%
+
+[sr_idle@send_tip]
+on_actor_inside = sr_idle@end %=agr_blockpost_warning%
+
+[sr_idle@end]

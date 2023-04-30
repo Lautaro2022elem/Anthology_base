@@ -1,0 +1,195 @@
+; -------------------------------------------------------------------------------------------------------- 1
+[logic@snokr_1]
+active = mob_walker@1_start
+suitable = {=target_squad_name(sad_sim_12_snorki)} true
+monster_job = true
+prior = 200
+
+[mob_walker@1_start]
+path_walk = snork_1_walk 
+path_look = snork_1_look
+combat_ignore_cond = true
+friendly = true
+;out_restr = 
+on_info = {+sad_sim_12_snorki_wake} mob_jump@1_jump
+on_info2 = {-sad_radik_start_arrive =actor_in_zone(sad_sim_12_sr_mob_awake)} mob_jump@1_jump %+sad_sim_12_snorki_wake%
+on_info3 = {=mob_was_hit} mob_jump@1_jump %+sad_sim_12_snorki_wake%
+
+[mob_jump@1_jump]
+path_jump = snork_1_look
+ph_jump_factor = 1.0
+offset = 0,0,0
+on_signal = jumped | mob_home@1_home
+
+[mob_home@1_home]
+path_home = snork_home
+home_min_radius = 20
+home_max_radius = 50
+aggressive = true
+
+; -------------------------------------------------------------------------------------------------------- 2
+[logic@snokr_2]
+active = mob_walker@2_start
+suitable = {=target_squad_name(sad_sim_12_snorki)} true
+monster_job = true
+prior = 190
+
+[mob_walker@2_start]
+path_walk = snork_2_walk 
+path_look = snork_2_look
+combat_ignore_cond = true
+friendly = true
+;out_restr = 
+on_info = {+sad_sim_12_snorki_wake} mob_jump@2_jump
+on_info3 = {=mob_was_hit} mob_jump@2_jump %+sad_sim_12_snorki_wake%
+
+[mob_jump@2_jump]
+path_jump = snork_2_look
+ph_jump_factor = 1.0
+offset = 0,0,0
+on_signal = jumped | mob_home@2_home
+
+[mob_home@2_home]
+path_home = snork_home
+home_min_radius = 18
+home_max_radius = 50
+aggressive = true
+
+; -------------------------------------------------------------------------------------------------------- 3
+[logic@snokr_3]
+active = mob_walker@3_start
+suitable = {=target_squad_name(sad_sim_12_snorki)} true
+monster_job = true
+prior = 180
+
+[mob_walker@3_start]
+path_walk = snork_3_walk 
+path_look = snork_3_look
+combat_ignore_cond = true
+friendly = true
+;out_restr = 
+on_info = {+sad_sim_12_snorki_wake} mob_jump@3_jump
+on_info3 = {=mob_was_hit} mob_jump@3_jump %+sad_sim_12_snorki_wake%
+
+[mob_jump@3_jump]
+path_jump = snork_3_look
+ph_jump_factor = 1.0
+offset = 0,0,0
+on_signal = jumped | mob_jump@3_jump2
+
+[mob_jump@3_jump2]
+path_jump = snork_3_jump
+ph_jump_factor = 1.0
+offset = 0,0,0
+on_signal = jumped | mob_home@3_home
+
+[mob_home@3_home]
+path_home = snork_home
+home_min_radius = 18
+home_max_radius = 50
+aggressive = true
+
+; -------------------------------------------------------------------------------------------------------- 4
+[logic@snokr_4]
+active = mob_walker@4_start
+suitable = {=target_squad_name(sad_sim_12_snorki)} true
+monster_job = true
+prior = 170
+
+[mob_walker@4_start]
+path_walk = snork_4_walk 
+path_look = snork_4_look
+combat_ignore_cond = true
+friendly = true
+;out_restr = 
+on_info = {+sad_sim_12_snorki_wake} mob_jump@4_jump
+on_info3 = {=mob_was_hit} mob_jump@4_jump %+sad_sim_12_snorki_wake%
+
+[mob_jump@4_jump]
+path_jump = snork_4_look
+ph_jump_factor = 1.0
+offset = 0,0,0
+on_signal = jumped | mob_home@4_home
+
+[mob_home@4_home]
+path_home = snork_home
+home_min_radius = 18
+home_max_radius = 50
+aggressive = true
+
+; -------------------------------------------------------------------------------------------------------- 5
+[logic@snokr_5]
+active = mob_walker@5_start
+suitable = {=target_squad_name(sad_sim_12_snorki)} true
+monster_job = true
+prior = 160
+
+[mob_walker@5_start]
+path_walk = snork_5_walk 
+path_look = snork_5_look
+combat_ignore_cond = true
+friendly = true
+;out_restr = 
+on_info = {+sad_sim_12_snorki_wake} mob_jump@5_jump
+on_info3 = {=mob_was_hit} mob_jump@5_jump %+sad_sim_12_snorki_wake%
+
+[mob_jump@5_jump]
+path_jump = snork_5_look
+ph_jump_factor = 1.0
+offset = 0,0,0
+on_signal = jumped | mob_jump@5_jump2
+
+[mob_jump@5_jump2]
+path_jump = snork_5_jump
+ph_jump_factor = 1.0
+offset = 0,0,0
+on_signal = jumped | mob_home@5_home
+
+[mob_home@5_home]
+path_home = snork_home
+home_min_radius = 18
+home_max_radius = 50
+aggressive = true
+
+; -------------------------------------------------------------------------------------------------------- 6
+[logic@snokr_6]
+active = mob_walker@6_start
+suitable = {=target_squad_name(sad_sim_12_snorki)} true
+monster_job = true
+prior = 150
+
+[mob_walker@6_start]
+path_walk = snork_6_walk 
+path_look = snork_6_look
+combat_ignore_cond = true
+friendly = true
+;out_restr = 
+on_info = {+sad_sim_12_snorki_wake} mob_jump@6_jump
+on_info3 = {=mob_was_hit} mob_jump@6_jump %+sad_sim_12_snorki_wake%
+
+[mob_jump@6_jump]
+path_jump = snork_6_look
+ph_jump_factor = 1.0
+offset = 0,0,0
+on_signal = jumped | mob_jump@6_jump2
+
+[mob_jump@6_jump2]
+path_jump = snork_6_jump_1
+ph_jump_factor = 1.0
+offset = 0,0,0
+on_signal = jumped | mob_jump@6_jump3
+
+[mob_jump@6_jump3]
+path_jump = snork_6_jump_2
+ph_jump_factor = 1.0
+offset = 0,0,0
+on_signal = jumped | mob_home@6_home
+
+[mob_home@6_home]
+path_home = snork_home
+home_min_radius = 18
+home_max_radius = 50
+aggressive = true
+
+
+

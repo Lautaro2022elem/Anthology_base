@@ -1,0 +1,31 @@
+[logic@esc_squad_baza_csky_walker_1]
+active = walker
+suitable = {=check_npc_name(sim_default_csky_2)} true, false
+prior = 250
+
+[walker]
+path_walk = excl_1_walk
+path_look = excl_1_look
+on_info = {=surge_started()} walker@1
+gather_items_enabled = false
+corpse_detection_enabled = false
+combat_ignore_keep_when_attacked = true 
+combat_ignore_cond = true
+invulnerable = true
+meet = meet
+use_camp = false
+
+
+[walker@1]
+path_walk = excl_1_walk
+path_look = excl_1_look
+on_info = {=surge_complete()} walker
+gather_items_enabled = false
+corpse_detection_enabled = false
+combat_ignore_keep_when_attacked = true 
+combat_ignore_cond = true
+invulnerable = true
+meet = meet
+use_camp = false
+
+;================================================

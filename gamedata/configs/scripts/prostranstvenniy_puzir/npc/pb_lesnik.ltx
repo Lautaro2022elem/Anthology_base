@@ -1,0 +1,102 @@
+;=========meet_quest_line========
+[meet@quest_line]
+close_anim 		= nil
+close_victim 	= nil
+far_anim 		= nil
+far_victim 		= nil
+close_distance 	= 0
+far_distance 	= 0
+use = {=actor_enemy} false, {=dist_to_actor_le(3)} true, false
+snd_on_use = {!dist_to_actor_le(3)} nil
+meet_on_talking = false
+;==================================
+
+[logic]
+active = remark@start
+post_combat_time = 0, 0
+suitable = {=check_npc_name(pb_lesnik)} true, false
+level_spot = quest_npc
+prior = 250
+
+[remark@start]
+anim = threat_danger
+target = story | actor
+danger = danger
+use_camp = false
+on_info = {+pro_lesnik_is_atack_dogs} remark@fight
+combat_ignore_cond = true
+combat_ignore_keep_when_attacked = true
+gather_items_enabled = false
+help_wounded_enabled = false
+corpse_detection_enabled = false
+invulnerable = true
+meet = no_meet
+
+[remark@fight]
+anim = threat_danger
+target = story | actor
+meet = no_meet
+danger = danger
+on_info = {+pro_dog_quest_squad_dead} remark@meet_start
+gather_items_enabled = false
+corpse_detection_enabled = false
+invulnerable = true
+
+[remark@meet_start]
+anim = threat_danger
+target = story | actor
+danger = danger
+on_info = {+pro_lesnik_first_dialog_meet_done} move@from_actor
+use_camp = false
+combat_ignore_cond = true
+combat_ignore_keep_when_attacked = true
+gather_items_enabled = false
+help_wounded_enabled = false
+corpse_detection_enabled = false
+invulnerable = true
+meet = meet@quest_line_start
+
+[move@from_actor]
+invulnerable                 = true
+move_pursue_actor            = true
+move_pursue_look_subject     = actor 
+move_pursue_range            = 5|10
+move_pursue_state_stand      = wait_na
+move_pursue_state_move       = walk                   
+move_pursue_state_overtake   = run
+on_info = {=dist_to_actor_ge(60) !npc_in_zone(pb_base_podval_lesnik_restr)} remark@wait %=pb_npc_lesnik_quest_out%
+on_info2 = {=npc_in_zone(pb_base_podval_lesnik_restr)} walker@lesnik_on_base %+pro_lesnik_end_line_in_base%
+meet = no_meet
+gather_items_enabled = false
+corpse_detection_enabled = false
+combat_ignore_keep_when_attacked = false 
+combat_ignore_cond = false
+
+[remark@wait]
+anim = threat_danger
+target = story | actor
+meet = no_meet
+danger = danger
+on_info = {=dist_to_actor_le(40)} move@from_actor %=pb_npc_lesnik_quest_in%
+gather_items_enabled = false
+corpse_detection_enabled = false
+invulnerable = true
+
+[walker@lesnik_on_base]
+path_walk = pro_lesnik_end_line_walk
+path_look = pro_lesnik_end_line_look
+on_info = {+pro_dialog_duty_tachenko_end_line_done} %=release_npc%
+combat_ignore_cond = true
+combat_ignore_keep_when_attacked = true
+invulnerable = true
+gather_items_enabled = false
+help_wounded_enabled = false
+corpse_detection_enabled = false
+meet = no_meet
+
+[meet@quest_line_start]:meet@quest_line
+close_victim = actor
+;use = {-digst_markus_go_home} self, true
+allow_break = false
+meet_dialog = pb_lesnik_first_meet_start
+trade_enable = false

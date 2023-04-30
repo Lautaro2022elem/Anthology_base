@@ -1,0 +1,29 @@
+[logic@zombied_1]
+suitable = {=check_npc_name(sim_default_zombied)} true
+active = walker@1
+prior = 200
+
+[logic@zombied_2]
+suitable = {=check_npc_name(sim_default_zombied)} true
+active = walker@2
+prior = 200
+
+[logic@zombied_3]
+suitable = {=check_npc_name(sim_default_zombied)} true
+active = walker@3
+prior = 200
+
+[logic@zombied_4]:logic@zombied_1
+
+[logic@zombied_5]:logic@zombied_2
+
+[logic@zombied_6]:logic@zombied_3
+
+[walker@1]
+path_walk = mob_xaos_1
+
+[walker@2]
+path_walk = mob_xaos_2
+
+[walker@3]
+path_walk = mob_patrul_1

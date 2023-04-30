@@ -1,0 +1,57 @@
+[walker@def]
+gather_items_enabled = false
+help_wounded_enabled = false
+corpse_detection_enabled = false
+combat_ignore_cond = true
+combat_ignore_keep_when_attacked = true
+out_restr = sad_b4_sr_jail_zone
+meet = no_meet
+show_spot = false
+wounded = wounded
+
+[wounded]
+hp_state 		= 0|wounded_heavy@nil
+hp_state_see 	= 0|wounded_heavy@nil
+hp_victim 		= 0|actor
+hp_cover 		= 0|false
+hp_fight 		= 0|false
+
+; -------------------------------------------------------------------------------------------------------------------------------------------- fedor
+[logic@fedor]
+suitable = { =check_npc_name(sad_b4_stalker_fedor) } true
+on_death = death
+active = walker@fedor
+dont_spawn_loot
+prior = 200
+
+[walker@fedor]:walker@def
+path_walk = fedor_place
+path_look = fedor_look
+on_info = {=actor_in_zone(sad_b4_sr_inside)} remark@fake_wounded ;%=sad_fedor_health%
+
+[remark@fake_wounded]:walker@def
+anim = wounded_heavy
+on_info = {+sad_radik_otkaz} %+sad_fedor_dead =kill_npc%
+on_info2 = {+sad_b4_cs_radik_sound_end} remark@cut_1 %=play_sound(sad_b4_fedor_phrase)%
+
+[remark@cut_1]:walker@def
+anim = wounded_heavy
+on_signal = sound_end | remark@cut_2 %+sad_b4_cs_fedor_sound_end -sad_b4_cs_radik_sound_end%
+
+[remark@cut_2]:walker@def
+anim = wounded_heavy
+on_info = {+sad_fedor_killed_by_radik} %=kill_npc%
+
+; ------------------------------------
+[meet]
+close_snd_hello = nil
+close_distance  = 0
+close_victim    = nil
+close_anim = nil
+use = {+sad_b4_jail_door_released} true, false
+meet_dialog = sad_b4_fedor_talk
+trade_enable = false
+allow_break = false
+
+[death]
+on_info = %+sad_fedor_dead%

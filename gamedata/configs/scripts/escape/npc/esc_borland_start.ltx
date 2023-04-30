@@ -1,0 +1,67 @@
+[logic]
+active = remark@start_game
+
+[remark@start_game]
+anim = caution
+target = story | actor
+combat_ignore_cond = true
+combat_ignore_keep_when_attacked = true
+gather_items_enabled = false
+help_wounded_enabled = false
+corpse_detection_enabled = false
+use_camp = false
+invulnerable = true
+on_info = {+esc_open_dialogs_borland_start} remark@start_game_2
+meet = no_meet
+
+
+[remark@start_game_2]
+anim = wait_na
+target = story | actor
+combat_ignore_cond = true
+combat_ignore_keep_when_attacked = true
+gather_items_enabled = false
+help_wounded_enabled = false
+corpse_detection_enabled = false
+use_camp = false
+invulnerable = true
+on_info = {+esc_borland_start_dialog_go_info} walker@barrer
+meet = meet@start
+
+
+[walker@barrer]
+path_walk = esc_borland_start_walk_barrer
+def_state_moving = run
+def_state_standing = wait
+on_info = {+infa_esc_sr_barrer_zona_danger_restiktor} walker@stop
+gather_items_enabled = false
+corpse_detection_enabled = false
+combat_ignore_keep_when_attacked = true 
+combat_ignore_cond = true
+invulnerable = true
+meet = no_meet
+
+[walker@stop]
+path_walk = esc_borland_start_walk_3
+path_look = esc_borland_start_look_3
+on_info = {+esc_barrer_npc_remove_pat_1} %=release_npc%
+def_state_standing = hands_up
+gather_items_enabled = false
+corpse_detection_enabled = false
+combat_ignore_keep_when_attacked = true 
+combat_ignore_cond = true
+invulnerable = true
+meet = no_meet
+
+[meet@start]
+abuse           = false
+close_anim 		= nil
+far_anim 		= nil
+far_victim 		= nil
+close_distance  = 0
+far_distance 	= 0
+close_victim = actor
+use = {!actor_enemy =see_actor} self, true
+allow_break = false
+meet_dialog = esc_borland_start_dialog_start_game
+trade_enable = false

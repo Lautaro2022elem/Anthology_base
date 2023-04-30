@@ -1,0 +1,29 @@
+--[[ ----------------------------------------------------------------------------------------------- 
+ File       : dialogs_digger_stash.script
+ Description: Диалоговые функции для Пространственного пузыря
+ Copyright  : 2014 © GSC Game World
+ Author	    : PROFFESIONAL
+ Last edit  : 30.07.2014 (by PROFFESIONAL)
+--]] -----------------------------------------------------------------------------------------------
+--/											Функции для actor
+--]] -----------------------------------------------------------------------------------------------
+
+function digst_stay_dont_move() 
+    task_manager.get_task_manager():give_task("digst_stay_dont_move") 
+end
+
+function digst_find_exit() 
+    task_manager.get_task_manager():give_task("digst_find_exit_to_underground") 
+end
+
+function labx7_find_exit_to_labx7() 
+    task_manager.get_task_manager():give_task("labx7_find_exit_to_labx7") 
+end
+
+function digst_markus_give_torch(first_speaker, second_speaker)
+    dialogs.relocate_item_section(second_speaker, "device_torch", "in",1)
+end
+
+function bar_otshelnik_give_wpn_pmm(first_speaker, second_speaker)
+	dialogs.relocate_item_section(second_speaker, "wpn_pmm", "in",1)
+end

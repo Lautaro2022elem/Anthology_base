@@ -1,0 +1,161 @@
+;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
+;;;;;;;;;;;;;;; СЮЖЕТНАЯ ЛИНИЯ ;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
+;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
+
+[esc_actor_memmory_start] ;Начало воспоминаний
+icon = ui_inGame2_Memmory_start
+prior = 200
+storyline = true
+title = {+esc_leader_group_stalker_to_atp_dead +esc_squad_stalker_to_atp_dead}esc_actor_memmory_start_part_4_name, {+meet_dialog_stalker_to_atp_done}esc_actor_memmory_start_part_3_name, {+esc_zver_see_stalker_to_atp}esc_actor_memmory_start_part_2_name, esc_actor_memmory_start_part_1_name
+descr = {+esc_leader_group_stalker_to_atp_dead +esc_squad_stalker_to_atp_dead}esc_actor_memmory_start_part_4_text, {+meet_dialog_stalker_to_atp_done}esc_actor_memmory_start_part_3_text, {+esc_zver_see_stalker_to_atp}esc_actor_memmory_start_part_2_text, esc_actor_memmory_start_part_1_text
+target = {+esc_leader_group_stalker_to_atp_dead +esc_squad_stalker_to_atp_dead}esc_killer_raven_scene, {+meet_dialog_stalker_to_atp_done}esc_stalker_to_atp, nil
+condlist_0 = {+esc_zver_go_to_wolf} complete
+condlist_1 = {!actor_alive()} fail
+
+[esc_come_to_base] ;Добраться к "Деревне новичков" и поговорить с Волком
+icon = ui_inGame2_Come_to_base
+prior = 210
+storyline = true
+title = {+esc_give_quest_to_speak_wolf}esc_come_to_base_part_2_name, esc_come_to_base_part_1_name
+descr = {+esc_give_quest_to_speak_wolf}esc_come_to_base_part_2_text, esc_come_to_base_part_1_text
+target = {+esc_give_quest_to_speak_wolf} esc_wolf, esc_killer_raven_scene
+;target = {+esc_come_to_base_complite} esc_trader_id, esc_village_zona_quest
+condlist_0 = {+esc_wolf_quest_line_start_dialog_end} complete
+condlist_1 = {!actor_alive()} fail
+
+[esc_operations_escape] ;Спасение группы нейтралов
+icon = ui_inGame2_Operation_escape
+prior = 200
+storyline = true
+title = {+esc_zver_come_back_vilage}esc_operations_escape_part_7_name, {+esc_dialog_muravei_end}esc_operations_escape_part_6_name, {+esc_squad_kpp_bandits_dead}esc_operations_escape_part_5_name, {+esc_killer_raven_meet_complete}esc_operations_escape_part_4_name, {+esc_bandit_kpp_kill}esc_operations_escape_part_3_name, {+esc_zohan_meet_dialog}esc_operations_escape_part_2_name, esc_operations_escape_part_1_name
+descr = {+esc_zver_come_back_vilage}esc_operations_escape_part_7_text, {+esc_dialog_muravei_end}esc_operations_escape_part_6_text, {+esc_squad_kpp_bandits_dead}esc_operations_escape_part_5_text, {+esc_killer_raven_meet_complete}esc_operations_escape_part_4_text, {+esc_bandit_kpp_kill}esc_operations_escape_part_3_text, {+esc_zohan_meet_dialog}esc_operations_escape_part_2_text, esc_operations_escape_part_1_text
+target = {+esc_zver_come_back_vilage} esc_wolf, {+esc_dialog_muravei_end} esc_killer_raven_sniper, {+esc_squad_kpp_bandits_dead} esc_stalker_muravei, {+esc_killer_raven_meet_complete} esc_squad_kpp, {+esc_bandit_kpp_kill} esc_killer_raven_sniper, {+esc_zohan_meet_dialog} esc_friend_to_kurer_dead, esc_friend_to_kurer_dead
+condlist_0 = {+esc_dialog_wolf_operation_end} complete
+condlist_1 = {!actor_alive()} fail
+
+[esc_talk_to_sidorovich] ;Поговорить с Сидоровичем (1)
+icon = ui_inGame2_Zakaz_new_trader
+prior = 200
+storyline = true
+title = esc_talk_to_sidorovich_part_1_name
+descr = esc_talk_to_sidorovich_part_1_text
+target = esc_trader_id
+condlist_0 = {+esc_trader_first_quest_dialog_done} complete
+condlist_1 = {!actor_alive()} fail
+
+[esc_klim_flash_found] ;Найти флешку для Сидоровича
+icon = ui_inGame2_Flash_klim_found
+prior = 200
+storyline = true
+title = {+esc_trader_first_quest_flash_give}esc_klim_flash_found_part_10_name, {+esc_talk_from_hunter_complete =actor_has_item(esc_flash_klim)}esc_klim_flash_found_part_9_name, {-esc_trader_first_quest_flash_give -esc_talk_from_hunter_complete =actor_has_item(esc_flash_klim)} esc_klim_flash_found_part_8_name, {-esc_trader_first_quest_flash_give +esc_psy_dog_quest_dead}esc_klim_flash_found_part_7_name, {+esc_hunter_hunting_psy_dog_give}esc_klim_flash_found_part_6_name, {+esc_talk_from_hunter_end}esc_klim_flash_found_part_5_name, {+esc_talk_from_hunter_start}esc_klim_flash_found_part_4_name, {+esc_quest_spawn_klim_and_hunter}esc_klim_flash_found_part_3_name, {+esc_quest_trader_radio_restr_1}esc_klim_flash_found_part_2_name, {+esc_trader_radio_take_restr_1}esc_klim_flash_found_part_1_name, esc_klim_flash_found_part_11_name
+descr = {+esc_trader_first_quest_flash_give}esc_klim_flash_found_part_10_text, {+esc_talk_from_hunter_complete =actor_has_item(esc_flash_klim)}esc_klim_flash_found_part_9_text, {-esc_trader_first_quest_flash_give -esc_talk_from_hunter_complete =actor_has_item(esc_flash_klim)} esc_klim_flash_found_part_8_text, {-esc_trader_first_quest_flash_give +esc_psy_dog_quest_dead}esc_klim_flash_found_part_7_text, {+esc_hunter_hunting_psy_dog_give}esc_klim_flash_found_part_6_text, {+esc_talk_from_hunter_end}esc_klim_flash_found_part_5_text, {+esc_talk_from_hunter_start}esc_klim_flash_found_part_4_text, {+esc_quest_spawn_klim_and_hunter}esc_klim_flash_found_part_3_text, {+esc_quest_trader_radio_restr_1}esc_klim_flash_found_part_2_text, {+esc_trader_radio_take_restr_1}esc_klim_flash_found_part_1_text, esc_klim_flash_found_part_11_text
+target = {+esc_trader_first_quest_flash_give} esc_trader_id, {+esc_talk_from_hunter_complete =actor_has_item(esc_flash_klim)} esc_trader_id, {-esc_trader_first_quest_flash_give -esc_talk_from_hunter_complete =actor_has_item(esc_flash_klim)} esc_npc_wood_goblin, {-esc_trader_first_quest_flash_give +esc_psy_dog_quest_dead} esc_psy_dog_quest, {-esc_trader_first_quest_flash_give +esc_hunter_hunting_psy_dog_give} esc_psy_dog_quest, {-esc_trader_first_quest_flash_give +esc_talk_from_hunter_start} esc_npc_wood_goblin, {+esc_quest_spawn_klim_and_hunter} esc_klim_and_hunter_spawn_restrictor, {+esc_quest_trader_radio_restr_1} nil, {+esc_trader_radio_take_restr_1}esc_radio_stand_restrictor, esc_trader_radio_pharos_item
+condlist_0 = {+esc_trader_first_quest_complete} complete
+condlist_1 = {!actor_alive()} fail
+
+[esc_talk_to_zohan_quest] ;Поговорить с Зоханом
+icon = ui_inGame2_Grey_stalker
+prior = 200
+storyline = true
+title = esc_talk_to_zohan_quest_part_1_name
+descr = esc_talk_to_zohan_quest_part_1_text
+target = esc_squad_stalker_zohan
+condlist_0 = {+zohan_flair_quest_start} complete
+condlist_1 = {!actor_alive()} fail
+
+[esc_talk_to_sidorovich_again] ;Поговорить с Сидоровичем (2)
+icon = ui_inGame2_Merc_weapon
+prior = 200
+storyline = true
+title = esc_talk_to_sidorovich_again_part_1_name
+descr = esc_talk_to_sidorovich_again_part_1_text
+target = esc_trader_id
+condlist_0 = {+esc_koordinator_quest_line_dialog_done} complete
+condlist_1 = {!actor_alive()} fail
+
+[esc_koordinator_quest_line] ;Встреча с координатором
+icon = ui_inGame2_Koordinator_zakaz
+prior = 200
+storyline = true
+title = {+esc_quest_dialog_koordinator_done}esc_koordinator_quest_line_part_3_name, {+esc_killer_grif_meet_quest_sidor_end}esc_koordinator_quest_line_part_2_name, esc_koordinator_quest_line_part_1_name
+descr = {+esc_quest_dialog_koordinator_done}esc_koordinator_quest_line_part_3_text, {+esc_killer_grif_meet_quest_sidor_end}esc_koordinator_quest_line_part_2_text, esc_koordinator_quest_line_part_1_text
+target = {+esc_quest_dialog_koordinator_done} esc_squad_army_yaroshuk, {+esc_killer_grif_meet_quest_sidor_end} esc_squad_barman_bar, esc_squad_grif
+condlist_0 = {+esc_actor_meet_from_kill_leader_done} complete
+condlist_1 = {+esc_koordinator_to_sklad_dialog_done -esc_quest_dialog_koordinator_done} reversed
+condlist_2 = {!actor_alive()} fail
+
+[esc_koordinator_syndikate_quest] ;Заказ из Синдиката
+icon = ui_inGame2_Sudba_deshifratora
+prior = 200
+storyline = true
+title = {+esc_actor_blackbox_have}esc_koordinator_syndikate_quest_part_5_name, {+esc_wait_action_of_enot_drink}esc_koordinator_syndikate_quest_part_4_name, {+esc_quest_dialog_from_enot_give}esc_koordinator_syndikate_quest_part_3_name, {+esc_actor_talk_raven_from_enot}esc_koordinator_syndikate_quest_part_2_name, esc_koordinator_syndikate_quest_part_1_name
+descr = {+esc_actor_blackbox_have}esc_koordinator_syndikate_quest_part_5_text, {+esc_wait_action_of_enot_drink}esc_koordinator_syndikate_quest_part_4_text, {+esc_quest_dialog_from_enot_give}esc_koordinator_syndikate_quest_part_3_text, {+esc_actor_talk_raven_from_enot}esc_koordinator_syndikate_quest_part_2_text, esc_koordinator_syndikate_quest_part_1_text
+target = {+esc_actor_blackbox_have}esc_squad_bar_security, {+esc_wait_action_of_enot_drink}esc_blackbox_quest, {+esc_quest_dialog_from_enot_give}esc_stalker_enot, {+esc_actor_talk_raven_from_enot}nil, esc_killer_raven_final
+condlist_0 = {+esc_koordinator_syndikate_quest_done} complete
+condlist_1 = {!actor_alive()} fail
+
+[esc_kill_leader_stalkers] ;Убить Валерьяна
+icon = ui_inGame2_Learder_stalkers_kill
+prior = 200
+storyline = true
+title = {+esc_give_meet_from_yaroshuk -sleep_active =is_day}esc_kill_leader_stalkers_part_10_name, {+esc_give_meet_from_yaroshuk !is_day}esc_kill_leader_stalkers_part_9_name, {+esc_squad_leader_base_dead}esc_kill_leader_stalkers_part_8_name, {+esc_zver_quest_kill_leader_stalkers_give}esc_kill_leader_stalkers_part_7_name, {+esc_actor_from_raven_meet_leader}esc_kill_leader_stalkers_part_6_name, {+esc_wait_action_of_enot}esc_kill_leader_stalkers_part_5_name, {+esc_actor_go_to_raven_meet_done}esc_kill_leader_stalkers_part_4_name, {+esc_actor_go_to_raven_meet}esc_kill_leader_stalkers_part_3_name, {+esc_actor_go_meet_to_enot}esc_kill_leader_stalkers_part_2_name, esc_kill_leader_stalkers_part_1_name
+descr = {+esc_give_meet_from_yaroshuk -sleep_active =is_day}esc_kill_leader_stalkers_part_10_text, {+esc_give_meet_from_yaroshuk !is_day}esc_kill_leader_stalkers_part_9_text, {+esc_squad_leader_base_dead}esc_kill_leader_stalkers_part_8_text, {+esc_zver_quest_kill_leader_stalkers_give}esc_kill_leader_stalkers_part_7_text, {+esc_actor_from_raven_meet_leader}esc_kill_leader_stalkers_part_6_text, {+esc_wait_action_of_enot}esc_kill_leader_stalkers_part_5_text, {+esc_actor_go_to_raven_meet_done}esc_kill_leader_stalkers_part_4_text, {+esc_actor_go_to_raven_meet}esc_kill_leader_stalkers_part_3_text, {+esc_actor_go_meet_to_enot}esc_kill_leader_stalkers_part_2_text, esc_kill_leader_stalkers_part_1_text
+target = {+esc_give_meet_from_yaroshuk -sleep_active =is_day}esc_army_leader, {+esc_give_meet_from_yaroshuk !is_day}nil, {+esc_squad_leader_base_dead} esc_leader_stalkerbase_go_way, {+esc_zver_quest_kill_leader_stalkers_give} esc_squad_leader_base, {+esc_actor_from_raven_meet_leader} esc_killer_raven_atp_quest, {+esc_wait_action_of_enot} nil, {+esc_actor_go_to_raven_meet_done} esc_killer_raven_final, {+esc_actor_go_to_raven_meet} esc_killer_raven_final, {+esc_actor_go_meet_to_enot} esc_stalker_enot_sleep, nil
+condlist_0 = {+esc_quest_line_in_escape_go_to_end} complete
+condlist_1 = {!actor_alive()} fail
+
+[esc_talk_to_sidorovich_final] ;Поговорить с Сидоровичем (3)
+icon = ui_inGame2_Igra_v_pryatki
+prior = 200
+storyline = true
+title = esc_talk_to_sidorovich_final_part_1_name
+descr = esc_talk_to_sidorovich_final_part_1_text
+target = esc_trader_id
+condlist_0 = {+esc_final_sidor_quest_dialog_done} complete
+condlist_1 = {!actor_alive()} fail
+
+[esc_final_sidor_quest] ;Посылка для Ореста
+icon = ui_inGame2_Final_sidor_quest
+prior = 200
+storyline = true
+title = esc_final_sidor_quest_part_1_name
+descr = esc_final_sidor_quest_part_1_text
+target = esc_leader_orest
+condlist_0 = {+esc_firsat_dialog_from_orest_done} complete
+condlist_1 = {!actor_alive()} fail
+
+[esc_talk_shilov_quest] ;Поговорить с Шиловым
+icon = ui_inGame2_Helicopter_crash
+prior = 200
+storyline = true
+title = esc_talk_shilov_quest_part_1_name
+descr = esc_talk_shilov_quest_part_1_text
+target = esc_barmen_base
+condlist_0 = {+esc_dialog_shtik_quest1} complete
+condlist_1 = {+esc_shilov_quest_cancel} reversed
+condlist_2 = {!actor_alive()} fail
+
+[esc_final_talk_in_escape] ;Поговорить с Мракобесом
+icon = ui_inGame2_Final_talk_in_escape
+prior = 200
+storyline = true
+title = esc_final_talk_in_escape_part_1_name
+descr = esc_final_talk_in_escape_part_1_text
+target = esc_killer_mrakobes
+condlist_0 = {+esc_dialog_from_mrakobes_final_done} complete
+condlist_1 = {!actor_alive()} fail
+
+;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
+;;;;;;;;;;;;;;; САЙД-КВЕСТЫ ;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
+;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
+
+[esc_bar_security_quest] ;Охрана для Бара №92
+icon = ui_inGame2_Grey_stalker
+prior = 1
+storyline = false
+title = {+esc_qrif_quest_bar_sms_final} esc_bar_security_quest_part_3_name, {+esc_actor_talk_from_grif_about_bar_security} esc_bar_security_quest_part_2_name, {+esc_actor_talk_from_barmen_complete} esc_bar_security_quest_part_4_name,  esc_bar_security_quest_part_1_name
+descr = {+esc_qrif_quest_bar_sms_final} esc_bar_security_quest_part_3_text, {+esc_actor_talk_from_grif_about_bar_security} esc_bar_security_quest_part_2_text, {+esc_actor_talk_from_barmen_complete} esc_bar_security_quest_part_4_text,  esc_bar_security_quest_part_1_text
+target = {+esc_qrif_quest_bar_sms_final} esc_barman_patogen, {+esc_actor_talk_from_grif_about_bar_security} nil, {+esc_actor_talk_from_barmen_complete} esc_squad_grif, esc_barman_patogen
+condlist_0 = {+esc_actor_complete_bar_security_quest} complete
+condlist_1 = {+esc_actor_talk_from_barmen_fail_end} fail
+condlist_2 = {+esc_dialog_from_mrakobes_final_done} fail

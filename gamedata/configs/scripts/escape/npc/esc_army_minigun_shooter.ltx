@@ -1,0 +1,16 @@
+[logic]
+active = animpoint
+can_select_weapon = true
+on_death = death
+
+[animpoint]
+cover_name = esc_minigun_shoot_animpoint
+gather_items_enabled = false
+corpse_detection_enabled = false
+combat_ignore_keep_when_attacked = true 
+combat_ignore_cond = true
+invulnerable = false
+meet = no_meet
+
+[death]
+on_info = %+esc_army_minigun_shooter_dead =set_squad_enemy_to_actor(esc_squad_barrer) =play_sound(alarm)%

@@ -1,0 +1,52 @@
+[walker@def]
+invulnerable = false
+help_wounded_enabled = false
+corpse_detection_enabled = false
+gather_items_enabled = false
+; ----------------------------------------
+
+[logic@esc_npc_lisiy]
+suitable = {=check_npc_name(esc_lisiy_npc)} true
+active = walker@npc_lisiy_hello
+prior = 200
+
+[walker@npc_lisiy_hello]:walker@def
+path_walk = cherep_sit_walk
+path_look = cherep_sit_look
+on_info = {=dist_to_actor_le(6)} remark@start_say %+lisiy_fraza_one_end%
+meet = no_meet
+
+[remark@start_say]:walker@def
+target = story | actor
+anim = threat_na
+show_spot = false
+meet = meet@say_npc_for_actor
+on_info = {+lisiy_dialog_tonnel_no_many} remark@attack_actor
+
+[remark@attack_actor]:walker@def
+target = story | actor
+anim = threat_na
+show_spot = false
+on_info = {+esc_lisiy_dialog_tonnel_enemy} %=actor_enemy =play_sound(esc_lisiy_shot)%
+on_signal = sound_end | remark@stop_say
+meet = no_meet
+
+[remark@stop_say]:walker@def
+target = story | actor
+anim = threat_na
+show_spot = false
+meet = no_meet
+
+[meet@say_npc_for_actor]
+close_snd_hello = nil
+close_snd_bye = nil
+close_anim 		= nil
+close_victim 	= actor
+far_anim 		= nil
+far_victim 		= nil
+close_distance  = 0
+far_distance 	= 0
+use = {=dist_to_actor_le(6) +esc_tunel_bandit_dialog_start} self, true
+allow_break = false
+meet_dialog = lisiy_dialog_tonnel_start
+trade_enable = false

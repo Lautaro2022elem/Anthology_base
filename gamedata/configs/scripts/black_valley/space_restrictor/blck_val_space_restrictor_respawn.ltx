@@ -1,0 +1,14 @@
+[logic]
+active = nil; sr_idle@respawn
+
+;------------------Респавн патрульных сквадов-------------------------------------------
+[sr_idle@respawn]
+on_info = {=surge_started} sr_idle@surge %=squad_run_to_cover(blck_val_stalker_goto_smart_1) =squad_run_to_cover(blck_val_a31_bandit_vil_squad)%
+on_info2  = {+blck_val_stalker_goto_smart_1_dead !squad_exist(blck_val_stalker_goto_smart_1) =is_day =dist_to_objs_ge(100:blck_val_a31_night:blck_val_b3:blck_val_b2)} %=create_squad(blck_val_stalker_goto_smart_1:blck_val_a31_night) -blck_val_stalker_goto_smart_1_dead%
+;on_info3 = {+esc_stalker_goto_smart_0_1_dead !squad_exist(esc_stalker_goto_smart_0_1) =is_day =dist_to_objs_ge(100:esc_smart_terrain_1_0:esc_smart_terrain_1_0_1:esc_smart_terrain_1_0_2:esc_smart_terrain_0_1)} %=create_squad(esc_stalker_goto_smart_0_1:esc_smart_terrain_1_0) -esc_stalker_goto_smart_0_1_dead%
+;on_info4 = {+esc_bandit_goto_smart_0_1_dead !squad_exist(esc_bandit_goto_smart_0_1) =is_day =dist_to_objs_ge(100:esc_smart_terrain_2_1:esc_smart_terrain_2_0_1:esc_smart_terrain_0_1)} %=create_squad(esc_bandit_goto_smart_0_1:esc_smart_terrain_2_1) -esc_bandit_goto_smart_0_1_dead%
+;on_info5 = {+esc_bandit_goto_smart_2_1_5_dead !squad_exist(esc_bandit_goto_smart_2_1_5) =is_day =dist_to_objs_ge(100:esc_smart_terrain_2_2:esc_smart_terrain_2_1_1:esc_smart_terrain_2_1_2:esc_smart_terrain_2_1_3:esc_smart_terrain_2_1_4:esc_smart_terrain_2_1_5)} %=create_squad(esc_bandit_goto_smart_2_1_5:esc_smart_terrain_2_2) -esc_bandit_goto_smart_2_1_5_dead%
+;on_info6 = {+esc_stalker_goto_smart_0_0_2_dead !squad_exist(esc_stalker_goto_smart_0_0_2) =is_day =dist_to_objs_ge(100:esc_smart_terrain_1_1:esc_smart_terrain_1_1_1:esc_smart_terrain_0_0_2:esc_smart_terrain_1_1_2)} %=create_squad(esc_stalker_goto_smart_0_0_2:esc_smart_terrain_1_1_1) -esc_stalker_goto_smart_0_0_2_dead%
+
+[sr_idle@surge]
+on_info = {!surge_started} sr_idle@respawn %=squad_walk_from_cover(blck_val_stalker_goto_smart_1) =squad_walk_from_cover(blck_val_a31_bandit_vil_squad)%

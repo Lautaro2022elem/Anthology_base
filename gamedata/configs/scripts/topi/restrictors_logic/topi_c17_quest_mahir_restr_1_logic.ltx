@@ -1,0 +1,19 @@
+[logic] 
+active = sr_idle@start
+
+[sr_idle@start] 
+on_info  = {+topi_start +topi_c17_mahir_quest_effect_start -topi_c17_mahir_quest_effect_time_out} sr_idle@particle %=play_s3d_sound(new\explosions\mrk_building_big_explod_2b) +topi_c17_mahir_quest_effect_time_out%
+on_info2 = {+topi_start +topi_c17_mahir_teleport_1} sr_idle@teleportin_1 %=run_postprocess(fade_in:8613) =disable_ui%
+
+[sr_idle@particle]
+on_timer = 4000 | {+topi_c17_mahir_quest_effect_time_out} sr_idle@nil %+topi_c17_mahir_quest_effect_end%
+
+[sr_idle@teleportin_1]
+on_game_timer = 20 | %=run_postprocess(black:8614:true) +topi_c17_mahir_step_1%
+on_info = {+topi_c17_mahir_step_1} sr_idle@teleport_post_1 %=teleport_actor(topi_c17_mahir_telep_stay_1:topi_c17_mahir_telep_look_1)%
+
+[sr_idle@teleport_post_1]
+on_game_timer = 20 | %+topi_c17_kor_ui_1%
+on_info = {+topi_c17_kor_ui_1} sr_idle@nil %=stop_postprocess(8613) =stop_postprocess(8614) =enable_ui() -topi_c17_kor_ui_1%
+
+[sr_idle@nil] 

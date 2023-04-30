@@ -1,0 +1,224 @@
+<?xml version="1.0" encoding="windows-1251"?>
+<string_table>
+
+	<!----------------  sad items ------------------->
+	
+	<string id="st_sad_trus_pda_name">
+		<text>КПК Труса</text>
+	</string>
+	<string id="st_sad_trus_pda_desc">
+		<text>КПК сталкера по прозвищу Трус.</text>
+	</string>
+	<string id="st_sad_balbes_pda_name">
+		<text>КПК Балбеса</text>
+	</string>
+	<string id="st_sad_balbes_pda_desc">
+		<text>КПК сталкера по прозвищу Балбес.</text>
+	</string>
+	<string id="st_sad_byvaly_pda_name">
+		<text>КПК Бывалого</text>
+	</string>
+	<string id="st_sad_byvaly_pda_desc">
+		<text>КПК сталкера по прозвищу Бывалый.</text>
+	</string>
+	<string id="st_sad_fedor_flesh_desc">
+		<text>Флешка Фёдора. Информация закодирована.</text>
+	</string>
+	<string id="st_sad_fedor_flesh_name">
+		<text>Флешка Фёдора</text>
+	</string>
+	<string id="st_sad_ban_posilka_name">
+		<text>Посылка</text>
+	</string>
+	<string id="st_sad_ban_posilka_desc">
+		<text>Посылка с вещами для Максимильяна.</text>
+	</string>
+	<string id="st_sad_killer_pda_name">
+		<text>КПК наёмника</text>
+	</string>
+	<string id="st_sad_killer_pda_desc">
+		<text>КПК убитого наёмника.</text>
+	</string>
+	<string id="st_sad_fedor_pda_name">
+		<text>КПК Фёдора</text>
+	</string>
+	<string id="st_sad_fedor_pda_desc">
+		<text>Последняя запись:\n Мутный, сука, теперь меня не оставит в покое. Сделка, конечно, выгодная, но... свидетели долго не живут. Если я погибну, то эта запись прояснит ситуацию.\n Мутный грабит сталкеров около первого моста от его базы, когда те возвращаются с жирными артефактами из центра долины. Я случайно узнал об этом, но никому не рассказал. Решил навариться на шантаже, как последняя крыса. Мутный отдавал небольшой процент от награбленного. А флешку с инфой я оставил Васе Почте. В случае моей смерти он должен был раскодировать её и передать Максимильяну. Так вот всё вышло.</text>
+	</string>
+	<string id="st_sad_b4_jail_key_name">
+		<text>Ключ</text>
+	</string>
+	<string id="st_sad_b4_jail_key_desc">
+		<text>Ключ от тюремной камеры на базе наёмников.</text>
+	</string>
+	<string id="st_sad_microshema_name">
+		<text>Микросхема</text>
+	</string>
+	<string id="st_sad_microshema_desc">
+		<text>Микросхема для сканера пространственных аномалий.</text>
+	</string>
+	<string id="sad_scanner_desc">
+		<text>Сканер, настроенный на выявление пространственных аномалий.</text>
+	</string>
+	<string id="sad_scanner_name">
+		<text>Сканер.</text>
+	</string>
+	<string id="st_sad_scanner_desc">
+		<text>Сканер, настроенный на выявление пространственных аномалий.</text>
+	</string>
+	<string id="st_sad_scanner_name">
+		<text>Сканер</text>
+	</string>
+	<string id="sad_maxim_tresure_locked_txt">
+                <text>Личный ящик Максимильяна. Закрыто на ключ.</text>
+        </string>
+	<string id="st_sad_b2_maxim_key_name">
+		<text>Ключ от ящика</text>
+	</string>
+	<string id="st_sad_b2_maxim_key_desc">
+		<text>Ключ от личного ящика Максимильяна.</text>
+	</string>
+	<string id="sad_cowboy_tresure_locked_txt">
+                <text>Личный ящик Семёна Ковбоя. Закрыто на ключ.</text>
+        </string>
+	<string id="st_sad_cowboy_inventory_key_name">
+		<text>Ключ от ящика</text>
+	</string>
+	<string id="st_sad_cowboy_inventory_key_desc">
+		<text>Ключ от личного ящика Семёна Ковбоя.</text>
+	</string>
+	<string id="sad_inventory_box_key_locked">
+                <text>Закрыто на ключ</text>
+        </string>
+	<string id="st_sad_mudak_inventory_key_name">
+                <text>Ключ от ящика</text>
+        </string>
+	<string id="st_sad_mudak_inventory_key_desc">
+                <text>Ключ от личного ящика Ильи Барабоса.</text>
+        </string>
+	<string id="st_sad_sim_8_inventory_key_name">
+                <text>Ключ от военного ящика</text>
+        </string>
+	<string id="st_sad_sim_8_inventory_key_desc">
+                <text>Ключ от военного ящика.</text>
+        </string>
+	<string id="st_sad_b2_tech_stuff_name">
+		<text>Инструментальный ящик</text>
+	</string>
+	<string id="st_sad_b2_tech_stuff_desc">
+		<text>Ящик с инструментами техника.</text>
+	</string>
+	<string id="st_sad_teleport_docs_desc">
+		<text>Документация по настройке сканера транспространственных аномалий.</text>
+	</string>
+	<string id="st_sad_teleport_docs_name">
+		<text>Рукопись Мишки Тесла</text>
+	</string>
+	<string id="st_sad_b2_trader_notebook_desc">
+		<text>Ноутбук торговца. Доступ закрыт, необходимо знать пароль.</text>
+	</string>
+	<string id="st_sad_b2_trader_notebook_name">
+		<text>Ноутбук</text>
+	</string>
+	<string id="st_sad_mudak_pda_name">
+		<text>КПК Ильи Барбоса</text>
+	</string>
+	<string id="st_sad_mudak_pda_desc">
+		<text>Одна из заметок:\n А не хилую схему пахан подкинул. Мы с братаном затесались среди сталкеров и пустили слух, что в заброшенном лагере тварь завелась. Ну и водим туда лошков, охочих до бабла, по одному. Забираем хабар, а трупики рядом в пещерке складываем...</text>
+	</string>
+	
+	<string id="st_sad_vadik_flesh_name">
+		<text>Флешка</text>
+	</string>
+	<string id="st_sad_vadik_flesh_desc">
+		<text>Флешка с личными данными и письмами сталкера по кличке Вадик Лётчик.</text>
+	</string>
+	<string id="st_sad_romka_flesh_desc">
+		<text>Флешка с личными данными и письмами сталкера по кличке Ромка Холостой.</text>
+	</string>
+	<string id="st_sad_ucheny_flesh_desc">
+		<text>Флешка с данными о замерах аномальных полей.</text>
+	</string>
+	<string id="st_sad_ucheny_flesh_name">
+		<text>Флешка Андрея Головы</text>
+	</string>
+	<string id="st_sad_psi_case_name">
+		<text>Ящик торговца</text>
+	</string>
+	<string id="st_sad_psi_case_desc">
+		<text>Ящик с товаром для торговца.</text>
+	</string>
+	<string id="st_sad_gribok_desc">
+		<text>Местный радиактивный гриб. Несъедобен.</text>
+	</string>
+	<string id="st_sad_gribok_name">
+		<text>Белый гриб</text>
+	</string>
+
+	<string id="st_af_kubik_name">
+		<text>Артефакт «Кубик Рубика»</text>
+	</string>
+	<string id="st_af_kubik_descr">
+		<text>Артефакт интересного внешнего вида и неизвестной, пока, природы происхождения. Обладает уникальным свойством - он способен почти полностью поглащать аномальное пси-воздействие на организм носителя.</text>
+	</string>
+	
+	<string id="st_af_knot_name">
+		<text>Артефакт «Узел»</text>
+	</string>
+	<string id="st_af_knot_descr">
+		<text>Артефакт обладает способностью активно притягивать и поглощать радиоактивные частицы, тем самым уменьшая облучённость организма. В Зоне и за её пределами, хотя и негласно, используется при лечении острой лучевой болезни.</text>
+	</string>
+	
+	<string id="st_af_zakrut_name">
+		<text>Артефакт «Почки»</text>
+	</string>
+	<string id="st_af_zakrut_descr">
+		<text>Артефакт ускоряет регенерацию тканей и органов живых существ, а также нормализует метаболические процессы. Радиоактивен.</text>
+	</string>
+	
+	<string id="st_sad_sim_7_cave_corpse_pda_desc">
+		<text>Последняя запись:\n Чёрт! Здесь, наверно, и подохну. Мутанты загнали в эту грёбаную пещеру. Надо же, угодил в аномалию... как турист, млин, попался.\n И ещё, если ты читаешь эту запись - значит я уже не жилец. Будь добр, отнеси этот КПК торговцу на базе Максимильна. Тут есть для него информация. Ну и тебе награда (один хрен, не пропадать же добру) - спрятал весь свой хабар на дереве около этой долбаной пещеры... Ха, повезёт же кому-то...</text>
+	</string>
+	<string id="st_sad_sim_7_cave_corpse_pda_name">
+		<text>КПК Пети Сайгака</text>
+	</string>
+	<string id="sad_cave_explosive_name">
+		<text>Взрывчатка</text>
+	</string>
+	<string id="sad_cave_explosive_desc">
+		<text>Самодельная взрывчатка. Несколько толовых шашек соединённых проводами с электронным взрывателем.</text>
+	</string>
+	<string id="st_sad_sim_5_cave_corpse_pda_name">
+		<text>КПК Лютого</text>
+	</string>
+	<string id="st_sad_sim_5_cave_corpse_pda_desc">
+		<text>Был ближе к центру... Артефактов там уже - кот наплакал... Дальше не пошёл.\n Блин, меня Валерий Палыч с говном съест, когда узнает, что я его ствол скинул. А что оставалось делать? Зверьё напало - еле ноги унёс. Позже схожу - заберу.</text>
+	</string>
+	
+	<string id="st_sad_vofkas_pda_desc">
+		<text>Заметка:\n Нашёл я, наконец-то, сталкера, о котором говорил профессор Стаховский. Точнее то, что осталось от сталкера. Скопировал данные из его КПК. Буду поблизости - не забыть отдать профессору.\n\n Последняя запись:\n  Чёрт, какого хрена я сюда попёрся? Ещё эта аномалия - хрен выберешься. Приближаюсь к телепорту, а он возникает в другом месте. Такое впечатление, что эта хрень видит то же, что и я. Хоть глаза закрывай. Играет, падла, в кошки-мышки со мной... Зомби цепанул, аптечек уже не осталось... Похоже, это конец...</text>
+	</string>
+	<string id="st_sad_vofkas_pda_name">
+		<text>КПК Вовки</text>
+	</string>
+
+	<string id="st_sad_military_corpsik_info_desc">
+		<text>Последняя заметка:\n Для тех, кто не может меня найти самостоятельно и забрать ключ от ящика.\n Я ушёл в южном направлении... Ищите меня там...</text>
+	</string>
+	<string id="st_sad_military_corpsik_info_name">
+		<text>Блокнот капитана Козлова</text>
+	</string>
+
+	<string id="sad_b2_tech_stuff_name">
+		<text>Ящик с вещами техника.</text>
+	</string>
+
+	<string id="sad_gena_zapiska_desc">
+		<text>Документация по настройке сканера транспространственных аномалий.</text>
+	</string>
+	<string id="sad_gena_zapiska_name">
+		<text>Рукопись Мишки Тесла.</text>
+	</string>
+
+</string_table>
+

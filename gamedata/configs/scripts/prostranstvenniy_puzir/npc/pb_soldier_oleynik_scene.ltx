@@ -1,0 +1,83 @@
+#include "pb_soldier_oleynik_scene_*.ltx"
+
+;#include "scripts\prostranstvenniy_puzir\npc\pb_soldier_oleynik_scene_general.ltx"
+
+[logic]
+active = walker@pb_soldier_need_help
+suitable = {=check_npc_name(pb_soldier_oleynik)} true, false
+level_spot = quest_npc
+prior = 250
+post_combat_time = 0, 0
+
+[walker@pb_soldier_need_help]
+path_walk = pro_soldier_oleynik_wounded_walk
+wounded = wounded@pb_soldier_wounded
+on_info = {-pro_soldier_oleynik_dialog_survive_start} %=play_sound(help_heavy)%
+on_info2 = {+pro_soldier_teleport_to_base} walker@soldier_go_to_base_7 %=teleport_npc(pro_soldier_oleynik_walk_7) +pro_soldier_oleynik_dialog_survive_start%
+on_info3 = {+pro_soldier_oleynik_not_give_medkit} %-pro_soldier_oleynik_dialog_survive_start%
+corpse_detection_enabled = false
+
+[wounded@pb_soldier_wounded_gen]
+hp_state = 101|wounded_heavy@nil
+hp_state_see = 101|wounded_heavy@nil
+hp_victim = 101|actor
+hp_cover = 101|false
+hp_fight = 101|false
+autoheal = false
+help_start_dialog = pb_soldier_oleynik_wounded
+not_for_help = true
+
+[wounded@pb_soldier_wounded]:wounded@pb_soldier_wounded_gen
+enable_talk = true
+
+[walker@soldier_go_to_base_1]
+path_walk = pro_soldier_oleynik_walk_1
+meet = no_meet
+def_state_moving = walk_wounded
+on_info = {+pro_actor_meet_soldier_done} walker@soldier_to_base_only
+combat_ignore_cond = true 
+combat_ignore_keep_when_attacked = true
+gather_items_enabled = false
+help_wounded_enabled = false
+corpse_detection_enabled = false
+invulnerable = true
+on_signal = pro_soldier_oleynik_home_1 | {-pro_soldier_move_1} walker@soldier_go_to_base_2 %+pro_soldier_move_1%
+
+[walker@soldier_go_to_base_2]
+path_walk = pro_soldier_oleynik_walk_2
+meet = no_meet
+def_state_moving = walk_wounded
+on_info = {+pro_actor_meet_soldier_done} walker@soldier_to_base_only
+combat_ignore_cond = true 
+combat_ignore_keep_when_attacked = true
+gather_items_enabled = false
+help_wounded_enabled = false
+corpse_detection_enabled = false
+invulnerable = true
+on_signal = pro_soldier_oleynik_home_2 | {-pro_soldier_move_2} walker@soldier_go_to_base_3 %+pro_soldier_move_2%
+
+[walker@soldier_go_to_base_3]
+path_walk = pro_soldier_oleynik_walk_3
+meet = no_meet
+def_state_moving = walk_wounded
+on_info = {+pro_actor_meet_soldier_done} walker@soldier_to_base_only
+combat_ignore_cond = true 
+combat_ignore_keep_when_attacked = true
+gather_items_enabled = false
+help_wounded_enabled = false
+corpse_detection_enabled = false
+invulnerable = true
+on_signal = pro_soldier_oleynik_home_3 | {-pro_soldier_move_3} walker@soldier_go_to_base_4 %+pro_soldier_move_3%
+
+[walker@soldier_go_to_base_4]
+path_walk = pro_soldier_oleynik_walk_4
+meet = no_meet
+def_state_moving = walk_wounded
+on_info = {+pro_actor_meet_soldier_done} walker@soldier_to_base_only
+combat_ignore_cond = true 
+combat_ignore_keep_when_attacked = true
+gather_items_enabled = false
+help_wounded_enabled = false
+corpse_detection_enabled = false
+invulnerable = true
+on_signal = pro_soldier_oleynik_home_4 | {-pro_soldier_move_4} walker@soldier_go_to_base_5 %+pro_soldier_move_4%

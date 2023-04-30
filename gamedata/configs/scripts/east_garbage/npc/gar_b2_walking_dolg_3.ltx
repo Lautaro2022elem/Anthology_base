@@ -1,0 +1,25 @@
+[logic]
+suitable = {=check_npc_name(gar_b2_walking_dolg_3)} true
+active = move@guard
+
+[move@guard]
+scheme_type            = patrol
+patrol_count_path      = 2
+patrol_path_1          = 91879
+patrol_path_1_state    = patrol
+patrol_path_2          = 33103
+patrol_path_2_state    = patrol
+invulnerable           = false
+meet                   = meet
+
+
+[meet]
+close_anim 		= nil
+close_victim 	= nil
+far_anim 		= nil
+far_victim 		= nil
+abuse           = true
+use             = true
+allow_break     = false
+meet_on_talking = true
+trade_enable    = false

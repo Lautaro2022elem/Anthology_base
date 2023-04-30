@@ -1,0 +1,12 @@
+[logic]
+active = ph_idle@pustoy
+
+[ph_idle@pustoy]
+nonscript_usable = true
+tips = st_radiostation_check_descr
+on_info = {+topi_radist_multimetr_tai_1_use} ph_idle@ustanovlen
+
+[ph_idle@ustanovlen]
+nonscript_usable = false
+tips = st_radiostation_installed_descr
+

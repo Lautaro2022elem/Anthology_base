@@ -1,0 +1,121 @@
+[walker@def]
+meet = no_meet
+gather_items_enabled = false
+help_wounded_enabled = false
+corpse_detection_enabled = false
+wounded = wounded
+
+[patrol@def]:walker@def
+combat_ignore_cond = {+sad_radik_otkaz =fighting_dist_ge(50) !is_enemy_actor} true, {-sad_radik_otkaz =fighting_dist_ge(25) !is_enemy_actor} true
+on_sound = actor|WPN_shoot|10000|0.2| {=dist_to_actor_le(70)} %+sad_sher_pdast_in_combat%
+
+[wounded]
+hp_state 		= 0|wounded_heavy@help_heavy
+hp_state_see 	= 0|wounded_heavy@help_heavy
+hp_victim 		= 0|nil
+hp_fight 		= 0|false
+hp_cover		= 0|false
+
+[combat]
+on_info = %+sad_sher_pdast_in_combat%
+
+[hit]
+on_info = %+sad_sher_pdast_in_combat%
+
+[death]
+on_info = %+sad_sher_pdast_in_combat%
+
+; -------------------------------------------------------------------------------------------------------------------------------------------- 1
+[logic@pdast_1]
+active = patrol@1_1
+suitable = {=target_squad_name(sad_sher_killer_pdast_squad) =is_squad_commander} true, {=target_squad_name(sad_sher_killer_masters_squad) =is_squad_commander} true, false
+on_combat = combat
+on_death = death
+on_hit = hit
+prior = 250
+
+[patrol@1_1]:patrol@def
+path_walk = merc_patrul
+formation = back
+commander = true
+on_info = {+sad_sher_pdast_in_combat} walker@1
+
+[walker@1]:walker@def
+path_walk = gvard_1_walk
+path_look = gvard_1_look
+
+; -------------------------------------------------------------------------------------------------------------------------------------------- 2
+[logic@pdast_2]
+active = patrol@2_1
+suitable = {=target_squad_name(sad_sher_killer_pdast_squad) !is_squad_commander} true, {=target_squad_name(sad_sher_killer_masters_squad) !is_squad_commander} true, false
+on_combat = combat
+on_death = death
+on_hit = hit
+prior = 240
+
+[patrol@2_1]:patrol@def
+path_walk = merc_patrul
+formation = back
+commander = false
+on_info = {+sad_sher_pdast_in_combat} walker@2
+
+[walker@2]:walker@def
+path_walk = gvard_2_walk
+path_look = gvard_2_look
+
+; -------------------------------------------------------------------------------------------------------------------------------------------- 3
+[logic@pdast_3]
+active = patrol@3_1
+suitable = {=target_squad_name(sad_sher_killer_pdast_squad) !is_squad_commander} true, {=target_squad_name(sad_sher_killer_masters_squad) !is_squad_commander} true, false
+on_combat = combat
+on_death = death
+on_hit = hit
+prior = 230
+
+[patrol@3_1]:patrol@def
+path_walk = merc_patrul
+formation = back
+commander = false
+on_info = {+sad_sher_pdast_in_combat} walker@3
+
+[walker@3]:walker@def
+path_walk = gvard_3_walk
+path_look = gvard_3_look
+
+; -------------------------------------------------------------------------------------------------------------------------------------------- 4
+[logic@pdast_4]
+active = patrol@4_1
+suitable = {=target_squad_name(sad_sher_killer_pdast_squad) !is_squad_commander} true, {=target_squad_name(sad_sher_killer_masters_squad) !is_squad_commander} true, false
+on_combat = combat
+on_death = death
+on_hit = hit
+prior = 220
+
+[patrol@4_1]:patrol@def
+path_walk = merc_patrul
+formation = back
+commander = false
+on_info = {+sad_sher_pdast_in_combat} walker@4
+
+[walker@4]:walker@def
+path_walk = outfit_gonets_1_walk
+path_look = outfit_gonets_look
+
+; -------------------------------------------------------------------------------------------------------------------------------------------- 5
+[logic@pdast_5]
+active = patrol@5_1
+suitable = {=target_squad_name(sad_sher_killer_pdast_squad) !is_squad_commander} true, {=target_squad_name(sad_sher_killer_masters_squad) !is_squad_commander} true, false
+on_combat = combat
+on_death = death
+on_hit = hit
+prior = 210
+
+[patrol@5_1]:patrol@def
+path_walk = merc_patrul
+formation = back
+commander = false
+on_info = {+sad_sher_pdast_in_combat} walker@4
+
+[walker@5]:walker@def
+path_walk = guard_1_walk
+path_look = guard_1_look

@@ -1,0 +1,111 @@
+---==================================================================================================---
+--------------------------------------------------------------------------------------------------------
+----------------------------------(Загрузчик коллбеков)-------------------------------------------------
+--------------------------------------------------------------------------------------------------------
+---==================================================================================================---
+------------------------------------------------------------------------------
+--                    На использование предмета                             --
+------------------------------------------------------------------------------
+function on_use_item(sect)
+   local actor=db.actor
+   local item_name=sect:section()
+   local actor_pos=db.actor:position() 
+    if find_in_string(item_name,"conserva") then 
+         --/text="Позиция:\\nX= "..db.actor:position().x.."\\nY= "..db.actor:position().y.."\\nZ= "..db.actor:position().z.."\\nlevel_vertex= "..db.actor:level_vertex_id().."\\ngame_vertex_id= "..db.actor:game_vertex_id().."\\ndirection= "..db.actor:direction():getH()
+         --/news_manager.send_tip(db.actor,text,0,mutant_hunter,10000,nil,"Координата") 
+         --/debug_to_file("points.txt",db.actor:position().x..","..db.actor:position().y..","..db.actor:position().z..","..db.actor:level_vertex_id()..","..db.actor:game_vertex_id())
+         --/give_object_to_actor("conserva")
+      --/elseif find_in_string(item_name,"topi_main_quest_document_1") then run_gui(ins_gui_quest_subjects.ui_quest_rls_subjects_1())	
+      elseif find_in_string(item_name,"topi_b19_quest_pnv_1") then 
+	     give_info("topi_b19_pnv_use_item_1")
+	     give_object_to_actor("topi_b19_quest_pnv_1_used")
+		 hide_all_menu()
+	  elseif find_in_string(item_name,"topi_b19_quest_pnv_2") then 
+	     give_info("topi_b19_pnv_use_item_2")
+	     give_object_to_actor("topi_b19_quest_pnv_2_used")
+		 hide_all_menu()
+      elseif find_in_string(item_name,"topi_b19_quest_pnv_3") then 
+	     give_info("topi_b19_pnv_use_item_3")
+	     give_object_to_actor("topi_b19_quest_pnv_3_used")	
+         hide_all_menu()		 
+      --/elseif find_in_string(item_name,"topi_main_quest_document_1") then run_gui(ins_gui_quest_documents.ui_notepad_type_one_1())
+      elseif find_in_string(item_name,"topi_mechanic_proto_device_1") then run_gui(ins_gui_quest_subjects.conventer_protivogaz_box())	
+      elseif find_in_string(item_name,"topi_mechanic_proto_device_2") then run_gui(ins_gui_quest_subjects.ui_protivogaz_testing())	  
+      elseif find_in_string(item_name,"topi_b9_anubis_fugascreate_device") then run_gui(ins_gui_quest_subjects.conventer_fugas_box())
+	  elseif find_in_string(item_name,"topi_b11_multimetr") then run_gui(ins_gui_quest_subjects.ui_multimetr_subject_r1())
+	  elseif find_in_string(item_name,"topi_b11_payalnik") then run_gui(ins_gui_quest_subjects.ui_payalnik_subject_r1()) 
+	  elseif find_in_string(item_name,"topi_a2_main_tainik_1") then run_gui(ins_gui_quest_subjects.ui_a2_gui_all_tainik())
+	  elseif find_in_string(item_name,"topi_zam_protocrafter") then run_gui(ins_gui_quest_subjects.ui_protoyad_subject_r1())	  
+	end   
+end 
+
+------------------------------------------------------------------------------
+--                          На апдейт ящика                                 --
+------------------------------------------------------------------------------
+function on_update_inventory_box(box)      
+   if has_alife_info("topi_snab_first_quest_talking_2") and (not has_alife_info("topi_snab_quest_tai_all_used")) then
+      if find_in_string(box:section(),"topi_example_taynik_1") and not has_alife_info("topi_snab_quest_tai_1_used") then
+         if get_item_section_f_inventory_box(box,"detector_advanced") and get_item_section_f_inventory_box(box,"conserva") and get_item_section_f_inventory_box(box,"medkit") and get_item_section_f_inventory_box(box,"bandage") and get_item_section_f_inventory_box(box,"antirad") and get_item_section_f_inventory_box(box,"wpn_ak104") and get_item_section_f_inventory_box(box,"ammo_7.62x39_fmj") then
+            hide_all_menu()
+            give_info("topi_snab_quest_tai_1_used")
+         end
+	  end
+   end 
+   if has_alife_info("topi_snab_first_quest_talking_2") and (not has_alife_info("topi_snab_quest_tai_all_used")) then
+      if find_in_string(box:section(),"topi_example_taynik_2") and not has_alife_info("topi_snab_quest_tai_2_used") then
+         if get_item_section_f_inventory_box(box,"detector_advanced") and get_item_section_f_inventory_box(box,"conserva") and get_item_section_f_inventory_box(box,"medkit") and get_item_section_f_inventory_box(box,"bandage") and get_item_section_f_inventory_box(box,"antirad") and get_item_section_f_inventory_box(box,"wpn_ak104") and get_item_section_f_inventory_box(box,"ammo_7.62x39_fmj") then
+            hide_all_menu()
+            give_info("topi_snab_quest_tai_2_used")
+         end
+	  end
+   end 
+   if has_alife_info("topi_snab_first_quest_talking_2") and (not has_alife_info("topi_snab_quest_tai_all_used")) then
+      if find_in_string(box:section(),"topi_example_taynik_3") and not has_alife_info("topi_snab_quest_tai_3_used") then
+         if get_item_section_f_inventory_box(box,"detector_advanced") and get_item_section_f_inventory_box(box,"conserva") and get_item_section_f_inventory_box(box,"medkit") and get_item_section_f_inventory_box(box,"bandage") and get_item_section_f_inventory_box(box,"antirad") and get_item_section_f_inventory_box(box,"wpn_ak104") and get_item_section_f_inventory_box(box,"ammo_7.62x39_fmj") then
+            hide_all_menu()
+            give_info("topi_snab_quest_tai_3_used")
+         end
+	  end
+   end 
+   if has_alife_info("topi_radist_quest_talking_1") and (not has_alife_info("topi_radist_quest_tai_all_used")) then
+      if find_in_string(box:section(),"topi_barsuk_taynik_1") and not has_alife_info("topi_radist_quest_tai_1_used") then
+         if get_item_section_f_inventory_box(box,"topi_barsuk_taynik_1_akum") and get_item_section_f_inventory_box(box,"topi_barsuk_taynik_1_blok") and get_item_section_f_inventory_box(box,"topi_barsuk_taynik_1_pered") and get_item_section_f_inventory_box(box,"topi_barsuk_taynik_1_kabel") and get_item_section_f_inventory_box(box,"topi_barsuk_taynik_1_naved") then
+            hide_all_menu()
+            give_info("topi_radist_quest_tai_1_used")
+         end
+	  end
+   end 
+   if has_alife_info("topi_radist_quest_talking_1") and (not has_alife_info("topi_radist_quest_tai_all_used")) then
+      if find_in_string(box:section(),"topi_barsuk_taynik_2") and not has_alife_info("topi_radist_quest_tai_2_used") then
+         if get_item_section_f_inventory_box(box,"topi_barsuk_taynik_1_akum") and get_item_section_f_inventory_box(box,"topi_barsuk_taynik_1_blok") and get_item_section_f_inventory_box(box,"topi_barsuk_taynik_1_pered") and get_item_section_f_inventory_box(box,"topi_barsuk_taynik_1_kabel") and get_item_section_f_inventory_box(box,"topi_barsuk_taynik_1_naved") then
+            hide_all_menu()
+            give_info("topi_radist_quest_tai_2_used")
+         end
+	  end
+   end 
+   if has_alife_info("topi_radist_quest_talking_1") and (not has_alife_info("topi_radist_quest_tai_all_used")) then
+      if find_in_string(box:section(),"topi_barsuk_taynik_3") and not has_alife_info("topi_radist_quest_tai_3_used") then
+         if get_item_section_f_inventory_box(box,"topi_barsuk_taynik_1_akum") and get_item_section_f_inventory_box(box,"topi_barsuk_taynik_1_blok") and get_item_section_f_inventory_box(box,"topi_barsuk_taynik_1_pered") and get_item_section_f_inventory_box(box,"topi_barsuk_taynik_1_kabel") and get_item_section_f_inventory_box(box,"topi_barsuk_taynik_1_naved") then
+            hide_all_menu()
+            give_info("topi_radist_quest_tai_3_used")
+         end
+	  end
+   end 
+   if has_alife_info("topi_trader_2_quest_talking_1") and (not has_alife_info("topi_trader_2_quest_talking_2")) then
+      if find_in_string(box:section(),"topi_trader_taynik_1") and not has_alife_info("topi_a6_trader_quest_2_tainik_set") then
+         if get_item_section_f_inventory_box(box,"topi_a6_trader_documents") then
+            hide_all_menu()
+            give_info("topi_a6_trader_quest_2_tainik_set")
+         end
+	  end
+   end
+   if has_alife_info("topi_radist_multimetr_tai_1_set") and (not has_alife_info("topi_radist_multimetr_tai_1_use")) then
+      if find_in_string(box:section(),"topi_radiostation_taynik_1") and not has_alife_info("topi_radist_multimetr_quest_talking_3") then
+         if get_item_section_f_inventory_box(box,"topi_b11_plata_3_paika") and get_item_section_f_inventory_box(box,"topi_b11_plata_1") and get_item_section_f_inventory_box(box,"topi_b11_plata_2") and get_item_section_f_inventory_box(box,"topi_b11_plata_4") then
+            hide_all_menu()
+            give_info("topi_radist_multimetr_tai_1_use")
+         end
+	  end
+   end   
+end
+-------------------------------------//Copyright 2013-2014 Geonezis//-------------------------------------------------

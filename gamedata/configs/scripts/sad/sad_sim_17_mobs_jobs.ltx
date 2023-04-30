@@ -1,0 +1,50 @@
+; -------------------------------------------------------------------------------------------------------- gigant
+[logic@gigant]
+suitable = {=is_monster_chimera} true
+monster_job = true
+active = mob_home@gigant
+prior = 220
+
+[mob_home@gigant]
+path_home = gigant_home
+home_min_radius = 15
+home_max_radius = 50
+aggressive = true
+
+; -------------------------------------------------------------------------------------------------------- tushkany
+[logic@default_mob]
+suitable = {=target_squad_name(sad_sim_17_tushkans)} true
+monster_job = true
+
+[logic@tushka_1]:logic@default_mob
+active = mob_walker@1
+prior = 190
+
+[logic@tushka_2]:logic@default_mob
+active = mob_walker@2
+prior = 180
+
+[logic@tushka_3]:logic@default_mob
+active = mob_walker@3
+prior = 170
+
+[logic@tushka_4]:logic@default_mob
+active = mob_walker@4
+prior = 160
+
+[logic@tushka_5]:logic@tushka_4
+[logic@tushka_6]:logic@tushka_4
+[logic@tushka_7]:logic@tushka_4
+[logic@tushka_8]:logic@tushka_4
+
+[mob_walker@1]
+path_walk = tushki_xaos_1
+
+[mob_walker@2]
+path_walk = tushki_xaos_2
+
+[mob_walker@3]
+path_walk = tushki_xaos_3
+
+[mob_walker@4]
+path_walk = tushki_xaos_4

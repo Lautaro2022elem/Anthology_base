@@ -1,0 +1,58 @@
+[logic@def]
+on_hit = hit
+on_death = death
+suitable = {=target_squad_name(sad_cave_zombied)} true
+prior = 300
+
+[hit]
+on_info = %+sad_cave_snorki_awake%
+
+[death]
+on_info = %+sad_cave_snorki_awake%
+
+[wounded]
+hp_state 		= 0|wounded_heavy@help_heavy
+hp_state_see 	= 0|wounded_heavy@help_heavy
+hp_victim 		= 0|nil
+hp_fight 		= 0|false
+hp_cover		= 0|false
+
+
+[logic@zom_1]:logic@def
+active = walker@1
+[logic@zom_2]:logic@def
+active = walker@2
+[logic@zom_3]:logic@def
+active = walker@3
+[logic@zom_4]:logic@def
+active = walker@4
+[logic@zom_5]:logic@def
+active = walker@5
+[logic@zom_6]:logic@def
+active = walker@6
+[logic@zom_7]:logic@def
+active = walker@7
+
+[walker@def]
+wounded = wounded
+combat_ignore_cond = {=fighting_dist_ge(22)} true
+on_info = {+sad_cave_snorki_awake} walker@around
+
+[walker@1]:walker@def
+path_walk = snork_spawn_1
+[walker@2]:walker@def
+path_walk = snork_spawn_2
+[walker@3]:walker@def
+path_walk = snork_spawn_3
+[walker@4]:walker@def
+path_walk = snork_spawn_4
+[walker@5]:walker@def
+path_walk = snork_spawn_5
+[walker@6]:walker@def
+path_walk = snork_spawn_6
+[walker@7]:walker@def
+path_walk = snork_spawn_7
+
+[walker@around]
+path_walk = zombi_walk_1
+wounded = wounded

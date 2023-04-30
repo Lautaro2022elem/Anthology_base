@@ -1,0 +1,22 @@
+[logic]
+active = sr_idle@spawn_heli
+
+[sr_idle@spawn_heli]
+on_info = {+pb_zver_signal_helicopter -pb_army_helicopter_spawn_end} sr_idle@heli_die_intro %+pb_army_helicopter_spawn_end%
+
+[sr_idle@heli_die_intro]
+on_info = {+pro_heli_destroy_complete} sr_idle@heli_die
+
+[sr_idle@heli_die]
+on_timer = 1800 | sr_idle@spawn_soldier_wounded_intro %+pro_heli_destroy_down_complete%
+
+[sr_idle@spawn_soldier_wounded_intro]
+on_info = {+pro_heli_destroy_down_complete} sr_idle@spawn_soldier_wounded
+
+[sr_idle@spawn_soldier_wounded]
+on_timer = 4000 | sr_idle@give_info %=spawn_object(pb_soldier_oleynik_wounded:pro_soldier_oleynik_wounded_walk)%
+
+[sr_idle@give_info]
+on_timer = 1500 | sr_idle@nil %+pro_heli_spawn_soldier_wounded%
+
+[sr_idle@nil]

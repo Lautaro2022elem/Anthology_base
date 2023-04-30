@@ -1,0 +1,35 @@
+;=========meet_stalker_korpys========
+[meet@korpys_stalker]
+close_anim 		= nil
+close_victim 	= nil
+far_anim 		= nil
+far_victim 		= nil
+close_distance 	= 0
+far_distance 	= 0
+use = {=actor_enemy} false, {=dist_to_actor_le(3)} true, false
+snd_on_use = {!dist_to_actor_le(3)} nil
+meet_on_talking = false
+;==================================
+
+[logic]
+suitable = {=check_npc_name(labx7_ghost_two)} true
+prior = 200
+active = remark@target_actor_two
+on_hit = hit@ghost_two
+
+[remark@target_actor_two]
+anim = wait_na
+target = story | actor
+on_info = {=dist_to_actor_le(4) -labx7_ghost_two_talk_sound_stop} %=play_sound(labx7_ghost_talk_about_stronglav_2) +labx7_ghost_two_talk_sound_stop%
+on_info2 = {=dist_to_actor_le(7) -labx7_ghost_two_ready_to_release} %+labx7_ghost_two_ready_to_release%
+on_info3 = {+labx7_actor_hit_ghost_two} %=release_npc%
+combat_ignore_cond = true
+combat_ignore_keep_when_attacked = true
+invulnerable = true
+gather_items_enabled = false
+help_wounded_enabled = false
+corpse_detection_enabled = false
+use_camp = false
+
+[hit@ghost_two]
+on_info = {=hit_by_actor +labx7_ghost_two_ready_to_release -labx7_actor_hit_ghost_two} %+labx7_actor_hit_ghost_two%

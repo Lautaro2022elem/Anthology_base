@@ -1,0 +1,64 @@
+[smart_terrain]
+squad_id = 3
+max_population = {+sad_mutny_gone} 3, 4
+respawn_params = respawn@sad_b1
+arrive_dist = 100
+respawn_idle = 172800
+
+[respawn@sad_b1]
+spawn_stalker@novice
+spawn_stalker@veteran
+spawn_stalker@sim
+
+[spawn_stalker@novice]
+spawn_squads = sad_b1_stalker_squad_novice
+spawn_num = {+sad_mutny_b1_accuped} 0, 1
+
+[spawn_stalker@veteran]
+spawn_squads = sad_b1_stalker_squad_veteran
+spawn_num = {+sad_mutny_gone} 1, 0
+
+[spawn_stalker@sim]
+spawn_squads = stalker_sim_squad_novice
+spawn_num = 1
+
+
+[exclusive]
+sad_b1_stalker_mutny = sad\sad_b1_stalker_mutny.ltx
+sad_b1_stalker_barman = sad\sad_b1_stalker_mutny.ltx
+sad_b1_stalker_tech = sad\sad_b1_stalker_mutny.ltx
+sad_b1_mutny_member_1 = sad\sad_b1_stalker_mutny.ltx
+sad_b1_mutny_member_2 = sad\sad_b1_stalker_mutny.ltx
+
+sad_b1_guarder_1 = sad\sad_b1_logic.ltx
+sad_b1_guarder_2 = sad\sad_b1_logic.ltx
+sad_b1_guarder_3 = sad\sad_b1_logic.ltx
+sad_b1_guarder_4 = sad\sad_b1_logic.ltx
+job_1 = sad\sad_b1_logic.ltx
+job_2 = sad\sad_b1_logic.ltx
+job_3 = sad\sad_b1_logic.ltx
+job_4 = sad\sad_b1_logic.ltx
+job_5 = sad\sad_b1_logic.ltx
+job_6 = sad\sad_b1_logic.ltx
+job_7 = sad\sad_b1_logic.ltx
+job_8 = sad\sad_b1_logic.ltx
+job_9 = sad\sad_b1_logic.ltx
+job_10 = sad\sad_b1_logic.ltx
+job_11 = sad\sad_b1_logic.ltx
+job_12 = sad\sad_b1_logic.ltx
+sad_b1_sleeper_1 = sad\sad_b1_logic.ltx
+
+mudak_1 = sad\sad_b1_mudak_job.ltx
+mudak_2 = sad\sad_b1_mudak_job.ltx
+
+grisha_after = sad\sad_b1_grisha_after.ltx
+grisha_after_1 = sad\sad_b1_grisha_after.ltx
+grisha_after_2 = sad\sad_b1_grisha_after.ltx
+grisha_after_3 = sad\sad_b1_grisha_after.ltx
+grisha_after_4 = sad\sad_b1_grisha_after.ltx
+
+new_trader = sad\sad_b1_new_trader_jobs.ltx
+new_tech = sad\sad_b1_new_trader_jobs.ltx
+
+sad_b1_beh_trade_job_1 = sad\sad_b1_stalker_mutny.ltx
+sad_b1_beh_trade_job_1 = sad\sad_b1_new_trader_jobs.ltx

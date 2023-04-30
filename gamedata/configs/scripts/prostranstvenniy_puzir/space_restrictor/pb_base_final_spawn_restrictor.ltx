@@ -1,0 +1,10 @@
+[logic]
+active = sr_idle@spawn_base_final
+
+[sr_idle@spawn_base_final]
+on_info = {+pro_come_back_prostranstvenniy_puzir} sr_idle@spawn_base_final_start
+
+[sr_idle@spawn_base_final_start]
+on_timer = 100 | sr_idle@nil %=create_squad(pro_base_final_squad:pro_smart_terrain_3_0)%
+
+[sr_idle@nil]

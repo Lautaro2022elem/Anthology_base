@@ -1,0 +1,54 @@
+[logic]
+active = heli_move@start
+on_death = death
+
+
+[heli_move@start]
+path_move = city_heli_2_vkl_move
+max_velocity = 100
+engine_sound = false
+mute = false
+on_info = {+city_heli_2_start} heli_move@start_2
+
+[heli_move@start_2]
+path_move = city_heli_2_vkl_2_move
+max_velocity = 100
+immortal = false
+mute = false
+on_game_timer = 125 | heli_move@patr_1
+
+
+[heli_move@patr_1]
+path_move = city_heli_2_way_1
+path_look = city_heli_2_look_2
+engine_sound = true
+max_velocity = 80
+show_health = true
+mute = false
+on_game_timer = 150 | heli_move@patr_2
+enemy = actor
+
+
+[heli_move@patr_2]
+path_move = city_heli_2_way_2
+path_look = city_heli_2_look_2
+engine_sound = true
+max_velocity = 50
+show_health = true
+mute = false
+on_game_timer = 150 | heli_move@patr_3
+enemy = actor
+
+[heli_move@patr_3]
+path_move = city_heli_2_way_3
+path_look = city_heli_2_look_2
+engine_sound = true
+max_velocity = 50
+show_health = true
+mute = false
+on_game_timer = 150 | heli_move@patr_1
+enemy = actor
+
+[death]
+on_info = %+test_heli_death%
+

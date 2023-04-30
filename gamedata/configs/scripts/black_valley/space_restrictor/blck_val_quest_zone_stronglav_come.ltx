@@ -1,0 +1,29 @@
+[logic]
+active = sr_idle@stronglav_come
+
+[sr_idle@stronglav_come]
+on_actor_inside = {+blck_val_monolit_leader_dialog_done -blck_val_stronglav_come_info_give} %+blck_val_stronglav_come_info_give%
+on_info = {+blck_val_stronglav_come_info_give} sr_idle@stronglav_dym
+
+[sr_idle@stronglav_dym]
+on_timer = 1000 | sr_idle@stronglav_spawn %+blck_val_stronglav_monolit_spawn_dym%
+
+[sr_idle@stronglav_spawn]
+on_timer = 2000 | sr_idle@hit_actor %=spawn_object(blck_val_stronglav_scene:blck_val_stronglav_final_spawn)%
+
+[sr_idle@hit_actor]
+on_timer = 2000 | sr_idle@hit_2 %=NpcKickActor%
+
+[sr_idle@hit_2]
+on_timer = 1600 | sr_idle@hit_3 %=bed_getup_zver =run_postprocess(black:2525:true) =spawn_object(blck_val_monolith_informator:blck_val_monolith_information_walk)%
+
+[sr_idle@hit_3]
+on_timer = 2000 | sr_idle@hit_4 %=teleport_actor(actor_monolith_base_wake_up_walk:actor_monolith_base_wake_up_look) +blck_val_stronglav_go_to_labx7%
+
+[sr_idle@hit_4]
+on_timer = 3000 | sr_idle@hit_5 %=stop_postprocess(2525)%
+
+[sr_idle@hit_5]
+on_timer = 10 | sr_idle@nil %=enable_ui +blck_val_monolith_informator_dialog%
+
+[sr_idle@nil]

@@ -1,0 +1,19 @@
+[logic]
+active = nil ; ph_idle@wait
+
+[ph_idle@wait]
+hit_on_bone = 0| nil
+on_info = {+sad_b2_buda_radio_off} ph_idle@off
+on_info2 = {=dist_to_actor_le(17)} ph_idle@play %=play_sound(gar_hangar_bandit_notebook)%
+
+[ph_idle@play]
+hit_on_bone = 0| nil %=stop_sound +sad_b2_buda_radio_off%
+on_info = {=dist_to_actor_ge(18)} ph_idle@wait %=stop_sound%
+on_info2 = {!is_playing_sound} ph_idle@wait
+tips = sad_radio_off
+on_use = ph_idle@off %+sad_b2_buda_radio_off =stop_sound%
+
+[ph_idle@off]
+hit_on_bone = 0| nil
+tips = sad_radio_on
+on_use = ph_idle@play %-sad_b2_buda_radio_off =play_sound(gar_hangar_bandit_notebook)%

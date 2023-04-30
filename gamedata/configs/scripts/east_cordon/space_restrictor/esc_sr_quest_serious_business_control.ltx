@@ -1,0 +1,24 @@
+[logic]
+active = sr_idle@1
+;;;active = sr_idle@nil
+
+[sr_idle@1]
+on_info = {+spectrum_project_start +esc_quest_serious_business_sidor_dialog_and} sr_idle@2
+
+[sr_idle@2]
+on_info = {+esc_quest_serious_business_obzor_tryp} sr_idle@3 %=clear_smart_terrain(esc_smart_terrain_2_2)%
+
+[sr_idle@3]
+on_info = sr_idle@4 %=create_squad(esc_squad_kpp_quest:esc_smart_terrain_2_2) =spawn_object(esc_npc_pate:esc_npc_pate_spawn)%
+
+[sr_idle@4]
+on_info = {+esc_quest_serious_business_npc_pate_enemy} sr_idle@5 %=set_squad_enemy_to_actor(esc_squad_kpp_quest) =set_squad_enemy_to_actor(esc_bandit_goto_smart_2_1_5)%
+
+[sr_idle@5]
+on_info  = {+esc_serious_business_complite} sr_idle@6 %=clear_smart_terrain(esc_smart_terrain_2_2)% 
+on_info2 = {+esc_serious_business_fail} sr_idle@6 %=clear_smart_terrain(esc_smart_terrain_2_2)% 
+
+[sr_idle@6]
+on_info = sr_idle@nil %=create_squad(esc_squad_kpp:esc_smart_terrain_2_2)%
+
+[sr_idle@nil]

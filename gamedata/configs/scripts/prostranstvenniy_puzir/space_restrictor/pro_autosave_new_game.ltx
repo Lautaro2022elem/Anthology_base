@@ -1,0 +1,17 @@
+[logic]
+active = sr_idle@save_start
+
+[sr_idle@save_start]
+on_info = {+perevalochnaya_lutiy_meet_to_zombied_done} sr_idle@save_start_1
+
+[sr_idle@save_start_1]
+on_timer = 2000 | sr_idle@save_start_2
+
+[sr_idle@save_start_2]
+on_info = {+perevalochnaya_lutiy_meet_to_zombied_done -save_perevalochnaya_baza_start_game} %+save_perevalochnaya_baza_start_game =scenario_autosave(st_save_perevalochnaya_baza_start_game)%
+on_info2 = {+save_perevalochnaya_baza_start_game} sr_idle@save_start_3
+
+[sr_idle@save_start_3]
+on_timer = 2000 | sr_idle@save_start_nil %+pb_text_in_bloknot_1_add =pb_new_text_in_bloknot =show_chapter(chapter_1)%
+
+[sr_idle@save_start_nil]

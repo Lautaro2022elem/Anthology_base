@@ -1,0 +1,13 @@
+[logic]
+active = sr_idle@start
+
+[sr_idle@start]
+on_actor_inside = {+bar_zmeelov_and_helper_spawn =actor_in_zone(bar_turn_to_lift_buttom_off)} sr_idle@tutorial %=run_tutorial(bar_tutorial_lift_turn_off)%
+on_info2 = {+bar_lift_turn_off} sr_idle@nil
+
+[sr_idle@tutorial]
+on_info = {+bar_zmeelov_and_helper_spawn !actor_in_zone(bar_turn_to_lift_buttom_off)} sr_idle@start %=stop_tutorial%
+on_info2 = {+bar_lift_turn_off} sr_idle@nil
+on_info3 = {!has_active_tutorial} sr_idle@start
+
+[sr_idle@nil]

@@ -1,0 +1,8 @@
+[logic]
+active = sr_idle@bad_end_game_play_sound
+
+[sr_idle@bad_end_game_play_sound]
+on_info = {+bar_end_game_bad_sound_play -bar_end_game_bad_sound_stop} %=music_bad_end_game +bar_end_game_bad_sound_stop%
+on_info2 = {+bar_actor_torch_bad -bar_actor_not_scary_more} sr_idle@nil %=play_sound(end_game_actor_sceary)%
+
+[sr_idle@nil]

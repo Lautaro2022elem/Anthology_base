@@ -1,0 +1,62 @@
+[logic@wiz_jekan_scene]
+suitable = {=npc_community(stalker)} true
+prior = 200
+active = walker@wiz_jekan_scene
+post_combat_time = 0, 0
+
+[walker@wiz_jekan_scene]
+path_walk = prisoner_walk
+path_look = prisoner_look
+def_state_standing = prisoner
+combat_ignore_cond = true
+combat_ignore_keep_when_attacked = true
+invulnerable = true
+gather_items_enabled = false
+help_wounded_enabled = false
+corpse_detection_enabled = false
+use_camp = false
+on_info = {+free_neutral_jekan_free} walker@wiz_jekan_scene_01
+meet = meet@wiz_jekan_scene
+
+[walker@wiz_jekan_scene_01]
+path_walk = prisoner_1_walk
+path_look = prisoner_1_look
+def_state_standing = ward
+combat_ignore_cond = true
+combat_ignore_keep_when_attacked = true
+invulnerable = true
+gather_items_enabled = false
+help_wounded_enabled = false
+corpse_detection_enabled = false
+use_camp = false
+meet = meet@wiz_jekan_scene_01
+
+[meet@wiz_jekan_scene] 
+close_snd_hello = wiz_stalker_kosta_greeting
+close_snd_bye = wiz_stalker_kosta_farewell 
+abuse           = false
+close_anim 		= nil
+far_anim 		= nil
+far_victim 		= nil
+close_distance  = 0
+far_distance 	= 0
+close_victim = actor
+use = {!actor_enemy =dist_to_actor_le(2)} self, true
+meet_dialog = wiz_free_neutral_jekan_free
+allow_break = false
+trade_enable = false
+
+[meet@wiz_jekan_scene_01]  
+close_snd_hello = wiz_stalker_kosta_greeting
+close_snd_bye = wiz_stalker_kosta_farewell
+abuse           = false
+close_anim 		= nil
+far_anim 		= nil
+far_victim 		= nil
+close_distance  = 0
+far_distance 	= 0
+close_victim = actor
+use = nil
+allow_break = false
+trade_enable = false
+

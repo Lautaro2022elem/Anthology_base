@@ -1,0 +1,25 @@
+[logic]
+active = sr_idle@hunter_hutor_spawn
+
+[sr_idle@hunter_hutor_spawn]
+on_info = {+blck_val_bandit_shmiga_give_vihr} sr_idle@hunter_hutor_spawn_start
+
+[sr_idle@hunter_hutor_spawn_start]
+on_timer = 1000 | sr_idle@shaman_quest_info %=spawn_object(blck_val_hunter_hutor:blck_val_hunter_hutor_walk)%
+
+[sr_idle@shaman_quest_info]
+on_info = {+blck_val_stavrid_dialog_vihr_complete} sr_idle@shaman_sends_actor_sms
+
+[sr_idle@shaman_sends_actor_sms]
+on_timer = 4000 | sr_idle@shaman_give_actor_task %=blck_val_shaman_quest_sms_2%
+
+[sr_idle@shaman_give_actor_task]
+on_timer = 3000 | sr_idle@hunter_home_end_spawn %=give_task(blck_val_shaman_talk_line)%
+
+[sr_idle@hunter_home_end_spawn]
+on_info = {+blck_val_final_zastava_quest_hunter_spawn} sr_idle@hunter_home_end_spawn_start
+
+[sr_idle@hunter_home_end_spawn_start]
+on_timer = 10 | sr_idle@nil %=spawn_object(blck_val_hunter_home:blck_val_hunter_hutor_walk)%
+
+[sr_idle@nil]

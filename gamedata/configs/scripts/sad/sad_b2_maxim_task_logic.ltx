@@ -1,0 +1,191 @@
+[logic]
+active = sr_idle@start
+
+[sr_idle@start]
+on_info = sr_idle@wait
+
+; ----------------------------------------------------------------------------------------------------------------------------------------------------------------------- Посылка
+[sr_idle@wait]
+on_info = {+sad_b2_maxim_weapon_task_give -sad_b1_mutny_told_about} sr_idle@1 %=give_task(sad_ban_weapon_for_maxim)%
+on_info2 = {+sad_b1_mutny_told_about -sad_b2_maxim_weapon_task_give} sr_idle@1 %=give_task(sad_b2_maxim_go_to_baza) =give_task(sad_ban_weapon_for_maxim)%
+on_info3 = {=actor_has_item(sad_ban_posilka)} %+sad_b2_maxim_weapon_have +sad_b2_maxim_weapon_have_once%, %-sad_b2_maxim_weapon_have%
+on_info4 = {+sad_b2_maxim_weapon_complete} sr_idle@2
+on_info8 = {+sad_maxim_actor_enemy} sr_idle@enemy_do_agree
+;on_info9 = {+sad_maximilian_dead} sr_idle@enemy_do_agree
+
+[sr_idle@1]
+on_info = {=actor_has_item(sad_ban_posilka)} %+sad_b2_maxim_weapon_have +sad_b2_maxim_weapon_have_once%, %-sad_b2_maxim_weapon_have%
+on_info2 = {+sad_b2_maxim_weapon_complete} sr_idle@2
+on_info8 = {+sad_maxim_actor_enemy} sr_idle@enemy_do_agree
+;on_info9 = {+sad_maximilian_dead} sr_idle@enemy_do_agree
+
+; ----------------------------------------------------------------------------------------------------------------------------------------------------------------------- b3 начало
+[sr_idle@2]
+on_info = {+sad_b3_actor_otkaz_ataka} sr_idle@otkaz
+on_info2 = {+sad_maxim_actor_help_agree} sr_idle@wait_for_time %+sad_maxim_ready_to_go =create_squad(sad_b3a_stalker_ataka_squad:sad_b3a) =give_task(sad_b3_maxim_ataka)%
+on_info8 = {+sad_maxim_actor_enemy} sr_idle@enemy_do_agree
+
+[sr_idle@wait_for_time]
+;on_game_timer = 172800 | sr_idle@wait_for_go ; 172800
+on_info = {+sad_maxim_start_teleport} sr_idle@travel %+sad_maxim_arrive_to_b3a =create_squad(maxim_snorki:sad_sim_23)%
+on_info7 = {+sad_maxim_squad_actor_enemy} sr_idle@nil %+sad_b3_maxim_ataka_cenceled +sad_b3_killers_awake +sad_maxim_actor_enemy +sad_maxim_squad_go_position%
+on_info8 = {+sad_maxim_actor_enemy} sr_idle@enemy_do_arrive
+
+[sr_idle@wait_for_go]
+on_info = {!actor_in_zone(sad_b2_surge_hide)} sr_idle@wait_for_arrived %+sad_maxim_arrive_to_b3a +sad_maxim_squad_go_position%
+on_info2 = {+sad_maxim_start_teleport} sr_idle@travel %+sad_maxim_arrive_to_b3a =create_squad(maxim_snorki:sad_sim_23)%
+on_info7 = {+sad_maxim_squad_actor_enemy} sr_idle@nil %+sad_b3_maxim_ataka_cenceled +sad_b3_killers_awake +sad_maxim_actor_enemy +sad_maxim_squad_go_position%
+on_info8 = {+sad_maxim_actor_enemy} sr_idle@enemy_do_arrive
+
+[sr_idle@travel]
+on_info = {-sad_maxim_arrive_to_b3a} sr_idle@rtr_wait
+on_info2 = {=distance_to_obj_ge(sad_b2_stalker_maxim:30)} sr_idle@travel_far %=send_tip(sad_maximilian_far_warn:sad_b2_stalker_maxim)%
+on_info7 = {+sad_maxim_squad_actor_enemy} sr_idle@enemy_at_arrive, {+sad_maxim_actor_enemy} sr_idle@enemy_at_arrive
+on_info9 = {+sad_maximilian_dead} sr_idle@nil %+sad_b3_maxim_ataka_cenceled +sad_b3_killers_awake%
+
+[sr_idle@travel_far]
+on_info = {-sad_maxim_arrive_to_b3a} sr_idle@rtr_wait
+on_info2 = {=distance_to_obj_le(sad_b2_stalker_maxim:25)} sr_idle@travel
+on_info3 = {=distance_to_obj_ge(sad_b2_stalker_maxim:100)} sr_idle@travel_snork %=send_tip(sad_maximilian_travel_snork:sad_b2_stalker_maxim) =create_mob_near_squad(snork_strong:sad_b2_stalker_maxim_squad) =create_mob_near_squad(snork_strong:sad_b2_stalker_maxim_squad)%
+on_info4 = {=distance_to_obj_ge(sad_b2_stalker_maxim:40) =actor_dont_look_at_squad(sad_b2_stalker_maxim_squad)} sr_idle@travel_snork_near %=send_tip(sad_maximilian_travel_snork_near:sad_b2_stalker_maxim) =create_mob_near_squad(snork_strong:sad_b2_stalker_maxim_squad) =create_mob_near_squad(snork_strong:sad_b2_stalker_maxim_squad)%
+on_info7 = {+sad_maxim_squad_actor_enemy} sr_idle@enemy_at_arrive, {+sad_maxim_actor_enemy} sr_idle@enemy_at_arrive
+on_info9 = {+sad_maximilian_dead} sr_idle@nil %+sad_b3_maxim_ataka_cenceled +sad_b3_killers_awake%
+on_game_timer = 300 | sr_idle@travel
+
+[sr_idle@travel_snork_near]
+on_game_timer = 180 | sr_idle@travel_far
+on_info9 = {+sad_maxim_squad_actor_enemy} sr_idle@enemy_at_arrive, {+sad_maxim_actor_enemy} sr_idle@enemy_at_arrive, {+sad_maximilian_dead} sr_idle@nil %+sad_b3_maxim_ataka_cenceled +sad_b3_killers_awake%
+
+[sr_idle@travel_snork]
+on_game_timer = 30 | sr_idle@nil %=kill_squad(sad_b2_stalker_maxim_squad) +sad_b3_maxim_ataka_cenceled +sad_b3_killers_awake%
+
+[sr_idle@wait_for_arrived]
+on_info = {-sad_maxim_arrive_to_b3a} sr_idle@rtr_wait
+on_info7 = {+sad_maxim_squad_actor_enemy} sr_idle@enemy_at_arrive
+on_info8 = {+sad_maxim_actor_enemy} sr_idle@enemy_at_arrive
+on_info9 = {+sad_maximilian_dead} sr_idle@nil %+sad_b3_maxim_ataka_cenceled +sad_b3_killers_awake%
+
+; ----------------------------------------------------------------------------------------------------------------------------------------------------------------------- b3 Ready to rush
+[sr_idle@rtr_wait]
+on_info = {+sad_b3_maxim_ready_to_rush} sr_idle@rtr_1
+on_info7 = {+sad_maxim_squad_actor_enemy} sr_idle@enemy_at_arrive
+on_info8 = {+sad_maxim_actor_enemy} sr_idle@enemy_at_arrive
+on_info9 = {+sad_maximilian_dead} sr_idle@nil %+sad_b3_maxim_ataka_cenceled +sad_b3_killers_awake%
+
+[sr_idle@rtr_1]
+on_info = {+sad_b3a_start_ataka} sr_idle@ataka_cut %+sad_b3_start_cutscene =set_squad_friend_to_actor(sad_b3a_stalker_ataka_squad) =set_squad_friend_to_actor(sad_b2_stalker_maxim_squad)%
+on_game_timer = 1500 | sr_idle@ataka_no_cut %+sad_b3a_start_ataka +sad_maxim_switch_b3 -sad_maxim_switch_b3a =set_squad_friend_to_actor(sad_b3a_stalker_ataka_squad) =set_squad_friend_to_actor(sad_b2_stalker_maxim_squad) % 
+on_info2 = {=distance_to_obj_ge(sad_b2_stalker_maxim:120)} sr_idle@ataka_no_actor %+sad_b3a_start_ataka +sad_maxim_switch_b3 -sad_maxim_switch_b3a =send_tip(sad_maxim_wtf_faraway:sad_b2_stalker_maxim)%
+on_info7 = {+sad_maxim_squad_actor_enemy} sr_idle@enemy_at_arrive
+on_info8 = {+sad_maxim_actor_enemy} sr_idle@enemy_at_arrive
+on_info9 = {+sad_maximilian_dead} sr_idle@nil %+sad_b3_maxim_ataka_cenceled +sad_b3_killers_awake =set_squad_community_goodwill(sad_b3a_stalker_ataka_squad:killer:enemy) +sad_maxim_switch_b3%
+
+[sr_idle@ataka_cut]
+on_timer = 8000 | sr_idle@ataka_0 %+sad_maxim_switch_b3 -sad_maxim_switch_b3a%
+
+[sr_idle@ataka_no_cut]
+on_timer = 11000 | sr_idle@ataka %+sad_b3_explode_this_shit%
+
+[sr_idle@ataka]
+on_timer = 3000 | sr_idle@ataka_0 %+sad_b3_killers_awake%
+
+[sr_idle@ataka_0]
+on_info = sr_idle@ataka_1 %=set_squads_enemies(sad_b2_stalker_maxim_squad:sad_b3_killer_d_squad) =set_squads_enemies(sad_b3a_stalker_ataka_squad:sad_b3_killer_d_squad)%
+
+[sr_idle@ataka_1]
+on_info = sr_idle@ataka_2 %=set_squads_enemies(sad_b2_stalker_maxim_squad:sad_b3_killer_c_squad) =set_squads_enemies(sad_b3a_stalker_ataka_squad:sad_b3_killer_c_squad)%
+
+[sr_idle@ataka_2]
+on_info = sr_idle@ataka_3 %=set_squads_enemies(sad_b2_stalker_maxim_squad:sad_b3_killer_b_squad) =set_squads_enemies(sad_b3a_stalker_ataka_squad:sad_b3_killer_b_squad)%
+
+[sr_idle@ataka_3]
+on_info = sr_idle@ataka_wait %=set_squads_enemies(sad_b2_stalker_maxim_squad:sad_b3_killer_a_squad) =set_squads_enemies(sad_b3a_stalker_ataka_squad:sad_b3_killer_a_squad)%
+
+[sr_idle@ataka_wait]
+on_info = {+sad_b3_killers_gone} sr_idle@ataka_end %+sad_b3_maxim_ataka_complete =heal_squad(sad_b3a_stalker_ataka_squad)%
+on_info2 = {=sad_dist_to_path_ge(sad_b3_killer_b4_2_look:16000:0)} sr_idle@ataka_far
+on_info7 = {+sad_maxim_squad_actor_enemy} sr_idle@all_enemy %+sad_b3_maxim_ataka_cenceled%, {+sad_maxim_actor_enemy} sr_idle@all_enemy %+sad_b3_maxim_ataka_cenceled%
+on_info8 = {+sad_b3a_stalker_ataka_squad_dead +sad_maximilian_dead} sr_idle@nil %+sad_b3_maxim_ataka_cenceled%
+
+[sr_idle@ataka_far] ; actor to far from Maxim
+on_info = sr_idle@nil %+sad_b3_maxim_ataka_cenceled =kill_squad(sad_b3a_stalker_ataka_squad) =kill_squad(sad_b2_stalker_maxim_squad) =create_squad(sad_b3a_killer_squad:sad_b3)%
+
+
+; ----------------------------------------------------------------------------------------------------------------------------------------------------------------------- После атаки
+[sr_idle@ataka_end]
+on_game_timer = 60 | sr_idle@after_ataka_2
+on_info7 = {+sad_maxim_squad_actor_enemy} sr_idle@all_enemy, {+sad_maxim_actor_enemy} sr_idle@all_enemy
+
+[sr_idle@after_ataka_2]
+on_info = {+sad_maximilian_dead} sr_idle@after_fin %=give_task(sad_b3_radik_talk_task)%, sr_idle@after_fin
+
+[sr_idle@after_fin]
+on_info7 = {+sad_maxim_squad_actor_enemy} sr_idle@all_enemy, {+sad_maxim_actor_enemy} sr_idle@all_enemy
+
+; ----------------------------------------------------------------------------------------------------------------------------------------------------------------------- b3 отказ от атаки
+[sr_idle@otkaz]
+on_timer = 250 | sr_idle@otkaz_fade %=disable_ui =run_postprocess(fade_in:4310) +sad_b2_jail_door_force_lock +sad_b3_killers_awake +sad_b2_otkaz_abuse%
+
+[sr_idle@otkaz_fade]
+on_timer = 1000 | sr_idle@otkaz_start_wake %=run_postprocess(black:4311)%
+
+[sr_idle@otkaz_start_wake]
+on_timer = 2000 | sr_idle@otkaz_wake %=teleport_actor(sad_b2_actor_after_cutscene_walk:sad_b2_actor_after_cutscene_look) =remove_squad(sad_b2_stalker_maxim_squad) =destroy_object(story:sad_b3_kon_door)%
+
+[sr_idle@otkaz_wake]
+on_timer = 3000 | sr_idle@wait_door %=forward_game_time(6) =stop_postprocess(4310) =stop_postprocess(4311) =enable_ui%
+
+[sr_idle@wait_door]
+on_game_timer = 120 | sr_idle@otkaz_end %+sad_b2_actor_jail_exit%
+
+[sr_idle@otkaz_end]
+on_info = sr_idle@clear_abuse %=spawn_corpse(sad_b2_stalker_maxim:sad_b3_roof_sniper_1_look) =spawn_corpse(sad_b2_stalker_maxim_member_1:sad_b3_ataker_place_6) =spawn_corpse(sad_b2_stalker_maxim_member_2:sad_b3a_actor_after_explosion_walk) =spawn_corpse(sad_b2_stalker_maxim_member_3:sad_b3_ataker_place_4) =spawn_corpse(sad_b2_stalker_maxim_member_4:sad_b3_killer_a4_2_look)%
+
+[sr_idle@clear_abuse]
+on_info = {!actor_in_zone(sad_b2_sr_no_assault)} sr_idle@nil %-sad_b2_otkaz_abuse%
+
+; -------------------------------------------------------------------------------------------------------------------------------------------------  Актор враг Макса до выбора
+[sr_idle@enemy_do_agree]
+on_info = sr_idle@enemy_do_agree_0 %+sad_b3_killers_awake =create_squad(sad_b3a_stalker_ataka_squad:sad_b3a)%
+
+[sr_idle@enemy_do_agree_0]
+on_info = {=story_object_exist(sad_b3_kon_door)} sr_idle@enemy_do_agree_1 %=destroy_object(story:sad_b3_kon_door)%, sr_idle@enemy_do_agree_1
+
+[sr_idle@enemy_do_agree_1]
+on_timer = 1000 | sr_idle@enemy_do_agree_2 %=teleport_npc_by_story_id(sad_b2_stalker_maxim_member_1:sad_b3a_gvard_5_look) =teleport_npc_by_story_id(sad_b2_stalker_maxim_member_2:sad_b3a_gvard_3_look) =teleport_npc_by_story_id(sad_b2_stalker_maxim_member_3:sad_b3a_gvard_4_look) =teleport_npc_by_story_id(sad_b2_stalker_maxim_member_4:sad_b3a_actor_teleport)%
+
+[sr_idle@enemy_do_agree_2]
+on_info = sr_idle@all_enemy %=kill_squad(sad_b3a_stalker_ataka_squad) =create_squad(sad_b3a_killer_squad:sad_b3a)%
+
+; -------------------------------------------------------------------------------------------------------------------------------------------------  Актор враг Макса до аривы
+[sr_idle@enemy_do_arrive]
+on_info = sr_idle@enemy_do_arrive_0 %+sad_b3_killers_awake =destroy_object(story:pri_a25_explosive_charge_id)%
+
+[sr_idle@enemy_do_arrive_0]
+on_info = {=story_object_exist(sad_b3_kon_door)} sr_idle@enemy_do_arrive_1 %=destroy_object(story:sad_b3_kon_door)%, sr_idle@enemy_do_arrive_1
+
+[sr_idle@enemy_do_arrive_1]
+on_timer = 1000 | sr_idle@enemy_do_arrive_2 %=teleport_npc_by_story_id(sad_b2_stalker_maxim_member_1:sad_b3a_gvard_5_look) =teleport_npc_by_story_id(sad_b2_stalker_maxim_member_2:sad_b3a_gvard_3_look) =teleport_npc_by_story_id(sad_b2_stalker_maxim_member_3:sad_b3a_gvard_4_look) =teleport_npc_by_story_id(sad_b2_stalker_maxim_member_4:sad_b3a_actor_teleport)%
+
+[sr_idle@enemy_do_arrive_2]
+on_info = sr_idle@all_enemy %=kill_squad(sad_b3a_stalker_ataka_squad) =create_squad(sad_b3a_killer_squad:sad_b3a)%
+
+; -------------------------------------------------------------------------------------------------------------------------------------------------  Актор враг Макса во время аривы
+[sr_idle@enemy_at_arrive]
+on_info = sr_idle@all_enemy %+sad_b3_killers_awake +sad_b3_maxim_ataka_cenceled +sad_maxim_squad_go_position%
+
+; -------------------------------------------------------------------------------------------------------------------------------------------------  Атака без актора
+[sr_idle@ataka_no_actor]
+on_info = sr_idle@ataka_no_actor_1 %=destroy_object(story:sad_b3_kon_door) =destroy_object(story:pri_a25_explosive_charge_id)%
+
+[sr_idle@ataka_no_actor_1]
+on_timer = 8000 | sr_idle@ataka_no_actor_2 %+sad_b3_killers_awake%
+
+[sr_idle@ataka_no_actor_2]
+on_info = {=distance_to_obj_ge(sad_b2_stalker_maxim:80)} sr_idle@nil %+sad_b3_maxim_ataka_cenceled =kill_squad(sad_b3a_stalker_ataka_squad) =kill_squad(sad_b2_stalker_maxim_squad)%, sr_idle@ataka_0
+
+; -------------------------------------------------------------------------------------------------------------------------------------------------- 
+[sr_idle@all_enemy]
+on_info = sr_idle@nil %=set_squad_enemy_to_actor(sad_b3a_stalker_ataka_squad) =set_squad_enemy_to_actor(sad_b2_stalker_maxim_squad) =set_squad_enemy_to_actor(sad_stalker_radik_squad) +sad_maxim_actor_enemy +sad_maxim_squad_actor_enemy +sad_radik_actor_enemy%
+
+[sr_idle@nil]

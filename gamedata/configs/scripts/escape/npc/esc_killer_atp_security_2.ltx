@@ -1,0 +1,14 @@
+---------------Охрана-----------------
+[logic]
+suitable = {=check_npc_name(esc_killer_atp_dvor_td)} true
+prior = 200
+active = walker@esc_killer_atp_dvor_td
+
+[walker@esc_killer_atp_dvor_td]
+path_walk = esc_killer_atp_dvor_td_walk
+path_look = esc_killer_atp_dvor_td_look
+invulnerable = false
+gather_items_enabled = false
+help_wounded_enabled = false
+corpse_detection_enabled = false
+meet = no_meet

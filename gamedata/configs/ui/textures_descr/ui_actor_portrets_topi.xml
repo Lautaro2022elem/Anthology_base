@@ -1,0 +1,68 @@
+<w>
+    <file name="ui\ui_actor_portrets_topi">
+	<texture id="ui_inGame2_Hero_Varg" x="246" y="870" width="123" height="87" />
+
+	<texture id="ui_inGame2_topi_neutral_assault_2" x="0" y="0" width="123" height="87" />
+	<texture id="ui_inGame2_topi_neutral_assault_1" x="0" y="87" width="123" height="87" />
+	<texture id="ui_inGame2_topi_bandit_moh01_mask" x="0" y="174" width="123" height="87" />
+	<texture id="ui_inGame2_topi_bandit_special_1_mask" x="0" y="261" width="123" height="87" />
+	<texture id="ui_inGame2_topi_bandit_moh02_gp5" x="0" y="348" width="123" height="87" />
+	<texture id="ui_inGame2_topi_dolg_1_assault" x="0" y="435" width="123" height="87" />
+	<texture id="ui_inGame2_topi_dolg_2_engineer" x="0" y="522" width="123" height="87" />
+	<texture id="ui_inGame2_topi_dolg_3_sniper" x="0" y="609" width="123" height="87" />
+	<texture id="ui_inGame2_topi_dolg_4_support" x="0" y="696" width="123" height="87" />
+	<texture id="ui_inGame2_topi_monolit_4_support" x="0" y="870" width="123" height="87" />
+
+	<texture id="ui_inGame2_topi_monolit_1_assault" x="123" y="0" width="123" height="87" />
+	<texture id="ui_inGame2_topi_monolit_2_engineer" x="123" y="87" width="123" height="87" />
+	<texture id="ui_inGame2_topi_monolit_3_sniper" x="123" y="174" width="123" height="87" />
+	<texture id="ui_inGame2_topi_killer_mask_1" x="123" y="261" width="123" height="87" />
+	<texture id="ui_inGame2_topi_killer_mask_2" x="123" y="348" width="123" height="87" />
+	<texture id="ui_inGame2_topi_killer_shlem_1" x="123" y="435" width="123" height="87" />
+	<texture id="ui_inGame2_topi_killer_shlem_2" x="123" y="522" width="123" height="87" />
+	<texture id="ui_inGame2_topi_killer_sniper" x="123" y="609" width="123" height="87" />
+	<texture id="ui_inGame2_topi_neutral_quest_hmuriy" x="123" y="696" width="123" height="87" />
+	<texture id="ui_inGame2_topi_neutral_base_harold" x="123" y="783" width="123" height="87" />
+	<texture id="ui_inGame2_topi_neutral_base_hasan" x="123" y="870" width="123" height="87" />
+
+	<texture id="ui_inGame2_topi_recovery_assault_1" x="246" y="0" width="123" height="87" />
+	<texture id="ui_inGame2_topi_recovery_assault_2" x="246" y="87" width="123" height="87" />
+	<texture id="ui_inGame2_topi_recovery_moh01_gp5" x="246" y="174" width="123" height="87" />
+	<texture id="ui_inGame2_topi_recovery_moh02_resp" x="246" y="261" width="123" height="87" />
+	<texture id="ui_inGame2_topi_recovery_moh03_mask" x="246" y="348" width="123" height="87" />
+	<texture id="ui_inGame2_topi_neutral_1_mask" x="246" y="435" width="123" height="87" />
+	<texture id="ui_inGame2_topi_neutral_2_pmk1" x="246" y="522" width="123" height="87" />
+	<texture id="ui_inGame2_topi_neutral_3_gp5" x="246" y="609" width="123" height="87" />
+	<texture id="ui_inGame2_topi_neutral_4_mask" x="246" y="696" width="123" height="87" />
+	<texture id="ui_inGame2_topi_neutral_5_gp5" x="246" y="783" width="123" height="87" />
+
+	<texture id="ui_inGame2_topi_neutral_engineer_1" x="369" y="0" width="123" height="87" />
+	<texture id="ui_inGame2_topi_neutral_engineer_2" x="369" y="87" width="123" height="87" />
+	<texture id="ui_inGame2_topi_neutral_moh01_resp" x="369" y="174" width="123" height="87" />
+	<texture id="ui_inGame2_topi_neutral_moh02_mask" x="369" y="261" width="123" height="87" />
+	<texture id="ui_inGame2_topi_neutral_moh03_gp5" x="369" y="348" width="123" height="87" />
+	<texture id="ui_inGame2_topi_neutral_moh04_gp5" x="369" y="435" width="123" height="87" />
+	<texture id="ui_inGame2_topi_neutral_sniper_1" x="369" y="522" width="123" height="87" />
+	<texture id="ui_inGame2_topi_neutral_base_karim" x="369" y="609" width="123" height="87" />
+	<texture id="ui_inGame2_topi_neutral_base_tokar" x="369" y="696" width="123" height="87" />
+	<texture id="ui_inGame2_topi_freedom_4_support" x="369" y="783" width="123" height="87" />
+	<texture id="ui_inGame2_topi_freedom_1_assault" x="369" y="870" width="123" height="87" />
+	
+	<texture id="ui_inGame2_topi_freedom_2_engineer" x="492" y="0" width="123" height="87" />
+	<texture id="ui_inGame2_topi_freedom_5_anubis" x="492" y="174" width="123" height="87" />
+	<texture id="ui_inGame2_topi_freedom_3_sniper" x="492" y="87" width="123" height="87" />
+	<texture id="ui_inGame2_topi_neutral_quest_fang" x="492" y="261" width="123" height="87" />
+	<texture id="ui_inGame2_topi_neutral_quest_finist" x="492" y="348" width="123" height="87" />
+	<texture id="ui_inGame2_topi_neutral_quest_yacut" x="492" y="435" width="123" height="87" />
+	<texture id="ui_inGame2_topi_neutral_quest_mahir" x="492" y="522" width="123" height="87" />
+	<texture id="ui_inGame2_topi_neutral_base_dzhorah" x="492" y="609" width="123" height="87" />
+	<texture id="ui_inGame2_topi_neutral_base_elimey" x="492" y="696" width="123" height="87" />
+	<texture id="ui_inGame2_topi_neutral_base_isay" x="492" y="783" width="123" height="87" />
+	<texture id="ui_inGame2_topi_neutral_base_vazgen" x="492" y="870" width="123" height="87" />
+
+	<texture id="ui_inGame2_topi_neutral_base_zmeelov" x="615" y="0" width="123" height="87" />
+	<texture id="ui_inGame2_topi_neutral_base_ceh" x="615" y="87" width="123" height="87" />
+
+   </file>  
+  
+</w>

@@ -1,0 +1,74 @@
+local anm_itm_sec = {
+	["af_kevlar"] = { "some_anm_1_hud", "anm_plate_show" },
+	["af_kevlar_up"] = { "some_anm_2_hud", "anm_plate_show" },
+	["af_plates"] = { "some_anm_3_hud", "anm_plate_show" },
+    ["af_plates_up"] = { "some_anm_4_hud", "anm_plate_show" },
+	
+}
+
+function put_in_belt(itm)
+	if not (itm and anm_itm_sec[itm:section()]) then return end
+	play_skyw_anim(anm_itm_sec[itm:section()])
+end
+
+local cur_slot, hud_fov, det_active
+function play_skyw_anim(anm_sec)
+	-- prepare anm
+	hide_hud_inventory()
+
+	game.only_allow_movekeys(true)
+
+	hud_fov = ui_options.get("video/basic/hud_fov")
+	exec_console_cmd("hud_fov 0.6")
+
+	cur_slot = db.actor:active_slot()
+
+	det_active = db.actor:active_detector() or nil
+	if det_active then det_active:switch_state(2) end
+
+	db.actor:activate_slot(0)
+
+	local function check_n_play()
+		if db.actor:active_slot() == 0 and not db.actor:active_detector() then
+			play_anm(anm_sec)
+			return true
+		end
+		return false
+	end
+
+	CreateTimeEvent("skyw_anm_e", "skyw_anm_a", 1, check_n_play)
+
+end
+
+function play_anm(anm_sec)
+	local length = 0
+
+	length = length + game.get_motion_length(anm_sec[1], anm_sec[2], 1) / 1000
+	CreateTimeEvent("skyw_dly_anm_e", "skyw_dly_anm_a", 0, function()
+		game.play_hud_motion(2, anm_sec[1], anm_sec[2], false, 1)
+		level.add_cam_effector("itemuse_anm_effects\\plate_cam.anm", 1300, false, "")
+		local plate_snd = sound_object("item_plate_use\\plate_sound")
+		plate_snd:play_no_feedback(db.actor, sound_object.s2d, 0, VEC_ZERO, 1.0, 1.0)
+		return true
+	end)
+
+	-- restore configs
+	CreateTimeEvent("skyw_restore_anm_e", "skyw_restore_anm_a", length, restore)
+
+end
+
+function restore()
+	game.only_allow_movekeys(false)
+
+	exec_console_cmd("hud_fov " .. hud_fov)
+
+	db.actor:activate_slot(cur_slot or 0)
+
+	if det_active then det_active:switch_state(1) end
+
+	return true
+end
+
+function on_game_start()
+	RegisterScriptCallback("actor_item_to_belt", put_in_belt)
+end

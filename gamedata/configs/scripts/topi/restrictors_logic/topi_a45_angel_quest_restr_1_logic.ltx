@@ -1,0 +1,26 @@
+[logic] 
+active = sr_idle@start
+
+[sr_idle@start]
+on_info = {+topi_start +topi_a45_radist_message_angel_start -topi_a45_radist_message_angel_give} %=topi_a45_angel_give_message +topi_a45_radist_message_angel_give%
+on_timer = 8000 | {+topi_start +topi_radist_quest_talking_3 +topi_hunter_quest_first_precondition +topi_trader_1_quest_talking_2 -topi_a45_radist_message_angel_start} %+topi_a45_radist_message_angel_start%
+on_timer2 = 16000 | {+topi_start +topi_a45_radist_message_angel_give -topi_a45_radist_quest_angel_give} sr_idle@first %=give_task(geonezis_topi_b45_angel_quest) +topi_a45_radist_quest_angel_give%
+
+[sr_idle@first]
+on_info = {+topi_a45_radist_quest_angel_talking_1 -topi_a45_radist_anomaly_enabled} sr_idle@second %=spawn_quest_anomaly +topi_a45_radist_anomaly_enabled%
+on_info2 = {+topi_a45_radist_quest_angel_talking_fail -topi_a45_radist_quest_angel_cancell} sr_idle@nil %+topi_a45_radist_quest_angel_cancell%
+
+[sr_idle@second]
+on_info = {+topi_a45_radist_anomaly_enabled -topi_a45_radist_quest_point_come =actor_in_zone(topi_a45_angel_quest_restr_1)} %=topi_a45_angel_start_effect_1 +topi_a45_radist_quest_point_come%
+on_info2 = {+topi_a45_radist_quest_member_all_dead -topi_a45_radist_quest_effect_end} %=topi_a45_angel_start_effect_2 +topi_a45_radist_quest_effect_end +topi_a45_radist_teleport_1%
+on_info3 = {+topi_a45_radist_teleport_1} sr_idle@teleportin_1 %=run_postprocess(fade_in:8613) =disable_ui%
+
+[sr_idle@teleportin_1]
+on_game_timer = 20 | %=run_postprocess(black:8614:true) +topi_a45_radist_step_1%
+on_info = {+topi_a45_radist_step_1} sr_idle@teleport_post_1 %=remove_quest_anomaly =teleport_actor(topi_a45_radist_telep_stay_1:topi_a45_radist_telep_look_1)%
+
+[sr_idle@teleport_post_1]
+on_game_timer = 20 | %+topi_a45_radist_ui_1%
+on_info = {+topi_a45_radist_ui_1} sr_idle@nil %=stop_postprocess(8613) =stop_postprocess(8614) =enable_ui() -topi_a45_radist_ui_1%
+
+[sr_idle@nil] 

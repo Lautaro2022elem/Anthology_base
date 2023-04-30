@@ -1,0 +1,45 @@
+---------------Боец 1-----------------
+[logic@esc_squad_army_soldier_1]
+suitable = {=check_npc_name(esc_army_yaroshuk)} true
+prior = 200
+active = remark@esc_army_soldier_1
+
+[remark@esc_army_soldier_1]
+anim = threat_na
+target = story | actor
+on_info = {+esc_actor_meet_from_kill_leader_done} walker@esc_army_soldier_relax
+gather_items_enabled = false
+corpse_detection_enabled = false
+combat_ignore_keep_when_attacked = true 
+combat_ignore_cond = true
+invulnerable = true
+meet = meet@meet_start
+use_camp = false
+
+[walker@esc_army_soldier_relax]
+path_walk = walker_1_walk
+path_look = walker_1_look
+on_info = {+esc_actor_meet_enot_from_kill_leader_done} %=release_npc%
+gather_items_enabled = false
+corpse_detection_enabled = false
+combat_ignore_keep_when_attacked = true 
+combat_ignore_cond = true
+invulnerable = true
+meet = no_meet
+use_camp = false
+
+;------------------------------------------
+[meet@quest]
+abuse           = false
+close_anim 		= nil
+far_anim 		= nil
+far_victim 		= nil
+close_distance  = 0
+far_distance 	= 0
+close_victim = actor
+allow_break = false
+trade_enable = false
+
+[meet@meet_start]:meet@quest
+use = {=actor_enemy} false, true
+meet_dialog = esc_actor_dialog_kill_valeryan

@@ -1,0 +1,10 @@
+[logic]
+active = sr_idle
+
+[sr_idle]
+on_info = {+pri_followers_start} nil, {-pri_followers_all_dead +pri_wave1_end} %=play_snd(characters_voice\scenario\pri\followers_wave1_end_phrase)%
+
+[sr_sound_act]
+play_snd = characters_voice\scenario\pri\followers_wave1_end_phrase
+delay = 1000
+on_signal = sound_end | nil

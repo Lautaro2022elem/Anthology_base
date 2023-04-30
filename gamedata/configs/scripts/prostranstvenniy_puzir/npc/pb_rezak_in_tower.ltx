@@ -1,0 +1,34 @@
+;=========meet_stalker_korpys========
+[meet@korpys_stalker]
+close_anim 		= nil
+close_victim 	= nil
+far_anim 		= nil
+far_victim 		= nil
+close_distance 	= 0
+far_distance 	= 0
+use = {=actor_enemy} false, {=dist_to_actor_le(3)} true, false
+snd_on_use = {!dist_to_actor_le(3)} nil
+meet_on_talking = false
+;==================================
+
+[logic]
+suitable = {=check_npc_name(pb_rezak_in_tower)} true
+prior = 200
+active = remark@in_tower
+level_spot = quest_npc
+
+[remark@in_tower]
+anim = hide
+target = story | pb_zombied_dolg_man
+on_info = {=dist_to_actor_le(20) -pro_rezak_send_mes_actor_1} %=pb_rezak_send_mes_actor_1 +pro_rezak_send_mes_actor_1%
+on_info2 = {+perevalochnaya_baza_zver_see_to_document -pro_rezak_send_mes_actor_false -pro_rezak_send_mes_actor_done} %=pb_rezak_send_mes_actor_done +pro_rezak_send_mes_actor_done%
+on_info3 = {+perevalochnaya_baza_moskit_dead -pro_rezak_send_mes_actor_false} %=pb_rezak_send_mes_actor_false +pro_rezak_send_mes_actor_false%
+on_info4 = {+pb_zver_go_sleep_done} %=release_npc%
+combat_ignore_cond = true
+combat_ignore_keep_when_attacked = true
+invulnerable = true
+gather_items_enabled = false
+meet = no_meet
+help_wounded_enabled = false
+corpse_detection_enabled = false
+use_camp = false

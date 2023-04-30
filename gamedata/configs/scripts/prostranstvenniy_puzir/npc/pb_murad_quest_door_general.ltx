@@ -1,0 +1,66 @@
+;pb_markus_alive (дополнительная логика)
+
+;=========meet_stalker_korpys========
+[meet@korpys_stalker]
+close_anim 		= nil
+close_victim 	= nil
+far_anim 		= nil
+far_victim 		= nil
+close_distance 	= 0
+far_distance 	= 0
+use = {=actor_enemy} false, {=dist_to_actor_le(3)} true, false
+snd_on_use = {!dist_to_actor_le(3)} nil
+meet_on_talking = false
+;==================================
+
+[remark@pb_markus_remark]
+anim = wait_na
+target = story | actor
+on_info = {+pro_quest_door_is_open -infa_murad_quest_door_open_stop_sound} %+infa_murad_quest_door_open_stop_sound =play_sound(pb_murad_quest_door_open)%
+on_info2 = {+pro_quest_murad_go_to_base} walker@pb_murad_quest_to_base
+on_timer = 10000 | %+pro_quest_murad_go_to_base%
+combat_ignore_cond = true
+combat_ignore_keep_when_attacked = true
+invulnerable = true
+gather_items_enabled = false
+help_wounded_enabled = false
+corpse_detection_enabled = false
+meet = no_meet
+
+[walker@pb_murad_quest_to_base]
+path_walk = pro_murad_quest_door_walk_2
+meet = no_meet
+def_state_moving = run
+on_info = {=npc_in_zone(pb_base_door_final_restrictor)} %+pro_base_final_door_is_opened%
+on_info2 = {!npc_in_zone(pb_base_door_final_restrictor)} %-pro_base_final_door_is_opened%
+on_info3 = {+pro_murad_quest_door_come_1} animpoint@animpoint_1
+gather_items_enabled = false
+help_wounded_enabled = false
+corpse_detection_enabled = false
+invulnerable = true
+on_signal = pro_murad_quest_door_come_1 | {-pro_murad_quest_door_come_1} animpoint@animpoint_1 %+pro_murad_quest_door_come_1%
+
+[animpoint@animpoint_1]
+cover_name = pro_shurup_sit_animpoint_base
+on_info = {+random_snork_dead +random_bloodsucker_dead +random_monolith_advanced_dead +random_monolith_veteran_dead =dist_to_actor_le(30)} %+pb_zver_on_base%
+on_info2 = {+random_dogs_dead =dist_to_actor_le(30)} %+pb_zver_on_base_dogs%
+on_info3 = {+random_boar_dead =dist_to_actor_le(30)} %+pb_zver_on_base_boar%
+on_info4 = {+pro_dialog_duty_tachenko_end_line_done} %=release_npc%
+gather_items_enabled = false
+corpse_detection_enabled = false
+combat_ignore_keep_when_attacked = true 
+combat_ignore_cond = true
+use_camp = true
+meet = meet@pb_shurup
+
+[meet@start_talk]:meet@korpys_stalker
+close_victim = actor
+allow_break = false
+meet_dialog = pb_murad_quest_door_talk
+trade_enable = false
+
+[meet@pb_shurup]:meet@korpys_stalker
+close_victim = actor
+allow_break = false
+meet_dialog = pb_shurup_start_dialog
+trade_enable = false

@@ -1,0 +1,11 @@
+[logic]
+active = walker
+
+[walker]
+path_walk = aes_soldier_wave3_walk5
+path_look = aes_soldier_wave3_look1
+on_signal = arrive | walker@move
+
+[walker@move]
+path_walk = aes_soldier_road_walk5
+path_look = aes_soldier_road_look1

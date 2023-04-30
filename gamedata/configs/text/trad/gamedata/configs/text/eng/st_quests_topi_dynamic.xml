@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="windows-1251" ?>
+<string_table>
+
+	<!-- topi_stalker_base_medic -->
+	<string id="topi_stalker_base_medic_task_1_name">
+	<text>%s for Elimay</text>
+</string>
+<string id="topi_stalker_base_medic_task_1_text">
+	<text>You need to find a set and bring it to medic Elimay.</text>
+</string>
+<string id="topi_stalker_base_medic_task_1_about">
+	<text>I need a good set of medical tools. I can quickly patch up minor injuries, but I don't have what I need for anything more serious than a simple scalpel.</text>
+</string>
+<string id="topi_stalker_base_medic_task_1_fetch_about">
+	<text>I need a good set of medical tools. I can quickly patch up minor injuries, but I don't have what I need for anything more serious than a simple scalpel.</text>
+</string>
+<string id="topi_stalker_base_medic_task_1_fetch_finish">
+	<text>Thank you, my friend! These tools will save many lives. Thank you again for the tools.</text>
+</string>
+
+<!-- topi_stalker_base_mechanic -->
+<string id="topi_stalker_base_mechanic_task_1_name">
+	<text>Find %s for Tokar</text>
+</string>
+<string id="topi_stalker_base_mechanic_task_1_text">
+	<text>You need to bring tools to Tokar so that he can upgrade equipment.</text>
+</string>
+<string id="topi_stalker_base_mechanic_task_1_about">
+	<text>You know, buddy, I'm actually a pretty good technician. I can fix both weapons and armor, and I even make some upgrades! Or I would, if the tools were any good. But where are you going to get them here? Maybe you could help me find a simple set?</text>
+</string>
+<string id="topi_stalker_base_mechanic_task_1_fetch_about">
+	<text>I need a set of tools for rough work. It should contain tools and oils for working with weapons. If you can get it, I'll be grateful, I might even pay you!.. Maybe.</text>
+</string>
+<string id="topi_stalker_base_mechanic_task_1_fetch_finish">
+	<text>Great, dude! Oh, sorry, I have nothing to pay you with. But I can give you a good discount!</text>
+</string>
+<string id="topi_stalker_base_mechanic_task_2_name">
+	<text>Find %s for Tokar</text>
+</string>
+<string id="topi_stalker_base_mechanic_task_2_text">
+	<text>You need to bring Tokar tools for delicate work. He needs a more complete set to perform more complex equipment upgrades.</text>
+</string>
+<string id="topi_stalker_base_mechanic_task_2_about">
+	<text>Hey, buddy, if you agree to get me a more complete set, you'll get an even bigger discount. Will you help me out, pal?</text>
+</string>
+<string id="topi_stalker_base_mechanic_task_2_fetch_about">
+	<text>I need tools for delicate work. It should have everything I need. You'll be like a brother to me if you get it for me!</text>
+</string>
+	<string id="topi_stalker_base_mechanic_task_2_fetch_finish">
+		<text>Wow, thanks a lot, man! Now I'll definitely get rich. Damn, I'll finally be successful!... If I, of course, don't miss this chance. But for now, I can't offer you anything better than a discount. Sorry, buddy.</text>
+	</string>
+	<string id="topi_stalker_base_mechanic_task_3_name">
+		<text>Find %s for Tokar</text>
+	</string>
+	<string id="topi_stalker_base_mechanic_task_3_text">
+		<text>You need to bring %s to Tokar. He needs a unique set to perform even more complex equipment upgrades.</text>
+	</string>
+	<string id="topi_stalker_base_mechanic_task_3_about">
+		<text>Hey, if you find something worthwhile - the discount is on me!</text>
+	</string>
+	<string id="topi_stalker_base_mechanic_task_3_fetch_about">
+		<text>I need calibration tools. They should have everything I need. You'll be like a brother to me if you can get them for me!</text>
+	</string>
+	<string id="topi_stalker_base_mechanic_task_3_fetch_finish">
+		<text>No way...! Wow, thanks a lot, man! Now I'll definitely get rich. Damn, I'll finally be successful!... If I, of course, don't miss this chance. But for now, I can't offer you anything better than a discount. Sorry, pal.</text>
+	</string>
+
+
+</string_table>

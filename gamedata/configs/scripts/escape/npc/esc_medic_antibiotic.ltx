@@ -1,0 +1,31 @@
+[logic@esc_squad_atp_medic_antibiotic]
+active = animpoint
+suitable = {=check_npc_name(esc_medic_antibiotic)} true, false
+trade = misc\trade\trade_jup_b202_stalker_medic.ltx
+can_select_weapon = false
+level_spot = medic
+prior = 300
+
+[animpoint]
+cover_name = esc_antibiotic_sit
+avail_animations = animpoint_stay_wall
+gather_items_enabled = false
+corpse_detection_enabled = false
+combat_ignore_keep_when_attacked = true 
+combat_ignore_cond = true
+invulnerable = true
+meet = meet
+use_camp = false
+
+[meet]
+;close_snd_hello = esc_medic_antibiotic_meet
+;close_snd_bye 	= esc_medic_antibiotic_meet_bye
+close_anim 	= nil
+close_victim 	= nil
+far_anim 	= nil
+far_victim 	= nil
+close_distance  = 0
+far_distance 	= 0
+close_snd_distance = 3
+use = {=actor_enemy} false, true
+allow_break 	= false

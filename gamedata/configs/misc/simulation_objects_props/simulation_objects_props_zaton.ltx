@@ -1,0 +1,237 @@
+;--------------------------------------------------------------------------------
+;----------- << Zaton >> ------------
+
+;base
+[zat_stalker_base_smart]:default_base
+sim_avail 	            = true 
+surge 		            = 1
+stalker		            = 3 
+csky		            = 3 
+ecolog = 3
+
+;no sim
+[zat_medic_home_smart]:default_territory
+sim_avail               = false
+
+[zat_b7_stalker_raider]:default_territory
+sim_avail               = false
+
+;technical, but with sim available, surge too
+[zat_b33]:default_lair
+sim_avail               =  false
+
+[zat_a23_smart_terrain]:default_territory
+sim_avail               = false
+
+;surge
+[zat_b7]:default_territory
+sim_avail 	            = true
+sim_avail = {+zat_b7_task_end} true, {+cop_start} false, true
+
+[zat_b40_smart_terrain]:default_base
+sim_avail = {+zat_b40_actor_has_notebook} true, {+cop_start} false, true
+surge                   = 1
+killer					= 1
+
+[zat_b28]:default_lair
+sim_avail 	            = false
+surge                   = 1
+
+;!!!
+[zat_b42_smart_terrain]:default_territory
+sim_avail = {+zat_b42_controller_dead} true, {+cop_start} false, true
+surge                   = 1
+territory 	            = 1
+
+[zat_b18]:default
+sim_avail = {+zat_b18_noah_dead} true, {+cop_start} false, true
+surge                   = 1
+
+[zat_b101]:default_resource
+sim_avail 	            = true
+surge                   = 1
+territory	            = 1 
+
+[zat_b38u]:default_territory
+sim_avail               = false
+
+[zat_b38]:default_territory
+sim_avail = {+zat_b57_bloodsucker_lair_clear} true, {+cop_start} false, true
+surge                   = 1
+
+;regular smarts
+[zat_b5_smart_terrain]:default_territory
+sim_avail = {+zat_b5_task_start +zat_b5_task_end} true, {-zat_b5_task_start -zat_b5_task_end} true, {+cop_start} false, true 
+surge                   = 1
+
+[zat_b106_smart_terrain]:default_lair
+sim_avail = {+zat_b106_chimera_dead} true, {-zat_b106_gonta_accept_actor} true, {+cop_start} false, true 
+
+[zat_b52]:default_territory
+sim_avail = {+zat_b52_actor_go_offline} true, {-zat_b52_port_bandits_spawn} true, {+cop_start} false, true
+territory	            = 1 
+
+[zat_b103_merc_smart]:default_territory
+sim_avail = {+zat_b103_lost_merc_leader_bunker_guards_work} true, {+zat_b103_merc_fight} true, {+zat_b103_merc_gone} true, {+cop_start} false, true
+surge		            = 1
+
+[zat_b104_zombied]:default_lair
+sim_avail = {+zat_b104_task_end} true, {+cop_start} false, true
+
+[zat_b14_smart_terrain]:default_resource
+sim_avail = {+zat_b14_smart_terrain_open} true, {+cop_start} false, true
+
+[zat_b20_smart_terrain]:default_resource
+sim_avail = {+zat_b20_plateau_way_done} true, {-zat_b20_plateau_way_started} true, {+cop_start} false, true
+territory	            = 1 
+
+[zat_b53]:default_resource
+sim_avail = {+zat_b53_thanks_dialog} true, {+cop_start} false, true 
+territory 	            = 1 
+
+[zat_b12]:default_lair
+sim_avail 	            = true
+
+[zat_b54]:default_resource
+sim_avail 	            = true
+territory 	            = 1
+
+[zat_b55]:default_resource
+sim_avail 	            = true
+territory 	            = 1
+
+[zat_b100]:default_resource
+sim_avail = {+zat_b100_heli_2_searched} true, {+cop_start} false, true
+surge		            = 1
+
+[zat_b39]:default_resource
+sim_avail = {+zat_b39_tech_buddies_joker_found} true, {+cop_start} false, true
+territory 	            = 1
+lair		            = 1 
+
+
+[zat_b56]:default_resource
+sim_avail 	            = true
+
+[zat_a1]:default_territory
+sim_avail = {+zat_a1_simulation_start} true, {+cop_start} false, true
+territory 	            = 1
+
+;---------	SIMULATION	--------
+
+[zat_sim_1]:default_lair
+sim_avail 	            = true
+territory 	            = 1
+
+[zat_sim_2]:default_territory
+sim_avail 	            = true
+territory 	            = 1
+
+[zat_sim_3]:default_lair
+sim_avail 	            = true
+territory 	            = 1
+
+[zat_sim_4]:default_lair
+sim_avail 	            = true
+territory 	            = 1
+
+[zat_sim_5]:default_lair
+sim_avail 	            = true
+territory 	            = 1
+
+[zat_sim_6]:default_territory
+sim_avail 	            = true
+territory 	            = 1
+
+[zat_sim_7]:default_lair
+sim_avail 	            = true
+territory 	            = 1
+
+[zat_sim_8]:default_lair
+sim_avail 	            = true
+territory 	            = 1
+
+[zat_sim_9]:default_lair
+sim_avail 	            = true
+territory 	            = 1
+
+[zat_sim_10]:default_lair
+sim_avail 	            = true
+territory 	            = 1
+
+[zat_sim_11]:default_territory
+sim_avail 	            = true
+territory 	            = 1
+
+[zat_sim_12]:default_territory
+sim_avail 	            = true
+territory 	            = 1
+
+[zat_sim_13]:default_territory
+sim_avail 	            = true
+territory 	            = 1
+
+[zat_sim_14]:default_lair
+sim_avail 	            = true
+territory 	            = 1
+
+[zat_sim_15]:default_lair
+sim_avail 	            = true
+territory 	            = 1
+
+[zat_sim_16]:default_lair
+sim_avail 	            = true
+territory 	            = 1
+
+[zat_sim_17]:default_lair
+sim_avail 	            = true
+territory 	            = 1
+
+[zat_sim_18]:default_lair
+sim_avail 	            = true
+territory 	            = 1
+
+[zat_sim_19]:default_territory
+sim_avail 	            = true
+territory 	            = 1
+
+[zat_sim_20]:default_lair
+sim_avail 	            = true
+territory 	            = 1
+
+[zat_sim_21]:default_lair
+sim_avail 	            = true
+territory 	            = 1
+
+[zat_sim_22]:default_lair
+sim_avail 	            = true
+territory 	            = 1
+
+[zat_sim_23]:default_lair
+sim_avail 	            = true
+territory 	            = 1
+
+[zat_sim_24]:default_lair
+sim_avail 	            = true
+territory 	            = 1
+
+[zat_sim_25]:default_lair
+sim_avail 	            = true
+territory 	            = 1
+
+[zat_sim_26]:default_lair
+sim_avail 	            = true
+territory 	            = 1
+
+[zat_sim_27]:default_territory
+sim_avail 	            = true
+territory 	            = 1
+
+[zat_sim_28]:default_territory
+sim_avail 	            = true
+
+[zat_sim_29]:default_territory
+sim_avail 	            = true
+
+[zat_sim_30]:default_territory
+sim_avail 	            = true

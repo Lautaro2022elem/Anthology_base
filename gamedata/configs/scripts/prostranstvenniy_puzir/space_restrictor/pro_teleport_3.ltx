@@ -1,0 +1,9 @@
+[logic]
+active = sr_idle@no_teleport
+
+[sr_idle@no_teleport]
+on_info = {+pro_paskhalka_stalker_is_dead} sr_teleport@actor_to_podzemka
+
+[sr_teleport@actor_to_podzemka]
+point1 = actor_teleport_in_podzemka_walk
+look1 = actor_teleport_in_podzemka_look

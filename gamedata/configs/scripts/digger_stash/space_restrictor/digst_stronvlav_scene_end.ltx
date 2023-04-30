@@ -1,0 +1,13 @@
+[logic]
+active = sr_idle@start
+
+[sr_idle@start]
+on_info = {+digst_actor_hit_stronglav} sr_idle@1
+
+[sr_idle@1]
+on_timer = 2000 | sr_idle@2 %=spawn_object(digst_spider_quest:digst_stronglav_scene_spawn) =spawn_object(digst_spider_quest_1:digst_stronglav_scene_spawn)%
+
+[sr_idle@2]
+on_timer = 1000 | sr_idle@nil %=give_task(digst_kill_to_spider) +digst_spider_quest_dead_2 +digst_device_torch_actor_on%
+
+[sr_idle@nil]

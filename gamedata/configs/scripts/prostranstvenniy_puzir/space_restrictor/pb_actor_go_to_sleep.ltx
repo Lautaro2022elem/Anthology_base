@@ -1,0 +1,28 @@
+[logic]
+active = sr_idle@actor_go_sleep
+
+[sr_idle@actor_go_sleep]
+on_info = {+pb_zver_go_sleep_done} sr_idle@actor_go_sleep_1 %=RavenMemmoryStart =run_postprocess(black:2525:true) =create_squad(perevalochnaya_baza_rezak_squad:pro_smart_terrain_1_1)%
+
+[sr_idle@actor_go_sleep_1]
+on_timer = 4500 | sr_idle@actor_go_sleep_2 %=set_game_time(09:23) =SetWeather(af3_day_clear) =remove_npc(pb_controller_quest)%
+
+[sr_idle@actor_go_sleep_2]
+on_timer = 2000 | sr_cutscene@wake_up %+pb_zver_signal_helicopter%
+
+[sr_cutscene@wake_up]
+point = actor_start_game_walk
+look = actor_start_game_look
+cam_effector = scenario_cam\prostranstvenniy_puzir\camera_start_game
+enable_ui_on_end = true
+global_cameffect = true
+on_info = {+pb_zver_signal_helicopter} %=play_sound(pb_intro_getting_up) =stop_postprocess(2525)%
+on_signal = cameff_end | sr_idle@wake_up_1 %=stop_sound(pb_intro_getting_up)%
+
+[sr_idle@wake_up_1]
+on_timer = 1000 | sr_idle@actor_eat_vodka_quest %+pb_zver_signal_helicopter_done =give_task(pb_helicopter_crash_search)%
+
+[sr_idle@actor_eat_vodka_quest]
+on_info = {+pro_start_scene_end_info -pb_actor_eat_vodka_quest} sr_idle@nil %=eat_vodka_quest +pb_actor_eat_vodka_quest%
+
+[sr_idle@nil]

@@ -1,0 +1,24 @@
+[logic]
+active = sr_idle
+
+[sr_idle]
+on_actor_inside = {+spectrum_project_start +labx14_search_exit_complete +city_heli_1_time} sr_idle@2 %+city_btr_ph_idle =city_btr_eff_1 =play_s3d_sound(weapons\heli_explosion)%
+
+[sr_idle@2]
+on_game_timer = 30 | sr_idle@3 %=city_btr_eff_2 =city_btr_eff_3 =play_s3d_sound(weapons\heli_explosion)%
+
+[sr_idle@3]
+on_game_timer = 60 | sr_idle@4 %+city_assault_heli_1 =city_sms_genarmy_3 =spawn_object(city_npc_sp_kps_1:city_npc_sp_kps_1_spawn) =spawn_object(city_npc_sp_kps_2:city_npc_sp_kps_2_spawn) =spawn_object(city_npc_sp_kps_3:city_npc_sp_kps_3_spawn) =spawn_object(city_npc_sp_kps_4:city_npc_sp_kps_4_spawn)%
+
+[sr_idle@4]
+on_game_timer = 10 | sr_idle@5 %=spawn_object(wpn_rpg7:city_rpg_quest_spawn)%
+
+[sr_idle@5]
+on_game_timer = 2000 | sr_idle@kill %+city_heli_1_start_fail =city_sms_genarmy_3_1%
+on_info = {+city_assault_heli_stop} sr_idle@nil
+
+[sr_idle@kill]
+on_game_timer = 35 | sr_idle@nil %=hit_actor =kill_actor%
+
+[sr_idle@nil] 
+

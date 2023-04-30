@@ -1,0 +1,19 @@
+[logic]
+active = sr_idle@start_bad_end_game
+
+[sr_idle@start_bad_end_game]
+on_info = {+bar_markus_dialog_good_end_done} sr_idle@end_game_stronglav_warning
+
+[sr_idle@end_game_stronglav_warning]
+on_timer = 3000 | sr_idle@run_postprocess %=end_game_stronglav_warning%
+
+[sr_idle@run_postprocess]
+on_timer = 6000 | sr_idle@smex_stronglava %=run_postprocess(black:2525:true) =RavenMemmoryStart%
+
+[sr_idle@smex_stronglava]
+on_timer = 100 | sr_idle@start_outro %=smex_stronglava%
+
+[sr_idle@start_outro]
+on_timer = 7500 | sr_idle@nil %+blck_val_intro_ending_good_show_start =teleport_actor(actor_good_end_teleport_walk:actor_good_end_teleport_look)%
+
+[sr_idle@nil]

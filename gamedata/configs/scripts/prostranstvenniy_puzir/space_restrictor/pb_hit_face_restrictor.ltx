@@ -1,0 +1,16 @@
+[logic]
+active = sr_idle@hit
+
+[sr_idle@hit]
+on_actor_inside = {+actor_in_zone_markus_signal} sr_idle@hit_1 %+pb_actor_in_zone_markus_signal%
+
+[sr_idle@hit_1]
+on_timer = 2500 | sr_idle@hit_2 %=NpcKickActor%
+
+[sr_idle@hit_2]
+on_timer = 1600 | sr_idle@hit_3 %=run_postprocess(black:2525:true) =teleport_actor(actor_teleport_to_digger_stash_walk:actor_teleport_to_digger_stash_look)%
+
+[sr_idle@hit_3]
+on_timer = 2000 | sr_idle@hit_nil %=stop_postprocess(2525)%
+
+[sr_idle@hit_nil]

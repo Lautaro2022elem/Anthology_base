@@ -1,0 +1,31 @@
+;=========meet_village_stalker========
+[meet@village_stalker]
+close_anim 		= nil
+close_victim 	= nil
+far_anim 		= nil
+far_victim 		= nil
+close_distance 	= 0
+far_distance 	= 0
+use = {=actor_enemy} false, {=dist_to_actor_le(3)} true, false
+snd_on_use = {!dist_to_actor_le(3)} nil
+meet_on_talking = false
+;==================================
+
+[logic]
+suitable = {=check_npc_name(esc_stalker_to_atp_1)} true, false
+prior = 200
+active = animpoint@esc_stalker_village_night
+
+[animpoint@esc_stalker_village_night]
+cover_name = esc_smart_terrain_1_1_night_animpoint_1
+meet = meet@stalker
+combat_ignore_cond = false
+combat_ignore_keep_when_attacked = false
+invulnerable = false
+
+[meet@stalker]:meet@village_stalker
+close_snd_hello = meet_hello
+close_snd_distance = 2
+close_victim = actor
+allow_break = false
+trade_enable = false

@@ -1,0 +1,10 @@
+[logic]
+active = sr_idle
+
+[sr_idle]
+on_info = {=actor_has_item(labx14_doc_1_info)} sr_idle@1
+
+[sr_idle@1]
+on_actor_inside = sr_idle@nil %=labx14_quest_controler_1%
+
+[sr_idle@nil] 

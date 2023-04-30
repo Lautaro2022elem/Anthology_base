@@ -1,0 +1,52 @@
+[logic]
+active = sr_idle@start_storyline
+
+[sr_idle@start_storyline]
+on_info = {+modification_start_storyline} sr_idle@check_info_pre %=give_task(first_quest)%
+
+[sr_idle@check_info_pre]
+on_info = {+wiz_storyline_dialog_rjaviu_done} sr_idle@check_info %=hero_thoughts_02 =scenario_autosave(st_save_wiz_reached_lager)%
+
+[sr_idle@check_info]
+on_info = {+wiz_storyline_dialog_foma_done} sr_idle@bolotnaya_tvar %=give_task(bolotnaya_tvar) =spawn_corpse(wiz_nazar:wiz_sp_nazar_corpse) =wiz_spawn_krovosos =hero_thoughts_10%
+
+[sr_idle@bolotnaya_tvar]
+on_info = {+bolotnaya_tvar_death} sr_idle@timer %=bolotnaya_tvar_die_actor =scenario_autosave(st_save_jup_b9_searched_heli_1)%
+
+[sr_idle@timer]
+on_timer = 8000 | sr_idle@po_goryachim_sledam %=bolotnaya_tvar_die_foma%
+
+[sr_idle@po_goryachim_sledam]
+on_info = {+wiz_storyline_going_tonnel_more} sr_idle@po_goryachim_sledam_reversed %=give_task(po_goryachim_sledam) =spawn_object(wiz_pda_rezaka:wiz_sp_pda_rezaka) =hero_thoughts_17_1%
+
+[sr_idle@po_goryachim_sledam_reversed]
+on_info = {=actor_has_item(wiz_pda_rezaka)} sr_idle@message_from_rjaviu %=give_task(katacombs) +wiz_storyline_dialog_foma_katacombs_open =scenario_autosave(st_save_zat_b100_searched_heli_2)%
+
+[sr_idle@message_from_rjaviu]
+on_info = {+wiz_storyline_dialog_foma_katacombs_open} sr_idle@wiz_pda_rezaka_info
+
+[sr_idle@wiz_pda_rezaka_info]
+on_timer = 8000 | sr_idle@timer_rjaviu %=wiz_pda_rezaka_info%
+
+[sr_idle@timer_rjaviu]
+on_timer = 19000 | sr_idle@check_quest_info_pre %=rjaviu_first_message%
+
+[sr_idle@check_quest_info_pre]
+on_info = {+wiz_storyline_dialog_foma_katacombs_wait} sr_idle@timer_to_thoughts
+
+[sr_idle@timer_to_thoughts]
+on_timer = 5000 | sr_idle@check_quest_info %=hero_thoughts_12%
+
+[sr_idle@check_quest_info]
+on_info = {+wiz_free_neutral_actor_teleported} sr_idle@timer_to_mess_foma
+
+[sr_idle@timer_to_mess_foma]
+on_timer = 25000 | sr_idle@spawn_objects_to_treasure %=katacombs_foma_message +katacombs_foma_message_send%
+
+[sr_idle@spawn_objects_to_treasure]
+on_info = {+katacombs_stariy_die_gst} sr_idle@check_items_actor %=spawn_object_in(wiz_old_writes:wiz_stariy_treasure) =spawn_object_in(wiz_case_starogo:wiz_stariy_treasure) =spawn_object_in(af_compass:wiz_stariy_treasure) =spawn_object_in(wpn_addon_scope:wiz_stariy_treasure) =spawn_object_in(ammo_9x39_pab9:wiz_stariy_treasure)%
+
+[sr_idle@check_items_actor]
+on_info = {=actor_has_item(wiz_old_writes) =actor_has_item(wiz_case_starogo)} sr_idle@nil %+katacombs_gsk_komplex =give_task(wiz_germo_case_quest) =spawn_object(zat_a23_labx8_key:wiz_zat_a23_labx8_key_sp) =hero_thoughts_17%
+
+[sr_idle@nil]

@@ -1,0 +1,26 @@
+[smart_terrain]
+squad_id = 4
+max_population = 1
+respawn_params = respawn@bar_zastava
+respawn_idle = 172800
+
+[respawn@bar_zastava]
+spawn_duty_special
+
+[spawn_duty_special]
+spawn_squads = bar_duty_security_squad_leader_squad
+spawn_num = {!squad_exist(bar_duty_security_squad_leader_squad)} 1, 0
+
+
+[exclusive]
+bar_zastava_camp_work_1 = rostok\bar_zastava_smart_logic.ltx
+bar_zastava_camp_work_2 = rostok\bar_zastava_smart_logic.ltx
+bar_zastava_camp_work_3 = rostok\bar_zastava_smart_logic.ltx
+bar_zastava_camp_work_4 = rostok\bar_zastava_smart_logic.ltx
+bar_zastava_camp_work_5 = rostok\bar_zastava_smart_logic.ltx
+bar_zastava_camp_work_6 = rostok\bar_zastava_smart_logic.ltx
+bar_zastava_camp_work_7 = rostok\bar_zastava_smart_logic.ltx
+bar_zastava_minigunner_excl = bar\bar_zastava_smart.ltx
+faction_base_defense_enemy1 = bar\bar_zastava_smart.ltx
+faction_base_defense_enemy2 = bar\bar_zastava_smart.ltx
+faction_base_defense_enemy3 = bar\bar_zastava_smart.ltx

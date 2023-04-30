@@ -1,0 +1,111 @@
+[logic@esc_squad_atp_animpoint_1]
+active = animpoint@animpoint_1
+prior = 50
+
+[animpoint@animpoint_1]
+cover_name = esc_atp_animpoint_1
+avail_animations = animpoint_stay_table
+gather_items_enabled = false
+corpse_detection_enabled = false
+combat_ignore_keep_when_attacked = true 
+combat_ignore_cond = true
+use_camp = true
+
+;================================================
+[logic@esc_squad_atp_animpoint_2]
+active = animpoint@animpoint_2
+prior = 50
+
+[animpoint@animpoint_2]
+cover_name = esc_atp_animpoint_2
+avail_animations = animpoint_stay_table
+gather_items_enabled = false
+corpse_detection_enabled = false
+combat_ignore_keep_when_attacked = true 
+combat_ignore_cond = true
+use_camp = true
+
+;================================================
+[logic@esc_squad_atp_animpoint_3]
+active = animpoint@animpoint_3
+prior = 80
+
+[animpoint@animpoint_3]
+cover_name = esc_atp_animpoint_3
+avail_animations = animpoint_sit_normal
+gather_items_enabled = false
+corpse_detection_enabled = false
+combat_ignore_keep_when_attacked = true 
+combat_ignore_cond = true
+use_camp = true
+on_info = {=surge_started()} walker@surge_10_walk
+
+[walker@surge_10_walk]
+path_walk = surge_10_walk
+path_look = surge_10_look
+def_state_moving = run
+gather_items_enabled = false
+corpse_detection_enabled = false
+combat_ignore_keep_when_attacked = true 
+combat_ignore_cond = true
+use_camp = true
+on_info = {=surge_complete()} animpoint@animpoint_3
+
+
+;================================================
+[logic@esc_squad_atp_animpoint_4]
+active = animpoint@animpoint_4
+prior = 50
+
+[animpoint@animpoint_4]
+cover_name = esc_atp_animpoint_4
+avail_animations = animpoint_stay_table
+gather_items_enabled = false
+corpse_detection_enabled = false
+combat_ignore_keep_when_attacked = true 
+combat_ignore_cond = true
+use_camp = true
+
+
+;================================================
+[logic@esc_squad_atp_animpoint_5]
+active = animpoint@animpoint_5
+prior = 50
+
+[animpoint@animpoint_5]
+cover_name = esc_atp_animpoint_5
+avail_animations = animpoint_stay_table
+gather_items_enabled = false
+corpse_detection_enabled = false
+combat_ignore_keep_when_attacked = true 
+combat_ignore_cond = true
+use_camp = true
+
+
+;================================================
+[logic@esc_squad_atp_animpoint_6]
+active = animpoint@animpoint_6
+prior = 50
+
+[animpoint@animpoint_6]
+cover_name = esc_atp_animpoint_6
+avail_animations = animpoint_stay_table
+gather_items_enabled = false
+corpse_detection_enabled = false
+combat_ignore_keep_when_attacked = true 
+combat_ignore_cond = true
+use_camp = true
+
+;================================================
+[logic@esc_squad_atp_animpoint_7]
+active = animpoint@animpoint_7
+prior = 50
+
+[animpoint@animpoint_7]
+cover_name = esc_atp_animpoint_7
+avail_animations = animpoint_stay_table
+gather_items_enabled = false
+corpse_detection_enabled = false
+combat_ignore_keep_when_attacked = true 
+combat_ignore_cond = true
+use_camp = false

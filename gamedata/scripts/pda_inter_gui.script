@@ -1,0 +1,2583 @@
+-- states 5 and 10 are used for messages that can be active
+-- states 1, 2 used for simple messages where 2 is "on cooldown"
+local puzzle_reward = pda_inter_mcm.get_config("puzzle_reward")
+local slots_bet = pda_inter_mcm.get_config("slots_bet")
+local pda_open_key = pda_inter_mcm.get_config("int_pda_key")
+
+Custom_PDA_debug = pda_inter_mcm.get_config("debugx")
+
+local gt = game.translate_string
+local main_menu_btns = 7
+local task_menu_btns = 6
+
+pda_msg_states = {
+	{ state = 0, big_menu = true },
+	{ state = 0, big_menu = true },
+	{ state = 0, big_menu = false },
+	{ state = 0, big_menu = true },
+	{ state = 0, big_menu = false },
+	{ state = 0, big_menu = false },
+	{ state = 0, big_menu = true },
+}
+
+pda_notes_t = {}
+
+-- ["level"] = { danger_level, "encyclopedia_locations_" .. map_link .. "_image" }
+pdax_level_list = {
+	-- very easy
+		["l01_escape"]						= { 0.1, "cordon" },
+		["k00_marsh"]						= { 0.2, "great_swamp" },
+		["y04_pole"]							= { 0.2, "cordon" },
+		["l05_bar"]							= { 0.2, "rostok" },
+
+	-- easy
+		["l02_garbage"]					= { 0.3, "garbage" },
+		["k01_darkscape"]				= { 0.35, "darkscape" },
+		["l03_agroprom"]					= { 0.4, "agroprom" },
+
+	-- medium
+		["l04_darkvalley"]					= { 0.45, "dark_valley" },
+		["jupiter"]								= { 0.45, "jupiter" },
+		["zaton"]								= { 0.45, "zaton" },
+		["l06_rostok"]						= { 0.45, "wild_territory" },
+		["l08_yantar"]						= { 0.5, "yantar" },
+		["l07_military"]						= { 0.55, "army_warehouses" },
+		["k02_trucks_cemetery"]		= { 0.55, "truck_cemetery" },
+		["l09_deadcity"]					= { 0.6, "dead_city" },
+
+	-- hard
+		["l03u_agr_underground"]		= { 0.65, "agroprom_underground" },
+		["l10_radar"]						= { 0.65, "radar" },
+		["l10_red_forest"]					= { 0.65, "red_forest" },
+		["l10_limansk"]						= { 0.7, "limansk" },
+		["l11_pripyat"]						= { 0.75, "pripyat" },
+		["pripyat"]							= { 0.75, "outskirts" },
+
+	-- very hard
+		["l11_hospital"]						= { 0.8, "deserted_hospital" },
+		["l12_stancia"]						= { 0.8, "chernobyl_npp"},
+		["l12_stancia_2"]					= { 0.8, "chernobyl_npp"},
+		["l13_generators"]				= { 0.85, "generators" },
+
+	-- deadly xd
+		["l04u_labx18"]					= { 0.9, "lab_x18" },
+		["l08u_brainlab"]					= { 0.9, "lab_x16" },
+ 		["jupiter_underground"]		= { 0.9, "jupiter_underground" },
+		["l10u_bunker"]					= { 0.9, "lab_x19" },
+		["labx8"]								= { 0.95, "lab_x8" },
+ 		["l12u_control_monolith"]		= { 0.95, "monolith_control_center" },
+		["l12u_sarcofag"]					= { 0.95, "sarcophagus" },
+		["l13u_warlab"]					= { 0.95, "warlab" },
+}
+
+-- Rarity tables (higher = more rare)
+pdax_mutant_list = {
+	["tushkano"] = 0.05,
+	["flesh"] = 0.1,
+	["zombie"] = 0.15,
+--	["blind_dog"] = 0, 	-- "dog_"		oh fk it
+	["boar"] = 0.2,
+	["cat"] = 0.25,
+	["fracture"] = 0.3,
+	["pseudodog"] = 0.3,
+	["snork"] = 0.4,
+	["lurker"] = 0.45,
+	["psydog"] = 0.6,
+	["poltergeist"] = 0.65,
+	["burer"] = 0.65,
+	["psysucker"] = 0.7,
+	["bloodsucker"] = 0.7,
+	["chimera"] = 0.8,
+	["controller"] = 0.9,
+	["karlik"] = 0.95,
+	["pseudogiant"] = 0.95,
+}
+
+pdax_artefact_list = {
+
+	-- t2
+	["af_dummy_glassbeads"] = 0.1,
+	["af_mincer_meat"] = 0.1,
+	["af_dummy_battery"] = 0.1,
+	["af_cristall_flower"] = 0.1,
+	["af_electra_sparkler"] = 0.1,
+	["af_soul"] = 0.1,
+	["af_night_star"] = 0.1,
+	["af_pin"] = 0.1,
+	["af_blood"] = 0.1,
+	["af_medusa"] = 0.1,
+	["af_lobster_eyes"] = 0.1,
+	["af_sponge"] = 0.1,
+	["af_itcher"] = 0.1,
+
+	-- t3
+	["af_gravi"] = 0.35,
+	["af_fuzz_kolobok"] = 0.35,
+	["af_electra_moonlight"] = 0.35,
+	["af_eye"] = 0.35,
+	["af_vyvert"] = 0.35,
+	["af_dummy_dummy"] = 0.35,
+	["af_cristall"] = 0.35,
+	["af_empty"] = 0.35,
+	["af_ring"] = 0.35,
+	["af_bracelet"] = 0.35,
+
+	-- t4
+	["af_full_empty"] = 0.75,
+	["af_fireball"] = 0.75,
+	["af_electra_flash"] = 0.75,
+	["af_fire"] = 0.75,
+	["af_glass"] = 0.75,
+	["af_baloon"] = 0.75,
+	["af_ice"] = 0.75,
+	["af_gold_fish"] = 0.75,
+	["af_death_lamp"] = 0.75,
+	["af_black_spray"] = 0.75,
+
+	-- t5
+	["af_oasis_heart"] = 0.95,
+	["af_compass"] = 0.95,
+
+}
+
+----------------------------------------------------------
+----------------- PDA right click functor -----------------
+function is_pda_and_charged(obj)
+	local pda_in_slot = db.actor:item_in_slot(8)
+	if not pda_in_slot then return end
+	if obj and pda_in_slot:id() ~= obj:id() then return end
+
+	local dev_is_pda = string.find(pda_in_slot:section(), "device_pda_")
+	local pda_charged = dev_is_pda and pda_in_slot:condition() and pda_in_slot:condition() > 0.01
+
+	return pda_charged
+end
+
+-- menu
+NamePDAX = ui_inventory.UIInventory.Name_Custom
+function ui_inventory.UIInventory:Name_Custom(obj, bag, temp, i)
+	obj = self:CheckItem(obj,"Name_Custom " .. i)
+
+	if i == 9 and is_pda_and_charged(obj) then
+		return menu_pdax(obj)
+	else
+		return NamePDAX(self, obj, bag, temp, i)
+	end
+
+end
+
+function menu_pdax(obj)
+	local p = obj:parent()
+	if not (p and p:id() == AC_ID) then return end
+
+	return gt("pda_inter_menu")
+end
+
+-- action
+ActionPDAX = ui_inventory.UIInventory.Action_Custom
+function ui_inventory.UIInventory:Action_Custom(obj, bag, temp, i)
+	obj = self:CheckItem(obj,"Action_Custom " .. i)
+
+	if i == 9 and is_pda_and_charged(obj) then
+		func_pdax(obj)
+	else
+		ActionPDAX(self, obj, bag, temp, i)
+	end
+
+end
+
+function func_pdax(obj)
+	local p = obj:parent()
+	if not (p and p:id() == AC_ID) then return end
+
+	start_PDAX()
+
+end
+
+local pda_opened = false	-- just in case
+function on_key_press(key)
+	if key ~= pda_open_key then return end
+
+	if (not pda_opened) and is_pda_and_charged() then
+		start_PDAX()
+		pda_opened = true
+	end
+
+end
+
+-----------------------------------------
+----------------- GUI ------------------
+GUI = nil
+
+function start_PDAX()
+	hide_hud_inventory()
+
+	if (not GUI) then
+		GUI = CustomPDAX()
+	end
+
+	if (GUI) and (not GUI:IsShown()) then
+		GUI:ResetUpperMenus()
+		GUI:ShowDialog(true)
+		Register_UI("CustomPDAX", "custom_pda_xcvb")
+	end
+
+end
+
+class "CustomPDAX" (CUIScriptWnd)
+
+function CustomPDAX:__init() super()
+	self:InitControls()
+	self:InitCallBacks()
+end
+
+function CustomPDAX:InitControls()
+	self:SetWndRect(Frect():set(0, 0, 1024, 768))
+	self:SetAutoDelete(true)
+	self:AllowMovement(true)
+
+	self.xml = CScriptXmlInit()
+	local xml = self.xml
+	xml:ParseFile("ui_xcvb_pda.xml")
+
+	self.background = xml:InitStatic("pda_background", self)
+
+	self.pda_t = {}		-- to store and control multiple main menu buttons by self.cur_tree or loops
+	self.cur_tree = 0	-- what menu is currently open
+
+	self.bottom = {}	-- to loop through lower menus
+
+
+	-------------------------- Main menu --------------------------
+	-- main background, main buttons and their arrows, middle containers
+	self:BuildMainMenu(xml)
+
+	-- enable/disable menu buttons for load_state
+	self:UpdMenuButtons()
+
+
+	-------------------------- Menu 1 (Raid) --------------------------
+	self:BuildRaidUpperMenu(xml)
+
+
+	------------------------ Menu 2 (Buy Info) ------------------------
+	self:BuildFindUpperMenu(xml)
+		------------- child menus -------------
+		self:BuildFindUpperChildArtefact(xml)
+		self:BuildFindUpperChildMutant(xml)
+		self:BuildFindUpperChildStalker(xml)
+
+
+	----------------------- Menu 3 (Games xd) -------------------------
+	self:BuildGamesUpperMenu(xml)
+		------------- child menus -------------
+		self:BuildGamesUpperChildPuzzle(xml)
+		self:BuildGamesUpperChildSlots(xml)
+		self:BuildGamesUpperChildSnake(xml)
+
+
+	----------------------- Menu 4 (Trade) -------------------------
+	self:BuildTradeUpperMenu(xml)
+
+
+	----------------------- Menu 5 (Notes) -------------------------
+	self:BuildNotesUpperMenu(xml)
+
+
+	----------------------- Menu 6 (Banter) -------------------------
+	self:BuildBanterUpperMenu(xml)
+
+
+	----------------------- Menu 7 (Task) -------------------------
+	self:BuildTaskUpperMenu(xml)
+
+
+	--------------------------- Send button ---------------------------
+	self.send_btn = xml:Init3tButton("send_btn", self.background)
+	self:Register(self.send_btn, "send_btn")
+	self.send_btn:Enable(false)
+
+
+	--------------------------- Money ---------------------------
+	self.money = xml:InitTextWnd("money_text", self.background)
+	self:UpdMoneyText()
+
+	-------------------------- Active messages --------------------------
+	self:BuildActiveMsg(xml)
+
+
+	-------------------------- Bottom menu --------------------------
+	self:BuildBottomMenu(xml)
+
+end
+
+function CustomPDAX:InitCallBacks()
+
+	-- Raid
+	for i = 1, main_menu_btns do
+		CustomPDAX["OnClickMainMenu_".. i] = function(self)
+			self:OnClickMainMenu(i)
+		end
+		self:AddCallback("menu_btn_" .. i, ui_events.BUTTON_CLICKED, self["OnClickMainMenu_" .. i], self)
+	end
+
+	self:AddCallback("list_map", ui_events.LIST_ITEM_SELECT, self.OnSelectRaidMap, self)
+
+	-- Find
+	for i = 1, 3 do
+		CustomPDAX["OnClickFindMenu_".. i] = function(self)
+			self:OnClickFindMenu(i)
+		end
+		self:AddCallback("left_btn_" .. i, ui_events.BUTTON_CLICKED, self["OnClickFindMenu_" .. i], self)
+	end
+
+	self:AddCallback("artefact_list", ui_events.LIST_ITEM_SELECT, self.OnSelectFindArtefact, self)
+
+	self:AddCallback("mutant_list", ui_events.LIST_ITEM_SELECT, self.OnSelectFindMutant, self)
+
+	self:AddCallback("stalker_btn", ui_events.BUTTON_CLICKED, self.OnInputStalker, self)
+
+	-- Puzzle
+	for i = 1, 3 do
+		CustomPDAX["OnClickGamesMenu_".. i] = function(self)
+			self:OnClickGamesMenu(i)
+		end
+		self:AddCallback("games_left_btn_" .. i, ui_events.BUTTON_CLICKED, self["OnClickGamesMenu_" .. i], self)
+	end
+
+	for i = 1, 15 do
+		CustomPDAX["OnClickGamesPuzzleBtn_".. i] = function(self)
+			self:OnClickGamesPuzzleBtn(i)
+		end
+		self:AddCallback("puzzle_btn_" .. i, ui_events.BUTTON_CLICKED, self["OnClickGamesPuzzleBtn_".. i], self)
+	end
+
+	self:AddCallback("slot_launch", ui_events.BUTTON_CLICKED, self.OnClickGamesSlotLaunch, self)
+
+	self:AddCallback("snake_launch_btn", ui_events.BUTTON_CLICKED, self.OnClickGamesSnakeLaunch, self)
+
+	-- Trade
+	self:AddCallback("search_item_confirm", ui_events.BUTTON_CLICKED, self.OnClickTradeSearch, self)
+	
+	self:AddCallback("result_item_list", ui_events.LIST_ITEM_SELECT, self.OnSelectTradeResult, self)
+	
+	self:AddCallback("level_item_list", ui_events.LIST_ITEM_SELECT, self.OnSelectTradeLevel, self)
+	
+	self:AddCallback("trade_confirm_btn", ui_events.BUTTON_CLICKED, self.OnClickTradeConfirm, self)
+
+	-- Notes
+	self:AddCallback("notes_confirm_btn", ui_events.BUTTON_CLICKED, self.OnClickNotesConfirm, self)
+
+	self:AddCallback("notes_edit_btn", ui_events.BUTTON_CLICKED, self.OnClickNotesEdit, self)
+
+	self:AddCallback("notes_delete_btn", ui_events.BUTTON_CLICKED, self.OnClickNotesDelete, self)
+
+	-- Banter
+	self:AddCallback("banter_btn_sos", ui_events.BUTTON_CLICKED, self.OnClickBanterSOS, self)
+	self:AddCallback("banter_btn_surge", ui_events.BUTTON_CLICKED, self.OnClickBanterSurge, self)
+	self:AddCallback("banter_btn_psi", ui_events.BUTTON_CLICKED, self.OnClickBanterPsi, self)
+
+	-- Task
+	for i = 1, task_menu_btns do
+		CustomPDAX["OnClickTask_".. i] = function(self)
+			self:OnClickTask(i)
+		end
+		self:AddCallback("task_btn_" .. i, ui_events.BUTTON_CLICKED, self["OnClickTask_" .. i], self)
+	end
+
+	-- bottom
+	for i = 1, 6 do
+		CustomPDAX["OnClickExec_".. i] = function(self)
+			self:OnClickExec(i)
+		end
+		self:AddCallback("bot_btn_" .. i, ui_events.BUTTON_CLICKED, self["OnClickExec_" .. i], self)
+	end
+
+	self:AddCallback("send_btn", ui_events.BUTTON_CLICKED, self.OnClickSend, self)
+	self:AddCallback("cancel_btn", ui_events.BUTTON_CLICKED, self.OnClickCancel, self)
+
+end
+
+-------------------------------------------------------------------------
+------------------------------- Beeld Menus ---------------------------
+-------------------------------------------------------------------------
+function CustomPDAX:BuildMainMenu(xml)
+	self.left_cont = xml:InitStatic("left_container", self.background)
+
+	for i = 1, main_menu_btns do
+		-- Main menu buttons
+		self.pda_t[i] = self.pda_t[i] or {}
+		self.pda_t[i].btn = xml:Init3tButton("left_container:menu_btn_" .. i, self.left_cont)
+		self:Register(self.pda_t[i].btn, "menu_btn_" .. i)
+
+		-- Mid containers
+		self.pda_t[i].mid_cont = xml:InitStatic("mid_container_" .. i, self.background)
+		self.pda_t[i].mid_cont:Show(false)
+	end
+
+	-- Arrow
+	self.main_arrow = xml:InitStatic("left_container:arrow_r", self.left_cont)
+	self.main_arrow:Show(false)
+
+end
+
+-------------------- menu 1 ------------------
+function CustomPDAX:BuildRaidUpperMenu(xml)
+	self.selected_map_raid = nil		-- selected map to pass further, resets on this menu open and OnClickSend
+
+	-- header
+	self.map_header_raid = xml:InitStatic("mid_container_1:map_header", self.pda_t[1].mid_cont)
+	self.map_header_raid:TextControl():SetText(gt("pda_raid_choose"))
+
+	-- level list
+	self.list_map_raid = xml:InitComboBox("mid_container_1:list_map", self.pda_t[1].mid_cont)
+	self.list_map_raid:SetAutoDelete(true)
+	self:Register(self.list_map_raid, "list_map")
+
+	-- raid table sorted by val
+	self.table_map_raid = t_to_ar_by_val(pdax_level_list, true, "k")
+
+	-- map image spot
+	self.map_img_raid = xml:InitStatic("mid_container_1:map_img", self.pda_t[1].mid_cont)
+	self.map_img_raid:Show(false)
+
+	-- difficulty
+	self.raid_diff = xml:InitStatic("mid_container_1:raid_diff", self.pda_t[1].mid_cont)
+	self.raid_diff:Show(false)
+
+end
+
+-------------------- menu 2 ------------------
+function CustomPDAX:BuildFindUpperMenu(xml)
+	self.cur_left_btn_find = 0		-- similar to self.cur_tree (set to 0 on reset)
+	self.selected_find_item = nil		-- selected item to pass further, resets on this menu open and OnClickSend	(set to nil on reset)
+
+	-- left side menus
+	self.find_menu = self.find_menu or {}
+
+	self.left_list_find = xml:InitStatic("mid_container_2:left_btn_list", self.pda_t[2].mid_cont)
+
+	for i = 1, 3 do
+		-- buttons
+		self.find_menu[i] = self.find_menu[i] or {}
+		self.find_menu[i].btn = xml:Init3tButton("mid_container_2:left_btn_list:left_btn_" .. i, self.left_list_find)
+		self:Register(self.find_menu[i].btn, "left_btn_" .. i)
+
+		-- child menus
+		self.find_menu[i].child_menu = xml:InitStatic("mid_container_2:right_panel_" .. i, self.pda_t[2].mid_cont)
+	end
+
+	-- arrow
+	self.find_arrow = xml:InitStatic("mid_container_2:left_btn_list:arrow_r", self.left_list_find)
+	self.find_arrow:Show(false)
+
+end
+
+function CustomPDAX:BuildFindUpperChildArtefact(xml)
+	-- sort list by rarity value
+	self.table_map_artefact_find = t_to_ar_by_val(pdax_artefact_list, nil, "k")
+
+	-- list
+	self.artefact_list_find = xml:InitComboBox("mid_container_2:right_panel_1:artefact_list", self.find_menu[1].child_menu)
+	self.artefact_list_find:SetAutoDelete(true)
+	self:Register(self.artefact_list_find, "artefact_list")
+	align_element(self, self.artefact_list_find, self.find_menu[1].child_menu, "c")
+
+	-- img
+	self.artefact_img_find = xml:InitStatic("mid_container_2:right_panel_1:artefact_img", self.find_menu[1].child_menu)
+	align_element(self, self.artefact_img_find, self.find_menu[1].child_menu, "c")
+
+end
+
+function CustomPDAX:BuildFindUpperChildMutant(xml)
+	-- sort list by rarity value
+	self.table_map_mutant_find = t_to_ar_by_val(pdax_mutant_list, nil, "k")
+
+	-- list
+	self.mutant_list_find = xml:InitComboBox("mid_container_2:right_panel_2:mutant_list", self.find_menu[2].child_menu)
+	self.mutant_list_find:SetAutoDelete(true)
+	self:Register(self.mutant_list_find, "mutant_list")
+	align_element(self, self.mutant_list_find, self.find_menu[2].child_menu, "c")
+
+	-- img
+	self.mutant_img_find = xml:InitStatic("mid_container_2:right_panel_2:mutant_img", self.find_menu[2].child_menu)
+	align_element(self, self.mutant_img_find, self.find_menu[2].child_menu, "c")
+
+end
+
+function CustomPDAX:BuildFindUpperChildStalker(xml)
+	-- input box
+	self.stalker_box_find = xml:InitEditBox("mid_container_2:right_panel_3:stalker_input", self.find_menu[3].child_menu)
+	self:Register(self.stalker_box_find, "stalker_input")
+	align_element(self, self.stalker_box_find, self.find_menu[3].child_menu, "c")
+
+	-- confirm button
+	self.stalker_btn_find = xml:Init3tButton("mid_container_2:right_panel_3:stalker_btn", self.find_menu[3].child_menu)
+	self:Register(self.stalker_btn_find, "stalker_btn")
+	align_element(self, self.stalker_btn_find, self.find_menu[3].child_menu, "c")
+
+end
+
+-------------------- menu 3 ------------------
+function CustomPDAX:BuildGamesUpperMenu(xml)		-- xd
+	self.cur_left_btn_games = 0		-- similar to self.cur_tree (set to 0 on reset)
+
+	-- left side menus
+	self.games_menu = self.games_menu or {}
+
+	self.left_list_games = xml:InitStatic("mid_container_3:games_btn_list", self.pda_t[3].mid_cont)
+
+	for i = 1, 3 do
+		-- buttons
+		self.games_menu[i] = self.games_menu[i] or {}
+		self.games_menu[i].btn = xml:Init3tButton("mid_container_3:games_btn_list:left_btn_" .. i, self.left_list_games)
+		self:Register(self.games_menu[i].btn, "games_left_btn_" .. i)
+
+		-- child menus
+		self.games_menu[i].child_menu = xml:InitStatic("mid_container_3:game_pda_" .. i, self.pda_t[3].mid_cont)
+	end
+
+	-- arrow
+	self.game_arrow = xml:InitStatic("mid_container_3:games_btn_list:arrow_r", self.left_list_games)
+	self.game_arrow:Show(false)
+
+end
+
+function CustomPDAX:BuildGamesUpperChildPuzzle(xml)
+	self.puzzle = self.puzzle or {}
+
+	self.puzzle_win = nil
+
+	for i = 1, 16 do		-- 16 will be empty
+		self.puzzle[i] = self.puzzle[i] or {}
+
+		self.puzzle[i].btn = xml:Init3tButton("mid_container_3:game_pda_1:puzzle_btn_" .. i, self.games_menu[1].child_menu)
+		self:Register(self.puzzle[i].btn, "puzzle_btn_" .. i)
+
+	end
+
+end
+
+function CustomPDAX:BuildGamesUpperChildSlots(xml)
+	self.slot_machine = self.slot_machine or {}
+
+	self.slots_spin = false
+
+	-- slots
+	for i = 1, 3 do
+		self.slot_machine[i] = self.slot_machine[i] or {}
+
+		self.slot_machine[i].slot = xml:InitStatic("mid_container_3:game_pda_2:slot_" .. i, self.games_menu[2].child_menu)
+
+		self.slot_machine[i].spinning = 0
+
+		self.slot_machine[i].pos = 300
+
+		self.slot_machine[i].slot:SetTextureRect(Frect():set(0, self.slot_machine[i].pos, 100, self.slot_machine[i].pos + 100))		-- change only y1 y2
+
+	end
+
+	-- description
+	self.slot_descr_coin = xml:InitStatic("mid_container_3:game_pda_2:slot_descr_coin1", self.games_menu[2].child_menu)
+	self.slot_descr_coin2 = xml:InitStatic("mid_container_3:game_pda_2:slot_descr_coin2", self.games_menu[2].child_menu)
+	self.slot_descr_seven = xml:InitStatic("mid_container_3:game_pda_2:slot_descr_seven", self.games_menu[2].child_menu)
+
+	-- launch button
+	self.slot_launch = xml:Init3tButton("mid_container_3:game_pda_2:slot_launch", self.games_menu[2].child_menu)
+	self:Register(self.slot_launch, "slot_launch")
+
+	-- add bet text
+	local str = self.slot_launch:TextControl():GetText()
+	self.slot_launch:TextControl():SetText(str .. ": " .. slots_bet .. " RU")
+
+end
+
+function CustomPDAX:BuildGamesUpperChildSnake(xml)
+	self.snake_launch = false
+	self.snake_length = self.snake_length or 0
+	self.snake_body = self.snake_body or {}
+	self.snake_step = 10
+	self.snake_dir = self.snake_dir or "u"
+	self.snake_start_speed = 150
+	self.snake_speed_inc = 2
+
+	self.snake_cur_score = 0
+	self.snake_bet = 15
+
+	-- grid / border
+	self.snake_grid = xml:InitStatic("mid_container_3:game_pda_3:snake_grid", self.games_menu[3].child_menu)
+	self.snake_border = xml:InitStatic("mid_container_3:game_pda_3:snake_border", self.games_menu[3].child_menu)
+
+	-- head
+	self.snake_head = xml:InitStatic("mid_container_3:game_pda_3:snake_head", self.games_menu[3].child_menu)
+
+	-- food
+	self.snake_food = xml:InitStatic("mid_container_3:game_pda_3:snake_food", self.games_menu[3].child_menu)
+	self.snake_food:SetWndPos(vector2():set(7 * self.snake_step, 7 * self.snake_step))
+
+	-- score
+	self.snake_score_text = xml:InitTextWnd("mid_container_3:game_pda_3:snake_score", self.games_menu[3].child_menu)
+	self.snake_score_text:SetText(self.snake_cur_score)
+
+	-- launch button
+	self.snake_launch_btn = xml:Init3tButton("mid_container_3:game_pda_3:snake_launch_btn", self.games_menu[3].child_menu)
+	self:Register(self.snake_launch_btn, "snake_launch_btn")
+	align_element(self, self.snake_launch_btn, self.games_menu[3].child_menu, "c", "c")
+	self.snake_launch_btn:Show(true)
+
+	self.snake_launch_btn:TextControl():SetText(gt("pda_games_menu_play") .. ": " .. self.snake_bet .. " RU")
+
+end
+
+-------------------- menu 4 ------------------
+function CustomPDAX:BuildTradeUpperMenu(xml)
+
+	-- input item
+	self.trade_search_header = xml:InitTextWnd("mid_container_4:search_item_header", self.pda_t[4].mid_cont)
+	self.trade_search_input = xml:InitEditBox("mid_container_4:search_item_input", self.pda_t[4].mid_cont)
+	self:Register(self.trade_search_input, "search_item_input")
+	self.trade_search_confirm = xml:Init3tButton("mid_container_4:search_item_confirm", self.pda_t[4].mid_cont)
+	self:Register(self.trade_search_confirm, "search_item_confirm")
+
+	-- results
+	self.trade_result_table = {}
+	self.trade_selected_item_sec = nil
+	self.trade_selected_item_name = nil
+	self.trade_result_header = xml:InitTextWnd("mid_container_4:result_item_header", self.pda_t[4].mid_cont)
+	self.trade_result_list = xml:InitComboBox("mid_container_4:result_item_list", self.pda_t[4].mid_cont)
+	self.trade_result_list:SetAutoDelete(true)
+	self:Register(self.trade_result_list, "result_item_list")
+	self.trade_result_img = xml:InitStatic("mid_container_4:result_item_img", self.pda_t[4].mid_cont)
+	self.trade_result_img:Show(false)
+
+	-- quantity
+	self.trade_quantity = nil
+	self.trade_quan_header = xml:InitTextWnd("mid_container_4:quantity_item_header", self.pda_t[4].mid_cont)
+	self.trade_quan_input = xml:InitEditBox("mid_container_4:quantity_item_input", self.pda_t[4].mid_cont)
+	self:Register(self.trade_quan_input, "quantity_item_input")
+
+	-- location
+	self.trade_level_table = {}
+	self.trade_selected_level = nil
+	self.trade_level_header = xml:InitTextWnd("mid_container_4:level_item_header", self.pda_t[4].mid_cont)
+	self.trade_level_list = xml:InitComboBox("mid_container_4:level_item_list", self.pda_t[4].mid_cont)
+	self.trade_level_list:SetAutoDelete(true)
+	self:Register(self.trade_level_list, "level_item_list")
+	self.trade_level_img = xml:InitStatic("mid_container_4:level_item_img", self.pda_t[4].mid_cont)
+	self.trade_level_img:Show(false)
+
+	self.trade_level_table = t_to_ar_by_val(pdax_level_list, true, "k")
+
+	-- remove blacklisted levels from trade_level_table array
+	for lname, _ in pairs(pda_inter_x_trade.Delivery_blacklisted_levels) do
+		for idx, lname2 in pairs(self.trade_level_table) do
+			if lname == lname2 then
+				table.remove(self.trade_level_table, idx)
+			end
+		end
+	end
+
+	-- confirm
+	self.trade_final_confirm = xml:Init3tButton("mid_container_4:trade_confirm_btn", self.pda_t[4].mid_cont)
+	self:Register(self.trade_final_confirm, "trade_confirm_btn")
+
+	-- logo
+	self.trade_logo = xml:InitStatic("mid_container_4:trade_logo", self.pda_t[4].mid_cont)
+
+end
+
+-------------------- menu 5 ------------------
+function CustomPDAX:BuildNotesUpperMenu(xml)
+	self.selected_edit_note = nil
+
+	-- load if array exist and insert all elements as one big string
+	local big_str = ""
+	if #pda_notes_t > 0 then
+		for i = 1, #pda_notes_t do
+			local white_clr_str = strformat("%c[%s,%s,%s,%s]", 255, 255, 255, 255)
+			local yel_clr_str = strformat("%c[%s,%s,%s,%s]", 255, 255, 255, 0)
+			local def_clr_str = strformat("%c[%s,%s,%s,%s]", 255, 190, 190, 190)
+
+			big_str = big_str .. yel_clr_str .. pda_notes_t[i][1] .. white_clr_str .. pda_notes_t[i][2] .. def_clr_str .. pda_notes_t[i][3]
+		end
+	end
+
+	-- text and scroll
+	self.notes_scroll = xml:InitScrollView("mid_container_5:notes_scrollbar", self.pda_t[5].mid_cont)
+
+	self.notes_text_wnd = xml:InitTextWnd("mid_container_5:notes_text_wnd", self.notes_scroll)
+	self.notes_text_wnd:SetText(big_str)
+
+	self.notes_text_wnd:AdjustHeightToText()
+
+	self.notes_text_wnd:SetAutoDelete(false)
+
+	-- note picker
+	self.notes_picker_hint = xml:InitTextWnd("mid_container_5:notes_picker_hint", self.pda_t[5].mid_cont)
+
+	self.notes_picker_input = xml:InitEditBox("mid_container_5:notes_picker_input", self.pda_t[5].mid_cont)
+	self:Register(self.notes_picker_input, "notes_picker_input")
+
+	self.notes_edit_btn = xml:Init3tButton("mid_container_5:notes_edit_btn", self.pda_t[5].mid_cont)
+	self:Register(self.notes_edit_btn, "notes_edit_btn")
+
+	self.notes_delete_btn = xml:Init3tButton("mid_container_5:notes_delete_btn", self.pda_t[5].mid_cont)
+	self:Register(self.notes_delete_btn, "notes_delete_btn")
+
+	-- input
+	self.notes_input_box = xml:InitEditBox("mid_container_5:notes_input_box", self.pda_t[5].mid_cont)
+	self:Register(self.notes_input_box, "notes_input_box")
+	self:AddCallback("notes_input_box", ui_events.EDIT_TEXT_COMMIT, self.OnClickNotesConfirm, self)
+
+	-- input confirm btn
+	self.notes_input_confirm_btn = xml:Init3tButton("mid_container_5:notes_confirm_btn", self.pda_t[5].mid_cont)
+	self:Register(self.notes_input_confirm_btn, "notes_confirm_btn")
+
+	-- for loading and other scripts
+	self:UpdNotesMenu()
+
+end
+
+-------------------- menu 6 ------------------
+function CustomPDAX:BuildBanterUpperMenu(xml)
+	self.picked_banter_option = nil		-- choosen banter option
+
+	-- SOS
+	self.banter_sos_header = xml:InitStatic("mid_container_6:banter_header_sos", self.pda_t[6].mid_cont)
+	align_element(self, self.banter_sos_header, self.pda_t[6].mid_cont, "c")
+	self.banter_sos_btn = xml:Init3tButton("mid_container_6:banter_btn_sos", self.pda_t[6].mid_cont)
+	self:Register(self.banter_sos_btn, "banter_btn_sos")
+	align_element(self, self.banter_sos_btn, self.pda_t[6].mid_cont, "c")
+
+	-- Surge
+	self.banter_surge_header = xml:InitStatic("mid_container_6:banter_header_surge", self.pda_t[6].mid_cont)
+	align_element(self, self.banter_surge_header, self.pda_t[6].mid_cont, "c")
+	self.banter_surge_btn = xml:Init3tButton("mid_container_6:banter_btn_surge", self.pda_t[6].mid_cont)
+	self:Register(self.banter_surge_btn, "banter_btn_surge")
+	align_element(self, self.banter_surge_btn, self.pda_t[6].mid_cont, "c")
+
+	-- Psi-storm
+	self.banter_psi_header = xml:InitStatic("mid_container_6:banter_header_psi", self.pda_t[6].mid_cont)
+	align_element(self, self.banter_psi_header, self.pda_t[6].mid_cont, "c")
+	self.banter_psi_btn = xml:Init3tButton("mid_container_6:banter_btn_psi", self.pda_t[6].mid_cont)
+	self:Register(self.banter_psi_btn, "banter_btn_psi")
+	align_element(self, self.banter_psi_btn, self.pda_t[6].mid_cont, "c")
+
+end
+
+-------------------- menu 7 ------------------
+function CustomPDAX:BuildTaskUpperMenu(xml)
+	self.selected_task_type = 0		-- selected task type to pass further, resets on ResetUpperMenus, OnClickSend and OnClickCancel
+
+	-- task buttons for each type
+	self.task_btn = self.task_btn or {}
+	pda_msg_states[7].cd = pda_msg_states[7].cd or {}
+
+	for i = 1, task_menu_btns do
+		self.task_btn[i] = self.task_btn[i] or {}
+		pda_msg_states[7].cd[i] = pda_msg_states[7].cd[i] or false
+
+		self.task_btn[i].btn = xml:Init3tButton("mid_container_7:task_btn_" .. i, self.pda_t[7].mid_cont)
+		self:Register(self.task_btn[i].btn, "task_btn_" .. i)
+		self.task_btn[i].btn:Enable( (not pda_msg_states[7].cd[i]) )
+
+	end
+
+	-- arrow
+	self.task_arrow = xml:InitStatic("mid_container_7:arrow_r", self.pda_t[7].mid_cont)
+	self.task_arrow:Show(false)
+
+end
+
+-------------------- active menu ------------------
+function CustomPDAX:BuildActiveMsg(xml)
+	self.active_cont = xml:InitStatic("active_cont", self.background)
+
+	-- active text
+	self.active_text = xml:InitTextWnd("active_cont:active_cont_text", self.active_cont)
+	align_element(self, self.active_text, self.active_cont, "c")
+
+	local cur_active_str = gt("pda_cur_active_none")
+	for i = 1, #pda_msg_states do
+		if pda_msg_states[i].state == 5 then
+			cur_active_str = pda_msg_states[i].active_str
+			break
+		end
+	end
+	self.active_text:SetText(gt("pda_cur_active") .. "   " .. cur_active_str)
+
+	-- active cancel button
+	self.active_cancel_btn = xml:Init3tButton("active_cont:cancel_btn", self.active_cont)
+	self:Register(self.active_cancel_btn, "cancel_btn")
+
+end
+
+-------------------- bottom menu ------------------
+function CustomPDAX:BuildBottomMenu(xml)
+
+	self.bot_cont_main = xml:InitStatic("bot_cont_main", self.background)
+
+	-- bottom small containers
+	for i = 1, 6 do
+
+		self.bottom[i] = self.bottom[i] or {}
+
+		-- character container
+		self.bottom[i].big = xml:InitStatic("bot_cont_main:bot_cont_" .. i, self.bot_cont_main)
+		self.bottom[i].big:Show(false)
+		local cont1 = self.bottom[i].big
+
+		-- icon
+		self.bottom[i].icon = xml:InitStatic("bot_cont_main:bot_cont_" .. i .. ":bot_icon", self.bottom[i].big)
+		align_element(self, self.bottom[i].icon, cont1, "c")
+
+		-- descr
+		self.bottom[i].descr = xml:InitTextWnd("bot_cont_main:bot_cont_" .. i .. ":bot_descr", self.bottom[i].big)
+		align_element(self, self.bottom[i].descr, cont1, "c", nil, 0)
+
+		-- button
+		self.bottom[i].btn = xml:Init3tButton("bot_cont_main:bot_cont_" .. i .. ":bot_btn", self.bottom[i].big)
+		self:Register(self.bottom[i].btn, "bot_btn_" .. i)
+		align_element(self, self.bottom[i].btn, cont1, "c")
+
+	end
+
+end
+
+-------------------------------------------------------------------------
+--------------------------------- Reset ---------------------------------
+-------------------------------------------------------------------------
+function CustomPDAX:ResetUpperMenus()
+	pr("Resetting upper half")
+	self.cur_tree = 0
+	for i = 1, #self.pda_t do
+
+		-- middle containers
+		if self.pda_t[i].mid_cont then
+			self.pda_t[i].mid_cont:Show(false)
+		end
+
+	end
+
+	-- hide arrow
+	self.main_arrow:Show(false)
+
+	-- disable "Send" button
+	self.send_btn:Enable(false)
+
+	-- update actor money
+	self:UpdMoneyText()
+
+	-- Reset All menus
+	self:ResetRaidMenu()		-- 1
+	self:ResetFindMenu()		-- 2
+	self:ResetGamesMenu()	-- 3
+	self:ResetTradeMenu()		-- 4
+	self:ResetBanterMenu()	-- 6
+	self:ResetTaskMenu()		-- 7
+
+end
+
+function CustomPDAX:ResetRaidMenu()
+	self.selected_map_raid = nil
+
+	self.list_map_raid:ClearList()
+
+	for i = 1, #self.table_map_raid do
+		self.list_map_raid:AddItem(gt(self.table_map_raid[i]), i)
+	end
+
+	self.list_map_raid:SetText("")
+
+	self.map_img_raid:Show(false)
+	self.raid_diff:Show(false)
+
+end
+
+function CustomPDAX:ResetFindMenu()
+	self.cur_left_btn_find = 0
+	self.selected_find_item = nil
+
+	-- hide child menu arrow
+	self.find_arrow:Show(false)
+
+	-- hide all child menus
+	for i = 1, #self.find_menu do
+		self.find_menu[i].child_menu:Show(false)
+	end
+
+	-- disable "Send" button
+	self.send_btn:Enable(false)
+
+	-- Reset All child menus
+	------------ 1 ------------
+		-- clear list and fill it up again (the only way to reset selected ID)
+	self.artefact_list_find:ClearList()
+	for i = 1, #self.table_map_artefact_find do
+		local str = self.table_map_artefact_find[i]
+		self.artefact_list_find:AddItem(gt("st_" .. str .. "_name"), i)
+	end
+
+	-- update str and img and hide img
+	self.artefact_list_find:SetText("")
+	self.artefact_img_find:Show(false)
+
+	------------ 2 ------------
+	-- clear list and fill it up again
+	self.mutant_list_find:ClearList()
+	for i = 1, #self.table_map_mutant_find do
+		local str = self.table_map_mutant_find[i]
+		self.mutant_list_find:AddItem(gt("encyclopedia_mutants_" .. str), i)
+	end
+
+	-- update str and hide img
+	self.mutant_list_find:SetText("")
+	self.mutant_img_find:Show(false)
+
+	------------ 3 ------------
+	self.stalker_box_find:SetText("")
+
+end
+
+function CustomPDAX:ResetGamesMenu()
+	self.cur_left_btn_games = 0
+
+	-- hide child menu arrow
+	self.game_arrow:Show(false)
+
+	-- hide all child menus
+	for i = 1, #self.games_menu do
+		self.games_menu[i].child_menu:Show(false)
+	end
+
+	-- Reset All child menus
+	------------ 1 ------------
+	self.puzzle_win = nil
+
+	-- collect positions
+	local new_pos = {}
+	for i = 1, #self.puzzle do
+		table.insert(new_pos, vector2():set(self.puzzle[i].btn:GetWndPos()))
+	end
+
+	-- shuffle
+	for i = #new_pos, 1, -1 do
+		local j = math.random(i)
+		new_pos[i], new_pos[j] = new_pos[j], new_pos[i]
+	end
+
+	-- change positions
+	for i = 1, #new_pos do
+		self.puzzle[i].btn:SetWndPos(vector2():set(new_pos[i].x, new_pos[i].y))
+		self.puzzle[i].pos = self.puzzle[i].btn:GetWndPos()
+	end
+
+	------------ 2 ------------
+	-- stop spinning
+	self.slots_spin = false
+
+	-- reset slots position
+	for i = 1, 3 do
+		self.slot_machine[i].spinning = 0
+		self.slot_machine[i].pos = 300
+		self.slot_machine[i].slot:SetTextureRect(Frect():set(0, self.slot_machine[i].pos, 100, self.slot_machine[i].pos + 100))
+	end
+
+	-- enable button (just in case)
+	self.slot_launch:Enable(true)
+
+	------------ 3 ------------
+	self:ResetGamesSnake()
+
+end
+
+function CustomPDAX:ResetGamesSnake()
+	self:AllowMovement(true)
+	self.snake_launch = false
+	self.snake_dir = "u"
+	self.snake_length = 0
+
+	-- reset body
+	for i = 1, #self.snake_body do
+		self.snake_body[i]:Show(false)
+	end
+	self.snake_body = {}
+
+	self.snake_start_speed = 150
+	self.snake_speed_inc = 2
+	self.snake_cur_score = 0
+	self.snake_score_text:SetText(self.snake_cur_score)
+	self.snake_head:SetWndPos(vector2():set(5 * self.snake_step, 5 * self.snake_step))
+	self.snake_food:SetWndPos(vector2():set(7 * self.snake_step, 7 * self.snake_step))
+	self.snake_launch_btn:Show(true)
+	self.snake_launch_btn:TextControl():SetText(gt("pda_games_menu_play") .. ": " .. self.snake_bet .. " RU")
+
+	self:UpdMoneyText()
+
+end
+
+function CustomPDAX:ResetTradeMenu()
+	-- reset results vars, table, list and image
+	self.trade_selected_item_sec = nil
+	self.trade_selected_item_name = nil
+	self.trade_result_table = {}
+
+	self.trade_result_list:ClearList()
+	self.trade_result_list:SetText("")
+	self.trade_result_img:Show(false)
+
+	-- reset quantity input
+	self.trade_quantity = nil
+	self.trade_quan_input:SetText("")
+
+	-- reset level list and image
+	self.trade_selected_level = nil
+	self.trade_level_list:ClearList()
+
+	for i = 1, #self.trade_level_table do
+		self.trade_level_list:AddItem(gt(self.trade_level_table[i]), i)
+	end
+
+	self.trade_level_list:SetText("")
+	self.trade_level_img:Show(false)
+
+end
+
+function CustomPDAX:ResetBanterMenu()
+	self.picked_banter_option = nil
+
+end
+
+function CustomPDAX:ResetTaskMenu()
+
+	-- reset self.selected_task_type
+	self.selected_task_type = 0
+
+	-- hide arrow
+	self.task_arrow:Show(false)
+
+	-- update button text if on cooldown
+
+end
+
+function CustomPDAX:ResetLowerMenus()
+	pr("Resetting lower half")
+
+	for i = 1, #self.bottom do
+
+		-- Hiding all lower menus
+		if self.bottom[i] and self.bottom[i].big then
+			self.bottom[i].big:Show(false)
+		end
+
+	end
+
+end
+
+-------------------------------------------------------------------------
+----------------------------- On click events ---------------------------
+-------------------------------------------------------------------------
+function CustomPDAX:OnClickMainMenu(num)
+	-- do nothing if we click on currently opened menu
+	if self.cur_tree ~= num then
+
+		-- reset and hide all upper containers, arrow, disable "Send" button
+		self:ResetUpperMenus()
+
+		-- set current tree to pressed menu (num)
+		self.cur_tree = num
+
+		-- show and repos arrow to clicked menu
+		self.main_arrow:Show(true)
+		local arrow_pos = self.main_arrow:GetWndPos()
+		local arrow_pos_y = num * 40 - 20
+		self.main_arrow:SetWndPos(vector2():set(arrow_pos.x, arrow_pos_y))
+
+		-- show middle container for clicked menu
+		self.pda_t[num].mid_cont:Show(true)
+
+	end
+
+end
+
+function CustomPDAX:OnClickFindMenu(num)		-- (art, mutant, stalker)
+
+	if self.cur_left_btn_find ~= num then
+
+		-- reset all child menus
+		self:ResetFindMenu()
+
+		-- set pressed child menu button
+		self.cur_left_btn_find = num
+
+		-- show and repos child menu arrow
+		self.find_arrow:Show(true)
+		local arrow_pos = self.find_arrow:GetWndPos()
+		local arrow_pos_y = (num - 1) * 50
+		self.find_arrow:SetWndPos(vector2():set(arrow_pos.x, arrow_pos_y))
+
+		-- show clicked child menu
+		self.find_menu[num].child_menu:Show(true)		-- right side container
+
+	end
+
+end
+
+function CustomPDAX:OnClickGamesMenu(num)		-- (puzzle, slots)
+
+	if self.cur_left_btn_games ~= num then
+
+		-- reset all child menus
+		self:ResetGamesMenu()
+
+		-- set pressed child menu button
+		self.cur_left_btn_games = num
+
+		-- show and repos child menu arrow
+		self.game_arrow:Show(true)
+		local arrow_pos = self.game_arrow:GetWndPos()
+		local arrow_pos_y = (num - 1) * 50
+		self.game_arrow:SetWndPos(vector2():set(arrow_pos.x, arrow_pos_y))
+
+		-- show clicked child menu
+		self.games_menu[num].child_menu:Show(true)		-- right side container
+
+	end
+
+end
+
+function CustomPDAX:OnClickGamesPuzzleBtn(num)
+	if not self.puzzle_win then
+
+		-- find pos of empty cell and clicked btn
+		local e_p = vector2():set(self.puzzle[16].btn:GetWndPos())
+		local c_p = vector2():set(self.puzzle[num].btn:GetWndPos())
+
+		-- check if piece can be moved and swap them
+		local cond_h = ((e_p.x - c_p.x) == 55 or (e_p.x - c_p.x) == -55) and (e_p.y == c_p.y)
+		local cond_v = ((e_p.y - c_p.y) == 55 or (e_p.y - c_p.y) == -55) and (e_p.x == c_p.x)
+		if cond_h or cond_v then
+			self.puzzle[num].btn:SetWndPos(vector2():set(e_p))
+			self.puzzle[16].btn:SetWndPos(vector2():set(c_p))
+		end
+
+		-- check if won and give prize
+		local cells_fit = 0
+		local win_t = {
+			{0,0}, {55,0}, {110,0}, {165,0},
+			{0,55}, {55,55}, {110,55}, {165,55},
+			{0,110}, {55,110}, {110,110}, {165,110},
+			{0,165}, {55,165}, {110,165}, {165, 165},
+		}
+
+		for i = 1, #self.puzzle do
+			local pos = vector2():set(self.puzzle[i].btn:GetWndPos())
+			if pos.x == win_t[i][1] and pos.y == win_t[i][2] then
+				cells_fit = cells_fit + 1
+			end
+		end
+
+		if cells_fit >= #self.puzzle then
+			self.puzzle_win = true
+			db.actor:give_money(puzzle_reward)
+			self:UpdMoneyText()
+		end
+
+	end
+
+end
+
+function CustomPDAX:OnClickGamesSlotLaunch()
+	if db.actor:money() >= slots_bet then
+
+		-- take money
+		db.actor:give_money(-slots_bet)
+
+		-- update money text
+		self:UpdMoneyText()
+
+		-- disable button
+		self.slot_launch:Enable(false)
+
+		-- set each slot to spinning
+		for i = 1, 3 do
+			self.slot_machine[i].spinning = 1
+		end
+
+		-- stop spinning after some time and round frect to nearest 100
+		local function stop_spin(i)
+			self.slot_machine[i].spinning = 0
+			local stopped_pos = self.slot_machine[i].slot:GetTextureRect()
+			local round = math.floor((stopped_pos.y1 / 100) + 0.5) * 100
+			round = round >= 500 and 0 or round
+			self.slot_machine[i].slot:SetTextureRect(Frect():set(0, round, 100 , round + 100))
+
+			-- if all of slots have stopped then launch reward/finish function
+			local amnt = 0
+			for j = 1, #self.slot_machine do
+				if self.slot_machine[j].spinning == 0 then
+					amnt = amnt + 1
+				end
+			end
+
+			if amnt >= 3 then
+				self:SlotsEnd()
+			end
+
+			return true
+		end
+
+		for i = 1, 3 do
+			CreateTimeEvent("slot_stop_spin_e_" .. i, "slot_stop_spin_a_" .. i, math.random(40, 70) / 10, stop_spin, i)
+		end
+
+		-- launch spin
+		self.slots_spin = true
+
+	end
+
+end
+
+function CustomPDAX:OnClickGamesSnakeLaunch()
+	if db.actor:money() >= self.snake_bet then
+
+		-- take money and update money display
+		db.actor:give_money(-(self.snake_bet))
+		self:UpdMoneyText()
+
+		-- launch game and hide button
+		self.snake_launch = true
+		self.snake_launch_btn:Show(false)
+
+	end
+
+end
+
+function CustomPDAX:OnClickTradeSearch()
+	-- reset everything except of search box within each new string
+	self:ResetTradeMenu()
+
+	local input_str = self.trade_search_input:GetText()
+
+	-- fill up the item list with the name results
+	self.trade_result_table = pda_inter_x_trade.get_item_list_by_str(input_str)
+	if self.trade_result_table and is_not_empty(self.trade_result_table) then
+		for i = 1, #self.trade_result_table do
+			self.trade_result_list:AddItem(gt(self.trade_result_table[i][2]), i)
+		end
+	end
+
+end
+
+function CustomPDAX:OnClickTradeConfirm()
+	-- all conditions are met
+	local quantity = tonumber(self.trade_quan_input:GetText())
+	pr("trade conditions__ sec: %s || name: %s || level: %s || amount: %s", self.trade_selected_item_sec, self.trade_selected_item_name, self.trade_selected_level, quantity)
+	if self.trade_selected_item_sec and self.trade_selected_item_name and self.trade_selected_level and (quantity and type(quantity) == "number") then
+		self.trade_quantity = quantity
+		self.send_btn:Enable(true)
+	end
+
+end
+
+function CustomPDAX:OnClickNotesConfirm()
+	local str_to_add = self.notes_input_box:GetText()
+	-- asdasd\nasdasd\nasdasd\nasdasd\n
+
+	local cur_time = game.get_game_time()
+	local cur_d = cur_time:dateToString(game.CTime.DateToDay)
+	local cur_min = cur_time:timeToString(game.CTime.TimeToMinutes)
+
+	-- if we editing note
+	if self.selected_edit_note then
+
+		-- update idx
+		local i = self.selected_edit_note
+		pda_notes_t[i][1] = "#" .. i
+
+		-- update time
+		pda_notes_t[i][2] = " " .. cur_d .. " | " .. cur_min .. " \\n"
+
+		-- change string
+		pda_notes_t[i][3] = str_to_add .. "\\n \\n"
+
+		-- update text window
+		self:UpdNotesMenu()
+
+		-- reset input note picker text
+		self.notes_picker_input:SetText("")
+
+		-- reset selected edit input
+		self.selected_edit_note = nil
+
+		-- change button text back to "Add"
+		self.notes_input_confirm_btn:TextControl():SetText(gt("pda_notes_add_btn"))
+
+	-- if we adding new note
+	elseif str_to_add ~= "" then
+
+		-- add text to the table
+		table.insert(pda_notes_t, {})		-- new array for each new note
+
+		-- index
+		pda_notes_t[#pda_notes_t][1] = "#" .. #pda_notes_t
+
+		-- date, time
+		pda_notes_t[#pda_notes_t][2] = " " .. cur_d .. " | " .. cur_min .. " \\n"
+
+		-- string
+		pda_notes_t[#pda_notes_t][3] = str_to_add .. "\\n \\n"
+
+		-- update text window
+		self:UpdNotesMenu()
+
+	end
+
+end
+
+function CustomPDAX:OnClickNotesEdit()
+	local picked_idx = self.notes_picker_input:GetText()
+
+	if picked_idx ~= "" then
+		picked_idx = tonumber(picked_idx)
+		if type(picked_idx) == "number" and picked_idx > 0 then
+
+			-- get element by picked note index and put it into note input box
+			local picked_note = pda_notes_t[picked_idx]		-- text
+
+			if picked_note then
+
+				-- set editing note index
+				self.selected_edit_note = picked_idx
+				
+				-- change button text from "Add" to "Edit"
+				self.notes_input_confirm_btn:TextControl():SetText(gt("pda_notes_editedit_btn"))
+
+				-- remove \n and index from the string
+				picked_note[3] = string.gsub(picked_note[3], "\\n \\n", "")
+
+				-- put string into input box
+				self.notes_input_box:SetText(picked_note[3])
+
+			end
+
+		end
+	end
+
+end
+
+function CustomPDAX:OnClickNotesDelete()
+	local picked_idx = self.notes_picker_input:GetText()
+
+	if picked_idx ~= "" then
+		picked_idx = tonumber(picked_idx)		-- turn tonumber
+		if type(picked_idx) == "number" and picked_idx > 0 then
+
+			-- check if exist 
+			local picked_note = pda_notes_t[picked_idx]
+			if picked_note then
+
+			-- delete element from text array
+			table.remove(pda_notes_t, picked_idx)
+
+			-- reset input note picker text
+			self.notes_picker_input:SetText("")
+
+			-- in case we pressed edit
+			self.selected_edit_note = nil
+
+			-- change button text back to "Add"
+			self.notes_input_confirm_btn:TextControl():SetText(gt("pda_notes_add_btn"))
+
+			-- update text window
+			self:UpdNotesMenu()
+
+			end
+
+		end
+	end
+
+end
+
+function CustomPDAX:OnClickBanterSOS()
+	-- set choosen option to sos
+	self.picked_banter_option = "sos"
+
+	-- enable send button
+	self.send_btn:Enable(true)
+
+end
+
+function CustomPDAX:OnClickBanterSurge()
+	-- set choosen option to surge
+	self.picked_banter_option = "surge"
+
+	-- enable send button
+	self.send_btn:Enable(true)
+
+end
+
+function CustomPDAX:OnClickBanterPsi()
+	-- set choosen option to psi
+	self.picked_banter_option = "psi"
+
+	-- enable send button
+	self.send_btn:Enable(true)
+
+end
+
+function CustomPDAX:OnClickTask(num)
+	if self.selected_task_type and self.selected_task_type ~= num then
+
+		-- set selected task
+		self.selected_task_type = num
+
+		-- enable send button
+		self.send_btn:Enable(true)
+
+		-- show and repos task arrow
+		self.task_arrow:Show(true)
+		local arrow_pos = self.task_arrow:GetWndPos()
+		local arrow_pos_y = (num - 1) * 50
+		self.task_arrow:SetWndPos(vector2():set(arrow_pos.x, arrow_pos_y))
+
+	end
+
+end
+
+function CustomPDAX:OnClickSend()
+	-- button should not be active if conditions aren't met
+	pr(" 'Send' pressed, self.cur_tree = %s, upda state and UpdMenuButtons()", self.cur_tree)
+
+	-- Menu: 1 - launch "pda_inter_x_raid" squads saving/updating
+	if self.cur_tree == 1 then
+		local map = self.selected_map_raid
+
+		pda_msg_states[self.cur_tree].state = 5
+
+		-- save current map for strings
+		pda_msg_states[self.cur_tree].active_str = map
+
+		-- disable buttons of ALL big menus till cancelled/failed
+		self:UpdMenuButtons()
+
+		-- launch squads search (make sure it goes before "state = 5" which then starts saving and updating squads for GUI)
+		pda_inter_x_raid.launch_squad_search()
+
+		-- set active message
+		self.active_text:SetText(gt("pda_cur_active") .. "    " .. gt("pda_cur_active_raid") .. " " .. (gt(map)))
+
+	-- Menu: 2 - launch response calculation, price, chances and message appearing
+	elseif self.cur_tree == 2 then
+		local item = self.selected_find_item
+
+		pda_msg_states[self.cur_tree].state = 5
+
+		-- save current map for strings
+		pda_msg_states[self.cur_tree].active_str = item
+
+		-- set active message
+		local str = gt("encyclopedia_mutants_" .. item)
+		local is_stalker = (not pdax_mutant_list[item]) and (not pdax_artefact_list[item])
+		local is_artefact = pdax_artefact_list[item] and string.find(item, "af_")
+		if is_stalker then
+			str = item
+		elseif is_artefact then
+			str = gt("st_" .. item .. "_name")
+		end
+		self.active_text:SetText(gt("pda_cur_active") .. "    " .. gt("pda_cur_active_find") .. " " .. (str))
+
+		-- disable buttons of ALL big menus till cancelled/failed
+		self:UpdMenuButtons()
+
+		-- store potential senders
+		pda_inter_x_buyinfo.store_senders()
+
+	-- Menu: 4 - store possible traders, pass sec, name, quantity, level and calculate the price
+	elseif self.cur_tree == 4 then
+
+		pda_msg_states[self.cur_tree].state = 5
+
+		-- store everything
+		pda_msg_states[self.cur_tree].name = self.trade_selected_item_name
+		pda_msg_states[self.cur_tree].section = self.trade_selected_item_sec
+		pda_msg_states[self.cur_tree].quantity = self.trade_quantity
+		pda_msg_states[self.cur_tree].level = self.trade_selected_level
+
+		-- set active message
+		local item_name = self.trade_selected_item_name
+		self.active_text:SetText(gt("pda_cur_active") .. "    " .. gt("pda_delivery_ordering") .. " " .. (gt(item_name)))
+
+		-- disable buttons of ALL big menus till cancelled/failed
+		self:UpdMenuButtons()
+
+		-- find and store potential traders
+		pda_inter_x_trade.find_traders()
+
+	-- Menu: 6 - Banter
+	elseif self.cur_tree == 6 then
+
+		-- disable buttons of ALL big menus till cancelled/failed
+		self:UpdMenuButtons()
+
+		-- SOS
+		if self.picked_banter_option == "sos" then
+			-- disable sos button
+			self.banter_sos_btn:Enable(false)
+
+			-- send sos
+			pda_inter_x_banter.send_sos()
+
+		elseif self.picked_banter_option == "surge" then
+			-- disable surge button
+			self.banter_surge_btn:Enable(false)
+
+			-- ask surge
+			pda_inter_x_banter.ask_surge()
+
+		elseif self.picked_banter_option == "psi" then
+			-- disable psi button
+			self.banter_psi_btn:Enable(false)
+
+			-- ask psi-storm
+			pda_inter_x_banter.ask_psi_storm()
+
+		end
+
+	elseif self.cur_tree == 7 then
+
+		-- setup task and lower menu
+		local num = self.selected_task_type
+		pda_inter_x_tasks.find_givers(num)
+
+		-- set menu state
+		pda_msg_states[self.cur_tree].state = 5
+
+		-- set active message
+		self.active_text:SetText(gt("pda_cur_active") .. "    " .. gt("pda_task_active_msg"))
+
+		-- disable buttons of ALL big menus till cancelled/failed
+		self:UpdMenuButtons()
+
+	end
+
+	-- reset all upper menus
+	self:ResetUpperMenus()
+
+end
+
+function CustomPDAX:OnClickCancel()
+
+	for i = 1, #pda_msg_states do
+
+		-- check what message is active
+		if pda_msg_states[i].state == 5 then
+			pr("onCancel, message: %s state = 5, setting to = 0, UpdMenuButtons(), clear tables, ResetLowerMenus()", i)
+			-- reset state of active message
+			pda_msg_states[i].state = 0
+
+			-- update menu buttons state
+			self:UpdMenuButtons()
+
+			-- change active text
+			self.active_text:SetText(gt("pda_cur_active") .. "    " .. gt("pda_cur_active_none"))
+
+			-- clear Raid tables
+			if i == 1 then
+				pda_inter_x_raid.clear_raid_tables()
+			end
+
+			-- clear Find tables
+			if i == 2 then
+				pda_inter_x_buyinfo.clear_find_tables()
+			end
+
+			-- clear Trade tables
+			if i == 4 then
+				pda_inter_x_trade.clear_trade_tables()
+			end
+			
+			-- clear Trade tables
+			if i == 7 then
+				self.selected_task_type = 0
+				pda_inter_x_tasks.clear_task_tables()
+			end
+
+			-- reset lower menus
+			self:ResetLowerMenus()
+
+		end
+	end
+
+end
+
+function CustomPDAX:OnClickExec(num)		-- click lower buttons
+
+	for i = 1, #pda_msg_states do
+
+		-- for big active messages
+		if pda_msg_states[i].state == 5 then
+
+			-- Menu 1
+			if i == 1 then
+				self:OnClickExecRaid(num)
+			end
+
+			-- Menu 2
+			if i == 2 then
+				self:OnClickExecFind(num)
+			end
+
+			-- Menu 4
+			if i == 4 then
+				self:OnClickExecTrade(num)
+			end
+
+			-- Menu 7
+			if i == 7 then
+				self:OnClickExecTask(num)
+			end
+
+			-- update buttons
+			self:UpdMenuButtons()
+
+		end
+	end
+
+end
+
+function CustomPDAX:OnClickExecRaid(num)
+	-- check if squad is viable and actor has enough money, else dont do anything and wait till upd_squad() updates squad or removes from the table
+	local squad_id, squad_commander = pda_inter_x_raid.get_available_squad_id_and_commander_by_idx(num)
+
+	local price = pda_inter_x_raid.Raid_available_squads[num].price
+	local has_enough_money = db.actor:money() > price
+--	local can_join = size_table(axr_companions.non_task_companions) + utils_obj.get_squad_count(squad_commander) <= axr_companions.max_actor_squad_size
+	local can_join = true	-- test
+
+	-- also check if actor has enough space for squad
+	if squad_id and squad_commander and can_join and has_enough_money then
+
+		-- hide bottom containers
+		self:ResetLowerMenus()
+
+		-- set state to 10
+		pda_msg_states[1].state = 10
+
+		-- take actor money
+		db.actor:give_money(-price)
+
+		-- update money text
+		self:UpdMoneyText()
+
+		-- reset active message
+		self.active_text:SetText(gt("pda_cur_active") .. "    " .. gt("pda_cur_active_none"))
+
+		-- add as companion
+		pda_inter_x_raid.add_companion_raid_squad(squad_id, squad_commander, num)
+
+		-- clear tables
+		pda_inter_x_raid.clear_raid_tables()
+
+	end
+
+end
+
+function CustomPDAX:OnClickExecFind(num)
+	local senders_t = pda_inter_x_buyinfo.Find_available_messages
+
+	-- check if actor has enough money
+	local price = pda_inter_x_buyinfo.Find_available_messages[num].price
+	local has_enough_money = db.actor:money() > price
+
+	if has_enough_money then
+
+		-- hide bottom containers
+		self:ResetLowerMenus()
+
+		-- set state to 0
+		pda_msg_states[2].state = 0
+
+		-- take actor money
+		db.actor:give_money(-price)
+
+		-- update money text
+		self:UpdMoneyText()
+
+		-- reset active message
+		self.active_text:SetText(gt("pda_cur_active") .. "    " .. gt("pda_cur_active_none"))
+
+		-- send message with locations
+		pda_inter_x_buyinfo.send_accept_message(num)
+
+		-- clear tables
+		pda_inter_x_buyinfo.clear_find_tables()
+
+	end
+
+end
+
+function CustomPDAX:OnClickExecTrade(num)
+	local traders_t = pda_inter_x_trade.Trade_available_messages
+
+	-- check if actor has enough money
+	local price = pda_inter_x_trade.Trade_available_messages[num].price
+	local has_enough_money = db.actor:money() > price
+
+	if has_enough_money then
+
+		-- hide bottom containers
+		self:ResetLowerMenus()
+
+		-- set state to 0
+		pda_msg_states[4].state = 0
+
+		-- take actor money
+		db.actor:give_money(-price)
+
+		-- update money text
+		self:UpdMoneyText()
+
+		-- reset active message
+		self.active_text:SetText(gt("pda_cur_active") .. "    " .. gt("pda_cur_active_none"))
+
+		-- send message with accepted order and save stash+item+time
+		pda_inter_x_trade.setup_order(num)
+
+		-- clear tables
+		pda_inter_x_trade.clear_trade_tables()
+
+	end
+
+end
+
+function CustomPDAX:OnClickExecTask(num)
+	local tasks_t = pda_inter_x_tasks.Tasks_available_givers
+
+	-- check if target still exist
+	local cur_task_type = tasks_t[num].task_type
+	local still_exist = pda_inter_x_tasks.task_targets_check(tasks_t[num].target_id, tasks_t[num].giver_id, cur_task_type)
+	if still_exist then
+
+		-- hide bottom containers
+		self:ResetLowerMenus()
+
+		-- find button by task type and disable it
+		for i = 1, #tasks_t do
+			self.task_btn[tasks_t[i].task_type].btn:Enable(false)
+		end
+
+		-- reset active message
+		self.active_text:SetText(gt("pda_cur_active") .. "    " .. gt("pda_cur_active_none"))
+
+		-- setup task and pass info from selected character to new table before clearing old ones
+		pda_inter_x_tasks.setup_task(num)
+
+		-- set state to 0
+		pda_msg_states[7].state = 0
+
+		-- clear tables
+		pda_inter_x_tasks.clear_task_tables()
+
+	else
+		pr("xcvb task target does not exist")
+	end
+
+end
+
+-------------------------------------------------------------------------
+-------------------------- On select/input events ------------------------
+-------------------------------------------------------------------------
+function CustomPDAX:OnSelectRaidMap()
+	self.selected_map_raid = self.table_map_raid[self.list_map_raid:CurrentID()]
+
+	local level_map = pdax_level_list[self.selected_map_raid]
+
+	-- map
+	self.map_img_raid:InitTexture("encyclopedia_locations_" .. level_map[2] .. "_image")
+	self.map_img_raid:Show(true)
+
+	-- difficulty
+	local get_diff, get_color = diff_to_str(level_map[1])
+	if get_diff and get_color then
+		self.raid_diff:TextControl():SetText(gt("ui_mm_difficulty") .. ": " .. gt("pda_raid_diff_" .. get_diff))
+		self.raid_diff:TextControl():SetTextColor(get_color)
+	end
+	self.raid_diff:Show(true)
+
+	-- enable "Send" button
+	self.send_btn:Enable(true)
+
+end
+
+function CustomPDAX:OnSelectFindArtefact()
+	-- set selected_find_item to current "table_map_artefact_find" key
+	self.selected_find_item = self.table_map_artefact_find[self.artefact_list_find:CurrentID()]
+
+	-- update image
+	self.artefact_img_find:InitTexture("encyclopedia_artefacts_" .. self.selected_find_item .. "_image")
+	self.artefact_img_find:Show(true)
+
+	-- enable send button when artefact has been chosen
+	self.send_btn:Enable(true)
+
+end
+
+function CustomPDAX:OnSelectFindMutant()
+	pr("mutant selected, 'Send' enabled")
+	-- set selected_find_item to current "table_map_mutant_find" key
+	self.selected_find_item = self.table_map_mutant_find[self.mutant_list_find:CurrentID()]
+
+	-- update image
+	self.mutant_img_find:InitTexture("encyclopedia_mutants_" .. self.selected_find_item .. "_image")
+	self.mutant_img_find:Show(true)
+
+	-- enable send button when mutant has been chosen
+	self.send_btn:Enable(true)
+
+end
+
+function CustomPDAX:OnSelectTradeResult()
+	-- save selected name and sec
+	self.trade_selected_item_name = self.trade_result_table[self.trade_result_list:CurrentID()][2]
+	self.trade_selected_item_sec = self.trade_result_table[self.trade_result_list:CurrentID()][1]
+
+	-- update image
+	local icon_path = ini_sys:r_string_ex(self.trade_selected_item_sec, "icons_texture") or "ui\\ui_icon_equipment"
+	self.trade_result_img:InitTexture(icon_path)
+	self.trade_result_img:Show(true)
+
+	local function v(s, p) return ini_sys:r_string_ex(s, "inv_grid_" .. p) * 50 end
+	local sec = self.trade_selected_item_sec
+	local itm_x, itm_y, itm_w, itm_h = v(sec, "x"), v(sec, "y"), v(sec, "width"), v(sec, "height")
+	self.trade_result_img:SetTextureRect(Frect():set(itm_x, itm_y, itm_x + itm_w, itm_y + itm_h))
+
+	local ratio = 1
+	if itm_w > 140 then
+		ratio = 140 / itm_w
+	elseif itm_h > 70 then
+		ratio = 70 / itm_h
+	end
+
+	self.trade_result_img:SetWndSize(vector2():set(itm_w * 0.8 * ratio, itm_h * ratio))
+
+end
+
+function CustomPDAX:OnSelectTradeLevel()
+	self.trade_selected_level = self.trade_level_table[self.trade_level_list:CurrentID()]
+
+	local level_map = pdax_level_list[self.trade_selected_level]
+
+	-- map
+	self.trade_level_img:InitTexture("encyclopedia_locations_" .. level_map[2] .. "_image")
+	self.trade_level_img:Show(true)
+
+end
+
+function CustomPDAX:OnInputStalker()
+	local cur_str = self.stalker_box_find:GetText()
+
+	-- if input string isnt empty
+	if cur_str ~= "" then
+
+		-- set selected_find_item to current input box string
+		self.selected_find_item = cur_str
+
+		-- enable send button when mutant has been chosen
+		self.send_btn:Enable(true)
+
+	else
+		self.send_btn:Enable(false)
+	end
+
+end
+
+-------------------------------------------------------------------------
+--------------------------------- Update -------------------------------
+-------------------------------------------------------------------------
+-- disables menus based on other active messages ("pda_msg_states" mainly)
+function CustomPDAX:UpdMenuButtons()
+	local big_menu_active = false		-- state 5 active
+	local small_menu_active = {}			-- collect small menus which are on cooldown (state = 2)
+
+	-- set "big_menu_active" if at least one menu is at "state = 5"
+	for i = 1, #pda_msg_states do
+		if pda_msg_states[i].state == 5 then
+			pr("UpdMenuButtons() %s state = 5, 'big_menu_active' true", i)
+			big_menu_active = true
+		elseif pda_msg_states[i].state == 2 then
+			table.insert(small_menu_active, i)
+		end
+	end
+
+	for i = 1, #pda_msg_states do
+		if self.pda_t[i] and self.pda_t[i].btn then
+
+			-- enable button first
+			self.pda_t[i].btn:Enable(true)
+
+			-- check if button's menu has "big_menu = true"
+			if pda_msg_states[i].big_menu then
+				-- if "big_menu_active" is true then DISABLE
+				if big_menu_active then
+					pr("UpdMenuButtons() disabling buttons for message: %s", i)
+					self.pda_t[i].btn:Enable(false)
+				end
+			else
+			-- disable buttons for small menus that are on cooldown (state = 2)
+				for j = 1, #small_menu_active do
+					if small_menu_active[j] == i then
+						self.pda_t[i].btn:Enable(false)
+					end
+				end
+			end
+
+			-- menu 1 raid (keep disabled if state = 10) resets on pda_inter_x_raid.cancel_active_raid()
+			if i == 1 and pda_msg_states[i].state == 10 then
+				self.pda_t[i].btn:Enable(false)
+			end
+
+		end
+	end
+
+end
+
+function CustomPDAX:UpdRaidLowerMenu()
+	-- called from pda_inter_x_raid script to refresh character info
+	local squads_t = pda_inter_x_raid.Raid_available_squads
+
+	-- reset menu first
+	self:ResetLowerMenus()
+
+	for i = 1, #squads_t do
+
+		-- show character container
+		if not (self.bottom[i].big:IsShown()) then
+			self.bottom[i].big:Show(true)
+		end
+
+		-- update icon
+		self.bottom[i].icon:InitTexture(squads_t[i].icon)
+
+		-- update description
+		local faction = gt("st_mm_new_game_faction_2")
+		local comm = gt("st_faction_" .. squads_t[i].comm)
+		local size = gt("pda_squad_size")
+		local rank = gt("ui_st_rank")
+		local time = gt("ui_inv_time")
+
+		self.bottom[i].descr:SetText(faction .. " " .. comm .. "\\n" .. size .. ": " .. squads_t[i].size .. "\\n" .. rank .. ": " .. gt("st_rank_" .. squads_t[i].rank) .. "\\n" .. time .. ": " .. squads_t[i].time)
+
+		-- update button
+		self.bottom[i].btn:TextControl():SetText(gt("pda_squad_hire") .. "  " .. squads_t[i].price .. "  RU")
+	end
+
+end
+
+function CustomPDAX:UpdFindLowerMenu()
+	-- updating from pda_inter_x_buyinfo to refresh character info
+	local info_t = pda_inter_x_buyinfo.Find_available_messages
+
+	-- reset menu first
+	self:ResetLowerMenus()
+
+	for i = 1, #info_t do
+
+		-- show character container
+		if not (self.bottom[i].big:IsShown()) then
+			self.bottom[i].big:Show(true)
+		end
+
+		-- update icon
+		self.bottom[i].icon:InitTexture(info_t[i].icon)
+
+		-- update description
+		local name = gt("st_mm_new_game_name")
+		local faction = gt("st_mm_new_game_faction_2")
+		local comm = info_t[i].comm == "trader" and gt("st_ui_pda_legend_trader") or gt("st_faction_" .. info_t[i].comm)
+
+		local reputation = gt("ui_st_reputation")
+		local def_clr = strformat("%c[%s,%s,%s,%s]", 255, 190, 190, 190)
+		local rep_clr = val_to_clr(info_t[i].reputation, "red_to_green", -2000, 2000)
+		local rel_clr = val_to_clr(info_t[i].relation, "relation")
+		local rep_to_name = gt(utils_obj.get_reputation_name(info_t[i].reputation))
+		local relations = gt("pda_btn_relations")
+		local rel_name = gt("pda_relation_" .. info_t[i].relation)
+
+		self.bottom[i].descr:SetText(name .. " " .. info_t[i].name .. "\\n" .. faction .. " " .. comm .. "\\n" .. reputation .. ": " .. rep_clr .. rep_to_name .. "\\n" .. def_clr .. relations .. ": " .. rel_clr .. rel_name)
+
+		-- update button
+		local buy = gt("ui_st_buy")
+		self.bottom[i].btn:TextControl():SetText(buy .. ": " .. info_t[i].price .. "  RU")
+
+	end
+
+end
+
+function CustomPDAX:UpdTradeLowerMenu()
+	local trade_t = pda_inter_x_trade.Trade_available_messages
+
+	-- reset menu first
+	self:ResetLowerMenus()
+
+	for i = 1, #trade_t do
+
+		-- show character container
+		if not (self.bottom[i].big:IsShown()) then
+			self.bottom[i].big:Show(true)
+		end
+
+		-- update icon
+		self.bottom[i].icon:InitTexture(trade_t[i].icon)
+
+		-- update description
+		local def_clr = strformat("%c[%s,%s,%s,%s]", 255, 190, 190, 190)
+		local name_clr = trade_t[i].name_color and strformat("%c[%s,%s,%s,%s]", 255, 0, 255, 0) or def_clr
+		local name = gt("st_mm_new_game_name")
+		local reputation = gt("ui_st_reputation")
+		local rep_clr = val_to_clr(trade_t[i].reputation, "red_to_green", -2000, 2000)
+		local rep_to_name = gt(utils_obj.get_reputation_name(trade_t[i].reputation))
+		local dist_clr = val_to_clr(trade_t[i].distance, "red_to_green", 9600, 1)
+		local dist = round_idp(trade_t[i].distance / 1000, 1)
+
+		local name_str = name .. " " .. name_clr .. trade_t[i].name .. "\\n"
+		local reputation_str = reputation .. ": " .. rep_clr .. rep_to_name .. "\\n"
+		local delivery_str = def_clr .. gt("pda_delivery_time") .. ": " .. math.ceil(trade_t[i].delivery_time / 3600) .. gt("pda_delivery_h") .. " " .. "(" .. dist_clr .. dist .. def_clr .. gt("pda_delivery_km") .. ")"
+		-- trade_t[i].name_color
+
+		self.bottom[i].descr:SetText(name_str .. (trade_t[i].name_color and "" or reputation_str) .. delivery_str)
+
+		-- update button
+		self.bottom[i].btn:TextControl():SetText(gt("pda_order_btn_text") .. " " .. trade_t[i].price .. "  RU")
+
+	end
+
+end
+
+function CustomPDAX:UpdTaskLowerMenu()
+	local task_t = pda_inter_x_tasks.Tasks_available_givers
+
+	-- reset menu first
+	self:ResetLowerMenus()
+
+	for i = 1, #task_t do
+
+		-- show character container
+		if not (self.bottom[i].big:IsShown()) then
+			self.bottom[i].big:Show(true)
+		end
+
+		-- update icon
+		self.bottom[i].icon:InitTexture(task_t[i].giver_icon)
+
+		-- update description
+		local target_str1, target_str2 = "<nil>", "<nil>"
+		local white_clr_str = strformat("%c[%s,%s,%s,%s]", 255, 255, 255, 255)
+		local yel_clr_str = strformat("%c[%s,%s,%s,%s]", 255, 255, 255, 0)
+		local def_clr_str = strformat("%c[%s,%s,%s,%s]", 255, 190, 190, 190)
+
+		local giver_name = white_clr_str .. gt("st_mm_new_game_name") .. " " .. task_t[i].giver_name
+
+		-- mutant hunt / bounty
+		if task_t[i].task_type == 1 or task_t[i].task_type == 2 then
+			local target_comm = task_t[i].target_comm and ( " (" .. (task_t[i].target_comm == "trader" and gt("st_ui_pda_legend_trader") or gt("st_faction_" .. task_t[i].target_comm)) .. ")") or ""
+			target_str1 = task_t[i].target_name and (yel_clr_str .. gt(task_t[i].target_name) .. def_clr_str .. target_comm)
+			target_str2 = task_t[i].target_level and (white_clr_str .. gt(task_t[i].target_level) .. def_clr_str)
+		-- guide
+		elseif task_t[i].task_type == 3 then
+			target_str1 = task_t[i].target_level and (yel_clr_str .. gt(task_t[i].target_level) .. def_clr_str)
+			target_str2 = task_t[i].guide_time and (yel_clr_str .. math.floor(task_t[i].guide_time / 3600) .. def_clr_str)
+		-- fetch items
+		elseif task_t[i].task_type == 4 then
+			target_str1 = task_t[i].amount and (yel_clr_str .. gt(task_t[i].amount) .. def_clr_str)
+			target_str2 = task_t[i].target_name and (yel_clr_str .. gt(task_t[i].target_name) .. def_clr_str)
+		-- dangerous squad
+		elseif task_t[i].task_type == 5 then
+			target_str1 = task_t[i].target_name and (yel_clr_str .. gt(task_t[i].target_name) .. def_clr_str)
+			target_str2 = task_t[i].target_level and (white_clr_str .. gt(task_t[i].target_level) .. def_clr_str)
+		-- stealth task
+		elseif task_t[i].task_type == 6 then
+			target_str1 = task_t[i].enemy_comm and (yel_clr_str .. gt("st_faction_" .. task_t[i].enemy_comm) .. def_clr_str)
+			target_str2 = ""
+		end
+
+		local task_desc = strformat(gt("pda_task_desc_" .. task_t[i].task_type), target_str1, target_str2)
+		local reward = white_clr_str .. gt("pda_task_reward") .. " " .. task_t[i].reward .. def_clr_str
+
+		self.bottom[i].descr:SetText(giver_name .. "\\n" .. def_clr_str .. task_desc .. " " .. reward)
+
+		-- update button
+		self.bottom[i].btn:TextControl():SetText(gt("pda_task_accept_btn"))
+
+	end
+
+end
+
+function CustomPDAX:UpdNotesMenu()
+	-- reset scroll and rebuild/adjust all the text based on pda_msg_states table
+	local big_str = ""
+	for i = 1, #pda_notes_t do
+		local white_clr_str = strformat("%c[%s,%s,%s,%s]", 255, 255, 255, 255)
+		local yel_clr_str = strformat("%c[%s,%s,%s,%s]", 255, 255, 255, 0)
+		local def_clr_str = strformat("%c[%s,%s,%s,%s]", 255, 190, 190, 190)
+
+		-- add new index string
+		pda_notes_t[i][1] = "#" .. i
+
+		big_str = big_str .. yel_clr_str .. pda_notes_t[i][1] .. white_clr_str .. pda_notes_t[i][2] .. def_clr_str .. pda_notes_t[i][3]
+	end
+
+	self.notes_text_wnd:SetText(big_str)
+
+	self.notes_text_wnd:AdjustHeightToText()
+
+	self.notes_scroll:Clear()
+	self.notes_scroll:AddWindow(self.notes_text_wnd, true)
+	self.notes_text_wnd:SetAutoDelete(false)
+
+	-- reset input box
+	self.notes_input_box:SetText("")
+
+end
+
+function CustomPDAX:UpdBanterButtons(btn_name)
+	-- enable sos button
+	if btn_name == "sos" then
+		self.banter_sos_btn:Enable(true)
+	elseif btn_name == "surge" then
+		self.banter_surge_btn:Enable(true)
+	elseif btn_name == "psi" then
+		self.banter_psi_btn:Enable(true)
+	end
+
+end
+
+function CustomPDAX:UpdTaskButtons(task_type)
+	-- enable task button after cooldown
+	self.task_btn[task_type].btn:Enable( (not pda_msg_states[7].cd[task_type]) )
+
+end
+
+function CustomPDAX:UpdMoneyText()
+	self.money:SetText(gt("pda_main_menu_money") .. " " .. db.actor:money() .. " RU")
+end
+
+----------------- to finish some messages -----------------
+function CustomPDAX:SlotsEnd()
+	-- get stopped cells value, y1:(0 = seven; 100 = grape; 200 = bell; 300 = melon; 400 = coin)
+	local coin = 0
+	local seven = 0
+	for i = 1, #self.slot_machine do
+		local r = self.slot_machine[i].slot:GetTextureRect()
+		if r.y1 == 300 then
+			coin = coin + 1
+		elseif r.y1 == 0 then
+			seven = seven + 1
+		end
+	end
+
+	-- check for reward
+	-- need some kind of sound
+	if coin == 2 then								-- 2 coins, x5 money
+		db.actor:give_money(slots_bet * 5)
+	elseif coin == 3 then							-- 3 coins, x20 money
+		db.actor:give_money(slots_bet * 20)
+	elseif seven == 3 then						--	3 sevens, x100 money
+		db.actor:give_money(slots_bet * 100)
+	end
+
+	-- update money
+	self:UpdMoneyText()
+
+	pr("coin: %s || seven: %s", coin, seven) 
+
+	-- reset and enable button again
+	self.slots_spin = false
+	self.slot_launch:Enable(true)
+
+end
+
+----------------- upd/onkey/close ------------------
+local snake_tmr
+function CustomPDAX:Update()
+	CUIScriptWnd.Update(self)
+
+	-- Game Slots
+	if self.slots_spin then
+		for i = 1, #self.slot_machine do
+
+			-- if this slot is spinning then change its position
+			if self.slot_machine[i].spinning == 1 then
+
+				self.slot_machine[i].pos = self.slot_machine[i].pos - (math.random(3, 10))
+
+				-- change pos
+				local s = self.slot_machine[i].pos
+				self.slot_machine[i].slot:SetTextureRect(Frect():set(0, s, 100, s + 100))
+
+				-- loop
+				local new_frect = self.slot_machine[i].slot:GetTextureRect()
+				if new_frect.y1 <= 0 then
+					self.slot_machine[i].pos = 400
+
+					local s2 = self.slot_machine[i].pos
+					self.slot_machine[i].slot:SetTextureRect(Frect():set(0, s2, 100, s2 + 100))
+				end
+
+			end
+		end
+	end
+
+	-- Game Snake (19, 29)
+	if self.snake_launch then
+
+		self:AllowMovement(false)
+
+		local tg = time_global()
+		if (snake_tmr and tg < snake_tmr) then return end
+		snake_tmr = tg + self.snake_start_speed
+
+		local step = self.snake_step
+
+		-- move snake
+		local dir = self.snake_dir
+		local pos1 = vector2():set(self.snake_head:GetWndPos())
+		local old_size = self.snake_length
+
+		-- move head
+		if dir == "u" then
+			self.snake_head:SetWndPos(vector2():set(pos1.x, pos1.y - step))
+		elseif dir == "l" then
+			self.snake_head:SetWndPos(vector2():set(pos1.x - step, pos1.y))
+		elseif dir == "r" then
+			self.snake_head:SetWndPos(vector2():set(pos1.x + step, pos1.y))
+		elseif dir == "d" then
+			self.snake_head:SetWndPos(vector2():set(pos1.x, pos1.y + step))
+		end
+
+		-- move body
+		local last_old_pos
+		for i = old_size, 1, -1 do
+			-- save last pos
+			if i == old_size then
+				last_old_pos = vector2():set(self.snake_body[i]:GetWndPos())
+			end
+			-- others take pos of i - 1
+			if i ~= 1 then
+				local body_block_pos = vector2():set(self.snake_body[i - 1]:GetWndPos())
+				self.snake_body[i]:SetWndPos(vector2():set(body_block_pos.x, body_block_pos.y))
+			-- first takes previous head pos
+			else
+				self.snake_body[i]:SetWndPos(vector2():set(pos1.x, pos1.y))
+			end
+		end
+
+		-- check if head collides into body
+		local pos2 = vector2():set(self.snake_head:GetWndPos())
+		for i = 1, #self.snake_body do
+			local body_block_pos = vector2():set(self.snake_body[i]:GetWndPos())
+			if pos2.x == body_block_pos.x and pos2.y == body_block_pos.y then
+				-- reward player
+				local reward = db.actor:give_money(self.snake_cur_score)
+
+				-- game over
+				self:ResetGamesSnake()
+				break
+			end
+		end
+
+		-- check if head collides into border
+		if pos2.x < 10 or pos2.x > 200 or pos2.y < 10 or pos2.y > 300 then
+			-- reward player
+			local reward = db.actor:give_money(self.snake_cur_score)
+
+			-- game over
+			self:ResetGamesSnake()
+		end
+
+		-- ate food (grow)
+		local food_pos = vector2():set(self.snake_food:GetWndPos())
+		if pos2.x == food_pos.x and pos2.y == food_pos.y then
+			self.snake_length = self.snake_length + 1
+		end
+
+		-- check new size
+		if old_size < self.snake_length then
+			-- new block
+			self.snake_body[self.snake_length] = self.xml:InitStatic("mid_container_3:game_pda_3:snake_block", self.games_menu[3].child_menu)
+			-- place at the end
+			if last_old_pos then
+				self.snake_body[self.snake_length]:SetWndPos(vector2():set(last_old_pos.x, last_old_pos.y))
+			else
+				self.snake_body[self.snake_length]:SetWndPos(vector2():set(pos1.x, pos1.y))
+			end
+
+			-- repos food to not spawn on body
+			local food_new_pos
+			repeat
+				food_new_pos = vector2():set(math.random(1, 19) * step, math.random(1, 29) * step)
+				-- head
+				if (food_new_pos.x == pos2.x and food_new_pos.y == pos2.y) then
+					food_new_pos = false
+				end
+				-- body
+				for i = 1, #self.snake_body do
+					local bp = vector2():set(self.snake_body[i]:GetWndPos())
+					if food_new_pos and (food_new_pos.x == bp.x and food_new_pos.y == bp.y) then
+						food_new_pos = false
+						break
+					end
+				end
+			until food_new_pos
+			self.snake_food:SetWndPos(food_new_pos)
+
+			-- increase speed
+			self.snake_start_speed = self.snake_start_speed - self.snake_speed_inc
+
+			-- increase score
+			self.snake_cur_score = self.snake_cur_score + 1
+			self.snake_score_text:SetText(self.snake_cur_score)
+
+		end
+
+	end
+
+end
+
+function CustomPDAX:OnKeyboard(key, keyboard_action)
+	local res = CUIScriptWnd.OnKeyboard(self, key, keyboard_action)
+	if (res == false) then
+		if keyboard_action == ui_events.WINDOW_KEY_PRESSED then
+			if key == DIK_keys.DIK_ESCAPE then
+				pda_opened = false
+				self:AllowMovement(true)
+				self:Close()
+			end
+
+			if self.snake_launch then
+				if self.snake_dir ~= "d" and key == DIK_keys.DIK_W then
+					self.snake_dir = "u"
+				elseif self.snake_dir ~= "r" and key == DIK_keys.DIK_A then
+					self.snake_dir = "l"
+				elseif self.snake_dir ~= "l" and key == DIK_keys.DIK_D then
+					self.snake_dir = "r"
+				elseif self.snake_dir ~= "u" and key == DIK_keys.DIK_S then
+					self.snake_dir = "d"
+				end
+			end
+
+		end
+	end
+	return res
+end
+
+function CustomPDAX:Close()
+	if self:IsShown() then
+		self:HideDialog()
+		self:Show(false)
+
+		Unregister_UI("CustomPDAX")
+	end
+end
+
+function CustomPDAX:__finalize()
+end
+
+----------------- utils ------------------
+function align_element(gui, elem, cont, h, v, text_h, text_v)	-- align_element(elem, cont, "c", "b") is bottom center
+	if not gui then return end
+	if (not elem) or (not cont) then return end
+
+	local elem_w = elem:GetWidth()
+	local cont_w = cont:GetWidth()
+	local elem_h = elem:GetHeight()
+	local cont_h = cont:GetHeight()
+
+	if h and type(h) == "string" and (elem_w <= cont_w) then
+		local horiz_align
+
+		if h == "l" then
+			horiz_align = 0
+		elseif h == "r" then
+			horiz_align = cont_w - elem_w
+		elseif h == "c" then
+			horiz_align = (cont_w - elem_w) / 2
+		end
+
+		if horiz_align then
+			local elem_pos = elem:GetWndPos()
+			elem:SetWndPos(vector2():set(horiz_align, elem_pos.y))
+		end
+	end
+
+
+	if v and type(v) == "string" and (elem_h <= cont_h) then
+		local vert_align
+
+		if v == "t" then
+			vert_align = 0
+		elseif v == "b" then
+			vert_align = cont_h - elem_h
+		elseif v == "c" then
+			vert_align = (cont_h - elem_h) / 2
+		end
+
+		if vert_align then
+			local elem_pos = elem:GetWndPos()
+			elem:SetWndPos(vector2():set(elem_pos.x, vert_align))
+		end
+	end
+
+	if text_h and type(text_h) == "number" and text_h < 3 then
+		elem:SetTextAlignment(text_h)
+	end
+
+	if text_v and type(text_v) == "number" and text_h < 3 then
+		elem:SetVTextAlignment(text_v)
+	end
+
+end
+
+function diff_to_str(difficulty)
+	-- pick difficulty
+	local diff_t = {
+		["very_easy"] = 0.2,
+		["easy"] = 0.4,
+		["medium"] = 0.6,
+		["hard"] = 0.75,
+		["very_hard"] = 0.85,
+		["deadly"] = 1.0,
+	}
+
+	local picked_diff
+	local min_val = 1
+	for diff, value in pairs(diff_t) do
+		if difficulty <= value and value <= min_val then
+			min_val = value
+			picked_diff = diff
+		end
+	end
+
+	-- pick color
+	local color_t = {
+		["very_easy"] = { 0, 255, 0 },
+		["easy"] = { 100, 255, 0 },
+		["medium"] = { 200, 255, 0 },
+		["hard"] = { 255, 210, 0 },
+		["very_hard"] = { 255, 110, 0 },
+		["deadly"] = { 255, 0, 0 },
+	}
+
+	local picked_color = picked_diff and GetARGB(255, color_t[picked_diff][1], color_t[picked_diff][2], color_t[picked_diff][3])
+
+	return picked_diff, picked_color
+end
+
+function val_to_clr(val, param, from, to)
+	local clr = strformat("%c[%s,%s,%s,%s]", 255, 190, 190, 190)
+	if param == "red_to_green" then
+		local nval = normalize(val, from, to)
+		local rgb = { 0, 0, 0 }
+
+		if nval < 0.5 then
+			local nvalhalf = normalize(nval, 0, 0.5)
+			rgb[1] = 255
+			rgb[2] = nvalhalf * 255
+		else
+			local nvalhalf = normalize(nval, 1, 0.5)
+			rgb[1] = nvalhalf * 255
+			rgb[2] = 255
+		end
+		clr = strformat("%c[%s,%s,%s,%s]", 255, rgb[1], rgb[2], rgb[3])
+
+	elseif param == "relation" then
+		local relation_clr = { ["friend"] = { 0, 255, 0 },		["neutral"] = { 255, 255, 0 },		["enemy"] = { 255, 0, 0 } }
+		clr = strformat("%c[%s,%s,%s,%s]", 255, relation_clr[val][1], relation_clr[val][2], relation_clr[val][3])
+	end
+
+	return clr
+end
+
+function t_to_ar_by_val(tab, layer, output)
+	local t = dup_table(tab)
+	local a = {}
+
+	if layer then
+		for k, v in pairs(t) do
+			t[k] = v[1]
+		end
+	end
+
+	if not output then output = "k" end
+
+	for k, v in spairs(t, function(t, a, b) return t[a] < t[b] end) do
+		table.insert(a, (output == "k" and k) or (output == "v" and v))
+	end
+
+	return a
+end
+
+function t_to_ar(t, by)
+	local a = {}
+	if t and is_not_empty(t) then
+		for k, v in pairs(t) do
+			table.insert(a, (by == "k" and k) or (by == "v" and v) or k)
+		end
+	end
+
+	return a
+end
+
+function pr(...)
+	if not Custom_PDA_debug then return end
+	printf(...)
+end
+
+-- save only what's really important (not just in this script), otherwise it will be an unfixable mess
+function save_state(m_data)
+    m_data.pda_msg_states = pda_msg_states
+	m_data.pda_notes_t = pda_notes_t
+end
+
+function load_state(m_data)
+    pda_msg_states = m_data.pda_msg_states or { { state = 0, big_menu = true }, { state = 0, big_menu = true }, { state = 0, big_menu = false }, { state = 0, big_menu = true }, { state = 0, big_menu = false }, { state = 0, big_menu = false }, { state = 0, big_menu = true } }
+
+	pda_notes_t = m_data.pda_notes_t or {}
+
+end
+
+function actor_on_first_update()
+	-- disable buttons that are supposed to be disabled (raid during state 10 and small buttons with cooldown state 2)
+	if pda_msg_states[1].state ~= 10 then
+		pda_msg_states[1] = { state = 0, big_menu = true }
+	end
+	pda_msg_states[2] = { state = 0, big_menu = true }
+	pda_msg_states[3] = { state = 0, big_menu = false }
+	pda_msg_states[4] = { state = 0, big_menu = true }
+	pda_msg_states[5] = { state = 0, big_menu = false }
+	pda_msg_states[6] = { state = 0, big_menu = false }
+
+	-- not to reset cooldown
+	if not pda_msg_states[7] then
+		pda_msg_states[7] = {}
+	end
+	pda_msg_states[7].cd = pda_msg_states[7].cd or {}
+	pda_msg_states[7].state = 0
+	pda_msg_states[7].big_menu = true
+
+end
+
+function on_option_change()
+	pda_open_key = pda_inter_mcm.get_config("int_pda_key")
+	puzzle_reward = pda_inter_mcm.get_config("puzzle_reward")
+	slots_bet = pda_inter_mcm.get_config("slots_bet")
+	Custom_PDA_debug = pda_inter_mcm.get_config("debugx")
+end
+
+function on_game_start()
+	RegisterScriptCallback("on_key_press", on_key_press)
+	RegisterScriptCallback("save_state", save_state)
+	RegisterScriptCallback("load_state", load_state)
+	RegisterScriptCallback("actor_on_first_update", actor_on_first_update)
+	RegisterScriptCallback("on_option_change", on_option_change)
+end

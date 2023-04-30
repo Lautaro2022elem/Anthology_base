@@ -1,0 +1,172 @@
+;camping
+[logic@bar_bar_camp_work_1]
+active = animpoint@bar_bar_camp_work_1
+prior = 45
+
+[logic@bar_bar_camp_work_2]
+active = animpoint@bar_bar_camp_work_2
+prior = 45
+
+[logic@bar_bar_camp_work_3]
+active = animpoint@bar_bar_camp_work_3
+prior = 45
+
+[logic@bar_bar_camp_work_4]
+active = animpoint@bar_bar_camp_work_4
+prior = 45
+
+[logic@bar_bar_camp_work_5]
+active = animpoint@bar_bar_camp_work_5
+prior = 45
+
+[logic@bar_bar_camp_work_6]
+active = animpoint@bar_bar_camp_work_6
+prior = 45
+
+[logic@bar_bar_camp_work_7]
+active = animpoint@bar_bar_camp_work_7
+prior = 45
+
+[logic@bar_bar_camp_work_8]
+active = animpoint@bar_bar_camp_work_8
+prior = 45
+
+[logic@bar_bar_skam_1]
+active = animpoint@bar_bar_skam_1
+prior = 45
+
+[logic@bar_bar_skam_2]
+active = animpoint@bar_bar_skam_2
+prior = 45
+
+[logic@bar_bar_skam_3]
+active = animpoint@bar_bar_skam_3
+prior = 45
+
+[logic@bar_bar_skam_4]
+active = animpoint@bar_bar_skam_4
+prior = 45
+
+[animpoint@bar_bar_camp_work_1]
+cover_name = bar_bar_animpoint_1
+meet = meet
+use_camp = true
+turn_on_campfire = false
+
+[animpoint@bar_bar_camp_work_2]
+cover_name = bar_bar_animpoint_2
+avail_animations = jup_b41_novikov_stand
+meet = meet
+use_camp = true
+turn_on_campfire = false
+
+[animpoint@bar_bar_camp_work_3]
+cover_name = bar_bar_animpoint_3
+avail_animations = jup_b41_novikov_stand
+meet = meet
+use_camp = true
+turn_on_campfire = false
+
+[animpoint@bar_bar_camp_work_4]
+cover_name = bar_bar_animpoint_4
+avail_animations = jup_b41_novikov_stand
+meet = meet
+use_camp = true
+turn_on_campfire = false
+
+[animpoint@bar_bar_camp_work_5]
+cover_name = bar_bar_animpoint_5
+meet = meet
+use_camp = true
+turn_on_campfire = false
+
+[animpoint@bar_bar_camp_work_6]
+cover_name = bar_bar_animpoint_6
+avail_animations = jup_b41_novikov_stand
+meet = meet
+use_camp = true
+turn_on_campfire = false
+
+[animpoint@bar_bar_camp_work_7]
+cover_name = bar_bar_animpoint_7
+meet = meet
+use_camp = true
+turn_on_campfire = false
+
+[animpoint@bar_bar_camp_work_8]
+cover_name = bar_bar_animpoint_8
+avail_animations = drunk_behindwall
+meet = meet
+use_camp = false
+turn_on_campfire = false
+
+[animpoint@bar_bar_skam_1]
+cover_name = bar_bar_animpoint_skamk_1
+meet = meet
+use_camp = true
+turn_on_campfire = false
+
+[animpoint@bar_bar_skam_2]
+cover_name = bar_bar_animpoint_skamk_2
+meet = meet
+use_camp = true
+turn_on_campfire = false
+
+[animpoint@bar_bar_skam_3]
+cover_name = bar_bar_animpoint_skamk_3
+meet = meet
+use_camp = true
+turn_on_campfire = false
+
+[animpoint@bar_bar_skam_4]
+cover_name = bar_bar_animpoint_skamk_4
+meet = meet
+use_camp = true
+turn_on_campfire = false
+
+[meet]
+close_anim 		= nil
+close_victim 	= nil
+far_anim 		= nil
+far_victim 		= nil
+close_distance  = 0
+far_distance 	= 0
+close_snd_distance = 3
+use = {=actor_enemy} false, true
+
+
+;------------------------------
+;--------- NPC trade ----------
+;------------------------------
+[logic@bar_bar_beh_trade_job_1]
+active = beh@bar_bar_beh_trade_job_1
+suitable = {=npc_has_items_to_sell(bar_bar) !surge_started} true
+prior = 65
+
+[beh@general]
+meet = meet@bar_bar_animpoint_meet
+combat_ignore_cond = {=is_warfare} false, {=actor_true_enemy =check_enemy_name(actor)} false, true
+combat_ignore_keep_when_attacked = {=is_warfare} false, true
+invulnerable = {=is_warfare} false, {!actor_true_enemy} true, false
+gather_items_enabled = false
+help_wounded_enabled = false
+corpse_detection_enabled = false
+sound_idle = state
+behavior_state = beh_move
+target = waypoint
+walk_dist = 100
+jog_dist = 220
+wait_anim = guard
+walk_anim = patrol
+jog_anim = patrol
+run_anim = rush
+delay_anim = guard
+
+[beh@bar_bar_beh_trade_job_1]:beh@general
+;pt1 = 5000,ward | pos:130.57, -4.83, 22.85 look:130.57, -3.60, 22.85 sig:trade
+pt1 = 10000,choose | pos:135.40661621094,-4.8241815567017,20.796640396118 look:134.41258442402,-4.8241815567017,20.692471385002
+pt2 = 5000,zat_b14_give_artefact_act | pos:135.40661621094,-4.8241815567017,20.796640396118 look:134.41258442402,-4.8241815567017,20.692471385002 sig:trade
+pt3 = 10000,guard | pos:135.40661621094,-4.8241815567017,20.796640396118 look:134.41258442402,-4.8241815567017,20.692471385002
+on_signal = trade | %=trade_job_sell_items%
+path_end = loop
+

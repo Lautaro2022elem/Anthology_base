@@ -1,0 +1,32 @@
+[logic] 
+active = sr_idle@start
+
+[sr_idle@start] 
+on_info = {+topi_start +topi_a15_dolg_teleport_1} sr_idle@teleportin_1 %=run_postprocess(fade_in:8613) =disable_ui%
+on_info2 = {+topi_start +topi_a15_freedom_teleport_1} sr_idle@teleportin_2 %=run_postprocess(fade_in:8613) =disable_ui%
+
+[sr_idle@teleportin_1]
+on_game_timer = 20 | %=run_postprocess(black:8614:true) +topi_a15_dolg_step_1%
+on_info = {+topi_a15_dolg_step_1} sr_idle@teleport_post_1 %=teleport_actor(topi_a15_dolg_telep_stay_1:topi_a15_dolg_telep_look_1) =remove_all%
+
+[sr_idle@teleport_post_1]
+on_game_timer = 20 | %+topi_a15_dolg_ui_1%
+on_info = {+topi_a15_dolg_ui_1} sr_idle@first %=stop_postprocess(8613) =stop_postprocess(8614) =enable_ui() -topi_a15_dolg_ui_1%
+
+[sr_idle@teleportin_2]
+on_game_timer = 20 | %=run_postprocess(black:8614:true) +topi_a15_freedom_step_1%
+on_info = {+topi_a15_freedom_step_1} sr_idle@teleport_post_2 %=teleport_actor(topi_a15_freedom_telep_stay_1:topi_a15_freedom_telep_look_1) =remove_all%
+
+[sr_idle@teleport_post_2]
+on_game_timer = 20 | %+topi_a15_freedom_ui_1%
+on_info = {+topi_a15_freedom_ui_1} sr_idle@second %=stop_postprocess(8613) =stop_postprocess(8614) =enable_ui() -topi_a15_freedom_ui_1%
+
+[sr_idle@first]
+on_timer = 6000 | {+topi_a15_dolg_step_1 -topi_a15_dolg_give_message} %=topi_a15_dolg_message +topi_a15_dolg_give_message%
+on_info = {+topi_a15_dolg_give_message -topi_a15_dolg_come_to_base =actor_in_zone(topi_a15_base_restr_1)} sr_idle@nil %+topi_a15_dolg_come_to_base%
+
+[sr_idle@second]
+on_timer = 6000 | {+topi_a15_freedom_step_1 -topi_a15_freedom_give_message} %=topi_a15_freedom_message +topi_a15_freedom_give_message%
+on_info = {+topi_a15_freedom_give_message -topi_a15_freedom_come_to_base =actor_in_zone(topi_a15_base_restr_1)} sr_idle@nil %+topi_a15_freedom_come_to_base%
+
+[sr_idle@nil] 

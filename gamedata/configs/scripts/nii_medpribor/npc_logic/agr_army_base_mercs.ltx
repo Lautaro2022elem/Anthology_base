@@ -1,0 +1,159 @@
+[walker@gen]
+meet = no_meet
+combat_ignore_cond = true
+combat_ignore_keep_when_attacked = true
+invulnerable = true
+gather_items_enabled = false
+help_wounded_enabled = false
+corpse_detection_enabled = false
+def_state_moving1 = rush
+def_state_moving2 = rush
+def_state_moving3 = rush
+
+;------------------------------------------------------------
+[logic@leader]
+active = walker@leader_1
+suitable = {=check_npc_name(sim_default)}
+prior = 200
+
+[walker@leader_1]:walker@gen
+path_walk = merc_leader_walk_1
+path_look = merc_leader_look_1
+def_state_standing = fold_arms
+on_info = {~10 !surge_started} walker@leader_2
+
+[walker@leader_2]:walker@gen
+path_walk = merc_leader_walk_2
+path_look = merc_leader_look_2
+def_state_standing = guard
+on_game_timer = 1000 | walker@leader_1
+on_info = {=surge_started} walker@leader_1
+
+;------------------------------------------------------------
+
+;------------------------------------------------------------
+[logic@sniper]
+active = walker@sniper_1
+suitable = {=check_npc_name(sim_default)}
+prior = 200
+
+[walker@sniper_1]:walker@gen
+path_walk = sniper_walk
+path_look = sniper_look
+def_state_standing = hide
+on_info = {=surge_started} walker@sniper_2
+on_info2 = {=is_dark_night} walker@sniper_2
+
+[walker@sniper_2]:walker@gen
+path_walk = sniper_surge_walk
+path_look = sniper_surge_look
+def_state_standing = sit_ass
+on_info = {=surge_complete !is_dark_night} walker@sniper_1
+
+;------------------------------------------------------------
+[logic@entry_guard]
+active = walker@entry_guard_1
+suitable = {=check_npc_name(sim_default)}
+prior = 200
+
+[walker@entry_guard_1]:walker@gen
+path_walk = entry_guard_walk
+path_look = entry_guard_look
+def_state_standing = guard
+on_info = {=surge_started} walker@entry_guard_2
+
+[walker@entry_guard_2]:walker@gen
+path_walk = entry_guard_surge_walk
+path_look = entry_guard_surge_look
+def_state_standing = guard
+on_info = {=surge_complete} walker@entry_guard_1
+
+;------------------------------------------------------------
+[logic@main_guard_1]
+active = walker@main_guard_1_main
+suitable = {=check_npc_name(sim_default)}
+prior = 200
+
+[walker@main_guard_1_main]:walker@gen
+path_walk = main_guard_1_walk
+path_look = main_guard_1_look
+def_state_standing = guard
+on_info = {=surge_started} walker@main_guard_1_home
+on_info2 = {=is_dark_night} walker@main_guard_1_home
+
+[walker@main_guard_1_home]:walker@gen
+path_walk = main_guard_1_surge_walk
+path_look = main_guard_1_surge_look
+def_state_standing = sit_ass
+on_info = {=surge_complete !is_dark_night} walker@main_guard_1_main
+
+;------------------------------------------------------------
+[logic@main_guard_2]
+active = walker@main_guard_2_main
+suitable = {=check_npc_name(sim_default)}
+prior = 200
+
+[walker@main_guard_2_main]:walker@gen
+path_walk = main_guard_2_walk
+path_look = main_guard_2_look
+def_state_standing = guard
+on_info = {=surge_started} walker@main_guard_2_home
+on_info2 = {=is_dark_night} walker@main_guard_2_home
+
+[walker@main_guard_2_home]:walker@gen
+path_walk = main_guard_2_surge_walk
+path_look = main_guard_2_surge_look
+def_state_standing = sit_ass
+on_info = {=surge_complete !is_dark_night} walker@main_guard_2_main
+
+;------------------------------------------------------------
+[logic@warehouse_guard]
+active = walker@warehouse_guard_1
+suitable = {=check_npc_name(sim_default)}
+prior = 200
+
+[walker@warehouse_guard_1]:walker@gen
+path_walk = warehouse_guard_walk
+path_look = warehouse_guard_look
+def_state_standing = guard
+on_info = {=surge_started} walker@warehouse_guard_2
+
+[walker@warehouse_guard_2]:walker@gen
+path_walk = warehouse_guard_surge_walk
+path_look = warehouse_guard_walk
+def_state_standing = guard
+on_info = {=surge_complete} walker@warehouse_guard_1
+
+;------------------------------------------------------------
+[logic@tunnel_guard_1]
+active = walker@tunnel_guard_1
+suitable = {=check_npc_name(sim_default)}
+prior = 200
+
+[walker@tunnel_guard_1]:walker@gen
+path_walk = tunnel_guard_1_walk
+path_look = tunnel_guard_1_look
+def_state_standing = guard
+
+;------------------------------------------------------------
+[logic@tunnel_guard_2]
+active = walker@tunnel_guard_2
+suitable = {=check_npc_name(sim_default)}
+prior = 200
+
+[walker@tunnel_guard_2]:walker@gen
+path_walk = tunnel_guard_2_walk
+path_look = tunnel_guard_2_look
+def_state_standing = guard
+
+;------------------------------------------------------------
+[logic@tunnel_guard_3]
+active = walker@tunnel_guard_3
+suitable = {=check_npc_name(sim_default)}
+prior = 200
+
+[walker@tunnel_guard_3]:walker@gen
+path_walk = tunnel_guard_3_walk
+path_look = tunnel_guard_3_look
+def_state_standing = guard
+

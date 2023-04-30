@@ -1,0 +1,17 @@
+[logic]
+active = ph_idle@open
+
+[ph_idle@open]
+nonscript_usable = true
+tips = actor_inventory_box_use
+on_info = ph_idle@100
+
+[ph_idle@100]
+nonscript_usable = true
+on_info = {!actor_in_zone(cit_selmag_restr)} ph_idle@200
+tips = inventory_box_use
+
+[ph_idle@200] 
+nonscript_usable = true
+on_info = {=actor_in_zone(cit_selmag_restr)} ph_idle@100 %=cit_killers_merc_mechanic_util_box%
+tips = inventory_box_use

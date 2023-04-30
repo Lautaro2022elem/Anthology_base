@@ -1,0 +1,18 @@
+[logic]
+active = walker@baza
+
+[walker@baza]
+path_walk = gar_a2_main_quest_dolg_2_start_walk
+path_look = gar_a2_main_quest_dolg_2_start_look
+on_info = {+gar_a2_main_quest_borland_release} %=release_npc%
+on_info2 = {+gar_dolg_general_kill} remark@enemy %=actor_enemy%
+invulnerable = true
+meet = no_meet
+
+
+[remark@enemy]
+anim = threat_fire
+target = story | actor
+combat_ignore_cond = true 
+combat_ignore_keep_when_attacked = true 
+invulnerable = true

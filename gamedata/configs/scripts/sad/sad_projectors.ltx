@@ -1,0 +1,15 @@
+[logic]
+active = sr_idle@10
+
+[sr_idle@10]
+on_info = {=sad_time_to_lights_off} sr_idle@20 %=sad_turn_on_off_lamps(off)%
+
+[sr_idle@20]
+on_info = {!sad_time_to_lights_off} sr_idle@10 %=sad_turn_on_off_lamps(on)%
+
+;
+[sr_idle@10x]
+on_timer = 1000 | sr_idle@20x %=sad_turn_on_off_lamps(off)%
+
+[sr_idle@20x]
+on_timer = 1000 | sr_idle@10x %=sad_turn_on_off_lamps(on)%

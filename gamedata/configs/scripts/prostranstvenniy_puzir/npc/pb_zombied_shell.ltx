@@ -1,0 +1,27 @@
+[logic]
+suitable = {=check_npc_name(pb_zombied_shell)} true
+prior = 200
+active = remark@fire_to_actor
+
+[remark@fire_to_actor]
+anim = guard_na
+target = story | actor
+on_timer = 10000 | remark@fire_to_actor_ready
+combat_ignore_cond = false
+combat_ignore_keep_when_attacked = false
+invulnerable = true
+gather_items_enabled = false
+help_wounded_enabled = false
+corpse_detection_enabled = false
+meet = no_meet
+
+[remark@fire_to_actor_ready]
+anim = patrol_fire
+target = story | actor
+combat_ignore_cond = false
+combat_ignore_keep_when_attacked = false
+;invulnerable = true
+gather_items_enabled = false
+help_wounded_enabled = false
+corpse_detection_enabled = false
+meet = no_meet

@@ -1,0 +1,23 @@
+;---------	AGROPROM UNDERGROUND SMART TERRAINS	--------
+[agr_u_bandits]:default_territory
+sim_avail               = {+agr_u_bandits_dead} true, false
+lair 		            = 1 
+stalker		            = 1
+army		            = 1
+bandit		            = 1
+
+[agr_u_bloodsucker]:default_lair
+sim_avail               = {+agru_add_reward} true, false
+
+[agr_u_bloodsucker_2]:default_lair
+sim_avail               = {+agru_add_reward_1} true, false
+territory 	            = 1
+stalker		            = 1
+army		            = 1
+
+[agr_u_monsters]:default_lair
+sim_avail               = {+agru_controller_death} true, false
+
+[agr_u_soldiers]:default_territory
+sim_avail               = {+agr_u_soldiers_dead +agru_end_poltergeist_squad_dead} true, false
+army		            = 1

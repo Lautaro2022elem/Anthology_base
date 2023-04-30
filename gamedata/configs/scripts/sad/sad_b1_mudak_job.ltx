@@ -1,0 +1,73 @@
+[wounded]
+hp_state 		= 0|wounded_heavy@help_heavy
+hp_state_see 	= 0|wounded_heavy@help_heavy
+hp_victim 		= 0|nil
+hp_fight 		= 0|false
+hp_cover 		= 0|false
+
+[walker@default]
+gather_items_enabled = false
+help_wounded_enabled = false
+corpse_detection_enabled = false
+
+[death]
+on_info = %+sad_mudak_enemy%
+
+; -------------------------------------------------------------------------------------------------------- mudak 1
+[logic@mudak_1]
+active = walker@1
+suitable = {=check_npc_name(sad_b1_stalker_mudak)} true
+on_death = death
+prior = 300
+
+[walker@1]:walker@default
+path_walk = mudak_start_place
+path_look = mudak_start_look
+;def_state_standing = sit
+on_info = {=actor_enemy -sad_mudak_enemy} %+sad_mudak_enemy%
+on_info2 = {+sad_sim_3_rob_agree !talking} animpoint@1, {+sad_b1_mudak_go_saray !talking} animpoint@1
+meet = meet@1
+
+[animpoint@1]:walker@default
+cover_name = sad_b1_saray_animp
+wounded = wounded
+meet = meet
+on_info = {=actor_enemy -sad_mudak_enemy} %+sad_mudak_enemy%
+
+[meet]
+close_snd_hello = nil
+close_snd_bye   = nil
+close_distance  = 4
+close_victim    = actor
+close_anim 		= guard_na
+use 			= {=actor_enemy} false, {=dist_to_actor_ge(3)} false, true
+allow_break 	= false
+trade_enable	= false
+
+[meet@1]
+close_snd_hello = nil
+close_snd_bye   = nil
+close_distance  = 4
+close_victim    = actor
+close_anim 		= guard_na
+far_anim 		= hello_wpn
+far_victim 		= actor
+far_distance 	= 14
+far_snd 		= podhodi_est_delo
+abuse 			= false
+meet_on_talking = false
+use 			= {=actor_enemy} false, {=dist_to_actor_ge(3)} false, true
+allow_break 	= false
+trade_enable	= false
+
+; -------------------------------------------------------------------------------------------------------- mudak 2
+[logic@mudak_2]
+active = sleeper@2
+suitable = {=target_squad_name(sad_b1_mudak_squad) !check_npc_name(sad_b1_stalker_mudak)} true
+on_death = death
+prior = 280
+
+[sleeper@2]:walker@default
+path_main = saray_sleeper_place
+meet = no_meet
+on_info = {=actor_enemy -sad_mudak_enemy} %+sad_mudak_enemy%

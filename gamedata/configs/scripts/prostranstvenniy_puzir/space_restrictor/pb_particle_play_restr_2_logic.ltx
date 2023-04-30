@@ -1,0 +1,15 @@
+[logic]
+active = sr_idle@wait
+
+[sr_idle@wait]
+on_info = {+zver_found_padalshik} %+pb_main_quest_igra_effect_3_take%
+on_info2 = {+pb_main_quest_igra_effect_3_take -pb_main_quest_igra_effect_4_take} sr_particle@idle_1 %+pb_main_quest_igra_effect_4_take%
+
+[sr_particle@idle_1]
+name = explosions\explosion_dym
+path = pb_particle_play_point_2
+mode = 2
+looped = true
+on_info = {+pb_actor_hit_stronglav} sr_idle@particle_play_nil
+
+[sr_idle@particle_play_nil]

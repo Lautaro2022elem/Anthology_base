@@ -1,0 +1,13 @@
+[logic]
+active = sr_idle
+
+[sr_idle]
+on_info = {+spectrum_project_start +esc_borland_teleport_atp} sr_idle@time
+
+[sr_idle@time]
+on_game_timer = 1000| sr_idle@2
+
+[sr_idle@2]
+on_info = {+esc_borland_teleport_atp} sr_idle@nil %+esc_quest_line_borland_meet_open =esc_borland_quest_line_sms =give_task(esc_quest_line_meet_borland)%
+
+[sr_idle@nil]

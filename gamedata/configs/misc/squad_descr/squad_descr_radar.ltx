@@ -1,0 +1,39 @@
+[rad_freedom_squad]:online_offline_group
+faction = freedom
+npc_random = rad_svoboda_master
+npc_in_squad = 6
+target_smart = {+aes_smart_terrain_monolit_blockpost4_squad_death} nil, {+pri_smart_pseudodog_lair1_squad_death} aes_smart_terrain_monolit_blockpost4, {+pri_smart_tushkano_lair1_squad_death} pri_smart_pseudodog_lair1, {+pri_smart_controler_lair1_squad_death} pri_smart_tushkano_lair1, {+pri_smart_monolith_stalker3_squad_death} pri_smart_controler_lair1, {+pri_followers_start} pri_smart_monolith_stalker3, {+rad_dolg_squad_death} pri_smart_neutral_stalker1, rad_freedom_vs_duty
+on_death = %+rad_freedom_squad_death%
+rush = true
+story_id = rad_freedom_squad
+
+[rad_dolg_squad]:online_offline_group
+faction = dolg
+npc_random = rad_dolg_master
+npc_in_squad = 6
+target_smart = {+aes_smart_terrain_monolit_blockpost4_squad_death} nil, {+pri_smart_pseudodog_lair1_squad_death} aes_smart_terrain_monolit_blockpost4, {+pri_smart_tushkano_lair1_squad_death} pri_smart_pseudodog_lair1, {+pri_smart_controler_lair1_squad_death} pri_smart_tushkano_lair1, {+pri_smart_monolith_stalker3_squad_death} pri_smart_controler_lair1, {+pri_followers_start} pri_smart_monolith_stalker3, {+rad_freedom_squad_death} pri_smart_neutral_stalker1, rad_freedom_vs_duty
+on_death = %+rad_dolg_squad_death%
+rush = true
+story_id = rad_dolg_squad
+
+[rad_antenna_specnaz_squad]:online_offline_group
+faction = army
+npc_random = sim_default_military_4
+npc_in_squad = 8
+target_smart = rad_antenna_patrol
+rush = true
+story_id = rad_antenna_specnaz_squad
+
+[rad_antenna_monolith_squad]:online_offline_group
+faction = monolith
+npc_random = sim_default_monolith_2, sim_default_monolith_2, sim_default_monolith_3
+npc_in_squad = 5
+target_smart = rad_antenna_monolith
+story_id = rad_antenna_monolith_squad
+
+[rad_antenna_patrol_squad]:online_offline_group
+faction = monolith
+npc_random = sim_default_monolith_2, sim_default_monolith_2, sim_default_monolith_3
+npc_in_squad = 5
+target_smart = rad_antenna_patrol
+story_id = rad_antenna_patrol_squad

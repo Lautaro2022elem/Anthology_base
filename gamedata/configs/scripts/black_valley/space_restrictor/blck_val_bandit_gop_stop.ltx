@@ -1,0 +1,19 @@
+[logic]
+active = sr_idle@gop_stop
+
+[sr_idle@gop_stop]
+on_info = {=actor_has_item(af_fuzz_kolobok) -blck_val_spawn_bandit_end} sr_idle@gop_stop_spawn_start %+blck_val_spawn_bandit_end%
+
+[sr_idle@gop_stop_spawn_start]
+on_timer = 1000 | sr_idle@gop_stop_spawn_start_1 %=spawn_object(blck_val_bandit_gop_stop:blck_val_bandit_gop_stop_spawn) =spawn_object(blck_val_bandit_gop_stop_1:blck_val_bandit_gop_stop_1_spawn) =spawn_object(blck_val_bandit_gop_stop_2:blck_val_bandit_gop_stop_2_spawn)%
+
+[sr_idle@gop_stop_spawn_start_1]
+on_timer = 1000 | sr_idle@gop_stop_sound_start %+blck_val_bandit_gop_stop_move%
+
+[sr_idle@gop_stop_sound_start]
+on_timer = 3000 | sr_idle@gop_stop_end %=blck_val_gop_stop_bandit_sms_1%
+
+[sr_idle@gop_stop_end]
+on_info = {=actor_has_item(af_fuzz_kolobok) +blck_val_bandit_gop_stop_art_out} sr_idle@nil %-blck_val_bandit_gop_stop_art_out%
+
+[sr_idle@nil]

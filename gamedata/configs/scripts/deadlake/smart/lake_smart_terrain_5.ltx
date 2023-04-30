@@ -1,0 +1,22 @@
+[smart_terrain]
+squad_id = 63
+max_population = 2
+respawn_idle = 172800
+respawn_params = respawn@dl_lake_smart_terrain_5   
+
+[respawn@dl_lake_smart_terrain_5]
+spawn_bandit@novice
+spawn_bandit@advanced
+spawn_bandit@master
+
+[spawn_bandit@novice]
+spawn_squads = bandit_sim_squad_novice
+spawn_num = 1
+
+[spawn_bandit@advanced]
+spawn_squads = bandit_sim_squad_novice, bandit_sim_squad_advanced
+spawn_num = 1
+
+[spawn_bandit@master]
+spawn_squads = bandit_sim_squad_veteran, bandit_sim_squad_advanced
+spawn_num = 1

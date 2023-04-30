@@ -1,0 +1,17 @@
+[logic@victim]
+active = animpoint@dead
+suitable = {=check_npc_name(agr_trailer_stalker_victim)}
+
+[animpoint@dead]
+cover_name = agr_trailer_victim_cover
+avail_animations = animpoint_sit_ass
+on_info = {=animpoint_reached -agr_trailer_victim_killed} %=kill_npc +agr_trailer_victim_killed%
+show_spot = false
+combat_ignore_cond = true
+
+[walker@dead]
+path_walk = victim_scene_actor_walk
+path_look = victim_scene_actor_look
+def_state_standing = sit_ass
+show_spot = false
+combat_ignore_cond = true

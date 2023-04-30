@@ -1,0 +1,37 @@
+;=========meet_stalker_korpys========
+[meet@korpys_stalker]
+close_anim 		= nil
+close_victim 	= nil
+far_anim 		= nil
+far_victim 		= nil
+close_distance 	= 0
+far_distance 	= 0
+use = {=actor_enemy} false, {=dist_to_actor_le(3)} true, false
+snd_on_use = {!dist_to_actor_le(3)} nil
+meet_on_talking = false
+;==================================
+
+[logic]
+active = walker@esc_enot_not_sleep
+suitable = {=check_npc_name(esc_levsha)} true, false
+level_spot = quest_npc
+prior = 250
+
+[walker@esc_enot_not_sleep]
+path_walk = esc_enot_not_sleep_walk
+path_look = esc_enot_not_sleep_look
+on_info = {+esc_enot_go_to_furgon_drink_done} %=release_npc%
+combat_ignore_cond = true
+combat_ignore_keep_when_attacked = true
+invulnerable = false
+gather_items_enabled = false
+help_wounded_enabled = false
+corpse_detection_enabled = false
+meet = meet@esc_enot_quest_meet
+
+[meet@esc_enot_quest_meet]:meet@korpys_stalker
+close_victim = actor
+use = {!actor_enemy +esc_actor_talk_raven_from_enot} true, false
+allow_break = false
+meet_dialog = esc_actor_meet_from_enot_first
+trade_enable = false

@@ -1,0 +1,74 @@
+[walker@def]
+gather_items_enabled = false
+help_wounded_enabled = false
+corpse_detection_enabled = false
+out_restr = sad_ran_sr_zone
+
+[death]
+;on_info = {=killed_by_actor} %+sad_cowboy_enemy%
+
+[hit]
+;on_info = {=actor_enemy} %+sad_cowboy_enemy%
+
+; ------------------------------------------------------------------------------------------------------------------------ 1
+[logic@radik_1]
+suitable = {=target_squad_name(sad_stalker_radik_squad) =is_squad_commander} true
+active = animpoint@radik_1
+;on_hit = hit
+;on_death = death
+prior = 250
+
+[animpoint@radik_1]:walker@def
+cover_name = sad_ran_animp_leader
+use_camp = false
+meet = no_meet
+
+; ------------------------------------------------------------------------------------------------------------------------ tech
+[logic@radik_t]
+suitable = {=check_npc_name(sad_radik_member_1)} true
+active = animpoint@radik_t
+;on_hit = hit
+;on_death = death
+prior = 240
+
+[animpoint@radik_t]:walker@def
+cover_name = sad_ran_tech_place
+use_camp = false
+meet = meet@t
+
+; ------------------------------------------------------------------------------------------------------------------------ 2
+[logic@radik_2]
+suitable = {=target_squad_name(sad_stalker_radik_squad) !is_squad_commander !check_npc_name(sad_radik_member_1)} true
+active = walker@radik_20
+on_hit = hit
+on_death = death
+prior = 230
+
+[walker@radik_20]:walker@def
+path_walk = cowboy_gvard_walk
+path_look = cowboy_gvard_look
+use_camp = false
+meet = no_meet
+on_game_timer = 900 | walker@radik_21
+
+[walker@radik_21]:walker@def
+path_walk = cowboy_gvard_walk2
+path_look = cowboy_gvard_look
+use_camp = false
+meet = no_meet
+on_game_timer = 900 | walker@radik_20
+
+; ------------------------------
+[meet@t]
+close_snd_hello = nil
+close_snd_bye   = nil
+close_distance  = 0
+close_victim    = actor
+close_anim 		= nil
+far_anim 		= nil
+far_victim 		= nil
+far_distance 	= 0
+far_snd 		= nil
+abuse 			= false
+meet_on_talking = false
+use 			= {=actor_enemy} false, true

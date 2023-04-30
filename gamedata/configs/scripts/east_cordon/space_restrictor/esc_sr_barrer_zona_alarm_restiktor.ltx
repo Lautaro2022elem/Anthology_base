@@ -1,0 +1,11 @@
+[logic]
+active = {+spectrum_project_start} sr_idle
+
+[sr_idle]
+on_actor_outside = {-esc_colonel_kolyazin_prisoner_actor_dialog_complite -infa_esc_sr_barrer_zona_alarm_restiktor} sr_idle@actorkill %+infa_esc_sr_barrer_zona_alarm_restiktor =set_squad_enemy_to_actor(esc_squad_barrer) =play_sound(alarm)%
+
+[sr_idle@actorkill] 
+on_game_timer = 100 | %=hit_actor =kill_actor%
+
+
+               

@@ -1,0 +1,11 @@
+[logic]
+active = sr_idle
+
+[sr_idle]
+on_actor_inside = sr_idle@wiz_start %=teleport_actor(wiz_actor_start_walk:wiz_actor_start_look) =run_tutorial(intro_game_wiz)%
+
+
+[sr_idle@wiz_start]
+on_timer = 3000 | sr_idle@nil %+wiz_start +modification_start_storyline =create_squad(wiz_rjaviu_squad:wiz_bivsh_nii) =create_squad(wiz_kosta_squad:wiz_bivsh_nii) =create_squad(val_a3_stalker_garik_squad:val_a3)%
+
+[sr_idle@nil]

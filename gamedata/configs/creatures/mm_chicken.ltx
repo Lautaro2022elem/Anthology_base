@@ -1,0 +1,58 @@
+[chicken_default]:m_tushkano_e
+$spawn = "monsters\tushkanos\tushkano_strong"
+visual = monsters\chicken\chicken
+corpse_visual = monsters\chicken\chicken_dead
+panic_threshold = 0.7
+immunities_sect = chicken_immunities
+attack_params = chicken_attack_params
+kind = SM_CHICKEN
+spec_rank = normal
+community = rotan
+species = rotan
+LegsCount = 2
+Velocity_Stand = 0,		3.5,			3.5,		1,		1
+Velocity_WalkFwdNormal = 1.0,		7.5,			7.5,		0.02,	1.8
+Velocity_RunFwdNormal = 5.0,		6.5,			6.5,		0.3,	1
+Velocity_WalkFwdDamaged = 1.0,		4.5,			4.5,		0.2,	1.8
+Velocity_RunFwdDamaged = 3.0,  	3.0,			3.0,		0.5,	1
+Velocity_Drag = 1.0,		3.0,			3.0,		1,		1
+Velocity_Steal = 1.5,		3.0,			3.0,		1,		1
+Accel_Generic = 1.5
+Accel_Calm = 2.5
+Accel_Aggressive = 7.5
+MinAttackDist = 1.2
+MaxAttackDist = 1.8
+idle_sound_delay = 27000
+eat_sound_delay = 4000
+attack_sound_delay = 8000
+sound_idle = monsters\chicken\chicken_idle_sounds_
+sound_eat = monsters\chicken\$no_sound
+sound_take_damage = monsters\chicken\$no_sound
+sound_die = monsters\chicken\$no_sound
+sound_aggressive = monsters\chicken\$no_sound
+sound_attack_hit = monsters\chicken\$no_sound
+sound_threaten = monsters\chicken\$no_sound
+sound_landing = monsters\chicken\$no_sound
+sound_steal = monsters\chicken\$no_sound
+sound_panic = monsters\chicken\$no_sound
+sound_growling = monsters\chicken\$no_sound
+sound_die_in_anomaly = monsters\chicken\$no_sound
+sound_distant_idle = monsters\tushkano\$no_sound
+distant_idle_sound_delay = 80000
+distant_idle_sound_range = 100.0
+
+[chicken_immunities]
+burn_immunity = 10.0
+strike_immunity = 10.0
+shock_immunity = 10.0
+wound_immunity = 10.0
+radiation_immunity = 0.0
+telepatic_immunity = 1.1
+chemical_burn_immunity = 10.0
+explosion_immunity = 2.0
+fire_wound_immunity = 10.0
+
+[chicken_attack_params]
+stand_attack_0 = 0.45,		0.12,		    10,        0.0, 1.0, 0.0,		 -1.2, 1.2, -1.6, 1.6,							  1.0
+stand_attack_1 = 0.45,		0.12,		    15,        0.0, 1.0, 0.0,		 -1.2, 1.2, -1.6, 1.6,							  1.0
+stand_attack_2 = 0.45,		0.12,		    18,        0.0, 1.0, 0.0,		 -1.2, 1.2, -1.6, 1.6,							  1.0

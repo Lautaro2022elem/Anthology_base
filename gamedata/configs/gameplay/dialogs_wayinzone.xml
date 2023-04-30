@@ -1,0 +1,1135 @@
+<?xml version="1.0" encoding="windows-1251" standalone="yes" ?>
+<game_dialogs>
+    <dialog id="wiz_lt_krasnopolsky_enemy_with_neutral">
+        <has_info>wiz_krivou_die</has_info>
+        <dont_has_info>wiz_lt_krasnopolsky_enemy_with_neutral_done</dont_has_info>
+        <phrase_list>
+            <phrase id="1">
+                <text>wiz_lt_krasnopolsky_enemy_with_neutral_1</text>
+                <next>2</next>
+            </phrase>
+            <phrase id="2">
+                <text>wiz_lt_krasnopolsky_enemy_with_neutral_2</text>
+                <next>3</next>
+            </phrase>
+            <phrase id="3">
+                <text>wiz_lt_krasnopolsky_enemy_with_neutral_3</text>
+                <action>dialogs.break_dialog</action>
+                <give_info>wiz_lt_krasnopolsky_enemy_with_neutral_done</give_info>
+            </phrase>
+            <phrase id="0">
+                <text>wiz_lt_krasnopolsky_enemy_with_neutral_0</text>
+                <next>1</next>
+            </phrase>
+        </phrase_list>
+    </dialog>
+    <dialog id="wiz_lt_krasnopolsky_enemy_with_neutral_second">
+        <has_info>wiz_merc_leader_base_door_close</has_info>
+        <dont_has_info>wiz_lt_krasnopolsky_enemy_with_neutral_second</dont_has_info>
+        <dont_has_info>wiz_lt_krasnopolsky_enemy_with_neutral_third</dont_has_info>
+        <dont_has_info>actor_has_pda_nazar</dont_has_info>
+        <phrase_list>
+            <phrase id="1">
+                <text>wiz_lt_krasnopolsky_enemy_with_neutral_second_1</text>
+                <next>2</next>
+            </phrase>
+            <phrase id="2">
+                <text>wiz_lt_krasnopolsky_enemy_with_neutral_second_2</text>
+                <next>3</next>
+            </phrase>
+            <phrase id="3">
+                <text>wiz_lt_krasnopolsky_enemy_with_neutral_second_3</text>
+                <next>4</next>
+            </phrase>
+            <phrase id="4">
+                <text>wiz_lt_krasnopolsky_enemy_with_neutral_second_4</text>
+                <next>5</next>
+            </phrase>
+            <phrase id="5">
+                <text>wiz_lt_krasnopolsky_enemy_with_neutral_second_5</text>
+                <next>6</next>
+            </phrase>
+            <phrase id="6">
+                <text>wiz_lt_krasnopolsky_enemy_with_neutral_second_6</text>
+                <next>7</next>
+            </phrase>
+            <phrase id="7">
+                <text>wiz_lt_krasnopolsky_enemy_with_neutral_second_7</text>
+                <action>dialogs_wiz.give_wiz_merc_leader_key</action>
+                <next>8</next>
+            </phrase>
+            <phrase id="8">
+                <text>wiz_lt_krasnopolsky_enemy_with_neutral_second_8</text>
+                <action>dialogs.break_dialog</action>
+                <give_info>wiz_lt_krasnopolsky_enemy_with_neutral_third</give_info>
+                <give_info>wiz_lt_krasnopolsky_enemy_with_neutral_second</give_info>
+            </phrase>
+            <phrase id="0">
+                <text>wiz_lt_krasnopolsky_enemy_with_neutral_second_0</text>
+                <next>1</next>
+            </phrase>
+        </phrase_list>
+    </dialog>
+    <dialog id="wiz_foma_second_quest">
+        <dont_has_info>wiz_mutants_hunting_started</dont_has_info>
+        <phrase_list>
+            <phrase id="1">
+                <text>wiz_foma_second_quest_1</text>
+                <next>2</next>
+                <next>22</next>
+            </phrase>
+            <phrase id="22">
+                <text>wiz_foma_second_quest_22</text>
+                <action>dialogs.break_dialog</action>
+            </phrase>
+            <phrase id="0">
+                <text>wiz_foma_second_quest_0</text>
+                <next>1</next>
+            </phrase>
+            <phrase id="2">
+                <text>wiz_foma_second_quest_2</text>
+                <action>dialogs.break_dialog</action>
+                <give_info>wiz_mutants_hunting_started</give_info>
+            </phrase>
+        </phrase_list>
+    </dialog>
+    <dialog id="wiz_storyline_dialog_foma_katacombs">
+        <has_info>wiz_storyline_dialog_foma_katacombs_open</has_info>
+        <dont_has_info>wiz_storyline_dialog_foma_katacombs_wait</dont_has_info>
+        <phrase_list>
+            <phrase id="2">
+                <text>wiz_storyline_dialog_foma_katacombs_2</text>
+                <next>3</next>
+            </phrase>
+            <phrase id="3">
+                <text>wiz_storyline_dialog_foma_katacombs_3</text>
+                <next>4</next>
+            </phrase>
+            <phrase id="6">
+                <text>wiz_storyline_dialog_foma_katacombs_6</text>
+                <next>7</next>
+            </phrase>
+            <phrase id="7">
+                <text>wiz_storyline_dialog_foma_katacombs_7</text>
+                <next>8</next>
+            </phrase>
+            <phrase id="4">
+                <text>wiz_storyline_dialog_foma_katacombs_4</text>
+                <next>5</next>
+            </phrase>
+            <phrase id="5">
+                <text>wiz_storyline_dialog_foma_katacombs_5</text>
+                <next>6</next>
+            </phrase>
+            <phrase id="8">
+                <text>wiz_storyline_dialog_foma_katacombs_8</text>
+                <next>9</next>
+            </phrase>
+            <phrase id="9">
+                <text>wiz_storyline_dialog_foma_katacombs_9</text>
+                <action>dialogs.break_dialog</action>
+                <give_info>wiz_storyline_dialog_foma_katacombs_wait</give_info>
+            </phrase>
+            <phrase id="1">
+                <text>wiz_storyline_dialog_foma_katacombs_1</text>
+                <next>2</next>
+            </phrase>
+            <phrase id="0">
+                <text>wiz_storyline_dialog_foma_katacombs_0</text>
+                <next>1</next>
+            </phrase>
+        </phrase_list>
+    </dialog>
+    <dialog id="wiz_tech_secondary_quest_1_go">
+        <has_info>wiz_storyline_dialog_foma_katacombs_wait</has_info>
+        <dont_has_info>wiz_tech_secondary_quest_1_give</dont_has_info>
+        <phrase_list>
+            <phrase id="0">
+                <text>wiz_tech_secondary_quest_1_go_0</text>
+                <next>1</next>
+            </phrase>
+            <phrase id="1">
+                <text>wiz_tech_secondary_quest_1_go_1</text>
+                <next>2</next>
+            </phrase>
+            <phrase id="2">
+                <text>wiz_tech_secondary_quest_1_go_2</text>
+                <next>3</next>
+            </phrase>
+            <phrase id="3">
+                <text>wiz_tech_secondary_quest_1_go_3</text>
+                <next>4</next>
+            </phrase>
+            <phrase id="4">
+                <text>wiz_tech_secondary_quest_1_go_4</text>
+                <next>5</next>
+            </phrase>
+            <phrase id="5">
+                <text>wiz_tech_secondary_quest_1_go_5</text>
+                <action>dialogs_wiz.wiz_tech_secondary_quest_1_go</action>
+                <next>6</next>
+            </phrase>
+            <phrase id="6">
+                <text>wiz_tech_secondary_quest_1_go_6</text>
+                <action>dialogs.break_dialog</action>
+                <give_info>wiz_tech_secondary_quest_1_give</give_info>
+            </phrase>
+        </phrase_list>
+    </dialog>
+    <dialog id="wiz_tech_secondary_quest_1_done">
+        <has_info>wiz_scaner_destroy_info</has_info>
+        <dont_has_info>wiz_tech_secondary_quest_scaner_done</dont_has_info>
+        <phrase_list>
+            <phrase id="3">
+                <text>wiz_tech_secondary_quest_1_done_3</text>
+                <next>4</next>
+            </phrase>
+            <phrase id="4">
+                <text>wiz_tech_secondary_quest_1_done_4</text>
+                <next>5</next>
+            </phrase>
+            <phrase id="5">
+                <text>wiz_tech_secondary_quest_1_done_5</text>
+                <next>6</next>
+            </phrase>
+            <phrase id="6">
+                <text>wiz_tech_secondary_quest_1_done_6</text>
+                <action>dialogs.break_dialog</action>
+            </phrase>
+            <phrase id="1">
+                <text>wiz_tech_secondary_quest_1_done_1</text>
+                <next>2</next>
+            </phrase>
+            <phrase id="0">
+                <text>wiz_tech_secondary_quest_1_done_0</text>
+                <next>1</next>
+            </phrase>
+            <phrase id="2">
+                <text>wiz_tech_secondary_quest_1_done_2</text>
+                <give_info>wiz_tech_secondary_quest_scaner_done</give_info>
+                <next>3</next>
+            </phrase>
+        </phrase_list>
+    </dialog>
+    <dialog id="wiz_storyline_dialog_foma_bsd_done">
+        <has_info>bolotnaya_tvar_death</has_info>
+        <dont_has_info>wiz_storyline_going_tonnel_more</dont_has_info>
+        <phrase_list>
+            <phrase id="1">
+                <text>wiz_storyline_dialog_foma_bsd_done_1</text>
+                <next>2</next>
+            </phrase>
+            <phrase id="0">
+                <text>wiz_storyline_dialog_foma_bsd_done_0</text>
+                <give_info>bolotnaya_tvar_complete</give_info>
+                <next>1</next>
+            </phrase>
+            <phrase id="2">
+                <text>wiz_storyline_dialog_foma_bsd_done_2</text>
+                <action>dialogs.break_dialog</action>
+                <give_info>wiz_storyline_going_tonnel_more</give_info>
+            </phrase>
+        </phrase_list>
+    </dialog>
+    <dialog id="wiz_germo_case_quest_dialog">
+        <has_info>katacombs_gsk_komplex</has_info>
+        <dont_has_info>wiz_germo_case_quest_done</dont_has_info>
+        <phrase_list>
+            <phrase id="1">
+                <text>wiz_germo_case_quest_dialog_1</text>
+                <next>2</next>
+            </phrase>
+            <phrase id="3">
+                <text>wiz_germo_case_quest_dialog_3</text>
+                <next>4</next>
+            </phrase>
+            <phrase id="4">
+                <text>wiz_germo_case_quest_dialog_4</text>
+                <action>dialogs.break_dialog</action>
+                <give_info>wiz_germo_case_quest_done</give_info>
+            </phrase>
+            <phrase id="2">
+                <text>wiz_germo_case_quest_dialog_2</text>
+                <next>3</next>
+            </phrase>
+            <phrase id="0">
+                <text>wiz_germo_case_quest_dialog_0</text>
+                <action>dialogs_wiz.out_wiz_case_starogo</action>
+                <next>1</next>
+            </phrase>
+        </phrase_list>
+    </dialog>
+    <dialog id="wiz_jekan_second_quest_done">
+        <has_info>wiz_die_m24_searching</has_info>
+        <dont_has_info>wiz_jekan_second_quest_complete</dont_has_info>
+        <phrase_list>
+            <phrase id="1">
+                <text>wiz_jekan_second_quest_done_1</text>
+                <action>dialogs_wiz.wiz_reward_milmaps</action>
+                <give_info>wiz_jekan_second_quest_complete</give_info>
+            </phrase>
+            <phrase id="0">
+                <text>wiz_jekan_second_quest_done_0</text>
+                <action>dialogs_wiz.out_wiz_millitary_maps</action>
+                <next>1</next>
+            </phrase>
+        </phrase_list>
+    </dialog>
+    <dialog id="wiz_free_neutral_jekan_free">
+        <has_info>wiz_sim_6_bandit_all_die</has_info>
+        <dont_has_info>free_neutral_jekan_free</dont_has_info>
+        <phrase_list>
+            <phrase id="1">
+                <text>wiz_free_neutral_jekan_free_1</text>
+                <next>2</next>
+            </phrase>
+            <phrase id="3">
+                <text>wiz_free_neutral_jekan_free_3</text>
+                <action>dialogs.break_dialog</action>
+                <give_info>free_neutral_jekan_free</give_info>
+            </phrase>
+            <phrase id="2">
+                <text>wiz_free_neutral_jekan_free_2</text>
+                <next>3</next>
+            </phrase>
+            <phrase id="0">
+                <text>wiz_free_neutral_jekan_free_0</text>
+                <next>1</next>
+            </phrase>
+        </phrase_list>
+    </dialog>
+    <dialog id="wiz_jekan_second_quest_start">
+        <dont_has_info>wiz_military_secret_started</dont_has_info>
+        <phrase_list>
+            <phrase id="44">
+                <text>wiz_jekan_second_quest_start_44</text>
+                <action>dialogs.break_dialog</action>
+            </phrase>
+            <phrase id="0">
+                <text>wiz_jekan_second_quest_start_0</text>
+                <next>1</next>
+            </phrase>
+            <phrase id="1">
+                <text>wiz_jekan_second_quest_start_1</text>
+                <next>2</next>
+            </phrase>
+            <phrase id="2">
+                <text>wiz_jekan_second_quest_start_2</text>
+                <next>3</next>
+            </phrase>
+            <phrase id="3">
+                <text>wiz_jekan_second_quest_start_3</text>
+                <next>4</next>
+                <next>44</next>
+            </phrase>
+            <phrase id="4">
+                <text>wiz_jekan_second_quest_start_4</text>
+                <action>dialogs.break_dialog</action>
+                <action>dialogs_wiz.wiz_jekan_milmaps_quest_go</action>
+                <give_info>wiz_military_secret_started</give_info>
+            </phrase>
+        </phrase_list>
+    </dialog>
+    <dialog id="wiz_foma_about_yourself">
+        <phrase_list>
+            <phrase id="1">
+                <text>wiz_foma_about_yourself_1</text>
+                <give_info>st_recrd_foma_story</give_info>
+            </phrase>
+            <phrase id="0">
+                <text>wiz_foma_about_yourself_0</text>
+                <next>1</next>
+            </phrase>
+        </phrase_list>
+    </dialog>
+    <dialog id="wiz_kosta_about_terr">
+        <dont_has_info>wiz_gonec_pravosudiya_actor_teleported</dont_has_info>
+        <phrase_list>
+            <phrase id="4">
+                <text>wiz_kosta_about_terr_4</text>
+                <next>5</next>
+            </phrase>
+            <phrase id="0">
+                <text>wiz_kosta_about_terr_0</text>
+                <next>1</next>
+            </phrase>
+            <phrase id="1">
+                <text>wiz_kosta_about_terr_1</text>
+                <next>2</next>
+            </phrase>
+            <phrase id="2">
+                <text>wiz_kosta_about_terr_2</text>
+                <next>3</next>
+            </phrase>
+            <phrase id="3">
+                <text>wiz_kosta_about_terr_3</text>
+                <next>4</next>
+            </phrase>
+            <phrase id="5">
+                <text>wiz_kosta_about_terr_5</text>
+            </phrase>
+        </phrase_list>
+    </dialog>
+    <dialog id="wiz_kosta_about_yourself">
+        <dont_has_info>wiz_gonec_pravosudiya_actor_teleported</dont_has_info>
+        <phrase_list>
+            <phrase id="2">
+                <text>wiz_kosta_about_yourself_2</text>
+                <next>3</next>
+            </phrase>
+            <phrase id="0">
+                <text>wiz_kosta_about_yourself_0</text>
+                <next>1</next>
+            </phrase>
+            <phrase id="1">
+                <text>wiz_kosta_about_yourself_1</text>
+                <next>2</next>
+            </phrase>
+            <phrase id="3">
+                <text>wiz_kosta_about_yourself_3</text>
+            </phrase>
+        </phrase_list>
+    </dialog>
+    <dialog id="wiz_krivoy_enemy_with_neutral">
+        <has_info>wiz_enemy_with_neutral_actor_teleported</has_info>
+        <dont_has_info>wiz_enemy_with_neutral_actor_talk_with_krivoy</dont_has_info>
+        <phrase_list>
+            <phrase id="1">
+                <text>wiz_krivoy_enemy_with_neutral_1</text>
+                <next>2</next>
+            </phrase>
+            <phrase id="3">
+                <text>wiz_krivoy_enemy_with_neutral_3</text>
+                <action>dialogs.break_dialog</action>
+                <give_info>wiz_enemy_with_neutral_actor_talk_with_krivoy</give_info>
+            </phrase>
+            <phrase id="0">
+                <text>wiz_krivoy_enemy_with_neutral_0</text>
+                <next>1</next>
+            </phrase>
+            <phrase id="2">
+                <text>wiz_krivoy_enemy_with_neutral_2</text>
+                <next>3</next>
+            </phrase>
+        </phrase_list>
+    </dialog>
+    <dialog id="wiz_owl_stalker_trader_sell_items">
+        <precondition>dialogs_wiz.wiz_owl_stalker_trader_actor_has_item_to_sell</precondition>
+        <phrase_list>
+            <phrase id="12112">
+                <text>wiz_owl_stalker_trader_sell_items_12112</text>
+            </phrase>
+            <phrase id="13112">
+                <text>wiz_owl_stalker_trader_sell_items_13112</text>
+            </phrase>
+            <phrase id="11112">
+                <text>wiz_owl_stalker_trader_sell_items_11112</text>
+            </phrase>
+            <phrase id="14112">
+                <text>wiz_owl_stalker_trader_sell_items_14112</text>
+            </phrase>
+            <phrase id="1">
+                <text>wiz_owl_stalker_trader_sell_items_1</text>
+                <next>11</next>
+                <next>12</next>
+                <next>13</next>
+                <next>14</next>
+            </phrase>
+            <phrase id="14">
+                <text>wiz_owl_stalker_trader_sell_items_14</text>
+                <precondition>dialogs_wiz.wiz_actor_has_rezak_pda</precondition>
+                <next>141</next>
+            </phrase>
+            <phrase id="13">
+                <text>wiz_owl_stalker_trader_sell_items_13</text>
+                <precondition>dialogs_wiz.wiz_actor_has_merc_lead_notebook</precondition>
+                <next>131</next>
+            </phrase>
+            <phrase id="12">
+                <text>wiz_owl_stalker_trader_sell_items_12</text>
+                <precondition>dialogs_wiz.wiz_actor_has_merc_pda</precondition>
+                <next>121</next>
+            </phrase>
+            <phrase id="121">
+                <text>wiz_owl_stalker_trader_sell_items_121</text>
+                <next>1211</next>
+            </phrase>
+            <phrase id="141">
+                <text>wiz_owl_stalker_trader_sell_items_141</text>
+                <next>1411</next>
+            </phrase>
+            <phrase id="11">
+                <text>wiz_owl_stalker_trader_sell_items_11</text>
+                <precondition>dialogs_wiz.wiz_actor_has_nazar_pda</precondition>
+                <next>111</next>
+            </phrase>
+            <phrase id="111">
+                <text>wiz_owl_stalker_trader_sell_items_111</text>
+                <next>1111</next>
+            </phrase>
+            <phrase id="1111">
+                <text>wiz_owl_stalker_trader_sell_items_1111</text>
+                <action>dialogs_wiz.wiz_sell_nazar_pda</action>
+                <next>11112</next>
+            </phrase>
+            <phrase id="1211">
+                <text>wiz_owl_stalker_trader_sell_items_1211</text>
+                <action>dialogs_wiz.wiz_sell_merc_pda</action>
+                <next>12112</next>
+            </phrase>
+            <phrase id="131">
+                <text>wiz_owl_stalker_trader_sell_items_131</text>
+                <next>1311</next>
+            </phrase>
+            <phrase id="1311">
+                <text>wiz_owl_stalker_trader_sell_items_1311</text>
+                <action>dialogs_wiz.wiz_sell_merc_lead_notebook</action>
+                <next>13112</next>
+            </phrase>
+            <phrase id="1411">
+                <text>wiz_owl_stalker_trader_sell_items_1411</text>
+                <action>dialogs_wiz.wiz_sell_rezak_pda</action>
+                <next>14112</next>
+            </phrase>
+            <phrase id="0">
+                <text>wiz_owl_stalker_trader_sell_items_0</text>
+                <next>1</next>
+            </phrase>
+        </phrase_list>
+    </dialog>
+    <dialog id="wiz_lt_krasnopolsky_enemy_with_neutral_third">
+        <has_info>actor_has_pda_nazar</has_info>
+        <has_info>wiz_merc_leader_base_door_close</has_info>
+        <dont_has_info>wiz_lt_krasnopolsky_enemy_with_neutral_second</dont_has_info>
+        <dont_has_info>wiz_lt_krasnopolsky_enemy_with_neutral_third</dont_has_info>
+        <phrase_list>
+            <phrase id="1">
+                <text>wiz_lt_krasnopolsky_enemy_with_neutral_third_1</text>
+                <next>2</next>
+            </phrase>
+            <phrase id="2">
+                <text>wiz_lt_krasnopolsky_enemy_with_neutral_third_2</text>
+                <next>3</next>
+            </phrase>
+            <phrase id="3">
+                <text>wiz_lt_krasnopolsky_enemy_with_neutral_third_3</text>
+                <next>4</next>
+            </phrase>
+            <phrase id="4">
+                <text>wiz_lt_krasnopolsky_enemy_with_neutral_third_4</text>
+                <next>5</next>
+            </phrase>
+            <phrase id="5">
+                <text>wiz_lt_krasnopolsky_enemy_with_neutral_third_5</text>
+                <next>6</next>
+            </phrase>
+            <phrase id="6">
+                <text>wiz_lt_krasnopolsky_enemy_with_neutral_third_6</text>
+                <next>7</next>
+            </phrase>
+            <phrase id="7">
+                <text>wiz_lt_krasnopolsky_enemy_with_neutral_third_7</text>
+                <action>dialogs_wiz.give_wiz_merc_leader_key</action>
+                <next>8</next>
+            </phrase>
+            <phrase id="8">
+                <text>wiz_lt_krasnopolsky_enemy_with_neutral_third_8</text>
+                <action>dialogs.break_dialog</action>
+                <give_info>wiz_lt_krasnopolsky_enemy_with_neutral_third</give_info>
+                <give_info>wiz_lt_krasnopolsky_enemy_with_neutral_second</give_info>
+            </phrase>
+            <phrase id="0">
+                <text>wiz_lt_krasnopolsky_enemy_with_neutral_third_0</text>
+                <next>1</next>
+            </phrase>
+        </phrase_list>
+    </dialog>
+    <dialog id="wiz_storyline_dialog_foma_start">
+        <has_info>wiz_storyline_dialog_kosta_done</has_info>
+        <dont_has_info>wiz_storyline_dialog_foma_done</dont_has_info>
+        <phrase_list>
+            <phrase id="1">
+                <text>wiz_storyline_dialog_foma_start_1</text>
+                <next>2</next>
+            </phrase>
+            <phrase id="2">
+                <text>wiz_storyline_dialog_foma_start_2</text>
+                <next>3</next>
+            </phrase>
+            <phrase id="3">
+                <text>wiz_storyline_dialog_foma_start_3</text>
+                <next>4</next>
+            </phrase>
+            <phrase id="4">
+                <text>wiz_storyline_dialog_foma_start_4</text>
+                <next>5</next>
+            </phrase>
+            <phrase id="5">
+                <text>wiz_storyline_dialog_foma_start_5</text>
+                <next>6</next>
+            </phrase>
+            <phrase id="6">
+                <text>wiz_storyline_dialog_foma_start_6</text>
+                <next>7</next>
+            </phrase>
+            <phrase id="7">
+                <text>wiz_storyline_dialog_foma_start_7</text>
+                <next>8</next>
+            </phrase>
+            <phrase id="8">
+                <text>wiz_storyline_dialog_foma_start_8</text>
+                <next>9</next>
+            </phrase>
+            <phrase id="9">
+                <text>wiz_storyline_dialog_foma_start_9</text>
+                <action>dialogs.break_dialog</action>
+                <give_info>wiz_storyline_dialog_foma_done</give_info>
+            </phrase>
+            <phrase id="0">
+                <text>wiz_storyline_dialog_foma_start_0</text>
+                <next>1</next>
+            </phrase>
+        </phrase_list>
+    </dialog>
+    <dialog id="wiz_storyline_dialog_kosta_start">
+        <has_info>wiz_storyline_dialog_rjaviu_done</has_info>
+        <dont_has_info>wiz_storyline_dialog_kosta_done</dont_has_info>
+        <phrase_list>
+            <phrase id="3">
+                <text>wiz_storyline_dialog_kosta_start_3</text>
+                <action>dialogs.break_dialog</action>
+                <give_info>wiz_storyline_dialog_kosta_done</give_info>
+            </phrase>
+            <phrase id="1">
+                <text>wiz_storyline_dialog_kosta_start_1</text>
+                <next>2</next>
+            </phrase>
+            <phrase id="0">
+                <text>wiz_storyline_dialog_kosta_start_0</text>
+                <next>1</next>
+            </phrase>
+            <phrase id="2">
+                <text>wiz_storyline_dialog_kosta_start_2</text>
+                <next>3</next>
+            </phrase>
+        </phrase_list>
+    </dialog>
+    <dialog id="wiz_gonec_pravosudiya_kosta_start">
+        <has_info>actor_has_pda_nazar</has_info>
+        <dont_has_info>gonec_pravosudiya_going_to_kill</dont_has_info>
+        <phrase_list>
+            <phrase id="4">
+                <text>wiz_gonec_pravosudiya_kosta_start_4</text>
+                <next>5</next>
+            </phrase>
+            <phrase id="6">
+                <text>wiz_gonec_pravosudiya_kosta_start_6</text>
+                <give_info>wiz_gonec_pravosudiya_kosta_start_done</give_info>
+            </phrase>
+            <phrase id="2">
+                <text>wiz_gonec_pravosudiya_kosta_start_2</text>
+                <next>3</next>
+            </phrase>
+            <phrase id="0">
+                <text>wiz_gonec_pravosudiya_kosta_start_0</text>
+                <next>1</next>
+            </phrase>
+            <phrase id="1">
+                <text>wiz_gonec_pravosudiya_kosta_start_1</text>
+                <next>2</next>
+            </phrase>
+            <phrase id="3">
+                <text>wiz_gonec_pravosudiya_kosta_start_3</text>
+                <next>4</next>
+            </phrase>
+            <phrase id="5">
+                <text>wiz_gonec_pravosudiya_kosta_start_5</text>
+                <next>6</next>
+            </phrase>
+        </phrase_list>
+    </dialog>
+    <dialog id="wiz_gonec_pravosudiya_kosta">
+        <has_info>gonec_pravosudiya_going_to_kill</has_info>
+        <dont_has_info>gonec_pravosudiya_kill_kosta</dont_has_info>
+        <phrase_list>
+            <phrase id="4">
+                <text>wiz_gonec_pravosudiya_kosta_4</text>
+                <next>5</next>
+            </phrase>
+            <phrase id="6">
+                <text>wiz_gonec_pravosudiya_kosta_6</text>
+                <next>7</next>
+            </phrase>
+            <phrase id="2">
+                <text>wiz_gonec_pravosudiya_kosta_2</text>
+                <next>3</next>
+            </phrase>
+            <phrase id="0">
+                <text>wiz_gonec_pravosudiya_kosta_0</text>
+                <next>1</next>
+            </phrase>
+            <phrase id="1">
+                <text>wiz_gonec_pravosudiya_kosta_1</text>
+                <next>2</next>
+            </phrase>
+            <phrase id="3">
+                <text>wiz_gonec_pravosudiya_kosta_3</text>
+                <next>4</next>
+            </phrase>
+            <phrase id="5">
+                <text>wiz_gonec_pravosudiya_kosta_5</text>
+                <next>6</next>
+            </phrase>
+            <phrase id="7">
+                <text>wiz_gonec_pravosudiya_kosta_7</text>
+                <next>8</next>
+            </phrase>
+            <phrase id="8">
+                <text>wiz_gonec_pravosudiya_kosta_8</text>
+                <next>9</next>
+            </phrase>
+            <phrase id="10">
+                <text>wiz_gonec_pravosudiya_kosta_10</text>
+                <action>dialogs.break_dialog</action>
+                <give_info>gonec_pravosudiya_kill_kosta</give_info>
+            </phrase>
+            <phrase id="9">
+                <text>wiz_gonec_pravosudiya_kosta_9</text>
+                <next>10</next>
+            </phrase>
+        </phrase_list>
+    </dialog>
+    <dialog id="wiz_storyline_dialog_rjaviu_start">
+        <dont_has_info>wiz_storyline_dialog_rjaviu_done</dont_has_info>
+        <phrase_list>
+            <phrase id="7">
+                <text>wiz_storyline_dialog_rjaviu_start_7</text>
+                <next>8</next>
+            </phrase>
+            <phrase id="9">
+                <text>wiz_storyline_dialog_rjaviu_start_9</text>
+                <action>dialogs.break_dialog</action>
+                <give_info>wiz_storyline_dialog_rjaviu_done</give_info>
+            </phrase>
+            <phrase id="1">
+                <text>wiz_storyline_dialog_rjaviu_start_1</text>
+                <next>2</next>
+            </phrase>
+            <phrase id="3">
+                <text>wiz_storyline_dialog_rjaviu_start_3</text>
+                <next>4</next>
+            </phrase>
+            <phrase id="5">
+                <text>wiz_storyline_dialog_rjaviu_start_5</text>
+                <next>6</next>
+            </phrase>
+            <phrase id="0">
+                <text>wiz_storyline_dialog_rjaviu_start_0</text>
+                <next>1</next>
+            </phrase>
+            <phrase id="2">
+                <text>wiz_storyline_dialog_rjaviu_start_2</text>
+                <next>3</next>
+            </phrase>
+            <phrase id="4">
+                <text>wiz_storyline_dialog_rjaviu_start_4</text>
+                <next>5</next>
+            </phrase>
+            <phrase id="6">
+                <text>wiz_storyline_dialog_rjaviu_start_6</text>
+                <next>7</next>
+            </phrase>
+            <phrase id="8">
+                <text>wiz_storyline_dialog_rjaviu_start_8</text>
+                <next>9</next>
+            </phrase>
+        </phrase_list>
+    </dialog>
+    <dialog id="wiz_storyline_mercs_rjaviu_start">
+        <has_info>wiz_storyline_dialog_foma_katacombs_open</has_info>
+        <dont_has_info>uninvited_guests_gived_task</dont_has_info>
+        <phrase_list>
+            <phrase id="1">
+                <text>wiz_storyline_mercs_rjaviu_start_1</text>
+                <next>2</next>
+            </phrase>
+            <phrase id="3">
+                <text>wiz_storyline_mercs_rjaviu_start_3</text>
+                <next>4</next>
+            </phrase>
+            <phrase id="5">
+                <text>wiz_storyline_mercs_rjaviu_start_5</text>
+                <next>6</next>
+            </phrase>
+            <phrase id="7">
+                <text>wiz_storyline_mercs_rjaviu_start_7</text>
+                <action>dialogs.break_dialog</action>
+                <give_info>uninvited_guests_gived_task</give_info>
+            </phrase>
+            <phrase id="0">
+                <text>wiz_storyline_mercs_rjaviu_start_0</text>
+                <next>1</next>
+            </phrase>
+            <phrase id="2">
+                <text>wiz_storyline_mercs_rjaviu_start_2</text>
+                <next>3</next>
+            </phrase>
+            <phrase id="4">
+                <text>wiz_storyline_mercs_rjaviu_start_4</text>
+                <next>5</next>
+            </phrase>
+            <phrase id="6">
+                <text>wiz_storyline_mercs_rjaviu_start_6</text>
+                <next>7</next>
+            </phrase>
+        </phrase_list>
+    </dialog>
+    <dialog id="wiz_storyline_mercs_rjaviu_done">
+        <has_info>uninvited_guests_5_done</has_info>
+        <dont_has_info>uninvited_guests_fail</dont_has_info>
+        <dont_has_info>uninvited_guests_complete</dont_has_info>
+        <phrase_list>
+            <phrase id="1">
+                <text>wiz_storyline_mercs_rjaviu_done_1</text>
+                <give_info>uninvited_guests_complete</give_info>
+                <next>2</next>
+            </phrase>
+            <phrase id="3">
+                <text>wiz_storyline_mercs_rjaviu_done_3</text>
+                <next>4</next>
+            </phrase>
+            <phrase id="5">
+                <text>wiz_storyline_mercs_rjaviu_done_5</text>
+                <next>6</next>
+            </phrase>
+            <phrase id="0">
+                <text>wiz_storyline_mercs_rjaviu_done_0</text>
+                <next>1</next>
+            </phrase>
+            <phrase id="2">
+                <text>wiz_storyline_mercs_rjaviu_done_2</text>
+                <next>3</next>
+            </phrase>
+            <phrase id="4">
+                <text>wiz_storyline_mercs_rjaviu_done_4</text>
+                <next>5</next>
+            </phrase>
+            <phrase id="6">
+                <text>wiz_storyline_mercs_rjaviu_done_6</text>
+                <action>dialogs_wiz.wiz_reward_uninvited_guests</action>
+            </phrase>
+        </phrase_list>
+    </dialog>
+    <dialog id="wiz_rjaviu_about_yourself">
+        <phrase_list>
+            <phrase id="0">
+                <text>wiz_rjaviu_about_yourself_0</text>
+                <next>1</next>
+            </phrase>
+            <phrase id="1">
+                <text>wiz_rjaviu_about_yourself_1</text>
+                <give_info>st_recrd_rjaviy_story</give_info>
+            </phrase>
+        </phrase_list>
+    </dialog>
+    <dialog id="wiz_katacombs_foma_starik_die_dialog">
+        <has_info>katacombs_foma_message_send</has_info>
+        <dont_has_info>katacombs_stariy_die_gst</dont_has_info>
+        <phrase_list>
+            <phrase id="2">
+                <text>wiz_katacombs_foma_starik_die_dialog_2</text>
+                <next>3</next>
+            </phrase>
+            <phrase id="3">
+                <text>wiz_katacombs_foma_starik_die_dialog_3</text>
+                <next>4</next>
+            </phrase>
+            <phrase id="4">
+                <text>wiz_katacombs_foma_starik_die_dialog_4</text>
+                <action>dialogs.break_dialog</action>
+                <give_info>katacombs_stariy_die_gst</give_info>
+            </phrase>
+            <phrase id="0">
+                <text>wiz_katacombs_foma_starik_die_dialog_0</text>
+                <next>1</next>
+            </phrase>
+            <phrase id="1">
+                <text>wiz_katacombs_foma_starik_die_dialog_1</text>
+                <next>2</next>
+            </phrase>
+        </phrase_list>
+    </dialog>
+    <dialog id="wiz_gonec_pravosudiya_rjaviu_start">
+        <has_info>wiz_actor_has_all_yorself_items</has_info>
+        <dont_has_info>gonec_pravosudiya_started</dont_has_info>
+        <phrase_list>
+            <phrase id="8">
+                <text>wiz_gonec_pravosudiya_rjaviu_start_8</text>
+                <next>9</next>
+            </phrase>
+            <phrase id="10">
+                <text>wiz_gonec_pravosudiya_rjaviu_start_10</text>
+                <next>11</next>
+            </phrase>
+            <phrase id="14">
+                <text>wiz_gonec_pravosudiya_rjaviu_start_14</text>
+                <next>15</next>
+            </phrase>
+            <phrase id="16">
+                <text>wiz_gonec_pravosudiya_rjaviu_start_16</text>
+                <next>17</next>
+            </phrase>
+            <phrase id="18">
+                <text>wiz_gonec_pravosudiya_rjaviu_start_18</text>
+                <action>dialogs.break_dialog</action>
+                <give_info>gonec_pravosudiya_started</give_info>
+            </phrase>
+            <phrase id="2">
+                <text>wiz_gonec_pravosudiya_rjaviu_start_2</text>
+                <next>3</next>
+            </phrase>
+            <phrase id="0">
+                <text>wiz_gonec_pravosudiya_rjaviu_start_0</text>
+                <next>1</next>
+            </phrase>
+            <phrase id="1">
+                <text>wiz_gonec_pravosudiya_rjaviu_start_1</text>
+                <next>2</next>
+            </phrase>
+            <phrase id="3">
+                <text>wiz_gonec_pravosudiya_rjaviu_start_3</text>
+                <next>4</next>
+            </phrase>
+            <phrase id="4">
+                <text>wiz_gonec_pravosudiya_rjaviu_start_4</text>
+                <next>5</next>
+            </phrase>
+            <phrase id="5">
+                <text>wiz_gonec_pravosudiya_rjaviu_start_5</text>
+                <next>6</next>
+            </phrase>
+            <phrase id="6">
+                <text>wiz_gonec_pravosudiya_rjaviu_start_6</text>
+                <next>7</next>
+            </phrase>
+            <phrase id="7">
+                <text>wiz_gonec_pravosudiya_rjaviu_start_7</text>
+                <next>8</next>
+            </phrase>
+            <phrase id="9">
+                <text>wiz_gonec_pravosudiya_rjaviu_start_9</text>
+                <next>10</next>
+            </phrase>
+            <phrase id="11">
+                <text>wiz_gonec_pravosudiya_rjaviu_start_11</text>
+                <next>12</next>
+            </phrase>
+            <phrase id="12">
+                <text>wiz_gonec_pravosudiya_rjaviu_start_12</text>
+                <next>13</next>
+            </phrase>
+            <phrase id="13">
+                <text>wiz_gonec_pravosudiya_rjaviu_start_13</text>
+                <next>14</next>
+            </phrase>
+            <phrase id="15">
+                <text>wiz_gonec_pravosudiya_rjaviu_start_15</text>
+                <next>16</next>
+            </phrase>
+            <phrase id="17">
+                <text>wiz_gonec_pravosudiya_rjaviu_start_17</text>
+                <next>18</next>
+            </phrase>
+        </phrase_list>
+    </dialog>
+    <dialog id="wiz_gonec_pravosudiya_rjaviu_second">
+        <has_info>gonec_pravosudiya_timer_out</has_info>
+        <dont_has_info>gonec_pravosudiya_going_to_kill</dont_has_info>
+        <phrase_list>
+            <phrase id="1">
+                <text>wiz_gonec_pravosudiya_rjaviu_second_1</text>
+                <next>2</next>
+            </phrase>
+            <phrase id="3">
+                <text>wiz_gonec_pravosudiya_rjaviu_second_3</text>
+                <action>dialogs.break_dialog</action>
+                <give_info>gonec_pravosudiya_going_to_kill</give_info>
+            </phrase>
+            <phrase id="0">
+                <text>wiz_gonec_pravosudiya_rjaviu_second_0</text>
+                <next>1</next>
+            </phrase>
+            <phrase id="2">
+                <text>wiz_gonec_pravosudiya_rjaviu_second_2</text>
+                <next>3</next>
+            </phrase>
+        </phrase_list>
+    </dialog>
+    <dialog id="wiz_free_neutral_rjaviu_start">
+        <has_info>wiz_kosta_die</has_info>
+        <dont_has_info>wiz_free_neutral_rjaviu_start</dont_has_info>
+        <phrase_list>
+            <phrase id="3">
+                <text>wiz_free_neutral_rjaviu_start_3</text>
+                <action>dialogs.break_dialog</action>
+                <give_info>wiz_free_neutral_rjaviu_start</give_info>
+            </phrase>
+            <phrase id="1">
+                <text>wiz_free_neutral_rjaviu_start_1</text>
+                <next>2</next>
+            </phrase>
+            <phrase id="0">
+                <text>wiz_free_neutral_rjaviu_start_0</text>
+                <next>1</next>
+            </phrase>
+            <phrase id="2">
+                <text>wiz_free_neutral_rjaviu_start_2</text>
+                <next>3</next>
+            </phrase>
+        </phrase_list>
+    </dialog>
+    <dialog id="wiz_free_neutral_rjaviu_going_to_village">
+        <has_info>free_neutral_now_night_dialog_start</has_info>
+        <dont_has_info>free_neutral_now_night</dont_has_info>
+        <phrase_list>
+            <phrase id="22">
+                <text>wiz_free_neutral_rjaviu_going_to_village_22</text>
+                <action>dialogs.break_dialog</action>
+            </phrase>
+            <phrase id="2">
+                <text>wiz_free_neutral_rjaviu_going_to_village_2</text>
+                <action>dialogs.break_dialog</action>
+                <give_info>free_neutral_now_night</give_info>
+            </phrase>
+            <phrase id="0">
+                <text>wiz_free_neutral_rjaviu_going_to_village_0</text>
+                <next>1</next>
+            </phrase>
+            <phrase id="1">
+                <text>wiz_free_neutral_rjaviu_going_to_village_1</text>
+                <next>2</next>
+                <next>22</next>
+            </phrase>
+        </phrase_list>
+    </dialog>
+    <dialog id="wiz_free_neutral_rjaviu_complete">
+        <has_info>free_neutral_jekan_free</has_info>
+        <dont_has_info>free_neutral_complete</dont_has_info>
+        <phrase_list>
+            <phrase id="3">
+                <text>wiz_free_neutral_rjaviu_complete_3</text>
+                <action>dialogs.break_dialog</action>
+                <give_info>free_neutral_complete</give_info>
+            </phrase>
+            <phrase id="1">
+                <text>wiz_free_neutral_rjaviu_complete_1</text>
+                <next>2</next>
+            </phrase>
+            <phrase id="0">
+                <text>wiz_free_neutral_rjaviu_complete_0</text>
+                <next>1</next>
+            </phrase>
+            <phrase id="2">
+                <text>wiz_free_neutral_rjaviu_complete_2</text>
+                <next>3</next>
+            </phrase>
+        </phrase_list>
+    </dialog>
+    <dialog id="wiz_gift_rjaviu_to_actor">
+        <has_info>free_neutral_complete</has_info>
+        <dont_has_info>gift_from_rjaviu_out_to_actor</dont_has_info>
+        <phrase_list>
+            <phrase id="2">
+                <text>wiz_gift_rjaviu_to_actor_2</text>
+                <give_info>gift_from_rjaviu_out_to_actor</give_info>
+            </phrase>
+            <phrase id="0">
+                <text>wiz_gift_rjaviu_to_actor_0</text>
+                <next>1</next>
+            </phrase>
+            <phrase id="1">
+                <text>wiz_gift_rjaviu_to_actor_1</text>
+                <action>dialogs_wiz.gift_to_actor_from_rjaviu</action>
+                <next>2</next>
+            </phrase>
+        </phrase_list>
+    </dialog>
+    <dialog id="wiz_ivanich_about_yourself">
+        <phrase_list>
+            <phrase id="0">
+                <text>wiz_ivanich_about_yourself_0</text>
+                <next>1</next>
+            </phrase>
+            <phrase id="1">
+                <text>wiz_ivanich_about_yourself_1</text>
+                <give_info>st_recrd_ivanich_story</give_info>
+            </phrase>
+        </phrase_list>
+    </dialog>
+    <dialog id="wiz_ivanich_merc_pda_unlocking_start">
+        <has_info>uninvited_guests_5_done</has_info>
+        <dont_has_info>wiz_ivanich_merc_pda_unlocking_start</dont_has_info>
+		<precondition>dialogs_wiz.check_merc_pda_to_tech</precondition>
+        <phrase_list>
+            <phrase id="2">
+                <text>wiz_ivanich_merc_pda_unlocking_start_2</text>
+                <next>3</next>
+            </phrase>
+            <phrase id="4">
+                <text>wiz_ivanich_merc_pda_unlocking_start_4</text>
+                <next>5</next>
+            </phrase>
+            <phrase id="6">
+                <text>wiz_ivanich_merc_pda_unlocking_start_6</text>
+                <precondition>dialogs_wiz.out_wiz_pda_merc_lock_money</precondition>
+                <action>dialogs_wiz.out_money_for_unlocking</action>
+                <action>dialogs_wiz.out_wiz_pda_merc_lock</action>
+                <give_info>wiz_ivanich_merc_pda_unlocking_start</give_info>
+                <next>7</next>
+            </phrase>
+            <phrase id="66">
+                <text>wiz_ivanich_merc_pda_unlocking_start_66</text>
+                <next>77</next>
+            </phrase>
+            <phrase id="0">
+                <text>wiz_ivanich_merc_pda_unlocking_start_0</text>
+                <next>1</next>
+            </phrase>
+            <phrase id="1">
+                <text>wiz_ivanich_merc_pda_unlocking_start_1</text>
+                <next>2</next>
+            </phrase>
+            <phrase id="3">
+                <text>wiz_ivanich_merc_pda_unlocking_start_3</text>
+                <next>4</next>
+            </phrase>
+            <phrase id="5">
+                <text>wiz_ivanich_merc_pda_unlocking_start_5</text>
+                <next>6</next>
+                <next>66</next>
+            </phrase>
+            <phrase id="7">
+                <text>wiz_ivanich_merc_pda_unlocking_start_7</text>
+            </phrase>
+            <phrase id="77">
+                <text>wiz_ivanich_merc_pda_unlocking_start_77</text>
+                <action>dialogs.break_dialog</action>
+            </phrase>
+        </phrase_list>
+    </dialog>
+    <dialog id="wiz_ivanich_merc_pda_unlocking_done">
+        <has_info>wiz_ivanich_merc_pda_unlocking_wait_done</has_info>
+        <dont_has_info>wiz_ivanich_merc_pda_unlocking_done</dont_has_info>
+        <phrase_list>
+            <phrase id="0">
+                <text>wiz_ivanich_merc_pda_unlocking_done_0</text>
+                <give_info>wiz_ivanich_merc_pda_unlocking_done</give_info>
+                <next>1</next>
+            </phrase>
+            <phrase id="1">
+                <text>wiz_ivanich_merc_pda_unlocking_done_1</text>
+                <action>dialogs_wiz.give_wiz_pda_merc</action>
+            </phrase>
+        </phrase_list>
+    </dialog>
+</game_dialogs>

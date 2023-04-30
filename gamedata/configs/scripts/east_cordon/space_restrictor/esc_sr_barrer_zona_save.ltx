@@ -1,0 +1,11 @@
+[logic]
+active = sr_idle
+
+[sr_idle]
+on_info = {+spectrum_project_start -esc_sr_barrer_zona_save +esc_colonel_kolyazin_prisoner_actor_dialog_complite} sr_idle@save %+esc_sr_barrer_zona_save =spawn_object(esc_army_chernenco:esc_army_chernenco_walk_1)%
+
+[sr_idle@save]
+on_timer = 10000 | {-save_esc_zona_complite} %+save_esc_zona_complite =scenario_autosave(st_save_esc_zona_complite)%
+on_info = {+save_esc_zona_complite} sr_idle@nil
+
+[sr_idle@nil]

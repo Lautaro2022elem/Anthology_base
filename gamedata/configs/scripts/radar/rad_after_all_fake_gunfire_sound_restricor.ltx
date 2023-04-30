@@ -1,0 +1,11 @@
+[logic]
+active = sr_sound
+
+[sr_idle]
+on_actor_inside = {+bar_deactivate_radar_done} sr_sound
+
+[sr_sound]
+snd = ambient\gunfire_1
+position = rad_freedom_vs_duty_way_look
+slide_sound_once = true
+on_timer = 7000| nil

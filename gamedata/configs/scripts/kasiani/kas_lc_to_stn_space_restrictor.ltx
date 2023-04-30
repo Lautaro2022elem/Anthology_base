@@ -1,0 +1,9 @@
+[logic]
+active = sr_idle
+
+[sr_idle]
+on_actor_inside = sr_idle@teleport %=disable_ui =run_postprocess(black:3543)%
+
+[sr_idle@teleport]
+on_info = %=run_postprocess(controller_hit)%
+on_game_timer = 0 | sr_idle %=teleport_actor(kas_lc_to_stn_walk:kas_lc_to_stn_look) =run_postprocess(stc_fade_out)%

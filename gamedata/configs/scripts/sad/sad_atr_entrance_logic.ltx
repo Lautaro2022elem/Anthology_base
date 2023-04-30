@@ -1,0 +1,39 @@
+[logic]
+active = sr_idle@init
+
+[sr_idle@init]
+on_info = sr_idle@wait %-sad_atr_door_call +sad_atr_enter_door_locked -sad_atr_open_ze_dver -sad_told_about_upgr =anim_obj_backward(sad_roll_door)%
+
+[sr_idle@wait] 
+on_info = {+sad_atr_atror_enemy} sr_idle@nil, {+sad_atr_door_call} sr_idle@weapon_check
+
+[sr_idle@weapon_check]
+on_info = {+sad_atr_atror_enemy} sr_idle@nil %=anim_obj_backward(sad_roll_door)%, {=actor_has_weapon} sr_idle@hide_weapon %=play_sound(jup_b41_bunker_megaphone)%, sr_idle@pred
+
+[sr_idle@hide_weapon]
+on_timer = 3000 | sr_idle@init
+
+[sr_idle@pred]
+on_timer = 1000 | sr_idle@pred_1 %=play_sound(sad_zahodi)%
+
+[sr_idle@pred_1]
+on_timer = 700 | sr_idle@pred_2 %=anim_obj_forward(sad_roll_door)%
+
+[sr_idle@pred_2]
+on_timer = 6000 | sr_idle@pred_3 %=anim_obj_backward(sad_roll_door)%
+on_info = {=sad_dist_to_path_le(sad_atr_ohrana_look:5:0)} sr_idle@pred_3 %=anim_obj_backward(sad_roll_door)%
+
+[sr_idle@pred_3]
+on_timer = 3000 | {=actor_in_zone(sad_atr_entrance_logic)} sr_idle@lab_10 %-sad_atr_enter_door_locked +sad_atr_guard_prohodi%, sr_idle@init
+
+[sr_idle@lab_10]
+on_info = {+sad_atr_open_ze_dver} sr_idle@exit_1 %=anim_obj_forward(sad_roll_door) +sad_atr_enter_door_locked +sad_atr_guard_say_bye%
+
+[sr_idle@exit_1]
+on_timer = 10000 | sr_idle@exit_2 %=anim_obj_backward(sad_roll_door)%
+on_info = {!actor_in_zone(sad_atr_entrance_logic)} sr_idle@exit_2 %=anim_obj_backward(sad_roll_door)%
+
+[sr_idle@exit_2]
+on_timer = 4000 | {=actor_in_zone(sad_atr_entrance_logic)} sr_idle@lab_10 %-sad_atr_enter_door_locked -sad_atr_open_ze_dver +sad_atr_guard_say_again%, sr_idle@init
+
+[sr_idle@nil]

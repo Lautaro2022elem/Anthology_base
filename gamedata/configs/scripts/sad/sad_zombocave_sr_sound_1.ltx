@@ -1,0 +1,8 @@
+[logic]
+active = sr_idle
+
+[sr_idle]
+on_info = {+sad_zombocave_sound_11} sr_idle@wait
+
+[sr_idle@wait]
+on_timer = 250 | sr_idle %=play_sound(jup_b16_oasis_noise) -sad_zombocave_sound_11%

@@ -1,0 +1,59 @@
+[logic]
+active = remark
+
+[remark]
+anim = wait_na
+target = story | actor
+use_camp = false
+combat_ignore_cond = true
+combat_ignore_keep_when_attacked = true
+invulnerable = true
+gather_items_enabled = false
+help_wounded_enabled = false
+corpse_detection_enabled = false
+meet = no_meet
+on_info = {-esc_shoroh_kick_gg =dist_to_actor_le(2)} %=ShorohKickActorAction +esc_shoroh_kick_gg%
+on_info2 = {+after_shoroh_kick_actor_info} remark@2 %=teleport_npc(esc_quest_away_from_the_bandits_actor_look:esc_quest_away_from_the_bandits_actor_walk)%
+
+
+
+[remark@2]
+anim = wait
+target = story | actor
+use_camp = false
+combat_ignore_cond = true
+combat_ignore_keep_when_attacked = true
+invulnerable = true
+gather_items_enabled = false
+help_wounded_enabled = false
+corpse_detection_enabled = false
+meet = meet@dialog
+on_info = {+esc_shoroh_quest_away_from_the_bandits_dialog_and} walker
+
+[walker]
+path_walk = esc_bandit_shoroh_npc_1_walk
+path_look = esc_bandit_shoroh_npc_1_look
+combat_ignore_cond = true
+combat_ignore_keep_when_attacked = true
+invulnerable = true
+gather_items_enabled = false
+help_wounded_enabled = false
+corpse_detection_enabled = false
+meet = meet
+
+[meet]
+use				= {=actor_enemy} false, true
+allow_break			= false
+
+[meet@dialog]
+abuse           = false
+close_anim 		= nil
+far_anim 		= nil
+far_victim 		= nil
+close_distance  = 0
+far_distance 	= 0
+close_victim = actor
+use = {!actor_enemy =dist_to_actor_le(2)} self, true
+allow_break = false
+meet_dialog = esc_shoroh_quest_away_from_the_bandits_dialog
+trade_enable = false

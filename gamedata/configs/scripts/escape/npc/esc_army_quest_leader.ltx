@@ -1,0 +1,30 @@
+[logic@esc_squad_army_leader]
+active = walker@leader
+suitable = {=check_npc_name(esc_army_leader)} true, false
+prior = 300
+
+[walker@leader]
+path_walk = esc_army_leader_walk
+path_look = esc_army_leader_look
+gather_items_enabled = false
+corpse_detection_enabled = false
+combat_ignore_keep_when_attacked = true
+combat_ignore_cond = true
+invulnerable = true
+meet = meet@meet_start
+use_camp = false
+
+[meet@quest]
+abuse           = false
+close_anim 		= nil
+far_anim 		= nil
+far_victim 		= nil
+close_distance  = 0
+far_distance 	= 0
+close_victim = actor
+allow_break = false
+trade_enable = false
+
+[meet@meet_start]:meet@quest
+use = {+esc_quest_line_in_escape_go_to_end} false, true
+meet_dialog = esc_actor_meet_from_halezky

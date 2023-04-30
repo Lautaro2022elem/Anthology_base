@@ -1,0 +1,183 @@
+<?xml version='1.0' encoding="windows-1251"?>
+<xml>
+
+<!---------------------------SVOBODA MASTER----------------------->
+
+<specific_character id="rad_svoboda_master_default_1" team_default = "1">
+    <name>GENERATE_NAME_stalker</name>
+    <icon>ui_inGame2_Freedom_4</icon>
+    <map_icon x="1" y="0"></map_icon>
+    <bio>Опытный сталкер. Детальная информация отсутствует.</bio>
+    <class>rad_svoboda_master</class>
+    <community>freedom</community> <terrain_sect>stalker_terrain</terrain_sect>
+    <snd_config>characters_voice\human\freedom_3\</snd_config>
+    <rank>23366</rank>
+    <reputation>-1485</reputation>
+    <money min="5000" max="10000" infinitive="0"/>
+    <visual>actors\stalker_freedom\stalker_freedom_4</visual>
+    <supplies>
+#include "gameplay\loadouts\freedom_base.ltx"
+#include "gameplay\loadouts\freedom_tier_4.ltx"
+[spawn] \n
+#include "gameplay\supplies\character_items_2.xml"
+#include "gameplay\supplies\character_food_2.xml"
+#include "gameplay\supplies\character_medical_sci.xml"
+#include "gameplay\supplies\character_drugs_3.xml"
+    </supplies>
+#include "gameplay\character_criticals.xml"
+#include "gameplay\character_dialogs.xml"
+    </specific_character>
+
+<specific_character id="rad_svoboda_master_default_2" team_default = "1">
+    <name>GENERATE_NAME_stalker</name>
+    <icon>ui_inGame2_nosorog</icon>
+    <map_icon x="1" y="0"></map_icon>
+    <bio>Опытный сталкер. Детальная информация отсутствует.</bio>
+    <class>rad_svoboda_master</class>
+    <community>freedom</community> <terrain_sect>stalker_terrain</terrain_sect>
+    <snd_config>characters_voice\human\freedom_3\</snd_config>
+    <rank>24565</rank>
+    <reputation>1488</reputation>
+    <money min="5000" max="10000" infinitive="0"/>
+    <visual>actors\stalker_freedom\stalker_freedom4nosorog</visual>
+    <supplies>
+#include "gameplay\loadouts\freedom_base.ltx"
+#include "gameplay\loadouts\freedom_tier_4.ltx"
+[spawn] \n
+#include "gameplay\supplies\character_items_2.xml"
+#include "gameplay\supplies\character_food_2.xml"
+#include "gameplay\supplies\character_medical_sci.xml"
+#include "gameplay\supplies\character_drugs_3.xml"
+    </supplies>
+#include "gameplay\character_criticals.xml"
+#include "gameplay\character_dialogs.xml"
+    </specific_character>
+
+<specific_character id="rad_svoboda_master_default_3" team_default = "1">
+    <name>GENERATE_NAME_stalker</name>
+    <icon>ui_inGame2_stalker_freedom_exoseva</icon>
+    <map_icon x="1" y="0"></map_icon>
+    <bio>Опытный сталкер. Детальная информация отсутствует.</bio>
+    <class>rad_svoboda_master</class>
+    <community>freedom</community> <terrain_sect>stalker_terrain</terrain_sect>
+    <snd_config>characters_voice\human\freedom_3\</snd_config>
+    <rank>23565</rank>
+    <reputation>1488</reputation>
+    <money min="5000" max="10000" infinitive="0"/>
+    <visual>actors\stalker_freedom\stalker_freedom_exoseva</visual>
+    <supplies>
+#include "gameplay\loadouts\freedom_base.ltx"
+#include "gameplay\loadouts\freedom_tier_4.ltx"
+[spawn] \n
+#include "gameplay\supplies\character_items_2.xml"
+#include "gameplay\supplies\character_food_2.xml"
+#include "gameplay\supplies\character_medical_sci.xml"
+#include "gameplay\supplies\character_drugs_3.xml"
+    </supplies>
+#include "gameplay\character_criticals.xml"
+#include "gameplay\character_dialogs.xml"
+    </specific_character>
+
+<!---------------------------DOLG MASTER---------------------->
+
+<specific_character id="rad_dolg_master_default_0" team_default = "1">
+    <name>GENERATE_NAME_captain</name>
+    <icon>ui_inGame2_Dolg_4</icon>
+    <map_icon x="1" y="0"></map_icon>
+    <bio>Опытный сталкер. Детальная информация отсутствует.</bio>
+    <class>rad_dolg_master</class>
+    <community>dolg</community> <terrain_sect>stalker_terrain</terrain_sect>
+    <snd_config>characters_voice\human\dolg_3\</snd_config>
+    <rank>27136</rank>
+    <reputation>-1520</reputation>
+    <money min="5000" max="10000" infinitive="0"/>
+    <visual>actors\stalker_dolg\stalker_dolg_4</visual>
+    <supplies>
+#include "gameplay\loadouts\dolg_base.ltx"
+#include "gameplay\loadouts\dolg_tier_4.ltx"
+[spawn] \n
+#include "gameplay\supplies\character_items_2.xml"
+#include "gameplay\supplies\character_food_army.xml"
+#include "gameplay\supplies\character_medical_army.xml"
+#include "gameplay\supplies\character_drugs_3.xml"
+    </supplies>
+#include "gameplay\character_criticals.xml"
+#include "gameplay\character_dialogs.xml"
+    </specific_character>
+
+<specific_character id="rad_dolg_master_default_1" team_default = "1">
+    <name>GENERATE_NAME_captain</name>
+    <icon>ui_inGame2_Dolg_4</icon>
+    <map_icon x="1" y="0"></map_icon>
+    <bio>Опытный сталкер. Детальная информация отсутствует.</bio>
+    <class>rad_dolg_master</class>
+    <community>dolg</community> <terrain_sect>stalker_terrain</terrain_sect>
+    <snd_config>characters_voice\human\dolg_3\</snd_config>
+    <rank>20474</rank>
+    <reputation>-805</reputation>
+    <money min="5000" max="10000" infinitive="0"/>
+    <visual>actors\stalker_dolg\stalker_dolg4a</visual>
+    <supplies>
+#include "gameplay\loadouts\dolg_base.ltx"
+#include "gameplay\loadouts\dolg_tier_4.ltx"
+[spawn] \n
+#include "gameplay\supplies\character_items_2.xml"
+#include "gameplay\supplies\character_food_army.xml"
+#include "gameplay\supplies\character_medical_army.xml"
+#include "gameplay\supplies\character_drugs_3.xml"
+    </supplies>
+#include "gameplay\character_criticals.xml"
+#include "gameplay\character_dialogs.xml"
+    </specific_character>
+
+<specific_character id="rad_dolg_master_default_2" team_default = "1">
+    <name>GENERATE_NAME_captain</name>
+    <icon>ui_inGame2_nosorog</icon>
+    <map_icon x="1" y="0"></map_icon>
+    <bio>Опытный сталкер. Детальная информация отсутствует.</bio>
+    <class>rad_dolg_master</class>
+    <community>dolg</community> <terrain_sect>stalker_terrain</terrain_sect>
+    <snd_config>characters_voice\human\dolg_3\</snd_config>
+    <rank>20850</rank>
+    <reputation>-1249</reputation>
+    <money min="2500" max="5000" infinitive="0"/>
+    <visual>actors\stalker_dolg\stalker_dolg4nosorog</visual>
+    <supplies>
+#include "gameplay\loadouts\dolg_base.ltx"
+#include "gameplay\loadouts\dolg_tier_4.ltx"
+[spawn] \n
+#include "gameplay\supplies\character_items_2.xml"
+#include "gameplay\supplies\character_food_army.xml"
+#include "gameplay\supplies\character_medical_army.xml"
+#include "gameplay\supplies\character_drugs_3.xml"
+    </supplies>
+#include "gameplay\character_criticals.xml"
+#include "gameplay\character_dialogs.xml"
+    </specific_character>
+
+<specific_character id="rad_dolg_master_default_3" team_default = "1">
+    <name>GENERATE_NAME_captain</name>
+    <icon>ui_inGame2_stalker_dolg_exoseva</icon>
+    <map_icon x="1" y="0"></map_icon>
+    <bio>Опытный сталкер. Детальная информация отсутствует.</bio>
+    <class>rad_dolg_master</class>
+    <community>dolg</community> <terrain_sect>stalker_terrain</terrain_sect>
+    <snd_config>characters_voice\human\dolg_3\</snd_config>
+    <rank>20850</rank>
+    <reputation>-1249</reputation>
+    <money min="2500" max="5000" infinitive="0"/>
+    <visual>actors\stalker_dolg\stalker_dolg_exoseva</visual>
+    <supplies>
+#include "gameplay\loadouts\dolg_base.ltx"
+#include "gameplay\loadouts\dolg_tier_4.ltx"
+[spawn] \n
+#include "gameplay\supplies\character_items_2.xml"
+#include "gameplay\supplies\character_food_army.xml"
+#include "gameplay\supplies\character_medical_army.xml"
+#include "gameplay\supplies\character_drugs_3.xml"
+    </supplies>
+#include "gameplay\character_criticals.xml"
+#include "gameplay\character_dialogs.xml"
+    </specific_character>
+
+</xml>

@@ -1,0 +1,14 @@
+[logic]
+active = sr_idle@wait
+
+[sr_idle@wait]
+on_info = {+spectrum_project_start +labx5_b1_borland_talking_4} sr_particle@idle_1 %=play_s3d_sound(weapons\rgd5_explode)%
+
+[sr_particle@idle_1]
+name = explosions\explosion_dym
+path = pod_b2_particle_play_point_2
+mode = 2
+looped = true
+on_info = {+labx5_a2_monolith_default_2_death} sr_idle@nil
+
+[sr_idle@nil]

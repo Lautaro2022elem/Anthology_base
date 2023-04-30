@@ -1,0 +1,24 @@
+;bar_bad_end_game_restrictor (дополнительная логика)
+
+[logic]
+active = sr_idle@end_game_bad_done
+
+[sr_idle@end_game_bad_done]
+on_info = {+bar_actor_not_scary_more} sr_idle@spawn_stronglav_5
+
+[sr_idle@spawn_stronglav_5]
+on_timer = 100 | sr_idle@actor_repair_torch %-bar_end_delete_stronglav =spawn_object(bar_stronglav_end_game:bar_stronglav_end_spawn_5)%
+
+[sr_idle@actor_repair_torch]
+on_timer = 2100 | sr_idle@run_postprocess_1 %=enable_actor_torch%
+
+[sr_idle@run_postprocess_1]
+on_timer = 1500 | sr_idle@actor_shoot_in_head %=run_postprocess(black:2525:true)%
+
+[sr_idle@actor_shoot_in_head]
+on_timer = 500 | sr_idle@start_outro %=actor_shoot_in_head%
+
+[sr_idle@start_outro]
+on_timer = 4500 | sr_idle@nil %=start_outro%
+
+[sr_idle@nil]

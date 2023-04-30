@@ -1,0 +1,35 @@
+[logic]
+active = sr_idle@mrakobes_hit_actor
+
+[sr_idle@mrakobes_hit_actor]
+on_info = {+pb_actor_meet_dialog_mrakobes -pb_actor_hide_knife} %=esc_activate_weapon(wpn_knife) +pb_actor_hide_knife +pro_start_scene_end_info%
+on_info2 = {+pb_actor_hit_face_mrakobes_info} sr_idle@mrakobes_hit_actor_1
+
+[sr_idle@mrakobes_hit_actor_1]
+on_timer = 180 | sr_idle@mrakobes_hit_actor_2 %=NpcKickActor%
+
+[sr_idle@mrakobes_hit_actor_2]
+on_timer = 1400 | sr_idle@cut_scene_start_0 %=run_postprocess(black:2525:true) =set_game_time(20:20) =RavenMemmoryStart =pro_spawn_actor_intro =pro_spawn_sumka_intro =pro_spawn_food_intro =pro_spawn_lojka_intro =pro_spawn_parts_intro =pro_spawn_photo_intro%
+
+[sr_idle@cut_scene_start_0]
+on_timer = 3000 | sr_idle@cut_scene_start_1 %=pro_out_inv_away_from_actor =intro_chapter_2%
+
+[sr_idle@cut_scene_start_1]
+on_timer = 400 | sr_cutscene@cut_scene_start_2 %+pro_intro_chapter_2_stop_postprocess%
+
+[sr_cutscene@cut_scene_start_2]
+point = actor_start_scene_puzir_walk
+look = actor_start_scene_puzir_look
+cam_effector = scenario_cam\prostranstvenniy_puzir\pro_intro_camera
+enable_ui_on_end = false
+global_cameffect = true
+on_info = {+pro_intro_chapter_2_stop_postprocess -pro_intro_2_show_start} %=stop_postprocess(2525) =show_intro_two(intro_2) +pro_intro_2_show_start%
+on_timer = 25000 | sr_idle@mrakobes_hit_actor_3 %=run_postprocess(black:2525:true)%
+
+[sr_idle@mrakobes_hit_actor_3]
+on_timer = 4000 | sr_idle@mrakobes_hit_actor_4 %+pb_clean_quest_item_done%
+
+[sr_idle@mrakobes_hit_actor_4]
+on_timer = 1000 | sr_idle@mrakobes_hit_actor_nil %=teleport_actor(actor_teleport_to_escape_walk:actor_teleport_to_escape_look)%
+
+[sr_idle@mrakobes_hit_actor_nil]

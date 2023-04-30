@@ -1,0 +1,65 @@
+;=========meet_quest===============
+[meet@quest]
+close_anim 		= nil
+close_victim 	= nil
+far_anim 		= nil
+far_victim 		= nil
+close_distance 	= 0
+far_distance 	= 0
+use = {=actor_enemy} false, {=dist_to_actor_le(3)} true, false
+snd_on_use = {!dist_to_actor_le(3)} nil
+meet_on_talking = false
+;==================================
+
+[logic]
+suitable = {=check_npc_name(labx7_lutiy_prisoner)} true
+prior = 200
+level_spot = quest_npc
+active = remark@psy_back
+on_death = death
+
+[remark@psy_back]
+anim = psy_pain
+target = path | labx7_lutiy_prisoner_look, 0
+on_info = {=dist_to_actor_le(35)} %+labx7_lutiy_prisoner_come_here%
+on_info2 = {+labx7_actor_meet_from_lutiy_prisoner} remark@suiside
+meet = meet@meet_start
+combat_ignore_cond = true 
+combat_ignore_keep_when_attacked = true 
+gather_items_enabled = false
+corpse_detection_enabled = false
+invulnerable = true
+
+[remark]
+combat_ignore_cond = true
+combat_ignore_keep_when_attacked = true
+gather_items_enabled = false
+help_wounded_enabled = false
+corpse_detection_enabled = false
+use_camp = false
+invulnerable = true
+
+[remark@suiside]:remark
+anim = zat_b22_medic_suicide
+on_signal = anim_end | remark@suiside_shot
+meet = no_meet
+invulnerable = true
+help_wounded_enabled = false
+corpse_detection_enabled = false
+
+[remark@suiside_shot]:remark
+anim = zat_b22_medic_suicide
+on_game_timer = 5 | nil %=kill_npc%
+meet = no_meet
+invulnerable = true
+help_wounded_enabled = false
+corpse_detection_enabled = false
+
+[meet@meet_start]:meet@quest
+close_victim = actor
+allow_break = false
+meet_dialog = labx7_lutiy_prisoner_dialog
+trade_enable = false
+
+[death]
+on_info = %+labx7_lutiy_dead_end_game%

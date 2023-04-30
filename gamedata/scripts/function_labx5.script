@@ -1,0 +1,58 @@
+--[[ ------------------------------------------------------------------------------------------------
+ File       : function_labx5.script
+ Description: Скрипт-обработчик функций для Лабы
+ Copyright  : 2011 © Spectrum project
+ Author		: Viнt@rь
+ Last edit  : 09.11.2013 (Geonezis)
+--]] ------------------------------------------------------------------------------------------------
+--/											Variables
+--]] ------------------------------------------------------------------------------------------------
+local iTime = 0
+--]] ------------------------------------------------------------------------------------------------
+--/											Initialize
+--]] ------------------------------------------------------------------------------------------------
+function Init()
+	event("ActorSpawned"):register(OnActorSpawned)
+	event("ActorUpdate"):register(OnActorUpdate)
+end
+--]] ------------------------------------------------------------------------------------------------
+--/											Callback`s
+--]] ------------------------------------------------------------------------------------------------
+function OnActorSpawned()
+	if level.name() == "x5" then
+		if not has_alife_info("labx5_mod_npcs_spawner") then
+			SItem("labx5_a2_borland", vector():set(-8.0917568206787,-0.0090614557266235,0.14233456552029), 576, 9657)	
+			give_info("labx5_mod_npcs_spawner")
+		end     
+	end
+end
+
+function OnActorUpdate()
+	if iTime <= time_global() then
+    	iTime = time_global()+5000
+    	
+    	UpdateTasks()
+	end
+end
+--]] ------------------------------------------------------------------------------------------------
+--/											Functions
+--]] ------------------------------------------------------------------------------------------------
+function UpdateTasks()
+	local sLvlName = level.name()
+	
+	if sLvlName == "x5" then
+		--/Квест: Первый сюжетный
+		if has_alife_info("labx5_b1_borland_talking_4") and xr_effects.has_several_info("labx5_a2_monolith_default_","_death",1,7) and (not has_alife_info("labx5_a2_monolith_default_all_death")) then           
+			SendTip("labx5_borland_message_text_3", "Борланд:", nil, 14, "borland")
+			give_info("labx5_a2_monolith_default_all_death")
+		end       
+	end
+	
+	if sLvlName == "e_g" then
+		--/Квест: Выход из лабы
+		if has_alife_info("labx5_a2_monolith_default_all_death") and (not has_alife_info("sp_a2_hero_to_garbage_come")) then 
+			-- task_manager.get_task_manager():give_task("geonezis_labx5_main_quest_2_1")
+			give_info("sp_a2_hero_to_garbage_come")
+		end	
+	end	   
+end

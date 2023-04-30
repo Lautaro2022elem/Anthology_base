@@ -1,0 +1,18 @@
+--[[ ----------------------------------------------------------------------------------------------- 
+ File       : dialogs_garbage.script
+ Description: Диалоговые функции для Свалки
+ Copyright  : 2013 © Spectrum Project Game Worold
+ Author		: Geonezis
+ Last edit  : 01.12.2013 (Geonezis)
+
+--]] -----------------------------------------------------------------------------------------------
+--/											Квестовые функции
+--]] -----------------------------------------------------------------------------------------------
+
+
+function gar_main_quest_give_items(first_speaker, second_speaker)
+	dialogs.relocate_item_section_from_actor(first_speaker, second_speaker, "gar_main_quest_lekarstvo_2")	
+end
+
+
+
