@@ -8,7 +8,7 @@
 		<text>GPS marker</text>
 	</string>
 	<string id="enc_amk_metka">
-		<text>GPS markers are used in the Zone for marking stashes. If the marker is placed inside a stash, the stash will show up on your map along with a list of the stash’s contents.</text>
+		<text>GPS markers are used in the Zone for marking stashes. If the marker is placed inside a stash, the stash will show up on your map along with a list of the stash's contents.</text>
 	</string>
 	
 	
@@ -28,19 +28,19 @@
 		<text>Note from Seriy</text>
 	</string>
 	<string id="st_pb_quest_document_1_descr">
-		<text>A stalker’s note written on a sheet of paper torn out of a notebook. To read, click “Use.”</text>
+		<text>A stalker's note written on a sheet of paper torn out of a notebook. To read, click “Use.”</text>
 	</string>
 	<string id="st_pb_quest_mail_shpala">
 		<text>Note from Crosstie</text>
 	</string>
 	<string id="st_pb_quest_mail_shpala_descr">
-		<text>A stalker’s note written on a sheet of paper torn out of a notebook. To read, click “Use.”</text>
+		<text>A stalker's note written on a sheet of paper torn out of a notebook. To read, click “Use.”</text>
 	</string>
 	<string id="st_pb_padalshik_pda_title">
-		<text>Scavenger’s PDA</text>
+		<text>Scavenger's PDA</text>
 	</string>
 	<string id="st_pb_padalshik_pda_title">
-		<text>Scavenger’s PDA</text>
+		<text>Scavenger's PDA</text>
 	</string>
 	<string id="st_pb_padalshik_pda_descr">
 		<text>This PDA used to belong to a stalker nicknamed Scavenger. It is not locked and can be accessed. To open, click “Use.”</text>
@@ -64,7 +64,7 @@
 		<text>Sometimes, writing things down can help you find solutions…</text>
 	</string>
 	<string id="tainik_padalshika">
-		<text>Scavenger’s container</text>
+		<text>Scavenger's container</text>
 	</string>
 	<string id="tainik_padalshika_descr">
 		<text>A metal container used for storing loot, secured by a complex lock.</text>
@@ -82,22 +82,22 @@
 		<text>This key is used to open the armory containing the stockpile.</text>
 	</string>
 	<string id="esc_flash_klim">
-		<text>Klim’s flash drive</text>
+		<text>Klim's flash drive</text>
 	</string>
 	<string id="esc_flash_klim_descr">
 		<text>According to Sidorovich, this flash drive contains some very valuable information, and it used belong to a stalker named Klim. This is the flash drive Sidorovich asked me to bring.</text>
 	</string>
 	<string id="esc_sidor_container_name">
-		<text>Orest’s package</text>
+		<text>Orest's package</text>
 	</string>
 	<string id="esc_sidor_container_desc">
-		<text>Sidorovich has given me this fairly heavy case and told me to give it to Orest. He hasn’t told me what’s inside, and, to be honest, I don’t really want to know.</text>
+		<text>Sidorovich has given me this fairly heavy case and told me to give it to Orest. He hasn't told me what's inside, and, to be honest, I don't really want to know.</text>
 	</string>
 	<string id="esc_pda_leader_base">
-		<text>Father Valerian’s PDA</text>
+		<text>Father Valerian's PDA</text>
 	</string>
 	<string id="esc_pda_leader_base_descr">
-		<text>This PDA used to belong to Father Valerian, who is now dead. The PDA is locked, and I can’t access it.</text>
+		<text>This PDA used to belong to Father Valerian, who is now dead. The PDA is locked, and I can't access it.</text>
 	</string>
 	<string id="blck_val_knife_killer">
 		<text>Murder knife</text>
@@ -107,24 +107,24 @@
 	</string>
 
 	<string id="st_blck_val_chimik_pda_title">
-		<text>Chemist’s PDA</text>
+		<text>Chemist's PDA</text>
 	</string>
 	<string id="st_blck_val_chimik_pda_descr">
 		<text>This PDA belonged to Chemist, the man who killed Lefty and Limp. This PDA might have some more useful information may prove he is, in fact, the murderer.</text>
 	</string>
 
 	<string id="st_esc_pashalka_shved_pda_title">
-		<text>Swede’s PDA</text>
+		<text>Swede's PDA</text>
 	</string>
 	<string id="st_esc_pashalka_shved_pda_descr">
 		<text>A PDA of dead stalker, whose body I found not far from the military outpost in Cordon.</text>
 	</string>
 
 	<string id="blck_val_miklucha_pda">
-		<text>Miklukha’s PDA</text>
+		<text>Miklukha's PDA</text>
 	</string>
 	<string id="blck_val_miklucha_pda_descr">
-		<text>A PDA, formerly possessed by deceased Freedom leader Miklukha. The PDA is password protected, so I can’t access it.</text>
+		<text>A PDA, formerly possessed by deceased Freedom leader Miklukha. The PDA is password protected, so I can't access it.</text>
 	</string>
 
 	<string id="st_blck_val_transiver_title">
@@ -135,7 +135,7 @@
 	</string>
 
 	<string id="st_pb_quest_shell_brelok">
-		<text>Shell’s dogtag</text>
+		<text>Shell's dogtag</text>
 	</string>
 	<string id="st_pb_quest_shell_brelok_desc">
 		<text>Shell is dead, and all he had on him was his dogtag. I should show this to Marcus.</text>
@@ -152,7 +152,7 @@
 		<text>DC 12V 9800mAh battery</text>
 	</string>
 	<string id="st_pb_quest_spez_razia_descr">
-		<text>A lithium-ion battery that’s feat for radios. It has a fairly large capacity. It doesn’t seem to have suffered any damage, which is very lucky considering this battery was taken out of a broken radio transmitter.</text>
+		<text>A lithium-ion battery that's feat for radios. It has a fairly large capacity. It doesn't seem to have suffered any damage, which is very lucky considering this battery was taken out of a broken radio transmitter.</text>
 	</string>
 	<string id="st_pb_kanistra_gas">
 		<text>Jerry can with fuel</text>

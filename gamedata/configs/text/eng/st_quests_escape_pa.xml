@@ -18,13 +18,13 @@
 <text>Old times: neutralize the stalkers</text>
 </string>
 <string id="esc_actor_memmory_start_part_3_text">
-<text>Our visitors need to be taken care of. They’ve plotted something, and a discussion with them isn’t leading anywhere good.</text>
+<text>Our visitors need to be taken care of. They've plotted something, and a discussion with them isn't leading anywhere good.</text>
 </string>
 <string id="esc_actor_memmory_start_part_4_name">
 <text>Old times: discuss recent events with Raven</text>
 </string>
 <string id="esc_actor_memmory_start_part_4_text">
-<text>The unknown stalkers are dead, but we didn’t manage to find out anything about their plans. I get the feeling they came here just to fight. I should talk to Raven about this.</text>
+<text>The unknown stalkers are dead, but we didn't manage to find out anything about their plans. I get the feeling they came here just to fight. I should talk to Raven about this.</text>
 </string>
 
 <!-- Quest: first steps -->
@@ -32,27 +32,27 @@
 <text>First steps: follow Raven</text>
 </string>
 <string id="esc_come_to_base_part_1_text">
-<text>It seems the unknown stalkers had nothing to do with Wolf in the rookie village, but I should take it up with him personally and see Sidorovich while I’m at it.</text>
+<text>It seems the unknown stalkers had nothing to do with Wolf in the rookie village, but I should take it up with him personally and see Sidorovich while I'm at it.</text>
 </string>
 <string id="esc_come_to_base_part_2_name">
 <text>First steps: speak to Wolf</text>
 </string>
 <string id="esc_come_to_base_part_2_text">
-<text>Wolf has sent a message and says that Sidorovich isn’t available right now and that it’d be better if I speak to Wolf personally.</text>
+<text>Wolf has sent a message and says that Sidorovich isn't available right now and that it'd be better if I speak to Wolf personally.</text>
 </string>
 
 <!-- Quest: missing squad -->
 <string id="esc_operations_escape_part_1_name">
-<text>Missing squad: find Wolf’s group</text>
+<text>Missing squad: find Wolf's group</text>
 </string>
 <string id="esc_operations_escape_part_1_text">
-<text>Wolf hasn’t heard from his group for a while and has requested me to find them. The group was located in bandit territory and has likely come under attack.</text>
+<text>Wolf hasn't heard from his group for a while and has requested me to find them. The group was located in bandit territory and has likely come under attack.</text>
 </string>
 <string id="esc_operations_escape_part_2_name">
 <text>Missing squad: help the stalker</text>
 </string>
 <string id="esc_operations_escape_part_2_text">
-<text>Only one stalker is alive at the site, and he’s wounded. He needs help.</text>
+<text>Only one stalker is alive at the site, and he's wounded. He needs help.</text>
 </string>
 <string id="esc_operations_escape_part_3_name">
 <text>Missing squad: discuss the details of the assault</text>
@@ -82,7 +82,7 @@
 <text>Missing squad: speak to Wolf</text>
 </string>
 <string id="esc_operations_escape_part_7_text">
-<text>I’ve completed the task. I should have a few words with Wolf.</text>
+<text>I've completed the task. I should have a few words with Wolf.</text>
 </string>
 
 <!-- Quest: speak to Sidorovich -->
@@ -110,25 +110,25 @@
 <text>Special contract: find Klim</text>
 </string>
 <string id="esc_klim_flash_found_part_3_text">
-<text>Sidorovich has provided me with Klim’s PDA coordinates. Time to track him down.</text>
+<text>Sidorovich has provided me with Klim's PDA coordinates. Time to track him down.</text>
 </string>
 <string id="esc_klim_flash_found_part_4_name">
 <text>Special contract: speak to the hunter</text>
 </string>
 <string id="esc_klim_flash_found_part_4_text">
-<text>Klim’s already dead, and by his corpse is another stalker. I need to find out how he’s connected to Klim’s death.</text>
+<text>Klim's already dead, and by his corpse is another stalker. I need to find out how he's connected to Klim's death.</text>
 </string>
 <string id="esc_klim_flash_found_part_5_name">
 <text>Special contract: follow the hunter</text>
 </string>
 <string id="esc_klim_flash_found_part_5_text">
-<text>It’s likely that a pseudodog has swallowed the flash drive. I need to help the hunter find it and kill it.</text>
+<text>It's likely that a pseudodog has swallowed the flash drive. I need to help the hunter find it and kill it.</text>
 </string>
 <string id="esc_klim_flash_found_part_6_name">
 <text>Special contract: kill the pseudodog</text>
 </string>
 <string id="esc_klim_flash_found_part_6_text">
-<text>We’ve found the pseudodog. Time to kill it.</text>
+<text>We've found the pseudodog. Time to kill it.</text>
 </string>
 <string id="esc_klim_flash_found_part_7_name">
 <text>Special contract: extract the flash drive from the pseudodog body</text>
@@ -140,7 +140,7 @@
 <text>Special contract: speak to the hunter</text>
 </string>
 <string id="esc_klim_flash_found_part_8_text">
-<text>I’ve found the flash drive. Before I head back to the village, I should speak to the hunter.</text>
+<text>I've found the flash drive. Before I head back to the village, I should speak to the hunter.</text>
 </string>
 <string id="esc_klim_flash_found_part_9_name">
 <text>Special contract: return to Sidorovich</text>
@@ -152,7 +152,7 @@
 <text>Special contract: give the flash drive to Sidorovich</text>
 </string>
 <string id="esc_klim_flash_found_part_10_text">
-<text>I’ve completed the assignment. I should give the flash drive to Sidorovich.</text>
+<text>I've completed the assignment. I should give the flash drive to Sidorovich.</text>
 </string>
 <string id="esc_klim_flash_found_part_11_name">
 <text>Special contract: take the beacon in the storeroom</text>
@@ -188,7 +188,7 @@
 <text>Mercenary work: receive the contract from Coordinator</text>
 </string>
 <string id="esc_koordinator_quest_line_part_2_text">
-<text>Vulture has informed me about Coordinator’s arrival in the Cordon. I should meet up with him and receive my next contract.</text>
+<text>Vulture has informed me about Coordinator's arrival in the Cordon. I should meet up with him and receive my next contract.</text>
 </string>
 <string id="esc_koordinator_quest_line_part_3_name">
 <text>Mercenary work: meet the client</text>
@@ -208,7 +208,7 @@
 <text>Syndicate contract: deal with Van</text>
 </string>
 <string id="esc_koordinator_syndikate_quest_part_2_text">
-<text>I need to find a non-lethal way to deal with Van in the rookie village. While I’m at it, I need to be quiet about breaking into the storeroom.</text>
+<text>I need to find a non-lethal way to deal with Van in the rookie village. While I'm at it, I need to be quiet about breaking into the storeroom.</text>
 </string>
 <string id="esc_koordinator_syndikate_quest_part_3_name">
 <text>Syndicate contract: speak to Raccoon</text>
@@ -220,13 +220,13 @@
 <text>Syndicate contract: retreive the black box from the storeroom</text>
 </string>
 <string id="esc_koordinator_syndikate_quest_part_4_text">
-<text>Van’s likely to be sleeping from the booze Raccoon gave him. Perfect time to grab the black box.</text>
+<text>Van's likely to be sleeping from the booze Raccoon gave him. Perfect time to grab the black box.</text>
 </string>
 <string id="esc_koordinator_syndikate_quest_part_5_name">
 <text>Syndicate contract: hand the black box to Coordinator</text>
 </string>
 <string id="esc_koordinator_syndikate_quest_part_5_text">
-<text>I’ve got the black box. I should give it to Coordinator.</text>
+<text>I've got the black box. I should give it to Coordinator.</text>
 </string>
 
 <!-- Quest: no morals (assassination of Valerian) -->
@@ -234,19 +234,19 @@
 <text>No morals: plan the assassination of Father Valerian</text>
 </string>
 <string id="esc_kill_leader_stalkers_part_1_text">
-<text>My next contract involves assassinating the leader of the loners: Father Valerian. I’ll need to plan it carefully before making any move.</text>
+<text>My next contract involves assassinating the leader of the loners: Father Valerian. I'll need to plan it carefully before making any move.</text>
 </string>
 <string id="esc_kill_leader_stalkers_part_2_name">
 <text>No morals: speak to Raccoon</text>
 </string>
 <string id="esc_kill_leader_stalkers_part_2_text">
-<text>I’ve got an interesting idea. I should speak about it to Raccoon in the rookie village, who I saved not long ago from the bandits.</text>
+<text>I've got an interesting idea. I should speak about it to Raccoon in the rookie village, who I saved not long ago from the bandits.</text>
 </string>
 <string id="esc_kill_leader_stalkers_part_3_name">
 <text>No morals: tell Raven about the plan</text>
 </string>
 <string id="esc_kill_leader_stalkers_part_3_text">
-<text>I’ve sent Raccoon to the base by the embankment. I can now share my plan with Raven.</text>
+<text>I've sent Raccoon to the base by the embankment. I can now share my plan with Raven.</text>
 </string>
 <string id="esc_kill_leader_stalkers_part_4_name">
 <text>No morals: follow Raven</text>
@@ -255,7 +255,7 @@
 <text>The plan is in effect. Time to return back to base and wait for Raccoon to do his thing.</text>
 </string>
 <string id="esc_kill_leader_stalkers_part_5_name">
-<text>No morals: wait for Raccoon’s actions</text>
+<text>No morals: wait for Raccoon's actions</text>
 </string>
 <string id="esc_kill_leader_stalkers_part_5_text">
 <text>I need to wait for Raccoon to work his magic. Until then, I better not do anything suspicious.</text>
@@ -264,7 +264,7 @@
 <text>No morals: speak to Raven</text>
 </string>
 <string id="esc_kill_leader_stalkers_part_6_text">
-<text>Valerian has taken the bait and left the base. It’s time to take over.</text>
+<text>Valerian has taken the bait and left the base. It's time to take over.</text>
 </string>
 <string id="esc_kill_leader_stalkers_part_7_name">
 <text>No morals: kill Father Valerian and his group</text>
@@ -273,7 +273,7 @@
 <text>The time has come to eliminate Father Valerian and his group.</text>
 </string>
 <string id="esc_kill_leader_stalkers_part_8_name">
-<text>No morals: take Father Valerian’s PDA</text>
+<text>No morals: take Father Valerian's PDA</text>
 </string>
 <string id="esc_kill_leader_stalkers_part_8_text">
 <text>Valerian is dead. I need to bring his PDA as proof that the contract has been fulfilled.</text>
@@ -282,7 +282,7 @@
 <text>No morals: wait until morning</text>
 </string>
 <string id="esc_kill_leader_stalkers_part_9_text">
-<text>Yaroschuk has informed me that he’ll wait for me at the same place in the morning.</text>
+<text>Yaroschuk has informed me that he'll wait for me at the same place in the morning.</text>
 </string>
 <string id="esc_kill_leader_stalkers_part_10_name">
 <text>No morals: complete the contract</text>
@@ -320,7 +320,7 @@
 <text>Bad feeling: speak to Obscurant</text>
 </string>
 <string id="esc_final_talk_in_escape_part_1_text">
-<text>Raven has informed me that Obscurant has arrived in the Cordon and that he’s at the vehicle station. Time to have a chat with him.</text>
+<text>Raven has informed me that Obscurant has arrived in the Cordon and that he's at the vehicle station. Time to have a chat with him.</text>
 </string>
 
 
