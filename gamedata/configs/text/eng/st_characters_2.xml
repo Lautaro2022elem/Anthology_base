@@ -1,0 +1,185 @@
+<?xml version="1.0" encoding="windows-1251"?>
+<string_table>
+<string id="yan_st_levsha_name">
+<text>Lefty</text>
+</string>
+
+<string id="yan_st_digger_name">
+	<text>Kesha</text>
+</string>
+
+<string id="jup_a6_stalker_trader_name">
+	<text>Boris Razor</text>
+</string>
+
+<string id="jup_ecolog_breeder_name">
+	<text>Professor Bozhevsky</text>
+</string>
+
+<string id="jup_stalker_breeder_name">
+	<text>Dr. Brunko</text>
+</string>
+
+<string id="zat_stalker_breeder_name">
+	<text>Doctor Makovetsky</text>
+</string>
+
+<string id="pri_army_breeder_name">
+	<text>Doctor Kravchenko</text>
+</string>
+
+<string id="mar_smart_terrain_10_5_renegade_leader_name">
+	<text>Gestel</text>
+</string>
+
+<string id="mar_smart_terrain_10_5_renegade_tech_name">
+	<text>Fox</text>
+</string>
+
+<string id="mar_smart_terrain_10_5_renegade_trader_name">
+	<text>Padla</text>
+</string>
+
+<string id="freedom_bodyguard_name">
+	<text>Kapec</text>
+</string>
+
+<string id="freedom_bodyguard2_name">
+	<text>Corner</text>
+</string>
+
+<string id="mil_smart_terrain_7_12_breeder_name">
+	<text>Uglier</text>
+</string>
+
+<string id="mil_Svoboda_cook_name">
+	<text>Cook</text>
+</string>
+
+<string id="mil_Svoboda_master_Max_name">
+	<text>Max</text>
+</string>
+
+<string id="mil_Svoboda_blockpost_leader_name">
+	<text>Kep</text>
+</string>
+
+<string id="yan_sci_bunker_scientists_name">
+	<text>Professor Lutsenko</text>
+</string>
+
+<string id="yan_sci_bunker_breeder_name">
+	<text>Dr. Kravchenko</text>
+</string>
+
+<string id="zat_b22_stalker_medic_2_name">
+	<text>Aidar</text>
+</string>
+
+<string id="esc_leader_stalkerbase_name">
+	<text>Father Valerian</text>
+</string>
+
+<string id="gar_bandit_fixer_name">
+	<text>Transparent</text>
+</string>
+
+<string id="gar_bandit_leader_name">
+	<text>Yoga</text>
+</string>
+
+<string id="gar_bandit_minigame_name">
+	<text>Jeward</text>
+</string>
+<string id="gar_bandit_trader_name">
+<text>Tooth</text>
+</string>
+
+applescript
+Copy
+<string id="gar_bandit_senya">
+	<text>Senka</text>
+</string>
+
+<string id="gar_dolg_blokpost_leader_name">
+	<text>Prapor</text>
+</string>
+
+<string id="yan_st_levsha_name">
+	<text>Lefty</text>
+</string>
+
+<string id="yan_st_digger_name">
+	<text>Kesha</text>
+</string>
+
+<string id="yan_breeder_name">
+	<text>Assistant Anokhin</text>
+</string>
+
+<string id="bar_breeder_name">
+	<text>Assistant Professor Loskutov</text>
+</string>
+
+<string id="st_fat_rookie_in_the_house_pole_name">
+	<text>fat_rookie</text>
+</string>
+
+<string id="st_fat_rookie_in_the_house_pole_purpose_name">
+	<text>Alpha</text>
+</string>
+
+<string id="mar_base_stalker_breeder_name">
+	<text>Professor Plusnin</text>
+</string>
+
+<string id="red_greh_medic_name">
+	<text>Semargle</text>
+</string>
+
+<string id="garbage_depo_stalker_barmenup_name">
+	<text>File</text>
+</string>
+
+<string id="garbage_depo_stalker_barmenin_name">
+	<text>Borya</text>
+</string>
+
+<string id="esc_smart_terrain_1_0_breeder_name">
+	<text>Professor Panin</text>
+</string>
+
+<string id="svalk_depo_smart_terrain_breeder_name">
+	<text>Professor Astanin</text>
+</string>
+
+<string id="bar_smart_terrain_0_0_breeder_name">
+	<text>Professor Butov</text>
+</string>
+
+<string id="wiz_stalker_breeder_name">
+	<text>Professor Zelenkov</text>
+</string>
+
+<string id="jup_b47_merc_01">
+	<text>Black</text>
+</string>
+<string id="jup_b47_merc_02">
+	<text>Duplet</text>
+</string>
+<string id="jup_b47_merc_03">
+	<text>Surgeon</text>
+</string>
+<string id="jup_b47_merc_04">
+	<text>Skull</text>
+</string>
+<string id="jup_b47_merc_05">
+	<text>Col</text>
+</string>
+<string id="jup_b47_merc_06">
+	<text>Koschei</text>
+</string>
+<string id="jup_b47_merc_07">
+	<text>Cadaver</text>
+</string>
+</string_table>
