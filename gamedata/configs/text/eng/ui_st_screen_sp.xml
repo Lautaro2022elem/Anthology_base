@@ -1,41 +1,40 @@
 <?xml version="1.0" encoding="windows-1251" ?>
 <string_table>
     <string id="labx5_b1_door_close">
-		<text>Дверь заблокирована.</text>
-	</string>
-    <string id="gar_borland_message_text_1">
-		<text>%c[255,0,255,0]Саван, ты где? Что-то день совсем не задался. Не надо было нам в спускаться в лабораторию, я ведь знал, что... %c[default]</text>
-	</string>    
-	<string id="labx5_borland_message_text_1">
-		<text>%c[255,0,255,0]Отличная работа, Саван, лифт ожил, жду тебя внизу.%c[default]</text>
-	</string>
-	<string id="labx5_borland_message_text_4">
-		<text>%c[255,0,255,0]Поднимайся наверх, я буду ждать снаружи у выхода. Дождаться внизу не мог - надышался газом, на свежий воздух мне нужно. %c[default]</text>
-	</string>
-	<string id="labx5_borland_message_text_2">
-		<text>%c[255,0,255,0]Саван, ты меня слышишь? Живой еще или нет? Я на нижнем уровне, в диспетчерской- тут на камерах такое! %c[default]</text>
-	</string>
-	<string id="labx5_borland_message_text_3">
-		<text>%c[255,0,255,0]Саван, монолитовцев больше нет, ты всех перебил. На всех камерах наблюдения чисто. Ни монстров, ни людей. Я попробую пробежать сквозь газ, задержав дыхание. Дуй за мной. Ищи дырку в полу, нам туда. Там еще пара-тройка коридоров на разных уровнях. А в самом конце будет лифт наверх. Выбираемся наружу. Нет тут ни Дуболома, ни "Маятника". Уходить надо. Про документы для Скидана не забудь. %c[default]</text>
-	</string>
-	<string id="gar_borland_message_text_3">
-		<text>%c[255,0,255,0]Саван, ты нашел укрытие диггера. Антидот должен быть в нем. %c[default]</text>
-	</string>
-	<string id="st_search_spectr">
-		<text>Проверить радиоигнал ($$ACTION_USE$$)</text>
-	</string>
-	<string id="st_search_oszil">
-		<text>Применить осциллограф ($$ACTION_USE$$)</text>
-	</string>
-	
-		<string id="st_gar_dolg_general_start_sms">
-		<text>%c[255,255,128,128]Сталкер! Ты находишься на территории охраняемой группировкой «Долг». Медленно подойди для выяснения обстоятельств! И даже не думай рыпаться! %c[default]</text>
-	</string>
-	<string id="st_gar_dolg_general_kill_sms">
-		<text>%c[255,255,128,128]Огонь!!! %c[default]</text>
-	</string>
-	<string id="st_dangerous_business_talk_logoped">
-		<text>%c[255,255,128,128]Слышь, зайди ко мне дело есть. %c[default]</text>
-	</string>
+    <text>The door is locked.</text>
+</string>
+<string id="gar_borland_message_text_1">
+    <text>%c[255,0,255,0]Savan, where are you? It's been a tough day. We shouldn't have gone down to the laboratory. I knew that... %c[default]</text>
+</string>
+<string id="labx5_borland_message_text_1">
+    <text>%c[255,0,255,0]Great job, Savan. The elevator is up and running. I'm waiting for you downstairs.%c[default]</text>
+</string>
+<string id="labx5_borland_message_text_4">
+    <text>%c[255,0,255,0]Go upstairs. I'll be waiting outside the exit. Couldn't wait downstairs - gas got to me. I need some fresh air.%c[default]</text>
+</string>
+<string id="labx5_borland_message_text_2">
+    <text>%c[255,0,255,0]Savan, can you hear me? Are you still alive? I'm on the lower level, in the control room - there's something on the cameras!%c[default]</text>
+</string>
+<string id="labx5_borland_message_text_3">
+    <text>%c[255,0,255,0]Savan, there are no Monolith guys left. You took care of them all. All the surveillance cameras are clear. No monsters, no people. I'll try to run through the gas, holding my breath. Follow me. Look for a hole in the floor, that's where we need to go. There are a couple more corridors on different levels. And at the very end, there will be an elevator going up. We need to get out. Don't forget about the documents for Skidan. %c[default]</text>
+</string>
+<string id="gar_borland_message_text_3">
+    <text>%c[255,0,255,0]Savan, you found the Digger's shelter. The antidote should be in there.%c[default]</text>
+</string>
+<string id="st_search_spectr">
+    <text>Check the radio signal ($$ACTION_USE$$)</text>
+</string>
+<string id="st_search_oszil">
+    <text>Use the oscilloscope ($$ACTION_USE$$)</text>
+</string>
+<string id="st_gar_dolg_general_start_sms">
+    <text>%c[255,255,128,128]Stalker! You are on the territory controlled by the "Duty" faction. Approach slowly to clarify the circumstances! And don't even think about resisting!%c[default]</text>
+</string>
+<string id="st_gar_dolg_general_kill_sms">
+    <text>%c[255,255,128,128]Open fire!!!%c[default]</text>
+</string>
+<string id="st_dangerous_business_talk_logoped">
+    <text>%c[255,255,128,128]Hey, come over. I've got something to discuss.%c[default]</text>
+</string>
 	
 </string_table>

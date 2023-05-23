@@ -4,7 +4,7 @@
 	<specific_character id="escape_trader" no_random = "1">
 		<name>escape_trader_skidan_name</name>
 		<icon>ui_inGame2_sidor</icon>
-		<bio>Детальная информация отсутствует.</bio>
+		<bio>Detailed information is not available.</bio>
 		<class>trader</class>
 		<community>stalker</community>
 		<visual>actors\stalker_exclusive\trader_skidan</visual>
@@ -45,7 +45,7 @@
 		<name>escape_trader_skidan_name</name>
 		<icon>ui_inGame2_sidor</icon>
 		<map_icon x="1" y="0"></map_icon>
-		<bio>Детальная информация отсутствует.</bio>
+		<bio>Detailed information is not available.</bio>
 		<class>esc_trader_walker</class>
 		<community>stalker</community> <terrain_sect>stalker_terrain</terrain_sect>
 		<snd_config>characters_voice\human\stalker_2\</snd_config>
@@ -73,7 +73,7 @@
 		<name>esc_pes_name</name>
 		<icon>ui_inGame2_wolf</icon>
 		<map_icon x="1" y="0"></map_icon>
-		<bio>Детальная информация отсутствует.</bio>
+		<bio>Detailed information is not available.</bio>
 		<class>esc_wolf</class>
 		<community>stalker</community> <terrain_sect>stalker_terrain</terrain_sect>
 		<snd_config>characters_voice\human\stalker_2\</snd_config>
@@ -123,7 +123,7 @@
 		<name>esc_mechanic_furgon_name</name>
 		<icon>ui_inGame2_furgon</icon>
 		<map_icon x="1" y="0"></map_icon>
-		<bio>Опытный сталкер. Детальная информация отсутствует.</bio>
+		<bio>Experienced stalker. Detailed information is not available.</bio>
 		<class>esc_mechanic_furgon</class>
 		<mechanic_mode>1</mechanic_mode>
 		<community>stalker</community> <terrain_sect>stalker_terrain</terrain_sect>
@@ -159,7 +159,7 @@
 		<name>esc_mechanic_barkas_name</name>
 		<icon>ui_inGame2_neutral_1</icon>
 		<map_icon x="1" y="0"></map_icon>
-		<bio>Опытный сталкер. Детальная информация отсутствует.</bio>
+		<bio>Experienced stalker. Detailed information is not available.</bio>
 		<class>esc_mechanic_barkas</class>
 		<mechanic_mode>1</mechanic_mode>
 		<community>stalker</community> <terrain_sect>stalker_terrain</terrain_sect>
@@ -193,7 +193,7 @@
 		<name>esc_trader_kusto_name</name>
 		<icon>ui_inGame2_kusto</icon>
 		<map_icon x="1" y="0"></map_icon>
-		<bio>Опытный сталкер. Детальная информация отсутствует.</bio>
+		<bio>Experienced stalker. Detailed information is not available.</bio>
 		<class>esc_trader_kusto</class>
 		<community>stalker</community> <terrain_sect>stalker_terrain</terrain_sect>
 		<snd_config>characters_voice\human\stalker_2\</snd_config>
@@ -221,10 +221,10 @@
 	
 	
 	<specific_character id="esc_barman_patogen" team_default = "1">
-		<name>Патогеныч</name>
+		<name>Patogen</name>
 		<icon>ui_inGame2_patogen</icon>
 		<map_icon x="1" y="0"></map_icon>
-		<bio>Опытный сталкер. Детальная информация отсутствует.</bio>
+		<bio>Experienced stalker. Detailed information is not available.</bio>
 		<class>esc_barman_patogen</class>
 		<community>stalker</community> <terrain_sect>stalker_terrain</terrain_sect>
 		<snd_config>characters_voice\human\stalker_2\</snd_config>
@@ -261,7 +261,7 @@
 		<name>esc_shaman_name</name>
 		<icon>ui_inGame2_shaman</icon>
 		<map_icon x="1" y="0"></map_icon>
-		<bio>Опытный сталкер. Детальная информация отсутствует.</bio>
+		<bio>Experienced stalker. Detailed information is not available.</bio>
 		<class>esc_shaman</class>
 		<community>stalker</community> <terrain_sect>stalker_terrain</terrain_sect>
 		<snd_config>characters_voice\human\stalker_2\</snd_config>
@@ -293,7 +293,7 @@
 		<name>Draftsman</name>
 		<icon>ui_inGame2_risovalshik</icon>
 		<map_icon x="1" y="0"></map_icon>
-		<bio>Опытный сталкер. Детальная информация отсутствует.</bio>
+		<bio>Experienced stalker. Detailed information is not available.</bio>
 		<class>esc_risovalshik</class>
 		<community>stalker</community> <terrain_sect>stalker_terrain</terrain_sect>
 		<snd_config>characters_voice\human\stalker_2\</snd_config>
@@ -320,7 +320,7 @@
 		<name>esc_medic_antibiotic_name</name>
 		<icon>ui_inGame2_neutral_1</icon>
 		<map_icon x="1" y="0"></map_icon>
-		<bio>Опытный сталкер. Детальная информация отсутствует.</bio>
+		<bio>Experienced stalker. Detailed information is not available.</bio>
 		<class>esc_medic_antibiotic</class>
 		<community>stalker</community> <terrain_sect>stalker_terrain</terrain_sect>
 		<snd_config>characters_voice\human\stalker_2\</snd_config>
@@ -350,7 +350,7 @@
 		<name>esc_colonel_kolyazin_name</name>
 		<icon>ui_inGame2_kolyazin</icon>
 		<map_icon x="1" y="0"></map_icon>
-		<bio>Опытный сталкер. Детальная информация отсутствует.</bio>
+		<bio>Experienced stalker. Detailed information is not available.</bio>
 		<class>esc_colonel_kolyazin</class>
 		<community>army</community> <terrain_sect>stalker_terrain</terrain_sect>
 		<snd_config>characters_voice\human\military_3\</snd_config>
@@ -379,7 +379,7 @@
 		<name>esc_bandit_logoped_name</name>
 		<icon>ui_inGame2_logoped</icon>
 		<map_icon x="1" y="0"></map_icon>
-		<bio>Опытный сталкер. Детальная информация отсутствует.</bio>
+		<bio>Experienced stalker. Detailed information is not available.</bio>
 		<class>esc_bandit_logoped</class>
 		<community>bandit</community> <terrain_sect>stalker_terrain</terrain_sect>
 		<snd_config>characters_voice\human\bandit_2\</snd_config>
@@ -416,7 +416,7 @@
 		<name>esc_bandit_tick_name</name>
 		<icon>ui_inGame2_tick</icon>
 		<map_icon x="1" y="0"></map_icon>
-		<bio>Опытный сталкер. Детальная информация отсутствует.</bio>
+		<bio>Experienced stalker. Detailed information is not available.</bio>
 		<class>esc_bandit_tick</class>
 		<community>bandit</community> <terrain_sect>stalker_terrain</terrain_sect>
 		<snd_config>characters_voice\human\bandit_2\</snd_config>
@@ -446,7 +446,7 @@
 		<name>esc_borland_start_name</name>
 		<icon>ui_inGame2_borland</icon>
 		<map_icon x="1" y="0"></map_icon>
-		<bio>Опытный сталкер. Детальная информация отсутствует.</bio>
+		<bio>Experienced stalker. Detailed information is not available.</bio>
 		<class>esc_borland_start</class>
 		<community>actor</community> <terrain_sect>stalker_terrain</terrain_sect>
 		<snd_config>characters_voice\human\stalker_2\</snd_config>
@@ -471,7 +471,7 @@
 		<name>esc_borland_start_name</name>
 		<icon>ui_inGame2_borland</icon>
 		<map_icon x="1" y="0"></map_icon>
-		<bio>Опытный сталкер. Детальная информация отсутствует.</bio>
+		<bio>Experienced stalker. Detailed information is not available.</bio>
 		<class>esc_borland</class>
 		<community>actor</community> <terrain_sect>stalker_terrain</terrain_sect>
 		<snd_config>characters_voice\human\stalker_2\</snd_config>
@@ -499,7 +499,7 @@
 		<name>esc_borland_start_name</name>
 		<icon>ui_inGame2_borland</icon>
 		<map_icon x="1" y="0"></map_icon>
-		<bio>Опытный сталкер. Детальная информация отсутствует.</bio>
+		<bio>Experienced stalker. Detailed information is not available.</bio>
 		<class>esc_borland_quest</class>
 		<community>stalker</community> <terrain_sect>stalker_terrain</terrain_sect>
 		<snd_config>characters_voice\human\stalker_2\</snd_config>
@@ -528,7 +528,7 @@
 		<name>esc_borland_start_name</name>
 		<icon>ui_inGame2_borland</icon>
 		<map_icon x="1" y="0"></map_icon>
-		<bio>Опытный сталкер. Детальная информация отсутствует.</bio>
+		<bio>Experienced stalker. Detailed information is not available.</bio>
 		<class>esc_borland_underground</class>
 		<community>stalker</community> <terrain_sect>stalker_terrain</terrain_sect>
 		<snd_config>characters_voice\human\stalker_2\</snd_config>
@@ -556,7 +556,7 @@
 		<name>esc_borland_start_name</name>
 		<icon>ui_inGame2_borland</icon>
 		<map_icon x="1" y="0"></map_icon>
-		<bio>Опытный сталкер. Детальная информация отсутствует.</bio>
+		<bio>Experienced stalker. Detailed information is not available.</bio>
 		<class>esc_borland_lab</class>
 		<community>stalker</community> <terrain_sect>stalker_terrain</terrain_sect>
 		<snd_config>characters_voice\human\stalker_2\</snd_config>
@@ -584,7 +584,7 @@
 		<name>esc_army_shmatco_name</name>
 		<icon>ui_inGame2_shmatco</icon>
 		<map_icon x="1" y="0"></map_icon>
-		<bio>Опытный сталкер. Детальная информация отсутствует.</bio>
+		<bio>Experienced stalker. Detailed information is not available.</bio>
 		<class>esc_army_shmatco</class>
 		<community>army_npc</community> <terrain_sect>stalker_terrain</terrain_sect>
 		<snd_config>characters_voice\human\military_1\</snd_config>
@@ -612,7 +612,7 @@
 	    <name>esc_army_kuznecov_name</name>
 		<icon>ui_inGame2_Soldier_2</icon>
 		<map_icon x="1" y="0"></map_icon>
-		<bio>Опытный сталкер. Детальная информация отсутствует.</bio>
+		<bio>Experienced stalker. Detailed information is not available.</bio>
 		<class>esc_army_kuznecov</class>
 		<community>army_npc</community> <terrain_sect>stalker_terrain</terrain_sect>
 		<snd_config>characters_voice\human\military_1\</snd_config>
@@ -638,7 +638,7 @@
 		<name>esc_trepach_name</name>
 		<icon>ui_inGame2_bandit_3</icon>
 		<map_icon x="1" y="0"></map_icon>
-		<bio>Опытный сталкер. Детальная информация отсутствует.</bio>
+		<bio>Experienced stalker. Detailed information is not available.</bio>
 		<class>esc_trepach</class>
 		<community>bandit_alies</community> <terrain_sect>stalker_terrain</terrain_sect>
 		<snd_config>characters_voice\human\bandit_2\</snd_config>
@@ -666,7 +666,7 @@
 		<name>esc_dybolom_name</name>
 		<icon>ui_inGame2_neutral_1</icon>
 		<map_icon x="1" y="0"></map_icon>
-		<bio>Опытный сталкер. Детальная информация отсутствует.</bio>
+		<bio>Experienced stalker. Detailed information is not available.</bio>
 		<class>esc_dybolom</class>
 		<community>stalker</community> <terrain_sect>stalker_terrain</terrain_sect>
 		<snd_config>characters_voice\human\stalker_1\</snd_config>
@@ -693,7 +693,7 @@
 		<name>esc_dybolom_name</name>
 		<icon>ui_inGame2_neutral_1</icon>
 		<map_icon x="1" y="0"></map_icon>
-		<bio>Опытный сталкер. Детальная информация отсутствует.</bio>
+		<bio>Experienced stalker. Detailed information is not available.</bio>
 		<class>esc_dybolom_bandit</class>
 		<mechanic_mode>1</mechanic_mode>
 		<community>bandit</community> <terrain_sect>stalker_terrain</terrain_sect>
@@ -723,7 +723,7 @@
 		<name>esc_npc_kishka_name</name>
 		<icon>ui_inGame2_none</icon>
 		<map_icon x="1" y="0"></map_icon>
-		<bio>Опытный сталкер. Детальная информация отсутствует.</bio>
+		<bio>Experienced stalker. Detailed information is not available.</bio>
 		<class>esc_npc_kishka</class>
 		<community>stalker</community> <terrain_sect>stalker_terrain</terrain_sect>
 		<snd_config>characters_voice\human\stalker_1\</snd_config>
@@ -750,7 +750,7 @@
 	    <name>esc_army_chernenco_name</name>
 		<icon>ui_inGame2_Soldier_2</icon>
 		<map_icon x="1" y="0"></map_icon>
-		<bio>Опытный сталкер. Детальная информация отсутствует.</bio>
+		<bio>Experienced stalker. Detailed information is not available.</bio>
 		<class>esc_army_chernenco</class>
 		<community>army_npc</community> <terrain_sect>stalker_terrain</terrain_sect>
 		<snd_config>characters_voice\human\military_1\</snd_config>
@@ -776,7 +776,7 @@
 		<name>esc_klin_name</name>
 		<icon>ui_inGame2_klin</icon>
 		<map_icon x="1" y="0"></map_icon>
-		<bio>Опытный сталкер. Детальная информация отсутствует.</bio>
+		<bio>Experienced stalker. Detailed information is not available.</bio>
 		<class>esc_klin</class>
 		<community>stalker</community> <terrain_sect>stalker_terrain</terrain_sect>
 		<snd_config>characters_voice\human\stalker_1\</snd_config>
@@ -804,7 +804,7 @@
 		<name>esc_npc_wood_goblin_name</name>
 		<icon>ui_inGame2_wood_goblin</icon>
 		<map_icon x="1" y="0"></map_icon>
-		<bio>Опытный сталкер. Детальная информация отсутствует.</bio>
+		<bio>Experienced stalker. Detailed information is not available.</bio>
 		<class>esc_npc_wood_goblin</class>
 		<community>stalker</community> <terrain_sect>stalker_terrain</terrain_sect>
 		<snd_config>characters_voice\human\stalker_1\</snd_config>
@@ -831,7 +831,7 @@
 		<name>esc_npc_sour_name</name>
 		<icon>ui_inGame2_neutral_1</icon>
 		<map_icon x="1" y="0"></map_icon>
-		<bio>Опытный сталкер. Детальная информация отсутствует.</bio>
+		<bio>Experienced stalker. Detailed information is not available.</bio>
 		<class>esc_npc_sour</class>
 		<community>stalker</community> <terrain_sect>stalker_terrain</terrain_sect>
 		<snd_config>characters_voice\human\stalker_1\</snd_config>
@@ -858,7 +858,7 @@
 		<name>esc_npc_garlic_name</name>
 		<icon>ui_inGame2_none</icon>
 		<map_icon x="1" y="0"></map_icon>
-		<bio>Опытный сталкер. Детальная информация отсутствует.</bio>
+		<bio>Experienced stalker. Detailed information is not available.</bio>
 		<class>esc_npc_garlic</class>
 		<community>stalker</community> <terrain_sect>stalker_terrain</terrain_sect>
 		<snd_config>characters_voice\human\stalker_1\</snd_config>
@@ -885,7 +885,7 @@
 		<name>esc_npc_pate_name</name>
 		<icon>ui_inGame2_bandit_2</icon>
 		<map_icon x="1" y="0"></map_icon>
-		<bio>Опытный сталкер. Детальная информация отсутствует.</bio>
+		<bio>Experienced stalker. Detailed information is not available.</bio>
 		<class>esc_npc_pate</class>
 		<community>bandit_alies</community> <terrain_sect>stalker_terrain</terrain_sect>
 		<snd_config>characters_voice\human\bandit_2\</snd_config>
@@ -914,7 +914,7 @@
 		<name>esc_quest_sb_tryp_name</name>
 		<icon>ui_inGame2_bandit_3</icon>
 		<map_icon x="1" y="0"></map_icon>
-		<bio>Опытный сталкер. Детальная информация отсутствует.</bio>
+		<bio>Experienced stalker. Detailed information is not available.</bio>
 		<class>esc_quest_sb_tryp</class>
 		<community>bandit</community> <terrain_sect>stalker_terrain</terrain_sect>
 		<snd_config>characters_voice\human\bandit_2\</snd_config>
@@ -939,7 +939,7 @@
 		<name>esc_merc_bear_name</name>
 		<icon>ui_inGame2_none</icon>
 		<map_icon x="1" y="0"></map_icon>
-		<bio>Опытный сталкер. Детальная информация отсутствует.</bio>
+		<bio>Experienced stalker. Detailed information is not available.</bio>
 		<class>esc_merc_bear</class>
 		<community>killer</community> <terrain_sect>stalker_terrain</terrain_sect>
 		<snd_config>characters_voice\human\killer_1\</snd_config>
@@ -967,7 +967,7 @@
 		<name>esc_bandit_shmiga_name</name>
 		<icon>ui_inGame2_none</icon>
 		<map_icon x="1" y="0"></map_icon>
-		<bio>Опытный сталкер. Детальная информация отсутствует.</bio>
+		<bio>Experienced stalker. Detailed information is not available.</bio>
 		<class>esc_bandit_shmiga</class>
 		<community>bandit</community> <terrain_sect>stalker_terrain</terrain_sect>
 		<snd_config>characters_voice\human\bandit_2\</snd_config>
@@ -999,7 +999,7 @@
 		<name>esc_npc_shvabroid_name</name>
 		<icon>ui_inGame2_bandit_3_mask</icon>
 		<map_icon x="1" y="0"></map_icon>
-		<bio>Опытный сталкер. Детальная информация отсутствует.</bio>
+		<bio>Experienced stalker. Detailed information is not available.</bio>
 		<class>esc_npc_shvabroid</class>
 		<community>bandit</community> <terrain_sect>stalker_terrain</terrain_sect>
 		<snd_config>characters_voice\human\bandit_2\</snd_config>
@@ -1026,7 +1026,7 @@
 	    <name>esc_freedom_plen_name</name>
 		<icon>ui_inGame2_none</icon>
 		<map_icon x="1" y="0"></map_icon>
-		<bio>Опытный сталкер. Детальная информация отсутствует.</bio>
+		<bio>Experienced stalker. Detailed information is not available.</bio>
 		<class>esc_freedom_plen</class>
 		<community>freedom</community> <terrain_sect>stalker_terrain</terrain_sect>
 		<snd_config>characters_voice\human\freedom_1\</snd_config>
@@ -1052,7 +1052,7 @@
 		<name>GENERATE_NAME_bandit</name>
 		<icon>ui_inGame2_bandit_2</icon>
 		<map_icon x="1" y="0"></map_icon>
-		<bio>Опытный сталкер. Детальная информация отсутствует.</bio>
+		<bio>Experienced stalker. Detailed information is not available.</bio>
 		<class>esc_npc_freend_shvabroid_1</class>
 		<community>bandit</community> <terrain_sect>stalker_terrain</terrain_sect>
 		<snd_config>characters_voice\human\bandit_1\</snd_config>
@@ -1078,7 +1078,7 @@
 		<name>GENERATE_NAME_bandit</name>
 		<icon>ui_inGame2_none</icon>
 		<map_icon x="1" y="0"></map_icon>
-		<bio>Опытный сталкер. Детальная информация отсутствует.</bio>
+		<bio>Experienced stalker. Detailed information is not available.</bio>
 		<class>esc_npc_freend_shvabroid_2</class>
 		<community>bandit</community> <terrain_sect>stalker_terrain</terrain_sect>
 		<snd_config>characters_voice\human\bandit_1\</snd_config>
@@ -1108,7 +1108,7 @@
 		<name>esc_trup_alpinist_name</name>
 		<icon>ui_inGame2_none</icon>
 		<map_icon x="1" y="0"></map_icon>
-		<bio>Опытный сталкер. Детальная информация отсутствует.</bio>
+		<bio>Experienced stalker. Detailed information is not available.</bio>
 		<class>esc_trup_alpinist</class>
 		<community>stalker</community> <terrain_sect>stalker_terrain</terrain_sect>
 		<snd_config>characters_voice\human\stalker_2\</snd_config>
@@ -1134,7 +1134,7 @@
 	    <name>esc_bandit_shoroh_npc_name</name>
 		<icon>ui_inGame2_none</icon>
 		<map_icon x="1" y="0"></map_icon>
-		<bio>Опытный сталкер. Детальная информация отсутствует.</bio>
+		<bio>Experienced stalker. Detailed information is not available.</bio>
 		<class>esc_bandit_shoroh_npc</class>
 		<community>bandit_alies</community> <terrain_sect>stalker_terrain</terrain_sect>
 		<snd_config>characters_voice\human\bandit_2\</snd_config>
@@ -1159,7 +1159,7 @@
 		<name>esc_npc_moskit_name</name>
 		<icon>ui_inGame2_none</icon>
 		<map_icon x="1" y="0"></map_icon>
-		<bio>Опытный сталкер. Детальная информация отсутствует.</bio>
+		<bio>Experienced stalker. Detailed information is not available.</bio>
 		<class>esc_npc_moskit</class>
 		<community>stalker</community> <terrain_sect>stalker_terrain</terrain_sect>
 		<snd_config>characters_voice\human\stalker_2\</snd_config>
@@ -1188,7 +1188,7 @@
 		<name>esc_nps_soer_name</name>
 		<icon>ui_inGame2_csky_1_1</icon>
 		<map_icon x="1" y="0"></map_icon>
-		<bio>Опытный сталкер. Детальная информация отсутствует.</bio>
+		<bio>Experienced stalker. Detailed information is not available.</bio>
 		<class>esc_nps_soer</class>
 		<community>stalker</community> <terrain_sect>stalker_terrain</terrain_sect>
 		<snd_config>characters_voice\human\stalker_2\</snd_config>
@@ -1215,7 +1215,7 @@
 		<name>esc_npc_csky_holod_name</name>
 		<icon>ui_inGame2_csky_1_1</icon>
 		<map_icon x="1" y="0"></map_icon>
-		<bio>Опытный сталкер. Детальная информация отсутствует.</bio>
+		<bio>Experienced stalker. Detailed information is not available.</bio>
 		<class>esc_npc_csky_holod</class>
 		<community>csky</community> <terrain_sect>stalker_terrain</terrain_sect>
 		<snd_config>characters_voice\human\csky_1\</snd_config>
@@ -1242,7 +1242,7 @@
 		<name>esc_npc_csky_holod_name</name>
 		<icon>ui_inGame2_csky_1_1</icon>
 		<map_icon x="1" y="0"></map_icon>
-		<bio>Опытный сталкер. Детальная информация отсутствует.</bio>
+		<bio>Experienced stalker. Detailed information is not available.</bio>
 		<class>esc_npc_csky_trader_holod</class>
 		<community>csky</community> <terrain_sect>stalker_terrain</terrain_sect>
 		<snd_config>characters_voice\human\csky_1\</snd_config>
@@ -1270,7 +1270,7 @@
 		<name>esc_npc_watchmaker_name</name>
 		<icon>ui_inGame2_none</icon>
 		<map_icon x="1" y="0"></map_icon>
-		<bio>Опытный сталкер. Детальная информация отсутствует.</bio>
+		<bio>Experienced stalker. Detailed information is not available.</bio>
 		<class>esc_npc_watchmaker</class>
 		<community>actor</community> <terrain_sect>stalker_terrain</terrain_sect>
 		<snd_config>characters_voice\human_04\cliric\</snd_config>
@@ -1324,7 +1324,7 @@
 		<name>esc_npc_student_name</name>
 		<icon>ui_inGame2_none</icon>
 		<map_icon x="1" y="0"></map_icon>
-		<bio>Опытный сталкер. Детальная информация отсутствует.</bio>
+		<bio>Experienced stalker. Detailed information is not available.</bio>
 		<class>esc_npc_student</class>
 		<community>stalker</community> <terrain_sect>stalker_terrain</terrain_sect>
 		<snd_config>characters_voice\human\stalker_1\</snd_config>
@@ -1352,7 +1352,7 @@
 		<name>GENERATE_NAME_stalker</name>
 		<icon>ui_inGame2_csky_1_1</icon>
 		<map_icon x="1" y="0"></map_icon>
-		<bio>Опытный сталкер. Детальная информация отсутствует.</bio>
+		<bio>Experienced stalker. Detailed information is not available.</bio>
 		<class>esc_npc_csky_1</class>
 		<community>csky</community> <terrain_sect>stalker_terrain</terrain_sect>
 		<snd_config>characters_voice\human\csky_1\</snd_config>
@@ -1377,7 +1377,7 @@
 		<name>GENERATE_NAME_stalker</name>
 		<icon>ui_inGame2_csky_5</icon>
 		<map_icon x="1" y="0"></map_icon>
-		<bio>Опытный сталкер. Детальная информация отсутствует.</bio>
+		<bio>Experienced stalker. Detailed information is not available.</bio>
 		<class>esc_npc_csky_2</class>
 		<community>csky</community> <terrain_sect>stalker_terrain</terrain_sect>
 		<snd_config>characters_voice\human\csky_3\</snd_config>
@@ -1402,7 +1402,7 @@
 		<name>GENERATE_NAME_stalker</name>
 		<icon>ui_inGame2_csky_1_1</icon>
 		<map_icon x="1" y="0"></map_icon>
-		<bio>Опытный сталкер. Детальная информация отсутствует.</bio>
+		<bio>Experienced stalker. Detailed information is not available.</bio>
 		<class>esc_npc_csky_3</class>
 		<community>csky</community> <terrain_sect>stalker_terrain</terrain_sect>
 		<snd_config>characters_voice\human\csky_1\</snd_config>
@@ -1427,7 +1427,7 @@
 		<name>GENERATE_NAME_stalker</name>
 		<icon>ui_inGame2_csky_1_1</icon>
 		<map_icon x="1" y="0"></map_icon>
-		<bio>Опытный сталкер. Детальная информация отсутствует.</bio>
+		<bio>Experienced stalker. Detailed information is not available.</bio>
 		<class>esc_npc_csky_4</class>
 		<community>csky</community> <terrain_sect>stalker_terrain</terrain_sect>
 		<snd_config>characters_voice\human\csky_2\</snd_config>
@@ -1453,7 +1453,7 @@
 		<name>GENERATE_NAME_stalker</name>
 		<icon>ui_inGame2_csky_1_1</icon>
 		<map_icon x="1" y="0"></map_icon>
-		<bio>Опытный сталкер. Детальная информация отсутствует.</bio>
+		<bio>Experienced stalker. Detailed information is not available.</bio>
 		<class>esc_npc_csky_5</class>
 		<community>csky</community> <terrain_sect>stalker_terrain</terrain_sect>
 		<snd_config>characters_voice\human\csky_1\</snd_config>
@@ -1478,7 +1478,7 @@
 		<name>esc_army_stepan_name</name>
 		<icon>ui_inGame2_Soldier_2</icon>
 		<map_icon x="1" y="0"></map_icon>
-		<bio>Опытный сталкер. Детальная информация отсутствует.</bio>
+		<bio>Experienced stalker. Detailed information is not available.</bio>
 		<class>esc_army_stepan</class>
 		<community>army</community> <terrain_sect>stalker_terrain</terrain_sect>
 		<snd_config>characters_voice\human\military_2\</snd_config>
@@ -1504,7 +1504,7 @@
 		<name>esc_army_prapor_corpse_name</name>
 		<icon>ui_inGame2_Soldier_2</icon>
 		<map_icon x="1" y="0"></map_icon>
-		<bio>Опытный сталкер. Детальная информация отсутствует.</bio>
+		<bio>Experienced stalker. Detailed information is not available.</bio>
 		<class>esc_army_prapor_corpse</class>
 		<community>army</community> <terrain_sect>stalker_terrain</terrain_sect>
 		<snd_config>characters_voice\human\military_2\</snd_config>
@@ -1526,7 +1526,7 @@
 	    <name>esc_dezertir_bandit_name</name>
 		<icon>ui_inGame2_none</icon>
 		<map_icon x="1" y="0"></map_icon>
-		<bio>Опытный сталкер. Детальная информация отсутствует.</bio>
+		<bio>Experienced stalker. Detailed information is not available.</bio>
 		<class>esc_dezertir_bandit</class>
 		<community>bandit_alies</community> <terrain_sect>stalker_terrain</terrain_sect>
 		<snd_config>characters_voice\human\bandit_2\</snd_config>
