@@ -1,38 +1,38 @@
 <?xml version="1.0" encoding="windows-1251" ?>
 <string_table>
     
-    <string id="st_x27_docs1_descr">
-        <text>17 мая 2007 г. Архив. Совершенно секретно. Уведомление для заместителя лаборатории серии Х филиал 27 от Хофманова А.Г. Согласно распоряжению заведующего третьего звена АОЗТ «Чернобыльской Аномальной Зоны» уведомляю: с 1 августа 2007 года лаборатория переходит на 24-часовой день в 3 рабочих смены. Лаборатория будет поделена на 3 отделения по этажам. I этаж: отдел технического контроля; II этаж: синтез препарата под кодовым названием ALD-95 и его производных, III этаж: транспортировка готовой продукции. Всем сотрудникам прошедших обучение и получивших соответствующие допуски категорий А, Б, В необходимо подойти к своему куратору для получения инструкций по работе.</text>
-    </string>
-    <string id="st_x27_docs1_name">
-        <text>Архивный документ</text>
-    </string>
-    <string id="st_x27_docs2_descr">
-        <text>23 апреля 2009 г. Приказ IV-4231/а. В связи с необходимостью улучшения качества производимых препаратов, было принято решение о частичной расконсервации лабораторного комплекса Х-27. Приказываю перераспределить помещение на третьем этаже комплекса под нужды лаборатории, а именно: 1. Соорудить изолированные друг от друга комнаты для хранения биоматериала. 2. Перевезти и подключить необходимое оборудование на территорию подземного комплекса. 3. Завести архив для хранения актуальной информации. Согласовано: Инаев В. Н.»</text>
-    </string>
-    <string id="st_x27_docs2_name">
-        <text>Приказ</text>
-    </string>
-    <string id="st_x27_docs3_descr">
-        <text>Журнал проводимых экспериментов. В нем приводятся описание различных опытов над «неразумными с апатией» (скорее всего имеются ввиду зомби или зомбированные). Судя по последним записям, ученые испытывали препарат, который снижает воздействие химических ожогов на организм.</text>
-    </string>
-    <string id="st_x27_docs3_name">
-        <text>Журнал экспериментов</text>
-    </string>
-    <string id="st_x27_docs4_descr">
-        <text>Карты лабораторий. Внутри сохранились лишь 2 страницы в которых схематично показаны планы лаборатории х-27 и х-18.</text>
-    </string>
-    <string id="st_x27_docs4_name">
-        <text>Старая папка</text>
-    </string>
-    <string id="st_x27_docs5_descr">
-        <text>Жесткий диск от одного из компьютеров лаборатории Х-27. Возможно на нем есть полезная информация.</text>
-    </string>
-    <string id="st_x27_docs5_name">
-        <text>Жесткий диск</text>
-    </string>
-    <string id="st_x27_inaev_pda_descr">
-        <text>Аудиозапись №534: Халатность начальства по отношению к нашему звену меня просто удручает. Я уже четвёртый год работаю в этой лаборатории, но после смены руководства все только становится хуже и хуже. В лабораторию вторглись неизвестные, разгромили и обокрали законсервированные этажи и по всей видимости скоро доберутся и до нашего крыла. Теперь вместо того, чтобы выделить подходящий транспорт, они решили, что мы должны идти пешком и нести ценные образцы и бумаги на себе. Мы ведь и пары километров не пройдем с таким тяжелым грузом и это, уже не говоря о том насколько опасно в Чернобыльской Зоне в последнее время. А еще они приставили к нам каких-то болванов из группы под названием «Монолит», и я совершенно не чувствую себя в безопасности рядом с ними, скорее даже наоборот. Есть подозрение, что они используют наши препараты на себе, хотя это строго настрого запрещено.\n \n Это просто возмутительно, у меня не хватает слов чтобы описать все свои мысли в этой записи. Вот сейчас пойду и потребую объяснений. Я не собираюсь терпеть подобное отношение ни к себе, ни к своим подчиненным.</text>
-    </string>
+<string id="st_x27_docs1_descr">
+    <text>May 17, 2007. Archive. Top secret. Notification for the deputy of Laboratory X Branch 27 from Hoffman A.G. According to the order of the head of the third tier of the Chernobyl Anomalous Zone Territory, I hereby notify you: starting from August 1, 2007, the laboratory will switch to a 24-hour operation in 3 shifts. The laboratory will be divided into 3 departments on different floors. 1st floor: Technical Control Department; 2nd floor: Synthesis of the substance codenamed ALD-95 and its derivatives; 3rd floor: Transportation of finished products. All employees who have completed training and received corresponding permits of categories A, B, C should approach their supervisor to receive work instructions.</text>
+</string>
+<string id="st_x27_docs1_name">
+    <text>Archived Document</text>
+</string>
+<string id="st_x27_docs2_descr">
+    <text>April 23, 2009. Order IV-4231/a. In order to improve the quality of produced substances, a decision has been made to partially decommission Laboratory Complex X-27. I order to redistribute the space on the third floor of the complex for the needs of the laboratory, namely: 1. Construct isolated rooms for storing biomaterial. 2. Transfer and connect the necessary equipment to the underground complex area. 3. Establish an archive for storing up-to-date information. Approved by: Inaev V.N.</text>
+</string>
+<string id="st_x27_docs2_name">
+    <text>Order</text>
+</string>
+<string id="st_x27_docs3_descr">
+    <text>Journal of conducted experiments. It contains descriptions of various experiments on "unreasonables with apathy" (most likely referring to zombies or zombified individuals). Judging by the latest entries, the scientists were testing a substance that reduces the effect of chemical burns on the body.</text>
+</string>
+<string id="st_x27_docs3_name">
+    <text>Experiment Journal</text>
+</string>
+<string id="st_x27_docs4_descr">
+    <text>Lab maps. Only 2 pages have been preserved, schematically showing the plans of Laboratory X-27 and X-18.</text>
+</string>
+<string id="st_x27_docs4_name">
+    <text>Old Folder</text>
+</string>
+<string id="st_x27_docs5_descr">
+    <text>Hard drive from one of the computers in Laboratory X-27. It may contain valuable information.</text>
+</string>
+<string id="st_x27_docs5_name">
+    <text>Hard Drive</text>
+</string>
+<string id="st_x27_inaev_pda_descr">
+    <text>Audio recording #534: I'm simply appalled by the negligence of the management towards our division. I've been working in this laboratory for four years, but after the change in leadership, everything just keeps getting worse. Unknown individuals invaded the laboratory, ransacked and looted the preserved floors, and it seems they'll soon reach our wing. Instead of providing suitable transportation, they decided that we should go on foot and carry valuable samples and documents ourselves. We won't even make it a couple of kilometers with such a heavy load, not to mention the danger in the Chernobyl Zone lately. And they've assigned some idiots from a group called "Monolith" to us, and I feel absolutely unsafe around them, if not the opposite. I suspect they're using our substances on themselves, although it's strictly prohibited. \n \n It's simply outrageous; I lack words to describe all my thoughts in this recording. I'm going now to demand an explanation. I won't tolerate such treatment towards myself or my subordinates.</text>
+</string>
 	
 </string_table>

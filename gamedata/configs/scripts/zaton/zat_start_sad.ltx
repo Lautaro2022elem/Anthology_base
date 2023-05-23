@@ -5,6 +5,6 @@ active = sr_idle
 on_actor_inside = sr_idle@clear %=teleport_actor(zat_actor_arrive_sad_walk:zat_actor_arrive_sad_look) =run_tutorial(intro_game_sad)%
 
 [sr_idle@clear]
-on_game_timer = 30 | sr_idle@nil %+zat_sad_start =give_task(zat_a2_meet_barmen_task) =give_actor(wpn_ak74u_tac) =give_actor(ammo_5.45x39_fmj) =give_actor(ammo_5.45x39_fmj) =give_actor(ammo_5.45x39_fmj) =give_actor(ammo_5.45x39_fmj) =give_actor(stalker_outfit)%
+on_game_timer = 30 | sr_idle@nil %+zat_sad_start =give_task(zat_a2_meet_barmen_task)%
 
 [sr_idle@nil]
