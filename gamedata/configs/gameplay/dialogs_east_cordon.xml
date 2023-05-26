@@ -2459,15 +2459,15 @@
         <dont_has_info>esc_quest_trifling_matter_sour_dialog_safe_and</dont_has_info>
         <phrase_list>
             <phrase id="0">
-                <text>Ну что вскроешь?</text>
+                <text>Okay, what are you going to reveal?</text>
                 <next>1</next>
             </phrase>
             <phrase id="1">
-                <text>Что, всё же надумал? Правильное решение. Будь уверен - не пожалеешь.</text>
+				<text>What, did you finally make up your mind? The right decision. Be confident - you won't regret it.</text>
                 <next>2</next>
             </phrase>
             <phrase id="2">
-                <text>Хорош базарить, давай вскрывай скорее замок.</text>
+                <text>Good talk, let's open the lock quickly.</text>
                 <action>dialogs_east_cordon.esc_quest_sidor_esc_gruz_safe_relocate</action>
                 <next>11</next>
             </phrase>
@@ -2967,7 +2967,7 @@
                 <action>dialogs.break_dialog</action>
             </phrase>
             <phrase id="6">
-                <text>Да я так мимо проходил.</text>
+                <text>Oh, I was just passing by.</text>
                 <give_info>esc_quest_dangerous_business_merc_proval</give_info>
                 <action>dialogs.break_dialog</action>
             </phrase>
@@ -4058,11 +4058,11 @@
     <dialog id="esc_dialog_risovalshik_skupka">                    
         <phrase_list>
             <phrase id="0">
-                <text>Ага, привет, Рисовальщик. Поломанное оружие купишь на запчасти?</text>
+                <text>Oh, hello, Illustrator. Will you buy broken weapons for spare parts?</text>
 		<next>1</next>
 	    </phrase>
             <phrase id="1">
-		<text>Да. Что хочешь продать?</text>
+		<text>Sure. What do you want to sell?</text>
 		<next>5555</next>
 	        <next>7777</next>
                 <next>8888</next>
@@ -4072,11 +4072,11 @@
 		<next>911</next>
 	    </phrase>
             <phrase id="5555">
-		<text>[Пистолеты]</text>
+		<text>[Pistols]</text>
 		<next>55551</next>
 	    </phrase>
             <phrase id="55551">
-		<text>Ну-ка, показывай, что там у тебя есть?</text>
+		<text>Alright, show me what you have there.</text>
 		<next>2</next>
 	        <next>3</next>
                 <next>4</next>
@@ -4090,11 +4090,11 @@
 		<next>911</next>
 	    </phrase>
             <phrase id="7777">
-		<text>[Автоматы]</text>
+		<text>[Firearms]</text>
 		<next>77771</next>
 	    </phrase>
             <phrase id="77771">
-		<text>Ну-ка, показывай, что там у тебя есть?</text>
+		<text>Alright, show me what you have there.</text>
 		<next>20</next>
 	        <next>30</next>
                 <next>40</next>
@@ -4109,11 +4109,11 @@
 		<next>911</next>
 	    </phrase>
             <phrase id="8888">
-		<text>[Винтовки]</text>
+		<text>[Rifles]</text>
 		<next>88881</next>
 	    </phrase>
             <phrase id="88881">
-		<text>Ну-ка, показывай, что там у тебя есть?</text>
+		<text>Alright, show me what you have there.</text>
 		<next>991</next>
 	        <next>992</next>
                 <next>993</next>
@@ -4122,11 +4122,11 @@
 		<next>911</next>
 	    </phrase>
             <phrase id="9999">
-		<text>[Дробовики]</text>
+		<text>[Shotguns]</text>
 		<next>99991</next>
 	    </phrase>
             <phrase id="99991">
-		<text>Ну-ка, показывай, что там у тебя есть?</text>
+		<text>Alright, show me what you have there.</text>
 		<next>881</next>
 	        <next>882</next>
                 <next>883</next>
@@ -4135,393 +4135,393 @@
 		<next>911</next>
 	    </phrase>
             <phrase id="4444">
-		<text>[Гранатометы]</text>
+		<text>[Grenade launchers]</text>
 		<next>44441</next>
 	    </phrase>
             <phrase id="44441">
-		<text>Ну-ка, показывай, что там у тебя есть?</text>
+		<text>Alright, show me what you have there.</text>
 		<next>445</next>
 	        <next>446</next>
 		<next>911</next>
 	    </phrase>
             <phrase id="911">
-		<text>Как-нибудь в следующий раз.</text>
+		<text>Maybe next time.</text>
                 <action>dialogs.break_dialog</action>
 	    </phrase>
             <phrase id="2">
-		<text>"ПМ" - 100 руб</text>
+		<text>"Makarov PM" - 100 rubles</text>
 		<precondition>dlg_junkman.pm</precondition>
 		<next>22</next>
 	    </phrase>
             <phrase id="22">
-		<text>Хорошо.</text>
+		<text>Okay.</text>
 		<action>dlg_junkman.pm_z</action>
 		<action>dlg_junkman.pm_money</action>
 		<next>222</next>
 	   </phrase>
-           <phrase id="222">
-		<text>Вот и отлично.</text>
-		<next>1</next>
-           </phrase>
-           <phrase id="3">
-		<text>"ПБ" - 120 руб</text>
-		<precondition>dlg_junkman.pb</precondition>
-		<next>33</next>
-	   </phrase>
-           <phrase id="33">
-		<text>Хорошо.</text>
-		<action>dlg_junkman.pb_z</action>
-		<action>dlg_junkman.pb_money</action>
-		<next>222</next>
-	   </phrase>
-           <phrase id="4">
-		<text>"Форт-12" - 150 руб</text>
-		<precondition>dlg_junkman.fort</precondition>
-		<next>44</next>
-	   </phrase>
-           <phrase id="44">
-		<text>Хорошо.</text>
-		<action>dlg_junkman.fort_z</action>
-		<action>dlg_junkman.fort_money</action>
-		<next>222</next>
-	   </phrase>
-           <phrase id="5">
-		<text>"Browning HP-SA" - 180 руб</text>
-		<precondition>dlg_junkman.hpsa</precondition>
-		<next>55</next>
-	   </phrase>
-           <phrase id="55">
-		<text>Хорошо.</text>
-		<action>dlg_junkman.hpsa_z</action>
-		<action>dlg_junkman.hpsa_money</action>
-		<next>222</next>
-	   </phrase>
-           <phrase id="6">
-		<text>"Beretta M92" - 200 руб</text>
-		<precondition>dlg_junkman.beretta</precondition>
-		<next>66</next>
-	   </phrase>
-           <phrase id="66">
-		<text>Хорошо.</text>
-		<action>dlg_junkman.beretta_z</action>
-		<action>dlg_junkman.beretta_money</action>
-		<next>222</next>
-	   </phrase>
+         <phrase id="222">
+    <text>That's great.</text>
+    <next>1</next>
+</phrase>
+<phrase id="3">
+    <text>"PB" - 120 rubles</text>
+    <precondition>dlg_junkman.pb</precondition>
+    <next>33</next>
+</phrase>
+<phrase id="33">
+    <text>Okay.</text>
+    <action>dlg_junkman.pb_z</action>
+    <action>dlg_junkman.pb_money</action>
+    <next>222</next>
+</phrase>
+<phrase id="4">
+    <text>"Fort-12" - 150 rubles</text>
+    <precondition>dlg_junkman.fort</precondition>
+    <next>44</next>
+</phrase>
+<phrase id="44">
+    <text>Okay.</text>
+    <action>dlg_junkman.fort_z</action>
+    <action>dlg_junkman.fort_money</action>
+    <next>222</next>
+</phrase>
+<phrase id="5">
+    <text>"Browning HP-SA" - 180 rubles</text>
+    <precondition>dlg_junkman.hpsa</precondition>
+    <next>55</next>
+</phrase>
+<phrase id="55">
+    <text>Okay.</text>
+    <action>dlg_junkman.hpsa_z</action>
+    <action>dlg_junkman.hpsa_money</action>
+    <next>222</next>
+</phrase>
+<phrase id="6">
+    <text>"Beretta M92" - 200 rubles</text>
+    <precondition>dlg_junkman.beretta</precondition>
+    <next>66</next>
+</phrase>
+<phrase id="66">
+    <text>Okay.</text>
+    <action>dlg_junkman.beretta_z</action>
+    <action>dlg_junkman.beretta_money</action>
+    <next>222</next>
+</phrase>
            <phrase id="7">
-		<text>"Walther P-99" - 200 руб</text>
+		<text>"Walther P-99" - 200 rubles</text>
 		<precondition>dlg_junkman.walther</precondition>
 		<next>77</next>
 	   </phrase>
            <phrase id="77">
-		<text>Хорошо.</text>
+		<text>Okay.</text>
 		<action>dlg_junkman.walther_z</action>
 		<action>dlg_junkman.walther_money</action>
 		<next>222</next>
 	   </phrase>
            <phrase id="8">
-		<text>"Colt M1911A1" - 220 руб</text>
+		<text>"Colt M1911A1" - 220 rubles</text>
 		<precondition>dlg_junkman.colt1911</precondition>
 		<next>88</next>
 	   </phrase>
            <phrase id="88">
-		<text>Хорошо.</text>
+		<text>Okay.</text>
 		<action>dlg_junkman.colt1911_z</action>
 		<action>dlg_junkman.colt1911_money</action>
 		<next>222</next>
 	   </phrase>
            <phrase id="9">
-		<text>"HK USP" - 250 руб</text>
+		<text>"HK USP" - 250 rubles</text>
 		<precondition>dlg_junkman.usp</precondition>
 		<next>99</next>
 	   </phrase>
            <phrase id="99">
-		<text>Хорошо.</text>
+		<text>Okay.</text>
 		<action>dlg_junkman.usp_z</action>
 		<action>dlg_junkman.usp_money</action>
 		<next>222</next>
 	   </phrase>
            <phrase id="19">
-		<text>"SIG-Sauer P220" - 250 руб</text>
+		<text>"SIG-Sauer P220" - 250 rubles</text>
 		<precondition>dlg_junkman.sig220</precondition>
 		<next>199</next>
 	   </phrase>
            <phrase id="199">
-		<text>Хорошо.</text>
+		<text>Okay.</text>
 		<action>dlg_junkman.sig220_z</action>
 		<action>dlg_junkman.sig220_money</action>
 		<next>222</next>
 	   </phrase>
            <phrase id="18">
-		<text>"Desert Eagle" - 300 руб</text>
+		<text>"Desert Eagle" - 300 rubles</text>
 		<precondition>dlg_junkman.desert_eagle</precondition>
 		<next>188</next>
 	   </phrase>
            <phrase id="188">
-		<text>Хорошо.</text>
+		<text>Okay.</text>
 		<action>dlg_junkman.desert_eagle_z</action>
 		<action>dlg_junkman.desert_eagle_money</action>
 		<next>222</next>
 	   </phrase>
            <phrase id="20">
-		<text>"MP5" - 300 руб</text>
+		<text>"MP5" - 300 rubles</text>
 		<precondition>dlg_junkman.mp5</precondition>
 		<next>200</next>
 	   </phrase>
            <phrase id="200">
-		<text>Хорошо.</text>
+		<text>Okay.</text>
 		<action>dlg_junkman.mp5_z</action>
 		<action>dlg_junkman.mp5_money</action>
 		<next>222</next>
 	   </phrase>
            <phrase id="30">
-		<text>"АКС-74У" - 300 руб</text>
+		<text>"АКС-74У" - 300 rubles</text>
 		<precondition>dlg_junkman.ak74u</precondition>
 		<next>300</next>
 	   </phrase>
            <phrase id="300">
-		<text>Хорошо.</text>
+		<text>Okay.</text>
 		<action>dlg_junkman.ak74u_z</action>
 		<action>dlg_junkman.ak74u_money</action>
 		<next>222</next>
 	   </phrase>
            <phrase id="40">
-		<text>"АК-74" - 400 руб</text>
+		<text>"АК-74" - 400 rubles</text>
 		<precondition>dlg_junkman.ak74</precondition>
 		<next>400</next>
 	   </phrase>
            <phrase id="400">
-		<text>Хорошо.</text>
+		<text>Okay.</text>
 		<action>dlg_junkman.ak74_z</action>
 		<action>dlg_junkman.ak74_money</action>
 		<next>222</next>
 	   </phrase>
            <phrase id="50">
-		<text>"АН-94 Абакан" - 500 руб</text>
+		<text>"AN-94 Abakan" - 500 rubles</text>
 		<precondition>dlg_junkman.abakan</precondition>
 		<next>500</next>
 	   </phrase>
            <phrase id="500">
-		<text>Хорошо.</text>
+		<text>Okay.</text>
 		<action>dlg_junkman.abakan_z</action>
 		<action>dlg_junkman.abakan_money</action>
 		<next>222</next>
 	   </phrase>
            <phrase id="60">
-		<text>"L85A2" - 450 руб</text>
+		<text>"L85A2" - 450 rubles</text>
 		<precondition>dlg_junkman.l85</precondition>
 		<next>600</next>
 	   </phrase>
            <phrase id="600">
-		<text>Хорошо.</text>
+		<text>Okay.</text>
 		<action>dlg_junkman.l85_z</action>
 		<action>dlg_junkman.l85_money</action>
 		<next>222</next>
 	   </phrase>
            <phrase id="70">
-		<text>"LR-300ML" - 550 руб</text>
+		<text>"LR-300ML" - 550 rubles</text>
 		<precondition>dlg_junkman.lr300</precondition>
 		<next>700</next>
 	   </phrase>
            <phrase id="700">
-		<text>Хорошо.</text>
+		<text>Okay.</text>
 		<action>dlg_junkman.lr300_z</action>
 		<action>dlg_junkman.lr300_money</action>
 		<next>222</next>
 	   </phrase>
            <phrase id="80">
-		<text>"SIG SG-550"  - 800 руб</text>
+		<text>"SIG SG-550"  - 800 rubles</text>
 		<precondition>dlg_junkman.sig550</precondition>
 		<next>800</next>
 	   </phrase>
            <phrase id="800">
-		<text>Хорошо.</text>
+		<text>Okay.</text>
 		<action>dlg_junkman.sig550_z</action>
 		<action>dlg_junkman.sig550_money</action>
 		<next>222</next>
 	   </phrase>
            <phrase id="920">
-		<text>"ОЦ-14 Гроза" - 650 руб</text>
+		<text>"OC-14 Groza" - 650 rubles</text>
 		<precondition>dlg_junkman.groza</precondition>
 		<next>9200</next>
 	   </phrase>
            <phrase id="9200">
-		<text>Хорошо.</text>
+		<text>Okay.</text>
 		<action>dlg_junkman.groza_z</action>
 		<action>dlg_junkman.groza_money</action>
 		<next>222</next>
 	   </phrase>
            <phrase id="90">
-		<text>"HK G36" - 1000 руб</text>
+		<text>"HK G36" - 1000 rubles</text>
 		<precondition>dlg_junkman.g36</precondition>
 		<next>900</next>
 	   </phrase>
            <phrase id="900">
-		<text>Хорошо.</text>
+		<text>Okay.</text>
 		<action>dlg_junkman.g36_z</action>
 		<action>dlg_junkman.g36_money</action>
 		<next>222</next>
 	   </phrase>
            <phrase id="910">
-		<text>"FN F2000" - 2500 руб</text>
+		<text>"FN F2000" - 2500 rubles</text>
 		<precondition>dlg_junkman.fn2000</precondition>
 		<next>9100</next>
 	   </phrase>
            <phrase id="9100">
-		<text>Хорошо.</text>
+		<text>Okay.</text>
 		<action>dlg_junkman.fn2000_z</action>
 		<action>dlg_junkman.fn2000_money</action>
 		<next>222</next>
 	   </phrase>
            <phrase id="930">
-		<text>"ПКМ" - 1150 руб</text>
+		<text>"PKM" - 1150 rubles</text>
 		<precondition>dlg_junkman.pkm</precondition>
 		<next>9300</next>
 	   </phrase>
            <phrase id="9300">
-		<text>Хорошо.</text>
+		<text>Okay.</text>
 		<action>dlg_junkman.pkm_z</action>
 		<action>dlg_junkman.pkm_money</action>
 		<next>222</next>
 	   </phrase>
            <phrase id="881">
-		<text>"Обрез БМ-16" - 80 руб</text>
+		<text>"BM-16 Sawed-Off" - 80 rubles</text>
 		<precondition>dlg_junkman.bm16</precondition>
 		<next>8811</next>
 	   </phrase>
            <phrase id="8811">
-		<text>Хорошо.</text>
+		<text>Okay.</text>
 		<action>dlg_junkman.bm16_z</action>
 		<action>dlg_junkman.bm16_money</action>
 		<next>222</next>
 	   </phrase>
            <phrase id="882">
-		<text>"ТОЗ-34" - 130 руб</text>
+		<text>"TOZ-34" - 130 rubles</text>
 		<precondition>dlg_junkman.toz34</precondition>
 		<next>8822</next>
 	   </phrase>
            <phrase id="8822">
-		<text>Хорошо.</text>
+		<text>Okay.</text>
 		<action>dlg_junkman.toz34_z</action>
 		<action>dlg_junkman.toz34_money</action>
 		<next>222</next>
 	   </phrase>
            <phrase id="883">
-		<text>"Winchester 1300" - 200 руб</text>
+		<text>"Winchester 1300" - 200 rubles</text>
 		<precondition>dlg_junkman.wincheaster1300</precondition>
 		<next>8833</next>
 	   </phrase>
            <phrase id="8833">
-		<text>Хорошо.</text>
+		<text>Okay.</text>
 		<action>dlg_junkman.wincheaster1300_z</action>
 		<action>dlg_junkman.wincheaster1300_money</action>
 		<next>222</next>
 	   </phrase>
            <phrase id="884">
-		<text>"SPAS-12" - 250 руб</text>
+		<text>"SPAS-12" - 250 rubles</text>
 		<precondition>dlg_junkman.spas12</precondition>
 		<next>8844</next>
 	   </phrase>
            <phrase id="8844">
-		<text>Хорошо.</text>
+		<text>Okay.</text>
 		<action>dlg_junkman.spas12_z</action>
 		<action>dlg_junkman.spas12_money</action>
 		<next>222</next>
 	   </phrase>
            <phrase id="885">
-		<text>"Protecta" - 500 руб</text>
+		<text>"Protecta" - 500 rubles</text>
 		<precondition>dlg_junkman.protecta</precondition>
 		<next>8855</next>
 	   </phrase>
            <phrase id="8855">
-		<text>Хорошо.</text>
+		<text>Okay.</text>
 		<action>dlg_junkman.protecta_z</action>
 		<action>dlg_junkman.protecta_money</action>
 		<next>222</next>
 	   </phrase>
            <phrase id="991">
-		<text>"АС «Вал»" - 950 руб</text>
+		<text>"АС Val" - 950 rubles</text>
 		<precondition>dlg_junkman.val</precondition>
 		<next>9911</next>
 	   </phrase>
            <phrase id="9911">
-		<text>Хорошо.</text>
+		<text>Okay.</text>
 		<action>dlg_junkman.val_z</action>
 		<action>dlg_junkman.val_money</action>
 		<next>222</next>
 	   </phrase>
            <phrase id="992">
-		<text>"ВСС «Винторез»" - 1200 руб</text>
+		<text>"VSS Vintorez" - 1200 rubles</text>
 		<precondition>dlg_junkman.vintorez</precondition>
 		<next>9922</next>
 	   </phrase>
            <phrase id="9922">
-		<text>Хорошо.</text>
+		<text>Okay.</text>
 		<action>dlg_junkman.vintorez_z</action>
 		<action>dlg_junkman.vintorez_money</action>
 		<next>222</next>
 	   </phrase>
            <phrase id="993">
-		<text>"СВУ" - 1500 руб</text>
+		<text>"SVU" - 1500 rubles</text>
 		<precondition>dlg_junkman.svu</precondition>
 		<next>9933</next>
 	   </phrase>
            <phrase id="9933">
-		<text>Хорошо.</text>
+		<text>Okay.</text>
 		<action>dlg_junkman.svu_z</action>
 		<action>dlg_junkman.svu_money</action>
 		<next>222</next>
 	   </phrase>
            <phrase id="994">
-		<text>"СВД" - 1600 руб</text>
+		<text>"SVD" - 1600 rubles</text>
 		<precondition>dlg_junkman.svd</precondition>
 		<next>9944</next>
 	   </phrase>
            <phrase id="9944">
-		<text>Хорошо.</text>
+		<text>Okay.</text>
 		<action>dlg_junkman.svd_z</action>
 		<action>dlg_junkman.svd_money</action>
 		<next>222</next>
 	   </phrase>
            <phrase id="995">
-		<text>"Гаусс-пушка" - 50000 руб</text>
+		<text>"Gauss Rifle" - 50000 rubles</text>
 		<precondition>dlg_junkman.gauss</precondition>
 		<next>9955</next>
 	   </phrase>
            <phrase id="9955">
-		<text>Хорошо.</text>
+		<text>Okay.</text>
 		<action>dlg_junkman.gauss_z</action>
 		<action>dlg_junkman.gauss_money</action>
 		<next>222</next>
 	   </phrase>
            <phrase id="445">
-		<text>"РПГ-7" - 1500 руб</text>
+		<text>"RPG-7" - 1500 rubles</text>
 		<precondition>dlg_junkman.rpg7</precondition>
 		<next>4455</next>
 	   </phrase>
            <phrase id="4455">
-		<text>Хорошо.</text>
+		<text>Okay.</text>
 		<action>dlg_junkman.rpg7_z</action>
 		<action>dlg_junkman.rpg7_money</action>
 		<next>222</next>
 	   </phrase>
            <phrase id="446">
-		<text>«РГ-6» - 1850 руб</text>
+		<text>RG 6 - 1850 rubles</text>
 		<precondition>dlg_junkman.rg6</precondition>
 		<next>4466</next>
 	   </phrase>
            <phrase id="4466">
-		<text>Хорошо.</text>
+		<text>Okay.</text>
 		<action>dlg_junkman.rg6_z</action>
 		<action>dlg_junkman.rg6_money</action>
 		<next>222</next>
 	   </phrase>
            <phrase id="9090">
            <has_info>dialog_star</has_info>
-		<text>А что так дешёво всё скупаешь?</text>
+		<text>Why are you buying everything so cheaply?</text>
 		<next>90901</next>
 	   </phrase>
            <phrase id="90901">
-		<text>А это уже моё дело. Не хочешь - не продавай. У меня клиентов доcтаточно.</text>
+		<text>That's already my business. If you don't want to sell, don't. I have enough clients.</text>
 		<next>0</next>
 	   </phrase>
         </phrase_list>
